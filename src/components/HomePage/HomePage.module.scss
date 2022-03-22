@@ -1,0 +1,217 @@
+@use "./src/styles/breakpoints";
+@use "./src/styles/layout";
+
+.containerCss {
+  display: grid;
+  grid-template-areas: ". list ." ". pagination .";
+  grid-template-columns:
+    minmax(var(--layout-grid-margin), 1fr) minmax(auto, 520px)
+    minmax(var(--layout-grid-margin), 1fr);
+  margin-top: -1px;
+
+  @media (min-width: breakpoints.$desktop) {
+    grid-template-areas: "list" "pagination";
+    grid-template-columns: unset;
+  }
+
+  @media (min-width: breakpoints.$max) {
+    border-top: 0;
+  }
+}
+
+.listCss {
+  grid-area: list;
+
+  @media (min-width: breakpoints.$desktop) {
+    border-bottom: solid 1px var(--color-border-default);
+    column-gap: layout.$spacer-8;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: layout.$spacer-7 0 layout.$spacer-8 - 1;
+    row-gap: layout.$spacer-8;
+  }
+
+  @media (min-width: breakpoints.$max) {
+    padding-top: 0;
+  }
+}
+
+.listItemCss {
+  @media (min-width: breakpoints.$desktop) {
+    display: flex;
+
+    &.wideCss {
+      grid-column-end: 3;
+      grid-column-start: 1;
+    }
+
+    &:first-of-type {
+      border-bottom: solid 1px var(--color-border-default);
+      border-top: 0 !important;
+      padding-bottom: layout.$spacer-7 - 1;
+    }
+
+    &:last-of-type {
+      border-bottom: 0 !important;
+      border-top: solid 1px var(--color-border-default);
+      padding-top: layout.$spacer-8 - 1;
+    }
+  }
+
+  @media (min-width: breakpoints.$max) {
+    &:first-of-type {
+      padding-top: 0;
+    }
+  }
+}
+
+.reviewCss {
+  display: grid;
+  grid-template-areas: ". . ." "image image image" ". . . " ". header ." ". . ." ". body ." ". . ." ". footer ." ". border .";
+  grid-template-columns: 1fr minmax(auto, 520px) 1fr;
+  grid-template-rows: layout.$spacer-6 auto layout.$spacer-3 auto layout.$spacer-4 1fr layout.$spacer-4 auto layout.$spacer-6;
+  position: relative;
+
+  &::after {
+    border-bottom: solid 1px var(--color-border-default);
+    content: "";
+    display: block;
+    grid-area: border;
+    height: layout.$spacer-6;
+    justify-self: center;
+    width: 75%;
+  }
+
+  @media (min-width: breakpoints.$desktop) {
+    grid-template-areas: "image image image" ". . . " ". header ." ". . ." ". body ." ". . ." ". footer ." ". . ." ". border .";
+    grid-template-columns: layout.$spacer-2 1fr layout.$spacer-2;
+    grid-template-rows: auto layout.$spacer-4 auto layout.$spacer-4 1fr layout.$spacer-4 auto;
+
+    &::after {
+      display: none;
+    }
+
+    &.wideCss {
+      align-items: start;
+      column-gap: layout.$spacer-8;
+      grid-template-areas: "header image" ". image" "body image" ". image" "footer image";
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto layout.$spacer-4 1fr layout.$spacer-4 auto;
+    }
+  }
+}
+
+.imageLinkCss {
+  border: solid layout.$spacer-2 var(--color-border-default);
+  display: block;
+  grid-area: image;
+  line-height: 0;
+  margin-bottom: 5px;
+
+  @media (min-width: breakpoints.$tablet) {
+    margin-bottom: 4.5px;
+  }
+
+  @media (min-width: breakpoints.$max) {
+    margin-bottom: 1.75px;
+  }
+}
+
+.reviewHeaderCss {
+  display: grid;
+  grid-area: header;
+  grid-template-areas: "heading" "." "grade" "." "credits";
+  grid-template-rows: auto layout.$spacer-4 auto layout.$spacer-4 auto;
+}
+
+.articleHeadingCss {
+  font-size: 26px;
+  font-weight: 700;
+  grid-area: heading;
+  line-height: 32px;
+
+  a {
+    display: inline-block;
+  }
+
+  @media (min-width: breakpoints.$desktop) {
+    font-size: 30px;
+  }
+}
+
+.articleFooterCss {
+  align-items: flex-start;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: layout.$spacer-3;
+  grid-area: footer;
+
+  a {
+    color: var(--color-fg-accent);
+  }
+}
+
+.dateCss {
+  color: var(--color-fg-subtle);
+  display: flex;
+  font-feature-settings: "tnum";
+  font-size: 14px;
+  font-weight: 300;
+  grid-area: slug;
+  letter-spacing: 0.25px;
+  line-height: layout.$spacer-6;
+  margin-right: auto;
+  white-space: nowrap;
+}
+
+.reviewYearCss {
+  color: var(--color-fg-subtle);
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1;
+}
+
+.reviewCreditsCss {
+  color: var(--color-fg-subtle);
+  font-size: 16px;
+  font-weight: 400;
+  grid-area: credits;
+  letter-spacing: 0.25px;
+  line-height: layout.$spacer-4;
+  text-align: left;
+}
+
+.reviewGradeCss {
+  align-self: flex-start;
+  grid-area: grade;
+  height: layout.$spacer-5;
+  width: auto;
+}
+
+.articleBodyCss {
+  color: var(--color-fg-muted);
+  font-size: 18px;
+  grid-area: body;
+
+  p {
+    line-height: 28px;
+  }
+}
+
+.watchlistLinksCss {
+  display: contents;
+}
+
+.paginationCss {
+  align-content: space-around;
+  grid-area: pagination;
+}
+
+:global(.globalExcerptLinkCss) {
+  font-size: 14px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
