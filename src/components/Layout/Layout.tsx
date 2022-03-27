@@ -81,9 +81,9 @@ export default function Layout({
         </Helmet>
         <header className={mastHeaderCss}>
           <h1 className={mastTitleCss}>
-            <Link to="/">Frank&apos;s Movie Log</Link>
+            <Link to="/">Frank&apos;s Book Log</Link>
           </h1>
-          <p className={mastTaglineCss}>My life at the movies.</p>
+          <p className={mastTaglineCss}>Literature is a relative term.</p>
           <form
             action="https://www.google.com/search"
             acceptCharset="UTF-8"
@@ -103,7 +103,7 @@ export default function Layout({
               <input
                 type="hidden"
                 name="q"
-                value="site:www.franksmovielog.com"
+                value="site:www.franksbooklog.com"
               />
               <button
                 type="submit"
@@ -130,8 +130,7 @@ export default function Layout({
               <MastNavItem to="/about/">About</MastNavItem>
               <MastNavItem to="/how-i-grade/">How I Grade</MastNavItem>
               <MastNavItem to="/reviews/">Reviews</MastNavItem>
-              <MastNavItem to="/stats/">Stats</MastNavItem>
-              <MastNavItem to="/watchlist/">Watchlist</MastNavItem>
+              <MastNavItem to="/shelf/">Shelf</MastNavItem>
             </ul>
           </nav>
         </header>
@@ -144,11 +143,10 @@ export default function Layout({
             <FooterNavItem to="/about/">About</FooterNavItem>
             <FooterNavItem to="/how-i-grade/">How I Grade</FooterNavItem>
             <FooterNavItem to="/reviews/">Reviews</FooterNavItem>
-            <FooterNavItem to="/stats/">Stats</FooterNavItem>
-            <FooterNavItem to="/watchlist/">Watchlist</FooterNavItem>
+            <FooterNavItem to="/shelf/">Shelf</FooterNavItem>
           </ul>
           <p className={footerFairUseCss}>
-            All stills used in accordance with the{" "}
+            All covers used in accordance with the{" "}
             <a href="http://www.copyright.gov/title17/92chap1.html#107">
               Fair Use Law.
             </a>

@@ -45,8 +45,8 @@ const gatsbySourceFileSystemBackdrops = {
 const gatsbySourceFileSystemPosters = {
   resolve: `gatsby-source-filesystem`,
   options: {
-    name: "posters",
-    path: path.resolve("content/assets/posters/"),
+    name: "covers",
+    path: path.resolve("content/assets/covers/"),
   },
 };
 

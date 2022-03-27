@@ -23,7 +23,15 @@ type WithAvatarProps = {
   alt: string;
 } & WithBreadCrumpProps;
 
-type Props = HeaderProps | WithBreadCrumpProps | WithAvatarProps;
+type WithAvatarElementProps = {
+  avatarElement: JSX.Element;
+} & WithBreadCrumpProps;
+
+type Props =
+  | HeaderProps
+  | WithBreadCrumpProps
+  | WithAvatarProps
+  | WithAvatarElementProps;
 
 export default function FilterPageHeader(props: Props): JSX.Element {
   let avatar;
@@ -37,6 +45,8 @@ export default function FilterPageHeader(props: Props): JSX.Element {
         loading="eager"
       />
     );
+  } else if ("avatarElement" in props) {
+    avatar = <div className={avatarCss}>{props.avatarElement}</div>;
   }
 
   return (

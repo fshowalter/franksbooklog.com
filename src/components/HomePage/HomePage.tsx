@@ -2,12 +2,10 @@ import { graphql, Link } from "gatsby";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import React, { useRef } from "react";
 import toSentenceArray from "../../utils/to-sentence-array";
-import DateIcon from "../DateIcon";
 import Grade from "../Grade";
 import Layout from "../Layout";
 import RenderedMarkdown from "../RenderedMarkdown";
 import Seo from "../Seo";
-import WatchlistLinks from "../WatchlistLinks";
 import {
   articleBodyCss,
   articleFooterCss,
@@ -15,6 +13,7 @@ import {
   containerCss,
   dateCss,
   imageLinkCss,
+  kindCss,
   listCss,
   listItemCss,
   paginationCss,
@@ -22,9 +21,6 @@ import {
   reviewCss,
   reviewGradeCss,
   reviewHeaderCss,
-  reviewYearCss,
-  watchlistLinksCss,
-  wideCss,
 } from "./HomePage.module.scss";
 import Pagination from "./Pagination";
 
@@ -50,10 +46,10 @@ export default function HomePage({
       <Seo
         pageTitle={
           pageContext.currentPage === 1
-            ? "Frank's Movie Log: My Life at the Movies"
+            ? "Frank's Book Log: Literature is a relative term."
             : `Page ${pageContext.currentPage}`
         }
-        description="Reviews of current, cult, classic, and forgotten films."
+        description="Reviews of current, cult, classic, and forgotten books."
         article={false}
         image={null}
       />
@@ -61,67 +57,59 @@ export default function HomePage({
         <ol className={listCss}>
           {updates.map((update, index) => {
             const review = update;
-            const isWide =
-              index === 0 ||
-              (index === updates.length - 1 && updates.length % 2 === 0);
             const listItemValue =
               pageContext.numberOfItems - pageContext.skip - index;
-            const movie = update.reviewedMovie;
+            const work = update.reviewedWork;
 
             return (
               <li
                 key={review.frontmatter.sequence}
                 value={listItemValue}
-                className={`${listItemCss} ${isWide ? wideCss : ""}`}
+                className={listItemCss}
               >
-                <article className={`${reviewCss} ${isWide ? wideCss : ""}`}>
-                  <Link
-                    rel="canonical"
-                    className={imageLinkCss}
-                    to={`/reviews/${review.frontmatter.slug}/`}
-                  >
-                    {movie.backdrop && (
-                      <GatsbyImage
-                        image={movie.backdrop.childImageSharp.gatsbyImageData}
-                        alt={`A still from ${movie.title} (${movie.year})`}
-                        loading={index === 0 ? "eager" : "lazy"}
-                      />
-                    )}
-                  </Link>
+                <article className={reviewCss}>
                   <header className={reviewHeaderCss}>
+                    <div className={kindCss}>{review.reviewedWork.kind}</div>
                     <h2 className={articleHeadingCss}>
                       <Link
                         to={`/reviews/${review.frontmatter.slug}/`}
                         rel="canonical"
                       >
-                        {movie.title}{" "}
-                        <span className={reviewYearCss}>{movie.year}</span>
+                        {work.title}
                       </Link>
                     </h2>
+                    <p className={reviewCreditsCss}>
+                      {toSentenceArray(work.authors.map((a) => a.name))}
+                    </p>{" "}
                     <Grade
                       grade={review.frontmatter.grade}
                       className={reviewGradeCss}
                       width={140}
                       height={28}
                     />
-                    <p className={reviewCreditsCss}>
-                      Directed by {toSentenceArray(movie.directorNames)}.
-                      Starring {toSentenceArray(movie.principalCastNames)}.
-                    </p>
                   </header>
+                  <Link
+                    rel="canonical"
+                    className={imageLinkCss}
+                    to={`/reviews/${review.frontmatter.slug}/`}
+                  >
+                    {work.cover && (
+                      <GatsbyImage
+                        image={work.cover.childImageSharp.gatsbyImageData}
+                        alt={`A still from ${work.title} by ${toSentenceArray(
+                          work.authors.map((a) => a.name)
+                        ).join("")} (${work.year})`}
+                        loading={index === 0 ? "eager" : "lazy"}
+                      />
+                    )}
+                  </Link>
                   <RenderedMarkdown
                     className={articleBodyCss}
                     text={review.linkedExcerpt}
                     tag="main"
                   />
                   <footer className={articleFooterCss}>
-                    <div className={dateCss}>
-                      <DateIcon /> {review.frontmatter.date}
-                    </div>
-                    <WatchlistLinks
-                      movie={movie}
-                      className={watchlistLinksCss}
-                    />
+                    <div className={dateCss}>{review.dateFinished}</div>
                   </footer>
                 </article>
               </li>
@@ -142,42 +130,28 @@ export default function HomePage({
   );
 }
 
-interface WatchlistEntity {
-  name: string;
-  slug: string;
-  avatar: {
-    childImageSharp: {
-      gatsbyImageData: IGatsbyImageData;
-    };
-  };
-}
-
 interface PageQueryResult {
   update: {
     nodes: {
       frontmatter: {
-        imdbId: string;
         slug: string;
         grade: string;
-        date: string;
         sequence: number;
       };
       linkedExcerpt: string;
-      reviewedMovie: {
+      dateFinished: string;
+      reviewedWork: {
         title: string;
         year: number;
-        principalCastNames: string[];
-        directorNames: string[];
-        backdrop: {
+        kind: string;
+        authors: {
+          name: string;
+          notes: string | null;
+        }[];
+        cover: {
           childImageSharp: {
             gatsbyImageData: IGatsbyImageData;
           };
-        };
-        watchlist: {
-          performers: WatchlistEntity[];
-          directors: WatchlistEntity[];
-          writers: WatchlistEntity[];
-          collections: WatchlistEntity[];
         };
       };
     }[];
@@ -194,96 +168,32 @@ export const pageQuery = graphql`
     ) {
       nodes {
         frontmatter {
-          date(formatString: "DD MMM, YYYY")
           grade
           slug
           sequence
-          imdbId: imdb_id
         }
-        reviewedMovie {
+        dateFinished(formatString: "DD MMM, YYYY")
+        linkedExcerpt
+        reviewedWork {
           title
           year
-          principalCastNames: principal_cast_names
-          directorNames: director_names
-          backdrop {
+          kind
+          authors {
+            name
+            notes
+          }
+          cover {
             childImageSharp {
               gatsbyImageData(
-                layout: CONSTRAINED
+                layout: FIXED
                 formats: [JPG, AVIF]
                 quality: 80
-                width: 640
+                width: 160
                 placeholder: TRACED_SVG
               )
             }
           }
-          watchlist {
-            directors {
-              name
-              slug
-              avatar {
-                childImageSharp {
-                  gatsbyImageData(
-                    layout: FIXED
-                    formats: [JPG, AVIF]
-                    quality: 80
-                    width: 40
-                    height: 40
-                    placeholder: TRACED_SVG
-                  )
-                }
-              }
-            }
-            writers {
-              name
-              slug
-              avatar {
-                childImageSharp {
-                  gatsbyImageData(
-                    layout: FIXED
-                    formats: [JPG, AVIF]
-                    quality: 80
-                    width: 40
-                    height: 40
-                    placeholder: TRACED_SVG
-                  )
-                }
-              }
-            }
-            performers {
-              name
-              slug
-              avatar {
-                childImageSharp {
-                  gatsbyImageData(
-                    layout: FIXED
-                    formats: [JPG, AVIF]
-                    quality: 80
-                    width: 40
-                    height: 40
-                    placeholder: TRACED_SVG
-                  )
-                }
-              }
-            }
-            collections {
-              name
-              slug
-              avatar {
-                childImageSharp {
-                  gatsbyImageData(
-                    layout: FIXED
-                    formats: [JPG, AVIF]
-                    quality: 80
-                    width: 40
-                    height: 40
-                    placeholder: TRACED_SVG
-                  )
-                }
-              }
-            }
-          }
         }
-        linkedExcerpt
       }
     }
   }

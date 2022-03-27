@@ -40,7 +40,7 @@ describe("/", () => {
 
     requestAnimationFrame(() => {
       expect(document.title).toStrictEqual(
-        "Frank's Movie Log: My Life at the Movies"
+        "Frank's Book Log: Literature is a relative term."
       );
       done();
     });

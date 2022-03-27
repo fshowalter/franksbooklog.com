@@ -1,7 +1,6 @@
 import React from "react";
 import SelectInput from "../SelectInput";
 import {
-  checkboxLabelCss,
   containerCss,
   fromCss,
   inputLabelCss,
@@ -62,20 +61,19 @@ export default function GradeFilter({
   /** The label text. */
   label: string;
   /** Handler called when the control changes. */
-  onChange: (values: [number, number], includeNonReviewed: boolean) => void;
+  onChange: (values: [number, number]) => void;
 }): JSX.Element {
   const [minValue, setMinValue] = React.useState(1);
   const [maxValue, setMaxValue] = React.useState(13);
-  const [checkedValue, setCheckedValue] = React.useState(true);
 
   const handleMinChange = (value: string) => {
     const newMin = parseInt(value, 10);
     setMinValue(newMin);
 
     if (newMin <= maxValue) {
-      onChange([newMin, maxValue], checkedValue);
+      onChange([newMin, maxValue]);
     } else {
-      onChange([maxValue, newMin], checkedValue);
+      onChange([maxValue, newMin]);
     }
   };
 
@@ -84,15 +82,10 @@ export default function GradeFilter({
     setMaxValue(newMax);
 
     if (minValue <= newMax) {
-      onChange([minValue, newMax], checkedValue);
+      onChange([minValue, newMax]);
     } else {
-      onChange([newMax, minValue], checkedValue);
+      onChange([newMax, minValue]);
     }
-  };
-
-  const handleCheckedChange = (value: boolean) => {
-    setCheckedValue(value);
-    onChange([minValue, maxValue], value);
   };
 
   return (
@@ -116,14 +109,6 @@ export default function GradeFilter({
           >
             {options.slice()}
           </SelectInput>
-        </label>
-        <label className={checkboxLabelCss}>
-          <input
-            onChange={(e) => handleCheckedChange(e.target.checked)}
-            type="checkbox"
-            checked={checkedValue}
-          />
-          Include unrated viewings
         </label>
       </div>
     </fieldset>

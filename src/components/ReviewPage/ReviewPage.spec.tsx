@@ -19,7 +19,7 @@ describe("/reviews/{slug}", () => {
     render(<ReviewPage data={data} />);
 
     requestAnimationFrame(() => {
-      expect(document.title).toStrictEqual("Rio Bravo (1959)");
+      expect(document.title).toStrictEqual("On Writing by Stephen King");
       done();
     });
   });

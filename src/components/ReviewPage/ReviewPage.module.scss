@@ -3,20 +3,28 @@
 
 .containerCss {
   display: grid;
-  grid-template-areas: ". title ." "image image image" ". reviews ." ". viewings ." ". credits ." ". related .";
+  grid-template-areas: ". header ." ". reviews ." ". related .";
   grid-template-columns:
     minmax(var(--layout-grid-margin), 1fr) minmax(auto, 520px)
     minmax(var(--layout-grid-margin), 1fr);
   grid-template-rows: auto;
   justify-content: space-between;
-  margin: 0 auto;
+  margin: 3rem auto 0;
+
+  @media (min-width: breakpoints.$tablet) {
+    grid-template-areas: "header header header" ". reviews ." ". related .";
+  }
 
   @media (min-width: breakpoints.$desktop) {
-    grid-template-areas: "image image image" "title title title" "reviews . credits" "viewings . credits" "related related related";
-    grid-template-columns: minmax(auto, 66ch) 1fr calc((100% - 72px) / 4);
+    grid-template-areas: "header" "reviews" "related";
+    grid-template-columns: 1fr;
     grid-template-rows: none;
     max-width: unset;
     row-gap: 3rem;
+  }
+
+  @media (min-width: breakpoints.$max) {
+    margin-top: 0;
   }
 }
 
@@ -34,6 +42,18 @@
 
 .reviewsListItemCss {
   position: relative;
+}
+
+.reviewCss {
+  @media (min-width: breakpoints.$desktop) {
+    display: grid;
+    grid-template-areas: "slug . meta" "review . meta";
+    grid-template-columns: minmax(auto, 550px) layout.$spacer-10 1fr;
+    grid-template-rows: auto;
+    max-width: unset;
+    padding: 0;
+    text-align: left;
+  }
 }
 
 .reviewsListCss {
@@ -90,13 +110,6 @@
 
 .reviewDateIconCss {
   display: none;
-
-  @media (min-width: breakpoints.$desktop) {
-    display: block;
-    height: auto;
-    margin-right: layout.$spacer-3;
-    width: 16px;
-  }
 }
 
 .slugContainerCss {
@@ -109,7 +122,7 @@
   @media (min-width: breakpoints.$desktop) {
     align-items: center;
     display: flex;
-    margin-left: calc(-1.25 * var(--step-1));
+    grid-area: slug;
     text-align: left;
   }
 }
@@ -152,12 +165,14 @@
   }
 }
 
-.heroImageCss {
-  grid-area: image;
+.coverCss {
+  grid-area: cover;
+  justify-self: center;
 }
 
 .headerTitleCss {
   font-size: 32px;
+  grid-area: title;
   line-height: layout.$spacer-5;
 
   @media (min-width: breakpoints.$desktop) {
@@ -166,13 +181,53 @@
   }
 }
 
+.headerAuthorCss {
+  font-size: 18px;
+  grid-area: author;
+}
+
+.headerYearCss {
+  color: var(--color-fg-subtle);
+  font-size: 16px;
+  grid-area: year;
+}
+
+.headerKindCss {
+  color: var(--color-fg-subtle);
+  font-size: 14px;
+  grid-area: kind;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
 .headerContainerCss {
-  grid-area: title;
-  padding: layout.$spacer-4 0;
+  display: grid;
+  grid-area: header;
+  grid-template-areas: "cover" "title" "author" "kind" "year";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  justify-items: center;
+  max-width: unset;
+  row-gap: 1rem;
   text-align: center;
+  text-align: left;
+
+  @media (min-width: breakpoints.$tablet) {
+    grid-template-areas: ". cover . title ." ". cover . author ." ". cover . kind ." ". cover . year ." ". cover . . .";
+    grid-template-columns: minmax(var(--layout-grid-margin), 1fr) 250px layout.$spacer-6 auto minmax(
+        var(--layout-grid-margin),
+        1fr
+      );
+    justify-items: unset;
+  }
 
   @media (min-width: breakpoints.$desktop) {
+    grid-template-areas: "cover . title" "cover . author" "cover . kind" "cover . year" "cover . .";
+    grid-template-columns: 250px layout.$spacer-6 1fr;
+    grid-template-rows: auto;
+    max-width: unset;
     padding: 0;
+    row-gap: 1rem;
     text-align: left;
   }
 }
@@ -186,8 +241,10 @@
   margin-top: layout.$spacer-5;
 
   @media (min-width: breakpoints.$desktop) {
+    grid-area: review;
     margin-top: layout.$spacer-3;
-    padding-left: layout.$spacer-5;
+
+    // padding-left: calc(121px + layout.$spacer-3); // layout.$spacer-5;
     position: relative;
   }
 }
@@ -343,14 +400,17 @@
   padding: layout.$spacer-3 0;
 }
 
-.creditsCss {
+.reviewMetaCss {
   background-color: var(--color-bg-subtle);
-  grid-area: credits;
-  margin-top: layout.$spacer-7;
+  grid-area: meta;
+  margin: layout.$spacer-7 0;
+  padding: layout.$spacer-2 layout.$spacer-6 layout.$spacer-6;
 
   @media (min-width: breakpoints.$desktop) {
-    background-color: unset;
-    border: none;
+    align-self: flex-start;
+
+    // background-color: unset;
+    // border: none;
     margin: unset;
   }
 }
@@ -359,4 +419,23 @@
   @media (min-width: breakpoints.$desktop) {
     display: none;
   }
+}
+
+.termCss {
+  font-weight: 700;
+  line-height: layout.$spacer-4;
+  margin-top: layout.$spacer-4;
+}
+
+.readingTimeContainerCss {
+  font-feature-settings: "tnum";
+}
+
+.progressContainerCss {
+  line-height: layout.$spacer-4;
+  margin-top: layout.$spacer-4;
+}
+
+.progressMilestoneCss {
+  font-weight: 700;
 }

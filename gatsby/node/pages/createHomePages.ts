@@ -9,7 +9,6 @@ const query = `
   ) {
     nodes {
       frontmatter {
-        imdb_id
         slug
       }
     }
@@ -21,7 +20,6 @@ interface QueryResult {
   reviews: {
     nodes: {
       frontmatter: {
-        imdb_id: string;
         slug: string;
       };
     }[];

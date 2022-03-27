@@ -1,8 +1,5 @@
 import { Element } from "hast";
-import { selectAll } from "hast-util-select";
 import toHtml from "hast-util-to-html";
-import toHast from "mdast-util-to-hast";
-import remark from "remark";
 import { Parent } from "unist";
 import visit from "unist-util-visit";
 import { SchemaNames } from "./schemaNames";
@@ -13,7 +10,7 @@ import type {
   GatsbyResolveArgs,
   GatsbyResolveInfo,
 } from "./type-definitions";
-import findReviewedMovieNode from "./utils/findReviewedMovieNode";
+import findReviewedWorkNode from "./utils/findReviewedWorkNode";
 import resolveFieldForNode from "./utils/resolveFieldForNode";
 import valueForGrade from "./utils/valueForGrade";
 
@@ -23,142 +20,15 @@ export interface MarkdownNode extends GatsbyNode {
 }
 
 interface FrontMatter {
-  imdb_id: string;
   sequence: number;
   slug: string;
-  venue_notes: string;
+  edition_notes: string;
   grade: string;
-  date: string;
-}
-
-function fixFootnoteRefs(element: Element, sequence: number) {
-  const sups = selectAll("sup[id^=fnref]", element);
-  for (const sup of sups) {
-    sup.properties.id = sup.properties.id.replace(
-      "fnref-",
-      `fnref:${sequence}-`
-    );
-  }
-
-  const supAnchors = selectAll("a[href^=#fn-]", element);
-  for (const supAnchor of supAnchors) {
-    supAnchor.properties.href = supAnchor.properties.href.replace(
-      "#fn-",
-      `#fn:${sequence}-`
-    );
-  }
-
-  const listItems = selectAll("li[id^=fn-]", element);
-  for (const listItem of listItems) {
-    listItem.properties.id = listItem.properties.id.replace(
-      "fn-",
-      `fn:${sequence}-`
-    );
-  }
-
-  const returnAnchors = selectAll("a[href^=#fnref-]", element);
-  for (const returnAnchor of returnAnchors) {
-    returnAnchor.properties.href = returnAnchor.properties.href.replace(
-      "#fnref-",
-      `#fnref:${sequence}-`
-    );
-  }
-
-  return element;
-}
-
-function addVenueNotesFootnote(
-  element: Element,
-  sequence: number,
-  venueNotes: string
-) {
-  if (!venueNotes) {
-    return element;
-  }
-
-  const mdast = remark().parse(venueNotes);
-
-  const footNoteItemHast = toHast(mdast, {
-    allowDangerousHtml: true,
-  }) as Element;
-
-  if (footNoteItemHast && footNoteItemHast.children) {
-    const firstChild = footNoteItemHast.children[0] as Element;
-    footNoteItemHast.children = firstChild.children;
-  }
-
-  const venueFootnote: Element[] = [
-    {
-      type: "element",
-      tagName: "li",
-      properties: { id: `fn:${sequence}-v` },
-      children: [
-        { type: "text", value: "\n" },
-        footNoteItemHast,
-        {
-          type: "element",
-          tagName: "a",
-          properties: {
-            href: `#fnref:${sequence}-v`,
-            className: ["footnote-backref"],
-          },
-          children: [
-            {
-              type: "text",
-              value: "↩",
-            },
-          ],
-        },
-        { type: "text", value: "\n" },
-      ],
-    },
-  ];
-
-  const lastElement = element.children[element.children.length - 1] as Element;
-  let footNotesListElement: Element;
-
-  if (
-    lastElement &&
-    lastElement.properties &&
-    lastElement.properties.className &&
-    lastElement.properties.className === typeof "string" &&
-    lastElement.properties.className.includes("footnotes")
-  ) {
-    footNotesListElement = lastElement.children[3] as Element;
-  } else {
-    element.children.push({
-      type: "element",
-      tagName: "div",
-      proprties: {
-        className: ["footnotes"],
-      },
-      children: [
-        { type: "text", value: "\n" },
-        { type: "element", tagName: "hr", properties: {}, children: [] },
-        { type: "text", value: "\n" },
-        {
-          type: "element",
-          tagName: "ol",
-          properties: {},
-          children: [{ type: "text", value: "\n" }],
-        },
-        { type: "text", value: "\n" },
-      ],
-    });
-
-    footNotesListElement = (
-      element.children[element.children.length - 1] as Element
-    ).children[3] as Element;
-  }
-
-  footNotesListElement.children.push(...venueFootnote);
-
-  return element;
-}
-
-function fixFootnotes(element: Element, sequence: number, venueNotes: string) {
-  fixFootnoteRefs(element, sequence);
-  addVenueNotesFootnote(element, sequence, venueNotes);
+  edition: string;
+  progress: {
+    date: Date;
+    percent: number;
+  }[];
 }
 
 async function addReviewLinks(text: string, nodeModel: GatsbyNodeModel) {
@@ -169,17 +39,17 @@ async function addReviewLinks(text: string, nodeModel: GatsbyNodeModel) {
   const matches = [...text.matchAll(re)];
 
   for (const match of matches) {
-    const reviewedMovie = await findReviewedMovieNode(match[2], nodeModel);
+    const reviewedWork = await findReviewedWorkNode(match[2], nodeModel);
 
-    if (!reviewedMovie) {
+    if (!reviewedWork) {
       result = result.replace(
         `<span data-imdb-id="${match[2]}">${match[3]}</span>`,
         match[3]
       );
-    } else {
+    } else if (reviewedWork.slug) {
       result = result.replace(
         `<span data-imdb-id="${match[2]}">${match[3]}</span>`,
-        `<a href="/reviews/${reviewedMovie.slug}/">${match[3]}</a>`
+        `<a href="/reviews/${reviewedWork.slug}/">${match[3]}</a>`
       );
     }
   }
@@ -241,8 +111,8 @@ const MarkdownRemark = {
         return null;
       },
     },
-    reviewedMovie: {
-      type: SchemaNames.REVIEWED_MOVIES_JSON,
+    reviewedWork: {
+      type: SchemaNames.WORKS_JSON,
       resolve: async (
         source: MarkdownNode,
         args: GatsbyResolveArgs,
@@ -261,10 +131,77 @@ const MarkdownRemark = {
           return;
         }
 
-        return await findReviewedMovieNode(
-          source.frontmatter.imdb_id,
+        return await findReviewedWorkNode(
+          source.frontmatter.slug,
           context.nodeModel
         );
+      },
+    },
+    dateStarted: {
+      type: "Date",
+      extensions: {
+        dateformat: {},
+      },
+      resolve: (source: MarkdownNode) => {
+        return source.frontmatter.progress.reduce((prev, current) =>
+          prev.date < current.date ? prev : current
+        ).date;
+      },
+    },
+    yearFinished: {
+      type: "Int",
+      resolve: async (
+        source: MarkdownNode,
+        args: { key: string },
+        context: GatsbyNodeContext,
+        info: GatsbyResolveInfo
+      ) => {
+        const postType = await resolveFieldForNode<string>(
+          "postType",
+          source,
+          context,
+          info,
+          args
+        );
+
+        if (postType != "REVIEW") {
+          return null;
+        }
+
+        return source.frontmatter.progress
+          .reduce((prev, current) =>
+            prev.date > current.date ? prev : current
+          )
+          .date.getFullYear();
+      },
+    },
+    dateFinished: {
+      type: "Date",
+      extensions: {
+        dateformat: {},
+      },
+      resolve: (source: MarkdownNode) => {
+        return source.frontmatter.progress.reduce((prev, current) =>
+          prev.date > current.date ? prev : current
+        ).date;
+      },
+    },
+    readingTime: {
+      type: "Int",
+      extensions: {
+        dateformat: {},
+      },
+      resolve: (source: MarkdownNode) => {
+        const start = source.frontmatter.progress[0].date;
+        const end =
+          source.frontmatter.progress[source.frontmatter.progress.length - 1]
+            .date;
+
+        if (start === end) {
+          return 1;
+        }
+
+        return (end.getTime() - start.getTime()) / (1000 * 3600 * 24) + 1;
       },
     },
     linkedExcerpt: {
@@ -350,7 +287,7 @@ const MarkdownRemark = {
           return null;
         }
 
-        fixFootnotes(htmlAst, frontMatter.sequence, frontMatter.venue_notes);
+        // fixFootnotes(htmlAst, frontMatter.sequence, frontMatter.edition_notes);
 
         const html = toHtml(htmlAst, {
           allowDangerousHtml: true,

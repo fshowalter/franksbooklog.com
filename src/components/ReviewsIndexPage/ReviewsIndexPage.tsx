@@ -1,61 +1,29 @@
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
 import { IGatsbyImageData } from "gatsby-plugin-image";
 import React, { useReducer, useRef } from "react";
-import Select from "react-select";
-import { collator } from "../../utils/sort-utils";
 import Button from "../Button";
+import { Cover, CoverList } from "../CoverList";
 import DebouncedInput from "../DebouncedInput/DebouncedInput";
 import Fieldset from "../Fieldset";
 import FilterPageHeader from "../FilterPageHeader";
 import GradeInput from "../GradeInput";
 import Layout from "../Layout";
-import { Poster, PosterList } from "../PosterList";
-import SelectField from "../SelectField";
+import { SelectField, SelectOptions } from "../SelectField";
 import Seo from "../Seo";
 import YearInput from "../YearInput";
 import {
   calloutCss,
   containerCss,
   filtersCss,
-  genresSelectLabelCss,
-  genresWrapCss,
   leftCss,
   listHeaderGroupCss,
   listInfoCss,
   pageHeaderCss,
-  quoteCss,
   rightCss,
   showMoreCss,
 } from "./ReviewsIndexPage.module.scss";
 import type { SortType } from "./ReviewsIndexPage.reducer";
 import reducer, { ActionTypes, initState } from "./ReviewsIndexPage.reducer";
-
-/**
- * Renders the venue select options.
- */
-function VenueOptions({
-  viewings,
-}: {
-  /** The viewings to parse for possible venues. */
-  viewings: Movie[];
-}): JSX.Element {
-  const venues = Array.from(
-    new Set(viewings.map((viewing) => viewing.venue))
-  ).sort((a, b) => collator.compare(a, b));
-
-  return (
-    <>
-      <option key="all" value="All">
-        All
-      </option>
-      {venues.map((venue) => (
-        <option key={venue} value={venue}>
-          {venue}
-        </option>
-      ))}
-    </>
-  );
-}
 
 function ListInfo({
   visible,
@@ -75,76 +43,54 @@ function ListInfo({
   return <div className={listInfoCss}>{showingText}</div>;
 }
 
-function groupForViewing(movie: Movie, sortValue: SortType): string {
-  const shortMonthToLong: { [key: string]: string } = {
-    Jan: "January",
-    Feb: "February",
-    Mar: "March",
-    Apr: "April",
-    May: "May",
-    Jun: "June",
-    Jul: "July",
-    Aug: "August",
-    Sep: "September",
-    Oct: "October",
-    Nov: "November",
-    Dec: "December",
-  };
-
+function groupForReview(review: Review, sortValue: SortType): string {
   switch (sortValue) {
-    case "release-date-asc":
-    case "release-date-desc": {
-      return movie.releaseDate.substring(0, 4);
+    case "published-date-asc":
+    case "published-date-desc": {
+      return review.reviewedWork.year.toString();
     }
-    case "viewing-date-asc":
-    case "viewing-date-desc": {
-      const match = movie.viewingDate.match(
-        /[A-Za-z]{3} ([A-Za-z]{3}) \d{1,2}, (\d{4})/
-      );
-      if (!match) {
-        return "Unknown";
-      }
-
-      return `${shortMonthToLong[match[1]]} ${match[2]}`;
+    case "read-date-asc":
+    case "read-date-desc": {
+      return review.dateFinished;
     }
     case "grade-asc":
     case "grade-desc": {
-      return movie.grade || "Unrated";
+      return review.frontmatter.grade;
     }
     case "title": {
-      const letter = movie.sortTitle.substring(0, 1);
+      const letter = review.reviewedWork.sortTitle.substring(0, 1);
 
       if (letter.toLowerCase() == letter.toUpperCase()) {
         return "#";
       }
 
-      return movie.sortTitle.substring(0, 1).toLocaleUpperCase();
+      return review.reviewedWork.sortTitle.substring(0, 1).toLocaleUpperCase();
     }
     // no default
   }
 }
 
-function groupViewings({
-  viewings,
+function groupReviews({
+  reviews,
   sortValue,
 }: {
-  viewings: Movie[];
+  reviews: Review[];
   sortValue: SortType;
-}): Map<string, Movie[]> {
-  const groupedViewings: Map<string, Movie[]> = new Map();
+}): Map<string, Review[]> {
+  const groupedReviews: Map<string, Review[]> = new Map();
 
-  viewings.map((viewing) => {
-    const group = groupForViewing(viewing, sortValue);
-    let groupValue = groupedViewings.get(group);
+  reviews.map((review) => {
+    const group = groupForReview(review, sortValue);
+    let groupValue = groupedReviews.get(group);
 
     if (!groupValue) {
       groupValue = [];
-      groupedViewings.set(group, groupValue);
+      groupedReviews.set(group, groupValue);
     }
-    groupValue.push(viewing);
+    groupValue.push(review);
   });
 
-  return groupedViewings;
+  return groupedReviews;
 }
 
 /**
@@ -158,15 +104,15 @@ export default function ReviewsIndexPage({
   const [state, dispatch] = useReducer(
     reducer,
     {
-      viewings: [...data.movie.nodes],
+      reviews: [...data.review.nodes],
     },
     initState
   );
 
   const listHeader = useRef<HTMLDivElement>(null);
 
-  const groupedViewings = groupViewings({
-    viewings: state.filteredViewings.slice(0, state.showCount),
+  const groupedReviews = groupReviews({
+    reviews: state.filteredReviews.slice(0, state.showCount),
     sortValue: state.sortValue,
   });
 
@@ -174,7 +120,7 @@ export default function ReviewsIndexPage({
     <Layout>
       <Seo
         pageTitle="Reviews"
-        description="A sortable and filterable list of every movie I've watched and reviewed since 2012."
+        description="A sortable and filterable list of every book I've reviewed since 2022."
         image={null}
         article={false}
       />
@@ -184,35 +130,13 @@ export default function ReviewsIndexPage({
             className={pageHeaderCss}
             heading="Reviews"
             tagline={
-              <>
-                <q className={quoteCss}>We have such sights to show you.</q>
-                <p>
-                  I&apos;ve watched{" "}
-                  <span className={calloutCss}>
-                    {state.allViewings.length.toLocaleString()}
-                  </span>{" "}
-                  movies since 2012 and published{" "}
-                  <span className={calloutCss}>
-                    {data.reviews.totalCount.toLocaleString()}
-                  </span>{" "}
-                  reviews since 2020.
-                </p>
-                <p>
-                  <b>Looking for something new?</b>
-                  <br /> Peruse my list of{" "}
-                  <Link to="/reviews/underseen/">underseen gems</Link>.
-                </p>
-
-                <p>
-                  <b>Feeling contrarian?</b>
-                  <br />
-                  Behold my list of{" "}
-                  <Link to="/reviews/overrated/">
-                    overrated disappointments
-                  </Link>
-                  .
-                </p>
-              </>
+              <p>
+                I&apos;ve published{" "}
+                <span className={calloutCss}>
+                  {data.review.totalCount.toLocaleString()}
+                </span>{" "}
+                reviews since 2022.
+              </p>
             }
           />
           <div className={filtersCss}>
@@ -225,72 +149,50 @@ export default function ReviewsIndexPage({
                 }
               />
               <YearInput
-                label="Release Year"
-                years={data.movie.releaseYears}
+                label="Published Year"
+                years={data.review.publishedYears}
                 onChange={(values) =>
-                  dispatch({ type: ActionTypes.FILTER_RELEASE_YEAR, values })
+                  dispatch({ type: ActionTypes.FILTER_PUBLISHED_YEAR, values })
                 }
               />
               <YearInput
-                label="Viewing Year"
-                years={data.movie.viewingYears}
+                label="Read Year"
+                years={data.review.readYears}
                 onChange={(values) =>
-                  dispatch({ type: ActionTypes.FILTER_VIEWING_YEAR, values })
+                  dispatch({ type: ActionTypes.FILTER_READ_YEAR, values })
                 }
               />
               <GradeInput
                 label="Grade"
-                onChange={(values, includeNonReviewed) =>
+                onChange={(values) =>
                   dispatch({
                     type: ActionTypes.FILTER_GRADE,
                     values,
-                    includeNonReviewed,
                   })
                 }
               />
               <SelectField
-                label="Venue"
+                label="Kind"
                 onChange={(e) =>
                   dispatch({
-                    type: ActionTypes.FILTER_VENUE,
+                    type: ActionTypes.FILTER_KIND,
                     value: e.target.value,
                   })
                 }
               >
-                <VenueOptions viewings={state.allViewings} />
+                <SelectOptions options={data.review.kinds} />
               </SelectField>
-              <div className={genresWrapCss}>
-                <label htmlFor="genres" className={genresSelectLabelCss}>
-                  Genres
-                </label>
-                <Select
-                  inputId="genres"
-                  theme={(theme) => ({
-                    ...theme,
-                    borderRadius: 4,
-                    colors: {
-                      ...theme.colors,
-                      neutral0: "var(--color-bg-subtle)",
-                      neutral20: "var(--color-border-default)",
-                      neutral50: "var(--color-fg-subtle)",
-                      danger: "var(--color-fg-accent)",
-                      primary25: "var(--color-bg-stripe)",
-                    },
-                  })}
-                  classNamePrefix="reactSelect"
-                  isSearchable={false}
-                  onChange={(e) =>
-                    dispatch({
-                      type: ActionTypes.FILTER_GENRES,
-                      values: e.map((selection) => selection.value),
-                    })
-                  }
-                  isMulti={true}
-                  options={data.movie.genres.map((genre) => {
-                    return { value: genre, label: genre };
-                  })}
-                />
-              </div>
+              <SelectField
+                label="Edition"
+                onChange={(e) =>
+                  dispatch({
+                    type: ActionTypes.FILTER_EDITION,
+                    value: e.target.value,
+                  })
+                }
+              >
+                <SelectOptions options={data.review.editions} />
+              </SelectField>
               <SelectField
                 value={state.sortValue}
                 label="Order By"
@@ -301,17 +203,13 @@ export default function ReviewsIndexPage({
                   })
                 }
               >
-                <option value="viewing-date-desc">
-                  Viewing Date (Newest First)
+                <option value="read-date-desc">Read Date (Newest First)</option>
+                <option value="read-date-asc">Read Date (Oldest First)</option>
+                <option value="published-date-desc">
+                  Year Published (Newest First)
                 </option>
-                <option value="viewing-date-asc">
-                  Viewing Date (Oldest First)
-                </option>
-                <option value="release-date-desc">
-                  Release Date (Newest First)
-                </option>
-                <option value="release-date-asc">
-                  Release Date (Oldest First)
+                <option value="published-date-asc">
+                  Year Published (Oldest First)
                 </option>
                 <option value="title">Title</option>
                 <option value="grade-desc">Grade (Best First)</option>
@@ -321,14 +219,14 @@ export default function ReviewsIndexPage({
             <div className={listInfoCss}>
               <ListInfo
                 visible={state.showCount}
-                total={state.filteredViewings.length}
+                total={state.filteredReviews.length}
               />
             </div>
           </div>
         </div>
         <div className={rightCss} ref={listHeader}>
-          <ol data-testid="viewings-list">
-            {[...groupedViewings].map(([group, viewings], index) => {
+          <ol data-testid="review-list">
+            {[...groupedReviews].map(([group, reviews], index) => {
               return (
                 <li key={group}>
                   <div
@@ -337,28 +235,29 @@ export default function ReviewsIndexPage({
                   >
                     {group}
                   </div>
-                  <PosterList>
-                    {viewings.map((viewing) => {
+                  <CoverList>
+                    {reviews.map((review) => {
                       return (
-                        <Poster
-                          key={viewing.sequence}
-                          title={viewing.title}
-                          year={viewing.year}
-                          grade={viewing.grade}
-                          date={viewing.viewingDate}
-                          venue={viewing.venue}
-                          slug={viewing.slug}
-                          image={viewing.poster}
+                        <Cover
+                          key={review.frontmatter.sequence}
+                          title={review.reviewedWork.title}
+                          year={review.reviewedWork.year}
+                          grade={review.frontmatter.grade}
+                          date={review.dateFinished}
+                          edition={review.frontmatter.edition}
+                          kind={review.reviewedWork.kind}
+                          slug={review.frontmatter.slug}
+                          image={review.reviewedWork.cover}
                         />
                       );
                     })}
-                  </PosterList>
+                  </CoverList>
                 </li>
               );
             })}
           </ol>
           <div className={showMoreCss}>
-            {state.filteredViewings.length > state.showCount && (
+            {state.filteredReviews.length > state.showCount && (
               <Button onClick={() => dispatch({ type: ActionTypes.SHOW_MORE })}>
                 <svg
                   focusable="false"
@@ -377,72 +276,83 @@ export default function ReviewsIndexPage({
   );
 }
 
-export interface Movie {
-  title: string;
-  year: number;
-  releaseDate: string;
-  viewingDate: string;
-  viewingYear: number;
-  sequence: number;
-  venue: string;
-  sortTitle: string;
-  genres: string[];
-  slug: string | null;
-  grade: string | null;
-  gradeValue: number | null;
-  poster: {
-    childImageSharp: {
-      gatsbyImageData: IGatsbyImageData;
+export interface Review {
+  frontmatter: {
+    sequence: number;
+    grade: string;
+    slug: string;
+    edition: string;
+  };
+  dateFinished: string;
+  yearFinished: number;
+  gradeValue: number;
+  reviewedWork: {
+    title: string;
+    year: number;
+    sortTitle: string;
+    kind: string;
+    cover: {
+      childImageSharp: {
+        gatsbyImageData: IGatsbyImageData;
+      };
     };
   };
 }
 
 interface PageQueryResult {
-  reviews: {
+  review: {
     totalCount: number;
-  };
-  movie: {
-    nodes: Movie[];
-    viewingYears: string[];
-    releaseYears: string[];
-    genres: string[];
+    nodes: Review[];
+    editions: string[];
+    publishedYears: string[];
+    readYears: string[];
+    kinds: string[];
   };
 }
 
 export const pageQuery = graphql`
   query {
-    reviews: allMarkdownRemark(filter: { postType: { eq: "REVIEW" } }) {
+    review: allMarkdownRemark(
+      filter: { postType: { eq: "REVIEW" } }
+      sort: { fields: frontmatter___sequence, order: DESC }
+    ) {
       totalCount
-    }
-    movie: allViewingsJson(sort: { fields: [sequence], order: DESC }) {
+      editions: distinct(field: frontmatter___edition)
+      publishedYears: distinct(field: reviewedWork___year)
+      readYears: distinct(field: yearFinished)
+      kinds: distinct(field: reviewedWork___kind)
       nodes {
-        sequence
-        viewingYear: viewing_year
-        viewingDate: viewing_date(formatString: "ddd MMM D, YYYY")
-        releaseDate: release_date
-        title
-        venue
-        year
-        sortTitle: sort_title
-        slug
-        grade
+        frontmatter {
+          sequence
+          grade
+          slug
+          edition
+        }
+        yearFinished
+        dateFinished
         gradeValue
-        genres
-        poster {
-          childImageSharp {
-            gatsbyImageData(
-              layout: CONSTRAINED
-              formats: [JPG, AVIF]
-              quality: 80
-              width: 200
-              placeholder: TRACED_SVG
-            )
+        reviewedWork {
+          title
+          year
+          sortTitle: sort_title
+          kind
+          authors {
+            name
+            notes
+          }
+          cover {
+            childImageSharp {
+              gatsbyImageData(
+                layout: CONSTRAINED
+                formats: [JPG, AVIF]
+                quality: 80
+                width: 200
+                placeholder: TRACED_SVG
+              )
+            }
           }
         }
       }
-      viewingYears: distinct(field: viewing_year)
-      releaseYears: distinct(field: year)
-      genres: distinct(field: genres)
     }
   }
 `;

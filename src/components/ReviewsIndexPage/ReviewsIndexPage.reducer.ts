@@ -3,27 +3,30 @@ import {
   collator,
   sortNumberAsc,
   sortNumberDesc,
-  sortStringAsc,
-  sortStringDesc,
 } from "../../utils/sort-utils";
-import type { Movie } from "./ReviewsIndexPage";
+import type { Review } from "./ReviewsIndexPage";
 
 export type SortType =
-  | "viewing-date-desc"
-  | "viewing-date-asc"
-  | "release-date-desc"
-  | "release-date-asc"
+  | "read-date-desc"
+  | "read-date-asc"
+  | "published-date-desc"
+  | "published-date-asc"
   | "title"
   | "grade-asc"
   | "grade-desc";
 
-function sortViewings(viewings: Movie[], sortOrder: SortType) {
-  const sortMap: Record<SortType, (a: Movie, b: Movie) => number> = {
-    "viewing-date-desc": (a, b) => sortNumberDesc(a.sequence, b.sequence),
-    "viewing-date-asc": (a, b) => sortNumberAsc(a.sequence, b.sequence),
-    "release-date-desc": (a, b) => sortStringDesc(a.releaseDate, b.releaseDate),
-    "release-date-asc": (a, b) => sortStringAsc(a.releaseDate, b.releaseDate),
-    title: (a, b) => collator.compare(a.sortTitle, b.sortTitle),
+function sortReviews(reviews: Review[], sortOrder: SortType) {
+  const sortMap: Record<SortType, (a: Review, b: Review) => number> = {
+    "read-date-desc": (a, b) =>
+      sortNumberDesc(a.frontmatter.sequence, b.frontmatter.sequence),
+    "read-date-asc": (a, b) =>
+      sortNumberAsc(a.frontmatter.sequence, b.frontmatter.sequence),
+    "published-date-desc": (a, b) =>
+      sortNumberDesc(a.reviewedWork.year, b.reviewedWork.year),
+    "published-date-asc": (a, b) =>
+      sortNumberAsc(a.reviewedWork.year, b.reviewedWork.year),
+    title: (a, b) =>
+      collator.compare(a.reviewedWork.sortTitle, b.reviewedWork.sortTitle),
     "grade-asc": (a, b) =>
       sortNumberAsc(a.gradeValue || 50, b.gradeValue || 50),
     "grade-desc": (a, b) =>
@@ -31,18 +34,18 @@ function sortViewings(viewings: Movie[], sortOrder: SortType) {
   };
 
   const comparer = sortMap[sortOrder];
-  return viewings.sort(comparer);
+  return reviews.sort(comparer);
 }
 
 /** The page state. */
 type State = {
-  /** All possible viewings. */
-  allViewings: Movie[];
-  /** Viewings matching the current filters. */
-  filteredViewings: Movie[];
+  /** All possible reviews. */
+  allReviews: Review[];
+  /** Reviews matching the current filters. */
+  filteredReviews: Review[];
   /** The active filters. */
-  filters: Record<string, (viewing: Movie) => boolean>;
-  /** The number of viewings to show. */
+  filters: Record<string, (review: Review) => boolean>;
+  /** The number of reviews to show. */
   showCount: number;
   /** The active sort value. */
   sortValue: SortType;
@@ -53,23 +56,23 @@ const SHOW_COUNT_DEFAULT = 24;
 /**
  * Initializes the page state.
  */
-export function initState({ viewings }: { viewings: Movie[] }): State {
+export function initState({ reviews }: { reviews: Review[] }): State {
   return {
-    allViewings: viewings,
-    filteredViewings: viewings,
+    allReviews: reviews,
+    filteredReviews: reviews,
     filters: {},
     showCount: SHOW_COUNT_DEFAULT,
-    sortValue: "viewing-date-desc",
+    sortValue: "read-date-desc",
   };
 }
 
 export enum ActionTypes {
   FILTER_TITLE = "FILTER_TITLE",
-  FILTER_VENUE = "FILTER_VENUE",
+  FILTER_KIND = "FILTER_KIND",
+  FILTER_EDITION = "FILTER_EDITION",
   FILTER_GRADE = "FILTER_GRADE",
-  FILTER_GENRES = "FILTER_GENRES",
-  FILTER_VIEWING_YEAR = "FILTER_VIEWING_YEAR",
-  FILTER_RELEASE_YEAR = "FILTER_RELEASE_YEAR",
+  FILTER_PUBLISHED_YEAR = "FILTER_PUBLISHED_YEAR",
+  FILTER_READ_YEAR = "FILTER_READ_YEAR",
   SORT = "SORT",
   SHOW_MORE = "SHOW_MORE",
 }
@@ -81,18 +84,18 @@ interface FilterTitleAction {
   value: string;
 }
 
-/** Action to filter by venue. */
-interface FilterVenueAction {
-  type: ActionTypes.FILTER_VENUE;
+/** Action to filter by kind. */
+interface FilterKindAction {
+  type: ActionTypes.FILTER_KIND;
   /** The value to filter on. */
   value: string;
 }
 
 /** Action to filter by venue. */
-interface FilterGenresAction {
-  type: ActionTypes.FILTER_GENRES;
+interface FilterEditionAction {
+  type: ActionTypes.FILTER_EDITION;
   /** The value to filter on. */
-  values: string[];
+  value: string;
 }
 
 /** Action to filter by grade. */
@@ -100,19 +103,18 @@ interface FilterGradeAction {
   type: ActionTypes.FILTER_GRADE;
   /** The values to filter on. */
   values: [number, number];
-  includeNonReviewed: boolean;
 }
 
-/** Action to filter by release year. */
-interface FilterReleaseYearAction {
-  type: ActionTypes.FILTER_RELEASE_YEAR;
+/** Action to filter by read year. */
+interface FilterReadYearAction {
+  type: ActionTypes.FILTER_READ_YEAR;
   /** The minimum and maximum years to bound the filter window. */
   values: [number, number];
 }
 
-/** Action to filter by viewing year. */
-interface FilterViewingYearAction {
-  type: ActionTypes.FILTER_VIEWING_YEAR;
+/** Action to filter by published year. */
+interface FilterPublishedYearAction {
+  type: ActionTypes.FILTER_PUBLISHED_YEAR;
   /** The minimum and maximum years to bound the filter window. */
   values: [number, number];
 }
@@ -130,11 +132,11 @@ interface ShowMoreAction {
 
 type Action =
   | FilterTitleAction
-  | FilterReleaseYearAction
-  | FilterViewingYearAction
-  | FilterVenueAction
+  | FilterReadYearAction
+  | FilterPublishedYearAction
+  | FilterKindAction
   | FilterGradeAction
-  | FilterGenresAction
+  | FilterEditionAction
   | SortAction
   | ShowMoreAction;
 
@@ -146,134 +148,134 @@ type Action =
 export default function reducer(state: State, action: Action): State {
   // eslint-disable-line consistent-return
   let filters;
-  let filteredViewings;
+  let filteredReviews;
 
   switch (action.type) {
     case ActionTypes.FILTER_TITLE: {
       const regex = new RegExp(action.value, "i");
       filters = {
         ...state.filters,
-        title: (viewing: Movie) => {
-          return regex.test(viewing.title);
+        title: (review: Review) => {
+          return regex.test(review.reviewedWork.title);
         },
       };
-      filteredViewings = sortViewings(
-        applyFilters<Movie>({ collection: state.allViewings, filters }),
+      filteredReviews = sortReviews(
+        applyFilters<Review>({ collection: state.allReviews, filters }),
         state.sortValue
       );
       return {
         ...state,
         filters,
-        filteredViewings,
+        filteredReviews,
       };
     }
-    case ActionTypes.FILTER_VENUE: {
+    case ActionTypes.FILTER_KIND: {
       filters = {
         ...state.filters,
-        venue: (viewing: Movie) => {
+        venue: (review: Review) => {
           if (action.value === "All") {
             return true;
           }
 
-          return viewing.venue === action.value;
+          return review.reviewedWork.kind === action.value;
         },
       };
-      filteredViewings = sortViewings(
-        applyFilters<Movie>({ collection: state.allViewings, filters }),
+      filteredReviews = sortReviews(
+        applyFilters<Review>({ collection: state.allReviews, filters }),
         state.sortValue
       );
       return {
         ...state,
         filters,
-        filteredViewings,
+        filteredReviews,
       };
     }
-    case ActionTypes.FILTER_RELEASE_YEAR: {
+    case ActionTypes.FILTER_EDITION: {
       filters = {
         ...state.filters,
-        releaseYear: (viewing: Movie) => {
-          const releaseYear = viewing.year;
+        edition: (review: Review) => {
+          if (action.value === "All") {
+            return true;
+          }
+
+          return review.frontmatter.edition === action.value;
+        },
+      };
+      filteredReviews = sortReviews(
+        applyFilters<Review>({ collection: state.allReviews, filters }),
+        state.sortValue
+      );
+      return {
+        ...state,
+        filters,
+        filteredReviews,
+      };
+    }
+    case ActionTypes.FILTER_PUBLISHED_YEAR: {
+      filters = {
+        ...state.filters,
+        publishedYear: (review: Review) => {
+          const publishedYear = review.reviewedWork.year;
           return (
-            releaseYear >= action.values[0] && releaseYear <= action.values[1]
+            publishedYear >= action.values[0] &&
+            publishedYear <= action.values[1]
           );
         },
       };
-      filteredViewings = sortViewings(
-        applyFilters<Movie>({ collection: state.allViewings, filters }),
+      filteredReviews = sortReviews(
+        applyFilters<Review>({ collection: state.allReviews, filters }),
         state.sortValue
       );
       return {
         ...state,
         filters,
-        filteredViewings,
+        filteredReviews,
       };
     }
-    case ActionTypes.FILTER_GENRES: {
+    case ActionTypes.FILTER_READ_YEAR: {
       filters = {
         ...state.filters,
-        genres: (movie: Movie) => {
-          return action.values.every((genre) => movie.genres.includes(genre));
+        readYear: (review: Review) => {
+          const readYear = review.yearFinished;
+          return readYear >= action.values[0] && readYear <= action.values[1];
         },
       };
-      filteredViewings = sortViewings(
-        applyFilters<Movie>({ collection: state.allViewings, filters }),
+      filteredReviews = sortReviews(
+        applyFilters<Review>({ collection: state.allReviews, filters }),
         state.sortValue
       );
       return {
         ...state,
         filters,
-        filteredViewings,
-      };
-    }
-    case ActionTypes.FILTER_VIEWING_YEAR: {
-      filters = {
-        ...state.filters,
-        releaseYear: (viewing: Movie) => {
-          const viewingYear = viewing.viewingYear;
-          return (
-            viewingYear >= action.values[0] && viewingYear <= action.values[1]
-          );
-        },
-      };
-      filteredViewings = sortViewings(
-        applyFilters<Movie>({ collection: state.allViewings, filters }),
-        state.sortValue
-      );
-      return {
-        ...state,
-        filters,
-        filteredViewings,
+        filteredReviews,
       };
     }
     case ActionTypes.FILTER_GRADE: {
       filters = {
         ...state.filters,
-        grade: (movie: Movie) => {
-          const gradeValue = movie.gradeValue;
-          if (gradeValue == null) {
-            return action.includeNonReviewed;
-          }
+        grade: (review: Review) => {
+          const gradeValue = review.gradeValue;
           return (
             gradeValue >= action.values[0] && gradeValue <= action.values[1]
           );
         },
       };
-      filteredViewings = sortViewings(
-        applyFilters<Movie>({ collection: state.allViewings, filters }),
+      filteredReviews = sortReviews(
+        applyFilters<Review>({ collection: state.allReviews, filters }),
         state.sortValue
       );
       return {
         ...state,
         filters,
-        filteredViewings,
+        filteredReviews,
       };
     }
     case ActionTypes.SORT: {
-      filteredViewings = sortViewings(state.filteredViewings, action.value);
+      filteredReviews = sortReviews(state.filteredReviews, action.value);
       return {
         ...state,
         sortValue: action.value,
-        filteredViewings,
+        filteredReviews,
       };
     }
     case ActionTypes.SHOW_MORE: {

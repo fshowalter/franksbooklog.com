@@ -12,33 +12,10 @@ function createReviewsIndexPage(createPage: Actions["createPage"]) {
   });
 }
 
-function createUnderseenGemsPage(createPage: Actions["createPage"]) {
-  // Index page
-  createPage({
-    context: null,
-    path: `/reviews/underseen/`,
-    component: path.resolve(
-      "./src/components/UnderseenGemsPage/UnderseenGemsPage.tsx"
-    ),
-  });
-}
-
-function createOverratedDisappointmentsPage(createPage: Actions["createPage"]) {
-  // Index page
-  createPage({
-    context: null,
-    path: `/reviews/overrated/`,
-    component: path.resolve(
-      "./src/components/OverratedDisappointmentsPage/OverratedDisappointmentsPage.tsx"
-    ),
-  });
-}
-
 const query = `
 {
-  reviews: allReviewedMoviesJson {
+  work: allWorksJson(filter: {reviewed: {eq: true}}) {
     nodes {
-      imdb_id
       slug
     }
   }
@@ -46,9 +23,8 @@ const query = `
 `;
 
 interface QueryResult {
-  reviews: {
+  work: {
     nodes: {
-      imdb_id: string;
       slug: string;
     }[];
   };
@@ -69,12 +45,12 @@ async function createIndividualReviewPages(
   }
 
   // Review pages
-  queryResult.data.reviews.nodes.forEach((node) => {
+  queryResult.data.work.nodes.forEach((node) => {
     createPage({
       path: `/reviews/${node.slug}/`,
       component: path.resolve("./src/components/ReviewPage/ReviewPage.tsx"),
       context: {
-        imdbId: node.imdb_id,
+        slug: node.slug,
       },
     });
   });
@@ -88,7 +64,5 @@ export default async function createReviewPages({
   const { createPage } = actions;
 
   createReviewsIndexPage(createPage);
-  createUnderseenGemsPage(createPage);
-  createOverratedDisappointmentsPage(createPage);
   await createIndividualReviewPages(createPage, graphql, reporter);
 }
