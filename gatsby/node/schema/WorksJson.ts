@@ -155,58 +155,6 @@ const WorksJson = {
         );
       },
     },
-    // browseMore: {
-    //   type: `[${SchemaNames.REVIEWED_MOVIES_JSON}]`,
-    //   resolve: async (
-    //     source: ReviewedMovieNode,
-    //     _args: unknown,
-    //     context: GatsbyNodeContext
-    //   ) => {
-    //     const { entries } = await context.nodeModel.findAll<ReviewedMovieNode>({
-    //       type: SchemaNames.REVIEWED_MOVIES_JSON,
-    //       query: {
-    //         sort: {
-    //           fields: ["sort_title"],
-    //           order: ["ASC"],
-    //         },
-    //       },
-    //     });
-
-    //     if (!entries) {
-    //       return [];
-    //     }
-
-    //     return sliceMoviesForBrowseMore(Array.from(entries), source.imdb_id);
-    //   },
-    // },
-    // olderViewings: {
-    //   type: `[${SchemaNames.VIEWINGS_JSON}]`,
-    //   resolve: async (
-    //     source: ReviewedMovieNode,
-    //     _args: unknown,
-    //     context: GatsbyNodeContext
-    //   ) => {
-    //     const { entries } = await context.nodeModel.findAll({
-    //       type: SchemaNames.VIEWINGS_JSON,
-    //       query: {
-    //         filter: {
-    //           imdb_id: {
-    //             eq: source.imdb_id,
-    //           },
-    //           sequence: {
-    //             lt: 836,
-    //           },
-    //         },
-    //         sort: {
-    //           fields: ["sequence"],
-    //           order: ["DESC"],
-    //         },
-    //       },
-    //     });
-
-    //     return entries;
-    //   },
-    // },
     cover: {
       type: "File",
       resolve: async (

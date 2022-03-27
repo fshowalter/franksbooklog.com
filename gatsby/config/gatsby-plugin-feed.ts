@@ -11,16 +11,17 @@ const query = `
           date
           sequence
           grade
-      }
-      reviewedMovie {
+          slug
+        }
+      reviewedWork {
         title
         year
-        slug
-        principalCastNames: principal_cast_names
-        directorNames: director_names
-        image: backdrop {
+        authors {
+          name
+        }
+        image: cover {
           childImageSharp {
-            resize(toFormat: JPG, width: 1200, quality: 80) {
+            resize(toFormat: JPG, width: 500, quality: 80) {
               src
             }
           }
@@ -48,13 +49,14 @@ interface Review {
     grade: string;
     date: string;
     sequence: number;
+    slug: string;
   };
-  reviewedMovie: {
-    directorNames: string[];
-    principalCastNames: string[];
+  reviewedWork: {
+    authors: {
+      name: string;
+    }[];
     title: string;
     year: string;
-    slug: string;
     image: {
       childImageSharp: {
         resize: {
@@ -83,12 +85,7 @@ function starsForGrade(grade: string) {
 }
 
 function addMetaToExcerpt(excerpt: string, review: Review) {
-  const meta = `${starsForGrade(
-    review.frontmatter.grade[0]
-  )} D: ${review.reviewedMovie.directorNames.join(
-    ", "
-  )}. ${review.reviewedMovie.principalCastNames.join(", ")}.`;
-
+  const meta = `${starsForGrade(review.frontmatter.grade[0])}`;
   return `<p>${meta}</p>${excerpt}`;
 }
 
@@ -97,7 +94,7 @@ function setup(options: Record<string, unknown>) {
     ...options,
     custom_elements: [
       {
-        'atom:link href="https://www.franksmovielog.com/feed.xml" rel="self" type="application/rss+xml"':
+        'atom:link href="https://www.franksbooklog.com/feed.xml" rel="self" type="application/rss+xml"':
           null,
       },
     ],
@@ -107,15 +104,17 @@ function setup(options: Record<string, unknown>) {
 function serialize({ query }: { query: QueryResult }) {
   return query.review.nodes.map((node) => {
     return {
-      title: `${node.reviewedMovie.title} (${node.reviewedMovie.year})`,
+      title: `${node.reviewedWork.title} by ${node.reviewedWork.authors
+        .map((author) => author.name)
+        .join(", ")}`,
       date: node.frontmatter.date,
-      url: `${query.site.siteMetadata.siteUrl}/reviews/${node.reviewedMovie.slug}/`,
-      guid: `${query.site.siteMetadata.siteUrl}/${node.frontmatter.sequence}-${node.reviewedMovie.slug}`,
+      url: `${query.site.siteMetadata.siteUrl}/reviews/${node.frontmatter.slug}/`,
+      guid: `${query.site.siteMetadata.siteUrl}/${node.frontmatter.sequence}-${node.frontmatter.slug}`,
       custom_elements: [
         {
           "content:encoded": `<img src="${
-            node.reviewedMovie.image.childImageSharp.resize.src
-          }" alt="A still from ${node.reviewedMovie.title}">${addMetaToExcerpt(
+            node.reviewedWork.image.childImageSharp.resize.src
+          }" alt="A cover from ${node.reviewedWork.title}">${addMetaToExcerpt(
             node.linkedExcerpt,
             node
           )}`,
@@ -135,8 +134,8 @@ export default {
         query,
         output: "/feed.xml",
         title: "Frank's Movie Log",
-        site_url: "https://www.franksmovielog.com/",
-        image_url: "https://www.franksmovielog.com/assets/favicon-128.png",
+        site_url: "https://www.franksbooklog.com/",
+        image_url: "https://www.franksbooklog.com/assets/favicon-128.png",
       },
     ],
   },
