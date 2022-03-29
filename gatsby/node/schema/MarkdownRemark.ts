@@ -287,8 +287,6 @@ const MarkdownRemark = {
           return null;
         }
 
-        // fixFootnotes(htmlAst, frontMatter.sequence, frontMatter.edition_notes);
-
         const html = toHtml(htmlAst, {
           allowDangerousHtml: true,
         });
