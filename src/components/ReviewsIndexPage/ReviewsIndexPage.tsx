@@ -51,7 +51,7 @@ function groupForReview(review: Review, sortValue: SortType): string {
     }
     case "read-date-asc":
     case "read-date-desc": {
-      return review.dateFinished;
+      return review.monthFinished;
     }
     case "grade-asc":
     case "grade-desc": {
@@ -243,7 +243,7 @@ export default function ReviewsIndexPage({
                           title={review.reviewedWork.title}
                           year={review.reviewedWork.year}
                           grade={review.frontmatter.grade}
-                          date={review.dateFinished}
+                          date={review.dateFinishedFormatted}
                           edition={review.frontmatter.edition}
                           kind={review.reviewedWork.kind}
                           slug={review.frontmatter.slug}
@@ -284,6 +284,8 @@ export interface Review {
     edition: string;
   };
   dateFinished: string;
+  dateFinishedFormatted: string;
+  monthFinished: string;
   yearFinished: number;
   gradeValue: number;
   reviewedWork: {
@@ -329,7 +331,9 @@ export const pageQuery = graphql`
           edition
         }
         yearFinished
+        monthFinished: dateFinished(formatString: "MMM YYYY")
         dateFinished
+        dateFinishedFormatted: dateFinished(formatString: "MMM D, YYYY")
         gradeValue
         reviewedWork {
           title

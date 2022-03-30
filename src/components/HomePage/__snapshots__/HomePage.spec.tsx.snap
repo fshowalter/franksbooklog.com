@@ -178,7 +178,11 @@ exports[`/ can render last page 1`] = `
                 <p
                   class="reviewCreditsCss"
                 >
-                  Stephen King
+                  <a
+                    href="/shelf/authors/undefined/"
+                  >
+                    Stephen King
+                  </a>
                 </p>
                  
                 <img
@@ -289,7 +293,11 @@ exports[`/ can render last page 1`] = `
                 <p
                   class="reviewCreditsCss"
                 >
-                  Brad Schoenfeld
+                  <a
+                    href="/shelf/authors/undefined/"
+                  >
+                    Brad Schoenfeld
+                  </a>
                 </p>
                  
                 <img
@@ -399,7 +407,11 @@ exports[`/ can render last page 1`] = `
                 <p
                   class="reviewCreditsCss"
                 >
-                  Richard Laymon
+                  <a
+                    href="/shelf/authors/undefined/"
+                  >
+                    Richard Laymon
+                  </a>
                 </p>
                  
                 <img
@@ -506,7 +518,11 @@ exports[`/ can render last page 1`] = `
                 <p
                   class="reviewCreditsCss"
                 >
-                  Dave Draper
+                  <a
+                    href="/shelf/authors/undefined/"
+                  >
+                    Dave Draper
+                  </a>
                 </p>
                  
                 <img
@@ -887,7 +903,11 @@ exports[`/ renders 1`] = `
                 <p
                   class="reviewCreditsCss"
                 >
-                  Stephen King
+                  <a
+                    href="/shelf/authors/undefined/"
+                  >
+                    Stephen King
+                  </a>
                 </p>
                  
                 <img
@@ -998,7 +1018,11 @@ exports[`/ renders 1`] = `
                 <p
                   class="reviewCreditsCss"
                 >
-                  Brad Schoenfeld
+                  <a
+                    href="/shelf/authors/undefined/"
+                  >
+                    Brad Schoenfeld
+                  </a>
                 </p>
                  
                 <img
@@ -1108,7 +1132,11 @@ exports[`/ renders 1`] = `
                 <p
                   class="reviewCreditsCss"
                 >
-                  Richard Laymon
+                  <a
+                    href="/shelf/authors/undefined/"
+                  >
+                    Richard Laymon
+                  </a>
                 </p>
                  
                 <img
@@ -1215,7 +1243,11 @@ exports[`/ renders 1`] = `
                 <p
                   class="reviewCreditsCss"
                 >
-                  Dave Draper
+                  <a
+                    href="/shelf/authors/undefined/"
+                  >
+                    Dave Draper
+                  </a>
                 </p>
                  
                 <img

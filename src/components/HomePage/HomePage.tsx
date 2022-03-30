@@ -79,7 +79,16 @@ export default function HomePage({
                       </Link>
                     </h2>
                     <p className={reviewCreditsCss}>
-                      {toSentenceArray(work.authors.map((a) => a.name))}
+                      {toSentenceArray(
+                        work.authors.map((author) => (
+                          <Link
+                            key={author.slug}
+                            to={`/shelf/authors/${author.slug}/`}
+                          >
+                            {author.name}
+                          </Link>
+                        ))
+                      )}
                     </p>{" "}
                     <Grade
                       grade={review.frontmatter.grade}
@@ -146,6 +155,7 @@ interface PageQueryResult {
         kind: string;
         authors: {
           name: string;
+          slug: string;
           notes: string | null;
         }[];
         cover: {
@@ -180,6 +190,7 @@ export const pageQuery = graphql`
           kind
           authors {
             name
+            slug
             notes
           }
           cover {

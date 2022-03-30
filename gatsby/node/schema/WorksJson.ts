@@ -7,6 +7,7 @@ import type {
   GatsbyResolveArgs,
   GatsbyResolveInfo,
 } from "./type-definitions";
+import findDefaultCoverNode from "./utils/findDefaultCoverNode";
 import resolveFieldForNode from "./utils/resolveFieldForNode";
 
 export interface WorkNode extends GatsbyNode {
@@ -162,7 +163,7 @@ const WorksJson = {
         _args: unknown,
         context: GatsbyNodeContext
       ) => {
-        return await context.nodeModel.findOne({
+        const cover = await context.nodeModel.findOne({
           type: "File",
           query: {
             filter: {
@@ -172,6 +173,8 @@ const WorksJson = {
             },
           },
         });
+
+        return cover || findDefaultCoverNode(context.nodeModel);
       },
     },
   },

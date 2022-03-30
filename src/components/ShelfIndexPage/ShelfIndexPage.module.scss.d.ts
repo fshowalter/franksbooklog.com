@@ -19,4 +19,3 @@ export const percentTotalsCss: string;
 export const quoteCss: string;
 export const rightCss: string;
 export const showMoreCss: string;
-export const typeLinksCss: string;

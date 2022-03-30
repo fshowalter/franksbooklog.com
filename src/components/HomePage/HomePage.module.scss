@@ -126,7 +126,6 @@
 
 .articleHeadingCss {
   font-size: 26px;
-  font-style: italic;
   font-weight: 700;
   grid-area: heading;
   line-height: 32px;
@@ -191,16 +190,9 @@
   }
 }
 
-.reviewYearCss {
-  color: var(--color-fg-subtle);
-  display: inline-block;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 1;
-}
-
 .reviewCreditsCss {
-  color: var(--color-fg-subtle);
+  // color: var(--color-fg-subtle);
+  color: var(--color-fg-accent);
   font-size: 16px;
   font-weight: 400;
   grid-area: credits;
@@ -229,10 +221,6 @@
   p {
     line-height: 28px;
   }
-}
-
-.watchlistLinksCss {
-  display: contents;
 }
 
 .paginationCss {

@@ -8,7 +8,6 @@ export const listItemCss: string;
 export const listItemLinkCss: string;
 export const listItemTitleCss: string;
 export const pageHeaderCss: string;
-export const pageHeaderSubCss: string;
 export const percentBackgroundCss: string;
 export const percentProgressCss: string;
 export const progressRingCss: string;

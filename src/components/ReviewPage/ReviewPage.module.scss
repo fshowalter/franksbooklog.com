@@ -137,23 +137,6 @@
   }
 }
 
-.slugViaCss {
-  color: var(--color-fg-subtle);
-  display: block;
-  margin: 0 auto;
-
-  @media (min-width: breakpoints.$desktop) {
-    display: inline;
-  }
-}
-
-.slugFootnoteCss {
-  color: var(--color-fg-default);
-  color: rgb(0 0 0 / 75%);
-  letter-spacing: 0.3px;
-  text-align: left;
-}
-
 .slugDateCss {
   color: var(--color-fg-subtle);
   display: block;
@@ -232,11 +215,6 @@
   }
 }
 
-.headerOriginalTitleCss {
-  color: var(--color-fg-subtle);
-  line-height: layout.$spacer-4;
-}
-
 .reviewContentCss {
   margin-top: layout.$spacer-5;
 
@@ -247,157 +225,6 @@
     // padding-left: calc(121px + layout.$spacer-3); // layout.$spacer-5;
     position: relative;
   }
-}
-
-.olderViewingsDateCss {
-  display: block;
-  font-weight: 700;
-
-  @media (min-width: breakpoints.$tablet) {
-    // display: inline;
-  }
-}
-
-.relatedCss {
-  display: grid;
-  grid-area: related;
-  padding-bottom: layout.$spacer-8;
-  padding-top: layout.$spacer-9;
-  row-gap: layout.$spacer-9;
-
-  @media (min-width: breakpoints.$desktop) {
-    grid-template-columns: unset;
-  }
-}
-
-.relatedMoviesSectionCss {
-  @media (min-width: breakpoints.$desktop) {
-    grid-column: unset;
-    padding: layout.$spacer-4 0;
-
-    &:nth-child(odd) {
-      background-color: var(--color-bg-subtle);
-      margin: 0 calc(-1 * var(--layout-grid-margin));
-      padding-left: var(--layout-grid-margin);
-      padding-right: var(--layout-grid-margin);
-    }
-  }
-
-  @media (min-width: breakpoints.$max) {
-    &:nth-child(odd) {
-      margin: 0 layout.$spacer-4 * -1 0 calc(-1 * var(--layout-grid-margin));
-      padding-right: layout.$spacer-4;
-    }
-  }
-}
-
-.relatedHeaderCss {
-  align-items: center;
-  border-bottom: 1px solid var(--color-border-subtle);
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 12px;
-  padding-bottom: 11px;
-  text-rendering: optimizelegibility;
-}
-
-.relatedHeadingCss {
-  align-items: center;
-  color: var(--color-fg-subtle);
-  display: flex;
-}
-
-.relatedMoreCss {
-  color: var(--color-fg-accent);
-}
-
-.relatedNameCss {
-  color: var(--color-fg-muted);
-  font-weight: 600;
-  letter-spacing: 0.2px;
-}
-
-.relatedAvaterCss {
-  border-radius: 50%;
-  box-shadow: 0 0 0 1px var(--color-border-default);
-  display: none;
-  margin-right: 1ch;
-  transform: translateZ(0); // Fix Safari border-radius with hidden overflow.
-
-  @media (min-width: breakpoints.$tablet) {
-    display: block !important;
-  }
-}
-
-.olderViewingsHeadingCss {
-  border-bottom: 1px solid var(--color-border-default);
-  color: var(--color-fg-muted);
-  display: flex;
-  font-weight: 600;
-  justify-content: space-between;
-  letter-spacing: 0.2px;
-  padding-bottom: layout.$spacer-2 - 1;
-  text-rendering: optimizelegibility;
-}
-
-.olderViewingsListCss {
-  display: flex;
-  flex-direction: column;
-}
-
-.olderViewingsContainerCss {
-  grid-area: viewings;
-  margin-top: layout.$spacer-7;
-}
-
-.olderViewingsListItemCss {
-  align-items: center;
-  color: var(--color-fg-subtle);
-  display: grid;
-  font-feature-settings: "tnum";
-  grid-template-areas: "icon slug";
-  grid-template-columns: auto 1fr;
-  margin: 0 calc(-1 * var(--layout-grid-margin));
-  padding: 0 var(--layout-grid-margin);
-
-  &:nth-child(even) {
-    background-color: var(--color-bg-subtle);
-  }
-}
-
-.olderViewingsDateIconCss {
-  grid-area: icon;
-  margin-right: layout.$spacer-3;
-  position: relative;
-  width: 16px;
-}
-
-.olderViewingsViaCss {
-  display: none;
-
-  @media (min-width: breakpoints.$tablet) {
-    display: inline;
-  }
-}
-
-.olderViewingsVenueCss {
-  font-size: 14px;
-}
-
-.headerSeparatorCss {
-  color: var(--color-fg-subtle);
-}
-
-.headerMetaCss {
-  color: var(--color-fg-subtle);
-  font-feature-settings: "tnum";
-  line-height: layout.$spacer-4;
-  margin-top: layout.$spacer-3;
-}
-
-.olderViewingSlugCss {
-  grid-area: slug;
-  padding: layout.$spacer-3 0;
 }
 
 .reviewMetaCss {
@@ -412,12 +239,6 @@
     // background-color: unset;
     // border: none;
     margin: unset;
-  }
-}
-
-.hideDesktopCss {
-  @media (min-width: breakpoints.$desktop) {
-    display: none;
   }
 }
 
@@ -438,4 +259,8 @@
 
 .progressMilestoneCss {
   font-weight: 700;
+}
+
+.authorLinkCss {
+  color: var(--color-fg-accent);
 }

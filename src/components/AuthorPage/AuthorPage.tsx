@@ -12,6 +12,7 @@ import { SelectField, SelectOptions } from "../SelectField";
 import Seo from "../Seo";
 import YearInput from "../YearInput";
 import {
+  avatarCss,
   containerCss,
   filtersCss,
   leftCss,
@@ -141,7 +142,7 @@ export default function AuthorPage({
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 16 16"
-          fill="currentColor"
+          className={avatarCss}
         >
           <path
             clipRule="evenodd"

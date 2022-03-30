@@ -152,15 +152,6 @@
   margin-top: layout.$spacer-4;
 }
 
-.typeLinksCss {
-  align-items: end;
-  column-gap: layout.$spacer-4;
-  display: grid;
-  grid-area: type_links;
-  grid-template-columns: repeat(2, 1fr);
-  row-gap: layout.$spacer-4;
-}
-
 .authorsLinkCss {
   align-items: center;
   background-color: var(--color-bg-subtle);
@@ -175,7 +166,7 @@
   white-space: nowrap;
 
   &:hover {
-    border-color: var(--color-border-accent);
+    border-color: var(--color-fg-accent);
   }
 }
 

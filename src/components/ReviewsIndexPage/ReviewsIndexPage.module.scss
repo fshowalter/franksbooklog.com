@@ -59,13 +59,6 @@
   }
 }
 
-.quoteCss {
-  color: var(--color-fg-subtle);
-  display: block;
-  font-weight: bold;
-  margin-bottom: layout.$spacer-3;
-}
-
 .listInfoCss {
   color: var(--color-fg-subtle);
   font-size: 16px;
@@ -98,27 +91,4 @@
 
 .calloutCss {
   font-weight: bold;
-}
-
-.genresWrapCss {
-  color: var(--color-fg-subtle);
-  display: grid;
-  font-size: 1rem;
-  font-weight: normal;
-  grid-template-columns: auto;
-  grid-template-rows: layout.$spacer-4 auto;
-  letter-spacing: normal;
-  z-index: 200;
-}
-
-.genresSelectLabelCss {
-  display: inline-block;
-  font-size: 14px;
-  font-weight: bold;
-  height: layout.$spacer-4;
-  letter-spacing: 0.5px;
-}
-
-.headerMoreCss {
-  text-align: left;
 }
