@@ -1,3 +1,4 @@
+export const authorLinkCss: string;
 export const containerCss: string;
 export const coverCss: string;
 export const headerAuthorCss: string;

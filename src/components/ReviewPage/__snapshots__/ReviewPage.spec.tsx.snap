@@ -160,9 +160,12 @@ exports[`/reviews/{slug} renders 1`] = `
             class="headerAuthorCss"
           >
             By 
-            <span>
+            <a
+              class="authorLinkCss"
+              href="/shelf/authors/undefined"
+            >
               Stephen King
-            </span>
+            </a>
           </div>
           <div
             class="headerKindCss"
@@ -172,7 +175,7 @@ exports[`/reviews/{slug} renders 1`] = `
           <div
             class="headerYearCss"
           >
-            First published in 2000
+            First published in 2000.
           </div>
           <div
             class="gatsby-image-wrapper coverCss"

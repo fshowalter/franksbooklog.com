@@ -1,4 +1,4 @@
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import React from "react";
 import toSentenceArray from "../../utils/to-sentence-array";
@@ -8,6 +8,7 @@ import Layout from "../Layout";
 import RenderedMarkdown from "../RenderedMarkdown";
 import Seo from "../Seo";
 import {
+  authorLinkCss,
   containerCss,
   coverCss,
   headerAuthorCss,
@@ -81,11 +82,19 @@ export default function ReviewPage({
           <div className={headerAuthorCss}>
             By{" "}
             {work.authors.map((author) => {
-              return <span key={author.name}>{author.name}</span>;
+              return (
+                <Link
+                  className={authorLinkCss}
+                  to={`/shelf/authors/${author.slug}`}
+                  key={author.slug}
+                >
+                  {author.name}
+                </Link>
+              );
             })}
           </div>
           <div className={headerKindCss}>{work.kind}</div>
-          <div className={headerYearCss}>First published in {work.year}</div>
+          <div className={headerYearCss}>First published in {work.year}.</div>
           {work.cover && (
             <GatsbyImage
               image={work.cover.childImageSharp.gatsbyImageData}
@@ -190,6 +199,7 @@ export interface Work {
   lastReviewGrade: string;
   authors: {
     name: string;
+    slug: string;
     notes: string | null;
   }[];
   cover: {
@@ -232,6 +242,7 @@ export const pageQuery = graphql`
       authors {
         name
         notes
+        slug
       }
       reviews {
         frontmatter {

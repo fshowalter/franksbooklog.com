@@ -3,7 +3,7 @@ sequence: 4
 slug: on-writing-by-stephen-king
 grade: A-
 edition: Kindle
-edition_notes:
+edition_notes: Scribner
 isbn:
 progress:
   - date: 2022-03-19
@@ -14,18 +14,28 @@ progress:
     percent: 100
 ---
 
-It’s hard to read _The Shining_ and not see Jack Nicholson. That's how popular Stanley Kubrick’s film adaptation has become. New readers will likely be surprised that the Jack in the novel never utters the famous “Here’s Johnny!” line.
+When writing my review of The Cellar, I remembered something King had written in On Writing about reader-friendliness. Looking for the exact quote hooked me and I decided a reread might prove inspirational.
 
 <!-- end -->
 
-The movie and book both share a similar plot. Jack Torrance takes a job as winter caretaker for the Overlook Hotel. He moves in with his wife and five-year-old son just as the last of the hotel staff are leaving for the off-season. Soon, the snow comes, blocking the roads and isolating the hotel. Cut off from the outside world, Jack goes crazy and turns against his family in a murderous rage.
+On Writing remains the gold standard for professional memoirs cum instructional manuals. The first section proffers a compelling autobiography. King details his professional ascension alongside his personal descent into addiction and eventual recovery. The second section offers pragmatic guidance to the would-be professional writer. In the third section, a coda, King details his near-fatal accident, rehabilitation, and return to writing.
 
-Where the book and film differ is in their presentation of the supernatural. King makes it clear that a malevolent presence haunts the hotel. This evil force wants Jack’s son Danny for it’s own ends. King never makes it clear why, but it's something to do with Danny's burgeoning telepathy. Kubrick’s film invites us to consider that the supernatural elements are all in the character’s minds.
+King’s charming conversational tone shines throughout. Consider this bit detailing his early writing follies:
 
-They’re both entertaining stories, but Kubrick’s version is the more insightful. Because Kubrick saw what it took King years to see; that in Jack Torrance, Stephen King was writing himself.
+> “They were camped in a big dratty farmhouse room,” I might write; it was another year or two before I discovered that drat and draft were different words. During that same period I remember believing that details were dentals and that a bitch was an extremely tall woman. A son of a bitch was apt to be a basketball player. When you’re six, most of your Bingo balls are still floating around in the draw-tank.
 
-Consider the character of Jack Torrance. Jack is a broke, alcoholic playwright struggling to live up to his early successes and provide for his family.
+The last sentence had me chuckling aloud.
 
-Now consider Stephen King when he was writing _The Shining_. King was in the throes of alcoholism. His first two novels had been wildly successful. But it wasn’t that long ago that King worked as a high school teacher and struggled to afford medicine for his infant child. Sure, there was money in the bank now, but what if none of his other books sold? What if, like Jack, he stopped being able to write?
+For writers, King offers loads of solid advice. Be brief (second draft equals first draft minus ten percent), be clear (beware pronouns), and don’t be lazy (avoid adverbs). He gives great examples, culminating in a first-to-second draft comparison of one of his stories, 1408. For aspiring writers of all kinds, it’s a valuable read.
 
-King writes Jack as a victim of the hotel's evil influence. Kubrick sees Jack as a monster and the story's supernatural elements as a way for Jack to deflect responsibility. Knowing this, is it any wonder that King hated Kubrick’s version?
+But King’s guidance also betrays his biggest weakness as a writer. He distrusts plot. He constructs all his novels based on situations. From the situation, characters take shape, and the story proceeds. This would explain his history of underwhelming endings. That said, he admits the following:
+
+> The only plot-driven novel of mine which I really like is The Dead Zone (and in all fairness, I must say I like that one a great deal).
+
+I found The Dead Zone one of King’s most satisfying reads, and wish he could find a middle ground between no-plot and all-plot. He confesses to almost abandoning The Stand five-hundred pages in because he had lost the narrative thread. A bit of advanced plotting have helped. It might even have prevented the awful ending.
+
+But I digress. After the world-class writing seminar, King demonstrates his mastery of the craft with a harrowing account of the accident that should have killed him. Even here, battling raw emotion and after recovering from traumatic injuries, King retains his signature voice. Consider this bit describing the man driving the van which hit him:
+
+> He and Bullet left the campground where they were staying, he later tells an investigator, because he wanted “some of those Marzes-bars they have up to the store.” When I hear this little detail some weeks later, it occurs to me that I have nearly been killed by a character right out of one of my own novels.
+
+Given such talent, who am I to criticize?

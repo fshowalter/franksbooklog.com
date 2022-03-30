@@ -8,9 +8,7 @@ exports[`/reviews can filter by grade 1`] = `
     <div
       class="listHeaderGroupCss"
       style="z-index: 100;"
-    >
-      2022-03-21T00:00:00.000Z
-    </div>
+    />
     <ol
       class="listCss"
     >
@@ -94,9 +92,6 @@ exports[`/reviews can filter by grade 1`] = `
             class="listItemGradeCss"
             src="/svg/5-stars.svg"
           />
-          <div>
-            2022-03-21T00:00:00.000Z
-          </div>
           <div>
             Nonfiction
           </div>
@@ -118,9 +113,7 @@ exports[`/reviews can filter by grade reversed 1`] = `
     <div
       class="listHeaderGroupCss"
       style="z-index: 100;"
-    >
-      2022-03-21T00:00:00.000Z
-    </div>
+    />
     <ol
       class="listCss"
     >
@@ -204,9 +197,6 @@ exports[`/reviews can filter by grade reversed 1`] = `
             class="listItemGradeCss"
             src="/svg/5-stars.svg"
           />
-          <div>
-            2022-03-21T00:00:00.000Z
-          </div>
           <div>
             Nonfiction
           </div>
@@ -228,9 +218,7 @@ exports[`/reviews can filter by kind 1`] = `
     <div
       class="listHeaderGroupCss"
       style="z-index: 100;"
-    >
-      2022-03-16T00:00:00.000Z
-    </div>
+    />
     <ol
       class="listCss"
     >
@@ -314,9 +302,6 @@ exports[`/reviews can filter by kind 1`] = `
             class="listItemGradeCss"
             src="/svg/3-stars.svg"
           />
-          <div>
-            2022-03-16T00:00:00.000Z
-          </div>
           <div>
             Novel
           </div>
@@ -338,9 +323,7 @@ exports[`/reviews can filter by kind then show all 1`] = `
     <div
       class="listHeaderGroupCss"
       style="z-index: 100;"
-    >
-      2022-03-21T00:00:00.000Z
-    </div>
+    />
     <ol
       class="listCss"
     >
@@ -425,9 +408,6 @@ exports[`/reviews can filter by kind then show all 1`] = `
             src="/svg/5-stars.svg"
           />
           <div>
-            2022-03-21T00:00:00.000Z
-          </div>
-          <div>
             Nonfiction
           </div>
           <div>
@@ -435,18 +415,6 @@ exports[`/reviews can filter by kind then show all 1`] = `
           </div>
         </div>
       </li>
-    </ol>
-  </li>
-  <li>
-    <div
-      class="listHeaderGroupCss"
-      style="z-index: 101;"
-    >
-      2022-03-18T00:00:00.000Z
-    </div>
-    <ol
-      class="listCss"
-    >
       <li
         class="listItemCss"
       >
@@ -528,9 +496,6 @@ exports[`/reviews can filter by kind then show all 1`] = `
             src="/svg/3-stars.svg"
           />
           <div>
-            2022-03-18T00:00:00.000Z
-          </div>
-          <div>
             Nonfiction
           </div>
           <div>
@@ -538,18 +503,6 @@ exports[`/reviews can filter by kind then show all 1`] = `
           </div>
         </div>
       </li>
-    </ol>
-  </li>
-  <li>
-    <div
-      class="listHeaderGroupCss"
-      style="z-index: 102;"
-    >
-      2022-03-16T00:00:00.000Z
-    </div>
-    <ol
-      class="listCss"
-    >
       <li
         class="listItemCss"
       >
@@ -631,9 +584,6 @@ exports[`/reviews can filter by kind then show all 1`] = `
             src="/svg/3-stars.svg"
           />
           <div>
-            2022-03-16T00:00:00.000Z
-          </div>
-          <div>
             Novel
           </div>
           <div>
@@ -641,18 +591,6 @@ exports[`/reviews can filter by kind then show all 1`] = `
           </div>
         </div>
       </li>
-    </ol>
-  </li>
-  <li>
-    <div
-      class="listHeaderGroupCss"
-      style="z-index: 103;"
-    >
-      2022-03-06T00:00:00.000Z
-    </div>
-    <ol
-      class="listCss"
-    >
       <li
         class="listItemCss"
       >
@@ -733,9 +671,6 @@ exports[`/reviews can filter by kind then show all 1`] = `
             class="listItemGradeCss"
             src="/svg/3-stars.svg"
           />
-          <div>
-            2022-03-06T00:00:00.000Z
-          </div>
           <div>
             Nonfiction
           </div>
@@ -757,9 +692,7 @@ exports[`/reviews can filter by published year 1`] = `
     <div
       class="listHeaderGroupCss"
       style="z-index: 100;"
-    >
-      2022-03-21T00:00:00.000Z
-    </div>
+    />
     <ol
       class="listCss"
     >
@@ -844,9 +777,6 @@ exports[`/reviews can filter by published year 1`] = `
             src="/svg/5-stars.svg"
           />
           <div>
-            2022-03-21T00:00:00.000Z
-          </div>
-          <div>
             Nonfiction
           </div>
           <div>
@@ -854,18 +784,6 @@ exports[`/reviews can filter by published year 1`] = `
           </div>
         </div>
       </li>
-    </ol>
-  </li>
-  <li>
-    <div
-      class="listHeaderGroupCss"
-      style="z-index: 101;"
-    >
-      2022-03-06T00:00:00.000Z
-    </div>
-    <ol
-      class="listCss"
-    >
       <li
         class="listItemCss"
       >
@@ -946,9 +864,6 @@ exports[`/reviews can filter by published year 1`] = `
             class="listItemGradeCss"
             src="/svg/3-stars.svg"
           />
-          <div>
-            2022-03-06T00:00:00.000Z
-          </div>
           <div>
             Nonfiction
           </div>
@@ -970,9 +885,7 @@ exports[`/reviews can filter by published year reversed 1`] = `
     <div
       class="listHeaderGroupCss"
       style="z-index: 100;"
-    >
-      2022-03-21T00:00:00.000Z
-    </div>
+    />
     <ol
       class="listCss"
     >
@@ -1057,9 +970,6 @@ exports[`/reviews can filter by published year reversed 1`] = `
             src="/svg/5-stars.svg"
           />
           <div>
-            2022-03-21T00:00:00.000Z
-          </div>
-          <div>
             Nonfiction
           </div>
           <div>
@@ -1067,18 +977,6 @@ exports[`/reviews can filter by published year reversed 1`] = `
           </div>
         </div>
       </li>
-    </ol>
-  </li>
-  <li>
-    <div
-      class="listHeaderGroupCss"
-      style="z-index: 101;"
-    >
-      2022-03-06T00:00:00.000Z
-    </div>
-    <ol
-      class="listCss"
-    >
       <li
         class="listItemCss"
       >
@@ -1160,9 +1058,6 @@ exports[`/reviews can filter by published year reversed 1`] = `
             src="/svg/3-stars.svg"
           />
           <div>
-            2022-03-06T00:00:00.000Z
-          </div>
-          <div>
             Nonfiction
           </div>
           <div>
@@ -1183,9 +1078,7 @@ exports[`/reviews can filter by read year 1`] = `
     <div
       class="listHeaderGroupCss"
       style="z-index: 100;"
-    >
-      2022-03-21T00:00:00.000Z
-    </div>
+    />
     <ol
       class="listCss"
     >
@@ -1270,9 +1163,6 @@ exports[`/reviews can filter by read year 1`] = `
             src="/svg/5-stars.svg"
           />
           <div>
-            2022-03-21T00:00:00.000Z
-          </div>
-          <div>
             Nonfiction
           </div>
           <div>
@@ -1280,18 +1170,6 @@ exports[`/reviews can filter by read year 1`] = `
           </div>
         </div>
       </li>
-    </ol>
-  </li>
-  <li>
-    <div
-      class="listHeaderGroupCss"
-      style="z-index: 101;"
-    >
-      2022-03-18T00:00:00.000Z
-    </div>
-    <ol
-      class="listCss"
-    >
       <li
         class="listItemCss"
       >
@@ -1373,9 +1251,6 @@ exports[`/reviews can filter by read year 1`] = `
             src="/svg/3-stars.svg"
           />
           <div>
-            2022-03-18T00:00:00.000Z
-          </div>
-          <div>
             Nonfiction
           </div>
           <div>
@@ -1383,18 +1258,6 @@ exports[`/reviews can filter by read year 1`] = `
           </div>
         </div>
       </li>
-    </ol>
-  </li>
-  <li>
-    <div
-      class="listHeaderGroupCss"
-      style="z-index: 102;"
-    >
-      2022-03-16T00:00:00.000Z
-    </div>
-    <ol
-      class="listCss"
-    >
       <li
         class="listItemCss"
       >
@@ -1476,9 +1339,6 @@ exports[`/reviews can filter by read year 1`] = `
             src="/svg/3-stars.svg"
           />
           <div>
-            2022-03-16T00:00:00.000Z
-          </div>
-          <div>
             Novel
           </div>
           <div>
@@ -1486,18 +1346,6 @@ exports[`/reviews can filter by read year 1`] = `
           </div>
         </div>
       </li>
-    </ol>
-  </li>
-  <li>
-    <div
-      class="listHeaderGroupCss"
-      style="z-index: 103;"
-    >
-      2022-03-06T00:00:00.000Z
-    </div>
-    <ol
-      class="listCss"
-    >
       <li
         class="listItemCss"
       >
@@ -1579,9 +1427,6 @@ exports[`/reviews can filter by read year 1`] = `
             src="/svg/3-stars.svg"
           />
           <div>
-            2022-03-06T00:00:00.000Z
-          </div>
-          <div>
             Nonfiction
           </div>
           <div>
@@ -1602,9 +1447,7 @@ exports[`/reviews can filter by title 1`] = `
     <div
       class="listHeaderGroupCss"
       style="z-index: 100;"
-    >
-      2022-03-21T00:00:00.000Z
-    </div>
+    />
     <ol
       class="listCss"
     >
@@ -1688,9 +1531,6 @@ exports[`/reviews can filter by title 1`] = `
             class="listItemGradeCss"
             src="/svg/5-stars.svg"
           />
-          <div>
-            2022-03-21T00:00:00.000Z
-          </div>
           <div>
             Nonfiction
           </div>
@@ -1799,9 +1639,6 @@ exports[`/reviews can sort by grade with best first 1`] = `
             src="/svg/5-stars.svg"
           />
           <div>
-            2022-03-21T00:00:00.000Z
-          </div>
-          <div>
             Nonfiction
           </div>
           <div>
@@ -1901,9 +1738,6 @@ exports[`/reviews can sort by grade with best first 1`] = `
             class="listItemGradeCss"
             src="/svg/3-stars.svg"
           />
-          <div>
-            2022-03-16T00:00:00.000Z
-          </div>
           <div>
             Novel
           </div>
@@ -2005,9 +1839,6 @@ exports[`/reviews can sort by grade with best first 1`] = `
             src="/svg/3-stars.svg"
           />
           <div>
-            2022-03-06T00:00:00.000Z
-          </div>
-          <div>
             Nonfiction
           </div>
           <div>
@@ -2107,9 +1938,6 @@ exports[`/reviews can sort by grade with best first 1`] = `
             class="listItemGradeCss"
             src="/svg/3-stars.svg"
           />
-          <div>
-            2022-03-18T00:00:00.000Z
-          </div>
           <div>
             Nonfiction
           </div>
@@ -2218,9 +2046,6 @@ exports[`/reviews can sort by grade with worst first 1`] = `
             src="/svg/3-stars.svg"
           />
           <div>
-            2022-03-18T00:00:00.000Z
-          </div>
-          <div>
             Nonfiction
           </div>
           <div>
@@ -2320,9 +2145,6 @@ exports[`/reviews can sort by grade with worst first 1`] = `
             class="listItemGradeCss"
             src="/svg/3-stars.svg"
           />
-          <div>
-            2022-03-06T00:00:00.000Z
-          </div>
           <div>
             Nonfiction
           </div>
@@ -2424,9 +2246,6 @@ exports[`/reviews can sort by grade with worst first 1`] = `
             src="/svg/3-stars.svg"
           />
           <div>
-            2022-03-16T00:00:00.000Z
-          </div>
-          <div>
             Novel
           </div>
           <div>
@@ -2527,9 +2346,6 @@ exports[`/reviews can sort by grade with worst first 1`] = `
             src="/svg/5-stars.svg"
           />
           <div>
-            2022-03-21T00:00:00.000Z
-          </div>
-          <div>
             Nonfiction
           </div>
           <div>
@@ -2550,9 +2366,7 @@ exports[`/reviews can sort by read date with newest first 1`] = `
     <div
       class="listHeaderGroupCss"
       style="z-index: 100;"
-    >
-      2022-03-21T00:00:00.000Z
-    </div>
+    />
     <ol
       class="listCss"
     >
@@ -2637,9 +2451,6 @@ exports[`/reviews can sort by read date with newest first 1`] = `
             src="/svg/5-stars.svg"
           />
           <div>
-            2022-03-21T00:00:00.000Z
-          </div>
-          <div>
             Nonfiction
           </div>
           <div>
@@ -2647,18 +2458,6 @@ exports[`/reviews can sort by read date with newest first 1`] = `
           </div>
         </div>
       </li>
-    </ol>
-  </li>
-  <li>
-    <div
-      class="listHeaderGroupCss"
-      style="z-index: 101;"
-    >
-      2022-03-18T00:00:00.000Z
-    </div>
-    <ol
-      class="listCss"
-    >
       <li
         class="listItemCss"
       >
@@ -2740,9 +2539,6 @@ exports[`/reviews can sort by read date with newest first 1`] = `
             src="/svg/3-stars.svg"
           />
           <div>
-            2022-03-18T00:00:00.000Z
-          </div>
-          <div>
             Nonfiction
           </div>
           <div>
@@ -2750,18 +2546,6 @@ exports[`/reviews can sort by read date with newest first 1`] = `
           </div>
         </div>
       </li>
-    </ol>
-  </li>
-  <li>
-    <div
-      class="listHeaderGroupCss"
-      style="z-index: 102;"
-    >
-      2022-03-16T00:00:00.000Z
-    </div>
-    <ol
-      class="listCss"
-    >
       <li
         class="listItemCss"
       >
@@ -2843,9 +2627,6 @@ exports[`/reviews can sort by read date with newest first 1`] = `
             src="/svg/3-stars.svg"
           />
           <div>
-            2022-03-16T00:00:00.000Z
-          </div>
-          <div>
             Novel
           </div>
           <div>
@@ -2853,18 +2634,6 @@ exports[`/reviews can sort by read date with newest first 1`] = `
           </div>
         </div>
       </li>
-    </ol>
-  </li>
-  <li>
-    <div
-      class="listHeaderGroupCss"
-      style="z-index: 103;"
-    >
-      2022-03-06T00:00:00.000Z
-    </div>
-    <ol
-      class="listCss"
-    >
       <li
         class="listItemCss"
       >
@@ -2945,9 +2714,6 @@ exports[`/reviews can sort by read date with newest first 1`] = `
             class="listItemGradeCss"
             src="/svg/3-stars.svg"
           />
-          <div>
-            2022-03-06T00:00:00.000Z
-          </div>
           <div>
             Nonfiction
           </div>
@@ -2969,9 +2735,7 @@ exports[`/reviews can sort by read date with oldest first 1`] = `
     <div
       class="listHeaderGroupCss"
       style="z-index: 100;"
-    >
-      2022-03-06T00:00:00.000Z
-    </div>
+    />
     <ol
       class="listCss"
     >
@@ -3056,9 +2820,6 @@ exports[`/reviews can sort by read date with oldest first 1`] = `
             src="/svg/3-stars.svg"
           />
           <div>
-            2022-03-06T00:00:00.000Z
-          </div>
-          <div>
             Nonfiction
           </div>
           <div>
@@ -3066,18 +2827,6 @@ exports[`/reviews can sort by read date with oldest first 1`] = `
           </div>
         </div>
       </li>
-    </ol>
-  </li>
-  <li>
-    <div
-      class="listHeaderGroupCss"
-      style="z-index: 101;"
-    >
-      2022-03-16T00:00:00.000Z
-    </div>
-    <ol
-      class="listCss"
-    >
       <li
         class="listItemCss"
       >
@@ -3159,9 +2908,6 @@ exports[`/reviews can sort by read date with oldest first 1`] = `
             src="/svg/3-stars.svg"
           />
           <div>
-            2022-03-16T00:00:00.000Z
-          </div>
-          <div>
             Novel
           </div>
           <div>
@@ -3169,18 +2915,6 @@ exports[`/reviews can sort by read date with oldest first 1`] = `
           </div>
         </div>
       </li>
-    </ol>
-  </li>
-  <li>
-    <div
-      class="listHeaderGroupCss"
-      style="z-index: 102;"
-    >
-      2022-03-18T00:00:00.000Z
-    </div>
-    <ol
-      class="listCss"
-    >
       <li
         class="listItemCss"
       >
@@ -3262,9 +2996,6 @@ exports[`/reviews can sort by read date with oldest first 1`] = `
             src="/svg/3-stars.svg"
           />
           <div>
-            2022-03-18T00:00:00.000Z
-          </div>
-          <div>
             Nonfiction
           </div>
           <div>
@@ -3272,18 +3003,6 @@ exports[`/reviews can sort by read date with oldest first 1`] = `
           </div>
         </div>
       </li>
-    </ol>
-  </li>
-  <li>
-    <div
-      class="listHeaderGroupCss"
-      style="z-index: 103;"
-    >
-      2022-03-21T00:00:00.000Z
-    </div>
-    <ol
-      class="listCss"
-    >
       <li
         class="listItemCss"
       >
@@ -3364,9 +3083,6 @@ exports[`/reviews can sort by read date with oldest first 1`] = `
             class="listItemGradeCss"
             src="/svg/5-stars.svg"
           />
-          <div>
-            2022-03-21T00:00:00.000Z
-          </div>
           <div>
             Nonfiction
           </div>
@@ -3475,9 +3191,6 @@ exports[`/reviews can sort by title 1`] = `
             src="/svg/3-stars.svg"
           />
           <div>
-            2022-03-06T00:00:00.000Z
-          </div>
-          <div>
             Nonfiction
           </div>
           <div>
@@ -3577,9 +3290,6 @@ exports[`/reviews can sort by title 1`] = `
             class="listItemGradeCss"
             src="/svg/3-stars.svg"
           />
-          <div>
-            2022-03-16T00:00:00.000Z
-          </div>
           <div>
             Novel
           </div>
@@ -3681,9 +3391,6 @@ exports[`/reviews can sort by title 1`] = `
             src="/svg/5-stars.svg"
           />
           <div>
-            2022-03-21T00:00:00.000Z
-          </div>
-          <div>
             Nonfiction
           </div>
           <div>
@@ -3783,9 +3490,6 @@ exports[`/reviews can sort by title 1`] = `
             class="listItemGradeCss"
             src="/svg/3-stars.svg"
           />
-          <div>
-            2022-03-18T00:00:00.000Z
-          </div>
           <div>
             Nonfiction
           </div>
@@ -3894,9 +3598,6 @@ exports[`/reviews can sort by year published with newest first 1`] = `
             src="/svg/3-stars.svg"
           />
           <div>
-            2022-03-18T00:00:00.000Z
-          </div>
-          <div>
             Nonfiction
           </div>
           <div>
@@ -3996,9 +3697,6 @@ exports[`/reviews can sort by year published with newest first 1`] = `
             class="listItemGradeCss"
             src="/svg/3-stars.svg"
           />
-          <div>
-            2022-03-06T00:00:00.000Z
-          </div>
           <div>
             Nonfiction
           </div>
@@ -4100,9 +3798,6 @@ exports[`/reviews can sort by year published with newest first 1`] = `
             src="/svg/5-stars.svg"
           />
           <div>
-            2022-03-21T00:00:00.000Z
-          </div>
-          <div>
             Nonfiction
           </div>
           <div>
@@ -4202,9 +3897,6 @@ exports[`/reviews can sort by year published with newest first 1`] = `
             class="listItemGradeCss"
             src="/svg/3-stars.svg"
           />
-          <div>
-            2022-03-16T00:00:00.000Z
-          </div>
           <div>
             Novel
           </div>
@@ -4313,9 +4005,6 @@ exports[`/reviews can sort by year published with oldest first 1`] = `
             src="/svg/3-stars.svg"
           />
           <div>
-            2022-03-16T00:00:00.000Z
-          </div>
-          <div>
             Novel
           </div>
           <div>
@@ -4415,9 +4104,6 @@ exports[`/reviews can sort by year published with oldest first 1`] = `
             class="listItemGradeCss"
             src="/svg/5-stars.svg"
           />
-          <div>
-            2022-03-21T00:00:00.000Z
-          </div>
           <div>
             Nonfiction
           </div>
@@ -4519,9 +4205,6 @@ exports[`/reviews can sort by year published with oldest first 1`] = `
             src="/svg/3-stars.svg"
           />
           <div>
-            2022-03-06T00:00:00.000Z
-          </div>
-          <div>
             Nonfiction
           </div>
           <div>
@@ -4621,9 +4304,6 @@ exports[`/reviews can sort by year published with oldest first 1`] = `
             class="listItemGradeCss"
             src="/svg/3-stars.svg"
           />
-          <div>
-            2022-03-18T00:00:00.000Z
-          </div>
           <div>
             Nonfiction
           </div>
@@ -5244,9 +4924,7 @@ exports[`/reviews renders 1`] = `
               <div
                 class="listHeaderGroupCss"
                 style="z-index: 100;"
-              >
-                2022-03-21T00:00:00.000Z
-              </div>
+              />
               <ol
                 class="listCss"
               >
@@ -5330,9 +5008,6 @@ exports[`/reviews renders 1`] = `
                       src="/svg/5-stars.svg"
                     />
                     <div>
-                      2022-03-21T00:00:00.000Z
-                    </div>
-                    <div>
                       Nonfiction
                     </div>
                     <div>
@@ -5340,18 +5015,6 @@ exports[`/reviews renders 1`] = `
                     </div>
                   </div>
                 </li>
-              </ol>
-            </li>
-            <li>
-              <div
-                class="listHeaderGroupCss"
-                style="z-index: 101;"
-              >
-                2022-03-18T00:00:00.000Z
-              </div>
-              <ol
-                class="listCss"
-              >
                 <li
                   class="listItemCss"
                 >
@@ -5432,9 +5095,6 @@ exports[`/reviews renders 1`] = `
                       src="/svg/3-stars.svg"
                     />
                     <div>
-                      2022-03-18T00:00:00.000Z
-                    </div>
-                    <div>
                       Nonfiction
                     </div>
                     <div>
@@ -5442,18 +5102,6 @@ exports[`/reviews renders 1`] = `
                     </div>
                   </div>
                 </li>
-              </ol>
-            </li>
-            <li>
-              <div
-                class="listHeaderGroupCss"
-                style="z-index: 102;"
-              >
-                2022-03-16T00:00:00.000Z
-              </div>
-              <ol
-                class="listCss"
-              >
                 <li
                   class="listItemCss"
                 >
@@ -5534,9 +5182,6 @@ exports[`/reviews renders 1`] = `
                       src="/svg/3-stars.svg"
                     />
                     <div>
-                      2022-03-16T00:00:00.000Z
-                    </div>
-                    <div>
                       Novel
                     </div>
                     <div>
@@ -5544,18 +5189,6 @@ exports[`/reviews renders 1`] = `
                     </div>
                   </div>
                 </li>
-              </ol>
-            </li>
-            <li>
-              <div
-                class="listHeaderGroupCss"
-                style="z-index: 103;"
-              >
-                2022-03-06T00:00:00.000Z
-              </div>
-              <ol
-                class="listCss"
-              >
                 <li
                   class="listItemCss"
                 >
@@ -5635,9 +5268,6 @@ exports[`/reviews renders 1`] = `
                       class="listItemGradeCss"
                       src="/svg/3-stars.svg"
                     />
-                    <div>
-                      2022-03-06T00:00:00.000Z
-                    </div>
                     <div>
                       Nonfiction
                     </div>
