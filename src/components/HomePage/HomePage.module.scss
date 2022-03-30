@@ -190,14 +190,6 @@
   }
 }
 
-.reviewYearCss {
-  color: var(--color-fg-subtle);
-  display: inline-block;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 1;
-}
-
 .reviewCreditsCss {
   // color: var(--color-fg-subtle);
   color: var(--color-fg-accent);
@@ -229,10 +221,6 @@
   p {
     line-height: 28px;
   }
-}
-
-.watchlistLinksCss {
-  display: contents;
 }
 
 .paginationCss {

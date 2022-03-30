@@ -46,14 +46,6 @@
   grid-area: header;
 }
 
-.pageHeaderSubCss {
-  color: var(--color-fg-accent);
-  display: block;
-  font-size: 16px;
-  line-height: layout.$spacer-4;
-  margin-bottom: layout.$spacer-2;
-}
-
 .filtersCss {
   grid-area: filters;
 

@@ -47,15 +47,3 @@
   flex: 1;
   flex-direction: row;
 }
-
-.checkboxLabelCss {
-  flex: 1;
-  font-size: 14px;
-  font-weight: bold;
-  line-height: layout.$spacer-4;
-  min-width: 100%;
-
-  input {
-    margin-right: layout.$spacer-2;
-  }
-}
