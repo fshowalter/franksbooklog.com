@@ -246,7 +246,7 @@ export default function ShelfIndexPage({
   return (
     <Layout>
       <Seo
-        pageTitle="Shelf"
+        pageTitle="The Shelf"
         description="My movie review bucketlist."
         image={null}
         article={false}
@@ -255,7 +255,7 @@ export default function ShelfIndexPage({
         <div className={leftCss}>
           <FilterPageHeader
             className={pageHeaderCss}
-            heading="Shelf"
+            heading="The Shelf"
             tagline={
               <>
                 <q className={quoteCss}>
@@ -436,7 +436,9 @@ interface PageQueryResult {
 
 export const pageQuery = graphql`
   query {
-    work: allWorksJson(sort: { fields: [authors___sort_name], order: ASC }) {
+    work: allWorksJson(
+      sort: { fields: [authors___sort_name, year], order: ASC }
+    ) {
       nodes {
         title
         year
