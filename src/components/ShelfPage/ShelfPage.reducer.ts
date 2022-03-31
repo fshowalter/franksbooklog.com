@@ -6,7 +6,7 @@ import {
   sortStringAsc,
   sortStringDesc,
 } from "../../utils/sort-utils";
-import type { Work } from "./ShelfIndexPage";
+import type { Work } from "./ShelfPage";
 
 export enum ActionType {
   FILTER_TITLE = "FILTER_TITLE",
