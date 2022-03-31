@@ -16,7 +16,9 @@ export default {
           edition: "Kindle",
         },
         yearFinished: 2022,
+        monthFinished: "March 2022",
         dateFinished: "2022-03-21T00:00:00.000Z",
+        dateFinishedFormatted: "Mar 21, 2022",
         gradeValue: 11,
         reviewedWork: {
           title: "On Writing",
@@ -68,7 +70,9 @@ export default {
           edition: "Kindle",
         },
         yearFinished: 2022,
+        monthFinished: "March 2022",
         dateFinished: "2022-03-18T00:00:00.000Z",
+        dateFinishedFormatted: "Mar 18, 2022",
         gradeValue: 5,
         reviewedWork: {
           title: "The M.A.X. Muscle Plan",
@@ -120,7 +124,9 @@ export default {
           edition: "Kindle",
         },
         yearFinished: 2022,
+        monthFinished: "March 2022",
         dateFinished: "2022-03-16T00:00:00.000Z",
+        dateFinishedFormatted: "Mar 16, 2022",
         gradeValue: 7,
         reviewedWork: {
           title: "The Cellar",
@@ -172,7 +178,9 @@ export default {
           edition: "Kindle",
         },
         yearFinished: 2022,
+        monthFinished: "March 2022",
         dateFinished: "2022-03-06T00:00:00.000Z",
+        dateFinishedFormatted: "Mar 6, 2022",
         gradeValue: 6,
         reviewedWork: {
           title: "Brother Iron, Sister Steel",

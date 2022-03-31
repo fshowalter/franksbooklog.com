@@ -331,7 +331,7 @@ export const pageQuery = graphql`
           edition
         }
         yearFinished
-        monthFinished: dateFinished(formatString: "MMM YYYY")
+        monthFinished: dateFinished(formatString: "MMMM YYYY")
         dateFinished
         dateFinishedFormatted: dateFinished(formatString: "MMM D, YYYY")
         gradeValue
