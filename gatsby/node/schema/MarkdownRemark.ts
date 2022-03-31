@@ -34,7 +34,7 @@ interface FrontMatter {
 async function addReviewLinks(text: string, nodeModel: GatsbyNodeModel) {
   let result = text;
 
-  const re = RegExp(/(<span data-book-slug="(.*?)">)(.*?)(<\/span>)/, "g");
+  const re = RegExp(/(<span data-work-slug="(.*?)">)(.*?)(<\/span>)/, "g");
 
   const matches = [...text.matchAll(re)];
 
@@ -43,12 +43,12 @@ async function addReviewLinks(text: string, nodeModel: GatsbyNodeModel) {
 
     if (!reviewedWork) {
       result = result.replace(
-        `<span data-book-slug="${match[2]}">${match[3]}</span>`,
+        `<span data-work-slug="${match[2]}">${match[3]}</span>`,
         match[3]
       );
     } else if (reviewedWork.slug) {
       result = result.replace(
-        `<span data-book-slug="${match[2]}">${match[3]}</span>`,
+        `<span data-work-slug="${match[2]}">${match[3]}</span>`,
         `<a href="/reviews/${reviewedWork.slug}/">${match[3]}</a>`
       );
     }

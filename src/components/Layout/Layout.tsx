@@ -127,7 +127,6 @@ export default function Layout({
           <nav className={mastNavCss}>
             <ul className={mastNavListCss}>
               <MastNavItem to="/">Home</MastNavItem>
-              <MastNavItem to="/about/">About</MastNavItem>
               <MastNavItem to="/how-i-grade/">How I Grade</MastNavItem>
               <MastNavItem to="/reviews/">Reviews</MastNavItem>
               <MastNavItem to="/shelf/">Shelf</MastNavItem>
@@ -140,7 +139,6 @@ export default function Layout({
         <footer className={footerCss}>
           <ul className={footerNavListCss}>
             <FooterNavItem to="/">Home</FooterNavItem>
-            <FooterNavItem to="/about/">About</FooterNavItem>
             <FooterNavItem to="/how-i-grade/">How I Grade</FooterNavItem>
             <FooterNavItem to="/reviews/">Reviews</FooterNavItem>
             <FooterNavItem to="/shelf/">Shelf</FooterNavItem>
