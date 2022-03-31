@@ -2,12 +2,12 @@
 import { act, render, screen, waitFor, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import React from "react";
-import ShelfIndexPage from "./ShelfIndexPage";
-import data from "./ShelfIndexPage.fixtures";
+import ShelfPage from "./ShelfPage";
+import data from "./ShelfPage.fixtures";
 
 describe("/shelf", () => {
   it("renders", () => {
-    const { asFragment } = render(<ShelfIndexPage data={data} />);
+    const { asFragment } = render(<ShelfPage data={data} />);
 
     expect(asFragment()).toMatchSnapshot();
   });
@@ -17,7 +17,7 @@ describe("/shelf", () => {
   // eslint-disable-next-line jest/no-done-callback
   it("sets page title", (done) => {
     expect.hasAssertions();
-    render(<ShelfIndexPage data={data} />);
+    render(<ShelfPage data={data} />);
 
     requestAnimationFrame(() => {
       expect(document.title).toStrictEqual("Shelf");
@@ -27,7 +27,7 @@ describe("/shelf", () => {
 
   it("can filter by title", async () => {
     expect.hasAssertions();
-    render(<ShelfIndexPage data={data} />);
+    render(<ShelfPage data={data} />);
 
     act(() => {
       jest.useFakeTimers(); // For the debouced input
@@ -43,7 +43,7 @@ describe("/shelf", () => {
 
   it("can filter by not-found title", async () => {
     expect.hasAssertions();
-    render(<ShelfIndexPage data={data} />);
+    render(<ShelfPage data={data} />);
 
     act(() => {
       jest.useFakeTimers(); // For the debouced input
@@ -59,7 +59,7 @@ describe("/shelf", () => {
 
   it("can filter by author", () => {
     expect.hasAssertions();
-    render(<ShelfIndexPage data={data} />);
+    render(<ShelfPage data={data} />);
 
     userEvent.selectOptions(screen.getByLabelText("Author"), "Stephen King");
 
@@ -67,7 +67,7 @@ describe("/shelf", () => {
   });
 
   it("can filter by author then show all", () => {
-    render(<ShelfIndexPage data={data} />);
+    render(<ShelfPage data={data} />);
 
     userEvent.selectOptions(screen.getByLabelText("Author"), "Stephen King");
     userEvent.selectOptions(screen.getByLabelText("Author"), "All");
@@ -76,7 +76,7 @@ describe("/shelf", () => {
   });
 
   it("can sort by title", () => {
-    render(<ShelfIndexPage data={data} />);
+    render(<ShelfPage data={data} />);
 
     userEvent.selectOptions(screen.getByLabelText("Order By"), "Title");
 
@@ -84,7 +84,7 @@ describe("/shelf", () => {
   });
 
   it("can sort by year published with oldest first", () => {
-    render(<ShelfIndexPage data={data} />);
+    render(<ShelfPage data={data} />);
 
     userEvent.selectOptions(
       screen.getByLabelText("Order By"),
@@ -95,7 +95,7 @@ describe("/shelf", () => {
   });
 
   it("can sort by year published with newest first", () => {
-    render(<ShelfIndexPage data={data} />);
+    render(<ShelfPage data={data} />);
 
     userEvent.selectOptions(
       screen.getByLabelText("Order By"),
@@ -106,7 +106,7 @@ describe("/shelf", () => {
   });
 
   it("can filter by year published", () => {
-    render(<ShelfIndexPage data={data} />);
+    render(<ShelfPage data={data} />);
 
     const fieldset = screen.getByRole("group", { name: "Year Published" });
     const fromInput = within(fieldset).getByLabelText("From");
@@ -119,7 +119,7 @@ describe("/shelf", () => {
   });
 
   it("can hide reviewed titles", () => {
-    render(<ShelfIndexPage data={data} />);
+    render(<ShelfPage data={data} />);
 
     userEvent.click(screen.getByText("Hide Reviewed"));
 
@@ -127,7 +127,7 @@ describe("/shelf", () => {
   });
 
   it("can show hidden reviewed titles", () => {
-    render(<ShelfIndexPage data={data} />);
+    render(<ShelfPage data={data} />);
 
     userEvent.click(screen.getByText("Hide Reviewed"));
     userEvent.click(screen.getByText("Show Reviewed"));

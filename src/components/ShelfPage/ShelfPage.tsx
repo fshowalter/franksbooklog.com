@@ -33,9 +33,9 @@ import {
   quoteCss,
   rightCss,
   showMoreCss,
-} from "./ShelfIndexPage.module.scss";
-import type { SortType } from "./ShelfIndexPage.reducer";
-import reducer, { ActionType, initState } from "./ShelfIndexPage.reducer";
+} from "./ShelfPage.module.scss";
+import type { SortType } from "./ShelfPage.reducer";
+import reducer, { ActionType, initState } from "./ShelfPage.reducer";
 
 function ListInfo({
   visible,

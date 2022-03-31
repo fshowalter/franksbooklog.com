@@ -5,9 +5,7 @@ function createIndexPage(createPage: Actions["createPage"]) {
   createPage({
     path: `/shelf/`,
     context: null,
-    component: path.resolve(
-      "./src/components/ShelfIndexPage/ShelfIndexPage.tsx"
-    ),
+    component: path.resolve("./src/components/ShelfPage/ShelfPage.tsx"),
   });
 }
 
