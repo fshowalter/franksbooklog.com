@@ -20,7 +20,7 @@ describe("/shelf", () => {
     render(<ShelfPage data={data} />);
 
     requestAnimationFrame(() => {
-      expect(document.title).toStrictEqual("Shelf");
+      expect(document.title).toStrictEqual("The Shelf");
       done();
     });
   });
