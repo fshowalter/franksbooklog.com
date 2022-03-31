@@ -4,52 +4,50 @@ slug: how-i-grade
 title: How I Grade
 ---
 
-- ## a great movie
+- ## great
 
-  ![5 stars](/svg/5-stars.svg) I loved it. A must-see. A perfect or almost perfect movie. These are the movies I recommend to everyone. A hard rating to earn.
+  ![5 stars](/svg/5-stars.svg) I loved it. A must-read. Perfect or almost perfect. These are the works I recommend to everyone. A hard rating to earn.
 
-- ## a good movie
+- ## good
 
-  ![4 stars](/svg/4-stars.svg) I really liked it. Unless you hate the genre or star, watch it. These are the movies I recommend to most folks. They may not resonate like the 5-star selections, but they don’t disappoint.
+  ![4 stars](/svg/4-stars.svg) I really liked it. Unless you hate the genre or author, read it. These are the works I recommend to most folks. They may not resonate like the 5-star selections, but they don’t disappoint.
 
-- ## an okay movie
+- ## okay
 
-  ![3 stars](/svg/3-stars.svg) I liked it. I wouldn’t recommend it, but I wouldn’t recommend _against_ it either. Most movies fall into this category.
+  ![3 stars](/svg/3-stars.svg) I liked it. I wouldn’t recommend it, but I wouldn’t recommend _against_ it either. Most works fall into this category.
 
-- ## a bad movie
+- ## bad
 
-  ![2 stars](/svg/2-stars.svg) I didn’t like it. Unless you have a deep-seated love for the genre or star, avoid it. It wasn’t awful, but if I paid money, I felt burned.
+  ![2 stars](/svg/2-stars.svg) I didn’t like it. If it's a long-form work, more likely had a bad ending. If it's a shorter work, it disappointed or dragged.
 
-- ## an awful movie
+- ## awful
 
-  ![1 star](/svg/1-star.svg) I hated it. Everyone involved should apologize. Another a hard rating to earn. I can forgive a movie many things. Bad acting? It happens. Specious plotting? Maybe it's atmosphere. Gratuitous nudity? Sure. But I can't forgive boring. When reading a 1-star review, remember: I watch them so you don’t have to.
+  ![1 star](/svg/1-star.svg) I hated it. Another a hard rating to earn. Almost impossible for long works as they're sooner abandoned.
 
 ---
 
-## On Grading
+## On Abandoning Books
 
-Let's start with a binary scale. Gene Siskel argued a person yearns to know: “Should I watch this movie?”[^1]
+Fifty-three pages into the three hundred and twenty page novel, I closed it and moved on.
 
-A pragmatic approach, but one that doesn't differentiate between movies one _should_ see and movies one _must_ see. <span data-imdb-id="tt0372784">_Batman Begins_ </span> and <span data-imdb-id="tt0468569">_The Dark Knight_</span> both deserve a “Thumbs up” but they are not equal.
+It wasn’t easy.
 
-Enter the star scale. I've encountered scales from three stars to ten, sometimes with half-stars.
+I used to finish every book I started. Finishing brought a sense of accomplishment. A comfort in completing a task, checking a box, achieving a goal. Letting go of that illusionary security is hard.
 
-But not all star-systems prove equal.
+But I’m learning.
 
-Roger Ebert hated the four-star scale his paper enforced because it presented no middle ground.[^2] Awful, bad, good, or great. No room for okay. Thus, we can rule out the four-star system.
+Forcing myself to finish every book didn’t make me a better person. It didn’t make me smarter or more well-rounded. It just made reading a chore rather than a pleasure.
 
-Next, let's consider the IMDb. It proffers a ten-star system. That's a lot of stars. Perhaps too many. In 2009 the median movie score hit 6.6, implying users skew toward the upper bounds. Ergo, if you hate a 1-star and love a 10-star, what does a 3-star mean?
+Statistics say I’ve got more life behind me than ahead. Which means I’ll never finish all the books I want to read.
 
-So if a four-star scale proves too small and ten-star scale too large, what's ideal?
+It’s about opportunity cost. I loved the pulp storytelling of Graham Masterton’s The Devils of D-Day. Mark Richard’s writing in The Ice at the Bottom of the World floored me. Clive Barker’s imagination made The Books of Blood unforgettable. Knowing there are more books out there like those, while I’m forcing myself to trudge through a mediocre read, pushed me to abandon lesser efforts.
 
-I like a five-star system. Ebert liked it too.[^1] It offers a middle ground (3-stars) while proffering discreet rating definitions.
+My shelves hold hundreds of unread books. I’d wager that a quarter of them aren’t worth reading. Maybe more.
 
-And what about letter grade systems?[^3] I like them. Under-the-covers, they translate to five-star systems. A's equate to 5-stars, B's to 4-stars, and so on. I employ letter grades behind the scenes because it's how my brain works.
+Some folks give a book a chapter or two. Others give a book a set number of pages. Neither system makes sense to me. I’ve had books start strong then flounder. And how does one apply an arbitrary page count to books of varying lengths? Fifty pages is a quarter of a two hundred page novel, but only five percent of a thousand-page biography.
 
-So why display them as stars? Well, for one, grade definitions aren't universal. To me, a 'C' equates to an “okay” movie, to others it screams burn. A 3-star out of 5 display indicates a middle-of-the-road rating.
+I give a book three hours. That's the length of a long movie. If a book drags for longer, I’ll abandon it. This doesn't mean I have to _finish_ it in three hours, just that it can't go longer than three hours without holding my interest. Granted, this means I could abandon a thousand-page doorstop with under a hundred pages to go, but I’m okay with that. Failing to recognize a sunk cost is a gambler’s fallacy.
 
-Grading systems are hard. I think a 5-star system works, but I'm not married to the idea. Some of my favorite reviewers eschew grades, preferring you read the review. Fair enough, but I bet they rate them behind the scenes.
+Perhaps, as I discover better books, my standards will increase. Today’s excellence might be tomorrow’s schlock. Of course, that would see me abandoning even more books.
 
-[^1]: [Ebert, Roger, “You Give Out Too Many Stars”, Roger Ebert , last modified September 14, 2008](http://www.rogerebert.com/rogers-journal/you-give-out-too-many-stars)
-[^2]: Ebert also argues that readers dislike scales with a middle ground, but I disagree. We know what it means for a movie to be “okay.” Sometimes, instead of “Should I see this movie?” readers want to know “Will I hate this movie?” A middle ground answers that question.
-[^3]: [The Onion A.V. Club](http://www.avclub.com/film/) makes great use of letter grades.
+I can only hope.
