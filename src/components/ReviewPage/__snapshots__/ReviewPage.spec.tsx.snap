@@ -102,16 +102,6 @@ exports[`/reviews/{slug} renders 1`] = `
           >
             <a
               class="mastNavLinkCss"
-              href="/about/"
-            >
-              About
-            </a>
-          </li>
-          <li
-            class="mastNavListItemCss"
-          >
-            <a
-              class="mastNavLinkCss"
               href="/how-i-grade/"
             >
               How I Grade
@@ -395,15 +385,6 @@ exports[`/reviews/{slug} renders 1`] = `
             href="/"
           >
             Home
-          </a>
-        </li>
-        <li
-          class="footerNavListItemCss"
-        >
-          <a
-            href="/about/"
-          >
-            About
           </a>
         </li>
         <li
