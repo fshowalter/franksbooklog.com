@@ -47,6 +47,7 @@ const WorksJson = {
     kind: "String!",
     reviewed: "Boolean!",
     authors: "[WorkAuthor!]!",
+    included_works: "[String]!",
     reviews: {
       type: `[${SchemaNames.MARKDOWN_REMARK}!]!`,
       resolve: async (
@@ -160,8 +161,9 @@ const WorksJson = {
       type: "File",
       resolve: async (
         source: WorkNode,
-        _args: unknown,
-        context: GatsbyNodeContext
+        args: GatsbyResolveArgs,
+        context: GatsbyNodeContext,
+        info: GatsbyResolveInfo
       ) => {
         const cover = await context.nodeModel.findOne({
           type: "File",
@@ -174,7 +176,30 @@ const WorksJson = {
           },
         });
 
-        return cover || findDefaultCoverNode(context.nodeModel);
+        if (cover) {
+          return cover;
+        }
+
+        const parentWork = await context.nodeModel.findOne<WorkNode>({
+          type: SchemaNames.WORKS_JSON,
+          query: {
+            filter: {
+              included_works: { in: [`${source.slug}`] },
+            },
+          },
+        });
+
+        const parentCover = await resolveFieldForNode(
+          "cover",
+          parentWork,
+          context,
+          info,
+          args
+        );
+
+        console.log(parentCover);
+
+        return parentCover || findDefaultCoverNode(context.nodeModel);
       },
     },
   },
