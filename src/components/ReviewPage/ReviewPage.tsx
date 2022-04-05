@@ -138,36 +138,43 @@ export default function ReviewPage({
                       <dt className={termCss}>Edition</dt>
                       <dd>
                         {review.frontmatter.edition} (
-                        {review.frontmatter.editionNotes})
+                        <span
+                          dangerouslySetInnerHTML={{
+                            __html: review.editionNotesHtml,
+                          }}
+                        />
+                        )
                       </dd>
                       <dt className={termCss}>Reading Time</dt>
                       <dd className={readingTimeContainerCss}>
                         {review.readingTime}{" "}
                         {review.readingTime === 1 ? "Day" : "Days"}
-                        <div className={progressContainerCss}>
-                          <div>
-                            {review.frontmatter.progress[0].date}
-                            {" – "}
-                            <span className={progressMilestoneCss}>
-                              Started
-                            </span>
+                        {review.readingTime !== 1 && (
+                          <div className={progressContainerCss}>
+                            <div>
+                              {review.frontmatter.progress[0].date}
+                              {" – "}
+                              <span className={progressMilestoneCss}>
+                                Started
+                              </span>
+                            </div>
+                            {review.frontmatter.progress.map((progress) => {
+                              return (
+                                <div key={progress.date}>
+                                  {progress.date}
+                                  {" – "}
+                                  {progress.percent === 100 ? (
+                                    <span className={progressMilestoneCss}>
+                                      Finished
+                                    </span>
+                                  ) : (
+                                    `${progress.percent}%`
+                                  )}
+                                </div>
+                              );
+                            })}
                           </div>
-                          {review.frontmatter.progress.map((progress) => {
-                            return (
-                              <div key={progress.date}>
-                                {progress.date}
-                                {" – "}
-                                {progress.percent === 100 ? (
-                                  <span className={progressMilestoneCss}>
-                                    Finished
-                                  </span>
-                                ) : (
-                                  `${progress.percent}%`
-                                )}
-                              </div>
-                            );
-                          })}
-                        </div>
+                        )}
                       </dd>
                     </dl>
                   </div>
@@ -218,13 +225,13 @@ export interface Work {
     frontmatter: {
       grade: string;
       edition: string;
-      editionNotes: string | null;
       sequence: number;
       progress: {
         date: string;
         percent: number;
       }[];
     };
+    editionNotesHtml: string;
     readingTime: number;
     linkedHtml: string;
     dateFinished: string;
@@ -249,12 +256,12 @@ export const pageQuery = graphql`
           grade
           sequence
           edition
-          editionNotes: edition_notes
           progress {
             date(formatString: "DD MMM, YYYY")
             percent
           }
         }
+        editionNotesHtml
         readingTime
         dateFinished(formatString: "DD MMM, YYYY")
         dateFinishedIso: dateFinished(formatString: "Y-MM-DD")

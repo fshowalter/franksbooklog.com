@@ -197,8 +197,6 @@ const WorksJson = {
           args
         );
 
-        console.log(parentCover);
-
         return parentCover || findDefaultCoverNode(context.nodeModel);
       },
     },
