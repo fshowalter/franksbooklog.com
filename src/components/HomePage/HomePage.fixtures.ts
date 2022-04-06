@@ -5,13 +5,115 @@ export default {
     nodes: [
       {
         frontmatter: {
+          grade: "C-",
+          slug: "desert-pickup-by-richard-laymon",
+          sequence: 6,
+        },
+        dateFinished: "03 Apr, 2022",
+        linkedExcerpt:
+          '<p><strong>Richard Laymon’s commercial debut.</strong> Published in the November 1970 issue of <em>Ellery Queen’s Mystery Magazine</em>, this flash-fiction style story concerns an unnamed young man hitchhiking along a desert road. An unnamed young woman picks him up. To discuss more, I must spoil the story. <a class="globalExcerptLinkCss" href="/reviews/desert-pickup-by-richard-laymon/">Continue reading...</a></p>',
+        reviewedWork: {
+          title: "Desert Pickup",
+          year: 1970,
+          kind: "Short Story",
+          authors: [
+            {
+              name: "Richard Laymon",
+              slug: "richard-laymon",
+              notes: null,
+            },
+          ],
+          cover: {
+            childImageSharp: {
+              gatsbyImageData: {
+                layout: "fixed" as Layout,
+                placeholder: {
+                  fallback:
+                    "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='160'%20height='256'%20viewBox='0%200%20160%20256'%20preserveAspectRatio='none'%3e%3cpath%20d='M0%2058v58h161V0H0v58m51%2063c-2%201-2%204%200%203l1%202v1l-1%201%201%202%201-1h1v2c1%200%202%201%201%202l1%204c2%201%202%201%201-2-1-2-1-2%203-2l5%201-1%201v1c2%202%204%200%202-2v-2l1-1h-6l-1-1v-4l1-1h-7l1-2%201-2h-5m35%209c-3%203%200%209%204%209l2%202c1%202%203%203%203%202%202%200%204%203%204%206%200%202%203%204%209%205%203%201%204%204%204%2017%200%206%200%207%204%207l7%201c4%202%209%202%2011%200v-16c-1-7-2-7%204-7l5-1c0-3-11-15-13-14l-21-7c-23-7-20-7-23-4m-15%2013l-5%202-7%202v1c2-1%203%201%201%201-1%201-1%201%201%201v4c2%202%202%202%202%200l3-4c5-5%2017-5%2012%200l-1%203c1%202%201%202%202-2%202-3%203-4%205-4%204%200%207%203%207%206v2c1-1%202%200%202%201l-3%201c-2%200-3%200-2%201%202%200%202%204%200%205-2%202-7%201-7%200s1-2%203-2h3l-3-1-2-2c0-3-2-2-3%200l-2%202-1%202h-1l-3-1-4-1c-2-2-3-2-3-1%200%202%200%203-2%204-3%201-3%201-3-1l-1-4v-3l-5-2-2-2-1%202v5c2%204-3%209-12%2012l-14%204c-4%201-5%202-5%204%200%204%200%204%209%201%2014-3%2013-3%2013%200%200%202%200%202%202%203s2%201%201-2c0-3%200-4%202-5s3%200%203%202l2%204%202%203c0%202%207%2010%209%2010v-2c-1-1-1-1%201-3%202-3%203-3%203%202%201%202%200%203-1%203-2%200-2%200%201%202h4c-2-3-3-13-1-13v2c0%202%200%202%202%201%201-1%204%201%205%205h1l-2-6-3-4-1-3v-2h-2l1-2v-2l-1-3%202%202c3%204%203%204%203%200l3-9%201%201v3c-1%202%202%2010%204%2010l2%201%202%201%205%201h2l1-6-1-4c-1%200-2%200-1%201l-2%201-2-1-1-3c0-2%200-2%202-3l1-1v-1h1l1%201v-2c0-2%200-2%201-1%203%202%203%201%202-4-2-7-10-14-15-12h-2l-8-1m28%2026l-1%205c0%208-3%2011-9%2012-2%201-3%200-3-1%200-2-2-4-5-4l1-1%202-1-2-2c-3-2-7-3-7-2l2%201-1%201c-2%201-2%201-1%202l3-1h1c1%201%200%202-1%203-3%201-3%203%200%204l1%201%201%201%201-1h1l-1%202c-2%202-2%202%200%201h9c0%201-3%204-8%206s-7%203-4%201v-1c-2%200-7%203-5%203l1%202%202%201%201-1c-1-1%200-2%201-2l8-4c8-4%2012-9%2014-16%201-4%200-12-1-9M0%20231v25h161v-50H0v25'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                },
+                images: {
+                  fallback: {
+                    src: "/static/a28ced6fc951df87b6a81bce6d181261/3c07e/short-stories-volume-one-by-richard-laymon.jpg",
+                    srcSet:
+                      "/static/a28ced6fc951df87b6a81bce6d181261/3c07e/short-stories-volume-one-by-richard-laymon.jpg 160w,\n/static/a28ced6fc951df87b6a81bce6d181261/03875/short-stories-volume-one-by-richard-laymon.jpg 320w",
+                    sizes: "160px",
+                  },
+                  sources: [
+                    {
+                      srcSet:
+                        "/static/a28ced6fc951df87b6a81bce6d181261/7e230/short-stories-volume-one-by-richard-laymon.avif 160w,\n/static/a28ced6fc951df87b6a81bce6d181261/eccfc/short-stories-volume-one-by-richard-laymon.avif 320w",
+                      type: "image/avif",
+                      sizes: "160px",
+                    },
+                  ],
+                },
+                width: 160,
+                height: 256,
+              },
+            },
+          },
+        },
+      },
+      {
+        frontmatter: {
+          grade: "B+",
+          slug: "less-than-zero-by-bret-easton-ellis",
+          sequence: 5,
+        },
+        dateFinished: "02 Apr, 2022",
+        linkedExcerpt:
+          '<p>Bret Easton Ellis’s debut novel is a powerhouse of existential horror. Narrated by Clay, an affluent college freshman, who returns home to Los Angeles for winter break in the early 80s. <a class="globalExcerptLinkCss" href="/reviews/less-than-zero-by-bret-easton-ellis/">Continue reading...</a></p>',
+        reviewedWork: {
+          title: "Less Than Zero",
+          year: 1985,
+          kind: "Novel",
+          authors: [
+            {
+              name: "Bret Easton Ellis",
+              slug: "bret-easton-ellis",
+              notes: null,
+            },
+          ],
+          cover: {
+            childImageSharp: {
+              gatsbyImageData: {
+                layout: "fixed" as Layout,
+                placeholder: {
+                  fallback:
+                    "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='160'%20height='256'%20viewBox='0%200%20160%20256'%20preserveAspectRatio='none'%3e%3cpath%20d='M69%2023c-16%205-20%207-25%2015-2%202-4%205-6%205l-4%205c0%203-2%207-4%209-3%204-2%2020%203%2030%204%207%206%209%205%204-2-9-2-18-1-18l1%204%202%2021c3%2011%206%2017%2010%2017%203%200%203%200%203%204%200%203%203%2012%206%2015%201%201%200%202-4%204-6%204-10%2010-7%2011%204%201%205%2010%201%2010l1%202c3%203%203%206%200%209-2%202-3%203-10%203h-8l-1-9-1-8c-1%200-12%206-18%2011-11%208-12%2013-12%2057v32h161l-1-47-1-49-14-8c-24-11-33-17-34-22%200-3-7-14-8-14l-1%202c-1%201-1-1-1-6v-9l3-1c3%200%204-1%205-5l4-6c2-1%202-2%201-3v-1l2-1-2-8c0-8%200-8-2-15l-1-5-1-1-1-1-2-5-1-5-2-2c-2-1-2-2-1-2v-1l-3-5-2-3-5-10c0-2-3-3-6-2h-3c-3-1-7-1-15%202m-5%20125h-5v25h3c3%200%203%200%203-4s0-5%202-5l4%205c2%203%202%204%205%204%204%200%204%200%201-6l-2-4%202-3%202-5c0-2-4-7-6-7h-9m22%2012l1%2013h18v-2c0-3%200-3-6-3s-6%200-6-3c0-2%200-2%205-2%204%200%205-1%205-3s0-2-5-2-5%200-5-2c0-3%200-3%206-3s6%200%206-2c0-3%200-3-10-3h-9v12m25-9c0%202%200%202%204%202h3v20h6v-20h4c3%200%203%200%203-2v-3h-20v3m-48%2030c-3%201-5%203-5%207s2%206%208%208c4%201%205%202%204%204h-8c-2-2-5-1-5%202%200%204%2014%205%2018%201%204-6%202-10-6-13l-5-3c0-2%203-2%206-1%204%201%207-1%205-4-2-1-9-2-12-1m50%200c-6%204-7%2016-3%2022%204%204%2012%204%2016%200%204-3%204-16%201-20-3-3-10-4-14-2M3%20193l1%2013h9c8%200%209-1%209-3s-1-3-6-3c-6%200-6%200-6-3%200-2%200-2%205-2s5%200%205-2-1-3-5-3-5%200-5-2%201-2%206-2%206-1%206-3%200-2-9-2H3v12m29%200c-5%2013-5%2013-1%2013l3-2c1-3%202-3%205-3%204%200%205%200%206%203%201%202%205%203%206%201l-3-12-5-11-3-1h-4l-4%2012m50-10c0%202%201%202%203%202h4v10l1%2011h5v-10l1-10%203-1c3%200%204%200%204-2s0-2-10-2-11%200-11%202m55%2011v12h3c2%200%202%200%202-7l1-7%205%207c3%205%205%207%207%207h3v-25h-6v13l-5-6c-3-6-4-7-7-7h-3v13m-21-7c-3%202-3%2010%200%2012%204%204%207%202%207-6%200-7-4-10-7-6m-89%2038v13h10c9%200%209%200%209-2s-1-3-7-3-6%200-6-2%201-3%206-3%205%200%205-2-1-3-6-3-5%200-5-2%201-3%207-3c5%200%206-1%206-2%200-2-1-3-10-3h-9v12m26%201v12h9c9%200%209%200%209-2%200-3%200-3-6-3h-6v-20h-6v13m25%200v12h9c9%200%209%200%209-2%200-3%200-3-6-3h-6v-20h-6v13m25-12l-1%2012v12h7v-24l-3-1-3%201m18%200c-8%204-6%2011%203%2015%204%201%205%202%205%203-1%202-6%203-8%201-3-2-3-2-4%200-2%202-2%202%200%203%208%206%2018%202%2018-6%200-3-2-5-8-7l-4-3c0-2%205-3%207-1%201%201%204%200%204-2%200-3-9-5-13-3'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                },
+                images: {
+                  fallback: {
+                    src: "/static/a629ec209cbebc4deb953ce4d5a522bf/3c07e/less-than-zero-by-bret-easton-ellis.jpg",
+                    srcSet:
+                      "/static/a629ec209cbebc4deb953ce4d5a522bf/3c07e/less-than-zero-by-bret-easton-ellis.jpg 160w,\n/static/a629ec209cbebc4deb953ce4d5a522bf/03875/less-than-zero-by-bret-easton-ellis.jpg 320w",
+                    sizes: "160px",
+                  },
+                  sources: [
+                    {
+                      srcSet:
+                        "/static/a629ec209cbebc4deb953ce4d5a522bf/7e230/less-than-zero-by-bret-easton-ellis.avif 160w,\n/static/a629ec209cbebc4deb953ce4d5a522bf/eccfc/less-than-zero-by-bret-easton-ellis.avif 320w",
+                      type: "image/avif",
+                      sizes: "160px",
+                    },
+                  ],
+                },
+                width: 160,
+                height: 256,
+              },
+            },
+          },
+        },
+      },
+      {
+        frontmatter: {
           grade: "A-",
           slug: "on-writing-by-stephen-king",
           sequence: 4,
         },
         dateFinished: "21 Mar, 2022",
         linkedExcerpt:
-          '<p>It’s hard to read <em>The Shining</em> and not see Jack Nicholson. That’s how popular Stanley Kubrick’s film adaptation has become. New readers will likely be surprised that the Jack in the novel never utters the famous “Here’s Johnny!” line. <a class="globalExcerptLinkCss" href="/reviews/on-writing-by-stephen-king/">Continue reading...</a></p>',
+          '<p>When writing my review of <a href="/reviews/the-cellar-by-richard-laymon/"><em>The Cellar</em></a>, I remembered something King had written in <em>On Writing</em> about reader-friendliness. Looking for the exact quote hooked me and I decided a reread might prove inspirational. <a class="globalExcerptLinkCss" href="/reviews/on-writing-by-stephen-king/">Continue reading...</a></p>',
         reviewedWork: {
           title: "On Writing",
           year: 2000,
@@ -19,6 +121,7 @@ export default {
           authors: [
             {
               name: "Stephen King",
+              slug: "stephen-king",
               notes: null,
             },
           ],
@@ -61,7 +164,7 @@ export default {
         },
         dateFinished: "18 Mar, 2022",
         linkedExcerpt:
-          '<p><em>Peter Cushing: A Life in Film</em> chronicles the horror icon’s life via his appearances on stage and screen. Biographer David Miller’s focus on Cushing’s professional life differentiates this work from Cushing’s two autobiographies. Miller’s disciplined approach feels, at times, less like the story of Cushing’s life, and more like a reference guide to his career. <a class="globalExcerptLinkCss" href="/reviews/the-max-muscle-plan-by-brad-schoenfeld/">Continue reading...</a></p>',
+          '<p>Still laid up with a strained intercostal, I turned to another recommendation gleaned from various podcasts. Brad Schoenfeld turns up on all the evidence-based strength shows, as he publishes a considerable amount of research on muscular hypertrophy. <a class="globalExcerptLinkCss" href="/reviews/the-max-muscle-plan-by-brad-schoenfeld/">Continue reading...</a></p>',
         reviewedWork: {
           title: "The M.A.X. Muscle Plan",
           year: 2012,
@@ -69,6 +172,7 @@ export default {
           authors: [
             {
               name: "Brad Schoenfeld",
+              slug: "brad-schoenfeld",
               notes: null,
             },
           ],
@@ -111,7 +215,7 @@ export default {
         },
         dateFinished: "16 Mar, 2022",
         linkedExcerpt:
-          '<p>The Cellar opens with Donna and her daughter Sandy fleeing Donna’s recently parolled ex-husband Roy. A car accident strands them in Malcasa Point, a small California town whose claim to fame is an aging mansion that has served as the site of several grisly murders over the years. Known as Beast House, the current owners have turned it into a tourist attraction complete with wax replicas of the murder victims. In Malcasa, Donna and Sandy cross paths with Judge, a mercenary in town to kill the monster that supposedly haunts Beast House. Meanwhile, Roy learns of Donna’s whereabouts and heads to Malcasa Point himself. The inevitable conclusion blurs the line between man and monster as the mysteries of Beast House are revealed. <a class="globalExcerptLinkCss" href="/reviews/the-cellar-by-richard-laymon/">Continue reading...</a></p>',
+          '<p>Single-mom Donna flees town with her daughter Sandy after her ex-husband Roy makes parole. A car accident strands Donna and Sandy in Malcasa Point, a small northern California town whose claim to fame is an aging mansion known as Beast House. <a class="globalExcerptLinkCss" href="/reviews/the-cellar-by-richard-laymon/">Continue reading...</a></p>',
         reviewedWork: {
           title: "The Cellar",
           year: 1980,
@@ -119,6 +223,7 @@ export default {
           authors: [
             {
               name: "Richard Laymon",
+              slug: "richard-laymon",
               notes: null,
             },
           ],
@@ -161,7 +266,7 @@ export default {
         },
         dateFinished: "06 Mar, 2022",
         linkedExcerpt:
-          '<p>A strained intercostal muscle has me layed up from training, and I wanted motivation. This came recommended by Eric Helms on his Iron Culture podcast. <a class="globalExcerptLinkCss" href="/reviews/brother-iron-sister-steel-by-dave-draper/">Continue reading...</a></p>',
+          '<p>A strained intercostal muscle has me laid up from training, and I wanted motivation. This came recommended by Eric Helms on his <em>Iron Culture</em> podcast. <a class="globalExcerptLinkCss" href="/reviews/brother-iron-sister-steel-by-dave-draper/">Continue reading...</a></p>',
         reviewedWork: {
           title: "Brother Iron, Sister Steel",
           year: 2001,
@@ -169,6 +274,7 @@ export default {
           authors: [
             {
               name: "Dave Draper",
+              slug: "dave-draper",
               notes: null,
             },
           ],

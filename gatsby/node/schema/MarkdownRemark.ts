@@ -1,5 +1,8 @@
 import { Element } from "hast";
+import raw from "hast-util-raw";
 import toHtml from "hast-util-to-html";
+import toHast from "mdast-util-to-hast";
+import remark from "remark";
 import { Parent } from "unist";
 import visit from "unist-util-visit";
 import { SchemaNames } from "./schemaNames";
@@ -109,6 +112,50 @@ const MarkdownRemark = {
         }
 
         return null;
+      },
+    },
+    editionNotesHtml: {
+      type: "String",
+      resolve: async (
+        source: MarkdownNode,
+        args: GatsbyResolveArgs,
+        context: GatsbyNodeContext,
+        info: GatsbyResolveInfo
+      ) => {
+        const frontMatter = await resolveFieldForNode<FrontMatter>(
+          "frontmatter",
+          source,
+          context,
+          info,
+          args
+        );
+
+        if (!frontMatter) {
+          return null;
+        }
+
+        const mdast = remark().parse(frontMatter.edition_notes);
+
+        const hast = toHast(mdast, {
+          allowDangerousHtml: true,
+        }) as Element;
+
+        const rawAst = raw(hast) as Element;
+
+        if (
+          rawAst &&
+          rawAst.children &&
+          rawAst.children[0] &&
+          rawAst.children[0].tagName === "p"
+        ) {
+          rawAst.children[0].tagName = "span";
+        }
+
+        const html = toHtml(rawAst, {
+          allowDangerousHtml: true,
+        });
+
+        return addReviewLinks(html, context.nodeModel);
       },
     },
     reviewedWork: {
