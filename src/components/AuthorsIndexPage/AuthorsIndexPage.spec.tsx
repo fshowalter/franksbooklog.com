@@ -1,5 +1,5 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
-import { act, render, screen, waitFor } from "@testing-library/react";
+import { act, render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import React from "react";
 import AuthorsIndexPage from "./AuthorsIndexPage";
@@ -10,30 +10,31 @@ describe("/shelf/authors/", () => {
     expect.hasAssertions();
     render(<AuthorsIndexPage data={data} />);
 
-    act(() => {
-      jest.useFakeTimers(); // For the debouced input
-      userEvent.type(screen.getByLabelText("Name"), "Stephen King");
-      jest.runOnlyPendingTimers(); // Flush the delay
-      jest.useRealTimers();
+    await act(async () => {
+      await userEvent.type(screen.getByLabelText("Name"), "Stephen King");
+      await new Promise((r) => setTimeout(r, 500));
     });
-
-    await waitFor(() => {
-      expect(screen.getByTestId("author-list")).toMatchSnapshot();
-    });
-  });
-
-  it("can sort by name", () => {
-    render(<AuthorsIndexPage data={data} />);
-
-    userEvent.selectOptions(screen.getByLabelText("Order By"), "Name");
 
     expect(screen.getByTestId("author-list")).toMatchSnapshot();
   });
 
-  it("can sort by review count", () => {
+  it("can sort by name", async () => {
+    expect.hasAssertions();
     render(<AuthorsIndexPage data={data} />);
 
-    userEvent.selectOptions(screen.getByLabelText("Order By"), "Review Count");
+    await userEvent.selectOptions(screen.getByLabelText("Order By"), "Name");
+
+    expect(screen.getByTestId("author-list")).toMatchSnapshot();
+  });
+
+  it("can sort by review count", async () => {
+    expect.hasAssertions();
+    render(<AuthorsIndexPage data={data} />);
+
+    await userEvent.selectOptions(
+      screen.getByLabelText("Order By"),
+      "Review Count"
+    );
 
     expect(screen.getByTestId("author-list")).toMatchSnapshot();
   });
