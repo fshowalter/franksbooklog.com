@@ -1,5 +1,5 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
-import { act, render, screen, waitFor, within } from "@testing-library/react";
+import { act, render, screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import React from "react";
 import ReviewsIndexPage from "./ReviewsIndexPage";
@@ -29,40 +29,38 @@ describe("/reviews", () => {
     expect.hasAssertions();
     render(<ReviewsIndexPage data={data} />);
 
-    act(() => {
-      jest.useFakeTimers(); // For the debouced input
-      userEvent.type(screen.getByLabelText("Title"), "On Writing");
-      jest.runOnlyPendingTimers(); // Flush the delay
-      jest.useRealTimers();
+    await act(async () => {
+      await userEvent.type(screen.getByLabelText("Title"), "On Writing");
+      await new Promise((r) => setTimeout(r, 500));
     });
 
-    await waitFor(() => {
-      expect(screen.getByTestId("review-list")).toMatchSnapshot();
-    });
+    expect(screen.getByTestId("review-list")).toMatchSnapshot();
   });
 
-  it("can filter by kind", () => {
+  it("can filter by kind", async () => {
     expect.hasAssertions();
     render(<ReviewsIndexPage data={data} />);
 
-    userEvent.selectOptions(screen.getByLabelText("Kind"), "Novel");
+    await userEvent.selectOptions(screen.getByLabelText("Kind"), "Novel");
 
     expect(screen.getByTestId("review-list")).toMatchSnapshot();
   });
 
-  it("can filter by kind then show all", () => {
+  it("can filter by kind then show all", async () => {
+    expect.hasAssertions();
     render(<ReviewsIndexPage data={data} />);
 
-    userEvent.selectOptions(screen.getByLabelText("Kind"), "Novel");
-    userEvent.selectOptions(screen.getByLabelText("Kind"), "All");
+    await userEvent.selectOptions(screen.getByLabelText("Kind"), "Novel");
+    await userEvent.selectOptions(screen.getByLabelText("Kind"), "All");
 
     expect(screen.getByTestId("review-list")).toMatchSnapshot();
   });
 
-  it("can sort by read date with newest first", () => {
+  it("can sort by read date with newest first", async () => {
+    expect.hasAssertions();
     render(<ReviewsIndexPage data={data} />);
 
-    userEvent.selectOptions(
+    await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
       "Read Date (Newest First)"
     );
@@ -70,10 +68,12 @@ describe("/reviews", () => {
     expect(screen.getByTestId("review-list")).toMatchSnapshot();
   });
 
-  it("can sort by read date with oldest first", () => {
+  it("can sort by read date with oldest first", async () => {
+    expect.hasAssertions();
+
     render(<ReviewsIndexPage data={data} />);
 
-    userEvent.selectOptions(
+    await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
       "Read Date (Oldest First)"
     );
@@ -81,18 +81,22 @@ describe("/reviews", () => {
     expect(screen.getByTestId("review-list")).toMatchSnapshot();
   });
 
-  it("can sort by title", () => {
+  it("can sort by title", async () => {
+    expect.hasAssertions();
+
     render(<ReviewsIndexPage data={data} />);
 
-    userEvent.selectOptions(screen.getByLabelText("Order By"), "Title");
+    await userEvent.selectOptions(screen.getByLabelText("Order By"), "Title");
 
     expect(screen.getByTestId("review-list")).toMatchSnapshot();
   });
 
-  it("can sort by year published with oldest first", () => {
+  it("can sort by year published with oldest first", async () => {
+    expect.hasAssertions();
+
     render(<ReviewsIndexPage data={data} />);
 
-    userEvent.selectOptions(
+    await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
       "Year Published (Oldest First)"
     );
@@ -100,10 +104,12 @@ describe("/reviews", () => {
     expect(screen.getByTestId("review-list")).toMatchSnapshot();
   });
 
-  it("can sort by year published with newest first", () => {
+  it("can sort by year published with newest first", async () => {
+    expect.hasAssertions();
+
     render(<ReviewsIndexPage data={data} />);
 
-    userEvent.selectOptions(
+    await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
       "Year Published (Newest First)"
     );
@@ -111,10 +117,12 @@ describe("/reviews", () => {
     expect(screen.getByTestId("review-list")).toMatchSnapshot();
   });
 
-  it("can sort by grade with best first", () => {
+  it("can sort by grade with best first", async () => {
+    expect.hasAssertions();
+
     render(<ReviewsIndexPage data={data} />);
 
-    userEvent.selectOptions(
+    await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
       "Grade (Best First)"
     );
@@ -122,10 +130,12 @@ describe("/reviews", () => {
     expect(screen.getByTestId("review-list")).toMatchSnapshot();
   });
 
-  it("can sort by grade with worst first", () => {
+  it("can sort by grade with worst first", async () => {
+    expect.hasAssertions();
+
     render(<ReviewsIndexPage data={data} />);
 
-    userEvent.selectOptions(
+    await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
       "Grade (Worst First)"
     );
@@ -133,71 +143,81 @@ describe("/reviews", () => {
     expect(screen.getByTestId("review-list")).toMatchSnapshot();
   });
 
-  it("can filter by published year", () => {
+  it("can filter by published year", async () => {
+    expect.hasAssertions();
+
     render(<ReviewsIndexPage data={data} />);
 
     const fieldset = screen.getByRole("group", { name: "Published Year" });
     const fromInput = within(fieldset).getByLabelText("From");
     const toInput = within(fieldset).getByLabelText("to");
 
-    userEvent.selectOptions(fromInput, "2000");
-    userEvent.selectOptions(toInput, "2001");
+    await userEvent.selectOptions(fromInput, "2000");
+    await userEvent.selectOptions(toInput, "2001");
 
     expect(screen.getByTestId("review-list")).toMatchSnapshot();
   });
 
-  it("can filter by published year reversed", () => {
+  it("can filter by published year reversed", async () => {
+    expect.hasAssertions();
+
     render(<ReviewsIndexPage data={data} />);
 
     const fieldset = screen.getByRole("group", { name: "Published Year" });
     const fromInput = within(fieldset).getByLabelText("From");
     const toInput = within(fieldset).getByLabelText("to");
 
-    userEvent.selectOptions(fromInput, "2000");
-    userEvent.selectOptions(toInput, "2001");
-    userEvent.selectOptions(fromInput, "2001");
-    userEvent.selectOptions(toInput, "2000");
+    await userEvent.selectOptions(fromInput, "2000");
+    await userEvent.selectOptions(toInput, "2001");
+    await userEvent.selectOptions(fromInput, "2001");
+    await userEvent.selectOptions(toInput, "2000");
 
     expect(screen.getByTestId("review-list")).toMatchSnapshot();
   });
 
-  it("can filter by read year", () => {
+  it("can filter by read year", async () => {
+    expect.hasAssertions();
+
     render(<ReviewsIndexPage data={data} />);
 
     const fieldset = screen.getByRole("group", { name: "Read Year" });
     const fromInput = within(fieldset).getByLabelText("From");
     const toInput = within(fieldset).getByLabelText("to");
 
-    userEvent.selectOptions(fromInput, "2022");
-    userEvent.selectOptions(toInput, "2022");
+    await userEvent.selectOptions(fromInput, "2022");
+    await userEvent.selectOptions(toInput, "2022");
 
     expect(screen.getByTestId("review-list")).toMatchSnapshot();
   });
 
-  it("can filter by grade", () => {
+  it("can filter by grade", async () => {
+    expect.hasAssertions();
+
     render(<ReviewsIndexPage data={data} />);
 
     const fieldset = screen.getByRole("group", { name: "Grade" });
     const fromInput = within(fieldset).getByLabelText("From");
     const toInput = within(fieldset).getByLabelText("to");
 
-    userEvent.selectOptions(fromInput, "B-");
-    userEvent.selectOptions(toInput, "A+");
+    await userEvent.selectOptions(fromInput, "B-");
+    await userEvent.selectOptions(toInput, "A+");
 
     expect(screen.getByTestId("review-list")).toMatchSnapshot();
   });
 
-  it("can filter by grade reversed", () => {
+  it("can filter by grade reversed", async () => {
+    expect.hasAssertions();
+
     render(<ReviewsIndexPage data={data} />);
 
     const fieldset = screen.getByRole("group", { name: "Grade" });
     const fromInput = within(fieldset).getByLabelText("From");
     const toInput = within(fieldset).getByLabelText("to");
 
-    userEvent.selectOptions(fromInput, "B");
-    userEvent.selectOptions(toInput, "B+");
-    userEvent.selectOptions(fromInput, "A-");
-    userEvent.selectOptions(toInput, "B-");
+    await userEvent.selectOptions(fromInput, "B");
+    await userEvent.selectOptions(toInput, "B+");
+    await userEvent.selectOptions(fromInput, "A-");
+    await userEvent.selectOptions(toInput, "B-");
 
     expect(screen.getByTestId("review-list")).toMatchSnapshot();
   });

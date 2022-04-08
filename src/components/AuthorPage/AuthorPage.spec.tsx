@@ -1,5 +1,5 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
-import { act, render, screen, waitFor, within } from "@testing-library/react";
+import { act, render, screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import React from "react";
 import AuthorPage from "./AuthorPage";
@@ -29,30 +29,29 @@ describe("/shelf/authors/{slug}", () => {
     expect.hasAssertions();
     render(<AuthorPage data={data} />);
 
-    act(() => {
-      jest.useFakeTimers(); // For the debouced input
-      userEvent.type(screen.getByLabelText("Title"), "On Writing");
-      jest.runOnlyPendingTimers(); // Flush the delay
-      jest.useRealTimers();
+    await act(async () => {
+      await userEvent.type(screen.getByLabelText("Title"), "On Writing");
+      await new Promise((r) => setTimeout(r, 500));
     });
-
-    await waitFor(() => {
-      expect(screen.getByTestId("work-list")).toMatchSnapshot();
-    });
-  });
-
-  it("can sort by title", () => {
-    render(<AuthorPage data={data} />);
-
-    userEvent.selectOptions(screen.getByLabelText("Order By"), "Title");
 
     expect(screen.getByTestId("work-list")).toMatchSnapshot();
   });
 
-  it("can sort by year published with oldest first", () => {
+  it("can sort by title", async () => {
+    expect.hasAssertions();
     render(<AuthorPage data={data} />);
 
-    userEvent.selectOptions(
+    await userEvent.selectOptions(screen.getByLabelText("Order By"), "Title");
+
+    expect(screen.getByTestId("work-list")).toMatchSnapshot();
+  });
+
+  it("can sort by year published with oldest first", async () => {
+    expect.hasAssertions();
+
+    render(<AuthorPage data={data} />);
+
+    await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
       "Year Published (Oldest First)"
     );
@@ -60,10 +59,12 @@ describe("/shelf/authors/{slug}", () => {
     expect(screen.getByTestId("work-list")).toMatchSnapshot();
   });
 
-  it("can sort by year published with newest first", () => {
+  it("can sort by year published with newest first", async () => {
+    expect.hasAssertions();
+
     render(<AuthorPage data={data} />);
 
-    userEvent.selectOptions(
+    await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
       "Year Published (Newest First)"
     );
@@ -71,10 +72,12 @@ describe("/shelf/authors/{slug}", () => {
     expect(screen.getByTestId("work-list")).toMatchSnapshot();
   });
 
-  it("can sort by grade with Best first", () => {
+  it("can sort by grade with Best first", async () => {
+    expect.hasAssertions();
+
     render(<AuthorPage data={data} />);
 
-    userEvent.selectOptions(
+    await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
       "Grade (Best First)"
     );
@@ -82,10 +85,12 @@ describe("/shelf/authors/{slug}", () => {
     expect(screen.getByTestId("work-list")).toMatchSnapshot();
   });
 
-  it("can sort by grade with worst first", () => {
+  it("can sort by grade with worst first", async () => {
+    expect.hasAssertions();
+
     render(<AuthorPage data={data} />);
 
-    userEvent.selectOptions(
+    await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
       "Grade (Worst First)"
     );
@@ -93,15 +98,17 @@ describe("/shelf/authors/{slug}", () => {
     expect(screen.getByTestId("work-list")).toMatchSnapshot();
   });
 
-  it("can filter by year published", () => {
+  it("can filter by year published", async () => {
+    expect.hasAssertions();
+
     render(<AuthorPage data={data} />);
 
     const fieldset = screen.getByRole("group", { name: "Year Published" });
     const fromInput = within(fieldset).getByLabelText("From");
     const toInput = within(fieldset).getByLabelText("to");
 
-    userEvent.selectOptions(fromInput, "2000");
-    userEvent.selectOptions(toInput, "2000");
+    await userEvent.selectOptions(fromInput, "2000");
+    await userEvent.selectOptions(toInput, "2000");
 
     expect(screen.getByTestId("work-list")).toMatchSnapshot();
   });
