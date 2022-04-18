@@ -152,7 +152,7 @@ exports[`/reviews/{slug} renders 1`] = `
             By 
             <a
               class="authorLinkCss"
-              href="/shelf/authors/stephen-king"
+              href="/shelf/authors/stephen-king/"
             >
               Stephen King
             </a>

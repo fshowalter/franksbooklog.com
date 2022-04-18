@@ -24,6 +24,23 @@ import {
 } from "./HomePage.module.scss";
 import Pagination from "./Pagination";
 
+function AuthorLink({ author }: { author: Author }): JSX.Element {
+  let notes = null;
+
+  if (author.notes) {
+    notes = <> ({author.notes})</>;
+  }
+
+  return (
+    <>
+      <Link key={author.slug} to={`/shelf/authors/${author.slug}/`}>
+        {author.name}
+      </Link>
+      {notes}
+    </>
+  );
+}
+
 export default function HomePage({
   pageContext,
   data,
@@ -81,12 +98,7 @@ export default function HomePage({
                     <p className={reviewCreditsCss}>
                       {toSentenceArray(
                         work.authors.map((author) => (
-                          <Link
-                            key={author.slug}
-                            to={`/shelf/authors/${author.slug}/`}
-                          >
-                            {author.name}
-                          </Link>
+                          <AuthorLink key={author.slug} author={author} />
                         ))
                       )}
                     </p>{" "}
@@ -139,6 +151,12 @@ export default function HomePage({
   );
 }
 
+interface Author {
+  name: string;
+  slug: string;
+  notes: string | null;
+}
+
 interface PageQueryResult {
   update: {
     nodes: {
@@ -153,11 +171,7 @@ interface PageQueryResult {
         title: string;
         year: number;
         kind: string;
-        authors: {
-          name: string;
-          slug: string;
-          notes: string | null;
-        }[];
+        authors: Author[];
         cover: {
           childImageSharp: {
             gatsbyImageData: IGatsbyImageData;
