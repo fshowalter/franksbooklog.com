@@ -191,8 +191,7 @@
 }
 
 .reviewCreditsCss {
-  // color: var(--color-fg-subtle);
-  color: var(--color-fg-accent);
+  color: var(--color-fg-subtle);
   font-size: 16px;
   font-weight: 400;
   grid-area: credits;
@@ -200,7 +199,9 @@
   line-height: layout.$spacer-6;
   text-align: left;
 
-  // text-transform: uppercase;
+  a {
+    color: var(--color-fg-accent);
+  }
 }
 
 .reviewGradeCss {

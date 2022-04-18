@@ -54,6 +54,27 @@ function buildStructuredData(pageData: PageQueryResult) {
   };
 }
 
+function AuthorLink({ author }: { author: Author }): JSX.Element {
+  let notes = null;
+
+  if (author.notes) {
+    notes = <> ({author.notes})</>;
+  }
+
+  return (
+    <>
+      <Link
+        key={author.slug}
+        className={authorLinkCss}
+        to={`/shelf/authors/${author.slug}/`}
+      >
+        {author.name}
+      </Link>
+      {notes}
+    </>
+  );
+}
+
 /**
  * Renders a review page.
  */
@@ -81,17 +102,9 @@ export default function ReviewPage({
           <div className={headerTitleCss}>{work.title}</div>
           <div className={headerAuthorCss}>
             By{" "}
-            {work.authors.map((author) => {
-              return (
-                <Link
-                  className={authorLinkCss}
-                  to={`/shelf/authors/${author.slug}`}
-                  key={author.slug}
-                >
-                  {author.name}
-                </Link>
-              );
-            })}
+            {work.authors.map((author) => (
+              <AuthorLink key={author.slug} author={author} />
+            ))}
           </div>
           <div className={headerKindCss}>{work.kind}</div>
           <div className={headerYearCss}>First published in {work.year}.</div>
@@ -199,16 +212,18 @@ interface PageQueryResult {
   work: Work;
 }
 
+interface Author {
+  name: string;
+  slug: string;
+  notes: string | null;
+}
+
 export interface Work {
   title: string;
   year: number;
   kind: string;
   lastReviewGrade: string;
-  authors: {
-    name: string;
-    slug: string;
-    notes: string | null;
-  }[];
+  authors: Author[];
   cover: {
     childImageSharp: {
       gatsbyImageData: IGatsbyImageData;
