@@ -75,6 +75,39 @@ function AuthorLink({ author }: { author: Author }): JSX.Element {
   );
 }
 
+function ReadingTime({ review }: { review: Review }): JSX.Element {
+  if (review.readingTime === 1) {
+    return <dd>{review.dateFinishedPretty}</dd>;
+  }
+
+  return (
+    <dd className={readingTimeContainerCss}>
+      {review.readingTime}
+      {" Days"}
+      <div className={progressContainerCss}>
+        <div>
+          {review.frontmatter.progress[0].date}
+          {" – "}
+          <span className={progressMilestoneCss}>Started</span>
+        </div>
+        {review.frontmatter.progress.map((progress) => {
+          return (
+            <div key={progress.date}>
+              {progress.date}
+              {" – "}
+              {progress.percent === 100 ? (
+                <span className={progressMilestoneCss}>Finished</span>
+              ) : (
+                `${progress.percent}%`
+              )}
+            </div>
+          );
+        })}
+      </div>
+    </dd>
+  );
+}
+
 /**
  * Renders a review page.
  */
@@ -158,37 +191,10 @@ export default function ReviewPage({
                         />
                         )
                       </dd>
-                      <dt className={termCss}>Reading Time</dt>
-                      <dd className={readingTimeContainerCss}>
-                        {review.readingTime}{" "}
-                        {review.readingTime === 1 ? "Day" : "Days"}
-                        {review.readingTime !== 1 && (
-                          <div className={progressContainerCss}>
-                            <div>
-                              {review.frontmatter.progress[0].date}
-                              {" – "}
-                              <span className={progressMilestoneCss}>
-                                Started
-                              </span>
-                            </div>
-                            {review.frontmatter.progress.map((progress) => {
-                              return (
-                                <div key={progress.date}>
-                                  {progress.date}
-                                  {" – "}
-                                  {progress.percent === 100 ? (
-                                    <span className={progressMilestoneCss}>
-                                      Finished
-                                    </span>
-                                  ) : (
-                                    `${progress.percent}%`
-                                  )}
-                                </div>
-                              );
-                            })}
-                          </div>
-                        )}
-                      </dd>
+                      <dt className={termCss}>
+                        {review.readingTime === 1 ? "Read On" : "Reading Time"}
+                      </dt>
+                      <ReadingTime review={review} />
                     </dl>
                   </div>
                 </aside>
@@ -218,6 +224,24 @@ interface Author {
   notes: string | null;
 }
 
+interface Review {
+  frontmatter: {
+    grade: string;
+    edition: string;
+    sequence: number;
+    progress: {
+      date: string;
+      percent: number;
+    }[];
+  };
+  editionNotesHtml: string;
+  readingTime: number;
+  linkedHtml: string;
+  dateFinished: string;
+  dateFinishedIso: string;
+  dateFinishedPretty: string;
+}
+
 export interface Work {
   title: string;
   year: number;
@@ -236,22 +260,7 @@ export interface Work {
       };
     };
   };
-  reviews: {
-    frontmatter: {
-      grade: string;
-      edition: string;
-      sequence: number;
-      progress: {
-        date: string;
-        percent: number;
-      }[];
-    };
-    editionNotesHtml: string;
-    readingTime: number;
-    linkedHtml: string;
-    dateFinished: string;
-    dateFinishedIso: string;
-  }[];
+  reviews: Review[];
 }
 
 export const pageQuery = graphql`
@@ -280,6 +289,7 @@ export const pageQuery = graphql`
         readingTime
         dateFinished(formatString: "DD MMM, YYYY")
         dateFinishedIso: dateFinished(formatString: "Y-MM-DD")
+        dateFinishedPretty: dateFinished(formatString: "dddd MMMM D, YYYY")
         linkedHtml
       }
       cover {
