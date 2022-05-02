@@ -3,87 +3,71 @@
 
 .containerCss {
   display: grid;
-  grid-template-areas: ". list ." ". pagination .";
-  grid-template-columns:
-    minmax(var(--layout-grid-margin), 1fr) minmax(auto, 520px)
-    minmax(var(--layout-grid-margin), 1fr);
-  margin-top: -1px;
-
-  @media (min-width: breakpoints.$tablet) {
-    grid-template-columns:
-      minmax(var(--layout-grid-margin), 1fr) auto
-      minmax(var(--layout-grid-margin), 1fr);
-  }
-
-  @media (min-width: breakpoints.$desktop) {
-    grid-template-areas: "list" "pagination";
-    grid-template-columns: unset;
-  }
-
-  @media (min-width: breakpoints.$max) {
-    border-top: 0;
-  }
+  grid-template-areas: "list" "pagination";
 }
 
 .listCss {
   grid-area: list;
 
   @media (min-width: breakpoints.$desktop) {
-    column-gap: layout.$spacer-4;
     display: grid;
-    grid-template-columns: unset;
-    padding-top: layout.$spacer-6;
-    row-gap: layout.$spacer-6;
+    grid-template-columns: 1fr;
+    margin: 0 calc(-1 * var(--layout-grid-margin));
+    padding: layout.$spacer-7 0;
   }
 
   @media (min-width: breakpoints.$max) {
+    margin: 0 -1 * layout.$spacer-4 0 calc(-1 * var(--layout-grid-margin));
     padding-top: 0;
   }
 }
 
 .listItemCss {
-  @media (min-width: breakpoints.$desktop) {
-    border-bottom: 0 !important;
-    display: flex;
+  &:nth-child(even) {
+    background-color: var(--color-bg-subtle);
   }
 
-  @media (min-width: breakpoints.$max) {
+  display: grid;
+  grid-template-areas: ". article .";
+  grid-template-columns:
+    minmax(var(--layout-grid-margin), 1fr) minmax(auto, 768px)
+    minmax(var(--layout-grid-margin), 1fr);
+
+  @media (min-width: breakpoints.$desktop) {
+    display: flex;
+    padding: layout.$spacer-7 layout.$spacer-8;
+
     &:first-of-type {
       padding-top: 0;
     }
+  }
+
+  @media (min-width: breakpoints.$max) {
+    padding-right: layout.$spacer-5;
   }
 }
 
 .reviewCss {
   display: grid;
-  grid-template-areas: "date" "image" "header" "body" "border";
+  grid-area: article;
+  grid-template-areas: "." "date" "image" "header" "body" ".";
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto 1fr;
+  grid-template-rows: layout.$spacer-4 auto auto auto 1fr layout.$spacer-6;
   justify-items: center;
   position: relative;
 
-  &::after {
-    border-bottom: solid 1px var(--color-border-default);
-    content: "";
-    display: block;
-    grid-area: border;
-    height: layout.$spacer-6;
-    justify-self: center;
-    width: 100%;
-  }
-
   @media (min-width: breakpoints.$tablet) {
     column-gap: layout.$spacer-8;
-    grid-template-areas: "date header" "image header " "image body" "border border";
+    grid-template-areas: ". ." "date header" "image header " "image body" ". .";
     grid-template-columns: auto 1fr;
-    grid-template-rows: auto 1fr;
+    grid-template-rows: layout.$spacer-4 auto auto 1fr layout.$spacer-6;
     justify-items: unset;
     width: 100%;
   }
 
   @media (min-width: breakpoints.$desktop) {
     column-gap: layout.$spacer-8;
-    grid-template-areas: "date image header " ". image body" "border border border";
+    grid-template-areas: "date image header " ". image body" ". . .";
     grid-template-columns: auto auto 1fr;
     grid-template-rows: auto 1fr;
     width: 100%;
@@ -97,7 +81,7 @@
   grid-area: image;
   justify-self: flex-start;
   line-height: 0;
-  margin: 0 auto 5px;
+  margin: 0 auto 4px;
 
   @media (min-width: breakpoints.$tablet) {
     margin-bottom: 4.5px;
