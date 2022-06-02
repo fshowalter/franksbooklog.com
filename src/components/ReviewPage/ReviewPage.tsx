@@ -192,7 +192,7 @@ export default function ReviewPage({
                         )
                       </dd>
                       <dt className={termCss}>
-                        {review.readingTime === 1 ? "Read On" : "Reading Time"}
+                        {review.readingTime === 1 ? "Read On" : "Read Over"}
                       </dt>
                       <ReadingTime review={review} />
                     </dl>

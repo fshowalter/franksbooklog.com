@@ -46,10 +46,11 @@
 
 .reviewCss {
   @media (min-width: breakpoints.$desktop) {
+    align-items: start;
     display: grid;
     grid-template-areas: "slug . meta" "review . meta";
     grid-template-columns: minmax(auto, 550px) layout.$spacer-10 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: auto 1fr;
     max-width: unset;
     padding: 0;
     text-align: left;
@@ -221,8 +222,6 @@
   @media (min-width: breakpoints.$desktop) {
     grid-area: review;
     margin-top: layout.$spacer-3;
-
-    // padding-left: calc(121px + layout.$spacer-3); // layout.$spacer-5;
     position: relative;
   }
 }
@@ -235,9 +234,6 @@
 
   @media (min-width: breakpoints.$desktop) {
     align-self: flex-start;
-
-    // background-color: unset;
-    // border: none;
     margin: unset;
   }
 }
