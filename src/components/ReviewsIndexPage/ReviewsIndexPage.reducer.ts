@@ -103,6 +103,7 @@ interface FilterGradeAction {
   type: ActionTypes.FILTER_GRADE;
   /** The values to filter on. */
   values: [number, number];
+  includeAbandoned: boolean;
 }
 
 /** Action to filter by read year. */
@@ -255,6 +256,9 @@ export default function reducer(state: State, action: Action): State {
         ...state.filters,
         grade: (review: Review) => {
           const gradeValue = review.gradeValue;
+          if (gradeValue == null) {
+            return action.includeAbandoned;
+          }
           return (
             gradeValue >= action.values[0] && gradeValue <= action.values[1]
           );

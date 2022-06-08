@@ -102,12 +102,14 @@ export default function HomePage({
                         ))
                       )}
                     </p>{" "}
-                    <Grade
-                      grade={review.frontmatter.grade}
-                      className={reviewGradeCss}
-                      width={140}
-                      height={28}
-                    />
+                    {review.frontmatter.grade && (
+                      <Grade
+                        grade={review.frontmatter.grade}
+                        className={reviewGradeCss}
+                        width={140}
+                        height={28}
+                      />
+                    )}
                   </header>
                   <Link
                     rel="canonical"

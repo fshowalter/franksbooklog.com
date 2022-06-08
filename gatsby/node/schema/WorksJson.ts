@@ -41,6 +41,7 @@ const WorksJson = {
   interfaces: ["Node"],
   fields: {
     title: "String!",
+    subtitle: "String",
     year: "Int!",
     sort_title: "String!",
     slug: "String!",

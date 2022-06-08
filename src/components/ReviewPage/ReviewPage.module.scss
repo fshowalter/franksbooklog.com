@@ -109,8 +109,13 @@
   width: 50%;
 }
 
-.reviewDateIconCss {
-  display: none;
+.reviewAbandonedCss {
+  font-weight: bold;
+  text-transform: uppercase;
+
+  @media (min-width: breakpoints.$desktop) {
+    margin: 0 0.5ch 0 0;
+  }
 }
 
 .slugContainerCss {
@@ -158,10 +163,27 @@
   font-size: 32px;
   grid-area: title;
   line-height: layout.$spacer-5;
+  text-align: center;
+
+  @media (min-width: breakpoints.$tablet) {
+    text-align: left;
+  }
 
   @media (min-width: breakpoints.$desktop) {
     font-size: 36px;
     line-height: layout.$spacer-6;
+  }
+}
+
+.headerSubtitleCss {
+  color: var(--color-fg-subtle);
+  font-size: 16px;
+  grid-area: subtitle;
+  line-height: layout.$spacer-4;
+
+  @media (min-width: breakpoints.$desktop) {
+    font-size: 24px;
+    line-height: layout.$spacer-5;
   }
 }
 
@@ -170,18 +192,20 @@
   grid-area: author;
 }
 
-.headerYearCss {
-  color: var(--color-fg-subtle);
-  font-size: 16px;
-  grid-area: year;
-}
-
 .headerKindCss {
+  align-items: center;
   color: var(--color-fg-subtle);
+  display: flex;
   font-size: 14px;
   grid-area: kind;
   letter-spacing: 1px;
   text-transform: uppercase;
+}
+
+.headerYearCss {
+  font-size: 16px;
+  letter-spacing: normal;
+  margin-right: 1ch;
 }
 
 .headerContainerCss {
@@ -229,8 +253,9 @@
 .reviewMetaCss {
   background-color: var(--color-bg-subtle);
   grid-area: meta;
-  margin: layout.$spacer-7 0;
-  padding: layout.$spacer-2 layout.$spacer-6 layout.$spacer-6;
+  margin: layout.$spacer-7 calc(-1 * var(--layout-grid-margin));
+  min-width: 300px;
+  padding: layout.$spacer-2 var(--layout-grid-margin) layout.$spacer-6;
 
   @media (min-width: breakpoints.$desktop) {
     align-self: flex-start;

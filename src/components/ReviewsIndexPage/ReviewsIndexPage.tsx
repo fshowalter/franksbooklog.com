@@ -164,10 +164,11 @@ export default function ReviewsIndexPage({
               />
               <GradeInput
                 label="Grade"
-                onChange={(values) =>
+                onChange={(values, includeAbandoned) =>
                   dispatch({
                     type: ActionTypes.FILTER_GRADE,
                     values,
+                    includeAbandoned,
                   })
                 }
               />
