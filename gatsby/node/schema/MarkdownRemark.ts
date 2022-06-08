@@ -26,11 +26,12 @@ interface FrontMatter {
   sequence: number;
   slug: string;
   edition_notes: string;
-  grade: string;
+  grade: string | null;
+  abandoned_on: Date | null;
   edition: string;
-  progress: {
+  timeline: {
     date: Date;
-    percent: number;
+    progress: number | "Finished" | "Abandoned";
   }[];
 }
 
@@ -114,6 +115,12 @@ const MarkdownRemark = {
         return null;
       },
     },
+    isAudiobook: {
+      type: "Boolean!",
+      resolve: (source: MarkdownNode) => {
+        return source.frontmatter.edition === "Audible";
+      },
+    },
     editionNotesHtml: {
       type: "String",
       resolve: async (
@@ -190,7 +197,7 @@ const MarkdownRemark = {
         dateformat: {},
       },
       resolve: (source: MarkdownNode) => {
-        return source.frontmatter.progress.reduce((prev, current) =>
+        return source.frontmatter.timeline.reduce((prev, current) =>
           prev.date < current.date ? prev : current
         ).date;
       },
@@ -215,7 +222,7 @@ const MarkdownRemark = {
           return null;
         }
 
-        return source.frontmatter.progress
+        return source.frontmatter.timeline
           .reduce((prev, current) =>
             prev.date > current.date ? prev : current
           )
@@ -228,9 +235,18 @@ const MarkdownRemark = {
         dateformat: {},
       },
       resolve: (source: MarkdownNode) => {
-        return source.frontmatter.progress.reduce((prev, current) =>
+        return source.frontmatter.timeline.reduce((prev, current) =>
           prev.date > current.date ? prev : current
         ).date;
+      },
+    },
+    abandoned: {
+      type: "Boolean",
+      resolve: (source: MarkdownNode) => {
+        return (
+          source.frontmatter.timeline[source.frontmatter.timeline.length - 1]
+            .progress == "Abandoned"
+        );
       },
     },
     readingTime: {
@@ -239,9 +255,9 @@ const MarkdownRemark = {
         dateformat: {},
       },
       resolve: (source: MarkdownNode) => {
-        const start = source.frontmatter.progress[0].date;
+        const start = source.frontmatter.timeline[0].date;
         const end =
-          source.frontmatter.progress[source.frontmatter.progress.length - 1]
+          source.frontmatter.timeline[source.frontmatter.timeline.length - 1]
             .date;
 
         if (start === end) {

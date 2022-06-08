@@ -2,11 +2,23 @@
 import { render } from "@testing-library/react";
 import React from "react";
 import ReviewPage from "./ReviewPage";
-import data from "./ReviewPage.fixtures";
+import data, { abandonedBook, audioBook } from "./ReviewPage.fixtures";
 
 describe("/reviews/{slug}", () => {
   it("renders", () => {
     const { asFragment } = render(<ReviewPage data={data} />);
+
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+  it("renders for audio book", () => {
+    const { asFragment } = render(<ReviewPage data={audioBook} />);
+
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+  it("renders for abandoned book", () => {
+    const { asFragment } = render(<ReviewPage data={abandonedBook} />);
 
     expect(asFragment()).toMatchSnapshot();
   });

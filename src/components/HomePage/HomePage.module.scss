@@ -97,8 +97,8 @@
   align-self: flex-start;
   display: grid;
   grid-area: header;
-  grid-template-areas: "kind" "heading" "credits" "." "grade";
-  grid-template-rows: auto auto auto layout.$spacer-3 auto;
+  grid-template-areas: "kind" "heading" "credits" "." "grade" ".";
+  grid-template-rows: auto auto auto layout.$spacer-2 auto layout.$spacer-1;
   justify-content: center;
   justify-items: center;
 

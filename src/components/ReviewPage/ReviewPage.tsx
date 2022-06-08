@@ -2,7 +2,6 @@ import { graphql, Link } from "gatsby";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import React from "react";
 import toSentenceArray from "../../utils/to-sentence-array";
-import DateIcon from "../DateIcon";
 import Grade from "../Grade";
 import Layout from "../Layout";
 import RenderedMarkdown from "../RenderedMarkdown";
@@ -14,14 +13,15 @@ import {
   headerAuthorCss,
   headerContainerCss,
   headerKindCss,
+  headerSubtitleCss,
   headerTitleCss,
   headerYearCss,
   progressContainerCss,
   progressMilestoneCss,
   readingTimeContainerCss,
+  reviewAbandonedCss,
   reviewContentCss,
   reviewCss,
-  reviewDateIconCss,
   reviewGradeCss,
   reviewMetaCss,
   reviewsListCss,
@@ -41,6 +41,8 @@ function buildStructuredData(pageData: PageQueryResult) {
     F: 1,
   };
 
+  const lastReviewGrade = pageData.work.lastReviewGrade ?? "";
+
   return {
     "@context": "http://schema.org",
     "@type": "AggregateRating",
@@ -50,7 +52,7 @@ function buildStructuredData(pageData: PageQueryResult) {
       image: pageData.work.seoImage.childImageSharp.resize.src,
     },
     reviewCount: pageData.work.reviews.length,
-    ratingValue: gradeMap[pageData.work.lastReviewGrade[0]],
+    ratingValue: gradeMap[lastReviewGrade] || 0,
   };
 }
 
@@ -76,35 +78,45 @@ function AuthorLink({ author }: { author: Author }): JSX.Element {
 }
 
 function ReadingTime({ review }: { review: Review }): JSX.Element {
+  const verb = review.isAudiobook ? "Listened to" : "Read";
+
   if (review.readingTime === 1) {
-    return <dd>{review.dateFinishedPretty}</dd>;
+    return (
+      <>
+        <dt className={termCss}>{`${verb} on`}</dt>
+        <dd>{review.dateFinishedPretty}</dd>;
+      </>
+    );
   }
 
   return (
-    <dd className={readingTimeContainerCss}>
-      {review.readingTime}
-      {" Days"}
-      <div className={progressContainerCss}>
-        <div>
-          {review.frontmatter.progress[0].date}
-          {" – "}
-          <span className={progressMilestoneCss}>Started</span>
+    <>
+      <dt className={termCss}>{`${verb} Over`}</dt>
+      <dd className={readingTimeContainerCss}>
+        {review.readingTime}
+        {" Days"}
+        <div className={progressContainerCss}>
+          <div>
+            {review.frontmatter.timeline[0].date}
+            {" – "}
+            <span className={progressMilestoneCss}>Started</span>
+          </div>
+          {review.frontmatter.timeline.map((entry, index) => {
+            return (
+              <div key={entry.date}>
+                {entry.date}
+                {" – "}
+                {index === review.frontmatter.timeline.length - 1 ? (
+                  <span className={progressMilestoneCss}>{entry.progress}</span>
+                ) : (
+                  `${entry.progress}`
+                )}
+              </div>
+            );
+          })}
         </div>
-        {review.frontmatter.progress.map((progress) => {
-          return (
-            <div key={progress.date}>
-              {progress.date}
-              {" – "}
-              {progress.percent === 100 ? (
-                <span className={progressMilestoneCss}>Finished</span>
-              ) : (
-                `${progress.percent}%`
-              )}
-            </div>
-          );
-        })}
-      </div>
-    </dd>
+      </dd>
+    </>
   );
 }
 
@@ -132,15 +144,22 @@ export default function ReviewPage({
       />
       <main id="top" className={containerCss}>
         <header className={headerContainerCss}>
-          <div className={headerTitleCss}>{work.title}</div>
+          <div className={headerTitleCss}>
+            {work.title}
+            {work.subtitle && (
+              <div className={headerSubtitleCss}>{work.subtitle}</div>
+            )}
+          </div>
+
           <div className={headerAuthorCss}>
             By{" "}
             {work.authors.map((author) => (
               <AuthorLink key={author.slug} author={author} />
             ))}
           </div>
-          <div className={headerKindCss}>{work.kind}</div>
-          <div className={headerYearCss}>First published in {work.year}.</div>
+          <div className={headerKindCss}>
+            <span className={headerYearCss}>{work.year}</span> | {work.kind}
+          </div>
           {work.cover && (
             <GatsbyImage
               image={work.cover.childImageSharp.gatsbyImageData}
@@ -163,11 +182,15 @@ export default function ReviewPage({
                   className={slugContainerCss}
                   id={review.frontmatter.sequence.toString()}
                 >
-                  <DateIcon className={reviewDateIconCss} />{" "}
-                  <Grade
-                    grade={review.frontmatter.grade}
-                    className={reviewGradeCss}
-                  />
+                  {review.frontmatter.grade ? (
+                    <Grade
+                      grade={review.frontmatter.grade}
+                      className={reviewGradeCss}
+                    />
+                  ) : (
+                    <span className={reviewAbandonedCss}>Abandoned</span>
+                  )}
+
                   <div>
                     <span className={slugOnCss}> on </span>
                     <span className={slugDateCss}>{review.dateFinished}</span>
@@ -178,7 +201,7 @@ export default function ReviewPage({
                   // eslint-disable-next-line react/no-danger
                   text={review.linkedHtml}
                 />
-                <aside id="credits" className={reviewMetaCss}>
+                <aside className={reviewMetaCss}>
                   <div>
                     <dl>
                       <dt className={termCss}>Edition</dt>
@@ -191,9 +214,6 @@ export default function ReviewPage({
                         />
                         )
                       </dd>
-                      <dt className={termCss}>
-                        {review.readingTime === 1 ? "Read On" : "Read Over"}
-                      </dt>
                       <ReadingTime review={review} />
                     </dl>
                   </div>
@@ -226,16 +246,17 @@ interface Author {
 
 interface Review {
   frontmatter: {
-    grade: string;
+    grade: string | null;
     edition: string;
     sequence: number;
-    progress: {
+    timeline: {
       date: string;
-      percent: number;
+      progress: number | string;
     }[];
   };
   editionNotesHtml: string;
   readingTime: number;
+  isAudiobook: boolean;
   linkedHtml: string;
   dateFinished: string;
   dateFinishedIso: string;
@@ -244,9 +265,10 @@ interface Review {
 
 export interface Work {
   title: string;
+  subtitle: string | null;
   year: number;
   kind: string;
-  lastReviewGrade: string;
+  lastReviewGrade: string | null;
   authors: Author[];
   cover: {
     childImageSharp: {
@@ -267,6 +289,7 @@ export const pageQuery = graphql`
   query ($slug: String!) {
     work: worksJson(slug: { eq: $slug }) {
       title
+      subtitle
       year
       kind
       lastReviewGrade
@@ -280,11 +303,12 @@ export const pageQuery = graphql`
           grade
           sequence
           edition
-          progress {
+          timeline {
             date(formatString: "DD MMM, YYYY")
-            percent
+            progress
           }
         }
+        isAudiobook
         editionNotesHtml
         readingTime
         dateFinished(formatString: "DD MMM, YYYY")
