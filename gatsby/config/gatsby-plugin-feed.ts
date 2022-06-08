@@ -77,7 +77,13 @@ const gradeMap: Record<string, string> = {
 };
 
 function starsForGrade(grade: string) {
-  if (grade in gradeMap) {
+  if (!grade) {
+    return "";
+  }
+
+  const gradeIndex = grade[0];
+
+  if (gradeIndex in gradeMap) {
     return gradeMap[grade];
   }
 
@@ -85,7 +91,7 @@ function starsForGrade(grade: string) {
 }
 
 function addMetaToExcerpt(excerpt: string, review: Review) {
-  const meta = `${starsForGrade(review.frontmatter.grade[0])}`;
+  const meta = `${starsForGrade(review.frontmatter.grade)}`;
   return `<p>${meta}</p>${excerpt}`;
 }
 
