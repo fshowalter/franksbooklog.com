@@ -1,11 +1,11 @@
 import { graphql, Link } from "gatsby";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
-import React from "react";
 import toSentenceArray from "../../utils/to-sentence-array";
 import Grade from "../Grade";
 import Layout from "../Layout";
 import RenderedMarkdown from "../RenderedMarkdown";
 import Seo from "../Seo";
+
 import {
   authorLinkCss,
   containerCss,
@@ -33,6 +33,10 @@ import {
 } from "./ReviewPage.module.scss";
 
 function buildStructuredData(pageData: PageQueryResult) {
+  if (!pageData.work.lastReviewGrade) {
+    return null;
+  }
+
   const gradeMap: { [index: string]: number } = {
     A: 5,
     B: 4,
@@ -40,8 +44,6 @@ function buildStructuredData(pageData: PageQueryResult) {
     D: 2,
     F: 1,
   };
-
-  const lastReviewGrade = pageData.work.lastReviewGrade ?? "";
 
   return {
     "@context": "http://schema.org",
@@ -52,7 +54,7 @@ function buildStructuredData(pageData: PageQueryResult) {
       image: pageData.work.seoImage.childImageSharp.resize.src,
     },
     reviewCount: pageData.work.reviews.length,
-    ratingValue: gradeMap[lastReviewGrade] || 0,
+    ratingValue: gradeMap[pageData.work.lastReviewGrade[0]],
   };
 }
 
