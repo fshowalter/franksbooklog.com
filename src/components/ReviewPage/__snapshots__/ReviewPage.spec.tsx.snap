@@ -419,7 +419,7 @@ exports[`/reviews/{slug} renders 1`] = `
       <script
         type="application/ld+json"
       >
-        {"@context":"http://schema.org","@type":"AggregateRating","itemReviewed":{"@type":"Book","name":"On Writing","image":"/static/7008abb3d42ce4dd5b1b206c6503d358/8c3c2/on-writing-by-stephen-king.jpg"},"reviewCount":1,"ratingValue":0}
+        {"@context":"http://schema.org","@type":"AggregateRating","itemReviewed":{"@type":"Book","name":"On Writing","image":"/static/7008abb3d42ce4dd5b1b206c6503d358/8c3c2/on-writing-by-stephen-king.jpg"},"reviewCount":1,"ratingValue":5}
       </script>
     </div>
     <footer
@@ -827,11 +827,6 @@ exports[`/reviews/{slug} renders for abandoned book 1`] = `
           </li>
         </ul>
       </main>
-      <script
-        type="application/ld+json"
-      >
-        {"@context":"http://schema.org","@type":"AggregateRating","itemReviewed":{"@type":"Book","name":"Living with a SEAL","image":"/static/e1236eaa1182e6feba91d9ee7d5b79f3/8c3c2/living-with-a-seal-by-jesse-itzler.jpg"},"reviewCount":1,"ratingValue":0}
-      </script>
     </div>
     <footer
       class="footerCss"
@@ -1264,7 +1259,7 @@ exports[`/reviews/{slug} renders for audio book 1`] = `
       <script
         type="application/ld+json"
       >
-        {"@context":"http://schema.org","@type":"AggregateRating","itemReviewed":{"@type":"Book","name":"Total Recall","image":"/static/abd5eed85c616ab48da38d45bae78b90/8c3c2/total-recall-by-arnold-schwarzenegger.jpg"},"reviewCount":1,"ratingValue":0}
+        {"@context":"http://schema.org","@type":"AggregateRating","itemReviewed":{"@type":"Book","name":"Total Recall","image":"/static/abd5eed85c616ab48da38d45bae78b90/8c3c2/total-recall-by-arnold-schwarzenegger.jpg"},"reviewCount":1,"ratingValue":3}
       </script>
     </div>
     <footer
