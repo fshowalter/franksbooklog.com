@@ -154,7 +154,7 @@ exports[`/reviews/{slug} renders 1`] = `
           <div
             class="headerAuthorCss"
           >
-            By 
+            by 
             <a
               class="authorLinkCss"
               href="/shelf/authors/stephen-king/"
@@ -643,7 +643,7 @@ exports[`/reviews/{slug} renders for abandoned book 1`] = `
           <div
             class="headerAuthorCss"
           >
-            By 
+            by 
             <a
               class="authorLinkCss"
               href="/shelf/authors/jesse-itzler/"
@@ -1049,7 +1049,7 @@ exports[`/reviews/{slug} renders for audio book 1`] = `
           <div
             class="headerAuthorCss"
           >
-            By 
+            by 
             <a
               class="authorLinkCss"
               href="/shelf/authors/arnold-schwarzenegger/"
