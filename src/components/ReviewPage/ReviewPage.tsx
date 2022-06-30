@@ -86,7 +86,7 @@ function ReadingTime({ review }: { review: Review }): JSX.Element {
     return (
       <>
         <dt className={termCss}>{`${verb} on`}</dt>
-        <dd>{review.dateFinishedPretty}</dd>;
+        <dd>{review.dateFinishedPretty}</dd>
       </>
     );
   }
@@ -154,10 +154,12 @@ export default function ReviewPage({
           </div>
 
           <div className={headerAuthorCss}>
-            By{" "}
-            {work.authors.map((author) => (
-              <AuthorLink key={author.slug} author={author} />
-            ))}
+            by{" "}
+            {toSentenceArray(
+              work.authors.map((author) => (
+                <AuthorLink key={author.slug} author={author} />
+              ))
+            )}
           </div>
           <div className={headerKindCss}>
             <span className={headerYearCss}>{work.year}</span> | {work.kind}
