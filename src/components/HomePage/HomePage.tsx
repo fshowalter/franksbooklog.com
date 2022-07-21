@@ -1,6 +1,6 @@
 import { graphql, Link } from "gatsby";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
-import React, { useRef } from "react";
+import { useRef } from "react";
 import toSentenceArray from "../../utils/to-sentence-array";
 import Grade from "../Grade";
 import Layout from "../Layout";
@@ -96,6 +96,7 @@ export default function HomePage({
                       </Link>
                     </h2>
                     <p className={reviewCreditsCss}>
+                      by{" "}
                       {toSentenceArray(
                         work.authors.map((author) => (
                           <AuthorLink key={author.slug} author={author} />
