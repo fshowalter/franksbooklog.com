@@ -1,15 +1,15 @@
 import { graphql, Link } from "gatsby";
 import { IGatsbyImageData } from "gatsby-plugin-image";
-import React, { useReducer } from "react";
+import { useReducer } from "react";
 import Button from "../Button";
 import { Cover, CoverList } from "../CoverList";
 import DebouncedInput from "../DebouncedInput";
 import Fieldset from "../Fieldset";
 import FilterPageHeader from "../FilterPageHeader";
+import HeadBuilder from "../HeadBuilder";
 import Layout from "../Layout";
 import ProgressGraph from "../ProgressGraph";
 import { SelectField, SelectOptions } from "../SelectField";
-import Seo from "../Seo";
 import YearInput from "../YearInput";
 import {
   avatarCss,
@@ -107,8 +107,21 @@ function AuthorProgress({
   );
 }
 
+export function Head({ data }: { data: PageQueryResult }): JSX.Element {
+  const author = data.author.nodes[0];
+
+  return (
+    <HeadBuilder
+      pageTitle={author.name}
+      description={`A sortable and filterable list of reviews of works by ${author.name}.`}
+      image={null}
+      article={false}
+    />
+  );
+}
+
 /**
- * Renders a page for a watchlist director.
+ * Renders a page for a work author.
  */
 export default function AuthorPage({
   data,
@@ -156,12 +169,6 @@ export default function AuthorPage({
 
   return (
     <Layout>
-      <Seo
-        pageTitle={author.name}
-        description={`A sortable and filterable list of reviews of works by ${author.name}.`}
-        image={null}
-        article={false}
-      />
       <main className={containerCss}>
         <div className={leftCss}>
           <FilterPageHeader

@@ -1,8 +1,7 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { act, render, screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import React from "react";
-import ShelfPage from "./ShelfPage";
+import ShelfPage, { Head } from "./ShelfPage";
 import data from "./ShelfPage.fixtures";
 
 describe("/shelf", () => {
@@ -12,17 +11,10 @@ describe("/shelf", () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
-  // Helmet uses requestAnimationFrame to ensure DOM is synced.
-  // https://github.com/nfl/react-helmet/blob/master/test/HelmetDeclarativeTest.js
-  // eslint-disable-next-line jest/no-done-callback
-  it("sets page title", (done) => {
-    expect.hasAssertions();
-    render(<ShelfPage data={data} />);
+  it("sets page title", () => {
+    render(<Head />);
 
-    requestAnimationFrame(() => {
-      expect(document.title).toStrictEqual("The Shelf");
-      done();
-    });
+    expect(document.title).toStrictEqual("The Shelf");
   });
 
   it("can filter by title", async () => {

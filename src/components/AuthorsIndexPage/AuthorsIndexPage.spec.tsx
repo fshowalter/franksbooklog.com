@@ -1,8 +1,7 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { act, render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import React from "react";
-import AuthorsIndexPage from "./AuthorsIndexPage";
+import AuthorsIndexPage, { Head } from "./AuthorsIndexPage";
 import data from "./AuthorsIndexPage.fixtures";
 
 describe("/shelf/authors/", () => {
@@ -39,16 +38,9 @@ describe("/shelf/authors/", () => {
     expect(screen.getByTestId("author-list")).toMatchSnapshot();
   });
 
-  // Helmet uses requestAnimationFrame to ensure DOM is synced.
-  // https://github.com/nfl/react-helmet/blob/master/test/HelmetDeclarativeTest.js
-  // eslint-disable-next-line jest/no-done-callback
-  it("sets page title", (done) => {
-    expect.hasAssertions();
-    render(<AuthorsIndexPage data={data} />);
+  it("sets page title", () => {
+    render(<Head />);
 
-    requestAnimationFrame(() => {
-      expect(document.title).toStrictEqual("Shelf Authors");
-      done();
-    });
+    expect(document.title).toStrictEqual("Authors");
   });
 });

@@ -1,15 +1,15 @@
 import { graphql } from "gatsby";
 import { IGatsbyImageData } from "gatsby-plugin-image";
-import React, { useReducer, useRef } from "react";
+import { useReducer, useRef } from "react";
 import Button from "../Button";
 import { Cover, CoverList } from "../CoverList";
 import DebouncedInput from "../DebouncedInput/DebouncedInput";
 import Fieldset from "../Fieldset";
 import FilterPageHeader from "../FilterPageHeader";
 import GradeInput from "../GradeInput";
+import HeadBuilder from "../HeadBuilder";
 import Layout from "../Layout";
 import { SelectField, SelectOptions } from "../SelectField";
-import Seo from "../Seo";
 import YearInput from "../YearInput";
 import {
   calloutCss,
@@ -93,6 +93,17 @@ function groupReviews({
   return groupedReviews;
 }
 
+export function Head(): JSX.Element {
+  return (
+    <HeadBuilder
+      pageTitle="Reviews"
+      description="A sortable and filterable list of every book I've reviewed since 2022."
+      image={null}
+      article={false}
+    />
+  );
+}
+
 /**
  * Renders the reviews page.
  */
@@ -118,12 +129,6 @@ export default function ReviewsIndexPage({
 
   return (
     <Layout>
-      <Seo
-        pageTitle="Reviews"
-        description="A sortable and filterable list of every book I've reviewed since 2022."
-        image={null}
-        article={false}
-      />
       <main className={containerCss}>
         <div className={leftCss}>
           <FilterPageHeader

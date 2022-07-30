@@ -3,9 +3,9 @@ import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { useRef } from "react";
 import toSentenceArray from "../../utils/to-sentence-array";
 import Grade from "../Grade";
+import HeadBuilder from "../HeadBuilder";
 import Layout from "../Layout";
 import RenderedMarkdown from "../RenderedMarkdown";
-import Seo from "../Seo";
 import {
   articleBodyCss,
   articleFooterCss,
@@ -41,16 +41,37 @@ function AuthorLink({ author }: { author: Author }): JSX.Element {
   );
 }
 
+export function Head({
+  pageContext,
+}: {
+  pageContext: PageContext;
+}): JSX.Element {
+  return (
+    <HeadBuilder
+      pageTitle={
+        pageContext.currentPage === 1
+          ? "Frank's Book Log: Literature is a relative term."
+          : `Page ${pageContext.currentPage}`
+      }
+      description="Reviews of current, cult, classic, and forgotten books."
+      article={false}
+      image={null}
+    />
+  );
+}
+
+interface PageContext {
+  limit: number;
+  skip: number;
+  numberOfItems: number;
+  currentPage: number;
+}
+
 export default function HomePage({
   pageContext,
   data,
 }: {
-  pageContext: {
-    limit: number;
-    skip: number;
-    numberOfItems: number;
-    currentPage: number;
-  };
+  pageContext: PageContext;
   data: PageQueryResult;
 }): JSX.Element {
   const listHeader = useRef<HTMLDivElement>(null);
@@ -60,16 +81,6 @@ export default function HomePage({
 
   return (
     <Layout>
-      <Seo
-        pageTitle={
-          pageContext.currentPage === 1
-            ? "Frank's Book Log: Literature is a relative term."
-            : `Page ${pageContext.currentPage}`
-        }
-        description="Reviews of current, cult, classic, and forgotten books."
-        article={false}
-        image={null}
-      />
       <main className={containerCss} ref={listHeader}>
         <ol className={listCss}>
           {updates.map((update, index) => {
