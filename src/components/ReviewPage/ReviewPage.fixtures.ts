@@ -35,6 +35,7 @@ export const abandonedBook = {
             },
           ],
         },
+        isAudiobook: false,
         editionNotesHtml: "<span>Center Street, 2015</span>",
         readingTime: 9,
         dateFinished: "01 Jun, 2022",
@@ -122,6 +123,7 @@ export const audioBook = {
             },
           ],
         },
+        isAudiobook: true,
         editionNotesHtml:
           "<span>Narrated by Stephen Lang and Arnold Schwarzenegger</span>",
         readingTime: 15,
@@ -206,6 +208,7 @@ export default {
             },
           ],
         },
+        isAudiobook: false,
         editionNotesHtml: "<span>Scribner</span>",
         readingTime: 3,
         dateFinished: "21 Mar, 2022",

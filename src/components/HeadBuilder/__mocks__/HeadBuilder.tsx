@@ -1,7 +1,4 @@
-import React from "react";
-import { Helmet } from "react-helmet";
-
-function Seo({
+function HeadBuilder({
   pageTitle,
   description,
   image = null,
@@ -13,13 +10,14 @@ function Seo({
   article?: boolean;
 }): JSX.Element {
   return (
-    <Helmet title={pageTitle}>
+    <>
+      <title>{pageTitle}</title>
       <meta name="description" content={description} />
       {image && <meta name="og:image" content={image} />}
       {article && <meta property="og:type" content="article" />}
       <meta property="og:title" content={pageTitle} />
       <meta property="og:description" content={description} />
-    </Helmet>
+    </>
   );
 }
-export default Seo;
+export default HeadBuilder;

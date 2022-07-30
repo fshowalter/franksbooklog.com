@@ -1,9 +1,7 @@
 import { useLocation } from "@gatsbyjs/reach-router"; // eslint-disable-line import/no-extraneous-dependencies
 import { graphql, useStaticQuery } from "gatsby";
-import React from "react";
-import { Helmet } from "react-helmet";
 
-export interface SeoQueryResult {
+export interface QueryResult {
   site: {
     siteMetadata: {
       siteTitle: string;
@@ -21,7 +19,7 @@ function buildTitle(pageTitle: string, siteTitle: string): string {
   return `${pageTitle} | ${siteTitle}`;
 }
 
-function Seo({
+function HeadBuilder({
   pageTitle,
   description,
   image = null,
@@ -33,7 +31,7 @@ function Seo({
   article?: boolean;
 }): JSX.Element {
   const { pathname } = useLocation();
-  const data: SeoQueryResult = useStaticQuery(graphql`
+  const data: QueryResult = useStaticQuery(graphql`
     query SEO {
       site {
         siteMetadata {
@@ -46,21 +44,26 @@ function Seo({
   `);
   const { siteTitle, siteUrl, siteImage } = data.site.siteMetadata;
 
-  const seo = {
+  const meta = {
     title: buildTitle(pageTitle, siteTitle),
     description,
     image: `${siteUrl}${image || siteImage}`,
     url: `${siteUrl}${pathname}`,
   };
   return (
-    <Helmet title={seo.title}>
-      <meta name="description" content={seo.description} />
-      <meta name="og:image" content={seo.image} />
-      <meta property="og:url" content={seo.url} />
+    <>
+      <title>{meta.title}</title>
+      <meta name="description" content={meta.description} />
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      />
+      <meta name="og:image" content={meta.image} />
+      <meta property="og:url" content={meta.url} />
       {article && <meta property="og:type" content="article" />}
-      <meta property="og:title" content={seo.title} />
-      <meta property="og:description" content={seo.description} />
-    </Helmet>
+      <meta property="og:title" content={meta.title} />
+      <meta property="og:description" content={meta.description} />
+    </>
   );
 }
-export default Seo;
+export default HeadBuilder;

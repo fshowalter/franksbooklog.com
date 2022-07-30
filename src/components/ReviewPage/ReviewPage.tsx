@@ -2,9 +2,9 @@ import { graphql, Link } from "gatsby";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import toSentenceArray from "../../utils/to-sentence-array";
 import Grade from "../Grade";
+import HeadBuilder from "../HeadBuilder";
 import Layout from "../Layout";
 import RenderedMarkdown from "../RenderedMarkdown";
-import Seo from "../Seo";
 
 import {
   authorLinkCss,
@@ -122,6 +122,22 @@ function ReadingTime({ review }: { review: Review }): JSX.Element {
   );
 }
 
+export function Head({ data }: { data: PageQueryResult }): JSX.Element {
+  const { work } = data;
+  const authorNames = toSentenceArray(
+    work.authors.map((author) => author.name)
+  ).join(", ");
+
+  return (
+    <HeadBuilder
+      pageTitle={`${work.title} by ${authorNames}`}
+      description={`A review of the ${work.year} ${work.kind} by ${authorNames}.`}
+      image={work.seoImage.childImageSharp.resize.src}
+      article
+    />
+  );
+}
+
 /**
  * Renders a review page.
  */
@@ -132,18 +148,9 @@ export default function ReviewPage({
 }): JSX.Element {
   const structuredData = buildStructuredData(data);
   const { work } = data;
-  const authorNames = toSentenceArray(
-    work.authors.map((author) => author.name)
-  ).join(", ");
 
   return (
     <Layout>
-      <Seo
-        pageTitle={`${work.title} by ${authorNames}`}
-        description={`A review of the ${work.year} ${work.kind} by ${authorNames}.`}
-        image={work.seoImage.childImageSharp.resize.src}
-        article
-      />
       <main id="top" className={containerCss}>
         <header className={headerContainerCss}>
           <div className={headerTitleCss}>
