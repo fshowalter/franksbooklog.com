@@ -1,5 +1,5 @@
 ---
-sequence: 33
+sequence: 34
 slug: about-face-by-david-h-hackworth-julie-sherman
 grade: A-
 edition: Audible
@@ -17,7 +17,7 @@ timeline:
     progress: Finished
 ---
 
-A frank and rollicking memoir of a flawed man but gifted leader.
+A candid and rollicking memoir by a flawed man but gifted leader.
 
 <!-- end -->
 
