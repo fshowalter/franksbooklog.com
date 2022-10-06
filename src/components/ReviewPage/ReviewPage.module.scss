@@ -260,6 +260,7 @@
   @media (min-width: breakpoints.$desktop) {
     align-self: flex-start;
     margin: unset;
+    padding: layout.$spacer-2 layout.$spacer-7 layout.$spacer-6;
   }
 }
 
