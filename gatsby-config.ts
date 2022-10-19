@@ -13,7 +13,7 @@ interface SiteMetadata {
 const siteMetadata: SiteMetadata = {
   author: "Frank Showalter",
   siteUrl: "https://www.franksbooklog.com/",
-  image: "assets/default_og.jpg",
+  image: "/assets/default_og.jpg",
   title: "Frank's Book Log",
 };
 
