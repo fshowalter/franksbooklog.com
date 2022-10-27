@@ -210,7 +210,7 @@ export const pageQuery = graphql`
           slug
           sequence
         }
-        dateFinished(formatString: "DD MMM, YYYY")
+        dateFinished(formatString: "DD MMM YYYY")
         linkedExcerpt
         reviewedWork {
           title
