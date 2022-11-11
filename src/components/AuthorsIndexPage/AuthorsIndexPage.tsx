@@ -215,10 +215,10 @@ interface PageQueryResult {
 }
 
 export const pageQuery = graphql`
-  query {
+  {
     author: allAuthorsJson(
       filter: { reviewed: { eq: true } }
-      sort: { fields: sort_name, order: ASC }
+      sort: { sort_name: ASC }
     ) {
       nodes {
         name

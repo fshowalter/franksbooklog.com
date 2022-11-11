@@ -319,16 +319,16 @@ interface PageQueryResult {
 }
 
 export const pageQuery = graphql`
-  query {
+  {
     review: allMarkdownRemark(
       filter: { postType: { eq: "REVIEW" } }
-      sort: { fields: frontmatter___sequence, order: DESC }
+      sort: { frontmatter: { sequence: DESC } }
     ) {
       totalCount
-      editions: distinct(field: frontmatter___edition)
-      publishedYears: distinct(field: reviewedWork___year)
-      readYears: distinct(field: yearFinished)
-      kinds: distinct(field: reviewedWork___kind)
+      editions: distinct(field: { frontmatter: { edition: SELECT } })
+      publishedYears: distinct(field: { reviewedWork: { year: SELECT } })
+      readYears: distinct(field: { yearFinished: SELECT })
+      kinds: distinct(field: { reviewedWork: { kind: SELECT } })
       nodes {
         frontmatter {
           sequence
