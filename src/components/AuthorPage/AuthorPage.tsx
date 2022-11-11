@@ -378,8 +378,8 @@ export const pageQuery = graphql`
           }
         }
       }
-      publishedYears: distinct(field: { works: { year: SELECT } })
-      kinds: distinct(field: { works: { kind: SELECT } })
+      publishedYears: distinct(field: works___year)
+      kinds: distinct(field: works___kind)
     }
   }
 `;

@@ -440,8 +440,10 @@ interface PageQueryResult {
 }
 
 export const pageQuery = graphql`
-  {
-    work: allWorksJson(sort: [{ authors: { sort_name: ASC } }, { year: ASC }]) {
+  query {
+    work: allWorksJson(
+      sort: { fields: [authors___sort_name, year], order: ASC }
+    ) {
       nodes {
         title
         year
@@ -468,9 +470,9 @@ export const pageQuery = graphql`
           }
         }
       }
-      publishedYears: distinct(field: { year: SELECT })
-      authors: distinct(field: { authors: { name: SELECT } })
-      kinds: distinct(field: { kind: SELECT })
+      publishedYears: distinct(field: year)
+      authors: distinct(field: authors___name)
+      kinds: distinct(field: kind)
     }
   }
 `;

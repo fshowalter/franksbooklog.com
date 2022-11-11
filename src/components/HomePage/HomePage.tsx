@@ -199,7 +199,7 @@ interface PageQueryResult {
 export const pageQuery = graphql`
   query ($skip: Int!, $limit: Int!) {
     update: allMarkdownRemark(
-      sort: { frontmatter: { sequence: DESC } }
+      sort: { fields: [frontmatter___sequence], order: DESC }
       limit: $limit
       skip: $skip
       filter: { postType: { eq: "REVIEW" } }

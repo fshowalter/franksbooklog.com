@@ -1,10 +1,11 @@
 import type { CreatePagesArgs } from "gatsby";
 import path from "path";
 
-const query = `{
+const query = `
+{
   reviews: allMarkdownRemark(
-    filter: {postType: {eq: "REVIEW"}}
-    sort: {frontmatter: {sequence: DESC}}
+    filter: { postType: { eq: "REVIEW" } }
+    sort: { fields: frontmatter___sequence, order: DESC }
   ) {
     nodes {
       frontmatter {
@@ -12,7 +13,8 @@ const query = `{
       }
     }
   }
-}`;
+}
+`;
 
 interface QueryResult {
   reviews: {
