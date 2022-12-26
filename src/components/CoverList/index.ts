@@ -1,3 +1,3 @@
-import { Cover, CoverList } from "./CoverList";
+import { Poster, PosterList } from "./CoverList";
 
-export { Cover, CoverList };
+export { Poster, PosterList };

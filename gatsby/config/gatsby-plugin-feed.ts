@@ -1,18 +1,17 @@
-const query = `
-{
+const query = `{
   review: allMarkdownRemark(
-    sort: { order: DESC, fields: [frontmatter___sequence] },
-    limit: 25,
-    filter: { postType: { eq: "REVIEW" } }
+    sort: {frontmatter: {sequence: DESC}}
+    limit: 25
+    filter: {postType: {eq: "REVIEW"}}
   ) {
     nodes {
       linkedExcerpt
       frontmatter {
-          date
-          sequence
-          grade
-          slug
-        }
+        date
+        sequence
+        grade
+        slug
+      }
       reviewedWork {
         title
         year

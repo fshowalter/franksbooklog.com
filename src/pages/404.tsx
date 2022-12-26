@@ -1,7 +1,7 @@
 import { graphql } from "gatsby";
 import { IGatsbyImageData } from "gatsby-plugin-image";
-import ArticlePage from "../components/ArticlePage";
-import HeadBuilder from "../components/HeadBuilder";
+import { ArticlePage } from "../components/ArticlePage";
+import { HeadBuilder } from "../components/HeadBuilder";
 
 export function Head(): JSX.Element {
   return (
