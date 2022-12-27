@@ -150,9 +150,13 @@ export default function ReviewPage({
             loading={"eager"}
           />
           <Spacer axis="vertical" size={24} />
-          <Box as="h2">
+          <Box as="h2" textAlign="center">
             <PageTitle>{work.title}</PageTitle>
-            {work.subtitle && <div>{work.subtitle}</div>}
+            {work.subtitle && (
+              <Box fontSize="medium" fontWeight="normal" color="muted">
+                {work.subtitle}
+              </Box>
+            )}
           </Box>
           <Spacer axis="vertical" size={16} />
           <Box fontSize="medium">
@@ -171,7 +175,12 @@ export default function ReviewPage({
             | {work.kind}
           </Box>
         </Box>
-        <Box display="flex" flexDirection="column" rowGap={32}>
+        <Box
+          display="flex"
+          flexDirection="column"
+          rowGap={32}
+          paddingX="pageMargin"
+        >
           <Box display="flex" flexDirection="column" alignItems="center">
             {work.grade && <Grade grade={work.grade} height={32} />}
             <Box
@@ -190,7 +199,9 @@ export default function ReviewPage({
             text={work.review.linkedHtml}
           />
         </Box>
+        <Spacer axis="vertical" size={80} />
         <ReadingHistory work={work} maxWidth="popout" width="full" />
+        <Spacer axis="vertical" size={128} />
       </Box>
       {structuredData && (
         <script
@@ -222,14 +233,6 @@ export const pageQuery = graphql`
         date(formatString: "ddd MMM DD, YYYY")
       }
       readings {
-        sequence
-        edition
-        timeline {
-          date(formatString: "DD MMM, YYYY")
-          progress
-        }
-        isAudiobook
-        editionNotes
         readingTime
         dateFinishedIso: dateFinished(formatString: "Y-MM-DD")
         dateFinishedPretty: dateFinished(formatString: "dddd MMMM D, YYYY")

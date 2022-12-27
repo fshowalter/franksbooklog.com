@@ -1,9 +1,25 @@
-import { style, styleVariants } from "@vanilla-extract/css";
+import { globalStyle, style, styleVariants } from "@vanilla-extract/css";
+import { backgroundColors } from "../../styles/colors.css";
 import { gridTemplate, SPACER } from "../../styles/grid";
-import { relativeSize, size } from "../../styles/sizes.css";
+import { gutterWidth, relativeSize, size } from "../../styles/sizes.css";
 
 export const mediumNotesTypography = style({
   fontSize: relativeSize[14],
+});
+
+export const timelineGridStyle = style({
+  display: "grid",
+  marginLeft: `calc(-1 * ${gutterWidth})`,
+  gridTemplateColumns: "auto 1fr auto",
+  alignItems: "center",
+});
+
+export const timelineEntryStyle = style({
+  display: "contents",
+});
+
+globalStyle(`${timelineEntryStyle}:nth-of-type(odd) > div`, {
+  backgroundColor: backgroundColors.subtle,
 });
 
 export const gridStyle = style({

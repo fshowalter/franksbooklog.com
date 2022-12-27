@@ -1,15 +1,21 @@
 import { graphql } from "gatsby";
+import { BarGradient } from "../BarGradient";
 import { Box, IBoxProps } from "../Box";
 import { DateIcon } from "../DateIcon";
 import { gridAreaComponent, gridComponent } from "../Grid";
 import { RenderedMarkdown } from "../RenderedMarkdown";
-import { gridAreas, gridStyle } from "./ReadingHistoryEntry.css";
+import {
+  gridAreas,
+  gridStyle,
+  timelineEntryStyle,
+  timelineGridStyle,
+} from "./ReadingHistoryEntry.css";
 
 const GridArea = gridAreaComponent(gridAreas);
 
 const Grid = gridComponent(gridStyle);
 
-function Date({ reading }: { reading: ReadingHistoryEntryFragment }) {
+function Date({ reading }: { reading: Queries.ReadingHistoryEntryFragment }) {
   return (
     <>
       <Box as="span" color="default" display="inline-block">
@@ -19,7 +25,11 @@ function Date({ reading }: { reading: ReadingHistoryEntryFragment }) {
   );
 }
 
-function Edition({ reading }: { reading: ReadingHistoryEntryFragment }) {
+function Edition({
+  reading,
+}: {
+  reading: Queries.ReadingHistoryEntryFragment;
+}) {
   if (!reading.edition) {
     return null;
   }
@@ -64,12 +74,47 @@ function Details({
 }: {
   reading: Queries.ReadingHistoryEntryFragment;
 }) {
-  if (!reading) {
+  if (reading.readingTime === 1) {
     return null;
   }
+
+  const summaryText = reading.isAudiobook ? "Listened to" : "Read";
+
   return (
-    <Box fontWeight="light" color="subtle">
-      progress...
+    <Box as="details" fontWeight="light" color="subtle">
+      <Box as="summary">
+        {summaryText} over {reading.readingTime} Days
+      </Box>
+      <Box as="ol" width="full" className={timelineGridStyle}>
+        {reading.timeline.map((entry) => {
+          let progressValue = null;
+          const progressNumber = entry.progress.split("%", 1)[0];
+
+          if (progressNumber === "Finished") {
+            progressValue = 100;
+          }
+
+          if (!isNaN(progressNumber)) {
+            progressValue = parseInt(progressNumber);
+          }
+
+          return (
+            <Box as="li" key={entry.date} className={timelineEntryStyle}>
+              <Box lineHeight={40} whiteSpace="nowrap" paddingX="gutter">
+                {entry.date}
+              </Box>
+              <Box width="full" height={40}>
+                {progressValue && (
+                  <BarGradient value={progressValue} maxValue={100} />
+                )}
+              </Box>
+              <Box lineHeight={40} textAlign="right" paddingX="gutter">
+                {entry.progress}
+              </Box>
+            </Box>
+          );
+        })}
+      </Box>
     </Box>
   );
 }
@@ -124,9 +169,15 @@ export const query = graphql`
     dateFinished(formatString: "ddd MMM DD, YYYY")
     edition
     editionNotes
+    isAudiobook
+    readingTime
     readingNote {
       linkedHtml
     }
     sequence
+    timeline {
+      date(formatString: "DD MMM, YYYY")
+      progress
+    }
   }
 `;

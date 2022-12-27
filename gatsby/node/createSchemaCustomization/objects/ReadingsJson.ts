@@ -15,6 +15,7 @@ import { MarkdownRemarkNode } from "./MarkdownRemark";
 export interface ReadingNode extends GatsbyNode {
   workSlug: string;
   sequence: number;
+  editionNotes: string;
   timeline: {
     date: string;
     progress: number | "Finished" | "Abandoned";
@@ -61,11 +62,11 @@ export const commonReadingFields = {
   editionNotes: {
     type: "String",
     resolve: (source: ReadingNode) => {
-      if (!source.mediumNotes) {
+      if (!source.editionNotes) {
         return null;
       }
 
-      const mdast = remark().parse(source.mediumNotes);
+      const mdast = remark().parse(source.editionNotes);
 
       const hast = toHast(mdast, {
         allowDangerousHtml: true,
