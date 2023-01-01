@@ -52,6 +52,7 @@ export const size = {
   48: "48px",
   64: "64px",
   128: "128px",
+  992: "992px",
 };
 
 export const height = {

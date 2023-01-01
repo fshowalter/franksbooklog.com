@@ -12,7 +12,7 @@ async function findAuthor(context: GatsbyNodeContext, slug: string) {
     type: SchemaNames.AuthorsJson,
     query: {
       filter: {
-        slug: { eq: slug },
+        key: { eq: slug },
       },
     },
   });

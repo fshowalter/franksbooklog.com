@@ -76,7 +76,7 @@ export const pageQuery = graphql`
             quality: 80
             width: 200
             height: 200
-            placeholder: TRACED_SVG
+            placeholder: BLURRED
           )
         }
       }

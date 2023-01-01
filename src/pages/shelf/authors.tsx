@@ -23,7 +23,10 @@ export default function AuthorsPAge({
 
 export const pageQuery = graphql`
   query AuthorsPage {
-    author: allAuthorsJson(sort: { sortName: ASC }) {
+    author: allAuthorsJson(
+      filter: { shelfWorkCount: { gt: 0 } }
+      sort: { sortName: ASC }
+    ) {
       nodes {
         ...AuthorAvatarListItem
       }

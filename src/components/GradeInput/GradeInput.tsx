@@ -160,7 +160,7 @@ export function GradeInput({
               type="checkbox"
               checked={checkedValue}
             />
-            Include unrated viewings
+            Include abandoned works
           </Box>
         </Box>
       </Box>

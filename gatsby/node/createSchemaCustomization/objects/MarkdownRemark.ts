@@ -44,6 +44,33 @@ export const MarkdownRemark = {
         return "OTHER";
       },
     },
+    linkedHtml: {
+      type: "String",
+      resolve: async (
+        source: MarkdownRemarkNode,
+        args: GatsbyResolveArgs,
+        context: GatsbyNodeContext,
+        info: GatsbyResolveInfo
+      ) => {
+        const htmlAst = await resolveFieldForNode<Element>(
+          "htmlAst",
+          source,
+          context,
+          info,
+          args
+        );
+
+        if (!htmlAst) {
+          return null;
+        }
+
+        const html = toHtml(htmlAst, {
+          allowDangerousHtml: true,
+        });
+
+        return addWorkLinks(html, context.nodeModel);
+      },
+    },
     workSlug: {
       type: "String!",
       resolve: async (
@@ -61,6 +88,27 @@ export const MarkdownRemark = {
         );
 
         return frontMatter ? frontMatter.work_slug : null;
+      },
+    },
+    year: {
+      type: "Int!",
+      resolve: async (
+        source: MarkdownRemarkNode,
+        args: GatsbyResolveArgs,
+        context: GatsbyNodeContext,
+        info: GatsbyResolveInfo
+      ) => {
+        const frontMatter = await resolveFieldForNode<FrontMatter>(
+          "frontmatter",
+          source,
+          context,
+          info,
+          args
+        );
+
+        return frontMatter?.date
+          ? parseInt(frontMatter.date.substring(0, 4))
+          : null;
       },
     },
     date: {
@@ -102,45 +150,6 @@ export const MarkdownRemark = {
         );
 
         return frontMatter ? frontMatter.grade : null;
-      },
-    },
-    linkedHtml: {
-      type: "String",
-      resolve: async (
-        source: MarkdownRemarkNode,
-        args: GatsbyResolveArgs,
-        context: GatsbyNodeContext,
-        info: GatsbyResolveInfo
-      ) => {
-        const frontMatter = await resolveFieldForNode<FrontMatter>(
-          "frontmatter",
-          source,
-          context,
-          info,
-          args
-        );
-
-        if (!frontMatter) {
-          return null;
-        }
-
-        const htmlAst = await resolveFieldForNode<Element>(
-          "htmlAst",
-          source,
-          context,
-          info,
-          args
-        );
-
-        if (!htmlAst) {
-          return null;
-        }
-
-        const html = toHtml(htmlAst, {
-          allowDangerousHtml: true,
-        });
-
-        return addWorkLinks(html, context.nodeModel);
       },
     },
     gradeValue: {

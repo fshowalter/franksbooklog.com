@@ -8,12 +8,14 @@ import type {
 } from "../type-definitions";
 import findDefaultCoverNode from "../utils/findDefaultCoverNode";
 import { resolveFieldForNode } from "../utils/resolveFieldForNode";
+import { sliceWorksForBrowseMore } from "../utils/sliceWorksForBrowseMore";
 import { ReadingNode } from "./ReadingsJson";
 
 export interface WorkNode extends GatsbyNode {
   slug: string;
-  reviewed: boolean;
   includedWorks: string[];
+  shelf: boolean;
+  yearPublished: number;
 }
 
 export const WorksJson = {
@@ -24,6 +26,7 @@ export const WorksJson = {
     subtitle: "String",
     yearPublished: "Int!",
     sortTitle: "String!",
+    shelf: "Boolean!",
     slug: {
       type: `String`,
       extensions: {
@@ -48,8 +51,14 @@ export const WorksJson = {
         },
       },
     },
-    kind: "String!",
+    kind: `${SchemaNames.WorkKind}!`,
     authors: `[${SchemaNames.WorkAuthor}!]!`,
+    decadePublished: {
+      type: "String!",
+      resolve: (source: WorkNode) => {
+        return `${source.yearPublished.toString().substring(0, 3)}0s`;
+      },
+    },
     includedWorks: {
       type: `[${SchemaNames.WorksJson}!]!`,
       resolve: async (
@@ -90,6 +99,29 @@ export const WorksJson = {
             },
           },
         });
+      },
+    },
+    browseMore: {
+      type: `[${SchemaNames.WorksJson}!]!`,
+      resolve: async (
+        source: WorkNode,
+        _args: unknown,
+        context: GatsbyNodeContext
+      ) => {
+        const { entries } = await context.nodeModel.findAll<WorkNode>({
+          type: SchemaNames.WorksJson,
+          query: {
+            filter: {
+              slug: { ne: null },
+            },
+            sort: {
+              fields: ["sortTitle"],
+              order: ["ASC"],
+            },
+          },
+        });
+
+        return sliceWorksForBrowseMore(Array.from(entries), source.id);
       },
     },
     readings: {

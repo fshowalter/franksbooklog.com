@@ -1,5 +1,6 @@
+import { graphql } from "gatsby";
 import { Box } from "../Box";
-import { GraphqlImage, IGraphqlImage } from "../GraphqlImage";
+import { GraphqlImage } from "../GraphqlImage";
 import { Layout } from "../Layout";
 import { LongFormText } from "../LongFormText";
 import { PageTitle } from "../PageTitle";
@@ -8,13 +9,11 @@ import { Spacer } from "../Spacer";
 export function ArticlePage({
   image,
   alt,
-  title,
-  articleText,
+  article,
 }: {
-  image: IGraphqlImage;
+  image: Queries.ArticlePageBackdropFragment | null;
   alt: string;
-  articleText?: string | null;
-  title?: string | null;
+  article: Queries.ArticlePageFragment | null;
 }): JSX.Element {
   return (
     <Layout>
@@ -30,26 +29,37 @@ export function ArticlePage({
             paddingY={{ default: 24, desktop: 32 }}
             textAlign="center"
           >
-            {title}
+            {article?.frontmatter?.title}
           </PageTitle>
           <GraphqlImage image={image} alt={alt} />
           <Spacer axis="vertical" size={64} />
           <Box paddingX="pageMargin">
-            <LongFormText maxWidth="prose" text={articleText} />
+            <LongFormText maxWidth="prose" text={article?.html} />
           </Box>
           <Spacer axis="vertical" size={128} />
         </Box>
-        <Box
-          maxWidth={{ default: "popout", tablet: "full" }}
-          width="full"
-          display="flex"
-          alignItems="center"
-          backgroundColor={{ default: "default", tablet: "subtle" }}
-          paddingTop={{ default: 0, tablet: 32 }}
-          paddingBottom={{ default: 0, tablet: 128 }}
-          justifyContent="center"
-        ></Box>
       </main>
     </Layout>
   );
 }
+
+export const query = graphql`
+  fragment ArticlePage on MarkdownRemark {
+    html
+    frontmatter {
+      title
+    }
+  }
+
+  fragment ArticlePageBackdrop on File {
+    childImageSharp {
+      gatsbyImageData(
+        layout: CONSTRAINED
+        formats: [JPG, AVIF]
+        quality: 80
+        width: 1000
+        placeholder: BLURRED
+      )
+    }
+  }
+`;

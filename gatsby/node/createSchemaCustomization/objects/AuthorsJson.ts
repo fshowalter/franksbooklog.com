@@ -7,7 +7,6 @@ import type {
   GatsbyResolveInfo,
 } from "../type-definitions";
 import { resolveFieldForNode } from "../utils/resolveFieldForNode";
-import { WorkNode } from "./WorksJson";
 
 export interface AuthorNode extends GatsbyNode {
   slug: string;
@@ -21,6 +20,8 @@ export const AuthorsJson = {
   fields: {
     name: "String!",
     sortName: "String!",
+    shelf: "Boolean!",
+    key: "String!",
     slug: {
       type: "String",
       resolve: async (
@@ -29,19 +30,19 @@ export const AuthorsJson = {
         context: GatsbyNodeContext,
         info: GatsbyResolveInfo
       ) => {
-        const reviewedWorkCount = await resolveFieldForNode<number>(
-          "reviewedWorkCount",
+        const reviewedShelfWorkCount = await resolveFieldForNode<number>(
+          "reviewedShelfWorkCount",
           source,
           context,
           info,
           args
         );
 
-        if (!reviewedWorkCount || reviewedWorkCount === 0) {
+        if (!reviewedShelfWorkCount || reviewedShelfWorkCount === 0) {
           return null;
         }
 
-        return source.slug;
+        return source.key;
       },
     },
     works: {
@@ -69,35 +70,104 @@ export const AuthorsJson = {
         return entries;
       },
     },
-    reviewedWorkCount: {
+    readings: {
+      type: `[${SchemaNames.ReadingsJson}!]!`,
+      resolve: async (
+        source: AuthorNode,
+        _args: unknown,
+        context: GatsbyNodeContext
+      ) => {
+        const { entries } = await context.nodeModel.findAll({
+          type: SchemaNames.ReadingsJson,
+          query: {
+            filter: {
+              authors: {
+                elemMatch: { slug: { eq: source.slug } },
+              },
+            },
+          },
+        });
+
+        return entries;
+      },
+    },
+    readingCount: {
+      type: `Int!`,
+      args: {
+        year: "Int",
+      },
+      resolve: async (
+        source: AuthorNode,
+        args: {
+          year: number;
+        },
+        context: GatsbyNodeContext
+      ) => {
+        const { year } = args;
+
+        const yearFilter = year ? { yearFinished: { eq: year } } : {};
+
+        const { totalCount } = await context.nodeModel.findAll({
+          type: SchemaNames.ReadingsJson,
+          query: {
+            filter: {
+              authors: {
+                elemMatch: { slug: { eq: source.slug } },
+              },
+              ...yearFilter,
+            },
+          },
+        });
+
+        return totalCount();
+      },
+    },
+    reviewedShelfWorkCount: {
       type: `Int!`,
       resolve: async (
         source: AuthorNode,
-        args: GatsbyResolveArgs,
-        context: GatsbyNodeContext,
-        info: GatsbyResolveInfo
+        _args: GatsbyResolveArgs,
+        context: GatsbyNodeContext
       ) => {
-        const works = await resolveFieldForNode<WorkNode[]>(
-          "works",
-          source,
-          context,
-          info,
-          args
-        );
-
-        if (!works) {
-          return 0;
-        }
-
-        const workSlugs = Array.from(works.map((work) => work.slug));
-
         const { totalCount } = await context.nodeModel.findAll({
-          type: SchemaNames.MarkdownRemark,
+          type: SchemaNames.WorksJson,
           query: {
             filter: {
-              frontmatter: {
-                work_slug: { in: workSlugs },
+              authors: {
+                elemMatch: {
+                  slug: {
+                    in: [source.key],
+                  },
+                },
               },
+              shelf: { eq: true },
+              review: { id: { ne: null } },
+            },
+          },
+        });
+
+        return await totalCount();
+      },
+    },
+    shelfWorkCount: {
+      type: `Int!`,
+      resolve: async (
+        source: AuthorNode,
+        _args: GatsbyResolveArgs,
+        context: GatsbyNodeContext
+      ) => {
+        const { totalCount } = await context.nodeModel.findAll({
+          type: SchemaNames.WorksJson,
+          query: {
+            filter: {
+              authors: {
+                elemMatch: {
+                  slug: {
+                    in: [source.slug],
+                  },
+                },
+              },
+              shelf: { eq: true },
             },
           },
         });

@@ -115,6 +115,14 @@ export const commonReadingFields = {
       });
     },
   },
+  abandoned: {
+    type: "Boolean!",
+    resolve: (source: ReadingNode) => {
+      return (
+        source.timeline[source.timeline.length - 1].progress == "Abandoned"
+      );
+    },
+  },
   dateStarted: {
     type: "Date!",
     extensions: {
@@ -214,7 +222,7 @@ export const commonReadingFields = {
     },
   },
   yearPublished: {
-    type: "String!",
+    type: "Int!",
     extensions: {
       proxyToWork: {
         fieldName: "yearPublished",
@@ -252,7 +260,7 @@ export const commonReadingFields = {
         prev.date > current.date ? prev : current
       );
 
-      return lastDate.date.substring(0, 4);
+      return parseInt(lastDate.date.substring(0, 4));
     },
   },
   grade: {

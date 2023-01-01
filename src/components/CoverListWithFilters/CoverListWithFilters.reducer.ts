@@ -3,35 +3,42 @@ import {
   collator,
   sortNumberAsc,
   sortNumberDesc,
+  sortStringAsc,
+  sortStringDesc,
 } from "../../utils";
 import type { ICoverListWithFiltersItem } from "./CoverListWithFilters";
 
 export type Sort =
-  | "read-date-desc"
-  | "read-date-asc"
-  | "published-date-desc"
-  | "published-date-asc"
+  | "sequence-desc"
+  | "sequence-asc"
+  | "year-published-desc"
+  | "year-published-asc"
   | "title"
   | "grade-asc"
-  | "grade-desc";
+  | "grade-desc"
+  | "author-asc"
+  | "author-desc";
 
 function sortItems(items: ICoverListWithFiltersItem[], sortOrder: Sort) {
   const sortMap: Record<
     Sort,
     (a: ICoverListWithFiltersItem, b: ICoverListWithFiltersItem) => number
   > = {
-    "read-date-desc": (a, b) =>
-      sortNumberDesc(a.sequence ?? 0, b.sequence ?? 0),
-    "read-date-asc": (a, b) => sortNumberAsc(a.sequence ?? 0, b.sequence ?? 0),
-    "published-date-desc": (a, b) =>
+    "sequence-desc": (a, b) => sortNumberDesc(a.sequence ?? 0, b.sequence ?? 0),
+    "sequence-asc": (a, b) => sortNumberAsc(a.sequence ?? 0, b.sequence ?? 0),
+    "year-published-desc": (a, b) =>
       sortNumberDesc(a.yearPublished, b.yearPublished),
-    "published-date-asc": (a, b) =>
+    "year-published-asc": (a, b) =>
       sortNumberAsc(a.yearPublished, b.yearPublished),
     title: (a, b) => collator.compare(a.sortTitle, b.sortTitle),
     "grade-asc": (a, b) =>
       sortNumberAsc(a.gradeValue ?? 50, b.gradeValue ?? 50),
     "grade-desc": (a, b) =>
       sortNumberDesc(a.gradeValue ?? -1, b.gradeValue ?? -1),
+    "author-asc": (a, b) =>
+      sortStringAsc(a.authors[0].sortName, b.authors[0].sortName),
+    "author-desc": (a, b) =>
+      sortStringDesc(a.authors[0].sortName, b.authors[0].sortName),
   };
 
   const comparer = sortMap[sortOrder];
@@ -81,6 +88,7 @@ export enum ActionType {
   FILTER_GRADE = "FILTER_GRADE",
   FILTER_YEAR_PUBLISHED = "FILTER_YEAR_PUBLISHED",
   FILTER_YEAR_READ = "FILTER_YEAR_READ",
+  FILTER_AUTHOR = "FILTER_AUTHOR",
   SORT = "SORT",
   SHOW_MORE = "SHOW_MORE",
   TOGGLE_REVIEWED = "TOGGLE_REVIEWED",
@@ -95,6 +103,13 @@ interface FilterTitleAction {
 /** Action to filter by kind. */
 interface FilterKindAction {
   type: ActionType.FILTER_KIND;
+  /** The value to filter on. */
+  value: string;
+}
+
+/** Action to filter by author. */
+interface FilterAuthorAction {
+  type: ActionType.FILTER_AUTHOR;
   /** The value to filter on. */
   value: string;
 }
@@ -150,6 +165,7 @@ export type Action =
   | FilterKindAction
   | FilterGradeAction
   | FilterEditionAction
+  | FilterAuthorAction
   | SortAction
   | ShowMoreAction
   | ToggleReviewedAction;
@@ -195,6 +211,30 @@ export function reducer(state: State, action: Action): State {
           }
 
           return item.kind === action.value;
+        },
+      };
+      filteredItems = sortItems(
+        applyFilters<ICoverListWithFiltersItem>({
+          collection: state.allItems,
+          filters,
+        }),
+        state.sortValue
+      );
+      return {
+        ...state,
+        filters,
+        filteredItems,
+      };
+    }
+    case ActionType.FILTER_AUTHOR: {
+      filters = {
+        ...state.filters,
+        author: (item: ICoverListWithFiltersItem) => {
+          if (action.value === "All") {
+            return true;
+          }
+
+          return item.authors.some((author) => author.name === action.value);
         },
       };
       filteredItems = sortItems(

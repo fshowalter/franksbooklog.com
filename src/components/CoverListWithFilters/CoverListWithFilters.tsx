@@ -1,7 +1,8 @@
 import { useReducer, useRef } from "react";
+import { foregroundColors } from "../../styles/colors.css";
 import { Box } from "../Box";
 import { Button } from "../Button";
-import { Cover, CoverList } from "../CoverList/CoverList";
+import { Cover, CoverList } from "../CoverList";
 import { DebouncedInput } from "../DebouncedInput";
 import { Fieldset } from "../Fieldset";
 import { GradeInput } from "../GradeInput";
@@ -9,8 +10,6 @@ import { Layout } from "../Layout";
 import { SelectField, SelectOptions } from "../SelectField";
 import { Spacer } from "../Spacer";
 import { YearInput } from "../YearInput";
-
-import { foregroundColors } from "../../styles/colors.css";
 import {
   stickyFiltersStyle,
   stickyHeaderStyle,
@@ -57,18 +56,16 @@ function groupForItem(
   };
 
   switch (sortValue) {
-    case "published-date-asc":
-    case "published-date-desc": {
+    case "year-published-asc":
+    case "year-published-desc": {
       return item.yearPublished.toString();
     }
-    case "read-date-asc":
-    case "read-date-desc": {
+    case "sequence-asc":
+    case "sequence-desc": {
       if (!item.dateFinished) {
         return "";
       }
-      const match = item.dateFinished.match(
-        /[A-Za-z]{3} ([A-Za-z]{3}) \d{1,2}, (\d{4})/
-      );
+      const match = item.dateFinished.match(/([A-Za-z]{3}) \d{1,2}, (\d{4})/);
       if (!match) {
         return "Unknown";
       }
@@ -78,6 +75,10 @@ function groupForItem(
     case "grade-asc":
     case "grade-desc": {
       return item.grade ?? "Unrated";
+    }
+    case "author-asc":
+    case "author-desc": {
+      return item.authors[0].sortName[0];
     }
     case "title": {
       const letter = item.sortTitle.substring(0, 1);
@@ -122,6 +123,8 @@ export function CoverListWithFilters({
   distinctReadYears,
   distinctPublishedYears,
   distinctKinds,
+  distinctGrades,
+  distinctAuthors,
   initialSort,
   toggleReviewed = false,
   coverDetails,
@@ -133,6 +136,7 @@ export function CoverListWithFilters({
   distinctPublishedYears: readonly string[];
   distinctKinds: readonly string[];
   distinctGrades?: readonly (string | null)[];
+  distinctAuthors?: readonly (string | null)[];
   initialSort: Sort;
   toggleReviewed?: boolean;
   coverDetails?: (item: ICoverListWithFiltersItem) => React.ReactNode;
@@ -168,7 +172,9 @@ export function CoverListWithFilters({
           paddingTop={32}
           flexBasis={352}
         >
-          <Box maxWidth="prose">{children}</Box>
+          <Box maxWidth="prose" width="full">
+            {children}
+          </Box>
           <Spacer axis="vertical" size={32} />
           <Box className={stickyFiltersStyle}>
             <Fieldset legend="Filter & Sort">
@@ -210,16 +216,18 @@ export function CoverListWithFilters({
                   }
                 />
               )}
-              <GradeInput
-                label="Grade"
-                onGradeChange={(values, includeAbandoned) =>
-                  dispatch({
-                    type: ActionType.FILTER_GRADE,
-                    values,
-                    includeAbandoned,
-                  })
-                }
-              />
+              {distinctGrades && (
+                <GradeInput
+                  label="Grade"
+                  onGradeChange={(values, includeAbandoned) =>
+                    dispatch({
+                      type: ActionType.FILTER_GRADE,
+                      values,
+                      includeAbandoned,
+                    })
+                  }
+                />
+              )}
               <SelectField
                 label="Kind"
                 onChange={(e) =>
@@ -244,6 +252,19 @@ export function CoverListWithFilters({
                   <SelectOptions options={distinctEditions} />
                 </SelectField>
               )}
+              {distinctAuthors && (
+                <SelectField
+                  label="Author"
+                  onChange={(e) =>
+                    dispatch({
+                      type: ActionType.FILTER_AUTHOR,
+                      value: e.target.value,
+                    })
+                  }
+                >
+                  <SelectOptions options={distinctAuthors} />
+                </SelectField>
+              )}
               <SelectField
                 value={state.sortValue}
                 label="Order By"
@@ -254,12 +275,12 @@ export function CoverListWithFilters({
                   })
                 }
               >
-                <option value="read-date-desc">Date Read (Newest First)</option>
-                <option value="read-date-asc">Date Read (Oldest First)</option>
-                <option value="published-date-desc">
+                <option value="sequence-desc">Date Read (Newest First)</option>
+                <option value="sequence-asc">Date Read (Oldest First)</option>
+                <option value="year-published-desc">
                   Year Published (Newest First)
                 </option>
-                <option value="published-date-asc">
+                <option value="year-published-asc">
                   Year Published (Oldest First)
                 </option>
                 <option value="title">Title</option>
@@ -330,6 +351,7 @@ export function CoverListWithFilters({
                           edition={item.edition}
                           slug={item.slug}
                           image={item.cover}
+                          authors={item.authors}
                           details={
                             coverDetails ? coverDetails(item) : undefined
                           }
@@ -391,6 +413,10 @@ export interface ICoverListWithFiltersItem {
   grade?: string | null;
   gradeValue?: number | null;
   slug: string | null;
+  authors: {
+    name: string;
+    sortName: string;
+  }[];
   cover: {
     childImageSharp: {
       gatsbyImageData: import("gatsby-plugin-image").IGatsbyImageData;

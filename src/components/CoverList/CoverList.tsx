@@ -1,13 +1,15 @@
 import { graphql } from "gatsby";
+import { composeClassNames } from "../../styles/composeClassNames";
+import { toSentenceArray } from "../../utils";
 import { Box, IBoxProps } from "../Box";
 import { Grade } from "../Grade";
 import { GraphqlImage, IGraphqlImage } from "../GraphqlImage";
 import { Link } from "../Link";
 import { Spacer } from "../Spacer";
 import {
+  authorsTypographyStyle,
   gridStyle,
   posterStyle,
-  showTitleOnMobileOnlyStyle,
   slugTypographyStyle,
   titleTypographyStyle,
 } from "./CoverList.css";
@@ -22,7 +24,7 @@ function KindAndEdition({
   if (kind) {
     return (
       <>
-        <div>{kind}</div>
+        <Box className={slugTypographyStyle}>{kind}</Box>
       </>
     );
   }
@@ -31,7 +33,7 @@ function KindAndEdition({
     return (
       <>
         <Spacer axis="vertical" size={8} />
-        <div>{edition}</div>
+        <Box className={slugTypographyStyle}>{edition}</Box>
       </>
     );
   }
@@ -83,7 +85,7 @@ function Title({
 }) {
   const yearBox = (
     <Box as="span" fontSize="xSmall" color="subtle" fontWeight="light">
-      {year}
+      &nbsp;{year}
     </Box>
   );
 
@@ -94,15 +96,29 @@ function Title({
         className={titleTypographyStyle}
         display="block"
       >
-        {title}&nbsp;{yearBox}
+        {title}
+        {yearBox}
       </Link>
     );
 
   return (
     <Box className={titleTypographyStyle}>
-      {title}&nbsp;{yearBox}
+      {title}
+      {yearBox}
     </Box>
   );
+}
+
+function Authors({ authors }: { authors: Author[] }) {
+  return (
+    <Box color="muted" className={authorsTypographyStyle}>
+      {toSentenceArray(authors.map((author) => author.name))}
+    </Box>
+  );
+}
+
+interface Author {
+  name: string;
 }
 
 export function Cover({
@@ -114,6 +130,7 @@ export function Cover({
   dateFinished,
   kind,
   edition,
+  authors,
   details,
   showTitle = true,
 }: {
@@ -127,6 +144,7 @@ export function Cover({
   kind?: string | null;
   showTitle?: boolean;
   details?: React.ReactNode;
+  authors?: Author[];
 }): JSX.Element {
   return (
     <Box
@@ -146,12 +164,15 @@ export function Cover({
         year={year}
         flexShrink={0}
       />
+      <Spacer axis="vertical" size={{ default: 0, tablet: 8 }} />
       <Box flexGrow={1} width={{ tablet: "full" }}>
-        <Box className={!showTitle ? showTitleOnMobileOnlyStyle : undefined}>
-          <Spacer axis="vertical" size={{ default: 0, tablet: 4 }} />
-          <Title title={title} year={year} slug={slug} />
-          <Spacer axis="vertical" size={{ default: 0, tablet: 4 }} />
-        </Box>
+        <Title title={title} year={year} slug={slug} />
+        <Spacer axis="vertical" size={4} />
+        <KindAndEdition kind={kind} edition={edition} />
+        <Spacer axis="vertical" size={4} />
+
+        {authors && <Authors authors={authors} />}
+        <Spacer axis="vertical" size={4} />
         <Box
           color="subtle"
           display="flex"
@@ -159,24 +180,32 @@ export function Cover({
           className={slugTypographyStyle}
           fontWeight="light"
           letterSpacing={0.5}
+          alignItems={{ default: "flex-start", tablet: "center" }}
         >
           {grade && (
             <Box
-              height={{ default: 16, tablet: 24 }}
+              // height={{ default: 16, tablet: 24 }}
               display="flex"
               flexDirection="column"
               justifyContent="center"
             >
-              {!kind && !edition && !details && (
+              {/* {!kind && !edition && !details && (
                 <Spacer axis="vertical" size={{ default: 4, tablet: 0 }} />
-              )}
-              <Grade grade={grade} height={16} />
+              )} */}
+              <>
+                <Spacer axis="vertical" size={4} />
+                <Grade grade={grade} height={16} />
+              </>
             </Box>
           )}
           <Box>
-            <Spacer axis="vertical" size={8} />
-            {dateFinished && <Box>{dateFinished}</Box>}
-            <KindAndEdition kind={kind} edition={edition} />
+            {/* <Spacer axis="vertical" size={8} /> */}
+            {dateFinished && (
+              <>
+                <Spacer axis="vertical" size={4} />
+                <Box>{dateFinished}</Box>
+              </>
+            )}
           </Box>
         </Box>
         {details && details}
@@ -185,9 +214,18 @@ export function Cover({
   );
 }
 
-export function CoverList({ children, ...rest }: IBoxProps): JSX.Element {
+export function CoverList({
+  children,
+  className,
+  ...rest
+}: IBoxProps): JSX.Element {
   return (
-    <Box as="ol" className={gridStyle} paddingX={0} {...rest}>
+    <Box
+      as="ol"
+      className={composeClassNames(gridStyle, className)}
+      paddingX={0}
+      {...rest}
+    >
       {children}
     </Box>
   );
@@ -200,7 +238,7 @@ export const query = graphql`
         layout: CONSTRAINED
         formats: [JPG, AVIF]
         quality: 80
-        width: 200
+        width: 248
         placeholder: NONE
       )
     }

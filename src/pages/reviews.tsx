@@ -10,7 +10,7 @@ export function Head(): JSX.Element {
   return (
     <HeadBuilder
       pageTitle="Reviews"
-      description="A sortable and filterable list of every movie I've watched and reviewed since 2012."
+      description="A sortable and filterable list of every book or short story I've read and reviewed since 2022."
       image={null}
       article={false}
     />
@@ -33,44 +33,40 @@ export default function ReviewsPage({
       distinctKinds={data.reading.kinds}
       distinctPublishedYears={data.reading.publishedYears}
       distinctReadYears={data.reading.readYears}
-      initialSort="read-date-desc"
+      initialSort="sequence-desc"
     >
       <PageTitle textAlign="center">Reviews</PageTitle>
       <Box as="q" display="block" textAlign="center" color="subtle">
-        We have such sights to show you.
+        I intend to put up with nothing that I can put down.
       </Box>
       <Spacer axis="vertical" size={16} />
 
       <Box color="subtle">
         <Spacer axis="vertical" size={16} />
         <p>
-          Since 2012, I&apos;ve watched{" "}
+          Since 2022, I&apos;ve published{" "}
           <Box as="span" color="emphasis">
-            {data.reading.nodes.length.toLocaleString()}
+            {data.reviews.totalCount.toLocaleString()}
           </Box>{" "}
-          movies and published{" "}
+          reviews comprising{" "}
           <Box as="span" color="emphasis">
-            {data.reviews?.totalCount.toLocaleString()}
+            {data.shortStory.totalCount.toLocaleString()}
           </Box>{" "}
-          reviews.
+          short stories and{" "}
+          <Box as="span" color="emphasis">
+            {data.books.totalCount.toLocaleString()}
+          </Box>{" "}
+          books (
+          <Box as="span" color="emphasis">
+            {data.abandoned.totalCount.toLocaleString()}
+          </Box>{" "}
+          abandoned).
         </p>
         <Spacer axis="vertical" size={16} />
         <p>
-          <Box as="span" fontWeight="semiBold">
-            Looking for something new?
-          </Box>
-          <br /> Peruse my list of{" "}
-          <Link to="/reviews/underseen/">underseen gems</Link>.
+          Peruse more <Link to="/stats/">reading stats</Link>.
         </p>
         <Spacer axis="vertical" size={16} />
-        <p>
-          <Box as="span" fontWeight="semiBold">
-            Feeling contrarian?
-          </Box>
-          <br />
-          Behold my list of{" "}
-          <Link to="/reviews/overrated/">overrated disappointments</Link>.
-        </p>
       </Box>
     </CoverListWithFilters>
   );
@@ -86,17 +82,29 @@ export const pageQuery = graphql`
     reviews: allMarkdownRemark(filter: { kind: { eq: REVIEW } }) {
       totalCount
     }
+    books: allReadingsJson(
+      filter: { review: { id: { ne: null } }, kind: { ne: "Short Story" } }
+    ) {
+      totalCount
+    }
+    shortStory: allReadingsJson(
+      filter: { review: { id: { ne: null } }, kind: { eq: "Short Story" } }
+    ) {
+      totalCount
+    }
+    abandoned: allReadingsJson(
+      filter: { review: { id: { ne: null } }, abandoned: { eq: true } }
+    ) {
+      totalCount
+    }
     reading: allReadingsJson(sort: { sequence: DESC }) {
       totalCount
       nodes {
         sequence
         grade
-        workSlug
+        slug: workSlug
         edition
-        yearFinished
-        monthFinished: dateFinished(formatString: "MMMM YYYY")
-        dateFinished
-        dateFinishedFormatted: dateFinished(formatString: "MMM D, YYYY")
+        dateFinished: dateFinished(formatString: "MMM D, YYYY")
         gradeValue
         title
         yearPublished
@@ -113,6 +121,7 @@ export const pageQuery = graphql`
       publishedYears: distinct(field: { yearPublished: SELECT })
       readYears: distinct(field: { yearFinished: SELECT })
       kinds: distinct(field: { kind: SELECT })
+      grades: distinct(field: { grade: SELECT })
     }
   }
 `;

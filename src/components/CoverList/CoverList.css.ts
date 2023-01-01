@@ -5,7 +5,7 @@ import { POSTER_WIDTH, relativeSize, size } from "../../styles/sizes.css";
 export const gridStyle = style({
   "@media": {
     [minMediaQuery("tablet")]: {
-      columnGap: size[24],
+      columnGap: size[32],
       display: "grid",
       gridTemplateColumns: `repeat(auto-fill, minmax(${size[128]}, 1fr))`,
       rowGap: size[32],
@@ -22,27 +22,33 @@ export const slugTypographyStyle = style({
       fontSize: "0.75rem",
       lineHeight: "1rem",
       letterSpacing: "0.5px",
+      textAlign: "center",
+    },
+  },
+});
+
+export const authorsTypographyStyle = style({
+  fontSize: "1rem",
+  lineHeight: "1.25rem",
+
+  "@media": {
+    [minMediaQuery("tablet")]: {
+      fontSize: ".875rem",
+      lineHeight: "1rem",
+      textAlign: "center",
     },
   },
 });
 
 export const titleTypographyStyle = style({
   fontSize: relativeSize[18],
-  lineHeight: "1.5rem",
+  lineHeight: "1.25rem",
 
   "@media": {
     [minMediaQuery("tablet")]: {
       fontSize: "1rem",
-      lineHeight: "1.5rem",
-    },
-  },
-});
-
-export const showTitleOnMobileOnlyStyle = style({
-  display: "block",
-  "@media": {
-    [minMediaQuery("tablet")]: {
-      display: "none",
+      lineHeight: "1.25rem",
+      textAlign: "center",
     },
   },
 });
@@ -53,7 +59,6 @@ export const posterStyle = style({
 
   "@media": {
     [minMediaQuery("tablet")]: {
-      borderRadius: size[8],
       maxWidth: POSTER_WIDTH,
     },
   },

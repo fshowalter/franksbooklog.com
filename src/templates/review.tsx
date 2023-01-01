@@ -1,16 +1,24 @@
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
 import { Box } from "../components/Box";
 import { Grade } from "../components/Grade";
 import { GraphqlImage } from "../components/GraphqlImage";
 import { HeadBuilder } from "../components/HeadBuilder";
 import { Layout } from "../components/Layout";
+import { Link } from "../components/Link";
 import { LongFormText } from "../components/LongFormText";
+import { MoreReviewsNav } from "../components/MoreReviews";
+import { MoreReviews } from "../components/MoreReviews/MoreReviews";
+import { MoreReviewsHeading } from "../components/MoreReviews/MoreReviewsHeading";
 import { PageTitle } from "../components/PageTitle";
 import { ReadingHistory } from "../components/ReadingHistory";
 import { Spacer } from "../components/Spacer";
 import { toSentenceArray } from "../utils/";
 
 function buildStructuredData(data: Queries.ReviewTemplateQuery) {
+  if (!data.work.grade) {
+    return null;
+  }
+
   const gradeMap: Record<string, number> = {
     A: 5,
     B: 4,
@@ -125,6 +133,19 @@ export default function ReviewPage({
   const structuredData = buildStructuredData(data);
   const { work } = data;
 
+  const grade = work.grade ? (
+    <Grade grade={work.grade} height={32} />
+  ) : (
+    <Box
+      fontSize="medium"
+      textTransform="uppercase"
+      letterSpacing={1}
+      color="emphasis"
+    >
+      Abandoned
+    </Box>
+  );
+
   return (
     <Layout>
       <Box
@@ -133,6 +154,7 @@ export default function ReviewPage({
         display="flex"
         flexDirection="column"
         alignItems="center"
+        paddingTop={{ default: 24, desktop: 48 }}
       >
         <Box
           as="header"
@@ -140,31 +162,22 @@ export default function ReviewPage({
           flexDirection="column"
           alignItems="center"
           paddingX="pageMargin"
-          paddingY={{ default: 24, desktop: 32 }}
         >
-          <GraphqlImage
-            image={work.cover}
-            alt={`A cover of ${work.title} by ${toSentenceArray(
-              work.authors.map((a) => a.name)
-            ).join("")} (${work.yearPublished})`}
-            loading={"eager"}
-          />
-          <Spacer axis="vertical" size={24} />
           <Box as="h2" textAlign="center">
             <PageTitle>{work.title}</PageTitle>
             {work.subtitle && (
-              <Box fontSize="medium" fontWeight="normal" color="muted">
-                {work.subtitle}
-              </Box>
-            )}
-          </Box>
-          <Spacer axis="vertical" size={16} />
-          <Box fontSize="medium">
-            by{" "}
-            {toSentenceArray(
-              work.authors.map((author) => (
-                <AuthorLink key={author.slug} author={author} />
-              ))
+              <>
+                <Spacer axis="vertical" size={16} />
+                <Box
+                  fontSize="medium"
+                  fontWeight="normal"
+                  letterSpacing={0.25}
+                  color="muted"
+                  maxWidth="prose"
+                >
+                  {work.subtitle}
+                </Box>
+              </>
             )}
           </Box>
           <Spacer axis="vertical" size={8} />
@@ -174,15 +187,28 @@ export default function ReviewPage({
             </Box>{" "}
             | {work.kind}
           </Box>
+          <Spacer axis="vertical" size={8} />
+          <Box fontSize="medium">
+            by{" "}
+            {toSentenceArray(
+              work.authors.map((author) => (
+                <AuthorLink key={author.slug} author={author} />
+              ))
+            )}
+          </Box>
+          <Spacer axis="vertical" size={32} />
+          <GraphqlImage
+            image={work.cover}
+            alt={`A cover of ${work.title} by ${toSentenceArray(
+              work.authors.map((a) => a.name)
+            ).join("")} (${work.yearPublished})`}
+            loading={"eager"}
+          />
         </Box>
-        <Box
-          display="flex"
-          flexDirection="column"
-          rowGap={32}
-          paddingX="pageMargin"
-        >
+        <Spacer axis="vertical" size={32} />
+        <Box display="flex" flexDirection="column" paddingX="pageMargin">
           <Box display="flex" flexDirection="column" alignItems="center">
-            {work.grade && <Grade grade={work.grade} height={32} />}
+            {grade}
             <Box
               display="flex"
               flexDirection="column"
@@ -193,15 +219,87 @@ export default function ReviewPage({
               <span>on</span> {work.review.date}
             </Box>
           </Box>
+          <Spacer axis="vertical" size={32} />
           <LongFormText
             maxWidth="prose"
             // eslint-disable-next-line react/no-danger
             text={work.review.linkedHtml}
           />
         </Box>
+        {work.includedWorks.length > 0 && (
+          <>
+            <Spacer axis="vertical" size={64} />
+            <Box
+              as="h3"
+              color="subtle"
+              fontSize="medium"
+              fontWeight="normal"
+              paddingX="gutter"
+              boxShadow="borderBottom"
+              maxWidth="popout"
+              width="full"
+            >
+              Included Works
+              <Spacer size={8} axis="vertical" />
+            </Box>
+            <Box as="ul" width="full" maxWidth="popout">
+              {work.includedWorks.map((includedWork) => (
+                <Box
+                  as="li"
+                  key={includedWork.id}
+                  display="flex"
+                  flexDirection="column"
+                  backgroundColor="zebra"
+                  paddingX="gutter"
+                  paddingY={16}
+                >
+                  <Link
+                    to={`/reviews/${includedWork.slug}/`}
+                    fontSize="medium"
+                    fontWeight="semiBold"
+                  >
+                    {includedWork.title}
+                  </Link>{" "}
+                  <Box>
+                    <Box as="span" color="subtle">
+                      by
+                    </Box>{" "}
+                    {toSentenceArray(
+                      includedWork.authors.map((author) => author.name)
+                    )}
+                  </Box>
+                  <Grade grade={includedWork.grade} height={16} />
+                </Box>
+              ))}
+            </Box>
+          </>
+        )}
         <Spacer axis="vertical" size={80} />
         <ReadingHistory work={work} maxWidth="popout" width="full" />
         <Spacer axis="vertical" size={128} />
+        <Box
+          display="flex"
+          flexDirection="column"
+          rowGap={{ default: 48, desktop: 96 }}
+          alignItems="center"
+          backgroundColor={{ default: "default", tablet: "subtle" }}
+          paddingTop={{ default: 0, tablet: 32 }}
+          paddingBottom={{ default: 0, tablet: 128 }}
+          width="full"
+        >
+          <MoreReviewsNav>
+            <MoreReviewsHeading
+              leadText="More"
+              linkText="Reviews"
+              linkTarget="/reviews/"
+            />
+            <MoreReviews
+              works={work.browseMore}
+              seeAllLinkText="Reviews"
+              seeAllLinkTarget="/reviews/"
+            />
+          </MoreReviewsNav>
+        </Box>
       </Box>
       {structuredData && (
         <script
@@ -228,6 +326,19 @@ export const pageQuery = graphql`
         notes
         slug
       }
+      includedWorks {
+        id
+        title
+        authors {
+          name
+          slug
+        }
+        grade
+        slug
+      }
+      browseMore {
+        ...MoreReviews
+      }
       review {
         linkedHtml
         date(formatString: "ddd MMM DD, YYYY")
@@ -243,7 +354,7 @@ export const pageQuery = graphql`
             layout: FIXED
             formats: [JPG, AVIF]
             quality: 80
-            width: 250
+            width: 248
             placeholder: BLURRED
           )
         }

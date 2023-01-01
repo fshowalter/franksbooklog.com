@@ -77,13 +77,18 @@ function Details({
   if (reading.readingTime === 1) {
     return null;
   }
+  const summaryText = reading.abandoned
+    ? "Abandoned after"
+    : reading.isAudiobook
+    ? "Listened to over"
+    : "Read over";
 
-  const summaryText = reading.isAudiobook ? "Listened to" : "Read";
+  console.log(reading);
 
   return (
     <Box as="details" fontWeight="light" color="subtle">
       <Box as="summary">
-        {summaryText} over {reading.readingTime} Days
+        {summaryText} {reading.readingTime} Days
       </Box>
       <Box as="ol" width="full" className={timelineGridStyle}>
         {reading.timeline.map((entry) => {
@@ -171,6 +176,7 @@ export const query = graphql`
     editionNotes
     isAudiobook
     readingTime
+    abandoned
     readingNote {
       linkedHtml
     }

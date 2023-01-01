@@ -19,7 +19,7 @@ export async function createAuthorPages({
 
   const queryResult = await graphql<QueryResult>(`
     {
-      author: allAuthorsJson(filter: { reviewedWorkCount: { gt: 0 } }) {
+      author: allAuthorsJson(filter: { reviewedShelfWorkCount: { gt: 0 } }) {
         nodes {
           id
           slug

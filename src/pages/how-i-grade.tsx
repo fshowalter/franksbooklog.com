@@ -1,5 +1,4 @@
 import { graphql } from "gatsby";
-import { IGatsbyImageData } from "gatsby-plugin-image";
 import { ArticlePage } from "../components/ArticlePage";
 import { HeadBuilder } from "../components/HeadBuilder";
 
@@ -14,53 +13,27 @@ export function Head(): JSX.Element {
   );
 }
 
-export default function HowIGradePage({ data }: PageQueryResult): JSX.Element {
-  const { backdrop, page } = data;
-
+export default function HowIGradePage({
+  data,
+}: {
+  data: Queries.HowIGradePageQuery;
+}): JSX.Element {
   return (
     <ArticlePage
-      image={backdrop.childImageSharp.gatsbyImageData}
+      image={data.backdrop}
       alt="Empty cinema seats."
-      articleText={page.html}
-      title={page.frontmatter.title}
+      article={data.page}
     />
   );
 }
 
-interface PageQueryResult {
-  data: {
-    backdrop: {
-      childImageSharp: {
-        gatsbyImageData: IGatsbyImageData;
-      };
-    };
-    page: {
-      html: string;
-      frontmatter: {
-        title: string;
-      };
-    };
-  };
-}
-
 export const pageQuery = graphql`
-  query {
+  query HowIGradePage {
     backdrop: file(absolutePath: { regex: "/backdrops/how-i-grade.png$/" }) {
-      childImageSharp {
-        gatsbyImageData(
-          layout: CONSTRAINED
-          formats: [JPG, AVIF]
-          quality: 80
-          width: 1000
-          placeholder: TRACED_SVG
-        )
-      }
+      ...ArticlePageBackdrop
     }
     page: markdownRemark(frontmatter: { slug: { eq: "how-i-grade" } }) {
-      html
-      frontmatter {
-        title
-      }
+      ...ArticlePage
     }
   }
 `;

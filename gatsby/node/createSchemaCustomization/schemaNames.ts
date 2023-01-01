@@ -8,4 +8,6 @@ export enum SchemaNames {
   ReadingsJson = "ReadingsJson",
   MarkdownNodeKind = "MarkdownNodeKind",
   TimelineEntry = "TimelineEntry",
+  WorkKind = "WorkKind",
+  MostReadAuthor = "MostReadAuthor",
 }
