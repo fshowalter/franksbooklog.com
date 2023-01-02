@@ -1,5 +1,6 @@
 import { SchemaNames } from "../schemaNames";
-import type { GatsbyNodeContext } from "../type-definitions";
+import type { GatsbyNodeContext, GatsbyResolveInfo } from "../type-definitions";
+import { resolveFieldForNode } from "../utils/resolveFieldForNode";
 import type { AuthorNode } from "./AuthorsJson";
 
 export interface WorkAuthorNode {
@@ -41,11 +42,12 @@ export const WorkAuthor = {
       resolve: async (
         source: WorkAuthorNode,
         _args: unknown,
-        context: GatsbyNodeContext
+        context: GatsbyNodeContext,
+        info: GatsbyResolveInfo
       ) => {
         const author = await findAuthor(context, source.key);
 
-        return author ? author.slug : null;
+        return resolveFieldForNode("slug", author, context, info, {});
       },
     },
     sortName: {
