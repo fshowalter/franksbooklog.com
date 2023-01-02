@@ -1,4 +1,5 @@
 import { graphql } from "gatsby";
+import { AuthorLink } from "../components/AuthorLink";
 import { Box } from "../components/Box";
 import { Grade } from "../components/Grade";
 import { GraphqlImage } from "../components/GraphqlImage";
@@ -33,7 +34,7 @@ function buildStructuredData(data: Queries.ReviewTemplateQuery) {
     itemReviewed: {
       "@type": "Book",
       name: data.work.title,
-      image: data.work.seoImage.childImageSharp.resize.src,
+      image: data.work.seoImage.childImageSharp?.resize?.src,
     },
     reviewRating: {
       "@type": "Rating",
@@ -46,67 +47,11 @@ function buildStructuredData(data: Queries.ReviewTemplateQuery) {
   };
 }
 
-function AuthorLink({ author }: { author: Author }): JSX.Element {
-  let notes = null;
-
-  if (author.notes) {
-    notes = <> ({author.notes})</>;
-  }
-
-  return (
-    <>
-      <Link key={author.slug} to={`/shelf/authors/${author.slug}/`}>
-        {author.name}
-      </Link>
-      {notes}
-    </>
-  );
-}
-
-function ReadingTime({ review }: { review: Review }): JSX.Element {
-  const verb = review.isAudiobook ? "Listened to" : "Read";
-
-  if (review.readingTime === 1) {
-    return (
-      <>
-        <dt>{`${verb} on`}</dt>
-        <dd>{review.dateFinishedPretty}</dd>
-      </>
-    );
-  }
-
-  return (
-    <>
-      <dt>{`${verb} Over`}</dt>
-      <dd>
-        {review.readingTime}
-        {" Days"}
-        <div>
-          <div>
-            {review.timeline[0].date}
-            {" – "}
-            <span>Started</span>
-          </div>
-          {review.timeline.map((entry, index) => {
-            return (
-              <div key={entry.date}>
-                {entry.date}
-                {" – "}
-                {index === review.timeline.length - 1 ? (
-                  <span>{entry.progress}</span>
-                ) : (
-                  `${entry.progress}`
-                )}
-              </div>
-            );
-          })}
-        </div>
-      </dd>
-    </>
-  );
-}
-
-export function Head({ data }: { data: PageQueryResult }): JSX.Element {
+export function Head({
+  data,
+}: {
+  data: Queries.ReviewTemplateQuery;
+}): JSX.Element {
   const { work } = data;
   const authorNames = toSentenceArray(
     work.authors.map((author) => author.name)
@@ -115,8 +60,8 @@ export function Head({ data }: { data: PageQueryResult }): JSX.Element {
   return (
     <HeadBuilder
       pageTitle={`${work.title} by ${authorNames}`}
-      description={`A review of the ${work.year} ${work.kind} by ${authorNames}.`}
-      image={work.seoImage.childImageSharp.resize.src}
+      description={`A review of the ${work.yearPublished} ${work.kind} by ${authorNames}.`}
+      image={work.seoImage.childImageSharp?.resize?.src}
       article
     />
   );

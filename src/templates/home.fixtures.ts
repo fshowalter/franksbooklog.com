@@ -1,314 +1,434 @@
-import { Layout } from "gatsby-plugin-image";
-
-export default {
-  update: {
-    nodes: [
-      {
-        frontmatter: {
-          grade: "C-",
-          slug: "desert-pickup-by-richard-laymon",
-          sequence: 6,
+export const data = {
+  readings: [
+    {
+      grade: "B+",
+      sequence: 48,
+      workSlug: "the-skeptics-guide-to-the-universe-by-steven-novella",
+      dateFinished: "29 Oct 2022",
+      excerpt:
+        '<p>A practical guide to critical thinking in the information age. Novella and his colleagues illuminate cognitive biases and logical fallacies with understandable examples. They then apply them to assorted topics, including ghosts, extrasensory perception, assorted conspiracy theories, and global warming. <a data-continue-reading href="/reviews/the-skeptics-guide-to-the-universe-by-steven-novella/">Continue reading...</a></p>',
+      title: "The Skeptics' Guide to the Universe",
+      kind: "Nonfiction",
+      authors: [
+        {
+          name: "Steven Novella",
+          slug: "steven-novella",
+          notes: null,
         },
-        dateFinished: "03 Apr, 2022",
-        linkedExcerpt:
-          '<p><strong>Richard Laymon’s commercial debut.</strong> Published in the November 1970 issue of <em>Ellery Queen’s Mystery Magazine</em>, this flash-fiction style story concerns an unnamed young man hitchhiking along a desert road. An unnamed young woman picks him up. To discuss more, I must spoil the story. <a class="globalExcerptLinkCss" href="/reviews/desert-pickup-by-richard-laymon/">Continue reading...</a></p>',
-        reviewedWork: {
-          title: "Desert Pickup",
-          year: 1970,
-          kind: "Short Story",
-          authors: [
-            {
-              name: "Richard Laymon",
-              slug: "richard-laymon",
-              notes: null,
-            },
-          ],
-          cover: {
-            childImageSharp: {
-              gatsbyImageData: {
-                layout: "fixed" as Layout,
-                placeholder: {
-                  fallback:
-                    "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='160'%20height='256'%20viewBox='0%200%20160%20256'%20preserveAspectRatio='none'%3e%3cpath%20d='M0%2058v58h161V0H0v58m51%2063c-2%201-2%204%200%203l1%202v1l-1%201%201%202%201-1h1v2c1%200%202%201%201%202l1%204c2%201%202%201%201-2-1-2-1-2%203-2l5%201-1%201v1c2%202%204%200%202-2v-2l1-1h-6l-1-1v-4l1-1h-7l1-2%201-2h-5m35%209c-3%203%200%209%204%209l2%202c1%202%203%203%203%202%202%200%204%203%204%206%200%202%203%204%209%205%203%201%204%204%204%2017%200%206%200%207%204%207l7%201c4%202%209%202%2011%200v-16c-1-7-2-7%204-7l5-1c0-3-11-15-13-14l-21-7c-23-7-20-7-23-4m-15%2013l-5%202-7%202v1c2-1%203%201%201%201-1%201-1%201%201%201v4c2%202%202%202%202%200l3-4c5-5%2017-5%2012%200l-1%203c1%202%201%202%202-2%202-3%203-4%205-4%204%200%207%203%207%206v2c1-1%202%200%202%201l-3%201c-2%200-3%200-2%201%202%200%202%204%200%205-2%202-7%201-7%200s1-2%203-2h3l-3-1-2-2c0-3-2-2-3%200l-2%202-1%202h-1l-3-1-4-1c-2-2-3-2-3-1%200%202%200%203-2%204-3%201-3%201-3-1l-1-4v-3l-5-2-2-2-1%202v5c2%204-3%209-12%2012l-14%204c-4%201-5%202-5%204%200%204%200%204%209%201%2014-3%2013-3%2013%200%200%202%200%202%202%203s2%201%201-2c0-3%200-4%202-5s3%200%203%202l2%204%202%203c0%202%207%2010%209%2010v-2c-1-1-1-1%201-3%202-3%203-3%203%202%201%202%200%203-1%203-2%200-2%200%201%202h4c-2-3-3-13-1-13v2c0%202%200%202%202%201%201-1%204%201%205%205h1l-2-6-3-4-1-3v-2h-2l1-2v-2l-1-3%202%202c3%204%203%204%203%200l3-9%201%201v3c-1%202%202%2010%204%2010l2%201%202%201%205%201h2l1-6-1-4c-1%200-2%200-1%201l-2%201-2-1-1-3c0-2%200-2%202-3l1-1v-1h1l1%201v-2c0-2%200-2%201-1%203%202%203%201%202-4-2-7-10-14-15-12h-2l-8-1m28%2026l-1%205c0%208-3%2011-9%2012-2%201-3%200-3-1%200-2-2-4-5-4l1-1%202-1-2-2c-3-2-7-3-7-2l2%201-1%201c-2%201-2%201-1%202l3-1h1c1%201%200%202-1%203-3%201-3%203%200%204l1%201%201%201%201-1h1l-1%202c-2%202-2%202%200%201h9c0%201-3%204-8%206s-7%203-4%201v-1c-2%200-7%203-5%203l1%202%202%201%201-1c-1-1%200-2%201-2l8-4c8-4%2012-9%2014-16%201-4%200-12-1-9M0%20231v25h161v-50H0v25'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
-                },
-                images: {
-                  fallback: {
-                    src: "/static/a28ced6fc951df87b6a81bce6d181261/3c07e/short-stories-volume-one-by-richard-laymon.jpg",
-                    srcSet:
-                      "/static/a28ced6fc951df87b6a81bce6d181261/3c07e/short-stories-volume-one-by-richard-laymon.jpg 160w,\n/static/a28ced6fc951df87b6a81bce6d181261/03875/short-stories-volume-one-by-richard-laymon.jpg 320w",
-                    sizes: "160px",
-                  },
-                  sources: [
-                    {
-                      srcSet:
-                        "/static/a28ced6fc951df87b6a81bce6d181261/7e230/short-stories-volume-one-by-richard-laymon.avif 160w,\n/static/a28ced6fc951df87b6a81bce6d181261/eccfc/short-stories-volume-one-by-richard-laymon.avif 320w",
-                      type: "image/avif",
-                      sizes: "160px",
-                    },
-                  ],
-                },
-                width: 160,
-                height: 256,
+      ],
+      cover: {
+        childImageSharp: {
+          gatsbyImageData: {
+            layout: "fixed" as const,
+            backgroundColor: "#182838",
+            images: {
+              fallback: {
+                src: "/static/d1c88412dd7d2f24f26ab4ce5f5360a4/4ed50/the-skeptics-guide-to-the-universe-by-steven-novella.jpg",
+                srcSet:
+                  "/static/d1c88412dd7d2f24f26ab4ce5f5360a4/4ed50/the-skeptics-guide-to-the-universe-by-steven-novella.jpg 168w,\n/static/d1c88412dd7d2f24f26ab4ce5f5360a4/9a248/the-skeptics-guide-to-the-universe-by-steven-novella.jpg 336w",
+                sizes: "168px",
               },
+              sources: [
+                {
+                  srcSet:
+                    "/static/d1c88412dd7d2f24f26ab4ce5f5360a4/5ae08/the-skeptics-guide-to-the-universe-by-steven-novella.avif 168w,\n/static/d1c88412dd7d2f24f26ab4ce5f5360a4/0d95f/the-skeptics-guide-to-the-universe-by-steven-novella.avif 336w",
+                  type: "image/avif",
+                  sizes: "168px",
+                },
+              ],
             },
+            width: 168,
+            height: 252,
           },
         },
       },
-      {
-        frontmatter: {
-          grade: "B+",
-          slug: "less-than-zero-by-bret-easton-ellis",
-          sequence: 5,
+    },
+    {
+      grade: "B",
+      sequence: 47,
+      workSlug: "the-shining-by-stephen-king",
+      dateFinished: "29 Oct 2022",
+      excerpt:
+        '<p>Alcoholic writer Jack Torrance uproots his wife Wendy and five-year-old son Danny from New England to Colorado, where they’ll serve as winter caretakers for the Overlook Hotel. The hotel, a premier destination with a shady past, houses a malevolent presence bent on claiming Danny for its own ends. <a data-continue-reading href="/reviews/the-shining-by-stephen-king/">Continue reading...</a></p>',
+      title: "The Shining",
+      kind: "Novel",
+      authors: [
+        {
+          name: "Stephen King",
+          slug: "stephen-king",
+          notes: null,
         },
-        dateFinished: "02 Apr, 2022",
-        linkedExcerpt:
-          '<p>Bret Easton Ellis’s debut novel is a powerhouse of existential horror. Narrated by Clay, an affluent college freshman, who returns home to Los Angeles for winter break in the early 80s. <a class="globalExcerptLinkCss" href="/reviews/less-than-zero-by-bret-easton-ellis/">Continue reading...</a></p>',
-        reviewedWork: {
-          title: "Less Than Zero",
-          year: 1985,
-          kind: "Novel",
-          authors: [
-            {
-              name: "Bret Easton Ellis",
-              slug: "bret-easton-ellis",
-              notes: null,
-            },
-          ],
-          cover: {
-            childImageSharp: {
-              gatsbyImageData: {
-                layout: "fixed" as Layout,
-                placeholder: {
-                  fallback:
-                    "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='160'%20height='256'%20viewBox='0%200%20160%20256'%20preserveAspectRatio='none'%3e%3cpath%20d='M69%2023c-16%205-20%207-25%2015-2%202-4%205-6%205l-4%205c0%203-2%207-4%209-3%204-2%2020%203%2030%204%207%206%209%205%204-2-9-2-18-1-18l1%204%202%2021c3%2011%206%2017%2010%2017%203%200%203%200%203%204%200%203%203%2012%206%2015%201%201%200%202-4%204-6%204-10%2010-7%2011%204%201%205%2010%201%2010l1%202c3%203%203%206%200%209-2%202-3%203-10%203h-8l-1-9-1-8c-1%200-12%206-18%2011-11%208-12%2013-12%2057v32h161l-1-47-1-49-14-8c-24-11-33-17-34-22%200-3-7-14-8-14l-1%202c-1%201-1-1-1-6v-9l3-1c3%200%204-1%205-5l4-6c2-1%202-2%201-3v-1l2-1-2-8c0-8%200-8-2-15l-1-5-1-1-1-1-2-5-1-5-2-2c-2-1-2-2-1-2v-1l-3-5-2-3-5-10c0-2-3-3-6-2h-3c-3-1-7-1-15%202m-5%20125h-5v25h3c3%200%203%200%203-4s0-5%202-5l4%205c2%203%202%204%205%204%204%200%204%200%201-6l-2-4%202-3%202-5c0-2-4-7-6-7h-9m22%2012l1%2013h18v-2c0-3%200-3-6-3s-6%200-6-3c0-2%200-2%205-2%204%200%205-1%205-3s0-2-5-2-5%200-5-2c0-3%200-3%206-3s6%200%206-2c0-3%200-3-10-3h-9v12m25-9c0%202%200%202%204%202h3v20h6v-20h4c3%200%203%200%203-2v-3h-20v3m-48%2030c-3%201-5%203-5%207s2%206%208%208c4%201%205%202%204%204h-8c-2-2-5-1-5%202%200%204%2014%205%2018%201%204-6%202-10-6-13l-5-3c0-2%203-2%206-1%204%201%207-1%205-4-2-1-9-2-12-1m50%200c-6%204-7%2016-3%2022%204%204%2012%204%2016%200%204-3%204-16%201-20-3-3-10-4-14-2M3%20193l1%2013h9c8%200%209-1%209-3s-1-3-6-3c-6%200-6%200-6-3%200-2%200-2%205-2s5%200%205-2-1-3-5-3-5%200-5-2%201-2%206-2%206-1%206-3%200-2-9-2H3v12m29%200c-5%2013-5%2013-1%2013l3-2c1-3%202-3%205-3%204%200%205%200%206%203%201%202%205%203%206%201l-3-12-5-11-3-1h-4l-4%2012m50-10c0%202%201%202%203%202h4v10l1%2011h5v-10l1-10%203-1c3%200%204%200%204-2s0-2-10-2-11%200-11%202m55%2011v12h3c2%200%202%200%202-7l1-7%205%207c3%205%205%207%207%207h3v-25h-6v13l-5-6c-3-6-4-7-7-7h-3v13m-21-7c-3%202-3%2010%200%2012%204%204%207%202%207-6%200-7-4-10-7-6m-89%2038v13h10c9%200%209%200%209-2s-1-3-7-3-6%200-6-2%201-3%206-3%205%200%205-2-1-3-6-3-5%200-5-2%201-3%207-3c5%200%206-1%206-2%200-2-1-3-10-3h-9v12m26%201v12h9c9%200%209%200%209-2%200-3%200-3-6-3h-6v-20h-6v13m25%200v12h9c9%200%209%200%209-2%200-3%200-3-6-3h-6v-20h-6v13m25-12l-1%2012v12h7v-24l-3-1-3%201m18%200c-8%204-6%2011%203%2015%204%201%205%202%205%203-1%202-6%203-8%201-3-2-3-2-4%200-2%202-2%202%200%203%208%206%2018%202%2018-6%200-3-2-5-8-7l-4-3c0-2%205-3%207-1%201%201%204%200%204-2%200-3-9-5-13-3'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
-                },
-                images: {
-                  fallback: {
-                    src: "/static/a629ec209cbebc4deb953ce4d5a522bf/3c07e/less-than-zero-by-bret-easton-ellis.jpg",
-                    srcSet:
-                      "/static/a629ec209cbebc4deb953ce4d5a522bf/3c07e/less-than-zero-by-bret-easton-ellis.jpg 160w,\n/static/a629ec209cbebc4deb953ce4d5a522bf/03875/less-than-zero-by-bret-easton-ellis.jpg 320w",
-                    sizes: "160px",
-                  },
-                  sources: [
-                    {
-                      srcSet:
-                        "/static/a629ec209cbebc4deb953ce4d5a522bf/7e230/less-than-zero-by-bret-easton-ellis.avif 160w,\n/static/a629ec209cbebc4deb953ce4d5a522bf/eccfc/less-than-zero-by-bret-easton-ellis.avif 320w",
-                      type: "image/avif",
-                      sizes: "160px",
-                    },
-                  ],
-                },
-                width: 160,
-                height: 256,
+      ],
+      cover: {
+        childImageSharp: {
+          gatsbyImageData: {
+            layout: "fixed" as const,
+            backgroundColor: "#080808",
+            images: {
+              fallback: {
+                src: "/static/794d3075a7009bf20aafaa07c5679d56/4ed50/the-shining-by-stephen-king.jpg",
+                srcSet:
+                  "/static/794d3075a7009bf20aafaa07c5679d56/4ed50/the-shining-by-stephen-king.jpg 168w,\n/static/794d3075a7009bf20aafaa07c5679d56/9a248/the-shining-by-stephen-king.jpg 336w",
+                sizes: "168px",
               },
+              sources: [
+                {
+                  srcSet:
+                    "/static/794d3075a7009bf20aafaa07c5679d56/5ae08/the-shining-by-stephen-king.avif 168w,\n/static/794d3075a7009bf20aafaa07c5679d56/0d95f/the-shining-by-stephen-king.avif 336w",
+                  type: "image/avif",
+                  sizes: "168px",
+                },
+              ],
             },
+            width: 168,
+            height: 252,
           },
         },
       },
-      {
-        frontmatter: {
-          grade: "A-",
-          slug: "on-writing-by-stephen-king",
-          sequence: 4,
+    },
+    {
+      grade: "B",
+      sequence: 46,
+      workSlug: "moonraker-by-ian-fleming",
+      dateFinished: "16 Oct 2022",
+      excerpt:
+        '<p>James Bond investigates a popular self-made millionaire with surgically enhanced looks, an interest in rockets, and a relentless, larger-than-life personality. <a data-continue-reading href="/reviews/moonraker-by-ian-fleming/">Continue reading...</a></p>',
+      title: "Moonraker",
+      kind: "Novel",
+      authors: [
+        {
+          name: "Ian Fleming",
+          slug: "ian-fleming",
+          notes: null,
         },
-        dateFinished: "21 Mar, 2022",
-        linkedExcerpt:
-          '<p>When writing my review of <a href="/reviews/the-cellar-by-richard-laymon/"><em>The Cellar</em></a>, I remembered something King had written in <em>On Writing</em> about reader-friendliness. Looking for the exact quote hooked me and I decided a reread might prove inspirational. <a class="globalExcerptLinkCss" href="/reviews/on-writing-by-stephen-king/">Continue reading...</a></p>',
-        reviewedWork: {
-          title: "On Writing",
-          year: 2000,
-          kind: "Nonfiction",
-          authors: [
-            {
-              name: "Stephen King",
-              slug: "stephen-king",
-              notes: null,
-            },
-          ],
-          cover: {
-            childImageSharp: {
-              gatsbyImageData: {
-                layout: "fixed" as Layout,
-                placeholder: {
-                  fallback:
-                    "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='160'%20height='256'%20viewBox='0%200%20160%20256'%20preserveAspectRatio='none'%3e%3cpath%20d='M0%20128v128h161V0H0v128m35-55c-5%202-5%209-1%2012%203%203%206%203%209%200%205-6-1-15-8-12M6%20122H4v54h4c3%200%204%200%203-1l1-3c2-1%202-1%203%202%200%203%200%203%202%201l4-3c3-1%201-2-9-3-2%200-2%200%200-1%204-1%204-3%200-3-3%200-3%200-2-2s4-3%206-1c0%202%203%201%203%200l2-2v-1h-4l2-1%201-1-1-1v-3l2-18-3-3c-2%200-4-6-3-8s-4-3-6-3l-3%201m35%200l-13%201v3l-1%202-1-3-1-3-1%204%201%206%201%205c0%202%200%202-1%201-1-2-1-2-1%201%200%202%200%202-1%201h-1l2%203%202%203v-6l1%202c0%202%203%205%204%205%202-1%203%200%205%203%201%202%203%204%204%203v2c-1%203%205%209%207%207l3-1c2%200%202-1%200-4v-2l2%201h3l2-1c1-2%205-3%204-1v1h3l13-1c6%200%209%201%209%202l6%201h4l-4%204-6%204-1%201-3-1-3-4-2-2-5%202h-2v2c1%202%201%202-1%202l-2-1-2-1-7-1-4%201c1%201%200%201-1%201l2%201h4c1-1%207%200%207%201s4%202%205%201%202-1%203%201c4%203%2014%209%2015%208l4%202%203%202-4-1c-3%200-4%200-7%203-4%203-4%203-8%202-7-2-8-1-5%202%202%203%202%203%203%202h3c12%208%2020%2011%2023%207%201-1%201-1-1-1-1%200-2%200-3-2l-6-3-6-2c-2-2-2-2%201-4s5-2%207-2h2c0-1%201-1%205%201s6%203%206%201h1l6-4%205-5-1-5c0-6-3-12-5-12l-6%201c-5%202-5%202-5%200l1-3%201-2%201-1c2-1%202-1%201-3-2-4-6-3-6%201l-1%202-1-5c0-6%200-6%2010-8%206-1%209%206%206%2014-1%202-1%202%201%202%201%200%202-1%202-6l1-6c1-1%205%205%205%209l3%206c2%202%203%206%201%206l-2%201-2%203c-2%202-2%202%200%202h5c2%201%205%200%203-2l2-3h2l2%201c3%200%205%203%206%209%200%205%201%207%203%207l1-2c0-8%201-13%203-12h1v-12l1-4%201-6c1-1%202-4%201-6v-4l-5-1c-7%200-8-1-6-8%201-6%200-7-2-2l-2%204%201-4v-3h-18a3521%203521%200%2001-80%200m21%2019l-1%206c0%202%200%202%206%202l16%202c-2%200-2%200-1%201%202%202%203%200%202-7%200-6-1-7-2-6h-1l1-1c1-1-3-1-9-1H63l-1%204m92%2036c-2%2012-2%2012-5%2010-2-2-3-2-6-1l-10%201c-8%200-8%201-3%204l3%204c0%202%206%2010%208%2011l6%204c2%203%204%204%204%203l-4-5c-4-3-4-4-3-5%203-2%202-2-3-2l-3-1%204-1c5%200%206-3%202-5-2%200-2%200%200-1%203%200%204%200%206%203%203%203%206%204%206%201l-3-3c-4%200-5-2-2-3%202%200%203-1%202-2%200-3%201-2%202%200s1-1%201-10v-12l-2%2010m-29-2l-1%201%201%203v2l-1-1h-6l1%203v2c-1-1-2%200-2%202-1%204%200%205%202%201%201-3%202-3%204-3%201%201%202%200%204-1%200-2%202-3%203-3%202%200%202%200%200-1l-2-1h2l7-1%204-1-8-2h-8m-76%201v10h9c10%200%2011-1%209-3-1-1-2-2-1-4v-2l-17-1m82%2024l1%202c2%201%201%205%200%204l-1%201%2021%2025%204%205v-12l-12-13c-7-8-13-13-13-12m-42%2037l-74%204-1%203-1%202h60c60%200%2060%200%2059-2v-4c2-4%202-4-43-3'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
-                },
-                images: {
-                  fallback: {
-                    src: "/static/7008abb3d42ce4dd5b1b206c6503d358/3c07e/on-writing-by-stephen-king.jpg",
-                    srcSet:
-                      "/static/7008abb3d42ce4dd5b1b206c6503d358/3c07e/on-writing-by-stephen-king.jpg 160w,\n/static/7008abb3d42ce4dd5b1b206c6503d358/03875/on-writing-by-stephen-king.jpg 320w",
-                    sizes: "160px",
-                  },
-                  sources: [
-                    {
-                      srcSet:
-                        "/static/7008abb3d42ce4dd5b1b206c6503d358/7e230/on-writing-by-stephen-king.avif 160w,\n/static/7008abb3d42ce4dd5b1b206c6503d358/eccfc/on-writing-by-stephen-king.avif 320w",
-                      type: "image/avif",
-                      sizes: "160px",
-                    },
-                  ],
-                },
-                width: 160,
-                height: 256,
+      ],
+      cover: {
+        childImageSharp: {
+          gatsbyImageData: {
+            layout: "fixed" as const,
+            backgroundColor: "#f8f8f8",
+            images: {
+              fallback: {
+                src: "/static/3b66fbd34eb88e5ee1a60723d581a5db/4ed50/moonraker-by-ian-fleming.jpg",
+                srcSet:
+                  "/static/3b66fbd34eb88e5ee1a60723d581a5db/4ed50/moonraker-by-ian-fleming.jpg 168w,\n/static/3b66fbd34eb88e5ee1a60723d581a5db/9a248/moonraker-by-ian-fleming.jpg 336w",
+                sizes: "168px",
               },
+              sources: [
+                {
+                  srcSet:
+                    "/static/3b66fbd34eb88e5ee1a60723d581a5db/5ae08/moonraker-by-ian-fleming.avif 168w,\n/static/3b66fbd34eb88e5ee1a60723d581a5db/0d95f/moonraker-by-ian-fleming.avif 336w",
+                  type: "image/avif",
+                  sizes: "168px",
+                },
+              ],
             },
+            width: 168,
+            height: 252,
           },
         },
       },
-      {
-        frontmatter: {
-          grade: "C-",
-          slug: "the-max-muscle-plan-by-brad-schoenfeld",
-          sequence: 3,
+    },
+    {
+      grade: "B",
+      sequence: 45,
+      workSlug: "salems-lot-by-stephen-king",
+      dateFinished: "14 Oct 2022",
+      excerpt:
+        '<p><strong>Stephen King’s sophomore novel</strong> transplants <a href="/reviews/dracula-by-bram-stoker/"><em>the Dracula story</em></a> to a remote New England town named Jerusalem’s Lot—`Salem’s Lot to the locals. <a data-continue-reading href="/reviews/salems-lot-by-stephen-king/">Continue reading...</a></p>',
+      title: "'Salem's Lot",
+      kind: "Novel",
+      authors: [
+        {
+          name: "Stephen King",
+          slug: "stephen-king",
+          notes: null,
         },
-        dateFinished: "18 Mar, 2022",
-        linkedExcerpt:
-          '<p>Still laid up with a strained intercostal, I turned to another recommendation gleaned from various podcasts. Brad Schoenfeld turns up on all the evidence-based strength shows, as he publishes a considerable amount of research on muscular hypertrophy. <a class="globalExcerptLinkCss" href="/reviews/the-max-muscle-plan-by-brad-schoenfeld/">Continue reading...</a></p>',
-        reviewedWork: {
-          title: "The M.A.X. Muscle Plan",
-          year: 2012,
-          kind: "Nonfiction",
-          authors: [
-            {
-              name: "Brad Schoenfeld",
-              slug: "brad-schoenfeld",
-              notes: null,
-            },
-          ],
-          cover: {
-            childImageSharp: {
-              gatsbyImageData: {
-                layout: "fixed" as Layout,
-                placeholder: {
-                  fallback:
-                    "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='160'%20height='256'%20viewBox='0%200%20160%20256'%20preserveAspectRatio='none'%3e%3cpath%20d='M0%20128v128h161V0H0v128m26-79v19h9V47l3%2010%202%2011h7l3-12%203-12v24h9V30h-6c-5%200-6%200-6%202a637%20637%200%2000-6%2020l-3-11-2-11H26v19m48-1l-6%2019%205%201c4%200%205-1%205-3%200-3%2012-3%2012%200%200%202%201%203%206%203h5l-2-6-6-19-3-13H79l-5%2018m35-14l5%2010%203%205-5%209-6%2010h11l3-6%203-5%202%205%202%206h6l6-1-5-9-6-10%206-9%205-9h-11l-2%205-3%204-2-4-2-5h-12l2%204m-96%206l-1%202-1%205c0%205%201%206%203%204l5-1c7%200%206-2-1-3-7%200-6-2%201-2s7-3%200-3l-4-1h4l5-1c0-3-10-3-11%200m-2%2045c0%2011%200%2012%202%2012s2-1%202-8c0-9%201-8%203%203%201%208%203%206%205-3l1-7v7c0%208%200%208%203%208h2V72h-4l-3%201-1%205c-1%207-2%209-2%203%200-8-1-9-5-9h-3v13m62-12l-1%2012v12h6V85c0-12-1-13-3-13l-2%201m29%200l-1%2012v12h3c2%200%202%200%202-5s0-5%202-5c5%200%208-8%205-12-2-2-10-4-11-2m13%2012v12h5V72h-5v13m-67-8c-4%203-4%208%201%2011%203%202%204%205%202%205l-1-1-2-2c-2%200-3%201-3%202%200%203%202%205%206%205%207%200%209-8%202-12-3-2-4-5-2-5l1%202%203%201c3%200%203-3%200-5s-4-2-7-1m14%200c-4%202-6%2016-1%2019%204%203%2010%200%2010-5l-2-2c-2%200-3%201-3%203l-1%202-1-7%201-7%201%202c0%201%201%202%203%202%203%200%203-4%200-6s-4-2-7-1m21%200c-4%202-6%2016-1%2019%204%203%2010%200%2010-5l-2-2c-2%200-3%201-3%202l-1%203-1-3c0-4%200-4%204-4%203%200%203%200%203-4%200-5-4-8-9-6m41%201c-3%202-3%206%201%206%202%200%202%200%202-2l1-3c2%200%200%205-2%207-3%201-3%202-3%206v5h11V87c0-9%200-9-3-10s-4-1-7%201m20-1h-8v20h3c2%200%202%200%202-8l1-8c1-1%201%202%201%208v8h3c2%200%203-1%203-9%200-7%200-9-2-10-1-2-2-2-3-1M31%2087l1%2010h11V87c0-10%200-10-2-10-3%200-3%200-3%208l-1%208-1-8c0-8%200-8-3-8h-2v10m76%2021c0%201%200%202-1%201-1-3-4%200-4%204%200%202%200%202%202%200l2-1c0%201%205%201%205-1h1l2%202%202-1h1c2%201%209%201%208-1h3c1%201%201%201%201-1s-1-2-5-2l-5%201-1%202v-1l-1-2-2%202c-1%201-1%200-1-1%200-2%200-3-1-2l-2%201-2%201v1l-1-2c-1-2-1-2-1%200m-46%2021c2%202%204%203%205%202l1%202c-1%206%201%206%206%200l5-6-10-1h-9l2%203m82%205v3l-2%202-1%201-2%201-3%205-2%206-1%204-2%202-1%204-2%204%201%203%201-2h4l1-1h1c-2%205%207-3%209-8%201-1%201-2%203-1l1-1v-1c1%201%201%200%201-1l1%203c1%205%201%205%202%203v-14c0-2-1-2-1%202-1%203-1%203-1-2%200-10%200-13-1-11s-1%202-1%200c-1-2-5-3-5-1m-7%2042h-3l-3%201h-4c-3%200-4%201-4%203l-1%203v-3c0-3-1-4-2-2h-3l-1%202c0%202%201%204%203%203h3l2-2c0-2%200-2%201-1%200%202%201%202%203%202%203-1%204%200%201%202-1%201-4%202-13%202l-4%201-1%201-2%201c0%201-1%201-1-1-2-2-3-2-3%203-1%203-1%203%201%203l6-2c3%200%204-1%204-2h1c0%202%202%201%202-1h1c0%202%202%202%209%201l2-1v-3l1-3c1%200%202%202%202%205h4v-1l-1-3c1-1%201%200%202%201%201%203%203%203%203%200h1l2%202%201-2h7c2%200%202%200%202-2-1-3-3-4-3-1h-18c-2%200-1-2%200-2%205%200%206%200%206-2s-3-4-3-2m-99%2015l-2%204c0%202-1%202-2%202-1-1-2%200-2%201l3%201%201%202c0%202%200%202-8%202-8-1-8-1-8%202s7%203%207%200h1c0%202%201%202%204%202h4v6c0%205%200%205%202%205s3%200%203-2v-10c1%202%206%201%206-1v-2l2%202%203%201%201%201%201%201c2%200%200-4-4-8l-5-7-2-1-2-1c0-3-2-2-3%200m21%2032l-3%202h-8l-2-1c-2%200-2%201-2%205%200%203%200%204%202%204l1-3%201-3%201%204c0%202%200%203%202%203%203%200%203-1%203-4v-3l1%203c0%202%201%203%202%203h3c1%200%202-11%200-11l-1%201m6%201l1%203v6c2%201%204%201%205-1h1c0%202%203%202%205%200%202-1%202-1%202%201%200%203%202%200%202-4l1-3v3c0%206%202%205%202%200l-1-5-2-1-1-1-1%204-1%204-2%201-1%201-1-3c0-2%201-3%202-2s3-1%201-2c-1-2-4-1-5%202%200%202%200%202-2%200s-3-3%200-2l1-1c0-3-5-2-6%200'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
-                },
-                images: {
-                  fallback: {
-                    src: "/static/6a17656340c238054e88c263185673b6/3c07e/the-max-muscle-plan-by-brad-schoenfeld.jpg",
-                    srcSet:
-                      "/static/6a17656340c238054e88c263185673b6/3c07e/the-max-muscle-plan-by-brad-schoenfeld.jpg 160w,\n/static/6a17656340c238054e88c263185673b6/03875/the-max-muscle-plan-by-brad-schoenfeld.jpg 320w",
-                    sizes: "160px",
-                  },
-                  sources: [
-                    {
-                      srcSet:
-                        "/static/6a17656340c238054e88c263185673b6/7e230/the-max-muscle-plan-by-brad-schoenfeld.avif 160w,\n/static/6a17656340c238054e88c263185673b6/eccfc/the-max-muscle-plan-by-brad-schoenfeld.avif 320w",
-                      type: "image/avif",
-                      sizes: "160px",
-                    },
-                  ],
-                },
-                width: 160,
-                height: 256,
+      ],
+      cover: {
+        childImageSharp: {
+          gatsbyImageData: {
+            layout: "fixed" as const,
+            backgroundColor: "#080808",
+            images: {
+              fallback: {
+                src: "/static/069c1d318c1a90f3aa0ae55b5eab6d8d/4ed50/salems-lot-by-stephen-king.jpg",
+                srcSet:
+                  "/static/069c1d318c1a90f3aa0ae55b5eab6d8d/4ed50/salems-lot-by-stephen-king.jpg 168w,\n/static/069c1d318c1a90f3aa0ae55b5eab6d8d/9a248/salems-lot-by-stephen-king.jpg 336w",
+                sizes: "168px",
               },
+              sources: [
+                {
+                  srcSet:
+                    "/static/069c1d318c1a90f3aa0ae55b5eab6d8d/5ae08/salems-lot-by-stephen-king.avif 168w,\n/static/069c1d318c1a90f3aa0ae55b5eab6d8d/0d95f/salems-lot-by-stephen-king.avif 336w",
+                  type: "image/avif",
+                  sizes: "168px",
+                },
+              ],
             },
+            width: 168,
+            height: 252,
           },
         },
       },
-      {
-        frontmatter: {
-          grade: "C+",
-          slug: "the-cellar-by-richard-laymon",
-          sequence: 2,
+    },
+    {
+      grade: "B",
+      sequence: 44,
+      workSlug: "cant-hurt-me-by-david-goggins",
+      dateFinished: "13 Oct 2022",
+      excerpt:
+        '<p>David Goggins escapes an abusive home and overcomes a dead-end career to become a Navy Seal and world-class endurance athlete. <a data-continue-reading href="/reviews/cant-hurt-me-by-david-goggins/">Continue reading...</a></p>',
+      title: "Can't Hurt Me",
+      kind: "Nonfiction",
+      authors: [
+        {
+          name: "David Goggins",
+          slug: "david-goggins",
+          notes: null,
         },
-        dateFinished: "16 Mar, 2022",
-        linkedExcerpt:
-          '<p>Single-mom Donna flees town with her daughter Sandy after her ex-husband Roy makes parole. A car accident strands Donna and Sandy in Malcasa Point, a small northern California town whose claim to fame is an aging mansion known as Beast House. <a class="globalExcerptLinkCss" href="/reviews/the-cellar-by-richard-laymon/">Continue reading...</a></p>',
-        reviewedWork: {
-          title: "The Cellar",
-          year: 1980,
-          kind: "Novel",
-          authors: [
-            {
-              name: "Richard Laymon",
-              slug: "richard-laymon",
-              notes: null,
-            },
-          ],
-          cover: {
-            childImageSharp: {
-              gatsbyImageData: {
-                layout: "fixed" as Layout,
-                placeholder: {
-                  fallback:
-                    "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='160'%20height='256'%20viewBox='0%200%20160%20256'%20preserveAspectRatio='none'%3e%3cpath%20d='M0%20128v128h161V0H0v128M10%2028v24c-1%201-1%201%202%201s3%200%202-1l-1-6c0-6%203-6%206%200%203%205%206%207%209%207l-1-2-5-5c-3-4-3-5-1-7%202-4%201-9-1-10-3-2-12-3-10-1m35%201c-7%205-6%2019%201%2023%204%202%2011%201%2012-1%202-3%201-5-1-2-1%202-6%203-9%201-4-2-6-12-4-17s11-6%2013-1l2%203v-4c0-2-1-3-2-3-3-2-10-1-12%201m19-1l1%2013v12h2c3%200%203%200%202-1l-1-7v-6h11v14h2c3%200%203%200%202-1V28c1-1%201-1-3-1-2%200-3%200-2%201l1%205v5H68v-6c0-5%200-5-2-5-3%200-3%200-2%201m32%200l-4%2012-4%2012c-1%201-1%201%201%201s3-1%203-3c0-6%201-7%204-7s3%200%204%205c1%203%202%205%204%205s2%200%201-1l-5-14-4-10m14%200v24c-1%201-1%201%202%201s3%200%202-1l-1-6c0-6%203-6%206%200%203%205%206%207%209%207l-1-2-5-5c-3-4-3-5-1-7%202-4%201-9-1-10-3-2-12-3-10-1m20%200l1%2013v12h5c9%200%2014-4%2014-13%200-6-2-10-7-12-3-1-15-2-13%200m4%2012l1%2011h4c5%200%208-3%208-11%200-7-4-11-9-11h-4v11m-29%2020c-9%207-9%2035%200%2042s17-4%2017-23c0-17-8-27-17-19m-95-1c2%202%202%2043%200%2043l5%201c7%201%208%201%208-4%200-3%200-3-1-1%200%202-1%203-4%203h-3l-1-20%201-22c1-1%201-1-3-1-3%200-3%200-2%201m24-1a805%20805%200%2001-7%2046c3%200%203-1%202-4l1-8c1-6%201-6%204-6h4l1%207%202%209c0%201%204%202%205%201l-1-2c-1-1-3-8-5-22-4-16-6-25-6-21m10%202c4%204%209%2023%209%2032l-1%2010%202%201h4l-1-1-1-10c0-10%204-26%207-32%202-2%202-2-1-2-2%200-3%200-3%204l-2%2011-2%208-3-8-2-11c0-4-1-4-4-4s-3%200-2%202m26%205a749%20749%200%20000%2038l1-1V79l1-7%203%2015%205%2015%204-15c4-16%205-16%205-2%200%2015%201%2018%204%2018s3%200%202-1c-2-2-2-4-4-22l-1-22-5%2018-5%2018a288%20288%200%2001-9-36l-1%207m58%2015l-1%2022%202%201c4%201%205%200%203-1-1-1-2-4-2-18V68l9%2017%209%2018%201-21%201-23c1-1%201-1-2-1-4%200-4%200-2%202l1%2018v16l-9-18-9-18-1%2022m-23-17c-7%209-3%2039%206%2039%208%200%2011-29%204-39-3-4-7-4-10%200m2%2055c-1%201%200%201%202%201s3%201%203%202l2%201c2%200%208%207%207%209-1%203%200%205%203%205l2%203%202-1c3-3%203-5-1-11-3-6-6-8-11-9h-9m-86%201l15%207%2014%208a1398%201398%200%2000-22-13c-8-3-9-4-7-2m80%204h-3c-9-1-16%205-16%2014v6h3c4%200%204%201%205%205s2%205%205%205l3-1%203-7c2-7%201-10-4-12-3-1-8%201-8%205-1%203-4%205-6%203v-6c2-8%2010-12%2017-8%204%201%205%201%203-1-1-2-1-2%201-2v-1l-3-1v1M6%20143c0%201%2014%2010%2022%2013l13%207%2028%2010a242%20242%200%200132%2012c4%200%201-2-11-6a302%20302%200%2001-36-14%20357%20357%200%2001-48-22m105%2035c-1%201-2%201-1%202l-1%201h-1c0%202%200%202%203%201l1-2c-1-1-1-1%201-1l7%201h-6v4c1%204%201%204-2%204-2%201-2%201%201%201%205%200%206%203%201%204h-6c-2-3-3-4%200-4%201-1%200-1-1-1-2%200-5%205-2%205l1%203c0%203%202%205%204%204%202-2%201-3-1-4l7%201h6c4-3%205-2%202%200l-4%202c-1%200-2%201-2%203%200%205%207%200%209-8l2-2%201%202c1%201%201%200%201-2%200-10-10-18-20-14m-35%2023v8h4l3-1h-2c-3%200-3%200-3-3%200-2%200-3%202-3l1%201c0%202%2022%2012%2027%2012l2%201%206%203a313%20313%200%20018%201l-20-10-18-6-7-3-1-3c0-3%200-3%203-3h2l-4-1h-3v7m-56%2011c-5%202-8%2010-8%2020%201%208%202%2011%208%2015%204%202%2014%203%2016%201l1-7-1%202c0%204-9%205-14%201-9-7-9-26%200-30%206-3%2013%200%2014%204%201%203%201%203%201-1%201-4%200-4-2-5H20m24%206l1%2016v15h6c5%200%206-1%206-3%200-3%200-3-1-1s-5%203-7%201l-1-7c0-6%200-6%203-6l4%201c1%201%201%201%201-1s0-3-4-2h-4v-6c0-5%201-5%203-5%204%200%205%202%201%202-2%200-1%201%204%202%206%202%209%202%207%200l-3-2a6831%206831%200%2001-4-2c0-3%200-3-7-3-5%200-6%200-5%201m20%200v30l6%201c6%200%207-1%207-2%200-2%200-2-1-1l-5%201h-2l-1-14%201-15c1-1%201-1-3-1-3%200-3%200-2%201m19%200v30l6%201c6%200%207-1%207-3s0-2-1-1c-1%202-3%202-5%202h-2l-1-14%201-15c1-1%201-1-3-1-3%200-3%200-2%201m25-1c0%203-8%2029-10%2030-1%202-1%202%202%202%202%200%203-1%203-4%200-7%201-9%205-8%204%200%204%200%206%206%201%206%201%206%204%206s3%200%202-1l-6-16-6-15m16%201l1%2016v15h3c3%200%203%200%202-2-2-1-2-3-2-7%201-6%203-7%207%200%204%206%205%208%209%209h3l-3-2-6-7-3-5%202-4c4-8%202-13-8-14-6%200-6%200-5%201m4%208c0%207%201%208%203%208%203%200%205-2%205-7%200-4-2-8-5-8s-3%200-3%207'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
-                },
-                images: {
-                  fallback: {
-                    src: "/static/09ede9abf8a00d98baa271fb7053e337/3c07e/the-cellar-by-richard-laymon.jpg",
-                    srcSet:
-                      "/static/09ede9abf8a00d98baa271fb7053e337/3c07e/the-cellar-by-richard-laymon.jpg 160w,\n/static/09ede9abf8a00d98baa271fb7053e337/03875/the-cellar-by-richard-laymon.jpg 320w",
-                    sizes: "160px",
-                  },
-                  sources: [
-                    {
-                      srcSet:
-                        "/static/09ede9abf8a00d98baa271fb7053e337/7e230/the-cellar-by-richard-laymon.avif 160w,\n/static/09ede9abf8a00d98baa271fb7053e337/eccfc/the-cellar-by-richard-laymon.avif 320w",
-                      type: "image/avif",
-                      sizes: "160px",
-                    },
-                  ],
-                },
-                width: 160,
-                height: 256,
+      ],
+      cover: {
+        childImageSharp: {
+          gatsbyImageData: {
+            layout: "fixed" as const,
+            backgroundColor: "#180808",
+            images: {
+              fallback: {
+                src: "/static/0d12ac8e4b095846adb8129e5f5c95e4/4ed50/cant-hurt-me-by-david-goggins.jpg",
+                srcSet:
+                  "/static/0d12ac8e4b095846adb8129e5f5c95e4/4ed50/cant-hurt-me-by-david-goggins.jpg 168w,\n/static/0d12ac8e4b095846adb8129e5f5c95e4/9a248/cant-hurt-me-by-david-goggins.jpg 336w",
+                sizes: "168px",
               },
+              sources: [
+                {
+                  srcSet:
+                    "/static/0d12ac8e4b095846adb8129e5f5c95e4/5ae08/cant-hurt-me-by-david-goggins.avif 168w,\n/static/0d12ac8e4b095846adb8129e5f5c95e4/0d95f/cant-hurt-me-by-david-goggins.avif 336w",
+                  type: "image/avif",
+                  sizes: "168px",
+                },
+              ],
             },
+            width: 168,
+            height: 252,
           },
         },
       },
-      {
-        frontmatter: {
-          grade: "C",
-          slug: "brother-iron-sister-steel-by-dave-draper",
-          sequence: 1,
+    },
+    {
+      grade: "C-",
+      sequence: 43,
+      workSlug: "out-are-the-lights-by-richard-laymon",
+      dateFinished: "11 Oct 2022",
+      excerpt:
+        '<p>In a small California town, the Haunted Palace cinema specializes in horror films. Between showings of <em>The Hills Have Eyes</em> and <em>The Texas Chainsaw Massacre</em>, they play exclusive shorts featuring madman Otto Schreck. But unbeknownst to the audience, the horrific murders in these grainy films are real. <a data-continue-reading href="/reviews/out-are-the-lights-by-richard-laymon/">Continue reading...</a></p>',
+      title: "Out Are the Lights",
+      kind: "Novel",
+      authors: [
+        {
+          name: "Richard Laymon",
+          slug: "richard-laymon",
+          notes: null,
         },
-        dateFinished: "06 Mar, 2022",
-        linkedExcerpt:
-          '<p>A strained intercostal muscle has me laid up from training, and I wanted motivation. This came recommended by Eric Helms on his <em>Iron Culture</em> podcast. <a class="globalExcerptLinkCss" href="/reviews/brother-iron-sister-steel-by-dave-draper/">Continue reading...</a></p>',
-        reviewedWork: {
-          title: "Brother Iron, Sister Steel",
-          year: 2001,
-          kind: "Nonfiction",
-          authors: [
-            {
-              name: "Dave Draper",
-              slug: "dave-draper",
-              notes: null,
-            },
-          ],
-          cover: {
-            childImageSharp: {
-              gatsbyImageData: {
-                layout: "fixed" as Layout,
-                placeholder: {
-                  fallback:
-                    "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='160'%20height='256'%20viewBox='0%200%20160%20256'%20preserveAspectRatio='none'%3e%3cpath%20d='M0%2063a1931%201931%200%20002%2059l5-4%204-2%201-2c-1-2%200-3%201-4s1-1%201%202c0%205%204%2010%209%2010l4%201%202-2c1-2%201-3%202-2%200%202%202%201%202-1l1-3%201-3v-7c-1-9-1-8-3%202l-2%207-1-4-1-4-1-1c-2%200-2%200%200-7%200-3%202-5%202-5l1-1%201-2%201-2%202-2%201-1%201-2c2-3%203-2%202%201v3l2-3c3-2%206-3%205%200l-1%202-2%204c-2%202-2%202-3%201-2-2-2-2-2%200s1%204%203%205l2%205%203%209c2%206%203%206%206%206l5-1c2-1%204-7%204-10s0-3-2-1c-2%201-2%201-2-1%200-7-1-7-3-2l-1%206c-2%201-6-3-8-8-2-6-3-7-1-7%201%200%202-1%202-3l2-8%201-5-3-1v1l-1%201-3-1v-5l2-2c2%200%202%200%202%202v1l2-3c0-1%201-2%202-1h3l2%202h2l2%201%202%203v-3l-2-6-2-6-1-2v2l-1%204c-2%203-4-1-4-8%200-5-2-9-3-6h-5c-1%200%200%202%202%202%202%202%203%203%203%205%200%205-7%207-8%202-1-2%200-3%202-1%203%201%203%201%203-1l-2-2c-5-2-5-6-1-8%202-1%205%200%205%201h1l5-1c5%200%2016-5%2014-6l-2-4-2-2c-2%200-3%201-3%203l-1%203c-1%200-2-2-2-7-1-7-3-7-3%201-1%208-3%208-3%200l-1-6c-4-2-2-3%204-3%206%201%207%201%207%203s0%203%202%203%202%200%202-3c0-2%200-3%202-3l1%208%201%207%201-8v-7h4c3%200%204%200%204%202l-2%201c-2%200-3%201-3%202l3%201%202%201c0%203%202-2%202-4%200-3%200-3%204-3s11-1%2018-4c4-1%204-1%203-3-3-3-5-11-4-14%201-2%204-3%204-1l1%201%201-3a248%20248%200%2000-55%200c0-2-18-1-18%201h-1c-1-2-3-2-17-2H0v63M113%204c0%205-2%209-3%209h-1l-2%201-2%202c0%202%202%204%204%204l4%201h5l-1-1-1-2h1l1-2%201-2%201-2%201%201%204%206%203%205%201%201%203%202c1%202%205%201%204-1v-3h-1v-2l-2-1h-3l-3-5c-4-3-4-4-3-7%200-5-1-8-3-8l-2%201c0%201-3%201-5-1l-1%204m44%2020c-1%203-2%204-9%204h-8v6c1%206%201%207%203%2010%203%203%206%204%205%202l2-6%202-3-1%204v6l-2%202v9c0%201%203-1%203-3s1-1%204%202l4%202V21l-3%203M37%2025c-5%202-6%209-3%2013%207%206%2017-3%2012-10-2-3-6-4-9-3m-26%207c0%208%201%209%206%207%203-1%204-3%202-6v-4c0-3-1-4-5-4-3%200-3%200-3%207m11%201c0%207%201%209%203%205l1-2%201%202%203%202c1%200%201-1-1-3v-4c4-3%202-8-4-8h-3v8m3%2014c-3%203-2%205%202%207l2%203h-3c-2-2-3-1-2%201%200%203%203%203%206%202%205-2%203-15-2-15l-3%202m117%202l1%203c0%202%200%202-2%201-4-2-4-2-3%200l-2%204c-2%202-2%202-3%200l-2-2v6c-1%202-1%202%203%201%204%200%205%200%206%203l1%203%201-3%201-1%203%208%203%207%201%202%203%202h-3l6%206%203%202c1%201%201%201%201-4%200-7-4-16-9-22-4-4-5-5-4-8%201-5-3-11-5-8m-24%204l-2%201c-3%200-3%202%200%203l2%202-2%202-2%203-2%204-2%203h6l2-1%206-4c4-2%204-2%202-3l-2-1c-1%202-4-2-4-5s-2-7-2-4M99%2071l-2%204c-2%201-2%202-1%202v2l-2%203h-1l-1%201h-2v-7l-2%206-2%204c-2%200-2-2%200-6s2-6%200-4c-4%205-6%207-7%206l1%201c1%202%201%202-1%202h-3l-3%202-3%201c-1%201-1%201-3-2l-3-5c-2-2-3-5-1-4h2c1-1%201-1-1-1s-3%200-2-2c0-2%200-2-2%201l-1%203-1-3c0-2-4-4-4-2l1%201%201%202%202%203%207%2010c0%202%208%204%2014%204h8l6-4%209-5%209-4c4-3%204-3%202-4h-4c0%201-1%201-3-1-2-1-2-1-3%201-1%201-1%201%202%201%202%200%202%200%201%201-3%202-6%200-6-4l-1-3m20%208c-1%202-15%207-17%207-6%200-9%206-9%2015%200%208-2%2017-3%2014%200-2-1-2-5%200-7%203-14%2010-17%2019-3%208-4%209-2%200%202-6%202-9%200-9s-2%201-2%206l-4%207v1l-1%201-1%204c0%202%200%203%201%202h1l3-3%202-1c0%203%203%201%2010-5l6-4c0%202-11%2011-14%2012l-4%203c0%202%200%202-1%201l-4%204c-4%204-5%207-3%205l1%201c-1%201-1%201%200%200l1%201c-1%202%200%202%201%202l2%202c1%203%201%203-2%200-2-2-3-2-3-1%200%203-2%202-4-1-1-2-2-3-3-2l-2%203c0%201%2010%2011%2012%2011v5l2%201v-8l3-12c1-8%201-9%201-4l-1%2019-1%2011c1%201%206-4%207-6%201-1%201%200%201%204l-2%208c0%202%200%202%204%202l5%201%201%202v3c0%204%202%202%203-4l3-8c2-3%203-5%201-3l-2-1-2%204c-1%204-2%205-2%203-1-1%201-8%203-13v-2c0-2%202-4%203-3l1-1%203-4%204-4%202%203c4%204%205%207%202%209l-2%206c-1%203-4%206-4%203l-1%201c-1%201-2%203-1%204%200%202%201%202%205-3l5-5c2%200-2%206-5%209l-3%204-2%206-1%205%201-1%201-3c2-1%202-1%204%203%202%206%202%207-1%205-2-1-5%200-5%202l6%202v1l-2%203-2%201c-2%200-7%207-6%208l1-1c1-2%205-3%206-2%202%201-1%204-3%203l-2%201-3%204c-2%203-2%203%200%203s3%202%202%204-1%202%202%202h4l-1%201-1%202c0%202-1%203-4%203-4%200-4%202%201%202%203%200%204%200%205%204l2%203h19l-1-2-2-2-1-4h-1c-2%201-2%201-3-1v-2l-1-1c-2-2-2-2%200-6%202-3%2011-12%2018-17l2-3h-1c-1%202-1%201-3-2%200-2%200-2%201-1h6l2%201v-1c-1-1-1-1%201-1l5-3%205-3c3%200-1-3-5-4l-3-1-1-1-4-1c-2-2-3-2-3-1h-1c0-2-1-2-1-1%200%202-4%201-4-1l-3-2c-3%200-5-2-3-2l1-1h-1l-1-1%201-2v-1l1-1%201-1-1-1v-1l-1-2c-3%200-2-6%201-8l3-1h-3l-2-2c0-4%201-4%208%200l7%203%202%201c0%202%200%202%201%201l18-5c5-1%2012-1%2012%201%200%203-3%204-6%203s-4%200%200%202l2%202%201%201%201-1%202-1c3-1%203-21%200-21l-1%203-2%208-8-11-1-1c-1%201-1%207%201%209l-1%201-4%201-4%201-2%201h-4l-3-1a74%2074%200%2001-12-4l-4-2-1-1c-5%200-8-5-6-11%201-5%203-6%208-3l3%201v-3c-2%200-9-7-9-9%200-1-3-2-5%200l-1%202v4c2%203%201%2013-1%2015s-5%200-7-4l-2-2-1-1h-1v-3c-2-1-2-2%200-8%201-4%204-5%206-2%201%202%201%201%201-2v-3c-1-1%200-1%201-2l5-2h-1c-2%200-3%200-3-2-1-2%202-4%2010-4l6-1h-14c-2%201-2%201-1-1s0-9-1-11v-3c1-3%203-4%207-5l4-2c2-2%205-3%204-1-1%201%203%206%207%209%204%204%209%206%2018%207l13%202h5c3%200%203%200%203-6s0-7-3-4h-1c0-2%200-2-1-1s-1%201-1-1%200-2-2%201l-2%204h-7l-10-1c-3%200-11-6-9-7l-4-2c-4-2-4-2-2-2s2%200-2-2l-6-2c-4%201%202-8%206-11%205-3%207-5%205-5l-2%201M97%20206l1%205%201-1%203-3c2-1%202-1%202%201%200%203%201%204%204%203%202%200%203-2%201-2l-2-1%201-1c2%201%202-2%200-2v-1c3%200%202-3-1-3l-3%201h-1l-4-1c-2%200-2%200-2%205m-27%202l-2%204c-1%204%200%208%202%204h1l1%202v1l-4%202h-1c1-2-1-3-3-2v2h-1l-3%201c-3%203-3%205%200%203l8-2c6%200%2011-2%209-4l2-4c5-4%204-5-2-3-3%202-6%200-6-3l-1-1m-41%202l-4%202c-2%201-2%201%200%201l2%203h1l2-2c2%200%203%201%202%202l1%202%201-2h1c3%202%200%203-8%203-7%200-7-1-6-3%200-2%200-2-2-1l-1%203-1%201c-2-1-3%201-2%207l-1%203-1-6c0-4%200-5-1-4h-2l-1%201-2%201c-3-1-6-3-5-4l-1-1-1%2020v20h54v-3l2-5%201-3%201%202c0%202%201%202%201%201v-3l-1-3-1-4v-9c-1-1-1-1-1%201%200%203-5-7-5-10l-1-1-2-1h-2c-1%201-1%201-1-1v-2l-4-1c2-1-1-3-5-3l-3-1-1-1-3%201'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
-                },
-                images: {
-                  fallback: {
-                    src: "/static/9dabf7c0c3609407cb2d3ae9f2d8f83f/3c07e/brother-iron-sister-steel-by-dave-draper.jpg",
-                    srcSet:
-                      "/static/9dabf7c0c3609407cb2d3ae9f2d8f83f/3c07e/brother-iron-sister-steel-by-dave-draper.jpg 160w,\n/static/9dabf7c0c3609407cb2d3ae9f2d8f83f/03875/brother-iron-sister-steel-by-dave-draper.jpg 320w",
-                    sizes: "160px",
-                  },
-                  sources: [
-                    {
-                      srcSet:
-                        "/static/9dabf7c0c3609407cb2d3ae9f2d8f83f/7e230/brother-iron-sister-steel-by-dave-draper.avif 160w,\n/static/9dabf7c0c3609407cb2d3ae9f2d8f83f/eccfc/brother-iron-sister-steel-by-dave-draper.avif 320w",
-                      type: "image/avif",
-                      sizes: "160px",
-                    },
-                  ],
-                },
-                width: 160,
-                height: 256,
+      ],
+      cover: {
+        childImageSharp: {
+          gatsbyImageData: {
+            layout: "fixed" as const,
+            backgroundColor: "#181808",
+            images: {
+              fallback: {
+                src: "/static/d12a903f0f3b171be2be1904af2dec4c/4ed50/out-are-the-lights-and-other-tales-by-richard-laymon.jpg",
+                srcSet:
+                  "/static/d12a903f0f3b171be2be1904af2dec4c/4ed50/out-are-the-lights-and-other-tales-by-richard-laymon.jpg 168w,\n/static/d12a903f0f3b171be2be1904af2dec4c/9a248/out-are-the-lights-and-other-tales-by-richard-laymon.jpg 336w",
+                sizes: "168px",
               },
+              sources: [
+                {
+                  srcSet:
+                    "/static/d12a903f0f3b171be2be1904af2dec4c/5ae08/out-are-the-lights-and-other-tales-by-richard-laymon.avif 168w,\n/static/d12a903f0f3b171be2be1904af2dec4c/0d95f/out-are-the-lights-and-other-tales-by-richard-laymon.avif 336w",
+                  type: "image/avif",
+                  sizes: "168px",
+                },
+              ],
             },
+            width: 168,
+            height: 252,
           },
         },
       },
-    ],
-  },
+    },
+    {
+      grade: "C+",
+      sequence: 42,
+      workSlug: "what-doesnt-kill-us-by-scott-carney",
+      dateFinished: "04 Oct 2022",
+      excerpt:
+        '<p>Journalist Scott Carney investigates Wim Hof’s cold exposure and breathing methods. He enters a skeptic but emerges a believer, joining Hof on a record-breaking ascent of Mount Kilimanjaro. <a data-continue-reading href="/reviews/what-doesnt-kill-us-by-scott-carney/">Continue reading...</a></p>',
+      title: "What Doesn't Kill Us",
+      kind: "Nonfiction",
+      authors: [
+        {
+          name: "Scott Carney",
+          slug: "scott-carney",
+          notes: null,
+        },
+      ],
+      cover: {
+        childImageSharp: {
+          gatsbyImageData: {
+            layout: "fixed" as const,
+            backgroundColor: "#78c8e8",
+            images: {
+              fallback: {
+                src: "/static/3476cf961fd1f42f67b03a31ad595999/4ed50/what-doesnt-kill-us-by-scott-carney.jpg",
+                srcSet:
+                  "/static/3476cf961fd1f42f67b03a31ad595999/4ed50/what-doesnt-kill-us-by-scott-carney.jpg 168w,\n/static/3476cf961fd1f42f67b03a31ad595999/9a248/what-doesnt-kill-us-by-scott-carney.jpg 336w",
+                sizes: "168px",
+              },
+              sources: [
+                {
+                  srcSet:
+                    "/static/3476cf961fd1f42f67b03a31ad595999/5ae08/what-doesnt-kill-us-by-scott-carney.avif 168w,\n/static/3476cf961fd1f42f67b03a31ad595999/0d95f/what-doesnt-kill-us-by-scott-carney.avif 336w",
+                  type: "image/avif",
+                  sizes: "168px",
+                },
+              ],
+            },
+            width: 168,
+            height: 252,
+          },
+        },
+      },
+    },
+    {
+      grade: "C+",
+      sequence: 41,
+      workSlug: "the-big-sleep-by-raymond-chandler",
+      dateFinished: "24 Sep 2022",
+      excerpt:
+        '<p><strong>Raymond Chandler’s debut novel.</strong> Los Angeles private investigator Philip Marlowe takes on an aging tycoon’s blackmail case that spirals into a labyrinthine series of murders. <a data-continue-reading href="/reviews/the-big-sleep-by-raymond-chandler/">Continue reading...</a></p>',
+      title: "The Big Sleep",
+      kind: "Novel",
+      authors: [
+        {
+          name: "Raymond Chandler",
+          slug: "raymond-chandler",
+          notes: null,
+        },
+      ],
+      cover: {
+        childImageSharp: {
+          gatsbyImageData: {
+            layout: "fixed" as const,
+            backgroundColor: "#080808",
+            images: {
+              fallback: {
+                src: "/static/278bd19713d519a6e1a0dff393cf28d8/4ed50/the-big-sleep-by-raymond-chandler.jpg",
+                srcSet:
+                  "/static/278bd19713d519a6e1a0dff393cf28d8/4ed50/the-big-sleep-by-raymond-chandler.jpg 168w,\n/static/278bd19713d519a6e1a0dff393cf28d8/9a248/the-big-sleep-by-raymond-chandler.jpg 336w",
+                sizes: "168px",
+              },
+              sources: [
+                {
+                  srcSet:
+                    "/static/278bd19713d519a6e1a0dff393cf28d8/5ae08/the-big-sleep-by-raymond-chandler.avif 168w,\n/static/278bd19713d519a6e1a0dff393cf28d8/0d95f/the-big-sleep-by-raymond-chandler.avif 336w",
+                  type: "image/avif",
+                  sizes: "168px",
+                },
+              ],
+            },
+            width: 168,
+            height: 252,
+          },
+        },
+      },
+    },
+    {
+      grade: "B",
+      sequence: 40,
+      workSlug: "consider-this-by-chuck-palahniuk",
+      dateFinished: "22 Sep 2022",
+      excerpt:
+        '<p>Chuck Palahniuk relates the tools he learned from his years in Tom Spanbauer’s minimalist writing workshop. <a data-continue-reading href="/reviews/consider-this-by-chuck-palahniuk/">Continue reading...</a></p>',
+      title: "Consider This",
+      kind: "Nonfiction",
+      authors: [
+        {
+          name: "Chuck Palahniuk",
+          slug: "chuck-palahniuk",
+          notes: null,
+        },
+      ],
+      cover: {
+        childImageSharp: {
+          gatsbyImageData: {
+            layout: "fixed" as const,
+            backgroundColor: "#d8c8a8",
+            images: {
+              fallback: {
+                src: "/static/3ba537a950bb251cc5ba3c0b019b39f9/4ed50/consider-this-by-chuck-palahniuk.jpg",
+                srcSet:
+                  "/static/3ba537a950bb251cc5ba3c0b019b39f9/4ed50/consider-this-by-chuck-palahniuk.jpg 168w,\n/static/3ba537a950bb251cc5ba3c0b019b39f9/9a248/consider-this-by-chuck-palahniuk.jpg 336w",
+                sizes: "168px",
+              },
+              sources: [
+                {
+                  srcSet:
+                    "/static/3ba537a950bb251cc5ba3c0b019b39f9/5ae08/consider-this-by-chuck-palahniuk.avif 168w,\n/static/3ba537a950bb251cc5ba3c0b019b39f9/0d95f/consider-this-by-chuck-palahniuk.avif 336w",
+                  type: "image/avif",
+                  sizes: "168px",
+                },
+              ],
+            },
+            width: 168,
+            height: 252,
+          },
+        },
+      },
+    },
+    {
+      grade: "B-",
+      sequence: 39,
+      workSlug: "carrie-by-stephen-king",
+      dateFinished: "19 Sep 2022",
+      excerpt:
+        '<p><strong>Stephen King’s debut novel.</strong> Carrie White is a fat, pimple-faced, black-haired girl who’s endured nothing but torment from her high-school peers and oppression from her deranged mother. But Carrie harbors a hidden talent. She can move things with her mind. <a data-continue-reading href="/reviews/carrie-by-stephen-king/">Continue reading...</a></p>',
+      title: "Carrie",
+      kind: "Novel",
+      authors: [
+        {
+          name: "Stephen King",
+          slug: "stephen-king",
+          notes: null,
+        },
+      ],
+      cover: {
+        childImageSharp: {
+          gatsbyImageData: {
+            layout: "fixed" as const,
+            backgroundColor: "#080808",
+            images: {
+              fallback: {
+                src: "/static/c233e3725052a48095176fdc450166d6/4ed50/carrie-by-stephen-king.jpg",
+                srcSet:
+                  "/static/c233e3725052a48095176fdc450166d6/4ed50/carrie-by-stephen-king.jpg 168w,\n/static/c233e3725052a48095176fdc450166d6/9a248/carrie-by-stephen-king.jpg 336w",
+                sizes: "168px",
+              },
+              sources: [
+                {
+                  srcSet:
+                    "/static/c233e3725052a48095176fdc450166d6/5ae08/carrie-by-stephen-king.avif 168w,\n/static/c233e3725052a48095176fdc450166d6/0d95f/carrie-by-stephen-king.avif 336w",
+                  type: "image/avif",
+                  sizes: "168px",
+                },
+              ],
+            },
+            width: 168,
+            height: 252,
+          },
+        },
+      },
+    },
+  ],
 };

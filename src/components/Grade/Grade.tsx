@@ -14,10 +14,14 @@ export function Grade({
   height,
   className,
 }: {
-  grade: string;
+  grade: string | null;
   height: 32 | 16;
   className?: string;
 }): JSX.Element | null {
+  if (!grade) {
+    return null;
+  }
+
   const [src, alt] = gradeMap[grade[0]];
 
   const width = height * 5;

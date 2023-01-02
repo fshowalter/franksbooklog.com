@@ -35,7 +35,7 @@ export function ReadingHistory({ work, ...rest }: IIReadingHistoryProps) {
 }
 
 export const query = graphql`
-  fragment ReadingHistory on WorksJson {
+  fragment ReadingHistory on ReviewedWork {
     readings {
       ...ReadingHistoryEntry
     }

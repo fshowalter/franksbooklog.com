@@ -109,7 +109,7 @@ function Title({
   );
 }
 
-function Authors({ authors }: { authors: Author[] }) {
+function Authors({ authors }: { authors: readonly Author[] }) {
   return (
     <Box color="muted" className={authorsTypographyStyle}>
       {toSentenceArray(authors.map((author) => author.name))}
@@ -127,7 +127,7 @@ export function Cover({
   title,
   year,
   grade,
-  dateFinished,
+  date,
   kind,
   edition,
   authors,
@@ -138,7 +138,7 @@ export function Cover({
   title: string;
   year: number;
   grade?: string | null;
-  dateFinished?: string;
+  date?: string;
   edition?: string | null;
   kind?: string | null;
   details?: React.ReactNode;
@@ -198,10 +198,10 @@ export function Cover({
           )}
           <Box>
             {/* <Spacer axis="vertical" size={8} /> */}
-            {dateFinished && (
+            {date && (
               <>
                 <Spacer axis="vertical" size={4} />
-                <Box>{dateFinished}</Box>
+                <Box>{date}</Box>
               </>
             )}
           </Box>

@@ -27,9 +27,7 @@ export function StatsPage({
   reviewCount: number;
   bookCount: number;
   fromShelfCount: number;
-  mostReadAuthors: Queries.MostReadAuthorsFragment[];
-  viewingsCountsByDecade: Queries.ByDecadeFragment;
-  mostWatchedMedia: Queries.TopMediaFragment;
+  mostReadAuthors: readonly Queries.MostReadAuthorFragment[];
   gradeDistributions?: readonly IDistribution[];
   kindDistributions: readonly IDistribution[];
   editionDistributions: readonly IDistribution[];

@@ -4,7 +4,7 @@ import type { GatsbyNodeContext } from "../createSchemaCustomization/type-defini
 export const reviewedWorkQuery = {
   Query: {
     reviewedWork: {
-      type: `${SchemaNames.WorksJson}!`,
+      type: `${SchemaNames.ReviewedWork}!`,
       args: {
         id: "String!",
       },

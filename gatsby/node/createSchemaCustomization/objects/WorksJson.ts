@@ -8,7 +8,6 @@ import type {
 } from "../type-definitions";
 import findDefaultCoverNode from "../utils/findDefaultCoverNode";
 import { resolveFieldForNode } from "../utils/resolveFieldForNode";
-import { sliceWorksForBrowseMore } from "../utils/sliceWorksForBrowseMore";
 import { ReadingNode } from "./ReadingsJson";
 
 export interface WorkNode extends GatsbyNode {
@@ -99,29 +98,6 @@ export const WorksJson = {
             },
           },
         });
-      },
-    },
-    browseMore: {
-      type: `[${SchemaNames.WorksJson}!]!`,
-      resolve: async (
-        source: WorkNode,
-        _args: unknown,
-        context: GatsbyNodeContext
-      ) => {
-        const { entries } = await context.nodeModel.findAll<WorkNode>({
-          type: SchemaNames.WorksJson,
-          query: {
-            filter: {
-              slug: { ne: null },
-            },
-            sort: {
-              fields: ["sortTitle"],
-              order: ["ASC"],
-            },
-          },
-        });
-
-        return sliceWorksForBrowseMore(Array.from(entries), source.id);
       },
     },
     readings: {

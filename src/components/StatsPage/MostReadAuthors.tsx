@@ -13,7 +13,7 @@ import {
 function AuthorName({
   author,
 }: {
-  author: Queries.MostWatchedAuthorFragment;
+  author: Queries.MostReadAuthorFragment;
 }): JSX.Element {
   if (author.slug) {
     return <Link to={`/shelf/authors/${author.slug}/`}>{author.name}</Link>;
@@ -25,9 +25,9 @@ function AuthorName({
 export function MostReadAuthors({
   authors,
 }: {
-  authors: Queries.MostReadAuthorFragment[];
+  authors: readonly Queries.MostReadAuthorFragment[];
 }): JSX.Element | null {
-  if (!authors) {
+  if (authors.length === 0) {
     return null;
   }
 
@@ -92,8 +92,8 @@ export function MostReadAuthors({
                           key={reading.sequence}
                           image={reading.cover}
                           title={reading.title}
-                          slug={reading.slug}
-                          year={reading.year}
+                          slug={reading.work.slug}
+                          year={reading.yearPublished}
                           date={reading.dateFinished}
                           edition={reading.edition}
                           kind={reading.kind}

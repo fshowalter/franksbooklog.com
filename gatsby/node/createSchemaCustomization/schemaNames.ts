@@ -10,4 +10,5 @@ export enum SchemaNames {
   TimelineEntry = "TimelineEntry",
   WorkKind = "WorkKind",
   MostReadAuthor = "MostReadAuthor",
+  ReviewedWork = "ReviewedWork",
 }

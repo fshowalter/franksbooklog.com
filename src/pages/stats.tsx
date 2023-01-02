@@ -33,7 +33,7 @@ export default function AllTimeStatsPage({
       title="All-Time Stats"
       tagline={tagline}
       year="all"
-      mostReadAuthors={data.mostReadAuthor.nodes}
+      mostReadAuthors={data.mostReadAuthors}
       allYears={data.reading.years}
       reviewCount={data.review.totalCount}
       bookCount={data.book.totalCount}
@@ -49,7 +49,7 @@ export default function AllTimeStatsPage({
 
 export const pageQuery = graphql`
   query AllTimeStatsPage {
-    mostReadAuthor: mostReadAuthors {
+    mostReadAuthors: mostReadAuthors {
       ...MostReadAuthor
     }
 

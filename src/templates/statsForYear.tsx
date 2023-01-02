@@ -3,7 +3,7 @@ import { HeadBuilder } from "../components/HeadBuilder";
 import { StatsPage } from "../components/StatsPage";
 
 interface IPageContext {
-  year: string;
+  year: number;
 }
 
 export function Head({
@@ -42,8 +42,8 @@ export default function StatsForYearTemplate({
     <StatsPage
       title={`${pageContext.year} Stats`}
       tagline={tagline}
-      year={pageContext.year}
-      mostReadAuthors={data.mostReadAuthor.nodes}
+      year={pageContext.year.toString()}
+      mostReadAuthors={data.mostReadAuthors}
       allYears={data.allReading.years}
       reviewCount={data.review.totalCount}
       bookCount={data.book.totalCount}
@@ -59,7 +59,7 @@ export default function StatsForYearTemplate({
 
 export const pageQuery = graphql`
   query StatsForYearTemplate($year: Int!) {
-    mostReadAuthor: mostReadAuthors(year: $year) {
+    mostReadAuthors: mostReadAuthors(year: $year) {
       ...MostReadAuthor
     }
 

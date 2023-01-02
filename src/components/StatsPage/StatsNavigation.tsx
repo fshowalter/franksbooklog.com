@@ -5,7 +5,7 @@ function AllTimeLink({
   currentYear,
   linkFunc,
 }: {
-  currentYear: number;
+  currentYear: string;
   linkFunc: (year: string) => string;
 }): JSX.Element {
   if (!currentYear) {
@@ -25,14 +25,14 @@ function YearLink({
   linkFunc,
 }: {
   year: string;
-  currentYear: number;
+  currentYear: string;
   linkFunc: (y: string) => string;
 }): JSX.Element | null {
   if (year === "all") {
     return null;
   }
 
-  if (parseInt(year) === currentYear) {
+  if (year === currentYear) {
     return (
       <Box as="li" display="block">
         {year}
@@ -52,7 +52,7 @@ export function StatsNavigation({
   years,
   linkFunc,
 }: {
-  currentYear: number;
+  currentYear: string;
   years: readonly string[];
   linkFunc: (year: string) => string;
 }): JSX.Element {
