@@ -1,0 +1,493 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`/shelf/progress/ renders shelf progress 1`] = `
+<DocumentFragment>
+  <a
+    class="Layout_skipToMainContentStyle__1824noh3 sprinkles_paddingLeft_24_default__1lrvpk9cy sprinkles_paddingRight_24_default__1lrvpk9em sprinkles_paddingTop_8_default__1lrvpk9g4 sprinkles_paddingBottom_8_default__1lrvpk9bm sprinkles_backgroundColor_subtle_default__1lrvpk924 sprinkles_color_accent__1lrvpk94 sprinkles_textAlign_center__1lrvpk917"
+    href="#content"
+  >
+    Skip to content
+  </a>
+  <div
+    class="Layout_bandStickyStyle__1824noh1 backgroundImage_ripNotComingSoonBackgroundImageStyle__ewlb040 sprinkles_minHeight_16_default__1lrvpk98v sprinkles_width_full_default__1lrvpk9kg"
+  />
+  <div
+    class="Layout_pageCanvasStyle__1824noh0 sprinkles_backgroundColor_default_default__1lrvpk91y sprinkles_display_flex_default__1lrvpk94p sprinkles_flexDirection_column_default__1lrvpk957"
+  >
+    <header
+      class="Layout_headerLayoutStyle__1824noh2 sprinkles_paddingLeft_pageMargin_default__1lrvpk9e7 sprinkles_paddingRight_pageMargin_default__1lrvpk9fv sprinkles_paddingTop_24_default__1lrvpk9ga sprinkles_paddingTop_32_desktop__1lrvpk9gf sprinkles_paddingBottom_24_default__1lrvpk9bs sprinkles_paddingBottom_32_desktop__1lrvpk9bx sprinkles_display_flex_default__1lrvpk94p sprinkles_rowGap_24_default__1lrvpk9hm sprinkles_alignItems_center_default__1lrvpk91g sprinkles_boxShadow_borderBottom_default__1lrvpk92p sprinkles_backgroundColor_default_default__1lrvpk91y"
+    >
+      <div
+        class="sprinkles_display_flex_default__1lrvpk94p sprinkles_flexDirection_column_default__1lrvpk957 sprinkles_alignItems_inherit_default__1lrvpk91j sprinkles_justifyItems_inherit__1lrvpk9r"
+      >
+        <h1
+          class="Mast_flagTypographyStyle__1107qlt0 sprinkles_whiteSpace_nowrap__1lrvpk91c sprinkles_fontWeight_normal__1lrvpk9n"
+        >
+          <a
+            class="sprinkles_color_default__1lrvpk95"
+            href="/"
+          >
+            Frank's Book Log
+          </a>
+        </h1>
+        <p
+          class="Mast_taglineStyle__1107qlt1 sprinkles_color_muted__1lrvpk96 sprinkles_lineHeight_16__1lrvpk9x sprinkles_width_full_default__1lrvpk9kg sprinkles_fontSize_small__1lrvpk9h"
+        >
+          Literature is a relative term.
+        </p>
+      </div>
+      <form
+        accept-charset="UTF-8"
+        action="https://www.google.com/search"
+        class="Mast_orderStyle__1107qlt3 sprinkles_boxShadow_borderAll_default__1lrvpk92s sprinkles_borderRadius_4__1lrvpk90 sprinkles_overflow_hidden__1lrvpk914 sprinkles_width_full_default__1lrvpk9kg sprinkles_width_unset_desktop__1lrvpk9ko sprinkles_maxWidth_prose_default__1lrvpk98d"
+        method="get"
+        role="search"
+      >
+        <label
+          class="sprinkles_display_flex_default__1lrvpk94p sprinkles_overflow_hidden__1lrvpk914"
+          for="search"
+        >
+          <div
+            class="ScreenReaderOnly_screenReaderOnlyStyle__1lzmpje0"
+          >
+            Search
+          </div>
+          <input
+            class="SiteSearchForm_searchInputStyle__p9uc60 sprinkles_paddingLeft_16_default__1lrvpk9cv sprinkles_paddingRight_16_default__1lrvpk9ej sprinkles_paddingTop_8_default__1lrvpk9g4 sprinkles_paddingBottom_8_default__1lrvpk9bm sprinkles_backgroundColor_subtle_default__1lrvpk924 sprinkles_color_default__1lrvpk95 sprinkles_fontSize_default__1lrvpk9i sprinkles_fontWeight_light__1lrvpk9m sprinkles_lineHeight_24__1lrvpk9y sprinkles_flexGrow_1__1lrvpk9e"
+            id="search"
+            name="q"
+            placeholder="Search..."
+            type="text"
+          />
+          <input
+            name="q"
+            type="hidden"
+            value="site:www.franksmovielog.com"
+          />
+          <button
+            aria-label="Search"
+            class="SiteSearchForm_submitButtonStyle__p9uc61 sprinkles_backgroundColor_subtle_default__1lrvpk924"
+            type="submit"
+            value="Search"
+          >
+            <svg
+              class="SiteSearchForm_iconStyle__p9uc62 SvgIcon_iconStyle__1ennvpn0"
+              height="1em"
+              viewBox="0 0 16 16"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10.442 10.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z"
+                fill-rule="evenodd"
+              />
+              <path
+                d="M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </button>
+        </label>
+      </form>
+      <nav
+        class="sprinkles_color_accent__1lrvpk94"
+      >
+        <ul
+          class="sprinkles_display_flex_default__1lrvpk94p sprinkles_flexWrap_wrap_default__1lrvpk95a sprinkles_justifyContent_center_default__1lrvpk96p sprinkles_rowGap_8_default__1lrvpk9hg sprinkles_columnGap_16_default__1lrvpk934 sprinkles_columnGap_24_tablet__1lrvpk938"
+        >
+          <li
+            class="sprinkles_display_block_default__1lrvpk94j sprinkles_letterSpacing_0.5__1lrvpk9u sprinkles_whiteSpace_nowrap__1lrvpk91c"
+          >
+            <a
+              class="sprinkles_color_inherit__1lrvpk99"
+              href="/"
+            >
+              Home
+            </a>
+          </li>
+          <li
+            class="sprinkles_display_block_default__1lrvpk94j sprinkles_letterSpacing_0.5__1lrvpk9u sprinkles_whiteSpace_nowrap__1lrvpk91c"
+          >
+            <a
+              class="sprinkles_color_inherit__1lrvpk99"
+              href="/how-i-grade/"
+            >
+              How I Grade
+            </a>
+          </li>
+          <li
+            class="sprinkles_display_block_default__1lrvpk94j sprinkles_letterSpacing_0.5__1lrvpk9u sprinkles_whiteSpace_nowrap__1lrvpk91c"
+          >
+            <a
+              class="sprinkles_color_inherit__1lrvpk99"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </li>
+          <li
+            class="sprinkles_display_block_default__1lrvpk94j sprinkles_letterSpacing_0.5__1lrvpk9u sprinkles_whiteSpace_nowrap__1lrvpk91c"
+          >
+            <a
+              class="sprinkles_color_inherit__1lrvpk99"
+              href="/shelf/"
+            >
+              Shelf
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div
+      class="sprinkles_flexGrow_1__1lrvpk9e"
+      id="content"
+    >
+      <main>
+        <header
+          class="sprinkles_paddingLeft_pageMargin_default__1lrvpk9e7 sprinkles_paddingRight_pageMargin_default__1lrvpk9fv sprinkles_display_flex_default__1lrvpk94p sprinkles_flexDirection_column_default__1lrvpk957 sprinkles_flexDirection_row_desktop__1lrvpk956 sprinkles_flexWrap_wrap_default__1lrvpk95a sprinkles_columnGap_32_default__1lrvpk93a sprinkles_justifyContent_space-between_default__1lrvpk96m"
+        >
+          <div
+            class="sprinkles_display_flex_default__1lrvpk94p sprinkles_flexDirection_column_default__1lrvpk957 sprinkles_alignItems_center_default__1lrvpk91g sprinkles_alignItems_flex-start_desktop__1lrvpk91o"
+          >
+            <h1
+              class="PageTitle_typographyStyle__o0ksb0 sprinkles_paddingTop_24_default__1lrvpk9ga sprinkles_paddingTop_32_desktop__1lrvpk9gf sprinkles_lineHeight_40__1lrvpk911"
+            >
+              Shelf Progress
+            </h1>
+            <q
+              class="sprinkles_color_subtle__1lrvpk97"
+            >
+              Read, read, read.
+            </q>
+            <span
+              class="sprinkles_width_px_default__1lrvpk9ka sprinkles_height_16_default__1lrvpk95p sprinkles_minWidth_px_default__1lrvpk9ap sprinkles_minHeight_16_default__1lrvpk98v sprinkles_display_block_default__1lrvpk94j"
+            />
+            <div
+              class="sprinkles_color_subtle__1lrvpk97"
+            >
+              <span
+                class="sprinkles_width_px_default__1lrvpk9ka sprinkles_height_16_default__1lrvpk95p sprinkles_minWidth_px_default__1lrvpk9ap sprinkles_minHeight_16_default__1lrvpk98v sprinkles_display_block_default__1lrvpk94j"
+              />
+              <p>
+                My progress working through 
+                <a
+                  href="/shelf/"
+                >
+                  my book-review bucketlist
+                </a>
+                .
+              </p>
+            </div>
+          </div>
+          <div
+            class="sprinkles_display_flex_default__1lrvpk94p sprinkles_flexWrap_wrap_default__1lrvpk95a sprinkles_columnGap_32_default__1lrvpk93a sprinkles_justifyContent_center_default__1lrvpk96p"
+          >
+            <div
+              class="sprinkles_minWidth_full_default__1lrvpk9av sprinkles_minWidth_0_tablet__1lrvpk99t sprinkles_display_flex_default__1lrvpk94p sprinkles_flexDirection_column_default__1lrvpk957 sprinkles_alignItems_center_default__1lrvpk91g"
+            >
+              <span
+                class="sprinkles_width_px_default__1lrvpk9ka sprinkles_height_32_default__1lrvpk95v sprinkles_minWidth_px_default__1lrvpk9ap sprinkles_minHeight_32_default__1lrvpk991 sprinkles_display_block_default__1lrvpk94j"
+              />
+              <svg
+                height="144"
+                viewBox="0 0 36 36"
+                width="144"
+              >
+                <path
+                  d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                  fill="none"
+                  stroke="var(--bgCanvas__hftm9ja)"
+                  stroke-width="3.8"
+                />
+                <path
+                  d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                  fill="none"
+                  stroke="var(--bgProgress__hftm9jb)"
+                  stroke-dasharray="30, 100"
+                  stroke-linecap="round"
+                  stroke-width="2.8"
+                />
+                <text
+                  fill="var(--fgDefault__hftm9j3)"
+                  font-size=".5em"
+                  text-anchor="middle"
+                  x="18"
+                  y="17"
+                >
+                  30%
+                </text>
+                <text
+                  fill="var(--fgDefault__hftm9j3)"
+                  font-size=".225em"
+                  text-anchor="middle"
+                  x="18"
+                  y="23"
+                >
+                  Total Progress
+                </text>
+                <text
+                  fill="var(--fgSubtle__hftm9j5)"
+                  font-size=".225em"
+                  text-anchor="middle"
+                  x="18"
+                  y="27"
+                />
+              </svg>
+              <span
+                class="sprinkles_width_px_default__1lrvpk9ka sprinkles_height_8_default__1lrvpk95m sprinkles_minWidth_px_default__1lrvpk9ap sprinkles_minHeight_8_default__1lrvpk98s sprinkles_display_block_default__1lrvpk94j"
+              />
+              <div
+                class="sprinkles_color_subtle__1lrvpk97 sprinkles_textAlign_center__1lrvpk917"
+              >
+                <div>
+                  9/30
+                </div>
+                <div
+                  class="sprinkles_fontSize_small__1lrvpk9h sprinkles_lineHeight_16__1lrvpk9x"
+                >
+                  Reviewed
+                </div>
+              </div>
+            </div>
+            <div>
+              <span
+                class="sprinkles_width_px_default__1lrvpk9ka sprinkles_height_32_default__1lrvpk95v sprinkles_minWidth_px_default__1lrvpk9ap sprinkles_minHeight_32_default__1lrvpk991 sprinkles_display_block_default__1lrvpk94j"
+              />
+              <svg
+                height="144"
+                viewBox="0 0 36 36"
+                width="144"
+              >
+                <path
+                  d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                  fill="none"
+                  stroke="var(--bgCanvas__hftm9ja)"
+                  stroke-width="3.8"
+                />
+                <path
+                  d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                  fill="none"
+                  stroke="var(--bgProgress__hftm9jb)"
+                  stroke-dasharray="27, 100"
+                  stroke-linecap="round"
+                  stroke-width="2.8"
+                />
+                <text
+                  fill="var(--fgDefault__hftm9j3)"
+                  font-size=".5em"
+                  text-anchor="middle"
+                  x="18"
+                  y="17"
+                >
+                  27%
+                </text>
+                <text
+                  fill="var(--fgDefault__hftm9j3)"
+                  font-size=".225em"
+                  text-anchor="middle"
+                  x="18"
+                  y="23"
+                >
+                  Author
+                </text>
+                <text
+                  fill="var(--fgSubtle__hftm9j5)"
+                  font-size=".225em"
+                  text-anchor="middle"
+                  x="18"
+                  y="27"
+                >
+                  Titles
+                </text>
+              </svg>
+              <span
+                class="sprinkles_width_px_default__1lrvpk9ka sprinkles_height_8_default__1lrvpk95m sprinkles_minWidth_px_default__1lrvpk9ap sprinkles_minHeight_8_default__1lrvpk98s sprinkles_display_block_default__1lrvpk94j"
+              />
+              <div
+                class="sprinkles_color_subtle__1lrvpk97 sprinkles_textAlign_center__1lrvpk917"
+              >
+                <div>
+                  8/29
+                </div>
+                <div
+                  class="sprinkles_fontSize_small__1lrvpk9h sprinkles_lineHeight_16__1lrvpk9x"
+                >
+                  Reviewed
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div
+          class="sprinkles_paddingLeft_0_default__1lrvpk9cm sprinkles_paddingLeft_gutter_tablet__1lrvpk9e5 sprinkles_paddingLeft_pageMargin_desktop__1lrvpk9e9 sprinkles_paddingRight_0_default__1lrvpk9ea sprinkles_paddingRight_gutter_tablet__1lrvpk9ft sprinkles_paddingRight_pageMargin_desktop__1lrvpk9fx"
+        >
+          <span
+            class="sprinkles_width_px_default__1lrvpk9ka sprinkles_height_32_default__1lrvpk95v sprinkles_minWidth_px_default__1lrvpk9ap sprinkles_minHeight_32_default__1lrvpk991 sprinkles_display_block_default__1lrvpk94j"
+          />
+          <section>
+            <h3
+              class="sprinkles_paddingLeft_gutter_default__1lrvpk9e4 sprinkles_paddingRight_gutter_default__1lrvpk9fs sprinkles_paddingTop_8_default__1lrvpk9g4 sprinkles_paddingBottom_8_default__1lrvpk9bm sprinkles_backgroundColor_canvas_default__1lrvpk91v sprinkles_fontSize_medium__1lrvpk9j sprinkles_position_sticky_default__1lrvpk9h7 sprinkles_top_0_default__1lrvpk9ig sprinkles_top_128_desktop__1lrvpk9j9 sprinkles_zIndex_500__1lrvpk91e sprinkles_fontWeight_normal__1lrvpk9n"
+            >
+              Author Progress
+            </h3>
+            <table
+              class="StatsTable_tableBorderStyle__i0b6pj1 StatsTable_tableWhiteSpaceStyle__i0b6pj2 sprinkles_position_relative_default__1lrvpk9h4 sprinkles_boxShadow_borderAll_default__1lrvpk92s sprinkles_width_full_default__1lrvpk9kg"
+            >
+              <thead
+                class="StatsTable_stickyTableHeaderStyle__i0b6pj0 sprinkles_paddingLeft_24_default__1lrvpk9cy sprinkles_paddingRight_24_default__1lrvpk9em sprinkles_backgroundColor_default_default__1lrvpk91y"
+              >
+                <tr>
+                  <th
+                    class="sprinkles_textAlign_left__1lrvpk915 sprinkles_paddingLeft_gutter_default__1lrvpk9e4"
+                  >
+                    Name
+                  </th>
+                  <th>
+                     
+                  </th>
+                  <th
+                    class="sprinkles_textAlign_right__1lrvpk916 sprinkles_paddingRight_gutter_default__1lrvpk9fs"
+                  >
+                    Progress
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr
+                  class="sprinkles_lineHeight_40__1lrvpk911 sprinkles_backgroundColor_zebraOdd_default__1lrvpk92g"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_gutter_default__1lrvpk9e4 sprinkles_paddingRight_gutter_default__1lrvpk9fs sprinkles_paddingTop_0_default__1lrvpk9fy sprinkles_paddingBottom_0_default__1lrvpk9bg sprinkles_textAlign_left__1lrvpk915"
+                  >
+                    <a
+                      href="/shelf/authors/richard-laymon/"
+                    >
+                      Richard Laymon
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__i0b6pj3 sprinkles_paddingTop_0_default__1lrvpk9fy sprinkles_paddingBottom_0_default__1lrvpk9bg sprinkles_width_full_default__1lrvpk9kg"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__1lg1w540"
+                      style="--bar-percent: 16%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__1lrvpk9fy sprinkles_paddingBottom_0_default__1lrvpk9bg sprinkles_textAlign_right__1lrvpk916 sprinkles_paddingRight_gutter_default__1lrvpk9fs"
+                  >
+                    4/25
+                  </td>
+                </tr>
+                <tr
+                  class="sprinkles_lineHeight_40__1lrvpk911 sprinkles_backgroundColor_zebraOdd_default__1lrvpk92g"
+                >
+                  <td
+                    class="sprinkles_paddingLeft_gutter_default__1lrvpk9e4 sprinkles_paddingRight_gutter_default__1lrvpk9fs sprinkles_paddingTop_0_default__1lrvpk9fy sprinkles_paddingBottom_0_default__1lrvpk9bg sprinkles_textAlign_left__1lrvpk915"
+                  >
+                    <a
+                      href="/shelf/authors/stephen-king/"
+                    >
+                      Stephen King
+                    </a>
+                  </td>
+                  <td
+                    class="StatsTable_hideOnSmallScreensStyle__i0b6pj3 sprinkles_paddingTop_0_default__1lrvpk9fy sprinkles_paddingBottom_0_default__1lrvpk9bg sprinkles_width_full_default__1lrvpk9kg"
+                  >
+                    <div
+                      class="BarGradient_gradientBackgroundStyle__1lg1w540"
+                      style="--bar-percent: 100%;"
+                    >
+                       
+                    </div>
+                  </td>
+                  <td
+                    class="sprinkles_paddingTop_0_default__1lrvpk9fy sprinkles_paddingBottom_0_default__1lrvpk9bg sprinkles_textAlign_right__1lrvpk916 sprinkles_paddingRight_gutter_default__1lrvpk9fs sprinkles_color_progress__1lrvpk9b"
+                  >
+                    4/4
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          <span
+            class="sprinkles_width_px_default__1lrvpk9ka sprinkles_height_64_default__1lrvpk964 sprinkles_minWidth_px_default__1lrvpk9ap sprinkles_minHeight_64_default__1lrvpk99a sprinkles_display_block_default__1lrvpk94j"
+          />
+        </div>
+      </main>
+    </div>
+    <footer
+      class="backgroundImage_ripNotComingSoonBackgroundImageStyle__ewlb040 sprinkles_paddingLeft_pageMargin_default__1lrvpk9e7 sprinkles_paddingRight_pageMargin_default__1lrvpk9fv sprinkles_paddingTop_32_default__1lrvpk9gd sprinkles_paddingBottom_32_default__1lrvpk9bv sprinkles_color_inverse__1lrvpk98 sprinkles_display_flex_default__1lrvpk94p sprinkles_rowGap_24_default__1lrvpk9hm sprinkles_alignItems_center_default__1lrvpk91g sprinkles_flexDirection_column_default__1lrvpk957"
+    >
+      <nav>
+        <ul
+          class="sprinkles_display_flex_default__1lrvpk94p sprinkles_flexWrap_wrap_default__1lrvpk95a sprinkles_justifyContent_center_default__1lrvpk96p sprinkles_rowGap_8_default__1lrvpk9hg sprinkles_columnGap_16_default__1lrvpk934 sprinkles_columnGap_24_tablet__1lrvpk938"
+        >
+          <li
+            class="sprinkles_display_block_default__1lrvpk94j sprinkles_letterSpacing_0.5__1lrvpk9u sprinkles_whiteSpace_nowrap__1lrvpk91c"
+          >
+            <a
+              class="sprinkles_color_inherit__1lrvpk99"
+              href="/"
+            >
+              Home
+            </a>
+          </li>
+          <li
+            class="sprinkles_display_block_default__1lrvpk94j sprinkles_letterSpacing_0.5__1lrvpk9u sprinkles_whiteSpace_nowrap__1lrvpk91c"
+          >
+            <a
+              class="sprinkles_color_inherit__1lrvpk99"
+              href="/how-i-grade/"
+            >
+              How I Grade
+            </a>
+          </li>
+          <li
+            class="sprinkles_display_block_default__1lrvpk94j sprinkles_letterSpacing_0.5__1lrvpk9u sprinkles_whiteSpace_nowrap__1lrvpk91c"
+          >
+            <a
+              class="sprinkles_color_inherit__1lrvpk99"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </li>
+          <li
+            class="sprinkles_display_block_default__1lrvpk94j sprinkles_letterSpacing_0.5__1lrvpk9u sprinkles_whiteSpace_nowrap__1lrvpk91c"
+          >
+            <a
+              class="sprinkles_color_inherit__1lrvpk99"
+              href="/shelf/"
+            >
+              Shelf
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <p
+        class="sprinkles_fontWeight_light__1lrvpk9m sprinkles_fontSize_small__1lrvpk9h sprinkles_lineHeight_16__1lrvpk9x"
+      >
+        All images used in accordance with the 
+        <a
+          class="sprinkles_color_inherit__1lrvpk99"
+          href="http://www.copyright.gov/title17/92chap1.html#107"
+        >
+          Fair Use Law.
+        </a>
+      </p>
+      <div
+        class="ScreenReaderOnly_screenReaderOnlyStyle__1lzmpje0"
+      >
+        <a
+          href="#top"
+        >
+          To the top ↑
+        </a>
+      </div>
+    </footer>
+  </div>
+</DocumentFragment>
+`;

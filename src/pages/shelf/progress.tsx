@@ -19,8 +19,8 @@ import {
 export function Head(): JSX.Element {
   return (
     <HeadBuilder
-      pageTitle="Watchlist Progress"
-      description="My progress working through my movie review bucketlist."
+      pageTitle="Shelf Progress"
+      description="My progress working through my bucketlist shelf of titles."
       article={false}
       image={null}
     />
