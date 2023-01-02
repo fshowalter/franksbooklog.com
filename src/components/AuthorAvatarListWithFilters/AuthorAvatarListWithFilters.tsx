@@ -183,7 +183,7 @@ export function AuthorAvatarListWithFilters({
           <Spacer axis="vertical" size={{ default: 32, tablet: 64 }} />
           <Box
             as="ol"
-            data-testid="entity-list"
+            data-testid="author-list"
             paddingX={{
               default: 0,
               tablet: "pageMargin",
