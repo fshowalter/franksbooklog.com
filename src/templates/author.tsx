@@ -91,7 +91,9 @@ export const pageQuery = graphql`
         }
       }
     }
-    distinct: allAuthorsJson(filter: { id: { eq: $id } }) {
+    distinct: allAuthorsJson(
+      filter: { id: { eq: $id }, works: { elemMatch: { id: { ne: null } } } }
+    ) {
       publishedYears: distinct(field: { works: { yearPublished: SELECT } })
       kinds: distinct(field: { works: { kind: SELECT } })
     }
