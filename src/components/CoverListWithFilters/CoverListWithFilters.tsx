@@ -316,7 +316,7 @@ export function CoverListWithFilters({
               total={state.filteredItems.length}
             />
           </Box>
-          <Box as="ol" data-testid="poster-list">
+          <Box as="ol" data-testid="cover-list">
             {[...groupedItems].map(([group, items], index) => {
               return (
                 <Box as="li" key={group} display="block">
