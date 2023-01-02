@@ -132,7 +132,6 @@ export function Cover({
   edition,
   authors,
   details,
-  showTitle = true,
 }: {
   slug?: string | null;
   image: IGraphqlImage;
@@ -142,9 +141,8 @@ export function Cover({
   dateFinished?: string;
   edition?: string | null;
   kind?: string | null;
-  showTitle?: boolean;
   details?: React.ReactNode;
-  authors?: Author[];
+  authors?: readonly Author[];
 }): JSX.Element {
   return (
     <Box

@@ -28,7 +28,6 @@ export function MoreReviews({
             slug={work.slug}
             image={work.cover}
             authors={work.authors}
-            image={work.cover}
           />
         );
       })}
