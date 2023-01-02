@@ -1,4 +1,4 @@
-function HeadBuilder({
+export function HeadBuilder({
   pageTitle,
   description,
   image = null,
@@ -20,4 +20,3 @@ function HeadBuilder({
     </>
   );
 }
-export default HeadBuilder;

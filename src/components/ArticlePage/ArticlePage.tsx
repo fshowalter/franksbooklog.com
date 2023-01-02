@@ -1,36 +1,65 @@
-import { IGatsbyImageData } from "gatsby-plugin-image";
-import React from "react";
-import HeroImage from "../HeroImage";
-import Layout from "../Layout";
-import PageTitle from "../PageTitle";
-import RenderedMarkdown from "../RenderedMarkdown";
-import {
-  articleCss,
-  bodyCss,
-  imageCss,
-  titleCss,
-} from "./ArticlePage.module.scss";
+import { graphql } from "gatsby";
+import { Box } from "../Box";
+import { GraphqlImage } from "../GraphqlImage";
+import { Layout } from "../Layout";
+import { LongFormText } from "../LongFormText";
+import { PageTitle } from "../PageTitle";
+import { Spacer } from "../Spacer";
 
-export default function ArticlePage({
+export function ArticlePage({
   image,
   alt,
-  title,
-  articleText,
+  article,
 }: {
-  image: IGatsbyImageData;
+  image: Queries.ArticlePageBackdropFragment | null;
   alt: string;
-  articleText: string;
-  title: string;
+  article: Queries.ArticlePageFragment | null;
 }): JSX.Element {
   return (
     <Layout>
       <main>
-        <article className={articleCss}>
-          <PageTitle className={titleCss}>{title}</PageTitle>
-          <HeroImage image={image} alt={alt} className={imageCss} />
-          <RenderedMarkdown className={bodyCss} text={articleText} />
-        </article>
+        <Box
+          as="article"
+          display="flex"
+          flexDirection="column"
+          alignItems="center"
+        >
+          <PageTitle
+            paddingX="pageMargin"
+            paddingY={{ default: 24, desktop: 32 }}
+            textAlign="center"
+          >
+            {article?.frontmatter?.title}
+          </PageTitle>
+          <GraphqlImage image={image} alt={alt} />
+          <Spacer axis="vertical" size={64} />
+          <Box paddingX="pageMargin">
+            <LongFormText maxWidth="prose" text={article?.html} />
+          </Box>
+          <Spacer axis="vertical" size={128} />
+        </Box>
       </main>
     </Layout>
   );
 }
+
+export const query = graphql`
+  fragment ArticlePage on MarkdownRemark {
+    html
+    frontmatter {
+      title
+    }
+  }
+
+  fragment ArticlePageBackdrop on File {
+    childImageSharp {
+      gatsbyImageData(
+        layout: CONSTRAINED
+        formats: [JPG, AVIF]
+        quality: 80
+        width: 1000
+        placeholder: BLURRED
+      )
+    }
+  }
+`;

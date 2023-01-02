@@ -1,5 +1,4 @@
 jest.unmock("./HeadBuilder");
-// eslint-disable-next-line import/no-extraneous-dependencies
 import {
   createHistory,
   createMemorySource,
@@ -7,12 +6,12 @@ import {
 } from "@gatsbyjs/reach-router";
 import { render } from "@testing-library/react";
 import { useStaticQuery } from "gatsby";
-import Seo from "./HeadBuilder";
+import { HeadBuilder } from "./HeadBuilder";
 
 const source = createMemorySource("test");
 const history = createHistory(source);
 
-describe("Seo", () => {
+describe("HeadBuilder", () => {
   beforeEach(() => {
     (useStaticQuery as jest.Mock).mockImplementationOnce(() => ({
       site: {
@@ -25,12 +24,20 @@ describe("Seo", () => {
     }));
   });
 
+  // Helmet uses requestAnimationFrame to ensure DOM is synced.
+  // https://github.com/nfl/react-helmet/blob/master/test/HelmetDeclarativeTest.js
+  // eslint-disable-next-line jest/no-done-callback
   it("sets meta", () => {
     expect.hasAssertions();
     render(
-      <LocationProvider history={history}>
-        <Seo pageTitle="Test Page" description="A generic description." />
-      </LocationProvider>,
+      <>
+        <LocationProvider history={history}>
+          <HeadBuilder
+            pageTitle="Test Page"
+            description="A generic description."
+          />
+        </LocationProvider>
+      </>,
       { container: document.head }
     );
 
@@ -40,12 +47,12 @@ describe("Seo", () => {
           Test Page | Frank's Movie Log
         </title>
         <meta
-          content="A generic description."
-          name="description"
-        />
-        <meta
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
           name="viewport"
+        />
+        <meta
+          content="A generic description."
+          name="description"
         />
         <meta
           content="https://www.franksmovielog.com/assets/default_og.jpg"
@@ -56,7 +63,7 @@ describe("Seo", () => {
           property="og:url"
         />
         <meta
-          content="Test Page | Frank's Movie Log"
+          content="Test Page"
           property="og:title"
         />
         <meta
@@ -67,15 +74,21 @@ describe("Seo", () => {
     `);
   });
 
+  // Helmet uses requestAnimationFrame to ensure DOM is synced.
+  // https://github.com/nfl/react-helmet/blob/master/test/HelmetDeclarativeTest.js
+  // eslint-disable-next-line jest/no-done-callback
   it("sets meta for articles", () => {
+    expect.hasAssertions();
     render(
-      <LocationProvider history={history}>
-        <Seo
-          pageTitle="Test Page"
-          description="A generic description."
-          article
-        />
-      </LocationProvider>,
+      <>
+        <LocationProvider history={history}>
+          <HeadBuilder
+            pageTitle="Test Page"
+            description="A generic description."
+            article
+          />
+        </LocationProvider>
+      </>,
       { container: document.head }
     );
 
@@ -85,12 +98,12 @@ describe("Seo", () => {
           Test Page | Frank's Movie Log
         </title>
         <meta
-          content="A generic description."
-          name="description"
-        />
-        <meta
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
           name="viewport"
+        />
+        <meta
+          content="A generic description."
+          name="description"
         />
         <meta
           content="https://www.franksmovielog.com/assets/default_og.jpg"
@@ -105,7 +118,7 @@ describe("Seo", () => {
           property="og:type"
         />
         <meta
-          content="Test Page | Frank's Movie Log"
+          content="Test Page"
           property="og:title"
         />
         <meta
@@ -117,14 +130,17 @@ describe("Seo", () => {
   });
 
   it("does not set sub-title on root", () => {
+    expect.hasAssertions();
     render(
-      <LocationProvider history={history}>
-        <Seo
-          pageTitle="Frank's Movie Log"
-          description="A generic description."
-          article
-        />
-      </LocationProvider>,
+      <>
+        <LocationProvider history={history}>
+          <HeadBuilder
+            pageTitle="Frank's Movie Log"
+            description="A generic description."
+            article
+          />
+        </LocationProvider>
+      </>,
       { container: document.head }
     );
 

@@ -1,7 +1,6 @@
 import { graphql } from "gatsby";
-import { IGatsbyImageData } from "gatsby-plugin-image";
-import ArticlePage from "../components/ArticlePage";
-import HeadBuilder from "../components/HeadBuilder";
+import { ArticlePage } from "../components/ArticlePage";
+import { HeadBuilder } from "../components/HeadBuilder";
 
 export function Head(): JSX.Element {
   return (
@@ -14,53 +13,27 @@ export function Head(): JSX.Element {
   );
 }
 
-export default function GonePage({ data }: PageQueryResult): JSX.Element {
-  const { backdrop, page } = data;
-
+export default function GonePage({
+  data,
+}: {
+  data: Queries.GonePageQuery;
+}): JSX.Element {
   return (
     <ArticlePage
-      image={backdrop.childImageSharp.gatsbyImageData}
+      image={data.backdrop}
       alt="Jake Gittes walks away."
-      articleText={page.html}
-      title={page.frontmatter.title}
+      article={data.page}
     />
   );
 }
 
-type PageQueryResult = {
-  data: {
-    backdrop: {
-      childImageSharp: {
-        gatsbyImageData: IGatsbyImageData;
-      };
-    };
-    page: {
-      html: string;
-      frontmatter: {
-        title: string;
-      };
-    };
-  };
-};
-
 export const pageQuery = graphql`
-  query {
+  query GonePage {
     backdrop: file(absolutePath: { regex: "/backdrops/gone.png$/" }) {
-      childImageSharp {
-        gatsbyImageData(
-          layout: CONSTRAINED
-          formats: [JPG, AVIF]
-          quality: 80
-          width: 1000
-          placeholder: TRACED_SVG
-        )
-      }
+      ...ArticlePageBackdrop
     }
     page: markdownRemark(frontmatter: { slug: { eq: "gone" } }) {
-      html
-      frontmatter {
-        title
-      }
+      ...ArticlePage
     }
   }
 `;

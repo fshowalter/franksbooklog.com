@@ -1,1 +1,194 @@
-[{"name": "Donna Tartt", "sort_name": "Tartt, Donna", "slug": "donna-tartt", "reviewed": true}, {"name": "Peter Straub", "sort_name": "Straub, Peter", "slug": "peter-straub", "reviewed": false}, {"name": "David H. Hackworth", "sort_name": "Hackworth, David H.", "slug": "david-h-hackworth", "reviewed": true}, {"name": "Philip Fracassi", "sort_name": "Fracassi, Philip", "slug": "philip-fracassi", "reviewed": true}, {"name": "John McPhee", "sort_name": "McPhee, John", "slug": "john-mcphee", "reviewed": true}, {"name": "Scott Carney", "sort_name": "Carney, Scott", "slug": "scott-carney", "reviewed": true}, {"name": "Jesse Itzler", "sort_name": "Itzler, Jesse", "slug": "jesse-itzler", "reviewed": true}, {"name": "Robert Greene", "sort_name": "Greene, Robert", "slug": "robert-greene", "reviewed": true}, {"name": "Chuck Palahniuk", "sort_name": "Palahniuk, Chuck", "slug": "chuck-palahniuk", "reviewed": true}, {"name": "Ross Macdonald", "sort_name": "Macdonald, Ross", "slug": "ross-macdonald", "reviewed": true}, {"name": "Steven Novella", "sort_name": "Novella, Steven", "slug": "steven-novella", "reviewed": true}, {"name": "Lol Tolhurst", "sort_name": "Tolhurst, Lol", "slug": "lol-tolhurst", "reviewed": true}, {"name": "Jocko Willink", "sort_name": "Willink, Jocko", "slug": "jocko-willink", "reviewed": true}, {"name": "Jerry Seinfeld", "sort_name": "Seinfeld, Jerry", "slug": "jerry-seinfeld", "reviewed": true}, {"name": "Johnny Marr", "sort_name": "Marr, Johnny", "slug": "johnny-marr", "reviewed": true}, {"name": "Richard Laymon", "sort_name": "Laymon, Richard", "slug": "richard-laymon", "reviewed": true}, {"name": "Conner Habib", "sort_name": "Habib, Conner", "slug": "conner-habib", "reviewed": true}, {"name": "Julie Sherman", "sort_name": "Sherman, Julie", "slug": "julie-sherman", "reviewed": true}, {"name": "Ian Fleming", "sort_name": "Fleming, Ian", "slug": "ian-fleming", "reviewed": true}, {"name": "Arnold Schwarzenegger", "sort_name": "Schwarzenegger, Arnold", "slug": "arnold-schwarzenegger", "reviewed": true}, {"name": "David Goggins", "sort_name": "Goggins, David", "slug": "david-goggins", "reviewed": true}, {"name": "Edmund Morris", "sort_name": "Morris, Edmund", "slug": "edmund-morris", "reviewed": true}, {"name": "James M. Cain", "sort_name": "Cain, James M.", "slug": "james-m-cain", "reviewed": true}, {"name": "Andrew Roberts", "sort_name": "Roberts, Andrew", "slug": "andrew-roberts", "reviewed": true}, {"name": "Raymond Chandler", "sort_name": "Chandler, Raymond", "slug": "raymond-chandler", "reviewed": true}, {"name": "Dave Draper", "sort_name": "Draper, Dave", "slug": "dave-draper", "reviewed": true}, {"name": "Bram Stoker", "sort_name": "Stoker, Bram", "slug": "bram-stoker", "reviewed": true}, {"name": "Leif Babin", "sort_name": "Babin, Leif", "slug": "leif-babin", "reviewed": true}, {"name": "Joe Kenda", "sort_name": "Kenda, Joe", "slug": "joe-kenda", "reviewed": true}, {"name": "Stephen King", "sort_name": "King, Stephen", "slug": "stephen-king", "reviewed": true}, {"name": "Brad Schoenfeld", "sort_name": "Schoenfeld, Brad", "slug": "brad-schoenfeld", "reviewed": true}, {"name": "Bret Easton Ellis", "sort_name": "Ellis, Bret Easton", "slug": "bret-easton-ellis", "reviewed": true}]
+[
+{
+"name": "Donna Tartt",
+"sortName": "Tartt, Donna",
+"key": "donna-tartt",
+"shelf": false
+},
+{
+"name": "Peter Straub",
+"sortName": "Straub, Peter",
+"key": "peter-straub",
+"shelf": false
+},
+{
+"name": "David H. Hackworth",
+"sortName": "Hackworth, David H.",
+"key": "david-h-hackworth",
+"shelf": false
+},
+{
+"name": "Philip Fracassi",
+"sortName": "Fracassi, Philip",
+"key": "philip-fracassi",
+"shelf": false
+},
+{
+"name": "John McPhee",
+"sortName": "McPhee, John",
+"key": "john-mcphee",
+"shelf": false
+},
+{
+"name": "Scott Carney",
+"sortName": "Carney, Scott",
+"key": "scott-carney",
+"shelf": false
+},
+{
+"name": "Jesse Itzler",
+"sortName": "Itzler, Jesse",
+"key": "jesse-itzler",
+"shelf": false
+},
+{
+"name": "Robert Greene",
+"sortName": "Greene, Robert",
+"key": "robert-greene",
+"shelf": false
+},
+{
+"name": "Chuck Palahniuk",
+"sortName": "Palahniuk, Chuck",
+"key": "chuck-palahniuk",
+"shelf": false
+},
+{
+"name": "Ross Macdonald",
+"sortName": "Macdonald, Ross",
+"key": "ross-macdonald",
+"shelf": false
+},
+{
+"name": "Steven Novella",
+"sortName": "Novella, Steven",
+"key": "steven-novella",
+"shelf": false
+},
+{
+"name": "Lol Tolhurst",
+"sortName": "Tolhurst, Lol",
+"key": "lol-tolhurst",
+"shelf": false
+},
+{
+"name": "Jocko Willink",
+"sortName": "Willink, Jocko",
+"key": "jocko-willink",
+"shelf": false
+},
+{
+"name": "Jerry Seinfeld",
+"sortName": "Seinfeld, Jerry",
+"key": "jerry-seinfeld",
+"shelf": false
+},
+{
+"name": "Johnny Marr",
+"sortName": "Marr, Johnny",
+"key": "johnny-marr",
+"shelf": false
+},
+{
+"name": "Richard Laymon",
+"sortName": "Laymon, Richard",
+"key": "richard-laymon",
+"shelf": true
+},
+{
+"name": "Conner Habib",
+"sortName": "Habib, Conner",
+"key": "conner-habib",
+"shelf": false
+},
+{
+"name": "Julie Sherman",
+"sortName": "Sherman, Julie",
+"key": "julie-sherman",
+"shelf": false
+},
+{
+"name": "Ian Fleming",
+"sortName": "Fleming, Ian",
+"key": "ian-fleming",
+"shelf": false
+},
+{
+"name": "Arnold Schwarzenegger",
+"sortName": "Schwarzenegger, Arnold",
+"key": "arnold-schwarzenegger",
+"shelf": false
+},
+{
+"name": "David Goggins",
+"sortName": "Goggins, David",
+"key": "david-goggins",
+"shelf": false
+},
+{
+"name": "Edmund Morris",
+"sortName": "Morris, Edmund",
+"key": "edmund-morris",
+"shelf": false
+},
+{
+"name": "James M. Cain",
+"sortName": "Cain, James M.",
+"key": "james-m-cain",
+"shelf": false
+},
+{
+"name": "Andrew Roberts",
+"sortName": "Roberts, Andrew",
+"key": "andrew-roberts",
+"shelf": false
+},
+{
+"name": "Raymond Chandler",
+"sortName": "Chandler, Raymond",
+"key": "raymond-chandler",
+"shelf": false
+},
+{
+"name": "Dave Draper",
+"sortName": "Draper, Dave",
+"key": "dave-draper",
+"shelf": false
+},
+{
+"name": "Bram Stoker",
+"sortName": "Stoker, Bram",
+"key": "bram-stoker",
+"shelf": false
+},
+{
+"name": "Leif Babin",
+"sortName": "Babin, Leif",
+"key": "leif-babin",
+"shelf": false
+},
+{
+"name": "Joe Kenda",
+"sortName": "Kenda, Joe",
+"key": "joe-kenda",
+"shelf": false
+},
+{
+"name": "Stephen King",
+"sortName": "King, Stephen",
+"key": "stephen-king",
+"shelf": true
+},
+{
+"name": "Brad Schoenfeld",
+"sortName": "Schoenfeld, Brad",
+"key": "brad-schoenfeld",
+"shelf": false
+},
+{
+"name": "Bret Easton Ellis",
+"sortName": "Ellis, Bret Easton",
+"key": "bret-easton-ellis",
+"shelf": false
+}
+]

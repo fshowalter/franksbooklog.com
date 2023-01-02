@@ -1,34 +1,24 @@
-const query = `
-{
-  review: allMarkdownRemark(
-    sort: { order: DESC, fields: [frontmatter___sequence] },
-    limit: 25,
-    filter: { postType: { eq: "REVIEW" } }
+const query = `{ 
+  readings: readingsWithReviews(
+    limit: 25
   ) {
-    nodes {
-      linkedExcerpt
-      frontmatter {
-          date
-          sequence
-          grade
-          slug
-        }
-      reviewedWork {
-        title
-        year
-        authors {
-          name
-        }
-        image: cover {
-          childImageSharp {
-            resize(toFormat: JPG, width: 500, quality: 80) {
-              src
-            }
+      excerpt
+      dateFinished
+      sequence
+      grade
+      slug: workSlug
+      title
+      authors {
+        name
+      }
+      cover {
+        childImageSharp {
+          resize(toFormat: JPG, width: 500, quality: 80) {
+            src
           }
         }
       }
     }
-  }
 }`;
 
 interface QueryResult {
@@ -39,33 +29,26 @@ interface QueryResult {
       siteUrl: string;
     };
   };
-  review: {
-    nodes: Review[];
-  };
+  readings: Reading[];
 }
 
-interface Review {
-  frontmatter: {
-    grade: string;
-    date: string;
-    sequence: number;
-    slug: string;
-  };
-  reviewedWork: {
-    authors: {
-      name: string;
-    }[];
-    title: string;
-    year: string;
-    image: {
-      childImageSharp: {
-        resize: {
-          src: string;
-        };
+interface Reading {
+  grade: string;
+  dateFinished: string;
+  sequence: number;
+  slug: string;
+  authors: {
+    name: string;
+  }[];
+  title: string;
+  excerpt: string;
+  cover: {
+    childImageSharp: {
+      resize: {
+        src: string;
       };
     };
   };
-  linkedExcerpt: string;
 }
 
 const gradeMap: Record<string, string> = {
@@ -90,8 +73,8 @@ function starsForGrade(grade: string) {
   return "";
 }
 
-function addMetaToExcerpt(excerpt: string, review: Review) {
-  const meta = `${starsForGrade(review.frontmatter.grade)}`;
+function addMetaToExcerpt(excerpt: string, reading: Reading) {
+  const meta = `${starsForGrade(reading.grade)}`;
   return `<p>${meta}</p>${excerpt}`;
 }
 
@@ -108,21 +91,21 @@ function setup(options: Record<string, unknown>) {
 }
 
 function serialize({ query }: { query: QueryResult }) {
-  return query.review.nodes.map((node) => {
+  return query.readings.map((reading) => {
     return {
-      title: `${node.reviewedWork.title} by ${node.reviewedWork.authors
+      title: `${reading.title} by ${reading.authors
         .map((author) => author.name)
         .join(", ")}`,
-      date: node.frontmatter.date,
-      url: `${query.site.siteMetadata.siteUrl}/reviews/${node.frontmatter.slug}/`,
-      guid: `${query.site.siteMetadata.siteUrl}/${node.frontmatter.sequence}-${node.frontmatter.slug}`,
+      date: reading.dateFinished,
+      url: `${query.site.siteMetadata.siteUrl}/reviews/${reading.slug}/`,
+      guid: `${query.site.siteMetadata.siteUrl}/${reading.sequence}-${reading.slug}`,
       custom_elements: [
         {
           "content:encoded": `<img src="${
-            node.reviewedWork.image.childImageSharp.resize.src
-          }" alt="A cover from ${node.reviewedWork.title}">${addMetaToExcerpt(
-            node.linkedExcerpt,
-            node
+            reading.cover.childImageSharp.resize.src
+          }" alt="A cover from ${reading.title}">${addMetaToExcerpt(
+            reading.title,
+            reading
           )}`,
         },
       ],
@@ -139,7 +122,7 @@ export default {
         serialize: serialize,
         query,
         output: "/feed.xml",
-        title: "Frank's Movie Log",
+        title: "Frank's Book Log",
         site_url: "https://www.franksbooklog.com/",
         image_url: "https://www.franksbooklog.com/assets/favicon-128.png",
       },

@@ -4,7 +4,7 @@ declare module "*.svg" {
 }
 
 declare module "*.scss" {
-  const classes: { [key: string]: string };
+  const classes: Record<string, string>;
   export = classes;
 }
 
@@ -67,7 +67,7 @@ declare module "hast-util-select" {
   import type { Node } from "unist";
   export interface HastNode extends Node {
     tagName: string;
-    properties: { [key: string]: string };
+    properties: Record<string, string>;
   }
   export function matches(
     selector: string,
