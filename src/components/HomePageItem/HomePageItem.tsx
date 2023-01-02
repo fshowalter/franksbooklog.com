@@ -99,11 +99,7 @@ export function HomePageItem({
               {toSentenceArray(
                 item.authors.map((author) => {
                   return (
-                    <AuthorLink
-                      display="inline"
-                      key={author.key}
-                      author={author}
-                    />
+                    <AuthorLink as="span" key={author.key} author={author} />
                   );
                 })
               )}
