@@ -50,7 +50,7 @@ export const WorksJson = {
         },
       },
     },
-    kind: `${SchemaNames.WorkKind}!`,
+    kind: "String!",
     authors: `[${SchemaNames.WorkAuthor}!]!`,
     decadePublished: {
       type: "String!",

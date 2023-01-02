@@ -83,8 +83,6 @@ function Details({
     ? "Listened to over"
     : "Read over";
 
-  console.log(reading);
-
   return (
     <Box as="details" fontWeight="light" color="subtle">
       <Box as="summary">

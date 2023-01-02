@@ -1,6 +1,5 @@
 import type { CreateSchemaCustomizationArgs } from "gatsby";
 import { MarkdownNodeKindEnum } from "./enums/MarkdownNodeKindEnum";
-import { WorkKindEnum } from "./enums/WorkKindEnum";
 import { linkReviewedWorksExtension } from "./extensions/linkReviewedWorks";
 import { proxyToReviewExtension } from "./extensions/proxyToReview";
 import { proxyToWorkExtension } from "./extensions/proxyToWork";
@@ -26,7 +25,6 @@ export function createSchemaCustomization({
 
   const typeDefs = [
     schema.buildEnumType(MarkdownNodeKindEnum),
-    schema.buildEnumType(WorkKindEnum),
     schema.buildObjectType(TimelineEntry),
     schema.buildObjectType(WorkAuthor),
     schema.buildObjectType(MarkdownRemark),

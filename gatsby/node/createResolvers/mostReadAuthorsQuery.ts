@@ -30,11 +30,6 @@ export const mostReadAuthorsQuery = {
           ? { query: { filter: { yearFinished: { eq: year } } } }
           : {};
 
-        console.log({
-          type: SchemaNames.ReadingsJson,
-          ...filter,
-        });
-
         const { entries: readings } =
           await context.nodeModel.findAll<ReadingNode>({
             type: SchemaNames.ReadingsJson,

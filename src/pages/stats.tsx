@@ -62,7 +62,7 @@ export const pageQuery = graphql`
     }
 
     book: allReadingsJson(
-      filter: { work: { kind: { nin: [SHORTSTORY, NOVELLA] } } }
+      filter: { work: { kind: { nin: ["Short Story", "Novella"] } } }
     ) {
       totalCount
     }

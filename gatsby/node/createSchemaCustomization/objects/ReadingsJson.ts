@@ -59,7 +59,7 @@ export const ReadingsJson = {
           return 1;
         }
 
-        return (end.getTime() - start.getTime()) / (1000 * 3600 * 24) + 1;
+        return end.getDate() - start.getDate();
       },
     },
     editionNotes: {
@@ -77,7 +77,12 @@ export const ReadingsJson = {
 
         hast.children[0].tagName = "span";
 
-        return toHtml(hast);
+        return toHtml(hast, {
+          allowDangerousHtml: true,
+        });
+      },
+      extensions: {
+        linkReviewedWorks: {},
       },
     },
     readingNote: {

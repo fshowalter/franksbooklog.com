@@ -78,7 +78,7 @@ export const pageQuery = graphql`
 
     book: allReadingsJson(
       filter: {
-        work: { kind: { nin: [SHORTSTORY, NOVELLA] } }
+        work: { kind: { nin: ["Short Story", "Novella"] } }
         yearFinished: { eq: $year }
       }
     ) {
