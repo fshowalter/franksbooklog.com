@@ -3,49 +3,57 @@
 exports[`/gone renders 1`] = `
 <DocumentFragment>
   <a
-    class="skipLinkCss"
+    class="Layout_skipToMainContentStyle__1824noh3 sprinkles_paddingLeft_24_default__1lrvpk9cy sprinkles_paddingRight_24_default__1lrvpk9em sprinkles_paddingTop_8_default__1lrvpk9g4 sprinkles_paddingBottom_8_default__1lrvpk9bm sprinkles_backgroundColor_subtle_default__1lrvpk924 sprinkles_color_accent__1lrvpk94 sprinkles_textAlign_center__1lrvpk917"
     href="#content"
   >
     Skip to content
   </a>
   <div
-    class="containerCss"
+    class="Layout_bandStickyStyle__1824noh1 backgroundImage_ripNotComingSoonBackgroundImageStyle__ewlb040 sprinkles_minHeight_16_default__1lrvpk98v sprinkles_width_full_default__1lrvpk9kg"
+  />
+  <div
+    class="Layout_pageCanvasStyle__1824noh0 sprinkles_backgroundColor_default_default__1lrvpk91y sprinkles_display_flex_default__1lrvpk94p sprinkles_flexDirection_column_default__1lrvpk957"
   >
     <header
-      class="mastHeaderCss"
+      class="Layout_headerLayoutStyle__1824noh2 sprinkles_paddingLeft_pageMargin_default__1lrvpk9e7 sprinkles_paddingRight_pageMargin_default__1lrvpk9fv sprinkles_paddingTop_24_default__1lrvpk9ga sprinkles_paddingTop_32_desktop__1lrvpk9gf sprinkles_paddingBottom_24_default__1lrvpk9bs sprinkles_paddingBottom_32_desktop__1lrvpk9bx sprinkles_display_flex_default__1lrvpk94p sprinkles_rowGap_24_default__1lrvpk9hm sprinkles_alignItems_center_default__1lrvpk91g sprinkles_boxShadow_borderBottom_default__1lrvpk92p sprinkles_backgroundColor_default_default__1lrvpk91y"
     >
-      <h1
-        class="mastTitleCss"
+      <div
+        class="sprinkles_display_flex_default__1lrvpk94p sprinkles_flexDirection_column_default__1lrvpk957 sprinkles_alignItems_inherit_default__1lrvpk91j sprinkles_justifyItems_inherit__1lrvpk9r"
       >
-        <a
-          href="/"
+        <h1
+          class="Mast_flagTypographyStyle__1107qlt0 sprinkles_whiteSpace_nowrap__1lrvpk91c sprinkles_fontWeight_normal__1lrvpk9n"
         >
-          Frank's Book Log
-        </a>
-      </h1>
-      <p
-        class="mastTaglineCss"
-      >
-        Literature is a relative term.
-      </p>
+          <a
+            class="sprinkles_color_default__1lrvpk95"
+            href="/"
+          >
+            Frank's Book Log
+          </a>
+        </h1>
+        <p
+          class="Mast_taglineStyle__1107qlt1 sprinkles_color_muted__1lrvpk96 sprinkles_lineHeight_16__1lrvpk9x sprinkles_width_full_default__1lrvpk9kg sprinkles_fontSize_small__1lrvpk9h"
+        >
+          Literature is a relative term.
+        </p>
+      </div>
       <form
         accept-charset="UTF-8"
         action="https://www.google.com/search"
-        class="mastSearchFormCss"
+        class="Mast_orderStyle__1107qlt3 sprinkles_boxShadow_borderAll_default__1lrvpk92s sprinkles_borderRadius_4__1lrvpk90 sprinkles_overflow_hidden__1lrvpk914 sprinkles_width_full_default__1lrvpk9kg sprinkles_width_unset_desktop__1lrvpk9ko sprinkles_maxWidth_prose_default__1lrvpk98d"
         method="get"
         role="search"
       >
         <label
-          class="mastSearchWrapCss"
+          class="sprinkles_display_flex_default__1lrvpk94p sprinkles_overflow_hidden__1lrvpk914"
           for="search"
         >
           <div
-            class="srOnlyCss"
+            class="ScreenReaderOnly_screenReaderOnlyStyle__1lzmpje0"
           >
             Search
           </div>
           <input
-            class="mastSearchInputCss"
+            class="SiteSearchForm_searchInputStyle__p9uc60 sprinkles_paddingLeft_16_default__1lrvpk9cv sprinkles_paddingRight_16_default__1lrvpk9ej sprinkles_paddingTop_8_default__1lrvpk9g4 sprinkles_paddingBottom_8_default__1lrvpk9bm sprinkles_backgroundColor_subtle_default__1lrvpk924 sprinkles_color_default__1lrvpk95 sprinkles_fontSize_default__1lrvpk9i sprinkles_fontWeight_light__1lrvpk9m sprinkles_lineHeight_24__1lrvpk9y sprinkles_flexGrow_1__1lrvpk9e"
             id="search"
             name="q"
             placeholder="Search..."
@@ -54,16 +62,16 @@ exports[`/gone renders 1`] = `
           <input
             name="q"
             type="hidden"
-            value="site:www.franksbooklog.com"
+            value="site:www.franksmovielog.com"
           />
           <button
             aria-label="Search"
-            class="mastSearchSubmitCss"
+            class="SiteSearchForm_submitButtonStyle__p9uc61 sprinkles_backgroundColor_subtle_default__1lrvpk924"
             type="submit"
             value="Search"
           >
             <svg
-              class="iconCss mastSearchIconCss"
+              class="SiteSearchForm_iconStyle__p9uc62 SvgIcon_iconStyle__1ennvpn0"
               height="1em"
               viewBox="0 0 16 16"
               width="1em"
@@ -82,46 +90,46 @@ exports[`/gone renders 1`] = `
         </label>
       </form>
       <nav
-        class="mastNavCss"
+        class="sprinkles_color_accent__1lrvpk94"
       >
         <ul
-          class="mastNavListCss"
+          class="sprinkles_display_flex_default__1lrvpk94p sprinkles_flexWrap_wrap_default__1lrvpk95a sprinkles_justifyContent_center_default__1lrvpk96p sprinkles_rowGap_8_default__1lrvpk9hg sprinkles_columnGap_16_default__1lrvpk934 sprinkles_columnGap_24_tablet__1lrvpk938"
         >
           <li
-            class="mastNavListItemCss"
+            class="sprinkles_display_block_default__1lrvpk94j sprinkles_letterSpacing_0.5__1lrvpk9u sprinkles_whiteSpace_nowrap__1lrvpk91c"
           >
             <a
-              class="mastNavLinkCss"
+              class="sprinkles_color_inherit__1lrvpk99"
               href="/"
             >
               Home
             </a>
           </li>
           <li
-            class="mastNavListItemCss"
+            class="sprinkles_display_block_default__1lrvpk94j sprinkles_letterSpacing_0.5__1lrvpk9u sprinkles_whiteSpace_nowrap__1lrvpk91c"
           >
             <a
-              class="mastNavLinkCss"
+              class="sprinkles_color_inherit__1lrvpk99"
               href="/how-i-grade/"
             >
               How I Grade
             </a>
           </li>
           <li
-            class="mastNavListItemCss"
+            class="sprinkles_display_block_default__1lrvpk94j sprinkles_letterSpacing_0.5__1lrvpk9u sprinkles_whiteSpace_nowrap__1lrvpk91c"
           >
             <a
-              class="mastNavLinkCss"
+              class="sprinkles_color_inherit__1lrvpk99"
               href="/reviews/"
             >
               Reviews
             </a>
           </li>
           <li
-            class="mastNavListItemCss"
+            class="sprinkles_display_block_default__1lrvpk94j sprinkles_letterSpacing_0.5__1lrvpk9u sprinkles_whiteSpace_nowrap__1lrvpk91c"
           >
             <a
-              class="mastNavLinkCss"
+              class="sprinkles_color_inherit__1lrvpk99"
               href="/shelf/"
             >
               Shelf
@@ -131,20 +139,20 @@ exports[`/gone renders 1`] = `
       </nav>
     </header>
     <div
-      class="childrenCss"
+      class="sprinkles_flexGrow_1__1lrvpk9e"
       id="content"
     >
       <main>
         <article
-          class="articleCss"
+          class="sprinkles_display_flex_default__1lrvpk94p sprinkles_flexDirection_column_default__1lrvpk957 sprinkles_alignItems_center_default__1lrvpk91g"
         >
           <h1
-            class="titleCss titleCss"
+            class="PageTitle_typographyStyle__o0ksb0 sprinkles_paddingLeft_pageMargin_default__1lrvpk9e7 sprinkles_paddingRight_pageMargin_default__1lrvpk9fv sprinkles_paddingTop_24_default__1lrvpk9ga sprinkles_paddingTop_32_desktop__1lrvpk9gf sprinkles_paddingBottom_24_default__1lrvpk9bs sprinkles_paddingBottom_32_desktop__1lrvpk9bx sprinkles_textAlign_center__1lrvpk917"
           >
             410 Gone
           </h1>
           <div
-            class="gatsby-image-wrapper gatsby-image-wrapper-constrained imageCss imageCss"
+            class="gatsby-image-wrapper gatsby-image-wrapper-constrained"
             data-gatsby-image-wrapper=""
             style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
           >
@@ -169,19 +177,19 @@ exports[`/gone renders 1`] = `
             />
             <picture>
               <source
+                data-srcset="/static/feaee0b15b37d41bd89f3440e7cf8b6a/fdfcf/gone.avif 250w,/static/feaee0b15b37d41bd89f3440e7cf8b6a/b400f/gone.avif 500w,/static/feaee0b15b37d41bd89f3440e7cf8b6a/70674/gone.avif 1000w,/static/feaee0b15b37d41bd89f3440e7cf8b6a/31a81/gone.avif 2000w"
                 sizes="(min-width: 1000px) 1000px, 100vw"
-                srcset="/static/feaee0b15b37d41bd89f3440e7cf8b6a/fdfcf/gone.avif 250w,/static/feaee0b15b37d41bd89f3440e7cf8b6a/b400f/gone.avif 500w,/static/feaee0b15b37d41bd89f3440e7cf8b6a/70674/gone.avif 1000w,/static/feaee0b15b37d41bd89f3440e7cf8b6a/31a81/gone.avif 2000w"
                 type="image/avif"
               />
               <img
                 alt="Jake Gittes walks away."
                 data-gatsby-image-ssr=""
                 data-main-image=""
+                data-src="/static/feaee0b15b37d41bd89f3440e7cf8b6a/f4320/gone.jpg"
+                data-srcset="/static/feaee0b15b37d41bd89f3440e7cf8b6a/2af26/gone.jpg 250w,/static/feaee0b15b37d41bd89f3440e7cf8b6a/a5dc9/gone.jpg 500w,/static/feaee0b15b37d41bd89f3440e7cf8b6a/f4320/gone.jpg 1000w,/static/feaee0b15b37d41bd89f3440e7cf8b6a/f2565/gone.jpg 2000w"
                 decoding="async"
-                loading="eager"
+                loading="lazy"
                 sizes="(min-width: 1000px) 1000px, 100vw"
-                src="/static/feaee0b15b37d41bd89f3440e7cf8b6a/f4320/gone.jpg"
-                srcset="/static/feaee0b15b37d41bd89f3440e7cf8b6a/2af26/gone.jpg 250w,/static/feaee0b15b37d41bd89f3440e7cf8b6a/a5dc9/gone.jpg 500w,/static/feaee0b15b37d41bd89f3440e7cf8b6a/f4320/gone.jpg 1000w,/static/feaee0b15b37d41bd89f3440e7cf8b6a/f2565/gone.jpg 2000w"
                 style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
               />
             </picture>
@@ -192,71 +200,88 @@ exports[`/gone renders 1`] = `
               const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
             </script>
           </div>
+          <span
+            class="sprinkles_width_px_default__1lrvpk9ka sprinkles_height_64_default__1lrvpk964 sprinkles_minWidth_px_default__1lrvpk9ap sprinkles_minHeight_64_default__1lrvpk99a sprinkles_display_block_default__1lrvpk94j"
+          />
           <div
-            class="renderedMarkdownCss bodyCss"
+            class="sprinkles_paddingLeft_pageMargin_default__1lrvpk9e7 sprinkles_paddingRight_pageMargin_default__1lrvpk9fv"
           >
-            <p>
-              Forget it, Jake. It’s Chinatown.
-            </p>
+            <div
+              class="RenderedMarkdown_renderedMarkdownStyle__w2sssm0 LongFormText_typographyStyle__za3khu0 sprinkles_fontWeight_light__1lrvpk9m sprinkles_maxWidth_prose_default__1lrvpk98d"
+            >
+              <p>
+                Forget it, Jake. It’s Chinatown.
+              </p>
+            </div>
           </div>
+          <span
+            class="sprinkles_width_px_default__1lrvpk9ka sprinkles_height_128_default__1lrvpk96d sprinkles_minWidth_px_default__1lrvpk9ap sprinkles_minHeight_128_default__1lrvpk99j sprinkles_display_block_default__1lrvpk94j"
+          />
         </article>
       </main>
     </div>
     <footer
-      class="footerCss"
+      class="backgroundImage_ripNotComingSoonBackgroundImageStyle__ewlb040 sprinkles_paddingLeft_pageMargin_default__1lrvpk9e7 sprinkles_paddingRight_pageMargin_default__1lrvpk9fv sprinkles_paddingTop_32_default__1lrvpk9gd sprinkles_paddingBottom_32_default__1lrvpk9bv sprinkles_color_inverse__1lrvpk98 sprinkles_display_flex_default__1lrvpk94p sprinkles_rowGap_24_default__1lrvpk9hm sprinkles_alignItems_center_default__1lrvpk91g sprinkles_flexDirection_column_default__1lrvpk957"
     >
-      <ul
-        class="footerNavListCss"
-      >
-        <li
-          class="footerNavListItemCss"
+      <nav>
+        <ul
+          class="sprinkles_display_flex_default__1lrvpk94p sprinkles_flexWrap_wrap_default__1lrvpk95a sprinkles_justifyContent_center_default__1lrvpk96p sprinkles_rowGap_8_default__1lrvpk9hg sprinkles_columnGap_16_default__1lrvpk934 sprinkles_columnGap_24_tablet__1lrvpk938"
         >
-          <a
-            href="/"
+          <li
+            class="sprinkles_display_block_default__1lrvpk94j sprinkles_letterSpacing_0.5__1lrvpk9u sprinkles_whiteSpace_nowrap__1lrvpk91c"
           >
-            Home
-          </a>
-        </li>
-        <li
-          class="footerNavListItemCss"
-        >
-          <a
-            href="/how-i-grade/"
+            <a
+              class="sprinkles_color_inherit__1lrvpk99"
+              href="/"
+            >
+              Home
+            </a>
+          </li>
+          <li
+            class="sprinkles_display_block_default__1lrvpk94j sprinkles_letterSpacing_0.5__1lrvpk9u sprinkles_whiteSpace_nowrap__1lrvpk91c"
           >
-            How I Grade
-          </a>
-        </li>
-        <li
-          class="footerNavListItemCss"
-        >
-          <a
-            href="/reviews/"
+            <a
+              class="sprinkles_color_inherit__1lrvpk99"
+              href="/how-i-grade/"
+            >
+              How I Grade
+            </a>
+          </li>
+          <li
+            class="sprinkles_display_block_default__1lrvpk94j sprinkles_letterSpacing_0.5__1lrvpk9u sprinkles_whiteSpace_nowrap__1lrvpk91c"
           >
-            Reviews
-          </a>
-        </li>
-        <li
-          class="footerNavListItemCss"
-        >
-          <a
-            href="/shelf/"
+            <a
+              class="sprinkles_color_inherit__1lrvpk99"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </li>
+          <li
+            class="sprinkles_display_block_default__1lrvpk94j sprinkles_letterSpacing_0.5__1lrvpk9u sprinkles_whiteSpace_nowrap__1lrvpk91c"
           >
-            Shelf
-          </a>
-        </li>
-      </ul>
+            <a
+              class="sprinkles_color_inherit__1lrvpk99"
+              href="/shelf/"
+            >
+              Shelf
+            </a>
+          </li>
+        </ul>
+      </nav>
       <p
-        class="footerFairUseCss"
+        class="sprinkles_fontWeight_light__1lrvpk9m sprinkles_fontSize_small__1lrvpk9h sprinkles_lineHeight_16__1lrvpk9x"
       >
-        All covers used in accordance with the 
+        All images used in accordance with the 
         <a
+          class="sprinkles_color_inherit__1lrvpk99"
           href="http://www.copyright.gov/title17/92chap1.html#107"
         >
           Fair Use Law.
         </a>
       </p>
       <div
-        class="srOnlyCss"
+        class="ScreenReaderOnly_screenReaderOnlyStyle__1lzmpje0"
       >
         <a
           href="#top"

@@ -8,7 +8,7 @@ export function Footer({ ...rest }: IBoxProps) {
     <Box as="footer" color="inverse" display="flex" {...rest}>
       <Nav justifyContent="center" />
       <Box as="p" fontWeight="light" fontSize="small" lineHeight={16}>
-        All stills used in accordance with the{" "}
+        All images used in accordance with the{" "}
         <ExternalLink
           href="http://www.copyright.gov/title17/92chap1.html#107"
           color="inherit"

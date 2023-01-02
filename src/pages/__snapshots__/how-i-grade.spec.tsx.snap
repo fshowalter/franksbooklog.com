@@ -3,49 +3,57 @@
 exports[`/how-i-grade renders 1`] = `
 <DocumentFragment>
   <a
-    class="skipLinkCss"
+    class="Layout_skipToMainContentStyle__1824noh3 sprinkles_paddingLeft_24_default__1lrvpk9cy sprinkles_paddingRight_24_default__1lrvpk9em sprinkles_paddingTop_8_default__1lrvpk9g4 sprinkles_paddingBottom_8_default__1lrvpk9bm sprinkles_backgroundColor_subtle_default__1lrvpk924 sprinkles_color_accent__1lrvpk94 sprinkles_textAlign_center__1lrvpk917"
     href="#content"
   >
     Skip to content
   </a>
   <div
-    class="containerCss"
+    class="Layout_bandStickyStyle__1824noh1 backgroundImage_ripNotComingSoonBackgroundImageStyle__ewlb040 sprinkles_minHeight_16_default__1lrvpk98v sprinkles_width_full_default__1lrvpk9kg"
+  />
+  <div
+    class="Layout_pageCanvasStyle__1824noh0 sprinkles_backgroundColor_default_default__1lrvpk91y sprinkles_display_flex_default__1lrvpk94p sprinkles_flexDirection_column_default__1lrvpk957"
   >
     <header
-      class="mastHeaderCss"
+      class="Layout_headerLayoutStyle__1824noh2 sprinkles_paddingLeft_pageMargin_default__1lrvpk9e7 sprinkles_paddingRight_pageMargin_default__1lrvpk9fv sprinkles_paddingTop_24_default__1lrvpk9ga sprinkles_paddingTop_32_desktop__1lrvpk9gf sprinkles_paddingBottom_24_default__1lrvpk9bs sprinkles_paddingBottom_32_desktop__1lrvpk9bx sprinkles_display_flex_default__1lrvpk94p sprinkles_rowGap_24_default__1lrvpk9hm sprinkles_alignItems_center_default__1lrvpk91g sprinkles_boxShadow_borderBottom_default__1lrvpk92p sprinkles_backgroundColor_default_default__1lrvpk91y"
     >
-      <h1
-        class="mastTitleCss"
+      <div
+        class="sprinkles_display_flex_default__1lrvpk94p sprinkles_flexDirection_column_default__1lrvpk957 sprinkles_alignItems_inherit_default__1lrvpk91j sprinkles_justifyItems_inherit__1lrvpk9r"
       >
-        <a
-          href="/"
+        <h1
+          class="Mast_flagTypographyStyle__1107qlt0 sprinkles_whiteSpace_nowrap__1lrvpk91c sprinkles_fontWeight_normal__1lrvpk9n"
         >
-          Frank's Book Log
-        </a>
-      </h1>
-      <p
-        class="mastTaglineCss"
-      >
-        Literature is a relative term.
-      </p>
+          <a
+            class="sprinkles_color_default__1lrvpk95"
+            href="/"
+          >
+            Frank's Book Log
+          </a>
+        </h1>
+        <p
+          class="Mast_taglineStyle__1107qlt1 sprinkles_color_muted__1lrvpk96 sprinkles_lineHeight_16__1lrvpk9x sprinkles_width_full_default__1lrvpk9kg sprinkles_fontSize_small__1lrvpk9h"
+        >
+          Literature is a relative term.
+        </p>
+      </div>
       <form
         accept-charset="UTF-8"
         action="https://www.google.com/search"
-        class="mastSearchFormCss"
+        class="Mast_orderStyle__1107qlt3 sprinkles_boxShadow_borderAll_default__1lrvpk92s sprinkles_borderRadius_4__1lrvpk90 sprinkles_overflow_hidden__1lrvpk914 sprinkles_width_full_default__1lrvpk9kg sprinkles_width_unset_desktop__1lrvpk9ko sprinkles_maxWidth_prose_default__1lrvpk98d"
         method="get"
         role="search"
       >
         <label
-          class="mastSearchWrapCss"
+          class="sprinkles_display_flex_default__1lrvpk94p sprinkles_overflow_hidden__1lrvpk914"
           for="search"
         >
           <div
-            class="srOnlyCss"
+            class="ScreenReaderOnly_screenReaderOnlyStyle__1lzmpje0"
           >
             Search
           </div>
           <input
-            class="mastSearchInputCss"
+            class="SiteSearchForm_searchInputStyle__p9uc60 sprinkles_paddingLeft_16_default__1lrvpk9cv sprinkles_paddingRight_16_default__1lrvpk9ej sprinkles_paddingTop_8_default__1lrvpk9g4 sprinkles_paddingBottom_8_default__1lrvpk9bm sprinkles_backgroundColor_subtle_default__1lrvpk924 sprinkles_color_default__1lrvpk95 sprinkles_fontSize_default__1lrvpk9i sprinkles_fontWeight_light__1lrvpk9m sprinkles_lineHeight_24__1lrvpk9y sprinkles_flexGrow_1__1lrvpk9e"
             id="search"
             name="q"
             placeholder="Search..."
@@ -54,16 +62,16 @@ exports[`/how-i-grade renders 1`] = `
           <input
             name="q"
             type="hidden"
-            value="site:www.franksbooklog.com"
+            value="site:www.franksmovielog.com"
           />
           <button
             aria-label="Search"
-            class="mastSearchSubmitCss"
+            class="SiteSearchForm_submitButtonStyle__p9uc61 sprinkles_backgroundColor_subtle_default__1lrvpk924"
             type="submit"
             value="Search"
           >
             <svg
-              class="iconCss mastSearchIconCss"
+              class="SiteSearchForm_iconStyle__p9uc62 SvgIcon_iconStyle__1ennvpn0"
               height="1em"
               viewBox="0 0 16 16"
               width="1em"
@@ -82,46 +90,46 @@ exports[`/how-i-grade renders 1`] = `
         </label>
       </form>
       <nav
-        class="mastNavCss"
+        class="sprinkles_color_accent__1lrvpk94"
       >
         <ul
-          class="mastNavListCss"
+          class="sprinkles_display_flex_default__1lrvpk94p sprinkles_flexWrap_wrap_default__1lrvpk95a sprinkles_justifyContent_center_default__1lrvpk96p sprinkles_rowGap_8_default__1lrvpk9hg sprinkles_columnGap_16_default__1lrvpk934 sprinkles_columnGap_24_tablet__1lrvpk938"
         >
           <li
-            class="mastNavListItemCss"
+            class="sprinkles_display_block_default__1lrvpk94j sprinkles_letterSpacing_0.5__1lrvpk9u sprinkles_whiteSpace_nowrap__1lrvpk91c"
           >
             <a
-              class="mastNavLinkCss"
+              class="sprinkles_color_inherit__1lrvpk99"
               href="/"
             >
               Home
             </a>
           </li>
           <li
-            class="mastNavListItemCss"
+            class="sprinkles_display_block_default__1lrvpk94j sprinkles_letterSpacing_0.5__1lrvpk9u sprinkles_whiteSpace_nowrap__1lrvpk91c"
           >
             <a
-              class="mastNavLinkCss"
+              class="sprinkles_color_inherit__1lrvpk99"
               href="/how-i-grade/"
             >
               How I Grade
             </a>
           </li>
           <li
-            class="mastNavListItemCss"
+            class="sprinkles_display_block_default__1lrvpk94j sprinkles_letterSpacing_0.5__1lrvpk9u sprinkles_whiteSpace_nowrap__1lrvpk91c"
           >
             <a
-              class="mastNavLinkCss"
+              class="sprinkles_color_inherit__1lrvpk99"
               href="/reviews/"
             >
               Reviews
             </a>
           </li>
           <li
-            class="mastNavListItemCss"
+            class="sprinkles_display_block_default__1lrvpk94j sprinkles_letterSpacing_0.5__1lrvpk9u sprinkles_whiteSpace_nowrap__1lrvpk91c"
           >
             <a
-              class="mastNavLinkCss"
+              class="sprinkles_color_inherit__1lrvpk99"
               href="/shelf/"
             >
               Shelf
@@ -131,20 +139,20 @@ exports[`/how-i-grade renders 1`] = `
       </nav>
     </header>
     <div
-      class="childrenCss"
+      class="sprinkles_flexGrow_1__1lrvpk9e"
       id="content"
     >
       <main>
         <article
-          class="articleCss"
+          class="sprinkles_display_flex_default__1lrvpk94p sprinkles_flexDirection_column_default__1lrvpk957 sprinkles_alignItems_center_default__1lrvpk91g"
         >
           <h1
-            class="titleCss titleCss"
+            class="PageTitle_typographyStyle__o0ksb0 sprinkles_paddingLeft_pageMargin_default__1lrvpk9e7 sprinkles_paddingRight_pageMargin_default__1lrvpk9fv sprinkles_paddingTop_24_default__1lrvpk9ga sprinkles_paddingTop_32_desktop__1lrvpk9gf sprinkles_paddingBottom_24_default__1lrvpk9bs sprinkles_paddingBottom_32_desktop__1lrvpk9bx sprinkles_textAlign_center__1lrvpk917"
           >
             How I Grade
           </h1>
           <div
-            class="gatsby-image-wrapper gatsby-image-wrapper-constrained imageCss imageCss"
+            class="gatsby-image-wrapper gatsby-image-wrapper-constrained"
             data-gatsby-image-wrapper=""
             style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
           >
@@ -169,19 +177,19 @@ exports[`/how-i-grade renders 1`] = `
             />
             <picture>
               <source
+                data-srcset="/static/1950b0bfa9eb10fb20773c9fe4034966/fdfcf/how-i-grade.avif 250w,/static/1950b0bfa9eb10fb20773c9fe4034966/b400f/how-i-grade.avif 500w,/static/1950b0bfa9eb10fb20773c9fe4034966/70674/how-i-grade.avif 1000w,/static/1950b0bfa9eb10fb20773c9fe4034966/31a81/how-i-grade.avif 2000w"
                 sizes="(min-width: 1000px) 1000px, 100vw"
-                srcset="/static/1950b0bfa9eb10fb20773c9fe4034966/fdfcf/how-i-grade.avif 250w,/static/1950b0bfa9eb10fb20773c9fe4034966/b400f/how-i-grade.avif 500w,/static/1950b0bfa9eb10fb20773c9fe4034966/70674/how-i-grade.avif 1000w,/static/1950b0bfa9eb10fb20773c9fe4034966/31a81/how-i-grade.avif 2000w"
                 type="image/avif"
               />
               <img
                 alt="Empty cinema seats."
                 data-gatsby-image-ssr=""
                 data-main-image=""
+                data-src="/static/1950b0bfa9eb10fb20773c9fe4034966/f4320/how-i-grade.jpg"
+                data-srcset="/static/1950b0bfa9eb10fb20773c9fe4034966/2af26/how-i-grade.jpg 250w,/static/1950b0bfa9eb10fb20773c9fe4034966/a5dc9/how-i-grade.jpg 500w,/static/1950b0bfa9eb10fb20773c9fe4034966/f4320/how-i-grade.jpg 1000w,/static/1950b0bfa9eb10fb20773c9fe4034966/f2565/how-i-grade.jpg 2000w"
                 decoding="async"
-                loading="eager"
+                loading="lazy"
                 sizes="(min-width: 1000px) 1000px, 100vw"
-                src="/static/1950b0bfa9eb10fb20773c9fe4034966/f4320/how-i-grade.jpg"
-                srcset="/static/1950b0bfa9eb10fb20773c9fe4034966/2af26/how-i-grade.jpg 250w,/static/1950b0bfa9eb10fb20773c9fe4034966/a5dc9/how-i-grade.jpg 500w,/static/1950b0bfa9eb10fb20773c9fe4034966/f4320/how-i-grade.jpg 1000w,/static/1950b0bfa9eb10fb20773c9fe4034966/f2565/how-i-grade.jpg 2000w"
                 style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
               />
             </picture>
@@ -192,372 +200,389 @@ exports[`/how-i-grade renders 1`] = `
               const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
             </script>
           </div>
+          <span
+            class="sprinkles_width_px_default__1lrvpk9ka sprinkles_height_64_default__1lrvpk964 sprinkles_minWidth_px_default__1lrvpk9ap sprinkles_minHeight_64_default__1lrvpk99a sprinkles_display_block_default__1lrvpk94j"
+          />
           <div
-            class="renderedMarkdownCss bodyCss"
+            class="sprinkles_paddingLeft_pageMargin_default__1lrvpk9e7 sprinkles_paddingRight_pageMargin_default__1lrvpk9fv"
           >
-            <ul>
-              
-
-              <li>
-                
-
-                <h2>
-                  a great movie
-                </h2>
-                
-
-                <p>
-                  <img
-                    alt="5 stars"
-                    src="/svg/5-stars.svg"
-                  />
-                   I loved it. A must-see. A perfect or almost perfect movie. These are the movies I recommend to everyone. A hard rating to earn.
-                </p>
-                
-
-              </li>
-              
-
-              <li>
-                
-
-                <h2>
-                  a good movie
-                </h2>
-                
-
-                <p>
-                  <img
-                    alt="4 stars"
-                    src="/svg/4-stars.svg"
-                  />
-                   I really liked it. Unless you hate the genre or star, watch it. These are the movies I recommend to most folks. They may not resonate like the 5-star selections, but they don’t disappoint.
-                </p>
-                
-
-              </li>
-              
-
-              <li>
-                
-
-                <h2>
-                  an okay movie
-                </h2>
-                
-
-                <p>
-                  <img
-                    alt="3 stars"
-                    src="/svg/3-stars.svg"
-                  />
-                   I liked it. I wouldn’t recommend it, but I wouldn’t recommend 
-                  <em>
-                    against
-                  </em>
-                   it either. Most movies fall into this category.
-                </p>
-                
-
-              </li>
-              
-
-              <li>
-                
-
-                <h2>
-                  a bad movie
-                </h2>
-                
-
-                <p>
-                  <img
-                    alt="2 stars"
-                    src="/svg/2-stars.svg"
-                  />
-                   I didn’t like it. Unless you have a deep-seated love for the genre or star, avoid it. It wasn’t awful, but if I paid money, I felt burned.
-                </p>
-                
-
-              </li>
-              
-
-              <li>
-                
-
-                <h2>
-                  an awful movie
-                </h2>
-                
-
-                <p>
-                  <img
-                    alt="1 star"
-                    src="/svg/1-star.svg"
-                  />
-                   I hated it. Everyone involved should apologize. Another a hard rating to earn. I can forgive a movie many things. Bad acting? It happens. Specious plotting? Maybe it’s atmosphere. Gratuitous nudity? Sure. But I can’t forgive boring. When reading a 1-star review, remember: I watch them so you don’t have to.
-                </p>
-                
-
-              </li>
-              
-
-            </ul>
-            
-
-            <hr />
-            
-
-            <h2>
-              On Grading
-            </h2>
-            
-
-            <p>
-              Let’s start with a binary scale. Gene Siskel argued a person yearns to know: “Should I watch this movie?”
-              <sup
-                id="fnref-1"
-              >
-                <a
-                  class="footnote-ref"
-                  href="#fn-1"
-                >
-                  1
-                </a>
-              </sup>
-            </p>
-            
-
-            <p>
-              A pragmatic approach, but one that doesn’t differentiate between movies one 
-              <em>
-                should
-              </em>
-               see and movies one 
-              <em>
-                must
-              </em>
-               see. 
-              <span
-                data-imdb-id="tt0372784"
-              >
-                <em>
-                  Batman Begins
-                </em>
-                 
-              </span>
-               and 
-              <span
-                data-imdb-id="tt0468569"
-              >
-                <em>
-                  The Dark Knight
-                </em>
-              </span>
-               both deserve a “Thumbs up” but they are not equal.
-            </p>
-            
-
-            <p>
-              Enter the star scale. I’ve encountered scales from three stars to ten, sometimes with half-stars.
-            </p>
-            
-
-            <p>
-              But not all star-systems prove equal.
-            </p>
-            
-
-            <p>
-              Roger Ebert hated the four-star scale his paper enforced because it presented no middle ground.
-              <sup
-                id="fnref-2"
-              >
-                <a
-                  class="footnote-ref"
-                  href="#fn-2"
-                >
-                  2
-                </a>
-              </sup>
-               Awful, bad, good, or great. No room for okay. Thus, we can rule out the four-star system.
-            </p>
-            
-
-            <p>
-              Next, let’s consider the IMDb. It proffers a ten-star system. That’s a lot of stars. Perhaps too many. In 2009 the median movie score hit 6.6, implying users skew toward the upper bounds. Ergo, if you hate a 1-star and love a 10-star, what does a 3-star mean?
-            </p>
-            
-
-            <p>
-              So if a four-star scale proves too small and ten-star scale too large, what’s ideal?
-            </p>
-            
-
-            <p>
-              I like a five-star system. Ebert liked it too.
-              <sup
-                id="fnref-1"
-              >
-                <a
-                  class="footnote-ref"
-                  href="#fn-1"
-                >
-                  1
-                </a>
-              </sup>
-               It offers a middle ground (3-stars) while proffering discreet rating definitions.
-            </p>
-            
-
-            <p>
-              And what about letter grade systems?
-              <sup
-                id="fnref-3"
-              >
-                <a
-                  class="footnote-ref"
-                  href="#fn-3"
-                >
-                  3
-                </a>
-              </sup>
-               I like them. Under-the-covers, they translate to five-star systems. A’s equate to 5-stars, B’s to 4-stars, and so on. I employ letter grades behind the scenes because it’s how my brain works.
-            </p>
-            
-
-            <p>
-              So why display them as stars? Well, for one, grade definitions aren’t universal. To me, a ‘C’ equates to an “okay” movie, to others it screams burn. A 3-star out of 5 display indicates a middle-of-the-road rating.
-            </p>
-            
-
-            <p>
-              Grading systems are hard. I think a 5-star system works, but I’m not married to the idea. Some of my favorite reviewers eschew grades, preferring you read the review. Fair enough, but I bet they rate them behind the scenes.
-            </p>
-            
-
             <div
-              class="footnotes"
+              class="RenderedMarkdown_renderedMarkdownStyle__w2sssm0 LongFormText_typographyStyle__za3khu0 sprinkles_fontWeight_light__1lrvpk9m sprinkles_maxWidth_prose_default__1lrvpk98d"
             >
+              <ul>
+                
+
+                <li>
+                  
+
+                  <h2>
+                    a great movie
+                  </h2>
+                  
+
+                  <p>
+                    <img
+                      alt="5 stars"
+                      src="/svg/5-stars.svg"
+                    />
+                     I loved it. A must-see. A perfect or almost perfect movie. These are the movies I recommend to everyone. A hard rating to earn.
+                  </p>
+                  
+
+                </li>
+                
+
+                <li>
+                  
+
+                  <h2>
+                    a good movie
+                  </h2>
+                  
+
+                  <p>
+                    <img
+                      alt="4 stars"
+                      src="/svg/4-stars.svg"
+                    />
+                     I really liked it. Unless you hate the genre or star, watch it. These are the movies I recommend to most folks. They may not resonate like the 5-star selections, but they don’t disappoint.
+                  </p>
+                  
+
+                </li>
+                
+
+                <li>
+                  
+
+                  <h2>
+                    an okay movie
+                  </h2>
+                  
+
+                  <p>
+                    <img
+                      alt="3 stars"
+                      src="/svg/3-stars.svg"
+                    />
+                     I liked it. I wouldn’t recommend it, but I wouldn’t recommend 
+                    <em>
+                      against
+                    </em>
+                     it either. Most movies fall into this category.
+                  </p>
+                  
+
+                </li>
+                
+
+                <li>
+                  
+
+                  <h2>
+                    a bad movie
+                  </h2>
+                  
+
+                  <p>
+                    <img
+                      alt="2 stars"
+                      src="/svg/2-stars.svg"
+                    />
+                     I didn’t like it. Unless you have a deep-seated love for the genre or star, avoid it. It wasn’t awful, but if I paid money, I felt burned.
+                  </p>
+                  
+
+                </li>
+                
+
+                <li>
+                  
+
+                  <h2>
+                    an awful movie
+                  </h2>
+                  
+
+                  <p>
+                    <img
+                      alt="1 star"
+                      src="/svg/1-star.svg"
+                    />
+                     I hated it. Everyone involved should apologize. Another a hard rating to earn. I can forgive a movie many things. Bad acting? It happens. Specious plotting? Maybe it’s atmosphere. Gratuitous nudity? Sure. But I can’t forgive boring. When reading a 1-star review, remember: I watch them so you don’t have to.
+                  </p>
+                  
+
+                </li>
+                
+
+              </ul>
               
 
               <hr />
               
 
-              <ol>
-                
-
-                <li
-                  id="fn-1"
-                >
-                  <a
-                    href="http://www.rogerebert.com/rogers-journal/you-give-out-too-many-stars"
-                  >
-                    Ebert, Roger, “You Give Out Too Many Stars”, Roger Ebert , last modified September 14, 2008
-                  </a>
-                  <a
-                    class="footnote-backref"
-                    href="#fnref-1"
-                  >
-                    ↩
-                  </a>
-                </li>
-                
-
-                <li
-                  id="fn-2"
-                >
-                  Ebert also argues that readers dislike scales with a middle ground, but I disagree. We know what it means for a movie to be “okay.” Sometimes, instead of “Should I see this movie?” readers want to know “Will I hate this movie?” A middle ground answers that question.
-                  <a
-                    class="footnote-backref"
-                    href="#fnref-2"
-                  >
-                    ↩
-                  </a>
-                </li>
-                
-
-                <li
-                  id="fn-3"
-                >
-                  <a
-                    href="http://www.avclub.com/film/"
-                  >
-                    The Onion A.V. Club
-                  </a>
-                   makes great use of letter grades.
-                  <a
-                    class="footnote-backref"
-                    href="#fnref-3"
-                  >
-                    ↩
-                  </a>
-                </li>
-                
-
-              </ol>
+              <h2>
+                On Grading
+              </h2>
               
 
+              <p>
+                Let’s start with a binary scale. Gene Siskel argued a person yearns to know: “Should I watch this movie?”
+                <sup
+                  id="fnref-1"
+                >
+                  <a
+                    class="footnote-ref"
+                    href="#fn-1"
+                  >
+                    1
+                  </a>
+                </sup>
+              </p>
+              
+
+              <p>
+                A pragmatic approach, but one that doesn’t differentiate between movies one 
+                <em>
+                  should
+                </em>
+                 see and movies one 
+                <em>
+                  must
+                </em>
+                 see. 
+                <span
+                  data-imdb-id="tt0372784"
+                >
+                  <em>
+                    Batman Begins
+                  </em>
+                   
+                </span>
+                 and 
+                <span
+                  data-imdb-id="tt0468569"
+                >
+                  <em>
+                    The Dark Knight
+                  </em>
+                </span>
+                 both deserve a “Thumbs up” but they are not equal.
+              </p>
+              
+
+              <p>
+                Enter the star scale. I’ve encountered scales from three stars to ten, sometimes with half-stars.
+              </p>
+              
+
+              <p>
+                But not all star-systems prove equal.
+              </p>
+              
+
+              <p>
+                Roger Ebert hated the four-star scale his paper enforced because it presented no middle ground.
+                <sup
+                  id="fnref-2"
+                >
+                  <a
+                    class="footnote-ref"
+                    href="#fn-2"
+                  >
+                    2
+                  </a>
+                </sup>
+                 Awful, bad, good, or great. No room for okay. Thus, we can rule out the four-star system.
+              </p>
+              
+
+              <p>
+                Next, let’s consider the IMDb. It proffers a ten-star system. That’s a lot of stars. Perhaps too many. In 2009 the median movie score hit 6.6, implying users skew toward the upper bounds. Ergo, if you hate a 1-star and love a 10-star, what does a 3-star mean?
+              </p>
+              
+
+              <p>
+                So if a four-star scale proves too small and ten-star scale too large, what’s ideal?
+              </p>
+              
+
+              <p>
+                I like a five-star system. Ebert liked it too.
+                <sup
+                  id="fnref-1"
+                >
+                  <a
+                    class="footnote-ref"
+                    href="#fn-1"
+                  >
+                    1
+                  </a>
+                </sup>
+                 It offers a middle ground (3-stars) while proffering discreet rating definitions.
+              </p>
+              
+
+              <p>
+                And what about letter grade systems?
+                <sup
+                  id="fnref-3"
+                >
+                  <a
+                    class="footnote-ref"
+                    href="#fn-3"
+                  >
+                    3
+                  </a>
+                </sup>
+                 I like them. Under-the-covers, they translate to five-star systems. A’s equate to 5-stars, B’s to 4-stars, and so on. I employ letter grades behind the scenes because it’s how my brain works.
+              </p>
+              
+
+              <p>
+                So why display them as stars? Well, for one, grade definitions aren’t universal. To me, a ‘C’ equates to an “okay” movie, to others it screams burn. A 3-star out of 5 display indicates a middle-of-the-road rating.
+              </p>
+              
+
+              <p>
+                Grading systems are hard. I think a 5-star system works, but I’m not married to the idea. Some of my favorite reviewers eschew grades, preferring you read the review. Fair enough, but I bet they rate them behind the scenes.
+              </p>
+              
+
+              <div
+                class="footnotes"
+              >
+                
+
+                <hr />
+                
+
+                <ol>
+                  
+
+                  <li
+                    id="fn-1"
+                  >
+                    <a
+                      href="http://www.rogerebert.com/rogers-journal/you-give-out-too-many-stars"
+                    >
+                      Ebert, Roger, “You Give Out Too Many Stars”, Roger Ebert , last modified September 14, 2008
+                    </a>
+                    <a
+                      class="footnote-backref"
+                      href="#fnref-1"
+                    >
+                      ↩
+                    </a>
+                  </li>
+                  
+
+                  <li
+                    id="fn-2"
+                  >
+                    Ebert also argues that readers dislike scales with a middle ground, but I disagree. We know what it means for a movie to be “okay.” Sometimes, instead of “Should I see this movie?” readers want to know “Will I hate this movie?” A middle ground answers that question.
+                    <a
+                      class="footnote-backref"
+                      href="#fnref-2"
+                    >
+                      ↩
+                    </a>
+                  </li>
+                  
+
+                  <li
+                    id="fn-3"
+                  >
+                    <a
+                      href="http://www.avclub.com/film/"
+                    >
+                      The Onion A.V. Club
+                    </a>
+                     makes great use of letter grades.
+                    <a
+                      class="footnote-backref"
+                      href="#fnref-3"
+                    >
+                      ↩
+                    </a>
+                  </li>
+                  
+
+                </ol>
+                
+
+              </div>
             </div>
           </div>
+          <span
+            class="sprinkles_width_px_default__1lrvpk9ka sprinkles_height_128_default__1lrvpk96d sprinkles_minWidth_px_default__1lrvpk9ap sprinkles_minHeight_128_default__1lrvpk99j sprinkles_display_block_default__1lrvpk94j"
+          />
         </article>
       </main>
     </div>
     <footer
-      class="footerCss"
+      class="backgroundImage_ripNotComingSoonBackgroundImageStyle__ewlb040 sprinkles_paddingLeft_pageMargin_default__1lrvpk9e7 sprinkles_paddingRight_pageMargin_default__1lrvpk9fv sprinkles_paddingTop_32_default__1lrvpk9gd sprinkles_paddingBottom_32_default__1lrvpk9bv sprinkles_color_inverse__1lrvpk98 sprinkles_display_flex_default__1lrvpk94p sprinkles_rowGap_24_default__1lrvpk9hm sprinkles_alignItems_center_default__1lrvpk91g sprinkles_flexDirection_column_default__1lrvpk957"
     >
-      <ul
-        class="footerNavListCss"
-      >
-        <li
-          class="footerNavListItemCss"
+      <nav>
+        <ul
+          class="sprinkles_display_flex_default__1lrvpk94p sprinkles_flexWrap_wrap_default__1lrvpk95a sprinkles_justifyContent_center_default__1lrvpk96p sprinkles_rowGap_8_default__1lrvpk9hg sprinkles_columnGap_16_default__1lrvpk934 sprinkles_columnGap_24_tablet__1lrvpk938"
         >
-          <a
-            href="/"
+          <li
+            class="sprinkles_display_block_default__1lrvpk94j sprinkles_letterSpacing_0.5__1lrvpk9u sprinkles_whiteSpace_nowrap__1lrvpk91c"
           >
-            Home
-          </a>
-        </li>
-        <li
-          class="footerNavListItemCss"
-        >
-          <a
-            href="/how-i-grade/"
+            <a
+              class="sprinkles_color_inherit__1lrvpk99"
+              href="/"
+            >
+              Home
+            </a>
+          </li>
+          <li
+            class="sprinkles_display_block_default__1lrvpk94j sprinkles_letterSpacing_0.5__1lrvpk9u sprinkles_whiteSpace_nowrap__1lrvpk91c"
           >
-            How I Grade
-          </a>
-        </li>
-        <li
-          class="footerNavListItemCss"
-        >
-          <a
-            href="/reviews/"
+            <a
+              class="sprinkles_color_inherit__1lrvpk99"
+              href="/how-i-grade/"
+            >
+              How I Grade
+            </a>
+          </li>
+          <li
+            class="sprinkles_display_block_default__1lrvpk94j sprinkles_letterSpacing_0.5__1lrvpk9u sprinkles_whiteSpace_nowrap__1lrvpk91c"
           >
-            Reviews
-          </a>
-        </li>
-        <li
-          class="footerNavListItemCss"
-        >
-          <a
-            href="/shelf/"
+            <a
+              class="sprinkles_color_inherit__1lrvpk99"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </li>
+          <li
+            class="sprinkles_display_block_default__1lrvpk94j sprinkles_letterSpacing_0.5__1lrvpk9u sprinkles_whiteSpace_nowrap__1lrvpk91c"
           >
-            Shelf
-          </a>
-        </li>
-      </ul>
+            <a
+              class="sprinkles_color_inherit__1lrvpk99"
+              href="/shelf/"
+            >
+              Shelf
+            </a>
+          </li>
+        </ul>
+      </nav>
       <p
-        class="footerFairUseCss"
+        class="sprinkles_fontWeight_light__1lrvpk9m sprinkles_fontSize_small__1lrvpk9h sprinkles_lineHeight_16__1lrvpk9x"
       >
-        All covers used in accordance with the 
+        All images used in accordance with the 
         <a
+          class="sprinkles_color_inherit__1lrvpk99"
           href="http://www.copyright.gov/title17/92chap1.html#107"
         >
           Fair Use Law.
         </a>
       </p>
       <div
-        class="srOnlyCss"
+        class="ScreenReaderOnly_screenReaderOnlyStyle__1lzmpje0"
       >
         <a
           href="#top"
