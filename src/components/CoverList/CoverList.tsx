@@ -151,7 +151,7 @@ export function Cover({
         alignItems={{ tablet: "center" }}
       >
         <Title title={title} slug={slug} />
-        <Spacer axis="vertical" size={{ default: 8, tablet: 4 }} />
+        <Spacer axis="vertical" size={4} />
         <YearAndKind kind={kind} year={year} />
         <Spacer axis="vertical" size={{ default: 4, tablet: 8 }} />
 
