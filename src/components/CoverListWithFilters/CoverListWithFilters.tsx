@@ -78,6 +78,10 @@ function groupForItem(
     }
     case "author-asc":
     case "author-desc": {
+      if (!item.authors) {
+        return "Unknown";
+      }
+
       return item.authors[0].sortName[0];
     }
     case "title": {
@@ -135,8 +139,8 @@ export function CoverListWithFilters({
   distinctReadYears?: readonly string[];
   distinctPublishedYears: readonly string[];
   distinctKinds: readonly string[];
-  distinctGrades?: readonly (string | null)[];
-  distinctAuthors?: readonly (string | null)[];
+  distinctGrades?: readonly string[];
+  distinctAuthors?: readonly string[];
   initialSort: Sort;
   toggleReviewed?: boolean;
   coverDetails?: (item: ICoverListWithFiltersItem) => React.ReactNode;
@@ -346,7 +350,7 @@ export function CoverListWithFilters({
                           title={item.title}
                           year={item.yearPublished}
                           grade={item.grade}
-                          dateFinished={item.dateFinished}
+                          date={item.dateFinished}
                           kind={item.kind}
                           edition={item.edition}
                           slug={item.slug}
@@ -413,8 +417,9 @@ export interface ICoverListWithFiltersItem {
   grade?: string | null;
   gradeValue?: number | null;
   slug: string | null;
-  authors: {
+  authors?: readonly {
     name: string;
+    notes?: string | null;
     sortName: string;
   }[];
   cover: {

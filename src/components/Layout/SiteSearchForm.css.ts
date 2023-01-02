@@ -7,7 +7,7 @@ export const searchInputStyle = style({
   borderRadius: 0,
   minWidth: 0,
   "@media": {
-    [minMediaQuery("max")]: {
+    [minMediaQuery("desktop")]: {
       width: "100%",
     },
   },

@@ -45,10 +45,10 @@ interface IImageProps extends IBoxProps {
   slug: string | null | undefined;
   image: IGraphqlImage;
   title: string;
-  year: number;
+  year?: number;
 }
 
-function Image({ slug, image, title, year, ...rest }: IImageProps) {
+function Image({ slug, image, title, ...rest }: IImageProps) {
   if (slug) {
     return (
       <Link
@@ -58,7 +58,7 @@ function Image({ slug, image, title, year, ...rest }: IImageProps) {
         transform="safariBorderRadiusFix"
         {...rest}
       >
-        <GraphqlImage image={image} alt={`A poster from ${title} (${year})`} />
+        <GraphqlImage image={image} alt={`A cover from ${title}`} />
       </Link>
     );
   }
@@ -80,14 +80,14 @@ function Title({
   slug,
 }: {
   title: string;
-  year: number;
+  year?: number;
   slug: string | null | undefined;
 }) {
-  const yearBox = (
+  const yearBox = year ? (
     <Box as="span" fontSize="xSmall" color="subtle" fontWeight="light">
       &nbsp;{year}
     </Box>
-  );
+  ) : null;
 
   if (slug)
     return (
@@ -136,7 +136,7 @@ export function Cover({
   slug?: string | null;
   image: IGraphqlImage;
   title: string;
-  year: number;
+  year?: number;
   grade?: string | null;
   date?: string;
   edition?: string | null;

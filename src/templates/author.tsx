@@ -35,7 +35,7 @@ export default function AuthorTemplate({
       items={data.author.works}
       distinctPublishedYears={data.distinct.publishedYears}
       distinctKinds={data.distinct.kinds}
-      initialSort="published-date-asc"
+      initialSort="year-published-asc"
       toggleReviewed={true}
     >
       <Box textAlign="center" lineHeight={36}>
@@ -65,7 +65,7 @@ export default function AuthorTemplate({
 
 export const pageQuery = graphql`
   query AuthorTemplate($id: String!) {
-    author: authorsJson(id: { eq: $id }) {
+    author: shelfAuthor(id: $id) {
       name
       sortName
       avatar {

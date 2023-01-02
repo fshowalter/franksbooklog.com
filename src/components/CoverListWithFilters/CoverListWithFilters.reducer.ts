@@ -36,9 +36,15 @@ function sortItems(items: ICoverListWithFiltersItem[], sortOrder: Sort) {
     "grade-desc": (a, b) =>
       sortNumberDesc(a.gradeValue ?? -1, b.gradeValue ?? -1),
     "author-asc": (a, b) =>
-      sortStringAsc(a.authors[0].sortName, b.authors[0].sortName),
+      sortStringAsc(
+        a.authors ? a.authors[0].sortName : "0000",
+        b.authors ? b.authors[0].sortName : "0000"
+      ),
     "author-desc": (a, b) =>
-      sortStringDesc(a.authors[0].sortName, b.authors[0].sortName),
+      sortStringDesc(
+        a.authors ? a.authors[0].sortName : "0000",
+        b.authors ? b.authors[0].sortName : "0000"
+      ),
   };
 
   const comparer = sortMap[sortOrder];
@@ -231,6 +237,10 @@ export function reducer(state: State, action: Action): State {
         ...state.filters,
         author: (item: ICoverListWithFiltersItem) => {
           if (action.value === "All") {
+            return true;
+          }
+
+          if (!item.authors) {
             return true;
           }
 

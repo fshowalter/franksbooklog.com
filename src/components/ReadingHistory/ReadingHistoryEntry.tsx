@@ -99,7 +99,7 @@ function Details({
             progressValue = 100;
           }
 
-          if (!isNaN(progressNumber)) {
+          if (!isNaN(Number(progressNumber))) {
             progressValue = parseInt(progressNumber);
           }
 

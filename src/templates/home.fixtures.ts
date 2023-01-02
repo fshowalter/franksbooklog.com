@@ -11,8 +11,9 @@ export const data = {
       kind: "Nonfiction",
       authors: [
         {
+          key: "steven-novella",
           name: "Steven Novella",
-          slug: "steven-novella",
+          slug: null,
           notes: null,
         },
       ],
@@ -54,8 +55,9 @@ export const data = {
       kind: "Novel",
       authors: [
         {
+          key: "stephen-king",
           name: "Stephen King",
-          slug: "stephen-king",
+          slug: null,
           notes: null,
         },
       ],
@@ -97,8 +99,9 @@ export const data = {
       kind: "Novel",
       authors: [
         {
+          key: "ian-fleming",
           name: "Ian Fleming",
-          slug: "ian-fleming",
+          slug: null,
           notes: null,
         },
       ],
@@ -140,8 +143,9 @@ export const data = {
       kind: "Novel",
       authors: [
         {
+          key: "stephen-king",
           name: "Stephen King",
-          slug: "stephen-king",
+          slug: null,
           notes: null,
         },
       ],
@@ -183,8 +187,9 @@ export const data = {
       kind: "Nonfiction",
       authors: [
         {
+          key: "david-goggins",
           name: "David Goggins",
-          slug: "david-goggins",
+          slug: null,
           notes: null,
         },
       ],
@@ -226,8 +231,9 @@ export const data = {
       kind: "Novel",
       authors: [
         {
+          key: "richard-laymon",
           name: "Richard Laymon",
-          slug: "richard-laymon",
+          slug: null,
           notes: null,
         },
       ],
@@ -269,8 +275,9 @@ export const data = {
       kind: "Nonfiction",
       authors: [
         {
+          key: "scott-carney",
           name: "Scott Carney",
-          slug: "scott-carney",
+          slug: null,
           notes: null,
         },
       ],
@@ -312,8 +319,9 @@ export const data = {
       kind: "Novel",
       authors: [
         {
+          key: "raymond-chandler",
           name: "Raymond Chandler",
-          slug: "raymond-chandler",
+          slug: null,
           notes: null,
         },
       ],
@@ -355,8 +363,9 @@ export const data = {
       kind: "Nonfiction",
       authors: [
         {
+          key: "chuck-palahniuk",
           name: "Chuck Palahniuk",
-          slug: "chuck-palahniuk",
+          slug: null,
           notes: null,
         },
       ],
@@ -398,8 +407,9 @@ export const data = {
       kind: "Novel",
       authors: [
         {
+          key: "stephen-king",
           name: "Stephen King",
-          slug: "stephen-king",
+          slug: null,
           notes: null,
         },
       ],

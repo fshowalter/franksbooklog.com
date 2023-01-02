@@ -43,7 +43,7 @@ export const WorksJson = {
       },
     },
     gradeValue: {
-      type: `String`,
+      type: `Int`,
       extensions: {
         proxyToReview: {
           fieldName: "gradeValue",

@@ -76,6 +76,7 @@ export const pageQuery = graphql`
   fragment ReviewsPageAuthor on WorkAuthor {
     name
     notes
+    sortName
   }
 
   query ReviewsPage {

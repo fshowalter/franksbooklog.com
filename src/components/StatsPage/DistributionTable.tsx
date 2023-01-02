@@ -60,6 +60,6 @@ export function DistributionTable({
 }
 
 export interface IDistribution {
-  name: string;
+  name: string | null;
   count: number;
 }

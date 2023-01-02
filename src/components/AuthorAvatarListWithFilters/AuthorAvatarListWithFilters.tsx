@@ -112,8 +112,6 @@ export function AuthorAvatarListWithFilters({
   authors,
 }: {
   authors: readonly Queries.AuthorAvatarListItemFragment[];
-  title: string;
-  tagline: string;
 }): JSX.Element {
   const [state, dispatch] = useReducer(
     reducer,
