@@ -32,7 +32,6 @@ export default function AllTimeStatsPage({
     <StatsPage
       title="All-Time Stats"
       tagline={tagline}
-      year="all"
       mostReadAuthors={data.mostReadAuthors}
       allYears={data.reading.years}
       reviewCount={data.review.totalCount}

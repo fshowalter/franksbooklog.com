@@ -9,7 +9,7 @@ import type {
 import { resolveFieldForNode } from "../utils/resolveFieldForNode";
 
 export interface AuthorNode extends GatsbyNode {
-  slug: string;
+  key: string;
   name: string;
   sortName: string;
 }
@@ -57,7 +57,7 @@ export const AuthorsJson = {
           query: {
             filter: {
               authors: {
-                elemMatch: { slug: { eq: source.slug } },
+                elemMatch: { key: { eq: source.key } },
               },
             },
             sort: {
@@ -82,7 +82,7 @@ export const AuthorsJson = {
           query: {
             filter: {
               authors: {
-                elemMatch: { slug: { eq: source.slug } },
+                elemMatch: { key: { eq: source.key } },
               },
             },
           },
@@ -112,7 +112,7 @@ export const AuthorsJson = {
           query: {
             filter: {
               authors: {
-                elemMatch: { slug: { eq: source.slug } },
+                elemMatch: { key: { eq: source.key } },
               },
               ...yearFilter,
             },
@@ -135,7 +135,7 @@ export const AuthorsJson = {
             filter: {
               authors: {
                 elemMatch: {
-                  slug: {
+                  key: {
                     in: [source.key],
                   },
                 },
@@ -162,8 +162,8 @@ export const AuthorsJson = {
             filter: {
               authors: {
                 elemMatch: {
-                  slug: {
-                    in: [source.slug],
+                  key: {
+                    in: [source.key],
                   },
                 },
               },
@@ -187,7 +187,7 @@ export const AuthorsJson = {
           query: {
             filter: {
               absolutePath: {
-                eq: path.resolve(`./content/assets/avatars/${source.slug}.png`),
+                eq: path.resolve(`./content/assets/avatars/${source.key}.png`),
               },
             },
           },

@@ -42,7 +42,6 @@ export default function StatsForYearTemplate({
     <StatsPage
       title={`${pageContext.year} Stats`}
       tagline={tagline}
-      year={pageContext.year.toString()}
       mostReadAuthors={data.mostReadAuthors}
       allYears={data.allReading.years}
       reviewCount={data.review.totalCount}

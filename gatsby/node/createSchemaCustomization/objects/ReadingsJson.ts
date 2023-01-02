@@ -28,256 +28,252 @@ interface IHastNode extends Node {
   }[];
 }
 
-export const commonReadingFields = {
-  sequence: "Int!",
-  workSlug: "String!",
-  edition: "String!",
-  timeline: {
-    type: `[${SchemaNames.TimelineEntry}!]!`,
-  },
-  isAudiobook: {
-    type: "Boolean!",
-    resolve: (source: ReadingNode) => {
-      return source.edition === "Audible";
+export const ReadingsJson = {
+  name: SchemaNames.ReadingsJson,
+  interfaces: ["Node"],
+  fields: {
+    sequence: "Int!",
+    workSlug: "String!",
+    edition: "String!",
+    timeline: {
+      type: `[${SchemaNames.TimelineEntry}!]!`,
     },
-  },
-  readingTime: {
-    type: "Int!",
-    extensions: {
-      dateformat: {},
+    isAudiobook: {
+      type: "Boolean!",
+      resolve: (source: ReadingNode) => {
+        return source.edition === "Audible";
+      },
     },
-    resolve: (source: ReadingNode) => {
-      const start = new Date(`${source.timeline[0].date}T00:00:00`);
-      const end = new Date(
-        `${source.timeline[source.timeline.length - 1].date}T00:00:00`
-      );
+    readingTime: {
+      type: "Int!",
+      extensions: {
+        dateformat: {},
+      },
+      resolve: (source: ReadingNode) => {
+        const start = new Date(`${source.timeline[0].date}T00:00:00`);
+        const end = new Date(
+          `${source.timeline[source.timeline.length - 1].date}T00:00:00`
+        );
 
-      if (start === end) {
-        return 1;
-      }
+        if (start === end) {
+          return 1;
+        }
 
-      return (end.getTime() - start.getTime()) / (1000 * 3600 * 24) + 1;
+        return (end.getTime() - start.getTime()) / (1000 * 3600 * 24) + 1;
+      },
     },
-  },
-  editionNotes: {
-    type: "String",
-    resolve: (source: ReadingNode) => {
-      if (!source.editionNotes) {
-        return null;
-      }
+    editionNotes: {
+      type: "String",
+      resolve: (source: ReadingNode) => {
+        if (!source.editionNotes) {
+          return null;
+        }
 
-      const mdast = remark().parse(source.editionNotes);
+        const mdast = remark().parse(source.editionNotes);
 
-      const hast = toHast(mdast, {
-        allowDangerousHtml: true,
-      }) as IHastNode;
+        const hast = toHast(mdast, {
+          allowDangerousHtml: true,
+        }) as IHastNode;
 
-      hast.children[0].tagName = "span";
+        hast.children[0].tagName = "span";
 
-      return toHtml(hast);
+        return toHtml(hast);
+      },
     },
-  },
-  readingNote: {
-    type: SchemaNames.MarkdownRemark,
-    resolve: async (
-      source: ReadingNode,
-      _args: unknown,
-      context: GatsbyNodeContext
-    ) => {
-      return await context.nodeModel.findOne({
-        type: SchemaNames.MarkdownRemark,
-        query: {
-          filter: {
-            fileAbsolutePath: {
-              regex: `//reading_notes/${source.sequence
-                .toString()
-                .padStart(4, "0")}-.*/`,
+    readingNote: {
+      type: SchemaNames.MarkdownRemark,
+      resolve: async (
+        source: ReadingNode,
+        _args: unknown,
+        context: GatsbyNodeContext
+      ) => {
+        return await context.nodeModel.findOne({
+          type: SchemaNames.MarkdownRemark,
+          query: {
+            filter: {
+              fileAbsolutePath: {
+                regex: `//reading_notes/${source.sequence
+                  .toString()
+                  .padStart(4, "0")}-.*/`,
+              },
             },
           },
-        },
-      });
+        });
+      },
     },
-  },
-  work: {
-    type: `${SchemaNames.WorksJson}!`,
-    resolve: async (
-      source: ReadingNode,
-      _args: unknown,
-      context: GatsbyNodeContext
-    ) => {
-      return await context.nodeModel.findOne({
-        type: SchemaNames.WorksJson,
-        query: {
-          filter: {
-            slug: { eq: source.workSlug },
-          },
-        },
-      });
-    },
-  },
-  abandoned: {
-    type: "Boolean!",
-    resolve: (source: ReadingNode) => {
-      return (
-        source.timeline[source.timeline.length - 1].progress == "Abandoned"
-      );
-    },
-  },
-  dateStarted: {
-    type: "Date!",
-    extensions: {
-      dateformat: {},
-    },
-    resolve: (source: ReadingNode) => {
-      return source.timeline.reduce((prev, current) =>
-        prev.date < current.date ? prev : current
-      ).date;
-    },
-  },
-  dateFinished: {
-    type: "Date!",
-    extensions: {
-      dateformat: {},
-    },
-    resolve: (source: ReadingNode) => {
-      return source.timeline.reduce((prev, current) =>
-        prev.date > current.date ? prev : current
-      ).date;
-    },
-  },
-  excerpt: {
-    type: "String",
-    resolve: async (
-      source: ReadingNode,
-      args: GatsbyResolveArgs,
-      context: GatsbyNodeContext,
-      info: GatsbyResolveInfo
-    ) => {
-      const { totalCount } = await context.nodeModel.findAll<ReadingNode>({
-        type: SchemaNames.ReadingsJson,
-        query: {
-          filter: {
-            workSlug: {
-              eq: source.workSlug,
+    work: {
+      type: `${SchemaNames.WorksJson}!`,
+      resolve: async (
+        source: ReadingNode,
+        _args: unknown,
+        context: GatsbyNodeContext
+      ) => {
+        return await context.nodeModel.findOne({
+          type: SchemaNames.WorksJson,
+          query: {
+            filter: {
+              slug: { eq: source.workSlug },
             },
           },
-        },
-      });
+        });
+      },
+    },
+    abandoned: {
+      type: "Boolean!",
+      resolve: (source: ReadingNode) => {
+        return (
+          source.timeline[source.timeline.length - 1].progress == "Abandoned"
+        );
+      },
+    },
+    dateStarted: {
+      type: "Date!",
+      extensions: {
+        dateformat: {},
+      },
+      resolve: (source: ReadingNode) => {
+        return source.timeline.reduce((prev, current) =>
+          prev.date < current.date ? prev : current
+        ).date;
+      },
+    },
+    dateFinished: {
+      type: "Date!",
+      extensions: {
+        dateformat: {},
+      },
+      resolve: (source: ReadingNode) => {
+        return source.timeline.reduce((prev, current) =>
+          prev.date > current.date ? prev : current
+        ).date;
+      },
+    },
+    excerpt: {
+      type: "String",
+      resolve: async (
+        source: ReadingNode,
+        args: GatsbyResolveArgs,
+        context: GatsbyNodeContext,
+        info: GatsbyResolveInfo
+      ) => {
+        const { totalCount } = await context.nodeModel.findAll<ReadingNode>({
+          type: SchemaNames.ReadingsJson,
+          query: {
+            filter: {
+              workSlug: {
+                eq: source.workSlug,
+              },
+            },
+          },
+        });
 
-      if ((await totalCount()) > 1) {
-        const readingNoteNode = await resolveFieldForNode<MarkdownRemarkNode>(
-          "readingNote",
+        if ((await totalCount()) > 1) {
+          const readingNoteNode = await resolveFieldForNode<MarkdownRemarkNode>(
+            "readingNote",
+            source,
+            context,
+            info,
+            args
+          );
+
+          if (readingNoteNode) {
+            return resolveFieldForNode<string>(
+              "html",
+              readingNoteNode,
+              context,
+              info,
+              args
+            );
+          }
+        }
+
+        const reviewNode = await resolveFieldForNode<MarkdownRemarkNode>(
+          "review",
           source,
           context,
           info,
           args
         );
 
-        if (readingNoteNode) {
-          return resolveFieldForNode<string>(
-            "html",
-            readingNoteNode,
-            context,
-            info,
-            args
-          );
+        if (!reviewNode) {
+          return null;
         }
-      }
 
-      const reviewNode = await resolveFieldForNode<MarkdownRemarkNode>(
-        "review",
-        source,
-        context,
-        info,
-        args
-      );
+        return await resolveFieldForNode<string>(
+          "excerptHtml",
+          reviewNode,
+          context,
+          info,
+          args
+        );
+      },
+    },
+    title: {
+      type: "String!",
+      extensions: {
+        proxyToWork: {
+          fieldName: "title",
+        },
+      },
+    },
+    sortTitle: {
+      type: "String!",
+      extensions: {
+        proxyToWork: {
+          fieldName: "sortTitle",
+        },
+      },
+    },
+    yearPublished: {
+      type: "Int!",
+      extensions: {
+        proxyToWork: {
+          fieldName: "yearPublished",
+        },
+      },
+    },
+    kind: {
+      type: "String!",
+      extensions: {
+        proxyToWork: {
+          fieldName: "kind",
+        },
+      },
+    },
+    authors: {
+      type: `[${SchemaNames.WorkAuthor}!]!`,
+      extensions: {
+        proxyToWork: {
+          fieldName: "authors",
+        },
+      },
+    },
+    cover: {
+      type: "File!",
+      extensions: {
+        proxyToWork: {
+          fieldName: "cover",
+        },
+      },
+    },
+    yearFinished: {
+      type: "Int!",
+      resolve: (source: ReadingNode) => {
+        const lastDate = source.timeline.reduce((prev, current) =>
+          prev.date > current.date ? prev : current
+        );
 
-      if (!reviewNode) {
-        return null;
-      }
-
-      return await resolveFieldForNode<string>(
-        "excerptHtml",
-        reviewNode,
-        context,
-        info,
-        args
-      );
-    },
-  },
-  title: {
-    type: "String!",
-    extensions: {
-      proxyToWork: {
-        fieldName: "title",
+        return parseInt(lastDate.date.substring(0, 4));
       },
     },
-  },
-  sortTitle: {
-    type: "String!",
-    extensions: {
-      proxyToWork: {
-        fieldName: "sortTitle",
+    grade: {
+      type: "String",
+      extensions: {
+        proxyToReview: {
+          fieldName: "grade",
+        },
       },
     },
-  },
-  yearPublished: {
-    type: "Int!",
-    extensions: {
-      proxyToWork: {
-        fieldName: "yearPublished",
-      },
-    },
-  },
-  kind: {
-    type: "String!",
-    extensions: {
-      proxyToWork: {
-        fieldName: "kind",
-      },
-    },
-  },
-  authors: {
-    type: `[${SchemaNames.WorkAuthor}!]!`,
-    extensions: {
-      proxyToWork: {
-        fieldName: "authors",
-      },
-    },
-  },
-  cover: {
-    type: "File!",
-    extensions: {
-      proxyToWork: {
-        fieldName: "cover",
-      },
-    },
-  },
-  yearFinished: {
-    type: "Int!",
-    resolve: (source: ReadingNode) => {
-      const lastDate = source.timeline.reduce((prev, current) =>
-        prev.date > current.date ? prev : current
-      );
-
-      return parseInt(lastDate.date.substring(0, 4));
-    },
-  },
-  grade: {
-    type: "String",
-    extensions: {
-      proxyToReview: {
-        fieldName: "grade",
-      },
-    },
-  },
-};
-
-export const ReadingsJson = {
-  name: SchemaNames.ReadingsJson,
-  interfaces: ["Node"],
-  fields: {
-    ...commonReadingFields,
     review: {
       type: SchemaNames.MarkdownRemark,
       extensions: {

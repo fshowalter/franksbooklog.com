@@ -10,7 +10,6 @@ import { StatsNavigation } from "./StatsNavigation";
 export function StatsPage({
   title,
   tagline,
-  year,
   readingCount,
   reviewCount,
   bookCount,
@@ -22,7 +21,6 @@ export function StatsPage({
   decadeDistributions,
   allYears,
 }: {
-  year: string;
   readingCount: number;
   reviewCount: number;
   bookCount: number;
@@ -59,17 +57,7 @@ export function StatsPage({
               {tagline}
             </Box>
             <Spacer axis="vertical" size={24} />
-            <StatsNavigation
-              currentYear={year}
-              linkFunc={(year: string) => {
-                if (year === "all") {
-                  return "/stats/";
-                }
-
-                return `/stats/${year}/`;
-              }}
-              years={allYears}
-            />
+            <StatsNavigation years={allYears} />
           </Box>
           <Box>
             <Spacer axis="vertical" size={32} />

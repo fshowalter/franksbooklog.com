@@ -1,60 +1,27 @@
 import { Box } from "../Box";
 import { Link } from "../Link";
+import { activeLinkStyle } from "./StatsNavigation.css";
 
-function AllTimeLink({
-  currentYear,
-  linkFunc,
+function ListItem({
+  text,
+  target,
 }: {
-  currentYear: string;
-  linkFunc: (year: string) => string;
+  text: string;
+  target: string;
 }): JSX.Element {
-  if (!currentYear) {
-    return <></>;
-  }
-
   return (
     <Box as="li" display="block">
-      <Link to={linkFunc("all")}>All-Time</Link>
-    </Box>
-  );
-}
-
-function YearLink({
-  year,
-  currentYear,
-  linkFunc,
-}: {
-  year: string;
-  currentYear: string;
-  linkFunc: (y: string) => string;
-}): JSX.Element | null {
-  if (year === "all") {
-    return null;
-  }
-
-  if (year === currentYear) {
-    return (
-      <Box as="li" display="block">
-        {year}
-      </Box>
-    );
-  }
-
-  return (
-    <Box as="li" display="block">
-      <Link to={linkFunc(year)}>{year}</Link>
+      <Link to={target} activeClassName={activeLinkStyle}>
+        {text}
+      </Link>
     </Box>
   );
 }
 
 export function StatsNavigation({
-  currentYear,
   years,
-  linkFunc,
 }: {
-  currentYear: string;
   years: readonly string[];
-  linkFunc: (year: string) => string;
 }): JSX.Element {
   return (
     <Box
@@ -66,16 +33,9 @@ export function StatsNavigation({
       flexWrap="wrap"
       justifyContent="center"
     >
-      <AllTimeLink currentYear={currentYear} linkFunc={linkFunc} />
+      <ListItem text="All-Time" target="/stats/" />
       {[...years].reverse().map((year) => {
-        return (
-          <YearLink
-            key={year}
-            year={year}
-            currentYear={currentYear}
-            linkFunc={linkFunc}
-          />
-        );
+        return <ListItem key={year} text={year} target={`/stats/${year}`} />;
       })}
     </Box>
   );

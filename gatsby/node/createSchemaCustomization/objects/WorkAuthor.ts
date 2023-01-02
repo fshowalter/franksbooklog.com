@@ -3,16 +3,16 @@ import type { GatsbyNodeContext } from "../type-definitions";
 import type { AuthorNode } from "./AuthorsJson";
 
 export interface WorkAuthorNode {
-  slug: string;
+  key: string;
   notes: string;
 }
 
-async function findAuthor(context: GatsbyNodeContext, slug: string) {
+async function findAuthor(context: GatsbyNodeContext, key: string) {
   return await context.nodeModel.findOne<AuthorNode>({
     type: SchemaNames.AuthorsJson,
     query: {
       filter: {
-        key: { eq: slug },
+        key: { eq: key },
       },
     },
   });
@@ -22,7 +22,7 @@ export const WorkAuthor = {
   name: SchemaNames.WorkAuthor,
   interfaces: ["Node"],
   fields: {
-    slug: "String!",
+    key: "String!",
     notes: "String",
     name: {
       type: "String!",
@@ -31,9 +31,21 @@ export const WorkAuthor = {
         _args: unknown,
         context: GatsbyNodeContext
       ) => {
-        const author = await findAuthor(context, source.slug);
+        const author = await findAuthor(context, source.key);
 
         return author ? author.name : null;
+      },
+    },
+    slug: {
+      type: "String",
+      resolve: async (
+        source: WorkAuthorNode,
+        _args: unknown,
+        context: GatsbyNodeContext
+      ) => {
+        const author = await findAuthor(context, source.key);
+
+        return author ? author.slug : null;
       },
     },
     sortName: {
@@ -43,7 +55,7 @@ export const WorkAuthor = {
         _args: unknown,
         context: GatsbyNodeContext
       ) => {
-        const author = await findAuthor(context, source.slug);
+        const author = await findAuthor(context, source.key);
 
         return author ? author.sortName : null;
       },

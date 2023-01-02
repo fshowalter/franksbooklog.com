@@ -59,8 +59,8 @@ export const mostReadAuthorsQuery = {
           }
 
           for (const readingAuthor of authors) {
-            currentValue[readingAuthor.slug] ||= [];
-            currentValue[readingAuthor.slug].push(reading);
+            currentValue[readingAuthor.key] ||= [];
+            currentValue[readingAuthor.key].push(reading);
           }
 
           return currentValue;

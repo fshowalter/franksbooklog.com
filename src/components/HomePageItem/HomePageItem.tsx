@@ -1,5 +1,6 @@
 import { graphql } from "gatsby";
 import { toSentenceArray } from "../../utils";
+import { AuthorLink } from "../AuthorLink";
 import { Box, IBoxProps } from "../Box";
 import { Grade } from "../Grade";
 import { GraphqlImage } from "../GraphqlImage";
@@ -17,27 +18,6 @@ import {
 const GridArea = gridAreaComponent(gridAreas);
 
 const Grid = gridComponent(gridStyle);
-
-function AuthorLink({
-  author,
-}: {
-  author: Queries.HomePageAuthorFragment;
-}): JSX.Element {
-  let notes = null;
-
-  if (author.notes) {
-    notes = <> ({author.notes})</>;
-  }
-
-  return (
-    <>
-      <Link key={author.slug} to={`/shelf/authors/${author.slug}/`}>
-        {author.name}
-      </Link>
-      {notes}
-    </>
-  );
-}
 
 interface IHomePageItemProps extends IBoxProps {
   item: Queries.HomePageItemFragment;
@@ -97,7 +77,13 @@ export function HomePageItem({
               {item.kind}
             </Box>
             <Spacer axis="vertical" size={24} />
-            <Box as="h2" fontWeight="bold" fontSize="large" lineHeight={32}>
+            <Box
+              as="h2"
+              fontWeight="bold"
+              fontSize="large"
+              lineHeight={32}
+              textAlign="center"
+            >
               <Link
                 to={`/reviews/${item.workSlug}/`}
                 rel="canonical"
@@ -112,7 +98,13 @@ export function HomePageItem({
               by{" "}
               {toSentenceArray(
                 item.authors.map((author) => {
-                  return <AuthorLink key={author.slug} author={author} />;
+                  return (
+                    <AuthorLink
+                      display="inline"
+                      key={author.key}
+                      author={author}
+                    />
+                  );
                 })
               )}
             </Box>{" "}
@@ -132,6 +124,7 @@ export function HomePageItem({
 
 export const query = graphql`
   fragment HomePageAuthor on WorkAuthor {
+    key
     name
     slug
     notes

@@ -4,8 +4,8 @@ import { Box } from "../components/Box";
 import { Grade } from "../components/Grade";
 import { GraphqlImage } from "../components/GraphqlImage";
 import { HeadBuilder } from "../components/HeadBuilder";
+import { IncludedWorks } from "../components/IncludedWorks/IncludedWorks";
 import { Layout } from "../components/Layout";
-import { Link } from "../components/Link";
 import { LongFormText } from "../components/LongFormText";
 import { MoreReviewsNav } from "../components/MoreReviews";
 import { MoreReviews } from "../components/MoreReviews/MoreReviews";
@@ -133,11 +133,15 @@ export default function ReviewPage({
             | {work.kind}
           </Box>
           <Spacer axis="vertical" size={8} />
-          <Box fontSize="medium">
+          <Box fontSize="medium" textAlign="center">
             by{" "}
             {toSentenceArray(
               work.authors.map((author) => (
-                <AuthorLink key={author.slug} author={author} />
+                <AuthorLink
+                  key={author.slug}
+                  author={author}
+                  display="inline-block"
+                />
               ))
             )}
           </Box>
@@ -171,54 +175,7 @@ export default function ReviewPage({
             text={work.review.linkedHtml}
           />
         </Box>
-        {work.includedWorks.length > 0 && (
-          <>
-            <Spacer axis="vertical" size={64} />
-            <Box
-              as="h3"
-              color="subtle"
-              fontSize="medium"
-              fontWeight="normal"
-              paddingX="gutter"
-              boxShadow="borderBottom"
-              maxWidth="popout"
-              width="full"
-            >
-              Included Works
-              <Spacer size={8} axis="vertical" />
-            </Box>
-            <Box as="ul" width="full" maxWidth="popout">
-              {work.includedWorks.map((includedWork) => (
-                <Box
-                  as="li"
-                  key={includedWork.id}
-                  display="flex"
-                  flexDirection="column"
-                  backgroundColor="zebra"
-                  paddingX="gutter"
-                  paddingY={16}
-                >
-                  <Link
-                    to={`/reviews/${includedWork.slug}/`}
-                    fontSize="medium"
-                    fontWeight="semiBold"
-                  >
-                    {includedWork.title}
-                  </Link>{" "}
-                  <Box>
-                    <Box as="span" color="subtle">
-                      by
-                    </Box>{" "}
-                    {toSentenceArray(
-                      includedWork.authors.map((author) => author.name)
-                    )}
-                  </Box>
-                  <Grade grade={includedWork.grade} height={16} />
-                </Box>
-              ))}
-            </Box>
-          </>
-        )}
+        <IncludedWorks work={work} maxWidth="popout" width="full" />
         <Spacer axis="vertical" size={80} />
         <ReadingHistory work={work} maxWidth="popout" width="full" />
         <Spacer axis="vertical" size={128} />
@@ -271,16 +228,7 @@ export const pageQuery = graphql`
         notes
         slug
       }
-      includedWorks {
-        id
-        title
-        authors {
-          name
-          slug
-        }
-        grade
-        slug
-      }
+      ...IncludedWorks
       browseMore {
         ...MoreReviews
       }
@@ -288,11 +236,7 @@ export const pageQuery = graphql`
         linkedHtml
         date(formatString: "ddd MMM DD, YYYY")
       }
-      readings {
-        readingTime
-        dateFinishedIso: dateFinished(formatString: "Y-MM-DD")
-        dateFinishedPretty: dateFinished(formatString: "dddd MMMM D, YYYY")
-      }
+      ...ReadingHistory
       cover {
         childImageSharp {
           gatsbyImageData(

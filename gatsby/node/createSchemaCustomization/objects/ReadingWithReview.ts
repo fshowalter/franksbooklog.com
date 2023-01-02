@@ -1,11 +1,11 @@
 import { SchemaNames } from "../schemaNames";
-import { commonReadingFields } from "./ReadingsJson";
+import { ReadingsJson } from "./ReadingsJson";
 
 export const ReadingWithReview = {
   name: SchemaNames.ReadingWithReview,
   interfaces: ["Node"],
   fields: {
-    ...commonReadingFields,
+    ...ReadingsJson.fields,
     review: {
       type: `${SchemaNames.MarkdownRemark}!`,
       extensions: {
