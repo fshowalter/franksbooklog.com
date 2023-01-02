@@ -137,7 +137,7 @@ function AuthorProgressTable({
   );
 }
 
-export default function WatchlistProgressPage({
+export default function ShelfProgressPage({
   data,
 }: {
   data: Queries.ShelfAuthorProgressPageQuery;
@@ -173,7 +173,7 @@ export default function WatchlistProgressPage({
               <Spacer axis="vertical" size={16} />
               <p>
                 My progress working through{" "}
-                <Link to="/shelf/">my book-review bucketlist</Link>.
+                <Link to="/shelf/">my bookshelf</Link>.
               </p>
             </Box>
           </Box>
@@ -237,15 +237,15 @@ export const pageQuery = graphql`
     shelfWorks: allWorksJson(filter: { shelf: { eq: true } }) {
       totalCount
     }
-    author: allAuthorsJson(filter: { shelf: { eq: true } }) {
+    author: allAuthorsJson(filter: { shelfWorkCount: { gt: 0 } }) {
       nodes {
         ...ShelfAuthorProgress
       }
     }
-    authorTotal: allAuthorsJson(filter: { shelf: { eq: true } }) {
+    authorTotal: allAuthorsJson(filter: { shelfWorkCount: { gt: 0 } }) {
       sum(field: { shelfWorkCount: SELECT })
     }
-    authorReviewed: allAuthorsJson(filter: { shelf: { eq: true } }) {
+    authorReviewed: allAuthorsJson(filter: { shelfWorkCount: { gt: 0 } }) {
       sum(field: { reviewedShelfWorkCount: SELECT })
     }
   }
