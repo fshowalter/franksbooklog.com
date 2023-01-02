@@ -33,6 +33,7 @@ export default function ShelfPage({
       distinctPublishedYears={data.work.publishedYears}
       distinctAuthors={data.work.authors}
       initialSort="author-asc"
+      toggleReviewed={true}
     >
       <PageTitle textAlign="center">The Shelf</PageTitle>
       <Box as="q" display="block" textAlign="center" color="subtle">
