@@ -54724,6 +54724,16 @@ exports[`/reviews renders 1`] = `
                     >
                       Grade (Worst First)
                     </option>
+                    <option
+                      value="author-asc"
+                    >
+                      Auther (A → Z)
+                    </option>
+                    <option
+                      value="author-desc"
+                    >
+                      Author (Z → A)
+                    </option>
                   </select>
                 </label>
               </div>

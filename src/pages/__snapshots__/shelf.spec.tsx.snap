@@ -18129,16 +18129,6 @@ exports[`/shelf renders 1`] = `
                     class="SelectInput_inputSyle__p6r7r60 sprinkles_borderRadius_4__1lrvpk90"
                   >
                     <option
-                      value="sequence-desc"
-                    >
-                      Date Read (Newest First)
-                    </option>
-                    <option
-                      value="sequence-asc"
-                    >
-                      Date Read (Oldest First)
-                    </option>
-                    <option
                       value="year-published-desc"
                     >
                       Year Published (Newest First)
@@ -18162,6 +18152,16 @@ exports[`/shelf renders 1`] = `
                       value="grade-asc"
                     >
                       Grade (Worst First)
+                    </option>
+                    <option
+                      value="author-asc"
+                    >
+                      Auther (A → Z)
+                    </option>
+                    <option
+                      value="author-desc"
+                    >
+                      Author (Z → A)
                     </option>
                   </select>
                 </label>

@@ -279,8 +279,16 @@ export function CoverListWithFilters({
                   })
                 }
               >
-                <option value="sequence-desc">Date Read (Newest First)</option>
-                <option value="sequence-asc">Date Read (Oldest First)</option>
+                {distinctReadYears && (
+                  <>
+                    <option value="sequence-desc">
+                      Date Read (Newest First)
+                    </option>
+                    <option value="sequence-asc">
+                      Date Read (Oldest First)
+                    </option>
+                  </>
+                )}
                 <option value="year-published-desc">
                   Year Published (Newest First)
                 </option>
@@ -290,6 +298,8 @@ export function CoverListWithFilters({
                 <option value="title">Title</option>
                 <option value="grade-desc">Grade (Best First)</option>
                 <option value="grade-asc">Grade (Worst First)</option>
+                <option value="author-asc">Auther (A &rarr; Z)</option>
+                <option value="author-desc">Author (Z &rarr; A)</option>
               </SelectField>
             </Fieldset>
           </Box>
