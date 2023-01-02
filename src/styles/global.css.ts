@@ -1,6 +1,5 @@
 import { createVar, globalStyle } from "@vanilla-extract/css";
 import { backgroundColors, foregroundColors } from "./colors.css";
-import { size } from "./sizes.css";
 
 globalStyle(`*, *::before, *::after`, {
   boxSizing: `border-box`,
@@ -83,17 +82,4 @@ globalStyle(":root", {
       },
     },
   },
-});
-
-globalStyle(".reactSelect__dropdown-indicator > svg", {
-  color: "#054a93",
-});
-
-globalStyle(".reactSelect__value-container", {
-  lineHeight: size[24],
-  padding: "7px 31px 7px 15px !important",
-});
-
-globalStyle(".reactSelect__placeholder", {
-  padding: 0,
 });
