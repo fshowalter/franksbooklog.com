@@ -14,27 +14,21 @@ import {
   titleTypographyStyle,
 } from "./CoverList.css";
 
-function KindAndEdition({
+function YearAndKind({
   kind,
-  edition,
+  year,
 }: {
   kind?: string | null;
-  edition?: string | null;
+  year?: number | null;
 }): JSX.Element | null {
+  const yearBox = year ? <Box as="span">{year} | </Box> : null;
+
   if (kind) {
     return (
-      <>
-        <Box className={slugTypographyStyle}>{kind}</Box>
-      </>
-    );
-  }
-
-  if (edition) {
-    return (
-      <>
-        <Spacer axis="vertical" size={8} />
-        <Box className={slugTypographyStyle}>{edition}</Box>
-      </>
+      <Box className={slugTypographyStyle} color="subtle">
+        {yearBox}
+        {kind}
+      </Box>
     );
   }
 
@@ -76,19 +70,11 @@ function Image({ slug, image, title, ...rest }: IImageProps) {
 
 function Title({
   title,
-  year,
   slug,
 }: {
   title: string;
-  year?: number;
   slug: string | null | undefined;
 }) {
-  const yearBox = year ? (
-    <Box as="span" fontSize="xSmall" color="subtle" fontWeight="light">
-      &nbsp;{year}
-    </Box>
-  ) : null;
-
   if (slug)
     return (
       <Link
@@ -97,16 +83,10 @@ function Title({
         display="block"
       >
         {title}
-        {yearBox}
       </Link>
     );
 
-  return (
-    <Box className={titleTypographyStyle}>
-      {title}
-      {yearBox}
-    </Box>
-  );
+  return <Box className={titleTypographyStyle}>{title}</Box>;
 }
 
 function Authors({ authors }: { authors: readonly Author[] }) {
@@ -148,7 +128,7 @@ export function Cover({
     <Box
       as="li"
       flexDirection={{ default: "row", tablet: "column" }}
-      columnGap={24}
+      columnGap={16}
       backgroundColor={{ default: "zebra", tablet: "zebraOff" }}
       paddingX={{ default: "gutter", tablet: 0 }}
       paddingY={{ default: 16, tablet: 0 }}
@@ -163,49 +143,38 @@ export function Cover({
         flexShrink={0}
       />
       <Spacer axis="vertical" size={{ default: 0, tablet: 8 }} />
-      <Box flexGrow={1} width={{ tablet: "full" }}>
-        <Title title={title} year={year} slug={slug} />
-        <Spacer axis="vertical" size={4} />
-        <KindAndEdition kind={kind} edition={edition} />
-        <Spacer axis="vertical" size={4} />
+      <Box
+        flexGrow={1}
+        width={{ tablet: "full" }}
+        display="flex"
+        flexDirection="column"
+        alignItems={{ tablet: "center" }}
+      >
+        <Title title={title} slug={slug} />
+        <Spacer axis="vertical" size={{ default: 8, tablet: 4 }} />
+        <YearAndKind kind={kind} year={year} />
+        <Spacer axis="vertical" size={{ default: 4, tablet: 8 }} />
 
         {authors && <Authors authors={authors} />}
-        <Spacer axis="vertical" size={4} />
-        <Box
-          color="subtle"
-          display="flex"
-          flexDirection="column"
-          className={slugTypographyStyle}
-          fontWeight="light"
-          letterSpacing={0.5}
-          alignItems={{ default: "flex-start", tablet: "center" }}
-        >
-          {grade && (
-            <Box
-              // height={{ default: 16, tablet: 24 }}
-              display="flex"
-              flexDirection="column"
-              justifyContent="center"
-            >
-              {/* {!kind && !edition && !details && (
-                <Spacer axis="vertical" size={{ default: 4, tablet: 0 }} />
-              )} */}
-              <>
-                <Spacer axis="vertical" size={4} />
-                <Grade grade={grade} height={16} />
-              </>
+        <Spacer axis="vertical" size={{ default: 4, tablet: 8 }} />
+        {grade && <Grade grade={grade} height={16} />}
+        {/* <Spacer axis="vertical" size={8} /> */}
+        {date && (
+          <>
+            <Spacer axis="vertical" size={8} />
+            <Box color="subtle" className={slugTypographyStyle}>
+              {date}
             </Box>
-          )}
-          <Box>
-            {/* <Spacer axis="vertical" size={8} /> */}
-            {date && (
-              <>
-                <Spacer axis="vertical" size={4} />
-                <Box>{date}</Box>
-              </>
-            )}
-          </Box>
-        </Box>
+          </>
+        )}
+        {edition && (
+          <>
+            <Spacer axis="vertical" size={{ default: 8, tablet: 4 }} />
+            <Box color="subtle" className={slugTypographyStyle}>
+              {edition}
+            </Box>
+          </>
+        )}
         {details && details}
       </Box>
     </Box>

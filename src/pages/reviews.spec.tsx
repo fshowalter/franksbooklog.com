@@ -42,8 +42,10 @@ describe("/reviews", () => {
 
     render(<ReviewsIndexPage data={data} />);
 
-    await userEvent.selectOptions(screen.getByLabelText("Kind"), "Novel");
-    await userEvent.selectOptions(screen.getByLabelText("Kind"), "All");
+    await act(async () => {
+      await userEvent.selectOptions(screen.getByLabelText("Kind"), "Novel");
+      await userEvent.selectOptions(screen.getByLabelText("Kind"), "All");
+    });
 
     expect(screen.getByTestId("cover-list")).toMatchSnapshot();
   });
@@ -52,7 +54,12 @@ describe("/reviews", () => {
     expect.hasAssertions();
     render(<ReviewsIndexPage data={data} />);
 
-    await userEvent.selectOptions(screen.getByLabelText("Edition"), "Audible");
+    await act(async () => {
+      await userEvent.selectOptions(
+        screen.getByLabelText("Edition"),
+        "Audible"
+      );
+    });
 
     expect(screen.getByTestId("cover-list")).toMatchSnapshot();
   });

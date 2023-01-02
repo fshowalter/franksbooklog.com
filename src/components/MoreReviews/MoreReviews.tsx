@@ -28,6 +28,8 @@ export function MoreReviews({
             slug={work.slug}
             image={work.cover}
             authors={work.authors}
+            year={work.yearPublished}
+            kind={work.kind}
           />
         );
       })}
@@ -59,6 +61,8 @@ export const query = graphql`
   fragment MoreReviews on WorksJson {
     id
     title
+    yearPublished
+    kind
     authors {
       name
     }

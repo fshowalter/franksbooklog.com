@@ -16,12 +16,11 @@ export const gridStyle = style({
 export const slugTypographyStyle = style({
   fontSize: ".875rem",
   lineHeight: "1rem",
+  letterSpacing: "0.5px",
 
   "@media": {
     [minMediaQuery("tablet")]: {
       fontSize: "0.75rem",
-      lineHeight: "1rem",
-      letterSpacing: "0.5px",
       textAlign: "center",
     },
   },
@@ -55,7 +54,7 @@ export const titleTypographyStyle = style({
 
 export const posterStyle = style({
   borderRadius: 0,
-  maxWidth: "48px",
+  maxWidth: "80px",
 
   "@media": {
     [minMediaQuery("tablet")]: {

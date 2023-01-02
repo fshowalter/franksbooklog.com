@@ -74,7 +74,7 @@ export function HomePageItem({
               lineHeight={16}
               color="subtle"
             >
-              {item.kind}
+              {item.yearPublished} | {item.kind}
             </Box>
             <Spacer axis="vertical" size={24} />
             <Box
@@ -134,6 +134,7 @@ export const query = graphql`
     excerpt
     title
     kind
+    yearPublished
     authors {
       ...HomePageAuthor
     }
