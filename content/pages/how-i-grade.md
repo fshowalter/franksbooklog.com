@@ -30,7 +30,7 @@ I apply the following criteria to both long and short form works. It's a work-in
 
 ## On Abandoning Books
 
-53 pages into the 320 page novel, I closed it and moved on.
+Fifty-three pages into the 320 page novel, I closed it and moved on.
 
 It wasn’t easy.
 
@@ -42,7 +42,7 @@ Forcing myself to finish every book didn’t make me a better person. It didn’
 
 Statistics say I’ve got more life behind me than ahead. Which means I’ll never finish all the books I want to read.
 
-It’s about opportunity cost. I loved the pulp storytelling of Graham Masterton’s The Devils of D-Day. Mark Richard’s writing in The Ice at the Bottom of the World floored me. Clive Barker’s imagination made The Books of Blood unforgettable. Knowing there are more books out there like those, while I’m forcing myself to trudge through a mediocre read, pushed me to abandon lesser efforts.
+It’s about opportunity cost. I loved the pulp storytelling of Graham Masterton’s <span data-work-slug="the-devils-of-d-day-by-graham-masterton">_The Devils of D-Day_</span>. Mark Richard’s writing in <span data-work-slug="the-ice-at-the-bottom-of-the-world-by-mark-richard">_The Ice at the Bottom of the World_</span> floored me. Clive Barker’s imagination made _The Books of Blood_ unforgettable. Knowing there are more books out there like those, while I’m forcing myself to trudge through a mediocre read, pushed me to abandon lesser efforts.
 
 My shelves hold hundreds of unread books. I’d wager that a quarter of them aren’t worth reading. Maybe more.
 
