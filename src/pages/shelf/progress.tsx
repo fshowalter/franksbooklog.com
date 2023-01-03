@@ -172,8 +172,7 @@ export default function ShelfProgressPage({
             <Box color="subtle">
               <Spacer axis="vertical" size={16} />
               <p>
-                My progress working through{" "}
-                <Link to="/shelf/">my bookshelf</Link>.
+                My progress working through <Link to="/shelf/">the shelf</Link>.
               </p>
             </Box>
           </Box>
@@ -237,7 +236,10 @@ export const pageQuery = graphql`
     shelfWorks: allWorksJson(filter: { shelf: { eq: true } }) {
       totalCount
     }
-    author: allAuthorsJson(filter: { shelfWorkCount: { gt: 0 } }) {
+    author: allAuthorsJson(
+      filter: { shelfWorkCount: { gt: 0 } }
+      sort: { sortName: ASC }
+    ) {
       nodes {
         ...ShelfAuthorProgress
       }
