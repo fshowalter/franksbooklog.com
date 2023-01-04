@@ -150,29 +150,33 @@ export function Cover({
         flexDirection="column"
         alignItems={{ tablet: "center" }}
       >
+        <Spacer axis="vertical" size={{ default: 0, tablet: 4 }} />
         <Title title={title} slug={slug} />
-        <Spacer axis="vertical" size={4} />
+        <Spacer axis="vertical" size={{ default: 4, tablet: 8 }} />
         <YearAndKind kind={kind} year={year} />
         <Spacer axis="vertical" size={{ default: 4, tablet: 8 }} />
-
         {authors && <Authors authors={authors} />}
         <Spacer axis="vertical" size={{ default: 4, tablet: 8 }} />
-        {grade && <Grade grade={grade} height={16} />}
-        {/* <Spacer axis="vertical" size={8} /> */}
+        {grade && (
+          <>
+            <Grade grade={grade} height={16} />
+            <Spacer axis="vertical" size={8} />
+          </>
+        )}
         {date && (
           <>
-            <Spacer axis="vertical" size={8} />
             <Box color="subtle" className={slugTypographyStyle}>
               {date}
             </Box>
+            <Spacer axis="vertical" size={{ default: 8, tablet: 4 }} />
           </>
         )}
         {edition && (
           <>
-            <Spacer axis="vertical" size={{ default: 8, tablet: 4 }} />
             <Box color="subtle" className={slugTypographyStyle}>
               {edition}
             </Box>
+            <Spacer axis="vertical" size={{ default: 8, tablet: 4 }} />
           </>
         )}
         {details && details}

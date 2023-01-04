@@ -28,7 +28,7 @@ export const slugTypographyStyle = style({
 
 export const authorsTypographyStyle = style({
   fontSize: "1rem",
-  lineHeight: "1.25rem",
+  lineHeight: "1.5rem",
 
   "@media": {
     [minMediaQuery("tablet")]: {
@@ -41,7 +41,7 @@ export const authorsTypographyStyle = style({
 
 export const titleTypographyStyle = style({
   fontSize: relativeSize[18],
-  lineHeight: "1.25rem",
+  lineHeight: "1.5rem",
 
   "@media": {
     [minMediaQuery("tablet")]: {

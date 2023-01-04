@@ -846,6 +846,9 @@ exports[`/reviews/{slug} renders 1`] = `
                 <div
                   class="sprinkles_flexGrow_1__1lrvpk9e sprinkles_width_full_tablet__1lrvpk9kh sprinkles_display_flex_default__1lrvpk94p sprinkles_flexDirection_column_default__1lrvpk957 sprinkles_alignItems_center_tablet__1lrvpk91h"
                 >
+                  <span
+                    class="sprinkles_width_px_default__1lrvpk9ka sprinkles_height_0_default__1lrvpk95g sprinkles_height_4_tablet__1lrvpk95k sprinkles_minWidth_px_default__1lrvpk9ap sprinkles_minHeight_0_default__1lrvpk98m sprinkles_minHeight_4_tablet__1lrvpk98q sprinkles_display_block_default__1lrvpk94j"
+                  />
                   <a
                     class="CoverList_titleTypographyStyle__1h3dnj23 sprinkles_display_block_default__1lrvpk94j"
                     href="/reviews/the-dark-tunnel-by-ross-macdonald/"
@@ -853,7 +856,7 @@ exports[`/reviews/{slug} renders 1`] = `
                     The Dark Tunnel
                   </a>
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9ka sprinkles_height_4_default__1lrvpk95j sprinkles_minWidth_px_default__1lrvpk9ap sprinkles_minHeight_4_default__1lrvpk98p sprinkles_display_block_default__1lrvpk94j"
+                    class="sprinkles_width_px_default__1lrvpk9ka sprinkles_height_4_default__1lrvpk95j sprinkles_height_8_tablet__1lrvpk95n sprinkles_minWidth_px_default__1lrvpk9ap sprinkles_minHeight_4_default__1lrvpk98p sprinkles_minHeight_8_tablet__1lrvpk98t sprinkles_display_block_default__1lrvpk94j"
                   />
                   <div
                     class="CoverList_slugTypographyStyle__1h3dnj21 sprinkles_color_subtle__1lrvpk97"
@@ -879,6 +882,9 @@ exports[`/reviews/{slug} renders 1`] = `
                     height="16"
                     src="/svg/2-stars.svg"
                     width="80"
+                  />
+                  <span
+                    class="sprinkles_width_px_default__1lrvpk9ka sprinkles_height_8_default__1lrvpk95m sprinkles_minWidth_px_default__1lrvpk9ap sprinkles_minHeight_8_default__1lrvpk98s sprinkles_display_block_default__1lrvpk94j"
                   />
                 </div>
               </li>
@@ -943,6 +949,9 @@ exports[`/reviews/{slug} renders 1`] = `
                 <div
                   class="sprinkles_flexGrow_1__1lrvpk9e sprinkles_width_full_tablet__1lrvpk9kh sprinkles_display_flex_default__1lrvpk94p sprinkles_flexDirection_column_default__1lrvpk957 sprinkles_alignItems_center_tablet__1lrvpk91h"
                 >
+                  <span
+                    class="sprinkles_width_px_default__1lrvpk9ka sprinkles_height_0_default__1lrvpk95g sprinkles_height_4_tablet__1lrvpk95k sprinkles_minWidth_px_default__1lrvpk9ap sprinkles_minHeight_0_default__1lrvpk98m sprinkles_minHeight_4_tablet__1lrvpk98q sprinkles_display_block_default__1lrvpk94j"
+                  />
                   <a
                     class="CoverList_titleTypographyStyle__1h3dnj23 sprinkles_display_block_default__1lrvpk94j"
                     href="/reviews/desert-pickup-by-richard-laymon/"
@@ -950,7 +959,7 @@ exports[`/reviews/{slug} renders 1`] = `
                     Desert Pickup
                   </a>
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9ka sprinkles_height_4_default__1lrvpk95j sprinkles_minWidth_px_default__1lrvpk9ap sprinkles_minHeight_4_default__1lrvpk98p sprinkles_display_block_default__1lrvpk94j"
+                    class="sprinkles_width_px_default__1lrvpk9ka sprinkles_height_4_default__1lrvpk95j sprinkles_height_8_tablet__1lrvpk95n sprinkles_minWidth_px_default__1lrvpk9ap sprinkles_minHeight_4_default__1lrvpk98p sprinkles_minHeight_8_tablet__1lrvpk98t sprinkles_display_block_default__1lrvpk94j"
                   />
                   <div
                     class="CoverList_slugTypographyStyle__1h3dnj21 sprinkles_color_subtle__1lrvpk97"
@@ -976,6 +985,9 @@ exports[`/reviews/{slug} renders 1`] = `
                     height="16"
                     src="/svg/3-stars.svg"
                     width="80"
+                  />
+                  <span
+                    class="sprinkles_width_px_default__1lrvpk9ka sprinkles_height_8_default__1lrvpk95m sprinkles_minWidth_px_default__1lrvpk9ap sprinkles_minHeight_8_default__1lrvpk98s sprinkles_display_block_default__1lrvpk94j"
                   />
                 </div>
               </li>
@@ -1040,6 +1052,9 @@ exports[`/reviews/{slug} renders 1`] = `
                 <div
                   class="sprinkles_flexGrow_1__1lrvpk9e sprinkles_width_full_tablet__1lrvpk9kh sprinkles_display_flex_default__1lrvpk94p sprinkles_flexDirection_column_default__1lrvpk957 sprinkles_alignItems_center_tablet__1lrvpk91h"
                 >
+                  <span
+                    class="sprinkles_width_px_default__1lrvpk9ka sprinkles_height_0_default__1lrvpk95g sprinkles_height_4_tablet__1lrvpk95k sprinkles_minWidth_px_default__1lrvpk9ap sprinkles_minHeight_0_default__1lrvpk98m sprinkles_minHeight_4_tablet__1lrvpk98q sprinkles_display_block_default__1lrvpk94j"
+                  />
                   <a
                     class="CoverList_titleTypographyStyle__1h3dnj23 sprinkles_display_block_default__1lrvpk94j"
                     href="/reviews/draft-no-4-by-john-mcphee/"
@@ -1047,7 +1062,7 @@ exports[`/reviews/{slug} renders 1`] = `
                     Draft No. 4
                   </a>
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9ka sprinkles_height_4_default__1lrvpk95j sprinkles_minWidth_px_default__1lrvpk9ap sprinkles_minHeight_4_default__1lrvpk98p sprinkles_display_block_default__1lrvpk94j"
+                    class="sprinkles_width_px_default__1lrvpk9ka sprinkles_height_4_default__1lrvpk95j sprinkles_height_8_tablet__1lrvpk95n sprinkles_minWidth_px_default__1lrvpk9ap sprinkles_minHeight_4_default__1lrvpk98p sprinkles_minHeight_8_tablet__1lrvpk98t sprinkles_display_block_default__1lrvpk94j"
                   />
                   <div
                     class="CoverList_slugTypographyStyle__1h3dnj21 sprinkles_color_subtle__1lrvpk97"
@@ -1073,6 +1088,9 @@ exports[`/reviews/{slug} renders 1`] = `
                     height="16"
                     src="/svg/3-stars.svg"
                     width="80"
+                  />
+                  <span
+                    class="sprinkles_width_px_default__1lrvpk9ka sprinkles_height_8_default__1lrvpk95m sprinkles_minWidth_px_default__1lrvpk9ap sprinkles_minHeight_8_default__1lrvpk98s sprinkles_display_block_default__1lrvpk94j"
                   />
                 </div>
               </li>
@@ -1137,6 +1155,9 @@ exports[`/reviews/{slug} renders 1`] = `
                 <div
                   class="sprinkles_flexGrow_1__1lrvpk9e sprinkles_width_full_tablet__1lrvpk9kh sprinkles_display_flex_default__1lrvpk94p sprinkles_flexDirection_column_default__1lrvpk957 sprinkles_alignItems_center_tablet__1lrvpk91h"
                 >
+                  <span
+                    class="sprinkles_width_px_default__1lrvpk9ka sprinkles_height_0_default__1lrvpk95g sprinkles_height_4_tablet__1lrvpk95k sprinkles_minWidth_px_default__1lrvpk9ap sprinkles_minHeight_0_default__1lrvpk98m sprinkles_minHeight_4_tablet__1lrvpk98q sprinkles_display_block_default__1lrvpk94j"
+                  />
                   <a
                     class="CoverList_titleTypographyStyle__1h3dnj23 sprinkles_display_block_default__1lrvpk94j"
                     href="/reviews/extreme-ownership-by-jocko-willink-leif-babin/"
@@ -1144,7 +1165,7 @@ exports[`/reviews/{slug} renders 1`] = `
                     Extreme Ownership
                   </a>
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9ka sprinkles_height_4_default__1lrvpk95j sprinkles_minWidth_px_default__1lrvpk9ap sprinkles_minHeight_4_default__1lrvpk98p sprinkles_display_block_default__1lrvpk94j"
+                    class="sprinkles_width_px_default__1lrvpk9ka sprinkles_height_4_default__1lrvpk95j sprinkles_height_8_tablet__1lrvpk95n sprinkles_minWidth_px_default__1lrvpk9ap sprinkles_minHeight_4_default__1lrvpk98p sprinkles_minHeight_8_tablet__1lrvpk98t sprinkles_display_block_default__1lrvpk94j"
                   />
                   <div
                     class="CoverList_slugTypographyStyle__1h3dnj21 sprinkles_color_subtle__1lrvpk97"
@@ -1170,6 +1191,9 @@ exports[`/reviews/{slug} renders 1`] = `
                     height="16"
                     src="/svg/5-stars.svg"
                     width="80"
+                  />
+                  <span
+                    class="sprinkles_width_px_default__1lrvpk9ka sprinkles_height_8_default__1lrvpk95m sprinkles_minWidth_px_default__1lrvpk9ap sprinkles_minHeight_8_default__1lrvpk98s sprinkles_display_block_default__1lrvpk94j"
                   />
                 </div>
               </li>
@@ -1824,6 +1848,9 @@ exports[`/reviews/{slug} renders abandoned 1`] = `
                 <div
                   class="sprinkles_flexGrow_1__1lrvpk9e sprinkles_width_full_tablet__1lrvpk9kh sprinkles_display_flex_default__1lrvpk94p sprinkles_flexDirection_column_default__1lrvpk957 sprinkles_alignItems_center_tablet__1lrvpk91h"
                 >
+                  <span
+                    class="sprinkles_width_px_default__1lrvpk9ka sprinkles_height_0_default__1lrvpk95g sprinkles_height_4_tablet__1lrvpk95k sprinkles_minWidth_px_default__1lrvpk9ap sprinkles_minHeight_0_default__1lrvpk98m sprinkles_minHeight_4_tablet__1lrvpk98q sprinkles_display_block_default__1lrvpk94j"
+                  />
                   <a
                     class="CoverList_titleTypographyStyle__1h3dnj23 sprinkles_display_block_default__1lrvpk94j"
                     href="/reviews/less-than-zero-by-bret-easton-ellis/"
@@ -1831,7 +1858,7 @@ exports[`/reviews/{slug} renders abandoned 1`] = `
                     Less Than Zero
                   </a>
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9ka sprinkles_height_4_default__1lrvpk95j sprinkles_minWidth_px_default__1lrvpk9ap sprinkles_minHeight_4_default__1lrvpk98p sprinkles_display_block_default__1lrvpk94j"
+                    class="sprinkles_width_px_default__1lrvpk9ka sprinkles_height_4_default__1lrvpk95j sprinkles_height_8_tablet__1lrvpk95n sprinkles_minWidth_px_default__1lrvpk9ap sprinkles_minHeight_4_default__1lrvpk98p sprinkles_minHeight_8_tablet__1lrvpk98t sprinkles_display_block_default__1lrvpk94j"
                   />
                   <div
                     class="CoverList_slugTypographyStyle__1h3dnj21 sprinkles_color_subtle__1lrvpk97"
@@ -1857,6 +1884,9 @@ exports[`/reviews/{slug} renders abandoned 1`] = `
                     height="16"
                     src="/svg/4-stars.svg"
                     width="80"
+                  />
+                  <span
+                    class="sprinkles_width_px_default__1lrvpk9ka sprinkles_height_8_default__1lrvpk95m sprinkles_minWidth_px_default__1lrvpk9ap sprinkles_minHeight_8_default__1lrvpk98s sprinkles_display_block_default__1lrvpk94j"
                   />
                 </div>
               </li>
@@ -1921,6 +1951,9 @@ exports[`/reviews/{slug} renders abandoned 1`] = `
                 <div
                   class="sprinkles_flexGrow_1__1lrvpk9e sprinkles_width_full_tablet__1lrvpk9kh sprinkles_display_flex_default__1lrvpk94p sprinkles_flexDirection_column_default__1lrvpk957 sprinkles_alignItems_center_tablet__1lrvpk91h"
                 >
+                  <span
+                    class="sprinkles_width_px_default__1lrvpk9ka sprinkles_height_0_default__1lrvpk95g sprinkles_height_4_tablet__1lrvpk95k sprinkles_minWidth_px_default__1lrvpk9ap sprinkles_minHeight_0_default__1lrvpk98m sprinkles_minHeight_4_tablet__1lrvpk98q sprinkles_display_block_default__1lrvpk94j"
+                  />
                   <a
                     class="CoverList_titleTypographyStyle__1h3dnj23 sprinkles_display_block_default__1lrvpk94j"
                     href="/reviews/live-and-let-die-by-ian-fleming/"
@@ -1928,7 +1961,7 @@ exports[`/reviews/{slug} renders abandoned 1`] = `
                     Live and Let Die
                   </a>
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9ka sprinkles_height_4_default__1lrvpk95j sprinkles_minWidth_px_default__1lrvpk9ap sprinkles_minHeight_4_default__1lrvpk98p sprinkles_display_block_default__1lrvpk94j"
+                    class="sprinkles_width_px_default__1lrvpk9ka sprinkles_height_4_default__1lrvpk95j sprinkles_height_8_tablet__1lrvpk95n sprinkles_minWidth_px_default__1lrvpk9ap sprinkles_minHeight_4_default__1lrvpk98p sprinkles_minHeight_8_tablet__1lrvpk98t sprinkles_display_block_default__1lrvpk94j"
                   />
                   <div
                     class="CoverList_slugTypographyStyle__1h3dnj21 sprinkles_color_subtle__1lrvpk97"
@@ -1954,6 +1987,9 @@ exports[`/reviews/{slug} renders abandoned 1`] = `
                     height="16"
                     src="/svg/2-stars.svg"
                     width="80"
+                  />
+                  <span
+                    class="sprinkles_width_px_default__1lrvpk9ka sprinkles_height_8_default__1lrvpk95m sprinkles_minWidth_px_default__1lrvpk9ap sprinkles_minHeight_8_default__1lrvpk98s sprinkles_display_block_default__1lrvpk94j"
                   />
                 </div>
               </li>
@@ -2018,6 +2054,9 @@ exports[`/reviews/{slug} renders abandoned 1`] = `
                 <div
                   class="sprinkles_flexGrow_1__1lrvpk9e sprinkles_width_full_tablet__1lrvpk9kh sprinkles_display_flex_default__1lrvpk94p sprinkles_flexDirection_column_default__1lrvpk957 sprinkles_alignItems_center_tablet__1lrvpk91h"
                 >
+                  <span
+                    class="sprinkles_width_px_default__1lrvpk9ka sprinkles_height_0_default__1lrvpk95g sprinkles_height_4_tablet__1lrvpk95k sprinkles_minWidth_px_default__1lrvpk9ap sprinkles_minHeight_0_default__1lrvpk98m sprinkles_minHeight_4_tablet__1lrvpk98q sprinkles_display_block_default__1lrvpk94j"
+                  />
                   <a
                     class="CoverList_titleTypographyStyle__1h3dnj23 sprinkles_display_block_default__1lrvpk94j"
                     href="/reviews/mandala-by-philip-fracassi/"
@@ -2025,7 +2064,7 @@ exports[`/reviews/{slug} renders abandoned 1`] = `
                     Mandala
                   </a>
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9ka sprinkles_height_4_default__1lrvpk95j sprinkles_minWidth_px_default__1lrvpk9ap sprinkles_minHeight_4_default__1lrvpk98p sprinkles_display_block_default__1lrvpk94j"
+                    class="sprinkles_width_px_default__1lrvpk9ka sprinkles_height_4_default__1lrvpk95j sprinkles_height_8_tablet__1lrvpk95n sprinkles_minWidth_px_default__1lrvpk9ap sprinkles_minHeight_4_default__1lrvpk98p sprinkles_minHeight_8_tablet__1lrvpk98t sprinkles_display_block_default__1lrvpk94j"
                   />
                   <div
                     class="CoverList_slugTypographyStyle__1h3dnj21 sprinkles_color_subtle__1lrvpk97"
@@ -2051,6 +2090,9 @@ exports[`/reviews/{slug} renders abandoned 1`] = `
                     height="16"
                     src="/svg/4-stars.svg"
                     width="80"
+                  />
+                  <span
+                    class="sprinkles_width_px_default__1lrvpk9ka sprinkles_height_8_default__1lrvpk95m sprinkles_minWidth_px_default__1lrvpk9ap sprinkles_minHeight_8_default__1lrvpk98s sprinkles_display_block_default__1lrvpk94j"
                   />
                 </div>
               </li>
@@ -2115,6 +2157,9 @@ exports[`/reviews/{slug} renders abandoned 1`] = `
                 <div
                   class="sprinkles_flexGrow_1__1lrvpk9e sprinkles_width_full_tablet__1lrvpk9kh sprinkles_display_flex_default__1lrvpk94p sprinkles_flexDirection_column_default__1lrvpk957 sprinkles_alignItems_center_tablet__1lrvpk91h"
                 >
+                  <span
+                    class="sprinkles_width_px_default__1lrvpk9ka sprinkles_height_0_default__1lrvpk95g sprinkles_height_4_tablet__1lrvpk95k sprinkles_minWidth_px_default__1lrvpk9ap sprinkles_minHeight_0_default__1lrvpk98m sprinkles_minHeight_4_tablet__1lrvpk98q sprinkles_display_block_default__1lrvpk94j"
+                  />
                   <a
                     class="CoverList_titleTypographyStyle__1h3dnj23 sprinkles_display_block_default__1lrvpk94j"
                     href="/reviews/moonraker-by-ian-fleming/"
@@ -2122,7 +2167,7 @@ exports[`/reviews/{slug} renders abandoned 1`] = `
                     Moonraker
                   </a>
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9ka sprinkles_height_4_default__1lrvpk95j sprinkles_minWidth_px_default__1lrvpk9ap sprinkles_minHeight_4_default__1lrvpk98p sprinkles_display_block_default__1lrvpk94j"
+                    class="sprinkles_width_px_default__1lrvpk9ka sprinkles_height_4_default__1lrvpk95j sprinkles_height_8_tablet__1lrvpk95n sprinkles_minWidth_px_default__1lrvpk9ap sprinkles_minHeight_4_default__1lrvpk98p sprinkles_minHeight_8_tablet__1lrvpk98t sprinkles_display_block_default__1lrvpk94j"
                   />
                   <div
                     class="CoverList_slugTypographyStyle__1h3dnj21 sprinkles_color_subtle__1lrvpk97"
@@ -2148,6 +2193,9 @@ exports[`/reviews/{slug} renders abandoned 1`] = `
                     height="16"
                     src="/svg/4-stars.svg"
                     width="80"
+                  />
+                  <span
+                    class="sprinkles_width_px_default__1lrvpk9ka sprinkles_height_8_default__1lrvpk95m sprinkles_minWidth_px_default__1lrvpk9ap sprinkles_minHeight_8_default__1lrvpk98s sprinkles_display_block_default__1lrvpk94j"
                   />
                 </div>
               </li>
@@ -3196,6 +3244,9 @@ exports[`/reviews/{slug} renders compilation 1`] = `
                 <div
                   class="sprinkles_flexGrow_1__1lrvpk9e sprinkles_width_full_tablet__1lrvpk9kh sprinkles_display_flex_default__1lrvpk94p sprinkles_flexDirection_column_default__1lrvpk957 sprinkles_alignItems_center_tablet__1lrvpk91h"
                 >
+                  <span
+                    class="sprinkles_width_px_default__1lrvpk9ka sprinkles_height_0_default__1lrvpk95g sprinkles_height_4_tablet__1lrvpk95k sprinkles_minWidth_px_default__1lrvpk9ap sprinkles_minHeight_0_default__1lrvpk98m sprinkles_minHeight_4_tablet__1lrvpk98q sprinkles_display_block_default__1lrvpk94j"
+                  />
                   <a
                     class="CoverList_titleTypographyStyle__1h3dnj23 sprinkles_display_block_default__1lrvpk94j"
                     href="/reviews/altar-by-philip-fracassi/"
@@ -3203,7 +3254,7 @@ exports[`/reviews/{slug} renders compilation 1`] = `
                     Altar
                   </a>
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9ka sprinkles_height_4_default__1lrvpk95j sprinkles_minWidth_px_default__1lrvpk9ap sprinkles_minHeight_4_default__1lrvpk98p sprinkles_display_block_default__1lrvpk94j"
+                    class="sprinkles_width_px_default__1lrvpk9ka sprinkles_height_4_default__1lrvpk95j sprinkles_height_8_tablet__1lrvpk95n sprinkles_minWidth_px_default__1lrvpk9ap sprinkles_minHeight_4_default__1lrvpk98p sprinkles_minHeight_8_tablet__1lrvpk98t sprinkles_display_block_default__1lrvpk94j"
                   />
                   <div
                     class="CoverList_slugTypographyStyle__1h3dnj21 sprinkles_color_subtle__1lrvpk97"
@@ -3229,6 +3280,9 @@ exports[`/reviews/{slug} renders compilation 1`] = `
                     height="16"
                     src="/svg/5-stars.svg"
                     width="80"
+                  />
+                  <span
+                    class="sprinkles_width_px_default__1lrvpk9ka sprinkles_height_8_default__1lrvpk95m sprinkles_minWidth_px_default__1lrvpk9ap sprinkles_minHeight_8_default__1lrvpk98s sprinkles_display_block_default__1lrvpk94j"
                   />
                 </div>
               </li>
@@ -3293,6 +3347,9 @@ exports[`/reviews/{slug} renders compilation 1`] = `
                 <div
                   class="sprinkles_flexGrow_1__1lrvpk9e sprinkles_width_full_tablet__1lrvpk9kh sprinkles_display_flex_default__1lrvpk94p sprinkles_flexDirection_column_default__1lrvpk957 sprinkles_alignItems_center_tablet__1lrvpk91h"
                 >
+                  <span
+                    class="sprinkles_width_px_default__1lrvpk9ka sprinkles_height_0_default__1lrvpk95g sprinkles_height_4_tablet__1lrvpk95k sprinkles_minWidth_px_default__1lrvpk9ap sprinkles_minHeight_0_default__1lrvpk98m sprinkles_minHeight_4_tablet__1lrvpk98q sprinkles_display_block_default__1lrvpk94j"
+                  />
                   <a
                     class="CoverList_titleTypographyStyle__1h3dnj23 sprinkles_display_block_default__1lrvpk94j"
                     href="/reviews/the-baby-farmer-by-philip-fracassi/"
@@ -3300,7 +3357,7 @@ exports[`/reviews/{slug} renders compilation 1`] = `
                     The Baby Farmer
                   </a>
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9ka sprinkles_height_4_default__1lrvpk95j sprinkles_minWidth_px_default__1lrvpk9ap sprinkles_minHeight_4_default__1lrvpk98p sprinkles_display_block_default__1lrvpk94j"
+                    class="sprinkles_width_px_default__1lrvpk9ka sprinkles_height_4_default__1lrvpk95j sprinkles_height_8_tablet__1lrvpk95n sprinkles_minWidth_px_default__1lrvpk9ap sprinkles_minHeight_4_default__1lrvpk98p sprinkles_minHeight_8_tablet__1lrvpk98t sprinkles_display_block_default__1lrvpk94j"
                   />
                   <div
                     class="CoverList_slugTypographyStyle__1h3dnj21 sprinkles_color_subtle__1lrvpk97"
@@ -3326,6 +3383,9 @@ exports[`/reviews/{slug} renders compilation 1`] = `
                     height="16"
                     src="/svg/3-stars.svg"
                     width="80"
+                  />
+                  <span
+                    class="sprinkles_width_px_default__1lrvpk9ka sprinkles_height_8_default__1lrvpk95m sprinkles_minWidth_px_default__1lrvpk9ap sprinkles_minHeight_8_default__1lrvpk98s sprinkles_display_block_default__1lrvpk94j"
                   />
                 </div>
               </li>
@@ -3390,6 +3450,9 @@ exports[`/reviews/{slug} renders compilation 1`] = `
                 <div
                   class="sprinkles_flexGrow_1__1lrvpk9e sprinkles_width_full_tablet__1lrvpk9kh sprinkles_display_flex_default__1lrvpk94p sprinkles_flexDirection_column_default__1lrvpk957 sprinkles_alignItems_center_tablet__1lrvpk91h"
                 >
+                  <span
+                    class="sprinkles_width_px_default__1lrvpk9ka sprinkles_height_0_default__1lrvpk95g sprinkles_height_4_tablet__1lrvpk95k sprinkles_minWidth_px_default__1lrvpk9ap sprinkles_minHeight_0_default__1lrvpk98m sprinkles_minHeight_4_tablet__1lrvpk98q sprinkles_display_block_default__1lrvpk94j"
+                  />
                   <a
                     class="CoverList_titleTypographyStyle__1h3dnj23 sprinkles_display_block_default__1lrvpk94j"
                     href="/reviews/the-big-sleep-by-raymond-chandler/"
@@ -3397,7 +3460,7 @@ exports[`/reviews/{slug} renders compilation 1`] = `
                     The Big Sleep
                   </a>
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9ka sprinkles_height_4_default__1lrvpk95j sprinkles_minWidth_px_default__1lrvpk9ap sprinkles_minHeight_4_default__1lrvpk98p sprinkles_display_block_default__1lrvpk94j"
+                    class="sprinkles_width_px_default__1lrvpk9ka sprinkles_height_4_default__1lrvpk95j sprinkles_height_8_tablet__1lrvpk95n sprinkles_minWidth_px_default__1lrvpk9ap sprinkles_minHeight_4_default__1lrvpk98p sprinkles_minHeight_8_tablet__1lrvpk98t sprinkles_display_block_default__1lrvpk94j"
                   />
                   <div
                     class="CoverList_slugTypographyStyle__1h3dnj21 sprinkles_color_subtle__1lrvpk97"
@@ -3423,6 +3486,9 @@ exports[`/reviews/{slug} renders compilation 1`] = `
                     height="16"
                     src="/svg/3-stars.svg"
                     width="80"
+                  />
+                  <span
+                    class="sprinkles_width_px_default__1lrvpk9ka sprinkles_height_8_default__1lrvpk95m sprinkles_minWidth_px_default__1lrvpk9ap sprinkles_minHeight_8_default__1lrvpk98s sprinkles_display_block_default__1lrvpk94j"
                   />
                 </div>
               </li>
@@ -3487,6 +3553,9 @@ exports[`/reviews/{slug} renders compilation 1`] = `
                 <div
                   class="sprinkles_flexGrow_1__1lrvpk9e sprinkles_width_full_tablet__1lrvpk9kh sprinkles_display_flex_default__1lrvpk94p sprinkles_flexDirection_column_default__1lrvpk957 sprinkles_alignItems_center_tablet__1lrvpk91h"
                 >
+                  <span
+                    class="sprinkles_width_px_default__1lrvpk9ka sprinkles_height_0_default__1lrvpk95g sprinkles_height_4_tablet__1lrvpk95k sprinkles_minWidth_px_default__1lrvpk9ap sprinkles_minHeight_0_default__1lrvpk98m sprinkles_minHeight_4_tablet__1lrvpk98q sprinkles_display_block_default__1lrvpk94j"
+                  />
                   <a
                     class="CoverList_titleTypographyStyle__1h3dnj23 sprinkles_display_block_default__1lrvpk94j"
                     href="/reviews/brother-iron-sister-steel-by-dave-draper/"
@@ -3494,7 +3563,7 @@ exports[`/reviews/{slug} renders compilation 1`] = `
                     Brother Iron, Sister Steel
                   </a>
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9ka sprinkles_height_4_default__1lrvpk95j sprinkles_minWidth_px_default__1lrvpk9ap sprinkles_minHeight_4_default__1lrvpk98p sprinkles_display_block_default__1lrvpk94j"
+                    class="sprinkles_width_px_default__1lrvpk9ka sprinkles_height_4_default__1lrvpk95j sprinkles_height_8_tablet__1lrvpk95n sprinkles_minWidth_px_default__1lrvpk9ap sprinkles_minHeight_4_default__1lrvpk98p sprinkles_minHeight_8_tablet__1lrvpk98t sprinkles_display_block_default__1lrvpk94j"
                   />
                   <div
                     class="CoverList_slugTypographyStyle__1h3dnj21 sprinkles_color_subtle__1lrvpk97"
@@ -3520,6 +3589,9 @@ exports[`/reviews/{slug} renders compilation 1`] = `
                     height="16"
                     src="/svg/3-stars.svg"
                     width="80"
+                  />
+                  <span
+                    class="sprinkles_width_px_default__1lrvpk9ka sprinkles_height_8_default__1lrvpk95m sprinkles_minWidth_px_default__1lrvpk9ap sprinkles_minHeight_8_default__1lrvpk98s sprinkles_display_block_default__1lrvpk94j"
                   />
                 </div>
               </li>
