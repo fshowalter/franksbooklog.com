@@ -33,7 +33,7 @@ export const authorsTypographyStyle = style({
   "@media": {
     [minMediaQuery("tablet")]: {
       fontSize: ".875rem",
-      lineHeight: "1rem",
+      lineHeight: "1.25rem",
       textAlign: "center",
     },
   },
