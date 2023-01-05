@@ -54,6 +54,7 @@ export const titleTypographyStyle = style({
 
 export const posterStyle = style({
   borderRadius: 0,
+  minWidth: "80px",
   maxWidth: "80px",
 
   "@media": {
