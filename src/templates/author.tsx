@@ -86,6 +86,8 @@ export const pageQuery = graphql`
         kind
         slug
         sortTitle
+        grade
+        gradeValue
         cover {
           ...CoverListCover
         }

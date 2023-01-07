@@ -195,15 +195,6 @@ export default function ShelfProgressPage({
                 label="Total Progress"
               />
             </Box>
-            <Box>
-              <Spacer axis="vertical" size={32} />
-              <ProgressCallout
-                total={data.authorTotal.sum}
-                reviewed={data.authorReviewed.sum}
-                label="Author"
-                subLabel="Titles"
-              />
-            </Box>
           </Box>
         </Box>
         <Box paddingX={{ default: 0, tablet: "gutter", desktop: "pageMargin" }}>
@@ -243,12 +234,6 @@ export const pageQuery = graphql`
       nodes {
         ...ShelfAuthorProgress
       }
-    }
-    authorTotal: allAuthorsJson(filter: { shelfWorkCount: { gt: 0 } }) {
-      sum(field: { shelfWorkCount: SELECT })
-    }
-    authorReviewed: allAuthorsJson(filter: { shelfWorkCount: { gt: 0 } }) {
-      sum(field: { reviewedShelfWorkCount: SELECT })
     }
   }
 `;
