@@ -62,7 +62,7 @@ export const AuthorsJson = {
             },
             sort: {
               fields: ["yearPublished"],
-              order: ["DESC"],
+              order: ["ASC"],
             },
           },
         });
