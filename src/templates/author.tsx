@@ -81,6 +81,7 @@ export const pageQuery = graphql`
         }
       }
       works {
+        id
         title
         yearPublished
         kind
