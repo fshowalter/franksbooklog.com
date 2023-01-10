@@ -108,7 +108,7 @@ export default function ReviewPage({
           alignItems="center"
           paddingX="pageMargin"
         >
-          <Box as="h2" textAlign="center">
+          <Box textAlign="center">
             <PageTitle>{work.title}</PageTitle>
             {work.subtitle && (
               <>

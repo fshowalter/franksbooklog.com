@@ -98,6 +98,7 @@ export const pageQuery = graphql`
       sort: [{ authors: { sortName: ASC } }, { yearPublished: ASC }]
     ) {
       nodes {
+        id
         title
         yearPublished
         sortTitle

@@ -149,14 +149,15 @@ exports[`/reviews/{slug} renders 1`] = `
         <header
           class="sprinkles_paddingLeft_pageMargin_default__1lrvpk9e7 sprinkles_paddingRight_pageMargin_default__1lrvpk9fv sprinkles_display_flex_default__1lrvpk94p sprinkles_flexDirection_column_default__1lrvpk957 sprinkles_alignItems_center_default__1lrvpk91g"
         >
-          <h2
+          <div
             class="sprinkles_textAlign_center__1lrvpk917"
-          />
-          <h1
-            class="PageTitle_typographyStyle__o0ksb0"
           >
-            Dracula
-          </h1>
+            <h1
+              class="PageTitle_typographyStyle__o0ksb0"
+            >
+              Dracula
+            </h1>
+          </div>
           <span
             class="sprinkles_width_px_default__1lrvpk9ka sprinkles_height_8_default__1lrvpk95m sprinkles_minWidth_px_default__1lrvpk9ap sprinkles_minHeight_8_default__1lrvpk98s sprinkles_display_block_default__1lrvpk94j"
           />
@@ -805,7 +806,7 @@ exports[`/reviews/{slug} renders 1`] = `
                         alt=""
                         aria-hidden="true"
                         role="presentation"
-                        src="data:image/svg+xml;charset=utf-8,%3Csvg height='372' width='248' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E"
+                        src="data:image/svg+xml;charset=utf-8,%3Csvg%20height='372'%20width='248'%20xmlns='http://www.w3.org/2000/svg'%20version='1.1'%3E%3C/svg%3E"
                         style="max-width: 100%; display: block; position: static;"
                       />
                     </div>
@@ -908,7 +909,7 @@ exports[`/reviews/{slug} renders 1`] = `
                         alt=""
                         aria-hidden="true"
                         role="presentation"
-                        src="data:image/svg+xml;charset=utf-8,%3Csvg height='372' width='248' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E"
+                        src="data:image/svg+xml;charset=utf-8,%3Csvg%20height='372'%20width='248'%20xmlns='http://www.w3.org/2000/svg'%20version='1.1'%3E%3C/svg%3E"
                         style="max-width: 100%; display: block; position: static;"
                       />
                     </div>
@@ -1011,7 +1012,7 @@ exports[`/reviews/{slug} renders 1`] = `
                         alt=""
                         aria-hidden="true"
                         role="presentation"
-                        src="data:image/svg+xml;charset=utf-8,%3Csvg height='372' width='248' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E"
+                        src="data:image/svg+xml;charset=utf-8,%3Csvg%20height='372'%20width='248'%20xmlns='http://www.w3.org/2000/svg'%20version='1.1'%3E%3C/svg%3E"
                         style="max-width: 100%; display: block; position: static;"
                       />
                     </div>
@@ -1114,7 +1115,7 @@ exports[`/reviews/{slug} renders 1`] = `
                         alt=""
                         aria-hidden="true"
                         role="presentation"
-                        src="data:image/svg+xml;charset=utf-8,%3Csvg height='372' width='248' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E"
+                        src="data:image/svg+xml;charset=utf-8,%3Csvg%20height='372'%20width='248'%20xmlns='http://www.w3.org/2000/svg'%20version='1.1'%3E%3C/svg%3E"
                         style="max-width: 100%; display: block; position: static;"
                       />
                     </div>
@@ -1445,21 +1446,22 @@ exports[`/reviews/{slug} renders abandoned 1`] = `
         <header
           class="sprinkles_paddingLeft_pageMargin_default__1lrvpk9e7 sprinkles_paddingRight_pageMargin_default__1lrvpk9fv sprinkles_display_flex_default__1lrvpk94p sprinkles_flexDirection_column_default__1lrvpk957 sprinkles_alignItems_center_default__1lrvpk91g"
         >
-          <h2
-            class="sprinkles_textAlign_center__1lrvpk917"
-          />
-          <h1
-            class="PageTitle_typographyStyle__o0ksb0"
-          >
-            Living with a SEAL
-          </h1>
-          <span
-            class="sprinkles_width_px_default__1lrvpk9ka sprinkles_height_16_default__1lrvpk95p sprinkles_minWidth_px_default__1lrvpk9ap sprinkles_minHeight_16_default__1lrvpk98v sprinkles_display_block_default__1lrvpk94j"
-          />
           <div
-            class="sprinkles_fontSize_medium__1lrvpk9j sprinkles_fontWeight_normal__1lrvpk9n sprinkles_letterSpacing_0.25__1lrvpk9t sprinkles_color_muted__1lrvpk96 sprinkles_maxWidth_prose_default__1lrvpk98d"
+            class="sprinkles_textAlign_center__1lrvpk917"
           >
-            31 Days Training with the Toughest Man on the Planet
+            <h1
+              class="PageTitle_typographyStyle__o0ksb0"
+            >
+              Living with a SEAL
+            </h1>
+            <span
+              class="sprinkles_width_px_default__1lrvpk9ka sprinkles_height_16_default__1lrvpk95p sprinkles_minWidth_px_default__1lrvpk9ap sprinkles_minHeight_16_default__1lrvpk98v sprinkles_display_block_default__1lrvpk94j"
+            />
+            <div
+              class="sprinkles_fontSize_medium__1lrvpk9j sprinkles_fontWeight_normal__1lrvpk9n sprinkles_letterSpacing_0.25__1lrvpk9t sprinkles_color_muted__1lrvpk96 sprinkles_maxWidth_prose_default__1lrvpk98d"
+            >
+              31 Days Training with the Toughest Man on the Planet
+            </div>
           </div>
           <span
             class="sprinkles_width_px_default__1lrvpk9ka sprinkles_height_8_default__1lrvpk95m sprinkles_minWidth_px_default__1lrvpk9ap sprinkles_minHeight_8_default__1lrvpk98s sprinkles_display_block_default__1lrvpk94j"
@@ -1807,7 +1809,7 @@ exports[`/reviews/{slug} renders abandoned 1`] = `
                         alt=""
                         aria-hidden="true"
                         role="presentation"
-                        src="data:image/svg+xml;charset=utf-8,%3Csvg height='372' width='248' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E"
+                        src="data:image/svg+xml;charset=utf-8,%3Csvg%20height='372'%20width='248'%20xmlns='http://www.w3.org/2000/svg'%20version='1.1'%3E%3C/svg%3E"
                         style="max-width: 100%; display: block; position: static;"
                       />
                     </div>
@@ -1910,7 +1912,7 @@ exports[`/reviews/{slug} renders abandoned 1`] = `
                         alt=""
                         aria-hidden="true"
                         role="presentation"
-                        src="data:image/svg+xml;charset=utf-8,%3Csvg height='372' width='248' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E"
+                        src="data:image/svg+xml;charset=utf-8,%3Csvg%20height='372'%20width='248'%20xmlns='http://www.w3.org/2000/svg'%20version='1.1'%3E%3C/svg%3E"
                         style="max-width: 100%; display: block; position: static;"
                       />
                     </div>
@@ -2013,7 +2015,7 @@ exports[`/reviews/{slug} renders abandoned 1`] = `
                         alt=""
                         aria-hidden="true"
                         role="presentation"
-                        src="data:image/svg+xml;charset=utf-8,%3Csvg height='372' width='248' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E"
+                        src="data:image/svg+xml;charset=utf-8,%3Csvg%20height='372'%20width='248'%20xmlns='http://www.w3.org/2000/svg'%20version='1.1'%3E%3C/svg%3E"
                         style="max-width: 100%; display: block; position: static;"
                       />
                     </div>
@@ -2116,7 +2118,7 @@ exports[`/reviews/{slug} renders abandoned 1`] = `
                         alt=""
                         aria-hidden="true"
                         role="presentation"
-                        src="data:image/svg+xml;charset=utf-8,%3Csvg height='372' width='248' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E"
+                        src="data:image/svg+xml;charset=utf-8,%3Csvg%20height='372'%20width='248'%20xmlns='http://www.w3.org/2000/svg'%20version='1.1'%3E%3C/svg%3E"
                         style="max-width: 100%; display: block; position: static;"
                       />
                     </div>
@@ -2442,14 +2444,15 @@ exports[`/reviews/{slug} renders compilation 1`] = `
         <header
           class="sprinkles_paddingLeft_pageMargin_default__1lrvpk9e7 sprinkles_paddingRight_pageMargin_default__1lrvpk9fv sprinkles_display_flex_default__1lrvpk94p sprinkles_flexDirection_column_default__1lrvpk957 sprinkles_alignItems_center_default__1lrvpk91g"
         >
-          <h2
+          <div
             class="sprinkles_textAlign_center__1lrvpk917"
-          />
-          <h1
-            class="PageTitle_typographyStyle__o0ksb0"
           >
-            Behold the Void
-          </h1>
+            <h1
+              class="PageTitle_typographyStyle__o0ksb0"
+            >
+              Behold the Void
+            </h1>
+          </div>
           <span
             class="sprinkles_width_px_default__1lrvpk9ka sprinkles_height_8_default__1lrvpk95m sprinkles_minWidth_px_default__1lrvpk9ap sprinkles_minHeight_8_default__1lrvpk98s sprinkles_display_block_default__1lrvpk94j"
           />
@@ -3203,7 +3206,7 @@ exports[`/reviews/{slug} renders compilation 1`] = `
                         alt=""
                         aria-hidden="true"
                         role="presentation"
-                        src="data:image/svg+xml;charset=utf-8,%3Csvg height='372' width='248' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E"
+                        src="data:image/svg+xml;charset=utf-8,%3Csvg%20height='372'%20width='248'%20xmlns='http://www.w3.org/2000/svg'%20version='1.1'%3E%3C/svg%3E"
                         style="max-width: 100%; display: block; position: static;"
                       />
                     </div>
@@ -3306,7 +3309,7 @@ exports[`/reviews/{slug} renders compilation 1`] = `
                         alt=""
                         aria-hidden="true"
                         role="presentation"
-                        src="data:image/svg+xml;charset=utf-8,%3Csvg height='372' width='248' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E"
+                        src="data:image/svg+xml;charset=utf-8,%3Csvg%20height='372'%20width='248'%20xmlns='http://www.w3.org/2000/svg'%20version='1.1'%3E%3C/svg%3E"
                         style="max-width: 100%; display: block; position: static;"
                       />
                     </div>
@@ -3409,7 +3412,7 @@ exports[`/reviews/{slug} renders compilation 1`] = `
                         alt=""
                         aria-hidden="true"
                         role="presentation"
-                        src="data:image/svg+xml;charset=utf-8,%3Csvg height='372' width='248' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E"
+                        src="data:image/svg+xml;charset=utf-8,%3Csvg%20height='372'%20width='248'%20xmlns='http://www.w3.org/2000/svg'%20version='1.1'%3E%3C/svg%3E"
                         style="max-width: 100%; display: block; position: static;"
                       />
                     </div>
@@ -3512,7 +3515,7 @@ exports[`/reviews/{slug} renders compilation 1`] = `
                         alt=""
                         aria-hidden="true"
                         role="presentation"
-                        src="data:image/svg+xml;charset=utf-8,%3Csvg height='372' width='248' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E"
+                        src="data:image/svg+xml;charset=utf-8,%3Csvg%20height='372'%20width='248'%20xmlns='http://www.w3.org/2000/svg'%20version='1.1'%3E%3C/svg%3E"
                         style="max-width: 100%; display: block; position: static;"
                       />
                     </div>

@@ -356,7 +356,7 @@ export function CoverListWithFilters({
                     {items.map((item) => {
                       return (
                         <Cover
-                          key={item.sequence}
+                          key={item.id}
                           title={item.title}
                           year={item.yearPublished}
                           grade={item.grade}
@@ -416,6 +416,7 @@ export function CoverListWithFilters({
 }
 
 export interface ICoverListWithFiltersItem {
+  id: string;
   sequence?: number;
   title: string;
   sortTitle: string;

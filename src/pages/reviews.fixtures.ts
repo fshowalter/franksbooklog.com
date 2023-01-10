@@ -15,6 +15,7 @@ export const data = {
     totalCount: 48,
     nodes: [
       {
+        id: "169d9fcb-157f-5fad-beaa-f1080fa1feb0",
         sequence: 48,
         grade: "B+",
         slug: "the-skeptics-guide-to-the-universe-by-steven-novella",
@@ -60,6 +61,7 @@ export const data = {
         },
       },
       {
+        id: "1064e4e1-c375-5c39-8096-d01714cd461b",
         sequence: 47,
         grade: "B",
         slug: "the-shining-by-stephen-king",
@@ -104,6 +106,7 @@ export const data = {
         },
       },
       {
+        id: "25264e4e-adcd-5de4-8960-58da19f62280",
         sequence: 46,
         grade: "B",
         slug: "moonraker-by-ian-fleming",
@@ -148,6 +151,7 @@ export const data = {
         },
       },
       {
+        id: "cefa9425-358b-5bfb-b56c-b33cfa32538d",
         sequence: 45,
         grade: "B",
         slug: "salems-lot-by-stephen-king",
@@ -192,6 +196,7 @@ export const data = {
         },
       },
       {
+        id: "36a46741-d5fb-5471-841a-967a9ae49c52",
         sequence: 44,
         grade: "B",
         slug: "cant-hurt-me-by-david-goggins",
@@ -236,6 +241,7 @@ export const data = {
         },
       },
       {
+        id: "0bf3743b-b5e2-57c8-86e6-bf7f0040fde5",
         sequence: 43,
         grade: "C-",
         slug: "out-are-the-lights-by-richard-laymon",
@@ -280,6 +286,7 @@ export const data = {
         },
       },
       {
+        id: "28de44da-1946-5ac1-ab69-b65b61822ef0",
         sequence: 42,
         grade: "C+",
         slug: "what-doesnt-kill-us-by-scott-carney",
@@ -325,6 +332,7 @@ export const data = {
         },
       },
       {
+        id: "3839459d-c674-5bd5-b4ae-30301595bb85",
         sequence: 41,
         grade: "C+",
         slug: "the-big-sleep-by-raymond-chandler",
@@ -369,6 +377,7 @@ export const data = {
         },
       },
       {
+        id: "019c8b4d-d4a9-5613-b664-438d457e5cd9",
         sequence: 40,
         grade: "B",
         slug: "consider-this-by-chuck-palahniuk",
@@ -414,6 +423,7 @@ export const data = {
         },
       },
       {
+        id: "b22eff62-8d92-5055-aabd-496b90ba3b70",
         sequence: 39,
         grade: "B-",
         slug: "carrie-by-stephen-king",
@@ -458,6 +468,7 @@ export const data = {
         },
       },
       {
+        id: "502b2a58-44cd-5ffe-a77b-02fc01ba80d2",
         sequence: 38,
         grade: "B",
         slug: "i-will-find-you-by-joe-kenda",
@@ -503,6 +514,7 @@ export const data = {
         },
       },
       {
+        id: "3ac8367d-fa19-55ba-ae60-43eb0f6d7149",
         sequence: 37,
         grade: "C",
         slug: "draft-no-4-by-john-mcphee",
@@ -547,6 +559,7 @@ export const data = {
         },
       },
       {
+        id: "863dbd57-a3f7-5b4d-8eba-2eb7ea203223",
         sequence: 36,
         grade: "C+",
         slug: "the-woods-are-dark-by-richard-laymon",
@@ -591,6 +604,7 @@ export const data = {
         },
       },
       {
+        id: "e3b9bb4c-1686-58de-b440-85882a3cca37",
         sequence: 35,
         grade: "C",
         slug: "is-this-anything-by-jerry-seinfeld",
@@ -635,6 +649,7 @@ export const data = {
         },
       },
       {
+        id: "d829b0b2-f7ef-52fb-9362-7ca4b1b197cb",
         sequence: 34,
         grade: "A-",
         slug: "about-face-by-david-h-hackworth-julie-sherman",
@@ -684,6 +699,7 @@ export const data = {
         },
       },
       {
+        id: "a71ca743-414f-5777-8e17-dbcd8a858088",
         sequence: 33,
         grade: "C+",
         slug: "hawk-mountain-by-conner-habib",
@@ -728,6 +744,7 @@ export const data = {
         },
       },
       {
+        id: "5f61fb02-539f-5323-bf85-832685fd1825",
         sequence: 32,
         grade: "B+",
         slug: "the-postman-always-rings-twice-by-james-m-cain",
@@ -772,6 +789,7 @@ export const data = {
         },
       },
       {
+        id: "3d0c7425-81af-5c05-9c6e-7be003c0c03d",
         sequence: 31,
         grade: "A-",
         slug: "cured-by-lol-tolhurst",
@@ -816,6 +834,7 @@ export const data = {
         },
       },
       {
+        id: "e5e2a696-3724-52de-a6cb-6d7c88bd3205",
         sequence: 30,
         grade: "A-",
         slug: "fight-club-by-chuck-palahniuk",
@@ -860,6 +879,7 @@ export const data = {
         },
       },
       {
+        id: "ac566714-adf6-5663-9d08-29889a532bcb",
         sequence: 29,
         grade: "D+",
         slug: "the-48-laws-of-power-by-robert-greene",
@@ -904,6 +924,7 @@ export const data = {
         },
       },
       {
+        id: "d97350e9-6eca-5fb7-becd-41f08de3a36f",
         sequence: 28,
         grade: "C+",
         slug: "the-rules-of-attraction-by-bret-easton-ellis",
@@ -948,6 +969,7 @@ export const data = {
         },
       },
       {
+        id: "28442434-cf31-529e-ab3e-f4fe5bdc3c54",
         sequence: 27,
         grade: "C+",
         slug: "dracula-by-bram-stoker",
@@ -992,6 +1014,7 @@ export const data = {
         },
       },
       {
+        id: "e49ff29a-c2d0-51d0-a18e-c94d53dbe218",
         sequence: 26,
         grade: "A",
         slug: "the-secret-history-by-donna-tartt",
@@ -1036,6 +1059,7 @@ export const data = {
         },
       },
       {
+        id: "4fcbf85f-5d12-59a5-bf2e-6e26be19a24b",
         sequence: 25,
         grade: "D",
         slug: "live-and-let-die-by-ian-fleming",
@@ -1080,6 +1104,7 @@ export const data = {
         },
       },
       {
+        id: "90762b40-ee06-5933-a58c-55a86b268ba3",
         sequence: 24,
         grade: "A",
         slug: "extreme-ownership-by-jocko-willink-leif-babin",
@@ -1129,6 +1154,7 @@ export const data = {
         },
       },
       {
+        id: "c915e94d-ee35-537f-985a-7dd24764c6c4",
         sequence: 23,
         grade: "B+",
         slug: "set-the-boy-free-by-johnny-marr",
@@ -1173,6 +1199,7 @@ export const data = {
         },
       },
       {
+        id: "19c8413b-a397-5923-bff1-0d04af28336a",
         sequence: 22,
         grade: "B-",
         slug: "casino-royale-by-ian-fleming",
@@ -1217,6 +1244,7 @@ export const data = {
         },
       },
       {
+        id: "2674faf3-2834-5627-9605-55c4fedeee3c",
         sequence: 21,
         grade: "A-",
         slug: "churchill-by-andrew-roberts",
@@ -1261,6 +1289,7 @@ export const data = {
         },
       },
       {
+        id: "42251157-41ad-571e-a22e-8321aa3274b6",
         sequence: 20,
         grade: null,
         slug: "living-with-a-seal-by-jesse-itzler",
@@ -1306,6 +1335,7 @@ export const data = {
         },
       },
       {
+        id: "5870f4e5-9a6a-5813-ac64-e41daa1ae60a",
         sequence: 19,
         grade: "C+",
         slug: "total-recall-by-arnold-schwarzenegger",
@@ -1350,6 +1380,7 @@ export const data = {
         },
       },
       {
+        id: "7a1df4b4-b40d-5f10-bff1-62ad84741777",
         sequence: 18,
         grade: "A-",
         slug: "the-rise-of-theodore-roosevelt-by-edmund-morris",
@@ -1394,6 +1425,7 @@ export const data = {
         },
       },
       {
+        id: "f5c000f2-6fb5-504d-9c1d-458581cde64a",
         sequence: 17,
         grade: "B+",
         slug: "behold-the-void-by-philip-fracassi",
@@ -1438,6 +1470,7 @@ export const data = {
         },
       },
       {
+        id: "7df472af-9f79-5d2d-91a3-f19ea10158e5",
         sequence: 16,
         grade: "B+",
         slug: "mandala-by-philip-fracassi",
@@ -1482,6 +1515,7 @@ export const data = {
         },
       },
       {
+        id: "44bbb09f-c522-5d75-a577-4512bc565033",
         sequence: 15,
         grade: "C",
         slug: "fail-safe-by-philip-fracassi",
@@ -1526,6 +1560,7 @@ export const data = {
         },
       },
       {
+        id: "a2835c15-20dc-54c0-beac-ac958a1087b7",
         sequence: 14,
         grade: "B-",
         slug: "mother-by-philip-fracassi",
@@ -1570,6 +1605,7 @@ export const data = {
         },
       },
       {
+        id: "bd1ba9ee-ab3b-5e03-a983-c03d7e4ce00a",
         sequence: 13,
         grade: "C+",
         slug: "surfer-girl-by-philip-fracassi",
@@ -1614,6 +1650,7 @@ export const data = {
         },
       },
       {
+        id: "17c48bd0-3083-5ab9-9ca6-4fd1c52cd678",
         sequence: 12,
         grade: "C+",
         slug: "the-baby-farmer-by-philip-fracassi",
@@ -1658,6 +1695,7 @@ export const data = {
         },
       },
       {
+        id: "a24c9773-4c7a-5dea-8160-55abd3804371",
         sequence: 11,
         grade: "C+",
         slug: "coffin-by-philip-fracassi",
@@ -1702,6 +1740,7 @@ export const data = {
         },
       },
       {
+        id: "eeaead5c-1d8e-525c-bdad-57955a75b530",
         sequence: 10,
         grade: "B",
         slug: "the-horse-thief-by-philip-fracassi",
@@ -1746,6 +1785,7 @@ export const data = {
         },
       },
       {
+        id: "6f6234f9-600a-51f8-ad6d-63e2424707be",
         sequence: 9,
         grade: "A-",
         slug: "altar-by-philip-fracassi",
@@ -1790,6 +1830,7 @@ export const data = {
         },
       },
       {
+        id: "1a04ad92-cefc-5c07-9608-c904f4f39794",
         sequence: 8,
         grade: "B-",
         slug: "soft-construction-of-a-sunset-by-philip-fracassi",
@@ -1834,6 +1875,7 @@ export const data = {
         },
       },
       {
+        id: "126bd65c-5d28-5190-b6f6-5bc1f99a6fd6",
         sequence: 7,
         grade: "D+",
         slug: "the-dark-tunnel-by-ross-macdonald",
@@ -1878,6 +1920,7 @@ export const data = {
         },
       },
       {
+        id: "74387a5a-56e4-511b-afee-da01135dd32b",
         sequence: 6,
         grade: "C-",
         slug: "desert-pickup-by-richard-laymon",
@@ -1922,6 +1965,7 @@ export const data = {
         },
       },
       {
+        id: "303254ee-fcbe-51e5-a3fd-0938422a6228",
         sequence: 5,
         grade: "B+",
         slug: "less-than-zero-by-bret-easton-ellis",
@@ -1966,6 +2010,7 @@ export const data = {
         },
       },
       {
+        id: "edfc463b-0af6-5f94-ab62-6bc6722eb8f3",
         sequence: 4,
         grade: "A-",
         slug: "on-writing-by-stephen-king",
@@ -2010,6 +2055,7 @@ export const data = {
         },
       },
       {
+        id: "846f8b30-dd39-5e0a-8b1b-151595d67cad",
         sequence: 3,
         grade: "C-",
         slug: "the-max-muscle-plan-by-brad-schoenfeld",
@@ -2054,6 +2100,7 @@ export const data = {
         },
       },
       {
+        id: "2eb68457-b157-520b-bc46-b86168d4beb1",
         sequence: 2,
         grade: "C+",
         slug: "the-cellar-by-richard-laymon",
@@ -2098,6 +2145,7 @@ export const data = {
         },
       },
       {
+        id: "0c26f543-d3ae-5c8a-a374-b3a7350983ea",
         sequence: 1,
         grade: "C",
         slug: "brother-iron-sister-steel-by-dave-draper",

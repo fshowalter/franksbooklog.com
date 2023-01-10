@@ -140,7 +140,7 @@ exports[`/shelf/authors can sort by name desc 1`] = `
             alt=""
             aria-hidden="true"
             role="presentation"
-            src="data:image/svg+xml;charset=utf-8,%3Csvg height='160' width='160' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E"
+            src="data:image/svg+xml;charset=utf-8,%3Csvg%20height='160'%20width='160'%20xmlns='http://www.w3.org/2000/svg'%20version='1.1'%3E%3C/svg%3E"
             style="max-width: 100%; display: block; position: static;"
           />
         </div>

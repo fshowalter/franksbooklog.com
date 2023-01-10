@@ -101,6 +101,7 @@ export const pageQuery = graphql`
     reading: allReadingsJson(sort: { sequence: DESC }) {
       totalCount
       nodes {
+        id
         sequence
         grade
         slug: workSlug
