@@ -59,7 +59,9 @@ export const ReadingsJson = {
           return 1;
         }
 
-        return end.getDate() - start.getDate();
+        return Math.round(
+          (end.getTime() - start.getTime()) / (1000 * 60 * 60 * 24)
+        );
       },
     },
     editionNotes: {
