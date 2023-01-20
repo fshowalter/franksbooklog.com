@@ -32,11 +32,10 @@ export default function StatsForYearTemplate({
   data: Queries.StatsForYearTemplateQuery;
 }): JSX.Element {
   const tagline =
-    data.allReading.years.length === 1
-      ? "The Booklog in Review"
-      : data.allReading.years.length === 2
-      ? "A Year in Review"
-      : `${(data.allReading.years.length - 1).toString()} Years in Review`;
+    pageContext.year.toString() ===
+    data.allReading.years[data.allReading.years.length - 1]
+      ? "A Year in Progress.."
+      : "A Year in Review";
 
   return (
     <StatsPage

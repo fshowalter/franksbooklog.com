@@ -21,12 +21,7 @@ export default function AllTimeStatsPage({
 }: {
   data: Queries.AllTimeStatsPageQuery;
 }): JSX.Element {
-  const tagline =
-    data.reading.years.length === 1
-      ? "The Booklog in Review"
-      : data.reading.years.length === 2
-      ? "A Year in Review"
-      : `${(data.reading.years.length - 1).toString()} Years in Review`;
+  const tagline = `${data.reading.years.length.toString()} Years in Review`;
 
   return (
     <StatsPage
