@@ -74,9 +74,10 @@ function Details({
 }: {
   reading: Queries.ReadingHistoryEntryFragment;
 }) {
-  if (reading.readingTime === 1) {
+  if (reading.readingTime === 0) {
     return null;
   }
+
   const summaryText = reading.abandoned
     ? "Abandoned after"
     : reading.isAudiobook
