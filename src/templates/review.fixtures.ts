@@ -2,8 +2,7 @@ export const data = {
   work: {
     readings: [
       {
-        dateStarted: "Sat Jul 02, 2022",
-        dateFinished: "Sat Jul 09, 2022",
+        date: "Sat Jul 09, 2022",
         edition: "Audible",
         editionNotes:
           "<span>Narrated by Alan Cumming, Simon Vance, Katy Kellgren, Susan Duerden, and Tim Curry</span>",
@@ -51,45 +50,7 @@ export const data = {
     includedWorks: [],
     browseMore: [
       {
-        id: "a719d5d1-6985-5b13-a611-2cf4a6456fb8",
-        title: "The Dark Tunnel",
-        yearPublished: 1944,
-        kind: "Novel",
-        authors: [
-          {
-            name: "Ross Macdonald",
-          },
-        ],
-        grade: "D+",
-        slug: "the-dark-tunnel-by-ross-macdonald",
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "constrained" as const,
-              images: {
-                fallback: {
-                  src: "/static/78b2996d1249af4d0d1b0eac16cbcce4/31a1c/the-dark-tunnel-by-ross-macdonald.jpg",
-                  srcSet:
-                    "/static/78b2996d1249af4d0d1b0eac16cbcce4/5bc78/the-dark-tunnel-by-ross-macdonald.jpg 62w,\n/static/78b2996d1249af4d0d1b0eac16cbcce4/59d5c/the-dark-tunnel-by-ross-macdonald.jpg 124w,\n/static/78b2996d1249af4d0d1b0eac16cbcce4/31a1c/the-dark-tunnel-by-ross-macdonald.jpg 248w,\n/static/78b2996d1249af4d0d1b0eac16cbcce4/a5166/the-dark-tunnel-by-ross-macdonald.jpg 496w",
-                  sizes: "(min-width: 248px) 248px, 100vw",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/78b2996d1249af4d0d1b0eac16cbcce4/6b3a6/the-dark-tunnel-by-ross-macdonald.avif 62w,\n/static/78b2996d1249af4d0d1b0eac16cbcce4/3c542/the-dark-tunnel-by-ross-macdonald.avif 124w,\n/static/78b2996d1249af4d0d1b0eac16cbcce4/c155b/the-dark-tunnel-by-ross-macdonald.avif 248w,\n/static/78b2996d1249af4d0d1b0eac16cbcce4/1ad14/the-dark-tunnel-by-ross-macdonald.avif 496w",
-                    type: "image/avif",
-                    sizes: "(min-width: 248px) 248px, 100vw",
-                  },
-                ],
-              },
-              width: 248,
-              height: 372,
-            },
-          },
-        },
-      },
-      {
-        id: "f387755f-4df1-5fe5-91e8-5f2ea6935552",
+        id: "e2a1d100-bf77-59e9-befe-b5ba2c20ebf3",
         title: "Desert Pickup",
         yearPublished: 1970,
         kind: "Short Story",
@@ -127,7 +88,45 @@ export const data = {
         },
       },
       {
-        id: "61e044f5-35e8-5216-9bbd-0ad4676d2e0d",
+        id: "5f8d7d63-8025-504f-89c7-4c54ef83e03a",
+        title: "Doctor Sleep",
+        yearPublished: 2013,
+        kind: "Novel",
+        authors: [
+          {
+            name: "Stephen King",
+          },
+        ],
+        grade: "C+",
+        slug: "doctor-sleep-by-stephen-king",
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "constrained" as const,
+              images: {
+                fallback: {
+                  src: "/static/2ade3db6dd7bc3e5e33473384ec0baf0/31a1c/doctor-sleep-by-stephen-king.jpg",
+                  srcSet:
+                    "/static/2ade3db6dd7bc3e5e33473384ec0baf0/5bc78/doctor-sleep-by-stephen-king.jpg 62w,\n/static/2ade3db6dd7bc3e5e33473384ec0baf0/59d5c/doctor-sleep-by-stephen-king.jpg 124w,\n/static/2ade3db6dd7bc3e5e33473384ec0baf0/31a1c/doctor-sleep-by-stephen-king.jpg 248w,\n/static/2ade3db6dd7bc3e5e33473384ec0baf0/a5166/doctor-sleep-by-stephen-king.jpg 496w",
+                  sizes: "(min-width: 248px) 248px, 100vw",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/2ade3db6dd7bc3e5e33473384ec0baf0/6b3a6/doctor-sleep-by-stephen-king.avif 62w,\n/static/2ade3db6dd7bc3e5e33473384ec0baf0/3c542/doctor-sleep-by-stephen-king.avif 124w,\n/static/2ade3db6dd7bc3e5e33473384ec0baf0/c155b/doctor-sleep-by-stephen-king.avif 248w,\n/static/2ade3db6dd7bc3e5e33473384ec0baf0/1ad14/doctor-sleep-by-stephen-king.avif 496w",
+                    type: "image/avif",
+                    sizes: "(min-width: 248px) 248px, 100vw",
+                  },
+                ],
+              },
+              width: 248,
+              height: 372,
+            },
+          },
+        },
+      },
+      {
+        id: "7a83a7df-f08c-5514-9c44-85358c31d73b",
         title: "Draft No. 4",
         yearPublished: 2013,
         kind: "Nonfiction",
@@ -165,7 +164,7 @@ export const data = {
         },
       },
       {
-        id: "8aeb350a-76a4-5645-ad52-080cabcc9367",
+        id: "86cefa64-4ec2-5d68-9ef2-5e4d5bc2cb80",
         title: "Extreme Ownership",
         yearPublished: 2015,
         kind: "Nonfiction",
@@ -254,12 +253,11 @@ export const compilationData = {
   work: {
     readings: [
       {
-        dateStarted: "Sun Apr 17, 2022",
-        dateFinished: "Sat May 07, 2022",
+        date: "Sat May 07, 2022",
         edition: "Kindle",
         editionNotes: "<span>Lovecraft eZine Press, 2018</span>",
         isAudiobook: false,
-        readingTime: -10,
+        readingTime: 20,
         abandoned: false,
         readingNote: null,
         sequence: 17,
@@ -316,113 +314,113 @@ export const compilationData = {
       {
         name: "Philip Fracassi",
         notes: null,
-        slug: null,
+        slug: "philip-fracassi",
       },
     ],
     includedWorks: [
       {
-        id: "4bf63a2b-c35d-5db3-8b90-295bb5042d86",
+        id: "c01eefd9-9f2a-5071-a1aa-c8a9f9bc41b1",
         title: "Surfer Girl",
         authors: [
           {
             name: "Philip Fracassi",
-            slug: null,
+            slug: "philip-fracassi",
           },
         ],
         grade: "C+",
         slug: "surfer-girl-by-philip-fracassi",
       },
       {
-        id: "a6538869-f169-5825-89df-82111ee0d948",
+        id: "711aa94d-0440-5e80-aa73-7b0149dd9aba",
         title: "Soft Construction of a Sunset",
         authors: [
           {
             name: "Philip Fracassi",
-            slug: null,
+            slug: "philip-fracassi",
           },
         ],
         grade: "B-",
         slug: "soft-construction-of-a-sunset-by-philip-fracassi",
       },
       {
-        id: "86cefa64-4ec2-5d68-9ef2-5e4d5bc2cb80",
+        id: "680750ad-bea1-582b-8668-422d0fbf6f9c",
         title: "Mandala",
         authors: [
           {
             name: "Philip Fracassi",
-            slug: null,
+            slug: "philip-fracassi",
           },
         ],
         grade: "B+",
         slug: "mandala-by-philip-fracassi",
       },
       {
-        id: "48081124-5098-55c6-a946-7b40227ec230",
+        id: "e1aec5b2-ab8e-5d30-ab57-e3ca288fc6be",
         title: "Mother",
         authors: [
           {
             name: "Philip Fracassi",
-            slug: null,
+            slug: "philip-fracassi",
           },
         ],
         grade: "B-",
         slug: "mother-by-philip-fracassi",
       },
       {
-        id: "92a51761-7548-55ec-abbf-7747d18532df",
+        id: "f240664f-cf78-5373-aa22-2408f3ee50e5",
         title: "Altar",
         authors: [
           {
             name: "Philip Fracassi",
-            slug: null,
+            slug: "philip-fracassi",
           },
         ],
         grade: "A-",
         slug: "altar-by-philip-fracassi",
       },
       {
-        id: "1a6084b7-fc76-5561-88d7-42209ff2d554",
+        id: "d48ca848-da6b-5c62-878a-ecd65d98f25e",
         title: "The Horse Thief",
         authors: [
           {
             name: "Philip Fracassi",
-            slug: null,
+            slug: "philip-fracassi",
           },
         ],
         grade: "B",
         slug: "the-horse-thief-by-philip-fracassi",
       },
       {
-        id: "a5e2fb39-ff90-5b48-823f-8b91807dc3dd",
+        id: "40accf73-2de6-5e0f-88f4-a2da21278ea8",
         title: "The Baby Farmer",
         authors: [
           {
             name: "Philip Fracassi",
-            slug: null,
+            slug: "philip-fracassi",
           },
         ],
         grade: "C+",
         slug: "the-baby-farmer-by-philip-fracassi",
       },
       {
-        id: "3527ec24-34ae-51f3-8667-4b143b699451",
+        id: "3cd8cfb2-35f4-547c-b1bf-cde29b2b64da",
         title: "Coffin",
         authors: [
           {
             name: "Philip Fracassi",
-            slug: null,
+            slug: "philip-fracassi",
           },
         ],
         grade: "C+",
         slug: "coffin-by-philip-fracassi",
       },
       {
-        id: "e15c5d8d-5cd4-54f5-bfa5-4d586eb247ed",
+        id: "a187d653-c76a-5bcf-a341-cf52c3dd116c",
         title: "Fail-Safe",
         authors: [
           {
             name: "Philip Fracassi",
-            slug: null,
+            slug: "philip-fracassi",
           },
         ],
         grade: "C",
@@ -431,7 +429,7 @@ export const compilationData = {
     ],
     browseMore: [
       {
-        id: "92a51761-7548-55ec-abbf-7747d18532df",
+        id: "f240664f-cf78-5373-aa22-2408f3ee50e5",
         title: "Altar",
         yearPublished: 2016,
         kind: "Short Story",
@@ -469,7 +467,7 @@ export const compilationData = {
         },
       },
       {
-        id: "a5e2fb39-ff90-5b48-823f-8b91807dc3dd",
+        id: "40accf73-2de6-5e0f-88f4-a2da21278ea8",
         title: "The Baby Farmer",
         yearPublished: 2017,
         kind: "Short Story",
@@ -507,7 +505,7 @@ export const compilationData = {
         },
       },
       {
-        id: "34d66420-0492-58e8-9255-17342fe5b0e9",
+        id: "1be408b3-b1a0-57b3-83b5-fff7caf31d2f",
         title: "The Big Sleep",
         yearPublished: 1939,
         kind: "Novel",
@@ -545,7 +543,7 @@ export const compilationData = {
         },
       },
       {
-        id: "50ece6ea-0f30-5884-94a2-0d3e197a83ff",
+        id: "7d8d94e8-2d1c-5f73-bf99-6ab348165d67",
         title: "Brother Iron, Sister Steel",
         yearPublished: 2001,
         kind: "Nonfiction",
@@ -585,7 +583,7 @@ export const compilationData = {
     ],
     review: {
       linkedHtml:
-        '<p>An accomplished debut collection from Fracassi. ”<a href="/reviews/altar-by-philip-fracassi/">Altar</a>” shines with <a href="/reviews/mandala-by-philip-fracassi/"><em>Mandala</em></a> a strong second. Not a below average entry in the bunch. And I loved the author’s notes section, where Fracassi grants insight into each story’s origin (and confirms my thoughts <em>Mandala</em>’s ending).</p>',
+        '<p>An accomplished debut collection from Fracassi. ”<a href="/reviews/undefined/">Altar</a>” shines with <a href="/reviews/undefined/"><em>Mandala</em></a> a strong second. Not a below average entry in the bunch. And I loved the author’s notes section, where Fracassi grants insight into each story’s origin (and confirms my thoughts <em>Mandala</em>’s ending).</p>',
       date: "Sat May 07, 2022",
     },
     cover: {
@@ -631,12 +629,11 @@ export const abandonedData = {
   work: {
     readings: [
       {
-        dateStarted: "Tue May 24, 2022",
-        dateFinished: "Wed Jun 01, 2022",
+        date: "Wed Jun 01, 2022",
         edition: "Kindle",
         editionNotes: "<span>Center Street, 2015</span>",
         isAudiobook: false,
-        readingTime: -23,
+        readingTime: 8,
         abandoned: true,
         readingNote: null,
         sequence: 20,
@@ -665,13 +662,13 @@ export const abandonedData = {
       {
         name: "Jesse Itzler",
         notes: null,
-        slug: null,
+        slug: "jesse-itzler",
       },
     ],
     includedWorks: [],
     browseMore: [
       {
-        id: "e572c8fd-ed33-5dc6-9167-3ec926e35ef9",
+        id: "d8fc6d36-1641-52a3-9106-833edb6c7f30",
         title: "Less Than Zero",
         yearPublished: 1985,
         kind: "Novel",
@@ -709,7 +706,7 @@ export const abandonedData = {
         },
       },
       {
-        id: "08503a9b-2869-54b6-b7a7-0051909ee34c",
+        id: "d677fa85-4cb4-5dea-a04d-285e0f23a29a",
         title: "Live and Let Die",
         yearPublished: 1954,
         kind: "Novel",
@@ -747,7 +744,7 @@ export const abandonedData = {
         },
       },
       {
-        id: "86cefa64-4ec2-5d68-9ef2-5e4d5bc2cb80",
+        id: "680750ad-bea1-582b-8668-422d0fbf6f9c",
         title: "Mandala",
         yearPublished: 2017,
         kind: "Novella",
@@ -785,7 +782,7 @@ export const abandonedData = {
         },
       },
       {
-        id: "263cab63-4820-5699-bd90-fae527dff2b1",
+        id: "efae3c61-88b0-5f52-8bfb-cafe8d2c275f",
         title: "Moonraker",
         yearPublished: 1955,
         kind: "Novel",
@@ -825,7 +822,7 @@ export const abandonedData = {
     ],
     review: {
       linkedHtml:
-        '<p>Serial entrepreneur Jesse Itzler invites a former US Navy SEAL to shadow and train him for a month.</p>\n<!-- end -->\n<p>The premise hooked me, but the execution underwhelmed. Midway through, Itzler reveals the book’s origin as a blog he circulated amongst his friends. The book retains the format. Each chapter chronicles a day in Itzler’s life interspersed with the SEAL pushing him through grueling workouts comprising freezing runs and grueling push-up and pull-up sets. Each chapter ends with the day’s total miles run and push-ups and pull-ups performed.</p>\n<p>I read this during a cross-Atlantic plane ride. Even as a captive audience, it struggled to hold my attention, and after a few chapters, I’d put it down in favor of an audiobook or podcast. Then, after my ears needed a break, I’d return and read a few more chapters before repeating the cycle. Now that I’m home, I’ve abandoned it.</p>\n<p>Itzler, while affable and a competent writer, proves an uncompelling subject. To pad the length, he includes autobiographical anecdotes, such as how he broke into the recording business, met his wife, and started his private jet business. These didn’t interest me. I came for the SEAL, but Itzler paints him as an enigma bordering on caricature.</p>\n<p>Fortunately, Itzler later identified the SEAL as David Goggins, who wrote his own story, <a href="/reviews/cant-hurt-me-by-david-goggins/"><em>Can’t Hurt Me</em></a>, which I look forward to listening to in his own words.</p>',
+        '<p>Serial entrepreneur Jesse Itzler invites a former US Navy SEAL to shadow and train him for a month.</p>\n<!-- end -->\n<p>The premise hooked me, but the execution underwhelmed. Midway through, Itzler reveals the book’s origin as a blog he circulated amongst his friends. The book retains the format. Each chapter chronicles a day in Itzler’s life interspersed with the SEAL pushing him through grueling workouts comprising freezing runs and grueling push-up and pull-up sets. Each chapter ends with the day’s total miles run and push-ups and pull-ups performed.</p>\n<p>I read this during a cross-Atlantic plane ride. Even as a captive audience, it struggled to hold my attention, and after a few chapters, I’d put it down in favor of an audiobook or podcast. Then, after my ears needed a break, I’d return and read a few more chapters before repeating the cycle. Now that I’m home, I’ve abandoned it.</p>\n<p>Itzler, while affable and a competent writer, proves an uncompelling subject. To pad the length, he includes autobiographical anecdotes, such as how he broke into the recording business, met his wife, and started his private jet business. These didn’t interest me. I came for the SEAL, but Itzler paints him as an enigma bordering on caricature.</p>\n<p>Fortunately, Itzler later identified the SEAL as David Goggins, who wrote his own story, <a href="/reviews/undefined/"><em>Can’t Hurt Me</em></a>, which I look forward to listening to in his own words.</p>',
       date: "Wed Jun 01, 2022",
     },
     cover: {

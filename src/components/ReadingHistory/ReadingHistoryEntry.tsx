@@ -19,7 +19,7 @@ function Date({ reading }: { reading: Queries.ReadingHistoryEntryFragment }) {
   return (
     <>
       <Box as="span" color="default" display="inline-block">
-        {reading.dateFinished}
+        {reading.date}
       </Box>{" "}
     </>
   );
@@ -169,8 +169,7 @@ export function ReadingHistoryEntry({ reading }: IIReadingHistoryEntryProps) {
 
 export const query = graphql`
   fragment ReadingHistoryEntry on ReadingsJson {
-    dateStarted(formatString: "ddd MMM DD, YYYY")
-    dateFinished(formatString: "ddd MMM DD, YYYY")
+    date(formatString: "ddd MMM DD, YYYY")
     edition
     editionNotes
     isAudiobook

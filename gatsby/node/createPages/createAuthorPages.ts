@@ -19,7 +19,7 @@ export async function createAuthorPages({
 
   const queryResult = await graphql<QueryResult>(`
     {
-      author: allAuthorsJson(filter: { reviewedShelfWorkCount: { gt: 0 } }) {
+      author: allAuthorsJson(filter: { reviewedWorkCount: { gt: 0 } }) {
         nodes {
           id
           slug
@@ -35,7 +35,7 @@ export async function createAuthorPages({
 
   queryResult.data.author.nodes.forEach((node) => {
     createPage({
-      path: `/shelf/authors/${node.slug}/`,
+      path: `/reviews/authors/${node.slug}/`,
       component: path.resolve("./src/templates/author.tsx"),
       context: {
         slug: node.slug,

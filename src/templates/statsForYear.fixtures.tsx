@@ -7,7 +7,7 @@ export const data = {
       readings: [
         {
           sequence: 2,
-          dateFinished: "Wed Mar 16, 2022",
+          date: "Wed Mar 16, 2022",
           work: {
             slug: "the-cellar-by-richard-laymon",
           },
@@ -43,7 +43,7 @@ export const data = {
         },
         {
           sequence: 6,
-          dateFinished: "Sun Apr 3, 2022",
+          date: "Sun Apr 3, 2022",
           work: {
             slug: "desert-pickup-by-richard-laymon",
           },
@@ -79,7 +79,7 @@ export const data = {
         },
         {
           sequence: 36,
-          dateFinished: "Sun Sep 11, 2022",
+          date: "Sun Sep 11, 2022",
           work: {
             slug: "the-woods-are-dark-by-richard-laymon",
           },
@@ -115,7 +115,7 @@ export const data = {
         },
         {
           sequence: 43,
-          dateFinished: "Tue Oct 11, 2022",
+          date: "Tue Oct 11, 2022",
           work: {
             slug: "out-are-the-lights-by-richard-laymon",
           },
@@ -158,7 +158,7 @@ export const data = {
       readings: [
         {
           sequence: 4,
-          dateFinished: "Mon Mar 21, 2022",
+          date: "Mon Mar 21, 2022",
           work: {
             slug: "on-writing-by-stephen-king",
           },
@@ -194,7 +194,7 @@ export const data = {
         },
         {
           sequence: 39,
-          dateFinished: "Mon Sep 19, 2022",
+          date: "Mon Sep 19, 2022",
           work: {
             slug: "carrie-by-stephen-king",
           },
@@ -230,7 +230,7 @@ export const data = {
         },
         {
           sequence: 45,
-          dateFinished: "Fri Oct 14, 2022",
+          date: "Fri Oct 14, 2022",
           work: {
             slug: "salems-lot-by-stephen-king",
           },
@@ -266,7 +266,7 @@ export const data = {
         },
         {
           sequence: 47,
-          dateFinished: "Sat Oct 29, 2022",
+          date: "Sat Oct 29, 2022",
           work: {
             slug: "the-shining-by-stephen-king",
           },
@@ -304,12 +304,12 @@ export const data = {
     },
     {
       name: "Bret Easton Ellis",
-      slug: null,
+      slug: "bret-easton-ellis",
       count: 2,
       readings: [
         {
           sequence: 5,
-          dateFinished: "Sat Apr 2, 2022",
+          date: "Sat Apr 2, 2022",
           work: {
             slug: "less-than-zero-by-bret-easton-ellis",
           },
@@ -345,7 +345,7 @@ export const data = {
         },
         {
           sequence: 28,
-          dateFinished: "Thu Jul 14, 2022",
+          date: "Thu Jul 14, 2022",
           work: {
             slug: "the-rules-of-attraction-by-bret-easton-ellis",
           },
@@ -383,12 +383,12 @@ export const data = {
     },
     {
       name: "Philip Fracassi",
-      slug: null,
+      slug: "philip-fracassi",
       count: 10,
       readings: [
         {
           sequence: 8,
-          dateFinished: "Sun Apr 17, 2022",
+          date: "Sun Apr 17, 2022",
           work: {
             slug: "soft-construction-of-a-sunset-by-philip-fracassi",
           },
@@ -424,7 +424,7 @@ export const data = {
         },
         {
           sequence: 9,
-          dateFinished: "Mon Apr 18, 2022",
+          date: "Mon Apr 18, 2022",
           work: {
             slug: "altar-by-philip-fracassi",
           },
@@ -460,7 +460,7 @@ export const data = {
         },
         {
           sequence: 10,
-          dateFinished: "Tue Apr 19, 2022",
+          date: "Tue Apr 19, 2022",
           work: {
             slug: "the-horse-thief-by-philip-fracassi",
           },
@@ -496,7 +496,7 @@ export const data = {
         },
         {
           sequence: 11,
-          dateFinished: "Wed Apr 20, 2022",
+          date: "Wed Apr 20, 2022",
           work: {
             slug: "coffin-by-philip-fracassi",
           },
@@ -532,7 +532,7 @@ export const data = {
         },
         {
           sequence: 12,
-          dateFinished: "Thu Apr 21, 2022",
+          date: "Thu Apr 21, 2022",
           work: {
             slug: "the-baby-farmer-by-philip-fracassi",
           },
@@ -568,7 +568,7 @@ export const data = {
         },
         {
           sequence: 13,
-          dateFinished: "Fri Apr 22, 2022",
+          date: "Fri Apr 22, 2022",
           work: {
             slug: "surfer-girl-by-philip-fracassi",
           },
@@ -604,7 +604,7 @@ export const data = {
         },
         {
           sequence: 14,
-          dateFinished: "Sat Apr 23, 2022",
+          date: "Sat Apr 23, 2022",
           work: {
             slug: "mother-by-philip-fracassi",
           },
@@ -640,7 +640,7 @@ export const data = {
         },
         {
           sequence: 15,
-          dateFinished: "Sat Apr 30, 2022",
+          date: "Sat Apr 30, 2022",
           work: {
             slug: "fail-safe-by-philip-fracassi",
           },
@@ -676,7 +676,7 @@ export const data = {
         },
         {
           sequence: 16,
-          dateFinished: "Sat May 7, 2022",
+          date: "Sat May 7, 2022",
           work: {
             slug: "mandala-by-philip-fracassi",
           },
@@ -712,7 +712,7 @@ export const data = {
         },
         {
           sequence: 17,
-          dateFinished: "Sat May 7, 2022",
+          date: "Sat May 7, 2022",
           work: {
             slug: "behold-the-void-by-philip-fracassi",
           },
@@ -750,12 +750,12 @@ export const data = {
     },
     {
       name: "Ian Fleming",
-      slug: null,
+      slug: "ian-fleming",
       count: 3,
       readings: [
         {
           sequence: 22,
-          dateFinished: "Tue Jun 14, 2022",
+          date: "Tue Jun 14, 2022",
           work: {
             slug: "casino-royale-by-ian-fleming",
           },
@@ -791,7 +791,7 @@ export const data = {
         },
         {
           sequence: 25,
-          dateFinished: "Thu Jun 30, 2022",
+          date: "Thu Jun 30, 2022",
           work: {
             slug: "live-and-let-die-by-ian-fleming",
           },
@@ -827,7 +827,7 @@ export const data = {
         },
         {
           sequence: 46,
-          dateFinished: "Sun Oct 16, 2022",
+          date: "Sun Oct 16, 2022",
           work: {
             slug: "moonraker-by-ian-fleming",
           },
@@ -865,12 +865,12 @@ export const data = {
     },
     {
       name: "Chuck Palahniuk",
-      slug: null,
+      slug: "chuck-palahniuk",
       count: 2,
       readings: [
         {
           sequence: 30,
-          dateFinished: "Sat Jul 16, 2022",
+          date: "Sat Jul 16, 2022",
           work: {
             slug: "fight-club-by-chuck-palahniuk",
           },
@@ -906,7 +906,7 @@ export const data = {
         },
         {
           sequence: 40,
-          dateFinished: "Thu Sep 22, 2022",
+          date: "Thu Sep 22, 2022",
           work: {
             slug: "consider-this-by-chuck-palahniuk",
           },
@@ -944,7 +944,7 @@ export const data = {
     },
   ],
   allReading: {
-    years: ["2022"],
+    years: ["2022", "2023"],
   },
   reading: {
     totalCount: 48,
@@ -954,9 +954,6 @@ export const data = {
   },
   book: {
     totalCount: 38,
-  },
-  fromShelf: {
-    totalCount: 9,
   },
   gradeDistributions: {
     group: [

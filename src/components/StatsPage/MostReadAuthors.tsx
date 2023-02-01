@@ -16,7 +16,7 @@ function AuthorName({
   author: Queries.MostReadAuthorFragment;
 }): JSX.Element {
   if (author.slug) {
-    return <Link to={`/shelf/authors/${author.slug}/`}>{author.name}</Link>;
+    return <Link to={`/reviews/authors/${author.slug}/`}>{author.name}</Link>;
   }
 
   return <>{author.name}</>;
@@ -94,7 +94,7 @@ export function MostReadAuthors({
                           title={reading.title}
                           slug={reading.work.slug}
                           year={reading.yearPublished}
-                          date={reading.dateFinished}
+                          date={reading.date}
                           edition={reading.edition}
                           kind={reading.kind}
                         />
@@ -119,7 +119,7 @@ export const query = graphql`
     count
     readings {
       sequence
-      dateFinished(formatString: "ddd MMM D, YYYY")
+      date(formatString: "ddd MMM D, YYYY")
       work {
         slug
       }

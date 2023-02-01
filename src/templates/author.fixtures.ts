@@ -2,10 +2,39 @@ export const data = {
   author: {
     name: "Richard Laymon",
     sortName: "Laymon, Richard",
-    avatar: null,
+    avatar: {
+      childImageSharp: {
+        gatsbyImageData: {
+          layout: "fixed" as const,
+          placeholder: {
+            fallback:
+              "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAADqklEQVR42m1U6Sv2WxR9/gRvZCbJlAxlSkTxgQwZipAUGYpISRm+GIoPZCgkmT8IichMmcqcuQwJGUMZMs/rtnb9nq773lOn83vOc87aa6+9zlbt7+/j+PgYl5eXuL29xePjI56fn/H5+Yn7+3tcXFzI/1tbW7i6ugLH6+srnp6e8PLyImc5+c091d3dHR4eHtSbPPz+/o6FhQWUlZWhoKAANTU1yMrKQlpaGpqbm+Xi29vbL1CunCoCcCqRCFZZWYmoqCjExcXJGh0dDQ8PDzg5OUFHRweZmZmSwX/BBFD5YDSOiYkJODo6wtraGt7e3ggPD0diYqIwLCwsRH5+Pvz8/FBSUiIs/2KobJDZ6ekpfHx8YGJiAk9PT2RnZ2N8fBzn5+ciy83NDba3t1FdXY2AgAAJzkHdFRwB5AZHW1sbHBwckJeXh83NTWHN1BiM51iknZ0ddHd3IzIyEhUVFb8A1QwVQGoXGBiI5eVldaEIylXRmln09PQgKChIZOBQzvwF2NjYKPr19/cLGzKjTvy+vr7GwcEBVlZW0NLSAi8vLymaAvi/DHt7e2FjYyOA9N3a2hoGBgYk/ZGRERQVFaG2thYpKSlwdXWVotHHlEUBVSkV/v7+xuLiImJiYlBfXy9s6T/KMDU1Jf5rbW2V6sbGxiI+Ph7u7u5YXV3Fz8+POm11lT8+PiSl4uJi1NXVYXR0FB0dHRgaGhLGXV1daG9vx/z8vPxPK/n7+6sZ/tJQ+cHUyWZychIzMzOS9tjYGNbX1zE3NydVHRwcFMDg4GDx49HRkZD5lfK/vUgGs7Oz2N3dFRCy4xOMiIhAamoqlpaWhClTDg0NxdnZmdxTXtovQFJnFYeHh+UgJ5sDbUQJGhoa0NnZKYbmi0lKSpJi8q7ixV+AtAi7Di9tbGwIU1qEhudeTk4OqqqqMD09LRr6+vrKGRJhUeldlUKVERT7sNOworQNJxlRW4L39fWhqalJniYbBSerzifJIYBfX1/yg+ISIDk5WTxG67AwJycnkjrlKC8vl2IYGxsLmK6uLjQ1NeHi4oLS0lKoCLK3tyfRKbSdnR20tLSQkJAgoqenp0sRmHZubi5sbW0FyNDQUA3IZmJlZQVzc3Oo2DRpUDMzM5iamsrKgzR0RkYGnJ2dJTpfkL6+vgCwNxJQW1sbenp6MDIygoWFhQRTkZG9vb0wYxSCamhoSKc+PDyUNSwsDG5ubgLKYoSEhODPnz8CZmBgIIC8Z2lpiX8AKpC5r9e63FYAAAAASUVORK5CYII=",
+          },
+          images: {
+            fallback: {
+              src: "/static/d1a5b6a02309b16c0c0494baf7674d38/448fd/richard-laymon.jpg",
+              srcSet:
+                "/static/d1a5b6a02309b16c0c0494baf7674d38/448fd/richard-laymon.jpg 200w,\n/static/d1a5b6a02309b16c0c0494baf7674d38/382f3/richard-laymon.jpg 400w",
+              sizes: "200px",
+            },
+            sources: [
+              {
+                srcSet:
+                  "/static/d1a5b6a02309b16c0c0494baf7674d38/c7382/richard-laymon.avif 200w,\n/static/d1a5b6a02309b16c0c0494baf7674d38/20a4d/richard-laymon.avif 400w",
+                type: "image/avif",
+                sizes: "200px",
+              },
+            ],
+          },
+          width: 200,
+          height: 200,
+        },
+      },
+    },
+    reviewedWorkCount: 5,
     works: [
       {
-        id: "efae3c61-88b0-5f52-8bfb-cafe8d2c275f",
+        id: "e2a1d100-bf77-59e9-befe-b5ba2c20ebf3",
         title: "Desert Pickup",
         yearPublished: 1970,
         kind: "Short Story",
@@ -40,29 +69,29 @@ export const data = {
         },
       },
       {
-        id: "86f818b3-2ed5-5340-8d60-642bae49a108",
+        id: "1f66ca9b-decc-5274-9917-7f083c02f2e2",
         title: "Roadside Pickup",
         yearPublished: 1974,
         kind: "Short Story",
-        slug: null,
+        slug: "roadside-pickup-by-richard-laymon",
         sortTitle: "Roadside Pickup",
-        grade: null,
-        gradeValue: null,
+        grade: "C-",
+        gradeValue: 5,
         cover: {
           childImageSharp: {
             gatsbyImageData: {
               layout: "constrained" as const,
               images: {
                 fallback: {
-                  src: "/static/435fc619a8d59a92ce5f35d1edee258e/31a1c/default.jpg",
+                  src: "/static/8acae41db8fa464249340b17cc680c45/31a1c/short-stories-volume-one-by-richard-laymon.jpg",
                   srcSet:
-                    "/static/435fc619a8d59a92ce5f35d1edee258e/5bc78/default.jpg 62w,\n/static/435fc619a8d59a92ce5f35d1edee258e/59d5c/default.jpg 124w,\n/static/435fc619a8d59a92ce5f35d1edee258e/31a1c/default.jpg 248w,\n/static/435fc619a8d59a92ce5f35d1edee258e/a5166/default.jpg 496w",
+                    "/static/8acae41db8fa464249340b17cc680c45/5bc78/short-stories-volume-one-by-richard-laymon.jpg 62w,\n/static/8acae41db8fa464249340b17cc680c45/59d5c/short-stories-volume-one-by-richard-laymon.jpg 124w,\n/static/8acae41db8fa464249340b17cc680c45/31a1c/short-stories-volume-one-by-richard-laymon.jpg 248w,\n/static/8acae41db8fa464249340b17cc680c45/a5166/short-stories-volume-one-by-richard-laymon.jpg 496w",
                   sizes: "(min-width: 248px) 248px, 100vw",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/435fc619a8d59a92ce5f35d1edee258e/6b3a6/default.avif 62w,\n/static/435fc619a8d59a92ce5f35d1edee258e/3c542/default.avif 124w,\n/static/435fc619a8d59a92ce5f35d1edee258e/c155b/default.avif 248w,\n/static/435fc619a8d59a92ce5f35d1edee258e/1ad14/default.avif 496w",
+                      "/static/8acae41db8fa464249340b17cc680c45/6b3a6/short-stories-volume-one-by-richard-laymon.avif 62w,\n/static/8acae41db8fa464249340b17cc680c45/3c542/short-stories-volume-one-by-richard-laymon.avif 124w,\n/static/8acae41db8fa464249340b17cc680c45/c155b/short-stories-volume-one-by-richard-laymon.avif 248w,\n/static/8acae41db8fa464249340b17cc680c45/1ad14/short-stories-volume-one-by-richard-laymon.avif 496w",
                     type: "image/avif",
                     sizes: "(min-width: 248px) 248px, 100vw",
                   },
@@ -75,7 +104,7 @@ export const data = {
         },
       },
       {
-        id: "363e389b-a171-574d-8a09-80d68f8f6399",
+        id: "195c561f-29cf-5fae-a52b-8656288de12e",
         title: "Oscar's Audition",
         yearPublished: 1975,
         kind: "Short Story",
@@ -110,7 +139,7 @@ export const data = {
         },
       },
       {
-        id: "823af21e-43d5-52bb-9230-012823b51a91",
+        id: "0d3bafe6-3ed8-513e-b3ad-c4c475ada795",
         title: "Out of the Woods",
         yearPublished: 1975,
         kind: "Short Story",
@@ -145,7 +174,7 @@ export const data = {
         },
       },
       {
-        id: "66fe9d7d-685d-5c24-8fe0-7787ed47704f",
+        id: "7291c14e-b722-5baf-974b-a69129f17621",
         title: "Paying Joe Back",
         yearPublished: 1975,
         kind: "Short Story",
@@ -180,7 +209,7 @@ export const data = {
         },
       },
       {
-        id: "d04572f5-dc3d-5a8a-ac46-fed9dafab67a",
+        id: "25ad8c87-8692-57d6-9e1e-074ac04ae39b",
         title: "A Good Cigar is a Smoke",
         yearPublished: 1976,
         kind: "Short Story",
@@ -215,7 +244,7 @@ export const data = {
         },
       },
       {
-        id: "f8bff4c9-7d7f-53ae-9aa4-dd7b3c4eb294",
+        id: "4a8e0aef-ad79-5f0e-92b7-3bf75575be9a",
         title: "Immediate Opening",
         yearPublished: 1976,
         kind: "Short Story",
@@ -250,7 +279,7 @@ export const data = {
         },
       },
       {
-        id: "fba3a41c-810d-57d9-9ff1-3e5f0d07dfce",
+        id: "243c9364-8351-52ba-bd9a-2fa3561fc8bc",
         title: "The Direct Approach",
         yearPublished: 1977,
         kind: "Short Story",
@@ -285,7 +314,7 @@ export const data = {
         },
       },
       {
-        id: "76531b68-0475-57c5-9e0f-837851227ae4",
+        id: "3849e22f-15ae-58d2-bbbb-862c62146278",
         title: "The Champion",
         yearPublished: 1978,
         kind: "Short Story",
@@ -320,7 +349,7 @@ export const data = {
         },
       },
       {
-        id: "59c6e49f-6e22-5015-a271-dd399860370c",
+        id: "772aef64-9e78-51c5-8e0e-af126cfb58e7",
         title: "The Cellar",
         yearPublished: 1980,
         kind: "Novel",
@@ -355,7 +384,7 @@ export const data = {
         },
       },
       {
-        id: "92d6eab5-104f-590e-8aa4-37e2875d75b2",
+        id: "325cbe50-4cd1-599f-a6a6-9c7b62ed9cac",
         title: "Your Secret Admirer",
         yearPublished: 1980,
         kind: "Novel",
@@ -390,7 +419,7 @@ export const data = {
         },
       },
       {
-        id: "05f986c2-f320-5e92-8caf-a70d195c4580",
+        id: "8e819ddb-9445-5234-82d6-ce0080a3c531",
         title: "Stiff Intruders",
         yearPublished: 1980,
         kind: "Short Story",
@@ -495,7 +524,7 @@ export const data = {
         },
       },
       {
-        id: "36e66146-a781-5022-a961-8921ea4d286a",
+        id: "8a016eb3-fbec-5680-bc1f-31ae69fbe632",
         title: "Barney's Bigfoot Museum",
         yearPublished: 1981,
         kind: "Short Story",
@@ -530,7 +559,7 @@ export const data = {
         },
       },
       {
-        id: "f229ccc7-b7f4-5840-812b-2ac0d158334d",
+        id: "b4638ce6-0a5c-5409-8ed2-89bad2b9c206",
         title: "Spooked",
         yearPublished: 1981,
         kind: "Short Story",
@@ -565,7 +594,7 @@ export const data = {
         },
       },
       {
-        id: "c13e032a-e56f-5854-9952-dd49569a8a09",
+        id: "8ba6b3c2-6776-50ee-996c-45f18ce5a332",
         title: "Out Are the Lights",
         yearPublished: 1982,
         kind: "Novel",
@@ -600,7 +629,7 @@ export const data = {
         },
       },
       {
-        id: "bb53a103-1e31-50d0-bc87-a4c7ea0a4515",
+        id: "da772844-c598-53e5-a3f6-bdd163dad4ef",
         title: "The Grab",
         yearPublished: 1982,
         kind: "Short Story",
@@ -670,7 +699,7 @@ export const data = {
         },
       },
       {
-        id: "d48ca848-da6b-5c62-878a-ecd65d98f25e",
+        id: "f219b817-c51c-501a-8334-5c39931f7864",
         title: "The Lawmen",
         yearPublished: 1983,
         kind: "Novel",
@@ -705,7 +734,7 @@ export const data = {
         },
       },
       {
-        id: "4f71d73a-d12d-53c8-9294-e4aae7cdb414",
+        id: "b6a1f798-c92e-5ec9-a155-9d32547b386f",
         title: "Night Show",
         yearPublished: 1984,
         kind: "Novel",
@@ -740,7 +769,7 @@ export const data = {
         },
       },
       {
-        id: "8a69fd53-7837-5423-807d-ce53edefc2aa",
+        id: "8e3af6fa-6dc8-54ea-9349-542675bd2ee9",
         title: "A Stranger's Arms",
         yearPublished: 1984,
         kind: "Novel",
@@ -775,7 +804,7 @@ export const data = {
         },
       },
       {
-        id: "a3cfa9bc-7141-5e97-9dd6-05663870fee4",
+        id: "5c66d65c-99a4-56ad-a557-d75c3f9597fa",
         title: "Shootout at Joe's",
         yearPublished: 1984,
         kind: "Short Story",
@@ -810,7 +839,7 @@ export const data = {
         },
       },
       {
-        id: "d677fa85-4cb4-5dea-a04d-285e0f23a29a",
+        id: "b64b09ee-39b7-5ea8-8675-5e33440ec4b4",
         title: "Cardiac Arrest",
         yearPublished: 1984,
         kind: "Short Story",
@@ -845,7 +874,7 @@ export const data = {
         },
       },
       {
-        id: "6e6861b9-6d07-5bfe-80ec-ff58b631be14",
+        id: "c8416834-9a98-508b-92cf-fb64088a6804",
         title: "Dawson's City",
         yearPublished: 1984,
         kind: "Short Story",
@@ -880,7 +909,7 @@ export const data = {
         },
       },
       {
-        id: "ead31cc0-4262-5bd6-94bd-d2f26f10a306",
+        id: "bb53a103-1e31-50d0-bc87-a4c7ea0a4515",
         title: "The Intruder",
         yearPublished: 1984,
         kind: "Short Story",
@@ -1090,7 +1119,7 @@ export const data = {
         },
       },
       {
-        id: "d64ed1cb-8020-524c-986f-02aa2216980b",
+        id: "e92eaf61-4803-5c98-ac2a-f6f6fe26d3ae",
         title: "Night Ride",
         yearPublished: 1985,
         kind: "Short Story",
@@ -1125,7 +1154,7 @@ export const data = {
         },
       },
       {
-        id: "b28eff64-5efd-5351-8bd5-e9f9273e9499",
+        id: "055ce371-8894-5525-b11b-4080e569da51",
         title: "The Caller",
         yearPublished: 1985,
         kind: "Short Story",
@@ -1160,7 +1189,7 @@ export const data = {
         },
       },
       {
-        id: "f2ab729a-7ff6-5450-88ff-10e264e132c7",
+        id: "d81cb316-2e31-5d37-81aa-531b5af2f4ca",
         title: "The Lonely One",
         yearPublished: 1985,
         kind: "Short Story",
@@ -1195,7 +1224,7 @@ export const data = {
         },
       },
       {
-        id: "7869ab15-9f77-5278-a311-efef6efb8fe9",
+        id: "808ad8fd-fc93-51db-99cc-d654805803d9",
         title: "Live Bait",
         yearPublished: 1985,
         kind: "Short Story",
@@ -1230,7 +1259,7 @@ export const data = {
         },
       },
       {
-        id: "94d4931d-996f-54c3-b5fc-81a1e978d3ce",
+        id: "3983179a-ac0d-5ebb-a108-932647355de3",
         title: "The Cobra",
         yearPublished: 1985,
         kind: "Short Story",
@@ -1265,7 +1294,7 @@ export const data = {
         },
       },
       {
-        id: "10b80309-d696-5c5f-af34-4ab6adca47c4",
+        id: "b1c0e86f-50cf-5a12-a77f-0638c7a2bdf2",
         title: "Finders Keepers",
         yearPublished: 1985,
         kind: "Short Story",
@@ -1300,7 +1329,7 @@ export const data = {
         },
       },
       {
-        id: "b2647815-6259-5370-a645-54f782a7b497",
+        id: "eb923e79-db09-58df-9d5c-539506811eaf",
         title: "Guts",
         yearPublished: 1985,
         kind: "Short Story",
@@ -1335,7 +1364,7 @@ export const data = {
         },
       },
       {
-        id: "38e2f5bc-54b8-5995-ba9f-08b666b6c875",
+        id: "f8bff4c9-7d7f-53ae-9aa4-dd7b3c4eb294",
         title: "Night Games",
         yearPublished: 1985,
         kind: "Short Story",
@@ -1370,7 +1399,7 @@ export const data = {
         },
       },
       {
-        id: "5b9a417f-29ce-5447-9f6d-cbaa826c534f",
+        id: "8c9181eb-875a-5763-8521-9dcf30d15ef2",
         title: "Eats",
         yearPublished: 1985,
         kind: "Short Story",
@@ -1440,7 +1469,7 @@ export const data = {
         },
       },
       {
-        id: "4c4e544b-1e2a-50fb-8e65-05355b5e9899",
+        id: "b28eff64-5efd-5351-8bd5-e9f9273e9499",
         title: "The Night Creature",
         yearPublished: 1986,
         kind: "Short Story",
@@ -1475,7 +1504,7 @@ export const data = {
         },
       },
       {
-        id: "3b26421d-b249-5b6e-8953-1a944dac9478",
+        id: "7869ab15-9f77-5278-a311-efef6efb8fe9",
         title: "Thin Air",
         yearPublished: 1986,
         kind: "Short Story",
@@ -1510,7 +1539,7 @@ export const data = {
         },
       },
       {
-        id: "59690bdd-5459-5108-b1ca-e39f5fe76d5b",
+        id: "92d6eab5-104f-590e-8aa4-37e2875d75b2",
         title: "The Return",
         yearPublished: 1986,
         kind: "Short Story",
@@ -1545,7 +1574,7 @@ export const data = {
         },
       },
       {
-        id: "8a2835fa-f49d-52c0-8ffe-68b71ad96f72",
+        id: "8c98f1bd-04e2-5f4a-b371-5f499272e537",
         title: "The Beast",
         yearPublished: 1986,
         kind: "Short Story",
@@ -1580,7 +1609,7 @@ export const data = {
         },
       },
       {
-        id: "d127ef6e-a08f-5ec8-93e3-e07d7e4fd515",
+        id: "dbd41780-0217-516a-947f-0274658fbbaf",
         title: "The Beast House",
         yearPublished: 1986,
         kind: "Novel",
@@ -1615,7 +1644,7 @@ export const data = {
         },
       },
       {
-        id: "bb9252d0-1528-5ae3-a998-0da80c7f7379",
+        id: "87639069-455b-5448-ad74-7724d8ddbb37",
         title: "Allhallows Eve",
         yearPublished: 1986,
         kind: "Novel",
@@ -1650,7 +1679,7 @@ export const data = {
         },
       },
       {
-        id: "195c561f-29cf-5fae-a52b-8656288de12e",
+        id: "d64ed1cb-8020-524c-986f-02aa2216980b",
         title: "Tread Softly",
         yearPublished: 1987,
         kind: "Novel",
@@ -1685,7 +1714,7 @@ export const data = {
         },
       },
       {
-        id: "3527ec24-34ae-51f3-8667-4b143b699451",
+        id: "bb983172-d31a-5675-8fb7-b53eb015c312",
         title: "Flesh",
         yearPublished: 1987,
         kind: "Novel",
@@ -1720,7 +1749,7 @@ export const data = {
         },
       },
       {
-        id: "43a4c56d-94e3-5a1a-b6e5-5cfd4fed7625",
+        id: "bb148f3e-adfd-53d8-96de-955884657f11",
         title: "Halloween Hunt",
         yearPublished: 1987,
         kind: "Novella",
@@ -1790,7 +1819,7 @@ export const data = {
         },
       },
       {
-        id: "fa44d7f7-8591-5766-8db8-65af36e352dc",
+        id: "9c9451d2-28b4-5332-b8d9-d1da49870b7a",
         title: "Midnight's Lair",
         yearPublished: 1988,
         kind: "Novel",
@@ -1895,7 +1924,7 @@ export const data = {
         },
       },
       {
-        id: "bb983172-d31a-5675-8fb7-b53eb015c312",
+        id: "b17ab637-a7e7-524b-a4a6-d54fc81f819d",
         title: "Dinker's Pond",
         yearPublished: 1989,
         kind: "Short Story",
@@ -1930,7 +1959,7 @@ export const data = {
         },
       },
       {
-        id: "848e9927-2089-5776-bbf9-905a28a410de",
+        id: "94d4931d-996f-54c3-b5fc-81a1e978d3ce",
         title: "Bad News",
         yearPublished: 1989,
         kind: "Short Story",
@@ -1965,7 +1994,7 @@ export const data = {
         },
       },
       {
-        id: "adfa3527-c0ab-5627-9e6f-bee5f2d60a5c",
+        id: "ba80ba5c-9081-5688-a06d-07fd9e8445e3",
         title: "The Hunt",
         yearPublished: 1989,
         kind: "Short Story",
@@ -2000,7 +2029,7 @@ export const data = {
         },
       },
       {
-        id: "c91156cc-4cbc-5df7-a148-42bc2a314f2f",
+        id: "999614d1-927f-59bd-8884-be161ea024ce",
         title: "Wishbone",
         yearPublished: 1989,
         kind: "Short Story",
@@ -2035,7 +2064,7 @@ export const data = {
         },
       },
       {
-        id: "98906761-d5af-5b6b-b1c0-e4b482d7be8f",
+        id: "f7d13882-3993-5586-8133-96a6d313e7c5",
         title: "The Bleeder",
         yearPublished: 1989,
         kind: "Short Story",
@@ -2070,7 +2099,7 @@ export const data = {
         },
       },
       {
-        id: "da5d0b76-e6c9-59ca-95c6-f7f56dfbd88e",
+        id: "fa44d7f7-8591-5766-8db8-65af36e352dc",
         title: "Mop-Up",
         yearPublished: 1989,
         kind: "Novella",
@@ -2105,7 +2134,7 @@ export const data = {
         },
       },
       {
-        id: "768f0268-a9e5-5f1b-b530-9e9ebf266717",
+        id: "116b7e25-e654-5f6d-99ca-f7bff7021a82",
         title: "Mess Hall",
         yearPublished: 1989,
         kind: "Short Story",
@@ -2140,7 +2169,7 @@ export const data = {
         },
       },
       {
-        id: "b417dab2-3066-541d-8ba5-a88c5f859589",
+        id: "205b49bb-71fd-5206-a0f7-896100b2de23",
         title: "The Stake",
         yearPublished: 1990,
         kind: "Novel",
@@ -2210,7 +2239,7 @@ export const data = {
         },
       },
       {
-        id: "f387755f-4df1-5fe5-91e8-5f2ea6935552",
+        id: "c3312df3-3b84-593c-b1dd-df470068ccfb",
         title: "Invitation to Murder",
         yearPublished: 1991,
         kind: "Short Story",
@@ -2245,7 +2274,7 @@ export const data = {
         },
       },
       {
-        id: "09367c5f-be99-5ea3-b372-c95f22934aa2",
+        id: "823af21e-43d5-52bb-9230-012823b51a91",
         title: "The Tub",
         yearPublished: 1991,
         kind: "Short Story",
@@ -2280,7 +2309,7 @@ export const data = {
         },
       },
       {
-        id: "0d3bafe6-3ed8-513e-b3ad-c4c475ada795",
+        id: "f8a20d96-a3b2-5707-93e2-1de6334d1fab",
         title: "Saving Grace",
         yearPublished: 1991,
         kind: "Short Story",
@@ -2315,7 +2344,7 @@ export const data = {
         },
       },
       {
-        id: "5b83b44e-4384-57b6-9a84-ba79cc46d88d",
+        id: "c6ab5777-bd36-5da4-96cc-d4aa48627ad6",
         title: "One Rainy Night",
         yearPublished: 1991,
         kind: "Novel",
@@ -2350,7 +2379,7 @@ export const data = {
         },
       },
       {
-        id: "999614d1-927f-59bd-8884-be161ea024ce",
+        id: "c23c47d2-29ac-522a-882a-ca2700481880",
         title: "Island",
         yearPublished: 1991,
         kind: "Novel",
@@ -2385,7 +2414,7 @@ export const data = {
         },
       },
       {
-        id: "16702d51-295f-5f94-979b-5caf9e557a94",
+        id: "69194e9c-60bd-5e73-95a0-e26a0dc52690",
         title: "Special",
         yearPublished: 1991,
         kind: "Short Story",
@@ -2525,7 +2554,7 @@ export const data = {
         },
       },
       {
-        id: "abbe01ec-de4f-5f29-a283-3ee2a8ff8204",
+        id: "9e9f0b4b-f08b-5347-aa46-9eeb9b5c5f1a",
         title: "Stickman",
         yearPublished: 1992,
         kind: "Short Story",
@@ -2560,7 +2589,7 @@ export const data = {
         },
       },
       {
-        id: "f0580145-080f-5cab-997b-963da621dc02",
+        id: "95d34d0e-2a83-5554-9c05-877eafccc7a2",
         title: "The Mask",
         yearPublished: 1992,
         kind: "Novella",
@@ -2595,7 +2624,7 @@ export const data = {
         },
       },
       {
-        id: "5e2e2bdf-41fd-529d-bb6c-228c0dd4accf",
+        id: "5c614a94-bcf2-5028-b87d-c52f15abacb5",
         title: "Blood Games",
         yearPublished: 1992,
         kind: "Novel",
@@ -2630,7 +2659,7 @@ export const data = {
         },
       },
       {
-        id: "c171a6cc-b7bd-53de-8f87-de98aa75a86e",
+        id: "a3a6a383-d839-5054-b346-dcbfd8f404cd",
         title: "Kitty Litter",
         yearPublished: 1992,
         kind: "Short Story",
@@ -2665,7 +2694,7 @@ export const data = {
         },
       },
       {
-        id: "3da9f5d0-261c-54f6-9ff9-7d719e8219d1",
+        id: "e47b8c7a-de9e-540a-befa-208deae6c4d0",
         title: "Alarums",
         yearPublished: 1992,
         kind: "Novel",
@@ -2700,7 +2729,7 @@ export const data = {
         },
       },
       {
-        id: "e2a1d100-bf77-59e9-befe-b5ba2c20ebf3",
+        id: "0833e5f0-a36d-5a6b-9b36-27908108d322",
         title: "A Good, Secret Place",
         yearPublished: 1992,
         kind: "Novella",
@@ -2735,7 +2764,7 @@ export const data = {
         },
       },
       {
-        id: "d81cb316-2e31-5d37-81aa-531b5af2f4ca",
+        id: "5818e1d8-b1bc-5ce1-b48f-a22e79047d4a",
         title: "I'm Not a Criminal",
         yearPublished: 1993,
         kind: "Short Story",
@@ -2770,7 +2799,7 @@ export const data = {
         },
       },
       {
-        id: "e15c5d8d-5cd4-54f5-bfa5-4d586eb247ed",
+        id: "263cab63-4820-5699-bd90-fae527dff2b1",
         title: "Out Are the Lights and Other Tales",
         yearPublished: 1993,
         kind: "Collection",
@@ -2805,7 +2834,7 @@ export const data = {
         },
       },
       {
-        id: "bb88b08d-ce2b-5f37-b1f3-9b2f7c744424",
+        id: "8a69fd53-7837-5423-807d-ce53edefc2aa",
         title: "Savage",
         yearPublished: 1993,
         kind: "Novel",
@@ -2841,7 +2870,7 @@ export const data = {
         },
       },
       {
-        id: "a31c9fad-e4c0-53f9-bfdd-5d7ee64265fc",
+        id: "0bb0e690-55ae-5288-bb57-17b252016104",
         title: "Endless Night",
         yearPublished: 1993,
         kind: "Novel",
@@ -2876,7 +2905,7 @@ export const data = {
         },
       },
       {
-        id: "6a0a919a-9f3e-5431-b84d-5113bb30e6c9",
+        id: "8a2835fa-f49d-52c0-8ffe-68b71ad96f72",
         title: "Slit",
         yearPublished: 1993,
         kind: "Short Story",
@@ -2911,7 +2940,7 @@ export const data = {
         },
       },
       {
-        id: "95d34d0e-2a83-5554-9c05-877eafccc7a2",
+        id: "fdeaf019-76cb-58a6-b230-ff9d413f153e",
         title: "In the Dark",
         yearPublished: 1994,
         kind: "Novel",
@@ -2946,7 +2975,7 @@ export const data = {
         },
       },
       {
-        id: "941189c9-6e7f-5859-adc8-f8a6c805cf30",
+        id: "823b052c-d8e8-5387-bd6e-ca24b6cd7029",
         title: "The Fur Coat",
         yearPublished: 1994,
         kind: "Short Story",
@@ -2981,7 +3010,7 @@ export const data = {
         },
       },
       {
-        id: "f219b817-c51c-501a-8334-5c39931f7864",
+        id: "bb88b08d-ce2b-5f37-b1f3-9b2f7c744424",
         title: "Phil the Vampire",
         yearPublished: 1995,
         kind: "Short Story",
@@ -3016,7 +3045,7 @@ export const data = {
         },
       },
       {
-        id: "3cd8cfb2-35f4-547c-b1bf-cde29b2b64da",
+        id: "a31c9fad-e4c0-53f9-bfdd-5d7ee64265fc",
         title: "Quake",
         yearPublished: 1995,
         kind: "Novel",
@@ -3051,7 +3080,7 @@ export const data = {
         },
       },
       {
-        id: "b64b09ee-39b7-5ea8-8675-5e33440ec4b4",
+        id: "f46850bf-e9fa-5bb4-b11e-d8dd3303d8de",
         title: "The Maiden",
         yearPublished: 1995,
         kind: "Short Story",
@@ -3121,7 +3150,7 @@ export const data = {
         },
       },
       {
-        id: "711aa94d-0440-5e80-aa73-7b0149dd9aba",
+        id: "f2ab729a-7ff6-5450-88ff-10e264e132c7",
         title: "Body Rides",
         yearPublished: 1996,
         kind: "Novel",
@@ -3156,7 +3185,7 @@ export const data = {
         },
       },
       {
-        id: "f46850bf-e9fa-5bb4-b11e-d8dd3303d8de",
+        id: "16702d51-295f-5f94-979b-5caf9e557a94",
         title: "Herman",
         yearPublished: 1996,
         kind: "Short Story",
@@ -3191,7 +3220,7 @@ export const data = {
         },
       },
       {
-        id: "116b7e25-e654-5f6d-99ca-f7bff7021a82",
+        id: "05f986c2-f320-5e92-8caf-a70d195c4580",
         title: "Good Vibrations",
         yearPublished: 1996,
         kind: "Short Story",
@@ -3261,7 +3290,7 @@ export const data = {
         },
       },
       {
-        id: "b6a1f798-c92e-5ec9-a155-9d32547b386f",
+        id: "fba3a41c-810d-57d9-9ff1-3e5f0d07dfce",
         title: "After Midnight",
         yearPublished: 1997,
         kind: "Novel",
@@ -3296,7 +3325,7 @@ export const data = {
         },
       },
       {
-        id: "e661f41f-9503-587a-89da-7f845e470873",
+        id: "cf34c187-ac45-5483-817a-bf42923d5285",
         title: "The Hunted",
         yearPublished: 1997,
         kind: "Short Story",
@@ -3331,7 +3360,7 @@ export const data = {
         },
       },
       {
-        id: "2044988b-c249-55ff-9695-1129ae5e0b71",
+        id: "5e2e2bdf-41fd-529d-bb6c-228c0dd4accf",
         title: "Fiends",
         yearPublished: 1997,
         kind: "Novella",
@@ -3366,7 +3395,7 @@ export const data = {
         },
       },
       {
-        id: "8c9181eb-875a-5763-8521-9dcf30d15ef2",
+        id: "768f0268-a9e5-5f1b-b530-9e9ebf266717",
         title: "A Writer's Tale",
         yearPublished: 1997,
         kind: "Nonfiction",
@@ -3401,7 +3430,7 @@ export const data = {
         },
       },
       {
-        id: "5818e1d8-b1bc-5ce1-b48f-a22e79047d4a",
+        id: "e15c5d8d-5cd4-54f5-bfa5-4d586eb247ed",
         title: "Come Out Tonight",
         yearPublished: 1998,
         kind: "Novel",
@@ -3436,7 +3465,7 @@ export const data = {
         },
       },
       {
-        id: "4f4e4c59-e9aa-5864-8636-0a0c4115307b",
+        id: "d04572f5-dc3d-5a8a-ac46-fed9dafab67a",
         title: "The Wilds",
         yearPublished: 1998,
         kind: "Novella",
@@ -3471,7 +3500,7 @@ export const data = {
         },
       },
       {
-        id: "f7e1d547-9805-557b-a245-a7885390c09b",
+        id: "b2647815-6259-5370-a645-54f782a7b497",
         title: "The Job",
         yearPublished: 1998,
         kind: "Short Story",
@@ -3506,7 +3535,7 @@ export const data = {
         },
       },
       {
-        id: "4a8e0aef-ad79-5f0e-92b7-3bf75575be9a",
+        id: "da5d0b76-e6c9-59ca-95c6-f7f56dfbd88e",
         title: "The Midnight Tour",
         yearPublished: 1998,
         kind: "Novel",
@@ -3541,7 +3570,7 @@ export const data = {
         },
       },
       {
-        id: "34d66420-0492-58e8-9255-17342fe5b0e9",
+        id: "4c4e544b-1e2a-50fb-8e65-05355b5e9899",
         title: "Cuts",
         yearPublished: 1999,
         kind: "Novel",
@@ -3576,7 +3605,7 @@ export const data = {
         },
       },
       {
-        id: "9e9f0b4b-f08b-5347-aa46-9eeb9b5c5f1a",
+        id: "5853429e-134f-538f-8e71-376e38568996",
         title: "Choppie",
         yearPublished: 1999,
         kind: "Short Story",
@@ -3611,7 +3640,7 @@ export const data = {
         },
       },
       {
-        id: "fdeaf019-76cb-58a6-b230-ff9d413f153e",
+        id: "09367c5f-be99-5ea3-b372-c95f22934aa2",
         title: "Among the Missing",
         yearPublished: 1999,
         kind: "Novel",
@@ -3681,7 +3710,7 @@ export const data = {
         },
       },
       {
-        id: "b17ab637-a7e7-524b-a4a6-d54fc81f819d",
+        id: "34d66420-0492-58e8-9255-17342fe5b0e9",
         title: "The Hangman",
         yearPublished: 2000,
         kind: "Short Story",
@@ -3716,7 +3745,7 @@ export const data = {
         },
       },
       {
-        id: "808ad8fd-fc93-51db-99cc-d654805803d9",
+        id: "753eff51-97e4-52d4-87fc-518d2a1787e7",
         title: "Once Upon a Halloween",
         yearPublished: 2000,
         kind: "Novel",
@@ -3751,7 +3780,7 @@ export const data = {
         },
       },
       {
-        id: "753eff51-97e4-52d4-87fc-518d2a1787e7",
+        id: "b2936bed-4dc2-5c8f-9f31-7fc99f034afa",
         title: "Prudence",
         yearPublished: 2000,
         kind: "Short Story",
@@ -3786,7 +3815,7 @@ export const data = {
         },
       },
       {
-        id: "4e9912f6-89d9-5637-a19c-340001a44bd2",
+        id: "8f035cd1-8af8-55b7-b74b-8faa838f53d1",
         title: "The Traveling Vampire Show",
         yearPublished: 2000,
         kind: "Novel",
@@ -3821,7 +3850,7 @@ export const data = {
         },
       },
       {
-        id: "5853429e-134f-538f-8e71-376e38568996",
+        id: "f9d6a71b-d86b-5c46-ba45-2a381b89f1e7",
         title: "Double Date",
         yearPublished: 2000,
         kind: "Short Story",
@@ -3856,7 +3885,7 @@ export const data = {
         },
       },
       {
-        id: "0bb0e690-55ae-5288-bb57-17b252016104",
+        id: "59690bdd-5459-5108-b1ca-e39f5fe76d5b",
         title: "Boo",
         yearPublished: 2000,
         kind: "Short Story",
@@ -3891,7 +3920,7 @@ export const data = {
         },
       },
       {
-        id: "eb923e79-db09-58df-9d5c-539506811eaf",
+        id: "b417dab2-3066-541d-8ba5-a88c5f859589",
         title: "Into the Pit",
         yearPublished: 2000,
         kind: "Short Story",
@@ -3961,7 +3990,7 @@ export const data = {
         },
       },
       {
-        id: "bb148f3e-adfd-53d8-96de-955884657f11",
+        id: "58b54913-0f1b-59c9-a455-e6e6e64d4179",
         title: "Night in the Lonesome October",
         yearPublished: 2001,
         kind: "Novel",
@@ -3996,7 +4025,7 @@ export const data = {
         },
       },
       {
-        id: "c292fe88-d7d2-5679-b388-0872093628aa",
+        id: "5b83b44e-4384-57b6-9a84-ba79cc46d88d",
         title: "No Sanctuary",
         yearPublished: 2001,
         kind: "Novel",
@@ -4031,7 +4060,7 @@ export const data = {
         },
       },
       {
-        id: "1f66ca9b-decc-5274-9917-7f083c02f2e2",
+        id: "15e0afe5-108d-58da-8b81-e24a29268925",
         title: "Hammerhead",
         yearPublished: 2001,
         kind: "Short Story",
@@ -4066,7 +4095,7 @@ export const data = {
         },
       },
       {
-        id: "a3a6a383-d839-5054-b346-dcbfd8f404cd",
+        id: "c13e032a-e56f-5854-9952-dd49569a8a09",
         title: "Tell Me a Tale",
         yearPublished: 2001,
         kind: "Short Story",
@@ -4101,7 +4130,7 @@ export const data = {
         },
       },
       {
-        id: "fffdceb9-7476-5924-8b2e-6d1d95b2df62",
+        id: "f7e1d547-9805-557b-a245-a7885390c09b",
         title: "Friday Night in Beast House",
         yearPublished: 2001,
         kind: "Novel",
@@ -4136,7 +4165,7 @@ export const data = {
         },
       },
       {
-        id: "7e0aabe8-c361-5940-a4a8-b297905ed096",
+        id: "a3f80e6e-3a51-58c4-8bce-193ef8d4f33c",
         title: "Pick-Up on Highway One",
         yearPublished: 2001,
         kind: "Short Story",
@@ -4171,7 +4200,7 @@ export const data = {
         },
       },
       {
-        id: "58cb4abf-e058-5c98-a2d6-8c16c8b2efa9",
+        id: "59c6e49f-6e22-5015-a271-dd399860370c",
         title: "The Cabin in the Woods",
         yearPublished: 2002,
         kind: "Short Story",
@@ -4206,7 +4235,7 @@ export const data = {
         },
       },
       {
-        id: "b25f0f64-4b16-5c92-8260-2971e3b4d828",
+        id: "189673e1-3e4f-524f-859f-38ba9facaf2e",
         title: "Ten Bucks Says You Won't",
         yearPublished: 2002,
         kind: "Short Story",
@@ -4241,7 +4270,7 @@ export const data = {
         },
       },
       {
-        id: "e1aec5b2-ab8e-5d30-ab57-e3ca288fc6be",
+        id: "4f4e4c59-e9aa-5864-8636-0a0c4115307b",
         title: "Amara",
         yearPublished: 2003,
         kind: "Novel",
@@ -4311,7 +4340,7 @@ export const data = {
         },
       },
       {
-        id: "a719d5d1-6985-5b13-a611-2cf4a6456fb8",
+        id: "f387755f-4df1-5fe5-91e8-5f2ea6935552",
         title: "The Lake",
         yearPublished: 2004,
         kind: "Novel",
@@ -4346,7 +4375,7 @@ export const data = {
         },
       },
       {
-        id: "87f9b6ec-9294-59cc-81f4-cdf824f470cd",
+        id: "2044988b-c249-55ff-9695-1129ae5e0b71",
         title: "The Hearse",
         yearPublished: 2004,
         kind: "Novella",
@@ -4381,7 +4410,7 @@ export const data = {
         },
       },
       {
-        id: "325cbe50-4cd1-599f-a6a6-9c7b62ed9cac",
+        id: "24ebf447-923a-5d9c-983e-39663f2fde98",
         title: "Bedtime Stories",
         yearPublished: 2004,
         kind: "Short Story",
@@ -4451,7 +4480,7 @@ export const data = {
         },
       },
       {
-        id: "1be408b3-b1a0-57b3-83b5-fff7caf31d2f",
+        id: "6a0a919a-9f3e-5431-b84d-5113bb30e6c9",
         title: "The Glory Bus",
         yearPublished: 2005,
         kind: "Novel",
@@ -4521,7 +4550,7 @@ export const data = {
         },
       },
       {
-        id: "c8416834-9a98-508b-92cf-fb64088a6804",
+        id: "da12ee34-dbfb-5901-a995-d74181798954",
         title: "The Mirror",
         yearPublished: 2011,
         kind: "Short Story",
@@ -4556,7 +4585,7 @@ export const data = {
         },
       },
       {
-        id: "7d8d94e8-2d1c-5f73-bf99-6ab348165d67",
+        id: "daa64869-82f8-5585-b922-31aedfa4a4a5",
         title: "Short Stories: Volume One",
         yearPublished: 2014,
         kind: "Collection",

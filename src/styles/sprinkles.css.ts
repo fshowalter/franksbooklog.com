@@ -60,6 +60,7 @@ const unresponsiveAtomicProperties = defineProperties({
       40: "2.5rem",
       48: "3rem",
     },
+    marginLeft: ["auto"],
     overflow: ["hidden"],
     textAlign: ["left", "right", "center", "inherit"],
     textTransform: ["uppercase"],

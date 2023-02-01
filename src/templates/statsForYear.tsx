@@ -46,7 +46,6 @@ export default function StatsForYearTemplate({
       reviewCount={data.review.totalCount}
       bookCount={data.book.totalCount}
       readingCount={data.reading.totalCount}
-      fromShelfCount={data.fromShelf.totalCount}
       gradeDistributions={data.gradeDistributions.group}
       kindDistributions={data.kindDistributions.group}
       editionDistributions={data.editionDistributions.group}
@@ -62,10 +61,10 @@ export const pageQuery = graphql`
     }
 
     allReading: allReadingsJson {
-      years: distinct(field: { yearFinished: SELECT })
+      years: distinct(field: { year: SELECT })
     }
 
-    reading: allReadingsJson(filter: { yearFinished: { eq: $year } }) {
+    reading: allReadingsJson(filter: { year: { eq: $year } }) {
       totalCount
     }
 
@@ -78,14 +77,8 @@ export const pageQuery = graphql`
     book: allReadingsJson(
       filter: {
         work: { kind: { nin: ["Short Story", "Novella"] } }
-        yearFinished: { eq: $year }
+        year: { eq: $year }
       }
-    ) {
-      totalCount
-    }
-
-    fromShelf: allWorksJson(
-      filter: { shelf: { eq: true }, review: { year: { eq: $year } } }
     ) {
       totalCount
     }
@@ -101,7 +94,7 @@ export const pageQuery = graphql`
     }
 
     kindDistributions: allReadingsJson(
-      filter: { yearFinished: { eq: $year } }
+      filter: { year: { eq: $year } }
       sort: { kind: ASC }
     ) {
       group(field: { kind: SELECT }) {
@@ -111,7 +104,7 @@ export const pageQuery = graphql`
     }
 
     editionDistributions: allReadingsJson(
-      filter: { yearFinished: { eq: $year } }
+      filter: { year: { eq: $year } }
       sort: { edition: ASC }
     ) {
       group(field: { edition: SELECT }) {
@@ -121,7 +114,7 @@ export const pageQuery = graphql`
     }
 
     decadeDistributions: allReadingsJson(
-      filter: { yearFinished: { eq: $year } }
+      filter: { year: { eq: $year } }
       sort: { work: { decadePublished: ASC } }
     ) {
       group(field: { work: { decadePublished: SELECT } }) {

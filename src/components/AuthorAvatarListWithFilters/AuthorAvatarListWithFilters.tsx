@@ -12,7 +12,8 @@ import { SelectField } from "../SelectField";
 import { Spacer } from "../Spacer";
 import {
   avatarMaxWidthStyle,
-  gridStyle,
+  stickyHeaderStyle,
+  stickyListInfoStyle,
 } from "./AuthorAvatarListWithFilters.css";
 import {
   ActionType,
@@ -20,6 +21,69 @@ import {
   reducer,
   Sort,
 } from "./AuthorAvatarListWithFilters.reducer";
+
+function ListInfo({
+  visible,
+  total,
+}: {
+  visible: number;
+  total: number;
+}): JSX.Element {
+  let showingText;
+
+  if (visible > total) {
+    showingText = `Showing ${total} of ${total}`;
+  } else {
+    showingText = `Showing ${visible} of ${total.toLocaleString()}`;
+  }
+
+  return <Box>{showingText}</Box>;
+}
+
+function groupForItem(
+  item: Queries.AuthorAvatarListItemFragment,
+  sortValue: Sort
+): string {
+  switch (sortValue) {
+    case "name-asc":
+    case "name-desc": {
+      const letter = item.sortName.substring(0, 1);
+
+      if (letter.toLowerCase() == letter.toUpperCase()) {
+        return "#";
+      }
+
+      return item.sortName.substring(0, 1).toLocaleUpperCase();
+    }
+    // no default
+  }
+}
+
+function groupItems({
+  items,
+  sortValue,
+}: {
+  items: Queries.AuthorAvatarListItemFragment[];
+  sortValue: Sort;
+}): Map<string, Queries.AuthorAvatarListItemFragment[]> {
+  const groupedItems = new Map<
+    string,
+    Queries.AuthorAvatarListItemFragment[]
+  >();
+
+  items.map((item) => {
+    const group = groupForItem(item, sortValue);
+    let groupValue = groupedItems.get(group);
+
+    if (!groupValue) {
+      groupValue = [];
+      groupedItems.set(group, groupValue);
+    }
+    groupValue.push(item);
+  });
+
+  return groupedItems;
+}
 
 function Avatar({ author }: { author: Queries.AuthorAvatarListItemFragment }) {
   if (author.avatar && author.slug) {
@@ -45,7 +109,7 @@ function Avatar({ author }: { author: Queries.AuthorAvatarListItemFragment }) {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 16 16"
-        fill={backgroundColors.subtle}
+        fill={backgroundColors.canvas}
         width="100%"
       >
         <path
@@ -66,7 +130,7 @@ function AuthorName({
   if (author.slug) {
     return (
       <Link
-        to={`/shelf/authors/${author.slug}/`}
+        to={`/reviews/authors/${author.slug}/`}
         fontSize="medium"
         textAlign="center"
       >
@@ -95,15 +159,18 @@ function ListItem({
     <Box
       as="li"
       display="flex"
-      flexDirection={{ default: "row", tablet: "column" }}
+      flexDirection="row"
       columnGap={32}
-      backgroundColor={{ default: "zebraOdd", tablet: "zebraOff" }}
-      paddingX={{ default: "gutter", tablet: 0 }}
-      paddingY={{ default: 16, tablet: 0 }}
+      backgroundColor="zebraOdd"
+      paddingX="gutter"
+      paddingY={16}
       alignItems={{ default: "center" }}
     >
       <Avatar author={author} />
       <AuthorName author={author} />
+      <Box marginLeft="auto">
+        {author.reviewedWorkCount}&thinsp;/&thinsp;{author.workCount}
+      </Box>
     </Box>
   );
 }
@@ -120,6 +187,11 @@ export function AuthorAvatarListWithFilters({
     },
     initState
   );
+
+  const groupedItems = groupItems({
+    items: state.filteredAuthors,
+    sortValue: state.sortValue,
+  });
 
   return (
     <Layout>
@@ -177,25 +249,53 @@ export function AuthorAvatarListWithFilters({
                 <option value="name-desc">Name (Z &larr; A)</option>
               </SelectField>
             </Fieldset>
+            <Spacer axis="vertical" size={32} />
           </Box>
         </Box>
-        <Box display="flex" flexDirection="column" flexGrow={1}>
-          <Spacer axis="vertical" size={{ default: 32, tablet: 64 }} />
+        <Box name="list" display="flex" flexDirection="column" flexGrow={1}>
+          <Spacer axis="vertical" size={{ default: 0, desktop: 32 }} />
           <Box
-            as="ol"
-            data-testid="author-list"
-            paddingX={{
-              default: 0,
-              tablet: "pageMargin",
-              desktop: 0,
-            }}
-            className={gridStyle}
+            color="subtle"
+            paddingX="gutter"
+            textAlign="center"
+            backgroundColor="default"
+            lineHeight={36}
+            className={stickyListInfoStyle}
           >
-            {state.filteredAuthors.map((author) => {
-              return <ListItem key={author.name} author={author} />;
+            <ListInfo
+              visible={state.filteredAuthors.length}
+              total={state.allAuthors.length}
+            />
+          </Box>
+          <Box as="ol" data-testid="author-list">
+            {[...groupedItems].map(([group, items], index) => {
+              return (
+                <Box as="li" key={group} display="block">
+                  <Box
+                    fontSize="medium"
+                    style={{ zIndex: index + 100 }}
+                    paddingTop={{ default: 0, desktop: 16 }}
+                    backgroundColor="default"
+                    className={stickyHeaderStyle}
+                  >
+                    <Box
+                      backgroundColor="canvas"
+                      paddingY={8}
+                      paddingX={{ default: "gutter", desktop: 24 }}
+                    >
+                      {group}
+                    </Box>
+                  </Box>
+                  <Box as="ol" paddingX={0}>
+                    {items.map((author) => {
+                      return <ListItem key={author.name} author={author} />;
+                    })}
+                  </Box>
+                </Box>
+              );
             })}
           </Box>
-          <Spacer axis="vertical" size={128} />
+          <Spacer axis="vertical" size={64} />
         </Box>
       </Box>
     </Layout>
@@ -207,6 +307,8 @@ export const pageQuery = graphql`
     name
     slug
     sortName
+    reviewedWorkCount
+    workCount
     avatar {
       childImageSharp {
         gatsbyImageData(

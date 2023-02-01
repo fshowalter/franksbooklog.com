@@ -62,10 +62,10 @@ function groupForItem(
     }
     case "sequence-asc":
     case "sequence-desc": {
-      if (!item.dateFinished) {
+      if (!item.date) {
         return "";
       }
-      const match = item.dateFinished.match(/([A-Za-z]{3}) \d{1,2}, (\d{4})/);
+      const match = item.date.match(/([A-Za-z]{3}) \d{1,2}, (\d{4})/);
       if (!match) {
         return "Unknown";
       }
@@ -298,7 +298,7 @@ export function CoverListWithFilters({
                 <option value="title">Title</option>
                 <option value="grade-desc">Grade (Best First)</option>
                 <option value="grade-asc">Grade (Worst First)</option>
-                <option value="author-asc">Auther (A &rarr; Z)</option>
+                <option value="author-asc">Author (A &rarr; Z)</option>
                 <option value="author-desc">Author (Z &rarr; A)</option>
               </SelectField>
             </Fieldset>
@@ -360,7 +360,7 @@ export function CoverListWithFilters({
                           title={item.title}
                           year={item.yearPublished}
                           grade={item.grade}
-                          date={item.dateFinished}
+                          date={item.date}
                           kind={item.kind}
                           edition={item.edition}
                           slug={item.slug}
@@ -422,7 +422,7 @@ export interface ICoverListWithFiltersItem {
   sortTitle: string;
   yearFinished?: number;
   yearPublished: number;
-  dateFinished?: string;
+  date?: string;
   kind: string;
   edition?: string;
   grade?: string | null;

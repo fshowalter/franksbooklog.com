@@ -133,18 +133,7 @@ export const ReadingsJson = {
         );
       },
     },
-    dateStarted: {
-      type: "Date!",
-      extensions: {
-        dateformat: {},
-      },
-      resolve: (source: ReadingNode) => {
-        return source.timeline.reduce((prev, current) =>
-          prev.date < current.date ? prev : current
-        ).date;
-      },
-    },
-    dateFinished: {
+    date: {
       type: "Date!",
       extensions: {
         dateformat: {},
@@ -263,7 +252,7 @@ export const ReadingsJson = {
         },
       },
     },
-    yearFinished: {
+    year: {
       type: "Int!",
       resolve: (source: ReadingNode) => {
         const lastDate = source.timeline.reduce((prev, current) =>

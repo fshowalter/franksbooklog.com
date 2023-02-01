@@ -120,27 +120,6 @@ describe("/shelf", () => {
     expect(screen.getByTestId("cover-list")).toMatchSnapshot();
   });
 
-  it("can hide reviewed titles", async () => {
-    expect.hasAssertions();
-
-    render(<ShelfPage data={data} />);
-
-    await userEvent.click(screen.getByText("Hide Reviewed"));
-
-    expect(screen.getByTestId("cover-list")).toMatchSnapshot();
-  });
-
-  it("can show hidden reviewed titles", async () => {
-    expect.hasAssertions();
-
-    render(<ShelfPage data={data} />);
-
-    await userEvent.click(screen.getByText("Hide Reviewed"));
-    await userEvent.click(screen.getByText("Show Reviewed"));
-
-    expect(screen.getByTestId("cover-list")).toMatchSnapshot();
-  });
-
   it("can show more titles", async () => {
     expect.hasAssertions();
 
