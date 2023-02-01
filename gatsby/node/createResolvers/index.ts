@@ -1,7 +1,7 @@
 import { mostReadAuthorsQuery } from "./mostReadAuthorsQuery";
 import { readingsWithReviewsQuery } from "./readingsWithReviewsQuery";
+import { reviewedAuthorQuery } from "./reviewedAuthorQuery";
 import { reviewedWorkQuery } from "./reviewedWorkQuery";
-import { shelfAuthorQuery } from "./shelfAuthorQuery";
 
 import type { CreateResolversArgs } from "gatsby";
 
@@ -10,6 +10,6 @@ export function createResolvers({ createResolvers }: CreateResolversArgs) {
     readingsWithReviewsQuery,
     reviewedWorkQuery,
     mostReadAuthorsQuery,
-    shelfAuthorQuery,
+    reviewedAuthorQuery,
   ].forEach((resolver) => void createResolvers(resolver));
 }

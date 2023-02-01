@@ -1,3 +1,4 @@
+import { sortStringAsc } from "../../utils";
 import { Box } from "../Box";
 import { Layout } from "../Layout";
 import { PageTitle } from "../PageTitle";
@@ -13,7 +14,6 @@ export function StatsPage({
   readingCount,
   reviewCount,
   bookCount,
-  fromShelfCount,
   mostReadAuthors,
   gradeDistributions,
   kindDistributions,
@@ -24,7 +24,6 @@ export function StatsPage({
   readingCount: number;
   reviewCount: number;
   bookCount: number;
-  fromShelfCount: number;
   mostReadAuthors: readonly Queries.MostReadAuthorFragment[];
   gradeDistributions?: readonly IDistribution[];
   kindDistributions: readonly IDistribution[];
@@ -34,6 +33,53 @@ export function StatsPage({
   title: string;
   tagline: string;
 }): JSX.Element {
+  const sortedGradeDistributions = gradeDistributions
+    ? [...gradeDistributions].sort((a, b) => {
+        if (!a.name && !b.name) {
+          return 0;
+        }
+
+        if (!a.name) {
+          return -1;
+        }
+
+        if (!b.name) {
+          return 1;
+        }
+
+        if (a.name.length === 1 && b.name.length === 1) {
+          return sortStringAsc(a.name, b.name);
+        }
+
+        if (a.name.startsWith(b.name[0])) {
+          const aModifier = a.name[a.name.length - 1];
+          const bModifier = b.name[b.name.length - 1];
+
+          if (aModifier === bModifier) {
+            return 0;
+          }
+
+          if (aModifier === "+") {
+            return -1;
+          }
+
+          if (bModifier === "+") {
+            return 1;
+          }
+
+          if (aModifier === "-") {
+            return 1;
+          }
+
+          if (bModifier === "-") {
+            return -1;
+          }
+        }
+
+        return sortStringAsc(a.name, b.name);
+      })
+    : null;
+
   return (
     <Layout>
       <Box as="main">
@@ -65,18 +111,17 @@ export function StatsPage({
               readingCount={readingCount}
               reviewCount={reviewCount}
               bookCount={bookCount}
-              fromShelfCount={fromShelfCount}
             />
           </Box>
         </Box>
         <Box paddingX={{ default: 0, tablet: "gutter", desktop: "pageMargin" }}>
           <Spacer axis="vertical" size={32} />
           <MostReadAuthors authors={mostReadAuthors} />
-          {gradeDistributions && (
+          {sortedGradeDistributions && (
             <>
               <Spacer axis="vertical" size={32} />
               <DistributionTable
-                distributions={gradeDistributions}
+                distributions={sortedGradeDistributions}
                 title="Grade Distribution"
                 nameColumnLabel="Grade"
                 countColumnLabel="Reviews"

@@ -27,7 +27,7 @@ export const mostReadAuthorsQuery = {
         const { year } = args;
 
         const filter = year
-          ? { query: { filter: { yearFinished: { eq: year } } } }
+          ? { query: { filter: { year: { eq: year } } } }
           : {};
 
         const { entries: readings } =

@@ -20,7 +20,6 @@ export const AuthorsJson = {
   fields: {
     name: "String!",
     sortName: "String!",
-    shelf: "Boolean!",
     key: "String!",
     slug: {
       type: "String",
@@ -30,15 +29,15 @@ export const AuthorsJson = {
         context: GatsbyNodeContext,
         info: GatsbyResolveInfo
       ) => {
-        const reviewedShelfWorkCount = await resolveFieldForNode<number>(
-          "reviewedShelfWorkCount",
+        const reviewedWorkCount = await resolveFieldForNode<number>(
+          "reviewedWorkCount",
           source,
           context,
           info,
           args
         );
 
-        if (!reviewedShelfWorkCount || reviewedShelfWorkCount === 0) {
+        if (!reviewedWorkCount || reviewedWorkCount === 0) {
           return null;
         }
 
@@ -122,7 +121,7 @@ export const AuthorsJson = {
         return totalCount();
       },
     },
-    reviewedShelfWorkCount: {
+    reviewedWorkCount: {
       type: `Int!`,
       resolve: async (
         source: AuthorNode,
@@ -140,7 +139,6 @@ export const AuthorsJson = {
                   },
                 },
               },
-              shelf: { eq: true },
               review: { id: { ne: null } },
             },
           },
@@ -149,7 +147,7 @@ export const AuthorsJson = {
         return await totalCount();
       },
     },
-    shelfWorkCount: {
+    workCount: {
       type: `Int!`,
       resolve: async (
         source: AuthorNode,
@@ -167,7 +165,6 @@ export const AuthorsJson = {
                   },
                 },
               },
-              shelf: { eq: true },
             },
           },
         });

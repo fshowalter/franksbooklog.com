@@ -11,10 +11,11 @@ import { resolveFieldForNode } from "../utils/resolveFieldForNode";
 import { ReadingNode } from "./ReadingsJson";
 
 export interface WorkNode extends GatsbyNode {
-  slug: string;
+  key: string;
   includedWorks: string[];
   shelf: boolean;
   yearPublished: number;
+  slug: string;
 }
 
 export const WorksJson = {
@@ -25,7 +26,7 @@ export const WorksJson = {
     subtitle: "String",
     yearPublished: "Int!",
     sortTitle: "String!",
-    shelf: "Boolean!",
+    key: "String!",
     slug: {
       type: `String`,
       extensions: {
@@ -69,7 +70,7 @@ export const WorksJson = {
           type: SchemaNames.WorksJson,
           query: {
             filter: {
-              slug: {
+              key: {
                 in: source.includedWorks,
               },
             },
@@ -90,9 +91,12 @@ export const WorksJson = {
           type: SchemaNames.MarkdownRemark,
           query: {
             filter: {
+              kind: {
+                eq: "REVIEW",
+              },
               frontmatter: {
                 work_slug: {
-                  eq: source.slug,
+                  eq: source.key,
                 },
               },
             },
@@ -112,7 +116,7 @@ export const WorksJson = {
           query: {
             filter: {
               workSlug: {
-                eq: source.slug,
+                eq: source.key,
               },
             },
           },
@@ -134,7 +138,7 @@ export const WorksJson = {
           query: {
             filter: {
               absolutePath: {
-                eq: path.resolve(`./content/assets/covers/${source.slug}.png`),
+                eq: path.resolve(`./content/assets/covers/${source.key}.png`),
               },
             },
           },
@@ -144,11 +148,23 @@ export const WorksJson = {
           return cover;
         }
 
+        const slug = await resolveFieldForNode<string>(
+          "slug",
+          source,
+          context,
+          info,
+          args
+        );
+
+        if (!slug) {
+          return findDefaultCoverNode(context.nodeModel);
+        }
+
         const parentWork = await context.nodeModel.findOne<WorkNode>({
           type: SchemaNames.WorksJson,
           query: {
             filter: {
-              includedWorks: { elemMatch: { slug: { eq: source.slug } } },
+              includedWorks: { elemMatch: { key: { eq: slug } } },
             },
           },
         });

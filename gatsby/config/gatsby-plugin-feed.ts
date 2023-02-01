@@ -3,7 +3,7 @@ const query = `{
     limit: 25
   ) {
       excerpt
-      dateFinished
+      date
       sequence
       grade
       slug: workSlug
@@ -34,7 +34,7 @@ interface QueryResult {
 
 interface Reading {
   grade: string;
-  dateFinished: string;
+  date: string;
   sequence: number;
   slug: string;
   authors: {
@@ -96,7 +96,7 @@ function serialize({ query }: { query: QueryResult }) {
       title: `${reading.title} by ${reading.authors
         .map((author) => author.name)
         .join(", ")}`,
-      date: reading.dateFinished,
+      date: reading.date,
       url: `${query.site.siteMetadata.siteUrl}/reviews/${reading.slug}/`,
       guid: `${query.site.siteMetadata.siteUrl}/${reading.sequence}-${reading.slug}`,
       custom_elements: [

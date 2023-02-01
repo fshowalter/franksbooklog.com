@@ -28,12 +28,10 @@ export function StatsCallouts({
   readingCount,
   bookCount,
   reviewCount,
-  fromShelfCount,
 }: {
   readingCount: number;
   bookCount: number;
   reviewCount: number;
-  fromShelfCount: number;
 }): JSX.Element {
   return (
     <Box
@@ -46,7 +44,6 @@ export function StatsCallouts({
       <Callout label="Titles" stat={readingCount} />
       <Callout label="Books" stat={bookCount} />
       <Callout label="Reviews" stat={reviewCount} />
-      <Callout label="From Shelf" stat={fromShelfCount} />
     </Box>
   );
 }

@@ -5,6 +5,7 @@ import { HeadBuilder } from "../components/HeadBuilder";
 import { Link } from "../components/Link";
 import { PageTitle } from "../components/PageTitle";
 import { Spacer } from "../components/Spacer";
+import { foregroundColors } from "../styles/colors.css";
 
 export function Head(): JSX.Element {
   return (
@@ -64,9 +65,33 @@ export default function ReviewsPage({
         </p>
         <Spacer axis="vertical" size={16} />
         <p>
-          Peruse more <Link to="/stats/">reading stats</Link>.
+          More <Link to="/stats/">reading stats</Link>.
         </p>
-        <Spacer axis="vertical" size={16} />
+        <Spacer axis="vertical" size={32} />
+        <Box display="flex" justifyContent="center">
+          <Link
+            to="/reviews/authors"
+            display="flex"
+            columnGap={16}
+            boxShadow="borderAll"
+            paddingX={16}
+            paddingY={8}
+            borderRadius={8}
+            alignItems="center"
+            justifyContent="center"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill={foregroundColors.default}
+              width={20}
+              height={20}
+            >
+              <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z" />
+            </svg>
+            Browse Authors
+          </Link>
+        </Box>
       </Box>
     </CoverListWithFilters>
   );
@@ -106,7 +131,7 @@ export const pageQuery = graphql`
         grade
         slug: workSlug
         edition
-        dateFinished: dateFinished(formatString: "MMM D, YYYY")
+        date: date(formatString: "MMM D, YYYY")
         gradeValue
         title
         yearPublished
@@ -121,7 +146,7 @@ export const pageQuery = graphql`
       }
       editions: distinct(field: { edition: SELECT })
       publishedYears: distinct(field: { yearPublished: SELECT })
-      readYears: distinct(field: { yearFinished: SELECT })
+      readYears: distinct(field: { year: SELECT })
       kinds: distinct(field: { kind: SELECT })
       grades: distinct(field: { grade: SELECT })
     }

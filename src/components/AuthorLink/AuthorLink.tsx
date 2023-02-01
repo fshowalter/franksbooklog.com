@@ -27,7 +27,7 @@ export function AuthorLink({
   if (author.slug) {
     return (
       <Box {...rest}>
-        <Link to={`/shelf/authors/${author.slug}/`}>{author.name}</Link>
+        <Link to={`/reviews/authors/${author.slug}/`}>{author.name}</Link>
         {notes}
       </Box>
     );

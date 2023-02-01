@@ -4,7 +4,7 @@
 "subtitle": null,
 "yearPublished": "1999",
 "sortTitle": "Why We're in Vietnam",
-"slug": "why-were-in-vietnam-by-stephen-king",
+"key": "why-were-in-vietnam-by-stephen-king",
 "kind": "Novella",
 "includedWorks": [],
 "authors": [
@@ -12,15 +12,14 @@
 "key": "stephen-king",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "The Dead Zone",
 "subtitle": null,
 "yearPublished": "1979",
 "sortTitle": "Dead Zone",
-"slug": "the-dead-zone-by-stephen-king",
+"key": "the-dead-zone-by-stephen-king",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -28,15 +27,14 @@
 "key": "stephen-king",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Firestarter",
 "subtitle": null,
 "yearPublished": "1980",
 "sortTitle": "Firestarter",
-"slug": "firestarter-by-stephen-king",
+"key": "firestarter-by-stephen-king",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -44,15 +42,14 @@
 "key": "stephen-king",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Bite",
 "subtitle": null,
 "yearPublished": "1996",
 "sortTitle": "Bite",
-"slug": "bite-by-richard-laymon",
+"key": "bite-by-richard-laymon",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -60,15 +57,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "The Diving Girl",
 "subtitle": null,
 "yearPublished": "2005",
 "sortTitle": "Diving Girl",
-"slug": "the-diving-girl-by-richard-laymon",
+"key": "the-diving-girl-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -76,15 +72,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Joyce",
 "subtitle": null,
 "yearPublished": "1992",
 "sortTitle": "Joyce",
-"slug": "joyce-by-richard-laymon",
+"key": "joyce-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -92,15 +87,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Fight Club",
 "subtitle": null,
 "yearPublished": "1996",
 "sortTitle": "Fight Club",
-"slug": "fight-club-by-chuck-palahniuk",
+"key": "fight-club-by-chuck-palahniuk",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -108,15 +102,14 @@
 "key": "chuck-palahniuk",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "The Rules of Attraction",
 "subtitle": null,
 "yearPublished": "1987",
 "sortTitle": "Rules of Attraction",
-"slug": "the-rules-of-attraction-by-bret-easton-ellis",
+"key": "the-rules-of-attraction-by-bret-easton-ellis",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -124,15 +117,14 @@
 "key": "bret-easton-ellis",
 "notes": null
 }
-],
-"shelf": false
+]
 },
 {
 "title": "Carrie",
 "subtitle": null,
 "yearPublished": "1974",
 "sortTitle": "Carrie",
-"slug": "carrie-by-stephen-king",
+"key": "carrie-by-stephen-king",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -140,15 +132,14 @@
 "key": "stephen-king",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Draft No. 4",
 "subtitle": "On the Writing Process",
 "yearPublished": "2013",
 "sortTitle": "Draft No. 4: On the Writing Process",
-"slug": "draft-no-4-by-john-mcphee",
+"key": "draft-no-4-by-john-mcphee",
 "kind": "Nonfiction",
 "includedWorks": [],
 "authors": [
@@ -156,15 +147,14 @@
 "key": "john-mcphee",
 "notes": null
 }
-],
-"shelf": false
+]
 },
 {
 "title": "Blind Willie",
 "subtitle": null,
 "yearPublished": "1994",
 "sortTitle": "Blind Willie",
-"slug": "blind-willie-by-stephen-king",
+"key": "blind-willie-by-stephen-king",
 "kind": "Novella",
 "includedWorks": [],
 "authors": [
@@ -172,15 +162,14 @@
 "key": "stephen-king",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "The Woods Are Dark",
 "subtitle": null,
 "yearPublished": "1981",
 "sortTitle": "Woods Are Dark",
-"slug": "the-woods-are-dark-by-richard-laymon",
+"key": "the-woods-are-dark-by-richard-laymon",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -188,15 +177,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Beginner's Luck",
 "subtitle": null,
 "yearPublished": "1986",
 "sortTitle": "Beginner's Luck",
-"slug": "beginners-luck-by-richard-laymon",
+"key": "beginners-luck-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -204,15 +192,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "The Living Dead",
 "subtitle": null,
 "yearPublished": "2006",
 "sortTitle": "Living Dead",
-"slug": "the-living-dead-by-richard-laymon",
+"key": "the-living-dead-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -220,15 +207,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "The Last Hand",
 "subtitle": null,
 "yearPublished": "1985",
 "sortTitle": "Last Hand",
-"slug": "the-last-hand-by-richard-laymon",
+"key": "the-last-hand-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -236,15 +222,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Dracuson's Driver",
 "subtitle": null,
 "yearPublished": "1992",
 "sortTitle": "Dracuson's Driver",
-"slug": "dracusons-driver-by-richard-laymon",
+"key": "dracusons-driver-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -252,15 +237,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Madman Stan",
 "subtitle": null,
 "yearPublished": "1989",
 "sortTitle": "Madman Stan",
-"slug": "madman-stan-by-richard-laymon",
+"key": "madman-stan-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -268,15 +252,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Marathon",
 "subtitle": null,
 "yearPublished": "1985",
 "sortTitle": "Marathon",
-"slug": "marathon-by-richard-laymon",
+"key": "marathon-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -284,15 +267,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "The Worshipper",
 "subtitle": null,
 "yearPublished": "2004",
 "sortTitle": "Worshipper",
-"slug": "the-worshipper-by-richard-laymon",
+"key": "the-worshipper-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -300,15 +282,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "First Date",
 "subtitle": null,
 "yearPublished": "1997",
 "sortTitle": "First Date",
-"slug": "first-date-by-richard-laymon",
+"key": "first-date-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -316,15 +297,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "The Drawing of the Three",
 "subtitle": null,
 "yearPublished": "1987",
 "sortTitle": "Drawing of the Three",
-"slug": "the-drawing-of-the-three-by-stephen-king",
+"key": "the-drawing-of-the-three-by-stephen-king",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -332,15 +312,14 @@
 "key": "stephen-king",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Choke",
 "subtitle": null,
 "yearPublished": "2001",
 "sortTitle": "Choke",
-"slug": "choke-by-chuck-palahniuk",
+"key": "choke-by-chuck-palahniuk",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -348,15 +327,14 @@
 "key": "chuck-palahniuk",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "The Gunslinger",
 "subtitle": null,
 "yearPublished": "1982",
 "sortTitle": "Gunslinger",
-"slug": "the-gunslinger-by-stephen-king",
+"key": "the-gunslinger-by-stephen-king",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -364,15 +342,14 @@
 "key": "stephen-king",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "The Boy Who Loved \"The Twilight Zone\"",
 "subtitle": null,
 "yearPublished": "2000",
 "sortTitle": "Boy Who Loved \"The Twilight Zone\"",
-"slug": "the-boy-who-loved-the-twilight-zone-by-richard-laymon",
+"key": "the-boy-who-loved-the-twilight-zone-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -380,15 +357,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "The M.A.X. Muscle Plan",
 "subtitle": null,
 "yearPublished": "2012",
 "sortTitle": "The M.A.X. Muscle Plan",
-"slug": "the-max-muscle-plan-by-brad-schoenfeld",
+"key": "the-max-muscle-plan-by-brad-schoenfeld",
 "kind": "Nonfiction",
 "includedWorks": [],
 "authors": [
@@ -396,15 +372,14 @@
 "key": "brad-schoenfeld",
 "notes": null
 }
-],
-"shelf": false
+]
 },
 {
 "title": "The Mist",
 "subtitle": null,
 "yearPublished": "1980",
 "sortTitle": "Mist",
-"slug": "the-mist-by-stephen-king",
+"key": "the-mist-by-stephen-king",
 "kind": "Novella",
 "includedWorks": [],
 "authors": [
@@ -412,15 +387,14 @@
 "key": "stephen-king",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Funland",
 "subtitle": null,
 "yearPublished": "1989",
 "sortTitle": "Funland",
-"slug": "funland-by-richard-laymon",
+"key": "funland-by-richard-laymon",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -428,15 +402,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Blarney",
 "subtitle": null,
 "yearPublished": "1981",
 "sortTitle": "Blarney",
-"slug": "blarney-by-richard-laymon",
+"key": "blarney-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -444,15 +417,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "The Good Deed",
 "subtitle": null,
 "yearPublished": "1992",
 "sortTitle": "Good Deed",
-"slug": "the-good-deed-by-richard-laymon",
+"key": "the-good-deed-by-richard-laymon",
 "kind": "Novella",
 "includedWorks": [],
 "authors": [
@@ -460,15 +432,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Cut",
 "subtitle": null,
 "yearPublished": "1985",
 "sortTitle": "Cut",
-"slug": "cut-by-richard-laymon",
+"key": "cut-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -476,15 +447,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Darkness, Tell Us",
 "subtitle": null,
 "yearPublished": "1991",
 "sortTitle": "Darkness, Tell Us",
-"slug": "darkness-tell-us-by-richard-laymon",
+"key": "darkness-tell-us-by-richard-laymon",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -492,15 +462,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Nightmare Lake",
 "subtitle": null,
 "yearPublished": "1983",
 "sortTitle": "Nightmare Lake",
-"slug": "nightmare-lake-by-richard-laymon",
+"key": "nightmare-lake-by-richard-laymon",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -508,15 +477,14 @@
 "key": "richard-laymon",
 "notes": "as Carl Laymon"
 }
-],
-"shelf": true
+]
 },
 {
 "title": "The Trap",
 "subtitle": null,
 "yearPublished": "1985",
 "sortTitle": "Trap",
-"slug": "the-trap-by-richard-laymon",
+"key": "the-trap-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -524,15 +492,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Extreme Ownership",
 "subtitle": "How U.S. Navy SEALs Lead and Win",
 "yearPublished": "2015",
 "sortTitle": "Extreme Ownership: How U.S. Navy SEALs Lead and Win",
-"slug": "extreme-ownership-by-jocko-willink-leif-babin",
+"key": "extreme-ownership-by-jocko-willink-leif-babin",
 "kind": "Nonfiction",
 "includedWorks": [],
 "authors": [
@@ -544,15 +511,14 @@
 "key": "leif-babin",
 "notes": null
 }
-],
-"shelf": false
+]
 },
 {
 "title": "Beware!",
 "subtitle": null,
 "yearPublished": "1985",
 "sortTitle": "Beware!",
-"slug": "beware-by-richard-laymon",
+"key": "beware-by-richard-laymon",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -560,15 +526,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Triage",
 "subtitle": null,
 "yearPublished": "2001",
 "sortTitle": "Triage",
-"slug": "triage-by-richard-laymon",
+"key": "triage-by-richard-laymon",
 "kind": "Novella",
 "includedWorks": [],
 "authors": [
@@ -576,15 +541,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Survivor",
 "subtitle": null,
 "yearPublished": "1999",
 "sortTitle": "Survivor",
-"slug": "survivor-by-chuck-palahniuk",
+"key": "survivor-by-chuck-palahniuk",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -592,15 +556,14 @@
 "key": "chuck-palahniuk",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Resurrection Dreams",
 "subtitle": null,
 "yearPublished": "1988",
 "sortTitle": "Resurrection Dreams",
-"slug": "resurrection-dreams-by-richard-laymon",
+"key": "resurrection-dreams-by-richard-laymon",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -608,15 +571,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Insomnia",
 "subtitle": null,
 "yearPublished": "1994",
 "sortTitle": "Insomnia",
-"slug": "insomnia-by-stephen-king",
+"key": "insomnia-by-stephen-king",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -624,15 +586,14 @@
 "key": "stephen-king",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Fright Night",
 "subtitle": null,
 "yearPublished": "1985",
 "sortTitle": "Fright Night",
-"slug": "fright-night-by-john-skipp-craig-spector",
+"key": "fright-night-by-john-skipp-craig-spector",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -644,15 +605,14 @@
 "key": "craig-spector",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "The Girl Who Loved Tom Gordon",
 "subtitle": null,
 "yearPublished": "1999",
 "sortTitle": "Girl Who Loved Tom Gordon",
-"slug": "the-girl-who-loved-tom-gordon-by-stephen-king",
+"key": "the-girl-who-loved-tom-gordon-by-stephen-king",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -660,15 +620,14 @@
 "key": "stephen-king",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Oscar's Audition",
 "subtitle": null,
 "yearPublished": "1975",
 "sortTitle": "Oscar's Audition",
-"slug": "oscars-audition-by-richard-laymon",
+"key": "oscars-audition-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -676,15 +635,14 @@
 "key": "richard-laymon",
 "notes": "as Dick Kelly"
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Tread Softly",
 "subtitle": null,
 "yearPublished": "1987",
 "sortTitle": "Tread Softly",
-"slug": "tread-softly-by-richard-laymon",
+"key": "tread-softly-by-richard-laymon",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -692,15 +650,14 @@
 "key": "richard-laymon",
 "notes": "as Richard Kelly"
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Night Ride",
 "subtitle": null,
 "yearPublished": "1985",
 "sortTitle": "Night Ride",
-"slug": "night-ride-by-richard-laymon",
+"key": "night-ride-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -708,15 +665,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Rage",
 "subtitle": null,
 "yearPublished": "1976",
 "sortTitle": "Rage",
-"slug": "rage-by-stephen-king",
+"key": "rage-by-stephen-king",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -724,15 +680,14 @@
 "key": "stephen-king",
 "notes": "as Richard Bachman"
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Surfer Girl",
 "subtitle": null,
 "yearPublished": "2017",
 "sortTitle": "Surfer Girl",
-"slug": "surfer-girl-by-philip-fracassi",
+"key": "surfer-girl-by-philip-fracassi",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -740,15 +695,14 @@
 "key": "philip-fracassi",
 "notes": null
 }
-],
-"shelf": false
+]
 },
 {
 "title": "What Doesn't Kill Us",
 "subtitle": "How Freezing Water, Extreme Altitude, and Environmental Conditioning Will Renew Our Lost Evolutionary Strength",
 "yearPublished": "2017",
 "sortTitle": "What Doesn't Kill Us: How Freezing Water, Extreme Altitude, and Environmental Conditioning Will Renew Our Lost Evolutionary Strength",
-"slug": "what-doesnt-kill-us-by-scott-carney",
+"key": "what-doesnt-kill-us-by-scott-carney",
 "kind": "Nonfiction",
 "includedWorks": [],
 "authors": [
@@ -756,15 +710,14 @@
 "key": "scott-carney",
 "notes": null
 }
-],
-"shelf": false
+]
 },
 {
 "title": "The Eyes of the Dragon",
 "subtitle": null,
 "yearPublished": "1987",
 "sortTitle": "Eyes of the Dragon",
-"slug": "the-eyes-of-the-dragon-by-stephen-king",
+"key": "the-eyes-of-the-dragon-by-stephen-king",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -772,15 +725,14 @@
 "key": "stephen-king",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Flesh",
 "subtitle": null,
 "yearPublished": "1987",
 "sortTitle": "Flesh",
-"slug": "flesh-by-richard-laymon",
+"key": "flesh-by-richard-laymon",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -788,15 +740,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Dinker's Pond",
 "subtitle": null,
 "yearPublished": "1989",
 "sortTitle": "Dinker's Pond",
-"slug": "dinkers-pond-by-richard-laymon",
+"key": "dinkers-pond-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -804,15 +755,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "The Hangman",
 "subtitle": null,
 "yearPublished": "2000",
 "sortTitle": "Hangman",
-"slug": "the-hangman-by-richard-laymon",
+"key": "the-hangman-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -820,15 +770,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Cuts",
 "subtitle": null,
 "yearPublished": "1999",
 "sortTitle": "Cuts",
-"slug": "cuts-by-richard-laymon",
+"key": "cuts-by-richard-laymon",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -836,15 +785,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "The Night Creature",
 "subtitle": null,
 "yearPublished": "1986",
 "sortTitle": "Night Creature",
-"slug": "the-night-creature-by-richard-laymon",
+"key": "the-night-creature-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -852,15 +800,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "The Caller",
 "subtitle": null,
 "yearPublished": "1985",
 "sortTitle": "Caller",
-"slug": "the-caller-by-richard-laymon",
+"key": "the-caller-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -868,15 +815,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "It",
 "subtitle": null,
 "yearPublished": "1986",
 "sortTitle": "It",
-"slug": "it-by-stephen-king",
+"key": "it-by-stephen-king",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -884,15 +830,14 @@
 "key": "stephen-king",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Apt Pupil",
 "subtitle": null,
 "yearPublished": "1982",
 "sortTitle": "Apt Pupil",
-"slug": "apt-pupil-by-stephen-king",
+"key": "apt-pupil-by-stephen-king",
 "kind": "Novella",
 "includedWorks": [],
 "authors": [
@@ -900,15 +845,14 @@
 "key": "stephen-king",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Total Recall",
 "subtitle": "My Unbelievably True Life Story",
 "yearPublished": "2012",
 "sortTitle": "Total Recall: My Unbelievably True Life Story",
-"slug": "total-recall-by-arnold-schwarzenegger",
+"key": "total-recall-by-arnold-schwarzenegger",
 "kind": "Nonfiction",
 "includedWorks": [],
 "authors": [
@@ -916,15 +860,14 @@
 "key": "arnold-schwarzenegger",
 "notes": null
 }
-],
-"shelf": false
+]
 },
 {
 "title": "Barney's Bigfoot Museum",
 "subtitle": null,
 "yearPublished": "1981",
 "sortTitle": "Barney's Bigfoot Museum",
-"slug": "barneys-bigfoot-museum-by-richard-laymon",
+"key": "barneys-bigfoot-museum-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -932,15 +875,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Brother Iron, Sister Steel",
 "subtitle": null,
 "yearPublished": "2001",
 "sortTitle": "Brother Iron, Sister Steel",
-"slug": "brother-iron-sister-steel-by-dave-draper",
+"key": "brother-iron-sister-steel-by-dave-draper",
 "kind": "Nonfiction",
 "includedWorks": [],
 "authors": [
@@ -948,15 +890,14 @@
 "key": "dave-draper",
 "notes": null
 }
-],
-"shelf": false
+]
 },
 {
 "title": "Short Stories: Volume One",
 "subtitle": "The Mystery and Men's Magazines",
 "yearPublished": "2014",
 "sortTitle": "Short Stories: Volume One: The Mystery and Men's Magazines",
-"slug": "short-stories-volume-one-by-richard-laymon",
+"key": "short-stories-volume-one-by-richard-laymon",
 "kind": "Collection",
 "includedWorks": [
 "desert-pickup-by-richard-laymon",
@@ -979,15 +920,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Soft Construction of a Sunset",
 "subtitle": null,
 "yearPublished": "2017",
 "sortTitle": "Soft Construction of a Sunset",
-"slug": "soft-construction-of-a-sunset-by-philip-fracassi",
+"key": "soft-construction-of-a-sunset-by-philip-fracassi",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -995,15 +935,14 @@
 "key": "philip-fracassi",
 "notes": null
 }
-],
-"shelf": false
+]
 },
 {
 "title": "Body Rides",
 "subtitle": null,
 "yearPublished": "1996",
 "sortTitle": "Body Rides",
-"slug": "body-rides-by-richard-laymon",
+"key": "body-rides-by-richard-laymon",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -1011,15 +950,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "The Lonely One",
 "subtitle": null,
 "yearPublished": "1985",
 "sortTitle": "Lonely One",
-"slug": "the-lonely-one-by-richard-laymon",
+"key": "the-lonely-one-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -1027,15 +965,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "I'm Not a Criminal",
 "subtitle": null,
 "yearPublished": "1993",
 "sortTitle": "I'm Not a Criminal",
-"slug": "im-not-a-criminal-by-richard-laymon",
+"key": "im-not-a-criminal-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -1043,15 +980,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Come Out Tonight",
 "subtitle": null,
 "yearPublished": "1998",
 "sortTitle": "Come Out Tonight",
-"slug": "come-out-tonight-by-richard-laymon",
+"key": "come-out-tonight-by-richard-laymon",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -1059,15 +995,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Out Are the Lights and Other Tales",
 "subtitle": null,
 "yearPublished": "1993",
 "sortTitle": "Out Are the Lights and Other Tales",
-"slug": "out-are-the-lights-and-other-tales-by-richard-laymon",
+"key": "out-are-the-lights-and-other-tales-by-richard-laymon",
 "kind": "Collection",
 "includedWorks": [
 "out-are-the-lights-by-richard-laymon",
@@ -1082,15 +1017,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Lullaby",
 "subtitle": null,
 "yearPublished": "2002",
 "sortTitle": "Lullaby",
-"slug": "lullaby-by-chuck-palahniuk",
+"key": "lullaby-by-chuck-palahniuk",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -1098,15 +1032,14 @@
 "key": "chuck-palahniuk",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "The Lake",
 "subtitle": null,
 "yearPublished": "2004",
 "sortTitle": "Lake",
-"slug": "the-lake-by-richard-laymon",
+"key": "the-lake-by-richard-laymon",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -1114,15 +1047,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Invitation to Murder",
 "subtitle": null,
 "yearPublished": "1991",
 "sortTitle": "Invitation to Murder",
-"slug": "invitation-to-murder-by-richard-laymon",
+"key": "invitation-to-murder-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -1130,15 +1062,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Secret Window, Secret Garden",
 "subtitle": null,
 "yearPublished": "1990",
 "sortTitle": "Secret Window, Secret Garden",
-"slug": "secret-window-secret-garden-by-stephen-king",
+"key": "secret-window-secret-garden-by-stephen-king",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -1146,15 +1077,14 @@
 "key": "stephen-king",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Misery",
 "subtitle": null,
 "yearPublished": "1987",
 "sortTitle": "Misery",
-"slug": "misery-by-stephen-king",
+"key": "misery-by-stephen-king",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -1162,15 +1092,14 @@
 "key": "stephen-king",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "The Regulators",
 "subtitle": null,
 "yearPublished": "1995",
 "sortTitle": "Regulators",
-"slug": "the-regulators-by-stephen-king",
+"key": "the-regulators-by-stephen-king",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -1178,15 +1107,14 @@
 "key": "stephen-king",
 "notes": "as Richard Bachman"
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Living with a SEAL",
 "subtitle": "31 Days Training with the Toughest Man on the Planet",
 "yearPublished": "2015",
 "sortTitle": "Living with a SEAL: 31 Days Training with the Toughest Man on the Planet",
-"slug": "living-with-a-seal-by-jesse-itzler",
+"key": "living-with-a-seal-by-jesse-itzler",
 "kind": "Nonfiction",
 "includedWorks": [],
 "authors": [
@@ -1194,15 +1122,14 @@
 "key": "jesse-itzler",
 "notes": null
 }
-],
-"shelf": false
+]
 },
 {
 "title": "Cujo",
 "subtitle": null,
 "yearPublished": "1981",
 "sortTitle": "Cujo",
-"slug": "cujo-by-stephen-king",
+"key": "cujo-by-stephen-king",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -1210,15 +1137,14 @@
 "key": "stephen-king",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Thin Air",
 "subtitle": null,
 "yearPublished": "1986",
 "sortTitle": "Thin Air",
-"slug": "thin-air-by-richard-laymon",
+"key": "thin-air-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -1226,15 +1152,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Live Bait",
 "subtitle": null,
 "yearPublished": "1985",
 "sortTitle": "Live Bait",
-"slug": "live-bait-by-richard-laymon",
+"key": "live-bait-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -1242,15 +1167,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Once Upon a Halloween",
 "subtitle": null,
 "yearPublished": "2000",
 "sortTitle": "Once Upon a Halloween",
-"slug": "once-upon-a-halloween-by-richard-laymon",
+"key": "once-upon-a-halloween-by-richard-laymon",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -1258,15 +1182,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Prudence",
 "subtitle": null,
 "yearPublished": "2000",
 "sortTitle": "Prudence",
-"slug": "prudence-by-richard-laymon",
+"key": "prudence-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -1274,15 +1197,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Low Men in Yellow Coats",
 "subtitle": null,
 "yearPublished": "1999",
 "sortTitle": "Low Men in Yellow Coats",
-"slug": "low-men-in-yellow-coats-by-stephen-king",
+"key": "low-men-in-yellow-coats-by-stephen-king",
 "kind": "Novella",
 "includedWorks": [],
 "authors": [
@@ -1290,15 +1212,14 @@
 "key": "stephen-king",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "The Traveling Vampire Show",
 "subtitle": null,
 "yearPublished": "2000",
 "sortTitle": "Traveling Vampire Show",
-"slug": "the-traveling-vampire-show-by-richard-laymon",
+"key": "the-traveling-vampire-show-by-richard-laymon",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -1306,15 +1227,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Desperation",
 "subtitle": null,
 "yearPublished": "1996",
 "sortTitle": "Desperation",
-"slug": "desperation-by-stephen-king",
+"key": "desperation-by-stephen-king",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -1322,15 +1242,14 @@
 "key": "stephen-king",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "The 48 Laws of Power",
 "subtitle": null,
 "yearPublished": "1998",
 "sortTitle": "48 Laws of Power",
-"slug": "the-48-laws-of-power-by-robert-greene",
+"key": "the-48-laws-of-power-by-robert-greene",
 "kind": "Nonfiction",
 "includedWorks": [],
 "authors": [
@@ -1338,15 +1257,14 @@
 "key": "robert-greene",
 "notes": null
 }
-],
-"shelf": false
+]
 },
 {
 "title": "Night Show",
 "subtitle": null,
 "yearPublished": "1984",
 "sortTitle": "Night Show",
-"slug": "night-show-by-richard-laymon",
+"key": "night-show-by-richard-laymon",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -1354,15 +1272,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "After Midnight",
 "subtitle": null,
 "yearPublished": "1997",
 "sortTitle": "After Midnight",
-"slug": "after-midnight-by-richard-laymon",
+"key": "after-midnight-by-richard-laymon",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -1370,15 +1287,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "The Direct Approach",
 "subtitle": null,
 "yearPublished": "1977",
 "sortTitle": "Direct Approach",
-"slug": "the-direct-approach-by-richard-laymon",
+"key": "the-direct-approach-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -1386,15 +1302,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Casino Royale",
 "subtitle": null,
 "yearPublished": "1953",
 "sortTitle": "Casino Royale",
-"slug": "casino-royale-by-ian-fleming",
+"key": "casino-royale-by-ian-fleming",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -1402,15 +1317,14 @@
 "key": "ian-fleming",
 "notes": null
 }
-],
-"shelf": false
+]
 },
 {
 "title": "Stickman",
 "subtitle": null,
 "yearPublished": "1992",
 "sortTitle": "Stickman",
-"slug": "stickman-by-richard-laymon",
+"key": "stickman-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -1418,15 +1332,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Choppie",
 "subtitle": null,
 "yearPublished": "1999",
 "sortTitle": "Choppie",
-"slug": "choppie-by-richard-laymon",
+"key": "choppie-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -1434,15 +1347,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Double Date",
 "subtitle": null,
 "yearPublished": "2000",
 "sortTitle": "Double Date",
-"slug": "double-date-by-richard-laymon",
+"key": "double-date-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -1450,15 +1362,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "On Writing",
 "subtitle": "A Memoir of the Craft",
 "yearPublished": "2000",
 "sortTitle": "On Writing",
-"slug": "on-writing-by-stephen-king",
+"key": "on-writing-by-stephen-king",
 "kind": "Nonfiction",
 "includedWorks": [],
 "authors": [
@@ -1466,15 +1377,14 @@
 "key": "stephen-king",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Bad News",
 "subtitle": null,
 "yearPublished": "1989",
 "sortTitle": "Bad News",
-"slug": "bad-news-by-richard-laymon",
+"key": "bad-news-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -1482,15 +1392,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "The Cobra",
 "subtitle": null,
 "yearPublished": "1985",
 "sortTitle": "Cobra",
-"slug": "the-cobra-by-richard-laymon",
+"key": "the-cobra-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -1498,15 +1407,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Hawk Mountain",
 "subtitle": null,
 "yearPublished": "2022",
 "sortTitle": "Hawk Mountain",
-"slug": "hawk-mountain-by-conner-habib",
+"key": "hawk-mountain-by-conner-habib",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -1514,15 +1422,14 @@
 "key": "conner-habib",
 "notes": null
 }
-],
-"shelf": false
+]
 },
 {
 "title": "Dracula's Guest",
 "subtitle": null,
 "yearPublished": "1914",
 "sortTitle": "Dracula's Guest",
-"slug": "draculas-guest-by-bram-stoker",
+"key": "draculas-guest-by-bram-stoker",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -1530,15 +1437,14 @@
 "key": "bram-stoker",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Thinner",
 "subtitle": null,
 "yearPublished": "1984",
 "sortTitle": "Thinner",
-"slug": "thinner-by-stephen-king",
+"key": "thinner-by-stephen-king",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -1546,15 +1452,14 @@
 "key": "stephen-king",
 "notes": "as Richard Bachman"
 }
-],
-"shelf": true
+]
 },
 {
 "title": "The Champion",
 "subtitle": null,
 "yearPublished": "1978",
 "sortTitle": "Champion",
-"slug": "the-champion-by-richard-laymon",
+"key": "the-champion-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -1562,15 +1467,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Stranger than Fiction",
 "subtitle": "True Stories",
 "yearPublished": "2004",
 "sortTitle": "Stranger than Fiction: True Stories",
-"slug": "stranger-than-fiction-by-chuck-palahniuk",
+"key": "stranger-than-fiction-by-chuck-palahniuk",
 "kind": "Nonfiction",
 "includedWorks": [],
 "authors": [
@@ -1578,15 +1482,14 @@
 "key": "chuck-palahniuk",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Doctor Sleep",
 "subtitle": null,
 "yearPublished": "2013",
 "sortTitle": "Doctor Sleep",
-"slug": "doctor-sleep-by-stephen-king",
+"key": "doctor-sleep-by-stephen-king",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -1594,15 +1497,14 @@
 "key": "stephen-king",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "The Mask",
 "subtitle": null,
 "yearPublished": "1992",
 "sortTitle": "Mask",
-"slug": "the-mask-by-richard-laymon",
+"key": "the-mask-by-richard-laymon",
 "kind": "Novella",
 "includedWorks": [],
 "authors": [
@@ -1610,15 +1512,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Cured",
 "subtitle": "The Tale of Two Imaginary Boys",
 "yearPublished": "2016",
 "sortTitle": "Cured: The Tale of Two Imaginary Boys",
-"slug": "cured-by-lol-tolhurst",
+"key": "cured-by-lol-tolhurst",
 "kind": "Nonfiction",
 "includedWorks": [],
 "authors": [
@@ -1626,15 +1527,14 @@
 "key": "lol-tolhurst",
 "notes": null
 }
-],
-"shelf": false
+]
 },
 {
 "title": "In the Dark",
 "subtitle": null,
 "yearPublished": "1994",
 "sortTitle": "In the Dark",
-"slug": "in-the-dark-by-richard-laymon",
+"key": "in-the-dark-by-richard-laymon",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -1642,15 +1542,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "The Fur Coat",
 "subtitle": null,
 "yearPublished": "1994",
 "sortTitle": "Fur Coat",
-"slug": "the-fur-coat-by-richard-laymon",
+"key": "the-fur-coat-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -1658,15 +1557,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Among the Missing",
 "subtitle": null,
 "yearPublished": "1999",
 "sortTitle": "Among the Missing",
-"slug": "among-the-missing-by-richard-laymon",
+"key": "among-the-missing-by-richard-laymon",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -1674,15 +1572,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "The Stand",
 "subtitle": null,
 "yearPublished": "1978",
 "sortTitle": "Stand",
-"slug": "the-stand-by-stephen-king",
+"key": "the-stand-by-stephen-king",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -1690,15 +1587,14 @@
 "key": "stephen-king",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "The Tub",
 "subtitle": null,
 "yearPublished": "1991",
 "sortTitle": "Tub",
-"slug": "the-tub-by-richard-laymon",
+"key": "the-tub-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -1706,15 +1602,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "The Library Policeman",
 "subtitle": null,
 "yearPublished": "1990",
 "sortTitle": "Library Policeman",
-"slug": "the-library-policeman-by-stephen-king",
+"key": "the-library-policeman-by-stephen-king",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -1722,15 +1617,14 @@
 "key": "stephen-king",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Out of the Woods",
 "subtitle": null,
 "yearPublished": "1975",
 "sortTitle": "Out of the Woods",
-"slug": "out-of-the-woods-by-richard-laymon",
+"key": "out-of-the-woods-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -1738,15 +1632,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "The Dark Half",
 "subtitle": null,
 "yearPublished": "1989",
 "sortTitle": "Dark Half",
-"slug": "the-dark-half-by-stephen-king",
+"key": "the-dark-half-by-stephen-king",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -1754,15 +1647,14 @@
 "key": "stephen-king",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Saving Grace",
 "subtitle": null,
 "yearPublished": "1991",
 "sortTitle": "Saving Grace",
-"slug": "saving-grace-by-richard-laymon",
+"key": "saving-grace-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -1770,15 +1662,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Halloween Hunt",
 "subtitle": null,
 "yearPublished": "1987",
 "sortTitle": "Halloween Hunt",
-"slug": "halloween-hunt-by-richard-laymon",
+"key": "halloween-hunt-by-richard-laymon",
 "kind": "Novella",
 "includedWorks": [],
 "authors": [
@@ -1786,15 +1677,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "The Postman Always Rings Twice",
 "subtitle": null,
 "yearPublished": "1934",
 "sortTitle": "Postman Always Rings Twice",
-"slug": "the-postman-always-rings-twice-by-james-m-cain",
+"key": "the-postman-always-rings-twice-by-james-m-cain",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -1802,15 +1692,14 @@
 "key": "james-m-cain",
 "notes": null
 }
-],
-"shelf": false
+]
 },
 {
 "title": "Night in the Lonesome October",
 "subtitle": null,
 "yearPublished": "2001",
 "sortTitle": "Night in the Lonesome October",
-"slug": "night-in-the-lonesome-october-by-richard-laymon",
+"key": "night-in-the-lonesome-october-by-richard-laymon",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -1818,15 +1707,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Paying Joe Back",
 "subtitle": null,
 "yearPublished": "1975",
 "sortTitle": "Paying Joe Back",
-"slug": "paying-joe-back-by-richard-laymon",
+"key": "paying-joe-back-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -1834,15 +1722,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "I Will Find You",
 "subtitle": "Solving Killer Cases from My Life Fighting Crime",
 "yearPublished": "2017",
 "sortTitle": "I Will Find You: Solving Killer Cases from My Life Fighting Crime",
-"slug": "i-will-find-you-by-joe-kenda",
+"key": "i-will-find-you-by-joe-kenda",
 "kind": "Nonfiction",
 "includedWorks": [],
 "authors": [
@@ -1850,15 +1737,14 @@
 "key": "joe-kenda",
 "notes": null
 }
-],
-"shelf": false
+]
 },
 {
 "title": "Consider This",
 "subtitle": "Moments in My Writing Life After Which Everything Was Different",
 "yearPublished": "2020",
 "sortTitle": "Consider This: Moments in My Writing Life After Which Everything Was Different",
-"slug": "consider-this-by-chuck-palahniuk",
+"key": "consider-this-by-chuck-palahniuk",
 "kind": "Nonfiction",
 "includedWorks": [],
 "authors": [
@@ -1866,15 +1752,14 @@
 "key": "chuck-palahniuk",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Rita Hayworth and Shawshank Redemption",
 "subtitle": null,
 "yearPublished": "1982",
 "sortTitle": "Rita Hayworth and Shawshank Redemption",
-"slug": "rita-hayworth-and-shawshank-redemption-by-stephen-king",
+"key": "rita-hayworth-and-shawshank-redemption-by-stephen-king",
 "kind": "Novella",
 "includedWorks": [],
 "authors": [
@@ -1882,15 +1767,14 @@
 "key": "stephen-king",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Mandala",
 "subtitle": null,
 "yearPublished": "2017",
 "sortTitle": "Mandala",
-"slug": "mandala-by-philip-fracassi",
+"key": "mandala-by-philip-fracassi",
 "kind": "Novella",
 "includedWorks": [],
 "authors": [
@@ -1898,15 +1782,14 @@
 "key": "philip-fracassi",
 "notes": null
 }
-],
-"shelf": false
+]
 },
 {
 "title": "Finders Keepers",
 "subtitle": null,
 "yearPublished": "1985",
 "sortTitle": "Finders Keepers",
-"slug": "finders-keepers-by-richard-laymon",
+"key": "finders-keepers-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -1914,15 +1797,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Mother",
 "subtitle": null,
 "yearPublished": "2015",
 "sortTitle": "Mother",
-"slug": "mother-by-philip-fracassi",
+"key": "mother-by-philip-fracassi",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -1930,15 +1812,14 @@
 "key": "philip-fracassi",
 "notes": null
 }
-],
-"shelf": false
+]
 },
 {
 "title": "Altar",
 "subtitle": null,
 "yearPublished": "2016",
 "sortTitle": "Altar",
-"slug": "altar-by-philip-fracassi",
+"key": "altar-by-philip-fracassi",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -1946,15 +1827,14 @@
 "key": "philip-fracassi",
 "notes": null
 }
-],
-"shelf": false
+]
 },
 {
 "title": "Amara",
 "subtitle": null,
 "yearPublished": "2003",
 "sortTitle": "Amara",
-"slug": "amara-by-richard-laymon",
+"key": "amara-by-richard-laymon",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -1962,15 +1842,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Hearts in Atlantis",
 "subtitle": null,
 "yearPublished": "1999",
 "sortTitle": "Hearts in Atlantis",
-"slug": "hearts-in-atlantis-by-stephen-king",
+"key": "hearts-in-atlantis-by-stephen-king",
 "kind": "Novella",
 "includedWorks": [],
 "authors": [
@@ -1978,15 +1857,14 @@
 "key": "stephen-king",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "The Wilds",
 "subtitle": null,
 "yearPublished": "1998",
 "sortTitle": "Wilds",
-"slug": "the-wilds-by-richard-laymon",
+"key": "the-wilds-by-richard-laymon",
 "kind": "Novella",
 "includedWorks": [],
 "authors": [
@@ -1994,15 +1872,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Gerald's Game",
 "subtitle": null,
 "yearPublished": "1992",
 "sortTitle": "Gerald's Game",
-"slug": "geralds-game-by-stephen-king",
+"key": "geralds-game-by-stephen-king",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -2010,15 +1887,14 @@
 "key": "stephen-king",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "A Good Cigar is a Smoke",
 "subtitle": null,
 "yearPublished": "1976",
 "sortTitle": "Good Cigar is a Smoke",
-"slug": "a-good-cigar-is-a-smoke-by-richard-laymon",
+"key": "a-good-cigar-is-a-smoke-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -2026,15 +1902,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "The Hunted",
 "subtitle": null,
 "yearPublished": "1997",
 "sortTitle": "Hunted",
-"slug": "the-hunted-by-richard-laymon",
+"key": "the-hunted-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -2042,15 +1917,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "The Horse Thief",
 "subtitle": null,
 "yearPublished": "2017",
 "sortTitle": "Horse Thief",
-"slug": "the-horse-thief-by-philip-fracassi",
+"key": "the-horse-thief-by-philip-fracassi",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -2058,15 +1932,14 @@
 "key": "philip-fracassi",
 "notes": null
 }
-],
-"shelf": false
+]
 },
 {
 "title": "Less Than Zero",
 "subtitle": null,
 "yearPublished": "1985",
 "sortTitle": "Less Than Zero",
-"slug": "less-than-zero-by-bret-easton-ellis",
+"key": "less-than-zero-by-bret-easton-ellis",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -2074,15 +1947,14 @@
 "key": "bret-easton-ellis",
 "notes": null
 }
-],
-"shelf": false
+]
 },
 {
 "title": "The Lawmen",
 "subtitle": null,
 "yearPublished": "1983",
 "sortTitle": "Lawmen",
-"slug": "the-lawmen-by-richard-laymon",
+"key": "the-lawmen-by-richard-laymon",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -2090,15 +1962,14 @@
 "key": "richard-laymon",
 "notes": "as Lee Davis Willoughby"
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Rose Madder",
 "subtitle": null,
 "yearPublished": "1995",
 "sortTitle": "Rose Madder",
-"slug": "rose-madder-by-stephen-king",
+"key": "rose-madder-by-stephen-king",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -2106,15 +1977,14 @@
 "key": "stephen-king",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Phil the Vampire",
 "subtitle": null,
 "yearPublished": "1995",
 "sortTitle": "Phil the Vampire",
-"slug": "phil-the-vampire-by-richard-laymon",
+"key": "phil-the-vampire-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -2122,15 +1992,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "'Salem's Lot",
 "subtitle": null,
 "yearPublished": "1975",
 "sortTitle": "'Salem's Lot",
-"slug": "salems-lot-by-stephen-king",
+"key": "salems-lot-by-stephen-king",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -2138,15 +2007,14 @@
 "key": "stephen-king",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Savage",
 "subtitle": "From Whitechapel to the Wild West on the Track of Jack the Ripper",
 "yearPublished": "1993",
 "sortTitle": "Savage: From Whitechapel to the Wild West on the Track of Jack the Ripper",
-"slug": "savage-by-richard-laymon",
+"key": "savage-by-richard-laymon",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -2154,15 +2022,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "The Cabin in the Woods",
 "subtitle": null,
 "yearPublished": "2002",
 "sortTitle": "Cabin in the Woods",
-"slug": "the-cabin-in-the-woods-by-richard-laymon",
+"key": "the-cabin-in-the-woods-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -2170,15 +2037,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "A Stranger's Arms",
 "subtitle": null,
 "yearPublished": "1984",
 "sortTitle": "Stranger's Arms",
-"slug": "a-strangers-arms-by-richard-laymon",
+"key": "a-strangers-arms-by-richard-laymon",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -2186,15 +2052,14 @@
 "key": "richard-laymon",
 "notes": "as Carla Laymon"
 }
-],
-"shelf": true
+]
 },
 {
 "title": "The Cellar",
 "subtitle": null,
 "yearPublished": "1980",
 "sortTitle": "Cellar, The",
-"slug": "the-cellar-by-richard-laymon",
+"key": "the-cellar-by-richard-laymon",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -2202,15 +2067,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Diary",
 "subtitle": null,
 "yearPublished": "2003",
 "sortTitle": "Diary",
-"slug": "diary-by-chuck-palahniuk",
+"key": "diary-by-chuck-palahniuk",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -2218,15 +2082,14 @@
 "key": "chuck-palahniuk",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "The Secret History",
 "subtitle": null,
 "yearPublished": "1992",
 "sortTitle": "Secret History",
-"slug": "the-secret-history-by-donna-tartt",
+"key": "the-secret-history-by-donna-tartt",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -2234,15 +2097,14 @@
 "key": "donna-tartt",
 "notes": null
 }
-],
-"shelf": false
+]
 },
 {
 "title": "The Hearse",
 "subtitle": null,
 "yearPublished": "2004",
 "sortTitle": "Hearse",
-"slug": "the-hearse-by-richard-laymon",
+"key": "the-hearse-by-richard-laymon",
 "kind": "Novella",
 "includedWorks": [],
 "authors": [
@@ -2250,15 +2112,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "No Sanctuary",
 "subtitle": null,
 "yearPublished": "2001",
 "sortTitle": "No Sanctuary",
-"slug": "no-sanctuary-by-richard-laymon",
+"key": "no-sanctuary-by-richard-laymon",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -2266,15 +2127,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Fiends",
 "subtitle": null,
 "yearPublished": "1997",
 "sortTitle": "Fiends",
-"slug": "fiends-by-richard-laymon",
+"key": "fiends-by-richard-laymon",
 "kind": "Novella",
 "includedWorks": [],
 "authors": [
@@ -2282,15 +2142,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "One Rainy Night",
 "subtitle": null,
 "yearPublished": "1991",
 "sortTitle": "One Rainy Night",
-"slug": "one-rainy-night-by-richard-laymon",
+"key": "one-rainy-night-by-richard-laymon",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -2298,15 +2157,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Blood Games",
 "subtitle": null,
 "yearPublished": "1992",
 "sortTitle": "Blood Games",
-"slug": "blood-games-by-richard-laymon",
+"key": "blood-games-by-richard-laymon",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -2314,15 +2172,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Wizard and Glass",
 "subtitle": null,
 "yearPublished": "1997",
 "sortTitle": "Wizard and Glass",
-"slug": "wizard-and-glass-by-stephen-king",
+"key": "wizard-and-glass-by-stephen-king",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -2330,15 +2187,14 @@
 "key": "stephen-king",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Christine",
 "subtitle": null,
 "yearPublished": "1983",
 "sortTitle": "Christine",
-"slug": "christine-by-stephen-king",
+"key": "christine-by-stephen-king",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -2346,15 +2202,14 @@
 "key": "stephen-king",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Cycle of the Werewolf",
 "subtitle": null,
 "yearPublished": "1985",
 "sortTitle": "Cycle of the Werewolf",
-"slug": "cycle-of-the-werewolf-by-stephen-king",
+"key": "cycle-of-the-werewolf-by-stephen-king",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -2362,15 +2217,14 @@
 "key": "stephen-king",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "The Hunt",
 "subtitle": null,
 "yearPublished": "1989",
 "sortTitle": "Hunt",
-"slug": "the-hunt-by-richard-laymon",
+"key": "the-hunt-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -2378,15 +2232,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Is This Anything?",
 "subtitle": null,
 "yearPublished": "2020",
 "sortTitle": "Is This Anything?",
-"slug": "is-this-anything-by-jerry-seinfeld",
+"key": "is-this-anything-by-jerry-seinfeld",
 "kind": "Nonfiction",
 "includedWorks": [],
 "authors": [
@@ -2394,15 +2247,14 @@
 "key": "jerry-seinfeld",
 "notes": null
 }
-],
-"shelf": false
+]
 },
 {
 "title": "Churchill",
 "subtitle": "Walking with Destiny",
 "yearPublished": "2018",
 "sortTitle": "Churchill: Walking with Destiny",
-"slug": "churchill-by-andrew-roberts",
+"key": "churchill-by-andrew-roberts",
 "kind": "Nonfiction",
 "includedWorks": [],
 "authors": [
@@ -2410,15 +2262,14 @@
 "key": "andrew-roberts",
 "notes": null
 }
-],
-"shelf": false
+]
 },
 {
 "title": "The Rise of Theodore Roosevelt",
 "subtitle": null,
 "yearPublished": "1979",
 "sortTitle": "Rise of Theodore Roosevelt",
-"slug": "the-rise-of-theodore-roosevelt-by-edmund-morris",
+"key": "the-rise-of-theodore-roosevelt-by-edmund-morris",
 "kind": "Nonfiction",
 "includedWorks": [],
 "authors": [
@@ -2426,15 +2277,14 @@
 "key": "edmund-morris",
 "notes": null
 }
-],
-"shelf": false
+]
 },
 {
 "title": "Roadside Pickup",
 "subtitle": null,
 "yearPublished": "1974",
 "sortTitle": "Roadside Pickup",
-"slug": "roadside-pickup-by-richard-laymon",
+"key": "roadside-pickup-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -2442,15 +2292,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Wishbone",
 "subtitle": null,
 "yearPublished": "1989",
 "sortTitle": "Wishbone",
-"slug": "wishbone-by-richard-laymon",
+"key": "wishbone-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -2458,15 +2307,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Hammerhead",
 "subtitle": null,
 "yearPublished": "2001",
 "sortTitle": "Hammerhead",
-"slug": "hammerhead-by-richard-laymon",
+"key": "hammerhead-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -2474,15 +2322,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Island",
 "subtitle": null,
 "yearPublished": "1991",
 "sortTitle": "Island",
-"slug": "island-by-richard-laymon",
+"key": "island-by-richard-laymon",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -2490,15 +2337,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "The Baby Farmer",
 "subtitle": null,
 "yearPublished": "2017",
 "sortTitle": "Baby Farmer",
-"slug": "the-baby-farmer-by-philip-fracassi",
+"key": "the-baby-farmer-by-philip-fracassi",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -2506,15 +2352,14 @@
 "key": "philip-fracassi",
 "notes": null
 }
-],
-"shelf": false
+]
 },
 {
 "title": "Coffin",
 "subtitle": null,
 "yearPublished": "2017",
 "sortTitle": "Coffin",
-"slug": "coffin-by-philip-fracassi",
+"key": "coffin-by-philip-fracassi",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -2522,15 +2367,14 @@
 "key": "philip-fracassi",
 "notes": null
 }
-],
-"shelf": false
+]
 },
 {
 "title": "The Breathing Method",
 "subtitle": null,
 "yearPublished": "1982",
 "sortTitle": "Breathing Method",
-"slug": "the-breathing-method-by-stephen-king",
+"key": "the-breathing-method-by-stephen-king",
 "kind": "Novella",
 "includedWorks": [],
 "authors": [
@@ -2538,15 +2382,14 @@
 "key": "stephen-king",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Quake",
 "subtitle": null,
 "yearPublished": "1995",
 "sortTitle": "Quake",
-"slug": "quake-by-richard-laymon",
+"key": "quake-by-richard-laymon",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -2554,15 +2397,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Kitty Litter",
 "subtitle": null,
 "yearPublished": "1992",
 "sortTitle": "Kitty Litter",
-"slug": "kitty-litter-by-richard-laymon",
+"key": "kitty-litter-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -2570,15 +2412,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Endless Night",
 "subtitle": null,
 "yearPublished": "1993",
 "sortTitle": "Endless Night",
-"slug": "endless-night-by-richard-laymon",
+"key": "endless-night-by-richard-laymon",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -2586,15 +2427,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Tell Me a Tale",
 "subtitle": null,
 "yearPublished": "2001",
 "sortTitle": "Tell Me a Tale",
-"slug": "tell-me-a-tale-by-richard-laymon",
+"key": "tell-me-a-tale-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -2602,15 +2442,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Boo",
 "subtitle": null,
 "yearPublished": "2000",
 "sortTitle": "Boo",
-"slug": "boo-by-richard-laymon",
+"key": "boo-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -2618,15 +2457,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Out Are the Lights",
 "subtitle": null,
 "yearPublished": "1982",
 "sortTitle": "Out Are the Lights",
-"slug": "out-are-the-lights-by-richard-laymon",
+"key": "out-are-the-lights-by-richard-laymon",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -2634,15 +2472,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "The Return",
 "subtitle": null,
 "yearPublished": "1986",
 "sortTitle": "Return",
-"slug": "the-return-by-richard-laymon",
+"key": "the-return-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -2650,15 +2487,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "The Talisman",
 "subtitle": null,
 "yearPublished": "1984",
 "sortTitle": "Talisman",
-"slug": "the-talisman-by-stephen-king-peter-straub",
+"key": "the-talisman-by-stephen-king-peter-straub",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -2670,15 +2506,14 @@
 "key": "peter-straub",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Your Secret Admirer",
 "subtitle": null,
 "yearPublished": "1980",
 "sortTitle": "Your Secret Admirer",
-"slug": "your-secret-admirer-by-richard-laymon",
+"key": "your-secret-admirer-by-richard-laymon",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -2686,15 +2521,14 @@
 "key": "richard-laymon",
 "notes": "as Carl Laymon"
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Invisible Monsters",
 "subtitle": null,
 "yearPublished": "1999",
 "sortTitle": "Invisible Monsters",
-"slug": "invisible-monsters-by-chuck-palahniuk",
+"key": "invisible-monsters-by-chuck-palahniuk",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -2702,15 +2536,14 @@
 "key": "chuck-palahniuk",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Bedtime Stories",
 "subtitle": null,
 "yearPublished": "2004",
 "sortTitle": "Bedtime Stories",
-"slug": "bedtime-stories-by-richard-laymon",
+"key": "bedtime-stories-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -2718,15 +2551,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Bag of Bones",
 "subtitle": null,
 "yearPublished": "1998",
 "sortTitle": "Bag of Bones",
-"slug": "bag-of-bones-by-stephen-king",
+"key": "bag-of-bones-by-stephen-king",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -2734,15 +2566,14 @@
 "key": "stephen-king",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Roadwork",
 "subtitle": null,
 "yearPublished": "1980",
 "sortTitle": "Roadwork",
-"slug": "roadwork-by-stephen-king",
+"key": "roadwork-by-stephen-king",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -2750,15 +2581,14 @@
 "key": "stephen-king",
 "notes": "as Richard Bachman"
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Friday Night in Beast House",
 "subtitle": null,
 "yearPublished": "2001",
 "sortTitle": "Friday Night in Beast House",
-"slug": "friday-night-in-beast-house-by-richard-laymon",
+"key": "friday-night-in-beast-house-by-richard-laymon",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -2766,15 +2596,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Shootout at Joe's",
 "subtitle": null,
 "yearPublished": "1984",
 "sortTitle": "Shootout at Joe's",
-"slug": "shootout-at-joes-by-richard-laymon",
+"key": "shootout-at-joes-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -2782,15 +2611,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "The Job",
 "subtitle": null,
 "yearPublished": "1998",
 "sortTitle": "Job",
-"slug": "the-job-by-richard-laymon",
+"key": "the-job-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -2798,15 +2626,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "The Big Sleep",
 "subtitle": null,
 "yearPublished": "1939",
 "sortTitle": "Big Sleep",
-"slug": "the-big-sleep-by-raymond-chandler",
+"key": "the-big-sleep-by-raymond-chandler",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -2814,15 +2641,14 @@
 "key": "raymond-chandler",
 "notes": null
 }
-],
-"shelf": false
+]
 },
 {
 "title": "Guts",
 "subtitle": null,
 "yearPublished": "1985",
 "sortTitle": "Guts",
-"slug": "guts-by-richard-laymon",
+"key": "guts-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -2830,15 +2656,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "The Glory Bus",
 "subtitle": null,
 "yearPublished": "2005",
 "sortTitle": "Glory Bus",
-"slug": "the-glory-bus-by-richard-laymon",
+"key": "the-glory-bus-by-richard-laymon",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -2846,15 +2671,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Into the Pit",
 "subtitle": null,
 "yearPublished": "2000",
 "sortTitle": "Into the Pit",
-"slug": "into-the-pit-by-richard-laymon",
+"key": "into-the-pit-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -2862,15 +2686,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Slit",
 "subtitle": null,
 "yearPublished": "1993",
 "sortTitle": "Slit",
-"slug": "slit-by-richard-laymon",
+"key": "slit-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -2878,15 +2701,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "The Stake",
 "subtitle": null,
 "yearPublished": "1990",
 "sortTitle": "Stake",
-"slug": "the-stake-by-richard-laymon",
+"key": "the-stake-by-richard-laymon",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -2894,15 +2716,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "The Beast",
 "subtitle": null,
 "yearPublished": "1986",
 "sortTitle": "Beast",
-"slug": "the-beast-by-richard-laymon",
+"key": "the-beast-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -2910,15 +2731,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Set the Boy Free",
 "subtitle": "The Autobiography",
 "yearPublished": "2016",
 "sortTitle": "Set the Boy Free: The Autobiography",
-"slug": "set-the-boy-free-by-johnny-marr",
+"key": "set-the-boy-free-by-johnny-marr",
 "kind": "Nonfiction",
 "includedWorks": [],
 "authors": [
@@ -2926,15 +2746,14 @@
 "key": "johnny-marr",
 "notes": null
 }
-],
-"shelf": false
+]
 },
 {
 "title": "The Shining",
 "subtitle": null,
 "yearPublished": "1977",
 "sortTitle": "Shining",
-"slug": "the-shining-by-stephen-king",
+"key": "the-shining-by-stephen-king",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -2942,15 +2761,14 @@
 "key": "stephen-king",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Spooked",
 "subtitle": null,
 "yearPublished": "1981",
 "sortTitle": "Spooked",
-"slug": "spooked-by-richard-laymon",
+"key": "spooked-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -2958,15 +2776,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "The Body",
 "subtitle": null,
 "yearPublished": "1982",
 "sortTitle": "Body",
-"slug": "the-body-by-stephen-king",
+"key": "the-body-by-stephen-king",
 "kind": "Novella",
 "includedWorks": [],
 "authors": [
@@ -2974,15 +2791,14 @@
 "key": "stephen-king",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "The Skeptics' Guide to the Universe",
 "subtitle": "How to Know What's Really Real in a World Increasingly Full of Fake",
 "yearPublished": "2018",
 "sortTitle": "Skeptics' Guide to the Universe: How to Know What's Really Real in a World Increasingly Full of Fake",
-"slug": "the-skeptics-guide-to-the-universe-by-steven-novella",
+"key": "the-skeptics-guide-to-the-universe-by-steven-novella",
 "kind": "Nonfiction",
 "includedWorks": [],
 "authors": [
@@ -2990,15 +2806,14 @@
 "key": "steven-novella",
 "notes": null
 }
-],
-"shelf": false
+]
 },
 {
 "title": "Live and Let Die",
 "subtitle": null,
 "yearPublished": "1954",
 "sortTitle": "Live and Let Die",
-"slug": "live-and-let-die-by-ian-fleming",
+"key": "live-and-let-die-by-ian-fleming",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -3006,15 +2821,14 @@
 "key": "ian-fleming",
 "notes": null
 }
-],
-"shelf": false
+]
 },
 {
 "title": "The Bleeder",
 "subtitle": null,
 "yearPublished": "1989",
 "sortTitle": "Bleeder",
-"slug": "the-bleeder-by-richard-laymon",
+"key": "the-bleeder-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -3022,15 +2836,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Cardiac Arrest",
 "subtitle": null,
 "yearPublished": "1984",
 "sortTitle": "Cardiac Arrest",
-"slug": "cardiac-arrest-by-richard-laymon",
+"key": "cardiac-arrest-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -3038,15 +2851,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Needful Things",
 "subtitle": null,
 "yearPublished": "1991",
 "sortTitle": "Needful Things",
-"slug": "needful-things-by-stephen-king",
+"key": "needful-things-by-stephen-king",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -3054,15 +2866,14 @@
 "key": "stephen-king",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "The Maiden",
 "subtitle": null,
 "yearPublished": "1995",
 "sortTitle": "Maiden",
-"slug": "the-maiden-by-richard-laymon",
+"key": "the-maiden-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -3070,15 +2881,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "The Tommyknockers",
 "subtitle": null,
 "yearPublished": "1987",
 "sortTitle": "Tommyknockers",
-"slug": "the-tommyknockers-by-stephen-king",
+"key": "the-tommyknockers-by-stephen-king",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -3086,15 +2896,14 @@
 "key": "stephen-king",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Herman",
 "subtitle": null,
 "yearPublished": "1996",
 "sortTitle": "Herman",
-"slug": "herman-by-richard-laymon",
+"key": "herman-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -3102,15 +2911,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Behold the Void",
 "subtitle": null,
 "yearPublished": "2017",
 "sortTitle": "Behold the Void",
-"slug": "behold-the-void-by-philip-fracassi",
+"key": "behold-the-void-by-philip-fracassi",
 "kind": "Collection",
 "includedWorks": [
 "soft-construction-of-a-sunset-by-philip-fracassi",
@@ -3128,15 +2936,14 @@
 "key": "philip-fracassi",
 "notes": null
 }
-],
-"shelf": false
+]
 },
 {
 "title": "Special",
 "subtitle": null,
 "yearPublished": "1991",
 "sortTitle": "Special",
-"slug": "special-by-richard-laymon",
+"key": "special-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -3144,15 +2951,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Night Games",
 "subtitle": null,
 "yearPublished": "1985",
 "sortTitle": "Night Games",
-"slug": "night-games-by-richard-laymon",
+"key": "night-games-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -3160,15 +2966,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "The Running Man",
 "subtitle": null,
 "yearPublished": "1981",
 "sortTitle": "Running Man",
-"slug": "the-running-man-by-stephen-king",
+"key": "the-running-man-by-stephen-king",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -3176,15 +2981,14 @@
 "key": "stephen-king",
 "notes": "as Richard Bachman"
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Immediate Opening",
 "subtitle": null,
 "yearPublished": "1976",
 "sortTitle": "Immediate Opening",
-"slug": "immediate-opening-by-richard-laymon",
+"key": "immediate-opening-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -3192,15 +2996,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "The Beast House",
 "subtitle": null,
 "yearPublished": "1986",
 "sortTitle": "Beast House",
-"slug": "the-beast-house-by-richard-laymon",
+"key": "the-beast-house-by-richard-laymon",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -3208,15 +3011,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "The Midnight Tour",
 "subtitle": null,
 "yearPublished": "1998",
 "sortTitle": "Midnight Tour",
-"slug": "the-midnight-tour-by-richard-laymon",
+"key": "the-midnight-tour-by-richard-laymon",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -3224,15 +3026,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "The Long Walk",
 "subtitle": null,
 "yearPublished": "1978",
 "sortTitle": "Long Walk",
-"slug": "the-long-walk-by-stephen-king",
+"key": "the-long-walk-by-stephen-king",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -3240,15 +3041,14 @@
 "key": "stephen-king",
 "notes": "as Richard Bachman"
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Mop-Up",
 "subtitle": null,
 "yearPublished": "1989",
 "sortTitle": "Mop-Up",
-"slug": "mop-up-by-richard-laymon",
+"key": "mop-up-by-richard-laymon",
 "kind": "Novella",
 "includedWorks": [],
 "authors": [
@@ -3256,15 +3056,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Allhallows Eve",
 "subtitle": null,
 "yearPublished": "1986",
 "sortTitle": "Allhallows Eve",
-"slug": "allhallows-eve-by-richard-laymon",
+"key": "allhallows-eve-by-richard-laymon",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -3272,15 +3071,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Midnight's Lair",
 "subtitle": null,
 "yearPublished": "1988",
 "sortTitle": "Midnight's Lair",
-"slug": "midnights-lair-by-richard-laymon",
+"key": "midnights-lair-by-richard-laymon",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -3288,15 +3086,14 @@
 "key": "richard-laymon",
 "notes": "as Richard Kelly"
 }
-],
-"shelf": true
+]
 },
 {
 "title": "The Waste Lands",
 "subtitle": null,
 "yearPublished": "1991",
 "sortTitle": "Waste Lands",
-"slug": "the-waste-lands-by-stephen-king",
+"key": "the-waste-lands-by-stephen-king",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -3304,15 +3101,14 @@
 "key": "stephen-king",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "About Face",
 "subtitle": "The Odyssey of an American Warrior",
 "yearPublished": "1989",
 "sortTitle": "About Face: The Odyssey of an American Warrior",
-"slug": "about-face-by-david-h-hackworth-julie-sherman",
+"key": "about-face-by-david-h-hackworth-julie-sherman",
 "kind": "Nonfiction",
 "includedWorks": [],
 "authors": [
@@ -3324,15 +3120,14 @@
 "key": "julie-sherman",
 "notes": null
 }
-],
-"shelf": false
+]
 },
 {
 "title": "Ten Bucks Says You Won't",
 "subtitle": null,
 "yearPublished": "2002",
 "sortTitle": "Ten Bucks Says You Won't",
-"slug": "ten-bucks-says-you-wont-by-richard-laymon",
+"key": "ten-bucks-says-you-wont-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -3340,15 +3135,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Dawson's City",
 "subtitle": null,
 "yearPublished": "1984",
 "sortTitle": "Dawson's City",
-"slug": "dawsons-city-by-richard-laymon",
+"key": "dawsons-city-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -3356,15 +3150,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Can't Hurt Me",
 "subtitle": "Master Your Mind and Defy the Odds",
 "yearPublished": "2018",
 "sortTitle": "Can't Hurt Me: Master Your Mind and Defy the Odds",
-"slug": "cant-hurt-me-by-david-goggins",
+"key": "cant-hurt-me-by-david-goggins",
 "kind": "Nonfiction",
 "includedWorks": [],
 "authors": [
@@ -3372,15 +3165,14 @@
 "key": "david-goggins",
 "notes": null
 }
-],
-"shelf": false
+]
 },
 {
 "title": "The Mirror",
 "subtitle": null,
 "yearPublished": "2011",
 "sortTitle": "Mirror",
-"slug": "the-mirror-by-richard-laymon",
+"key": "the-mirror-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -3388,15 +3180,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Eats",
 "subtitle": null,
 "yearPublished": "1985",
 "sortTitle": "Eats",
-"slug": "eats-by-richard-laymon",
+"key": "eats-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -3404,15 +3195,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Heavenly Shades of Night Are Falling",
 "subtitle": null,
 "yearPublished": "1999",
 "sortTitle": "Heavenly Shades of Night Are Falling",
-"slug": "heavenly-shades-of-night-are-falling-by-stephen-king",
+"key": "heavenly-shades-of-night-are-falling-by-stephen-king",
 "kind": "Novella",
 "includedWorks": [],
 "authors": [
@@ -3420,15 +3210,14 @@
 "key": "stephen-king",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "A Writer's Tale",
 "subtitle": null,
 "yearPublished": "1997",
 "sortTitle": "Writer's Tale",
-"slug": "a-writers-tale-by-richard-laymon",
+"key": "a-writers-tale-by-richard-laymon",
 "kind": "Nonfiction",
 "includedWorks": [],
 "authors": [
@@ -3436,15 +3225,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Pick-Up on Highway One",
 "subtitle": null,
 "yearPublished": "2001",
 "sortTitle": "Pick-Up on Highway One",
-"slug": "pick-up-on-highway-one-by-richard-laymon",
+"key": "pick-up-on-highway-one-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -3452,15 +3240,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Mess Hall",
 "subtitle": null,
 "yearPublished": "1989",
 "sortTitle": "Mess Hall",
-"slug": "mess-hall-by-richard-laymon",
+"key": "mess-hall-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -3468,15 +3255,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Dolores Claiborne",
 "subtitle": null,
 "yearPublished": "1993",
 "sortTitle": "Dolores Claiborne",
-"slug": "dolores-claiborne-by-stephen-king",
+"key": "dolores-claiborne-by-stephen-king",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -3484,15 +3270,14 @@
 "key": "stephen-king",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Good Vibrations",
 "subtitle": null,
 "yearPublished": "1996",
 "sortTitle": "Good Vibrations",
-"slug": "good-vibrations-by-richard-laymon",
+"key": "good-vibrations-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -3500,15 +3285,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "The Intruder",
 "subtitle": null,
 "yearPublished": "1984",
 "sortTitle": "Intruder",
-"slug": "the-intruder-by-richard-laymon",
+"key": "the-intruder-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -3516,15 +3300,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Stiff Intruders",
 "subtitle": null,
 "yearPublished": "1980",
 "sortTitle": "Stiff Intruders",
-"slug": "stiff-intruders-by-richard-laymon",
+"key": "stiff-intruders-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -3532,15 +3315,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "The Grab",
 "subtitle": null,
 "yearPublished": "1982",
 "sortTitle": "Grab",
-"slug": "the-grab-by-richard-laymon",
+"key": "the-grab-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -3548,15 +3330,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Fail-Safe",
 "subtitle": null,
 "yearPublished": "2017",
 "sortTitle": "Fail-Safe",
-"slug": "fail-safe-by-philip-fracassi",
+"key": "fail-safe-by-philip-fracassi",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -3564,15 +3345,14 @@
 "key": "philip-fracassi",
 "notes": null
 }
-],
-"shelf": false
+]
 },
 {
 "title": "Moonraker",
 "subtitle": null,
 "yearPublished": "1955",
 "sortTitle": "Moonraker",
-"slug": "moonraker-by-ian-fleming",
+"key": "moonraker-by-ian-fleming",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -3580,15 +3360,14 @@
 "key": "ian-fleming",
 "notes": null
 }
-],
-"shelf": false
+]
 },
 {
 "title": "The Dark Tunnel",
 "subtitle": null,
 "yearPublished": "1944",
 "sortTitle": "Dark Tunnel",
-"slug": "the-dark-tunnel-by-ross-macdonald",
+"key": "the-dark-tunnel-by-ross-macdonald",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -3596,15 +3375,14 @@
 "key": "ross-macdonald",
 "notes": "as Kenneth Millar"
 }
-],
-"shelf": false
+]
 },
 {
 "title": "Desert Pickup",
 "subtitle": null,
 "yearPublished": "1970",
 "sortTitle": "Desert Pickup",
-"slug": "desert-pickup-by-richard-laymon",
+"key": "desert-pickup-by-richard-laymon",
 "kind": "Short Story",
 "includedWorks": [],
 "authors": [
@@ -3612,15 +3390,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Alarums",
 "subtitle": null,
 "yearPublished": "1992",
 "sortTitle": "Alarums",
-"slug": "alarums-by-richard-laymon",
+"key": "alarums-by-richard-laymon",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -3628,15 +3405,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "A Good, Secret Place",
 "subtitle": null,
 "yearPublished": "1992",
 "sortTitle": "Good, Secret Place",
-"slug": "a-good-secret-place-by-richard-laymon",
+"key": "a-good-secret-place-by-richard-laymon",
 "kind": "Novella",
 "includedWorks": [],
 "authors": [
@@ -3644,15 +3420,14 @@
 "key": "richard-laymon",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "The Sun Dog",
 "subtitle": null,
 "yearPublished": "1990",
 "sortTitle": "Sun Dog",
-"slug": "the-sun-dog-by-stephen-king",
+"key": "the-sun-dog-by-stephen-king",
 "kind": "Novella",
 "includedWorks": [],
 "authors": [
@@ -3660,15 +3435,14 @@
 "key": "stephen-king",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "The Langoliers",
 "subtitle": null,
 "yearPublished": "1990",
 "sortTitle": "Langoliers",
-"slug": "the-langoliers-by-stephen-king",
+"key": "the-langoliers-by-stephen-king",
 "kind": "Novella",
 "includedWorks": [],
 "authors": [
@@ -3676,15 +3450,14 @@
 "key": "stephen-king",
 "notes": null
 }
-],
-"shelf": true
+]
 },
 {
 "title": "Dracula",
 "subtitle": null,
 "yearPublished": "1897",
 "sortTitle": "Dracula",
-"slug": "dracula-by-bram-stoker",
+"key": "dracula-by-bram-stoker",
 "kind": "Novel",
 "includedWorks": [],
 "authors": [
@@ -3692,7 +3465,6 @@
 "key": "bram-stoker",
 "notes": null
 }
-],
-"shelf": true
+]
 }
 ]

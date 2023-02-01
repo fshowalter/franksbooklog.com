@@ -29,7 +29,7 @@ export const ReviewedWork = {
             filter: {
               frontmatter: {
                 work_slug: {
-                  eq: source.slug,
+                  eq: source.key,
                 },
               },
             },
@@ -48,7 +48,7 @@ export const ReviewedWork = {
           type: SchemaNames.WorksJson,
           query: {
             filter: {
-              slug: {
+              key: {
                 in: source.includedWorks,
               },
             },

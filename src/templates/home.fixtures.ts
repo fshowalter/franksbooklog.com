@@ -1,10 +1,160 @@
 export const data = {
   readings: [
     {
+      grade: "C-",
+      sequence: 51,
+      workSlug: "roadside-pickup-by-richard-laymon",
+      date: "21 Jan 2023",
+      excerpt:
+        "<p>Early morning darkness. Colleen sits stranded in her car. Three hours have produced three cars. None have stopped. But the fourth does. A young man with fashionable clothes and booze on his breath. Won’t she let him give her a ride?</p>\n<p>Laymon’s second published story proffers a predictable twist, but at under two thousand words, it doesn’t drag.</p>",
+      title: "Roadside Pickup",
+      kind: "Short Story",
+      yearPublished: 1974,
+      authors: [
+        {
+          key: "richard-laymon",
+          name: "Richard Laymon",
+          slug: "richard-laymon",
+          notes: null,
+        },
+      ],
+      cover: {
+        childImageSharp: {
+          gatsbyImageData: {
+            layout: "fixed" as const,
+            placeholder: {
+              fallback:
+                "data:image/png;base64,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",
+            },
+            images: {
+              fallback: {
+                src: "/static/8acae41db8fa464249340b17cc680c45/4ed50/short-stories-volume-one-by-richard-laymon.jpg",
+                srcSet:
+                  "/static/8acae41db8fa464249340b17cc680c45/4ed50/short-stories-volume-one-by-richard-laymon.jpg 168w,\n/static/8acae41db8fa464249340b17cc680c45/9a248/short-stories-volume-one-by-richard-laymon.jpg 336w",
+                sizes: "168px",
+              },
+              sources: [
+                {
+                  srcSet:
+                    "/static/8acae41db8fa464249340b17cc680c45/5ae08/short-stories-volume-one-by-richard-laymon.avif 168w,\n/static/8acae41db8fa464249340b17cc680c45/0d95f/short-stories-volume-one-by-richard-laymon.avif 336w",
+                  type: "image/avif",
+                  sizes: "168px",
+                },
+              ],
+            },
+            width: 168,
+            height: 252,
+          },
+        },
+      },
+    },
+    {
+      grade: "F",
+      sequence: 50,
+      workSlug: "fright-night-by-john-skipp-craig-spector",
+      date: "21 Jan 2023",
+      excerpt:
+        '<p>During a late-night make-out session with his girlfriend, high-schooler Charlie Brewster spies two men carrying a coffin into the basement of the house next-door. Charlie soon discovers his suave new neighbor, Jerry Dandrige, has fangs. When the police don’t believe him, Charlie appeals to the local creature-feature host, washed up horror icon Peter Vincent, for help. <a data-continue-reading href="/reviews/fright-night-by-john-skipp-craig-spector/">Continue reading...</a></p>',
+      title: "Fright Night",
+      kind: "Novel",
+      yearPublished: 1985,
+      authors: [
+        {
+          key: "john-skipp",
+          name: "John Skipp",
+          slug: "john-skipp",
+          notes: null,
+        },
+        {
+          key: "craig-spector",
+          name: "Craig Spector",
+          slug: "craig-spector",
+          notes: null,
+        },
+      ],
+      cover: {
+        childImageSharp: {
+          gatsbyImageData: {
+            layout: "fixed" as const,
+            placeholder: {
+              fallback:
+                "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAeCAYAAAAsEj5rAAAACXBIWXMAAAsTAAALEwEAmpwYAAAGNUlEQVR42nWW2VNTWR7H2UQIuxDARhoDdLBJ2CJJWJVASAjILgyL7AgIKAhKt7KYsAiKLDbDNiwDCrQgypTLg6U97VT3gy/aVePj1DxM/yOfqRxwCprh4eTc7733fH7fc+6p74mNjY0NX5qnpyd+fn64u7uL3sfHB0dHR1xcXMS1tZdKpfj7++Pg4ICTk5O4t59hY/2xs7MTQq/X8+bNG2ZnZ3n9+jWPHj0iOzub9fV1oauqqpiZmWFtbY2NjQ2ePXtGfn4++xkCaGtrK4RMJhMvT05OCsDw8DAlJSV8+vSJp0+fkpKSwvT0NCsrK6LIq1evMJlMRwNzcnLo7e3lyZMnLC0t8eLFCwYGBmhoaGBra4u5uTnhamdnh5GREVZXV4XrQ8Avoq6ujrdv3wo3Y2NjfPjwgY8fP1JUVMStW7cYHBri6fa2KLi2vi7AjY1NRwOzL2Tx+bdPDFgsvH/3jrXVFcx9vejTUpmfnmZ9dZXF+Xk219dZmJtjdXmJy3V1u8C9WR6YsioqismRu/R9d5MHgwNMDA/RUF1JhELB1soyO+uPeb62ysbSX1icesiLJxvUXio/2mF+hoGF+0P0tLUyfqebSUufaD/+eYKF0buU5FxgatDM9JCFqosF7CzOUWAyHgba74mOyhK2J0dYtNxic3yIBctt+q818e83z1kbsVCQrqOjqpTxrjYu5WTyem6CsizD0V85Rh7CdOcV2opzWfr+Ku8mB9i0dLH43VWuFuXQVVZAoS6Rh+0N3CzN5/3UEEat6vAa7m+/jtwkIyac2SvlDFcV8uz7Jja7GshUKfh5sIMUpZyZpjIed9Txqu8qpcnq//dRdmGnTnjwr3vtdGYkcq8onYq4SEaLDUyUmujL1fFbfzM1ySqWavO4X2ygNU1LS5r2MNBuDxgX5M8vrYXczYrncbmB+T+l8c8bpWxUZNB2Lpq/X8nDbNQwmZfMaHYiN3Qq6rXhh4H2e6ImOphfa9LZKEzgnj6alCBfPtQbsKREcF8fzS816SznaJkwxAh9PS6MBlUI+03tAXdFb4Kc3FB/HuqVzBsj0Z+W0p8cxoIpih9zznIu0Jut3LOYk8KYM0byt4JYskP9DgO/iFaVjPFUBdXKQBqiT3P3fDgN0TIsSWcEvCf+G7q0obSoZDzQKZg1RmEK9jscX7Z7ojoiUFSuiQgkxs+d4fPfCn0nUY5S6s5NTYjQU3ol93XhbOepaYwOOsqhLZ3ab9jO15Aj/4rEQB+GUxSMpioZ1SlQf+XNgimGzbxY1i6oxBKM6BR0aEKxsbXD3t7+8D70t7MhyuPY/xwHOtkR4GRPtI8Lx2xs0Ho7E+LqyBkvCWf9PZE52+H+h30sgM4SCZkmE4bMLNSJycQlJJCZdYEwhZKg4BBcPL0oLComRhvPya+DOOYsEYM1CYkYMkwiZK1ZKpFIdoFBQUF8/vwZi9lMZUWFiHdr1M/NzTI+NsZfl5dFJtbV1jA0OMhAfz8d168zOzMj+v/8/rvIUutZJIC+vr4iiRsbG8UZcfv2baamprh27RrV1dUivZOSkjCbzSL2m5qaqKysFM+s462Be2DKAQEBtLe3izPFqg0GAxqNBq1WS0tLC2VlZXR3d1NeXk5YWBhqtVoUsBrQ6XRMTEywL2R2HRYXF/Py5Ut6urvF9AYHBjCb79Dc3Ex9XR0VFRWiaHx8vDhPysvKWF5eJi8vj9bW1oMOvb29ycrKovPGDbp7evj5/T/o6e3l+c4OxgwT1zs6effTT/xgXYa2Nh6MjePq5ibetY63GjgA9PDwIDIykgR1LM4OdpQXXcSYmkLo14G0XK6nub6WrHQ9EWFyMSgtOQkvVwmZ+jRcnZxQazQHgbv/ACSccJVQW1aKJioCRUgwlysvcTE7i9SEeBJiVRjOJ1OSn4sx5TzlFwvINxk5bm+H1Nf3IPBLs3c8jlwZSaAsGA8fKSptnNiLgcGhhISd4ZQsBHm4ktOhcs4oI5GHK/64qQ8Cgz2c0fpIkLsdR+3rTpTncYJdHNBKXTntcgyN1AW5myNKTyeiPJ2IOeFMpNT9aOC3Pm4Yg/2J9vPkXKAPMf5e4jpd5otC6oFB5ktcgDexJ0+gPulF4ilvonwPAv8LVc4kCMLXoekAAAAASUVORK5CYII=",
+            },
+            images: {
+              fallback: {
+                src: "/static/ed5b9db089419d3103835aec289aa0b7/4ed50/fright-night-by-john-skipp-craig-spector.jpg",
+                srcSet:
+                  "/static/ed5b9db089419d3103835aec289aa0b7/4ed50/fright-night-by-john-skipp-craig-spector.jpg 168w,\n/static/ed5b9db089419d3103835aec289aa0b7/9a248/fright-night-by-john-skipp-craig-spector.jpg 336w",
+                sizes: "168px",
+              },
+              sources: [
+                {
+                  srcSet:
+                    "/static/ed5b9db089419d3103835aec289aa0b7/5ae08/fright-night-by-john-skipp-craig-spector.avif 168w,\n/static/ed5b9db089419d3103835aec289aa0b7/0d95f/fright-night-by-john-skipp-craig-spector.avif 336w",
+                  type: "image/avif",
+                  sizes: "168px",
+                },
+              ],
+            },
+            width: 168,
+            height: 252,
+          },
+        },
+      },
+    },
+    {
+      grade: "C+",
+      sequence: 49,
+      workSlug: "doctor-sleep-by-stephen-king",
+      date: "14 Jan 2023",
+      excerpt:
+        '<p>Stephen King’s sequel to <a href="/reviews/undefined/"><em>The Shining</em></a> finds Dan Torrance a middle-aged recovering alcoholic living in New Hampshire and working as a hospice orderly. He uses his unique gifts to comfort residents as they transition to the other side. <a data-continue-reading href="/reviews/doctor-sleep-by-stephen-king/">Continue reading...</a></p>',
+      title: "Doctor Sleep",
+      kind: "Novel",
+      yearPublished: 2013,
+      authors: [
+        {
+          key: "stephen-king",
+          name: "Stephen King",
+          slug: "stephen-king",
+          notes: null,
+        },
+      ],
+      cover: {
+        childImageSharp: {
+          gatsbyImageData: {
+            layout: "fixed" as const,
+            placeholder: {
+              fallback:
+                "data:image/png;base64,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",
+            },
+            images: {
+              fallback: {
+                src: "/static/2ade3db6dd7bc3e5e33473384ec0baf0/4ed50/doctor-sleep-by-stephen-king.jpg",
+                srcSet:
+                  "/static/2ade3db6dd7bc3e5e33473384ec0baf0/4ed50/doctor-sleep-by-stephen-king.jpg 168w,\n/static/2ade3db6dd7bc3e5e33473384ec0baf0/9a248/doctor-sleep-by-stephen-king.jpg 336w",
+                sizes: "168px",
+              },
+              sources: [
+                {
+                  srcSet:
+                    "/static/2ade3db6dd7bc3e5e33473384ec0baf0/5ae08/doctor-sleep-by-stephen-king.avif 168w,\n/static/2ade3db6dd7bc3e5e33473384ec0baf0/0d95f/doctor-sleep-by-stephen-king.avif 336w",
+                  type: "image/avif",
+                  sizes: "168px",
+                },
+              ],
+            },
+            width: 168,
+            height: 252,
+          },
+        },
+      },
+    },
+    {
       grade: "B+",
       sequence: 48,
       workSlug: "the-skeptics-guide-to-the-universe-by-steven-novella",
-      dateFinished: "29 Oct 2022",
+      date: "29 Oct 2022",
       excerpt:
         '<p>A practical guide to critical thinking in the information age. Novella and his colleagues illuminate cognitive biases and logical fallacies with understandable examples. They then apply them to assorted topics, including ghosts, extrasensory perception, assorted conspiracy theories, and global warming. <a data-continue-reading href="/reviews/the-skeptics-guide-to-the-universe-by-steven-novella/">Continue reading...</a></p>',
       title: "The Skeptics' Guide to the Universe",
@@ -14,7 +164,7 @@ export const data = {
         {
           key: "steven-novella",
           name: "Steven Novella",
-          slug: null,
+          slug: "steven-novella",
           notes: null,
         },
       ],
@@ -52,7 +202,7 @@ export const data = {
       grade: "B",
       sequence: 47,
       workSlug: "the-shining-by-stephen-king",
-      dateFinished: "29 Oct 2022",
+      date: "29 Oct 2022",
       excerpt:
         '<p>Alcoholic writer Jack Torrance uproots his wife Wendy and five-year-old son Danny from New England to Colorado, where they’ll serve as winter caretakers for the Overlook Hotel. The hotel, a premier destination with a shady past, houses a malevolent presence bent on claiming Danny for its own ends. <a data-continue-reading href="/reviews/the-shining-by-stephen-king/">Continue reading...</a></p>',
       title: "The Shining",
@@ -100,7 +250,7 @@ export const data = {
       grade: "B",
       sequence: 46,
       workSlug: "moonraker-by-ian-fleming",
-      dateFinished: "16 Oct 2022",
+      date: "16 Oct 2022",
       excerpt:
         '<p>James Bond investigates a popular self-made millionaire with surgically enhanced looks, an interest in rockets, and a relentless, larger-than-life personality. <a data-continue-reading href="/reviews/moonraker-by-ian-fleming/">Continue reading...</a></p>',
       title: "Moonraker",
@@ -110,7 +260,7 @@ export const data = {
         {
           key: "ian-fleming",
           name: "Ian Fleming",
-          slug: null,
+          slug: "ian-fleming",
           notes: null,
         },
       ],
@@ -148,9 +298,9 @@ export const data = {
       grade: "B",
       sequence: 45,
       workSlug: "salems-lot-by-stephen-king",
-      dateFinished: "14 Oct 2022",
+      date: "14 Oct 2022",
       excerpt:
-        '<p><strong>Stephen King’s sophomore novel</strong> transplants <a href="/reviews/dracula-by-bram-stoker/"><em>the Dracula story</em></a> to a remote New England town named Jerusalem’s Lot—`Salem’s Lot to the locals. <a data-continue-reading href="/reviews/salems-lot-by-stephen-king/">Continue reading...</a></p>',
+        '<p><strong>Stephen King’s sophomore novel</strong> transplants <a href="/reviews/undefined/"><em>the Dracula story</em></a> to a remote New England town named Jerusalem’s Lot—`Salem’s Lot to the locals. <a data-continue-reading href="/reviews/salems-lot-by-stephen-king/">Continue reading...</a></p>',
       title: "'Salem's Lot",
       kind: "Novel",
       yearPublished: 1975,
@@ -196,7 +346,7 @@ export const data = {
       grade: "B",
       sequence: 44,
       workSlug: "cant-hurt-me-by-david-goggins",
-      dateFinished: "13 Oct 2022",
+      date: "13 Oct 2022",
       excerpt:
         '<p>David Goggins escapes an abusive home and overcomes a dead-end career to become a Navy Seal and world-class endurance athlete. <a data-continue-reading href="/reviews/cant-hurt-me-by-david-goggins/">Continue reading...</a></p>',
       title: "Can't Hurt Me",
@@ -206,7 +356,7 @@ export const data = {
         {
           key: "david-goggins",
           name: "David Goggins",
-          slug: null,
+          slug: "david-goggins",
           notes: null,
         },
       ],
@@ -244,7 +394,7 @@ export const data = {
       grade: "C-",
       sequence: 43,
       workSlug: "out-are-the-lights-by-richard-laymon",
-      dateFinished: "11 Oct 2022",
+      date: "11 Oct 2022",
       excerpt:
         '<p>In a small California town, the Haunted Palace cinema specializes in horror films. Between showings of <em>The Hills Have Eyes</em> and <em>The Texas Chainsaw Massacre</em>, they play exclusive shorts featuring madman Otto Schreck. But unbeknownst to the audience, the horrific murders in these grainy films are real. <a data-continue-reading href="/reviews/out-are-the-lights-by-richard-laymon/">Continue reading...</a></p>',
       title: "Out Are the Lights",
@@ -292,7 +442,7 @@ export const data = {
       grade: "C+",
       sequence: 42,
       workSlug: "what-doesnt-kill-us-by-scott-carney",
-      dateFinished: "04 Oct 2022",
+      date: "04 Oct 2022",
       excerpt:
         '<p>Journalist Scott Carney investigates Wim Hof’s cold exposure and breathing methods. He enters a skeptic but emerges a believer, joining Hof on a record-breaking ascent of Mount Kilimanjaro. <a data-continue-reading href="/reviews/what-doesnt-kill-us-by-scott-carney/">Continue reading...</a></p>',
       title: "What Doesn't Kill Us",
@@ -302,7 +452,7 @@ export const data = {
         {
           key: "scott-carney",
           name: "Scott Carney",
-          slug: null,
+          slug: "scott-carney",
           notes: null,
         },
       ],
@@ -325,150 +475,6 @@ export const data = {
                 {
                   srcSet:
                     "/static/3476cf961fd1f42f67b03a31ad595999/5ae08/what-doesnt-kill-us-by-scott-carney.avif 168w,\n/static/3476cf961fd1f42f67b03a31ad595999/0d95f/what-doesnt-kill-us-by-scott-carney.avif 336w",
-                  type: "image/avif",
-                  sizes: "168px",
-                },
-              ],
-            },
-            width: 168,
-            height: 252,
-          },
-        },
-      },
-    },
-    {
-      grade: "C+",
-      sequence: 41,
-      workSlug: "the-big-sleep-by-raymond-chandler",
-      dateFinished: "24 Sep 2022",
-      excerpt:
-        '<p><strong>Raymond Chandler’s debut novel.</strong> Los Angeles private investigator Philip Marlowe takes on an aging tycoon’s blackmail case that spirals into a labyrinthine series of murders. <a data-continue-reading href="/reviews/the-big-sleep-by-raymond-chandler/">Continue reading...</a></p>',
-      title: "The Big Sleep",
-      kind: "Novel",
-      yearPublished: 1939,
-      authors: [
-        {
-          key: "raymond-chandler",
-          name: "Raymond Chandler",
-          slug: null,
-          notes: null,
-        },
-      ],
-      cover: {
-        childImageSharp: {
-          gatsbyImageData: {
-            layout: "fixed" as const,
-            placeholder: {
-              fallback:
-                "data:image/png;base64,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",
-            },
-            images: {
-              fallback: {
-                src: "/static/278bd19713d519a6e1a0dff393cf28d8/4ed50/the-big-sleep-by-raymond-chandler.jpg",
-                srcSet:
-                  "/static/278bd19713d519a6e1a0dff393cf28d8/4ed50/the-big-sleep-by-raymond-chandler.jpg 168w,\n/static/278bd19713d519a6e1a0dff393cf28d8/9a248/the-big-sleep-by-raymond-chandler.jpg 336w",
-                sizes: "168px",
-              },
-              sources: [
-                {
-                  srcSet:
-                    "/static/278bd19713d519a6e1a0dff393cf28d8/5ae08/the-big-sleep-by-raymond-chandler.avif 168w,\n/static/278bd19713d519a6e1a0dff393cf28d8/0d95f/the-big-sleep-by-raymond-chandler.avif 336w",
-                  type: "image/avif",
-                  sizes: "168px",
-                },
-              ],
-            },
-            width: 168,
-            height: 252,
-          },
-        },
-      },
-    },
-    {
-      grade: "B",
-      sequence: 40,
-      workSlug: "consider-this-by-chuck-palahniuk",
-      dateFinished: "22 Sep 2022",
-      excerpt:
-        '<p>Chuck Palahniuk relates the tools he learned from his years in Tom Spanbauer’s minimalist writing workshop. <a data-continue-reading href="/reviews/consider-this-by-chuck-palahniuk/">Continue reading...</a></p>',
-      title: "Consider This",
-      kind: "Nonfiction",
-      yearPublished: 2020,
-      authors: [
-        {
-          key: "chuck-palahniuk",
-          name: "Chuck Palahniuk",
-          slug: null,
-          notes: null,
-        },
-      ],
-      cover: {
-        childImageSharp: {
-          gatsbyImageData: {
-            layout: "fixed" as const,
-            placeholder: {
-              fallback:
-                "data:image/png;base64,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",
-            },
-            images: {
-              fallback: {
-                src: "/static/3ba537a950bb251cc5ba3c0b019b39f9/4ed50/consider-this-by-chuck-palahniuk.jpg",
-                srcSet:
-                  "/static/3ba537a950bb251cc5ba3c0b019b39f9/4ed50/consider-this-by-chuck-palahniuk.jpg 168w,\n/static/3ba537a950bb251cc5ba3c0b019b39f9/9a248/consider-this-by-chuck-palahniuk.jpg 336w",
-                sizes: "168px",
-              },
-              sources: [
-                {
-                  srcSet:
-                    "/static/3ba537a950bb251cc5ba3c0b019b39f9/5ae08/consider-this-by-chuck-palahniuk.avif 168w,\n/static/3ba537a950bb251cc5ba3c0b019b39f9/0d95f/consider-this-by-chuck-palahniuk.avif 336w",
-                  type: "image/avif",
-                  sizes: "168px",
-                },
-              ],
-            },
-            width: 168,
-            height: 252,
-          },
-        },
-      },
-    },
-    {
-      grade: "B-",
-      sequence: 39,
-      workSlug: "carrie-by-stephen-king",
-      dateFinished: "19 Sep 2022",
-      excerpt:
-        '<p><strong>Stephen King’s debut novel.</strong> Carrie White is a fat, pimple-faced, black-haired girl who’s endured nothing but torment from her high-school peers and oppression from her deranged mother. But Carrie harbors a hidden talent. She can move things with her mind. <a data-continue-reading href="/reviews/carrie-by-stephen-king/">Continue reading...</a></p>',
-      title: "Carrie",
-      kind: "Novel",
-      yearPublished: 1974,
-      authors: [
-        {
-          key: "stephen-king",
-          name: "Stephen King",
-          slug: "stephen-king",
-          notes: null,
-        },
-      ],
-      cover: {
-        childImageSharp: {
-          gatsbyImageData: {
-            layout: "fixed" as const,
-            placeholder: {
-              fallback:
-                "data:image/png;base64,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",
-            },
-            images: {
-              fallback: {
-                src: "/static/c233e3725052a48095176fdc450166d6/4ed50/carrie-by-stephen-king.jpg",
-                srcSet:
-                  "/static/c233e3725052a48095176fdc450166d6/4ed50/carrie-by-stephen-king.jpg 168w,\n/static/c233e3725052a48095176fdc450166d6/9a248/carrie-by-stephen-king.jpg 336w",
-                sizes: "168px",
-              },
-              sources: [
-                {
-                  srcSet:
-                    "/static/c233e3725052a48095176fdc450166d6/5ae08/carrie-by-stephen-king.avif 168w,\n/static/c233e3725052a48095176fdc450166d6/0d95f/carrie-by-stephen-king.avif 336w",
                   type: "image/avif",
                   sizes: "168px",
                 },

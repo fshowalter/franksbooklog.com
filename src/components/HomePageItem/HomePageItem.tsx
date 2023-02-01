@@ -42,7 +42,7 @@ export function HomePageItem({
           lineHeight={16}
           color="subtle"
         >
-          {item.dateFinished}
+          {item.date}
         </GridArea>
         <GridArea name="cover" maxWidth="prose">
           <Link
@@ -130,7 +130,7 @@ export const query = graphql`
     grade
     sequence
     workSlug
-    dateFinished(formatString: "DD MMM YYYY")
+    date(formatString: "DD MMM YYYY")
     excerpt
     title
     kind

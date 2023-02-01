@@ -18,7 +18,7 @@ export async function createStatPages({
     `
       {
         reading: allReadingsJson {
-          years: distinct(field: { yearFinished: SELECT })
+          years: distinct(field: { year: SELECT })
         }
       }
     `

@@ -22,7 +22,6 @@ export default function AllTimeStatsPage({
   data: Queries.AllTimeStatsPageQuery;
 }): JSX.Element {
   const tagline = `${data.reading.years.length.toString()} Years in Review`;
-
   return (
     <StatsPage
       title="All-Time Stats"
@@ -32,7 +31,6 @@ export default function AllTimeStatsPage({
       reviewCount={data.review.totalCount}
       bookCount={data.book.totalCount}
       readingCount={data.reading.totalCount}
-      fromShelfCount={data.fromShelf.totalCount}
       gradeDistributions={data.gradeDistributions.group}
       kindDistributions={data.kindDistributions.group}
       editionDistributions={data.editionDistributions.group}
@@ -48,7 +46,7 @@ export const pageQuery = graphql`
     }
 
     reading: allReadingsJson {
-      years: distinct(field: { yearFinished: SELECT })
+      years: distinct(field: { year: SELECT })
       totalCount
     }
 
@@ -58,12 +56,6 @@ export const pageQuery = graphql`
 
     book: allReadingsJson(
       filter: { work: { kind: { nin: ["Short Story", "Novella"] } } }
-    ) {
-      totalCount
-    }
-
-    fromShelf: allWorksJson(
-      filter: { shelf: { eq: true }, review: { id: { ne: null } } }
     ) {
       totalCount
     }
