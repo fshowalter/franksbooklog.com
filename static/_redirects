@@ -26,7 +26,9 @@
 /apple-touch-icon-120x120-precomposed.png /gone 410
 /apple-touch-icon-precomposed.png /gone 410
 
-# old author links we're not bringing back
+# shelf to reviews
+/shelf/authors/* /reviews/authors/:splat 301
+/shelf/authors /shelf/authors 301
 
 
 # misc
