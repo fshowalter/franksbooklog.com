@@ -212,7 +212,7 @@ export function AuthorAvatarListWithFilters({
         >
           <Box maxWidth="prose">
             <Box display="flex" flexDirection="column" alignItems="center">
-              <Link to="/shelf/">Shelf</Link>
+              <Link to="/reviews/">Reviews</Link>
               <PageTitle textAlign="center">
                 Authors
                 <Spacer axis="vertical" size={8} />
