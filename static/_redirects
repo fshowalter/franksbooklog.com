@@ -29,6 +29,8 @@
 # shelf to reviews
 /shelf/authors/* /reviews/authors/:splat 301
 /shelf/authors /shelf/authors 301
+/shelf/progress /stats 301
+
 
 
 # misc
