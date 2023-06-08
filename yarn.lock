@@ -6444,18 +6444,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cosmiconfig@npm:^8.1.3":
-  version: 8.2.0
-  resolution: "cosmiconfig@npm:8.2.0"
-  dependencies:
-    import-fresh: ^3.2.1
-    js-yaml: ^4.1.0
-    parse-json: ^5.0.0
-    path-type: ^4.0.0
-  checksum: 836d5d8efa750f3fb17b03d6ca74cd3154ed025dffd045304b3ef59637f662bde1e5dc88f8830080d180ec60841719cf4ea2ce73fb21ec694b16865c478ff297
-  languageName: node
-  linkType: hard
-
 "create-gatsby@npm:^3.10.0":
   version: 3.10.0
   resolution: "create-gatsby@npm:3.10.0"
@@ -8823,7 +8811,6 @@ __metadata:
     gatsby-plugin-feed: 5.10.0
     gatsby-plugin-image: 3.10.0
     gatsby-plugin-manifest: 5.10.0
-    gatsby-plugin-postcss: 6.10.0
     gatsby-plugin-sharp: 5.10.0
     gatsby-plugin-sitemap: 6.10.0
     gatsby-plugin-vanilla-extract: 4.0.1
@@ -8839,8 +8826,6 @@ __metadata:
     lint-staged: 13.2.2
     littlefoot: 3.4.1
     mdast-util-to-hast: ^10.2.0
-    postcss: 8.4.23
-    postcss-sort-media-queries: 5.1.0
     prettier: 2.8.8
     react: 18.2.0
     react-dom: 18.2.0
@@ -9214,19 +9199,6 @@ __metadata:
   peerDependencies:
     gatsby: ^5.0.0-next
   checksum: bb1ece203b75ceb5c02dfccdf9233ac1dee47b883e96c7ca525abceaa903c254c1ef69a346867007d0415801128a65677fde5f5ff611ce5575840f480db3154e
-  languageName: node
-  linkType: hard
-
-"gatsby-plugin-postcss@npm:6.10.0":
-  version: 6.10.0
-  resolution: "gatsby-plugin-postcss@npm:6.10.0"
-  dependencies:
-    "@babel/runtime": ^7.20.13
-    postcss-loader: ^7.3.0
-  peerDependencies:
-    gatsby: ^5.0.0-next
-    postcss: ^8.0.5
-  checksum: e044ea2f20dd72d28517afedee8b59584870bc387ac196379db07bdf976d4e28a29b201c776bec076325cadf85cb19879b57014ed4727a8d20c36a791521cf84
   languageName: node
   linkType: hard
 
@@ -11744,15 +11716,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jiti@npm:^1.18.2":
-  version: 1.18.2
-  resolution: "jiti@npm:1.18.2"
-  bin:
-    jiti: bin/jiti.js
-  checksum: 46c41cd82d01c6efdee3fc0ae9b3e86ed37457192d6366f19157d863d64961b07982ab04e9d5879576a1af99cc4d132b0b73b336094f86a5ce9fb1029ec2d29f
-  languageName: node
-  linkType: hard
-
 "joi@npm:^17.9.2":
   version: 17.9.2
   resolution: "joi@npm:17.9.2"
@@ -11968,7 +11931,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"klona@npm:^2.0.4, klona@npm:^2.0.6":
+"klona@npm:^2.0.4":
   version: 2.0.6
   resolution: "klona@npm:2.0.6"
   checksum: ac9ee3732e42b96feb67faae4d27cf49494e8a3bf3fa7115ce242fe04786788e0aff4741a07a45a2462e2079aa983d73d38519c85d65b70ef11447bbc3c58ce7
@@ -14318,21 +14281,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-loader@npm:^7.3.0":
-  version: 7.3.2
-  resolution: "postcss-loader@npm:7.3.2"
-  dependencies:
-    cosmiconfig: ^8.1.3
-    jiti: ^1.18.2
-    klona: ^2.0.6
-    semver: ^7.3.8
-  peerDependencies:
-    postcss: ^7.0.0 || ^8.0.1
-    webpack: ^5.0.0
-  checksum: 7010f9aea756b801031a9f65c4c880b62c7c42d366312d47a7782c2cb05d0b8bedb149695a895d0104bc6639bc117350aed15da84029f58fc49828fee1fe244c
-  languageName: node
-  linkType: hard
-
 "postcss-merge-longhand@npm:^5.1.7":
   version: 5.1.7
   resolution: "postcss-merge-longhand@npm:5.1.7"
@@ -14595,17 +14543,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-sort-media-queries@npm:5.1.0":
-  version: 5.1.0
-  resolution: "postcss-sort-media-queries@npm:5.1.0"
-  dependencies:
-    sort-css-media-queries: 2.2.0
-  peerDependencies:
-    postcss: ^8.4.23
-  checksum: 56958d00eedac17dc555eb8c956c5c9078b142d3453b8eb7ab738905dff684b0ec9f1c7b2ea67325002866f99d0f1380a87688a2a25e0b6d1541ee181d703cdf
-  languageName: node
-  linkType: hard
-
 "postcss-svgo@npm:^5.1.0":
   version: 5.1.0
   resolution: "postcss-svgo@npm:5.1.0"
@@ -14633,17 +14570,6 @@ __metadata:
   version: 4.2.0
   resolution: "postcss-value-parser@npm:4.2.0"
   checksum: 819ffab0c9d51cf0acbabf8996dffbfafbafa57afc0e4c98db88b67f2094cb44488758f06e5da95d7036f19556a4a732525e84289a425f4f6fd8e412a9d7442f
-  languageName: node
-  linkType: hard
-
-"postcss@npm:8.4.23":
-  version: 8.4.23
-  resolution: "postcss@npm:8.4.23"
-  dependencies:
-    nanoid: ^3.3.6
-    picocolors: ^1.0.0
-    source-map-js: ^1.0.2
-  checksum: 8bb9d1b2ea6e694f8987d4f18c94617971b2b8d141602725fedcc2222fdc413b776a6e1b969a25d627d7b2681ca5aabb56f59e727ef94072e1b6ac8412105a2f
   languageName: node
   linkType: hard
 
@@ -15931,7 +15857,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semver@npm:^7.2.1, semver@npm:^7.3.2, semver@npm:^7.3.4, semver@npm:^7.3.5, semver@npm:^7.3.7, semver@npm:^7.3.8, semver@npm:^7.5.0":
+"semver@npm:^7.2.1, semver@npm:^7.3.2, semver@npm:^7.3.4, semver@npm:^7.3.5, semver@npm:^7.3.7, semver@npm:^7.5.0":
   version: 7.5.1
   resolution: "semver@npm:7.5.1"
   dependencies:
@@ -16303,13 +16229,6 @@ __metadata:
     ip: ^2.0.0
     smart-buffer: ^4.2.0
   checksum: 259d9e3e8e1c9809a7f5c32238c3d4d2a36b39b83851d0f573bfde5f21c4b1288417ce1af06af1452569cd1eb0841169afd4998f0e04ba04656f6b7f0e46d748
-  languageName: node
-  linkType: hard
-
-"sort-css-media-queries@npm:2.2.0":
-  version: 2.2.0
-  resolution: "sort-css-media-queries@npm:2.2.0"
-  checksum: c090c9a27be40f3e50f5f9bc9d85a8af0e2c5152565eca34bdb028d952749bce169bc5abef21a5a385ca6221a0869640c9faf58f082ac46de9085ebdb506291f
   languageName: node
   linkType: hard
 
