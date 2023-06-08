@@ -8840,7 +8840,7 @@ __metadata:
     littlefoot: 3.4.1
     mdast-util-to-hast: ^10.2.0
     postcss: 8.4.23
-    postcss-sort-media-queries: 5.1.0
+    postcss-sort-media-queries: 5.2.0
     prettier: 2.8.8
     react: 18.2.0
     react-dom: 18.2.0
@@ -14595,14 +14595,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-sort-media-queries@npm:5.1.0":
-  version: 5.1.0
-  resolution: "postcss-sort-media-queries@npm:5.1.0"
+"postcss-sort-media-queries@npm:5.2.0":
+  version: 5.2.0
+  resolution: "postcss-sort-media-queries@npm:5.2.0"
   dependencies:
     sort-css-media-queries: 2.2.0
   peerDependencies:
     postcss: ^8.4.23
-  checksum: 56958d00eedac17dc555eb8c956c5c9078b142d3453b8eb7ab738905dff684b0ec9f1c7b2ea67325002866f99d0f1380a87688a2a25e0b6d1541ee181d703cdf
+  checksum: d4a976a64b53234762cc35c06ce97c1684bd7a64ead17e84c2047676c7307945be7c005235e6aac7c4620e1f835d6ba1a7dcf018ab7fe0a47657c62c96ad9f35
   languageName: node
   linkType: hard
 
