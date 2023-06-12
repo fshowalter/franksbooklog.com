@@ -1,5 +1,5 @@
 import { graphql } from "gatsby";
-import { rgba } from "polished";
+import { getSrc } from "gatsby-plugin-image";
 import { toSentenceArray } from "../../utils/";
 import { AuthorLink } from "../AuthorLink";
 import { Box, IBoxProps } from "../Box";
@@ -39,10 +39,10 @@ export function Review({
           width="full"
         >
           <Title reviewData={reviewData} textAlign="center" />
+          <Authors reviewData={reviewData} />
           <Spacer axis="vertical" size={8} />
           <YearAndKind reviewData={reviewData} />
           <Spacer axis="vertical" size={8} />
-          <Authors reviewData={reviewData} />
           <Spacer axis="vertical" size={32} />
           <Cover reviewData={reviewData} />
         </Box>
@@ -106,7 +106,6 @@ function Title({ reviewData, ...rest }: ITitleProps) {
       <PageTitle>{reviewData.title}</PageTitle>
       {reviewData.subtitle && (
         <>
-          <Spacer axis="vertical" size={16} />
           <Box
             fontSize="medium"
             fontWeight="normal"
@@ -116,6 +115,7 @@ function Title({ reviewData, ...rest }: ITitleProps) {
           >
             {reviewData.subtitle}
           </Box>
+          <Spacer axis="vertical" size={8} />
         </>
       )}
     </Box>
@@ -157,27 +157,71 @@ function Authors({ reviewData }: { reviewData: Queries.ReviewDataFragment }) {
 function Cover({ reviewData }: { reviewData: Queries.ReviewDataFragment }) {
   return (
     <Box
-      // width="full"
+      position="relative"
+      width="full"
+      maxWidth="popout"
+      display="flex"
+      flexDirection="column"
+      alignItems="center"
       style={{
-        filter: `drop-shadow(1px 2px 8px ${rgba(
-          reviewData.cover.childImageSharp?.gatsbyImageData.backgroundColor,
-          0.8
-        )}`,
-        // border: `solid 8px ${borderColors.default}`,
+        height: "350px",
       }}
-      // display="flex"
-      // flexDirection="column"
-      // alignItems="center"
-      // paddingX={16}
-      // paddingY={32}
-      // maxWidth="popout"
     >
+      <Box
+        style={{
+          position: "absolute",
+          left: "0",
+          right: "0",
+          top: "0",
+          bottom: "0",
+          overflow: "hidden",
+        }}
+      >
+        <Box
+          style={{
+            // filter: `drop-shadow(1px 2px 8px ${rgba(
+            //   reviewData.cover.childImageSharp?.gatsbyImageData.backgroundColor,
+            //   0.8
+            // )}`,
+            backgroundImage: `url(${getSrc(reviewData.cover.childImageSharp)}`,
+            width: "110%",
+            height: "110%",
+            left: "-5%",
+            top: "-5%",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            position: "absolute",
+          }}
+          // display="flex"
+          // flexDirection="column"
+          // alignItems="center"
+          // paddingX={16}
+          // paddingY={32}
+          // maxWidth="popout"
+          // width="full"
+        />
+        <Box
+          style={{
+            position: "absolute",
+            width: "100%",
+            height: "100%",
+            backdropFilter: "blur(8px)",
+          }}
+        />
+      </Box>
       <GraphqlImage
         image={reviewData.cover}
         alt={`A cover of ${reviewData.title} by ${toSentenceArray(
           reviewData.authors.map((a) => a.name)
         ).join("")} (${reviewData.yearPublished})`}
         loading={"eager"}
+        style={{
+          position: "relative",
+          zIndex: "1",
+          top: "-12px",
+          height: "372px",
+          overflow: "unset",
+        }}
       />
     </Box>
   );
