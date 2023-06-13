@@ -30,13 +30,15 @@ export const authorsTypographyStyle = style({
 
 export const titleTypographyStyle = style({
   fontSize: relativeSize[18],
-  lineHeight: "1.5rem",
+  lineHeight: "1.25rem",
 
   "@media": {
     [minMediaQuery("tablet")]: {
       fontSize: "1rem",
-      lineHeight: "1.25rem",
       textAlign: "center",
+    },
+    [minMediaQuery("desktop")]: {
+      fontSize: "1.125rem",
     },
   },
 });

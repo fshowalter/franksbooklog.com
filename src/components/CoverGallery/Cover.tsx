@@ -4,13 +4,13 @@ import { Box, IBoxProps } from "../Box";
 import { Grade } from "../Grade";
 import { GraphqlImage, IGraphqlImage } from "../GraphqlImage";
 import { Link } from "../Link";
+import { ListItemTitle } from "../ListItemTitle";
 import { Spacer } from "../Spacer";
 import {
-  authorsTypographyStyle,
   posterStyle,
   slugTypographyStyle,
   titleTypographyStyle,
-} from "./CoverGallery.css";
+} from "./Cover.css";
 
 export function Cover({
   slug,
@@ -62,12 +62,23 @@ export function Cover({
         alignItems={{ tablet: "center" }}
       >
         <Spacer axis="vertical" size={{ default: 0, tablet: 4 }} />
-        <Title title={title} slug={slug} />
+        <ListItemTitle
+          title={title}
+          slug={slug}
+          className={titleTypographyStyle}
+        />
         <Spacer axis="vertical" size={{ default: 4, tablet: 8 }} />
-        {authors && <Authors authors={authors} />}
-        <Spacer axis="vertical" size={{ default: 4, tablet: 8 }} />
-        <YearAndKind kind={kind} year={year} />
-        <Spacer axis="vertical" size={{ default: 4, tablet: 8 }} />
+        <Authors
+          authors={authors}
+          textAlign={{ default: "left", tablet: "center" }}
+        />
+        <Spacer axis="vertical" size={8} />
+        <YearAndKind
+          workKind={kind}
+          year={year}
+          textAlign={{ default: "left", tablet: "center" }}
+        />
+        <Spacer axis="vertical" size={8} />
         {grade && (
           <>
             <Grade grade={grade} height={16} />
@@ -96,20 +107,29 @@ export function Cover({
   );
 }
 
-function YearAndKind({
-  kind,
-  year,
-}: {
-  kind?: string | null;
+interface IYearAndKindProps extends IBoxProps {
+  workKind?: string | null;
   year?: number | null;
-}): JSX.Element | null {
+}
+
+function YearAndKind({
+  workKind,
+  year,
+  ...rest
+}: IYearAndKindProps): JSX.Element | null {
   const yearBox = year ? <Box as="span">{year} | </Box> : null;
 
-  if (kind) {
+  if (workKind) {
     return (
-      <Box className={slugTypographyStyle} color="subtle">
+      <Box
+        fontSize="small"
+        color="subtle"
+        letterSpacing={0.5}
+        lineHeight={16}
+        {...rest}
+      >
         {yearBox}
-        {kind}
+        {workKind}
       </Box>
     );
   }
@@ -150,30 +170,17 @@ function Image({ slug, image, title, ...rest }: IImageProps) {
   );
 }
 
-function Title({
-  title,
-  slug,
-}: {
-  title: string;
-  slug: string | null | undefined;
-}) {
-  if (slug)
-    return (
-      <Link
-        to={`/reviews/${slug}/`}
-        className={titleTypographyStyle}
-        display="block"
-      >
-        {title}
-      </Link>
-    );
-
-  return <Box className={titleTypographyStyle}>{title}</Box>;
+interface IAuthorsProps extends IBoxProps {
+  authors: readonly Author[] | undefined;
 }
 
-function Authors({ authors }: { authors: readonly Author[] }) {
+function Authors({ authors, ...rest }: IAuthorsProps) {
+  if (!authors) {
+    return null;
+  }
+
   return (
-    <Box color="muted" className={authorsTypographyStyle}>
+    <Box color="muted" fontSize="default" lineHeight={20} {...rest}>
       {toSentenceArray(authors.map((author) => author.name))}
     </Box>
   );

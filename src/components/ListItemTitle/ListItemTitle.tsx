@@ -1,23 +1,28 @@
-import { Box } from "../Box";
+import { Box, IBoxProps } from "../Box";
 import { Link } from "../Link";
 
-export function ListItemTitle({
-  title,
-  slug,
-}: {
+interface IListItemTitleProps extends IBoxProps {
   title: string;
   slug: string | null | undefined;
-}) {
+}
+
+export function ListItemTitle({ title, slug, ...rest }: IListItemTitleProps) {
   if (slug) {
     return (
-      <Link to={`/reviews/${slug}/`} fontSize="medium" display="block">
+      <Link
+        to={`/reviews/${slug}/`}
+        fontSize="medium"
+        lineHeight={20}
+        display="block"
+        {...rest}
+      >
         {title}
       </Link>
     );
   }
 
   return (
-    <Box as="span" fontSize="medium" display="block">
+    <Box as="span" fontSize="medium" display="block" lineHeight={20} {...rest}>
       {title}
     </Box>
   );

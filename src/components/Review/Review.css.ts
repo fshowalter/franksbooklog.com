@@ -12,7 +12,7 @@ export const desktopMarginStyle = style({
 });
 
 export const coverStyle = style({
-  border: `solid 8px ${borderColors.default}`,
+  border: `solid 4px ${borderColors.default}`,
   // boxShadow: "0 5px 20px rgba(49, 46, 42, 0.22)",
   borderRadius: "2px",
   overflow: "hidden",

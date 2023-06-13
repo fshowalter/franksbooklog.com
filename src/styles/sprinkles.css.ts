@@ -54,6 +54,7 @@ const unresponsiveAtomicProperties = defineProperties({
       1: 1,
       default: 1.5,
       16: "1rem",
+      20: "1.25rem",
       24: "1.5rem",
       32: "2rem",
       36: "2.25rem",

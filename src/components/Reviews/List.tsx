@@ -53,11 +53,12 @@ function ReviewListItem({
       >
         <Box>
           <ListItemTitle title={item.title} slug={item.slug} />
+          <Spacer axis="vertical" size={4} />
           <Authors authors={item.authors} />
           <Spacer axis="vertical" size={8} />
           <YearAndKind year={item.yearPublished} kind={item.kind} />
           <Spacer axis="vertical" size={8} />
-          <Grade grade={item.grade} height={18} />
+          <Grade grade={item.grade} height={16} />
           <Spacer axis="vertical" size={8} />
         </Box>
       </Box>
@@ -71,7 +72,7 @@ function Authors({
   authors: readonly Queries.ReviewsListItemAuthorFragment[];
 }) {
   return (
-    <Box color="muted" fontSize="default">
+    <Box color="muted" fontSize="default" lineHeight={20}>
       {toSentenceArray(authors.map((author) => author.name))}
     </Box>
   );
@@ -85,8 +86,8 @@ function YearAndKind({
   year: number;
 }): JSX.Element | null {
   return (
-    <Box color="subtle" fontSize="small" letterSpacing={0.5}>
-      <Box as="span">{kind}, </Box>
+    <Box color="subtle" fontSize="small" letterSpacing={0.5} lineHeight={16}>
+      <Box as="span">{kind} | </Box>
       {year}
     </Box>
   );

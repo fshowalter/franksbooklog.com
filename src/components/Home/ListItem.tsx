@@ -76,7 +76,7 @@ export function ListItem({
             >
               {item.yearPublished} | {item.kind}
             </Box>
-            <Spacer axis="vertical" size={24} />
+            <Spacer axis="vertical" size={16} />
             <Box
               as="h2"
               fontWeight="bold"
@@ -103,9 +103,9 @@ export function ListItem({
                 })
               )}
             </Box>{" "}
-            <Spacer axis="vertical" size={24} />
-            {item.grade && <Grade grade={item.grade} height={32} />}
-            <Spacer axis="vertical" size={24} />
+            <Spacer axis="vertical" size={16} />
+            {item.grade && <Grade grade={item.grade} height={24} />}
+            <Spacer axis="vertical" size={16} />
           </Box>
           <RenderedMarkdown
             text={item.excerpt}

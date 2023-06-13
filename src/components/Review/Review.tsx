@@ -188,7 +188,7 @@ function ReviewGrade({
       </Box>
     );
   }
-  return <Grade grade={reviewData.grade} height={32} />;
+  return <Grade grade={reviewData.grade} height={24} />;
 }
 
 function ReviewDate({
