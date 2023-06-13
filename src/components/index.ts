@@ -1,3 +1,4 @@
+export * from "./Author";
 export * from "./Authors";
 export * from "./HeadBuilder";
 export * from "./Home";

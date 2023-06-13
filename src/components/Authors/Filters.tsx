@@ -7,7 +7,7 @@ export function Filters({
   sortValue,
 }: {
   dispatch: React.Dispatch<Action>;
-  sortValue: string;
+  sortValue: Sort;
 }) {
   return (
     <>
