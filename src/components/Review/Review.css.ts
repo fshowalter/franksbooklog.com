@@ -21,8 +21,8 @@ export const coverBackgroundWrapStyle = style({
   top: "0",
   bottom: "0",
   overflow: "hidden",
-  opacity: ".6",
-  borderRadius: "8px",
+  // opacity: ".6",
+  // borderRadius: "8px",
 });
 
 export const coverBackgroundImageStyle = style({

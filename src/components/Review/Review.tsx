@@ -178,7 +178,9 @@ function Cover({ reviewData }: { reviewData: Queries.ReviewDataFragment }) {
         <Box
           className={coverBackgroundImageStyle}
           style={{
-            backgroundImage: `url(${imageSrc})`,
+            backgroundColor: "#fff",
+            backgroundImage: `linear-gradient(90deg, rgba(255,255,255,1) 5%, rgba(255,255,255,.4) 30%, rgba(255,255,255,0) 50%, rgba(255,255,255,.4) 70%, rgba(255,255,255,1) 95%), url(${imageSrc})`,
+            // backgroundImage: `radial-gradient(circle, rgba(255,255,255, 0) 0%, rgb(255,255,255) 80%), url(${imageSrc})`,
           }}
         />
         <Box className={coverBackgroundBlurStyle} />
