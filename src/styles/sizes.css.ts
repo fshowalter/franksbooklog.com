@@ -28,7 +28,7 @@ globalStyle(":root", {
 export const HEADER_HEIGHT = 128;
 
 export const STILL_WIDTH = "960px";
-export const POSTER_WIDTH = "248px";
+export const POSTER_WIDTH = "200px";
 export const PROSE_CONTENT_WIDTH = "36rem";
 export const POPOUT_WIDTH = `calc((${gutterWidth} * 2) + ${PROSE_CONTENT_WIDTH})`;
 

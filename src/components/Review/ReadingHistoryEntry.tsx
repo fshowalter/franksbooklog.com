@@ -15,7 +15,11 @@ const GridArea = gridAreaComponent(gridAreas);
 
 const Grid = gridComponent(gridStyle);
 
-function Date({ reading }: { reading: Queries.ReadingHistoryEntryFragment }) {
+function Date({
+  reading,
+}: {
+  reading: Queries.ReviewReadingHistoryEntryFragment;
+}) {
   return (
     <>
       <Box as="span" color="default" display="inline-block">
@@ -28,7 +32,7 @@ function Date({ reading }: { reading: Queries.ReadingHistoryEntryFragment }) {
 function Edition({
   reading,
 }: {
-  reading: Queries.ReadingHistoryEntryFragment;
+  reading: Queries.ReviewReadingHistoryEntryFragment;
 }) {
   if (!reading.edition) {
     return null;
@@ -43,7 +47,7 @@ function Edition({
 function EditionNotes({
   reading,
 }: {
-  reading: Queries.ReadingHistoryEntryFragment;
+  reading: Queries.ReviewReadingHistoryEntryFragment;
 }) {
   if (!reading.editionNotes) {
     return null;
@@ -72,7 +76,7 @@ function EditionNotes({
 function Details({
   reading,
 }: {
-  reading: Queries.ReadingHistoryEntryFragment;
+  reading: Queries.ReviewReadingHistoryEntryFragment;
 }) {
   if (reading.readingTime === 0) {
     return null;
@@ -126,7 +130,7 @@ function Details({
 function ReadingNote({
   reading,
 }: {
-  reading: Queries.ReadingHistoryEntryFragment;
+  reading: Queries.ReviewReadingHistoryEntryFragment;
 }) {
   if (!reading.readingNote) {
     return null;
@@ -144,7 +148,7 @@ function ReadingNote({
 }
 
 interface IIReadingHistoryEntryProps extends IBoxProps {
-  reading: Queries.ReadingHistoryEntryFragment;
+  reading: Queries.ReviewReadingHistoryEntryFragment;
 }
 
 export function ReadingHistoryEntry({ reading }: IIReadingHistoryEntryProps) {

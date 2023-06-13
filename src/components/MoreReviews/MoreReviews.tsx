@@ -1,59 +1,64 @@
 import { graphql } from "gatsby";
 import { Box } from "../Box";
-import { Cover, CoverList } from "../CoverList";
+import { Cover, CoverGallery } from "../CoverGallery";
 import { Link } from "../Link";
+import { Heading } from "./Heading";
 import { gridStyle, seeAllLinkStyle } from "./MoreReviews.css";
+import { Nav } from "./Nav";
 
 export function MoreReviews({
-  works,
-  seeAllLinkTarget,
-  seeAllLinkText,
+  reviewedWorks,
+  linkTarget,
+  linkText,
 }: {
-  works: readonly Queries.MoreReviewsFragment[];
-  seeAllLinkText: string;
-  seeAllLinkTarget: string;
+  reviewedWorks: readonly Queries.MoreReviewsFragment[];
+  linkText: string;
+  linkTarget: string;
 }): JSX.Element | null {
-  if (works.length < 4) {
+  if (reviewedWorks.length < 4) {
     return null;
   }
 
   return (
-    <CoverList paddingX={0} width="full" className={gridStyle}>
-      {works.map((work) => {
-        return (
-          <Cover
-            key={work.id}
-            title={work.title}
-            grade={work.grade}
-            slug={work.slug}
-            image={work.cover}
-            authors={work.authors}
-            year={work.yearPublished}
-            kind={work.kind}
-          />
-        );
-      })}
-      <Box
-        as="li"
-        display="block"
-        textAlign="right"
-        paddingX={{ default: "gutter", tablet: 0 }}
-        className={seeAllLinkStyle}
-        paddingY={16}
-        boxShadow={{ default: "borderBottom", tablet: "unset" }}
-      >
-        <Link to={seeAllLinkTarget}>
-          All{" "}
-          <Box
-            as="span"
-            display={{ default: "inline", tablet: "none", desktop: "inline" }}
-          >
-            {seeAllLinkText}
-          </Box>{" "}
-          &#8594;
-        </Link>
-      </Box>
-    </CoverList>
+    <Nav>
+      <Heading leadText="More" linkTarget={linkTarget} linkText={linkText} />
+      <CoverGallery paddingX={0} width="full" className={gridStyle}>
+        {reviewedWorks.map((work) => {
+          return (
+            <Cover
+              key={work.id}
+              title={work.title}
+              grade={work.grade}
+              slug={work.slug}
+              image={work.cover}
+              authors={work.authors}
+              year={work.yearPublished}
+              kind={work.kind}
+            />
+          );
+        })}
+        <Box
+          as="li"
+          display="block"
+          textAlign="right"
+          paddingX={{ default: "gutter", tablet: 0 }}
+          className={seeAllLinkStyle}
+          paddingY={16}
+          boxShadow={{ default: "borderBottom", tablet: "unset" }}
+        >
+          <Link to={linkTarget}>
+            All{" "}
+            <Box
+              as="span"
+              display={{ default: "inline", tablet: "none", desktop: "inline" }}
+            >
+              {linkText}
+            </Box>{" "}
+            &#8594;
+          </Link>
+        </Box>
+      </CoverGallery>
+    </Nav>
   );
 }
 
@@ -69,7 +74,7 @@ export const query = graphql`
     grade
     slug
     cover {
-      ...CoverListCover
+      ...CoverGalleryCover
     }
   }
 `;

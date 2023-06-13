@@ -1,8 +1,8 @@
 import type { IBoxProps } from "../Box";
 import { Box } from "../Box";
-import { maxWidthStyle } from "./MoreReviewsNav.css";
+import { maxWidthStyle } from "./Nav.css";
 
-export function MoreReviewsNav({ children }: IBoxProps) {
+export function Nav({ children }: IBoxProps) {
   return (
     <Box
       as="nav"

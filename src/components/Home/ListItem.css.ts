@@ -1,7 +1,7 @@
 import { globalStyle, style, styleVariants } from "@vanilla-extract/css";
 import { minMediaQuery } from "../../styles/breakpoints";
 import { borderColors, foregroundColors } from "../../styles/colors.css";
-import { gridTemplate, SPACER } from "../../styles/grid";
+import { SPACER, gridTemplate } from "../../styles/grid";
 import { pageMarginWidth, relativeSize, size } from "../../styles/sizes.css";
 
 export const coverBorderStyle = style({

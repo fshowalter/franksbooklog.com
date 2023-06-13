@@ -1,6 +1,6 @@
 import { graphql } from "gatsby";
 import { Box } from "../Box";
-import { Cover, CoverList } from "../CoverList";
+import { Cover, CoverGallery } from "../CoverGallery";
 import { Link } from "../Link";
 import { Spacer } from "../Spacer";
 import { StatHeading } from "../StatHeading";
@@ -85,7 +85,7 @@ export function MostReadAuthors({
                   >
                     Details
                   </Box>
-                  <CoverList paddingX={{ default: 0, tablet: "gutter" }}>
+                  <CoverGallery paddingX={{ default: 0, tablet: "gutter" }}>
                     {author.readings.map((reading) => {
                       return (
                         <Cover
@@ -100,7 +100,7 @@ export function MostReadAuthors({
                         />
                       );
                     })}
-                  </CoverList>
+                  </CoverGallery>
                   <Spacer axis="vertical" size={{ default: 0, tablet: 32 }} />
                 </details>
               </Box>
@@ -128,7 +128,7 @@ export const query = graphql`
       title
       yearPublished
       cover {
-        ...CoverListCover
+        ...CoverGalleryCover
       }
     }
   }

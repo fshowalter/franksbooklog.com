@@ -11,7 +11,7 @@ export function Home({
   numberOfItems,
   currentPageNumber,
 }: {
-  items: readonly Queries.HomePageItemFragment[];
+  items: readonly Queries.HomeListItemFragment[];
   limit: number;
   skip: number;
   numberOfItems: number;

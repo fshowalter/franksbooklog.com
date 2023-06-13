@@ -4,7 +4,7 @@ import { minMediaQuery } from "../../styles/breakpoints";
 export const typographyStyle = style({
   fontSize: "2rem",
   fontWeight: "normal",
-  lineHeight: "2.5rem",
+  lineHeight: "2rem",
 
   "@media": {
     [minMediaQuery("desktop")]: {

@@ -52,6 +52,7 @@ export function ListWithFiltersLayout({
           >
             <Spacer axis="vertical" size={{ default: 0, desktop: 32 }} />
             {list}
+            <Spacer axis="vertical" size={{ default: 0, desktop: 32 }} />
           </Box>
         </Box>
       </Box>

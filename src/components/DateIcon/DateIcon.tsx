@@ -12,7 +12,7 @@ export function DateIcon({
 }): JSX.Element {
   return (
     <SvgIcon className={composeClassNames(iconStyle, className)}>
-      <title>Watched on</title>
+      <title>on</title>
       <path
         fillRule="evenodd"
         d="M14 2H2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1zM2 1a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2z"

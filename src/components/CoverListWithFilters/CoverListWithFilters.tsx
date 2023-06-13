@@ -2,7 +2,7 @@ import { useReducer, useRef } from "react";
 import { foregroundColors } from "../../styles/colors.css";
 import { Box } from "../Box";
 import { Button } from "../Button";
-import { Cover, CoverList } from "../CoverList";
+import { Cover, CoverGallery } from "../CoverGallery";
 import { DebouncedInput } from "../DebouncedInput";
 import { Fieldset } from "../Fieldset";
 import { GradeInput } from "../GradeInput";
@@ -346,7 +346,7 @@ export function CoverListWithFilters({
                     </Box>
                   </Box>
                   <Spacer axis="vertical" size={{ default: 0, tablet: 16 }} />
-                  <CoverList
+                  <CoverGallery
                     paddingX={{
                       default: 0,
                       tablet: "gutter",
@@ -372,7 +372,7 @@ export function CoverListWithFilters({
                         />
                       );
                     })}
-                  </CoverList>
+                  </CoverGallery>
                   <Spacer axis="vertical" size={{ default: 0, tablet: 16 }} />
                 </Box>
               );

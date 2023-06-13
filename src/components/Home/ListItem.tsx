@@ -93,13 +93,12 @@ export function ListItem({
                 {item.title}
               </Link>
             </Box>
-            <Spacer axis="vertical" size={16} />
             <Box as="p" textAlign="center">
               by{" "}
               {toSentenceArray(
                 item.authors.map((author) => {
                   return (
-                    <AuthorLink as="span" key={author.key} author={author} />
+                    <AuthorLink as="span" key={author.slug} author={author} />
                   );
                 })
               )}

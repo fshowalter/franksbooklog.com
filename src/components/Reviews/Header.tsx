@@ -18,6 +18,7 @@ export function Header({
   return (
     <>
       <PageTitle textAlign="center">Reviews</PageTitle>
+      <Spacer axis="vertical" size={8} />
       <Box as="q" display="block" textAlign="center" color="subtle">
         I intend to put up with nothing that I can put down.
       </Box>
@@ -25,7 +26,7 @@ export function Header({
 
       <Box color="subtle">
         <Spacer axis="vertical" size={16} />
-        <p>
+        <Box as="p" textAlign="center">
           Since 2022, I&apos;ve published{" "}
           <Box as="span" color="emphasis">
             {reviewCount.toLocaleString()}
@@ -43,11 +44,11 @@ export function Header({
             {abandonedCount.toLocaleString()}
           </Box>{" "}
           abandoned).
-        </p>
+        </Box>
         <Spacer axis="vertical" size={16} />
-        <p>
+        <Box as="p" textAlign="center">
           More <Link to="/stats/">reading stats</Link>.
-        </p>
+        </Box>
         <Spacer axis="vertical" size={32} />
         <Box display="flex" justifyContent="center">
           <Link

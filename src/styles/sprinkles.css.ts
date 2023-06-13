@@ -62,7 +62,6 @@ const unresponsiveAtomicProperties = defineProperties({
     },
     marginLeft: ["auto"],
     overflow: ["hidden"],
-    textAlign: ["left", "right", "center", "inherit"],
     textTransform: ["uppercase"],
     textUnderlinePosition: ["under"],
     transform: {
@@ -147,6 +146,7 @@ const responsiveAtomicProperties = defineProperties({
     paddingTop: height,
     position: ["relative", "sticky"],
     rowGap: height,
+    textAlign: ["left", "right", "center", "inherit"],
     top: size,
     width: width,
   },

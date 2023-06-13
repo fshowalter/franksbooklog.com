@@ -1,19 +1,18 @@
 import { graphql } from "gatsby";
-import { getSrc } from "gatsby-plugin-image";
 import { toSentenceArray } from "../../utils/";
 import { AuthorLink } from "../AuthorLink";
 import { Box, IBoxProps } from "../Box";
+import { DateIcon } from "../DateIcon";
 import { Grade } from "../Grade";
 import { GraphqlImage } from "../GraphqlImage";
 import { Layout } from "../Layout";
 import { LongFormText } from "../LongFormText";
-import { MoreReviewsNav } from "../MoreReviews";
 import { MoreReviews } from "../MoreReviews/MoreReviews";
-import { MoreReviewsHeading } from "../MoreReviews/MoreReviewsHeading";
 import { PageTitle } from "../PageTitle";
 import { Spacer } from "../Spacer";
 import { IncludedWorks } from "./IncludedWorks";
 import { ReadingHistory } from "./ReadingHistory";
+import { coverStyle, desktopMarginStyle } from "./Review.css";
 import { StructuredData } from "./StructuredData";
 export function Review({
   reviewData,
@@ -30,42 +29,54 @@ export function Review({
         alignItems="center"
         paddingTop={{ default: 24, desktop: 48 }}
       >
-        <Box
-          as="header"
-          display="flex"
-          flexDirection="column"
-          alignItems="center"
-          paddingX="pageMargin"
-          width="full"
-        >
-          <Title reviewData={reviewData} textAlign="center" />
-          <Authors reviewData={reviewData} />
-          <Spacer axis="vertical" size={8} />
-          <YearAndKind reviewData={reviewData} />
-          <Spacer axis="vertical" size={8} />
-          <Spacer axis="vertical" size={32} />
-          <Cover reviewData={reviewData} />
-        </Box>
-        <Spacer axis="vertical" size={32} />
-        <Box display="flex" flexDirection="column" paddingX="pageMargin">
-          <Box display="flex" flexDirection="column" alignItems="center">
+        <Box className={desktopMarginStyle} maxWidth="popout" width="full">
+          <Box
+            as="header"
+            display="flex"
+            flexDirection="column"
+            alignItems={{ default: "center", desktop: "flex-start" }}
+            paddingX={{ default: "pageMargin", desktop: "gutter" }}
+            width="full"
+          >
+            <Title
+              reviewData={reviewData}
+              textAlign={{ default: "center", desktop: "left" }}
+            />
+            <Spacer axis="vertical" size={8} />
+            <Authors reviewData={reviewData} />
+            <Spacer axis="vertical" size={{ default: 8, desktop: 16 }} />
+            <YearAndKind reviewData={reviewData} />
+            <Spacer axis="vertical" size={16} />
+            <Cover reviewData={reviewData} />
+            <Spacer axis="vertical" size={{ default: 16, desktop: 0 }} />
             <ReviewGrade reviewData={reviewData} />
+            <Spacer axis="vertical" size={{ default: 16, desktop: 24 }} />
             <ReviewDate reviewData={reviewData} />
+            <Spacer axis="vertical" size={32} />
           </Box>
-          <Spacer axis="vertical" size={32} />
-          <LongFormText
-            maxWidth="prose"
-            // eslint-disable-next-line react/no-danger
-            text={reviewData.review.linkedHtml}
+          <Box
+            display="flex"
+            flexDirection="column"
+            paddingX={{ default: "pageMargin", desktop: "gutter" }}
+          >
+            <LongFormText
+              maxWidth="prose"
+              // eslint-disable-next-line react/no-danger
+              text={reviewData.review.linkedHtml}
+            />
+          </Box>
+          <IncludedWorks
+            reviewData={reviewData}
+            // maxWidth="popout"
+            width="full"
+          />
+          <Spacer axis="vertical" size={80} />
+          <ReadingHistory
+            reviewData={reviewData}
+            maxWidth="popout"
+            width="full"
           />
         </Box>
-        <IncludedWorks reviewData={reviewData} maxWidth="popout" width="full" />
-        <Spacer axis="vertical" size={80} />
-        <ReadingHistory
-          reviewData={reviewData}
-          maxWidth="popout"
-          width="full"
-        />
         <Spacer axis="vertical" size={128} />
         <Box
           display="flex"
@@ -77,18 +88,11 @@ export function Review({
           paddingBottom={{ default: 0, tablet: 128 }}
           width="full"
         >
-          <MoreReviewsNav>
-            <MoreReviewsHeading
-              leadText="More"
-              linkText="Reviews"
-              linkTarget="/reviews/"
-            />
-            <MoreReviews
-              works={reviewData.browseMore}
-              seeAllLinkText="Reviews"
-              seeAllLinkTarget="/reviews/"
-            />
-          </MoreReviewsNav>
+          <MoreReviews
+            reviewedWorks={reviewData.browseMore}
+            linkText="Reviews"
+            linkTarget="/reviews/"
+          />
         </Box>
       </Box>
       <StructuredData reviewStructuredData={reviewData} />
@@ -106,16 +110,15 @@ function Title({ reviewData, ...rest }: ITitleProps) {
       <PageTitle>{reviewData.title}</PageTitle>
       {reviewData.subtitle && (
         <>
+          <Spacer axis="vertical" size={8} />
           <Box
-            fontSize="medium"
-            fontWeight="normal"
-            letterSpacing={0.25}
+            fontSize="default"
+            letterSpacing={1}
             color="muted"
             maxWidth="prose"
           >
             {reviewData.subtitle}
           </Box>
-          <Spacer axis="vertical" size={8} />
         </>
       )}
     </Box>
@@ -139,7 +142,7 @@ function YearAndKind({
 
 function Authors({ reviewData }: { reviewData: Queries.ReviewDataFragment }) {
   return (
-    <Box fontSize="medium" textAlign="center">
+    <Box fontSize="medium" textAlign="center" color="muted">
       by{" "}
       {toSentenceArray(
         reviewData.authors.map((author) => (
@@ -156,72 +159,13 @@ function Authors({ reviewData }: { reviewData: Queries.ReviewDataFragment }) {
 
 function Cover({ reviewData }: { reviewData: Queries.ReviewDataFragment }) {
   return (
-    <Box
-      position="relative"
-      width="full"
-      maxWidth="popout"
-      display="flex"
-      flexDirection="column"
-      alignItems="center"
-      style={{
-        height: "350px",
-      }}
-    >
-      <Box
-        style={{
-          position: "absolute",
-          left: "0",
-          right: "0",
-          top: "0",
-          bottom: "0",
-          overflow: "hidden",
-        }}
-      >
-        <Box
-          style={{
-            // filter: `drop-shadow(1px 2px 8px ${rgba(
-            //   reviewData.cover.childImageSharp?.gatsbyImageData.backgroundColor,
-            //   0.8
-            // )}`,
-            backgroundImage: `url(${getSrc(reviewData.cover.childImageSharp)}`,
-            width: "110%",
-            height: "110%",
-            left: "-5%",
-            top: "-5%",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            position: "absolute",
-          }}
-          // display="flex"
-          // flexDirection="column"
-          // alignItems="center"
-          // paddingX={16}
-          // paddingY={32}
-          // maxWidth="popout"
-          // width="full"
-        />
-        <Box
-          style={{
-            position: "absolute",
-            width: "100%",
-            height: "100%",
-            backdropFilter: "blur(8px)",
-          }}
-        />
-      </Box>
+    <Box className={coverStyle}>
       <GraphqlImage
         image={reviewData.cover}
         alt={`A cover of ${reviewData.title} by ${toSentenceArray(
           reviewData.authors.map((a) => a.name)
         ).join("")} (${reviewData.yearPublished})`}
         loading={"eager"}
-        style={{
-          position: "relative",
-          zIndex: "1",
-          top: "-12px",
-          height: "372px",
-          overflow: "unset",
-        }}
       />
     </Box>
   );
@@ -253,14 +197,8 @@ function ReviewDate({
   reviewData: Queries.ReviewDataFragment;
 }) {
   return (
-    <Box
-      display="flex"
-      flexDirection="column"
-      color="subtle"
-      alignItems="inherit"
-      letterSpacing={0.5}
-    >
-      <span>on</span> {reviewData.review.date}
+    <Box display="flex" color="subtle" alignItems="center" letterSpacing={0.5}>
+      <DateIcon /> {reviewData.review.date}
     </Box>
   );
 }
@@ -283,7 +221,7 @@ export const pageQuery = graphql`
     }
     review {
       linkedHtml
-      date(formatString: "ddd MMM DD, YYYY")
+      date(formatString: "MMM DD, YYYY")
     }
     ...ReviewReadingHistory
     cover {
@@ -292,8 +230,8 @@ export const pageQuery = graphql`
           layout: FIXED
           formats: [JPG, AVIF]
           quality: 80
-          width: 248
-          placeholder: DOMINANT_COLOR
+          width: 200
+          placeholder: BLURRED
         )
       }
     }

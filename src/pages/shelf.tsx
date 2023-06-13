@@ -78,7 +78,7 @@ export const pageQuery = graphql`
           ...ShelfPageAuthor
         }
         cover {
-          ...CoverListCover
+          ...CoverGalleryCover
         }
       }
       publishedYears: distinct(field: { yearPublished: SELECT })

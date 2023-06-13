@@ -127,7 +127,7 @@ export const pageQuery = graphql`
         grade
         gradeValue
         cover {
-          ...CoverListCover
+          ...CoverGalleryCover
         }
       }
     }

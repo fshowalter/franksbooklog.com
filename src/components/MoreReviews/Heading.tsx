@@ -1,7 +1,7 @@
 import { Box } from "../Box";
 import { Link } from "../Link";
 
-export function MoreReviewsHeading({
+export function Heading({
   leadText,
   linkText,
   linkTarget,
