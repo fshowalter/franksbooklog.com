@@ -1,5 +1,4 @@
 import { graphql } from "gatsby";
-import { getSrc } from "gatsby-plugin-image";
 import { toSentenceArray } from "../../utils/";
 import { AuthorLink } from "../AuthorLink";
 import { Box, IBoxProps } from "../Box";
@@ -156,6 +155,13 @@ function Authors({ reviewData }: { reviewData: Queries.ReviewDataFragment }) {
 }
 
 function Cover({ reviewData }: { reviewData: Queries.ReviewDataFragment }) {
+  const imageSrc =
+    reviewData.cover.childImageSharp?.gatsbyImageData.images.fallback?.src;
+
+  if (!imageSrc) {
+    return null;
+  }
+
   return (
     <Box
       position="relative"
@@ -172,7 +178,7 @@ function Cover({ reviewData }: { reviewData: Queries.ReviewDataFragment }) {
         <Box
           className={coverBackgroundImageStyle}
           style={{
-            backgroundImage: `url(${getSrc(reviewData.cover.childImageSharp)}`,
+            backgroundImage: `url(${imageSrc})`,
           }}
         />
         <Box className={coverBackgroundBlurStyle} />
