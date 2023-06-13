@@ -1,18 +1,18 @@
 import { DebouncedInput } from "../DebouncedInput";
 import { SelectField, SelectOptions } from "../SelectField";
 import { YearInput } from "../YearInput";
-import { Action, ActionType, Sort } from "./Reviews.reducer";
+import { Action, ActionType, Sort } from "./Shelf.reducer";
 
 export function Filters({
   dispatch,
   sortValue,
   distinctPublishedYears,
-  distinctReviewYears,
+  distinctAuthors,
   distinctKinds,
 }: {
   dispatch: React.Dispatch<Action>;
-  sortValue: Sort;
-  distinctReviewYears: readonly string[];
+  sortValue: string;
+  distinctAuthors: readonly string[];
   distinctPublishedYears: readonly string[];
   distinctKinds: readonly string[];
 }) {
@@ -32,13 +32,6 @@ export function Filters({
           dispatch({ type: ActionType.FILTER_YEAR_PUBLISHED, values })
         }
       />
-      <YearInput
-        label="Year Reviewed"
-        years={distinctReviewYears}
-        onYearChange={(values) =>
-          dispatch({ type: ActionType.FILTER_YEAR_REVIEWED, values })
-        }
-      />
       <SelectField
         label="Kind"
         onChange={(e) =>
@@ -49,6 +42,17 @@ export function Filters({
         }
       >
         <SelectOptions options={distinctKinds} />
+      </SelectField>
+      <SelectField
+        label="Author"
+        onChange={(e) =>
+          dispatch({
+            type: ActionType.FILTER_AUTHOR,
+            value: e.target.value,
+          })
+        }
+      >
+        <SelectOptions options={distinctAuthors} />
       </SelectField>
       <SelectField
         value={sortValue}
@@ -62,8 +66,6 @@ export function Filters({
       >
         <option value="author-asc">Author (A &rarr; Z)</option>
         <option value="author-desc">Author (Z &rarr; A)</option>
-        <option value="review-date-desc">Date Reviewed (Newest First)</option>
-        <option value="review-date--asc">Date Reviewed (Oldest First)</option>
         <option value="year-published-desc">
           Year Published (Newest First)
         </option>
@@ -72,8 +74,6 @@ export function Filters({
         </option>
         <option value="title-asc">Title (A &rarr; Z)</option>
         <option value="title-desc">Title (Z &rarr; A)</option>
-        <option value="grade-desc">Grade (Best First)</option>
-        <option value="grade-asc">Grade (Worst First)</option>
       </SelectField>
     </>
   );

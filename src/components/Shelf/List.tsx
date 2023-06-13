@@ -1,13 +1,12 @@
 import { graphql } from "gatsby";
 import { toSentenceArray } from "../../utils";
 import { Box } from "../Box";
-import { Grade } from "../Grade";
 import { ListItem } from "../ListItem";
 import { ListItemCover } from "../ListItemCover";
 import { ListItemTitle } from "../ListItemTitle";
 import { GroupedList } from "../ListWithFiltersLayout";
 import { Spacer } from "../Spacer";
-import { Action, ActionType } from "./Reviews.reducer";
+import { Action, ActionType } from "./Shelf.reducer";
 
 export function List({
   groupedItems,
@@ -15,7 +14,7 @@ export function List({
   visibleCount,
   dispatch,
 }: {
-  groupedItems: Map<string, Queries.ReviewsListItemFragment[]>;
+  groupedItems: Map<string, Queries.ShelfListItemFragment[]>;
   totalCount: number;
   visibleCount: number;
   dispatch: React.Dispatch<Action>;
@@ -28,20 +27,20 @@ export function List({
       totalCount={totalCount}
       onShowMore={() => dispatch({ type: ActionType.SHOW_MORE })}
     >
-      {(item) => <ReviewsListItem item={item} key={item.slug} />}
+      {(item) => <ShelfListItem item={item} key={item.slug} />}
     </GroupedList>
   );
 }
 
-function ReviewsListItem({
+function ShelfListItem({
   item,
 }: {
-  item: Queries.ReviewsListItemFragment;
+  item: Queries.ShelfListItemFragment;
 }): JSX.Element {
   return (
     <ListItem alignItems="center">
       <ListItemCover
-        slug={item.slug}
+        slug={undefined}
         image={item.cover}
         title={item.title}
         flexShrink={0}
@@ -52,13 +51,11 @@ function ReviewsListItem({
         paddingRight={{ default: "gutter", desktop: 16 }}
       >
         <Box>
-          <ListItemTitle title={item.title} slug={item.slug} />
+          <ListItemTitle title={item.title} slug={undefined} />
           <Spacer axis="vertical" size={4} />
           <Authors authors={item.authors} />
           <Spacer axis="vertical" size={8} />
           <YearAndKind year={item.yearPublished} kind={item.kind} />
-          <Spacer axis="vertical" size={8} />
-          <Grade grade={item.grade} height={16} />
           <Spacer axis="vertical" size={8} />
         </Box>
       </Box>
@@ -69,7 +66,7 @@ function ReviewsListItem({
 function Authors({
   authors,
 }: {
-  authors: readonly Queries.ReviewsListItemAuthorFragment[];
+  authors: readonly Queries.ShelfListItemAuthorFragment[];
 }) {
   return (
     <Box color="muted" fontSize="default" lineHeight={20}>
@@ -94,26 +91,21 @@ function YearAndKind({
 }
 
 export const query = graphql`
-  fragment ReviewsListItemAuthor on WorkAuthor {
+  fragment ShelfListItemAuthor on WorkAuthor {
     name
     notes
     sortName
   }
 
-  fragment ReviewsListItem on ReviewedWorksJson {
+  fragment ShelfListItem on WorksJson {
     id
-    grade
     slug
-    reviewDate(formatString: "MMM D, YYYY")
-    gradeValue
     title
     yearPublished
-    reviewMonth: reviewDate(formatString: "MMMM")
-    reviewYear
     sortTitle
     kind
     authors {
-      ...ReviewsListItemAuthor
+      ...ShelfListItemAuthor
     }
     cover {
       ...ListItemCover

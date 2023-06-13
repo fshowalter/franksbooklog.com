@@ -27,7 +27,7 @@ interface PageContext {
   currentPage: number;
 }
 
-export default function HomePage({
+export default function HomeTemplate({
   pageContext,
   data,
 }: {

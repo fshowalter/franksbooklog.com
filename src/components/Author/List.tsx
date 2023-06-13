@@ -47,7 +47,7 @@ function WorkListItem({
   return (
     <ListItem alignItems="center">
       <ListItemCover
-        slug={item.slug}
+        slug={item.review ? item.slug : null}
         image={item.cover}
         title={item.title}
         flexShrink={0}
