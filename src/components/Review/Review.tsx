@@ -1,18 +1,23 @@
 import { graphql } from "gatsby";
+import { getSrc } from "gatsby-plugin-image";
 import { toSentenceArray } from "../../utils/";
 import { AuthorLink } from "../AuthorLink";
 import { Box, IBoxProps } from "../Box";
-import { DateIcon } from "../DateIcon";
 import { Grade } from "../Grade";
 import { GraphqlImage } from "../GraphqlImage";
 import { Layout } from "../Layout";
 import { LongFormText } from "../LongFormText";
-import { MoreReviews } from "../MoreReviews/MoreReviews";
+import { MoreReviews } from "../MoreReviews";
 import { PageTitle } from "../PageTitle";
 import { Spacer } from "../Spacer";
 import { IncludedWorks } from "./IncludedWorks";
 import { ReadingHistory } from "./ReadingHistory";
-import { coverStyle, desktopMarginStyle } from "./Review.css";
+import {
+  coverBackgroundBlurStyle,
+  coverBackgroundImageStyle,
+  coverBackgroundWrapStyle,
+  coverStyle,
+} from "./Review.css";
 import { StructuredData } from "./StructuredData";
 export function Review({
   reviewData,
@@ -29,54 +34,48 @@ export function Review({
         alignItems="center"
         paddingTop={{ default: 24, desktop: 48 }}
       >
-        <Box className={desktopMarginStyle} maxWidth="popout" width="full">
-          <Box
-            as="header"
-            display="flex"
-            flexDirection="column"
-            alignItems={{ default: "center", desktop: "flex-start" }}
-            paddingX={{ default: "pageMargin", desktop: "gutter" }}
-            width="full"
-          >
-            <Title
-              reviewData={reviewData}
-              textAlign={{ default: "center", desktop: "left" }}
-            />
-            <Spacer axis="vertical" size={8} />
-            <Authors reviewData={reviewData} />
-            <Spacer axis="vertical" size={{ default: 8, desktop: 16 }} />
-            <YearAndKind reviewData={reviewData} />
-            <Spacer axis="vertical" size={16} />
-            <Cover reviewData={reviewData} />
-            <Spacer axis="vertical" size={{ default: 16, desktop: 0 }} />
-            <ReviewGrade reviewData={reviewData} />
-            <Spacer axis="vertical" size={{ default: 16, desktop: 24 }} />
-            <ReviewDate reviewData={reviewData} />
-            <Spacer axis="vertical" size={32} />
-          </Box>
-          <Box
-            display="flex"
-            flexDirection="column"
-            paddingX={{ default: "pageMargin", desktop: "gutter" }}
-          >
-            <LongFormText
-              maxWidth="prose"
-              // eslint-disable-next-line react/no-danger
-              text={reviewData.review.linkedHtml}
-            />
-          </Box>
-          <IncludedWorks
-            reviewData={reviewData}
-            // maxWidth="popout"
-            width="full"
-          />
-          <Spacer axis="vertical" size={80} />
-          <ReadingHistory
-            reviewData={reviewData}
-            maxWidth="popout"
-            width="full"
+        <Box
+          as="header"
+          display="flex"
+          flexDirection="column"
+          alignItems="center"
+          paddingX="pageMargin"
+          width="full"
+        >
+          <Title reviewData={reviewData} textAlign="center" />
+          <Spacer axis="vertical" size={8} />
+          <Authors reviewData={reviewData} />
+          <Spacer axis="vertical" size={{ default: 8, desktop: 16 }} />
+          <YearAndKind reviewData={reviewData} />
+          <Spacer axis="vertical" size={32} />
+          <Cover reviewData={reviewData} />
+          <Spacer axis="vertical" size={48} />
+          <ReviewGrade reviewData={reviewData} />
+          <ReviewDate reviewData={reviewData} />
+          <Spacer axis="vertical" size={32} />
+        </Box>
+        <Box
+          display="flex"
+          flexDirection="column"
+          paddingX={{ default: "pageMargin", desktop: "gutter" }}
+        >
+          <LongFormText
+            maxWidth="prose"
+            // eslint-disable-next-line react/no-danger
+            text={reviewData.review.linkedHtml}
           />
         </Box>
+        <IncludedWorks
+          reviewData={reviewData}
+          // maxWidth="popout"
+          width="full"
+        />
+        <Spacer axis="vertical" size={80} />
+        <ReadingHistory
+          reviewData={reviewData}
+          maxWidth="popout"
+          width="full"
+        />
         <Spacer axis="vertical" size={128} />
         <Box
           display="flex"
@@ -110,7 +109,6 @@ function Title({ reviewData, ...rest }: ITitleProps) {
       <PageTitle>{reviewData.title}</PageTitle>
       {reviewData.subtitle && (
         <>
-          <Spacer axis="vertical" size={8} />
           <Box
             fontSize="default"
             letterSpacing={1}
@@ -159,13 +157,33 @@ function Authors({ reviewData }: { reviewData: Queries.ReviewDataFragment }) {
 
 function Cover({ reviewData }: { reviewData: Queries.ReviewDataFragment }) {
   return (
-    <Box className={coverStyle}>
+    <Box
+      position="relative"
+      width="full"
+      maxWidth="popout"
+      display="flex"
+      flexDirection="column"
+      alignItems="center"
+      style={{
+        height: "340px",
+      }}
+    >
+      <Box className={coverBackgroundWrapStyle}>
+        <Box
+          className={coverBackgroundImageStyle}
+          style={{
+            backgroundImage: `url(${getSrc(reviewData.cover.childImageSharp)}`,
+          }}
+        />
+        <Box className={coverBackgroundBlurStyle} />
+      </Box>
       <GraphqlImage
         image={reviewData.cover}
         alt={`A cover of ${reviewData.title} by ${toSentenceArray(
           reviewData.authors.map((a) => a.name)
         ).join("")} (${reviewData.yearPublished})`}
         loading={"eager"}
+        className={coverStyle}
       />
     </Box>
   );
@@ -188,7 +206,7 @@ function ReviewGrade({
       </Box>
     );
   }
-  return <Grade grade={reviewData.grade} height={24} />;
+  return <Grade grade={reviewData.grade} height={32} />;
 }
 
 function ReviewDate({
@@ -197,8 +215,14 @@ function ReviewDate({
   reviewData: Queries.ReviewDataFragment;
 }) {
   return (
-    <Box display="flex" color="subtle" alignItems="center" letterSpacing={0.5}>
-      <DateIcon /> {reviewData.review.date}
+    <Box
+      display="flex"
+      color="subtle"
+      flexDirection="column"
+      alignItems="center"
+      letterSpacing={0.5}
+    >
+      <span>on</span> {reviewData.review.date}
     </Box>
   );
 }
@@ -230,7 +254,7 @@ export const pageQuery = graphql`
           layout: FIXED
           formats: [JPG, AVIF]
           quality: 80
-          width: 200
+          width: 248
           placeholder: BLURRED
         )
       }
