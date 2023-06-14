@@ -1,11 +1,11 @@
 import type { CreateSchemaCustomizationArgs } from "gatsby";
-import { MarkdownNodeKindEnum } from "./enums/MarkdownNodeKindEnum";
 import { linkReviewedWorksExtension } from "./extensions/linkReviewedWorks";
 import { proxyToReviewExtension } from "./extensions/proxyToReview";
 import { proxyToWorkExtension } from "./extensions/proxyToWork";
 import { AuthorsJson } from "./objects/AuthorsJson";
 import { MarkdownRemark } from "./objects/MarkdownRemark";
 import { MostReadAuthor } from "./objects/MostReadAuthor";
+import { ProgressJson } from "./objects/ProgressJson";
 import { ReadingWithReview } from "./objects/ReadingWithReview";
 import { ReadingsJson } from "./objects/ReadingsJson";
 import { ReviewedWorksJson } from "./objects/ReviewedWorksJson";
@@ -24,7 +24,6 @@ export function createSchemaCustomization({
   createFieldExtension(linkReviewedWorksExtension);
 
   const typeDefs = [
-    schema.buildEnumType(MarkdownNodeKindEnum),
     schema.buildObjectType(TimelineEntry),
     schema.buildObjectType(WorkAuthor),
     schema.buildObjectType(MarkdownRemark),
@@ -34,6 +33,7 @@ export function createSchemaCustomization({
     schema.buildObjectType(ReadingsJson),
     schema.buildObjectType(MostReadAuthor),
     schema.buildObjectType(ReviewedWorksJson),
+    schema.buildObjectType(ProgressJson),
   ];
 
   createTypes(typeDefs);

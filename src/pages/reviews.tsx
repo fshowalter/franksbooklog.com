@@ -13,15 +13,11 @@ export function Head(): JSX.Element {
   );
 }
 
-/**
- * Renders the reviews page.
- */
 export default function ReviewsPage({
   data,
 }: {
   data: Queries.ReviewsPageQuery;
 }): JSX.Element {
-  console.log(data);
   return (
     <Reviews
       items={data.reviewedWork.nodes}

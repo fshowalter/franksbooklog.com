@@ -90,6 +90,7 @@ const responsiveAtomicProperties = defineProperties({
     alignItems: ["center", "inherit", "flex-start", "baseline", "stretch"],
     backgroundColor: {
       ...backgroundColors,
+      unset: "unset",
       zebra: {
         selectors: {
           "&:nth-child(even)": {
