@@ -53,7 +53,7 @@ export const mostReadAuthorsQuery = {
           }
 
           for (const readingAuthor of authors) {
-            currentValue[readingAuthor.slug] ||= [];
+            currentValue[readingAuthor.slug] ||= []; // eslint-disable-line @typescript-eslint/no-unnecessary-condition
             currentValue[readingAuthor.slug].push(reading);
           }
 
@@ -83,12 +83,7 @@ export const mostReadAuthorsQuery = {
           mostReadAuthors.push({
             name: author.name,
             count: authors[authorSlug].length,
-            slug: await resolveFieldForNode<string>({
-              fieldName: "slug",
-              source: author,
-              context,
-              info,
-            }),
+            slug: author.slug,
             readings: authors[authorSlug],
           });
         }
