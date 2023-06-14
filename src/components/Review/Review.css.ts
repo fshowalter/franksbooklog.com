@@ -5,14 +5,13 @@ export const coverStyle = style({
   zIndex: "1",
   top: "-16px",
   height: "372px",
-  overflow: "unset",
+  overflow: "unset !important",
   boxShadow: "0 5px 20px rgba(49, 46, 42, 0.22)",
 });
 
 globalStyle(`${coverStyle} img`, {
   height: "unset !important",
   boxShadow: "0 5px 20px rgba(49, 46, 42, 0.22)",
-  overflow: "unset !important",
 });
 
 export const coverBackgroundWrapStyle = style({
