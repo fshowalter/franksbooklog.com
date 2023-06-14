@@ -1,6 +1,5 @@
 import { graphql } from "gatsby";
-import { Reviews } from "../components";
-import { HeadBuilder } from "../components/HeadBuilder";
+import { HeadBuilder, Reviews } from "../components";
 
 export function Head(): JSX.Element {
   return (
