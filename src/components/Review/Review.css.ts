@@ -10,7 +10,7 @@ export const coverStyle = style({
 });
 
 globalStyle(`${coverStyle} img`, {
-  height: "unset",
+  height: "unset !important",
   boxShadow: "0 5px 20px rgba(49, 46, 42, 0.22)",
 });
 
@@ -21,8 +21,6 @@ export const coverBackgroundWrapStyle = style({
   top: "0",
   bottom: "0",
   overflow: "hidden",
-  // opacity: ".6",
-  // borderRadius: "8px",
 });
 
 export const coverBackgroundImageStyle = style({
