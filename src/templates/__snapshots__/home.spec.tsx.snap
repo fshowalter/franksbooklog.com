@@ -3,25 +3,25 @@
 exports[`/ can render last page 1`] = `
 <DocumentFragment>
   <a
-    class="Layout_skipToMainContentStyle__1824noh3 sprinkles_paddingLeft_24_default__1lrvpk9cz sprinkles_paddingRight_24_default__1lrvpk9en sprinkles_paddingTop_8_default__1lrvpk9g5 sprinkles_paddingBottom_8_default__1lrvpk9bn sprinkles_backgroundColor_subtle_default__1lrvpk925 sprinkles_color_accent__1lrvpk94 sprinkles_textAlign_center__1lrvpk918"
+    class="Layout_skipToMainContentStyle__1824noh3 sprinkles_paddingLeft_24_default__1lrvpk9ed sprinkles_paddingRight_24_default__1lrvpk9gg sprinkles_paddingTop_8_default__1lrvpk9id sprinkles_paddingBottom_8_default__1lrvpk9d1 sprinkles_backgroundColor_subtle_default__1lrvpk927 sprinkles_color_accent__1lrvpk94 sprinkles_textAlign_center_default__1lrvpk9kv"
     href="#content"
   >
     Skip to content
   </a>
   <div
-    class="Layout_bandStickyStyle__1824noh1 backgroundImage_ripNotComingSoonBackgroundImageStyle__ewlb040 sprinkles_minHeight_16_default__1lrvpk98w sprinkles_width_full_default__1lrvpk9kh"
+    class="Layout_bandStickyStyle__1824noh1 backgroundImage_ripNotComingSoonBackgroundImageStyle__ewlb040 sprinkles_minHeight_16_default__1lrvpk99v sprinkles_width_full_default__1lrvpk9ng"
   />
   <div
-    class="Layout_pageCanvasStyle__1824noh0 sprinkles_backgroundColor_default_default__1lrvpk91z sprinkles_display_flex_default__1lrvpk94q sprinkles_flexDirection_column_default__1lrvpk958"
+    class="Layout_pageCanvasStyle__1824noh0 sprinkles_backgroundColor_default_default__1lrvpk921 sprinkles_display_flex_default__1lrvpk95a sprinkles_flexDirection_column_default__1lrvpk95s"
   >
     <header
-      class="Layout_headerLayoutStyle__1824noh2 sprinkles_paddingLeft_pageMargin_default__1lrvpk9e8 sprinkles_paddingRight_pageMargin_default__1lrvpk9fw sprinkles_paddingTop_24_default__1lrvpk9gb sprinkles_paddingTop_32_desktop__1lrvpk9gg sprinkles_paddingBottom_24_default__1lrvpk9bt sprinkles_paddingBottom_32_desktop__1lrvpk9by sprinkles_display_flex_default__1lrvpk94q sprinkles_rowGap_24_default__1lrvpk9hn sprinkles_alignItems_center_default__1lrvpk91h sprinkles_boxShadow_borderBottom_default__1lrvpk92q sprinkles_backgroundColor_default_default__1lrvpk91z"
+      class="Layout_headerLayoutStyle__1824noh2 sprinkles_paddingLeft_pageMargin_default__1lrvpk9g1 sprinkles_paddingRight_pageMargin_default__1lrvpk9i4 sprinkles_paddingTop_24_default__1lrvpk9ij sprinkles_paddingTop_32_desktop__1lrvpk9io sprinkles_paddingBottom_24_default__1lrvpk9d7 sprinkles_paddingBottom_32_desktop__1lrvpk9dc sprinkles_display_flex_default__1lrvpk95a sprinkles_rowGap_24_default__1lrvpk9jv sprinkles_alignItems_center_default__1lrvpk91g sprinkles_boxShadow_borderBottom_default__1lrvpk92v sprinkles_backgroundColor_default_default__1lrvpk921"
     >
       <div
-        class="sprinkles_display_flex_default__1lrvpk94q sprinkles_flexDirection_column_default__1lrvpk958 sprinkles_alignItems_inherit_default__1lrvpk91k sprinkles_justifyItems_inherit__1lrvpk9r"
+        class="sprinkles_display_flex_default__1lrvpk95a sprinkles_flexDirection_column_default__1lrvpk95s sprinkles_alignItems_inherit_default__1lrvpk91j sprinkles_justifyItems_inherit__1lrvpk9t"
       >
         <h1
-          class="Mast_flagTypographyStyle__1107qlt0 sprinkles_whiteSpace_nowrap__1lrvpk91d sprinkles_fontWeight_normal__1lrvpk9n"
+          class="Mast_flagTypographyStyle__1107qlt0 sprinkles_whiteSpace_nowrap__1lrvpk91c sprinkles_fontWeight_normal__1lrvpk9p"
         >
           <a
             class="sprinkles_color_default__1lrvpk95"
@@ -31,7 +31,7 @@ exports[`/ can render last page 1`] = `
           </a>
         </h1>
         <p
-          class="Mast_taglineStyle__1107qlt1 sprinkles_color_muted__1lrvpk96 sprinkles_lineHeight_16__1lrvpk9x sprinkles_width_full_default__1lrvpk9kh sprinkles_fontSize_small__1lrvpk9h"
+          class="Mast_taglineStyle__1107qlt1 sprinkles_color_muted__1lrvpk96 sprinkles_lineHeight_16__1lrvpk9z sprinkles_width_full_default__1lrvpk9ng sprinkles_fontSize_small__1lrvpk9j"
         >
           Literature is a relative term.
         </p>
@@ -39,12 +39,12 @@ exports[`/ can render last page 1`] = `
       <form
         accept-charset="UTF-8"
         action="https://www.google.com/search"
-        class="Mast_orderStyle__1107qlt3 sprinkles_boxShadow_borderAll_default__1lrvpk92t sprinkles_borderRadius_4__1lrvpk90 sprinkles_overflow_hidden__1lrvpk915 sprinkles_width_full_default__1lrvpk9kh sprinkles_width_unset_desktop__1lrvpk9kp sprinkles_maxWidth_prose_default__1lrvpk98e"
+        class="Mast_orderStyle__1107qlt3 sprinkles_boxShadow_borderAll_default__1lrvpk92y sprinkles_borderRadius_4__1lrvpk90 sprinkles_overflow_hidden__1lrvpk918 sprinkles_width_full_default__1lrvpk9ng sprinkles_width_unset_desktop__1lrvpk9no sprinkles_maxWidth_prose_default__1lrvpk99d"
         method="get"
         role="search"
       >
         <label
-          class="sprinkles_display_flex_default__1lrvpk94q sprinkles_overflow_hidden__1lrvpk915"
+          class="sprinkles_display_flex_default__1lrvpk95a sprinkles_overflow_hidden__1lrvpk918"
           for="search"
         >
           <div
@@ -53,7 +53,7 @@ exports[`/ can render last page 1`] = `
             Search
           </div>
           <input
-            class="SiteSearchForm_searchInputStyle__p9uc60 sprinkles_paddingLeft_16_default__1lrvpk9cw sprinkles_paddingRight_16_default__1lrvpk9ek sprinkles_paddingTop_8_default__1lrvpk9g5 sprinkles_paddingBottom_8_default__1lrvpk9bn sprinkles_backgroundColor_subtle_default__1lrvpk925 sprinkles_color_default__1lrvpk95 sprinkles_fontSize_default__1lrvpk9i sprinkles_fontWeight_light__1lrvpk9m sprinkles_lineHeight_24__1lrvpk9y sprinkles_flexGrow_1__1lrvpk9e"
+            class="SiteSearchForm_searchInputStyle__p9uc60 sprinkles_paddingLeft_16_default__1lrvpk9ea sprinkles_paddingRight_16_default__1lrvpk9gd sprinkles_paddingTop_8_default__1lrvpk9id sprinkles_paddingBottom_8_default__1lrvpk9d1 sprinkles_backgroundColor_subtle_default__1lrvpk927 sprinkles_color_default__1lrvpk95 sprinkles_fontSize_default__1lrvpk9k sprinkles_fontWeight_light__1lrvpk9o sprinkles_lineHeight_24__1lrvpk911 sprinkles_flexGrow_1__1lrvpk9g"
             id="search"
             name="q"
             placeholder="Search..."
@@ -66,7 +66,7 @@ exports[`/ can render last page 1`] = `
           />
           <button
             aria-label="Search"
-            class="SiteSearchForm_submitButtonStyle__p9uc61 sprinkles_backgroundColor_subtle_default__1lrvpk925"
+            class="SiteSearchForm_submitButtonStyle__p9uc61 sprinkles_backgroundColor_subtle_default__1lrvpk927"
             type="submit"
             value="Search"
           >
@@ -93,10 +93,10 @@ exports[`/ can render last page 1`] = `
         class="sprinkles_color_accent__1lrvpk94"
       >
         <ul
-          class="sprinkles_display_flex_default__1lrvpk94q sprinkles_flexWrap_wrap_default__1lrvpk95b sprinkles_justifyContent_center_default__1lrvpk96q sprinkles_rowGap_8_default__1lrvpk9hh sprinkles_columnGap_16_default__1lrvpk935 sprinkles_columnGap_24_tablet__1lrvpk939"
+          class="sprinkles_display_flex_default__1lrvpk95a sprinkles_flexWrap_wrap_default__1lrvpk95v sprinkles_justifyContent_center_default__1lrvpk97a sprinkles_rowGap_8_default__1lrvpk9jp sprinkles_columnGap_16_default__1lrvpk93a sprinkles_columnGap_24_tablet__1lrvpk93e"
         >
           <li
-            class="sprinkles_display_block_default__1lrvpk94k sprinkles_letterSpacing_0.5__1lrvpk9u sprinkles_whiteSpace_nowrap__1lrvpk91d"
+            class="sprinkles_display_block_default__1lrvpk954 sprinkles_letterSpacing_0.5__1lrvpk9w sprinkles_whiteSpace_nowrap__1lrvpk91c"
           >
             <a
               class="sprinkles_color_inherit__1lrvpk99"
@@ -106,7 +106,7 @@ exports[`/ can render last page 1`] = `
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__1lrvpk94k sprinkles_letterSpacing_0.5__1lrvpk9u sprinkles_whiteSpace_nowrap__1lrvpk91d"
+            class="sprinkles_display_block_default__1lrvpk954 sprinkles_letterSpacing_0.5__1lrvpk9w sprinkles_whiteSpace_nowrap__1lrvpk91c"
           >
             <a
               class="sprinkles_color_inherit__1lrvpk99"
@@ -116,7 +116,7 @@ exports[`/ can render last page 1`] = `
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__1lrvpk94k sprinkles_letterSpacing_0.5__1lrvpk9u sprinkles_whiteSpace_nowrap__1lrvpk91d"
+            class="sprinkles_display_block_default__1lrvpk954 sprinkles_letterSpacing_0.5__1lrvpk9w sprinkles_whiteSpace_nowrap__1lrvpk91c"
           >
             <a
               class="sprinkles_color_inherit__1lrvpk99"
@@ -126,7 +126,17 @@ exports[`/ can render last page 1`] = `
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__1lrvpk94k sprinkles_letterSpacing_0.5__1lrvpk9u sprinkles_whiteSpace_nowrap__1lrvpk91d"
+            class="sprinkles_display_block_default__1lrvpk954 sprinkles_letterSpacing_0.5__1lrvpk9w sprinkles_whiteSpace_nowrap__1lrvpk91c"
+          >
+            <a
+              class="sprinkles_color_inherit__1lrvpk99"
+              href="/readings/"
+            >
+              Reading Log
+            </a>
+          </li>
+          <li
+            class="sprinkles_display_block_default__1lrvpk954 sprinkles_letterSpacing_0.5__1lrvpk9w sprinkles_whiteSpace_nowrap__1lrvpk91c"
           >
             <a
               class="sprinkles_color_inherit__1lrvpk99"
@@ -139,30 +149,30 @@ exports[`/ can render last page 1`] = `
       </nav>
     </header>
     <div
-      class="sprinkles_flexGrow_1__1lrvpk9e"
+      class="sprinkles_flexGrow_1__1lrvpk9g"
       id="content"
     >
       <main>
         <ol
-          class="sprinkles_display_flex_default__1lrvpk94q sprinkles_flexDirection_column_default__1lrvpk958"
+          class="sprinkles_display_flex_default__1lrvpk95a sprinkles_flexDirection_column_default__1lrvpk95s"
         >
           <li
-            class="sprinkles_display_flex_default__1lrvpk94q sprinkles_backgroundColor_zebra_default__1lrvpk92e"
+            class="sprinkles_display_flex_default__1lrvpk95a sprinkles_backgroundColor_zebra_default__1lrvpk92j"
             value="2"
           >
             <article
-              class="HomePageItem_gridStyle__4ajsvx2 sprinkles_paddingLeft_pageMargin_default__1lrvpk9e8 sprinkles_paddingRight_pageMargin_default__1lrvpk9fw"
+              class="ListItem_gridStyle__fsx6n52 sprinkles_paddingLeft_pageMargin_default__1lrvpk9g1 sprinkles_paddingRight_pageMargin_default__1lrvpk9i4"
             >
               <div
-                class="HomePageItem_gridAreas_date__4ajsvx5 sprinkles_textTransform_uppercase__1lrvpk91a sprinkles_fontSize_small__1lrvpk9h sprinkles_fontWeight_light__1lrvpk9m sprinkles_letterSpacing_0.75__1lrvpk9v sprinkles_lineHeight_16__1lrvpk9x sprinkles_color_subtle__1lrvpk97"
+                class="ListItem_gridAreas_date__fsx6n55 sprinkles_textTransform_uppercase__1lrvpk919 sprinkles_fontSize_small__1lrvpk9j sprinkles_fontWeight_light__1lrvpk9o sprinkles_letterSpacing_0.75__1lrvpk9x sprinkles_lineHeight_16__1lrvpk9z sprinkles_color_subtle__1lrvpk97"
               >
                 21 Jan 2023
               </div>
               <div
-                class="HomePageItem_gridAreas_cover__4ajsvx3 sprinkles_maxWidth_prose_default__1lrvpk98e"
+                class="ListItem_gridAreas_cover__fsx6n53 sprinkles_maxWidth_prose_default__1lrvpk99d"
               >
                 <a
-                  class="HomePageItem_coverBorderStyle__4ajsvx0 sprinkles_display_block_default__1lrvpk94k"
+                  class="ListItem_coverBorderStyle__fsx6n50 sprinkles_display_block_default__1lrvpk954"
                   href="/reviews/roadside-pickup-by-richard-laymon/"
                   rel="canonical"
                 >
@@ -207,35 +217,32 @@ exports[`/ can render last page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__4ajsvx4"
+                class="ListItem_gridAreas_excerpt__fsx6n54"
               >
                 <div
-                  class="sprinkles_display_flex_default__1lrvpk94q sprinkles_flexDirection_column_default__1lrvpk958 sprinkles_alignItems_center_default__1lrvpk91h sprinkles_alignItems_flex-start_desktop__1lrvpk91p"
+                  class="sprinkles_display_flex_default__1lrvpk95a sprinkles_flexDirection_column_default__1lrvpk95s sprinkles_alignItems_center_default__1lrvpk91g sprinkles_alignItems_flex-start_desktop__1lrvpk91o"
                 >
                   <div
-                    class="sprinkles_textTransform_uppercase__1lrvpk91a sprinkles_fontSize_small__1lrvpk9h sprinkles_fontWeight_light__1lrvpk9m sprinkles_letterSpacing_0.75__1lrvpk9v sprinkles_lineHeight_16__1lrvpk9x sprinkles_color_subtle__1lrvpk97"
+                    class="sprinkles_textTransform_uppercase__1lrvpk919 sprinkles_fontSize_small__1lrvpk9j sprinkles_fontWeight_light__1lrvpk9o sprinkles_letterSpacing_0.75__1lrvpk9x sprinkles_lineHeight_16__1lrvpk9z sprinkles_color_subtle__1lrvpk97"
                   >
                     1974 | Short Story
                   </div>
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_24_default__1lrvpk95t sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_24_default__1lrvpk98z sprinkles_display_block_default__1lrvpk94k"
+                    class="sprinkles_width_px_default__1lrvpk9na sprinkles_height_16_default__1lrvpk96a sprinkles_minWidth_px_default__1lrvpk9c4 sprinkles_minHeight_16_default__1lrvpk99v sprinkles_display_block_default__1lrvpk954"
                   />
                   <h2
-                    class="sprinkles_fontWeight_bold__1lrvpk9p sprinkles_fontSize_large__1lrvpk9k sprinkles_lineHeight_32__1lrvpk9z sprinkles_textAlign_center__1lrvpk918"
+                    class="sprinkles_fontWeight_bold__1lrvpk9r sprinkles_fontSize_large__1lrvpk9m sprinkles_lineHeight_32__1lrvpk912 sprinkles_textAlign_center_default__1lrvpk9kv"
                   >
                     <a
-                      class="sprinkles_color_default__1lrvpk95 sprinkles_display_inline-block_default__1lrvpk94z"
+                      class="sprinkles_color_default__1lrvpk95 sprinkles_display_inline-block_default__1lrvpk95j"
                       href="/reviews/roadside-pickup-by-richard-laymon/"
                       rel="canonical"
                     >
                       Roadside Pickup
                     </a>
                   </h2>
-                  <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_16_default__1lrvpk95q sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_16_default__1lrvpk98w sprinkles_display_block_default__1lrvpk94k"
-                  />
                   <p
-                    class="sprinkles_textAlign_center__1lrvpk918"
+                    class="sprinkles_textAlign_center_default__1lrvpk9kv"
                   >
                     by 
                     <span>
@@ -248,20 +255,20 @@ exports[`/ can render last page 1`] = `
                   </p>
                    
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_24_default__1lrvpk95t sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_24_default__1lrvpk98z sprinkles_display_block_default__1lrvpk94k"
+                    class="sprinkles_width_px_default__1lrvpk9na sprinkles_height_16_default__1lrvpk96a sprinkles_minWidth_px_default__1lrvpk9c4 sprinkles_minHeight_16_default__1lrvpk99v sprinkles_display_block_default__1lrvpk954"
                   />
                   <img
                     alt="C-: 3 stars (out of 5)"
-                    height="32"
+                    height="24"
                     src="/svg/3-stars.svg"
-                    width="160"
+                    width="120"
                   />
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_24_default__1lrvpk95t sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_24_default__1lrvpk98z sprinkles_display_block_default__1lrvpk94k"
+                    class="sprinkles_width_px_default__1lrvpk9na sprinkles_height_16_default__1lrvpk96a sprinkles_minWidth_px_default__1lrvpk9c4 sprinkles_minHeight_16_default__1lrvpk99v sprinkles_display_block_default__1lrvpk954"
                   />
                 </div>
                 <div
-                  class="RenderedMarkdown_renderedMarkdownStyle__w2sssm0 HomePageItem_excerptContinueReadingLinkStyle__4ajsvx1 sprinkles_fontWeight_light__1lrvpk9m"
+                  class="RenderedMarkdown_renderedMarkdownStyle__w2sssm0 ListItem_excerptContinueReadingLinkStyle__fsx6n51 sprinkles_fontWeight_light__1lrvpk9o"
                 >
                   <p>
                     Early morning darkness. Colleen sits stranded in her car. Three hours have produced three cars. None have stopped. But the fourth does. A young man with fashionable clothes and booze on his breath. Won’t she let him give her a ride?
@@ -276,22 +283,22 @@ exports[`/ can render last page 1`] = `
             </article>
           </li>
           <li
-            class="sprinkles_display_flex_default__1lrvpk94q sprinkles_backgroundColor_zebra_default__1lrvpk92e"
+            class="sprinkles_display_flex_default__1lrvpk95a sprinkles_backgroundColor_zebra_default__1lrvpk92j"
             value="1"
           >
             <article
-              class="HomePageItem_gridStyle__4ajsvx2 sprinkles_paddingLeft_pageMargin_default__1lrvpk9e8 sprinkles_paddingRight_pageMargin_default__1lrvpk9fw"
+              class="ListItem_gridStyle__fsx6n52 sprinkles_paddingLeft_pageMargin_default__1lrvpk9g1 sprinkles_paddingRight_pageMargin_default__1lrvpk9i4"
             >
               <div
-                class="HomePageItem_gridAreas_date__4ajsvx5 sprinkles_textTransform_uppercase__1lrvpk91a sprinkles_fontSize_small__1lrvpk9h sprinkles_fontWeight_light__1lrvpk9m sprinkles_letterSpacing_0.75__1lrvpk9v sprinkles_lineHeight_16__1lrvpk9x sprinkles_color_subtle__1lrvpk97"
+                class="ListItem_gridAreas_date__fsx6n55 sprinkles_textTransform_uppercase__1lrvpk919 sprinkles_fontSize_small__1lrvpk9j sprinkles_fontWeight_light__1lrvpk9o sprinkles_letterSpacing_0.75__1lrvpk9x sprinkles_lineHeight_16__1lrvpk9z sprinkles_color_subtle__1lrvpk97"
               >
                 21 Jan 2023
               </div>
               <div
-                class="HomePageItem_gridAreas_cover__4ajsvx3 sprinkles_maxWidth_prose_default__1lrvpk98e"
+                class="ListItem_gridAreas_cover__fsx6n53 sprinkles_maxWidth_prose_default__1lrvpk99d"
               >
                 <a
-                  class="HomePageItem_coverBorderStyle__4ajsvx0 sprinkles_display_block_default__1lrvpk94k"
+                  class="ListItem_coverBorderStyle__fsx6n50 sprinkles_display_block_default__1lrvpk954"
                   href="/reviews/fright-night-by-john-skipp-craig-spector/"
                   rel="canonical"
                 >
@@ -336,35 +343,32 @@ exports[`/ can render last page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__4ajsvx4"
+                class="ListItem_gridAreas_excerpt__fsx6n54"
               >
                 <div
-                  class="sprinkles_display_flex_default__1lrvpk94q sprinkles_flexDirection_column_default__1lrvpk958 sprinkles_alignItems_center_default__1lrvpk91h sprinkles_alignItems_flex-start_desktop__1lrvpk91p"
+                  class="sprinkles_display_flex_default__1lrvpk95a sprinkles_flexDirection_column_default__1lrvpk95s sprinkles_alignItems_center_default__1lrvpk91g sprinkles_alignItems_flex-start_desktop__1lrvpk91o"
                 >
                   <div
-                    class="sprinkles_textTransform_uppercase__1lrvpk91a sprinkles_fontSize_small__1lrvpk9h sprinkles_fontWeight_light__1lrvpk9m sprinkles_letterSpacing_0.75__1lrvpk9v sprinkles_lineHeight_16__1lrvpk9x sprinkles_color_subtle__1lrvpk97"
+                    class="sprinkles_textTransform_uppercase__1lrvpk919 sprinkles_fontSize_small__1lrvpk9j sprinkles_fontWeight_light__1lrvpk9o sprinkles_letterSpacing_0.75__1lrvpk9x sprinkles_lineHeight_16__1lrvpk9z sprinkles_color_subtle__1lrvpk97"
                   >
                     1985 | Novel
                   </div>
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_24_default__1lrvpk95t sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_24_default__1lrvpk98z sprinkles_display_block_default__1lrvpk94k"
+                    class="sprinkles_width_px_default__1lrvpk9na sprinkles_height_16_default__1lrvpk96a sprinkles_minWidth_px_default__1lrvpk9c4 sprinkles_minHeight_16_default__1lrvpk99v sprinkles_display_block_default__1lrvpk954"
                   />
                   <h2
-                    class="sprinkles_fontWeight_bold__1lrvpk9p sprinkles_fontSize_large__1lrvpk9k sprinkles_lineHeight_32__1lrvpk9z sprinkles_textAlign_center__1lrvpk918"
+                    class="sprinkles_fontWeight_bold__1lrvpk9r sprinkles_fontSize_large__1lrvpk9m sprinkles_lineHeight_32__1lrvpk912 sprinkles_textAlign_center_default__1lrvpk9kv"
                   >
                     <a
-                      class="sprinkles_color_default__1lrvpk95 sprinkles_display_inline-block_default__1lrvpk94z"
+                      class="sprinkles_color_default__1lrvpk95 sprinkles_display_inline-block_default__1lrvpk95j"
                       href="/reviews/fright-night-by-john-skipp-craig-spector/"
                       rel="canonical"
                     >
                       Fright Night
                     </a>
                   </h2>
-                  <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_16_default__1lrvpk95q sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_16_default__1lrvpk98w sprinkles_display_block_default__1lrvpk94k"
-                  />
                   <p
-                    class="sprinkles_textAlign_center__1lrvpk918"
+                    class="sprinkles_textAlign_center_default__1lrvpk9kv"
                   >
                     by 
                     <span>
@@ -385,20 +389,20 @@ exports[`/ can render last page 1`] = `
                   </p>
                    
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_24_default__1lrvpk95t sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_24_default__1lrvpk98z sprinkles_display_block_default__1lrvpk94k"
+                    class="sprinkles_width_px_default__1lrvpk9na sprinkles_height_16_default__1lrvpk96a sprinkles_minWidth_px_default__1lrvpk9c4 sprinkles_minHeight_16_default__1lrvpk99v sprinkles_display_block_default__1lrvpk954"
                   />
                   <img
                     alt="F: 1 star (out of 5)"
-                    height="32"
+                    height="24"
                     src="/svg/1-star.svg"
-                    width="160"
+                    width="120"
                   />
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_24_default__1lrvpk95t sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_24_default__1lrvpk98z sprinkles_display_block_default__1lrvpk94k"
+                    class="sprinkles_width_px_default__1lrvpk9na sprinkles_height_16_default__1lrvpk96a sprinkles_minWidth_px_default__1lrvpk9c4 sprinkles_minHeight_16_default__1lrvpk99v sprinkles_display_block_default__1lrvpk954"
                   />
                 </div>
                 <div
-                  class="RenderedMarkdown_renderedMarkdownStyle__w2sssm0 HomePageItem_excerptContinueReadingLinkStyle__4ajsvx1 sprinkles_fontWeight_light__1lrvpk9m"
+                  class="RenderedMarkdown_renderedMarkdownStyle__w2sssm0 ListItem_excerptContinueReadingLinkStyle__fsx6n51 sprinkles_fontWeight_light__1lrvpk9o"
                 >
                   <p>
                     During a late-night make-out session with his girlfriend, high-schooler Charlie Brewster spies two men carrying a coffin into the basement of the house next-door. Charlie soon discovers his suave new neighbor, Jerry Dandrige, has fangs. When the police don’t believe him, Charlie appeals to the local creature-feature host, washed up horror icon Peter Vincent, for help. 
@@ -414,22 +418,22 @@ exports[`/ can render last page 1`] = `
             </article>
           </li>
           <li
-            class="sprinkles_display_flex_default__1lrvpk94q sprinkles_backgroundColor_zebra_default__1lrvpk92e"
+            class="sprinkles_display_flex_default__1lrvpk95a sprinkles_backgroundColor_zebra_default__1lrvpk92j"
             value="0"
           >
             <article
-              class="HomePageItem_gridStyle__4ajsvx2 sprinkles_paddingLeft_pageMargin_default__1lrvpk9e8 sprinkles_paddingRight_pageMargin_default__1lrvpk9fw"
+              class="ListItem_gridStyle__fsx6n52 sprinkles_paddingLeft_pageMargin_default__1lrvpk9g1 sprinkles_paddingRight_pageMargin_default__1lrvpk9i4"
             >
               <div
-                class="HomePageItem_gridAreas_date__4ajsvx5 sprinkles_textTransform_uppercase__1lrvpk91a sprinkles_fontSize_small__1lrvpk9h sprinkles_fontWeight_light__1lrvpk9m sprinkles_letterSpacing_0.75__1lrvpk9v sprinkles_lineHeight_16__1lrvpk9x sprinkles_color_subtle__1lrvpk97"
+                class="ListItem_gridAreas_date__fsx6n55 sprinkles_textTransform_uppercase__1lrvpk919 sprinkles_fontSize_small__1lrvpk9j sprinkles_fontWeight_light__1lrvpk9o sprinkles_letterSpacing_0.75__1lrvpk9x sprinkles_lineHeight_16__1lrvpk9z sprinkles_color_subtle__1lrvpk97"
               >
                 14 Jan 2023
               </div>
               <div
-                class="HomePageItem_gridAreas_cover__4ajsvx3 sprinkles_maxWidth_prose_default__1lrvpk98e"
+                class="ListItem_gridAreas_cover__fsx6n53 sprinkles_maxWidth_prose_default__1lrvpk99d"
               >
                 <a
-                  class="HomePageItem_coverBorderStyle__4ajsvx0 sprinkles_display_block_default__1lrvpk94k"
+                  class="ListItem_coverBorderStyle__fsx6n50 sprinkles_display_block_default__1lrvpk954"
                   href="/reviews/doctor-sleep-by-stephen-king/"
                   rel="canonical"
                 >
@@ -474,35 +478,32 @@ exports[`/ can render last page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__4ajsvx4"
+                class="ListItem_gridAreas_excerpt__fsx6n54"
               >
                 <div
-                  class="sprinkles_display_flex_default__1lrvpk94q sprinkles_flexDirection_column_default__1lrvpk958 sprinkles_alignItems_center_default__1lrvpk91h sprinkles_alignItems_flex-start_desktop__1lrvpk91p"
+                  class="sprinkles_display_flex_default__1lrvpk95a sprinkles_flexDirection_column_default__1lrvpk95s sprinkles_alignItems_center_default__1lrvpk91g sprinkles_alignItems_flex-start_desktop__1lrvpk91o"
                 >
                   <div
-                    class="sprinkles_textTransform_uppercase__1lrvpk91a sprinkles_fontSize_small__1lrvpk9h sprinkles_fontWeight_light__1lrvpk9m sprinkles_letterSpacing_0.75__1lrvpk9v sprinkles_lineHeight_16__1lrvpk9x sprinkles_color_subtle__1lrvpk97"
+                    class="sprinkles_textTransform_uppercase__1lrvpk919 sprinkles_fontSize_small__1lrvpk9j sprinkles_fontWeight_light__1lrvpk9o sprinkles_letterSpacing_0.75__1lrvpk9x sprinkles_lineHeight_16__1lrvpk9z sprinkles_color_subtle__1lrvpk97"
                   >
                     2013 | Novel
                   </div>
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_24_default__1lrvpk95t sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_24_default__1lrvpk98z sprinkles_display_block_default__1lrvpk94k"
+                    class="sprinkles_width_px_default__1lrvpk9na sprinkles_height_16_default__1lrvpk96a sprinkles_minWidth_px_default__1lrvpk9c4 sprinkles_minHeight_16_default__1lrvpk99v sprinkles_display_block_default__1lrvpk954"
                   />
                   <h2
-                    class="sprinkles_fontWeight_bold__1lrvpk9p sprinkles_fontSize_large__1lrvpk9k sprinkles_lineHeight_32__1lrvpk9z sprinkles_textAlign_center__1lrvpk918"
+                    class="sprinkles_fontWeight_bold__1lrvpk9r sprinkles_fontSize_large__1lrvpk9m sprinkles_lineHeight_32__1lrvpk912 sprinkles_textAlign_center_default__1lrvpk9kv"
                   >
                     <a
-                      class="sprinkles_color_default__1lrvpk95 sprinkles_display_inline-block_default__1lrvpk94z"
+                      class="sprinkles_color_default__1lrvpk95 sprinkles_display_inline-block_default__1lrvpk95j"
                       href="/reviews/doctor-sleep-by-stephen-king/"
                       rel="canonical"
                     >
                       Doctor Sleep
                     </a>
                   </h2>
-                  <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_16_default__1lrvpk95q sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_16_default__1lrvpk98w sprinkles_display_block_default__1lrvpk94k"
-                  />
                   <p
-                    class="sprinkles_textAlign_center__1lrvpk918"
+                    class="sprinkles_textAlign_center_default__1lrvpk9kv"
                   >
                     by 
                     <span>
@@ -515,20 +516,20 @@ exports[`/ can render last page 1`] = `
                   </p>
                    
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_24_default__1lrvpk95t sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_24_default__1lrvpk98z sprinkles_display_block_default__1lrvpk94k"
+                    class="sprinkles_width_px_default__1lrvpk9na sprinkles_height_16_default__1lrvpk96a sprinkles_minWidth_px_default__1lrvpk9c4 sprinkles_minHeight_16_default__1lrvpk99v sprinkles_display_block_default__1lrvpk954"
                   />
                   <img
                     alt="C+: 3 stars (out of 5)"
-                    height="32"
+                    height="24"
                     src="/svg/3-stars.svg"
-                    width="160"
+                    width="120"
                   />
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_24_default__1lrvpk95t sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_24_default__1lrvpk98z sprinkles_display_block_default__1lrvpk94k"
+                    class="sprinkles_width_px_default__1lrvpk9na sprinkles_height_16_default__1lrvpk96a sprinkles_minWidth_px_default__1lrvpk9c4 sprinkles_minHeight_16_default__1lrvpk99v sprinkles_display_block_default__1lrvpk954"
                   />
                 </div>
                 <div
-                  class="RenderedMarkdown_renderedMarkdownStyle__w2sssm0 HomePageItem_excerptContinueReadingLinkStyle__4ajsvx1 sprinkles_fontWeight_light__1lrvpk9m"
+                  class="RenderedMarkdown_renderedMarkdownStyle__w2sssm0 ListItem_excerptContinueReadingLinkStyle__fsx6n51 sprinkles_fontWeight_light__1lrvpk9o"
                 >
                   <p>
                     Stephen King’s sequel to 
@@ -552,22 +553,22 @@ exports[`/ can render last page 1`] = `
             </article>
           </li>
           <li
-            class="sprinkles_display_flex_default__1lrvpk94q sprinkles_backgroundColor_zebra_default__1lrvpk92e"
+            class="sprinkles_display_flex_default__1lrvpk95a sprinkles_backgroundColor_zebra_default__1lrvpk92j"
             value="-1"
           >
             <article
-              class="HomePageItem_gridStyle__4ajsvx2 sprinkles_paddingLeft_pageMargin_default__1lrvpk9e8 sprinkles_paddingRight_pageMargin_default__1lrvpk9fw"
+              class="ListItem_gridStyle__fsx6n52 sprinkles_paddingLeft_pageMargin_default__1lrvpk9g1 sprinkles_paddingRight_pageMargin_default__1lrvpk9i4"
             >
               <div
-                class="HomePageItem_gridAreas_date__4ajsvx5 sprinkles_textTransform_uppercase__1lrvpk91a sprinkles_fontSize_small__1lrvpk9h sprinkles_fontWeight_light__1lrvpk9m sprinkles_letterSpacing_0.75__1lrvpk9v sprinkles_lineHeight_16__1lrvpk9x sprinkles_color_subtle__1lrvpk97"
+                class="ListItem_gridAreas_date__fsx6n55 sprinkles_textTransform_uppercase__1lrvpk919 sprinkles_fontSize_small__1lrvpk9j sprinkles_fontWeight_light__1lrvpk9o sprinkles_letterSpacing_0.75__1lrvpk9x sprinkles_lineHeight_16__1lrvpk9z sprinkles_color_subtle__1lrvpk97"
               >
                 29 Oct 2022
               </div>
               <div
-                class="HomePageItem_gridAreas_cover__4ajsvx3 sprinkles_maxWidth_prose_default__1lrvpk98e"
+                class="ListItem_gridAreas_cover__fsx6n53 sprinkles_maxWidth_prose_default__1lrvpk99d"
               >
                 <a
-                  class="HomePageItem_coverBorderStyle__4ajsvx0 sprinkles_display_block_default__1lrvpk94k"
+                  class="ListItem_coverBorderStyle__fsx6n50 sprinkles_display_block_default__1lrvpk954"
                   href="/reviews/the-skeptics-guide-to-the-universe-by-steven-novella/"
                   rel="canonical"
                 >
@@ -612,35 +613,32 @@ exports[`/ can render last page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__4ajsvx4"
+                class="ListItem_gridAreas_excerpt__fsx6n54"
               >
                 <div
-                  class="sprinkles_display_flex_default__1lrvpk94q sprinkles_flexDirection_column_default__1lrvpk958 sprinkles_alignItems_center_default__1lrvpk91h sprinkles_alignItems_flex-start_desktop__1lrvpk91p"
+                  class="sprinkles_display_flex_default__1lrvpk95a sprinkles_flexDirection_column_default__1lrvpk95s sprinkles_alignItems_center_default__1lrvpk91g sprinkles_alignItems_flex-start_desktop__1lrvpk91o"
                 >
                   <div
-                    class="sprinkles_textTransform_uppercase__1lrvpk91a sprinkles_fontSize_small__1lrvpk9h sprinkles_fontWeight_light__1lrvpk9m sprinkles_letterSpacing_0.75__1lrvpk9v sprinkles_lineHeight_16__1lrvpk9x sprinkles_color_subtle__1lrvpk97"
+                    class="sprinkles_textTransform_uppercase__1lrvpk919 sprinkles_fontSize_small__1lrvpk9j sprinkles_fontWeight_light__1lrvpk9o sprinkles_letterSpacing_0.75__1lrvpk9x sprinkles_lineHeight_16__1lrvpk9z sprinkles_color_subtle__1lrvpk97"
                   >
                     2018 | Nonfiction
                   </div>
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_24_default__1lrvpk95t sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_24_default__1lrvpk98z sprinkles_display_block_default__1lrvpk94k"
+                    class="sprinkles_width_px_default__1lrvpk9na sprinkles_height_16_default__1lrvpk96a sprinkles_minWidth_px_default__1lrvpk9c4 sprinkles_minHeight_16_default__1lrvpk99v sprinkles_display_block_default__1lrvpk954"
                   />
                   <h2
-                    class="sprinkles_fontWeight_bold__1lrvpk9p sprinkles_fontSize_large__1lrvpk9k sprinkles_lineHeight_32__1lrvpk9z sprinkles_textAlign_center__1lrvpk918"
+                    class="sprinkles_fontWeight_bold__1lrvpk9r sprinkles_fontSize_large__1lrvpk9m sprinkles_lineHeight_32__1lrvpk912 sprinkles_textAlign_center_default__1lrvpk9kv"
                   >
                     <a
-                      class="sprinkles_color_default__1lrvpk95 sprinkles_display_inline-block_default__1lrvpk94z"
+                      class="sprinkles_color_default__1lrvpk95 sprinkles_display_inline-block_default__1lrvpk95j"
                       href="/reviews/the-skeptics-guide-to-the-universe-by-steven-novella/"
                       rel="canonical"
                     >
                       The Skeptics' Guide to the Universe
                     </a>
                   </h2>
-                  <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_16_default__1lrvpk95q sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_16_default__1lrvpk98w sprinkles_display_block_default__1lrvpk94k"
-                  />
                   <p
-                    class="sprinkles_textAlign_center__1lrvpk918"
+                    class="sprinkles_textAlign_center_default__1lrvpk9kv"
                   >
                     by 
                     <span>
@@ -653,20 +651,20 @@ exports[`/ can render last page 1`] = `
                   </p>
                    
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_24_default__1lrvpk95t sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_24_default__1lrvpk98z sprinkles_display_block_default__1lrvpk94k"
+                    class="sprinkles_width_px_default__1lrvpk9na sprinkles_height_16_default__1lrvpk96a sprinkles_minWidth_px_default__1lrvpk9c4 sprinkles_minHeight_16_default__1lrvpk99v sprinkles_display_block_default__1lrvpk954"
                   />
                   <img
                     alt="B+: 4 stars (out of 5)"
-                    height="32"
+                    height="24"
                     src="/svg/4-stars.svg"
-                    width="160"
+                    width="120"
                   />
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_24_default__1lrvpk95t sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_24_default__1lrvpk98z sprinkles_display_block_default__1lrvpk94k"
+                    class="sprinkles_width_px_default__1lrvpk9na sprinkles_height_16_default__1lrvpk96a sprinkles_minWidth_px_default__1lrvpk9c4 sprinkles_minHeight_16_default__1lrvpk99v sprinkles_display_block_default__1lrvpk954"
                   />
                 </div>
                 <div
-                  class="RenderedMarkdown_renderedMarkdownStyle__w2sssm0 HomePageItem_excerptContinueReadingLinkStyle__4ajsvx1 sprinkles_fontWeight_light__1lrvpk9m"
+                  class="RenderedMarkdown_renderedMarkdownStyle__w2sssm0 ListItem_excerptContinueReadingLinkStyle__fsx6n51 sprinkles_fontWeight_light__1lrvpk9o"
                 >
                   <p>
                     A practical guide to critical thinking in the information age. Novella and his colleagues illuminate cognitive biases and logical fallacies with understandable examples. They then apply them to assorted topics, including ghosts, extrasensory perception, assorted conspiracy theories, and global warming. 
@@ -682,22 +680,22 @@ exports[`/ can render last page 1`] = `
             </article>
           </li>
           <li
-            class="sprinkles_display_flex_default__1lrvpk94q sprinkles_backgroundColor_zebra_default__1lrvpk92e"
+            class="sprinkles_display_flex_default__1lrvpk95a sprinkles_backgroundColor_zebra_default__1lrvpk92j"
             value="-2"
           >
             <article
-              class="HomePageItem_gridStyle__4ajsvx2 sprinkles_paddingLeft_pageMargin_default__1lrvpk9e8 sprinkles_paddingRight_pageMargin_default__1lrvpk9fw"
+              class="ListItem_gridStyle__fsx6n52 sprinkles_paddingLeft_pageMargin_default__1lrvpk9g1 sprinkles_paddingRight_pageMargin_default__1lrvpk9i4"
             >
               <div
-                class="HomePageItem_gridAreas_date__4ajsvx5 sprinkles_textTransform_uppercase__1lrvpk91a sprinkles_fontSize_small__1lrvpk9h sprinkles_fontWeight_light__1lrvpk9m sprinkles_letterSpacing_0.75__1lrvpk9v sprinkles_lineHeight_16__1lrvpk9x sprinkles_color_subtle__1lrvpk97"
+                class="ListItem_gridAreas_date__fsx6n55 sprinkles_textTransform_uppercase__1lrvpk919 sprinkles_fontSize_small__1lrvpk9j sprinkles_fontWeight_light__1lrvpk9o sprinkles_letterSpacing_0.75__1lrvpk9x sprinkles_lineHeight_16__1lrvpk9z sprinkles_color_subtle__1lrvpk97"
               >
                 29 Oct 2022
               </div>
               <div
-                class="HomePageItem_gridAreas_cover__4ajsvx3 sprinkles_maxWidth_prose_default__1lrvpk98e"
+                class="ListItem_gridAreas_cover__fsx6n53 sprinkles_maxWidth_prose_default__1lrvpk99d"
               >
                 <a
-                  class="HomePageItem_coverBorderStyle__4ajsvx0 sprinkles_display_block_default__1lrvpk94k"
+                  class="ListItem_coverBorderStyle__fsx6n50 sprinkles_display_block_default__1lrvpk954"
                   href="/reviews/the-shining-by-stephen-king/"
                   rel="canonical"
                 >
@@ -742,35 +740,32 @@ exports[`/ can render last page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__4ajsvx4"
+                class="ListItem_gridAreas_excerpt__fsx6n54"
               >
                 <div
-                  class="sprinkles_display_flex_default__1lrvpk94q sprinkles_flexDirection_column_default__1lrvpk958 sprinkles_alignItems_center_default__1lrvpk91h sprinkles_alignItems_flex-start_desktop__1lrvpk91p"
+                  class="sprinkles_display_flex_default__1lrvpk95a sprinkles_flexDirection_column_default__1lrvpk95s sprinkles_alignItems_center_default__1lrvpk91g sprinkles_alignItems_flex-start_desktop__1lrvpk91o"
                 >
                   <div
-                    class="sprinkles_textTransform_uppercase__1lrvpk91a sprinkles_fontSize_small__1lrvpk9h sprinkles_fontWeight_light__1lrvpk9m sprinkles_letterSpacing_0.75__1lrvpk9v sprinkles_lineHeight_16__1lrvpk9x sprinkles_color_subtle__1lrvpk97"
+                    class="sprinkles_textTransform_uppercase__1lrvpk919 sprinkles_fontSize_small__1lrvpk9j sprinkles_fontWeight_light__1lrvpk9o sprinkles_letterSpacing_0.75__1lrvpk9x sprinkles_lineHeight_16__1lrvpk9z sprinkles_color_subtle__1lrvpk97"
                   >
                     1977 | Novel
                   </div>
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_24_default__1lrvpk95t sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_24_default__1lrvpk98z sprinkles_display_block_default__1lrvpk94k"
+                    class="sprinkles_width_px_default__1lrvpk9na sprinkles_height_16_default__1lrvpk96a sprinkles_minWidth_px_default__1lrvpk9c4 sprinkles_minHeight_16_default__1lrvpk99v sprinkles_display_block_default__1lrvpk954"
                   />
                   <h2
-                    class="sprinkles_fontWeight_bold__1lrvpk9p sprinkles_fontSize_large__1lrvpk9k sprinkles_lineHeight_32__1lrvpk9z sprinkles_textAlign_center__1lrvpk918"
+                    class="sprinkles_fontWeight_bold__1lrvpk9r sprinkles_fontSize_large__1lrvpk9m sprinkles_lineHeight_32__1lrvpk912 sprinkles_textAlign_center_default__1lrvpk9kv"
                   >
                     <a
-                      class="sprinkles_color_default__1lrvpk95 sprinkles_display_inline-block_default__1lrvpk94z"
+                      class="sprinkles_color_default__1lrvpk95 sprinkles_display_inline-block_default__1lrvpk95j"
                       href="/reviews/the-shining-by-stephen-king/"
                       rel="canonical"
                     >
                       The Shining
                     </a>
                   </h2>
-                  <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_16_default__1lrvpk95q sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_16_default__1lrvpk98w sprinkles_display_block_default__1lrvpk94k"
-                  />
                   <p
-                    class="sprinkles_textAlign_center__1lrvpk918"
+                    class="sprinkles_textAlign_center_default__1lrvpk9kv"
                   >
                     by 
                     <span>
@@ -783,20 +778,20 @@ exports[`/ can render last page 1`] = `
                   </p>
                    
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_24_default__1lrvpk95t sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_24_default__1lrvpk98z sprinkles_display_block_default__1lrvpk94k"
+                    class="sprinkles_width_px_default__1lrvpk9na sprinkles_height_16_default__1lrvpk96a sprinkles_minWidth_px_default__1lrvpk9c4 sprinkles_minHeight_16_default__1lrvpk99v sprinkles_display_block_default__1lrvpk954"
                   />
                   <img
                     alt="B: 4 stars (out of 5)"
-                    height="32"
+                    height="24"
                     src="/svg/4-stars.svg"
-                    width="160"
+                    width="120"
                   />
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_24_default__1lrvpk95t sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_24_default__1lrvpk98z sprinkles_display_block_default__1lrvpk94k"
+                    class="sprinkles_width_px_default__1lrvpk9na sprinkles_height_16_default__1lrvpk96a sprinkles_minWidth_px_default__1lrvpk9c4 sprinkles_minHeight_16_default__1lrvpk99v sprinkles_display_block_default__1lrvpk954"
                   />
                 </div>
                 <div
-                  class="RenderedMarkdown_renderedMarkdownStyle__w2sssm0 HomePageItem_excerptContinueReadingLinkStyle__4ajsvx1 sprinkles_fontWeight_light__1lrvpk9m"
+                  class="RenderedMarkdown_renderedMarkdownStyle__w2sssm0 ListItem_excerptContinueReadingLinkStyle__fsx6n51 sprinkles_fontWeight_light__1lrvpk9o"
                 >
                   <p>
                     Alcoholic writer Jack Torrance uproots his wife Wendy and five-year-old son Danny from New England to Colorado, where they’ll serve as winter caretakers for the Overlook Hotel. The hotel, a premier destination with a shady past, houses a malevolent presence bent on claiming Danny for its own ends. 
@@ -812,22 +807,22 @@ exports[`/ can render last page 1`] = `
             </article>
           </li>
           <li
-            class="sprinkles_display_flex_default__1lrvpk94q sprinkles_backgroundColor_zebra_default__1lrvpk92e"
+            class="sprinkles_display_flex_default__1lrvpk95a sprinkles_backgroundColor_zebra_default__1lrvpk92j"
             value="-3"
           >
             <article
-              class="HomePageItem_gridStyle__4ajsvx2 sprinkles_paddingLeft_pageMargin_default__1lrvpk9e8 sprinkles_paddingRight_pageMargin_default__1lrvpk9fw"
+              class="ListItem_gridStyle__fsx6n52 sprinkles_paddingLeft_pageMargin_default__1lrvpk9g1 sprinkles_paddingRight_pageMargin_default__1lrvpk9i4"
             >
               <div
-                class="HomePageItem_gridAreas_date__4ajsvx5 sprinkles_textTransform_uppercase__1lrvpk91a sprinkles_fontSize_small__1lrvpk9h sprinkles_fontWeight_light__1lrvpk9m sprinkles_letterSpacing_0.75__1lrvpk9v sprinkles_lineHeight_16__1lrvpk9x sprinkles_color_subtle__1lrvpk97"
+                class="ListItem_gridAreas_date__fsx6n55 sprinkles_textTransform_uppercase__1lrvpk919 sprinkles_fontSize_small__1lrvpk9j sprinkles_fontWeight_light__1lrvpk9o sprinkles_letterSpacing_0.75__1lrvpk9x sprinkles_lineHeight_16__1lrvpk9z sprinkles_color_subtle__1lrvpk97"
               >
                 16 Oct 2022
               </div>
               <div
-                class="HomePageItem_gridAreas_cover__4ajsvx3 sprinkles_maxWidth_prose_default__1lrvpk98e"
+                class="ListItem_gridAreas_cover__fsx6n53 sprinkles_maxWidth_prose_default__1lrvpk99d"
               >
                 <a
-                  class="HomePageItem_coverBorderStyle__4ajsvx0 sprinkles_display_block_default__1lrvpk94k"
+                  class="ListItem_coverBorderStyle__fsx6n50 sprinkles_display_block_default__1lrvpk954"
                   href="/reviews/moonraker-by-ian-fleming/"
                   rel="canonical"
                 >
@@ -872,35 +867,32 @@ exports[`/ can render last page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__4ajsvx4"
+                class="ListItem_gridAreas_excerpt__fsx6n54"
               >
                 <div
-                  class="sprinkles_display_flex_default__1lrvpk94q sprinkles_flexDirection_column_default__1lrvpk958 sprinkles_alignItems_center_default__1lrvpk91h sprinkles_alignItems_flex-start_desktop__1lrvpk91p"
+                  class="sprinkles_display_flex_default__1lrvpk95a sprinkles_flexDirection_column_default__1lrvpk95s sprinkles_alignItems_center_default__1lrvpk91g sprinkles_alignItems_flex-start_desktop__1lrvpk91o"
                 >
                   <div
-                    class="sprinkles_textTransform_uppercase__1lrvpk91a sprinkles_fontSize_small__1lrvpk9h sprinkles_fontWeight_light__1lrvpk9m sprinkles_letterSpacing_0.75__1lrvpk9v sprinkles_lineHeight_16__1lrvpk9x sprinkles_color_subtle__1lrvpk97"
+                    class="sprinkles_textTransform_uppercase__1lrvpk919 sprinkles_fontSize_small__1lrvpk9j sprinkles_fontWeight_light__1lrvpk9o sprinkles_letterSpacing_0.75__1lrvpk9x sprinkles_lineHeight_16__1lrvpk9z sprinkles_color_subtle__1lrvpk97"
                   >
                     1955 | Novel
                   </div>
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_24_default__1lrvpk95t sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_24_default__1lrvpk98z sprinkles_display_block_default__1lrvpk94k"
+                    class="sprinkles_width_px_default__1lrvpk9na sprinkles_height_16_default__1lrvpk96a sprinkles_minWidth_px_default__1lrvpk9c4 sprinkles_minHeight_16_default__1lrvpk99v sprinkles_display_block_default__1lrvpk954"
                   />
                   <h2
-                    class="sprinkles_fontWeight_bold__1lrvpk9p sprinkles_fontSize_large__1lrvpk9k sprinkles_lineHeight_32__1lrvpk9z sprinkles_textAlign_center__1lrvpk918"
+                    class="sprinkles_fontWeight_bold__1lrvpk9r sprinkles_fontSize_large__1lrvpk9m sprinkles_lineHeight_32__1lrvpk912 sprinkles_textAlign_center_default__1lrvpk9kv"
                   >
                     <a
-                      class="sprinkles_color_default__1lrvpk95 sprinkles_display_inline-block_default__1lrvpk94z"
+                      class="sprinkles_color_default__1lrvpk95 sprinkles_display_inline-block_default__1lrvpk95j"
                       href="/reviews/moonraker-by-ian-fleming/"
                       rel="canonical"
                     >
                       Moonraker
                     </a>
                   </h2>
-                  <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_16_default__1lrvpk95q sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_16_default__1lrvpk98w sprinkles_display_block_default__1lrvpk94k"
-                  />
                   <p
-                    class="sprinkles_textAlign_center__1lrvpk918"
+                    class="sprinkles_textAlign_center_default__1lrvpk9kv"
                   >
                     by 
                     <span>
@@ -913,20 +905,20 @@ exports[`/ can render last page 1`] = `
                   </p>
                    
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_24_default__1lrvpk95t sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_24_default__1lrvpk98z sprinkles_display_block_default__1lrvpk94k"
+                    class="sprinkles_width_px_default__1lrvpk9na sprinkles_height_16_default__1lrvpk96a sprinkles_minWidth_px_default__1lrvpk9c4 sprinkles_minHeight_16_default__1lrvpk99v sprinkles_display_block_default__1lrvpk954"
                   />
                   <img
                     alt="B: 4 stars (out of 5)"
-                    height="32"
+                    height="24"
                     src="/svg/4-stars.svg"
-                    width="160"
+                    width="120"
                   />
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_24_default__1lrvpk95t sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_24_default__1lrvpk98z sprinkles_display_block_default__1lrvpk94k"
+                    class="sprinkles_width_px_default__1lrvpk9na sprinkles_height_16_default__1lrvpk96a sprinkles_minWidth_px_default__1lrvpk9c4 sprinkles_minHeight_16_default__1lrvpk99v sprinkles_display_block_default__1lrvpk954"
                   />
                 </div>
                 <div
-                  class="RenderedMarkdown_renderedMarkdownStyle__w2sssm0 HomePageItem_excerptContinueReadingLinkStyle__4ajsvx1 sprinkles_fontWeight_light__1lrvpk9m"
+                  class="RenderedMarkdown_renderedMarkdownStyle__w2sssm0 ListItem_excerptContinueReadingLinkStyle__fsx6n51 sprinkles_fontWeight_light__1lrvpk9o"
                 >
                   <p>
                     James Bond investigates a popular self-made millionaire with surgically enhanced looks, an interest in rockets, and a relentless, larger-than-life personality. 
@@ -942,22 +934,22 @@ exports[`/ can render last page 1`] = `
             </article>
           </li>
           <li
-            class="sprinkles_display_flex_default__1lrvpk94q sprinkles_backgroundColor_zebra_default__1lrvpk92e"
+            class="sprinkles_display_flex_default__1lrvpk95a sprinkles_backgroundColor_zebra_default__1lrvpk92j"
             value="-4"
           >
             <article
-              class="HomePageItem_gridStyle__4ajsvx2 sprinkles_paddingLeft_pageMargin_default__1lrvpk9e8 sprinkles_paddingRight_pageMargin_default__1lrvpk9fw"
+              class="ListItem_gridStyle__fsx6n52 sprinkles_paddingLeft_pageMargin_default__1lrvpk9g1 sprinkles_paddingRight_pageMargin_default__1lrvpk9i4"
             >
               <div
-                class="HomePageItem_gridAreas_date__4ajsvx5 sprinkles_textTransform_uppercase__1lrvpk91a sprinkles_fontSize_small__1lrvpk9h sprinkles_fontWeight_light__1lrvpk9m sprinkles_letterSpacing_0.75__1lrvpk9v sprinkles_lineHeight_16__1lrvpk9x sprinkles_color_subtle__1lrvpk97"
+                class="ListItem_gridAreas_date__fsx6n55 sprinkles_textTransform_uppercase__1lrvpk919 sprinkles_fontSize_small__1lrvpk9j sprinkles_fontWeight_light__1lrvpk9o sprinkles_letterSpacing_0.75__1lrvpk9x sprinkles_lineHeight_16__1lrvpk9z sprinkles_color_subtle__1lrvpk97"
               >
                 14 Oct 2022
               </div>
               <div
-                class="HomePageItem_gridAreas_cover__4ajsvx3 sprinkles_maxWidth_prose_default__1lrvpk98e"
+                class="ListItem_gridAreas_cover__fsx6n53 sprinkles_maxWidth_prose_default__1lrvpk99d"
               >
                 <a
-                  class="HomePageItem_coverBorderStyle__4ajsvx0 sprinkles_display_block_default__1lrvpk94k"
+                  class="ListItem_coverBorderStyle__fsx6n50 sprinkles_display_block_default__1lrvpk954"
                   href="/reviews/salems-lot-by-stephen-king/"
                   rel="canonical"
                 >
@@ -1002,35 +994,32 @@ exports[`/ can render last page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__4ajsvx4"
+                class="ListItem_gridAreas_excerpt__fsx6n54"
               >
                 <div
-                  class="sprinkles_display_flex_default__1lrvpk94q sprinkles_flexDirection_column_default__1lrvpk958 sprinkles_alignItems_center_default__1lrvpk91h sprinkles_alignItems_flex-start_desktop__1lrvpk91p"
+                  class="sprinkles_display_flex_default__1lrvpk95a sprinkles_flexDirection_column_default__1lrvpk95s sprinkles_alignItems_center_default__1lrvpk91g sprinkles_alignItems_flex-start_desktop__1lrvpk91o"
                 >
                   <div
-                    class="sprinkles_textTransform_uppercase__1lrvpk91a sprinkles_fontSize_small__1lrvpk9h sprinkles_fontWeight_light__1lrvpk9m sprinkles_letterSpacing_0.75__1lrvpk9v sprinkles_lineHeight_16__1lrvpk9x sprinkles_color_subtle__1lrvpk97"
+                    class="sprinkles_textTransform_uppercase__1lrvpk919 sprinkles_fontSize_small__1lrvpk9j sprinkles_fontWeight_light__1lrvpk9o sprinkles_letterSpacing_0.75__1lrvpk9x sprinkles_lineHeight_16__1lrvpk9z sprinkles_color_subtle__1lrvpk97"
                   >
                     1975 | Novel
                   </div>
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_24_default__1lrvpk95t sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_24_default__1lrvpk98z sprinkles_display_block_default__1lrvpk94k"
+                    class="sprinkles_width_px_default__1lrvpk9na sprinkles_height_16_default__1lrvpk96a sprinkles_minWidth_px_default__1lrvpk9c4 sprinkles_minHeight_16_default__1lrvpk99v sprinkles_display_block_default__1lrvpk954"
                   />
                   <h2
-                    class="sprinkles_fontWeight_bold__1lrvpk9p sprinkles_fontSize_large__1lrvpk9k sprinkles_lineHeight_32__1lrvpk9z sprinkles_textAlign_center__1lrvpk918"
+                    class="sprinkles_fontWeight_bold__1lrvpk9r sprinkles_fontSize_large__1lrvpk9m sprinkles_lineHeight_32__1lrvpk912 sprinkles_textAlign_center_default__1lrvpk9kv"
                   >
                     <a
-                      class="sprinkles_color_default__1lrvpk95 sprinkles_display_inline-block_default__1lrvpk94z"
+                      class="sprinkles_color_default__1lrvpk95 sprinkles_display_inline-block_default__1lrvpk95j"
                       href="/reviews/salems-lot-by-stephen-king/"
                       rel="canonical"
                     >
                       'Salem's Lot
                     </a>
                   </h2>
-                  <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_16_default__1lrvpk95q sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_16_default__1lrvpk98w sprinkles_display_block_default__1lrvpk94k"
-                  />
                   <p
-                    class="sprinkles_textAlign_center__1lrvpk918"
+                    class="sprinkles_textAlign_center_default__1lrvpk9kv"
                   >
                     by 
                     <span>
@@ -1043,20 +1032,20 @@ exports[`/ can render last page 1`] = `
                   </p>
                    
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_24_default__1lrvpk95t sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_24_default__1lrvpk98z sprinkles_display_block_default__1lrvpk94k"
+                    class="sprinkles_width_px_default__1lrvpk9na sprinkles_height_16_default__1lrvpk96a sprinkles_minWidth_px_default__1lrvpk9c4 sprinkles_minHeight_16_default__1lrvpk99v sprinkles_display_block_default__1lrvpk954"
                   />
                   <img
                     alt="B: 4 stars (out of 5)"
-                    height="32"
+                    height="24"
                     src="/svg/4-stars.svg"
-                    width="160"
+                    width="120"
                   />
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_24_default__1lrvpk95t sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_24_default__1lrvpk98z sprinkles_display_block_default__1lrvpk94k"
+                    class="sprinkles_width_px_default__1lrvpk9na sprinkles_height_16_default__1lrvpk96a sprinkles_minWidth_px_default__1lrvpk9c4 sprinkles_minHeight_16_default__1lrvpk99v sprinkles_display_block_default__1lrvpk954"
                   />
                 </div>
                 <div
-                  class="RenderedMarkdown_renderedMarkdownStyle__w2sssm0 HomePageItem_excerptContinueReadingLinkStyle__4ajsvx1 sprinkles_fontWeight_light__1lrvpk9m"
+                  class="RenderedMarkdown_renderedMarkdownStyle__w2sssm0 ListItem_excerptContinueReadingLinkStyle__fsx6n51 sprinkles_fontWeight_light__1lrvpk9o"
                 >
                   <p>
                     <strong>
@@ -1083,22 +1072,22 @@ exports[`/ can render last page 1`] = `
             </article>
           </li>
           <li
-            class="sprinkles_display_flex_default__1lrvpk94q sprinkles_backgroundColor_zebra_default__1lrvpk92e"
+            class="sprinkles_display_flex_default__1lrvpk95a sprinkles_backgroundColor_zebra_default__1lrvpk92j"
             value="-5"
           >
             <article
-              class="HomePageItem_gridStyle__4ajsvx2 sprinkles_paddingLeft_pageMargin_default__1lrvpk9e8 sprinkles_paddingRight_pageMargin_default__1lrvpk9fw"
+              class="ListItem_gridStyle__fsx6n52 sprinkles_paddingLeft_pageMargin_default__1lrvpk9g1 sprinkles_paddingRight_pageMargin_default__1lrvpk9i4"
             >
               <div
-                class="HomePageItem_gridAreas_date__4ajsvx5 sprinkles_textTransform_uppercase__1lrvpk91a sprinkles_fontSize_small__1lrvpk9h sprinkles_fontWeight_light__1lrvpk9m sprinkles_letterSpacing_0.75__1lrvpk9v sprinkles_lineHeight_16__1lrvpk9x sprinkles_color_subtle__1lrvpk97"
+                class="ListItem_gridAreas_date__fsx6n55 sprinkles_textTransform_uppercase__1lrvpk919 sprinkles_fontSize_small__1lrvpk9j sprinkles_fontWeight_light__1lrvpk9o sprinkles_letterSpacing_0.75__1lrvpk9x sprinkles_lineHeight_16__1lrvpk9z sprinkles_color_subtle__1lrvpk97"
               >
                 13 Oct 2022
               </div>
               <div
-                class="HomePageItem_gridAreas_cover__4ajsvx3 sprinkles_maxWidth_prose_default__1lrvpk98e"
+                class="ListItem_gridAreas_cover__fsx6n53 sprinkles_maxWidth_prose_default__1lrvpk99d"
               >
                 <a
-                  class="HomePageItem_coverBorderStyle__4ajsvx0 sprinkles_display_block_default__1lrvpk94k"
+                  class="ListItem_coverBorderStyle__fsx6n50 sprinkles_display_block_default__1lrvpk954"
                   href="/reviews/cant-hurt-me-by-david-goggins/"
                   rel="canonical"
                 >
@@ -1143,35 +1132,32 @@ exports[`/ can render last page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__4ajsvx4"
+                class="ListItem_gridAreas_excerpt__fsx6n54"
               >
                 <div
-                  class="sprinkles_display_flex_default__1lrvpk94q sprinkles_flexDirection_column_default__1lrvpk958 sprinkles_alignItems_center_default__1lrvpk91h sprinkles_alignItems_flex-start_desktop__1lrvpk91p"
+                  class="sprinkles_display_flex_default__1lrvpk95a sprinkles_flexDirection_column_default__1lrvpk95s sprinkles_alignItems_center_default__1lrvpk91g sprinkles_alignItems_flex-start_desktop__1lrvpk91o"
                 >
                   <div
-                    class="sprinkles_textTransform_uppercase__1lrvpk91a sprinkles_fontSize_small__1lrvpk9h sprinkles_fontWeight_light__1lrvpk9m sprinkles_letterSpacing_0.75__1lrvpk9v sprinkles_lineHeight_16__1lrvpk9x sprinkles_color_subtle__1lrvpk97"
+                    class="sprinkles_textTransform_uppercase__1lrvpk919 sprinkles_fontSize_small__1lrvpk9j sprinkles_fontWeight_light__1lrvpk9o sprinkles_letterSpacing_0.75__1lrvpk9x sprinkles_lineHeight_16__1lrvpk9z sprinkles_color_subtle__1lrvpk97"
                   >
                     2018 | Nonfiction
                   </div>
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_24_default__1lrvpk95t sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_24_default__1lrvpk98z sprinkles_display_block_default__1lrvpk94k"
+                    class="sprinkles_width_px_default__1lrvpk9na sprinkles_height_16_default__1lrvpk96a sprinkles_minWidth_px_default__1lrvpk9c4 sprinkles_minHeight_16_default__1lrvpk99v sprinkles_display_block_default__1lrvpk954"
                   />
                   <h2
-                    class="sprinkles_fontWeight_bold__1lrvpk9p sprinkles_fontSize_large__1lrvpk9k sprinkles_lineHeight_32__1lrvpk9z sprinkles_textAlign_center__1lrvpk918"
+                    class="sprinkles_fontWeight_bold__1lrvpk9r sprinkles_fontSize_large__1lrvpk9m sprinkles_lineHeight_32__1lrvpk912 sprinkles_textAlign_center_default__1lrvpk9kv"
                   >
                     <a
-                      class="sprinkles_color_default__1lrvpk95 sprinkles_display_inline-block_default__1lrvpk94z"
+                      class="sprinkles_color_default__1lrvpk95 sprinkles_display_inline-block_default__1lrvpk95j"
                       href="/reviews/cant-hurt-me-by-david-goggins/"
                       rel="canonical"
                     >
                       Can't Hurt Me
                     </a>
                   </h2>
-                  <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_16_default__1lrvpk95q sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_16_default__1lrvpk98w sprinkles_display_block_default__1lrvpk94k"
-                  />
                   <p
-                    class="sprinkles_textAlign_center__1lrvpk918"
+                    class="sprinkles_textAlign_center_default__1lrvpk9kv"
                   >
                     by 
                     <span>
@@ -1184,20 +1170,20 @@ exports[`/ can render last page 1`] = `
                   </p>
                    
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_24_default__1lrvpk95t sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_24_default__1lrvpk98z sprinkles_display_block_default__1lrvpk94k"
+                    class="sprinkles_width_px_default__1lrvpk9na sprinkles_height_16_default__1lrvpk96a sprinkles_minWidth_px_default__1lrvpk9c4 sprinkles_minHeight_16_default__1lrvpk99v sprinkles_display_block_default__1lrvpk954"
                   />
                   <img
                     alt="B: 4 stars (out of 5)"
-                    height="32"
+                    height="24"
                     src="/svg/4-stars.svg"
-                    width="160"
+                    width="120"
                   />
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_24_default__1lrvpk95t sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_24_default__1lrvpk98z sprinkles_display_block_default__1lrvpk94k"
+                    class="sprinkles_width_px_default__1lrvpk9na sprinkles_height_16_default__1lrvpk96a sprinkles_minWidth_px_default__1lrvpk9c4 sprinkles_minHeight_16_default__1lrvpk99v sprinkles_display_block_default__1lrvpk954"
                   />
                 </div>
                 <div
-                  class="RenderedMarkdown_renderedMarkdownStyle__w2sssm0 HomePageItem_excerptContinueReadingLinkStyle__4ajsvx1 sprinkles_fontWeight_light__1lrvpk9m"
+                  class="RenderedMarkdown_renderedMarkdownStyle__w2sssm0 ListItem_excerptContinueReadingLinkStyle__fsx6n51 sprinkles_fontWeight_light__1lrvpk9o"
                 >
                   <p>
                     David Goggins escapes an abusive home and overcomes a dead-end career to become a Navy Seal and world-class endurance athlete. 
@@ -1213,22 +1199,22 @@ exports[`/ can render last page 1`] = `
             </article>
           </li>
           <li
-            class="sprinkles_display_flex_default__1lrvpk94q sprinkles_backgroundColor_zebra_default__1lrvpk92e"
+            class="sprinkles_display_flex_default__1lrvpk95a sprinkles_backgroundColor_zebra_default__1lrvpk92j"
             value="-6"
           >
             <article
-              class="HomePageItem_gridStyle__4ajsvx2 sprinkles_paddingLeft_pageMargin_default__1lrvpk9e8 sprinkles_paddingRight_pageMargin_default__1lrvpk9fw"
+              class="ListItem_gridStyle__fsx6n52 sprinkles_paddingLeft_pageMargin_default__1lrvpk9g1 sprinkles_paddingRight_pageMargin_default__1lrvpk9i4"
             >
               <div
-                class="HomePageItem_gridAreas_date__4ajsvx5 sprinkles_textTransform_uppercase__1lrvpk91a sprinkles_fontSize_small__1lrvpk9h sprinkles_fontWeight_light__1lrvpk9m sprinkles_letterSpacing_0.75__1lrvpk9v sprinkles_lineHeight_16__1lrvpk9x sprinkles_color_subtle__1lrvpk97"
+                class="ListItem_gridAreas_date__fsx6n55 sprinkles_textTransform_uppercase__1lrvpk919 sprinkles_fontSize_small__1lrvpk9j sprinkles_fontWeight_light__1lrvpk9o sprinkles_letterSpacing_0.75__1lrvpk9x sprinkles_lineHeight_16__1lrvpk9z sprinkles_color_subtle__1lrvpk97"
               >
                 11 Oct 2022
               </div>
               <div
-                class="HomePageItem_gridAreas_cover__4ajsvx3 sprinkles_maxWidth_prose_default__1lrvpk98e"
+                class="ListItem_gridAreas_cover__fsx6n53 sprinkles_maxWidth_prose_default__1lrvpk99d"
               >
                 <a
-                  class="HomePageItem_coverBorderStyle__4ajsvx0 sprinkles_display_block_default__1lrvpk94k"
+                  class="ListItem_coverBorderStyle__fsx6n50 sprinkles_display_block_default__1lrvpk954"
                   href="/reviews/out-are-the-lights-by-richard-laymon/"
                   rel="canonical"
                 >
@@ -1273,35 +1259,32 @@ exports[`/ can render last page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__4ajsvx4"
+                class="ListItem_gridAreas_excerpt__fsx6n54"
               >
                 <div
-                  class="sprinkles_display_flex_default__1lrvpk94q sprinkles_flexDirection_column_default__1lrvpk958 sprinkles_alignItems_center_default__1lrvpk91h sprinkles_alignItems_flex-start_desktop__1lrvpk91p"
+                  class="sprinkles_display_flex_default__1lrvpk95a sprinkles_flexDirection_column_default__1lrvpk95s sprinkles_alignItems_center_default__1lrvpk91g sprinkles_alignItems_flex-start_desktop__1lrvpk91o"
                 >
                   <div
-                    class="sprinkles_textTransform_uppercase__1lrvpk91a sprinkles_fontSize_small__1lrvpk9h sprinkles_fontWeight_light__1lrvpk9m sprinkles_letterSpacing_0.75__1lrvpk9v sprinkles_lineHeight_16__1lrvpk9x sprinkles_color_subtle__1lrvpk97"
+                    class="sprinkles_textTransform_uppercase__1lrvpk919 sprinkles_fontSize_small__1lrvpk9j sprinkles_fontWeight_light__1lrvpk9o sprinkles_letterSpacing_0.75__1lrvpk9x sprinkles_lineHeight_16__1lrvpk9z sprinkles_color_subtle__1lrvpk97"
                   >
                     1982 | Novel
                   </div>
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_24_default__1lrvpk95t sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_24_default__1lrvpk98z sprinkles_display_block_default__1lrvpk94k"
+                    class="sprinkles_width_px_default__1lrvpk9na sprinkles_height_16_default__1lrvpk96a sprinkles_minWidth_px_default__1lrvpk9c4 sprinkles_minHeight_16_default__1lrvpk99v sprinkles_display_block_default__1lrvpk954"
                   />
                   <h2
-                    class="sprinkles_fontWeight_bold__1lrvpk9p sprinkles_fontSize_large__1lrvpk9k sprinkles_lineHeight_32__1lrvpk9z sprinkles_textAlign_center__1lrvpk918"
+                    class="sprinkles_fontWeight_bold__1lrvpk9r sprinkles_fontSize_large__1lrvpk9m sprinkles_lineHeight_32__1lrvpk912 sprinkles_textAlign_center_default__1lrvpk9kv"
                   >
                     <a
-                      class="sprinkles_color_default__1lrvpk95 sprinkles_display_inline-block_default__1lrvpk94z"
+                      class="sprinkles_color_default__1lrvpk95 sprinkles_display_inline-block_default__1lrvpk95j"
                       href="/reviews/out-are-the-lights-by-richard-laymon/"
                       rel="canonical"
                     >
                       Out Are the Lights
                     </a>
                   </h2>
-                  <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_16_default__1lrvpk95q sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_16_default__1lrvpk98w sprinkles_display_block_default__1lrvpk94k"
-                  />
                   <p
-                    class="sprinkles_textAlign_center__1lrvpk918"
+                    class="sprinkles_textAlign_center_default__1lrvpk9kv"
                   >
                     by 
                     <span>
@@ -1314,20 +1297,20 @@ exports[`/ can render last page 1`] = `
                   </p>
                    
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_24_default__1lrvpk95t sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_24_default__1lrvpk98z sprinkles_display_block_default__1lrvpk94k"
+                    class="sprinkles_width_px_default__1lrvpk9na sprinkles_height_16_default__1lrvpk96a sprinkles_minWidth_px_default__1lrvpk9c4 sprinkles_minHeight_16_default__1lrvpk99v sprinkles_display_block_default__1lrvpk954"
                   />
                   <img
                     alt="C-: 3 stars (out of 5)"
-                    height="32"
+                    height="24"
                     src="/svg/3-stars.svg"
-                    width="160"
+                    width="120"
                   />
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_24_default__1lrvpk95t sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_24_default__1lrvpk98z sprinkles_display_block_default__1lrvpk94k"
+                    class="sprinkles_width_px_default__1lrvpk9na sprinkles_height_16_default__1lrvpk96a sprinkles_minWidth_px_default__1lrvpk9c4 sprinkles_minHeight_16_default__1lrvpk99v sprinkles_display_block_default__1lrvpk954"
                   />
                 </div>
                 <div
-                  class="RenderedMarkdown_renderedMarkdownStyle__w2sssm0 HomePageItem_excerptContinueReadingLinkStyle__4ajsvx1 sprinkles_fontWeight_light__1lrvpk9m"
+                  class="RenderedMarkdown_renderedMarkdownStyle__w2sssm0 ListItem_excerptContinueReadingLinkStyle__fsx6n51 sprinkles_fontWeight_light__1lrvpk9o"
                 >
                   <p>
                     In a small California town, the Haunted Palace cinema specializes in horror films. Between showings of 
@@ -1351,22 +1334,22 @@ exports[`/ can render last page 1`] = `
             </article>
           </li>
           <li
-            class="sprinkles_display_flex_default__1lrvpk94q sprinkles_backgroundColor_zebra_default__1lrvpk92e"
+            class="sprinkles_display_flex_default__1lrvpk95a sprinkles_backgroundColor_zebra_default__1lrvpk92j"
             value="-7"
           >
             <article
-              class="HomePageItem_gridStyle__4ajsvx2 sprinkles_paddingLeft_pageMargin_default__1lrvpk9e8 sprinkles_paddingRight_pageMargin_default__1lrvpk9fw"
+              class="ListItem_gridStyle__fsx6n52 sprinkles_paddingLeft_pageMargin_default__1lrvpk9g1 sprinkles_paddingRight_pageMargin_default__1lrvpk9i4"
             >
               <div
-                class="HomePageItem_gridAreas_date__4ajsvx5 sprinkles_textTransform_uppercase__1lrvpk91a sprinkles_fontSize_small__1lrvpk9h sprinkles_fontWeight_light__1lrvpk9m sprinkles_letterSpacing_0.75__1lrvpk9v sprinkles_lineHeight_16__1lrvpk9x sprinkles_color_subtle__1lrvpk97"
+                class="ListItem_gridAreas_date__fsx6n55 sprinkles_textTransform_uppercase__1lrvpk919 sprinkles_fontSize_small__1lrvpk9j sprinkles_fontWeight_light__1lrvpk9o sprinkles_letterSpacing_0.75__1lrvpk9x sprinkles_lineHeight_16__1lrvpk9z sprinkles_color_subtle__1lrvpk97"
               >
                 04 Oct 2022
               </div>
               <div
-                class="HomePageItem_gridAreas_cover__4ajsvx3 sprinkles_maxWidth_prose_default__1lrvpk98e"
+                class="ListItem_gridAreas_cover__fsx6n53 sprinkles_maxWidth_prose_default__1lrvpk99d"
               >
                 <a
-                  class="HomePageItem_coverBorderStyle__4ajsvx0 sprinkles_display_block_default__1lrvpk94k"
+                  class="ListItem_coverBorderStyle__fsx6n50 sprinkles_display_block_default__1lrvpk954"
                   href="/reviews/what-doesnt-kill-us-by-scott-carney/"
                   rel="canonical"
                 >
@@ -1411,35 +1394,32 @@ exports[`/ can render last page 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__4ajsvx4"
+                class="ListItem_gridAreas_excerpt__fsx6n54"
               >
                 <div
-                  class="sprinkles_display_flex_default__1lrvpk94q sprinkles_flexDirection_column_default__1lrvpk958 sprinkles_alignItems_center_default__1lrvpk91h sprinkles_alignItems_flex-start_desktop__1lrvpk91p"
+                  class="sprinkles_display_flex_default__1lrvpk95a sprinkles_flexDirection_column_default__1lrvpk95s sprinkles_alignItems_center_default__1lrvpk91g sprinkles_alignItems_flex-start_desktop__1lrvpk91o"
                 >
                   <div
-                    class="sprinkles_textTransform_uppercase__1lrvpk91a sprinkles_fontSize_small__1lrvpk9h sprinkles_fontWeight_light__1lrvpk9m sprinkles_letterSpacing_0.75__1lrvpk9v sprinkles_lineHeight_16__1lrvpk9x sprinkles_color_subtle__1lrvpk97"
+                    class="sprinkles_textTransform_uppercase__1lrvpk919 sprinkles_fontSize_small__1lrvpk9j sprinkles_fontWeight_light__1lrvpk9o sprinkles_letterSpacing_0.75__1lrvpk9x sprinkles_lineHeight_16__1lrvpk9z sprinkles_color_subtle__1lrvpk97"
                   >
                     2017 | Nonfiction
                   </div>
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_24_default__1lrvpk95t sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_24_default__1lrvpk98z sprinkles_display_block_default__1lrvpk94k"
+                    class="sprinkles_width_px_default__1lrvpk9na sprinkles_height_16_default__1lrvpk96a sprinkles_minWidth_px_default__1lrvpk9c4 sprinkles_minHeight_16_default__1lrvpk99v sprinkles_display_block_default__1lrvpk954"
                   />
                   <h2
-                    class="sprinkles_fontWeight_bold__1lrvpk9p sprinkles_fontSize_large__1lrvpk9k sprinkles_lineHeight_32__1lrvpk9z sprinkles_textAlign_center__1lrvpk918"
+                    class="sprinkles_fontWeight_bold__1lrvpk9r sprinkles_fontSize_large__1lrvpk9m sprinkles_lineHeight_32__1lrvpk912 sprinkles_textAlign_center_default__1lrvpk9kv"
                   >
                     <a
-                      class="sprinkles_color_default__1lrvpk95 sprinkles_display_inline-block_default__1lrvpk94z"
+                      class="sprinkles_color_default__1lrvpk95 sprinkles_display_inline-block_default__1lrvpk95j"
                       href="/reviews/what-doesnt-kill-us-by-scott-carney/"
                       rel="canonical"
                     >
                       What Doesn't Kill Us
                     </a>
                   </h2>
-                  <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_16_default__1lrvpk95q sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_16_default__1lrvpk98w sprinkles_display_block_default__1lrvpk94k"
-                  />
                   <p
-                    class="sprinkles_textAlign_center__1lrvpk918"
+                    class="sprinkles_textAlign_center_default__1lrvpk9kv"
                   >
                     by 
                     <span>
@@ -1452,20 +1432,20 @@ exports[`/ can render last page 1`] = `
                   </p>
                    
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_24_default__1lrvpk95t sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_24_default__1lrvpk98z sprinkles_display_block_default__1lrvpk94k"
+                    class="sprinkles_width_px_default__1lrvpk9na sprinkles_height_16_default__1lrvpk96a sprinkles_minWidth_px_default__1lrvpk9c4 sprinkles_minHeight_16_default__1lrvpk99v sprinkles_display_block_default__1lrvpk954"
                   />
                   <img
                     alt="C+: 3 stars (out of 5)"
-                    height="32"
+                    height="24"
                     src="/svg/3-stars.svg"
-                    width="160"
+                    width="120"
                   />
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_24_default__1lrvpk95t sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_24_default__1lrvpk98z sprinkles_display_block_default__1lrvpk94k"
+                    class="sprinkles_width_px_default__1lrvpk9na sprinkles_height_16_default__1lrvpk96a sprinkles_minWidth_px_default__1lrvpk9c4 sprinkles_minHeight_16_default__1lrvpk99v sprinkles_display_block_default__1lrvpk954"
                   />
                 </div>
                 <div
-                  class="RenderedMarkdown_renderedMarkdownStyle__w2sssm0 HomePageItem_excerptContinueReadingLinkStyle__4ajsvx1 sprinkles_fontWeight_light__1lrvpk9m"
+                  class="RenderedMarkdown_renderedMarkdownStyle__w2sssm0 ListItem_excerptContinueReadingLinkStyle__fsx6n51 sprinkles_fontWeight_light__1lrvpk9o"
                 >
                   <p>
                     Journalist Scott Carney investigates Wim Hof’s cold exposure and breathing methods. He enters a skeptic but emerges a believer, joining Hof on a record-breaking ascent of Mount Kilimanjaro. 
@@ -1482,7 +1462,7 @@ exports[`/ can render last page 1`] = `
           </li>
         </ol>
         <section
-          class="sprinkles_paddingLeft_pageMargin_default__1lrvpk9e8 sprinkles_paddingRight_pageMargin_default__1lrvpk9fw sprinkles_paddingTop_40_default__1lrvpk9gh sprinkles_paddingBottom_40_default__1lrvpk9bz sprinkles_fontSize_medium__1lrvpk9j sprinkles_justifyContent_center_default__1lrvpk96q"
+          class="sprinkles_paddingLeft_pageMargin_default__1lrvpk9g1 sprinkles_paddingRight_pageMargin_default__1lrvpk9i4 sprinkles_paddingTop_40_default__1lrvpk9ip sprinkles_paddingBottom_40_default__1lrvpk9dd sprinkles_fontSize_medium__1lrvpk9l sprinkles_justifyContent_center_default__1lrvpk97a"
         >
           <div
             class="ScreenReaderOnly_screenReaderOnlyStyle__1lzmpje0"
@@ -1492,10 +1472,10 @@ exports[`/ can render last page 1`] = `
             </h3>
           </div>
           <div
-            class="sprinkles_display_flex_default__1lrvpk94q sprinkles_justifyContent_space-between_default__1lrvpk96n"
+            class="sprinkles_display_flex_default__1lrvpk95a sprinkles_justifyContent_space-between_default__1lrvpk977"
           >
             <a
-              class="sprinkles_textAlign_left__1lrvpk916"
+              class="sprinkles_textAlign_left_default__1lrvpk9kp"
               href="/page-10/"
             >
               ← Newer
@@ -1503,10 +1483,10 @@ exports[`/ can render last page 1`] = `
             <span />
           </div>
           <span
-            class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_24_default__1lrvpk95t sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_24_default__1lrvpk98z sprinkles_display_block_default__1lrvpk94k"
+            class="sprinkles_width_px_default__1lrvpk9na sprinkles_height_24_default__1lrvpk96d sprinkles_minWidth_px_default__1lrvpk9c4 sprinkles_minHeight_24_default__1lrvpk99y sprinkles_display_block_default__1lrvpk954"
           />
           <div
-            class="sprinkles_textAlign_right__1lrvpk917 sprinkles_color_subtle__1lrvpk97 sprinkles_lineHeight_32__1lrvpk9z"
+            class="sprinkles_textAlign_right_default__1lrvpk9ks sprinkles_color_subtle__1lrvpk97 sprinkles_lineHeight_32__1lrvpk912"
           >
             Page 
             <select>
@@ -1572,14 +1552,14 @@ exports[`/ can render last page 1`] = `
       </main>
     </div>
     <footer
-      class="backgroundImage_ripNotComingSoonBackgroundImageStyle__ewlb040 sprinkles_paddingLeft_pageMargin_default__1lrvpk9e8 sprinkles_paddingRight_pageMargin_default__1lrvpk9fw sprinkles_paddingTop_32_default__1lrvpk9ge sprinkles_paddingBottom_32_default__1lrvpk9bw sprinkles_color_inverse__1lrvpk98 sprinkles_display_flex_default__1lrvpk94q sprinkles_rowGap_24_default__1lrvpk9hn sprinkles_alignItems_center_default__1lrvpk91h sprinkles_flexDirection_column_default__1lrvpk958"
+      class="backgroundImage_ripNotComingSoonBackgroundImageStyle__ewlb040 sprinkles_paddingLeft_pageMargin_default__1lrvpk9g1 sprinkles_paddingRight_pageMargin_default__1lrvpk9i4 sprinkles_paddingTop_32_default__1lrvpk9im sprinkles_paddingBottom_32_default__1lrvpk9da sprinkles_color_inverse__1lrvpk98 sprinkles_display_flex_default__1lrvpk95a sprinkles_rowGap_24_default__1lrvpk9jv sprinkles_alignItems_center_default__1lrvpk91g sprinkles_flexDirection_column_default__1lrvpk95s"
     >
       <nav>
         <ul
-          class="sprinkles_display_flex_default__1lrvpk94q sprinkles_flexWrap_wrap_default__1lrvpk95b sprinkles_justifyContent_center_default__1lrvpk96q sprinkles_rowGap_8_default__1lrvpk9hh sprinkles_columnGap_16_default__1lrvpk935 sprinkles_columnGap_24_tablet__1lrvpk939"
+          class="sprinkles_display_flex_default__1lrvpk95a sprinkles_flexWrap_wrap_default__1lrvpk95v sprinkles_justifyContent_center_default__1lrvpk97a sprinkles_rowGap_8_default__1lrvpk9jp sprinkles_columnGap_16_default__1lrvpk93a sprinkles_columnGap_24_tablet__1lrvpk93e"
         >
           <li
-            class="sprinkles_display_block_default__1lrvpk94k sprinkles_letterSpacing_0.5__1lrvpk9u sprinkles_whiteSpace_nowrap__1lrvpk91d"
+            class="sprinkles_display_block_default__1lrvpk954 sprinkles_letterSpacing_0.5__1lrvpk9w sprinkles_whiteSpace_nowrap__1lrvpk91c"
           >
             <a
               class="sprinkles_color_inherit__1lrvpk99"
@@ -1589,7 +1569,7 @@ exports[`/ can render last page 1`] = `
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__1lrvpk94k sprinkles_letterSpacing_0.5__1lrvpk9u sprinkles_whiteSpace_nowrap__1lrvpk91d"
+            class="sprinkles_display_block_default__1lrvpk954 sprinkles_letterSpacing_0.5__1lrvpk9w sprinkles_whiteSpace_nowrap__1lrvpk91c"
           >
             <a
               class="sprinkles_color_inherit__1lrvpk99"
@@ -1599,7 +1579,7 @@ exports[`/ can render last page 1`] = `
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__1lrvpk94k sprinkles_letterSpacing_0.5__1lrvpk9u sprinkles_whiteSpace_nowrap__1lrvpk91d"
+            class="sprinkles_display_block_default__1lrvpk954 sprinkles_letterSpacing_0.5__1lrvpk9w sprinkles_whiteSpace_nowrap__1lrvpk91c"
           >
             <a
               class="sprinkles_color_inherit__1lrvpk99"
@@ -1609,7 +1589,17 @@ exports[`/ can render last page 1`] = `
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__1lrvpk94k sprinkles_letterSpacing_0.5__1lrvpk9u sprinkles_whiteSpace_nowrap__1lrvpk91d"
+            class="sprinkles_display_block_default__1lrvpk954 sprinkles_letterSpacing_0.5__1lrvpk9w sprinkles_whiteSpace_nowrap__1lrvpk91c"
+          >
+            <a
+              class="sprinkles_color_inherit__1lrvpk99"
+              href="/readings/"
+            >
+              Reading Log
+            </a>
+          </li>
+          <li
+            class="sprinkles_display_block_default__1lrvpk954 sprinkles_letterSpacing_0.5__1lrvpk9w sprinkles_whiteSpace_nowrap__1lrvpk91c"
           >
             <a
               class="sprinkles_color_inherit__1lrvpk99"
@@ -1621,7 +1611,7 @@ exports[`/ can render last page 1`] = `
         </ul>
       </nav>
       <p
-        class="sprinkles_fontWeight_light__1lrvpk9m sprinkles_fontSize_small__1lrvpk9h sprinkles_lineHeight_16__1lrvpk9x"
+        class="sprinkles_fontWeight_light__1lrvpk9o sprinkles_fontSize_small__1lrvpk9j sprinkles_lineHeight_16__1lrvpk9z"
       >
         All images used in accordance with the 
         <a
@@ -1648,25 +1638,25 @@ exports[`/ can render last page 1`] = `
 exports[`/ renders 1`] = `
 <DocumentFragment>
   <a
-    class="Layout_skipToMainContentStyle__1824noh3 sprinkles_paddingLeft_24_default__1lrvpk9cz sprinkles_paddingRight_24_default__1lrvpk9en sprinkles_paddingTop_8_default__1lrvpk9g5 sprinkles_paddingBottom_8_default__1lrvpk9bn sprinkles_backgroundColor_subtle_default__1lrvpk925 sprinkles_color_accent__1lrvpk94 sprinkles_textAlign_center__1lrvpk918"
+    class="Layout_skipToMainContentStyle__1824noh3 sprinkles_paddingLeft_24_default__1lrvpk9ed sprinkles_paddingRight_24_default__1lrvpk9gg sprinkles_paddingTop_8_default__1lrvpk9id sprinkles_paddingBottom_8_default__1lrvpk9d1 sprinkles_backgroundColor_subtle_default__1lrvpk927 sprinkles_color_accent__1lrvpk94 sprinkles_textAlign_center_default__1lrvpk9kv"
     href="#content"
   >
     Skip to content
   </a>
   <div
-    class="Layout_bandStickyStyle__1824noh1 backgroundImage_ripNotComingSoonBackgroundImageStyle__ewlb040 sprinkles_minHeight_16_default__1lrvpk98w sprinkles_width_full_default__1lrvpk9kh"
+    class="Layout_bandStickyStyle__1824noh1 backgroundImage_ripNotComingSoonBackgroundImageStyle__ewlb040 sprinkles_minHeight_16_default__1lrvpk99v sprinkles_width_full_default__1lrvpk9ng"
   />
   <div
-    class="Layout_pageCanvasStyle__1824noh0 sprinkles_backgroundColor_default_default__1lrvpk91z sprinkles_display_flex_default__1lrvpk94q sprinkles_flexDirection_column_default__1lrvpk958"
+    class="Layout_pageCanvasStyle__1824noh0 sprinkles_backgroundColor_default_default__1lrvpk921 sprinkles_display_flex_default__1lrvpk95a sprinkles_flexDirection_column_default__1lrvpk95s"
   >
     <header
-      class="Layout_headerLayoutStyle__1824noh2 sprinkles_paddingLeft_pageMargin_default__1lrvpk9e8 sprinkles_paddingRight_pageMargin_default__1lrvpk9fw sprinkles_paddingTop_24_default__1lrvpk9gb sprinkles_paddingTop_32_desktop__1lrvpk9gg sprinkles_paddingBottom_24_default__1lrvpk9bt sprinkles_paddingBottom_32_desktop__1lrvpk9by sprinkles_display_flex_default__1lrvpk94q sprinkles_rowGap_24_default__1lrvpk9hn sprinkles_alignItems_center_default__1lrvpk91h sprinkles_boxShadow_borderBottom_default__1lrvpk92q sprinkles_backgroundColor_default_default__1lrvpk91z"
+      class="Layout_headerLayoutStyle__1824noh2 sprinkles_paddingLeft_pageMargin_default__1lrvpk9g1 sprinkles_paddingRight_pageMargin_default__1lrvpk9i4 sprinkles_paddingTop_24_default__1lrvpk9ij sprinkles_paddingTop_32_desktop__1lrvpk9io sprinkles_paddingBottom_24_default__1lrvpk9d7 sprinkles_paddingBottom_32_desktop__1lrvpk9dc sprinkles_display_flex_default__1lrvpk95a sprinkles_rowGap_24_default__1lrvpk9jv sprinkles_alignItems_center_default__1lrvpk91g sprinkles_boxShadow_borderBottom_default__1lrvpk92v sprinkles_backgroundColor_default_default__1lrvpk921"
     >
       <div
-        class="sprinkles_display_flex_default__1lrvpk94q sprinkles_flexDirection_column_default__1lrvpk958 sprinkles_alignItems_inherit_default__1lrvpk91k sprinkles_justifyItems_inherit__1lrvpk9r"
+        class="sprinkles_display_flex_default__1lrvpk95a sprinkles_flexDirection_column_default__1lrvpk95s sprinkles_alignItems_inherit_default__1lrvpk91j sprinkles_justifyItems_inherit__1lrvpk9t"
       >
         <h1
-          class="Mast_flagTypographyStyle__1107qlt0 sprinkles_whiteSpace_nowrap__1lrvpk91d sprinkles_fontWeight_normal__1lrvpk9n"
+          class="Mast_flagTypographyStyle__1107qlt0 sprinkles_whiteSpace_nowrap__1lrvpk91c sprinkles_fontWeight_normal__1lrvpk9p"
         >
           <a
             class="sprinkles_color_default__1lrvpk95"
@@ -1676,7 +1666,7 @@ exports[`/ renders 1`] = `
           </a>
         </h1>
         <p
-          class="Mast_taglineStyle__1107qlt1 sprinkles_color_muted__1lrvpk96 sprinkles_lineHeight_16__1lrvpk9x sprinkles_width_full_default__1lrvpk9kh sprinkles_fontSize_small__1lrvpk9h"
+          class="Mast_taglineStyle__1107qlt1 sprinkles_color_muted__1lrvpk96 sprinkles_lineHeight_16__1lrvpk9z sprinkles_width_full_default__1lrvpk9ng sprinkles_fontSize_small__1lrvpk9j"
         >
           Literature is a relative term.
         </p>
@@ -1684,12 +1674,12 @@ exports[`/ renders 1`] = `
       <form
         accept-charset="UTF-8"
         action="https://www.google.com/search"
-        class="Mast_orderStyle__1107qlt3 sprinkles_boxShadow_borderAll_default__1lrvpk92t sprinkles_borderRadius_4__1lrvpk90 sprinkles_overflow_hidden__1lrvpk915 sprinkles_width_full_default__1lrvpk9kh sprinkles_width_unset_desktop__1lrvpk9kp sprinkles_maxWidth_prose_default__1lrvpk98e"
+        class="Mast_orderStyle__1107qlt3 sprinkles_boxShadow_borderAll_default__1lrvpk92y sprinkles_borderRadius_4__1lrvpk90 sprinkles_overflow_hidden__1lrvpk918 sprinkles_width_full_default__1lrvpk9ng sprinkles_width_unset_desktop__1lrvpk9no sprinkles_maxWidth_prose_default__1lrvpk99d"
         method="get"
         role="search"
       >
         <label
-          class="sprinkles_display_flex_default__1lrvpk94q sprinkles_overflow_hidden__1lrvpk915"
+          class="sprinkles_display_flex_default__1lrvpk95a sprinkles_overflow_hidden__1lrvpk918"
           for="search"
         >
           <div
@@ -1698,7 +1688,7 @@ exports[`/ renders 1`] = `
             Search
           </div>
           <input
-            class="SiteSearchForm_searchInputStyle__p9uc60 sprinkles_paddingLeft_16_default__1lrvpk9cw sprinkles_paddingRight_16_default__1lrvpk9ek sprinkles_paddingTop_8_default__1lrvpk9g5 sprinkles_paddingBottom_8_default__1lrvpk9bn sprinkles_backgroundColor_subtle_default__1lrvpk925 sprinkles_color_default__1lrvpk95 sprinkles_fontSize_default__1lrvpk9i sprinkles_fontWeight_light__1lrvpk9m sprinkles_lineHeight_24__1lrvpk9y sprinkles_flexGrow_1__1lrvpk9e"
+            class="SiteSearchForm_searchInputStyle__p9uc60 sprinkles_paddingLeft_16_default__1lrvpk9ea sprinkles_paddingRight_16_default__1lrvpk9gd sprinkles_paddingTop_8_default__1lrvpk9id sprinkles_paddingBottom_8_default__1lrvpk9d1 sprinkles_backgroundColor_subtle_default__1lrvpk927 sprinkles_color_default__1lrvpk95 sprinkles_fontSize_default__1lrvpk9k sprinkles_fontWeight_light__1lrvpk9o sprinkles_lineHeight_24__1lrvpk911 sprinkles_flexGrow_1__1lrvpk9g"
             id="search"
             name="q"
             placeholder="Search..."
@@ -1711,7 +1701,7 @@ exports[`/ renders 1`] = `
           />
           <button
             aria-label="Search"
-            class="SiteSearchForm_submitButtonStyle__p9uc61 sprinkles_backgroundColor_subtle_default__1lrvpk925"
+            class="SiteSearchForm_submitButtonStyle__p9uc61 sprinkles_backgroundColor_subtle_default__1lrvpk927"
             type="submit"
             value="Search"
           >
@@ -1738,10 +1728,10 @@ exports[`/ renders 1`] = `
         class="sprinkles_color_accent__1lrvpk94"
       >
         <ul
-          class="sprinkles_display_flex_default__1lrvpk94q sprinkles_flexWrap_wrap_default__1lrvpk95b sprinkles_justifyContent_center_default__1lrvpk96q sprinkles_rowGap_8_default__1lrvpk9hh sprinkles_columnGap_16_default__1lrvpk935 sprinkles_columnGap_24_tablet__1lrvpk939"
+          class="sprinkles_display_flex_default__1lrvpk95a sprinkles_flexWrap_wrap_default__1lrvpk95v sprinkles_justifyContent_center_default__1lrvpk97a sprinkles_rowGap_8_default__1lrvpk9jp sprinkles_columnGap_16_default__1lrvpk93a sprinkles_columnGap_24_tablet__1lrvpk93e"
         >
           <li
-            class="sprinkles_display_block_default__1lrvpk94k sprinkles_letterSpacing_0.5__1lrvpk9u sprinkles_whiteSpace_nowrap__1lrvpk91d"
+            class="sprinkles_display_block_default__1lrvpk954 sprinkles_letterSpacing_0.5__1lrvpk9w sprinkles_whiteSpace_nowrap__1lrvpk91c"
           >
             <a
               class="sprinkles_color_inherit__1lrvpk99"
@@ -1751,7 +1741,7 @@ exports[`/ renders 1`] = `
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__1lrvpk94k sprinkles_letterSpacing_0.5__1lrvpk9u sprinkles_whiteSpace_nowrap__1lrvpk91d"
+            class="sprinkles_display_block_default__1lrvpk954 sprinkles_letterSpacing_0.5__1lrvpk9w sprinkles_whiteSpace_nowrap__1lrvpk91c"
           >
             <a
               class="sprinkles_color_inherit__1lrvpk99"
@@ -1761,7 +1751,7 @@ exports[`/ renders 1`] = `
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__1lrvpk94k sprinkles_letterSpacing_0.5__1lrvpk9u sprinkles_whiteSpace_nowrap__1lrvpk91d"
+            class="sprinkles_display_block_default__1lrvpk954 sprinkles_letterSpacing_0.5__1lrvpk9w sprinkles_whiteSpace_nowrap__1lrvpk91c"
           >
             <a
               class="sprinkles_color_inherit__1lrvpk99"
@@ -1771,7 +1761,17 @@ exports[`/ renders 1`] = `
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__1lrvpk94k sprinkles_letterSpacing_0.5__1lrvpk9u sprinkles_whiteSpace_nowrap__1lrvpk91d"
+            class="sprinkles_display_block_default__1lrvpk954 sprinkles_letterSpacing_0.5__1lrvpk9w sprinkles_whiteSpace_nowrap__1lrvpk91c"
+          >
+            <a
+              class="sprinkles_color_inherit__1lrvpk99"
+              href="/readings/"
+            >
+              Reading Log
+            </a>
+          </li>
+          <li
+            class="sprinkles_display_block_default__1lrvpk954 sprinkles_letterSpacing_0.5__1lrvpk9w sprinkles_whiteSpace_nowrap__1lrvpk91c"
           >
             <a
               class="sprinkles_color_inherit__1lrvpk99"
@@ -1784,30 +1784,30 @@ exports[`/ renders 1`] = `
       </nav>
     </header>
     <div
-      class="sprinkles_flexGrow_1__1lrvpk9e"
+      class="sprinkles_flexGrow_1__1lrvpk9g"
       id="content"
     >
       <main>
         <ol
-          class="sprinkles_display_flex_default__1lrvpk94q sprinkles_flexDirection_column_default__1lrvpk958"
+          class="sprinkles_display_flex_default__1lrvpk95a sprinkles_flexDirection_column_default__1lrvpk95s"
         >
           <li
-            class="sprinkles_display_flex_default__1lrvpk94q sprinkles_backgroundColor_zebra_default__1lrvpk92e"
+            class="sprinkles_display_flex_default__1lrvpk95a sprinkles_backgroundColor_zebra_default__1lrvpk92j"
             value="102"
           >
             <article
-              class="HomePageItem_gridStyle__4ajsvx2 sprinkles_paddingLeft_pageMargin_default__1lrvpk9e8 sprinkles_paddingRight_pageMargin_default__1lrvpk9fw"
+              class="ListItem_gridStyle__fsx6n52 sprinkles_paddingLeft_pageMargin_default__1lrvpk9g1 sprinkles_paddingRight_pageMargin_default__1lrvpk9i4"
             >
               <div
-                class="HomePageItem_gridAreas_date__4ajsvx5 sprinkles_textTransform_uppercase__1lrvpk91a sprinkles_fontSize_small__1lrvpk9h sprinkles_fontWeight_light__1lrvpk9m sprinkles_letterSpacing_0.75__1lrvpk9v sprinkles_lineHeight_16__1lrvpk9x sprinkles_color_subtle__1lrvpk97"
+                class="ListItem_gridAreas_date__fsx6n55 sprinkles_textTransform_uppercase__1lrvpk919 sprinkles_fontSize_small__1lrvpk9j sprinkles_fontWeight_light__1lrvpk9o sprinkles_letterSpacing_0.75__1lrvpk9x sprinkles_lineHeight_16__1lrvpk9z sprinkles_color_subtle__1lrvpk97"
               >
                 21 Jan 2023
               </div>
               <div
-                class="HomePageItem_gridAreas_cover__4ajsvx3 sprinkles_maxWidth_prose_default__1lrvpk98e"
+                class="ListItem_gridAreas_cover__fsx6n53 sprinkles_maxWidth_prose_default__1lrvpk99d"
               >
                 <a
-                  class="HomePageItem_coverBorderStyle__4ajsvx0 sprinkles_display_block_default__1lrvpk94k"
+                  class="ListItem_coverBorderStyle__fsx6n50 sprinkles_display_block_default__1lrvpk954"
                   href="/reviews/roadside-pickup-by-richard-laymon/"
                   rel="canonical"
                 >
@@ -1852,35 +1852,32 @@ exports[`/ renders 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__4ajsvx4"
+                class="ListItem_gridAreas_excerpt__fsx6n54"
               >
                 <div
-                  class="sprinkles_display_flex_default__1lrvpk94q sprinkles_flexDirection_column_default__1lrvpk958 sprinkles_alignItems_center_default__1lrvpk91h sprinkles_alignItems_flex-start_desktop__1lrvpk91p"
+                  class="sprinkles_display_flex_default__1lrvpk95a sprinkles_flexDirection_column_default__1lrvpk95s sprinkles_alignItems_center_default__1lrvpk91g sprinkles_alignItems_flex-start_desktop__1lrvpk91o"
                 >
                   <div
-                    class="sprinkles_textTransform_uppercase__1lrvpk91a sprinkles_fontSize_small__1lrvpk9h sprinkles_fontWeight_light__1lrvpk9m sprinkles_letterSpacing_0.75__1lrvpk9v sprinkles_lineHeight_16__1lrvpk9x sprinkles_color_subtle__1lrvpk97"
+                    class="sprinkles_textTransform_uppercase__1lrvpk919 sprinkles_fontSize_small__1lrvpk9j sprinkles_fontWeight_light__1lrvpk9o sprinkles_letterSpacing_0.75__1lrvpk9x sprinkles_lineHeight_16__1lrvpk9z sprinkles_color_subtle__1lrvpk97"
                   >
                     1974 | Short Story
                   </div>
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_24_default__1lrvpk95t sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_24_default__1lrvpk98z sprinkles_display_block_default__1lrvpk94k"
+                    class="sprinkles_width_px_default__1lrvpk9na sprinkles_height_16_default__1lrvpk96a sprinkles_minWidth_px_default__1lrvpk9c4 sprinkles_minHeight_16_default__1lrvpk99v sprinkles_display_block_default__1lrvpk954"
                   />
                   <h2
-                    class="sprinkles_fontWeight_bold__1lrvpk9p sprinkles_fontSize_large__1lrvpk9k sprinkles_lineHeight_32__1lrvpk9z sprinkles_textAlign_center__1lrvpk918"
+                    class="sprinkles_fontWeight_bold__1lrvpk9r sprinkles_fontSize_large__1lrvpk9m sprinkles_lineHeight_32__1lrvpk912 sprinkles_textAlign_center_default__1lrvpk9kv"
                   >
                     <a
-                      class="sprinkles_color_default__1lrvpk95 sprinkles_display_inline-block_default__1lrvpk94z"
+                      class="sprinkles_color_default__1lrvpk95 sprinkles_display_inline-block_default__1lrvpk95j"
                       href="/reviews/roadside-pickup-by-richard-laymon/"
                       rel="canonical"
                     >
                       Roadside Pickup
                     </a>
                   </h2>
-                  <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_16_default__1lrvpk95q sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_16_default__1lrvpk98w sprinkles_display_block_default__1lrvpk94k"
-                  />
                   <p
-                    class="sprinkles_textAlign_center__1lrvpk918"
+                    class="sprinkles_textAlign_center_default__1lrvpk9kv"
                   >
                     by 
                     <span>
@@ -1893,20 +1890,20 @@ exports[`/ renders 1`] = `
                   </p>
                    
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_24_default__1lrvpk95t sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_24_default__1lrvpk98z sprinkles_display_block_default__1lrvpk94k"
+                    class="sprinkles_width_px_default__1lrvpk9na sprinkles_height_16_default__1lrvpk96a sprinkles_minWidth_px_default__1lrvpk9c4 sprinkles_minHeight_16_default__1lrvpk99v sprinkles_display_block_default__1lrvpk954"
                   />
                   <img
                     alt="C-: 3 stars (out of 5)"
-                    height="32"
+                    height="24"
                     src="/svg/3-stars.svg"
-                    width="160"
+                    width="120"
                   />
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_24_default__1lrvpk95t sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_24_default__1lrvpk98z sprinkles_display_block_default__1lrvpk94k"
+                    class="sprinkles_width_px_default__1lrvpk9na sprinkles_height_16_default__1lrvpk96a sprinkles_minWidth_px_default__1lrvpk9c4 sprinkles_minHeight_16_default__1lrvpk99v sprinkles_display_block_default__1lrvpk954"
                   />
                 </div>
                 <div
-                  class="RenderedMarkdown_renderedMarkdownStyle__w2sssm0 HomePageItem_excerptContinueReadingLinkStyle__4ajsvx1 sprinkles_fontWeight_light__1lrvpk9m"
+                  class="RenderedMarkdown_renderedMarkdownStyle__w2sssm0 ListItem_excerptContinueReadingLinkStyle__fsx6n51 sprinkles_fontWeight_light__1lrvpk9o"
                 >
                   <p>
                     Early morning darkness. Colleen sits stranded in her car. Three hours have produced three cars. None have stopped. But the fourth does. A young man with fashionable clothes and booze on his breath. Won’t she let him give her a ride?
@@ -1921,22 +1918,22 @@ exports[`/ renders 1`] = `
             </article>
           </li>
           <li
-            class="sprinkles_display_flex_default__1lrvpk94q sprinkles_backgroundColor_zebra_default__1lrvpk92e"
+            class="sprinkles_display_flex_default__1lrvpk95a sprinkles_backgroundColor_zebra_default__1lrvpk92j"
             value="101"
           >
             <article
-              class="HomePageItem_gridStyle__4ajsvx2 sprinkles_paddingLeft_pageMargin_default__1lrvpk9e8 sprinkles_paddingRight_pageMargin_default__1lrvpk9fw"
+              class="ListItem_gridStyle__fsx6n52 sprinkles_paddingLeft_pageMargin_default__1lrvpk9g1 sprinkles_paddingRight_pageMargin_default__1lrvpk9i4"
             >
               <div
-                class="HomePageItem_gridAreas_date__4ajsvx5 sprinkles_textTransform_uppercase__1lrvpk91a sprinkles_fontSize_small__1lrvpk9h sprinkles_fontWeight_light__1lrvpk9m sprinkles_letterSpacing_0.75__1lrvpk9v sprinkles_lineHeight_16__1lrvpk9x sprinkles_color_subtle__1lrvpk97"
+                class="ListItem_gridAreas_date__fsx6n55 sprinkles_textTransform_uppercase__1lrvpk919 sprinkles_fontSize_small__1lrvpk9j sprinkles_fontWeight_light__1lrvpk9o sprinkles_letterSpacing_0.75__1lrvpk9x sprinkles_lineHeight_16__1lrvpk9z sprinkles_color_subtle__1lrvpk97"
               >
                 21 Jan 2023
               </div>
               <div
-                class="HomePageItem_gridAreas_cover__4ajsvx3 sprinkles_maxWidth_prose_default__1lrvpk98e"
+                class="ListItem_gridAreas_cover__fsx6n53 sprinkles_maxWidth_prose_default__1lrvpk99d"
               >
                 <a
-                  class="HomePageItem_coverBorderStyle__4ajsvx0 sprinkles_display_block_default__1lrvpk94k"
+                  class="ListItem_coverBorderStyle__fsx6n50 sprinkles_display_block_default__1lrvpk954"
                   href="/reviews/fright-night-by-john-skipp-craig-spector/"
                   rel="canonical"
                 >
@@ -1981,35 +1978,32 @@ exports[`/ renders 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__4ajsvx4"
+                class="ListItem_gridAreas_excerpt__fsx6n54"
               >
                 <div
-                  class="sprinkles_display_flex_default__1lrvpk94q sprinkles_flexDirection_column_default__1lrvpk958 sprinkles_alignItems_center_default__1lrvpk91h sprinkles_alignItems_flex-start_desktop__1lrvpk91p"
+                  class="sprinkles_display_flex_default__1lrvpk95a sprinkles_flexDirection_column_default__1lrvpk95s sprinkles_alignItems_center_default__1lrvpk91g sprinkles_alignItems_flex-start_desktop__1lrvpk91o"
                 >
                   <div
-                    class="sprinkles_textTransform_uppercase__1lrvpk91a sprinkles_fontSize_small__1lrvpk9h sprinkles_fontWeight_light__1lrvpk9m sprinkles_letterSpacing_0.75__1lrvpk9v sprinkles_lineHeight_16__1lrvpk9x sprinkles_color_subtle__1lrvpk97"
+                    class="sprinkles_textTransform_uppercase__1lrvpk919 sprinkles_fontSize_small__1lrvpk9j sprinkles_fontWeight_light__1lrvpk9o sprinkles_letterSpacing_0.75__1lrvpk9x sprinkles_lineHeight_16__1lrvpk9z sprinkles_color_subtle__1lrvpk97"
                   >
                     1985 | Novel
                   </div>
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_24_default__1lrvpk95t sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_24_default__1lrvpk98z sprinkles_display_block_default__1lrvpk94k"
+                    class="sprinkles_width_px_default__1lrvpk9na sprinkles_height_16_default__1lrvpk96a sprinkles_minWidth_px_default__1lrvpk9c4 sprinkles_minHeight_16_default__1lrvpk99v sprinkles_display_block_default__1lrvpk954"
                   />
                   <h2
-                    class="sprinkles_fontWeight_bold__1lrvpk9p sprinkles_fontSize_large__1lrvpk9k sprinkles_lineHeight_32__1lrvpk9z sprinkles_textAlign_center__1lrvpk918"
+                    class="sprinkles_fontWeight_bold__1lrvpk9r sprinkles_fontSize_large__1lrvpk9m sprinkles_lineHeight_32__1lrvpk912 sprinkles_textAlign_center_default__1lrvpk9kv"
                   >
                     <a
-                      class="sprinkles_color_default__1lrvpk95 sprinkles_display_inline-block_default__1lrvpk94z"
+                      class="sprinkles_color_default__1lrvpk95 sprinkles_display_inline-block_default__1lrvpk95j"
                       href="/reviews/fright-night-by-john-skipp-craig-spector/"
                       rel="canonical"
                     >
                       Fright Night
                     </a>
                   </h2>
-                  <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_16_default__1lrvpk95q sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_16_default__1lrvpk98w sprinkles_display_block_default__1lrvpk94k"
-                  />
                   <p
-                    class="sprinkles_textAlign_center__1lrvpk918"
+                    class="sprinkles_textAlign_center_default__1lrvpk9kv"
                   >
                     by 
                     <span>
@@ -2030,20 +2024,20 @@ exports[`/ renders 1`] = `
                   </p>
                    
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_24_default__1lrvpk95t sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_24_default__1lrvpk98z sprinkles_display_block_default__1lrvpk94k"
+                    class="sprinkles_width_px_default__1lrvpk9na sprinkles_height_16_default__1lrvpk96a sprinkles_minWidth_px_default__1lrvpk9c4 sprinkles_minHeight_16_default__1lrvpk99v sprinkles_display_block_default__1lrvpk954"
                   />
                   <img
                     alt="F: 1 star (out of 5)"
-                    height="32"
+                    height="24"
                     src="/svg/1-star.svg"
-                    width="160"
+                    width="120"
                   />
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_24_default__1lrvpk95t sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_24_default__1lrvpk98z sprinkles_display_block_default__1lrvpk94k"
+                    class="sprinkles_width_px_default__1lrvpk9na sprinkles_height_16_default__1lrvpk96a sprinkles_minWidth_px_default__1lrvpk9c4 sprinkles_minHeight_16_default__1lrvpk99v sprinkles_display_block_default__1lrvpk954"
                   />
                 </div>
                 <div
-                  class="RenderedMarkdown_renderedMarkdownStyle__w2sssm0 HomePageItem_excerptContinueReadingLinkStyle__4ajsvx1 sprinkles_fontWeight_light__1lrvpk9m"
+                  class="RenderedMarkdown_renderedMarkdownStyle__w2sssm0 ListItem_excerptContinueReadingLinkStyle__fsx6n51 sprinkles_fontWeight_light__1lrvpk9o"
                 >
                   <p>
                     During a late-night make-out session with his girlfriend, high-schooler Charlie Brewster spies two men carrying a coffin into the basement of the house next-door. Charlie soon discovers his suave new neighbor, Jerry Dandrige, has fangs. When the police don’t believe him, Charlie appeals to the local creature-feature host, washed up horror icon Peter Vincent, for help. 
@@ -2059,22 +2053,22 @@ exports[`/ renders 1`] = `
             </article>
           </li>
           <li
-            class="sprinkles_display_flex_default__1lrvpk94q sprinkles_backgroundColor_zebra_default__1lrvpk92e"
+            class="sprinkles_display_flex_default__1lrvpk95a sprinkles_backgroundColor_zebra_default__1lrvpk92j"
             value="100"
           >
             <article
-              class="HomePageItem_gridStyle__4ajsvx2 sprinkles_paddingLeft_pageMargin_default__1lrvpk9e8 sprinkles_paddingRight_pageMargin_default__1lrvpk9fw"
+              class="ListItem_gridStyle__fsx6n52 sprinkles_paddingLeft_pageMargin_default__1lrvpk9g1 sprinkles_paddingRight_pageMargin_default__1lrvpk9i4"
             >
               <div
-                class="HomePageItem_gridAreas_date__4ajsvx5 sprinkles_textTransform_uppercase__1lrvpk91a sprinkles_fontSize_small__1lrvpk9h sprinkles_fontWeight_light__1lrvpk9m sprinkles_letterSpacing_0.75__1lrvpk9v sprinkles_lineHeight_16__1lrvpk9x sprinkles_color_subtle__1lrvpk97"
+                class="ListItem_gridAreas_date__fsx6n55 sprinkles_textTransform_uppercase__1lrvpk919 sprinkles_fontSize_small__1lrvpk9j sprinkles_fontWeight_light__1lrvpk9o sprinkles_letterSpacing_0.75__1lrvpk9x sprinkles_lineHeight_16__1lrvpk9z sprinkles_color_subtle__1lrvpk97"
               >
                 14 Jan 2023
               </div>
               <div
-                class="HomePageItem_gridAreas_cover__4ajsvx3 sprinkles_maxWidth_prose_default__1lrvpk98e"
+                class="ListItem_gridAreas_cover__fsx6n53 sprinkles_maxWidth_prose_default__1lrvpk99d"
               >
                 <a
-                  class="HomePageItem_coverBorderStyle__4ajsvx0 sprinkles_display_block_default__1lrvpk94k"
+                  class="ListItem_coverBorderStyle__fsx6n50 sprinkles_display_block_default__1lrvpk954"
                   href="/reviews/doctor-sleep-by-stephen-king/"
                   rel="canonical"
                 >
@@ -2119,35 +2113,32 @@ exports[`/ renders 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__4ajsvx4"
+                class="ListItem_gridAreas_excerpt__fsx6n54"
               >
                 <div
-                  class="sprinkles_display_flex_default__1lrvpk94q sprinkles_flexDirection_column_default__1lrvpk958 sprinkles_alignItems_center_default__1lrvpk91h sprinkles_alignItems_flex-start_desktop__1lrvpk91p"
+                  class="sprinkles_display_flex_default__1lrvpk95a sprinkles_flexDirection_column_default__1lrvpk95s sprinkles_alignItems_center_default__1lrvpk91g sprinkles_alignItems_flex-start_desktop__1lrvpk91o"
                 >
                   <div
-                    class="sprinkles_textTransform_uppercase__1lrvpk91a sprinkles_fontSize_small__1lrvpk9h sprinkles_fontWeight_light__1lrvpk9m sprinkles_letterSpacing_0.75__1lrvpk9v sprinkles_lineHeight_16__1lrvpk9x sprinkles_color_subtle__1lrvpk97"
+                    class="sprinkles_textTransform_uppercase__1lrvpk919 sprinkles_fontSize_small__1lrvpk9j sprinkles_fontWeight_light__1lrvpk9o sprinkles_letterSpacing_0.75__1lrvpk9x sprinkles_lineHeight_16__1lrvpk9z sprinkles_color_subtle__1lrvpk97"
                   >
                     2013 | Novel
                   </div>
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_24_default__1lrvpk95t sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_24_default__1lrvpk98z sprinkles_display_block_default__1lrvpk94k"
+                    class="sprinkles_width_px_default__1lrvpk9na sprinkles_height_16_default__1lrvpk96a sprinkles_minWidth_px_default__1lrvpk9c4 sprinkles_minHeight_16_default__1lrvpk99v sprinkles_display_block_default__1lrvpk954"
                   />
                   <h2
-                    class="sprinkles_fontWeight_bold__1lrvpk9p sprinkles_fontSize_large__1lrvpk9k sprinkles_lineHeight_32__1lrvpk9z sprinkles_textAlign_center__1lrvpk918"
+                    class="sprinkles_fontWeight_bold__1lrvpk9r sprinkles_fontSize_large__1lrvpk9m sprinkles_lineHeight_32__1lrvpk912 sprinkles_textAlign_center_default__1lrvpk9kv"
                   >
                     <a
-                      class="sprinkles_color_default__1lrvpk95 sprinkles_display_inline-block_default__1lrvpk94z"
+                      class="sprinkles_color_default__1lrvpk95 sprinkles_display_inline-block_default__1lrvpk95j"
                       href="/reviews/doctor-sleep-by-stephen-king/"
                       rel="canonical"
                     >
                       Doctor Sleep
                     </a>
                   </h2>
-                  <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_16_default__1lrvpk95q sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_16_default__1lrvpk98w sprinkles_display_block_default__1lrvpk94k"
-                  />
                   <p
-                    class="sprinkles_textAlign_center__1lrvpk918"
+                    class="sprinkles_textAlign_center_default__1lrvpk9kv"
                   >
                     by 
                     <span>
@@ -2160,20 +2151,20 @@ exports[`/ renders 1`] = `
                   </p>
                    
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_24_default__1lrvpk95t sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_24_default__1lrvpk98z sprinkles_display_block_default__1lrvpk94k"
+                    class="sprinkles_width_px_default__1lrvpk9na sprinkles_height_16_default__1lrvpk96a sprinkles_minWidth_px_default__1lrvpk9c4 sprinkles_minHeight_16_default__1lrvpk99v sprinkles_display_block_default__1lrvpk954"
                   />
                   <img
                     alt="C+: 3 stars (out of 5)"
-                    height="32"
+                    height="24"
                     src="/svg/3-stars.svg"
-                    width="160"
+                    width="120"
                   />
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_24_default__1lrvpk95t sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_24_default__1lrvpk98z sprinkles_display_block_default__1lrvpk94k"
+                    class="sprinkles_width_px_default__1lrvpk9na sprinkles_height_16_default__1lrvpk96a sprinkles_minWidth_px_default__1lrvpk9c4 sprinkles_minHeight_16_default__1lrvpk99v sprinkles_display_block_default__1lrvpk954"
                   />
                 </div>
                 <div
-                  class="RenderedMarkdown_renderedMarkdownStyle__w2sssm0 HomePageItem_excerptContinueReadingLinkStyle__4ajsvx1 sprinkles_fontWeight_light__1lrvpk9m"
+                  class="RenderedMarkdown_renderedMarkdownStyle__w2sssm0 ListItem_excerptContinueReadingLinkStyle__fsx6n51 sprinkles_fontWeight_light__1lrvpk9o"
                 >
                   <p>
                     Stephen King’s sequel to 
@@ -2197,22 +2188,22 @@ exports[`/ renders 1`] = `
             </article>
           </li>
           <li
-            class="sprinkles_display_flex_default__1lrvpk94q sprinkles_backgroundColor_zebra_default__1lrvpk92e"
+            class="sprinkles_display_flex_default__1lrvpk95a sprinkles_backgroundColor_zebra_default__1lrvpk92j"
             value="99"
           >
             <article
-              class="HomePageItem_gridStyle__4ajsvx2 sprinkles_paddingLeft_pageMargin_default__1lrvpk9e8 sprinkles_paddingRight_pageMargin_default__1lrvpk9fw"
+              class="ListItem_gridStyle__fsx6n52 sprinkles_paddingLeft_pageMargin_default__1lrvpk9g1 sprinkles_paddingRight_pageMargin_default__1lrvpk9i4"
             >
               <div
-                class="HomePageItem_gridAreas_date__4ajsvx5 sprinkles_textTransform_uppercase__1lrvpk91a sprinkles_fontSize_small__1lrvpk9h sprinkles_fontWeight_light__1lrvpk9m sprinkles_letterSpacing_0.75__1lrvpk9v sprinkles_lineHeight_16__1lrvpk9x sprinkles_color_subtle__1lrvpk97"
+                class="ListItem_gridAreas_date__fsx6n55 sprinkles_textTransform_uppercase__1lrvpk919 sprinkles_fontSize_small__1lrvpk9j sprinkles_fontWeight_light__1lrvpk9o sprinkles_letterSpacing_0.75__1lrvpk9x sprinkles_lineHeight_16__1lrvpk9z sprinkles_color_subtle__1lrvpk97"
               >
                 29 Oct 2022
               </div>
               <div
-                class="HomePageItem_gridAreas_cover__4ajsvx3 sprinkles_maxWidth_prose_default__1lrvpk98e"
+                class="ListItem_gridAreas_cover__fsx6n53 sprinkles_maxWidth_prose_default__1lrvpk99d"
               >
                 <a
-                  class="HomePageItem_coverBorderStyle__4ajsvx0 sprinkles_display_block_default__1lrvpk94k"
+                  class="ListItem_coverBorderStyle__fsx6n50 sprinkles_display_block_default__1lrvpk954"
                   href="/reviews/the-skeptics-guide-to-the-universe-by-steven-novella/"
                   rel="canonical"
                 >
@@ -2257,35 +2248,32 @@ exports[`/ renders 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__4ajsvx4"
+                class="ListItem_gridAreas_excerpt__fsx6n54"
               >
                 <div
-                  class="sprinkles_display_flex_default__1lrvpk94q sprinkles_flexDirection_column_default__1lrvpk958 sprinkles_alignItems_center_default__1lrvpk91h sprinkles_alignItems_flex-start_desktop__1lrvpk91p"
+                  class="sprinkles_display_flex_default__1lrvpk95a sprinkles_flexDirection_column_default__1lrvpk95s sprinkles_alignItems_center_default__1lrvpk91g sprinkles_alignItems_flex-start_desktop__1lrvpk91o"
                 >
                   <div
-                    class="sprinkles_textTransform_uppercase__1lrvpk91a sprinkles_fontSize_small__1lrvpk9h sprinkles_fontWeight_light__1lrvpk9m sprinkles_letterSpacing_0.75__1lrvpk9v sprinkles_lineHeight_16__1lrvpk9x sprinkles_color_subtle__1lrvpk97"
+                    class="sprinkles_textTransform_uppercase__1lrvpk919 sprinkles_fontSize_small__1lrvpk9j sprinkles_fontWeight_light__1lrvpk9o sprinkles_letterSpacing_0.75__1lrvpk9x sprinkles_lineHeight_16__1lrvpk9z sprinkles_color_subtle__1lrvpk97"
                   >
                     2018 | Nonfiction
                   </div>
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_24_default__1lrvpk95t sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_24_default__1lrvpk98z sprinkles_display_block_default__1lrvpk94k"
+                    class="sprinkles_width_px_default__1lrvpk9na sprinkles_height_16_default__1lrvpk96a sprinkles_minWidth_px_default__1lrvpk9c4 sprinkles_minHeight_16_default__1lrvpk99v sprinkles_display_block_default__1lrvpk954"
                   />
                   <h2
-                    class="sprinkles_fontWeight_bold__1lrvpk9p sprinkles_fontSize_large__1lrvpk9k sprinkles_lineHeight_32__1lrvpk9z sprinkles_textAlign_center__1lrvpk918"
+                    class="sprinkles_fontWeight_bold__1lrvpk9r sprinkles_fontSize_large__1lrvpk9m sprinkles_lineHeight_32__1lrvpk912 sprinkles_textAlign_center_default__1lrvpk9kv"
                   >
                     <a
-                      class="sprinkles_color_default__1lrvpk95 sprinkles_display_inline-block_default__1lrvpk94z"
+                      class="sprinkles_color_default__1lrvpk95 sprinkles_display_inline-block_default__1lrvpk95j"
                       href="/reviews/the-skeptics-guide-to-the-universe-by-steven-novella/"
                       rel="canonical"
                     >
                       The Skeptics' Guide to the Universe
                     </a>
                   </h2>
-                  <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_16_default__1lrvpk95q sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_16_default__1lrvpk98w sprinkles_display_block_default__1lrvpk94k"
-                  />
                   <p
-                    class="sprinkles_textAlign_center__1lrvpk918"
+                    class="sprinkles_textAlign_center_default__1lrvpk9kv"
                   >
                     by 
                     <span>
@@ -2298,20 +2286,20 @@ exports[`/ renders 1`] = `
                   </p>
                    
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_24_default__1lrvpk95t sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_24_default__1lrvpk98z sprinkles_display_block_default__1lrvpk94k"
+                    class="sprinkles_width_px_default__1lrvpk9na sprinkles_height_16_default__1lrvpk96a sprinkles_minWidth_px_default__1lrvpk9c4 sprinkles_minHeight_16_default__1lrvpk99v sprinkles_display_block_default__1lrvpk954"
                   />
                   <img
                     alt="B+: 4 stars (out of 5)"
-                    height="32"
+                    height="24"
                     src="/svg/4-stars.svg"
-                    width="160"
+                    width="120"
                   />
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_24_default__1lrvpk95t sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_24_default__1lrvpk98z sprinkles_display_block_default__1lrvpk94k"
+                    class="sprinkles_width_px_default__1lrvpk9na sprinkles_height_16_default__1lrvpk96a sprinkles_minWidth_px_default__1lrvpk9c4 sprinkles_minHeight_16_default__1lrvpk99v sprinkles_display_block_default__1lrvpk954"
                   />
                 </div>
                 <div
-                  class="RenderedMarkdown_renderedMarkdownStyle__w2sssm0 HomePageItem_excerptContinueReadingLinkStyle__4ajsvx1 sprinkles_fontWeight_light__1lrvpk9m"
+                  class="RenderedMarkdown_renderedMarkdownStyle__w2sssm0 ListItem_excerptContinueReadingLinkStyle__fsx6n51 sprinkles_fontWeight_light__1lrvpk9o"
                 >
                   <p>
                     A practical guide to critical thinking in the information age. Novella and his colleagues illuminate cognitive biases and logical fallacies with understandable examples. They then apply them to assorted topics, including ghosts, extrasensory perception, assorted conspiracy theories, and global warming. 
@@ -2327,22 +2315,22 @@ exports[`/ renders 1`] = `
             </article>
           </li>
           <li
-            class="sprinkles_display_flex_default__1lrvpk94q sprinkles_backgroundColor_zebra_default__1lrvpk92e"
+            class="sprinkles_display_flex_default__1lrvpk95a sprinkles_backgroundColor_zebra_default__1lrvpk92j"
             value="98"
           >
             <article
-              class="HomePageItem_gridStyle__4ajsvx2 sprinkles_paddingLeft_pageMargin_default__1lrvpk9e8 sprinkles_paddingRight_pageMargin_default__1lrvpk9fw"
+              class="ListItem_gridStyle__fsx6n52 sprinkles_paddingLeft_pageMargin_default__1lrvpk9g1 sprinkles_paddingRight_pageMargin_default__1lrvpk9i4"
             >
               <div
-                class="HomePageItem_gridAreas_date__4ajsvx5 sprinkles_textTransform_uppercase__1lrvpk91a sprinkles_fontSize_small__1lrvpk9h sprinkles_fontWeight_light__1lrvpk9m sprinkles_letterSpacing_0.75__1lrvpk9v sprinkles_lineHeight_16__1lrvpk9x sprinkles_color_subtle__1lrvpk97"
+                class="ListItem_gridAreas_date__fsx6n55 sprinkles_textTransform_uppercase__1lrvpk919 sprinkles_fontSize_small__1lrvpk9j sprinkles_fontWeight_light__1lrvpk9o sprinkles_letterSpacing_0.75__1lrvpk9x sprinkles_lineHeight_16__1lrvpk9z sprinkles_color_subtle__1lrvpk97"
               >
                 29 Oct 2022
               </div>
               <div
-                class="HomePageItem_gridAreas_cover__4ajsvx3 sprinkles_maxWidth_prose_default__1lrvpk98e"
+                class="ListItem_gridAreas_cover__fsx6n53 sprinkles_maxWidth_prose_default__1lrvpk99d"
               >
                 <a
-                  class="HomePageItem_coverBorderStyle__4ajsvx0 sprinkles_display_block_default__1lrvpk94k"
+                  class="ListItem_coverBorderStyle__fsx6n50 sprinkles_display_block_default__1lrvpk954"
                   href="/reviews/the-shining-by-stephen-king/"
                   rel="canonical"
                 >
@@ -2387,35 +2375,32 @@ exports[`/ renders 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__4ajsvx4"
+                class="ListItem_gridAreas_excerpt__fsx6n54"
               >
                 <div
-                  class="sprinkles_display_flex_default__1lrvpk94q sprinkles_flexDirection_column_default__1lrvpk958 sprinkles_alignItems_center_default__1lrvpk91h sprinkles_alignItems_flex-start_desktop__1lrvpk91p"
+                  class="sprinkles_display_flex_default__1lrvpk95a sprinkles_flexDirection_column_default__1lrvpk95s sprinkles_alignItems_center_default__1lrvpk91g sprinkles_alignItems_flex-start_desktop__1lrvpk91o"
                 >
                   <div
-                    class="sprinkles_textTransform_uppercase__1lrvpk91a sprinkles_fontSize_small__1lrvpk9h sprinkles_fontWeight_light__1lrvpk9m sprinkles_letterSpacing_0.75__1lrvpk9v sprinkles_lineHeight_16__1lrvpk9x sprinkles_color_subtle__1lrvpk97"
+                    class="sprinkles_textTransform_uppercase__1lrvpk919 sprinkles_fontSize_small__1lrvpk9j sprinkles_fontWeight_light__1lrvpk9o sprinkles_letterSpacing_0.75__1lrvpk9x sprinkles_lineHeight_16__1lrvpk9z sprinkles_color_subtle__1lrvpk97"
                   >
                     1977 | Novel
                   </div>
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_24_default__1lrvpk95t sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_24_default__1lrvpk98z sprinkles_display_block_default__1lrvpk94k"
+                    class="sprinkles_width_px_default__1lrvpk9na sprinkles_height_16_default__1lrvpk96a sprinkles_minWidth_px_default__1lrvpk9c4 sprinkles_minHeight_16_default__1lrvpk99v sprinkles_display_block_default__1lrvpk954"
                   />
                   <h2
-                    class="sprinkles_fontWeight_bold__1lrvpk9p sprinkles_fontSize_large__1lrvpk9k sprinkles_lineHeight_32__1lrvpk9z sprinkles_textAlign_center__1lrvpk918"
+                    class="sprinkles_fontWeight_bold__1lrvpk9r sprinkles_fontSize_large__1lrvpk9m sprinkles_lineHeight_32__1lrvpk912 sprinkles_textAlign_center_default__1lrvpk9kv"
                   >
                     <a
-                      class="sprinkles_color_default__1lrvpk95 sprinkles_display_inline-block_default__1lrvpk94z"
+                      class="sprinkles_color_default__1lrvpk95 sprinkles_display_inline-block_default__1lrvpk95j"
                       href="/reviews/the-shining-by-stephen-king/"
                       rel="canonical"
                     >
                       The Shining
                     </a>
                   </h2>
-                  <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_16_default__1lrvpk95q sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_16_default__1lrvpk98w sprinkles_display_block_default__1lrvpk94k"
-                  />
                   <p
-                    class="sprinkles_textAlign_center__1lrvpk918"
+                    class="sprinkles_textAlign_center_default__1lrvpk9kv"
                   >
                     by 
                     <span>
@@ -2428,20 +2413,20 @@ exports[`/ renders 1`] = `
                   </p>
                    
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_24_default__1lrvpk95t sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_24_default__1lrvpk98z sprinkles_display_block_default__1lrvpk94k"
+                    class="sprinkles_width_px_default__1lrvpk9na sprinkles_height_16_default__1lrvpk96a sprinkles_minWidth_px_default__1lrvpk9c4 sprinkles_minHeight_16_default__1lrvpk99v sprinkles_display_block_default__1lrvpk954"
                   />
                   <img
                     alt="B: 4 stars (out of 5)"
-                    height="32"
+                    height="24"
                     src="/svg/4-stars.svg"
-                    width="160"
+                    width="120"
                   />
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_24_default__1lrvpk95t sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_24_default__1lrvpk98z sprinkles_display_block_default__1lrvpk94k"
+                    class="sprinkles_width_px_default__1lrvpk9na sprinkles_height_16_default__1lrvpk96a sprinkles_minWidth_px_default__1lrvpk9c4 sprinkles_minHeight_16_default__1lrvpk99v sprinkles_display_block_default__1lrvpk954"
                   />
                 </div>
                 <div
-                  class="RenderedMarkdown_renderedMarkdownStyle__w2sssm0 HomePageItem_excerptContinueReadingLinkStyle__4ajsvx1 sprinkles_fontWeight_light__1lrvpk9m"
+                  class="RenderedMarkdown_renderedMarkdownStyle__w2sssm0 ListItem_excerptContinueReadingLinkStyle__fsx6n51 sprinkles_fontWeight_light__1lrvpk9o"
                 >
                   <p>
                     Alcoholic writer Jack Torrance uproots his wife Wendy and five-year-old son Danny from New England to Colorado, where they’ll serve as winter caretakers for the Overlook Hotel. The hotel, a premier destination with a shady past, houses a malevolent presence bent on claiming Danny for its own ends. 
@@ -2457,22 +2442,22 @@ exports[`/ renders 1`] = `
             </article>
           </li>
           <li
-            class="sprinkles_display_flex_default__1lrvpk94q sprinkles_backgroundColor_zebra_default__1lrvpk92e"
+            class="sprinkles_display_flex_default__1lrvpk95a sprinkles_backgroundColor_zebra_default__1lrvpk92j"
             value="97"
           >
             <article
-              class="HomePageItem_gridStyle__4ajsvx2 sprinkles_paddingLeft_pageMargin_default__1lrvpk9e8 sprinkles_paddingRight_pageMargin_default__1lrvpk9fw"
+              class="ListItem_gridStyle__fsx6n52 sprinkles_paddingLeft_pageMargin_default__1lrvpk9g1 sprinkles_paddingRight_pageMargin_default__1lrvpk9i4"
             >
               <div
-                class="HomePageItem_gridAreas_date__4ajsvx5 sprinkles_textTransform_uppercase__1lrvpk91a sprinkles_fontSize_small__1lrvpk9h sprinkles_fontWeight_light__1lrvpk9m sprinkles_letterSpacing_0.75__1lrvpk9v sprinkles_lineHeight_16__1lrvpk9x sprinkles_color_subtle__1lrvpk97"
+                class="ListItem_gridAreas_date__fsx6n55 sprinkles_textTransform_uppercase__1lrvpk919 sprinkles_fontSize_small__1lrvpk9j sprinkles_fontWeight_light__1lrvpk9o sprinkles_letterSpacing_0.75__1lrvpk9x sprinkles_lineHeight_16__1lrvpk9z sprinkles_color_subtle__1lrvpk97"
               >
                 16 Oct 2022
               </div>
               <div
-                class="HomePageItem_gridAreas_cover__4ajsvx3 sprinkles_maxWidth_prose_default__1lrvpk98e"
+                class="ListItem_gridAreas_cover__fsx6n53 sprinkles_maxWidth_prose_default__1lrvpk99d"
               >
                 <a
-                  class="HomePageItem_coverBorderStyle__4ajsvx0 sprinkles_display_block_default__1lrvpk94k"
+                  class="ListItem_coverBorderStyle__fsx6n50 sprinkles_display_block_default__1lrvpk954"
                   href="/reviews/moonraker-by-ian-fleming/"
                   rel="canonical"
                 >
@@ -2517,35 +2502,32 @@ exports[`/ renders 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__4ajsvx4"
+                class="ListItem_gridAreas_excerpt__fsx6n54"
               >
                 <div
-                  class="sprinkles_display_flex_default__1lrvpk94q sprinkles_flexDirection_column_default__1lrvpk958 sprinkles_alignItems_center_default__1lrvpk91h sprinkles_alignItems_flex-start_desktop__1lrvpk91p"
+                  class="sprinkles_display_flex_default__1lrvpk95a sprinkles_flexDirection_column_default__1lrvpk95s sprinkles_alignItems_center_default__1lrvpk91g sprinkles_alignItems_flex-start_desktop__1lrvpk91o"
                 >
                   <div
-                    class="sprinkles_textTransform_uppercase__1lrvpk91a sprinkles_fontSize_small__1lrvpk9h sprinkles_fontWeight_light__1lrvpk9m sprinkles_letterSpacing_0.75__1lrvpk9v sprinkles_lineHeight_16__1lrvpk9x sprinkles_color_subtle__1lrvpk97"
+                    class="sprinkles_textTransform_uppercase__1lrvpk919 sprinkles_fontSize_small__1lrvpk9j sprinkles_fontWeight_light__1lrvpk9o sprinkles_letterSpacing_0.75__1lrvpk9x sprinkles_lineHeight_16__1lrvpk9z sprinkles_color_subtle__1lrvpk97"
                   >
                     1955 | Novel
                   </div>
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_24_default__1lrvpk95t sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_24_default__1lrvpk98z sprinkles_display_block_default__1lrvpk94k"
+                    class="sprinkles_width_px_default__1lrvpk9na sprinkles_height_16_default__1lrvpk96a sprinkles_minWidth_px_default__1lrvpk9c4 sprinkles_minHeight_16_default__1lrvpk99v sprinkles_display_block_default__1lrvpk954"
                   />
                   <h2
-                    class="sprinkles_fontWeight_bold__1lrvpk9p sprinkles_fontSize_large__1lrvpk9k sprinkles_lineHeight_32__1lrvpk9z sprinkles_textAlign_center__1lrvpk918"
+                    class="sprinkles_fontWeight_bold__1lrvpk9r sprinkles_fontSize_large__1lrvpk9m sprinkles_lineHeight_32__1lrvpk912 sprinkles_textAlign_center_default__1lrvpk9kv"
                   >
                     <a
-                      class="sprinkles_color_default__1lrvpk95 sprinkles_display_inline-block_default__1lrvpk94z"
+                      class="sprinkles_color_default__1lrvpk95 sprinkles_display_inline-block_default__1lrvpk95j"
                       href="/reviews/moonraker-by-ian-fleming/"
                       rel="canonical"
                     >
                       Moonraker
                     </a>
                   </h2>
-                  <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_16_default__1lrvpk95q sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_16_default__1lrvpk98w sprinkles_display_block_default__1lrvpk94k"
-                  />
                   <p
-                    class="sprinkles_textAlign_center__1lrvpk918"
+                    class="sprinkles_textAlign_center_default__1lrvpk9kv"
                   >
                     by 
                     <span>
@@ -2558,20 +2540,20 @@ exports[`/ renders 1`] = `
                   </p>
                    
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_24_default__1lrvpk95t sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_24_default__1lrvpk98z sprinkles_display_block_default__1lrvpk94k"
+                    class="sprinkles_width_px_default__1lrvpk9na sprinkles_height_16_default__1lrvpk96a sprinkles_minWidth_px_default__1lrvpk9c4 sprinkles_minHeight_16_default__1lrvpk99v sprinkles_display_block_default__1lrvpk954"
                   />
                   <img
                     alt="B: 4 stars (out of 5)"
-                    height="32"
+                    height="24"
                     src="/svg/4-stars.svg"
-                    width="160"
+                    width="120"
                   />
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_24_default__1lrvpk95t sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_24_default__1lrvpk98z sprinkles_display_block_default__1lrvpk94k"
+                    class="sprinkles_width_px_default__1lrvpk9na sprinkles_height_16_default__1lrvpk96a sprinkles_minWidth_px_default__1lrvpk9c4 sprinkles_minHeight_16_default__1lrvpk99v sprinkles_display_block_default__1lrvpk954"
                   />
                 </div>
                 <div
-                  class="RenderedMarkdown_renderedMarkdownStyle__w2sssm0 HomePageItem_excerptContinueReadingLinkStyle__4ajsvx1 sprinkles_fontWeight_light__1lrvpk9m"
+                  class="RenderedMarkdown_renderedMarkdownStyle__w2sssm0 ListItem_excerptContinueReadingLinkStyle__fsx6n51 sprinkles_fontWeight_light__1lrvpk9o"
                 >
                   <p>
                     James Bond investigates a popular self-made millionaire with surgically enhanced looks, an interest in rockets, and a relentless, larger-than-life personality. 
@@ -2587,22 +2569,22 @@ exports[`/ renders 1`] = `
             </article>
           </li>
           <li
-            class="sprinkles_display_flex_default__1lrvpk94q sprinkles_backgroundColor_zebra_default__1lrvpk92e"
+            class="sprinkles_display_flex_default__1lrvpk95a sprinkles_backgroundColor_zebra_default__1lrvpk92j"
             value="96"
           >
             <article
-              class="HomePageItem_gridStyle__4ajsvx2 sprinkles_paddingLeft_pageMargin_default__1lrvpk9e8 sprinkles_paddingRight_pageMargin_default__1lrvpk9fw"
+              class="ListItem_gridStyle__fsx6n52 sprinkles_paddingLeft_pageMargin_default__1lrvpk9g1 sprinkles_paddingRight_pageMargin_default__1lrvpk9i4"
             >
               <div
-                class="HomePageItem_gridAreas_date__4ajsvx5 sprinkles_textTransform_uppercase__1lrvpk91a sprinkles_fontSize_small__1lrvpk9h sprinkles_fontWeight_light__1lrvpk9m sprinkles_letterSpacing_0.75__1lrvpk9v sprinkles_lineHeight_16__1lrvpk9x sprinkles_color_subtle__1lrvpk97"
+                class="ListItem_gridAreas_date__fsx6n55 sprinkles_textTransform_uppercase__1lrvpk919 sprinkles_fontSize_small__1lrvpk9j sprinkles_fontWeight_light__1lrvpk9o sprinkles_letterSpacing_0.75__1lrvpk9x sprinkles_lineHeight_16__1lrvpk9z sprinkles_color_subtle__1lrvpk97"
               >
                 14 Oct 2022
               </div>
               <div
-                class="HomePageItem_gridAreas_cover__4ajsvx3 sprinkles_maxWidth_prose_default__1lrvpk98e"
+                class="ListItem_gridAreas_cover__fsx6n53 sprinkles_maxWidth_prose_default__1lrvpk99d"
               >
                 <a
-                  class="HomePageItem_coverBorderStyle__4ajsvx0 sprinkles_display_block_default__1lrvpk94k"
+                  class="ListItem_coverBorderStyle__fsx6n50 sprinkles_display_block_default__1lrvpk954"
                   href="/reviews/salems-lot-by-stephen-king/"
                   rel="canonical"
                 >
@@ -2647,35 +2629,32 @@ exports[`/ renders 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__4ajsvx4"
+                class="ListItem_gridAreas_excerpt__fsx6n54"
               >
                 <div
-                  class="sprinkles_display_flex_default__1lrvpk94q sprinkles_flexDirection_column_default__1lrvpk958 sprinkles_alignItems_center_default__1lrvpk91h sprinkles_alignItems_flex-start_desktop__1lrvpk91p"
+                  class="sprinkles_display_flex_default__1lrvpk95a sprinkles_flexDirection_column_default__1lrvpk95s sprinkles_alignItems_center_default__1lrvpk91g sprinkles_alignItems_flex-start_desktop__1lrvpk91o"
                 >
                   <div
-                    class="sprinkles_textTransform_uppercase__1lrvpk91a sprinkles_fontSize_small__1lrvpk9h sprinkles_fontWeight_light__1lrvpk9m sprinkles_letterSpacing_0.75__1lrvpk9v sprinkles_lineHeight_16__1lrvpk9x sprinkles_color_subtle__1lrvpk97"
+                    class="sprinkles_textTransform_uppercase__1lrvpk919 sprinkles_fontSize_small__1lrvpk9j sprinkles_fontWeight_light__1lrvpk9o sprinkles_letterSpacing_0.75__1lrvpk9x sprinkles_lineHeight_16__1lrvpk9z sprinkles_color_subtle__1lrvpk97"
                   >
                     1975 | Novel
                   </div>
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_24_default__1lrvpk95t sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_24_default__1lrvpk98z sprinkles_display_block_default__1lrvpk94k"
+                    class="sprinkles_width_px_default__1lrvpk9na sprinkles_height_16_default__1lrvpk96a sprinkles_minWidth_px_default__1lrvpk9c4 sprinkles_minHeight_16_default__1lrvpk99v sprinkles_display_block_default__1lrvpk954"
                   />
                   <h2
-                    class="sprinkles_fontWeight_bold__1lrvpk9p sprinkles_fontSize_large__1lrvpk9k sprinkles_lineHeight_32__1lrvpk9z sprinkles_textAlign_center__1lrvpk918"
+                    class="sprinkles_fontWeight_bold__1lrvpk9r sprinkles_fontSize_large__1lrvpk9m sprinkles_lineHeight_32__1lrvpk912 sprinkles_textAlign_center_default__1lrvpk9kv"
                   >
                     <a
-                      class="sprinkles_color_default__1lrvpk95 sprinkles_display_inline-block_default__1lrvpk94z"
+                      class="sprinkles_color_default__1lrvpk95 sprinkles_display_inline-block_default__1lrvpk95j"
                       href="/reviews/salems-lot-by-stephen-king/"
                       rel="canonical"
                     >
                       'Salem's Lot
                     </a>
                   </h2>
-                  <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_16_default__1lrvpk95q sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_16_default__1lrvpk98w sprinkles_display_block_default__1lrvpk94k"
-                  />
                   <p
-                    class="sprinkles_textAlign_center__1lrvpk918"
+                    class="sprinkles_textAlign_center_default__1lrvpk9kv"
                   >
                     by 
                     <span>
@@ -2688,20 +2667,20 @@ exports[`/ renders 1`] = `
                   </p>
                    
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_24_default__1lrvpk95t sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_24_default__1lrvpk98z sprinkles_display_block_default__1lrvpk94k"
+                    class="sprinkles_width_px_default__1lrvpk9na sprinkles_height_16_default__1lrvpk96a sprinkles_minWidth_px_default__1lrvpk9c4 sprinkles_minHeight_16_default__1lrvpk99v sprinkles_display_block_default__1lrvpk954"
                   />
                   <img
                     alt="B: 4 stars (out of 5)"
-                    height="32"
+                    height="24"
                     src="/svg/4-stars.svg"
-                    width="160"
+                    width="120"
                   />
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_24_default__1lrvpk95t sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_24_default__1lrvpk98z sprinkles_display_block_default__1lrvpk94k"
+                    class="sprinkles_width_px_default__1lrvpk9na sprinkles_height_16_default__1lrvpk96a sprinkles_minWidth_px_default__1lrvpk9c4 sprinkles_minHeight_16_default__1lrvpk99v sprinkles_display_block_default__1lrvpk954"
                   />
                 </div>
                 <div
-                  class="RenderedMarkdown_renderedMarkdownStyle__w2sssm0 HomePageItem_excerptContinueReadingLinkStyle__4ajsvx1 sprinkles_fontWeight_light__1lrvpk9m"
+                  class="RenderedMarkdown_renderedMarkdownStyle__w2sssm0 ListItem_excerptContinueReadingLinkStyle__fsx6n51 sprinkles_fontWeight_light__1lrvpk9o"
                 >
                   <p>
                     <strong>
@@ -2728,22 +2707,22 @@ exports[`/ renders 1`] = `
             </article>
           </li>
           <li
-            class="sprinkles_display_flex_default__1lrvpk94q sprinkles_backgroundColor_zebra_default__1lrvpk92e"
+            class="sprinkles_display_flex_default__1lrvpk95a sprinkles_backgroundColor_zebra_default__1lrvpk92j"
             value="95"
           >
             <article
-              class="HomePageItem_gridStyle__4ajsvx2 sprinkles_paddingLeft_pageMargin_default__1lrvpk9e8 sprinkles_paddingRight_pageMargin_default__1lrvpk9fw"
+              class="ListItem_gridStyle__fsx6n52 sprinkles_paddingLeft_pageMargin_default__1lrvpk9g1 sprinkles_paddingRight_pageMargin_default__1lrvpk9i4"
             >
               <div
-                class="HomePageItem_gridAreas_date__4ajsvx5 sprinkles_textTransform_uppercase__1lrvpk91a sprinkles_fontSize_small__1lrvpk9h sprinkles_fontWeight_light__1lrvpk9m sprinkles_letterSpacing_0.75__1lrvpk9v sprinkles_lineHeight_16__1lrvpk9x sprinkles_color_subtle__1lrvpk97"
+                class="ListItem_gridAreas_date__fsx6n55 sprinkles_textTransform_uppercase__1lrvpk919 sprinkles_fontSize_small__1lrvpk9j sprinkles_fontWeight_light__1lrvpk9o sprinkles_letterSpacing_0.75__1lrvpk9x sprinkles_lineHeight_16__1lrvpk9z sprinkles_color_subtle__1lrvpk97"
               >
                 13 Oct 2022
               </div>
               <div
-                class="HomePageItem_gridAreas_cover__4ajsvx3 sprinkles_maxWidth_prose_default__1lrvpk98e"
+                class="ListItem_gridAreas_cover__fsx6n53 sprinkles_maxWidth_prose_default__1lrvpk99d"
               >
                 <a
-                  class="HomePageItem_coverBorderStyle__4ajsvx0 sprinkles_display_block_default__1lrvpk94k"
+                  class="ListItem_coverBorderStyle__fsx6n50 sprinkles_display_block_default__1lrvpk954"
                   href="/reviews/cant-hurt-me-by-david-goggins/"
                   rel="canonical"
                 >
@@ -2788,35 +2767,32 @@ exports[`/ renders 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__4ajsvx4"
+                class="ListItem_gridAreas_excerpt__fsx6n54"
               >
                 <div
-                  class="sprinkles_display_flex_default__1lrvpk94q sprinkles_flexDirection_column_default__1lrvpk958 sprinkles_alignItems_center_default__1lrvpk91h sprinkles_alignItems_flex-start_desktop__1lrvpk91p"
+                  class="sprinkles_display_flex_default__1lrvpk95a sprinkles_flexDirection_column_default__1lrvpk95s sprinkles_alignItems_center_default__1lrvpk91g sprinkles_alignItems_flex-start_desktop__1lrvpk91o"
                 >
                   <div
-                    class="sprinkles_textTransform_uppercase__1lrvpk91a sprinkles_fontSize_small__1lrvpk9h sprinkles_fontWeight_light__1lrvpk9m sprinkles_letterSpacing_0.75__1lrvpk9v sprinkles_lineHeight_16__1lrvpk9x sprinkles_color_subtle__1lrvpk97"
+                    class="sprinkles_textTransform_uppercase__1lrvpk919 sprinkles_fontSize_small__1lrvpk9j sprinkles_fontWeight_light__1lrvpk9o sprinkles_letterSpacing_0.75__1lrvpk9x sprinkles_lineHeight_16__1lrvpk9z sprinkles_color_subtle__1lrvpk97"
                   >
                     2018 | Nonfiction
                   </div>
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_24_default__1lrvpk95t sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_24_default__1lrvpk98z sprinkles_display_block_default__1lrvpk94k"
+                    class="sprinkles_width_px_default__1lrvpk9na sprinkles_height_16_default__1lrvpk96a sprinkles_minWidth_px_default__1lrvpk9c4 sprinkles_minHeight_16_default__1lrvpk99v sprinkles_display_block_default__1lrvpk954"
                   />
                   <h2
-                    class="sprinkles_fontWeight_bold__1lrvpk9p sprinkles_fontSize_large__1lrvpk9k sprinkles_lineHeight_32__1lrvpk9z sprinkles_textAlign_center__1lrvpk918"
+                    class="sprinkles_fontWeight_bold__1lrvpk9r sprinkles_fontSize_large__1lrvpk9m sprinkles_lineHeight_32__1lrvpk912 sprinkles_textAlign_center_default__1lrvpk9kv"
                   >
                     <a
-                      class="sprinkles_color_default__1lrvpk95 sprinkles_display_inline-block_default__1lrvpk94z"
+                      class="sprinkles_color_default__1lrvpk95 sprinkles_display_inline-block_default__1lrvpk95j"
                       href="/reviews/cant-hurt-me-by-david-goggins/"
                       rel="canonical"
                     >
                       Can't Hurt Me
                     </a>
                   </h2>
-                  <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_16_default__1lrvpk95q sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_16_default__1lrvpk98w sprinkles_display_block_default__1lrvpk94k"
-                  />
                   <p
-                    class="sprinkles_textAlign_center__1lrvpk918"
+                    class="sprinkles_textAlign_center_default__1lrvpk9kv"
                   >
                     by 
                     <span>
@@ -2829,20 +2805,20 @@ exports[`/ renders 1`] = `
                   </p>
                    
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_24_default__1lrvpk95t sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_24_default__1lrvpk98z sprinkles_display_block_default__1lrvpk94k"
+                    class="sprinkles_width_px_default__1lrvpk9na sprinkles_height_16_default__1lrvpk96a sprinkles_minWidth_px_default__1lrvpk9c4 sprinkles_minHeight_16_default__1lrvpk99v sprinkles_display_block_default__1lrvpk954"
                   />
                   <img
                     alt="B: 4 stars (out of 5)"
-                    height="32"
+                    height="24"
                     src="/svg/4-stars.svg"
-                    width="160"
+                    width="120"
                   />
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_24_default__1lrvpk95t sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_24_default__1lrvpk98z sprinkles_display_block_default__1lrvpk94k"
+                    class="sprinkles_width_px_default__1lrvpk9na sprinkles_height_16_default__1lrvpk96a sprinkles_minWidth_px_default__1lrvpk9c4 sprinkles_minHeight_16_default__1lrvpk99v sprinkles_display_block_default__1lrvpk954"
                   />
                 </div>
                 <div
-                  class="RenderedMarkdown_renderedMarkdownStyle__w2sssm0 HomePageItem_excerptContinueReadingLinkStyle__4ajsvx1 sprinkles_fontWeight_light__1lrvpk9m"
+                  class="RenderedMarkdown_renderedMarkdownStyle__w2sssm0 ListItem_excerptContinueReadingLinkStyle__fsx6n51 sprinkles_fontWeight_light__1lrvpk9o"
                 >
                   <p>
                     David Goggins escapes an abusive home and overcomes a dead-end career to become a Navy Seal and world-class endurance athlete. 
@@ -2858,22 +2834,22 @@ exports[`/ renders 1`] = `
             </article>
           </li>
           <li
-            class="sprinkles_display_flex_default__1lrvpk94q sprinkles_backgroundColor_zebra_default__1lrvpk92e"
+            class="sprinkles_display_flex_default__1lrvpk95a sprinkles_backgroundColor_zebra_default__1lrvpk92j"
             value="94"
           >
             <article
-              class="HomePageItem_gridStyle__4ajsvx2 sprinkles_paddingLeft_pageMargin_default__1lrvpk9e8 sprinkles_paddingRight_pageMargin_default__1lrvpk9fw"
+              class="ListItem_gridStyle__fsx6n52 sprinkles_paddingLeft_pageMargin_default__1lrvpk9g1 sprinkles_paddingRight_pageMargin_default__1lrvpk9i4"
             >
               <div
-                class="HomePageItem_gridAreas_date__4ajsvx5 sprinkles_textTransform_uppercase__1lrvpk91a sprinkles_fontSize_small__1lrvpk9h sprinkles_fontWeight_light__1lrvpk9m sprinkles_letterSpacing_0.75__1lrvpk9v sprinkles_lineHeight_16__1lrvpk9x sprinkles_color_subtle__1lrvpk97"
+                class="ListItem_gridAreas_date__fsx6n55 sprinkles_textTransform_uppercase__1lrvpk919 sprinkles_fontSize_small__1lrvpk9j sprinkles_fontWeight_light__1lrvpk9o sprinkles_letterSpacing_0.75__1lrvpk9x sprinkles_lineHeight_16__1lrvpk9z sprinkles_color_subtle__1lrvpk97"
               >
                 11 Oct 2022
               </div>
               <div
-                class="HomePageItem_gridAreas_cover__4ajsvx3 sprinkles_maxWidth_prose_default__1lrvpk98e"
+                class="ListItem_gridAreas_cover__fsx6n53 sprinkles_maxWidth_prose_default__1lrvpk99d"
               >
                 <a
-                  class="HomePageItem_coverBorderStyle__4ajsvx0 sprinkles_display_block_default__1lrvpk94k"
+                  class="ListItem_coverBorderStyle__fsx6n50 sprinkles_display_block_default__1lrvpk954"
                   href="/reviews/out-are-the-lights-by-richard-laymon/"
                   rel="canonical"
                 >
@@ -2918,35 +2894,32 @@ exports[`/ renders 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__4ajsvx4"
+                class="ListItem_gridAreas_excerpt__fsx6n54"
               >
                 <div
-                  class="sprinkles_display_flex_default__1lrvpk94q sprinkles_flexDirection_column_default__1lrvpk958 sprinkles_alignItems_center_default__1lrvpk91h sprinkles_alignItems_flex-start_desktop__1lrvpk91p"
+                  class="sprinkles_display_flex_default__1lrvpk95a sprinkles_flexDirection_column_default__1lrvpk95s sprinkles_alignItems_center_default__1lrvpk91g sprinkles_alignItems_flex-start_desktop__1lrvpk91o"
                 >
                   <div
-                    class="sprinkles_textTransform_uppercase__1lrvpk91a sprinkles_fontSize_small__1lrvpk9h sprinkles_fontWeight_light__1lrvpk9m sprinkles_letterSpacing_0.75__1lrvpk9v sprinkles_lineHeight_16__1lrvpk9x sprinkles_color_subtle__1lrvpk97"
+                    class="sprinkles_textTransform_uppercase__1lrvpk919 sprinkles_fontSize_small__1lrvpk9j sprinkles_fontWeight_light__1lrvpk9o sprinkles_letterSpacing_0.75__1lrvpk9x sprinkles_lineHeight_16__1lrvpk9z sprinkles_color_subtle__1lrvpk97"
                   >
                     1982 | Novel
                   </div>
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_24_default__1lrvpk95t sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_24_default__1lrvpk98z sprinkles_display_block_default__1lrvpk94k"
+                    class="sprinkles_width_px_default__1lrvpk9na sprinkles_height_16_default__1lrvpk96a sprinkles_minWidth_px_default__1lrvpk9c4 sprinkles_minHeight_16_default__1lrvpk99v sprinkles_display_block_default__1lrvpk954"
                   />
                   <h2
-                    class="sprinkles_fontWeight_bold__1lrvpk9p sprinkles_fontSize_large__1lrvpk9k sprinkles_lineHeight_32__1lrvpk9z sprinkles_textAlign_center__1lrvpk918"
+                    class="sprinkles_fontWeight_bold__1lrvpk9r sprinkles_fontSize_large__1lrvpk9m sprinkles_lineHeight_32__1lrvpk912 sprinkles_textAlign_center_default__1lrvpk9kv"
                   >
                     <a
-                      class="sprinkles_color_default__1lrvpk95 sprinkles_display_inline-block_default__1lrvpk94z"
+                      class="sprinkles_color_default__1lrvpk95 sprinkles_display_inline-block_default__1lrvpk95j"
                       href="/reviews/out-are-the-lights-by-richard-laymon/"
                       rel="canonical"
                     >
                       Out Are the Lights
                     </a>
                   </h2>
-                  <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_16_default__1lrvpk95q sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_16_default__1lrvpk98w sprinkles_display_block_default__1lrvpk94k"
-                  />
                   <p
-                    class="sprinkles_textAlign_center__1lrvpk918"
+                    class="sprinkles_textAlign_center_default__1lrvpk9kv"
                   >
                     by 
                     <span>
@@ -2959,20 +2932,20 @@ exports[`/ renders 1`] = `
                   </p>
                    
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_24_default__1lrvpk95t sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_24_default__1lrvpk98z sprinkles_display_block_default__1lrvpk94k"
+                    class="sprinkles_width_px_default__1lrvpk9na sprinkles_height_16_default__1lrvpk96a sprinkles_minWidth_px_default__1lrvpk9c4 sprinkles_minHeight_16_default__1lrvpk99v sprinkles_display_block_default__1lrvpk954"
                   />
                   <img
                     alt="C-: 3 stars (out of 5)"
-                    height="32"
+                    height="24"
                     src="/svg/3-stars.svg"
-                    width="160"
+                    width="120"
                   />
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_24_default__1lrvpk95t sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_24_default__1lrvpk98z sprinkles_display_block_default__1lrvpk94k"
+                    class="sprinkles_width_px_default__1lrvpk9na sprinkles_height_16_default__1lrvpk96a sprinkles_minWidth_px_default__1lrvpk9c4 sprinkles_minHeight_16_default__1lrvpk99v sprinkles_display_block_default__1lrvpk954"
                   />
                 </div>
                 <div
-                  class="RenderedMarkdown_renderedMarkdownStyle__w2sssm0 HomePageItem_excerptContinueReadingLinkStyle__4ajsvx1 sprinkles_fontWeight_light__1lrvpk9m"
+                  class="RenderedMarkdown_renderedMarkdownStyle__w2sssm0 ListItem_excerptContinueReadingLinkStyle__fsx6n51 sprinkles_fontWeight_light__1lrvpk9o"
                 >
                   <p>
                     In a small California town, the Haunted Palace cinema specializes in horror films. Between showings of 
@@ -2996,22 +2969,22 @@ exports[`/ renders 1`] = `
             </article>
           </li>
           <li
-            class="sprinkles_display_flex_default__1lrvpk94q sprinkles_backgroundColor_zebra_default__1lrvpk92e"
+            class="sprinkles_display_flex_default__1lrvpk95a sprinkles_backgroundColor_zebra_default__1lrvpk92j"
             value="93"
           >
             <article
-              class="HomePageItem_gridStyle__4ajsvx2 sprinkles_paddingLeft_pageMargin_default__1lrvpk9e8 sprinkles_paddingRight_pageMargin_default__1lrvpk9fw"
+              class="ListItem_gridStyle__fsx6n52 sprinkles_paddingLeft_pageMargin_default__1lrvpk9g1 sprinkles_paddingRight_pageMargin_default__1lrvpk9i4"
             >
               <div
-                class="HomePageItem_gridAreas_date__4ajsvx5 sprinkles_textTransform_uppercase__1lrvpk91a sprinkles_fontSize_small__1lrvpk9h sprinkles_fontWeight_light__1lrvpk9m sprinkles_letterSpacing_0.75__1lrvpk9v sprinkles_lineHeight_16__1lrvpk9x sprinkles_color_subtle__1lrvpk97"
+                class="ListItem_gridAreas_date__fsx6n55 sprinkles_textTransform_uppercase__1lrvpk919 sprinkles_fontSize_small__1lrvpk9j sprinkles_fontWeight_light__1lrvpk9o sprinkles_letterSpacing_0.75__1lrvpk9x sprinkles_lineHeight_16__1lrvpk9z sprinkles_color_subtle__1lrvpk97"
               >
                 04 Oct 2022
               </div>
               <div
-                class="HomePageItem_gridAreas_cover__4ajsvx3 sprinkles_maxWidth_prose_default__1lrvpk98e"
+                class="ListItem_gridAreas_cover__fsx6n53 sprinkles_maxWidth_prose_default__1lrvpk99d"
               >
                 <a
-                  class="HomePageItem_coverBorderStyle__4ajsvx0 sprinkles_display_block_default__1lrvpk94k"
+                  class="ListItem_coverBorderStyle__fsx6n50 sprinkles_display_block_default__1lrvpk954"
                   href="/reviews/what-doesnt-kill-us-by-scott-carney/"
                   rel="canonical"
                 >
@@ -3056,35 +3029,32 @@ exports[`/ renders 1`] = `
                 </a>
               </div>
               <div
-                class="HomePageItem_gridAreas_excerpt__4ajsvx4"
+                class="ListItem_gridAreas_excerpt__fsx6n54"
               >
                 <div
-                  class="sprinkles_display_flex_default__1lrvpk94q sprinkles_flexDirection_column_default__1lrvpk958 sprinkles_alignItems_center_default__1lrvpk91h sprinkles_alignItems_flex-start_desktop__1lrvpk91p"
+                  class="sprinkles_display_flex_default__1lrvpk95a sprinkles_flexDirection_column_default__1lrvpk95s sprinkles_alignItems_center_default__1lrvpk91g sprinkles_alignItems_flex-start_desktop__1lrvpk91o"
                 >
                   <div
-                    class="sprinkles_textTransform_uppercase__1lrvpk91a sprinkles_fontSize_small__1lrvpk9h sprinkles_fontWeight_light__1lrvpk9m sprinkles_letterSpacing_0.75__1lrvpk9v sprinkles_lineHeight_16__1lrvpk9x sprinkles_color_subtle__1lrvpk97"
+                    class="sprinkles_textTransform_uppercase__1lrvpk919 sprinkles_fontSize_small__1lrvpk9j sprinkles_fontWeight_light__1lrvpk9o sprinkles_letterSpacing_0.75__1lrvpk9x sprinkles_lineHeight_16__1lrvpk9z sprinkles_color_subtle__1lrvpk97"
                   >
                     2017 | Nonfiction
                   </div>
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_24_default__1lrvpk95t sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_24_default__1lrvpk98z sprinkles_display_block_default__1lrvpk94k"
+                    class="sprinkles_width_px_default__1lrvpk9na sprinkles_height_16_default__1lrvpk96a sprinkles_minWidth_px_default__1lrvpk9c4 sprinkles_minHeight_16_default__1lrvpk99v sprinkles_display_block_default__1lrvpk954"
                   />
                   <h2
-                    class="sprinkles_fontWeight_bold__1lrvpk9p sprinkles_fontSize_large__1lrvpk9k sprinkles_lineHeight_32__1lrvpk9z sprinkles_textAlign_center__1lrvpk918"
+                    class="sprinkles_fontWeight_bold__1lrvpk9r sprinkles_fontSize_large__1lrvpk9m sprinkles_lineHeight_32__1lrvpk912 sprinkles_textAlign_center_default__1lrvpk9kv"
                   >
                     <a
-                      class="sprinkles_color_default__1lrvpk95 sprinkles_display_inline-block_default__1lrvpk94z"
+                      class="sprinkles_color_default__1lrvpk95 sprinkles_display_inline-block_default__1lrvpk95j"
                       href="/reviews/what-doesnt-kill-us-by-scott-carney/"
                       rel="canonical"
                     >
                       What Doesn't Kill Us
                     </a>
                   </h2>
-                  <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_16_default__1lrvpk95q sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_16_default__1lrvpk98w sprinkles_display_block_default__1lrvpk94k"
-                  />
                   <p
-                    class="sprinkles_textAlign_center__1lrvpk918"
+                    class="sprinkles_textAlign_center_default__1lrvpk9kv"
                   >
                     by 
                     <span>
@@ -3097,20 +3067,20 @@ exports[`/ renders 1`] = `
                   </p>
                    
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_24_default__1lrvpk95t sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_24_default__1lrvpk98z sprinkles_display_block_default__1lrvpk94k"
+                    class="sprinkles_width_px_default__1lrvpk9na sprinkles_height_16_default__1lrvpk96a sprinkles_minWidth_px_default__1lrvpk9c4 sprinkles_minHeight_16_default__1lrvpk99v sprinkles_display_block_default__1lrvpk954"
                   />
                   <img
                     alt="C+: 3 stars (out of 5)"
-                    height="32"
+                    height="24"
                     src="/svg/3-stars.svg"
-                    width="160"
+                    width="120"
                   />
                   <span
-                    class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_24_default__1lrvpk95t sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_24_default__1lrvpk98z sprinkles_display_block_default__1lrvpk94k"
+                    class="sprinkles_width_px_default__1lrvpk9na sprinkles_height_16_default__1lrvpk96a sprinkles_minWidth_px_default__1lrvpk9c4 sprinkles_minHeight_16_default__1lrvpk99v sprinkles_display_block_default__1lrvpk954"
                   />
                 </div>
                 <div
-                  class="RenderedMarkdown_renderedMarkdownStyle__w2sssm0 HomePageItem_excerptContinueReadingLinkStyle__4ajsvx1 sprinkles_fontWeight_light__1lrvpk9m"
+                  class="RenderedMarkdown_renderedMarkdownStyle__w2sssm0 ListItem_excerptContinueReadingLinkStyle__fsx6n51 sprinkles_fontWeight_light__1lrvpk9o"
                 >
                   <p>
                     Journalist Scott Carney investigates Wim Hof’s cold exposure and breathing methods. He enters a skeptic but emerges a believer, joining Hof on a record-breaking ascent of Mount Kilimanjaro. 
@@ -3127,7 +3097,7 @@ exports[`/ renders 1`] = `
           </li>
         </ol>
         <section
-          class="sprinkles_paddingLeft_pageMargin_default__1lrvpk9e8 sprinkles_paddingRight_pageMargin_default__1lrvpk9fw sprinkles_paddingTop_40_default__1lrvpk9gh sprinkles_paddingBottom_40_default__1lrvpk9bz sprinkles_fontSize_medium__1lrvpk9j sprinkles_justifyContent_center_default__1lrvpk96q"
+          class="sprinkles_paddingLeft_pageMargin_default__1lrvpk9g1 sprinkles_paddingRight_pageMargin_default__1lrvpk9i4 sprinkles_paddingTop_40_default__1lrvpk9ip sprinkles_paddingBottom_40_default__1lrvpk9dd sprinkles_fontSize_medium__1lrvpk9l sprinkles_justifyContent_center_default__1lrvpk97a"
         >
           <div
             class="ScreenReaderOnly_screenReaderOnlyStyle__1lzmpje0"
@@ -3137,21 +3107,21 @@ exports[`/ renders 1`] = `
             </h3>
           </div>
           <div
-            class="sprinkles_display_flex_default__1lrvpk94q sprinkles_justifyContent_space-between_default__1lrvpk96n"
+            class="sprinkles_display_flex_default__1lrvpk95a sprinkles_justifyContent_space-between_default__1lrvpk977"
           >
             <span />
             <a
-              class="sprinkles_textAlign_right__1lrvpk917"
+              class="sprinkles_textAlign_right_default__1lrvpk9ks"
               href="/page-2/"
             >
               Older →
             </a>
           </div>
           <span
-            class="sprinkles_width_px_default__1lrvpk9kb sprinkles_height_24_default__1lrvpk95t sprinkles_minWidth_px_default__1lrvpk9aq sprinkles_minHeight_24_default__1lrvpk98z sprinkles_display_block_default__1lrvpk94k"
+            class="sprinkles_width_px_default__1lrvpk9na sprinkles_height_24_default__1lrvpk96d sprinkles_minWidth_px_default__1lrvpk9c4 sprinkles_minHeight_24_default__1lrvpk99y sprinkles_display_block_default__1lrvpk954"
           />
           <div
-            class="sprinkles_textAlign_right__1lrvpk917 sprinkles_color_subtle__1lrvpk97 sprinkles_lineHeight_32__1lrvpk9z"
+            class="sprinkles_textAlign_right_default__1lrvpk9ks sprinkles_color_subtle__1lrvpk97 sprinkles_lineHeight_32__1lrvpk912"
           >
             Page 
             <select>
@@ -3217,14 +3187,14 @@ exports[`/ renders 1`] = `
       </main>
     </div>
     <footer
-      class="backgroundImage_ripNotComingSoonBackgroundImageStyle__ewlb040 sprinkles_paddingLeft_pageMargin_default__1lrvpk9e8 sprinkles_paddingRight_pageMargin_default__1lrvpk9fw sprinkles_paddingTop_32_default__1lrvpk9ge sprinkles_paddingBottom_32_default__1lrvpk9bw sprinkles_color_inverse__1lrvpk98 sprinkles_display_flex_default__1lrvpk94q sprinkles_rowGap_24_default__1lrvpk9hn sprinkles_alignItems_center_default__1lrvpk91h sprinkles_flexDirection_column_default__1lrvpk958"
+      class="backgroundImage_ripNotComingSoonBackgroundImageStyle__ewlb040 sprinkles_paddingLeft_pageMargin_default__1lrvpk9g1 sprinkles_paddingRight_pageMargin_default__1lrvpk9i4 sprinkles_paddingTop_32_default__1lrvpk9im sprinkles_paddingBottom_32_default__1lrvpk9da sprinkles_color_inverse__1lrvpk98 sprinkles_display_flex_default__1lrvpk95a sprinkles_rowGap_24_default__1lrvpk9jv sprinkles_alignItems_center_default__1lrvpk91g sprinkles_flexDirection_column_default__1lrvpk95s"
     >
       <nav>
         <ul
-          class="sprinkles_display_flex_default__1lrvpk94q sprinkles_flexWrap_wrap_default__1lrvpk95b sprinkles_justifyContent_center_default__1lrvpk96q sprinkles_rowGap_8_default__1lrvpk9hh sprinkles_columnGap_16_default__1lrvpk935 sprinkles_columnGap_24_tablet__1lrvpk939"
+          class="sprinkles_display_flex_default__1lrvpk95a sprinkles_flexWrap_wrap_default__1lrvpk95v sprinkles_justifyContent_center_default__1lrvpk97a sprinkles_rowGap_8_default__1lrvpk9jp sprinkles_columnGap_16_default__1lrvpk93a sprinkles_columnGap_24_tablet__1lrvpk93e"
         >
           <li
-            class="sprinkles_display_block_default__1lrvpk94k sprinkles_letterSpacing_0.5__1lrvpk9u sprinkles_whiteSpace_nowrap__1lrvpk91d"
+            class="sprinkles_display_block_default__1lrvpk954 sprinkles_letterSpacing_0.5__1lrvpk9w sprinkles_whiteSpace_nowrap__1lrvpk91c"
           >
             <a
               class="sprinkles_color_inherit__1lrvpk99"
@@ -3234,7 +3204,7 @@ exports[`/ renders 1`] = `
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__1lrvpk94k sprinkles_letterSpacing_0.5__1lrvpk9u sprinkles_whiteSpace_nowrap__1lrvpk91d"
+            class="sprinkles_display_block_default__1lrvpk954 sprinkles_letterSpacing_0.5__1lrvpk9w sprinkles_whiteSpace_nowrap__1lrvpk91c"
           >
             <a
               class="sprinkles_color_inherit__1lrvpk99"
@@ -3244,7 +3214,7 @@ exports[`/ renders 1`] = `
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__1lrvpk94k sprinkles_letterSpacing_0.5__1lrvpk9u sprinkles_whiteSpace_nowrap__1lrvpk91d"
+            class="sprinkles_display_block_default__1lrvpk954 sprinkles_letterSpacing_0.5__1lrvpk9w sprinkles_whiteSpace_nowrap__1lrvpk91c"
           >
             <a
               class="sprinkles_color_inherit__1lrvpk99"
@@ -3254,7 +3224,17 @@ exports[`/ renders 1`] = `
             </a>
           </li>
           <li
-            class="sprinkles_display_block_default__1lrvpk94k sprinkles_letterSpacing_0.5__1lrvpk9u sprinkles_whiteSpace_nowrap__1lrvpk91d"
+            class="sprinkles_display_block_default__1lrvpk954 sprinkles_letterSpacing_0.5__1lrvpk9w sprinkles_whiteSpace_nowrap__1lrvpk91c"
+          >
+            <a
+              class="sprinkles_color_inherit__1lrvpk99"
+              href="/readings/"
+            >
+              Reading Log
+            </a>
+          </li>
+          <li
+            class="sprinkles_display_block_default__1lrvpk954 sprinkles_letterSpacing_0.5__1lrvpk9w sprinkles_whiteSpace_nowrap__1lrvpk91c"
           >
             <a
               class="sprinkles_color_inherit__1lrvpk99"
@@ -3266,7 +3246,7 @@ exports[`/ renders 1`] = `
         </ul>
       </nav>
       <p
-        class="sprinkles_fontWeight_light__1lrvpk9m sprinkles_fontSize_small__1lrvpk9h sprinkles_lineHeight_16__1lrvpk9x"
+        class="sprinkles_fontWeight_light__1lrvpk9o sprinkles_fontSize_small__1lrvpk9j sprinkles_lineHeight_16__1lrvpk9z"
       >
         All images used in accordance with the 
         <a

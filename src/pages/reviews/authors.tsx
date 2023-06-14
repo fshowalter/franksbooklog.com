@@ -12,16 +12,16 @@ export function Head(): JSX.Element {
   );
 }
 
-export default function ReviewAuthorsPage({
+export default function AuthorsPage({
   data,
 }: {
-  data: Queries.ReviewsAuthorsPageQuery;
+  data: Queries.AuthorsPageQuery;
 }): JSX.Element {
   return <Authors items={data.author.nodes} initialSort="name-asc" />;
 }
 
 export const pageQuery = graphql`
-  query ReviewsAuthorsPage {
+  query AuthorsPage {
     author: allAuthorsJson(
       filter: { reviewedWorkCount: { gt: 0 } }
       sort: { sortName: ASC }

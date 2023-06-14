@@ -29,7 +29,7 @@ export function Filters({
         }
       />
       <YearInput
-        label="Published Year"
+        label="Work Year"
         years={distinctPublishedYears}
         onYearChange={(values) =>
           dispatch({ type: ActionType.FILTER_PUBLISHED_YEAR, values })

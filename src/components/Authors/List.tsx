@@ -21,7 +21,7 @@ export function List({
 }) {
   return (
     <GroupedList
-      data-testid="cover-list"
+      data-testid="author-list"
       groupedItems={groupedItems}
       visibleCount={visibleCount}
       totalCount={totalCount}
@@ -109,7 +109,7 @@ export const pageQuery = graphql`
     avatar {
       childImageSharp {
         gatsbyImageData(
-          layout: CONSTRAINED
+          layout: FIXED
           formats: [JPG, AVIF]
           quality: 80
           width: 48

@@ -34,7 +34,7 @@ export function Filters({
         }
       />
       <YearInput
-        label="Year Published"
+        label="Work Year"
         years={distinctPublishedYears}
         onYearChange={(values) =>
           dispatch({ type: ActionType.FILTER_YEAR_PUBLISHED, values })
@@ -61,12 +61,8 @@ export function Filters({
           })
         }
       >
-        <option value="year-published-desc">
-          Year Published (Newest First)
-        </option>
-        <option value="year-published-asc">
-          Year Published (Oldest First)
-        </option>
+        <option value="year-published-desc">Work Year (Newest First)</option>
+        <option value="year-published-asc">Work Year (Oldest First)</option>
         <option value="title-asc">Title (A &rarr; Z)</option>
         <option value="title-desc">Title (Z &rarr; A)</option>
         <option value="grade-desc">Grade (Best First)</option>

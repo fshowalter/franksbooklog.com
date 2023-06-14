@@ -4,7 +4,7 @@ import { HeadBuilder, Readings } from "../components";
 export function Head(): JSX.Element {
   return (
     <HeadBuilder
-      pageTitle="Reading Progress"
+      pageTitle="Reading Log"
       description="A chronological list of my reading since 2022."
       image={null}
       article={false}

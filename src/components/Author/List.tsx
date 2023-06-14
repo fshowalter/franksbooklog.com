@@ -143,7 +143,7 @@ export const pageQuery = graphql`
       id
     }
     cover {
-      ...CoverGalleryCover
+      ...ListItemCover
     }
   }
 `;

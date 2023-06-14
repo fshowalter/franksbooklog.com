@@ -23,7 +23,7 @@ export function List({
 }) {
   return (
     <GroupedList
-      data-testid="poster-list"
+      data-testid="cover-list"
       groupedItems={groupedItems}
       visibleCount={visibleCount}
       totalCount={totalCount}

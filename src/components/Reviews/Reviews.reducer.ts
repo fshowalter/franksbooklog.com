@@ -30,8 +30,8 @@ function sortItems(items: Queries.ReviewsListItemFragment[], sortOrder: Sort) {
       b: Queries.ReviewsListItemFragment
     ) => number
   > = {
-    "review-date-desc": (a, b) => sortString(a.reviewDate, b.reviewDate) * -1,
-    "review-date-asc": (a, b) => sortString(a.reviewDate, b.reviewDate),
+    "review-date-desc": (a, b) => sortString(a.sortDate, b.sortDate) * -1,
+    "review-date-asc": (a, b) => sortString(a.sortDate, b.sortDate),
     "year-published-desc": (a, b) =>
       sortNumber(a.yearPublished, b.yearPublished) * -1,
     "year-published-asc": (a, b) =>
@@ -113,7 +113,6 @@ export function initState({
 export enum ActionType {
   FILTER_TITLE = "FILTER_TITLE",
   FILTER_KIND = "FILTER_KIND",
-  FILTER_GRADE = "FILTER_GRADE",
   FILTER_YEAR_PUBLISHED = "FILTER_YEAR_PUBLISHED",
   FILTER_YEAR_REVIEWED = "FILTER_YEAR_REVIEWED",
   SORT = "SORT",
@@ -128,11 +127,6 @@ interface FilterTitleAction {
 interface FilterKindAction {
   type: ActionType.FILTER_KIND;
   value: string;
-}
-
-interface FilterGradeAction {
-  type: ActionType.FILTER_GRADE;
-  values: [number, number];
 }
 
 interface FilterYearReviewedAction {
@@ -158,7 +152,6 @@ export type Action =
   | FilterYearReviewedAction
   | FilterYearPublishedAction
   | FilterKindAction
-  | FilterGradeAction
   | SortAction
   | ShowMoreAction;
 
@@ -198,12 +191,6 @@ export function reducer(state: State, action: Action): State {
       return updateFilter(state, "reviewYear", (item) => {
         const reviewYear = item.reviewYear;
         return reviewYear >= action.values[0] && reviewYear <= action.values[1];
-      });
-    }
-    case ActionType.FILTER_GRADE: {
-      return updateFilter(state, "grade", (item) => {
-        const gradeValue = item.gradeValue;
-        return gradeValue >= action.values[0] && gradeValue <= action.values[1];
       });
     }
     case ActionType.SORT: {

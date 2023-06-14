@@ -1,4 +1,3 @@
-export * from "./applyFilters";
 export * from "./buildGroupItems";
 export * from "./filterTools";
 export * from "./sortTools";

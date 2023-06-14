@@ -106,6 +106,7 @@ export const query = graphql`
     slug
     reviewDate(formatString: "MMM D, YYYY")
     gradeValue
+    sortDate: reviewDate
     title
     yearPublished
     reviewMonth: reviewDate(formatString: "MMMM")

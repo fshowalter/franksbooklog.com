@@ -1,22 +1,22 @@
 import { render } from "@testing-library/react";
-import ReviewPage, { Head } from "./review";
-import { abandonedData, compilationData, data } from "./review.fixtures";
+import ReviewTemplate, { Head } from "./review";
+import { abandonedData, data, readingNoteData } from "./review.fixtures";
 
 describe("/reviews/{slug}", () => {
   it("renders", () => {
-    const { asFragment } = render(<ReviewPage data={data} />);
+    const { asFragment } = render(<ReviewTemplate data={data} />);
 
     expect(asFragment()).toMatchSnapshot();
   });
 
-  it("renders compilation", () => {
-    const { asFragment } = render(<ReviewPage data={compilationData} />);
+  it("render abandoned without structured data", () => {
+    const { asFragment } = render(<ReviewTemplate data={abandonedData} />);
 
     expect(asFragment()).toMatchSnapshot();
   });
 
-  it("renders abandoned", () => {
-    const { asFragment } = render(<ReviewPage data={abandonedData} />);
+  it("render reading notes", () => {
+    const { asFragment } = render(<ReviewTemplate data={readingNoteData} />);
 
     expect(asFragment()).toMatchSnapshot();
   });
@@ -24,6 +24,6 @@ describe("/reviews/{slug}", () => {
   it("sets page title", () => {
     render(<Head data={data} />);
 
-    expect(document.title).toStrictEqual("Dracula by Bram Stoker");
+    expect(document.title).toStrictEqual("Behold the Void by Philip Fracassi");
   });
 });
