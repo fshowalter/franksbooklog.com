@@ -1,6 +1,11 @@
 import { SchemaNames } from "../schemaNames";
 import { GatsbyNodeContext } from "../type-definitions";
-import { WorkNode } from "./WorksJson";
+
+interface ProgressNode {
+  workSlug: string;
+  date: string;
+  sequence: number;
+}
 
 export const ProgressJson = {
   name: SchemaNames.ProgressJson,
@@ -58,10 +63,16 @@ export const ProgressJson = {
         },
       },
     },
+    sortDate: {
+      type: `String!`,
+      resolve: (source: ProgressNode) => {
+        return `${source.date}-${source.sequence}`;
+      },
+    },
     work: {
       type: `${SchemaNames.WorksJson}!`,
       resolve: async (
-        source: WorkNode,
+        source: ProgressNode,
         _args: unknown,
         context: GatsbyNodeContext
       ) => {

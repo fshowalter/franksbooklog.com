@@ -1,4 +1,4 @@
-import { FilterableState, filterTools, sortNumber } from "../../utils";
+import { FilterableState, filterTools, sortString } from "../../utils";
 
 const SHOW_COUNT_DEFAULT = 100;
 
@@ -14,8 +14,8 @@ function sortItems(items: Queries.ReadingsListItemFragment[], sortOrder: Sort) {
       b: Queries.ReadingsListItemFragment
     ) => number
   > = {
-    "progress-date-desc": (a, b) => sortNumber(a.date, b.date) * -1,
-    "progress-date-asc": (a, b) => sortNumber(a.date, b.date),
+    "progress-date-desc": (a, b) => sortString(a.sortDate, b.sortDate) * -1,
+    "progress-date-asc": (a, b) => sortString(a.sortDate, b.sortDate),
   };
 
   const comparer = sortMap[sortOrder];

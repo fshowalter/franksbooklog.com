@@ -2,9 +2,9 @@ import { graphql } from "gatsby";
 import { toSentenceArray } from "../../utils";
 import { BarGradient } from "../BarGradient";
 import { Box } from "../Box";
+import { Link } from "../Link";
 import { ListItem } from "../ListItem";
 import { ListItemCover } from "../ListItemCover";
-import { ListItemTitle } from "../ListItemTitle";
 import { GroupedList } from "../ListWithFiltersLayout";
 import { Spacer } from "../Spacer";
 import { subListItemBoxShadowStyle } from "./List.css";
@@ -110,17 +110,19 @@ export function SubListItem({
         boxShadow="borderAll"
       />
       <Box flexGrow={1}>
-        <ListItemTitle
-          title={item.title}
-          year={item.yearPublished}
-          slug={item.reviewed ? item.workSlug : undefined}
-        />
+        <Title item={item} />
         <Spacer axis="vertical" size={4} />
         <Authors authors={item.authors} />
         <Spacer axis="vertical" size={8} />
         <YearAndKind year={item.yearPublished} kind={item.kind} />
         <Spacer axis="vertical" size={8} />
-        <BarGradient value={progressValue} maxValue={100} />
+        {item.progress !== "Abandoned" && (
+          <BarGradient
+            value={progressValue}
+            maxValue={100}
+            __lineHeight="1rem"
+          />
+        )}
         <Spacer axis="vertical" size={8} />
         <Edition edition={item.edition} />
       </Box>
@@ -140,6 +142,33 @@ function parseProgress(progress: string) {
   }
 
   return 100;
+}
+
+export function Title({ item }: { item: Queries.ReadingsListItemFragment }) {
+  const progressBox = (
+    <Box as="span" fontSize="xSmall" color="subtle" fontWeight="light">
+      {item.progress}
+    </Box>
+  );
+
+  if (item.reviewed) {
+    return (
+      <Link
+        to={`/reviews/${item.workSlug}/`}
+        fontSize="medium"
+        lineHeight={20}
+        display="block"
+      >
+        {item.title}&#8239;&#8239;{progressBox}
+      </Link>
+    );
+  }
+
+  return (
+    <Box as="span" fontSize="medium" display="block" lineHeight={20}>
+      {item.title}&#8239;&#8239;{progressBox}
+    </Box>
+  );
 }
 
 function Authors({
@@ -195,6 +224,7 @@ export const query = graphql`
     title
     edition
     kind
+    sortDate
     authors {
       ...ReadingListItemAuthor
     }
