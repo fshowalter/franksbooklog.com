@@ -62,8 +62,8 @@ export const mostReadAuthorsQuery = {
 
         const mostReadAuthors: MostReadAuthorNode[] = [];
 
-        for (const authorKey of Object.keys(authors)) {
-          if (authors[authorKey].length < 2) {
+        for (const authorSlug of Object.keys(authors)) {
+          if (authors[authorSlug].length < 2) {
             continue;
           }
 
@@ -71,7 +71,7 @@ export const mostReadAuthorsQuery = {
             type: SchemaNames.AuthorsJson,
             query: {
               filter: {
-                key: { eq: authorKey },
+                slug: { eq: authorSlug },
               },
             },
           });
@@ -82,14 +82,14 @@ export const mostReadAuthorsQuery = {
 
           mostReadAuthors.push({
             name: author.name,
-            count: authors[authorKey].length,
+            count: authors[authorSlug].length,
             slug: await resolveFieldForNode<string>({
               fieldName: "slug",
               source: author,
               context,
               info,
             }),
-            readings: authors[authorKey],
+            readings: authors[authorSlug],
           });
         }
 

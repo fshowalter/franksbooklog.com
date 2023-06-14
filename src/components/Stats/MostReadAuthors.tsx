@@ -1,26 +1,16 @@
 import { graphql } from "gatsby";
 import { Box } from "../Box";
-import { Cover, CoverGallery } from "../CoverGallery";
 import { Link } from "../Link";
+import { ListItem } from "../ListItem";
+import { ListItemCover } from "../ListItemCover";
+import { ListItemTitle } from "../ListItemTitle";
 import { Spacer } from "../Spacer";
-import { StatHeading } from "../StatHeading";
 import {
   detailsRowGridStyle,
   stickyHeaderStyle,
   stickyRowHeaderStyle,
 } from "./MostReadAuthors.css";
-
-function AuthorName({
-  author,
-}: {
-  author: Queries.MostReadAuthorFragment;
-}): JSX.Element {
-  if (author.slug) {
-    return <Link to={`/reviews/authors/${author.slug}/`}>{author.name}</Link>;
-  }
-
-  return <>{author.name}</>;
-}
+import { StatHeading } from "./StatHeading";
 
 export function MostReadAuthors({
   authors,
@@ -61,7 +51,9 @@ export function MostReadAuthors({
                 backgroundColor="stripe"
               >
                 <Box as="span" lineHeight={40}>
-                  <AuthorName author={author} />
+                  <Link to={`/reviews/authors/${author.slug}`}>
+                    {author.name}
+                  </Link>
                 </Box>
                 <Box as="span" lineHeight={40}>
                   &nbsp;
@@ -85,23 +77,16 @@ export function MostReadAuthors({
                   >
                     Details
                   </Box>
-                  <CoverGallery paddingX={{ default: 0, tablet: "gutter" }}>
+                  <Box as="ol" paddingX={{ default: 0, tablet: "gutter" }}>
                     {author.readings.map((reading) => {
                       return (
-                        <Cover
+                        <MostWatchedAuthorReadingListItem
                           key={reading.sequence}
-                          image={reading.cover}
-                          title={reading.title}
-                          slug={reading.work.slug}
-                          year={reading.yearPublished}
-                          date={reading.date}
-                          edition={reading.edition}
-                          kind={reading.kind}
+                          reading={reading}
                         />
                       );
                     })}
-                  </CoverGallery>
-                  <Spacer axis="vertical" size={{ default: 0, tablet: 32 }} />
+                  </Box>
                 </details>
               </Box>
             </Box>
@@ -112,24 +97,77 @@ export function MostReadAuthors({
   );
 }
 
+export function MostWatchedAuthorReadingListItem({
+  reading,
+}: {
+  reading: Queries.MostReadAuthorReadingFragment;
+}) {
+  return (
+    <ListItem alignItems="center">
+      <ListItemCover
+        slug={reading.work.slug}
+        image={reading.cover}
+        title={reading.title}
+        flexShrink={0}
+        boxShadow="borderAll"
+      />
+      <Box flexGrow={1}>
+        <ListItemTitle title={reading.title} slug={reading.work.slug} />
+        <Spacer axis="vertical" size={8} />
+        <ListItemYearAndKind year={reading.yearPublished} kind={reading.kind} />
+        <Spacer axis="vertical" size={8} />
+        <Spacer axis="vertical" size={4} />
+        <Box
+          color="subtle"
+          fontSize="default"
+          // letterSpacing={0.5}
+          lineHeight={16}
+        >
+          {reading.edition} on {reading.date}
+        </Box>
+        <Spacer axis="vertical" size={4} />
+      </Box>
+    </ListItem>
+  );
+}
+
+function ListItemYearAndKind({
+  kind,
+  year,
+}: {
+  kind: string;
+  year: number;
+}): JSX.Element | null {
+  return (
+    <Box color="subtle" fontSize="small" letterSpacing={0.5} lineHeight={16}>
+      <Box as="span">{kind} | </Box>
+      {year}
+    </Box>
+  );
+}
+
 export const query = graphql`
+  fragment MostReadAuthorReading on ReadingsJson {
+    sequence
+    date(formatString: "MMMM D, YYYY")
+    work {
+      slug
+    }
+    edition
+    kind
+    title
+    yearPublished
+    cover {
+      ...CoverGalleryCover
+    }
+  }
+
   fragment MostReadAuthor on MostReadAuthor {
     name
     slug
     count
     readings {
-      sequence
-      date(formatString: "ddd MMM D, YYYY")
-      work {
-        slug
-      }
-      edition
-      kind
-      title
-      yearPublished
-      cover {
-        ...CoverGalleryCover
-      }
+      ...MostReadAuthorReading
     }
   }
 `;

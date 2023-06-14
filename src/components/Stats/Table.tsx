@@ -7,7 +7,7 @@ import {
   stickyTableHeaderStyle,
   tableBorderStyle,
   tableWhiteSpaceStyle,
-} from "./StatsTable.css";
+} from "./Table.css";
 
 export function Table({
   children,

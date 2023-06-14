@@ -1,6 +1,6 @@
 import { Box } from "../Box";
 import { Link } from "../Link";
-import { activeLinkStyle } from "./StatsNavigation.css";
+import { activeLinkStyle } from "./Nav.css";
 
 function ListItem({
   text,
@@ -18,11 +18,7 @@ function ListItem({
   );
 }
 
-export function StatsNavigation({
-  years,
-}: {
-  years: readonly string[];
-}): JSX.Element {
+export function Nav({ years }: { years: readonly string[] }): JSX.Element {
   return (
     <Box
       as="ul"

@@ -1,14 +1,61 @@
-import { sortStringAsc } from "../../utils";
+import { sortString } from "../../utils";
 import { Box } from "../Box";
 import { Layout } from "../Layout";
 import { PageTitle } from "../PageTitle";
 import { Spacer } from "../Spacer";
+import { Callouts } from "./Callouts";
 import { DistributionTable, IDistribution } from "./DistributionTable";
 import { MostReadAuthors } from "./MostReadAuthors";
-import { StatsCallouts } from "./StatsCallouts";
-import { StatsNavigation } from "./StatsNavigation";
+import { Nav } from "./Nav";
 
-export function StatsPage({
+function sortGradeDistributions(gradeDistributions: readonly IDistribution[]) {
+  return [...gradeDistributions].sort((a, b) => {
+    if (!a.name && !b.name) {
+      return 0;
+    }
+
+    if (!a.name || b.name === "Abandoned") {
+      return -1;
+    }
+
+    if (!b.name || a.name === "Abandoned") {
+      return 1;
+    }
+
+    if (a.name.length === 1 && b.name.length === 1) {
+      return sortString(a.name, b.name);
+    }
+
+    if (a.name.startsWith(b.name[0])) {
+      const aModifier = a.name[a.name.length - 1];
+      const bModifier = b.name[b.name.length - 1];
+
+      if (aModifier === bModifier) {
+        return 0;
+      }
+
+      if (aModifier === "+") {
+        return -1;
+      }
+
+      if (bModifier === "+") {
+        return 1;
+      }
+
+      if (aModifier === "-") {
+        return 1;
+      }
+
+      if (bModifier === "-") {
+        return -1;
+      }
+    }
+
+    return sortString(a.name, b.name);
+  });
+}
+
+export function Stats({
   title,
   tagline,
   readingCount,
@@ -25,7 +72,7 @@ export function StatsPage({
   reviewCount: number;
   bookCount: number;
   mostReadAuthors: readonly Queries.MostReadAuthorFragment[];
-  gradeDistributions?: readonly IDistribution[];
+  gradeDistributions: readonly IDistribution[];
   kindDistributions: readonly IDistribution[];
   editionDistributions: readonly IDistribution[];
   decadeDistributions: readonly IDistribution[];
@@ -33,69 +80,20 @@ export function StatsPage({
   title: string;
   tagline: string;
 }): JSX.Element {
-  const sortedGradeDistributions = gradeDistributions
-    ? [...gradeDistributions].sort((a, b) => {
-        if (!a.name && !b.name) {
-          return 0;
-        }
-
-        if (!a.name) {
-          return -1;
-        }
-
-        if (!b.name) {
-          return 1;
-        }
-
-        if (a.name.length === 1 && b.name.length === 1) {
-          return sortStringAsc(a.name, b.name);
-        }
-
-        if (a.name.startsWith(b.name[0])) {
-          const aModifier = a.name[a.name.length - 1];
-          const bModifier = b.name[b.name.length - 1];
-
-          if (aModifier === bModifier) {
-            return 0;
-          }
-
-          if (aModifier === "+") {
-            return -1;
-          }
-
-          if (bModifier === "+") {
-            return 1;
-          }
-
-          if (aModifier === "-") {
-            return 1;
-          }
-
-          if (bModifier === "-") {
-            return -1;
-          }
-        }
-
-        return sortStringAsc(a.name, b.name);
-      })
-    : null;
+  const sortedGradeDistributions = sortGradeDistributions(gradeDistributions);
 
   return (
     <Layout>
-      <Box as="main">
+      <Box as="main" display="flex" alignItems="center" flexDirection="column">
         <Box
           as="header"
           display="flex"
-          flexDirection={{ default: "column", desktop: "row" }}
+          flexDirection="column"
           justifyContent="space-between"
           flexWrap="wrap"
           paddingX="pageMargin"
         >
-          <Box
-            display="flex"
-            flexDirection="column"
-            alignItems={{ default: "center", desktop: "flex-start" }}
-          >
+          <Box display="flex" flexDirection="column" alignItems="center">
             <PageTitle paddingTop={{ default: 24, desktop: 32 }}>
               {title}
             </PageTitle>
@@ -103,31 +101,36 @@ export function StatsPage({
               {tagline}
             </Box>
             <Spacer axis="vertical" size={24} />
-            <StatsNavigation years={allYears} />
+            <Nav years={allYears} />
           </Box>
           <Box>
             <Spacer axis="vertical" size={32} />
-            <StatsCallouts
+            <Callouts
               readingCount={readingCount}
               reviewCount={reviewCount}
               bookCount={bookCount}
             />
           </Box>
         </Box>
-        <Box paddingX={{ default: 0, tablet: "gutter", desktop: "pageMargin" }}>
-          <Spacer axis="vertical" size={32} />
+        <Spacer axis="vertical" size={32} />
+        <Box
+          paddingX={{ default: 0, tablet: "gutter", desktop: "pageMargin" }}
+          paddingY={32}
+          display="flex"
+          flexDirection="column"
+          rowGap={32}
+          alignItems="stretch"
+          maxWidth={960}
+          width="full"
+        >
           <MostReadAuthors authors={mostReadAuthors} />
-          {sortedGradeDistributions && (
-            <>
-              <Spacer axis="vertical" size={32} />
-              <DistributionTable
-                distributions={sortedGradeDistributions}
-                title="Grade Distribution"
-                nameColumnLabel="Grade"
-                countColumnLabel="Reviews"
-              />
-            </>
-          )}
+          <Spacer axis="vertical" size={32} />
+          <DistributionTable
+            distributions={sortedGradeDistributions}
+            title="Grade Distribution"
+            nameColumnLabel="Grade"
+            countColumnLabel="Reviews"
+          />
           <Spacer axis="vertical" size={32} />
           <DistributionTable
             distributions={decadeDistributions}

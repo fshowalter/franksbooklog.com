@@ -1,12 +1,12 @@
 import { BarGradient } from "../BarGradient";
-import { StatHeading } from "../StatHeading/StatHeading";
+import { StatHeading } from "./StatHeading";
 import {
   Table,
   TableDataCell,
   TableHead,
   TableHeaderCell,
   TableRow,
-} from "../StatsTable";
+} from "./Table";
 
 export function DistributionTable({
   title,

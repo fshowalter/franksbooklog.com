@@ -24,7 +24,7 @@ function Callout({
   );
 }
 
-export function StatsCallouts({
+export function Callouts({
   readingCount,
   bookCount,
   reviewCount,

@@ -6,14 +6,14 @@ import { LongFormText } from "../LongFormText";
 import { PageTitle } from "../PageTitle";
 import { Spacer } from "../Spacer";
 
-export function ArticlePage({
+export function Article({
   image,
   alt,
   article,
 }: {
-  image: Queries.ArticlePageBackdropFragment | null;
+  image: Queries.ArticleBackdropFragment | null;
   alt: string;
-  article: Queries.ArticlePageFragment | null;
+  article: Queries.ArticleDataFragment | null;
 }): JSX.Element {
   return (
     <Layout>
@@ -44,14 +44,14 @@ export function ArticlePage({
 }
 
 export const query = graphql`
-  fragment ArticlePage on MarkdownRemark {
+  fragment ArticleData on MarkdownRemark {
     html
     frontmatter {
       title
     }
   }
 
-  fragment ArticlePageBackdrop on File {
+  fragment ArticleBackdrop on File {
     childImageSharp {
       gatsbyImageData(
         layout: CONSTRAINED

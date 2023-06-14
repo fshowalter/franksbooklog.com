@@ -1,6 +1,5 @@
 import { graphql } from "gatsby";
-import { ArticlePage } from "../components/ArticlePage";
-import { HeadBuilder } from "../components/HeadBuilder";
+import { Article, HeadBuilder } from "../components";
 
 export function Head(): JSX.Element {
   return (
@@ -19,7 +18,7 @@ export default function GonePage({
   data: Queries.GonePageQuery;
 }): JSX.Element {
   return (
-    <ArticlePage
+    <Article
       image={data.backdrop}
       alt="Jake Gittes walks away."
       article={data.page}
@@ -30,10 +29,10 @@ export default function GonePage({
 export const pageQuery = graphql`
   query GonePage {
     backdrop: file(absolutePath: { regex: "/backdrops/gone.png$/" }) {
-      ...ArticlePageBackdrop
+      ...ArticleBackdrop
     }
     page: markdownRemark(frontmatter: { slug: { eq: "gone" } }) {
-      ...ArticlePage
+      ...ArticleData
     }
   }
 `;
