@@ -9,6 +9,9 @@
     "enabled": true,
     "schedule": ["at any time"]
   },
+  "automerge": true,
+  "automergeType": "pr",
+  "platformAutomerge": true,
   "packageRules": [
     {
       "groupName": "esm dependent",
