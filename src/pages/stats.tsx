@@ -1,6 +1,5 @@
 import { graphql } from "gatsby";
-import { HeadBuilder } from "../components/HeadBuilder";
-import { StatsPage } from "../components/StatsPage";
+import { HeadBuilder, Stats } from "../components";
 
 export function Head(): JSX.Element {
   return (
@@ -13,19 +12,15 @@ export function Head(): JSX.Element {
   );
 }
 
-/**
- * Renders the all-time review stats template.
- */
 export default function AllTimeStatsPage({
   data,
 }: {
   data: Queries.AllTimeStatsPageQuery;
 }): JSX.Element {
-  const tagline = `${data.reading.years.length.toString()} Years in Review`;
   return (
-    <StatsPage
+    <Stats
       title="All-Time Stats"
-      tagline={tagline}
+      tagline={`${data.reading.years.length.toString()} Years in Review`}
       mostReadAuthors={data.mostReadAuthors}
       allYears={data.reading.years}
       reviewCount={data.review.totalCount}
@@ -50,7 +45,7 @@ export const pageQuery = graphql`
       totalCount
     }
 
-    review: allMarkdownRemark(filter: { kind: { eq: REVIEW } }) {
+    review: allReviewedWorksJson {
       totalCount
     }
 
@@ -60,10 +55,7 @@ export const pageQuery = graphql`
       totalCount
     }
 
-    gradeDistributions: allMarkdownRemark(
-      filter: { kind: { eq: REVIEW } }
-      sort: { gradeValue: DESC }
-    ) {
+    gradeDistributions: allReviewedWorksJson(sort: { gradeValue: DESC }) {
       group(field: { grade: SELECT }) {
         name: fieldValue
         count: totalCount

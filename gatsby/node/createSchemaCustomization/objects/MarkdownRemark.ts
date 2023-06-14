@@ -17,7 +17,7 @@ export interface MarkdownRemarkNode extends GatsbyNode {
   frontmatter: FrontMatter;
 }
 
-interface FrontMatter {
+export interface FrontMatter {
   work_slug: string;
   grade: string | null;
   date: string;
@@ -34,16 +34,6 @@ export const MarkdownRemark = {
       },
     },
     excerptHtml: excerptHtmlFieldResolver,
-    kind: {
-      type: `${SchemaNames.MarkdownNodeKind}!`,
-      resolve: (source: MarkdownRemarkNode) => {
-        if (source.fileAbsolutePath.includes("/reviews/")) {
-          return "REVIEW";
-        }
-
-        return "OTHER";
-      },
-    },
     linkedHtml: {
       type: "String",
       resolve: async (
@@ -52,13 +42,13 @@ export const MarkdownRemark = {
         context: GatsbyNodeContext,
         info: GatsbyResolveInfo
       ) => {
-        const htmlAst = await resolveFieldForNode<Element>(
-          "htmlAst",
+        const htmlAst = await resolveFieldForNode<Element>({
+          fieldName: "htmlAst",
           source,
           context,
           info,
-          args
-        );
+          args,
+        });
 
         if (!htmlAst) {
           return null;
@@ -79,13 +69,13 @@ export const MarkdownRemark = {
         context: GatsbyNodeContext,
         info: GatsbyResolveInfo
       ) => {
-        const frontMatter = await resolveFieldForNode<FrontMatter>(
-          "frontmatter",
+        const frontMatter = await resolveFieldForNode<FrontMatter>({
+          fieldName: "frontmatter",
           source,
           context,
           info,
-          args
-        );
+          args,
+        });
 
         return frontMatter ? frontMatter.work_slug : null;
       },
@@ -98,13 +88,13 @@ export const MarkdownRemark = {
         context: GatsbyNodeContext,
         info: GatsbyResolveInfo
       ) => {
-        const frontMatter = await resolveFieldForNode<FrontMatter>(
-          "frontmatter",
+        const frontMatter = await resolveFieldForNode<FrontMatter>({
+          fieldName: "frontmatter",
           source,
           context,
           info,
-          args
-        );
+          args,
+        });
 
         return frontMatter?.date
           ? parseInt(frontMatter.date.substring(0, 4))
@@ -119,13 +109,13 @@ export const MarkdownRemark = {
         context: GatsbyNodeContext,
         info: GatsbyResolveInfo
       ) => {
-        const frontMatter = await resolveFieldForNode<FrontMatter>(
-          "frontmatter",
+        const frontMatter = await resolveFieldForNode<FrontMatter>({
+          fieldName: "frontmatter",
           source,
           context,
           info,
-          args
-        );
+          args,
+        });
 
         return frontMatter ? frontMatter.date : null;
       },
@@ -134,39 +124,39 @@ export const MarkdownRemark = {
       },
     },
     grade: {
-      type: "String",
+      type: "String!",
       resolve: async (
         source: MarkdownRemarkNode,
         args: GatsbyResolveArgs,
         context: GatsbyNodeContext,
         info: GatsbyResolveInfo
       ) => {
-        const frontMatter = await resolveFieldForNode<FrontMatter>(
-          "frontmatter",
+        const frontMatter = await resolveFieldForNode<FrontMatter>({
+          fieldName: "frontmatter",
           source,
           context,
           info,
-          args
-        );
+          args,
+        });
 
         return frontMatter ? frontMatter.grade : null;
       },
     },
     gradeValue: {
-      type: "Int",
+      type: "Int!",
       resolve: async (
         source: MarkdownRemarkNode,
         args: GatsbyResolveArgs,
         context: GatsbyNodeContext,
         info: GatsbyResolveInfo
       ) => {
-        const frontMatter = await resolveFieldForNode<FrontMatter>(
-          "frontmatter",
+        const frontMatter = await resolveFieldForNode<FrontMatter>({
+          fieldName: "frontmatter",
           source,
           context,
           info,
-          args
-        );
+          args,
+        });
 
         if (!frontMatter) {
           return null;

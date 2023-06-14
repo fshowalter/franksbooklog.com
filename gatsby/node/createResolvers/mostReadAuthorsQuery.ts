@@ -41,30 +41,29 @@ export const mostReadAuthorsQuery = {
         >(async (acc, reading) => {
           const currentValue = await acc;
 
-          const authors = await resolveFieldForNode<WorkAuthorNode[]>(
-            "authors",
-            reading,
+          const authors = await resolveFieldForNode<WorkAuthorNode[]>({
+            fieldName: "authors",
+            source: reading,
             context,
             info,
-            {}
-          );
+          });
 
           if (!authors) {
             return acc;
           }
 
           for (const readingAuthor of authors) {
-            currentValue[readingAuthor.key] ||= [];
-            currentValue[readingAuthor.key].push(reading);
+            currentValue[readingAuthor.slug] ||= []; // eslint-disable-line @typescript-eslint/no-unnecessary-condition
+            currentValue[readingAuthor.slug].push(reading);
           }
 
           return currentValue;
-        }, Promise.resolve({} as Record<string, ReadingNode[]>));
+        }, Promise.resolve({}));
 
         const mostReadAuthors: MostReadAuthorNode[] = [];
 
-        for (const authorKey of Object.keys(authors)) {
-          if (authors[authorKey].length < 2) {
+        for (const authorSlug of Object.keys(authors)) {
+          if (authors[authorSlug].length < 2) {
             continue;
           }
 
@@ -72,7 +71,7 @@ export const mostReadAuthorsQuery = {
             type: SchemaNames.AuthorsJson,
             query: {
               filter: {
-                key: { eq: authorKey },
+                slug: { eq: authorSlug },
               },
             },
           });
@@ -83,15 +82,9 @@ export const mostReadAuthorsQuery = {
 
           mostReadAuthors.push({
             name: author.name,
-            count: authors[authorKey].length,
-            slug: await resolveFieldForNode<string>(
-              "slug",
-              author,
-              context,
-              info,
-              {}
-            ),
-            readings: authors[authorKey],
+            count: authors[authorSlug].length,
+            slug: author.slug,
+            readings: authors[authorSlug],
           });
         }
 

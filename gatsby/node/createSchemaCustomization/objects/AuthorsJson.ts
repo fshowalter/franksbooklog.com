@@ -9,7 +9,7 @@ import type {
 import { resolveFieldForNode } from "../utils/resolveFieldForNode";
 
 export interface AuthorNode extends GatsbyNode {
-  key: string;
+  slug: string;
   name: string;
   sortName: string;
 }
@@ -20,28 +20,28 @@ export const AuthorsJson = {
   fields: {
     name: "String!",
     sortName: "String!",
-    key: "String!",
-    slug: {
-      type: "String",
+    slug: "String!",
+    hasReviews: {
+      type: "Boolean!",
       resolve: async (
         source: AuthorNode,
         args: GatsbyResolveArgs,
         context: GatsbyNodeContext,
         info: GatsbyResolveInfo
       ) => {
-        const reviewedWorkCount = await resolveFieldForNode<number>(
-          "reviewedWorkCount",
+        const reviewedWorkCount = await resolveFieldForNode<number>({
+          fieldName: "reviewedWorkCount",
           source,
           context,
           info,
-          args
-        );
+          args,
+        });
 
         if (!reviewedWorkCount || reviewedWorkCount === 0) {
-          return null;
+          return false;
         }
 
-        return source.key;
+        return true;
       },
     },
     works: {
@@ -56,7 +56,7 @@ export const AuthorsJson = {
           query: {
             filter: {
               authors: {
-                elemMatch: { key: { eq: source.key } },
+                elemMatch: { slug: { eq: source.slug } },
               },
             },
             sort: {
@@ -81,7 +81,7 @@ export const AuthorsJson = {
           query: {
             filter: {
               authors: {
-                elemMatch: { key: { eq: source.key } },
+                elemMatch: { slug: { eq: source.slug } },
               },
             },
           },
@@ -111,7 +111,7 @@ export const AuthorsJson = {
           query: {
             filter: {
               authors: {
-                elemMatch: { key: { eq: source.key } },
+                elemMatch: { key: { eq: source.slug } },
               },
               ...yearFilter,
             },
@@ -134,8 +134,8 @@ export const AuthorsJson = {
             filter: {
               authors: {
                 elemMatch: {
-                  key: {
-                    in: [source.key],
+                  slug: {
+                    in: [source.slug],
                   },
                 },
               },
@@ -160,8 +160,8 @@ export const AuthorsJson = {
             filter: {
               authors: {
                 elemMatch: {
-                  key: {
-                    in: [source.key],
+                  slug: {
+                    in: [source.slug],
                   },
                 },
               },
@@ -184,7 +184,7 @@ export const AuthorsJson = {
           query: {
             filter: {
               absolutePath: {
-                eq: path.resolve(`./content/assets/avatars/${source.key}.png`),
+                eq: path.resolve(`./content/assets/avatars/${source.slug}.png`),
               },
             },
           },

@@ -8,7 +8,7 @@ const unresponsiveAtomicProperties = defineProperties({
     borderRadius: { half: "50%", 4: "4px", 8: "8px", 24: "24px" },
     color: foregroundColors,
     flex: [1],
-    flexBasis: { 352: "352px" },
+    flexBasis: { 352: "352px", 360: "360px", 408: "408px" },
     flexGrow: [1],
     flexShrink: [0],
     fontSize: {
@@ -54,6 +54,7 @@ const unresponsiveAtomicProperties = defineProperties({
       1: 1,
       default: 1.5,
       16: "1rem",
+      20: "1.25rem",
       24: "1.5rem",
       32: "2rem",
       36: "2.25rem",
@@ -62,7 +63,6 @@ const unresponsiveAtomicProperties = defineProperties({
     },
     marginLeft: ["auto"],
     overflow: ["hidden"],
-    textAlign: ["left", "right", "center", "inherit"],
     textTransform: ["uppercase"],
     textUnderlinePosition: ["under"],
     transform: {
@@ -87,9 +87,10 @@ const responsiveAtomicProperties = defineProperties({
     },
   },
   properties: {
-    alignItems: ["center", "inherit", "flex-start", "baseline"],
+    alignItems: ["center", "inherit", "flex-start", "baseline", "stretch"],
     backgroundColor: {
       ...backgroundColors,
+      unset: "unset",
       zebra: {
         selectors: {
           "&:nth-child(even)": {
@@ -147,6 +148,7 @@ const responsiveAtomicProperties = defineProperties({
     paddingTop: height,
     position: ["relative", "sticky"],
     rowGap: height,
+    textAlign: ["left", "right", "center", "inherit"],
     top: size,
     width: width,
   },

@@ -41,7 +41,7 @@ export default function valueForGrade(grade: string | null) {
       return 2;
     }
     default: {
-      return 1;
+      return 0;
     }
   }
 }

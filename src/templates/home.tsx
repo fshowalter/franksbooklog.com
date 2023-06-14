@@ -1,10 +1,5 @@
 import { graphql } from "gatsby";
-import { useRef } from "react";
-import { Box } from "../components/Box";
-import { HeadBuilder } from "../components/HeadBuilder";
-import { HomePageItem } from "../components/HomePageItem";
-import { Layout } from "../components/Layout";
-import { Pagination } from "../components/Pagination";
+import { HeadBuilder, Home } from "../components";
 
 export function Head({
   pageContext,
@@ -32,45 +27,21 @@ interface PageContext {
   currentPage: number;
 }
 
-export default function HomePage({
+export default function HomeTemplate({
   pageContext,
   data,
 }: {
   pageContext: PageContext;
   data: Queries.HomeTemplateQuery;
 }): JSX.Element {
-  const listHeader = useRef<HTMLDivElement>(null);
-
   return (
-    <Layout>
-      <Box as="main" innerRef={listHeader}>
-        <Box as="ol" display="flex" flexDirection="column">
-          {data.readings.map((reading, index) => {
-            return (
-              <HomePageItem
-                eagerLoadCoverImage={index === 0}
-                key={reading.sequence}
-                counterValue={
-                  pageContext.numberOfItems - pageContext.skip - index
-                }
-                item={reading}
-              />
-            );
-          })}
-        </Box>
-        <Pagination
-          currentPage={pageContext.currentPage}
-          urlRoot="/"
-          perPage={pageContext.limit}
-          numberOfItems={pageContext.numberOfItems}
-          prevText="Newer"
-          nextText="Older"
-          paddingX="pageMargin"
-          paddingY={40}
-          justifyContent="center"
-        />
-      </Box>
-    </Layout>
+    <Home
+      items={data.readings}
+      numberOfItems={pageContext.numberOfItems}
+      skip={pageContext.skip}
+      limit={pageContext.limit}
+      currentPageNumber={pageContext.currentPage}
+    />
   );
 }
 
@@ -81,7 +52,7 @@ export const pageQuery = graphql`
       limit: $limit
       skip: $skip
     ) {
-      ...HomePageItem
+      ...HomeListItem
     }
   }
 `;

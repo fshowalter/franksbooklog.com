@@ -1,11 +1,11 @@
 import { act, render, screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import ReviewsIndexPage, { Head } from "./reviews";
+import ReviewsPage, { Head } from "./reviews";
 import { data } from "./reviews.fixtures";
 
 describe("/reviews", () => {
   it("renders", () => {
-    const { asFragment } = render(<ReviewsIndexPage data={data} />);
+    const { asFragment } = render(<ReviewsPage data={data} />);
 
     expect(asFragment()).toMatchSnapshot();
   });
@@ -18,7 +18,7 @@ describe("/reviews", () => {
 
   it("can filter by title", async () => {
     expect.hasAssertions();
-    render(<ReviewsIndexPage data={data} />);
+    render(<ReviewsPage data={data} />);
 
     await act(async () => {
       await userEvent.type(screen.getByLabelText("Title"), "Dracula");
@@ -30,7 +30,7 @@ describe("/reviews", () => {
 
   it("can filter by kind", async () => {
     expect.hasAssertions();
-    render(<ReviewsIndexPage data={data} />);
+    render(<ReviewsPage data={data} />);
 
     await userEvent.selectOptions(screen.getByLabelText("Kind"), "Novel");
 
@@ -40,7 +40,7 @@ describe("/reviews", () => {
   it("can filter by kind then show all", async () => {
     expect.hasAssertions();
 
-    render(<ReviewsIndexPage data={data} />);
+    render(<ReviewsPage data={data} />);
 
     await act(async () => {
       await userEvent.selectOptions(screen.getByLabelText("Kind"), "Novel");
@@ -50,63 +50,67 @@ describe("/reviews", () => {
     expect(screen.getByTestId("cover-list")).toMatchSnapshot();
   });
 
-  it("can filter by edition", async () => {
-    expect.hasAssertions();
-    render(<ReviewsIndexPage data={data} />);
-
-    await act(async () => {
-      await userEvent.selectOptions(
-        screen.getByLabelText("Edition"),
-        "Audible"
-      );
-    });
-
-    expect(screen.getByTestId("cover-list")).toMatchSnapshot();
-  });
-
-  it("can filter by edition then show all", async () => {
+  it("can sort by author z->a", async () => {
     expect.hasAssertions();
 
-    render(<ReviewsIndexPage data={data} />);
-
-    await userEvent.selectOptions(screen.getByLabelText("Edition"), "Audible");
-    await userEvent.selectOptions(screen.getByLabelText("Edition"), "All");
-
-    expect(screen.getByTestId("cover-list")).toMatchSnapshot();
-  });
-
-  it("can sort by date read with newest first", async () => {
-    expect.hasAssertions();
-
-    render(<ReviewsIndexPage data={data} />);
+    render(<ReviewsPage data={data} />);
 
     await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
-      "Date Read (Newest First)"
+      "Author (Z → A)"
     );
 
     expect(screen.getByTestId("cover-list")).toMatchSnapshot();
   });
 
-  it("can sort by date read with oldest first", async () => {
+  it("can sort by date reviewed with newest first", async () => {
     expect.hasAssertions();
 
-    render(<ReviewsIndexPage data={data} />);
+    render(<ReviewsPage data={data} />);
 
     await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
-      "Date Read (Oldest First)"
+      "Review Date (Newest First)"
     );
 
     expect(screen.getByTestId("cover-list")).toMatchSnapshot();
   });
 
-  it("can sort by title", async () => {
+  it("can sort by date reviewed with oldest first", async () => {
     expect.hasAssertions();
 
-    render(<ReviewsIndexPage data={data} />);
+    render(<ReviewsPage data={data} />);
 
-    await userEvent.selectOptions(screen.getByLabelText("Order By"), "Title");
+    await userEvent.selectOptions(
+      screen.getByLabelText("Order By"),
+      "Review Date (Oldest First)"
+    );
+
+    expect(screen.getByTestId("cover-list")).toMatchSnapshot();
+  });
+
+  it("can sort by title a->z", async () => {
+    expect.hasAssertions();
+
+    render(<ReviewsPage data={data} />);
+
+    await userEvent.selectOptions(
+      screen.getByLabelText("Order By"),
+      "Title (A → Z)"
+    );
+
+    expect(screen.getByTestId("cover-list")).toMatchSnapshot();
+  });
+
+  it("can sort by title z->a", async () => {
+    expect.hasAssertions();
+
+    render(<ReviewsPage data={data} />);
+
+    await userEvent.selectOptions(
+      screen.getByLabelText("Order By"),
+      "Title (Z → A)"
+    );
 
     expect(screen.getByTestId("cover-list")).toMatchSnapshot();
   });
@@ -114,11 +118,11 @@ describe("/reviews", () => {
   it("can sort by year published with oldest first", async () => {
     expect.hasAssertions();
 
-    render(<ReviewsIndexPage data={data} />);
+    render(<ReviewsPage data={data} />);
 
     await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
-      "Year Published (Oldest First)"
+      "Work Year (Oldest First)"
     );
 
     expect(screen.getByTestId("cover-list")).toMatchSnapshot();
@@ -127,11 +131,11 @@ describe("/reviews", () => {
   it("can sort by year published with newest first", async () => {
     expect.hasAssertions();
 
-    render(<ReviewsIndexPage data={data} />);
+    render(<ReviewsPage data={data} />);
 
     await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
-      "Year Published (Newest First)"
+      "Work Year (Newest First)"
     );
 
     expect(screen.getByTestId("cover-list")).toMatchSnapshot();
@@ -140,7 +144,7 @@ describe("/reviews", () => {
   it("can sort by grade with best first", async () => {
     expect.hasAssertions();
 
-    render(<ReviewsIndexPage data={data} />);
+    render(<ReviewsPage data={data} />);
 
     await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
@@ -153,7 +157,7 @@ describe("/reviews", () => {
   it("can sort by grade with worst first", async () => {
     expect.hasAssertions();
 
-    render(<ReviewsIndexPage data={data} />);
+    render(<ReviewsPage data={data} />);
 
     await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
@@ -163,10 +167,10 @@ describe("/reviews", () => {
     expect(screen.getByTestId("cover-list")).toMatchSnapshot();
   });
 
-  it("sorts unrated readings last", async () => {
+  it("sorts abandoned readings first", async () => {
     expect.hasAssertions();
 
-    render(<ReviewsIndexPage data={data} />);
+    render(<ReviewsPage data={data} />);
 
     await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
@@ -179,9 +183,11 @@ describe("/reviews", () => {
   it("can filter by year published", async () => {
     expect.hasAssertions();
 
-    render(<ReviewsIndexPage data={data} />);
+    render(<ReviewsPage data={data} />);
 
-    const fieldset = screen.getByRole("group", { name: "Year Published" });
+    const fieldset = screen.getByRole("group", {
+      name: "Work Year",
+    });
     const fromInput = within(fieldset).getByLabelText("From");
     const toInput = within(fieldset).getByLabelText("to");
 
@@ -194,9 +200,11 @@ describe("/reviews", () => {
   it("can filter by year published reversed", async () => {
     expect.hasAssertions();
 
-    render(<ReviewsIndexPage data={data} />);
+    render(<ReviewsPage data={data} />);
 
-    const fieldset = screen.getByRole("group", { name: "Year Published" });
+    const fieldset = screen.getByRole("group", {
+      name: "Work Year",
+    });
     const fromInput = within(fieldset).getByLabelText("From");
     const toInput = within(fieldset).getByLabelText("to");
 
@@ -208,12 +216,12 @@ describe("/reviews", () => {
     expect(screen.getByTestId("cover-list")).toMatchSnapshot();
   });
 
-  it("can filter by year read", async () => {
+  it("can filter by year reviewed", async () => {
     expect.hasAssertions();
 
-    render(<ReviewsIndexPage data={data} />);
+    render(<ReviewsPage data={data} />);
 
-    const fieldset = screen.getByRole("group", { name: "Year Read" });
+    const fieldset = screen.getByRole("group", { name: "Review Year" });
     const fromInput = within(fieldset).getByLabelText("From");
     const toInput = within(fieldset).getByLabelText("to");
 
@@ -223,12 +231,12 @@ describe("/reviews", () => {
     expect(screen.getByTestId("cover-list")).toMatchSnapshot();
   });
 
-  it("can filter by year read reversed", async () => {
+  it("can filter by year reviewed reversed", async () => {
     expect.hasAssertions();
 
-    render(<ReviewsIndexPage data={data} />);
+    render(<ReviewsPage data={data} />);
 
-    const fieldset = screen.getByRole("group", { name: "Year Read" });
+    const fieldset = screen.getByRole("group", { name: "Review Year" });
     const fromInput = within(fieldset).getByLabelText("From");
     const toInput = within(fieldset).getByLabelText("to");
 
@@ -236,63 +244,6 @@ describe("/reviews", () => {
     await userEvent.selectOptions(toInput, "2022");
     await userEvent.selectOptions(fromInput, "2022");
     await userEvent.selectOptions(toInput, "2022");
-
-    expect(screen.getByTestId("cover-list")).toMatchSnapshot();
-  });
-
-  it("can filter by grade", async () => {
-    expect.hasAssertions();
-
-    render(<ReviewsIndexPage data={data} />);
-
-    const fieldset = screen.getByRole("group", { name: "Grade" });
-    const fromInput = within(fieldset).getByLabelText("From");
-    const toInput = within(fieldset).getByLabelText("to");
-
-    await userEvent.selectOptions(fromInput, "B-");
-    await userEvent.selectOptions(toInput, "A+");
-
-    expect(screen.getByTestId("cover-list")).toMatchSnapshot();
-  });
-
-  it("can filter by grade reversed", async () => {
-    expect.hasAssertions();
-
-    render(<ReviewsIndexPage data={data} />);
-
-    const fieldset = screen.getByRole("group", { name: "Grade" });
-    const fromInput = within(fieldset).getByLabelText("From");
-    const toInput = within(fieldset).getByLabelText("to");
-
-    await userEvent.selectOptions(fromInput, "B");
-    await userEvent.selectOptions(toInput, "B+");
-    await userEvent.selectOptions(fromInput, "A-");
-    await userEvent.selectOptions(toInput, "B-");
-
-    expect(screen.getByTestId("cover-list")).toMatchSnapshot();
-  });
-
-  it("can exclude abandoned works", async () => {
-    expect.hasAssertions();
-
-    render(<ReviewsIndexPage data={data} />);
-
-    await userEvent.selectOptions(
-      screen.getByLabelText("Order By"),
-      "Date Read (Oldest First)"
-    );
-
-    await userEvent.click(screen.getByLabelText("Include abandoned works"));
-
-    expect(screen.getByTestId("cover-list")).toMatchSnapshot();
-  });
-
-  it("can show more titles", async () => {
-    expect.hasAssertions();
-
-    render(<ReviewsIndexPage data={data} />);
-
-    await userEvent.click(screen.getByText("Show More..."));
 
     expect(screen.getByTestId("cover-list")).toMatchSnapshot();
   });

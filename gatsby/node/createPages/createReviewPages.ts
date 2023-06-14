@@ -3,7 +3,7 @@ import path from "path";
 
 const query = `#graphql
 {
-  work: allWorksJson(filter: {review: { id: {ne: null}}}) {
+  work: allReviewedWorksJson {
     nodes {
       id
       slug

@@ -11,14 +11,11 @@ export async function findReviewedWorkNode(
   }
 
   const node = await nodeModel.findOne<WorkNode>({
-    type: SchemaNames.WorksJson,
+    type: SchemaNames.ReviewedWorksJson,
     query: {
       filter: {
-        slug: {
+        workSlug: {
           eq: slug,
-        },
-        review: {
-          id: { ne: null },
         },
       },
     },

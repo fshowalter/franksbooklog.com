@@ -1,21 +1,27 @@
 import React from "react";
-import { Box } from "../Box";
+import { Box, IBoxProps } from "../Box";
 import { gradientBackgroundStyle } from "./BarGradient.css";
+
+interface IBarGradientProps extends IBoxProps {
+  value: number;
+  maxValue: number;
+}
 
 export function BarGradient({
   value,
   maxValue,
-}: {
-  value: number;
-  maxValue: number;
-  hideOnSmallScreens?: boolean;
-}): JSX.Element {
+  ...rest
+}: IBarGradientProps): JSX.Element {
   const barPercentProperty = {
     "--bar-percent": `${(value / maxValue) * 100}%`,
   } as React.CSSProperties;
 
   return (
-    <Box className={gradientBackgroundStyle} style={barPercentProperty}>
+    <Box
+      {...rest}
+      className={gradientBackgroundStyle}
+      style={barPercentProperty}
+    >
       &nbsp;
     </Box>
   );

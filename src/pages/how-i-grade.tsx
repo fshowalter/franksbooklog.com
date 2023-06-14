@@ -1,6 +1,5 @@
 import { graphql } from "gatsby";
-import { ArticlePage } from "../components/ArticlePage";
-import { HeadBuilder } from "../components/HeadBuilder";
+import { Article, HeadBuilder } from "../components";
 
 export function Head(): JSX.Element {
   return (
@@ -19,7 +18,7 @@ export default function HowIGradePage({
   data: Queries.HowIGradePageQuery;
 }): JSX.Element {
   return (
-    <ArticlePage
+    <Article
       image={data.backdrop}
       alt="Empty cinema seats."
       article={data.page}
@@ -30,10 +29,10 @@ export default function HowIGradePage({
 export const pageQuery = graphql`
   query HowIGradePage {
     backdrop: file(absolutePath: { regex: "/backdrops/how-i-grade.png$/" }) {
-      ...ArticlePageBackdrop
+      ...ArticleBackdrop
     }
     page: markdownRemark(frontmatter: { slug: { eq: "how-i-grade" } }) {
-      ...ArticlePage
+      ...ArticleData
     }
   }
 `;

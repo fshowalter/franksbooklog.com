@@ -1,9 +1,6 @@
 export const data = {
-  reviews: {
-    totalCount: 51,
-  },
   books: {
-    totalCount: 41,
+    totalCount: 42,
   },
   shortStory: {
     totalCount: 10,
@@ -11,21 +8,67 @@ export const data = {
   abandoned: {
     totalCount: 1,
   },
-  reading: {
-    totalCount: 51,
+  reviewedWork: {
     nodes: [
       {
-        id: "74effccd-2691-5919-8220-2ec851fd6c99",
-        sequence: 51,
-        grade: "C-",
-        slug: "roadside-pickup-by-richard-laymon",
-        edition: "Kindle",
-        date: "Jan 21, 2023",
-        gradeValue: 5,
-        title: "Roadside Pickup",
-        yearPublished: 1974,
-        sortTitle: "Roadside Pickup",
-        kind: "Short Story",
+        id: "e31f5fb5-e826-5592-9e89-cd4c1e0c1013",
+        grade: "C",
+        slug: "brother-iron-sister-steel-by-dave-draper",
+        reviewDate: "Mar 6, 2022",
+        gradeValue: 6,
+        sortDate: "2022-03-06",
+        title: "Brother Iron, Sister Steel",
+        yearPublished: 2001,
+        reviewMonth: "March",
+        reviewYear: 2022,
+        sortTitle: "Brother Iron, Sister Steel",
+        kind: "Nonfiction",
+        authors: [
+          {
+            name: "Dave Draper",
+            notes: null,
+            sortName: "Draper, Dave",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/86ea3ef1926daaaa8a162b30e9e71d5a/8bcae/brother-iron-sister-steel-by-dave-draper.jpg",
+                  srcSet:
+                    "/static/86ea3ef1926daaaa8a162b30e9e71d5a/8bcae/brother-iron-sister-steel-by-dave-draper.jpg 72w,\n/static/86ea3ef1926daaaa8a162b30e9e71d5a/7306c/brother-iron-sister-steel-by-dave-draper.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/86ea3ef1926daaaa8a162b30e9e71d5a/6903a/brother-iron-sister-steel-by-dave-draper.avif 72w,\n/static/86ea3ef1926daaaa8a162b30e9e71d5a/65187/brother-iron-sister-steel-by-dave-draper.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        id: "a3481935-cc8e-59bb-a10d-ab102c928e60",
+        grade: "C+",
+        slug: "the-cellar-by-richard-laymon",
+        reviewDate: "Mar 16, 2022",
+        gradeValue: 7,
+        sortDate: "2022-03-16",
+        title: "The Cellar",
+        yearPublished: 1980,
+        reviewMonth: "March",
+        reviewYear: 2022,
+        sortTitle: "Cellar, The",
+        kind: "Novel",
         authors: [
           {
             name: "Richard Laymon",
@@ -36,1044 +79,133 @@ export const data = {
         cover: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/8acae41db8fa464249340b17cc680c45/31a1c/short-stories-volume-one-by-richard-laymon.jpg",
+                  src: "/static/3a1c04481237534c4c7e33763ad904fc/8bcae/the-cellar-by-richard-laymon.jpg",
                   srcSet:
-                    "/static/8acae41db8fa464249340b17cc680c45/5bc78/short-stories-volume-one-by-richard-laymon.jpg 62w,\n/static/8acae41db8fa464249340b17cc680c45/59d5c/short-stories-volume-one-by-richard-laymon.jpg 124w,\n/static/8acae41db8fa464249340b17cc680c45/31a1c/short-stories-volume-one-by-richard-laymon.jpg 248w,\n/static/8acae41db8fa464249340b17cc680c45/a5166/short-stories-volume-one-by-richard-laymon.jpg 496w",
-                  sizes: "(min-width: 248px) 248px, 100vw",
+                    "/static/3a1c04481237534c4c7e33763ad904fc/8bcae/the-cellar-by-richard-laymon.jpg 72w,\n/static/3a1c04481237534c4c7e33763ad904fc/7306c/the-cellar-by-richard-laymon.jpg 144w",
+                  sizes: "72px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/8acae41db8fa464249340b17cc680c45/6b3a6/short-stories-volume-one-by-richard-laymon.avif 62w,\n/static/8acae41db8fa464249340b17cc680c45/3c542/short-stories-volume-one-by-richard-laymon.avif 124w,\n/static/8acae41db8fa464249340b17cc680c45/c155b/short-stories-volume-one-by-richard-laymon.avif 248w,\n/static/8acae41db8fa464249340b17cc680c45/1ad14/short-stories-volume-one-by-richard-laymon.avif 496w",
+                      "/static/3a1c04481237534c4c7e33763ad904fc/6903a/the-cellar-by-richard-laymon.avif 72w,\n/static/3a1c04481237534c4c7e33763ad904fc/65187/the-cellar-by-richard-laymon.avif 144w",
                     type: "image/avif",
-                    sizes: "(min-width: 248px) 248px, 100vw",
+                    sizes: "72px",
                   },
                 ],
               },
-              width: 248,
-              height: 372,
+              width: 72,
+              height: 108,
             },
           },
         },
       },
       {
-        id: "1c6c2746-3377-5524-b3d4-1d2f1a648261",
-        sequence: 50,
-        grade: "F",
-        slug: "fright-night-by-john-skipp-craig-spector",
-        edition: "Kindle",
-        date: "Jan 21, 2023",
-        gradeValue: 1,
-        title: "Fright Night",
+        id: "3a4bb912-f4f6-5c60-b2b7-f922de8a9852",
+        grade: "C-",
+        slug: "the-max-muscle-plan-by-brad-schoenfeld",
+        reviewDate: "Mar 18, 2022",
+        gradeValue: 5,
+        sortDate: "2022-03-18",
+        title: "The M.A.X. Muscle Plan",
+        yearPublished: 2012,
+        reviewMonth: "March",
+        reviewYear: 2022,
+        sortTitle: "The M.A.X. Muscle Plan",
+        kind: "Nonfiction",
+        authors: [
+          {
+            name: "Brad Schoenfeld",
+            notes: null,
+            sortName: "Schoenfeld, Brad",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/346d62deb88349a387bf2183d77e2e64/8bcae/the-max-muscle-plan-by-brad-schoenfeld.jpg",
+                  srcSet:
+                    "/static/346d62deb88349a387bf2183d77e2e64/8bcae/the-max-muscle-plan-by-brad-schoenfeld.jpg 72w,\n/static/346d62deb88349a387bf2183d77e2e64/7306c/the-max-muscle-plan-by-brad-schoenfeld.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/346d62deb88349a387bf2183d77e2e64/6903a/the-max-muscle-plan-by-brad-schoenfeld.avif 72w,\n/static/346d62deb88349a387bf2183d77e2e64/65187/the-max-muscle-plan-by-brad-schoenfeld.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        id: "4476096e-8591-5af7-b83d-f4c9dd4230df",
+        grade: "A-",
+        slug: "on-writing-by-stephen-king",
+        reviewDate: "Mar 21, 2022",
+        gradeValue: 11,
+        sortDate: "2022-03-21",
+        title: "On Writing",
+        yearPublished: 2000,
+        reviewMonth: "March",
+        reviewYear: 2022,
+        sortTitle: "On Writing",
+        kind: "Nonfiction",
+        authors: [
+          {
+            name: "Stephen King",
+            notes: null,
+            sortName: "King, Stephen",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/2698ed79aea5b0f77baa4772154f1baf/8bcae/on-writing-by-stephen-king.jpg",
+                  srcSet:
+                    "/static/2698ed79aea5b0f77baa4772154f1baf/8bcae/on-writing-by-stephen-king.jpg 72w,\n/static/2698ed79aea5b0f77baa4772154f1baf/7306c/on-writing-by-stephen-king.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/2698ed79aea5b0f77baa4772154f1baf/6903a/on-writing-by-stephen-king.avif 72w,\n/static/2698ed79aea5b0f77baa4772154f1baf/65187/on-writing-by-stephen-king.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        id: "e12e7349-9550-5517-b060-c5f2080070da",
+        grade: "B+",
+        slug: "less-than-zero-by-bret-easton-ellis",
+        reviewDate: "Apr 2, 2022",
+        gradeValue: 10,
+        sortDate: "2022-04-02",
+        title: "Less Than Zero",
         yearPublished: 1985,
-        sortTitle: "Fright Night",
-        kind: "Novel",
-        authors: [
-          {
-            name: "John Skipp",
-            notes: null,
-            sortName: "Skipp, John",
-          },
-          {
-            name: "Craig Spector",
-            notes: null,
-            sortName: "Spector, Craig",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "constrained" as const,
-              images: {
-                fallback: {
-                  src: "/static/ed5b9db089419d3103835aec289aa0b7/31a1c/fright-night-by-john-skipp-craig-spector.jpg",
-                  srcSet:
-                    "/static/ed5b9db089419d3103835aec289aa0b7/5bc78/fright-night-by-john-skipp-craig-spector.jpg 62w,\n/static/ed5b9db089419d3103835aec289aa0b7/59d5c/fright-night-by-john-skipp-craig-spector.jpg 124w,\n/static/ed5b9db089419d3103835aec289aa0b7/31a1c/fright-night-by-john-skipp-craig-spector.jpg 248w,\n/static/ed5b9db089419d3103835aec289aa0b7/a5166/fright-night-by-john-skipp-craig-spector.jpg 496w",
-                  sizes: "(min-width: 248px) 248px, 100vw",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/ed5b9db089419d3103835aec289aa0b7/6b3a6/fright-night-by-john-skipp-craig-spector.avif 62w,\n/static/ed5b9db089419d3103835aec289aa0b7/3c542/fright-night-by-john-skipp-craig-spector.avif 124w,\n/static/ed5b9db089419d3103835aec289aa0b7/c155b/fright-night-by-john-skipp-craig-spector.avif 248w,\n/static/ed5b9db089419d3103835aec289aa0b7/1ad14/fright-night-by-john-skipp-craig-spector.avif 496w",
-                    type: "image/avif",
-                    sizes: "(min-width: 248px) 248px, 100vw",
-                  },
-                ],
-              },
-              width: 248,
-              height: 372,
-            },
-          },
-        },
-      },
-      {
-        id: "119153d2-1ed9-5abb-8e11-4e7609ab4779",
-        sequence: 49,
-        grade: "C+",
-        slug: "doctor-sleep-by-stephen-king",
-        edition: "Kindle",
-        date: "Jan 14, 2023",
-        gradeValue: 7,
-        title: "Doctor Sleep",
-        yearPublished: 2013,
-        sortTitle: "Doctor Sleep",
-        kind: "Novel",
-        authors: [
-          {
-            name: "Stephen King",
-            notes: null,
-            sortName: "King, Stephen",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "constrained" as const,
-              images: {
-                fallback: {
-                  src: "/static/2ade3db6dd7bc3e5e33473384ec0baf0/31a1c/doctor-sleep-by-stephen-king.jpg",
-                  srcSet:
-                    "/static/2ade3db6dd7bc3e5e33473384ec0baf0/5bc78/doctor-sleep-by-stephen-king.jpg 62w,\n/static/2ade3db6dd7bc3e5e33473384ec0baf0/59d5c/doctor-sleep-by-stephen-king.jpg 124w,\n/static/2ade3db6dd7bc3e5e33473384ec0baf0/31a1c/doctor-sleep-by-stephen-king.jpg 248w,\n/static/2ade3db6dd7bc3e5e33473384ec0baf0/a5166/doctor-sleep-by-stephen-king.jpg 496w",
-                  sizes: "(min-width: 248px) 248px, 100vw",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/2ade3db6dd7bc3e5e33473384ec0baf0/6b3a6/doctor-sleep-by-stephen-king.avif 62w,\n/static/2ade3db6dd7bc3e5e33473384ec0baf0/3c542/doctor-sleep-by-stephen-king.avif 124w,\n/static/2ade3db6dd7bc3e5e33473384ec0baf0/c155b/doctor-sleep-by-stephen-king.avif 248w,\n/static/2ade3db6dd7bc3e5e33473384ec0baf0/1ad14/doctor-sleep-by-stephen-king.avif 496w",
-                    type: "image/avif",
-                    sizes: "(min-width: 248px) 248px, 100vw",
-                  },
-                ],
-              },
-              width: 248,
-              height: 372,
-            },
-          },
-        },
-      },
-      {
-        id: "169d9fcb-157f-5fad-beaa-f1080fa1feb0",
-        sequence: 48,
-        grade: "B+",
-        slug: "the-skeptics-guide-to-the-universe-by-steven-novella",
-        edition: "Audible",
-        date: "Oct 29, 2022",
-        gradeValue: 10,
-        title: "The Skeptics' Guide to the Universe",
-        yearPublished: 2018,
-        sortTitle:
-          "Skeptics' Guide to the Universe: How to Know What's Really Real in a World Increasingly Full of Fake",
-        kind: "Nonfiction",
-        authors: [
-          {
-            name: "Steven Novella",
-            notes: null,
-            sortName: "Novella, Steven",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "constrained" as const,
-              images: {
-                fallback: {
-                  src: "/static/d1c88412dd7d2f24f26ab4ce5f5360a4/31a1c/the-skeptics-guide-to-the-universe-by-steven-novella.jpg",
-                  srcSet:
-                    "/static/d1c88412dd7d2f24f26ab4ce5f5360a4/5bc78/the-skeptics-guide-to-the-universe-by-steven-novella.jpg 62w,\n/static/d1c88412dd7d2f24f26ab4ce5f5360a4/59d5c/the-skeptics-guide-to-the-universe-by-steven-novella.jpg 124w,\n/static/d1c88412dd7d2f24f26ab4ce5f5360a4/31a1c/the-skeptics-guide-to-the-universe-by-steven-novella.jpg 248w,\n/static/d1c88412dd7d2f24f26ab4ce5f5360a4/a5166/the-skeptics-guide-to-the-universe-by-steven-novella.jpg 496w",
-                  sizes: "(min-width: 248px) 248px, 100vw",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/d1c88412dd7d2f24f26ab4ce5f5360a4/6b3a6/the-skeptics-guide-to-the-universe-by-steven-novella.avif 62w,\n/static/d1c88412dd7d2f24f26ab4ce5f5360a4/3c542/the-skeptics-guide-to-the-universe-by-steven-novella.avif 124w,\n/static/d1c88412dd7d2f24f26ab4ce5f5360a4/c155b/the-skeptics-guide-to-the-universe-by-steven-novella.avif 248w,\n/static/d1c88412dd7d2f24f26ab4ce5f5360a4/1ad14/the-skeptics-guide-to-the-universe-by-steven-novella.avif 496w",
-                    type: "image/avif",
-                    sizes: "(min-width: 248px) 248px, 100vw",
-                  },
-                ],
-              },
-              width: 248,
-              height: 372,
-            },
-          },
-        },
-      },
-      {
-        id: "1064e4e1-c375-5c39-8096-d01714cd461b",
-        sequence: 47,
-        grade: "B",
-        slug: "the-shining-by-stephen-king",
-        edition: "Audible",
-        date: "Oct 29, 2022",
-        gradeValue: 9,
-        title: "The Shining",
-        yearPublished: 1977,
-        sortTitle: "Shining",
-        kind: "Novel",
-        authors: [
-          {
-            name: "Stephen King",
-            notes: null,
-            sortName: "King, Stephen",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "constrained" as const,
-              images: {
-                fallback: {
-                  src: "/static/794d3075a7009bf20aafaa07c5679d56/31a1c/the-shining-by-stephen-king.jpg",
-                  srcSet:
-                    "/static/794d3075a7009bf20aafaa07c5679d56/5bc78/the-shining-by-stephen-king.jpg 62w,\n/static/794d3075a7009bf20aafaa07c5679d56/59d5c/the-shining-by-stephen-king.jpg 124w,\n/static/794d3075a7009bf20aafaa07c5679d56/31a1c/the-shining-by-stephen-king.jpg 248w,\n/static/794d3075a7009bf20aafaa07c5679d56/a5166/the-shining-by-stephen-king.jpg 496w",
-                  sizes: "(min-width: 248px) 248px, 100vw",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/794d3075a7009bf20aafaa07c5679d56/6b3a6/the-shining-by-stephen-king.avif 62w,\n/static/794d3075a7009bf20aafaa07c5679d56/3c542/the-shining-by-stephen-king.avif 124w,\n/static/794d3075a7009bf20aafaa07c5679d56/c155b/the-shining-by-stephen-king.avif 248w,\n/static/794d3075a7009bf20aafaa07c5679d56/1ad14/the-shining-by-stephen-king.avif 496w",
-                    type: "image/avif",
-                    sizes: "(min-width: 248px) 248px, 100vw",
-                  },
-                ],
-              },
-              width: 248,
-              height: 372,
-            },
-          },
-        },
-      },
-      {
-        id: "25264e4e-adcd-5de4-8960-58da19f62280",
-        sequence: 46,
-        grade: "B",
-        slug: "moonraker-by-ian-fleming",
-        edition: "Audible",
-        date: "Oct 16, 2022",
-        gradeValue: 9,
-        title: "Moonraker",
-        yearPublished: 1955,
-        sortTitle: "Moonraker",
-        kind: "Novel",
-        authors: [
-          {
-            name: "Ian Fleming",
-            notes: null,
-            sortName: "Fleming, Ian",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "constrained" as const,
-              images: {
-                fallback: {
-                  src: "/static/3b66fbd34eb88e5ee1a60723d581a5db/31a1c/moonraker-by-ian-fleming.jpg",
-                  srcSet:
-                    "/static/3b66fbd34eb88e5ee1a60723d581a5db/5bc78/moonraker-by-ian-fleming.jpg 62w,\n/static/3b66fbd34eb88e5ee1a60723d581a5db/59d5c/moonraker-by-ian-fleming.jpg 124w,\n/static/3b66fbd34eb88e5ee1a60723d581a5db/31a1c/moonraker-by-ian-fleming.jpg 248w,\n/static/3b66fbd34eb88e5ee1a60723d581a5db/a5166/moonraker-by-ian-fleming.jpg 496w",
-                  sizes: "(min-width: 248px) 248px, 100vw",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/3b66fbd34eb88e5ee1a60723d581a5db/6b3a6/moonraker-by-ian-fleming.avif 62w,\n/static/3b66fbd34eb88e5ee1a60723d581a5db/3c542/moonraker-by-ian-fleming.avif 124w,\n/static/3b66fbd34eb88e5ee1a60723d581a5db/c155b/moonraker-by-ian-fleming.avif 248w,\n/static/3b66fbd34eb88e5ee1a60723d581a5db/1ad14/moonraker-by-ian-fleming.avif 496w",
-                    type: "image/avif",
-                    sizes: "(min-width: 248px) 248px, 100vw",
-                  },
-                ],
-              },
-              width: 248,
-              height: 372,
-            },
-          },
-        },
-      },
-      {
-        id: "cefa9425-358b-5bfb-b56c-b33cfa32538d",
-        sequence: 45,
-        grade: "B",
-        slug: "salems-lot-by-stephen-king",
-        edition: "Audible",
-        date: "Oct 14, 2022",
-        gradeValue: 9,
-        title: "'Salem's Lot",
-        yearPublished: 1975,
-        sortTitle: "'Salem's Lot",
-        kind: "Novel",
-        authors: [
-          {
-            name: "Stephen King",
-            notes: null,
-            sortName: "King, Stephen",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "constrained" as const,
-              images: {
-                fallback: {
-                  src: "/static/069c1d318c1a90f3aa0ae55b5eab6d8d/31a1c/salems-lot-by-stephen-king.jpg",
-                  srcSet:
-                    "/static/069c1d318c1a90f3aa0ae55b5eab6d8d/5bc78/salems-lot-by-stephen-king.jpg 62w,\n/static/069c1d318c1a90f3aa0ae55b5eab6d8d/59d5c/salems-lot-by-stephen-king.jpg 124w,\n/static/069c1d318c1a90f3aa0ae55b5eab6d8d/31a1c/salems-lot-by-stephen-king.jpg 248w,\n/static/069c1d318c1a90f3aa0ae55b5eab6d8d/a5166/salems-lot-by-stephen-king.jpg 496w",
-                  sizes: "(min-width: 248px) 248px, 100vw",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/069c1d318c1a90f3aa0ae55b5eab6d8d/6b3a6/salems-lot-by-stephen-king.avif 62w,\n/static/069c1d318c1a90f3aa0ae55b5eab6d8d/3c542/salems-lot-by-stephen-king.avif 124w,\n/static/069c1d318c1a90f3aa0ae55b5eab6d8d/c155b/salems-lot-by-stephen-king.avif 248w,\n/static/069c1d318c1a90f3aa0ae55b5eab6d8d/1ad14/salems-lot-by-stephen-king.avif 496w",
-                    type: "image/avif",
-                    sizes: "(min-width: 248px) 248px, 100vw",
-                  },
-                ],
-              },
-              width: 248,
-              height: 372,
-            },
-          },
-        },
-      },
-      {
-        id: "36a46741-d5fb-5471-841a-967a9ae49c52",
-        sequence: 44,
-        grade: "B",
-        slug: "cant-hurt-me-by-david-goggins",
-        edition: "Audible",
-        date: "Oct 13, 2022",
-        gradeValue: 9,
-        title: "Can't Hurt Me",
-        yearPublished: 2018,
-        sortTitle: "Can't Hurt Me: Master Your Mind and Defy the Odds",
-        kind: "Nonfiction",
-        authors: [
-          {
-            name: "David Goggins",
-            notes: null,
-            sortName: "Goggins, David",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "constrained" as const,
-              images: {
-                fallback: {
-                  src: "/static/0d12ac8e4b095846adb8129e5f5c95e4/31a1c/cant-hurt-me-by-david-goggins.jpg",
-                  srcSet:
-                    "/static/0d12ac8e4b095846adb8129e5f5c95e4/5bc78/cant-hurt-me-by-david-goggins.jpg 62w,\n/static/0d12ac8e4b095846adb8129e5f5c95e4/59d5c/cant-hurt-me-by-david-goggins.jpg 124w,\n/static/0d12ac8e4b095846adb8129e5f5c95e4/31a1c/cant-hurt-me-by-david-goggins.jpg 248w,\n/static/0d12ac8e4b095846adb8129e5f5c95e4/a5166/cant-hurt-me-by-david-goggins.jpg 496w",
-                  sizes: "(min-width: 248px) 248px, 100vw",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/0d12ac8e4b095846adb8129e5f5c95e4/6b3a6/cant-hurt-me-by-david-goggins.avif 62w,\n/static/0d12ac8e4b095846adb8129e5f5c95e4/3c542/cant-hurt-me-by-david-goggins.avif 124w,\n/static/0d12ac8e4b095846adb8129e5f5c95e4/c155b/cant-hurt-me-by-david-goggins.avif 248w,\n/static/0d12ac8e4b095846adb8129e5f5c95e4/1ad14/cant-hurt-me-by-david-goggins.avif 496w",
-                    type: "image/avif",
-                    sizes: "(min-width: 248px) 248px, 100vw",
-                  },
-                ],
-              },
-              width: 248,
-              height: 372,
-            },
-          },
-        },
-      },
-      {
-        id: "0bf3743b-b5e2-57c8-86e6-bf7f0040fde5",
-        sequence: 43,
-        grade: "C-",
-        slug: "out-are-the-lights-by-richard-laymon",
-        edition: "Kindle",
-        date: "Oct 11, 2022",
-        gradeValue: 5,
-        title: "Out Are the Lights",
-        yearPublished: 1982,
-        sortTitle: "Out Are the Lights",
-        kind: "Novel",
-        authors: [
-          {
-            name: "Richard Laymon",
-            notes: null,
-            sortName: "Laymon, Richard",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "constrained" as const,
-              images: {
-                fallback: {
-                  src: "/static/d12a903f0f3b171be2be1904af2dec4c/31a1c/out-are-the-lights-and-other-tales-by-richard-laymon.jpg",
-                  srcSet:
-                    "/static/d12a903f0f3b171be2be1904af2dec4c/5bc78/out-are-the-lights-and-other-tales-by-richard-laymon.jpg 62w,\n/static/d12a903f0f3b171be2be1904af2dec4c/59d5c/out-are-the-lights-and-other-tales-by-richard-laymon.jpg 124w,\n/static/d12a903f0f3b171be2be1904af2dec4c/31a1c/out-are-the-lights-and-other-tales-by-richard-laymon.jpg 248w,\n/static/d12a903f0f3b171be2be1904af2dec4c/a5166/out-are-the-lights-and-other-tales-by-richard-laymon.jpg 496w",
-                  sizes: "(min-width: 248px) 248px, 100vw",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/d12a903f0f3b171be2be1904af2dec4c/6b3a6/out-are-the-lights-and-other-tales-by-richard-laymon.avif 62w,\n/static/d12a903f0f3b171be2be1904af2dec4c/3c542/out-are-the-lights-and-other-tales-by-richard-laymon.avif 124w,\n/static/d12a903f0f3b171be2be1904af2dec4c/c155b/out-are-the-lights-and-other-tales-by-richard-laymon.avif 248w,\n/static/d12a903f0f3b171be2be1904af2dec4c/1ad14/out-are-the-lights-and-other-tales-by-richard-laymon.avif 496w",
-                    type: "image/avif",
-                    sizes: "(min-width: 248px) 248px, 100vw",
-                  },
-                ],
-              },
-              width: 248,
-              height: 372,
-            },
-          },
-        },
-      },
-      {
-        id: "28de44da-1946-5ac1-ab69-b65b61822ef0",
-        sequence: 42,
-        grade: "C+",
-        slug: "what-doesnt-kill-us-by-scott-carney",
-        edition: "Audible",
-        date: "Oct 4, 2022",
-        gradeValue: 7,
-        title: "What Doesn't Kill Us",
-        yearPublished: 2017,
-        sortTitle:
-          "What Doesn't Kill Us: How Freezing Water, Extreme Altitude, and Environmental Conditioning Will Renew Our Lost Evolutionary Strength",
-        kind: "Nonfiction",
-        authors: [
-          {
-            name: "Scott Carney",
-            notes: null,
-            sortName: "Carney, Scott",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "constrained" as const,
-              images: {
-                fallback: {
-                  src: "/static/3476cf961fd1f42f67b03a31ad595999/31a1c/what-doesnt-kill-us-by-scott-carney.jpg",
-                  srcSet:
-                    "/static/3476cf961fd1f42f67b03a31ad595999/5bc78/what-doesnt-kill-us-by-scott-carney.jpg 62w,\n/static/3476cf961fd1f42f67b03a31ad595999/59d5c/what-doesnt-kill-us-by-scott-carney.jpg 124w,\n/static/3476cf961fd1f42f67b03a31ad595999/31a1c/what-doesnt-kill-us-by-scott-carney.jpg 248w,\n/static/3476cf961fd1f42f67b03a31ad595999/a5166/what-doesnt-kill-us-by-scott-carney.jpg 496w",
-                  sizes: "(min-width: 248px) 248px, 100vw",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/3476cf961fd1f42f67b03a31ad595999/6b3a6/what-doesnt-kill-us-by-scott-carney.avif 62w,\n/static/3476cf961fd1f42f67b03a31ad595999/3c542/what-doesnt-kill-us-by-scott-carney.avif 124w,\n/static/3476cf961fd1f42f67b03a31ad595999/c155b/what-doesnt-kill-us-by-scott-carney.avif 248w,\n/static/3476cf961fd1f42f67b03a31ad595999/1ad14/what-doesnt-kill-us-by-scott-carney.avif 496w",
-                    type: "image/avif",
-                    sizes: "(min-width: 248px) 248px, 100vw",
-                  },
-                ],
-              },
-              width: 248,
-              height: 372,
-            },
-          },
-        },
-      },
-      {
-        id: "3839459d-c674-5bd5-b4ae-30301595bb85",
-        sequence: 41,
-        grade: "C+",
-        slug: "the-big-sleep-by-raymond-chandler",
-        edition: "Audible",
-        date: "Sep 24, 2022",
-        gradeValue: 7,
-        title: "The Big Sleep",
-        yearPublished: 1939,
-        sortTitle: "Big Sleep",
-        kind: "Novel",
-        authors: [
-          {
-            name: "Raymond Chandler",
-            notes: null,
-            sortName: "Chandler, Raymond",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "constrained" as const,
-              images: {
-                fallback: {
-                  src: "/static/278bd19713d519a6e1a0dff393cf28d8/31a1c/the-big-sleep-by-raymond-chandler.jpg",
-                  srcSet:
-                    "/static/278bd19713d519a6e1a0dff393cf28d8/5bc78/the-big-sleep-by-raymond-chandler.jpg 62w,\n/static/278bd19713d519a6e1a0dff393cf28d8/59d5c/the-big-sleep-by-raymond-chandler.jpg 124w,\n/static/278bd19713d519a6e1a0dff393cf28d8/31a1c/the-big-sleep-by-raymond-chandler.jpg 248w,\n/static/278bd19713d519a6e1a0dff393cf28d8/a5166/the-big-sleep-by-raymond-chandler.jpg 496w",
-                  sizes: "(min-width: 248px) 248px, 100vw",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/278bd19713d519a6e1a0dff393cf28d8/6b3a6/the-big-sleep-by-raymond-chandler.avif 62w,\n/static/278bd19713d519a6e1a0dff393cf28d8/3c542/the-big-sleep-by-raymond-chandler.avif 124w,\n/static/278bd19713d519a6e1a0dff393cf28d8/c155b/the-big-sleep-by-raymond-chandler.avif 248w,\n/static/278bd19713d519a6e1a0dff393cf28d8/1ad14/the-big-sleep-by-raymond-chandler.avif 496w",
-                    type: "image/avif",
-                    sizes: "(min-width: 248px) 248px, 100vw",
-                  },
-                ],
-              },
-              width: 248,
-              height: 372,
-            },
-          },
-        },
-      },
-      {
-        id: "019c8b4d-d4a9-5613-b664-438d457e5cd9",
-        sequence: 40,
-        grade: "B",
-        slug: "consider-this-by-chuck-palahniuk",
-        edition: "Audible",
-        date: "Sep 22, 2022",
-        gradeValue: 9,
-        title: "Consider This",
-        yearPublished: 2020,
-        sortTitle:
-          "Consider This: Moments in My Writing Life After Which Everything Was Different",
-        kind: "Nonfiction",
-        authors: [
-          {
-            name: "Chuck Palahniuk",
-            notes: null,
-            sortName: "Palahniuk, Chuck",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "constrained" as const,
-              images: {
-                fallback: {
-                  src: "/static/3ba537a950bb251cc5ba3c0b019b39f9/31a1c/consider-this-by-chuck-palahniuk.jpg",
-                  srcSet:
-                    "/static/3ba537a950bb251cc5ba3c0b019b39f9/5bc78/consider-this-by-chuck-palahniuk.jpg 62w,\n/static/3ba537a950bb251cc5ba3c0b019b39f9/59d5c/consider-this-by-chuck-palahniuk.jpg 124w,\n/static/3ba537a950bb251cc5ba3c0b019b39f9/31a1c/consider-this-by-chuck-palahniuk.jpg 248w,\n/static/3ba537a950bb251cc5ba3c0b019b39f9/a5166/consider-this-by-chuck-palahniuk.jpg 496w",
-                  sizes: "(min-width: 248px) 248px, 100vw",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/3ba537a950bb251cc5ba3c0b019b39f9/6b3a6/consider-this-by-chuck-palahniuk.avif 62w,\n/static/3ba537a950bb251cc5ba3c0b019b39f9/3c542/consider-this-by-chuck-palahniuk.avif 124w,\n/static/3ba537a950bb251cc5ba3c0b019b39f9/c155b/consider-this-by-chuck-palahniuk.avif 248w,\n/static/3ba537a950bb251cc5ba3c0b019b39f9/1ad14/consider-this-by-chuck-palahniuk.avif 496w",
-                    type: "image/avif",
-                    sizes: "(min-width: 248px) 248px, 100vw",
-                  },
-                ],
-              },
-              width: 248,
-              height: 372,
-            },
-          },
-        },
-      },
-      {
-        id: "b22eff62-8d92-5055-aabd-496b90ba3b70",
-        sequence: 39,
-        grade: "B-",
-        slug: "carrie-by-stephen-king",
-        edition: "Kindle",
-        date: "Sep 19, 2022",
-        gradeValue: 8,
-        title: "Carrie",
-        yearPublished: 1974,
-        sortTitle: "Carrie",
-        kind: "Novel",
-        authors: [
-          {
-            name: "Stephen King",
-            notes: null,
-            sortName: "King, Stephen",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "constrained" as const,
-              images: {
-                fallback: {
-                  src: "/static/c233e3725052a48095176fdc450166d6/31a1c/carrie-by-stephen-king.jpg",
-                  srcSet:
-                    "/static/c233e3725052a48095176fdc450166d6/5bc78/carrie-by-stephen-king.jpg 62w,\n/static/c233e3725052a48095176fdc450166d6/59d5c/carrie-by-stephen-king.jpg 124w,\n/static/c233e3725052a48095176fdc450166d6/31a1c/carrie-by-stephen-king.jpg 248w,\n/static/c233e3725052a48095176fdc450166d6/a5166/carrie-by-stephen-king.jpg 496w",
-                  sizes: "(min-width: 248px) 248px, 100vw",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/c233e3725052a48095176fdc450166d6/6b3a6/carrie-by-stephen-king.avif 62w,\n/static/c233e3725052a48095176fdc450166d6/3c542/carrie-by-stephen-king.avif 124w,\n/static/c233e3725052a48095176fdc450166d6/c155b/carrie-by-stephen-king.avif 248w,\n/static/c233e3725052a48095176fdc450166d6/1ad14/carrie-by-stephen-king.avif 496w",
-                    type: "image/avif",
-                    sizes: "(min-width: 248px) 248px, 100vw",
-                  },
-                ],
-              },
-              width: 248,
-              height: 372,
-            },
-          },
-        },
-      },
-      {
-        id: "502b2a58-44cd-5ffe-a77b-02fc01ba80d2",
-        sequence: 38,
-        grade: "B",
-        slug: "i-will-find-you-by-joe-kenda",
-        edition: "Audible",
-        date: "Sep 17, 2022",
-        gradeValue: 9,
-        title: "I Will Find You",
-        yearPublished: 2017,
-        sortTitle:
-          "I Will Find You: Solving Killer Cases from My Life Fighting Crime",
-        kind: "Nonfiction",
-        authors: [
-          {
-            name: "Joe Kenda",
-            notes: null,
-            sortName: "Kenda, Joe",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "constrained" as const,
-              images: {
-                fallback: {
-                  src: "/static/bc7ede6c999de0a0ca2b327dfb1355b2/31a1c/i-will-find-you-by-joe-kenda.jpg",
-                  srcSet:
-                    "/static/bc7ede6c999de0a0ca2b327dfb1355b2/5bc78/i-will-find-you-by-joe-kenda.jpg 62w,\n/static/bc7ede6c999de0a0ca2b327dfb1355b2/59d5c/i-will-find-you-by-joe-kenda.jpg 124w,\n/static/bc7ede6c999de0a0ca2b327dfb1355b2/31a1c/i-will-find-you-by-joe-kenda.jpg 248w,\n/static/bc7ede6c999de0a0ca2b327dfb1355b2/a5166/i-will-find-you-by-joe-kenda.jpg 496w",
-                  sizes: "(min-width: 248px) 248px, 100vw",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/bc7ede6c999de0a0ca2b327dfb1355b2/6b3a6/i-will-find-you-by-joe-kenda.avif 62w,\n/static/bc7ede6c999de0a0ca2b327dfb1355b2/3c542/i-will-find-you-by-joe-kenda.avif 124w,\n/static/bc7ede6c999de0a0ca2b327dfb1355b2/c155b/i-will-find-you-by-joe-kenda.avif 248w,\n/static/bc7ede6c999de0a0ca2b327dfb1355b2/1ad14/i-will-find-you-by-joe-kenda.avif 496w",
-                    type: "image/avif",
-                    sizes: "(min-width: 248px) 248px, 100vw",
-                  },
-                ],
-              },
-              width: 248,
-              height: 372,
-            },
-          },
-        },
-      },
-      {
-        id: "3ac8367d-fa19-55ba-ae60-43eb0f6d7149",
-        sequence: 37,
-        grade: "C",
-        slug: "draft-no-4-by-john-mcphee",
-        edition: "Audible",
-        date: "Sep 11, 2022",
-        gradeValue: 6,
-        title: "Draft No. 4",
-        yearPublished: 2013,
-        sortTitle: "Draft No. 4: On the Writing Process",
-        kind: "Nonfiction",
-        authors: [
-          {
-            name: "John McPhee",
-            notes: null,
-            sortName: "McPhee, John",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "constrained" as const,
-              images: {
-                fallback: {
-                  src: "/static/0f356768b26a01e664388d920c70029f/31a1c/draft-no-4-by-john-mcphee.jpg",
-                  srcSet:
-                    "/static/0f356768b26a01e664388d920c70029f/5bc78/draft-no-4-by-john-mcphee.jpg 62w,\n/static/0f356768b26a01e664388d920c70029f/59d5c/draft-no-4-by-john-mcphee.jpg 124w,\n/static/0f356768b26a01e664388d920c70029f/31a1c/draft-no-4-by-john-mcphee.jpg 248w,\n/static/0f356768b26a01e664388d920c70029f/a5166/draft-no-4-by-john-mcphee.jpg 496w",
-                  sizes: "(min-width: 248px) 248px, 100vw",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/0f356768b26a01e664388d920c70029f/6b3a6/draft-no-4-by-john-mcphee.avif 62w,\n/static/0f356768b26a01e664388d920c70029f/3c542/draft-no-4-by-john-mcphee.avif 124w,\n/static/0f356768b26a01e664388d920c70029f/c155b/draft-no-4-by-john-mcphee.avif 248w,\n/static/0f356768b26a01e664388d920c70029f/1ad14/draft-no-4-by-john-mcphee.avif 496w",
-                    type: "image/avif",
-                    sizes: "(min-width: 248px) 248px, 100vw",
-                  },
-                ],
-              },
-              width: 248,
-              height: 372,
-            },
-          },
-        },
-      },
-      {
-        id: "863dbd57-a3f7-5b4d-8eba-2eb7ea203223",
-        sequence: 36,
-        grade: "C+",
-        slug: "the-woods-are-dark-by-richard-laymon",
-        edition: "Audible",
-        date: "Sep 11, 2022",
-        gradeValue: 7,
-        title: "The Woods Are Dark",
-        yearPublished: 1981,
-        sortTitle: "Woods Are Dark",
-        kind: "Novel",
-        authors: [
-          {
-            name: "Richard Laymon",
-            notes: null,
-            sortName: "Laymon, Richard",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "constrained" as const,
-              images: {
-                fallback: {
-                  src: "/static/ce4922405ae2989408bd24b23e71679c/31a1c/the-woods-are-dark-by-richard-laymon.jpg",
-                  srcSet:
-                    "/static/ce4922405ae2989408bd24b23e71679c/5bc78/the-woods-are-dark-by-richard-laymon.jpg 62w,\n/static/ce4922405ae2989408bd24b23e71679c/59d5c/the-woods-are-dark-by-richard-laymon.jpg 124w,\n/static/ce4922405ae2989408bd24b23e71679c/31a1c/the-woods-are-dark-by-richard-laymon.jpg 248w,\n/static/ce4922405ae2989408bd24b23e71679c/a5166/the-woods-are-dark-by-richard-laymon.jpg 496w",
-                  sizes: "(min-width: 248px) 248px, 100vw",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/ce4922405ae2989408bd24b23e71679c/6b3a6/the-woods-are-dark-by-richard-laymon.avif 62w,\n/static/ce4922405ae2989408bd24b23e71679c/3c542/the-woods-are-dark-by-richard-laymon.avif 124w,\n/static/ce4922405ae2989408bd24b23e71679c/c155b/the-woods-are-dark-by-richard-laymon.avif 248w,\n/static/ce4922405ae2989408bd24b23e71679c/1ad14/the-woods-are-dark-by-richard-laymon.avif 496w",
-                    type: "image/avif",
-                    sizes: "(min-width: 248px) 248px, 100vw",
-                  },
-                ],
-              },
-              width: 248,
-              height: 372,
-            },
-          },
-        },
-      },
-      {
-        id: "e3b9bb4c-1686-58de-b440-85882a3cca37",
-        sequence: 35,
-        grade: "C",
-        slug: "is-this-anything-by-jerry-seinfeld",
-        edition: "Audible",
-        date: "Sep 10, 2022",
-        gradeValue: 6,
-        title: "Is This Anything?",
-        yearPublished: 2020,
-        sortTitle: "Is This Anything?",
-        kind: "Nonfiction",
-        authors: [
-          {
-            name: "Jerry Seinfeld",
-            notes: null,
-            sortName: "Seinfeld, Jerry",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "constrained" as const,
-              images: {
-                fallback: {
-                  src: "/static/b77037a1a31eccfefc0a7c7a4d6b8620/31a1c/is-this-anything-by-jerry-seinfeld.jpg",
-                  srcSet:
-                    "/static/b77037a1a31eccfefc0a7c7a4d6b8620/5bc78/is-this-anything-by-jerry-seinfeld.jpg 62w,\n/static/b77037a1a31eccfefc0a7c7a4d6b8620/59d5c/is-this-anything-by-jerry-seinfeld.jpg 124w,\n/static/b77037a1a31eccfefc0a7c7a4d6b8620/31a1c/is-this-anything-by-jerry-seinfeld.jpg 248w,\n/static/b77037a1a31eccfefc0a7c7a4d6b8620/a5166/is-this-anything-by-jerry-seinfeld.jpg 496w",
-                  sizes: "(min-width: 248px) 248px, 100vw",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/b77037a1a31eccfefc0a7c7a4d6b8620/6b3a6/is-this-anything-by-jerry-seinfeld.avif 62w,\n/static/b77037a1a31eccfefc0a7c7a4d6b8620/3c542/is-this-anything-by-jerry-seinfeld.avif 124w,\n/static/b77037a1a31eccfefc0a7c7a4d6b8620/c155b/is-this-anything-by-jerry-seinfeld.avif 248w,\n/static/b77037a1a31eccfefc0a7c7a4d6b8620/1ad14/is-this-anything-by-jerry-seinfeld.avif 496w",
-                    type: "image/avif",
-                    sizes: "(min-width: 248px) 248px, 100vw",
-                  },
-                ],
-              },
-              width: 248,
-              height: 372,
-            },
-          },
-        },
-      },
-      {
-        id: "d829b0b2-f7ef-52fb-9362-7ca4b1b197cb",
-        sequence: 34,
-        grade: "A-",
-        slug: "about-face-by-david-h-hackworth-julie-sherman",
-        edition: "Audible",
-        date: "Sep 5, 2022",
-        gradeValue: 11,
-        title: "About Face",
-        yearPublished: 1989,
-        sortTitle: "About Face: The Odyssey of an American Warrior",
-        kind: "Nonfiction",
-        authors: [
-          {
-            name: "David H. Hackworth",
-            notes: null,
-            sortName: "Hackworth, David H.",
-          },
-          {
-            name: "Julie Sherman",
-            notes: null,
-            sortName: "Sherman, Julie",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "constrained" as const,
-              images: {
-                fallback: {
-                  src: "/static/c90cce755e6e70178a3b247cba548e64/31a1c/about-face-by-david-h-hackworth-julie-sherman.jpg",
-                  srcSet:
-                    "/static/c90cce755e6e70178a3b247cba548e64/5bc78/about-face-by-david-h-hackworth-julie-sherman.jpg 62w,\n/static/c90cce755e6e70178a3b247cba548e64/59d5c/about-face-by-david-h-hackworth-julie-sherman.jpg 124w,\n/static/c90cce755e6e70178a3b247cba548e64/31a1c/about-face-by-david-h-hackworth-julie-sherman.jpg 248w,\n/static/c90cce755e6e70178a3b247cba548e64/a5166/about-face-by-david-h-hackworth-julie-sherman.jpg 496w",
-                  sizes: "(min-width: 248px) 248px, 100vw",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/c90cce755e6e70178a3b247cba548e64/6b3a6/about-face-by-david-h-hackworth-julie-sherman.avif 62w,\n/static/c90cce755e6e70178a3b247cba548e64/3c542/about-face-by-david-h-hackworth-julie-sherman.avif 124w,\n/static/c90cce755e6e70178a3b247cba548e64/c155b/about-face-by-david-h-hackworth-julie-sherman.avif 248w,\n/static/c90cce755e6e70178a3b247cba548e64/1ad14/about-face-by-david-h-hackworth-julie-sherman.avif 496w",
-                    type: "image/avif",
-                    sizes: "(min-width: 248px) 248px, 100vw",
-                  },
-                ],
-              },
-              width: 248,
-              height: 372,
-            },
-          },
-        },
-      },
-      {
-        id: "a71ca743-414f-5777-8e17-dbcd8a858088",
-        sequence: 33,
-        grade: "C+",
-        slug: "hawk-mountain-by-conner-habib",
-        edition: "Kindle",
-        date: "Sep 4, 2022",
-        gradeValue: 7,
-        title: "Hawk Mountain",
-        yearPublished: 2022,
-        sortTitle: "Hawk Mountain",
-        kind: "Novel",
-        authors: [
-          {
-            name: "Conner Habib",
-            notes: null,
-            sortName: "Habib, Conner",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "constrained" as const,
-              images: {
-                fallback: {
-                  src: "/static/867fd81ed16356c017a6b4039bae5e56/31a1c/hawk-mountain-by-conner-habib.jpg",
-                  srcSet:
-                    "/static/867fd81ed16356c017a6b4039bae5e56/5bc78/hawk-mountain-by-conner-habib.jpg 62w,\n/static/867fd81ed16356c017a6b4039bae5e56/59d5c/hawk-mountain-by-conner-habib.jpg 124w,\n/static/867fd81ed16356c017a6b4039bae5e56/31a1c/hawk-mountain-by-conner-habib.jpg 248w,\n/static/867fd81ed16356c017a6b4039bae5e56/a5166/hawk-mountain-by-conner-habib.jpg 496w",
-                  sizes: "(min-width: 248px) 248px, 100vw",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/867fd81ed16356c017a6b4039bae5e56/6b3a6/hawk-mountain-by-conner-habib.avif 62w,\n/static/867fd81ed16356c017a6b4039bae5e56/3c542/hawk-mountain-by-conner-habib.avif 124w,\n/static/867fd81ed16356c017a6b4039bae5e56/c155b/hawk-mountain-by-conner-habib.avif 248w,\n/static/867fd81ed16356c017a6b4039bae5e56/1ad14/hawk-mountain-by-conner-habib.avif 496w",
-                    type: "image/avif",
-                    sizes: "(min-width: 248px) 248px, 100vw",
-                  },
-                ],
-              },
-              width: 248,
-              height: 372,
-            },
-          },
-        },
-      },
-      {
-        id: "5f61fb02-539f-5323-bf85-832685fd1825",
-        sequence: 32,
-        grade: "B+",
-        slug: "the-postman-always-rings-twice-by-james-m-cain",
-        edition: "Kindle",
-        date: "Jul 24, 2022",
-        gradeValue: 10,
-        title: "The Postman Always Rings Twice",
-        yearPublished: 1934,
-        sortTitle: "Postman Always Rings Twice",
-        kind: "Novel",
-        authors: [
-          {
-            name: "James M. Cain",
-            notes: null,
-            sortName: "Cain, James M.",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "constrained" as const,
-              images: {
-                fallback: {
-                  src: "/static/2688d847692c06860102b2349a23deb4/31a1c/the-postman-always-rings-twice-by-james-m-cain.jpg",
-                  srcSet:
-                    "/static/2688d847692c06860102b2349a23deb4/5bc78/the-postman-always-rings-twice-by-james-m-cain.jpg 62w,\n/static/2688d847692c06860102b2349a23deb4/59d5c/the-postman-always-rings-twice-by-james-m-cain.jpg 124w,\n/static/2688d847692c06860102b2349a23deb4/31a1c/the-postman-always-rings-twice-by-james-m-cain.jpg 248w,\n/static/2688d847692c06860102b2349a23deb4/a5166/the-postman-always-rings-twice-by-james-m-cain.jpg 496w",
-                  sizes: "(min-width: 248px) 248px, 100vw",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/2688d847692c06860102b2349a23deb4/6b3a6/the-postman-always-rings-twice-by-james-m-cain.avif 62w,\n/static/2688d847692c06860102b2349a23deb4/3c542/the-postman-always-rings-twice-by-james-m-cain.avif 124w,\n/static/2688d847692c06860102b2349a23deb4/c155b/the-postman-always-rings-twice-by-james-m-cain.avif 248w,\n/static/2688d847692c06860102b2349a23deb4/1ad14/the-postman-always-rings-twice-by-james-m-cain.avif 496w",
-                    type: "image/avif",
-                    sizes: "(min-width: 248px) 248px, 100vw",
-                  },
-                ],
-              },
-              width: 248,
-              height: 372,
-            },
-          },
-        },
-      },
-      {
-        id: "3d0c7425-81af-5c05-9c6e-7be003c0c03d",
-        sequence: 31,
-        grade: "A-",
-        slug: "cured-by-lol-tolhurst",
-        edition: "Audible",
-        date: "Jul 18, 2022",
-        gradeValue: 11,
-        title: "Cured",
-        yearPublished: 2016,
-        sortTitle: "Cured: The Tale of Two Imaginary Boys",
-        kind: "Nonfiction",
-        authors: [
-          {
-            name: "Lol Tolhurst",
-            notes: null,
-            sortName: "Tolhurst, Lol",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "constrained" as const,
-              images: {
-                fallback: {
-                  src: "/static/70b672c042c7c035cdb6da5a0e7483a5/31a1c/cured-by-lol-tolhurst.jpg",
-                  srcSet:
-                    "/static/70b672c042c7c035cdb6da5a0e7483a5/5bc78/cured-by-lol-tolhurst.jpg 62w,\n/static/70b672c042c7c035cdb6da5a0e7483a5/59d5c/cured-by-lol-tolhurst.jpg 124w,\n/static/70b672c042c7c035cdb6da5a0e7483a5/31a1c/cured-by-lol-tolhurst.jpg 248w,\n/static/70b672c042c7c035cdb6da5a0e7483a5/a5166/cured-by-lol-tolhurst.jpg 496w",
-                  sizes: "(min-width: 248px) 248px, 100vw",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/70b672c042c7c035cdb6da5a0e7483a5/6b3a6/cured-by-lol-tolhurst.avif 62w,\n/static/70b672c042c7c035cdb6da5a0e7483a5/3c542/cured-by-lol-tolhurst.avif 124w,\n/static/70b672c042c7c035cdb6da5a0e7483a5/c155b/cured-by-lol-tolhurst.avif 248w,\n/static/70b672c042c7c035cdb6da5a0e7483a5/1ad14/cured-by-lol-tolhurst.avif 496w",
-                    type: "image/avif",
-                    sizes: "(min-width: 248px) 248px, 100vw",
-                  },
-                ],
-              },
-              width: 248,
-              height: 372,
-            },
-          },
-        },
-      },
-      {
-        id: "e5e2a696-3724-52de-a6cb-6d7c88bd3205",
-        sequence: 30,
-        grade: "A-",
-        slug: "fight-club-by-chuck-palahniuk",
-        edition: "Audible",
-        date: "Jul 16, 2022",
-        gradeValue: 11,
-        title: "Fight Club",
-        yearPublished: 1996,
-        sortTitle: "Fight Club",
-        kind: "Novel",
-        authors: [
-          {
-            name: "Chuck Palahniuk",
-            notes: null,
-            sortName: "Palahniuk, Chuck",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "constrained" as const,
-              images: {
-                fallback: {
-                  src: "/static/0f06d8f06ca3dd10cf0f10d6d87cb791/31a1c/fight-club-by-chuck-palahniuk.jpg",
-                  srcSet:
-                    "/static/0f06d8f06ca3dd10cf0f10d6d87cb791/5bc78/fight-club-by-chuck-palahniuk.jpg 62w,\n/static/0f06d8f06ca3dd10cf0f10d6d87cb791/59d5c/fight-club-by-chuck-palahniuk.jpg 124w,\n/static/0f06d8f06ca3dd10cf0f10d6d87cb791/31a1c/fight-club-by-chuck-palahniuk.jpg 248w,\n/static/0f06d8f06ca3dd10cf0f10d6d87cb791/a5166/fight-club-by-chuck-palahniuk.jpg 496w",
-                  sizes: "(min-width: 248px) 248px, 100vw",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/0f06d8f06ca3dd10cf0f10d6d87cb791/6b3a6/fight-club-by-chuck-palahniuk.avif 62w,\n/static/0f06d8f06ca3dd10cf0f10d6d87cb791/3c542/fight-club-by-chuck-palahniuk.avif 124w,\n/static/0f06d8f06ca3dd10cf0f10d6d87cb791/c155b/fight-club-by-chuck-palahniuk.avif 248w,\n/static/0f06d8f06ca3dd10cf0f10d6d87cb791/1ad14/fight-club-by-chuck-palahniuk.avif 496w",
-                    type: "image/avif",
-                    sizes: "(min-width: 248px) 248px, 100vw",
-                  },
-                ],
-              },
-              width: 248,
-              height: 372,
-            },
-          },
-        },
-      },
-      {
-        id: "ac566714-adf6-5663-9d08-29889a532bcb",
-        sequence: 29,
-        grade: "D+",
-        slug: "the-48-laws-of-power-by-robert-greene",
-        edition: "Audible",
-        date: "Jul 15, 2022",
-        gradeValue: 4,
-        title: "The 48 Laws of Power",
-        yearPublished: 1998,
-        sortTitle: "48 Laws of Power",
-        kind: "Nonfiction",
-        authors: [
-          {
-            name: "Robert Greene",
-            notes: null,
-            sortName: "Greene, Robert",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "constrained" as const,
-              images: {
-                fallback: {
-                  src: "/static/f21f66ac9915b4111f60f91f94e09335/31a1c/the-48-laws-of-power-by-robert-greene.jpg",
-                  srcSet:
-                    "/static/f21f66ac9915b4111f60f91f94e09335/5bc78/the-48-laws-of-power-by-robert-greene.jpg 62w,\n/static/f21f66ac9915b4111f60f91f94e09335/59d5c/the-48-laws-of-power-by-robert-greene.jpg 124w,\n/static/f21f66ac9915b4111f60f91f94e09335/31a1c/the-48-laws-of-power-by-robert-greene.jpg 248w,\n/static/f21f66ac9915b4111f60f91f94e09335/a5166/the-48-laws-of-power-by-robert-greene.jpg 496w",
-                  sizes: "(min-width: 248px) 248px, 100vw",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/f21f66ac9915b4111f60f91f94e09335/6b3a6/the-48-laws-of-power-by-robert-greene.avif 62w,\n/static/f21f66ac9915b4111f60f91f94e09335/3c542/the-48-laws-of-power-by-robert-greene.avif 124w,\n/static/f21f66ac9915b4111f60f91f94e09335/c155b/the-48-laws-of-power-by-robert-greene.avif 248w,\n/static/f21f66ac9915b4111f60f91f94e09335/1ad14/the-48-laws-of-power-by-robert-greene.avif 496w",
-                    type: "image/avif",
-                    sizes: "(min-width: 248px) 248px, 100vw",
-                  },
-                ],
-              },
-              width: 248,
-              height: 372,
-            },
-          },
-        },
-      },
-      {
-        id: "d97350e9-6eca-5fb7-becd-41f08de3a36f",
-        sequence: 28,
-        grade: "C+",
-        slug: "the-rules-of-attraction-by-bret-easton-ellis",
-        edition: "Kindle",
-        date: "Jul 14, 2022",
-        gradeValue: 7,
-        title: "The Rules of Attraction",
-        yearPublished: 1987,
-        sortTitle: "Rules of Attraction",
+        reviewMonth: "April",
+        reviewYear: 2022,
+        sortTitle: "Less Than Zero",
         kind: "Novel",
         authors: [
           {
@@ -1085,130 +217,778 @@ export const data = {
         cover: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/75163f0d9da4cf49ce2d1f9b3d1c55a5/31a1c/the-rules-of-attraction-by-bret-easton-ellis.jpg",
+                  src: "/static/49d1cc4a84df94d078290568845332a3/8bcae/less-than-zero-by-bret-easton-ellis.jpg",
                   srcSet:
-                    "/static/75163f0d9da4cf49ce2d1f9b3d1c55a5/5bc78/the-rules-of-attraction-by-bret-easton-ellis.jpg 62w,\n/static/75163f0d9da4cf49ce2d1f9b3d1c55a5/59d5c/the-rules-of-attraction-by-bret-easton-ellis.jpg 124w,\n/static/75163f0d9da4cf49ce2d1f9b3d1c55a5/31a1c/the-rules-of-attraction-by-bret-easton-ellis.jpg 248w,\n/static/75163f0d9da4cf49ce2d1f9b3d1c55a5/a5166/the-rules-of-attraction-by-bret-easton-ellis.jpg 496w",
-                  sizes: "(min-width: 248px) 248px, 100vw",
+                    "/static/49d1cc4a84df94d078290568845332a3/8bcae/less-than-zero-by-bret-easton-ellis.jpg 72w,\n/static/49d1cc4a84df94d078290568845332a3/7306c/less-than-zero-by-bret-easton-ellis.jpg 144w",
+                  sizes: "72px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/75163f0d9da4cf49ce2d1f9b3d1c55a5/6b3a6/the-rules-of-attraction-by-bret-easton-ellis.avif 62w,\n/static/75163f0d9da4cf49ce2d1f9b3d1c55a5/3c542/the-rules-of-attraction-by-bret-easton-ellis.avif 124w,\n/static/75163f0d9da4cf49ce2d1f9b3d1c55a5/c155b/the-rules-of-attraction-by-bret-easton-ellis.avif 248w,\n/static/75163f0d9da4cf49ce2d1f9b3d1c55a5/1ad14/the-rules-of-attraction-by-bret-easton-ellis.avif 496w",
+                      "/static/49d1cc4a84df94d078290568845332a3/6903a/less-than-zero-by-bret-easton-ellis.avif 72w,\n/static/49d1cc4a84df94d078290568845332a3/65187/less-than-zero-by-bret-easton-ellis.avif 144w",
                     type: "image/avif",
-                    sizes: "(min-width: 248px) 248px, 100vw",
+                    sizes: "72px",
                   },
                 ],
               },
-              width: 248,
-              height: 372,
+              width: 72,
+              height: 108,
             },
           },
         },
       },
       {
-        id: "28442434-cf31-529e-ab3e-f4fe5bdc3c54",
-        sequence: 27,
+        id: "c3d8cea6-fa63-5dcc-839c-8a5255ace5d9",
+        grade: "C-",
+        slug: "desert-pickup-by-richard-laymon",
+        reviewDate: "Apr 3, 2022",
+        gradeValue: 5,
+        sortDate: "2022-04-03",
+        title: "Desert Pickup",
+        yearPublished: 1970,
+        reviewMonth: "April",
+        reviewYear: 2022,
+        sortTitle: "Desert Pickup",
+        kind: "Short Story",
+        authors: [
+          {
+            name: "Richard Laymon",
+            notes: null,
+            sortName: "Laymon, Richard",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/8acae41db8fa464249340b17cc680c45/8bcae/short-stories-volume-one-by-richard-laymon.jpg",
+                  srcSet:
+                    "/static/8acae41db8fa464249340b17cc680c45/8bcae/short-stories-volume-one-by-richard-laymon.jpg 72w,\n/static/8acae41db8fa464249340b17cc680c45/7306c/short-stories-volume-one-by-richard-laymon.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/8acae41db8fa464249340b17cc680c45/6903a/short-stories-volume-one-by-richard-laymon.avif 72w,\n/static/8acae41db8fa464249340b17cc680c45/65187/short-stories-volume-one-by-richard-laymon.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        id: "aa31636d-a539-5580-bc3b-1a2ee30030ee",
+        grade: "D+",
+        slug: "the-dark-tunnel-by-ross-macdonald",
+        reviewDate: "Apr 17, 2022",
+        gradeValue: 4,
+        sortDate: "2022-04-17",
+        title: "The Dark Tunnel",
+        yearPublished: 1944,
+        reviewMonth: "April",
+        reviewYear: 2022,
+        sortTitle: "Dark Tunnel",
+        kind: "Novel",
+        authors: [
+          {
+            name: "Ross Macdonald",
+            notes: "as Kenneth Millar",
+            sortName: "Macdonald, Ross",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/78b2996d1249af4d0d1b0eac16cbcce4/8bcae/the-dark-tunnel-by-ross-macdonald.jpg",
+                  srcSet:
+                    "/static/78b2996d1249af4d0d1b0eac16cbcce4/8bcae/the-dark-tunnel-by-ross-macdonald.jpg 72w,\n/static/78b2996d1249af4d0d1b0eac16cbcce4/7306c/the-dark-tunnel-by-ross-macdonald.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/78b2996d1249af4d0d1b0eac16cbcce4/6903a/the-dark-tunnel-by-ross-macdonald.avif 72w,\n/static/78b2996d1249af4d0d1b0eac16cbcce4/65187/the-dark-tunnel-by-ross-macdonald.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        id: "1ebfcdcd-2045-5367-9c3c-3b6e2060b57d",
+        grade: "B-",
+        slug: "soft-construction-of-a-sunset-by-philip-fracassi",
+        reviewDate: "Apr 17, 2022",
+        gradeValue: 8,
+        sortDate: "2022-04-17",
+        title: "Soft Construction of a Sunset",
+        yearPublished: 2017,
+        reviewMonth: "April",
+        reviewYear: 2022,
+        sortTitle: "Soft Construction of a Sunset",
+        kind: "Short Story",
+        authors: [
+          {
+            name: "Philip Fracassi",
+            notes: null,
+            sortName: "Fracassi, Philip",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/1de200a682b62e4daf7358cd87072d87/8bcae/behold-the-void-by-philip-fracassi.jpg",
+                  srcSet:
+                    "/static/1de200a682b62e4daf7358cd87072d87/8bcae/behold-the-void-by-philip-fracassi.jpg 72w,\n/static/1de200a682b62e4daf7358cd87072d87/7306c/behold-the-void-by-philip-fracassi.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/1de200a682b62e4daf7358cd87072d87/6903a/behold-the-void-by-philip-fracassi.avif 72w,\n/static/1de200a682b62e4daf7358cd87072d87/65187/behold-the-void-by-philip-fracassi.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        id: "23a80784-8a84-54f0-adfd-d7b052a9ea9c",
+        grade: "A-",
+        slug: "altar-by-philip-fracassi",
+        reviewDate: "Apr 18, 2022",
+        gradeValue: 11,
+        sortDate: "2022-04-18",
+        title: "Altar",
+        yearPublished: 2016,
+        reviewMonth: "April",
+        reviewYear: 2022,
+        sortTitle: "Altar",
+        kind: "Short Story",
+        authors: [
+          {
+            name: "Philip Fracassi",
+            notes: null,
+            sortName: "Fracassi, Philip",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/1de200a682b62e4daf7358cd87072d87/8bcae/behold-the-void-by-philip-fracassi.jpg",
+                  srcSet:
+                    "/static/1de200a682b62e4daf7358cd87072d87/8bcae/behold-the-void-by-philip-fracassi.jpg 72w,\n/static/1de200a682b62e4daf7358cd87072d87/7306c/behold-the-void-by-philip-fracassi.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/1de200a682b62e4daf7358cd87072d87/6903a/behold-the-void-by-philip-fracassi.avif 72w,\n/static/1de200a682b62e4daf7358cd87072d87/65187/behold-the-void-by-philip-fracassi.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        id: "e3b39c80-3d0a-513f-a33a-d2381e1a782d",
+        grade: "B",
+        slug: "the-horse-thief-by-philip-fracassi",
+        reviewDate: "Apr 19, 2022",
+        gradeValue: 9,
+        sortDate: "2022-04-19",
+        title: "The Horse Thief",
+        yearPublished: 2017,
+        reviewMonth: "April",
+        reviewYear: 2022,
+        sortTitle: "Horse Thief",
+        kind: "Short Story",
+        authors: [
+          {
+            name: "Philip Fracassi",
+            notes: null,
+            sortName: "Fracassi, Philip",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/1de200a682b62e4daf7358cd87072d87/8bcae/behold-the-void-by-philip-fracassi.jpg",
+                  srcSet:
+                    "/static/1de200a682b62e4daf7358cd87072d87/8bcae/behold-the-void-by-philip-fracassi.jpg 72w,\n/static/1de200a682b62e4daf7358cd87072d87/7306c/behold-the-void-by-philip-fracassi.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/1de200a682b62e4daf7358cd87072d87/6903a/behold-the-void-by-philip-fracassi.avif 72w,\n/static/1de200a682b62e4daf7358cd87072d87/65187/behold-the-void-by-philip-fracassi.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        id: "2878c0be-b62e-5df8-9bdc-3842edef55dd",
         grade: "C+",
-        slug: "dracula-by-bram-stoker",
-        edition: "Audible",
-        date: "Jul 9, 2022",
+        slug: "coffin-by-philip-fracassi",
+        reviewDate: "Apr 20, 2022",
         gradeValue: 7,
-        title: "Dracula",
-        yearPublished: 1897,
-        sortTitle: "Dracula",
-        kind: "Novel",
+        sortDate: "2022-04-20",
+        title: "Coffin",
+        yearPublished: 2017,
+        reviewMonth: "April",
+        reviewYear: 2022,
+        sortTitle: "Coffin",
+        kind: "Short Story",
         authors: [
           {
-            name: "Bram Stoker",
+            name: "Philip Fracassi",
             notes: null,
-            sortName: "Stoker, Bram",
+            sortName: "Fracassi, Philip",
           },
         ],
         cover: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/3afc1fb3158332c4415581f11a1f2371/31a1c/dracula-by-bram-stoker.jpg",
+                  src: "/static/1de200a682b62e4daf7358cd87072d87/8bcae/behold-the-void-by-philip-fracassi.jpg",
                   srcSet:
-                    "/static/3afc1fb3158332c4415581f11a1f2371/5bc78/dracula-by-bram-stoker.jpg 62w,\n/static/3afc1fb3158332c4415581f11a1f2371/59d5c/dracula-by-bram-stoker.jpg 124w,\n/static/3afc1fb3158332c4415581f11a1f2371/31a1c/dracula-by-bram-stoker.jpg 248w,\n/static/3afc1fb3158332c4415581f11a1f2371/a5166/dracula-by-bram-stoker.jpg 496w",
-                  sizes: "(min-width: 248px) 248px, 100vw",
+                    "/static/1de200a682b62e4daf7358cd87072d87/8bcae/behold-the-void-by-philip-fracassi.jpg 72w,\n/static/1de200a682b62e4daf7358cd87072d87/7306c/behold-the-void-by-philip-fracassi.jpg 144w",
+                  sizes: "72px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/3afc1fb3158332c4415581f11a1f2371/6b3a6/dracula-by-bram-stoker.avif 62w,\n/static/3afc1fb3158332c4415581f11a1f2371/3c542/dracula-by-bram-stoker.avif 124w,\n/static/3afc1fb3158332c4415581f11a1f2371/c155b/dracula-by-bram-stoker.avif 248w,\n/static/3afc1fb3158332c4415581f11a1f2371/1ad14/dracula-by-bram-stoker.avif 496w",
+                      "/static/1de200a682b62e4daf7358cd87072d87/6903a/behold-the-void-by-philip-fracassi.avif 72w,\n/static/1de200a682b62e4daf7358cd87072d87/65187/behold-the-void-by-philip-fracassi.avif 144w",
                     type: "image/avif",
-                    sizes: "(min-width: 248px) 248px, 100vw",
+                    sizes: "72px",
                   },
                 ],
               },
-              width: 248,
-              height: 372,
+              width: 72,
+              height: 108,
             },
           },
         },
       },
       {
-        id: "e49ff29a-c2d0-51d0-a18e-c94d53dbe218",
-        sequence: 26,
-        grade: "A",
-        slug: "the-secret-history-by-donna-tartt",
-        edition: "Audible",
-        date: "Jul 2, 2022",
-        gradeValue: 12,
-        title: "The Secret History",
-        yearPublished: 1992,
-        sortTitle: "Secret History",
-        kind: "Novel",
+        id: "58bd3f48-5fa0-5aec-9652-ba7ca504ca4a",
+        grade: "C+",
+        slug: "the-baby-farmer-by-philip-fracassi",
+        reviewDate: "Apr 21, 2022",
+        gradeValue: 7,
+        sortDate: "2022-04-21",
+        title: "The Baby Farmer",
+        yearPublished: 2017,
+        reviewMonth: "April",
+        reviewYear: 2022,
+        sortTitle: "Baby Farmer",
+        kind: "Short Story",
         authors: [
           {
-            name: "Donna Tartt",
+            name: "Philip Fracassi",
             notes: null,
-            sortName: "Tartt, Donna",
+            sortName: "Fracassi, Philip",
           },
         ],
         cover: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/2343629d97c59f48a5d62c1166bd9ccd/31a1c/the-secret-history-by-donna-tartt.jpg",
+                  src: "/static/1de200a682b62e4daf7358cd87072d87/8bcae/behold-the-void-by-philip-fracassi.jpg",
                   srcSet:
-                    "/static/2343629d97c59f48a5d62c1166bd9ccd/5bc78/the-secret-history-by-donna-tartt.jpg 62w,\n/static/2343629d97c59f48a5d62c1166bd9ccd/59d5c/the-secret-history-by-donna-tartt.jpg 124w,\n/static/2343629d97c59f48a5d62c1166bd9ccd/31a1c/the-secret-history-by-donna-tartt.jpg 248w,\n/static/2343629d97c59f48a5d62c1166bd9ccd/a5166/the-secret-history-by-donna-tartt.jpg 496w",
-                  sizes: "(min-width: 248px) 248px, 100vw",
+                    "/static/1de200a682b62e4daf7358cd87072d87/8bcae/behold-the-void-by-philip-fracassi.jpg 72w,\n/static/1de200a682b62e4daf7358cd87072d87/7306c/behold-the-void-by-philip-fracassi.jpg 144w",
+                  sizes: "72px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/2343629d97c59f48a5d62c1166bd9ccd/6b3a6/the-secret-history-by-donna-tartt.avif 62w,\n/static/2343629d97c59f48a5d62c1166bd9ccd/3c542/the-secret-history-by-donna-tartt.avif 124w,\n/static/2343629d97c59f48a5d62c1166bd9ccd/c155b/the-secret-history-by-donna-tartt.avif 248w,\n/static/2343629d97c59f48a5d62c1166bd9ccd/1ad14/the-secret-history-by-donna-tartt.avif 496w",
+                      "/static/1de200a682b62e4daf7358cd87072d87/6903a/behold-the-void-by-philip-fracassi.avif 72w,\n/static/1de200a682b62e4daf7358cd87072d87/65187/behold-the-void-by-philip-fracassi.avif 144w",
                     type: "image/avif",
-                    sizes: "(min-width: 248px) 248px, 100vw",
+                    sizes: "72px",
                   },
                 ],
               },
-              width: 248,
-              height: 372,
+              width: 72,
+              height: 108,
             },
           },
         },
       },
       {
-        id: "4fcbf85f-5d12-59a5-bf2e-6e26be19a24b",
-        sequence: 25,
-        grade: "D",
-        slug: "live-and-let-die-by-ian-fleming",
-        edition: "Kindle",
-        date: "Jun 30, 2022",
-        gradeValue: 3,
-        title: "Live and Let Die",
-        yearPublished: 1954,
-        sortTitle: "Live and Let Die",
+        id: "774db6c4-be75-5340-bbd7-fef10c0738bd",
+        grade: "C+",
+        slug: "surfer-girl-by-philip-fracassi",
+        reviewDate: "Apr 22, 2022",
+        gradeValue: 7,
+        sortDate: "2022-04-22",
+        title: "Surfer Girl",
+        yearPublished: 2017,
+        reviewMonth: "April",
+        reviewYear: 2022,
+        sortTitle: "Surfer Girl",
+        kind: "Short Story",
+        authors: [
+          {
+            name: "Philip Fracassi",
+            notes: null,
+            sortName: "Fracassi, Philip",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/1de200a682b62e4daf7358cd87072d87/8bcae/behold-the-void-by-philip-fracassi.jpg",
+                  srcSet:
+                    "/static/1de200a682b62e4daf7358cd87072d87/8bcae/behold-the-void-by-philip-fracassi.jpg 72w,\n/static/1de200a682b62e4daf7358cd87072d87/7306c/behold-the-void-by-philip-fracassi.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/1de200a682b62e4daf7358cd87072d87/6903a/behold-the-void-by-philip-fracassi.avif 72w,\n/static/1de200a682b62e4daf7358cd87072d87/65187/behold-the-void-by-philip-fracassi.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        id: "d42e5990-b670-529c-b880-1db684fca272",
+        grade: "B-",
+        slug: "mother-by-philip-fracassi",
+        reviewDate: "Apr 23, 2022",
+        gradeValue: 8,
+        sortDate: "2022-04-23",
+        title: "Mother",
+        yearPublished: 2015,
+        reviewMonth: "April",
+        reviewYear: 2022,
+        sortTitle: "Mother",
+        kind: "Short Story",
+        authors: [
+          {
+            name: "Philip Fracassi",
+            notes: null,
+            sortName: "Fracassi, Philip",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/1de200a682b62e4daf7358cd87072d87/8bcae/behold-the-void-by-philip-fracassi.jpg",
+                  srcSet:
+                    "/static/1de200a682b62e4daf7358cd87072d87/8bcae/behold-the-void-by-philip-fracassi.jpg 72w,\n/static/1de200a682b62e4daf7358cd87072d87/7306c/behold-the-void-by-philip-fracassi.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/1de200a682b62e4daf7358cd87072d87/6903a/behold-the-void-by-philip-fracassi.avif 72w,\n/static/1de200a682b62e4daf7358cd87072d87/65187/behold-the-void-by-philip-fracassi.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        id: "11b04af5-500f-55db-9e16-77b53f52efe3",
+        grade: "C",
+        slug: "fail-safe-by-philip-fracassi",
+        reviewDate: "Apr 30, 2022",
+        gradeValue: 6,
+        sortDate: "2022-04-30",
+        title: "Fail-Safe",
+        yearPublished: 2017,
+        reviewMonth: "April",
+        reviewYear: 2022,
+        sortTitle: "Fail-Safe",
+        kind: "Short Story",
+        authors: [
+          {
+            name: "Philip Fracassi",
+            notes: null,
+            sortName: "Fracassi, Philip",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/1de200a682b62e4daf7358cd87072d87/8bcae/behold-the-void-by-philip-fracassi.jpg",
+                  srcSet:
+                    "/static/1de200a682b62e4daf7358cd87072d87/8bcae/behold-the-void-by-philip-fracassi.jpg 72w,\n/static/1de200a682b62e4daf7358cd87072d87/7306c/behold-the-void-by-philip-fracassi.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/1de200a682b62e4daf7358cd87072d87/6903a/behold-the-void-by-philip-fracassi.avif 72w,\n/static/1de200a682b62e4daf7358cd87072d87/65187/behold-the-void-by-philip-fracassi.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        id: "2ac2733b-91de-58c1-87d8-6156e9803faf",
+        grade: "B+",
+        slug: "behold-the-void-by-philip-fracassi",
+        reviewDate: "May 7, 2022",
+        gradeValue: 10,
+        sortDate: "2022-05-07",
+        title: "Behold the Void",
+        yearPublished: 2017,
+        reviewMonth: "May",
+        reviewYear: 2022,
+        sortTitle: "Behold the Void",
+        kind: "Collection",
+        authors: [
+          {
+            name: "Philip Fracassi",
+            notes: null,
+            sortName: "Fracassi, Philip",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/1de200a682b62e4daf7358cd87072d87/8bcae/behold-the-void-by-philip-fracassi.jpg",
+                  srcSet:
+                    "/static/1de200a682b62e4daf7358cd87072d87/8bcae/behold-the-void-by-philip-fracassi.jpg 72w,\n/static/1de200a682b62e4daf7358cd87072d87/7306c/behold-the-void-by-philip-fracassi.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/1de200a682b62e4daf7358cd87072d87/6903a/behold-the-void-by-philip-fracassi.avif 72w,\n/static/1de200a682b62e4daf7358cd87072d87/65187/behold-the-void-by-philip-fracassi.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        id: "409edf72-d7b7-5d66-b08e-d827211a207a",
+        grade: "A-",
+        slug: "the-rise-of-theodore-roosevelt-by-edmund-morris",
+        reviewDate: "May 7, 2022",
+        gradeValue: 11,
+        sortDate: "2022-05-07",
+        title: "The Rise of Theodore Roosevelt",
+        yearPublished: 1979,
+        reviewMonth: "May",
+        reviewYear: 2022,
+        sortTitle: "Rise of Theodore Roosevelt",
+        kind: "Nonfiction",
+        authors: [
+          {
+            name: "Edmund Morris",
+            notes: null,
+            sortName: "Morris, Edmund",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/f825a675ac30c134f06329a317ae50eb/8bcae/the-rise-of-theodore-roosevelt-by-edmund-morris.jpg",
+                  srcSet:
+                    "/static/f825a675ac30c134f06329a317ae50eb/8bcae/the-rise-of-theodore-roosevelt-by-edmund-morris.jpg 72w,\n/static/f825a675ac30c134f06329a317ae50eb/7306c/the-rise-of-theodore-roosevelt-by-edmund-morris.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/f825a675ac30c134f06329a317ae50eb/6903a/the-rise-of-theodore-roosevelt-by-edmund-morris.avif 72w,\n/static/f825a675ac30c134f06329a317ae50eb/65187/the-rise-of-theodore-roosevelt-by-edmund-morris.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        id: "c35b98ec-134e-5a0b-be77-af82bc4f6eb3",
+        grade: "B+",
+        slug: "mandala-by-philip-fracassi",
+        reviewDate: "May 7, 2022",
+        gradeValue: 10,
+        sortDate: "2022-05-07",
+        title: "Mandala",
+        yearPublished: 2017,
+        reviewMonth: "May",
+        reviewYear: 2022,
+        sortTitle: "Mandala",
+        kind: "Novella",
+        authors: [
+          {
+            name: "Philip Fracassi",
+            notes: null,
+            sortName: "Fracassi, Philip",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/1de200a682b62e4daf7358cd87072d87/8bcae/behold-the-void-by-philip-fracassi.jpg",
+                  srcSet:
+                    "/static/1de200a682b62e4daf7358cd87072d87/8bcae/behold-the-void-by-philip-fracassi.jpg 72w,\n/static/1de200a682b62e4daf7358cd87072d87/7306c/behold-the-void-by-philip-fracassi.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/1de200a682b62e4daf7358cd87072d87/6903a/behold-the-void-by-philip-fracassi.avif 72w,\n/static/1de200a682b62e4daf7358cd87072d87/65187/behold-the-void-by-philip-fracassi.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        id: "9fa9694d-23cf-5c9b-a652-a886b20d0b18",
+        grade: "C+",
+        slug: "total-recall-by-arnold-schwarzenegger",
+        reviewDate: "May 21, 2022",
+        gradeValue: 7,
+        sortDate: "2022-05-21",
+        title: "Total Recall",
+        yearPublished: 2012,
+        reviewMonth: "May",
+        reviewYear: 2022,
+        sortTitle: "Total Recall: My Unbelievably True Life Story",
+        kind: "Nonfiction",
+        authors: [
+          {
+            name: "Arnold Schwarzenegger",
+            notes: null,
+            sortName: "Schwarzenegger, Arnold",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/ab96409169fd5cd92838b2465ba85cdb/8bcae/total-recall-by-arnold-schwarzenegger.jpg",
+                  srcSet:
+                    "/static/ab96409169fd5cd92838b2465ba85cdb/8bcae/total-recall-by-arnold-schwarzenegger.jpg 72w,\n/static/ab96409169fd5cd92838b2465ba85cdb/7306c/total-recall-by-arnold-schwarzenegger.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/ab96409169fd5cd92838b2465ba85cdb/6903a/total-recall-by-arnold-schwarzenegger.avif 72w,\n/static/ab96409169fd5cd92838b2465ba85cdb/65187/total-recall-by-arnold-schwarzenegger.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        id: "5ba73531-3dc9-50fd-819d-437319cd3945",
+        grade: "Abandoned",
+        slug: "living-with-a-seal-by-jesse-itzler",
+        reviewDate: "Jun 1, 2022",
+        gradeValue: 0,
+        sortDate: "2022-06-01",
+        title: "Living with a SEAL",
+        yearPublished: 2015,
+        reviewMonth: "June",
+        reviewYear: 2022,
+        sortTitle:
+          "Living with a SEAL: 31 Days Training with the Toughest Man on the Planet",
+        kind: "Nonfiction",
+        authors: [
+          {
+            name: "Jesse Itzler",
+            notes: null,
+            sortName: "Itzler, Jesse",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/7376b6213dfad4ca84fd45313514b7a6/8bcae/living-with-a-seal-by-jesse-itzler.jpg",
+                  srcSet:
+                    "/static/7376b6213dfad4ca84fd45313514b7a6/8bcae/living-with-a-seal-by-jesse-itzler.jpg 72w,\n/static/7376b6213dfad4ca84fd45313514b7a6/7306c/living-with-a-seal-by-jesse-itzler.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/7376b6213dfad4ca84fd45313514b7a6/6903a/living-with-a-seal-by-jesse-itzler.avif 72w,\n/static/7376b6213dfad4ca84fd45313514b7a6/65187/living-with-a-seal-by-jesse-itzler.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        id: "74de1054-75c2-553c-a903-bec7fa42b4c3",
+        grade: "A-",
+        slug: "churchill-by-andrew-roberts",
+        reviewDate: "Jun 14, 2022",
+        gradeValue: 11,
+        sortDate: "2022-06-14",
+        title: "Churchill",
+        yearPublished: 2018,
+        reviewMonth: "June",
+        reviewYear: 2022,
+        sortTitle: "Churchill: Walking with Destiny",
+        kind: "Nonfiction",
+        authors: [
+          {
+            name: "Andrew Roberts",
+            notes: null,
+            sortName: "Roberts, Andrew",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/fc801250ca4d771a07f6075010db9cef/8bcae/churchill-by-andrew-roberts.jpg",
+                  srcSet:
+                    "/static/fc801250ca4d771a07f6075010db9cef/8bcae/churchill-by-andrew-roberts.jpg 72w,\n/static/fc801250ca4d771a07f6075010db9cef/7306c/churchill-by-andrew-roberts.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/fc801250ca4d771a07f6075010db9cef/6903a/churchill-by-andrew-roberts.avif 72w,\n/static/fc801250ca4d771a07f6075010db9cef/65187/churchill-by-andrew-roberts.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        id: "72565b03-a653-55b4-8846-cbd497320bcc",
+        grade: "B-",
+        slug: "casino-royale-by-ian-fleming",
+        reviewDate: "Jun 14, 2022",
+        gradeValue: 8,
+        sortDate: "2022-06-14",
+        title: "Casino Royale",
+        yearPublished: 1953,
+        reviewMonth: "June",
+        reviewYear: 2022,
+        sortTitle: "Casino Royale",
         kind: "Novel",
         authors: [
           {
@@ -1220,39 +1000,86 @@ export const data = {
         cover: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/2971b726dd5163d3dc0b6f08b66a2a53/31a1c/live-and-let-die-by-ian-fleming.jpg",
+                  src: "/static/ae97f975edc58937695785fe4bcaf8df/8bcae/casino-royale-by-ian-fleming.jpg",
                   srcSet:
-                    "/static/2971b726dd5163d3dc0b6f08b66a2a53/5bc78/live-and-let-die-by-ian-fleming.jpg 62w,\n/static/2971b726dd5163d3dc0b6f08b66a2a53/59d5c/live-and-let-die-by-ian-fleming.jpg 124w,\n/static/2971b726dd5163d3dc0b6f08b66a2a53/31a1c/live-and-let-die-by-ian-fleming.jpg 248w,\n/static/2971b726dd5163d3dc0b6f08b66a2a53/a5166/live-and-let-die-by-ian-fleming.jpg 496w",
-                  sizes: "(min-width: 248px) 248px, 100vw",
+                    "/static/ae97f975edc58937695785fe4bcaf8df/8bcae/casino-royale-by-ian-fleming.jpg 72w,\n/static/ae97f975edc58937695785fe4bcaf8df/7306c/casino-royale-by-ian-fleming.jpg 144w",
+                  sizes: "72px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/2971b726dd5163d3dc0b6f08b66a2a53/6b3a6/live-and-let-die-by-ian-fleming.avif 62w,\n/static/2971b726dd5163d3dc0b6f08b66a2a53/3c542/live-and-let-die-by-ian-fleming.avif 124w,\n/static/2971b726dd5163d3dc0b6f08b66a2a53/c155b/live-and-let-die-by-ian-fleming.avif 248w,\n/static/2971b726dd5163d3dc0b6f08b66a2a53/1ad14/live-and-let-die-by-ian-fleming.avif 496w",
+                      "/static/ae97f975edc58937695785fe4bcaf8df/6903a/casino-royale-by-ian-fleming.avif 72w,\n/static/ae97f975edc58937695785fe4bcaf8df/65187/casino-royale-by-ian-fleming.avif 144w",
                     type: "image/avif",
-                    sizes: "(min-width: 248px) 248px, 100vw",
+                    sizes: "72px",
                   },
                 ],
               },
-              width: 248,
-              height: 372,
+              width: 72,
+              height: 108,
             },
           },
         },
       },
       {
-        id: "90762b40-ee06-5933-a58c-55a86b268ba3",
-        sequence: 24,
+        id: "f74688f3-9d5b-5677-8c7b-e55166b34d06",
+        grade: "B+",
+        slug: "set-the-boy-free-by-johnny-marr",
+        reviewDate: "Jun 25, 2022",
+        gradeValue: 10,
+        sortDate: "2022-06-25",
+        title: "Set the Boy Free",
+        yearPublished: 2016,
+        reviewMonth: "June",
+        reviewYear: 2022,
+        sortTitle: "Set the Boy Free: The Autobiography",
+        kind: "Nonfiction",
+        authors: [
+          {
+            name: "Johnny Marr",
+            notes: null,
+            sortName: "Marr, Johnny",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/949789eaa2aa356df21a80f8ba3ec1dc/8bcae/set-the-boy-free-by-johnny-marr.jpg",
+                  srcSet:
+                    "/static/949789eaa2aa356df21a80f8ba3ec1dc/8bcae/set-the-boy-free-by-johnny-marr.jpg 72w,\n/static/949789eaa2aa356df21a80f8ba3ec1dc/7306c/set-the-boy-free-by-johnny-marr.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/949789eaa2aa356df21a80f8ba3ec1dc/6903a/set-the-boy-free-by-johnny-marr.avif 72w,\n/static/949789eaa2aa356df21a80f8ba3ec1dc/65187/set-the-boy-free-by-johnny-marr.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        id: "a0eb967b-e989-53e9-923d-d9193a9a8942",
         grade: "A",
         slug: "extreme-ownership-by-jocko-willink-leif-babin",
-        edition: "Audible",
-        date: "Jun 26, 2022",
+        reviewDate: "Jun 26, 2022",
         gradeValue: 12,
+        sortDate: "2022-06-26",
         title: "Extreme Ownership",
         yearPublished: 2015,
+        reviewMonth: "June",
+        reviewYear: 2022,
         sortTitle: "Extreme Ownership: How U.S. Navy SEALs Lead and Win",
         kind: "Nonfiction",
         authors: [
@@ -1270,85 +1097,41 @@ export const data = {
         cover: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/8279bc7e8d55eec0c1f9d047cb855b56/31a1c/extreme-ownership-by-jocko-willink-leif-babin.jpg",
+                  src: "/static/8279bc7e8d55eec0c1f9d047cb855b56/8bcae/extreme-ownership-by-jocko-willink-leif-babin.jpg",
                   srcSet:
-                    "/static/8279bc7e8d55eec0c1f9d047cb855b56/5bc78/extreme-ownership-by-jocko-willink-leif-babin.jpg 62w,\n/static/8279bc7e8d55eec0c1f9d047cb855b56/59d5c/extreme-ownership-by-jocko-willink-leif-babin.jpg 124w,\n/static/8279bc7e8d55eec0c1f9d047cb855b56/31a1c/extreme-ownership-by-jocko-willink-leif-babin.jpg 248w,\n/static/8279bc7e8d55eec0c1f9d047cb855b56/a5166/extreme-ownership-by-jocko-willink-leif-babin.jpg 496w",
-                  sizes: "(min-width: 248px) 248px, 100vw",
+                    "/static/8279bc7e8d55eec0c1f9d047cb855b56/8bcae/extreme-ownership-by-jocko-willink-leif-babin.jpg 72w,\n/static/8279bc7e8d55eec0c1f9d047cb855b56/7306c/extreme-ownership-by-jocko-willink-leif-babin.jpg 144w",
+                  sizes: "72px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/8279bc7e8d55eec0c1f9d047cb855b56/6b3a6/extreme-ownership-by-jocko-willink-leif-babin.avif 62w,\n/static/8279bc7e8d55eec0c1f9d047cb855b56/3c542/extreme-ownership-by-jocko-willink-leif-babin.avif 124w,\n/static/8279bc7e8d55eec0c1f9d047cb855b56/c155b/extreme-ownership-by-jocko-willink-leif-babin.avif 248w,\n/static/8279bc7e8d55eec0c1f9d047cb855b56/1ad14/extreme-ownership-by-jocko-willink-leif-babin.avif 496w",
+                      "/static/8279bc7e8d55eec0c1f9d047cb855b56/6903a/extreme-ownership-by-jocko-willink-leif-babin.avif 72w,\n/static/8279bc7e8d55eec0c1f9d047cb855b56/65187/extreme-ownership-by-jocko-willink-leif-babin.avif 144w",
                     type: "image/avif",
-                    sizes: "(min-width: 248px) 248px, 100vw",
+                    sizes: "72px",
                   },
                 ],
               },
-              width: 248,
-              height: 372,
+              width: 72,
+              height: 108,
             },
           },
         },
       },
       {
-        id: "c915e94d-ee35-537f-985a-7dd24764c6c4",
-        sequence: 23,
-        grade: "B+",
-        slug: "set-the-boy-free-by-johnny-marr",
-        edition: "Audible",
-        date: "Jun 25, 2022",
-        gradeValue: 10,
-        title: "Set the Boy Free",
-        yearPublished: 2016,
-        sortTitle: "Set the Boy Free: The Autobiography",
-        kind: "Nonfiction",
-        authors: [
-          {
-            name: "Johnny Marr",
-            notes: null,
-            sortName: "Marr, Johnny",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "constrained" as const,
-              images: {
-                fallback: {
-                  src: "/static/949789eaa2aa356df21a80f8ba3ec1dc/31a1c/set-the-boy-free-by-johnny-marr.jpg",
-                  srcSet:
-                    "/static/949789eaa2aa356df21a80f8ba3ec1dc/5bc78/set-the-boy-free-by-johnny-marr.jpg 62w,\n/static/949789eaa2aa356df21a80f8ba3ec1dc/59d5c/set-the-boy-free-by-johnny-marr.jpg 124w,\n/static/949789eaa2aa356df21a80f8ba3ec1dc/31a1c/set-the-boy-free-by-johnny-marr.jpg 248w,\n/static/949789eaa2aa356df21a80f8ba3ec1dc/a5166/set-the-boy-free-by-johnny-marr.jpg 496w",
-                  sizes: "(min-width: 248px) 248px, 100vw",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/949789eaa2aa356df21a80f8ba3ec1dc/6b3a6/set-the-boy-free-by-johnny-marr.avif 62w,\n/static/949789eaa2aa356df21a80f8ba3ec1dc/3c542/set-the-boy-free-by-johnny-marr.avif 124w,\n/static/949789eaa2aa356df21a80f8ba3ec1dc/c155b/set-the-boy-free-by-johnny-marr.avif 248w,\n/static/949789eaa2aa356df21a80f8ba3ec1dc/1ad14/set-the-boy-free-by-johnny-marr.avif 496w",
-                    type: "image/avif",
-                    sizes: "(min-width: 248px) 248px, 100vw",
-                  },
-                ],
-              },
-              width: 248,
-              height: 372,
-            },
-          },
-        },
-      },
-      {
-        id: "19c8413b-a397-5923-bff1-0d04af28336a",
-        sequence: 22,
-        grade: "B-",
-        slug: "casino-royale-by-ian-fleming",
-        edition: "Kindle",
-        date: "Jun 14, 2022",
-        gradeValue: 8,
-        title: "Casino Royale",
-        yearPublished: 1953,
-        sortTitle: "Casino Royale",
+        id: "a713e8dd-da5b-5a84-8547-a509eb22a73b",
+        grade: "D",
+        slug: "live-and-let-die-by-ian-fleming",
+        reviewDate: "Jun 30, 2022",
+        gradeValue: 3,
+        sortDate: "2022-06-30",
+        title: "Live and Let Die",
+        yearPublished: 1954,
+        reviewMonth: "June",
+        reviewYear: 2022,
+        sortTitle: "Live and Let Die",
         kind: "Novel",
         authors: [
           {
@@ -1360,761 +1143,133 @@ export const data = {
         cover: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/ae97f975edc58937695785fe4bcaf8df/31a1c/casino-royale-by-ian-fleming.jpg",
+                  src: "/static/2971b726dd5163d3dc0b6f08b66a2a53/8bcae/live-and-let-die-by-ian-fleming.jpg",
                   srcSet:
-                    "/static/ae97f975edc58937695785fe4bcaf8df/5bc78/casino-royale-by-ian-fleming.jpg 62w,\n/static/ae97f975edc58937695785fe4bcaf8df/59d5c/casino-royale-by-ian-fleming.jpg 124w,\n/static/ae97f975edc58937695785fe4bcaf8df/31a1c/casino-royale-by-ian-fleming.jpg 248w,\n/static/ae97f975edc58937695785fe4bcaf8df/a5166/casino-royale-by-ian-fleming.jpg 496w",
-                  sizes: "(min-width: 248px) 248px, 100vw",
+                    "/static/2971b726dd5163d3dc0b6f08b66a2a53/8bcae/live-and-let-die-by-ian-fleming.jpg 72w,\n/static/2971b726dd5163d3dc0b6f08b66a2a53/7306c/live-and-let-die-by-ian-fleming.jpg 144w",
+                  sizes: "72px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/ae97f975edc58937695785fe4bcaf8df/6b3a6/casino-royale-by-ian-fleming.avif 62w,\n/static/ae97f975edc58937695785fe4bcaf8df/3c542/casino-royale-by-ian-fleming.avif 124w,\n/static/ae97f975edc58937695785fe4bcaf8df/c155b/casino-royale-by-ian-fleming.avif 248w,\n/static/ae97f975edc58937695785fe4bcaf8df/1ad14/casino-royale-by-ian-fleming.avif 496w",
+                      "/static/2971b726dd5163d3dc0b6f08b66a2a53/6903a/live-and-let-die-by-ian-fleming.avif 72w,\n/static/2971b726dd5163d3dc0b6f08b66a2a53/65187/live-and-let-die-by-ian-fleming.avif 144w",
                     type: "image/avif",
-                    sizes: "(min-width: 248px) 248px, 100vw",
+                    sizes: "72px",
                   },
                 ],
               },
-              width: 248,
-              height: 372,
+              width: 72,
+              height: 108,
             },
           },
         },
       },
       {
-        id: "2674faf3-2834-5627-9605-55c4fedeee3c",
-        sequence: 21,
-        grade: "A-",
-        slug: "churchill-by-andrew-roberts",
-        edition: "Audible",
-        date: "Jun 14, 2022",
-        gradeValue: 11,
-        title: "Churchill",
-        yearPublished: 2018,
-        sortTitle: "Churchill: Walking with Destiny",
-        kind: "Nonfiction",
-        authors: [
-          {
-            name: "Andrew Roberts",
-            notes: null,
-            sortName: "Roberts, Andrew",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "constrained" as const,
-              images: {
-                fallback: {
-                  src: "/static/fc801250ca4d771a07f6075010db9cef/31a1c/churchill-by-andrew-roberts.jpg",
-                  srcSet:
-                    "/static/fc801250ca4d771a07f6075010db9cef/5bc78/churchill-by-andrew-roberts.jpg 62w,\n/static/fc801250ca4d771a07f6075010db9cef/59d5c/churchill-by-andrew-roberts.jpg 124w,\n/static/fc801250ca4d771a07f6075010db9cef/31a1c/churchill-by-andrew-roberts.jpg 248w,\n/static/fc801250ca4d771a07f6075010db9cef/a5166/churchill-by-andrew-roberts.jpg 496w",
-                  sizes: "(min-width: 248px) 248px, 100vw",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/fc801250ca4d771a07f6075010db9cef/6b3a6/churchill-by-andrew-roberts.avif 62w,\n/static/fc801250ca4d771a07f6075010db9cef/3c542/churchill-by-andrew-roberts.avif 124w,\n/static/fc801250ca4d771a07f6075010db9cef/c155b/churchill-by-andrew-roberts.avif 248w,\n/static/fc801250ca4d771a07f6075010db9cef/1ad14/churchill-by-andrew-roberts.avif 496w",
-                    type: "image/avif",
-                    sizes: "(min-width: 248px) 248px, 100vw",
-                  },
-                ],
-              },
-              width: 248,
-              height: 372,
-            },
-          },
-        },
-      },
-      {
-        id: "42251157-41ad-571e-a22e-8321aa3274b6",
-        sequence: 20,
-        grade: null,
-        slug: "living-with-a-seal-by-jesse-itzler",
-        edition: "Kindle",
-        date: "Jun 1, 2022",
-        gradeValue: null,
-        title: "Living with a SEAL",
-        yearPublished: 2015,
-        sortTitle:
-          "Living with a SEAL: 31 Days Training with the Toughest Man on the Planet",
-        kind: "Nonfiction",
-        authors: [
-          {
-            name: "Jesse Itzler",
-            notes: null,
-            sortName: "Itzler, Jesse",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "constrained" as const,
-              images: {
-                fallback: {
-                  src: "/static/7376b6213dfad4ca84fd45313514b7a6/31a1c/living-with-a-seal-by-jesse-itzler.jpg",
-                  srcSet:
-                    "/static/7376b6213dfad4ca84fd45313514b7a6/5bc78/living-with-a-seal-by-jesse-itzler.jpg 62w,\n/static/7376b6213dfad4ca84fd45313514b7a6/59d5c/living-with-a-seal-by-jesse-itzler.jpg 124w,\n/static/7376b6213dfad4ca84fd45313514b7a6/31a1c/living-with-a-seal-by-jesse-itzler.jpg 248w,\n/static/7376b6213dfad4ca84fd45313514b7a6/a5166/living-with-a-seal-by-jesse-itzler.jpg 496w",
-                  sizes: "(min-width: 248px) 248px, 100vw",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/7376b6213dfad4ca84fd45313514b7a6/6b3a6/living-with-a-seal-by-jesse-itzler.avif 62w,\n/static/7376b6213dfad4ca84fd45313514b7a6/3c542/living-with-a-seal-by-jesse-itzler.avif 124w,\n/static/7376b6213dfad4ca84fd45313514b7a6/c155b/living-with-a-seal-by-jesse-itzler.avif 248w,\n/static/7376b6213dfad4ca84fd45313514b7a6/1ad14/living-with-a-seal-by-jesse-itzler.avif 496w",
-                    type: "image/avif",
-                    sizes: "(min-width: 248px) 248px, 100vw",
-                  },
-                ],
-              },
-              width: 248,
-              height: 372,
-            },
-          },
-        },
-      },
-      {
-        id: "5870f4e5-9a6a-5813-ac64-e41daa1ae60a",
-        sequence: 19,
-        grade: "C+",
-        slug: "total-recall-by-arnold-schwarzenegger",
-        edition: "Audible",
-        date: "May 21, 2022",
-        gradeValue: 7,
-        title: "Total Recall",
-        yearPublished: 2012,
-        sortTitle: "Total Recall: My Unbelievably True Life Story",
-        kind: "Nonfiction",
-        authors: [
-          {
-            name: "Arnold Schwarzenegger",
-            notes: null,
-            sortName: "Schwarzenegger, Arnold",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "constrained" as const,
-              images: {
-                fallback: {
-                  src: "/static/ab96409169fd5cd92838b2465ba85cdb/31a1c/total-recall-by-arnold-schwarzenegger.jpg",
-                  srcSet:
-                    "/static/ab96409169fd5cd92838b2465ba85cdb/5bc78/total-recall-by-arnold-schwarzenegger.jpg 62w,\n/static/ab96409169fd5cd92838b2465ba85cdb/59d5c/total-recall-by-arnold-schwarzenegger.jpg 124w,\n/static/ab96409169fd5cd92838b2465ba85cdb/31a1c/total-recall-by-arnold-schwarzenegger.jpg 248w,\n/static/ab96409169fd5cd92838b2465ba85cdb/a5166/total-recall-by-arnold-schwarzenegger.jpg 496w",
-                  sizes: "(min-width: 248px) 248px, 100vw",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/ab96409169fd5cd92838b2465ba85cdb/6b3a6/total-recall-by-arnold-schwarzenegger.avif 62w,\n/static/ab96409169fd5cd92838b2465ba85cdb/3c542/total-recall-by-arnold-schwarzenegger.avif 124w,\n/static/ab96409169fd5cd92838b2465ba85cdb/c155b/total-recall-by-arnold-schwarzenegger.avif 248w,\n/static/ab96409169fd5cd92838b2465ba85cdb/1ad14/total-recall-by-arnold-schwarzenegger.avif 496w",
-                    type: "image/avif",
-                    sizes: "(min-width: 248px) 248px, 100vw",
-                  },
-                ],
-              },
-              width: 248,
-              height: 372,
-            },
-          },
-        },
-      },
-      {
-        id: "7a1df4b4-b40d-5f10-bff1-62ad84741777",
-        sequence: 18,
-        grade: "A-",
-        slug: "the-rise-of-theodore-roosevelt-by-edmund-morris",
-        edition: "Audible",
-        date: "May 7, 2022",
-        gradeValue: 11,
-        title: "The Rise of Theodore Roosevelt",
-        yearPublished: 1979,
-        sortTitle: "Rise of Theodore Roosevelt",
-        kind: "Nonfiction",
-        authors: [
-          {
-            name: "Edmund Morris",
-            notes: null,
-            sortName: "Morris, Edmund",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "constrained" as const,
-              images: {
-                fallback: {
-                  src: "/static/f825a675ac30c134f06329a317ae50eb/31a1c/the-rise-of-theodore-roosevelt-by-edmund-morris.jpg",
-                  srcSet:
-                    "/static/f825a675ac30c134f06329a317ae50eb/5bc78/the-rise-of-theodore-roosevelt-by-edmund-morris.jpg 62w,\n/static/f825a675ac30c134f06329a317ae50eb/59d5c/the-rise-of-theodore-roosevelt-by-edmund-morris.jpg 124w,\n/static/f825a675ac30c134f06329a317ae50eb/31a1c/the-rise-of-theodore-roosevelt-by-edmund-morris.jpg 248w,\n/static/f825a675ac30c134f06329a317ae50eb/a5166/the-rise-of-theodore-roosevelt-by-edmund-morris.jpg 496w",
-                  sizes: "(min-width: 248px) 248px, 100vw",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/f825a675ac30c134f06329a317ae50eb/6b3a6/the-rise-of-theodore-roosevelt-by-edmund-morris.avif 62w,\n/static/f825a675ac30c134f06329a317ae50eb/3c542/the-rise-of-theodore-roosevelt-by-edmund-morris.avif 124w,\n/static/f825a675ac30c134f06329a317ae50eb/c155b/the-rise-of-theodore-roosevelt-by-edmund-morris.avif 248w,\n/static/f825a675ac30c134f06329a317ae50eb/1ad14/the-rise-of-theodore-roosevelt-by-edmund-morris.avif 496w",
-                    type: "image/avif",
-                    sizes: "(min-width: 248px) 248px, 100vw",
-                  },
-                ],
-              },
-              width: 248,
-              height: 372,
-            },
-          },
-        },
-      },
-      {
-        id: "f5c000f2-6fb5-504d-9c1d-458581cde64a",
-        sequence: 17,
-        grade: "B+",
-        slug: "behold-the-void-by-philip-fracassi",
-        edition: "Kindle",
-        date: "May 7, 2022",
-        gradeValue: 10,
-        title: "Behold the Void",
-        yearPublished: 2017,
-        sortTitle: "Behold the Void",
-        kind: "Collection",
-        authors: [
-          {
-            name: "Philip Fracassi",
-            notes: null,
-            sortName: "Fracassi, Philip",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "constrained" as const,
-              images: {
-                fallback: {
-                  src: "/static/1de200a682b62e4daf7358cd87072d87/31a1c/behold-the-void-by-philip-fracassi.jpg",
-                  srcSet:
-                    "/static/1de200a682b62e4daf7358cd87072d87/5bc78/behold-the-void-by-philip-fracassi.jpg 62w,\n/static/1de200a682b62e4daf7358cd87072d87/59d5c/behold-the-void-by-philip-fracassi.jpg 124w,\n/static/1de200a682b62e4daf7358cd87072d87/31a1c/behold-the-void-by-philip-fracassi.jpg 248w,\n/static/1de200a682b62e4daf7358cd87072d87/a5166/behold-the-void-by-philip-fracassi.jpg 496w",
-                  sizes: "(min-width: 248px) 248px, 100vw",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/1de200a682b62e4daf7358cd87072d87/6b3a6/behold-the-void-by-philip-fracassi.avif 62w,\n/static/1de200a682b62e4daf7358cd87072d87/3c542/behold-the-void-by-philip-fracassi.avif 124w,\n/static/1de200a682b62e4daf7358cd87072d87/c155b/behold-the-void-by-philip-fracassi.avif 248w,\n/static/1de200a682b62e4daf7358cd87072d87/1ad14/behold-the-void-by-philip-fracassi.avif 496w",
-                    type: "image/avif",
-                    sizes: "(min-width: 248px) 248px, 100vw",
-                  },
-                ],
-              },
-              width: 248,
-              height: 372,
-            },
-          },
-        },
-      },
-      {
-        id: "7df472af-9f79-5d2d-91a3-f19ea10158e5",
-        sequence: 16,
-        grade: "B+",
-        slug: "mandala-by-philip-fracassi",
-        edition: "Kindle",
-        date: "May 7, 2022",
-        gradeValue: 10,
-        title: "Mandala",
-        yearPublished: 2017,
-        sortTitle: "Mandala",
-        kind: "Novella",
-        authors: [
-          {
-            name: "Philip Fracassi",
-            notes: null,
-            sortName: "Fracassi, Philip",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "constrained" as const,
-              images: {
-                fallback: {
-                  src: "/static/1de200a682b62e4daf7358cd87072d87/31a1c/behold-the-void-by-philip-fracassi.jpg",
-                  srcSet:
-                    "/static/1de200a682b62e4daf7358cd87072d87/5bc78/behold-the-void-by-philip-fracassi.jpg 62w,\n/static/1de200a682b62e4daf7358cd87072d87/59d5c/behold-the-void-by-philip-fracassi.jpg 124w,\n/static/1de200a682b62e4daf7358cd87072d87/31a1c/behold-the-void-by-philip-fracassi.jpg 248w,\n/static/1de200a682b62e4daf7358cd87072d87/a5166/behold-the-void-by-philip-fracassi.jpg 496w",
-                  sizes: "(min-width: 248px) 248px, 100vw",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/1de200a682b62e4daf7358cd87072d87/6b3a6/behold-the-void-by-philip-fracassi.avif 62w,\n/static/1de200a682b62e4daf7358cd87072d87/3c542/behold-the-void-by-philip-fracassi.avif 124w,\n/static/1de200a682b62e4daf7358cd87072d87/c155b/behold-the-void-by-philip-fracassi.avif 248w,\n/static/1de200a682b62e4daf7358cd87072d87/1ad14/behold-the-void-by-philip-fracassi.avif 496w",
-                    type: "image/avif",
-                    sizes: "(min-width: 248px) 248px, 100vw",
-                  },
-                ],
-              },
-              width: 248,
-              height: 372,
-            },
-          },
-        },
-      },
-      {
-        id: "44bbb09f-c522-5d75-a577-4512bc565033",
-        sequence: 15,
-        grade: "C",
-        slug: "fail-safe-by-philip-fracassi",
-        edition: "Kindle",
-        date: "Apr 30, 2022",
-        gradeValue: 6,
-        title: "Fail-Safe",
-        yearPublished: 2017,
-        sortTitle: "Fail-Safe",
-        kind: "Short Story",
-        authors: [
-          {
-            name: "Philip Fracassi",
-            notes: null,
-            sortName: "Fracassi, Philip",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "constrained" as const,
-              images: {
-                fallback: {
-                  src: "/static/1de200a682b62e4daf7358cd87072d87/31a1c/behold-the-void-by-philip-fracassi.jpg",
-                  srcSet:
-                    "/static/1de200a682b62e4daf7358cd87072d87/5bc78/behold-the-void-by-philip-fracassi.jpg 62w,\n/static/1de200a682b62e4daf7358cd87072d87/59d5c/behold-the-void-by-philip-fracassi.jpg 124w,\n/static/1de200a682b62e4daf7358cd87072d87/31a1c/behold-the-void-by-philip-fracassi.jpg 248w,\n/static/1de200a682b62e4daf7358cd87072d87/a5166/behold-the-void-by-philip-fracassi.jpg 496w",
-                  sizes: "(min-width: 248px) 248px, 100vw",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/1de200a682b62e4daf7358cd87072d87/6b3a6/behold-the-void-by-philip-fracassi.avif 62w,\n/static/1de200a682b62e4daf7358cd87072d87/3c542/behold-the-void-by-philip-fracassi.avif 124w,\n/static/1de200a682b62e4daf7358cd87072d87/c155b/behold-the-void-by-philip-fracassi.avif 248w,\n/static/1de200a682b62e4daf7358cd87072d87/1ad14/behold-the-void-by-philip-fracassi.avif 496w",
-                    type: "image/avif",
-                    sizes: "(min-width: 248px) 248px, 100vw",
-                  },
-                ],
-              },
-              width: 248,
-              height: 372,
-            },
-          },
-        },
-      },
-      {
-        id: "a2835c15-20dc-54c0-beac-ac958a1087b7",
-        sequence: 14,
-        grade: "B-",
-        slug: "mother-by-philip-fracassi",
-        edition: "Kindle",
-        date: "Apr 23, 2022",
-        gradeValue: 8,
-        title: "Mother",
-        yearPublished: 2015,
-        sortTitle: "Mother",
-        kind: "Short Story",
-        authors: [
-          {
-            name: "Philip Fracassi",
-            notes: null,
-            sortName: "Fracassi, Philip",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "constrained" as const,
-              images: {
-                fallback: {
-                  src: "/static/1de200a682b62e4daf7358cd87072d87/31a1c/behold-the-void-by-philip-fracassi.jpg",
-                  srcSet:
-                    "/static/1de200a682b62e4daf7358cd87072d87/5bc78/behold-the-void-by-philip-fracassi.jpg 62w,\n/static/1de200a682b62e4daf7358cd87072d87/59d5c/behold-the-void-by-philip-fracassi.jpg 124w,\n/static/1de200a682b62e4daf7358cd87072d87/31a1c/behold-the-void-by-philip-fracassi.jpg 248w,\n/static/1de200a682b62e4daf7358cd87072d87/a5166/behold-the-void-by-philip-fracassi.jpg 496w",
-                  sizes: "(min-width: 248px) 248px, 100vw",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/1de200a682b62e4daf7358cd87072d87/6b3a6/behold-the-void-by-philip-fracassi.avif 62w,\n/static/1de200a682b62e4daf7358cd87072d87/3c542/behold-the-void-by-philip-fracassi.avif 124w,\n/static/1de200a682b62e4daf7358cd87072d87/c155b/behold-the-void-by-philip-fracassi.avif 248w,\n/static/1de200a682b62e4daf7358cd87072d87/1ad14/behold-the-void-by-philip-fracassi.avif 496w",
-                    type: "image/avif",
-                    sizes: "(min-width: 248px) 248px, 100vw",
-                  },
-                ],
-              },
-              width: 248,
-              height: 372,
-            },
-          },
-        },
-      },
-      {
-        id: "bd1ba9ee-ab3b-5e03-a983-c03d7e4ce00a",
-        sequence: 13,
-        grade: "C+",
-        slug: "surfer-girl-by-philip-fracassi",
-        edition: "Kindle",
-        date: "Apr 22, 2022",
-        gradeValue: 7,
-        title: "Surfer Girl",
-        yearPublished: 2017,
-        sortTitle: "Surfer Girl",
-        kind: "Short Story",
-        authors: [
-          {
-            name: "Philip Fracassi",
-            notes: null,
-            sortName: "Fracassi, Philip",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "constrained" as const,
-              images: {
-                fallback: {
-                  src: "/static/1de200a682b62e4daf7358cd87072d87/31a1c/behold-the-void-by-philip-fracassi.jpg",
-                  srcSet:
-                    "/static/1de200a682b62e4daf7358cd87072d87/5bc78/behold-the-void-by-philip-fracassi.jpg 62w,\n/static/1de200a682b62e4daf7358cd87072d87/59d5c/behold-the-void-by-philip-fracassi.jpg 124w,\n/static/1de200a682b62e4daf7358cd87072d87/31a1c/behold-the-void-by-philip-fracassi.jpg 248w,\n/static/1de200a682b62e4daf7358cd87072d87/a5166/behold-the-void-by-philip-fracassi.jpg 496w",
-                  sizes: "(min-width: 248px) 248px, 100vw",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/1de200a682b62e4daf7358cd87072d87/6b3a6/behold-the-void-by-philip-fracassi.avif 62w,\n/static/1de200a682b62e4daf7358cd87072d87/3c542/behold-the-void-by-philip-fracassi.avif 124w,\n/static/1de200a682b62e4daf7358cd87072d87/c155b/behold-the-void-by-philip-fracassi.avif 248w,\n/static/1de200a682b62e4daf7358cd87072d87/1ad14/behold-the-void-by-philip-fracassi.avif 496w",
-                    type: "image/avif",
-                    sizes: "(min-width: 248px) 248px, 100vw",
-                  },
-                ],
-              },
-              width: 248,
-              height: 372,
-            },
-          },
-        },
-      },
-      {
-        id: "17c48bd0-3083-5ab9-9ca6-4fd1c52cd678",
-        sequence: 12,
-        grade: "C+",
-        slug: "the-baby-farmer-by-philip-fracassi",
-        edition: "Kindle",
-        date: "Apr 21, 2022",
-        gradeValue: 7,
-        title: "The Baby Farmer",
-        yearPublished: 2017,
-        sortTitle: "Baby Farmer",
-        kind: "Short Story",
-        authors: [
-          {
-            name: "Philip Fracassi",
-            notes: null,
-            sortName: "Fracassi, Philip",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "constrained" as const,
-              images: {
-                fallback: {
-                  src: "/static/1de200a682b62e4daf7358cd87072d87/31a1c/behold-the-void-by-philip-fracassi.jpg",
-                  srcSet:
-                    "/static/1de200a682b62e4daf7358cd87072d87/5bc78/behold-the-void-by-philip-fracassi.jpg 62w,\n/static/1de200a682b62e4daf7358cd87072d87/59d5c/behold-the-void-by-philip-fracassi.jpg 124w,\n/static/1de200a682b62e4daf7358cd87072d87/31a1c/behold-the-void-by-philip-fracassi.jpg 248w,\n/static/1de200a682b62e4daf7358cd87072d87/a5166/behold-the-void-by-philip-fracassi.jpg 496w",
-                  sizes: "(min-width: 248px) 248px, 100vw",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/1de200a682b62e4daf7358cd87072d87/6b3a6/behold-the-void-by-philip-fracassi.avif 62w,\n/static/1de200a682b62e4daf7358cd87072d87/3c542/behold-the-void-by-philip-fracassi.avif 124w,\n/static/1de200a682b62e4daf7358cd87072d87/c155b/behold-the-void-by-philip-fracassi.avif 248w,\n/static/1de200a682b62e4daf7358cd87072d87/1ad14/behold-the-void-by-philip-fracassi.avif 496w",
-                    type: "image/avif",
-                    sizes: "(min-width: 248px) 248px, 100vw",
-                  },
-                ],
-              },
-              width: 248,
-              height: 372,
-            },
-          },
-        },
-      },
-      {
-        id: "a24c9773-4c7a-5dea-8160-55abd3804371",
-        sequence: 11,
-        grade: "C+",
-        slug: "coffin-by-philip-fracassi",
-        edition: "Kindle",
-        date: "Apr 20, 2022",
-        gradeValue: 7,
-        title: "Coffin",
-        yearPublished: 2017,
-        sortTitle: "Coffin",
-        kind: "Short Story",
-        authors: [
-          {
-            name: "Philip Fracassi",
-            notes: null,
-            sortName: "Fracassi, Philip",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "constrained" as const,
-              images: {
-                fallback: {
-                  src: "/static/1de200a682b62e4daf7358cd87072d87/31a1c/behold-the-void-by-philip-fracassi.jpg",
-                  srcSet:
-                    "/static/1de200a682b62e4daf7358cd87072d87/5bc78/behold-the-void-by-philip-fracassi.jpg 62w,\n/static/1de200a682b62e4daf7358cd87072d87/59d5c/behold-the-void-by-philip-fracassi.jpg 124w,\n/static/1de200a682b62e4daf7358cd87072d87/31a1c/behold-the-void-by-philip-fracassi.jpg 248w,\n/static/1de200a682b62e4daf7358cd87072d87/a5166/behold-the-void-by-philip-fracassi.jpg 496w",
-                  sizes: "(min-width: 248px) 248px, 100vw",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/1de200a682b62e4daf7358cd87072d87/6b3a6/behold-the-void-by-philip-fracassi.avif 62w,\n/static/1de200a682b62e4daf7358cd87072d87/3c542/behold-the-void-by-philip-fracassi.avif 124w,\n/static/1de200a682b62e4daf7358cd87072d87/c155b/behold-the-void-by-philip-fracassi.avif 248w,\n/static/1de200a682b62e4daf7358cd87072d87/1ad14/behold-the-void-by-philip-fracassi.avif 496w",
-                    type: "image/avif",
-                    sizes: "(min-width: 248px) 248px, 100vw",
-                  },
-                ],
-              },
-              width: 248,
-              height: 372,
-            },
-          },
-        },
-      },
-      {
-        id: "eeaead5c-1d8e-525c-bdad-57955a75b530",
-        sequence: 10,
-        grade: "B",
-        slug: "the-horse-thief-by-philip-fracassi",
-        edition: "Kindle",
-        date: "Apr 19, 2022",
-        gradeValue: 9,
-        title: "The Horse Thief",
-        yearPublished: 2017,
-        sortTitle: "Horse Thief",
-        kind: "Short Story",
-        authors: [
-          {
-            name: "Philip Fracassi",
-            notes: null,
-            sortName: "Fracassi, Philip",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "constrained" as const,
-              images: {
-                fallback: {
-                  src: "/static/1de200a682b62e4daf7358cd87072d87/31a1c/behold-the-void-by-philip-fracassi.jpg",
-                  srcSet:
-                    "/static/1de200a682b62e4daf7358cd87072d87/5bc78/behold-the-void-by-philip-fracassi.jpg 62w,\n/static/1de200a682b62e4daf7358cd87072d87/59d5c/behold-the-void-by-philip-fracassi.jpg 124w,\n/static/1de200a682b62e4daf7358cd87072d87/31a1c/behold-the-void-by-philip-fracassi.jpg 248w,\n/static/1de200a682b62e4daf7358cd87072d87/a5166/behold-the-void-by-philip-fracassi.jpg 496w",
-                  sizes: "(min-width: 248px) 248px, 100vw",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/1de200a682b62e4daf7358cd87072d87/6b3a6/behold-the-void-by-philip-fracassi.avif 62w,\n/static/1de200a682b62e4daf7358cd87072d87/3c542/behold-the-void-by-philip-fracassi.avif 124w,\n/static/1de200a682b62e4daf7358cd87072d87/c155b/behold-the-void-by-philip-fracassi.avif 248w,\n/static/1de200a682b62e4daf7358cd87072d87/1ad14/behold-the-void-by-philip-fracassi.avif 496w",
-                    type: "image/avif",
-                    sizes: "(min-width: 248px) 248px, 100vw",
-                  },
-                ],
-              },
-              width: 248,
-              height: 372,
-            },
-          },
-        },
-      },
-      {
-        id: "6f6234f9-600a-51f8-ad6d-63e2424707be",
-        sequence: 9,
-        grade: "A-",
-        slug: "altar-by-philip-fracassi",
-        edition: "Kindle",
-        date: "Apr 18, 2022",
-        gradeValue: 11,
-        title: "Altar",
-        yearPublished: 2016,
-        sortTitle: "Altar",
-        kind: "Short Story",
-        authors: [
-          {
-            name: "Philip Fracassi",
-            notes: null,
-            sortName: "Fracassi, Philip",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "constrained" as const,
-              images: {
-                fallback: {
-                  src: "/static/1de200a682b62e4daf7358cd87072d87/31a1c/behold-the-void-by-philip-fracassi.jpg",
-                  srcSet:
-                    "/static/1de200a682b62e4daf7358cd87072d87/5bc78/behold-the-void-by-philip-fracassi.jpg 62w,\n/static/1de200a682b62e4daf7358cd87072d87/59d5c/behold-the-void-by-philip-fracassi.jpg 124w,\n/static/1de200a682b62e4daf7358cd87072d87/31a1c/behold-the-void-by-philip-fracassi.jpg 248w,\n/static/1de200a682b62e4daf7358cd87072d87/a5166/behold-the-void-by-philip-fracassi.jpg 496w",
-                  sizes: "(min-width: 248px) 248px, 100vw",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/1de200a682b62e4daf7358cd87072d87/6b3a6/behold-the-void-by-philip-fracassi.avif 62w,\n/static/1de200a682b62e4daf7358cd87072d87/3c542/behold-the-void-by-philip-fracassi.avif 124w,\n/static/1de200a682b62e4daf7358cd87072d87/c155b/behold-the-void-by-philip-fracassi.avif 248w,\n/static/1de200a682b62e4daf7358cd87072d87/1ad14/behold-the-void-by-philip-fracassi.avif 496w",
-                    type: "image/avif",
-                    sizes: "(min-width: 248px) 248px, 100vw",
-                  },
-                ],
-              },
-              width: 248,
-              height: 372,
-            },
-          },
-        },
-      },
-      {
-        id: "1a04ad92-cefc-5c07-9608-c904f4f39794",
-        sequence: 8,
-        grade: "B-",
-        slug: "soft-construction-of-a-sunset-by-philip-fracassi",
-        edition: "Kindle",
-        date: "Apr 17, 2022",
-        gradeValue: 8,
-        title: "Soft Construction of a Sunset",
-        yearPublished: 2017,
-        sortTitle: "Soft Construction of a Sunset",
-        kind: "Short Story",
-        authors: [
-          {
-            name: "Philip Fracassi",
-            notes: null,
-            sortName: "Fracassi, Philip",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "constrained" as const,
-              images: {
-                fallback: {
-                  src: "/static/1de200a682b62e4daf7358cd87072d87/31a1c/behold-the-void-by-philip-fracassi.jpg",
-                  srcSet:
-                    "/static/1de200a682b62e4daf7358cd87072d87/5bc78/behold-the-void-by-philip-fracassi.jpg 62w,\n/static/1de200a682b62e4daf7358cd87072d87/59d5c/behold-the-void-by-philip-fracassi.jpg 124w,\n/static/1de200a682b62e4daf7358cd87072d87/31a1c/behold-the-void-by-philip-fracassi.jpg 248w,\n/static/1de200a682b62e4daf7358cd87072d87/a5166/behold-the-void-by-philip-fracassi.jpg 496w",
-                  sizes: "(min-width: 248px) 248px, 100vw",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/1de200a682b62e4daf7358cd87072d87/6b3a6/behold-the-void-by-philip-fracassi.avif 62w,\n/static/1de200a682b62e4daf7358cd87072d87/3c542/behold-the-void-by-philip-fracassi.avif 124w,\n/static/1de200a682b62e4daf7358cd87072d87/c155b/behold-the-void-by-philip-fracassi.avif 248w,\n/static/1de200a682b62e4daf7358cd87072d87/1ad14/behold-the-void-by-philip-fracassi.avif 496w",
-                    type: "image/avif",
-                    sizes: "(min-width: 248px) 248px, 100vw",
-                  },
-                ],
-              },
-              width: 248,
-              height: 372,
-            },
-          },
-        },
-      },
-      {
-        id: "126bd65c-5d28-5190-b6f6-5bc1f99a6fd6",
-        sequence: 7,
-        grade: "D+",
-        slug: "the-dark-tunnel-by-ross-macdonald",
-        edition: "Kindle",
-        date: "Apr 17, 2022",
-        gradeValue: 4,
-        title: "The Dark Tunnel",
-        yearPublished: 1944,
-        sortTitle: "Dark Tunnel",
+        id: "318d0d57-7b37-52ed-b35f-0f27cde06984",
+        grade: "A",
+        slug: "the-secret-history-by-donna-tartt",
+        reviewDate: "Jul 2, 2022",
+        gradeValue: 12,
+        sortDate: "2022-07-02",
+        title: "The Secret History",
+        yearPublished: 1992,
+        reviewMonth: "July",
+        reviewYear: 2022,
+        sortTitle: "Secret History",
         kind: "Novel",
         authors: [
           {
-            name: "Ross Macdonald",
-            notes: "as Kenneth Millar",
-            sortName: "Macdonald, Ross",
+            name: "Donna Tartt",
+            notes: null,
+            sortName: "Tartt, Donna",
           },
         ],
         cover: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/78b2996d1249af4d0d1b0eac16cbcce4/31a1c/the-dark-tunnel-by-ross-macdonald.jpg",
+                  src: "/static/2343629d97c59f48a5d62c1166bd9ccd/8bcae/the-secret-history-by-donna-tartt.jpg",
                   srcSet:
-                    "/static/78b2996d1249af4d0d1b0eac16cbcce4/5bc78/the-dark-tunnel-by-ross-macdonald.jpg 62w,\n/static/78b2996d1249af4d0d1b0eac16cbcce4/59d5c/the-dark-tunnel-by-ross-macdonald.jpg 124w,\n/static/78b2996d1249af4d0d1b0eac16cbcce4/31a1c/the-dark-tunnel-by-ross-macdonald.jpg 248w,\n/static/78b2996d1249af4d0d1b0eac16cbcce4/a5166/the-dark-tunnel-by-ross-macdonald.jpg 496w",
-                  sizes: "(min-width: 248px) 248px, 100vw",
+                    "/static/2343629d97c59f48a5d62c1166bd9ccd/8bcae/the-secret-history-by-donna-tartt.jpg 72w,\n/static/2343629d97c59f48a5d62c1166bd9ccd/7306c/the-secret-history-by-donna-tartt.jpg 144w",
+                  sizes: "72px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/78b2996d1249af4d0d1b0eac16cbcce4/6b3a6/the-dark-tunnel-by-ross-macdonald.avif 62w,\n/static/78b2996d1249af4d0d1b0eac16cbcce4/3c542/the-dark-tunnel-by-ross-macdonald.avif 124w,\n/static/78b2996d1249af4d0d1b0eac16cbcce4/c155b/the-dark-tunnel-by-ross-macdonald.avif 248w,\n/static/78b2996d1249af4d0d1b0eac16cbcce4/1ad14/the-dark-tunnel-by-ross-macdonald.avif 496w",
+                      "/static/2343629d97c59f48a5d62c1166bd9ccd/6903a/the-secret-history-by-donna-tartt.avif 72w,\n/static/2343629d97c59f48a5d62c1166bd9ccd/65187/the-secret-history-by-donna-tartt.avif 144w",
                     type: "image/avif",
-                    sizes: "(min-width: 248px) 248px, 100vw",
+                    sizes: "72px",
                   },
                 ],
               },
-              width: 248,
-              height: 372,
+              width: 72,
+              height: 108,
             },
           },
         },
       },
       {
-        id: "74387a5a-56e4-511b-afee-da01135dd32b",
-        sequence: 6,
-        grade: "C-",
-        slug: "desert-pickup-by-richard-laymon",
-        edition: "Kindle",
-        date: "Apr 3, 2022",
-        gradeValue: 5,
-        title: "Desert Pickup",
-        yearPublished: 1970,
-        sortTitle: "Desert Pickup",
-        kind: "Short Story",
+        id: "574d83a8-580a-5638-b8c3-692e1265be81",
+        grade: "C+",
+        slug: "dracula-by-bram-stoker",
+        reviewDate: "Jul 9, 2022",
+        gradeValue: 7,
+        sortDate: "2022-07-09",
+        title: "Dracula",
+        yearPublished: 1897,
+        reviewMonth: "July",
+        reviewYear: 2022,
+        sortTitle: "Dracula",
+        kind: "Novel",
         authors: [
           {
-            name: "Richard Laymon",
+            name: "Bram Stoker",
             notes: null,
-            sortName: "Laymon, Richard",
+            sortName: "Stoker, Bram",
           },
         ],
         cover: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/8acae41db8fa464249340b17cc680c45/31a1c/short-stories-volume-one-by-richard-laymon.jpg",
+                  src: "/static/3afc1fb3158332c4415581f11a1f2371/8bcae/dracula-by-bram-stoker.jpg",
                   srcSet:
-                    "/static/8acae41db8fa464249340b17cc680c45/5bc78/short-stories-volume-one-by-richard-laymon.jpg 62w,\n/static/8acae41db8fa464249340b17cc680c45/59d5c/short-stories-volume-one-by-richard-laymon.jpg 124w,\n/static/8acae41db8fa464249340b17cc680c45/31a1c/short-stories-volume-one-by-richard-laymon.jpg 248w,\n/static/8acae41db8fa464249340b17cc680c45/a5166/short-stories-volume-one-by-richard-laymon.jpg 496w",
-                  sizes: "(min-width: 248px) 248px, 100vw",
+                    "/static/3afc1fb3158332c4415581f11a1f2371/8bcae/dracula-by-bram-stoker.jpg 72w,\n/static/3afc1fb3158332c4415581f11a1f2371/7306c/dracula-by-bram-stoker.jpg 144w",
+                  sizes: "72px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/8acae41db8fa464249340b17cc680c45/6b3a6/short-stories-volume-one-by-richard-laymon.avif 62w,\n/static/8acae41db8fa464249340b17cc680c45/3c542/short-stories-volume-one-by-richard-laymon.avif 124w,\n/static/8acae41db8fa464249340b17cc680c45/c155b/short-stories-volume-one-by-richard-laymon.avif 248w,\n/static/8acae41db8fa464249340b17cc680c45/1ad14/short-stories-volume-one-by-richard-laymon.avif 496w",
+                      "/static/3afc1fb3158332c4415581f11a1f2371/6903a/dracula-by-bram-stoker.avif 72w,\n/static/3afc1fb3158332c4415581f11a1f2371/65187/dracula-by-bram-stoker.avif 144w",
                     type: "image/avif",
-                    sizes: "(min-width: 248px) 248px, 100vw",
+                    sizes: "72px",
                   },
                 ],
               },
-              width: 248,
-              height: 372,
+              width: 72,
+              height: 108,
             },
           },
         },
       },
       {
-        id: "303254ee-fcbe-51e5-a3fd-0938422a6228",
-        sequence: 5,
-        grade: "B+",
-        slug: "less-than-zero-by-bret-easton-ellis",
-        edition: "Kindle",
-        date: "Apr 2, 2022",
-        gradeValue: 10,
-        title: "Less Than Zero",
-        yearPublished: 1985,
-        sortTitle: "Less Than Zero",
+        id: "9ea411c8-26d6-5a01-99a6-04912da961bc",
+        grade: "C+",
+        slug: "the-rules-of-attraction-by-bret-easton-ellis",
+        reviewDate: "Jul 14, 2022",
+        gradeValue: 7,
+        sortDate: "2022-07-14",
+        title: "The Rules of Attraction",
+        yearPublished: 1987,
+        reviewMonth: "July",
+        reviewYear: 2022,
+        sortTitle: "Rules of Attraction",
         kind: "Novel",
         authors: [
           {
@@ -2126,130 +1281,368 @@ export const data = {
         cover: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/49d1cc4a84df94d078290568845332a3/31a1c/less-than-zero-by-bret-easton-ellis.jpg",
+                  src: "/static/75163f0d9da4cf49ce2d1f9b3d1c55a5/8bcae/the-rules-of-attraction-by-bret-easton-ellis.jpg",
                   srcSet:
-                    "/static/49d1cc4a84df94d078290568845332a3/5bc78/less-than-zero-by-bret-easton-ellis.jpg 62w,\n/static/49d1cc4a84df94d078290568845332a3/59d5c/less-than-zero-by-bret-easton-ellis.jpg 124w,\n/static/49d1cc4a84df94d078290568845332a3/31a1c/less-than-zero-by-bret-easton-ellis.jpg 248w,\n/static/49d1cc4a84df94d078290568845332a3/a5166/less-than-zero-by-bret-easton-ellis.jpg 496w",
-                  sizes: "(min-width: 248px) 248px, 100vw",
+                    "/static/75163f0d9da4cf49ce2d1f9b3d1c55a5/8bcae/the-rules-of-attraction-by-bret-easton-ellis.jpg 72w,\n/static/75163f0d9da4cf49ce2d1f9b3d1c55a5/7306c/the-rules-of-attraction-by-bret-easton-ellis.jpg 144w",
+                  sizes: "72px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/49d1cc4a84df94d078290568845332a3/6b3a6/less-than-zero-by-bret-easton-ellis.avif 62w,\n/static/49d1cc4a84df94d078290568845332a3/3c542/less-than-zero-by-bret-easton-ellis.avif 124w,\n/static/49d1cc4a84df94d078290568845332a3/c155b/less-than-zero-by-bret-easton-ellis.avif 248w,\n/static/49d1cc4a84df94d078290568845332a3/1ad14/less-than-zero-by-bret-easton-ellis.avif 496w",
+                      "/static/75163f0d9da4cf49ce2d1f9b3d1c55a5/6903a/the-rules-of-attraction-by-bret-easton-ellis.avif 72w,\n/static/75163f0d9da4cf49ce2d1f9b3d1c55a5/65187/the-rules-of-attraction-by-bret-easton-ellis.avif 144w",
                     type: "image/avif",
-                    sizes: "(min-width: 248px) 248px, 100vw",
+                    sizes: "72px",
                   },
                 ],
               },
-              width: 248,
-              height: 372,
+              width: 72,
+              height: 108,
             },
           },
         },
       },
       {
-        id: "edfc463b-0af6-5f94-ab62-6bc6722eb8f3",
-        sequence: 4,
+        id: "35e235ad-9993-5681-a647-08dfed2142bd",
+        grade: "D+",
+        slug: "the-48-laws-of-power-by-robert-greene",
+        reviewDate: "Jul 15, 2022",
+        gradeValue: 4,
+        sortDate: "2022-07-15",
+        title: "The 48 Laws of Power",
+        yearPublished: 1998,
+        reviewMonth: "July",
+        reviewYear: 2022,
+        sortTitle: "48 Laws of Power",
+        kind: "Nonfiction",
+        authors: [
+          {
+            name: "Robert Greene",
+            notes: null,
+            sortName: "Greene, Robert",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/f21f66ac9915b4111f60f91f94e09335/8bcae/the-48-laws-of-power-by-robert-greene.jpg",
+                  srcSet:
+                    "/static/f21f66ac9915b4111f60f91f94e09335/8bcae/the-48-laws-of-power-by-robert-greene.jpg 72w,\n/static/f21f66ac9915b4111f60f91f94e09335/7306c/the-48-laws-of-power-by-robert-greene.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/f21f66ac9915b4111f60f91f94e09335/6903a/the-48-laws-of-power-by-robert-greene.avif 72w,\n/static/f21f66ac9915b4111f60f91f94e09335/65187/the-48-laws-of-power-by-robert-greene.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        id: "8c0f7b3c-e7aa-586d-8c99-ac586fa96c0e",
         grade: "A-",
-        slug: "on-writing-by-stephen-king",
-        edition: "Kindle",
-        date: "Mar 21, 2022",
+        slug: "fight-club-by-chuck-palahniuk",
+        reviewDate: "Jul 16, 2022",
         gradeValue: 11,
-        title: "On Writing",
-        yearPublished: 2000,
-        sortTitle: "On Writing",
-        kind: "Nonfiction",
+        sortDate: "2022-07-16",
+        title: "Fight Club",
+        yearPublished: 1996,
+        reviewMonth: "July",
+        reviewYear: 2022,
+        sortTitle: "Fight Club",
+        kind: "Novel",
         authors: [
           {
-            name: "Stephen King",
+            name: "Chuck Palahniuk",
             notes: null,
-            sortName: "King, Stephen",
+            sortName: "Palahniuk, Chuck",
           },
         ],
         cover: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/2698ed79aea5b0f77baa4772154f1baf/31a1c/on-writing-by-stephen-king.jpg",
+                  src: "/static/0f06d8f06ca3dd10cf0f10d6d87cb791/8bcae/fight-club-by-chuck-palahniuk.jpg",
                   srcSet:
-                    "/static/2698ed79aea5b0f77baa4772154f1baf/5bc78/on-writing-by-stephen-king.jpg 62w,\n/static/2698ed79aea5b0f77baa4772154f1baf/59d5c/on-writing-by-stephen-king.jpg 124w,\n/static/2698ed79aea5b0f77baa4772154f1baf/31a1c/on-writing-by-stephen-king.jpg 248w,\n/static/2698ed79aea5b0f77baa4772154f1baf/a5166/on-writing-by-stephen-king.jpg 496w",
-                  sizes: "(min-width: 248px) 248px, 100vw",
+                    "/static/0f06d8f06ca3dd10cf0f10d6d87cb791/8bcae/fight-club-by-chuck-palahniuk.jpg 72w,\n/static/0f06d8f06ca3dd10cf0f10d6d87cb791/7306c/fight-club-by-chuck-palahniuk.jpg 144w",
+                  sizes: "72px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/2698ed79aea5b0f77baa4772154f1baf/6b3a6/on-writing-by-stephen-king.avif 62w,\n/static/2698ed79aea5b0f77baa4772154f1baf/3c542/on-writing-by-stephen-king.avif 124w,\n/static/2698ed79aea5b0f77baa4772154f1baf/c155b/on-writing-by-stephen-king.avif 248w,\n/static/2698ed79aea5b0f77baa4772154f1baf/1ad14/on-writing-by-stephen-king.avif 496w",
+                      "/static/0f06d8f06ca3dd10cf0f10d6d87cb791/6903a/fight-club-by-chuck-palahniuk.avif 72w,\n/static/0f06d8f06ca3dd10cf0f10d6d87cb791/65187/fight-club-by-chuck-palahniuk.avif 144w",
                     type: "image/avif",
-                    sizes: "(min-width: 248px) 248px, 100vw",
+                    sizes: "72px",
                   },
                 ],
               },
-              width: 248,
-              height: 372,
+              width: 72,
+              height: 108,
             },
           },
         },
       },
       {
-        id: "846f8b30-dd39-5e0a-8b1b-151595d67cad",
-        sequence: 3,
-        grade: "C-",
-        slug: "the-max-muscle-plan-by-brad-schoenfeld",
-        edition: "Kindle",
-        date: "Mar 18, 2022",
-        gradeValue: 5,
-        title: "The M.A.X. Muscle Plan",
-        yearPublished: 2012,
-        sortTitle: "The M.A.X. Muscle Plan",
+        id: "d584dc7d-ff1f-58fb-a143-476e91dcad07",
+        grade: "A-",
+        slug: "cured-by-lol-tolhurst",
+        reviewDate: "Jul 18, 2022",
+        gradeValue: 11,
+        sortDate: "2022-07-18",
+        title: "Cured",
+        yearPublished: 2016,
+        reviewMonth: "July",
+        reviewYear: 2022,
+        sortTitle: "Cured: The Tale of Two Imaginary Boys",
         kind: "Nonfiction",
         authors: [
           {
-            name: "Brad Schoenfeld",
+            name: "Lol Tolhurst",
             notes: null,
-            sortName: "Schoenfeld, Brad",
+            sortName: "Tolhurst, Lol",
           },
         ],
         cover: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/346d62deb88349a387bf2183d77e2e64/31a1c/the-max-muscle-plan-by-brad-schoenfeld.jpg",
+                  src: "/static/70b672c042c7c035cdb6da5a0e7483a5/8bcae/cured-by-lol-tolhurst.jpg",
                   srcSet:
-                    "/static/346d62deb88349a387bf2183d77e2e64/5bc78/the-max-muscle-plan-by-brad-schoenfeld.jpg 62w,\n/static/346d62deb88349a387bf2183d77e2e64/59d5c/the-max-muscle-plan-by-brad-schoenfeld.jpg 124w,\n/static/346d62deb88349a387bf2183d77e2e64/31a1c/the-max-muscle-plan-by-brad-schoenfeld.jpg 248w,\n/static/346d62deb88349a387bf2183d77e2e64/a5166/the-max-muscle-plan-by-brad-schoenfeld.jpg 496w",
-                  sizes: "(min-width: 248px) 248px, 100vw",
+                    "/static/70b672c042c7c035cdb6da5a0e7483a5/8bcae/cured-by-lol-tolhurst.jpg 72w,\n/static/70b672c042c7c035cdb6da5a0e7483a5/7306c/cured-by-lol-tolhurst.jpg 144w",
+                  sizes: "72px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/346d62deb88349a387bf2183d77e2e64/6b3a6/the-max-muscle-plan-by-brad-schoenfeld.avif 62w,\n/static/346d62deb88349a387bf2183d77e2e64/3c542/the-max-muscle-plan-by-brad-schoenfeld.avif 124w,\n/static/346d62deb88349a387bf2183d77e2e64/c155b/the-max-muscle-plan-by-brad-schoenfeld.avif 248w,\n/static/346d62deb88349a387bf2183d77e2e64/1ad14/the-max-muscle-plan-by-brad-schoenfeld.avif 496w",
+                      "/static/70b672c042c7c035cdb6da5a0e7483a5/6903a/cured-by-lol-tolhurst.avif 72w,\n/static/70b672c042c7c035cdb6da5a0e7483a5/65187/cured-by-lol-tolhurst.avif 144w",
                     type: "image/avif",
-                    sizes: "(min-width: 248px) 248px, 100vw",
+                    sizes: "72px",
                   },
                 ],
               },
-              width: 248,
-              height: 372,
+              width: 72,
+              height: 108,
             },
           },
         },
       },
       {
-        id: "2eb68457-b157-520b-bc46-b86168d4beb1",
-        sequence: 2,
+        id: "56fa28f9-892b-57fb-8ce1-5c126e70b3e7",
+        grade: "B+",
+        slug: "the-postman-always-rings-twice-by-james-m-cain",
+        reviewDate: "Jul 24, 2022",
+        gradeValue: 10,
+        sortDate: "2022-07-24",
+        title: "The Postman Always Rings Twice",
+        yearPublished: 1934,
+        reviewMonth: "July",
+        reviewYear: 2022,
+        sortTitle: "Postman Always Rings Twice",
+        kind: "Novel",
+        authors: [
+          {
+            name: "James M. Cain",
+            notes: null,
+            sortName: "Cain, James M.",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/2688d847692c06860102b2349a23deb4/8bcae/the-postman-always-rings-twice-by-james-m-cain.jpg",
+                  srcSet:
+                    "/static/2688d847692c06860102b2349a23deb4/8bcae/the-postman-always-rings-twice-by-james-m-cain.jpg 72w,\n/static/2688d847692c06860102b2349a23deb4/7306c/the-postman-always-rings-twice-by-james-m-cain.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/2688d847692c06860102b2349a23deb4/6903a/the-postman-always-rings-twice-by-james-m-cain.avif 72w,\n/static/2688d847692c06860102b2349a23deb4/65187/the-postman-always-rings-twice-by-james-m-cain.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        id: "83b3cc2f-a760-5512-8654-5dd11b9e518c",
         grade: "C+",
-        slug: "the-cellar-by-richard-laymon",
-        edition: "Kindle",
-        date: "Mar 16, 2022",
+        slug: "hawk-mountain-by-conner-habib",
+        reviewDate: "Sep 4, 2022",
         gradeValue: 7,
-        title: "The Cellar",
-        yearPublished: 1980,
-        sortTitle: "Cellar, The",
+        sortDate: "2022-09-04",
+        title: "Hawk Mountain",
+        yearPublished: 2022,
+        reviewMonth: "September",
+        reviewYear: 2022,
+        sortTitle: "Hawk Mountain",
+        kind: "Novel",
+        authors: [
+          {
+            name: "Conner Habib",
+            notes: null,
+            sortName: "Habib, Conner",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/867fd81ed16356c017a6b4039bae5e56/8bcae/hawk-mountain-by-conner-habib.jpg",
+                  srcSet:
+                    "/static/867fd81ed16356c017a6b4039bae5e56/8bcae/hawk-mountain-by-conner-habib.jpg 72w,\n/static/867fd81ed16356c017a6b4039bae5e56/7306c/hawk-mountain-by-conner-habib.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/867fd81ed16356c017a6b4039bae5e56/6903a/hawk-mountain-by-conner-habib.avif 72w,\n/static/867fd81ed16356c017a6b4039bae5e56/65187/hawk-mountain-by-conner-habib.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        id: "fccea177-b6d4-579d-8418-c6ebe3c5cd3b",
+        grade: "A-",
+        slug: "about-face-by-david-h-hackworth-julie-sherman",
+        reviewDate: "Sep 5, 2022",
+        gradeValue: 11,
+        sortDate: "2022-09-05",
+        title: "About Face",
+        yearPublished: 1989,
+        reviewMonth: "September",
+        reviewYear: 2022,
+        sortTitle: "About Face: The Odyssey of an American Warrior",
+        kind: "Nonfiction",
+        authors: [
+          {
+            name: "David H. Hackworth",
+            notes: null,
+            sortName: "Hackworth, David H.",
+          },
+          {
+            name: "Julie Sherman",
+            notes: null,
+            sortName: "Sherman, Julie",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/c90cce755e6e70178a3b247cba548e64/8bcae/about-face-by-david-h-hackworth-julie-sherman.jpg",
+                  srcSet:
+                    "/static/c90cce755e6e70178a3b247cba548e64/8bcae/about-face-by-david-h-hackworth-julie-sherman.jpg 72w,\n/static/c90cce755e6e70178a3b247cba548e64/7306c/about-face-by-david-h-hackworth-julie-sherman.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/c90cce755e6e70178a3b247cba548e64/6903a/about-face-by-david-h-hackworth-julie-sherman.avif 72w,\n/static/c90cce755e6e70178a3b247cba548e64/65187/about-face-by-david-h-hackworth-julie-sherman.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        id: "8eb5a943-2bac-52ce-a739-a2160d4dc226",
+        grade: "C",
+        slug: "is-this-anything-by-jerry-seinfeld",
+        reviewDate: "Sep 10, 2022",
+        gradeValue: 6,
+        sortDate: "2022-09-10",
+        title: "Is This Anything?",
+        yearPublished: 2020,
+        reviewMonth: "September",
+        reviewYear: 2022,
+        sortTitle: "Is This Anything?",
+        kind: "Nonfiction",
+        authors: [
+          {
+            name: "Jerry Seinfeld",
+            notes: null,
+            sortName: "Seinfeld, Jerry",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/b77037a1a31eccfefc0a7c7a4d6b8620/8bcae/is-this-anything-by-jerry-seinfeld.jpg",
+                  srcSet:
+                    "/static/b77037a1a31eccfefc0a7c7a4d6b8620/8bcae/is-this-anything-by-jerry-seinfeld.jpg 72w,\n/static/b77037a1a31eccfefc0a7c7a4d6b8620/7306c/is-this-anything-by-jerry-seinfeld.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/b77037a1a31eccfefc0a7c7a4d6b8620/6903a/is-this-anything-by-jerry-seinfeld.avif 72w,\n/static/b77037a1a31eccfefc0a7c7a4d6b8620/65187/is-this-anything-by-jerry-seinfeld.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        id: "457fbd22-fe0f-51ff-8dcd-299701951dd4",
+        grade: "C+",
+        slug: "the-woods-are-dark-by-richard-laymon",
+        reviewDate: "Sep 11, 2022",
+        gradeValue: 7,
+        sortDate: "2022-09-11",
+        title: "The Woods Are Dark",
+        yearPublished: 1981,
+        reviewMonth: "September",
+        reviewYear: 2022,
+        sortTitle: "Woods Are Dark",
         kind: "Novel",
         authors: [
           {
@@ -2261,76 +1654,775 @@ export const data = {
         cover: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/3a1c04481237534c4c7e33763ad904fc/31a1c/the-cellar-by-richard-laymon.jpg",
+                  src: "/static/ce4922405ae2989408bd24b23e71679c/8bcae/the-woods-are-dark-by-richard-laymon.jpg",
                   srcSet:
-                    "/static/3a1c04481237534c4c7e33763ad904fc/5bc78/the-cellar-by-richard-laymon.jpg 62w,\n/static/3a1c04481237534c4c7e33763ad904fc/59d5c/the-cellar-by-richard-laymon.jpg 124w,\n/static/3a1c04481237534c4c7e33763ad904fc/31a1c/the-cellar-by-richard-laymon.jpg 248w,\n/static/3a1c04481237534c4c7e33763ad904fc/a5166/the-cellar-by-richard-laymon.jpg 496w",
-                  sizes: "(min-width: 248px) 248px, 100vw",
+                    "/static/ce4922405ae2989408bd24b23e71679c/8bcae/the-woods-are-dark-by-richard-laymon.jpg 72w,\n/static/ce4922405ae2989408bd24b23e71679c/7306c/the-woods-are-dark-by-richard-laymon.jpg 144w",
+                  sizes: "72px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/3a1c04481237534c4c7e33763ad904fc/6b3a6/the-cellar-by-richard-laymon.avif 62w,\n/static/3a1c04481237534c4c7e33763ad904fc/3c542/the-cellar-by-richard-laymon.avif 124w,\n/static/3a1c04481237534c4c7e33763ad904fc/c155b/the-cellar-by-richard-laymon.avif 248w,\n/static/3a1c04481237534c4c7e33763ad904fc/1ad14/the-cellar-by-richard-laymon.avif 496w",
+                      "/static/ce4922405ae2989408bd24b23e71679c/6903a/the-woods-are-dark-by-richard-laymon.avif 72w,\n/static/ce4922405ae2989408bd24b23e71679c/65187/the-woods-are-dark-by-richard-laymon.avif 144w",
                     type: "image/avif",
-                    sizes: "(min-width: 248px) 248px, 100vw",
+                    sizes: "72px",
                   },
                 ],
               },
-              width: 248,
-              height: 372,
+              width: 72,
+              height: 108,
             },
           },
         },
       },
       {
-        id: "0c26f543-d3ae-5c8a-a374-b3a7350983ea",
-        sequence: 1,
+        id: "29e94ef1-5e60-5ac8-bd9c-eddbd770f385",
         grade: "C",
-        slug: "brother-iron-sister-steel-by-dave-draper",
-        edition: "Kindle",
-        date: "Mar 6, 2022",
+        slug: "draft-no-4-by-john-mcphee",
+        reviewDate: "Sep 11, 2022",
         gradeValue: 6,
-        title: "Brother Iron, Sister Steel",
-        yearPublished: 2001,
-        sortTitle: "Brother Iron, Sister Steel",
+        sortDate: "2022-09-11",
+        title: "Draft No. 4",
+        yearPublished: 2013,
+        reviewMonth: "September",
+        reviewYear: 2022,
+        sortTitle: "Draft No. 4: On the Writing Process",
         kind: "Nonfiction",
         authors: [
           {
-            name: "Dave Draper",
+            name: "John McPhee",
             notes: null,
-            sortName: "Draper, Dave",
+            sortName: "McPhee, John",
           },
         ],
         cover: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
+              layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/86ea3ef1926daaaa8a162b30e9e71d5a/31a1c/brother-iron-sister-steel-by-dave-draper.jpg",
+                  src: "/static/0f356768b26a01e664388d920c70029f/8bcae/draft-no-4-by-john-mcphee.jpg",
                   srcSet:
-                    "/static/86ea3ef1926daaaa8a162b30e9e71d5a/5bc78/brother-iron-sister-steel-by-dave-draper.jpg 62w,\n/static/86ea3ef1926daaaa8a162b30e9e71d5a/59d5c/brother-iron-sister-steel-by-dave-draper.jpg 124w,\n/static/86ea3ef1926daaaa8a162b30e9e71d5a/31a1c/brother-iron-sister-steel-by-dave-draper.jpg 248w,\n/static/86ea3ef1926daaaa8a162b30e9e71d5a/a5166/brother-iron-sister-steel-by-dave-draper.jpg 496w",
-                  sizes: "(min-width: 248px) 248px, 100vw",
+                    "/static/0f356768b26a01e664388d920c70029f/8bcae/draft-no-4-by-john-mcphee.jpg 72w,\n/static/0f356768b26a01e664388d920c70029f/7306c/draft-no-4-by-john-mcphee.jpg 144w",
+                  sizes: "72px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/86ea3ef1926daaaa8a162b30e9e71d5a/6b3a6/brother-iron-sister-steel-by-dave-draper.avif 62w,\n/static/86ea3ef1926daaaa8a162b30e9e71d5a/3c542/brother-iron-sister-steel-by-dave-draper.avif 124w,\n/static/86ea3ef1926daaaa8a162b30e9e71d5a/c155b/brother-iron-sister-steel-by-dave-draper.avif 248w,\n/static/86ea3ef1926daaaa8a162b30e9e71d5a/1ad14/brother-iron-sister-steel-by-dave-draper.avif 496w",
+                      "/static/0f356768b26a01e664388d920c70029f/6903a/draft-no-4-by-john-mcphee.avif 72w,\n/static/0f356768b26a01e664388d920c70029f/65187/draft-no-4-by-john-mcphee.avif 144w",
                     type: "image/avif",
-                    sizes: "(min-width: 248px) 248px, 100vw",
+                    sizes: "72px",
                   },
                 ],
               },
-              width: 248,
-              height: 372,
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        id: "92130174-ed19-52cf-bacf-aa44c0674cbe",
+        grade: "B",
+        slug: "i-will-find-you-by-joe-kenda",
+        reviewDate: "Sep 17, 2022",
+        gradeValue: 9,
+        sortDate: "2022-09-17",
+        title: "I Will Find You",
+        yearPublished: 2017,
+        reviewMonth: "September",
+        reviewYear: 2022,
+        sortTitle:
+          "I Will Find You: Solving Killer Cases from My Life Fighting Crime",
+        kind: "Nonfiction",
+        authors: [
+          {
+            name: "Joe Kenda",
+            notes: null,
+            sortName: "Kenda, Joe",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/bc7ede6c999de0a0ca2b327dfb1355b2/8bcae/i-will-find-you-by-joe-kenda.jpg",
+                  srcSet:
+                    "/static/bc7ede6c999de0a0ca2b327dfb1355b2/8bcae/i-will-find-you-by-joe-kenda.jpg 72w,\n/static/bc7ede6c999de0a0ca2b327dfb1355b2/7306c/i-will-find-you-by-joe-kenda.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/bc7ede6c999de0a0ca2b327dfb1355b2/6903a/i-will-find-you-by-joe-kenda.avif 72w,\n/static/bc7ede6c999de0a0ca2b327dfb1355b2/65187/i-will-find-you-by-joe-kenda.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        id: "fb7c043b-2c31-521d-8e7c-081d36d120a6",
+        grade: "B-",
+        slug: "carrie-by-stephen-king",
+        reviewDate: "Sep 19, 2022",
+        gradeValue: 8,
+        sortDate: "2022-09-19",
+        title: "Carrie",
+        yearPublished: 1974,
+        reviewMonth: "September",
+        reviewYear: 2022,
+        sortTitle: "Carrie",
+        kind: "Novel",
+        authors: [
+          {
+            name: "Stephen King",
+            notes: null,
+            sortName: "King, Stephen",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/c233e3725052a48095176fdc450166d6/8bcae/carrie-by-stephen-king.jpg",
+                  srcSet:
+                    "/static/c233e3725052a48095176fdc450166d6/8bcae/carrie-by-stephen-king.jpg 72w,\n/static/c233e3725052a48095176fdc450166d6/7306c/carrie-by-stephen-king.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/c233e3725052a48095176fdc450166d6/6903a/carrie-by-stephen-king.avif 72w,\n/static/c233e3725052a48095176fdc450166d6/65187/carrie-by-stephen-king.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        id: "3a7525d6-96e6-5d39-a36e-ae0767dae21c",
+        grade: "B",
+        slug: "consider-this-by-chuck-palahniuk",
+        reviewDate: "Sep 22, 2022",
+        gradeValue: 9,
+        sortDate: "2022-09-22",
+        title: "Consider This",
+        yearPublished: 2020,
+        reviewMonth: "September",
+        reviewYear: 2022,
+        sortTitle:
+          "Consider This: Moments in My Writing Life After Which Everything Was Different",
+        kind: "Nonfiction",
+        authors: [
+          {
+            name: "Chuck Palahniuk",
+            notes: null,
+            sortName: "Palahniuk, Chuck",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/3ba537a950bb251cc5ba3c0b019b39f9/8bcae/consider-this-by-chuck-palahniuk.jpg",
+                  srcSet:
+                    "/static/3ba537a950bb251cc5ba3c0b019b39f9/8bcae/consider-this-by-chuck-palahniuk.jpg 72w,\n/static/3ba537a950bb251cc5ba3c0b019b39f9/7306c/consider-this-by-chuck-palahniuk.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/3ba537a950bb251cc5ba3c0b019b39f9/6903a/consider-this-by-chuck-palahniuk.avif 72w,\n/static/3ba537a950bb251cc5ba3c0b019b39f9/65187/consider-this-by-chuck-palahniuk.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        id: "f8b4fff9-8acb-5b38-bac6-46634ed1219c",
+        grade: "C+",
+        slug: "the-big-sleep-by-raymond-chandler",
+        reviewDate: "Sep 24, 2022",
+        gradeValue: 7,
+        sortDate: "2022-09-24",
+        title: "The Big Sleep",
+        yearPublished: 1939,
+        reviewMonth: "September",
+        reviewYear: 2022,
+        sortTitle: "Big Sleep",
+        kind: "Novel",
+        authors: [
+          {
+            name: "Raymond Chandler",
+            notes: null,
+            sortName: "Chandler, Raymond",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/278bd19713d519a6e1a0dff393cf28d8/8bcae/the-big-sleep-by-raymond-chandler.jpg",
+                  srcSet:
+                    "/static/278bd19713d519a6e1a0dff393cf28d8/8bcae/the-big-sleep-by-raymond-chandler.jpg 72w,\n/static/278bd19713d519a6e1a0dff393cf28d8/7306c/the-big-sleep-by-raymond-chandler.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/278bd19713d519a6e1a0dff393cf28d8/6903a/the-big-sleep-by-raymond-chandler.avif 72w,\n/static/278bd19713d519a6e1a0dff393cf28d8/65187/the-big-sleep-by-raymond-chandler.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        id: "80aadf30-1e6a-5ac0-81a6-25bc9b375333",
+        grade: "C+",
+        slug: "what-doesnt-kill-us-by-scott-carney",
+        reviewDate: "Oct 4, 2022",
+        gradeValue: 7,
+        sortDate: "2022-10-04",
+        title: "What Doesn't Kill Us",
+        yearPublished: 2017,
+        reviewMonth: "October",
+        reviewYear: 2022,
+        sortTitle:
+          "What Doesn't Kill Us: How Freezing Water, Extreme Altitude, and Environmental Conditioning Will Renew Our Lost Evolutionary Strength",
+        kind: "Nonfiction",
+        authors: [
+          {
+            name: "Scott Carney",
+            notes: null,
+            sortName: "Carney, Scott",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/3476cf961fd1f42f67b03a31ad595999/8bcae/what-doesnt-kill-us-by-scott-carney.jpg",
+                  srcSet:
+                    "/static/3476cf961fd1f42f67b03a31ad595999/8bcae/what-doesnt-kill-us-by-scott-carney.jpg 72w,\n/static/3476cf961fd1f42f67b03a31ad595999/7306c/what-doesnt-kill-us-by-scott-carney.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/3476cf961fd1f42f67b03a31ad595999/6903a/what-doesnt-kill-us-by-scott-carney.avif 72w,\n/static/3476cf961fd1f42f67b03a31ad595999/65187/what-doesnt-kill-us-by-scott-carney.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        id: "2d2b5b48-8ed6-5c3e-916c-227c623c222c",
+        grade: "C-",
+        slug: "out-are-the-lights-by-richard-laymon",
+        reviewDate: "Oct 11, 2022",
+        gradeValue: 5,
+        sortDate: "2022-10-11",
+        title: "Out Are the Lights",
+        yearPublished: 1982,
+        reviewMonth: "October",
+        reviewYear: 2022,
+        sortTitle: "Out Are the Lights",
+        kind: "Novel",
+        authors: [
+          {
+            name: "Richard Laymon",
+            notes: null,
+            sortName: "Laymon, Richard",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/d12a903f0f3b171be2be1904af2dec4c/8bcae/out-are-the-lights-and-other-tales-by-richard-laymon.jpg",
+                  srcSet:
+                    "/static/d12a903f0f3b171be2be1904af2dec4c/8bcae/out-are-the-lights-and-other-tales-by-richard-laymon.jpg 72w,\n/static/d12a903f0f3b171be2be1904af2dec4c/7306c/out-are-the-lights-and-other-tales-by-richard-laymon.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/d12a903f0f3b171be2be1904af2dec4c/6903a/out-are-the-lights-and-other-tales-by-richard-laymon.avif 72w,\n/static/d12a903f0f3b171be2be1904af2dec4c/65187/out-are-the-lights-and-other-tales-by-richard-laymon.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        id: "43295d94-31e6-591c-a52e-76261de66657",
+        grade: "B",
+        slug: "cant-hurt-me-by-david-goggins",
+        reviewDate: "Oct 13, 2022",
+        gradeValue: 9,
+        sortDate: "2022-10-13",
+        title: "Can't Hurt Me",
+        yearPublished: 2018,
+        reviewMonth: "October",
+        reviewYear: 2022,
+        sortTitle: "Can't Hurt Me: Master Your Mind and Defy the Odds",
+        kind: "Nonfiction",
+        authors: [
+          {
+            name: "David Goggins",
+            notes: null,
+            sortName: "Goggins, David",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/0d12ac8e4b095846adb8129e5f5c95e4/8bcae/cant-hurt-me-by-david-goggins.jpg",
+                  srcSet:
+                    "/static/0d12ac8e4b095846adb8129e5f5c95e4/8bcae/cant-hurt-me-by-david-goggins.jpg 72w,\n/static/0d12ac8e4b095846adb8129e5f5c95e4/7306c/cant-hurt-me-by-david-goggins.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/0d12ac8e4b095846adb8129e5f5c95e4/6903a/cant-hurt-me-by-david-goggins.avif 72w,\n/static/0d12ac8e4b095846adb8129e5f5c95e4/65187/cant-hurt-me-by-david-goggins.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        id: "4108319e-689b-5708-8a80-9d3aa91fd711",
+        grade: "B",
+        slug: "salems-lot-by-stephen-king",
+        reviewDate: "Oct 14, 2022",
+        gradeValue: 9,
+        sortDate: "2022-10-14",
+        title: "'Salem's Lot",
+        yearPublished: 1975,
+        reviewMonth: "October",
+        reviewYear: 2022,
+        sortTitle: "'Salem's Lot",
+        kind: "Novel",
+        authors: [
+          {
+            name: "Stephen King",
+            notes: null,
+            sortName: "King, Stephen",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/069c1d318c1a90f3aa0ae55b5eab6d8d/8bcae/salems-lot-by-stephen-king.jpg",
+                  srcSet:
+                    "/static/069c1d318c1a90f3aa0ae55b5eab6d8d/8bcae/salems-lot-by-stephen-king.jpg 72w,\n/static/069c1d318c1a90f3aa0ae55b5eab6d8d/7306c/salems-lot-by-stephen-king.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/069c1d318c1a90f3aa0ae55b5eab6d8d/6903a/salems-lot-by-stephen-king.avif 72w,\n/static/069c1d318c1a90f3aa0ae55b5eab6d8d/65187/salems-lot-by-stephen-king.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        id: "92cf5ca7-a9cd-5b6e-9385-9ee51e7f0c6c",
+        grade: "B",
+        slug: "moonraker-by-ian-fleming",
+        reviewDate: "Oct 16, 2022",
+        gradeValue: 9,
+        sortDate: "2022-10-16",
+        title: "Moonraker",
+        yearPublished: 1955,
+        reviewMonth: "October",
+        reviewYear: 2022,
+        sortTitle: "Moonraker",
+        kind: "Novel",
+        authors: [
+          {
+            name: "Ian Fleming",
+            notes: null,
+            sortName: "Fleming, Ian",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/3b66fbd34eb88e5ee1a60723d581a5db/8bcae/moonraker-by-ian-fleming.jpg",
+                  srcSet:
+                    "/static/3b66fbd34eb88e5ee1a60723d581a5db/8bcae/moonraker-by-ian-fleming.jpg 72w,\n/static/3b66fbd34eb88e5ee1a60723d581a5db/7306c/moonraker-by-ian-fleming.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/3b66fbd34eb88e5ee1a60723d581a5db/6903a/moonraker-by-ian-fleming.avif 72w,\n/static/3b66fbd34eb88e5ee1a60723d581a5db/65187/moonraker-by-ian-fleming.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        id: "4eed0a1b-b2b4-5ad8-aeb5-bdd1cd78f888",
+        grade: "B",
+        slug: "the-shining-by-stephen-king",
+        reviewDate: "Oct 29, 2022",
+        gradeValue: 9,
+        sortDate: "2022-10-29",
+        title: "The Shining",
+        yearPublished: 1977,
+        reviewMonth: "October",
+        reviewYear: 2022,
+        sortTitle: "Shining",
+        kind: "Novel",
+        authors: [
+          {
+            name: "Stephen King",
+            notes: null,
+            sortName: "King, Stephen",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/794d3075a7009bf20aafaa07c5679d56/8bcae/the-shining-by-stephen-king.jpg",
+                  srcSet:
+                    "/static/794d3075a7009bf20aafaa07c5679d56/8bcae/the-shining-by-stephen-king.jpg 72w,\n/static/794d3075a7009bf20aafaa07c5679d56/7306c/the-shining-by-stephen-king.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/794d3075a7009bf20aafaa07c5679d56/6903a/the-shining-by-stephen-king.avif 72w,\n/static/794d3075a7009bf20aafaa07c5679d56/65187/the-shining-by-stephen-king.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        id: "84c8e0e6-1682-5dcb-b01f-34914880512c",
+        grade: "B+",
+        slug: "the-skeptics-guide-to-the-universe-by-steven-novella",
+        reviewDate: "Oct 29, 2022",
+        gradeValue: 10,
+        sortDate: "2022-10-29",
+        title: "The Skeptics' Guide to the Universe",
+        yearPublished: 2018,
+        reviewMonth: "October",
+        reviewYear: 2022,
+        sortTitle:
+          "Skeptics' Guide to the Universe: How to Know What's Really Real in a World Increasingly Full of Fake",
+        kind: "Nonfiction",
+        authors: [
+          {
+            name: "Steven Novella",
+            notes: null,
+            sortName: "Novella, Steven",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/d1c88412dd7d2f24f26ab4ce5f5360a4/8bcae/the-skeptics-guide-to-the-universe-by-steven-novella.jpg",
+                  srcSet:
+                    "/static/d1c88412dd7d2f24f26ab4ce5f5360a4/8bcae/the-skeptics-guide-to-the-universe-by-steven-novella.jpg 72w,\n/static/d1c88412dd7d2f24f26ab4ce5f5360a4/7306c/the-skeptics-guide-to-the-universe-by-steven-novella.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/d1c88412dd7d2f24f26ab4ce5f5360a4/6903a/the-skeptics-guide-to-the-universe-by-steven-novella.avif 72w,\n/static/d1c88412dd7d2f24f26ab4ce5f5360a4/65187/the-skeptics-guide-to-the-universe-by-steven-novella.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        id: "545e184a-0c83-5129-ae57-ed941a30bdcd",
+        grade: "C+",
+        slug: "doctor-sleep-by-stephen-king",
+        reviewDate: "Jan 14, 2023",
+        gradeValue: 7,
+        sortDate: "2023-01-14",
+        title: "Doctor Sleep",
+        yearPublished: 2013,
+        reviewMonth: "January",
+        reviewYear: 2023,
+        sortTitle: "Doctor Sleep",
+        kind: "Novel",
+        authors: [
+          {
+            name: "Stephen King",
+            notes: null,
+            sortName: "King, Stephen",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/2ade3db6dd7bc3e5e33473384ec0baf0/8bcae/doctor-sleep-by-stephen-king.jpg",
+                  srcSet:
+                    "/static/2ade3db6dd7bc3e5e33473384ec0baf0/8bcae/doctor-sleep-by-stephen-king.jpg 72w,\n/static/2ade3db6dd7bc3e5e33473384ec0baf0/7306c/doctor-sleep-by-stephen-king.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/2ade3db6dd7bc3e5e33473384ec0baf0/6903a/doctor-sleep-by-stephen-king.avif 72w,\n/static/2ade3db6dd7bc3e5e33473384ec0baf0/65187/doctor-sleep-by-stephen-king.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        id: "711a60c1-8406-58cf-ab36-2e1911904ea6",
+        grade: "C-",
+        slug: "roadside-pickup-by-richard-laymon",
+        reviewDate: "Jan 21, 2023",
+        gradeValue: 5,
+        sortDate: "2023-01-21",
+        title: "Roadside Pickup",
+        yearPublished: 1974,
+        reviewMonth: "January",
+        reviewYear: 2023,
+        sortTitle: "Roadside Pickup",
+        kind: "Short Story",
+        authors: [
+          {
+            name: "Richard Laymon",
+            notes: null,
+            sortName: "Laymon, Richard",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/8acae41db8fa464249340b17cc680c45/8bcae/short-stories-volume-one-by-richard-laymon.jpg",
+                  srcSet:
+                    "/static/8acae41db8fa464249340b17cc680c45/8bcae/short-stories-volume-one-by-richard-laymon.jpg 72w,\n/static/8acae41db8fa464249340b17cc680c45/7306c/short-stories-volume-one-by-richard-laymon.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/8acae41db8fa464249340b17cc680c45/6903a/short-stories-volume-one-by-richard-laymon.avif 72w,\n/static/8acae41db8fa464249340b17cc680c45/65187/short-stories-volume-one-by-richard-laymon.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        id: "fa79a305-7495-5296-8093-b16c9c5ebdfc",
+        grade: "F",
+        slug: "fright-night-by-john-skipp-craig-spector",
+        reviewDate: "Jan 21, 2023",
+        gradeValue: 1,
+        sortDate: "2023-01-21",
+        title: "Fright Night",
+        yearPublished: 1985,
+        reviewMonth: "January",
+        reviewYear: 2023,
+        sortTitle: "Fright Night",
+        kind: "Novel",
+        authors: [
+          {
+            name: "John Skipp",
+            notes: null,
+            sortName: "Skipp, John",
+          },
+          {
+            name: "Craig Spector",
+            notes: null,
+            sortName: "Spector, Craig",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/ed5b9db089419d3103835aec289aa0b7/8bcae/fright-night-by-john-skipp-craig-spector.jpg",
+                  srcSet:
+                    "/static/ed5b9db089419d3103835aec289aa0b7/8bcae/fright-night-by-john-skipp-craig-spector.jpg 72w,\n/static/ed5b9db089419d3103835aec289aa0b7/7306c/fright-night-by-john-skipp-craig-spector.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/ed5b9db089419d3103835aec289aa0b7/6903a/fright-night-by-john-skipp-craig-spector.avif 72w,\n/static/ed5b9db089419d3103835aec289aa0b7/65187/fright-night-by-john-skipp-craig-spector.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        id: "0e644dd5-35e9-5f46-b1c0-7596fec1cba8",
+        grade: "B",
+        slug: "the-cipher-by-kathe-koja",
+        reviewDate: "Jan 29, 2023",
+        gradeValue: 9,
+        sortDate: "2023-01-29",
+        title: "The Cipher",
+        yearPublished: 1991,
+        reviewMonth: "January",
+        reviewYear: 2023,
+        sortTitle: "Cipher",
+        kind: "Novel",
+        authors: [
+          {
+            name: "Kathe Koja",
+            notes: null,
+            sortName: "Koja, Kathe",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/ea73e1deb9739060084af4a0057bb69d/8bcae/the-cipher-by-kathe-koja.jpg",
+                  srcSet:
+                    "/static/ea73e1deb9739060084af4a0057bb69d/8bcae/the-cipher-by-kathe-koja.jpg 72w,\n/static/ea73e1deb9739060084af4a0057bb69d/7306c/the-cipher-by-kathe-koja.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/ea73e1deb9739060084af4a0057bb69d/6903a/the-cipher-by-kathe-koja.avif 72w,\n/static/ea73e1deb9739060084af4a0057bb69d/65187/the-cipher-by-kathe-koja.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
             },
           },
         },
       },
     ],
-    editions: ["Audible", "Kindle"],
     publishedYears: [
       "1897",
       "1934",
@@ -2350,6 +2442,7 @@ export const data = {
       "1985",
       "1987",
       "1989",
+      "1991",
       "1992",
       "1996",
       "1998",
@@ -2364,8 +2457,7 @@ export const data = {
       "2020",
       "2022",
     ],
-    readYears: ["2022", "2023"],
+    reviewYears: ["2022", "2023"],
     kinds: ["Collection", "Nonfiction", "Novel", "Novella", "Short Story"],
-    grades: ["A", "A-", "B", "B+", "B-", "C", "C+", "C-", "D", "D+", "F"],
   },
 };

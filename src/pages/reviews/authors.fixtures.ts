@@ -54,7 +54,7 @@ export const data = {
         slug: "ian-fleming",
         sortName: "Fleming, Ian",
         reviewedWorkCount: 3,
-        workCount: 3,
+        workCount: 4,
         avatar: null,
       },
       {
@@ -122,32 +122,40 @@ export const data = {
         avatar: {
           childImageSharp: {
             gatsbyImageData: {
-              layout: "constrained" as const,
+              layout: "fixed" as const,
               placeholder: {
                 fallback:
-                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD10lEQVR42k1UySu2URx9SCEihdcsIUOvDCUzYWGhDCtEeZMyRaRYyZAFQmzIkHme53mepwVhYUWZNyR/wPk6v6/n61vc7vs+997zO+f8zr1Kb28vJicnMTg4iImJCQwPD6O/vx8jIyNYXV3F2tqazEdHRzg9PcX6+jqWl5exsLAg88bGBlZWVmTe3t6GMjs7K4vj4+Pg79HRUZmXlpZQVVUFnU6HvLw85OTkoKWlBYuLi1KEICzEQaCDgwPs7e1BIavp6WmpxkUu7O/vo7i4GCYmJrC1tYWrqys0Gg1cXFwQExODuro62cszBOM4PDzE8fExFLUiB8Hm5+cRHx8PQ0NDmJmZwcHBAT4+PtBqtXB3d4ebm5uM+vp6AVHZnZycyFAIoHrFDZmZmXLAyckJNjY2iIyMRE1NDSIiImBlZQVvb28ZwcHB2NzcFEBKpb9nZ2d/AcmSVdiQoKAgAeEBPz8/ZGRk4OfnB1dXVygsLJT1wMBAWFhYiKcEIiCbRgxlamoKMzMz2NnZQXd3N0xNTYVhSEiISCTjz89PfHx84OXlBQ0NDfDy8oKRkRGysrJwfn4uZwkoHrKbNJczo0LzDQwMYG5uDktLS3R2duL391dAv76+RIWjo6PsiYuLE3aqj2ymwgxSNqNDttHR0cLA2NgYAQEBkkmmoK2tDQMDA2Bu7ezsoK+vj6amJmHHbBJMctjR0YGhoSEJdldXF9rb21FZWYnw8HCRQxtSUlKQnZ2NtLQ0+e7p6YnQ0FDU1taK/ySkBlzhAQISqLm5GWVlZRKJ2NhYPDw8iNS5uTmwMOU2NjYiNzdX9nMvVdEusiNbhTLIjtI4GNzExESEhYVJDJ6enqQ612jPzc2NSGW4e3p6xCrGh2CXl5dQ2GFeNzaEXvn6+iI1NVUA7u/vBeDu7g6Pj4+SU0aFwPR0bGxMwLa2tiTHkkN6QEncxGqMSXV1NZ6fn6UifaTp6mNBn9kY2sQz/9/jf7EhIKuRdmtrqwSXoPzPQZ9YmBksLS1FRUWFyKUiFiNz9fopfGX4QLACJfJjQkKCdJMvDXPIgru7u3KYVlBuX1+fKGJcGGoWlhyyc/SHN4FesbM8xNCy0xy8fkVFRSgpKZFi+fn5wo7+kx1tYUHp8tvbm1yp6+trWaAnFxcXKCgokMPJycmIioqCh4eH3B49PT2ZGRmCMAFkyMYI4OvrqzTg9vZW5PIRYBF2k89Yeno6kpKS5HY4OzvD3t5erqe1tbVIJxFawV6w08r39zfe399lUC5jwG4SnDIJ6O/vL08ZwQhMtnx4y8vLxSZ6R5/50v8BZ887c00Dn9IAAAAASUVORK5CYII=",
+                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD1klEQVR42k1UySv/URR9QiLCwhxS5igsZFZYKCV2EhmyQKYorMwL87AxZ57neZ5noshQbChTVpI/4Pw6t776LW7v+33v886959xzn+rr68PU1BSGhoYwOTmJ4eFhDAwMYGRkBGtra1hfX5f1+PgYp6en8n95eRkLCwuybm5uYmVlRdbt7W2oubk5LC4uYmJiArOzsxgdHZV1aWkJZWVlSE5ORmZmJtLT09Hc3CzfEnR1dVWCyQh0cHCAvb09KFY1MzMjWfjB4eEh9vf3kZeXB0NDQ1hbW8PR0REWFhZwcHBAWFgYampq5FveIRiD905OTqCYkVkY3CSVqKgo6OnpwdjYGLa2tvD09ISHhwecnZ0F3MnJCbW1tTg6OvqrjmCURBHgf8CkpCS5YGdnB0tLS4SEhKCyslJWc3NzuLu7S/j7+2Nra0sASZVgZ2dnUPPz86IXs7ARfn5+CA0NldXLywsJCQn4+fnB5eUlsrOzZd/X1xempqaiKYEIyGqJodhharizs4Pu7m4YGRkJLVbASlnx19eXxNvbm1B1c3ODvr4+UlNTcXFxIXcJSCcotl4TrJA0dXV1YWJiAjMzM3R2duL391cAv7+/5RvKoaOjg8jISGmgpin8LRWSNpszPT0tXaRGBgYG8PHxEU9yv62tTX739vbCxsYG2traaGhowO7uLjY2NgSMlaqOjg4x8+DgoFBub29HaWkpgoODhQ734uLikJaWhvj4eNl3dXVFQEAAqqqqRH82lsamlRQvcEoI1NTUhKKiItEpPDwcj4+PQpXmJ3XSra+vR0ZGhnxfWFgoU0a5SJvVKlZGwP7+fqFEyjExMQgMDMT5+TleXl6EEs84BDc3N2hsbER1dTV6enr+qiNdOkGxw2NjY5KdWtEqpMgE9/f3AnB3d4fn52fpJK1CYGrKewSjHzmOLEBRA1Ji6cxGm5SXl+P19VUyUkdWyITUqKurSxpDVrzDyug/NkVGj4DsMrPxsKWlRYxbUVEh/xm8SBfU1dWhoKAAJSUlAkpGrIyWYcjojY+Py0tDtz88PEiW6OhoBAUFISUlRZpBBhp7UMvW1lbw2SMjVkYpeC6TQstQH3aTmj09PYl+NG1ERIREYmIicnNzkZ+fL8n4nFF7BsGoHQGly5+fnzJSFJ8HbD91y8rKksuxsbEy2y4uLjI9WlpastIyZMWqNa+OGPv9/V0acHt7K3Svrq7w8fEh3eQzxseBNuJ02Nvby8q3kcFOX19fCyi9yBdLcT5ZJYNGpgV4QIFzcnIE0NvbW2acYHxwWa2VlRWKi4vFUtSRjaXW/wALBD16KdRXqwAAAABJRU5ErkJggg==",
               },
               images: {
                 fallback: {
-                  src: "/static/b8efcd83f9ce7a0598e4452e55ab31a3/0e001/stephen-king.jpg",
+                  src: "/static/b8efcd83f9ce7a0598e4452e55ab31a3/46322/stephen-king.jpg",
                   srcSet:
-                    "/static/b8efcd83f9ce7a0598e4452e55ab31a3/5e3dc/stephen-king.jpg 40w,\n/static/b8efcd83f9ce7a0598e4452e55ab31a3/d18de/stephen-king.jpg 80w,\n/static/b8efcd83f9ce7a0598e4452e55ab31a3/0e001/stephen-king.jpg 160w,\n/static/b8efcd83f9ce7a0598e4452e55ab31a3/4e658/stephen-king.jpg 320w",
-                  sizes: "(min-width: 160px) 160px, 100vw",
+                    "/static/b8efcd83f9ce7a0598e4452e55ab31a3/46322/stephen-king.jpg 48w,\n/static/b8efcd83f9ce7a0598e4452e55ab31a3/aec58/stephen-king.jpg 96w",
+                  sizes: "48px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/b8efcd83f9ce7a0598e4452e55ab31a3/5bae1/stephen-king.avif 40w,\n/static/b8efcd83f9ce7a0598e4452e55ab31a3/d60a5/stephen-king.avif 80w,\n/static/b8efcd83f9ce7a0598e4452e55ab31a3/2a394/stephen-king.avif 160w,\n/static/b8efcd83f9ce7a0598e4452e55ab31a3/0aca1/stephen-king.avif 320w",
+                      "/static/b8efcd83f9ce7a0598e4452e55ab31a3/1da62/stephen-king.avif 48w,\n/static/b8efcd83f9ce7a0598e4452e55ab31a3/9b476/stephen-king.avif 96w",
                     type: "image/avif",
-                    sizes: "(min-width: 160px) 160px, 100vw",
+                    sizes: "48px",
                   },
                 ],
               },
-              width: 160,
-              height: 160,
+              width: 48,
+              height: 48,
             },
           },
         },
+      },
+      {
+        name: "Kathe Koja",
+        slug: "kathe-koja",
+        sortName: "Koja, Kathe",
+        reviewedWorkCount: 1,
+        workCount: 1,
+        avatar: null,
       },
       {
         name: "Richard Laymon",
@@ -155,7 +163,35 @@ export const data = {
         sortName: "Laymon, Richard",
         reviewedWorkCount: 5,
         workCount: 131,
-        avatar: null,
+        avatar: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              placeholder: {
+                fallback:
+                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAADlklEQVR42n1U2Su3XRR9/gVFZsksY+aEC0qIRDIkFzJcKCUpw43hggtzkl6ZS0IkU0imMmSeMhTJHBfmeVpfa9ejT6/eU6fn1/mdvc7aa6+9lb29PRweHuLi4gJXV1e4v7/H4+Mj3t/fcXNzg7OzMxwdHWFzc1PucD0/P8udp6enH/vh4QHK9fW1gKiHvPz6+oq5uTmUlpaioKAA1dXVyMzMRGpqKhobGyXw5eXlV1CFANzqAcEqKioQExOD+Ph4+cbGxsLb2xuurq7Q0dFBRkaGZPAbU0X9wT+4xsbG4OzsDBsbG/j5+SEyMhJJSUnCkGzz8vIQGBiI4uJiYanG/gDkwdvbG05OTuDv7w9jY2P4+PggOzsbo6OjOD09xd3dnWi8vb0tEgQHB8vjXJTgByA15GptbYWTkxNyc3Oxvr4uD318fIgMvMciEbCrqwvR0dEoLy//BlRl+wFYWVmJkJAQLCwsCCMCqq8zPQYdHx+ju7sboaGhyMrK+jfD+vp6uLi4oL+/X9hQBgLd3t7i8vIS+/v7WF5eRlNTE3x9faVo/wTs6emBra2tAG5sbGBlZQUDAwOS/tDQEAoLC1FTU4OUlBR4eHhI0ehjVlwFVVRDfn5+Yn5+HnFxcairqxO2FJ8WmpycFP81NzdLdcksISEBXl5ewvjr6+snIDdfYUpFRUWora3F8PAw2tvbMTg4iL6+PnR2dqKtrQ2zs7P48+cPkpOTERQU9M1QtY7y/w5h6hMTExgfH8fU1JSkPTIygtXVVQFiVfkAH2RRCHhwcPA7oNolbLnp6Wns7OxgZmZG9GQLRkVFSetRFjJNTExEeHi4eJdxfwGqnltaWpIC8CI3h8Pi4qJIQF0pAzPIz8+XtKm9Woe/APkSJwqD1tbWhCEtQsN3dHRI51RVVUmRCBYQECDZ0F4kQ8kUAqkG5uYiUEtLi2jHzRYjCKvc29uLhoYGaU1tbW0ZFqz61taWxCpqqlx8id6jz2hcpsg5yHl4fn4uFikrK5PhYGRkJGC6urrQ1NSEu7s7SkpKoLBCu7u7khq9ZW9vDy0trW/R09LSpAhMOycnB3Z2dsLMwMDgmyGHibW1NSwsLKCwcjSoubk5TExMYGZmJpdo6PT0dJmBbm5uAqSnpyeMmK4KyDOytbS0lDuKg4MDHB0dhZmVlRVMTU2hoaEhs48e4zciIgKenp4SwGKEhYXJHYLr6+vD0NBQ4hj/H93zu1DnEgclAAAAAElFTkSuQmCC",
+              },
+              images: {
+                fallback: {
+                  src: "/static/d1a5b6a02309b16c0c0494baf7674d38/46322/richard-laymon.jpg",
+                  srcSet:
+                    "/static/d1a5b6a02309b16c0c0494baf7674d38/46322/richard-laymon.jpg 48w,\n/static/d1a5b6a02309b16c0c0494baf7674d38/aec58/richard-laymon.jpg 96w",
+                  sizes: "48px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/d1a5b6a02309b16c0c0494baf7674d38/1da62/richard-laymon.avif 48w,\n/static/d1a5b6a02309b16c0c0494baf7674d38/9b476/richard-laymon.avif 96w",
+                    type: "image/avif",
+                    sizes: "48px",
+                  },
+                ],
+              },
+              width: 48,
+              height: 48,
+            },
+          },
+        },
       },
       {
         name: "Ross Macdonald",

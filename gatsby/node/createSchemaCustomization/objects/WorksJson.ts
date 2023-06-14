@@ -11,7 +11,6 @@ import { resolveFieldForNode } from "../utils/resolveFieldForNode";
 import { ReadingNode } from "./ReadingsJson";
 
 export interface WorkNode extends GatsbyNode {
-  key: string;
   includedWorks: string[];
   shelf: boolean;
   yearPublished: number;
@@ -26,15 +25,7 @@ export const WorksJson = {
     subtitle: "String",
     yearPublished: "Int!",
     sortTitle: "String!",
-    key: "String!",
-    slug: {
-      type: `String`,
-      extensions: {
-        proxyToReview: {
-          fieldName: "workSlug",
-        },
-      },
-    },
+    slug: "String!",
     grade: {
       type: `String`,
       extensions: {
@@ -70,7 +61,7 @@ export const WorksJson = {
           type: SchemaNames.WorksJson,
           query: {
             filter: {
-              key: {
+              slug: {
                 in: source.includedWorks,
               },
             },
@@ -85,22 +76,36 @@ export const WorksJson = {
       resolve: async (
         source: WorkNode,
         _args: unknown,
-        context: GatsbyNodeContext
+        context: GatsbyNodeContext,
+        info: GatsbyResolveInfo
       ) => {
-        return await context.nodeModel.findOne({
-          type: SchemaNames.MarkdownRemark,
+        const reviewFileNode = await context.nodeModel.findOne<GatsbyNode>({
+          type: "File",
           query: {
             filter: {
-              kind: {
-                eq: "REVIEW",
+              sourceInstanceName: {
+                eq: "reviews",
               },
-              frontmatter: {
-                work_slug: {
-                  eq: source.key,
+              childMarkdownRemark: {
+                frontmatter: {
+                  work_slug: {
+                    eq: source.slug,
+                  },
                 },
               },
             },
           },
+        });
+
+        if (!reviewFileNode) {
+          return null;
+        }
+
+        return resolveFieldForNode({
+          fieldName: "childMarkdownRemark",
+          source: reviewFileNode,
+          context,
+          info,
         });
       },
     },
@@ -116,7 +121,7 @@ export const WorksJson = {
           query: {
             filter: {
               workSlug: {
-                eq: source.key,
+                eq: source.slug,
               },
             },
           },
@@ -138,7 +143,7 @@ export const WorksJson = {
           query: {
             filter: {
               absolutePath: {
-                eq: path.resolve(`./content/assets/covers/${source.key}.png`),
+                eq: path.resolve(`./content/assets/covers/${source.slug}.png`),
               },
             },
           },
@@ -148,34 +153,22 @@ export const WorksJson = {
           return cover;
         }
 
-        const slug = await resolveFieldForNode<string>(
-          "slug",
-          source,
-          context,
-          info,
-          args
-        );
-
-        if (!slug) {
-          return findDefaultCoverNode(context.nodeModel);
-        }
-
         const parentWork = await context.nodeModel.findOne<WorkNode>({
           type: SchemaNames.WorksJson,
           query: {
             filter: {
-              includedWorks: { elemMatch: { key: { eq: slug } } },
+              includedWorks: { elemMatch: { slug: { eq: source.slug } } },
             },
           },
         });
 
-        const parentCover = await resolveFieldForNode(
-          "cover",
-          parentWork,
+        const parentCover = await resolveFieldForNode({
+          fieldName: "cover",
+          source: parentWork,
           context,
           info,
-          args
-        );
+          args,
+        });
 
         return parentCover || findDefaultCoverNode(context.nodeModel);
       },

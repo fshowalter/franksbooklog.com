@@ -3,7 +3,7 @@ import userEvent from "@testing-library/user-event";
 import AuthorTemplate, { Head } from "./author";
 import { data } from "./author.fixtures";
 
-describe("/shelf/authors/{slug}", () => {
+describe("/reviews/authors/{slug}", () => {
   it("renders", () => {
     const { asFragment } = render(<AuthorTemplate data={data} />);
 
@@ -28,12 +28,28 @@ describe("/shelf/authors/{slug}", () => {
     expect(screen.getByTestId("cover-list")).toMatchSnapshot();
   });
 
-  it("can sort by title", async () => {
+  it("can sort by title a->z", async () => {
     expect.hasAssertions();
 
     render(<AuthorTemplate data={data} />);
 
-    await userEvent.selectOptions(screen.getByLabelText("Order By"), "Title");
+    await userEvent.selectOptions(
+      screen.getByLabelText("Order By"),
+      "Title (A → Z)"
+    );
+
+    expect(screen.getByTestId("cover-list")).toMatchSnapshot();
+  });
+
+  it("can sort by title z->a", async () => {
+    expect.hasAssertions();
+
+    render(<AuthorTemplate data={data} />);
+
+    await userEvent.selectOptions(
+      screen.getByLabelText("Order By"),
+      "Title (Z → A)"
+    );
 
     expect(screen.getByTestId("cover-list")).toMatchSnapshot();
   });
@@ -45,7 +61,7 @@ describe("/shelf/authors/{slug}", () => {
 
     await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
-      "Year Published (Oldest First)"
+      "Work Year (Oldest First)"
     );
 
     expect(screen.getByTestId("cover-list")).toMatchSnapshot();
@@ -58,7 +74,7 @@ describe("/shelf/authors/{slug}", () => {
 
     await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
-      "Year Published (Newest First)"
+      "Work Year (Newest First)"
     );
 
     expect(screen.getByTestId("cover-list")).toMatchSnapshot();
@@ -104,12 +120,33 @@ describe("/shelf/authors/{slug}", () => {
 
     render(<AuthorTemplate data={data} />);
 
-    const fieldset = screen.getByRole("group", { name: "Year Published" });
+    const fieldset = screen.getByRole("group", { name: "Work Year" });
     const fromInput = within(fieldset).getByLabelText("From");
     const toInput = within(fieldset).getByLabelText("to");
 
     await userEvent.selectOptions(fromInput, "1980");
     await userEvent.selectOptions(toInput, "1985");
+
+    expect(screen.getByTestId("cover-list")).toMatchSnapshot();
+  });
+
+  it("can hide reviewed titles", async () => {
+    expect.hasAssertions();
+
+    render(<AuthorTemplate data={data} />);
+
+    await userEvent.click(screen.getByText("Hide Reviewed"));
+
+    expect(screen.getByTestId("cover-list")).toMatchSnapshot();
+  });
+
+  it("can show hidden reviewed titles", async () => {
+    expect.hasAssertions();
+
+    render(<AuthorTemplate data={data} />);
+
+    await userEvent.click(screen.getByText("Hide Reviewed"));
+    await userEvent.click(screen.getByText("Show Reviewed"));
 
     expect(screen.getByTestId("cover-list")).toMatchSnapshot();
   });

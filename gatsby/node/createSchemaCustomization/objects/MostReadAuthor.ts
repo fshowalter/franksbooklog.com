@@ -3,7 +3,7 @@ import { ReadingNode } from "./ReadingsJson";
 
 export interface MostReadAuthorNode {
   name: string;
-  slug: string | null;
+  slug: string;
   count: number;
   readings: ReadingNode[];
 }
@@ -13,7 +13,7 @@ export const MostReadAuthor = {
   interfaces: ["Node"],
   fields: {
     name: "String!",
-    slug: "String",
+    slug: "String!",
     count: "Int!",
     readings: `[${SchemaNames.ReadingsJson}!]!`,
   },

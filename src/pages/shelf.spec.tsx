@@ -69,12 +69,63 @@ describe("/shelf", () => {
     expect(screen.getByTestId("cover-list")).toMatchSnapshot();
   });
 
-  it("can sort by title", async () => {
+  it("can filter by kind", async () => {
+    expect.hasAssertions();
+    render(<ShelfPage data={data} />);
+
+    await userEvent.selectOptions(screen.getByLabelText("Kind"), "Novel");
+
+    expect(screen.getByTestId("cover-list")).toMatchSnapshot();
+  });
+
+  it("can filter by kind then show all", async () => {
     expect.hasAssertions();
 
     render(<ShelfPage data={data} />);
 
-    await userEvent.selectOptions(screen.getByLabelText("Order By"), "Title");
+    await act(async () => {
+      await userEvent.selectOptions(screen.getByLabelText("Kind"), "Novel");
+      await userEvent.selectOptions(screen.getByLabelText("Kind"), "All");
+    });
+
+    expect(screen.getByTestId("cover-list")).toMatchSnapshot();
+  });
+
+  it("can sort by title a->z", async () => {
+    expect.hasAssertions();
+
+    render(<ShelfPage data={data} />);
+
+    await userEvent.selectOptions(
+      screen.getByLabelText("Order By"),
+      "Title (A → Z)"
+    );
+
+    expect(screen.getByTestId("cover-list")).toMatchSnapshot();
+  });
+
+  it("can sort by title z->a", async () => {
+    expect.hasAssertions();
+
+    render(<ShelfPage data={data} />);
+
+    await userEvent.selectOptions(
+      screen.getByLabelText("Order By"),
+      "Title (Z → A)"
+    );
+
+    expect(screen.getByTestId("cover-list")).toMatchSnapshot();
+  });
+
+  it("can sort by author z->a", async () => {
+    expect.hasAssertions();
+
+    render(<ShelfPage data={data} />);
+
+    await userEvent.selectOptions(
+      screen.getByLabelText("Order By"),
+      "Author (Z → A)"
+    );
 
     expect(screen.getByTestId("cover-list")).toMatchSnapshot();
   });

@@ -165,43 +165,39 @@ export const ReadingsJson = {
 
         if ((await totalCount()) > 1) {
           const readingNoteNode = await resolveFieldForNode<MarkdownRemarkNode>(
-            "readingNote",
-            source,
-            context,
-            info,
-            args
+            { fieldName: "readingNote", source, context, info, args }
           );
 
           if (readingNoteNode) {
-            return resolveFieldForNode<string>(
-              "html",
-              readingNoteNode,
+            return resolveFieldForNode<string>({
+              fieldName: "html",
+              source: readingNoteNode,
               context,
               info,
-              args
-            );
+              args,
+            });
           }
         }
 
-        const reviewNode = await resolveFieldForNode<MarkdownRemarkNode>(
-          "review",
+        const reviewNode = await resolveFieldForNode<MarkdownRemarkNode>({
+          fieldName: "review",
           source,
           context,
           info,
-          args
-        );
+          args,
+        });
 
         if (!reviewNode) {
           return null;
         }
 
-        return await resolveFieldForNode<string>(
-          "excerptHtml",
-          reviewNode,
+        return await resolveFieldForNode<string>({
+          fieldName: "excerptHtml",
+          source: reviewNode,
           context,
           info,
-          args
-        );
+          args,
+        });
       },
     },
     title: {

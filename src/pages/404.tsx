@@ -1,6 +1,5 @@
 import { graphql } from "gatsby";
-import { ArticlePage } from "../components/ArticlePage";
-import { HeadBuilder } from "../components/HeadBuilder";
+import { Article, HeadBuilder } from "../components";
 
 export function Head(): JSX.Element {
   return (
@@ -19,21 +18,17 @@ export default function NotFoundPage({
   data: Queries.NotFoundPageQuery;
 }): JSX.Element {
   return (
-    <ArticlePage
-      image={data.backdrop}
-      alt="A lost highway."
-      article={data.page}
-    />
+    <Article image={data.backdrop} alt="A lost highway." article={data.page} />
   );
 }
 
 export const pageQuery = graphql`
   query NotFoundPage {
     backdrop: file(absolutePath: { regex: "/backdrops/not-found.png$/" }) {
-      ...ArticlePageBackdrop
+      ...ArticleBackdrop
     }
     page: markdownRemark(frontmatter: { slug: { eq: "not-found" } }) {
-      ...ArticlePage
+      ...ArticleData
     }
   }
 `;

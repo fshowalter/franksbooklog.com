@@ -1,6 +1,5 @@
 import { graphql } from "gatsby";
-import { HeadBuilder } from "../components/HeadBuilder";
-import { StatsPage } from "../components/StatsPage";
+import { HeadBuilder, Stats } from "../components";
 
 interface IPageContext {
   year: number;
@@ -38,7 +37,7 @@ export default function StatsForYearTemplate({
       : "A Year in Review";
 
   return (
-    <StatsPage
+    <Stats
       title={`${pageContext.year} Stats`}
       tagline={tagline}
       mostReadAuthors={data.mostReadAuthors}
@@ -68,8 +67,11 @@ export const pageQuery = graphql`
       totalCount
     }
 
-    review: allMarkdownRemark(
-      filter: { kind: { eq: REVIEW }, year: { eq: $year } }
+    review: allFile(
+      filter: {
+        sourceInstanceName: { eq: "reviews" }
+        childrenMarkdownRemark: { elemMatch: { year: { eq: $year } } }
+      }
     ) {
       totalCount
     }
@@ -83,11 +85,16 @@ export const pageQuery = graphql`
       totalCount
     }
 
-    gradeDistributions: allMarkdownRemark(
-      filter: { kind: { eq: REVIEW }, year: { eq: $year } }
-      sort: { gradeValue: DESC }
+    gradeDistributions: allFile(
+      filter: {
+        sourceInstanceName: { eq: "reviews" }
+        childrenMarkdownRemark: { elemMatch: { year: { eq: $year } } }
+      }
+      sort: { childMarkdownRemark: { gradeValue: DESC } }
     ) {
-      group(field: { grade: SELECT }) {
+      group(
+        field: { childMarkdownRemark: { frontmatter: { grade: SELECT } } }
+      ) {
         name: fieldValue
         count: totalCount
       }

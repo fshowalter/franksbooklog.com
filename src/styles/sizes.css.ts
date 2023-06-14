@@ -28,7 +28,7 @@ globalStyle(":root", {
 export const HEADER_HEIGHT = 128;
 
 export const STILL_WIDTH = "960px";
-export const POSTER_WIDTH = "248px";
+export const POSTER_WIDTH = "200px";
 export const PROSE_CONTENT_WIDTH = "36rem";
 export const POPOUT_WIDTH = `calc((${gutterWidth} * 2) + ${PROSE_CONTENT_WIDTH})`;
 
@@ -82,10 +82,15 @@ export const width = {
   24: toRem(24),
   32: toRem(32),
   40: toRem(40),
+  48: toRem(48),
+  56: toRem(56),
   64: toRem(64),
+  72: toRem(72),
   80: toRem(80),
+  96: toRem(96),
   128: toRem(128),
   144: toRem(144),
+  960: toRem(960),
   full: "100%",
   half: "50%",
   unset: "unset",
