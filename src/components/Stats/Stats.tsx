@@ -124,28 +124,24 @@ export function Stats({
           width="full"
         >
           <MostReadAuthors authors={mostReadAuthors} />
-          <Spacer axis="vertical" size={32} />
           <DistributionTable
             distributions={sortedGradeDistributions}
             title="Grade Distribution"
             nameColumnLabel="Grade"
             countColumnLabel="Reviews"
           />
-          <Spacer axis="vertical" size={32} />
           <DistributionTable
             distributions={decadeDistributions}
             title="By Year Published"
             nameColumnLabel="Decade"
             countColumnLabel="Titles"
           />
-          <Spacer axis="vertical" size={32} />
           <DistributionTable
             distributions={kindDistributions}
             title="By Kind"
             nameColumnLabel="Kind"
             countColumnLabel="Titles"
           />
-          <Spacer axis="vertical" size={32} />
           <DistributionTable
             distributions={editionDistributions}
             title="By Edition"
