@@ -7,11 +7,11 @@ import { Link } from "../Link";
 import { Spacer } from "../Spacer";
 
 interface IIncludedWorksProps extends IBoxProps {
-  work: Queries.IncludedWorksFragment;
+  reviewData: Queries.ReviewIncludedWorksFragment;
 }
 
-export function IncludedWorks({ work, ...rest }: IIncludedWorksProps) {
-  if (work.includedWorks.length === 0) {
+export function IncludedWorks({ reviewData, ...rest }: IIncludedWorksProps) {
+  if (reviewData.includedWorks.length === 0) {
     return null;
   }
 
@@ -32,7 +32,7 @@ export function IncludedWorks({ work, ...rest }: IIncludedWorksProps) {
         <Spacer size={8} axis="vertical" />
       </Box>
       <Box as="ul" width="full" maxWidth="popout">
-        {work.includedWorks.map((includedWork) => (
+        {reviewData.includedWorks.map((includedWork) => (
           <Box
             as="li"
             key={includedWork.id}
@@ -66,7 +66,7 @@ export function IncludedWorks({ work, ...rest }: IIncludedWorksProps) {
 }
 
 export const query = graphql`
-  fragment IncludedWorks on ReviewedWork {
+  fragment ReviewIncludedWorks on ReviewedWorksJson {
     includedWorks {
       id
       title

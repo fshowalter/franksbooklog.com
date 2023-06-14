@@ -58,7 +58,7 @@ export function MoreReviews({
 }
 
 export const query = graphql`
-  fragment MoreReviews on WorksJson {
+  fragment MoreReviews on ReviewedWorksJson {
     id
     title
     yearPublished

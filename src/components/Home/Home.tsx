@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { Box } from "../Box";
 import { Layout } from "../Layout";
-import { HomePageItem } from "./HomePageItem";
+import { ListItem } from "./ListItem";
 import { Pagination } from "./Pagination";
 
 export function Home({
@@ -25,7 +25,7 @@ export function Home({
         <Box as="ol" display="flex" flexDirection="column">
           {items.map((reading, index) => {
             return (
-              <HomePageItem
+              <ListItem
                 eagerLoadCoverImage={index === 0}
                 key={reading.sequence}
                 counterValue={numberOfItems - skip - index}

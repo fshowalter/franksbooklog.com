@@ -41,25 +41,24 @@ export const mostReadAuthorsQuery = {
         >(async (acc, reading) => {
           const currentValue = await acc;
 
-          const authors = await resolveFieldForNode<WorkAuthorNode[]>(
-            "authors",
-            reading,
+          const authors = await resolveFieldForNode<WorkAuthorNode[]>({
+            fieldName: "authors",
+            source: reading,
             context,
             info,
-            {}
-          );
+          });
 
           if (!authors) {
             return acc;
           }
 
           for (const readingAuthor of authors) {
-            currentValue[readingAuthor.key] ||= [];
-            currentValue[readingAuthor.key].push(reading);
+            currentValue[readingAuthor.slug] ||= [];
+            currentValue[readingAuthor.slug].push(reading);
           }
 
           return currentValue;
-        }, Promise.resolve({} as Record<string, ReadingNode[]>));
+        }, Promise.resolve({}));
 
         const mostReadAuthors: MostReadAuthorNode[] = [];
 
@@ -84,13 +83,12 @@ export const mostReadAuthorsQuery = {
           mostReadAuthors.push({
             name: author.name,
             count: authors[authorKey].length,
-            slug: await resolveFieldForNode<string>(
-              "slug",
-              author,
+            slug: await resolveFieldForNode<string>({
+              fieldName: "slug",
+              source: author,
               context,
               info,
-              {}
-            ),
+            }),
             readings: authors[authorKey],
           });
         }

@@ -13,19 +13,19 @@ import {
   excerptContinueReadingLinkStyle,
   gridAreas,
   gridStyle,
-} from "./HomePageItem.css";
+} from "./ListItem.css";
 
 const GridArea = gridAreaComponent(gridAreas);
 
 const Grid = gridComponent(gridStyle);
 
 interface IHomePageItemProps extends IBoxProps {
-  item: Queries.HomePageItemFragment;
+  item: Queries.HomeListItemFragment;
   counterValue: number;
   eagerLoadCoverImage: boolean;
 }
 
-export function HomePageItem({
+export function ListItem({
   item,
   counterValue,
   eagerLoadCoverImage,
@@ -119,14 +119,13 @@ export function HomePageItem({
 }
 
 export const query = graphql`
-  fragment HomePageAuthor on WorkAuthor {
-    key
+  fragment HomeListItemAuthor on WorkAuthor {
     name
     slug
     notes
   }
 
-  fragment HomePageItem on ReadingWithReview {
+  fragment HomeListItem on ReadingWithReview {
     grade
     sequence
     workSlug
@@ -136,7 +135,7 @@ export const query = graphql`
     kind
     yearPublished
     authors {
-      ...HomePageAuthor
+      ...HomeListItemAuthor
     }
     cover {
       childImageSharp {

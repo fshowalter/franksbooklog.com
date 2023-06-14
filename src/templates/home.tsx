@@ -52,7 +52,7 @@ export const pageQuery = graphql`
       limit: $limit
       skip: $skip
     ) {
-      ...HomePageItem
+      ...HomeListItem
     }
   }
 `;

@@ -15,10 +15,10 @@ export function Grade({
   className,
 }: {
   grade: string | null;
-  height: 32 | 16;
+  height: 32 | 16 | 18;
   className?: string;
 }): JSX.Element | null {
-  if (!grade) {
+  if (!grade || grade == "Abandoned") {
     return null;
   }
 

@@ -4,9 +4,9 @@ import { Spacer } from "../Spacer";
 import { ReadingHistoryEntry } from "./ReadingHistoryEntry";
 
 interface IIReadingHistoryProps extends IBoxProps {
-  work: Queries.ReadingHistoryFragment;
+  reviewData: Queries.ReviewReadingHistoryFragment;
 }
-export function ReadingHistory({ work, ...rest }: IIReadingHistoryProps) {
+export function ReadingHistory({ reviewData, ...rest }: IIReadingHistoryProps) {
   return (
     <Box {...rest}>
       <Box
@@ -22,7 +22,7 @@ export function ReadingHistory({ work, ...rest }: IIReadingHistoryProps) {
         <Spacer size={8} axis="vertical" />
       </Box>
       <Box as="ul">
-        {work.readings.map((reading) => (
+        {reviewData.readings.map((reading) => (
           <ReadingHistoryEntry
             as="li"
             key={reading.sequence}
@@ -35,9 +35,9 @@ export function ReadingHistory({ work, ...rest }: IIReadingHistoryProps) {
 }
 
 export const query = graphql`
-  fragment ReadingHistory on ReviewedWork {
+  fragment ReviewReadingHistory on ReviewedWorksJson {
     readings {
-      ...ReadingHistoryEntry
+      ...ReviewReadingHistoryEntry
     }
   }
 `;

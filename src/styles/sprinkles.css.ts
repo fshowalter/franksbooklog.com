@@ -8,7 +8,7 @@ const unresponsiveAtomicProperties = defineProperties({
     borderRadius: { half: "50%", 4: "4px", 8: "8px", 24: "24px" },
     color: foregroundColors,
     flex: [1],
-    flexBasis: { 352: "352px" },
+    flexBasis: { 352: "352px", 360: "360px", 408: "408px" },
     flexGrow: [1],
     flexShrink: [0],
     fontSize: {
@@ -87,7 +87,7 @@ const responsiveAtomicProperties = defineProperties({
     },
   },
   properties: {
-    alignItems: ["center", "inherit", "flex-start", "baseline"],
+    alignItems: ["center", "inherit", "flex-start", "baseline", "stretch"],
     backgroundColor: {
       ...backgroundColors,
       zebra: {

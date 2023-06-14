@@ -42,32 +42,31 @@ const options = [
   <option key={1} value={1}>
     F
   </option>,
+  <option key={0} value={0}>
+    Abandoned
+  </option>,
 ];
 
 interface IGradeFilterProps extends IBoxProps {
   label: string;
-  onGradeChange: (
-    values: [number, number],
-    includeNonReviewed: boolean
-  ) => void;
+  onGradeChange: (values: [number, number]) => void;
 }
 
 export function GradeInput({
   label,
   onGradeChange,
 }: IGradeFilterProps): JSX.Element {
-  const [minValue, setMinValue] = useState(1);
+  const [minValue, setMinValue] = useState(0);
   const [maxValue, setMaxValue] = useState(13);
-  const [checkedValue, setCheckedValue] = useState(true);
 
   const handleMinChange = (value: string) => {
     const newMin = parseInt(value, 10);
     setMinValue(newMin);
 
     if (newMin <= maxValue) {
-      onGradeChange([newMin, maxValue], checkedValue);
+      onGradeChange([newMin, maxValue]);
     } else {
-      onGradeChange([maxValue, newMin], checkedValue);
+      onGradeChange([maxValue, newMin]);
     }
   };
 
@@ -76,15 +75,10 @@ export function GradeInput({
     setMaxValue(newMax);
 
     if (minValue <= newMax) {
-      onGradeChange([minValue, newMax], checkedValue);
+      onGradeChange([minValue, newMax]);
     } else {
-      onGradeChange([newMax, minValue], checkedValue);
+      onGradeChange([newMax, minValue]);
     }
-  };
-
-  const handleCheckedChange = (value: boolean) => {
-    setCheckedValue(value);
-    onGradeChange([minValue, maxValue], value);
   };
 
   return (
@@ -140,28 +134,6 @@ export function GradeInput({
           >
             {options.slice()}
           </SelectInput>
-        </Box>
-        <Box minWidth="full" textAlign="left" height={24}>
-          <Box
-            as="label"
-            flex={1}
-            lineHeight={24}
-            height={24}
-            display="inline-flex"
-            columnGap=".5ch"
-            textAlign="left"
-            fontWeight="semiBold"
-            alignItems="center"
-            fontSize="small"
-            color="subtle"
-          >
-            <input
-              onChange={(e) => handleCheckedChange(e.target.checked)}
-              type="checkbox"
-              checked={checkedValue}
-            />
-            Include abandoned works
-          </Box>
         </Box>
       </Box>
     </Box>

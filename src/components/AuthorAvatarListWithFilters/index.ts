@@ -1,1 +1,0 @@
-export { AuthorAvatarListWithFilters } from "./AuthorAvatarListWithFilters";

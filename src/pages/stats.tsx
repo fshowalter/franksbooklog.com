@@ -50,7 +50,7 @@ export const pageQuery = graphql`
       totalCount
     }
 
-    review: allMarkdownRemark(filter: { kind: { eq: REVIEW } }) {
+    review: allFile(filter: { sourceInstanceName: { eq: "reviews" } }) {
       totalCount
     }
 
@@ -60,11 +60,13 @@ export const pageQuery = graphql`
       totalCount
     }
 
-    gradeDistributions: allMarkdownRemark(
-      filter: { kind: { eq: REVIEW } }
-      sort: { gradeValue: DESC }
+    gradeDistributions: allFile(
+      filter: { sourceInstanceName: { eq: "reviews" } }
+      sort: { childMarkdownRemark: { gradeValue: DESC } }
     ) {
-      group(field: { grade: SELECT }) {
+      group(
+        field: { childMarkdownRemark: { frontmatter: { grade: SELECT } } }
+      ) {
         name: fieldValue
         count: totalCount
       }

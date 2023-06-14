@@ -168,7 +168,7 @@ export function ReadingHistoryEntry({ reading }: IIReadingHistoryEntryProps) {
 }
 
 export const query = graphql`
-  fragment ReadingHistoryEntry on ReadingsJson {
+  fragment ReviewReadingHistoryEntry on ReadingsJson {
     date(formatString: "ddd MMM DD, YYYY")
     edition
     editionNotes

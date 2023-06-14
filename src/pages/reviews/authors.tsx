@@ -1,6 +1,5 @@
 import { graphql } from "gatsby";
-import { AuthorAvatarListWithFilters } from "../../components/AuthorAvatarListWithFilters";
-import { HeadBuilder } from "../../components/HeadBuilder";
+import { Authors, HeadBuilder } from "../../components";
 
 export function Head(): JSX.Element {
   return (
@@ -18,7 +17,7 @@ export default function ReviewAuthorsPage({
 }: {
   data: Queries.ReviewsAuthorsPageQuery;
 }): JSX.Element {
-  return <AuthorAvatarListWithFilters authors={data.author.nodes} />;
+  return <Authors items={data.author.nodes} initialSort="name-asc" />;
 }
 
 export const pageQuery = graphql`
@@ -28,7 +27,7 @@ export const pageQuery = graphql`
       sort: { sortName: ASC }
     ) {
       nodes {
-        ...AuthorAvatarListItem
+        ...AuthorsListItem
       }
     }
   }

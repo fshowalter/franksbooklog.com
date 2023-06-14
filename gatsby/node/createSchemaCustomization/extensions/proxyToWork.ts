@@ -1,5 +1,4 @@
 import { WorkNode } from "../objects/WorksJson";
-import { SchemaNames } from "../schemaNames";
 import {
   GatsbyNode,
   GatsbyNodeContext,
@@ -20,35 +19,35 @@ export const proxyToWorkExtension = {
         context: GatsbyNodeContext,
         info: GatsbyResolveInfo
       ) => {
-        if (source.internal.type === SchemaNames.WorksJson) {
-          return await resolveFieldForNode(
-            fieldName,
-            source,
-            context,
-            info,
-            args
-          );
-        }
+        // console.log(source.internal.type);
+        // if (source.internal.type === SchemaNames.WorksJson) {
+        //   return await resolveFieldForNode({
+        //     fieldName,
+        //     source,
+        //     context,
+        //     info,
+        //     args,
+        //   });
+        // }
 
-        const workNode = await resolveFieldForNode<WorkNode>(
-          "work",
+        const workNode = await resolveFieldForNode<WorkNode>({
+          fieldName: "work",
           source,
           context,
           info,
-          {}
-        );
+        });
 
         if (!workNode) {
           return null;
         }
 
-        return await resolveFieldForNode(
+        return await resolveFieldForNode({
           fieldName,
-          workNode,
+          source: workNode,
           context,
           info,
-          args
-        );
+          args,
+        });
       },
     };
   },
