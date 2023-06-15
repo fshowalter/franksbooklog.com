@@ -180,7 +180,7 @@ function Cover({ reviewData }: { reviewData: Queries.ReviewDataFragment }) {
           className={coverBackgroundImageStyle}
           style={{
             backgroundColor: backgroundColors.default,
-            backgroundImage: `linear-gradient(90deg, rgba(${backgroundColors.defaultRGB},1) 5%, rgba(${backgroundColors.defaultRGB},${backgroundColors.alpha}) 30%, rgba(${backgroundColors.defaultRGB},0) 50%, rgba(${backgroundColors.defaultRGB},${backgroundColors.alpha}) 70%, rgba(${backgroundColors.defaultRGB},1) 95%), url(${imageSrc})`,
+            backgroundImage: `linear-gradient(90deg, rgba(${backgroundColors.defaultRGB},1) 0%, rgba(${backgroundColors.defaultRGB},${backgroundColors.alpha}) 30%, rgba(${backgroundColors.defaultRGB},0) 50%, rgba(${backgroundColors.defaultRGB},${backgroundColors.alpha}) 70%, rgba(${backgroundColors.defaultRGB},1) 100%), url(${imageSrc})`,
             // backgroundImage: `url(${imageSrc})`,
           }}
         />
