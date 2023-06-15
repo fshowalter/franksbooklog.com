@@ -17,6 +17,8 @@ const bgProgress = createVar();
 const bgSubtle = createVar();
 const bgInverse = createVar();
 const bgStripe = createVar();
+const bgDefaultRGB = createVar();
+const bgAlpha = createVar();
 
 export const borderColors = {
   default: borderDefault,
@@ -38,10 +40,12 @@ export const backgroundColors = {
   accent: bgAccent,
   canvas: bgCanvas,
   default: bgDefault,
+  defaultRGB: bgDefaultRGB,
   progress: bgProgress,
   subtle: bgSubtle,
   inverse: bgInverse,
   stripe: bgStripe,
+  alpha: bgAlpha,
 };
 
 globalStyle(":root", {
@@ -61,6 +65,8 @@ globalStyle(":root", {
     [fgInverse]: "rgb(255 255 255 / 75%)",
     [fgMuted]: "rgb(0 0 0 / 65%)",
     [fgSubtle]: "rgb(0 0 0 / 60%)",
+    [bgDefaultRGB]: "255,255,255",
+    [bgAlpha]: ".4",
   },
   "@media": {
     "(prefers-color-scheme: dark)": {
@@ -79,6 +85,8 @@ globalStyle(":root", {
         [fgEmphasis]: "rgb(255 255 255 / 95%)",
         [fgMuted]: "rgb(255 255 255 / 65%)",
         [fgSubtle]: "rgb(255 255 255 / 60%)",
+        [bgDefaultRGB]: "50,47,47",
+        [bgAlpha]: ".5",
       },
     },
   },
