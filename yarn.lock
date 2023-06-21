@@ -7190,9 +7190,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.431":
-  version: 1.4.435
-  resolution: "electron-to-chromium@npm:1.4.435"
-  checksum: cd70746db9432e3134c1e239927d160d38aedb2d65fec995bd1c03b6de51d4a8a33d7199afe5fc85c64e3eae28f4238e290729a2899420b3240e801b18c407a0
+  version: 1.4.436
+  resolution: "electron-to-chromium@npm:1.4.436"
+  checksum: cc641125371b9f080d6823d3194a68d06e7e66ff476e6730046296560e0ab6fca5fb95c0bd7a8a56976621c36cd2ee7a4aed7847c076b631438c09704d527106
   languageName: node
   linkType: hard
 
@@ -9994,9 +9994,9 @@ __metadata:
   linkType: hard
 
 "graphql@npm:^16.6.0":
-  version: 16.6.0
-  resolution: "graphql@npm:16.6.0"
-  checksum: bf1d9e3c1938ce3c1a81e909bd3ead1ae4707c577f91cff1ca2eca474bfbc7873d5d7b942e1e9777ff5a8304421dba57a4b76d7a29eb19de8711cb70e3c2415e
+  version: 16.7.0
+  resolution: "graphql@npm:16.7.0"
+  checksum: 46199d850ac6d972e03bc6ac402c9a86ff47e0abf99ce96ac94a97d2469d94d33217047582a3e37b8c6bd5af3d16e5842cd7eb3c663f521b5553ac752da31cdb
   languageName: node
   linkType: hard
 
@@ -15776,8 +15776,8 @@ __metadata:
   linkType: hard
 
 "sanitize-html@npm:^2.10.0":
-  version: 2.10.0
-  resolution: "sanitize-html@npm:2.10.0"
+  version: 2.11.0
+  resolution: "sanitize-html@npm:2.11.0"
   dependencies:
     deepmerge: ^4.2.2
     escape-string-regexp: ^4.0.0
@@ -15785,7 +15785,7 @@ __metadata:
     is-plain-object: ^5.0.0
     parse-srcset: ^1.0.2
     postcss: ^8.3.11
-  checksum: 0cb2bb330ed966a4d667b1890322dd868a67f527f87c04d7e3be1688fcfda20f7452a9a7744870751f51e255742e7264a287d9bcfcd64d4cd74a3c99f99c73d2
+  checksum: 44807f22b0feb5a6a883b4bc04bcd8690ec3bbd6dacb24d6e52226ffe0c0e4fad43d6a882ce60e3884a327fae2de01e67e566e3a211491add50ff0160be2e98a
   languageName: node
   linkType: hard
 
@@ -17971,8 +17971,8 @@ __metadata:
   linkType: hard
 
 "webpack@npm:^5.85.0":
-  version: 5.87.0
-  resolution: "webpack@npm:5.87.0"
+  version: 5.88.0
+  resolution: "webpack@npm:5.88.0"
   dependencies:
     "@types/eslint-scope": ^3.7.3
     "@types/estree": ^1.0.0
@@ -18003,7 +18003,7 @@ __metadata:
       optional: true
   bin:
     webpack: bin/webpack.js
-  checksum: b7d0e390f9d30627e303d54b17cb87b62f49ecffe2d35481f830679904993bae208e23748ffe0e6091b6dd4810562b2f2e88bb0f23b96515d74fb1e3c2898210
+  checksum: 9fd1568b34ec2e99ba97c8509a15ab2576ec80c396e7015551ec814b24cfc11de173acba3e114dafe95f1a6d460781b09d6201e6a1fb15110e1d01a09f61a283
   languageName: node
   linkType: hard
 
