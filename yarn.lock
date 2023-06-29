@@ -4210,7 +4210,26 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vanilla-extract/css@npm:1.11.1, @vanilla-extract/css@npm:^1.10.0":
+"@vanilla-extract/css@npm:1.12.0":
+  version: 1.12.0
+  resolution: "@vanilla-extract/css@npm:1.12.0"
+  dependencies:
+    "@emotion/hash": ^0.9.0
+    "@vanilla-extract/private": ^1.0.3
+    ahocorasick: 1.0.2
+    chalk: ^4.1.1
+    css-what: ^6.1.0
+    cssesc: ^3.0.0
+    csstype: ^3.0.7
+    deep-object-diff: ^1.1.9
+    deepmerge: ^4.2.2
+    media-query-parser: ^2.0.2
+    outdent: ^0.8.0
+  checksum: b8691011b5ee5d4640d1ffb0a792fe97a34a07b0bfab371d23562bd7831f0a89241c0ff3bdde9eea660544aa62ae875a0a6184f9e8461c4b059c63bc185c0bd7
+  languageName: node
+  linkType: hard
+
+"@vanilla-extract/css@npm:^1.10.0":
   version: 1.11.1
   resolution: "@vanilla-extract/css@npm:1.11.1"
   dependencies:
@@ -8773,7 +8792,7 @@ __metadata:
     "@types/react-test-renderer": 18.0.0
     "@typescript-eslint/eslint-plugin": 5.60.1
     "@typescript-eslint/parser": 5.60.1
-    "@vanilla-extract/css": 1.11.1
+    "@vanilla-extract/css": 1.12.0
     "@vanilla-extract/jest-transform": 1.1.1
     "@vanilla-extract/sprinkles": 1.6.1
     "@vanilla-extract/webpack-plugin": 2.2.0
