@@ -29,7 +29,7 @@ export const WorkAuthor = {
       resolve: async (
         source: WorkAuthorNode,
         _args: unknown,
-        context: GatsbyNodeContext
+        context: GatsbyNodeContext,
       ) => {
         const author = await findAuthor(context, source.slug);
 
@@ -41,7 +41,7 @@ export const WorkAuthor = {
       resolve: async (
         source: WorkAuthorNode,
         _args: unknown,
-        context: GatsbyNodeContext
+        context: GatsbyNodeContext,
       ) => {
         const author = await findAuthor(context, source.slug);
 

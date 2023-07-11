@@ -24,7 +24,7 @@ describe("/reviews/authors", () => {
 
     await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
-      "Name (Z → A)"
+      "Name (Z → A)",
     );
 
     expect(screen.getByTestId("author-list")).toMatchSnapshot();
@@ -37,7 +37,7 @@ describe("/reviews/authors", () => {
 
     await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
-      "Name (A → Z)"
+      "Name (A → Z)",
     );
 
     expect(screen.getByTestId("author-list")).toMatchSnapshot();
@@ -50,7 +50,7 @@ describe("/reviews/authors", () => {
 
     await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
-      "Review Count (Fewest First)"
+      "Review Count (Fewest First)",
     );
 
     expect(screen.getByTestId("author-list")).toMatchSnapshot();
@@ -63,7 +63,7 @@ describe("/reviews/authors", () => {
 
     await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
-      "Review Count (Most First)"
+      "Review Count (Most First)",
     );
 
     expect(screen.getByTestId("author-list")).toMatchSnapshot();
@@ -76,7 +76,7 @@ describe("/reviews/authors", () => {
 
     await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
-      "Work Count (Fewest First)"
+      "Work Count (Fewest First)",
     );
 
     expect(screen.getByTestId("author-list")).toMatchSnapshot();
@@ -89,7 +89,7 @@ describe("/reviews/authors", () => {
 
     await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
-      "Work Count (Most First)"
+      "Work Count (Most First)",
     );
 
     expect(screen.getByTestId("author-list")).toMatchSnapshot();

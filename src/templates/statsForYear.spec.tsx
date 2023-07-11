@@ -13,7 +13,7 @@ describe("/stats/{year}", () => {
     const thisYear = 2022;
 
     const { asFragment } = render(
-      <StatsForYearTemplate data={data} pageContext={{ year: thisYear }} />
+      <StatsForYearTemplate data={data} pageContext={{ year: thisYear }} />,
     );
 
     expect(asFragment()).toMatchSnapshot();

@@ -25,13 +25,13 @@ const { updateFilter } = filterTools(sortItems, groupItems);
 
 function sortItems(
   authors: Queries.AuthorsListItemFragment[],
-  sortOrder: Sort
+  sortOrder: Sort,
 ) {
   const sortMap: Record<
     Sort,
     (
       a: Queries.AuthorsListItemFragment,
-      b: Queries.AuthorsListItemFragment
+      b: Queries.AuthorsListItemFragment,
     ) => number
   > = {
     "name-asc": (a, b) => sortString(a.sortName, b.sortName),
@@ -51,7 +51,7 @@ function sortItems(
 
 function groupForItem(
   item: Queries.AuthorsListItemFragment,
-  sortValue: Sort
+  sortValue: Sort,
 ): string {
   switch (sortValue) {
     case "name-asc":
@@ -137,7 +137,7 @@ export function reducer(state: State, action: Action): State {
       filteredItems = sortItems(state.filteredItems, action.value);
       groupedItems = groupItems(
         filteredItems.slice(0, state.showCount),
-        action.value
+        action.value,
       );
       return {
         ...state,
@@ -151,7 +151,7 @@ export function reducer(state: State, action: Action): State {
 
       groupedItems = groupItems(
         state.filteredItems.slice(0, showCount),
-        state.sortValue
+        state.sortValue,
       );
 
       return {

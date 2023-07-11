@@ -29,7 +29,7 @@ export function Readings({
       items: [...items],
       sort: initialSort,
     },
-    initState
+    initState,
   );
 
   return (

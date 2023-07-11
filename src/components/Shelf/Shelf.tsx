@@ -25,7 +25,7 @@ export function Shelf({
       items: [...items],
       sort: initialSort,
     },
-    initState
+    initState,
   );
 
   return (

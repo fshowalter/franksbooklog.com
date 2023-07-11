@@ -23,7 +23,7 @@ export function Author({
       items: [...data.works],
       sort: initialSort,
     },
-    initState
+    initState,
   );
 
   return (

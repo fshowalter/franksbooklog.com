@@ -27,7 +27,7 @@ export const AuthorsJson = {
         source: AuthorNode,
         args: GatsbyResolveArgs,
         context: GatsbyNodeContext,
-        info: GatsbyResolveInfo
+        info: GatsbyResolveInfo,
       ) => {
         const reviewedWorkCount = await resolveFieldForNode<number>({
           fieldName: "reviewedWorkCount",
@@ -49,7 +49,7 @@ export const AuthorsJson = {
       resolve: async (
         source: AuthorNode,
         _args: unknown,
-        context: GatsbyNodeContext
+        context: GatsbyNodeContext,
       ) => {
         const { entries } = await context.nodeModel.findAll({
           type: SchemaNames.WorksJson,
@@ -74,7 +74,7 @@ export const AuthorsJson = {
       resolve: async (
         source: AuthorNode,
         _args: unknown,
-        context: GatsbyNodeContext
+        context: GatsbyNodeContext,
       ) => {
         const { entries } = await context.nodeModel.findAll({
           type: SchemaNames.ReadingsJson,
@@ -100,7 +100,7 @@ export const AuthorsJson = {
         args: {
           year: number;
         },
-        context: GatsbyNodeContext
+        context: GatsbyNodeContext,
       ) => {
         const { year } = args;
 
@@ -126,7 +126,7 @@ export const AuthorsJson = {
       resolve: async (
         source: AuthorNode,
         _args: GatsbyResolveArgs,
-        context: GatsbyNodeContext
+        context: GatsbyNodeContext,
       ) => {
         const { totalCount } = await context.nodeModel.findAll({
           type: SchemaNames.WorksJson,
@@ -152,7 +152,7 @@ export const AuthorsJson = {
       resolve: async (
         source: AuthorNode,
         _args: GatsbyResolveArgs,
-        context: GatsbyNodeContext
+        context: GatsbyNodeContext,
       ) => {
         const { totalCount } = await context.nodeModel.findAll({
           type: SchemaNames.WorksJson,
@@ -177,7 +177,7 @@ export const AuthorsJson = {
       resolve: async (
         source: AuthorNode,
         _args: unknown,
-        context: GatsbyNodeContext
+        context: GatsbyNodeContext,
       ) => {
         return await context.nodeModel.findOne({
           type: "File",

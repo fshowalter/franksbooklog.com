@@ -55,7 +55,7 @@ export const WorksJson = {
       resolve: async (
         source: WorkNode,
         _args: unknown,
-        context: GatsbyNodeContext
+        context: GatsbyNodeContext,
       ) => {
         const { entries } = await context.nodeModel.findAll({
           type: SchemaNames.WorksJson,
@@ -77,7 +77,7 @@ export const WorksJson = {
         source: WorkNode,
         _args: unknown,
         context: GatsbyNodeContext,
-        info: GatsbyResolveInfo
+        info: GatsbyResolveInfo,
       ) => {
         const reviewFileNode = await context.nodeModel.findOne<GatsbyNode>({
           type: "File",
@@ -114,7 +114,7 @@ export const WorksJson = {
       resolve: async (
         source: WorkNode,
         _args: unknown,
-        context: GatsbyNodeContext
+        context: GatsbyNodeContext,
       ) => {
         const { entries } = await context.nodeModel.findAll<ReadingNode>({
           type: SchemaNames.ReadingsJson,
@@ -136,7 +136,7 @@ export const WorksJson = {
         source: WorkNode,
         args: GatsbyResolveArgs,
         context: GatsbyNodeContext,
-        info: GatsbyResolveInfo
+        info: GatsbyResolveInfo,
       ) => {
         const cover = await context.nodeModel.findOne({
           type: "File",

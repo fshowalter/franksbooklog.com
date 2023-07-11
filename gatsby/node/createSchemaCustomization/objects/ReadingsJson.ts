@@ -52,7 +52,7 @@ export const ReadingsJson = {
       resolve: (source: ReadingNode) => {
         const start = new Date(`${source.timeline[0].date}T00:00:00`);
         const end = new Date(
-          `${source.timeline[source.timeline.length - 1].date}T00:00:00`
+          `${source.timeline[source.timeline.length - 1].date}T00:00:00`,
         );
 
         if (start === end) {
@@ -60,7 +60,7 @@ export const ReadingsJson = {
         }
 
         return Math.round(
-          (end.getTime() - start.getTime()) / (1000 * 60 * 60 * 24)
+          (end.getTime() - start.getTime()) / (1000 * 60 * 60 * 24),
         );
       },
     },
@@ -92,7 +92,7 @@ export const ReadingsJson = {
       resolve: async (
         source: ReadingNode,
         _args: unknown,
-        context: GatsbyNodeContext
+        context: GatsbyNodeContext,
       ) => {
         return await context.nodeModel.findOne({
           type: SchemaNames.MarkdownRemark,
@@ -113,7 +113,7 @@ export const ReadingsJson = {
       resolve: async (
         source: ReadingNode,
         _args: unknown,
-        context: GatsbyNodeContext
+        context: GatsbyNodeContext,
       ) => {
         return await context.nodeModel.findOne({
           type: SchemaNames.WorksJson,
@@ -140,7 +140,7 @@ export const ReadingsJson = {
       },
       resolve: (source: ReadingNode) => {
         return source.timeline.reduce((prev, current) =>
-          prev.date > current.date ? prev : current
+          prev.date > current.date ? prev : current,
         ).date;
       },
     },
@@ -150,7 +150,7 @@ export const ReadingsJson = {
         source: ReadingNode,
         args: GatsbyResolveArgs,
         context: GatsbyNodeContext,
-        info: GatsbyResolveInfo
+        info: GatsbyResolveInfo,
       ) => {
         const { totalCount } = await context.nodeModel.findAll<ReadingNode>({
           type: SchemaNames.ReadingsJson,
@@ -165,7 +165,7 @@ export const ReadingsJson = {
 
         if ((await totalCount()) > 1) {
           const readingNoteNode = await resolveFieldForNode<MarkdownRemarkNode>(
-            { fieldName: "readingNote", source, context, info, args }
+            { fieldName: "readingNote", source, context, info, args },
           );
 
           if (readingNoteNode) {
@@ -252,7 +252,7 @@ export const ReadingsJson = {
       type: "Int!",
       resolve: (source: ReadingNode) => {
         const lastDate = source.timeline.reduce((prev, current) =>
-          prev.date > current.date ? prev : current
+          prev.date > current.date ? prev : current,
         );
 
         return parseInt(lastDate.date.substring(0, 4));

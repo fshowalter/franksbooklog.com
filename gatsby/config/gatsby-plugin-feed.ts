@@ -105,7 +105,7 @@ function serialize({ query }: { query: QueryResult }) {
             reading.cover.childImageSharp.resize.src
           }" alt="A cover from ${reading.title}">${addMetaToExcerpt(
             reading.title,
-            reading
+            reading,
           )}`,
         },
       ],

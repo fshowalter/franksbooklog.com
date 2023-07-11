@@ -24,13 +24,13 @@ interface QueryResult {
 async function createIndividualReviewPages(
   createPage: Actions["createPage"],
   graphql: CreatePagesArgs["graphql"],
-  reporter: CreatePagesArgs["reporter"]
+  reporter: CreatePagesArgs["reporter"],
 ) {
   const queryResult = await graphql<QueryResult>(query);
 
   if (!queryResult.data || queryResult.errors) {
     reporter.panicOnBuild(
-      `Error while running GraphQL query for review pages.`
+      `Error while running GraphQL query for review pages.`,
     );
     return;
   }

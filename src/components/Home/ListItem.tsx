@@ -54,7 +54,7 @@ export function ListItem({
             <GraphqlImage
               image={item.cover}
               alt={`A cover of ${item.title} by ${toSentenceArray(
-                item.authors.map((a) => a.name)
+                item.authors.map((a) => a.name),
               ).join("")}`}
               loading={eagerLoadCoverImage ? "eager" : "lazy"}
             />
@@ -100,7 +100,7 @@ export function ListItem({
                   return (
                     <AuthorLink as="span" key={author.slug} author={author} />
                   );
-                })
+                }),
               )}
             </Box>{" "}
             <Spacer axis="vertical" size={16} />

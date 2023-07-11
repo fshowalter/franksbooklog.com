@@ -9,7 +9,7 @@ export function Head({
 }): JSX.Element {
   const { reviewedWork } = data;
   const authorNames = toSentenceArray(
-    reviewedWork.authors.map((author) => author.name)
+    reviewedWork.authors.map((author) => author.name),
   ).join(", ");
 
   return (

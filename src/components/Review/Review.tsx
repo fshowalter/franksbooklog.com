@@ -149,7 +149,7 @@ function Authors({ reviewData }: { reviewData: Queries.ReviewDataFragment }) {
             author={author}
             display="inline-block"
           />
-        ))
+        )),
       )}
     </Box>
   );
@@ -189,7 +189,7 @@ function Cover({ reviewData }: { reviewData: Queries.ReviewDataFragment }) {
       <GraphqlImage
         image={reviewData.cover}
         alt={`A cover of ${reviewData.title} by ${toSentenceArray(
-          reviewData.authors.map((a) => a.name)
+          reviewData.authors.map((a) => a.name),
         ).join("")} (${reviewData.yearPublished})`}
         loading={"eager"}
         className={coverStyle}

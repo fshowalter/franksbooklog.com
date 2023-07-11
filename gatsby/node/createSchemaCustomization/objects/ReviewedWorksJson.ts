@@ -102,7 +102,7 @@ export const ReviewedWorksJson = {
       resolve: async (
         source: ReviewedWorkNode,
         _args: unknown,
-        context: GatsbyNodeContext
+        context: GatsbyNodeContext,
       ) => {
         return await context.nodeModel.findOne({
           type: SchemaNames.WorksJson,
@@ -121,7 +121,7 @@ export const ReviewedWorksJson = {
       resolve: async (
         source: ReviewedWorkNode,
         _args: unknown,
-        context: GatsbyNodeContext
+        context: GatsbyNodeContext,
       ) => {
         return await context.nodeModel.findOne({
           type: SchemaNames.MarkdownRemark,
@@ -143,7 +143,7 @@ export const ReviewedWorksJson = {
         source: ReviewedWorkNode,
         _args: unknown,
         context: GatsbyNodeContext,
-        info: GatsbyResolveInfo
+        info: GatsbyResolveInfo,
       ) => {
         const work = await resolveFieldForNode<WorkNode>({
           fieldName: "work",
@@ -175,7 +175,7 @@ export const ReviewedWorksJson = {
       resolve: async (
         source: ReviewedWorkNode,
         _args: unknown,
-        context: GatsbyNodeContext
+        context: GatsbyNodeContext,
       ) => {
         const { entries } = await context.nodeModel.findAll<ReviewedWorkNode>({
           type: SchemaNames.ReviewedWorksJson,

@@ -30,7 +30,7 @@ export function Reviews({
       items: [...items],
       sort: initialSort,
     },
-    initState
+    initState,
   );
 
   return (

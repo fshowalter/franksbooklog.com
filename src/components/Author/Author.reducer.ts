@@ -17,7 +17,7 @@ export type Sort =
 const groupItems = buildGroupItems(groupForItem);
 const { updateFilter, clearFilter, applyFilters } = filterTools(
   sortItems,
-  groupItems
+  groupItems,
 );
 
 function sortItems(items: Queries.AuthorListItemFragment[], sortOrder: Sort) {
@@ -25,7 +25,7 @@ function sortItems(items: Queries.AuthorListItemFragment[], sortOrder: Sort) {
     Sort,
     (
       a: Queries.AuthorListItemFragment,
-      b: Queries.AuthorListItemFragment
+      b: Queries.AuthorListItemFragment,
     ) => number
   > = {
     "year-published-desc": (a, b) =>
@@ -45,7 +45,7 @@ function sortItems(items: Queries.AuthorListItemFragment[], sortOrder: Sort) {
 
 function groupForItem(
   item: Queries.AuthorListItemFragment,
-  sortValue: Sort
+  sortValue: Sort,
 ): string {
   switch (sortValue) {
     case "year-published-asc":
@@ -180,7 +180,7 @@ export function reducer(state: State, action: Action): State {
       filteredItems = sortItems(state.filteredItems, action.value);
       groupedItems = groupItems(
         filteredItems.slice(0, state.showCount),
-        action.value
+        action.value,
       );
       return {
         ...state,
@@ -194,7 +194,7 @@ export function reducer(state: State, action: Action): State {
 
       groupedItems = groupItems(
         state.filteredItems.slice(0, showCount),
-        state.sortValue
+        state.sortValue,
       );
 
       return {

@@ -14,12 +14,12 @@ export async function addWorkLinks(text: string, nodeModel: GatsbyNodeModel) {
     if (!reviewedWork) {
       result = result.replace(
         `<span data-work-slug="${match[2]}">${match[3]}</span>`,
-        match[3]
+        match[3],
       );
     } else {
       result = result.replace(
         `<span data-work-slug="${match[2]}">${match[3]}</span>`,
-        `<a href="/reviews/${reviewedWork.slug}/">${match[3]}</a>`
+        `<a href="/reviews/${reviewedWork.slug}/">${match[3]}</a>`,
       );
     }
   }
