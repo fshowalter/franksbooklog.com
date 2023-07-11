@@ -24,6 +24,10 @@
       ]
     },
     {
+      "groupName": "prettier",
+      "matchPackageNames": ["prettier", "eslint-plugin-prettier"]
+    },
+    {
       "matchPackageNames": ["@typescript-eslint/*"],
       "groupName": "@typescript/eslint"
     }
