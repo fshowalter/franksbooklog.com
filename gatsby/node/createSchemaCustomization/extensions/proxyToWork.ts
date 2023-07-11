@@ -17,7 +17,7 @@ export const proxyToWorkExtension = {
         source: GatsbyNode,
         args: Record<string, unknown>,
         context: GatsbyNodeContext,
-        info: GatsbyResolveInfo
+        info: GatsbyResolveInfo,
       ) => {
         // console.log(source.internal.type);
         // if (source.internal.type === SchemaNames.WorksJson) {

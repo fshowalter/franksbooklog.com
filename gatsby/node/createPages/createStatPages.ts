@@ -14,19 +14,17 @@ export async function createStatPages({
 }: CreatePagesArgs) {
   const { createPage } = actions;
 
-  const queryResult = await graphql<QueryResult>(
-    `
-      {
-        reading: allReadingsJson {
-          years: distinct(field: { year: SELECT })
-        }
+  const queryResult = await graphql<QueryResult>(`
+    {
+      reading: allReadingsJson {
+        years: distinct(field: { year: SELECT })
       }
-    `
-  );
+    }
+  `);
 
   if (!queryResult.data || queryResult.errors) {
     reporter.panicOnBuild(
-      `Error while running GraphQL query for reading stats.`
+      `Error while running GraphQL query for reading stats.`,
     );
     return;
   }

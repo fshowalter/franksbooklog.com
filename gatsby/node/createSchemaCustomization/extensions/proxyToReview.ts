@@ -17,7 +17,7 @@ export const proxyToReviewExtension = {
         source: GatsbyNode,
         args: Record<string, unknown>,
         context: GatsbyNodeContext,
-        info: GatsbyResolveInfo
+        info: GatsbyResolveInfo,
       ) => {
         const review = await resolveFieldForNode<MarkdownRemarkNode>({
           fieldName: "review",

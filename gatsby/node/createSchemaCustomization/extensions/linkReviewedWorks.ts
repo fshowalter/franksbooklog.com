@@ -14,7 +14,7 @@ export const linkReviewedWorksExtension = {
   name: `linkReviewedWorks`,
   extend(
     _options: Record<string, unknown>,
-    prevFieldConfig: GatsbyFieldConfig
+    prevFieldConfig: GatsbyFieldConfig,
   ) {
     const { resolve } = prevFieldConfig;
     return {
@@ -22,7 +22,7 @@ export const linkReviewedWorksExtension = {
         source: MarkdownNode,
         args: Record<string, unknown>,
         context: GatsbyNodeContext,
-        info: GatsbyResolveInfo
+        info: GatsbyResolveInfo,
       ) => {
         if (!resolve) {
           return "";
@@ -32,7 +32,7 @@ export const linkReviewedWorksExtension = {
           source,
           args,
           context,
-          info
+          info,
         )) as string;
 
         return await addWorkLinks(fieldValue, context.nodeModel);

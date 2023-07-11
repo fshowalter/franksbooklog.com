@@ -4,7 +4,7 @@ interface WorkNode {
 
 export function sliceWorksForBrowseMore(
   works: WorkNode[],
-  sourceWorkId: string
+  sourceWorkId: string,
 ) {
   const windowSize = 5;
   const arraySize = works.length;

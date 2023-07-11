@@ -22,7 +22,7 @@ export const mostReadAuthorsQuery = {
           year: number;
         },
         context: GatsbyNodeContext,
-        info: GatsbyResolveInfo
+        info: GatsbyResolveInfo,
       ) => {
         const { year } = args;
 

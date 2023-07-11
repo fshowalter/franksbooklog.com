@@ -23,7 +23,7 @@ function sortItems(items: Queries.ShelfListItemFragment[], sortOrder: Sort) {
     Sort,
     (
       a: Queries.ShelfListItemFragment,
-      b: Queries.ShelfListItemFragment
+      b: Queries.ShelfListItemFragment,
     ) => number
   > = {
     "year-published-desc": (a, b) =>
@@ -44,7 +44,7 @@ function sortItems(items: Queries.ShelfListItemFragment[], sortOrder: Sort) {
 
 function groupForItem(
   item: Queries.ShelfListItemFragment,
-  sortValue: Sort
+  sortValue: Sort,
 ): string {
   switch (sortValue) {
     case "year-published-asc":
@@ -183,7 +183,7 @@ export function reducer(state: State, action: Action): State {
       filteredItems = sortItems(state.filteredItems, action.value);
       groupedItems = groupItems(
         filteredItems.slice(0, state.showCount),
-        action.value
+        action.value,
       );
       return {
         ...state,
@@ -197,7 +197,7 @@ export function reducer(state: State, action: Action): State {
 
       groupedItems = groupItems(
         state.filteredItems.slice(0, showCount),
-        state.sortValue
+        state.sortValue,
       );
 
       return {

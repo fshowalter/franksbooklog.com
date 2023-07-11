@@ -20,7 +20,7 @@ export const readingsWithReviewsQuery = {
             order: (boolean | "asc" | "desc" | "ASC" | "DESC")[];
           };
         },
-        context: GatsbyNodeContext
+        context: GatsbyNodeContext,
       ) => {
         const { limit = 0, skip = 0, sort } = args;
 

@@ -4,7 +4,7 @@
  */
 
 export function toSentenceArray<T extends string | JSX.Element>(
-  array: readonly T[]
+  array: readonly T[],
 ): T[] {
   const words = array.filter(Boolean);
 

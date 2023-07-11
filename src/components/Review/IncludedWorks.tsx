@@ -54,7 +54,7 @@ export function IncludedWorks({ reviewData, ...rest }: IIncludedWorksProps) {
                 by
               </Box>{" "}
               {toSentenceArray(
-                includedWork.authors.map((author) => author.name)
+                includedWork.authors.map((author) => author.name),
               )}
             </Box>
             <Grade grade={includedWork.grade} height={16} />

@@ -35,7 +35,7 @@ describe("/shelf", () => {
     await act(async () => {
       await userEvent.type(
         screen.getByLabelText("Title"),
-        "This movie doesn't exist"
+        "This movie doesn't exist",
       );
       await new Promise((r) => setTimeout(r, 500));
     });
@@ -49,7 +49,7 @@ describe("/shelf", () => {
 
     await userEvent.selectOptions(
       screen.getByLabelText("Author"),
-      "Bram Stoker"
+      "Bram Stoker",
     );
 
     expect(screen.getByTestId("cover-list")).toMatchSnapshot();
@@ -62,7 +62,7 @@ describe("/shelf", () => {
 
     await userEvent.selectOptions(
       screen.getByLabelText("Author"),
-      "Bram Stoker"
+      "Bram Stoker",
     );
     await userEvent.selectOptions(screen.getByLabelText("Author"), "All");
 
@@ -98,7 +98,7 @@ describe("/shelf", () => {
 
     await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
-      "Title (A → Z)"
+      "Title (A → Z)",
     );
 
     expect(screen.getByTestId("cover-list")).toMatchSnapshot();
@@ -111,7 +111,7 @@ describe("/shelf", () => {
 
     await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
-      "Title (Z → A)"
+      "Title (Z → A)",
     );
 
     expect(screen.getByTestId("cover-list")).toMatchSnapshot();
@@ -124,7 +124,7 @@ describe("/shelf", () => {
 
     await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
-      "Author (Z → A)"
+      "Author (Z → A)",
     );
 
     expect(screen.getByTestId("cover-list")).toMatchSnapshot();
@@ -137,7 +137,7 @@ describe("/shelf", () => {
 
     await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
-      "Year Published (Oldest First)"
+      "Year Published (Oldest First)",
     );
 
     expect(screen.getByTestId("cover-list")).toMatchSnapshot();
@@ -150,7 +150,7 @@ describe("/shelf", () => {
 
     await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
-      "Year Published (Newest First)"
+      "Year Published (Newest First)",
     );
 
     expect(screen.getByTestId("cover-list")).toMatchSnapshot();

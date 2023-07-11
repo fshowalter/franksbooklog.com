@@ -18,7 +18,7 @@ export function Authors({
       items: [...items],
       sort: initialSort,
     },
-    initState
+    initState,
   );
 
   return (

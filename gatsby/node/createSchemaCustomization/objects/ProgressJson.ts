@@ -74,7 +74,7 @@ export const ProgressJson = {
       resolve: async (
         source: ProgressNode,
         _args: unknown,
-        context: GatsbyNodeContext
+        context: GatsbyNodeContext,
       ) => {
         return await context.nodeModel.findOne({
           type: SchemaNames.WorksJson,

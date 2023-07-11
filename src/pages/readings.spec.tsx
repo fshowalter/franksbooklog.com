@@ -55,7 +55,7 @@ describe("/reviews/authors", () => {
     await act(async () => {
       await userEvent.selectOptions(
         screen.getByLabelText("Edition"),
-        "Audible"
+        "Audible",
       );
       await userEvent.selectOptions(screen.getByLabelText("Edition"), "All");
     });
@@ -70,7 +70,7 @@ describe("/reviews/authors", () => {
 
     await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
-      "Reading Date (Oldest First)"
+      "Reading Date (Oldest First)",
     );
 
     expect(screen.getByTestId("cover-list")).toMatchSnapshot();
@@ -83,7 +83,7 @@ describe("/reviews/authors", () => {
 
     await userEvent.selectOptions(
       screen.getByLabelText("Order By"),
-      "Reading Date (Newest First)"
+      "Reading Date (Newest First)",
     );
 
     expect(screen.getByTestId("cover-list")).toMatchSnapshot();

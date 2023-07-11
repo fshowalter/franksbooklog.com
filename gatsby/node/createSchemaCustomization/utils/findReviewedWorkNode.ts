@@ -4,7 +4,7 @@ import type { GatsbyNodeModel } from "../type-definitions";
 
 export async function findReviewedWorkNode(
   slug: string | null,
-  nodeModel: GatsbyNodeModel
+  nodeModel: GatsbyNodeModel,
 ) {
   if (!slug) {
     return null;

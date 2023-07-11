@@ -40,7 +40,7 @@ export const MarkdownRemark = {
         source: MarkdownRemarkNode,
         args: GatsbyResolveArgs,
         context: GatsbyNodeContext,
-        info: GatsbyResolveInfo
+        info: GatsbyResolveInfo,
       ) => {
         const htmlAst = await resolveFieldForNode<Element>({
           fieldName: "htmlAst",
@@ -67,7 +67,7 @@ export const MarkdownRemark = {
         source: MarkdownRemarkNode,
         args: GatsbyResolveArgs,
         context: GatsbyNodeContext,
-        info: GatsbyResolveInfo
+        info: GatsbyResolveInfo,
       ) => {
         const frontMatter = await resolveFieldForNode<FrontMatter>({
           fieldName: "frontmatter",
@@ -86,7 +86,7 @@ export const MarkdownRemark = {
         source: MarkdownRemarkNode,
         args: GatsbyResolveArgs,
         context: GatsbyNodeContext,
-        info: GatsbyResolveInfo
+        info: GatsbyResolveInfo,
       ) => {
         const frontMatter = await resolveFieldForNode<FrontMatter>({
           fieldName: "frontmatter",
@@ -107,7 +107,7 @@ export const MarkdownRemark = {
         source: MarkdownRemarkNode,
         args: GatsbyResolveArgs,
         context: GatsbyNodeContext,
-        info: GatsbyResolveInfo
+        info: GatsbyResolveInfo,
       ) => {
         const frontMatter = await resolveFieldForNode<FrontMatter>({
           fieldName: "frontmatter",
@@ -129,7 +129,7 @@ export const MarkdownRemark = {
         source: MarkdownRemarkNode,
         args: GatsbyResolveArgs,
         context: GatsbyNodeContext,
-        info: GatsbyResolveInfo
+        info: GatsbyResolveInfo,
       ) => {
         const frontMatter = await resolveFieldForNode<FrontMatter>({
           fieldName: "frontmatter",
@@ -148,7 +148,7 @@ export const MarkdownRemark = {
         source: MarkdownRemarkNode,
         args: GatsbyResolveArgs,
         context: GatsbyNodeContext,
-        info: GatsbyResolveInfo
+        info: GatsbyResolveInfo,
       ) => {
         const frontMatter = await resolveFieldForNode<FrontMatter>({
           fieldName: "frontmatter",

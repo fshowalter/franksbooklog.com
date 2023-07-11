@@ -11,7 +11,7 @@ function sortItems(items: Queries.ReadingsListItemFragment[], sortOrder: Sort) {
     Sort,
     (
       a: Queries.ReadingsListItemFragment,
-      b: Queries.ReadingsListItemFragment
+      b: Queries.ReadingsListItemFragment,
     ) => number
   > = {
     "progress-date-desc": (a, b) => sortString(a.sortDate, b.sortDate) * -1,
@@ -23,7 +23,7 @@ function sortItems(items: Queries.ReadingsListItemFragment[], sortOrder: Sort) {
 }
 
 function groupItems(
-  items: Queries.ReadingsListItemFragment[]
+  items: Queries.ReadingsListItemFragment[],
 ): Map<string, Map<string, Queries.ReadingsListItemFragment[]>> {
   const shortMonthToLong: Record<string, string> = {
     Jan: "January",

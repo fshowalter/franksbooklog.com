@@ -27,7 +27,7 @@ function sortItems(items: Queries.ReviewsListItemFragment[], sortOrder: Sort) {
     Sort,
     (
       a: Queries.ReviewsListItemFragment,
-      b: Queries.ReviewsListItemFragment
+      b: Queries.ReviewsListItemFragment,
     ) => number
   > = {
     "review-date-desc": (a, b) => sortString(a.sortDate, b.sortDate) * -1,
@@ -52,7 +52,7 @@ function sortItems(items: Queries.ReviewsListItemFragment[], sortOrder: Sort) {
 
 function groupForItem(
   item: Queries.ReviewsListItemFragment,
-  sortValue: Sort
+  sortValue: Sort,
 ): string {
   switch (sortValue) {
     case "year-published-asc":
@@ -197,7 +197,7 @@ export function reducer(state: State, action: Action): State {
       filteredItems = sortItems(state.filteredItems, action.value);
       groupedItems = groupItems(
         filteredItems.slice(0, state.showCount),
-        action.value
+        action.value,
       );
       return {
         ...state,
@@ -211,7 +211,7 @@ export function reducer(state: State, action: Action): State {
 
       groupedItems = groupItems(
         state.filteredItems.slice(0, showCount),
-        state.sortValue
+        state.sortValue,
       );
 
       return {

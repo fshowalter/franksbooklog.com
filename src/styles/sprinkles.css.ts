@@ -160,7 +160,7 @@ const responsiveAtomicProperties = defineProperties({
 
 export const sprinkles = createSprinkles(
   unresponsiveAtomicProperties,
-  responsiveAtomicProperties
+  responsiveAtomicProperties,
 );
 
 export type Sprinkles = Parameters<typeof sprinkles>[0];

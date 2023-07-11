@@ -21,7 +21,7 @@ export function StructuredData({
 }
 
 function buildStructuredData(
-  reviewStructuredData: Queries.ReviewStructuredDataFragment
+  reviewStructuredData: Queries.ReviewStructuredDataFragment,
 ) {
   if (reviewStructuredData.grade == "Abandoned") {
     return null;
