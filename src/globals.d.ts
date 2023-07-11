@@ -3,11 +3,6 @@ declare module "*.svg" {
   export default content;
 }
 
-declare module "*.scss" {
-  const classes: Record<string, string>;
-  export = classes;
-}
-
 declare module "@gatsbyjs/reach-router" {
   export interface HLocation<S = unknown> {
     pathname: string;
@@ -17,6 +12,16 @@ declare module "@gatsbyjs/reach-router" {
     key?: string;
   }
   export type WindowLocation<S = unknown> = Window["location"] & HLocation<S>;
+
+  export interface NavigateFn {
+    (to: string, options?: NavigateOptions<object>): Promise<void>;
+    (to: number, options?: undefined): Promise<void>;
+  }
+
+  export interface NavigateOptions<TState> {
+    state?: TState | undefined;
+    replace?: boolean | undefined;
+  }
 
   export type HistoryActionType = "PUSH" | "POP";
   export type HistoryLocation = WindowLocation & { state?: any }; // eslint-disable-line @typescript-eslint/no-explicit-any
@@ -39,6 +44,15 @@ declare module "@gatsbyjs/reach-router" {
     children?: React.ReactNode | LocationProviderRenderFn;
   }
 
+  export type LocationProviderRenderFn = (
+    context: LocationContext
+  ) => React.ReactNode;
+
+  export interface LocationContext {
+    location: WindowLocation;
+    navigate: NavigateFn;
+  }
+
   export class LocationProvider extends React.Component<LocationProviderProps> {} // eslint-disable-line react/prefer-stateless-function
 
   export interface HistorySource {
@@ -57,31 +71,4 @@ declare module "@gatsbyjs/reach-router" {
   export function createMemorySource(initialPath: string): HistorySource;
 
   export function useLocation(): WindowLocation;
-}
-
-// Type definitions for `hast-util-select` 4.0.1
-// Project: https://github.com/syntax-tree/hast-util-select#readme
-// Definitions by: ericdmoore <https://github.com/ericdmoore>
-// TypeScript Version: 4.0
-declare module "hast-util-select" {
-  import type { Node } from "unist";
-  export interface HastNode extends Node {
-    tagName: string;
-    properties: Record<string, string>;
-  }
-  export function matches(
-    selector: string,
-    node: Node,
-    space?: "svg" | "html"
-  ): boolean;
-  export function select(
-    selector: string,
-    node: Node,
-    space?: "svg" | "html"
-  ): HastNode;
-  export function selectAll(
-    selector: string,
-    node: Node,
-    space?: "svg" | "html"
-  ): HastNode[];
 }
