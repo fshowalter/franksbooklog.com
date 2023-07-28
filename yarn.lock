@@ -7542,12 +7542,12 @@ __metadata:
   linkType: hard
 
 "enquirer@npm:^2.3.5":
-  version: 2.4.0
-  resolution: "enquirer@npm:2.4.0"
+  version: 2.4.1
+  resolution: "enquirer@npm:2.4.1"
   dependencies:
     ansi-colors: ^4.1.1
     strip-ansi: ^6.0.1
-  checksum: bbdecde92679ed847c751dc5337ff39ce0c32d85e76fb2e47245e831e9cc7f84c12bd35b70f7b1de9b9e1c730d90cccd04201e69f1ecf7986a7a70d8d39349db
+  checksum: f080f11a74209647dbf347a7c6a83c8a47ae1ebf1e75073a808bc1088eb780aa54075bfecd1bcdb3e3c724520edb8e6ee05da031529436b421b71066fcc48cb5
   languageName: node
   linkType: hard
 
