@@ -4056,18 +4056,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*":
-  version: 18.2.17
-  resolution: "@types/react@npm:18.2.17"
-  dependencies:
-    "@types/prop-types": "*"
-    "@types/scheduler": "*"
-    csstype: ^3.0.2
-  checksum: 150516b31bd98b635e4a56bcf2af007330b35cccb6e35e902f46a47f0e81e30c46cdacc095e91051bdf2f33e4846e7e62fd51b67e064dc7d15c00e15dfa449d5
-  languageName: node
-  linkType: hard
-
-"@types/react@npm:18.2.18":
+"@types/react@npm:*, @types/react@npm:18.2.18":
   version: 18.2.18
   resolution: "@types/react@npm:18.2.18"
   dependencies:
@@ -7445,9 +7434,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.477":
-  version: 1.4.477
-  resolution: "electron-to-chromium@npm:1.4.477"
-  checksum: 1bf6117b2b58d4f18eff4f019fdffd0a68988142e095d8e59a66dbd0b6587e963b405aefc925b229959de20e3e8483849bcc41e3edb4366a359f825bc0a97377
+  version: 1.4.480
+  resolution: "electron-to-chromium@npm:1.4.480"
+  checksum: 074b9d81dffa6ca182f604326c62a12d22139ae141d6ffabdb3b267f42fac88ba3e69d3614f9e939f65a0f03a343f0c81f702e24064bc54c4f138e02378b1e54
   languageName: node
   linkType: hard
 
@@ -18142,8 +18131,8 @@ __metadata:
   linkType: hard
 
 "vite@npm:^3.0.0 || ^4.0.0, vite@npm:^4.1.4":
-  version: 4.4.7
-  resolution: "vite@npm:4.4.7"
+  version: 4.4.8
+  resolution: "vite@npm:4.4.8"
   dependencies:
     esbuild: ^0.18.10
     fsevents: ~2.3.2
@@ -18177,7 +18166,7 @@ __metadata:
       optional: true
   bin:
     vite: bin/vite.js
-  checksum: 787c4d891da18d0a0545bee07dec73c3201979dcf2b1ea3dc13fdd2d3b9ad76d413bcc0e68502183e309007a612c1f4116adefe0093d95fbbb9cf1c1755f7e41
+  checksum: e8ffe688f8a7396b1357778f00cb06d1f3dadad200823c47a1955cf52774a0cbff5ac4d6a8f8d09e26c1d4e588e5815956f9eba02ae301e77a36c3d181a1bc86
   languageName: node
   linkType: hard
 
