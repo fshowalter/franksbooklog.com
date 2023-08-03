@@ -3987,14 +3987,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:>=10.0.0":
-  version: 20.4.5
-  resolution: "@types/node@npm:20.4.5"
-  checksum: 36a0304a8dc346a1b2d2edac4c4633eecf70875793d61a5274d0df052d7a7af7a8e34f29884eac4fbd094c4f0201477dcb39c0ecd3307ca141688806538d1138
-  languageName: node
-  linkType: hard
-
-"@types/node@npm:20.4.6":
+"@types/node@npm:*, @types/node@npm:20.4.6, @types/node@npm:>=10.0.0":
   version: 20.4.6
   resolution: "@types/node@npm:20.4.6"
   checksum: 28dfc13da87f579264840bc5b8a2cde2dcb93662464a0d58f0fa98eba1aae978e3c73e893474238c4a1226d0b1a14e3936520ff9795e1c4e06fad3282be83d18
@@ -7441,9 +7434,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.477":
-  version: 1.4.481
-  resolution: "electron-to-chromium@npm:1.4.481"
-  checksum: 52b7e8d7aeb00046b5eb75fbdb6b1180825e0a83ae9308a31876ef7f1ad3ad82f3ccfdf4d3e3b59ecc73da991d044fbf3d870e41dc3af4c1cec221aa81b7ca03
+  version: 1.4.482
+  resolution: "electron-to-chromium@npm:1.4.482"
+  checksum: 2eb3f094d10892517081722e1e8a3dc381bd8f1500cb0d4107975bceb37096d63c24256833c92843026a4b921b9f216b2d97975fdaaeb069257f0e85a1a4d83d
   languageName: node
   linkType: hard
 
@@ -13395,14 +13388,14 @@ __metadata:
   linkType: hard
 
 "msgpackr@npm:^1.5.4":
-  version: 1.9.5
-  resolution: "msgpackr@npm:1.9.5"
+  version: 1.9.6
+  resolution: "msgpackr@npm:1.9.6"
   dependencies:
     msgpackr-extract: ^3.0.2
   dependenciesMeta:
     msgpackr-extract:
       optional: true
-  checksum: 4a9ebbdd61b985aeb47072f65b242e21a65fba90372dc45927d1a9aba2d0f7fbdb84fbe7c2ea224444c58040e2a81f6778582c16ecaf883a471613c3e9aa4bc3
+  checksum: 46c308e93b0aa5830f260b58e401093792b748771a7aa355d723e8573a5025481c595c3ffdfb4aa71c499d7ffd2172b9f1b93c6031ee59f11a9e7c8917e6dcb9
   languageName: node
   linkType: hard
 
