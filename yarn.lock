@@ -13,9 +13,9 @@ __metadata:
   linkType: hard
 
 "@adobe/css-tools@npm:^4.0.1":
-  version: 4.3.0
-  resolution: "@adobe/css-tools@npm:4.3.0"
-  checksum: 63c9702a91bfda13767fcb3107056ed19463e9a4dcb3b5918d64c8eb7e609357c59b1355c0226765b60323adbb0abd88564acfa1e2b20067219c3ad23576c0b3
+  version: 4.3.1
+  resolution: "@adobe/css-tools@npm:4.3.1"
+  checksum: ad43456379ff391132aff687ece190cb23ea69395e23c9b96690eeabe2468da89a4aaf266e4f8b6eaab53db3d1064107ce0f63c3a974e864f4a04affc768da3f
   languageName: node
   linkType: hard
 
@@ -14812,13 +14812,13 @@ __metadata:
   linkType: hard
 
 "postcss@npm:^8.2.15, postcss@npm:^8.2.9, postcss@npm:^8.3.11, postcss@npm:^8.4.24, postcss@npm:^8.4.27":
-  version: 8.4.27
-  resolution: "postcss@npm:8.4.27"
+  version: 8.4.28
+  resolution: "postcss@npm:8.4.28"
   dependencies:
     nanoid: ^3.3.6
     picocolors: ^1.0.0
     source-map-js: ^1.0.2
-  checksum: 1cdd0c298849df6cd65f7e646a3ba36870a37b65f55fd59d1a165539c263e9b4872a402bf4ed1ca1bc31f58b68b2835545e33ea1a23b161a1f8aa6d5ded81e78
+  checksum: f605c24a36f7e400bad379735fbfc893ccb8d293ad6d419bb824db77cdcb69f43d614ef35f9f7091f32ca588d130ec60dbcf53b366e6bf88a8a64bbeb3c05f6d
   languageName: node
   linkType: hard
 
@@ -16219,8 +16219,8 @@ __metadata:
   linkType: hard
 
 "sharp@npm:^0.32.1":
-  version: 0.32.4
-  resolution: "sharp@npm:0.32.4"
+  version: 0.32.5
+  resolution: "sharp@npm:0.32.5"
   dependencies:
     color: ^4.2.3
     detect-libc: ^2.0.2
@@ -16231,7 +16231,7 @@ __metadata:
     simple-get: ^4.0.1
     tar-fs: ^3.0.4
     tunnel-agent: ^0.6.0
-  checksum: 52e3cfe8fbba2623a9b935be8a3d00d6993a2c56c775ac5cc89b273826db95f029f68a0029a37f96dcb6790aa2e3c05a02599035535b319f50ab31f5d86a13f0
+  checksum: 3cd6dc037c9ba126a30af90ac94043c4418bbb4228e15fd446638ff43fc9b14eabb553037988e484162c318f7baff21d896a5bef7dcc453f608e247d468f41e0
   languageName: node
   linkType: hard
 
