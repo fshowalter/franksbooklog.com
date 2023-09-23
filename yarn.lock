@@ -3685,9 +3685,9 @@ __metadata:
   linkType: hard
 
 "@types/aria-query@npm:^5.0.1":
-  version: 5.0.1
-  resolution: "@types/aria-query@npm:5.0.1"
-  checksum: 69fd7cceb6113ed370591aef04b3fd0742e9a1b06dd045c43531448847b85de181495e4566f98e776b37c422a12fd71866e0a1dfd904c5ec3f84d271682901de
+  version: 5.0.2
+  resolution: "@types/aria-query@npm:5.0.2"
+  checksum: 19394fea016e72da39dd5ef1cf1643e3252b7ee99d8f0b3a8740d3b72f874443fc1e00a41935b36fdfaf92cd735d4ae10dc5d6ab8f1192527d4c0471bb8ff8e4
   languageName: node
   linkType: hard
 
@@ -3949,9 +3949,9 @@ __metadata:
   linkType: hard
 
 "@types/lodash@npm:^4.14.92":
-  version: 4.14.198
-  resolution: "@types/lodash@npm:4.14.198"
-  checksum: b290e4480707151bcec738bca40527915defe52a0d8e26c83685c674163a265e1a88cb2ee56b0fb587a89819d0cd5df86ada836aec3e9c2e4bf516e7d348d524
+  version: 4.14.199
+  resolution: "@types/lodash@npm:4.14.199"
+  checksum: e68d1fcbbfce953ed87b296a628573f62939227bcda0c934954e862b421e8a34c5e71cad6fea27b9980567909e6a4698f09025692958e36d64ea9ed99ec6fb2e
   languageName: node
   linkType: hard
 
@@ -7472,9 +7472,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.526":
-  version: 1.4.527
-  resolution: "electron-to-chromium@npm:1.4.527"
-  checksum: 9e5667b78189cf79a4b66f1c6924bc19ad42f8ce326702c916d866cad5b571545d0157efeeb839fe8b669a73c1636e1a097bd8174bfa1db0c9579316b3beabce
+  version: 1.4.528
+  resolution: "electron-to-chromium@npm:1.4.528"
+  checksum: e9b249929e012ce6c25f8d1e1965e7fb19a426cc72fdf72026a0ce010846ec1b0efe2730b1a1f3d1c98bd11200b94b73431bc5279211a9f4a28f2389e690c39c
   languageName: node
   linkType: hard
 
