@@ -10094,17 +10094,17 @@ __metadata:
   linkType: hard
 
 "glob@npm:^10.2.2":
-  version: 10.3.7
-  resolution: "glob@npm:10.3.7"
+  version: 10.3.8
+  resolution: "glob@npm:10.3.8"
   dependencies:
     foreground-child: ^3.1.0
-    jackspeak: ^2.0.3
+    jackspeak: ^2.3.5
     minimatch: ^9.0.1
     minipass: ^5.0.0 || ^6.0.2 || ^7.0.0
     path-scurry: ^1.10.1
   bin:
     glob: dist/esm/bin.mjs
-  checksum: 9a27f1fa8774c3a8ab8f05c26a77276edaf5418aac29aff70c5d847ef75dabf536554cb113e945193323fb769fbe32edde12559d2d52266f38662595cbc7a031
+  checksum: d8aec59ab56fc295104146c8a7d7f4268057d25e147e957bce0ddf1ebb3709459354b6f4a81fafca31c2a7ae42db0fa4c9b35c2bb795c78b4be3a8d7cc07b52b
   languageName: node
   linkType: hard
 
@@ -11562,7 +11562,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jackspeak@npm:^2.0.3":
+"jackspeak@npm:^2.3.5":
   version: 2.3.5
   resolution: "jackspeak@npm:2.3.5"
   dependencies:
