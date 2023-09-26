@@ -5737,16 +5737,16 @@ __metadata:
   linkType: hard
 
 "browserslist@npm:^4.0.0, browserslist@npm:^4.14.5, browserslist@npm:^4.18.1, browserslist@npm:^4.21.10, browserslist@npm:^4.21.4, browserslist@npm:^4.21.5, browserslist@npm:^4.21.9, browserslist@npm:^4.6.6":
-  version: 4.21.11
-  resolution: "browserslist@npm:4.21.11"
+  version: 4.22.0
+  resolution: "browserslist@npm:4.22.0"
   dependencies:
-    caniuse-lite: ^1.0.30001538
-    electron-to-chromium: ^1.4.526
+    caniuse-lite: ^1.0.30001539
+    electron-to-chromium: ^1.4.530
     node-releases: ^2.0.13
     update-browserslist-db: ^1.0.13
   bin:
     browserslist: cli.js
-  checksum: 89377745428d32c7bbec37055bc4b9e48aa859418ea3886b13218d825f8ea3053640f90d8652844ae855941fec0bffd2d69cf933035d6f9224b427d48d31eddf
+  checksum: 14fc119bbfb85b65e2ee4a82205fabf9327520d010c4c586f1176ceaf9136cfdb391397045a4eafaa9defe52b6dbdf875916714695826c69091a936d5838f9ec
   languageName: node
   linkType: hard
 
@@ -5943,7 +5943,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"caniuse-lite@npm:^1.0.0, caniuse-lite@npm:^1.0.30001538":
+"caniuse-lite@npm:^1.0.0, caniuse-lite@npm:^1.0.30001538, caniuse-lite@npm:^1.0.30001539":
   version: 1.0.30001539
   resolution: "caniuse-lite@npm:1.0.30001539"
   checksum: 8595905d6c7234173a4915439fdd69fa2c06b0272d56af63aee0df6114e1ee4727758af160c0db9844055f778e0ea27ed4714facf2e472a2e74d9f567f111f41
@@ -7471,7 +7471,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"electron-to-chromium@npm:^1.4.526":
+"electron-to-chromium@npm:^1.4.530":
   version: 1.4.530
   resolution: "electron-to-chromium@npm:1.4.530"
   checksum: 32488355442d2ba30e10b318fd97f63d0b73deef970b11f866c23d4fcb1b5c9ba846c7e3c020f1077d04db2f9ab90888893f770e3610ccce6e82e988fec51d48
@@ -16163,9 +16163,9 @@ __metadata:
   linkType: hard
 
 "sax@npm:^1.2.4":
-  version: 1.2.4
-  resolution: "sax@npm:1.2.4"
-  checksum: d3df7d32b897a2c2f28e941f732c71ba90e27c24f62ee918bd4d9a8cfb3553f2f81e5493c7f0be94a11c1911b643a9108f231dd6f60df3fa9586b5d2e3e9e1fe
+  version: 1.3.0
+  resolution: "sax@npm:1.3.0"
+  checksum: 238ab3a9ba8c8f8aaf1c5ea9120386391f6ee0af52f1a6a40bbb6df78241dd05d782f2359d614ac6aae08c4c4125208b456548a6cf68625aa4fe178486e63ecd
   languageName: node
   linkType: hard
 
