@@ -3999,14 +3999,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:>=10.0.0":
-  version: 20.8.3
-  resolution: "@types/node@npm:20.8.3"
-  checksum: bfb88b341faeb19f8fd37306a3bf433721b876c6491d10fcb0b13fd26601fa36ee45113dd82b1e1c23e3c957dff5b99f81a16493cefa03abe797e41a2487a4f7
-  languageName: node
-  linkType: hard
-
-"@types/node@npm:20.8.4":
+"@types/node@npm:*, @types/node@npm:20.8.4, @types/node@npm:>=10.0.0":
   version: 20.8.4
   resolution: "@types/node@npm:20.8.4"
   dependencies:
@@ -4059,21 +4052,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:18.2.12":
+"@types/react-dom@npm:18.2.12, @types/react-dom@npm:^18.0.0":
   version: 18.2.12
   resolution: "@types/react-dom@npm:18.2.12"
   dependencies:
     "@types/react": "*"
   checksum: 64eaf808e91c1d58270ea92dda0e0cbb671f7289be4a5a4e0ccbd85857dd69394970eaa403d958dfbca739735c0af9cde4cf8fe135ff34434838360beae8d306
-  languageName: node
-  linkType: hard
-
-"@types/react-dom@npm:^18.0.0":
-  version: 18.2.11
-  resolution: "@types/react-dom@npm:18.2.11"
-  dependencies:
-    "@types/react": "*"
-  checksum: 70dbdd2f8836a797ab8a3771c773f51023aab187d4d88ed3733bb3f2cbc2146057788a0095a03637101aeab9a48fce0ea369f96a35fc07e785ef53b8ab870885
   languageName: node
   linkType: hard
 
@@ -4086,18 +4070,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*":
-  version: 18.2.25
-  resolution: "@types/react@npm:18.2.25"
-  dependencies:
-    "@types/prop-types": "*"
-    "@types/scheduler": "*"
-    csstype: ^3.0.2
-  checksum: 177515cd44135d56191ec6c5c10edd490c96c175d37624d9c37bc2007c3abcf6cc2d2137d2a073d692cdc5129d5d5785bd60a6ddd315f695da5d8b989fa2afc5
-  languageName: node
-  linkType: hard
-
-"@types/react@npm:18.2.27":
+"@types/react@npm:*, @types/react@npm:18.2.27":
   version: 18.2.27
   resolution: "@types/react@npm:18.2.27"
   dependencies:
@@ -5973,9 +5946,9 @@ __metadata:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.0, caniuse-lite@npm:^1.0.30001538, caniuse-lite@npm:^1.0.30001541":
-  version: 1.0.30001546
-  resolution: "caniuse-lite@npm:1.0.30001546"
-  checksum: d3ef82f5ee94743002c5b2dd61c84342debcc94b2d5907b64ade3514ecfc4f20bbe86a6bc453fd6436d5fbcf6582e07405d7c2077565675a71c83adc238a11fa
+  version: 1.0.30001547
+  resolution: "caniuse-lite@npm:1.0.30001547"
+  checksum: ec0fc2b46721887f6f4aca1f3902f03d9a1a07416d16a86b7cd4bfba60e7b6b03ab3969659d3ea0158cc2f298972c80215c06c9457eb15c649d7780e8f5e91a7
   languageName: node
   linkType: hard
 
@@ -7494,9 +7467,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.535":
-  version: 1.4.544
-  resolution: "electron-to-chromium@npm:1.4.544"
-  checksum: 78e88e4c56fc4faaa9a405de5e0b51305531e9cdf2c71bcc9296c2c59fb68001472e5b924f8701c873bc855ab5174cf0340642712d7af05c1d8e92356529397e
+  version: 1.4.548
+  resolution: "electron-to-chromium@npm:1.4.548"
+  checksum: 25a53fc238fdddbfc52d93257b32e6db54a3aa6cc8670f9c2e964036cad0de6a47fe395a3702edb33fe3abbc357cf8cb3bb54075c67f713753e112f4af6210d3
   languageName: node
   linkType: hard
 
@@ -13648,11 +13621,11 @@ __metadata:
   linkType: hard
 
 "node-abi@npm:^3.3.0":
-  version: 3.47.0
-  resolution: "node-abi@npm:3.47.0"
+  version: 3.48.0
+  resolution: "node-abi@npm:3.48.0"
   dependencies:
     semver: ^7.3.5
-  checksum: ff8498dcd4a805ebf0af27162023bb17e56cb973c955d6c411ebce0938b0827e34323ede846b635daff516d5cd2ea8d64f9d99f2d63f61d1d7469415323fa9a6
+  checksum: d5d7e9837e22d41a28d4c14c23c2d32ce4b2a98546d8a21c2e52080a0fa840fd320ee380734dee964b7d14a733800190dfa5602697e71945ae45c36fdfc008b9
   languageName: node
   linkType: hard
 
