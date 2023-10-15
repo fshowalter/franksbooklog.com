@@ -10402,9 +10402,9 @@ __metadata:
   linkType: hard
 
 "hash-wasm@npm:^4.9.0":
-  version: 4.9.0
-  resolution: "hash-wasm@npm:4.9.0"
-  checksum: b8734247fb7f69941f6564179dd891b7de21aa5877b9e32a5c6d777c2ab45cf5a6b021ade2b0156ec780ac41188486d571d9d526ef8206dda1ad306c81112a8a
+  version: 4.10.0
+  resolution: "hash-wasm@npm:4.10.0"
+  checksum: 66e6d1d0ba64d928af85d8360f75a9407f0245089b77c451a637dbf2e868485c7b0a49eba55e68d91012a1bbae3ae5ca653984b4259979184dfd3ef8b02b6f61
   languageName: node
   linkType: hard
 
@@ -17096,11 +17096,11 @@ __metadata:
   linkType: hard
 
 "style-to-object@npm:^0.4.1":
-  version: 0.4.3
-  resolution: "style-to-object@npm:0.4.3"
+  version: 0.4.4
+  resolution: "style-to-object@npm:0.4.4"
   dependencies:
     inline-style-parser: 0.1.1
-  checksum: 3c651795c88acc429af907ff7719c132b6296521ee4a8415c8cbabd5c902ed0fd18be9e45cb07fb58b91e8671deb5d949ebfb86f305cd6a696c3140025316bfb
+  checksum: 41656c06f93ac0a7ac260ebc2f9d09a8bd74b8ec1836f358cc58e169235835a3a356977891d2ebbd76f0e08a53616929069199f9cce543214d3dc98346e19c9a
   languageName: node
   linkType: hard
 
