@@ -3854,7 +3854,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/hast@npm:2.3.6, @types/hast@npm:^2.0.0":
+"@types/hast@npm:2.3.7":
+  version: 2.3.7
+  resolution: "@types/hast@npm:2.3.7"
+  dependencies:
+    "@types/unist": ^2
+  checksum: 3e63332825ed88117e7f355ba0cfd35367f1d951a1c381333b56188f7645947c3bbbe96abb4c8239324ba1317fd241d5afdb42e104a3654a424327340d49052c
+  languageName: node
+  linkType: hard
+
+"@types/hast@npm:^2.0.0":
   version: 2.3.6
   resolution: "@types/hast@npm:2.3.6"
   dependencies:
@@ -9104,7 +9113,7 @@ __metadata:
     "@testing-library/jest-dom": 6.1.4
     "@testing-library/react": 14.0.0
     "@testing-library/user-event": 14.5.1
-    "@types/hast": 2.3.6
+    "@types/hast": 2.3.7
     "@types/jest": 29.5.5
     "@types/node": 20.8.6
     "@types/react": 18.2.28
