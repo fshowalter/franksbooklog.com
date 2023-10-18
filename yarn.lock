@@ -4088,12 +4088,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-test-renderer@npm:18.0.4":
-  version: 18.0.4
-  resolution: "@types/react-test-renderer@npm:18.0.4"
+"@types/react-test-renderer@npm:18.0.5":
+  version: 18.0.5
+  resolution: "@types/react-test-renderer@npm:18.0.5"
   dependencies:
     "@types/react": "*"
-  checksum: 1895d268ddb44d312d769c416db88995b16f528ae7bc16b76adf5fe55e26f7e55a9a8d075b2b929752d1e28c15b5d67f28dd4b82e4c4036a1e9932407cc2b45e
+  checksum: c0932fa6c99dc84df3f8132f728f4fad7aeb05ea667f1524384c083e62b90e3a91107d89d2e91b03bd0ca02cc6bbec8cfe9669c29a8394ae990af549ca16c0a3
   languageName: node
   linkType: hard
 
@@ -9147,7 +9147,7 @@ __metadata:
     "@types/node": 20.8.7
     "@types/react": 18.2.29
     "@types/react-dom": 18.2.14
-    "@types/react-test-renderer": 18.0.4
+    "@types/react-test-renderer": 18.0.5
     "@types/unist": 2.0.8
     "@typescript-eslint/eslint-plugin": 6.8.0
     "@typescript-eslint/parser": 6.8.0
