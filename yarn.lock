@@ -5900,13 +5900,13 @@ __metadata:
   linkType: hard
 
 "call-bind@npm:^1.0.0, call-bind@npm:^1.0.2, call-bind@npm:^1.0.4":
-  version: 1.0.4
-  resolution: "call-bind@npm:1.0.4"
+  version: 1.0.5
+  resolution: "call-bind@npm:1.0.5"
   dependencies:
     function-bind: ^1.1.2
     get-intrinsic: ^1.2.1
-    set-function-length: ^1.1.0
-  checksum: defb7c609dadd8955fcb6ce3a2eade67967a09f068c62badb2e081ba6cdd9b25fc137d4a0ed31817b1ff0adf376246c6712b3577b8e3d5a97111e148a4dee2b8
+    set-function-length: ^1.1.1
+  checksum: 449e83ecbd4ba48e7eaac5af26fea3b50f8f6072202c2dd7c5a6e7a6308f2421abe5e13a3bbd55221087f76320c5e09f25a8fdad1bab2b77c68ae74d92234ea5
   languageName: node
   linkType: hard
 
@@ -16364,7 +16364,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"set-function-length@npm:^1.1.0":
+"set-function-length@npm:^1.1.1":
   version: 1.1.1
   resolution: "set-function-length@npm:1.1.1"
   dependencies:
