@@ -1946,9 +1946,9 @@ __metadata:
   linkType: hard
 
 "@eslint-community/regexpp@npm:^4.4.0, @eslint-community/regexpp@npm:^4.5.1, @eslint-community/regexpp@npm:^4.6.1":
-  version: 4.9.1
-  resolution: "@eslint-community/regexpp@npm:4.9.1"
-  checksum: 8f1ba51fa5dedd93f01623382d006c838a436aaea85561c7e540b15600988350843bf746a60e2aaefa79ee4904c9dc0a2f3f00e025b162112c76520ffb34805d
+  version: 4.10.0
+  resolution: "@eslint-community/regexpp@npm:4.10.0"
+  checksum: 8c36169c815fc5d726078e8c71a5b592957ee60d08c6470f9ce0187c8046af1a00afbda0a065cc40ff18d5d83f82aed9793c6818f7304a74a7488dc9f3ecbd42
   languageName: node
   linkType: hard
 
@@ -4006,16 +4006,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:>=10.0.0":
-  version: 20.8.8
-  resolution: "@types/node@npm:20.8.8"
-  dependencies:
-    undici-types: "npm:~5.25.1"
-  checksum: 17c8641cd1ac341afae555a0bc9b1cc8cffe3d7e73f44540ae6a4d008551dfb64f9e29f35be3c7ad99c4131108d88966ab0437f5160539992a6f4368c50c224f
-  languageName: node
-  linkType: hard
-
-"@types/node@npm:20.8.9":
+"@types/node@npm:*, @types/node@npm:20.8.9, @types/node@npm:>=10.0.0":
   version: 20.8.9
   resolution: "@types/node@npm:20.8.9"
   dependencies:
@@ -4086,18 +4077,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*":
-  version: 18.2.31
-  resolution: "@types/react@npm:18.2.31"
-  dependencies:
-    "@types/prop-types": "npm:*"
-    "@types/scheduler": "npm:*"
-    csstype: "npm:^3.0.2"
-  checksum: ac9f42f1cd6ee34329ea7a81894877dc333a2dc86141545e23121b07dcd7cea902bedc6b645ce017c92610bd8cd2c6e25dbba581379889a705314f3c759371bf
-  languageName: node
-  linkType: hard
-
-"@types/react@npm:18.2.32":
+"@types/react@npm:*, @types/react@npm:18.2.32":
   version: 18.2.32
   resolution: "@types/react@npm:18.2.32"
   dependencies:
@@ -7502,9 +7482,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.535":
-  version: 1.4.566
-  resolution: "electron-to-chromium@npm:1.4.566"
-  checksum: 14040960d31365a0d7d4f424476de70f9d5c1109abe7552928558bfbe63c37e54fe86e36c84abb477576d6021e604fca7c858efbc2f4f9b5929a407426a52beb
+  version: 1.4.567
+  resolution: "electron-to-chromium@npm:1.4.567"
+  checksum: d46b5c4b3c6f9b5723a0d13eb13d75030344561a64c67d4f1a7efdaad76a6bcd5d252eef94ba15958c3921349a71a7f74a76ee4b39bde568621dbdeac51a44f9
   languageName: node
   linkType: hard
 
@@ -17817,13 +17797,6 @@ __metadata:
     sprintf-js: "npm:^1.1.1"
     util-deprecate: "npm:^1.0.2"
   checksum: 4de7b855ef9890e4db61f3451a86193f4ba398c9615aa78bfb663d24670c3c0614aa02ffa7bd71ec2b1bddb58f41e3f2c074e9b1599722b27d5b5d1895237bfb
-  languageName: node
-  linkType: hard
-
-"undici-types@npm:~5.25.1":
-  version: 5.25.3
-  resolution: "undici-types@npm:5.25.3"
-  checksum: 9a57f2dd6fecb2d0f7d9b86aa6f417609a0ffc73247a95aa25c078cf36cbbfe6c164b63b8dace7ad01126e6510f284c185b69c78356bb1d6b279f195acffcaf4
   languageName: node
   linkType: hard
 
