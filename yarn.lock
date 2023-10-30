@@ -6585,25 +6585,25 @@ __metadata:
   linkType: hard
 
 "core-js-compat@npm:^3.31.0, core-js-compat@npm:^3.33.1":
-  version: 3.33.1
-  resolution: "core-js-compat@npm:3.33.1"
+  version: 3.33.2
+  resolution: "core-js-compat@npm:3.33.2"
   dependencies:
     browserslist: "npm:^4.22.1"
-  checksum: 145f8ca307fadde824a75f8ee735f1c53371b44d9a911cc43860aed72972397bf3eec39b04adb1446aa60ab2a8ea074b55cc90fa7af4f84443f8568b50539756
+  checksum: 9806ac461080f4eef03a6adda77933c8f0bbea16b487ef686a827f9dd0f6ab24ff561415b697155b402d5992ff3bec44a2e01fbe8bd1e8f46acde61a1ecc5910
   languageName: node
   linkType: hard
 
 "core-js-pure@npm:^3.23.3":
-  version: 3.33.1
-  resolution: "core-js-pure@npm:3.33.1"
-  checksum: b86e8dc12ce21ff1292a5ed5e1c2e1d9c3bd321ab3e781e0a1b532f963ccab444c6b6377fed05f14b7e9f79cb1430f61d5ecffea1c00aa114b1ec0024dc3bdd4
+  version: 3.33.2
+  resolution: "core-js-pure@npm:3.33.2"
+  checksum: 9a65d051912bac477aa005e776a625e5675ff42b62ca7a01acb1665e9a813709684bb5a35f575e65fa27b382c6ed311e9b2ebeb37bddfc87d5f9ee5fd86b9742
   languageName: node
   linkType: hard
 
 "core-js@npm:^3.31.0":
-  version: 3.33.1
-  resolution: "core-js@npm:3.33.1"
-  checksum: 66a00c765bc9dfbae546f36e53513e9f9e4a94fd9ec07029ddaf9225641739677ea22c6888743151b96a0f2d80309e06f76df3d5dca1a72ee35d544289e56bb7
+  version: 3.33.2
+  resolution: "core-js@npm:3.33.2"
+  checksum: d62554d51ce8a3f33d0b1f8b064cbd21afcae275043ae96d3d43f18701b80cd423fab484517a81ee1d096db252e2aeada6ef6d1fd80a26db54f82f8f349a62c7
   languageName: node
   linkType: hard
 
@@ -7455,9 +7455,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.535":
-  version: 1.4.569
-  resolution: "electron-to-chromium@npm:1.4.569"
-  checksum: 281b521125161fab14694a1580fb0f09f082aa656cdda491a77f422af592d26c8fbf77fb0ecaef12a409778baa4ca5ea96e43a6bd65fa296e39311603254b473
+  version: 1.4.570
+  resolution: "electron-to-chromium@npm:1.4.570"
+  checksum: c3a803475f8a1f651e060bb01276274e717d82702f56f34d1ed1709380de1ed088b3835c11472c35a4d04023f6556b3e336eeab66352038f431928b7b5c329eb
   languageName: node
   linkType: hard
 
@@ -15179,9 +15179,9 @@ __metadata:
   linkType: hard
 
 "punycode@npm:^2.1.0, punycode@npm:^2.1.1":
-  version: 2.3.0
-  resolution: "punycode@npm:2.3.0"
-  checksum: d4e7fbb96f570c57d64b09a35a1182c879ac32833de7c6926a2c10619632c1377865af3dab5479f59d51da18bcd5035a20a5ef6ceb74020082a3e78025d9a9ca
+  version: 2.3.1
+  resolution: "punycode@npm:2.3.1"
+  checksum: febdc4362bead22f9e2608ff0171713230b57aff9dddc1c273aa2a651fbd366f94b7d6a71d78342a7c0819906750351ca7f2edd26ea41b626d87d6a13d1bd059
   languageName: node
   linkType: hard
 
