@@ -16797,12 +16797,12 @@ __metadata:
   linkType: hard
 
 "streamx@npm:^2.15.0":
-  version: 2.15.1
-  resolution: "streamx@npm:2.15.1"
+  version: 2.15.2
+  resolution: "streamx@npm:2.15.2"
   dependencies:
     fast-fifo: "npm:^1.1.0"
     queue-tick: "npm:^1.0.1"
-  checksum: 5c5143d832b4d4c2cba09d3e77dcc099f62bfc44bffac38e7b196cdd7f17dcd46bc2012c614fad934c0d706712c2e9455e485435810504cf748906b2f1746837
+  checksum: 4882b625d7d86d4b6cda0409538910f4cef146dfca5689aefc42dbffd8b819bf1f5c04783d16bb08cafa021dabb3f5f0cfad6c17db1f1dfa5d3f9d25f67e98b5
   languageName: node
   linkType: hard
 
@@ -17308,8 +17308,8 @@ __metadata:
   linkType: hard
 
 "terser@npm:^5.16.8, terser@npm:^5.2.0":
-  version: 5.22.0
-  resolution: "terser@npm:5.22.0"
+  version: 5.23.0
+  resolution: "terser@npm:5.23.0"
   dependencies:
     "@jridgewell/source-map": "npm:^0.3.3"
     acorn: "npm:^8.8.2"
@@ -17317,7 +17317,7 @@ __metadata:
     source-map-support: "npm:~0.5.20"
   bin:
     terser: bin/terser
-  checksum: e5407f9a143e7f9306f1b585b16dbb03df19b93318b55a26b542e12b74cc792dcf6961d9a2cab6778b20d7b591f498c200376d282a300cf9999ca40bccbc047c
+  checksum: 0a9ffc843cf9ee529b3cb85c4e961fd61dc1d484c462372a7158099c3147c28d8bfe9d57e49d4d7594a9c7deed0a7f28a30f79a9161152bd89791fe986e834f0
   languageName: node
   linkType: hard
 
