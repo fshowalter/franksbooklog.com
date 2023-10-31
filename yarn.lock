@@ -3832,9 +3832,9 @@ __metadata:
   linkType: hard
 
 "@types/estree@npm:*, @types/estree@npm:^1.0.0":
-  version: 1.0.3
-  resolution: "@types/estree@npm:1.0.3"
-  checksum: c51984ec3003a93b619f25995ceba74428f390747d246833928d0121bb2df3b8bca67deb27fc634da47c5b341837d2ae17d0c5b8d16be5110477a73531ac3528
+  version: 1.0.4
+  resolution: "@types/estree@npm:1.0.4"
+  checksum: dc871045040c36a8457a6e37730f4475f31818863cf388e1f699e9b3abd0a59063f60a2d97e0758d8e5c95ab4d1f83044dc24784fb1201c12b38d7a021536d59
   languageName: node
   linkType: hard
 
@@ -4010,12 +4010,12 @@ __metadata:
   linkType: hard
 
 "@types/node-fetch@npm:2":
-  version: 2.6.7
-  resolution: "@types/node-fetch@npm:2.6.7"
+  version: 2.6.8
+  resolution: "@types/node-fetch@npm:2.6.8"
   dependencies:
     "@types/node": "npm:*"
     form-data: "npm:^4.0.0"
-  checksum: 60c41b766da6698dd8e40c42d1c76992bec1b9a4817ac86fdceca6c3ddc7d1cdd7cd508848df652cccf0c127273a6d75f56d0cc6c65e7d583d8dcf8edc5f5964
+  checksum: c996336a67d415154b59eb02b93497a9f41f51eddc67b9d8911efd85c816f952780383284cee51a227fb20151264561a59e95a346ac8eb878255fbe952f36526
   languageName: node
   linkType: hard
 
@@ -7455,9 +7455,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.535":
-  version: 1.4.570
-  resolution: "electron-to-chromium@npm:1.4.570"
-  checksum: c3a803475f8a1f651e060bb01276274e717d82702f56f34d1ed1709380de1ed088b3835c11472c35a4d04023f6556b3e336eeab66352038f431928b7b5c329eb
+  version: 1.4.571
+  resolution: "electron-to-chromium@npm:1.4.571"
+  checksum: ce976c0eb6bab2c6728aa160cee9c85d754037d809aa2c220bd6eff95fecbd8ad4e502df808616cff6e3249858378b2d2dddd19aede80f8df52daedc259ec576
   languageName: node
   linkType: hard
 
