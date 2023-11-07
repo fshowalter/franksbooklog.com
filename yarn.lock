@@ -4010,12 +4010,12 @@ __metadata:
   linkType: hard
 
 "@types/node-fetch@npm:2":
-  version: 2.6.8
-  resolution: "@types/node-fetch@npm:2.6.8"
+  version: 2.6.9
+  resolution: "@types/node-fetch@npm:2.6.9"
   dependencies:
     "@types/node": "npm:*"
     form-data: "npm:^4.0.0"
-  checksum: c996336a67d415154b59eb02b93497a9f41f51eddc67b9d8911efd85c816f952780383284cee51a227fb20151264561a59e95a346ac8eb878255fbe952f36526
+  checksum: fc46141516191699b5f34fdf3516d3bd67421ad18da9f14785252abd22c1aa7a80ea5bcde835531b33df681f2b0d671786c3e987941547532fb447d77ebb8588
   languageName: node
   linkType: hard
 
@@ -4043,9 +4043,9 @@ __metadata:
   linkType: hard
 
 "@types/parse-json@npm:^4.0.0":
-  version: 4.0.1
-  resolution: "@types/parse-json@npm:4.0.1"
-  checksum: 467c5fb95f4b03ea10fac007b4de7c9db103e8fce87b039ba5b37f17b374911833724624c311f3591435e4c42e376cab219400af1aef1dc314d5bd495d22fde7
+  version: 4.0.2
+  resolution: "@types/parse-json@npm:4.0.2"
+  checksum: 5bf62eec37c332ad10059252fc0dab7e7da730764869c980b0714777ad3d065e490627be9f40fc52f238ffa3ac4199b19de4127196910576c2fe34dd47c7a470
   languageName: node
   linkType: hard
 
@@ -4057,18 +4057,18 @@ __metadata:
   linkType: hard
 
 "@types/prop-types@npm:*":
-  version: 15.7.9
-  resolution: "@types/prop-types@npm:15.7.9"
-  checksum: c7591d3ff7593e243908a07e1d3e2bb6e8879008af5800d8378115a90d0fdf669a1cae72a6d7f69e59c4fa7bb4c8ed61f6ebc1c520fe110c6f2b03ac02414072
+  version: 15.7.10
+  resolution: "@types/prop-types@npm:15.7.10"
+  checksum: 39ecc2d9e439ed16b32937a08d98b84ed4a70f53bcd52c8564c0cd7a36fe1004ca83a1fb94b13c1b7a5c048760f06445c3c6a91a6972c8eff652c0b50c9424b1
   languageName: node
   linkType: hard
 
 "@types/reach__router@npm:^1.3.10":
-  version: 1.3.13
-  resolution: "@types/reach__router@npm:1.3.13"
+  version: 1.3.14
+  resolution: "@types/reach__router@npm:1.3.14"
   dependencies:
     "@types/react": "npm:*"
-  checksum: 61338b1be5cb9663062ae14d477f02d84a3ff812cdcb456acf4e856963533f1c606f560dc79fe15896d6ca15aa3578ad419b45445fb4e625bd892b80889a07e5
+  checksum: 0b37c9e495b7c561fa901f419f849e0c7c633958131f1b155f665b3d93a31e650213f92a038b4f0f843dc97d4c974826892266a3abcfbf511639c04c49e10575
   languageName: node
   linkType: hard
 
