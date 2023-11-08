@@ -37,13 +37,13 @@
     "@testing-library/jest-dom": "6.1.4",
     "@testing-library/react": "14.0.0",
     "@testing-library/user-event": "14.5.1",
-    "@types/hast": "2.3.7",
+    "@types/hast": "2.3.8",
     "@types/jest": "29.5.8",
     "@types/node": "20.8.10",
     "@types/react": "18.2.37",
     "@types/react-dom": "18.2.15",
     "@types/react-test-renderer": "18.0.6",
-    "@types/unist": "2.0.9",
+    "@types/unist": "2.0.10",
     "@typescript-eslint/eslint-plugin": "6.10.0",
     "@typescript-eslint/parser": "6.10.0",
     "@vanilla-extract/jest-transform": "1.1.1",
@@ -89,7 +89,7 @@
     "not dead"
   ],
   "resolutions": {
-    "@types/unist": "2.0.9"
+    "@types/unist": "2.0.10"
   },
   "repository": {
     "type": "git",
