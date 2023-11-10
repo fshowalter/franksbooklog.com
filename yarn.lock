@@ -4465,7 +4465,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vanilla-extract/css@npm:1.14.0":
+"@vanilla-extract/css@npm:1.14.0, @vanilla-extract/css@npm:^1.14.0":
   version: 1.14.0
   resolution: "@vanilla-extract/css@npm:1.14.0"
   dependencies:
@@ -4484,33 +4484,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vanilla-extract/css@npm:^1.10.0":
-  version: 1.13.0
-  resolution: "@vanilla-extract/css@npm:1.13.0"
-  dependencies:
-    "@emotion/hash": "npm:^0.9.0"
-    "@vanilla-extract/private": "npm:^1.0.3"
-    ahocorasick: "npm:1.0.2"
-    chalk: "npm:^4.1.1"
-    css-what: "npm:^6.1.0"
-    cssesc: "npm:^3.0.0"
-    csstype: "npm:^3.0.7"
-    deep-object-diff: "npm:^1.1.9"
-    deepmerge: "npm:^4.2.2"
-    media-query-parser: "npm:^2.0.2"
-    outdent: "npm:^0.8.0"
-  checksum: adaea5ee4dcab83660eadb533efa3e85920edefdd887db4624626abd38e2d97615c65cd95fa333253ee52c5e19a12d1dc6df8373332409ca4b15da10891ab2d7
-  languageName: node
-  linkType: hard
-
 "@vanilla-extract/integration@npm:^6.0.0, @vanilla-extract/integration@npm:^6.2.0":
-  version: 6.2.2
-  resolution: "@vanilla-extract/integration@npm:6.2.2"
+  version: 6.2.3
+  resolution: "@vanilla-extract/integration@npm:6.2.3"
   dependencies:
     "@babel/core": "npm:^7.20.7"
     "@babel/plugin-syntax-typescript": "npm:^7.20.0"
     "@vanilla-extract/babel-plugin-debug-ids": "npm:^1.0.2"
-    "@vanilla-extract/css": "npm:^1.10.0"
+    "@vanilla-extract/css": "npm:^1.14.0"
     esbuild: "npm:0.17.6"
     eval: "npm:0.1.8"
     find-up: "npm:^5.0.0"
@@ -4520,7 +4501,7 @@ __metadata:
     outdent: "npm:^0.8.0"
     vite: "npm:^4.1.4"
     vite-node: "npm:^0.28.5"
-  checksum: 31c0a536f5ac22d79eb9dfd5ebe80d0204d0603dcaa95557a4e938a0422e5ec469b937c9f5d2ad557b8f9b010f5bcd0dd7c38c62dbb9e08f35b5e623717dc650
+  checksum: d41f8aa23f0d4f776213ade03fccb02a49ed68d58e143224f4d4a436acc04c9edbbe46e81559f7a78f5fd0b43724b75ebd830a851b0feb1a6453008f67c7bea5
   languageName: node
   linkType: hard
 
@@ -4872,13 +4853,6 @@ __metadata:
     clean-stack: "npm:^2.0.0"
     indent-string: "npm:^4.0.0"
   checksum: 1101a33f21baa27a2fa8e04b698271e64616b886795fd43c31068c07533c7b3facfcaf4e9e0cab3624bd88f729a592f1c901a1a229c9e490eafce411a8644b79
-  languageName: node
-  linkType: hard
-
-"ahocorasick@npm:1.0.2":
-  version: 1.0.2
-  resolution: "ahocorasick@npm:1.0.2"
-  checksum: b2da9f3a7e6faae9975ffdb15a0d7a6c6590f8cf902fe8dc08ba972b59b61a25276923d7776fbd1844685a15600c24353dee3ee5a1cb27244fd64f1522b2c04a
   languageName: node
   linkType: hard
 
