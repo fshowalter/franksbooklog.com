@@ -12720,9 +12720,11 @@ __metadata:
   linkType: hard
 
 "lru-cache@npm:^10.0.1, lru-cache@npm:^9.1.1 || ^10.0.0":
-  version: 10.0.1
-  resolution: "lru-cache@npm:10.0.1"
-  checksum: 5bb91a97a342a41fd049c3494b44d9e21a7d4843f9284d0a0b26f00bb0e436f1f627d0641c78f88be16b86b4231546c5ee4f284733fb530c7960f0bcd7579026
+  version: 10.0.2
+  resolution: "lru-cache@npm:10.0.2"
+  dependencies:
+    semver: "npm:^7.3.5"
+  checksum: a675b71a19f4b23186549e343792c3eb6196a5fca2a96b59e31a44289459b7e166b3c6cb08952f45ac29d8cfe561cabee88d906fdd5c98fb7cbda8f5d47431a3
   languageName: node
   linkType: hard
 
@@ -16802,12 +16804,12 @@ __metadata:
   linkType: hard
 
 "streamx@npm:^2.15.0":
-  version: 2.15.3
-  resolution: "streamx@npm:2.15.3"
+  version: 2.15.4
+  resolution: "streamx@npm:2.15.4"
   dependencies:
     fast-fifo: "npm:^1.1.0"
     queue-tick: "npm:^1.0.1"
-  checksum: e10388d69823ae9ae0467ac207ead348a0adecd0b2b3ba6011996404bb1b0844e4dfadc7088bf02004747bfdfd620cf9461b001a42d27deff0cffa10ef99b246
+  checksum: b8b07d799dd30f8ae0dd8d3b8e39e4377bd844bb93580505dd59f97d55625c01032ddde1d530afc4e32c199f369c3aa5ee2102c35320e2c5c7e891b3d529f482
   languageName: node
   linkType: hard
 
