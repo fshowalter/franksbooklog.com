@@ -1,5 +1,5 @@
 import { act, render, screen, within } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
+import { userEvent } from "@testing-library/user-event";
 import ReadingsPage, { Head } from "./readings";
 import { data } from "./readings.fixtures";
 
