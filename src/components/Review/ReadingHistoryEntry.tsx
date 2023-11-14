@@ -85,8 +85,8 @@ function Details({
   const summaryText = reading.abandoned
     ? "Abandoned after"
     : reading.isAudiobook
-    ? "Listened to over"
-    : "Read over";
+      ? "Listened to over"
+      : "Read over";
 
   return (
     <Box as="details" fontWeight="light" color="subtle">

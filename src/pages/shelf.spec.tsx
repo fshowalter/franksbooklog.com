@@ -1,5 +1,5 @@
 import { act, render, screen, within } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
+import { userEvent } from "@testing-library/user-event";
 import ShelfPage, { Head } from "./shelf";
 import { data } from "./shelf.fixtures";
 
