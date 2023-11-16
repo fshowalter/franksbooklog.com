@@ -118,13 +118,13 @@ export function ListItem({
 }
 
 export const query = graphql`
-  fragment HomeListItemAuthor on WorkAuthor {
+  fragment HomeListItemAuthor on UpdateAuthor {
     name
     slug
     notes
   }
 
-  fragment HomeListItem on ReadingWithReview {
+  fragment HomeListItem on UpdatesJson {
     grade
     sequence
     workSlug
