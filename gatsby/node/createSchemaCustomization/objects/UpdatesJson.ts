@@ -67,7 +67,7 @@ async function excerptResolver(
         childMarkdownRemark: {
           frontmatter: {
             work_slug: {
-              eq: source.slug,
+              eq: source.workSlug,
             },
           },
         },

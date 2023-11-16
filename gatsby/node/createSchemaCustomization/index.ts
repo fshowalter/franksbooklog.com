@@ -10,6 +10,8 @@ import { ReadingWithReview } from "./objects/ReadingWithReview";
 import { ReadingsJson } from "./objects/ReadingsJson";
 import { ReviewedWorksJson } from "./objects/ReviewedWorksJson";
 import { TimelineEntry } from "./objects/TimelineEntry";
+import { UpdateAuthor } from "./objects/UpdateAuthor";
+import { UpdatesJson } from "./objects/UpdatesJson";
 import { WorkAuthor } from "./objects/WorkAuthor";
 import { WorksJson } from "./objects/WorksJson";
 
@@ -34,6 +36,8 @@ export function createSchemaCustomization({
     schema.buildObjectType(MostReadAuthor),
     schema.buildObjectType(ReviewedWorksJson),
     schema.buildObjectType(ProgressJson),
+    schema.buildObjectType(UpdateAuthor),
+    schema.buildObjectType(UpdatesJson),
   ];
 
   createTypes(typeDefs);
