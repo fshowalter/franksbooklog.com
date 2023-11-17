@@ -3654,9 +3654,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/react@npm:14.1.0":
-  version: 14.1.0
-  resolution: "@testing-library/react@npm:14.1.0"
+"@testing-library/react@npm:14.1.1":
+  version: 14.1.1
+  resolution: "@testing-library/react@npm:14.1.1"
   dependencies:
     "@babel/runtime": "npm:^7.12.5"
     "@testing-library/dom": "npm:^9.0.0"
@@ -3664,7 +3664,7 @@ __metadata:
   peerDependencies:
     react: ^18.0.0
     react-dom: ^18.0.0
-  checksum: d181f13cc684515dfe7ca0a961c75e5f506ffde897e5c96628bab71ddc264e67d1477ad7ad0615a1add1f82a6437143843c33c05292783ff0dc72d1a009c512f
+  checksum: 6b1b3c614cf0598c07c779bac85372262bcb7015d8c0bff6c322ffede5522073395006c7cf017e8e96574e3c653c8a00e4e0a0e6c76a3bb5cae7617c1e6729ca
   languageName: node
   linkType: hard
 
@@ -9097,7 +9097,7 @@ __metadata:
     "@silvenon/remark-smartypants": "npm:2.0.0"
     "@testing-library/dom": "npm:9.3.3"
     "@testing-library/jest-dom": "npm:6.1.4"
-    "@testing-library/react": "npm:14.1.0"
+    "@testing-library/react": "npm:14.1.1"
     "@testing-library/user-event": "npm:14.5.1"
     "@types/hast": "npm:2.3.8"
     "@types/jest": "npm:29.5.8"
