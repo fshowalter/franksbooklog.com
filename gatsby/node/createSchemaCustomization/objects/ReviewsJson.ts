@@ -10,19 +10,21 @@ import findDefaultCoverNode from "../utils/findDefaultCoverNode";
 import { resolveFieldForNode } from "../utils/resolveFieldForNode";
 import { MarkdownRemarkNode } from "./MarkdownRemark";
 
-export interface UpdateNode extends GatsbyNode {
-  workSlug: string;
+export interface ReviewNode extends GatsbyNode {
+  slug: string;
   sequence: number;
-  includedInWorkSlugs: string[];
+  includedInSlugs: string[];
 }
 
-export const UpdatesJson = {
-  name: SchemaNames.UpdatesJson,
+export const ReviewsJson = {
+  name: SchemaNames.ReviewsJson,
   interfaces: ["Node"],
   fields: {
     sequence: "Int!",
-    workSlug: "String!",
-    includedInWorkSlugs: "[String!]!",
+    title: "String!",
+    sortTitle: "String!",
+    slug: "String!",
+    includedInSlugs: "[String!]!",
     edition: "String!",
     date: {
       type: "Date!",
@@ -34,17 +36,18 @@ export const UpdatesJson = {
       type: "String",
       resolve: excerptResolver,
     },
-    title: "String!",
     yearPublished: "Int!",
+    yearReviewed: `Int!`,
     kind: "String!",
     authors: {
-      type: `[${SchemaNames.UpdateAuthor}!]!`,
+      type: `[${SchemaNames.ReviewedWorkAuthor}!]!`,
     },
     cover: {
       type: "File!",
       resolve: coverResolver,
     },
     grade: "String",
+    gradeValue: `Int!`,
   },
   extensions: {
     infer: false,
@@ -52,7 +55,7 @@ export const UpdatesJson = {
 };
 
 async function excerptResolver(
-  source: UpdateNode,
+  source: ReviewNode,
   args: GatsbyResolveArgs,
   context: GatsbyNodeContext,
   info: GatsbyResolveInfo,
@@ -67,7 +70,7 @@ async function excerptResolver(
         childMarkdownRemark: {
           frontmatter: {
             work_slug: {
-              eq: source.workSlug,
+              eq: source.slug,
             },
           },
         },
@@ -100,7 +103,7 @@ async function excerptResolver(
 }
 
 async function coverResolver(
-  source: UpdateNode,
+  source: ReviewNode,
   _args: GatsbyResolveArgs,
   context: GatsbyNodeContext,
 ) {
@@ -109,7 +112,7 @@ async function coverResolver(
     query: {
       filter: {
         absolutePath: {
-          eq: path.resolve(`./content/assets/covers/${source.workSlug}.png`),
+          eq: path.resolve(`./content/assets/covers/${source.slug}.png`),
         },
       },
     },
@@ -119,22 +122,24 @@ async function coverResolver(
     return cover;
   }
 
-  let parentWorkCover;
-
-  source.includedInWorkSlugs.find(async (slug) => {
-    parentWorkCover = await context.nodeModel.findOne({
+  for (let i = 0; i < source.includedInSlugs.length; i++) {
+    const parentWorkCover = await context.nodeModel.findOne({
       type: "File",
       query: {
         filter: {
           absolutePath: {
-            eq: path.resolve(`./content/assets/covers/${slug}.png`),
+            eq: path.resolve(
+              `./content/assets/covers/${source.includedInSlugs[i]}.png`,
+            ),
           },
         },
       },
     });
 
-    return parentWorkCover;
-  });
+    if (parentWorkCover) {
+      return parentWorkCover;
+    }
+  }
 
-  return parentWorkCover || findDefaultCoverNode(context.nodeModel);
+  return findDefaultCoverNode(context.nodeModel);
 }

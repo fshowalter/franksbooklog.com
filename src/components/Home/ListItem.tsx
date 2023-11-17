@@ -47,7 +47,7 @@ export function ListItem({
         <GridArea name="cover" maxWidth="prose">
           <Link
             rel="canonical"
-            to={`/reviews/${item.workSlug}/`}
+            to={`/reviews/${item.slug}/`}
             className={coverBorderStyle}
             display="block"
           >
@@ -85,7 +85,7 @@ export function ListItem({
               textAlign="center"
             >
               <Link
-                to={`/reviews/${item.workSlug}/`}
+                to={`/reviews/${item.slug}/`}
                 rel="canonical"
                 color="default"
                 display="inline-block"
@@ -118,16 +118,16 @@ export function ListItem({
 }
 
 export const query = graphql`
-  fragment HomeListItemAuthor on UpdateAuthor {
+  fragment HomeListItemAuthor on ReviewedWorkAuthor {
     name
     slug
     notes
   }
 
-  fragment HomeListItem on UpdatesJson {
+  fragment HomeListItem on ReviewsJson {
     grade
     sequence
-    workSlug
+    slug
     date(formatString: "DD MMM YYYY")
     excerpt
     title

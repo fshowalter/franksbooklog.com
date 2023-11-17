@@ -47,7 +47,7 @@ export default function HomeTemplate({
 
 export const pageQuery = graphql`
   query HomeTemplate($skip: Int!, $limit: Int!) {
-    update: allUpdatesJson(
+    update: allReviewsJson(
       sort: { sequence: DESC }
       limit: $limit
       skip: $skip

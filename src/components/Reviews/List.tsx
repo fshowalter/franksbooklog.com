@@ -94,23 +94,23 @@ function YearAndKind({
 }
 
 export const query = graphql`
-  fragment ReviewsListItemAuthor on WorkAuthor {
+  fragment ReviewsListItemAuthor on ReviewedWorkAuthor {
     name
     notes
     sortName
   }
 
-  fragment ReviewsListItem on ReviewedWorksJson {
+  fragment ReviewsListItem on ReviewsJson {
     id
     grade
     slug
-    reviewDate(formatString: "MMM D, YYYY")
+    date(formatString: "MMM D, YYYY")
     gradeValue
-    sortDate: reviewDate
+    sortDate: date
     title
     yearPublished
-    reviewMonth: reviewDate(formatString: "MMMM")
-    reviewYear
+    monthReviewed: date(formatString: "MMMM")
+    yearReviewed
     sortTitle
     kind
     authors {

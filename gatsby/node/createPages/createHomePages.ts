@@ -3,7 +3,7 @@ import path from "path";
 
 const query = `#graphql
 { 
-  update: allUpdatesJson {
+  update: allReviewsJson {
     nodes {
       id
     }
@@ -14,7 +14,7 @@ interface QueryResult {
   update: {
     nodes: {
       id: string;
-    }[]
+    }[];
   };
 }
 
