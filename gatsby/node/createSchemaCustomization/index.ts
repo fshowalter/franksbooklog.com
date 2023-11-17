@@ -5,15 +5,12 @@ import { proxyToWorkExtension } from "./extensions/proxyToWork";
 import { AuthorsJson } from "./objects/AuthorsJson";
 import { MarkdownRemark } from "./objects/MarkdownRemark";
 import { MostReadAuthor } from "./objects/MostReadAuthor";
-import { ProgressJson } from "./objects/ProgressJson";
-import { ReadingWithReview } from "./objects/ReadingWithReview";
-import { ReadingsJson } from "./objects/ReadingsJson";
-import { ReviewedWorkAuthor } from "./objects/ReviewedWorkAuthor";
+import { ReadingProgressAuthor } from "./objects/ReadingProgressAuthor";
+import { ReadingProgressJson } from "./objects/ReadingProgressJson";
 import { ReviewedWorksJson } from "./objects/ReviewedWorksJson";
-import { ReviewsJson } from "./objects/ReviewsJson";
 import { TimelineEntry } from "./objects/TimelineEntry";
+import { UnreviewedWorksJson } from "./objects/UnreviewedWorksJson";
 import { WorkAuthor } from "./objects/WorkAuthor";
-import { WorksJson } from "./objects/WorksJson";
 
 export function createSchemaCustomization({
   actions,
@@ -29,15 +26,12 @@ export function createSchemaCustomization({
     schema.buildObjectType(TimelineEntry),
     schema.buildObjectType(WorkAuthor),
     schema.buildObjectType(MarkdownRemark),
-    schema.buildObjectType(WorksJson),
     schema.buildObjectType(AuthorsJson),
-    schema.buildObjectType(ReadingWithReview),
-    schema.buildObjectType(ReadingsJson),
     schema.buildObjectType(MostReadAuthor),
     schema.buildObjectType(ReviewedWorksJson),
-    schema.buildObjectType(ProgressJson),
-    schema.buildObjectType(ReviewedWorkAuthor),
-    schema.buildObjectType(ReviewsJson),
+    schema.buildObjectType(UnreviewedWorksJson),
+    schema.buildObjectType(ReadingProgressAuthor),
+    schema.buildObjectType(ReadingProgressJson),
   ];
 
   createTypes(typeDefs);

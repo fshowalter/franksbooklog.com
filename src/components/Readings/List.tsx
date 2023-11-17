@@ -103,7 +103,7 @@ export function SubListItem({
       backgroundColor="unset"
     >
       <ListItemCover
-        slug={item.reviewed ? item.workSlug : undefined}
+        slug={item.reviewed ? item.slug : undefined}
         image={item.cover}
         title={item.title}
         flexShrink={0}
@@ -154,7 +154,7 @@ export function Title({ item }: { item: Queries.ReadingsListItemFragment }) {
   if (item.reviewed) {
     return (
       <Link
-        to={`/reviews/${item.workSlug}/`}
+        to={`/reviews/${item.slug}/`}
         fontSize="medium"
         lineHeight={20}
         display="block"
@@ -207,12 +207,12 @@ function Edition({ edition }: { edition: string }): JSX.Element {
 }
 
 export const query = graphql`
-  fragment ReadingListItemAuthor on WorkAuthor {
+  fragment ReadingListItemAuthor on ReadingProgressAuthor {
     name
   }
 
-  fragment ReadingsListItem on ProgressJson {
-    workSlug
+  fragment ReadingsListItem on ReadingProgressJson {
+    slug
     reviewed
     sequence
     readingYear
@@ -224,7 +224,6 @@ export const query = graphql`
     title
     edition
     kind
-    sortDate
     authors {
       ...ReadingListItemAuthor
     }

@@ -7,8 +7,9 @@ export enum SchemaNames {
   ReadingWithReview = "ReadingWithReview",
   ReviewedWorksJson = "ReviewedWorksJson",
   TimelineEntry = "TimelineEntry",
-  ReviewedWorkAuthor = "ReviewedWorkAuthor",
-  ReviewsJson = "ReviewsJson",
   WorkAuthor = "WorkAuthor",
   WorksJson = "WorksJson",
+  ReadingProgressAuthor = "ReadingProgressAuthor",
+  ReadingProgressJson = "ReadingProgressJson",
+  UnreviewedWorksJson = "UnreviewedWorksJson",
 }

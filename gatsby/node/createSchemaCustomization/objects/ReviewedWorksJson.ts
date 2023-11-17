@@ -1,197 +1,102 @@
 import { SchemaNames } from "../schemaNames";
-import type { GatsbyNodeContext, GatsbyResolveInfo } from "../type-definitions";
-import { GatsbyNode } from "../type-definitions";
+import type {
+  GatsbyNode,
+  GatsbyNodeContext,
+  GatsbyResolveArgs,
+  GatsbyResolveInfo,
+} from "../type-definitions";
 import { resolveFieldForNode } from "../utils/resolveFieldForNode";
-import { sliceWorksForBrowseMore } from "../utils/sliceWorksForBrowseMore";
-import { WorkNode } from "./WorksJson";
+import { MarkdownRemarkNode } from "./MarkdownRemark";
+import { coverResolver } from "./fieldResolvers/coverResolver";
 
-export interface ReviewedWorkNode extends GatsbyNode {
-  includedWorks: string[];
-  workSlug: string;
-  work: WorkNode;
+interface ReviewedWorkNode extends GatsbyNode {
+  slug: string;
+  sequence: number;
+  includedInSlugs: string[];
 }
 
 export const ReviewedWorksJson = {
   name: SchemaNames.ReviewedWorksJson,
   interfaces: ["Node"],
   fields: {
-    workSlug: "String!",
-    reviewDate: {
-      type: `Date!`,
+    sequence: "Int!",
+    title: "String!",
+    sortTitle: "String!",
+    slug: "String!",
+    includedInSlugs: "[String!]!",
+    edition: "String!",
+    date: {
+      type: "Date!",
       extensions: {
         dateformat: {},
       },
     },
-    grade: `String!`,
-    gradeValue: `Int!`,
-    reviewYear: `Int!`,
-    title: {
-      type: `String!`,
-      extensions: {
-        proxyToWork: {
-          fieldName: "title",
-        },
-      },
+    excerpt: {
+      type: "String",
+      resolve: excerptResolver,
     },
-    subtitle: {
-      type: `String`,
-      extensions: {
-        proxyToWork: {
-          fieldName: "subtitle",
-        },
-      },
-    },
-    slug: {
-      type: `String!`,
-      extensions: {
-        proxyToWork: {
-          fieldName: "slug",
-        },
-      },
-    },
-    kind: {
-      type: `String!`,
-      extensions: {
-        proxyToWork: {
-          fieldName: "kind",
-        },
-      },
-    },
-    sortTitle: {
-      type: `String!`,
-      extensions: {
-        proxyToWork: {
-          fieldName: "sortTitle",
-        },
-      },
-    },
-    yearPublished: {
-      type: `Int!`,
-      extensions: {
-        proxyToWork: {
-          fieldName: "yearPublished",
-        },
-      },
-    },
+    yearPublished: "Int!",
+    yearReviewed: `Int!`,
+    kind: "String!",
     authors: {
       type: `[${SchemaNames.WorkAuthor}!]!`,
-      extensions: {
-        proxyToWork: {
-          fieldName: "authors",
-        },
-      },
     },
     cover: {
-      type: `File!`,
-      extensions: {
-        proxyToWork: {
-          fieldName: "cover",
-        },
-      },
+      type: "File!",
+      resolve: coverResolver,
     },
-    readings: {
-      type: `[${SchemaNames.ReadingsJson}!]!`,
-      extensions: {
-        proxyToWork: {
-          fieldName: "readings",
-        },
-      },
-    },
-    work: {
-      type: `${SchemaNames.WorksJson}!`,
-      resolve: async (
-        source: ReviewedWorkNode,
-        _args: unknown,
-        context: GatsbyNodeContext,
-      ) => {
-        return await context.nodeModel.findOne({
-          type: SchemaNames.WorksJson,
-          query: {
-            filter: {
-              slug: {
-                eq: source.workSlug,
-              },
-            },
-          },
-        });
-      },
-    },
-    review: {
-      type: `${SchemaNames.MarkdownRemark}!`,
-      resolve: async (
-        source: ReviewedWorkNode,
-        _args: unknown,
-        context: GatsbyNodeContext,
-      ) => {
-        return await context.nodeModel.findOne({
-          type: SchemaNames.MarkdownRemark,
-          query: {
-            filter: {
-              frontmatter: {
-                work_slug: {
-                  eq: source.workSlug,
-                },
-              },
-            },
-          },
-        });
-      },
-    },
-    includedWorks: {
-      type: `[${SchemaNames.ReviewedWorksJson}!]!`,
-      resolve: async (
-        source: ReviewedWorkNode,
-        _args: unknown,
-        context: GatsbyNodeContext,
-        info: GatsbyResolveInfo,
-      ) => {
-        const work = await resolveFieldForNode<WorkNode>({
-          fieldName: "work",
-          source,
-          context,
-          info,
-        });
-
-        if (!work) {
-          return [];
-        }
-
-        const { entries } = await context.nodeModel.findAll({
-          type: SchemaNames.ReviewedWorksJson,
-          query: {
-            filter: {
-              slug: {
-                in: work.includedWorks,
-              },
-            },
-          },
-        });
-
-        return entries;
-      },
-    },
-    browseMore: {
-      type: `[${SchemaNames.ReviewedWorksJson}!]!`,
-      resolve: async (
-        source: ReviewedWorkNode,
-        _args: unknown,
-        context: GatsbyNodeContext,
-      ) => {
-        const { entries } = await context.nodeModel.findAll<ReviewedWorkNode>({
-          type: SchemaNames.ReviewedWorksJson,
-          query: {
-            sort: {
-              fields: ["work.sortTitle"],
-              order: ["ASC"],
-            },
-          },
-        });
-
-        return sliceWorksForBrowseMore(Array.from(entries), source.id);
-      },
-    },
+    grade: "String",
+    gradeValue: `Int!`,
   },
   extensions: {
     infer: false,
   },
 };
+
+async function excerptResolver(
+  source: ReviewedWorkNode,
+  args: GatsbyResolveArgs,
+  context: GatsbyNodeContext,
+  info: GatsbyResolveInfo,
+) {
+  const reviewFileNode = await context.nodeModel.findOne<GatsbyNode>({
+    type: "File",
+    query: {
+      filter: {
+        sourceInstanceName: {
+          eq: "reviews",
+        },
+        childMarkdownRemark: {
+          frontmatter: {
+            work_slug: {
+              eq: source.slug,
+            },
+          },
+        },
+      },
+    },
+  });
+
+  if (!reviewFileNode) {
+    return null;
+  }
+
+  const reviewMarkdownNode = await resolveFieldForNode<MarkdownRemarkNode>({
+    fieldName: "childMarkdownRemark",
+    source: reviewFileNode,
+    context,
+    info,
+  });
+
+  if (!reviewMarkdownNode) {
+    return null;
+  }
+
+  return await resolveFieldForNode<string>({
+    fieldName: "excerptHtml",
+    source: reviewMarkdownNode,
+    context,
+    info,
+    args,
+  });
+}

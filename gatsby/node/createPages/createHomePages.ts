@@ -3,7 +3,7 @@ import path from "path";
 
 const query = `#graphql
 { 
-  update: allReviewsJson {
+  update: allReviewedWorksJson {
     nodes {
       id
     }
