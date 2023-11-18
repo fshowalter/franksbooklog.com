@@ -1,0 +1,82 @@
+{
+  "span": "2023",
+  "reviews": 9,
+  "readWorks": 9,
+  "books": 7,
+  "gradeDistribution": [
+    {
+      "name": "C+",
+      "count": 2
+    },
+    {
+      "name": "C-",
+      "count": 2
+    },
+    {
+      "name": "F",
+      "count": 1
+    },
+    {
+      "name": "B",
+      "count": 2
+    },
+    {
+      "name": "B-",
+      "count": 1
+    },
+    {
+      "name": "A",
+      "count": 1
+    }
+  ],
+  "kindDistribution": [
+    {
+      "name": "Novel",
+      "count": 5
+    },
+    {
+      "name": "Novella",
+      "count": 1
+    },
+    {
+      "name": "Nonfiction",
+      "count": 2
+    },
+    {
+      "name": "Short Story",
+      "count": 1
+    }
+  ],
+  "editionDistribution": [
+    {
+      "name": "Kindle",
+      "count": 6
+    },
+    {
+      "name": "Audible",
+      "count": 3
+    }
+  ],
+  "decadeDistribution": [
+    {
+      "name": "1990s",
+      "count": 1
+    },
+    {
+      "name": "1980s",
+      "count": 1
+    },
+    {
+      "name": "2020s",
+      "count": 3
+    },
+    {
+      "name": "2010s",
+      "count": 3
+    },
+    {
+      "name": "1970s",
+      "count": 1
+    }
+  ]
+}

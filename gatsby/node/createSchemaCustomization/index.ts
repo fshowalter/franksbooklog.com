@@ -2,7 +2,7 @@ import type { CreateSchemaCustomizationArgs } from "gatsby";
 import { linkReviewedWorksExtension } from "./extensions/linkReviewedWorks";
 import { proxyToReviewExtension } from "./extensions/proxyToReview";
 import { proxyToWorkExtension } from "./extensions/proxyToWork";
-import { AuthorsJson } from "./objects/AuthorsJson";
+import { AuthorsJson, AuthorWork } from "./objects/AuthorsJson";
 import { MarkdownRemark } from "./objects/MarkdownRemark";
 import { MostReadAuthor } from "./objects/MostReadAuthor";
 import { ReadingProgressAuthor } from "./objects/ReadingProgressAuthor";
@@ -26,6 +26,7 @@ export function createSchemaCustomization({
     schema.buildObjectType(TimelineEntry),
     schema.buildObjectType(WorkAuthor),
     schema.buildObjectType(MarkdownRemark),
+    schema.buildObjectType(AuthorWork),
     schema.buildObjectType(AuthorsJson),
     schema.buildObjectType(MostReadAuthor),
     schema.buildObjectType(ReviewedWorksJson),

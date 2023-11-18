@@ -1,0 +1,126 @@
+{
+  "span": "2022",
+  "reviews": 48,
+  "readWorks": 48,
+  "books": 38,
+  "gradeDistribution": [
+    {
+      "name": "C",
+      "count": 4
+    },
+    {
+      "name": "C+",
+      "count": 11
+    },
+    {
+      "name": "C-",
+      "count": 3
+    },
+    {
+      "name": "A-",
+      "count": 7
+    },
+    {
+      "name": "B+",
+      "count": 6
+    },
+    {
+      "name": "D+",
+      "count": 2
+    },
+    {
+      "name": "B-",
+      "count": 4
+    },
+    {
+      "name": "B",
+      "count": 7
+    },
+    {
+      "name": "Abandoned",
+      "count": 1
+    },
+    {
+      "name": "A",
+      "count": 2
+    },
+    {
+      "name": "D",
+      "count": 1
+    }
+  ],
+  "kindDistribution": [
+    {
+      "name": "Novel",
+      "count": 18
+    },
+    {
+      "name": "Nonfiction",
+      "count": 19
+    },
+    {
+      "name": "Short Story",
+      "count": 9
+    },
+    {
+      "name": "Novella",
+      "count": 1
+    },
+    {
+      "name": "Collection",
+      "count": 1
+    }
+  ],
+  "editionDistribution": [
+    {
+      "name": "Kindle",
+      "count": 25
+    },
+    {
+      "name": "Audible",
+      "count": 23
+    }
+  ],
+  "decadeDistribution": [
+    {
+      "name": "1990s",
+      "count": 3
+    },
+    {
+      "name": "1980s",
+      "count": 6
+    },
+    {
+      "name": "1970s",
+      "count": 5
+    },
+    {
+      "name": "2010s",
+      "count": 22
+    },
+    {
+      "name": "2000s",
+      "count": 2
+    },
+    {
+      "name": "1950s",
+      "count": 3
+    },
+    {
+      "name": "2020s",
+      "count": 3
+    },
+    {
+      "name": "1930s",
+      "count": 2
+    },
+    {
+      "name": "1940s",
+      "count": 1
+    },
+    {
+      "name": "1890s",
+      "count": 1
+    }
+  ]
+}

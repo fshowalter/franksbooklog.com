@@ -1,21 +1,21 @@
 {
-"sequence": 45,
-"slug": "salems-lot-by-stephen-king",
-"title": "'Salem's Lot",
-"sortTitle": "'Salem's Lot",
-"yearPublished": "1975",
-"grade": "B",
-"gradeValue": 9,
-"kind": "Novel",
-"date": "2022-10-14",
-"authors": [
-{
-"slug": "stephen-king",
-"notes": null,
-"name": "Stephen King",
-"sortName": "King, Stephen"
-}
-],
-"includedInSlugs": [],
-"yearReviewed": 2022
+  "sequence": 45,
+  "slug": "salems-lot-by-stephen-king",
+  "title": "'Salem's Lot",
+  "sortTitle": "'Salem's Lot",
+  "yearPublished": "1975",
+  "grade": "B",
+  "gradeValue": 9,
+  "kind": "Novel",
+  "date": "2022-10-14",
+  "authors": [
+    {
+      "slug": "stephen-king",
+      "notes": null,
+      "name": "Stephen King",
+      "sortName": "King, Stephen"
+    }
+  ],
+  "includedInSlugs": [],
+  "yearReviewed": 2022
 }

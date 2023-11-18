@@ -30,7 +30,7 @@ export default function ShelfPage({
 
 export const pageQuery = graphql`
   query ShelfPage {
-    work: allWorksJson(
+    work: allUnreviewedWorksJson(
       filter: { review: { id: { eq: null } } }
       sort: [{ authors: { sortName: ASC } }, { yearPublished: ASC }]
     ) {

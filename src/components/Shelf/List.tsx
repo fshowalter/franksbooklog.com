@@ -97,7 +97,7 @@ export const query = graphql`
     sortName
   }
 
-  fragment ShelfListItem on WorksJson {
+  fragment ShelfListItem on UnreviewedWorksJson {
     id
     slug
     title
