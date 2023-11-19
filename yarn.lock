@@ -6590,32 +6590,25 @@ __metadata:
   linkType: hard
 
 "core-js-compat@npm:^3.31.0, core-js-compat@npm:^3.33.1":
-  version: 3.33.2
-  resolution: "core-js-compat@npm:3.33.2"
+  version: 3.33.3
+  resolution: "core-js-compat@npm:3.33.3"
   dependencies:
     browserslist: "npm:^4.22.1"
-  checksum: 9806ac461080f4eef03a6adda77933c8f0bbea16b487ef686a827f9dd0f6ab24ff561415b697155b402d5992ff3bec44a2e01fbe8bd1e8f46acde61a1ecc5910
+  checksum: 90d5580bac23946c31aec1b75f1af4ebeafe97528398623780b3728cb6b28444be9aeb3563c857643cc84b3579007c45281fcb69fba9d9a7a011bea370e5e940
   languageName: node
   linkType: hard
 
 "core-js-pure@npm:^3.23.3":
-  version: 3.33.2
-  resolution: "core-js-pure@npm:3.33.2"
-  checksum: 9a65d051912bac477aa005e776a625e5675ff42b62ca7a01acb1665e9a813709684bb5a35f575e65fa27b382c6ed311e9b2ebeb37bddfc87d5f9ee5fd86b9742
+  version: 3.33.3
+  resolution: "core-js-pure@npm:3.33.3"
+  checksum: 543a1e5fa9c6c17a732e56891c84e645b043fe91825bbcb09c93a557ccf152b0723c5cde2bb791b01528a3b1869aa4d50e0058b0391b64ee31dd1cbd37d45bf3
   languageName: node
   linkType: hard
 
-"core-js@npm:3.33.3":
+"core-js@npm:3.33.3, core-js@npm:^3.31.0":
   version: 3.33.3
   resolution: "core-js@npm:3.33.3"
   checksum: 77b4c9abaf22ae9c60966121b4b2a4a388cebd067d4cf6ae0f22762b2e8060f301eaacebb781e598ba5f43fe2e53fc88489b013faefdfcecadbf12e242263a50
-  languageName: node
-  linkType: hard
-
-"core-js@npm:^3.31.0":
-  version: 3.33.2
-  resolution: "core-js@npm:3.33.2"
-  checksum: d62554d51ce8a3f33d0b1f8b064cbd21afcae275043ae96d3d43f18701b80cd423fab484517a81ee1d096db252e2aeada6ef6d1fd80a26db54f82f8f349a62c7
   languageName: node
   linkType: hard
 
