@@ -4485,8 +4485,8 @@ __metadata:
   linkType: hard
 
 "@vanilla-extract/integration@npm:^6.0.0, @vanilla-extract/integration@npm:^6.2.0":
-  version: 6.2.3
-  resolution: "@vanilla-extract/integration@npm:6.2.3"
+  version: 6.2.4
+  resolution: "@vanilla-extract/integration@npm:6.2.4"
   dependencies:
     "@babel/core": "npm:^7.20.7"
     "@babel/plugin-syntax-typescript": "npm:^7.20.0"
@@ -4501,7 +4501,7 @@ __metadata:
     outdent: "npm:^0.8.0"
     vite: "npm:^4.1.4"
     vite-node: "npm:^0.28.5"
-  checksum: d41f8aa23f0d4f776213ade03fccb02a49ed68d58e143224f4d4a436acc04c9edbbe46e81559f7a78f5fd0b43724b75ebd830a851b0feb1a6453008f67c7bea5
+  checksum: 9dd2dfe59b9e690480388a813c5ab7efa378dd293c60d7117edc0899c34dd25257926c78c059a97f7aed53976c0ee883da2b5f9ba4f3c7403bd3d98b2d8dc666
   languageName: node
   linkType: hard
 
