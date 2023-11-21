@@ -1,15 +1,16 @@
 {
   "slug": "kitty-litter-by-richard-laymon",
   "title": "Kitty Litter",
+  "subtitle": null,
   "sortTitle": "Kitty Litter",
   "yearPublished": "1992",
   "kind": "Short Story",
   "authors": [
     {
-      "slug": "richard-laymon",
-      "notes": null,
       "name": "Richard Laymon",
-      "sortName": "Laymon, Richard"
+      "sortName": "Laymon, Richard",
+      "slug": "richard-laymon",
+      "notes": null
     }
   ],
   "includedInSlugs": []

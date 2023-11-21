@@ -2,6 +2,7 @@
   "sequence": 35,
   "slug": "is-this-anything-by-jerry-seinfeld",
   "title": "Is This Anything?",
+  "subtitle": null,
   "sortTitle": "Is This Anything?",
   "yearPublished": "2020",
   "grade": "C",
@@ -10,10 +11,39 @@
   "date": "2022-09-10",
   "authors": [
     {
-      "slug": "jerry-seinfeld",
-      "notes": null,
       "name": "Jerry Seinfeld",
-      "sortName": "Seinfeld, Jerry"
+      "sortName": "Seinfeld, Jerry",
+      "slug": "jerry-seinfeld",
+      "notes": null
+    }
+  ],
+  "readings": [
+    {
+      "sequence": 35,
+      "date": "2022-09-10",
+      "edition": "Audible",
+      "editionNotes": "Read by Jerry Seinfeld",
+      "isAudioBook": true,
+      "abandoned": false,
+      "readingTime": 5,
+      "timeline": [
+        {
+          "date": "2022-09-06",
+          "progress": "11%"
+        },
+        {
+          "date": "2022-09-07",
+          "progress": "48%"
+        },
+        {
+          "date": "2022-09-09",
+          "progress": "55%"
+        },
+        {
+          "date": "2022-09-10",
+          "progress": "Finished"
+        }
+      ]
     }
   ],
   "includedInSlugs": [],

@@ -2,6 +2,7 @@
   "sequence": 48,
   "slug": "the-skeptics-guide-to-the-universe-by-steven-novella",
   "title": "The Skeptics' Guide to the Universe",
+  "subtitle": "How to Know What's Really Real in a World Increasingly Full of Fake",
   "sortTitle": "Skeptics' Guide to the Universe: How to Know What's Really Real in a World Increasingly Full of Fake",
   "yearPublished": "2018",
   "grade": "B+",
@@ -10,10 +11,39 @@
   "date": "2022-10-29",
   "authors": [
     {
-      "slug": "steven-novella",
-      "notes": null,
       "name": "Steven Novella",
-      "sortName": "Novella, Steven"
+      "sortName": "Novella, Steven",
+      "slug": "steven-novella",
+      "notes": null
+    }
+  ],
+  "readings": [
+    {
+      "sequence": 48,
+      "date": "2022-10-29",
+      "edition": "Audible",
+      "editionNotes": "Read by Steven Novella",
+      "isAudioBook": true,
+      "abandoned": false,
+      "readingTime": 8,
+      "timeline": [
+        {
+          "date": "2022-10-22",
+          "progress": "38%"
+        },
+        {
+          "date": "2022-10-23",
+          "progress": "64%"
+        },
+        {
+          "date": "2022-10-28",
+          "progress": "77%"
+        },
+        {
+          "date": "2022-10-29",
+          "progress": "Finished"
+        }
+      ]
     }
   ],
   "includedInSlugs": [],

@@ -2,6 +2,7 @@
   "sequence": 43,
   "slug": "out-are-the-lights-by-richard-laymon",
   "title": "Out Are the Lights",
+  "subtitle": null,
   "sortTitle": "Out Are the Lights",
   "yearPublished": "1982",
   "grade": "C-",
@@ -10,10 +11,55 @@
   "date": "2022-10-11",
   "authors": [
     {
-      "slug": "richard-laymon",
-      "notes": null,
       "name": "Richard Laymon",
-      "sortName": "Laymon, Richard"
+      "sortName": "Laymon, Richard",
+      "slug": "richard-laymon",
+      "notes": null
+    }
+  ],
+  "readings": [
+    {
+      "sequence": 43,
+      "date": "2022-10-11",
+      "edition": "Kindle",
+      "editionNotes": "<span data-work-slug=\"out-are-the-lights-and-other-tales-by-richard-laymon\">_Out Are the Lights and Other Tales_</span>, Headline, 1993",
+      "isAudioBook": false,
+      "abandoned": false,
+      "readingTime": 18,
+      "timeline": [
+        {
+          "date": "2022-09-24",
+          "progress": "7%"
+        },
+        {
+          "date": "2022-09-25",
+          "progress": "20%"
+        },
+        {
+          "date": "2022-10-01",
+          "progress": "26%"
+        },
+        {
+          "date": "2022-10-02",
+          "progress": "36%"
+        },
+        {
+          "date": "2022-10-07",
+          "progress": "43%"
+        },
+        {
+          "date": "2022-10-08",
+          "progress": "72%"
+        },
+        {
+          "date": "2022-10-09",
+          "progress": "87%"
+        },
+        {
+          "date": "2022-10-11",
+          "progress": "Finished"
+        }
+      ]
     }
   ],
   "includedInSlugs": [

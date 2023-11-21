@@ -2,6 +2,7 @@
   "sequence": 37,
   "slug": "draft-no-4-by-john-mcphee",
   "title": "Draft No. 4",
+  "subtitle": "On the Writing Process",
   "sortTitle": "Draft No. 4: On the Writing Process",
   "yearPublished": "2013",
   "grade": "C",
@@ -10,10 +11,27 @@
   "date": "2022-09-11",
   "authors": [
     {
-      "slug": "john-mcphee",
-      "notes": null,
       "name": "John McPhee",
-      "sortName": "McPhee, John"
+      "sortName": "McPhee, John",
+      "slug": "john-mcphee",
+      "notes": null
+    }
+  ],
+  "readings": [
+    {
+      "sequence": 37,
+      "date": "2022-09-11",
+      "edition": "Audible",
+      "editionNotes": "Read by John McPhee",
+      "isAudioBook": true,
+      "abandoned": false,
+      "readingTime": 1,
+      "timeline": [
+        {
+          "date": "2022-09-11",
+          "progress": "Finished"
+        }
+      ]
     }
   ],
   "includedInSlugs": [],

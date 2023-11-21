@@ -2,6 +2,7 @@
   "sequence": 57,
   "slug": "record-play-pause-by-stephen-morris",
   "title": "Record Play Pause",
+  "subtitle": null,
   "sortTitle": "Record Play Pause",
   "yearPublished": "2019",
   "grade": "A",
@@ -10,10 +11,39 @@
   "date": "2023-11-11",
   "authors": [
     {
-      "slug": "stephen-morris",
-      "notes": null,
       "name": "Stephen Morris",
-      "sortName": "Morris, Stephen"
+      "sortName": "Morris, Stephen",
+      "slug": "stephen-morris",
+      "notes": null
+    }
+  ],
+  "readings": [
+    {
+      "sequence": 57,
+      "date": "2023-11-11",
+      "edition": "Audible",
+      "editionNotes": null,
+      "isAudioBook": true,
+      "abandoned": false,
+      "readingTime": 6,
+      "timeline": [
+        {
+          "date": "2023-11-06",
+          "progress": "43%"
+        },
+        {
+          "date": "2023-11-08",
+          "progress": "49%"
+        },
+        {
+          "date": "2023-11-10",
+          "progress": "77%"
+        },
+        {
+          "date": "2023-11-11",
+          "progress": "Finished"
+        }
+      ]
     }
   ],
   "includedInSlugs": [],

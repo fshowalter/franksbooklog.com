@@ -2,6 +2,7 @@
   "sequence": 41,
   "slug": "the-big-sleep-by-raymond-chandler",
   "title": "The Big Sleep",
+  "subtitle": null,
   "sortTitle": "Big Sleep",
   "yearPublished": "1939",
   "grade": "C+",
@@ -10,10 +11,27 @@
   "date": "2022-09-24",
   "authors": [
     {
-      "slug": "raymond-chandler",
-      "notes": null,
       "name": "Raymond Chandler",
-      "sortName": "Chandler, Raymond"
+      "sortName": "Chandler, Raymond",
+      "slug": "raymond-chandler",
+      "notes": null
+    }
+  ],
+  "readings": [
+    {
+      "sequence": 41,
+      "date": "2022-09-24",
+      "edition": "Audible",
+      "editionNotes": "Read by Scott Brick",
+      "isAudioBook": true,
+      "abandoned": false,
+      "readingTime": 1,
+      "timeline": [
+        {
+          "date": "2022-09-24",
+          "progress": "Finished"
+        }
+      ]
     }
   ],
   "includedInSlugs": [],

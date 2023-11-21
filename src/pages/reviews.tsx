@@ -33,16 +33,16 @@ export default function ReviewsPage({
 
 export const pageQuery = graphql`
   query ReviewsPage {
-    books: allReviewsJson(filter: { kind: { ne: "Short Story" } }) {
+    books: allReviewedWorksJson(filter: { kind: { ne: "Short Story" } }) {
       totalCount
     }
-    shortStory: allReviewsJson(filter: { kind: { eq: "Short Story" } }) {
+    shortStory: allReviewedWorksJson(filter: { kind: { eq: "Short Story" } }) {
       totalCount
     }
-    abandoned: allReviewsJson(filter: { gradeValue: { eq: 0 } }) {
+    abandoned: allReviewedWorksJson(filter: { gradeValue: { eq: 0 } }) {
       totalCount
     }
-    reviewedWork: allReviewsJson(sort: { authors: { sortName: ASC } }) {
+    reviewedWork: allReviewedWorksJson(sort: { authors: { sortName: ASC } }) {
       nodes {
         ...ReviewsListItem
       }

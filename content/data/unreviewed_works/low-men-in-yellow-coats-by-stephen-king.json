@@ -1,15 +1,16 @@
 {
   "slug": "low-men-in-yellow-coats-by-stephen-king",
   "title": "Low Men in Yellow Coats",
+  "subtitle": null,
   "sortTitle": "Low Men in Yellow Coats",
   "yearPublished": "1999",
   "kind": "Novella",
   "authors": [
     {
-      "slug": "stephen-king",
-      "notes": null,
       "name": "Stephen King",
-      "sortName": "King, Stephen"
+      "sortName": "King, Stephen",
+      "slug": "stephen-king",
+      "notes": null
     }
   ],
   "includedInSlugs": []

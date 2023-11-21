@@ -1,5 +1,5 @@
 import type { CreatePagesArgs } from "gatsby";
-import path from "path";
+// import path from "path";
 
 interface QueryResult {
   reading: {
@@ -16,8 +16,8 @@ export async function createStatPages({
 
   const queryResult = await graphql<QueryResult>(`
     {
-      reading: allReadingsJson {
-        years: distinct(field: { year: SELECT })
+      reading: allReadingProgressJson {
+        years: distinct(field: { readingYear: SELECT })
       }
     }
   `);
@@ -30,12 +30,12 @@ export async function createStatPages({
   }
 
   queryResult.data.reading.years.forEach((year) => {
-    createPage({
-      path: `/stats/${year}/`,
-      component: path.resolve("./src/templates/statsForYear.tsx"),
-      context: {
-        year: parseInt(year),
-      },
-    });
+    // createPage({
+    //   path: `/stats/${year}/`,
+    //   component: path.resolve("./src/templates/statsForYear.tsx"),
+    //   context: {
+    //     year: parseInt(year),
+    //   },
+    // });
   });
 }

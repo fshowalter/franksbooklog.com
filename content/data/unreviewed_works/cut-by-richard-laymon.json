@@ -1,15 +1,16 @@
 {
   "slug": "cut-by-richard-laymon",
   "title": "Cut",
+  "subtitle": null,
   "sortTitle": "Cut",
   "yearPublished": "1985",
   "kind": "Short Story",
   "authors": [
     {
-      "slug": "richard-laymon",
-      "notes": null,
       "name": "Richard Laymon",
-      "sortName": "Laymon, Richard"
+      "sortName": "Laymon, Richard",
+      "slug": "richard-laymon",
+      "notes": null
     }
   ],
   "includedInSlugs": []

@@ -2,6 +2,7 @@
   "sequence": 53,
   "slug": "sacculina-by-philip-fracassi",
   "title": "Sacculina",
+  "subtitle": null,
   "sortTitle": "Sacculina",
   "yearPublished": "2017",
   "grade": "B",
@@ -10,10 +11,31 @@
   "date": "2023-10-09",
   "authors": [
     {
-      "slug": "philip-fracassi",
-      "notes": null,
       "name": "Philip Fracassi",
-      "sortName": "Fracassi, Philip"
+      "sortName": "Fracassi, Philip",
+      "slug": "philip-fracassi",
+      "notes": null
+    }
+  ],
+  "readings": [
+    {
+      "sequence": 53,
+      "date": "2023-10-09",
+      "edition": "Kindle",
+      "editionNotes": "Lethe Press, 2020",
+      "isAudioBook": false,
+      "abandoned": false,
+      "readingTime": 3,
+      "timeline": [
+        {
+          "date": "2023-10-07",
+          "progress": "50%"
+        },
+        {
+          "date": "2023-10-09",
+          "progress": "Finished"
+        }
+      ]
     }
   ],
   "includedInSlugs": [],

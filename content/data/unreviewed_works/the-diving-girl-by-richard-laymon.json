@@ -1,15 +1,16 @@
 {
   "slug": "the-diving-girl-by-richard-laymon",
   "title": "The Diving Girl",
+  "subtitle": null,
   "sortTitle": "Diving Girl",
   "yearPublished": "2005",
   "kind": "Short Story",
   "authors": [
     {
-      "slug": "richard-laymon",
-      "notes": null,
       "name": "Richard Laymon",
-      "sortName": "Laymon, Richard"
+      "sortName": "Laymon, Richard",
+      "slug": "richard-laymon",
+      "notes": null
     }
   ],
   "includedInSlugs": []

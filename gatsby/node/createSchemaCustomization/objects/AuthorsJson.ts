@@ -1,6 +1,7 @@
 import path from "path";
 import { SchemaNames } from "../schemaNames";
 import type { GatsbyNode, GatsbyNodeContext } from "../type-definitions";
+import { coverResolver } from "./fieldResolvers/coverResolver";
 
 export interface AuthorNode extends GatsbyNode {
   slug: string;
@@ -8,10 +9,9 @@ export interface AuthorNode extends GatsbyNode {
 
 export const AuthorWork = {
   name: SchemaNames.AuthorWork,
-  interfaces: ["Node"],
   fields: {
     title: "String!",
-    yearPublished: "String",
+    yearPublished: "String!",
     sortTitle: "String!",
     kind: "String!",
     slug: "String!",
@@ -19,6 +19,10 @@ export const AuthorWork = {
     authors: `[${SchemaNames.WorkAuthor}!]!`,
     grade: "String",
     gradeValue: "Int",
+    cover: {
+      type: "File!",
+      resolve: coverResolver,
+    },
   },
 };
 

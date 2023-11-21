@@ -2,6 +2,7 @@
   "sequence": 55,
   "slug": "dont-let-them-get-you-down-by-philip-fracassi",
   "title": "Don't Let Them Get You Down",
+  "subtitle": null,
   "sortTitle": "Don't Let Them Get You Down",
   "yearPublished": "2022",
   "grade": "C-",
@@ -10,10 +11,51 @@
   "date": "2023-10-29",
   "authors": [
     {
-      "slug": "philip-fracassi",
-      "notes": null,
       "name": "Philip Fracassi",
-      "sortName": "Fracassi, Philip"
+      "sortName": "Fracassi, Philip",
+      "slug": "philip-fracassi",
+      "notes": null
+    }
+  ],
+  "readings": [
+    {
+      "sequence": 55,
+      "date": "2023-10-29",
+      "edition": "Kindle",
+      "editionNotes": null,
+      "isAudioBook": false,
+      "abandoned": false,
+      "readingTime": 19,
+      "timeline": [
+        {
+          "date": "2023-10-11",
+          "progress": "21%"
+        },
+        {
+          "date": "2023-10-15",
+          "progress": "32%"
+        },
+        {
+          "date": "2023-10-16",
+          "progress": "56%"
+        },
+        {
+          "date": "2023-10-17",
+          "progress": "72%"
+        },
+        {
+          "date": "2023-10-22",
+          "progress": "76%"
+        },
+        {
+          "date": "2023-10-23",
+          "progress": "80%"
+        },
+        {
+          "date": "2023-10-29",
+          "progress": "Finished"
+        }
+      ]
     }
   ],
   "includedInSlugs": [],

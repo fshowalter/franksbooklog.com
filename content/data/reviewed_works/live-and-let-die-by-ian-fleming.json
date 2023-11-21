@@ -2,6 +2,7 @@
   "sequence": 25,
   "slug": "live-and-let-die-by-ian-fleming",
   "title": "Live and Let Die",
+  "subtitle": null,
   "sortTitle": "Live and Let Die",
   "yearPublished": "1954",
   "grade": "D",
@@ -10,10 +11,55 @@
   "date": "2022-06-30",
   "authors": [
     {
-      "slug": "ian-fleming",
-      "notes": null,
       "name": "Ian Fleming",
-      "sortName": "Fleming, Ian"
+      "sortName": "Fleming, Ian",
+      "slug": "ian-fleming",
+      "notes": null
+    }
+  ],
+  "readings": [
+    {
+      "sequence": 25,
+      "date": "2022-06-30",
+      "edition": "Kindle",
+      "editionNotes": "Thomas & Mercer, 2012",
+      "isAudioBook": false,
+      "abandoned": false,
+      "readingTime": 14,
+      "timeline": [
+        {
+          "date": "2022-06-17",
+          "progress": "15%"
+        },
+        {
+          "date": "2022-06-23",
+          "progress": "27%"
+        },
+        {
+          "date": "2022-06-24",
+          "progress": "36%"
+        },
+        {
+          "date": "2022-06-25",
+          "progress": "44%"
+        },
+        {
+          "date": "2022-06-26",
+          "progress": "59%"
+        },
+        {
+          "date": "2022-06-27",
+          "progress": "69%"
+        },
+        {
+          "date": "2022-06-28",
+          "progress": "85%"
+        },
+        {
+          "date": "2022-06-30",
+          "progress": "Finished"
+        }
+      ]
     }
   ],
   "includedInSlugs": [],

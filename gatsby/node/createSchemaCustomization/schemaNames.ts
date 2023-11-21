@@ -9,4 +9,7 @@ export enum SchemaNames {
   ReadingProgressJson = "ReadingProgressJson",
   UnreviewedWorksJson = "UnreviewedWorksJson",
   AuthorWork = "AuthorWork",
+  ReviewedWorkReadingTimelineEntry = "ReviewedWorkReadingTimelineEntry",
+  ReviewedWorkReading = "ReviewedWorkReading",
+  MarkdownRemarkFrontmatter = "MarkdownRemarkFrontmatter",
 }

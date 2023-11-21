@@ -1,15 +1,16 @@
 {
   "slug": "the-hunted-by-richard-laymon",
   "title": "The Hunted",
+  "subtitle": null,
   "sortTitle": "Hunted",
   "yearPublished": "1997",
   "kind": "Short Story",
   "authors": [
     {
-      "slug": "richard-laymon",
-      "notes": null,
       "name": "Richard Laymon",
-      "sortName": "Laymon, Richard"
+      "sortName": "Laymon, Richard",
+      "slug": "richard-laymon",
+      "notes": null
     }
   ],
   "includedInSlugs": []

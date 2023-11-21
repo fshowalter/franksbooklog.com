@@ -2,6 +2,7 @@
   "sequence": 4,
   "slug": "on-writing-by-stephen-king",
   "title": "On Writing",
+  "subtitle": "A Memoir of the Craft",
   "sortTitle": "On Writing",
   "yearPublished": "2000",
   "grade": "A-",
@@ -10,10 +11,35 @@
   "date": "2022-03-21",
   "authors": [
     {
-      "slug": "stephen-king",
-      "notes": null,
       "name": "Stephen King",
-      "sortName": "King, Stephen"
+      "sortName": "King, Stephen",
+      "slug": "stephen-king",
+      "notes": null
+    }
+  ],
+  "readings": [
+    {
+      "sequence": 4,
+      "date": "2022-03-21",
+      "edition": "Kindle",
+      "editionNotes": "Scribner",
+      "isAudioBook": false,
+      "abandoned": false,
+      "readingTime": 3,
+      "timeline": [
+        {
+          "date": "2022-03-19",
+          "progress": "20%"
+        },
+        {
+          "date": "2022-03-20",
+          "progress": "71%"
+        },
+        {
+          "date": "2022-03-21",
+          "progress": "Finished"
+        }
+      ]
     }
   ],
   "includedInSlugs": [],

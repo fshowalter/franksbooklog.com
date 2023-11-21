@@ -2,6 +2,7 @@
   "sequence": 24,
   "slug": "extreme-ownership-by-jocko-willink-leif-babin",
   "title": "Extreme Ownership",
+  "subtitle": "How U.S. Navy SEALs Lead and Win",
   "sortTitle": "Extreme Ownership: How U.S. Navy SEALs Lead and Win",
   "yearPublished": "2015",
   "grade": "A",
@@ -10,16 +11,33 @@
   "date": "2022-06-26",
   "authors": [
     {
-      "slug": "jocko-willink",
-      "notes": null,
       "name": "Jocko Willink",
-      "sortName": "Willink, Jocko"
+      "sortName": "Willink, Jocko",
+      "slug": "jocko-willink",
+      "notes": null
     },
     {
-      "slug": "leif-babin",
-      "notes": null,
       "name": "Leif Babin",
-      "sortName": "Babin, Leif"
+      "sortName": "Babin, Leif",
+      "slug": "leif-babin",
+      "notes": null
+    }
+  ],
+  "readings": [
+    {
+      "sequence": 24,
+      "date": "2022-06-26",
+      "edition": "Audible",
+      "editionNotes": "Read by Jocko Willink and Leif Babin",
+      "isAudioBook": true,
+      "abandoned": false,
+      "readingTime": 1,
+      "timeline": [
+        {
+          "date": "2022-06-26",
+          "progress": "Finished"
+        }
+      ]
     }
   ],
   "includedInSlugs": [],

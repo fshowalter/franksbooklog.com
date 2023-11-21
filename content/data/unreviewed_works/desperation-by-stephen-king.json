@@ -1,15 +1,16 @@
 {
   "slug": "desperation-by-stephen-king",
   "title": "Desperation",
+  "subtitle": null,
   "sortTitle": "Desperation",
   "yearPublished": "1996",
   "kind": "Novel",
   "authors": [
     {
-      "slug": "stephen-king",
-      "notes": null,
       "name": "Stephen King",
-      "sortName": "King, Stephen"
+      "sortName": "King, Stephen",
+      "slug": "stephen-king",
+      "notes": null
     }
   ],
   "includedInSlugs": []

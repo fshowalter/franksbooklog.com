@@ -2,6 +2,7 @@
   "sequence": 19,
   "slug": "total-recall-by-arnold-schwarzenegger",
   "title": "Total Recall",
+  "subtitle": "My Unbelievably True Life Story",
   "sortTitle": "Total Recall: My Unbelievably True Life Story",
   "yearPublished": "2012",
   "grade": "C+",
@@ -10,10 +11,39 @@
   "date": "2022-05-21",
   "authors": [
     {
-      "slug": "arnold-schwarzenegger",
-      "notes": null,
       "name": "Arnold Schwarzenegger",
-      "sortName": "Schwarzenegger, Arnold"
+      "sortName": "Schwarzenegger, Arnold",
+      "slug": "arnold-schwarzenegger",
+      "notes": null
+    }
+  ],
+  "readings": [
+    {
+      "sequence": 19,
+      "date": "2022-05-21",
+      "edition": "Audible",
+      "editionNotes": "Read by Stephen Lang and Arnold Schwarzenegger",
+      "isAudioBook": true,
+      "abandoned": false,
+      "readingTime": 15,
+      "timeline": [
+        {
+          "date": "2022-05-07",
+          "progress": "2%"
+        },
+        {
+          "date": "2022-05-09",
+          "progress": "28%"
+        },
+        {
+          "date": "2022-05-15",
+          "progress": "77%"
+        },
+        {
+          "date": "2022-05-21",
+          "progress": "Finished"
+        }
+      ]
     }
   ],
   "includedInSlugs": [],

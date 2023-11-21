@@ -6,6 +6,7 @@ export const UnreviewedWorksJson = {
   interfaces: ["Node"],
   fields: {
     title: "String!",
+    subtitle: "String",
     sortTitle: "String!",
     slug: "String!",
     includedInSlugs: "[String!]!",

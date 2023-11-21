@@ -2,6 +2,7 @@
   "sequence": 3,
   "slug": "the-max-muscle-plan-by-brad-schoenfeld",
   "title": "The M.A.X. Muscle Plan",
+  "subtitle": null,
   "sortTitle": "The M.A.X. Muscle Plan",
   "yearPublished": "2012",
   "grade": "C-",
@@ -10,10 +11,31 @@
   "date": "2022-03-18",
   "authors": [
     {
-      "slug": "brad-schoenfeld",
-      "notes": null,
       "name": "Brad Schoenfeld",
-      "sortName": "Schoenfeld, Brad"
+      "sortName": "Schoenfeld, Brad",
+      "slug": "brad-schoenfeld",
+      "notes": null
+    }
+  ],
+  "readings": [
+    {
+      "sequence": 3,
+      "date": "2022-03-18",
+      "edition": "Kindle",
+      "editionNotes": "Human Kinetics, 2013",
+      "isAudioBook": false,
+      "abandoned": false,
+      "readingTime": 2,
+      "timeline": [
+        {
+          "date": "2022-03-17",
+          "progress": "20%"
+        },
+        {
+          "date": "2022-03-18",
+          "progress": "Finished"
+        }
+      ]
     }
   ],
   "includedInSlugs": [],

@@ -1,15 +1,16 @@
 {
   "slug": "one-rainy-night-by-richard-laymon",
   "title": "One Rainy Night",
+  "subtitle": null,
   "sortTitle": "One Rainy Night",
   "yearPublished": "1991",
   "kind": "Novel",
   "authors": [
     {
-      "slug": "richard-laymon",
-      "notes": null,
       "name": "Richard Laymon",
-      "sortName": "Laymon, Richard"
+      "sortName": "Laymon, Richard",
+      "slug": "richard-laymon",
+      "notes": null
     }
   ],
   "includedInSlugs": []

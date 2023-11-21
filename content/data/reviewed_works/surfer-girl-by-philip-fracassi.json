@@ -2,6 +2,7 @@
   "sequence": 13,
   "slug": "surfer-girl-by-philip-fracassi",
   "title": "Surfer Girl",
+  "subtitle": null,
   "sortTitle": "Surfer Girl",
   "yearPublished": "2017",
   "grade": "C+",
@@ -10,10 +11,27 @@
   "date": "2022-04-22",
   "authors": [
     {
-      "slug": "philip-fracassi",
-      "notes": null,
       "name": "Philip Fracassi",
-      "sortName": "Fracassi, Philip"
+      "sortName": "Fracassi, Philip",
+      "slug": "philip-fracassi",
+      "notes": null
+    }
+  ],
+  "readings": [
+    {
+      "sequence": 13,
+      "date": "2022-04-22",
+      "edition": "Kindle",
+      "editionNotes": "<span data-work-slug=\"behold-the-void-by-philip-fracassi\">_Behold the Void_</span>, Lovecraft eZine Press, 2018",
+      "isAudioBook": false,
+      "abandoned": false,
+      "readingTime": 1,
+      "timeline": [
+        {
+          "date": "2022-04-22",
+          "progress": "Finished"
+        }
+      ]
     }
   ],
   "includedInSlugs": [

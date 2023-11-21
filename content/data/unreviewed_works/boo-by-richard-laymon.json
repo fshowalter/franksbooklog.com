@@ -1,15 +1,16 @@
 {
   "slug": "boo-by-richard-laymon",
   "title": "Boo",
+  "subtitle": null,
   "sortTitle": "Boo",
   "yearPublished": "2000",
   "kind": "Short Story",
   "authors": [
     {
-      "slug": "richard-laymon",
-      "notes": null,
       "name": "Richard Laymon",
-      "sortName": "Laymon, Richard"
+      "sortName": "Laymon, Richard",
+      "slug": "richard-laymon",
+      "notes": null
     }
   ],
   "includedInSlugs": []

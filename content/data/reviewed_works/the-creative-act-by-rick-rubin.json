@@ -2,6 +2,7 @@
   "sequence": 54,
   "slug": "the-creative-act-by-rick-rubin",
   "title": "The Creative Act",
+  "subtitle": "A Way of Being",
   "sortTitle": "Creative Act: A Way of Being",
   "yearPublished": "2023",
   "grade": "C+",
@@ -10,10 +11,27 @@
   "date": "2023-10-22",
   "authors": [
     {
-      "slug": "rick-rubin",
-      "notes": null,
       "name": "Rick Rubin",
-      "sortName": "Rubin, Rick"
+      "sortName": "Rubin, Rick",
+      "slug": "rick-rubin",
+      "notes": null
+    }
+  ],
+  "readings": [
+    {
+      "sequence": 54,
+      "date": "2023-10-22",
+      "edition": "Audible",
+      "editionNotes": null,
+      "isAudioBook": true,
+      "abandoned": false,
+      "readingTime": 1,
+      "timeline": [
+        {
+          "date": "2023-10-22",
+          "progress": "Finished"
+        }
+      ]
     }
   ],
   "includedInSlugs": [],

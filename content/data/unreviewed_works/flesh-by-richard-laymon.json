@@ -1,15 +1,16 @@
 {
   "slug": "flesh-by-richard-laymon",
   "title": "Flesh",
+  "subtitle": null,
   "sortTitle": "Flesh",
   "yearPublished": "1987",
   "kind": "Novel",
   "authors": [
     {
-      "slug": "richard-laymon",
-      "notes": null,
       "name": "Richard Laymon",
-      "sortName": "Laymon, Richard"
+      "sortName": "Laymon, Richard",
+      "slug": "richard-laymon",
+      "notes": null
     }
   ],
   "includedInSlugs": []

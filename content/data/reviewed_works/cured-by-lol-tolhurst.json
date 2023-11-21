@@ -2,6 +2,7 @@
   "sequence": 31,
   "slug": "cured-by-lol-tolhurst",
   "title": "Cured",
+  "subtitle": "The Tale of Two Imaginary Boys",
   "sortTitle": "Cured: The Tale of Two Imaginary Boys",
   "yearPublished": "2016",
   "grade": "A-",
@@ -10,10 +11,35 @@
   "date": "2022-07-18",
   "authors": [
     {
-      "slug": "lol-tolhurst",
-      "notes": null,
       "name": "Lol Tolhurst",
-      "sortName": "Tolhurst, Lol"
+      "sortName": "Tolhurst, Lol",
+      "slug": "lol-tolhurst",
+      "notes": null
+    }
+  ],
+  "readings": [
+    {
+      "sequence": 31,
+      "date": "2022-07-18",
+      "edition": "Audible",
+      "editionNotes": "Read by Lol Tolhurst",
+      "isAudioBook": true,
+      "abandoned": false,
+      "readingTime": 3,
+      "timeline": [
+        {
+          "date": "2022-07-16",
+          "progress": "33%"
+        },
+        {
+          "date": "2022-07-17",
+          "progress": "78%"
+        },
+        {
+          "date": "2022-07-18",
+          "progress": "Finished"
+        }
+      ]
     }
   ],
   "includedInSlugs": [],

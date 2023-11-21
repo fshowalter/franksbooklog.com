@@ -1,15 +1,16 @@
 {
   "slug": "phil-the-vampire-by-richard-laymon",
   "title": "Phil the Vampire",
+  "subtitle": null,
   "sortTitle": "Phil the Vampire",
   "yearPublished": "1995",
   "kind": "Short Story",
   "authors": [
     {
-      "slug": "richard-laymon",
-      "notes": null,
       "name": "Richard Laymon",
-      "sortName": "Laymon, Richard"
+      "sortName": "Laymon, Richard",
+      "slug": "richard-laymon",
+      "notes": null
     }
   ],
   "includedInSlugs": []

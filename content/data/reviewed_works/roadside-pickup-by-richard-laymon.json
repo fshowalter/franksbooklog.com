@@ -2,6 +2,7 @@
   "sequence": 51,
   "slug": "roadside-pickup-by-richard-laymon",
   "title": "Roadside Pickup",
+  "subtitle": null,
   "sortTitle": "Roadside Pickup",
   "yearPublished": "1974",
   "grade": "C-",
@@ -10,10 +11,27 @@
   "date": "2023-01-21",
   "authors": [
     {
-      "slug": "richard-laymon",
-      "notes": null,
       "name": "Richard Laymon",
-      "sortName": "Laymon, Richard"
+      "sortName": "Laymon, Richard",
+      "slug": "richard-laymon",
+      "notes": null
+    }
+  ],
+  "readings": [
+    {
+      "sequence": 51,
+      "date": "2023-01-21",
+      "edition": "Kindle",
+      "editionNotes": "<span data-work-slug=\"short-stories-volume-one-by-richard-laymon\">_Short Stories: Volume One: The Mystery and Men's Magazines_</span>, Laymusings, 2014\n",
+      "isAudioBook": false,
+      "abandoned": false,
+      "readingTime": 1,
+      "timeline": [
+        {
+          "date": "2023-01-21",
+          "progress": "Finished"
+        }
+      ]
     }
   ],
   "includedInSlugs": [

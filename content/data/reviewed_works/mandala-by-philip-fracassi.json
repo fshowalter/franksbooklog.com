@@ -2,6 +2,7 @@
   "sequence": 16,
   "slug": "mandala-by-philip-fracassi",
   "title": "Mandala",
+  "subtitle": null,
   "sortTitle": "Mandala",
   "yearPublished": "2017",
   "grade": "B+",
@@ -10,10 +11,31 @@
   "date": "2022-05-07",
   "authors": [
     {
-      "slug": "philip-fracassi",
-      "notes": null,
       "name": "Philip Fracassi",
-      "sortName": "Fracassi, Philip"
+      "sortName": "Fracassi, Philip",
+      "slug": "philip-fracassi",
+      "notes": null
+    }
+  ],
+  "readings": [
+    {
+      "sequence": 16,
+      "date": "2022-05-07",
+      "edition": "Kindle",
+      "editionNotes": "<span data-work-slug=\"behold-the-void-by-philip-fracassi\">_Behold the Void_</span>, Lovecraft eZine Press, 2018",
+      "isAudioBook": false,
+      "abandoned": false,
+      "readingTime": 7,
+      "timeline": [
+        {
+          "date": "2022-05-01",
+          "progress": "50%"
+        },
+        {
+          "date": "2022-05-07",
+          "progress": "Finished"
+        }
+      ]
     }
   ],
   "includedInSlugs": [

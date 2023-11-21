@@ -2,6 +2,7 @@
   "sequence": 38,
   "slug": "i-will-find-you-by-joe-kenda",
   "title": "I Will Find You",
+  "subtitle": "Solving Killer Cases from My Life Fighting Crime",
   "sortTitle": "I Will Find You: Solving Killer Cases from My Life Fighting Crime",
   "yearPublished": "2017",
   "grade": "B",
@@ -10,10 +11,35 @@
   "date": "2022-09-17",
   "authors": [
     {
-      "slug": "joe-kenda",
-      "notes": null,
       "name": "Joe Kenda",
-      "sortName": "Kenda, Joe"
+      "sortName": "Kenda, Joe",
+      "slug": "joe-kenda",
+      "notes": null
+    }
+  ],
+  "readings": [
+    {
+      "sequence": 38,
+      "date": "2022-09-17",
+      "edition": "Audible",
+      "editionNotes": "Read by Joe Kenda",
+      "isAudioBook": true,
+      "abandoned": false,
+      "readingTime": 5,
+      "timeline": [
+        {
+          "date": "2022-09-13",
+          "progress": "36%"
+        },
+        {
+          "date": "2022-09-16",
+          "progress": "71%"
+        },
+        {
+          "date": "2022-09-17",
+          "progress": "Finished"
+        }
+      ]
     }
   ],
   "includedInSlugs": [],

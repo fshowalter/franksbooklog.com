@@ -1,15 +1,16 @@
 {
   "slug": "oscars-audition-by-richard-laymon",
   "title": "Oscar's Audition",
+  "subtitle": null,
   "sortTitle": "Oscar's Audition",
   "yearPublished": "1975",
   "kind": "Short Story",
   "authors": [
     {
-      "slug": "richard-laymon",
-      "notes": "as Dick Kelly",
       "name": "Richard Laymon",
-      "sortName": "Laymon, Richard"
+      "sortName": "Laymon, Richard",
+      "slug": "richard-laymon",
+      "notes": "as Dick Kelly"
     }
   ],
   "includedInSlugs": [

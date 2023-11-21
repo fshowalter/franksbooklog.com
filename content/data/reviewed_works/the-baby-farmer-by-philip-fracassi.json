@@ -2,6 +2,7 @@
   "sequence": 12,
   "slug": "the-baby-farmer-by-philip-fracassi",
   "title": "The Baby Farmer",
+  "subtitle": null,
   "sortTitle": "Baby Farmer",
   "yearPublished": "2017",
   "grade": "C+",
@@ -10,10 +11,27 @@
   "date": "2022-04-21",
   "authors": [
     {
-      "slug": "philip-fracassi",
-      "notes": null,
       "name": "Philip Fracassi",
-      "sortName": "Fracassi, Philip"
+      "sortName": "Fracassi, Philip",
+      "slug": "philip-fracassi",
+      "notes": null
+    }
+  ],
+  "readings": [
+    {
+      "sequence": 12,
+      "date": "2022-04-21",
+      "edition": "Kindle",
+      "editionNotes": "<span data-work-slug=\"behold-the-void-by-philip-fracassi\">_Behold the Void_</span>, Lovecraft eZine Press, 2018",
+      "isAudioBook": false,
+      "abandoned": false,
+      "readingTime": 1,
+      "timeline": [
+        {
+          "date": "2022-04-21",
+          "progress": "Finished"
+        }
+      ]
     }
   ],
   "includedInSlugs": [

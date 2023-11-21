@@ -1,15 +1,16 @@
 {
   "slug": "stranger-than-fiction-by-chuck-palahniuk",
   "title": "Stranger than Fiction",
+  "subtitle": "True Stories",
   "sortTitle": "Stranger than Fiction: True Stories",
   "yearPublished": "2004",
   "kind": "Nonfiction",
   "authors": [
     {
-      "slug": "chuck-palahniuk",
-      "notes": null,
       "name": "Chuck Palahniuk",
-      "sortName": "Palahniuk, Chuck"
+      "sortName": "Palahniuk, Chuck",
+      "slug": "chuck-palahniuk",
+      "notes": null
     }
   ],
   "includedInSlugs": []

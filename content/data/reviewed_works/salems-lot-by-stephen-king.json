@@ -2,6 +2,7 @@
   "sequence": 45,
   "slug": "salems-lot-by-stephen-king",
   "title": "'Salem's Lot",
+  "subtitle": null,
   "sortTitle": "'Salem's Lot",
   "yearPublished": "1975",
   "grade": "B",
@@ -10,10 +11,47 @@
   "date": "2022-10-14",
   "authors": [
     {
-      "slug": "stephen-king",
-      "notes": null,
       "name": "Stephen King",
-      "sortName": "King, Stephen"
+      "sortName": "King, Stephen",
+      "slug": "stephen-king",
+      "notes": null
+    }
+  ],
+  "readings": [
+    {
+      "sequence": 45,
+      "date": "2022-10-14",
+      "edition": "Audible",
+      "editionNotes": "Read by Ron McLarty",
+      "isAudioBook": true,
+      "abandoned": false,
+      "readingTime": 8,
+      "timeline": [
+        {
+          "date": "2022-10-07",
+          "progress": "19%"
+        },
+        {
+          "date": "2022-10-08",
+          "progress": "30%"
+        },
+        {
+          "date": "2022-10-09",
+          "progress": "64%"
+        },
+        {
+          "date": "2022-10-10",
+          "progress": "72%"
+        },
+        {
+          "date": "2022-10-13",
+          "progress": "75%"
+        },
+        {
+          "date": "2022-10-14",
+          "progress": "Finished"
+        }
+      ]
     }
   ],
   "includedInSlugs": [],

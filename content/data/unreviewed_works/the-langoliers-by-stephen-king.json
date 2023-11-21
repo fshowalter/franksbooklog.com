@@ -1,15 +1,16 @@
 {
   "slug": "the-langoliers-by-stephen-king",
   "title": "The Langoliers",
+  "subtitle": null,
   "sortTitle": "Langoliers",
   "yearPublished": "1990",
   "kind": "Novella",
   "authors": [
     {
-      "slug": "stephen-king",
-      "notes": null,
       "name": "Stephen King",
-      "sortName": "King, Stephen"
+      "sortName": "King, Stephen",
+      "slug": "stephen-king",
+      "notes": null
     }
   ],
   "includedInSlugs": []

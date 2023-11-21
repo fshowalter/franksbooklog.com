@@ -2,6 +2,7 @@
   "sequence": 11,
   "slug": "coffin-by-philip-fracassi",
   "title": "Coffin",
+  "subtitle": null,
   "sortTitle": "Coffin",
   "yearPublished": "2017",
   "grade": "C+",
@@ -10,10 +11,27 @@
   "date": "2022-04-20",
   "authors": [
     {
-      "slug": "philip-fracassi",
-      "notes": null,
       "name": "Philip Fracassi",
-      "sortName": "Fracassi, Philip"
+      "sortName": "Fracassi, Philip",
+      "slug": "philip-fracassi",
+      "notes": null
+    }
+  ],
+  "readings": [
+    {
+      "sequence": 11,
+      "date": "2022-04-20",
+      "edition": "Kindle",
+      "editionNotes": "<span data-work-slug=\"behold-the-void-by-philip-fracassi\">_Behold the Void_</span>, Lovecraft eZine Press, 2018",
+      "isAudioBook": false,
+      "abandoned": false,
+      "readingTime": 1,
+      "timeline": [
+        {
+          "date": "2022-04-20",
+          "progress": "Finished"
+        }
+      ]
     }
   ],
   "includedInSlugs": [

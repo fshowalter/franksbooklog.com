@@ -1,15 +1,16 @@
 {
   "slug": "lullaby-by-chuck-palahniuk",
   "title": "Lullaby",
+  "subtitle": null,
   "sortTitle": "Lullaby",
   "yearPublished": "2002",
   "kind": "Novel",
   "authors": [
     {
-      "slug": "chuck-palahniuk",
-      "notes": null,
       "name": "Chuck Palahniuk",
-      "sortName": "Palahniuk, Chuck"
+      "sortName": "Palahniuk, Chuck",
+      "slug": "chuck-palahniuk",
+      "notes": null
     }
   ],
   "includedInSlugs": []

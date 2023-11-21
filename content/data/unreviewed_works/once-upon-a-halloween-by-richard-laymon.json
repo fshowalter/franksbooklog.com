@@ -1,15 +1,16 @@
 {
   "slug": "once-upon-a-halloween-by-richard-laymon",
   "title": "Once Upon a Halloween",
+  "subtitle": null,
   "sortTitle": "Once Upon a Halloween",
   "yearPublished": "2000",
   "kind": "Novel",
   "authors": [
     {
-      "slug": "richard-laymon",
-      "notes": null,
       "name": "Richard Laymon",
-      "sortName": "Laymon, Richard"
+      "sortName": "Laymon, Richard",
+      "slug": "richard-laymon",
+      "notes": null
     }
   ],
   "includedInSlugs": []

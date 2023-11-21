@@ -7,7 +7,6 @@ export interface TimelineEntryNode {
 
 export const TimelineEntry = {
   name: SchemaNames.TimelineEntry,
-  interfaces: ["Node"],
   fields: {
     date: {
       type: "String!",

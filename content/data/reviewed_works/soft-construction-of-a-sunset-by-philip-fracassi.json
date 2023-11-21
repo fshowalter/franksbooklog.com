@@ -2,6 +2,7 @@
   "sequence": 8,
   "slug": "soft-construction-of-a-sunset-by-philip-fracassi",
   "title": "Soft Construction of a Sunset",
+  "subtitle": null,
   "sortTitle": "Soft Construction of a Sunset",
   "yearPublished": "2017",
   "grade": "B-",
@@ -10,10 +11,27 @@
   "date": "2022-04-17",
   "authors": [
     {
-      "slug": "philip-fracassi",
-      "notes": null,
       "name": "Philip Fracassi",
-      "sortName": "Fracassi, Philip"
+      "sortName": "Fracassi, Philip",
+      "slug": "philip-fracassi",
+      "notes": null
+    }
+  ],
+  "readings": [
+    {
+      "sequence": 8,
+      "date": "2022-04-17",
+      "edition": "Kindle",
+      "editionNotes": "<span data-work-slug=\"behold-the-void-by-philip-fracassi\">_Behold the Void_</span>, Lovecraft eZine Press, 2018",
+      "isAudioBook": false,
+      "abandoned": false,
+      "readingTime": 1,
+      "timeline": [
+        {
+          "date": "2022-04-17",
+          "progress": "Finished"
+        }
+      ]
     }
   ],
   "includedInSlugs": [

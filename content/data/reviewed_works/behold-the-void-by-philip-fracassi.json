@@ -2,6 +2,7 @@
   "sequence": 17,
   "slug": "behold-the-void-by-philip-fracassi",
   "title": "Behold the Void",
+  "subtitle": null,
   "sortTitle": "Behold the Void",
   "yearPublished": "2017",
   "grade": "B+",
@@ -10,10 +11,63 @@
   "date": "2022-05-07",
   "authors": [
     {
-      "slug": "philip-fracassi",
-      "notes": null,
       "name": "Philip Fracassi",
-      "sortName": "Fracassi, Philip"
+      "sortName": "Fracassi, Philip",
+      "slug": "philip-fracassi",
+      "notes": null
+    }
+  ],
+  "readings": [
+    {
+      "sequence": 17,
+      "date": "2022-05-07",
+      "edition": "Kindle",
+      "editionNotes": "Lovecraft eZine Press, 2018",
+      "isAudioBook": false,
+      "abandoned": false,
+      "readingTime": 21,
+      "timeline": [
+        {
+          "date": "2022-04-17",
+          "progress": "9%"
+        },
+        {
+          "date": "2022-04-18",
+          "progress": "20%"
+        },
+        {
+          "date": "2022-04-19",
+          "progress": "31%"
+        },
+        {
+          "date": "2022-04-20",
+          "progress": "36%"
+        },
+        {
+          "date": "2022-04-21",
+          "progress": "45%"
+        },
+        {
+          "date": "2022-04-22",
+          "progress": "53%"
+        },
+        {
+          "date": "2022-04-23",
+          "progress": "64%"
+        },
+        {
+          "date": "2022-04-30",
+          "progress": "70%"
+        },
+        {
+          "date": "2022-05-01",
+          "progress": "87%"
+        },
+        {
+          "date": "2022-05-07",
+          "progress": "Finished"
+        }
+      ]
     }
   ],
   "includedInSlugs": [],

@@ -1,15 +1,16 @@
 {
   "slug": "the-regulators-by-stephen-king",
   "title": "The Regulators",
+  "subtitle": null,
   "sortTitle": "Regulators",
   "yearPublished": "1995",
   "kind": "Novel",
   "authors": [
     {
-      "slug": "stephen-king",
-      "notes": "as Richard Bachman",
       "name": "Stephen King",
-      "sortName": "King, Stephen"
+      "sortName": "King, Stephen",
+      "slug": "stephen-king",
+      "notes": "as Richard Bachman"
     }
   ],
   "includedInSlugs": []

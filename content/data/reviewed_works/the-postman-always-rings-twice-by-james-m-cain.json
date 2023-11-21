@@ -2,6 +2,7 @@
   "sequence": 32,
   "slug": "the-postman-always-rings-twice-by-james-m-cain",
   "title": "The Postman Always Rings Twice",
+  "subtitle": null,
   "sortTitle": "Postman Always Rings Twice",
   "yearPublished": "1934",
   "grade": "B+",
@@ -10,10 +11,43 @@
   "date": "2022-07-24",
   "authors": [
     {
-      "slug": "james-m-cain",
-      "notes": null,
       "name": "James M. Cain",
-      "sortName": "Cain, James M."
+      "sortName": "Cain, James M.",
+      "slug": "james-m-cain",
+      "notes": null
+    }
+  ],
+  "readings": [
+    {
+      "sequence": 32,
+      "date": "2022-07-24",
+      "edition": "Kindle",
+      "editionNotes": "Vintage Crime / Black Lizard, 2010",
+      "isAudioBook": false,
+      "abandoned": false,
+      "readingTime": 7,
+      "timeline": [
+        {
+          "date": "2022-07-18",
+          "progress": "13%"
+        },
+        {
+          "date": "2022-07-19",
+          "progress": "19%"
+        },
+        {
+          "date": "2022-07-22",
+          "progress": "31%"
+        },
+        {
+          "date": "2022-07-23",
+          "progress": "80%"
+        },
+        {
+          "date": "2022-07-24",
+          "progress": "Finished"
+        }
+      ]
     }
   ],
   "includedInSlugs": [],

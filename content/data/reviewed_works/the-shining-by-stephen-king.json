@@ -2,6 +2,7 @@
   "sequence": 47,
   "slug": "the-shining-by-stephen-king",
   "title": "The Shining",
+  "subtitle": null,
   "sortTitle": "Shining",
   "yearPublished": "1977",
   "grade": "B",
@@ -10,10 +11,59 @@
   "date": "2022-10-29",
   "authors": [
     {
-      "slug": "stephen-king",
-      "notes": null,
       "name": "Stephen King",
-      "sortName": "King, Stephen"
+      "sortName": "King, Stephen",
+      "slug": "stephen-king",
+      "notes": null
+    }
+  ],
+  "readings": [
+    {
+      "sequence": 47,
+      "date": "2022-10-29",
+      "edition": "Audible",
+      "editionNotes": "Read by Campbell Scott",
+      "isAudioBook": true,
+      "abandoned": false,
+      "readingTime": 14,
+      "timeline": [
+        {
+          "date": "2022-10-16",
+          "progress": "3%"
+        },
+        {
+          "date": "2022-10-17",
+          "progress": "15%"
+        },
+        {
+          "date": "2022-10-18",
+          "progress": "26%"
+        },
+        {
+          "date": "2022-10-19",
+          "progress": "36%"
+        },
+        {
+          "date": "2022-10-20",
+          "progress": "40%"
+        },
+        {
+          "date": "2022-10-21",
+          "progress": "53%"
+        },
+        {
+          "date": "2022-10-22",
+          "progress": "75%"
+        },
+        {
+          "date": "2022-10-28",
+          "progress": "87%"
+        },
+        {
+          "date": "2022-10-29",
+          "progress": "Finished"
+        }
+      ]
     }
   ],
   "includedInSlugs": [],

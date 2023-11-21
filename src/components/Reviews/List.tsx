@@ -94,13 +94,13 @@ function YearAndKind({
 }
 
 export const query = graphql`
-  fragment ReviewsListItemAuthor on ReviewedWorkAuthor {
+  fragment ReviewsListItemAuthor on WorkAuthor {
     name
     notes
     sortName
   }
 
-  fragment ReviewsListItem on ReviewsJson {
+  fragment ReviewsListItem on ReviewedWorksJson {
     id
     grade
     slug

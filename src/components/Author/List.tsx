@@ -127,7 +127,7 @@ export const pageQuery = graphql`
     name
   }
 
-  fragment AuthorListItem on WorksJson {
+  fragment AuthorListItem on AuthorWork {
     id
     title
     yearPublished
@@ -139,9 +139,7 @@ export const pageQuery = graphql`
     authors {
       ...AuthorListItemAuthors
     }
-    review {
-      id
-    }
+    reviewed
     cover {
       ...ListItemCover
     }

@@ -33,11 +33,11 @@ export default function AuthorTemplate({
 
 export const pageQuery = graphql`
   query AuthorTemplate($id: String!) {
-    author: reviewedAuthor(id: $id) {
+    author: authorsJson(id: { eq: $id }) {
       ...AuthorData
     }
     distinct: allAuthorsJson(
-      filter: { id: { eq: $id }, works: { elemMatch: { id: { ne: null } } } }
+      filter: { id: { eq: $id }, reviewedWorkCount: { gt: 0 } }
     ) {
       publishedYears: distinct(field: { works: { yearPublished: SELECT } })
       kinds: distinct(field: { works: { kind: SELECT } })

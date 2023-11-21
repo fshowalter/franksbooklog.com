@@ -2,6 +2,7 @@
   "sequence": 2,
   "slug": "the-cellar-by-richard-laymon",
   "title": "The Cellar",
+  "subtitle": null,
   "sortTitle": "Cellar, The",
   "yearPublished": "1980",
   "grade": "C+",
@@ -10,10 +11,47 @@
   "date": "2022-03-16",
   "authors": [
     {
-      "slug": "richard-laymon",
-      "notes": null,
       "name": "Richard Laymon",
-      "sortName": "Laymon, Richard"
+      "sortName": "Laymon, Richard",
+      "slug": "richard-laymon",
+      "notes": null
+    }
+  ],
+  "readings": [
+    {
+      "sequence": 2,
+      "date": "2022-03-16",
+      "edition": "Kindle",
+      "editionNotes": "47 North, 2016",
+      "isAudioBook": false,
+      "abandoned": false,
+      "readingTime": 10,
+      "timeline": [
+        {
+          "date": "2022-03-07",
+          "progress": "23%"
+        },
+        {
+          "date": "2022-03-10",
+          "progress": "34%"
+        },
+        {
+          "date": "2022-03-13",
+          "progress": "40%"
+        },
+        {
+          "date": "2022-03-14",
+          "progress": "64%"
+        },
+        {
+          "date": "2022-03-15",
+          "progress": "76%"
+        },
+        {
+          "date": "2022-03-16",
+          "progress": "Finished"
+        }
+      ]
     }
   ],
   "includedInSlugs": [],

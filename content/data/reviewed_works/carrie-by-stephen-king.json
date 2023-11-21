@@ -2,6 +2,7 @@
   "sequence": 39,
   "slug": "carrie-by-stephen-king",
   "title": "Carrie",
+  "subtitle": null,
   "sortTitle": "Carrie",
   "yearPublished": "1974",
   "grade": "B-",
@@ -10,10 +11,43 @@
   "date": "2022-09-19",
   "authors": [
     {
-      "slug": "stephen-king",
-      "notes": null,
       "name": "Stephen King",
-      "sortName": "King, Stephen"
+      "sortName": "King, Stephen",
+      "slug": "stephen-king",
+      "notes": null
+    }
+  ],
+  "readings": [
+    {
+      "sequence": 39,
+      "date": "2022-09-19",
+      "edition": "Kindle",
+      "editionNotes": "Anchor, 2008",
+      "isAudioBook": false,
+      "abandoned": false,
+      "readingTime": 11,
+      "timeline": [
+        {
+          "date": "2022-09-09",
+          "progress": "8%"
+        },
+        {
+          "date": "2022-09-10",
+          "progress": "20%"
+        },
+        {
+          "date": "2022-09-17",
+          "progress": "65%"
+        },
+        {
+          "date": "2022-09-18",
+          "progress": "84%"
+        },
+        {
+          "date": "2022-09-19",
+          "progress": "Finished"
+        }
+      ]
     }
   ],
   "includedInSlugs": [],

@@ -2,6 +2,7 @@
   "sequence": 1,
   "slug": "brother-iron-sister-steel-by-dave-draper",
   "title": "Brother Iron, Sister Steel",
+  "subtitle": null,
   "sortTitle": "Brother Iron, Sister Steel",
   "yearPublished": "2001",
   "grade": "C",
@@ -10,10 +11,31 @@
   "date": "2022-03-06",
   "authors": [
     {
-      "slug": "dave-draper",
-      "notes": null,
       "name": "Dave Draper",
-      "sortName": "Draper, Dave"
+      "sortName": "Draper, Dave",
+      "slug": "dave-draper",
+      "notes": null
+    }
+  ],
+  "readings": [
+    {
+      "sequence": 1,
+      "date": "2022-03-06",
+      "edition": "Kindle",
+      "editionNotes": "On Target Publications",
+      "isAudioBook": false,
+      "abandoned": false,
+      "readingTime": 2,
+      "timeline": [
+        {
+          "date": "2022-03-05",
+          "progress": "47%"
+        },
+        {
+          "date": "2022-03-06",
+          "progress": "Finished"
+        }
+      ]
     }
   ],
   "includedInSlugs": [],
