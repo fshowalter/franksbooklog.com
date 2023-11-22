@@ -4093,7 +4093,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:18.2.16, @types/react-dom@npm:^18.0.0":
+"@types/react-dom@npm:18.2.17":
+  version: 18.2.17
+  resolution: "@types/react-dom@npm:18.2.17"
+  dependencies:
+    "@types/react": "npm:*"
+  checksum: fe0dbb3224b48515da8fe25559e3777d756a27c3f22903f0b1b020de8d68bd57eb1f0af62b52ee65d9632637950afed8cbad24d158c4f3d910d083d49bd73fba
+  languageName: node
+  linkType: hard
+
+"@types/react-dom@npm:^18.0.0":
   version: 18.2.16
   resolution: "@types/react-dom@npm:18.2.16"
   dependencies:
@@ -9112,7 +9121,7 @@ __metadata:
     "@types/jest": "npm:29.5.10"
     "@types/node": "npm:20.9.4"
     "@types/react": "npm:18.2.38"
-    "@types/react-dom": "npm:18.2.16"
+    "@types/react-dom": "npm:18.2.17"
     "@types/react-test-renderer": "npm:18.0.6"
     "@types/unist": "npm:2.0.10"
     "@typescript-eslint/eslint-plugin": "npm:6.12.0"
