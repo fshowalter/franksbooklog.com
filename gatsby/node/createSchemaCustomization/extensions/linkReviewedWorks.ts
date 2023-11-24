@@ -45,6 +45,10 @@ export const linkReviewedWorksExtension = {
 };
 
 async function addWorkLinks(text: string, nodeModel: GatsbyNodeModel) {
+  if (!text) {
+    return text;
+  }
+
   let result = text;
 
   const re = RegExp(/(<span data-work-slug="(.*?)">)(.*?)(<\/span>)/, "g");
