@@ -11,10 +11,10 @@
   "date": "2022-04-30",
   "authors": [
     {
-      "name": "Philip Fracassi",
-      "sortName": "Fracassi, Philip",
       "slug": "philip-fracassi",
-      "notes": null
+      "notes": null,
+      "name": "Philip Fracassi",
+      "sortName": "Fracassi, Philip"
     }
   ],
   "readings": [
@@ -37,5 +37,117 @@
   "includedInSlugs": [
     "behold-the-void-by-philip-fracassi"
   ],
-  "yearReviewed": 2022
+  "yearReviewed": 2022,
+  "moreByAuthors": [
+    {
+      "name": "Philip Fracassi",
+      "slug": "philip-fracassi",
+      "works": [
+        {
+          "title": "Coffin",
+          "kind": "Short Story",
+          "yearPublished": "2017",
+          "slug": "coffin-by-philip-fracassi",
+          "grade": "C+",
+          "authors": [
+            {
+              "name": "Philip Fracassi"
+            }
+          ]
+        },
+        {
+          "title": "Behold the Void",
+          "kind": "Collection",
+          "yearPublished": "2017",
+          "slug": "behold-the-void-by-philip-fracassi",
+          "grade": "B+",
+          "authors": [
+            {
+              "name": "Philip Fracassi"
+            }
+          ]
+        },
+        {
+          "title": "Don't Let Them Get You Down",
+          "kind": "Novel",
+          "yearPublished": "2022",
+          "slug": "dont-let-them-get-you-down-by-philip-fracassi",
+          "grade": "C-",
+          "authors": [
+            {
+              "name": "Philip Fracassi"
+            }
+          ]
+        },
+        {
+          "title": "Mother",
+          "kind": "Short Story",
+          "yearPublished": "2015",
+          "slug": "mother-by-philip-fracassi",
+          "grade": "B-",
+          "authors": [
+            {
+              "name": "Philip Fracassi"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "moreReviews": [
+    {
+      "title": "Draft No. 4",
+      "kind": "Nonfiction",
+      "yearPublished": "2013",
+      "slug": "draft-no-4-by-john-mcphee",
+      "grade": "C",
+      "authors": [
+        {
+          "name": "John McPhee"
+        }
+      ]
+    },
+    {
+      "title": "Extreme Ownership",
+      "kind": "Nonfiction",
+      "yearPublished": "2015",
+      "slug": "extreme-ownership-by-jocko-willink-leif-babin",
+      "grade": "A",
+      "authors": [
+        {
+          "name": "Jocko Willink"
+        },
+        {
+          "name": "Leif Babin"
+        }
+      ]
+    },
+    {
+      "title": "Fight Club",
+      "kind": "Novel",
+      "yearPublished": "1996",
+      "slug": "fight-club-by-chuck-palahniuk",
+      "grade": "A-",
+      "authors": [
+        {
+          "name": "Chuck Palahniuk"
+        }
+      ]
+    },
+    {
+      "title": "Fright Night",
+      "kind": "Novel",
+      "yearPublished": "1985",
+      "slug": "fright-night-by-john-skipp-craig-spector",
+      "grade": "F",
+      "authors": [
+        {
+          "name": "John Skipp"
+        },
+        {
+          "name": "Craig Spector"
+        }
+      ]
+    }
+  ]
 }

@@ -7,16 +7,18 @@ import type {
   GatsbyResolveArgs,
   GatsbyResolveInfo,
 } from "../type-definitions";
-import { addWorkLinks } from "../utils/addWorkLinks";
-import { resolveFieldForNode } from "../utils/resolveFieldForNode";
-import { excerptHtmlFieldResolver } from "./fieldResolvers/excerptHtmlFieldResolver";
+import { excerptHtmlField } from "./utils/excerptHtmlField";
+import { resolveFieldForNode } from "./utils/resolveFieldForNode";
 
 export interface MarkdownRemarkNode extends GatsbyNode {
-  frontmatter: {
-    work_slug: string;
-    grade: string;
-    date: string;
-  };
+  fileAbsolutePath: string;
+  frontmatter: FrontMatter;
+}
+
+export interface FrontMatter {
+  work_slug: string;
+  grade: string | null;
+  date: string;
 }
 
 export const MarkdownRemark = {
@@ -29,7 +31,7 @@ export const MarkdownRemark = {
         linkReviewedWorks: {},
       },
     },
-    excerptHtml: excerptHtmlFieldResolver,
+    excerptHtml: excerptHtmlField,
     linkedHtml: {
       type: "String",
       resolve: async (
@@ -50,11 +52,53 @@ export const MarkdownRemark = {
           return null;
         }
 
-        const html = toHtml(htmlAst, {
+        return toHtml(htmlAst, {
           allowDangerousHtml: true,
         });
+      },
+      extensions: {
+        linkReviewedWorks: {},
+      },
+    },
+    date: {
+      type: "Date!",
+      resolve: async (
+        source: MarkdownRemarkNode,
+        args: GatsbyResolveArgs,
+        context: GatsbyNodeContext,
+        info: GatsbyResolveInfo,
+      ) => {
+        const frontMatter = await resolveFieldForNode<FrontMatter>({
+          fieldName: "frontmatter",
+          source,
+          context,
+          info,
+          args,
+        });
 
-        return addWorkLinks(html, context.nodeModel);
+        return frontMatter ? frontMatter.date : null;
+      },
+      extensions: {
+        dateformat: {},
+      },
+    },
+    grade: {
+      type: "String!",
+      resolve: async (
+        source: MarkdownRemarkNode,
+        args: GatsbyResolveArgs,
+        context: GatsbyNodeContext,
+        info: GatsbyResolveInfo,
+      ) => {
+        const frontMatter = await resolveFieldForNode<FrontMatter>({
+          fieldName: "frontmatter",
+          source,
+          context,
+          info,
+          args,
+        });
+
+        return frontMatter ? frontMatter.grade : null;
       },
     },
   },

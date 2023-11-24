@@ -58,7 +58,7 @@ export function Readings({
 }
 
 export const query = graphql`
-  fragment ReadingsData on ReadingProgressJson {
+  fragment ReadingsData on TimelineEntriesJson {
     ...ReadingsListItem
   }
 `;

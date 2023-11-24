@@ -126,7 +126,7 @@
   "mostReadAuthors": [
     {
       "name": "Philip Fracassi",
-      "count": 12,
+      "count": 10,
       "slug": "philip-fracassi",
       "readings": [
         {
@@ -140,26 +140,6 @@
           "includedInSlugs": [
             "behold-the-void-by-philip-fracassi"
           ]
-        },
-        {
-          "sequence": 55,
-          "date": "2023-10-29",
-          "slug": "dont-let-them-get-you-down-by-philip-fracassi",
-          "edition": "Kindle",
-          "kind": "Novel",
-          "title": "Don't Let Them Get You Down",
-          "yearPublished": "2022",
-          "includedInSlugs": []
-        },
-        {
-          "sequence": 53,
-          "date": "2023-10-09",
-          "slug": "sacculina-by-philip-fracassi",
-          "edition": "Kindle",
-          "kind": "Novella",
-          "title": "Sacculina",
-          "yearPublished": "2017",
-          "includedInSlugs": []
         },
         {
           "sequence": 15,
@@ -271,7 +251,7 @@
     },
     {
       "name": "Richard Laymon",
-      "count": 5,
+      "count": 4,
       "slug": "richard-laymon",
       "readings": [
         {
@@ -317,18 +297,6 @@
           "includedInSlugs": [
             "out-are-the-lights-and-other-tales-by-richard-laymon"
           ]
-        },
-        {
-          "sequence": 51,
-          "date": "2023-01-21",
-          "slug": "roadside-pickup-by-richard-laymon",
-          "edition": "Kindle",
-          "kind": "Short Story",
-          "title": "Roadside Pickup",
-          "yearPublished": "1974",
-          "includedInSlugs": [
-            "short-stories-volume-one-by-richard-laymon"
-          ]
         }
       ]
     },
@@ -361,7 +329,7 @@
     },
     {
       "name": "Stephen King",
-      "count": 5,
+      "count": 4,
       "slug": "stephen-king",
       "readings": [
         {
@@ -402,16 +370,6 @@
           "kind": "Novel",
           "title": "The Shining",
           "yearPublished": "1977",
-          "includedInSlugs": []
-        },
-        {
-          "sequence": 49,
-          "date": "2023-01-14",
-          "slug": "doctor-sleep-by-stephen-king",
-          "edition": "Kindle",
-          "kind": "Novel",
-          "title": "Doctor Sleep",
-          "yearPublished": "2013",
           "includedInSlugs": []
         }
       ]

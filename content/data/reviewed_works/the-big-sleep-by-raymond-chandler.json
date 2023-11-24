@@ -11,10 +11,10 @@
   "date": "2022-09-24",
   "authors": [
     {
-      "name": "Raymond Chandler",
-      "sortName": "Chandler, Raymond",
       "slug": "raymond-chandler",
-      "notes": null
+      "notes": null,
+      "name": "Raymond Chandler",
+      "sortName": "Chandler, Raymond"
     }
   ],
   "readings": [
@@ -35,5 +35,56 @@
     }
   ],
   "includedInSlugs": [],
-  "yearReviewed": 2022
+  "yearReviewed": 2022,
+  "moreByAuthors": [],
+  "moreReviews": [
+    {
+      "title": "The Baby Farmer",
+      "kind": "Short Story",
+      "yearPublished": "2017",
+      "slug": "the-baby-farmer-by-philip-fracassi",
+      "grade": "C+",
+      "authors": [
+        {
+          "name": "Philip Fracassi"
+        }
+      ]
+    },
+    {
+      "title": "Behold the Void",
+      "kind": "Collection",
+      "yearPublished": "2017",
+      "slug": "behold-the-void-by-philip-fracassi",
+      "grade": "B+",
+      "authors": [
+        {
+          "name": "Philip Fracassi"
+        }
+      ]
+    },
+    {
+      "title": "Brother Iron, Sister Steel",
+      "kind": "Nonfiction",
+      "yearPublished": "2001",
+      "slug": "brother-iron-sister-steel-by-dave-draper",
+      "grade": "C",
+      "authors": [
+        {
+          "name": "Dave Draper"
+        }
+      ]
+    },
+    {
+      "title": "Can't Hurt Me",
+      "kind": "Nonfiction",
+      "yearPublished": "2018",
+      "slug": "cant-hurt-me-by-david-goggins",
+      "grade": "B",
+      "authors": [
+        {
+          "name": "David Goggins"
+        }
+      ]
+    }
+  ]
 }

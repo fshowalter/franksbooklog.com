@@ -7,10 +7,10 @@
   "kind": "Novel",
   "authors": [
     {
-      "name": "Stephen King",
-      "sortName": "King, Stephen",
       "slug": "stephen-king",
-      "notes": "as Richard Bachman"
+      "notes": "as Richard Bachman",
+      "name": "Stephen King",
+      "sortName": "King, Stephen"
     }
   ],
   "includedInSlugs": []

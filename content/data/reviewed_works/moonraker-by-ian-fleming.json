@@ -11,10 +11,10 @@
   "date": "2022-10-16",
   "authors": [
     {
-      "name": "Ian Fleming",
-      "sortName": "Fleming, Ian",
       "slug": "ian-fleming",
-      "notes": null
+      "notes": null,
+      "name": "Ian Fleming",
+      "sortName": "Fleming, Ian"
     }
   ],
   "readings": [
@@ -39,5 +39,56 @@
     }
   ],
   "includedInSlugs": [],
-  "yearReviewed": 2022
+  "yearReviewed": 2022,
+  "moreByAuthors": [],
+  "moreReviews": [
+    {
+      "title": "Living with a SEAL",
+      "kind": "Nonfiction",
+      "yearPublished": "2015",
+      "slug": "living-with-a-seal-by-jesse-itzler",
+      "grade": "Abandoned",
+      "authors": [
+        {
+          "name": "Jesse Itzler"
+        }
+      ]
+    },
+    {
+      "title": "Mandala",
+      "kind": "Novella",
+      "yearPublished": "2017",
+      "slug": "mandala-by-philip-fracassi",
+      "grade": "B+",
+      "authors": [
+        {
+          "name": "Philip Fracassi"
+        }
+      ]
+    },
+    {
+      "title": "Mother",
+      "kind": "Short Story",
+      "yearPublished": "2015",
+      "slug": "mother-by-philip-fracassi",
+      "grade": "B-",
+      "authors": [
+        {
+          "name": "Philip Fracassi"
+        }
+      ]
+    },
+    {
+      "title": "On Writing",
+      "kind": "Nonfiction",
+      "yearPublished": "2000",
+      "slug": "on-writing-by-stephen-king",
+      "grade": "A-",
+      "authors": [
+        {
+          "name": "Stephen King"
+        }
+      ]
+    }
+  ]
 }

@@ -11,10 +11,10 @@
   "date": "2022-07-14",
   "authors": [
     {
-      "name": "Bret Easton Ellis",
-      "sortName": "Ellis, Bret Easton",
       "slug": "bret-easton-ellis",
-      "notes": null
+      "notes": null,
+      "name": "Bret Easton Ellis",
+      "sortName": "Ellis, Bret Easton"
     }
   ],
   "readings": [
@@ -63,5 +63,56 @@
     }
   ],
   "includedInSlugs": [],
-  "yearReviewed": 2022
+  "yearReviewed": 2022,
+  "moreByAuthors": [],
+  "moreReviews": [
+    {
+      "title": "The Rise of Theodore Roosevelt",
+      "kind": "Nonfiction",
+      "yearPublished": "1979",
+      "slug": "the-rise-of-theodore-roosevelt-by-edmund-morris",
+      "grade": "A-",
+      "authors": [
+        {
+          "name": "Edmund Morris"
+        }
+      ]
+    },
+    {
+      "title": "Roadside Pickup",
+      "kind": "Short Story",
+      "yearPublished": "1974",
+      "slug": "roadside-pickup-by-richard-laymon",
+      "grade": "C-",
+      "authors": [
+        {
+          "name": "Richard Laymon"
+        }
+      ]
+    },
+    {
+      "title": "Sacculina",
+      "kind": "Novella",
+      "yearPublished": "2017",
+      "slug": "sacculina-by-philip-fracassi",
+      "grade": "B",
+      "authors": [
+        {
+          "name": "Philip Fracassi"
+        }
+      ]
+    },
+    {
+      "title": "The Secret History",
+      "kind": "Novel",
+      "yearPublished": "1992",
+      "slug": "the-secret-history-by-donna-tartt",
+      "grade": "A",
+      "authors": [
+        {
+          "name": "Donna Tartt"
+        }
+      ]
+    }
+  ]
 }

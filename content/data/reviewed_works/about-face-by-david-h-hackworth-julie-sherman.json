@@ -11,16 +11,16 @@
   "date": "2022-09-05",
   "authors": [
     {
-      "name": "David H. Hackworth",
-      "sortName": "Hackworth, David H.",
       "slug": "david-h-hackworth",
-      "notes": null
+      "notes": null,
+      "name": "David H. Hackworth",
+      "sortName": "Hackworth, David H."
     },
     {
-      "name": "Julie Sherman",
-      "sortName": "Sherman, Julie",
       "slug": "julie-sherman",
-      "notes": null
+      "notes": null,
+      "name": "Julie Sherman",
+      "sortName": "Sherman, Julie"
     }
   ],
   "readings": [
@@ -57,5 +57,56 @@
     }
   ],
   "includedInSlugs": [],
-  "yearReviewed": 2022
+  "yearReviewed": 2022,
+  "moreByAuthors": [],
+  "moreReviews": [
+    {
+      "title": "'Salem's Lot",
+      "kind": "Novel",
+      "yearPublished": "1975",
+      "slug": "salems-lot-by-stephen-king",
+      "grade": "B",
+      "authors": [
+        {
+          "name": "Stephen King"
+        }
+      ]
+    },
+    {
+      "title": "The 48 Laws of Power",
+      "kind": "Nonfiction",
+      "yearPublished": "1998",
+      "slug": "the-48-laws-of-power-by-robert-greene",
+      "grade": "D+",
+      "authors": [
+        {
+          "name": "Robert Greene"
+        }
+      ]
+    },
+    {
+      "title": "Altar",
+      "kind": "Short Story",
+      "yearPublished": "2016",
+      "slug": "altar-by-philip-fracassi",
+      "grade": "A-",
+      "authors": [
+        {
+          "name": "Philip Fracassi"
+        }
+      ]
+    },
+    {
+      "title": "The Baby Farmer",
+      "kind": "Short Story",
+      "yearPublished": "2017",
+      "slug": "the-baby-farmer-by-philip-fracassi",
+      "grade": "C+",
+      "authors": [
+        {
+          "name": "Philip Fracassi"
+        }
+      ]
+    }
+  ]
 }

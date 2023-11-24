@@ -11,10 +11,10 @@
   "date": "2022-03-06",
   "authors": [
     {
-      "name": "Dave Draper",
-      "sortName": "Draper, Dave",
       "slug": "dave-draper",
-      "notes": null
+      "notes": null,
+      "name": "Dave Draper",
+      "sortName": "Draper, Dave"
     }
   ],
   "readings": [
@@ -39,5 +39,56 @@
     }
   ],
   "includedInSlugs": [],
-  "yearReviewed": 2022
+  "yearReviewed": 2022,
+  "moreByAuthors": [],
+  "moreReviews": [
+    {
+      "title": "Behold the Void",
+      "kind": "Collection",
+      "yearPublished": "2017",
+      "slug": "behold-the-void-by-philip-fracassi",
+      "grade": "B+",
+      "authors": [
+        {
+          "name": "Philip Fracassi"
+        }
+      ]
+    },
+    {
+      "title": "The Big Sleep",
+      "kind": "Novel",
+      "yearPublished": "1939",
+      "slug": "the-big-sleep-by-raymond-chandler",
+      "grade": "C+",
+      "authors": [
+        {
+          "name": "Raymond Chandler"
+        }
+      ]
+    },
+    {
+      "title": "Can't Hurt Me",
+      "kind": "Nonfiction",
+      "yearPublished": "2018",
+      "slug": "cant-hurt-me-by-david-goggins",
+      "grade": "B",
+      "authors": [
+        {
+          "name": "David Goggins"
+        }
+      ]
+    },
+    {
+      "title": "Carrie",
+      "kind": "Novel",
+      "yearPublished": "1974",
+      "slug": "carrie-by-stephen-king",
+      "grade": "B-",
+      "authors": [
+        {
+          "name": "Stephen King"
+        }
+      ]
+    }
+  ]
 }

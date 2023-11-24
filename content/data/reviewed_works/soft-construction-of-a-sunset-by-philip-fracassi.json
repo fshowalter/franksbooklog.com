@@ -11,10 +11,10 @@
   "date": "2022-04-17",
   "authors": [
     {
-      "name": "Philip Fracassi",
-      "sortName": "Fracassi, Philip",
       "slug": "philip-fracassi",
-      "notes": null
+      "notes": null,
+      "name": "Philip Fracassi",
+      "sortName": "Fracassi, Philip"
     }
   ],
   "readings": [
@@ -37,5 +37,111 @@
   "includedInSlugs": [
     "behold-the-void-by-philip-fracassi"
   ],
-  "yearReviewed": 2022
+  "yearReviewed": 2022,
+  "moreByAuthors": [
+    {
+      "name": "Philip Fracassi",
+      "slug": "philip-fracassi",
+      "works": [
+        {
+          "title": "Mother",
+          "kind": "Short Story",
+          "yearPublished": "2015",
+          "slug": "mother-by-philip-fracassi",
+          "grade": "B-",
+          "authors": [
+            {
+              "name": "Philip Fracassi"
+            }
+          ]
+        },
+        {
+          "title": "Altar",
+          "kind": "Short Story",
+          "yearPublished": "2016",
+          "slug": "altar-by-philip-fracassi",
+          "grade": "A-",
+          "authors": [
+            {
+              "name": "Philip Fracassi"
+            }
+          ]
+        },
+        {
+          "title": "Surfer Girl",
+          "kind": "Short Story",
+          "yearPublished": "2017",
+          "slug": "surfer-girl-by-philip-fracassi",
+          "grade": "C+",
+          "authors": [
+            {
+              "name": "Philip Fracassi"
+            }
+          ]
+        },
+        {
+          "title": "Sacculina",
+          "kind": "Novella",
+          "yearPublished": "2017",
+          "slug": "sacculina-by-philip-fracassi",
+          "grade": "B",
+          "authors": [
+            {
+              "name": "Philip Fracassi"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "moreReviews": [
+    {
+      "title": "The Shining",
+      "kind": "Novel",
+      "yearPublished": "1977",
+      "slug": "the-shining-by-stephen-king",
+      "grade": "B",
+      "authors": [
+        {
+          "name": "Stephen King"
+        }
+      ]
+    },
+    {
+      "title": "The Skeptics' Guide to the Universe",
+      "kind": "Nonfiction",
+      "yearPublished": "2018",
+      "slug": "the-skeptics-guide-to-the-universe-by-steven-novella",
+      "grade": "B+",
+      "authors": [
+        {
+          "name": "Steven Novella"
+        }
+      ]
+    },
+    {
+      "title": "The M.A.X. Muscle Plan",
+      "kind": "Nonfiction",
+      "yearPublished": "2012",
+      "slug": "the-max-muscle-plan-by-brad-schoenfeld",
+      "grade": "C-",
+      "authors": [
+        {
+          "name": "Brad Schoenfeld"
+        }
+      ]
+    },
+    {
+      "title": "Total Recall",
+      "kind": "Nonfiction",
+      "yearPublished": "2012",
+      "slug": "total-recall-by-arnold-schwarzenegger",
+      "grade": "C+",
+      "authors": [
+        {
+          "name": "Arnold Schwarzenegger"
+        }
+      ]
+    }
+  ]
 }

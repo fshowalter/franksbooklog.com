@@ -11,10 +11,10 @@
   "date": "2022-06-25",
   "authors": [
     {
-      "name": "Johnny Marr",
-      "sortName": "Marr, Johnny",
       "slug": "johnny-marr",
-      "notes": null
+      "notes": null,
+      "name": "Johnny Marr",
+      "sortName": "Marr, Johnny"
     }
   ],
   "readings": [
@@ -39,5 +39,56 @@
     }
   ],
   "includedInSlugs": [],
-  "yearReviewed": 2022
+  "yearReviewed": 2022,
+  "moreByAuthors": [],
+  "moreReviews": [
+    {
+      "title": "Sacculina",
+      "kind": "Novella",
+      "yearPublished": "2017",
+      "slug": "sacculina-by-philip-fracassi",
+      "grade": "B",
+      "authors": [
+        {
+          "name": "Philip Fracassi"
+        }
+      ]
+    },
+    {
+      "title": "The Secret History",
+      "kind": "Novel",
+      "yearPublished": "1992",
+      "slug": "the-secret-history-by-donna-tartt",
+      "grade": "A",
+      "authors": [
+        {
+          "name": "Donna Tartt"
+        }
+      ]
+    },
+    {
+      "title": "The Shining",
+      "kind": "Novel",
+      "yearPublished": "1977",
+      "slug": "the-shining-by-stephen-king",
+      "grade": "B",
+      "authors": [
+        {
+          "name": "Stephen King"
+        }
+      ]
+    },
+    {
+      "title": "The Skeptics' Guide to the Universe",
+      "kind": "Nonfiction",
+      "yearPublished": "2018",
+      "slug": "the-skeptics-guide-to-the-universe-by-steven-novella",
+      "grade": "B+",
+      "authors": [
+        {
+          "name": "Steven Novella"
+        }
+      ]
+    }
+  ]
 }

@@ -11,10 +11,10 @@
   "date": "2023-10-22",
   "authors": [
     {
-      "name": "Rick Rubin",
-      "sortName": "Rubin, Rick",
       "slug": "rick-rubin",
-      "notes": null
+      "notes": null,
+      "name": "Rick Rubin",
+      "sortName": "Rubin, Rick"
     }
   ],
   "readings": [
@@ -35,5 +35,56 @@
     }
   ],
   "includedInSlugs": [],
-  "yearReviewed": 2023
+  "yearReviewed": 2023,
+  "moreByAuthors": [],
+  "moreReviews": [
+    {
+      "title": "Coffin",
+      "kind": "Short Story",
+      "yearPublished": "2017",
+      "slug": "coffin-by-philip-fracassi",
+      "grade": "C+",
+      "authors": [
+        {
+          "name": "Philip Fracassi"
+        }
+      ]
+    },
+    {
+      "title": "Consider This",
+      "kind": "Nonfiction",
+      "yearPublished": "2020",
+      "slug": "consider-this-by-chuck-palahniuk",
+      "grade": "B",
+      "authors": [
+        {
+          "name": "Chuck Palahniuk"
+        }
+      ]
+    },
+    {
+      "title": "Cured",
+      "kind": "Nonfiction",
+      "yearPublished": "2016",
+      "slug": "cured-by-lol-tolhurst",
+      "grade": "A-",
+      "authors": [
+        {
+          "name": "Lol Tolhurst"
+        }
+      ]
+    },
+    {
+      "title": "The Dark Tunnel",
+      "kind": "Novel",
+      "yearPublished": "1944",
+      "slug": "the-dark-tunnel-by-ross-macdonald",
+      "grade": "D+",
+      "authors": [
+        {
+          "name": "Ross Macdonald"
+        }
+      ]
+    }
+  ]
 }

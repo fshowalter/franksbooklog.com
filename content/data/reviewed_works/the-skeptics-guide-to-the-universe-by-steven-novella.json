@@ -11,10 +11,10 @@
   "date": "2022-10-29",
   "authors": [
     {
-      "name": "Steven Novella",
-      "sortName": "Novella, Steven",
       "slug": "steven-novella",
-      "notes": null
+      "notes": null,
+      "name": "Steven Novella",
+      "sortName": "Novella, Steven"
     }
   ],
   "readings": [
@@ -47,5 +47,56 @@
     }
   ],
   "includedInSlugs": [],
-  "yearReviewed": 2022
+  "yearReviewed": 2022,
+  "moreByAuthors": [],
+  "moreReviews": [
+    {
+      "title": "Set the Boy Free",
+      "kind": "Nonfiction",
+      "yearPublished": "2016",
+      "slug": "set-the-boy-free-by-johnny-marr",
+      "grade": "B+",
+      "authors": [
+        {
+          "name": "Johnny Marr"
+        }
+      ]
+    },
+    {
+      "title": "The Shining",
+      "kind": "Novel",
+      "yearPublished": "1977",
+      "slug": "the-shining-by-stephen-king",
+      "grade": "B",
+      "authors": [
+        {
+          "name": "Stephen King"
+        }
+      ]
+    },
+    {
+      "title": "Soft Construction of a Sunset",
+      "kind": "Short Story",
+      "yearPublished": "2017",
+      "slug": "soft-construction-of-a-sunset-by-philip-fracassi",
+      "grade": "B-",
+      "authors": [
+        {
+          "name": "Philip Fracassi"
+        }
+      ]
+    },
+    {
+      "title": "Surfer Girl",
+      "kind": "Short Story",
+      "yearPublished": "2017",
+      "slug": "surfer-girl-by-philip-fracassi",
+      "grade": "C+",
+      "authors": [
+        {
+          "name": "Philip Fracassi"
+        }
+      ]
+    }
+  ]
 }

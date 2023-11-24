@@ -11,10 +11,10 @@
   "date": "2022-03-16",
   "authors": [
     {
-      "name": "Richard Laymon",
-      "sortName": "Laymon, Richard",
       "slug": "richard-laymon",
-      "notes": null
+      "notes": null,
+      "name": "Richard Laymon",
+      "sortName": "Laymon, Richard"
     }
   ],
   "readings": [
@@ -55,5 +55,111 @@
     }
   ],
   "includedInSlugs": [],
-  "yearReviewed": 2022
+  "yearReviewed": 2022,
+  "moreByAuthors": [
+    {
+      "name": "Richard Laymon",
+      "slug": "richard-laymon",
+      "works": [
+        {
+          "title": "Desert Pickup",
+          "kind": "Short Story",
+          "yearPublished": "1970",
+          "slug": "desert-pickup-by-richard-laymon",
+          "grade": "C-",
+          "authors": [
+            {
+              "name": "Richard Laymon"
+            }
+          ]
+        },
+        {
+          "title": "Roadside Pickup",
+          "kind": "Short Story",
+          "yearPublished": "1974",
+          "slug": "roadside-pickup-by-richard-laymon",
+          "grade": "C-",
+          "authors": [
+            {
+              "name": "Richard Laymon"
+            }
+          ]
+        },
+        {
+          "title": "The Woods Are Dark",
+          "kind": "Novel",
+          "yearPublished": "1981",
+          "slug": "the-woods-are-dark-by-richard-laymon",
+          "grade": "C+",
+          "authors": [
+            {
+              "name": "Richard Laymon"
+            }
+          ]
+        },
+        {
+          "title": "Out Are the Lights",
+          "kind": "Novel",
+          "yearPublished": "1982",
+          "slug": "out-are-the-lights-by-richard-laymon",
+          "grade": "C-",
+          "authors": [
+            {
+              "name": "Richard Laymon"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "moreReviews": [
+    {
+      "title": "Carrie",
+      "kind": "Novel",
+      "yearPublished": "1974",
+      "slug": "carrie-by-stephen-king",
+      "grade": "B-",
+      "authors": [
+        {
+          "name": "Stephen King"
+        }
+      ]
+    },
+    {
+      "title": "Casino Royale",
+      "kind": "Novel",
+      "yearPublished": "1953",
+      "slug": "casino-royale-by-ian-fleming",
+      "grade": "B-",
+      "authors": [
+        {
+          "name": "Ian Fleming"
+        }
+      ]
+    },
+    {
+      "title": "Churchill",
+      "kind": "Nonfiction",
+      "yearPublished": "2018",
+      "slug": "churchill-by-andrew-roberts",
+      "grade": "A-",
+      "authors": [
+        {
+          "name": "Andrew Roberts"
+        }
+      ]
+    },
+    {
+      "title": "The Cipher",
+      "kind": "Novel",
+      "yearPublished": "1991",
+      "slug": "the-cipher-by-kathe-koja",
+      "grade": "B",
+      "authors": [
+        {
+          "name": "Kathe Koja"
+        }
+      ]
+    }
+  ]
 }

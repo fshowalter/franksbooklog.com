@@ -11,10 +11,10 @@
   "date": "2022-10-04",
   "authors": [
     {
-      "name": "Scott Carney",
-      "sortName": "Carney, Scott",
       "slug": "scott-carney",
-      "notes": null
+      "notes": null,
+      "name": "Scott Carney",
+      "sortName": "Carney, Scott"
     }
   ],
   "readings": [
@@ -43,5 +43,56 @@
     }
   ],
   "includedInSlugs": [],
-  "yearReviewed": 2022
+  "yearReviewed": 2022,
+  "moreByAuthors": [],
+  "moreReviews": [
+    {
+      "title": "The M.A.X. Muscle Plan",
+      "kind": "Nonfiction",
+      "yearPublished": "2012",
+      "slug": "the-max-muscle-plan-by-brad-schoenfeld",
+      "grade": "C-",
+      "authors": [
+        {
+          "name": "Brad Schoenfeld"
+        }
+      ]
+    },
+    {
+      "title": "Total Recall",
+      "kind": "Nonfiction",
+      "yearPublished": "2012",
+      "slug": "total-recall-by-arnold-schwarzenegger",
+      "grade": "C+",
+      "authors": [
+        {
+          "name": "Arnold Schwarzenegger"
+        }
+      ]
+    },
+    {
+      "title": "The Woods Are Dark",
+      "kind": "Novel",
+      "yearPublished": "1981",
+      "slug": "the-woods-are-dark-by-richard-laymon",
+      "grade": "C+",
+      "authors": [
+        {
+          "name": "Richard Laymon"
+        }
+      ]
+    },
+    {
+      "title": "'Salem's Lot",
+      "kind": "Novel",
+      "yearPublished": "1975",
+      "slug": "salems-lot-by-stephen-king",
+      "grade": "B",
+      "authors": [
+        {
+          "name": "Stephen King"
+        }
+      ]
+    }
+  ]
 }

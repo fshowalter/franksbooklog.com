@@ -7,16 +7,16 @@
   "kind": "Novel",
   "authors": [
     {
-      "name": "Stephen King",
-      "sortName": "King, Stephen",
       "slug": "stephen-king",
-      "notes": null
+      "notes": null,
+      "name": "Stephen King",
+      "sortName": "King, Stephen"
     },
     {
-      "name": "Peter Straub",
-      "sortName": "Straub, Peter",
       "slug": "peter-straub",
-      "notes": null
+      "notes": null,
+      "name": "Peter Straub",
+      "sortName": "Straub, Peter"
     }
   ],
   "includedInSlugs": []

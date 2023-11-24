@@ -1,14 +1,24 @@
 import path from "path";
 import { SchemaNames } from "../schemaNames";
 import type { GatsbyNode, GatsbyNodeContext } from "../type-definitions";
-import { coverResolver } from "./fieldResolvers/coverResolver";
+import { coverResolver } from "./utils/coverResolver";
 
 export interface AuthorNode extends GatsbyNode {
   slug: string;
 }
 
-export const AuthorWork = {
-  name: SchemaNames.AuthorWork,
+export const AuthorsJsonWorkAuthor = {
+  name: SchemaNames.AuthorsJsonWorkAuthor,
+  fields: {
+    slug: "String!",
+    notes: "String",
+    name: "String!",
+    sortName: "String!",
+  },
+};
+
+export const AuthorsJsonWork = {
+  name: SchemaNames.AuthorsJsonWork,
   fields: {
     title: "String!",
     yearPublished: "String!",
@@ -16,7 +26,7 @@ export const AuthorWork = {
     kind: "String!",
     slug: "String!",
     reviewed: "Boolean!",
-    authors: `[${SchemaNames.WorkAuthor}!]!`,
+    authors: `[${SchemaNames.AuthorsJsonWorkAuthor}!]!`,
     grade: "String",
     gradeValue: "Int",
     cover: {
@@ -33,7 +43,7 @@ export const AuthorsJson = {
     name: "String!",
     sortName: "String!",
     slug: "String!",
-    works: `[${SchemaNames.AuthorWork}!]!`,
+    works: `[${SchemaNames.AuthorsJsonWork}!]!`,
     reviewedWorkCount: "Int!",
     workCount: "Int!",
     avatar: {

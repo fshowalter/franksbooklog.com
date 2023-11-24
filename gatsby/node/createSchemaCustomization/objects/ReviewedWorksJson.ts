@@ -1,22 +1,26 @@
 import { SchemaNames } from "../schemaNames";
 import type { GatsbyNode } from "../type-definitions";
-import {
-  GatsbyNodeContext,
-  GatsbyResolveArgs,
-  GatsbyResolveInfo,
-} from "../type-definitions";
-import { resolveFieldForNode } from "../utils/resolveFieldForNode";
-import { MarkdownRemarkNode } from "./MarkdownRemark";
-import { coverResolver } from "./fieldResolvers/coverResolver";
+import { GatsbyNodeContext } from "../type-definitions";
+import { coverResolver } from "./utils/coverResolver";
 
-interface ReviewedWorkNode extends GatsbyNode {
+export interface ReviewedWorkNode extends GatsbyNode {
   slug: string;
   sequence: number;
   includedInSlugs: string[];
 }
 
-export const ReviewedWorkReadingTimelineEntry = {
-  name: SchemaNames.ReviewedWorkReadingTimelineEntry,
+export const ReviewedWorksJsonWorkAuthor = {
+  name: SchemaNames.ReviewedWorksJsonWorkAuthor,
+  fields: {
+    slug: "String!",
+    notes: "String",
+    name: "String!",
+    sortName: "String!",
+  },
+};
+
+export const ReviewedWorksJsonReadingTimelineEntry = {
+  name: SchemaNames.ReviewedWorksJsonReadingTimelineEntry,
   fields: {
     date: {
       type: "Date!",
@@ -28,8 +32,62 @@ export const ReviewedWorkReadingTimelineEntry = {
   },
 };
 
-export const ReviewedWorkReading = {
-  name: SchemaNames.ReviewedWorkReading,
+export const ReviewedWorksJsonMoreWorkAuthor = {
+  name: SchemaNames.ReviewedWorksJsonMoreWorkAuthor,
+  fields: {
+    name: "String!",
+  },
+};
+
+export const ReviewedWorksJsonMoreWork = {
+  name: SchemaNames.ReviewedWorksJsonMoreWork,
+  fields: {
+    title: "String!",
+    kind: "String!",
+    yearPublished: "String",
+    slug: "String!",
+    grade: "String",
+    authors: `[${SchemaNames.ReviewedWorksJsonMoreWorkAuthor}!]!`,
+    cover: {
+      type: "File!",
+      resolve: coverResolver,
+    },
+  },
+};
+
+export const ReviewedWorksJsonMoreByAuthor = {
+  name: SchemaNames.ReviewedWorksJsonMoreByAuthor,
+  fields: {
+    name: "String!",
+    slug: "String!",
+    works: `[${SchemaNames.ReviewedWorksJsonMoreWork}!]!`,
+  },
+};
+
+export const ReviewedWorksJsonIncludedWorkAuthor = {
+  name: SchemaNames.ReviewedWorksJsonIncludedWorkAuthor,
+  fields: {
+    name: "String!",
+    slug: "String!",
+  },
+};
+
+export const ReviewedWorksJsonIncludedWork = {
+  name: SchemaNames.ReviewedWorksJsonIncludedWork,
+  fields: {
+    title: "String!",
+    authors: `[${SchemaNames.ReviewedWorksJsonIncludedWorkAuthor}!]!`,
+    grade: "String!",
+    slug: "String!",
+    cover: {
+      type: "File!",
+      resolve: coverResolver,
+    },
+  },
+};
+
+export const ReviewedWorksJsonReading = {
+  name: SchemaNames.ReviewedWorksJsonReading,
   fields: {
     sequence: "Int!",
     date: {
@@ -40,9 +98,9 @@ export const ReviewedWorkReading = {
     },
     edition: "String!",
     editionNotes: "String",
-    isAudioBook: "Boolean!",
+    isAudiobook: "Boolean!",
     abandoned: "Boolean!",
-    timeline: `[${SchemaNames.ReviewedWorkReadingTimelineEntry}!]!`,
+    timeline: `[${SchemaNames.ReviewedWorksJsonReadingTimelineEntry}!]!`,
     readingTime: "Int",
     readingNote: {
       type: SchemaNames.MarkdownRemark,
@@ -87,67 +145,43 @@ export const ReviewedWorksJson = {
         dateformat: {},
       },
     },
-    excerpt: {
-      type: "String",
-      resolve: excerptResolver,
-    },
-    yearPublished: "Int!",
+    yearPublished: "String!",
     yearReviewed: `Int!`,
     kind: "String!",
-    authors: `[${SchemaNames.WorkAuthor}!]!`,
+    authors: `[${SchemaNames.ReviewedWorksJsonWorkAuthor}!]!`,
     cover: {
       type: "File!",
       resolve: coverResolver,
     },
     grade: "String",
     gradeValue: `Int!`,
-    readings: `[${SchemaNames.ReviewedWorkReading}!]!`,
+    readings: `[${SchemaNames.ReviewedWorksJsonReading}!]!`,
+    moreByAuthors: `[${SchemaNames.ReviewedWorksJsonMoreByAuthor}!]!`,
+    moreWorks: `[${SchemaNames.ReviewedWorksJsonMoreWork}!]!`,
+    includedWorks: `[${SchemaNames.ReviewedWorksJsonIncludedWork}!]!`,
+    review: {
+      type: `${SchemaNames.MarkdownRemark}!`,
+      resolve: async (
+        source: ReviewedWorkNode,
+        _args: unknown,
+        context: GatsbyNodeContext,
+      ) => {
+        return await context.nodeModel.findOne({
+          type: SchemaNames.MarkdownRemark,
+          query: {
+            filter: {
+              frontmatter: {
+                work_slug: {
+                  eq: source.slug,
+                },
+              },
+            },
+          },
+        });
+      },
+    },
   },
   extensions: {
     infer: false,
   },
 };
-
-async function excerptResolver(
-  source: ReviewedWorkNode,
-  args: GatsbyResolveArgs,
-  context: GatsbyNodeContext,
-  info: GatsbyResolveInfo,
-) {
-  const reviewFileNode = await context.nodeModel.findOne<GatsbyNode>({
-    type: "File",
-    query: {
-      filter: {
-        sourceInstanceName: {
-          eq: "reviews",
-        },
-        childMarkdownRemark: {
-          frontmatter: {
-            work_slug: {
-              eq: source.slug,
-            },
-          },
-        },
-      },
-    },
-  });
-
-  if (!reviewFileNode) {
-    return null;
-  }
-
-  const reviewMarkdownNode = await resolveFieldForNode<MarkdownRemarkNode>({
-    fieldName: "childMarkdownRemark",
-    source: reviewFileNode,
-    context,
-    info,
-  });
-
-  return await resolveFieldForNode<string>({
-    fieldName: "excerptHtml",
-    source: reviewMarkdownNode,
-    context,
-    info,
-    args,
-  });
-}

@@ -11,10 +11,10 @@
   "date": "2022-05-21",
   "authors": [
     {
-      "name": "Arnold Schwarzenegger",
-      "sortName": "Schwarzenegger, Arnold",
       "slug": "arnold-schwarzenegger",
-      "notes": null
+      "notes": null,
+      "name": "Arnold Schwarzenegger",
+      "sortName": "Schwarzenegger, Arnold"
     }
   ],
   "readings": [
@@ -47,5 +47,56 @@
     }
   ],
   "includedInSlugs": [],
-  "yearReviewed": 2022
+  "yearReviewed": 2022,
+  "moreByAuthors": [],
+  "moreReviews": [
+    {
+      "title": "Surfer Girl",
+      "kind": "Short Story",
+      "yearPublished": "2017",
+      "slug": "surfer-girl-by-philip-fracassi",
+      "grade": "C+",
+      "authors": [
+        {
+          "name": "Philip Fracassi"
+        }
+      ]
+    },
+    {
+      "title": "The M.A.X. Muscle Plan",
+      "kind": "Nonfiction",
+      "yearPublished": "2012",
+      "slug": "the-max-muscle-plan-by-brad-schoenfeld",
+      "grade": "C-",
+      "authors": [
+        {
+          "name": "Brad Schoenfeld"
+        }
+      ]
+    },
+    {
+      "title": "What Doesn't Kill Us",
+      "kind": "Nonfiction",
+      "yearPublished": "2017",
+      "slug": "what-doesnt-kill-us-by-scott-carney",
+      "grade": "C+",
+      "authors": [
+        {
+          "name": "Scott Carney"
+        }
+      ]
+    },
+    {
+      "title": "The Woods Are Dark",
+      "kind": "Novel",
+      "yearPublished": "1981",
+      "slug": "the-woods-are-dark-by-richard-laymon",
+      "grade": "C+",
+      "authors": [
+        {
+          "name": "Richard Laymon"
+        }
+      ]
+    }
+  ]
 }

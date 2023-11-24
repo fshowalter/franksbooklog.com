@@ -68,7 +68,6 @@ export function IncludedWorks({ reviewData, ...rest }: IIncludedWorksProps) {
 export const query = graphql`
   fragment ReviewIncludedWorks on ReviewedWorksJson {
     includedWorks {
-      id
       title
       authors {
         name

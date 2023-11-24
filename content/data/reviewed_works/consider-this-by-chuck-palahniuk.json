@@ -11,10 +11,10 @@
   "date": "2022-09-22",
   "authors": [
     {
-      "name": "Chuck Palahniuk",
-      "sortName": "Palahniuk, Chuck",
       "slug": "chuck-palahniuk",
-      "notes": null
+      "notes": null,
+      "name": "Chuck Palahniuk",
+      "sortName": "Palahniuk, Chuck"
     }
   ],
   "readings": [
@@ -39,5 +39,56 @@
     }
   ],
   "includedInSlugs": [],
-  "yearReviewed": 2022
+  "yearReviewed": 2022,
+  "moreByAuthors": [],
+  "moreReviews": [
+    {
+      "title": "The Cipher",
+      "kind": "Novel",
+      "yearPublished": "1991",
+      "slug": "the-cipher-by-kathe-koja",
+      "grade": "B",
+      "authors": [
+        {
+          "name": "Kathe Koja"
+        }
+      ]
+    },
+    {
+      "title": "Coffin",
+      "kind": "Short Story",
+      "yearPublished": "2017",
+      "slug": "coffin-by-philip-fracassi",
+      "grade": "C+",
+      "authors": [
+        {
+          "name": "Philip Fracassi"
+        }
+      ]
+    },
+    {
+      "title": "The Creative Act",
+      "kind": "Nonfiction",
+      "yearPublished": "2023",
+      "slug": "the-creative-act-by-rick-rubin",
+      "grade": "C+",
+      "authors": [
+        {
+          "name": "Rick Rubin"
+        }
+      ]
+    },
+    {
+      "title": "Cured",
+      "kind": "Nonfiction",
+      "yearPublished": "2016",
+      "slug": "cured-by-lol-tolhurst",
+      "grade": "A-",
+      "authors": [
+        {
+          "name": "Lol Tolhurst"
+        }
+      ]
+    }
+  ]
 }

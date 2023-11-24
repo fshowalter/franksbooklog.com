@@ -11,10 +11,10 @@
   "date": "2022-05-07",
   "authors": [
     {
-      "name": "Edmund Morris",
-      "sortName": "Morris, Edmund",
       "slug": "edmund-morris",
-      "notes": null
+      "notes": null,
+      "name": "Edmund Morris",
+      "sortName": "Morris, Edmund"
     }
   ],
   "readings": [
@@ -63,5 +63,56 @@
     }
   ],
   "includedInSlugs": [],
-  "yearReviewed": 2022
+  "yearReviewed": 2022,
+  "moreByAuthors": [],
+  "moreReviews": [
+    {
+      "title": "The Postman Always Rings Twice",
+      "kind": "Novel",
+      "yearPublished": "1934",
+      "slug": "the-postman-always-rings-twice-by-james-m-cain",
+      "grade": "B+",
+      "authors": [
+        {
+          "name": "James M. Cain"
+        }
+      ]
+    },
+    {
+      "title": "Record Play Pause",
+      "kind": "Nonfiction",
+      "yearPublished": "2019",
+      "slug": "record-play-pause-by-stephen-morris",
+      "grade": "A",
+      "authors": [
+        {
+          "name": "Stephen Morris"
+        }
+      ]
+    },
+    {
+      "title": "Roadside Pickup",
+      "kind": "Short Story",
+      "yearPublished": "1974",
+      "slug": "roadside-pickup-by-richard-laymon",
+      "grade": "C-",
+      "authors": [
+        {
+          "name": "Richard Laymon"
+        }
+      ]
+    },
+    {
+      "title": "The Rules of Attraction",
+      "kind": "Novel",
+      "yearPublished": "1987",
+      "slug": "the-rules-of-attraction-by-bret-easton-ellis",
+      "grade": "C+",
+      "authors": [
+        {
+          "name": "Bret Easton Ellis"
+        }
+      ]
+    }
+  ]
 }

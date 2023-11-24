@@ -7,10 +7,10 @@
   "kind": "Novel",
   "authors": [
     {
-      "name": "Ian Fleming",
-      "sortName": "Fleming, Ian",
       "slug": "ian-fleming",
-      "notes": null
+      "notes": null,
+      "name": "Ian Fleming",
+      "sortName": "Fleming, Ian"
     }
   ],
   "includedInSlugs": []

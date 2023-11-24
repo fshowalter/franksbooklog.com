@@ -249,7 +249,7 @@ export const pageQuery = graphql`
       slug
     }
     ...ReviewIncludedWorks
-    browseMore {
+    moreWorks {
       ...MoreReviews
     }
     review {

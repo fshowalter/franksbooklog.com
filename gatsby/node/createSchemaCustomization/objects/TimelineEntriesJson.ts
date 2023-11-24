@@ -1,8 +1,15 @@
 import { SchemaNames } from "../schemaNames";
-import { coverResolver } from "./fieldResolvers/coverResolver";
+import { coverResolver } from "./utils/coverResolver";
 
-export const ReadingProgressJson = {
-  name: SchemaNames.ReadingProgressJson,
+export const TimelineEntriesJsonAuthor = {
+  name: SchemaNames.TimelineEntriesJsonAuthor,
+  fields: {
+    name: "String!",
+  },
+};
+
+export const TimelineEntriesJson = {
+  name: SchemaNames.TimelineEntriesJson,
   interfaces: ["Node"],
   fields: {
     slug: "String!",
@@ -19,7 +26,7 @@ export const ReadingProgressJson = {
     reviewed: "Boolean!",
     title: `String!`,
     kind: `String!`,
-    authors: `[${SchemaNames.ReadingProgressAuthor}!]!`,
+    authors: `[${SchemaNames.TimelineEntriesJsonAuthor}!]!`,
     yearPublished: `Int!`,
     cover: {
       type: `File!`,

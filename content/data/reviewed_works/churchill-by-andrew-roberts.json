@@ -11,10 +11,10 @@
   "date": "2022-06-14",
   "authors": [
     {
-      "name": "Andrew Roberts",
-      "sortName": "Roberts, Andrew",
       "slug": "andrew-roberts",
-      "notes": null
+      "notes": null,
+      "name": "Andrew Roberts",
+      "sortName": "Roberts, Andrew"
     }
   ],
   "readings": [
@@ -59,5 +59,56 @@
     }
   ],
   "includedInSlugs": [],
-  "yearReviewed": 2022
+  "yearReviewed": 2022,
+  "moreByAuthors": [],
+  "moreReviews": [
+    {
+      "title": "Casino Royale",
+      "kind": "Novel",
+      "yearPublished": "1953",
+      "slug": "casino-royale-by-ian-fleming",
+      "grade": "B-",
+      "authors": [
+        {
+          "name": "Ian Fleming"
+        }
+      ]
+    },
+    {
+      "title": "The Cellar",
+      "kind": "Novel",
+      "yearPublished": "1980",
+      "slug": "the-cellar-by-richard-laymon",
+      "grade": "C+",
+      "authors": [
+        {
+          "name": "Richard Laymon"
+        }
+      ]
+    },
+    {
+      "title": "The Cipher",
+      "kind": "Novel",
+      "yearPublished": "1991",
+      "slug": "the-cipher-by-kathe-koja",
+      "grade": "B",
+      "authors": [
+        {
+          "name": "Kathe Koja"
+        }
+      ]
+    },
+    {
+      "title": "Coffin",
+      "kind": "Short Story",
+      "yearPublished": "2017",
+      "slug": "coffin-by-philip-fracassi",
+      "grade": "C+",
+      "authors": [
+        {
+          "name": "Philip Fracassi"
+        }
+      ]
+    }
+  ]
 }

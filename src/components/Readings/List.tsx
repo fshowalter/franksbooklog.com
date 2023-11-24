@@ -207,11 +207,11 @@ function Edition({ edition }: { edition: string }): JSX.Element {
 }
 
 export const query = graphql`
-  fragment ReadingListItemAuthor on ReadingProgressAuthor {
+  fragment ReadingListItemAuthor on TimelineEntriesJsonAuthor {
     name
   }
 
-  fragment ReadingsListItem on ReadingProgressJson {
+  fragment ReadingsListItem on TimelineEntriesJson {
     slug
     reviewed
     sequence

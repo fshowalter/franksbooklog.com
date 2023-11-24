@@ -11,10 +11,10 @@
   "date": "2022-04-03",
   "authors": [
     {
-      "name": "Richard Laymon",
-      "sortName": "Laymon, Richard",
       "slug": "richard-laymon",
-      "notes": null
+      "notes": null,
+      "name": "Richard Laymon",
+      "sortName": "Laymon, Richard"
     }
   ],
   "readings": [
@@ -37,5 +37,111 @@
   "includedInSlugs": [
     "short-stories-volume-one-by-richard-laymon"
   ],
-  "yearReviewed": 2022
+  "yearReviewed": 2022,
+  "moreByAuthors": [
+    {
+      "name": "Richard Laymon",
+      "slug": "richard-laymon",
+      "works": [
+        {
+          "title": "Roadside Pickup",
+          "kind": "Short Story",
+          "yearPublished": "1974",
+          "slug": "roadside-pickup-by-richard-laymon",
+          "grade": "C-",
+          "authors": [
+            {
+              "name": "Richard Laymon"
+            }
+          ]
+        },
+        {
+          "title": "The Cellar",
+          "kind": "Novel",
+          "yearPublished": "1980",
+          "slug": "the-cellar-by-richard-laymon",
+          "grade": "C+",
+          "authors": [
+            {
+              "name": "Richard Laymon"
+            }
+          ]
+        },
+        {
+          "title": "The Woods Are Dark",
+          "kind": "Novel",
+          "yearPublished": "1981",
+          "slug": "the-woods-are-dark-by-richard-laymon",
+          "grade": "C+",
+          "authors": [
+            {
+              "name": "Richard Laymon"
+            }
+          ]
+        },
+        {
+          "title": "Out Are the Lights",
+          "kind": "Novel",
+          "yearPublished": "1982",
+          "slug": "out-are-the-lights-by-richard-laymon",
+          "grade": "C-",
+          "authors": [
+            {
+              "name": "Richard Laymon"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "moreReviews": [
+    {
+      "title": "Cured",
+      "kind": "Nonfiction",
+      "yearPublished": "2016",
+      "slug": "cured-by-lol-tolhurst",
+      "grade": "A-",
+      "authors": [
+        {
+          "name": "Lol Tolhurst"
+        }
+      ]
+    },
+    {
+      "title": "The Dark Tunnel",
+      "kind": "Novel",
+      "yearPublished": "1944",
+      "slug": "the-dark-tunnel-by-ross-macdonald",
+      "grade": "D+",
+      "authors": [
+        {
+          "name": "Ross Macdonald"
+        }
+      ]
+    },
+    {
+      "title": "Doctor Sleep",
+      "kind": "Novel",
+      "yearPublished": "2013",
+      "slug": "doctor-sleep-by-stephen-king",
+      "grade": "C+",
+      "authors": [
+        {
+          "name": "Stephen King"
+        }
+      ]
+    },
+    {
+      "title": "Don't Let Them Get You Down",
+      "kind": "Novel",
+      "yearPublished": "2022",
+      "slug": "dont-let-them-get-you-down-by-philip-fracassi",
+      "grade": "C-",
+      "authors": [
+        {
+          "name": "Philip Fracassi"
+        }
+      ]
+    }
+  ]
 }

@@ -11,16 +11,16 @@
   "date": "2022-06-26",
   "authors": [
     {
-      "name": "Jocko Willink",
-      "sortName": "Willink, Jocko",
       "slug": "jocko-willink",
-      "notes": null
+      "notes": null,
+      "name": "Jocko Willink",
+      "sortName": "Willink, Jocko"
     },
     {
-      "name": "Leif Babin",
-      "sortName": "Babin, Leif",
       "slug": "leif-babin",
-      "notes": null
+      "notes": null,
+      "name": "Leif Babin",
+      "sortName": "Babin, Leif"
     }
   ],
   "readings": [
@@ -41,5 +41,56 @@
     }
   ],
   "includedInSlugs": [],
-  "yearReviewed": 2022
+  "yearReviewed": 2022,
+  "moreByAuthors": [],
+  "moreReviews": [
+    {
+      "title": "Dracula",
+      "kind": "Novel",
+      "yearPublished": "1897",
+      "slug": "dracula-by-bram-stoker",
+      "grade": "C+",
+      "authors": [
+        {
+          "name": "Bram Stoker"
+        }
+      ]
+    },
+    {
+      "title": "Draft No. 4",
+      "kind": "Nonfiction",
+      "yearPublished": "2013",
+      "slug": "draft-no-4-by-john-mcphee",
+      "grade": "C",
+      "authors": [
+        {
+          "name": "John McPhee"
+        }
+      ]
+    },
+    {
+      "title": "Fail-Safe",
+      "kind": "Short Story",
+      "yearPublished": "2017",
+      "slug": "fail-safe-by-philip-fracassi",
+      "grade": "C",
+      "authors": [
+        {
+          "name": "Philip Fracassi"
+        }
+      ]
+    },
+    {
+      "title": "Fight Club",
+      "kind": "Novel",
+      "yearPublished": "1996",
+      "slug": "fight-club-by-chuck-palahniuk",
+      "grade": "A-",
+      "authors": [
+        {
+          "name": "Chuck Palahniuk"
+        }
+      ]
+    }
+  ]
 }

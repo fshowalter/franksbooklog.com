@@ -11,10 +11,10 @@
   "date": "2023-10-09",
   "authors": [
     {
-      "name": "Philip Fracassi",
-      "sortName": "Fracassi, Philip",
       "slug": "philip-fracassi",
-      "notes": null
+      "notes": null,
+      "name": "Philip Fracassi",
+      "sortName": "Fracassi, Philip"
     }
   ],
   "readings": [
@@ -39,5 +39,111 @@
     }
   ],
   "includedInSlugs": [],
-  "yearReviewed": 2023
+  "yearReviewed": 2023,
+  "moreByAuthors": [
+    {
+      "name": "Philip Fracassi",
+      "slug": "philip-fracassi",
+      "works": [
+        {
+          "title": "Surfer Girl",
+          "kind": "Short Story",
+          "yearPublished": "2017",
+          "slug": "surfer-girl-by-philip-fracassi",
+          "grade": "C+",
+          "authors": [
+            {
+              "name": "Philip Fracassi"
+            }
+          ]
+        },
+        {
+          "title": "Soft Construction of a Sunset",
+          "kind": "Short Story",
+          "yearPublished": "2017",
+          "slug": "soft-construction-of-a-sunset-by-philip-fracassi",
+          "grade": "B-",
+          "authors": [
+            {
+              "name": "Philip Fracassi"
+            }
+          ]
+        },
+        {
+          "title": "Mandala",
+          "kind": "Novella",
+          "yearPublished": "2017",
+          "slug": "mandala-by-philip-fracassi",
+          "grade": "B+",
+          "authors": [
+            {
+              "name": "Philip Fracassi"
+            }
+          ]
+        },
+        {
+          "title": "The Horse Thief",
+          "kind": "Short Story",
+          "yearPublished": "2017",
+          "slug": "the-horse-thief-by-philip-fracassi",
+          "grade": "B",
+          "authors": [
+            {
+              "name": "Philip Fracassi"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "moreReviews": [
+    {
+      "title": "Roadside Pickup",
+      "kind": "Short Story",
+      "yearPublished": "1974",
+      "slug": "roadside-pickup-by-richard-laymon",
+      "grade": "C-",
+      "authors": [
+        {
+          "name": "Richard Laymon"
+        }
+      ]
+    },
+    {
+      "title": "The Rules of Attraction",
+      "kind": "Novel",
+      "yearPublished": "1987",
+      "slug": "the-rules-of-attraction-by-bret-easton-ellis",
+      "grade": "C+",
+      "authors": [
+        {
+          "name": "Bret Easton Ellis"
+        }
+      ]
+    },
+    {
+      "title": "The Secret History",
+      "kind": "Novel",
+      "yearPublished": "1992",
+      "slug": "the-secret-history-by-donna-tartt",
+      "grade": "A",
+      "authors": [
+        {
+          "name": "Donna Tartt"
+        }
+      ]
+    },
+    {
+      "title": "Set the Boy Free",
+      "kind": "Nonfiction",
+      "yearPublished": "2016",
+      "slug": "set-the-boy-free-by-johnny-marr",
+      "grade": "B+",
+      "authors": [
+        {
+          "name": "Johnny Marr"
+        }
+      ]
+    }
+  ]
 }

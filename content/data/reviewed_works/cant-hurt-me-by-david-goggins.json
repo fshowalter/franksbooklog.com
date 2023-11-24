@@ -11,10 +11,10 @@
   "date": "2022-10-13",
   "authors": [
     {
-      "name": "David Goggins",
-      "sortName": "Goggins, David",
       "slug": "david-goggins",
-      "notes": null
+      "notes": null,
+      "name": "David Goggins",
+      "sortName": "Goggins, David"
     }
   ],
   "readings": [
@@ -51,5 +51,56 @@
     }
   ],
   "includedInSlugs": [],
-  "yearReviewed": 2022
+  "yearReviewed": 2022,
+  "moreByAuthors": [],
+  "moreReviews": [
+    {
+      "title": "The Big Sleep",
+      "kind": "Novel",
+      "yearPublished": "1939",
+      "slug": "the-big-sleep-by-raymond-chandler",
+      "grade": "C+",
+      "authors": [
+        {
+          "name": "Raymond Chandler"
+        }
+      ]
+    },
+    {
+      "title": "Brother Iron, Sister Steel",
+      "kind": "Nonfiction",
+      "yearPublished": "2001",
+      "slug": "brother-iron-sister-steel-by-dave-draper",
+      "grade": "C",
+      "authors": [
+        {
+          "name": "Dave Draper"
+        }
+      ]
+    },
+    {
+      "title": "Carrie",
+      "kind": "Novel",
+      "yearPublished": "1974",
+      "slug": "carrie-by-stephen-king",
+      "grade": "B-",
+      "authors": [
+        {
+          "name": "Stephen King"
+        }
+      ]
+    },
+    {
+      "title": "Casino Royale",
+      "kind": "Novel",
+      "yearPublished": "1953",
+      "slug": "casino-royale-by-ian-fleming",
+      "grade": "B-",
+      "authors": [
+        {
+          "name": "Ian Fleming"
+        }
+      ]
+    }
+  ]
 }

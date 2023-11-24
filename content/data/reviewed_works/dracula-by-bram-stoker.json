@@ -11,10 +11,10 @@
   "date": "2022-07-09",
   "authors": [
     {
-      "name": "Bram Stoker",
-      "sortName": "Stoker, Bram",
       "slug": "bram-stoker",
-      "notes": null
+      "notes": null,
+      "name": "Bram Stoker",
+      "sortName": "Stoker, Bram"
     }
   ],
   "readings": [
@@ -51,5 +51,59 @@
     }
   ],
   "includedInSlugs": [],
-  "yearReviewed": 2022
+  "yearReviewed": 2022,
+  "moreByAuthors": [],
+  "moreReviews": [
+    {
+      "title": "Doctor Sleep",
+      "kind": "Novel",
+      "yearPublished": "2013",
+      "slug": "doctor-sleep-by-stephen-king",
+      "grade": "C+",
+      "authors": [
+        {
+          "name": "Stephen King"
+        }
+      ]
+    },
+    {
+      "title": "Don't Let Them Get You Down",
+      "kind": "Novel",
+      "yearPublished": "2022",
+      "slug": "dont-let-them-get-you-down-by-philip-fracassi",
+      "grade": "C-",
+      "authors": [
+        {
+          "name": "Philip Fracassi"
+        }
+      ]
+    },
+    {
+      "title": "Draft No. 4",
+      "kind": "Nonfiction",
+      "yearPublished": "2013",
+      "slug": "draft-no-4-by-john-mcphee",
+      "grade": "C",
+      "authors": [
+        {
+          "name": "John McPhee"
+        }
+      ]
+    },
+    {
+      "title": "Extreme Ownership",
+      "kind": "Nonfiction",
+      "yearPublished": "2015",
+      "slug": "extreme-ownership-by-jocko-willink-leif-babin",
+      "grade": "A",
+      "authors": [
+        {
+          "name": "Jocko Willink"
+        },
+        {
+          "name": "Leif Babin"
+        }
+      ]
+    }
+  ]
 }

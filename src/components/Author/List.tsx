@@ -122,13 +122,12 @@ export const pageQuery = graphql`
     }
   }
 
-  fragment AuthorListItemAuthors on WorkAuthor {
+  fragment AuthorListItemAuthors on AuthorsJsonWorkAuthor {
     slug
     name
   }
 
-  fragment AuthorListItem on AuthorWork {
-    id
+  fragment AuthorListItem on AuthorsJsonWork {
     title
     yearPublished
     kind

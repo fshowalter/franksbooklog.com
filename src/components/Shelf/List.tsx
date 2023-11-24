@@ -91,7 +91,7 @@ function YearAndKind({
 }
 
 export const query = graphql`
-  fragment ShelfListItemAuthor on WorkAuthor {
+  fragment ShelfListItemAuthor on UnreviewedWorksJsonWorkAuthor {
     name
     notes
     sortName

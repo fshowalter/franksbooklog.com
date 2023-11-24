@@ -11,10 +11,10 @@
   "date": "2022-03-18",
   "authors": [
     {
-      "name": "Brad Schoenfeld",
-      "sortName": "Schoenfeld, Brad",
       "slug": "brad-schoenfeld",
-      "notes": null
+      "notes": null,
+      "name": "Brad Schoenfeld",
+      "sortName": "Schoenfeld, Brad"
     }
   ],
   "readings": [
@@ -39,5 +39,56 @@
     }
   ],
   "includedInSlugs": [],
-  "yearReviewed": 2022
+  "yearReviewed": 2022,
+  "moreByAuthors": [],
+  "moreReviews": [
+    {
+      "title": "Soft Construction of a Sunset",
+      "kind": "Short Story",
+      "yearPublished": "2017",
+      "slug": "soft-construction-of-a-sunset-by-philip-fracassi",
+      "grade": "B-",
+      "authors": [
+        {
+          "name": "Philip Fracassi"
+        }
+      ]
+    },
+    {
+      "title": "Surfer Girl",
+      "kind": "Short Story",
+      "yearPublished": "2017",
+      "slug": "surfer-girl-by-philip-fracassi",
+      "grade": "C+",
+      "authors": [
+        {
+          "name": "Philip Fracassi"
+        }
+      ]
+    },
+    {
+      "title": "Total Recall",
+      "kind": "Nonfiction",
+      "yearPublished": "2012",
+      "slug": "total-recall-by-arnold-schwarzenegger",
+      "grade": "C+",
+      "authors": [
+        {
+          "name": "Arnold Schwarzenegger"
+        }
+      ]
+    },
+    {
+      "title": "What Doesn't Kill Us",
+      "kind": "Nonfiction",
+      "yearPublished": "2017",
+      "slug": "what-doesnt-kill-us-by-scott-carney",
+      "grade": "C+",
+      "authors": [
+        {
+          "name": "Scott Carney"
+        }
+      ]
+    }
+  ]
 }

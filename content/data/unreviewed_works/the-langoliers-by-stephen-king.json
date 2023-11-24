@@ -7,10 +7,10 @@
   "kind": "Novella",
   "authors": [
     {
-      "name": "Stephen King",
-      "sortName": "King, Stephen",
       "slug": "stephen-king",
-      "notes": null
+      "notes": null,
+      "name": "Stephen King",
+      "sortName": "King, Stephen"
     }
   ],
   "includedInSlugs": []

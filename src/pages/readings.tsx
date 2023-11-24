@@ -32,7 +32,7 @@ export default function ReadingsPage({
 
 export const pageQuery = graphql`
   query ReadingsPage {
-    progress: allReadingProgressJson(sort: { sequence: DESC }) {
+    progress: allTimelineEntriesJson(sort: { sequence: DESC }) {
       nodes {
         ...ReadingsData
       }

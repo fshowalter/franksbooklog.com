@@ -1,14 +1,17 @@
+import { graphql } from "gatsby";
 import { sortString } from "../../utils";
 import { Box } from "../Box";
 import { Layout } from "../Layout";
 import { PageTitle } from "../PageTitle";
 import { Spacer } from "../Spacer";
 import { Callouts } from "./Callouts";
-import { DistributionTable, IDistribution } from "./DistributionTable";
+import { DistributionTable } from "./DistributionTable";
 import { MostReadAuthors } from "./MostReadAuthors";
 import { Nav } from "./Nav";
 
-function sortGradeDistributions(gradeDistributions: readonly IDistribution[]) {
+function sortGradeDistributions(
+  gradeDistributions: readonly Queries.ReadingStatsJsonDistribution[],
+) {
   return [...gradeDistributions].sort((a, b) => {
     if (!a.name && !b.name) {
       return 0;
@@ -56,31 +59,19 @@ function sortGradeDistributions(gradeDistributions: readonly IDistribution[]) {
 }
 
 export function Stats({
+  data,
   title,
   tagline,
-  readingCount,
-  reviewCount,
-  bookCount,
-  mostReadAuthors,
-  gradeDistributions,
-  kindDistributions,
-  editionDistributions,
-  decadeDistributions,
   allYears,
 }: {
-  readingCount: number;
-  reviewCount: number;
-  bookCount: number;
-  mostReadAuthors: readonly Queries.MostReadAuthorFragment[];
-  gradeDistributions: readonly IDistribution[];
-  kindDistributions: readonly IDistribution[];
-  editionDistributions: readonly IDistribution[];
-  decadeDistributions: readonly IDistribution[];
+  data: Queries.StatsDataFragment;
   allYears: readonly string[];
   title: string;
   tagline: string;
 }): JSX.Element {
-  const sortedGradeDistributions = sortGradeDistributions(gradeDistributions);
+  const sortedGradeDistributions = sortGradeDistributions(
+    data.gradeDistribution,
+  );
 
   return (
     <Layout>
@@ -106,9 +97,9 @@ export function Stats({
           <Box>
             <Spacer axis="vertical" size={32} />
             <Callouts
-              readingCount={readingCount}
-              reviewCount={reviewCount}
-              bookCount={bookCount}
+              readingCount={data.readWorks}
+              reviewCount={data.reviews}
+              bookCount={data.books}
             />
           </Box>
         </Box>
@@ -123,7 +114,7 @@ export function Stats({
           maxWidth={960}
           width="full"
         >
-          <MostReadAuthors authors={mostReadAuthors} />
+          <MostReadAuthors authors={data.mostReadAuthors} />
           <DistributionTable
             distributions={sortedGradeDistributions}
             title="Grade Distribution"
@@ -131,19 +122,19 @@ export function Stats({
             countColumnLabel="Reviews"
           />
           <DistributionTable
-            distributions={decadeDistributions}
+            distributions={data.decadeDistribution}
             title="By Year Published"
             nameColumnLabel="Decade"
             countColumnLabel="Titles"
           />
           <DistributionTable
-            distributions={kindDistributions}
+            distributions={data.kindDistribution}
             title="By Kind"
             nameColumnLabel="Kind"
             countColumnLabel="Titles"
           />
           <DistributionTable
-            distributions={editionDistributions}
+            distributions={data.editionDistribution}
             title="By Edition"
             nameColumnLabel="Edition"
             countColumnLabel="Titles"
@@ -154,3 +145,31 @@ export function Stats({
     </Layout>
   );
 }
+
+export const pageQuery = graphql`
+  fragment StatsData on ReadingStatsJson {
+    decadeDistribution {
+      count
+      name
+    }
+    editionDistribution {
+      count
+      name
+    }
+    gradeDistribution {
+      count
+      name
+    }
+    kindDistribution {
+      count
+      name
+    }
+    mostReadAuthors {
+      ...MostReadAuthor
+    }
+    readWorks
+    reviews
+    span
+    books
+  }
+`;

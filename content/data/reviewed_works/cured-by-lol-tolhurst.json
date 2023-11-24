@@ -11,10 +11,10 @@
   "date": "2022-07-18",
   "authors": [
     {
-      "name": "Lol Tolhurst",
-      "sortName": "Tolhurst, Lol",
       "slug": "lol-tolhurst",
-      "notes": null
+      "notes": null,
+      "name": "Lol Tolhurst",
+      "sortName": "Tolhurst, Lol"
     }
   ],
   "readings": [
@@ -43,5 +43,56 @@
     }
   ],
   "includedInSlugs": [],
-  "yearReviewed": 2022
+  "yearReviewed": 2022,
+  "moreByAuthors": [],
+  "moreReviews": [
+    {
+      "title": "Consider This",
+      "kind": "Nonfiction",
+      "yearPublished": "2020",
+      "slug": "consider-this-by-chuck-palahniuk",
+      "grade": "B",
+      "authors": [
+        {
+          "name": "Chuck Palahniuk"
+        }
+      ]
+    },
+    {
+      "title": "The Creative Act",
+      "kind": "Nonfiction",
+      "yearPublished": "2023",
+      "slug": "the-creative-act-by-rick-rubin",
+      "grade": "C+",
+      "authors": [
+        {
+          "name": "Rick Rubin"
+        }
+      ]
+    },
+    {
+      "title": "The Dark Tunnel",
+      "kind": "Novel",
+      "yearPublished": "1944",
+      "slug": "the-dark-tunnel-by-ross-macdonald",
+      "grade": "D+",
+      "authors": [
+        {
+          "name": "Ross Macdonald"
+        }
+      ]
+    },
+    {
+      "title": "Desert Pickup",
+      "kind": "Short Story",
+      "yearPublished": "1970",
+      "slug": "desert-pickup-by-richard-laymon",
+      "grade": "C-",
+      "authors": [
+        {
+          "name": "Richard Laymon"
+        }
+      ]
+    }
+  ]
 }

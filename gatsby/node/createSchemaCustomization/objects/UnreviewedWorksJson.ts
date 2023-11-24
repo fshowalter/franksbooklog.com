@@ -1,5 +1,15 @@
 import { SchemaNames } from "../schemaNames";
-import { coverResolver } from "./fieldResolvers/coverResolver";
+import { coverResolver } from "./utils/coverResolver";
+
+export const UnreviewedWorksJsonWorkAuthor = {
+  name: SchemaNames.UnreviewedWorksJsonWorkAuthor,
+  fields: {
+    slug: "String!",
+    notes: "String",
+    name: "String!",
+    sortName: "String!",
+  },
+};
 
 export const UnreviewedWorksJson = {
   name: SchemaNames.UnreviewedWorksJson,
@@ -13,7 +23,7 @@ export const UnreviewedWorksJson = {
     yearPublished: "Int!",
     kind: "String!",
     authors: {
-      type: `[${SchemaNames.WorkAuthor}!]!`,
+      type: `[${SchemaNames.UnreviewedWorksJsonWorkAuthor}!]!`,
     },
     cover: {
       type: "File!",

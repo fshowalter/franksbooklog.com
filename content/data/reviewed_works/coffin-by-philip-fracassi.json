@@ -11,10 +11,10 @@
   "date": "2022-04-20",
   "authors": [
     {
-      "name": "Philip Fracassi",
-      "sortName": "Fracassi, Philip",
       "slug": "philip-fracassi",
-      "notes": null
+      "notes": null,
+      "name": "Philip Fracassi",
+      "sortName": "Fracassi, Philip"
     }
   ],
   "readings": [
@@ -37,5 +37,111 @@
   "includedInSlugs": [
     "behold-the-void-by-philip-fracassi"
   ],
-  "yearReviewed": 2022
+  "yearReviewed": 2022,
+  "moreByAuthors": [
+    {
+      "name": "Philip Fracassi",
+      "slug": "philip-fracassi",
+      "works": [
+        {
+          "title": "The Horse Thief",
+          "kind": "Short Story",
+          "yearPublished": "2017",
+          "slug": "the-horse-thief-by-philip-fracassi",
+          "grade": "B",
+          "authors": [
+            {
+              "name": "Philip Fracassi"
+            }
+          ]
+        },
+        {
+          "title": "The Baby Farmer",
+          "kind": "Short Story",
+          "yearPublished": "2017",
+          "slug": "the-baby-farmer-by-philip-fracassi",
+          "grade": "C+",
+          "authors": [
+            {
+              "name": "Philip Fracassi"
+            }
+          ]
+        },
+        {
+          "title": "Behold the Void",
+          "kind": "Collection",
+          "yearPublished": "2017",
+          "slug": "behold-the-void-by-philip-fracassi",
+          "grade": "B+",
+          "authors": [
+            {
+              "name": "Philip Fracassi"
+            }
+          ]
+        },
+        {
+          "title": "Fail-Safe",
+          "kind": "Short Story",
+          "yearPublished": "2017",
+          "slug": "fail-safe-by-philip-fracassi",
+          "grade": "C",
+          "authors": [
+            {
+              "name": "Philip Fracassi"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "moreReviews": [
+    {
+      "title": "Churchill",
+      "kind": "Nonfiction",
+      "yearPublished": "2018",
+      "slug": "churchill-by-andrew-roberts",
+      "grade": "A-",
+      "authors": [
+        {
+          "name": "Andrew Roberts"
+        }
+      ]
+    },
+    {
+      "title": "The Cipher",
+      "kind": "Novel",
+      "yearPublished": "1991",
+      "slug": "the-cipher-by-kathe-koja",
+      "grade": "B",
+      "authors": [
+        {
+          "name": "Kathe Koja"
+        }
+      ]
+    },
+    {
+      "title": "Consider This",
+      "kind": "Nonfiction",
+      "yearPublished": "2020",
+      "slug": "consider-this-by-chuck-palahniuk",
+      "grade": "B",
+      "authors": [
+        {
+          "name": "Chuck Palahniuk"
+        }
+      ]
+    },
+    {
+      "title": "The Creative Act",
+      "kind": "Nonfiction",
+      "yearPublished": "2023",
+      "slug": "the-creative-act-by-rick-rubin",
+      "grade": "C+",
+      "authors": [
+        {
+          "name": "Rick Rubin"
+        }
+      ]
+    }
+  ]
 }

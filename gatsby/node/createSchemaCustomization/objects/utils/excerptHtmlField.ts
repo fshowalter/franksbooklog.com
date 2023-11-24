@@ -1,14 +1,15 @@
 import { Element } from "hast";
 import toHtml from "hast-util-to-html";
+import { Parent } from "unist";
+import visit from "unist-util-visit";
 import type {
   GatsbyNodeContext,
   GatsbyResolveInfo,
 } from "../../type-definitions";
-import { removeFootnotes } from "../../utils/removeFootnotes";
-import { resolveFieldForNode } from "../../utils/resolveFieldForNode";
 import { MarkdownRemarkNode } from "../MarkdownRemark";
+import { resolveFieldForNode } from "./resolveFieldForNode";
 
-export const excerptHtmlFieldResolver = {
+export const excerptHtmlField = {
   type: "String",
   args: {
     includeCssClass: {
@@ -68,3 +69,43 @@ export const excerptHtmlFieldResolver = {
     linkReviewedWorks: {},
   },
 };
+
+function removeFootnotes(element: Element) {
+  visit(
+    element,
+    "element",
+    function (
+      element: Element,
+      index: number | null,
+      parent: Parent | undefined,
+    ) {
+      if (
+        parent &&
+        index &&
+        element.tagName === "div" &&
+        element.properties &&
+        element.properties.className &&
+        typeof element.properties.className === "string" &&
+        element.properties.className.includes("footnotes")
+      ) {
+        parent.children.splice(index, 1);
+        return [visit.SKIP, index];
+      }
+
+      if (
+        parent &&
+        index &&
+        element.tagName === "sup" &&
+        element.properties &&
+        element.properties.id &&
+        typeof element.properties.id === "string" &&
+        element.properties.id.startsWith("fnref-")
+      ) {
+        parent.children.splice(index, 1);
+        return [visit.SKIP, index];
+      }
+    },
+  );
+
+  return element;
+}

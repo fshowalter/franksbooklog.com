@@ -27,8 +27,8 @@ export function Cover({
   slug: string;
   image: IGraphqlImage;
   title: string;
-  year: number;
-  grade?: string;
+  year: string;
+  grade?: string | null;
   date?: string;
   edition?: string | null;
   kind?: string | null;

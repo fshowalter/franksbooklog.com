@@ -11,10 +11,10 @@
   "date": "2022-03-21",
   "authors": [
     {
-      "name": "Stephen King",
-      "sortName": "King, Stephen",
       "slug": "stephen-king",
-      "notes": null
+      "notes": null,
+      "name": "Stephen King",
+      "sortName": "King, Stephen"
     }
   ],
   "readings": [
@@ -43,5 +43,111 @@
     }
   ],
   "includedInSlugs": [],
-  "yearReviewed": 2022
+  "yearReviewed": 2022,
+  "moreByAuthors": [
+    {
+      "name": "Stephen King",
+      "slug": "stephen-king",
+      "works": [
+        {
+          "title": "Carrie",
+          "kind": "Novel",
+          "yearPublished": "1974",
+          "slug": "carrie-by-stephen-king",
+          "grade": "B-",
+          "authors": [
+            {
+              "name": "Stephen King"
+            }
+          ]
+        },
+        {
+          "title": "'Salem's Lot",
+          "kind": "Novel",
+          "yearPublished": "1975",
+          "slug": "salems-lot-by-stephen-king",
+          "grade": "B",
+          "authors": [
+            {
+              "name": "Stephen King"
+            }
+          ]
+        },
+        {
+          "title": "The Shining",
+          "kind": "Novel",
+          "yearPublished": "1977",
+          "slug": "the-shining-by-stephen-king",
+          "grade": "B",
+          "authors": [
+            {
+              "name": "Stephen King"
+            }
+          ]
+        },
+        {
+          "title": "Doctor Sleep",
+          "kind": "Novel",
+          "yearPublished": "2013",
+          "slug": "doctor-sleep-by-stephen-king",
+          "grade": "C+",
+          "authors": [
+            {
+              "name": "Stephen King"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "moreReviews": [
+    {
+      "title": "Moonraker",
+      "kind": "Novel",
+      "yearPublished": "1955",
+      "slug": "moonraker-by-ian-fleming",
+      "grade": "B",
+      "authors": [
+        {
+          "name": "Ian Fleming"
+        }
+      ]
+    },
+    {
+      "title": "Mother",
+      "kind": "Short Story",
+      "yearPublished": "2015",
+      "slug": "mother-by-philip-fracassi",
+      "grade": "B-",
+      "authors": [
+        {
+          "name": "Philip Fracassi"
+        }
+      ]
+    },
+    {
+      "title": "Out Are the Lights",
+      "kind": "Novel",
+      "yearPublished": "1982",
+      "slug": "out-are-the-lights-by-richard-laymon",
+      "grade": "C-",
+      "authors": [
+        {
+          "name": "Richard Laymon"
+        }
+      ]
+    },
+    {
+      "title": "The Postman Always Rings Twice",
+      "kind": "Novel",
+      "yearPublished": "1934",
+      "slug": "the-postman-always-rings-twice-by-james-m-cain",
+      "grade": "B+",
+      "authors": [
+        {
+          "name": "James M. Cain"
+        }
+      ]
+    }
+  ]
 }

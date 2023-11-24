@@ -11,10 +11,10 @@
   "date": "2022-05-07",
   "authors": [
     {
-      "name": "Philip Fracassi",
-      "sortName": "Fracassi, Philip",
       "slug": "philip-fracassi",
-      "notes": null
+      "notes": null,
+      "name": "Philip Fracassi",
+      "sortName": "Fracassi, Philip"
     }
   ],
   "readings": [
@@ -71,5 +71,114 @@
     }
   ],
   "includedInSlugs": [],
-  "yearReviewed": 2022
+  "yearReviewed": 2022,
+  "moreByAuthors": [
+    {
+      "name": "Philip Fracassi",
+      "slug": "philip-fracassi",
+      "works": [
+        {
+          "title": "The Baby Farmer",
+          "kind": "Short Story",
+          "yearPublished": "2017",
+          "slug": "the-baby-farmer-by-philip-fracassi",
+          "grade": "C+",
+          "authors": [
+            {
+              "name": "Philip Fracassi"
+            }
+          ]
+        },
+        {
+          "title": "Coffin",
+          "kind": "Short Story",
+          "yearPublished": "2017",
+          "slug": "coffin-by-philip-fracassi",
+          "grade": "C+",
+          "authors": [
+            {
+              "name": "Philip Fracassi"
+            }
+          ]
+        },
+        {
+          "title": "Fail-Safe",
+          "kind": "Short Story",
+          "yearPublished": "2017",
+          "slug": "fail-safe-by-philip-fracassi",
+          "grade": "C",
+          "authors": [
+            {
+              "name": "Philip Fracassi"
+            }
+          ]
+        },
+        {
+          "title": "Don't Let Them Get You Down",
+          "kind": "Novel",
+          "yearPublished": "2022",
+          "slug": "dont-let-them-get-you-down-by-philip-fracassi",
+          "grade": "C-",
+          "authors": [
+            {
+              "name": "Philip Fracassi"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "moreReviews": [
+    {
+      "title": "About Face",
+      "kind": "Nonfiction",
+      "yearPublished": "1989",
+      "slug": "about-face-by-david-h-hackworth-julie-sherman",
+      "grade": "A-",
+      "authors": [
+        {
+          "name": "David H. Hackworth"
+        },
+        {
+          "name": "Julie Sherman"
+        }
+      ]
+    },
+    {
+      "title": "Altar",
+      "kind": "Short Story",
+      "yearPublished": "2016",
+      "slug": "altar-by-philip-fracassi",
+      "grade": "A-",
+      "authors": [
+        {
+          "name": "Philip Fracassi"
+        }
+      ]
+    },
+    {
+      "title": "The Big Sleep",
+      "kind": "Novel",
+      "yearPublished": "1939",
+      "slug": "the-big-sleep-by-raymond-chandler",
+      "grade": "C+",
+      "authors": [
+        {
+          "name": "Raymond Chandler"
+        }
+      ]
+    },
+    {
+      "title": "Brother Iron, Sister Steel",
+      "kind": "Nonfiction",
+      "yearPublished": "2001",
+      "slug": "brother-iron-sister-steel-by-dave-draper",
+      "grade": "C",
+      "authors": [
+        {
+          "name": "Dave Draper"
+        }
+      ]
+    }
+  ]
 }

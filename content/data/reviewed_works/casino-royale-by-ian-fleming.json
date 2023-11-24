@@ -11,10 +11,10 @@
   "date": "2022-06-14",
   "authors": [
     {
-      "name": "Ian Fleming",
-      "sortName": "Fleming, Ian",
       "slug": "ian-fleming",
-      "notes": null
+      "notes": null,
+      "name": "Ian Fleming",
+      "sortName": "Fleming, Ian"
     }
   ],
   "readings": [
@@ -51,5 +51,56 @@
     }
   ],
   "includedInSlugs": [],
-  "yearReviewed": 2022
+  "yearReviewed": 2022,
+  "moreByAuthors": [],
+  "moreReviews": [
+    {
+      "title": "Can't Hurt Me",
+      "kind": "Nonfiction",
+      "yearPublished": "2018",
+      "slug": "cant-hurt-me-by-david-goggins",
+      "grade": "B",
+      "authors": [
+        {
+          "name": "David Goggins"
+        }
+      ]
+    },
+    {
+      "title": "Carrie",
+      "kind": "Novel",
+      "yearPublished": "1974",
+      "slug": "carrie-by-stephen-king",
+      "grade": "B-",
+      "authors": [
+        {
+          "name": "Stephen King"
+        }
+      ]
+    },
+    {
+      "title": "The Cellar",
+      "kind": "Novel",
+      "yearPublished": "1980",
+      "slug": "the-cellar-by-richard-laymon",
+      "grade": "C+",
+      "authors": [
+        {
+          "name": "Richard Laymon"
+        }
+      ]
+    },
+    {
+      "title": "Churchill",
+      "kind": "Nonfiction",
+      "yearPublished": "2018",
+      "slug": "churchill-by-andrew-roberts",
+      "grade": "A-",
+      "authors": [
+        {
+          "name": "Andrew Roberts"
+        }
+      ]
+    }
+  ]
 }

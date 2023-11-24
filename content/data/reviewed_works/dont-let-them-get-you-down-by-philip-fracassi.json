@@ -11,10 +11,10 @@
   "date": "2023-10-29",
   "authors": [
     {
-      "name": "Philip Fracassi",
-      "sortName": "Fracassi, Philip",
       "slug": "philip-fracassi",
-      "notes": null
+      "notes": null,
+      "name": "Philip Fracassi",
+      "sortName": "Fracassi, Philip"
     }
   ],
   "readings": [
@@ -59,5 +59,111 @@
     }
   ],
   "includedInSlugs": [],
-  "yearReviewed": 2023
+  "yearReviewed": 2023,
+  "moreByAuthors": [
+    {
+      "name": "Philip Fracassi",
+      "slug": "philip-fracassi",
+      "works": [
+        {
+          "title": "Behold the Void",
+          "kind": "Collection",
+          "yearPublished": "2017",
+          "slug": "behold-the-void-by-philip-fracassi",
+          "grade": "B+",
+          "authors": [
+            {
+              "name": "Philip Fracassi"
+            }
+          ]
+        },
+        {
+          "title": "Fail-Safe",
+          "kind": "Short Story",
+          "yearPublished": "2017",
+          "slug": "fail-safe-by-philip-fracassi",
+          "grade": "C",
+          "authors": [
+            {
+              "name": "Philip Fracassi"
+            }
+          ]
+        },
+        {
+          "title": "Mother",
+          "kind": "Short Story",
+          "yearPublished": "2015",
+          "slug": "mother-by-philip-fracassi",
+          "grade": "B-",
+          "authors": [
+            {
+              "name": "Philip Fracassi"
+            }
+          ]
+        },
+        {
+          "title": "Altar",
+          "kind": "Short Story",
+          "yearPublished": "2016",
+          "slug": "altar-by-philip-fracassi",
+          "grade": "A-",
+          "authors": [
+            {
+              "name": "Philip Fracassi"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "moreReviews": [
+    {
+      "title": "Desert Pickup",
+      "kind": "Short Story",
+      "yearPublished": "1970",
+      "slug": "desert-pickup-by-richard-laymon",
+      "grade": "C-",
+      "authors": [
+        {
+          "name": "Richard Laymon"
+        }
+      ]
+    },
+    {
+      "title": "Doctor Sleep",
+      "kind": "Novel",
+      "yearPublished": "2013",
+      "slug": "doctor-sleep-by-stephen-king",
+      "grade": "C+",
+      "authors": [
+        {
+          "name": "Stephen King"
+        }
+      ]
+    },
+    {
+      "title": "Dracula",
+      "kind": "Novel",
+      "yearPublished": "1897",
+      "slug": "dracula-by-bram-stoker",
+      "grade": "C+",
+      "authors": [
+        {
+          "name": "Bram Stoker"
+        }
+      ]
+    },
+    {
+      "title": "Draft No. 4",
+      "kind": "Nonfiction",
+      "yearPublished": "2013",
+      "slug": "draft-no-4-by-john-mcphee",
+      "grade": "C",
+      "authors": [
+        {
+          "name": "John McPhee"
+        }
+      ]
+    }
+  ]
 }

@@ -118,7 +118,7 @@ export function ListItem({
 }
 
 export const query = graphql`
-  fragment HomeListItemAuthor on WorkAuthor {
+  fragment HomeListItemAuthor on ReviewedWorksJsonWorkAuthor {
     name
     slug
     notes
@@ -129,7 +129,9 @@ export const query = graphql`
     sequence
     slug
     date(formatString: "DD MMM YYYY")
-    excerpt
+    review {
+      excerpt
+    }
     title
     kind
     yearPublished

@@ -11,10 +11,10 @@
   "date": "2022-04-17",
   "authors": [
     {
-      "name": "Ross Macdonald",
-      "sortName": "Macdonald, Ross",
       "slug": "ross-macdonald",
-      "notes": "as Kenneth Millar"
+      "notes": "as Kenneth Millar",
+      "name": "Ross Macdonald",
+      "sortName": "Macdonald, Ross"
     }
   ],
   "readings": [
@@ -71,5 +71,56 @@
     }
   ],
   "includedInSlugs": [],
-  "yearReviewed": 2022
+  "yearReviewed": 2022,
+  "moreByAuthors": [],
+  "moreReviews": [
+    {
+      "title": "The Creative Act",
+      "kind": "Nonfiction",
+      "yearPublished": "2023",
+      "slug": "the-creative-act-by-rick-rubin",
+      "grade": "C+",
+      "authors": [
+        {
+          "name": "Rick Rubin"
+        }
+      ]
+    },
+    {
+      "title": "Cured",
+      "kind": "Nonfiction",
+      "yearPublished": "2016",
+      "slug": "cured-by-lol-tolhurst",
+      "grade": "A-",
+      "authors": [
+        {
+          "name": "Lol Tolhurst"
+        }
+      ]
+    },
+    {
+      "title": "Desert Pickup",
+      "kind": "Short Story",
+      "yearPublished": "1970",
+      "slug": "desert-pickup-by-richard-laymon",
+      "grade": "C-",
+      "authors": [
+        {
+          "name": "Richard Laymon"
+        }
+      ]
+    },
+    {
+      "title": "Doctor Sleep",
+      "kind": "Novel",
+      "yearPublished": "2013",
+      "slug": "doctor-sleep-by-stephen-king",
+      "grade": "C+",
+      "authors": [
+        {
+          "name": "Stephen King"
+        }
+      ]
+    }
+  ]
 }

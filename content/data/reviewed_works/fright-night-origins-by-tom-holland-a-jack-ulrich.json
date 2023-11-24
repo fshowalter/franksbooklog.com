@@ -11,16 +11,16 @@
   "date": "2023-11-06",
   "authors": [
     {
-      "name": "Tom Holland",
-      "sortName": "Holland, Tom",
       "slug": "tom-holland",
-      "notes": null
+      "notes": null,
+      "name": "Tom Holland",
+      "sortName": "Holland, Tom"
     },
     {
-      "name": "A. Jack Ulrich",
-      "sortName": "Ulrich, A. Jack",
       "slug": "a-jack-ulrich",
-      "notes": null
+      "notes": null,
+      "name": "A. Jack Ulrich",
+      "sortName": "Ulrich, A. Jack"
     }
   ],
   "readings": [
@@ -57,5 +57,59 @@
     }
   ],
   "includedInSlugs": [],
-  "yearReviewed": 2023
+  "yearReviewed": 2023,
+  "moreByAuthors": [],
+  "moreReviews": [
+    {
+      "title": "Fight Club",
+      "kind": "Novel",
+      "yearPublished": "1996",
+      "slug": "fight-club-by-chuck-palahniuk",
+      "grade": "A-",
+      "authors": [
+        {
+          "name": "Chuck Palahniuk"
+        }
+      ]
+    },
+    {
+      "title": "Fright Night",
+      "kind": "Novel",
+      "yearPublished": "1985",
+      "slug": "fright-night-by-john-skipp-craig-spector",
+      "grade": "F",
+      "authors": [
+        {
+          "name": "John Skipp"
+        },
+        {
+          "name": "Craig Spector"
+        }
+      ]
+    },
+    {
+      "title": "Hawk Mountain",
+      "kind": "Novel",
+      "yearPublished": "2022",
+      "slug": "hawk-mountain-by-conner-habib",
+      "grade": "C+",
+      "authors": [
+        {
+          "name": "Conner Habib"
+        }
+      ]
+    },
+    {
+      "title": "The Horse Thief",
+      "kind": "Short Story",
+      "yearPublished": "2017",
+      "slug": "the-horse-thief-by-philip-fracassi",
+      "grade": "B",
+      "authors": [
+        {
+          "name": "Philip Fracassi"
+        }
+      ]
+    }
+  ]
 }

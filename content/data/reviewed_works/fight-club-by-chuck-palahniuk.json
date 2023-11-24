@@ -11,10 +11,10 @@
   "date": "2022-07-16",
   "authors": [
     {
-      "name": "Chuck Palahniuk",
-      "sortName": "Palahniuk, Chuck",
       "slug": "chuck-palahniuk",
-      "notes": null
+      "notes": null,
+      "name": "Chuck Palahniuk",
+      "sortName": "Palahniuk, Chuck"
     }
   ],
   "readings": [
@@ -39,5 +39,65 @@
     }
   ],
   "includedInSlugs": [],
-  "yearReviewed": 2022
+  "yearReviewed": 2022,
+  "moreByAuthors": [],
+  "moreReviews": [
+    {
+      "title": "Extreme Ownership",
+      "kind": "Nonfiction",
+      "yearPublished": "2015",
+      "slug": "extreme-ownership-by-jocko-willink-leif-babin",
+      "grade": "A",
+      "authors": [
+        {
+          "name": "Jocko Willink"
+        },
+        {
+          "name": "Leif Babin"
+        }
+      ]
+    },
+    {
+      "title": "Fail-Safe",
+      "kind": "Short Story",
+      "yearPublished": "2017",
+      "slug": "fail-safe-by-philip-fracassi",
+      "grade": "C",
+      "authors": [
+        {
+          "name": "Philip Fracassi"
+        }
+      ]
+    },
+    {
+      "title": "Fright Night",
+      "kind": "Novel",
+      "yearPublished": "1985",
+      "slug": "fright-night-by-john-skipp-craig-spector",
+      "grade": "F",
+      "authors": [
+        {
+          "name": "John Skipp"
+        },
+        {
+          "name": "Craig Spector"
+        }
+      ]
+    },
+    {
+      "title": "Fright Night Origins",
+      "kind": "Novel",
+      "yearPublished": "2023",
+      "slug": "fright-night-origins-by-tom-holland-a-jack-ulrich",
+      "grade": "B-",
+      "authors": [
+        {
+          "name": "Tom Holland"
+        },
+        {
+          "name": "A. Jack Ulrich"
+        }
+      ]
+    }
+  ]
 }

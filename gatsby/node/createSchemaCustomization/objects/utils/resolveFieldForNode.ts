@@ -1,5 +1,5 @@
 import { isObjectType } from "graphql";
-import type { GatsbyNode, GatsbyResolveInfo } from "../type-definitions";
+import type { GatsbyNode, GatsbyResolveInfo } from "../../type-definitions";
 
 export async function resolveFieldForNode<T>({
   fieldName,

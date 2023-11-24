@@ -11,10 +11,10 @@
   "date": "2022-04-02",
   "authors": [
     {
-      "name": "Bret Easton Ellis",
-      "sortName": "Ellis, Bret Easton",
       "slug": "bret-easton-ellis",
-      "notes": null
+      "notes": null,
+      "name": "Bret Easton Ellis",
+      "sortName": "Ellis, Bret Easton"
     }
   ],
   "readings": [
@@ -51,5 +51,56 @@
     }
   ],
   "includedInSlugs": [],
-  "yearReviewed": 2022
+  "yearReviewed": 2022,
+  "moreByAuthors": [],
+  "moreReviews": [
+    {
+      "title": "I Will Find You",
+      "kind": "Nonfiction",
+      "yearPublished": "2017",
+      "slug": "i-will-find-you-by-joe-kenda",
+      "grade": "B",
+      "authors": [
+        {
+          "name": "Joe Kenda"
+        }
+      ]
+    },
+    {
+      "title": "Is This Anything?",
+      "kind": "Nonfiction",
+      "yearPublished": "2020",
+      "slug": "is-this-anything-by-jerry-seinfeld",
+      "grade": "C",
+      "authors": [
+        {
+          "name": "Jerry Seinfeld"
+        }
+      ]
+    },
+    {
+      "title": "Live and Let Die",
+      "kind": "Novel",
+      "yearPublished": "1954",
+      "slug": "live-and-let-die-by-ian-fleming",
+      "grade": "D",
+      "authors": [
+        {
+          "name": "Ian Fleming"
+        }
+      ]
+    },
+    {
+      "title": "Living with a SEAL",
+      "kind": "Nonfiction",
+      "yearPublished": "2015",
+      "slug": "living-with-a-seal-by-jesse-itzler",
+      "grade": "Abandoned",
+      "authors": [
+        {
+          "name": "Jesse Itzler"
+        }
+      ]
+    }
+  ]
 }

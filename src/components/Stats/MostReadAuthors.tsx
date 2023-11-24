@@ -37,7 +37,7 @@ export function MostReadAuthors({
           Name
         </Box>
         <Box as="span" textAlign="right" lineHeight={40}>
-          Viewings
+          Readings
         </Box>
       </Box>
       <Box as="ol">
@@ -105,14 +105,14 @@ export function MostWatchedAuthorReadingListItem({
   return (
     <ListItem alignItems="center">
       <ListItemCover
-        slug={reading.work.slug}
+        slug={reading.slug}
         image={reading.cover}
         title={reading.title}
         flexShrink={0}
         boxShadow="borderAll"
       />
       <Box flexGrow={1}>
-        <ListItemTitle title={reading.title} slug={reading.work.slug} />
+        <ListItemTitle title={reading.title} slug={reading.slug} />
         <Spacer axis="vertical" size={8} />
         <ListItemYearAndKind year={reading.yearPublished} kind={reading.kind} />
         <Spacer axis="vertical" size={8} />
@@ -136,7 +136,7 @@ function ListItemYearAndKind({
   year,
 }: {
   kind: string;
-  year: number;
+  year: string;
 }): JSX.Element | null {
   return (
     <Box color="subtle" fontSize="small" letterSpacing={0.5} lineHeight={16}>
@@ -147,12 +147,10 @@ function ListItemYearAndKind({
 }
 
 export const query = graphql`
-  fragment MostReadAuthorReading on ReadingsJson {
+  fragment MostReadAuthorReading on ReadingStatsJsonMostReadAuthorReading {
     sequence
     date(formatString: "MMMM D, YYYY")
-    work {
-      slug
-    }
+    slug
     edition
     kind
     title
@@ -162,7 +160,7 @@ export const query = graphql`
     }
   }
 
-  fragment MostReadAuthor on MostReadAuthor {
+  fragment MostReadAuthor on ReadingStatsJsonMostReadAuthor {
     name
     slug
     count

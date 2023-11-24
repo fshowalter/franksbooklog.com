@@ -11,10 +11,10 @@
   "date": "2022-10-11",
   "authors": [
     {
-      "name": "Richard Laymon",
-      "sortName": "Laymon, Richard",
       "slug": "richard-laymon",
-      "notes": null
+      "notes": null,
+      "name": "Richard Laymon",
+      "sortName": "Laymon, Richard"
     }
   ],
   "readings": [
@@ -65,5 +65,111 @@
   "includedInSlugs": [
     "out-are-the-lights-and-other-tales-by-richard-laymon"
   ],
-  "yearReviewed": 2022
+  "yearReviewed": 2022,
+  "moreByAuthors": [
+    {
+      "name": "Richard Laymon",
+      "slug": "richard-laymon",
+      "works": [
+        {
+          "title": "Desert Pickup",
+          "kind": "Short Story",
+          "yearPublished": "1970",
+          "slug": "desert-pickup-by-richard-laymon",
+          "grade": "C-",
+          "authors": [
+            {
+              "name": "Richard Laymon"
+            }
+          ]
+        },
+        {
+          "title": "Roadside Pickup",
+          "kind": "Short Story",
+          "yearPublished": "1974",
+          "slug": "roadside-pickup-by-richard-laymon",
+          "grade": "C-",
+          "authors": [
+            {
+              "name": "Richard Laymon"
+            }
+          ]
+        },
+        {
+          "title": "The Cellar",
+          "kind": "Novel",
+          "yearPublished": "1980",
+          "slug": "the-cellar-by-richard-laymon",
+          "grade": "C+",
+          "authors": [
+            {
+              "name": "Richard Laymon"
+            }
+          ]
+        },
+        {
+          "title": "The Woods Are Dark",
+          "kind": "Novel",
+          "yearPublished": "1981",
+          "slug": "the-woods-are-dark-by-richard-laymon",
+          "grade": "C+",
+          "authors": [
+            {
+              "name": "Richard Laymon"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "moreReviews": [
+    {
+      "title": "Mother",
+      "kind": "Short Story",
+      "yearPublished": "2015",
+      "slug": "mother-by-philip-fracassi",
+      "grade": "B-",
+      "authors": [
+        {
+          "name": "Philip Fracassi"
+        }
+      ]
+    },
+    {
+      "title": "On Writing",
+      "kind": "Nonfiction",
+      "yearPublished": "2000",
+      "slug": "on-writing-by-stephen-king",
+      "grade": "A-",
+      "authors": [
+        {
+          "name": "Stephen King"
+        }
+      ]
+    },
+    {
+      "title": "The Postman Always Rings Twice",
+      "kind": "Novel",
+      "yearPublished": "1934",
+      "slug": "the-postman-always-rings-twice-by-james-m-cain",
+      "grade": "B+",
+      "authors": [
+        {
+          "name": "James M. Cain"
+        }
+      ]
+    },
+    {
+      "title": "Record Play Pause",
+      "kind": "Nonfiction",
+      "yearPublished": "2019",
+      "slug": "record-play-pause-by-stephen-morris",
+      "grade": "A",
+      "authors": [
+        {
+          "name": "Stephen Morris"
+        }
+      ]
+    }
+  ]
 }

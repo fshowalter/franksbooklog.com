@@ -11,10 +11,10 @@
   "date": "2022-09-11",
   "authors": [
     {
-      "name": "John McPhee",
-      "sortName": "McPhee, John",
       "slug": "john-mcphee",
-      "notes": null
+      "notes": null,
+      "name": "John McPhee",
+      "sortName": "McPhee, John"
     }
   ],
   "readings": [
@@ -35,5 +35,59 @@
     }
   ],
   "includedInSlugs": [],
-  "yearReviewed": 2022
+  "yearReviewed": 2022,
+  "moreByAuthors": [],
+  "moreReviews": [
+    {
+      "title": "Don't Let Them Get You Down",
+      "kind": "Novel",
+      "yearPublished": "2022",
+      "slug": "dont-let-them-get-you-down-by-philip-fracassi",
+      "grade": "C-",
+      "authors": [
+        {
+          "name": "Philip Fracassi"
+        }
+      ]
+    },
+    {
+      "title": "Dracula",
+      "kind": "Novel",
+      "yearPublished": "1897",
+      "slug": "dracula-by-bram-stoker",
+      "grade": "C+",
+      "authors": [
+        {
+          "name": "Bram Stoker"
+        }
+      ]
+    },
+    {
+      "title": "Extreme Ownership",
+      "kind": "Nonfiction",
+      "yearPublished": "2015",
+      "slug": "extreme-ownership-by-jocko-willink-leif-babin",
+      "grade": "A",
+      "authors": [
+        {
+          "name": "Jocko Willink"
+        },
+        {
+          "name": "Leif Babin"
+        }
+      ]
+    },
+    {
+      "title": "Fail-Safe",
+      "kind": "Short Story",
+      "yearPublished": "2017",
+      "slug": "fail-safe-by-philip-fracassi",
+      "grade": "C",
+      "authors": [
+        {
+          "name": "Philip Fracassi"
+        }
+      ]
+    }
+  ]
 }
