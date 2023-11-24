@@ -23,7 +23,7 @@
       "date": "2022-07-15",
       "edition": "Audible",
       "editionNotes": "Read by Richard Poe",
-      "isAudioBook": true,
+      "isAudiobook": true,
       "abandoned": false,
       "readingTime": 6,
       "timeline": [
@@ -50,6 +50,18 @@
   "yearReviewed": 2022,
   "moreByAuthors": [],
   "moreReviews": [
+    {
+      "title": "The Woods Are Dark",
+      "kind": "Novel",
+      "yearPublished": "1981",
+      "slug": "the-woods-are-dark-by-richard-laymon",
+      "grade": "C+",
+      "authors": [
+        {
+          "name": "Richard Laymon"
+        }
+      ]
+    },
     {
       "title": "'Salem's Lot",
       "kind": "Novel",
@@ -83,18 +95,6 @@
       "yearPublished": "2016",
       "slug": "altar-by-philip-fracassi",
       "grade": "A-",
-      "authors": [
-        {
-          "name": "Philip Fracassi"
-        }
-      ]
-    },
-    {
-      "title": "The Baby Farmer",
-      "kind": "Short Story",
-      "yearPublished": "2017",
-      "slug": "the-baby-farmer-by-philip-fracassi",
-      "grade": "C+",
       "authors": [
         {
           "name": "Philip Fracassi"

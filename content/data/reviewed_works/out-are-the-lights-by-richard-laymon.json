@@ -23,7 +23,7 @@
       "date": "2022-10-11",
       "edition": "Kindle",
       "editionNotes": "<span data-work-slug=\"out-are-the-lights-and-other-tales-by-richard-laymon\">_Out Are the Lights and Other Tales_</span>, Headline, 1993",
-      "isAudioBook": false,
+      "isAudiobook": false,
       "abandoned": false,
       "readingTime": 18,
       "timeline": [
@@ -72,30 +72,6 @@
       "slug": "richard-laymon",
       "works": [
         {
-          "title": "Desert Pickup",
-          "kind": "Short Story",
-          "yearPublished": "1970",
-          "slug": "desert-pickup-by-richard-laymon",
-          "grade": "C-",
-          "authors": [
-            {
-              "name": "Richard Laymon"
-            }
-          ]
-        },
-        {
-          "title": "Roadside Pickup",
-          "kind": "Short Story",
-          "yearPublished": "1974",
-          "slug": "roadside-pickup-by-richard-laymon",
-          "grade": "C-",
-          "authors": [
-            {
-              "name": "Richard Laymon"
-            }
-          ]
-        },
-        {
           "title": "The Cellar",
           "kind": "Novel",
           "yearPublished": "1980",
@@ -113,6 +89,30 @@
           "yearPublished": "1981",
           "slug": "the-woods-are-dark-by-richard-laymon",
           "grade": "C+",
+          "authors": [
+            {
+              "name": "Richard Laymon"
+            }
+          ]
+        },
+        {
+          "title": "Desert Pickup",
+          "kind": "Short Story",
+          "yearPublished": "1970",
+          "slug": "desert-pickup-by-richard-laymon",
+          "grade": "C-",
+          "authors": [
+            {
+              "name": "Richard Laymon"
+            }
+          ]
+        },
+        {
+          "title": "Roadside Pickup",
+          "kind": "Short Story",
+          "yearPublished": "1974",
+          "slug": "roadside-pickup-by-richard-laymon",
+          "grade": "C-",
           "authors": [
             {
               "name": "Richard Laymon"

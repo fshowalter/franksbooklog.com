@@ -23,7 +23,7 @@
       "date": "2022-04-18",
       "edition": "Kindle",
       "editionNotes": "<span data-work-slug=\"behold-the-void-by-philip-fracassi\">_Behold the Void_</span>, Lovecraft eZine Press, 2018",
-      "isAudioBook": false,
+      "isAudiobook": false,
       "abandoned": false,
       "readingTime": 1,
       "timeline": [
@@ -43,6 +43,18 @@
       "name": "Philip Fracassi",
       "slug": "philip-fracassi",
       "works": [
+        {
+          "title": "Don't Let Them Get You Down",
+          "kind": "Novel",
+          "yearPublished": "2022",
+          "slug": "dont-let-them-get-you-down-by-philip-fracassi",
+          "grade": "C-",
+          "authors": [
+            {
+              "name": "Philip Fracassi"
+            }
+          ]
+        },
         {
           "title": "Mother",
           "kind": "Short Story",
@@ -78,35 +90,11 @@
               "name": "Philip Fracassi"
             }
           ]
-        },
-        {
-          "title": "Sacculina",
-          "kind": "Novella",
-          "yearPublished": "2017",
-          "slug": "sacculina-by-philip-fracassi",
-          "grade": "B",
-          "authors": [
-            {
-              "name": "Philip Fracassi"
-            }
-          ]
         }
       ]
     }
   ],
   "moreReviews": [
-    {
-      "title": "'Salem's Lot",
-      "kind": "Novel",
-      "yearPublished": "1975",
-      "slug": "salems-lot-by-stephen-king",
-      "grade": "B",
-      "authors": [
-        {
-          "name": "Stephen King"
-        }
-      ]
-    },
     {
       "title": "The 48 Laws of Power",
       "kind": "Nonfiction",
@@ -140,6 +128,18 @@
       "yearPublished": "2017",
       "slug": "the-baby-farmer-by-philip-fracassi",
       "grade": "C+",
+      "authors": [
+        {
+          "name": "Philip Fracassi"
+        }
+      ]
+    },
+    {
+      "title": "Behold the Void",
+      "kind": "Collection",
+      "yearPublished": "2017",
+      "slug": "behold-the-void-by-philip-fracassi",
+      "grade": "B+",
       "authors": [
         {
           "name": "Philip Fracassi"

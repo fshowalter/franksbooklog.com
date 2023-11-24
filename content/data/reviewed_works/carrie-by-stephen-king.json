@@ -23,7 +23,7 @@
       "date": "2022-09-19",
       "edition": "Kindle",
       "editionNotes": "Anchor, 2008",
-      "isAudioBook": false,
+      "isAudiobook": false,
       "abandoned": false,
       "readingTime": 11,
       "timeline": [
@@ -58,30 +58,6 @@
       "slug": "stephen-king",
       "works": [
         {
-          "title": "'Salem's Lot",
-          "kind": "Novel",
-          "yearPublished": "1975",
-          "slug": "salems-lot-by-stephen-king",
-          "grade": "B",
-          "authors": [
-            {
-              "name": "Stephen King"
-            }
-          ]
-        },
-        {
-          "title": "The Shining",
-          "kind": "Novel",
-          "yearPublished": "1977",
-          "slug": "the-shining-by-stephen-king",
-          "grade": "B",
-          "authors": [
-            {
-              "name": "Stephen King"
-            }
-          ]
-        },
-        {
           "title": "On Writing",
           "kind": "Nonfiction",
           "yearPublished": "2000",
@@ -99,6 +75,30 @@
           "yearPublished": "2013",
           "slug": "doctor-sleep-by-stephen-king",
           "grade": "C+",
+          "authors": [
+            {
+              "name": "Stephen King"
+            }
+          ]
+        },
+        {
+          "title": "'Salem's Lot",
+          "kind": "Novel",
+          "yearPublished": "1975",
+          "slug": "salems-lot-by-stephen-king",
+          "grade": "B",
+          "authors": [
+            {
+              "name": "Stephen King"
+            }
+          ]
+        },
+        {
+          "title": "The Shining",
+          "kind": "Novel",
+          "yearPublished": "1977",
+          "slug": "the-shining-by-stephen-king",
+          "grade": "B",
           "authors": [
             {
               "name": "Stephen King"

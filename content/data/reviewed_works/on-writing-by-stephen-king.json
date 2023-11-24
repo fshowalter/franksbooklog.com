@@ -23,7 +23,7 @@
       "date": "2022-03-21",
       "edition": "Kindle",
       "editionNotes": "Scribner",
-      "isAudioBook": false,
+      "isAudiobook": false,
       "abandoned": false,
       "readingTime": 3,
       "timeline": [
@@ -49,18 +49,6 @@
       "name": "Stephen King",
       "slug": "stephen-king",
       "works": [
-        {
-          "title": "Carrie",
-          "kind": "Novel",
-          "yearPublished": "1974",
-          "slug": "carrie-by-stephen-king",
-          "grade": "B-",
-          "authors": [
-            {
-              "name": "Stephen King"
-            }
-          ]
-        },
         {
           "title": "'Salem's Lot",
           "kind": "Novel",
@@ -91,6 +79,18 @@
           "yearPublished": "2013",
           "slug": "doctor-sleep-by-stephen-king",
           "grade": "C+",
+          "authors": [
+            {
+              "name": "Stephen King"
+            }
+          ]
+        },
+        {
+          "title": "Carrie",
+          "kind": "Novel",
+          "yearPublished": "1974",
+          "slug": "carrie-by-stephen-king",
+          "grade": "B-",
           "authors": [
             {
               "name": "Stephen King"

@@ -23,7 +23,7 @@
       "date": "2023-01-14",
       "edition": "Kindle",
       "editionNotes": "Scribner, 2013",
-      "isAudioBook": false,
+      "isAudiobook": false,
       "abandoned": false,
       "readingTime": 77,
       "timeline": [
@@ -110,30 +110,6 @@
       "slug": "stephen-king",
       "works": [
         {
-          "title": "Carrie",
-          "kind": "Novel",
-          "yearPublished": "1974",
-          "slug": "carrie-by-stephen-king",
-          "grade": "B-",
-          "authors": [
-            {
-              "name": "Stephen King"
-            }
-          ]
-        },
-        {
-          "title": "'Salem's Lot",
-          "kind": "Novel",
-          "yearPublished": "1975",
-          "slug": "salems-lot-by-stephen-king",
-          "grade": "B",
-          "authors": [
-            {
-              "name": "Stephen King"
-            }
-          ]
-        },
-        {
           "title": "The Shining",
           "kind": "Novel",
           "yearPublished": "1977",
@@ -151,6 +127,30 @@
           "yearPublished": "2000",
           "slug": "on-writing-by-stephen-king",
           "grade": "A-",
+          "authors": [
+            {
+              "name": "Stephen King"
+            }
+          ]
+        },
+        {
+          "title": "Carrie",
+          "kind": "Novel",
+          "yearPublished": "1974",
+          "slug": "carrie-by-stephen-king",
+          "grade": "B-",
+          "authors": [
+            {
+              "name": "Stephen King"
+            }
+          ]
+        },
+        {
+          "title": "'Salem's Lot",
+          "kind": "Novel",
+          "yearPublished": "1975",
+          "slug": "salems-lot-by-stephen-king",
+          "grade": "B",
           "authors": [
             {
               "name": "Stephen King"

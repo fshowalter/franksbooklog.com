@@ -23,7 +23,7 @@
       "date": "2022-04-03",
       "edition": "Kindle",
       "editionNotes": "<span data-work-slug=\"short-stories-volume-one-by-richard-laymon\">_Short Stories: Volume One: The Mystery and Men's Magazines_</span>, Laymusings, 2014\n",
-      "isAudioBook": false,
+      "isAudiobook": false,
       "abandoned": false,
       "readingTime": 1,
       "timeline": [
@@ -44,30 +44,6 @@
       "slug": "richard-laymon",
       "works": [
         {
-          "title": "Roadside Pickup",
-          "kind": "Short Story",
-          "yearPublished": "1974",
-          "slug": "roadside-pickup-by-richard-laymon",
-          "grade": "C-",
-          "authors": [
-            {
-              "name": "Richard Laymon"
-            }
-          ]
-        },
-        {
-          "title": "The Cellar",
-          "kind": "Novel",
-          "yearPublished": "1980",
-          "slug": "the-cellar-by-richard-laymon",
-          "grade": "C+",
-          "authors": [
-            {
-              "name": "Richard Laymon"
-            }
-          ]
-        },
-        {
           "title": "The Woods Are Dark",
           "kind": "Novel",
           "yearPublished": "1981",
@@ -85,6 +61,30 @@
           "yearPublished": "1982",
           "slug": "out-are-the-lights-by-richard-laymon",
           "grade": "C-",
+          "authors": [
+            {
+              "name": "Richard Laymon"
+            }
+          ]
+        },
+        {
+          "title": "Roadside Pickup",
+          "kind": "Short Story",
+          "yearPublished": "1974",
+          "slug": "roadside-pickup-by-richard-laymon",
+          "grade": "C-",
+          "authors": [
+            {
+              "name": "Richard Laymon"
+            }
+          ]
+        },
+        {
+          "title": "The Cellar",
+          "kind": "Novel",
+          "yearPublished": "1980",
+          "slug": "the-cellar-by-richard-laymon",
+          "grade": "C+",
           "authors": [
             {
               "name": "Richard Laymon"

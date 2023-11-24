@@ -23,7 +23,7 @@
       "date": "2022-04-23",
       "edition": "Kindle",
       "editionNotes": "<span data-work-slug=\"behold-the-void-by-philip-fracassi\">_Behold the Void_</span>, Lovecraft eZine Press, 2018",
-      "isAudioBook": false,
+      "isAudiobook": false,
       "abandoned": false,
       "readingTime": 1,
       "timeline": [
@@ -44,6 +44,30 @@
       "slug": "philip-fracassi",
       "works": [
         {
+          "title": "Fail-Safe",
+          "kind": "Short Story",
+          "yearPublished": "2017",
+          "slug": "fail-safe-by-philip-fracassi",
+          "grade": "C",
+          "authors": [
+            {
+              "name": "Philip Fracassi"
+            }
+          ]
+        },
+        {
+          "title": "Don't Let Them Get You Down",
+          "kind": "Novel",
+          "yearPublished": "2022",
+          "slug": "dont-let-them-get-you-down-by-philip-fracassi",
+          "grade": "C-",
+          "authors": [
+            {
+              "name": "Philip Fracassi"
+            }
+          ]
+        },
+        {
           "title": "Altar",
           "kind": "Short Story",
           "yearPublished": "2016",
@@ -61,30 +85,6 @@
           "yearPublished": "2017",
           "slug": "surfer-girl-by-philip-fracassi",
           "grade": "C+",
-          "authors": [
-            {
-              "name": "Philip Fracassi"
-            }
-          ]
-        },
-        {
-          "title": "Soft Construction of a Sunset",
-          "kind": "Short Story",
-          "yearPublished": "2017",
-          "slug": "soft-construction-of-a-sunset-by-philip-fracassi",
-          "grade": "B-",
-          "authors": [
-            {
-              "name": "Philip Fracassi"
-            }
-          ]
-        },
-        {
-          "title": "Sacculina",
-          "kind": "Novella",
-          "yearPublished": "2017",
-          "slug": "sacculina-by-philip-fracassi",
-          "grade": "B",
           "authors": [
             {
               "name": "Philip Fracassi"
