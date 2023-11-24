@@ -50,6 +50,7 @@
       "yearPublished": "1897",
       "slug": "dracula-by-bram-stoker",
       "grade": "C+",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Bram Stoker"
@@ -62,6 +63,7 @@
       "yearPublished": "2013",
       "slug": "draft-no-4-by-john-mcphee",
       "grade": "C",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "John McPhee"
@@ -74,6 +76,9 @@
       "yearPublished": "2017",
       "slug": "fail-safe-by-philip-fracassi",
       "grade": "C",
+      "includedInSlugs": [
+        "behold-the-void-by-philip-fracassi"
+      ],
       "authors": [
         {
           "name": "Philip Fracassi"
@@ -86,11 +91,13 @@
       "yearPublished": "1996",
       "slug": "fight-club-by-chuck-palahniuk",
       "grade": "A-",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Chuck Palahniuk"
         }
       ]
     }
-  ]
+  ],
+  "includedWorks": []
 }

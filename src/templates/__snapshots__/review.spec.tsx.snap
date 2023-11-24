@@ -230,7 +230,7 @@ exports[`/reviews/{slug} render abandoned without structured data 1`] = `
                 aria-hidden="true"
                 data-placeholder-image=""
                 decoding="async"
-                src="data:image/png;base64,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"
+                src="data:image/png;base64,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"
                 style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
               />
               <picture>
@@ -311,7 +311,7 @@ exports[`/reviews/{slug} render abandoned without structured data 1`] = `
             <p>
               Fortunately, Itzler later identified the SEAL as David Goggins, who wrote his own story, 
               <a
-                href="/reviews/undefined/"
+                href="/reviews/cant-hurt-me-by-david-goggins/"
               >
                 <em>
                   Can’t Hurt Me
@@ -395,9 +395,7 @@ exports[`/reviews/{slug} render abandoned without structured data 1`] = `
                   <span
                     class="RenderedMarkdown_renderedMarkdownStyle__w2sssm0 sprinkles_fontWeight_light__1lrvpk9o sprinkles_fontSize_small__1lrvpk9j sprinkles_lineHeight_1__1lrvpk9y"
                   >
-                    <span>
-                      Center Street, 2015
-                    </span>
+                    Center Street, 2015
                   </span>
                   )
                 </span>
@@ -409,7 +407,7 @@ exports[`/reviews/{slug} render abandoned without structured data 1`] = `
                   class="sprinkles_fontWeight_light__1lrvpk9o sprinkles_color_subtle__1lrvpk97"
                 >
                   <summary>
-                    Abandoned after 8 Days
+                    Abandoned after 9 Days
                   </summary>
                   <ol
                     class="ReadingHistoryEntry_timelineGridStyle__1b3bzws1 sprinkles_width_full_default__1lrvpk9nm"
@@ -1255,7 +1253,7 @@ exports[`/reviews/{slug} render reading notes 1`] = `
                 aria-hidden="true"
                 data-placeholder-image=""
                 decoding="async"
-                src="data:image/png;base64,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"
+                src="data:image/png;base64,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"
                 style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
               />
               <picture>
@@ -1525,9 +1523,7 @@ exports[`/reviews/{slug} render reading notes 1`] = `
                   <span
                     class="RenderedMarkdown_renderedMarkdownStyle__w2sssm0 sprinkles_fontWeight_light__1lrvpk9o sprinkles_fontSize_small__1lrvpk9j sprinkles_lineHeight_1__1lrvpk9y"
                   >
-                    <span>
-                      Read by Campbell Scott
-                    </span>
+                    Read by Campbell Scott
                   </span>
                   )
                 </span>
@@ -1539,7 +1535,7 @@ exports[`/reviews/{slug} render reading notes 1`] = `
                   class="sprinkles_fontWeight_light__1lrvpk9o sprinkles_color_subtle__1lrvpk97"
                 >
                   <summary>
-                    Listened to over 13 Days
+                    Listened to over 14 Days
                   </summary>
                   <ol
                     class="ReadingHistoryEntry_timelineGridStyle__1b3bzws1 sprinkles_width_full_default__1lrvpk9nm"
@@ -2553,7 +2549,7 @@ exports[`/reviews/{slug} renders 1`] = `
                 aria-hidden="true"
                 data-placeholder-image=""
                 decoding="async"
-                src="data:image/png;base64,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"
+                src="data:image/png;base64,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"
                 style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
               />
               <picture>
@@ -2612,13 +2608,13 @@ exports[`/reviews/{slug} renders 1`] = `
             <p>
               An accomplished debut collection from Fracassi. ”
               <a
-                href="/reviews/undefined/"
+                href="/reviews/altar-by-philip-fracassi/"
               >
                 Altar
               </a>
               ” shines with 
               <a
-                href="/reviews/undefined/"
+                href="/reviews/mandala-by-philip-fracassi/"
               >
                 <em>
                   Mandala
@@ -2633,7 +2629,7 @@ exports[`/reviews/{slug} renders 1`] = `
           </div>
         </div>
         <div
-          class="sprinkles_width_full_default__1lrvpk9nm"
+          class="sprinkles_maxWidth_popout_default__1lrvpk99g sprinkles_width_full_default__1lrvpk9nm"
         >
           <span
             class="sprinkles_width_px_default__1lrvpk9ng sprinkles_height_64_default__1lrvpk96v sprinkles_minWidth_px_default__1lrvpk9ca sprinkles_minHeight_64_default__1lrvpk9ag sprinkles_display_block_default__1lrvpk95a"
@@ -2649,31 +2645,6 @@ exports[`/reviews/{slug} renders 1`] = `
           <ul
             class="sprinkles_width_full_default__1lrvpk9nm sprinkles_maxWidth_popout_default__1lrvpk99g"
           >
-            <li
-              class="sprinkles_paddingLeft_gutter_default__1lrvpk9g4 sprinkles_paddingRight_gutter_default__1lrvpk9i7 sprinkles_paddingTop_16_default__1lrvpk9im sprinkles_paddingBottom_16_default__1lrvpk9da sprinkles_display_flex_default__1lrvpk95g sprinkles_flexDirection_column_default__1lrvpk95y sprinkles_backgroundColor_zebra_default__1lrvpk92p"
-            >
-              <a
-                class="sprinkles_fontSize_medium__1lrvpk9l sprinkles_fontWeight_semiBold__1lrvpk9q"
-                href="/reviews/soft-construction-of-a-sunset-by-philip-fracassi/"
-              >
-                Soft Construction of a Sunset
-              </a>
-               
-              <div>
-                <span
-                  class="sprinkles_color_subtle__1lrvpk97"
-                >
-                  by
-                </span>
-                 Philip Fracassi
-              </div>
-              <img
-                alt="B-: 4 stars (out of 5)"
-                height="16"
-                src="/svg/4-stars.svg"
-                width="80"
-              />
-            </li>
             <li
               class="sprinkles_paddingLeft_gutter_default__1lrvpk9g4 sprinkles_paddingRight_gutter_default__1lrvpk9i7 sprinkles_paddingTop_16_default__1lrvpk9im sprinkles_paddingBottom_16_default__1lrvpk9da sprinkles_display_flex_default__1lrvpk95g sprinkles_flexDirection_column_default__1lrvpk95y sprinkles_backgroundColor_zebra_default__1lrvpk92p"
             >
@@ -2696,56 +2667,6 @@ exports[`/reviews/{slug} renders 1`] = `
                 alt="A-: 5 stars (out of 5)"
                 height="16"
                 src="/svg/5-stars.svg"
-                width="80"
-              />
-            </li>
-            <li
-              class="sprinkles_paddingLeft_gutter_default__1lrvpk9g4 sprinkles_paddingRight_gutter_default__1lrvpk9i7 sprinkles_paddingTop_16_default__1lrvpk9im sprinkles_paddingBottom_16_default__1lrvpk9da sprinkles_display_flex_default__1lrvpk95g sprinkles_flexDirection_column_default__1lrvpk95y sprinkles_backgroundColor_zebra_default__1lrvpk92p"
-            >
-              <a
-                class="sprinkles_fontSize_medium__1lrvpk9l sprinkles_fontWeight_semiBold__1lrvpk9q"
-                href="/reviews/the-horse-thief-by-philip-fracassi/"
-              >
-                The Horse Thief
-              </a>
-               
-              <div>
-                <span
-                  class="sprinkles_color_subtle__1lrvpk97"
-                >
-                  by
-                </span>
-                 Philip Fracassi
-              </div>
-              <img
-                alt="B: 4 stars (out of 5)"
-                height="16"
-                src="/svg/4-stars.svg"
-                width="80"
-              />
-            </li>
-            <li
-              class="sprinkles_paddingLeft_gutter_default__1lrvpk9g4 sprinkles_paddingRight_gutter_default__1lrvpk9i7 sprinkles_paddingTop_16_default__1lrvpk9im sprinkles_paddingBottom_16_default__1lrvpk9da sprinkles_display_flex_default__1lrvpk95g sprinkles_flexDirection_column_default__1lrvpk95y sprinkles_backgroundColor_zebra_default__1lrvpk92p"
-            >
-              <a
-                class="sprinkles_fontSize_medium__1lrvpk9l sprinkles_fontWeight_semiBold__1lrvpk9q"
-                href="/reviews/coffin-by-philip-fracassi/"
-              >
-                Coffin
-              </a>
-               
-              <div>
-                <span
-                  class="sprinkles_color_subtle__1lrvpk97"
-                >
-                  by
-                </span>
-                 Philip Fracassi
-              </div>
-              <img
-                alt="C+: 3 stars (out of 5)"
-                height="16"
-                src="/svg/3-stars.svg"
                 width="80"
               />
             </li>
@@ -2779,9 +2700,9 @@ exports[`/reviews/{slug} renders 1`] = `
             >
               <a
                 class="sprinkles_fontSize_medium__1lrvpk9l sprinkles_fontWeight_semiBold__1lrvpk9q"
-                href="/reviews/surfer-girl-by-philip-fracassi/"
+                href="/reviews/coffin-by-philip-fracassi/"
               >
-                Surfer Girl
+                Coffin
               </a>
                
               <div>
@@ -2796,31 +2717,6 @@ exports[`/reviews/{slug} renders 1`] = `
                 alt="C+: 3 stars (out of 5)"
                 height="16"
                 src="/svg/3-stars.svg"
-                width="80"
-              />
-            </li>
-            <li
-              class="sprinkles_paddingLeft_gutter_default__1lrvpk9g4 sprinkles_paddingRight_gutter_default__1lrvpk9i7 sprinkles_paddingTop_16_default__1lrvpk9im sprinkles_paddingBottom_16_default__1lrvpk9da sprinkles_display_flex_default__1lrvpk95g sprinkles_flexDirection_column_default__1lrvpk95y sprinkles_backgroundColor_zebra_default__1lrvpk92p"
-            >
-              <a
-                class="sprinkles_fontSize_medium__1lrvpk9l sprinkles_fontWeight_semiBold__1lrvpk9q"
-                href="/reviews/mother-by-philip-fracassi/"
-              >
-                Mother
-              </a>
-               
-              <div>
-                <span
-                  class="sprinkles_color_subtle__1lrvpk97"
-                >
-                  by
-                </span>
-                 Philip Fracassi
-              </div>
-              <img
-                alt="B-: 4 stars (out of 5)"
-                height="16"
-                src="/svg/4-stars.svg"
                 width="80"
               />
             </li>
@@ -2854,6 +2750,31 @@ exports[`/reviews/{slug} renders 1`] = `
             >
               <a
                 class="sprinkles_fontSize_medium__1lrvpk9l sprinkles_fontWeight_semiBold__1lrvpk9q"
+                href="/reviews/the-horse-thief-by-philip-fracassi/"
+              >
+                The Horse Thief
+              </a>
+               
+              <div>
+                <span
+                  class="sprinkles_color_subtle__1lrvpk97"
+                >
+                  by
+                </span>
+                 Philip Fracassi
+              </div>
+              <img
+                alt="B: 4 stars (out of 5)"
+                height="16"
+                src="/svg/4-stars.svg"
+                width="80"
+              />
+            </li>
+            <li
+              class="sprinkles_paddingLeft_gutter_default__1lrvpk9g4 sprinkles_paddingRight_gutter_default__1lrvpk9i7 sprinkles_paddingTop_16_default__1lrvpk9im sprinkles_paddingBottom_16_default__1lrvpk9da sprinkles_display_flex_default__1lrvpk95g sprinkles_flexDirection_column_default__1lrvpk95y sprinkles_backgroundColor_zebra_default__1lrvpk92p"
+            >
+              <a
+                class="sprinkles_fontSize_medium__1lrvpk9l sprinkles_fontWeight_semiBold__1lrvpk9q"
                 href="/reviews/mandala-by-philip-fracassi/"
               >
                 Mandala
@@ -2871,6 +2792,81 @@ exports[`/reviews/{slug} renders 1`] = `
                 alt="B+: 4 stars (out of 5)"
                 height="16"
                 src="/svg/4-stars.svg"
+                width="80"
+              />
+            </li>
+            <li
+              class="sprinkles_paddingLeft_gutter_default__1lrvpk9g4 sprinkles_paddingRight_gutter_default__1lrvpk9i7 sprinkles_paddingTop_16_default__1lrvpk9im sprinkles_paddingBottom_16_default__1lrvpk9da sprinkles_display_flex_default__1lrvpk95g sprinkles_flexDirection_column_default__1lrvpk95y sprinkles_backgroundColor_zebra_default__1lrvpk92p"
+            >
+              <a
+                class="sprinkles_fontSize_medium__1lrvpk9l sprinkles_fontWeight_semiBold__1lrvpk9q"
+                href="/reviews/mother-by-philip-fracassi/"
+              >
+                Mother
+              </a>
+               
+              <div>
+                <span
+                  class="sprinkles_color_subtle__1lrvpk97"
+                >
+                  by
+                </span>
+                 Philip Fracassi
+              </div>
+              <img
+                alt="B-: 4 stars (out of 5)"
+                height="16"
+                src="/svg/4-stars.svg"
+                width="80"
+              />
+            </li>
+            <li
+              class="sprinkles_paddingLeft_gutter_default__1lrvpk9g4 sprinkles_paddingRight_gutter_default__1lrvpk9i7 sprinkles_paddingTop_16_default__1lrvpk9im sprinkles_paddingBottom_16_default__1lrvpk9da sprinkles_display_flex_default__1lrvpk95g sprinkles_flexDirection_column_default__1lrvpk95y sprinkles_backgroundColor_zebra_default__1lrvpk92p"
+            >
+              <a
+                class="sprinkles_fontSize_medium__1lrvpk9l sprinkles_fontWeight_semiBold__1lrvpk9q"
+                href="/reviews/soft-construction-of-a-sunset-by-philip-fracassi/"
+              >
+                Soft Construction of a Sunset
+              </a>
+               
+              <div>
+                <span
+                  class="sprinkles_color_subtle__1lrvpk97"
+                >
+                  by
+                </span>
+                 Philip Fracassi
+              </div>
+              <img
+                alt="B-: 4 stars (out of 5)"
+                height="16"
+                src="/svg/4-stars.svg"
+                width="80"
+              />
+            </li>
+            <li
+              class="sprinkles_paddingLeft_gutter_default__1lrvpk9g4 sprinkles_paddingRight_gutter_default__1lrvpk9i7 sprinkles_paddingTop_16_default__1lrvpk9im sprinkles_paddingBottom_16_default__1lrvpk9da sprinkles_display_flex_default__1lrvpk95g sprinkles_flexDirection_column_default__1lrvpk95y sprinkles_backgroundColor_zebra_default__1lrvpk92p"
+            >
+              <a
+                class="sprinkles_fontSize_medium__1lrvpk9l sprinkles_fontWeight_semiBold__1lrvpk9q"
+                href="/reviews/surfer-girl-by-philip-fracassi/"
+              >
+                Surfer Girl
+              </a>
+               
+              <div>
+                <span
+                  class="sprinkles_color_subtle__1lrvpk97"
+                >
+                  by
+                </span>
+                 Philip Fracassi
+              </div>
+              <img
+                alt="C+: 3 stars (out of 5)"
+                height="16"
+                src="/svg/3-stars.svg"
                 width="80"
               />
             </li>
@@ -2950,9 +2946,7 @@ exports[`/reviews/{slug} renders 1`] = `
                   <span
                     class="RenderedMarkdown_renderedMarkdownStyle__w2sssm0 sprinkles_fontWeight_light__1lrvpk9o sprinkles_fontSize_small__1lrvpk9j sprinkles_lineHeight_1__1lrvpk9y"
                   >
-                    <span>
-                      Lovecraft eZine Press, 2018
-                    </span>
+                    Lovecraft eZine Press, 2018
                   </span>
                   )
                 </span>
@@ -2964,7 +2958,7 @@ exports[`/reviews/{slug} renders 1`] = `
                   class="sprinkles_fontWeight_light__1lrvpk9o sprinkles_color_subtle__1lrvpk97"
                 >
                   <summary>
-                    Read over 20 Days
+                    Read over 21 Days
                   </summary>
                   <ol
                     class="ReadingHistoryEntry_timelineGridStyle__1b3bzws1 sprinkles_width_full_default__1lrvpk9nm"
@@ -3249,8 +3243,8 @@ exports[`/reviews/{slug} renders 1`] = `
               >
                 <a
                   class="Cover_posterStyle__rle4x3 sprinkles_overflow_hidden__1lrvpk918 sprinkles_transform_safariBorderRadiusFix__1lrvpk91b sprinkles_flexShrink_0__1lrvpk9h"
-                  href="/reviews/altar-by-philip-fracassi/"
-                  year="2016"
+                  href="/reviews/the-48-laws-of-power-by-robert-greene/"
+                  year="1998"
                 >
                   <div
                     class="gatsby-image-wrapper gatsby-image-wrapper-constrained"
@@ -3275,16 +3269,16 @@ exports[`/reviews/{slug} renders 1`] = `
                     />
                     <picture>
                       <source
-                        data-srcset="/static/1de200a682b62e4daf7358cd87072d87/6b3a6/behold-the-void-by-philip-fracassi.avif 62w,/static/1de200a682b62e4daf7358cd87072d87/3c542/behold-the-void-by-philip-fracassi.avif 124w,/static/1de200a682b62e4daf7358cd87072d87/c155b/behold-the-void-by-philip-fracassi.avif 248w,/static/1de200a682b62e4daf7358cd87072d87/1ad14/behold-the-void-by-philip-fracassi.avif 496w"
+                        data-srcset="/static/f21f66ac9915b4111f60f91f94e09335/6b3a6/the-48-laws-of-power-by-robert-greene.avif 62w,/static/f21f66ac9915b4111f60f91f94e09335/3c542/the-48-laws-of-power-by-robert-greene.avif 124w,/static/f21f66ac9915b4111f60f91f94e09335/c155b/the-48-laws-of-power-by-robert-greene.avif 248w,/static/f21f66ac9915b4111f60f91f94e09335/1ad14/the-48-laws-of-power-by-robert-greene.avif 496w"
                         sizes="(min-width: 248px) 248px, 100vw"
                         type="image/avif"
                       />
                       <img
-                        alt="A cover from Altar"
+                        alt="A cover from The 48 Laws of Power"
                         data-gatsby-image-ssr=""
                         data-main-image=""
-                        data-src="/static/1de200a682b62e4daf7358cd87072d87/31a1c/behold-the-void-by-philip-fracassi.jpg"
-                        data-srcset="/static/1de200a682b62e4daf7358cd87072d87/5bc78/behold-the-void-by-philip-fracassi.jpg 62w,/static/1de200a682b62e4daf7358cd87072d87/59d5c/behold-the-void-by-philip-fracassi.jpg 124w,/static/1de200a682b62e4daf7358cd87072d87/31a1c/behold-the-void-by-philip-fracassi.jpg 248w,/static/1de200a682b62e4daf7358cd87072d87/a5166/behold-the-void-by-philip-fracassi.jpg 496w"
+                        data-src="/static/f21f66ac9915b4111f60f91f94e09335/31a1c/the-48-laws-of-power-by-robert-greene.jpg"
+                        data-srcset="/static/f21f66ac9915b4111f60f91f94e09335/5bc78/the-48-laws-of-power-by-robert-greene.jpg 62w,/static/f21f66ac9915b4111f60f91f94e09335/59d5c/the-48-laws-of-power-by-robert-greene.jpg 124w,/static/f21f66ac9915b4111f60f91f94e09335/31a1c/the-48-laws-of-power-by-robert-greene.jpg 248w,/static/f21f66ac9915b4111f60f91f94e09335/a5166/the-48-laws-of-power-by-robert-greene.jpg 496w"
                         decoding="async"
                         loading="lazy"
                         sizes="(min-width: 248px) 248px, 100vw"
@@ -3310,9 +3304,9 @@ exports[`/reviews/{slug} renders 1`] = `
                   />
                   <a
                     class="Cover_titleTypographyStyle__rle4x2 sprinkles_fontSize_medium__1lrvpk9l sprinkles_lineHeight_20__1lrvpk910 sprinkles_display_block_default__1lrvpk95a"
-                    href="/reviews/altar-by-philip-fracassi/"
+                    href="/reviews/the-48-laws-of-power-by-robert-greene/"
                   >
-                    Altar
+                    The 48 Laws of Power
                   </a>
                   <span
                     class="sprinkles_width_px_default__1lrvpk9ng sprinkles_height_4_default__1lrvpk96a sprinkles_height_8_tablet__1lrvpk96e sprinkles_minWidth_px_default__1lrvpk9ca sprinkles_minHeight_4_default__1lrvpk99v sprinkles_minHeight_8_tablet__1lrvpk99z sprinkles_display_block_default__1lrvpk95a"
@@ -3320,7 +3314,7 @@ exports[`/reviews/{slug} renders 1`] = `
                   <div
                     class="sprinkles_color_muted__1lrvpk96 sprinkles_fontSize_default__1lrvpk9k sprinkles_lineHeight_20__1lrvpk910 sprinkles_textAlign_left_default__1lrvpk9kv sprinkles_textAlign_center_tablet__1lrvpk9l2"
                   >
-                    Philip Fracassi
+                    Robert Greene
                   </div>
                   <span
                     class="sprinkles_width_px_default__1lrvpk9ng sprinkles_height_8_default__1lrvpk96d sprinkles_minWidth_px_default__1lrvpk9ca sprinkles_minHeight_8_default__1lrvpk99y sprinkles_display_block_default__1lrvpk95a"
@@ -3329,17 +3323,17 @@ exports[`/reviews/{slug} renders 1`] = `
                     class="sprinkles_fontSize_small__1lrvpk9j sprinkles_color_subtle__1lrvpk97 sprinkles_letterSpacing_0.5__1lrvpk9w sprinkles_lineHeight_16__1lrvpk9z sprinkles_textAlign_left_default__1lrvpk9kv sprinkles_textAlign_center_tablet__1lrvpk9l2"
                   >
                     <span>
-                      2016 | 
+                      1998 | 
                     </span>
-                    Short Story
+                    Nonfiction
                   </div>
                   <span
                     class="sprinkles_width_px_default__1lrvpk9ng sprinkles_height_8_default__1lrvpk96d sprinkles_minWidth_px_default__1lrvpk9ca sprinkles_minHeight_8_default__1lrvpk99y sprinkles_display_block_default__1lrvpk95a"
                   />
                   <img
-                    alt="A-: 5 stars (out of 5)"
+                    alt="D+: 2 stars (out of 5)"
                     height="16"
-                    src="/svg/5-stars.svg"
+                    src="/svg/2-stars.svg"
                     width="80"
                   />
                   <span
@@ -3352,8 +3346,8 @@ exports[`/reviews/{slug} renders 1`] = `
               >
                 <a
                   class="Cover_posterStyle__rle4x3 sprinkles_overflow_hidden__1lrvpk918 sprinkles_transform_safariBorderRadiusFix__1lrvpk91b sprinkles_flexShrink_0__1lrvpk9h"
-                  href="/reviews/the-baby-farmer-by-philip-fracassi/"
-                  year="2017"
+                  href="/reviews/about-face-by-david-h-hackworth-julie-sherman/"
+                  year="1989"
                 >
                   <div
                     class="gatsby-image-wrapper gatsby-image-wrapper-constrained"
@@ -3378,16 +3372,16 @@ exports[`/reviews/{slug} renders 1`] = `
                     />
                     <picture>
                       <source
-                        data-srcset="/static/1de200a682b62e4daf7358cd87072d87/6b3a6/behold-the-void-by-philip-fracassi.avif 62w,/static/1de200a682b62e4daf7358cd87072d87/3c542/behold-the-void-by-philip-fracassi.avif 124w,/static/1de200a682b62e4daf7358cd87072d87/c155b/behold-the-void-by-philip-fracassi.avif 248w,/static/1de200a682b62e4daf7358cd87072d87/1ad14/behold-the-void-by-philip-fracassi.avif 496w"
+                        data-srcset="/static/c90cce755e6e70178a3b247cba548e64/6b3a6/about-face-by-david-h-hackworth-julie-sherman.avif 62w,/static/c90cce755e6e70178a3b247cba548e64/3c542/about-face-by-david-h-hackworth-julie-sherman.avif 124w,/static/c90cce755e6e70178a3b247cba548e64/c155b/about-face-by-david-h-hackworth-julie-sherman.avif 248w,/static/c90cce755e6e70178a3b247cba548e64/1ad14/about-face-by-david-h-hackworth-julie-sherman.avif 496w"
                         sizes="(min-width: 248px) 248px, 100vw"
                         type="image/avif"
                       />
                       <img
-                        alt="A cover from The Baby Farmer"
+                        alt="A cover from About Face"
                         data-gatsby-image-ssr=""
                         data-main-image=""
-                        data-src="/static/1de200a682b62e4daf7358cd87072d87/31a1c/behold-the-void-by-philip-fracassi.jpg"
-                        data-srcset="/static/1de200a682b62e4daf7358cd87072d87/5bc78/behold-the-void-by-philip-fracassi.jpg 62w,/static/1de200a682b62e4daf7358cd87072d87/59d5c/behold-the-void-by-philip-fracassi.jpg 124w,/static/1de200a682b62e4daf7358cd87072d87/31a1c/behold-the-void-by-philip-fracassi.jpg 248w,/static/1de200a682b62e4daf7358cd87072d87/a5166/behold-the-void-by-philip-fracassi.jpg 496w"
+                        data-src="/static/c90cce755e6e70178a3b247cba548e64/31a1c/about-face-by-david-h-hackworth-julie-sherman.jpg"
+                        data-srcset="/static/c90cce755e6e70178a3b247cba548e64/5bc78/about-face-by-david-h-hackworth-julie-sherman.jpg 62w,/static/c90cce755e6e70178a3b247cba548e64/59d5c/about-face-by-david-h-hackworth-julie-sherman.jpg 124w,/static/c90cce755e6e70178a3b247cba548e64/31a1c/about-face-by-david-h-hackworth-julie-sherman.jpg 248w,/static/c90cce755e6e70178a3b247cba548e64/a5166/about-face-by-david-h-hackworth-julie-sherman.jpg 496w"
                         decoding="async"
                         loading="lazy"
                         sizes="(min-width: 248px) 248px, 100vw"
@@ -3413,9 +3407,9 @@ exports[`/reviews/{slug} renders 1`] = `
                   />
                   <a
                     class="Cover_titleTypographyStyle__rle4x2 sprinkles_fontSize_medium__1lrvpk9l sprinkles_lineHeight_20__1lrvpk910 sprinkles_display_block_default__1lrvpk95a"
-                    href="/reviews/the-baby-farmer-by-philip-fracassi/"
+                    href="/reviews/about-face-by-david-h-hackworth-julie-sherman/"
                   >
-                    The Baby Farmer
+                    About Face
                   </a>
                   <span
                     class="sprinkles_width_px_default__1lrvpk9ng sprinkles_height_4_default__1lrvpk96a sprinkles_height_8_tablet__1lrvpk96e sprinkles_minWidth_px_default__1lrvpk9ca sprinkles_minHeight_4_default__1lrvpk99v sprinkles_minHeight_8_tablet__1lrvpk99z sprinkles_display_block_default__1lrvpk95a"
@@ -3423,7 +3417,7 @@ exports[`/reviews/{slug} renders 1`] = `
                   <div
                     class="sprinkles_color_muted__1lrvpk96 sprinkles_fontSize_default__1lrvpk9k sprinkles_lineHeight_20__1lrvpk910 sprinkles_textAlign_left_default__1lrvpk9kv sprinkles_textAlign_center_tablet__1lrvpk9l2"
                   >
-                    Philip Fracassi
+                    David H. Hackworth and Julie Sherman
                   </div>
                   <span
                     class="sprinkles_width_px_default__1lrvpk9ng sprinkles_height_8_default__1lrvpk96d sprinkles_minWidth_px_default__1lrvpk9ca sprinkles_minHeight_8_default__1lrvpk99y sprinkles_display_block_default__1lrvpk95a"
@@ -3432,17 +3426,17 @@ exports[`/reviews/{slug} renders 1`] = `
                     class="sprinkles_fontSize_small__1lrvpk9j sprinkles_color_subtle__1lrvpk97 sprinkles_letterSpacing_0.5__1lrvpk9w sprinkles_lineHeight_16__1lrvpk9z sprinkles_textAlign_left_default__1lrvpk9kv sprinkles_textAlign_center_tablet__1lrvpk9l2"
                   >
                     <span>
-                      2017 | 
+                      1989 | 
                     </span>
-                    Short Story
+                    Nonfiction
                   </div>
                   <span
                     class="sprinkles_width_px_default__1lrvpk9ng sprinkles_height_8_default__1lrvpk96d sprinkles_minWidth_px_default__1lrvpk9ca sprinkles_minHeight_8_default__1lrvpk99y sprinkles_display_block_default__1lrvpk95a"
                   />
                   <img
-                    alt="C+: 3 stars (out of 5)"
+                    alt="A-: 5 stars (out of 5)"
                     height="16"
-                    src="/svg/3-stars.svg"
+                    src="/svg/5-stars.svg"
                     width="80"
                   />
                   <span

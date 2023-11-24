@@ -73,12 +73,30 @@ function EditionNotes({
   );
 }
 
+// function summaryText(reading: Queries.ReviewReadingHistoryEntryFragment) {
+//   if reading.readingTime === 1 {
+//     return reading.abandoned
+//     ? "Abandoned after 1 day"
+//     : reading.isAudiobook
+//     ? "Listened to in 1 day"
+//     : "Read in 1 day";
+//   }
+
+//   const summary = reading.abandoned
+//     ? "Abandoned after"
+//     : reading.isAudiobook
+//     ? "Listened to over"
+//     : "Read over";
+
+//   return summary;
+// }
+
 function Details({
   reading,
 }: {
   reading: Queries.ReviewReadingHistoryEntryFragment;
 }) {
-  if (reading.readingTime === 0) {
+  if (reading.readingTime === 1) {
     return null;
   }
 

@@ -60,6 +60,7 @@
       "yearPublished": "2018",
       "slug": "cant-hurt-me-by-david-goggins",
       "grade": "B",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "David Goggins"
@@ -72,6 +73,7 @@
       "yearPublished": "1974",
       "slug": "carrie-by-stephen-king",
       "grade": "B-",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Stephen King"
@@ -84,6 +86,7 @@
       "yearPublished": "1980",
       "slug": "the-cellar-by-richard-laymon",
       "grade": "C+",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Richard Laymon"
@@ -96,11 +99,13 @@
       "yearPublished": "2018",
       "slug": "churchill-by-andrew-roberts",
       "grade": "A-",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Andrew Roberts"
         }
       ]
     }
-  ]
+  ],
+  "includedWorks": []
 }

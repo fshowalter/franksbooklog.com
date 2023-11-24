@@ -48,6 +48,9 @@
       "yearPublished": "2017",
       "slug": "soft-construction-of-a-sunset-by-philip-fracassi",
       "grade": "B-",
+      "includedInSlugs": [
+        "behold-the-void-by-philip-fracassi"
+      ],
       "authors": [
         {
           "name": "Philip Fracassi"
@@ -60,6 +63,9 @@
       "yearPublished": "2017",
       "slug": "surfer-girl-by-philip-fracassi",
       "grade": "C+",
+      "includedInSlugs": [
+        "behold-the-void-by-philip-fracassi"
+      ],
       "authors": [
         {
           "name": "Philip Fracassi"
@@ -72,6 +78,7 @@
       "yearPublished": "2012",
       "slug": "total-recall-by-arnold-schwarzenegger",
       "grade": "C+",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Arnold Schwarzenegger"
@@ -84,11 +91,13 @@
       "yearPublished": "2017",
       "slug": "what-doesnt-kill-us-by-scott-carney",
       "grade": "C+",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Scott Carney"
         }
       ]
     }
-  ]
+  ],
+  "includedWorks": []
 }

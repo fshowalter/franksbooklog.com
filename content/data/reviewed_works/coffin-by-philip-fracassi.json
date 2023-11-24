@@ -44,23 +44,14 @@
       "slug": "philip-fracassi",
       "works": [
         {
-          "title": "The Horse Thief",
-          "kind": "Short Story",
-          "yearPublished": "2017",
-          "slug": "the-horse-thief-by-philip-fracassi",
-          "grade": "B",
-          "authors": [
-            {
-              "name": "Philip Fracassi"
-            }
-          ]
-        },
-        {
           "title": "The Baby Farmer",
           "kind": "Short Story",
           "yearPublished": "2017",
           "slug": "the-baby-farmer-by-philip-fracassi",
           "grade": "C+",
+          "includedInSlugs": [
+            "behold-the-void-by-philip-fracassi"
+          ],
           "authors": [
             {
               "name": "Philip Fracassi"
@@ -73,6 +64,7 @@
           "yearPublished": "2017",
           "slug": "behold-the-void-by-philip-fracassi",
           "grade": "B+",
+          "includedInSlugs": [],
           "authors": [
             {
               "name": "Philip Fracassi"
@@ -85,6 +77,24 @@
           "yearPublished": "2017",
           "slug": "fail-safe-by-philip-fracassi",
           "grade": "C",
+          "includedInSlugs": [
+            "behold-the-void-by-philip-fracassi"
+          ],
+          "authors": [
+            {
+              "name": "Philip Fracassi"
+            }
+          ]
+        },
+        {
+          "title": "The Horse Thief",
+          "kind": "Short Story",
+          "yearPublished": "2017",
+          "slug": "the-horse-thief-by-philip-fracassi",
+          "grade": "B",
+          "includedInSlugs": [
+            "behold-the-void-by-philip-fracassi"
+          ],
           "authors": [
             {
               "name": "Philip Fracassi"
@@ -101,6 +111,7 @@
       "yearPublished": "2018",
       "slug": "churchill-by-andrew-roberts",
       "grade": "A-",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Andrew Roberts"
@@ -113,6 +124,7 @@
       "yearPublished": "1991",
       "slug": "the-cipher-by-kathe-koja",
       "grade": "B",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Kathe Koja"
@@ -125,6 +137,7 @@
       "yearPublished": "2020",
       "slug": "consider-this-by-chuck-palahniuk",
       "grade": "B",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Chuck Palahniuk"
@@ -137,11 +150,13 @@
       "yearPublished": "2023",
       "slug": "the-creative-act-by-rick-rubin",
       "grade": "C+",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Rick Rubin"
         }
       ]
     }
-  ]
+  ],
+  "includedWorks": []
 }

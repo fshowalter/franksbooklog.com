@@ -115,6 +115,7 @@
           "yearPublished": "1977",
           "slug": "the-shining-by-stephen-king",
           "grade": "B",
+          "includedInSlugs": [],
           "authors": [
             {
               "name": "Stephen King"
@@ -127,6 +128,7 @@
           "yearPublished": "2000",
           "slug": "on-writing-by-stephen-king",
           "grade": "A-",
+          "includedInSlugs": [],
           "authors": [
             {
               "name": "Stephen King"
@@ -139,6 +141,7 @@
           "yearPublished": "1974",
           "slug": "carrie-by-stephen-king",
           "grade": "B-",
+          "includedInSlugs": [],
           "authors": [
             {
               "name": "Stephen King"
@@ -151,6 +154,7 @@
           "yearPublished": "1975",
           "slug": "salems-lot-by-stephen-king",
           "grade": "B",
+          "includedInSlugs": [],
           "authors": [
             {
               "name": "Stephen King"
@@ -167,6 +171,7 @@
       "yearPublished": "1944",
       "slug": "the-dark-tunnel-by-ross-macdonald",
       "grade": "D+",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Ross Macdonald"
@@ -179,6 +184,9 @@
       "yearPublished": "1970",
       "slug": "desert-pickup-by-richard-laymon",
       "grade": "C-",
+      "includedInSlugs": [
+        "short-stories-volume-one-by-richard-laymon"
+      ],
       "authors": [
         {
           "name": "Richard Laymon"
@@ -191,6 +199,7 @@
       "yearPublished": "2022",
       "slug": "dont-let-them-get-you-down-by-philip-fracassi",
       "grade": "C-",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Philip Fracassi"
@@ -203,11 +212,13 @@
       "yearPublished": "1897",
       "slug": "dracula-by-bram-stoker",
       "grade": "C+",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Bram Stoker"
         }
       ]
     }
-  ]
+  ],
+  "includedWorks": []
 }

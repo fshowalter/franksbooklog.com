@@ -80,6 +80,7 @@
       "yearPublished": "2023",
       "slug": "the-creative-act-by-rick-rubin",
       "grade": "C+",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Rick Rubin"
@@ -92,6 +93,7 @@
       "yearPublished": "2016",
       "slug": "cured-by-lol-tolhurst",
       "grade": "A-",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Lol Tolhurst"
@@ -104,6 +106,9 @@
       "yearPublished": "1970",
       "slug": "desert-pickup-by-richard-laymon",
       "grade": "C-",
+      "includedInSlugs": [
+        "short-stories-volume-one-by-richard-laymon"
+      ],
       "authors": [
         {
           "name": "Richard Laymon"
@@ -116,11 +121,13 @@
       "yearPublished": "2013",
       "slug": "doctor-sleep-by-stephen-king",
       "grade": "C+",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Stephen King"
         }
       ]
     }
-  ]
+  ],
+  "includedWorks": []
 }

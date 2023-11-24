@@ -77,6 +77,7 @@
           "yearPublished": "1980",
           "slug": "the-cellar-by-richard-laymon",
           "grade": "C+",
+          "includedInSlugs": [],
           "authors": [
             {
               "name": "Richard Laymon"
@@ -89,6 +90,7 @@
           "yearPublished": "1981",
           "slug": "the-woods-are-dark-by-richard-laymon",
           "grade": "C+",
+          "includedInSlugs": [],
           "authors": [
             {
               "name": "Richard Laymon"
@@ -101,6 +103,9 @@
           "yearPublished": "1970",
           "slug": "desert-pickup-by-richard-laymon",
           "grade": "C-",
+          "includedInSlugs": [
+            "short-stories-volume-one-by-richard-laymon"
+          ],
           "authors": [
             {
               "name": "Richard Laymon"
@@ -113,6 +118,9 @@
           "yearPublished": "1974",
           "slug": "roadside-pickup-by-richard-laymon",
           "grade": "C-",
+          "includedInSlugs": [
+            "short-stories-volume-one-by-richard-laymon"
+          ],
           "authors": [
             {
               "name": "Richard Laymon"
@@ -129,6 +137,9 @@
       "yearPublished": "2015",
       "slug": "mother-by-philip-fracassi",
       "grade": "B-",
+      "includedInSlugs": [
+        "behold-the-void-by-philip-fracassi"
+      ],
       "authors": [
         {
           "name": "Philip Fracassi"
@@ -141,6 +152,7 @@
       "yearPublished": "2000",
       "slug": "on-writing-by-stephen-king",
       "grade": "A-",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Stephen King"
@@ -153,6 +165,7 @@
       "yearPublished": "1934",
       "slug": "the-postman-always-rings-twice-by-james-m-cain",
       "grade": "B+",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "James M. Cain"
@@ -165,11 +178,13 @@
       "yearPublished": "2019",
       "slug": "record-play-pause-by-stephen-morris",
       "grade": "A",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Stephen Morris"
         }
       ]
     }
-  ]
+  ],
+  "includedWorks": []
 }

@@ -100,6 +100,7 @@
       "yearPublished": "1985",
       "slug": "fright-night-by-john-skipp-craig-spector",
       "grade": "F",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "John Skipp"
@@ -115,6 +116,7 @@
       "yearPublished": "2023",
       "slug": "fright-night-origins-by-tom-holland-a-jack-ulrich",
       "grade": "B-",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Tom Holland"
@@ -130,6 +132,9 @@
       "yearPublished": "2017",
       "slug": "the-horse-thief-by-philip-fracassi",
       "grade": "B",
+      "includedInSlugs": [
+        "behold-the-void-by-philip-fracassi"
+      ],
       "authors": [
         {
           "name": "Philip Fracassi"
@@ -142,11 +147,13 @@
       "yearPublished": "2017",
       "slug": "i-will-find-you-by-joe-kenda",
       "grade": "B",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Joe Kenda"
         }
       ]
     }
-  ]
+  ],
+  "includedWorks": []
 }

@@ -72,6 +72,7 @@
       "yearPublished": "1934",
       "slug": "the-postman-always-rings-twice-by-james-m-cain",
       "grade": "B+",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "James M. Cain"
@@ -84,6 +85,7 @@
       "yearPublished": "2019",
       "slug": "record-play-pause-by-stephen-morris",
       "grade": "A",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Stephen Morris"
@@ -96,6 +98,9 @@
       "yearPublished": "1974",
       "slug": "roadside-pickup-by-richard-laymon",
       "grade": "C-",
+      "includedInSlugs": [
+        "short-stories-volume-one-by-richard-laymon"
+      ],
       "authors": [
         {
           "name": "Richard Laymon"
@@ -108,11 +113,13 @@
       "yearPublished": "1987",
       "slug": "the-rules-of-attraction-by-bret-easton-ellis",
       "grade": "C+",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Bret Easton Ellis"
         }
       ]
     }
-  ]
+  ],
+  "includedWorks": []
 }

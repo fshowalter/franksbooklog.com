@@ -44,23 +44,14 @@
       "slug": "philip-fracassi",
       "works": [
         {
-          "title": "Altar",
-          "kind": "Short Story",
-          "yearPublished": "2016",
-          "slug": "altar-by-philip-fracassi",
-          "grade": "A-",
-          "authors": [
-            {
-              "name": "Philip Fracassi"
-            }
-          ]
-        },
-        {
-          "title": "Surfer Girl",
-          "kind": "Short Story",
+          "title": "Mandala",
+          "kind": "Novella",
           "yearPublished": "2017",
-          "slug": "surfer-girl-by-philip-fracassi",
-          "grade": "C+",
+          "slug": "mandala-by-philip-fracassi",
+          "grade": "B+",
+          "includedInSlugs": [
+            "behold-the-void-by-philip-fracassi"
+          ],
           "authors": [
             {
               "name": "Philip Fracassi"
@@ -73,6 +64,138 @@
           "yearPublished": "2017",
           "slug": "sacculina-by-philip-fracassi",
           "grade": "B",
+          "includedInSlugs": [],
+          "authors": [
+            {
+              "name": "Philip Fracassi"
+            }
+          ]
+        },
+        {
+          "title": "Surfer Girl",
+          "kind": "Short Story",
+          "yearPublished": "2017",
+          "slug": "surfer-girl-by-philip-fracassi",
+          "grade": "C+",
+          "includedInSlugs": [
+            "behold-the-void-by-philip-fracassi"
+          ],
+          "authors": [
+            {
+              "name": "Philip Fracassi"
+            }
+          ]
+        },
+        {
+          "title": "Don't Let Them Get You Down",
+          "kind": "Novel",
+          "yearPublished": "2022",
+          "slug": "dont-let-them-get-you-down-by-philip-fracassi",
+          "grade": "C-",
+          "includedInSlugs": [],
+          "authors": [
+            {
+              "name": "Philip Fracassi"
+            }
+          ]
+        },
+        {
+          "title": "Mother",
+          "kind": "Short Story",
+          "yearPublished": "2015",
+          "slug": "mother-by-philip-fracassi",
+          "grade": "B-",
+          "includedInSlugs": [
+            "behold-the-void-by-philip-fracassi"
+          ],
+          "authors": [
+            {
+              "name": "Philip Fracassi"
+            }
+          ]
+        },
+        {
+          "title": "Altar",
+          "kind": "Short Story",
+          "yearPublished": "2016",
+          "slug": "altar-by-philip-fracassi",
+          "grade": "A-",
+          "includedInSlugs": [
+            "behold-the-void-by-philip-fracassi"
+          ],
+          "authors": [
+            {
+              "name": "Philip Fracassi"
+            }
+          ]
+        },
+        {
+          "title": "The Baby Farmer",
+          "kind": "Short Story",
+          "yearPublished": "2017",
+          "slug": "the-baby-farmer-by-philip-fracassi",
+          "grade": "C+",
+          "includedInSlugs": [
+            "behold-the-void-by-philip-fracassi"
+          ],
+          "authors": [
+            {
+              "name": "Philip Fracassi"
+            }
+          ]
+        },
+        {
+          "title": "Behold the Void",
+          "kind": "Collection",
+          "yearPublished": "2017",
+          "slug": "behold-the-void-by-philip-fracassi",
+          "grade": "B+",
+          "includedInSlugs": [],
+          "authors": [
+            {
+              "name": "Philip Fracassi"
+            }
+          ]
+        },
+        {
+          "title": "Coffin",
+          "kind": "Short Story",
+          "yearPublished": "2017",
+          "slug": "coffin-by-philip-fracassi",
+          "grade": "C+",
+          "includedInSlugs": [
+            "behold-the-void-by-philip-fracassi"
+          ],
+          "authors": [
+            {
+              "name": "Philip Fracassi"
+            }
+          ]
+        },
+        {
+          "title": "Fail-Safe",
+          "kind": "Short Story",
+          "yearPublished": "2017",
+          "slug": "fail-safe-by-philip-fracassi",
+          "grade": "C",
+          "includedInSlugs": [
+            "behold-the-void-by-philip-fracassi"
+          ],
+          "authors": [
+            {
+              "name": "Philip Fracassi"
+            }
+          ]
+        },
+        {
+          "title": "The Horse Thief",
+          "kind": "Short Story",
+          "yearPublished": "2017",
+          "slug": "the-horse-thief-by-philip-fracassi",
+          "grade": "B",
+          "includedInSlugs": [
+            "behold-the-void-by-philip-fracassi"
+          ],
           "authors": [
             {
               "name": "Philip Fracassi"
@@ -85,6 +208,50 @@
           "yearPublished": "2017",
           "slug": "mandala-by-philip-fracassi",
           "grade": "B+",
+          "includedInSlugs": [
+            "behold-the-void-by-philip-fracassi"
+          ],
+          "authors": [
+            {
+              "name": "Philip Fracassi"
+            }
+          ]
+        },
+        {
+          "title": "Sacculina",
+          "kind": "Novella",
+          "yearPublished": "2017",
+          "slug": "sacculina-by-philip-fracassi",
+          "grade": "B",
+          "includedInSlugs": [],
+          "authors": [
+            {
+              "name": "Philip Fracassi"
+            }
+          ]
+        },
+        {
+          "title": "Surfer Girl",
+          "kind": "Short Story",
+          "yearPublished": "2017",
+          "slug": "surfer-girl-by-philip-fracassi",
+          "grade": "C+",
+          "includedInSlugs": [
+            "behold-the-void-by-philip-fracassi"
+          ],
+          "authors": [
+            {
+              "name": "Philip Fracassi"
+            }
+          ]
+        },
+        {
+          "title": "Don't Let Them Get You Down",
+          "kind": "Novel",
+          "yearPublished": "2022",
+          "slug": "dont-let-them-get-you-down-by-philip-fracassi",
+          "grade": "C-",
+          "includedInSlugs": [],
           "authors": [
             {
               "name": "Philip Fracassi"
@@ -101,6 +268,7 @@
       "yearPublished": "1977",
       "slug": "the-shining-by-stephen-king",
       "grade": "B",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Stephen King"
@@ -113,6 +281,7 @@
       "yearPublished": "2018",
       "slug": "the-skeptics-guide-to-the-universe-by-steven-novella",
       "grade": "B+",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Steven Novella"
@@ -125,6 +294,7 @@
       "yearPublished": "2012",
       "slug": "the-max-muscle-plan-by-brad-schoenfeld",
       "grade": "C-",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Brad Schoenfeld"
@@ -137,11 +307,13 @@
       "yearPublished": "2012",
       "slug": "total-recall-by-arnold-schwarzenegger",
       "grade": "C+",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Arnold Schwarzenegger"
         }
       ]
     }
-  ]
+  ],
+  "includedWorks": []
 }

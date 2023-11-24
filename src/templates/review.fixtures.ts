@@ -2,7 +2,7 @@ export const data = {
   reviewedWork: {
     title: "Behold the Void",
     subtitle: null,
-    yearPublished: 2017,
+    yearPublished: "2017",
     kind: "Collection",
     grade: "B+",
     authors: [
@@ -14,19 +14,6 @@ export const data = {
     ],
     includedWorks: [
       {
-        id: "1ebfcdcd-2045-5367-9c3c-3b6e2060b57d",
-        title: "Soft Construction of a Sunset",
-        authors: [
-          {
-            name: "Philip Fracassi",
-            slug: "philip-fracassi",
-          },
-        ],
-        grade: "B-",
-        slug: "soft-construction-of-a-sunset-by-philip-fracassi",
-      },
-      {
-        id: "23a80784-8a84-54f0-adfd-d7b052a9ea9c",
         title: "Altar",
         authors: [
           {
@@ -38,19 +25,17 @@ export const data = {
         slug: "altar-by-philip-fracassi",
       },
       {
-        id: "e3b39c80-3d0a-513f-a33a-d2381e1a782d",
-        title: "The Horse Thief",
+        title: "The Baby Farmer",
         authors: [
           {
             name: "Philip Fracassi",
             slug: "philip-fracassi",
           },
         ],
-        grade: "B",
-        slug: "the-horse-thief-by-philip-fracassi",
+        grade: "C+",
+        slug: "the-baby-farmer-by-philip-fracassi",
       },
       {
-        id: "2878c0be-b62e-5df8-9bdc-3842edef55dd",
         title: "Coffin",
         authors: [
           {
@@ -62,43 +47,6 @@ export const data = {
         slug: "coffin-by-philip-fracassi",
       },
       {
-        id: "58bd3f48-5fa0-5aec-9652-ba7ca504ca4a",
-        title: "The Baby Farmer",
-        authors: [
-          {
-            name: "Philip Fracassi",
-            slug: "philip-fracassi",
-          },
-        ],
-        grade: "C+",
-        slug: "the-baby-farmer-by-philip-fracassi",
-      },
-      {
-        id: "774db6c4-be75-5340-bbd7-fef10c0738bd",
-        title: "Surfer Girl",
-        authors: [
-          {
-            name: "Philip Fracassi",
-            slug: "philip-fracassi",
-          },
-        ],
-        grade: "C+",
-        slug: "surfer-girl-by-philip-fracassi",
-      },
-      {
-        id: "d42e5990-b670-529c-b880-1db684fca272",
-        title: "Mother",
-        authors: [
-          {
-            name: "Philip Fracassi",
-            slug: "philip-fracassi",
-          },
-        ],
-        grade: "B-",
-        slug: "mother-by-philip-fracassi",
-      },
-      {
-        id: "11b04af5-500f-55db-9e16-77b53f52efe3",
         title: "Fail-Safe",
         authors: [
           {
@@ -110,7 +58,17 @@ export const data = {
         slug: "fail-safe-by-philip-fracassi",
       },
       {
-        id: "c35b98ec-134e-5a0b-be77-af82bc4f6eb3",
+        title: "The Horse Thief",
+        authors: [
+          {
+            name: "Philip Fracassi",
+            slug: "philip-fracassi",
+          },
+        ],
+        grade: "B",
+        slug: "the-horse-thief-by-philip-fracassi",
+      },
+      {
         title: "Mandala",
         authors: [
           {
@@ -121,73 +79,67 @@ export const data = {
         grade: "B+",
         slug: "mandala-by-philip-fracassi",
       },
-    ],
-    browseMore: [
       {
-        id: "23a80784-8a84-54f0-adfd-d7b052a9ea9c",
-        title: "Altar",
-        yearPublished: 2016,
-        kind: "Short Story",
+        title: "Mother",
         authors: [
           {
             name: "Philip Fracassi",
+            slug: "philip-fracassi",
           },
         ],
-        grade: "A-",
-        slug: "altar-by-philip-fracassi",
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "constrained" as const,
-              images: {
-                fallback: {
-                  src: "/static/1de200a682b62e4daf7358cd87072d87/31a1c/behold-the-void-by-philip-fracassi.jpg",
-                  srcSet:
-                    "/static/1de200a682b62e4daf7358cd87072d87/5bc78/behold-the-void-by-philip-fracassi.jpg 62w,\n/static/1de200a682b62e4daf7358cd87072d87/59d5c/behold-the-void-by-philip-fracassi.jpg 124w,\n/static/1de200a682b62e4daf7358cd87072d87/31a1c/behold-the-void-by-philip-fracassi.jpg 248w,\n/static/1de200a682b62e4daf7358cd87072d87/a5166/behold-the-void-by-philip-fracassi.jpg 496w",
-                  sizes: "(min-width: 248px) 248px, 100vw",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/1de200a682b62e4daf7358cd87072d87/6b3a6/behold-the-void-by-philip-fracassi.avif 62w,\n/static/1de200a682b62e4daf7358cd87072d87/3c542/behold-the-void-by-philip-fracassi.avif 124w,\n/static/1de200a682b62e4daf7358cd87072d87/c155b/behold-the-void-by-philip-fracassi.avif 248w,\n/static/1de200a682b62e4daf7358cd87072d87/1ad14/behold-the-void-by-philip-fracassi.avif 496w",
-                    type: "image/avif",
-                    sizes: "(min-width: 248px) 248px, 100vw",
-                  },
-                ],
-              },
-              width: 248,
-              height: 372,
-            },
-          },
-        },
+        grade: "B-",
+        slug: "mother-by-philip-fracassi",
       },
       {
-        id: "58bd3f48-5fa0-5aec-9652-ba7ca504ca4a",
-        title: "The Baby Farmer",
-        yearPublished: 2017,
-        kind: "Short Story",
+        title: "Soft Construction of a Sunset",
         authors: [
           {
             name: "Philip Fracassi",
+            slug: "philip-fracassi",
+          },
+        ],
+        grade: "B-",
+        slug: "soft-construction-of-a-sunset-by-philip-fracassi",
+      },
+      {
+        title: "Surfer Girl",
+        authors: [
+          {
+            name: "Philip Fracassi",
+            slug: "philip-fracassi",
           },
         ],
         grade: "C+",
-        slug: "the-baby-farmer-by-philip-fracassi",
+        slug: "surfer-girl-by-philip-fracassi",
+      },
+    ],
+    moreReviews: [
+      {
+        title: "The 48 Laws of Power",
+        yearPublished: "1998",
+        kind: "Nonfiction",
+        authors: [
+          {
+            name: "Robert Greene",
+          },
+        ],
+        grade: "D+",
+        slug: "the-48-laws-of-power-by-robert-greene",
         cover: {
           childImageSharp: {
             gatsbyImageData: {
               layout: "constrained" as const,
               images: {
                 fallback: {
-                  src: "/static/1de200a682b62e4daf7358cd87072d87/31a1c/behold-the-void-by-philip-fracassi.jpg",
+                  src: "/static/f21f66ac9915b4111f60f91f94e09335/31a1c/the-48-laws-of-power-by-robert-greene.jpg",
                   srcSet:
-                    "/static/1de200a682b62e4daf7358cd87072d87/5bc78/behold-the-void-by-philip-fracassi.jpg 62w,\n/static/1de200a682b62e4daf7358cd87072d87/59d5c/behold-the-void-by-philip-fracassi.jpg 124w,\n/static/1de200a682b62e4daf7358cd87072d87/31a1c/behold-the-void-by-philip-fracassi.jpg 248w,\n/static/1de200a682b62e4daf7358cd87072d87/a5166/behold-the-void-by-philip-fracassi.jpg 496w",
+                    "/static/f21f66ac9915b4111f60f91f94e09335/5bc78/the-48-laws-of-power-by-robert-greene.jpg 62w,\n/static/f21f66ac9915b4111f60f91f94e09335/59d5c/the-48-laws-of-power-by-robert-greene.jpg 124w,\n/static/f21f66ac9915b4111f60f91f94e09335/31a1c/the-48-laws-of-power-by-robert-greene.jpg 248w,\n/static/f21f66ac9915b4111f60f91f94e09335/a5166/the-48-laws-of-power-by-robert-greene.jpg 496w",
                   sizes: "(min-width: 248px) 248px, 100vw",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/1de200a682b62e4daf7358cd87072d87/6b3a6/behold-the-void-by-philip-fracassi.avif 62w,\n/static/1de200a682b62e4daf7358cd87072d87/3c542/behold-the-void-by-philip-fracassi.avif 124w,\n/static/1de200a682b62e4daf7358cd87072d87/c155b/behold-the-void-by-philip-fracassi.avif 248w,\n/static/1de200a682b62e4daf7358cd87072d87/1ad14/behold-the-void-by-philip-fracassi.avif 496w",
+                      "/static/f21f66ac9915b4111f60f91f94e09335/6b3a6/the-48-laws-of-power-by-robert-greene.avif 62w,\n/static/f21f66ac9915b4111f60f91f94e09335/3c542/the-48-laws-of-power-by-robert-greene.avif 124w,\n/static/f21f66ac9915b4111f60f91f94e09335/c155b/the-48-laws-of-power-by-robert-greene.avif 248w,\n/static/f21f66ac9915b4111f60f91f94e09335/1ad14/the-48-laws-of-power-by-robert-greene.avif 496w",
                     type: "image/avif",
                     sizes: "(min-width: 248px) 248px, 100vw",
                   },
@@ -200,9 +152,48 @@ export const data = {
         },
       },
       {
-        id: "f8b4fff9-8acb-5b38-bac6-46634ed1219c",
+        title: "About Face",
+        yearPublished: "1989",
+        kind: "Nonfiction",
+        authors: [
+          {
+            name: "David H. Hackworth",
+          },
+          {
+            name: "Julie Sherman",
+          },
+        ],
+        grade: "A-",
+        slug: "about-face-by-david-h-hackworth-julie-sherman",
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "constrained" as const,
+              images: {
+                fallback: {
+                  src: "/static/c90cce755e6e70178a3b247cba548e64/31a1c/about-face-by-david-h-hackworth-julie-sherman.jpg",
+                  srcSet:
+                    "/static/c90cce755e6e70178a3b247cba548e64/5bc78/about-face-by-david-h-hackworth-julie-sherman.jpg 62w,\n/static/c90cce755e6e70178a3b247cba548e64/59d5c/about-face-by-david-h-hackworth-julie-sherman.jpg 124w,\n/static/c90cce755e6e70178a3b247cba548e64/31a1c/about-face-by-david-h-hackworth-julie-sherman.jpg 248w,\n/static/c90cce755e6e70178a3b247cba548e64/a5166/about-face-by-david-h-hackworth-julie-sherman.jpg 496w",
+                  sizes: "(min-width: 248px) 248px, 100vw",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/c90cce755e6e70178a3b247cba548e64/6b3a6/about-face-by-david-h-hackworth-julie-sherman.avif 62w,\n/static/c90cce755e6e70178a3b247cba548e64/3c542/about-face-by-david-h-hackworth-julie-sherman.avif 124w,\n/static/c90cce755e6e70178a3b247cba548e64/c155b/about-face-by-david-h-hackworth-julie-sherman.avif 248w,\n/static/c90cce755e6e70178a3b247cba548e64/1ad14/about-face-by-david-h-hackworth-julie-sherman.avif 496w",
+                    type: "image/avif",
+                    sizes: "(min-width: 248px) 248px, 100vw",
+                  },
+                ],
+              },
+              width: 248,
+              height: 372,
+            },
+          },
+        },
+      },
+      {
         title: "The Big Sleep",
-        yearPublished: 1939,
+        yearPublished: "1939",
         kind: "Novel",
         authors: [
           {
@@ -238,9 +229,8 @@ export const data = {
         },
       },
       {
-        id: "e31f5fb5-e826-5592-9e89-cd4c1e0c1013",
         title: "Brother Iron, Sister Steel",
-        yearPublished: 2001,
+        yearPublished: "2001",
         kind: "Nonfiction",
         authors: [
           {
@@ -278,16 +268,16 @@ export const data = {
     ],
     review: {
       linkedHtml:
-        '<p>An accomplished debut collection from Fracassi. ”<a href="/reviews/undefined/">Altar</a>” shines with <a href="/reviews/undefined/"><em>Mandala</em></a> a strong second. Not a below average entry in the bunch. And I loved the author’s notes section, where Fracassi grants insight into each story’s origin (and confirms my thoughts <em>Mandala</em>’s ending).</p>',
+        '<p>An accomplished debut collection from Fracassi. ”<a href="/reviews/altar-by-philip-fracassi/">Altar</a>” shines with <a href="/reviews/mandala-by-philip-fracassi/"><em>Mandala</em></a> a strong second. Not a below average entry in the bunch. And I loved the author’s notes section, where Fracassi grants insight into each story’s origin (and confirms my thoughts <em>Mandala</em>’s ending).</p>',
       date: "May 07, 2022",
     },
     readings: [
       {
         date: "Sat May 07, 2022",
         edition: "Kindle",
-        editionNotes: "<span>Lovecraft eZine Press, 2018</span>",
+        editionNotes: "Lovecraft eZine Press, 2018",
         isAudiobook: false,
-        readingTime: 20,
+        readingTime: 21,
         abandoned: false,
         readingNote: null,
         sequence: 17,
@@ -338,10 +328,10 @@ export const data = {
     cover: {
       childImageSharp: {
         gatsbyImageData: {
-          layout: "fixed" as const,
+          layout: "fixed",
           placeholder: {
             fallback:
-              "data:image/png;base64,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",
+              "data:image/png;base64,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",
           },
           images: {
             fallback: {
@@ -378,7 +368,7 @@ export const abandonedData = {
   reviewedWork: {
     title: "Living with a SEAL",
     subtitle: "31 Days Training with the Toughest Man on the Planet",
-    yearPublished: 2015,
+    yearPublished: "2015",
     kind: "Nonfiction",
     grade: "Abandoned",
     authors: [
@@ -389,11 +379,10 @@ export const abandonedData = {
       },
     ],
     includedWorks: [],
-    browseMore: [
+    moreReviews: [
       {
-        id: "e12e7349-9550-5517-b060-c5f2080070da",
         title: "Less Than Zero",
-        yearPublished: 1985,
+        yearPublished: "1985",
         kind: "Novel",
         authors: [
           {
@@ -429,9 +418,8 @@ export const abandonedData = {
         },
       },
       {
-        id: "a713e8dd-da5b-5a84-8547-a509eb22a73b",
         title: "Live and Let Die",
-        yearPublished: 1954,
+        yearPublished: "1954",
         kind: "Novel",
         authors: [
           {
@@ -467,9 +455,8 @@ export const abandonedData = {
         },
       },
       {
-        id: "c35b98ec-134e-5a0b-be77-af82bc4f6eb3",
         title: "Mandala",
-        yearPublished: 2017,
+        yearPublished: "2017",
         kind: "Novella",
         authors: [
           {
@@ -505,9 +492,8 @@ export const abandonedData = {
         },
       },
       {
-        id: "92cf5ca7-a9cd-5b6e-9385-9ee51e7f0c6c",
         title: "Moonraker",
-        yearPublished: 1955,
+        yearPublished: "1955",
         kind: "Novel",
         authors: [
           {
@@ -545,16 +531,16 @@ export const abandonedData = {
     ],
     review: {
       linkedHtml:
-        '<p>Serial entrepreneur Jesse Itzler invites a former US Navy SEAL to shadow and train him for a month.</p>\n<!-- end -->\n<p>The premise hooked me, but the execution underwhelmed. Midway through, Itzler reveals the book’s origin as a blog he circulated amongst his friends. The book retains the format. Each chapter chronicles a day in Itzler’s life interspersed with the SEAL pushing him through grueling workouts comprising freezing runs and grueling push-up and pull-up sets. Each chapter ends with the day’s total miles run and push-ups and pull-ups performed.</p>\n<p>I read this during a cross-Atlantic plane ride. Even as a captive audience, it struggled to hold my attention, and after a few chapters, I’d put it down in favor of an audiobook or podcast. Then, after my ears needed a break, I’d return and read a few more chapters before repeating the cycle. Now that I’m home, I’ve abandoned it.</p>\n<p>Itzler, while affable and a competent writer, proves an uncompelling subject. To pad the length, he includes autobiographical anecdotes, such as how he broke into the recording business, met his wife, and started his private jet business. These didn’t interest me. I came for the SEAL, but Itzler paints him as an enigma bordering on caricature.</p>\n<p>Fortunately, Itzler later identified the SEAL as David Goggins, who wrote his own story, <a href="/reviews/undefined/"><em>Can’t Hurt Me</em></a>, which I look forward to listening to in his own words.</p>',
+        '<p>Serial entrepreneur Jesse Itzler invites a former US Navy SEAL to shadow and train him for a month.</p>\n<!-- end -->\n<p>The premise hooked me, but the execution underwhelmed. Midway through, Itzler reveals the book’s origin as a blog he circulated amongst his friends. The book retains the format. Each chapter chronicles a day in Itzler’s life interspersed with the SEAL pushing him through grueling workouts comprising freezing runs and grueling push-up and pull-up sets. Each chapter ends with the day’s total miles run and push-ups and pull-ups performed.</p>\n<p>I read this during a cross-Atlantic plane ride. Even as a captive audience, it struggled to hold my attention, and after a few chapters, I’d put it down in favor of an audiobook or podcast. Then, after my ears needed a break, I’d return and read a few more chapters before repeating the cycle. Now that I’m home, I’ve abandoned it.</p>\n<p>Itzler, while affable and a competent writer, proves an uncompelling subject. To pad the length, he includes autobiographical anecdotes, such as how he broke into the recording business, met his wife, and started his private jet business. These didn’t interest me. I came for the SEAL, but Itzler paints him as an enigma bordering on caricature.</p>\n<p>Fortunately, Itzler later identified the SEAL as David Goggins, who wrote his own story, <a href="/reviews/cant-hurt-me-by-david-goggins/"><em>Can’t Hurt Me</em></a>, which I look forward to listening to in his own words.</p>',
       date: "Jun 01, 2022",
     },
     readings: [
       {
         date: "Wed Jun 01, 2022",
         edition: "Kindle",
-        editionNotes: "<span>Center Street, 2015</span>",
+        editionNotes: "Center Street, 2015",
         isAudiobook: false,
-        readingTime: 8,
+        readingTime: 9,
         abandoned: true,
         readingNote: null,
         sequence: 20,
@@ -577,10 +563,10 @@ export const abandonedData = {
     cover: {
       childImageSharp: {
         gatsbyImageData: {
-          layout: "fixed" as const,
+          layout: "fixed",
           placeholder: {
             fallback:
-              "data:image/png;base64,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",
+              "data:image/png;base64,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",
           },
           images: {
             fallback: {
@@ -617,7 +603,7 @@ export const readingNoteData = {
   reviewedWork: {
     title: "The Shining",
     subtitle: null,
-    yearPublished: 1977,
+    yearPublished: "1977",
     kind: "Novel",
     grade: "B",
     authors: [
@@ -628,11 +614,10 @@ export const readingNoteData = {
       },
     ],
     includedWorks: [],
-    browseMore: [
+    moreReviews: [
       {
-        id: "318d0d57-7b37-52ed-b35f-0f27cde06984",
         title: "The Secret History",
-        yearPublished: 1992,
+        yearPublished: "1992",
         kind: "Novel",
         authors: [
           {
@@ -668,9 +653,8 @@ export const readingNoteData = {
         },
       },
       {
-        id: "f74688f3-9d5b-5677-8c7b-e55166b34d06",
         title: "Set the Boy Free",
-        yearPublished: 2016,
+        yearPublished: "2016",
         kind: "Nonfiction",
         authors: [
           {
@@ -706,9 +690,8 @@ export const readingNoteData = {
         },
       },
       {
-        id: "84c8e0e6-1682-5dcb-b01f-34914880512c",
         title: "The Skeptics' Guide to the Universe",
-        yearPublished: 2018,
+        yearPublished: "2018",
         kind: "Nonfiction",
         authors: [
           {
@@ -744,9 +727,8 @@ export const readingNoteData = {
         },
       },
       {
-        id: "1ebfcdcd-2045-5367-9c3c-3b6e2060b57d",
         title: "Soft Construction of a Sunset",
-        yearPublished: 2017,
+        yearPublished: "2017",
         kind: "Short Story",
         authors: [
           {
@@ -791,9 +773,9 @@ export const readingNoteData = {
       {
         date: "Sat Oct 29, 2022",
         edition: "Audible",
-        editionNotes: "<span>Read by Campbell Scott</span>",
+        editionNotes: "Read by Campbell Scott",
         isAudiobook: true,
-        readingTime: 13,
+        readingTime: 14,
         abandoned: false,
         readingNote: {
           linkedHtml:
@@ -843,10 +825,10 @@ export const readingNoteData = {
     cover: {
       childImageSharp: {
         gatsbyImageData: {
-          layout: "fixed" as const,
+          layout: "fixed",
           placeholder: {
             fallback:
-              "data:image/png;base64,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",
+              "data:image/png;base64,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",
           },
           images: {
             fallback: {

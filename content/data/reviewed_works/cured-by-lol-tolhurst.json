@@ -52,6 +52,7 @@
       "yearPublished": "2020",
       "slug": "consider-this-by-chuck-palahniuk",
       "grade": "B",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Chuck Palahniuk"
@@ -64,6 +65,7 @@
       "yearPublished": "2023",
       "slug": "the-creative-act-by-rick-rubin",
       "grade": "C+",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Rick Rubin"
@@ -76,6 +78,7 @@
       "yearPublished": "1944",
       "slug": "the-dark-tunnel-by-ross-macdonald",
       "grade": "D+",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Ross Macdonald"
@@ -88,11 +91,15 @@
       "yearPublished": "1970",
       "slug": "desert-pickup-by-richard-laymon",
       "grade": "C-",
+      "includedInSlugs": [
+        "short-stories-volume-one-by-richard-laymon"
+      ],
       "authors": [
         {
           "name": "Richard Laymon"
         }
       ]
     }
-  ]
+  ],
+  "includedWorks": []
 }

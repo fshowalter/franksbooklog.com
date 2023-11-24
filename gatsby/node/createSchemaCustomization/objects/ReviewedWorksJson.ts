@@ -1,12 +1,26 @@
+import { Node } from "hast";
+import toHtml from "hast-util-to-html";
+import toHast from "mdast-util-to-hast";
+import remark from "remark";
 import { SchemaNames } from "../schemaNames";
 import type { GatsbyNode } from "../type-definitions";
 import { GatsbyNodeContext } from "../type-definitions";
 import { coverResolver } from "./utils/coverResolver";
 
-export interface ReviewedWorkNode extends GatsbyNode {
+export interface ReviewedWorksJsonNode extends GatsbyNode {
   slug: string;
   sequence: number;
   includedInSlugs: string[];
+}
+
+interface ReviewedWorksJsonReadingNode {
+  editionNotes: string;
+}
+
+interface IHastNode extends Node {
+  children: {
+    tagName: string;
+  }[];
 }
 
 export const ReviewedWorksJsonWorkAuthor = {
@@ -44,10 +58,11 @@ export const ReviewedWorksJsonMoreWork = {
   fields: {
     title: "String!",
     kind: "String!",
-    yearPublished: "String",
+    yearPublished: "String!",
     slug: "String!",
     grade: "String",
     authors: `[${SchemaNames.ReviewedWorksJsonMoreWorkAuthor}!]!`,
+    includedInSlugs: "[String!]!",
     cover: {
       type: "File!",
       resolve: coverResolver,
@@ -97,7 +112,29 @@ export const ReviewedWorksJsonReading = {
       },
     },
     edition: "String!",
-    editionNotes: "String",
+    editionNotes: {
+      type: "String",
+      resolve: (source: ReviewedWorksJsonReadingNode) => {
+        if (!source.editionNotes) {
+          return null;
+        }
+
+        const mdast = remark().parse(source.editionNotes);
+
+        const hast = toHast(mdast, {
+          allowDangerousHtml: true,
+        }) as IHastNode;
+
+        hast.children[0].tagName = "span";
+
+        return toHtml(hast, {
+          allowDangerousHtml: true,
+        });
+      },
+      extensions: {
+        linkReviewedWorks: {},
+      },
+    },
     isAudiobook: "Boolean!",
     abandoned: "Boolean!",
     timeline: `[${SchemaNames.ReviewedWorksJsonReadingTimelineEntry}!]!`,
@@ -157,7 +194,7 @@ export const ReviewedWorksJson = {
     gradeValue: `Int!`,
     readings: `[${SchemaNames.ReviewedWorksJsonReading}!]!`,
     moreByAuthors: `[${SchemaNames.ReviewedWorksJsonMoreByAuthor}!]!`,
-    moreWorks: `[${SchemaNames.ReviewedWorksJsonMoreWork}!]!`,
+    moreReviews: `[${SchemaNames.ReviewedWorksJsonMoreWork}!]!`,
     includedWorks: `[${SchemaNames.ReviewedWorksJsonIncludedWork}!]!`,
     review: {
       type: `${SchemaNames.MarkdownRemark}!`,

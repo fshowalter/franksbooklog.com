@@ -60,6 +60,7 @@
       "yearPublished": "2017",
       "slug": "i-will-find-you-by-joe-kenda",
       "grade": "B",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Joe Kenda"
@@ -72,6 +73,7 @@
       "yearPublished": "2020",
       "slug": "is-this-anything-by-jerry-seinfeld",
       "grade": "C",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Jerry Seinfeld"
@@ -84,6 +86,7 @@
       "yearPublished": "1954",
       "slug": "live-and-let-die-by-ian-fleming",
       "grade": "D",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Ian Fleming"
@@ -96,11 +99,13 @@
       "yearPublished": "2015",
       "slug": "living-with-a-seal-by-jesse-itzler",
       "grade": "Abandoned",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Jesse Itzler"
         }
       ]
     }
-  ]
+  ],
+  "includedWorks": []
 }

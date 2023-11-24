@@ -68,6 +68,7 @@
       "yearPublished": "1953",
       "slug": "casino-royale-by-ian-fleming",
       "grade": "B-",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Ian Fleming"
@@ -80,6 +81,7 @@
       "yearPublished": "1980",
       "slug": "the-cellar-by-richard-laymon",
       "grade": "C+",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Richard Laymon"
@@ -92,6 +94,7 @@
       "yearPublished": "1991",
       "slug": "the-cipher-by-kathe-koja",
       "grade": "B",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Kathe Koja"
@@ -104,11 +107,15 @@
       "yearPublished": "2017",
       "slug": "coffin-by-philip-fracassi",
       "grade": "C+",
+      "includedInSlugs": [
+        "behold-the-void-by-philip-fracassi"
+      ],
       "authors": [
         {
           "name": "Philip Fracassi"
         }
       ]
     }
-  ]
+  ],
+  "includedWorks": []
 }

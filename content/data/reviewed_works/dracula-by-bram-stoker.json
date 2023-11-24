@@ -60,6 +60,7 @@
       "yearPublished": "2013",
       "slug": "doctor-sleep-by-stephen-king",
       "grade": "C+",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Stephen King"
@@ -72,6 +73,7 @@
       "yearPublished": "2022",
       "slug": "dont-let-them-get-you-down-by-philip-fracassi",
       "grade": "C-",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Philip Fracassi"
@@ -84,6 +86,7 @@
       "yearPublished": "2013",
       "slug": "draft-no-4-by-john-mcphee",
       "grade": "C",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "John McPhee"
@@ -96,6 +99,7 @@
       "yearPublished": "2015",
       "slug": "extreme-ownership-by-jocko-willink-leif-babin",
       "grade": "A",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Jocko Willink"
@@ -105,5 +109,6 @@
         }
       ]
     }
-  ]
+  ],
+  "includedWorks": []
 }

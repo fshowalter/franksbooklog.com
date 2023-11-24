@@ -48,6 +48,7 @@
       "yearPublished": "1991",
       "slug": "the-cipher-by-kathe-koja",
       "grade": "B",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Kathe Koja"
@@ -60,6 +61,9 @@
       "yearPublished": "2017",
       "slug": "coffin-by-philip-fracassi",
       "grade": "C+",
+      "includedInSlugs": [
+        "behold-the-void-by-philip-fracassi"
+      ],
       "authors": [
         {
           "name": "Philip Fracassi"
@@ -72,6 +76,7 @@
       "yearPublished": "2023",
       "slug": "the-creative-act-by-rick-rubin",
       "grade": "C+",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Rick Rubin"
@@ -84,11 +89,13 @@
       "yearPublished": "2016",
       "slug": "cured-by-lol-tolhurst",
       "grade": "A-",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Lol Tolhurst"
         }
       ]
     }
-  ]
+  ],
+  "includedWorks": []
 }

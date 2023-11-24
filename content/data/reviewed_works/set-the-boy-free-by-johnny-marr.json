@@ -48,6 +48,7 @@
       "yearPublished": "2017",
       "slug": "sacculina-by-philip-fracassi",
       "grade": "B",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Philip Fracassi"
@@ -60,6 +61,7 @@
       "yearPublished": "1992",
       "slug": "the-secret-history-by-donna-tartt",
       "grade": "A",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Donna Tartt"
@@ -72,6 +74,7 @@
       "yearPublished": "1977",
       "slug": "the-shining-by-stephen-king",
       "grade": "B",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Stephen King"
@@ -84,11 +87,13 @@
       "yearPublished": "2018",
       "slug": "the-skeptics-guide-to-the-universe-by-steven-novella",
       "grade": "B+",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Steven Novella"
         }
       ]
     }
-  ]
+  ],
+  "includedWorks": []
 }

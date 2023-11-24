@@ -56,6 +56,9 @@
       "yearPublished": "2017",
       "slug": "the-horse-thief-by-philip-fracassi",
       "grade": "B",
+      "includedInSlugs": [
+        "behold-the-void-by-philip-fracassi"
+      ],
       "authors": [
         {
           "name": "Philip Fracassi"
@@ -68,6 +71,7 @@
       "yearPublished": "2017",
       "slug": "i-will-find-you-by-joe-kenda",
       "grade": "B",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Joe Kenda"
@@ -80,6 +84,7 @@
       "yearPublished": "1985",
       "slug": "less-than-zero-by-bret-easton-ellis",
       "grade": "B+",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Bret Easton Ellis"
@@ -92,11 +97,13 @@
       "yearPublished": "1954",
       "slug": "live-and-let-die-by-ian-fleming",
       "grade": "D",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Ian Fleming"
         }
       ]
     }
-  ]
+  ],
+  "includedWorks": []
 }

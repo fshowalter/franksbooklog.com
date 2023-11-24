@@ -44,23 +44,12 @@
       "slug": "philip-fracassi",
       "works": [
         {
-          "title": "Coffin",
-          "kind": "Short Story",
-          "yearPublished": "2017",
-          "slug": "coffin-by-philip-fracassi",
-          "grade": "C+",
-          "authors": [
-            {
-              "name": "Philip Fracassi"
-            }
-          ]
-        },
-        {
           "title": "Behold the Void",
           "kind": "Collection",
           "yearPublished": "2017",
           "slug": "behold-the-void-by-philip-fracassi",
           "grade": "B+",
+          "includedInSlugs": [],
           "authors": [
             {
               "name": "Philip Fracassi"
@@ -68,23 +57,44 @@
           ]
         },
         {
-          "title": "Don't Let Them Get You Down",
-          "kind": "Novel",
-          "yearPublished": "2022",
-          "slug": "dont-let-them-get-you-down-by-philip-fracassi",
-          "grade": "C-",
-          "authors": [
-            {
-              "name": "Philip Fracassi"
-            }
-          ]
-        },
-        {
-          "title": "Mother",
+          "title": "Coffin",
           "kind": "Short Story",
-          "yearPublished": "2015",
-          "slug": "mother-by-philip-fracassi",
-          "grade": "B-",
+          "yearPublished": "2017",
+          "slug": "coffin-by-philip-fracassi",
+          "grade": "C+",
+          "includedInSlugs": [
+            "behold-the-void-by-philip-fracassi"
+          ],
+          "authors": [
+            {
+              "name": "Philip Fracassi"
+            }
+          ]
+        },
+        {
+          "title": "The Horse Thief",
+          "kind": "Short Story",
+          "yearPublished": "2017",
+          "slug": "the-horse-thief-by-philip-fracassi",
+          "grade": "B",
+          "includedInSlugs": [
+            "behold-the-void-by-philip-fracassi"
+          ],
+          "authors": [
+            {
+              "name": "Philip Fracassi"
+            }
+          ]
+        },
+        {
+          "title": "Mandala",
+          "kind": "Novella",
+          "yearPublished": "2017",
+          "slug": "mandala-by-philip-fracassi",
+          "grade": "B+",
+          "includedInSlugs": [
+            "behold-the-void-by-philip-fracassi"
+          ],
           "authors": [
             {
               "name": "Philip Fracassi"
@@ -101,6 +111,7 @@
       "yearPublished": "2013",
       "slug": "draft-no-4-by-john-mcphee",
       "grade": "C",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "John McPhee"
@@ -113,6 +124,7 @@
       "yearPublished": "2015",
       "slug": "extreme-ownership-by-jocko-willink-leif-babin",
       "grade": "A",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Jocko Willink"
@@ -128,6 +140,7 @@
       "yearPublished": "1996",
       "slug": "fight-club-by-chuck-palahniuk",
       "grade": "A-",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Chuck Palahniuk"
@@ -140,6 +153,7 @@
       "yearPublished": "1985",
       "slug": "fright-night-by-john-skipp-craig-spector",
       "grade": "F",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "John Skipp"
@@ -149,5 +163,6 @@
         }
       ]
     }
-  ]
+  ],
+  "includedWorks": []
 }

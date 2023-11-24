@@ -60,6 +60,7 @@
       "yearPublished": "1939",
       "slug": "the-big-sleep-by-raymond-chandler",
       "grade": "C+",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Raymond Chandler"
@@ -72,6 +73,7 @@
       "yearPublished": "2001",
       "slug": "brother-iron-sister-steel-by-dave-draper",
       "grade": "C",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Dave Draper"
@@ -84,6 +86,7 @@
       "yearPublished": "1974",
       "slug": "carrie-by-stephen-king",
       "grade": "B-",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Stephen King"
@@ -96,11 +99,13 @@
       "yearPublished": "1953",
       "slug": "casino-royale-by-ian-fleming",
       "grade": "B-",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Ian Fleming"
         }
       ]
     }
-  ]
+  ],
+  "includedWorks": []
 }

@@ -79,6 +79,7 @@
           "yearPublished": "1974",
           "slug": "carrie-by-stephen-king",
           "grade": "B-",
+          "includedInSlugs": [],
           "authors": [
             {
               "name": "Stephen King"
@@ -91,6 +92,7 @@
           "yearPublished": "1975",
           "slug": "salems-lot-by-stephen-king",
           "grade": "B",
+          "includedInSlugs": [],
           "authors": [
             {
               "name": "Stephen King"
@@ -103,6 +105,7 @@
           "yearPublished": "2000",
           "slug": "on-writing-by-stephen-king",
           "grade": "A-",
+          "includedInSlugs": [],
           "authors": [
             {
               "name": "Stephen King"
@@ -115,6 +118,7 @@
           "yearPublished": "2013",
           "slug": "doctor-sleep-by-stephen-king",
           "grade": "C+",
+          "includedInSlugs": [],
           "authors": [
             {
               "name": "Stephen King"
@@ -127,6 +131,7 @@
           "yearPublished": "1974",
           "slug": "carrie-by-stephen-king",
           "grade": "B-",
+          "includedInSlugs": [],
           "authors": [
             {
               "name": "Stephen King"
@@ -139,6 +144,7 @@
           "yearPublished": "1975",
           "slug": "salems-lot-by-stephen-king",
           "grade": "B",
+          "includedInSlugs": [],
           "authors": [
             {
               "name": "Stephen King"
@@ -151,6 +157,7 @@
           "yearPublished": "2000",
           "slug": "on-writing-by-stephen-king",
           "grade": "A-",
+          "includedInSlugs": [],
           "authors": [
             {
               "name": "Stephen King"
@@ -163,6 +170,7 @@
           "yearPublished": "2013",
           "slug": "doctor-sleep-by-stephen-king",
           "grade": "C+",
+          "includedInSlugs": [],
           "authors": [
             {
               "name": "Stephen King"
@@ -179,6 +187,7 @@
       "yearPublished": "1992",
       "slug": "the-secret-history-by-donna-tartt",
       "grade": "A",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Donna Tartt"
@@ -191,6 +200,7 @@
       "yearPublished": "2016",
       "slug": "set-the-boy-free-by-johnny-marr",
       "grade": "B+",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Johnny Marr"
@@ -203,6 +213,7 @@
       "yearPublished": "2018",
       "slug": "the-skeptics-guide-to-the-universe-by-steven-novella",
       "grade": "B+",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Steven Novella"
@@ -215,11 +226,15 @@
       "yearPublished": "2017",
       "slug": "soft-construction-of-a-sunset-by-philip-fracassi",
       "grade": "B-",
+      "includedInSlugs": [
+        "behold-the-void-by-philip-fracassi"
+      ],
       "authors": [
         {
           "name": "Philip Fracassi"
         }
       ]
     }
-  ]
+  ],
+  "includedWorks": []
 }

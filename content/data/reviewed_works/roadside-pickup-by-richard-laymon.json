@@ -49,6 +49,9 @@
           "yearPublished": "1982",
           "slug": "out-are-the-lights-by-richard-laymon",
           "grade": "C-",
+          "includedInSlugs": [
+            "out-are-the-lights-and-other-tales-by-richard-laymon"
+          ],
           "authors": [
             {
               "name": "Richard Laymon"
@@ -61,6 +64,9 @@
           "yearPublished": "1970",
           "slug": "desert-pickup-by-richard-laymon",
           "grade": "C-",
+          "includedInSlugs": [
+            "short-stories-volume-one-by-richard-laymon"
+          ],
           "authors": [
             {
               "name": "Richard Laymon"
@@ -73,6 +79,7 @@
           "yearPublished": "1980",
           "slug": "the-cellar-by-richard-laymon",
           "grade": "C+",
+          "includedInSlugs": [],
           "authors": [
             {
               "name": "Richard Laymon"
@@ -85,6 +92,7 @@
           "yearPublished": "1981",
           "slug": "the-woods-are-dark-by-richard-laymon",
           "grade": "C+",
+          "includedInSlugs": [],
           "authors": [
             {
               "name": "Richard Laymon"
@@ -101,6 +109,7 @@
       "yearPublished": "2019",
       "slug": "record-play-pause-by-stephen-morris",
       "grade": "A",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Stephen Morris"
@@ -113,6 +122,7 @@
       "yearPublished": "1979",
       "slug": "the-rise-of-theodore-roosevelt-by-edmund-morris",
       "grade": "A-",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Edmund Morris"
@@ -125,6 +135,7 @@
       "yearPublished": "1987",
       "slug": "the-rules-of-attraction-by-bret-easton-ellis",
       "grade": "C+",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Bret Easton Ellis"
@@ -137,11 +148,13 @@
       "yearPublished": "2017",
       "slug": "sacculina-by-philip-fracassi",
       "grade": "B",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Philip Fracassi"
         }
       ]
     }
-  ]
+  ],
+  "includedWorks": []
 }

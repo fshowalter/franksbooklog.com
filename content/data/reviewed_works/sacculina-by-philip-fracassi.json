@@ -46,23 +46,14 @@
       "slug": "philip-fracassi",
       "works": [
         {
-          "title": "Surfer Girl",
+          "title": "The Horse Thief",
           "kind": "Short Story",
           "yearPublished": "2017",
-          "slug": "surfer-girl-by-philip-fracassi",
-          "grade": "C+",
-          "authors": [
-            {
-              "name": "Philip Fracassi"
-            }
-          ]
-        },
-        {
-          "title": "Soft Construction of a Sunset",
-          "kind": "Short Story",
-          "yearPublished": "2017",
-          "slug": "soft-construction-of-a-sunset-by-philip-fracassi",
-          "grade": "B-",
+          "slug": "the-horse-thief-by-philip-fracassi",
+          "grade": "B",
+          "includedInSlugs": [
+            "behold-the-void-by-philip-fracassi"
+          ],
           "authors": [
             {
               "name": "Philip Fracassi"
@@ -75,6 +66,9 @@
           "yearPublished": "2017",
           "slug": "mandala-by-philip-fracassi",
           "grade": "B+",
+          "includedInSlugs": [
+            "behold-the-void-by-philip-fracassi"
+          ],
           "authors": [
             {
               "name": "Philip Fracassi"
@@ -82,11 +76,29 @@
           ]
         },
         {
-          "title": "The Horse Thief",
+          "title": "Soft Construction of a Sunset",
           "kind": "Short Story",
           "yearPublished": "2017",
-          "slug": "the-horse-thief-by-philip-fracassi",
-          "grade": "B",
+          "slug": "soft-construction-of-a-sunset-by-philip-fracassi",
+          "grade": "B-",
+          "includedInSlugs": [
+            "behold-the-void-by-philip-fracassi"
+          ],
+          "authors": [
+            {
+              "name": "Philip Fracassi"
+            }
+          ]
+        },
+        {
+          "title": "Surfer Girl",
+          "kind": "Short Story",
+          "yearPublished": "2017",
+          "slug": "surfer-girl-by-philip-fracassi",
+          "grade": "C+",
+          "includedInSlugs": [
+            "behold-the-void-by-philip-fracassi"
+          ],
           "authors": [
             {
               "name": "Philip Fracassi"
@@ -103,6 +115,9 @@
       "yearPublished": "1974",
       "slug": "roadside-pickup-by-richard-laymon",
       "grade": "C-",
+      "includedInSlugs": [
+        "short-stories-volume-one-by-richard-laymon"
+      ],
       "authors": [
         {
           "name": "Richard Laymon"
@@ -115,6 +130,7 @@
       "yearPublished": "1987",
       "slug": "the-rules-of-attraction-by-bret-easton-ellis",
       "grade": "C+",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Bret Easton Ellis"
@@ -127,6 +143,7 @@
       "yearPublished": "1992",
       "slug": "the-secret-history-by-donna-tartt",
       "grade": "A",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Donna Tartt"
@@ -139,11 +156,13 @@
       "yearPublished": "2016",
       "slug": "set-the-boy-free-by-johnny-marr",
       "grade": "B+",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Johnny Marr"
         }
       ]
     }
-  ]
+  ],
+  "includedWorks": []
 }

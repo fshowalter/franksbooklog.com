@@ -72,6 +72,7 @@
       "yearPublished": "1980",
       "slug": "the-cellar-by-richard-laymon",
       "grade": "C+",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Richard Laymon"
@@ -84,6 +85,7 @@
       "yearPublished": "2018",
       "slug": "churchill-by-andrew-roberts",
       "grade": "A-",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Andrew Roberts"
@@ -96,6 +98,9 @@
       "yearPublished": "2017",
       "slug": "coffin-by-philip-fracassi",
       "grade": "C+",
+      "includedInSlugs": [
+        "behold-the-void-by-philip-fracassi"
+      ],
       "authors": [
         {
           "name": "Philip Fracassi"
@@ -108,11 +113,13 @@
       "yearPublished": "2020",
       "slug": "consider-this-by-chuck-palahniuk",
       "grade": "B",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Chuck Palahniuk"
         }
       ]
     }
-  ]
+  ],
+  "includedWorks": []
 }

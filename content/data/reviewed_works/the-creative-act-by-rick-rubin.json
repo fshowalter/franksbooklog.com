@@ -44,6 +44,9 @@
       "yearPublished": "2017",
       "slug": "coffin-by-philip-fracassi",
       "grade": "C+",
+      "includedInSlugs": [
+        "behold-the-void-by-philip-fracassi"
+      ],
       "authors": [
         {
           "name": "Philip Fracassi"
@@ -56,6 +59,7 @@
       "yearPublished": "2020",
       "slug": "consider-this-by-chuck-palahniuk",
       "grade": "B",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Chuck Palahniuk"
@@ -68,6 +72,7 @@
       "yearPublished": "2016",
       "slug": "cured-by-lol-tolhurst",
       "grade": "A-",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Lol Tolhurst"
@@ -80,11 +85,13 @@
       "yearPublished": "1944",
       "slug": "the-dark-tunnel-by-ross-macdonald",
       "grade": "D+",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Ross Macdonald"
         }
       ]
     }
-  ]
+  ],
+  "includedWorks": []
 }

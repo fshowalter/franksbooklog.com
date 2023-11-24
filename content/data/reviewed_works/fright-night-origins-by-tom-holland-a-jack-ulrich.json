@@ -66,6 +66,7 @@
       "yearPublished": "1996",
       "slug": "fight-club-by-chuck-palahniuk",
       "grade": "A-",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Chuck Palahniuk"
@@ -78,6 +79,7 @@
       "yearPublished": "1985",
       "slug": "fright-night-by-john-skipp-craig-spector",
       "grade": "F",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "John Skipp"
@@ -93,6 +95,7 @@
       "yearPublished": "2022",
       "slug": "hawk-mountain-by-conner-habib",
       "grade": "C+",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Conner Habib"
@@ -105,11 +108,15 @@
       "yearPublished": "2017",
       "slug": "the-horse-thief-by-philip-fracassi",
       "grade": "B",
+      "includedInSlugs": [
+        "behold-the-void-by-philip-fracassi"
+      ],
       "authors": [
         {
           "name": "Philip Fracassi"
         }
       ]
     }
-  ]
+  ],
+  "includedWorks": []
 }

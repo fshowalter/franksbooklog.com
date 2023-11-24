@@ -49,6 +49,7 @@
           "yearPublished": "1981",
           "slug": "the-woods-are-dark-by-richard-laymon",
           "grade": "C+",
+          "includedInSlugs": [],
           "authors": [
             {
               "name": "Richard Laymon"
@@ -61,6 +62,9 @@
           "yearPublished": "1982",
           "slug": "out-are-the-lights-by-richard-laymon",
           "grade": "C-",
+          "includedInSlugs": [
+            "out-are-the-lights-and-other-tales-by-richard-laymon"
+          ],
           "authors": [
             {
               "name": "Richard Laymon"
@@ -73,6 +77,9 @@
           "yearPublished": "1974",
           "slug": "roadside-pickup-by-richard-laymon",
           "grade": "C-",
+          "includedInSlugs": [
+            "short-stories-volume-one-by-richard-laymon"
+          ],
           "authors": [
             {
               "name": "Richard Laymon"
@@ -85,6 +92,7 @@
           "yearPublished": "1980",
           "slug": "the-cellar-by-richard-laymon",
           "grade": "C+",
+          "includedInSlugs": [],
           "authors": [
             {
               "name": "Richard Laymon"
@@ -101,6 +109,7 @@
       "yearPublished": "2016",
       "slug": "cured-by-lol-tolhurst",
       "grade": "A-",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Lol Tolhurst"
@@ -113,6 +122,7 @@
       "yearPublished": "1944",
       "slug": "the-dark-tunnel-by-ross-macdonald",
       "grade": "D+",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Ross Macdonald"
@@ -125,6 +135,7 @@
       "yearPublished": "2013",
       "slug": "doctor-sleep-by-stephen-king",
       "grade": "C+",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Stephen King"
@@ -137,11 +148,13 @@
       "yearPublished": "2022",
       "slug": "dont-let-them-get-you-down-by-philip-fracassi",
       "grade": "C-",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Philip Fracassi"
         }
       ]
     }
-  ]
+  ],
+  "includedWorks": []
 }

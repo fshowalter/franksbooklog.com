@@ -48,6 +48,7 @@
       "yearPublished": "2015",
       "slug": "living-with-a-seal-by-jesse-itzler",
       "grade": "Abandoned",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Jesse Itzler"
@@ -60,6 +61,9 @@
       "yearPublished": "2017",
       "slug": "mandala-by-philip-fracassi",
       "grade": "B+",
+      "includedInSlugs": [
+        "behold-the-void-by-philip-fracassi"
+      ],
       "authors": [
         {
           "name": "Philip Fracassi"
@@ -72,6 +76,9 @@
       "yearPublished": "2015",
       "slug": "mother-by-philip-fracassi",
       "grade": "B-",
+      "includedInSlugs": [
+        "behold-the-void-by-philip-fracassi"
+      ],
       "authors": [
         {
           "name": "Philip Fracassi"
@@ -84,11 +91,13 @@
       "yearPublished": "2000",
       "slug": "on-writing-by-stephen-king",
       "grade": "A-",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Stephen King"
         }
       ]
     }
-  ]
+  ],
+  "includedWorks": []
 }

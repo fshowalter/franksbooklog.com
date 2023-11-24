@@ -56,6 +56,7 @@
       "yearPublished": "2016",
       "slug": "set-the-boy-free-by-johnny-marr",
       "grade": "B+",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Johnny Marr"
@@ -68,6 +69,7 @@
       "yearPublished": "1977",
       "slug": "the-shining-by-stephen-king",
       "grade": "B",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Stephen King"
@@ -80,6 +82,9 @@
       "yearPublished": "2017",
       "slug": "soft-construction-of-a-sunset-by-philip-fracassi",
       "grade": "B-",
+      "includedInSlugs": [
+        "behold-the-void-by-philip-fracassi"
+      ],
       "authors": [
         {
           "name": "Philip Fracassi"
@@ -92,11 +97,15 @@
       "yearPublished": "2017",
       "slug": "surfer-girl-by-philip-fracassi",
       "grade": "C+",
+      "includedInSlugs": [
+        "behold-the-void-by-philip-fracassi"
+      ],
       "authors": [
         {
           "name": "Philip Fracassi"
         }
       ]
     }
-  ]
+  ],
+  "includedWorks": []
 }

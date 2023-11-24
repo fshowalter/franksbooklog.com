@@ -72,6 +72,7 @@
       "yearPublished": "1979",
       "slug": "the-rise-of-theodore-roosevelt-by-edmund-morris",
       "grade": "A-",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Edmund Morris"
@@ -84,6 +85,9 @@
       "yearPublished": "1974",
       "slug": "roadside-pickup-by-richard-laymon",
       "grade": "C-",
+      "includedInSlugs": [
+        "short-stories-volume-one-by-richard-laymon"
+      ],
       "authors": [
         {
           "name": "Richard Laymon"
@@ -96,6 +100,7 @@
       "yearPublished": "2017",
       "slug": "sacculina-by-philip-fracassi",
       "grade": "B",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Philip Fracassi"
@@ -108,11 +113,13 @@
       "yearPublished": "1992",
       "slug": "the-secret-history-by-donna-tartt",
       "grade": "A",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Donna Tartt"
         }
       ]
     }
-  ]
+  ],
+  "includedWorks": []
 }

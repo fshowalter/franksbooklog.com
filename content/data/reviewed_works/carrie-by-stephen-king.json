@@ -63,6 +63,7 @@
           "yearPublished": "2000",
           "slug": "on-writing-by-stephen-king",
           "grade": "A-",
+          "includedInSlugs": [],
           "authors": [
             {
               "name": "Stephen King"
@@ -75,6 +76,7 @@
           "yearPublished": "2013",
           "slug": "doctor-sleep-by-stephen-king",
           "grade": "C+",
+          "includedInSlugs": [],
           "authors": [
             {
               "name": "Stephen King"
@@ -87,6 +89,7 @@
           "yearPublished": "1975",
           "slug": "salems-lot-by-stephen-king",
           "grade": "B",
+          "includedInSlugs": [],
           "authors": [
             {
               "name": "Stephen King"
@@ -99,6 +102,7 @@
           "yearPublished": "1977",
           "slug": "the-shining-by-stephen-king",
           "grade": "B",
+          "includedInSlugs": [],
           "authors": [
             {
               "name": "Stephen King"
@@ -115,6 +119,7 @@
       "yearPublished": "2001",
       "slug": "brother-iron-sister-steel-by-dave-draper",
       "grade": "C",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Dave Draper"
@@ -127,6 +132,7 @@
       "yearPublished": "2018",
       "slug": "cant-hurt-me-by-david-goggins",
       "grade": "B",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "David Goggins"
@@ -139,6 +145,7 @@
       "yearPublished": "1953",
       "slug": "casino-royale-by-ian-fleming",
       "grade": "B-",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Ian Fleming"
@@ -151,11 +158,13 @@
       "yearPublished": "1980",
       "slug": "the-cellar-by-richard-laymon",
       "grade": "C+",
+      "includedInSlugs": [],
       "authors": [
         {
           "name": "Richard Laymon"
         }
       ]
     }
-  ]
+  ],
+  "includedWorks": []
 }
