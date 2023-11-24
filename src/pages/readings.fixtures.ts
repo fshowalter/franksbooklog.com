@@ -2,9 +2,860 @@ export const data = {
   progress: {
     nodes: [
       {
-        workSlug: "the-cipher-by-kathe-koja",
+        slug: "record-play-pause-by-stephen-morris",
         reviewed: true,
-        sequence: 52,
+        sequence: "2023-11-11-57",
+        readingYear: 2023,
+        readingMonth: "Nov",
+        readingDay: "Sat",
+        date: "11",
+        yearPublished: 2019,
+        progress: "Finished",
+        title: "Record Play Pause",
+        edition: "Audible",
+        kind: "Nonfiction",
+        authors: [
+          {
+            name: "Stephen Morris",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/e68b702981d064e0b7c9e176520e6b96/8bcae/record-play-pause-by-stephen-morris.jpg",
+                  srcSet:
+                    "/static/e68b702981d064e0b7c9e176520e6b96/8bcae/record-play-pause-by-stephen-morris.jpg 72w,\n/static/e68b702981d064e0b7c9e176520e6b96/7306c/record-play-pause-by-stephen-morris.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/e68b702981d064e0b7c9e176520e6b96/6903a/record-play-pause-by-stephen-morris.avif 72w,\n/static/e68b702981d064e0b7c9e176520e6b96/65187/record-play-pause-by-stephen-morris.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        slug: "record-play-pause-by-stephen-morris",
+        reviewed: true,
+        sequence: "2023-11-10-57",
+        readingYear: 2023,
+        readingMonth: "Nov",
+        readingDay: "Fri",
+        date: "10",
+        yearPublished: 2019,
+        progress: "77%",
+        title: "Record Play Pause",
+        edition: "Audible",
+        kind: "Nonfiction",
+        authors: [
+          {
+            name: "Stephen Morris",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/e68b702981d064e0b7c9e176520e6b96/8bcae/record-play-pause-by-stephen-morris.jpg",
+                  srcSet:
+                    "/static/e68b702981d064e0b7c9e176520e6b96/8bcae/record-play-pause-by-stephen-morris.jpg 72w,\n/static/e68b702981d064e0b7c9e176520e6b96/7306c/record-play-pause-by-stephen-morris.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/e68b702981d064e0b7c9e176520e6b96/6903a/record-play-pause-by-stephen-morris.avif 72w,\n/static/e68b702981d064e0b7c9e176520e6b96/65187/record-play-pause-by-stephen-morris.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        slug: "record-play-pause-by-stephen-morris",
+        reviewed: true,
+        sequence: "2023-11-08-57",
+        readingYear: 2023,
+        readingMonth: "Nov",
+        readingDay: "Wed",
+        date: "8",
+        yearPublished: 2019,
+        progress: "49%",
+        title: "Record Play Pause",
+        edition: "Audible",
+        kind: "Nonfiction",
+        authors: [
+          {
+            name: "Stephen Morris",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/e68b702981d064e0b7c9e176520e6b96/8bcae/record-play-pause-by-stephen-morris.jpg",
+                  srcSet:
+                    "/static/e68b702981d064e0b7c9e176520e6b96/8bcae/record-play-pause-by-stephen-morris.jpg 72w,\n/static/e68b702981d064e0b7c9e176520e6b96/7306c/record-play-pause-by-stephen-morris.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/e68b702981d064e0b7c9e176520e6b96/6903a/record-play-pause-by-stephen-morris.avif 72w,\n/static/e68b702981d064e0b7c9e176520e6b96/65187/record-play-pause-by-stephen-morris.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        slug: "record-play-pause-by-stephen-morris",
+        reviewed: true,
+        sequence: "2023-11-06-57",
+        readingYear: 2023,
+        readingMonth: "Nov",
+        readingDay: "Mon",
+        date: "6",
+        yearPublished: 2019,
+        progress: "43%",
+        title: "Record Play Pause",
+        edition: "Audible",
+        kind: "Nonfiction",
+        authors: [
+          {
+            name: "Stephen Morris",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/e68b702981d064e0b7c9e176520e6b96/8bcae/record-play-pause-by-stephen-morris.jpg",
+                  srcSet:
+                    "/static/e68b702981d064e0b7c9e176520e6b96/8bcae/record-play-pause-by-stephen-morris.jpg 72w,\n/static/e68b702981d064e0b7c9e176520e6b96/7306c/record-play-pause-by-stephen-morris.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/e68b702981d064e0b7c9e176520e6b96/6903a/record-play-pause-by-stephen-morris.avif 72w,\n/static/e68b702981d064e0b7c9e176520e6b96/65187/record-play-pause-by-stephen-morris.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        slug: "fright-night-origins-by-tom-holland-a-jack-ulrich",
+        reviewed: true,
+        sequence: "2023-11-06-56",
+        readingYear: 2023,
+        readingMonth: "Nov",
+        readingDay: "Mon",
+        date: "6",
+        yearPublished: 2023,
+        progress: "Finished",
+        title: "Fright Night Origins",
+        edition: "Audible",
+        kind: "Novel",
+        authors: [
+          {
+            name: "Tom Holland",
+          },
+          {
+            name: "A. Jack Ulrich",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/2c632dcc2ba20e50c51a7bf5e8b0314d/8bcae/fright-night-origins-by-tom-holland-a-jack-ulrich.jpg",
+                  srcSet:
+                    "/static/2c632dcc2ba20e50c51a7bf5e8b0314d/8bcae/fright-night-origins-by-tom-holland-a-jack-ulrich.jpg 72w,\n/static/2c632dcc2ba20e50c51a7bf5e8b0314d/7306c/fright-night-origins-by-tom-holland-a-jack-ulrich.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/2c632dcc2ba20e50c51a7bf5e8b0314d/6903a/fright-night-origins-by-tom-holland-a-jack-ulrich.avif 72w,\n/static/2c632dcc2ba20e50c51a7bf5e8b0314d/65187/fright-night-origins-by-tom-holland-a-jack-ulrich.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        slug: "fright-night-origins-by-tom-holland-a-jack-ulrich",
+        reviewed: true,
+        sequence: "2023-11-05-56",
+        readingYear: 2023,
+        readingMonth: "Nov",
+        readingDay: "Sun",
+        date: "5",
+        yearPublished: 2023,
+        progress: "75%",
+        title: "Fright Night Origins",
+        edition: "Audible",
+        kind: "Novel",
+        authors: [
+          {
+            name: "Tom Holland",
+          },
+          {
+            name: "A. Jack Ulrich",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/2c632dcc2ba20e50c51a7bf5e8b0314d/8bcae/fright-night-origins-by-tom-holland-a-jack-ulrich.jpg",
+                  srcSet:
+                    "/static/2c632dcc2ba20e50c51a7bf5e8b0314d/8bcae/fright-night-origins-by-tom-holland-a-jack-ulrich.jpg 72w,\n/static/2c632dcc2ba20e50c51a7bf5e8b0314d/7306c/fright-night-origins-by-tom-holland-a-jack-ulrich.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/2c632dcc2ba20e50c51a7bf5e8b0314d/6903a/fright-night-origins-by-tom-holland-a-jack-ulrich.avif 72w,\n/static/2c632dcc2ba20e50c51a7bf5e8b0314d/65187/fright-night-origins-by-tom-holland-a-jack-ulrich.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        slug: "fright-night-origins-by-tom-holland-a-jack-ulrich",
+        reviewed: true,
+        sequence: "2023-11-04-56",
+        readingYear: 2023,
+        readingMonth: "Nov",
+        readingDay: "Sat",
+        date: "4",
+        yearPublished: 2023,
+        progress: "50%",
+        title: "Fright Night Origins",
+        edition: "Audible",
+        kind: "Novel",
+        authors: [
+          {
+            name: "Tom Holland",
+          },
+          {
+            name: "A. Jack Ulrich",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/2c632dcc2ba20e50c51a7bf5e8b0314d/8bcae/fright-night-origins-by-tom-holland-a-jack-ulrich.jpg",
+                  srcSet:
+                    "/static/2c632dcc2ba20e50c51a7bf5e8b0314d/8bcae/fright-night-origins-by-tom-holland-a-jack-ulrich.jpg 72w,\n/static/2c632dcc2ba20e50c51a7bf5e8b0314d/7306c/fright-night-origins-by-tom-holland-a-jack-ulrich.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/2c632dcc2ba20e50c51a7bf5e8b0314d/6903a/fright-night-origins-by-tom-holland-a-jack-ulrich.avif 72w,\n/static/2c632dcc2ba20e50c51a7bf5e8b0314d/65187/fright-night-origins-by-tom-holland-a-jack-ulrich.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        slug: "fright-night-origins-by-tom-holland-a-jack-ulrich",
+        reviewed: true,
+        sequence: "2023-10-31-56",
+        readingYear: 2023,
+        readingMonth: "Oct",
+        readingDay: "Tue",
+        date: "31",
+        yearPublished: 2023,
+        progress: "47%",
+        title: "Fright Night Origins",
+        edition: "Audible",
+        kind: "Novel",
+        authors: [
+          {
+            name: "Tom Holland",
+          },
+          {
+            name: "A. Jack Ulrich",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/2c632dcc2ba20e50c51a7bf5e8b0314d/8bcae/fright-night-origins-by-tom-holland-a-jack-ulrich.jpg",
+                  srcSet:
+                    "/static/2c632dcc2ba20e50c51a7bf5e8b0314d/8bcae/fright-night-origins-by-tom-holland-a-jack-ulrich.jpg 72w,\n/static/2c632dcc2ba20e50c51a7bf5e8b0314d/7306c/fright-night-origins-by-tom-holland-a-jack-ulrich.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/2c632dcc2ba20e50c51a7bf5e8b0314d/6903a/fright-night-origins-by-tom-holland-a-jack-ulrich.avif 72w,\n/static/2c632dcc2ba20e50c51a7bf5e8b0314d/65187/fright-night-origins-by-tom-holland-a-jack-ulrich.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        slug: "fright-night-origins-by-tom-holland-a-jack-ulrich",
+        reviewed: true,
+        sequence: "2023-10-29-56",
+        readingYear: 2023,
+        readingMonth: "Oct",
+        readingDay: "Sun",
+        date: "29",
+        yearPublished: 2023,
+        progress: "36%",
+        title: "Fright Night Origins",
+        edition: "Audible",
+        kind: "Novel",
+        authors: [
+          {
+            name: "Tom Holland",
+          },
+          {
+            name: "A. Jack Ulrich",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/2c632dcc2ba20e50c51a7bf5e8b0314d/8bcae/fright-night-origins-by-tom-holland-a-jack-ulrich.jpg",
+                  srcSet:
+                    "/static/2c632dcc2ba20e50c51a7bf5e8b0314d/8bcae/fright-night-origins-by-tom-holland-a-jack-ulrich.jpg 72w,\n/static/2c632dcc2ba20e50c51a7bf5e8b0314d/7306c/fright-night-origins-by-tom-holland-a-jack-ulrich.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/2c632dcc2ba20e50c51a7bf5e8b0314d/6903a/fright-night-origins-by-tom-holland-a-jack-ulrich.avif 72w,\n/static/2c632dcc2ba20e50c51a7bf5e8b0314d/65187/fright-night-origins-by-tom-holland-a-jack-ulrich.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        slug: "dont-let-them-get-you-down-by-philip-fracassi",
+        reviewed: true,
+        sequence: "2023-10-29-55",
+        readingYear: 2023,
+        readingMonth: "Oct",
+        readingDay: "Sun",
+        date: "29",
+        yearPublished: 2022,
+        progress: "Finished",
+        title: "Don't Let Them Get You Down",
+        edition: "Kindle",
+        kind: "Novel",
+        authors: [
+          {
+            name: "Philip Fracassi",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/920b3652a167c269ad8e3d59866a5097/8bcae/dont-let-them-get-you-down-by-philip-fracassi.jpg",
+                  srcSet:
+                    "/static/920b3652a167c269ad8e3d59866a5097/8bcae/dont-let-them-get-you-down-by-philip-fracassi.jpg 72w,\n/static/920b3652a167c269ad8e3d59866a5097/7306c/dont-let-them-get-you-down-by-philip-fracassi.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/920b3652a167c269ad8e3d59866a5097/6903a/dont-let-them-get-you-down-by-philip-fracassi.avif 72w,\n/static/920b3652a167c269ad8e3d59866a5097/65187/dont-let-them-get-you-down-by-philip-fracassi.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        slug: "dont-let-them-get-you-down-by-philip-fracassi",
+        reviewed: true,
+        sequence: "2023-10-23-55",
+        readingYear: 2023,
+        readingMonth: "Oct",
+        readingDay: "Mon",
+        date: "23",
+        yearPublished: 2022,
+        progress: "80%",
+        title: "Don't Let Them Get You Down",
+        edition: "Kindle",
+        kind: "Novel",
+        authors: [
+          {
+            name: "Philip Fracassi",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/920b3652a167c269ad8e3d59866a5097/8bcae/dont-let-them-get-you-down-by-philip-fracassi.jpg",
+                  srcSet:
+                    "/static/920b3652a167c269ad8e3d59866a5097/8bcae/dont-let-them-get-you-down-by-philip-fracassi.jpg 72w,\n/static/920b3652a167c269ad8e3d59866a5097/7306c/dont-let-them-get-you-down-by-philip-fracassi.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/920b3652a167c269ad8e3d59866a5097/6903a/dont-let-them-get-you-down-by-philip-fracassi.avif 72w,\n/static/920b3652a167c269ad8e3d59866a5097/65187/dont-let-them-get-you-down-by-philip-fracassi.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        slug: "dont-let-them-get-you-down-by-philip-fracassi",
+        reviewed: true,
+        sequence: "2023-10-22-55",
+        readingYear: 2023,
+        readingMonth: "Oct",
+        readingDay: "Sun",
+        date: "22",
+        yearPublished: 2022,
+        progress: "76%",
+        title: "Don't Let Them Get You Down",
+        edition: "Kindle",
+        kind: "Novel",
+        authors: [
+          {
+            name: "Philip Fracassi",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/920b3652a167c269ad8e3d59866a5097/8bcae/dont-let-them-get-you-down-by-philip-fracassi.jpg",
+                  srcSet:
+                    "/static/920b3652a167c269ad8e3d59866a5097/8bcae/dont-let-them-get-you-down-by-philip-fracassi.jpg 72w,\n/static/920b3652a167c269ad8e3d59866a5097/7306c/dont-let-them-get-you-down-by-philip-fracassi.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/920b3652a167c269ad8e3d59866a5097/6903a/dont-let-them-get-you-down-by-philip-fracassi.avif 72w,\n/static/920b3652a167c269ad8e3d59866a5097/65187/dont-let-them-get-you-down-by-philip-fracassi.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        slug: "the-creative-act-by-rick-rubin",
+        reviewed: true,
+        sequence: "2023-10-22-54",
+        readingYear: 2023,
+        readingMonth: "Oct",
+        readingDay: "Sun",
+        date: "22",
+        yearPublished: 2023,
+        progress: "Finished",
+        title: "The Creative Act",
+        edition: "Audible",
+        kind: "Nonfiction",
+        authors: [
+          {
+            name: "Rick Rubin",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/385e5cca201130cfef029d4b6ae0b19b/8bcae/the-creative-act-by-rick-rubin.jpg",
+                  srcSet:
+                    "/static/385e5cca201130cfef029d4b6ae0b19b/8bcae/the-creative-act-by-rick-rubin.jpg 72w,\n/static/385e5cca201130cfef029d4b6ae0b19b/7306c/the-creative-act-by-rick-rubin.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/385e5cca201130cfef029d4b6ae0b19b/6903a/the-creative-act-by-rick-rubin.avif 72w,\n/static/385e5cca201130cfef029d4b6ae0b19b/65187/the-creative-act-by-rick-rubin.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        slug: "dont-let-them-get-you-down-by-philip-fracassi",
+        reviewed: true,
+        sequence: "2023-10-17-55",
+        readingYear: 2023,
+        readingMonth: "Oct",
+        readingDay: "Tue",
+        date: "17",
+        yearPublished: 2022,
+        progress: "72%",
+        title: "Don't Let Them Get You Down",
+        edition: "Kindle",
+        kind: "Novel",
+        authors: [
+          {
+            name: "Philip Fracassi",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/920b3652a167c269ad8e3d59866a5097/8bcae/dont-let-them-get-you-down-by-philip-fracassi.jpg",
+                  srcSet:
+                    "/static/920b3652a167c269ad8e3d59866a5097/8bcae/dont-let-them-get-you-down-by-philip-fracassi.jpg 72w,\n/static/920b3652a167c269ad8e3d59866a5097/7306c/dont-let-them-get-you-down-by-philip-fracassi.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/920b3652a167c269ad8e3d59866a5097/6903a/dont-let-them-get-you-down-by-philip-fracassi.avif 72w,\n/static/920b3652a167c269ad8e3d59866a5097/65187/dont-let-them-get-you-down-by-philip-fracassi.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        slug: "dont-let-them-get-you-down-by-philip-fracassi",
+        reviewed: true,
+        sequence: "2023-10-16-55",
+        readingYear: 2023,
+        readingMonth: "Oct",
+        readingDay: "Mon",
+        date: "16",
+        yearPublished: 2022,
+        progress: "56%",
+        title: "Don't Let Them Get You Down",
+        edition: "Kindle",
+        kind: "Novel",
+        authors: [
+          {
+            name: "Philip Fracassi",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/920b3652a167c269ad8e3d59866a5097/8bcae/dont-let-them-get-you-down-by-philip-fracassi.jpg",
+                  srcSet:
+                    "/static/920b3652a167c269ad8e3d59866a5097/8bcae/dont-let-them-get-you-down-by-philip-fracassi.jpg 72w,\n/static/920b3652a167c269ad8e3d59866a5097/7306c/dont-let-them-get-you-down-by-philip-fracassi.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/920b3652a167c269ad8e3d59866a5097/6903a/dont-let-them-get-you-down-by-philip-fracassi.avif 72w,\n/static/920b3652a167c269ad8e3d59866a5097/65187/dont-let-them-get-you-down-by-philip-fracassi.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        slug: "dont-let-them-get-you-down-by-philip-fracassi",
+        reviewed: true,
+        sequence: "2023-10-15-55",
+        readingYear: 2023,
+        readingMonth: "Oct",
+        readingDay: "Sun",
+        date: "15",
+        yearPublished: 2022,
+        progress: "32%",
+        title: "Don't Let Them Get You Down",
+        edition: "Kindle",
+        kind: "Novel",
+        authors: [
+          {
+            name: "Philip Fracassi",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/920b3652a167c269ad8e3d59866a5097/8bcae/dont-let-them-get-you-down-by-philip-fracassi.jpg",
+                  srcSet:
+                    "/static/920b3652a167c269ad8e3d59866a5097/8bcae/dont-let-them-get-you-down-by-philip-fracassi.jpg 72w,\n/static/920b3652a167c269ad8e3d59866a5097/7306c/dont-let-them-get-you-down-by-philip-fracassi.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/920b3652a167c269ad8e3d59866a5097/6903a/dont-let-them-get-you-down-by-philip-fracassi.avif 72w,\n/static/920b3652a167c269ad8e3d59866a5097/65187/dont-let-them-get-you-down-by-philip-fracassi.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        slug: "dont-let-them-get-you-down-by-philip-fracassi",
+        reviewed: true,
+        sequence: "2023-10-11-55",
+        readingYear: 2023,
+        readingMonth: "Oct",
+        readingDay: "Wed",
+        date: "11",
+        yearPublished: 2022,
+        progress: "21%",
+        title: "Don't Let Them Get You Down",
+        edition: "Kindle",
+        kind: "Novel",
+        authors: [
+          {
+            name: "Philip Fracassi",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/920b3652a167c269ad8e3d59866a5097/8bcae/dont-let-them-get-you-down-by-philip-fracassi.jpg",
+                  srcSet:
+                    "/static/920b3652a167c269ad8e3d59866a5097/8bcae/dont-let-them-get-you-down-by-philip-fracassi.jpg 72w,\n/static/920b3652a167c269ad8e3d59866a5097/7306c/dont-let-them-get-you-down-by-philip-fracassi.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/920b3652a167c269ad8e3d59866a5097/6903a/dont-let-them-get-you-down-by-philip-fracassi.avif 72w,\n/static/920b3652a167c269ad8e3d59866a5097/65187/dont-let-them-get-you-down-by-philip-fracassi.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        slug: "sacculina-by-philip-fracassi",
+        reviewed: true,
+        sequence: "2023-10-09-53",
+        readingYear: 2023,
+        readingMonth: "Oct",
+        readingDay: "Mon",
+        date: "9",
+        yearPublished: 2017,
+        progress: "Finished",
+        title: "Sacculina",
+        edition: "Kindle",
+        kind: "Novella",
+        authors: [
+          {
+            name: "Philip Fracassi",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/d181a9dbb80e25c61e35148cd0cca1e7/8bcae/sacculina-by-philip-fracassi.jpg",
+                  srcSet:
+                    "/static/d181a9dbb80e25c61e35148cd0cca1e7/8bcae/sacculina-by-philip-fracassi.jpg 72w,\n/static/d181a9dbb80e25c61e35148cd0cca1e7/7306c/sacculina-by-philip-fracassi.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/d181a9dbb80e25c61e35148cd0cca1e7/6903a/sacculina-by-philip-fracassi.avif 72w,\n/static/d181a9dbb80e25c61e35148cd0cca1e7/65187/sacculina-by-philip-fracassi.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        slug: "sacculina-by-philip-fracassi",
+        reviewed: true,
+        sequence: "2023-10-07-53",
+        readingYear: 2023,
+        readingMonth: "Oct",
+        readingDay: "Sat",
+        date: "7",
+        yearPublished: 2017,
+        progress: "50%",
+        title: "Sacculina",
+        edition: "Kindle",
+        kind: "Novella",
+        authors: [
+          {
+            name: "Philip Fracassi",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/d181a9dbb80e25c61e35148cd0cca1e7/8bcae/sacculina-by-philip-fracassi.jpg",
+                  srcSet:
+                    "/static/d181a9dbb80e25c61e35148cd0cca1e7/8bcae/sacculina-by-philip-fracassi.jpg 72w,\n/static/d181a9dbb80e25c61e35148cd0cca1e7/7306c/sacculina-by-philip-fracassi.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/d181a9dbb80e25c61e35148cd0cca1e7/6903a/sacculina-by-philip-fracassi.avif 72w,\n/static/d181a9dbb80e25c61e35148cd0cca1e7/65187/sacculina-by-philip-fracassi.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        slug: "the-cipher-by-kathe-koja",
+        reviewed: true,
+        sequence: "2023-01-29-52",
         readingYear: 2023,
         readingMonth: "Jan",
         readingDay: "Sun",
@@ -14,7 +865,6 @@ export const data = {
         title: "The Cipher",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2023-01-29-52",
         authors: [
           {
             name: "Kathe Koja",
@@ -47,9 +897,9 @@ export const data = {
         },
       },
       {
-        workSlug: "the-cipher-by-kathe-koja",
+        slug: "the-cipher-by-kathe-koja",
         reviewed: true,
-        sequence: 52,
+        sequence: "2023-01-28-52",
         readingYear: 2023,
         readingMonth: "Jan",
         readingDay: "Sat",
@@ -59,7 +909,6 @@ export const data = {
         title: "The Cipher",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2023-01-28-52",
         authors: [
           {
             name: "Kathe Koja",
@@ -92,9 +941,9 @@ export const data = {
         },
       },
       {
-        workSlug: "the-cipher-by-kathe-koja",
+        slug: "the-cipher-by-kathe-koja",
         reviewed: true,
-        sequence: 52,
+        sequence: "2023-01-27-52",
         readingYear: 2023,
         readingMonth: "Jan",
         readingDay: "Fri",
@@ -104,7 +953,6 @@ export const data = {
         title: "The Cipher",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2023-01-27-52",
         authors: [
           {
             name: "Kathe Koja",
@@ -137,9 +985,9 @@ export const data = {
         },
       },
       {
-        workSlug: "the-cipher-by-kathe-koja",
+        slug: "the-cipher-by-kathe-koja",
         reviewed: true,
-        sequence: 52,
+        sequence: "2023-01-26-52",
         readingYear: 2023,
         readingMonth: "Jan",
         readingDay: "Thu",
@@ -149,7 +997,6 @@ export const data = {
         title: "The Cipher",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2023-01-26-52",
         authors: [
           {
             name: "Kathe Koja",
@@ -182,9 +1029,9 @@ export const data = {
         },
       },
       {
-        workSlug: "the-cipher-by-kathe-koja",
+        slug: "the-cipher-by-kathe-koja",
         reviewed: true,
-        sequence: 52,
+        sequence: "2023-01-25-52",
         readingYear: 2023,
         readingMonth: "Jan",
         readingDay: "Wed",
@@ -194,7 +1041,6 @@ export const data = {
         title: "The Cipher",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2023-01-25-52",
         authors: [
           {
             name: "Kathe Koja",
@@ -227,9 +1073,9 @@ export const data = {
         },
       },
       {
-        workSlug: "the-cipher-by-kathe-koja",
+        slug: "the-cipher-by-kathe-koja",
         reviewed: true,
-        sequence: 52,
+        sequence: "2023-01-24-52",
         readingYear: 2023,
         readingMonth: "Jan",
         readingDay: "Tue",
@@ -239,7 +1085,6 @@ export const data = {
         title: "The Cipher",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2023-01-24-52",
         authors: [
           {
             name: "Kathe Koja",
@@ -272,9 +1117,9 @@ export const data = {
         },
       },
       {
-        workSlug: "the-cipher-by-kathe-koja",
+        slug: "the-cipher-by-kathe-koja",
         reviewed: true,
-        sequence: 52,
+        sequence: "2023-01-23-52",
         readingYear: 2023,
         readingMonth: "Jan",
         readingDay: "Mon",
@@ -284,7 +1129,6 @@ export const data = {
         title: "The Cipher",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2023-01-23-52",
         authors: [
           {
             name: "Kathe Koja",
@@ -317,9 +1161,9 @@ export const data = {
         },
       },
       {
-        workSlug: "the-cipher-by-kathe-koja",
+        slug: "the-cipher-by-kathe-koja",
         reviewed: true,
-        sequence: 52,
+        sequence: "2023-01-22-52",
         readingYear: 2023,
         readingMonth: "Jan",
         readingDay: "Sun",
@@ -329,7 +1173,6 @@ export const data = {
         title: "The Cipher",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2023-01-22-52",
         authors: [
           {
             name: "Kathe Koja",
@@ -362,57 +1205,9 @@ export const data = {
         },
       },
       {
-        workSlug: "fright-night-by-john-skipp-craig-spector",
+        slug: "roadside-pickup-by-richard-laymon",
         reviewed: true,
-        sequence: 50,
-        readingYear: 2023,
-        readingMonth: "Jan",
-        readingDay: "Sat",
-        date: "21",
-        yearPublished: 1985,
-        progress: "Finished",
-        title: "Fright Night",
-        edition: "Kindle",
-        kind: "Novel",
-        sortDate: "2023-01-21-50",
-        authors: [
-          {
-            name: "John Skipp",
-          },
-          {
-            name: "Craig Spector",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/ed5b9db089419d3103835aec289aa0b7/8bcae/fright-night-by-john-skipp-craig-spector.jpg",
-                  srcSet:
-                    "/static/ed5b9db089419d3103835aec289aa0b7/8bcae/fright-night-by-john-skipp-craig-spector.jpg 72w,\n/static/ed5b9db089419d3103835aec289aa0b7/7306c/fright-night-by-john-skipp-craig-spector.jpg 144w",
-                  sizes: "72px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/ed5b9db089419d3103835aec289aa0b7/6903a/fright-night-by-john-skipp-craig-spector.avif 72w,\n/static/ed5b9db089419d3103835aec289aa0b7/65187/fright-night-by-john-skipp-craig-spector.avif 144w",
-                    type: "image/avif",
-                    sizes: "72px",
-                  },
-                ],
-              },
-              width: 72,
-              height: 108,
-            },
-          },
-        },
-      },
-      {
-        workSlug: "roadside-pickup-by-richard-laymon",
-        reviewed: true,
-        sequence: 51,
+        sequence: "2023-01-21-51",
         readingYear: 2023,
         readingMonth: "Jan",
         readingDay: "Sat",
@@ -422,7 +1217,6 @@ export const data = {
         title: "Roadside Pickup",
         edition: "Kindle",
         kind: "Short Story",
-        sortDate: "2023-01-21-51",
         authors: [
           {
             name: "Richard Laymon",
@@ -455,9 +1249,56 @@ export const data = {
         },
       },
       {
-        workSlug: "fright-night-by-john-skipp-craig-spector",
+        slug: "fright-night-by-john-skipp-craig-spector",
         reviewed: true,
-        sequence: 50,
+        sequence: "2023-01-21-50",
+        readingYear: 2023,
+        readingMonth: "Jan",
+        readingDay: "Sat",
+        date: "21",
+        yearPublished: 1985,
+        progress: "Finished",
+        title: "Fright Night",
+        edition: "Kindle",
+        kind: "Novel",
+        authors: [
+          {
+            name: "John Skipp",
+          },
+          {
+            name: "Craig Spector",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/ed5b9db089419d3103835aec289aa0b7/8bcae/fright-night-by-john-skipp-craig-spector.jpg",
+                  srcSet:
+                    "/static/ed5b9db089419d3103835aec289aa0b7/8bcae/fright-night-by-john-skipp-craig-spector.jpg 72w,\n/static/ed5b9db089419d3103835aec289aa0b7/7306c/fright-night-by-john-skipp-craig-spector.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/ed5b9db089419d3103835aec289aa0b7/6903a/fright-night-by-john-skipp-craig-spector.avif 72w,\n/static/ed5b9db089419d3103835aec289aa0b7/65187/fright-night-by-john-skipp-craig-spector.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        slug: "fright-night-by-john-skipp-craig-spector",
+        reviewed: true,
+        sequence: "2023-01-20-50",
         readingYear: 2023,
         readingMonth: "Jan",
         readingDay: "Fri",
@@ -467,7 +1308,6 @@ export const data = {
         title: "Fright Night",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2023-01-20-50",
         authors: [
           {
             name: "John Skipp",
@@ -503,9 +1343,9 @@ export const data = {
         },
       },
       {
-        workSlug: "fright-night-by-john-skipp-craig-spector",
+        slug: "fright-night-by-john-skipp-craig-spector",
         reviewed: true,
-        sequence: 50,
+        sequence: "2023-01-18-50",
         readingYear: 2023,
         readingMonth: "Jan",
         readingDay: "Wed",
@@ -515,7 +1355,6 @@ export const data = {
         title: "Fright Night",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2023-01-18-50",
         authors: [
           {
             name: "John Skipp",
@@ -551,9 +1390,9 @@ export const data = {
         },
       },
       {
-        workSlug: "fright-night-by-john-skipp-craig-spector",
+        slug: "fright-night-by-john-skipp-craig-spector",
         reviewed: true,
-        sequence: 50,
+        sequence: "2023-01-17-50",
         readingYear: 2023,
         readingMonth: "Jan",
         readingDay: "Tue",
@@ -563,7 +1402,6 @@ export const data = {
         title: "Fright Night",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2023-01-17-50",
         authors: [
           {
             name: "John Skipp",
@@ -599,9 +1437,9 @@ export const data = {
         },
       },
       {
-        workSlug: "fright-night-by-john-skipp-craig-spector",
+        slug: "fright-night-by-john-skipp-craig-spector",
         reviewed: true,
-        sequence: 50,
+        sequence: "2023-01-16-50",
         readingYear: 2023,
         readingMonth: "Jan",
         readingDay: "Mon",
@@ -611,7 +1449,6 @@ export const data = {
         title: "Fright Night",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2023-01-16-50",
         authors: [
           {
             name: "John Skipp",
@@ -647,9 +1484,9 @@ export const data = {
         },
       },
       {
-        workSlug: "fright-night-by-john-skipp-craig-spector",
+        slug: "fright-night-by-john-skipp-craig-spector",
         reviewed: true,
-        sequence: 50,
+        sequence: "2023-01-15-50",
         readingYear: 2023,
         readingMonth: "Jan",
         readingDay: "Sun",
@@ -659,7 +1496,6 @@ export const data = {
         title: "Fright Night",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2023-01-15-50",
         authors: [
           {
             name: "John Skipp",
@@ -695,9 +1531,9 @@ export const data = {
         },
       },
       {
-        workSlug: "doctor-sleep-by-stephen-king",
+        slug: "doctor-sleep-by-stephen-king",
         reviewed: true,
-        sequence: 49,
+        sequence: "2023-01-14-49",
         readingYear: 2023,
         readingMonth: "Jan",
         readingDay: "Sat",
@@ -707,7 +1543,6 @@ export const data = {
         title: "Doctor Sleep",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2023-01-14-49",
         authors: [
           {
             name: "Stephen King",
@@ -740,9 +1575,9 @@ export const data = {
         },
       },
       {
-        workSlug: "doctor-sleep-by-stephen-king",
+        slug: "doctor-sleep-by-stephen-king",
         reviewed: true,
-        sequence: 49,
+        sequence: "2023-01-12-49",
         readingYear: 2023,
         readingMonth: "Jan",
         readingDay: "Thu",
@@ -752,7 +1587,6 @@ export const data = {
         title: "Doctor Sleep",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2023-01-12-49",
         authors: [
           {
             name: "Stephen King",
@@ -785,9 +1619,9 @@ export const data = {
         },
       },
       {
-        workSlug: "doctor-sleep-by-stephen-king",
+        slug: "doctor-sleep-by-stephen-king",
         reviewed: true,
-        sequence: 49,
+        sequence: "2023-01-11-49",
         readingYear: 2023,
         readingMonth: "Jan",
         readingDay: "Wed",
@@ -797,7 +1631,6 @@ export const data = {
         title: "Doctor Sleep",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2023-01-11-49",
         authors: [
           {
             name: "Stephen King",
@@ -830,9 +1663,9 @@ export const data = {
         },
       },
       {
-        workSlug: "doctor-sleep-by-stephen-king",
+        slug: "doctor-sleep-by-stephen-king",
         reviewed: true,
-        sequence: 49,
+        sequence: "2023-01-08-49",
         readingYear: 2023,
         readingMonth: "Jan",
         readingDay: "Sun",
@@ -842,7 +1675,6 @@ export const data = {
         title: "Doctor Sleep",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2023-01-08-49",
         authors: [
           {
             name: "Stephen King",
@@ -875,9 +1707,9 @@ export const data = {
         },
       },
       {
-        workSlug: "doctor-sleep-by-stephen-king",
+        slug: "doctor-sleep-by-stephen-king",
         reviewed: true,
-        sequence: 49,
+        sequence: "2023-01-07-49",
         readingYear: 2023,
         readingMonth: "Jan",
         readingDay: "Sat",
@@ -887,7 +1719,6 @@ export const data = {
         title: "Doctor Sleep",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2023-01-07-49",
         authors: [
           {
             name: "Stephen King",
@@ -920,9 +1751,9 @@ export const data = {
         },
       },
       {
-        workSlug: "doctor-sleep-by-stephen-king",
+        slug: "doctor-sleep-by-stephen-king",
         reviewed: true,
-        sequence: 49,
+        sequence: "2023-01-05-49",
         readingYear: 2023,
         readingMonth: "Jan",
         readingDay: "Thu",
@@ -932,7 +1763,6 @@ export const data = {
         title: "Doctor Sleep",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2023-01-05-49",
         authors: [
           {
             name: "Stephen King",
@@ -965,9 +1795,9 @@ export const data = {
         },
       },
       {
-        workSlug: "doctor-sleep-by-stephen-king",
+        slug: "doctor-sleep-by-stephen-king",
         reviewed: true,
-        sequence: 49,
+        sequence: "2023-01-04-49",
         readingYear: 2023,
         readingMonth: "Jan",
         readingDay: "Wed",
@@ -977,7 +1807,6 @@ export const data = {
         title: "Doctor Sleep",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2023-01-04-49",
         authors: [
           {
             name: "Stephen King",
@@ -1010,9 +1839,9 @@ export const data = {
         },
       },
       {
-        workSlug: "doctor-sleep-by-stephen-king",
+        slug: "doctor-sleep-by-stephen-king",
         reviewed: true,
-        sequence: 49,
+        sequence: "2022-12-30-49",
         readingYear: 2022,
         readingMonth: "Dec",
         readingDay: "Fri",
@@ -1022,7 +1851,6 @@ export const data = {
         title: "Doctor Sleep",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-12-30-49",
         authors: [
           {
             name: "Stephen King",
@@ -1055,9 +1883,9 @@ export const data = {
         },
       },
       {
-        workSlug: "doctor-sleep-by-stephen-king",
+        slug: "doctor-sleep-by-stephen-king",
         reviewed: true,
-        sequence: 49,
+        sequence: "2022-12-27-49",
         readingYear: 2022,
         readingMonth: "Dec",
         readingDay: "Tue",
@@ -1067,7 +1895,6 @@ export const data = {
         title: "Doctor Sleep",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-12-27-49",
         authors: [
           {
             name: "Stephen King",
@@ -1100,9 +1927,9 @@ export const data = {
         },
       },
       {
-        workSlug: "doctor-sleep-by-stephen-king",
+        slug: "doctor-sleep-by-stephen-king",
         reviewed: true,
-        sequence: 49,
+        sequence: "2022-11-15-49",
         readingYear: 2022,
         readingMonth: "Nov",
         readingDay: "Tue",
@@ -1112,7 +1939,6 @@ export const data = {
         title: "Doctor Sleep",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-11-15-49",
         authors: [
           {
             name: "Stephen King",
@@ -1145,9 +1971,9 @@ export const data = {
         },
       },
       {
-        workSlug: "doctor-sleep-by-stephen-king",
+        slug: "doctor-sleep-by-stephen-king",
         reviewed: true,
-        sequence: 49,
+        sequence: "2022-11-13-49",
         readingYear: 2022,
         readingMonth: "Nov",
         readingDay: "Sun",
@@ -1157,7 +1983,6 @@ export const data = {
         title: "Doctor Sleep",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-11-13-49",
         authors: [
           {
             name: "Stephen King",
@@ -1190,9 +2015,9 @@ export const data = {
         },
       },
       {
-        workSlug: "doctor-sleep-by-stephen-king",
+        slug: "doctor-sleep-by-stephen-king",
         reviewed: true,
-        sequence: 49,
+        sequence: "2022-11-12-49",
         readingYear: 2022,
         readingMonth: "Nov",
         readingDay: "Sat",
@@ -1202,7 +2027,6 @@ export const data = {
         title: "Doctor Sleep",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-11-12-49",
         authors: [
           {
             name: "Stephen King",
@@ -1235,9 +2059,9 @@ export const data = {
         },
       },
       {
-        workSlug: "doctor-sleep-by-stephen-king",
+        slug: "doctor-sleep-by-stephen-king",
         reviewed: true,
-        sequence: 49,
+        sequence: "2022-11-11-49",
         readingYear: 2022,
         readingMonth: "Nov",
         readingDay: "Fri",
@@ -1247,7 +2071,6 @@ export const data = {
         title: "Doctor Sleep",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-11-11-49",
         authors: [
           {
             name: "Stephen King",
@@ -1280,9 +2103,9 @@ export const data = {
         },
       },
       {
-        workSlug: "doctor-sleep-by-stephen-king",
+        slug: "doctor-sleep-by-stephen-king",
         reviewed: true,
-        sequence: 49,
+        sequence: "2022-11-07-49",
         readingYear: 2022,
         readingMonth: "Nov",
         readingDay: "Mon",
@@ -1292,7 +2115,6 @@ export const data = {
         title: "Doctor Sleep",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-11-07-49",
         authors: [
           {
             name: "Stephen King",
@@ -1325,9 +2147,9 @@ export const data = {
         },
       },
       {
-        workSlug: "doctor-sleep-by-stephen-king",
+        slug: "doctor-sleep-by-stephen-king",
         reviewed: true,
-        sequence: 49,
+        sequence: "2022-11-06-49",
         readingYear: 2022,
         readingMonth: "Nov",
         readingDay: "Sun",
@@ -1337,7 +2159,6 @@ export const data = {
         title: "Doctor Sleep",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-11-06-49",
         authors: [
           {
             name: "Stephen King",
@@ -1370,9 +2191,9 @@ export const data = {
         },
       },
       {
-        workSlug: "doctor-sleep-by-stephen-king",
+        slug: "doctor-sleep-by-stephen-king",
         reviewed: true,
-        sequence: 49,
+        sequence: "2022-11-05-49",
         readingYear: 2022,
         readingMonth: "Nov",
         readingDay: "Sat",
@@ -1382,7 +2203,6 @@ export const data = {
         title: "Doctor Sleep",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-11-05-49",
         authors: [
           {
             name: "Stephen King",
@@ -1415,9 +2235,9 @@ export const data = {
         },
       },
       {
-        workSlug: "doctor-sleep-by-stephen-king",
+        slug: "doctor-sleep-by-stephen-king",
         reviewed: true,
-        sequence: 49,
+        sequence: "2022-11-01-49",
         readingYear: 2022,
         readingMonth: "Nov",
         readingDay: "Tue",
@@ -1427,7 +2247,6 @@ export const data = {
         title: "Doctor Sleep",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-11-01-49",
         authors: [
           {
             name: "Stephen King",
@@ -1460,9 +2279,9 @@ export const data = {
         },
       },
       {
-        workSlug: "doctor-sleep-by-stephen-king",
+        slug: "doctor-sleep-by-stephen-king",
         reviewed: true,
-        sequence: 49,
+        sequence: "2022-10-30-49",
         readingYear: 2022,
         readingMonth: "Oct",
         readingDay: "Sun",
@@ -1472,7 +2291,6 @@ export const data = {
         title: "Doctor Sleep",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-10-30-49",
         authors: [
           {
             name: "Stephen King",
@@ -1505,54 +2323,9 @@ export const data = {
         },
       },
       {
-        workSlug: "the-shining-by-stephen-king",
+        slug: "the-skeptics-guide-to-the-universe-by-steven-novella",
         reviewed: true,
-        sequence: 47,
-        readingYear: 2022,
-        readingMonth: "Oct",
-        readingDay: "Sat",
-        date: "29",
-        yearPublished: 1977,
-        progress: "Finished",
-        title: "The Shining",
-        edition: "Audible",
-        kind: "Novel",
-        sortDate: "2022-10-29-47",
-        authors: [
-          {
-            name: "Stephen King",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/794d3075a7009bf20aafaa07c5679d56/8bcae/the-shining-by-stephen-king.jpg",
-                  srcSet:
-                    "/static/794d3075a7009bf20aafaa07c5679d56/8bcae/the-shining-by-stephen-king.jpg 72w,\n/static/794d3075a7009bf20aafaa07c5679d56/7306c/the-shining-by-stephen-king.jpg 144w",
-                  sizes: "72px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/794d3075a7009bf20aafaa07c5679d56/6903a/the-shining-by-stephen-king.avif 72w,\n/static/794d3075a7009bf20aafaa07c5679d56/65187/the-shining-by-stephen-king.avif 144w",
-                    type: "image/avif",
-                    sizes: "72px",
-                  },
-                ],
-              },
-              width: 72,
-              height: 108,
-            },
-          },
-        },
-      },
-      {
-        workSlug: "the-skeptics-guide-to-the-universe-by-steven-novella",
-        reviewed: true,
-        sequence: 48,
+        sequence: "2022-10-29-48",
         readingYear: 2022,
         readingMonth: "Oct",
         readingDay: "Sat",
@@ -1562,7 +2335,6 @@ export const data = {
         title: "The Skeptics' Guide to the Universe",
         edition: "Audible",
         kind: "Nonfiction",
-        sortDate: "2022-10-29-48",
         authors: [
           {
             name: "Steven Novella",
@@ -1595,19 +2367,18 @@ export const data = {
         },
       },
       {
-        workSlug: "the-shining-by-stephen-king",
+        slug: "the-shining-by-stephen-king",
         reviewed: true,
-        sequence: 47,
+        sequence: "2022-10-29-47",
         readingYear: 2022,
         readingMonth: "Oct",
-        readingDay: "Fri",
-        date: "28",
+        readingDay: "Sat",
+        date: "29",
         yearPublished: 1977,
-        progress: "87%",
+        progress: "Finished",
         title: "The Shining",
         edition: "Audible",
         kind: "Novel",
-        sortDate: "2022-10-28-47",
         authors: [
           {
             name: "Stephen King",
@@ -1640,9 +2411,9 @@ export const data = {
         },
       },
       {
-        workSlug: "the-skeptics-guide-to-the-universe-by-steven-novella",
+        slug: "the-skeptics-guide-to-the-universe-by-steven-novella",
         reviewed: true,
-        sequence: 48,
+        sequence: "2022-10-28-48",
         readingYear: 2022,
         readingMonth: "Oct",
         readingDay: "Fri",
@@ -1652,7 +2423,6 @@ export const data = {
         title: "The Skeptics' Guide to the Universe",
         edition: "Audible",
         kind: "Nonfiction",
-        sortDate: "2022-10-28-48",
         authors: [
           {
             name: "Steven Novella",
@@ -1685,9 +2455,53 @@ export const data = {
         },
       },
       {
-        workSlug: "the-skeptics-guide-to-the-universe-by-steven-novella",
+        slug: "the-shining-by-stephen-king",
         reviewed: true,
-        sequence: 48,
+        sequence: "2022-10-28-47",
+        readingYear: 2022,
+        readingMonth: "Oct",
+        readingDay: "Fri",
+        date: "28",
+        yearPublished: 1977,
+        progress: "87%",
+        title: "The Shining",
+        edition: "Audible",
+        kind: "Novel",
+        authors: [
+          {
+            name: "Stephen King",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/794d3075a7009bf20aafaa07c5679d56/8bcae/the-shining-by-stephen-king.jpg",
+                  srcSet:
+                    "/static/794d3075a7009bf20aafaa07c5679d56/8bcae/the-shining-by-stephen-king.jpg 72w,\n/static/794d3075a7009bf20aafaa07c5679d56/7306c/the-shining-by-stephen-king.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/794d3075a7009bf20aafaa07c5679d56/6903a/the-shining-by-stephen-king.avif 72w,\n/static/794d3075a7009bf20aafaa07c5679d56/65187/the-shining-by-stephen-king.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        slug: "the-skeptics-guide-to-the-universe-by-steven-novella",
+        reviewed: true,
+        sequence: "2022-10-23-48",
         readingYear: 2022,
         readingMonth: "Oct",
         readingDay: "Sun",
@@ -1697,7 +2511,6 @@ export const data = {
         title: "The Skeptics' Guide to the Universe",
         edition: "Audible",
         kind: "Nonfiction",
-        sortDate: "2022-10-23-48",
         authors: [
           {
             name: "Steven Novella",
@@ -1730,54 +2543,9 @@ export const data = {
         },
       },
       {
-        workSlug: "the-shining-by-stephen-king",
+        slug: "the-skeptics-guide-to-the-universe-by-steven-novella",
         reviewed: true,
-        sequence: 47,
-        readingYear: 2022,
-        readingMonth: "Oct",
-        readingDay: "Sat",
-        date: "22",
-        yearPublished: 1977,
-        progress: "75%",
-        title: "The Shining",
-        edition: "Audible",
-        kind: "Novel",
-        sortDate: "2022-10-22-47",
-        authors: [
-          {
-            name: "Stephen King",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/794d3075a7009bf20aafaa07c5679d56/8bcae/the-shining-by-stephen-king.jpg",
-                  srcSet:
-                    "/static/794d3075a7009bf20aafaa07c5679d56/8bcae/the-shining-by-stephen-king.jpg 72w,\n/static/794d3075a7009bf20aafaa07c5679d56/7306c/the-shining-by-stephen-king.jpg 144w",
-                  sizes: "72px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/794d3075a7009bf20aafaa07c5679d56/6903a/the-shining-by-stephen-king.avif 72w,\n/static/794d3075a7009bf20aafaa07c5679d56/65187/the-shining-by-stephen-king.avif 144w",
-                    type: "image/avif",
-                    sizes: "72px",
-                  },
-                ],
-              },
-              width: 72,
-              height: 108,
-            },
-          },
-        },
-      },
-      {
-        workSlug: "the-skeptics-guide-to-the-universe-by-steven-novella",
-        reviewed: true,
-        sequence: 48,
+        sequence: "2022-10-22-48",
         readingYear: 2022,
         readingMonth: "Oct",
         readingDay: "Sat",
@@ -1787,7 +2555,6 @@ export const data = {
         title: "The Skeptics' Guide to the Universe",
         edition: "Audible",
         kind: "Nonfiction",
-        sortDate: "2022-10-22-48",
         authors: [
           {
             name: "Steven Novella",
@@ -1820,9 +2587,53 @@ export const data = {
         },
       },
       {
-        workSlug: "the-shining-by-stephen-king",
+        slug: "the-shining-by-stephen-king",
         reviewed: true,
-        sequence: 47,
+        sequence: "2022-10-22-47",
+        readingYear: 2022,
+        readingMonth: "Oct",
+        readingDay: "Sat",
+        date: "22",
+        yearPublished: 1977,
+        progress: "75%",
+        title: "The Shining",
+        edition: "Audible",
+        kind: "Novel",
+        authors: [
+          {
+            name: "Stephen King",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/794d3075a7009bf20aafaa07c5679d56/8bcae/the-shining-by-stephen-king.jpg",
+                  srcSet:
+                    "/static/794d3075a7009bf20aafaa07c5679d56/8bcae/the-shining-by-stephen-king.jpg 72w,\n/static/794d3075a7009bf20aafaa07c5679d56/7306c/the-shining-by-stephen-king.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/794d3075a7009bf20aafaa07c5679d56/6903a/the-shining-by-stephen-king.avif 72w,\n/static/794d3075a7009bf20aafaa07c5679d56/65187/the-shining-by-stephen-king.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        slug: "the-shining-by-stephen-king",
+        reviewed: true,
+        sequence: "2022-10-21-47",
         readingYear: 2022,
         readingMonth: "Oct",
         readingDay: "Fri",
@@ -1832,7 +2643,6 @@ export const data = {
         title: "The Shining",
         edition: "Audible",
         kind: "Novel",
-        sortDate: "2022-10-21-47",
         authors: [
           {
             name: "Stephen King",
@@ -1865,9 +2675,9 @@ export const data = {
         },
       },
       {
-        workSlug: "the-shining-by-stephen-king",
+        slug: "the-shining-by-stephen-king",
         reviewed: true,
-        sequence: 47,
+        sequence: "2022-10-20-47",
         readingYear: 2022,
         readingMonth: "Oct",
         readingDay: "Thu",
@@ -1877,7 +2687,6 @@ export const data = {
         title: "The Shining",
         edition: "Audible",
         kind: "Novel",
-        sortDate: "2022-10-20-47",
         authors: [
           {
             name: "Stephen King",
@@ -1910,9 +2719,9 @@ export const data = {
         },
       },
       {
-        workSlug: "the-shining-by-stephen-king",
+        slug: "the-shining-by-stephen-king",
         reviewed: true,
-        sequence: 47,
+        sequence: "2022-10-19-47",
         readingYear: 2022,
         readingMonth: "Oct",
         readingDay: "Wed",
@@ -1922,7 +2731,6 @@ export const data = {
         title: "The Shining",
         edition: "Audible",
         kind: "Novel",
-        sortDate: "2022-10-19-47",
         authors: [
           {
             name: "Stephen King",
@@ -1955,9 +2763,9 @@ export const data = {
         },
       },
       {
-        workSlug: "the-shining-by-stephen-king",
+        slug: "the-shining-by-stephen-king",
         reviewed: true,
-        sequence: 47,
+        sequence: "2022-10-18-47",
         readingYear: 2022,
         readingMonth: "Oct",
         readingDay: "Tue",
@@ -1967,7 +2775,6 @@ export const data = {
         title: "The Shining",
         edition: "Audible",
         kind: "Novel",
-        sortDate: "2022-10-18-47",
         authors: [
           {
             name: "Stephen King",
@@ -2000,9 +2807,9 @@ export const data = {
         },
       },
       {
-        workSlug: "the-shining-by-stephen-king",
+        slug: "the-shining-by-stephen-king",
         reviewed: true,
-        sequence: 47,
+        sequence: "2022-10-17-47",
         readingYear: 2022,
         readingMonth: "Oct",
         readingDay: "Mon",
@@ -2012,7 +2819,6 @@ export const data = {
         title: "The Shining",
         edition: "Audible",
         kind: "Novel",
-        sortDate: "2022-10-17-47",
         authors: [
           {
             name: "Stephen King",
@@ -2045,54 +2851,9 @@ export const data = {
         },
       },
       {
-        workSlug: "moonraker-by-ian-fleming",
+        slug: "the-shining-by-stephen-king",
         reviewed: true,
-        sequence: 46,
-        readingYear: 2022,
-        readingMonth: "Oct",
-        readingDay: "Sun",
-        date: "16",
-        yearPublished: 1955,
-        progress: "Finished",
-        title: "Moonraker",
-        edition: "Audible",
-        kind: "Novel",
-        sortDate: "2022-10-16-46",
-        authors: [
-          {
-            name: "Ian Fleming",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/3b66fbd34eb88e5ee1a60723d581a5db/8bcae/moonraker-by-ian-fleming.jpg",
-                  srcSet:
-                    "/static/3b66fbd34eb88e5ee1a60723d581a5db/8bcae/moonraker-by-ian-fleming.jpg 72w,\n/static/3b66fbd34eb88e5ee1a60723d581a5db/7306c/moonraker-by-ian-fleming.jpg 144w",
-                  sizes: "72px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/3b66fbd34eb88e5ee1a60723d581a5db/6903a/moonraker-by-ian-fleming.avif 72w,\n/static/3b66fbd34eb88e5ee1a60723d581a5db/65187/moonraker-by-ian-fleming.avif 144w",
-                    type: "image/avif",
-                    sizes: "72px",
-                  },
-                ],
-              },
-              width: 72,
-              height: 108,
-            },
-          },
-        },
-      },
-      {
-        workSlug: "the-shining-by-stephen-king",
-        reviewed: true,
-        sequence: 47,
+        sequence: "2022-10-16-47",
         readingYear: 2022,
         readingMonth: "Oct",
         readingDay: "Sun",
@@ -2102,7 +2863,6 @@ export const data = {
         title: "The Shining",
         edition: "Audible",
         kind: "Novel",
-        sortDate: "2022-10-16-47",
         authors: [
           {
             name: "Stephen King",
@@ -2135,19 +2895,18 @@ export const data = {
         },
       },
       {
-        workSlug: "moonraker-by-ian-fleming",
+        slug: "moonraker-by-ian-fleming",
         reviewed: true,
-        sequence: 46,
+        sequence: "2022-10-16-46",
         readingYear: 2022,
         readingMonth: "Oct",
-        readingDay: "Sat",
-        date: "15",
+        readingDay: "Sun",
+        date: "16",
         yearPublished: 1955,
-        progress: "55%",
+        progress: "Finished",
         title: "Moonraker",
         edition: "Audible",
         kind: "Novel",
-        sortDate: "2022-10-15-46",
         authors: [
           {
             name: "Ian Fleming",
@@ -2180,9 +2939,53 @@ export const data = {
         },
       },
       {
-        workSlug: "salems-lot-by-stephen-king",
+        slug: "moonraker-by-ian-fleming",
         reviewed: true,
-        sequence: 45,
+        sequence: "2022-10-15-46",
+        readingYear: 2022,
+        readingMonth: "Oct",
+        readingDay: "Sat",
+        date: "15",
+        yearPublished: 1955,
+        progress: "55%",
+        title: "Moonraker",
+        edition: "Audible",
+        kind: "Novel",
+        authors: [
+          {
+            name: "Ian Fleming",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/3b66fbd34eb88e5ee1a60723d581a5db/8bcae/moonraker-by-ian-fleming.jpg",
+                  srcSet:
+                    "/static/3b66fbd34eb88e5ee1a60723d581a5db/8bcae/moonraker-by-ian-fleming.jpg 72w,\n/static/3b66fbd34eb88e5ee1a60723d581a5db/7306c/moonraker-by-ian-fleming.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/3b66fbd34eb88e5ee1a60723d581a5db/6903a/moonraker-by-ian-fleming.avif 72w,\n/static/3b66fbd34eb88e5ee1a60723d581a5db/65187/moonraker-by-ian-fleming.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        slug: "salems-lot-by-stephen-king",
+        reviewed: true,
+        sequence: "2022-10-14-45",
         readingYear: 2022,
         readingMonth: "Oct",
         readingDay: "Fri",
@@ -2192,7 +2995,6 @@ export const data = {
         title: "'Salem's Lot",
         edition: "Audible",
         kind: "Novel",
-        sortDate: "2022-10-14-45",
         authors: [
           {
             name: "Stephen King",
@@ -2225,54 +3027,9 @@ export const data = {
         },
       },
       {
-        workSlug: "cant-hurt-me-by-david-goggins",
+        slug: "salems-lot-by-stephen-king",
         reviewed: true,
-        sequence: 44,
-        readingYear: 2022,
-        readingMonth: "Oct",
-        readingDay: "Thu",
-        date: "13",
-        yearPublished: 2018,
-        progress: "Finished",
-        title: "Can't Hurt Me",
-        edition: "Audible",
-        kind: "Nonfiction",
-        sortDate: "2022-10-13-44",
-        authors: [
-          {
-            name: "David Goggins",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/0d12ac8e4b095846adb8129e5f5c95e4/8bcae/cant-hurt-me-by-david-goggins.jpg",
-                  srcSet:
-                    "/static/0d12ac8e4b095846adb8129e5f5c95e4/8bcae/cant-hurt-me-by-david-goggins.jpg 72w,\n/static/0d12ac8e4b095846adb8129e5f5c95e4/7306c/cant-hurt-me-by-david-goggins.jpg 144w",
-                  sizes: "72px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/0d12ac8e4b095846adb8129e5f5c95e4/6903a/cant-hurt-me-by-david-goggins.avif 72w,\n/static/0d12ac8e4b095846adb8129e5f5c95e4/65187/cant-hurt-me-by-david-goggins.avif 144w",
-                    type: "image/avif",
-                    sizes: "72px",
-                  },
-                ],
-              },
-              width: 72,
-              height: 108,
-            },
-          },
-        },
-      },
-      {
-        workSlug: "salems-lot-by-stephen-king",
-        reviewed: true,
-        sequence: 45,
+        sequence: "2022-10-13-45",
         readingYear: 2022,
         readingMonth: "Oct",
         readingDay: "Thu",
@@ -2282,7 +3039,6 @@ export const data = {
         title: "'Salem's Lot",
         edition: "Audible",
         kind: "Novel",
-        sortDate: "2022-10-13-45",
         authors: [
           {
             name: "Stephen King",
@@ -2315,9 +3071,53 @@ export const data = {
         },
       },
       {
-        workSlug: "out-are-the-lights-by-richard-laymon",
+        slug: "cant-hurt-me-by-david-goggins",
         reviewed: true,
-        sequence: 43,
+        sequence: "2022-10-13-44",
+        readingYear: 2022,
+        readingMonth: "Oct",
+        readingDay: "Thu",
+        date: "13",
+        yearPublished: 2018,
+        progress: "Finished",
+        title: "Can't Hurt Me",
+        edition: "Audible",
+        kind: "Nonfiction",
+        authors: [
+          {
+            name: "David Goggins",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/0d12ac8e4b095846adb8129e5f5c95e4/8bcae/cant-hurt-me-by-david-goggins.jpg",
+                  srcSet:
+                    "/static/0d12ac8e4b095846adb8129e5f5c95e4/8bcae/cant-hurt-me-by-david-goggins.jpg 72w,\n/static/0d12ac8e4b095846adb8129e5f5c95e4/7306c/cant-hurt-me-by-david-goggins.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/0d12ac8e4b095846adb8129e5f5c95e4/6903a/cant-hurt-me-by-david-goggins.avif 72w,\n/static/0d12ac8e4b095846adb8129e5f5c95e4/65187/cant-hurt-me-by-david-goggins.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        slug: "out-are-the-lights-by-richard-laymon",
+        reviewed: true,
+        sequence: "2022-10-11-43",
         readingYear: 2022,
         readingMonth: "Oct",
         readingDay: "Tue",
@@ -2327,7 +3127,6 @@ export const data = {
         title: "Out Are the Lights",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-10-11-43",
         authors: [
           {
             name: "Richard Laymon",
@@ -2360,9 +3159,53 @@ export const data = {
         },
       },
       {
-        workSlug: "cant-hurt-me-by-david-goggins",
+        slug: "salems-lot-by-stephen-king",
         reviewed: true,
-        sequence: 44,
+        sequence: "2022-10-10-45",
+        readingYear: 2022,
+        readingMonth: "Oct",
+        readingDay: "Mon",
+        date: "10",
+        yearPublished: 1975,
+        progress: "72%",
+        title: "'Salem's Lot",
+        edition: "Audible",
+        kind: "Novel",
+        authors: [
+          {
+            name: "Stephen King",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/069c1d318c1a90f3aa0ae55b5eab6d8d/8bcae/salems-lot-by-stephen-king.jpg",
+                  srcSet:
+                    "/static/069c1d318c1a90f3aa0ae55b5eab6d8d/8bcae/salems-lot-by-stephen-king.jpg 72w,\n/static/069c1d318c1a90f3aa0ae55b5eab6d8d/7306c/salems-lot-by-stephen-king.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/069c1d318c1a90f3aa0ae55b5eab6d8d/6903a/salems-lot-by-stephen-king.avif 72w,\n/static/069c1d318c1a90f3aa0ae55b5eab6d8d/65187/salems-lot-by-stephen-king.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        slug: "cant-hurt-me-by-david-goggins",
+        reviewed: true,
+        sequence: "2022-10-10-44",
         readingYear: 2022,
         readingMonth: "Oct",
         readingDay: "Mon",
@@ -2372,7 +3215,6 @@ export const data = {
         title: "Can't Hurt Me",
         edition: "Audible",
         kind: "Nonfiction",
-        sortDate: "2022-10-10-44",
         authors: [
           {
             name: "David Goggins",
@@ -2405,144 +3247,9 @@ export const data = {
         },
       },
       {
-        workSlug: "salems-lot-by-stephen-king",
+        slug: "salems-lot-by-stephen-king",
         reviewed: true,
-        sequence: 45,
-        readingYear: 2022,
-        readingMonth: "Oct",
-        readingDay: "Mon",
-        date: "10",
-        yearPublished: 1975,
-        progress: "72%",
-        title: "'Salem's Lot",
-        edition: "Audible",
-        kind: "Novel",
-        sortDate: "2022-10-10-45",
-        authors: [
-          {
-            name: "Stephen King",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/069c1d318c1a90f3aa0ae55b5eab6d8d/8bcae/salems-lot-by-stephen-king.jpg",
-                  srcSet:
-                    "/static/069c1d318c1a90f3aa0ae55b5eab6d8d/8bcae/salems-lot-by-stephen-king.jpg 72w,\n/static/069c1d318c1a90f3aa0ae55b5eab6d8d/7306c/salems-lot-by-stephen-king.jpg 144w",
-                  sizes: "72px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/069c1d318c1a90f3aa0ae55b5eab6d8d/6903a/salems-lot-by-stephen-king.avif 72w,\n/static/069c1d318c1a90f3aa0ae55b5eab6d8d/65187/salems-lot-by-stephen-king.avif 144w",
-                    type: "image/avif",
-                    sizes: "72px",
-                  },
-                ],
-              },
-              width: 72,
-              height: 108,
-            },
-          },
-        },
-      },
-      {
-        workSlug: "out-are-the-lights-by-richard-laymon",
-        reviewed: true,
-        sequence: 43,
-        readingYear: 2022,
-        readingMonth: "Oct",
-        readingDay: "Sun",
-        date: "9",
-        yearPublished: 1982,
-        progress: "87%",
-        title: "Out Are the Lights",
-        edition: "Kindle",
-        kind: "Novel",
-        sortDate: "2022-10-09-43",
-        authors: [
-          {
-            name: "Richard Laymon",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/d12a903f0f3b171be2be1904af2dec4c/8bcae/out-are-the-lights-and-other-tales-by-richard-laymon.jpg",
-                  srcSet:
-                    "/static/d12a903f0f3b171be2be1904af2dec4c/8bcae/out-are-the-lights-and-other-tales-by-richard-laymon.jpg 72w,\n/static/d12a903f0f3b171be2be1904af2dec4c/7306c/out-are-the-lights-and-other-tales-by-richard-laymon.jpg 144w",
-                  sizes: "72px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/d12a903f0f3b171be2be1904af2dec4c/6903a/out-are-the-lights-and-other-tales-by-richard-laymon.avif 72w,\n/static/d12a903f0f3b171be2be1904af2dec4c/65187/out-are-the-lights-and-other-tales-by-richard-laymon.avif 144w",
-                    type: "image/avif",
-                    sizes: "72px",
-                  },
-                ],
-              },
-              width: 72,
-              height: 108,
-            },
-          },
-        },
-      },
-      {
-        workSlug: "cant-hurt-me-by-david-goggins",
-        reviewed: true,
-        sequence: 44,
-        readingYear: 2022,
-        readingMonth: "Oct",
-        readingDay: "Sun",
-        date: "9",
-        yearPublished: 2018,
-        progress: "39%",
-        title: "Can't Hurt Me",
-        edition: "Audible",
-        kind: "Nonfiction",
-        sortDate: "2022-10-09-44",
-        authors: [
-          {
-            name: "David Goggins",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/0d12ac8e4b095846adb8129e5f5c95e4/8bcae/cant-hurt-me-by-david-goggins.jpg",
-                  srcSet:
-                    "/static/0d12ac8e4b095846adb8129e5f5c95e4/8bcae/cant-hurt-me-by-david-goggins.jpg 72w,\n/static/0d12ac8e4b095846adb8129e5f5c95e4/7306c/cant-hurt-me-by-david-goggins.jpg 144w",
-                  sizes: "72px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/0d12ac8e4b095846adb8129e5f5c95e4/6903a/cant-hurt-me-by-david-goggins.avif 72w,\n/static/0d12ac8e4b095846adb8129e5f5c95e4/65187/cant-hurt-me-by-david-goggins.avif 144w",
-                    type: "image/avif",
-                    sizes: "72px",
-                  },
-                ],
-              },
-              width: 72,
-              height: 108,
-            },
-          },
-        },
-      },
-      {
-        workSlug: "salems-lot-by-stephen-king",
-        reviewed: true,
-        sequence: 45,
+        sequence: "2022-10-09-45",
         readingYear: 2022,
         readingMonth: "Oct",
         readingDay: "Sun",
@@ -2552,7 +3259,6 @@ export const data = {
         title: "'Salem's Lot",
         edition: "Audible",
         kind: "Novel",
-        sortDate: "2022-10-09-45",
         authors: [
           {
             name: "Stephen King",
@@ -2585,64 +3291,18 @@ export const data = {
         },
       },
       {
-        workSlug: "out-are-the-lights-by-richard-laymon",
+        slug: "cant-hurt-me-by-david-goggins",
         reviewed: true,
-        sequence: 43,
+        sequence: "2022-10-09-44",
         readingYear: 2022,
         readingMonth: "Oct",
-        readingDay: "Sat",
-        date: "8",
-        yearPublished: 1982,
-        progress: "72%",
-        title: "Out Are the Lights",
-        edition: "Kindle",
-        kind: "Novel",
-        sortDate: "2022-10-08-43",
-        authors: [
-          {
-            name: "Richard Laymon",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/d12a903f0f3b171be2be1904af2dec4c/8bcae/out-are-the-lights-and-other-tales-by-richard-laymon.jpg",
-                  srcSet:
-                    "/static/d12a903f0f3b171be2be1904af2dec4c/8bcae/out-are-the-lights-and-other-tales-by-richard-laymon.jpg 72w,\n/static/d12a903f0f3b171be2be1904af2dec4c/7306c/out-are-the-lights-and-other-tales-by-richard-laymon.jpg 144w",
-                  sizes: "72px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/d12a903f0f3b171be2be1904af2dec4c/6903a/out-are-the-lights-and-other-tales-by-richard-laymon.avif 72w,\n/static/d12a903f0f3b171be2be1904af2dec4c/65187/out-are-the-lights-and-other-tales-by-richard-laymon.avif 144w",
-                    type: "image/avif",
-                    sizes: "72px",
-                  },
-                ],
-              },
-              width: 72,
-              height: 108,
-            },
-          },
-        },
-      },
-      {
-        workSlug: "cant-hurt-me-by-david-goggins",
-        reviewed: true,
-        sequence: 44,
-        readingYear: 2022,
-        readingMonth: "Oct",
-        readingDay: "Sat",
-        date: "8",
+        readingDay: "Sun",
+        date: "9",
         yearPublished: 2018,
-        progress: "24%",
+        progress: "39%",
         title: "Can't Hurt Me",
         edition: "Audible",
         kind: "Nonfiction",
-        sortDate: "2022-10-08-44",
         authors: [
           {
             name: "David Goggins",
@@ -2675,9 +3335,53 @@ export const data = {
         },
       },
       {
-        workSlug: "salems-lot-by-stephen-king",
+        slug: "out-are-the-lights-by-richard-laymon",
         reviewed: true,
-        sequence: 45,
+        sequence: "2022-10-09-43",
+        readingYear: 2022,
+        readingMonth: "Oct",
+        readingDay: "Sun",
+        date: "9",
+        yearPublished: 1982,
+        progress: "87%",
+        title: "Out Are the Lights",
+        edition: "Kindle",
+        kind: "Novel",
+        authors: [
+          {
+            name: "Richard Laymon",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/d12a903f0f3b171be2be1904af2dec4c/8bcae/out-are-the-lights-and-other-tales-by-richard-laymon.jpg",
+                  srcSet:
+                    "/static/d12a903f0f3b171be2be1904af2dec4c/8bcae/out-are-the-lights-and-other-tales-by-richard-laymon.jpg 72w,\n/static/d12a903f0f3b171be2be1904af2dec4c/7306c/out-are-the-lights-and-other-tales-by-richard-laymon.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/d12a903f0f3b171be2be1904af2dec4c/6903a/out-are-the-lights-and-other-tales-by-richard-laymon.avif 72w,\n/static/d12a903f0f3b171be2be1904af2dec4c/65187/out-are-the-lights-and-other-tales-by-richard-laymon.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        slug: "salems-lot-by-stephen-king",
+        reviewed: true,
+        sequence: "2022-10-08-45",
         readingYear: 2022,
         readingMonth: "Oct",
         readingDay: "Sat",
@@ -2687,7 +3391,6 @@ export const data = {
         title: "'Salem's Lot",
         edition: "Audible",
         kind: "Novel",
-        sortDate: "2022-10-08-45",
         authors: [
           {
             name: "Stephen King",
@@ -2720,154 +3423,18 @@ export const data = {
         },
       },
       {
-        workSlug: "out-are-the-lights-by-richard-laymon",
+        slug: "cant-hurt-me-by-david-goggins",
         reviewed: true,
-        sequence: 43,
+        sequence: "2022-10-08-44",
         readingYear: 2022,
         readingMonth: "Oct",
-        readingDay: "Fri",
-        date: "7",
-        yearPublished: 1982,
-        progress: "43%",
-        title: "Out Are the Lights",
-        edition: "Kindle",
-        kind: "Novel",
-        sortDate: "2022-10-07-43",
-        authors: [
-          {
-            name: "Richard Laymon",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/d12a903f0f3b171be2be1904af2dec4c/8bcae/out-are-the-lights-and-other-tales-by-richard-laymon.jpg",
-                  srcSet:
-                    "/static/d12a903f0f3b171be2be1904af2dec4c/8bcae/out-are-the-lights-and-other-tales-by-richard-laymon.jpg 72w,\n/static/d12a903f0f3b171be2be1904af2dec4c/7306c/out-are-the-lights-and-other-tales-by-richard-laymon.jpg 144w",
-                  sizes: "72px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/d12a903f0f3b171be2be1904af2dec4c/6903a/out-are-the-lights-and-other-tales-by-richard-laymon.avif 72w,\n/static/d12a903f0f3b171be2be1904af2dec4c/65187/out-are-the-lights-and-other-tales-by-richard-laymon.avif 144w",
-                    type: "image/avif",
-                    sizes: "72px",
-                  },
-                ],
-              },
-              width: 72,
-              height: 108,
-            },
-          },
-        },
-      },
-      {
-        workSlug: "salems-lot-by-stephen-king",
-        reviewed: true,
-        sequence: 45,
-        readingYear: 2022,
-        readingMonth: "Oct",
-        readingDay: "Fri",
-        date: "7",
-        yearPublished: 1975,
-        progress: "19%",
-        title: "'Salem's Lot",
-        edition: "Audible",
-        kind: "Novel",
-        sortDate: "2022-10-07-45",
-        authors: [
-          {
-            name: "Stephen King",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/069c1d318c1a90f3aa0ae55b5eab6d8d/8bcae/salems-lot-by-stephen-king.jpg",
-                  srcSet:
-                    "/static/069c1d318c1a90f3aa0ae55b5eab6d8d/8bcae/salems-lot-by-stephen-king.jpg 72w,\n/static/069c1d318c1a90f3aa0ae55b5eab6d8d/7306c/salems-lot-by-stephen-king.jpg 144w",
-                  sizes: "72px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/069c1d318c1a90f3aa0ae55b5eab6d8d/6903a/salems-lot-by-stephen-king.avif 72w,\n/static/069c1d318c1a90f3aa0ae55b5eab6d8d/65187/salems-lot-by-stephen-king.avif 144w",
-                    type: "image/avif",
-                    sizes: "72px",
-                  },
-                ],
-              },
-              width: 72,
-              height: 108,
-            },
-          },
-        },
-      },
-      {
-        workSlug: "what-doesnt-kill-us-by-scott-carney",
-        reviewed: true,
-        sequence: 42,
-        readingYear: 2022,
-        readingMonth: "Oct",
-        readingDay: "Tue",
-        date: "4",
-        yearPublished: 2017,
-        progress: "Finished",
-        title: "What Doesn't Kill Us",
-        edition: "Audible",
-        kind: "Nonfiction",
-        sortDate: "2022-10-04-42",
-        authors: [
-          {
-            name: "Scott Carney",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/3476cf961fd1f42f67b03a31ad595999/8bcae/what-doesnt-kill-us-by-scott-carney.jpg",
-                  srcSet:
-                    "/static/3476cf961fd1f42f67b03a31ad595999/8bcae/what-doesnt-kill-us-by-scott-carney.jpg 72w,\n/static/3476cf961fd1f42f67b03a31ad595999/7306c/what-doesnt-kill-us-by-scott-carney.jpg 144w",
-                  sizes: "72px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/3476cf961fd1f42f67b03a31ad595999/6903a/what-doesnt-kill-us-by-scott-carney.avif 72w,\n/static/3476cf961fd1f42f67b03a31ad595999/65187/what-doesnt-kill-us-by-scott-carney.avif 144w",
-                    type: "image/avif",
-                    sizes: "72px",
-                  },
-                ],
-              },
-              width: 72,
-              height: 108,
-            },
-          },
-        },
-      },
-      {
-        workSlug: "cant-hurt-me-by-david-goggins",
-        reviewed: true,
-        sequence: 44,
-        readingYear: 2022,
-        readingMonth: "Oct",
-        readingDay: "Tue",
-        date: "4",
+        readingDay: "Sat",
+        date: "8",
         yearPublished: 2018,
-        progress: "11%",
+        progress: "24%",
         title: "Can't Hurt Me",
         edition: "Audible",
         kind: "Nonfiction",
-        sortDate: "2022-10-04-44",
         authors: [
           {
             name: "David Goggins",
@@ -2900,19 +3467,194 @@ export const data = {
         },
       },
       {
-        workSlug: "what-doesnt-kill-us-by-scott-carney",
+        slug: "out-are-the-lights-by-richard-laymon",
         reviewed: true,
-        sequence: 42,
+        sequence: "2022-10-08-43",
         readingYear: 2022,
         readingMonth: "Oct",
-        readingDay: "Sun",
-        date: "2",
+        readingDay: "Sat",
+        date: "8",
+        yearPublished: 1982,
+        progress: "72%",
+        title: "Out Are the Lights",
+        edition: "Kindle",
+        kind: "Novel",
+        authors: [
+          {
+            name: "Richard Laymon",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/d12a903f0f3b171be2be1904af2dec4c/8bcae/out-are-the-lights-and-other-tales-by-richard-laymon.jpg",
+                  srcSet:
+                    "/static/d12a903f0f3b171be2be1904af2dec4c/8bcae/out-are-the-lights-and-other-tales-by-richard-laymon.jpg 72w,\n/static/d12a903f0f3b171be2be1904af2dec4c/7306c/out-are-the-lights-and-other-tales-by-richard-laymon.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/d12a903f0f3b171be2be1904af2dec4c/6903a/out-are-the-lights-and-other-tales-by-richard-laymon.avif 72w,\n/static/d12a903f0f3b171be2be1904af2dec4c/65187/out-are-the-lights-and-other-tales-by-richard-laymon.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        slug: "salems-lot-by-stephen-king",
+        reviewed: true,
+        sequence: "2022-10-07-45",
+        readingYear: 2022,
+        readingMonth: "Oct",
+        readingDay: "Fri",
+        date: "7",
+        yearPublished: 1975,
+        progress: "19%",
+        title: "'Salem's Lot",
+        edition: "Audible",
+        kind: "Novel",
+        authors: [
+          {
+            name: "Stephen King",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/069c1d318c1a90f3aa0ae55b5eab6d8d/8bcae/salems-lot-by-stephen-king.jpg",
+                  srcSet:
+                    "/static/069c1d318c1a90f3aa0ae55b5eab6d8d/8bcae/salems-lot-by-stephen-king.jpg 72w,\n/static/069c1d318c1a90f3aa0ae55b5eab6d8d/7306c/salems-lot-by-stephen-king.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/069c1d318c1a90f3aa0ae55b5eab6d8d/6903a/salems-lot-by-stephen-king.avif 72w,\n/static/069c1d318c1a90f3aa0ae55b5eab6d8d/65187/salems-lot-by-stephen-king.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        slug: "out-are-the-lights-by-richard-laymon",
+        reviewed: true,
+        sequence: "2022-10-07-43",
+        readingYear: 2022,
+        readingMonth: "Oct",
+        readingDay: "Fri",
+        date: "7",
+        yearPublished: 1982,
+        progress: "43%",
+        title: "Out Are the Lights",
+        edition: "Kindle",
+        kind: "Novel",
+        authors: [
+          {
+            name: "Richard Laymon",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/d12a903f0f3b171be2be1904af2dec4c/8bcae/out-are-the-lights-and-other-tales-by-richard-laymon.jpg",
+                  srcSet:
+                    "/static/d12a903f0f3b171be2be1904af2dec4c/8bcae/out-are-the-lights-and-other-tales-by-richard-laymon.jpg 72w,\n/static/d12a903f0f3b171be2be1904af2dec4c/7306c/out-are-the-lights-and-other-tales-by-richard-laymon.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/d12a903f0f3b171be2be1904af2dec4c/6903a/out-are-the-lights-and-other-tales-by-richard-laymon.avif 72w,\n/static/d12a903f0f3b171be2be1904af2dec4c/65187/out-are-the-lights-and-other-tales-by-richard-laymon.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        slug: "cant-hurt-me-by-david-goggins",
+        reviewed: true,
+        sequence: "2022-10-04-44",
+        readingYear: 2022,
+        readingMonth: "Oct",
+        readingDay: "Tue",
+        date: "4",
+        yearPublished: 2018,
+        progress: "11%",
+        title: "Can't Hurt Me",
+        edition: "Audible",
+        kind: "Nonfiction",
+        authors: [
+          {
+            name: "David Goggins",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/0d12ac8e4b095846adb8129e5f5c95e4/8bcae/cant-hurt-me-by-david-goggins.jpg",
+                  srcSet:
+                    "/static/0d12ac8e4b095846adb8129e5f5c95e4/8bcae/cant-hurt-me-by-david-goggins.jpg 72w,\n/static/0d12ac8e4b095846adb8129e5f5c95e4/7306c/cant-hurt-me-by-david-goggins.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/0d12ac8e4b095846adb8129e5f5c95e4/6903a/cant-hurt-me-by-david-goggins.avif 72w,\n/static/0d12ac8e4b095846adb8129e5f5c95e4/65187/cant-hurt-me-by-david-goggins.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        slug: "what-doesnt-kill-us-by-scott-carney",
+        reviewed: true,
+        sequence: "2022-10-04-42",
+        readingYear: 2022,
+        readingMonth: "Oct",
+        readingDay: "Tue",
+        date: "4",
         yearPublished: 2017,
-        progress: "87%",
+        progress: "Finished",
         title: "What Doesn't Kill Us",
         edition: "Audible",
         kind: "Nonfiction",
-        sortDate: "2022-10-02-42",
         authors: [
           {
             name: "Scott Carney",
@@ -2945,9 +3687,9 @@ export const data = {
         },
       },
       {
-        workSlug: "out-are-the-lights-by-richard-laymon",
+        slug: "out-are-the-lights-by-richard-laymon",
         reviewed: true,
-        sequence: 43,
+        sequence: "2022-10-02-43",
         readingYear: 2022,
         readingMonth: "Oct",
         readingDay: "Sun",
@@ -2957,7 +3699,6 @@ export const data = {
         title: "Out Are the Lights",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-10-02-43",
         authors: [
           {
             name: "Richard Laymon",
@@ -2990,64 +3731,18 @@ export const data = {
         },
       },
       {
-        workSlug: "out-are-the-lights-by-richard-laymon",
+        slug: "what-doesnt-kill-us-by-scott-carney",
         reviewed: true,
-        sequence: 43,
+        sequence: "2022-10-02-42",
         readingYear: 2022,
         readingMonth: "Oct",
-        readingDay: "Sat",
-        date: "1",
-        yearPublished: 1982,
-        progress: "26%",
-        title: "Out Are the Lights",
-        edition: "Kindle",
-        kind: "Novel",
-        sortDate: "2022-10-01-43",
-        authors: [
-          {
-            name: "Richard Laymon",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/d12a903f0f3b171be2be1904af2dec4c/8bcae/out-are-the-lights-and-other-tales-by-richard-laymon.jpg",
-                  srcSet:
-                    "/static/d12a903f0f3b171be2be1904af2dec4c/8bcae/out-are-the-lights-and-other-tales-by-richard-laymon.jpg 72w,\n/static/d12a903f0f3b171be2be1904af2dec4c/7306c/out-are-the-lights-and-other-tales-by-richard-laymon.jpg 144w",
-                  sizes: "72px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/d12a903f0f3b171be2be1904af2dec4c/6903a/out-are-the-lights-and-other-tales-by-richard-laymon.avif 72w,\n/static/d12a903f0f3b171be2be1904af2dec4c/65187/out-are-the-lights-and-other-tales-by-richard-laymon.avif 144w",
-                    type: "image/avif",
-                    sizes: "72px",
-                  },
-                ],
-              },
-              width: 72,
-              height: 108,
-            },
-          },
-        },
-      },
-      {
-        workSlug: "what-doesnt-kill-us-by-scott-carney",
-        reviewed: true,
-        sequence: 42,
-        readingYear: 2022,
-        readingMonth: "Sep",
         readingDay: "Sun",
-        date: "25",
+        date: "2",
         yearPublished: 2017,
-        progress: "27%",
+        progress: "87%",
         title: "What Doesn't Kill Us",
         edition: "Audible",
         kind: "Nonfiction",
-        sortDate: "2022-09-25-42",
         authors: [
           {
             name: "Scott Carney",
@@ -3080,19 +3775,18 @@ export const data = {
         },
       },
       {
-        workSlug: "out-are-the-lights-by-richard-laymon",
+        slug: "out-are-the-lights-by-richard-laymon",
         reviewed: true,
-        sequence: 43,
+        sequence: "2022-10-01-43",
         readingYear: 2022,
-        readingMonth: "Sep",
-        readingDay: "Sun",
-        date: "25",
+        readingMonth: "Oct",
+        readingDay: "Sat",
+        date: "1",
         yearPublished: 1982,
-        progress: "20%",
+        progress: "26%",
         title: "Out Are the Lights",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-09-25-43",
         authors: [
           {
             name: "Richard Laymon",
@@ -3125,9 +3819,141 @@ export const data = {
         },
       },
       {
-        workSlug: "the-big-sleep-by-raymond-chandler",
+        slug: "out-are-the-lights-by-richard-laymon",
         reviewed: true,
-        sequence: 41,
+        sequence: "2022-09-25-43",
+        readingYear: 2022,
+        readingMonth: "Sep",
+        readingDay: "Sun",
+        date: "25",
+        yearPublished: 1982,
+        progress: "20%",
+        title: "Out Are the Lights",
+        edition: "Kindle",
+        kind: "Novel",
+        authors: [
+          {
+            name: "Richard Laymon",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/d12a903f0f3b171be2be1904af2dec4c/8bcae/out-are-the-lights-and-other-tales-by-richard-laymon.jpg",
+                  srcSet:
+                    "/static/d12a903f0f3b171be2be1904af2dec4c/8bcae/out-are-the-lights-and-other-tales-by-richard-laymon.jpg 72w,\n/static/d12a903f0f3b171be2be1904af2dec4c/7306c/out-are-the-lights-and-other-tales-by-richard-laymon.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/d12a903f0f3b171be2be1904af2dec4c/6903a/out-are-the-lights-and-other-tales-by-richard-laymon.avif 72w,\n/static/d12a903f0f3b171be2be1904af2dec4c/65187/out-are-the-lights-and-other-tales-by-richard-laymon.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        slug: "what-doesnt-kill-us-by-scott-carney",
+        reviewed: true,
+        sequence: "2022-09-25-42",
+        readingYear: 2022,
+        readingMonth: "Sep",
+        readingDay: "Sun",
+        date: "25",
+        yearPublished: 2017,
+        progress: "27%",
+        title: "What Doesn't Kill Us",
+        edition: "Audible",
+        kind: "Nonfiction",
+        authors: [
+          {
+            name: "Scott Carney",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/3476cf961fd1f42f67b03a31ad595999/8bcae/what-doesnt-kill-us-by-scott-carney.jpg",
+                  srcSet:
+                    "/static/3476cf961fd1f42f67b03a31ad595999/8bcae/what-doesnt-kill-us-by-scott-carney.jpg 72w,\n/static/3476cf961fd1f42f67b03a31ad595999/7306c/what-doesnt-kill-us-by-scott-carney.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/3476cf961fd1f42f67b03a31ad595999/6903a/what-doesnt-kill-us-by-scott-carney.avif 72w,\n/static/3476cf961fd1f42f67b03a31ad595999/65187/what-doesnt-kill-us-by-scott-carney.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        slug: "out-are-the-lights-by-richard-laymon",
+        reviewed: true,
+        sequence: "2022-09-24-43",
+        readingYear: 2022,
+        readingMonth: "Sep",
+        readingDay: "Sat",
+        date: "24",
+        yearPublished: 1982,
+        progress: "7%",
+        title: "Out Are the Lights",
+        edition: "Kindle",
+        kind: "Novel",
+        authors: [
+          {
+            name: "Richard Laymon",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/d12a903f0f3b171be2be1904af2dec4c/8bcae/out-are-the-lights-and-other-tales-by-richard-laymon.jpg",
+                  srcSet:
+                    "/static/d12a903f0f3b171be2be1904af2dec4c/8bcae/out-are-the-lights-and-other-tales-by-richard-laymon.jpg 72w,\n/static/d12a903f0f3b171be2be1904af2dec4c/7306c/out-are-the-lights-and-other-tales-by-richard-laymon.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/d12a903f0f3b171be2be1904af2dec4c/6903a/out-are-the-lights-and-other-tales-by-richard-laymon.avif 72w,\n/static/d12a903f0f3b171be2be1904af2dec4c/65187/out-are-the-lights-and-other-tales-by-richard-laymon.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        slug: "the-big-sleep-by-raymond-chandler",
+        reviewed: true,
+        sequence: "2022-09-24-41",
         readingYear: 2022,
         readingMonth: "Sep",
         readingDay: "Sat",
@@ -3137,7 +3963,6 @@ export const data = {
         title: "The Big Sleep",
         edition: "Audible",
         kind: "Novel",
-        sortDate: "2022-09-24-41",
         authors: [
           {
             name: "Raymond Chandler",
@@ -3170,54 +3995,9 @@ export const data = {
         },
       },
       {
-        workSlug: "out-are-the-lights-by-richard-laymon",
+        slug: "consider-this-by-chuck-palahniuk",
         reviewed: true,
-        sequence: 43,
-        readingYear: 2022,
-        readingMonth: "Sep",
-        readingDay: "Sat",
-        date: "24",
-        yearPublished: 1982,
-        progress: "7%",
-        title: "Out Are the Lights",
-        edition: "Kindle",
-        kind: "Novel",
-        sortDate: "2022-09-24-43",
-        authors: [
-          {
-            name: "Richard Laymon",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/d12a903f0f3b171be2be1904af2dec4c/8bcae/out-are-the-lights-and-other-tales-by-richard-laymon.jpg",
-                  srcSet:
-                    "/static/d12a903f0f3b171be2be1904af2dec4c/8bcae/out-are-the-lights-and-other-tales-by-richard-laymon.jpg 72w,\n/static/d12a903f0f3b171be2be1904af2dec4c/7306c/out-are-the-lights-and-other-tales-by-richard-laymon.jpg 144w",
-                  sizes: "72px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/d12a903f0f3b171be2be1904af2dec4c/6903a/out-are-the-lights-and-other-tales-by-richard-laymon.avif 72w,\n/static/d12a903f0f3b171be2be1904af2dec4c/65187/out-are-the-lights-and-other-tales-by-richard-laymon.avif 144w",
-                    type: "image/avif",
-                    sizes: "72px",
-                  },
-                ],
-              },
-              width: 72,
-              height: 108,
-            },
-          },
-        },
-      },
-      {
-        workSlug: "consider-this-by-chuck-palahniuk",
-        reviewed: true,
-        sequence: 40,
+        sequence: "2022-09-22-40",
         readingYear: 2022,
         readingMonth: "Sep",
         readingDay: "Thu",
@@ -3227,7 +4007,6 @@ export const data = {
         title: "Consider This",
         edition: "Audible",
         kind: "Nonfiction",
-        sortDate: "2022-09-22-40",
         authors: [
           {
             name: "Chuck Palahniuk",
@@ -3260,9 +4039,9 @@ export const data = {
         },
       },
       {
-        workSlug: "consider-this-by-chuck-palahniuk",
+        slug: "consider-this-by-chuck-palahniuk",
         reviewed: true,
-        sequence: 40,
+        sequence: "2022-09-21-40",
         readingYear: 2022,
         readingMonth: "Sep",
         readingDay: "Wed",
@@ -3272,7 +4051,6 @@ export const data = {
         title: "Consider This",
         edition: "Audible",
         kind: "Nonfiction",
-        sortDate: "2022-09-21-40",
         authors: [
           {
             name: "Chuck Palahniuk",
@@ -3305,9 +4083,9 @@ export const data = {
         },
       },
       {
-        workSlug: "carrie-by-stephen-king",
+        slug: "carrie-by-stephen-king",
         reviewed: true,
-        sequence: 39,
+        sequence: "2022-09-19-39",
         readingYear: 2022,
         readingMonth: "Sep",
         readingDay: "Mon",
@@ -3317,7 +4095,6 @@ export const data = {
         title: "Carrie",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-09-19-39",
         authors: [
           {
             name: "Stephen King",
@@ -3350,9 +4127,9 @@ export const data = {
         },
       },
       {
-        workSlug: "carrie-by-stephen-king",
+        slug: "carrie-by-stephen-king",
         reviewed: true,
-        sequence: 39,
+        sequence: "2022-09-18-39",
         readingYear: 2022,
         readingMonth: "Sep",
         readingDay: "Sun",
@@ -3362,7 +4139,6 @@ export const data = {
         title: "Carrie",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-09-18-39",
         authors: [
           {
             name: "Stephen King",
@@ -3395,54 +4171,9 @@ export const data = {
         },
       },
       {
-        workSlug: "i-will-find-you-by-joe-kenda",
+        slug: "carrie-by-stephen-king",
         reviewed: true,
-        sequence: 38,
-        readingYear: 2022,
-        readingMonth: "Sep",
-        readingDay: "Sat",
-        date: "17",
-        yearPublished: 2017,
-        progress: "Finished",
-        title: "I Will Find You",
-        edition: "Audible",
-        kind: "Nonfiction",
-        sortDate: "2022-09-17-38",
-        authors: [
-          {
-            name: "Joe Kenda",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/bc7ede6c999de0a0ca2b327dfb1355b2/8bcae/i-will-find-you-by-joe-kenda.jpg",
-                  srcSet:
-                    "/static/bc7ede6c999de0a0ca2b327dfb1355b2/8bcae/i-will-find-you-by-joe-kenda.jpg 72w,\n/static/bc7ede6c999de0a0ca2b327dfb1355b2/7306c/i-will-find-you-by-joe-kenda.jpg 144w",
-                  sizes: "72px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/bc7ede6c999de0a0ca2b327dfb1355b2/6903a/i-will-find-you-by-joe-kenda.avif 72w,\n/static/bc7ede6c999de0a0ca2b327dfb1355b2/65187/i-will-find-you-by-joe-kenda.avif 144w",
-                    type: "image/avif",
-                    sizes: "72px",
-                  },
-                ],
-              },
-              width: 72,
-              height: 108,
-            },
-          },
-        },
-      },
-      {
-        workSlug: "carrie-by-stephen-king",
-        reviewed: true,
-        sequence: 39,
+        sequence: "2022-09-17-39",
         readingYear: 2022,
         readingMonth: "Sep",
         readingDay: "Sat",
@@ -3452,7 +4183,6 @@ export const data = {
         title: "Carrie",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-09-17-39",
         authors: [
           {
             name: "Stephen King",
@@ -3485,9 +4215,53 @@ export const data = {
         },
       },
       {
-        workSlug: "i-will-find-you-by-joe-kenda",
+        slug: "i-will-find-you-by-joe-kenda",
         reviewed: true,
-        sequence: 38,
+        sequence: "2022-09-17-38",
+        readingYear: 2022,
+        readingMonth: "Sep",
+        readingDay: "Sat",
+        date: "17",
+        yearPublished: 2017,
+        progress: "Finished",
+        title: "I Will Find You",
+        edition: "Audible",
+        kind: "Nonfiction",
+        authors: [
+          {
+            name: "Joe Kenda",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/bc7ede6c999de0a0ca2b327dfb1355b2/8bcae/i-will-find-you-by-joe-kenda.jpg",
+                  srcSet:
+                    "/static/bc7ede6c999de0a0ca2b327dfb1355b2/8bcae/i-will-find-you-by-joe-kenda.jpg 72w,\n/static/bc7ede6c999de0a0ca2b327dfb1355b2/7306c/i-will-find-you-by-joe-kenda.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/bc7ede6c999de0a0ca2b327dfb1355b2/6903a/i-will-find-you-by-joe-kenda.avif 72w,\n/static/bc7ede6c999de0a0ca2b327dfb1355b2/65187/i-will-find-you-by-joe-kenda.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        slug: "i-will-find-you-by-joe-kenda",
+        reviewed: true,
+        sequence: "2022-09-16-38",
         readingYear: 2022,
         readingMonth: "Sep",
         readingDay: "Fri",
@@ -3497,7 +4271,6 @@ export const data = {
         title: "I Will Find You",
         edition: "Audible",
         kind: "Nonfiction",
-        sortDate: "2022-09-16-38",
         authors: [
           {
             name: "Joe Kenda",
@@ -3530,9 +4303,9 @@ export const data = {
         },
       },
       {
-        workSlug: "i-will-find-you-by-joe-kenda",
+        slug: "i-will-find-you-by-joe-kenda",
         reviewed: true,
-        sequence: 38,
+        sequence: "2022-09-13-38",
         readingYear: 2022,
         readingMonth: "Sep",
         readingDay: "Tue",
@@ -3542,7 +4315,6 @@ export const data = {
         title: "I Will Find You",
         edition: "Audible",
         kind: "Nonfiction",
-        sortDate: "2022-09-13-38",
         authors: [
           {
             name: "Joe Kenda",
@@ -3575,54 +4347,9 @@ export const data = {
         },
       },
       {
-        workSlug: "the-woods-are-dark-by-richard-laymon",
+        slug: "draft-no-4-by-john-mcphee",
         reviewed: true,
-        sequence: 36,
-        readingYear: 2022,
-        readingMonth: "Sep",
-        readingDay: "Sun",
-        date: "11",
-        yearPublished: 1981,
-        progress: "Finished",
-        title: "The Woods Are Dark",
-        edition: "Audible",
-        kind: "Novel",
-        sortDate: "2022-09-11-36",
-        authors: [
-          {
-            name: "Richard Laymon",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/ce4922405ae2989408bd24b23e71679c/8bcae/the-woods-are-dark-by-richard-laymon.jpg",
-                  srcSet:
-                    "/static/ce4922405ae2989408bd24b23e71679c/8bcae/the-woods-are-dark-by-richard-laymon.jpg 72w,\n/static/ce4922405ae2989408bd24b23e71679c/7306c/the-woods-are-dark-by-richard-laymon.jpg 144w",
-                  sizes: "72px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/ce4922405ae2989408bd24b23e71679c/6903a/the-woods-are-dark-by-richard-laymon.avif 72w,\n/static/ce4922405ae2989408bd24b23e71679c/65187/the-woods-are-dark-by-richard-laymon.avif 144w",
-                    type: "image/avif",
-                    sizes: "72px",
-                  },
-                ],
-              },
-              width: 72,
-              height: 108,
-            },
-          },
-        },
-      },
-      {
-        workSlug: "draft-no-4-by-john-mcphee",
-        reviewed: true,
-        sequence: 37,
+        sequence: "2022-09-11-37",
         readingYear: 2022,
         readingMonth: "Sep",
         readingDay: "Sun",
@@ -3632,7 +4359,6 @@ export const data = {
         title: "Draft No. 4",
         edition: "Audible",
         kind: "Nonfiction",
-        sortDate: "2022-09-11-37",
         authors: [
           {
             name: "John McPhee",
@@ -3665,64 +4391,18 @@ export const data = {
         },
       },
       {
-        workSlug: "is-this-anything-by-jerry-seinfeld",
+        slug: "the-woods-are-dark-by-richard-laymon",
         reviewed: true,
-        sequence: 35,
+        sequence: "2022-09-11-36",
         readingYear: 2022,
         readingMonth: "Sep",
-        readingDay: "Sat",
-        date: "10",
-        yearPublished: 2020,
-        progress: "Finished",
-        title: "Is This Anything?",
-        edition: "Audible",
-        kind: "Nonfiction",
-        sortDate: "2022-09-10-35",
-        authors: [
-          {
-            name: "Jerry Seinfeld",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/b77037a1a31eccfefc0a7c7a4d6b8620/8bcae/is-this-anything-by-jerry-seinfeld.jpg",
-                  srcSet:
-                    "/static/b77037a1a31eccfefc0a7c7a4d6b8620/8bcae/is-this-anything-by-jerry-seinfeld.jpg 72w,\n/static/b77037a1a31eccfefc0a7c7a4d6b8620/7306c/is-this-anything-by-jerry-seinfeld.jpg 144w",
-                  sizes: "72px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/b77037a1a31eccfefc0a7c7a4d6b8620/6903a/is-this-anything-by-jerry-seinfeld.avif 72w,\n/static/b77037a1a31eccfefc0a7c7a4d6b8620/65187/is-this-anything-by-jerry-seinfeld.avif 144w",
-                    type: "image/avif",
-                    sizes: "72px",
-                  },
-                ],
-              },
-              width: 72,
-              height: 108,
-            },
-          },
-        },
-      },
-      {
-        workSlug: "the-woods-are-dark-by-richard-laymon",
-        reviewed: true,
-        sequence: 36,
-        readingYear: 2022,
-        readingMonth: "Sep",
-        readingDay: "Sat",
-        date: "10",
+        readingDay: "Sun",
+        date: "11",
         yearPublished: 1981,
-        progress: "49%",
+        progress: "Finished",
         title: "The Woods Are Dark",
         edition: "Audible",
         kind: "Novel",
-        sortDate: "2022-09-10-36",
         authors: [
           {
             name: "Richard Laymon",
@@ -3755,9 +4435,9 @@ export const data = {
         },
       },
       {
-        workSlug: "carrie-by-stephen-king",
+        slug: "carrie-by-stephen-king",
         reviewed: true,
-        sequence: 39,
+        sequence: "2022-09-10-39",
         readingYear: 2022,
         readingMonth: "Sep",
         readingDay: "Sat",
@@ -3767,7 +4447,6 @@ export const data = {
         title: "Carrie",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-09-10-39",
         authors: [
           {
             name: "Stephen King",
@@ -3800,19 +4479,62 @@ export const data = {
         },
       },
       {
-        workSlug: "is-this-anything-by-jerry-seinfeld",
+        slug: "the-woods-are-dark-by-richard-laymon",
         reviewed: true,
-        sequence: 35,
+        sequence: "2022-09-10-36",
         readingYear: 2022,
         readingMonth: "Sep",
-        readingDay: "Fri",
-        date: "9",
+        readingDay: "Sat",
+        date: "10",
+        yearPublished: 1981,
+        progress: "49%",
+        title: "The Woods Are Dark",
+        edition: "Audible",
+        kind: "Novel",
+        authors: [
+          {
+            name: "Richard Laymon",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/ce4922405ae2989408bd24b23e71679c/8bcae/the-woods-are-dark-by-richard-laymon.jpg",
+                  srcSet:
+                    "/static/ce4922405ae2989408bd24b23e71679c/8bcae/the-woods-are-dark-by-richard-laymon.jpg 72w,\n/static/ce4922405ae2989408bd24b23e71679c/7306c/the-woods-are-dark-by-richard-laymon.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/ce4922405ae2989408bd24b23e71679c/6903a/the-woods-are-dark-by-richard-laymon.avif 72w,\n/static/ce4922405ae2989408bd24b23e71679c/65187/the-woods-are-dark-by-richard-laymon.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        slug: "is-this-anything-by-jerry-seinfeld",
+        reviewed: true,
+        sequence: "2022-09-10-35",
+        readingYear: 2022,
+        readingMonth: "Sep",
+        readingDay: "Sat",
+        date: "10",
         yearPublished: 2020,
-        progress: "55%",
+        progress: "Finished",
         title: "Is This Anything?",
         edition: "Audible",
         kind: "Nonfiction",
-        sortDate: "2022-09-09-35",
         authors: [
           {
             name: "Jerry Seinfeld",
@@ -3845,9 +4567,9 @@ export const data = {
         },
       },
       {
-        workSlug: "carrie-by-stephen-king",
+        slug: "carrie-by-stephen-king",
         reviewed: true,
-        sequence: 39,
+        sequence: "2022-09-09-39",
         readingYear: 2022,
         readingMonth: "Sep",
         readingDay: "Fri",
@@ -3857,7 +4579,6 @@ export const data = {
         title: "Carrie",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-09-09-39",
         authors: [
           {
             name: "Stephen King",
@@ -3890,9 +4611,53 @@ export const data = {
         },
       },
       {
-        workSlug: "is-this-anything-by-jerry-seinfeld",
+        slug: "is-this-anything-by-jerry-seinfeld",
         reviewed: true,
-        sequence: 35,
+        sequence: "2022-09-09-35",
+        readingYear: 2022,
+        readingMonth: "Sep",
+        readingDay: "Fri",
+        date: "9",
+        yearPublished: 2020,
+        progress: "55%",
+        title: "Is This Anything?",
+        edition: "Audible",
+        kind: "Nonfiction",
+        authors: [
+          {
+            name: "Jerry Seinfeld",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/b77037a1a31eccfefc0a7c7a4d6b8620/8bcae/is-this-anything-by-jerry-seinfeld.jpg",
+                  srcSet:
+                    "/static/b77037a1a31eccfefc0a7c7a4d6b8620/8bcae/is-this-anything-by-jerry-seinfeld.jpg 72w,\n/static/b77037a1a31eccfefc0a7c7a4d6b8620/7306c/is-this-anything-by-jerry-seinfeld.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/b77037a1a31eccfefc0a7c7a4d6b8620/6903a/is-this-anything-by-jerry-seinfeld.avif 72w,\n/static/b77037a1a31eccfefc0a7c7a4d6b8620/65187/is-this-anything-by-jerry-seinfeld.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        slug: "is-this-anything-by-jerry-seinfeld",
+        reviewed: true,
+        sequence: "2022-09-07-35",
         readingYear: 2022,
         readingMonth: "Sep",
         readingDay: "Wed",
@@ -3902,7 +4667,6 @@ export const data = {
         title: "Is This Anything?",
         edition: "Audible",
         kind: "Nonfiction",
-        sortDate: "2022-09-07-35",
         authors: [
           {
             name: "Jerry Seinfeld",
@@ -3935,9 +4699,9 @@ export const data = {
         },
       },
       {
-        workSlug: "is-this-anything-by-jerry-seinfeld",
+        slug: "is-this-anything-by-jerry-seinfeld",
         reviewed: true,
-        sequence: 35,
+        sequence: "2022-09-06-35",
         readingYear: 2022,
         readingMonth: "Sep",
         readingDay: "Tue",
@@ -3947,7 +4711,6 @@ export const data = {
         title: "Is This Anything?",
         edition: "Audible",
         kind: "Nonfiction",
-        sortDate: "2022-09-06-35",
         authors: [
           {
             name: "Jerry Seinfeld",
@@ -3980,9 +4743,9 @@ export const data = {
         },
       },
       {
-        workSlug: "about-face-by-david-h-hackworth-julie-sherman",
+        slug: "about-face-by-david-h-hackworth-julie-sherman",
         reviewed: true,
-        sequence: 34,
+        sequence: "2022-09-05-34",
         readingYear: 2022,
         readingMonth: "Sep",
         readingDay: "Mon",
@@ -3992,7 +4755,6 @@ export const data = {
         title: "About Face",
         edition: "Audible",
         kind: "Nonfiction",
-        sortDate: "2022-09-05-34",
         authors: [
           {
             name: "David H. Hackworth",
@@ -4028,54 +4790,9 @@ export const data = {
         },
       },
       {
-        workSlug: "hawk-mountain-by-conner-habib",
+        slug: "about-face-by-david-h-hackworth-julie-sherman",
         reviewed: true,
-        sequence: 33,
-        readingYear: 2022,
-        readingMonth: "Sep",
-        readingDay: "Sun",
-        date: "4",
-        yearPublished: 2022,
-        progress: "Finished",
-        title: "Hawk Mountain",
-        edition: "Kindle",
-        kind: "Novel",
-        sortDate: "2022-09-04-33",
-        authors: [
-          {
-            name: "Conner Habib",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/867fd81ed16356c017a6b4039bae5e56/8bcae/hawk-mountain-by-conner-habib.jpg",
-                  srcSet:
-                    "/static/867fd81ed16356c017a6b4039bae5e56/8bcae/hawk-mountain-by-conner-habib.jpg 72w,\n/static/867fd81ed16356c017a6b4039bae5e56/7306c/hawk-mountain-by-conner-habib.jpg 144w",
-                  sizes: "72px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/867fd81ed16356c017a6b4039bae5e56/6903a/hawk-mountain-by-conner-habib.avif 72w,\n/static/867fd81ed16356c017a6b4039bae5e56/65187/hawk-mountain-by-conner-habib.avif 144w",
-                    type: "image/avif",
-                    sizes: "72px",
-                  },
-                ],
-              },
-              width: 72,
-              height: 108,
-            },
-          },
-        },
-      },
-      {
-        workSlug: "about-face-by-david-h-hackworth-julie-sherman",
-        reviewed: true,
-        sequence: 34,
+        sequence: "2022-09-04-34",
         readingYear: 2022,
         readingMonth: "Sep",
         readingDay: "Sun",
@@ -4085,7 +4802,6 @@ export const data = {
         title: "About Face",
         edition: "Audible",
         kind: "Nonfiction",
-        sortDate: "2022-09-04-34",
         authors: [
           {
             name: "David H. Hackworth",
@@ -4121,19 +4837,18 @@ export const data = {
         },
       },
       {
-        workSlug: "hawk-mountain-by-conner-habib",
+        slug: "hawk-mountain-by-conner-habib",
         reviewed: true,
-        sequence: 33,
+        sequence: "2022-09-04-33",
         readingYear: 2022,
         readingMonth: "Sep",
-        readingDay: "Sat",
-        date: "3",
+        readingDay: "Sun",
+        date: "4",
         yearPublished: 2022,
-        progress: "71%",
+        progress: "Finished",
         title: "Hawk Mountain",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-09-03-33",
         authors: [
           {
             name: "Conner Habib",
@@ -4166,9 +4881,9 @@ export const data = {
         },
       },
       {
-        workSlug: "about-face-by-david-h-hackworth-julie-sherman",
+        slug: "about-face-by-david-h-hackworth-julie-sherman",
         reviewed: true,
-        sequence: 34,
+        sequence: "2022-09-03-34",
         readingYear: 2022,
         readingMonth: "Sep",
         readingDay: "Sat",
@@ -4178,7 +4893,6 @@ export const data = {
         title: "About Face",
         edition: "Audible",
         kind: "Nonfiction",
-        sortDate: "2022-09-03-34",
         authors: [
           {
             name: "David H. Hackworth",
@@ -4214,9 +4928,53 @@ export const data = {
         },
       },
       {
-        workSlug: "about-face-by-david-h-hackworth-julie-sherman",
+        slug: "hawk-mountain-by-conner-habib",
         reviewed: true,
-        sequence: 34,
+        sequence: "2022-09-03-33",
+        readingYear: 2022,
+        readingMonth: "Sep",
+        readingDay: "Sat",
+        date: "3",
+        yearPublished: 2022,
+        progress: "71%",
+        title: "Hawk Mountain",
+        edition: "Kindle",
+        kind: "Novel",
+        authors: [
+          {
+            name: "Conner Habib",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/867fd81ed16356c017a6b4039bae5e56/8bcae/hawk-mountain-by-conner-habib.jpg",
+                  srcSet:
+                    "/static/867fd81ed16356c017a6b4039bae5e56/8bcae/hawk-mountain-by-conner-habib.jpg 72w,\n/static/867fd81ed16356c017a6b4039bae5e56/7306c/hawk-mountain-by-conner-habib.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/867fd81ed16356c017a6b4039bae5e56/6903a/hawk-mountain-by-conner-habib.avif 72w,\n/static/867fd81ed16356c017a6b4039bae5e56/65187/hawk-mountain-by-conner-habib.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        slug: "about-face-by-david-h-hackworth-julie-sherman",
+        reviewed: true,
+        sequence: "2022-09-02-34",
         readingYear: 2022,
         readingMonth: "Sep",
         readingDay: "Fri",
@@ -4226,7 +4984,6 @@ export const data = {
         title: "About Face",
         edition: "Audible",
         kind: "Nonfiction",
-        sortDate: "2022-09-02-34",
         authors: [
           {
             name: "David H. Hackworth",
@@ -4262,9 +5019,9 @@ export const data = {
         },
       },
       {
-        workSlug: "about-face-by-david-h-hackworth-julie-sherman",
+        slug: "about-face-by-david-h-hackworth-julie-sherman",
         reviewed: true,
-        sequence: 34,
+        sequence: "2022-08-29-34",
         readingYear: 2022,
         readingMonth: "Aug",
         readingDay: "Mon",
@@ -4274,7 +5031,6 @@ export const data = {
         title: "About Face",
         edition: "Audible",
         kind: "Nonfiction",
-        sortDate: "2022-08-29-34",
         authors: [
           {
             name: "David H. Hackworth",
@@ -4310,9 +5066,9 @@ export const data = {
         },
       },
       {
-        workSlug: "hawk-mountain-by-conner-habib",
+        slug: "hawk-mountain-by-conner-habib",
         reviewed: true,
-        sequence: 33,
+        sequence: "2022-08-28-33",
         readingYear: 2022,
         readingMonth: "Aug",
         readingDay: "Sun",
@@ -4322,7 +5078,6 @@ export const data = {
         title: "Hawk Mountain",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-08-28-33",
         authors: [
           {
             name: "Conner Habib",
@@ -4355,9 +5110,9 @@ export const data = {
         },
       },
       {
-        workSlug: "hawk-mountain-by-conner-habib",
+        slug: "hawk-mountain-by-conner-habib",
         reviewed: true,
-        sequence: 33,
+        sequence: "2022-08-27-33",
         readingYear: 2022,
         readingMonth: "Aug",
         readingDay: "Sat",
@@ -4367,7 +5122,6 @@ export const data = {
         title: "Hawk Mountain",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-08-27-33",
         authors: [
           {
             name: "Conner Habib",
@@ -4400,9 +5154,9 @@ export const data = {
         },
       },
       {
-        workSlug: "hawk-mountain-by-conner-habib",
+        slug: "hawk-mountain-by-conner-habib",
         reviewed: true,
-        sequence: 33,
+        sequence: "2022-08-23-33",
         readingYear: 2022,
         readingMonth: "Aug",
         readingDay: "Tue",
@@ -4412,7 +5166,6 @@ export const data = {
         title: "Hawk Mountain",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-08-23-33",
         authors: [
           {
             name: "Conner Habib",
@@ -4445,9 +5198,9 @@ export const data = {
         },
       },
       {
-        workSlug: "hawk-mountain-by-conner-habib",
+        slug: "hawk-mountain-by-conner-habib",
         reviewed: true,
-        sequence: 33,
+        sequence: "2022-08-22-33",
         readingYear: 2022,
         readingMonth: "Aug",
         readingDay: "Mon",
@@ -4457,7 +5210,6 @@ export const data = {
         title: "Hawk Mountain",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-08-22-33",
         authors: [
           {
             name: "Conner Habib",
@@ -4490,9 +5242,9 @@ export const data = {
         },
       },
       {
-        workSlug: "hawk-mountain-by-conner-habib",
+        slug: "hawk-mountain-by-conner-habib",
         reviewed: true,
-        sequence: 33,
+        sequence: "2022-08-16-33",
         readingYear: 2022,
         readingMonth: "Aug",
         readingDay: "Tue",
@@ -4502,7 +5254,6 @@ export const data = {
         title: "Hawk Mountain",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-08-16-33",
         authors: [
           {
             name: "Conner Habib",
@@ -4535,9 +5286,9 @@ export const data = {
         },
       },
       {
-        workSlug: "hawk-mountain-by-conner-habib",
+        slug: "hawk-mountain-by-conner-habib",
         reviewed: true,
-        sequence: 33,
+        sequence: "2022-08-15-33",
         readingYear: 2022,
         readingMonth: "Aug",
         readingDay: "Mon",
@@ -4547,7 +5298,6 @@ export const data = {
         title: "Hawk Mountain",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-08-15-33",
         authors: [
           {
             name: "Conner Habib",
@@ -4580,9 +5330,9 @@ export const data = {
         },
       },
       {
-        workSlug: "hawk-mountain-by-conner-habib",
+        slug: "hawk-mountain-by-conner-habib",
         reviewed: true,
-        sequence: 33,
+        sequence: "2022-08-09-33",
         readingYear: 2022,
         readingMonth: "Aug",
         readingDay: "Tue",
@@ -4592,7 +5342,6 @@ export const data = {
         title: "Hawk Mountain",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-08-09-33",
         authors: [
           {
             name: "Conner Habib",
@@ -4625,9 +5374,9 @@ export const data = {
         },
       },
       {
-        workSlug: "hawk-mountain-by-conner-habib",
+        slug: "hawk-mountain-by-conner-habib",
         reviewed: true,
-        sequence: 33,
+        sequence: "2022-08-08-33",
         readingYear: 2022,
         readingMonth: "Aug",
         readingDay: "Mon",
@@ -4637,7 +5386,6 @@ export const data = {
         title: "Hawk Mountain",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-08-08-33",
         authors: [
           {
             name: "Conner Habib",
@@ -4670,9 +5418,9 @@ export const data = {
         },
       },
       {
-        workSlug: "hawk-mountain-by-conner-habib",
+        slug: "hawk-mountain-by-conner-habib",
         reviewed: true,
-        sequence: 33,
+        sequence: "2022-08-07-33",
         readingYear: 2022,
         readingMonth: "Aug",
         readingDay: "Sun",
@@ -4682,7 +5430,6 @@ export const data = {
         title: "Hawk Mountain",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-08-07-33",
         authors: [
           {
             name: "Conner Habib",
@@ -4715,9 +5462,9 @@ export const data = {
         },
       },
       {
-        workSlug: "hawk-mountain-by-conner-habib",
+        slug: "hawk-mountain-by-conner-habib",
         reviewed: true,
-        sequence: 33,
+        sequence: "2022-08-06-33",
         readingYear: 2022,
         readingMonth: "Aug",
         readingDay: "Sat",
@@ -4727,7 +5474,6 @@ export const data = {
         title: "Hawk Mountain",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-08-06-33",
         authors: [
           {
             name: "Conner Habib",
@@ -4760,9 +5506,9 @@ export const data = {
         },
       },
       {
-        workSlug: "hawk-mountain-by-conner-habib",
+        slug: "hawk-mountain-by-conner-habib",
         reviewed: true,
-        sequence: 33,
+        sequence: "2022-07-27-33",
         readingYear: 2022,
         readingMonth: "Jul",
         readingDay: "Wed",
@@ -4772,7 +5518,6 @@ export const data = {
         title: "Hawk Mountain",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-07-27-33",
         authors: [
           {
             name: "Conner Habib",
@@ -4805,9 +5550,9 @@ export const data = {
         },
       },
       {
-        workSlug: "hawk-mountain-by-conner-habib",
+        slug: "hawk-mountain-by-conner-habib",
         reviewed: true,
-        sequence: 33,
+        sequence: "2022-07-26-33",
         readingYear: 2022,
         readingMonth: "Jul",
         readingDay: "Tue",
@@ -4817,7 +5562,6 @@ export const data = {
         title: "Hawk Mountain",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-07-26-33",
         authors: [
           {
             name: "Conner Habib",
@@ -4850,54 +5594,9 @@ export const data = {
         },
       },
       {
-        workSlug: "the-postman-always-rings-twice-by-james-m-cain",
+        slug: "hawk-mountain-by-conner-habib",
         reviewed: true,
-        sequence: 32,
-        readingYear: 2022,
-        readingMonth: "Jul",
-        readingDay: "Sun",
-        date: "24",
-        yearPublished: 1934,
-        progress: "Finished",
-        title: "The Postman Always Rings Twice",
-        edition: "Kindle",
-        kind: "Novel",
-        sortDate: "2022-07-24-32",
-        authors: [
-          {
-            name: "James M. Cain",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/2688d847692c06860102b2349a23deb4/8bcae/the-postman-always-rings-twice-by-james-m-cain.jpg",
-                  srcSet:
-                    "/static/2688d847692c06860102b2349a23deb4/8bcae/the-postman-always-rings-twice-by-james-m-cain.jpg 72w,\n/static/2688d847692c06860102b2349a23deb4/7306c/the-postman-always-rings-twice-by-james-m-cain.jpg 144w",
-                  sizes: "72px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/2688d847692c06860102b2349a23deb4/6903a/the-postman-always-rings-twice-by-james-m-cain.avif 72w,\n/static/2688d847692c06860102b2349a23deb4/65187/the-postman-always-rings-twice-by-james-m-cain.avif 144w",
-                    type: "image/avif",
-                    sizes: "72px",
-                  },
-                ],
-              },
-              width: 72,
-              height: 108,
-            },
-          },
-        },
-      },
-      {
-        workSlug: "hawk-mountain-by-conner-habib",
-        reviewed: true,
-        sequence: 33,
+        sequence: "2022-07-24-33",
         readingYear: 2022,
         readingMonth: "Jul",
         readingDay: "Sun",
@@ -4907,7 +5606,6 @@ export const data = {
         title: "Hawk Mountain",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-07-24-33",
         authors: [
           {
             name: "Conner Habib",
@@ -4940,9 +5638,53 @@ export const data = {
         },
       },
       {
-        workSlug: "the-postman-always-rings-twice-by-james-m-cain",
+        slug: "the-postman-always-rings-twice-by-james-m-cain",
         reviewed: true,
-        sequence: 32,
+        sequence: "2022-07-24-32",
+        readingYear: 2022,
+        readingMonth: "Jul",
+        readingDay: "Sun",
+        date: "24",
+        yearPublished: 1934,
+        progress: "Finished",
+        title: "The Postman Always Rings Twice",
+        edition: "Kindle",
+        kind: "Novel",
+        authors: [
+          {
+            name: "James M. Cain",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/2688d847692c06860102b2349a23deb4/8bcae/the-postman-always-rings-twice-by-james-m-cain.jpg",
+                  srcSet:
+                    "/static/2688d847692c06860102b2349a23deb4/8bcae/the-postman-always-rings-twice-by-james-m-cain.jpg 72w,\n/static/2688d847692c06860102b2349a23deb4/7306c/the-postman-always-rings-twice-by-james-m-cain.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/2688d847692c06860102b2349a23deb4/6903a/the-postman-always-rings-twice-by-james-m-cain.avif 72w,\n/static/2688d847692c06860102b2349a23deb4/65187/the-postman-always-rings-twice-by-james-m-cain.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        slug: "the-postman-always-rings-twice-by-james-m-cain",
+        reviewed: true,
+        sequence: "2022-07-23-32",
         readingYear: 2022,
         readingMonth: "Jul",
         readingDay: "Sat",
@@ -4952,7 +5694,6 @@ export const data = {
         title: "The Postman Always Rings Twice",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-07-23-32",
         authors: [
           {
             name: "James M. Cain",
@@ -4985,9 +5726,9 @@ export const data = {
         },
       },
       {
-        workSlug: "the-postman-always-rings-twice-by-james-m-cain",
+        slug: "the-postman-always-rings-twice-by-james-m-cain",
         reviewed: true,
-        sequence: 32,
+        sequence: "2022-07-22-32",
         readingYear: 2022,
         readingMonth: "Jul",
         readingDay: "Fri",
@@ -4997,7 +5738,6 @@ export const data = {
         title: "The Postman Always Rings Twice",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-07-22-32",
         authors: [
           {
             name: "James M. Cain",
@@ -5030,9 +5770,9 @@ export const data = {
         },
       },
       {
-        workSlug: "the-postman-always-rings-twice-by-james-m-cain",
+        slug: "the-postman-always-rings-twice-by-james-m-cain",
         reviewed: true,
-        sequence: 32,
+        sequence: "2022-07-19-32",
         readingYear: 2022,
         readingMonth: "Jul",
         readingDay: "Tue",
@@ -5042,7 +5782,6 @@ export const data = {
         title: "The Postman Always Rings Twice",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-07-19-32",
         authors: [
           {
             name: "James M. Cain",
@@ -5075,54 +5814,9 @@ export const data = {
         },
       },
       {
-        workSlug: "cured-by-lol-tolhurst",
+        slug: "the-postman-always-rings-twice-by-james-m-cain",
         reviewed: true,
-        sequence: 31,
-        readingYear: 2022,
-        readingMonth: "Jul",
-        readingDay: "Mon",
-        date: "18",
-        yearPublished: 2016,
-        progress: "Finished",
-        title: "Cured",
-        edition: "Audible",
-        kind: "Nonfiction",
-        sortDate: "2022-07-18-31",
-        authors: [
-          {
-            name: "Lol Tolhurst",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/70b672c042c7c035cdb6da5a0e7483a5/8bcae/cured-by-lol-tolhurst.jpg",
-                  srcSet:
-                    "/static/70b672c042c7c035cdb6da5a0e7483a5/8bcae/cured-by-lol-tolhurst.jpg 72w,\n/static/70b672c042c7c035cdb6da5a0e7483a5/7306c/cured-by-lol-tolhurst.jpg 144w",
-                  sizes: "72px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/70b672c042c7c035cdb6da5a0e7483a5/6903a/cured-by-lol-tolhurst.avif 72w,\n/static/70b672c042c7c035cdb6da5a0e7483a5/65187/cured-by-lol-tolhurst.avif 144w",
-                    type: "image/avif",
-                    sizes: "72px",
-                  },
-                ],
-              },
-              width: 72,
-              height: 108,
-            },
-          },
-        },
-      },
-      {
-        workSlug: "the-postman-always-rings-twice-by-james-m-cain",
-        reviewed: true,
-        sequence: 32,
+        sequence: "2022-07-18-32",
         readingYear: 2022,
         readingMonth: "Jul",
         readingDay: "Mon",
@@ -5132,7 +5826,6 @@ export const data = {
         title: "The Postman Always Rings Twice",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-07-18-32",
         authors: [
           {
             name: "James M. Cain",
@@ -5165,9 +5858,53 @@ export const data = {
         },
       },
       {
-        workSlug: "cured-by-lol-tolhurst",
+        slug: "cured-by-lol-tolhurst",
         reviewed: true,
-        sequence: 31,
+        sequence: "2022-07-18-31",
+        readingYear: 2022,
+        readingMonth: "Jul",
+        readingDay: "Mon",
+        date: "18",
+        yearPublished: 2016,
+        progress: "Finished",
+        title: "Cured",
+        edition: "Audible",
+        kind: "Nonfiction",
+        authors: [
+          {
+            name: "Lol Tolhurst",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/70b672c042c7c035cdb6da5a0e7483a5/8bcae/cured-by-lol-tolhurst.jpg",
+                  srcSet:
+                    "/static/70b672c042c7c035cdb6da5a0e7483a5/8bcae/cured-by-lol-tolhurst.jpg 72w,\n/static/70b672c042c7c035cdb6da5a0e7483a5/7306c/cured-by-lol-tolhurst.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/70b672c042c7c035cdb6da5a0e7483a5/6903a/cured-by-lol-tolhurst.avif 72w,\n/static/70b672c042c7c035cdb6da5a0e7483a5/65187/cured-by-lol-tolhurst.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        slug: "cured-by-lol-tolhurst",
+        reviewed: true,
+        sequence: "2022-07-17-31",
         readingYear: 2022,
         readingMonth: "Jul",
         readingDay: "Sun",
@@ -5177,7 +5914,6 @@ export const data = {
         title: "Cured",
         edition: "Audible",
         kind: "Nonfiction",
-        sortDate: "2022-07-17-31",
         authors: [
           {
             name: "Lol Tolhurst",
@@ -5210,54 +5946,9 @@ export const data = {
         },
       },
       {
-        workSlug: "fight-club-by-chuck-palahniuk",
+        slug: "cured-by-lol-tolhurst",
         reviewed: true,
-        sequence: 30,
-        readingYear: 2022,
-        readingMonth: "Jul",
-        readingDay: "Sat",
-        date: "16",
-        yearPublished: 1996,
-        progress: "Finished",
-        title: "Fight Club",
-        edition: "Audible",
-        kind: "Novel",
-        sortDate: "2022-07-16-30",
-        authors: [
-          {
-            name: "Chuck Palahniuk",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/0f06d8f06ca3dd10cf0f10d6d87cb791/8bcae/fight-club-by-chuck-palahniuk.jpg",
-                  srcSet:
-                    "/static/0f06d8f06ca3dd10cf0f10d6d87cb791/8bcae/fight-club-by-chuck-palahniuk.jpg 72w,\n/static/0f06d8f06ca3dd10cf0f10d6d87cb791/7306c/fight-club-by-chuck-palahniuk.jpg 144w",
-                  sizes: "72px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/0f06d8f06ca3dd10cf0f10d6d87cb791/6903a/fight-club-by-chuck-palahniuk.avif 72w,\n/static/0f06d8f06ca3dd10cf0f10d6d87cb791/65187/fight-club-by-chuck-palahniuk.avif 144w",
-                    type: "image/avif",
-                    sizes: "72px",
-                  },
-                ],
-              },
-              width: 72,
-              height: 108,
-            },
-          },
-        },
-      },
-      {
-        workSlug: "cured-by-lol-tolhurst",
-        reviewed: true,
-        sequence: 31,
+        sequence: "2022-07-16-31",
         readingYear: 2022,
         readingMonth: "Jul",
         readingDay: "Sat",
@@ -5267,7 +5958,6 @@ export const data = {
         title: "Cured",
         edition: "Audible",
         kind: "Nonfiction",
-        sortDate: "2022-07-16-31",
         authors: [
           {
             name: "Lol Tolhurst",
@@ -5300,64 +5990,18 @@ export const data = {
         },
       },
       {
-        workSlug: "the-48-laws-of-power-by-robert-greene",
+        slug: "fight-club-by-chuck-palahniuk",
         reviewed: true,
-        sequence: 29,
+        sequence: "2022-07-16-30",
         readingYear: 2022,
         readingMonth: "Jul",
-        readingDay: "Fri",
-        date: "15",
-        yearPublished: 1998,
-        progress: "Finished",
-        title: "The 48 Laws of Power",
-        edition: "Audible",
-        kind: "Nonfiction",
-        sortDate: "2022-07-15-29",
-        authors: [
-          {
-            name: "Robert Greene",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/f21f66ac9915b4111f60f91f94e09335/8bcae/the-48-laws-of-power-by-robert-greene.jpg",
-                  srcSet:
-                    "/static/f21f66ac9915b4111f60f91f94e09335/8bcae/the-48-laws-of-power-by-robert-greene.jpg 72w,\n/static/f21f66ac9915b4111f60f91f94e09335/7306c/the-48-laws-of-power-by-robert-greene.jpg 144w",
-                  sizes: "72px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/f21f66ac9915b4111f60f91f94e09335/6903a/the-48-laws-of-power-by-robert-greene.avif 72w,\n/static/f21f66ac9915b4111f60f91f94e09335/65187/the-48-laws-of-power-by-robert-greene.avif 144w",
-                    type: "image/avif",
-                    sizes: "72px",
-                  },
-                ],
-              },
-              width: 72,
-              height: 108,
-            },
-          },
-        },
-      },
-      {
-        workSlug: "fight-club-by-chuck-palahniuk",
-        reviewed: true,
-        sequence: 30,
-        readingYear: 2022,
-        readingMonth: "Jul",
-        readingDay: "Fri",
-        date: "15",
+        readingDay: "Sat",
+        date: "16",
         yearPublished: 1996,
-        progress: "15%",
+        progress: "Finished",
         title: "Fight Club",
         edition: "Audible",
         kind: "Novel",
-        sortDate: "2022-07-15-30",
         authors: [
           {
             name: "Chuck Palahniuk",
@@ -5390,22 +6034,21 @@ export const data = {
         },
       },
       {
-        workSlug: "the-rules-of-attraction-by-bret-easton-ellis",
+        slug: "fight-club-by-chuck-palahniuk",
         reviewed: true,
-        sequence: 28,
+        sequence: "2022-07-15-30",
         readingYear: 2022,
         readingMonth: "Jul",
-        readingDay: "Thu",
-        date: "14",
-        yearPublished: 1987,
-        progress: "Finished",
-        title: "The Rules of Attraction",
-        edition: "Kindle",
+        readingDay: "Fri",
+        date: "15",
+        yearPublished: 1996,
+        progress: "15%",
+        title: "Fight Club",
+        edition: "Audible",
         kind: "Novel",
-        sortDate: "2022-07-14-28",
         authors: [
           {
-            name: "Bret Easton Ellis",
+            name: "Chuck Palahniuk",
           },
         ],
         cover: {
@@ -5414,15 +6057,15 @@ export const data = {
               layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/75163f0d9da4cf49ce2d1f9b3d1c55a5/8bcae/the-rules-of-attraction-by-bret-easton-ellis.jpg",
+                  src: "/static/0f06d8f06ca3dd10cf0f10d6d87cb791/8bcae/fight-club-by-chuck-palahniuk.jpg",
                   srcSet:
-                    "/static/75163f0d9da4cf49ce2d1f9b3d1c55a5/8bcae/the-rules-of-attraction-by-bret-easton-ellis.jpg 72w,\n/static/75163f0d9da4cf49ce2d1f9b3d1c55a5/7306c/the-rules-of-attraction-by-bret-easton-ellis.jpg 144w",
+                    "/static/0f06d8f06ca3dd10cf0f10d6d87cb791/8bcae/fight-club-by-chuck-palahniuk.jpg 72w,\n/static/0f06d8f06ca3dd10cf0f10d6d87cb791/7306c/fight-club-by-chuck-palahniuk.jpg 144w",
                   sizes: "72px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/75163f0d9da4cf49ce2d1f9b3d1c55a5/6903a/the-rules-of-attraction-by-bret-easton-ellis.avif 72w,\n/static/75163f0d9da4cf49ce2d1f9b3d1c55a5/65187/the-rules-of-attraction-by-bret-easton-ellis.avif 144w",
+                      "/static/0f06d8f06ca3dd10cf0f10d6d87cb791/6903a/fight-club-by-chuck-palahniuk.avif 72w,\n/static/0f06d8f06ca3dd10cf0f10d6d87cb791/65187/fight-club-by-chuck-palahniuk.avif 144w",
                     type: "image/avif",
                     sizes: "72px",
                   },
@@ -5435,9 +6078,53 @@ export const data = {
         },
       },
       {
-        workSlug: "the-48-laws-of-power-by-robert-greene",
+        slug: "the-48-laws-of-power-by-robert-greene",
         reviewed: true,
-        sequence: 29,
+        sequence: "2022-07-15-29",
+        readingYear: 2022,
+        readingMonth: "Jul",
+        readingDay: "Fri",
+        date: "15",
+        yearPublished: 1998,
+        progress: "Finished",
+        title: "The 48 Laws of Power",
+        edition: "Audible",
+        kind: "Nonfiction",
+        authors: [
+          {
+            name: "Robert Greene",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/f21f66ac9915b4111f60f91f94e09335/8bcae/the-48-laws-of-power-by-robert-greene.jpg",
+                  srcSet:
+                    "/static/f21f66ac9915b4111f60f91f94e09335/8bcae/the-48-laws-of-power-by-robert-greene.jpg 72w,\n/static/f21f66ac9915b4111f60f91f94e09335/7306c/the-48-laws-of-power-by-robert-greene.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/f21f66ac9915b4111f60f91f94e09335/6903a/the-48-laws-of-power-by-robert-greene.avif 72w,\n/static/f21f66ac9915b4111f60f91f94e09335/65187/the-48-laws-of-power-by-robert-greene.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        slug: "the-48-laws-of-power-by-robert-greene",
+        reviewed: true,
+        sequence: "2022-07-14-29",
         readingYear: 2022,
         readingMonth: "Jul",
         readingDay: "Thu",
@@ -5447,7 +6134,6 @@ export const data = {
         title: "The 48 Laws of Power",
         edition: "Audible",
         kind: "Nonfiction",
-        sortDate: "2022-07-14-29",
         authors: [
           {
             name: "Robert Greene",
@@ -5480,9 +6166,53 @@ export const data = {
         },
       },
       {
-        workSlug: "the-rules-of-attraction-by-bret-easton-ellis",
+        slug: "the-rules-of-attraction-by-bret-easton-ellis",
         reviewed: true,
-        sequence: 28,
+        sequence: "2022-07-14-28",
+        readingYear: 2022,
+        readingMonth: "Jul",
+        readingDay: "Thu",
+        date: "14",
+        yearPublished: 1987,
+        progress: "Finished",
+        title: "The Rules of Attraction",
+        edition: "Kindle",
+        kind: "Novel",
+        authors: [
+          {
+            name: "Bret Easton Ellis",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/75163f0d9da4cf49ce2d1f9b3d1c55a5/8bcae/the-rules-of-attraction-by-bret-easton-ellis.jpg",
+                  srcSet:
+                    "/static/75163f0d9da4cf49ce2d1f9b3d1c55a5/8bcae/the-rules-of-attraction-by-bret-easton-ellis.jpg 72w,\n/static/75163f0d9da4cf49ce2d1f9b3d1c55a5/7306c/the-rules-of-attraction-by-bret-easton-ellis.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/75163f0d9da4cf49ce2d1f9b3d1c55a5/6903a/the-rules-of-attraction-by-bret-easton-ellis.avif 72w,\n/static/75163f0d9da4cf49ce2d1f9b3d1c55a5/65187/the-rules-of-attraction-by-bret-easton-ellis.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        slug: "the-rules-of-attraction-by-bret-easton-ellis",
+        reviewed: true,
+        sequence: "2022-07-13-28",
         readingYear: 2022,
         readingMonth: "Jul",
         readingDay: "Wed",
@@ -5492,7 +6222,6 @@ export const data = {
         title: "The Rules of Attraction",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-07-13-28",
         authors: [
           {
             name: "Bret Easton Ellis",
@@ -5525,9 +6254,53 @@ export const data = {
         },
       },
       {
-        workSlug: "the-rules-of-attraction-by-bret-easton-ellis",
+        slug: "the-48-laws-of-power-by-robert-greene",
         reviewed: true,
-        sequence: 28,
+        sequence: "2022-07-12-29",
+        readingYear: 2022,
+        readingMonth: "Jul",
+        readingDay: "Tue",
+        date: "12",
+        yearPublished: 1998,
+        progress: "61%",
+        title: "The 48 Laws of Power",
+        edition: "Audible",
+        kind: "Nonfiction",
+        authors: [
+          {
+            name: "Robert Greene",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/f21f66ac9915b4111f60f91f94e09335/8bcae/the-48-laws-of-power-by-robert-greene.jpg",
+                  srcSet:
+                    "/static/f21f66ac9915b4111f60f91f94e09335/8bcae/the-48-laws-of-power-by-robert-greene.jpg 72w,\n/static/f21f66ac9915b4111f60f91f94e09335/7306c/the-48-laws-of-power-by-robert-greene.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/f21f66ac9915b4111f60f91f94e09335/6903a/the-48-laws-of-power-by-robert-greene.avif 72w,\n/static/f21f66ac9915b4111f60f91f94e09335/65187/the-48-laws-of-power-by-robert-greene.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        slug: "the-rules-of-attraction-by-bret-easton-ellis",
+        reviewed: true,
+        sequence: "2022-07-12-28",
         readingYear: 2022,
         readingMonth: "Jul",
         readingDay: "Tue",
@@ -5537,7 +6310,6 @@ export const data = {
         title: "The Rules of Attraction",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-07-12-28",
         authors: [
           {
             name: "Bret Easton Ellis",
@@ -5570,54 +6342,9 @@ export const data = {
         },
       },
       {
-        workSlug: "the-48-laws-of-power-by-robert-greene",
+        slug: "the-rules-of-attraction-by-bret-easton-ellis",
         reviewed: true,
-        sequence: 29,
-        readingYear: 2022,
-        readingMonth: "Jul",
-        readingDay: "Tue",
-        date: "12",
-        yearPublished: 1998,
-        progress: "61%",
-        title: "The 48 Laws of Power",
-        edition: "Audible",
-        kind: "Nonfiction",
-        sortDate: "2022-07-12-29",
-        authors: [
-          {
-            name: "Robert Greene",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/f21f66ac9915b4111f60f91f94e09335/8bcae/the-48-laws-of-power-by-robert-greene.jpg",
-                  srcSet:
-                    "/static/f21f66ac9915b4111f60f91f94e09335/8bcae/the-48-laws-of-power-by-robert-greene.jpg 72w,\n/static/f21f66ac9915b4111f60f91f94e09335/7306c/the-48-laws-of-power-by-robert-greene.jpg 144w",
-                  sizes: "72px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/f21f66ac9915b4111f60f91f94e09335/6903a/the-48-laws-of-power-by-robert-greene.avif 72w,\n/static/f21f66ac9915b4111f60f91f94e09335/65187/the-48-laws-of-power-by-robert-greene.avif 144w",
-                    type: "image/avif",
-                    sizes: "72px",
-                  },
-                ],
-              },
-              width: 72,
-              height: 108,
-            },
-          },
-        },
-      },
-      {
-        workSlug: "the-rules-of-attraction-by-bret-easton-ellis",
-        reviewed: true,
-        sequence: 28,
+        sequence: "2022-07-11-28",
         readingYear: 2022,
         readingMonth: "Jul",
         readingDay: "Mon",
@@ -5627,7 +6354,6 @@ export const data = {
         title: "The Rules of Attraction",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-07-11-28",
         authors: [
           {
             name: "Bret Easton Ellis",
@@ -5660,9 +6386,9 @@ export const data = {
         },
       },
       {
-        workSlug: "the-48-laws-of-power-by-robert-greene",
+        slug: "the-48-laws-of-power-by-robert-greene",
         reviewed: true,
-        sequence: 29,
+        sequence: "2022-07-10-29",
         readingYear: 2022,
         readingMonth: "Jul",
         readingDay: "Sun",
@@ -5672,7 +6398,6 @@ export const data = {
         title: "The 48 Laws of Power",
         edition: "Audible",
         kind: "Nonfiction",
-        sortDate: "2022-07-10-29",
         authors: [
           {
             name: "Robert Greene",
@@ -5705,9 +6430,9 @@ export const data = {
         },
       },
       {
-        workSlug: "dracula-by-bram-stoker",
+        slug: "dracula-by-bram-stoker",
         reviewed: true,
-        sequence: 27,
+        sequence: "2022-07-09-27",
         readingYear: 2022,
         readingMonth: "Jul",
         readingDay: "Sat",
@@ -5717,7 +6442,6 @@ export const data = {
         title: "Dracula",
         edition: "Audible",
         kind: "Novel",
-        sortDate: "2022-07-09-27",
         authors: [
           {
             name: "Bram Stoker",
@@ -5750,9 +6474,9 @@ export const data = {
         },
       },
       {
-        workSlug: "dracula-by-bram-stoker",
+        slug: "dracula-by-bram-stoker",
         reviewed: true,
-        sequence: 27,
+        sequence: "2022-07-08-27",
         readingYear: 2022,
         readingMonth: "Jul",
         readingDay: "Fri",
@@ -5762,7 +6486,6 @@ export const data = {
         title: "Dracula",
         edition: "Audible",
         kind: "Novel",
-        sortDate: "2022-07-08-27",
         authors: [
           {
             name: "Bram Stoker",
@@ -5795,9 +6518,9 @@ export const data = {
         },
       },
       {
-        workSlug: "the-rules-of-attraction-by-bret-easton-ellis",
+        slug: "the-rules-of-attraction-by-bret-easton-ellis",
         reviewed: true,
-        sequence: 28,
+        sequence: "2022-07-06-28",
         readingYear: 2022,
         readingMonth: "Jul",
         readingDay: "Wed",
@@ -5807,7 +6530,6 @@ export const data = {
         title: "The Rules of Attraction",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-07-06-28",
         authors: [
           {
             name: "Bret Easton Ellis",
@@ -5840,9 +6562,53 @@ export const data = {
         },
       },
       {
-        workSlug: "dracula-by-bram-stoker",
+        slug: "the-rules-of-attraction-by-bret-easton-ellis",
         reviewed: true,
-        sequence: 27,
+        sequence: "2022-07-05-28",
+        readingYear: 2022,
+        readingMonth: "Jul",
+        readingDay: "Tue",
+        date: "5",
+        yearPublished: 1987,
+        progress: "36%",
+        title: "The Rules of Attraction",
+        edition: "Kindle",
+        kind: "Novel",
+        authors: [
+          {
+            name: "Bret Easton Ellis",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/75163f0d9da4cf49ce2d1f9b3d1c55a5/8bcae/the-rules-of-attraction-by-bret-easton-ellis.jpg",
+                  srcSet:
+                    "/static/75163f0d9da4cf49ce2d1f9b3d1c55a5/8bcae/the-rules-of-attraction-by-bret-easton-ellis.jpg 72w,\n/static/75163f0d9da4cf49ce2d1f9b3d1c55a5/7306c/the-rules-of-attraction-by-bret-easton-ellis.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/75163f0d9da4cf49ce2d1f9b3d1c55a5/6903a/the-rules-of-attraction-by-bret-easton-ellis.avif 72w,\n/static/75163f0d9da4cf49ce2d1f9b3d1c55a5/65187/the-rules-of-attraction-by-bret-easton-ellis.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        slug: "dracula-by-bram-stoker",
+        reviewed: true,
+        sequence: "2022-07-05-27",
         readingYear: 2022,
         readingMonth: "Jul",
         readingDay: "Tue",
@@ -5852,7 +6618,6 @@ export const data = {
         title: "Dracula",
         edition: "Audible",
         kind: "Novel",
-        sortDate: "2022-07-05-27",
         authors: [
           {
             name: "Bram Stoker",
@@ -5885,54 +6650,9 @@ export const data = {
         },
       },
       {
-        workSlug: "the-rules-of-attraction-by-bret-easton-ellis",
+        slug: "the-rules-of-attraction-by-bret-easton-ellis",
         reviewed: true,
-        sequence: 28,
-        readingYear: 2022,
-        readingMonth: "Jul",
-        readingDay: "Tue",
-        date: "5",
-        yearPublished: 1987,
-        progress: "36%",
-        title: "The Rules of Attraction",
-        edition: "Kindle",
-        kind: "Novel",
-        sortDate: "2022-07-05-28",
-        authors: [
-          {
-            name: "Bret Easton Ellis",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/75163f0d9da4cf49ce2d1f9b3d1c55a5/8bcae/the-rules-of-attraction-by-bret-easton-ellis.jpg",
-                  srcSet:
-                    "/static/75163f0d9da4cf49ce2d1f9b3d1c55a5/8bcae/the-rules-of-attraction-by-bret-easton-ellis.jpg 72w,\n/static/75163f0d9da4cf49ce2d1f9b3d1c55a5/7306c/the-rules-of-attraction-by-bret-easton-ellis.jpg 144w",
-                  sizes: "72px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/75163f0d9da4cf49ce2d1f9b3d1c55a5/6903a/the-rules-of-attraction-by-bret-easton-ellis.avif 72w,\n/static/75163f0d9da4cf49ce2d1f9b3d1c55a5/65187/the-rules-of-attraction-by-bret-easton-ellis.avif 144w",
-                    type: "image/avif",
-                    sizes: "72px",
-                  },
-                ],
-              },
-              width: 72,
-              height: 108,
-            },
-          },
-        },
-      },
-      {
-        workSlug: "the-rules-of-attraction-by-bret-easton-ellis",
-        reviewed: true,
-        sequence: 28,
+        sequence: "2022-07-04-28",
         readingYear: 2022,
         readingMonth: "Jul",
         readingDay: "Mon",
@@ -5942,7 +6662,6 @@ export const data = {
         title: "The Rules of Attraction",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-07-04-28",
         authors: [
           {
             name: "Bret Easton Ellis",
@@ -5975,9 +6694,9 @@ export const data = {
         },
       },
       {
-        workSlug: "dracula-by-bram-stoker",
+        slug: "dracula-by-bram-stoker",
         reviewed: true,
-        sequence: 27,
+        sequence: "2022-07-03-27",
         readingYear: 2022,
         readingMonth: "Jul",
         readingDay: "Sun",
@@ -5987,7 +6706,6 @@ export const data = {
         title: "Dracula",
         edition: "Audible",
         kind: "Novel",
-        sortDate: "2022-07-03-27",
         authors: [
           {
             name: "Bram Stoker",
@@ -6020,99 +6738,9 @@ export const data = {
         },
       },
       {
-        workSlug: "the-secret-history-by-donna-tartt",
+        slug: "the-rules-of-attraction-by-bret-easton-ellis",
         reviewed: true,
-        sequence: 26,
-        readingYear: 2022,
-        readingMonth: "Jul",
-        readingDay: "Sat",
-        date: "2",
-        yearPublished: 1992,
-        progress: "Finished",
-        title: "The Secret History",
-        edition: "Audible",
-        kind: "Novel",
-        sortDate: "2022-07-02-26",
-        authors: [
-          {
-            name: "Donna Tartt",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/2343629d97c59f48a5d62c1166bd9ccd/8bcae/the-secret-history-by-donna-tartt.jpg",
-                  srcSet:
-                    "/static/2343629d97c59f48a5d62c1166bd9ccd/8bcae/the-secret-history-by-donna-tartt.jpg 72w,\n/static/2343629d97c59f48a5d62c1166bd9ccd/7306c/the-secret-history-by-donna-tartt.jpg 144w",
-                  sizes: "72px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/2343629d97c59f48a5d62c1166bd9ccd/6903a/the-secret-history-by-donna-tartt.avif 72w,\n/static/2343629d97c59f48a5d62c1166bd9ccd/65187/the-secret-history-by-donna-tartt.avif 144w",
-                    type: "image/avif",
-                    sizes: "72px",
-                  },
-                ],
-              },
-              width: 72,
-              height: 108,
-            },
-          },
-        },
-      },
-      {
-        workSlug: "dracula-by-bram-stoker",
-        reviewed: true,
-        sequence: 27,
-        readingYear: 2022,
-        readingMonth: "Jul",
-        readingDay: "Sat",
-        date: "2",
-        yearPublished: 1897,
-        progress: "4%",
-        title: "Dracula",
-        edition: "Audible",
-        kind: "Novel",
-        sortDate: "2022-07-02-27",
-        authors: [
-          {
-            name: "Bram Stoker",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/3afc1fb3158332c4415581f11a1f2371/8bcae/dracula-by-bram-stoker.jpg",
-                  srcSet:
-                    "/static/3afc1fb3158332c4415581f11a1f2371/8bcae/dracula-by-bram-stoker.jpg 72w,\n/static/3afc1fb3158332c4415581f11a1f2371/7306c/dracula-by-bram-stoker.jpg 144w",
-                  sizes: "72px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/3afc1fb3158332c4415581f11a1f2371/6903a/dracula-by-bram-stoker.avif 72w,\n/static/3afc1fb3158332c4415581f11a1f2371/65187/dracula-by-bram-stoker.avif 144w",
-                    type: "image/avif",
-                    sizes: "72px",
-                  },
-                ],
-              },
-              width: 72,
-              height: 108,
-            },
-          },
-        },
-      },
-      {
-        workSlug: "the-rules-of-attraction-by-bret-easton-ellis",
-        reviewed: true,
-        sequence: 28,
+        sequence: "2022-07-02-28",
         readingYear: 2022,
         readingMonth: "Jul",
         readingDay: "Sat",
@@ -6122,7 +6750,6 @@ export const data = {
         title: "The Rules of Attraction",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-07-02-28",
         authors: [
           {
             name: "Bret Easton Ellis",
@@ -6155,22 +6782,21 @@ export const data = {
         },
       },
       {
-        workSlug: "live-and-let-die-by-ian-fleming",
+        slug: "dracula-by-bram-stoker",
         reviewed: true,
-        sequence: 25,
+        sequence: "2022-07-02-27",
         readingYear: 2022,
-        readingMonth: "Jun",
-        readingDay: "Thu",
-        date: "30",
-        yearPublished: 1954,
-        progress: "Finished",
-        title: "Live and Let Die",
-        edition: "Kindle",
+        readingMonth: "Jul",
+        readingDay: "Sat",
+        date: "2",
+        yearPublished: 1897,
+        progress: "4%",
+        title: "Dracula",
+        edition: "Audible",
         kind: "Novel",
-        sortDate: "2022-06-30-25",
         authors: [
           {
-            name: "Ian Fleming",
+            name: "Bram Stoker",
           },
         ],
         cover: {
@@ -6179,15 +6805,15 @@ export const data = {
               layout: "fixed" as const,
               images: {
                 fallback: {
-                  src: "/static/2971b726dd5163d3dc0b6f08b66a2a53/8bcae/live-and-let-die-by-ian-fleming.jpg",
+                  src: "/static/3afc1fb3158332c4415581f11a1f2371/8bcae/dracula-by-bram-stoker.jpg",
                   srcSet:
-                    "/static/2971b726dd5163d3dc0b6f08b66a2a53/8bcae/live-and-let-die-by-ian-fleming.jpg 72w,\n/static/2971b726dd5163d3dc0b6f08b66a2a53/7306c/live-and-let-die-by-ian-fleming.jpg 144w",
+                    "/static/3afc1fb3158332c4415581f11a1f2371/8bcae/dracula-by-bram-stoker.jpg 72w,\n/static/3afc1fb3158332c4415581f11a1f2371/7306c/dracula-by-bram-stoker.jpg 144w",
                   sizes: "72px",
                 },
                 sources: [
                   {
                     srcSet:
-                      "/static/2971b726dd5163d3dc0b6f08b66a2a53/6903a/live-and-let-die-by-ian-fleming.avif 72w,\n/static/2971b726dd5163d3dc0b6f08b66a2a53/65187/live-and-let-die-by-ian-fleming.avif 144w",
+                      "/static/3afc1fb3158332c4415581f11a1f2371/6903a/dracula-by-bram-stoker.avif 72w,\n/static/3afc1fb3158332c4415581f11a1f2371/65187/dracula-by-bram-stoker.avif 144w",
                     type: "image/avif",
                     sizes: "72px",
                   },
@@ -6200,9 +6826,53 @@ export const data = {
         },
       },
       {
-        workSlug: "the-secret-history-by-donna-tartt",
+        slug: "the-secret-history-by-donna-tartt",
         reviewed: true,
-        sequence: 26,
+        sequence: "2022-07-02-26",
+        readingYear: 2022,
+        readingMonth: "Jul",
+        readingDay: "Sat",
+        date: "2",
+        yearPublished: 1992,
+        progress: "Finished",
+        title: "The Secret History",
+        edition: "Audible",
+        kind: "Novel",
+        authors: [
+          {
+            name: "Donna Tartt",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/2343629d97c59f48a5d62c1166bd9ccd/8bcae/the-secret-history-by-donna-tartt.jpg",
+                  srcSet:
+                    "/static/2343629d97c59f48a5d62c1166bd9ccd/8bcae/the-secret-history-by-donna-tartt.jpg 72w,\n/static/2343629d97c59f48a5d62c1166bd9ccd/7306c/the-secret-history-by-donna-tartt.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/2343629d97c59f48a5d62c1166bd9ccd/6903a/the-secret-history-by-donna-tartt.avif 72w,\n/static/2343629d97c59f48a5d62c1166bd9ccd/65187/the-secret-history-by-donna-tartt.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        slug: "the-secret-history-by-donna-tartt",
+        reviewed: true,
+        sequence: "2022-06-30-26",
         readingYear: 2022,
         readingMonth: "Jun",
         readingDay: "Thu",
@@ -6212,7 +6882,6 @@ export const data = {
         title: "The Secret History",
         edition: "Audible",
         kind: "Novel",
-        sortDate: "2022-06-30-26",
         authors: [
           {
             name: "Donna Tartt",
@@ -6245,9 +6914,53 @@ export const data = {
         },
       },
       {
-        workSlug: "live-and-let-die-by-ian-fleming",
+        slug: "live-and-let-die-by-ian-fleming",
         reviewed: true,
-        sequence: 25,
+        sequence: "2022-06-30-25",
+        readingYear: 2022,
+        readingMonth: "Jun",
+        readingDay: "Thu",
+        date: "30",
+        yearPublished: 1954,
+        progress: "Finished",
+        title: "Live and Let Die",
+        edition: "Kindle",
+        kind: "Novel",
+        authors: [
+          {
+            name: "Ian Fleming",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/2971b726dd5163d3dc0b6f08b66a2a53/8bcae/live-and-let-die-by-ian-fleming.jpg",
+                  srcSet:
+                    "/static/2971b726dd5163d3dc0b6f08b66a2a53/8bcae/live-and-let-die-by-ian-fleming.jpg 72w,\n/static/2971b726dd5163d3dc0b6f08b66a2a53/7306c/live-and-let-die-by-ian-fleming.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/2971b726dd5163d3dc0b6f08b66a2a53/6903a/live-and-let-die-by-ian-fleming.avif 72w,\n/static/2971b726dd5163d3dc0b6f08b66a2a53/65187/live-and-let-die-by-ian-fleming.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        slug: "live-and-let-die-by-ian-fleming",
+        reviewed: true,
+        sequence: "2022-06-28-25",
         readingYear: 2022,
         readingMonth: "Jun",
         readingDay: "Tue",
@@ -6257,7 +6970,6 @@ export const data = {
         title: "Live and Let Die",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-06-28-25",
         authors: [
           {
             name: "Ian Fleming",
@@ -6290,54 +7002,9 @@ export const data = {
         },
       },
       {
-        workSlug: "live-and-let-die-by-ian-fleming",
+        slug: "the-secret-history-by-donna-tartt",
         reviewed: true,
-        sequence: 25,
-        readingYear: 2022,
-        readingMonth: "Jun",
-        readingDay: "Mon",
-        date: "27",
-        yearPublished: 1954,
-        progress: "69%",
-        title: "Live and Let Die",
-        edition: "Kindle",
-        kind: "Novel",
-        sortDate: "2022-06-27-25",
-        authors: [
-          {
-            name: "Ian Fleming",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/2971b726dd5163d3dc0b6f08b66a2a53/8bcae/live-and-let-die-by-ian-fleming.jpg",
-                  srcSet:
-                    "/static/2971b726dd5163d3dc0b6f08b66a2a53/8bcae/live-and-let-die-by-ian-fleming.jpg 72w,\n/static/2971b726dd5163d3dc0b6f08b66a2a53/7306c/live-and-let-die-by-ian-fleming.jpg 144w",
-                  sizes: "72px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/2971b726dd5163d3dc0b6f08b66a2a53/6903a/live-and-let-die-by-ian-fleming.avif 72w,\n/static/2971b726dd5163d3dc0b6f08b66a2a53/65187/live-and-let-die-by-ian-fleming.avif 144w",
-                    type: "image/avif",
-                    sizes: "72px",
-                  },
-                ],
-              },
-              width: 72,
-              height: 108,
-            },
-          },
-        },
-      },
-      {
-        workSlug: "the-secret-history-by-donna-tartt",
-        reviewed: true,
-        sequence: 26,
+        sequence: "2022-06-27-26",
         readingYear: 2022,
         readingMonth: "Jun",
         readingDay: "Mon",
@@ -6347,7 +7014,6 @@ export const data = {
         title: "The Secret History",
         edition: "Audible",
         kind: "Novel",
-        sortDate: "2022-06-27-26",
         authors: [
           {
             name: "Donna Tartt",
@@ -6380,9 +7046,141 @@ export const data = {
         },
       },
       {
-        workSlug: "extreme-ownership-by-jocko-willink-leif-babin",
+        slug: "live-and-let-die-by-ian-fleming",
         reviewed: true,
-        sequence: 24,
+        sequence: "2022-06-27-25",
+        readingYear: 2022,
+        readingMonth: "Jun",
+        readingDay: "Mon",
+        date: "27",
+        yearPublished: 1954,
+        progress: "69%",
+        title: "Live and Let Die",
+        edition: "Kindle",
+        kind: "Novel",
+        authors: [
+          {
+            name: "Ian Fleming",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/2971b726dd5163d3dc0b6f08b66a2a53/8bcae/live-and-let-die-by-ian-fleming.jpg",
+                  srcSet:
+                    "/static/2971b726dd5163d3dc0b6f08b66a2a53/8bcae/live-and-let-die-by-ian-fleming.jpg 72w,\n/static/2971b726dd5163d3dc0b6f08b66a2a53/7306c/live-and-let-die-by-ian-fleming.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/2971b726dd5163d3dc0b6f08b66a2a53/6903a/live-and-let-die-by-ian-fleming.avif 72w,\n/static/2971b726dd5163d3dc0b6f08b66a2a53/65187/live-and-let-die-by-ian-fleming.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        slug: "the-secret-history-by-donna-tartt",
+        reviewed: true,
+        sequence: "2022-06-26-26",
+        readingYear: 2022,
+        readingMonth: "Jun",
+        readingDay: "Sun",
+        date: "26",
+        yearPublished: 1992,
+        progress: "13%",
+        title: "The Secret History",
+        edition: "Audible",
+        kind: "Novel",
+        authors: [
+          {
+            name: "Donna Tartt",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/2343629d97c59f48a5d62c1166bd9ccd/8bcae/the-secret-history-by-donna-tartt.jpg",
+                  srcSet:
+                    "/static/2343629d97c59f48a5d62c1166bd9ccd/8bcae/the-secret-history-by-donna-tartt.jpg 72w,\n/static/2343629d97c59f48a5d62c1166bd9ccd/7306c/the-secret-history-by-donna-tartt.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/2343629d97c59f48a5d62c1166bd9ccd/6903a/the-secret-history-by-donna-tartt.avif 72w,\n/static/2343629d97c59f48a5d62c1166bd9ccd/65187/the-secret-history-by-donna-tartt.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        slug: "live-and-let-die-by-ian-fleming",
+        reviewed: true,
+        sequence: "2022-06-26-25",
+        readingYear: 2022,
+        readingMonth: "Jun",
+        readingDay: "Sun",
+        date: "26",
+        yearPublished: 1954,
+        progress: "59%",
+        title: "Live and Let Die",
+        edition: "Kindle",
+        kind: "Novel",
+        authors: [
+          {
+            name: "Ian Fleming",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/2971b726dd5163d3dc0b6f08b66a2a53/8bcae/live-and-let-die-by-ian-fleming.jpg",
+                  srcSet:
+                    "/static/2971b726dd5163d3dc0b6f08b66a2a53/8bcae/live-and-let-die-by-ian-fleming.jpg 72w,\n/static/2971b726dd5163d3dc0b6f08b66a2a53/7306c/live-and-let-die-by-ian-fleming.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/2971b726dd5163d3dc0b6f08b66a2a53/6903a/live-and-let-die-by-ian-fleming.avif 72w,\n/static/2971b726dd5163d3dc0b6f08b66a2a53/65187/live-and-let-die-by-ian-fleming.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        slug: "extreme-ownership-by-jocko-willink-leif-babin",
+        reviewed: true,
+        sequence: "2022-06-26-24",
         readingYear: 2022,
         readingMonth: "Jun",
         readingDay: "Sun",
@@ -6392,7 +7190,6 @@ export const data = {
         title: "Extreme Ownership",
         edition: "Audible",
         kind: "Nonfiction",
-        sortDate: "2022-06-26-24",
         authors: [
           {
             name: "Jocko Willink",
@@ -6428,189 +7225,9 @@ export const data = {
         },
       },
       {
-        workSlug: "live-and-let-die-by-ian-fleming",
+        slug: "the-secret-history-by-donna-tartt",
         reviewed: true,
-        sequence: 25,
-        readingYear: 2022,
-        readingMonth: "Jun",
-        readingDay: "Sun",
-        date: "26",
-        yearPublished: 1954,
-        progress: "59%",
-        title: "Live and Let Die",
-        edition: "Kindle",
-        kind: "Novel",
-        sortDate: "2022-06-26-25",
-        authors: [
-          {
-            name: "Ian Fleming",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/2971b726dd5163d3dc0b6f08b66a2a53/8bcae/live-and-let-die-by-ian-fleming.jpg",
-                  srcSet:
-                    "/static/2971b726dd5163d3dc0b6f08b66a2a53/8bcae/live-and-let-die-by-ian-fleming.jpg 72w,\n/static/2971b726dd5163d3dc0b6f08b66a2a53/7306c/live-and-let-die-by-ian-fleming.jpg 144w",
-                  sizes: "72px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/2971b726dd5163d3dc0b6f08b66a2a53/6903a/live-and-let-die-by-ian-fleming.avif 72w,\n/static/2971b726dd5163d3dc0b6f08b66a2a53/65187/live-and-let-die-by-ian-fleming.avif 144w",
-                    type: "image/avif",
-                    sizes: "72px",
-                  },
-                ],
-              },
-              width: 72,
-              height: 108,
-            },
-          },
-        },
-      },
-      {
-        workSlug: "the-secret-history-by-donna-tartt",
-        reviewed: true,
-        sequence: 26,
-        readingYear: 2022,
-        readingMonth: "Jun",
-        readingDay: "Sun",
-        date: "26",
-        yearPublished: 1992,
-        progress: "13%",
-        title: "The Secret History",
-        edition: "Audible",
-        kind: "Novel",
-        sortDate: "2022-06-26-26",
-        authors: [
-          {
-            name: "Donna Tartt",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/2343629d97c59f48a5d62c1166bd9ccd/8bcae/the-secret-history-by-donna-tartt.jpg",
-                  srcSet:
-                    "/static/2343629d97c59f48a5d62c1166bd9ccd/8bcae/the-secret-history-by-donna-tartt.jpg 72w,\n/static/2343629d97c59f48a5d62c1166bd9ccd/7306c/the-secret-history-by-donna-tartt.jpg 144w",
-                  sizes: "72px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/2343629d97c59f48a5d62c1166bd9ccd/6903a/the-secret-history-by-donna-tartt.avif 72w,\n/static/2343629d97c59f48a5d62c1166bd9ccd/65187/the-secret-history-by-donna-tartt.avif 144w",
-                    type: "image/avif",
-                    sizes: "72px",
-                  },
-                ],
-              },
-              width: 72,
-              height: 108,
-            },
-          },
-        },
-      },
-      {
-        workSlug: "set-the-boy-free-by-johnny-marr",
-        reviewed: true,
-        sequence: 23,
-        readingYear: 2022,
-        readingMonth: "Jun",
-        readingDay: "Sat",
-        date: "25",
-        yearPublished: 2016,
-        progress: "Finished",
-        title: "Set the Boy Free",
-        edition: "Audible",
-        kind: "Nonfiction",
-        sortDate: "2022-06-25-23",
-        authors: [
-          {
-            name: "Johnny Marr",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/949789eaa2aa356df21a80f8ba3ec1dc/8bcae/set-the-boy-free-by-johnny-marr.jpg",
-                  srcSet:
-                    "/static/949789eaa2aa356df21a80f8ba3ec1dc/8bcae/set-the-boy-free-by-johnny-marr.jpg 72w,\n/static/949789eaa2aa356df21a80f8ba3ec1dc/7306c/set-the-boy-free-by-johnny-marr.jpg 144w",
-                  sizes: "72px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/949789eaa2aa356df21a80f8ba3ec1dc/6903a/set-the-boy-free-by-johnny-marr.avif 72w,\n/static/949789eaa2aa356df21a80f8ba3ec1dc/65187/set-the-boy-free-by-johnny-marr.avif 144w",
-                    type: "image/avif",
-                    sizes: "72px",
-                  },
-                ],
-              },
-              width: 72,
-              height: 108,
-            },
-          },
-        },
-      },
-      {
-        workSlug: "live-and-let-die-by-ian-fleming",
-        reviewed: true,
-        sequence: 25,
-        readingYear: 2022,
-        readingMonth: "Jun",
-        readingDay: "Sat",
-        date: "25",
-        yearPublished: 1954,
-        progress: "44%",
-        title: "Live and Let Die",
-        edition: "Kindle",
-        kind: "Novel",
-        sortDate: "2022-06-25-25",
-        authors: [
-          {
-            name: "Ian Fleming",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/2971b726dd5163d3dc0b6f08b66a2a53/8bcae/live-and-let-die-by-ian-fleming.jpg",
-                  srcSet:
-                    "/static/2971b726dd5163d3dc0b6f08b66a2a53/8bcae/live-and-let-die-by-ian-fleming.jpg 72w,\n/static/2971b726dd5163d3dc0b6f08b66a2a53/7306c/live-and-let-die-by-ian-fleming.jpg 144w",
-                  sizes: "72px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/2971b726dd5163d3dc0b6f08b66a2a53/6903a/live-and-let-die-by-ian-fleming.avif 72w,\n/static/2971b726dd5163d3dc0b6f08b66a2a53/65187/live-and-let-die-by-ian-fleming.avif 144w",
-                    type: "image/avif",
-                    sizes: "72px",
-                  },
-                ],
-              },
-              width: 72,
-              height: 108,
-            },
-          },
-        },
-      },
-      {
-        workSlug: "the-secret-history-by-donna-tartt",
-        reviewed: true,
-        sequence: 26,
+        sequence: "2022-06-25-26",
         readingYear: 2022,
         readingMonth: "Jun",
         readingDay: "Sat",
@@ -6620,7 +7237,6 @@ export const data = {
         title: "The Secret History",
         edition: "Audible",
         kind: "Novel",
-        sortDate: "2022-06-25-26",
         authors: [
           {
             name: "Donna Tartt",
@@ -6653,19 +7269,62 @@ export const data = {
         },
       },
       {
-        workSlug: "set-the-boy-free-by-johnny-marr",
+        slug: "live-and-let-die-by-ian-fleming",
         reviewed: true,
-        sequence: 23,
+        sequence: "2022-06-25-25",
         readingYear: 2022,
         readingMonth: "Jun",
-        readingDay: "Fri",
-        date: "24",
+        readingDay: "Sat",
+        date: "25",
+        yearPublished: 1954,
+        progress: "44%",
+        title: "Live and Let Die",
+        edition: "Kindle",
+        kind: "Novel",
+        authors: [
+          {
+            name: "Ian Fleming",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/2971b726dd5163d3dc0b6f08b66a2a53/8bcae/live-and-let-die-by-ian-fleming.jpg",
+                  srcSet:
+                    "/static/2971b726dd5163d3dc0b6f08b66a2a53/8bcae/live-and-let-die-by-ian-fleming.jpg 72w,\n/static/2971b726dd5163d3dc0b6f08b66a2a53/7306c/live-and-let-die-by-ian-fleming.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/2971b726dd5163d3dc0b6f08b66a2a53/6903a/live-and-let-die-by-ian-fleming.avif 72w,\n/static/2971b726dd5163d3dc0b6f08b66a2a53/65187/live-and-let-die-by-ian-fleming.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        slug: "set-the-boy-free-by-johnny-marr",
+        reviewed: true,
+        sequence: "2022-06-25-23",
+        readingYear: 2022,
+        readingMonth: "Jun",
+        readingDay: "Sat",
+        date: "25",
         yearPublished: 2016,
-        progress: "50%",
+        progress: "Finished",
         title: "Set the Boy Free",
         edition: "Audible",
         kind: "Nonfiction",
-        sortDate: "2022-06-24-23",
         authors: [
           {
             name: "Johnny Marr",
@@ -6698,9 +7357,9 @@ export const data = {
         },
       },
       {
-        workSlug: "live-and-let-die-by-ian-fleming",
+        slug: "live-and-let-die-by-ian-fleming",
         reviewed: true,
-        sequence: 25,
+        sequence: "2022-06-24-25",
         readingYear: 2022,
         readingMonth: "Jun",
         readingDay: "Fri",
@@ -6710,7 +7369,6 @@ export const data = {
         title: "Live and Let Die",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-06-24-25",
         authors: [
           {
             name: "Ian Fleming",
@@ -6743,9 +7401,53 @@ export const data = {
         },
       },
       {
-        workSlug: "live-and-let-die-by-ian-fleming",
+        slug: "set-the-boy-free-by-johnny-marr",
         reviewed: true,
-        sequence: 25,
+        sequence: "2022-06-24-23",
+        readingYear: 2022,
+        readingMonth: "Jun",
+        readingDay: "Fri",
+        date: "24",
+        yearPublished: 2016,
+        progress: "50%",
+        title: "Set the Boy Free",
+        edition: "Audible",
+        kind: "Nonfiction",
+        authors: [
+          {
+            name: "Johnny Marr",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/949789eaa2aa356df21a80f8ba3ec1dc/8bcae/set-the-boy-free-by-johnny-marr.jpg",
+                  srcSet:
+                    "/static/949789eaa2aa356df21a80f8ba3ec1dc/8bcae/set-the-boy-free-by-johnny-marr.jpg 72w,\n/static/949789eaa2aa356df21a80f8ba3ec1dc/7306c/set-the-boy-free-by-johnny-marr.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/949789eaa2aa356df21a80f8ba3ec1dc/6903a/set-the-boy-free-by-johnny-marr.avif 72w,\n/static/949789eaa2aa356df21a80f8ba3ec1dc/65187/set-the-boy-free-by-johnny-marr.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        slug: "live-and-let-die-by-ian-fleming",
+        reviewed: true,
+        sequence: "2022-06-23-25",
         readingYear: 2022,
         readingMonth: "Jun",
         readingDay: "Thu",
@@ -6755,7 +7457,6 @@ export const data = {
         title: "Live and Let Die",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-06-23-25",
         authors: [
           {
             name: "Ian Fleming",
@@ -6788,9 +7489,9 @@ export const data = {
         },
       },
       {
-        workSlug: "live-and-let-die-by-ian-fleming",
+        slug: "live-and-let-die-by-ian-fleming",
         reviewed: true,
-        sequence: 25,
+        sequence: "2022-06-17-25",
         readingYear: 2022,
         readingMonth: "Jun",
         readingDay: "Fri",
@@ -6800,7 +7501,6 @@ export const data = {
         title: "Live and Let Die",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-06-17-25",
         authors: [
           {
             name: "Ian Fleming",
@@ -6833,54 +7533,9 @@ export const data = {
         },
       },
       {
-        workSlug: "churchill-by-andrew-roberts",
+        slug: "casino-royale-by-ian-fleming",
         reviewed: true,
-        sequence: 21,
-        readingYear: 2022,
-        readingMonth: "Jun",
-        readingDay: "Tue",
-        date: "14",
-        yearPublished: 2018,
-        progress: "Finished",
-        title: "Churchill",
-        edition: "Audible",
-        kind: "Nonfiction",
-        sortDate: "2022-06-14-21",
-        authors: [
-          {
-            name: "Andrew Roberts",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/fc801250ca4d771a07f6075010db9cef/8bcae/churchill-by-andrew-roberts.jpg",
-                  srcSet:
-                    "/static/fc801250ca4d771a07f6075010db9cef/8bcae/churchill-by-andrew-roberts.jpg 72w,\n/static/fc801250ca4d771a07f6075010db9cef/7306c/churchill-by-andrew-roberts.jpg 144w",
-                  sizes: "72px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/fc801250ca4d771a07f6075010db9cef/6903a/churchill-by-andrew-roberts.avif 72w,\n/static/fc801250ca4d771a07f6075010db9cef/65187/churchill-by-andrew-roberts.avif 144w",
-                    type: "image/avif",
-                    sizes: "72px",
-                  },
-                ],
-              },
-              width: 72,
-              height: 108,
-            },
-          },
-        },
-      },
-      {
-        workSlug: "casino-royale-by-ian-fleming",
-        reviewed: true,
-        sequence: 22,
+        sequence: "2022-06-14-22",
         readingYear: 2022,
         readingMonth: "Jun",
         readingDay: "Tue",
@@ -6890,7 +7545,6 @@ export const data = {
         title: "Casino Royale",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-06-14-22",
         authors: [
           {
             name: "Ian Fleming",
@@ -6923,9 +7577,53 @@ export const data = {
         },
       },
       {
-        workSlug: "casino-royale-by-ian-fleming",
+        slug: "churchill-by-andrew-roberts",
         reviewed: true,
-        sequence: 22,
+        sequence: "2022-06-14-21",
+        readingYear: 2022,
+        readingMonth: "Jun",
+        readingDay: "Tue",
+        date: "14",
+        yearPublished: 2018,
+        progress: "Finished",
+        title: "Churchill",
+        edition: "Audible",
+        kind: "Nonfiction",
+        authors: [
+          {
+            name: "Andrew Roberts",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/fc801250ca4d771a07f6075010db9cef/8bcae/churchill-by-andrew-roberts.jpg",
+                  srcSet:
+                    "/static/fc801250ca4d771a07f6075010db9cef/8bcae/churchill-by-andrew-roberts.jpg 72w,\n/static/fc801250ca4d771a07f6075010db9cef/7306c/churchill-by-andrew-roberts.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/fc801250ca4d771a07f6075010db9cef/6903a/churchill-by-andrew-roberts.avif 72w,\n/static/fc801250ca4d771a07f6075010db9cef/65187/churchill-by-andrew-roberts.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        slug: "casino-royale-by-ian-fleming",
+        reviewed: true,
+        sequence: "2022-06-12-22",
         readingYear: 2022,
         readingMonth: "Jun",
         readingDay: "Sun",
@@ -6935,7 +7633,6 @@ export const data = {
         title: "Casino Royale",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-06-12-22",
         authors: [
           {
             name: "Ian Fleming",
@@ -6968,9 +7665,9 @@ export const data = {
         },
       },
       {
-        workSlug: "casino-royale-by-ian-fleming",
+        slug: "casino-royale-by-ian-fleming",
         reviewed: true,
-        sequence: 22,
+        sequence: "2022-06-11-22",
         readingYear: 2022,
         readingMonth: "Jun",
         readingDay: "Sat",
@@ -6980,7 +7677,6 @@ export const data = {
         title: "Casino Royale",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-06-11-22",
         authors: [
           {
             name: "Ian Fleming",
@@ -7013,9 +7709,9 @@ export const data = {
         },
       },
       {
-        workSlug: "casino-royale-by-ian-fleming",
+        slug: "casino-royale-by-ian-fleming",
         reviewed: true,
-        sequence: 22,
+        sequence: "2022-06-10-22",
         readingYear: 2022,
         readingMonth: "Jun",
         readingDay: "Fri",
@@ -7025,7 +7721,6 @@ export const data = {
         title: "Casino Royale",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-06-10-22",
         authors: [
           {
             name: "Ian Fleming",
@@ -7058,9 +7753,9 @@ export const data = {
         },
       },
       {
-        workSlug: "casino-royale-by-ian-fleming",
+        slug: "casino-royale-by-ian-fleming",
         reviewed: true,
-        sequence: 22,
+        sequence: "2022-06-08-22",
         readingYear: 2022,
         readingMonth: "Jun",
         readingDay: "Wed",
@@ -7070,7 +7765,6 @@ export const data = {
         title: "Casino Royale",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-06-08-22",
         authors: [
           {
             name: "Ian Fleming",
@@ -7103,9 +7797,9 @@ export const data = {
         },
       },
       {
-        workSlug: "churchill-by-andrew-roberts",
+        slug: "churchill-by-andrew-roberts",
         reviewed: true,
-        sequence: 21,
+        sequence: "2022-06-05-21",
         readingYear: 2022,
         readingMonth: "Jun",
         readingDay: "Sun",
@@ -7115,7 +7809,6 @@ export const data = {
         title: "Churchill",
         edition: "Audible",
         kind: "Nonfiction",
-        sortDate: "2022-06-05-21",
         authors: [
           {
             name: "Andrew Roberts",
@@ -7148,9 +7841,9 @@ export const data = {
         },
       },
       {
-        workSlug: "churchill-by-andrew-roberts",
+        slug: "churchill-by-andrew-roberts",
         reviewed: true,
-        sequence: 21,
+        sequence: "2022-06-04-21",
         readingYear: 2022,
         readingMonth: "Jun",
         readingDay: "Sat",
@@ -7160,7 +7853,6 @@ export const data = {
         title: "Churchill",
         edition: "Audible",
         kind: "Nonfiction",
-        sortDate: "2022-06-04-21",
         authors: [
           {
             name: "Andrew Roberts",
@@ -7193,9 +7885,9 @@ export const data = {
         },
       },
       {
-        workSlug: "living-with-a-seal-by-jesse-itzler",
+        slug: "living-with-a-seal-by-jesse-itzler",
         reviewed: true,
-        sequence: 20,
+        sequence: "2022-06-01-20",
         readingYear: 2022,
         readingMonth: "Jun",
         readingDay: "Wed",
@@ -7205,7 +7897,6 @@ export const data = {
         title: "Living with a SEAL",
         edition: "Kindle",
         kind: "Nonfiction",
-        sortDate: "2022-06-01-20",
         authors: [
           {
             name: "Jesse Itzler",
@@ -7238,9 +7929,9 @@ export const data = {
         },
       },
       {
-        workSlug: "living-with-a-seal-by-jesse-itzler",
+        slug: "living-with-a-seal-by-jesse-itzler",
         reviewed: true,
-        sequence: 20,
+        sequence: "2022-05-31-20",
         readingYear: 2022,
         readingMonth: "May",
         readingDay: "Tue",
@@ -7250,7 +7941,6 @@ export const data = {
         title: "Living with a SEAL",
         edition: "Kindle",
         kind: "Nonfiction",
-        sortDate: "2022-05-31-20",
         authors: [
           {
             name: "Jesse Itzler",
@@ -7283,9 +7973,9 @@ export const data = {
         },
       },
       {
-        workSlug: "churchill-by-andrew-roberts",
+        slug: "churchill-by-andrew-roberts",
         reviewed: true,
-        sequence: 21,
+        sequence: "2022-05-27-21",
         readingYear: 2022,
         readingMonth: "May",
         readingDay: "Fri",
@@ -7295,7 +7985,6 @@ export const data = {
         title: "Churchill",
         edition: "Audible",
         kind: "Nonfiction",
-        sortDate: "2022-05-27-21",
         authors: [
           {
             name: "Andrew Roberts",
@@ -7328,9 +8017,9 @@ export const data = {
         },
       },
       {
-        workSlug: "churchill-by-andrew-roberts",
+        slug: "churchill-by-andrew-roberts",
         reviewed: true,
-        sequence: 21,
+        sequence: "2022-05-25-21",
         readingYear: 2022,
         readingMonth: "May",
         readingDay: "Wed",
@@ -7340,7 +8029,6 @@ export const data = {
         title: "Churchill",
         edition: "Audible",
         kind: "Nonfiction",
-        sortDate: "2022-05-25-21",
         authors: [
           {
             name: "Andrew Roberts",
@@ -7373,9 +8061,9 @@ export const data = {
         },
       },
       {
-        workSlug: "living-with-a-seal-by-jesse-itzler",
+        slug: "living-with-a-seal-by-jesse-itzler",
         reviewed: true,
-        sequence: 20,
+        sequence: "2022-05-24-20",
         readingYear: 2022,
         readingMonth: "May",
         readingDay: "Tue",
@@ -7385,7 +8073,6 @@ export const data = {
         title: "Living with a SEAL",
         edition: "Kindle",
         kind: "Nonfiction",
-        sortDate: "2022-05-24-20",
         authors: [
           {
             name: "Jesse Itzler",
@@ -7418,9 +8105,9 @@ export const data = {
         },
       },
       {
-        workSlug: "churchill-by-andrew-roberts",
+        slug: "churchill-by-andrew-roberts",
         reviewed: true,
-        sequence: 21,
+        sequence: "2022-05-22-21",
         readingYear: 2022,
         readingMonth: "May",
         readingDay: "Sun",
@@ -7430,7 +8117,6 @@ export const data = {
         title: "Churchill",
         edition: "Audible",
         kind: "Nonfiction",
-        sortDate: "2022-05-22-21",
         authors: [
           {
             name: "Andrew Roberts",
@@ -7463,54 +8149,9 @@ export const data = {
         },
       },
       {
-        workSlug: "total-recall-by-arnold-schwarzenegger",
+        slug: "churchill-by-andrew-roberts",
         reviewed: true,
-        sequence: 19,
-        readingYear: 2022,
-        readingMonth: "May",
-        readingDay: "Sat",
-        date: "21",
-        yearPublished: 2012,
-        progress: "Finished",
-        title: "Total Recall",
-        edition: "Audible",
-        kind: "Nonfiction",
-        sortDate: "2022-05-21-19",
-        authors: [
-          {
-            name: "Arnold Schwarzenegger",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/ab96409169fd5cd92838b2465ba85cdb/8bcae/total-recall-by-arnold-schwarzenegger.jpg",
-                  srcSet:
-                    "/static/ab96409169fd5cd92838b2465ba85cdb/8bcae/total-recall-by-arnold-schwarzenegger.jpg 72w,\n/static/ab96409169fd5cd92838b2465ba85cdb/7306c/total-recall-by-arnold-schwarzenegger.jpg 144w",
-                  sizes: "72px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/ab96409169fd5cd92838b2465ba85cdb/6903a/total-recall-by-arnold-schwarzenegger.avif 72w,\n/static/ab96409169fd5cd92838b2465ba85cdb/65187/total-recall-by-arnold-schwarzenegger.avif 144w",
-                    type: "image/avif",
-                    sizes: "72px",
-                  },
-                ],
-              },
-              width: 72,
-              height: 108,
-            },
-          },
-        },
-      },
-      {
-        workSlug: "churchill-by-andrew-roberts",
-        reviewed: true,
-        sequence: 21,
+        sequence: "2022-05-21-21",
         readingYear: 2022,
         readingMonth: "May",
         readingDay: "Sat",
@@ -7520,7 +8161,6 @@ export const data = {
         title: "Churchill",
         edition: "Audible",
         kind: "Nonfiction",
-        sortDate: "2022-05-21-21",
         authors: [
           {
             name: "Andrew Roberts",
@@ -7553,9 +8193,53 @@ export const data = {
         },
       },
       {
-        workSlug: "total-recall-by-arnold-schwarzenegger",
+        slug: "total-recall-by-arnold-schwarzenegger",
         reviewed: true,
-        sequence: 19,
+        sequence: "2022-05-21-19",
+        readingYear: 2022,
+        readingMonth: "May",
+        readingDay: "Sat",
+        date: "21",
+        yearPublished: 2012,
+        progress: "Finished",
+        title: "Total Recall",
+        edition: "Audible",
+        kind: "Nonfiction",
+        authors: [
+          {
+            name: "Arnold Schwarzenegger",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/ab96409169fd5cd92838b2465ba85cdb/8bcae/total-recall-by-arnold-schwarzenegger.jpg",
+                  srcSet:
+                    "/static/ab96409169fd5cd92838b2465ba85cdb/8bcae/total-recall-by-arnold-schwarzenegger.jpg 72w,\n/static/ab96409169fd5cd92838b2465ba85cdb/7306c/total-recall-by-arnold-schwarzenegger.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/ab96409169fd5cd92838b2465ba85cdb/6903a/total-recall-by-arnold-schwarzenegger.avif 72w,\n/static/ab96409169fd5cd92838b2465ba85cdb/65187/total-recall-by-arnold-schwarzenegger.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        slug: "total-recall-by-arnold-schwarzenegger",
+        reviewed: true,
+        sequence: "2022-05-15-19",
         readingYear: 2022,
         readingMonth: "May",
         readingDay: "Sun",
@@ -7565,7 +8249,6 @@ export const data = {
         title: "Total Recall",
         edition: "Audible",
         kind: "Nonfiction",
-        sortDate: "2022-05-15-19",
         authors: [
           {
             name: "Arnold Schwarzenegger",
@@ -7598,9 +8281,9 @@ export const data = {
         },
       },
       {
-        workSlug: "total-recall-by-arnold-schwarzenegger",
+        slug: "total-recall-by-arnold-schwarzenegger",
         reviewed: true,
-        sequence: 19,
+        sequence: "2022-05-09-19",
         readingYear: 2022,
         readingMonth: "May",
         readingDay: "Mon",
@@ -7610,7 +8293,6 @@ export const data = {
         title: "Total Recall",
         edition: "Audible",
         kind: "Nonfiction",
-        sortDate: "2022-05-09-19",
         authors: [
           {
             name: "Arnold Schwarzenegger",
@@ -7643,144 +8325,9 @@ export const data = {
         },
       },
       {
-        workSlug: "mandala-by-philip-fracassi",
+        slug: "total-recall-by-arnold-schwarzenegger",
         reviewed: true,
-        sequence: 16,
-        readingYear: 2022,
-        readingMonth: "May",
-        readingDay: "Sat",
-        date: "7",
-        yearPublished: 2017,
-        progress: "Finished",
-        title: "Mandala",
-        edition: "Kindle",
-        kind: "Novella",
-        sortDate: "2022-05-07-16",
-        authors: [
-          {
-            name: "Philip Fracassi",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/1de200a682b62e4daf7358cd87072d87/8bcae/behold-the-void-by-philip-fracassi.jpg",
-                  srcSet:
-                    "/static/1de200a682b62e4daf7358cd87072d87/8bcae/behold-the-void-by-philip-fracassi.jpg 72w,\n/static/1de200a682b62e4daf7358cd87072d87/7306c/behold-the-void-by-philip-fracassi.jpg 144w",
-                  sizes: "72px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/1de200a682b62e4daf7358cd87072d87/6903a/behold-the-void-by-philip-fracassi.avif 72w,\n/static/1de200a682b62e4daf7358cd87072d87/65187/behold-the-void-by-philip-fracassi.avif 144w",
-                    type: "image/avif",
-                    sizes: "72px",
-                  },
-                ],
-              },
-              width: 72,
-              height: 108,
-            },
-          },
-        },
-      },
-      {
-        workSlug: "behold-the-void-by-philip-fracassi",
-        reviewed: true,
-        sequence: 17,
-        readingYear: 2022,
-        readingMonth: "May",
-        readingDay: "Sat",
-        date: "7",
-        yearPublished: 2017,
-        progress: "Finished",
-        title: "Behold the Void",
-        edition: "Kindle",
-        kind: "Collection",
-        sortDate: "2022-05-07-17",
-        authors: [
-          {
-            name: "Philip Fracassi",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/1de200a682b62e4daf7358cd87072d87/8bcae/behold-the-void-by-philip-fracassi.jpg",
-                  srcSet:
-                    "/static/1de200a682b62e4daf7358cd87072d87/8bcae/behold-the-void-by-philip-fracassi.jpg 72w,\n/static/1de200a682b62e4daf7358cd87072d87/7306c/behold-the-void-by-philip-fracassi.jpg 144w",
-                  sizes: "72px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/1de200a682b62e4daf7358cd87072d87/6903a/behold-the-void-by-philip-fracassi.avif 72w,\n/static/1de200a682b62e4daf7358cd87072d87/65187/behold-the-void-by-philip-fracassi.avif 144w",
-                    type: "image/avif",
-                    sizes: "72px",
-                  },
-                ],
-              },
-              width: 72,
-              height: 108,
-            },
-          },
-        },
-      },
-      {
-        workSlug: "the-rise-of-theodore-roosevelt-by-edmund-morris",
-        reviewed: true,
-        sequence: 18,
-        readingYear: 2022,
-        readingMonth: "May",
-        readingDay: "Sat",
-        date: "7",
-        yearPublished: 1979,
-        progress: "Finished",
-        title: "The Rise of Theodore Roosevelt",
-        edition: "Audible",
-        kind: "Nonfiction",
-        sortDate: "2022-05-07-18",
-        authors: [
-          {
-            name: "Edmund Morris",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/f825a675ac30c134f06329a317ae50eb/8bcae/the-rise-of-theodore-roosevelt-by-edmund-morris.jpg",
-                  srcSet:
-                    "/static/f825a675ac30c134f06329a317ae50eb/8bcae/the-rise-of-theodore-roosevelt-by-edmund-morris.jpg 72w,\n/static/f825a675ac30c134f06329a317ae50eb/7306c/the-rise-of-theodore-roosevelt-by-edmund-morris.jpg 144w",
-                  sizes: "72px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/f825a675ac30c134f06329a317ae50eb/6903a/the-rise-of-theodore-roosevelt-by-edmund-morris.avif 72w,\n/static/f825a675ac30c134f06329a317ae50eb/65187/the-rise-of-theodore-roosevelt-by-edmund-morris.avif 144w",
-                    type: "image/avif",
-                    sizes: "72px",
-                  },
-                ],
-              },
-              width: 72,
-              height: 108,
-            },
-          },
-        },
-      },
-      {
-        workSlug: "total-recall-by-arnold-schwarzenegger",
-        reviewed: true,
-        sequence: 19,
+        sequence: "2022-05-07-19",
         readingYear: 2022,
         readingMonth: "May",
         readingDay: "Sat",
@@ -7790,7 +8337,6 @@ export const data = {
         title: "Total Recall",
         edition: "Audible",
         kind: "Nonfiction",
-        sortDate: "2022-05-07-19",
         authors: [
           {
             name: "Arnold Schwarzenegger",
@@ -7823,199 +8369,18 @@ export const data = {
         },
       },
       {
-        workSlug: "mandala-by-philip-fracassi",
+        slug: "the-rise-of-theodore-roosevelt-by-edmund-morris",
         reviewed: true,
-        sequence: 16,
+        sequence: "2022-05-07-18",
         readingYear: 2022,
         readingMonth: "May",
-        readingDay: "Sun",
-        date: "1",
-        yearPublished: 2017,
-        progress: "50%",
-        title: "Mandala",
-        edition: "Kindle",
-        kind: "Novella",
-        sortDate: "2022-05-01-16",
-        authors: [
-          {
-            name: "Philip Fracassi",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/1de200a682b62e4daf7358cd87072d87/8bcae/behold-the-void-by-philip-fracassi.jpg",
-                  srcSet:
-                    "/static/1de200a682b62e4daf7358cd87072d87/8bcae/behold-the-void-by-philip-fracassi.jpg 72w,\n/static/1de200a682b62e4daf7358cd87072d87/7306c/behold-the-void-by-philip-fracassi.jpg 144w",
-                  sizes: "72px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/1de200a682b62e4daf7358cd87072d87/6903a/behold-the-void-by-philip-fracassi.avif 72w,\n/static/1de200a682b62e4daf7358cd87072d87/65187/behold-the-void-by-philip-fracassi.avif 144w",
-                    type: "image/avif",
-                    sizes: "72px",
-                  },
-                ],
-              },
-              width: 72,
-              height: 108,
-            },
-          },
-        },
-      },
-      {
-        workSlug: "behold-the-void-by-philip-fracassi",
-        reviewed: true,
-        sequence: 17,
-        readingYear: 2022,
-        readingMonth: "May",
-        readingDay: "Sun",
-        date: "1",
-        yearPublished: 2017,
-        progress: "87%",
-        title: "Behold the Void",
-        edition: "Kindle",
-        kind: "Collection",
-        sortDate: "2022-05-01-17",
-        authors: [
-          {
-            name: "Philip Fracassi",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/1de200a682b62e4daf7358cd87072d87/8bcae/behold-the-void-by-philip-fracassi.jpg",
-                  srcSet:
-                    "/static/1de200a682b62e4daf7358cd87072d87/8bcae/behold-the-void-by-philip-fracassi.jpg 72w,\n/static/1de200a682b62e4daf7358cd87072d87/7306c/behold-the-void-by-philip-fracassi.jpg 144w",
-                  sizes: "72px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/1de200a682b62e4daf7358cd87072d87/6903a/behold-the-void-by-philip-fracassi.avif 72w,\n/static/1de200a682b62e4daf7358cd87072d87/65187/behold-the-void-by-philip-fracassi.avif 144w",
-                    type: "image/avif",
-                    sizes: "72px",
-                  },
-                ],
-              },
-              width: 72,
-              height: 108,
-            },
-          },
-        },
-      },
-      {
-        workSlug: "fail-safe-by-philip-fracassi",
-        reviewed: true,
-        sequence: 15,
-        readingYear: 2022,
-        readingMonth: "Apr",
         readingDay: "Sat",
-        date: "30",
-        yearPublished: 2017,
-        progress: "Finished",
-        title: "Fail-Safe",
-        edition: "Kindle",
-        kind: "Short Story",
-        sortDate: "2022-04-30-15",
-        authors: [
-          {
-            name: "Philip Fracassi",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/1de200a682b62e4daf7358cd87072d87/8bcae/behold-the-void-by-philip-fracassi.jpg",
-                  srcSet:
-                    "/static/1de200a682b62e4daf7358cd87072d87/8bcae/behold-the-void-by-philip-fracassi.jpg 72w,\n/static/1de200a682b62e4daf7358cd87072d87/7306c/behold-the-void-by-philip-fracassi.jpg 144w",
-                  sizes: "72px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/1de200a682b62e4daf7358cd87072d87/6903a/behold-the-void-by-philip-fracassi.avif 72w,\n/static/1de200a682b62e4daf7358cd87072d87/65187/behold-the-void-by-philip-fracassi.avif 144w",
-                    type: "image/avif",
-                    sizes: "72px",
-                  },
-                ],
-              },
-              width: 72,
-              height: 108,
-            },
-          },
-        },
-      },
-      {
-        workSlug: "behold-the-void-by-philip-fracassi",
-        reviewed: true,
-        sequence: 17,
-        readingYear: 2022,
-        readingMonth: "Apr",
-        readingDay: "Sat",
-        date: "30",
-        yearPublished: 2017,
-        progress: "70%",
-        title: "Behold the Void",
-        edition: "Kindle",
-        kind: "Collection",
-        sortDate: "2022-04-30-17",
-        authors: [
-          {
-            name: "Philip Fracassi",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/1de200a682b62e4daf7358cd87072d87/8bcae/behold-the-void-by-philip-fracassi.jpg",
-                  srcSet:
-                    "/static/1de200a682b62e4daf7358cd87072d87/8bcae/behold-the-void-by-philip-fracassi.jpg 72w,\n/static/1de200a682b62e4daf7358cd87072d87/7306c/behold-the-void-by-philip-fracassi.jpg 144w",
-                  sizes: "72px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/1de200a682b62e4daf7358cd87072d87/6903a/behold-the-void-by-philip-fracassi.avif 72w,\n/static/1de200a682b62e4daf7358cd87072d87/65187/behold-the-void-by-philip-fracassi.avif 144w",
-                    type: "image/avif",
-                    sizes: "72px",
-                  },
-                ],
-              },
-              width: 72,
-              height: 108,
-            },
-          },
-        },
-      },
-      {
-        workSlug: "the-rise-of-theodore-roosevelt-by-edmund-morris",
-        reviewed: true,
-        sequence: 18,
-        readingYear: 2022,
-        readingMonth: "Apr",
-        readingDay: "Sat",
-        date: "30",
+        date: "7",
         yearPublished: 1979,
-        progress: "57%",
+        progress: "Finished",
         title: "The Rise of Theodore Roosevelt",
         edition: "Audible",
         kind: "Nonfiction",
-        sortDate: "2022-04-30-18",
         authors: [
           {
             name: "Edmund Morris",
@@ -8048,19 +8413,18 @@ export const data = {
         },
       },
       {
-        workSlug: "mother-by-philip-fracassi",
+        slug: "behold-the-void-by-philip-fracassi",
         reviewed: true,
-        sequence: 14,
+        sequence: "2022-05-07-17",
         readingYear: 2022,
-        readingMonth: "Apr",
+        readingMonth: "May",
         readingDay: "Sat",
-        date: "23",
-        yearPublished: 2015,
+        date: "7",
+        yearPublished: 2017,
         progress: "Finished",
-        title: "Mother",
+        title: "Behold the Void",
         edition: "Kindle",
-        kind: "Short Story",
-        sortDate: "2022-04-23-14",
+        kind: "Collection",
         authors: [
           {
             name: "Philip Fracassi",
@@ -8093,9 +8457,273 @@ export const data = {
         },
       },
       {
-        workSlug: "behold-the-void-by-philip-fracassi",
+        slug: "mandala-by-philip-fracassi",
         reviewed: true,
-        sequence: 17,
+        sequence: "2022-05-07-16",
+        readingYear: 2022,
+        readingMonth: "May",
+        readingDay: "Sat",
+        date: "7",
+        yearPublished: 2017,
+        progress: "Finished",
+        title: "Mandala",
+        edition: "Kindle",
+        kind: "Novella",
+        authors: [
+          {
+            name: "Philip Fracassi",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/1de200a682b62e4daf7358cd87072d87/8bcae/behold-the-void-by-philip-fracassi.jpg",
+                  srcSet:
+                    "/static/1de200a682b62e4daf7358cd87072d87/8bcae/behold-the-void-by-philip-fracassi.jpg 72w,\n/static/1de200a682b62e4daf7358cd87072d87/7306c/behold-the-void-by-philip-fracassi.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/1de200a682b62e4daf7358cd87072d87/6903a/behold-the-void-by-philip-fracassi.avif 72w,\n/static/1de200a682b62e4daf7358cd87072d87/65187/behold-the-void-by-philip-fracassi.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        slug: "behold-the-void-by-philip-fracassi",
+        reviewed: true,
+        sequence: "2022-05-01-17",
+        readingYear: 2022,
+        readingMonth: "May",
+        readingDay: "Sun",
+        date: "1",
+        yearPublished: 2017,
+        progress: "87%",
+        title: "Behold the Void",
+        edition: "Kindle",
+        kind: "Collection",
+        authors: [
+          {
+            name: "Philip Fracassi",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/1de200a682b62e4daf7358cd87072d87/8bcae/behold-the-void-by-philip-fracassi.jpg",
+                  srcSet:
+                    "/static/1de200a682b62e4daf7358cd87072d87/8bcae/behold-the-void-by-philip-fracassi.jpg 72w,\n/static/1de200a682b62e4daf7358cd87072d87/7306c/behold-the-void-by-philip-fracassi.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/1de200a682b62e4daf7358cd87072d87/6903a/behold-the-void-by-philip-fracassi.avif 72w,\n/static/1de200a682b62e4daf7358cd87072d87/65187/behold-the-void-by-philip-fracassi.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        slug: "mandala-by-philip-fracassi",
+        reviewed: true,
+        sequence: "2022-05-01-16",
+        readingYear: 2022,
+        readingMonth: "May",
+        readingDay: "Sun",
+        date: "1",
+        yearPublished: 2017,
+        progress: "50%",
+        title: "Mandala",
+        edition: "Kindle",
+        kind: "Novella",
+        authors: [
+          {
+            name: "Philip Fracassi",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/1de200a682b62e4daf7358cd87072d87/8bcae/behold-the-void-by-philip-fracassi.jpg",
+                  srcSet:
+                    "/static/1de200a682b62e4daf7358cd87072d87/8bcae/behold-the-void-by-philip-fracassi.jpg 72w,\n/static/1de200a682b62e4daf7358cd87072d87/7306c/behold-the-void-by-philip-fracassi.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/1de200a682b62e4daf7358cd87072d87/6903a/behold-the-void-by-philip-fracassi.avif 72w,\n/static/1de200a682b62e4daf7358cd87072d87/65187/behold-the-void-by-philip-fracassi.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        slug: "the-rise-of-theodore-roosevelt-by-edmund-morris",
+        reviewed: true,
+        sequence: "2022-04-30-18",
+        readingYear: 2022,
+        readingMonth: "Apr",
+        readingDay: "Sat",
+        date: "30",
+        yearPublished: 1979,
+        progress: "57%",
+        title: "The Rise of Theodore Roosevelt",
+        edition: "Audible",
+        kind: "Nonfiction",
+        authors: [
+          {
+            name: "Edmund Morris",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/f825a675ac30c134f06329a317ae50eb/8bcae/the-rise-of-theodore-roosevelt-by-edmund-morris.jpg",
+                  srcSet:
+                    "/static/f825a675ac30c134f06329a317ae50eb/8bcae/the-rise-of-theodore-roosevelt-by-edmund-morris.jpg 72w,\n/static/f825a675ac30c134f06329a317ae50eb/7306c/the-rise-of-theodore-roosevelt-by-edmund-morris.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/f825a675ac30c134f06329a317ae50eb/6903a/the-rise-of-theodore-roosevelt-by-edmund-morris.avif 72w,\n/static/f825a675ac30c134f06329a317ae50eb/65187/the-rise-of-theodore-roosevelt-by-edmund-morris.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        slug: "behold-the-void-by-philip-fracassi",
+        reviewed: true,
+        sequence: "2022-04-30-17",
+        readingYear: 2022,
+        readingMonth: "Apr",
+        readingDay: "Sat",
+        date: "30",
+        yearPublished: 2017,
+        progress: "70%",
+        title: "Behold the Void",
+        edition: "Kindle",
+        kind: "Collection",
+        authors: [
+          {
+            name: "Philip Fracassi",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/1de200a682b62e4daf7358cd87072d87/8bcae/behold-the-void-by-philip-fracassi.jpg",
+                  srcSet:
+                    "/static/1de200a682b62e4daf7358cd87072d87/8bcae/behold-the-void-by-philip-fracassi.jpg 72w,\n/static/1de200a682b62e4daf7358cd87072d87/7306c/behold-the-void-by-philip-fracassi.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/1de200a682b62e4daf7358cd87072d87/6903a/behold-the-void-by-philip-fracassi.avif 72w,\n/static/1de200a682b62e4daf7358cd87072d87/65187/behold-the-void-by-philip-fracassi.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        slug: "fail-safe-by-philip-fracassi",
+        reviewed: true,
+        sequence: "2022-04-30-15",
+        readingYear: 2022,
+        readingMonth: "Apr",
+        readingDay: "Sat",
+        date: "30",
+        yearPublished: 2017,
+        progress: "Finished",
+        title: "Fail-Safe",
+        edition: "Kindle",
+        kind: "Short Story",
+        authors: [
+          {
+            name: "Philip Fracassi",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/1de200a682b62e4daf7358cd87072d87/8bcae/behold-the-void-by-philip-fracassi.jpg",
+                  srcSet:
+                    "/static/1de200a682b62e4daf7358cd87072d87/8bcae/behold-the-void-by-philip-fracassi.jpg 72w,\n/static/1de200a682b62e4daf7358cd87072d87/7306c/behold-the-void-by-philip-fracassi.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/1de200a682b62e4daf7358cd87072d87/6903a/behold-the-void-by-philip-fracassi.avif 72w,\n/static/1de200a682b62e4daf7358cd87072d87/65187/behold-the-void-by-philip-fracassi.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        slug: "behold-the-void-by-philip-fracassi",
+        reviewed: true,
+        sequence: "2022-04-23-17",
         readingYear: 2022,
         readingMonth: "Apr",
         readingDay: "Sat",
@@ -8105,7 +8733,6 @@ export const data = {
         title: "Behold the Void",
         edition: "Kindle",
         kind: "Collection",
-        sortDate: "2022-04-23-17",
         authors: [
           {
             name: "Philip Fracassi",
@@ -8138,19 +8765,18 @@ export const data = {
         },
       },
       {
-        workSlug: "surfer-girl-by-philip-fracassi",
+        slug: "mother-by-philip-fracassi",
         reviewed: true,
-        sequence: 13,
+        sequence: "2022-04-23-14",
         readingYear: 2022,
         readingMonth: "Apr",
-        readingDay: "Fri",
-        date: "22",
-        yearPublished: 2017,
+        readingDay: "Sat",
+        date: "23",
+        yearPublished: 2015,
         progress: "Finished",
-        title: "Surfer Girl",
+        title: "Mother",
         edition: "Kindle",
         kind: "Short Story",
-        sortDate: "2022-04-22-13",
         authors: [
           {
             name: "Philip Fracassi",
@@ -8183,9 +8809,9 @@ export const data = {
         },
       },
       {
-        workSlug: "behold-the-void-by-philip-fracassi",
+        slug: "behold-the-void-by-philip-fracassi",
         reviewed: true,
-        sequence: 17,
+        sequence: "2022-04-22-17",
         readingYear: 2022,
         readingMonth: "Apr",
         readingDay: "Fri",
@@ -8195,7 +8821,6 @@ export const data = {
         title: "Behold the Void",
         edition: "Kindle",
         kind: "Collection",
-        sortDate: "2022-04-22-17",
         authors: [
           {
             name: "Philip Fracassi",
@@ -8228,19 +8853,18 @@ export const data = {
         },
       },
       {
-        workSlug: "the-baby-farmer-by-philip-fracassi",
+        slug: "surfer-girl-by-philip-fracassi",
         reviewed: true,
-        sequence: 12,
+        sequence: "2022-04-22-13",
         readingYear: 2022,
         readingMonth: "Apr",
-        readingDay: "Thu",
-        date: "21",
+        readingDay: "Fri",
+        date: "22",
         yearPublished: 2017,
         progress: "Finished",
-        title: "The Baby Farmer",
+        title: "Surfer Girl",
         edition: "Kindle",
         kind: "Short Story",
-        sortDate: "2022-04-21-12",
         authors: [
           {
             name: "Philip Fracassi",
@@ -8273,9 +8897,9 @@ export const data = {
         },
       },
       {
-        workSlug: "behold-the-void-by-philip-fracassi",
+        slug: "behold-the-void-by-philip-fracassi",
         reviewed: true,
-        sequence: 17,
+        sequence: "2022-04-21-17",
         readingYear: 2022,
         readingMonth: "Apr",
         readingDay: "Thu",
@@ -8285,7 +8909,6 @@ export const data = {
         title: "Behold the Void",
         edition: "Kindle",
         kind: "Collection",
-        sortDate: "2022-04-21-17",
         authors: [
           {
             name: "Philip Fracassi",
@@ -8318,9 +8941,97 @@ export const data = {
         },
       },
       {
-        workSlug: "coffin-by-philip-fracassi",
+        slug: "the-baby-farmer-by-philip-fracassi",
         reviewed: true,
-        sequence: 11,
+        sequence: "2022-04-21-12",
+        readingYear: 2022,
+        readingMonth: "Apr",
+        readingDay: "Thu",
+        date: "21",
+        yearPublished: 2017,
+        progress: "Finished",
+        title: "The Baby Farmer",
+        edition: "Kindle",
+        kind: "Short Story",
+        authors: [
+          {
+            name: "Philip Fracassi",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/1de200a682b62e4daf7358cd87072d87/8bcae/behold-the-void-by-philip-fracassi.jpg",
+                  srcSet:
+                    "/static/1de200a682b62e4daf7358cd87072d87/8bcae/behold-the-void-by-philip-fracassi.jpg 72w,\n/static/1de200a682b62e4daf7358cd87072d87/7306c/behold-the-void-by-philip-fracassi.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/1de200a682b62e4daf7358cd87072d87/6903a/behold-the-void-by-philip-fracassi.avif 72w,\n/static/1de200a682b62e4daf7358cd87072d87/65187/behold-the-void-by-philip-fracassi.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        slug: "behold-the-void-by-philip-fracassi",
+        reviewed: true,
+        sequence: "2022-04-20-17",
+        readingYear: 2022,
+        readingMonth: "Apr",
+        readingDay: "Wed",
+        date: "20",
+        yearPublished: 2017,
+        progress: "36%",
+        title: "Behold the Void",
+        edition: "Kindle",
+        kind: "Collection",
+        authors: [
+          {
+            name: "Philip Fracassi",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/1de200a682b62e4daf7358cd87072d87/8bcae/behold-the-void-by-philip-fracassi.jpg",
+                  srcSet:
+                    "/static/1de200a682b62e4daf7358cd87072d87/8bcae/behold-the-void-by-philip-fracassi.jpg 72w,\n/static/1de200a682b62e4daf7358cd87072d87/7306c/behold-the-void-by-philip-fracassi.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/1de200a682b62e4daf7358cd87072d87/6903a/behold-the-void-by-philip-fracassi.avif 72w,\n/static/1de200a682b62e4daf7358cd87072d87/65187/behold-the-void-by-philip-fracassi.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        slug: "coffin-by-philip-fracassi",
+        reviewed: true,
+        sequence: "2022-04-20-11",
         readingYear: 2022,
         readingMonth: "Apr",
         readingDay: "Wed",
@@ -8330,7 +9041,6 @@ export const data = {
         title: "Coffin",
         edition: "Kindle",
         kind: "Short Story",
-        sortDate: "2022-04-20-11",
         authors: [
           {
             name: "Philip Fracassi",
@@ -8363,99 +9073,9 @@ export const data = {
         },
       },
       {
-        workSlug: "behold-the-void-by-philip-fracassi",
+        slug: "behold-the-void-by-philip-fracassi",
         reviewed: true,
-        sequence: 17,
-        readingYear: 2022,
-        readingMonth: "Apr",
-        readingDay: "Wed",
-        date: "20",
-        yearPublished: 2017,
-        progress: "36%",
-        title: "Behold the Void",
-        edition: "Kindle",
-        kind: "Collection",
-        sortDate: "2022-04-20-17",
-        authors: [
-          {
-            name: "Philip Fracassi",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/1de200a682b62e4daf7358cd87072d87/8bcae/behold-the-void-by-philip-fracassi.jpg",
-                  srcSet:
-                    "/static/1de200a682b62e4daf7358cd87072d87/8bcae/behold-the-void-by-philip-fracassi.jpg 72w,\n/static/1de200a682b62e4daf7358cd87072d87/7306c/behold-the-void-by-philip-fracassi.jpg 144w",
-                  sizes: "72px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/1de200a682b62e4daf7358cd87072d87/6903a/behold-the-void-by-philip-fracassi.avif 72w,\n/static/1de200a682b62e4daf7358cd87072d87/65187/behold-the-void-by-philip-fracassi.avif 144w",
-                    type: "image/avif",
-                    sizes: "72px",
-                  },
-                ],
-              },
-              width: 72,
-              height: 108,
-            },
-          },
-        },
-      },
-      {
-        workSlug: "the-horse-thief-by-philip-fracassi",
-        reviewed: true,
-        sequence: 10,
-        readingYear: 2022,
-        readingMonth: "Apr",
-        readingDay: "Tue",
-        date: "19",
-        yearPublished: 2017,
-        progress: "Finished",
-        title: "The Horse Thief",
-        edition: "Kindle",
-        kind: "Short Story",
-        sortDate: "2022-04-19-10",
-        authors: [
-          {
-            name: "Philip Fracassi",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/1de200a682b62e4daf7358cd87072d87/8bcae/behold-the-void-by-philip-fracassi.jpg",
-                  srcSet:
-                    "/static/1de200a682b62e4daf7358cd87072d87/8bcae/behold-the-void-by-philip-fracassi.jpg 72w,\n/static/1de200a682b62e4daf7358cd87072d87/7306c/behold-the-void-by-philip-fracassi.jpg 144w",
-                  sizes: "72px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/1de200a682b62e4daf7358cd87072d87/6903a/behold-the-void-by-philip-fracassi.avif 72w,\n/static/1de200a682b62e4daf7358cd87072d87/65187/behold-the-void-by-philip-fracassi.avif 144w",
-                    type: "image/avif",
-                    sizes: "72px",
-                  },
-                ],
-              },
-              width: 72,
-              height: 108,
-            },
-          },
-        },
-      },
-      {
-        workSlug: "behold-the-void-by-philip-fracassi",
-        reviewed: true,
-        sequence: 17,
+        sequence: "2022-04-19-17",
         readingYear: 2022,
         readingMonth: "Apr",
         readingDay: "Tue",
@@ -8465,7 +9085,6 @@ export const data = {
         title: "Behold the Void",
         edition: "Kindle",
         kind: "Collection",
-        sortDate: "2022-04-19-17",
         authors: [
           {
             name: "Philip Fracassi",
@@ -8498,9 +9117,53 @@ export const data = {
         },
       },
       {
-        workSlug: "altar-by-philip-fracassi",
+        slug: "the-horse-thief-by-philip-fracassi",
         reviewed: true,
-        sequence: 9,
+        sequence: "2022-04-19-10",
+        readingYear: 2022,
+        readingMonth: "Apr",
+        readingDay: "Tue",
+        date: "19",
+        yearPublished: 2017,
+        progress: "Finished",
+        title: "The Horse Thief",
+        edition: "Kindle",
+        kind: "Short Story",
+        authors: [
+          {
+            name: "Philip Fracassi",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/1de200a682b62e4daf7358cd87072d87/8bcae/behold-the-void-by-philip-fracassi.jpg",
+                  srcSet:
+                    "/static/1de200a682b62e4daf7358cd87072d87/8bcae/behold-the-void-by-philip-fracassi.jpg 72w,\n/static/1de200a682b62e4daf7358cd87072d87/7306c/behold-the-void-by-philip-fracassi.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/1de200a682b62e4daf7358cd87072d87/6903a/behold-the-void-by-philip-fracassi.avif 72w,\n/static/1de200a682b62e4daf7358cd87072d87/65187/behold-the-void-by-philip-fracassi.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        slug: "altar-by-philip-fracassi",
+        reviewed: true,
+        sequence: "2022-04-18-9",
         readingYear: 2022,
         readingMonth: "Apr",
         readingDay: "Mon",
@@ -8510,7 +9173,6 @@ export const data = {
         title: "Altar",
         edition: "Kindle",
         kind: "Short Story",
-        sortDate: "2022-04-18-9",
         authors: [
           {
             name: "Philip Fracassi",
@@ -8543,9 +9205,9 @@ export const data = {
         },
       },
       {
-        workSlug: "behold-the-void-by-philip-fracassi",
+        slug: "behold-the-void-by-philip-fracassi",
         reviewed: true,
-        sequence: 17,
+        sequence: "2022-04-18-17",
         readingYear: 2022,
         readingMonth: "Apr",
         readingDay: "Mon",
@@ -8555,7 +9217,6 @@ export const data = {
         title: "Behold the Void",
         edition: "Kindle",
         kind: "Collection",
-        sortDate: "2022-04-18-17",
         authors: [
           {
             name: "Philip Fracassi",
@@ -8588,54 +9249,9 @@ export const data = {
         },
       },
       {
-        workSlug: "the-dark-tunnel-by-ross-macdonald",
+        slug: "soft-construction-of-a-sunset-by-philip-fracassi",
         reviewed: true,
-        sequence: 7,
-        readingYear: 2022,
-        readingMonth: "Apr",
-        readingDay: "Sun",
-        date: "17",
-        yearPublished: 1944,
-        progress: "Finished",
-        title: "The Dark Tunnel",
-        edition: "Kindle",
-        kind: "Novel",
-        sortDate: "2022-04-17-7",
-        authors: [
-          {
-            name: "Ross Macdonald",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/78b2996d1249af4d0d1b0eac16cbcce4/8bcae/the-dark-tunnel-by-ross-macdonald.jpg",
-                  srcSet:
-                    "/static/78b2996d1249af4d0d1b0eac16cbcce4/8bcae/the-dark-tunnel-by-ross-macdonald.jpg 72w,\n/static/78b2996d1249af4d0d1b0eac16cbcce4/7306c/the-dark-tunnel-by-ross-macdonald.jpg 144w",
-                  sizes: "72px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/78b2996d1249af4d0d1b0eac16cbcce4/6903a/the-dark-tunnel-by-ross-macdonald.avif 72w,\n/static/78b2996d1249af4d0d1b0eac16cbcce4/65187/the-dark-tunnel-by-ross-macdonald.avif 144w",
-                    type: "image/avif",
-                    sizes: "72px",
-                  },
-                ],
-              },
-              width: 72,
-              height: 108,
-            },
-          },
-        },
-      },
-      {
-        workSlug: "soft-construction-of-a-sunset-by-philip-fracassi",
-        reviewed: true,
-        sequence: 8,
+        sequence: "2022-04-17-8",
         readingYear: 2022,
         readingMonth: "Apr",
         readingDay: "Sun",
@@ -8645,7 +9261,6 @@ export const data = {
         title: "Soft Construction of a Sunset",
         edition: "Kindle",
         kind: "Short Story",
-        sortDate: "2022-04-17-8",
         authors: [
           {
             name: "Philip Fracassi",
@@ -8678,9 +9293,53 @@ export const data = {
         },
       },
       {
-        workSlug: "behold-the-void-by-philip-fracassi",
+        slug: "the-dark-tunnel-by-ross-macdonald",
         reviewed: true,
-        sequence: 17,
+        sequence: "2022-04-17-7",
+        readingYear: 2022,
+        readingMonth: "Apr",
+        readingDay: "Sun",
+        date: "17",
+        yearPublished: 1944,
+        progress: "Finished",
+        title: "The Dark Tunnel",
+        edition: "Kindle",
+        kind: "Novel",
+        authors: [
+          {
+            name: "Ross Macdonald",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/78b2996d1249af4d0d1b0eac16cbcce4/8bcae/the-dark-tunnel-by-ross-macdonald.jpg",
+                  srcSet:
+                    "/static/78b2996d1249af4d0d1b0eac16cbcce4/8bcae/the-dark-tunnel-by-ross-macdonald.jpg 72w,\n/static/78b2996d1249af4d0d1b0eac16cbcce4/7306c/the-dark-tunnel-by-ross-macdonald.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/78b2996d1249af4d0d1b0eac16cbcce4/6903a/the-dark-tunnel-by-ross-macdonald.avif 72w,\n/static/78b2996d1249af4d0d1b0eac16cbcce4/65187/the-dark-tunnel-by-ross-macdonald.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        slug: "behold-the-void-by-philip-fracassi",
+        reviewed: true,
+        sequence: "2022-04-17-17",
         readingYear: 2022,
         readingMonth: "Apr",
         readingDay: "Sun",
@@ -8690,7 +9349,6 @@ export const data = {
         title: "Behold the Void",
         edition: "Kindle",
         kind: "Collection",
-        sortDate: "2022-04-17-17",
         authors: [
           {
             name: "Philip Fracassi",
@@ -8723,9 +9381,9 @@ export const data = {
         },
       },
       {
-        workSlug: "the-dark-tunnel-by-ross-macdonald",
+        slug: "the-dark-tunnel-by-ross-macdonald",
         reviewed: true,
-        sequence: 7,
+        sequence: "2022-04-16-7",
         readingYear: 2022,
         readingMonth: "Apr",
         readingDay: "Sat",
@@ -8735,7 +9393,6 @@ export const data = {
         title: "The Dark Tunnel",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-04-16-7",
         authors: [
           {
             name: "Ross Macdonald",
@@ -8768,9 +9425,9 @@ export const data = {
         },
       },
       {
-        workSlug: "the-dark-tunnel-by-ross-macdonald",
+        slug: "the-dark-tunnel-by-ross-macdonald",
         reviewed: true,
-        sequence: 7,
+        sequence: "2022-04-15-7",
         readingYear: 2022,
         readingMonth: "Apr",
         readingDay: "Fri",
@@ -8780,7 +9437,6 @@ export const data = {
         title: "The Dark Tunnel",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-04-15-7",
         authors: [
           {
             name: "Ross Macdonald",
@@ -8813,9 +9469,9 @@ export const data = {
         },
       },
       {
-        workSlug: "the-dark-tunnel-by-ross-macdonald",
+        slug: "the-dark-tunnel-by-ross-macdonald",
         reviewed: true,
-        sequence: 7,
+        sequence: "2022-04-14-7",
         readingYear: 2022,
         readingMonth: "Apr",
         readingDay: "Thu",
@@ -8825,7 +9481,6 @@ export const data = {
         title: "The Dark Tunnel",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-04-14-7",
         authors: [
           {
             name: "Ross Macdonald",
@@ -8858,9 +9513,9 @@ export const data = {
         },
       },
       {
-        workSlug: "the-dark-tunnel-by-ross-macdonald",
+        slug: "the-dark-tunnel-by-ross-macdonald",
         reviewed: true,
-        sequence: 7,
+        sequence: "2022-04-13-7",
         readingYear: 2022,
         readingMonth: "Apr",
         readingDay: "Wed",
@@ -8870,7 +9525,6 @@ export const data = {
         title: "The Dark Tunnel",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-04-13-7",
         authors: [
           {
             name: "Ross Macdonald",
@@ -8903,9 +9557,9 @@ export const data = {
         },
       },
       {
-        workSlug: "the-dark-tunnel-by-ross-macdonald",
+        slug: "the-dark-tunnel-by-ross-macdonald",
         reviewed: true,
-        sequence: 7,
+        sequence: "2022-04-12-7",
         readingYear: 2022,
         readingMonth: "Apr",
         readingDay: "Tue",
@@ -8915,7 +9569,6 @@ export const data = {
         title: "The Dark Tunnel",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-04-12-7",
         authors: [
           {
             name: "Ross Macdonald",
@@ -8948,9 +9601,9 @@ export const data = {
         },
       },
       {
-        workSlug: "the-dark-tunnel-by-ross-macdonald",
+        slug: "the-dark-tunnel-by-ross-macdonald",
         reviewed: true,
-        sequence: 7,
+        sequence: "2022-04-11-7",
         readingYear: 2022,
         readingMonth: "Apr",
         readingDay: "Mon",
@@ -8960,7 +9613,6 @@ export const data = {
         title: "The Dark Tunnel",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-04-11-7",
         authors: [
           {
             name: "Ross Macdonald",
@@ -8993,9 +9645,9 @@ export const data = {
         },
       },
       {
-        workSlug: "the-dark-tunnel-by-ross-macdonald",
+        slug: "the-dark-tunnel-by-ross-macdonald",
         reviewed: true,
-        sequence: 7,
+        sequence: "2022-04-09-7",
         readingYear: 2022,
         readingMonth: "Apr",
         readingDay: "Sat",
@@ -9005,7 +9657,6 @@ export const data = {
         title: "The Dark Tunnel",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-04-09-7",
         authors: [
           {
             name: "Ross Macdonald",
@@ -9038,9 +9689,9 @@ export const data = {
         },
       },
       {
-        workSlug: "the-dark-tunnel-by-ross-macdonald",
+        slug: "the-dark-tunnel-by-ross-macdonald",
         reviewed: true,
-        sequence: 7,
+        sequence: "2022-04-07-7",
         readingYear: 2022,
         readingMonth: "Apr",
         readingDay: "Thu",
@@ -9050,7 +9701,6 @@ export const data = {
         title: "The Dark Tunnel",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-04-07-7",
         authors: [
           {
             name: "Ross Macdonald",
@@ -9083,9 +9733,53 @@ export const data = {
         },
       },
       {
-        workSlug: "desert-pickup-by-richard-laymon",
+        slug: "the-dark-tunnel-by-ross-macdonald",
         reviewed: true,
-        sequence: 6,
+        sequence: "2022-04-03-7",
+        readingYear: 2022,
+        readingMonth: "Apr",
+        readingDay: "Sun",
+        date: "3",
+        yearPublished: 1944,
+        progress: "9%",
+        title: "The Dark Tunnel",
+        edition: "Kindle",
+        kind: "Novel",
+        authors: [
+          {
+            name: "Ross Macdonald",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/78b2996d1249af4d0d1b0eac16cbcce4/8bcae/the-dark-tunnel-by-ross-macdonald.jpg",
+                  srcSet:
+                    "/static/78b2996d1249af4d0d1b0eac16cbcce4/8bcae/the-dark-tunnel-by-ross-macdonald.jpg 72w,\n/static/78b2996d1249af4d0d1b0eac16cbcce4/7306c/the-dark-tunnel-by-ross-macdonald.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/78b2996d1249af4d0d1b0eac16cbcce4/6903a/the-dark-tunnel-by-ross-macdonald.avif 72w,\n/static/78b2996d1249af4d0d1b0eac16cbcce4/65187/the-dark-tunnel-by-ross-macdonald.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        slug: "desert-pickup-by-richard-laymon",
+        reviewed: true,
+        sequence: "2022-04-03-6",
         readingYear: 2022,
         readingMonth: "Apr",
         readingDay: "Sun",
@@ -9095,7 +9789,6 @@ export const data = {
         title: "Desert Pickup",
         edition: "Kindle",
         kind: "Short Story",
-        sortDate: "2022-04-03-6",
         authors: [
           {
             name: "Richard Laymon",
@@ -9128,54 +9821,9 @@ export const data = {
         },
       },
       {
-        workSlug: "the-dark-tunnel-by-ross-macdonald",
+        slug: "the-rise-of-theodore-roosevelt-by-edmund-morris",
         reviewed: true,
-        sequence: 7,
-        readingYear: 2022,
-        readingMonth: "Apr",
-        readingDay: "Sun",
-        date: "3",
-        yearPublished: 1944,
-        progress: "9%",
-        title: "The Dark Tunnel",
-        edition: "Kindle",
-        kind: "Novel",
-        sortDate: "2022-04-03-7",
-        authors: [
-          {
-            name: "Ross Macdonald",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/78b2996d1249af4d0d1b0eac16cbcce4/8bcae/the-dark-tunnel-by-ross-macdonald.jpg",
-                  srcSet:
-                    "/static/78b2996d1249af4d0d1b0eac16cbcce4/8bcae/the-dark-tunnel-by-ross-macdonald.jpg 72w,\n/static/78b2996d1249af4d0d1b0eac16cbcce4/7306c/the-dark-tunnel-by-ross-macdonald.jpg 144w",
-                  sizes: "72px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/78b2996d1249af4d0d1b0eac16cbcce4/6903a/the-dark-tunnel-by-ross-macdonald.avif 72w,\n/static/78b2996d1249af4d0d1b0eac16cbcce4/65187/the-dark-tunnel-by-ross-macdonald.avif 144w",
-                    type: "image/avif",
-                    sizes: "72px",
-                  },
-                ],
-              },
-              width: 72,
-              height: 108,
-            },
-          },
-        },
-      },
-      {
-        workSlug: "the-rise-of-theodore-roosevelt-by-edmund-morris",
-        reviewed: true,
-        sequence: 18,
+        sequence: "2022-04-03-18",
         readingYear: 2022,
         readingMonth: "Apr",
         readingDay: "Sun",
@@ -9185,7 +9833,6 @@ export const data = {
         title: "The Rise of Theodore Roosevelt",
         edition: "Audible",
         kind: "Nonfiction",
-        sortDate: "2022-04-03-18",
         authors: [
           {
             name: "Edmund Morris",
@@ -9218,9 +9865,9 @@ export const data = {
         },
       },
       {
-        workSlug: "less-than-zero-by-bret-easton-ellis",
+        slug: "less-than-zero-by-bret-easton-ellis",
         reviewed: true,
-        sequence: 5,
+        sequence: "2022-04-02-5",
         readingYear: 2022,
         readingMonth: "Apr",
         readingDay: "Sat",
@@ -9230,7 +9877,6 @@ export const data = {
         title: "Less Than Zero",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-04-02-5",
         authors: [
           {
             name: "Bret Easton Ellis",
@@ -9263,9 +9909,9 @@ export const data = {
         },
       },
       {
-        workSlug: "less-than-zero-by-bret-easton-ellis",
+        slug: "less-than-zero-by-bret-easton-ellis",
         reviewed: true,
-        sequence: 5,
+        sequence: "2022-03-28-5",
         readingYear: 2022,
         readingMonth: "Mar",
         readingDay: "Mon",
@@ -9275,7 +9921,6 @@ export const data = {
         title: "Less Than Zero",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-03-28-5",
         authors: [
           {
             name: "Bret Easton Ellis",
@@ -9308,9 +9953,9 @@ export const data = {
         },
       },
       {
-        workSlug: "less-than-zero-by-bret-easton-ellis",
+        slug: "less-than-zero-by-bret-easton-ellis",
         reviewed: true,
-        sequence: 5,
+        sequence: "2022-03-27-5",
         readingYear: 2022,
         readingMonth: "Mar",
         readingDay: "Sun",
@@ -9320,7 +9965,6 @@ export const data = {
         title: "Less Than Zero",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-03-27-5",
         authors: [
           {
             name: "Bret Easton Ellis",
@@ -9353,9 +9997,9 @@ export const data = {
         },
       },
       {
-        workSlug: "the-rise-of-theodore-roosevelt-by-edmund-morris",
+        slug: "the-rise-of-theodore-roosevelt-by-edmund-morris",
         reviewed: true,
-        sequence: 18,
+        sequence: "2022-03-27-18",
         readingYear: 2022,
         readingMonth: "Mar",
         readingDay: "Sun",
@@ -9365,7 +10009,6 @@ export const data = {
         title: "The Rise of Theodore Roosevelt",
         edition: "Audible",
         kind: "Nonfiction",
-        sortDate: "2022-03-27-18",
         authors: [
           {
             name: "Edmund Morris",
@@ -9398,9 +10041,9 @@ export const data = {
         },
       },
       {
-        workSlug: "the-rise-of-theodore-roosevelt-by-edmund-morris",
+        slug: "the-rise-of-theodore-roosevelt-by-edmund-morris",
         reviewed: true,
-        sequence: 18,
+        sequence: "2022-03-26-18",
         readingYear: 2022,
         readingMonth: "Mar",
         readingDay: "Sat",
@@ -9410,7 +10053,6 @@ export const data = {
         title: "The Rise of Theodore Roosevelt",
         edition: "Audible",
         kind: "Nonfiction",
-        sortDate: "2022-03-26-18",
         authors: [
           {
             name: "Edmund Morris",
@@ -9443,9 +10085,9 @@ export const data = {
         },
       },
       {
-        workSlug: "less-than-zero-by-bret-easton-ellis",
+        slug: "less-than-zero-by-bret-easton-ellis",
         reviewed: true,
-        sequence: 5,
+        sequence: "2022-03-23-5",
         readingYear: 2022,
         readingMonth: "Mar",
         readingDay: "Wed",
@@ -9455,7 +10097,6 @@ export const data = {
         title: "Less Than Zero",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-03-23-5",
         authors: [
           {
             name: "Bret Easton Ellis",
@@ -9488,9 +10129,9 @@ export const data = {
         },
       },
       {
-        workSlug: "less-than-zero-by-bret-easton-ellis",
+        slug: "less-than-zero-by-bret-easton-ellis",
         reviewed: true,
-        sequence: 5,
+        sequence: "2022-03-22-5",
         readingYear: 2022,
         readingMonth: "Mar",
         readingDay: "Tue",
@@ -9500,7 +10141,6 @@ export const data = {
         title: "Less Than Zero",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-03-22-5",
         authors: [
           {
             name: "Bret Easton Ellis",
@@ -9533,9 +10173,9 @@ export const data = {
         },
       },
       {
-        workSlug: "the-rise-of-theodore-roosevelt-by-edmund-morris",
+        slug: "the-rise-of-theodore-roosevelt-by-edmund-morris",
         reviewed: true,
-        sequence: 18,
+        sequence: "2022-03-22-18",
         readingYear: 2022,
         readingMonth: "Mar",
         readingDay: "Tue",
@@ -9545,7 +10185,6 @@ export const data = {
         title: "The Rise of Theodore Roosevelt",
         edition: "Audible",
         kind: "Nonfiction",
-        sortDate: "2022-03-22-18",
         authors: [
           {
             name: "Edmund Morris",
@@ -9578,9 +10217,9 @@ export const data = {
         },
       },
       {
-        workSlug: "on-writing-by-stephen-king",
+        slug: "on-writing-by-stephen-king",
         reviewed: true,
-        sequence: 4,
+        sequence: "2022-03-21-4",
         readingYear: 2022,
         readingMonth: "Mar",
         readingDay: "Mon",
@@ -9590,7 +10229,6 @@ export const data = {
         title: "On Writing",
         edition: "Kindle",
         kind: "Nonfiction",
-        sortDate: "2022-03-21-4",
         authors: [
           {
             name: "Stephen King",
@@ -9623,9 +10261,9 @@ export const data = {
         },
       },
       {
-        workSlug: "on-writing-by-stephen-king",
+        slug: "on-writing-by-stephen-king",
         reviewed: true,
-        sequence: 4,
+        sequence: "2022-03-20-4",
         readingYear: 2022,
         readingMonth: "Mar",
         readingDay: "Sun",
@@ -9635,7 +10273,6 @@ export const data = {
         title: "On Writing",
         edition: "Kindle",
         kind: "Nonfiction",
-        sortDate: "2022-03-20-4",
         authors: [
           {
             name: "Stephen King",
@@ -9668,9 +10305,9 @@ export const data = {
         },
       },
       {
-        workSlug: "the-rise-of-theodore-roosevelt-by-edmund-morris",
+        slug: "the-rise-of-theodore-roosevelt-by-edmund-morris",
         reviewed: true,
-        sequence: 18,
+        sequence: "2022-03-20-18",
         readingYear: 2022,
         readingMonth: "Mar",
         readingDay: "Sun",
@@ -9680,7 +10317,6 @@ export const data = {
         title: "The Rise of Theodore Roosevelt",
         edition: "Audible",
         kind: "Nonfiction",
-        sortDate: "2022-03-20-18",
         authors: [
           {
             name: "Edmund Morris",
@@ -9713,9 +10349,9 @@ export const data = {
         },
       },
       {
-        workSlug: "on-writing-by-stephen-king",
+        slug: "on-writing-by-stephen-king",
         reviewed: true,
-        sequence: 4,
+        sequence: "2022-03-19-4",
         readingYear: 2022,
         readingMonth: "Mar",
         readingDay: "Sat",
@@ -9725,7 +10361,6 @@ export const data = {
         title: "On Writing",
         edition: "Kindle",
         kind: "Nonfiction",
-        sortDate: "2022-03-19-4",
         authors: [
           {
             name: "Stephen King",
@@ -9758,9 +10393,9 @@ export const data = {
         },
       },
       {
-        workSlug: "the-rise-of-theodore-roosevelt-by-edmund-morris",
+        slug: "the-rise-of-theodore-roosevelt-by-edmund-morris",
         reviewed: true,
-        sequence: 18,
+        sequence: "2022-03-19-18",
         readingYear: 2022,
         readingMonth: "Mar",
         readingDay: "Sat",
@@ -9770,7 +10405,6 @@ export const data = {
         title: "The Rise of Theodore Roosevelt",
         edition: "Audible",
         kind: "Nonfiction",
-        sortDate: "2022-03-19-18",
         authors: [
           {
             name: "Edmund Morris",
@@ -9803,9 +10437,9 @@ export const data = {
         },
       },
       {
-        workSlug: "the-max-muscle-plan-by-brad-schoenfeld",
+        slug: "the-max-muscle-plan-by-brad-schoenfeld",
         reviewed: true,
-        sequence: 3,
+        sequence: "2022-03-18-3",
         readingYear: 2022,
         readingMonth: "Mar",
         readingDay: "Fri",
@@ -9815,7 +10449,6 @@ export const data = {
         title: "The M.A.X. Muscle Plan",
         edition: "Kindle",
         kind: "Nonfiction",
-        sortDate: "2022-03-18-3",
         authors: [
           {
             name: "Brad Schoenfeld",
@@ -9848,9 +10481,9 @@ export const data = {
         },
       },
       {
-        workSlug: "the-max-muscle-plan-by-brad-schoenfeld",
+        slug: "the-max-muscle-plan-by-brad-schoenfeld",
         reviewed: true,
-        sequence: 3,
+        sequence: "2022-03-17-3",
         readingYear: 2022,
         readingMonth: "Mar",
         readingDay: "Thu",
@@ -9860,7 +10493,6 @@ export const data = {
         title: "The M.A.X. Muscle Plan",
         edition: "Kindle",
         kind: "Nonfiction",
-        sortDate: "2022-03-17-3",
         authors: [
           {
             name: "Brad Schoenfeld",
@@ -9893,9 +10525,9 @@ export const data = {
         },
       },
       {
-        workSlug: "the-cellar-by-richard-laymon",
+        slug: "the-cellar-by-richard-laymon",
         reviewed: true,
-        sequence: 2,
+        sequence: "2022-03-16-2",
         readingYear: 2022,
         readingMonth: "Mar",
         readingDay: "Wed",
@@ -9905,7 +10537,6 @@ export const data = {
         title: "The Cellar",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-03-16-2",
         authors: [
           {
             name: "Richard Laymon",
@@ -9938,9 +10569,9 @@ export const data = {
         },
       },
       {
-        workSlug: "the-cellar-by-richard-laymon",
+        slug: "the-cellar-by-richard-laymon",
         reviewed: true,
-        sequence: 2,
+        sequence: "2022-03-15-2",
         readingYear: 2022,
         readingMonth: "Mar",
         readingDay: "Tue",
@@ -9950,7 +10581,6 @@ export const data = {
         title: "The Cellar",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-03-15-2",
         authors: [
           {
             name: "Richard Laymon",
@@ -9983,9 +10613,9 @@ export const data = {
         },
       },
       {
-        workSlug: "the-cellar-by-richard-laymon",
+        slug: "the-cellar-by-richard-laymon",
         reviewed: true,
-        sequence: 2,
+        sequence: "2022-03-14-2",
         readingYear: 2022,
         readingMonth: "Mar",
         readingDay: "Mon",
@@ -9995,7 +10625,6 @@ export const data = {
         title: "The Cellar",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-03-14-2",
         authors: [
           {
             name: "Richard Laymon",
@@ -10028,9 +10657,9 @@ export const data = {
         },
       },
       {
-        workSlug: "the-cellar-by-richard-laymon",
+        slug: "the-cellar-by-richard-laymon",
         reviewed: true,
-        sequence: 2,
+        sequence: "2022-03-13-2",
         readingYear: 2022,
         readingMonth: "Mar",
         readingDay: "Sun",
@@ -10040,7 +10669,6 @@ export const data = {
         title: "The Cellar",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-03-13-2",
         authors: [
           {
             name: "Richard Laymon",
@@ -10073,9 +10701,9 @@ export const data = {
         },
       },
       {
-        workSlug: "the-cellar-by-richard-laymon",
+        slug: "the-cellar-by-richard-laymon",
         reviewed: true,
-        sequence: 2,
+        sequence: "2022-03-10-2",
         readingYear: 2022,
         readingMonth: "Mar",
         readingDay: "Thu",
@@ -10085,7 +10713,6 @@ export const data = {
         title: "The Cellar",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-03-10-2",
         authors: [
           {
             name: "Richard Laymon",
@@ -10118,9 +10745,9 @@ export const data = {
         },
       },
       {
-        workSlug: "the-cellar-by-richard-laymon",
+        slug: "the-cellar-by-richard-laymon",
         reviewed: true,
-        sequence: 2,
+        sequence: "2022-03-07-2",
         readingYear: 2022,
         readingMonth: "Mar",
         readingDay: "Mon",
@@ -10130,7 +10757,6 @@ export const data = {
         title: "The Cellar",
         edition: "Kindle",
         kind: "Novel",
-        sortDate: "2022-03-07-2",
         authors: [
           {
             name: "Richard Laymon",
@@ -10163,9 +10789,9 @@ export const data = {
         },
       },
       {
-        workSlug: "brother-iron-sister-steel-by-dave-draper",
+        slug: "brother-iron-sister-steel-by-dave-draper",
         reviewed: true,
-        sequence: 1,
+        sequence: "2022-03-06-1",
         readingYear: 2022,
         readingMonth: "Mar",
         readingDay: "Sun",
@@ -10175,7 +10801,6 @@ export const data = {
         title: "Brother Iron, Sister Steel",
         edition: "Kindle",
         kind: "Nonfiction",
-        sortDate: "2022-03-06-1",
         authors: [
           {
             name: "Dave Draper",
@@ -10208,9 +10833,9 @@ export const data = {
         },
       },
       {
-        workSlug: "brother-iron-sister-steel-by-dave-draper",
+        slug: "brother-iron-sister-steel-by-dave-draper",
         reviewed: true,
-        sequence: 1,
+        sequence: "2022-03-05-1",
         readingYear: 2022,
         readingMonth: "Mar",
         readingDay: "Sat",
@@ -10220,7 +10845,6 @@ export const data = {
         title: "Brother Iron, Sister Steel",
         edition: "Kindle",
         kind: "Nonfiction",
-        sortDate: "2022-03-05-1",
         authors: [
           {
             name: "Dave Draper",
@@ -10284,65 +10908,261 @@ export const data = {
       "2016",
       "2017",
       "2018",
+      "2019",
       "2020",
       "2022",
+      "2023",
     ],
     readingYears: ["2022", "2023"],
     kinds: ["Collection", "Nonfiction", "Novel", "Novella", "Short Story"],
     editions: ["Audible", "Kindle"],
     workCount: [
-      "1",
-      "10",
-      "11",
-      "12",
-      "13",
-      "14",
-      "15",
-      "16",
-      "17",
-      "18",
-      "19",
-      "2",
-      "20",
-      "21",
-      "22",
-      "23",
-      "24",
-      "25",
-      "26",
-      "27",
-      "28",
-      "29",
-      "3",
-      "30",
-      "31",
-      "32",
-      "33",
-      "34",
-      "35",
-      "36",
-      "37",
-      "38",
-      "39",
-      "4",
-      "40",
-      "41",
-      "42",
-      "43",
-      "44",
-      "45",
-      "46",
-      "47",
-      "48",
-      "49",
-      "5",
-      "50",
-      "51",
-      "52",
-      "6",
-      "7",
-      "8",
-      "9",
+      "2022-03-05-1",
+      "2022-03-06-1",
+      "2022-03-07-2",
+      "2022-03-10-2",
+      "2022-03-13-2",
+      "2022-03-14-2",
+      "2022-03-15-2",
+      "2022-03-16-2",
+      "2022-03-17-3",
+      "2022-03-18-3",
+      "2022-03-19-18",
+      "2022-03-19-4",
+      "2022-03-20-18",
+      "2022-03-20-4",
+      "2022-03-21-4",
+      "2022-03-22-18",
+      "2022-03-22-5",
+      "2022-03-23-5",
+      "2022-03-26-18",
+      "2022-03-27-18",
+      "2022-03-27-5",
+      "2022-03-28-5",
+      "2022-04-02-5",
+      "2022-04-03-18",
+      "2022-04-03-6",
+      "2022-04-03-7",
+      "2022-04-07-7",
+      "2022-04-09-7",
+      "2022-04-11-7",
+      "2022-04-12-7",
+      "2022-04-13-7",
+      "2022-04-14-7",
+      "2022-04-15-7",
+      "2022-04-16-7",
+      "2022-04-17-17",
+      "2022-04-17-7",
+      "2022-04-17-8",
+      "2022-04-18-17",
+      "2022-04-18-9",
+      "2022-04-19-10",
+      "2022-04-19-17",
+      "2022-04-20-11",
+      "2022-04-20-17",
+      "2022-04-21-12",
+      "2022-04-21-17",
+      "2022-04-22-13",
+      "2022-04-22-17",
+      "2022-04-23-14",
+      "2022-04-23-17",
+      "2022-04-30-15",
+      "2022-04-30-17",
+      "2022-04-30-18",
+      "2022-05-01-16",
+      "2022-05-01-17",
+      "2022-05-07-16",
+      "2022-05-07-17",
+      "2022-05-07-18",
+      "2022-05-07-19",
+      "2022-05-09-19",
+      "2022-05-15-19",
+      "2022-05-21-19",
+      "2022-05-21-21",
+      "2022-05-22-21",
+      "2022-05-24-20",
+      "2022-05-25-21",
+      "2022-05-27-21",
+      "2022-05-31-20",
+      "2022-06-01-20",
+      "2022-06-04-21",
+      "2022-06-05-21",
+      "2022-06-08-22",
+      "2022-06-10-22",
+      "2022-06-11-22",
+      "2022-06-12-22",
+      "2022-06-14-21",
+      "2022-06-14-22",
+      "2022-06-17-25",
+      "2022-06-23-25",
+      "2022-06-24-23",
+      "2022-06-24-25",
+      "2022-06-25-23",
+      "2022-06-25-25",
+      "2022-06-25-26",
+      "2022-06-26-24",
+      "2022-06-26-25",
+      "2022-06-26-26",
+      "2022-06-27-25",
+      "2022-06-27-26",
+      "2022-06-28-25",
+      "2022-06-30-25",
+      "2022-06-30-26",
+      "2022-07-02-26",
+      "2022-07-02-27",
+      "2022-07-02-28",
+      "2022-07-03-27",
+      "2022-07-04-28",
+      "2022-07-05-27",
+      "2022-07-05-28",
+      "2022-07-06-28",
+      "2022-07-08-27",
+      "2022-07-09-27",
+      "2022-07-10-29",
+      "2022-07-11-28",
+      "2022-07-12-28",
+      "2022-07-12-29",
+      "2022-07-13-28",
+      "2022-07-14-28",
+      "2022-07-14-29",
+      "2022-07-15-29",
+      "2022-07-15-30",
+      "2022-07-16-30",
+      "2022-07-16-31",
+      "2022-07-17-31",
+      "2022-07-18-31",
+      "2022-07-18-32",
+      "2022-07-19-32",
+      "2022-07-22-32",
+      "2022-07-23-32",
+      "2022-07-24-32",
+      "2022-07-24-33",
+      "2022-07-26-33",
+      "2022-07-27-33",
+      "2022-08-06-33",
+      "2022-08-07-33",
+      "2022-08-08-33",
+      "2022-08-09-33",
+      "2022-08-15-33",
+      "2022-08-16-33",
+      "2022-08-22-33",
+      "2022-08-23-33",
+      "2022-08-27-33",
+      "2022-08-28-33",
+      "2022-08-29-34",
+      "2022-09-02-34",
+      "2022-09-03-33",
+      "2022-09-03-34",
+      "2022-09-04-33",
+      "2022-09-04-34",
+      "2022-09-05-34",
+      "2022-09-06-35",
+      "2022-09-07-35",
+      "2022-09-09-35",
+      "2022-09-09-39",
+      "2022-09-10-35",
+      "2022-09-10-36",
+      "2022-09-10-39",
+      "2022-09-11-36",
+      "2022-09-11-37",
+      "2022-09-13-38",
+      "2022-09-16-38",
+      "2022-09-17-38",
+      "2022-09-17-39",
+      "2022-09-18-39",
+      "2022-09-19-39",
+      "2022-09-21-40",
+      "2022-09-22-40",
+      "2022-09-24-41",
+      "2022-09-24-43",
+      "2022-09-25-42",
+      "2022-09-25-43",
+      "2022-10-01-43",
+      "2022-10-02-42",
+      "2022-10-02-43",
+      "2022-10-04-42",
+      "2022-10-04-44",
+      "2022-10-07-43",
+      "2022-10-07-45",
+      "2022-10-08-43",
+      "2022-10-08-44",
+      "2022-10-08-45",
+      "2022-10-09-43",
+      "2022-10-09-44",
+      "2022-10-09-45",
+      "2022-10-10-44",
+      "2022-10-10-45",
+      "2022-10-11-43",
+      "2022-10-13-44",
+      "2022-10-13-45",
+      "2022-10-14-45",
+      "2022-10-15-46",
+      "2022-10-16-46",
+      "2022-10-16-47",
+      "2022-10-17-47",
+      "2022-10-18-47",
+      "2022-10-19-47",
+      "2022-10-20-47",
+      "2022-10-21-47",
+      "2022-10-22-47",
+      "2022-10-22-48",
+      "2022-10-23-48",
+      "2022-10-28-47",
+      "2022-10-28-48",
+      "2022-10-29-47",
+      "2022-10-29-48",
+      "2022-10-30-49",
+      "2022-11-01-49",
+      "2022-11-05-49",
+      "2022-11-06-49",
+      "2022-11-07-49",
+      "2022-11-11-49",
+      "2022-11-12-49",
+      "2022-11-13-49",
+      "2022-11-15-49",
+      "2022-12-27-49",
+      "2022-12-30-49",
+      "2023-01-04-49",
+      "2023-01-05-49",
+      "2023-01-07-49",
+      "2023-01-08-49",
+      "2023-01-11-49",
+      "2023-01-12-49",
+      "2023-01-14-49",
+      "2023-01-15-50",
+      "2023-01-16-50",
+      "2023-01-17-50",
+      "2023-01-18-50",
+      "2023-01-20-50",
+      "2023-01-21-50",
+      "2023-01-21-51",
+      "2023-01-22-52",
+      "2023-01-23-52",
+      "2023-01-24-52",
+      "2023-01-25-52",
+      "2023-01-26-52",
+      "2023-01-27-52",
+      "2023-01-28-52",
+      "2023-01-29-52",
+      "2023-10-07-53",
+      "2023-10-09-53",
+      "2023-10-11-55",
+      "2023-10-15-55",
+      "2023-10-16-55",
+      "2023-10-17-55",
+      "2023-10-22-54",
+      "2023-10-22-55",
+      "2023-10-23-55",
+      "2023-10-29-55",
+      "2023-10-29-56",
+      "2023-10-31-56",
+      "2023-11-04-56",
+      "2023-11-05-56",
+      "2023-11-06-56",
+      "2023-11-06-57",
+      "2023-11-08-57",
+      "2023-11-10-57",
+      "2023-11-11-57",
     ],
   },
 };
