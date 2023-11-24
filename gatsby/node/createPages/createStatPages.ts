@@ -34,7 +34,7 @@ export async function createStatPages({
       path: `/stats/${year}/`,
       component: path.resolve("./src/templates/statsForYear.tsx"),
       context: {
-        year: parseInt(year),
+        year: year,
       },
     });
   });
