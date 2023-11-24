@@ -103,7 +103,7 @@ export function SubListItem({
       backgroundColor="unset"
     >
       <ListItemCover
-        slug={item.reviewed ? item.slug : undefined}
+        slug={item.slug}
         image={item.cover}
         title={item.title}
         flexShrink={0}

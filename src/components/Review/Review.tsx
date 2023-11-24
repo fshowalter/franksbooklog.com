@@ -88,7 +88,7 @@ export function Review({
           width="full"
         >
           <MoreReviews
-            reviewedWorks={reviewData.browseMore}
+            reviewedWorks={reviewData.moreWorks}
             linkText="Reviews"
             linkTarget="/reviews/"
           />

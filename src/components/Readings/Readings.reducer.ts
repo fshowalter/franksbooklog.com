@@ -14,8 +14,8 @@ function sortItems(items: Queries.ReadingsListItemFragment[], sortOrder: Sort) {
       b: Queries.ReadingsListItemFragment,
     ) => number
   > = {
-    "progress-date-desc": (a, b) => sortString(a.sortDate, b.sortDate) * -1,
-    "progress-date-asc": (a, b) => sortString(a.sortDate, b.sortDate),
+    "progress-date-desc": (a, b) => sortString(a.sequence, b.sequence) * -1,
+    "progress-date-asc": (a, b) => sortString(a.sequence, b.sequence),
   };
 
   const comparer = sortMap[sortOrder];

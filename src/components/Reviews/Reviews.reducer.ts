@@ -33,9 +33,9 @@ function sortItems(items: Queries.ReviewsListItemFragment[], sortOrder: Sort) {
     "review-date-desc": (a, b) => sortString(a.sortDate, b.sortDate) * -1,
     "review-date-asc": (a, b) => sortString(a.sortDate, b.sortDate),
     "year-published-desc": (a, b) =>
-      sortNumber(a.yearPublished, b.yearPublished) * -1,
+      sortString(a.yearPublished, b.yearPublished) * -1,
     "year-published-asc": (a, b) =>
-      sortNumber(a.yearPublished, b.yearPublished),
+      sortString(a.yearPublished, b.yearPublished),
     "title-asc": (a, b) => collator.compare(a.sortTitle, b.sortTitle),
     "title-desc": (a, b) => collator.compare(a.sortTitle, b.sortTitle) * -1,
     "grade-asc": (a, b) => sortNumber(a.gradeValue, b.gradeValue),
@@ -61,11 +61,11 @@ function groupForItem(
     }
     case "review-date-asc":
     case "review-date-desc": {
-      return `${item.reviewMonth} ${item.reviewYear}`;
+      return `${item.monthReviewed} ${item.yearReviewed}`;
     }
     case "grade-asc":
     case "grade-desc": {
-      return item.grade;
+      return item.grade || "Abandoned";
     }
     case "author-asc":
     case "author-desc": {
@@ -136,7 +136,7 @@ interface FilterYearReviewedAction {
 
 interface FilterYearPublishedAction {
   type: ActionType.FILTER_YEAR_PUBLISHED;
-  values: [number, number];
+  values: [string, string];
 }
 interface SortAction {
   type: ActionType.SORT;
@@ -189,7 +189,7 @@ export function reducer(state: State, action: Action): State {
     }
     case ActionType.FILTER_YEAR_REVIEWED: {
       return updateFilter(state, "reviewYear", (item) => {
-        const reviewYear = item.reviewYear;
+        const reviewYear = item.yearReviewed;
         return reviewYear >= action.values[0] && reviewYear <= action.values[1];
       });
     }

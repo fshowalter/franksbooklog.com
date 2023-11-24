@@ -108,7 +108,7 @@ export function ListItem({
             <Spacer axis="vertical" size={16} />
           </Box>
           <RenderedMarkdown
-            text={item.excerpt}
+            text={item.review.excerpt}
             className={excerptContinueReadingLinkStyle}
           />
         </GridArea>
