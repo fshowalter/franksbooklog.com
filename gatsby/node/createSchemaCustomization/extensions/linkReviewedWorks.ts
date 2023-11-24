@@ -6,7 +6,7 @@ import {
   GatsbyResolveInfo,
 } from "../type-definitions";
 
-import type { ReviewedWorkNode } from "../objects/ReviewedWorksJson";
+import type { ReviewedWorksJsonNode } from "../objects/ReviewedWorksJson";
 import { SchemaNames } from "../schemaNames";
 
 interface MarkdownNode extends GatsbyNode {
@@ -78,7 +78,7 @@ async function findReviewedWorkNode(
     return null;
   }
 
-  const node = await nodeModel.findOne<ReviewedWorkNode>({
+  const node = await nodeModel.findOne<ReviewedWorksJsonNode>({
     type: SchemaNames.ReviewedWorksJson,
     query: {
       filter: {

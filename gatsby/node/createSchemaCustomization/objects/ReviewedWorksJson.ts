@@ -199,7 +199,7 @@ export const ReviewedWorksJson = {
     review: {
       type: `${SchemaNames.MarkdownRemark}!`,
       resolve: async (
-        source: ReviewedWorkNode,
+        source: ReviewedWorksJsonNode,
         _args: unknown,
         context: GatsbyNodeContext,
       ) => {
