@@ -122,12 +122,12 @@ interface FilterEditionAction {
 
 interface FilterPublishedYearAction {
   type: ActionType.FILTER_PUBLISHED_YEAR;
-  values: [number, number];
+  values: [string, string];
 }
 
 interface FilterReadingYearAction {
   type: ActionType.FILTER_READING_YEAR;
-  values: [number, number];
+  values: [string, string];
 }
 
 interface SortAction {

@@ -33,7 +33,7 @@ export default function AuthorTemplate({
 
 export const pageQuery = graphql`
   query AuthorTemplate($id: String!) {
-    author: authorsJson(id: { eq: $id }) {
+    author: reviewedAuthor(id: $id) {
       ...AuthorData
     }
     distinct: allAuthorsJson(

@@ -131,7 +131,7 @@ interface FilterKindAction {
 
 interface FilterYearReviewedAction {
   type: ActionType.FILTER_YEAR_REVIEWED;
-  values: [number, number];
+  values: [string, string];
 }
 
 interface FilterYearPublishedAction {

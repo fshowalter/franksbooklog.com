@@ -3,7 +3,6 @@ import {
   buildGroupItems,
   collator,
   filterTools,
-  sortNumber,
   sortString,
 } from "../../utils";
 
@@ -27,9 +26,9 @@ function sortItems(items: Queries.ShelfListItemFragment[], sortOrder: Sort) {
     ) => number
   > = {
     "year-published-desc": (a, b) =>
-      sortNumber(a.yearPublished, b.yearPublished) * -1,
+      sortString(a.yearPublished, b.yearPublished) * -1,
     "year-published-asc": (a, b) =>
-      sortNumber(a.yearPublished, b.yearPublished),
+      sortString(a.yearPublished, b.yearPublished),
     "title-asc": (a, b) => collator.compare(a.sortTitle, b.sortTitle),
     "title-desc": (a, b) => collator.compare(a.sortTitle, b.sortTitle) * -1,
     "author-asc": (a, b) =>
@@ -49,7 +48,7 @@ function groupForItem(
   switch (sortValue) {
     case "year-published-asc":
     case "year-published-desc": {
-      return item.yearPublished.toString();
+      return item.yearPublished;
     }
     case "author-asc":
     case "author-desc": {
@@ -120,7 +119,7 @@ interface FilterAuthorAction {
 
 interface FilterYearPublishedAction {
   type: ActionType.FILTER_YEAR_PUBLISHED;
-  values: [number, number];
+  values: [string, string];
 }
 interface SortAction {
   type: ActionType.SORT;

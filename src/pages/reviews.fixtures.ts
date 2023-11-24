@@ -20,7 +20,7 @@ export const data = {
         title: "The Postman Always Rings Twice",
         yearPublished: "1934",
         monthReviewed: "July",
-        yearReviewed: 2022,
+        yearReviewed: "2022",
         sortTitle: "Postman Always Rings Twice",
         kind: "Novel",
         authors: [
@@ -66,7 +66,7 @@ export const data = {
         title: "What Doesn't Kill Us",
         yearPublished: "2017",
         monthReviewed: "October",
-        yearReviewed: 2022,
+        yearReviewed: "2022",
         sortTitle:
           "What Doesn't Kill Us: How Freezing Water, Extreme Altitude, and Environmental Conditioning Will Renew Our Lost Evolutionary Strength",
         kind: "Nonfiction",
@@ -113,7 +113,7 @@ export const data = {
         title: "The Big Sleep",
         yearPublished: "1939",
         monthReviewed: "September",
-        yearReviewed: 2022,
+        yearReviewed: "2022",
         sortTitle: "Big Sleep",
         kind: "Novel",
         authors: [
@@ -159,7 +159,7 @@ export const data = {
         title: "Brother Iron, Sister Steel",
         yearPublished: "2001",
         monthReviewed: "March",
-        yearReviewed: 2022,
+        yearReviewed: "2022",
         sortTitle: "Brother Iron, Sister Steel",
         kind: "Nonfiction",
         authors: [
@@ -205,7 +205,7 @@ export const data = {
         title: "Less Than Zero",
         yearPublished: "1985",
         monthReviewed: "April",
-        yearReviewed: 2022,
+        yearReviewed: "2022",
         sortTitle: "Less Than Zero",
         kind: "Novel",
         authors: [
@@ -251,7 +251,7 @@ export const data = {
         title: "The Rules of Attraction",
         yearPublished: "1987",
         monthReviewed: "July",
-        yearReviewed: 2022,
+        yearReviewed: "2022",
         sortTitle: "Rules of Attraction",
         kind: "Novel",
         authors: [
@@ -297,7 +297,7 @@ export const data = {
         title: "Casino Royale",
         yearPublished: "1953",
         monthReviewed: "June",
-        yearReviewed: 2022,
+        yearReviewed: "2022",
         sortTitle: "Casino Royale",
         kind: "Novel",
         authors: [
@@ -343,7 +343,7 @@ export const data = {
         title: "Live and Let Die",
         yearPublished: "1954",
         monthReviewed: "June",
-        yearReviewed: 2022,
+        yearReviewed: "2022",
         sortTitle: "Live and Let Die",
         kind: "Novel",
         authors: [
@@ -389,7 +389,7 @@ export const data = {
         title: "Moonraker",
         yearPublished: "1955",
         monthReviewed: "October",
-        yearReviewed: 2022,
+        yearReviewed: "2022",
         sortTitle: "Moonraker",
         kind: "Novel",
         authors: [
@@ -435,7 +435,7 @@ export const data = {
         title: "Altar",
         yearPublished: "2016",
         monthReviewed: "April",
-        yearReviewed: 2022,
+        yearReviewed: "2022",
         sortTitle: "Altar",
         kind: "Short Story",
         authors: [
@@ -481,7 +481,7 @@ export const data = {
         title: "Coffin",
         yearPublished: "2017",
         monthReviewed: "April",
-        yearReviewed: 2022,
+        yearReviewed: "2022",
         sortTitle: "Coffin",
         kind: "Short Story",
         authors: [
@@ -527,7 +527,7 @@ export const data = {
         title: "Don't Let Them Get You Down",
         yearPublished: "2022",
         monthReviewed: "October",
-        yearReviewed: 2023,
+        yearReviewed: "2023",
         sortTitle: "Don't Let Them Get You Down",
         kind: "Novel",
         authors: [
@@ -573,9 +573,55 @@ export const data = {
         title: "Fail-Safe",
         yearPublished: "2017",
         monthReviewed: "April",
-        yearReviewed: 2022,
+        yearReviewed: "2022",
         sortTitle: "Fail-Safe",
         kind: "Short Story",
+        authors: [
+          {
+            name: "Philip Fracassi",
+            notes: null,
+            sortName: "Fracassi, Philip",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/1de200a682b62e4daf7358cd87072d87/8bcae/behold-the-void-by-philip-fracassi.jpg",
+                  srcSet:
+                    "/static/1de200a682b62e4daf7358cd87072d87/8bcae/behold-the-void-by-philip-fracassi.jpg 72w,\n/static/1de200a682b62e4daf7358cd87072d87/7306c/behold-the-void-by-philip-fracassi.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/1de200a682b62e4daf7358cd87072d87/6903a/behold-the-void-by-philip-fracassi.avif 72w,\n/static/1de200a682b62e4daf7358cd87072d87/65187/behold-the-void-by-philip-fracassi.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        id: "8e3c05bb-0e4f-5236-b77b-9e9e67da279e",
+        grade: "B+",
+        slug: "behold-the-void-by-philip-fracassi",
+        date: "May 7, 2022",
+        gradeValue: 10,
+        sortDate: "2022-05-07",
+        title: "Behold the Void",
+        yearPublished: "2017",
+        monthReviewed: "May",
+        yearReviewed: "2022",
+        sortTitle: "Behold the Void",
+        kind: "Collection",
         authors: [
           {
             name: "Philip Fracassi",
@@ -619,7 +665,7 @@ export const data = {
         title: "Mandala",
         yearPublished: "2017",
         monthReviewed: "May",
-        yearReviewed: 2022,
+        yearReviewed: "2022",
         sortTitle: "Mandala",
         kind: "Novella",
         authors: [
@@ -665,7 +711,7 @@ export const data = {
         title: "Mother",
         yearPublished: "2015",
         monthReviewed: "April",
-        yearReviewed: 2022,
+        yearReviewed: "2022",
         sortTitle: "Mother",
         kind: "Short Story",
         authors: [
@@ -711,7 +757,7 @@ export const data = {
         title: "Sacculina",
         yearPublished: "2017",
         monthReviewed: "October",
-        yearReviewed: 2023,
+        yearReviewed: "2023",
         sortTitle: "Sacculina",
         kind: "Novella",
         authors: [
@@ -757,7 +803,7 @@ export const data = {
         title: "Soft Construction of a Sunset",
         yearPublished: "2017",
         monthReviewed: "April",
-        yearReviewed: 2022,
+        yearReviewed: "2022",
         sortTitle: "Soft Construction of a Sunset",
         kind: "Short Story",
         authors: [
@@ -803,7 +849,7 @@ export const data = {
         title: "Surfer Girl",
         yearPublished: "2017",
         monthReviewed: "April",
-        yearReviewed: 2022,
+        yearReviewed: "2022",
         sortTitle: "Surfer Girl",
         kind: "Short Story",
         authors: [
@@ -849,7 +895,7 @@ export const data = {
         title: "The Baby Farmer",
         yearPublished: "2017",
         monthReviewed: "April",
-        yearReviewed: 2022,
+        yearReviewed: "2022",
         sortTitle: "Baby Farmer",
         kind: "Short Story",
         authors: [
@@ -895,55 +941,9 @@ export const data = {
         title: "The Horse Thief",
         yearPublished: "2017",
         monthReviewed: "April",
-        yearReviewed: 2022,
+        yearReviewed: "2022",
         sortTitle: "Horse Thief",
         kind: "Short Story",
-        authors: [
-          {
-            name: "Philip Fracassi",
-            notes: null,
-            sortName: "Fracassi, Philip",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/1de200a682b62e4daf7358cd87072d87/8bcae/behold-the-void-by-philip-fracassi.jpg",
-                  srcSet:
-                    "/static/1de200a682b62e4daf7358cd87072d87/8bcae/behold-the-void-by-philip-fracassi.jpg 72w,\n/static/1de200a682b62e4daf7358cd87072d87/7306c/behold-the-void-by-philip-fracassi.jpg 144w",
-                  sizes: "72px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/1de200a682b62e4daf7358cd87072d87/6903a/behold-the-void-by-philip-fracassi.avif 72w,\n/static/1de200a682b62e4daf7358cd87072d87/65187/behold-the-void-by-philip-fracassi.avif 144w",
-                    type: "image/avif",
-                    sizes: "72px",
-                  },
-                ],
-              },
-              width: 72,
-              height: 108,
-            },
-          },
-        },
-      },
-      {
-        id: "8e3c05bb-0e4f-5236-b77b-9e9e67da279e",
-        grade: "B+",
-        slug: "behold-the-void-by-philip-fracassi",
-        date: "May 7, 2022",
-        gradeValue: 10,
-        sortDate: "2022-05-07",
-        title: "Behold the Void",
-        yearPublished: "2017",
-        monthReviewed: "May",
-        yearReviewed: 2022,
-        sortTitle: "Behold the Void",
-        kind: "Collection",
         authors: [
           {
             name: "Philip Fracassi",
@@ -987,7 +987,7 @@ export const data = {
         title: "Can't Hurt Me",
         yearPublished: "2018",
         monthReviewed: "October",
-        yearReviewed: 2022,
+        yearReviewed: "2022",
         sortTitle: "Can't Hurt Me: Master Your Mind and Defy the Odds",
         kind: "Nonfiction",
         authors: [
@@ -1033,7 +1033,7 @@ export const data = {
         title: "The 48 Laws of Power",
         yearPublished: "1998",
         monthReviewed: "July",
-        yearReviewed: 2022,
+        yearReviewed: "2022",
         sortTitle: "48 Laws of Power",
         kind: "Nonfiction",
         authors: [
@@ -1079,7 +1079,7 @@ export const data = {
         title: "Hawk Mountain",
         yearPublished: "2022",
         monthReviewed: "September",
-        yearReviewed: 2022,
+        yearReviewed: "2022",
         sortTitle: "Hawk Mountain",
         kind: "Novel",
         authors: [
@@ -1125,7 +1125,7 @@ export const data = {
         title: "About Face",
         yearPublished: "1989",
         monthReviewed: "September",
-        yearReviewed: 2022,
+        yearReviewed: "2022",
         sortTitle: "About Face: The Odyssey of an American Warrior",
         kind: "Nonfiction",
         authors: [
@@ -1176,7 +1176,7 @@ export const data = {
         title: "Fright Night Origins",
         yearPublished: "2023",
         monthReviewed: "November",
-        yearReviewed: 2023,
+        yearReviewed: "2023",
         sortTitle: "Fright Night Origins",
         kind: "Novel",
         authors: [
@@ -1227,7 +1227,7 @@ export const data = {
         title: "Living with a SEAL",
         yearPublished: "2015",
         monthReviewed: "June",
-        yearReviewed: 2022,
+        yearReviewed: "2022",
         sortTitle:
           "Living with a SEAL: 31 Days Training with the Toughest Man on the Planet",
         kind: "Nonfiction",
@@ -1274,7 +1274,7 @@ export const data = {
         title: "I Will Find You",
         yearPublished: "2017",
         monthReviewed: "September",
-        yearReviewed: 2022,
+        yearReviewed: "2022",
         sortTitle:
           "I Will Find You: Solving Killer Cases from My Life Fighting Crime",
         kind: "Nonfiction",
@@ -1321,7 +1321,7 @@ export const data = {
         title: "Carrie",
         yearPublished: "1974",
         monthReviewed: "September",
-        yearReviewed: 2022,
+        yearReviewed: "2022",
         sortTitle: "Carrie",
         kind: "Novel",
         authors: [
@@ -1367,7 +1367,7 @@ export const data = {
         title: "Doctor Sleep",
         yearPublished: "2013",
         monthReviewed: "January",
-        yearReviewed: 2023,
+        yearReviewed: "2023",
         sortTitle: "Doctor Sleep",
         kind: "Novel",
         authors: [
@@ -1404,52 +1404,6 @@ export const data = {
         },
       },
       {
-        id: "2f087164-9a8c-525c-9c15-93748526a1b2",
-        grade: "B",
-        slug: "salems-lot-by-stephen-king",
-        date: "Oct 14, 2022",
-        gradeValue: 9,
-        sortDate: "2022-10-14",
-        title: "'Salem's Lot",
-        yearPublished: "1975",
-        monthReviewed: "October",
-        yearReviewed: 2022,
-        sortTitle: "'Salem's Lot",
-        kind: "Novel",
-        authors: [
-          {
-            name: "Stephen King",
-            notes: null,
-            sortName: "King, Stephen",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/069c1d318c1a90f3aa0ae55b5eab6d8d/8bcae/salems-lot-by-stephen-king.jpg",
-                  srcSet:
-                    "/static/069c1d318c1a90f3aa0ae55b5eab6d8d/8bcae/salems-lot-by-stephen-king.jpg 72w,\n/static/069c1d318c1a90f3aa0ae55b5eab6d8d/7306c/salems-lot-by-stephen-king.jpg 144w",
-                  sizes: "72px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/069c1d318c1a90f3aa0ae55b5eab6d8d/6903a/salems-lot-by-stephen-king.avif 72w,\n/static/069c1d318c1a90f3aa0ae55b5eab6d8d/65187/salems-lot-by-stephen-king.avif 144w",
-                    type: "image/avif",
-                    sizes: "72px",
-                  },
-                ],
-              },
-              width: 72,
-              height: 108,
-            },
-          },
-        },
-      },
-      {
         id: "d2abe5d2-2901-5bb9-8239-48df6eac67b3",
         grade: "A-",
         slug: "on-writing-by-stephen-king",
@@ -1459,7 +1413,7 @@ export const data = {
         title: "On Writing",
         yearPublished: "2000",
         monthReviewed: "March",
-        yearReviewed: 2022,
+        yearReviewed: "2022",
         sortTitle: "On Writing",
         kind: "Nonfiction",
         authors: [
@@ -1496,6 +1450,52 @@ export const data = {
         },
       },
       {
+        id: "2f087164-9a8c-525c-9c15-93748526a1b2",
+        grade: "B",
+        slug: "salems-lot-by-stephen-king",
+        date: "Oct 14, 2022",
+        gradeValue: 9,
+        sortDate: "2022-10-14",
+        title: "'Salem's Lot",
+        yearPublished: "1975",
+        monthReviewed: "October",
+        yearReviewed: "2022",
+        sortTitle: "'Salem's Lot",
+        kind: "Novel",
+        authors: [
+          {
+            name: "Stephen King",
+            notes: null,
+            sortName: "King, Stephen",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/069c1d318c1a90f3aa0ae55b5eab6d8d/8bcae/salems-lot-by-stephen-king.jpg",
+                  srcSet:
+                    "/static/069c1d318c1a90f3aa0ae55b5eab6d8d/8bcae/salems-lot-by-stephen-king.jpg 72w,\n/static/069c1d318c1a90f3aa0ae55b5eab6d8d/7306c/salems-lot-by-stephen-king.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/069c1d318c1a90f3aa0ae55b5eab6d8d/6903a/salems-lot-by-stephen-king.avif 72w,\n/static/069c1d318c1a90f3aa0ae55b5eab6d8d/65187/salems-lot-by-stephen-king.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
         id: "aaffdd03-0a21-5a1e-a82f-628d1e00e3ac",
         grade: "B",
         slug: "the-shining-by-stephen-king",
@@ -1505,7 +1505,7 @@ export const data = {
         title: "The Shining",
         yearPublished: "1977",
         monthReviewed: "October",
-        yearReviewed: 2022,
+        yearReviewed: "2022",
         sortTitle: "Shining",
         kind: "Novel",
         authors: [
@@ -1551,7 +1551,7 @@ export const data = {
         title: "The Cipher",
         yearPublished: "1991",
         monthReviewed: "January",
-        yearReviewed: 2023,
+        yearReviewed: "2023",
         sortTitle: "Cipher",
         kind: "Novel",
         authors: [
@@ -1597,8 +1597,54 @@ export const data = {
         title: "Desert Pickup",
         yearPublished: "1970",
         monthReviewed: "April",
-        yearReviewed: 2022,
+        yearReviewed: "2022",
         sortTitle: "Desert Pickup",
+        kind: "Short Story",
+        authors: [
+          {
+            name: "Richard Laymon",
+            notes: null,
+            sortName: "Laymon, Richard",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/8acae41db8fa464249340b17cc680c45/8bcae/short-stories-volume-one-by-richard-laymon.jpg",
+                  srcSet:
+                    "/static/8acae41db8fa464249340b17cc680c45/8bcae/short-stories-volume-one-by-richard-laymon.jpg 72w,\n/static/8acae41db8fa464249340b17cc680c45/7306c/short-stories-volume-one-by-richard-laymon.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/8acae41db8fa464249340b17cc680c45/6903a/short-stories-volume-one-by-richard-laymon.avif 72w,\n/static/8acae41db8fa464249340b17cc680c45/65187/short-stories-volume-one-by-richard-laymon.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
+        id: "d739a3ff-85c5-5a25-aa35-0d2e90673232",
+        grade: "C-",
+        slug: "roadside-pickup-by-richard-laymon",
+        date: "Jan 21, 2023",
+        gradeValue: 5,
+        sortDate: "2023-01-21",
+        title: "Roadside Pickup",
+        yearPublished: "1974",
+        monthReviewed: "January",
+        yearReviewed: "2023",
+        sortTitle: "Roadside Pickup",
         kind: "Short Story",
         authors: [
           {
@@ -1643,7 +1689,7 @@ export const data = {
         title: "Out Are the Lights",
         yearPublished: "1982",
         monthReviewed: "October",
-        yearReviewed: 2022,
+        yearReviewed: "2022",
         sortTitle: "Out Are the Lights",
         kind: "Novel",
         authors: [
@@ -1680,98 +1726,6 @@ export const data = {
         },
       },
       {
-        id: "d739a3ff-85c5-5a25-aa35-0d2e90673232",
-        grade: "C-",
-        slug: "roadside-pickup-by-richard-laymon",
-        date: "Jan 21, 2023",
-        gradeValue: 5,
-        sortDate: "2023-01-21",
-        title: "Roadside Pickup",
-        yearPublished: "1974",
-        monthReviewed: "January",
-        yearReviewed: 2023,
-        sortTitle: "Roadside Pickup",
-        kind: "Short Story",
-        authors: [
-          {
-            name: "Richard Laymon",
-            notes: null,
-            sortName: "Laymon, Richard",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/8acae41db8fa464249340b17cc680c45/8bcae/short-stories-volume-one-by-richard-laymon.jpg",
-                  srcSet:
-                    "/static/8acae41db8fa464249340b17cc680c45/8bcae/short-stories-volume-one-by-richard-laymon.jpg 72w,\n/static/8acae41db8fa464249340b17cc680c45/7306c/short-stories-volume-one-by-richard-laymon.jpg 144w",
-                  sizes: "72px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/8acae41db8fa464249340b17cc680c45/6903a/short-stories-volume-one-by-richard-laymon.avif 72w,\n/static/8acae41db8fa464249340b17cc680c45/65187/short-stories-volume-one-by-richard-laymon.avif 144w",
-                    type: "image/avif",
-                    sizes: "72px",
-                  },
-                ],
-              },
-              width: 72,
-              height: 108,
-            },
-          },
-        },
-      },
-      {
-        id: "94ffec6a-5591-5531-b994-ab7abda8792b",
-        grade: "C+",
-        slug: "the-woods-are-dark-by-richard-laymon",
-        date: "Sep 11, 2022",
-        gradeValue: 7,
-        sortDate: "2022-09-11",
-        title: "The Woods Are Dark",
-        yearPublished: "1981",
-        monthReviewed: "September",
-        yearReviewed: 2022,
-        sortTitle: "Woods Are Dark",
-        kind: "Novel",
-        authors: [
-          {
-            name: "Richard Laymon",
-            notes: null,
-            sortName: "Laymon, Richard",
-          },
-        ],
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: {
-              layout: "fixed" as const,
-              images: {
-                fallback: {
-                  src: "/static/ce4922405ae2989408bd24b23e71679c/8bcae/the-woods-are-dark-by-richard-laymon.jpg",
-                  srcSet:
-                    "/static/ce4922405ae2989408bd24b23e71679c/8bcae/the-woods-are-dark-by-richard-laymon.jpg 72w,\n/static/ce4922405ae2989408bd24b23e71679c/7306c/the-woods-are-dark-by-richard-laymon.jpg 144w",
-                  sizes: "72px",
-                },
-                sources: [
-                  {
-                    srcSet:
-                      "/static/ce4922405ae2989408bd24b23e71679c/6903a/the-woods-are-dark-by-richard-laymon.avif 72w,\n/static/ce4922405ae2989408bd24b23e71679c/65187/the-woods-are-dark-by-richard-laymon.avif 144w",
-                    type: "image/avif",
-                    sizes: "72px",
-                  },
-                ],
-              },
-              width: 72,
-              height: 108,
-            },
-          },
-        },
-      },
-      {
         id: "634f1b50-b4bd-58f4-b5ec-303cb3749fc3",
         grade: "C+",
         slug: "the-cellar-by-richard-laymon",
@@ -1781,7 +1735,7 @@ export const data = {
         title: "The Cellar",
         yearPublished: "1980",
         monthReviewed: "March",
-        yearReviewed: 2022,
+        yearReviewed: "2022",
         sortTitle: "Cellar, The",
         kind: "Novel",
         authors: [
@@ -1818,6 +1772,52 @@ export const data = {
         },
       },
       {
+        id: "94ffec6a-5591-5531-b994-ab7abda8792b",
+        grade: "C+",
+        slug: "the-woods-are-dark-by-richard-laymon",
+        date: "Sep 11, 2022",
+        gradeValue: 7,
+        sortDate: "2022-09-11",
+        title: "The Woods Are Dark",
+        yearPublished: "1981",
+        monthReviewed: "September",
+        yearReviewed: "2022",
+        sortTitle: "Woods Are Dark",
+        kind: "Novel",
+        authors: [
+          {
+            name: "Richard Laymon",
+            notes: null,
+            sortName: "Laymon, Richard",
+          },
+        ],
+        cover: {
+          childImageSharp: {
+            gatsbyImageData: {
+              layout: "fixed" as const,
+              images: {
+                fallback: {
+                  src: "/static/ce4922405ae2989408bd24b23e71679c/8bcae/the-woods-are-dark-by-richard-laymon.jpg",
+                  srcSet:
+                    "/static/ce4922405ae2989408bd24b23e71679c/8bcae/the-woods-are-dark-by-richard-laymon.jpg 72w,\n/static/ce4922405ae2989408bd24b23e71679c/7306c/the-woods-are-dark-by-richard-laymon.jpg 144w",
+                  sizes: "72px",
+                },
+                sources: [
+                  {
+                    srcSet:
+                      "/static/ce4922405ae2989408bd24b23e71679c/6903a/the-woods-are-dark-by-richard-laymon.avif 72w,\n/static/ce4922405ae2989408bd24b23e71679c/65187/the-woods-are-dark-by-richard-laymon.avif 144w",
+                    type: "image/avif",
+                    sizes: "72px",
+                  },
+                ],
+              },
+              width: 72,
+              height: 108,
+            },
+          },
+        },
+      },
+      {
         id: "6d4ed638-c951-51dd-8cc6-a49f37722950",
         grade: "D+",
         slug: "the-dark-tunnel-by-ross-macdonald",
@@ -1827,7 +1827,7 @@ export const data = {
         title: "The Dark Tunnel",
         yearPublished: "1944",
         monthReviewed: "April",
-        yearReviewed: 2022,
+        yearReviewed: "2022",
         sortTitle: "Dark Tunnel",
         kind: "Novel",
         authors: [
@@ -1873,7 +1873,7 @@ export const data = {
         title: "Set the Boy Free",
         yearPublished: "2016",
         monthReviewed: "June",
-        yearReviewed: 2022,
+        yearReviewed: "2022",
         sortTitle: "Set the Boy Free: The Autobiography",
         kind: "Nonfiction",
         authors: [
@@ -1919,7 +1919,7 @@ export const data = {
         title: "Draft No. 4",
         yearPublished: "2013",
         monthReviewed: "September",
-        yearReviewed: 2022,
+        yearReviewed: "2022",
         sortTitle: "Draft No. 4: On the Writing Process",
         kind: "Nonfiction",
         authors: [
@@ -1965,7 +1965,7 @@ export const data = {
         title: "The Rise of Theodore Roosevelt",
         yearPublished: "1979",
         monthReviewed: "May",
-        yearReviewed: 2022,
+        yearReviewed: "2022",
         sortTitle: "Rise of Theodore Roosevelt",
         kind: "Nonfiction",
         authors: [
@@ -2011,7 +2011,7 @@ export const data = {
         title: "Record Play Pause",
         yearPublished: "2019",
         monthReviewed: "November",
-        yearReviewed: 2023,
+        yearReviewed: "2023",
         sortTitle: "Record Play Pause",
         kind: "Nonfiction",
         authors: [
@@ -2057,7 +2057,7 @@ export const data = {
         title: "The Skeptics' Guide to the Universe",
         yearPublished: "2018",
         monthReviewed: "October",
-        yearReviewed: 2022,
+        yearReviewed: "2022",
         sortTitle:
           "Skeptics' Guide to the Universe: How to Know What's Really Real in a World Increasingly Full of Fake",
         kind: "Nonfiction",
@@ -2104,7 +2104,7 @@ export const data = {
         title: "Consider This",
         yearPublished: "2020",
         monthReviewed: "September",
-        yearReviewed: 2022,
+        yearReviewed: "2022",
         sortTitle:
           "Consider This: Moments in My Writing Life After Which Everything Was Different",
         kind: "Nonfiction",
@@ -2151,7 +2151,7 @@ export const data = {
         title: "Fight Club",
         yearPublished: "1996",
         monthReviewed: "July",
-        yearReviewed: 2022,
+        yearReviewed: "2022",
         sortTitle: "Fight Club",
         kind: "Novel",
         authors: [
@@ -2197,7 +2197,7 @@ export const data = {
         title: "Churchill",
         yearPublished: "2018",
         monthReviewed: "June",
-        yearReviewed: 2022,
+        yearReviewed: "2022",
         sortTitle: "Churchill: Walking with Destiny",
         kind: "Nonfiction",
         authors: [
@@ -2243,7 +2243,7 @@ export const data = {
         title: "The Creative Act",
         yearPublished: "2023",
         monthReviewed: "October",
-        yearReviewed: 2023,
+        yearReviewed: "2023",
         sortTitle: "Creative Act: A Way of Being",
         kind: "Nonfiction",
         authors: [
@@ -2289,7 +2289,7 @@ export const data = {
         title: "The M.A.X. Muscle Plan",
         yearPublished: "2012",
         monthReviewed: "March",
-        yearReviewed: 2022,
+        yearReviewed: "2022",
         sortTitle: "The M.A.X. Muscle Plan",
         kind: "Nonfiction",
         authors: [
@@ -2335,7 +2335,7 @@ export const data = {
         title: "Total Recall",
         yearPublished: "2012",
         monthReviewed: "May",
-        yearReviewed: 2022,
+        yearReviewed: "2022",
         sortTitle: "Total Recall: My Unbelievably True Life Story",
         kind: "Nonfiction",
         authors: [
@@ -2381,7 +2381,7 @@ export const data = {
         title: "Is This Anything?",
         yearPublished: "2020",
         monthReviewed: "September",
-        yearReviewed: 2022,
+        yearReviewed: "2022",
         sortTitle: "Is This Anything?",
         kind: "Nonfiction",
         authors: [
@@ -2427,7 +2427,7 @@ export const data = {
         title: "Fright Night",
         yearPublished: "1985",
         monthReviewed: "January",
-        yearReviewed: 2023,
+        yearReviewed: "2023",
         sortTitle: "Fright Night",
         kind: "Novel",
         authors: [
@@ -2478,7 +2478,7 @@ export const data = {
         title: "Dracula",
         yearPublished: "1897",
         monthReviewed: "July",
-        yearReviewed: 2022,
+        yearReviewed: "2022",
         sortTitle: "Dracula",
         kind: "Novel",
         authors: [
@@ -2524,7 +2524,7 @@ export const data = {
         title: "The Secret History",
         yearPublished: "1992",
         monthReviewed: "July",
-        yearReviewed: 2022,
+        yearReviewed: "2022",
         sortTitle: "Secret History",
         kind: "Novel",
         authors: [
@@ -2570,7 +2570,7 @@ export const data = {
         title: "Cured",
         yearPublished: "2016",
         monthReviewed: "July",
-        yearReviewed: 2022,
+        yearReviewed: "2022",
         sortTitle: "Cured: The Tale of Two Imaginary Boys",
         kind: "Nonfiction",
         authors: [
@@ -2616,7 +2616,7 @@ export const data = {
         title: "Extreme Ownership",
         yearPublished: "2015",
         monthReviewed: "June",
-        yearReviewed: 2022,
+        yearReviewed: "2022",
         sortTitle: "Extreme Ownership: How U.S. Navy SEALs Lead and Win",
         kind: "Nonfiction",
         authors: [

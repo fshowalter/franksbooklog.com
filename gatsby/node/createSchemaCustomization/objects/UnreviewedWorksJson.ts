@@ -20,7 +20,7 @@ export const UnreviewedWorksJson = {
     sortTitle: "String!",
     slug: "String!",
     includedInSlugs: "[String!]!",
-    yearPublished: "Int!",
+    yearPublished: "String!",
     kind: "String!",
     authors: {
       type: `[${SchemaNames.UnreviewedWorksJsonWorkAuthor}!]!`,

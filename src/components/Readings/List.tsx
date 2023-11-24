@@ -188,7 +188,7 @@ function YearAndKind({
   year,
 }: {
   kind: string;
-  year: number;
+  year: string;
 }): JSX.Element {
   return (
     <Box color="subtle" fontSize="small" letterSpacing={0.5} lineHeight={16}>
