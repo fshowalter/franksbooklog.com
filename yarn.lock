@@ -9214,7 +9214,7 @@ __metadata:
     jest: "npm:29.7.0"
     jest-environment-jsdom: "npm:29.7.0"
     lint-staged: "npm:15.2.0"
-    littlefoot: "npm:4.0.1"
+    littlefoot: "npm:4.1.0"
     mdast-util-to-hast: "npm:^10.2.0"
     prettier: "npm:3.1.1"
     react: "npm:18.2.0"
@@ -12514,14 +12514,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"littlefoot@npm:4.0.1":
-  version: 4.0.1
-  resolution: "littlefoot@npm:4.0.1"
+"littlefoot@npm:4.1.0":
+  version: 4.1.0
+  resolution: "littlefoot@npm:4.1.0"
   dependencies:
     "@pacote/get-style": "npm:2.0.2"
     "@pacote/pixels": "npm:2.0.2"
     "@pacote/throttle": "npm:2.0.2"
-  checksum: f61a15640473045a409a856ce69e448759e6dd932c804b3ce7982f361775f9343c2dbbeaa1623b63f5aca73ad68080960087208348153a4203b396777d349cfc
+  checksum: c9bfe68b446e071014ad1810bfb1335896ecf6f3598447b774a9af31c7e167b06e347710fdceb48a36ef7f4ec5ce27f1feaaead64439745f5a972929d35f38b5
   languageName: node
   linkType: hard
 
