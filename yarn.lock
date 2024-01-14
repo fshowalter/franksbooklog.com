@@ -1544,7 +1544,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/preset-typescript@npm:^7.18.6, @babel/preset-typescript@npm:^7.23.3":
+"@babel/preset-typescript@npm:7.23.3, @babel/preset-typescript@npm:^7.18.6":
   version: 7.23.3
   resolution: "@babel/preset-typescript@npm:7.23.3"
   dependencies:
@@ -8273,7 +8273,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-testing-library@npm:^6.2.0":
+"eslint-plugin-testing-library@npm:6.2.0":
   version: 6.2.0
   resolution: "eslint-plugin-testing-library@npm:6.2.0"
   dependencies:
@@ -9088,7 +9088,7 @@ __metadata:
   resolution: "franksbooklog.com@workspace:."
   dependencies:
     "@babel/core": "npm:7.23.3"
-    "@babel/preset-typescript": "npm:^7.23.3"
+    "@babel/preset-typescript": "npm:7.23.3"
     "@silvenon/remark-smartypants": "npm:2.0.0"
     "@testing-library/dom": "npm:9.3.3"
     "@testing-library/jest-dom": "npm:6.1.6"
@@ -9120,7 +9120,7 @@ __metadata:
     eslint-plugin-prettier: "npm:5.1.3"
     eslint-plugin-react: "npm:7.33.2"
     eslint-plugin-react-hooks: "npm:4.6.0"
-    eslint-plugin-testing-library: "npm:^6.2.0"
+    eslint-plugin-testing-library: "npm:6.2.0"
     gatsby: "npm:5.13.1"
     gatsby-cli: "npm:5.13.1"
     gatsby-plugin-catch-links: "npm:5.13.0"
