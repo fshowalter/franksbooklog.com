@@ -4,6 +4,7 @@ import {
   collator,
   filterTools,
   sortNumber,
+  sortString,
 } from "../../utils";
 
 export type Sort =
@@ -29,9 +30,9 @@ function sortItems(items: Queries.AuthorListItemFragment[], sortOrder: Sort) {
     ) => number
   > = {
     "year-published-desc": (a, b) =>
-      sortNumber(a.yearPublished, b.yearPublished) * -1,
+      sortString(a.yearPublished, b.yearPublished) * -1,
     "year-published-asc": (a, b) =>
-      sortNumber(a.yearPublished, b.yearPublished),
+      sortString(a.yearPublished, b.yearPublished),
     "title-asc": (a, b) => collator.compare(a.sortTitle, b.sortTitle),
     "title-desc": (a, b) => collator.compare(a.sortTitle, b.sortTitle) * -1,
     "grade-asc": (a, b) => sortNumber(a.gradeValue ?? -1, b.gradeValue ?? -1),
@@ -124,7 +125,7 @@ interface ToggleReviewedAction {
 
 interface FilterYearPublishedAction {
   type: ActionType.FILTER_YEAR_PUBLISHED;
-  values: [number, number];
+  values: [string, string];
 }
 interface SortAction {
   type: ActionType.SORT;
@@ -213,7 +214,7 @@ export function reducer(state: State, action: Action): State {
         filters = {
           ...state.filters,
           reviewed: (item: Queries.AuthorListItemFragment) => {
-            return item.review === null;
+            return item.reviewed;
           },
         };
       }

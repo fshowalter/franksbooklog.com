@@ -53,7 +53,7 @@ export function Shelf({
 }
 
 export const pageQuery = graphql`
-  fragment ShelfData on WorksJson {
+  fragment ShelfData on UnreviewedWorksJson {
     ...ShelfListItem
   }
 `;

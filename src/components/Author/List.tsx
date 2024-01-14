@@ -47,7 +47,7 @@ function WorkListItem({
   return (
     <ListItem alignItems="center">
       <ListItemCover
-        slug={item.review ? item.slug : null}
+        slug={item.reviewed ? item.slug : null}
         image={item.cover}
         title={item.title}
         flexShrink={0}
@@ -60,7 +60,7 @@ function WorkListItem({
         <Box>
           <ListItemTitle
             title={item.title}
-            slug={item.review ? item.slug : null}
+            slug={item.reviewed ? item.slug : null}
           />
           <Authors authors={item.authors} pageAuthorSlug={pageAuthorSlug} />
           <Spacer axis="vertical" size={8} />
@@ -104,7 +104,7 @@ function YearAndKind({
   year,
 }: {
   kind: string;
-  year: number;
+  year: string;
 }): JSX.Element | null {
   return (
     <Box color="subtle" fontSize="small" letterSpacing={0.5} lineHeight={16}>
@@ -122,13 +122,12 @@ export const pageQuery = graphql`
     }
   }
 
-  fragment AuthorListItemAuthors on WorkAuthor {
+  fragment AuthorListItemAuthors on AuthorsJsonWorkAuthor {
     slug
     name
   }
 
-  fragment AuthorListItem on WorksJson {
-    id
+  fragment AuthorListItem on AuthorsJsonWork {
     title
     yearPublished
     kind
@@ -139,9 +138,7 @@ export const pageQuery = graphql`
     authors {
       ...AuthorListItemAuthors
     }
-    review {
-      id
-    }
+    reviewed
     cover {
       ...ListItemCover
     }

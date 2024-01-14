@@ -47,7 +47,7 @@ export const pageQuery = graphql`
         ...ReviewsListItem
       }
       publishedYears: distinct(field: { yearPublished: SELECT })
-      reviewYears: distinct(field: { reviewYear: SELECT })
+      reviewYears: distinct(field: { yearReviewed: SELECT })
       kinds: distinct(field: { kind: SELECT })
     }
   }

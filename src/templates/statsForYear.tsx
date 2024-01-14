@@ -32,7 +32,7 @@ export default function StatsForYearTemplate({
 }): JSX.Element {
   const tagline =
     pageContext.year.toString() ===
-    data.allReading.years[data.allReading.years.length - 1]
+    data.reading.years[data.reading.years.length - 1]
       ? "A Year in Progress.."
       : "A Year in Review";
 
@@ -40,94 +40,20 @@ export default function StatsForYearTemplate({
     <Stats
       title={`${pageContext.year} Stats`}
       tagline={tagline}
-      mostReadAuthors={data.mostReadAuthors}
-      allYears={data.allReading.years}
-      reviewCount={data.review.totalCount}
-      bookCount={data.book.totalCount}
-      readingCount={data.reading.totalCount}
-      gradeDistributions={data.gradeDistributions.group}
-      kindDistributions={data.kindDistributions.group}
-      editionDistributions={data.editionDistributions.group}
-      decadeDistributions={data.decadeDistributions.group}
+      data={data.readingStats}
+      allYears={data.reading.years}
     />
   );
 }
 
 export const pageQuery = graphql`
-  query StatsForYearTemplate($year: Int!) {
-    mostReadAuthors: mostReadAuthors(year: $year) {
-      ...MostReadAuthor
+  query StatsForYearTemplate($year: String!) {
+    reading: allTimelineEntriesJson {
+      years: distinct(field: { readingYear: SELECT })
     }
 
-    allReading: allReadingsJson {
-      years: distinct(field: { year: SELECT })
-    }
-
-    reading: allReadingsJson(filter: { year: { eq: $year } }) {
-      totalCount
-    }
-
-    review: allFile(
-      filter: {
-        sourceInstanceName: { eq: "reviews" }
-        childrenMarkdownRemark: { elemMatch: { year: { eq: $year } } }
-      }
-    ) {
-      totalCount
-    }
-
-    book: allReadingsJson(
-      filter: {
-        work: { kind: { nin: ["Short Story", "Novella"] } }
-        year: { eq: $year }
-      }
-    ) {
-      totalCount
-    }
-
-    gradeDistributions: allFile(
-      filter: {
-        sourceInstanceName: { eq: "reviews" }
-        childrenMarkdownRemark: { elemMatch: { year: { eq: $year } } }
-      }
-      sort: { childMarkdownRemark: { gradeValue: DESC } }
-    ) {
-      group(
-        field: { childMarkdownRemark: { frontmatter: { grade: SELECT } } }
-      ) {
-        name: fieldValue
-        count: totalCount
-      }
-    }
-
-    kindDistributions: allReadingsJson(
-      filter: { year: { eq: $year } }
-      sort: { kind: ASC }
-    ) {
-      group(field: { kind: SELECT }) {
-        name: fieldValue
-        count: totalCount
-      }
-    }
-
-    editionDistributions: allReadingsJson(
-      filter: { year: { eq: $year } }
-      sort: { edition: ASC }
-    ) {
-      group(field: { edition: SELECT }) {
-        name: fieldValue
-        count: totalCount
-      }
-    }
-
-    decadeDistributions: allReadingsJson(
-      filter: { year: { eq: $year } }
-      sort: { work: { decadePublished: ASC } }
-    ) {
-      group(field: { work: { decadePublished: SELECT } }) {
-        name: fieldValue
-        count: totalCount
-      }
+    readingStats(span: $year) {
+      ...StatsData
     }
   }
 `;

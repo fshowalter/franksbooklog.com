@@ -35,7 +35,7 @@ export function IncludedWorks({ reviewData, ...rest }: IIncludedWorksProps) {
         {reviewData.includedWorks.map((includedWork) => (
           <Box
             as="li"
-            key={includedWork.id}
+            key={includedWork.slug}
             display="flex"
             flexDirection="column"
             backgroundColor="zebra"
@@ -68,7 +68,6 @@ export function IncludedWorks({ reviewData, ...rest }: IIncludedWorksProps) {
 export const query = graphql`
   fragment ReviewIncludedWorks on ReviewedWorksJson {
     includedWorks {
-      id
       title
       authors {
         name

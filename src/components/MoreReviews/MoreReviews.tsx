@@ -26,7 +26,7 @@ export function MoreReviews({
         {reviewedWorks.map((work) => {
           return (
             <Cover
-              key={work.id}
+              key={work.slug}
               title={work.title}
               grade={work.grade}
               slug={work.slug}
@@ -63,8 +63,7 @@ export function MoreReviews({
 }
 
 export const query = graphql`
-  fragment MoreReviews on ReviewedWorksJson {
-    id
+  fragment MoreReviews on ReviewedWorksJsonMoreWork {
     title
     yearPublished
     kind

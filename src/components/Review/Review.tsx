@@ -65,11 +65,7 @@ export function Review({
             text={reviewData.review.linkedHtml}
           />
         </Box>
-        <IncludedWorks
-          reviewData={reviewData}
-          // maxWidth="popout"
-          width="full"
-        />
+        <IncludedWorks reviewData={reviewData} maxWidth="popout" width="full" />
         <Spacer axis="vertical" size={80} />
         <ReadingHistory
           reviewData={reviewData}
@@ -88,7 +84,7 @@ export function Review({
           width="full"
         >
           <MoreReviews
-            reviewedWorks={reviewData.browseMore}
+            reviewedWorks={reviewData.moreReviews}
             linkText="Reviews"
             linkTarget="/reviews/"
           />
@@ -249,7 +245,7 @@ export const pageQuery = graphql`
       slug
     }
     ...ReviewIncludedWorks
-    browseMore {
+    moreReviews {
       ...MoreReviews
     }
     review {

@@ -16,8 +16,8 @@ export async function createStatPages({
 
   const queryResult = await graphql<QueryResult>(`
     {
-      reading: allReadingsJson {
-        years: distinct(field: { year: SELECT })
+      reading: allTimelineEntriesJson {
+        years: distinct(field: { readingYear: SELECT })
       }
     }
   `);
@@ -34,7 +34,7 @@ export async function createStatPages({
       path: `/stats/${year}/`,
       component: path.resolve("./src/templates/statsForYear.tsx"),
       context: {
-        year: parseInt(year),
+        year: year,
       },
     });
   });

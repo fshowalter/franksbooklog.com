@@ -80,7 +80,7 @@ function YearAndKind({
   year,
 }: {
   kind: string;
-  year: number;
+  year: string;
 }): JSX.Element | null {
   return (
     <Box color="subtle" fontSize="small" letterSpacing={0.5} lineHeight={16}>
@@ -91,13 +91,13 @@ function YearAndKind({
 }
 
 export const query = graphql`
-  fragment ShelfListItemAuthor on WorkAuthor {
+  fragment ShelfListItemAuthor on UnreviewedWorksJsonWorkAuthor {
     name
     notes
     sortName
   }
 
-  fragment ShelfListItem on WorksJson {
+  fragment ShelfListItem on UnreviewedWorksJson {
     id
     slug
     title

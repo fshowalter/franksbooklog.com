@@ -3,7 +3,7 @@ import { userEvent } from "@testing-library/user-event";
 import ReadingsPage, { Head } from "./readings";
 import { data } from "./readings.fixtures";
 
-describe("/reviews/authors", () => {
+describe("/readings", () => {
   it("can filter by title", async () => {
     expect.hasAssertions();
     render(<ReadingsPage data={data} />);

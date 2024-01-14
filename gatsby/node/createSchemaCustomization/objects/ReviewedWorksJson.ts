@@ -1,125 +1,205 @@
+import { Node } from "hast";
+import toHtml from "hast-util-to-html";
+import toHast from "mdast-util-to-hast";
+import remark from "remark";
 import { SchemaNames } from "../schemaNames";
-import type { GatsbyNodeContext, GatsbyResolveInfo } from "../type-definitions";
-import { GatsbyNode } from "../type-definitions";
-import { resolveFieldForNode } from "../utils/resolveFieldForNode";
-import { sliceWorksForBrowseMore } from "../utils/sliceWorksForBrowseMore";
-import { WorkNode } from "./WorksJson";
+import type { GatsbyNode } from "../type-definitions";
+import { GatsbyNodeContext } from "../type-definitions";
+import { coverResolver } from "./utils/coverResolver";
 
-export interface ReviewedWorkNode extends GatsbyNode {
-  includedWorks: string[];
-  workSlug: string;
-  work: WorkNode;
+export interface ReviewedWorksJsonNode extends GatsbyNode {
+  slug: string;
+  sequence: number;
+  includedInSlugs: string[];
 }
 
-export const ReviewedWorksJson = {
-  name: SchemaNames.ReviewedWorksJson,
-  interfaces: ["Node"],
+interface ReviewedWorksJsonReadingNode {
+  editionNotes: string;
+}
+
+interface IHastNode extends Node {
+  children: {
+    tagName: string;
+  }[];
+}
+
+export const ReviewedWorksJsonWorkAuthor = {
+  name: SchemaNames.ReviewedWorksJsonWorkAuthor,
   fields: {
-    workSlug: "String!",
-    reviewDate: {
-      type: `Date!`,
+    slug: "String!",
+    notes: "String",
+    name: "String!",
+    sortName: "String!",
+  },
+};
+
+export const ReviewedWorksJsonReadingTimelineEntry = {
+  name: SchemaNames.ReviewedWorksJsonReadingTimelineEntry,
+  fields: {
+    date: {
+      type: "Date!",
       extensions: {
         dateformat: {},
       },
     },
-    grade: `String!`,
-    gradeValue: `Int!`,
-    reviewYear: `Int!`,
-    title: {
-      type: `String!`,
-      extensions: {
-        proxyToWork: {
-          fieldName: "title",
-        },
-      },
-    },
-    subtitle: {
-      type: `String`,
-      extensions: {
-        proxyToWork: {
-          fieldName: "subtitle",
-        },
-      },
-    },
-    slug: {
-      type: `String!`,
-      extensions: {
-        proxyToWork: {
-          fieldName: "slug",
-        },
-      },
-    },
-    kind: {
-      type: `String!`,
-      extensions: {
-        proxyToWork: {
-          fieldName: "kind",
-        },
-      },
-    },
-    sortTitle: {
-      type: `String!`,
-      extensions: {
-        proxyToWork: {
-          fieldName: "sortTitle",
-        },
-      },
-    },
-    yearPublished: {
-      type: `Int!`,
-      extensions: {
-        proxyToWork: {
-          fieldName: "yearPublished",
-        },
-      },
-    },
-    authors: {
-      type: `[${SchemaNames.WorkAuthor}!]!`,
-      extensions: {
-        proxyToWork: {
-          fieldName: "authors",
-        },
-      },
-    },
+    progress: "String!",
+  },
+};
+
+export const ReviewedWorksJsonMoreWorkAuthor = {
+  name: SchemaNames.ReviewedWorksJsonMoreWorkAuthor,
+  fields: {
+    name: "String!",
+  },
+};
+
+export const ReviewedWorksJsonMoreWork = {
+  name: SchemaNames.ReviewedWorksJsonMoreWork,
+  fields: {
+    title: "String!",
+    kind: "String!",
+    yearPublished: "String!",
+    slug: "String!",
+    grade: "String",
+    authors: `[${SchemaNames.ReviewedWorksJsonMoreWorkAuthor}!]!`,
+    includedInSlugs: "[String!]!",
     cover: {
-      type: `File!`,
+      type: "File!",
+      resolve: coverResolver,
+    },
+  },
+};
+
+export const ReviewedWorksJsonMoreByAuthor = {
+  name: SchemaNames.ReviewedWorksJsonMoreByAuthor,
+  fields: {
+    name: "String!",
+    slug: "String!",
+    works: `[${SchemaNames.ReviewedWorksJsonMoreWork}!]!`,
+  },
+};
+
+export const ReviewedWorksJsonIncludedWorkAuthor = {
+  name: SchemaNames.ReviewedWorksJsonIncludedWorkAuthor,
+  fields: {
+    name: "String!",
+    slug: "String!",
+  },
+};
+
+export const ReviewedWorksJsonIncludedWork = {
+  name: SchemaNames.ReviewedWorksJsonIncludedWork,
+  fields: {
+    title: "String!",
+    authors: `[${SchemaNames.ReviewedWorksJsonIncludedWorkAuthor}!]!`,
+    grade: "String!",
+    slug: "String!",
+    cover: {
+      type: "File!",
+      resolve: coverResolver,
+    },
+  },
+};
+
+export const ReviewedWorksJsonReading = {
+  name: SchemaNames.ReviewedWorksJsonReading,
+  fields: {
+    sequence: "Int!",
+    date: {
+      type: "Date!",
       extensions: {
-        proxyToWork: {
-          fieldName: "cover",
-        },
+        dateformat: {},
       },
     },
-    readings: {
-      type: `[${SchemaNames.ReadingsJson}!]!`,
+    edition: "String!",
+    editionNotes: {
+      type: "String",
+      resolve: (source: ReviewedWorksJsonReadingNode) => {
+        if (!source.editionNotes) {
+          return null;
+        }
+
+        const mdast = remark().parse(source.editionNotes);
+
+        const hast = toHast(mdast, {
+          allowDangerousHtml: true,
+        }) as IHastNode;
+
+        hast.children[0].tagName = "span";
+
+        return toHtml(hast, {
+          allowDangerousHtml: true,
+        });
+      },
       extensions: {
-        proxyToWork: {
-          fieldName: "readings",
-        },
+        linkReviewedWorks: {},
       },
     },
-    work: {
-      type: `${SchemaNames.WorksJson}!`,
+    isAudiobook: "Boolean!",
+    abandoned: "Boolean!",
+    timeline: `[${SchemaNames.ReviewedWorksJsonReadingTimelineEntry}!]!`,
+    readingTime: "Int",
+    readingNote: {
+      type: SchemaNames.MarkdownRemark,
       resolve: async (
-        source: ReviewedWorkNode,
+        source: {
+          sequence: number;
+        },
         _args: unknown,
         context: GatsbyNodeContext,
       ) => {
         return await context.nodeModel.findOne({
-          type: SchemaNames.WorksJson,
+          type: SchemaNames.MarkdownRemark,
           query: {
             filter: {
-              slug: {
-                eq: source.workSlug,
+              fileAbsolutePath: {
+                regex: `//reading_notes/${source.sequence
+                  .toString()
+                  .padStart(4, "0")}-.*/`,
               },
             },
           },
         });
       },
     },
+  },
+};
+
+export const ReviewedWorksJson = {
+  name: SchemaNames.ReviewedWorksJson,
+  interfaces: ["Node"],
+  fields: {
+    sequence: "Int!",
+    title: "String!",
+    subtitle: "String",
+    sortTitle: "String!",
+    slug: "String!",
+    includedInSlugs: "[String!]!",
+    edition: "String!",
+    date: {
+      type: "Date!",
+      extensions: {
+        dateformat: {},
+      },
+    },
+    yearPublished: "String!",
+    yearReviewed: `String!`,
+    kind: "String!",
+    authors: `[${SchemaNames.ReviewedWorksJsonWorkAuthor}!]!`,
+    cover: {
+      type: "File!",
+      resolve: coverResolver,
+    },
+    grade: "String!",
+    gradeValue: `Int!`,
+    readings: `[${SchemaNames.ReviewedWorksJsonReading}!]!`,
+    moreByAuthors: `[${SchemaNames.ReviewedWorksJsonMoreByAuthor}!]!`,
+    moreReviews: `[${SchemaNames.ReviewedWorksJsonMoreWork}!]!`,
+    includedWorks: `[${SchemaNames.ReviewedWorksJsonIncludedWork}!]!`,
     review: {
       type: `${SchemaNames.MarkdownRemark}!`,
       resolve: async (
-        source: ReviewedWorkNode,
+        source: ReviewedWorksJsonNode,
         _args: unknown,
         context: GatsbyNodeContext,
       ) => {
@@ -129,65 +209,12 @@ export const ReviewedWorksJson = {
             filter: {
               frontmatter: {
                 work_slug: {
-                  eq: source.workSlug,
+                  eq: source.slug,
                 },
               },
             },
           },
         });
-      },
-    },
-    includedWorks: {
-      type: `[${SchemaNames.ReviewedWorksJson}!]!`,
-      resolve: async (
-        source: ReviewedWorkNode,
-        _args: unknown,
-        context: GatsbyNodeContext,
-        info: GatsbyResolveInfo,
-      ) => {
-        const work = await resolveFieldForNode<WorkNode>({
-          fieldName: "work",
-          source,
-          context,
-          info,
-        });
-
-        if (!work) {
-          return [];
-        }
-
-        const { entries } = await context.nodeModel.findAll({
-          type: SchemaNames.ReviewedWorksJson,
-          query: {
-            filter: {
-              slug: {
-                in: work.includedWorks,
-              },
-            },
-          },
-        });
-
-        return entries;
-      },
-    },
-    browseMore: {
-      type: `[${SchemaNames.ReviewedWorksJson}!]!`,
-      resolve: async (
-        source: ReviewedWorkNode,
-        _args: unknown,
-        context: GatsbyNodeContext,
-      ) => {
-        const { entries } = await context.nodeModel.findAll<ReviewedWorkNode>({
-          type: SchemaNames.ReviewedWorksJson,
-          query: {
-            sort: {
-              fields: ["work.sortTitle"],
-              order: ["ASC"],
-            },
-          },
-        });
-
-        return sliceWorksForBrowseMore(Array.from(entries), source.id);
       },
     },
   },

@@ -14,8 +14,8 @@ function sortItems(items: Queries.ReadingsListItemFragment[], sortOrder: Sort) {
       b: Queries.ReadingsListItemFragment,
     ) => number
   > = {
-    "progress-date-desc": (a, b) => sortString(a.sortDate, b.sortDate) * -1,
-    "progress-date-asc": (a, b) => sortString(a.sortDate, b.sortDate),
+    "progress-date-desc": (a, b) => sortString(a.sequence, b.sequence) * -1,
+    "progress-date-asc": (a, b) => sortString(a.sequence, b.sequence),
   };
 
   const comparer = sortMap[sortOrder];
@@ -122,12 +122,12 @@ interface FilterEditionAction {
 
 interface FilterPublishedYearAction {
   type: ActionType.FILTER_PUBLISHED_YEAR;
-  values: [number, number];
+  values: [string, string];
 }
 
 interface FilterReadingYearAction {
   type: ActionType.FILTER_READING_YEAR;
-  values: [number, number];
+  values: [string, string];
 }
 
 interface SortAction {

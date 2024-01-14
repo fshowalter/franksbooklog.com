@@ -83,7 +83,7 @@ function YearAndKind({
   year,
 }: {
   kind: string;
-  year: number;
+  year: string;
 }): JSX.Element | null {
   return (
     <Box color="subtle" fontSize="small" letterSpacing={0.5} lineHeight={16}>
@@ -94,7 +94,7 @@ function YearAndKind({
 }
 
 export const query = graphql`
-  fragment ReviewsListItemAuthor on WorkAuthor {
+  fragment ReviewsListItemAuthor on ReviewedWorksJsonWorkAuthor {
     name
     notes
     sortName
@@ -104,13 +104,13 @@ export const query = graphql`
     id
     grade
     slug
-    reviewDate(formatString: "MMM D, YYYY")
+    date(formatString: "MMM D, YYYY")
     gradeValue
-    sortDate: reviewDate
+    sortDate: date
     title
     yearPublished
-    reviewMonth: reviewDate(formatString: "MMMM")
-    reviewYear
+    monthReviewed: date(formatString: "MMMM")
+    yearReviewed
     sortTitle
     kind
     authors {

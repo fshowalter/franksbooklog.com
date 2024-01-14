@@ -27,8 +27,8 @@ export function Cover({
   slug: string;
   image: IGraphqlImage;
   title: string;
-  year: number;
-  grade?: string;
+  year: string;
+  grade?: string | null;
   date?: string;
   edition?: string | null;
   kind?: string | null;
@@ -109,7 +109,7 @@ export function Cover({
 
 interface IYearAndKindProps extends IBoxProps {
   workKind?: string | null;
-  year?: number | null;
+  year?: string | null;
 }
 
 function YearAndKind({
@@ -141,7 +141,7 @@ interface IImageProps extends IBoxProps {
   slug: string | null | undefined;
   image: IGraphqlImage;
   title: string;
-  year?: number;
+  year?: string;
 }
 
 function Image({ slug, image, title, ...rest }: IImageProps) {

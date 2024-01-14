@@ -3,15 +3,19 @@ import path from "path";
 
 const query = `#graphql
 { 
-  readings: readingsWithReviews {
-    id
+  update: allReviewedWorksJson {
+    nodes {
+      id
+    }
   }
 }`;
 
 interface QueryResult {
-  readings: {
-    id: string;
-  }[];
+  update: {
+    nodes: {
+      id: string;
+    }[];
+  };
 }
 
 export async function createHomePages({
@@ -29,7 +33,7 @@ export async function createHomePages({
     return;
   }
 
-  const updates = queryResult.data.readings;
+  const updates = queryResult.data.update.nodes;
   const perPage = 10;
   const numPages = Math.ceil(updates.length / perPage);
   Array.from({ length: numPages }).forEach((_, i) => {

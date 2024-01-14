@@ -1,12 +1,13 @@
 const query = `{ 
-  readings: readingsWithReviews(
-    limit: 25
-  ) {
-      excerpt
+  reviewedWork: allReviewedWorksJson(limit: 25, sort: {sequence: DESC}) {
+    nodes {
+      review {
+        excerpt
+      }
       date
       sequence
       grade
-      slug: workSlug
+      slug
       title
       authors {
         name
@@ -19,6 +20,7 @@ const query = `{
         }
       }
     }
+  }
 }`;
 
 interface QueryResult {
@@ -29,10 +31,12 @@ interface QueryResult {
       siteUrl: string;
     };
   };
-  readings: Reading[];
+  reviewedWork: {
+    nodes: ReviewedWork[];
+  };
 }
 
-interface Reading {
+interface ReviewedWork {
   grade: string;
   date: string;
   sequence: number;
@@ -41,7 +45,9 @@ interface Reading {
     name: string;
   }[];
   title: string;
-  excerpt: string;
+  review: {
+    excerpt: string;
+  };
   cover: {
     childImageSharp: {
       resize: {
@@ -73,8 +79,8 @@ function starsForGrade(grade: string) {
   return "";
 }
 
-function addMetaToExcerpt(excerpt: string, reading: Reading) {
-  const meta = `${starsForGrade(reading.grade)}`;
+function addMetaToExcerpt(excerpt: string, reviewedWork: ReviewedWork) {
+  const meta = `${starsForGrade(reviewedWork.grade)}`;
   return `<p>${meta}</p>${excerpt}`;
 }
 
@@ -91,21 +97,21 @@ function setup(options: Record<string, unknown>) {
 }
 
 function serialize({ query }: { query: QueryResult }) {
-  return query.readings.map((reading) => {
+  return query.reviewedWork.nodes.map((reviewedWork) => {
     return {
-      title: `${reading.title} by ${reading.authors
+      title: `${reviewedWork.title} by ${reviewedWork.authors
         .map((author) => author.name)
         .join(", ")}`,
-      date: reading.date,
-      url: `${query.site.siteMetadata.siteUrl}/reviews/${reading.slug}/`,
-      guid: `${query.site.siteMetadata.siteUrl}/${reading.sequence}-${reading.slug}`,
+      date: reviewedWork.date,
+      url: `${query.site.siteMetadata.siteUrl}/reviews/${reviewedWork.slug}/`,
+      guid: `${query.site.siteMetadata.siteUrl}/${reviewedWork.sequence}-${reviewedWork.slug}`,
       custom_elements: [
         {
           "content:encoded": `<img src="${
-            reading.cover.childImageSharp.resize.src
-          }" alt="A cover from ${reading.title}">${addMetaToExcerpt(
-            reading.title,
-            reading,
+            reviewedWork.cover.childImageSharp.resize.src
+          }" alt="A cover from ${reviewedWork.title}">${addMetaToExcerpt(
+            reviewedWork.review.excerpt,
+            reviewedWork,
           )}`,
         },
       ],
