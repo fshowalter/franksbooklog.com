@@ -20,6 +20,7 @@ describe("/reviews", () => {
     expect.hasAssertions();
     render(<ReviewsPage data={data} />);
 
+    // eslint-disable-next-line testing-library/no-unnecessary-act
     await act(async () => {
       await userEvent.type(screen.getByLabelText("Title"), "Dracula");
       await new Promise((r) => setTimeout(r, 500));
@@ -42,10 +43,8 @@ describe("/reviews", () => {
 
     render(<ReviewsPage data={data} />);
 
-    await act(async () => {
-      await userEvent.selectOptions(screen.getByLabelText("Kind"), "Novel");
-      await userEvent.selectOptions(screen.getByLabelText("Kind"), "All");
-    });
+    await userEvent.selectOptions(screen.getByLabelText("Kind"), "Novel");
+    await userEvent.selectOptions(screen.getByLabelText("Kind"), "All");
 
     expect(screen.getByTestId("cover-list")).toMatchSnapshot();
   });

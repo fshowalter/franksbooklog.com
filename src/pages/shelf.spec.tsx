@@ -20,6 +20,7 @@ describe("/shelf", () => {
     expect.hasAssertions();
     render(<ShelfPage data={data} />);
 
+    // eslint-disable-next-line testing-library/no-unnecessary-act
     await act(async () => {
       await userEvent.type(screen.getByLabelText("Title"), "Lawyer Man");
       await new Promise((r) => setTimeout(r, 500));
@@ -32,6 +33,7 @@ describe("/shelf", () => {
     expect.hasAssertions();
     render(<ShelfPage data={data} />);
 
+    // eslint-disable-next-line testing-library/no-unnecessary-act
     await act(async () => {
       await userEvent.type(
         screen.getByLabelText("Title"),
@@ -83,10 +85,8 @@ describe("/shelf", () => {
 
     render(<ShelfPage data={data} />);
 
-    await act(async () => {
-      await userEvent.selectOptions(screen.getByLabelText("Kind"), "Novel");
-      await userEvent.selectOptions(screen.getByLabelText("Kind"), "All");
-    });
+    await userEvent.selectOptions(screen.getByLabelText("Kind"), "Novel");
+    await userEvent.selectOptions(screen.getByLabelText("Kind"), "All");
 
     expect(screen.getByTestId("cover-list")).toMatchSnapshot();
   });
