@@ -84,8 +84,7 @@
     "format:check": "yarn prettier --check \"**/*.{json,js,css,scss,md,ts,tsx,jsx}\"",
     "test": "yarn jest",
     "type-check": "yarn tsc --noEmit",
-    "sync": "./sync.js",
-    "prepare": "husky install"
+    "sync": "./sync.js"
   },
   "browserslist": [
     "last 2 versions",
@@ -100,10 +99,6 @@
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
-  },
-  "lint-staged": {
-    "*.js": "yarn eslint --cache --fix",
-    "*.{json,js,css,scss,md,ts,tsx,jsx,yml}": "yarn prettier --write"
   },
   "packageManager": "yarn@4.0.2"
 }

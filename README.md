@@ -30,8 +30,8 @@ Source for www.franksbooklog.com. Built on [Gatsby](https://www.gatsbyjs.org/).
     Yarn is our package-manger of choice.
 
     ```shell
-    # install yarn via Homebrew
-    brew install yarn
+    # enable yarn via corepack
+    corepack enable
     ```
 
 1.  **Start a Dev server.**
