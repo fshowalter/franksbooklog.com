@@ -84,8 +84,7 @@
     "format:check": "yarn prettier --check \"**/*.{json,js,css,scss,md,ts,tsx,jsx}\"",
     "test": "yarn jest",
     "type-check": "yarn tsc --noEmit",
-    "sync": "./sync.js",
-    "prepare": "husky install"
+    "sync": "./sync.js"
   },
   "browserslist": [
     "last 2 versions",
