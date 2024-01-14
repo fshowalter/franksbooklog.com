@@ -7,7 +7,8 @@ export const data = {
         slug: "record-play-pause-by-stephen-morris",
         date: "11 Nov 2023",
         review: {
-          excerpt: "",
+          excerptHtml:
+            '<p>Warm, witty, self-deprecating and self-aware, drummer Stephen Morris’s first volume of memoirs chronicles his formative years in the Manchester suburb of Macclesfield through joining Joy Division, its end, and the early days of New Order. <a data-continue-reading href="/reviews/record-play-pause-by-stephen-morris/">Continue reading...</a></p>',
         },
         title: "Record Play Pause",
         kind: "Nonfiction",
@@ -50,12 +51,13 @@ export const data = {
         },
       },
       {
-        grade: "B-",
+        grade: "C+",
         sequence: 56,
         slug: "fright-night-origins-by-tom-holland-a-jack-ulrich",
         date: "06 Nov 2023",
         review: {
-          excerpt: "",
+          excerptHtml:
+            '<p>Tom Holland, director and screenwriter of the original <em>Fright Night</em> film, partners with A. Jack Ulrich to craft an expanded novelization of the film, proffering more backstory and setting up an expanded universe and sequel. <a data-continue-reading href="/reviews/fright-night-origins-by-tom-holland-a-jack-ulrich/">Continue reading...</a></p>',
         },
         title: "Fright Night Origins",
         kind: "Novel",
@@ -108,7 +110,8 @@ export const data = {
         slug: "dont-let-them-get-you-down-by-philip-fracassi",
         date: "29 Oct 2023",
         review: {
-          excerpt: "",
+          excerptHtml:
+            '<p><em>Don’t Let Them Get You Down</em> follows Peter, a copywriter for a medical website, struggling to hold his life together while battling a spiraling depression triggered by his wife’s cancer death two years prior. <a data-continue-reading href="/reviews/dont-let-them-get-you-down-by-philip-fracassi/">Continue reading...</a></p>',
         },
         title: "Don't Let Them Get You Down",
         kind: "Novel",
@@ -156,7 +159,8 @@ export const data = {
         slug: "the-creative-act-by-rick-rubin",
         date: "22 Oct 2023",
         review: {
-          excerpt: "",
+          excerptHtml:
+            '<p>Rick Rubin, the famed music producer of such disparate acts as the Beastie Boys, Slayer, Tom Petty, and Johnny Cash, proffers a meditation on creativity. <a data-continue-reading href="/reviews/the-creative-act-by-rick-rubin/">Continue reading...</a></p>',
         },
         title: "The Creative Act",
         kind: "Nonfiction",
@@ -204,8 +208,8 @@ export const data = {
         slug: "sacculina-by-philip-fracassi",
         date: "09 Oct 2023",
         review: {
-          excerpt:
-            "To celebrate Jim’s older brother Jack’s release following a six-year prison stint, the brothers, their father Henry, and Jack’s hulking best friend Chris, charter a fishing boat in the Pacific. The choppy seas don’t bode well for an outing, but the group presses ahead, and their grizzled captain takes them a few miles offshore to a deep spot good for fishing. But the men soon realize they’re under threat by an unknown, overwhelming assailant—and how alone they are at sea.",
+          excerptHtml:
+            '<p>To celebrate Jim’s older brother Jack’s release following a six-year prison stint, the brothers, their father Henry, and Jack’s hulking best friend Chris, charter a fishing boat in the Pacific. The choppy seas don’t bode well for an outing, but the group presses ahead, and their grizzled captain takes them a few miles offshore to a deep spot good for fishing. But the men soon realize they’re under threat by an unknown, overwhelming assailant—and how alone they are at sea. <a data-continue-reading href="/reviews/sacculina-by-philip-fracassi/">Continue reading...</a></p>',
         },
         title: "Sacculina",
         kind: "Novella",
@@ -253,8 +257,8 @@ export const data = {
         slug: "the-cipher-by-kathe-koja",
         date: "29 Jan 2023",
         review: {
-          excerpt:
-            "How to describe The Cipher? The plot concerns Nicholas, an aimless twenty-something drifting through life, who discovers a mysterious hole inside a disused storage room in his derelict apartment building. Weird things ensue.",
+          excerptHtml:
+            '<p>How to describe <em>The Cipher</em>? The plot concerns Nicholas, an aimless twenty-something drifting through life, who discovers a mysterious hole inside a disused storage room in his derelict apartment building. Weird things ensue. <a data-continue-reading href="/reviews/the-cipher-by-kathe-koja/">Continue reading...</a></p>',
         },
         title: "The Cipher",
         kind: "Novel",
@@ -302,8 +306,8 @@ export const data = {
         slug: "roadside-pickup-by-richard-laymon",
         date: "21 Jan 2023",
         review: {
-          excerpt:
-            "Early morning darkness. Colleen sits stranded in her car. Three hours have produced three cars. None have stopped. But the fourth does. A…",
+          excerptHtml:
+            "<p>Early morning darkness. Colleen sits stranded in her car. Three hours have produced three cars. None have stopped. But the fourth does. A young man with fashionable clothes and booze on his breath. Won’t she let him give her a ride?</p>\n<p>Laymon’s second published story proffers a predictable twist, but at under two thousand words, it doesn’t drag.</p>",
         },
         title: "Roadside Pickup",
         kind: "Short Story",
@@ -351,8 +355,8 @@ export const data = {
         slug: "fright-night-by-john-skipp-craig-spector",
         date: "21 Jan 2023",
         review: {
-          excerpt:
-            "During a late-night make-out session with his girlfriend, high-schooler Charlie Brewster spies two men carrying a coffin into the basement of the house next-door. Charlie soon discovers his suave new neighbor, Jerry Dandrige, has fangs. When the police don’t believe him, Charlie appeals to the local creature-feature host, washed up horror icon Peter Vincent, for help.",
+          excerptHtml:
+            '<p>During a late-night make-out session with his girlfriend, high-schooler Charlie Brewster spies two men carrying a coffin into the basement of the house next-door. Charlie soon discovers his suave new neighbor, Jerry Dandrige, has fangs. When the police don’t believe him, Charlie appeals to the local creature-feature host, washed up horror icon Peter Vincent, for help. <a data-continue-reading href="/reviews/fright-night-by-john-skipp-craig-spector/">Continue reading...</a></p>',
         },
         title: "Fright Night",
         kind: "Novel",
@@ -405,8 +409,8 @@ export const data = {
         slug: "doctor-sleep-by-stephen-king",
         date: "14 Jan 2023",
         review: {
-          excerpt:
-            "Stephen King’s sequel to The Shining finds Dan Torrance a middle-aged recovering alcoholic living in New Hampshire and working as a hospice orderly. He uses his unique gifts to comfort residents as they transition to the other side.",
+          excerptHtml:
+            '<p>Stephen King’s sequel to <a href="/reviews/the-shining-by-stephen-king/"><em>The Shining</em></a> finds Dan Torrance a middle-aged recovering alcoholic living in New Hampshire and working as a hospice orderly. He uses his unique gifts to comfort residents as they transition to the other side. <a data-continue-reading href="/reviews/doctor-sleep-by-stephen-king/">Continue reading...</a></p>',
         },
         title: "Doctor Sleep",
         kind: "Novel",
@@ -454,8 +458,8 @@ export const data = {
         slug: "the-skeptics-guide-to-the-universe-by-steven-novella",
         date: "29 Oct 2022",
         review: {
-          excerpt:
-            "A practical guide to critical thinking in the information age. Novella and his colleagues illuminate cognitive biases and logical fallacies with understandable examples. They then apply them to assorted topics, including ghosts, extrasensory perception, assorted conspiracy theories, and global warming.",
+          excerptHtml:
+            '<p>A practical guide to critical thinking in the information age. Novella and his colleagues illuminate cognitive biases and logical fallacies with understandable examples. They then apply them to assorted topics, including ghosts, extrasensory perception, assorted conspiracy theories, and global warming. <a data-continue-reading href="/reviews/the-skeptics-guide-to-the-universe-by-steven-novella/">Continue reading...</a></p>',
         },
         title: "The Skeptics' Guide to the Universe",
         kind: "Nonfiction",
