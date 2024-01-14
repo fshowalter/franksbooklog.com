@@ -108,7 +108,7 @@ export function ListItem({
             <Spacer axis="vertical" size={16} />
           </Box>
           <RenderedMarkdown
-            text={item.review.excerpt}
+            text={item.review.excerptHtml}
             className={excerptContinueReadingLinkStyle}
           />
         </GridArea>
@@ -130,7 +130,7 @@ export const query = graphql`
     slug
     date(formatString: "DD MMM YYYY")
     review {
-      excerpt
+      excerptHtml
     }
     title
     kind
