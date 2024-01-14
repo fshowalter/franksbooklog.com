@@ -46,7 +46,7 @@ Source for www.franksbooklog.com. Built on [Gatsby](https://www.gatsbyjs.org/).
 
 1.  **Open the source code and start editing!**
 
-    The site is now running at `http://localhost:8000` with a GraphQL instance at `http://localhost:8000/___graphql`.
+    The site is now running at `http://localhost:8002` with a GraphQL instance at `http://localhost:8002/___graphql`.
 
 ## What's inside?
 
