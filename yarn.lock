@@ -2665,9 +2665,9 @@ __metadata:
   linkType: hard
 
 "@lezer/common@npm:^1.0.0":
-  version: 1.2.0
-  resolution: "@lezer/common@npm:1.2.0"
-  checksum: 87b1571dd6a62340b5d5187c1bd4cdb4c6c50026c26ea47976e811101a8beabd2b74a7dce18e8cb5ccf10dcd7096073bedf2ce9d222ec90cf445603de255fb53
+  version: 1.2.1
+  resolution: "@lezer/common@npm:1.2.1"
+  checksum: b362ed2e97664e4b36b3dbff49b52d1bfc5accc0152b577fefd46e585d012ff685d1fd336d75d80066e01c0505b1135d4cf69be5e330b5bfec2e2650c437bcae
   languageName: node
   linkType: hard
 
@@ -4024,16 +4024,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:>=10.0.0":
-  version: 20.11.3
-  resolution: "@types/node@npm:20.11.3"
-  dependencies:
-    undici-types: "npm:~5.26.4"
-  checksum: dff64333435bbda87e200e24e2103f40692d0a01849db685ecb31db7c589f2556843a03dd351ddaee9981020263939c026557b36df49154efd910c610deefe78
-  languageName: node
-  linkType: hard
-
-"@types/node@npm:20.11.4":
+"@types/node@npm:*, @types/node@npm:20.11.4, @types/node@npm:>=10.0.0":
   version: 20.11.4
   resolution: "@types/node@npm:20.11.4"
   dependencies:
