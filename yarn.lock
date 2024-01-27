@@ -4438,7 +4438,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vanilla-extract/integration@npm:^6.2.5, @vanilla-extract/integration@npm:^6.3.0":
+"@vanilla-extract/integration@npm:^6.3.0":
   version: 6.3.0
   resolution: "@vanilla-extract/integration@npm:6.3.0"
   dependencies:
@@ -4485,17 +4485,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vanilla-extract/webpack-plugin@npm:2.3.2":
-  version: 2.3.2
-  resolution: "@vanilla-extract/webpack-plugin@npm:2.3.2"
+"@vanilla-extract/webpack-plugin@npm:2.3.3":
+  version: 2.3.3
+  resolution: "@vanilla-extract/webpack-plugin@npm:2.3.3"
   dependencies:
-    "@vanilla-extract/integration": "npm:^6.2.5"
+    "@vanilla-extract/integration": "npm:^6.3.0"
     chalk: "npm:^4.1.1"
     debug: "npm:^4.3.1"
     loader-utils: "npm:^2.0.0"
   peerDependencies:
     webpack: ^4.30.0 || ^5.20.2
-  checksum: e91203b8bfba0fef7398bdcf58a338fa469a60d9447ba48cc9a312b33e31ffa9be183af15cc6d2cfda9c026c9d88de0169366f8f04ffac07a83fe04341102cb9
+  checksum: 5fe0f3337af1b121f3715c20fb66b305f09c0b37f346054b93dad4893a22d5c9f84d5ff1d670e416b1164096327c6d80162f6b73b2ce2e1b48382c926365272f
   languageName: node
   linkType: hard
 
@@ -8836,7 +8836,7 @@ __metadata:
     "@vanilla-extract/css": "npm:1.14.0"
     "@vanilla-extract/jest-transform": "npm:1.1.3"
     "@vanilla-extract/sprinkles": "npm:1.6.1"
-    "@vanilla-extract/webpack-plugin": "npm:2.3.2"
+    "@vanilla-extract/webpack-plugin": "npm:2.3.3"
     babel-jest: "npm:29.7.0"
     babel-preset-gatsby: "npm:3.13.1"
     core-js: "npm:3.35.1"
