@@ -3984,16 +3984,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:>=10.0.0":
-  version: 20.11.7
-  resolution: "@types/node@npm:20.11.7"
-  dependencies:
-    undici-types: "npm:~5.26.4"
-  checksum: ff0428c093987f1f6e3400b91450077cf006d7f0e4ff316e20636218562c53761565ceb06bd7a161badf46e6884d78b554c7b1c3a7717cf5cb8c97f461ecd754
-  languageName: node
-  linkType: hard
-
-"@types/node@npm:20.11.8":
+"@types/node@npm:*, @types/node@npm:20.11.8, @types/node@npm:>=10.0.0":
   version: 20.11.8
   resolution: "@types/node@npm:20.11.8"
   dependencies:
@@ -4428,7 +4419,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vanilla-extract/css@npm:1.14.1":
+"@vanilla-extract/css@npm:1.14.1, @vanilla-extract/css@npm:^1.14.0":
   version: 1.14.1
   resolution: "@vanilla-extract/css@npm:1.14.1"
   dependencies:
@@ -4444,25 +4435,6 @@ __metadata:
     modern-ahocorasick: "npm:^1.0.0"
     outdent: "npm:^0.8.0"
   checksum: 7ecdddfc6d24e80ee43496577294b580c71fa6fdbaa022c91930abf0dbe0923dd3f886e452b1f5ebe12dbfb61b080a5e3ef8939a897bf5b5e0dd8c93f04267f0
-  languageName: node
-  linkType: hard
-
-"@vanilla-extract/css@npm:^1.14.0":
-  version: 1.14.0
-  resolution: "@vanilla-extract/css@npm:1.14.0"
-  dependencies:
-    "@emotion/hash": "npm:^0.9.0"
-    "@vanilla-extract/private": "npm:^1.0.3"
-    chalk: "npm:^4.1.1"
-    css-what: "npm:^6.1.0"
-    cssesc: "npm:^3.0.0"
-    csstype: "npm:^3.0.7"
-    deep-object-diff: "npm:^1.1.9"
-    deepmerge: "npm:^4.2.2"
-    media-query-parser: "npm:^2.0.2"
-    modern-ahocorasick: "npm:^1.0.0"
-    outdent: "npm:^0.8.0"
-  checksum: b708fa88705c72db4a4ed5246247910ca0297a6ef1edb3c64aa1ace3d4aee4bb739afcf5cf190ea4398f800aa96586c4ed4013b794924afa851b68723655cfb5
   languageName: node
   linkType: hard
 
