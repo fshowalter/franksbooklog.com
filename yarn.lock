@@ -4055,18 +4055,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*":
-  version: 18.2.51
-  resolution: "@types/react@npm:18.2.51"
-  dependencies:
-    "@types/prop-types": "npm:*"
-    "@types/scheduler": "npm:*"
-    csstype: "npm:^3.0.2"
-  checksum: 10/af2935027172ea40695b90b02e98520a097160fa8517f6022e2e2cf8518017e0b84991cc34ee8d72cd91dcb7c5404784d4bada7a4836edf2727c3d6703c16ff8
-  languageName: node
-  linkType: hard
-
-"@types/react@npm:18.2.52":
+"@types/react@npm:*, @types/react@npm:18.2.52":
   version: 18.2.52
   resolution: "@types/react@npm:18.2.52"
   dependencies:
@@ -9712,7 +9701,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"get-intrinsic@npm:^1.0.2, get-intrinsic@npm:^1.1.1, get-intrinsic@npm:^1.1.3, get-intrinsic@npm:^1.2.0, get-intrinsic@npm:^1.2.1, get-intrinsic@npm:^1.2.2":
+"get-intrinsic@npm:^1.0.2, get-intrinsic@npm:^1.1.1, get-intrinsic@npm:^1.1.3, get-intrinsic@npm:^1.2.1, get-intrinsic@npm:^1.2.2":
   version: 1.2.2
   resolution: "get-intrinsic@npm:1.2.2"
   dependencies:
@@ -10656,13 +10645,12 @@ __metadata:
   linkType: hard
 
 "is-array-buffer@npm:^3.0.1, is-array-buffer@npm:^3.0.2":
-  version: 3.0.2
-  resolution: "is-array-buffer@npm:3.0.2"
+  version: 3.0.3
+  resolution: "is-array-buffer@npm:3.0.3"
   dependencies:
     call-bind: "npm:^1.0.2"
-    get-intrinsic: "npm:^1.2.0"
-    is-typed-array: "npm:^1.1.10"
-  checksum: 10/dcac9dda66ff17df9cabdc58214172bf41082f956eab30bb0d86bc0fab1e44b690fc8e1f855cf2481245caf4e8a5a006a982a71ddccec84032ed41f9d8da8c14
+    get-intrinsic: "npm:^1.2.1"
+  checksum: 10/53cef25b7e15d79bf0e63cafc2b559347e6177fc6c95182294b0c3df3b26c9d1aee47b2ce442f217d6b85f2e2daee233d7ef45b2cfa3bbcbc9d1c1f1faf84b5a
   languageName: node
   linkType: hard
 
