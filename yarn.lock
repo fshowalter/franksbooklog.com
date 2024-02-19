@@ -84,7 +84,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/core@npm:7.23.9, @babel/core@npm:^7.11.6, @babel/core@npm:^7.12.3, @babel/core@npm:^7.14.0, @babel/core@npm:^7.20.12, @babel/core@npm:^7.20.7":
+"@babel/core@npm:7.23.9, @babel/core@npm:^7.11.6, @babel/core@npm:^7.12.3, @babel/core@npm:^7.14.0, @babel/core@npm:^7.20.12, @babel/core@npm:^7.23.9":
   version: 7.23.9
   resolution: "@babel/core@npm:7.23.9"
   dependencies:
@@ -731,7 +731,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-syntax-typescript@npm:^7.20.0, @babel/plugin-syntax-typescript@npm:^7.23.3, @babel/plugin-syntax-typescript@npm:^7.7.2":
+"@babel/plugin-syntax-typescript@npm:^7.23.3, @babel/plugin-syntax-typescript@npm:^7.7.2":
   version: 7.23.3
   resolution: "@babel/plugin-syntax-typescript@npm:7.23.3"
   dependencies:
@@ -4410,12 +4410,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vanilla-extract/babel-plugin-debug-ids@npm:^1.0.4":
-  version: 1.0.4
-  resolution: "@vanilla-extract/babel-plugin-debug-ids@npm:1.0.4"
+"@vanilla-extract/babel-plugin-debug-ids@npm:^1.0.5":
+  version: 1.0.5
+  resolution: "@vanilla-extract/babel-plugin-debug-ids@npm:1.0.5"
   dependencies:
-    "@babel/core": "npm:^7.20.7"
-  checksum: 10/8d38a477be0c23f829d5bcfec86209c453d0aa62743cbef1d835c313e13b6fe78844c09defb345a0d24eae911b1977562af80fa268cefc0ef9e22ece6dae7256
+    "@babel/core": "npm:^7.23.9"
+  checksum: 10/a6175bf172fef64bfdfd0e6fbcc0706d4349ac70182499ad9ef862b7ddb856f39e87771ffca927b9ed607e76ed1567715623dc06f5d4a74eeeddfface57e548f
   languageName: node
   linkType: hard
 
@@ -4439,12 +4439,12 @@ __metadata:
   linkType: hard
 
 "@vanilla-extract/integration@npm:^7.0.0":
-  version: 7.1.0
-  resolution: "@vanilla-extract/integration@npm:7.1.0"
+  version: 7.1.1
+  resolution: "@vanilla-extract/integration@npm:7.1.1"
   dependencies:
-    "@babel/core": "npm:^7.20.7"
-    "@babel/plugin-syntax-typescript": "npm:^7.20.0"
-    "@vanilla-extract/babel-plugin-debug-ids": "npm:^1.0.4"
+    "@babel/core": "npm:^7.23.9"
+    "@babel/plugin-syntax-typescript": "npm:^7.23.3"
+    "@vanilla-extract/babel-plugin-debug-ids": "npm:^1.0.5"
     "@vanilla-extract/css": "npm:^1.14.0"
     esbuild: "npm:esbuild@~0.17.6 || ~0.18.0 || ~0.19.0"
     eval: "npm:0.1.8"
@@ -4455,7 +4455,7 @@ __metadata:
     outdent: "npm:^0.8.0"
     vite: "npm:^5.0.11"
     vite-node: "npm:^1.2.0"
-  checksum: 10/88ef6d8f3ab27169f3a4d911eabe6b93ca61dd9cf26662af36a06898bd87da47d6210f0374d61e17567aa8e7e71501c36da0e6c7ef9f24fa11a0c73c721ae081
+  checksum: 10/761585c98363b7f6b49cc69622d982d9eaf84c62d97a2a7d84f6de94f97341d29b544bda12492fd5e6d9c20d99255db675e0235162a749d670c39875f517d2d7
   languageName: node
   linkType: hard
 
