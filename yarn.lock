@@ -17007,8 +17007,8 @@ __metadata:
   linkType: hard
 
 "terser@npm:^5.2.0, terser@npm:^5.26.0":
-  version: 5.27.1
-  resolution: "terser@npm:5.27.1"
+  version: 5.27.2
+  resolution: "terser@npm:5.27.2"
   dependencies:
     "@jridgewell/source-map": "npm:^0.3.3"
     acorn: "npm:^8.8.2"
@@ -17016,7 +17016,7 @@ __metadata:
     source-map-support: "npm:~0.5.20"
   bin:
     terser: bin/terser
-  checksum: 10/4b5c8c65548071ae09dc1d9fd64616262876229897eaac9f95cf2e44908a1f4a25d7837c2a38caef1a523cf1cf67d254e74a846e9a854d289c0ad3664d581c3c
+  checksum: 10/589f1112d6cd7653f6e2d4a38970e97a160de01cddb214dc924aa330c22b8c3635067a47db1233e060e613e380b979ca336c3211b17507ea13b0adff10ecbd40
   languageName: node
   linkType: hard
 
@@ -18109,7 +18109,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"webpack@npm:5.90.3":
+"webpack@npm:5.90.3, webpack@npm:^5.88.1":
   version: 5.90.3
   resolution: "webpack@npm:5.90.3"
   dependencies:
@@ -18143,43 +18143,6 @@ __metadata:
   bin:
     webpack: bin/webpack.js
   checksum: 10/48c9696eca950bfa7c943a24b8235fdf0575acd73a8eb1661f8189d3d1f431362f3a0e158e2941a7e4f0852ea6e32d7d4e89283149247e4389a8aad0fe6c247e
-  languageName: node
-  linkType: hard
-
-"webpack@npm:^5.88.1":
-  version: 5.90.2
-  resolution: "webpack@npm:5.90.2"
-  dependencies:
-    "@types/eslint-scope": "npm:^3.7.3"
-    "@types/estree": "npm:^1.0.5"
-    "@webassemblyjs/ast": "npm:^1.11.5"
-    "@webassemblyjs/wasm-edit": "npm:^1.11.5"
-    "@webassemblyjs/wasm-parser": "npm:^1.11.5"
-    acorn: "npm:^8.7.1"
-    acorn-import-assertions: "npm:^1.9.0"
-    browserslist: "npm:^4.21.10"
-    chrome-trace-event: "npm:^1.0.2"
-    enhanced-resolve: "npm:^5.15.0"
-    es-module-lexer: "npm:^1.2.1"
-    eslint-scope: "npm:5.1.1"
-    events: "npm:^3.2.0"
-    glob-to-regexp: "npm:^0.4.1"
-    graceful-fs: "npm:^4.2.9"
-    json-parse-even-better-errors: "npm:^2.3.1"
-    loader-runner: "npm:^4.2.0"
-    mime-types: "npm:^2.1.27"
-    neo-async: "npm:^2.6.2"
-    schema-utils: "npm:^3.2.0"
-    tapable: "npm:^2.1.1"
-    terser-webpack-plugin: "npm:^5.3.10"
-    watchpack: "npm:^2.4.0"
-    webpack-sources: "npm:^3.2.3"
-  peerDependenciesMeta:
-    webpack-cli:
-      optional: true
-  bin:
-    webpack: bin/webpack.js
-  checksum: 10/4eaeed1255c9c7738921c4ce4facdb3b78dbfcb3441496942f6d160a41fbcebd24fb2c6dbb64739b357c5ff78e5a298f6c82eca482438b95130a3ba4e16d084a
   languageName: node
   linkType: hard
 
