@@ -4055,18 +4055,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*":
-  version: 18.2.56
-  resolution: "@types/react@npm:18.2.56"
-  dependencies:
-    "@types/prop-types": "npm:*"
-    "@types/scheduler": "npm:*"
-    csstype: "npm:^3.0.2"
-  checksum: 10/de0df184f2b80e8724d79eead47f23e43e91a68c0712a5d989db3f1242f2c24179cf8e26520b5a141396b55f4928ce9a6c3a3a121a98eca8e82973920209f06c
-  languageName: node
-  linkType: hard
-
-"@types/react@npm:18.2.57":
+"@types/react@npm:*, @types/react@npm:18.2.57":
   version: 18.2.57
   resolution: "@types/react@npm:18.2.57"
   dependencies:
@@ -5241,9 +5230,11 @@ __metadata:
   linkType: hard
 
 "available-typed-arrays@npm:^1.0.6":
-  version: 1.0.6
-  resolution: "available-typed-arrays@npm:1.0.6"
-  checksum: 10/c1e2e3d3a694f21bf60e0a048d8275fa7358131a0b8e6b57714318d618b59522416db67fb9f56973af0ce596f4333ef1336ca12c37a41d5a72ef79885373a7fd
+  version: 1.0.7
+  resolution: "available-typed-arrays@npm:1.0.7"
+  dependencies:
+    possible-typed-array-names: "npm:^1.0.0"
+  checksum: 10/6c9da3a66caddd83c875010a1ca8ef11eac02ba15fb592dc9418b2b5e7b77b645fa7729380a92d9835c2f05f2ca1b6251f39b993e0feb3f1517c74fa1af02cab
   languageName: node
   linkType: hard
 
@@ -7347,9 +7338,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.668":
-  version: 1.4.674
-  resolution: "electron-to-chromium@npm:1.4.674"
-  checksum: 10/883e62f52982a0c11e579bb5e64990b3fc42d5d150c7a6e2fdd93c06da87a759b46ee78853adac55b8c10c28dff25e7873853cd64e586da4eaf6511657b6fea0
+  version: 1.4.675
+  resolution: "electron-to-chromium@npm:1.4.675"
+  checksum: 10/9c7dbdd2543085b3b99c2349adefd9ae8ee83df633837c0c758cbb9e2c63aa755ed130ce4f5bc6cc39d8432966da189719163275c71d9d977c1c48933c3c1b73
   languageName: node
   linkType: hard
 
@@ -14266,6 +14257,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"possible-typed-array-names@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "possible-typed-array-names@npm:1.0.0"
+  checksum: 10/8ed3e96dfeea1c5880c1f4c9cb707e5fb26e8be22f14f82ef92df20fd2004e635c62ba47fbe8f2bb63bfd80dac1474be2fb39798da8c2feba2815435d1f749af
+  languageName: node
+  linkType: hard
+
 "postcss-calc@npm:^8.2.3":
   version: 8.2.4
   resolution: "postcss-calc@npm:8.2.4"
@@ -16504,8 +16502,8 @@ __metadata:
   linkType: hard
 
 "streamx@npm:^2.13.0, streamx@npm:^2.15.0":
-  version: 2.16.0
-  resolution: "streamx@npm:2.16.0"
+  version: 2.16.1
+  resolution: "streamx@npm:2.16.1"
   dependencies:
     bare-events: "npm:^2.2.0"
     fast-fifo: "npm:^1.1.0"
@@ -16513,7 +16511,7 @@ __metadata:
   dependenciesMeta:
     bare-events:
       optional: true
-  checksum: 10/b405d6e7ed8bffcd2aad84a7781dd0d5202b07384e886ac9d670421a34e0cc9962cdc864749910236bcf1048e6001275ecf83c00b418a03d15af8349821c7e93
+  checksum: 10/f6d0899adf089385d9c58a630fc705dc6c3931b18181c32860e5013955a339a3b763a4df62168f37c7fc56b1f7bb2a38db989fa9df487995278cb5d46f248da6
   languageName: node
   linkType: hard
 
@@ -17322,13 +17320,13 @@ __metadata:
   linkType: hard
 
 "typed-array-buffer@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "typed-array-buffer@npm:1.0.1"
+  version: 1.0.2
+  resolution: "typed-array-buffer@npm:1.0.2"
   dependencies:
-    call-bind: "npm:^1.0.6"
+    call-bind: "npm:^1.0.7"
     es-errors: "npm:^1.3.0"
     is-typed-array: "npm:^1.1.13"
-  checksum: 10/1d65e46b2b9b7ec2a30df39b9ddf32e55ad08d6119aec33975506a3dba56057796bdc3c64dbeb7fdb61bf340a75e279dfd55b48ce8f3b874f01731e1da6833d2
+  checksum: 10/02ffc185d29c6df07968272b15d5319a1610817916ec8d4cd670ded5d1efe72901541ff2202fcc622730d8a549c76e198a2f74e312eabbfb712ed907d45cbb0b
   languageName: node
   linkType: hard
 
