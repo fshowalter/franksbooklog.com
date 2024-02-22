@@ -16280,12 +16280,12 @@ __metadata:
   linkType: hard
 
 "socket.io-adapter@npm:~2.5.2":
-  version: 2.5.3
-  resolution: "socket.io-adapter@npm:2.5.3"
+  version: 2.5.4
+  resolution: "socket.io-adapter@npm:2.5.4"
   dependencies:
     debug: "npm:~4.3.4"
     ws: "npm:~8.11.0"
-  checksum: 10/a5c9f8e8ad15745926b3bbed7f9bde3924bd69fac88fc9a33d2821979022d6db425de50c5f5d6b5a442f927b17421f2276e6d75ef79ec1519a1f92de75ba54e1
+  checksum: 10/48f35ce91e7225565c17f55c2ed9ab4f39e06705e8278cd85e447cbb0e45fd4a16020cd5e1a170e75e06161bcd277b3a02a9305048f76704d10ee61eacba1154
   languageName: node
   linkType: hard
 
