@@ -3777,12 +3777,12 @@ __metadata:
   linkType: hard
 
 "@types/eslint@npm:*":
-  version: 8.56.3
-  resolution: "@types/eslint@npm:8.56.3"
+  version: 8.56.4
+  resolution: "@types/eslint@npm:8.56.4"
   dependencies:
     "@types/estree": "npm:*"
     "@types/json-schema": "npm:*"
-  checksum: 10/b5a006c24b5d3a2dba5acc12f21f96c960836beb08544cfedbbbd5b7770b6c951b41204d676b73d7d9065bef3435e5b4cb3796c57f66df21c12fd86018993a16
+  checksum: 10/bb8018f0c27839dd0b8c515ac4e6fac39500c36ba20007a6ecca2fe5e5f81cbecca2be8f6f649bdafd5556b8c6d5285d8506ae61cc8570f71fd4e6b07042f641
   languageName: node
   linkType: hard
 
@@ -7338,9 +7338,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.668":
-  version: 1.4.682
-  resolution: "electron-to-chromium@npm:1.4.682"
-  checksum: 10/ae36e6e5c6c1d8e78fbc7f64baa51a8c58bd483e15bde8c65f5b2f62b490769b80644a389132095803bc553aef52581e7dc1d611f43ac64d6987100bcafd2aec
+  version: 1.4.683
+  resolution: "electron-to-chromium@npm:1.4.683"
+  checksum: 10/00faa21c70a4ad5b40edbd49c6db70b34e4dddf5ff1aa979a0079d38e3abd0307de8d2f6b80d3446512e036f8f4b499e65b4673837829671f077c0bd5e161b55
   languageName: node
   linkType: hard
 
