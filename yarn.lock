@@ -7409,9 +7409,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.668":
-  version: 1.4.709
-  resolution: "electron-to-chromium@npm:1.4.709"
-  checksum: 10/63e5b684d5024d5410137aa84f5e2189761c458f5f3dcf561a716b7cc53bce3bd85d4c1cd4c647839f08e52667a6fe595908da4bd85a026888a9c5c016a78dba
+  version: 1.4.710
+  resolution: "electron-to-chromium@npm:1.4.710"
+  checksum: 10/9f20e58d35350141e3c8d8ea577249cacf91e91ac57be2ad631606c4fb2ee627c6054e4dff152800c438faa1dc1cd14ae244a9e270eaec11821e0de263ff5de5
   languageName: node
   linkType: hard
 
@@ -13761,13 +13761,13 @@ __metadata:
   linkType: hard
 
 "object.entries@npm:^1.1.5, object.entries@npm:^1.1.7":
-  version: 1.1.7
-  resolution: "object.entries@npm:1.1.7"
+  version: 1.1.8
+  resolution: "object.entries@npm:1.1.8"
   dependencies:
-    call-bind: "npm:^1.0.2"
-    define-properties: "npm:^1.2.0"
-    es-abstract: "npm:^1.22.1"
-  checksum: 10/03f0bd0f23a8626c94429d15abf26ccda7723f08cd26be2c09c72d436765f8c7468605b5476ca58d4a7cec1ec7eca5be496dbd938fd4236b77ed6d05a8680048
+    call-bind: "npm:^1.0.7"
+    define-properties: "npm:^1.2.1"
+    es-object-atoms: "npm:^1.0.0"
+  checksum: 10/2301918fbd1ee697cf6ff7cd94f060c738c0a7d92b22fd24c7c250e9b593642c9707ad2c44d339303c1439c5967d8964251cdfc855f7f6ec55db2dd79e8dc2a7
   languageName: node
   linkType: hard
 
