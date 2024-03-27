@@ -4223,17 +4223,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*":
-  version: 18.2.72
-  resolution: "@types/react@npm:18.2.72"
-  dependencies:
-    "@types/prop-types": "npm:*"
-    csstype: "npm:^3.0.2"
-  checksum: 10/0c15461eeb8cd5153b48446d4aae681ae1d4f45fa5828fc53c12aaac9dfe426a64259a284737f6abfc3bea36df9507c129d7065ebb390b21349ad30128385ac1
-  languageName: node
-  linkType: hard
-
-"@types/react@npm:18.2.73":
+"@types/react@npm:*, @types/react@npm:18.2.73":
   version: 18.2.73
   resolution: "@types/react@npm:18.2.73"
   dependencies:
@@ -7574,9 +7564,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.668":
-  version: 1.4.717
-  resolution: "electron-to-chromium@npm:1.4.717"
-  checksum: 10/ec5df5f0731cd4b7e42d93ab9d17ac5c53bc6c6a0cd298af090c96717652cc8962a72094fd602aff3245eb839712ed7a2587f4e0d90a6bf7834f105a06fefa85
+  version: 1.4.718
+  resolution: "electron-to-chromium@npm:1.4.718"
+  checksum: 10/068fe69d20eace9575a4687c1a1276ff8a996a8a097ec1a60908b9cfdb4f6b8f6c130b8d3a9ad0844796a6cae3c8ff2567c372e6b6278f8e360d19e823fbd7fe
   languageName: node
   linkType: hard
 
