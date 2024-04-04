@@ -5755,11 +5755,11 @@ __metadata:
   linkType: hard
 
 "bare-path@npm:^2.0.0, bare-path@npm:^2.1.0":
-  version: 2.1.0
-  resolution: "bare-path@npm:2.1.0"
+  version: 2.1.1
+  resolution: "bare-path@npm:2.1.1"
   dependencies:
     bare-os: "npm:^2.1.0"
-  checksum: 10/811b9414448e8523a1323bc49d773673be0c72b3e008c99041b1bea516064227a530f27e8a35bd91cabc0d1026c5a0898f09ab5347cb3afd5a13fa519e6e973e
+  checksum: 10/3901d415f086706dec19173ce1341dec509fa18d7eb464ef024b915a04f1519b30082f47550c68baf0223cd4abd36da80898d77b2fae1051c58f63d9ecb1c2fd
   languageName: node
   linkType: hard
 
