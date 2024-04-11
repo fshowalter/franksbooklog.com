@@ -3712,9 +3712,9 @@ __metadata:
   linkType: hard
 
 "@socket.io/component-emitter@npm:~3.1.0":
-  version: 3.1.0
-  resolution: "@socket.io/component-emitter@npm:3.1.0"
-  checksum: 10/db069d95425b419de1514dffe945cc439795f6a8ef5b9465715acf5b8b50798e2c91b8719cbf5434b3fe7de179d6cdcd503c277b7871cb3dd03febb69bdd50fa
+  version: 3.1.1
+  resolution: "@socket.io/component-emitter@npm:3.1.1"
+  checksum: 10/93792eafb63ad15259ba00885c3cf4fdc01d969b1db10a273ccac70bed2373b5170cbc94682372d666a44e4ad8faeb176fb6cbaaeeb66c87231e2ff3d72583f9
   languageName: node
   linkType: hard
 
@@ -7224,14 +7224,14 @@ __metadata:
   linkType: hard
 
 "dedent@npm:^1.0.0":
-  version: 1.5.1
-  resolution: "dedent@npm:1.5.1"
+  version: 1.5.3
+  resolution: "dedent@npm:1.5.3"
   peerDependencies:
     babel-plugin-macros: ^3.1.0
   peerDependenciesMeta:
     babel-plugin-macros:
       optional: true
-  checksum: 10/fc00a8bc3dfb7c413a778dc40ee8151b6c6ff35159d641f36ecd839c1df5c6e0ec5f4992e658c82624a1a62aaecaffc23b9c965ceb0bbf4d698bfc16469ac27d
+  checksum: 10/e5277f6268f288649503125b781a7b7a2c9b22d011139688c0b3619fe40121e600eb1f077c891938d4b2428bdb6326cc3c77a763e4b1cc681bd9666ab1bad2a1
   languageName: node
   linkType: hard
 
@@ -7611,9 +7611,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.668":
-  version: 1.4.731
-  resolution: "electron-to-chromium@npm:1.4.731"
-  checksum: 10/ec73815fd0dc77e6ba74771c6bb57822d5bdef3267f9cc1c80c378c01682afef346b6f2d423b0277ce4635e709788a950716425866df5e1c30ea756724338f26
+  version: 1.4.733
+  resolution: "electron-to-chromium@npm:1.4.733"
+  checksum: 10/5482f20ffc76172356d2cfb1a56ea0fd69d2d5b89c0536d3ea6746951b0d61cbdd41bd3029cfbf99d9739774faf16a86c3b046cc7715ecaf5c2be7e6d9e58d52
   languageName: node
   linkType: hard
 
@@ -10422,11 +10422,11 @@ __metadata:
   linkType: hard
 
 "graphql-http@npm:^1.19.0":
-  version: 1.22.0
-  resolution: "graphql-http@npm:1.22.0"
+  version: 1.22.1
+  resolution: "graphql-http@npm:1.22.1"
   peerDependencies:
     graphql: ">=0.11 <=16"
-  checksum: 10/1a19553841d24d9674bd3fc0ea091b37582be788592c650adefde09736422711349b8f8c1c1f06b192c4a60ba9ff27bf5ea7ec4d9f1871598e6ca903d409fbe8
+  checksum: 10/86dfad225069aa21c5cd88525e350ef505862dbf32de03a747653fb46653a8e6a3a273bc1a2395a8381126c6952f89d32ba204ec3507c97cf897566f33c93c4f
   languageName: node
   linkType: hard
 
