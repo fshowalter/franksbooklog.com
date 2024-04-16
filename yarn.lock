@@ -4250,17 +4250,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*":
-  version: 18.2.78
-  resolution: "@types/react@npm:18.2.78"
-  dependencies:
-    "@types/prop-types": "npm:*"
-    csstype: "npm:^3.0.2"
-  checksum: 10/a4bf8104c580fab40535cc6058425ac6a47c19b8dad45b566cdb38aaafa3ffa1f24e7b65ec95e391a6c18ccf4a33738a591c1f723c00300f13d61fc456a1eb8d
-  languageName: node
-  linkType: hard
-
-"@types/react@npm:18.2.79":
+"@types/react@npm:*, @types/react@npm:18.2.79":
   version: 18.2.79
   resolution: "@types/react@npm:18.2.79"
   dependencies:
@@ -13768,11 +13758,11 @@ __metadata:
   linkType: hard
 
 "node-abi@npm:^3.3.0":
-  version: 3.57.0
-  resolution: "node-abi@npm:3.57.0"
+  version: 3.58.0
+  resolution: "node-abi@npm:3.58.0"
   dependencies:
     semver: "npm:^7.3.5"
-  checksum: 10/d0634a5f4de326e7cbf8b23e5f91d809ea3996ac42b639263b5ff69a11eab286eab94736c07a6f931e173c75cc9ab6c6e7ec4b70ebb7049648a1d499b665dd08
+  checksum: 10/178d846b7f6857f549d2e6d7d7ea6daff01c22436df0719bf458c377d830a40cc5f123475b6c4605f43c42edb937f406e5e1aa27e28695a5121592b2ec6e5063
   languageName: node
   linkType: hard
 
