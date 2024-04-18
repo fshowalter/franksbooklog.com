@@ -13758,11 +13758,11 @@ __metadata:
   linkType: hard
 
 "node-abi@npm:^3.3.0":
-  version: 3.58.0
-  resolution: "node-abi@npm:3.58.0"
+  version: 3.59.0
+  resolution: "node-abi@npm:3.59.0"
   dependencies:
     semver: "npm:^7.3.5"
-  checksum: 10/178d846b7f6857f549d2e6d7d7ea6daff01c22436df0719bf458c377d830a40cc5f123475b6c4605f43c42edb937f406e5e1aa27e28695a5121592b2ec6e5063
+  checksum: 10/492ce7c0242d655a6687850369fd3382f6bc389728164c179bd7b02f265ade94b582d9171a3414a66e4bcef2cd5ecc17bd7e33ceac7d4e784ff33ef83e5f3749
   languageName: node
   linkType: hard
 
