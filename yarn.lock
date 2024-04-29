@@ -4679,22 +4679,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vanilla-extract/css@npm:1.15.0":
-  version: 1.15.0
-  resolution: "@vanilla-extract/css@npm:1.15.0"
+"@vanilla-extract/css@npm:1.15.1":
+  version: 1.15.1
+  resolution: "@vanilla-extract/css@npm:1.15.1"
   dependencies:
     "@emotion/hash": "npm:^0.9.0"
     "@vanilla-extract/private": "npm:^1.0.4"
-    chalk: "npm:^4.1.1"
     css-what: "npm:^6.1.0"
     cssesc: "npm:^3.0.0"
     csstype: "npm:^3.0.7"
+    dedent: "npm:^1.5.1"
     deep-object-diff: "npm:^1.1.9"
     deepmerge: "npm:^4.2.2"
     media-query-parser: "npm:^2.0.2"
     modern-ahocorasick: "npm:^1.0.0"
-    outdent: "npm:^0.8.0"
-  checksum: 10c0/18d06317e5b1f1c1229cdfbe5ad8341b021c6aca752dd5b9e1f029fe0e58908b3498f1d8a4bcb118d59072c1704ad88fbe5b615b4bdc12296c508820aaca4b7b
+    picocolors: "npm:^1.0.0"
+  checksum: 10c0/f8c72779f5814a23f4fe5cfba60e606499edbce1b521a48e65ae68153d1042aa2396d00f5c3b00272f3c246c625dfd438b55f1357ccc453e576e9679bb3d8d58
   languageName: node
   linkType: hard
 
@@ -7268,7 +7268,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dedent@npm:^1.0.0":
+"dedent@npm:^1.0.0, dedent@npm:^1.5.1":
   version: 1.5.3
   resolution: "dedent@npm:1.5.3"
   peerDependencies:
@@ -9323,7 +9323,7 @@ __metadata:
     "@types/unist": "npm:2.0.10"
     "@typescript-eslint/eslint-plugin": "npm:7.7.1"
     "@typescript-eslint/parser": "npm:7.7.1"
-    "@vanilla-extract/css": "npm:1.15.0"
+    "@vanilla-extract/css": "npm:1.15.1"
     "@vanilla-extract/jest-transform": "npm:1.1.4"
     "@vanilla-extract/sprinkles": "npm:1.6.1"
     "@vanilla-extract/webpack-plugin": "npm:2.3.7"
