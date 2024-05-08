@@ -4963,13 +4963,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"address@npm:^2.0.2":
-  version: 2.0.2
-  resolution: "address@npm:2.0.2"
-  checksum: 10c0/1b2a57081361c0669511f03582b7db35daab771d35735ac458bd66291afaa5c27cda4da12c048ab2124075e26a83638893eae673fb380b6538c03799deced620
-  languageName: node
-  linkType: hard
-
 "agent-base@npm:6":
   version: 6.0.2
   resolution: "agent-base@npm:6.0.2"
@@ -7325,14 +7318,15 @@ __metadata:
   linkType: hard
 
 "detect-port@npm:^1.5.1":
-  version: 1.6.0
-  resolution: "detect-port@npm:1.6.0"
+  version: 1.6.1
+  resolution: "detect-port@npm:1.6.1"
   dependencies:
-    address: "npm:^2.0.2"
+    address: "npm:^1.0.1"
+    debug: "npm:4"
   bin:
     detect: bin/detect-port.js
     detect-port: bin/detect-port.js
-  checksum: 10c0/9519e9513d0ed27bf04465358a577d9d2476e57fe015d5a03e22ed3f89e2454202741264d7022d5b710a4f16aec2bebf8e3fdc0368a120385c71a3def465aa78
+  checksum: 10c0/4ea9eb46a637cb21220dd0a62b6074792894fc77b2cacbc9de533d1908b2eedafa7bfd7547baaa2ac1e9c7ba7c289b34b17db896dca6da142f4fc6e2060eee17
   languageName: node
   linkType: hard
 
