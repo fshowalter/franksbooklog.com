@@ -7553,9 +7553,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.668":
-  version: 1.4.780
-  resolution: "electron-to-chromium@npm:1.4.780"
-  checksum: 10c0/a7ceb83bbebe09671fbd6289c4470fb026fedbf2998537403a3e83d6674b1059f62b77135841f404b247370088eae8bd6495664d77f9c7b273c33c4897f65a2f
+  version: 1.4.781
+  resolution: "electron-to-chromium@npm:1.4.781"
+  checksum: 10c0/994444e7f00dd98e8e941a8ea30a36243318d51645e364945802fdefb45a232431b60b3bb400f4dc095cc86b71e0ffa8ec6fd35e5047f6127a7ab1c22218eecd
   languageName: node
   linkType: hard
 
@@ -7871,7 +7871,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"es5-ext@npm:^0.10.35, es5-ext@npm:^0.10.46, es5-ext@npm:^0.10.53, es5-ext@npm:^0.10.62, es5-ext@npm:^0.10.64, es5-ext@npm:~0.10.14, es5-ext@npm:~0.10.2, es5-ext@npm:~0.10.46":
+"es5-ext@npm:^0.10.35, es5-ext@npm:^0.10.46, es5-ext@npm:^0.10.62, es5-ext@npm:^0.10.64, es5-ext@npm:~0.10.14, es5-ext@npm:~0.10.2, es5-ext@npm:~0.10.46":
   version: 0.10.64
   resolution: "es5-ext@npm:0.10.64"
   dependencies:
@@ -13100,18 +13100,18 @@ __metadata:
   linkType: hard
 
 "memoizee@npm:^0.4.15":
-  version: 0.4.15
-  resolution: "memoizee@npm:0.4.15"
+  version: 0.4.16
+  resolution: "memoizee@npm:0.4.16"
   dependencies:
-    d: "npm:^1.0.1"
-    es5-ext: "npm:^0.10.53"
+    d: "npm:^1.0.2"
+    es5-ext: "npm:^0.10.64"
     es6-weak-map: "npm:^2.0.3"
     event-emitter: "npm:^0.3.5"
     is-promise: "npm:^2.2.2"
     lru-queue: "npm:^0.1.0"
     next-tick: "npm:^1.1.0"
     timers-ext: "npm:^0.1.7"
-  checksum: 10c0/297e65cd8256bdf24c48f5e158da80d4c9688db0d6e65c5dcc13fa768e782ddeb71aec36925359931b5efef0efc6666b5bb2af6deb3de63d4258a3821ed16fce
+  checksum: 10c0/5e0d83ac68d69bb03e13793a2d8c1fb1877699bea913d277a10ebd6c2f0ee824b46b3eb7b71e8ce0d20f79dbe9405c30e5755ac1772261827c78c181c0d4b25a
   languageName: node
   linkType: hard
 
