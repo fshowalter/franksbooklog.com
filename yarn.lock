@@ -13100,8 +13100,8 @@ __metadata:
   linkType: hard
 
 "memoizee@npm:^0.4.15":
-  version: 0.4.16
-  resolution: "memoizee@npm:0.4.16"
+  version: 0.4.17
+  resolution: "memoizee@npm:0.4.17"
   dependencies:
     d: "npm:^1.0.2"
     es5-ext: "npm:^0.10.64"
@@ -13111,7 +13111,7 @@ __metadata:
     lru-queue: "npm:^0.1.0"
     next-tick: "npm:^1.1.0"
     timers-ext: "npm:^0.1.7"
-  checksum: 10c0/5e0d83ac68d69bb03e13793a2d8c1fb1877699bea913d277a10ebd6c2f0ee824b46b3eb7b71e8ce0d20f79dbe9405c30e5755ac1772261827c78c181c0d4b25a
+  checksum: 10c0/19821d055f0f641e79b718f91d6d89a6c92840643234a6f4e91d42aa330e8406f06c47d3828931e177c38830aa9b959710e5b7f0013be452af46d0f9eae4baf4
   languageName: node
   linkType: hard
 
