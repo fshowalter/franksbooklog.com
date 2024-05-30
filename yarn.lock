@@ -7552,9 +7552,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.668":
-  version: 1.4.786
-  resolution: "electron-to-chromium@npm:1.4.786"
-  checksum: 10c0/ba07145a675d4fefda595cc263d4410d7ab49a35c269daa4bebb43993170f4a77942a0b1d80c5de41ac72aa2f595f15ddc129917e0a0ea6a817bed0ddbfd52dd
+  version: 1.4.787
+  resolution: "electron-to-chromium@npm:1.4.787"
+  checksum: 10c0/fa509ca710186461dd53e31773a7b06af3a958ab9b06b2e3d1d64de35204df2ff6f2050c94186adf4b850583666a50d30a6912103a0e3f5bcfc97864712ff424
   languageName: node
   linkType: hard
 
@@ -16792,8 +16792,8 @@ __metadata:
   linkType: hard
 
 "streamx@npm:^2.15.0, streamx@npm:^2.16.1":
-  version: 2.16.1
-  resolution: "streamx@npm:2.16.1"
+  version: 2.17.0
+  resolution: "streamx@npm:2.17.0"
   dependencies:
     bare-events: "npm:^2.2.0"
     fast-fifo: "npm:^1.1.0"
@@ -16801,7 +16801,7 @@ __metadata:
   dependenciesMeta:
     bare-events:
       optional: true
-  checksum: 10c0/202b1d7cb7ceb36cdc5d5d0e2c27deafcc8670a4934cda7a5e3d3d45b8d3a64dc43f1b982b1c1cb316f01964dd5137b7e26af3151582c7c29ad3cf4072c6dbb9
+  checksum: 10c0/d302ed1a9e534ad98afd33b7e5ec59865912126a5714c010042ace151caef8f4277ad998025c04898948943323f7cc5f65417c9e03510fb9a855d07f5dd9559b
   languageName: node
   linkType: hard
 
