@@ -7686,12 +7686,12 @@ __metadata:
   linkType: hard
 
 "enhanced-resolve@npm:^5.12.0, enhanced-resolve@npm:^5.15.0, enhanced-resolve@npm:^5.16.0":
-  version: 5.16.1
-  resolution: "enhanced-resolve@npm:5.16.1"
+  version: 5.17.0
+  resolution: "enhanced-resolve@npm:5.17.0"
   dependencies:
     graceful-fs: "npm:^4.2.4"
     tapable: "npm:^2.2.0"
-  checksum: 10c0/57d52625b978f18b32351a03006699de1e3695ce27af936ab4f1f98d3a4c825b219b445910bb4eef398303bbb5f37d7e382f842513d0f3a32614b78f6fd07ab7
+  checksum: 10c0/90065e58e4fd08e77ba47f827eaa17d60c335e01e4859f6e644bb3b8d0e32b203d33894aee92adfa5121fa262f912b48bdf0d0475e98b4a0a1132eea1169ad37
   languageName: node
   linkType: hard
 
@@ -11719,15 +11719,15 @@ __metadata:
   linkType: hard
 
 "jackspeak@npm:^3.1.2":
-  version: 3.2.3
-  resolution: "jackspeak@npm:3.2.3"
+  version: 3.2.4
+  resolution: "jackspeak@npm:3.2.4"
   dependencies:
     "@isaacs/cliui": "npm:^8.0.2"
     "@pkgjs/parseargs": "npm:^0.11.0"
   dependenciesMeta:
     "@pkgjs/parseargs":
       optional: true
-  checksum: 10c0/eed7a5056ac8cdafcadeb1fedbfbe96aef4e7fea7cf6f536f48696df7ef4d423c323ba03320860b886ecf1e59d0478bb3d0f8ed7d464932c7e3c0712095425f1
+  checksum: 10c0/52a16d47f7742e4140314066ae7436232821df6c468a2770c47b864f62e40bc7fe1a8373adc4479044b5d59455f54db7930a9cb16a2499ea939bdbfb7b53685b
   languageName: node
   linkType: hard
 
@@ -12619,9 +12619,9 @@ __metadata:
   linkType: hard
 
 "loader-utils@npm:^3.2.0":
-  version: 3.2.2
-  resolution: "loader-utils@npm:3.2.2"
-  checksum: 10c0/0f458f2dee67c07463d134430a849d78555a49a3893b44932e2d6f245ac6838fed292c4b63d8f87c29528d1ac7a6b1a53e605a55985a97fb1cee4e7a9546cd5b
+  version: 3.3.0
+  resolution: "loader-utils@npm:3.3.0"
+  checksum: 10c0/e9770dbf51c9680d3da5173d9aae40f41c58563bc6a648f6d8b02c4828418783cbdcc0cf4e082be6c0eb3ca52d90736130ce1f3fe8fa1a64846902987e09b8bc
   languageName: node
   linkType: hard
 
