@@ -5794,11 +5794,11 @@ __metadata:
   linkType: hard
 
 "bare-stream@npm:^2.0.0":
-  version: 2.0.1
-  resolution: "bare-stream@npm:2.0.1"
+  version: 2.1.0
+  resolution: "bare-stream@npm:2.1.0"
   dependencies:
     streamx: "npm:^2.18.0"
-  checksum: 10c0/79185d1f4c0b299ce9e79023d73713ab41df518fab040285bad16deea42808cd2f90b792a48ba06fde419d56e0fbab4aa54b5ce5f8e9bc15acabee1832f72e80
+  checksum: 10c0/eede27114b209eb3b455a5c63f5926d17ffc28f28c5a61e502a5f9d92e0e1e8238f3ee7c9099fe07149e30d3223f6791b3704ff7d2d669f8dcd1fc13d41a9fc5
   languageName: node
   linkType: hard
 
