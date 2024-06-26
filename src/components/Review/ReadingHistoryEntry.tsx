@@ -150,7 +150,7 @@ function ReadingNote({
 }: {
   reading: Queries.ReviewReadingHistoryEntryFragment;
 }) {
-  if (!reading.readingNote) {
+  if (!reading.readingNotes) {
     return null;
   }
   return (
@@ -159,7 +159,7 @@ function ReadingNote({
         fontSize="default"
         lineHeight="default"
         // eslint-disable-next-line react/no-danger
-        text={reading.readingNote.linkedHtml}
+        text={reading.readingNotes.linkedHtml}
       />
     </Box>
   );
@@ -197,7 +197,7 @@ export const query = graphql`
     isAudiobook
     readingTime
     abandoned
-    readingNote {
+    readingNotes {
       linkedHtml
     }
     sequence

@@ -139,7 +139,7 @@ export const ReviewedWorksJsonReading = {
     abandoned: "Boolean!",
     timeline: `[${SchemaNames.ReviewedWorksJsonReadingTimelineEntry}!]!`,
     readingTime: "Int",
-    readingNote: {
+    readingNotes: {
       type: SchemaNames.MarkdownRemark,
       resolve: async (
         source: {
@@ -153,7 +153,7 @@ export const ReviewedWorksJsonReading = {
           query: {
             filter: {
               fileAbsolutePath: {
-                regex: `//reading_notes/${source.sequence
+                regex: `//readings/${source.sequence
                   .toString()
                   .padStart(4, "0")}-.*/`,
               },
