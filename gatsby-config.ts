@@ -85,7 +85,7 @@ const gatsbySourceFileSystemReviews = {
 const gatsbySourceFileSystemReadingNotes = {
   resolve: `gatsby-source-filesystem`,
   options: {
-    path: path.resolve("content/reading_notes"),
+    path: path.resolve("content/readings"),
     name: `reading_notes`,
   },
 };

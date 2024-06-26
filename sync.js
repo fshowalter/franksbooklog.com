@@ -5,18 +5,14 @@ const fs = require("fs");
 const path = require("path");
 
 chokidar
-  .watch([
-    "../booklog/reviews",
-    "../booklog/export",
-    "../booklog/reading_notes",
-  ])
+  .watch(["../booklog/reviews", "../booklog/export", "../booklog/readings"])
   .on("all", (event, sourcePath) => {
     if (event === "add" || event === "change") {
       console.log(event, sourcePath); // eslint-disable-line no-console
 
       let dest;
       const name = sourcePath.replace(
-        /..\/booklog\/(export|reviews|reading_notes)\//,
+        /..\/booklog\/(export|reviews|readings)\//,
         "",
       );
 
@@ -24,8 +20,8 @@ chokidar
         dest = `${__dirname}/content/reviews/${name}`;
       }
 
-      if (/\/reading_notes\//.test(sourcePath)) {
-        dest = `${__dirname}/content/reading_notes/${name}`;
+      if (/\/readings\//.test(sourcePath)) {
+        dest = `${__dirname}/content/readings/${name}`;
       }
 
       if (/\/export\//.test(sourcePath)) {

@@ -279,7 +279,7 @@ export const data = {
         isAudiobook: false,
         readingTime: 21,
         abandoned: false,
-        readingNote: null,
+        readingNotes: null,
         sequence: 17,
         timeline: [
           {
@@ -542,7 +542,7 @@ export const abandonedData = {
         isAudiobook: false,
         readingTime: 9,
         abandoned: true,
-        readingNote: null,
+        readingNotes: null,
         sequence: 20,
         timeline: [
           {
@@ -777,7 +777,7 @@ export const readingNoteData = {
         isAudiobook: true,
         readingTime: 14,
         abandoned: false,
-        readingNote: {
+        readingNotes: {
           linkedHtml:
             "<p>I enjoyed Campbell Scott’s narration. His performance of Dick Hallorann, the aging black cook who warns Danny about the hotel, rang true—as improbable as that may seem. And his deadpan intonation as Grady, the bartender apparition that welcomes Jack to the hotel’s evil embrace, chilled. So did Scott’s take on Jack’s seething rage in the finale. My lone complaint lies with him pitching up his voice for Danny, an affectation that—during the finale in particular—took me out of the story.</p>",
         },
