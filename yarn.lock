@@ -17254,11 +17254,11 @@ __metadata:
   linkType: hard
 
 "text-decoder@npm:^1.1.0":
-  version: 1.1.0
-  resolution: "text-decoder@npm:1.1.0"
+  version: 1.1.1
+  resolution: "text-decoder@npm:1.1.1"
   dependencies:
     b4a: "npm:^1.6.4"
-  checksum: 10c0/623a6cfb5ee86c250fea31f369a0d40e4ef5c2c32ce8db43492648b51193858213e61bf47a6078f285053715dcc6342806ce6ea9a49d7847ffca282ca88ad7e8
+  checksum: 10c0/e527d05454b59c0fa77456495de68c88e560a122de3dd28b3ebdbf81828aabeaa7e9bb8054b9eb52bc5029ccb5899ad04f466cbba3c53b2685270599d1710cee
   languageName: node
   linkType: hard
 
