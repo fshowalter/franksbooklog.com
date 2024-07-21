@@ -4,12 +4,12 @@
   },
   "[typescript]": {
     "editor.codeActionsOnSave": {
-      "source.organizeImports": true
+      "source.organizeImports": "explicit"
     }
   },
   "[typescriptreact]": {
     "editor.codeActionsOnSave": {
-      "source.organizeImports": true
+      "source.organizeImports": "explicit"
     }
   },
   "css.validate": false,
@@ -23,7 +23,6 @@
   "files.autoSaveDelay": 500,
   "stylelint.packageManager": "yarn",
   "stylelint.reportNeedlessDisables": true,
-  "eslint.packageManager": "yarn",
   "typescript.tsdk": "node_modules/typescript/lib",
   "jest.autoRun": "off",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
