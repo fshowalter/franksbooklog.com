@@ -1,0 +1,115 @@
+{
+  "sequence": 59,
+  "slug": "fast-forward-by-stephen-morris",
+  "title": "Fast Forward",
+  "subtitle": "Confessions of a Post-Punk Percussionist: Volume II",
+  "sortTitle": "Fast Forward: Confessions of a Post-Punk Percussionist: Volume II",
+  "yearPublished": "2020",
+  "grade": "B",
+  "gradeValue": 9,
+  "kind": "Nonfiction",
+  "date": "2024-07-01",
+  "authors": [
+    {
+      "slug": "stephen-morris",
+      "notes": null,
+      "name": "Stephen Morris",
+      "sortName": "Morris, Stephen"
+    }
+  ],
+  "readings": [
+    {
+      "sequence": 59,
+      "date": "2024-07-01",
+      "edition": "Audible",
+      "editionNotes": null,
+      "isAudiobook": true,
+      "abandoned": false,
+      "readingTime": 4,
+      "timeline": [
+        {
+          "date": "2024-06-28",
+          "progress": "25%"
+        },
+        {
+          "date": "2024-06-29",
+          "progress": "45%"
+        },
+        {
+          "date": "2024-06-30",
+          "progress": "70%"
+        },
+        {
+          "date": "2024-07-01",
+          "progress": "Finished"
+        }
+      ]
+    }
+  ],
+  "includedInSlugs": [],
+  "yearReviewed": 2024,
+  "moreByAuthors": [],
+  "moreReviews": [
+    {
+      "title": "Extreme Ownership",
+      "kind": "Nonfiction",
+      "yearPublished": "2015",
+      "slug": "extreme-ownership-by-jocko-willink-leif-babin",
+      "grade": "A",
+      "includedInSlugs": [],
+      "authors": [
+        {
+          "name": "Jocko Willink"
+        },
+        {
+          "name": "Leif Babin"
+        }
+      ]
+    },
+    {
+      "title": "Fail-Safe",
+      "kind": "Short Story",
+      "yearPublished": "2017",
+      "slug": "fail-safe-by-philip-fracassi",
+      "grade": "C",
+      "includedInSlugs": [
+        "behold-the-void-by-philip-fracassi"
+      ],
+      "authors": [
+        {
+          "name": "Philip Fracassi"
+        }
+      ]
+    },
+    {
+      "title": "Fight Club",
+      "kind": "Novel",
+      "yearPublished": "1996",
+      "slug": "fight-club-by-chuck-palahniuk",
+      "grade": "A-",
+      "includedInSlugs": [],
+      "authors": [
+        {
+          "name": "Chuck Palahniuk"
+        }
+      ]
+    },
+    {
+      "title": "Fright Night",
+      "kind": "Novel",
+      "yearPublished": "1985",
+      "slug": "fright-night-by-john-skipp-craig-spector",
+      "grade": "F",
+      "includedInSlugs": [],
+      "authors": [
+        {
+          "name": "John Skipp"
+        },
+        {
+          "name": "Craig Spector"
+        }
+      ]
+    }
+  ],
+  "includedWorks": []
+}

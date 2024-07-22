@@ -95,22 +95,6 @@
   "moreByAuthors": [],
   "moreReviews": [
     {
-      "title": "Fright Night",
-      "kind": "Novel",
-      "yearPublished": "1985",
-      "slug": "fright-night-by-john-skipp-craig-spector",
-      "grade": "F",
-      "includedInSlugs": [],
-      "authors": [
-        {
-          "name": "John Skipp"
-        },
-        {
-          "name": "Craig Spector"
-        }
-      ]
-    },
-    {
       "title": "Fright Night Origins",
       "kind": "Novel",
       "yearPublished": "2023",
@@ -123,6 +107,19 @@
         },
         {
           "name": "A. Jack Ulrich"
+        }
+      ]
+    },
+    {
+      "title": "Gothic",
+      "kind": "Novel",
+      "yearPublished": "2023",
+      "slug": "gothic-by-philip-fracassi",
+      "grade": "B+",
+      "includedInSlugs": [],
+      "authors": [
+        {
+          "name": "Philip Fracassi"
         }
       ]
     },

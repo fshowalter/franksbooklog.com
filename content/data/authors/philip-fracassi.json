@@ -126,6 +126,25 @@
       ]
     },
     {
+      "title": "Gothic",
+      "yearPublished": "2023",
+      "kind": "Novel",
+      "slug": "gothic-by-philip-fracassi",
+      "sortTitle": "Gothic",
+      "reviewed": true,
+      "grade": "B+",
+      "gradeValue": 10,
+      "authors": [
+        {
+          "slug": "philip-fracassi",
+          "notes": null,
+          "name": "Philip Fracassi",
+          "sortName": "Fracassi, Philip"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
       "title": "The Horse Thief",
       "yearPublished": "2017",
       "kind": "Short Story",
@@ -250,6 +269,6 @@
       ]
     }
   ],
-  "reviewedWorkCount": 12,
-  "workCount": 12
+  "reviewedWorkCount": 13,
+  "workCount": 13
 }

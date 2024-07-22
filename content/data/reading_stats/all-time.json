@@ -1,8 +1,8 @@
 {
   "span": "all-time",
-  "reviews": 57,
-  "readWorks": 57,
-  "books": 45,
+  "reviews": 59,
+  "readWorks": 59,
+  "books": 47,
   "gradeDistribution": [
     {
       "name": "A-",
@@ -10,7 +10,7 @@
     },
     {
       "name": "B+",
-      "count": 6
+      "count": 7
     },
     {
       "name": "C",
@@ -18,7 +18,7 @@
     },
     {
       "name": "B",
-      "count": 9
+      "count": 10
     },
     {
       "name": "B-",
@@ -56,11 +56,11 @@
   "kindDistribution": [
     {
       "name": "Nonfiction",
-      "count": 21
+      "count": 22
     },
     {
       "name": "Novel",
-      "count": 23
+      "count": 24
     },
     {
       "name": "Short Story",
@@ -78,11 +78,11 @@
   "editionDistribution": [
     {
       "name": "Kindle",
-      "count": 31
+      "count": 32
     },
     {
       "name": "Audible",
-      "count": 26
+      "count": 27
     }
   ],
   "decadeDistribution": [
@@ -124,7 +124,7 @@
     },
     {
       "name": "2020s",
-      "count": 6
+      "count": 8
     }
   ],
   "mostReadAuthors": [
@@ -277,7 +277,7 @@
     },
     {
       "name": "Philip Fracassi",
-      "count": 12,
+      "count": 13,
       "slug": "philip-fracassi",
       "readings": [
         {
@@ -417,6 +417,16 @@
           "title": "Don't Let Them Get You Down",
           "yearPublished": "2022",
           "includedInSlugs": []
+        },
+        {
+          "sequence": 58,
+          "date": "2024-06-30",
+          "slug": "gothic-by-philip-fracassi",
+          "edition": "Kindle",
+          "kind": "Novel",
+          "title": "Gothic",
+          "yearPublished": "2023",
+          "includedInSlugs": []
         }
       ]
     },
@@ -479,6 +489,33 @@
           "edition": "Audible",
           "kind": "Nonfiction",
           "title": "Consider This",
+          "yearPublished": "2020",
+          "includedInSlugs": []
+        }
+      ]
+    },
+    {
+      "name": "Stephen Morris",
+      "count": 2,
+      "slug": "stephen-morris",
+      "readings": [
+        {
+          "sequence": 57,
+          "date": "2023-11-11",
+          "slug": "record-play-pause-by-stephen-morris",
+          "edition": "Audible",
+          "kind": "Nonfiction",
+          "title": "Record Play Pause",
+          "yearPublished": "2019",
+          "includedInSlugs": []
+        },
+        {
+          "sequence": 59,
+          "date": "2024-07-01",
+          "slug": "fast-forward-by-stephen-morris",
+          "edition": "Audible",
+          "kind": "Nonfiction",
+          "title": "Fast Forward",
           "yearPublished": "2020",
           "includedInSlugs": []
         }
