@@ -1,12 +1,12 @@
 {
   "span": "all-time",
   "reviews": 59,
-  "readWorks": 59,
-  "books": 47,
+  "readWorks": 60,
+  "books": 48,
   "gradeDistribution": [
     {
       "name": "A-",
-      "count": 7
+      "count": 8
     },
     {
       "name": "B+",
@@ -18,7 +18,7 @@
     },
     {
       "name": "B",
-      "count": 10
+      "count": 9
     },
     {
       "name": "B-",
@@ -56,7 +56,7 @@
   "kindDistribution": [
     {
       "name": "Nonfiction",
-      "count": 22
+      "count": 23
     },
     {
       "name": "Novel",
@@ -82,7 +82,7 @@
     },
     {
       "name": "Audible",
-      "count": 27
+      "count": 28
     }
   ],
   "decadeDistribution": [
@@ -124,7 +124,7 @@
     },
     {
       "name": "2020s",
-      "count": 8
+      "count": 9
     }
   ],
   "mostReadAuthors": [
@@ -419,7 +419,7 @@
           "includedInSlugs": []
         },
         {
-          "sequence": 58,
+          "sequence": 59,
           "date": "2024-06-30",
           "slug": "gothic-by-philip-fracassi",
           "edition": "Kindle",
@@ -496,7 +496,7 @@
     },
     {
       "name": "Stephen Morris",
-      "count": 2,
+      "count": 3,
       "slug": "stephen-morris",
       "readings": [
         {
@@ -510,7 +510,17 @@
           "includedInSlugs": []
         },
         {
-          "sequence": 59,
+          "sequence": 58,
+          "date": "2023-12-09",
+          "slug": "fast-forward-by-stephen-morris",
+          "edition": "Audible",
+          "kind": "Nonfiction",
+          "title": "Fast Forward",
+          "yearPublished": "2020",
+          "includedInSlugs": []
+        },
+        {
+          "sequence": 60,
           "date": "2024-07-01",
           "slug": "fast-forward-by-stephen-morris",
           "edition": "Audible",

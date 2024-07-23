@@ -1,8 +1,8 @@
 {
   "span": "2023",
-  "reviews": 9,
-  "readWorks": 9,
-  "books": 7,
+  "reviews": 10,
+  "readWorks": 10,
+  "books": 8,
   "gradeDistribution": [
     {
       "name": "C+",
@@ -11,6 +11,10 @@
     {
       "name": "C-",
       "count": 2
+    },
+    {
+      "name": "A-",
+      "count": 1
     },
     {
       "name": "F",
@@ -40,7 +44,7 @@
     },
     {
       "name": "Nonfiction",
-      "count": 2
+      "count": 3
     }
   ],
   "editionDistribution": [
@@ -50,7 +54,7 @@
     },
     {
       "name": "Audible",
-      "count": 3
+      "count": 4
     }
   ],
   "decadeDistribution": [
@@ -72,7 +76,7 @@
     },
     {
       "name": "2020s",
-      "count": 3
+      "count": 4
     }
   ],
   "mostReadAuthors": [
@@ -99,6 +103,33 @@
           "kind": "Novel",
           "title": "Don't Let Them Get You Down",
           "yearPublished": "2022",
+          "includedInSlugs": []
+        }
+      ]
+    },
+    {
+      "name": "Stephen Morris",
+      "count": 2,
+      "slug": "stephen-morris",
+      "readings": [
+        {
+          "sequence": 57,
+          "date": "2023-11-11",
+          "slug": "record-play-pause-by-stephen-morris",
+          "edition": "Audible",
+          "kind": "Nonfiction",
+          "title": "Record Play Pause",
+          "yearPublished": "2019",
+          "includedInSlugs": []
+        },
+        {
+          "sequence": 58,
+          "date": "2023-12-09",
+          "slug": "fast-forward-by-stephen-morris",
+          "edition": "Audible",
+          "kind": "Nonfiction",
+          "title": "Fast Forward",
+          "yearPublished": "2020",
           "includedInSlugs": []
         }
       ]

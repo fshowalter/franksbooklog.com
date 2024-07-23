@@ -1,14 +1,14 @@
 {
-  "sequence": 59,
+  "sequence": 60,
   "slug": "fast-forward-by-stephen-morris",
   "title": "Fast Forward",
   "subtitle": "Confessions of a Post-Punk Percussionist: Volume II",
   "sortTitle": "Fast Forward: Confessions of a Post-Punk Percussionist: Volume II",
   "yearPublished": "2020",
-  "grade": "B",
-  "gradeValue": 9,
+  "grade": "A-",
+  "gradeValue": 11,
   "kind": "Nonfiction",
-  "date": "2024-07-01",
+  "date": "2023-12-09",
   "authors": [
     {
       "slug": "stephen-morris",
@@ -19,7 +19,54 @@
   ],
   "readings": [
     {
-      "sequence": 59,
+      "sequence": 58,
+      "date": "2023-12-09",
+      "edition": "Audible",
+      "editionNotes": null,
+      "isAudiobook": true,
+      "abandoned": false,
+      "readingTime": 29,
+      "timeline": [
+        {
+          "date": "2023-11-11",
+          "progress": "15%"
+        },
+        {
+          "date": "2023-11-12",
+          "progress": "34%"
+        },
+        {
+          "date": "2023-11-13",
+          "progress": "43%"
+        },
+        {
+          "date": "2023-11-14",
+          "progress": "45%"
+        },
+        {
+          "date": "2023-11-15",
+          "progress": "57%"
+        },
+        {
+          "date": "2023-11-17",
+          "progress": "62%"
+        },
+        {
+          "date": "2023-11-18",
+          "progress": "68%"
+        },
+        {
+          "date": "2023-12-08",
+          "progress": "79%"
+        },
+        {
+          "date": "2023-12-09",
+          "progress": "Finished"
+        }
+      ]
+    },
+    {
+      "sequence": 60,
       "date": "2024-07-01",
       "edition": "Audible",
       "editionNotes": null,
@@ -47,7 +94,7 @@
     }
   ],
   "includedInSlugs": [],
-  "yearReviewed": 2024,
+  "yearReviewed": 2023,
   "moreByAuthors": [],
   "moreReviews": [
     {
