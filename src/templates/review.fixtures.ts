@@ -5,6 +5,7 @@ export const data = {
     yearPublished: "2017",
     kind: "Collection",
     grade: "B+",
+    date: "May 07, 2022",
     authors: [
       {
         name: "Philip Fracassi",
@@ -269,17 +270,18 @@ export const data = {
     review: {
       linkedHtml:
         '<p>An accomplished debut collection from Fracassi. ”<a href="/reviews/altar-by-philip-fracassi/">Altar</a>” shines with <a href="/reviews/mandala-by-philip-fracassi/"><em>Mandala</em></a> a strong second. Not a below average entry in the bunch. And I loved the author’s notes section, where Fracassi grants insight into each story’s origin (and confirms my thoughts <em>Mandala</em>’s ending).</p>',
-      date: "May 07, 2022",
     },
     readings: [
       {
         date: "Sat May 07, 2022",
         edition: "Kindle",
-        editionNotes: "Lovecraft eZine Press, 2018",
+        editionNotes: "<span>Lovecraft eZine Press, 2018</span>",
         isAudiobook: false,
         readingTime: 21,
         abandoned: false,
-        readingNotes: null,
+        readingNotes: {
+          linkedHtml: "",
+        },
         sequence: 17,
         timeline: [
           {
@@ -371,6 +373,7 @@ export const abandonedData = {
     yearPublished: "2015",
     kind: "Nonfiction",
     grade: "Abandoned",
+    date: "Jun 01, 2022",
     authors: [
       {
         name: "Jesse Itzler",
@@ -532,17 +535,18 @@ export const abandonedData = {
     review: {
       linkedHtml:
         '<p>Serial entrepreneur Jesse Itzler invites a former US Navy SEAL to shadow and train him for a month.</p>\n<!-- end -->\n<p>The premise hooked me, but the execution underwhelmed. Midway through, Itzler reveals the book’s origin as a blog he circulated amongst his friends. The book retains the format. Each chapter chronicles a day in Itzler’s life interspersed with the SEAL pushing him through grueling workouts comprising freezing runs and grueling push-up and pull-up sets. Each chapter ends with the day’s total miles run and push-ups and pull-ups performed.</p>\n<p>I read this during a cross-Atlantic plane ride. Even as a captive audience, it struggled to hold my attention, and after a few chapters, I’d put it down in favor of an audiobook or podcast. Then, after my ears needed a break, I’d return and read a few more chapters before repeating the cycle. Now that I’m home, I’ve abandoned it.</p>\n<p>Itzler, while affable and a competent writer, proves an uncompelling subject. To pad the length, he includes autobiographical anecdotes, such as how he broke into the recording business, met his wife, and started his private jet business. These didn’t interest me. I came for the SEAL, but Itzler paints him as an enigma bordering on caricature.</p>\n<p>Fortunately, Itzler later identified the SEAL as David Goggins, who wrote his own story, <a href="/reviews/cant-hurt-me-by-david-goggins/"><em>Can’t Hurt Me</em></a>, which I look forward to listening to in his own words.</p>',
-      date: "Jun 01, 2022",
     },
     readings: [
       {
         date: "Wed Jun 01, 2022",
         edition: "Kindle",
-        editionNotes: "Center Street, 2015",
+        editionNotes: "<span>Center Street, 2015</span>",
         isAudiobook: false,
         readingTime: 9,
         abandoned: true,
-        readingNotes: null,
+        readingNotes: {
+          linkedHtml: "",
+        },
         sequence: 20,
         timeline: [
           {
@@ -606,6 +610,7 @@ export const readingNoteData = {
     yearPublished: "1977",
     kind: "Novel",
     grade: "B",
+    date: "Oct 29, 2022",
     authors: [
       {
         name: "Stephen King",
@@ -767,13 +772,12 @@ export const readingNoteData = {
     review: {
       linkedHtml:
         '<p>Alcoholic writer Jack Torrance uproots his wife Wendy and five-year-old son Danny from New England to Colorado, where they’ll serve as winter caretakers for the Overlook Hotel. The hotel, a premier destination with a shady past, houses a malevolent presence bent on claiming Danny for its own ends.</p>\n<!-- end -->\n<p>King uses the hotel’s supernatural presence and Danny’s burgeoning telepathy to explore addiction from the perspectives of the addicted and afflicted. Knowing about King’s battles with alcoholism and addiction, it’s hard not to read this as the painful confession of an alcoholic parent.</p>\n<p>Of course, it’s also an effective haunted house story. King packs the hotel with memorable terrors like hedge animals that move whenever you take your eyes off them. These predate <em>Doctor Who</em>’s infamous Weeping Angels, but prove just as unsettling. Indoors, the rooms play host to assorted ghosts, such as room 217’s bloated corpse, floating in a tub, ready to rise and strangle any unlucky visitors.</p>\n<p>But Jack proves the true monster. Prior readings rendered him a good man undone by the hotel’s evil influence, but this listen changed my mind. Jack displays selfish and myopic behavior from the start. His alcoholism intensifies—but doesn’t cause—his self-destructive actions. He loves his wife and son, but he’s the star of his own movie. One that had him trending downward prior to the hotel, despite giving up drinking. The hotel exploited him, but one suspects it only accelerated the inevitable.</p>\n<p>Being alone with your thoughts for hours on end writing may necessitate an inward focus. Writing this novel, King could see a successful career within his grasp, but he wasn’t far removed from living in a trailer, banging out short stories in the cramped laundry room. The pressure must have been enormous.</p>\n<p>This listen also revealed other connections to King’s personal life. Like when Wendy remembers Jack inviting other students over for drinks and discussions during their early courtship in college.</p>\n<blockquote>\n<p>She felt no real urge to take part; it was enough to sit in her rocking chair beside Jack, who sat cross-legged on the floor, one hand holding a beer, the other gently cupping her calf or braceleting her ankle.</p>\n</blockquote>\n<p>Now consider this remembrance from King in <em>On Writing</em>, about how he met his wife, Tabitha, at a college poetry workshop<sup id="fnref-1"><a href="#fn-1" class="footnote-ref">1</a></sup>:</p>\n<blockquote>\n<p>Tabby was in one of Jim Bishop’s rocking chairs that night. I was sitting on the floor beside her. I put my hand on her calf as she spoke, cupping the curve of warm flesh through her stocking. She smiled at me. I smiled back.</p>\n</blockquote>\n<p>Again, hard not to read this as King’s most personal work to date.</p>\n<hr>\n<p>After this listen, I tracked down a copy of the excised prologue, <em>Before the Play</em>, online. Much of it proffers the Overlook’s origin story—an interesting read, but one better shrouded in mystery and doled out via the scrapbook Jack encounters in the published novel. Including it in the prologue positions the novel as the Overlook’s story, but it‘s not.</p>\n<p>It‘s Jack‘s story, and the prologue’s last segment plays out through young Jack‘s eyes. He‘s about the same age as Danny in the book and the segment opens with him sitting outside, waiting for his daddy to come home. But when Jack‘s father arrives, Jack realizes he‘s drunk. Drunk means dangerous. Jack retreats, but it‘s too late. His father perceives a slight and lashes out. Jack flees to his treehouse. Jack‘s father pursues with near murderous intent, roaring that little Jack, “Come back here and take your medicine! Take it like a man!”</p>\n<p>Cutting this scene was a mistake. It reframes the entire story as a cyclical trap Jack had little hope of escaping. This lends his character a tragic bent, and heightens his climactic redemption, when—for a moment—he breaks the cycle.</p>\n<div class="footnotes">\n<hr>\n<ol>\n<li id="fn-1">King, <em>On Writing</em>, 65.<a href="#fnref-1" class="footnote-backref">↩</a></li>\n</ol>\n</div>',
-      date: "Oct 29, 2022",
     },
     readings: [
       {
         date: "Sat Oct 29, 2022",
         edition: "Audible",
-        editionNotes: "Read by Campbell Scott",
+        editionNotes: "<span>Read by Campbell Scott</span>",
         isAudiobook: true,
         readingTime: 14,
         abandoned: false,

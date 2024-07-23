@@ -395,7 +395,9 @@ exports[`/reviews/{slug} render abandoned without structured data 1`] = `
                   <span
                     class="RenderedMarkdown_renderedMarkdownStyle__w2sssm0 sprinkles_fontWeight_light__1lrvpk9o sprinkles_fontSize_small__1lrvpk9j sprinkles_lineHeight_1__1lrvpk9y"
                   >
-                    Center Street, 2015
+                    <span>
+                      Center Street, 2015
+                    </span>
                   </span>
                   )
                 </span>
@@ -482,7 +484,11 @@ exports[`/reviews/{slug} render abandoned without structured data 1`] = `
               </div>
               <div
                 class="ReadingHistoryEntry_gridAreas_viewingNote__1b3bzws9"
-              />
+              >
+                <div
+                  class="sprinkles_paddingBottom_24_default__1lrvpk9dd"
+                />
+              </div>
             </div>
           </ul>
         </div>
@@ -1523,7 +1529,9 @@ exports[`/reviews/{slug} render reading notes 1`] = `
                   <span
                     class="RenderedMarkdown_renderedMarkdownStyle__w2sssm0 sprinkles_fontWeight_light__1lrvpk9o sprinkles_fontSize_small__1lrvpk9j sprinkles_lineHeight_1__1lrvpk9y"
                   >
-                    Read by Campbell Scott
+                    <span>
+                      Read by Campbell Scott
+                    </span>
                   </span>
                   )
                 </span>
@@ -2946,7 +2954,9 @@ exports[`/reviews/{slug} renders 1`] = `
                   <span
                     class="RenderedMarkdown_renderedMarkdownStyle__w2sssm0 sprinkles_fontWeight_light__1lrvpk9o sprinkles_fontSize_small__1lrvpk9j sprinkles_lineHeight_1__1lrvpk9y"
                   >
-                    Lovecraft eZine Press, 2018
+                    <span>
+                      Lovecraft eZine Press, 2018
+                    </span>
                   </span>
                   )
                 </span>
@@ -3208,7 +3218,11 @@ exports[`/reviews/{slug} renders 1`] = `
               </div>
               <div
                 class="ReadingHistoryEntry_gridAreas_viewingNote__1b3bzws9"
-              />
+              >
+                <div
+                  class="sprinkles_paddingBottom_24_default__1lrvpk9dd"
+                />
+              </div>
             </div>
           </ul>
         </div>
