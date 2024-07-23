@@ -43,22 +43,6 @@
   "moreByAuthors": [],
   "moreReviews": [
     {
-      "title": "Extreme Ownership",
-      "kind": "Nonfiction",
-      "yearPublished": "2015",
-      "slug": "extreme-ownership-by-jocko-willink-leif-babin",
-      "grade": "A",
-      "includedInSlugs": [],
-      "authors": [
-        {
-          "name": "Jocko Willink"
-        },
-        {
-          "name": "Leif Babin"
-        }
-      ]
-    },
-    {
       "title": "Fail-Safe",
       "kind": "Short Story",
       "yearPublished": "2017",
@@ -70,6 +54,19 @@
       "authors": [
         {
           "name": "Philip Fracassi"
+        }
+      ]
+    },
+    {
+      "title": "Fast Forward",
+      "kind": "Nonfiction",
+      "yearPublished": "2020",
+      "slug": "fast-forward-by-stephen-morris",
+      "grade": "A-",
+      "includedInSlugs": [],
+      "authors": [
+        {
+          "name": "Stephen Morris"
         }
       ]
     },

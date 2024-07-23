@@ -90,6 +90,19 @@
       ]
     },
     {
+      "title": "Gothic",
+      "kind": "Novel",
+      "yearPublished": "2023",
+      "slug": "gothic-by-philip-fracassi",
+      "grade": "B+",
+      "includedInSlugs": [],
+      "authors": [
+        {
+          "name": "Philip Fracassi"
+        }
+      ]
+    },
+    {
       "title": "Hawk Mountain",
       "kind": "Novel",
       "yearPublished": "2022",
@@ -99,21 +112,6 @@
       "authors": [
         {
           "name": "Conner Habib"
-        }
-      ]
-    },
-    {
-      "title": "The Horse Thief",
-      "kind": "Short Story",
-      "yearPublished": "2017",
-      "slug": "the-horse-thief-by-philip-fracassi",
-      "grade": "B",
-      "includedInSlugs": [
-        "behold-the-void-by-philip-fracassi"
-      ],
-      "authors": [
-        {
-          "name": "Philip Fracassi"
         }
       ]
     }

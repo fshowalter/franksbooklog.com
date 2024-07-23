@@ -212,6 +212,7 @@ export const ReviewedWorksJson = {
                   eq: source.slug,
                 },
               },
+              fileAbsolutePath: { regex: "//reviews/" },
             },
           },
         });

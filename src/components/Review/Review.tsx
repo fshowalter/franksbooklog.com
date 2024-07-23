@@ -227,7 +227,7 @@ function ReviewDate({
       alignItems="center"
       letterSpacing={0.5}
     >
-      <span>on</span> {reviewData.review.date}
+      <span>on</span> {reviewData.date}
     </Box>
   );
 }
@@ -239,6 +239,7 @@ export const pageQuery = graphql`
     yearPublished
     kind
     grade
+    date(formatString: "MMM DD, YYYY")
     authors {
       name
       notes
@@ -250,7 +251,6 @@ export const pageQuery = graphql`
     }
     review {
       linkedHtml
-      date(formatString: "MMM DD, YYYY")
     }
     ...ReviewReadingHistory
     cover {
