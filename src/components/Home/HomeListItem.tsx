@@ -57,8 +57,6 @@ export function HomeListItem({
         >
           <Cover
             imageData={value.coverImageData}
-            authors={value.authors}
-            title={value.title}
             decoding="async"
             width={CoverImageConfig.width}
             height={CoverImageConfig.height}
