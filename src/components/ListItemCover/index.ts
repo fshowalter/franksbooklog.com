@@ -1,1 +1,0 @@
-export { ListItemCover } from "./ListItemCover";

@@ -1,7 +1,10 @@
-import { DebouncedInput } from "../DebouncedInput";
-import { SelectField, SelectOptions } from "../SelectField";
-import { YearInput } from "../YearInput";
-import { Action, ActionType, Sort } from "./Shelf.reducer";
+import { DebouncedInput } from "src/components/DebouncedInput";
+import { SelectField } from "src/components/SelectField";
+import { SelectOptions } from "src/components/SelectOptions";
+import { YearInput } from "src/components/YearInput";
+
+import type { ActionType, Sort } from "./Shelf.reducer";
+import { Actions } from "./Shelf.reducer";
 
 export function Filters({
   dispatch,
@@ -10,7 +13,7 @@ export function Filters({
   distinctAuthors,
   distinctKinds,
 }: {
-  dispatch: React.Dispatch<Action>;
+  dispatch: React.Dispatch<ActionType>;
   sortValue: string;
   distinctAuthors: readonly string[];
   distinctPublishedYears: readonly string[];
@@ -22,21 +25,21 @@ export function Filters({
         label="Title"
         placeholder="Enter all or part of a title"
         onInputChange={(value) =>
-          dispatch({ type: ActionType.FILTER_TITLE, value })
+          dispatch({ type: Actions.FILTER_TITLE, value })
         }
       />
       <YearInput
         label="Year Published"
         years={distinctPublishedYears}
         onYearChange={(values) =>
-          dispatch({ type: ActionType.FILTER_YEAR_PUBLISHED, values })
+          dispatch({ type: Actions.FILTER_YEAR_PUBLISHED, values })
         }
       />
       <SelectField
         label="Kind"
         onChange={(e) =>
           dispatch({
-            type: ActionType.FILTER_KIND,
+            type: Actions.FILTER_KIND,
             value: e.target.value,
           })
         }
@@ -47,7 +50,7 @@ export function Filters({
         label="Author"
         onChange={(e) =>
           dispatch({
-            type: ActionType.FILTER_AUTHOR,
+            type: Actions.FILTER_AUTHOR,
             value: e.target.value,
           })
         }
@@ -59,7 +62,7 @@ export function Filters({
         label="Order By"
         onChange={(e) =>
           dispatch({
-            type: ActionType.SORT,
+            type: Actions.SORT,
             value: e.target.value as Sort,
           })
         }

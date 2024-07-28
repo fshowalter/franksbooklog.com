@@ -1,55 +1,29 @@
-import { Box, IBoxProps } from "../Box";
-import ScreenReaderOnly from "../ScreenReaderOnly";
-import SvgIcon from "../SvgIcon";
-import {
-  iconStyle,
-  searchInputStyle,
-  submitButtonStyle,
-} from "./SiteSearchForm.css";
-
-export function SiteSearchForm({ ...rest }: IBoxProps) {
+export function SiteSearchForm() {
   return (
-    <Box
-      as="form"
+    <form
       action="https://www.google.com/search"
       acceptCharset="UTF-8"
       method="get"
       role="search"
-      boxShadow="borderAll"
-      borderRadius={4}
-      overflow="hidden"
-      width={{ default: "full", desktop: "unset" }}
-      maxWidth="prose"
-      {...rest}
+      className="mx-auto w-full max-w-[512px] overflow-hidden rounded shadow-all"
     >
-      <Box as="label" htmlFor="search" display="flex" overflow="hidden">
-        <ScreenReaderOnly>Search</ScreenReaderOnly>
-        <Box
-          as="input"
+      <label htmlFor="search" className="flex overflow-hidden">
+        <span className="sr-only">Search</span>
+        <input
           type="text"
           name="q"
           id="search"
           placeholder="Search..."
-          backgroundColor="subtle"
-          color="default"
-          fontSize="default"
-          fontWeight="light"
-          lineHeight={24}
-          flexGrow={1}
-          paddingX={16}
-          paddingY={8}
-          className={searchInputStyle}
+          className="min-w-0 grow border-0 bg-subtle px-4 py-2 text-base font-light leading-6 text-default"
         />
-        <input type="hidden" name="q" value="site:www.franksmovielog.com" />
-        <Box
-          as="button"
+        <input type="hidden" name="q" value="site:www.franksbooklog.com" />
+        <button
           type="submit"
           value="Search"
           aria-label="Search"
-          backgroundColor="subtle"
-          className={submitButtonStyle}
+          className="border-0 border-l border-default bg-subtle px-3 py-1"
         >
-          <SvgIcon className={iconStyle}>
+          <svg className="size-4 fill-subtle" viewBox="0 0 16 16">
             <path
               fillRule="evenodd"
               d="M10.442 10.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z"
@@ -58,9 +32,9 @@ export function SiteSearchForm({ ...rest }: IBoxProps) {
               fillRule="evenodd"
               d="M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z"
             />
-          </SvgIcon>
-        </Box>
-      </Box>
-    </Box>
+          </svg>
+        </button>
+      </label>
+    </form>
   );
 }

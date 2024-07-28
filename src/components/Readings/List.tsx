@@ -1,41 +1,59 @@
-import { graphql } from "gatsby";
-import { toSentenceArray } from "../../utils";
-import { BarGradient } from "../BarGradient";
-import { Box } from "../Box";
-import { Link } from "../Link";
-import { ListItem } from "../ListItem";
-import { ListItemCover } from "../ListItemCover";
-import { GroupedList } from "../ListWithFiltersLayout";
-import { Spacer } from "../Spacer";
-import { subListItemBoxShadowStyle } from "./List.css";
-import { Action, ActionType } from "./Readings.reducer";
+import type { CoverImageData } from "src/api/covers";
+import type { TimelineEntry } from "src/api/timelineEntries";
+import { BarGradient } from "src/components/BarGradient";
+import { GroupedList } from "src/components/GroupedList";
+import { ListItem } from "src/components/ListItem";
+import { ListItemCover } from "src/components/ListItemCover";
+import { ListItemKindAndYear } from "src/components/ListItemKindAndYear";
+import { toSentenceArray } from "src/utils";
+
+import type { ActionType } from "./Readings.reducer";
+import { Actions } from "./Readings.reducer";
+
+export interface ListItemValue
+  extends Pick<
+    TimelineEntry,
+    | "slug"
+    | "reviewed"
+    | "sequence"
+    | "date"
+    | "yearPublished"
+    | "progress"
+    | "title"
+    | "edition"
+    | "kind"
+    | "authors"
+  > {}
 
 export function List({
-  groupedItems,
+  groupedValues,
   visibleCount,
   totalCount,
   dispatch,
+  covers,
 }: {
-  groupedItems: Map<string, Map<string, Queries.ReadingsListItemFragment[]>>;
+  groupedValues: Map<string, Map<string, ListItemValue[]>>;
   visibleCount: number;
   totalCount: number;
-  dispatch: React.Dispatch<Action>;
+  dispatch: React.Dispatch<ActionType>;
+  covers: Record<string, CoverImageData>;
 }) {
   return (
     <GroupedList
-      data-testid="cover-list"
-      groupedItems={groupedItems}
+      data-testid="list"
+      groupedValues={groupedValues}
       visibleCount={visibleCount}
       totalCount={totalCount}
-      onShowMore={() => dispatch({ type: ActionType.SHOW_MORE })}
+      onShowMore={() => dispatch({ type: Actions.SHOW_MORE })}
     >
       {(dateGroup) => {
         const [dayAndDate, items] = dateGroup;
         return (
           <DateListItem
-            items={items}
+            values={items}
             key={dayAndDate}
             dayAndDate={dayAndDate}
+            covers={covers}
           />
         );
       }}
@@ -45,87 +63,75 @@ export function List({
 
 function DateListItem({
   dayAndDate,
-  items,
+  values,
+  covers,
 }: {
   dayAndDate: string;
-  items: Queries.ReadingsListItemFragment[];
+  values: ListItemValue[];
+  covers: Record<string, CoverImageData>;
 }): JSX.Element {
-  const [day, date] = dayAndDate.split("-");
+  const [date, day] = dayAndDate.split(" ");
 
   return (
-    <ListItem paddingBottom={0} alignItems="center">
-      <Box>
-        <Box boxShadow="borderAll" borderRadius={4}>
-          <Box
-            backgroundColor="canvas"
-            textAlign="center"
-            width={48}
-            paddingY={8}
-            textTransform="uppercase"
-            fontSize="small"
-          >
+    <ListItem className="pb-0">
+      <div>
+        <div className="rounded shadow-all">
+          <div className="w-12 bg-canvas py-2 text-center text-sm uppercase">
             {day}
-          </Box>
-          <Box textAlign="center" fontSize="large">
-            {date}
-          </Box>
-        </Box>
-        <Spacer axis="vertical" size={16} />
-      </Box>
-      <Box
-        as="ul"
-        display="flex"
-        flexDirection="column"
-        rowGap={16}
-        flexGrow={1}
-      >
-        {items.map((item) => {
-          return <SubListItem item={item} key={item.sequence} />;
+          </div>
+          <div className="text-center text-2.5xl leading-8">{date}</div>
+        </div>
+        <div className="spacer-y-4" />
+      </div>
+      <ul className="flex grow flex-col gap-y-4">
+        {values.map((value) => {
+          return (
+            <SubListItem
+              value={value}
+              imageData={covers[value.slug]}
+              key={value.sequence}
+            />
+          );
         })}
-      </Box>
+      </ul>
     </ListItem>
   );
 }
 
-export function SubListItem({
-  item,
+function SubListItem({
+  value,
+  imageData,
 }: {
-  item: Queries.ReadingsListItemFragment;
+  value: ListItemValue;
+  imageData: CoverImageData;
 }): JSX.Element {
-  const progressValue = parseProgress(item.progress);
+  const progressValue = parseProgress(value.progress);
 
   return (
-    <ListItem
-      alignItems="center"
-      boxShadow="borderBottom"
-      paddingTop={0}
-      className={subListItemBoxShadowStyle}
-      backgroundColor="unset"
-    >
-      <ListItemCover
-        slug={item.slug}
-        image={item.cover}
-        title={item.title}
-        flexShrink={0}
-        boxShadow="borderAll"
-      />
-      <Box flexGrow={1}>
-        <Title item={item} />
-        <Spacer axis="vertical" size={4} />
-        <Authors authors={item.authors} />
-        <Spacer axis="vertical" size={8} />
-        <YearAndKind year={item.yearPublished} kind={item.kind} />
-        <Spacer axis="vertical" size={8} />
-        {item.progress !== "Abandoned" && (
+    <ListItem className="pt-0 shadow-bottom last:shadow-none even:bg-unset">
+      <ListItemCover slug={value.slug} imageData={imageData} />
+      <div className="grow">
+        <TitleAndProgress
+          title={value.title}
+          progress={value.progress}
+          reviewed={value.reviewed}
+          slug={value.slug}
+        />
+        <div className="spacer-y-1" />
+        <Authors values={value.authors} />
+        <div className="spacer-y-2" />
+        <ListItemKindAndYear year={value.yearPublished} kind={value.kind} />
+        <div className="spacer-y-2" />
+        {value.progress !== "Abandoned" && (
           <BarGradient
             value={progressValue}
             maxValue={100}
-            __lineHeight="1rem"
+            style={{ lineHeight: "1rem" }}
           />
         )}
-        <Spacer axis="vertical" size={8} />
-        <Edition edition={item.edition} />
-      </Box>
+        <div className="spacer-y-2" />
+        <Edition value={value.edition} />
+      </div>
     </ListItem>
   );
 }
@@ -144,91 +150,49 @@ function parseProgress(progress: string) {
   return 100;
 }
 
-export function Title({ item }: { item: Queries.ReadingsListItemFragment }) {
+function TitleAndProgress({
+  title,
+  progress,
+  reviewed,
+  slug,
+}: {
+  title: ListItemValue["title"];
+  progress: ListItemValue["progress"];
+  reviewed: ListItemValue["reviewed"];
+  slug: ListItemValue["slug"];
+}) {
   const progressBox = (
-    <Box as="span" fontSize="xSmall" color="subtle" fontWeight="light">
-      {item.progress}
-    </Box>
+    <span className="text-xs font-light text-subtle">{progress}</span>
   );
 
-  if (item.reviewed) {
+  if (reviewed) {
     return (
-      <Link
-        to={`/reviews/${item.slug}/`}
-        fontSize="medium"
-        lineHeight={20}
-        display="block"
+      <a
+        href={`/reviews/${slug}/`}
+        className="block text-md leading-5 text-accent"
       >
-        {item.title}&#8239;&#8239;{progressBox}
-      </Link>
+        {title}&#8239;&#8239;{progressBox}
+      </a>
     );
   }
 
   return (
-    <Box as="span" fontSize="medium" display="block" lineHeight={20}>
-      {item.title}&#8239;&#8239;{progressBox}
-    </Box>
+    <span className="block text-md leading-5">
+      {title}&#8239;&#8239;{progressBox}
+    </span>
   );
 }
 
-function Authors({
-  authors,
-}: {
-  authors: readonly Queries.ReadingListItemAuthorFragment[];
-}) {
+function Authors({ values }: { values: ListItemValue["authors"] }) {
   return (
-    <Box color="muted" fontSize="default" lineHeight={20}>
-      {toSentenceArray(authors.map((author) => author.name))}
-    </Box>
+    <div className="font-normal leading-5 text-muted">
+      {toSentenceArray(values.map((author) => author.name))}
+    </div>
   );
 }
 
-function YearAndKind({
-  kind,
-  year,
-}: {
-  kind: string;
-  year: string;
-}): JSX.Element {
+function Edition({ value }: { value: string }): JSX.Element {
   return (
-    <Box color="subtle" fontSize="small" letterSpacing={0.5} lineHeight={16}>
-      <Box as="span">{kind} | </Box>
-      {year}
-    </Box>
+    <div className="text-sm leading-4 tracking-0.5px text-subtle">{value}</div>
   );
 }
-
-function Edition({ edition }: { edition: string }): JSX.Element {
-  return (
-    <Box color="subtle" fontSize="small" letterSpacing={0.5} lineHeight={16}>
-      {edition}
-    </Box>
-  );
-}
-
-export const query = graphql`
-  fragment ReadingListItemAuthor on TimelineEntriesJsonAuthor {
-    name
-  }
-
-  fragment ReadingsListItem on TimelineEntriesJson {
-    slug
-    reviewed
-    sequence
-    readingYear
-    readingMonth: date(formatString: "MMM")
-    readingDay: date(formatString: "ddd")
-    date(formatString: "D")
-    yearPublished
-    progress
-    title
-    edition
-    kind
-    authors {
-      ...ReadingListItemAuthor
-    }
-    cover {
-      ...ListItemCover
-    }
-  }
-`;

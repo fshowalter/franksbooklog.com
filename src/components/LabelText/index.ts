@@ -1,1 +1,0 @@
-export { LabelText } from "./LabelText";

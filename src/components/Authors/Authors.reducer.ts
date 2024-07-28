@@ -1,12 +1,14 @@
 import {
-  FilterableState,
-  buildGroupItems,
+  buildGroupValues,
   filterTools,
   sortNumber,
   sortString,
-} from "../../utils";
+} from "src/utils";
 
-export enum ActionType {
+import type { FilterableState } from "../../utils";
+import type { ListItemValue } from "./List";
+
+export enum Actions {
   FILTER_NAME = "FILTER_NAME",
   SORT = "SORT",
   SHOW_MORE = "SHOW_MORE",
@@ -20,39 +22,28 @@ export type Sort =
   | "work-count-asc"
   | "work-count-desc";
 
-const groupItems = buildGroupItems(groupForItem);
-const { updateFilter } = filterTools(sortItems, groupItems);
+const groupValues = buildGroupValues(groupForValue);
+const { updateFilter } = filterTools(sortValues, groupValues);
 
-function sortItems(
-  authors: Queries.AuthorsListItemFragment[],
-  sortOrder: Sort,
-) {
-  const sortMap: Record<
-    Sort,
-    (
-      a: Queries.AuthorsListItemFragment,
-      b: Queries.AuthorsListItemFragment,
-    ) => number
-  > = {
-    "name-asc": (a, b) => sortString(a.sortName, b.sortName),
-    "name-desc": (a, b) => sortString(a.sortName, b.sortName) * -1,
-    "review-count-asc": (a, b) =>
-      sortNumber(a.reviewedWorkCount, b.reviewedWorkCount),
-    "review-count-desc": (a, b) =>
-      sortNumber(a.reviewedWorkCount, b.reviewedWorkCount) * -1,
-    "work-count-asc": (a, b) => sortNumber(a.workCount, b.workCount),
-    "work-count-desc": (a, b) => sortNumber(a.workCount, b.workCount) * -1,
-  };
+function sortValues(values: ListItemValue[], sortOrder: Sort) {
+  const sortMap: Record<Sort, (a: ListItemValue, b: ListItemValue) => number> =
+    {
+      "name-asc": (a, b) => sortString(a.sortName, b.sortName),
+      "name-desc": (a, b) => sortString(a.sortName, b.sortName) * -1,
+      "review-count-asc": (a, b) =>
+        sortNumber(a.reviewedWorkCount, b.reviewedWorkCount),
+      "review-count-desc": (a, b) =>
+        sortNumber(a.reviewedWorkCount, b.reviewedWorkCount) * -1,
+      "work-count-asc": (a, b) => sortNumber(a.workCount, b.workCount),
+      "work-count-desc": (a, b) => sortNumber(a.workCount, b.workCount) * -1,
+    };
 
   const comparer = sortMap[sortOrder];
 
-  return authors.sort(comparer);
+  return values.sort(comparer);
 }
 
-function groupForItem(
-  item: Queries.AuthorsListItemFragment,
-  sortValue: Sort,
-): string {
+function groupForValue(item: ListItemValue, sortValue: Sort): string {
   switch (sortValue) {
     case "name-asc":
     case "name-desc": {
@@ -76,87 +67,81 @@ function groupForItem(
   }
 }
 
-export type State = FilterableState<
-  Queries.AuthorsListItemFragment,
-  Sort,
-  Map<string, Queries.AuthorsListItemFragment[]>
->;
+type State = FilterableState<ListItemValue, Sort, Map<string, ListItemValue[]>>;
 
 const SHOW_COUNT_DEFAULT = 100;
 
 export function initState({
-  items,
-  sort,
+  values,
+  initialSort,
 }: {
-  items: Queries.AuthorsListItemFragment[];
-  sort: Sort;
+  values: ListItemValue[];
+  initialSort: Sort;
 }): State {
   return {
-    allItems: items,
-    filteredItems: items,
-    groupedItems: groupItems(items.slice(0, SHOW_COUNT_DEFAULT), sort),
+    allValues: values,
+    filteredValues: values,
+    groupedValues: groupValues(
+      values.slice(0, SHOW_COUNT_DEFAULT),
+      initialSort,
+    ),
     filters: {},
     showCount: SHOW_COUNT_DEFAULT,
-    sortValue: sort,
+    sortValue: initialSort,
   };
 }
 
 interface FilterNameAction {
-  type: ActionType.FILTER_NAME;
+  type: Actions.FILTER_NAME;
   value: string;
 }
 
 interface SortAction {
-  type: ActionType.SORT;
+  type: Actions.SORT;
   value: Sort;
 }
 
 interface ShowMoreAction {
-  type: ActionType.SHOW_MORE;
+  type: Actions.SHOW_MORE;
 }
 
-export type Action = FilterNameAction | SortAction | ShowMoreAction;
+export type ActionType = FilterNameAction | SortAction | ShowMoreAction;
 
-/**
- * Applies the given action to the given state, returning a new State object.
- * @param state The current state.
- * @param action The action to apply.
- */
-export function reducer(state: State, action: Action): State {
-  let filteredItems;
-  let groupedItems;
+export function reducer(state: State, action: ActionType): State {
+  let filteredValues;
+  let groupedValues;
 
   switch (action.type) {
-    case ActionType.FILTER_NAME: {
+    case Actions.FILTER_NAME: {
       const regex = new RegExp(action.value, "i");
-      return updateFilter(state, "name", (item) => {
-        return regex.test(item.name);
+      return updateFilter(state, "name", (value) => {
+        return regex.test(value.name);
       });
     }
-    case ActionType.SORT: {
-      filteredItems = sortItems(state.filteredItems, action.value);
-      groupedItems = groupItems(
-        filteredItems.slice(0, state.showCount),
+    case Actions.SORT: {
+      filteredValues = sortValues(state.filteredValues, action.value);
+      groupedValues = groupValues(
+        filteredValues.slice(0, state.showCount),
         action.value,
       );
       return {
         ...state,
         sortValue: action.value,
-        filteredItems,
-        groupedItems,
+        filteredValues,
+        groupedValues,
       };
     }
-    case ActionType.SHOW_MORE: {
+    case Actions.SHOW_MORE: {
       const showCount = state.showCount + SHOW_COUNT_DEFAULT;
 
-      groupedItems = groupItems(
-        state.filteredItems.slice(0, showCount),
+      groupedValues = groupValues(
+        state.filteredValues.slice(0, showCount),
         state.sortValue,
       );
 
       return {
         ...state,
-        groupedItems,
+        groupedValues,
         showCount,
       };
     }

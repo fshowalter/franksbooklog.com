@@ -1,24 +1,10 @@
 {
+  "extends": "astro/tsconfigs/strict",
+  "exclude": ["dist/**", "coverage/**", "content/**"],
   "compilerOptions": {
-    "module": "esnext",
-    "moduleResolution": "node",
-    "target": "ES2020",
-    "jsx": "preserve",
-    "lib": ["dom", "ES2020"],
-    "strict": true,
-    "noEmit": true,
-    "forceConsistentCasingInFileNames": true,
-    "isolatedModules": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "removeComments": true,
-    "preserveConstEnums": true,
-    "strictNullChecks": true,
-    "noImplicitAny": true
-  },
-  "include": ["./src/**/*", "./gatsby/**/*", "*.ts"],
-  "exclude": ["**/*.svg", "**/*.png", "**/*.jpg", "./static/**.*"],
-  "typeRoots": ["./src/types", "./node_modules/@types/"]
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
+    "baseUrl": ".",
+    "types": ["node"]
+  }
 }

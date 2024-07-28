@@ -1,1 +1,0 @@
-export { DateIcon } from "./DateIcon";

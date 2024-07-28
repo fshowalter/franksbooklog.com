@@ -1,22 +1,24 @@
 import { useReducer } from "react";
-import { ListWithFiltersLayout } from "../ListWithFiltersLayout";
-import { Sort, initState, reducer } from "./Authors.reducer";
+import { ListWithFiltersLayout } from "src/components/ListWithFiltersLayout";
+
+import type { Sort } from "./Authors.reducer";
+import { initState, reducer } from "./Authors.reducer";
 import { Filters } from "./Filters";
 import { Header } from "./Header";
+import type { ListItemValue } from "./List";
 import { List } from "./List";
 
-export function Authors({
-  items,
-  initialSort,
-}: {
-  items: readonly Queries.AuthorsListItemFragment[];
+export interface Props {
+  values: ListItemValue[];
   initialSort: Sort;
-}): JSX.Element {
+}
+
+export function Authors({ values, initialSort }: Props): JSX.Element {
   const [state, dispatch] = useReducer(
     reducer,
     {
-      items: [...items],
-      sort: initialSort,
+      values,
+      initialSort,
     },
     initState,
   );
@@ -27,9 +29,9 @@ export function Authors({
       filters={<Filters dispatch={dispatch} sortValue={state.sortValue} />}
       list={
         <List
-          groupedItems={state.groupedItems}
-          totalCount={state.allItems.length}
-          visibleCount={state.filteredItems.length}
+          groupedValues={state.groupedValues}
+          totalCount={state.filteredValues.length}
+          visibleCount={state.filteredValues.length}
           dispatch={dispatch}
         />
       }

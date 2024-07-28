@@ -1,80 +1,34 @@
-/* eslint-env browser, node */
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
-import React from "react";
-import { composeClassNames } from "../../styles/composeClassNames";
-import "../../styles/global.css";
-import { Box } from "../Box";
-import { ripNotComingSoonBackgroundImageStyle } from "./backgroundImage.css";
 import { Footer } from "./Footer";
-import {
-  bandStickyStyle,
-  headerLayoutStyle,
-  pageCanvasStyle,
-  skipToMainContentStyle,
-} from "./Layout.css";
 import { Mast } from "./Mast";
 
 export function Layout({
+  currentPath,
   children,
 }: {
+  currentPath: string;
   children: React.ReactNode;
 }): JSX.Element {
   return (
-    <>
-      <Box
-        as="a"
-        className={skipToMainContentStyle}
+    <div>
+      <a
         href="#content"
-        paddingX={24}
-        paddingY={8}
-        backgroundColor="subtle"
-        color="accent"
-        textAlign="center"
+        className="absolute left-1/2 top-0.5 z-50 mx-auto bg-subtle px-6 py-2 text-center text-accent [transform:translate(-50%,calc(-100%_-_2px))] focus:[transform:translate(-50%,0%)]"
       >
         Skip to content
-      </Box>
-      <Box
-        minHeight={16}
-        width="full"
-        className={composeClassNames(
-          bandStickyStyle,
-          ripNotComingSoonBackgroundImageStyle,
-        )}
+      </a>
+      <div
+        className={
+          "image-filter mx-auto min-h-4 w-full max-w-canvas bg-[url('/assets/ripnotcomingsoon.avif')] desktop:sticky desktop:top-0 desktop:z-40"
+        }
       />
 
-      <Box
-        backgroundColor="default"
-        className={pageCanvasStyle}
-        display="flex"
-        flexDirection="column"
-      >
-        <Mast
-          rowGap={24}
-          paddingX="pageMargin"
-          paddingY={{ default: 24, desktop: 32 }}
-          alignItems="center"
-          boxShadow="borderBottom"
-          backgroundColor="default"
-          className={headerLayoutStyle}
-        />
-        <Box flexGrow={1} id="content">
+      <div className="mx-auto flex min-h-full max-w-canvas flex-col bg-default">
+        <Mast currentPath={currentPath} />
+        <div className="grow" id="content">
           {children}
-        </Box>
-        <Footer
-          paddingX="pageMargin"
-          paddingY={32}
-          rowGap={24}
-          alignItems="center"
-          flexDirection="column"
-          className={ripNotComingSoonBackgroundImageStyle}
-        />
-      </Box>
-    </>
+        </div>
+        <Footer currentPath={currentPath} />
+      </div>
+    </div>
   );
 }

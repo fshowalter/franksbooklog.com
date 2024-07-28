@@ -1,48 +1,40 @@
 import { useReducer } from "react";
-import { ListWithFiltersLayout } from "../ListWithFiltersLayout";
+import { ListWithFiltersLayout } from "src/components/ListWithFiltersLayout";
+
 import { Filters } from "./Filters";
 import { Header } from "./Header";
+import type { ListItemValue } from "./List";
 import { List } from "./List";
-import { Sort, initState, reducer } from "./Reviews.reducer";
+import type { Sort } from "./Reviews.reducer";
+import { initState, reducer } from "./Reviews.reducer";
 
-export function Reviews({
-  items,
-  shortStoryCount,
-  bookCount,
-  distinctPublishedYears,
-  distinctReviewYears,
-  distinctKinds,
-  abandonedCount,
-  initialSort,
-}: {
-  items: readonly Queries.ReviewsListItemFragment[];
-  shortStoryCount: number;
-  bookCount: number;
-  abandonedCount: number;
+export interface Props {
+  values: ListItemValue[];
   distinctPublishedYears: readonly string[];
   distinctReviewYears: readonly string[];
   distinctKinds: readonly string[];
   initialSort: Sort;
-}): JSX.Element {
+}
+
+export function Reviews({
+  values,
+  distinctPublishedYears,
+  distinctReviewYears,
+  distinctKinds,
+  initialSort,
+}: Props): JSX.Element {
   const [state, dispatch] = useReducer(
     reducer,
     {
-      items: [...items],
-      sort: initialSort,
+      values,
+      initialSort,
     },
     initState,
   );
 
   return (
     <ListWithFiltersLayout
-      header={
-        <Header
-          reviewCount={items.length}
-          shortStoryCount={shortStoryCount}
-          abandonedCount={abandonedCount}
-          bookCount={bookCount}
-        />
-      }
+      header={<Header reviewCount={values.length} />}
       filters={
         <Filters
           dispatch={dispatch}
@@ -55,9 +47,9 @@ export function Reviews({
       list={
         <List
           dispatch={dispatch}
-          groupedItems={state.groupedItems}
+          groupedValues={state.groupedValues}
           visibleCount={state.showCount}
-          totalCount={state.filteredItems.length}
+          totalCount={state.filteredValues.length}
         />
       }
     />

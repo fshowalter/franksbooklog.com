@@ -1,122 +1,85 @@
-import { graphql } from "gatsby";
-import { backgroundColors } from "../../styles/colors.css";
-import { Box } from "../Box";
-import { GraphqlImage } from "../GraphqlImage";
-import { Link } from "../Link";
-import { ListItem } from "../ListItem";
-import { GroupedList } from "../ListWithFiltersLayout";
-import { Spacer } from "../Spacer";
-import { Action, ActionType } from "./Authors.reducer";
+import type { Author } from "src/api/authors";
+import type { AvatarImageData } from "src/api/avatars";
+import { GroupedList } from "src/components/GroupedList";
+import { ListItem } from "src/components/ListItem";
+import { ListItemAvatar } from "src/components/ListItemAvatar";
+
+import type { ActionType } from "./Authors.reducer";
+import { Actions } from "./Authors.reducer";
+
+export interface ListItemValue
+  extends Pick<
+    Author,
+    "name" | "slug" | "sortName" | "reviewedWorkCount" | "workCount"
+  > {
+  imageData: AvatarImageData;
+}
 
 export function List({
-  groupedItems,
+  groupedValues,
   totalCount,
   visibleCount,
   dispatch,
 }: {
-  groupedItems: Map<string, Queries.AuthorsListItemFragment[]>;
+  groupedValues: Map<string, ListItemValue[]>;
   totalCount: number;
   visibleCount: number;
-  dispatch: React.Dispatch<Action>;
+  dispatch: React.Dispatch<ActionType>;
 }) {
   return (
     <GroupedList
-      data-testid="author-list"
-      groupedItems={groupedItems}
+      data-testid="list"
+      groupedValues={groupedValues}
       visibleCount={visibleCount}
       totalCount={totalCount}
-      onShowMore={() => dispatch({ type: ActionType.SHOW_MORE })}
+      onShowMore={() => dispatch({ type: Actions.SHOW_MORE })}
     >
-      {(item) => <AuthorListItem item={item} key={item.slug} />}
+      {(value) => <AuthorListItem value={value} key={value.slug} />}
     </GroupedList>
   );
 }
 
-function AuthorListItem({
-  item,
-}: {
-  item: Queries.AuthorsListItemFragment;
-}): JSX.Element {
+function AuthorListItem({ value }: { value: ListItemValue }): JSX.Element {
   return (
-    <ListItem alignItems="center">
-      <Avatar author={item} />
-      <AuthorName author={item} />
-      <Box marginLeft="auto">
-        {item.reviewedWorkCount}&thinsp;/&thinsp;{item.workCount}
-      </Box>
+    <ListItem>
+      <ListItemAvatar
+        name={value.name}
+        slug={value.reviewedWorkCount > 0 ? value.slug : null}
+        imageData={value.imageData}
+      />
+      <AuthorName
+        value={value.name}
+        slug={value.reviewedWorkCount > 0 ? value.slug : null}
+      />
+      <div className="ml-auto">
+        {value.reviewedWorkCount}&thinsp;/&thinsp;{value.workCount}
+      </div>
     </ListItem>
   );
 }
 
-function Avatar({ author }: { author: Queries.AuthorsListItemFragment }) {
-  if (author.avatar && author.slug) {
+function AuthorName({
+  value,
+  slug,
+}: {
+  value: ListItemValue["name"];
+  slug: string | null;
+}) {
+  const name = (
+    <>
+      <div className="spacer-y-1" />
+      <div className="leading-normal">{value}</div>
+      <div className="spacer-y-1" />
+    </>
+  );
+
+  if (slug) {
     return (
-      <Link
-        to={`/shelf/authors/${author.slug}/`}
-        maxWidth={48}
-        transform="safariBorderRadiusFix"
-        overflow="hidden"
-        boxShadow="borderAll"
-        borderRadius="half"
-      >
-        <GraphqlImage
-          image={author.avatar}
-          alt={`An image of ${author.name}`}
-        />
-      </Link>
+      <a href={`/authors/${slug}/`} className="text-center text-md text-accent">
+        {name}
+      </a>
     );
   }
 
-  return (
-    <Box maxWidth={48}>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 16 16"
-        fill={backgroundColors.canvas}
-        width="100%"
-      >
-        <path
-          clipRule="evenodd"
-          d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
-          fillRule="evenodd"
-        />
-      </svg>
-    </Box>
-  );
+  return <div className="text-muted">{name}</div>;
 }
-
-function AuthorName({ author }: { author: Queries.AuthorsListItemFragment }) {
-  return (
-    <Link
-      to={`/reviews/authors/${author.slug}/`}
-      fontSize="medium"
-      textAlign="center"
-    >
-      <Spacer axis="vertical" size={4} />
-      <Box lineHeight="default">{author.name}</Box>
-      <Spacer axis="vertical" size={4} />
-    </Link>
-  );
-}
-
-export const pageQuery = graphql`
-  fragment AuthorsListItem on AuthorsJson {
-    name
-    slug
-    sortName
-    reviewedWorkCount
-    workCount
-    avatar {
-      childImageSharp {
-        gatsbyImageData(
-          layout: FIXED
-          formats: [JPG, AVIF]
-          quality: 80
-          width: 48
-          height: 48
-          placeholder: BLURRED
-        )
-      }
-    }
-  }
-`;
