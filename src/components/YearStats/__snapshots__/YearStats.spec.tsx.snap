@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`RstatYearseview > matches snapshot for slug 2022 1`] = `
+exports[`YearStats > matches snapshot for slug 2022 1`] = `
 <DocumentFragment>
   <main
     class="flex flex-col items-center"
@@ -2305,7 +2305,7 @@ exports[`RstatYearseview > matches snapshot for slug 2022 1`] = `
 </DocumentFragment>
 `;
 
-exports[`RstatYearseview > matches snapshot for slug 2023 1`] = `
+exports[`YearStats > matches snapshot for slug 2023 1`] = `
 <DocumentFragment>
   <main
     class="flex flex-col items-center"
@@ -3114,7 +3114,7 @@ exports[`RstatYearseview > matches snapshot for slug 2023 1`] = `
 </DocumentFragment>
 `;
 
-exports[`RstatYearseview > matches snapshot for slug 2024 1`] = `
+exports[`YearStats > matches snapshot for slug 2024 1`] = `
 <DocumentFragment>
   <main
     class="flex flex-col items-center"

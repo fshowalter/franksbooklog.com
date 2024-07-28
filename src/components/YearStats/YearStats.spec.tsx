@@ -7,7 +7,7 @@ import { YearStats } from "./YearStats";
 
 const statYears = await allStatYears();
 
-describe("RstatYearseview", () => {
+describe("YearStats", () => {
   it.for(statYears)(
     "matches snapshot for slug %i",
     { timeout: 10000 },
