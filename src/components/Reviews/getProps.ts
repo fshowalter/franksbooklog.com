@@ -11,9 +11,6 @@ export async function getProps(): Promise<Props> {
     distinctPublishedYears,
     distinctKinds,
     distinctReviewYears,
-    abandonedCount,
-    shortStoryCount,
-    bookCount,
   } = await allReviews();
   const covers = await getCovers({
     works: reviews,
@@ -54,8 +51,5 @@ export async function getProps(): Promise<Props> {
     distinctPublishedYears,
     distinctReviewYears,
     initialSort: "author-asc",
-    abandonedCount,
-    shortStoryCount,
-    bookCount,
   };
 }
