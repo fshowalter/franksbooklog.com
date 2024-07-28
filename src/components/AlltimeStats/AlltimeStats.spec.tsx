@@ -1,0 +1,15 @@
+import { render } from "@testing-library/react";
+import { describe, it } from "vitest";
+
+import { AlltimeStats } from "./AlltimeStats";
+import { getProps } from "./getProps";
+
+const props = await getProps();
+
+describe("Home", () => {
+  it("matches snapshot", { timeout: 40000 }, ({ expect }) => {
+    const { asFragment } = render(<AlltimeStats {...props} />);
+
+    expect(asFragment()).toMatchSnapshot();
+  });
+});
