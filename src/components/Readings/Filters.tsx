@@ -1,19 +1,21 @@
-import { DebouncedInput } from "../DebouncedInput";
-import { SelectField, SelectOptions } from "../SelectField";
-import { YearInput } from "../YearInput";
+import { DebouncedInput } from "src/components/DebouncedInput";
+import { SelectField } from "src/components/SelectField";
+import { SelectOptions } from "src/components/SelectOptions";
+import { YearInput } from "src/components/YearInput";
 
-import { Action, ActionType, Sort } from "./Readings.reducer";
+import type { ActionType, Sort } from "./Readings.reducer";
+import { Actions } from "./Readings.reducer";
 
 export function Filters({
   dispatch,
-  distinctPublishedYears,
+  distinctWorkYears,
   distinctReadingYears,
   distinctKinds,
   distinctEditions,
   sortValue,
 }: {
-  dispatch: React.Dispatch<Action>;
-  distinctPublishedYears: readonly string[];
+  dispatch: React.Dispatch<ActionType>;
+  distinctWorkYears: readonly string[];
   distinctReadingYears: readonly string[];
   distinctKinds: readonly string[];
   distinctEditions: readonly string[];
@@ -25,28 +27,28 @@ export function Filters({
         label="Title"
         placeholder="Enter all or part of a title"
         onInputChange={(value) =>
-          dispatch({ type: ActionType.FILTER_TITLE, value })
+          dispatch({ type: Actions.FILTER_TITLE, value })
         }
       />
       <YearInput
         label="Work Year"
-        years={distinctPublishedYears}
+        years={distinctWorkYears}
         onYearChange={(values) =>
-          dispatch({ type: ActionType.FILTER_PUBLISHED_YEAR, values })
+          dispatch({ type: Actions.FILTER_PUBLISHED_YEAR, values })
         }
       />
       <YearInput
         label="Reading Year"
         years={distinctReadingYears}
         onYearChange={(values) =>
-          dispatch({ type: ActionType.FILTER_READING_YEAR, values })
+          dispatch({ type: Actions.FILTER_READING_YEAR, values })
         }
       />
       <SelectField
         label="Kind"
         onChange={(e) =>
           dispatch({
-            type: ActionType.FILTER_KIND,
+            type: Actions.FILTER_KIND,
             value: e.target.value,
           })
         }
@@ -57,7 +59,7 @@ export function Filters({
         label="Edition"
         onChange={(e) =>
           dispatch({
-            type: ActionType.FILTER_EDITION,
+            type: Actions.FILTER_EDITION,
             value: e.target.value,
           })
         }
@@ -69,7 +71,7 @@ export function Filters({
         label="Order By"
         onChange={(e) =>
           dispatch({
-            type: ActionType.SORT,
+            type: Actions.SORT,
             value: e.target.value as Sort,
           })
         }

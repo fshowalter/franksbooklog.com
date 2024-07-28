@@ -1,12 +1,14 @@
-import { DebouncedInput } from "../DebouncedInput";
-import { SelectField } from "../SelectField";
-import { Action, ActionType, Sort } from "./Authors.reducer";
+import { DebouncedInput } from "src/components/DebouncedInput";
+import { SelectField } from "src/components/SelectField";
+
+import type { ActionType, Sort } from "./Authors.reducer";
+import { Actions } from "./Authors.reducer";
 
 export function Filters({
   dispatch,
   sortValue,
 }: {
-  dispatch: React.Dispatch<Action>;
+  dispatch: React.Dispatch<ActionType>;
   sortValue: Sort;
 }) {
   return (
@@ -15,7 +17,7 @@ export function Filters({
         label="Name"
         placeholder="Enter all or part of a name"
         onInputChange={(value) =>
-          dispatch({ type: ActionType.FILTER_NAME, value })
+          dispatch({ type: Actions.FILTER_NAME, value })
         }
       />
       <SelectField
@@ -23,7 +25,7 @@ export function Filters({
         label="Order By"
         onChange={(e) =>
           dispatch({
-            type: ActionType.SORT,
+            type: Actions.SORT,
             value: e.target.value as Sort,
           })
         }

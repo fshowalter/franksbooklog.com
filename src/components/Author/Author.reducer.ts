@@ -1,11 +1,13 @@
 import {
-  FilterableState,
-  buildGroupItems,
+  buildGroupValues,
   collator,
   filterTools,
   sortNumber,
   sortString,
-} from "../../utils";
+} from "src/utils";
+
+import type { FilterableState } from "../../utils";
+import type { ListItemValue } from "./List";
 
 export type Sort =
   | "year-published-desc"
@@ -15,92 +17,83 @@ export type Sort =
   | "grade-asc"
   | "grade-desc";
 
-const groupItems = buildGroupItems(groupForItem);
+const groupValues = buildGroupValues(groupForValue);
 const { updateFilter, clearFilter, applyFilters } = filterTools(
-  sortItems,
-  groupItems,
+  sortValues,
+  groupValues,
 );
 
-function sortItems(items: Queries.AuthorListItemFragment[], sortOrder: Sort) {
-  const sortMap: Record<
-    Sort,
-    (
-      a: Queries.AuthorListItemFragment,
-      b: Queries.AuthorListItemFragment,
-    ) => number
-  > = {
-    "year-published-desc": (a, b) =>
-      sortString(a.yearPublished, b.yearPublished) * -1,
-    "year-published-asc": (a, b) =>
-      sortString(a.yearPublished, b.yearPublished),
-    "title-asc": (a, b) => collator.compare(a.sortTitle, b.sortTitle),
-    "title-desc": (a, b) => collator.compare(a.sortTitle, b.sortTitle) * -1,
-    "grade-asc": (a, b) => sortNumber(a.gradeValue ?? -1, b.gradeValue ?? -1),
-    "grade-desc": (a, b) =>
-      sortNumber(a.gradeValue ?? -1, b.gradeValue ?? -1) * -1,
-  };
+function sortValues(values: ListItemValue[], sortOrder: Sort) {
+  const sortMap: Record<Sort, (a: ListItemValue, b: ListItemValue) => number> =
+    {
+      "year-published-desc": (a, b) =>
+        sortString(a.yearPublished, b.yearPublished) * -1,
+      "year-published-asc": (a, b) =>
+        sortString(a.yearPublished, b.yearPublished),
+      "title-asc": (a, b) => collator.compare(a.sortTitle, b.sortTitle),
+      "title-desc": (a, b) => collator.compare(a.sortTitle, b.sortTitle) * -1,
+      "grade-asc": (a, b) => sortNumber(a.gradeValue ?? -1, b.gradeValue ?? -1),
+      "grade-desc": (a, b) =>
+        sortNumber(a.gradeValue ?? -1, b.gradeValue ?? -1) * -1,
+    };
 
   const comparer = sortMap[sortOrder];
-  return items.sort(comparer);
+  return values.sort(comparer);
 }
 
-function groupForItem(
-  item: Queries.AuthorListItemFragment,
-  sortValue: Sort,
-): string {
+function groupForValue(value: ListItemValue, sortValue: Sort): string {
   switch (sortValue) {
     case "year-published-asc":
     case "year-published-desc": {
-      return item.yearPublished.toString();
+      return value.yearPublished;
     }
     case "grade-asc":
     case "grade-desc": {
-      return item.grade ?? "Unread";
+      return value.grade ?? "Unread";
     }
     case "title-asc":
     case "title-desc": {
-      const letter = item.sortTitle.substring(0, 1);
+      const letter = value.sortTitle.substring(0, 1);
 
       if (letter.toLowerCase() == letter.toUpperCase()) {
         return "#";
       }
 
-      return item.sortTitle.substring(0, 1).toLocaleUpperCase();
+      return value.sortTitle.substring(0, 1).toLocaleUpperCase();
     }
     // no default
   }
 }
 
-export interface State
-  extends FilterableState<
-    Queries.AuthorListItemFragment,
-    Sort,
-    Map<string, Queries.AuthorListItemFragment[]>
-  > {
+interface State
+  extends FilterableState<ListItemValue, Sort, Map<string, ListItemValue[]>> {
   hideReviewed: boolean;
 }
 
 const SHOW_COUNT_DEFAULT = 100;
 
 export function initState({
-  items,
-  sort,
+  values,
+  initialSort,
 }: {
-  items: Queries.AuthorListItemFragment[];
-  sort: Sort;
+  values: ListItemValue[];
+  initialSort: Sort;
 }): State {
   return {
-    allItems: items,
-    filteredItems: items,
-    groupedItems: groupItems(items.slice(0, SHOW_COUNT_DEFAULT), sort),
+    allValues: values,
+    filteredValues: values,
+    groupedValues: groupValues(
+      values.slice(0, SHOW_COUNT_DEFAULT),
+      initialSort,
+    ),
     filters: {},
     showCount: SHOW_COUNT_DEFAULT,
-    sortValue: sort,
+    sortValue: initialSort,
     hideReviewed: false,
   };
 }
 
-export enum ActionType {
+export enum Actions {
   FILTER_TITLE = "FILTER_TITLE",
   FILTER_KIND = "FILTER_KIND",
   FILTER_YEAR_PUBLISHED = "FILTER_YEAR_PUBLISHED",
@@ -110,33 +103,33 @@ export enum ActionType {
 }
 
 interface FilterTitleAction {
-  type: ActionType.FILTER_TITLE;
+  type: Actions.FILTER_TITLE;
   value: string;
 }
 
 interface FilterKindAction {
-  type: ActionType.FILTER_KIND;
+  type: Actions.FILTER_KIND;
   value: string;
 }
 
 interface ToggleReviewedAction {
-  type: ActionType.TOGGLE_REVIEWED;
+  type: Actions.TOGGLE_REVIEWED;
 }
 
 interface FilterYearPublishedAction {
-  type: ActionType.FILTER_YEAR_PUBLISHED;
+  type: Actions.FILTER_YEAR_PUBLISHED;
   values: [string, string];
 }
 interface SortAction {
-  type: ActionType.SORT;
+  type: Actions.SORT;
   value: Sort;
 }
 
 interface ShowMoreAction {
-  type: ActionType.SHOW_MORE;
+  type: Actions.SHOW_MORE;
 }
 
-export type Action =
+export type ActionType =
   | FilterTitleAction
   | ToggleReviewedAction
   | FilterYearPublishedAction
@@ -144,67 +137,62 @@ export type Action =
   | SortAction
   | ShowMoreAction;
 
-/**
- * Applies the given action to the given state, returning a new State object.
- * @param state The current state.
- * @param action The action to apply.
- */
-export function reducer(state: State, action: Action): State {
+export function reducer(state: State, action: ActionType): State {
   let filters;
-  let filteredItems;
-  let groupedItems;
+  let filteredValues;
+  let groupedValues;
 
   switch (action.type) {
-    case ActionType.FILTER_TITLE: {
+    case Actions.FILTER_TITLE: {
       const regex = new RegExp(action.value, "i");
-      return updateFilter(state, "title", (item) => {
-        return regex.test(item.title);
+      return updateFilter(state, "title", (value) => {
+        return regex.test(value.title);
       });
     }
-    case ActionType.FILTER_KIND: {
+    case Actions.FILTER_KIND: {
       return (
         clearFilter(action.value, state, "kind") ??
-        updateFilter(state, "medium", (item) => {
-          return item.kind === action.value;
+        updateFilter(state, "medium", (value) => {
+          return value.kind === action.value;
         })
       );
     }
-    case ActionType.FILTER_YEAR_PUBLISHED: {
-      return updateFilter(state, "yearPublished", (item) => {
-        const yearPublished = item.yearPublished;
+    case Actions.FILTER_YEAR_PUBLISHED: {
+      return updateFilter(state, "yearPublished", (value) => {
+        const yearPublished = value.yearPublished;
         return (
           yearPublished >= action.values[0] && yearPublished <= action.values[1]
         );
       });
     }
-    case ActionType.SORT: {
-      filteredItems = sortItems(state.filteredItems, action.value);
-      groupedItems = groupItems(
-        filteredItems.slice(0, state.showCount),
+    case Actions.SORT: {
+      filteredValues = sortValues(state.filteredValues, action.value);
+      groupedValues = groupValues(
+        filteredValues.slice(0, state.showCount),
         action.value,
       );
       return {
         ...state,
         sortValue: action.value,
-        filteredItems,
-        groupedItems,
+        filteredValues,
+        groupedValues,
       };
     }
-    case ActionType.SHOW_MORE: {
+    case Actions.SHOW_MORE: {
       const showCount = state.showCount + SHOW_COUNT_DEFAULT;
 
-      groupedItems = groupItems(
-        state.filteredItems.slice(0, showCount),
+      groupedValues = groupValues(
+        state.filteredValues.slice(0, showCount),
         state.sortValue,
       );
 
       return {
         ...state,
-        groupedItems,
+        groupedValues,
         showCount,
       };
     }
-    case ActionType.TOGGLE_REVIEWED: {
+    case Actions.TOGGLE_REVIEWED: {
       if (state.hideReviewed) {
         filters = {
           ...state.filters,
@@ -213,8 +201,8 @@ export function reducer(state: State, action: Action): State {
       } else {
         filters = {
           ...state.filters,
-          reviewed: (item: Queries.AuthorListItemFragment) => {
-            return item.reviewed;
+          reviewed: (item: ListItemValue) => {
+            return !item.reviewed;
           },
         };
       }

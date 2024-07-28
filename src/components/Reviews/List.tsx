@@ -1,123 +1,82 @@
-import { graphql } from "gatsby";
-import { toSentenceArray } from "../../utils";
-import { Box } from "../Box";
-import { Grade } from "../Grade";
-import { ListItem } from "../ListItem";
-import { ListItemCover } from "../ListItemCover";
-import { ListItemTitle } from "../ListItemTitle";
-import { GroupedList } from "../ListWithFiltersLayout";
-import { Spacer } from "../Spacer";
-import { Action, ActionType } from "./Reviews.reducer";
+import type { CoverImageData } from "src/api/covers";
+import type { Review } from "src/api/reviews";
+import { Grade } from "src/components/Grade";
+import { GroupedList } from "src/components/GroupedList";
+import { ListItem } from "src/components/ListItem";
+import { ListItemCover } from "src/components/ListItemCover";
+import { ListItemKindAndYear } from "src/components/ListItemKindAndYear";
+import { ListItemTitle } from "src/components/ListItemTitle";
+import { toSentenceArray } from "src/utils";
+
+import type { ActionType } from "./Reviews.reducer";
+import { Actions } from "./Reviews.reducer";
+
+interface Author extends Pick<Review["authors"][0], "name" | "sortName"> {}
+
+export interface ListItemValue
+  extends Pick<
+    Review,
+    | "grade"
+    | "slug"
+    | "date"
+    | "gradeValue"
+    | "title"
+    | "yearPublished"
+    | "sortTitle"
+    | "kind"
+  > {
+  authors: Author[];
+  imageData: CoverImageData;
+}
 
 export function List({
-  groupedItems,
+  groupedValues,
   totalCount,
   visibleCount,
   dispatch,
 }: {
-  groupedItems: Map<string, Queries.ReviewsListItemFragment[]>;
+  groupedValues: Map<string, ListItemValue[]>;
   totalCount: number;
   visibleCount: number;
-  dispatch: React.Dispatch<Action>;
+  dispatch: React.Dispatch<ActionType>;
 }) {
   return (
     <GroupedList
-      data-testid="cover-list"
-      groupedItems={groupedItems}
+      data-testid="list"
+      groupedValues={groupedValues}
       visibleCount={visibleCount}
       totalCount={totalCount}
-      onShowMore={() => dispatch({ type: ActionType.SHOW_MORE })}
+      onShowMore={() => dispatch({ type: Actions.SHOW_MORE })}
     >
-      {(item) => <ReviewsListItem item={item} key={item.slug} />}
+      {(value) => <ReviewsListItem value={value} key={value.slug} />}
     </GroupedList>
   );
 }
 
-function ReviewsListItem({
-  item,
-}: {
-  item: Queries.ReviewsListItemFragment;
-}): JSX.Element {
+function ReviewsListItem({ value }: { value: ListItemValue }): JSX.Element {
   return (
-    <ListItem alignItems="center">
-      <ListItemCover
-        slug={item.slug}
-        image={item.cover}
-        title={item.title}
-        flexShrink={0}
-      />
-      <Box
-        flexGrow={1}
-        width={{ tablet: "full" }}
-        paddingRight={{ default: "gutter", desktop: 16 }}
-      >
-        <Box>
-          <ListItemTitle title={item.title} slug={item.slug} />
-          <Spacer axis="vertical" size={4} />
-          <Authors authors={item.authors} />
-          <Spacer axis="vertical" size={8} />
-          <YearAndKind year={item.yearPublished} kind={item.kind} />
-          <Spacer axis="vertical" size={8} />
-          <Grade grade={item.grade} height={16} />
-          <Spacer axis="vertical" size={8} />
-        </Box>
-      </Box>
+    <ListItem>
+      <ListItemCover slug={value.slug} imageData={value.imageData} />
+      <div className="grow pr-gutter tablet:w-full desktop:pr-4">
+        <div>
+          <ListItemTitle title={value.title} slug={value.slug} />
+          <div className="spacer-y-1" />
+          <Authors values={value.authors} />
+          <div className="spacer-y-2" />
+          <ListItemKindAndYear year={value.yearPublished} kind={value.kind} />
+          <div className="spacer-y-2" />
+          <Grade value={value.grade} height={16} />
+          <div className="spacer-y-2" />
+        </div>
+      </div>
     </ListItem>
   );
 }
 
-function Authors({
-  authors,
-}: {
-  authors: readonly Queries.ReviewsListItemAuthorFragment[];
-}) {
+function Authors({ values }: { values: Author[] }) {
   return (
-    <Box color="muted" fontSize="default" lineHeight={20}>
-      {toSentenceArray(authors.map((author) => author.name))}
-    </Box>
+    <div className="text-base leading-5 text-muted">
+      {toSentenceArray(values.map((value) => value.name))}
+    </div>
   );
 }
-
-function YearAndKind({
-  kind,
-  year,
-}: {
-  kind: string;
-  year: string;
-}): JSX.Element | null {
-  return (
-    <Box color="subtle" fontSize="small" letterSpacing={0.5} lineHeight={16}>
-      <Box as="span">{kind} | </Box>
-      {year}
-    </Box>
-  );
-}
-
-export const query = graphql`
-  fragment ReviewsListItemAuthor on ReviewedWorksJsonWorkAuthor {
-    name
-    notes
-    sortName
-  }
-
-  fragment ReviewsListItem on ReviewedWorksJson {
-    id
-    grade
-    slug
-    date(formatString: "MMM D, YYYY")
-    gradeValue
-    sortDate: date
-    title
-    yearPublished
-    monthReviewed: date(formatString: "MMMM")
-    yearReviewed
-    sortTitle
-    kind
-    authors {
-      ...ReviewsListItemAuthor
-    }
-    cover {
-      ...ListItemCover
-    }
-  }
-`;

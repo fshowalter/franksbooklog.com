@@ -1,10 +1,10 @@
 export interface FilterableState<T, S, G> {
   filters: Record<string, (item: T) => boolean>;
-  filteredItems: T[];
-  allItems: T[];
+  filteredValues: T[];
+  allValues: T[];
   sortValue: S;
   showCount: number;
-  groupedItems: G;
+  groupedValues: G;
 }
 
 export function filterTools<T, S, G>(
@@ -48,45 +48,45 @@ export function filterTools<T, S, G>(
 }
 
 function buildApplyFilters<T, S, G>(
-  sorter: (items: T[], sortOrder: S) => T[],
-  grouper: (items: T[], sortOrder: S) => G,
+  sorter: (values: T[], sortOrder: S) => T[],
+  grouper: (values: T[], sortOrder: S) => G,
 ) {
   return function applyFilters<State extends FilterableState<T, S, G>>(
-    newFilters: Record<string, (item: T) => boolean>,
+    newFilters: Record<string, (value: T) => boolean>,
     currentState: State,
   ): State {
-    const filteredItems = sorter(
-      filterCollection({
-        collection: currentState.allItems,
+    const filteredValues = sorter(
+      filterValues({
+        values: currentState.allValues,
         filters: newFilters,
       }),
       currentState.sortValue,
     );
 
-    const groupedItems = grouper(
-      filteredItems.slice(0, currentState.showCount),
+    const groupedValues = grouper(
+      filteredValues.slice(0, currentState.showCount),
       currentState.sortValue,
     );
 
     return {
       ...currentState,
       filters: newFilters,
-      filteredItems,
-      groupedItems,
+      filteredValues,
+      groupedValues,
     };
   };
 }
 
-export function filterCollection<T>({
-  collection,
+function filterValues<T>({
+  values,
   filters,
 }: {
-  collection: readonly T[];
+  values: readonly T[];
   filters: Record<string, (arg0: T) => boolean>;
 }): T[] {
-  return collection.filter((item) => {
+  return values.filter((value) => {
     return Object.values(filters).every((filter) => {
-      return filter(item);
+      return filter(value);
     });
   });
 }

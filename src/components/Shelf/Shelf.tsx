@@ -1,36 +1,39 @@
-import { graphql } from "gatsby";
 import { useReducer } from "react";
+
 import { ListWithFiltersLayout } from "../ListWithFiltersLayout";
 import { Filters } from "./Filters";
 import { Header } from "./Header";
-import { List } from "./List";
-import { Sort, initState, reducer } from "./Shelf.reducer";
+import { List, type ListItemValue } from "./List";
+import type { Sort } from "./Shelf.reducer";
+import { initState, reducer } from "./Shelf.reducer";
 
-export function Shelf({
-  items,
-  distinctAuthors,
-  distinctKinds,
-  distinctPublishedYears,
-  initialSort,
-}: {
-  items: readonly Queries.ShelfDataFragment[];
+export interface Props {
+  values: ListItemValue[];
   distinctAuthors: readonly string[];
   distinctKinds: readonly string[];
   distinctPublishedYears: readonly string[];
   initialSort: Sort;
-}): JSX.Element {
+}
+
+export function Shelf({
+  values,
+  distinctAuthors,
+  distinctKinds,
+  distinctPublishedYears,
+  initialSort,
+}: Props): JSX.Element {
   const [state, dispatch] = useReducer(
     reducer,
     {
-      items: [...items],
-      sort: initialSort,
+      values,
+      initialSort,
     },
     initState,
   );
 
   return (
     <ListWithFiltersLayout
-      header={<Header shelfCount={items.length} />}
+      header={<Header shelfCount={values.length} />}
       filters={
         <Filters
           dispatch={dispatch}
@@ -43,17 +46,11 @@ export function Shelf({
       list={
         <List
           dispatch={dispatch}
-          groupedItems={state.groupedItems}
-          totalCount={state.filteredItems.length}
+          groupedValues={state.groupedValues}
+          totalCount={state.filteredValues.length}
           visibleCount={state.showCount}
         />
       }
     />
   );
 }
-
-export const pageQuery = graphql`
-  fragment ShelfData on UnreviewedWorksJson {
-    ...ShelfListItem
-  }
-`;

@@ -1,0 +1,57 @@
+---
+import "./base.css";
+
+import { Layout as LayoutComponent } from "src/components/Layout";
+
+interface Props {
+  title: string;
+  description: string;
+  image?: string | null;
+  article?: boolean;
+}
+
+const siteMeta = {
+  author: "Frank Showalter",
+  url: "https://www.franksbooklog.com/",
+  image: "/assets/default_og.jpg",
+  title: "Frank's Book Log",
+};
+
+const { title, description, image, article = false } = Astro.props;
+let pageTitle;
+
+if (title.startsWith(siteMeta.title)) {
+  pageTitle = title;
+} else {
+  pageTitle = `${title} | ${siteMeta.title}`;
+}
+
+const ogImage = image || "https://www.franksbooklog.com/assets/default_og.jpg";
+
+const pathname = new URL(Astro.request.url).pathname;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
+    <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <meta name="description" content={description} />
+    <meta name="og:image" content={ogImage} />
+    <meta property="og:url" content={`${siteMeta.url}${pathname}`} />
+    {article && <meta property="og:type" content="article" />}
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <title>{pageTitle}</title>
+  </head>
+</html>
+<body>
+  <LayoutComponent currentPath={pathname}>
+    <slot />
+  </LayoutComponent>
+</body>

@@ -1,1 +1,0 @@
-export { BarGradient } from "./BarGradient";

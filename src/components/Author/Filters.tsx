@@ -1,9 +1,11 @@
-import { Box } from "../Box";
-import { Button } from "../Button";
-import { DebouncedInput } from "../DebouncedInput";
-import { SelectField, SelectOptions } from "../SelectField";
-import { YearInput } from "../YearInput";
-import { Action, ActionType, Sort } from "./Author.reducer";
+import { Button } from "src/components/Button";
+import { DebouncedInput } from "src/components/DebouncedInput";
+import { SelectField } from "src/components/SelectField";
+import { SelectOptions } from "src/components/SelectOptions";
+import { YearInput } from "src/components/YearInput";
+
+import type { ActionType, Sort } from "./Author.reducer";
+import { Actions } from "./Author.reducer";
 
 export function Filters({
   dispatch,
@@ -12,7 +14,7 @@ export function Filters({
   distinctPublishedYears,
   sortValue,
 }: {
-  dispatch: React.Dispatch<Action>;
+  dispatch: React.Dispatch<ActionType>;
   sortValue: Sort;
   hideReviewed: boolean;
   distinctKinds: readonly string[];
@@ -20,31 +22,31 @@ export function Filters({
 }) {
   return (
     <>
-      <Box display="flex" flexDirection="column" justifyContent="flex-end">
-        <Button onClick={() => dispatch({ type: ActionType.TOGGLE_REVIEWED })}>
+      <div className="flex flex-col justify-end">
+        <Button onClick={() => dispatch({ type: Actions.TOGGLE_REVIEWED })}>
           {hideReviewed ? "Show Reviewed" : "Hide Reviewed"}
         </Button>
-      </Box>
+      </div>
 
       <DebouncedInput
         label="Title"
         placeholder="Enter all or part of a title"
         onInputChange={(value) =>
-          dispatch({ type: ActionType.FILTER_TITLE, value })
+          dispatch({ type: Actions.FILTER_TITLE, value })
         }
       />
       <YearInput
         label="Work Year"
         years={distinctPublishedYears}
         onYearChange={(values) =>
-          dispatch({ type: ActionType.FILTER_YEAR_PUBLISHED, values })
+          dispatch({ type: Actions.FILTER_YEAR_PUBLISHED, values })
         }
       />
       <SelectField
         label="Kind"
         onChange={(e) =>
           dispatch({
-            type: ActionType.FILTER_KIND,
+            type: Actions.FILTER_KIND,
             value: e.target.value,
           })
         }
@@ -56,7 +58,7 @@ export function Filters({
         label="Order By"
         onChange={(e) =>
           dispatch({
-            type: ActionType.SORT,
+            type: Actions.SORT,
             value: e.target.value as Sort,
           })
         }

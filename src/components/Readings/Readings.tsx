@@ -1,45 +1,64 @@
-import { graphql } from "gatsby";
 import { useReducer } from "react";
-import { ListWithFiltersLayout } from "../ListWithFiltersLayout";
+import type { CoverImageData } from "src/api/covers";
+import { ListWithFiltersLayout } from "src/components/ListWithFiltersLayout";
+
 import { Filters } from "./Filters";
 import { Header } from "./Header";
-import { List } from "./List";
-import { Sort, initState, reducer } from "./Readings.reducer";
+import { List, type ListItemValue } from "./List";
+import type { Sort } from "./Readings.reducer";
+import { initState, reducer } from "./Readings.reducer";
+
+export interface Props {
+  values: ListItemValue[];
+  distinctEditions: string[];
+  distinctWorkYears: string[];
+  distinctKinds: string[];
+  distinctReadingYears: string[];
+  initialSort: Sort;
+  shortStoryCount: number;
+  bookCount: number;
+  abandonedCount: number;
+  workCount: number;
+  covers: Record<string, CoverImageData>;
+}
 
 export function Readings({
-  items,
+  values,
   distinctEditions,
   distinctKinds,
   distinctReadingYears,
-  distinctPublishedYears,
-  workCount,
+  distinctWorkYears,
   initialSort,
-}: {
-  workCount: number;
-  items: readonly Queries.ReadingsDataFragment[];
-  distinctEditions: readonly string[];
-  distinctPublishedYears: readonly string[];
-  distinctKinds: readonly string[];
-  distinctReadingYears: readonly string[];
-  initialSort: Sort;
-}): JSX.Element {
+  covers,
+  workCount,
+  shortStoryCount,
+  bookCount,
+  abandonedCount,
+}: Props): JSX.Element {
   const [state, dispatch] = useReducer(
     reducer,
     {
-      items: [...items],
-      sort: initialSort,
+      values,
+      initialSort,
     },
     initState,
   );
 
   return (
     <ListWithFiltersLayout
-      header={<Header workCount={workCount} />}
+      header={
+        <Header
+          workCount={workCount}
+          shortStoryCount={shortStoryCount}
+          bookCount={bookCount}
+          abandonedCount={abandonedCount}
+        />
+      }
       filters={
         <Filters
           dispatch={dispatch}
           distinctEditions={distinctEditions}
-          distinctPublishedYears={distinctPublishedYears}
+          distinctWorkYears={distinctWorkYears}
           distinctKinds={distinctKinds}
           distinctReadingYears={distinctReadingYears}
           sortValue={state.sortValue}
@@ -48,17 +67,12 @@ export function Readings({
       list={
         <List
           dispatch={dispatch}
-          groupedItems={state.groupedItems}
-          totalCount={state.filteredItems.length}
+          groupedValues={state.groupedValues}
+          totalCount={state.filteredValues.length}
           visibleCount={state.showCount}
+          covers={covers}
         />
       }
     />
   );
 }
-
-export const query = graphql`
-  fragment ReadingsData on TimelineEntriesJson {
-    ...ReadingsListItem
-  }
-`;

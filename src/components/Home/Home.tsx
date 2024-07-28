@@ -1,51 +1,30 @@
-import { useRef } from "react";
-import { Box } from "../Box";
-import { Layout } from "../Layout";
-import { ListItem } from "./ListItem";
-import { Pagination } from "./Pagination";
+import type { ListItemValue } from "./HomeListItem";
+import { HomeListItem } from "./HomeListItem";
 
-export function Home({
-  items,
-  limit,
-  skip,
-  numberOfItems,
-  currentPageNumber,
-}: {
-  items: readonly Queries.HomeListItemFragment[];
-  limit: number;
-  skip: number;
-  numberOfItems: number;
-  currentPageNumber: number;
-}): JSX.Element {
-  const listHeader = useRef<HTMLDivElement>(null);
+export interface Props {
+  values: ListItemValue[];
+}
 
+export function Home({ values }: Props): JSX.Element {
   return (
-    <Layout>
-      <Box as="main" innerRef={listHeader}>
-        <Box as="ol" display="flex" flexDirection="column">
-          {items.map((reading, index) => {
-            return (
-              <ListItem
-                eagerLoadCoverImage={index === 0}
-                key={reading.sequence}
-                counterValue={numberOfItems - skip - index}
-                item={reading}
-              />
-            );
-          })}
-        </Box>
-        <Pagination
-          currentPage={currentPageNumber}
-          urlRoot="/"
-          perPage={limit}
-          numberOfItems={numberOfItems}
-          prevText="Newer"
-          nextText="Older"
-          paddingX="pageMargin"
-          paddingY={40}
-          justifyContent="center"
-        />
-      </Box>
-    </Layout>
+    <main>
+      <ol className="flex flex-col">
+        {values.map((value, index) => {
+          return (
+            <HomeListItem
+              eagerLoadCoverImage={index === 0}
+              key={value.sequence}
+              value={value}
+            />
+          );
+        })}
+      </ol>
+      <a
+        href="/reviews/"
+        className="flex justify-end px-pageMargin py-10 text-lg text-accent"
+      >
+        All Reviews →
+      </a>
+    </main>
   );
 }

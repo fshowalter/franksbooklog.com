@@ -1,77 +1,73 @@
-import { graphql } from "gatsby";
-import { toSentenceArray } from "../../utils";
-import { Box } from "../Box";
-import { ListItem } from "../ListItem";
-import { ListItemCover } from "../ListItemCover";
-import { ListItemTitle } from "../ListItemTitle";
-import { GroupedList } from "../ListWithFiltersLayout";
-import { Spacer } from "../Spacer";
-import { Action, ActionType } from "./Shelf.reducer";
+import type { CoverImageData } from "src/api/covers";
+import type { ShelfWork } from "src/api/shelf";
+import { GroupedList } from "src/components/GroupedList";
+import { ListItem } from "src/components/ListItem";
+import { ListItemCover } from "src/components/ListItemCover";
+import { ListItemTitle } from "src/components/ListItemTitle";
+import { toSentenceArray } from "src/utils";
+
+import type { ActionType } from "./Shelf.reducer";
+import { Actions } from "./Shelf.reducer";
+
+interface Author
+  extends Pick<ShelfWork["authors"][number], "name" | "notes" | "sortName"> {}
+
+export interface ListItemValue
+  extends Pick<
+    ShelfWork,
+    "slug" | "title" | "yearPublished" | "sortTitle" | "kind"
+  > {
+  authors: Author[];
+  imageData: CoverImageData;
+}
 
 export function List({
-  groupedItems,
+  groupedValues,
   totalCount,
   visibleCount,
   dispatch,
 }: {
-  groupedItems: Map<string, Queries.ShelfListItemFragment[]>;
+  groupedValues: Map<string, ListItemValue[]>;
   totalCount: number;
   visibleCount: number;
-  dispatch: React.Dispatch<Action>;
+  dispatch: React.Dispatch<ActionType>;
 }) {
   return (
     <GroupedList
-      data-testid="cover-list"
-      groupedItems={groupedItems}
+      data-testid="list"
+      groupedValues={groupedValues}
       visibleCount={visibleCount}
       totalCount={totalCount}
-      onShowMore={() => dispatch({ type: ActionType.SHOW_MORE })}
+      onShowMore={() => dispatch({ type: Actions.SHOW_MORE })}
     >
-      {(item) => <ShelfListItem item={item} key={item.slug} />}
+      {(value) => <ShelfListItem value={value} key={value.slug} />}
     </GroupedList>
   );
 }
 
-function ShelfListItem({
-  item,
-}: {
-  item: Queries.ShelfListItemFragment;
-}): JSX.Element {
+function ShelfListItem({ value }: { value: ListItemValue }): JSX.Element {
   return (
-    <ListItem alignItems="center">
-      <ListItemCover
-        slug={undefined}
-        image={item.cover}
-        title={item.title}
-        flexShrink={0}
-      />
-      <Box
-        flexGrow={1}
-        width={{ tablet: "full" }}
-        paddingRight={{ default: "gutter", desktop: 16 }}
-      >
-        <Box>
-          <ListItemTitle title={item.title} slug={undefined} />
-          <Spacer axis="vertical" size={4} />
-          <Authors authors={item.authors} />
-          <Spacer axis="vertical" size={8} />
-          <YearAndKind year={item.yearPublished} kind={item.kind} />
-          <Spacer axis="vertical" size={8} />
-        </Box>
-      </Box>
+    <ListItem>
+      <ListItemCover imageData={value.imageData} />
+      <div className="grow pr-gutter tablet:w-full desktop:pr-4">
+        <div>
+          <ListItemTitle title={value.title} />
+          <div className="spacer-y-1" />
+          <Authors values={value.authors} />
+          <div className="spacer-y-2" />
+          <YearAndKind year={value.yearPublished} kind={value.kind} />
+          <div className="spacer-y-2" />
+        </div>
+      </div>
     </ListItem>
   );
 }
 
-function Authors({
-  authors,
-}: {
-  authors: readonly Queries.ShelfListItemAuthorFragment[];
-}) {
+function Authors({ values }: { values: ListItemValue["authors"] }) {
   return (
-    <Box color="muted" fontSize="default" lineHeight={20}>
-      {toSentenceArray(authors.map((author) => author.name))}
-    </Box>
+    <div className="text-base leading-5 text-muted">
+      {toSentenceArray(values.map((author) => author.name))}
+    </div>
   );
 }
 
@@ -83,32 +79,9 @@ function YearAndKind({
   year: string;
 }): JSX.Element | null {
   return (
-    <Box color="subtle" fontSize="small" letterSpacing={0.5} lineHeight={16}>
-      <Box as="span">{kind} | </Box>
+    <div className="text-sm leading-4 tracking-0.5px text-subtle">
+      <span>{kind} | </span>
       {year}
-    </Box>
+    </div>
   );
 }
-
-export const query = graphql`
-  fragment ShelfListItemAuthor on UnreviewedWorksJsonWorkAuthor {
-    name
-    notes
-    sortName
-  }
-
-  fragment ShelfListItem on UnreviewedWorksJson {
-    id
-    slug
-    title
-    yearPublished
-    sortTitle
-    kind
-    authors {
-      ...ShelfListItemAuthor
-    }
-    cover {
-      ...ListItemCover
-    }
-  }
-`;
