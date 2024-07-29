@@ -1,5 +1,5 @@
 import type { Author } from "src/api/authors";
-import type { AvatarImageData } from "src/api/avatars";
+import type { AvatarImageProps } from "src/api/avatars";
 import { Avatar } from "src/components/Avatar";
 import { PageTitle } from "src/components/PageTitle";
 
@@ -12,12 +12,12 @@ export function Header({
   name,
   reviewedWorkCount,
   shelfWorkCount,
-  avatarImageData,
+  avatarImageProps,
 }: {
   name: Author["name"];
   reviewedWorkCount: Author["reviewedWorkCount"];
   shelfWorkCount: Author["shelfWorkCount"];
-  avatarImageData: AvatarImageData;
+  avatarImageProps: AvatarImageProps | null;
 }): JSX.Element {
   return (
     <>
@@ -26,11 +26,11 @@ export function Header({
           Authors
         </a>
       </div>
-      {avatarImageData && (
+      {avatarImageProps && (
         <div className="flex flex-col items-center">
           <div className="safari-border-radius-fix w-[200px] max-w-poster overflow-hidden rounded-[50%] shadow-all">
             <Avatar
-              imageData={avatarImageData}
+              imageData={avatarImageProps}
               name={name}
               width={AvatarImageConfig.width}
               height={AvatarImageConfig.height}

@@ -1,5 +1,5 @@
 import type { Author } from "src/api/authors";
-import type { AvatarImageData } from "src/api/avatars";
+import type { AvatarImageProps } from "src/api/avatars";
 import { GroupedList } from "src/components/GroupedList";
 import { ListItem } from "src/components/ListItem";
 import { ListItemAvatar } from "src/components/ListItemAvatar";
@@ -12,7 +12,7 @@ export interface ListItemValue
     Author,
     "name" | "slug" | "sortName" | "reviewedWorkCount" | "workCount"
   > {
-  imageData: AvatarImageData;
+  imageData: AvatarImageProps;
 }
 
 export function List({

@@ -9,7 +9,7 @@ import { toSentenceArray } from "src/utils/";
 
 import { IncludedWorks } from "./IncludedWorks";
 import { MoreReviews } from "./MoreReviews";
-import { ReadingHistory } from "./ReadingHistory";
+import { ReadingHistoryListItem } from "./ReadingHistoryListItem";
 import { StructuredData } from "./StructuredData";
 export const CoverImageConfig = {
   width: 248,
@@ -59,12 +59,22 @@ export function Review({
       <div className="flex flex-col px-pageMargin desktop:px-gutter">
         <LongFormText className="max-w-prose" text={value.content} />
       </div>
-      <IncludedWorks
-        values={value.includedWorks}
-        className="w-full max-w-popout"
-      />
+      <div className="w-full max-w-popout">
+        <div className="spacer-y-16" />
+        <IncludedWorks values={value.includedWorks} />
+      </div>
       <div className="spacer-y-20" />
-      <ReadingHistory values={value.readings} className="w-full max-w-popout" />
+      <div className="w-full max-w-popout">
+        <h2 className="px-gutter text-md font-normal text-subtle shadow-bottom">
+          Reading History
+          <div className="spacer-y-2" />
+        </h2>
+        <ul>
+          {value.readings.map((value) => (
+            <ReadingHistoryListItem key={value.sequence} value={value} />
+          ))}
+        </ul>
+      </div>
       <div className="spacer-y-32" />
       <div className="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24">
         <MoreReviews values={moreReviews} />
@@ -151,7 +161,7 @@ function ReviewCover({
       </div>
       <div className="relative -top-4 z-10 h-[372px] shadow-[0_5px_20px_rgba(49,46,42,0.22)]">
         <Cover
-          imageData={coverImageProps}
+          imageProps={coverImageProps}
           width={CoverImageConfig.width}
           height={CoverImageConfig.height}
           loading={"eager"}

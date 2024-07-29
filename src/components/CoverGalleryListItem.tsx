@@ -111,7 +111,7 @@ function Image({
         className={twj(className, "safari-border-radius-fix overflow-hidden")}
       >
         <Cover
-          imageData={imageProps}
+          imageProps={imageProps}
           height={CoverGalleryListItemImageConfig.height}
           width={CoverGalleryListItemImageConfig.width}
           loading="lazy"

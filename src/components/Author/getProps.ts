@@ -1,6 +1,6 @@
 import { type Author, getAuthorDetails } from "src/api/authors";
-import { getAvatars } from "src/api/avatars";
-import { getCovers } from "src/api/covers";
+import { getAvatarImageProps } from "src/api/avatars";
+import { getFixedCoverImageProps } from "src/api/covers";
 
 import { ListItemCoverImageConfig } from "../ListItemCover";
 import type { Props } from "./Author";
@@ -21,39 +21,38 @@ export async function getProps(slug: string): Promise<Props> {
   const { author, distinctKinds, distinctPublishedYears } =
     await getAuthorDetails(slug);
 
-  const avatars = await getAvatars({ authors: [author], ...AvatarImageConfig });
-  const covers = await getCovers({
-    works: author.works,
-    ...ListItemCoverImageConfig,
-  });
-
   author.works.sort((a, b) => a.yearPublished.localeCompare(b.yearPublished));
 
-  const values = author.works.map((work) => {
-    const value: ListItemValue = {
-      title: work.title,
-      yearPublished: work.yearPublished,
-      slug: work.slug,
-      kind: work.kind,
-      grade: work.grade,
-      sortTitle: work.sortTitle,
-      gradeValue: work.gradeValue,
-      reviewed: work.reviewed,
-      imageData: covers[work.slug],
-      otherAuthors: filterOtherAuthors(author, work),
-    };
+  const works = await Promise.all(
+    author.works.map(async (work) => {
+      const value: ListItemValue = {
+        title: work.title,
+        yearPublished: work.yearPublished,
+        slug: work.slug,
+        kind: work.kind,
+        grade: work.grade,
+        sortTitle: work.sortTitle,
+        gradeValue: work.gradeValue,
+        reviewed: work.reviewed,
+        coverImageProps: await getFixedCoverImageProps(
+          work,
+          ListItemCoverImageConfig,
+        ),
+        otherAuthors: filterOtherAuthors(author, work),
+      };
 
-    return value;
-  });
+      return value;
+    }),
+  );
 
   return {
-    values,
+    works,
     name: author.name,
     shelfWorkCount: author.shelfWorkCount,
     reviewedWorkCount: author.reviewedWorkCount,
     distinctKinds,
     distinctPublishedYears,
     initialSort: "year-published-asc",
-    avatarImageData: avatars[slug],
+    avatarImageProps: await getAvatarImageProps(author.slug, AvatarImageConfig),
   };
 }

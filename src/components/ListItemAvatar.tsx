@@ -1,4 +1,4 @@
-import type { AvatarImageData } from "src/api/avatars";
+import type { AvatarImageProps } from "src/api/avatars";
 import { Avatar } from "src/components/Avatar";
 
 export const ListItemAvatarImageConfig = {
@@ -13,7 +13,7 @@ export function ListItemAvatar({
 }: {
   name: string;
   slug: string | null;
-  imageData: AvatarImageData | undefined;
+  imageData: AvatarImageProps | undefined;
 }) {
   const avatar = (
     <Avatar

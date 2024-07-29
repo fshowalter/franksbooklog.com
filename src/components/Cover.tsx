@@ -2,7 +2,7 @@ import React from "react";
 import type { CoverImageProps } from "src/api/covers";
 
 interface Props extends React.ImgHTMLAttributes<HTMLImageElement> {
-  imageData: CoverImageProps | undefined;
+  imageProps: CoverImageProps | null;
   width: number;
   height: number;
   loading: "lazy" | "eager";
@@ -10,14 +10,14 @@ interface Props extends React.ImgHTMLAttributes<HTMLImageElement> {
 }
 
 export function Cover({
-  imageData,
+  imageProps,
   loading = "lazy",
   decoding = "async",
   ...rest
 }: Props): JSX.Element {
   return (
     <img
-      {...imageData}
+      {...imageProps}
       {...rest}
       loading={loading}
       decoding={decoding}

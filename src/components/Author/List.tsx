@@ -24,7 +24,7 @@ export interface ListItemValue
     | "gradeValue"
     | "reviewed"
   > {
-  imageData: CoverImageProps;
+  coverImageProps: CoverImageProps;
   otherAuthors: {
     name: string;
   }[];
@@ -59,7 +59,7 @@ function WorkListItem({ value }: { value: ListItemValue }): JSX.Element {
     <ListItem>
       <ListItemCover
         slug={value.reviewed ? value.slug : null}
-        imageData={value.imageData}
+        imageProps={value.coverImageProps}
       />
       <div className="grow pr-gutter tablet:w-full desktop:pr-4">
         <div>

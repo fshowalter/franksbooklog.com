@@ -1,4 +1,4 @@
-import { getCovers } from "src/api/covers";
+import { getCovers, getFixedCoverImageProps } from "src/api/covers";
 import { loadExcerptHtml, mostRecentReviews } from "src/api/reviews";
 
 import type { Props } from "./Home";
@@ -16,8 +16,16 @@ export async function getProps(): Promise<Props> {
   const covers = await getCovers({ works: reviews, ...CoverImageConfig });
 
   return {
-    values: reviews.map((review) => {
-      return { ...review, coverImageData: covers[review.slug] };
-    }),
+    values: await Promise.all(
+      reviews.map(async (review) => {
+        return {
+          ...review,
+          coverImageProps: await getFixedCoverImageProps(
+            review,
+            CoverImageConfig,
+          ),
+        };
+      }),
+    ),
   };
 }
