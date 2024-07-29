@@ -2,9 +2,10 @@ import { getContainerRenderer as reactContainerRenderer } from "@astrojs/react";
 import { experimental_AstroContainer as AstroContainer } from "astro/container";
 import type { AstroComponentFactory } from "astro/runtime/server/index.js";
 import { loadRenderers } from "astro:container";
+import * as prettier from "prettier";
 import { allStatYears } from "src/api/yearStats";
 import { describe, it } from "vitest";
-import * as prettier from "prettier";
+
 import YearStats from "./[year].astro";
 
 const statYears = await allStatYears();

@@ -2,9 +2,10 @@ import { getContainerRenderer as reactContainerRenderer } from "@astrojs/react";
 import { experimental_AstroContainer as AstroContainer } from "astro/container";
 import type { AstroComponentFactory } from "astro/runtime/server/index.js";
 import { loadRenderers } from "astro:container";
+import * as prettier from "prettier";
 import { allReviews } from "src/api/reviews";
 import { describe, it } from "vitest";
-import * as prettier from "prettier";
+
 import Review from "./[slug].astro";
 
 const { reviews } = await allReviews();

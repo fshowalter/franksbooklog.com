@@ -1,6 +1,7 @@
 import { experimental_AstroContainer as AstroContainer } from "astro/container";
-import { describe, it } from "vitest";
 import * as prettier from "prettier";
+import { describe, it } from "vitest";
+
 import * as FeedEndpoint from "./feed.xml.ts";
 
 describe("/feed.xml", () => {

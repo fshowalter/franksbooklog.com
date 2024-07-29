@@ -2,8 +2,9 @@ import { getContainerRenderer as reactContainerRenderer } from "@astrojs/react";
 import { experimental_AstroContainer as AstroContainer } from "astro/container";
 import type { AstroComponentFactory } from "astro/runtime/server/index.js";
 import { loadRenderers } from "astro:container";
-import { describe, it } from "vitest";
 import * as prettier from "prettier";
+import { describe, it } from "vitest";
+
 import Page from "./how-i-grade.astro";
 
 describe("/how-i-grade", () => {
