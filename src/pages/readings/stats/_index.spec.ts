@@ -3,7 +3,7 @@ import { experimental_AstroContainer as AstroContainer } from "astro/container";
 import type { AstroComponentFactory } from "astro/runtime/server/index.js";
 import { loadRenderers } from "astro:container";
 import { describe, it } from "vitest";
-
+import * as prettier from "prettier";
 import Index from "./index.astro";
 
 describe("/readings/stats", () => {
@@ -15,6 +15,8 @@ describe("/readings/stats", () => {
       {},
     );
 
-    void expect(result).toMatchFileSnapshot(`__snapshots__/index.html`);
+    void expect(
+      await prettier.format(result, { parser: "html" }),
+    ).toMatchFileSnapshot(`__snapshots__/index.html`);
   });
 });

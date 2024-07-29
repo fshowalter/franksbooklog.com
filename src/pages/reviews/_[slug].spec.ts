@@ -4,7 +4,7 @@ import type { AstroComponentFactory } from "astro/runtime/server/index.js";
 import { loadRenderers } from "astro:container";
 import { allReviews } from "src/api/reviews";
 import { describe, it } from "vitest";
-
+import * as prettier from "prettier";
 import Review from "./[slug].astro";
 
 const { reviews } = await allReviews();
@@ -23,9 +23,9 @@ describe("/reviews/:slug", () => {
         },
       );
 
-      void expect(result).toMatchFileSnapshot(
-        `__snapshots__/${review.slug}.html`,
-      );
+      void expect(
+        await prettier.format(result, { parser: "html" }),
+      ).toMatchFileSnapshot(`__snapshots__/${review.slug}.html`);
     },
   );
 });

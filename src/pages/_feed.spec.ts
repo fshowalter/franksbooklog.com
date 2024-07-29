@@ -1,6 +1,6 @@
 import { experimental_AstroContainer as AstroContainer } from "astro/container";
 import { describe, it } from "vitest";
-
+import * as prettier from "prettier";
 import * as FeedEndpoint from "./feed.xml.ts";
 
 describe("/feed.xml", () => {
@@ -14,6 +14,11 @@ describe("/feed.xml", () => {
 
     const result = await response.text();
 
-    void expect(result).toMatchFileSnapshot(`__snapshots__/feed.xml`);
+    void expect(
+      await prettier.format(result, {
+        parser: "xml",
+        plugins: ["@prettier/plugin-xml"],
+      }),
+    ).toMatchFileSnapshot(`__snapshots__/feed.xml`);
   });
 });

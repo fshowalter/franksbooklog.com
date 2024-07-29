@@ -4,7 +4,7 @@ import type { AstroComponentFactory } from "astro/runtime/server/index.js";
 import { loadRenderers } from "astro:container";
 import { allStatYears } from "src/api/yearStats";
 import { describe, it } from "vitest";
-
+import * as prettier from "prettier";
 import YearStats from "./[year].astro";
 
 const statYears = await allStatYears();
@@ -23,7 +23,9 @@ describe("/readings/stats/:year", () => {
         },
       );
 
-      void expect(result).toMatchFileSnapshot(`__snapshots__/${year}.html`);
+      void expect(
+        await prettier.format(result, { parser: "html" }),
+      ).toMatchFileSnapshot(`__snapshots__/${year}.html`);
     },
   );
 });
