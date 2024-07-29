@@ -8,5 +8,11 @@ export default {
         parser: "astro",
       },
     },
+    {
+      files: ["**/__snapshots__/**/*.html"],
+      options: {
+        plugins: [],
+      },
+    },
   ],
 };
