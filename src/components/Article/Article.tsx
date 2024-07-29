@@ -1,4 +1,4 @@
-import type { BackdropImageData } from "src/api/backdrops";
+import type { BackdropImageProps } from "src/api/backdrops";
 import { CoverGallery } from "src/components/CoverGallery";
 import { CoverGalleryHeading } from "src/components/CoverGalleryHeading";
 import type { CoverGalleryListItemValue } from "src/components/CoverGalleryListItem";
@@ -16,7 +16,7 @@ export interface Props {
   alt: string;
   content: string | null;
   title: string;
-  imageData: BackdropImageData;
+  backdropImageProps: BackdropImageProps;
   recentReviews: CoverGalleryListItemValue[];
 }
 
@@ -25,7 +25,7 @@ export function Article({
   title,
   content,
   recentReviews,
-  imageData,
+  backdropImageProps,
 }: Props): JSX.Element {
   return (
     <main>
@@ -34,7 +34,7 @@ export function Article({
           {title}
         </PageTitle>
         <img
-          {...imageData}
+          {...backdropImageProps}
           width={BackdropImageConfig.width}
           height={BackdropImageConfig.height}
           sizes={BackdropImageConfig.sizes}

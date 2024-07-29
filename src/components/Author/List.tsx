@@ -1,5 +1,5 @@
 import type { Author } from "src/api/authors";
-import type { CoverImageData } from "src/api/covers";
+import type { CoverImageProps } from "src/api/covers";
 import { Grade } from "src/components/Grade";
 import { GroupedList } from "src/components/GroupedList";
 import { ListItem } from "src/components/ListItem";
@@ -24,7 +24,7 @@ export interface ListItemValue
     | "gradeValue"
     | "reviewed"
   > {
-  imageData: CoverImageData;
+  imageData: CoverImageProps;
   otherAuthors: {
     name: string;
   }[];

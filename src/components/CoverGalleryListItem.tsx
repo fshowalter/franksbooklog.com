@@ -1,4 +1,4 @@
-import type { CoverImageData } from "src/api/covers";
+import type { CoverImageProps } from "src/api/covers";
 import type { Review } from "src/api/reviews";
 import { Grade } from "src/components/Grade";
 import { ListItemTitle } from "src/components/ListItemTitle";
@@ -16,7 +16,7 @@ interface Author extends Pick<Review["authors"][0], "name"> {}
 
 export interface CoverGalleryListItemValue {
   slug: Review["slug"];
-  imageData: CoverImageData;
+  coverImageProps: CoverImageProps;
   title: Review["title"];
   yearPublished: Review["yearPublished"];
   grade: Review["grade"];
@@ -33,7 +33,7 @@ export function CoverGalleryListItem({
     <li className="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset">
       <Image
         slug={value.slug}
-        imageData={value.imageData}
+        imageProps={value.coverImageProps}
         className="min-w-20 max-w-20 shrink-0 tablet:max-w-poster"
       />
       <div className="tablet:spacer-y-2" />
@@ -97,11 +97,11 @@ function YearAndKind({
 
 function Image({
   slug,
-  imageData,
+  imageProps,
   className,
 }: {
   slug: string | null | undefined;
-  imageData: CoverImageData;
+  imageProps: CoverImageProps;
   className?: string;
 }) {
   if (slug) {
@@ -111,7 +111,7 @@ function Image({
         className={twj(className, "safari-border-radius-fix overflow-hidden")}
       >
         <Cover
-          imageData={imageData}
+          imageData={imageProps}
           height={CoverGalleryListItemImageConfig.height}
           width={CoverGalleryListItemImageConfig.width}
           loading="lazy"
@@ -124,7 +124,7 @@ function Image({
 
   return (
     <img
-      {...imageData}
+      {...imageProps}
       alt="An unreviewed title."
       width={CoverGalleryListItemImageConfig.width}
       height={CoverGalleryListItemImageConfig.height}

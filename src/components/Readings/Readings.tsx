@@ -1,5 +1,5 @@
 import { useReducer } from "react";
-import type { CoverImageData } from "src/api/covers";
+import type { CoverImageProps } from "src/api/covers";
 import { ListWithFiltersLayout } from "src/components/ListWithFiltersLayout";
 
 import { Filters } from "./Filters";
@@ -19,7 +19,7 @@ export interface Props {
   bookCount: number;
   abandonedCount: number;
   workCount: number;
-  covers: Record<string, CoverImageData>;
+  covers: Record<string, CoverImageProps>;
 }
 
 export function Readings({

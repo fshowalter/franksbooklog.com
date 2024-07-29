@@ -1,4 +1,4 @@
-import type { CoverImageData } from "src/api/covers";
+import type { CoverImageProps } from "src/api/covers";
 
 import { Cover } from "./Cover";
 
@@ -12,7 +12,7 @@ export function ListItemCover({
   imageData,
 }: {
   slug?: string | null;
-  imageData: CoverImageData;
+  imageData: CoverImageProps;
 }) {
   if (slug) {
     return (

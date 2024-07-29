@@ -1,4 +1,4 @@
-import type { CoverImageData } from "src/api/covers";
+import type { CoverImageProps } from "src/api/covers";
 import type { Review, ReviewWithContent } from "src/api/reviews";
 import { AuthorLink } from "src/components/AuthorLink";
 import { Cover } from "src/components/Cover";
@@ -8,7 +8,6 @@ import { PageTitle } from "src/components/PageTitle";
 import { toSentenceArray } from "src/utils/";
 
 import { IncludedWorks } from "./IncludedWorks";
-import type { MoreReviewsValue } from "./MoreReviews";
 import { MoreReviews } from "./MoreReviews";
 import { ReadingHistory } from "./ReadingHistory";
 import { StructuredData } from "./StructuredData";
@@ -29,17 +28,19 @@ function formatDate(date: Date) {
   return dateFormat.format(date);
 }
 
-interface Value extends ReviewWithContent {
-  moreReviews: MoreReviewsValue[];
-  coverImageData: CoverImageData;
-  seoImageSrc: string;
-}
-
 export interface Props {
-  value: Value;
+  value: ReviewWithContent;
+  coverImageProps: CoverImageProps;
+  seoImageSrc: string;
+  moreReviews: React.ComponentProps<typeof MoreReviews>["values"];
 }
 
-export function Review({ value }: Props): JSX.Element {
+export function Review({
+  value,
+  coverImageProps,
+  seoImageSrc,
+  moreReviews,
+}: Props): JSX.Element {
   return (
     <main id="top" className="flex flex-col items-center pt-6 desktop:pt-12">
       <header className="flex w-full flex-col items-center px-pageMargin">
@@ -49,7 +50,7 @@ export function Review({ value }: Props): JSX.Element {
         <div className="spacer-y-2 desktop:spacer-y-4" />
         <YearAndKind yearPublished={value.yearPublished} kind={value.kind} />
         <div className="spacer-y-8" />
-        <ReviewCover coverImageData={value.coverImageData} />
+        <ReviewCover coverImageProps={coverImageProps} />
         <div className="spacer-y-12" />
         <ReviewGrade value={value.grade} />
         <ReviewDate value={value.date} />
@@ -66,16 +67,12 @@ export function Review({ value }: Props): JSX.Element {
       <ReadingHistory values={value.readings} className="w-full max-w-popout" />
       <div className="spacer-y-32" />
       <div className="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24">
-        <MoreReviews
-          values={value.moreReviews}
-          linkText="Reviews"
-          linkTarget="/reviews/"
-        />
+        <MoreReviews values={moreReviews} />
       </div>
       <StructuredData
         title={value.title}
         grade={value.grade}
-        seoImageSrc={value.seoImageSrc}
+        seoImageSrc={seoImageSrc}
       />
     </main>
   );
@@ -133,14 +130,18 @@ function Authors({ values }: { values: ReviewWithContent["authors"] }) {
   );
 }
 
-function ReviewCover({ coverImageData }: { coverImageData: CoverImageData }) {
+function ReviewCover({
+  coverImageProps,
+}: {
+  coverImageProps: CoverImageProps;
+}) {
   return (
     <div className="relative flex h-[340px] w-full max-w-popout flex-col items-center">
       <div className="cover-clip-path absolute inset-0 overflow-hidden">
         <div
           style={{
             backgroundColor: "var(--bg-default)",
-            backgroundImage: `linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(${coverImageData.src})`,
+            backgroundImage: `linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(${coverImageProps.src})`,
           }}
           className={
             "absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
@@ -150,7 +151,7 @@ function ReviewCover({ coverImageData }: { coverImageData: CoverImageData }) {
       </div>
       <div className="relative -top-4 z-10 h-[372px] shadow-[0_5px_20px_rgba(49,46,42,0.22)]">
         <Cover
-          imageData={coverImageData}
+          imageData={coverImageProps}
           width={CoverImageConfig.width}
           height={CoverImageConfig.height}
           loading={"eager"}

@@ -1,4 +1,4 @@
-import type { CoverImageData } from "src/api/covers";
+import type { CoverImageProps } from "src/api/covers";
 import type { YearStats } from "src/api/yearStats";
 import { DecadeDistribution } from "src/components/DecadeDistribution";
 import { EditionDistribution } from "src/components/EditionDistribution";
@@ -13,7 +13,7 @@ type AlltimeStatsMostReadAuthorReading =
   YearStats["mostReadAuthors"][number]["readings"][number];
 
 interface MostReadAuthorReading extends AlltimeStatsMostReadAuthorReading {
-  imageData: CoverImageData;
+  imageData: CoverImageProps;
 }
 
 interface MostReadAuthor

@@ -1,8 +1,8 @@
 import React from "react";
-import type { CoverImageData } from "src/api/covers";
+import type { CoverImageProps } from "src/api/covers";
 
 interface Props extends React.ImgHTMLAttributes<HTMLImageElement> {
-  imageData: CoverImageData | undefined;
+  imageData: CoverImageProps | undefined;
   width: number;
   height: number;
   loading: "lazy" | "eager";

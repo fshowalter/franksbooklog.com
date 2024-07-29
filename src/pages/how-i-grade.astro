@@ -1,17 +1,23 @@
 ---
+import { getOpenGraphBackdropSrc } from "src/api/backdrops";
 import { Article } from "src/components/Article/Article";
 import { getProps } from "src/components/Article/getProps";
 import Layout from "src/layouts/Layout.astro";
 
+const slug = "how-i-grade";
+
 const props = await getProps({
-  slug: "how-i-grade",
+  slug,
   alt: "Shelves teeming with books.",
 });
+
+const openGraphImageSrc = await getOpenGraphBackdropSrc(slug);
 ---
 
 <Layout
   title={props.title}
   description="The criteria I use to rate books on this site."
+  image={openGraphImageSrc}
   article
 >
   <Article {...props} />

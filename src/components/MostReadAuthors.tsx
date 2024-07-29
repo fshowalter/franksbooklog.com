@@ -1,4 +1,4 @@
-import type { CoverImageData } from "src/api/covers";
+import type { CoverImageProps } from "src/api/covers";
 
 import { ListItem } from "./ListItem";
 import { ListItemCover } from "./ListItemCover";
@@ -14,7 +14,7 @@ interface ReadingSubListItemValue {
   title: string;
   yearPublished: string;
   slug: string | null;
-  imageData: CoverImageData;
+  imageData: CoverImageProps;
   reviewed: boolean;
 }
 

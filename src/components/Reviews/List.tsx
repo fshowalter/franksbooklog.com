@@ -1,4 +1,4 @@
-import type { CoverImageData } from "src/api/covers";
+import type { CoverImageProps } from "src/api/covers";
 import type { Review } from "src/api/reviews";
 import { Grade } from "src/components/Grade";
 import { GroupedList } from "src/components/GroupedList";
@@ -26,7 +26,7 @@ export interface ListItemValue
     | "kind"
   > {
   authors: Author[];
-  imageData: CoverImageData;
+  imageData: CoverImageProps;
 }
 
 export function List({

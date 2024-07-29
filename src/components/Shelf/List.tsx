@@ -1,4 +1,4 @@
-import type { CoverImageData } from "src/api/covers";
+import type { CoverImageProps } from "src/api/covers";
 import type { ShelfWork } from "src/api/shelf";
 import { GroupedList } from "src/components/GroupedList";
 import { ListItem } from "src/components/ListItem";
@@ -18,7 +18,7 @@ export interface ListItemValue
     "slug" | "title" | "yearPublished" | "sortTitle" | "kind"
   > {
   authors: Author[];
-  imageData: CoverImageData;
+  imageData: CoverImageProps;
 }
 
 export function List({

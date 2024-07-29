@@ -1,24 +1,18 @@
-import type { CoverImageData } from "src/api/covers";
-import type { ReviewWithContent } from "src/api/reviews";
+import type { CoverImageProps } from "src/api/covers";
+import type { Review } from "src/api/reviews";
 import { CoverGallery } from "src/components/CoverGallery";
 import { CoverGalleryHeading } from "src/components/CoverGalleryHeading";
 import { CoverGalleryNav } from "src/components/CoverGalleryNav";
 
-type MoreReviews = ReviewWithContent["moreReviews"][number];
+type ReviewTitle = Review["moreReviews"][number] & {
+  coverImageProps: CoverImageProps;
+};
 
-export interface MoreReviewsValue extends MoreReviews {
-  imageData: CoverImageData;
+interface Props {
+  values: ReviewTitle[];
 }
 
-export function MoreReviews({
-  values,
-  linkTarget,
-  linkText,
-}: {
-  values: MoreReviewsValue[];
-  linkTarget: string;
-  linkText: string;
-}): JSX.Element | null {
+export function MoreReviews({ values }: Props): JSX.Element | null {
   if (values.length < 4) {
     return null;
   }
@@ -27,13 +21,13 @@ export function MoreReviews({
     <CoverGalleryNav>
       <CoverGalleryHeading
         leadText="More"
-        linkText={linkText}
-        linkTarget={linkTarget}
+        linkText={"Reviews"}
+        linkTarget={"/reviews/"}
       />
       <CoverGallery
         values={values}
-        seeAllLinkTarget={linkTarget}
-        seeAllLinkText={linkText}
+        seeAllLinkTarget={"/reviews/"}
+        seeAllLinkText={"Reviews"}
       />
     </CoverGalleryNav>
   );

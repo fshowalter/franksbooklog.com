@@ -1,4 +1,4 @@
-import type { CoverImageData } from "src/api/covers";
+import type { CoverImageProps } from "src/api/covers";
 import type { TimelineEntry } from "src/api/timelineEntries";
 import { BarGradient } from "src/components/BarGradient";
 import { GroupedList } from "src/components/GroupedList";
@@ -36,7 +36,7 @@ export function List({
   visibleCount: number;
   totalCount: number;
   dispatch: React.Dispatch<ActionType>;
-  covers: Record<string, CoverImageData>;
+  covers: Record<string, CoverImageProps>;
 }) {
   return (
     <GroupedList
@@ -68,7 +68,7 @@ function DateListItem({
 }: {
   dayAndDate: string;
   values: ListItemValue[];
-  covers: Record<string, CoverImageData>;
+  covers: Record<string, CoverImageProps>;
 }): JSX.Element {
   const [date, day] = dayAndDate.split(" ");
 
@@ -103,7 +103,7 @@ function SubListItem({
   imageData,
 }: {
   value: ListItemValue;
-  imageData: CoverImageData;
+  imageData: CoverImageProps;
 }): JSX.Element {
   const progressValue = parseProgress(value.progress);
 

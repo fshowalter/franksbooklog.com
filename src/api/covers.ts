@@ -4,7 +4,7 @@ import { toSentenceArray } from "src/utils";
 import { allWorksJson, type WorkJson } from "./data/worksJson";
 import { normalizeSources } from "./utils/normalizeSources";
 
-export interface CoverImageData {
+export interface CoverImageProps {
   src: string;
   srcSet: string;
   alt: string;
@@ -74,7 +74,7 @@ function parentCoverForWork(work: Work, worksJson: WorkJson[]) {
   }
 }
 
-async function getWorkCoverPathAndAltText(work: Work) {
+async function getWorkCoverFileAndAltText(work: Work) {
   const worksJson = cachedWorksJson || (await allWorksJson());
 
   let workCoverPath = Object.keys(images).find((path) => {
@@ -93,16 +93,16 @@ async function getWorkCoverPathAndAltText(work: Work) {
     ({ workCoverPath, altText } = parentCoverForWork(work, worksJson));
   }
 
+  const workCoverFile = await images[workCoverPath]();
+
   return {
-    workCoverPath,
+    workCoverFile,
     altText,
   };
 }
 
-export async function getOpenGraphCover(work: Work): Promise<CoverImageData> {
-  const { workCoverPath, altText } = await getWorkCoverPathAndAltText(work);
-
-  const workCoverFile = await images[workCoverPath]();
+export async function getOpenGraphCoverSrc(work: Work): Promise<string> {
+  const { workCoverFile } = await getWorkCoverFileAndAltText(work);
 
   const optimizedImage = await getImage({
     src: workCoverFile.default,
@@ -112,17 +112,11 @@ export async function getOpenGraphCover(work: Work): Promise<CoverImageData> {
     quality: 80,
   });
 
-  return {
-    srcSet: normalizeSources(optimizedImage.srcSet.attribute),
-    src: normalizeSources(optimizedImage.src),
-    alt: altText,
-  };
+  return normalizeSources(optimizedImage.src);
 }
 
-export async function getFeedCover(work: Work): Promise<CoverImageData> {
-  const { workCoverPath, altText } = await getWorkCoverPathAndAltText(work);
-
-  const workCoverFile = await images[workCoverPath]();
+export async function getFeedCover(work: Work): Promise<CoverImageProps> {
+  const { workCoverFile, altText } = await getWorkCoverFileAndAltText(work);
 
   const optimizedImage = await getImage({
     src: workCoverFile.default,
@@ -143,14 +137,12 @@ export async function getFluidCovers({
   works,
   width,
   height,
-}: Props): Promise<Record<string, CoverImageData>> {
-  const imageMap: Record<string, CoverImageData> = {};
+}: Props): Promise<Record<string, CoverImageProps>> {
+  const imageMap: Record<string, CoverImageProps> = {};
 
   await Promise.all(
     works.map(async (work) => {
-      const { workCoverPath, altText } = await getWorkCoverPathAndAltText(work);
-
-      const workCoverFile = await images[workCoverPath]();
+      const { workCoverFile, altText } = await getWorkCoverFileAndAltText(work);
 
       const optimizedImage = await getImage({
         src: workCoverFile.default,
@@ -172,18 +164,60 @@ export async function getFluidCovers({
   return imageMap;
 }
 
+export async function getFluidCoverImageProps(
+  work: Work,
+  { width, height }: { width: number; height: number },
+): Promise<CoverImageProps> {
+  const { workCoverFile, altText } = await getWorkCoverFileAndAltText(work);
+
+  const optimizedImage = await getImage({
+    src: workCoverFile.default,
+    width: width,
+    height: height,
+    format: "avif",
+    widths: [0.25, 0.5, 1, 2].map((w) => w * width),
+    quality: 80,
+  });
+
+  return {
+    srcSet: normalizeSources(optimizedImage.srcSet.attribute),
+    src: normalizeSources(optimizedImage.src),
+    alt: altText,
+  };
+}
+
+export async function getFixedCoverImageProps(
+  work: Work,
+  { width, height }: { width: number; height: number },
+): Promise<CoverImageProps> {
+  const { workCoverFile, altText } = await getWorkCoverFileAndAltText(work);
+
+  const optimizedImage = await getImage({
+    src: workCoverFile.default,
+    width: width,
+    height: height,
+    format: "avif",
+    densities: [1, 2],
+    quality: 80,
+  });
+
+  return {
+    srcSet: normalizeSources(optimizedImage.srcSet.attribute),
+    src: normalizeSources(optimizedImage.src),
+    alt: altText,
+  };
+}
+
 export async function getCovers({
   works,
   width,
   height,
-}: Props): Promise<Record<string, CoverImageData>> {
-  const imageMap: Record<string, CoverImageData> = {};
+}: Props): Promise<Record<string, CoverImageProps>> {
+  const imageMap: Record<string, CoverImageProps> = {};
 
   await Promise.all(
     works.map(async (work) => {
-      const { workCoverPath, altText } = await getWorkCoverPathAndAltText(work);
-
-      const workCoverFile = await images[workCoverPath]();
+      const { workCoverFile, altText } = await getWorkCoverFileAndAltText(work);
 
       const optimizedImage = await getImage({
         src: workCoverFile.default,

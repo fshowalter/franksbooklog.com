@@ -1,4 +1,9 @@
-import { getCovers, getFluidCovers, getOpenGraphCover } from "src/api/covers";
+import {
+  getCovers,
+  getFixedCoverImageProps,
+  getFluidCoverImageProps,
+  getOpenGraphCoverSrc,
+} from "src/api/covers";
 import { allReviews, loadContent } from "src/api/reviews";
 
 import { CoverGalleryListItemImageConfig } from "../CoverGalleryListItem";
@@ -13,28 +18,23 @@ export async function getProps(slug: string): Promise<Props> {
 
   const reviewWithContent = await loadContent(baseReview);
 
-  const coverImageData = (
-    await getCovers({ works: [reviewWithContent], ...CoverImageConfig })
-  )[reviewWithContent.slug];
-
-  const seoImageSrc = (await getOpenGraphCover(reviewWithContent)).src;
-
-  const covers = await getFluidCovers({
-    works: reviewWithContent.moreReviews,
-    ...CoverGalleryListItemImageConfig,
-  });
-
   return {
-    value: {
-      ...reviewWithContent,
-      seoImageSrc,
-      coverImageData,
-      moreReviews: reviewWithContent.moreReviews.map((review) => {
+    value: reviewWithContent,
+    seoImageSrc: await getOpenGraphCoverSrc(reviewWithContent),
+    coverImageProps: await getFixedCoverImageProps(
+      reviewWithContent,
+      CoverImageConfig,
+    ),
+    moreReviews: await Promise.all(
+      reviewWithContent.moreReviews.map(async (review) => {
         return {
           ...review,
-          imageData: covers[review.slug],
+          coverImageProps: await getFluidCoverImageProps(
+            review,
+            CoverGalleryListItemImageConfig,
+          ),
         };
       }),
-    },
+    ),
   };
 }
