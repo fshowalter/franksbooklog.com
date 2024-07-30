@@ -6,7 +6,7 @@
     "astro": "astro",
     "build": "astro build",
     "check": "astro check",
-    "dev": "astro dev",
+    "dev": "astro dev --config astro.config.dev.js",
     "format:check": "prettier . --check",
     "format:fix": "prettier . --write",
     "knip": "knip",

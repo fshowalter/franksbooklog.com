@@ -96,14 +96,14 @@ function pagefind() {
 export default defineConfig({
   site: "http://www.franksbooklog.com",
   trailingSlash: "always",
+  devToolbar: {
+    enabled: false,
+  },
   vite: {
     optimizeDeps: {
       exclude: ["fsevents"],
     },
     plugins: [contentHmr()],
-  },
-  devToolbar: {
-    enabled: !import.meta.env.MODE === "test",
   },
   integrations: [
     react(),
