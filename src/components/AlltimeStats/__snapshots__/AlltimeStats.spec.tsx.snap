@@ -13,6 +13,8 @@ exports[`Home > matches snapshot 1`] = `
       >
         <h1
           class="text-[2rem] font-normal leading-none desktop:text-[2.25rem] pt-6 desktop:pt-8"
+          data-pagefind-meta="title"
+          data-pagefind-weight="7"
         >
           All-Time Stats
         </h1>

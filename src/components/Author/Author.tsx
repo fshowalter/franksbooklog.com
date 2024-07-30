@@ -38,32 +38,34 @@ export function Author({
   );
 
   return (
-    <ListWithFiltersLayout
-      header={
-        <Header
-          name={name}
-          reviewedWorkCount={reviewedWorkCount}
-          shelfWorkCount={shelfWorkCount}
-          avatarImageProps={avatarImageProps}
-        />
-      }
-      filters={
-        <Filters
-          dispatch={dispatch}
-          sortValue={state.sortValue}
-          hideReviewed={state.hideReviewed}
-          distinctKinds={distinctKinds}
-          distinctPublishedYears={distinctPublishedYears}
-        />
-      }
-      list={
-        <List
-          groupedValues={state.groupedValues}
-          totalCount={state.filteredValues.length}
-          visibleCount={state.showCount}
-          dispatch={dispatch}
-        />
-      }
-    />
+    <div data-pagefind-body>
+      <ListWithFiltersLayout
+        header={
+          <Header
+            name={name}
+            reviewedWorkCount={reviewedWorkCount}
+            shelfWorkCount={shelfWorkCount}
+            avatarImageProps={avatarImageProps}
+          />
+        }
+        filters={
+          <Filters
+            dispatch={dispatch}
+            sortValue={state.sortValue}
+            hideReviewed={state.hideReviewed}
+            distinctKinds={distinctKinds}
+            distinctPublishedYears={distinctPublishedYears}
+          />
+        }
+        list={
+          <List
+            groupedValues={state.groupedValues}
+            totalCount={state.filteredValues.length}
+            visibleCount={state.showCount}
+            dispatch={dispatch}
+          />
+        }
+      />
+    </div>
   );
 }

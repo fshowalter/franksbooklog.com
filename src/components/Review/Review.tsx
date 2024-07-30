@@ -42,7 +42,11 @@ export function Review({
   moreReviews,
 }: Props): JSX.Element {
   return (
-    <main id="top" className="flex flex-col items-center pt-6 desktop:pt-12">
+    <main
+      data-pagefind-body
+      id="top"
+      className="flex flex-col items-center pt-6 desktop:pt-12"
+    >
       <header className="flex w-full flex-col items-center px-pageMargin">
         <Title title={value.title} subtitle={value.subtitle} />
         <div className="spacer-y-2" />
@@ -78,7 +82,10 @@ export function Review({
         </ul>
       </div>
       <div className="spacer-y-32" />
-      <div className="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24">
+      <div
+        data-pagefind-ignore
+        className="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+      >
         <MoreReviews values={moreReviews} />
       </div>
       <StructuredData
@@ -148,8 +155,14 @@ function ReviewCover({
   coverImageProps: CoverImageProps;
 }) {
   return (
-    <div className="relative flex h-[340px] w-full max-w-popout flex-col items-center">
-      <div className="cover-clip-path absolute inset-0 overflow-hidden">
+    <div
+      data-pagefind-meta={`image:${coverImageProps.src}`}
+      className="relative flex h-[340px] w-full max-w-popout flex-col items-center"
+    >
+      <div
+        data-pagefind-meta={`image_alt:${coverImageProps.alt}`}
+        className="cover-clip-path absolute inset-0 overflow-hidden"
+      >
         <div
           style={{
             backgroundColor: "var(--bg-default)",

@@ -1,5 +1,4 @@
 import { NavListItems } from "./NavListItems";
-import { SiteSearchForm } from "./SiteSearchForm";
 
 export function Mast({ currentPath }: { currentPath: string }) {
   return (
@@ -14,8 +13,35 @@ export function Mast({ currentPath }: { currentPath: string }) {
           Literature is a relative term.
         </p>
       </div>
-      <div className="w-full max-w-prose desktop:order-4 desktop:w-44">
-        <SiteSearchForm />
+      <div className="w-full max-w-prose desktop:order-4 desktop:w-auto">
+        <button
+          data-open-modal
+          disabled
+          aria-label="Search"
+          aria-keyshortcuts="Control+K"
+          className="safari-border-radius-fix flex w-full items-center overflow-hidden rounded-md text-sm leading-6 text-subtle ring-1 ring-border hover:ring-accent"
+        >
+          <svg
+            className="mr-2 size-10 flex-none border-0 border-r border-default bg-subtle fill-subtle px-3 py-1"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fillRule="evenodd"
+              d="M10.442 10.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z"
+            />
+            <path
+              fillRule="evenodd"
+              d="M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z"
+            />
+          </svg>
+          <span className="flex items-baseline p-2 text-base opacity-70">
+            Quick search...
+          </span>
+          <kbd className="ml-auto mt-px flex flex-none items-center pl-3 pr-4 font-mono text-sm font-light leading-5 opacity-70">
+            <kbd className="text-md leading-5">Ctrl</kbd>
+            <kbd className="text-sm">K</kbd>
+          </kbd>
+        </button>
       </div>
       <nav className="w-full desktop:w-auto">
         <ul className="flex flex-wrap justify-center gap-x-4 gap-y-2 text-accent tablet:gap-x-6 desktop:flex-nowrap desktop:justify-start">
