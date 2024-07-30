@@ -102,6 +102,9 @@ export default defineConfig({
     },
     plugins: [contentHmr()],
   },
+  devToolbar: {
+    enabled: !import.meta.env.MODE === "test",
+  },
   integrations: [
     react(),
     tailwind({
