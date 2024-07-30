@@ -55,12 +55,10 @@ const pathname = new URL(Astro.request.url).pathname;
       <slot />
     </LayoutComponent>
     <dialog
-      class="w-[76vh] rounded-xl border-2 border-default shadow-xl"
+      class="w-[75vw] rounded-xl border-2 border-default shadow-xl"
       aria-label="Search"
     >
-      <div
-        class="dialog-frame flex overflow-hidden py-4 pl-gutter pr-[calc(var(--gutter-width)_-_1rem)]"
-      >
+      <div class="dialog-frame flex flex-col overflow-hidden px-gutter py-4">
         {
           (
             <div class="flex-grow">
@@ -68,11 +66,14 @@ const pathname = new URL(Astro.request.url).pathname;
             </div>
           )
         }
-        <button
-          data-close-modal
-          class="ml-2 self-start p-4 font-mono text-xs text-subtle"
-          ><kbd>ESC</kbd></button
-        >
+        <div class="pt-4 text-sm text-subtle">
+          <kbd class="bg-subtle p-2 font-mono">Tab</kbd> to navigate
+          <button
+            data-close-modal
+            class="ml-2 self-start bg-subtle p-2 font-mono text-xs text-subtle"
+            ><kbd>ESC</kbd></button
+          > to close
+        </div>
       </div>
     </dialog>
   </body>

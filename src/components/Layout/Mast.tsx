@@ -34,7 +34,7 @@ export function Mast({ currentPath }: { currentPath: string }) {
               d="M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z"
             />
           </svg>
-          <span className="flex items-baseline p-2 text-base opacity-70">
+          <span className="flex items-baseline whitespace-nowrap p-2 text-base opacity-70">
             Quick search...
           </span>
           <kbd className="ml-auto mr-[1ch] mt-px flex min-h-6 flex-none items-center bg-subtle pl-3 pr-4 font-mono text-sm font-light opacity-70">
