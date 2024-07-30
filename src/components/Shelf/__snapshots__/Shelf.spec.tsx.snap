@@ -54775,6 +54775,7 @@ exports[`Shelf > renders 1`] = `
         >
           <h1
             class="text-[2rem] font-normal leading-none desktop:text-[2.25rem] text-center"
+            data-pagefind-meta="title"
           >
             The Shelf
           </h1>

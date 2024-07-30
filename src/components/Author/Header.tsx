@@ -27,8 +27,14 @@ export function Header({
         </a>
       </div>
       {avatarImageProps && (
-        <div className="flex flex-col items-center">
-          <div className="safari-border-radius-fix w-[200px] max-w-poster overflow-hidden rounded-[50%] shadow-all">
+        <div
+          className="flex flex-col items-center"
+          data-pagefind-meta={`image:${avatarImageProps.src}`}
+        >
+          <div
+            className="safari-border-radius-fix w-[200px] max-w-poster overflow-hidden rounded-[50%] shadow-all"
+            data-pagefind-meta={`image_alt:${name}`}
+          >
             <Avatar
               imageProps={avatarImageProps}
               name={name}

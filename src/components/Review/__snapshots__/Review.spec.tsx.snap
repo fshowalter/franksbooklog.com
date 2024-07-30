@@ -4,6 +4,7 @@ exports[`Review > matches snapshot for slug 'about-face-by-david-h-hackworth-jul
 <DocumentFragment>
   <main
     class="flex flex-col items-center pt-6 desktop:pt-12"
+    data-pagefind-body="true"
     id="top"
   >
     <header
@@ -14,6 +15,7 @@ exports[`Review > matches snapshot for slug 'about-face-by-david-h-hackworth-jul
       >
         <h1
           class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
+          data-pagefind-meta="title"
         >
           About Face
         </h1>
@@ -68,9 +70,11 @@ exports[`Review > matches snapshot for slug 'about-face-by-david-h-hackworth-jul
       />
       <div
         class="relative flex h-[340px] w-full max-w-popout flex-col items-center"
+        data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Fabout-face-by-david-h-hackworth-julie-sherman.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
       >
         <div
           class="cover-clip-path absolute inset-0 overflow-hidden"
+          data-pagefind-meta="image_alt:A cover for About Face: The Odyssey of an American Warrior by David H. Hackworth and Julie Sherman"
         >
           <div
             class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
@@ -473,6 +477,7 @@ exports[`Review > matches snapshot for slug 'about-face-by-david-h-hackworth-jul
     />
     <div
       class="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+      data-pagefind-ignore="true"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -819,6 +824,7 @@ exports[`Review > matches snapshot for slug 'altar-by-philip-fracassi' 1`] = `
 <DocumentFragment>
   <main
     class="flex flex-col items-center pt-6 desktop:pt-12"
+    data-pagefind-body="true"
     id="top"
   >
     <header
@@ -829,6 +835,7 @@ exports[`Review > matches snapshot for slug 'altar-by-philip-fracassi' 1`] = `
       >
         <h1
           class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
+          data-pagefind-meta="title"
         >
           Altar
         </h1>
@@ -868,9 +875,11 @@ exports[`Review > matches snapshot for slug 'altar-by-philip-fracassi' 1`] = `
       />
       <div
         class="relative flex h-[340px] w-full max-w-popout flex-col items-center"
+        data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Fbehold-the-void-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
       >
         <div
           class="cover-clip-path absolute inset-0 overflow-hidden"
+          data-pagefind-meta="image_alt:A cover for Behold the Void by Philip Fracassi"
         >
           <div
             class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
@@ -1089,6 +1098,7 @@ exports[`Review > matches snapshot for slug 'altar-by-philip-fracassi' 1`] = `
     />
     <div
       class="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+      data-pagefind-ignore="true"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -1435,6 +1445,7 @@ exports[`Review > matches snapshot for slug 'behold-the-void-by-philip-fracassi'
 <DocumentFragment>
   <main
     class="flex flex-col items-center pt-6 desktop:pt-12"
+    data-pagefind-body="true"
     id="top"
   >
     <header
@@ -1445,6 +1456,7 @@ exports[`Review > matches snapshot for slug 'behold-the-void-by-philip-fracassi'
       >
         <h1
           class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
+          data-pagefind-meta="title"
         >
           Behold the Void
         </h1>
@@ -1484,9 +1496,11 @@ exports[`Review > matches snapshot for slug 'behold-the-void-by-philip-fracassi'
       />
       <div
         class="relative flex h-[340px] w-full max-w-popout flex-col items-center"
+        data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Fbehold-the-void-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
       >
         <div
           class="cover-clip-path absolute inset-0 overflow-hidden"
+          data-pagefind-meta="image_alt:A cover for Behold the Void by Philip Fracassi"
         >
           <div
             class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
@@ -2206,6 +2220,7 @@ exports[`Review > matches snapshot for slug 'behold-the-void-by-philip-fracassi'
     />
     <div
       class="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+      data-pagefind-ignore="true"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -2552,6 +2567,7 @@ exports[`Review > matches snapshot for slug 'brother-iron-sister-steel-by-dave-d
 <DocumentFragment>
   <main
     class="flex flex-col items-center pt-6 desktop:pt-12"
+    data-pagefind-body="true"
     id="top"
   >
     <header
@@ -2562,6 +2578,7 @@ exports[`Review > matches snapshot for slug 'brother-iron-sister-steel-by-dave-d
       >
         <h1
           class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
+          data-pagefind-meta="title"
         >
           Brother Iron, Sister Steel
         </h1>
@@ -2601,9 +2618,11 @@ exports[`Review > matches snapshot for slug 'brother-iron-sister-steel-by-dave-d
       />
       <div
         class="relative flex h-[340px] w-full max-w-popout flex-col items-center"
+        data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Fbrother-iron-sister-steel-by-dave-draper.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
       >
         <div
           class="cover-clip-path absolute inset-0 overflow-hidden"
+          data-pagefind-meta="image_alt:A cover for Brother Iron, Sister Steel by Dave Draper"
         >
           <div
             class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
@@ -2858,6 +2877,7 @@ exports[`Review > matches snapshot for slug 'brother-iron-sister-steel-by-dave-d
     />
     <div
       class="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+      data-pagefind-ignore="true"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -3204,6 +3224,7 @@ exports[`Review > matches snapshot for slug 'cant-hurt-me-by-david-goggins' 1`] 
 <DocumentFragment>
   <main
     class="flex flex-col items-center pt-6 desktop:pt-12"
+    data-pagefind-body="true"
     id="top"
   >
     <header
@@ -3214,6 +3235,7 @@ exports[`Review > matches snapshot for slug 'cant-hurt-me-by-david-goggins' 1`] 
       >
         <h1
           class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
+          data-pagefind-meta="title"
         >
           Can't Hurt Me
         </h1>
@@ -3258,9 +3280,11 @@ exports[`Review > matches snapshot for slug 'cant-hurt-me-by-david-goggins' 1`] 
       />
       <div
         class="relative flex h-[340px] w-full max-w-popout flex-col items-center"
+        data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Fcant-hurt-me-by-david-goggins.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
       >
         <div
           class="cover-clip-path absolute inset-0 overflow-hidden"
+          data-pagefind-meta="image_alt:A cover for Can't Hurt Me: Master Your Mind and Defy the Odds by David Goggins"
         >
           <div
             class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
@@ -3568,6 +3592,7 @@ exports[`Review > matches snapshot for slug 'cant-hurt-me-by-david-goggins' 1`] 
     />
     <div
       class="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+      data-pagefind-ignore="true"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -3914,6 +3939,7 @@ exports[`Review > matches snapshot for slug 'carrie-by-stephen-king' 1`] = `
 <DocumentFragment>
   <main
     class="flex flex-col items-center pt-6 desktop:pt-12"
+    data-pagefind-body="true"
     id="top"
   >
     <header
@@ -3924,6 +3950,7 @@ exports[`Review > matches snapshot for slug 'carrie-by-stephen-king' 1`] = `
       >
         <h1
           class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
+          data-pagefind-meta="title"
         >
           Carrie
         </h1>
@@ -3963,9 +3990,11 @@ exports[`Review > matches snapshot for slug 'carrie-by-stephen-king' 1`] = `
       />
       <div
         class="relative flex h-[340px] w-full max-w-popout flex-col items-center"
+        data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Fcarrie-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
       >
         <div
           class="cover-clip-path absolute inset-0 overflow-hidden"
+          data-pagefind-meta="image_alt:A cover for Carrie by Stephen King"
         >
           <div
             class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
@@ -4426,6 +4455,7 @@ exports[`Review > matches snapshot for slug 'carrie-by-stephen-king' 1`] = `
     />
     <div
       class="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+      data-pagefind-ignore="true"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -4772,6 +4802,7 @@ exports[`Review > matches snapshot for slug 'casino-royale-by-ian-fleming' 1`] =
 <DocumentFragment>
   <main
     class="flex flex-col items-center pt-6 desktop:pt-12"
+    data-pagefind-body="true"
     id="top"
   >
     <header
@@ -4782,6 +4813,7 @@ exports[`Review > matches snapshot for slug 'casino-royale-by-ian-fleming' 1`] =
       >
         <h1
           class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
+          data-pagefind-meta="title"
         >
           Casino Royale
         </h1>
@@ -4821,9 +4853,11 @@ exports[`Review > matches snapshot for slug 'casino-royale-by-ian-fleming' 1`] =
       />
       <div
         class="relative flex h-[340px] w-full max-w-popout flex-col items-center"
+        data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Fcasino-royale-by-ian-fleming.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
       >
         <div
           class="cover-clip-path absolute inset-0 overflow-hidden"
+          data-pagefind-meta="image_alt:A cover for Casino Royale by Ian Fleming"
         >
           <div
             class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
@@ -5225,6 +5259,7 @@ exports[`Review > matches snapshot for slug 'casino-royale-by-ian-fleming' 1`] =
     />
     <div
       class="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+      data-pagefind-ignore="true"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -5571,6 +5606,7 @@ exports[`Review > matches snapshot for slug 'churchill-by-andrew-roberts' 1`] = 
 <DocumentFragment>
   <main
     class="flex flex-col items-center pt-6 desktop:pt-12"
+    data-pagefind-body="true"
     id="top"
   >
     <header
@@ -5581,6 +5617,7 @@ exports[`Review > matches snapshot for slug 'churchill-by-andrew-roberts' 1`] = 
       >
         <h1
           class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
+          data-pagefind-meta="title"
         >
           Churchill
         </h1>
@@ -5625,9 +5662,11 @@ exports[`Review > matches snapshot for slug 'churchill-by-andrew-roberts' 1`] = 
       />
       <div
         class="relative flex h-[340px] w-full max-w-popout flex-col items-center"
+        data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Fchurchill-by-andrew-roberts.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
       >
         <div
           class="cover-clip-path absolute inset-0 overflow-hidden"
+          data-pagefind-meta="image_alt:A cover for Churchill: Walking with Destiny by Andrew Roberts"
         >
           <div
             class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
@@ -6102,6 +6141,7 @@ exports[`Review > matches snapshot for slug 'churchill-by-andrew-roberts' 1`] = 
     />
     <div
       class="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+      data-pagefind-ignore="true"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -6448,6 +6488,7 @@ exports[`Review > matches snapshot for slug 'coffin-by-philip-fracassi' 1`] = `
 <DocumentFragment>
   <main
     class="flex flex-col items-center pt-6 desktop:pt-12"
+    data-pagefind-body="true"
     id="top"
   >
     <header
@@ -6458,6 +6499,7 @@ exports[`Review > matches snapshot for slug 'coffin-by-philip-fracassi' 1`] = `
       >
         <h1
           class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
+          data-pagefind-meta="title"
         >
           Coffin
         </h1>
@@ -6497,9 +6539,11 @@ exports[`Review > matches snapshot for slug 'coffin-by-philip-fracassi' 1`] = `
       />
       <div
         class="relative flex h-[340px] w-full max-w-popout flex-col items-center"
+        data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Fbehold-the-void-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
       >
         <div
           class="cover-clip-path absolute inset-0 overflow-hidden"
+          data-pagefind-meta="image_alt:A cover for Behold the Void by Philip Fracassi"
         >
           <div
             class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
@@ -6682,6 +6726,7 @@ exports[`Review > matches snapshot for slug 'coffin-by-philip-fracassi' 1`] = `
     />
     <div
       class="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+      data-pagefind-ignore="true"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -7028,6 +7073,7 @@ exports[`Review > matches snapshot for slug 'consider-this-by-chuck-palahniuk' 1
 <DocumentFragment>
   <main
     class="flex flex-col items-center pt-6 desktop:pt-12"
+    data-pagefind-body="true"
     id="top"
   >
     <header
@@ -7038,6 +7084,7 @@ exports[`Review > matches snapshot for slug 'consider-this-by-chuck-palahniuk' 1
       >
         <h1
           class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
+          data-pagefind-meta="title"
         >
           Consider This
         </h1>
@@ -7082,9 +7129,11 @@ exports[`Review > matches snapshot for slug 'consider-this-by-chuck-palahniuk' 1
       />
       <div
         class="relative flex h-[340px] w-full max-w-popout flex-col items-center"
+        data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Fconsider-this-by-chuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
       >
         <div
           class="cover-clip-path absolute inset-0 overflow-hidden"
+          data-pagefind-meta="image_alt:A cover for Consider This: Moments in My Writing Life After Which Everything Was Different by Chuck Palahniuk"
         >
           <div
             class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
@@ -7333,6 +7382,7 @@ exports[`Review > matches snapshot for slug 'consider-this-by-chuck-palahniuk' 1
     />
     <div
       class="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+      data-pagefind-ignore="true"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -7679,6 +7729,7 @@ exports[`Review > matches snapshot for slug 'cured-by-lol-tolhurst' 1`] = `
 <DocumentFragment>
   <main
     class="flex flex-col items-center pt-6 desktop:pt-12"
+    data-pagefind-body="true"
     id="top"
   >
     <header
@@ -7689,6 +7740,7 @@ exports[`Review > matches snapshot for slug 'cured-by-lol-tolhurst' 1`] = `
       >
         <h1
           class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
+          data-pagefind-meta="title"
         >
           Cured
         </h1>
@@ -7733,9 +7785,11 @@ exports[`Review > matches snapshot for slug 'cured-by-lol-tolhurst' 1`] = `
       />
       <div
         class="relative flex h-[340px] w-full max-w-popout flex-col items-center"
+        data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Fcured-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
       >
         <div
           class="cover-clip-path absolute inset-0 overflow-hidden"
+          data-pagefind-meta="image_alt:A cover for Cured: The Tale of Two Imaginary Boys by Lol Tolhurst"
         >
           <div
             class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
@@ -8085,6 +8139,7 @@ exports[`Review > matches snapshot for slug 'cured-by-lol-tolhurst' 1`] = `
     />
     <div
       class="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+      data-pagefind-ignore="true"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -8431,6 +8486,7 @@ exports[`Review > matches snapshot for slug 'desert-pickup-by-richard-laymon' 1`
 <DocumentFragment>
   <main
     class="flex flex-col items-center pt-6 desktop:pt-12"
+    data-pagefind-body="true"
     id="top"
   >
     <header
@@ -8441,6 +8497,7 @@ exports[`Review > matches snapshot for slug 'desert-pickup-by-richard-laymon' 1`
       >
         <h1
           class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
+          data-pagefind-meta="title"
         >
           Desert Pickup
         </h1>
@@ -8480,9 +8537,11 @@ exports[`Review > matches snapshot for slug 'desert-pickup-by-richard-laymon' 1`
       />
       <div
         class="relative flex h-[340px] w-full max-w-popout flex-col items-center"
+        data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Fshort-stories-volume-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
       >
         <div
           class="cover-clip-path absolute inset-0 overflow-hidden"
+          data-pagefind-meta="image_alt:A cover for Short Stories: Volume One: The Mystery and Men's Magazines by Richard Laymon"
         >
           <div
             class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
@@ -8679,6 +8738,7 @@ exports[`Review > matches snapshot for slug 'desert-pickup-by-richard-laymon' 1`
     />
     <div
       class="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+      data-pagefind-ignore="true"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -9025,6 +9085,7 @@ exports[`Review > matches snapshot for slug 'doctor-sleep-by-stephen-king' 1`] =
 <DocumentFragment>
   <main
     class="flex flex-col items-center pt-6 desktop:pt-12"
+    data-pagefind-body="true"
     id="top"
   >
     <header
@@ -9035,6 +9096,7 @@ exports[`Review > matches snapshot for slug 'doctor-sleep-by-stephen-king' 1`] =
       >
         <h1
           class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
+          data-pagefind-meta="title"
         >
           Doctor Sleep
         </h1>
@@ -9074,9 +9136,11 @@ exports[`Review > matches snapshot for slug 'doctor-sleep-by-stephen-king' 1`] =
       />
       <div
         class="relative flex h-[340px] w-full max-w-popout flex-col items-center"
+        data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Fdoctor-sleep-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
       >
         <div
           class="cover-clip-path absolute inset-0 overflow-hidden"
+          data-pagefind-meta="image_alt:A cover for Doctor Sleep by Stephen King"
         >
           <div
             class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
@@ -9905,6 +9969,7 @@ exports[`Review > matches snapshot for slug 'doctor-sleep-by-stephen-king' 1`] =
     />
     <div
       class="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+      data-pagefind-ignore="true"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -10251,6 +10316,7 @@ exports[`Review > matches snapshot for slug 'dont-let-them-get-you-down-by-phili
 <DocumentFragment>
   <main
     class="flex flex-col items-center pt-6 desktop:pt-12"
+    data-pagefind-body="true"
     id="top"
   >
     <header
@@ -10261,6 +10327,7 @@ exports[`Review > matches snapshot for slug 'dont-let-them-get-you-down-by-phili
       >
         <h1
           class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
+          data-pagefind-meta="title"
         >
           Don't Let Them Get You Down
         </h1>
@@ -10300,9 +10367,11 @@ exports[`Review > matches snapshot for slug 'dont-let-them-get-you-down-by-phili
       />
       <div
         class="relative flex h-[340px] w-full max-w-popout flex-col items-center"
+        data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Fdont-let-them-get-you-down-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
       >
         <div
           class="cover-clip-path absolute inset-0 overflow-hidden"
+          data-pagefind-meta="image_alt:A cover for Don't Let Them Get You Down by Philip Fracassi"
         >
           <div
             class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
@@ -10747,6 +10816,7 @@ exports[`Review > matches snapshot for slug 'dont-let-them-get-you-down-by-phili
     />
     <div
       class="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+      data-pagefind-ignore="true"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -11093,6 +11163,7 @@ exports[`Review > matches snapshot for slug 'dracula-by-bram-stoker' 1`] = `
 <DocumentFragment>
   <main
     class="flex flex-col items-center pt-6 desktop:pt-12"
+    data-pagefind-body="true"
     id="top"
   >
     <header
@@ -11103,6 +11174,7 @@ exports[`Review > matches snapshot for slug 'dracula-by-bram-stoker' 1`] = `
       >
         <h1
           class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
+          data-pagefind-meta="title"
         >
           Dracula
         </h1>
@@ -11142,9 +11214,11 @@ exports[`Review > matches snapshot for slug 'dracula-by-bram-stoker' 1`] = `
       />
       <div
         class="relative flex h-[340px] w-full max-w-popout flex-col items-center"
+        data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Fdracula-by-bram-stoker.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
       >
         <div
           class="cover-clip-path absolute inset-0 overflow-hidden"
+          data-pagefind-meta="image_alt:A cover for Dracula by Bram Stoker"
         >
           <div
             class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
@@ -11707,6 +11781,7 @@ exports[`Review > matches snapshot for slug 'dracula-by-bram-stoker' 1`] = `
     />
     <div
       class="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+      data-pagefind-ignore="true"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -12053,6 +12128,7 @@ exports[`Review > matches snapshot for slug 'draft-no-4-by-john-mcphee' 1`] = `
 <DocumentFragment>
   <main
     class="flex flex-col items-center pt-6 desktop:pt-12"
+    data-pagefind-body="true"
     id="top"
   >
     <header
@@ -12063,6 +12139,7 @@ exports[`Review > matches snapshot for slug 'draft-no-4-by-john-mcphee' 1`] = `
       >
         <h1
           class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
+          data-pagefind-meta="title"
         >
           Draft No. 4
         </h1>
@@ -12107,9 +12184,11 @@ exports[`Review > matches snapshot for slug 'draft-no-4-by-john-mcphee' 1`] = `
       />
       <div
         class="relative flex h-[340px] w-full max-w-popout flex-col items-center"
+        data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Fdraft-no-4-by-john-mcphee.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
       >
         <div
           class="cover-clip-path absolute inset-0 overflow-hidden"
+          data-pagefind-meta="image_alt:A cover for Draft No. 4: On the Writing Process by John McPhee"
         >
           <div
             class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
@@ -12308,6 +12387,7 @@ exports[`Review > matches snapshot for slug 'draft-no-4-by-john-mcphee' 1`] = `
     />
     <div
       class="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+      data-pagefind-ignore="true"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -12654,6 +12734,7 @@ exports[`Review > matches snapshot for slug 'extreme-ownership-by-jocko-willink-
 <DocumentFragment>
   <main
     class="flex flex-col items-center pt-6 desktop:pt-12"
+    data-pagefind-body="true"
     id="top"
   >
     <header
@@ -12664,6 +12745,7 @@ exports[`Review > matches snapshot for slug 'extreme-ownership-by-jocko-willink-
       >
         <h1
           class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
+          data-pagefind-meta="title"
         >
           Extreme Ownership
         </h1>
@@ -12718,9 +12800,11 @@ exports[`Review > matches snapshot for slug 'extreme-ownership-by-jocko-willink-
       />
       <div
         class="relative flex h-[340px] w-full max-w-popout flex-col items-center"
+        data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Fextreme-ownership-by-jocko-willink-leif-babin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
       >
         <div
           class="cover-clip-path absolute inset-0 overflow-hidden"
+          data-pagefind-meta="image_alt:A cover for Extreme Ownership: How U.S. Navy SEALs Lead and Win by Jocko Willink and Leif Babin"
         >
           <div
             class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
@@ -12923,6 +13007,7 @@ exports[`Review > matches snapshot for slug 'extreme-ownership-by-jocko-willink-
     />
     <div
       class="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+      data-pagefind-ignore="true"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -13269,6 +13354,7 @@ exports[`Review > matches snapshot for slug 'fail-safe-by-philip-fracassi' 1`] =
 <DocumentFragment>
   <main
     class="flex flex-col items-center pt-6 desktop:pt-12"
+    data-pagefind-body="true"
     id="top"
   >
     <header
@@ -13279,6 +13365,7 @@ exports[`Review > matches snapshot for slug 'fail-safe-by-philip-fracassi' 1`] =
       >
         <h1
           class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
+          data-pagefind-meta="title"
         >
           Fail-Safe
         </h1>
@@ -13318,9 +13405,11 @@ exports[`Review > matches snapshot for slug 'fail-safe-by-philip-fracassi' 1`] =
       />
       <div
         class="relative flex h-[340px] w-full max-w-popout flex-col items-center"
+        data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Fbehold-the-void-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
       >
         <div
           class="cover-clip-path absolute inset-0 overflow-hidden"
+          data-pagefind-meta="image_alt:A cover for Behold the Void by Philip Fracassi"
         >
           <div
             class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
@@ -13530,6 +13619,7 @@ exports[`Review > matches snapshot for slug 'fail-safe-by-philip-fracassi' 1`] =
     />
     <div
       class="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+      data-pagefind-ignore="true"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -13876,6 +13966,7 @@ exports[`Review > matches snapshot for slug 'fast-forward-by-stephen-morris' 1`]
 <DocumentFragment>
   <main
     class="flex flex-col items-center pt-6 desktop:pt-12"
+    data-pagefind-body="true"
     id="top"
   >
     <header
@@ -13886,6 +13977,7 @@ exports[`Review > matches snapshot for slug 'fast-forward-by-stephen-morris' 1`]
       >
         <h1
           class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
+          data-pagefind-meta="title"
         >
           Fast Forward
         </h1>
@@ -13930,9 +14022,11 @@ exports[`Review > matches snapshot for slug 'fast-forward-by-stephen-morris' 1`]
       />
       <div
         class="relative flex h-[340px] w-full max-w-popout flex-col items-center"
+        data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
       >
         <div
           class="cover-clip-path absolute inset-0 overflow-hidden"
+          data-pagefind-meta="image_alt:A cover for Fast Forward: Confessions of a Post-Punk Percussionist: Volume II by Stephen Morris"
         >
           <div
             class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
@@ -15000,6 +15094,7 @@ exports[`Review > matches snapshot for slug 'fast-forward-by-stephen-morris' 1`]
     />
     <div
       class="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+      data-pagefind-ignore="true"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -15346,6 +15441,7 @@ exports[`Review > matches snapshot for slug 'fight-club-by-chuck-palahniuk' 1`] 
 <DocumentFragment>
   <main
     class="flex flex-col items-center pt-6 desktop:pt-12"
+    data-pagefind-body="true"
     id="top"
   >
     <header
@@ -15356,6 +15452,7 @@ exports[`Review > matches snapshot for slug 'fight-club-by-chuck-palahniuk' 1`] 
       >
         <h1
           class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
+          data-pagefind-meta="title"
         >
           Fight Club
         </h1>
@@ -15395,9 +15492,11 @@ exports[`Review > matches snapshot for slug 'fight-club-by-chuck-palahniuk' 1`] 
       />
       <div
         class="relative flex h-[340px] w-full max-w-popout flex-col items-center"
+        data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Ffight-club-by-chuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
       >
         <div
           class="cover-clip-path absolute inset-0 overflow-hidden"
+          data-pagefind-meta="image_alt:A cover for Fight Club by Chuck Palahniuk"
         >
           <div
             class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
@@ -15747,6 +15846,7 @@ exports[`Review > matches snapshot for slug 'fight-club-by-chuck-palahniuk' 1`] 
     />
     <div
       class="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+      data-pagefind-ignore="true"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -16093,6 +16193,7 @@ exports[`Review > matches snapshot for slug 'fright-night-by-john-skipp-craig-sp
 <DocumentFragment>
   <main
     class="flex flex-col items-center pt-6 desktop:pt-12"
+    data-pagefind-body="true"
     id="top"
   >
     <header
@@ -16103,6 +16204,7 @@ exports[`Review > matches snapshot for slug 'fright-night-by-john-skipp-craig-sp
       >
         <h1
           class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
+          data-pagefind-meta="title"
         >
           Fright Night
         </h1>
@@ -16152,9 +16254,11 @@ exports[`Review > matches snapshot for slug 'fright-night-by-john-skipp-craig-sp
       />
       <div
         class="relative flex h-[340px] w-full max-w-popout flex-col items-center"
+        data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
       >
         <div
           class="cover-clip-path absolute inset-0 overflow-hidden"
+          data-pagefind-meta="image_alt:A cover for Fright Night by John Skipp and Craig Spector"
         >
           <div
             class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
@@ -16700,6 +16804,7 @@ Rancho Corvallis. Or Peter Vincent’s real name, Herbert McHoolihee.
     />
     <div
       class="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+      data-pagefind-ignore="true"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -17046,6 +17151,7 @@ exports[`Review > matches snapshot for slug 'fright-night-origins-by-tom-holland
 <DocumentFragment>
   <main
     class="flex flex-col items-center pt-6 desktop:pt-12"
+    data-pagefind-body="true"
     id="top"
   >
     <header
@@ -17056,6 +17162,7 @@ exports[`Review > matches snapshot for slug 'fright-night-origins-by-tom-holland
       >
         <h1
           class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
+          data-pagefind-meta="title"
         >
           Fright Night Origins
         </h1>
@@ -17105,9 +17212,11 @@ exports[`Review > matches snapshot for slug 'fright-night-origins-by-tom-holland
       />
       <div
         class="relative flex h-[340px] w-full max-w-popout flex-col items-center"
+        data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Ffright-night-origins-by-tom-holland-a-jack-ulrich.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
       >
         <div
           class="cover-clip-path absolute inset-0 overflow-hidden"
+          data-pagefind-meta="image_alt:A cover for Fright Night Origins by Tom Holland and A. Jack Ulrich"
         >
           <div
             class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
@@ -17541,6 +17650,7 @@ exports[`Review > matches snapshot for slug 'fright-night-origins-by-tom-holland
     />
     <div
       class="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+      data-pagefind-ignore="true"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -17887,6 +17997,7 @@ exports[`Review > matches snapshot for slug 'gothic-by-philip-fracassi' 1`] = `
 <DocumentFragment>
   <main
     class="flex flex-col items-center pt-6 desktop:pt-12"
+    data-pagefind-body="true"
     id="top"
   >
     <header
@@ -17897,6 +18008,7 @@ exports[`Review > matches snapshot for slug 'gothic-by-philip-fracassi' 1`] = `
       >
         <h1
           class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
+          data-pagefind-meta="title"
         >
           Gothic
         </h1>
@@ -17936,9 +18048,11 @@ exports[`Review > matches snapshot for slug 'gothic-by-philip-fracassi' 1`] = `
       />
       <div
         class="relative flex h-[340px] w-full max-w-popout flex-col items-center"
+        data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Fgothic-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
       >
         <div
           class="cover-clip-path absolute inset-0 overflow-hidden"
+          data-pagefind-meta="image_alt:A cover for Gothic by Philip Fracassi"
         >
           <div
             class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
@@ -18446,6 +18560,7 @@ exports[`Review > matches snapshot for slug 'gothic-by-philip-fracassi' 1`] = `
     />
     <div
       class="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+      data-pagefind-ignore="true"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -18792,6 +18907,7 @@ exports[`Review > matches snapshot for slug 'hawk-mountain-by-conner-habib' 1`] 
 <DocumentFragment>
   <main
     class="flex flex-col items-center pt-6 desktop:pt-12"
+    data-pagefind-body="true"
     id="top"
   >
     <header
@@ -18802,6 +18918,7 @@ exports[`Review > matches snapshot for slug 'hawk-mountain-by-conner-habib' 1`] 
       >
         <h1
           class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
+          data-pagefind-meta="title"
         >
           Hawk Mountain
         </h1>
@@ -18841,9 +18958,11 @@ exports[`Review > matches snapshot for slug 'hawk-mountain-by-conner-habib' 1`] 
       />
       <div
         class="relative flex h-[340px] w-full max-w-popout flex-col items-center"
+        data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Fhawk-mountain-by-conner-habib.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
       >
         <div
           class="cover-clip-path absolute inset-0 overflow-hidden"
+          data-pagefind-meta="image_alt:A cover for Hawk Mountain by Conner Habib"
         >
           <div
             class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
@@ -19500,6 +19619,7 @@ exports[`Review > matches snapshot for slug 'hawk-mountain-by-conner-habib' 1`] 
     />
     <div
       class="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+      data-pagefind-ignore="true"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -19846,6 +19966,7 @@ exports[`Review > matches snapshot for slug 'i-will-find-you-by-joe-kenda' 1`] =
 <DocumentFragment>
   <main
     class="flex flex-col items-center pt-6 desktop:pt-12"
+    data-pagefind-body="true"
     id="top"
   >
     <header
@@ -19856,6 +19977,7 @@ exports[`Review > matches snapshot for slug 'i-will-find-you-by-joe-kenda' 1`] =
       >
         <h1
           class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
+          data-pagefind-meta="title"
         >
           I Will Find You
         </h1>
@@ -19900,9 +20022,11 @@ exports[`Review > matches snapshot for slug 'i-will-find-you-by-joe-kenda' 1`] =
       />
       <div
         class="relative flex h-[340px] w-full max-w-popout flex-col items-center"
+        data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Fi-will-find-you-by-joe-kenda.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
       >
         <div
           class="cover-clip-path absolute inset-0 overflow-hidden"
+          data-pagefind-meta="image_alt:A cover for I Will Find You: Solving Killer Cases from My Life Fighting Crime by Joe Kenda"
         >
           <div
             class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
@@ -20238,6 +20362,7 @@ exports[`Review > matches snapshot for slug 'i-will-find-you-by-joe-kenda' 1`] =
     />
     <div
       class="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+      data-pagefind-ignore="true"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -20584,6 +20709,7 @@ exports[`Review > matches snapshot for slug 'is-this-anything-by-jerry-seinfeld'
 <DocumentFragment>
   <main
     class="flex flex-col items-center pt-6 desktop:pt-12"
+    data-pagefind-body="true"
     id="top"
   >
     <header
@@ -20594,6 +20720,7 @@ exports[`Review > matches snapshot for slug 'is-this-anything-by-jerry-seinfeld'
       >
         <h1
           class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
+          data-pagefind-meta="title"
         >
           Is This Anything?
         </h1>
@@ -20633,9 +20760,11 @@ exports[`Review > matches snapshot for slug 'is-this-anything-by-jerry-seinfeld'
       />
       <div
         class="relative flex h-[340px] w-full max-w-popout flex-col items-center"
+        data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Fis-this-anything-by-jerry-seinfeld.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
       >
         <div
           class="cover-clip-path absolute inset-0 overflow-hidden"
+          data-pagefind-meta="image_alt:A cover for Is This Anything? by Jerry Seinfeld"
         >
           <div
             class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
@@ -20914,6 +21043,7 @@ exports[`Review > matches snapshot for slug 'is-this-anything-by-jerry-seinfeld'
     />
     <div
       class="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+      data-pagefind-ignore="true"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -21260,6 +21390,7 @@ exports[`Review > matches snapshot for slug 'less-than-zero-by-bret-easton-ellis
 <DocumentFragment>
   <main
     class="flex flex-col items-center pt-6 desktop:pt-12"
+    data-pagefind-body="true"
     id="top"
   >
     <header
@@ -21270,6 +21401,7 @@ exports[`Review > matches snapshot for slug 'less-than-zero-by-bret-easton-ellis
       >
         <h1
           class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
+          data-pagefind-meta="title"
         >
           Less Than Zero
         </h1>
@@ -21309,9 +21441,11 @@ exports[`Review > matches snapshot for slug 'less-than-zero-by-bret-easton-ellis
       />
       <div
         class="relative flex h-[340px] w-full max-w-popout flex-col items-center"
+        data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Fless-than-zero-by-bret-easton-ellis.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
       >
         <div
           class="cover-clip-path absolute inset-0 overflow-hidden"
+          data-pagefind-meta="image_alt:A cover for Less Than Zero by Bret Easton Ellis"
         >
           <div
             class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
@@ -21646,6 +21780,7 @@ There’s a long pause that kind of freaks me out and Daniel finishes his drink 
     />
     <div
       class="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+      data-pagefind-ignore="true"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -21980,6 +22115,7 @@ exports[`Review > matches snapshot for slug 'live-and-let-die-by-ian-fleming' 1`
 <DocumentFragment>
   <main
     class="flex flex-col items-center pt-6 desktop:pt-12"
+    data-pagefind-body="true"
     id="top"
   >
     <header
@@ -21990,6 +22126,7 @@ exports[`Review > matches snapshot for slug 'live-and-let-die-by-ian-fleming' 1`
       >
         <h1
           class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
+          data-pagefind-meta="title"
         >
           Live and Let Die
         </h1>
@@ -22029,9 +22166,11 @@ exports[`Review > matches snapshot for slug 'live-and-let-die-by-ian-fleming' 1`
       />
       <div
         class="relative flex h-[340px] w-full max-w-popout flex-col items-center"
+        data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Flive-and-let-die-by-ian-fleming.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
       >
         <div
           class="cover-clip-path absolute inset-0 overflow-hidden"
+          data-pagefind-meta="image_alt:A cover for Live and Let Die by Ian Fleming"
         >
           <div
             class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
@@ -22660,6 +22799,7 @@ exports[`Review > matches snapshot for slug 'live-and-let-die-by-ian-fleming' 1`
     />
     <div
       class="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+      data-pagefind-ignore="true"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -22994,6 +23134,7 @@ exports[`Review > matches snapshot for slug 'living-with-a-seal-by-jesse-itzler'
 <DocumentFragment>
   <main
     class="flex flex-col items-center pt-6 desktop:pt-12"
+    data-pagefind-body="true"
     id="top"
   >
     <header
@@ -23004,6 +23145,7 @@ exports[`Review > matches snapshot for slug 'living-with-a-seal-by-jesse-itzler'
       >
         <h1
           class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
+          data-pagefind-meta="title"
         >
           Living with a SEAL
         </h1>
@@ -23048,9 +23190,11 @@ exports[`Review > matches snapshot for slug 'living-with-a-seal-by-jesse-itzler'
       />
       <div
         class="relative flex h-[340px] w-full max-w-popout flex-col items-center"
+        data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Fliving-with-a-seal-by-jesse-itzler.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
       >
         <div
           class="cover-clip-path absolute inset-0 overflow-hidden"
+          data-pagefind-meta="image_alt:A cover for Living with a SEAL: 31 Days Training with the Toughest Man on the Planet by Jesse Itzler"
         >
           <div
             class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
@@ -23309,6 +23453,7 @@ exports[`Review > matches snapshot for slug 'living-with-a-seal-by-jesse-itzler'
     />
     <div
       class="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+      data-pagefind-ignore="true"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -23650,6 +23795,7 @@ exports[`Review > matches snapshot for slug 'mandala-by-philip-fracassi' 1`] = `
 <DocumentFragment>
   <main
     class="flex flex-col items-center pt-6 desktop:pt-12"
+    data-pagefind-body="true"
     id="top"
   >
     <header
@@ -23660,6 +23806,7 @@ exports[`Review > matches snapshot for slug 'mandala-by-philip-fracassi' 1`] = `
       >
         <h1
           class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
+          data-pagefind-meta="title"
         >
           Mandala
         </h1>
@@ -23699,9 +23846,11 @@ exports[`Review > matches snapshot for slug 'mandala-by-philip-fracassi' 1`] = `
       />
       <div
         class="relative flex h-[340px] w-full max-w-popout flex-col items-center"
+        data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Fbehold-the-void-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
       >
         <div
           class="cover-clip-path absolute inset-0 overflow-hidden"
+          data-pagefind-meta="image_alt:A cover for Behold the Void by Philip Fracassi"
         >
           <div
             class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
@@ -23992,6 +24141,7 @@ exports[`Review > matches snapshot for slug 'mandala-by-philip-fracassi' 1`] = `
     />
     <div
       class="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+      data-pagefind-ignore="true"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -24326,6 +24476,7 @@ exports[`Review > matches snapshot for slug 'moonraker-by-ian-fleming' 1`] = `
 <DocumentFragment>
   <main
     class="flex flex-col items-center pt-6 desktop:pt-12"
+    data-pagefind-body="true"
     id="top"
   >
     <header
@@ -24336,6 +24487,7 @@ exports[`Review > matches snapshot for slug 'moonraker-by-ian-fleming' 1`] = `
       >
         <h1
           class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
+          data-pagefind-meta="title"
         >
           Moonraker
         </h1>
@@ -24375,9 +24527,11 @@ exports[`Review > matches snapshot for slug 'moonraker-by-ian-fleming' 1`] = `
       />
       <div
         class="relative flex h-[340px] w-full max-w-popout flex-col items-center"
+        data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Fmoonraker-by-ian-fleming.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
       >
         <div
           class="cover-clip-path absolute inset-0 overflow-hidden"
+          data-pagefind-meta="image_alt:A cover for Moonraker by Ian Fleming"
         >
           <div
             class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
@@ -24695,6 +24849,7 @@ exports[`Review > matches snapshot for slug 'moonraker-by-ian-fleming' 1`] = `
     />
     <div
       class="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+      data-pagefind-ignore="true"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -25029,6 +25184,7 @@ exports[`Review > matches snapshot for slug 'mother-by-philip-fracassi' 1`] = `
 <DocumentFragment>
   <main
     class="flex flex-col items-center pt-6 desktop:pt-12"
+    data-pagefind-body="true"
     id="top"
   >
     <header
@@ -25039,6 +25195,7 @@ exports[`Review > matches snapshot for slug 'mother-by-philip-fracassi' 1`] = `
       >
         <h1
           class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
+          data-pagefind-meta="title"
         >
           Mother
         </h1>
@@ -25078,9 +25235,11 @@ exports[`Review > matches snapshot for slug 'mother-by-philip-fracassi' 1`] = `
       />
       <div
         class="relative flex h-[340px] w-full max-w-popout flex-col items-center"
+        data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Fbehold-the-void-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
       >
         <div
           class="cover-clip-path absolute inset-0 overflow-hidden"
+          data-pagefind-meta="image_alt:A cover for Behold the Void by Philip Fracassi"
         >
           <div
             class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
@@ -25291,6 +25450,7 @@ exports[`Review > matches snapshot for slug 'mother-by-philip-fracassi' 1`] = `
     />
     <div
       class="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+      data-pagefind-ignore="true"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -25637,6 +25797,7 @@ exports[`Review > matches snapshot for slug 'on-writing-by-stephen-king' 1`] = `
 <DocumentFragment>
   <main
     class="flex flex-col items-center pt-6 desktop:pt-12"
+    data-pagefind-body="true"
     id="top"
   >
     <header
@@ -25647,6 +25808,7 @@ exports[`Review > matches snapshot for slug 'on-writing-by-stephen-king' 1`] = `
       >
         <h1
           class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
+          data-pagefind-meta="title"
         >
           On Writing
         </h1>
@@ -25691,9 +25853,11 @@ exports[`Review > matches snapshot for slug 'on-writing-by-stephen-king' 1`] = `
       />
       <div
         class="relative flex h-[340px] w-full max-w-popout flex-col items-center"
+        data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Fon-writing-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
       >
         <div
           class="cover-clip-path absolute inset-0 overflow-hidden"
+          data-pagefind-meta="image_alt:A cover for On Writing: A Memoir of the Craft by Stephen King"
         >
           <div
             class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
@@ -26040,6 +26204,7 @@ exports[`Review > matches snapshot for slug 'on-writing-by-stephen-king' 1`] = `
     />
     <div
       class="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+      data-pagefind-ignore="true"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -26386,6 +26551,7 @@ exports[`Review > matches snapshot for slug 'out-are-the-lights-by-richard-laymo
 <DocumentFragment>
   <main
     class="flex flex-col items-center pt-6 desktop:pt-12"
+    data-pagefind-body="true"
     id="top"
   >
     <header
@@ -26396,6 +26562,7 @@ exports[`Review > matches snapshot for slug 'out-are-the-lights-by-richard-laymo
       >
         <h1
           class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
+          data-pagefind-meta="title"
         >
           Out Are the Lights
         </h1>
@@ -26435,9 +26602,11 @@ exports[`Review > matches snapshot for slug 'out-are-the-lights-by-richard-laymo
       />
       <div
         class="relative flex h-[340px] w-full max-w-popout flex-col items-center"
+        data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Fout-are-the-lights-and-other-tales-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
       >
         <div
           class="cover-clip-path absolute inset-0 overflow-hidden"
+          data-pagefind-meta="image_alt:A cover for Out Are the Lights and Other Tales by Richard Laymon"
         >
           <div
             class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
@@ -26909,6 +27078,7 @@ exports[`Review > matches snapshot for slug 'out-are-the-lights-by-richard-laymo
     />
     <div
       class="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+      data-pagefind-ignore="true"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -27255,6 +27425,7 @@ exports[`Review > matches snapshot for slug 'record-play-pause-by-stephen-morris
 <DocumentFragment>
   <main
     class="flex flex-col items-center pt-6 desktop:pt-12"
+    data-pagefind-body="true"
     id="top"
   >
     <header
@@ -27265,6 +27436,7 @@ exports[`Review > matches snapshot for slug 'record-play-pause-by-stephen-morris
       >
         <h1
           class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
+          data-pagefind-meta="title"
         >
           Record Play Pause
         </h1>
@@ -27304,9 +27476,11 @@ exports[`Review > matches snapshot for slug 'record-play-pause-by-stephen-morris
       />
       <div
         class="relative flex h-[340px] w-full max-w-popout flex-col items-center"
+        data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Frecord-play-pause-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
       >
         <div
           class="cover-clip-path absolute inset-0 overflow-hidden"
+          data-pagefind-meta="image_alt:A cover for Record Play Pause by Stephen Morris"
         >
           <div
             class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
@@ -27690,6 +27864,7 @@ exports[`Review > matches snapshot for slug 'record-play-pause-by-stephen-morris
     />
     <div
       class="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+      data-pagefind-ignore="true"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -28036,6 +28211,7 @@ exports[`Review > matches snapshot for slug 'roadside-pickup-by-richard-laymon' 
 <DocumentFragment>
   <main
     class="flex flex-col items-center pt-6 desktop:pt-12"
+    data-pagefind-body="true"
     id="top"
   >
     <header
@@ -28046,6 +28222,7 @@ exports[`Review > matches snapshot for slug 'roadside-pickup-by-richard-laymon' 
       >
         <h1
           class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
+          data-pagefind-meta="title"
         >
           Roadside Pickup
         </h1>
@@ -28085,9 +28262,11 @@ exports[`Review > matches snapshot for slug 'roadside-pickup-by-richard-laymon' 
       />
       <div
         class="relative flex h-[340px] w-full max-w-popout flex-col items-center"
+        data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Fshort-stories-volume-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
       >
         <div
           class="cover-clip-path absolute inset-0 overflow-hidden"
+          data-pagefind-meta="image_alt:A cover for Short Stories: Volume One: The Mystery and Men's Magazines by Richard Laymon"
         >
           <div
             class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
@@ -28253,6 +28432,7 @@ exports[`Review > matches snapshot for slug 'roadside-pickup-by-richard-laymon' 
     />
     <div
       class="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+      data-pagefind-ignore="true"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -28599,6 +28779,7 @@ exports[`Review > matches snapshot for slug 'sacculina-by-philip-fracassi' 1`] =
 <DocumentFragment>
   <main
     class="flex flex-col items-center pt-6 desktop:pt-12"
+    data-pagefind-body="true"
     id="top"
   >
     <header
@@ -28609,6 +28790,7 @@ exports[`Review > matches snapshot for slug 'sacculina-by-philip-fracassi' 1`] =
       >
         <h1
           class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
+          data-pagefind-meta="title"
         >
           Sacculina
         </h1>
@@ -28648,9 +28830,11 @@ exports[`Review > matches snapshot for slug 'sacculina-by-philip-fracassi' 1`] =
       />
       <div
         class="relative flex h-[340px] w-full max-w-popout flex-col items-center"
+        data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Fsacculina-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
       >
         <div
           class="cover-clip-path absolute inset-0 overflow-hidden"
+          data-pagefind-meta="image_alt:A cover for Sacculina by Philip Fracassi"
         >
           <div
             class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
@@ -29059,6 +29243,7 @@ exports[`Review > matches snapshot for slug 'sacculina-by-philip-fracassi' 1`] =
     />
     <div
       class="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+      data-pagefind-ignore="true"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -29405,6 +29590,7 @@ exports[`Review > matches snapshot for slug 'salems-lot-by-stephen-king' 1`] = `
 <DocumentFragment>
   <main
     class="flex flex-col items-center pt-6 desktop:pt-12"
+    data-pagefind-body="true"
     id="top"
   >
     <header
@@ -29415,6 +29601,7 @@ exports[`Review > matches snapshot for slug 'salems-lot-by-stephen-king' 1`] = `
       >
         <h1
           class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
+          data-pagefind-meta="title"
         >
           'Salem's Lot
         </h1>
@@ -29454,9 +29641,11 @@ exports[`Review > matches snapshot for slug 'salems-lot-by-stephen-king' 1`] = `
       />
       <div
         class="relative flex h-[340px] w-full max-w-popout flex-col items-center"
+        data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Fsalems-lot-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
       >
         <div
           class="cover-clip-path absolute inset-0 overflow-hidden"
+          data-pagefind-meta="image_alt:A cover for 'Salem's Lot by Stephen King"
         >
           <div
             class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
@@ -29964,6 +30153,7 @@ exports[`Review > matches snapshot for slug 'salems-lot-by-stephen-king' 1`] = `
     />
     <div
       class="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+      data-pagefind-ignore="true"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -30310,6 +30500,7 @@ exports[`Review > matches snapshot for slug 'set-the-boy-free-by-johnny-marr' 1`
 <DocumentFragment>
   <main
     class="flex flex-col items-center pt-6 desktop:pt-12"
+    data-pagefind-body="true"
     id="top"
   >
     <header
@@ -30320,6 +30511,7 @@ exports[`Review > matches snapshot for slug 'set-the-boy-free-by-johnny-marr' 1`
       >
         <h1
           class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
+          data-pagefind-meta="title"
         >
           Set the Boy Free
         </h1>
@@ -30364,9 +30556,11 @@ exports[`Review > matches snapshot for slug 'set-the-boy-free-by-johnny-marr' 1`
       />
       <div
         class="relative flex h-[340px] w-full max-w-popout flex-col items-center"
+        data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Fset-the-boy-free-by-johnny-marr.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
       >
         <div
           class="cover-clip-path absolute inset-0 overflow-hidden"
+          data-pagefind-meta="image_alt:A cover for Set the Boy Free: The Autobiography by Johnny Marr"
         >
           <div
             class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
@@ -30666,6 +30860,7 @@ exports[`Review > matches snapshot for slug 'set-the-boy-free-by-johnny-marr' 1`
     />
     <div
       class="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+      data-pagefind-ignore="true"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -31012,6 +31207,7 @@ exports[`Review > matches snapshot for slug 'soft-construction-of-a-sunset-by-ph
 <DocumentFragment>
   <main
     class="flex flex-col items-center pt-6 desktop:pt-12"
+    data-pagefind-body="true"
     id="top"
   >
     <header
@@ -31022,6 +31218,7 @@ exports[`Review > matches snapshot for slug 'soft-construction-of-a-sunset-by-ph
       >
         <h1
           class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
+          data-pagefind-meta="title"
         >
           Soft Construction of a Sunset
         </h1>
@@ -31061,9 +31258,11 @@ exports[`Review > matches snapshot for slug 'soft-construction-of-a-sunset-by-ph
       />
       <div
         class="relative flex h-[340px] w-full max-w-popout flex-col items-center"
+        data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Fbehold-the-void-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
       >
         <div
           class="cover-clip-path absolute inset-0 overflow-hidden"
+          data-pagefind-meta="image_alt:A cover for Behold the Void by Philip Fracassi"
         >
           <div
             class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
@@ -31232,6 +31431,7 @@ exports[`Review > matches snapshot for slug 'soft-construction-of-a-sunset-by-ph
     />
     <div
       class="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+      data-pagefind-ignore="true"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -31578,6 +31778,7 @@ exports[`Review > matches snapshot for slug 'surfer-girl-by-philip-fracassi' 1`]
 <DocumentFragment>
   <main
     class="flex flex-col items-center pt-6 desktop:pt-12"
+    data-pagefind-body="true"
     id="top"
   >
     <header
@@ -31588,6 +31789,7 @@ exports[`Review > matches snapshot for slug 'surfer-girl-by-philip-fracassi' 1`]
       >
         <h1
           class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
+          data-pagefind-meta="title"
         >
           Surfer Girl
         </h1>
@@ -31627,9 +31829,11 @@ exports[`Review > matches snapshot for slug 'surfer-girl-by-philip-fracassi' 1`]
       />
       <div
         class="relative flex h-[340px] w-full max-w-popout flex-col items-center"
+        data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Fbehold-the-void-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
       >
         <div
           class="cover-clip-path absolute inset-0 overflow-hidden"
+          data-pagefind-meta="image_alt:A cover for Behold the Void by Philip Fracassi"
         >
           <div
             class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
@@ -31831,6 +32035,7 @@ exports[`Review > matches snapshot for slug 'surfer-girl-by-philip-fracassi' 1`]
     />
     <div
       class="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+      data-pagefind-ignore="true"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -32177,6 +32382,7 @@ exports[`Review > matches snapshot for slug 'the-48-laws-of-power-by-robert-gree
 <DocumentFragment>
   <main
     class="flex flex-col items-center pt-6 desktop:pt-12"
+    data-pagefind-body="true"
     id="top"
   >
     <header
@@ -32187,6 +32393,7 @@ exports[`Review > matches snapshot for slug 'the-48-laws-of-power-by-robert-gree
       >
         <h1
           class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
+          data-pagefind-meta="title"
         >
           The 48 Laws of Power
         </h1>
@@ -32226,9 +32433,11 @@ exports[`Review > matches snapshot for slug 'the-48-laws-of-power-by-robert-gree
       />
       <div
         class="relative flex h-[340px] w-full max-w-popout flex-col items-center"
+        data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Fthe-48-laws-of-power-by-robert-greene.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
       >
         <div
           class="cover-clip-path absolute inset-0 overflow-hidden"
+          data-pagefind-meta="image_alt:A cover for The 48 Laws of Power by Robert Greene"
         >
           <div
             class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
@@ -32506,6 +32715,7 @@ exports[`Review > matches snapshot for slug 'the-48-laws-of-power-by-robert-gree
     />
     <div
       class="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+      data-pagefind-ignore="true"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -32852,6 +33062,7 @@ exports[`Review > matches snapshot for slug 'the-baby-farmer-by-philip-fracassi'
 <DocumentFragment>
   <main
     class="flex flex-col items-center pt-6 desktop:pt-12"
+    data-pagefind-body="true"
     id="top"
   >
     <header
@@ -32862,6 +33073,7 @@ exports[`Review > matches snapshot for slug 'the-baby-farmer-by-philip-fracassi'
       >
         <h1
           class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
+          data-pagefind-meta="title"
         >
           The Baby Farmer
         </h1>
@@ -32901,9 +33113,11 @@ exports[`Review > matches snapshot for slug 'the-baby-farmer-by-philip-fracassi'
       />
       <div
         class="relative flex h-[340px] w-full max-w-popout flex-col items-center"
+        data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Fbehold-the-void-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
       >
         <div
           class="cover-clip-path absolute inset-0 overflow-hidden"
+          data-pagefind-meta="image_alt:A cover for Behold the Void by Philip Fracassi"
         >
           <div
             class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
@@ -33108,6 +33322,7 @@ exports[`Review > matches snapshot for slug 'the-baby-farmer-by-philip-fracassi'
     />
     <div
       class="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+      data-pagefind-ignore="true"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -33454,6 +33669,7 @@ exports[`Review > matches snapshot for slug 'the-big-sleep-by-raymond-chandler' 
 <DocumentFragment>
   <main
     class="flex flex-col items-center pt-6 desktop:pt-12"
+    data-pagefind-body="true"
     id="top"
   >
     <header
@@ -33464,6 +33680,7 @@ exports[`Review > matches snapshot for slug 'the-big-sleep-by-raymond-chandler' 
       >
         <h1
           class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
+          data-pagefind-meta="title"
         >
           The Big Sleep
         </h1>
@@ -33503,9 +33720,11 @@ exports[`Review > matches snapshot for slug 'the-big-sleep-by-raymond-chandler' 
       />
       <div
         class="relative flex h-[340px] w-full max-w-popout flex-col items-center"
+        data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Fthe-big-sleep-by-raymond-chandler.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
       >
         <div
           class="cover-clip-path absolute inset-0 overflow-hidden"
+          data-pagefind-meta="image_alt:A cover for The Big Sleep by Raymond Chandler"
         >
           <div
             class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
@@ -33899,6 +34118,7 @@ exports[`Review > matches snapshot for slug 'the-big-sleep-by-raymond-chandler' 
     />
     <div
       class="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+      data-pagefind-ignore="true"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -34245,6 +34465,7 @@ exports[`Review > matches snapshot for slug 'the-cellar-by-richard-laymon' 1`] =
 <DocumentFragment>
   <main
     class="flex flex-col items-center pt-6 desktop:pt-12"
+    data-pagefind-body="true"
     id="top"
   >
     <header
@@ -34255,6 +34476,7 @@ exports[`Review > matches snapshot for slug 'the-cellar-by-richard-laymon' 1`] =
       >
         <h1
           class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
+          data-pagefind-meta="title"
         >
           The Cellar
         </h1>
@@ -34294,9 +34516,11 @@ exports[`Review > matches snapshot for slug 'the-cellar-by-richard-laymon' 1`] =
       />
       <div
         class="relative flex h-[340px] w-full max-w-popout flex-col items-center"
+        data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Fthe-cellar-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
       >
         <div
           class="cover-clip-path absolute inset-0 overflow-hidden"
+          data-pagefind-meta="image_alt:A cover for The Cellar by Richard Laymon"
         >
           <div
             class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
@@ -34677,6 +34901,7 @@ exports[`Review > matches snapshot for slug 'the-cellar-by-richard-laymon' 1`] =
     />
     <div
       class="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+      data-pagefind-ignore="true"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -35023,6 +35248,7 @@ exports[`Review > matches snapshot for slug 'the-cipher-by-kathe-koja' 1`] = `
 <DocumentFragment>
   <main
     class="flex flex-col items-center pt-6 desktop:pt-12"
+    data-pagefind-body="true"
     id="top"
   >
     <header
@@ -35033,6 +35259,7 @@ exports[`Review > matches snapshot for slug 'the-cipher-by-kathe-koja' 1`] = `
       >
         <h1
           class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
+          data-pagefind-meta="title"
         >
           The Cipher
         </h1>
@@ -35072,9 +35299,11 @@ exports[`Review > matches snapshot for slug 'the-cipher-by-kathe-koja' 1`] = `
       />
       <div
         class="relative flex h-[340px] w-full max-w-popout flex-col items-center"
+        data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Fthe-cipher-by-kathe-koja.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
       >
         <div
           class="cover-clip-path absolute inset-0 overflow-hidden"
+          data-pagefind-meta="image_alt:A cover for The Cipher by Kathe Koja"
         >
           <div
             class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
@@ -35652,6 +35881,7 @@ exports[`Review > matches snapshot for slug 'the-cipher-by-kathe-koja' 1`] = `
     />
     <div
       class="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+      data-pagefind-ignore="true"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -35998,6 +36228,7 @@ exports[`Review > matches snapshot for slug 'the-creative-act-by-rick-rubin' 1`]
 <DocumentFragment>
   <main
     class="flex flex-col items-center pt-6 desktop:pt-12"
+    data-pagefind-body="true"
     id="top"
   >
     <header
@@ -36008,6 +36239,7 @@ exports[`Review > matches snapshot for slug 'the-creative-act-by-rick-rubin' 1`]
       >
         <h1
           class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
+          data-pagefind-meta="title"
         >
           The Creative Act
         </h1>
@@ -36052,9 +36284,11 @@ exports[`Review > matches snapshot for slug 'the-creative-act-by-rick-rubin' 1`]
       />
       <div
         class="relative flex h-[340px] w-full max-w-popout flex-col items-center"
+        data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Fthe-creative-act-by-rick-rubin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
       >
         <div
           class="cover-clip-path absolute inset-0 overflow-hidden"
+          data-pagefind-meta="image_alt:A cover for The Creative Act: A Way of Being by Rick Rubin"
         >
           <div
             class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
@@ -36343,6 +36577,7 @@ exports[`Review > matches snapshot for slug 'the-creative-act-by-rick-rubin' 1`]
     />
     <div
       class="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+      data-pagefind-ignore="true"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -36689,6 +36924,7 @@ exports[`Review > matches snapshot for slug 'the-dark-tunnel-by-ross-macdonald' 
 <DocumentFragment>
   <main
     class="flex flex-col items-center pt-6 desktop:pt-12"
+    data-pagefind-body="true"
     id="top"
   >
     <header
@@ -36699,6 +36935,7 @@ exports[`Review > matches snapshot for slug 'the-dark-tunnel-by-ross-macdonald' 
       >
         <h1
           class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
+          data-pagefind-meta="title"
         >
           The Dark Tunnel
         </h1>
@@ -36739,9 +36976,11 @@ exports[`Review > matches snapshot for slug 'the-dark-tunnel-by-ross-macdonald' 
       />
       <div
         class="relative flex h-[340px] w-full max-w-popout flex-col items-center"
+        data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Fthe-dark-tunnel-by-ross-macdonald.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
       >
         <div
           class="cover-clip-path absolute inset-0 overflow-hidden"
+          data-pagefind-meta="image_alt:A cover for The Dark Tunnel by Ross Macdonald (as Kenneth Millar)"
         >
           <div
             class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
@@ -37276,6 +37515,7 @@ Olympic-level physical conditioning. Or how many folks are awake past two a.m.. 
     />
     <div
       class="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+      data-pagefind-ignore="true"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -37622,6 +37862,7 @@ exports[`Review > matches snapshot for slug 'the-horse-thief-by-philip-fracassi'
 <DocumentFragment>
   <main
     class="flex flex-col items-center pt-6 desktop:pt-12"
+    data-pagefind-body="true"
     id="top"
   >
     <header
@@ -37632,6 +37873,7 @@ exports[`Review > matches snapshot for slug 'the-horse-thief-by-philip-fracassi'
       >
         <h1
           class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
+          data-pagefind-meta="title"
         >
           The Horse Thief
         </h1>
@@ -37671,9 +37913,11 @@ exports[`Review > matches snapshot for slug 'the-horse-thief-by-philip-fracassi'
       />
       <div
         class="relative flex h-[340px] w-full max-w-popout flex-col items-center"
+        data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Fbehold-the-void-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
       >
         <div
           class="cover-clip-path absolute inset-0 overflow-hidden"
+          data-pagefind-meta="image_alt:A cover for Behold the Void by Philip Fracassi"
         >
           <div
             class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
@@ -37918,6 +38162,7 @@ exports[`Review > matches snapshot for slug 'the-horse-thief-by-philip-fracassi'
     />
     <div
       class="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+      data-pagefind-ignore="true"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -38264,6 +38509,7 @@ exports[`Review > matches snapshot for slug 'the-max-muscle-plan-by-brad-schoenf
 <DocumentFragment>
   <main
     class="flex flex-col items-center pt-6 desktop:pt-12"
+    data-pagefind-body="true"
     id="top"
   >
     <header
@@ -38274,6 +38520,7 @@ exports[`Review > matches snapshot for slug 'the-max-muscle-plan-by-brad-schoenf
       >
         <h1
           class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
+          data-pagefind-meta="title"
         >
           The M.A.X. Muscle Plan
         </h1>
@@ -38313,9 +38560,11 @@ exports[`Review > matches snapshot for slug 'the-max-muscle-plan-by-brad-schoenf
       />
       <div
         class="relative flex h-[340px] w-full max-w-popout flex-col items-center"
+        data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Fthe-max-muscle-plan-by-brad-schoenfeld.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
       >
         <div
           class="cover-clip-path absolute inset-0 overflow-hidden"
+          data-pagefind-meta="image_alt:A cover for The M.A.X. Muscle Plan by Brad Schoenfeld"
         >
           <div
             class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
@@ -38555,6 +38804,7 @@ exports[`Review > matches snapshot for slug 'the-max-muscle-plan-by-brad-schoenf
     />
     <div
       class="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+      data-pagefind-ignore="true"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -38901,6 +39151,7 @@ exports[`Review > matches snapshot for slug 'the-postman-always-rings-twice-by-j
 <DocumentFragment>
   <main
     class="flex flex-col items-center pt-6 desktop:pt-12"
+    data-pagefind-body="true"
     id="top"
   >
     <header
@@ -38911,6 +39162,7 @@ exports[`Review > matches snapshot for slug 'the-postman-always-rings-twice-by-j
       >
         <h1
           class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
+          data-pagefind-meta="title"
         >
           The Postman Always Rings Twice
         </h1>
@@ -38950,9 +39202,11 @@ exports[`Review > matches snapshot for slug 'the-postman-always-rings-twice-by-j
       />
       <div
         class="relative flex h-[340px] w-full max-w-popout flex-col items-center"
+        data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Fthe-postman-always-rings-twice-by-james-m-cain.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
       >
         <div
           class="cover-clip-path absolute inset-0 overflow-hidden"
+          data-pagefind-meta="image_alt:A cover for The Postman Always Rings Twice by James M. Cain"
         >
           <div
             class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
@@ -39377,6 +39631,7 @@ exports[`Review > matches snapshot for slug 'the-postman-always-rings-twice-by-j
     />
     <div
       class="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+      data-pagefind-ignore="true"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -39723,6 +39978,7 @@ exports[`Review > matches snapshot for slug 'the-rise-of-theodore-roosevelt-by-e
 <DocumentFragment>
   <main
     class="flex flex-col items-center pt-6 desktop:pt-12"
+    data-pagefind-body="true"
     id="top"
   >
     <header
@@ -39733,6 +39989,7 @@ exports[`Review > matches snapshot for slug 'the-rise-of-theodore-roosevelt-by-e
       >
         <h1
           class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
+          data-pagefind-meta="title"
         >
           The Rise of Theodore Roosevelt
         </h1>
@@ -39772,9 +40029,11 @@ exports[`Review > matches snapshot for slug 'the-rise-of-theodore-roosevelt-by-e
       />
       <div
         class="relative flex h-[340px] w-full max-w-popout flex-col items-center"
+        data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Fthe-rise-of-theodore-roosevelt-by-edmund-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
       >
         <div
           class="cover-clip-path absolute inset-0 overflow-hidden"
+          data-pagefind-meta="image_alt:A cover for The Rise of Theodore Roosevelt by Edmund Morris"
         >
           <div
             class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
@@ -40149,6 +40408,7 @@ exports[`Review > matches snapshot for slug 'the-rise-of-theodore-roosevelt-by-e
     />
     <div
       class="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+      data-pagefind-ignore="true"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -40495,6 +40755,7 @@ exports[`Review > matches snapshot for slug 'the-rules-of-attraction-by-bret-eas
 <DocumentFragment>
   <main
     class="flex flex-col items-center pt-6 desktop:pt-12"
+    data-pagefind-body="true"
     id="top"
   >
     <header
@@ -40505,6 +40766,7 @@ exports[`Review > matches snapshot for slug 'the-rules-of-attraction-by-bret-eas
       >
         <h1
           class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
+          data-pagefind-meta="title"
         >
           The Rules of Attraction
         </h1>
@@ -40544,9 +40806,11 @@ exports[`Review > matches snapshot for slug 'the-rules-of-attraction-by-bret-eas
       />
       <div
         class="relative flex h-[340px] w-full max-w-popout flex-col items-center"
+        data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Fthe-rules-of-attraction-by-bret-easton-ellis.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
       >
         <div
           class="cover-clip-path absolute inset-0 overflow-hidden"
+          data-pagefind-meta="image_alt:A cover for The Rules of Attraction by Bret Easton Ellis"
         >
           <div
             class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
@@ -41174,6 +41438,7 @@ exports[`Review > matches snapshot for slug 'the-rules-of-attraction-by-bret-eas
     />
     <div
       class="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+      data-pagefind-ignore="true"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -41520,6 +41785,7 @@ exports[`Review > matches snapshot for slug 'the-secret-history-by-donna-tartt' 
 <DocumentFragment>
   <main
     class="flex flex-col items-center pt-6 desktop:pt-12"
+    data-pagefind-body="true"
     id="top"
   >
     <header
@@ -41530,6 +41796,7 @@ exports[`Review > matches snapshot for slug 'the-secret-history-by-donna-tartt' 
       >
         <h1
           class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
+          data-pagefind-meta="title"
         >
           The Secret History
         </h1>
@@ -41569,9 +41836,11 @@ exports[`Review > matches snapshot for slug 'the-secret-history-by-donna-tartt' 
       />
       <div
         class="relative flex h-[340px] w-full max-w-popout flex-col items-center"
+        data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Fthe-secret-history-by-donna-tartt.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
       >
         <div
           class="cover-clip-path absolute inset-0 overflow-hidden"
+          data-pagefind-meta="image_alt:A cover for The Secret History by Donna Tartt"
         >
           <div
             class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
@@ -41903,6 +42172,7 @@ exports[`Review > matches snapshot for slug 'the-secret-history-by-donna-tartt' 
     />
     <div
       class="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+      data-pagefind-ignore="true"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -42249,6 +42519,7 @@ exports[`Review > matches snapshot for slug 'the-shining-by-stephen-king' 1`] = 
 <DocumentFragment>
   <main
     class="flex flex-col items-center pt-6 desktop:pt-12"
+    data-pagefind-body="true"
     id="top"
   >
     <header
@@ -42259,6 +42530,7 @@ exports[`Review > matches snapshot for slug 'the-shining-by-stephen-king' 1`] = 
       >
         <h1
           class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
+          data-pagefind-meta="title"
         >
           The Shining
         </h1>
@@ -42298,9 +42570,11 @@ exports[`Review > matches snapshot for slug 'the-shining-by-stephen-king' 1`] = 
       />
       <div
         class="relative flex h-[340px] w-full max-w-popout flex-col items-center"
+        data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Fthe-shining-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
       >
         <div
           class="cover-clip-path absolute inset-0 overflow-hidden"
+          data-pagefind-meta="image_alt:A cover for The Shining by Stephen King"
         >
           <div
             class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
@@ -42845,6 +43119,7 @@ exports[`Review > matches snapshot for slug 'the-shining-by-stephen-king' 1`] = 
     />
     <div
       class="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+      data-pagefind-ignore="true"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -43191,6 +43466,7 @@ exports[`Review > matches snapshot for slug 'the-skeptics-guide-to-the-universe-
 <DocumentFragment>
   <main
     class="flex flex-col items-center pt-6 desktop:pt-12"
+    data-pagefind-body="true"
     id="top"
   >
     <header
@@ -43201,6 +43477,7 @@ exports[`Review > matches snapshot for slug 'the-skeptics-guide-to-the-universe-
       >
         <h1
           class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
+          data-pagefind-meta="title"
         >
           The Skeptics' Guide to the Universe
         </h1>
@@ -43245,9 +43522,11 @@ exports[`Review > matches snapshot for slug 'the-skeptics-guide-to-the-universe-
       />
       <div
         class="relative flex h-[340px] w-full max-w-popout flex-col items-center"
+        data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Fthe-skeptics-guide-to-the-universe-by-steven-novella.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
       >
         <div
           class="cover-clip-path absolute inset-0 overflow-hidden"
+          data-pagefind-meta="image_alt:A cover for The Skeptics' Guide to the Universe: How to Know What's Really Real in a World Increasingly Full of Fake by Steven Novella"
         >
           <div
             class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
@@ -43600,6 +43879,7 @@ exports[`Review > matches snapshot for slug 'the-skeptics-guide-to-the-universe-
     />
     <div
       class="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+      data-pagefind-ignore="true"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -43946,6 +44226,7 @@ exports[`Review > matches snapshot for slug 'the-woods-are-dark-by-richard-laymo
 <DocumentFragment>
   <main
     class="flex flex-col items-center pt-6 desktop:pt-12"
+    data-pagefind-body="true"
     id="top"
   >
     <header
@@ -43956,6 +44237,7 @@ exports[`Review > matches snapshot for slug 'the-woods-are-dark-by-richard-laymo
       >
         <h1
           class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
+          data-pagefind-meta="title"
         >
           The Woods Are Dark
         </h1>
@@ -43995,9 +44277,11 @@ exports[`Review > matches snapshot for slug 'the-woods-are-dark-by-richard-laymo
       />
       <div
         class="relative flex h-[340px] w-full max-w-popout flex-col items-center"
+        data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
       >
         <div
           class="cover-clip-path absolute inset-0 overflow-hidden"
+          data-pagefind-meta="image_alt:A cover for The Woods Are Dark by Richard Laymon"
         >
           <div
             class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
@@ -44331,6 +44615,7 @@ exports[`Review > matches snapshot for slug 'the-woods-are-dark-by-richard-laymo
     />
     <div
       class="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+      data-pagefind-ignore="true"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -44677,6 +44962,7 @@ exports[`Review > matches snapshot for slug 'total-recall-by-arnold-schwarzenegg
 <DocumentFragment>
   <main
     class="flex flex-col items-center pt-6 desktop:pt-12"
+    data-pagefind-body="true"
     id="top"
   >
     <header
@@ -44687,6 +44973,7 @@ exports[`Review > matches snapshot for slug 'total-recall-by-arnold-schwarzenegg
       >
         <h1
           class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
+          data-pagefind-meta="title"
         >
           Total Recall
         </h1>
@@ -44731,9 +45018,11 @@ exports[`Review > matches snapshot for slug 'total-recall-by-arnold-schwarzenegg
       />
       <div
         class="relative flex h-[340px] w-full max-w-popout flex-col items-center"
+        data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Ftotal-recall-by-arnold-schwarzenegger.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
       >
         <div
           class="cover-clip-path absolute inset-0 overflow-hidden"
+          data-pagefind-meta="image_alt:A cover for Total Recall: My Unbelievably True Life Story by Arnold Schwarzenegger"
         >
           <div
             class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
@@ -45046,6 +45335,7 @@ exports[`Review > matches snapshot for slug 'total-recall-by-arnold-schwarzenegg
     />
     <div
       class="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+      data-pagefind-ignore="true"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
@@ -45392,6 +45682,7 @@ exports[`Review > matches snapshot for slug 'what-doesnt-kill-us-by-scott-carney
 <DocumentFragment>
   <main
     class="flex flex-col items-center pt-6 desktop:pt-12"
+    data-pagefind-body="true"
     id="top"
   >
     <header
@@ -45402,6 +45693,7 @@ exports[`Review > matches snapshot for slug 'what-doesnt-kill-us-by-scott-carney
       >
         <h1
           class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
+          data-pagefind-meta="title"
         >
           What Doesn't Kill Us
         </h1>
@@ -45446,9 +45738,11 @@ exports[`Review > matches snapshot for slug 'what-doesnt-kill-us-by-scott-carney
       />
       <div
         class="relative flex h-[340px] w-full max-w-popout flex-col items-center"
+        data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Fwhat-doesnt-kill-us-by-scott-carney.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
       >
         <div
           class="cover-clip-path absolute inset-0 overflow-hidden"
+          data-pagefind-meta="image_alt:A cover for What Doesn't Kill Us: How Freezing Water, Extreme Altitude, and Environmental Conditioning Will Renew Our Lost Evolutionary Strength by Scott Carney"
         >
           <div
             class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
@@ -45718,6 +46012,7 @@ exports[`Review > matches snapshot for slug 'what-doesnt-kill-us-by-scott-carney
     />
     <div
       class="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+      data-pagefind-ignore="true"
     >
       <nav
         class="relative flex w-full flex-col items-center tablet:w-auto"
