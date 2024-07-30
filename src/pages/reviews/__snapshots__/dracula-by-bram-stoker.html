@@ -71,7 +71,8 @@
                   fill-rule="evenodd"
                   d="M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z"
                 ></path></svg
-              ><span class="flex items-baseline p-2 text-base opacity-70"
+              ><span
+                class="flex items-baseline whitespace-nowrap p-2 text-base opacity-70"
                 >Quick search...</span
               ><kbd
                 class="ml-auto mr-[1ch] mt-px flex min-h-6 flex-none items-center bg-subtle pl-3 pr-4 font-mono text-sm font-light opacity-70"
@@ -989,19 +990,21 @@
       </div>
     </div>
     <dialog
-      class="w-[76vh] rounded-xl border-2 border-default shadow-xl"
+      class="w-[75vw] rounded-xl border-2 border-default shadow-xl"
       aria-label="Search"
     >
-      <div
-        class="dialog-frame flex overflow-hidden py-4 pl-gutter pr-[calc(var(--gutter-width)_-_1rem)]"
-      >
+      <div class="dialog-frame flex flex-col overflow-hidden px-gutter py-4">
         <div class="flex-grow"><div id="pagefind__search"></div></div>
-        <button
-          data-close-modal
-          class="ml-2 self-start p-4 font-mono text-xs text-subtle"
-        >
-          <kbd>ESC</kbd>
-        </button>
+        <div class="pt-4 text-sm text-subtle">
+          <kbd class="bg-subtle p-2 font-mono">Tab</kbd> to navigate
+          <button
+            data-close-modal
+            class="ml-2 self-start bg-subtle p-2 font-mono text-xs text-subtle"
+          >
+            <kbd>ESC</kbd>
+          </button>
+          to close
+        </div>
       </div>
     </dialog>
     <script>
