@@ -54,8 +54,11 @@ const pathname = new URL(Astro.request.url).pathname;
     <LayoutComponent currentPath={pathname}>
       <slot />
     </LayoutComponent>
-    <dialog class="w-[76vh]" aria-label="Search">
-      <div class="flex px-gutter py-4">
+    <dialog
+      class="w-[76vh] rounded-xl border-2 border-default shadow-xl"
+      aria-label="Search"
+    >
+      <div class="dialog-frame flex overflow-hidden px-gutter py-4">
         {
           (
             <div class="flex-grow">
@@ -146,7 +149,7 @@ const pathname = new URL(Astro.request.url).pathname;
         baseUrl: import.meta.env.BASE_URL,
         bundlePath: import.meta.env.BASE_URL.replace(/\/$/, "") + "/pagefind/",
         showImages: true,
-        showSubResults: true,
+        showSubResults: false,
       });
     });
   });

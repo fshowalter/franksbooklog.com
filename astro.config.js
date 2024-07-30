@@ -41,7 +41,6 @@ function pagefind() {
           );
           return;
         }
-        console.log(outDir);
         const serve = sirv(outDir, {
           dev: true,
           etag: true,
