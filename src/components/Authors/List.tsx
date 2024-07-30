@@ -12,7 +12,7 @@ export interface ListItemValue
     Author,
     "name" | "slug" | "sortName" | "reviewedWorkCount" | "workCount"
   > {
-  imageData: AvatarImageProps;
+  avatarImageProps: AvatarImageProps | null;
 }
 
 export function List({
@@ -45,7 +45,7 @@ function AuthorListItem({ value }: { value: ListItemValue }): JSX.Element {
       <ListItemAvatar
         name={value.name}
         slug={value.reviewedWorkCount > 0 ? value.slug : null}
-        imageData={value.imageData}
+        imageProps={value.avatarImageProps}
       />
       <AuthorName
         value={value.name}

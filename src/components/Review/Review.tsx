@@ -59,10 +59,12 @@ export function Review({
       <div className="flex flex-col px-pageMargin desktop:px-gutter">
         <LongFormText className="max-w-prose" text={value.content} />
       </div>
-      <div className="w-full max-w-popout">
-        <div className="spacer-y-16" />
-        <IncludedWorks values={value.includedWorks} />
-      </div>
+      {value.includedWorks.length > 0 && (
+        <div className="w-full max-w-popout">
+          <div className="spacer-y-16" />
+          <IncludedWorks values={value.includedWorks} />
+        </div>
+      )}
       <div className="spacer-y-20" />
       <div className="w-full max-w-popout">
         <h2 className="px-gutter text-md font-normal text-subtle shadow-bottom">

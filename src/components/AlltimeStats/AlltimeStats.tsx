@@ -1,5 +1,4 @@
 import type { AlltimeStats } from "src/api/alltimeStats";
-import type { CoverImageProps } from "src/api/covers";
 import { DecadeDistribution } from "src/components/DecadeDistribution";
 import { EditionDistribution } from "src/components/EditionDistribution";
 import { KindDistribution } from "src/components/KindDistribution";
@@ -10,28 +9,17 @@ import { StatsNavigation } from "src/components/StatsNavigation";
 import { Callouts } from "./Callouts";
 import { GradeDistribution } from "./GradeDistribution";
 
-type AlltimeStatsMostReadAuthorReading =
-  AlltimeStats["mostReadAuthors"][number]["readings"][number];
-
-interface MostReadAuthorReading extends AlltimeStatsMostReadAuthorReading {
-  imageData: CoverImageProps;
-}
-
-interface MostReadAuthor
-  extends Omit<AlltimeStats["mostReadAuthors"][number], "readings"> {
-  readings: MostReadAuthorReading[];
-}
-
-interface Stats extends Omit<AlltimeStats, "mostReadAuthors"> {
-  mostReadAuthors: MostReadAuthor[];
-}
-
 export interface Props {
-  stats: Stats;
+  stats: AlltimeStats;
+  mostReadAuthors: React.ComponentProps<typeof MostReadAuthors>["values"];
   distinctStatYears: string[];
 }
 
-export function AlltimeStats({ stats, distinctStatYears }: Props): JSX.Element {
+export function AlltimeStats({
+  stats,
+  distinctStatYears,
+  mostReadAuthors,
+}: Props): JSX.Element {
   return (
     <main className="flex flex-col items-center">
       <header className="flex flex-col flex-wrap justify-between px-pageMargin">
@@ -59,7 +47,7 @@ export function AlltimeStats({ stats, distinctStatYears }: Props): JSX.Element {
         </div>
       </header>
       <div className="flex w-full max-w-[960px] flex-col items-stretch gap-y-8 py-8 tablet:px-gutter desktop:px-pageMargin">
-        <MostReadAuthors values={stats.mostReadAuthors} />
+        <MostReadAuthors values={mostReadAuthors} />
         <GradeDistribution values={stats.gradeDistribution} />
         <DecadeDistribution values={stats.decadeDistribution} />
         <KindDistribution values={stats.kindDistribution} />

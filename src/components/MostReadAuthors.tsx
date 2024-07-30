@@ -14,7 +14,7 @@ interface ReadingSubListItemValue {
   title: string;
   yearPublished: string;
   slug: string | null;
-  imageData: CoverImageProps;
+  coverImageProps: CoverImageProps;
   reviewed: boolean;
 }
 
@@ -110,7 +110,7 @@ function MostWatchedPersonReadingListItem({
     <ListItem className="items-center">
       <ListItemCover
         slug={value.reviewed ? value.slug : null}
-        imageData={value.imageData}
+        imageProps={value.coverImageProps}
       />
       <div className="grow">
         <div>

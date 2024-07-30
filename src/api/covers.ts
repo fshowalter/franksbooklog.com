@@ -15,12 +15,6 @@ interface Work {
   includedInSlugs: string[];
 }
 
-interface Props {
-  works: Work[];
-  width: number;
-  height: number;
-}
-
 let cachedWorksJson: WorkJson[] | null = null;
 
 if (import.meta.env.MODE !== "development") {
@@ -115,7 +109,7 @@ export async function getOpenGraphCoverSrc(work: Work): Promise<string> {
   return normalizeSources(optimizedImage.src);
 }
 
-export async function getFeedCover(work: Work): Promise<CoverImageProps> {
+export async function getFeedCoverProps(work: Work): Promise<CoverImageProps> {
   const { workCoverFile, altText } = await getWorkCoverFileAndAltText(work);
 
   const optimizedImage = await getImage({
@@ -131,37 +125,6 @@ export async function getFeedCover(work: Work): Promise<CoverImageProps> {
     src: normalizeSources(optimizedImage.src),
     alt: altText,
   };
-}
-
-export async function getFluidCovers({
-  works,
-  width,
-  height,
-}: Props): Promise<Record<string, CoverImageProps>> {
-  const imageMap: Record<string, CoverImageProps> = {};
-
-  await Promise.all(
-    works.map(async (work) => {
-      const { workCoverFile, altText } = await getWorkCoverFileAndAltText(work);
-
-      const optimizedImage = await getImage({
-        src: workCoverFile.default,
-        width: width,
-        height: height,
-        format: "avif",
-        widths: [0.25, 0.5, 1, 2].map((w) => w * width),
-        quality: 80,
-      });
-
-      imageMap[work.slug] = {
-        srcSet: normalizeSources(optimizedImage.srcSet.attribute),
-        src: normalizeSources(optimizedImage.src),
-        alt: altText,
-      };
-    }),
-  );
-
-  return imageMap;
 }
 
 export async function getFluidCoverImageProps(
@@ -206,35 +169,4 @@ export async function getFixedCoverImageProps(
     src: normalizeSources(optimizedImage.src),
     alt: altText,
   };
-}
-
-export async function getCovers({
-  works,
-  width,
-  height,
-}: Props): Promise<Record<string, CoverImageProps>> {
-  const imageMap: Record<string, CoverImageProps> = {};
-
-  await Promise.all(
-    works.map(async (work) => {
-      const { workCoverFile, altText } = await getWorkCoverFileAndAltText(work);
-
-      const optimizedImage = await getImage({
-        src: workCoverFile.default,
-        width: width,
-        height: height,
-        format: "avif",
-        densities: [1, 2],
-        quality: 80,
-      });
-
-      imageMap[work.slug] = {
-        srcSet: normalizeSources(optimizedImage.srcSet.attribute),
-        src: normalizeSources(optimizedImage.src),
-        alt: altText,
-      };
-    }),
-  );
-
-  return imageMap;
 }

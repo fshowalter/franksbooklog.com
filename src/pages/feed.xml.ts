@@ -1,5 +1,5 @@
 import rss from "@astrojs/rss";
-import { getFeedCover } from "src/api/covers";
+import { getFeedCoverProps } from "src/api/covers";
 import {
   loadExcerptHtml,
   mostRecentReviews,
@@ -47,7 +47,7 @@ export async function GET() {
     // See "Generating items" section for examples using content collections and glob imports
     items: await Promise.all(
       rssItems.map(async (item) => {
-        const cover = await getFeedCover(item);
+        const cover = await getFeedCoverProps(item);
 
         return {
           title: `${item.title} by ${authorsToString(item.authors)}`,

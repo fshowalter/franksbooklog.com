@@ -30,7 +30,7 @@ export function Header({
         <div className="flex flex-col items-center">
           <div className="safari-border-radius-fix w-[200px] max-w-poster overflow-hidden rounded-[50%] shadow-all">
             <Avatar
-              imageData={avatarImageProps}
+              imageProps={avatarImageProps}
               name={name}
               width={AvatarImageConfig.width}
               height={AvatarImageConfig.height}

@@ -1,5 +1,4 @@
 import {
-  getCovers,
   getFixedCoverImageProps,
   getFluidCoverImageProps,
   getOpenGraphCoverSrc,

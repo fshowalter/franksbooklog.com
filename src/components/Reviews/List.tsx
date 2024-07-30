@@ -26,7 +26,7 @@ export interface ListItemValue
     | "kind"
   > {
   authors: Author[];
-  imageData: CoverImageProps;
+  coverImageProps: CoverImageProps;
 }
 
 export function List({
@@ -56,7 +56,7 @@ export function List({
 function ReviewsListItem({ value }: { value: ListItemValue }): JSX.Element {
   return (
     <ListItem>
-      <ListItemCover slug={value.slug} imageData={value.imageData} />
+      <ListItemCover slug={value.slug} imageProps={value.coverImageProps} />
       <div className="grow pr-gutter tablet:w-full desktop:pr-4">
         <div>
           <ListItemTitle title={value.title} slug={value.slug} />

@@ -9,16 +9,16 @@ export const ListItemAvatarImageConfig = {
 export function ListItemAvatar({
   name,
   slug,
-  imageData,
+  imageProps,
 }: {
   name: string;
   slug: string | null;
-  imageData: AvatarImageProps | undefined;
+  imageProps: AvatarImageProps | null;
 }) {
   const avatar = (
     <Avatar
       name={name}
-      imageData={imageData}
+      imageProps={imageProps}
       width={ListItemAvatarImageConfig.width}
       height={ListItemAvatarImageConfig.height}
       loading="lazy"
