@@ -1,4 +1,4 @@
-import type { CoverImageData } from "src/api/covers";
+import type { CoverImageProps } from "src/api/covers";
 
 import { ListItem } from "./ListItem";
 import { ListItemCover } from "./ListItemCover";
@@ -14,7 +14,7 @@ interface ReadingSubListItemValue {
   title: string;
   yearPublished: string;
   slug: string | null;
-  imageData: CoverImageData;
+  coverImageProps: CoverImageProps;
   reviewed: boolean;
 }
 
@@ -110,7 +110,7 @@ function MostWatchedPersonReadingListItem({
     <ListItem className="items-center">
       <ListItemCover
         slug={value.reviewed ? value.slug : null}
-        imageData={value.imageData}
+        imageProps={value.coverImageProps}
       />
       <div className="grow">
         <div>

@@ -1,4 +1,4 @@
-import { getCovers } from "src/api/covers";
+import { getFixedCoverImageProps } from "src/api/covers";
 import { allReviews } from "src/api/reviews";
 import { ListItemCoverImageConfig } from "src/components/ListItemCover";
 
@@ -12,38 +12,39 @@ export async function getProps(): Promise<Props> {
     distinctKinds,
     distinctReviewYears,
   } = await allReviews();
-  const covers = await getCovers({
-    works: reviews,
-    ...ListItemCoverImageConfig,
-  });
 
   reviews.sort((a, b) =>
     a.authors[0].sortName.localeCompare(b.authors[0].sortName),
   );
 
-  const values = reviews.map((review) => {
-    const value: ListItemValue = {
-      date: review.date,
-      title: review.title,
-      slug: review.slug,
-      grade: review.grade,
-      gradeValue: review.gradeValue,
-      sortTitle: review.sortTitle,
-      imageData: covers[review.slug],
-      yearPublished: review.yearPublished,
-      kind: review.kind,
-      authors: review.authors.map((author) => {
-        const authorValue: ListItemValue["authors"][0] = {
-          name: author.name,
-          sortName: author.sortName,
-        };
+  const values = await Promise.all(
+    reviews.map(async (review) => {
+      const value: ListItemValue = {
+        date: review.date,
+        title: review.title,
+        slug: review.slug,
+        grade: review.grade,
+        gradeValue: review.gradeValue,
+        sortTitle: review.sortTitle,
+        coverImageProps: await getFixedCoverImageProps(
+          review,
+          ListItemCoverImageConfig,
+        ),
+        yearPublished: review.yearPublished,
+        kind: review.kind,
+        authors: review.authors.map((author) => {
+          const authorValue: ListItemValue["authors"][0] = {
+            name: author.name,
+            sortName: author.sortName,
+          };
 
-        return authorValue;
-      }),
-    };
+          return authorValue;
+        }),
+      };
 
-    return value;
-  });
+      return value;
+    }),
+  );
 
   return {
     values,

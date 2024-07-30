@@ -1,4 +1,4 @@
-import type { CoverImageData } from "src/api/covers";
+import type { CoverImageProps } from "src/api/covers";
 import type { ReviewWithExcerpt } from "src/api/reviews";
 import { AuthorLink } from "src/components/AuthorLink";
 import { Cover } from "src/components/Cover";
@@ -33,7 +33,7 @@ export interface ListItemValue
     | "yearPublished"
     | "authors"
   > {
-  coverImageData: CoverImageData;
+  coverImageProps: CoverImageProps;
 }
 
 export function HomeListItem({
@@ -56,7 +56,7 @@ export function HomeListItem({
           className="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default desktop:col-span-2 desktop:self-start desktop:justify-self-end"
         >
           <Cover
-            imageData={value.coverImageData}
+            imageProps={value.coverImageProps}
             decoding="async"
             width={CoverImageConfig.width}
             height={CoverImageConfig.height}

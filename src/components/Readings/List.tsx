@@ -1,4 +1,4 @@
-import type { CoverImageData } from "src/api/covers";
+import type { CoverImageProps } from "src/api/covers";
 import type { TimelineEntry } from "src/api/timelineEntries";
 import { BarGradient } from "src/components/BarGradient";
 import { GroupedList } from "src/components/GroupedList";
@@ -23,20 +23,20 @@ export interface ListItemValue
     | "edition"
     | "kind"
     | "authors"
-  > {}
+  > {
+  coverImageProps: CoverImageProps;
+}
 
 export function List({
   groupedValues,
   visibleCount,
   totalCount,
   dispatch,
-  covers,
 }: {
   groupedValues: Map<string, Map<string, ListItemValue[]>>;
   visibleCount: number;
   totalCount: number;
   dispatch: React.Dispatch<ActionType>;
-  covers: Record<string, CoverImageData>;
 }) {
   return (
     <GroupedList
@@ -53,7 +53,6 @@ export function List({
             values={items}
             key={dayAndDate}
             dayAndDate={dayAndDate}
-            covers={covers}
           />
         );
       }}
@@ -64,11 +63,9 @@ export function List({
 function DateListItem({
   dayAndDate,
   values,
-  covers,
 }: {
   dayAndDate: string;
   values: ListItemValue[];
-  covers: Record<string, CoverImageData>;
 }): JSX.Element {
   const [date, day] = dayAndDate.split(" ");
 
@@ -85,31 +82,19 @@ function DateListItem({
       </div>
       <ul className="flex grow flex-col gap-y-4">
         {values.map((value) => {
-          return (
-            <SubListItem
-              value={value}
-              imageData={covers[value.slug]}
-              key={value.sequence}
-            />
-          );
+          return <SubListItem value={value} key={value.sequence} />;
         })}
       </ul>
     </ListItem>
   );
 }
 
-function SubListItem({
-  value,
-  imageData,
-}: {
-  value: ListItemValue;
-  imageData: CoverImageData;
-}): JSX.Element {
+function SubListItem({ value }: { value: ListItemValue }): JSX.Element {
   const progressValue = parseProgress(value.progress);
 
   return (
     <ListItem className="pt-0 shadow-bottom last:shadow-none even:bg-unset">
-      <ListItemCover slug={value.slug} imageData={imageData} />
+      <ListItemCover slug={value.slug} imageProps={value.coverImageProps} />
       <div className="grow">
         <TitleAndProgress
           title={value.title}

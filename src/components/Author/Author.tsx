@@ -1,6 +1,6 @@
 import { useReducer } from "react";
 import type { Author } from "src/api/authors";
-import type { AvatarImageData } from "src/api/avatars";
+import type { AvatarImageProps } from "src/api/avatars";
 import { ListWithFiltersLayout } from "src/components/ListWithFiltersLayout";
 
 import type { Sort } from "./Author.reducer";
@@ -11,27 +11,27 @@ import { List, type ListItemValue } from "./List";
 
 export interface Props
   extends Pick<Author, "name" | "reviewedWorkCount" | "shelfWorkCount"> {
-  values: ListItemValue[];
+  works: ListItemValue[];
   distinctKinds: readonly string[];
   distinctPublishedYears: readonly string[];
   initialSort: Sort;
-  avatarImageData: AvatarImageData;
+  avatarImageProps: AvatarImageProps | null;
 }
 
 export function Author({
-  values,
+  works,
   name,
   reviewedWorkCount,
   shelfWorkCount,
   distinctKinds,
   distinctPublishedYears,
   initialSort,
-  avatarImageData,
+  avatarImageProps,
 }: Props): JSX.Element {
   const [state, dispatch] = useReducer(
     reducer,
     {
-      values,
+      values: works,
       initialSort,
     },
     initState,
@@ -44,7 +44,7 @@ export function Author({
           name={name}
           reviewedWorkCount={reviewedWorkCount}
           shelfWorkCount={shelfWorkCount}
-          avatarImageData={avatarImageData}
+          avatarImageProps={avatarImageProps}
         />
       }
       filters={

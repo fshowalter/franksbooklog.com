@@ -13,6 +13,7 @@ export default getViteConfig({
     ],
     coverage: {
       include: ["src/**"],
+      provider: "istanbul",
     },
   },
 });

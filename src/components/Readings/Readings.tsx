@@ -1,5 +1,4 @@
 import { useReducer } from "react";
-import type { CoverImageData } from "src/api/covers";
 import { ListWithFiltersLayout } from "src/components/ListWithFiltersLayout";
 
 import { Filters } from "./Filters";
@@ -19,7 +18,6 @@ export interface Props {
   bookCount: number;
   abandonedCount: number;
   workCount: number;
-  covers: Record<string, CoverImageData>;
 }
 
 export function Readings({
@@ -29,7 +27,6 @@ export function Readings({
   distinctReadingYears,
   distinctWorkYears,
   initialSort,
-  covers,
   workCount,
   shortStoryCount,
   bookCount,
@@ -70,7 +67,6 @@ export function Readings({
           groupedValues={state.groupedValues}
           totalCount={state.filteredValues.length}
           visibleCount={state.showCount}
-          covers={covers}
         />
       }
     />

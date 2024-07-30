@@ -5,17 +5,11 @@ import { Grade } from "../Grade";
 
 interface Props {
   values: ReviewWithContent["includedWorks"];
-  className?: string;
 }
 
-export function IncludedWorks({ values, className }: Props) {
-  if (values.length === 0) {
-    return null;
-  }
-
+export function IncludedWorks({ values }: Props) {
   return (
-    <div className={className}>
-      <div className="spacer-y-16" />
+    <>
       <h3 className="w-full max-w-popout px-gutter text-md font-normal text-subtle shadow-bottom">
         Included Works
         <div className="spacer-y-2" />
@@ -40,6 +34,6 @@ export function IncludedWorks({ values, className }: Props) {
           </li>
         ))}
       </ul>
-    </div>
+    </>
   );
 }

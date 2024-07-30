@@ -1,5 +1,5 @@
 import type { Author } from "src/api/authors";
-import type { AvatarImageData } from "src/api/avatars";
+import type { AvatarImageProps } from "src/api/avatars";
 import { GroupedList } from "src/components/GroupedList";
 import { ListItem } from "src/components/ListItem";
 import { ListItemAvatar } from "src/components/ListItemAvatar";
@@ -12,7 +12,7 @@ export interface ListItemValue
     Author,
     "name" | "slug" | "sortName" | "reviewedWorkCount" | "workCount"
   > {
-  imageData: AvatarImageData;
+  avatarImageProps: AvatarImageProps | null;
 }
 
 export function List({
@@ -45,7 +45,7 @@ function AuthorListItem({ value }: { value: ListItemValue }): JSX.Element {
       <ListItemAvatar
         name={value.name}
         slug={value.reviewedWorkCount > 0 ? value.slug : null}
-        imageData={value.imageData}
+        imageProps={value.avatarImageProps}
       />
       <AuthorName
         value={value.name}

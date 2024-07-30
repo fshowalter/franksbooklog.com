@@ -1,4 +1,4 @@
-import type { CoverImageData } from "src/api/covers";
+import type { CoverImageProps } from "src/api/covers";
 import type { Review } from "src/api/reviews";
 import { Grade } from "src/components/Grade";
 import { GroupedList } from "src/components/GroupedList";
@@ -26,7 +26,7 @@ export interface ListItemValue
     | "kind"
   > {
   authors: Author[];
-  imageData: CoverImageData;
+  coverImageProps: CoverImageProps;
 }
 
 export function List({
@@ -56,7 +56,7 @@ export function List({
 function ReviewsListItem({ value }: { value: ListItemValue }): JSX.Element {
   return (
     <ListItem>
-      <ListItemCover slug={value.slug} imageData={value.imageData} />
+      <ListItemCover slug={value.slug} imageProps={value.coverImageProps} />
       <div className="grow pr-gutter tablet:w-full desktop:pr-4">
         <div>
           <ListItemTitle title={value.title} slug={value.slug} />

@@ -1,4 +1,3 @@
-import type { CoverImageData } from "src/api/covers";
 import type { YearStats } from "src/api/yearStats";
 import { DecadeDistribution } from "src/components/DecadeDistribution";
 import { EditionDistribution } from "src/components/EditionDistribution";
@@ -9,31 +8,17 @@ import { StatsNavigation } from "src/components/StatsNavigation";
 
 import { Callouts } from "./Callouts";
 
-type AlltimeStatsMostReadAuthorReading =
-  YearStats["mostReadAuthors"][number]["readings"][number];
-
-interface MostReadAuthorReading extends AlltimeStatsMostReadAuthorReading {
-  imageData: CoverImageData;
-}
-
-interface MostReadAuthor
-  extends Omit<YearStats["mostReadAuthors"][number], "readings"> {
-  readings: MostReadAuthorReading[];
-}
-
-interface Stats extends Omit<YearStats, "mostReadAuthors"> {
-  mostReadAuthors: MostReadAuthor[];
-}
-
 export interface Props {
   year: string;
-  stats: Stats;
+  stats: YearStats;
+  mostReadAuthors: React.ComponentProps<typeof MostReadAuthors>["values"];
   distinctStatYears: readonly string[];
 }
 
 export function YearStats({
   year,
   stats,
+  mostReadAuthors,
   distinctStatYears,
 }: Props): JSX.Element {
   return (
@@ -65,7 +50,7 @@ export function YearStats({
         </div>
       </header>
       <div className="flex w-full max-w-[960px] flex-col items-stretch gap-y-8 py-8 tablet:px-gutter desktop:px-pageMargin">
-        <MostReadAuthors values={stats.mostReadAuthors} />
+        <MostReadAuthors values={mostReadAuthors} />
         <DecadeDistribution values={stats.decadeDistribution} />
         <KindDistribution values={stats.kindDistribution} />
         <EditionDistribution values={stats.editionDistribution} />

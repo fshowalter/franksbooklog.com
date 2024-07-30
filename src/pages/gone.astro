@@ -1,17 +1,23 @@
 ---
+import { getOpenGraphBackdropSrc } from "src/api/backdrops";
 import { Article } from "src/components/Article/Article";
 import { getProps } from "src/components/Article/getProps";
 import Layout from "src/layouts/Layout.astro";
 
+const slug = "gone";
+
 const props = await getProps({
-  slug: "gone",
+  slug,
   alt: "Forget it, Jake. It's Chinatown.",
 });
+
+const openGraphImageSrc = await getOpenGraphBackdropSrc(slug);
 ---
 
 <Layout
   title="410: Gone"
   description="Forget it, Jake. It's Chinatown."
+  image={openGraphImageSrc}
   article
 >
   <Article {...props} />

@@ -1,14 +1,24 @@
 ---
+import { getOpenGraphBackdropSrc } from "src/api/backdrops";
 import { Article } from "src/components/Article/Article";
 import { getProps } from "src/components/Article/getProps";
 import Layout from "src/layouts/Layout.astro";
 
+const slug = "not-found";
+
 const props = await getProps({
-  slug: "not-found",
+  slug,
   alt: "Dick Laurent is dead.",
 });
+
+const openGraphImageSrc = await getOpenGraphBackdropSrc(slug);
 ---
 
-<Layout title="404: Not Found" description="Dick Laurent is dead." article>
+<Layout
+  title="404: Not Found"
+  description="Dick Laurent is dead."
+  image={openGraphImageSrc}
+  article
+>
   <Article {...props} />
 </Layout>

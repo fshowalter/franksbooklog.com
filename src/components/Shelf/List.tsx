@@ -1,4 +1,4 @@
-import type { CoverImageData } from "src/api/covers";
+import type { CoverImageProps } from "src/api/covers";
 import type { ShelfWork } from "src/api/shelf";
 import { GroupedList } from "src/components/GroupedList";
 import { ListItem } from "src/components/ListItem";
@@ -18,7 +18,7 @@ export interface ListItemValue
     "slug" | "title" | "yearPublished" | "sortTitle" | "kind"
   > {
   authors: Author[];
-  imageData: CoverImageData;
+  coverImageProps: CoverImageProps;
 }
 
 export function List({
@@ -48,7 +48,7 @@ export function List({
 function ShelfListItem({ value }: { value: ListItemValue }): JSX.Element {
   return (
     <ListItem>
-      <ListItemCover imageData={value.imageData} />
+      <ListItemCover imageProps={value.coverImageProps} />
       <div className="grow pr-gutter tablet:w-full desktop:pr-4">
         <div>
           <ListItemTitle title={value.title} />
