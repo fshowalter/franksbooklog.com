@@ -58,7 +58,9 @@ const pathname = new URL(Astro.request.url).pathname;
       class="w-[76vh] rounded-xl border-2 border-default shadow-xl"
       aria-label="Search"
     >
-      <div class="dialog-frame flex overflow-hidden px-gutter py-4">
+      <div
+        class="dialog-frame flex overflow-hidden py-4 pl-gutter pr-[calc(var(--gutter-width)_-_1rem)]"
+      >
         {
           (
             <div class="flex-grow">

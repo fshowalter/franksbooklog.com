@@ -37,7 +37,7 @@ export function Mast({ currentPath }: { currentPath: string }) {
           <span className="flex items-baseline p-2 text-base opacity-70">
             Quick search...
           </span>
-          <kbd className="ml-auto mt-px flex flex-none items-center pl-3 pr-4 font-mono text-sm font-light leading-5 opacity-70">
+          <kbd className="ml-auto mr-[1ch] mt-px flex min-h-6 flex-none items-center bg-subtle pl-3 pr-4 font-mono text-sm font-light opacity-70">
             <kbd className="text-md leading-5">Ctrl</kbd>
             <kbd className="text-sm">K</kbd>
           </kbd>
