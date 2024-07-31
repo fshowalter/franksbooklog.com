@@ -19,10 +19,14 @@ export function Mast({ currentPath }: { currentPath: string }) {
           disabled
           aria-label="Search"
           aria-keyshortcuts="Control+K"
-          className="safari-border-radius-fix flex w-full items-center overflow-hidden rounded-md text-sm leading-6 text-subtle ring-1 ring-border hover:ring-accent"
+          className="safari-border-radius-fix flex w-full items-center overflow-hidden rounded-md text-sm leading-6 text-subtle ring-1 ring-border hover:ring-accent desktop:ring-0"
         >
+          <kbd className="ml-auto mt-px hidden min-h-6 flex-none items-center bg-subtle pl-3 pr-4 font-mono text-sm font-light opacity-70 desktop:flex">
+            <kbd className="text-md leading-5">Ctrl</kbd>
+            <kbd className="text-sm">K</kbd>
+          </kbd>
           <svg
-            className="mr-2 size-10 flex-none border-0 border-r border-default bg-subtle fill-subtle px-3 py-1"
+            className="mr-2 size-10 flex-none border-0 border-r border-default bg-subtle fill-subtle px-3 py-1 desktop:w-4 desktop:border-r-0 desktop:bg-unset desktop:px-0"
             viewBox="0 0 16 16"
           >
             <path
@@ -34,13 +38,9 @@ export function Mast({ currentPath }: { currentPath: string }) {
               d="M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z"
             />
           </svg>
-          <span className="flex items-baseline whitespace-nowrap p-2 text-base opacity-70">
+          <span className="flex items-baseline whitespace-nowrap p-2 text-base opacity-70 desktop:hidden">
             Quick search...
           </span>
-          <kbd className="ml-auto mr-[1ch] mt-px flex min-h-6 flex-none items-center bg-subtle pl-3 pr-4 font-mono text-sm font-light opacity-70">
-            <kbd className="text-md leading-5">Ctrl</kbd>
-            <kbd className="text-sm">K</kbd>
-          </kbd>
         </button>
       </div>
       <nav className="w-full desktop:w-auto">

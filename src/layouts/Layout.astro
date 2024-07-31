@@ -55,19 +55,21 @@ const pathname = new URL(Astro.request.url).pathname;
       <slot />
     </LayoutComponent>
     <dialog
-      class="max-h-[70vh] w-[calc(100%_-2_*_var(--gutter))] flex-col rounded-xl border-2 border-default bg-default shadow-xl open:flex tablet:max-w-prose"
+      class="relative m-0 h-screen max-h-none w-screen max-w-unset border border-default bg-canvas shadow-lg open:flex open:flex-col tablet:mx-auto tablet:mt-16 tablet:h-min tablet:max-h-[min(100vh_-_128px,900px)] tablet:min-h-60 tablet:max-w-[min(100vw_-_2_*_var(--gutter-width),36rem)] tablet:rounded-xl desktop:min-h-0"
       aria-label="Search"
     >
-      <div class="dialog-frame relative flex max-h-[inherit] flex-col">
-        <div class="flex-grow overflow-scroll px-gutter py-4">
+      <div data-dialog-frame class="contents">
+        <button data-close-modal>Cancel</button>
+        <div class="contents">
           <div id="pagefind__search"></div>
         </div>
-        <div class="min-h-12 shrink-0 px-gutter py-4 text-sm text-subtle">
-          <kbd class="bg-subtle p-2 font-mono">Tab</kbd> to navigate
-          <button
-            data-close-modal
-            class="ml-2 self-start bg-subtle p-2 font-mono text-xs text-subtle"
-            ><kbd>ESC</kbd></button
+
+        <div class="hidden px-gutter py-4 desktop:block">
+          <kbd class="rounded-md bg-default p-2 font-mono text-xs text-subtle"
+            >Tab</kbd
+          > to navigate
+          <kbd class="rounded-md bg-subtle p-2 font-mono text-xs text-subtle"
+            >ESC</kbd
           > to close
         </div>
       </div>
@@ -97,10 +99,13 @@ const pathname = new URL(Astro.request.url).pathname;
     "button[data-close-modal]",
   )!;
   const dialog = document.querySelector("dialog")!;
-  const dialogFrame = document.querySelector(".dialog-frame")!;
+  const dialogFrame = document.querySelector("div[data-dialog-frame]")!;
+
+  // ios safari doesn't bubble click events unless a parent has a listener
+  document.body.addEventListener("click", () => {});
 
   /** Close the modal if a user clicks on a link or outside of the modal. */
-  const onClick = (event: MouseEvent | TouchEvent) => {
+  const onClick = (event: MouseEvent) => {
     const isLink = "href" in (event.target || {});
     if (
       isLink ||
@@ -117,7 +122,6 @@ const pathname = new URL(Astro.request.url).pathname;
     document.querySelector("input")?.focus();
     event?.stopPropagation();
     window.addEventListener("click", onClick);
-    window.addEventListener("touchend", onClick);
   };
 
   const closeModal = () => dialog.close();
@@ -129,7 +133,6 @@ const pathname = new URL(Astro.request.url).pathname;
   dialog.addEventListener("close", () => {
     document.body.toggleAttribute("data-search-modal-open", false);
     window.removeEventListener("click", onClick);
-    window.removeEventListener("touchend", onClick);
   });
 
   // Listen for `ctrl + k` and `cmd + k` keyboard shortcuts.
@@ -167,6 +170,19 @@ const pathname = new URL(Astro.request.url).pathname;
     overflow: hidden;
   }
 
+  button[data-close-modal] {
+    position: absolute;
+    z-index: 1;
+    height: calc(64px * var(--pagefind-ui-scale));
+    padding: 0.25rem;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    color: var(--fg-accent);
+    top: 1rem;
+    right: var(--gutter-width);
+  }
+
   #pagefind__search {
     --pagefind-ui-scale: 0.76190476;
     --pagefind-ui-primary: var(--fg-accent);
@@ -180,10 +196,120 @@ const pathname = new URL(Astro.request.url).pathname;
     --pagefind-ui-image-box-ratio: 3 / 2;
     --pagefind-ui-font: "Charter", "Iowan Old Style", "Georgia", "Cambria",
       "Times New Roman", "Times", "serif";
+    --cancel-space: 5rem;
   }
 
   #pagefind__search input:focus {
     outline: 1px solid var(--fg-accent);
     outline-offset: -2px;
+  }
+
+  #pagefind__search .pagefind-ui__search-input {
+    width: calc(100% - (var(--cancel-space) + (2 * var(--gutter-width))));
+    margin: 1rem var(--gutter-width);
+    flex-shrink: 0;
+  }
+
+  #pagefind__search,
+  #pagefind__search .pagefind-ui__form,
+  #pagefind__search .pagefind-ui {
+    display: contents;
+  }
+
+  #pagefind__search .pagefind-ui__form:before {
+    left: calc(var(--gutter-width) + 1rem);
+    top: 2rem;
+  }
+
+  #pagefind__search .pagefind-ui__search-clear {
+    position: absolute;
+  }
+
+  #pagefind__search .pagefind-ui__drawer {
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    outline-offset: -2px;
+  }
+
+  #pagefind__search .pagefind-ui__drawer:focus {
+    outline: 1px solid var(--fg-accent);
+  }
+
+  #pagefind__search .pagefind-ui__search-clear {
+    inset-inline-end: var(--cancel-space);
+    width: calc(60px * var(--pagefind-ui-scale));
+    padding: 0;
+    background-color: transparent;
+    overflow: hidden;
+    top: calc(2px + 1rem);
+    right: calc(var(--gutter-width) + var(--cancel-space));
+  }
+  #pagefind__search .pagefind-ui__search-clear:focus {
+    outline: 1px solid var(--fg-accent);
+  }
+  #pagefind__search .pagefind-ui__search-clear::before {
+    content: "";
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='m13.41 12 6.3-6.29a1 1 0 1 0-1.42-1.42L12 10.59l-6.29-6.3a1 1 0 0 0-1.42 1.42l6.3 6.29-6.3 6.29a1 1 0 0 0 .33 1.64 1 1 0 0 0 1.09-.22l6.29-6.3 6.29 6.3a1 1 0 0 0 1.64-.33 1 1 0 0 0-.22-1.09L13.41 12Z'/%3E%3C/svg%3E")
+      center / 50% no-repeat;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='m13.41 12 6.3-6.29a1 1 0 1 0-1.42-1.42L12 10.59l-6.29-6.3a1 1 0 0 0-1.42 1.42l6.3 6.29-6.3 6.29a1 1 0 0 0 .33 1.64 1 1 0 0 0 1.09-.22l6.29-6.3 6.29 6.3a1 1 0 0 0 1.64-.33 1 1 0 0 0-.22-1.09L13.41 12Z'/%3E%3C/svg%3E")
+      center / 50% no-repeat;
+    background-color: var(--fg-accent);
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  #pagefind__search .pagefind-ui__message {
+    padding: 0 var(--gutter-width) 1rem;
+  }
+  #pagefind__search .pagefind-ui__results-area {
+    margin-top: 0;
+  }
+
+  #pagefind__search .pagefind-ui__result {
+    padding: 1rem var(--gutter-width);
+    display: grid;
+    grid-template-columns: 25% 1fr;
+    column-gap: 1.5rem;
+  }
+
+  #pagefind__search .pagefind-ui__result-thumb {
+    max-width: unset;
+    aspect-ratio: unset;
+    position: unset;
+    width: 100%;
+  }
+
+  #pagefind__search .pagefind-ui__result-image {
+    position: unset;
+    left: unset;
+    transform: unset;
+  }
+
+  #pagefind__search .pagefind-ui__result-link:focus {
+    outline: 1px solid var(--fg-accent);
+  }
+
+  #pagefind__search .pagefind-ui__result:focus-within {
+    outline: 1px solid var(--fg-accent);
+    background-color: var(--bg-subtle);
+    outline-offset: -2px;
+  }
+
+  #pagefind__search .pagefind-ui__button {
+    margin: 1rem var(--gutter-width) 2rem;
+    width: calc(100% - 2 * var(--gutter-width));
+    font-size: 1rem;
+    font-weight: normal;
+    height: 2.5rem;
+  }
+
+  #pagefind__search .pagefind-ui__button:focus {
+    outline: 1px solid var(--fg-accent);
+    outline-offset: -2px;
+  }
+
+  #pagefind__search .pagefind-ui__result-excerpt {
+    font-size: 0.875rem;
   }
 </style>

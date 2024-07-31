@@ -49,7 +49,7 @@ export function YearStats({
           <Callouts workCount={stats.workCount} bookCount={stats.bookCount} />
         </div>
       </header>
-      <div className="flex w-full max-w-[960px] flex-col items-stretch gap-y-8 py-8 tablet:px-gutter desktop:px-pageMargin">
+      <div className="flex w-full max-w-screen-desktop flex-col items-stretch gap-y-8 py-8 tablet:px-gutter desktop:px-pageMargin">
         <MostReadAuthors values={mostReadAuthors} />
         <DecadeDistribution values={stats.decadeDistribution} />
         <KindDistribution values={stats.kindDistribution} />
