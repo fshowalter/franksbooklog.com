@@ -59,7 +59,7 @@
     "@types/node": "20.14.13",
     "@types/react": "18.3.3",
     "@types/react-dom": "18.3.0",
-    "@vitest/coverage-istanbul": "2.0.4",
+    "@vitest/coverage-istanbul": "2.0.5",
     "chokidar": "3.6.0",
     "cspell": "8.13.0",
     "eslint": "8.57.0",
@@ -78,7 +78,7 @@
     "sirv": "2.0.4",
     "typescript": "5.5.4",
     "typescript-eslint": "7.18.0",
-    "vitest": "2.0.4"
+    "vitest": "2.0.5"
   },
   "engines": {
     "node": "20.16.0"
