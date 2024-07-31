@@ -55,7 +55,7 @@ const pathname = new URL(Astro.request.url).pathname;
       <slot />
     </LayoutComponent>
     <dialog
-      class="flex max-h-[80vh] w-[calc(100%_-2_*_var(--gutter))] flex-col rounded-xl border-2 border-default bg-default shadow-xl tablet:max-w-prose"
+      class="max-h-[70vh] w-[calc(100%_-2_*_var(--gutter))] flex-col rounded-xl border-2 border-default bg-default shadow-xl open:flex tablet:max-w-prose"
       aria-label="Search"
     >
       <div class="dialog-frame relative flex max-h-[inherit] flex-col">
@@ -100,7 +100,7 @@ const pathname = new URL(Astro.request.url).pathname;
   const dialogFrame = document.querySelector(".dialog-frame")!;
 
   /** Close the modal if a user clicks on a link or outside of the modal. */
-  const onClick = (event: MouseEvent) => {
+  const onClick = (event: MouseEvent | TouchEvent) => {
     const isLink = "href" in (event.target || {});
     if (
       isLink ||
@@ -117,6 +117,7 @@ const pathname = new URL(Astro.request.url).pathname;
     document.querySelector("input")?.focus();
     event?.stopPropagation();
     window.addEventListener("click", onClick);
+    window.addEventListener("touchend", onClick);
   };
 
   const closeModal = () => dialog.close();
@@ -128,6 +129,7 @@ const pathname = new URL(Astro.request.url).pathname;
   dialog.addEventListener("close", () => {
     document.body.toggleAttribute("data-search-modal-open", false);
     window.removeEventListener("click", onClick);
+    window.removeEventListener("touchend", onClick);
   });
 
   // Listen for `ctrl + k` and `cmd + k` keyboard shortcuts.
@@ -161,6 +163,10 @@ const pathname = new URL(Astro.request.url).pathname;
 </script>
 
 <style is:global>
+  [data-search-modal-open] {
+    overflow: hidden;
+  }
+
   #pagefind__search {
     --pagefind-ui-scale: 0.76190476;
     --pagefind-ui-primary: var(--fg-accent);
