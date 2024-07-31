@@ -3,7 +3,7 @@ import type { Review } from "src/api/reviews";
 import { Grade } from "src/components/Grade";
 import { ListItemTitle } from "src/components/ListItemTitle";
 import { toSentenceArray } from "src/utils";
-import { twj } from "src/utils/tailwindJoin";
+import { ccn } from "src/utils/concatClassNames";
 
 import { Cover } from "./Cover";
 
@@ -81,7 +81,7 @@ function YearAndKind({
   if (kind) {
     return (
       <div
-        className={twj(
+        className={ccn(
           "text-sm leading-4 tracking-0.5px text-subtle",
           className,
         )}
@@ -108,7 +108,7 @@ function Image({
     return (
       <a
         href={`/reviews/${slug}/`}
-        className={twj(className, "safari-border-radius-fix overflow-hidden")}
+        className={ccn(className, "safari-border-radius-fix overflow-hidden")}
       >
         <Cover
           imageProps={imageProps}
@@ -147,7 +147,7 @@ function Authors({
   }
 
   return (
-    <div className={twj("text-base leading-5 text-muted", className)}>
+    <div className={ccn("text-base leading-5 text-muted", className)}>
       {toSentenceArray(values.map((author) => author.name))}
     </div>
   );

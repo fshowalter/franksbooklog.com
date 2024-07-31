@@ -1,4 +1,4 @@
-import { twj } from "src/utils/tailwindJoin";
+import { ccn } from "src/utils/concatClassNames";
 
 export function Button({
   onClick,
@@ -13,7 +13,7 @@ export function Button({
     <button
       type="button"
       onClick={onClick}
-      className={twj(
+      className={ccn(
         "relative flex w-full max-w-lg cursor-pointer justify-center whitespace-nowrap rounded-3xl bg-subtle px-4 py-2 text-base leading-6 text-default shadow-all hover:shadow-accent",
         className,
       )}

@@ -641,12 +641,14 @@
       </div>
     </div>
     <dialog
-      class="w-[calc(100%_-2_*_var(--gutter))] rounded-xl border-2 border-default shadow-xl tablet:max-w-[75vw]"
+      class="flex max-h-[80vh] w-[calc(100%_-2_*_var(--gutter))] flex-col rounded-xl border-2 border-default bg-default shadow-xl tablet:max-w-[75vw]"
       aria-label="Search"
     >
-      <div class="dialog-frame flex flex-col overflow-hidden px-gutter py-4">
-        <div class="flex-grow"><div id="pagefind__search"></div></div>
-        <div class="pt-4 text-sm text-subtle">
+      <div class="dialog-frame relative flex h-full max-h-[inherit] flex-col">
+        <div class="flex-grow overflow-scroll px-gutter py-4">
+          <div id="pagefind__search"></div>
+        </div>
+        <div class="min-h-12 shrink-0 px-gutter py-4 text-sm text-subtle">
           <kbd class="bg-subtle p-2 font-mono">Tab</kbd> to navigate
           <button
             data-close-modal

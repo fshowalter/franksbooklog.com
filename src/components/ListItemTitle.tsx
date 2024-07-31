@@ -1,4 +1,4 @@
-import { twj } from "src/utils/tailwindJoin";
+import { ccn } from "src/utils/concatClassNames";
 
 interface Props {
   title: string;
@@ -11,7 +11,7 @@ export function ListItemTitle({ title, slug, className }: Props) {
     return (
       <a
         href={`/reviews/${slug}/`}
-        className={twj("block text-md leading-5 text-accent", className)}
+        className={ccn("block text-md leading-5 text-accent", className)}
       >
         {title}
       </a>
@@ -19,6 +19,6 @@ export function ListItemTitle({ title, slug, className }: Props) {
   }
 
   return (
-    <span className={twj("block text-md leading-5", className)}>{title}</span>
+    <span className={ccn("block text-md leading-5", className)}>{title}</span>
   );
 }

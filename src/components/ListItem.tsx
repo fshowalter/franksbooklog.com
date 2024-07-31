@@ -1,4 +1,4 @@
-import { twj } from "src/utils/tailwindJoin";
+import { ccn } from "src/utils/concatClassNames";
 
 export function ListItem({
   children,
@@ -9,7 +9,7 @@ export function ListItem({
 }) {
   return (
     <li
-      className={twj(
+      className={ccn(
         "flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:gap-x-6 tablet:px-6",
         className,
       )}
