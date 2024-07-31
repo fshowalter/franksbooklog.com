@@ -150,6 +150,8 @@ const pathname = new URL(Astro.request.url).pathname;
         showImages: true,
         showSubResults: false,
       });
+      const input = document.querySelector(".pagefind-ui__search-input")!;
+      input.removeAttribute("enterkeyhint");
     });
   });
 </script>
