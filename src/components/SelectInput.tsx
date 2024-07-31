@@ -1,6 +1,6 @@
 import type { ChangeEvent } from "react";
 import React from "react";
-import { twj } from "src/utils/tailwindJoin";
+import { ccn } from "src/utils/concactClassnames";
 
 export function SelectInput({
   value,
@@ -17,7 +17,7 @@ export function SelectInput({
     <select
       value={value}
       onChange={onChange}
-      className={twj(
+      className={ccn(
         "select-background-image w-full appearance-none rounded-sm border-none bg-subtle py-2 pl-4 pr-8 text-base leading-6 text-subtle shadow-all",
         className,
       )}

@@ -1,5 +1,5 @@
 import React from "react";
-import { twj } from "src/utils/tailwindJoin";
+import { ccn } from "src/utils/concactClassnames";
 
 export function Table({
   children,
@@ -64,7 +64,7 @@ export function TableDataCell({
 
   if (align === "fill") {
     return (
-      <td className={twj("w-full py-0", className, hideOnSmallScreensClass)}>
+      <td className={ccn("w-full py-0", className, hideOnSmallScreensClass)}>
         {children}
       </td>
     );
@@ -73,7 +73,7 @@ export function TableDataCell({
   if (align === "left") {
     return (
       <td
-        className={twj(
+        className={ccn(
           "px-gutter py-0 text-left",
           className,
           hideOnSmallScreensClass,
@@ -86,7 +86,7 @@ export function TableDataCell({
 
   return (
     <td
-      className={twj(
+      className={ccn(
         "px-gutter py-0 text-right",
         className,
         hideOnSmallScreensClass,

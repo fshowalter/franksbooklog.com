@@ -1,4 +1,4 @@
-import { twj } from "src/utils/tailwindJoin";
+import { ccn } from "src/utils/concactClassnames";
 
 export function PageTitle({
   children,
@@ -10,7 +10,7 @@ export function PageTitle({
   return (
     <h1
       data-pagefind-meta="title"
-      className={twj(
+      className={ccn(
         "text-[2rem] font-normal leading-none desktop:text-[2.25rem]",
         className,
       )}

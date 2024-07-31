@@ -1,5 +1,5 @@
 import type { ElementType } from "react";
-import { twj } from "src/utils/tailwindJoin";
+import { ccn } from "src/utils/concactClassnames";
 
 export function RenderedMarkdown({
   className,
@@ -18,7 +18,7 @@ export function RenderedMarkdown({
 
   return (
     <Component
-      className={twj("rendered-markdown font-light", className)}
+      className={ccn("rendered-markdown font-light", className)}
       // eslint-disable-next-line react/no-danger
       dangerouslySetInnerHTML={{
         __html: text,

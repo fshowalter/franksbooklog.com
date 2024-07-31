@@ -1,5 +1,5 @@
 import React from "react";
-import { twj } from "src/utils/tailwindJoin";
+import { ccn } from "src/utils/concactClassnames";
 
 /**
  * Renders a search icon.
@@ -17,7 +17,7 @@ export default function SvgIcon({
       width="1em"
       height="1em"
       viewBox="0 0 16 16"
-      className={twj("fill-subtle", className)}
+      className={ccn("fill-subtle", className)}
       xmlns="http://www.w3.org/2000/svg"
     >
       {children}
