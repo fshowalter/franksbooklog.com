@@ -3,7 +3,7 @@ import type { Review } from "src/api/reviews";
 import { Grade } from "src/components/Grade";
 import { ListItemTitle } from "src/components/ListItemTitle";
 import { toSentenceArray } from "src/utils";
-import { ccn } from "src/utils/concactClassnames";
+import { ccn } from "src/utils/concatClassNames";
 
 import { Cover } from "./Cover";
 

@@ -1,5 +1,5 @@
 import type { ElementType } from "react";
-import { ccn } from "src/utils/concactClassnames";
+import { ccn } from "src/utils/concatClassNames";
 
 export function RenderedMarkdown({
   className,

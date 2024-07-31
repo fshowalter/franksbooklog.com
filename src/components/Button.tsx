@@ -1,4 +1,4 @@
-import { ccn } from "src/utils/concactClassnames";
+import { ccn } from "src/utils/concatClassNames";
 
 export function Button({
   onClick,

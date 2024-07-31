@@ -1,5 +1,5 @@
 import React from "react";
-import { ccn } from "src/utils/concactClassnames";
+import { ccn } from "src/utils/concatClassNames";
 
 /**
  * Renders a search icon.

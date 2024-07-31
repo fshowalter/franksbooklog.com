@@ -1,5 +1,5 @@
 import type { ChangeEvent } from "react";
-import { ccn } from "src/utils/concactClassnames";
+import { ccn } from "src/utils/concatClassNames";
 
 import { LabelText } from "./LabelText";
 import { SelectInput } from "./SelectInput";
