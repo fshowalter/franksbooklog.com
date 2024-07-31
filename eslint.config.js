@@ -53,6 +53,10 @@ export default tsEslint.config(
     },
   },
   {
+    files: ["**/*.astro"],
+    extends: [...tailwind.configs["flat/recommended"]],
+  },
+  {
     files: ["**/*.tsx"],
     extends: [...tailwind.configs["flat/recommended"]],
     plugins: {

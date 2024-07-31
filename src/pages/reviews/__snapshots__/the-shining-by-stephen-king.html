@@ -57,10 +57,14 @@
               disabled=""
               aria-label="Search"
               aria-keyshortcuts="Control+K"
-              class="safari-border-radius-fix flex w-full items-center overflow-hidden rounded-md text-sm leading-6 text-subtle ring-1 ring-border hover:ring-accent"
+              class="safari-border-radius-fix flex w-full items-center overflow-hidden rounded-md text-sm leading-6 text-subtle ring-1 ring-border hover:ring-accent desktop:ring-0"
             >
-              <svg
-                class="mr-2 size-10 flex-none border-0 border-r border-default bg-subtle fill-subtle px-3 py-1"
+              <kbd
+                class="ml-auto mt-px hidden min-h-6 flex-none items-center bg-subtle pl-3 pr-4 font-mono text-sm font-light opacity-70 desktop:flex"
+                ><kbd class="text-md leading-5">Ctrl</kbd
+                ><kbd class="text-sm">K</kbd></kbd
+              ><svg
+                class="mr-2 size-10 flex-none border-0 border-r border-default bg-subtle fill-subtle px-3 py-1 desktop:w-4 desktop:border-r-0 desktop:bg-unset desktop:px-0"
                 viewBox="0 0 16 16"
               >
                 <path
@@ -72,12 +76,8 @@
                   d="M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z"
                 ></path></svg
               ><span
-                class="flex items-baseline whitespace-nowrap p-2 text-base opacity-70"
+                class="flex items-baseline whitespace-nowrap p-2 text-base opacity-70 desktop:hidden"
                 >Quick search...</span
-              ><kbd
-                class="ml-auto mr-[1ch] mt-px flex min-h-6 flex-none items-center bg-subtle pl-3 pr-4 font-mono text-sm font-light opacity-70"
-                ><kbd class="text-md leading-5">Ctrl</kbd
-                ><kbd class="text-sm">K</kbd></kbd
               >
             </button>
           </div>
@@ -870,21 +870,20 @@
       </div>
     </div>
     <dialog
-      class="max-h-[70vh] w-[calc(100%_-2_*_var(--gutter))] flex-col rounded-xl border-2 border-default bg-default shadow-xl open:flex tablet:max-w-prose"
+      class="relative m-0 h-screen max-h-none w-screen max-w-unset border border-default bg-canvas shadow-lg open:flex open:flex-col tablet:mx-auto tablet:mt-16 tablet:h-min tablet:max-h-[min(100vh_-_128px,900px)] tablet:min-h-60 tablet:max-w-[min(100vw_-_2_*_var(--gutter-width),36rem)] tablet:rounded-xl desktop:min-h-0"
       aria-label="Search"
     >
-      <div class="dialog-frame relative flex max-h-[inherit] flex-col">
-        <div class="flex-grow overflow-scroll px-gutter py-4">
-          <div id="pagefind__search"></div>
-        </div>
-        <div class="min-h-12 shrink-0 px-gutter py-4 text-sm text-subtle">
-          <kbd class="bg-subtle p-2 font-mono">Tab</kbd> to navigate
-          <button
-            data-close-modal
-            class="ml-2 self-start bg-subtle p-2 font-mono text-xs text-subtle"
+      <div data-dialog-frame class="contents">
+        <button data-close-modal>Cancel</button>
+        <div class="contents"><div id="pagefind__search"></div></div>
+        <div class="hidden px-gutter py-4 desktop:block">
+          <kbd class="rounded-md bg-default p-2 font-mono text-xs text-subtle"
+            >Tab</kbd
           >
-            <kbd>ESC</kbd>
-          </button>
+          to navigate
+          <kbd class="rounded-md bg-subtle p-2 font-mono text-xs text-subtle"
+            >ESC</kbd
+          >
           to close
         </div>
       </div>
