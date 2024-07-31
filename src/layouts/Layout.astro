@@ -114,6 +114,17 @@ const pathname = new URL(Astro.request.url).pathname;
     ) {
       closeModal();
     }
+
+    if (
+      event.target instanceof HTMLButtonElement &&
+      event.target.classList.contains("pagefind-ui__search-clear")
+    ) {
+      const input: HTMLElement = document.querySelector(
+        ".pagefind-ui__search-input",
+      )!;
+
+      input.focus();
+    }
   };
 
   const openModal = (event?: MouseEvent) => {
@@ -136,10 +147,18 @@ const pathname = new URL(Astro.request.url).pathname;
   });
 
   // Listen for `ctrl + k` and `cmd + k` keyboard shortcuts.
-  window.addEventListener("keydown", (e) => {
+  window.addEventListener("keydown", (e: KeyboardEvent) => {
     if ((e.metaKey === true || e.ctrlKey === true) && e.key === "k") {
       dialog.open ? closeModal() : openModal();
       e.preventDefault();
+    }
+
+    if (
+      e.target instanceof HTMLInputElement &&
+      e.target.classList.contains("pagefind-ui__search-input") &&
+      e.key === "Enter"
+    ) {
+      e.target.blur();
     }
   });
 
@@ -154,14 +173,6 @@ const pathname = new URL(Astro.request.url).pathname;
         bundlePath: import.meta.env.BASE_URL.replace(/\/$/, "") + "/pagefind/",
         showImages: true,
         showSubResults: false,
-      });
-      const input: HTMLElement = document.querySelector(
-        ".pagefind-ui__search-input",
-      )!;
-      input.addEventListener("keydown", (e: KeyboardEvent) => {
-        if (e.key == "Enter") {
-          input.blur();
-        }
       });
     });
   });
