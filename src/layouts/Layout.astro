@@ -158,8 +158,10 @@ const pathname = new URL(Astro.request.url).pathname;
       const input: HTMLElement = document.querySelector(
         ".pagefind-ui__search-input",
       )!;
-      input.addEventListener("search", () => {
-        input.blur();
+      input.addEventListener("keydown", (e: KeyboardEvent) => {
+        if (e.key == "Enter") {
+          input.blur();
+        }
       });
     });
   });
