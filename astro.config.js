@@ -28,11 +28,18 @@ function contentHmr() {
 
 function pagefind() {
   let outDir;
+  let assets;
   return {
     name: "pagefind",
     hooks: {
       "astro:config:setup": ({ config }) => {
         outDir = fileURLToPath(config.outDir);
+
+        if (config.build.assetsPrefix) {
+          assets = null;
+        } else {
+          assets = config.build.assets;
+        }
       },
       "astro:server:setup": ({ server, logger }) => {
         if (!outDir) {
@@ -46,7 +53,10 @@ function pagefind() {
           etag: true,
         });
         server.middlewares.use((req, res, next) => {
-          if (req.url?.startsWith("/pagefind/")) {
+          if (
+            req.url?.startsWith("/pagefind/") ||
+            (assets && req.url?.startsWith(`/${assets}/`))
+          ) {
             serve(req, res, next);
           } else {
             next();
