@@ -106,7 +106,7 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
       </div>
     </header>
     <div
-      class="flex w-full max-w-[960px] flex-col items-stretch gap-y-8 py-8 tablet:px-gutter desktop:px-pageMargin"
+      class="flex w-full max-w-screen-desktop flex-col items-stretch gap-y-8 py-8 tablet:px-gutter desktop:px-pageMargin"
     >
       <section
         class="shadow-all"
@@ -2412,7 +2412,7 @@ exports[`YearStats > matches snapshot for slug 2023 1`] = `
       </div>
     </header>
     <div
-      class="flex w-full max-w-[960px] flex-col items-stretch gap-y-8 py-8 tablet:px-gutter desktop:px-pageMargin"
+      class="flex w-full max-w-screen-desktop flex-col items-stretch gap-y-8 py-8 tablet:px-gutter desktop:px-pageMargin"
     >
       <section
         class="shadow-all"
@@ -3222,7 +3222,7 @@ exports[`YearStats > matches snapshot for slug 2024 1`] = `
       </div>
     </header>
     <div
-      class="flex w-full max-w-[960px] flex-col items-stretch gap-y-8 py-8 tablet:px-gutter desktop:px-pageMargin"
+      class="flex w-full max-w-screen-desktop flex-col items-stretch gap-y-8 py-8 tablet:px-gutter desktop:px-pageMargin"
     >
       <section>
         <h3
