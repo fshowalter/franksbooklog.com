@@ -8,8 +8,8 @@ import { ccn } from "src/utils/concatClassNames";
 import { Cover } from "./Cover";
 
 export const CoverGalleryListItemImageConfig = {
-  width: 248,
-  height: 372,
+  width: 176,
+  height: 264,
 };
 
 interface Author extends Pick<Review["authors"][0], "name"> {}
