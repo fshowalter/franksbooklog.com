@@ -7,8 +7,8 @@ import { RenderedMarkdown } from "src/components/RenderedMarkdown";
 import { toSentenceArray } from "src/utils";
 
 export const CoverImageConfig = {
-  width: 168,
-  height: 252,
+  width: 176,
+  height: 264,
 };
 
 function formatDate(reviewDate: Date) {
@@ -45,15 +45,15 @@ export function HomeListItem({
 }): JSX.Element {
   return (
     <li className="flex even:bg-subtle">
-      <article className="mx-auto flex flex-col items-center px-pageMargin py-10 desktop:grid desktop:w-full desktop:grid-cols-8">
-        <div className="text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:self-start desktop:text-left desktop:leading-8">
+      <article className="mx-auto flex flex-col items-center px-pageMargin py-10 desktop:grid desktop:w-full desktop:grid-cols-12 desktop:gap-x-12">
+        <div className="text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:col-span-2 desktop:self-start desktop:text-left desktop:leading-8">
           {formatDate(value.date)}
           <div className="spacer-y-6" />
         </div>
         <a
           rel="canonical"
           href={`/reviews/${value.slug}/`}
-          className="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default desktop:col-span-2 desktop:self-start desktop:justify-self-end"
+          className="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default desktop:col-span-3 desktop:self-start desktop:justify-self-end"
         >
           <Cover
             imageProps={value.coverImageProps}
@@ -66,7 +66,7 @@ export function HomeListItem({
             loading={eagerLoadCoverImage ? "eager" : "lazy"}
           />
         </a>
-        <div className="flex flex-col items-center desktop:col-span-5 desktop:items-start desktop:pl-4">
+        <div className="flex flex-col items-center desktop:col-span-7 desktop:items-start">
           <div className="py-4 text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:pt-0 desktop:leading-8">
             {value.yearPublished} | {value.kind}
           </div>

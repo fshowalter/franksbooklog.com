@@ -10,10 +10,10 @@ exports[`Home > matches snapshot 1`] = `
         class="flex even:bg-subtle"
       >
         <article
-          class="mx-auto flex flex-col items-center px-pageMargin py-10 desktop:grid desktop:w-full desktop:grid-cols-8"
+          class="mx-auto flex flex-col items-center px-pageMargin py-10 desktop:grid desktop:w-full desktop:grid-cols-12 desktop:gap-x-12"
         >
           <div
-            class="text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:self-start desktop:text-left desktop:leading-8"
+            class="text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:col-span-2 desktop:self-start desktop:text-left desktop:leading-8"
           >
             01 Jul 2024
             <div
@@ -21,23 +21,23 @@ exports[`Home > matches snapshot 1`] = `
             />
           </div>
           <a
-            class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default desktop:col-span-2 desktop:self-start desktop:justify-self-end"
+            class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default desktop:col-span-3 desktop:self-start desktop:justify-self-end"
             href="/reviews/fast-forward-by-stephen-morris/"
             rel="canonical"
           >
             <img
               alt="A cover of Fast Forward by Stephen Morris"
               decoding="async"
-              height="252"
+              height="264"
               loading="eager"
-              src="/_image?/content%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=168&h=252&q=80&f=avif"
-              srcset="/_image?/content%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=168&q=80&f=avif 1x, /_image?/content%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=336&q=80&f=avif 2x"
+              src="/_image?/content%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=176&h=264&q=80&f=avif"
+              srcset="/_image?/content%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=176&q=80&f=avif 1x, /_image?/content%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=352&q=80&f=avif 2x"
               style="aspect-ratio: 0.66666667;"
-              width="168"
+              width="176"
             />
           </a>
           <div
-            class="flex flex-col items-center desktop:col-span-5 desktop:items-start desktop:pl-4"
+            class="flex flex-col items-center desktop:col-span-7 desktop:items-start"
           >
             <div
               class="py-4 text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:pt-0 desktop:leading-8"
@@ -112,10 +112,10 @@ exports[`Home > matches snapshot 1`] = `
         class="flex even:bg-subtle"
       >
         <article
-          class="mx-auto flex flex-col items-center px-pageMargin py-10 desktop:grid desktop:w-full desktop:grid-cols-8"
+          class="mx-auto flex flex-col items-center px-pageMargin py-10 desktop:grid desktop:w-full desktop:grid-cols-12 desktop:gap-x-12"
         >
           <div
-            class="text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:self-start desktop:text-left desktop:leading-8"
+            class="text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:col-span-2 desktop:self-start desktop:text-left desktop:leading-8"
           >
             30 Jun 2024
             <div
@@ -123,23 +123,23 @@ exports[`Home > matches snapshot 1`] = `
             />
           </div>
           <a
-            class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default desktop:col-span-2 desktop:self-start desktop:justify-self-end"
+            class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default desktop:col-span-3 desktop:self-start desktop:justify-self-end"
             href="/reviews/gothic-by-philip-fracassi/"
             rel="canonical"
           >
             <img
               alt="A cover of Gothic by Philip Fracassi"
               decoding="async"
-              height="252"
+              height="264"
               loading="lazy"
-              src="/_image?/content%2Fassets%2Fcovers%2Fgothic-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=168&h=252&q=80&f=avif"
-              srcset="/_image?/content%2Fassets%2Fcovers%2Fgothic-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=168&q=80&f=avif 1x, /_image?/content%2Fassets%2Fcovers%2Fgothic-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=336&q=80&f=avif 2x"
+              src="/_image?/content%2Fassets%2Fcovers%2Fgothic-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=176&h=264&q=80&f=avif"
+              srcset="/_image?/content%2Fassets%2Fcovers%2Fgothic-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=176&q=80&f=avif 1x, /_image?/content%2Fassets%2Fcovers%2Fgothic-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=352&q=80&f=avif 2x"
               style="aspect-ratio: 0.66666667;"
-              width="168"
+              width="176"
             />
           </a>
           <div
-            class="flex flex-col items-center desktop:col-span-5 desktop:items-start desktop:pl-4"
+            class="flex flex-col items-center desktop:col-span-7 desktop:items-start"
           >
             <div
               class="py-4 text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:pt-0 desktop:leading-8"
@@ -221,10 +221,10 @@ exports[`Home > matches snapshot 1`] = `
         class="flex even:bg-subtle"
       >
         <article
-          class="mx-auto flex flex-col items-center px-pageMargin py-10 desktop:grid desktop:w-full desktop:grid-cols-8"
+          class="mx-auto flex flex-col items-center px-pageMargin py-10 desktop:grid desktop:w-full desktop:grid-cols-12 desktop:gap-x-12"
         >
           <div
-            class="text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:self-start desktop:text-left desktop:leading-8"
+            class="text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:col-span-2 desktop:self-start desktop:text-left desktop:leading-8"
           >
             11 Nov 2023
             <div
@@ -232,23 +232,23 @@ exports[`Home > matches snapshot 1`] = `
             />
           </div>
           <a
-            class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default desktop:col-span-2 desktop:self-start desktop:justify-self-end"
+            class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default desktop:col-span-3 desktop:self-start desktop:justify-self-end"
             href="/reviews/record-play-pause-by-stephen-morris/"
             rel="canonical"
           >
             <img
               alt="A cover of Record Play Pause by Stephen Morris"
               decoding="async"
-              height="252"
+              height="264"
               loading="lazy"
-              src="/_image?/content%2Fassets%2Fcovers%2Frecord-play-pause-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=168&h=252&q=80&f=avif"
-              srcset="/_image?/content%2Fassets%2Fcovers%2Frecord-play-pause-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=168&q=80&f=avif 1x, /_image?/content%2Fassets%2Fcovers%2Frecord-play-pause-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=336&q=80&f=avif 2x"
+              src="/_image?/content%2Fassets%2Fcovers%2Frecord-play-pause-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=176&h=264&q=80&f=avif"
+              srcset="/_image?/content%2Fassets%2Fcovers%2Frecord-play-pause-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=176&q=80&f=avif 1x, /_image?/content%2Fassets%2Fcovers%2Frecord-play-pause-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=352&q=80&f=avif 2x"
               style="aspect-ratio: 0.66666667;"
-              width="168"
+              width="176"
             />
           </a>
           <div
-            class="flex flex-col items-center desktop:col-span-5 desktop:items-start desktop:pl-4"
+            class="flex flex-col items-center desktop:col-span-7 desktop:items-start"
           >
             <div
               class="py-4 text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:pt-0 desktop:leading-8"
@@ -319,10 +319,10 @@ exports[`Home > matches snapshot 1`] = `
         class="flex even:bg-subtle"
       >
         <article
-          class="mx-auto flex flex-col items-center px-pageMargin py-10 desktop:grid desktop:w-full desktop:grid-cols-8"
+          class="mx-auto flex flex-col items-center px-pageMargin py-10 desktop:grid desktop:w-full desktop:grid-cols-12 desktop:gap-x-12"
         >
           <div
-            class="text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:self-start desktop:text-left desktop:leading-8"
+            class="text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:col-span-2 desktop:self-start desktop:text-left desktop:leading-8"
           >
             06 Nov 2023
             <div
@@ -330,23 +330,23 @@ exports[`Home > matches snapshot 1`] = `
             />
           </div>
           <a
-            class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default desktop:col-span-2 desktop:self-start desktop:justify-self-end"
+            class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default desktop:col-span-3 desktop:self-start desktop:justify-self-end"
             href="/reviews/fright-night-origins-by-tom-holland-a-jack-ulrich/"
             rel="canonical"
           >
             <img
               alt="A cover of Fright Night Origins by Tom Holland and A. Jack Ulrich"
               decoding="async"
-              height="252"
+              height="264"
               loading="lazy"
-              src="/_image?/content%2Fassets%2Fcovers%2Ffright-night-origins-by-tom-holland-a-jack-ulrich.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=168&h=252&q=80&f=avif"
-              srcset="/_image?/content%2Fassets%2Fcovers%2Ffright-night-origins-by-tom-holland-a-jack-ulrich.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=168&q=80&f=avif 1x, /_image?/content%2Fassets%2Fcovers%2Ffright-night-origins-by-tom-holland-a-jack-ulrich.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=336&q=80&f=avif 2x"
+              src="/_image?/content%2Fassets%2Fcovers%2Ffright-night-origins-by-tom-holland-a-jack-ulrich.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=176&h=264&q=80&f=avif"
+              srcset="/_image?/content%2Fassets%2Fcovers%2Ffright-night-origins-by-tom-holland-a-jack-ulrich.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=176&q=80&f=avif 1x, /_image?/content%2Fassets%2Fcovers%2Ffright-night-origins-by-tom-holland-a-jack-ulrich.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=352&q=80&f=avif 2x"
               style="aspect-ratio: 0.66666667;"
-              width="168"
+              width="176"
             />
           </a>
           <div
-            class="flex flex-col items-center desktop:col-span-5 desktop:items-start desktop:pl-4"
+            class="flex flex-col items-center desktop:col-span-7 desktop:items-start"
           >
             <div
               class="py-4 text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:pt-0 desktop:leading-8"
@@ -431,10 +431,10 @@ exports[`Home > matches snapshot 1`] = `
         class="flex even:bg-subtle"
       >
         <article
-          class="mx-auto flex flex-col items-center px-pageMargin py-10 desktop:grid desktop:w-full desktop:grid-cols-8"
+          class="mx-auto flex flex-col items-center px-pageMargin py-10 desktop:grid desktop:w-full desktop:grid-cols-12 desktop:gap-x-12"
         >
           <div
-            class="text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:self-start desktop:text-left desktop:leading-8"
+            class="text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:col-span-2 desktop:self-start desktop:text-left desktop:leading-8"
           >
             29 Oct 2023
             <div
@@ -442,23 +442,23 @@ exports[`Home > matches snapshot 1`] = `
             />
           </div>
           <a
-            class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default desktop:col-span-2 desktop:self-start desktop:justify-self-end"
+            class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default desktop:col-span-3 desktop:self-start desktop:justify-self-end"
             href="/reviews/dont-let-them-get-you-down-by-philip-fracassi/"
             rel="canonical"
           >
             <img
               alt="A cover of Don't Let Them Get You Down by Philip Fracassi"
               decoding="async"
-              height="252"
+              height="264"
               loading="lazy"
-              src="/_image?/content%2Fassets%2Fcovers%2Fdont-let-them-get-you-down-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=168&h=252&q=80&f=avif"
-              srcset="/_image?/content%2Fassets%2Fcovers%2Fdont-let-them-get-you-down-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=168&q=80&f=avif 1x, /_image?/content%2Fassets%2Fcovers%2Fdont-let-them-get-you-down-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=336&q=80&f=avif 2x"
+              src="/_image?/content%2Fassets%2Fcovers%2Fdont-let-them-get-you-down-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=176&h=264&q=80&f=avif"
+              srcset="/_image?/content%2Fassets%2Fcovers%2Fdont-let-them-get-you-down-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=176&q=80&f=avif 1x, /_image?/content%2Fassets%2Fcovers%2Fdont-let-them-get-you-down-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=352&q=80&f=avif 2x"
               style="aspect-ratio: 0.66666667;"
-              width="168"
+              width="176"
             />
           </a>
           <div
-            class="flex flex-col items-center desktop:col-span-5 desktop:items-start desktop:pl-4"
+            class="flex flex-col items-center desktop:col-span-7 desktop:items-start"
           >
             <div
               class="py-4 text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:pt-0 desktop:leading-8"
@@ -532,10 +532,10 @@ exports[`Home > matches snapshot 1`] = `
         class="flex even:bg-subtle"
       >
         <article
-          class="mx-auto flex flex-col items-center px-pageMargin py-10 desktop:grid desktop:w-full desktop:grid-cols-8"
+          class="mx-auto flex flex-col items-center px-pageMargin py-10 desktop:grid desktop:w-full desktop:grid-cols-12 desktop:gap-x-12"
         >
           <div
-            class="text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:self-start desktop:text-left desktop:leading-8"
+            class="text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:col-span-2 desktop:self-start desktop:text-left desktop:leading-8"
           >
             22 Oct 2023
             <div
@@ -543,23 +543,23 @@ exports[`Home > matches snapshot 1`] = `
             />
           </div>
           <a
-            class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default desktop:col-span-2 desktop:self-start desktop:justify-self-end"
+            class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default desktop:col-span-3 desktop:self-start desktop:justify-self-end"
             href="/reviews/the-creative-act-by-rick-rubin/"
             rel="canonical"
           >
             <img
               alt="A cover of The Creative Act by Rick Rubin"
               decoding="async"
-              height="252"
+              height="264"
               loading="lazy"
-              src="/_image?/content%2Fassets%2Fcovers%2Fthe-creative-act-by-rick-rubin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=168&h=252&q=80&f=avif"
-              srcset="/_image?/content%2Fassets%2Fcovers%2Fthe-creative-act-by-rick-rubin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=168&q=80&f=avif 1x, /_image?/content%2Fassets%2Fcovers%2Fthe-creative-act-by-rick-rubin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=336&q=80&f=avif 2x"
+              src="/_image?/content%2Fassets%2Fcovers%2Fthe-creative-act-by-rick-rubin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=176&h=264&q=80&f=avif"
+              srcset="/_image?/content%2Fassets%2Fcovers%2Fthe-creative-act-by-rick-rubin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=176&q=80&f=avif 1x, /_image?/content%2Fassets%2Fcovers%2Fthe-creative-act-by-rick-rubin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=352&q=80&f=avif 2x"
               style="aspect-ratio: 0.66666667;"
-              width="168"
+              width="176"
             />
           </a>
           <div
-            class="flex flex-col items-center desktop:col-span-5 desktop:items-start desktop:pl-4"
+            class="flex flex-col items-center desktop:col-span-7 desktop:items-start"
           >
             <div
               class="py-4 text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:pt-0 desktop:leading-8"
@@ -630,10 +630,10 @@ exports[`Home > matches snapshot 1`] = `
         class="flex even:bg-subtle"
       >
         <article
-          class="mx-auto flex flex-col items-center px-pageMargin py-10 desktop:grid desktop:w-full desktop:grid-cols-8"
+          class="mx-auto flex flex-col items-center px-pageMargin py-10 desktop:grid desktop:w-full desktop:grid-cols-12 desktop:gap-x-12"
         >
           <div
-            class="text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:self-start desktop:text-left desktop:leading-8"
+            class="text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:col-span-2 desktop:self-start desktop:text-left desktop:leading-8"
           >
             09 Oct 2023
             <div
@@ -641,23 +641,23 @@ exports[`Home > matches snapshot 1`] = `
             />
           </div>
           <a
-            class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default desktop:col-span-2 desktop:self-start desktop:justify-self-end"
+            class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default desktop:col-span-3 desktop:self-start desktop:justify-self-end"
             href="/reviews/sacculina-by-philip-fracassi/"
             rel="canonical"
           >
             <img
               alt="A cover of Sacculina by Philip Fracassi"
               decoding="async"
-              height="252"
+              height="264"
               loading="lazy"
-              src="/_image?/content%2Fassets%2Fcovers%2Fsacculina-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=168&h=252&q=80&f=avif"
-              srcset="/_image?/content%2Fassets%2Fcovers%2Fsacculina-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=168&q=80&f=avif 1x, /_image?/content%2Fassets%2Fcovers%2Fsacculina-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=336&q=80&f=avif 2x"
+              src="/_image?/content%2Fassets%2Fcovers%2Fsacculina-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=176&h=264&q=80&f=avif"
+              srcset="/_image?/content%2Fassets%2Fcovers%2Fsacculina-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=176&q=80&f=avif 1x, /_image?/content%2Fassets%2Fcovers%2Fsacculina-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=352&q=80&f=avif 2x"
               style="aspect-ratio: 0.66666667;"
-              width="168"
+              width="176"
             />
           </a>
           <div
-            class="flex flex-col items-center desktop:col-span-5 desktop:items-start desktop:pl-4"
+            class="flex flex-col items-center desktop:col-span-7 desktop:items-start"
           >
             <div
               class="py-4 text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:pt-0 desktop:leading-8"
@@ -728,10 +728,10 @@ exports[`Home > matches snapshot 1`] = `
         class="flex even:bg-subtle"
       >
         <article
-          class="mx-auto flex flex-col items-center px-pageMargin py-10 desktop:grid desktop:w-full desktop:grid-cols-8"
+          class="mx-auto flex flex-col items-center px-pageMargin py-10 desktop:grid desktop:w-full desktop:grid-cols-12 desktop:gap-x-12"
         >
           <div
-            class="text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:self-start desktop:text-left desktop:leading-8"
+            class="text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:col-span-2 desktop:self-start desktop:text-left desktop:leading-8"
           >
             29 Jan 2023
             <div
@@ -739,23 +739,23 @@ exports[`Home > matches snapshot 1`] = `
             />
           </div>
           <a
-            class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default desktop:col-span-2 desktop:self-start desktop:justify-self-end"
+            class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default desktop:col-span-3 desktop:self-start desktop:justify-self-end"
             href="/reviews/the-cipher-by-kathe-koja/"
             rel="canonical"
           >
             <img
               alt="A cover of The Cipher by Kathe Koja"
               decoding="async"
-              height="252"
+              height="264"
               loading="lazy"
-              src="/_image?/content%2Fassets%2Fcovers%2Fthe-cipher-by-kathe-koja.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=168&h=252&q=80&f=avif"
-              srcset="/_image?/content%2Fassets%2Fcovers%2Fthe-cipher-by-kathe-koja.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=168&q=80&f=avif 1x, /_image?/content%2Fassets%2Fcovers%2Fthe-cipher-by-kathe-koja.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=336&q=80&f=avif 2x"
+              src="/_image?/content%2Fassets%2Fcovers%2Fthe-cipher-by-kathe-koja.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=176&h=264&q=80&f=avif"
+              srcset="/_image?/content%2Fassets%2Fcovers%2Fthe-cipher-by-kathe-koja.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=176&q=80&f=avif 1x, /_image?/content%2Fassets%2Fcovers%2Fthe-cipher-by-kathe-koja.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=352&q=80&f=avif 2x"
               style="aspect-ratio: 0.66666667;"
-              width="168"
+              width="176"
             />
           </a>
           <div
-            class="flex flex-col items-center desktop:col-span-5 desktop:items-start desktop:pl-4"
+            class="flex flex-col items-center desktop:col-span-7 desktop:items-start"
           >
             <div
               class="py-4 text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:pt-0 desktop:leading-8"
@@ -830,10 +830,10 @@ exports[`Home > matches snapshot 1`] = `
         class="flex even:bg-subtle"
       >
         <article
-          class="mx-auto flex flex-col items-center px-pageMargin py-10 desktop:grid desktop:w-full desktop:grid-cols-8"
+          class="mx-auto flex flex-col items-center px-pageMargin py-10 desktop:grid desktop:w-full desktop:grid-cols-12 desktop:gap-x-12"
         >
           <div
-            class="text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:self-start desktop:text-left desktop:leading-8"
+            class="text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:col-span-2 desktop:self-start desktop:text-left desktop:leading-8"
           >
             21 Jan 2023
             <div
@@ -841,23 +841,23 @@ exports[`Home > matches snapshot 1`] = `
             />
           </div>
           <a
-            class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default desktop:col-span-2 desktop:self-start desktop:justify-self-end"
+            class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default desktop:col-span-3 desktop:self-start desktop:justify-self-end"
             href="/reviews/roadside-pickup-by-richard-laymon/"
             rel="canonical"
           >
             <img
               alt="A cover of Roadside Pickup by Richard Laymon"
               decoding="async"
-              height="252"
+              height="264"
               loading="lazy"
-              src="/_image?/content%2Fassets%2Fcovers%2Fshort-stories-volume-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=168&h=252&q=80&f=avif"
-              srcset="/_image?/content%2Fassets%2Fcovers%2Fshort-stories-volume-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=168&q=80&f=avif 1x, /_image?/content%2Fassets%2Fcovers%2Fshort-stories-volume-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=336&q=80&f=avif 2x"
+              src="/_image?/content%2Fassets%2Fcovers%2Fshort-stories-volume-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=176&h=264&q=80&f=avif"
+              srcset="/_image?/content%2Fassets%2Fcovers%2Fshort-stories-volume-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=176&q=80&f=avif 1x, /_image?/content%2Fassets%2Fcovers%2Fshort-stories-volume-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=352&q=80&f=avif 2x"
               style="aspect-ratio: 0.66666667;"
-              width="168"
+              width="176"
             />
           </a>
           <div
-            class="flex flex-col items-center desktop:col-span-5 desktop:items-start desktop:pl-4"
+            class="flex flex-col items-center desktop:col-span-7 desktop:items-start"
           >
             <div
               class="py-4 text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:pt-0 desktop:leading-8"
@@ -927,10 +927,10 @@ exports[`Home > matches snapshot 1`] = `
         class="flex even:bg-subtle"
       >
         <article
-          class="mx-auto flex flex-col items-center px-pageMargin py-10 desktop:grid desktop:w-full desktop:grid-cols-8"
+          class="mx-auto flex flex-col items-center px-pageMargin py-10 desktop:grid desktop:w-full desktop:grid-cols-12 desktop:gap-x-12"
         >
           <div
-            class="text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:self-start desktop:text-left desktop:leading-8"
+            class="text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:col-span-2 desktop:self-start desktop:text-left desktop:leading-8"
           >
             21 Jan 2023
             <div
@@ -938,23 +938,23 @@ exports[`Home > matches snapshot 1`] = `
             />
           </div>
           <a
-            class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default desktop:col-span-2 desktop:self-start desktop:justify-self-end"
+            class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default desktop:col-span-3 desktop:self-start desktop:justify-self-end"
             href="/reviews/fright-night-by-john-skipp-craig-spector/"
             rel="canonical"
           >
             <img
               alt="A cover of Fright Night by John Skipp and Craig Spector"
               decoding="async"
-              height="252"
+              height="264"
               loading="lazy"
-              src="/_image?/content%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=168&h=252&q=80&f=avif"
-              srcset="/_image?/content%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=168&q=80&f=avif 1x, /_image?/content%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=336&q=80&f=avif 2x"
+              src="/_image?/content%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=176&h=264&q=80&f=avif"
+              srcset="/_image?/content%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=176&q=80&f=avif 1x, /_image?/content%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=352&q=80&f=avif 2x"
               style="aspect-ratio: 0.66666667;"
-              width="168"
+              width="176"
             />
           </a>
           <div
-            class="flex flex-col items-center desktop:col-span-5 desktop:items-start desktop:pl-4"
+            class="flex flex-col items-center desktop:col-span-7 desktop:items-start"
           >
             <div
               class="py-4 text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:pt-0 desktop:leading-8"
