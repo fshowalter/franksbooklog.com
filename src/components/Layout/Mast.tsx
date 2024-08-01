@@ -19,7 +19,7 @@ export function Mast({ currentPath }: { currentPath: string }) {
           disabled
           aria-label="Search"
           aria-keyshortcuts="Control+K"
-          className="safari-border-radius-fix flex w-full items-center overflow-hidden rounded-md text-sm leading-6 text-subtle ring-1 ring-border hover:ring-accent desktop:ring-0"
+          className="safari-border-radius-fix flex w-full items-center overflow-hidden rounded-md text-sm leading-6 text-subtle ring-1 ring-border hover:ring-accent"
         >
           <kbd className="ml-auto mt-px hidden min-h-6 flex-none items-center bg-subtle pl-3 pr-4 font-mono text-sm font-light opacity-70 desktop:flex">
             <kbd className="text-md leading-5">Ctrl</kbd>

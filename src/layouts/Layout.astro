@@ -234,6 +234,16 @@ const pathname = new URL(Astro.request.url).pathname;
     top: 2rem;
   }
 
+  #pagefind__search .pagefind-ui__form:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: var(--border-default);
+    top: 80px;
+  }
+
   #pagefind__search .pagefind-ui__search-clear {
     position: absolute;
   }
@@ -273,7 +283,7 @@ const pathname = new URL(Astro.request.url).pathname;
   }
 
   #pagefind__search .pagefind-ui__message {
-    padding: 0 var(--gutter-width) 1rem;
+    padding: 1rem var(--gutter-width);
   }
   #pagefind__search .pagefind-ui__results-area {
     margin-top: 0;
