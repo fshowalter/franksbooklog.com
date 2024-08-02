@@ -31,8 +31,9 @@ export default {
       progress: "var(--fg-progress)",
     },
     screens: {
-      tablet: "510px",
-      desktop: "960px",
+      tablet: "720px",
+      desktop: "1096px",
+      max: "1224px",
     },
     extend: {
       boxShadow: {
@@ -63,8 +64,7 @@ export default {
         gutter: "var(--gutter-width)",
       },
       maxWidth: {
-        // canvas: `calc(${BACKDROP_WIDTH} + (calc(var(--gutter-width) * 2)))`,
-        canvas: "1224px",
+        canvas: `clamp(${BACKDROP_WIDTH}, 95vw, 1224px)`,
         prose: PROSE_CONTENT_WIDTH,
         popout: `calc((var(--gutter-width) * 2) + ${PROSE_CONTENT_WIDTH})`,
         poster: POSTER_WIDTH,
