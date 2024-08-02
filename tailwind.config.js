@@ -63,7 +63,8 @@ export default {
         gutter: "var(--gutter-width)",
       },
       maxWidth: {
-        canvas: `calc(${BACKDROP_WIDTH} + (calc(var(--gutter-width) * 2)))`,
+        // canvas: `calc(${BACKDROP_WIDTH} + (calc(var(--gutter-width) * 2)))`,
+        canvas: "1224px",
         prose: PROSE_CONTENT_WIDTH,
         popout: `calc((var(--gutter-width) * 2) + ${PROSE_CONTENT_WIDTH})`,
         poster: POSTER_WIDTH,
