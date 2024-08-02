@@ -2,8 +2,8 @@ import { NavListItems } from "./NavListItems";
 
 export function Mast({ currentPath }: { currentPath: string }) {
   return (
-    <header className="flex flex-col items-center gap-6 bg-default px-pageMargin py-6 text-center shadow-bottom desktop:sticky desktop:top-4 desktop:z-40 desktop:flex-row desktop:justify-between desktop:gap-8 desktop:py-8 desktop:text-left">
-      <div className="items-inherit justify-items-inherit flex flex-col">
+    <header className="flex flex-col items-center gap-6 bg-default px-pageMargin py-6 text-center shadow-bottom desktop:sticky desktop:top-4 desktop:z-40 desktop:flex-row desktop:justify-between desktop:gap-8 desktop:py-8 desktop:text-left max:justify-center">
+      <div className="items-inherit justify-items-inherit flex flex-col max:absolute max:left-[var(--page-margin-width)]">
         <h1 className="whitespace-nowrap text-[1.5625rem] font-normal leading-8">
           <a className="text-default" href="/">
             Frank&apos;s Book Log
@@ -13,7 +13,7 @@ export function Mast({ currentPath }: { currentPath: string }) {
           Literature is a relative term.
         </p>
       </div>
-      <div className="w-full max-w-prose desktop:order-4 desktop:w-auto">
+      <div className="w-full max-w-prose desktop:order-4 desktop:w-auto max:absolute max:right-[var(--page-margin-width)]">
         <button
           data-open-modal
           disabled

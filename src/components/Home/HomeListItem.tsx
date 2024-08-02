@@ -44,16 +44,16 @@ export function HomeListItem({
   eagerLoadCoverImage: boolean;
 }): JSX.Element {
   return (
-    <li className="flex even:bg-subtle">
-      <article className="mx-auto flex flex-col items-center px-pageMargin py-10 desktop:grid desktop:w-full desktop:grid-cols-12 desktop:gap-x-12">
-        <div className="text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:col-span-2 desktop:self-start desktop:text-left desktop:leading-8">
+    <li className="relative flex even:bg-subtle">
+      <article className="mx-auto flex max-w-[960px] flex-col items-center px-pageMargin py-10 tablet:grid tablet:w-full tablet:grid-cols-12 tablet:gap-x-6">
+        <div className="whitespace-nowrap text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle tablet:col-span-12 tablet:self-start tablet:leading-8 desktop:absolute desktop:left-[var(--page-margin-width)]">
           {formatDate(value.date)}
           <div className="spacer-y-6" />
         </div>
         <a
           rel="canonical"
           href={`/reviews/${value.slug}/`}
-          className="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default desktop:col-span-3 desktop:self-start desktop:justify-self-end"
+          className="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default tablet:col-span-4 tablet:mx-0 tablet:self-start tablet:justify-self-end"
         >
           <Cover
             imageProps={value.coverImageProps}
@@ -66,11 +66,9 @@ export function HomeListItem({
             loading={eagerLoadCoverImage ? "eager" : "lazy"}
           />
         </a>
-        <div className="flex flex-col items-center desktop:col-span-7 desktop:items-start">
-          <div className="py-4 text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:pt-0 desktop:leading-8">
-            {value.yearPublished} | {value.kind}
-          </div>
-          <h2 className="text-center text-2.5xl font-bold leading-8">
+        <div className="flex flex-col items-center tablet:col-span-8 tablet:items-start">
+          <div className="spacer-y-4 tablet:spacer-y-0" />
+          <h2 className="text-center text-2.5xl font-bold leading-8 tablet:text-left">
             <a
               href={`/reviews/${value.slug}/`}
               rel="canonical"
@@ -79,6 +77,9 @@ export function HomeListItem({
               {value.title}
             </a>
           </h2>
+          <div className="text-sm font-light uppercase leading-8 tracking-0.75px text-subtle">
+            {value.yearPublished} | {value.kind}
+          </div>
           <p className="text-center">
             by{" "}
             {toSentenceArray(

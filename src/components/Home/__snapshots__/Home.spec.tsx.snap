@@ -7,13 +7,13 @@ exports[`Home > matches snapshot 1`] = `
       class="flex flex-col"
     >
       <li
-        class="flex even:bg-subtle"
+        class="relative flex even:bg-subtle"
       >
         <article
-          class="mx-auto flex flex-col items-center px-pageMargin py-10 desktop:grid desktop:w-full desktop:grid-cols-12 desktop:gap-x-12"
+          class="mx-auto flex max-w-[960px] flex-col items-center px-pageMargin py-10 tablet:grid tablet:w-full tablet:grid-cols-12 tablet:gap-x-6"
         >
           <div
-            class="text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:col-span-2 desktop:self-start desktop:text-left desktop:leading-8"
+            class="whitespace-nowrap text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle tablet:col-span-12 tablet:self-start tablet:leading-8 desktop:absolute desktop:left-[var(--page-margin-width)]"
           >
             01 Jul 2024
             <div
@@ -21,7 +21,7 @@ exports[`Home > matches snapshot 1`] = `
             />
           </div>
           <a
-            class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default desktop:col-span-3 desktop:self-start desktop:justify-self-end"
+            class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default tablet:col-span-4 tablet:mx-0 tablet:self-start tablet:justify-self-end"
             href="/reviews/fast-forward-by-stephen-morris/"
             rel="canonical"
           >
@@ -37,15 +37,13 @@ exports[`Home > matches snapshot 1`] = `
             />
           </a>
           <div
-            class="flex flex-col items-center desktop:col-span-7 desktop:items-start"
+            class="flex flex-col items-center tablet:col-span-8 tablet:items-start"
           >
             <div
-              class="py-4 text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:pt-0 desktop:leading-8"
-            >
-              2020 | Nonfiction
-            </div>
+              class="spacer-y-4 tablet:spacer-y-0"
+            />
             <h2
-              class="text-center text-2.5xl font-bold leading-8"
+              class="text-center text-2.5xl font-bold leading-8 tablet:text-left"
             >
               <a
                 class="inline-block"
@@ -55,6 +53,11 @@ exports[`Home > matches snapshot 1`] = `
                 Fast Forward
               </a>
             </h2>
+            <div
+              class="text-sm font-light uppercase leading-8 tracking-0.75px text-subtle"
+            >
+              2020 | Nonfiction
+            </div>
             <p
               class="text-center"
             >
@@ -109,13 +112,13 @@ exports[`Home > matches snapshot 1`] = `
         </article>
       </li>
       <li
-        class="flex even:bg-subtle"
+        class="relative flex even:bg-subtle"
       >
         <article
-          class="mx-auto flex flex-col items-center px-pageMargin py-10 desktop:grid desktop:w-full desktop:grid-cols-12 desktop:gap-x-12"
+          class="mx-auto flex max-w-[960px] flex-col items-center px-pageMargin py-10 tablet:grid tablet:w-full tablet:grid-cols-12 tablet:gap-x-6"
         >
           <div
-            class="text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:col-span-2 desktop:self-start desktop:text-left desktop:leading-8"
+            class="whitespace-nowrap text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle tablet:col-span-12 tablet:self-start tablet:leading-8 desktop:absolute desktop:left-[var(--page-margin-width)]"
           >
             30 Jun 2024
             <div
@@ -123,7 +126,7 @@ exports[`Home > matches snapshot 1`] = `
             />
           </div>
           <a
-            class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default desktop:col-span-3 desktop:self-start desktop:justify-self-end"
+            class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default tablet:col-span-4 tablet:mx-0 tablet:self-start tablet:justify-self-end"
             href="/reviews/gothic-by-philip-fracassi/"
             rel="canonical"
           >
@@ -139,15 +142,13 @@ exports[`Home > matches snapshot 1`] = `
             />
           </a>
           <div
-            class="flex flex-col items-center desktop:col-span-7 desktop:items-start"
+            class="flex flex-col items-center tablet:col-span-8 tablet:items-start"
           >
             <div
-              class="py-4 text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:pt-0 desktop:leading-8"
-            >
-              2023 | Novel
-            </div>
+              class="spacer-y-4 tablet:spacer-y-0"
+            />
             <h2
-              class="text-center text-2.5xl font-bold leading-8"
+              class="text-center text-2.5xl font-bold leading-8 tablet:text-left"
             >
               <a
                 class="inline-block"
@@ -157,6 +158,11 @@ exports[`Home > matches snapshot 1`] = `
                 Gothic
               </a>
             </h2>
+            <div
+              class="text-sm font-light uppercase leading-8 tracking-0.75px text-subtle"
+            >
+              2023 | Novel
+            </div>
             <p
               class="text-center"
             >
@@ -218,13 +224,13 @@ exports[`Home > matches snapshot 1`] = `
         </article>
       </li>
       <li
-        class="flex even:bg-subtle"
+        class="relative flex even:bg-subtle"
       >
         <article
-          class="mx-auto flex flex-col items-center px-pageMargin py-10 desktop:grid desktop:w-full desktop:grid-cols-12 desktop:gap-x-12"
+          class="mx-auto flex max-w-[960px] flex-col items-center px-pageMargin py-10 tablet:grid tablet:w-full tablet:grid-cols-12 tablet:gap-x-6"
         >
           <div
-            class="text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:col-span-2 desktop:self-start desktop:text-left desktop:leading-8"
+            class="whitespace-nowrap text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle tablet:col-span-12 tablet:self-start tablet:leading-8 desktop:absolute desktop:left-[var(--page-margin-width)]"
           >
             11 Nov 2023
             <div
@@ -232,7 +238,7 @@ exports[`Home > matches snapshot 1`] = `
             />
           </div>
           <a
-            class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default desktop:col-span-3 desktop:self-start desktop:justify-self-end"
+            class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default tablet:col-span-4 tablet:mx-0 tablet:self-start tablet:justify-self-end"
             href="/reviews/record-play-pause-by-stephen-morris/"
             rel="canonical"
           >
@@ -248,15 +254,13 @@ exports[`Home > matches snapshot 1`] = `
             />
           </a>
           <div
-            class="flex flex-col items-center desktop:col-span-7 desktop:items-start"
+            class="flex flex-col items-center tablet:col-span-8 tablet:items-start"
           >
             <div
-              class="py-4 text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:pt-0 desktop:leading-8"
-            >
-              2019 | Nonfiction
-            </div>
+              class="spacer-y-4 tablet:spacer-y-0"
+            />
             <h2
-              class="text-center text-2.5xl font-bold leading-8"
+              class="text-center text-2.5xl font-bold leading-8 tablet:text-left"
             >
               <a
                 class="inline-block"
@@ -266,6 +270,11 @@ exports[`Home > matches snapshot 1`] = `
                 Record Play Pause
               </a>
             </h2>
+            <div
+              class="text-sm font-light uppercase leading-8 tracking-0.75px text-subtle"
+            >
+              2019 | Nonfiction
+            </div>
             <p
               class="text-center"
             >
@@ -316,13 +325,13 @@ exports[`Home > matches snapshot 1`] = `
         </article>
       </li>
       <li
-        class="flex even:bg-subtle"
+        class="relative flex even:bg-subtle"
       >
         <article
-          class="mx-auto flex flex-col items-center px-pageMargin py-10 desktop:grid desktop:w-full desktop:grid-cols-12 desktop:gap-x-12"
+          class="mx-auto flex max-w-[960px] flex-col items-center px-pageMargin py-10 tablet:grid tablet:w-full tablet:grid-cols-12 tablet:gap-x-6"
         >
           <div
-            class="text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:col-span-2 desktop:self-start desktop:text-left desktop:leading-8"
+            class="whitespace-nowrap text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle tablet:col-span-12 tablet:self-start tablet:leading-8 desktop:absolute desktop:left-[var(--page-margin-width)]"
           >
             06 Nov 2023
             <div
@@ -330,7 +339,7 @@ exports[`Home > matches snapshot 1`] = `
             />
           </div>
           <a
-            class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default desktop:col-span-3 desktop:self-start desktop:justify-self-end"
+            class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default tablet:col-span-4 tablet:mx-0 tablet:self-start tablet:justify-self-end"
             href="/reviews/fright-night-origins-by-tom-holland-a-jack-ulrich/"
             rel="canonical"
           >
@@ -346,15 +355,13 @@ exports[`Home > matches snapshot 1`] = `
             />
           </a>
           <div
-            class="flex flex-col items-center desktop:col-span-7 desktop:items-start"
+            class="flex flex-col items-center tablet:col-span-8 tablet:items-start"
           >
             <div
-              class="py-4 text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:pt-0 desktop:leading-8"
-            >
-              2023 | Novel
-            </div>
+              class="spacer-y-4 tablet:spacer-y-0"
+            />
             <h2
-              class="text-center text-2.5xl font-bold leading-8"
+              class="text-center text-2.5xl font-bold leading-8 tablet:text-left"
             >
               <a
                 class="inline-block"
@@ -364,6 +371,11 @@ exports[`Home > matches snapshot 1`] = `
                 Fright Night Origins
               </a>
             </h2>
+            <div
+              class="text-sm font-light uppercase leading-8 tracking-0.75px text-subtle"
+            >
+              2023 | Novel
+            </div>
             <p
               class="text-center"
             >
@@ -428,13 +440,13 @@ exports[`Home > matches snapshot 1`] = `
         </article>
       </li>
       <li
-        class="flex even:bg-subtle"
+        class="relative flex even:bg-subtle"
       >
         <article
-          class="mx-auto flex flex-col items-center px-pageMargin py-10 desktop:grid desktop:w-full desktop:grid-cols-12 desktop:gap-x-12"
+          class="mx-auto flex max-w-[960px] flex-col items-center px-pageMargin py-10 tablet:grid tablet:w-full tablet:grid-cols-12 tablet:gap-x-6"
         >
           <div
-            class="text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:col-span-2 desktop:self-start desktop:text-left desktop:leading-8"
+            class="whitespace-nowrap text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle tablet:col-span-12 tablet:self-start tablet:leading-8 desktop:absolute desktop:left-[var(--page-margin-width)]"
           >
             29 Oct 2023
             <div
@@ -442,7 +454,7 @@ exports[`Home > matches snapshot 1`] = `
             />
           </div>
           <a
-            class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default desktop:col-span-3 desktop:self-start desktop:justify-self-end"
+            class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default tablet:col-span-4 tablet:mx-0 tablet:self-start tablet:justify-self-end"
             href="/reviews/dont-let-them-get-you-down-by-philip-fracassi/"
             rel="canonical"
           >
@@ -458,15 +470,13 @@ exports[`Home > matches snapshot 1`] = `
             />
           </a>
           <div
-            class="flex flex-col items-center desktop:col-span-7 desktop:items-start"
+            class="flex flex-col items-center tablet:col-span-8 tablet:items-start"
           >
             <div
-              class="py-4 text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:pt-0 desktop:leading-8"
-            >
-              2022 | Novel
-            </div>
+              class="spacer-y-4 tablet:spacer-y-0"
+            />
             <h2
-              class="text-center text-2.5xl font-bold leading-8"
+              class="text-center text-2.5xl font-bold leading-8 tablet:text-left"
             >
               <a
                 class="inline-block"
@@ -476,6 +486,11 @@ exports[`Home > matches snapshot 1`] = `
                 Don't Let Them Get You Down
               </a>
             </h2>
+            <div
+              class="text-sm font-light uppercase leading-8 tracking-0.75px text-subtle"
+            >
+              2022 | Novel
+            </div>
             <p
               class="text-center"
             >
@@ -529,13 +544,13 @@ exports[`Home > matches snapshot 1`] = `
         </article>
       </li>
       <li
-        class="flex even:bg-subtle"
+        class="relative flex even:bg-subtle"
       >
         <article
-          class="mx-auto flex flex-col items-center px-pageMargin py-10 desktop:grid desktop:w-full desktop:grid-cols-12 desktop:gap-x-12"
+          class="mx-auto flex max-w-[960px] flex-col items-center px-pageMargin py-10 tablet:grid tablet:w-full tablet:grid-cols-12 tablet:gap-x-6"
         >
           <div
-            class="text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:col-span-2 desktop:self-start desktop:text-left desktop:leading-8"
+            class="whitespace-nowrap text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle tablet:col-span-12 tablet:self-start tablet:leading-8 desktop:absolute desktop:left-[var(--page-margin-width)]"
           >
             22 Oct 2023
             <div
@@ -543,7 +558,7 @@ exports[`Home > matches snapshot 1`] = `
             />
           </div>
           <a
-            class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default desktop:col-span-3 desktop:self-start desktop:justify-self-end"
+            class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default tablet:col-span-4 tablet:mx-0 tablet:self-start tablet:justify-self-end"
             href="/reviews/the-creative-act-by-rick-rubin/"
             rel="canonical"
           >
@@ -559,15 +574,13 @@ exports[`Home > matches snapshot 1`] = `
             />
           </a>
           <div
-            class="flex flex-col items-center desktop:col-span-7 desktop:items-start"
+            class="flex flex-col items-center tablet:col-span-8 tablet:items-start"
           >
             <div
-              class="py-4 text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:pt-0 desktop:leading-8"
-            >
-              2023 | Nonfiction
-            </div>
+              class="spacer-y-4 tablet:spacer-y-0"
+            />
             <h2
-              class="text-center text-2.5xl font-bold leading-8"
+              class="text-center text-2.5xl font-bold leading-8 tablet:text-left"
             >
               <a
                 class="inline-block"
@@ -577,6 +590,11 @@ exports[`Home > matches snapshot 1`] = `
                 The Creative Act
               </a>
             </h2>
+            <div
+              class="text-sm font-light uppercase leading-8 tracking-0.75px text-subtle"
+            >
+              2023 | Nonfiction
+            </div>
             <p
               class="text-center"
             >
@@ -627,13 +645,13 @@ exports[`Home > matches snapshot 1`] = `
         </article>
       </li>
       <li
-        class="flex even:bg-subtle"
+        class="relative flex even:bg-subtle"
       >
         <article
-          class="mx-auto flex flex-col items-center px-pageMargin py-10 desktop:grid desktop:w-full desktop:grid-cols-12 desktop:gap-x-12"
+          class="mx-auto flex max-w-[960px] flex-col items-center px-pageMargin py-10 tablet:grid tablet:w-full tablet:grid-cols-12 tablet:gap-x-6"
         >
           <div
-            class="text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:col-span-2 desktop:self-start desktop:text-left desktop:leading-8"
+            class="whitespace-nowrap text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle tablet:col-span-12 tablet:self-start tablet:leading-8 desktop:absolute desktop:left-[var(--page-margin-width)]"
           >
             09 Oct 2023
             <div
@@ -641,7 +659,7 @@ exports[`Home > matches snapshot 1`] = `
             />
           </div>
           <a
-            class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default desktop:col-span-3 desktop:self-start desktop:justify-self-end"
+            class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default tablet:col-span-4 tablet:mx-0 tablet:self-start tablet:justify-self-end"
             href="/reviews/sacculina-by-philip-fracassi/"
             rel="canonical"
           >
@@ -657,15 +675,13 @@ exports[`Home > matches snapshot 1`] = `
             />
           </a>
           <div
-            class="flex flex-col items-center desktop:col-span-7 desktop:items-start"
+            class="flex flex-col items-center tablet:col-span-8 tablet:items-start"
           >
             <div
-              class="py-4 text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:pt-0 desktop:leading-8"
-            >
-              2017 | Novella
-            </div>
+              class="spacer-y-4 tablet:spacer-y-0"
+            />
             <h2
-              class="text-center text-2.5xl font-bold leading-8"
+              class="text-center text-2.5xl font-bold leading-8 tablet:text-left"
             >
               <a
                 class="inline-block"
@@ -675,6 +691,11 @@ exports[`Home > matches snapshot 1`] = `
                 Sacculina
               </a>
             </h2>
+            <div
+              class="text-sm font-light uppercase leading-8 tracking-0.75px text-subtle"
+            >
+              2017 | Novella
+            </div>
             <p
               class="text-center"
             >
@@ -725,13 +746,13 @@ exports[`Home > matches snapshot 1`] = `
         </article>
       </li>
       <li
-        class="flex even:bg-subtle"
+        class="relative flex even:bg-subtle"
       >
         <article
-          class="mx-auto flex flex-col items-center px-pageMargin py-10 desktop:grid desktop:w-full desktop:grid-cols-12 desktop:gap-x-12"
+          class="mx-auto flex max-w-[960px] flex-col items-center px-pageMargin py-10 tablet:grid tablet:w-full tablet:grid-cols-12 tablet:gap-x-6"
         >
           <div
-            class="text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:col-span-2 desktop:self-start desktop:text-left desktop:leading-8"
+            class="whitespace-nowrap text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle tablet:col-span-12 tablet:self-start tablet:leading-8 desktop:absolute desktop:left-[var(--page-margin-width)]"
           >
             29 Jan 2023
             <div
@@ -739,7 +760,7 @@ exports[`Home > matches snapshot 1`] = `
             />
           </div>
           <a
-            class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default desktop:col-span-3 desktop:self-start desktop:justify-self-end"
+            class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default tablet:col-span-4 tablet:mx-0 tablet:self-start tablet:justify-self-end"
             href="/reviews/the-cipher-by-kathe-koja/"
             rel="canonical"
           >
@@ -755,15 +776,13 @@ exports[`Home > matches snapshot 1`] = `
             />
           </a>
           <div
-            class="flex flex-col items-center desktop:col-span-7 desktop:items-start"
+            class="flex flex-col items-center tablet:col-span-8 tablet:items-start"
           >
             <div
-              class="py-4 text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:pt-0 desktop:leading-8"
-            >
-              1991 | Novel
-            </div>
+              class="spacer-y-4 tablet:spacer-y-0"
+            />
             <h2
-              class="text-center text-2.5xl font-bold leading-8"
+              class="text-center text-2.5xl font-bold leading-8 tablet:text-left"
             >
               <a
                 class="inline-block"
@@ -773,6 +792,11 @@ exports[`Home > matches snapshot 1`] = `
                 The Cipher
               </a>
             </h2>
+            <div
+              class="text-sm font-light uppercase leading-8 tracking-0.75px text-subtle"
+            >
+              1991 | Novel
+            </div>
             <p
               class="text-center"
             >
@@ -827,13 +851,13 @@ exports[`Home > matches snapshot 1`] = `
         </article>
       </li>
       <li
-        class="flex even:bg-subtle"
+        class="relative flex even:bg-subtle"
       >
         <article
-          class="mx-auto flex flex-col items-center px-pageMargin py-10 desktop:grid desktop:w-full desktop:grid-cols-12 desktop:gap-x-12"
+          class="mx-auto flex max-w-[960px] flex-col items-center px-pageMargin py-10 tablet:grid tablet:w-full tablet:grid-cols-12 tablet:gap-x-6"
         >
           <div
-            class="text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:col-span-2 desktop:self-start desktop:text-left desktop:leading-8"
+            class="whitespace-nowrap text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle tablet:col-span-12 tablet:self-start tablet:leading-8 desktop:absolute desktop:left-[var(--page-margin-width)]"
           >
             21 Jan 2023
             <div
@@ -841,7 +865,7 @@ exports[`Home > matches snapshot 1`] = `
             />
           </div>
           <a
-            class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default desktop:col-span-3 desktop:self-start desktop:justify-self-end"
+            class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default tablet:col-span-4 tablet:mx-0 tablet:self-start tablet:justify-self-end"
             href="/reviews/roadside-pickup-by-richard-laymon/"
             rel="canonical"
           >
@@ -857,15 +881,13 @@ exports[`Home > matches snapshot 1`] = `
             />
           </a>
           <div
-            class="flex flex-col items-center desktop:col-span-7 desktop:items-start"
+            class="flex flex-col items-center tablet:col-span-8 tablet:items-start"
           >
             <div
-              class="py-4 text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:pt-0 desktop:leading-8"
-            >
-              1974 | Short Story
-            </div>
+              class="spacer-y-4 tablet:spacer-y-0"
+            />
             <h2
-              class="text-center text-2.5xl font-bold leading-8"
+              class="text-center text-2.5xl font-bold leading-8 tablet:text-left"
             >
               <a
                 class="inline-block"
@@ -875,6 +897,11 @@ exports[`Home > matches snapshot 1`] = `
                 Roadside Pickup
               </a>
             </h2>
+            <div
+              class="text-sm font-light uppercase leading-8 tracking-0.75px text-subtle"
+            >
+              1974 | Short Story
+            </div>
             <p
               class="text-center"
             >
@@ -924,13 +951,13 @@ exports[`Home > matches snapshot 1`] = `
         </article>
       </li>
       <li
-        class="flex even:bg-subtle"
+        class="relative flex even:bg-subtle"
       >
         <article
-          class="mx-auto flex flex-col items-center px-pageMargin py-10 desktop:grid desktop:w-full desktop:grid-cols-12 desktop:gap-x-12"
+          class="mx-auto flex max-w-[960px] flex-col items-center px-pageMargin py-10 tablet:grid tablet:w-full tablet:grid-cols-12 tablet:gap-x-6"
         >
           <div
-            class="text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:col-span-2 desktop:self-start desktop:text-left desktop:leading-8"
+            class="whitespace-nowrap text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle tablet:col-span-12 tablet:self-start tablet:leading-8 desktop:absolute desktop:left-[var(--page-margin-width)]"
           >
             21 Jan 2023
             <div
@@ -938,7 +965,7 @@ exports[`Home > matches snapshot 1`] = `
             />
           </div>
           <a
-            class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default desktop:col-span-3 desktop:self-start desktop:justify-self-end"
+            class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default tablet:col-span-4 tablet:mx-0 tablet:self-start tablet:justify-self-end"
             href="/reviews/fright-night-by-john-skipp-craig-spector/"
             rel="canonical"
           >
@@ -954,15 +981,13 @@ exports[`Home > matches snapshot 1`] = `
             />
           </a>
           <div
-            class="flex flex-col items-center desktop:col-span-7 desktop:items-start"
+            class="flex flex-col items-center tablet:col-span-8 tablet:items-start"
           >
             <div
-              class="py-4 text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:pt-0 desktop:leading-8"
-            >
-              1985 | Novel
-            </div>
+              class="spacer-y-4 tablet:spacer-y-0"
+            />
             <h2
-              class="text-center text-2.5xl font-bold leading-8"
+              class="text-center text-2.5xl font-bold leading-8 tablet:text-left"
             >
               <a
                 class="inline-block"
@@ -972,6 +997,11 @@ exports[`Home > matches snapshot 1`] = `
                 Fright Night
               </a>
             </h2>
+            <div
+              class="text-sm font-light uppercase leading-8 tracking-0.75px text-subtle"
+            >
+              1985 | Novel
+            </div>
             <p
               class="text-center"
             >
