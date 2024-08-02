@@ -2,7 +2,7 @@ import { NavListItems } from "./NavListItems";
 
 export function Mast({ currentPath }: { currentPath: string }) {
   return (
-    <header className="flex flex-col items-center gap-6 bg-default px-pageMargin py-6 text-center shadow-bottom desktop:sticky desktop:top-4 desktop:z-40 desktop:flex-row desktop:justify-between desktop:gap-8 desktop:py-8 desktop:text-left max:justify-center">
+    <header className="flex flex-col items-center gap-6 bg-default px-pageMargin py-6 text-center shadow-bottom desktop:sticky desktop:top-4 desktop:z-40 desktop:flex-row desktop:justify-between desktop:gap-8 desktop:py-5 desktop:text-left max:justify-center max:py-8">
       <div className="items-inherit justify-items-inherit flex flex-col max:absolute max:left-[var(--page-margin-width)]">
         <h1 className="whitespace-nowrap text-[1.5625rem] font-normal leading-8">
           <a className="text-default" href="/">
