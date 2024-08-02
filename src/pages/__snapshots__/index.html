@@ -36,9 +36,11 @@
       ></div>
       <div class="mx-auto flex min-h-full max-w-canvas flex-col bg-default">
         <header
-          class="flex flex-col items-center gap-6 bg-default px-pageMargin py-6 text-center shadow-bottom desktop:sticky desktop:top-4 desktop:z-40 desktop:flex-row desktop:justify-between desktop:gap-8 desktop:py-8 desktop:text-left"
+          class="flex flex-col items-center gap-6 bg-default px-pageMargin py-6 text-center shadow-bottom desktop:sticky desktop:top-4 desktop:z-40 desktop:flex-row desktop:justify-between desktop:gap-8 desktop:py-8 desktop:text-left max:justify-center"
         >
-          <div class="items-inherit justify-items-inherit flex flex-col">
+          <div
+            class="items-inherit justify-items-inherit flex flex-col max:absolute max:left-[var(--page-margin-width)]"
+          >
             <h1
               class="whitespace-nowrap text-[1.5625rem] font-normal leading-8"
             >
@@ -48,7 +50,9 @@
               Literature is a relative term.
             </p>
           </div>
-          <div class="w-full max-w-prose desktop:order-4 desktop:w-auto">
+          <div
+            class="w-full max-w-prose desktop:order-4 desktop:w-auto max:absolute max:right-[var(--page-margin-width)]"
+          >
             <button
               data-open-modal="true"
               disabled=""
@@ -106,12 +110,12 @@
         <div class="grow" id="content">
           <main>
             <ol class="flex flex-col">
-              <li class="flex even:bg-subtle">
+              <li class="relative flex even:bg-subtle">
                 <article
-                  class="mx-auto flex flex-col items-center px-pageMargin py-10 desktop:grid desktop:w-full desktop:grid-cols-12 desktop:gap-x-12"
+                  class="mx-auto flex max-w-[960px] flex-col items-center px-pageMargin py-10 tablet:grid tablet:w-full tablet:grid-cols-12 tablet:gap-x-6"
                 >
                   <div
-                    class="text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:col-span-2 desktop:self-start desktop:text-left desktop:leading-8"
+                    class="whitespace-nowrap text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle tablet:col-span-12 tablet:self-start tablet:leading-8 desktop:absolute desktop:left-[var(--page-margin-width)]"
                   >
                     01 Jul 2024
                     <div class="spacer-y-6"></div>
@@ -119,7 +123,7 @@
                   <a
                     rel="canonical"
                     href="/reviews/fast-forward-by-stephen-morris/"
-                    class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default desktop:col-span-3 desktop:self-start desktop:justify-self-end"
+                    class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default tablet:col-span-4 tablet:mx-0 tablet:self-start tablet:justify-self-end"
                     ><img
                       srcset="
                         /_image?/content%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;q=80&amp;f=avif 1x,
@@ -134,16 +138,12 @@
                       style="aspect-ratio: 0.66666667"
                   /></a>
                   <div
-                    class="flex flex-col items-center desktop:col-span-7 desktop:items-start"
+                    class="flex flex-col items-center tablet:col-span-8 tablet:items-start"
                   >
-                    <div
-                      class="py-4 text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:pt-0 desktop:leading-8"
+                    <div class="spacer-y-4 tablet:spacer-y-0"></div>
+                    <h2
+                      class="text-center text-2.5xl font-bold leading-8 tablet:text-left"
                     >
-                      2020<!-- -->
-                      |
-                      <!-- -->Nonfiction
-                    </div>
-                    <h2 class="text-center text-2.5xl font-bold leading-8">
                       <a
                         href="/reviews/fast-forward-by-stephen-morris/"
                         rel="canonical"
@@ -151,6 +151,13 @@
                         >Fast Forward</a
                       >
                     </h2>
+                    <div
+                      class="text-sm font-light uppercase leading-8 tracking-0.75px text-subtle"
+                    >
+                      2020<!-- -->
+                      |
+                      <!-- -->Nonfiction
+                    </div>
                     <p class="text-center">
                       by<!-- -->
                       <span class="text-accent"
@@ -190,12 +197,12 @@
                   </div>
                 </article>
               </li>
-              <li class="flex even:bg-subtle">
+              <li class="relative flex even:bg-subtle">
                 <article
-                  class="mx-auto flex flex-col items-center px-pageMargin py-10 desktop:grid desktop:w-full desktop:grid-cols-12 desktop:gap-x-12"
+                  class="mx-auto flex max-w-[960px] flex-col items-center px-pageMargin py-10 tablet:grid tablet:w-full tablet:grid-cols-12 tablet:gap-x-6"
                 >
                   <div
-                    class="text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:col-span-2 desktop:self-start desktop:text-left desktop:leading-8"
+                    class="whitespace-nowrap text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle tablet:col-span-12 tablet:self-start tablet:leading-8 desktop:absolute desktop:left-[var(--page-margin-width)]"
                   >
                     30 Jun 2024
                     <div class="spacer-y-6"></div>
@@ -203,7 +210,7 @@
                   <a
                     rel="canonical"
                     href="/reviews/gothic-by-philip-fracassi/"
-                    class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default desktop:col-span-3 desktop:self-start desktop:justify-self-end"
+                    class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default tablet:col-span-4 tablet:mx-0 tablet:self-start tablet:justify-self-end"
                     ><img
                       srcset="
                         /_image?/content%2Fassets%2Fcovers%2Fgothic-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;q=80&amp;f=avif 1x,
@@ -218,16 +225,12 @@
                       style="aspect-ratio: 0.66666667"
                   /></a>
                   <div
-                    class="flex flex-col items-center desktop:col-span-7 desktop:items-start"
+                    class="flex flex-col items-center tablet:col-span-8 tablet:items-start"
                   >
-                    <div
-                      class="py-4 text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:pt-0 desktop:leading-8"
+                    <div class="spacer-y-4 tablet:spacer-y-0"></div>
+                    <h2
+                      class="text-center text-2.5xl font-bold leading-8 tablet:text-left"
                     >
-                      2023<!-- -->
-                      |
-                      <!-- -->Novel
-                    </div>
-                    <h2 class="text-center text-2.5xl font-bold leading-8">
                       <a
                         href="/reviews/gothic-by-philip-fracassi/"
                         rel="canonical"
@@ -235,6 +238,13 @@
                         >Gothic</a
                       >
                     </h2>
+                    <div
+                      class="text-sm font-light uppercase leading-8 tracking-0.75px text-subtle"
+                    >
+                      2023<!-- -->
+                      |
+                      <!-- -->Novel
+                    </div>
                     <p class="text-center">
                       by<!-- -->
                       <span class="text-accent"
@@ -276,12 +286,12 @@
                   </div>
                 </article>
               </li>
-              <li class="flex even:bg-subtle">
+              <li class="relative flex even:bg-subtle">
                 <article
-                  class="mx-auto flex flex-col items-center px-pageMargin py-10 desktop:grid desktop:w-full desktop:grid-cols-12 desktop:gap-x-12"
+                  class="mx-auto flex max-w-[960px] flex-col items-center px-pageMargin py-10 tablet:grid tablet:w-full tablet:grid-cols-12 tablet:gap-x-6"
                 >
                   <div
-                    class="text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:col-span-2 desktop:self-start desktop:text-left desktop:leading-8"
+                    class="whitespace-nowrap text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle tablet:col-span-12 tablet:self-start tablet:leading-8 desktop:absolute desktop:left-[var(--page-margin-width)]"
                   >
                     11 Nov 2023
                     <div class="spacer-y-6"></div>
@@ -289,7 +299,7 @@
                   <a
                     rel="canonical"
                     href="/reviews/record-play-pause-by-stephen-morris/"
-                    class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default desktop:col-span-3 desktop:self-start desktop:justify-self-end"
+                    class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default tablet:col-span-4 tablet:mx-0 tablet:self-start tablet:justify-self-end"
                     ><img
                       srcset="
                         /_image?/content%2Fassets%2Fcovers%2Frecord-play-pause-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;q=80&amp;f=avif 1x,
@@ -304,16 +314,12 @@
                       style="aspect-ratio: 0.66666667"
                   /></a>
                   <div
-                    class="flex flex-col items-center desktop:col-span-7 desktop:items-start"
+                    class="flex flex-col items-center tablet:col-span-8 tablet:items-start"
                   >
-                    <div
-                      class="py-4 text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:pt-0 desktop:leading-8"
+                    <div class="spacer-y-4 tablet:spacer-y-0"></div>
+                    <h2
+                      class="text-center text-2.5xl font-bold leading-8 tablet:text-left"
                     >
-                      2019<!-- -->
-                      |
-                      <!-- -->Nonfiction
-                    </div>
-                    <h2 class="text-center text-2.5xl font-bold leading-8">
                       <a
                         href="/reviews/record-play-pause-by-stephen-morris/"
                         rel="canonical"
@@ -321,6 +327,13 @@
                         >Record Play Pause</a
                       >
                     </h2>
+                    <div
+                      class="text-sm font-light uppercase leading-8 tracking-0.75px text-subtle"
+                    >
+                      2019<!-- -->
+                      |
+                      <!-- -->Nonfiction
+                    </div>
                     <p class="text-center">
                       by<!-- -->
                       <span class="text-accent"
@@ -360,12 +373,12 @@
                   </div>
                 </article>
               </li>
-              <li class="flex even:bg-subtle">
+              <li class="relative flex even:bg-subtle">
                 <article
-                  class="mx-auto flex flex-col items-center px-pageMargin py-10 desktop:grid desktop:w-full desktop:grid-cols-12 desktop:gap-x-12"
+                  class="mx-auto flex max-w-[960px] flex-col items-center px-pageMargin py-10 tablet:grid tablet:w-full tablet:grid-cols-12 tablet:gap-x-6"
                 >
                   <div
-                    class="text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:col-span-2 desktop:self-start desktop:text-left desktop:leading-8"
+                    class="whitespace-nowrap text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle tablet:col-span-12 tablet:self-start tablet:leading-8 desktop:absolute desktop:left-[var(--page-margin-width)]"
                   >
                     06 Nov 2023
                     <div class="spacer-y-6"></div>
@@ -373,7 +386,7 @@
                   <a
                     rel="canonical"
                     href="/reviews/fright-night-origins-by-tom-holland-a-jack-ulrich/"
-                    class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default desktop:col-span-3 desktop:self-start desktop:justify-self-end"
+                    class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default tablet:col-span-4 tablet:mx-0 tablet:self-start tablet:justify-self-end"
                     ><img
                       srcset="
                         /_image?/content%2Fassets%2Fcovers%2Ffright-night-origins-by-tom-holland-a-jack-ulrich.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;q=80&amp;f=avif 1x,
@@ -388,16 +401,12 @@
                       style="aspect-ratio: 0.66666667"
                   /></a>
                   <div
-                    class="flex flex-col items-center desktop:col-span-7 desktop:items-start"
+                    class="flex flex-col items-center tablet:col-span-8 tablet:items-start"
                   >
-                    <div
-                      class="py-4 text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:pt-0 desktop:leading-8"
+                    <div class="spacer-y-4 tablet:spacer-y-0"></div>
+                    <h2
+                      class="text-center text-2.5xl font-bold leading-8 tablet:text-left"
                     >
-                      2023<!-- -->
-                      |
-                      <!-- -->Novel
-                    </div>
-                    <h2 class="text-center text-2.5xl font-bold leading-8">
                       <a
                         href="/reviews/fright-night-origins-by-tom-holland-a-jack-ulrich/"
                         rel="canonical"
@@ -405,6 +414,13 @@
                         >Fright Night Origins</a
                       >
                     </h2>
+                    <div
+                      class="text-sm font-light uppercase leading-8 tracking-0.75px text-subtle"
+                    >
+                      2023<!-- -->
+                      |
+                      <!-- -->Novel
+                    </div>
                     <p class="text-center">
                       by<!-- -->
                       <span class="text-accent"
@@ -450,12 +466,12 @@
                   </div>
                 </article>
               </li>
-              <li class="flex even:bg-subtle">
+              <li class="relative flex even:bg-subtle">
                 <article
-                  class="mx-auto flex flex-col items-center px-pageMargin py-10 desktop:grid desktop:w-full desktop:grid-cols-12 desktop:gap-x-12"
+                  class="mx-auto flex max-w-[960px] flex-col items-center px-pageMargin py-10 tablet:grid tablet:w-full tablet:grid-cols-12 tablet:gap-x-6"
                 >
                   <div
-                    class="text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:col-span-2 desktop:self-start desktop:text-left desktop:leading-8"
+                    class="whitespace-nowrap text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle tablet:col-span-12 tablet:self-start tablet:leading-8 desktop:absolute desktop:left-[var(--page-margin-width)]"
                   >
                     29 Oct 2023
                     <div class="spacer-y-6"></div>
@@ -463,7 +479,7 @@
                   <a
                     rel="canonical"
                     href="/reviews/dont-let-them-get-you-down-by-philip-fracassi/"
-                    class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default desktop:col-span-3 desktop:self-start desktop:justify-self-end"
+                    class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default tablet:col-span-4 tablet:mx-0 tablet:self-start tablet:justify-self-end"
                     ><img
                       srcset="
                         /_image?/content%2Fassets%2Fcovers%2Fdont-let-them-get-you-down-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;q=80&amp;f=avif 1x,
@@ -478,16 +494,12 @@
                       style="aspect-ratio: 0.66666667"
                   /></a>
                   <div
-                    class="flex flex-col items-center desktop:col-span-7 desktop:items-start"
+                    class="flex flex-col items-center tablet:col-span-8 tablet:items-start"
                   >
-                    <div
-                      class="py-4 text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:pt-0 desktop:leading-8"
+                    <div class="spacer-y-4 tablet:spacer-y-0"></div>
+                    <h2
+                      class="text-center text-2.5xl font-bold leading-8 tablet:text-left"
                     >
-                      2022<!-- -->
-                      |
-                      <!-- -->Novel
-                    </div>
-                    <h2 class="text-center text-2.5xl font-bold leading-8">
                       <a
                         href="/reviews/dont-let-them-get-you-down-by-philip-fracassi/"
                         rel="canonical"
@@ -495,6 +507,13 @@
                         >Don&#x27;t Let Them Get You Down</a
                       >
                     </h2>
+                    <div
+                      class="text-sm font-light uppercase leading-8 tracking-0.75px text-subtle"
+                    >
+                      2022<!-- -->
+                      |
+                      <!-- -->Novel
+                    </div>
                     <p class="text-center">
                       by<!-- -->
                       <span class="text-accent"
@@ -533,12 +552,12 @@
                   </div>
                 </article>
               </li>
-              <li class="flex even:bg-subtle">
+              <li class="relative flex even:bg-subtle">
                 <article
-                  class="mx-auto flex flex-col items-center px-pageMargin py-10 desktop:grid desktop:w-full desktop:grid-cols-12 desktop:gap-x-12"
+                  class="mx-auto flex max-w-[960px] flex-col items-center px-pageMargin py-10 tablet:grid tablet:w-full tablet:grid-cols-12 tablet:gap-x-6"
                 >
                   <div
-                    class="text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:col-span-2 desktop:self-start desktop:text-left desktop:leading-8"
+                    class="whitespace-nowrap text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle tablet:col-span-12 tablet:self-start tablet:leading-8 desktop:absolute desktop:left-[var(--page-margin-width)]"
                   >
                     22 Oct 2023
                     <div class="spacer-y-6"></div>
@@ -546,7 +565,7 @@
                   <a
                     rel="canonical"
                     href="/reviews/the-creative-act-by-rick-rubin/"
-                    class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default desktop:col-span-3 desktop:self-start desktop:justify-self-end"
+                    class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default tablet:col-span-4 tablet:mx-0 tablet:self-start tablet:justify-self-end"
                     ><img
                       srcset="
                         /_image?/content%2Fassets%2Fcovers%2Fthe-creative-act-by-rick-rubin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;q=80&amp;f=avif 1x,
@@ -561,16 +580,12 @@
                       style="aspect-ratio: 0.66666667"
                   /></a>
                   <div
-                    class="flex flex-col items-center desktop:col-span-7 desktop:items-start"
+                    class="flex flex-col items-center tablet:col-span-8 tablet:items-start"
                   >
-                    <div
-                      class="py-4 text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:pt-0 desktop:leading-8"
+                    <div class="spacer-y-4 tablet:spacer-y-0"></div>
+                    <h2
+                      class="text-center text-2.5xl font-bold leading-8 tablet:text-left"
                     >
-                      2023<!-- -->
-                      |
-                      <!-- -->Nonfiction
-                    </div>
-                    <h2 class="text-center text-2.5xl font-bold leading-8">
                       <a
                         href="/reviews/the-creative-act-by-rick-rubin/"
                         rel="canonical"
@@ -578,6 +593,13 @@
                         >The Creative Act</a
                       >
                     </h2>
+                    <div
+                      class="text-sm font-light uppercase leading-8 tracking-0.75px text-subtle"
+                    >
+                      2023<!-- -->
+                      |
+                      <!-- -->Nonfiction
+                    </div>
                     <p class="text-center">
                       by<!-- -->
                       <span class="text-accent"
@@ -615,12 +637,12 @@
                   </div>
                 </article>
               </li>
-              <li class="flex even:bg-subtle">
+              <li class="relative flex even:bg-subtle">
                 <article
-                  class="mx-auto flex flex-col items-center px-pageMargin py-10 desktop:grid desktop:w-full desktop:grid-cols-12 desktop:gap-x-12"
+                  class="mx-auto flex max-w-[960px] flex-col items-center px-pageMargin py-10 tablet:grid tablet:w-full tablet:grid-cols-12 tablet:gap-x-6"
                 >
                   <div
-                    class="text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:col-span-2 desktop:self-start desktop:text-left desktop:leading-8"
+                    class="whitespace-nowrap text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle tablet:col-span-12 tablet:self-start tablet:leading-8 desktop:absolute desktop:left-[var(--page-margin-width)]"
                   >
                     09 Oct 2023
                     <div class="spacer-y-6"></div>
@@ -628,7 +650,7 @@
                   <a
                     rel="canonical"
                     href="/reviews/sacculina-by-philip-fracassi/"
-                    class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default desktop:col-span-3 desktop:self-start desktop:justify-self-end"
+                    class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default tablet:col-span-4 tablet:mx-0 tablet:self-start tablet:justify-self-end"
                     ><img
                       srcset="
                         /_image?/content%2Fassets%2Fcovers%2Fsacculina-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;q=80&amp;f=avif 1x,
@@ -643,16 +665,12 @@
                       style="aspect-ratio: 0.66666667"
                   /></a>
                   <div
-                    class="flex flex-col items-center desktop:col-span-7 desktop:items-start"
+                    class="flex flex-col items-center tablet:col-span-8 tablet:items-start"
                   >
-                    <div
-                      class="py-4 text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:pt-0 desktop:leading-8"
+                    <div class="spacer-y-4 tablet:spacer-y-0"></div>
+                    <h2
+                      class="text-center text-2.5xl font-bold leading-8 tablet:text-left"
                     >
-                      2017<!-- -->
-                      |
-                      <!-- -->Novella
-                    </div>
-                    <h2 class="text-center text-2.5xl font-bold leading-8">
                       <a
                         href="/reviews/sacculina-by-philip-fracassi/"
                         rel="canonical"
@@ -660,6 +678,13 @@
                         >Sacculina</a
                       >
                     </h2>
+                    <div
+                      class="text-sm font-light uppercase leading-8 tracking-0.75px text-subtle"
+                    >
+                      2017<!-- -->
+                      |
+                      <!-- -->Novella
+                    </div>
                     <p class="text-center">
                       by<!-- -->
                       <span class="text-accent"
@@ -703,12 +728,12 @@
                   </div>
                 </article>
               </li>
-              <li class="flex even:bg-subtle">
+              <li class="relative flex even:bg-subtle">
                 <article
-                  class="mx-auto flex flex-col items-center px-pageMargin py-10 desktop:grid desktop:w-full desktop:grid-cols-12 desktop:gap-x-12"
+                  class="mx-auto flex max-w-[960px] flex-col items-center px-pageMargin py-10 tablet:grid tablet:w-full tablet:grid-cols-12 tablet:gap-x-6"
                 >
                   <div
-                    class="text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:col-span-2 desktop:self-start desktop:text-left desktop:leading-8"
+                    class="whitespace-nowrap text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle tablet:col-span-12 tablet:self-start tablet:leading-8 desktop:absolute desktop:left-[var(--page-margin-width)]"
                   >
                     29 Jan 2023
                     <div class="spacer-y-6"></div>
@@ -716,7 +741,7 @@
                   <a
                     rel="canonical"
                     href="/reviews/the-cipher-by-kathe-koja/"
-                    class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default desktop:col-span-3 desktop:self-start desktop:justify-self-end"
+                    class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default tablet:col-span-4 tablet:mx-0 tablet:self-start tablet:justify-self-end"
                     ><img
                       srcset="
                         /_image?/content%2Fassets%2Fcovers%2Fthe-cipher-by-kathe-koja.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;q=80&amp;f=avif 1x,
@@ -731,16 +756,12 @@
                       style="aspect-ratio: 0.66666667"
                   /></a>
                   <div
-                    class="flex flex-col items-center desktop:col-span-7 desktop:items-start"
+                    class="flex flex-col items-center tablet:col-span-8 tablet:items-start"
                   >
-                    <div
-                      class="py-4 text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:pt-0 desktop:leading-8"
+                    <div class="spacer-y-4 tablet:spacer-y-0"></div>
+                    <h2
+                      class="text-center text-2.5xl font-bold leading-8 tablet:text-left"
                     >
-                      1991<!-- -->
-                      |
-                      <!-- -->Novel
-                    </div>
-                    <h2 class="text-center text-2.5xl font-bold leading-8">
                       <a
                         href="/reviews/the-cipher-by-kathe-koja/"
                         rel="canonical"
@@ -748,6 +769,13 @@
                         >The Cipher</a
                       >
                     </h2>
+                    <div
+                      class="text-sm font-light uppercase leading-8 tracking-0.75px text-subtle"
+                    >
+                      1991<!-- -->
+                      |
+                      <!-- -->Novel
+                    </div>
                     <p class="text-center">
                       by<!-- -->
                       <span class="text-accent"
@@ -787,12 +815,12 @@
                   </div>
                 </article>
               </li>
-              <li class="flex even:bg-subtle">
+              <li class="relative flex even:bg-subtle">
                 <article
-                  class="mx-auto flex flex-col items-center px-pageMargin py-10 desktop:grid desktop:w-full desktop:grid-cols-12 desktop:gap-x-12"
+                  class="mx-auto flex max-w-[960px] flex-col items-center px-pageMargin py-10 tablet:grid tablet:w-full tablet:grid-cols-12 tablet:gap-x-6"
                 >
                   <div
-                    class="text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:col-span-2 desktop:self-start desktop:text-left desktop:leading-8"
+                    class="whitespace-nowrap text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle tablet:col-span-12 tablet:self-start tablet:leading-8 desktop:absolute desktop:left-[var(--page-margin-width)]"
                   >
                     21 Jan 2023
                     <div class="spacer-y-6"></div>
@@ -800,7 +828,7 @@
                   <a
                     rel="canonical"
                     href="/reviews/roadside-pickup-by-richard-laymon/"
-                    class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default desktop:col-span-3 desktop:self-start desktop:justify-self-end"
+                    class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default tablet:col-span-4 tablet:mx-0 tablet:self-start tablet:justify-self-end"
                     ><img
                       srcset="
                         /_image?/content%2Fassets%2Fcovers%2Fshort-stories-volume-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;q=80&amp;f=avif 1x,
@@ -815,16 +843,12 @@
                       style="aspect-ratio: 0.66666667"
                   /></a>
                   <div
-                    class="flex flex-col items-center desktop:col-span-7 desktop:items-start"
+                    class="flex flex-col items-center tablet:col-span-8 tablet:items-start"
                   >
-                    <div
-                      class="py-4 text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:pt-0 desktop:leading-8"
+                    <div class="spacer-y-4 tablet:spacer-y-0"></div>
+                    <h2
+                      class="text-center text-2.5xl font-bold leading-8 tablet:text-left"
                     >
-                      1974<!-- -->
-                      |
-                      <!-- -->Short Story
-                    </div>
-                    <h2 class="text-center text-2.5xl font-bold leading-8">
                       <a
                         href="/reviews/roadside-pickup-by-richard-laymon/"
                         rel="canonical"
@@ -832,6 +856,13 @@
                         >Roadside Pickup</a
                       >
                     </h2>
+                    <div
+                      class="text-sm font-light uppercase leading-8 tracking-0.75px text-subtle"
+                    >
+                      1974<!-- -->
+                      |
+                      <!-- -->Short Story
+                    </div>
                     <p class="text-center">
                       by<!-- -->
                       <span class="text-accent"
@@ -870,12 +901,12 @@
                   </div>
                 </article>
               </li>
-              <li class="flex even:bg-subtle">
+              <li class="relative flex even:bg-subtle">
                 <article
-                  class="mx-auto flex flex-col items-center px-pageMargin py-10 desktop:grid desktop:w-full desktop:grid-cols-12 desktop:gap-x-12"
+                  class="mx-auto flex max-w-[960px] flex-col items-center px-pageMargin py-10 tablet:grid tablet:w-full tablet:grid-cols-12 tablet:gap-x-6"
                 >
                   <div
-                    class="text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:col-span-2 desktop:self-start desktop:text-left desktop:leading-8"
+                    class="whitespace-nowrap text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle tablet:col-span-12 tablet:self-start tablet:leading-8 desktop:absolute desktop:left-[var(--page-margin-width)]"
                   >
                     21 Jan 2023
                     <div class="spacer-y-6"></div>
@@ -883,7 +914,7 @@
                   <a
                     rel="canonical"
                     href="/reviews/fright-night-by-john-skipp-craig-spector/"
-                    class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default desktop:col-span-3 desktop:self-start desktop:justify-self-end"
+                    class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default tablet:col-span-4 tablet:mx-0 tablet:self-start tablet:justify-self-end"
                     ><img
                       srcset="
                         /_image?/content%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;q=80&amp;f=avif 1x,
@@ -898,16 +929,12 @@
                       style="aspect-ratio: 0.66666667"
                   /></a>
                   <div
-                    class="flex flex-col items-center desktop:col-span-7 desktop:items-start"
+                    class="flex flex-col items-center tablet:col-span-8 tablet:items-start"
                   >
-                    <div
-                      class="py-4 text-sm font-light uppercase leading-4 tracking-0.75px text-subtle desktop:pt-0 desktop:leading-8"
+                    <div class="spacer-y-4 tablet:spacer-y-0"></div>
+                    <h2
+                      class="text-center text-2.5xl font-bold leading-8 tablet:text-left"
                     >
-                      1985<!-- -->
-                      |
-                      <!-- -->Novel
-                    </div>
-                    <h2 class="text-center text-2.5xl font-bold leading-8">
                       <a
                         href="/reviews/fright-night-by-john-skipp-craig-spector/"
                         rel="canonical"
@@ -915,6 +942,13 @@
                         >Fright Night</a
                       >
                     </h2>
+                    <div
+                      class="text-sm font-light uppercase leading-8 tracking-0.75px text-subtle"
+                    >
+                      1985<!-- -->
+                      |
+                      <!-- -->Novel
+                    </div>
                     <p class="text-center">
                       by<!-- -->
                       <span class="text-accent"
@@ -975,7 +1009,7 @@
           class="flex flex-col items-center gap-y-6 bg-[url(&#x27;/assets/ripnotcomingsoon.avif&#x27;)] px-pageMargin py-8 text-inverse"
         >
           <ul
-            class="max:w-auto flex w-full flex-wrap justify-center gap-x-4 gap-y-2 text-inverse tablet:gap-x-6"
+            class="flex w-full flex-wrap justify-center gap-x-4 gap-y-2 text-inverse tablet:gap-x-6 max:w-auto"
           >
             <li class="block whitespace-nowrap tracking-0.5px">
               <a class="text-inverse" href="/">Home</a>

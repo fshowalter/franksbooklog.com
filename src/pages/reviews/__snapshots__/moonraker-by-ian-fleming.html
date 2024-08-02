@@ -39,9 +39,11 @@
       ></div>
       <div class="mx-auto flex min-h-full max-w-canvas flex-col bg-default">
         <header
-          class="flex flex-col items-center gap-6 bg-default px-pageMargin py-6 text-center shadow-bottom desktop:sticky desktop:top-4 desktop:z-40 desktop:flex-row desktop:justify-between desktop:gap-8 desktop:py-8 desktop:text-left"
+          class="flex flex-col items-center gap-6 bg-default px-pageMargin py-6 text-center shadow-bottom desktop:sticky desktop:top-4 desktop:z-40 desktop:flex-row desktop:justify-between desktop:gap-8 desktop:py-8 desktop:text-left max:justify-center"
         >
-          <div class="items-inherit justify-items-inherit flex flex-col">
+          <div
+            class="items-inherit justify-items-inherit flex flex-col max:absolute max:left-[var(--page-margin-width)]"
+          >
             <h1
               class="whitespace-nowrap text-[1.5625rem] font-normal leading-8"
             >
@@ -51,7 +53,9 @@
               Literature is a relative term.
             </p>
           </div>
-          <div class="w-full max-w-prose desktop:order-4 desktop:w-auto">
+          <div
+            class="w-full max-w-prose desktop:order-4 desktop:w-auto max:absolute max:right-[var(--page-margin-width)]"
+          >
             <button
               data-open-modal="true"
               disabled=""
@@ -676,7 +680,7 @@
           class="flex flex-col items-center gap-y-6 bg-[url(&#x27;/assets/ripnotcomingsoon.avif&#x27;)] px-pageMargin py-8 text-inverse"
         >
           <ul
-            class="max:w-auto flex w-full flex-wrap justify-center gap-x-4 gap-y-2 text-inverse tablet:gap-x-6"
+            class="flex w-full flex-wrap justify-center gap-x-4 gap-y-2 text-inverse tablet:gap-x-6 max:w-auto"
           >
             <li class="block whitespace-nowrap tracking-0.5px">
               <a class="text-inverse" href="/">Home</a>
