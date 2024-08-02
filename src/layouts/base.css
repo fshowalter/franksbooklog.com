@@ -63,6 +63,12 @@
   }
 }
 
+@media screen(max) {
+  :root {
+    --header-offset: 105px;
+  }
+}
+
 @layer base {
   html,
   body {
