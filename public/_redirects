@@ -1,5 +1,8 @@
 # /reviews/authors to /authors
 /reviews/authors/* /authors/:splat 301
 
+# /shelf/authors to /authors
+/shelf/authors/* /authors/:splat 301
+
 # /stats to /readins/stats
 /stats/* /readings/stats/:splat 301
