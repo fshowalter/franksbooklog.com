@@ -23,7 +23,7 @@
     "test": "vitest run src"
   },
   "dependencies": {
-    "@astrojs/check": "0.9.2",
+    "@astrojs/check": "0.9.3",
     "@astrojs/react": "3.6.2",
     "@astrojs/rss": "4.0.7",
     "@astrojs/sitemap": "3.1.6",
