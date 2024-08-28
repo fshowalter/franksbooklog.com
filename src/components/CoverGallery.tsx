@@ -11,7 +11,7 @@ export function CoverGallery({
   seeAllLinkTarget: string;
 }): JSX.Element {
   return (
-    <ul className="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-8 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2">
+    <ul className="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-11 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2">
       {values.map((value) => {
         return <CoverGalleryListItem key={value.slug} value={value} />;
       })}

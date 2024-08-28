@@ -30,7 +30,7 @@ export function CoverGalleryListItem({
   value: CoverGalleryListItemValue;
 }): JSX.Element {
   return (
-    <li className="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset">
+    <li className="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset">
       <Image
         slug={value.slug}
         imageProps={value.coverImageProps}
