@@ -29,6 +29,9 @@ jobs:
       - name: prettier
         run: npm run format:fix
 
+      - name: type-check
+        run: npm run check
+
       - name: eslint
         run: npm run lint:fix
 

@@ -498,10 +498,10 @@ exports[`Review > matches snapshot for slug 'about-face-by-david-h-hackworth-jul
           </a>
         </div>
         <ul
-          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-8 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
+          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-11 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
         >
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -574,7 +574,7 @@ exports[`Review > matches snapshot for slug 'about-face-by-david-h-hackworth-jul
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -647,7 +647,7 @@ exports[`Review > matches snapshot for slug 'about-face-by-david-h-hackworth-jul
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -720,7 +720,7 @@ exports[`Review > matches snapshot for slug 'about-face-by-david-h-hackworth-jul
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -1119,10 +1119,10 @@ exports[`Review > matches snapshot for slug 'altar-by-philip-fracassi' 1`] = `
           </a>
         </div>
         <ul
-          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-8 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
+          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-11 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
         >
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -1195,7 +1195,7 @@ exports[`Review > matches snapshot for slug 'altar-by-philip-fracassi' 1`] = `
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -1268,7 +1268,7 @@ exports[`Review > matches snapshot for slug 'altar-by-philip-fracassi' 1`] = `
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -1341,7 +1341,7 @@ exports[`Review > matches snapshot for slug 'altar-by-philip-fracassi' 1`] = `
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -2241,10 +2241,10 @@ exports[`Review > matches snapshot for slug 'behold-the-void-by-philip-fracassi'
           </a>
         </div>
         <ul
-          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-8 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
+          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-11 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
         >
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -2317,7 +2317,7 @@ exports[`Review > matches snapshot for slug 'behold-the-void-by-philip-fracassi'
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -2390,7 +2390,7 @@ exports[`Review > matches snapshot for slug 'behold-the-void-by-philip-fracassi'
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -2463,7 +2463,7 @@ exports[`Review > matches snapshot for slug 'behold-the-void-by-philip-fracassi'
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -2898,10 +2898,10 @@ exports[`Review > matches snapshot for slug 'brother-iron-sister-steel-by-dave-d
           </a>
         </div>
         <ul
-          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-8 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
+          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-11 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
         >
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -2974,7 +2974,7 @@ exports[`Review > matches snapshot for slug 'brother-iron-sister-steel-by-dave-d
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -3047,7 +3047,7 @@ exports[`Review > matches snapshot for slug 'brother-iron-sister-steel-by-dave-d
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -3120,7 +3120,7 @@ exports[`Review > matches snapshot for slug 'brother-iron-sister-steel-by-dave-d
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -3613,10 +3613,10 @@ exports[`Review > matches snapshot for slug 'cant-hurt-me-by-david-goggins' 1`] 
           </a>
         </div>
         <ul
-          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-8 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
+          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-11 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
         >
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -3689,7 +3689,7 @@ exports[`Review > matches snapshot for slug 'cant-hurt-me-by-david-goggins' 1`] 
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -3762,7 +3762,7 @@ exports[`Review > matches snapshot for slug 'cant-hurt-me-by-david-goggins' 1`] 
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -3835,7 +3835,7 @@ exports[`Review > matches snapshot for slug 'cant-hurt-me-by-david-goggins' 1`] 
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -4476,10 +4476,10 @@ exports[`Review > matches snapshot for slug 'carrie-by-stephen-king' 1`] = `
           </a>
         </div>
         <ul
-          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-8 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
+          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-11 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
         >
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -4552,7 +4552,7 @@ exports[`Review > matches snapshot for slug 'carrie-by-stephen-king' 1`] = `
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -4625,7 +4625,7 @@ exports[`Review > matches snapshot for slug 'carrie-by-stephen-king' 1`] = `
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -4698,7 +4698,7 @@ exports[`Review > matches snapshot for slug 'carrie-by-stephen-king' 1`] = `
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -5280,10 +5280,10 @@ exports[`Review > matches snapshot for slug 'casino-royale-by-ian-fleming' 1`] =
           </a>
         </div>
         <ul
-          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-8 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
+          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-11 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
         >
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -5356,7 +5356,7 @@ exports[`Review > matches snapshot for slug 'casino-royale-by-ian-fleming' 1`] =
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -5429,7 +5429,7 @@ exports[`Review > matches snapshot for slug 'casino-royale-by-ian-fleming' 1`] =
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -5502,7 +5502,7 @@ exports[`Review > matches snapshot for slug 'casino-royale-by-ian-fleming' 1`] =
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -6162,10 +6162,10 @@ exports[`Review > matches snapshot for slug 'churchill-by-andrew-roberts' 1`] = 
           </a>
         </div>
         <ul
-          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-8 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
+          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-11 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
         >
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -6238,7 +6238,7 @@ exports[`Review > matches snapshot for slug 'churchill-by-andrew-roberts' 1`] = 
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -6311,7 +6311,7 @@ exports[`Review > matches snapshot for slug 'churchill-by-andrew-roberts' 1`] = 
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -6384,7 +6384,7 @@ exports[`Review > matches snapshot for slug 'churchill-by-andrew-roberts' 1`] = 
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -6747,10 +6747,10 @@ exports[`Review > matches snapshot for slug 'coffin-by-philip-fracassi' 1`] = `
           </a>
         </div>
         <ul
-          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-8 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
+          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-11 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
         >
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -6823,7 +6823,7 @@ exports[`Review > matches snapshot for slug 'coffin-by-philip-fracassi' 1`] = `
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -6896,7 +6896,7 @@ exports[`Review > matches snapshot for slug 'coffin-by-philip-fracassi' 1`] = `
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -6969,7 +6969,7 @@ exports[`Review > matches snapshot for slug 'coffin-by-philip-fracassi' 1`] = `
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -7403,10 +7403,10 @@ exports[`Review > matches snapshot for slug 'consider-this-by-chuck-palahniuk' 1
           </a>
         </div>
         <ul
-          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-8 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
+          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-11 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
         >
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -7479,7 +7479,7 @@ exports[`Review > matches snapshot for slug 'consider-this-by-chuck-palahniuk' 1
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -7552,7 +7552,7 @@ exports[`Review > matches snapshot for slug 'consider-this-by-chuck-palahniuk' 1
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -7625,7 +7625,7 @@ exports[`Review > matches snapshot for slug 'consider-this-by-chuck-palahniuk' 1
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -8160,10 +8160,10 @@ exports[`Review > matches snapshot for slug 'cured-by-lol-tolhurst' 1`] = `
           </a>
         </div>
         <ul
-          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-8 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
+          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-11 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
         >
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -8236,7 +8236,7 @@ exports[`Review > matches snapshot for slug 'cured-by-lol-tolhurst' 1`] = `
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -8309,7 +8309,7 @@ exports[`Review > matches snapshot for slug 'cured-by-lol-tolhurst' 1`] = `
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -8382,7 +8382,7 @@ exports[`Review > matches snapshot for slug 'cured-by-lol-tolhurst' 1`] = `
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -8759,10 +8759,10 @@ exports[`Review > matches snapshot for slug 'desert-pickup-by-richard-laymon' 1`
           </a>
         </div>
         <ul
-          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-8 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
+          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-11 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
         >
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -8835,7 +8835,7 @@ exports[`Review > matches snapshot for slug 'desert-pickup-by-richard-laymon' 1`
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -8908,7 +8908,7 @@ exports[`Review > matches snapshot for slug 'desert-pickup-by-richard-laymon' 1`
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -8981,7 +8981,7 @@ exports[`Review > matches snapshot for slug 'desert-pickup-by-richard-laymon' 1`
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -9990,10 +9990,10 @@ exports[`Review > matches snapshot for slug 'doctor-sleep-by-stephen-king' 1`] =
           </a>
         </div>
         <ul
-          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-8 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
+          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-11 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
         >
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -10066,7 +10066,7 @@ exports[`Review > matches snapshot for slug 'doctor-sleep-by-stephen-king' 1`] =
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -10139,7 +10139,7 @@ exports[`Review > matches snapshot for slug 'doctor-sleep-by-stephen-king' 1`] =
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -10212,7 +10212,7 @@ exports[`Review > matches snapshot for slug 'doctor-sleep-by-stephen-king' 1`] =
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -10837,10 +10837,10 @@ exports[`Review > matches snapshot for slug 'dont-let-them-get-you-down-by-phili
           </a>
         </div>
         <ul
-          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-8 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
+          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-11 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
         >
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -10913,7 +10913,7 @@ exports[`Review > matches snapshot for slug 'dont-let-them-get-you-down-by-phili
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -10986,7 +10986,7 @@ exports[`Review > matches snapshot for slug 'dont-let-them-get-you-down-by-phili
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -11059,7 +11059,7 @@ exports[`Review > matches snapshot for slug 'dont-let-them-get-you-down-by-phili
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -11802,10 +11802,10 @@ exports[`Review > matches snapshot for slug 'dracula-by-bram-stoker' 1`] = `
           </a>
         </div>
         <ul
-          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-8 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
+          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-11 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
         >
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -11878,7 +11878,7 @@ exports[`Review > matches snapshot for slug 'dracula-by-bram-stoker' 1`] = `
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -11951,7 +11951,7 @@ exports[`Review > matches snapshot for slug 'dracula-by-bram-stoker' 1`] = `
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -12024,7 +12024,7 @@ exports[`Review > matches snapshot for slug 'dracula-by-bram-stoker' 1`] = `
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -12408,10 +12408,10 @@ exports[`Review > matches snapshot for slug 'draft-no-4-by-john-mcphee' 1`] = `
           </a>
         </div>
         <ul
-          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-8 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
+          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-11 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
         >
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -12484,7 +12484,7 @@ exports[`Review > matches snapshot for slug 'draft-no-4-by-john-mcphee' 1`] = `
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -12557,7 +12557,7 @@ exports[`Review > matches snapshot for slug 'draft-no-4-by-john-mcphee' 1`] = `
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -12630,7 +12630,7 @@ exports[`Review > matches snapshot for slug 'draft-no-4-by-john-mcphee' 1`] = `
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -13028,10 +13028,10 @@ exports[`Review > matches snapshot for slug 'extreme-ownership-by-jocko-willink-
           </a>
         </div>
         <ul
-          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-8 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
+          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-11 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
         >
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -13104,7 +13104,7 @@ exports[`Review > matches snapshot for slug 'extreme-ownership-by-jocko-willink-
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -13177,7 +13177,7 @@ exports[`Review > matches snapshot for slug 'extreme-ownership-by-jocko-willink-
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -13250,7 +13250,7 @@ exports[`Review > matches snapshot for slug 'extreme-ownership-by-jocko-willink-
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -13640,10 +13640,10 @@ exports[`Review > matches snapshot for slug 'fail-safe-by-philip-fracassi' 1`] =
           </a>
         </div>
         <ul
-          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-8 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
+          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-11 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
         >
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -13716,7 +13716,7 @@ exports[`Review > matches snapshot for slug 'fail-safe-by-philip-fracassi' 1`] =
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -13789,7 +13789,7 @@ exports[`Review > matches snapshot for slug 'fail-safe-by-philip-fracassi' 1`] =
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -13862,7 +13862,7 @@ exports[`Review > matches snapshot for slug 'fail-safe-by-philip-fracassi' 1`] =
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -15115,10 +15115,10 @@ exports[`Review > matches snapshot for slug 'fast-forward-by-stephen-morris' 1`]
           </a>
         </div>
         <ul
-          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-8 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
+          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-11 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
         >
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -15191,7 +15191,7 @@ exports[`Review > matches snapshot for slug 'fast-forward-by-stephen-morris' 1`]
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -15264,7 +15264,7 @@ exports[`Review > matches snapshot for slug 'fast-forward-by-stephen-morris' 1`]
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -15337,7 +15337,7 @@ exports[`Review > matches snapshot for slug 'fast-forward-by-stephen-morris' 1`]
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -15867,10 +15867,10 @@ exports[`Review > matches snapshot for slug 'fight-club-by-chuck-palahniuk' 1`] 
           </a>
         </div>
         <ul
-          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-8 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
+          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-11 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
         >
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -15943,7 +15943,7 @@ exports[`Review > matches snapshot for slug 'fight-club-by-chuck-palahniuk' 1`] 
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -16016,7 +16016,7 @@ exports[`Review > matches snapshot for slug 'fight-club-by-chuck-palahniuk' 1`] 
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -16089,7 +16089,7 @@ exports[`Review > matches snapshot for slug 'fight-club-by-chuck-palahniuk' 1`] 
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -16825,10 +16825,10 @@ Rancho Corvallis. Or Peter Vincent’s real name, Herbert McHoolihee.
           </a>
         </div>
         <ul
-          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-8 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
+          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-11 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
         >
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -16901,7 +16901,7 @@ Rancho Corvallis. Or Peter Vincent’s real name, Herbert McHoolihee.
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -16974,7 +16974,7 @@ Rancho Corvallis. Or Peter Vincent’s real name, Herbert McHoolihee.
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -17047,7 +17047,7 @@ Rancho Corvallis. Or Peter Vincent’s real name, Herbert McHoolihee.
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -17671,10 +17671,10 @@ exports[`Review > matches snapshot for slug 'fright-night-origins-by-tom-holland
           </a>
         </div>
         <ul
-          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-8 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
+          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-11 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
         >
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -17747,7 +17747,7 @@ exports[`Review > matches snapshot for slug 'fright-night-origins-by-tom-holland
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -17820,7 +17820,7 @@ exports[`Review > matches snapshot for slug 'fright-night-origins-by-tom-holland
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -17893,7 +17893,7 @@ exports[`Review > matches snapshot for slug 'fright-night-origins-by-tom-holland
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -18581,10 +18581,10 @@ exports[`Review > matches snapshot for slug 'gothic-by-philip-fracassi' 1`] = `
           </a>
         </div>
         <ul
-          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-8 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
+          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-11 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
         >
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -18657,7 +18657,7 @@ exports[`Review > matches snapshot for slug 'gothic-by-philip-fracassi' 1`] = `
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -18730,7 +18730,7 @@ exports[`Review > matches snapshot for slug 'gothic-by-philip-fracassi' 1`] = `
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -18803,7 +18803,7 @@ exports[`Review > matches snapshot for slug 'gothic-by-philip-fracassi' 1`] = `
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -19640,10 +19640,10 @@ exports[`Review > matches snapshot for slug 'hawk-mountain-by-conner-habib' 1`] 
           </a>
         </div>
         <ul
-          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-8 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
+          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-11 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
         >
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -19716,7 +19716,7 @@ exports[`Review > matches snapshot for slug 'hawk-mountain-by-conner-habib' 1`] 
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -19789,7 +19789,7 @@ exports[`Review > matches snapshot for slug 'hawk-mountain-by-conner-habib' 1`] 
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -19862,7 +19862,7 @@ exports[`Review > matches snapshot for slug 'hawk-mountain-by-conner-habib' 1`] 
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -20383,10 +20383,10 @@ exports[`Review > matches snapshot for slug 'i-will-find-you-by-joe-kenda' 1`] =
           </a>
         </div>
         <ul
-          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-8 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
+          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-11 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
         >
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -20459,7 +20459,7 @@ exports[`Review > matches snapshot for slug 'i-will-find-you-by-joe-kenda' 1`] =
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -20532,7 +20532,7 @@ exports[`Review > matches snapshot for slug 'i-will-find-you-by-joe-kenda' 1`] =
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -20605,7 +20605,7 @@ exports[`Review > matches snapshot for slug 'i-will-find-you-by-joe-kenda' 1`] =
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -21064,10 +21064,10 @@ exports[`Review > matches snapshot for slug 'is-this-anything-by-jerry-seinfeld'
           </a>
         </div>
         <ul
-          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-8 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
+          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-11 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
         >
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -21140,7 +21140,7 @@ exports[`Review > matches snapshot for slug 'is-this-anything-by-jerry-seinfeld'
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -21213,7 +21213,7 @@ exports[`Review > matches snapshot for slug 'is-this-anything-by-jerry-seinfeld'
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -21286,7 +21286,7 @@ exports[`Review > matches snapshot for slug 'is-this-anything-by-jerry-seinfeld'
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -21801,10 +21801,10 @@ There’s a long pause that kind of freaks me out and Daniel finishes his drink 
           </a>
         </div>
         <ul
-          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-8 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
+          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-11 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
         >
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -21877,7 +21877,7 @@ There’s a long pause that kind of freaks me out and Daniel finishes his drink 
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -21950,7 +21950,7 @@ There’s a long pause that kind of freaks me out and Daniel finishes his drink 
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -22023,7 +22023,7 @@ There’s a long pause that kind of freaks me out and Daniel finishes his drink 
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -22820,10 +22820,10 @@ exports[`Review > matches snapshot for slug 'live-and-let-die-by-ian-fleming' 1`
           </a>
         </div>
         <ul
-          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-8 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
+          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-11 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
         >
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -22896,7 +22896,7 @@ exports[`Review > matches snapshot for slug 'live-and-let-die-by-ian-fleming' 1`
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -22969,7 +22969,7 @@ exports[`Review > matches snapshot for slug 'live-and-let-die-by-ian-fleming' 1`
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -23030,7 +23030,7 @@ exports[`Review > matches snapshot for slug 'live-and-let-die-by-ian-fleming' 1`
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -23474,10 +23474,10 @@ exports[`Review > matches snapshot for slug 'living-with-a-seal-by-jesse-itzler'
           </a>
         </div>
         <ul
-          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-8 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
+          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-11 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
         >
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -23550,7 +23550,7 @@ exports[`Review > matches snapshot for slug 'living-with-a-seal-by-jesse-itzler'
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -23623,7 +23623,7 @@ exports[`Review > matches snapshot for slug 'living-with-a-seal-by-jesse-itzler'
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -23696,7 +23696,7 @@ exports[`Review > matches snapshot for slug 'living-with-a-seal-by-jesse-itzler'
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -24162,10 +24162,10 @@ exports[`Review > matches snapshot for slug 'mandala-by-philip-fracassi' 1`] = `
           </a>
         </div>
         <ul
-          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-8 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
+          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-11 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
         >
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -24238,7 +24238,7 @@ exports[`Review > matches snapshot for slug 'mandala-by-philip-fracassi' 1`] = `
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -24299,7 +24299,7 @@ exports[`Review > matches snapshot for slug 'mandala-by-philip-fracassi' 1`] = `
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -24372,7 +24372,7 @@ exports[`Review > matches snapshot for slug 'mandala-by-philip-fracassi' 1`] = `
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -24870,10 +24870,10 @@ exports[`Review > matches snapshot for slug 'moonraker-by-ian-fleming' 1`] = `
           </a>
         </div>
         <ul
-          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-8 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
+          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-11 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
         >
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -24934,7 +24934,7 @@ exports[`Review > matches snapshot for slug 'moonraker-by-ian-fleming' 1`] = `
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -25007,7 +25007,7 @@ exports[`Review > matches snapshot for slug 'moonraker-by-ian-fleming' 1`] = `
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -25080,7 +25080,7 @@ exports[`Review > matches snapshot for slug 'moonraker-by-ian-fleming' 1`] = `
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -25471,10 +25471,10 @@ exports[`Review > matches snapshot for slug 'mother-by-philip-fracassi' 1`] = `
           </a>
         </div>
         <ul
-          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-8 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
+          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-11 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
         >
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -25547,7 +25547,7 @@ exports[`Review > matches snapshot for slug 'mother-by-philip-fracassi' 1`] = `
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -25620,7 +25620,7 @@ exports[`Review > matches snapshot for slug 'mother-by-philip-fracassi' 1`] = `
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -25693,7 +25693,7 @@ exports[`Review > matches snapshot for slug 'mother-by-philip-fracassi' 1`] = `
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -26225,10 +26225,10 @@ exports[`Review > matches snapshot for slug 'on-writing-by-stephen-king' 1`] = `
           </a>
         </div>
         <ul
-          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-8 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
+          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-11 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
         >
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -26301,7 +26301,7 @@ exports[`Review > matches snapshot for slug 'on-writing-by-stephen-king' 1`] = `
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -26374,7 +26374,7 @@ exports[`Review > matches snapshot for slug 'on-writing-by-stephen-king' 1`] = `
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -26447,7 +26447,7 @@ exports[`Review > matches snapshot for slug 'on-writing-by-stephen-king' 1`] = `
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -27099,10 +27099,10 @@ exports[`Review > matches snapshot for slug 'out-are-the-lights-by-richard-laymo
           </a>
         </div>
         <ul
-          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-8 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
+          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-11 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
         >
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -27175,7 +27175,7 @@ exports[`Review > matches snapshot for slug 'out-are-the-lights-by-richard-laymo
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -27248,7 +27248,7 @@ exports[`Review > matches snapshot for slug 'out-are-the-lights-by-richard-laymo
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -27321,7 +27321,7 @@ exports[`Review > matches snapshot for slug 'out-are-the-lights-by-richard-laymo
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -27885,10 +27885,10 @@ exports[`Review > matches snapshot for slug 'record-play-pause-by-stephen-morris
           </a>
         </div>
         <ul
-          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-8 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
+          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-11 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
         >
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -27961,7 +27961,7 @@ exports[`Review > matches snapshot for slug 'record-play-pause-by-stephen-morris
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -28034,7 +28034,7 @@ exports[`Review > matches snapshot for slug 'record-play-pause-by-stephen-morris
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -28107,7 +28107,7 @@ exports[`Review > matches snapshot for slug 'record-play-pause-by-stephen-morris
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -28453,10 +28453,10 @@ exports[`Review > matches snapshot for slug 'roadside-pickup-by-richard-laymon' 
           </a>
         </div>
         <ul
-          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-8 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
+          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-11 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
         >
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -28529,7 +28529,7 @@ exports[`Review > matches snapshot for slug 'roadside-pickup-by-richard-laymon' 
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -28602,7 +28602,7 @@ exports[`Review > matches snapshot for slug 'roadside-pickup-by-richard-laymon' 
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -28675,7 +28675,7 @@ exports[`Review > matches snapshot for slug 'roadside-pickup-by-richard-laymon' 
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -29264,10 +29264,10 @@ exports[`Review > matches snapshot for slug 'sacculina-by-philip-fracassi' 1`] =
           </a>
         </div>
         <ul
-          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-8 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
+          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-11 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
         >
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -29340,7 +29340,7 @@ exports[`Review > matches snapshot for slug 'sacculina-by-philip-fracassi' 1`] =
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -29413,7 +29413,7 @@ exports[`Review > matches snapshot for slug 'sacculina-by-philip-fracassi' 1`] =
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -29486,7 +29486,7 @@ exports[`Review > matches snapshot for slug 'sacculina-by-philip-fracassi' 1`] =
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -30174,10 +30174,10 @@ exports[`Review > matches snapshot for slug 'salems-lot-by-stephen-king' 1`] = `
           </a>
         </div>
         <ul
-          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-8 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
+          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-11 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
         >
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -30250,7 +30250,7 @@ exports[`Review > matches snapshot for slug 'salems-lot-by-stephen-king' 1`] = `
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -30323,7 +30323,7 @@ exports[`Review > matches snapshot for slug 'salems-lot-by-stephen-king' 1`] = `
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -30396,7 +30396,7 @@ exports[`Review > matches snapshot for slug 'salems-lot-by-stephen-king' 1`] = `
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -30881,10 +30881,10 @@ exports[`Review > matches snapshot for slug 'set-the-boy-free-by-johnny-marr' 1`
           </a>
         </div>
         <ul
-          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-8 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
+          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-11 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
         >
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -30957,7 +30957,7 @@ exports[`Review > matches snapshot for slug 'set-the-boy-free-by-johnny-marr' 1`
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -31030,7 +31030,7 @@ exports[`Review > matches snapshot for slug 'set-the-boy-free-by-johnny-marr' 1`
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -31103,7 +31103,7 @@ exports[`Review > matches snapshot for slug 'set-the-boy-free-by-johnny-marr' 1`
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -31452,10 +31452,10 @@ exports[`Review > matches snapshot for slug 'soft-construction-of-a-sunset-by-ph
           </a>
         </div>
         <ul
-          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-8 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
+          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-11 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
         >
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -31528,7 +31528,7 @@ exports[`Review > matches snapshot for slug 'soft-construction-of-a-sunset-by-ph
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -31601,7 +31601,7 @@ exports[`Review > matches snapshot for slug 'soft-construction-of-a-sunset-by-ph
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -31674,7 +31674,7 @@ exports[`Review > matches snapshot for slug 'soft-construction-of-a-sunset-by-ph
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -32056,10 +32056,10 @@ exports[`Review > matches snapshot for slug 'surfer-girl-by-philip-fracassi' 1`]
           </a>
         </div>
         <ul
-          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-8 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
+          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-11 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
         >
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -32132,7 +32132,7 @@ exports[`Review > matches snapshot for slug 'surfer-girl-by-philip-fracassi' 1`]
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -32205,7 +32205,7 @@ exports[`Review > matches snapshot for slug 'surfer-girl-by-philip-fracassi' 1`]
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -32278,7 +32278,7 @@ exports[`Review > matches snapshot for slug 'surfer-girl-by-philip-fracassi' 1`]
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -32736,10 +32736,10 @@ exports[`Review > matches snapshot for slug 'the-48-laws-of-power-by-robert-gree
           </a>
         </div>
         <ul
-          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-8 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
+          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-11 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
         >
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -32812,7 +32812,7 @@ exports[`Review > matches snapshot for slug 'the-48-laws-of-power-by-robert-gree
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -32885,7 +32885,7 @@ exports[`Review > matches snapshot for slug 'the-48-laws-of-power-by-robert-gree
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -32958,7 +32958,7 @@ exports[`Review > matches snapshot for slug 'the-48-laws-of-power-by-robert-gree
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -33343,10 +33343,10 @@ exports[`Review > matches snapshot for slug 'the-baby-farmer-by-philip-fracassi'
           </a>
         </div>
         <ul
-          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-8 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
+          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-11 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
         >
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -33419,7 +33419,7 @@ exports[`Review > matches snapshot for slug 'the-baby-farmer-by-philip-fracassi'
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -33492,7 +33492,7 @@ exports[`Review > matches snapshot for slug 'the-baby-farmer-by-philip-fracassi'
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -33565,7 +33565,7 @@ exports[`Review > matches snapshot for slug 'the-baby-farmer-by-philip-fracassi'
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -34139,10 +34139,10 @@ exports[`Review > matches snapshot for slug 'the-big-sleep-by-raymond-chandler' 
           </a>
         </div>
         <ul
-          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-8 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
+          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-11 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
         >
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -34215,7 +34215,7 @@ exports[`Review > matches snapshot for slug 'the-big-sleep-by-raymond-chandler' 
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -34288,7 +34288,7 @@ exports[`Review > matches snapshot for slug 'the-big-sleep-by-raymond-chandler' 
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -34361,7 +34361,7 @@ exports[`Review > matches snapshot for slug 'the-big-sleep-by-raymond-chandler' 
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -34922,10 +34922,10 @@ exports[`Review > matches snapshot for slug 'the-cellar-by-richard-laymon' 1`] =
           </a>
         </div>
         <ul
-          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-8 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
+          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-11 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
         >
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -34998,7 +34998,7 @@ exports[`Review > matches snapshot for slug 'the-cellar-by-richard-laymon' 1`] =
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -35071,7 +35071,7 @@ exports[`Review > matches snapshot for slug 'the-cellar-by-richard-laymon' 1`] =
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -35144,7 +35144,7 @@ exports[`Review > matches snapshot for slug 'the-cellar-by-richard-laymon' 1`] =
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -35902,10 +35902,10 @@ exports[`Review > matches snapshot for slug 'the-cipher-by-kathe-koja' 1`] = `
           </a>
         </div>
         <ul
-          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-8 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
+          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-11 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
         >
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -35978,7 +35978,7 @@ exports[`Review > matches snapshot for slug 'the-cipher-by-kathe-koja' 1`] = `
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -36051,7 +36051,7 @@ exports[`Review > matches snapshot for slug 'the-cipher-by-kathe-koja' 1`] = `
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -36124,7 +36124,7 @@ exports[`Review > matches snapshot for slug 'the-cipher-by-kathe-koja' 1`] = `
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -36598,10 +36598,10 @@ exports[`Review > matches snapshot for slug 'the-creative-act-by-rick-rubin' 1`]
           </a>
         </div>
         <ul
-          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-8 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
+          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-11 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
         >
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -36674,7 +36674,7 @@ exports[`Review > matches snapshot for slug 'the-creative-act-by-rick-rubin' 1`]
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -36747,7 +36747,7 @@ exports[`Review > matches snapshot for slug 'the-creative-act-by-rick-rubin' 1`]
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -36820,7 +36820,7 @@ exports[`Review > matches snapshot for slug 'the-creative-act-by-rick-rubin' 1`]
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -37536,10 +37536,10 @@ Olympic-level physical conditioning. Or how many folks are awake past two a.m.. 
           </a>
         </div>
         <ul
-          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-8 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
+          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-11 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
         >
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -37612,7 +37612,7 @@ Olympic-level physical conditioning. Or how many folks are awake past two a.m.. 
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -37685,7 +37685,7 @@ Olympic-level physical conditioning. Or how many folks are awake past two a.m.. 
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -37758,7 +37758,7 @@ Olympic-level physical conditioning. Or how many folks are awake past two a.m.. 
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -38183,10 +38183,10 @@ exports[`Review > matches snapshot for slug 'the-horse-thief-by-philip-fracassi'
           </a>
         </div>
         <ul
-          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-8 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
+          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-11 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
         >
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -38259,7 +38259,7 @@ exports[`Review > matches snapshot for slug 'the-horse-thief-by-philip-fracassi'
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -38332,7 +38332,7 @@ exports[`Review > matches snapshot for slug 'the-horse-thief-by-philip-fracassi'
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -38405,7 +38405,7 @@ exports[`Review > matches snapshot for slug 'the-horse-thief-by-philip-fracassi'
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -38825,10 +38825,10 @@ exports[`Review > matches snapshot for slug 'the-max-muscle-plan-by-brad-schoenf
           </a>
         </div>
         <ul
-          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-8 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
+          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-11 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
         >
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -38901,7 +38901,7 @@ exports[`Review > matches snapshot for slug 'the-max-muscle-plan-by-brad-schoenf
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -38974,7 +38974,7 @@ exports[`Review > matches snapshot for slug 'the-max-muscle-plan-by-brad-schoenf
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -39047,7 +39047,7 @@ exports[`Review > matches snapshot for slug 'the-max-muscle-plan-by-brad-schoenf
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -39652,10 +39652,10 @@ exports[`Review > matches snapshot for slug 'the-postman-always-rings-twice-by-j
           </a>
         </div>
         <ul
-          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-8 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
+          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-11 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
         >
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -39728,7 +39728,7 @@ exports[`Review > matches snapshot for slug 'the-postman-always-rings-twice-by-j
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -39801,7 +39801,7 @@ exports[`Review > matches snapshot for slug 'the-postman-always-rings-twice-by-j
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -39874,7 +39874,7 @@ exports[`Review > matches snapshot for slug 'the-postman-always-rings-twice-by-j
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -40429,10 +40429,10 @@ exports[`Review > matches snapshot for slug 'the-rise-of-theodore-roosevelt-by-e
           </a>
         </div>
         <ul
-          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-8 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
+          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-11 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
         >
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -40505,7 +40505,7 @@ exports[`Review > matches snapshot for slug 'the-rise-of-theodore-roosevelt-by-e
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -40578,7 +40578,7 @@ exports[`Review > matches snapshot for slug 'the-rise-of-theodore-roosevelt-by-e
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -40651,7 +40651,7 @@ exports[`Review > matches snapshot for slug 'the-rise-of-theodore-roosevelt-by-e
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -41459,10 +41459,10 @@ exports[`Review > matches snapshot for slug 'the-rules-of-attraction-by-bret-eas
           </a>
         </div>
         <ul
-          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-8 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
+          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-11 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
         >
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -41535,7 +41535,7 @@ exports[`Review > matches snapshot for slug 'the-rules-of-attraction-by-bret-eas
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -41608,7 +41608,7 @@ exports[`Review > matches snapshot for slug 'the-rules-of-attraction-by-bret-eas
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -41681,7 +41681,7 @@ exports[`Review > matches snapshot for slug 'the-rules-of-attraction-by-bret-eas
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -42193,10 +42193,10 @@ exports[`Review > matches snapshot for slug 'the-secret-history-by-donna-tartt' 
           </a>
         </div>
         <ul
-          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-8 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
+          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-11 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
         >
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -42269,7 +42269,7 @@ exports[`Review > matches snapshot for slug 'the-secret-history-by-donna-tartt' 
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -42342,7 +42342,7 @@ exports[`Review > matches snapshot for slug 'the-secret-history-by-donna-tartt' 
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -42415,7 +42415,7 @@ exports[`Review > matches snapshot for slug 'the-secret-history-by-donna-tartt' 
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -43140,10 +43140,10 @@ exports[`Review > matches snapshot for slug 'the-shining-by-stephen-king' 1`] = 
           </a>
         </div>
         <ul
-          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-8 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
+          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-11 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
         >
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -43216,7 +43216,7 @@ exports[`Review > matches snapshot for slug 'the-shining-by-stephen-king' 1`] = 
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -43289,7 +43289,7 @@ exports[`Review > matches snapshot for slug 'the-shining-by-stephen-king' 1`] = 
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -43362,7 +43362,7 @@ exports[`Review > matches snapshot for slug 'the-shining-by-stephen-king' 1`] = 
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -43900,10 +43900,10 @@ exports[`Review > matches snapshot for slug 'the-skeptics-guide-to-the-universe-
           </a>
         </div>
         <ul
-          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-8 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
+          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-11 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
         >
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -43976,7 +43976,7 @@ exports[`Review > matches snapshot for slug 'the-skeptics-guide-to-the-universe-
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -44049,7 +44049,7 @@ exports[`Review > matches snapshot for slug 'the-skeptics-guide-to-the-universe-
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -44122,7 +44122,7 @@ exports[`Review > matches snapshot for slug 'the-skeptics-guide-to-the-universe-
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -44636,10 +44636,10 @@ exports[`Review > matches snapshot for slug 'the-woods-are-dark-by-richard-laymo
           </a>
         </div>
         <ul
-          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-8 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
+          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-11 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
         >
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -44712,7 +44712,7 @@ exports[`Review > matches snapshot for slug 'the-woods-are-dark-by-richard-laymo
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -44785,7 +44785,7 @@ exports[`Review > matches snapshot for slug 'the-woods-are-dark-by-richard-laymo
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -44858,7 +44858,7 @@ exports[`Review > matches snapshot for slug 'the-woods-are-dark-by-richard-laymo
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -45356,10 +45356,10 @@ exports[`Review > matches snapshot for slug 'total-recall-by-arnold-schwarzenegg
           </a>
         </div>
         <ul
-          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-8 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
+          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-11 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
         >
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -45432,7 +45432,7 @@ exports[`Review > matches snapshot for slug 'total-recall-by-arnold-schwarzenegg
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -45505,7 +45505,7 @@ exports[`Review > matches snapshot for slug 'total-recall-by-arnold-schwarzenegg
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -45578,7 +45578,7 @@ exports[`Review > matches snapshot for slug 'total-recall-by-arnold-schwarzenegg
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -46033,10 +46033,10 @@ exports[`Review > matches snapshot for slug 'what-doesnt-kill-us-by-scott-carney
           </a>
         </div>
         <ul
-          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-8 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
+          class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-11 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
         >
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -46109,7 +46109,7 @@ exports[`Review > matches snapshot for slug 'what-doesnt-kill-us-by-scott-carney
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -46182,7 +46182,7 @@ exports[`Review > matches snapshot for slug 'what-doesnt-kill-us-by-scott-carney
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
@@ -46255,7 +46255,7 @@ exports[`Review > matches snapshot for slug 'what-doesnt-kill-us-by-scott-carney
             </div>
           </li>
           <li
-            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+            class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
           >
             <a
               class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
