@@ -41,7 +41,7 @@ export default {
       tablet: "768px",
       "tablet-landscape": "1024px",
       desktop: "1280px",
-      max: "1344px",
+      max: "1696px",
     },
     extend: {
       aspectRatio: {
@@ -70,7 +70,7 @@ export default {
         container: "var(--container-padding)",
       },
       width: {
-        "list-item-cover": "var(--list-item-poster-width)",
+        "list-item-cover": "var(--list-item-cover-width)",
       },
     },
   },

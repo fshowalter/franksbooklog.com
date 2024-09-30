@@ -1,5 +1,4 @@
-import { ListInfo } from "./ListInfo";
-import { ShowMoreButton } from "./ShowMoreButton";
+import { Button } from "./Button";
 
 export function GroupedList<T>({
   groupedValues,
@@ -19,8 +18,6 @@ export function GroupedList<T>({
 }): JSX.Element {
   return (
     <>
-      <ListInfo visibleCount={visibleCount} totalCount={totalCount} />
-
       <ol className={className} {...rest}>
         {[...groupedValues].map((groupedValue, index) => {
           const [group, groupValues] = groupedValue;
@@ -32,13 +29,9 @@ export function GroupedList<T>({
           );
         })}
       </ol>
-      <div className="flex flex-col items-center px-pageMargin">
+      <div className="flex flex-col items-center px-container py-10">
         {totalCount > visibleCount && (
-          <>
-            <div className="h-8 min-h-8" />
-            <ShowMoreButton onClick={onShowMore} />
-            <div className="h-8 min-h-8" />
-          </>
+          <Button onClick={onShowMore}>Show More</Button>
         )}
       </div>
     </>
@@ -54,19 +47,14 @@ function GroupingListItem({
   children: React.ReactNode;
   zIndex: number;
 }) {
-  const groupHeader = (
-    <div className="bg-canvas px-gutter py-2 tablet:px-6">{groupText}</div>
-  );
-
   return (
     <li className="block">
-      <div
-        style={{ zIndex: zIndex }}
-        className="sticky top-8 bg-default pt-0 text-md desktop:top-[calc(var(--header-offset)_+_40px)]"
-      >
-        {groupText != "" && groupHeader}
+      <div style={{ zIndex: zIndex }} className="pt-0 text-md">
+        <div className="mb-1 max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4">
+          {groupText}
+        </div>
       </div>
-      {children}
+      <div className="bg-subtle">{children}</div>
     </li>
   );
 }

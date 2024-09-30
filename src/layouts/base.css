@@ -28,6 +28,7 @@
   --search-dialog-padding: 8%;
   --font-sans: "ArgentumSans";
   --font-serif: "FrankRuhlLibre";
+  --list-item-cover-width: 64px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -56,7 +57,7 @@
   :root {
     --container-padding: 48px;
     --search-dialog-padding: 24px;
-    --list-item-poster-width: 76px;
+    --list-item-cover-width: 76px;
   }
 }
 
@@ -64,7 +65,7 @@
   :root {
     --container-padding: 80px;
     --search-dialog-padding: 32px;
-    --list-item-poster-width: 80px;
+    --list-item-cover-width: 80px;
   }
 }
 

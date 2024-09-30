@@ -43,19 +43,17 @@ export function HomeListItem({
   eagerLoadCoverImage: boolean;
 }): JSX.Element {
   return (
-    <li className="flex w-[48.5%] max-w-[250px] flex-col items-center border-default bg-default tablet:w-[31.33333333%] desktop:min-w-[250px]">
-      <div className="opacity-85 hover:opacity-100">
-        <Cover
-          imageProps={value.coverImageProps}
-          decoding="async"
-          width={CoverImageConfig.width}
-          height={CoverImageConfig.height}
-          alt={`A cover of ${value.title} by ${toSentenceArray(
-            value.authors.map((a) => a.name),
-          ).join("")}`}
-          loading={eagerLoadCoverImage ? "eager" : "lazy"}
-        />
-      </div>
+    <li className="relative flex w-[48.5%] max-w-[250px] flex-col items-center border-default bg-default tablet:w-[31.33333333%] desktop:w-[14.16666667%]">
+      <Cover
+        imageProps={value.coverImageProps}
+        decoding="async"
+        width={CoverImageConfig.width}
+        height={CoverImageConfig.height}
+        alt={`A cover of ${value.title} by ${toSentenceArray(
+          value.authors.map((a) => a.name),
+        ).join("")}`}
+        loading={eagerLoadCoverImage ? "eager" : "lazy"}
+      />
       <div className="flex grow flex-col items-center px-[8%] pb-8 pt-2 desktop:pl-[8.5%] desktop:pr-[10%]">
         <div className="whitespace-nowrap py-2 text-center font-sans text-xxs font-light uppercase leading-4 text-subtle">
           {formatDate(value.date)}
@@ -64,7 +62,7 @@ export function HomeListItem({
           <a
             href={`/reviews/${value.slug}/`}
             rel="canonical"
-            className="inline-block"
+            className="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-[#fff] before:opacity-15 hover:text-accent hover:underline hover:before:opacity-0"
           >
             {value.title}
           </a>
@@ -72,7 +70,7 @@ export function HomeListItem({
         <div className="font-sans text-xxs font-light uppercase leading-8 tracking-wide text-subtle">
           {value.yearPublished} | {value.kind}
         </div>
-        <p className="text-center text-base text-subtle">
+        <p className="text-center text-base font-light text-subtle">
           by{" "}
           {toSentenceArray(
             value.authors.map((author) => {
@@ -83,7 +81,7 @@ export function HomeListItem({
                   name={author.name}
                   notes={author.notes}
                   slug={author.slug}
-                  className="text-accent"
+                  className="font-normal text-accent"
                 />
               );
             }),

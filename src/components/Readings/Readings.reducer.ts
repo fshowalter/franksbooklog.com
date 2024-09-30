@@ -25,25 +25,13 @@ const yearFormatter = new Intl.DateTimeFormat("en-US", {
   timeZone: "UTC",
 });
 
-const monthGroupFormatter = new Intl.DateTimeFormat("en-US", {
-  month: "long",
-  year: "numeric",
-  timeZone: "UTC",
-});
-
-const dayGroupFormatter = new Intl.DateTimeFormat("en-US", {
-  day: "numeric",
-  weekday: "short",
-  timeZone: "UTC",
-});
-
 function groupValues(
   values: ListItemValue[],
 ): Map<string, Map<string, ListItemValue[]>> {
   const groupedValues = new Map<string, Map<string, ListItemValue[]>>();
 
   values.map((value) => {
-    const monthYearGroup = monthGroupFormatter.format(value.date);
+    const monthYearGroup = `${value.readingMonth} ${value.readingYear}`;
 
     let groupValue = groupedValues.get(monthYearGroup);
 
@@ -52,7 +40,7 @@ function groupValues(
       groupedValues.set(monthYearGroup, groupValue);
     }
 
-    const dayGroup = dayGroupFormatter.format(value.date);
+    const dayGroup = `${value.readingDay}-${value.readingDate}`;
 
     let dayGroupValue = groupValue.get(dayGroup);
 

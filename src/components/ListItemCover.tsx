@@ -1,44 +1,21 @@
 import type { CoverImageProps } from "src/api/covers";
 
-import { Cover } from "./Cover";
-
 export const ListItemCoverImageConfig = {
-  width: 72,
-  height: 108,
+  width: 80,
+  height: 113,
+  sizes: "(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px",
 };
 
-export function ListItemCover({
-  slug,
-  imageProps,
-}: {
-  slug?: string | null;
-  imageProps: CoverImageProps;
-}) {
-  if (slug) {
-    return (
-      <a
-        href={`/reviews/${slug}/`}
-        className="safari-border-radius-fix min-w-[72px] max-w-[72px] shrink-0 overflow-hidden rounded-lg shadow-all"
-      >
-        <Cover
-          imageProps={imageProps}
-          width={ListItemCoverImageConfig.width}
-          height={ListItemCoverImageConfig.height}
-          loading="lazy"
-          decoding="async"
-        />
-      </a>
-    );
-  }
-
+export function ListItemCover({ imageProps }: { imageProps: CoverImageProps }) {
   return (
-    <div className="safari-border-radius-fix min-w-[72px] max-w-[72px] shrink-0 overflow-hidden rounded-lg shadow-all">
-      <Cover
-        imageProps={imageProps}
-        width={ListItemCoverImageConfig.width}
-        height={ListItemCoverImageConfig.height}
+    <div className="w-list-item-cover shrink-0">
+      <img
+        {...imageProps}
+        alt=""
+        {...ListItemCoverImageConfig}
         loading="lazy"
         decoding="async"
+        className="aspect-cover"
       />
     </div>
   );

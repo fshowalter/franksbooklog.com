@@ -1,17 +1,15 @@
-import { ccn } from "src/utils/concatClassNames";
-
-interface Props {
+export function ListItemTitle({
+  title,
+  slug,
+}: {
   title: string;
   slug?: string | null;
-  className?: string;
-}
-
-export function ListItemTitle({ title, slug, className }: Props) {
+}) {
   if (slug) {
     return (
       <a
         href={`/reviews/${slug}/`}
-        className={ccn("block text-md leading-5 text-accent", className)}
+        className="block font-sans text-sm font-medium text-accent decoration-accent decoration-2 underline-offset-4 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 hover:underline hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
       >
         {title}
       </a>
@@ -19,6 +17,8 @@ export function ListItemTitle({ title, slug, className }: Props) {
   }
 
   return (
-    <span className={ccn("block text-md leading-5", className)}>{title}</span>
+    <span className="block font-sans text-sm font-normal text-muted">
+      {title}
+    </span>
   );
 }
