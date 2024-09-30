@@ -1,13 +1,27 @@
+import { ccn } from "src/utils/concatClassNames";
+
 import { Footer } from "./Footer";
 import { Mast } from "./Mast";
 
 export function Layout({
-  currentPath,
+  hideLogo = false,
+  hasBackdrop = true,
+  addGradient,
   children,
+  className,
+  ...rest
 }: {
-  currentPath: string;
+  hideLogo?: boolean;
+  addGradient?: boolean;
+  hasBackdrop?: boolean;
   children: React.ReactNode;
+  className?: string;
+  [x: string]: unknown;
 }): JSX.Element {
+  if (typeof addGradient == "undefined") {
+    addGradient = hasBackdrop;
+  }
+
   return (
     <div>
       <a
@@ -16,18 +30,16 @@ export function Layout({
       >
         Skip to content
       </a>
-      <div
-        className={
-          "image-filter mx-auto min-h-4 w-full max-w-canvas bg-[url('/assets/ripnotcomingsoon.avif')] desktop:sticky desktop:top-0 desktop:z-40"
-        }
-      />
-
-      <div className="mx-auto flex min-h-full max-w-canvas flex-col bg-default">
-        <Mast currentPath={currentPath} />
-        <div className="grow" id="content">
+      <div className="flex min-h-full w-full flex-col bg-default">
+        <Mast
+          hideLogo={hideLogo}
+          hasBackdrop={hasBackdrop}
+          addGradient={addGradient}
+        />
+        <main className={ccn("grow", className)} id="content" {...rest}>
           {children}
-        </div>
-        <Footer currentPath={currentPath} />
+        </main>
+        <Footer />
       </div>
     </div>
   );
