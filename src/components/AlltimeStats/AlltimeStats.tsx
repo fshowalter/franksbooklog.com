@@ -46,11 +46,15 @@ export function AlltimeStats({
         />
       </StatsBackdrop>
       <div className="mx-auto flex w-full max-w-screen-max flex-col items-stretch gap-y-8 py-10 tablet:px-container">
-        <MostReadAuthors values={mostReadAuthors} />
-        <GradeDistribution values={stats.gradeDistribution} />
-        <DecadeDistribution values={stats.decadeDistribution} />
-        <KindDistribution values={stats.kindDistribution} />
-        <EditionDistribution values={stats.editionDistribution} />
+        <div className="mx-auto flex w-full flex-col gap-y-8 desktop:max-w-[calc(66%_+_24px)]">
+          <GradeDistribution values={stats.gradeDistribution} />
+          <MostReadAuthors values={mostReadAuthors} />
+        </div>
+        <div className="flex flex-col items-start gap-y-8 desktop:flex-row desktop:gap-x-8">
+          <DecadeDistribution values={stats.decadeDistribution} />
+          <KindDistribution values={stats.kindDistribution} />
+          <EditionDistribution values={stats.editionDistribution} />
+        </div>
       </div>
     </Layout>
   );

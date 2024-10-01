@@ -6,6 +6,8 @@ import { MostReadAuthors } from "src/components/MostReadAuthors";
 import { PageTitle } from "src/components/PageTitle";
 import { StatsNavigation } from "src/components/StatsNavigation";
 
+import { StatsBackdrop } from "../Backdrop";
+import { Layout } from "../Layout";
 import { Callouts } from "./Callouts";
 
 export interface Props {
@@ -22,39 +24,42 @@ export function YearStats({
   distinctStatYears,
 }: Props): JSX.Element {
   return (
-    <main className="flex flex-col items-center">
-      <header className="flex flex-col flex-wrap justify-between px-pageMargin">
-        <div className="flex flex-col items-center">
-          <PageTitle className="pt-6 desktop:pt-8">{`${year} Stats`}</PageTitle>
-          <p className="text-subtle">
-            {[...distinctStatYears].reverse()[0] === year
-              ? "A year in progress..."
-              : "A Year in Review"}
-          </p>
-          <div className="spacer-y-6" />
-          <StatsNavigation
-            currentYear={year}
-            linkFunc={(year: string) => {
-              if (year === "all") {
-                return "/readings/stats/";
-              }
+    <Layout
+      addGradient={false}
+      className="flex flex-col items-center bg-subtle"
+    >
+      <StatsBackdrop
+        breadcrumb={<a href="/viewings/">Viewing Log</a>}
+        title={`${year} Stats`}
+        deck={
+          [...distinctStatYears].reverse()[0] === year
+            ? "A year in progress..."
+            : "A Year in Review"
+        }
+      >
+        <StatsNavigation
+          currentYear={year}
+          linkFunc={(year: string) => {
+            if (year === "all") {
+              return "/readings/stats/";
+            }
 
-              return `/readings/stats/${year}/`;
-            }}
-            years={distinctStatYears}
-          />
+            return `/readings/stats/${year}/`;
+          }}
+          years={distinctStatYears}
+        />
+        <Callouts workCount={stats.workCount} bookCount={stats.bookCount} />
+      </StatsBackdrop>
+      <div className="mx-auto flex w-full max-w-screen-max flex-col items-stretch gap-y-8 py-10 tablet:px-container">
+        <div className="mx-auto flex w-full flex-col gap-y-8 desktop:max-w-[calc(66%_+_24px)]">
+          <MostReadAuthors values={mostReadAuthors} />
         </div>
-        <div>
-          <div className="spacer-y-8" />
-          <Callouts workCount={stats.workCount} bookCount={stats.bookCount} />
+        <div className="flex flex-col items-start gap-y-8 desktop:flex-row desktop:gap-x-8">
+          <DecadeDistribution values={stats.decadeDistribution} />
+          <KindDistribution values={stats.kindDistribution} />
+          <EditionDistribution values={stats.editionDistribution} />
         </div>
-      </header>
-      <div className="flex w-full max-w-screen-desktop flex-col items-stretch gap-y-8 py-8 tablet:px-gutter desktop:px-pageMargin">
-        <MostReadAuthors values={mostReadAuthors} />
-        <DecadeDistribution values={stats.decadeDistribution} />
-        <KindDistribution values={stats.kindDistribution} />
-        <EditionDistribution values={stats.editionDistribution} />
       </div>
-    </main>
+    </Layout>
   );
 }
