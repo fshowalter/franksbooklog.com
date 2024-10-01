@@ -9,10 +9,10 @@ import { BackdropImageConfig } from "./Article";
 
 export async function getProps({
   slug,
-  alt,
+  deck,
 }: {
   slug: string;
-  alt: string;
+  deck: string;
 }): Promise<Props> {
   const { title, content } = await getPage(slug);
   const recentReviews = await mostRecentReviews(4);
@@ -20,8 +20,7 @@ export async function getProps({
   return {
     title,
     content,
-    alt,
-    backdropImageProps: await getBackdropImageProps(slug, BackdropImageConfig),
+    deck,
     recentReviews: await Promise.all(
       recentReviews.map(async (review) => {
         return {

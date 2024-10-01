@@ -74,8 +74,8 @@ export function Author({
           avatarImageProps={avatarImageProps}
           breadcrumb={
             <a
-              className="px-4 hover:bg-default hover:text-default"
-              href="authors/"
+              className="underline decoration-2 underline-offset-8 hover:text-accent"
+              href="/authors/"
             >
               Authors
             </a>
@@ -183,8 +183,14 @@ function Deck({
   if (shelfWorkCount > 0) {
     shelfText = (
       <>
-        , and <span className="text-emphasis">{shelfWorkCount}</span> titles on
-        the shelf
+        {" "}
+        with {shelfWorkCount} on{" "}
+        <a
+          className="underline decoration-2 underline-offset-8 hover:text-accent"
+          href="/shelf/"
+        >
+          the shelf
+        </a>
       </>
     );
   }
@@ -197,8 +203,7 @@ function Deck({
 
   return (
     <div className="px-gutter text-center text-subtle">
-      Author of <span className="text-emphasis">{reviewedWorkCount}</span>{" "}
-      reviewed {works}
+      Author of {reviewedWorkCount} reviewed {works}
       {shelfText}.
     </div>
   );

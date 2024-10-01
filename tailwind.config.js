@@ -10,8 +10,9 @@ export default {
       subtle: "var(--bg-subtle)",
       canvas: "var(--bg-canvas)",
       footer: "var(--bg-footer)",
-      inverse: "var(--bg-inverse)",
+      abandoned: "var(--bg-abandoned)",
       stripe: "var(--bg-stripe)",
+      accent: "var(--bg-accent)",
       unset: "unset",
     },
     borderColor: {

@@ -189,9 +189,7 @@ function Breadcrumb({ value }: { value?: React.ReactNode }) {
   }
 
   return (
-    <p className="mb-2 font-sans text-sm uppercase tracking-wide underline decoration-subtle decoration-2 underline-offset-8">
-      {value}
-    </p>
+    <p className="mb-2 font-sans text-sm uppercase tracking-wide">{value}</p>
   );
 }
 

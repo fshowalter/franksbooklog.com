@@ -6,8 +6,8 @@ import { Grade } from "src/components/Grade";
 import { toSentenceArray } from "src/utils";
 
 export const CoverImageConfig = {
-  width: 250,
-  height: 375,
+  width: 248,
+  height: 372,
 };
 
 function formatDate(reviewDate: Date) {
@@ -43,7 +43,7 @@ export function HomeListItem({
   eagerLoadCoverImage: boolean;
 }): JSX.Element {
   return (
-    <li className="relative flex w-[48.5%] max-w-[250px] flex-col items-center border-default bg-default tablet:w-[31.33333333%] desktop:w-[14.16666667%]">
+    <li className="relative flex w-[48.5%] max-w-[248px] flex-col items-center border-default bg-default tablet:w-[31.33333333%] desktop:w-[14.16666667%]">
       <Cover
         imageProps={value.coverImageProps}
         decoding="async"

@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --bg-accent: #0056b3;
+  --bg-accent: #7c5050;
+  --bg-abandoned: #da0101;
   --bg-canvas: #f2f0e8;
   --bg-default-alpha: 0.4;
   --bg-default-rgb: 255, 255, 255;
@@ -33,7 +34,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg-accent: #0056b3;
+    --bg-accent: #c86666;
     --bg-canvas: #484745;
     --bg-default-alpha: 0.5;
     --bg-default-rgb: 50, 47, 47;
