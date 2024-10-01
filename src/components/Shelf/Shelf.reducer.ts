@@ -157,7 +157,9 @@ export function reducer(state: State, action: ActionType): State {
       return (
         clearFilter(action.value, state, "author") ??
         updateFilter(state, "author", (value) => {
-          return value.authors[0].name === action.value;
+          return value.authors.some((author) => {
+            return author.name === action.value;
+          });
         })
       );
     }

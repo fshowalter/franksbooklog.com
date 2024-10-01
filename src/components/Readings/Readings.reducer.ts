@@ -1,7 +1,7 @@
 import type { FilterableState } from "src/utils";
 import { filterTools, sortString } from "src/utils";
 
-import type { ListItemValue } from "./List";
+import type { ListItemValue } from "./Readings";
 
 const SHOW_COUNT_DEFAULT = 100;
 
@@ -168,7 +168,7 @@ export function reducer(state: State, action: ActionType): State {
     }
     case Actions.FILTER_READING_YEAR: {
       return updateFilter(state, "readingYear", (value) => {
-        const readingYear = yearFormatter.format(value.date);
+        const readingYear = value.readingYear;
         return (
           readingYear >= action.values[0] && readingYear <= action.values[1]
         );

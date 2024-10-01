@@ -152,7 +152,7 @@ export function reducer(state: State, action: ActionType): State {
     case Actions.FILTER_KIND: {
       return (
         clearFilter(action.value, state, "kind") ??
-        updateFilter(state, "medium", (value) => {
+        updateFilter(state, "kind", (value) => {
           return value.kind === action.value;
         })
       );

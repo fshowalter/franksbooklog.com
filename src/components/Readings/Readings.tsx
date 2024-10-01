@@ -55,10 +55,6 @@ export function Readings({
   distinctReadingYears,
   distinctWorkYears,
   initialSort,
-  workCount,
-  shortStoryCount,
-  bookCount,
-  abandonedCount,
 }: Props): JSX.Element {
   const [state, dispatch] = useReducer(
     reducer,

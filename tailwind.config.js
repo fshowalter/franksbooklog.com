@@ -1,4 +1,3 @@
-const BACKDROP_WIDTH = "960px";
 const PROSE_CONTENT_WIDTH = "39rem";
 
 /** @type {import('tailwindcss').Config} */
@@ -11,6 +10,7 @@ export default {
       canvas: "var(--bg-canvas)",
       footer: "var(--bg-footer)",
       abandoned: "var(--bg-abandoned)",
+      inverse: "var(--bg-inverse)",
       stripe: "var(--bg-stripe)",
       accent: "var(--bg-accent)",
       unset: "unset",
