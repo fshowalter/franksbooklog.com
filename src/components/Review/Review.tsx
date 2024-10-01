@@ -7,10 +7,13 @@ import { LongFormText } from "src/components/LongFormText";
 import { PageTitle } from "src/components/PageTitle";
 import { toSentenceArray } from "src/utils/";
 
+import { Layout } from "../Layout";
+import { SubHeading } from "../SubHeading";
 import { IncludedWorks } from "./IncludedWorks";
 import { MoreReviews } from "./MoreReviews";
 import { ReadingHistoryListItem } from "./ReadingHistoryListItem";
 import { StructuredData } from "./StructuredData";
+
 export const CoverImageConfig = {
   width: 248,
   height: 372,
@@ -42,49 +45,36 @@ export function Review({
   moreReviews,
 }: Props): JSX.Element {
   return (
-    <main
-      data-pagefind-body
-      id="top"
-      className="flex flex-col items-center pt-6 desktop:pt-12"
-    >
-      <header className="flex w-full flex-col items-center px-pageMargin">
+    <Layout hasBackdrop={false} className="flex flex-col" data-pagefind-body>
+      <header className="mb-12 flex flex-col items-center px-[8%] pt-10">
         <Title title={value.title} subtitle={value.subtitle} />
-        <div className="spacer-y-2" />
         <Authors values={value.authors} />
-        <div className="spacer-y-2 desktop:spacer-y-4" />
         <YearAndKind yearPublished={value.yearPublished} kind={value.kind} />
-        <div className="spacer-y-8" />
         <ReviewCover coverImageProps={coverImageProps} />
-        <div className="spacer-y-12" />
         <ReviewGrade value={value.grade} />
         <ReviewDate value={value.date} />
-        <div className="spacer-y-8" />
       </header>
-      <div className="flex flex-col px-pageMargin desktop:px-gutter">
+      <div className="flex flex-col items-center gap-16 px-container pb-20 desktop:gap-20 desktop:pb-32">
         <LongFormText className="max-w-prose" text={value.content} />
       </div>
       {value.includedWorks.length > 0 && (
         <div className="w-full max-w-popout">
-          <div className="spacer-y-16" />
           <IncludedWorks values={value.includedWorks} />
         </div>
       )}
-      <div className="spacer-y-20" />
       <div className="w-full max-w-popout">
-        <h2 className="px-gutter text-md font-normal text-subtle shadow-bottom">
+        <SubHeading as="h2" className="shadow-bottom">
           Reading History
-          <div className="spacer-y-2" />
-        </h2>
+        </SubHeading>
         <ul>
           {value.readings.map((value) => (
             <ReadingHistoryListItem key={value.sequence} value={value} />
           ))}
         </ul>
       </div>
-      <div className="spacer-y-32" />
       <div
         data-pagefind-ignore
-        className="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+        className="flex w-full flex-col items-center gap-y-12 bg-subtle pb-32 pt-16 tablet:pt-8 desktop:gap-y-24"
       >
         <MoreReviews values={moreReviews} />
       </div>
@@ -93,7 +83,7 @@ export function Review({
         grade={value.grade}
         seoImageSrc={seoImageSrc}
       />
-    </main>
+    </Layout>
   );
 }
 
@@ -108,7 +98,7 @@ function Title({
     <div className="text-center">
       <PageTitle>{title}</PageTitle>
       {subtitle && (
-        <div className="max-w-prose pt-2 font-normal tracking-1px text-muted">
+        <div className="tracking-1px max-w-prose pt-2 font-normal text-muted">
           {subtitle}
         </div>
       )}
@@ -124,7 +114,7 @@ function YearAndKind({
   kind: ReviewWithContent["kind"];
 }) {
   return (
-    <div className="uppercase tracking-1px text-subtle">
+    <div className="tracking-1px uppercase text-subtle">
       <span className="tracking-0.25px">{yearPublished}</span> | {kind}
     </div>
   );
@@ -191,7 +181,7 @@ function ReviewCover({
 function ReviewGrade({ value }: { value: ReviewWithContent["grade"] }) {
   if (value == "Abandoned") {
     return (
-      <div className="text-md uppercase tracking-1px text-emphasis">
+      <div className="tracking-1px text-md uppercase text-emphasis">
         Abandoned
       </div>
     );
@@ -201,7 +191,7 @@ function ReviewGrade({ value }: { value: ReviewWithContent["grade"] }) {
 
 function ReviewDate({ value }: { value: ReviewWithContent["date"] }) {
   return (
-    <div className="flex flex-col items-center tracking-0.5px text-subtle">
+    <div className="tracking-0.5px flex flex-col items-center text-subtle">
       <span>on</span> {formatDate(value)}
     </div>
   );

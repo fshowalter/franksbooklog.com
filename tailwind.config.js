@@ -1,5 +1,5 @@
 const BACKDROP_WIDTH = "960px";
-const PROSE_CONTENT_WIDTH = "36rem";
+const PROSE_CONTENT_WIDTH = "39rem";
 
 /** @type {import('tailwindcss').Config} */
 export default {
