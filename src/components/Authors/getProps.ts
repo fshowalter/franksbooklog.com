@@ -2,8 +2,7 @@ import { allAuthors } from "src/api/authors";
 import { getAvatarImageProps } from "src/api/avatars";
 import { ListItemAvatarImageConfig } from "src/components/ListItemAvatar";
 
-import type { Props } from "./Authors";
-import { type ListItemValue } from "./List";
+import type { ListItemValue, Props } from "./Authors";
 
 export async function getProps(): Promise<Props> {
   const authors = await allAuthors();

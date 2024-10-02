@@ -27,164 +27,156 @@
     />
     <title>&#39;Salem&#39;s Lot by Stephen King | Frank&#39;s Book Log</title>
   </head>
-  <body class="data-[search-modal-open]:blur-sm">
+  <body>
     <div>
       <a
         href="#content"
         class="absolute left-1/2 top-0.5 z-50 mx-auto bg-subtle px-6 py-2 text-center text-accent [transform:translate(-50%,calc(-100%_-_2px))] focus:[transform:translate(-50%,0%)]"
         >Skip to content</a
       >
-      <div
-        class="image-filter mx-auto min-h-4 w-full max-w-canvas bg-[url(&#x27;/assets/ripnotcomingsoon.avif&#x27;)] desktop:sticky desktop:top-0 desktop:z-40"
-      ></div>
-      <div class="mx-auto flex min-h-full max-w-canvas flex-col bg-default">
+      <div class="flex min-h-full w-full flex-col bg-default">
         <header
-          class="flex flex-col items-center gap-6 bg-default px-pageMargin py-6 text-center shadow-bottom desktop:sticky desktop:top-4 desktop:z-40 desktop:flex-row desktop:justify-between desktop:gap-8 desktop:py-5 desktop:text-left max:justify-center max:py-8"
+          class="z-20 flex w-full items-center justify-between px-container py-4 tablet:p-6 desktop:inset-x-0 desktop:z-40 desktop:flex-row desktop:flex-wrap desktop:px-16 desktop:py-8 desktop:text-left"
+          style="position: static"
         >
-          <div
-            class="items-inherit justify-items-inherit flex flex-col max:absolute max:left-[var(--page-margin-width)]"
-          >
-            <h1
-              class="whitespace-nowrap text-[1.5625rem] font-normal leading-8"
+          <div class="flex flex-col">
+            <div
+              class="whitespace-nowrap font-normal leading-8"
+              style="font-size: 1.5625rem"
             >
-              <a class="text-default" href="/">Frank&#x27;s Book Log</a>
-            </h1>
-            <p class="w-full text-sm italic leading-4 text-muted desktop:pl-px">
+              <a href="/">Frank&#x27;s Book Log</a>
+            </div>
+            <p class="w-full pl-px text-sm italic leading-4 opacity-85">
               Literature is a relative term.
             </p>
           </div>
-          <div
-            class="w-full max-w-prose desktop:order-4 desktop:w-auto max:absolute max:right-[var(--page-margin-width)]"
-          >
-            <button
-              data-open-modal="true"
-              disabled=""
-              aria-label="Search"
-              aria-keyshortcuts="Control+K"
-              class="safari-border-radius-fix flex w-full items-center overflow-hidden rounded-md text-sm leading-6 text-subtle ring-1 ring-border hover:ring-accent"
-            >
-              <kbd
-                class="ml-auto mt-px hidden min-h-6 flex-none items-center bg-subtle pl-3 pr-4 font-mono text-sm font-light opacity-70 desktop:flex"
-                ><kbd class="text-md leading-5">Ctrl</kbd
-                ><kbd class="text-sm">K</kbd></kbd
-              ><svg
-                class="mr-2 size-10 flex-none border-0 border-r border-default bg-subtle fill-subtle px-3 py-1 desktop:w-4 desktop:border-r-0 desktop:bg-unset desktop:px-0"
-                viewBox="0 0 16 16"
+          <div class="flex items-center">
+            <nav class="hidden w-full desktop:block desktop:w-auto">
+              <ul class="flex flex-wrap justify-start gap-x-6 text-xl">
+                <li class="block whitespace-nowrap tracking-serif-wide">
+                  <a
+                    class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
+                    href="/"
+                    >Home</a
+                  >
+                </li>
+                <li class="block whitespace-nowrap tracking-serif-wide">
+                  <a
+                    class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
+                    href="/how-i-grade/"
+                    >How I Grade</a
+                  >
+                </li>
+                <li class="block whitespace-nowrap tracking-serif-wide">
+                  <a
+                    class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
+                    href="/reviews/"
+                    >Reviews</a
+                  >
+                </li>
+                <li class="block whitespace-nowrap tracking-serif-wide">
+                  <a
+                    class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
+                    href="/readings/"
+                    >Reading Log</a
+                  >
+                </li>
+                <li class="block whitespace-nowrap tracking-serif-wide">
+                  <a
+                    class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
+                    href="/authors/"
+                    >Authors</a
+                  >
+                </li>
+                <li class="block whitespace-nowrap tracking-serif-wide">
+                  <a
+                    class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
+                    href="/shelf/"
+                    >Shelf</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <div class="z-[1000]">
+              <button
+                data-open-modal="true"
+                disabled=""
+                aria-label="Search"
+                aria-keyshortcuts="Control+K"
+                class="flex items-center justify-between overflow-hidden text-sm leading-6 ring-default desktop:ml-6"
+                type="button"
+                title="Search: Control+K"
               >
-                <path
-                  fill-rule="evenodd"
-                  d="M10.442 10.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z"
-                ></path>
-                <path
-                  fill-rule="evenodd"
-                  d="M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z"
-                ></path></svg
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6 desktop:size-7"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <input type="checkbox" id="mobile-nav" class="hidden" /><label
+              for="mobile-nav"
+              class="hamburger-icon desktop:hidden"
               ><span
-                class="flex items-baseline whitespace-nowrap p-2 text-base opacity-70 desktop:hidden"
-                >Quick search...</span
-              >
-            </button>
-          </div>
-          <nav class="w-full desktop:w-auto">
+                style="background: var(--fg-default)"
+                class="hamburger-icon-bars"
+              ></span
+            ></label>
             <ul
-              class="flex flex-wrap justify-center gap-x-4 gap-y-2 text-accent tablet:gap-x-6 desktop:flex-nowrap desktop:justify-start"
+              class="hamburger-menu flex flex-col items-start gap-y-5 text-left text-inverse desktop:hidden"
             >
-              <li class="block whitespace-nowrap tracking-0.5px">
-                <a class="text-muted" href="/">Home</a>
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a href="/">Home</a>
               </li>
-              <li class="block whitespace-nowrap tracking-0.5px">
-                <a class="text-inherit" href="/how-i-grade/">How I Grade</a>
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a href="/how-i-grade/">How I Grade</a>
               </li>
-              <li class="block whitespace-nowrap tracking-0.5px">
-                <a class="text-inherit" href="/reviews/">Reviews</a>
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a href="/reviews/">Reviews</a>
               </li>
-              <li class="block whitespace-nowrap tracking-0.5px">
-                <a class="text-inherit" href="/readings/">Reading Log</a>
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a href="/readings/">Reading Log</a>
+                <ol class="mt-4">
+                  <li
+                    class="mb-2 font-sans text-xs uppercase tracking-wide text-inverse-subtle"
+                  >
+                    <a href="/readings/stats/">Stats</a>
+                  </li>
+                </ol>
               </li>
-              <li class="block whitespace-nowrap tracking-0.5px">
-                <a class="text-inherit" href="/authors/">Authors</a>
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a href="/authors/">Authors</a>
               </li>
-              <li class="block whitespace-nowrap tracking-0.5px">
-                <a class="text-inherit" href="/shelf/">Shelf</a>
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a href="/shelf/">Shelf</a>
               </li>
             </ul>
-          </nav>
+          </div>
         </header>
-        <div class="grow" id="content">
-          <main
-            data-pagefind-body="true"
-            id="top"
-            class="flex flex-col items-center pt-6 desktop:pt-12"
-          >
-            <header class="flex w-full flex-col items-center px-pageMargin">
-              <div class="text-center">
-                <h1
-                  data-pagefind-meta="title"
-                  class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
-                >
-                  &#x27;Salem&#x27;s Lot
-                </h1>
+        <main class="grow flex flex-col" id="content" data-pagefind-body="true">
+          <header class="mb-12 flex flex-col items-center px-[8%] pt-10">
+            <h1
+              data-pagefind-meta="title"
+              class="text-center text-4xl desktop:text-6xl"
+            >
+              &#x27;Salem&#x27;s Lot
+            </h1>
+            <div class="mt-4 text-center text-md text-muted">
+              by<!-- -->
+              <div class="inline-block text-accent">
+                <a href="/reviews/authors/stephen-king/">Stephen King</a>
               </div>
-              <div class="spacer-y-2"></div>
-              <div class="text-center text-md text-muted">
-                by<!-- -->
-                <div class="inline-block text-accent">
-                  <a href="/reviews/authors/stephen-king/">Stephen King</a>
-                </div>
-              </div>
-              <div class="spacer-y-2 desktop:spacer-y-4"></div>
-              <div class="uppercase tracking-1px text-subtle">
-                <span class="tracking-0.25px">1975</span> |
-                <!-- -->Novel
-              </div>
-              <div class="spacer-y-8"></div>
-              <div
-                data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Fsalems-lot-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
-                class="relative flex h-[340px] w-full max-w-popout flex-col items-center"
-              >
-                <div
-                  data-pagefind-meta="image_alt:A cover for &#x27;Salem&#x27;s Lot by Stephen King"
-                  class="cover-clip-path absolute inset-0 overflow-hidden"
-                >
-                  <div
-                    style="
-                      background-color: var(--bg-default);
-                      background-image: linear-gradient(
-                          90deg,
-                          rgba(var(--bg-default-rgb), 1) 0%,
-                          rgba(var(--bg-default-rgb), var(--bg-default-alpha))
-                            30%,
-                          rgba(var(--bg-default-rgb), 0) 50%,
-                          rgba(var(--bg-default-rgb), var(--bg-default-alpha))
-                            70%,
-                          rgba(var(--bg-default-rgb), 1) 100%
-                        ),
-                        url(/_image?/content%2Fassets%2Fcovers%2Fsalems-lot-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif);
-                    "
-                    class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
-                  ></div>
-                  <div class="absolute size-full backdrop-blur"></div>
-                </div>
-                <div
-                  class="relative -top-4 z-10 h-[372px] shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                >
-                  <img
-                    srcset="
-                      /_image?/content%2Fassets%2Fcovers%2Fsalems-lot-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;q=80&amp;f=avif 1x,
-                      /_image?/content%2Fassets%2Fcovers%2Fsalems-lot-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;q=80&amp;f=avif 2x
-                    "
-                    src="/_image?/content%2Fassets%2Fcovers%2Fsalems-lot-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
-                    alt="A cover for &#x27;Salem&#x27;s Lot by Stephen King"
-                    width="248"
-                    height="372"
-                    class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                    loading="eager"
-                    decoding="async"
-                    style="aspect-ratio: 0.66666667"
-                  />
-                </div>
-              </div>
-              <div class="spacer-y-12"></div>
+            </div>
+            <div class="mt-4">
               <picture
                 ><source
                   srcset="/svg/4-stars-dark.svg"
@@ -195,343 +187,441 @@
                   height="32"
                   width="160"
               /></picture>
+            </div>
+            <div
+              class="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+            >
+              <span class="tracking-wide">1975</span> |
+              <!-- -->Novel
+            </div>
+            <div
+              data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Fsalems-lot-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
+              class="relative my-12 flex h-[340px] w-full max-w-popout flex-col items-center"
+            >
               <div
-                class="flex flex-col items-center tracking-0.5px text-subtle"
+                data-pagefind-meta="image_alt:A cover for &#x27;Salem&#x27;s Lot by Stephen King"
+                class="cover-clip-path absolute inset-0 overflow-hidden"
               >
-                <span>on</span>
-                <!-- -->Fri, Oct 14, 2022
+                <div
+                  style="
+                    background-color: var(--bg-default);
+                    background-image: linear-gradient(
+                        90deg,
+                        rgba(var(--bg-default-rgb), 1) 0%,
+                        rgba(var(--bg-default-rgb), var(--bg-default-alpha)) 30%,
+                        rgba(var(--bg-default-rgb), 0) 50%,
+                        rgba(var(--bg-default-rgb), var(--bg-default-alpha)) 70%,
+                        rgba(var(--bg-default-rgb), 1) 100%
+                      ),
+                      url(/_image?/content%2Fassets%2Fcovers%2Fsalems-lot-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif);
+                  "
+                  class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
+                ></div>
+                <div class="absolute size-full backdrop-blur"></div>
               </div>
-              <div class="spacer-y-8"></div>
-            </header>
-            <div class="flex flex-col px-pageMargin desktop:px-gutter">
               <div
-                class="rendered-markdown font-light text-md/7 tracking-0.3px tablet:text-xl/8 max-w-prose"
+                class="relative -top-4 z-10 h-[372px] shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
               >
-                <p>
-                  <strong>Stephen King’s sophomore novel</strong> transplants
-                  <a href="/reviews/dracula-by-bram-stoker/"
-                    ><em>the Dracula story</em></a
-                  >
-                  to a remote New England town named Jerusalem’s Lot—`Salem’s
-                  Lot to the locals.
-                </p>
-                <!-- end -->
-                <p>
-                  Our protagonist is Ben Mears, a tall, dark-haired writer
-                  returning to his hometown. He strikes up a romantic
-                  relationship with Susan, a local girl, and high school English
-                  teacher Matt Burke. A book centered on the notorious Marsten
-                  House that overlooks the Lot takes shape. Things are looking
-                  good.
-                </p>
-                <p>
-                  But another pair of arrivals coincide with Ben’s. They’ve
-                  purchased the Marsten House, as well as a downtown storefront,
-                  which they convert to an antique shop. One, a bald man with
-                  long fingers named Straker, fronts the store and handles the
-                  business deals. His partner, Barlow, remains unseen, away on a
-                  buying trip in New York.
-                </p>
-                <p>
-                  Of course, Barlow isn’t in New York. He’s in a coffin inside
-                  the Marsten House. He’s begun feeding on the residents of the
-                  Lot, making them vampires like himself, as young Mark Petrie
-                  discovers one night when his friend Dannie Glick, who died
-                  days earlier, materializes outside his bedroom window, tapping
-                  and begging Mark to let him in.
-                </p>
-                <p>
-                  This marked my third time through <em>`Salem’s Lot</em> and it
-                  improves with each visit. After crafting such a memorable
-                  small-town setting in
-                  <a href="/reviews/carrie-by-stephen-king/"><em>Carrie</em></a
-                  >, King plays to his strengths and makes a small town the
-                  focus of this follow-up novel. As Matt says:
-                </p>
-                <blockquote>
-                  <p>
-                    “There’s little good in sedentary small towns. Mostly
-                    indifference spiced with an occasional vapid evil—or worse,
-                    a conscious one.”
-                  </p>
-                </blockquote>
-                <p>
-                  The Lot proves more isolated than <em>Carrie</em>’s
-                  Chamberlain, though the fixtures feel familiar. A small-town
-                  constable, a roadhouse bar, a gossip network. But King adds
-                  more to the Lot, including a boarding house, the town dump,
-                  and the wild Marshes area. Indeed, on this visit, the Lot
-                  reminded of another King town, Derry.
-                </p>
-                <p>
-                  Also new this time around, I picked up the plot’s nod to
-                  Hammer’s <em>Horror of Dracula</em>. Nice touch.
-                </p>
-                <p>
-                  Some gripes remain. The physician, Jimmy Cody, still feels
-                  underwritten. A late entry into the story, he functions as a
-                  necessary plot device since this version’s Van Helsing is an
-                  English teacher, not a doctor.
-                </p>
-                <p>
-                  And once again, I groaned at Susan’s reasoning that everyone
-                  else is crazy and that she’ll go sort everything out herself.
-                </p>
-                <blockquote>
-                  <p>
-                    They were going at it stupidly, taking the long way around
-                    the barn to prove something that was (sorry, Mr. Burke)
-                    probably a lot of horseshit anyway. Susan decided to go up
-                    to the Marsten House now, this afternoon.
-                  </p>
-                </blockquote>
-                <p>
-                  I understand King needing to move the plot forward, but this
-                  inanity demeans Susan’s character, reducing her to another
-                  stupid horror victim running up the stairs instead of out the
-                  door.
-                </p>
-                <p>
-                  On the bright side, my biggest gripe—the finale’s “blue flame
-                  of power”—didn’t feel as cheap this time around. I still find
-                  it unnecessary, but I can better appreciate how King was
-                  trying to showcase a force to counter the one fueling Barlow.
-                  The “hand of God” metaphor is one King would struggle with
-                  again.
-                </p>
-                <p>
-                  Ron McLarty’s narration proved a mixed bag. He’s perfect for
-                  Ben and I loved the New England drawl he brought to constable
-                  Parkins Gillespie, but pitching up his voice for Susan and
-                  Mark grated. And his performance of Barlow aims for Lugosi but
-                  lands closer to the Count from Sesame Street.
-                </p>
-                <hr />
-                <p>
-                  After this listen, I found a copy of the
-                  <em>Illustrated Edition</em>, which appends a “Deleted Scenes”
-                  section, showcasing bits excised from the final manuscript.
-                  This proved illuminating, as some of these excised scenes
-                  would have addressed my gripes.
-                </p>
-                <p>
-                  It’s all about the rats. They play a bigger part in the
-                  original manuscript. When Susan and Mark break into the
-                  Marsten House, they descend into the cellar where they find
-                  thousands of the vermin serving as Barlow’s Praetorian Guard.
-                  They swarm over the floor and walls. Susan raises the small
-                  cross around her neck and we get an early reference to the
-                  “blue flame of power” as it glows and the rats shrink back
-                  from the light, allowing her to part them like Moses.
-                </p>
-                <p>
-                  Another deleted scene introduces both James Cody and the
-                  <em>Dracula</em> novel. Cody feels less extraneous in this
-                  original draft, thanks to his horrific demise. Rather than
-                  succumbing to a booby-trapped staircase, he makes it
-                  downstairs and discovers the rats. They swarm over him,
-                  tearing at his clothes, skin, and eyes. One crawls into his
-                  mouth. He tries to retreat upstairs but, blinded, slips on the
-                  steps and breaks his ankle. The rats eat him alive. A
-                  memorable scene that raises the finale’s narrative and
-                  emotional stakes, and gives the Cody character a firmer place
-                  in the story.
-                </p>
-                <p>
-                  Father Callahan also meets a darker but more memorable end in
-                  this draft.
-                </p>
-                <blockquote>
-                  <p>
-                    He withdrew the blade, and plunged it in again, with all
-                    that remained of his flagging strength. As thought began to
-                    ebb, he realized that his faith—some of it—had come back and
-                    he might have cheated himself of victory in his final,
-                    instinctive effort to save his soul from the hell of the
-                    Undead; and that was the most serious denial of faith of
-                    all.
-                  </p>
-                  <p>
-                    Then thought was gone and he fell forward on the haft of the
-                    knife and he closed his eyes and let himself go off to see
-                    what gods there were.
-                  </p>
-                </blockquote>
-                <p>
-                  The remaining deleted scenes prove interesting, but
-                  extraneous. King excised a lot of early passages related to
-                  the Marsten House. It’s clear the haunted house idea excited
-                  him, foreshadowing his next book,
-                  <a href="/reviews/the-shining-by-stephen-king/"
-                    ><em>The Shining</em></a
-                  >.
-                </p>
-                <p>
-                  Also excised is a scene set in the boarding house Ben’s
-                  calling home, after Danny Glick dies. Word gets out he might
-                  have died from a rare disease and a nervous panic sets in
-                  among the boarders. Unlike the haunted house angle, which
-                  remains in the final manuscript, King removed any trace of
-                  this disease metaphor from the published work, though it
-                  portends King’s fifth novel, <em>The Stand</em>.
-                </p>
-                <p>
-                  And the original ending saw Ben and Mark drag Barlow into the
-                  sunlight. Another callback to <em>Horror of Dracula</em> but
-                  one King did well to revise.
-                </p>
-                <p>
-                  But perhaps most interesting are the changes unrelated to
-                  pacing, theme, or gore—the name changes. In these early
-                  drafts, `Salem’s Lot is Momson, and Barlow is Sarlinov. I’d
-                  love to know the thought process as these names evolved,
-                  considering how crucial they prove to the book’s identity.
-                </p>
+                <img
+                  srcset="
+                    /_image?/content%2Fassets%2Fcovers%2Fsalems-lot-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;q=80&amp;f=avif 1x,
+                    /_image?/content%2Fassets%2Fcovers%2Fsalems-lot-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;q=80&amp;f=avif 2x
+                  "
+                  src="/_image?/content%2Fassets%2Fcovers%2Fsalems-lot-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
+                  alt="A cover for &#x27;Salem&#x27;s Lot by Stephen King"
+                  width="248"
+                  height="372"
+                  class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
+                  loading="eager"
+                  decoding="async"
+                  style="aspect-ratio: 0.66666667"
+                />
               </div>
             </div>
-            <div class="spacer-y-20"></div>
+          </header>
+          <div
+            class="flex flex-col items-center gap-16 px-container pb-20 desktop:gap-20 desktop:pb-32"
+          >
+            <div
+              class="rendered-markdown font-light tracking-0.3px text-md/7 tablet:text-xl/8 max-w-prose first-letter:leading-[.8] first-letter:text-default tablet:first-letter:pr-3 desktop:first-letter:text-[64px] [&amp;&gt;p:first-child]:first-letter:float-left [&amp;&gt;p:first-child]:first-letter:mt-[6px] [&amp;&gt;p:first-child]:first-letter:pr-2 [&amp;&gt;p:first-child]:first-letter:font-sans [&amp;&gt;p:first-child]:first-letter:text-[56px] [&amp;&gt;p:first-child]:first-letter:font-bold"
+            >
+              <p>
+                <strong>Stephen King’s sophomore novel</strong> transplants
+                <a href="/reviews/dracula-by-bram-stoker/"
+                  ><em>the Dracula story</em></a
+                >
+                to a remote New England town named Jerusalem’s Lot—`Salem’s Lot
+                to the locals.
+              </p>
+              <!-- end -->
+              <p>
+                Our protagonist is Ben Mears, a tall, dark-haired writer
+                returning to his hometown. He strikes up a romantic relationship
+                with Susan, a local girl, and high school English teacher Matt
+                Burke. A book centered on the notorious Marsten House that
+                overlooks the Lot takes shape. Things are looking good.
+              </p>
+              <p>
+                But another pair of arrivals coincide with Ben’s. They’ve
+                purchased the Marsten House, as well as a downtown storefront,
+                which they convert to an antique shop. One, a bald man with long
+                fingers named Straker, fronts the store and handles the business
+                deals. His partner, Barlow, remains unseen, away on a buying
+                trip in New York.
+              </p>
+              <p>
+                Of course, Barlow isn’t in New York. He’s in a coffin inside the
+                Marsten House. He’s begun feeding on the residents of the Lot,
+                making them vampires like himself, as young Mark Petrie
+                discovers one night when his friend Dannie Glick, who died days
+                earlier, materializes outside his bedroom window, tapping and
+                begging Mark to let him in.
+              </p>
+              <p>
+                This marked my third time through <em>`Salem’s Lot</em> and it
+                improves with each visit. After crafting such a memorable
+                small-town setting in
+                <a href="/reviews/carrie-by-stephen-king/"><em>Carrie</em></a
+                >, King plays to his strengths and makes a small town the focus
+                of this follow-up novel. As Matt says:
+              </p>
+              <blockquote>
+                <p>
+                  “There’s little good in sedentary small towns. Mostly
+                  indifference spiced with an occasional vapid evil—or worse, a
+                  conscious one.”
+                </p>
+              </blockquote>
+              <p>
+                The Lot proves more isolated than <em>Carrie</em>’s Chamberlain,
+                though the fixtures feel familiar. A small-town constable, a
+                roadhouse bar, a gossip network. But King adds more to the Lot,
+                including a boarding house, the town dump, and the wild Marshes
+                area. Indeed, on this visit, the Lot reminded of another King
+                town, Derry.
+              </p>
+              <p>
+                Also new this time around, I picked up the plot’s nod to
+                Hammer’s <em>Horror of Dracula</em>. Nice touch.
+              </p>
+              <p>
+                Some gripes remain. The physician, Jimmy Cody, still feels
+                underwritten. A late entry into the story, he functions as a
+                necessary plot device since this version’s Van Helsing is an
+                English teacher, not a doctor.
+              </p>
+              <p>
+                And once again, I groaned at Susan’s reasoning that everyone
+                else is crazy and that she’ll go sort everything out herself.
+              </p>
+              <blockquote>
+                <p>
+                  They were going at it stupidly, taking the long way around the
+                  barn to prove something that was (sorry, Mr. Burke) probably a
+                  lot of horseshit anyway. Susan decided to go up to the Marsten
+                  House now, this afternoon.
+                </p>
+              </blockquote>
+              <p>
+                I understand King needing to move the plot forward, but this
+                inanity demeans Susan’s character, reducing her to another
+                stupid horror victim running up the stairs instead of out the
+                door.
+              </p>
+              <p>
+                On the bright side, my biggest gripe—the finale’s “blue flame of
+                power”—didn’t feel as cheap this time around. I still find it
+                unnecessary, but I can better appreciate how King was trying to
+                showcase a force to counter the one fueling Barlow. The “hand of
+                God” metaphor is one King would struggle with again.
+              </p>
+              <p>
+                Ron McLarty’s narration proved a mixed bag. He’s perfect for Ben
+                and I loved the New England drawl he brought to constable
+                Parkins Gillespie, but pitching up his voice for Susan and Mark
+                grated. And his performance of Barlow aims for Lugosi but lands
+                closer to the Count from Sesame Street.
+              </p>
+              <hr />
+              <p>
+                After this listen, I found a copy of the
+                <em>Illustrated Edition</em>, which appends a “Deleted Scenes”
+                section, showcasing bits excised from the final manuscript. This
+                proved illuminating, as some of these excised scenes would have
+                addressed my gripes.
+              </p>
+              <p>
+                It’s all about the rats. They play a bigger part in the original
+                manuscript. When Susan and Mark break into the Marsten House,
+                they descend into the cellar where they find thousands of the
+                vermin serving as Barlow’s Praetorian Guard. They swarm over the
+                floor and walls. Susan raises the small cross around her neck
+                and we get an early reference to the “blue flame of power” as it
+                glows and the rats shrink back from the light, allowing her to
+                part them like Moses.
+              </p>
+              <p>
+                Another deleted scene introduces both James Cody and the
+                <em>Dracula</em> novel. Cody feels less extraneous in this
+                original draft, thanks to his horrific demise. Rather than
+                succumbing to a booby-trapped staircase, he makes it downstairs
+                and discovers the rats. They swarm over him, tearing at his
+                clothes, skin, and eyes. One crawls into his mouth. He tries to
+                retreat upstairs but, blinded, slips on the steps and breaks his
+                ankle. The rats eat him alive. A memorable scene that raises the
+                finale’s narrative and emotional stakes, and gives the Cody
+                character a firmer place in the story.
+              </p>
+              <p>
+                Father Callahan also meets a darker but more memorable end in
+                this draft.
+              </p>
+              <blockquote>
+                <p>
+                  He withdrew the blade, and plunged it in again, with all that
+                  remained of his flagging strength. As thought began to ebb, he
+                  realized that his faith—some of it—had come back and he might
+                  have cheated himself of victory in his final, instinctive
+                  effort to save his soul from the hell of the Undead; and that
+                  was the most serious denial of faith of all.
+                </p>
+                <p>
+                  Then thought was gone and he fell forward on the haft of the
+                  knife and he closed his eyes and let himself go off to see
+                  what gods there were.
+                </p>
+              </blockquote>
+              <p>
+                The remaining deleted scenes prove interesting, but extraneous.
+                King excised a lot of early passages related to the Marsten
+                House. It’s clear the haunted house idea excited him,
+                foreshadowing his next book,
+                <a href="/reviews/the-shining-by-stephen-king/"
+                  ><em>The Shining</em></a
+                >.
+              </p>
+              <p>
+                Also excised is a scene set in the boarding house Ben’s calling
+                home, after Danny Glick dies. Word gets out he might have died
+                from a rare disease and a nervous panic sets in among the
+                boarders. Unlike the haunted house angle, which remains in the
+                final manuscript, King removed any trace of this disease
+                metaphor from the published work, though it portends King’s
+                fifth novel, <em>The Stand</em>.
+              </p>
+              <p>
+                And the original ending saw Ben and Mark drag Barlow into the
+                sunlight. Another callback to <em>Horror of Dracula</em> but one
+                King did well to revise.
+              </p>
+              <p>
+                But perhaps most interesting are the changes unrelated to
+                pacing, theme, or gore—the name changes. In these early drafts,
+                `Salem’s Lot is Momson, and Barlow is Sarlinov. I’d love to know
+                the thought process as these names evolved, considering how
+                crucial they prove to the book’s identity.
+              </p>
+            </div>
             <div class="w-full max-w-popout">
               <h2
-                class="px-gutter text-md font-normal text-subtle shadow-bottom"
+                class="py-10 font-sans text-xs font-semibold uppercase tracking-wide text-subtle shadow-bottom"
               >
                 Reading History
-                <div class="spacer-y-2"></div>
               </h2>
               <ul>
                 <li
-                  class="grid auto-rows-auto grid-cols-[16px_1ch_1fr] px-gutter pt-4 even:bg-subtle"
+                  class="grid auto-rows-auto grid-cols-[16px_16px_1fr] pt-4 font-sans text-xs even:bg-subtle"
                 >
-                  <div class="mt-1">
-                    <svg
-                      width="1em"
-                      height="1em"
-                      viewBox="0 0 16 16"
-                      class="fill-subtle mr-[1ch] min-h-4 min-w-4"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <title>Watched on</title>
-                      <path
-                        fill-rule="evenodd"
-                        d="M14 2H2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1zM2 1a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2z"
-                      ></path>
-                      <path
-                        fill-rule="evenodd"
-                        d="M14 2H2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1zM2 1a2 2 0 0 0-2 2v2h16V3a2 2 0 0 0-2-2H2z"
-                      ></path>
-                      <path
-                        fill-rule="evenodd"
-                        d="M3.5 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5zm9 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5z"
-                      ></path>
-                    </svg>
-                  </div>
+                  <svg
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 16 16"
+                    class="fill-subtle mr-[1ch] min-h-4 min-w-4"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>Watched on</title>
+                    <path
+                      fill-rule="evenodd"
+                      d="M14 2H2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1zM2 1a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2z"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      d="M14 2H2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1zM2 1a2 2 0 0 0-2 2v2h16V3a2 2 0 0 0-2-2H2z"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      d="M3.5 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5zm9 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5z"
+                    ></path>
+                  </svg>
                   <div class="col-start-3">
-                    <span class="inline-block text-default"
+                    <span
+                      class="inline-block font-sans text-xs font-normal tracking-normal text-subtle"
                       >Fri, Oct 14, 2022</span
                     >
-                    <span class="font-light text-muted"
-                      ><span>via</span> <span>Audible</span></span
+                    <span class="text-subtle"
+                      ><span>via</span>
+                      <span class="font-sans text-xs font-normal text-subtle"
+                        >Audible</span
+                      ></span
                     >
-                    <span class="text-sm font-light leading-none text-subtle"
-                      >(<span
-                        class="rendered-markdown font-light text-sm leading-none"
+                    <span class="font-light tracking-normal text-subtle"
+                      >(<span class="rendered-markdown font-light leading-none"
                         ><span>Read by Ron McLarty</span></span
                       >)</span
                     >
                   </div>
                   <div class="col-start-3 row-start-2">
                     <details class="font-light text-subtle">
-                      <summary>
+                      <summary class="cursor-pointer leading-6">
                         Listened to over<!-- -->
-                        <!-- -->8<!-- -->
-                        Days
+                        <span class="font-normal text-subtle"
+                          >8<!-- -->
+                          Days</span
+                        >
                       </summary>
-                      <ol
-                        class="-ml-gutter grid w-full grid-cols-[auto_1fr_auto] items-center pt-2"
-                      >
-                        <li class="contents *:odd:bg-subtle">
-                          <div class="whitespace-nowrap px-gutter leading-10">
-                            7 Oct 2022
-                          </div>
-                          <div class="h-10 w-full">
+                      <ol class="grid w-full grid-cols-[auto,1fr,auto]">
+                        <li
+                          class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr,auto,auto,1fr] py-3"
+                        >
+                          <div
+                            class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid"
+                          >
+                            <div class="">7 Oct 2022</div>
                             <div
-                              class="progress-bar-bg leading-[38px]"
+                              class="col-start-3 self-center text-nowrap pb-1 text-right font-sans text-xs text-subtle"
+                            >
+                              <div class="">19%</div>
+                            </div>
+                          </div>
+                          <div
+                            class="col-span-2 col-start-2 row-start-3 bg-subtle"
+                          >
+                            <div
+                              class="progress-bar-bg leading-[6px] tablet:mb-0"
                               style="--bar-percent: 19%"
                             >
                                
                             </div>
                           </div>
-                          <div class="px-gutter text-right leading-10">19%</div>
                         </li>
-                        <li class="contents *:odd:bg-subtle">
-                          <div class="whitespace-nowrap px-gutter leading-10">
-                            8 Oct 2022
-                          </div>
-                          <div class="h-10 w-full">
+                        <li
+                          class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr,auto,auto,1fr] py-3"
+                        >
+                          <div
+                            class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid"
+                          >
+                            <div class="">8 Oct 2022</div>
                             <div
-                              class="progress-bar-bg leading-[38px]"
+                              class="col-start-3 self-center text-nowrap pb-1 text-right font-sans text-xs text-subtle"
+                            >
+                              <div class="">30%</div>
+                            </div>
+                          </div>
+                          <div
+                            class="col-span-2 col-start-2 row-start-3 bg-subtle"
+                          >
+                            <div
+                              class="progress-bar-bg leading-[6px] tablet:mb-0"
                               style="--bar-percent: 30%"
                             >
                                
                             </div>
                           </div>
-                          <div class="px-gutter text-right leading-10">30%</div>
                         </li>
-                        <li class="contents *:odd:bg-subtle">
-                          <div class="whitespace-nowrap px-gutter leading-10">
-                            9 Oct 2022
-                          </div>
-                          <div class="h-10 w-full">
+                        <li
+                          class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr,auto,auto,1fr] py-3"
+                        >
+                          <div
+                            class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid"
+                          >
+                            <div class="">9 Oct 2022</div>
                             <div
-                              class="progress-bar-bg leading-[38px]"
+                              class="col-start-3 self-center text-nowrap pb-1 text-right font-sans text-xs text-subtle"
+                            >
+                              <div class="">64%</div>
+                            </div>
+                          </div>
+                          <div
+                            class="col-span-2 col-start-2 row-start-3 bg-subtle"
+                          >
+                            <div
+                              class="progress-bar-bg leading-[6px] tablet:mb-0"
                               style="--bar-percent: 64%"
                             >
                                
                             </div>
                           </div>
-                          <div class="px-gutter text-right leading-10">64%</div>
                         </li>
-                        <li class="contents *:odd:bg-subtle">
-                          <div class="whitespace-nowrap px-gutter leading-10">
-                            10 Oct 2022
-                          </div>
-                          <div class="h-10 w-full">
+                        <li
+                          class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr,auto,auto,1fr] py-3"
+                        >
+                          <div
+                            class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid"
+                          >
+                            <div class="">10 Oct 2022</div>
                             <div
-                              class="progress-bar-bg leading-[38px]"
+                              class="col-start-3 self-center text-nowrap pb-1 text-right font-sans text-xs text-subtle"
+                            >
+                              <div class="">72%</div>
+                            </div>
+                          </div>
+                          <div
+                            class="col-span-2 col-start-2 row-start-3 bg-subtle"
+                          >
+                            <div
+                              class="progress-bar-bg leading-[6px] tablet:mb-0"
                               style="--bar-percent: 72%"
                             >
                                
                             </div>
                           </div>
-                          <div class="px-gutter text-right leading-10">72%</div>
                         </li>
-                        <li class="contents *:odd:bg-subtle">
-                          <div class="whitespace-nowrap px-gutter leading-10">
-                            13 Oct 2022
-                          </div>
-                          <div class="h-10 w-full">
+                        <li
+                          class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr,auto,auto,1fr] py-3"
+                        >
+                          <div
+                            class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid"
+                          >
+                            <div class="">13 Oct 2022</div>
                             <div
-                              class="progress-bar-bg leading-[38px]"
+                              class="col-start-3 self-center text-nowrap pb-1 text-right font-sans text-xs text-subtle"
+                            >
+                              <div class="">75%</div>
+                            </div>
+                          </div>
+                          <div
+                            class="col-span-2 col-start-2 row-start-3 bg-subtle"
+                          >
+                            <div
+                              class="progress-bar-bg leading-[6px] tablet:mb-0"
                               style="--bar-percent: 75%"
                             >
                                
                             </div>
                           </div>
-                          <div class="px-gutter text-right leading-10">75%</div>
                         </li>
-                        <li class="contents *:odd:bg-subtle">
-                          <div class="whitespace-nowrap px-gutter leading-10">
-                            14 Oct 2022
-                          </div>
-                          <div class="h-10 w-full">
+                        <li
+                          class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr,auto,auto,1fr] py-3"
+                        >
+                          <div
+                            class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid"
+                          >
+                            <div class="">14 Oct 2022</div>
                             <div
-                              class="progress-bar-bg leading-[38px]"
+                              class="col-start-3 self-center text-nowrap pb-1 text-right font-sans text-xs text-subtle"
+                            >
+                              <div class="">Finished</div>
+                            </div>
+                          </div>
+                          <div
+                            class="col-span-2 col-start-2 row-start-3 bg-subtle"
+                          >
+                            <div
+                              class="progress-bar-bg leading-[6px] tablet:mb-0"
                               style="--bar-percent: 100%"
                             >
                                
                             </div>
-                          </div>
-                          <div class="px-gutter text-right leading-10">
-                            Finished
                           </div>
                         </li>
                       </ol>
@@ -541,71 +631,69 @@
                 </li>
               </ul>
             </div>
-            <div class="spacer-y-32"></div>
-            <div
+          </div>
+          <div
+            data-pagefind-ignore="true"
+            class="flex w-full flex-col items-center gap-y-12 bg-subtle pb-32 pt-16 tablet:pt-8 desktop:gap-y-24"
+          >
+            <nav
               data-pagefind-ignore="true"
-              class="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+              class="relative flex w-full flex-col items-center tablet:w-auto"
             >
-              <nav
-                class="relative flex w-full flex-col items-center tablet:w-auto"
+              <div
+                class="relative mx-auto w-full max-w-screen-max desktop:px-20"
               >
-                <div
-                  class="w-full px-gutter py-2 shadow-bottom tablet:py-4 tablet:shadow-none desktop:px-pageMargin desktop:py-4"
-                >
-                  <span class="font-semibold text-muted">More<!-- --> </span
-                  ><a class="text-accent" href="/reviews/">Reviews</a>
+                <div class="px-container">
+                  <h2
+                    class="py-10 font-sans text-xs font-semibold uppercase tracking-wide text-subtle"
+                  >
+                    More<!-- -->
+                    <a href="/reviews/" class="text-accent">Reviews</a>
+                  </h2>
                 </div>
                 <ul
-                  class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-11 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
+                  class="flex flex-wrap justify-center gap-x-[4%] gap-y-[6vw] px-[2%] tablet:gap-x-[3%] tablet:px-container desktop:justify-between"
                 >
                   <li
-                    class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+                    class="relative flex w-[46%] max-w-[248px] flex-col items-center border-default bg-default tablet:w-[22.75%]"
                   >
-                    <a
-                      href="/reviews/what-doesnt-kill-us-by-scott-carney/"
-                      class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
-                      ><img
-                        srcset="
-                          /_image?/content%2Fassets%2Fcovers%2Fwhat-doesnt-kill-us-by-scott-carney.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=44&amp;q=80&amp;f=avif   44w,
-                          /_image?/content%2Fassets%2Fcovers%2Fwhat-doesnt-kill-us-by-scott-carney.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=88&amp;q=80&amp;f=avif   88w,
-                          /_image?/content%2Fassets%2Fcovers%2Fwhat-doesnt-kill-us-by-scott-carney.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;q=80&amp;f=avif 176w,
-                          /_image?/content%2Fassets%2Fcovers%2Fwhat-doesnt-kill-us-by-scott-carney.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=352&amp;q=80&amp;f=avif 352w
-                        "
-                        src="/_image?/content%2Fassets%2Fcovers%2Fwhat-doesnt-kill-us-by-scott-carney.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;h=264&amp;q=80&amp;f=avif"
-                        alt="A cover for What Doesn&#x27;t Kill Us: How Freezing Water, Extreme Altitude, and Environmental Conditioning Will Renew Our Lost Evolutionary Strength by Scott Carney"
-                        height="264"
-                        width="176"
-                        class="aspect-[0.66666667]"
-                        loading="lazy"
-                        decoding="async"
-                        style="aspect-ratio: 0.66666667"
-                    /></a>
-                    <div class="tablet:spacer-y-2"></div>
+                    <img
+                      srcset="
+                        /_image?/content%2Fassets%2Fcovers%2Fwhat-doesnt-kill-us-by-scott-carney.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;q=80&amp;f=avif   62w,
+                        /_image?/content%2Fassets%2Fcovers%2Fwhat-doesnt-kill-us-by-scott-carney.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;q=80&amp;f=avif 124w,
+                        /_image?/content%2Fassets%2Fcovers%2Fwhat-doesnt-kill-us-by-scott-carney.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;q=80&amp;f=avif 248w,
+                        /_image?/content%2Fassets%2Fcovers%2Fwhat-doesnt-kill-us-by-scott-carney.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;q=80&amp;f=avif 496w
+                      "
+                      src="/_image?/content%2Fassets%2Fcovers%2Fwhat-doesnt-kill-us-by-scott-carney.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
+                      alt=""
+                      width="248"
+                      height="372"
+                      loading="lazy"
+                      decoding="async"
+                      style="aspect-ratio: 0.66666667"
+                    />
                     <div
-                      class="flex grow flex-col tablet:w-full tablet:items-center"
+                      class="flex grow flex-col items-center px-[8%] pb-8 pt-3 desktop:pl-[8.5%] desktop:pr-[10%]"
                     >
-                      <div class="tablet:spacer-y-1"></div>
-                      <a
-                        href="/reviews/what-doesnt-kill-us-by-scott-carney/"
-                        class="block text-md leading-5 text-accent tablet:text-center tablet:text-base tablet:leading-5 desktop:text-md"
-                        >What Doesn&#x27;t Kill Us</a
-                      >
-                      <div class="spacer-y-1 tablet:spacer-y-2"></div>
-                      <div
-                        class="text-base leading-5 text-muted text-left tablet:text-center"
-                      >
-                        Scott Carney
+                      <div class="text-center text-md font-medium leading-6">
+                        <a
+                          href="/reviews/what-doesnt-kill-us-by-scott-carney/"
+                          rel="canonical"
+                          class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] tablet:before:opacity-15"
+                          >What Doesn&#x27;t Kill Us</a
+                        >
                       </div>
-                      <div class="spacer-y-3"></div>
                       <div
-                        class="text-sm leading-4 tracking-0.5px text-subtle text-left tablet:text-center"
+                        class="py-2 text-center font-sans text-xxs font-light uppercase leading-4 tracking-wide text-subtle"
                       >
-                        <span
-                          >2017<!-- -->
-                          | </span
-                        >Nonfiction
+                        2017<!-- -->
+                        |<!-- -->
+                        <span class="whitespace-nowrap">Nonfiction</span>
                       </div>
-                      <div class="spacer-y-3"></div>
+                      <p class="text-center text-base text-subtle">
+                        by
+                        <!-- -->Scott Carney
+                      </p>
                       <picture
                         ><source
                           srcset="/svg/3-stars-dark.svg"
@@ -613,60 +701,52 @@
                         <img
                           src="/svg/3-stars.svg"
                           alt="C+: 3 stars (out of 5)"
-                          height="16"
-                          width="80"
+                          height="18"
+                          width="90"
+                          class="mt-2"
                       /></picture>
-                      <div class="spacer-y-2"></div>
                     </div>
                   </li>
                   <li
-                    class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+                    class="relative flex w-[46%] max-w-[248px] flex-col items-center border-default bg-default tablet:w-[22.75%]"
                   >
-                    <a
-                      href="/reviews/the-woods-are-dark-by-richard-laymon/"
-                      class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
-                      ><img
-                        srcset="
-                          /_image?/content%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=44&amp;q=80&amp;f=avif   44w,
-                          /_image?/content%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=88&amp;q=80&amp;f=avif   88w,
-                          /_image?/content%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;q=80&amp;f=avif 176w,
-                          /_image?/content%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=352&amp;q=80&amp;f=avif 352w
-                        "
-                        src="/_image?/content%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;h=264&amp;q=80&amp;f=avif"
-                        alt="A cover for The Woods Are Dark by Richard Laymon"
-                        height="264"
-                        width="176"
-                        class="aspect-[0.66666667]"
-                        loading="lazy"
-                        decoding="async"
-                        style="aspect-ratio: 0.66666667"
-                    /></a>
-                    <div class="tablet:spacer-y-2"></div>
+                    <img
+                      srcset="
+                        /_image?/content%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;q=80&amp;f=avif   62w,
+                        /_image?/content%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;q=80&amp;f=avif 124w,
+                        /_image?/content%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;q=80&amp;f=avif 248w,
+                        /_image?/content%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;q=80&amp;f=avif 496w
+                      "
+                      src="/_image?/content%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
+                      alt=""
+                      width="248"
+                      height="372"
+                      loading="lazy"
+                      decoding="async"
+                      style="aspect-ratio: 0.66666667"
+                    />
                     <div
-                      class="flex grow flex-col tablet:w-full tablet:items-center"
+                      class="flex grow flex-col items-center px-[8%] pb-8 pt-3 desktop:pl-[8.5%] desktop:pr-[10%]"
                     >
-                      <div class="tablet:spacer-y-1"></div>
-                      <a
-                        href="/reviews/the-woods-are-dark-by-richard-laymon/"
-                        class="block text-md leading-5 text-accent tablet:text-center tablet:text-base tablet:leading-5 desktop:text-md"
-                        >The Woods Are Dark</a
-                      >
-                      <div class="spacer-y-1 tablet:spacer-y-2"></div>
-                      <div
-                        class="text-base leading-5 text-muted text-left tablet:text-center"
-                      >
-                        Richard Laymon
+                      <div class="text-center text-md font-medium leading-6">
+                        <a
+                          href="/reviews/the-woods-are-dark-by-richard-laymon/"
+                          rel="canonical"
+                          class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] tablet:before:opacity-15"
+                          >The Woods Are Dark</a
+                        >
                       </div>
-                      <div class="spacer-y-3"></div>
                       <div
-                        class="text-sm leading-4 tracking-0.5px text-subtle text-left tablet:text-center"
+                        class="py-2 text-center font-sans text-xxs font-light uppercase leading-4 tracking-wide text-subtle"
                       >
-                        <span
-                          >1981<!-- -->
-                          | </span
-                        >Novel
+                        1981<!-- -->
+                        |<!-- -->
+                        <span class="whitespace-nowrap">Novel</span>
                       </div>
-                      <div class="spacer-y-3"></div>
+                      <p class="text-center text-base text-subtle">
+                        by
+                        <!-- -->Richard Laymon
+                      </p>
                       <picture
                         ><source
                           srcset="/svg/3-stars-dark.svg"
@@ -674,60 +754,52 @@
                         <img
                           src="/svg/3-stars.svg"
                           alt="C+: 3 stars (out of 5)"
-                          height="16"
-                          width="80"
+                          height="18"
+                          width="90"
+                          class="mt-2"
                       /></picture>
-                      <div class="spacer-y-2"></div>
                     </div>
                   </li>
                   <li
-                    class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+                    class="relative flex w-[46%] max-w-[248px] flex-col items-center border-default bg-default tablet:w-[22.75%]"
                   >
-                    <a
-                      href="/reviews/the-48-laws-of-power-by-robert-greene/"
-                      class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
-                      ><img
-                        srcset="
-                          /_image?/content%2Fassets%2Fcovers%2Fthe-48-laws-of-power-by-robert-greene.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=44&amp;q=80&amp;f=avif   44w,
-                          /_image?/content%2Fassets%2Fcovers%2Fthe-48-laws-of-power-by-robert-greene.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=88&amp;q=80&amp;f=avif   88w,
-                          /_image?/content%2Fassets%2Fcovers%2Fthe-48-laws-of-power-by-robert-greene.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;q=80&amp;f=avif 176w,
-                          /_image?/content%2Fassets%2Fcovers%2Fthe-48-laws-of-power-by-robert-greene.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=352&amp;q=80&amp;f=avif 352w
-                        "
-                        src="/_image?/content%2Fassets%2Fcovers%2Fthe-48-laws-of-power-by-robert-greene.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;h=264&amp;q=80&amp;f=avif"
-                        alt="A cover for The 48 Laws of Power by Robert Greene"
-                        height="264"
-                        width="176"
-                        class="aspect-[0.66666667]"
-                        loading="lazy"
-                        decoding="async"
-                        style="aspect-ratio: 0.66666667"
-                    /></a>
-                    <div class="tablet:spacer-y-2"></div>
+                    <img
+                      srcset="
+                        /_image?/content%2Fassets%2Fcovers%2Fthe-48-laws-of-power-by-robert-greene.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;q=80&amp;f=avif   62w,
+                        /_image?/content%2Fassets%2Fcovers%2Fthe-48-laws-of-power-by-robert-greene.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;q=80&amp;f=avif 124w,
+                        /_image?/content%2Fassets%2Fcovers%2Fthe-48-laws-of-power-by-robert-greene.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;q=80&amp;f=avif 248w,
+                        /_image?/content%2Fassets%2Fcovers%2Fthe-48-laws-of-power-by-robert-greene.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;q=80&amp;f=avif 496w
+                      "
+                      src="/_image?/content%2Fassets%2Fcovers%2Fthe-48-laws-of-power-by-robert-greene.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
+                      alt=""
+                      width="248"
+                      height="372"
+                      loading="lazy"
+                      decoding="async"
+                      style="aspect-ratio: 0.66666667"
+                    />
                     <div
-                      class="flex grow flex-col tablet:w-full tablet:items-center"
+                      class="flex grow flex-col items-center px-[8%] pb-8 pt-3 desktop:pl-[8.5%] desktop:pr-[10%]"
                     >
-                      <div class="tablet:spacer-y-1"></div>
-                      <a
-                        href="/reviews/the-48-laws-of-power-by-robert-greene/"
-                        class="block text-md leading-5 text-accent tablet:text-center tablet:text-base tablet:leading-5 desktop:text-md"
-                        >The 48 Laws of Power</a
-                      >
-                      <div class="spacer-y-1 tablet:spacer-y-2"></div>
-                      <div
-                        class="text-base leading-5 text-muted text-left tablet:text-center"
-                      >
-                        Robert Greene
+                      <div class="text-center text-md font-medium leading-6">
+                        <a
+                          href="/reviews/the-48-laws-of-power-by-robert-greene/"
+                          rel="canonical"
+                          class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] tablet:before:opacity-15"
+                          >The 48 Laws of Power</a
+                        >
                       </div>
-                      <div class="spacer-y-3"></div>
                       <div
-                        class="text-sm leading-4 tracking-0.5px text-subtle text-left tablet:text-center"
+                        class="py-2 text-center font-sans text-xxs font-light uppercase leading-4 tracking-wide text-subtle"
                       >
-                        <span
-                          >1998<!-- -->
-                          | </span
-                        >Nonfiction
+                        1998<!-- -->
+                        |<!-- -->
+                        <span class="whitespace-nowrap">Nonfiction</span>
                       </div>
-                      <div class="spacer-y-3"></div>
+                      <p class="text-center text-base text-subtle">
+                        by
+                        <!-- -->Robert Greene
+                      </p>
                       <picture
                         ><source
                           srcset="/svg/2-stars-dark.svg"
@@ -735,62 +807,54 @@
                         <img
                           src="/svg/2-stars.svg"
                           alt="D+: 2 stars (out of 5)"
-                          height="16"
-                          width="80"
+                          height="18"
+                          width="90"
+                          class="mt-2"
                       /></picture>
-                      <div class="spacer-y-2"></div>
                     </div>
                   </li>
                   <li
-                    class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+                    class="relative flex w-[46%] max-w-[248px] flex-col items-center border-default bg-default tablet:w-[22.75%]"
                   >
-                    <a
-                      href="/reviews/about-face-by-david-h-hackworth-julie-sherman/"
-                      class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
-                      ><img
-                        srcset="
-                          /_image?/content%2Fassets%2Fcovers%2Fabout-face-by-david-h-hackworth-julie-sherman.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=44&amp;q=80&amp;f=avif   44w,
-                          /_image?/content%2Fassets%2Fcovers%2Fabout-face-by-david-h-hackworth-julie-sherman.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=88&amp;q=80&amp;f=avif   88w,
-                          /_image?/content%2Fassets%2Fcovers%2Fabout-face-by-david-h-hackworth-julie-sherman.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;q=80&amp;f=avif 176w,
-                          /_image?/content%2Fassets%2Fcovers%2Fabout-face-by-david-h-hackworth-julie-sherman.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=352&amp;q=80&amp;f=avif 352w
-                        "
-                        src="/_image?/content%2Fassets%2Fcovers%2Fabout-face-by-david-h-hackworth-julie-sherman.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;h=264&amp;q=80&amp;f=avif"
-                        alt="A cover for About Face: The Odyssey of an American Warrior by David H. Hackworth and Julie Sherman"
-                        height="264"
-                        width="176"
-                        class="aspect-[0.66666667]"
-                        loading="lazy"
-                        decoding="async"
-                        style="aspect-ratio: 0.66666667"
-                    /></a>
-                    <div class="tablet:spacer-y-2"></div>
+                    <img
+                      srcset="
+                        /_image?/content%2Fassets%2Fcovers%2Fabout-face-by-david-h-hackworth-julie-sherman.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;q=80&amp;f=avif   62w,
+                        /_image?/content%2Fassets%2Fcovers%2Fabout-face-by-david-h-hackworth-julie-sherman.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;q=80&amp;f=avif 124w,
+                        /_image?/content%2Fassets%2Fcovers%2Fabout-face-by-david-h-hackworth-julie-sherman.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;q=80&amp;f=avif 248w,
+                        /_image?/content%2Fassets%2Fcovers%2Fabout-face-by-david-h-hackworth-julie-sherman.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;q=80&amp;f=avif 496w
+                      "
+                      src="/_image?/content%2Fassets%2Fcovers%2Fabout-face-by-david-h-hackworth-julie-sherman.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
+                      alt=""
+                      width="248"
+                      height="372"
+                      loading="lazy"
+                      decoding="async"
+                      style="aspect-ratio: 0.66666667"
+                    />
                     <div
-                      class="flex grow flex-col tablet:w-full tablet:items-center"
+                      class="flex grow flex-col items-center px-[8%] pb-8 pt-3 desktop:pl-[8.5%] desktop:pr-[10%]"
                     >
-                      <div class="tablet:spacer-y-1"></div>
-                      <a
-                        href="/reviews/about-face-by-david-h-hackworth-julie-sherman/"
-                        class="block text-md leading-5 text-accent tablet:text-center tablet:text-base tablet:leading-5 desktop:text-md"
-                        >About Face</a
-                      >
-                      <div class="spacer-y-1 tablet:spacer-y-2"></div>
+                      <div class="text-center text-md font-medium leading-6">
+                        <a
+                          href="/reviews/about-face-by-david-h-hackworth-julie-sherman/"
+                          rel="canonical"
+                          class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] tablet:before:opacity-15"
+                          >About Face</a
+                        >
+                      </div>
                       <div
-                        class="text-base leading-5 text-muted text-left tablet:text-center"
+                        class="py-2 text-center font-sans text-xxs font-light uppercase leading-4 tracking-wide text-subtle"
                       >
-                        David H. Hackworth<!-- -->
+                        1989<!-- -->
+                        |<!-- -->
+                        <span class="whitespace-nowrap">Nonfiction</span>
+                      </div>
+                      <p class="text-center text-base text-subtle">
+                        by
+                        <!-- -->David H. Hackworth<!-- -->
                         and
                         <!-- -->Julie Sherman
-                      </div>
-                      <div class="spacer-y-3"></div>
-                      <div
-                        class="text-sm leading-4 tracking-0.5px text-subtle text-left tablet:text-center"
-                      >
-                        <span
-                          >1989<!-- -->
-                          | </span
-                        >Nonfiction
-                      </div>
-                      <div class="spacer-y-3"></div>
+                      </p>
                       <picture
                         ><source
                           srcset="/svg/4-half-stars-dark.svg"
@@ -798,91 +862,118 @@
                         <img
                           src="/svg/4-half-stars.svg"
                           alt="A-: 4.5 stars (out of 5)"
-                          height="16"
-                          width="80"
+                          height="18"
+                          width="90"
+                          class="mt-2"
                       /></picture>
-                      <div class="spacer-y-2"></div>
                     </div>
                   </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+          <script type="application/ld+json">
+            {
+              "@context": "http://schema.org",
+              "@type": "Review",
+              "itemReviewed": {
+                "@type": "Book",
+                "name": "'Salem's Lot",
+                "image": "/_image?/content%2Fassets%2Fcovers%2Fsalems-lot-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=1200&h=630&q=80&f=jpeg"
+              },
+              "reviewRating": { "@type": "Rating", "ratingValue": 4 },
+              "author": { "@type": "Person", "name": "Frank Showalter" }
+            }
+          </script>
+        </main>
+        <footer
+          class="flex flex-wrap items-start justify-between gap-[10%] bg-footer px-container py-20 text-inverse tablet:px-12 tablet:pt-10 desktop:p-20"
+        >
+          <div class="flex flex-col pb-12">
+            <div class="flex flex-col">
+              <div
+                class="whitespace-nowrap font-normal leading-8"
+                style="font-size: 1.5625rem"
+              >
+                <a href="/">Frank&#x27;s Book Log</a>
+              </div>
+              <p class="w-full pl-px text-sm italic leading-4 opacity-85">
+                Literature is a relative term.
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col gap-20 pb-20 pt-10 tablet:basis-1/2 tablet:pt-20"
+          >
+            <ul class="flex w-full flex-col gap-y-10 text-inverse max:w-auto">
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a class="hover:text-accent" href="/">Home</a>
+              </li>
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a class="hover:text-accent" href="/how-i-grade/"
+                  >How I Grade</a
+                >
+              </li>
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a class="hover:text-accent" href="/reviews/">Reviews</a>
+              </li>
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a class="hover:text-accent" href="/readings/">Reading Log</a>
+                <ol class="mt-4">
                   <li
-                    class="col-span-full block px-gutter py-4 text-right shadow-bottom tablet:absolute tablet:right-0 tablet:top-0 tablet:shadow-none desktop:right-[var(--gutter-width)]"
+                    class="mb-2 font-sans text-xs uppercase tracking-wide text-inverse-subtle"
                   >
-                    <a href="/reviews/" class="text-accent"
-                      >All<!-- -->
-                      <span class="inline tablet:hidden desktop:inline"
-                        >Reviews</span
-                      >
-                      <!-- -->→</a
+                    <a class="hover:text-inverse" href="/readings/stats/"
+                      >Stats</a
                     >
                   </li>
-                </ul>
-              </nav>
-            </div>
-            <script type="application/ld+json">
-              {
-                "@context": "http://schema.org",
-                "@type": "Review",
-                "itemReviewed": {
-                  "@type": "Book",
-                  "name": "'Salem's Lot",
-                  "image": "/_image?/content%2Fassets%2Fcovers%2Fsalems-lot-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=1200&h=630&q=80&f=jpeg"
-                },
-                "reviewRating": { "@type": "Rating", "ratingValue": 4 },
-                "author": { "@type": "Person", "name": "Frank Showalter" }
-              }
-            </script>
-          </main>
-        </div>
-        <footer
-          class="flex flex-col items-center gap-y-6 bg-[url(&#x27;/assets/ripnotcomingsoon.avif&#x27;)] px-pageMargin py-8 text-inverse"
-        >
-          <ul
-            class="flex w-full flex-wrap justify-center gap-x-4 gap-y-2 text-inverse tablet:gap-x-6 max:w-auto"
-          >
-            <li class="block whitespace-nowrap tracking-0.5px">
-              <a class="text-inverse" href="/">Home</a>
-            </li>
-            <li class="block whitespace-nowrap tracking-0.5px">
-              <a class="text-inherit" href="/how-i-grade/">How I Grade</a>
-            </li>
-            <li class="block whitespace-nowrap tracking-0.5px">
-              <a class="text-inherit" href="/reviews/">Reviews</a>
-            </li>
-            <li class="block whitespace-nowrap tracking-0.5px">
-              <a class="text-inherit" href="/readings/">Reading Log</a>
-            </li>
-            <li class="block whitespace-nowrap tracking-0.5px">
-              <a class="text-inherit" href="/authors/">Authors</a>
-            </li>
-            <li class="block whitespace-nowrap tracking-0.5px">
-              <a class="text-inherit" href="/shelf/">Shelf</a>
-            </li>
-          </ul>
-          <p class="text-sm font-light leading-4">
-            All images used in accordance with the<!-- -->
+                </ol>
+              </li>
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a class="hover:text-accent" href="/authors/">Authors</a>
+              </li>
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a class="hover:text-accent" href="/shelf/">Shelf</a>
+              </li>
+            </ul>
             <a
-              href="http://www.copyright.gov/title17/92chap1.html#107"
-              class="text-inherit"
-              >Fair Use Law.</a
+              href="#top"
+              class="mb-8 w-full max-w-button bg-canvas py-5 text-center font-sans text-xs uppercase tracking-wide text-default hover:bg-inverse hover:text-inverse"
+              >To the top</a
             >
-          </p>
-          <a href="#top" class="sr-only">To the top ↑</a>
+            <p class="w-full font-normal leading-4 text-inverse-subtle">
+              All covers used in accordance with the<!-- -->
+              <a
+                href="http://www.copyright.gov/title17/92chap1.html#107"
+                class="text-inherit underline decoration-2 underline-offset-4 hover:bg-default hover:text-default"
+                >Fair Use Law.</a
+              >
+            </p>
+          </div>
         </footer>
       </div>
     </div>
     <dialog
-      class="relative m-0 h-screen max-h-none w-screen max-w-unset border border-default bg-canvas shadow-lg open:flex open:flex-col tablet:mx-auto tablet:mt-16 tablet:h-min tablet:max-h-[min(100vh_-_128px,900px)] tablet:min-h-60 tablet:max-w-[min(100vw_-_2_*_var(--gutter-width),36rem)] tablet:rounded-xl desktop:min-h-0"
+      class="relative m-0 h-screen max-h-none w-screen max-w-unset border border-default bg-subtle shadow-lg open:flex open:flex-col tablet:mx-auto tablet:mt-16 tablet:h-min tablet:max-h-[min(100vh_-_128px,900px)] tablet:min-h-60 tablet:max-w-[min(100vw_-_64px,36rem)] tablet:rounded-xl desktop:min-h-0"
       aria-label="Search"
     >
       <div data-dialog-frame class="contents">
-        <button data-close-modal>Cancel</button>
+        <button
+          data-close-modal
+          class="px-4 font-sans text-sm font-light hover:bg-inverse hover:text-inverse focus:outline-accent"
+        >
+          Cancel
+        </button>
         <div class="contents"><div id="pagefind__search"></div></div>
-        <div class="hidden px-gutter py-4 desktop:block">
+        <div
+          class="hidden px-[var(--search-dialog-padding)] py-4 font-sans text-xs font-light tracking-wide text-subtle desktop:block"
+        >
           <kbd class="rounded-md bg-default p-2 font-mono text-xs text-subtle"
             >Tab</kbd
           >
           to navigate
-          <kbd class="rounded-md bg-subtle p-2 font-mono text-xs text-subtle"
+          <kbd
+            class="ml-4 rounded-md bg-default p-2 font-mono text-xs text-subtle"
             >ESC</kbd
           >
           to close
@@ -892,14 +983,11 @@
     <script>
       (() => {
         const openBtn = document.querySelector("button[data-open-modal]");
-        const shortcut = openBtn?.querySelector("kbd");
-        if (!openBtn || !(shortcut instanceof HTMLElement)) return;
-        const platformKey = shortcut.querySelector("kbd");
-        if (platformKey && /(Mac|iPhone|iPod|iPad)/i.test(navigator.platform)) {
-          platformKey.textContent = "⌘";
+        if (!openBtn) return;
+        if (/(Mac|iPhone|iPod|iPad)/i.test(navigator.platform)) {
           openBtn.setAttribute("aria-keyshortcuts", "Meta+K");
+          openBtn.setAttribute("title", `Search: ⌘K`);
         }
-        shortcut.style.display = "";
       })();
     </script>
   </body>

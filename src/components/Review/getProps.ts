@@ -5,7 +5,7 @@ import {
 } from "src/api/covers";
 import { allReviews, loadContent } from "src/api/reviews";
 
-import { CoverGalleryListItemImageConfig } from "../CoverGalleryListItem";
+import { MoreReviewsImageConfig } from "../MoreReviews";
 import { CoverImageConfig, type Props } from "./Review";
 
 export async function getProps(slug: string): Promise<Props> {
@@ -30,7 +30,7 @@ export async function getProps(slug: string): Promise<Props> {
           ...review,
           coverImageProps: await getFluidCoverImageProps(
             review,
-            CoverGalleryListItemImageConfig,
+            MoreReviewsImageConfig,
           ),
         };
       }),

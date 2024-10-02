@@ -19,7 +19,7 @@ export function SelectField({
 }): JSX.Element {
   return (
     <label className={ccn("flex flex-col", className)}>
-      <LabelText as="span" text={label} />
+      <LabelText value={label} />
       <SelectInput value={value?.toString()} onChange={onChange}>
         {children}
       </SelectInput>

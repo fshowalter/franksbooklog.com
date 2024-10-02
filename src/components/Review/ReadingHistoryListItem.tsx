@@ -24,10 +24,8 @@ interface Props {
 
 export function ReadingHistoryListItem({ value }: Props) {
   return (
-    <li className="grid auto-rows-auto grid-cols-[16px_1ch_1fr] px-gutter pt-4 even:bg-subtle">
-      <div className="mt-1">
-        <DateIcon />{" "}
-      </div>
+    <li className="grid auto-rows-auto grid-cols-[16px_16px_1fr] pt-4 font-sans text-xs even:bg-subtle">
+      <DateIcon />{" "}
       <div className="col-start-3">
         <Date value={value.date} />
         <Edition value={value.edition} />{" "}
@@ -46,7 +44,7 @@ export function ReadingHistoryListItem({ value }: Props) {
 function Date({ value }: { value: ReviewWithContent["readings"][0]["date"] }) {
   return (
     <>
-      <span className="inline-block text-default">
+      <span className="inline-block font-sans text-xs font-normal tracking-normal text-subtle">
         {dateFormat.format(value)}
       </span>{" "}
     </>
@@ -59,8 +57,9 @@ function Edition({
   value: ReviewWithContent["readings"][0]["edition"];
 }) {
   return (
-    <span className="font-light text-muted">
-      <span>via</span> <span>{value}</span>
+    <span className="text-subtle">
+      <span>via</span>{" "}
+      <span className="font-sans text-xs font-normal text-subtle">{value}</span>
     </span>
   );
 }
@@ -74,11 +73,12 @@ function EditionNotes({
     return null;
   }
   return (
-    <span className="text-sm font-light leading-none text-subtle">
+    <span className="font-light tracking-normal text-subtle">
       (
       <RenderedMarkdown
-        className="text-sm leading-none"
+        // eslint-disable-next-line react/no-danger
         text={value}
+        className="leading-none"
         as="span"
       />
       )
@@ -99,10 +99,13 @@ function Details({ value }: { value: ReviewWithContent["readings"][0] }) {
 
   return (
     <details className="font-light text-subtle">
-      <summary>
-        {summaryText} {value.readingTime} Days
+      <summary className="cursor-pointer leading-6">
+        {summaryText}{" "}
+        <span className="font-normal text-subtle">
+          {value.readingTime} Days
+        </span>
       </summary>
-      <ol className="-ml-gutter grid w-full grid-cols-[auto_1fr_auto] items-center pt-2">
+      <ol className="grid w-full grid-cols-[auto,1fr,auto]">
         {value.timeline.map((entry) => {
           let progressValue = null;
           const progressNumber = entry.progress.split("%", 1)[0];
@@ -118,17 +121,20 @@ function Details({ value }: { value: ReviewWithContent["readings"][0] }) {
           const entryDate = progressDateFormat.format(entry.date);
 
           return (
-            <li key={entryDate} className="contents *:odd:bg-subtle">
-              <div className="whitespace-nowrap px-gutter leading-10">
-                {entryDate}
+            <li
+              key={entryDate}
+              className="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr,auto,auto,1fr] py-3"
+            >
+              <div className="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid">
+                <div className="">{entryDate}</div>
+                <div className="col-start-3 self-center text-nowrap pb-1 text-right font-sans text-xs text-subtle">
+                  <div className="">{entry.progress}</div>
+                </div>
               </div>
-              <div className="h-10 w-full">
+              <div className="col-span-2 col-start-2 row-start-3 bg-subtle">
                 {progressValue && (
                   <BarGradient value={progressValue} maxValue={100} />
                 )}
-              </div>
-              <div className="px-gutter text-right leading-10">
-                {entry.progress}
               </div>
             </li>
           );
@@ -147,8 +153,12 @@ function ReadingNotes({
     return null;
   }
   return (
-    <div className="pb-6">
-      <RenderedMarkdown className="text-base" text={value} />
+    <div className="pb-6 text-sm font-light">
+      <RenderedMarkdown
+        className="leading-normal text-muted"
+        // eslint-disable-next-line react/no-danger
+        text={value}
+      />
     </div>
   );
 }

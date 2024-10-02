@@ -174,7 +174,7 @@ describe("Shelf", () => {
 
     render(<Shelf {...props} />);
 
-    await userEvent.click(screen.getByText("Show More..."));
+    await userEvent.click(screen.getByText("Show More"));
 
     expect(screen.getByTestId("list")).toMatchSnapshot();
   });

@@ -2,7 +2,7 @@ import { getFixedCoverImageProps } from "src/api/covers";
 import { allTimelineEntries } from "src/api/timelineEntries";
 import { ListItemCoverImageConfig } from "src/components/ListItemCover";
 
-import type { ListItemValue } from "./List";
+import type { ListItemValue } from "./Readings";
 import type { Props } from "./Readings";
 
 export async function getProps(): Promise<Props> {
@@ -22,8 +22,24 @@ export async function getProps(): Promise<Props> {
 
   const values = await Promise.all(
     timelineEntries.map(async (entry) => {
+      const readingDate = new Date(entry.date);
       const value: ListItemValue = {
-        date: entry.date,
+        readingDate: readingDate.toLocaleString("en-US", {
+          day: "numeric",
+          timeZone: "UTC",
+        }),
+        readingMonth: readingDate.toLocaleString("en-US", {
+          month: "long",
+          timeZone: "UTC",
+        }),
+        readingDay: readingDate.toLocaleString("en-US", {
+          weekday: "short",
+          timeZone: "UTC",
+        }),
+        readingYear: readingDate.toLocaleString("en-US", {
+          year: "numeric",
+          timeZone: "UTC",
+        }),
         title: entry.title,
         slug: entry.slug,
         coverImageProps: await getFixedCoverImageProps(

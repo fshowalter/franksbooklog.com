@@ -27,169 +27,161 @@
     />
     <title>Fast Forward by Stephen Morris | Frank&#39;s Book Log</title>
   </head>
-  <body class="data-[search-modal-open]:blur-sm">
+  <body>
     <div>
       <a
         href="#content"
         class="absolute left-1/2 top-0.5 z-50 mx-auto bg-subtle px-6 py-2 text-center text-accent [transform:translate(-50%,calc(-100%_-_2px))] focus:[transform:translate(-50%,0%)]"
         >Skip to content</a
       >
-      <div
-        class="image-filter mx-auto min-h-4 w-full max-w-canvas bg-[url(&#x27;/assets/ripnotcomingsoon.avif&#x27;)] desktop:sticky desktop:top-0 desktop:z-40"
-      ></div>
-      <div class="mx-auto flex min-h-full max-w-canvas flex-col bg-default">
+      <div class="flex min-h-full w-full flex-col bg-default">
         <header
-          class="flex flex-col items-center gap-6 bg-default px-pageMargin py-6 text-center shadow-bottom desktop:sticky desktop:top-4 desktop:z-40 desktop:flex-row desktop:justify-between desktop:gap-8 desktop:py-5 desktop:text-left max:justify-center max:py-8"
+          class="z-20 flex w-full items-center justify-between px-container py-4 tablet:p-6 desktop:inset-x-0 desktop:z-40 desktop:flex-row desktop:flex-wrap desktop:px-16 desktop:py-8 desktop:text-left"
+          style="position: static"
         >
-          <div
-            class="items-inherit justify-items-inherit flex flex-col max:absolute max:left-[var(--page-margin-width)]"
-          >
-            <h1
-              class="whitespace-nowrap text-[1.5625rem] font-normal leading-8"
+          <div class="flex flex-col">
+            <div
+              class="whitespace-nowrap font-normal leading-8"
+              style="font-size: 1.5625rem"
             >
-              <a class="text-default" href="/">Frank&#x27;s Book Log</a>
-            </h1>
-            <p class="w-full text-sm italic leading-4 text-muted desktop:pl-px">
+              <a href="/">Frank&#x27;s Book Log</a>
+            </div>
+            <p class="w-full pl-px text-sm italic leading-4 opacity-85">
               Literature is a relative term.
             </p>
           </div>
-          <div
-            class="w-full max-w-prose desktop:order-4 desktop:w-auto max:absolute max:right-[var(--page-margin-width)]"
-          >
-            <button
-              data-open-modal="true"
-              disabled=""
-              aria-label="Search"
-              aria-keyshortcuts="Control+K"
-              class="safari-border-radius-fix flex w-full items-center overflow-hidden rounded-md text-sm leading-6 text-subtle ring-1 ring-border hover:ring-accent"
-            >
-              <kbd
-                class="ml-auto mt-px hidden min-h-6 flex-none items-center bg-subtle pl-3 pr-4 font-mono text-sm font-light opacity-70 desktop:flex"
-                ><kbd class="text-md leading-5">Ctrl</kbd
-                ><kbd class="text-sm">K</kbd></kbd
-              ><svg
-                class="mr-2 size-10 flex-none border-0 border-r border-default bg-subtle fill-subtle px-3 py-1 desktop:w-4 desktop:border-r-0 desktop:bg-unset desktop:px-0"
-                viewBox="0 0 16 16"
+          <div class="flex items-center">
+            <nav class="hidden w-full desktop:block desktop:w-auto">
+              <ul class="flex flex-wrap justify-start gap-x-6 text-xl">
+                <li class="block whitespace-nowrap tracking-serif-wide">
+                  <a
+                    class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
+                    href="/"
+                    >Home</a
+                  >
+                </li>
+                <li class="block whitespace-nowrap tracking-serif-wide">
+                  <a
+                    class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
+                    href="/how-i-grade/"
+                    >How I Grade</a
+                  >
+                </li>
+                <li class="block whitespace-nowrap tracking-serif-wide">
+                  <a
+                    class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
+                    href="/reviews/"
+                    >Reviews</a
+                  >
+                </li>
+                <li class="block whitespace-nowrap tracking-serif-wide">
+                  <a
+                    class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
+                    href="/readings/"
+                    >Reading Log</a
+                  >
+                </li>
+                <li class="block whitespace-nowrap tracking-serif-wide">
+                  <a
+                    class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
+                    href="/authors/"
+                    >Authors</a
+                  >
+                </li>
+                <li class="block whitespace-nowrap tracking-serif-wide">
+                  <a
+                    class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
+                    href="/shelf/"
+                    >Shelf</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <div class="z-[1000]">
+              <button
+                data-open-modal="true"
+                disabled=""
+                aria-label="Search"
+                aria-keyshortcuts="Control+K"
+                class="flex items-center justify-between overflow-hidden text-sm leading-6 ring-default desktop:ml-6"
+                type="button"
+                title="Search: Control+K"
               >
-                <path
-                  fill-rule="evenodd"
-                  d="M10.442 10.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z"
-                ></path>
-                <path
-                  fill-rule="evenodd"
-                  d="M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z"
-                ></path></svg
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6 desktop:size-7"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <input type="checkbox" id="mobile-nav" class="hidden" /><label
+              for="mobile-nav"
+              class="hamburger-icon desktop:hidden"
               ><span
-                class="flex items-baseline whitespace-nowrap p-2 text-base opacity-70 desktop:hidden"
-                >Quick search...</span
-              >
-            </button>
-          </div>
-          <nav class="w-full desktop:w-auto">
+                style="background: var(--fg-default)"
+                class="hamburger-icon-bars"
+              ></span
+            ></label>
             <ul
-              class="flex flex-wrap justify-center gap-x-4 gap-y-2 text-accent tablet:gap-x-6 desktop:flex-nowrap desktop:justify-start"
+              class="hamburger-menu flex flex-col items-start gap-y-5 text-left text-inverse desktop:hidden"
             >
-              <li class="block whitespace-nowrap tracking-0.5px">
-                <a class="text-muted" href="/">Home</a>
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a href="/">Home</a>
               </li>
-              <li class="block whitespace-nowrap tracking-0.5px">
-                <a class="text-inherit" href="/how-i-grade/">How I Grade</a>
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a href="/how-i-grade/">How I Grade</a>
               </li>
-              <li class="block whitespace-nowrap tracking-0.5px">
-                <a class="text-inherit" href="/reviews/">Reviews</a>
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a href="/reviews/">Reviews</a>
               </li>
-              <li class="block whitespace-nowrap tracking-0.5px">
-                <a class="text-inherit" href="/readings/">Reading Log</a>
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a href="/readings/">Reading Log</a>
+                <ol class="mt-4">
+                  <li
+                    class="mb-2 font-sans text-xs uppercase tracking-wide text-inverse-subtle"
+                  >
+                    <a href="/readings/stats/">Stats</a>
+                  </li>
+                </ol>
               </li>
-              <li class="block whitespace-nowrap tracking-0.5px">
-                <a class="text-inherit" href="/authors/">Authors</a>
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a href="/authors/">Authors</a>
               </li>
-              <li class="block whitespace-nowrap tracking-0.5px">
-                <a class="text-inherit" href="/shelf/">Shelf</a>
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a href="/shelf/">Shelf</a>
               </li>
             </ul>
-          </nav>
+          </div>
         </header>
-        <div class="grow" id="content">
-          <main
-            data-pagefind-body="true"
-            id="top"
-            class="flex flex-col items-center pt-6 desktop:pt-12"
-          >
-            <header class="flex w-full flex-col items-center px-pageMargin">
-              <div class="text-center">
-                <h1
-                  data-pagefind-meta="title"
-                  class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
-                >
-                  Fast Forward
-                </h1>
-                <div
-                  class="max-w-prose pt-2 font-normal tracking-1px text-muted"
-                >
-                  Confessions of a Post-Punk Percussionist: Volume II
-                </div>
-              </div>
-              <div class="spacer-y-2"></div>
-              <div class="text-center text-md text-muted">
-                by<!-- -->
-                <div class="inline-block text-accent">
-                  <a href="/reviews/authors/stephen-morris/">Stephen Morris</a>
-                </div>
-              </div>
-              <div class="spacer-y-2 desktop:spacer-y-4"></div>
-              <div class="uppercase tracking-1px text-subtle">
-                <span class="tracking-0.25px">2020</span> |
-                <!-- -->Nonfiction
-              </div>
-              <div class="spacer-y-8"></div>
+        <main class="grow flex flex-col" id="content" data-pagefind-body="true">
+          <header class="mb-12 flex flex-col items-center px-[8%] pt-10">
+            <h1
+              data-pagefind-meta="title"
+              class="text-center text-4xl desktop:text-6xl"
+            >
+              Fast Forward
               <div
-                data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
-                class="relative flex h-[340px] w-full max-w-popout flex-col items-center"
+                class="max-w-prose pt-2 text-base font-light tracking-wider text-muted"
               >
-                <div
-                  data-pagefind-meta="image_alt:A cover for Fast Forward: Confessions of a Post-Punk Percussionist: Volume II by Stephen Morris"
-                  class="cover-clip-path absolute inset-0 overflow-hidden"
-                >
-                  <div
-                    style="
-                      background-color: var(--bg-default);
-                      background-image: linear-gradient(
-                          90deg,
-                          rgba(var(--bg-default-rgb), 1) 0%,
-                          rgba(var(--bg-default-rgb), var(--bg-default-alpha))
-                            30%,
-                          rgba(var(--bg-default-rgb), 0) 50%,
-                          rgba(var(--bg-default-rgb), var(--bg-default-alpha))
-                            70%,
-                          rgba(var(--bg-default-rgb), 1) 100%
-                        ),
-                        url(/_image?/content%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif);
-                    "
-                    class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
-                  ></div>
-                  <div class="absolute size-full backdrop-blur"></div>
-                </div>
-                <div
-                  class="relative -top-4 z-10 h-[372px] shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                >
-                  <img
-                    srcset="
-                      /_image?/content%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;q=80&amp;f=avif 1x,
-                      /_image?/content%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;q=80&amp;f=avif 2x
-                    "
-                    src="/_image?/content%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
-                    alt="A cover for Fast Forward: Confessions of a Post-Punk Percussionist: Volume II by Stephen Morris"
-                    width="248"
-                    height="372"
-                    class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                    loading="eager"
-                    decoding="async"
-                    style="aspect-ratio: 0.66666667"
-                  />
-                </div>
+                Confessions of a Post-Punk Percussionist: Volume II
               </div>
-              <div class="spacer-y-12"></div>
+            </h1>
+            <div class="mt-4 text-center text-md text-muted">
+              by<!-- -->
+              <div class="inline-block text-accent">
+                <a href="/reviews/authors/stephen-morris/">Stephen Morris</a>
+              </div>
+            </div>
+            <div class="mt-4">
               <picture
                 ><source
                   srcset="/svg/4-half-stars-dark.svg"
@@ -200,641 +192,767 @@
                   height="32"
                   width="160"
               /></picture>
+            </div>
+            <div
+              class="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+            >
+              <span class="tracking-wide">2020</span> |
+              <!-- -->Nonfiction
+            </div>
+            <div
+              data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
+              class="relative my-12 flex h-[340px] w-full max-w-popout flex-col items-center"
+            >
               <div
-                class="flex flex-col items-center tracking-0.5px text-subtle"
+                data-pagefind-meta="image_alt:A cover for Fast Forward: Confessions of a Post-Punk Percussionist: Volume II by Stephen Morris"
+                class="cover-clip-path absolute inset-0 overflow-hidden"
               >
-                <span>on</span>
-                <!-- -->Mon, Jul 1, 2024
+                <div
+                  style="
+                    background-color: var(--bg-default);
+                    background-image: linear-gradient(
+                        90deg,
+                        rgba(var(--bg-default-rgb), 1) 0%,
+                        rgba(var(--bg-default-rgb), var(--bg-default-alpha)) 30%,
+                        rgba(var(--bg-default-rgb), 0) 50%,
+                        rgba(var(--bg-default-rgb), var(--bg-default-alpha)) 70%,
+                        rgba(var(--bg-default-rgb), 1) 100%
+                      ),
+                      url(/_image?/content%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif);
+                  "
+                  class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
+                ></div>
+                <div class="absolute size-full backdrop-blur"></div>
               </div>
-              <div class="spacer-y-8"></div>
-            </header>
-            <div class="flex flex-col px-pageMargin desktop:px-gutter">
               <div
-                class="rendered-markdown font-light text-md/7 tracking-0.3px tablet:text-xl/8 max-w-prose"
+                class="relative -top-4 z-10 h-[372px] shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
               >
-                <p>
-                  Every bit as entertaining as his first volume, drummer Stephen
-                  Morris’s second volume of memoirs picks up where
-                  <em>Record Play Pause</em> ended, chronicling New Order’s rise
-                  to super-stardom and the tensions that tore it apart.
-                </p>
-                <!-- end -->
-                <p>
-                  After lead singer Ian Curtis’s suicide, the band faced an
-                  identity crisis. They toyed with being their label, Factory’s,
-                  house band. But playing other people’s music wasn’t for them.
-                  So they resolved to remain their own band, rechristened New
-                  Order. But who would do the singing?
-                </p>
-                <p>
-                  Most of the duties fell to guitarist Bernard Sumner, with some
-                  songs sung by bassist Peter “Hooky” Hook. To allow Bernard to
-                  sing more, manager Rob Gretton suggested adding a fourth
-                  member to the group—Stephen’s girlfriend, Gillian Gilbert.
-                </p>
-                <p>
-                  Shocked at first, the band warmed to the idea, and Gillian
-                  joined.
-                </p>
-                <blockquote>
-                  <p>
-                    Gillian’s first experience of the recording process and
-                    Martin Hannett’s unconventional production techniques was
-                    our re-recording of ‘Ceremony’, starting what would become a
-                    New Order habit of confusing the record-buying public.
-                  </p>
-                </blockquote>
-                <p>
-                  The quartet gelled and began accumulating new songs as Morris
-                  continued his fascination with bleeding-edge tech. One such
-                  piece of kit was the Clap Trap.
-                </p>
-                <blockquote>
-                  <p>‘And what does it do?’</p>
-                  <p>‘It makes clapping noises.’</p>
-                  <p>
-                    ‘And why did you think that might be useful? We’ve all got
-                    hands, even Rob.’
-                  </p>
-                  <p>‘Well, I, er, um, thought …’</p>
-                  <p>
-                    The device did not garner approval from my fellow musicians.
-                    They were immune to its charm and potential. The box would
-                    sit there clapping away to itself in what was, I finally had
-                    to admit, a particularly monotonous and annoying manner.
-                  </p>
-                  <p>
-                    It could clap slowly or it could clap incredibly fast but…
-                    ‘Steve, it’s fucking useless.’
-                  </p>
-                </blockquote>
-                <p>
-                  The band’s songwriting process also evolved. Without Ian to
-                  write the lyrics, the band took turns. Morris had a system:
-                </p>
-                <blockquote>
-                  <p>
-                    I found two or three tins of Carlsberg Special Brew could be
-                    quite inspirational when it came to the composition of
-                    words. The deciphering of my scrawl the next morning,
-                    though, was a bit problematical. As to what these words were
-                    about or actually meant I had no recollection.
-                  </p>
-                  <p>
-                    ‘ICB’, ‘Chosen Time’, ‘Procession’, ‘Cries and Whispers’ mk2
-                    and ‘Mesh’ mk2 were all products of my Carlsberg-fuelled
-                    scribblings.
-                  </p>
-                </blockquote>
-                <p>
-                  Stephen’s early-adopter inclinations extended to home video.
-                  He purchased an unwieldy “portable” VHS video recorder and
-                  camera. While film-maker may not have been in his future, the
-                  gear had its use:
-                </p>
-                <blockquote>
-                  <p>
-                    I was also building up a substantial collection of what I
-                    considered classic films taped off the TV and, of course, a
-                    selection of stuff in the ‘video nasty’ genre: Texas
-                    Chainsaw Massacre, Spectre and Caligula along with a pirate
-                    copy of A Clockwork Orange were particular faves. Oh, and
-                    everything I could find by John Waters, Desperate Living
-                    being essential viewing. These were sourced as a rule from
-                    the central hub of eighties entertainment – the dodgy
-                    corner-shop video-rental emporium.
-                  </p>
-                </blockquote>
-                <p>
-                  I bring this up because I didn’t recognize the
-                  <em>Spectre</em> title. Turns out it was the UK title for
-                  <span data-imdb-id="tt0080464"><em>The Boogey Man</em></span>
-                  which was shot, in part, in my hometown. Small world.
-                </p>
-                <p>
-                  In other video-related affairs, Morris reveals the track
-                  “Video 5-8-6” came from an idea to show something on the video
-                  screens behind the band when they played Factory’s club, the
-                  Haçienda. So they padded the track ‘5-8-6’ out to twenty-two
-                  minutes, and Bernard, Gillian, and Steven cut together a video
-                  to match from a pile of cult VHS tapes, one of which was
-                  <span data-imdb-id="tt0080354"><em>Alligator</em></span
-                  >.
-                </p>
-                <blockquote>
-                  <p>
-                    Over the years, the track now known as ‘Video 5-8-6’ or
-                    ‘Prime 5-8-6’ has become some sort of art thing rather than
-                    the musical accompaniment to a man being eaten by an
-                    alligator, which is always how I remember it.
-                  </p>
-                </blockquote>
-                <p>
-                  As the 80s progressed, the band’s musical inspirations
-                  changed. Prog and rock gave way to Italian disco and USA house
-                  music. The era of the 12-inch dance track, but something
-                  wasn’t right.
-                </p>
-                <blockquote>
-                  <p>
-                    I was listening to these tracks on a hi-fi in a tiny bedroom
-                    in a nice house on a suburban street in Macclesfield. The
-                    same way I listened to everything. Although this was very
-                    satisfying for nearly everything rock, psych, country, punk
-                    and prog, it was not the environment that the 12-inch
-                    extended dance mix was designed for.
-                  </p>
-                </blockquote>
-                <p>
-                  Music had moved out of the bedroom and into the dance club. As
-                  New Order’s music changed to reflect this, Morris noticed a
-                  shift in the band’s audience.
-                </p>
-                <blockquote>
-                  <p>
-                    In the very early days our audience seemed to consist
-                    largely of Joy Division fans come to pay their respects.
-                    Generally, these adopted the look they thought typified Ian
-                    Curtis (this they assumed from photographs of Ian and Joy
-                    Division): short hair and grey raincoats. They didn’t smile
-                    much. They were mostly men.
-                  </p>
-                  <p>
-                    They had a look that said, ‘Sorry for your loss’ and ‘Why
-                    did he do it?’ Their number dwindled when Gillian joined the
-                    band, with a few diehards finally giving up the ghost after
-                    hearing ‘Everything’s Gone Green’.
-                  </p>
-                  <p>‘It’s a shame really but they’re not…’</p>
-                  <p>‘How dare they have fun in their grief and misery?’</p>
-                  <p>
-                    I enjoyed annoying these people as a matter of principle.
-                  </p>
-                </blockquote>
-                <p>
-                  But it was the acquisition of a key piece of tech, the Emu
-                  Emulator, along with the Oberheim DMX drum machine, that
-                  propelled the band to stardom.
-                </p>
-                <blockquote>
-                  <p>
-                    To learn what the actual potential of all this new equipment
-                    was we set about writing a tune, as much another experiment
-                    as anything. It was inspired by the always inspirational
-                    Donna Summer’s ‘Our Love’, Shep Pettibone’s remix of Sharon
-                    Redd’s ‘Beat The Street’ and very loosely based on the
-                    arrangement of ‘Dirty Talk’ by Klein and MBO. We had a cup
-                    of tea and got straight to work. It took quite a while.
-                  </p>
-                </blockquote>
-                <p>
-                  The result, “Blue Monday”, sold hundreds of thousands of
-                  copies and made Factory a little over a hundred thousand
-                  pounds. Contrary to the myth, Factory did not lose money on
-                  every copy.
-                </p>
-                <p>Morris dispels another myth:</p>
-                <blockquote>
-                  <p>
-                    Another ‘Blue Monday’ legend is that it is the bestselling
-                    12-inch of all time. An accolade indeed, but it’s open to
-                    question. Don’t let that spoil a good story though. Let’s
-                    just say it almost certainly is the bestselling 12-inch of
-                    all time and always will be, and move on.
-                  </p>
-                </blockquote>
-                <p>
-                  The band’s ascension to super-stardom takes its toll. Morris
-                  recounts a layover in Thailand which saw him get drunk and
-                  pick a spiteful fight with Gillian, whose only crime was
-                  shocking the locals with her short skirt and dyed red hair.
-                  Meanwhile their drunk manager, Rob Gretton, insisted on buying
-                  the suit in the window of a shop, shouting at the proprietor,
-                  “How much for the suit, mate?” to which the owner, kept
-                  replying, “No ticket!” until their roadie, the soberest among
-                  them realized what was happening and turned to Rob.
-                </p>
-                <blockquote>
-                  <p>‘Rob, we’ve got to go. It’s a fucking cleaners!’</p>
-                </blockquote>
-                <p>
-                  Morris’s blow-up was due, in part, to the stress of touring,
-                  but also to the Haçienda, Factory’s ever-hungry money-pit.
-                  Determined buck trends, the operators kept the club open seven
-                  nights a week. Most nights, it went empty.
-                </p>
-                <p>
-                  Another contributor was the band’s growing drug use. They
-                  worked with producer John Robie on “Shellshock” for the
-                  <span data-imdb-id=""><em>Pretty in Pink</em></span>
-                  soundtrack.
-                </p>
-                <blockquote>
-                  <p>
-                    It is widely acknowledged that cocaine may kill you, but
-                    you’re more likely to bore everyone else to death before it
-                    does. It will turn you into a self-obsessed, monstrous,
-                    gurning, yakking idiot.
-                  </p>
-                  <p>
-                    Yes, friends, coke was a big influence on some of us at that
-                    time. Clean-living Hooky continued his long-observed
-                    abstinence. Even so it’s all over ‘Shellshock’. You don’t
-                    even have to listen that hard. The hyperactive bass drum is
-                    a dead giveaway – another side-effect of this very moreish
-                    chemical confection.
-                  </p>
-                </blockquote>
-                <p>Later, when recording “State of the Nation“:</p>
-                <blockquote>
-                  <p>
-                    I ended up in the backroom with the local dealer, taking
-                    part in some kind of marathon snort-off. The winner of which
-                    got to munch on some genuine Colombian coca leaf for
-                    dessert. It was an insane gurnathon. Neither I nor the
-                    dealer could converse in any meaningful way – he just
-                    chomped and gurned while I grinned and twitched.
-                  </p>
-                </blockquote>
-                <p>
-                  This drug use increased through the “Madchester” era, with
-                  Ecstasy sweeping through the dance hall scene. Crowds flocked
-                  to the Haçienda, but the only profiteers were the drug
-                  dealers. The thriving drug trade brought gang violence that
-                  proved the scene’s undoing.
-                </p>
-                <p>
-                  Everything culminated with Factory selling itself to London
-                  Records to ward off bankruptcy, and the band going on
-                  indefinite hiatus.
-                </p>
-                <p>
-                  Here, the story takes a poignant turn. Morris had spent his
-                  entire adult life in a band. His only responsibilities were
-                  recording albums, playing gigs, and touring the world. This
-                  led to a kind of arrested development and prolonged
-                  adolescence. With the band gone, he had no responsibilities.
-                </p>
-                <p>
-                  Rather than flounder, as so many aging musicians do, he grew
-                  up. He married Gillian and got sober. The couple had a
-                  daughter named Tilly and settled into a quiet life on a farm
-                  outside Macclesfield.
-                </p>
-                <p>Morris communicates his maturity with passages like this:</p>
-                <blockquote>
-                  <p>
-                    For the one thing that parenthood seemed to bring was an
-                    even greater acceleration in time passing: a day began to
-                    feel like an hour, a week seemed to only last a day, a year
-                    was gone before I knew it. Why was that? In the blink of an
-                    eye Tilly was running about the house singing and dancing,
-                    then the next minute she was off to school.
-                  </p>
-                </blockquote>
-                <p>
-                  But, lest you think he abandoned his post-punk roots, he also
-                  bought a tank.
-                </p>
-                <blockquote>
-                  <p>
-                    Learning how the thing worked was both frustrating and very
-                    satisfying, though probably not as satisfying as discovering
-                    that its gun had a range of ten miles, making Bernard’s
-                    house an easy target. Fortunately, ammunition was quite hard
-                    to get hold of. The Army are quite picky about things like
-                    that.
-                  </p>
-                </blockquote>
-                <p>
-                  I wonder what would have happened had Gillian not joined the
-                  band. As the New Order ride ended, Morris found himself
-                  pushing forty, yet still not an adult. By this point, his
-                  generation had moved on, married, had kids, matured. Finding a
-                  partner would mean either an age gap or a maturity gap. But,
-                  with Gillian having ridden the same merry-go-round, when the
-                  ride ended, they weren’t alone. Two kids who found each other,
-                  made it big in music, and stayed together. How sweet is that?
-                </p>
-                <p>
-                  In contrast, Bernard and Hooky kept being rock stars. Bernard
-                  had Electronic with Johnny Marr, and Hooky formed the
-                  apt-named Revenge and then Monaco.
-                </p>
-                <p>
-                  This contrast played out when New Order reconvened for 2001’s
-                  <em>Get Ready</em>.
-                </p>
-                <p>
-                  Morris and Gilbert’s second daughter, two-year-old Grace,
-                  suffered transverse myelitis, paralyzing her below the waist.
-                  The hospital visits kept the pair from most of the album’s
-                  recording and mixing.
-                </p>
-                <p>
-                  The mature move would see Bernard and Hooky rally around their
-                  bandmates. Put the record on hold, and support Stephen and
-                  Gillian like family. Instead, they cornered Stephen about his
-                  and Gillian’s absences. Said Morris:
-                </p>
-                <blockquote>
-                  <p>
-                    I agreed to take a pay cut for the record, as did Gillian,
-                    to compensate for our tardiness.
-                  </p>
-                </blockquote>
-                <p>
-                  I love that record, but this taints it. For Bernard and Hooky,
-                  the band remained the priority. Reading between the lines, you
-                  can feel their resentment towards Stephen and Gillian that
-                  they didn’t feel the same. Morris doesn’t come right out and
-                  say it, but comes close:
-                </p>
-                <blockquote>
-                  <p>
-                    Later came a phone call, again from Andy, explaining how
-                    Bernard considered the guitar-manship on the new songs to be
-                    beyond the capability of our current staffing levels. The
-                    combined efforts of Bernard and Gillian and the Akai DR16
-                    hard-disk recorder would no longer be enough. We would need
-                    an extra guitarist to do the work justice in a live setting.
-                  </p>
-                  <p>
-                    I may have been getting a little touchy or oversensitive
-                    here but it sounded to me very much like he was saying ‘Your
-                    wife’s not good enough on the guitar, is she? We’d be doing
-                    her a favour. Saving her the pain and embarrassment.’
-                  </p>
-                </blockquote>
-                <p>
-                  This led to Stephen and Gillian deciding she would leave the
-                  band. Without Gillian, when the band convened for 2005’s
-                  <em>Waiting for the Sirens’ Call</em> Stephen’s growing
-                  perspective had him questioning his commitment.
-                </p>
-                <blockquote>
-                  <p>
-                    Even as a kid my interests had been somehow involved in the
-                    business of running away, which continued through the
-                    teenage angst of upsetting the grown-up apple cart of
-                    respectability and conformist crap. Now here I was, hurtling
-                    headlong into my fifties. The party was becoming a job.
-                  </p>
-                </blockquote>
-                <p>
-                  As the volume winds to a close, death claims the group’s
-                  surrogate father-figures. First their manager Rob, then
-                  Factory founder Tony Wilson. Morris, again showing us his
-                  growing maturity, reflects:
-                </p>
-                <blockquote>
-                  <p>
-                    Growing old means going to an ever-increasing number of
-                    funerals. It’s life’s brutal way of reminding us that we are
-                    all running out of road. The gathering of a circle that gets
-                    smaller with each passing year, until there is no one left
-                    to remember what really happened.
-                  </p>
-                </blockquote>
-                <p>
-                  Morris ends the story with Peter Hook’s quitting the band and
-                  its seeming dissolution. Gillian’s return and the band’s next
-                  albums, Morris teases for a third volume. But the audio book
-                  closes with a bonus interview where their now-adult daughter
-                  Grace (recovered from her illness) interviews her parents.
-                  Gillian proves a raconteur equal to Stephen and hearing their
-                  back-and-forth makes for an engaging listen.
-                </p>
-                <p>
-                  Indeed, one gets the sense the pair couldn’t have made without
-                  each other. That, and their mutual relative lack of egos.
-                  Says, Morris:
-                </p>
-                <blockquote>
-                  <p>
-                    If you could see us working in the studio together, and I
-                    hope to God you never have to, you would think that we were
-                    on the brink of imminent marital break-up. That plates are
-                    about to be thrown, china smashed, followed by a storming
-                    out of house and home.
-                  </p>
-                  <p>
-                    It’s not always like that. Everybody rows sometimes, throws
-                    their toys out of the pram over some trivial nonsense. It’s
-                    being able to laugh at yourself and realise how ridiculous
-                    your behaviour actually is that’s the trick.
-                  </p>
-                </blockquote>
-                <p>
-                  This is the rare first-hand rock memoir with a detached
-                  perspective. Granted, it means Bernard and Hooky are somewhat
-                  black boxes, as Morris’s journalistic approach avoids
-                  speculation into their thoughts or feelings. But his story
-                  proffers a visceral sense of <em>being there</em>, like a fly
-                  on the wall observing.
-                </p>
-                <p>
-                  Like the first volume, it proves a better listen than read.
-                  Stephen’s self-deprecating humor remains a constant throughout
-                  the story, but the written word lacks his enunciation and
-                  emphasis, and his impersonations of Rob.
-                </p>
-                <p>
-                  For New Order fans, it’s a must-listen, and I suspect fans of
-                  rock memoirs in general would appreciate it. I listened to it
-                  last year, but never got around to writing a review. Coming
-                  back to it, I planned to review it based on my notes, and
-                  thought I’d re-listen to a few chapters to refresh my memory.
-                  I ended up re-listening to the entire book, loving it just as
-                  much the second time.
-                </p>
+                <img
+                  srcset="
+                    /_image?/content%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;q=80&amp;f=avif 1x,
+                    /_image?/content%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;q=80&amp;f=avif 2x
+                  "
+                  src="/_image?/content%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
+                  alt="A cover for Fast Forward: Confessions of a Post-Punk Percussionist: Volume II by Stephen Morris"
+                  width="248"
+                  height="372"
+                  class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
+                  loading="eager"
+                  decoding="async"
+                  style="aspect-ratio: 0.66666667"
+                />
               </div>
             </div>
-            <div class="spacer-y-20"></div>
+          </header>
+          <div
+            class="flex flex-col items-center gap-16 px-container pb-20 desktop:gap-20 desktop:pb-32"
+          >
+            <div
+              class="rendered-markdown font-light tracking-0.3px text-md/7 tablet:text-xl/8 max-w-prose first-letter:leading-[.8] first-letter:text-default tablet:first-letter:pr-3 desktop:first-letter:text-[64px] [&amp;&gt;p:first-child]:first-letter:float-left [&amp;&gt;p:first-child]:first-letter:mt-[6px] [&amp;&gt;p:first-child]:first-letter:pr-2 [&amp;&gt;p:first-child]:first-letter:font-sans [&amp;&gt;p:first-child]:first-letter:text-[56px] [&amp;&gt;p:first-child]:first-letter:font-bold"
+            >
+              <p>
+                Every bit as entertaining as his first volume, drummer Stephen
+                Morris’s second volume of memoirs picks up where
+                <em>Record Play Pause</em> ended, chronicling New Order’s rise
+                to super-stardom and the tensions that tore it apart.
+              </p>
+              <!-- end -->
+              <p>
+                After lead singer Ian Curtis’s suicide, the band faced an
+                identity crisis. They toyed with being their label, Factory’s,
+                house band. But playing other people’s music wasn’t for them. So
+                they resolved to remain their own band, rechristened New Order.
+                But who would do the singing?
+              </p>
+              <p>
+                Most of the duties fell to guitarist Bernard Sumner, with some
+                songs sung by bassist Peter “Hooky” Hook. To allow Bernard to
+                sing more, manager Rob Gretton suggested adding a fourth member
+                to the group—Stephen’s girlfriend, Gillian Gilbert.
+              </p>
+              <p>
+                Shocked at first, the band warmed to the idea, and Gillian
+                joined.
+              </p>
+              <blockquote>
+                <p>
+                  Gillian’s first experience of the recording process and Martin
+                  Hannett’s unconventional production techniques was our
+                  re-recording of ‘Ceremony’, starting what would become a New
+                  Order habit of confusing the record-buying public.
+                </p>
+              </blockquote>
+              <p>
+                The quartet gelled and began accumulating new songs as Morris
+                continued his fascination with bleeding-edge tech. One such
+                piece of kit was the Clap Trap.
+              </p>
+              <blockquote>
+                <p>‘And what does it do?’</p>
+                <p>‘It makes clapping noises.’</p>
+                <p>
+                  ‘And why did you think that might be useful? We’ve all got
+                  hands, even Rob.’
+                </p>
+                <p>‘Well, I, er, um, thought …’</p>
+                <p>
+                  The device did not garner approval from my fellow musicians.
+                  They were immune to its charm and potential. The box would sit
+                  there clapping away to itself in what was, I finally had to
+                  admit, a particularly monotonous and annoying manner.
+                </p>
+                <p>
+                  It could clap slowly or it could clap incredibly fast but…
+                  ‘Steve, it’s fucking useless.’
+                </p>
+              </blockquote>
+              <p>
+                The band’s songwriting process also evolved. Without Ian to
+                write the lyrics, the band took turns. Morris had a system:
+              </p>
+              <blockquote>
+                <p>
+                  I found two or three tins of Carlsberg Special Brew could be
+                  quite inspirational when it came to the composition of words.
+                  The deciphering of my scrawl the next morning, though, was a
+                  bit problematical. As to what these words were about or
+                  actually meant I had no recollection.
+                </p>
+                <p>
+                  ‘ICB’, ‘Chosen Time’, ‘Procession’, ‘Cries and Whispers’ mk2
+                  and ‘Mesh’ mk2 were all products of my Carlsberg-fuelled
+                  scribblings.
+                </p>
+              </blockquote>
+              <p>
+                Stephen’s early-adopter inclinations extended to home video. He
+                purchased an unwieldy “portable” VHS video recorder and camera.
+                While film-maker may not have been in his future, the gear had
+                its use:
+              </p>
+              <blockquote>
+                <p>
+                  I was also building up a substantial collection of what I
+                  considered classic films taped off the TV and, of course, a
+                  selection of stuff in the ‘video nasty’ genre: Texas Chainsaw
+                  Massacre, Spectre and Caligula along with a pirate copy of A
+                  Clockwork Orange were particular faves. Oh, and everything I
+                  could find by John Waters, Desperate Living being essential
+                  viewing. These were sourced as a rule from the central hub of
+                  eighties entertainment – the dodgy corner-shop video-rental
+                  emporium.
+                </p>
+              </blockquote>
+              <p>
+                I bring this up because I didn’t recognize the
+                <em>Spectre</em> title. Turns out it was the UK title for
+                <span data-imdb-id="tt0080464"><em>The Boogey Man</em></span>
+                which was shot, in part, in my hometown. Small world.
+              </p>
+              <p>
+                In other video-related affairs, Morris reveals the track “Video
+                5-8-6” came from an idea to show something on the video screens
+                behind the band when they played Factory’s club, the Haçienda.
+                So they padded the track ‘5-8-6’ out to twenty-two minutes, and
+                Bernard, Gillian, and Steven cut together a video to match from
+                a pile of cult VHS tapes, one of which was
+                <span data-imdb-id="tt0080354"><em>Alligator</em></span
+                >.
+              </p>
+              <blockquote>
+                <p>
+                  Over the years, the track now known as ‘Video 5-8-6’ or ‘Prime
+                  5-8-6’ has become some sort of art thing rather than the
+                  musical accompaniment to a man being eaten by an alligator,
+                  which is always how I remember it.
+                </p>
+              </blockquote>
+              <p>
+                As the 80s progressed, the band’s musical inspirations changed.
+                Prog and rock gave way to Italian disco and USA house music. The
+                era of the 12-inch dance track, but something wasn’t right.
+              </p>
+              <blockquote>
+                <p>
+                  I was listening to these tracks on a hi-fi in a tiny bedroom
+                  in a nice house on a suburban street in Macclesfield. The same
+                  way I listened to everything. Although this was very
+                  satisfying for nearly everything rock, psych, country, punk
+                  and prog, it was not the environment that the 12-inch extended
+                  dance mix was designed for.
+                </p>
+              </blockquote>
+              <p>
+                Music had moved out of the bedroom and into the dance club. As
+                New Order’s music changed to reflect this, Morris noticed a
+                shift in the band’s audience.
+              </p>
+              <blockquote>
+                <p>
+                  In the very early days our audience seemed to consist largely
+                  of Joy Division fans come to pay their respects. Generally,
+                  these adopted the look they thought typified Ian Curtis (this
+                  they assumed from photographs of Ian and Joy Division): short
+                  hair and grey raincoats. They didn’t smile much. They were
+                  mostly men.
+                </p>
+                <p>
+                  They had a look that said, ‘Sorry for your loss’ and ‘Why did
+                  he do it?’ Their number dwindled when Gillian joined the band,
+                  with a few diehards finally giving up the ghost after hearing
+                  ‘Everything’s Gone Green’.
+                </p>
+                <p>‘It’s a shame really but they’re not…’</p>
+                <p>‘How dare they have fun in their grief and misery?’</p>
+                <p>I enjoyed annoying these people as a matter of principle.</p>
+              </blockquote>
+              <p>
+                But it was the acquisition of a key piece of tech, the Emu
+                Emulator, along with the Oberheim DMX drum machine, that
+                propelled the band to stardom.
+              </p>
+              <blockquote>
+                <p>
+                  To learn what the actual potential of all this new equipment
+                  was we set about writing a tune, as much another experiment as
+                  anything. It was inspired by the always inspirational Donna
+                  Summer’s ‘Our Love’, Shep Pettibone’s remix of Sharon Redd’s
+                  ‘Beat The Street’ and very loosely based on the arrangement of
+                  ‘Dirty Talk’ by Klein and MBO. We had a cup of tea and got
+                  straight to work. It took quite a while.
+                </p>
+              </blockquote>
+              <p>
+                The result, “Blue Monday”, sold hundreds of thousands of copies
+                and made Factory a little over a hundred thousand pounds.
+                Contrary to the myth, Factory did not lose money on every copy.
+              </p>
+              <p>Morris dispels another myth:</p>
+              <blockquote>
+                <p>
+                  Another ‘Blue Monday’ legend is that it is the bestselling
+                  12-inch of all time. An accolade indeed, but it’s open to
+                  question. Don’t let that spoil a good story though. Let’s just
+                  say it almost certainly is the bestselling 12-inch of all time
+                  and always will be, and move on.
+                </p>
+              </blockquote>
+              <p>
+                The band’s ascension to super-stardom takes its toll. Morris
+                recounts a layover in Thailand which saw him get drunk and pick
+                a spiteful fight with Gillian, whose only crime was shocking the
+                locals with her short skirt and dyed red hair. Meanwhile their
+                drunk manager, Rob Gretton, insisted on buying the suit in the
+                window of a shop, shouting at the proprietor, “How much for the
+                suit, mate?” to which the owner, kept replying, “No ticket!”
+                until their roadie, the soberest among them realized what was
+                happening and turned to Rob.
+              </p>
+              <blockquote>
+                <p>‘Rob, we’ve got to go. It’s a fucking cleaners!’</p>
+              </blockquote>
+              <p>
+                Morris’s blow-up was due, in part, to the stress of touring, but
+                also to the Haçienda, Factory’s ever-hungry money-pit.
+                Determined buck trends, the operators kept the club open seven
+                nights a week. Most nights, it went empty.
+              </p>
+              <p>
+                Another contributor was the band’s growing drug use. They worked
+                with producer John Robie on “Shellshock” for the
+                <span data-imdb-id=""><em>Pretty in Pink</em></span> soundtrack.
+              </p>
+              <blockquote>
+                <p>
+                  It is widely acknowledged that cocaine may kill you, but
+                  you’re more likely to bore everyone else to death before it
+                  does. It will turn you into a self-obsessed, monstrous,
+                  gurning, yakking idiot.
+                </p>
+                <p>
+                  Yes, friends, coke was a big influence on some of us at that
+                  time. Clean-living Hooky continued his long-observed
+                  abstinence. Even so it’s all over ‘Shellshock’. You don’t even
+                  have to listen that hard. The hyperactive bass drum is a dead
+                  giveaway – another side-effect of this very moreish chemical
+                  confection.
+                </p>
+              </blockquote>
+              <p>Later, when recording “State of the Nation“:</p>
+              <blockquote>
+                <p>
+                  I ended up in the backroom with the local dealer, taking part
+                  in some kind of marathon snort-off. The winner of which got to
+                  munch on some genuine Colombian coca leaf for dessert. It was
+                  an insane gurnathon. Neither I nor the dealer could converse
+                  in any meaningful way – he just chomped and gurned while I
+                  grinned and twitched.
+                </p>
+              </blockquote>
+              <p>
+                This drug use increased through the “Madchester” era, with
+                Ecstasy sweeping through the dance hall scene. Crowds flocked to
+                the Haçienda, but the only profiteers were the drug dealers. The
+                thriving drug trade brought gang violence that proved the
+                scene’s undoing.
+              </p>
+              <p>
+                Everything culminated with Factory selling itself to London
+                Records to ward off bankruptcy, and the band going on indefinite
+                hiatus.
+              </p>
+              <p>
+                Here, the story takes a poignant turn. Morris had spent his
+                entire adult life in a band. His only responsibilities were
+                recording albums, playing gigs, and touring the world. This led
+                to a kind of arrested development and prolonged adolescence.
+                With the band gone, he had no responsibilities.
+              </p>
+              <p>
+                Rather than flounder, as so many aging musicians do, he grew up.
+                He married Gillian and got sober. The couple had a daughter
+                named Tilly and settled into a quiet life on a farm outside
+                Macclesfield.
+              </p>
+              <p>Morris communicates his maturity with passages like this:</p>
+              <blockquote>
+                <p>
+                  For the one thing that parenthood seemed to bring was an even
+                  greater acceleration in time passing: a day began to feel like
+                  an hour, a week seemed to only last a day, a year was gone
+                  before I knew it. Why was that? In the blink of an eye Tilly
+                  was running about the house singing and dancing, then the next
+                  minute she was off to school.
+                </p>
+              </blockquote>
+              <p>
+                But, lest you think he abandoned his post-punk roots, he also
+                bought a tank.
+              </p>
+              <blockquote>
+                <p>
+                  Learning how the thing worked was both frustrating and very
+                  satisfying, though probably not as satisfying as discovering
+                  that its gun had a range of ten miles, making Bernard’s house
+                  an easy target. Fortunately, ammunition was quite hard to get
+                  hold of. The Army are quite picky about things like that.
+                </p>
+              </blockquote>
+              <p>
+                I wonder what would have happened had Gillian not joined the
+                band. As the New Order ride ended, Morris found himself pushing
+                forty, yet still not an adult. By this point, his generation had
+                moved on, married, had kids, matured. Finding a partner would
+                mean either an age gap or a maturity gap. But, with Gillian
+                having ridden the same merry-go-round, when the ride ended, they
+                weren’t alone. Two kids who found each other, made it big in
+                music, and stayed together. How sweet is that?
+              </p>
+              <p>
+                In contrast, Bernard and Hooky kept being rock stars. Bernard
+                had Electronic with Johnny Marr, and Hooky formed the apt-named
+                Revenge and then Monaco.
+              </p>
+              <p>
+                This contrast played out when New Order reconvened for 2001’s
+                <em>Get Ready</em>.
+              </p>
+              <p>
+                Morris and Gilbert’s second daughter, two-year-old Grace,
+                suffered transverse myelitis, paralyzing her below the waist.
+                The hospital visits kept the pair from most of the album’s
+                recording and mixing.
+              </p>
+              <p>
+                The mature move would see Bernard and Hooky rally around their
+                bandmates. Put the record on hold, and support Stephen and
+                Gillian like family. Instead, they cornered Stephen about his
+                and Gillian’s absences. Said Morris:
+              </p>
+              <blockquote>
+                <p>
+                  I agreed to take a pay cut for the record, as did Gillian, to
+                  compensate for our tardiness.
+                </p>
+              </blockquote>
+              <p>
+                I love that record, but this taints it. For Bernard and Hooky,
+                the band remained the priority. Reading between the lines, you
+                can feel their resentment towards Stephen and Gillian that they
+                didn’t feel the same. Morris doesn’t come right out and say it,
+                but comes close:
+              </p>
+              <blockquote>
+                <p>
+                  Later came a phone call, again from Andy, explaining how
+                  Bernard considered the guitar-manship on the new songs to be
+                  beyond the capability of our current staffing levels. The
+                  combined efforts of Bernard and Gillian and the Akai DR16
+                  hard-disk recorder would no longer be enough. We would need an
+                  extra guitarist to do the work justice in a live setting.
+                </p>
+                <p>
+                  I may have been getting a little touchy or oversensitive here
+                  but it sounded to me very much like he was saying ‘Your wife’s
+                  not good enough on the guitar, is she? We’d be doing her a
+                  favour. Saving her the pain and embarrassment.’
+                </p>
+              </blockquote>
+              <p>
+                This led to Stephen and Gillian deciding she would leave the
+                band. Without Gillian, when the band convened for 2005’s
+                <em>Waiting for the Sirens’ Call</em> Stephen’s growing
+                perspective had him questioning his commitment.
+              </p>
+              <blockquote>
+                <p>
+                  Even as a kid my interests had been somehow involved in the
+                  business of running away, which continued through the teenage
+                  angst of upsetting the grown-up apple cart of respectability
+                  and conformist crap. Now here I was, hurtling headlong into my
+                  fifties. The party was becoming a job.
+                </p>
+              </blockquote>
+              <p>
+                As the volume winds to a close, death claims the group’s
+                surrogate father-figures. First their manager Rob, then Factory
+                founder Tony Wilson. Morris, again showing us his growing
+                maturity, reflects:
+              </p>
+              <blockquote>
+                <p>
+                  Growing old means going to an ever-increasing number of
+                  funerals. It’s life’s brutal way of reminding us that we are
+                  all running out of road. The gathering of a circle that gets
+                  smaller with each passing year, until there is no one left to
+                  remember what really happened.
+                </p>
+              </blockquote>
+              <p>
+                Morris ends the story with Peter Hook’s quitting the band and
+                its seeming dissolution. Gillian’s return and the band’s next
+                albums, Morris teases for a third volume. But the audio book
+                closes with a bonus interview where their now-adult daughter
+                Grace (recovered from her illness) interviews her parents.
+                Gillian proves a raconteur equal to Stephen and hearing their
+                back-and-forth makes for an engaging listen.
+              </p>
+              <p>
+                Indeed, one gets the sense the pair couldn’t have made without
+                each other. That, and their mutual relative lack of egos. Says,
+                Morris:
+              </p>
+              <blockquote>
+                <p>
+                  If you could see us working in the studio together, and I hope
+                  to God you never have to, you would think that we were on the
+                  brink of imminent marital break-up. That plates are about to
+                  be thrown, china smashed, followed by a storming out of house
+                  and home.
+                </p>
+                <p>
+                  It’s not always like that. Everybody rows sometimes, throws
+                  their toys out of the pram over some trivial nonsense. It’s
+                  being able to laugh at yourself and realise how ridiculous
+                  your behaviour actually is that’s the trick.
+                </p>
+              </blockquote>
+              <p>
+                This is the rare first-hand rock memoir with a detached
+                perspective. Granted, it means Bernard and Hooky are somewhat
+                black boxes, as Morris’s journalistic approach avoids
+                speculation into their thoughts or feelings. But his story
+                proffers a visceral sense of <em>being there</em>, like a fly on
+                the wall observing.
+              </p>
+              <p>
+                Like the first volume, it proves a better listen than read.
+                Stephen’s self-deprecating humor remains a constant throughout
+                the story, but the written word lacks his enunciation and
+                emphasis, and his impersonations of Rob.
+              </p>
+              <p>
+                For New Order fans, it’s a must-listen, and I suspect fans of
+                rock memoirs in general would appreciate it. I listened to it
+                last year, but never got around to writing a review. Coming back
+                to it, I planned to review it based on my notes, and thought I’d
+                re-listen to a few chapters to refresh my memory. I ended up
+                re-listening to the entire book, loving it just as much the
+                second time.
+              </p>
+            </div>
             <div class="w-full max-w-popout">
               <h2
-                class="px-gutter text-md font-normal text-subtle shadow-bottom"
+                class="py-10 font-sans text-xs font-semibold uppercase tracking-wide text-subtle shadow-bottom"
               >
                 Reading History
-                <div class="spacer-y-2"></div>
               </h2>
               <ul>
                 <li
-                  class="grid auto-rows-auto grid-cols-[16px_1ch_1fr] px-gutter pt-4 even:bg-subtle"
+                  class="grid auto-rows-auto grid-cols-[16px_16px_1fr] pt-4 font-sans text-xs even:bg-subtle"
                 >
-                  <div class="mt-1">
-                    <svg
-                      width="1em"
-                      height="1em"
-                      viewBox="0 0 16 16"
-                      class="fill-subtle mr-[1ch] min-h-4 min-w-4"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <title>Watched on</title>
-                      <path
-                        fill-rule="evenodd"
-                        d="M14 2H2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1zM2 1a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2z"
-                      ></path>
-                      <path
-                        fill-rule="evenodd"
-                        d="M14 2H2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1zM2 1a2 2 0 0 0-2 2v2h16V3a2 2 0 0 0-2-2H2z"
-                      ></path>
-                      <path
-                        fill-rule="evenodd"
-                        d="M3.5 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5zm9 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5z"
-                      ></path>
-                    </svg>
-                  </div>
+                  <svg
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 16 16"
+                    class="fill-subtle mr-[1ch] min-h-4 min-w-4"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>Watched on</title>
+                    <path
+                      fill-rule="evenodd"
+                      d="M14 2H2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1zM2 1a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2z"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      d="M14 2H2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1zM2 1a2 2 0 0 0-2 2v2h16V3a2 2 0 0 0-2-2H2z"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      d="M3.5 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5zm9 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5z"
+                    ></path>
+                  </svg>
                   <div class="col-start-3">
-                    <span class="inline-block text-default"
+                    <span
+                      class="inline-block font-sans text-xs font-normal tracking-normal text-subtle"
                       >Sat, Dec 9, 2023</span
                     >
-                    <span class="font-light text-muted"
-                      ><span>via</span> <span>Audible</span></span
+                    <span class="text-subtle"
+                      ><span>via</span>
+                      <span class="font-sans text-xs font-normal text-subtle"
+                        >Audible</span
+                      ></span
                     >
-                    <span class="text-sm font-light leading-none text-subtle"
-                      >(<span
-                        class="rendered-markdown font-light text-sm leading-none"
+                    <span class="font-light tracking-normal text-subtle"
+                      >(<span class="rendered-markdown font-light leading-none"
                         ><span>Read by Stephen Morris</span></span
                       >)</span
                     >
                   </div>
                   <div class="col-start-3 row-start-2">
                     <details class="font-light text-subtle">
-                      <summary>
+                      <summary class="cursor-pointer leading-6">
                         Listened to over<!-- -->
-                        <!-- -->29<!-- -->
-                        Days
+                        <span class="font-normal text-subtle"
+                          >29<!-- -->
+                          Days</span
+                        >
                       </summary>
-                      <ol
-                        class="-ml-gutter grid w-full grid-cols-[auto_1fr_auto] items-center pt-2"
-                      >
-                        <li class="contents *:odd:bg-subtle">
-                          <div class="whitespace-nowrap px-gutter leading-10">
-                            11 Nov 2023
-                          </div>
-                          <div class="h-10 w-full">
+                      <ol class="grid w-full grid-cols-[auto,1fr,auto]">
+                        <li
+                          class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr,auto,auto,1fr] py-3"
+                        >
+                          <div
+                            class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid"
+                          >
+                            <div class="">11 Nov 2023</div>
                             <div
-                              class="progress-bar-bg leading-[38px]"
+                              class="col-start-3 self-center text-nowrap pb-1 text-right font-sans text-xs text-subtle"
+                            >
+                              <div class="">15%</div>
+                            </div>
+                          </div>
+                          <div
+                            class="col-span-2 col-start-2 row-start-3 bg-subtle"
+                          >
+                            <div
+                              class="progress-bar-bg leading-[6px] tablet:mb-0"
                               style="--bar-percent: 15%"
                             >
                                
                             </div>
                           </div>
-                          <div class="px-gutter text-right leading-10">15%</div>
                         </li>
-                        <li class="contents *:odd:bg-subtle">
-                          <div class="whitespace-nowrap px-gutter leading-10">
-                            12 Nov 2023
-                          </div>
-                          <div class="h-10 w-full">
+                        <li
+                          class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr,auto,auto,1fr] py-3"
+                        >
+                          <div
+                            class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid"
+                          >
+                            <div class="">12 Nov 2023</div>
                             <div
-                              class="progress-bar-bg leading-[38px]"
+                              class="col-start-3 self-center text-nowrap pb-1 text-right font-sans text-xs text-subtle"
+                            >
+                              <div class="">34%</div>
+                            </div>
+                          </div>
+                          <div
+                            class="col-span-2 col-start-2 row-start-3 bg-subtle"
+                          >
+                            <div
+                              class="progress-bar-bg leading-[6px] tablet:mb-0"
                               style="--bar-percent: 34%"
                             >
                                
                             </div>
                           </div>
-                          <div class="px-gutter text-right leading-10">34%</div>
                         </li>
-                        <li class="contents *:odd:bg-subtle">
-                          <div class="whitespace-nowrap px-gutter leading-10">
-                            13 Nov 2023
-                          </div>
-                          <div class="h-10 w-full">
+                        <li
+                          class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr,auto,auto,1fr] py-3"
+                        >
+                          <div
+                            class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid"
+                          >
+                            <div class="">13 Nov 2023</div>
                             <div
-                              class="progress-bar-bg leading-[38px]"
+                              class="col-start-3 self-center text-nowrap pb-1 text-right font-sans text-xs text-subtle"
+                            >
+                              <div class="">43%</div>
+                            </div>
+                          </div>
+                          <div
+                            class="col-span-2 col-start-2 row-start-3 bg-subtle"
+                          >
+                            <div
+                              class="progress-bar-bg leading-[6px] tablet:mb-0"
                               style="--bar-percent: 43%"
                             >
                                
                             </div>
                           </div>
-                          <div class="px-gutter text-right leading-10">43%</div>
                         </li>
-                        <li class="contents *:odd:bg-subtle">
-                          <div class="whitespace-nowrap px-gutter leading-10">
-                            14 Nov 2023
-                          </div>
-                          <div class="h-10 w-full">
+                        <li
+                          class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr,auto,auto,1fr] py-3"
+                        >
+                          <div
+                            class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid"
+                          >
+                            <div class="">14 Nov 2023</div>
                             <div
-                              class="progress-bar-bg leading-[38px]"
+                              class="col-start-3 self-center text-nowrap pb-1 text-right font-sans text-xs text-subtle"
+                            >
+                              <div class="">45%</div>
+                            </div>
+                          </div>
+                          <div
+                            class="col-span-2 col-start-2 row-start-3 bg-subtle"
+                          >
+                            <div
+                              class="progress-bar-bg leading-[6px] tablet:mb-0"
                               style="--bar-percent: 45%"
                             >
                                
                             </div>
                           </div>
-                          <div class="px-gutter text-right leading-10">45%</div>
                         </li>
-                        <li class="contents *:odd:bg-subtle">
-                          <div class="whitespace-nowrap px-gutter leading-10">
-                            15 Nov 2023
-                          </div>
-                          <div class="h-10 w-full">
+                        <li
+                          class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr,auto,auto,1fr] py-3"
+                        >
+                          <div
+                            class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid"
+                          >
+                            <div class="">15 Nov 2023</div>
                             <div
-                              class="progress-bar-bg leading-[38px]"
+                              class="col-start-3 self-center text-nowrap pb-1 text-right font-sans text-xs text-subtle"
+                            >
+                              <div class="">57%</div>
+                            </div>
+                          </div>
+                          <div
+                            class="col-span-2 col-start-2 row-start-3 bg-subtle"
+                          >
+                            <div
+                              class="progress-bar-bg leading-[6px] tablet:mb-0"
                               style="--bar-percent: 56.99999999999999%"
                             >
                                
                             </div>
                           </div>
-                          <div class="px-gutter text-right leading-10">57%</div>
                         </li>
-                        <li class="contents *:odd:bg-subtle">
-                          <div class="whitespace-nowrap px-gutter leading-10">
-                            17 Nov 2023
-                          </div>
-                          <div class="h-10 w-full">
+                        <li
+                          class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr,auto,auto,1fr] py-3"
+                        >
+                          <div
+                            class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid"
+                          >
+                            <div class="">17 Nov 2023</div>
                             <div
-                              class="progress-bar-bg leading-[38px]"
+                              class="col-start-3 self-center text-nowrap pb-1 text-right font-sans text-xs text-subtle"
+                            >
+                              <div class="">62%</div>
+                            </div>
+                          </div>
+                          <div
+                            class="col-span-2 col-start-2 row-start-3 bg-subtle"
+                          >
+                            <div
+                              class="progress-bar-bg leading-[6px] tablet:mb-0"
                               style="--bar-percent: 62%"
                             >
                                
                             </div>
                           </div>
-                          <div class="px-gutter text-right leading-10">62%</div>
                         </li>
-                        <li class="contents *:odd:bg-subtle">
-                          <div class="whitespace-nowrap px-gutter leading-10">
-                            18 Nov 2023
-                          </div>
-                          <div class="h-10 w-full">
+                        <li
+                          class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr,auto,auto,1fr] py-3"
+                        >
+                          <div
+                            class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid"
+                          >
+                            <div class="">18 Nov 2023</div>
                             <div
-                              class="progress-bar-bg leading-[38px]"
+                              class="col-start-3 self-center text-nowrap pb-1 text-right font-sans text-xs text-subtle"
+                            >
+                              <div class="">68%</div>
+                            </div>
+                          </div>
+                          <div
+                            class="col-span-2 col-start-2 row-start-3 bg-subtle"
+                          >
+                            <div
+                              class="progress-bar-bg leading-[6px] tablet:mb-0"
                               style="--bar-percent: 68%"
                             >
                                
                             </div>
                           </div>
-                          <div class="px-gutter text-right leading-10">68%</div>
                         </li>
-                        <li class="contents *:odd:bg-subtle">
-                          <div class="whitespace-nowrap px-gutter leading-10">
-                            8 Dec 2023
-                          </div>
-                          <div class="h-10 w-full">
+                        <li
+                          class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr,auto,auto,1fr] py-3"
+                        >
+                          <div
+                            class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid"
+                          >
+                            <div class="">8 Dec 2023</div>
                             <div
-                              class="progress-bar-bg leading-[38px]"
+                              class="col-start-3 self-center text-nowrap pb-1 text-right font-sans text-xs text-subtle"
+                            >
+                              <div class="">79%</div>
+                            </div>
+                          </div>
+                          <div
+                            class="col-span-2 col-start-2 row-start-3 bg-subtle"
+                          >
+                            <div
+                              class="progress-bar-bg leading-[6px] tablet:mb-0"
                               style="--bar-percent: 79%"
                             >
                                
                             </div>
                           </div>
-                          <div class="px-gutter text-right leading-10">79%</div>
                         </li>
-                        <li class="contents *:odd:bg-subtle">
-                          <div class="whitespace-nowrap px-gutter leading-10">
-                            9 Dec 2023
-                          </div>
-                          <div class="h-10 w-full">
+                        <li
+                          class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr,auto,auto,1fr] py-3"
+                        >
+                          <div
+                            class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid"
+                          >
+                            <div class="">9 Dec 2023</div>
                             <div
-                              class="progress-bar-bg leading-[38px]"
+                              class="col-start-3 self-center text-nowrap pb-1 text-right font-sans text-xs text-subtle"
+                            >
+                              <div class="">Finished</div>
+                            </div>
+                          </div>
+                          <div
+                            class="col-span-2 col-start-2 row-start-3 bg-subtle"
+                          >
+                            <div
+                              class="progress-bar-bg leading-[6px] tablet:mb-0"
                               style="--bar-percent: 100%"
                             >
                                
                             </div>
-                          </div>
-                          <div class="px-gutter text-right leading-10">
-                            Finished
                           </div>
                         </li>
                       </ol>
@@ -843,111 +961,150 @@
                   <div class="col-span-3 col-start-1 row-start-3 pt-4"></div>
                 </li>
                 <li
-                  class="grid auto-rows-auto grid-cols-[16px_1ch_1fr] px-gutter pt-4 even:bg-subtle"
+                  class="grid auto-rows-auto grid-cols-[16px_16px_1fr] pt-4 font-sans text-xs even:bg-subtle"
                 >
-                  <div class="mt-1">
-                    <svg
-                      width="1em"
-                      height="1em"
-                      viewBox="0 0 16 16"
-                      class="fill-subtle mr-[1ch] min-h-4 min-w-4"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <title>Watched on</title>
-                      <path
-                        fill-rule="evenodd"
-                        d="M14 2H2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1zM2 1a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2z"
-                      ></path>
-                      <path
-                        fill-rule="evenodd"
-                        d="M14 2H2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1zM2 1a2 2 0 0 0-2 2v2h16V3a2 2 0 0 0-2-2H2z"
-                      ></path>
-                      <path
-                        fill-rule="evenodd"
-                        d="M3.5 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5zm9 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5z"
-                      ></path>
-                    </svg>
-                  </div>
+                  <svg
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 16 16"
+                    class="fill-subtle mr-[1ch] min-h-4 min-w-4"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>Watched on</title>
+                    <path
+                      fill-rule="evenodd"
+                      d="M14 2H2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1zM2 1a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2z"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      d="M14 2H2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1zM2 1a2 2 0 0 0-2 2v2h16V3a2 2 0 0 0-2-2H2z"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      d="M3.5 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5zm9 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5z"
+                    ></path>
+                  </svg>
                   <div class="col-start-3">
-                    <span class="inline-block text-default"
+                    <span
+                      class="inline-block font-sans text-xs font-normal tracking-normal text-subtle"
                       >Mon, Jul 1, 2024</span
                     >
-                    <span class="font-light text-muted"
-                      ><span>via</span> <span>Audible</span></span
+                    <span class="text-subtle"
+                      ><span>via</span>
+                      <span class="font-sans text-xs font-normal text-subtle"
+                        >Audible</span
+                      ></span
                     >
-                    <span class="text-sm font-light leading-none text-subtle"
-                      >(<span
-                        class="rendered-markdown font-light text-sm leading-none"
+                    <span class="font-light tracking-normal text-subtle"
+                      >(<span class="rendered-markdown font-light leading-none"
                         ><span>Read by Stephen Morris</span></span
                       >)</span
                     >
                   </div>
                   <div class="col-start-3 row-start-2">
                     <details class="font-light text-subtle">
-                      <summary>
+                      <summary class="cursor-pointer leading-6">
                         Listened to over<!-- -->
-                        <!-- -->4<!-- -->
-                        Days
+                        <span class="font-normal text-subtle"
+                          >4<!-- -->
+                          Days</span
+                        >
                       </summary>
-                      <ol
-                        class="-ml-gutter grid w-full grid-cols-[auto_1fr_auto] items-center pt-2"
-                      >
-                        <li class="contents *:odd:bg-subtle">
-                          <div class="whitespace-nowrap px-gutter leading-10">
-                            28 Jun 2024
-                          </div>
-                          <div class="h-10 w-full">
+                      <ol class="grid w-full grid-cols-[auto,1fr,auto]">
+                        <li
+                          class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr,auto,auto,1fr] py-3"
+                        >
+                          <div
+                            class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid"
+                          >
+                            <div class="">28 Jun 2024</div>
                             <div
-                              class="progress-bar-bg leading-[38px]"
+                              class="col-start-3 self-center text-nowrap pb-1 text-right font-sans text-xs text-subtle"
+                            >
+                              <div class="">25%</div>
+                            </div>
+                          </div>
+                          <div
+                            class="col-span-2 col-start-2 row-start-3 bg-subtle"
+                          >
+                            <div
+                              class="progress-bar-bg leading-[6px] tablet:mb-0"
                               style="--bar-percent: 25%"
                             >
                                
                             </div>
                           </div>
-                          <div class="px-gutter text-right leading-10">25%</div>
                         </li>
-                        <li class="contents *:odd:bg-subtle">
-                          <div class="whitespace-nowrap px-gutter leading-10">
-                            29 Jun 2024
-                          </div>
-                          <div class="h-10 w-full">
+                        <li
+                          class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr,auto,auto,1fr] py-3"
+                        >
+                          <div
+                            class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid"
+                          >
+                            <div class="">29 Jun 2024</div>
                             <div
-                              class="progress-bar-bg leading-[38px]"
+                              class="col-start-3 self-center text-nowrap pb-1 text-right font-sans text-xs text-subtle"
+                            >
+                              <div class="">45%</div>
+                            </div>
+                          </div>
+                          <div
+                            class="col-span-2 col-start-2 row-start-3 bg-subtle"
+                          >
+                            <div
+                              class="progress-bar-bg leading-[6px] tablet:mb-0"
                               style="--bar-percent: 45%"
                             >
                                
                             </div>
                           </div>
-                          <div class="px-gutter text-right leading-10">45%</div>
                         </li>
-                        <li class="contents *:odd:bg-subtle">
-                          <div class="whitespace-nowrap px-gutter leading-10">
-                            30 Jun 2024
-                          </div>
-                          <div class="h-10 w-full">
+                        <li
+                          class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr,auto,auto,1fr] py-3"
+                        >
+                          <div
+                            class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid"
+                          >
+                            <div class="">30 Jun 2024</div>
                             <div
-                              class="progress-bar-bg leading-[38px]"
+                              class="col-start-3 self-center text-nowrap pb-1 text-right font-sans text-xs text-subtle"
+                            >
+                              <div class="">70%</div>
+                            </div>
+                          </div>
+                          <div
+                            class="col-span-2 col-start-2 row-start-3 bg-subtle"
+                          >
+                            <div
+                              class="progress-bar-bg leading-[6px] tablet:mb-0"
                               style="--bar-percent: 70%"
                             >
                                
                             </div>
                           </div>
-                          <div class="px-gutter text-right leading-10">70%</div>
                         </li>
-                        <li class="contents *:odd:bg-subtle">
-                          <div class="whitespace-nowrap px-gutter leading-10">
-                            1 Jul 2024
-                          </div>
-                          <div class="h-10 w-full">
+                        <li
+                          class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr,auto,auto,1fr] py-3"
+                        >
+                          <div
+                            class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid"
+                          >
+                            <div class="">1 Jul 2024</div>
                             <div
-                              class="progress-bar-bg leading-[38px]"
+                              class="col-start-3 self-center text-nowrap pb-1 text-right font-sans text-xs text-subtle"
+                            >
+                              <div class="">Finished</div>
+                            </div>
+                          </div>
+                          <div
+                            class="col-span-2 col-start-2 row-start-3 bg-subtle"
+                          >
+                            <div
+                              class="progress-bar-bg leading-[6px] tablet:mb-0"
                               style="--bar-percent: 100%"
                             >
                                
                             </div>
-                          </div>
-                          <div class="px-gutter text-right leading-10">
-                            Finished
                           </div>
                         </li>
                       </ol>
@@ -957,73 +1114,71 @@
                 </li>
               </ul>
             </div>
-            <div class="spacer-y-32"></div>
-            <div
+          </div>
+          <div
+            data-pagefind-ignore="true"
+            class="flex w-full flex-col items-center gap-y-12 bg-subtle pb-32 pt-16 tablet:pt-8 desktop:gap-y-24"
+          >
+            <nav
               data-pagefind-ignore="true"
-              class="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+              class="relative flex w-full flex-col items-center tablet:w-auto"
             >
-              <nav
-                class="relative flex w-full flex-col items-center tablet:w-auto"
+              <div
+                class="relative mx-auto w-full max-w-screen-max desktop:px-20"
               >
-                <div
-                  class="w-full px-gutter py-2 shadow-bottom tablet:py-4 tablet:shadow-none desktop:px-pageMargin desktop:py-4"
-                >
-                  <span class="font-semibold text-muted">More<!-- --> </span
-                  ><a class="text-accent" href="/reviews/">Reviews</a>
+                <div class="px-container">
+                  <h2
+                    class="py-10 font-sans text-xs font-semibold uppercase tracking-wide text-subtle"
+                  >
+                    More<!-- -->
+                    <a href="/reviews/" class="text-accent">Reviews</a>
+                  </h2>
                 </div>
                 <ul
-                  class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-11 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
+                  class="flex flex-wrap justify-center gap-x-[4%] gap-y-[6vw] px-[2%] tablet:gap-x-[3%] tablet:px-container desktop:justify-between"
                 >
                   <li
-                    class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+                    class="relative flex w-[46%] max-w-[248px] flex-col items-center border-default bg-default tablet:w-[22.75%]"
                   >
-                    <a
-                      href="/reviews/extreme-ownership-by-jocko-willink-leif-babin/"
-                      class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
-                      ><img
-                        srcset="
-                          /_image?/content%2Fassets%2Fcovers%2Fextreme-ownership-by-jocko-willink-leif-babin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=44&amp;q=80&amp;f=avif   44w,
-                          /_image?/content%2Fassets%2Fcovers%2Fextreme-ownership-by-jocko-willink-leif-babin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=88&amp;q=80&amp;f=avif   88w,
-                          /_image?/content%2Fassets%2Fcovers%2Fextreme-ownership-by-jocko-willink-leif-babin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;q=80&amp;f=avif 176w,
-                          /_image?/content%2Fassets%2Fcovers%2Fextreme-ownership-by-jocko-willink-leif-babin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=352&amp;q=80&amp;f=avif 352w
-                        "
-                        src="/_image?/content%2Fassets%2Fcovers%2Fextreme-ownership-by-jocko-willink-leif-babin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;h=264&amp;q=80&amp;f=avif"
-                        alt="A cover for Extreme Ownership: How U.S. Navy SEALs Lead and Win by Jocko Willink and Leif Babin"
-                        height="264"
-                        width="176"
-                        class="aspect-[0.66666667]"
-                        loading="lazy"
-                        decoding="async"
-                        style="aspect-ratio: 0.66666667"
-                    /></a>
-                    <div class="tablet:spacer-y-2"></div>
+                    <img
+                      srcset="
+                        /_image?/content%2Fassets%2Fcovers%2Fextreme-ownership-by-jocko-willink-leif-babin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;q=80&amp;f=avif   62w,
+                        /_image?/content%2Fassets%2Fcovers%2Fextreme-ownership-by-jocko-willink-leif-babin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;q=80&amp;f=avif 124w,
+                        /_image?/content%2Fassets%2Fcovers%2Fextreme-ownership-by-jocko-willink-leif-babin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;q=80&amp;f=avif 248w,
+                        /_image?/content%2Fassets%2Fcovers%2Fextreme-ownership-by-jocko-willink-leif-babin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;q=80&amp;f=avif 496w
+                      "
+                      src="/_image?/content%2Fassets%2Fcovers%2Fextreme-ownership-by-jocko-willink-leif-babin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
+                      alt=""
+                      width="248"
+                      height="372"
+                      loading="lazy"
+                      decoding="async"
+                      style="aspect-ratio: 0.66666667"
+                    />
                     <div
-                      class="flex grow flex-col tablet:w-full tablet:items-center"
+                      class="flex grow flex-col items-center px-[8%] pb-8 pt-3 desktop:pl-[8.5%] desktop:pr-[10%]"
                     >
-                      <div class="tablet:spacer-y-1"></div>
-                      <a
-                        href="/reviews/extreme-ownership-by-jocko-willink-leif-babin/"
-                        class="block text-md leading-5 text-accent tablet:text-center tablet:text-base tablet:leading-5 desktop:text-md"
-                        >Extreme Ownership</a
-                      >
-                      <div class="spacer-y-1 tablet:spacer-y-2"></div>
+                      <div class="text-center text-md font-medium leading-6">
+                        <a
+                          href="/reviews/extreme-ownership-by-jocko-willink-leif-babin/"
+                          rel="canonical"
+                          class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] tablet:before:opacity-15"
+                          >Extreme Ownership</a
+                        >
+                      </div>
                       <div
-                        class="text-base leading-5 text-muted text-left tablet:text-center"
+                        class="py-2 text-center font-sans text-xxs font-light uppercase leading-4 tracking-wide text-subtle"
                       >
-                        Jocko Willink<!-- -->
+                        2015<!-- -->
+                        |<!-- -->
+                        <span class="whitespace-nowrap">Nonfiction</span>
+                      </div>
+                      <p class="text-center text-base text-subtle">
+                        by
+                        <!-- -->Jocko Willink<!-- -->
                         and
                         <!-- -->Leif Babin
-                      </div>
-                      <div class="spacer-y-3"></div>
-                      <div
-                        class="text-sm leading-4 tracking-0.5px text-subtle text-left tablet:text-center"
-                      >
-                        <span
-                          >2015<!-- -->
-                          | </span
-                        >Nonfiction
-                      </div>
-                      <div class="spacer-y-3"></div>
+                      </p>
                       <picture
                         ><source
                           srcset="/svg/5-stars-dark.svg"
@@ -1031,60 +1186,52 @@
                         <img
                           src="/svg/5-stars.svg"
                           alt="A: 5 stars (out of 5)"
-                          height="16"
-                          width="80"
+                          height="18"
+                          width="90"
+                          class="mt-2"
                       /></picture>
-                      <div class="spacer-y-2"></div>
                     </div>
                   </li>
                   <li
-                    class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+                    class="relative flex w-[46%] max-w-[248px] flex-col items-center border-default bg-default tablet:w-[22.75%]"
                   >
-                    <a
-                      href="/reviews/fail-safe-by-philip-fracassi/"
-                      class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
-                      ><img
-                        srcset="
-                          /_image?/content%2Fassets%2Fcovers%2Fbehold-the-void-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=44&amp;q=80&amp;f=avif   44w,
-                          /_image?/content%2Fassets%2Fcovers%2Fbehold-the-void-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=88&amp;q=80&amp;f=avif   88w,
-                          /_image?/content%2Fassets%2Fcovers%2Fbehold-the-void-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;q=80&amp;f=avif 176w,
-                          /_image?/content%2Fassets%2Fcovers%2Fbehold-the-void-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=352&amp;q=80&amp;f=avif 352w
-                        "
-                        src="/_image?/content%2Fassets%2Fcovers%2Fbehold-the-void-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;h=264&amp;q=80&amp;f=avif"
-                        alt="A cover for Behold the Void by Philip Fracassi"
-                        height="264"
-                        width="176"
-                        class="aspect-[0.66666667]"
-                        loading="lazy"
-                        decoding="async"
-                        style="aspect-ratio: 0.66666667"
-                    /></a>
-                    <div class="tablet:spacer-y-2"></div>
+                    <img
+                      srcset="
+                        /_image?/content%2Fassets%2Fcovers%2Fbehold-the-void-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;q=80&amp;f=avif   62w,
+                        /_image?/content%2Fassets%2Fcovers%2Fbehold-the-void-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;q=80&amp;f=avif 124w,
+                        /_image?/content%2Fassets%2Fcovers%2Fbehold-the-void-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;q=80&amp;f=avif 248w,
+                        /_image?/content%2Fassets%2Fcovers%2Fbehold-the-void-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;q=80&amp;f=avif 496w
+                      "
+                      src="/_image?/content%2Fassets%2Fcovers%2Fbehold-the-void-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
+                      alt=""
+                      width="248"
+                      height="372"
+                      loading="lazy"
+                      decoding="async"
+                      style="aspect-ratio: 0.66666667"
+                    />
                     <div
-                      class="flex grow flex-col tablet:w-full tablet:items-center"
+                      class="flex grow flex-col items-center px-[8%] pb-8 pt-3 desktop:pl-[8.5%] desktop:pr-[10%]"
                     >
-                      <div class="tablet:spacer-y-1"></div>
-                      <a
-                        href="/reviews/fail-safe-by-philip-fracassi/"
-                        class="block text-md leading-5 text-accent tablet:text-center tablet:text-base tablet:leading-5 desktop:text-md"
-                        >Fail-Safe</a
-                      >
-                      <div class="spacer-y-1 tablet:spacer-y-2"></div>
-                      <div
-                        class="text-base leading-5 text-muted text-left tablet:text-center"
-                      >
-                        Philip Fracassi
+                      <div class="text-center text-md font-medium leading-6">
+                        <a
+                          href="/reviews/fail-safe-by-philip-fracassi/"
+                          rel="canonical"
+                          class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] tablet:before:opacity-15"
+                          >Fail-Safe</a
+                        >
                       </div>
-                      <div class="spacer-y-3"></div>
                       <div
-                        class="text-sm leading-4 tracking-0.5px text-subtle text-left tablet:text-center"
+                        class="py-2 text-center font-sans text-xxs font-light uppercase leading-4 tracking-wide text-subtle"
                       >
-                        <span
-                          >2017<!-- -->
-                          | </span
-                        >Short Story
+                        2017<!-- -->
+                        |<!-- -->
+                        <span class="whitespace-nowrap">Short Story</span>
                       </div>
-                      <div class="spacer-y-3"></div>
+                      <p class="text-center text-base text-subtle">
+                        by
+                        <!-- -->Philip Fracassi
+                      </p>
                       <picture
                         ><source
                           srcset="/svg/3-stars-dark.svg"
@@ -1092,60 +1239,52 @@
                         <img
                           src="/svg/3-stars.svg"
                           alt="C: 3 stars (out of 5)"
-                          height="16"
-                          width="80"
+                          height="18"
+                          width="90"
+                          class="mt-2"
                       /></picture>
-                      <div class="spacer-y-2"></div>
                     </div>
                   </li>
                   <li
-                    class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+                    class="relative flex w-[46%] max-w-[248px] flex-col items-center border-default bg-default tablet:w-[22.75%]"
                   >
-                    <a
-                      href="/reviews/fight-club-by-chuck-palahniuk/"
-                      class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
-                      ><img
-                        srcset="
-                          /_image?/content%2Fassets%2Fcovers%2Ffight-club-by-chuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=44&amp;q=80&amp;f=avif   44w,
-                          /_image?/content%2Fassets%2Fcovers%2Ffight-club-by-chuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=88&amp;q=80&amp;f=avif   88w,
-                          /_image?/content%2Fassets%2Fcovers%2Ffight-club-by-chuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;q=80&amp;f=avif 176w,
-                          /_image?/content%2Fassets%2Fcovers%2Ffight-club-by-chuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=352&amp;q=80&amp;f=avif 352w
-                        "
-                        src="/_image?/content%2Fassets%2Fcovers%2Ffight-club-by-chuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;h=264&amp;q=80&amp;f=avif"
-                        alt="A cover for Fight Club by Chuck Palahniuk"
-                        height="264"
-                        width="176"
-                        class="aspect-[0.66666667]"
-                        loading="lazy"
-                        decoding="async"
-                        style="aspect-ratio: 0.66666667"
-                    /></a>
-                    <div class="tablet:spacer-y-2"></div>
+                    <img
+                      srcset="
+                        /_image?/content%2Fassets%2Fcovers%2Ffight-club-by-chuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;q=80&amp;f=avif   62w,
+                        /_image?/content%2Fassets%2Fcovers%2Ffight-club-by-chuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;q=80&amp;f=avif 124w,
+                        /_image?/content%2Fassets%2Fcovers%2Ffight-club-by-chuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;q=80&amp;f=avif 248w,
+                        /_image?/content%2Fassets%2Fcovers%2Ffight-club-by-chuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;q=80&amp;f=avif 496w
+                      "
+                      src="/_image?/content%2Fassets%2Fcovers%2Ffight-club-by-chuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
+                      alt=""
+                      width="248"
+                      height="372"
+                      loading="lazy"
+                      decoding="async"
+                      style="aspect-ratio: 0.66666667"
+                    />
                     <div
-                      class="flex grow flex-col tablet:w-full tablet:items-center"
+                      class="flex grow flex-col items-center px-[8%] pb-8 pt-3 desktop:pl-[8.5%] desktop:pr-[10%]"
                     >
-                      <div class="tablet:spacer-y-1"></div>
-                      <a
-                        href="/reviews/fight-club-by-chuck-palahniuk/"
-                        class="block text-md leading-5 text-accent tablet:text-center tablet:text-base tablet:leading-5 desktop:text-md"
-                        >Fight Club</a
-                      >
-                      <div class="spacer-y-1 tablet:spacer-y-2"></div>
-                      <div
-                        class="text-base leading-5 text-muted text-left tablet:text-center"
-                      >
-                        Chuck Palahniuk
+                      <div class="text-center text-md font-medium leading-6">
+                        <a
+                          href="/reviews/fight-club-by-chuck-palahniuk/"
+                          rel="canonical"
+                          class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] tablet:before:opacity-15"
+                          >Fight Club</a
+                        >
                       </div>
-                      <div class="spacer-y-3"></div>
                       <div
-                        class="text-sm leading-4 tracking-0.5px text-subtle text-left tablet:text-center"
+                        class="py-2 text-center font-sans text-xxs font-light uppercase leading-4 tracking-wide text-subtle"
                       >
-                        <span
-                          >1996<!-- -->
-                          | </span
-                        >Novel
+                        1996<!-- -->
+                        |<!-- -->
+                        <span class="whitespace-nowrap">Novel</span>
                       </div>
-                      <div class="spacer-y-3"></div>
+                      <p class="text-center text-base text-subtle">
+                        by
+                        <!-- -->Chuck Palahniuk
+                      </p>
                       <picture
                         ><source
                           srcset="/svg/4-half-stars-dark.svg"
@@ -1153,62 +1292,54 @@
                         <img
                           src="/svg/4-half-stars.svg"
                           alt="A-: 4.5 stars (out of 5)"
-                          height="16"
-                          width="80"
+                          height="18"
+                          width="90"
+                          class="mt-2"
                       /></picture>
-                      <div class="spacer-y-2"></div>
                     </div>
                   </li>
                   <li
-                    class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+                    class="relative flex w-[46%] max-w-[248px] flex-col items-center border-default bg-default tablet:w-[22.75%]"
                   >
-                    <a
-                      href="/reviews/fright-night-by-john-skipp-craig-spector/"
-                      class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
-                      ><img
-                        srcset="
-                          /_image?/content%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=44&amp;q=80&amp;f=avif   44w,
-                          /_image?/content%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=88&amp;q=80&amp;f=avif   88w,
-                          /_image?/content%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;q=80&amp;f=avif 176w,
-                          /_image?/content%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=352&amp;q=80&amp;f=avif 352w
-                        "
-                        src="/_image?/content%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;h=264&amp;q=80&amp;f=avif"
-                        alt="A cover for Fright Night by John Skipp and Craig Spector"
-                        height="264"
-                        width="176"
-                        class="aspect-[0.66666667]"
-                        loading="lazy"
-                        decoding="async"
-                        style="aspect-ratio: 0.66666667"
-                    /></a>
-                    <div class="tablet:spacer-y-2"></div>
+                    <img
+                      srcset="
+                        /_image?/content%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;q=80&amp;f=avif   62w,
+                        /_image?/content%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;q=80&amp;f=avif 124w,
+                        /_image?/content%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;q=80&amp;f=avif 248w,
+                        /_image?/content%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;q=80&amp;f=avif 496w
+                      "
+                      src="/_image?/content%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
+                      alt=""
+                      width="248"
+                      height="372"
+                      loading="lazy"
+                      decoding="async"
+                      style="aspect-ratio: 0.66666667"
+                    />
                     <div
-                      class="flex grow flex-col tablet:w-full tablet:items-center"
+                      class="flex grow flex-col items-center px-[8%] pb-8 pt-3 desktop:pl-[8.5%] desktop:pr-[10%]"
                     >
-                      <div class="tablet:spacer-y-1"></div>
-                      <a
-                        href="/reviews/fright-night-by-john-skipp-craig-spector/"
-                        class="block text-md leading-5 text-accent tablet:text-center tablet:text-base tablet:leading-5 desktop:text-md"
-                        >Fright Night</a
-                      >
-                      <div class="spacer-y-1 tablet:spacer-y-2"></div>
+                      <div class="text-center text-md font-medium leading-6">
+                        <a
+                          href="/reviews/fright-night-by-john-skipp-craig-spector/"
+                          rel="canonical"
+                          class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] tablet:before:opacity-15"
+                          >Fright Night</a
+                        >
+                      </div>
                       <div
-                        class="text-base leading-5 text-muted text-left tablet:text-center"
+                        class="py-2 text-center font-sans text-xxs font-light uppercase leading-4 tracking-wide text-subtle"
                       >
-                        John Skipp<!-- -->
+                        1985<!-- -->
+                        |<!-- -->
+                        <span class="whitespace-nowrap">Novel</span>
+                      </div>
+                      <p class="text-center text-base text-subtle">
+                        by
+                        <!-- -->John Skipp<!-- -->
                         and
                         <!-- -->Craig Spector
-                      </div>
-                      <div class="spacer-y-3"></div>
-                      <div
-                        class="text-sm leading-4 tracking-0.5px text-subtle text-left tablet:text-center"
-                      >
-                        <span
-                          >1985<!-- -->
-                          | </span
-                        >Novel
-                      </div>
-                      <div class="spacer-y-3"></div>
+                      </p>
                       <picture
                         ><source
                           srcset="/svg/1-star-dark.svg"
@@ -1216,91 +1347,118 @@
                         <img
                           src="/svg/1-star.svg"
                           alt="F: 1 star (out of 5)"
-                          height="16"
-                          width="80"
+                          height="18"
+                          width="90"
+                          class="mt-2"
                       /></picture>
-                      <div class="spacer-y-2"></div>
                     </div>
                   </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+          <script type="application/ld+json">
+            {
+              "@context": "http://schema.org",
+              "@type": "Review",
+              "itemReviewed": {
+                "@type": "Book",
+                "name": "Fast Forward",
+                "image": "/_image?/content%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=1200&h=630&q=80&f=jpeg"
+              },
+              "reviewRating": { "@type": "Rating", "ratingValue": 5 },
+              "author": { "@type": "Person", "name": "Frank Showalter" }
+            }
+          </script>
+        </main>
+        <footer
+          class="flex flex-wrap items-start justify-between gap-[10%] bg-footer px-container py-20 text-inverse tablet:px-12 tablet:pt-10 desktop:p-20"
+        >
+          <div class="flex flex-col pb-12">
+            <div class="flex flex-col">
+              <div
+                class="whitespace-nowrap font-normal leading-8"
+                style="font-size: 1.5625rem"
+              >
+                <a href="/">Frank&#x27;s Book Log</a>
+              </div>
+              <p class="w-full pl-px text-sm italic leading-4 opacity-85">
+                Literature is a relative term.
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col gap-20 pb-20 pt-10 tablet:basis-1/2 tablet:pt-20"
+          >
+            <ul class="flex w-full flex-col gap-y-10 text-inverse max:w-auto">
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a class="hover:text-accent" href="/">Home</a>
+              </li>
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a class="hover:text-accent" href="/how-i-grade/"
+                  >How I Grade</a
+                >
+              </li>
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a class="hover:text-accent" href="/reviews/">Reviews</a>
+              </li>
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a class="hover:text-accent" href="/readings/">Reading Log</a>
+                <ol class="mt-4">
                   <li
-                    class="col-span-full block px-gutter py-4 text-right shadow-bottom tablet:absolute tablet:right-0 tablet:top-0 tablet:shadow-none desktop:right-[var(--gutter-width)]"
+                    class="mb-2 font-sans text-xs uppercase tracking-wide text-inverse-subtle"
                   >
-                    <a href="/reviews/" class="text-accent"
-                      >All<!-- -->
-                      <span class="inline tablet:hidden desktop:inline"
-                        >Reviews</span
-                      >
-                      <!-- -->→</a
+                    <a class="hover:text-inverse" href="/readings/stats/"
+                      >Stats</a
                     >
                   </li>
-                </ul>
-              </nav>
-            </div>
-            <script type="application/ld+json">
-              {
-                "@context": "http://schema.org",
-                "@type": "Review",
-                "itemReviewed": {
-                  "@type": "Book",
-                  "name": "Fast Forward",
-                  "image": "/_image?/content%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=1200&h=630&q=80&f=jpeg"
-                },
-                "reviewRating": { "@type": "Rating", "ratingValue": 5 },
-                "author": { "@type": "Person", "name": "Frank Showalter" }
-              }
-            </script>
-          </main>
-        </div>
-        <footer
-          class="flex flex-col items-center gap-y-6 bg-[url(&#x27;/assets/ripnotcomingsoon.avif&#x27;)] px-pageMargin py-8 text-inverse"
-        >
-          <ul
-            class="flex w-full flex-wrap justify-center gap-x-4 gap-y-2 text-inverse tablet:gap-x-6 max:w-auto"
-          >
-            <li class="block whitespace-nowrap tracking-0.5px">
-              <a class="text-inverse" href="/">Home</a>
-            </li>
-            <li class="block whitespace-nowrap tracking-0.5px">
-              <a class="text-inherit" href="/how-i-grade/">How I Grade</a>
-            </li>
-            <li class="block whitespace-nowrap tracking-0.5px">
-              <a class="text-inherit" href="/reviews/">Reviews</a>
-            </li>
-            <li class="block whitespace-nowrap tracking-0.5px">
-              <a class="text-inherit" href="/readings/">Reading Log</a>
-            </li>
-            <li class="block whitespace-nowrap tracking-0.5px">
-              <a class="text-inherit" href="/authors/">Authors</a>
-            </li>
-            <li class="block whitespace-nowrap tracking-0.5px">
-              <a class="text-inherit" href="/shelf/">Shelf</a>
-            </li>
-          </ul>
-          <p class="text-sm font-light leading-4">
-            All images used in accordance with the<!-- -->
+                </ol>
+              </li>
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a class="hover:text-accent" href="/authors/">Authors</a>
+              </li>
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a class="hover:text-accent" href="/shelf/">Shelf</a>
+              </li>
+            </ul>
             <a
-              href="http://www.copyright.gov/title17/92chap1.html#107"
-              class="text-inherit"
-              >Fair Use Law.</a
+              href="#top"
+              class="mb-8 w-full max-w-button bg-canvas py-5 text-center font-sans text-xs uppercase tracking-wide text-default hover:bg-inverse hover:text-inverse"
+              >To the top</a
             >
-          </p>
-          <a href="#top" class="sr-only">To the top ↑</a>
+            <p class="w-full font-normal leading-4 text-inverse-subtle">
+              All covers used in accordance with the<!-- -->
+              <a
+                href="http://www.copyright.gov/title17/92chap1.html#107"
+                class="text-inherit underline decoration-2 underline-offset-4 hover:bg-default hover:text-default"
+                >Fair Use Law.</a
+              >
+            </p>
+          </div>
         </footer>
       </div>
     </div>
     <dialog
-      class="relative m-0 h-screen max-h-none w-screen max-w-unset border border-default bg-canvas shadow-lg open:flex open:flex-col tablet:mx-auto tablet:mt-16 tablet:h-min tablet:max-h-[min(100vh_-_128px,900px)] tablet:min-h-60 tablet:max-w-[min(100vw_-_2_*_var(--gutter-width),36rem)] tablet:rounded-xl desktop:min-h-0"
+      class="relative m-0 h-screen max-h-none w-screen max-w-unset border border-default bg-subtle shadow-lg open:flex open:flex-col tablet:mx-auto tablet:mt-16 tablet:h-min tablet:max-h-[min(100vh_-_128px,900px)] tablet:min-h-60 tablet:max-w-[min(100vw_-_64px,36rem)] tablet:rounded-xl desktop:min-h-0"
       aria-label="Search"
     >
       <div data-dialog-frame class="contents">
-        <button data-close-modal>Cancel</button>
+        <button
+          data-close-modal
+          class="px-4 font-sans text-sm font-light hover:bg-inverse hover:text-inverse focus:outline-accent"
+        >
+          Cancel
+        </button>
         <div class="contents"><div id="pagefind__search"></div></div>
-        <div class="hidden px-gutter py-4 desktop:block">
+        <div
+          class="hidden px-[var(--search-dialog-padding)] py-4 font-sans text-xs font-light tracking-wide text-subtle desktop:block"
+        >
           <kbd class="rounded-md bg-default p-2 font-mono text-xs text-subtle"
             >Tab</kbd
           >
           to navigate
-          <kbd class="rounded-md bg-subtle p-2 font-mono text-xs text-subtle"
+          <kbd
+            class="ml-4 rounded-md bg-default p-2 font-mono text-xs text-subtle"
             >ESC</kbd
           >
           to close
@@ -1310,14 +1468,11 @@
     <script>
       (() => {
         const openBtn = document.querySelector("button[data-open-modal]");
-        const shortcut = openBtn?.querySelector("kbd");
-        if (!openBtn || !(shortcut instanceof HTMLElement)) return;
-        const platformKey = shortcut.querySelector("kbd");
-        if (platformKey && /(Mac|iPhone|iPod|iPad)/i.test(navigator.platform)) {
-          platformKey.textContent = "⌘";
+        if (!openBtn) return;
+        if (/(Mac|iPhone|iPod|iPad)/i.test(navigator.platform)) {
           openBtn.setAttribute("aria-keyshortcuts", "Meta+K");
+          openBtn.setAttribute("title", `Search: ⌘K`);
         }
-        shortcut.style.display = "";
       })();
     </script>
   </body>

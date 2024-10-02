@@ -1,7 +1,4 @@
-const BACKDROP_WIDTH = "960px";
-const PROSE_CONTENT_WIDTH = "36rem";
-const POSTER_WIDTH = "200px";
-import plugin from "tailwindcss/plugin";
+const PROSE_CONTENT_WIDTH = "39rem";
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -11,8 +8,11 @@ export default {
       default: "var(--bg-default)",
       subtle: "var(--bg-subtle)",
       canvas: "var(--bg-canvas)",
+      footer: "var(--bg-footer)",
+      abandoned: "var(--bg-abandoned)",
       inverse: "var(--bg-inverse)",
       stripe: "var(--bg-stripe)",
+      accent: "var(--bg-accent)",
       unset: "unset",
     },
     borderColor: {
@@ -26,75 +26,54 @@ export default {
       muted: "var(--fg-muted)",
       inverse: "var(--fg-inverse)",
       subtle: "var(--fg-subtle)",
+      "inverse-subtle": "var(--fg-inverse-subtle)",
       inherit: "inherit",
       emphasis: "var(--fg-emphasis)",
       progress: "var(--fg-progress)",
     },
+    letterSpacing: {
+      normal: "0",
+      wide: ".8px",
+      "serif-wide": ".6px",
+      prose: ".3px",
+      wider: "1.1px",
+      widest: "2px",
+    },
     screens: {
-      tablet: "720px",
-      desktop: "1096px",
-      max: "1224px",
+      tablet: "768px",
+      "tablet-landscape": "1024px",
+      desktop: "1280px",
+      max: "1696px",
     },
     extend: {
+      aspectRatio: {
+        cover: "1 / 1.5",
+      },
       boxShadow: {
         all: "0 0 0 1px var(--border-default)",
         bottom: "0px 1px var(--border-default)",
       },
-      brightness: {
-        dark: "0.8",
-      },
-      contrast: {
-        dark: "1.2",
-      },
-      flexBasis: {
-        md: "28rem",
+      fontFamily: {
+        sans: "var(--font-sans)",
+        serif: "var(--font-serif)",
       },
       fontSize: {
         "2.5xl": "1.625rem",
         md: ["1.125rem", "1.5rem"],
-      },
-      letterSpacing: {
-        "0.25px": "0.015625rem",
-        "0.3px": "0.01875rem",
-        "0.5px": "0.03125rem",
-        "0.75px": "0.046875rem",
-        "1px": "0.0625rem",
-      },
-      margin: {
-        gutter: "var(--gutter-width)",
+        xxs: "0.6875rem",
       },
       maxWidth: {
-        canvas: `clamp(${BACKDROP_WIDTH}, 95vw, 1224px)`,
         prose: PROSE_CONTENT_WIDTH,
-        popout: `calc((var(--gutter-width) * 2) + ${PROSE_CONTENT_WIDTH})`,
-        poster: POSTER_WIDTH,
+        popout: `calc(64px + ${PROSE_CONTENT_WIDTH})`,
         unset: "unset",
+        button: "430px",
       },
       padding: {
-        pageMargin: "var(--page-margin-width)",
-        gutter: "var(--gutter-width)",
-        ch: "1ch",
+        container: "var(--container-padding)",
+      },
+      width: {
+        "list-item-cover": "var(--list-item-cover-width)",
       },
     },
   },
-  plugins: [
-    plugin(function ({ matchUtilities, theme }) {
-      matchUtilities(
-        {
-          /**
-           *
-           * @param {string} value
-           * @returns
-           */
-          "spacer-y": (value) => {
-            return {
-              height: value,
-              minHeight: value,
-            };
-          },
-        },
-        { values: theme("spacing") },
-      );
-    }),
-  ],
 };

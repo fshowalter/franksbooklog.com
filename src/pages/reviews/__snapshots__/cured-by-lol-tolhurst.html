@@ -27,169 +27,161 @@
     />
     <title>Cured by Lol Tolhurst | Frank&#39;s Book Log</title>
   </head>
-  <body class="data-[search-modal-open]:blur-sm">
+  <body>
     <div>
       <a
         href="#content"
         class="absolute left-1/2 top-0.5 z-50 mx-auto bg-subtle px-6 py-2 text-center text-accent [transform:translate(-50%,calc(-100%_-_2px))] focus:[transform:translate(-50%,0%)]"
         >Skip to content</a
       >
-      <div
-        class="image-filter mx-auto min-h-4 w-full max-w-canvas bg-[url(&#x27;/assets/ripnotcomingsoon.avif&#x27;)] desktop:sticky desktop:top-0 desktop:z-40"
-      ></div>
-      <div class="mx-auto flex min-h-full max-w-canvas flex-col bg-default">
+      <div class="flex min-h-full w-full flex-col bg-default">
         <header
-          class="flex flex-col items-center gap-6 bg-default px-pageMargin py-6 text-center shadow-bottom desktop:sticky desktop:top-4 desktop:z-40 desktop:flex-row desktop:justify-between desktop:gap-8 desktop:py-5 desktop:text-left max:justify-center max:py-8"
+          class="z-20 flex w-full items-center justify-between px-container py-4 tablet:p-6 desktop:inset-x-0 desktop:z-40 desktop:flex-row desktop:flex-wrap desktop:px-16 desktop:py-8 desktop:text-left"
+          style="position: static"
         >
-          <div
-            class="items-inherit justify-items-inherit flex flex-col max:absolute max:left-[var(--page-margin-width)]"
-          >
-            <h1
-              class="whitespace-nowrap text-[1.5625rem] font-normal leading-8"
+          <div class="flex flex-col">
+            <div
+              class="whitespace-nowrap font-normal leading-8"
+              style="font-size: 1.5625rem"
             >
-              <a class="text-default" href="/">Frank&#x27;s Book Log</a>
-            </h1>
-            <p class="w-full text-sm italic leading-4 text-muted desktop:pl-px">
+              <a href="/">Frank&#x27;s Book Log</a>
+            </div>
+            <p class="w-full pl-px text-sm italic leading-4 opacity-85">
               Literature is a relative term.
             </p>
           </div>
-          <div
-            class="w-full max-w-prose desktop:order-4 desktop:w-auto max:absolute max:right-[var(--page-margin-width)]"
-          >
-            <button
-              data-open-modal="true"
-              disabled=""
-              aria-label="Search"
-              aria-keyshortcuts="Control+K"
-              class="safari-border-radius-fix flex w-full items-center overflow-hidden rounded-md text-sm leading-6 text-subtle ring-1 ring-border hover:ring-accent"
-            >
-              <kbd
-                class="ml-auto mt-px hidden min-h-6 flex-none items-center bg-subtle pl-3 pr-4 font-mono text-sm font-light opacity-70 desktop:flex"
-                ><kbd class="text-md leading-5">Ctrl</kbd
-                ><kbd class="text-sm">K</kbd></kbd
-              ><svg
-                class="mr-2 size-10 flex-none border-0 border-r border-default bg-subtle fill-subtle px-3 py-1 desktop:w-4 desktop:border-r-0 desktop:bg-unset desktop:px-0"
-                viewBox="0 0 16 16"
+          <div class="flex items-center">
+            <nav class="hidden w-full desktop:block desktop:w-auto">
+              <ul class="flex flex-wrap justify-start gap-x-6 text-xl">
+                <li class="block whitespace-nowrap tracking-serif-wide">
+                  <a
+                    class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
+                    href="/"
+                    >Home</a
+                  >
+                </li>
+                <li class="block whitespace-nowrap tracking-serif-wide">
+                  <a
+                    class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
+                    href="/how-i-grade/"
+                    >How I Grade</a
+                  >
+                </li>
+                <li class="block whitespace-nowrap tracking-serif-wide">
+                  <a
+                    class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
+                    href="/reviews/"
+                    >Reviews</a
+                  >
+                </li>
+                <li class="block whitespace-nowrap tracking-serif-wide">
+                  <a
+                    class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
+                    href="/readings/"
+                    >Reading Log</a
+                  >
+                </li>
+                <li class="block whitespace-nowrap tracking-serif-wide">
+                  <a
+                    class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
+                    href="/authors/"
+                    >Authors</a
+                  >
+                </li>
+                <li class="block whitespace-nowrap tracking-serif-wide">
+                  <a
+                    class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
+                    href="/shelf/"
+                    >Shelf</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <div class="z-[1000]">
+              <button
+                data-open-modal="true"
+                disabled=""
+                aria-label="Search"
+                aria-keyshortcuts="Control+K"
+                class="flex items-center justify-between overflow-hidden text-sm leading-6 ring-default desktop:ml-6"
+                type="button"
+                title="Search: Control+K"
               >
-                <path
-                  fill-rule="evenodd"
-                  d="M10.442 10.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z"
-                ></path>
-                <path
-                  fill-rule="evenodd"
-                  d="M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z"
-                ></path></svg
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6 desktop:size-7"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <input type="checkbox" id="mobile-nav" class="hidden" /><label
+              for="mobile-nav"
+              class="hamburger-icon desktop:hidden"
               ><span
-                class="flex items-baseline whitespace-nowrap p-2 text-base opacity-70 desktop:hidden"
-                >Quick search...</span
-              >
-            </button>
-          </div>
-          <nav class="w-full desktop:w-auto">
+                style="background: var(--fg-default)"
+                class="hamburger-icon-bars"
+              ></span
+            ></label>
             <ul
-              class="flex flex-wrap justify-center gap-x-4 gap-y-2 text-accent tablet:gap-x-6 desktop:flex-nowrap desktop:justify-start"
+              class="hamburger-menu flex flex-col items-start gap-y-5 text-left text-inverse desktop:hidden"
             >
-              <li class="block whitespace-nowrap tracking-0.5px">
-                <a class="text-muted" href="/">Home</a>
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a href="/">Home</a>
               </li>
-              <li class="block whitespace-nowrap tracking-0.5px">
-                <a class="text-inherit" href="/how-i-grade/">How I Grade</a>
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a href="/how-i-grade/">How I Grade</a>
               </li>
-              <li class="block whitespace-nowrap tracking-0.5px">
-                <a class="text-inherit" href="/reviews/">Reviews</a>
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a href="/reviews/">Reviews</a>
               </li>
-              <li class="block whitespace-nowrap tracking-0.5px">
-                <a class="text-inherit" href="/readings/">Reading Log</a>
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a href="/readings/">Reading Log</a>
+                <ol class="mt-4">
+                  <li
+                    class="mb-2 font-sans text-xs uppercase tracking-wide text-inverse-subtle"
+                  >
+                    <a href="/readings/stats/">Stats</a>
+                  </li>
+                </ol>
               </li>
-              <li class="block whitespace-nowrap tracking-0.5px">
-                <a class="text-inherit" href="/authors/">Authors</a>
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a href="/authors/">Authors</a>
               </li>
-              <li class="block whitespace-nowrap tracking-0.5px">
-                <a class="text-inherit" href="/shelf/">Shelf</a>
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a href="/shelf/">Shelf</a>
               </li>
             </ul>
-          </nav>
+          </div>
         </header>
-        <div class="grow" id="content">
-          <main
-            data-pagefind-body="true"
-            id="top"
-            class="flex flex-col items-center pt-6 desktop:pt-12"
-          >
-            <header class="flex w-full flex-col items-center px-pageMargin">
-              <div class="text-center">
-                <h1
-                  data-pagefind-meta="title"
-                  class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
-                >
-                  Cured
-                </h1>
-                <div
-                  class="max-w-prose pt-2 font-normal tracking-1px text-muted"
-                >
-                  The Tale of Two Imaginary Boys
-                </div>
-              </div>
-              <div class="spacer-y-2"></div>
-              <div class="text-center text-md text-muted">
-                by<!-- -->
-                <div class="inline-block text-accent">
-                  <a href="/reviews/authors/lol-tolhurst/">Lol Tolhurst</a>
-                </div>
-              </div>
-              <div class="spacer-y-2 desktop:spacer-y-4"></div>
-              <div class="uppercase tracking-1px text-subtle">
-                <span class="tracking-0.25px">2016</span> |
-                <!-- -->Nonfiction
-              </div>
-              <div class="spacer-y-8"></div>
+        <main class="grow flex flex-col" id="content" data-pagefind-body="true">
+          <header class="mb-12 flex flex-col items-center px-[8%] pt-10">
+            <h1
+              data-pagefind-meta="title"
+              class="text-center text-4xl desktop:text-6xl"
+            >
+              Cured
               <div
-                data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Fcured-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
-                class="relative flex h-[340px] w-full max-w-popout flex-col items-center"
+                class="max-w-prose pt-2 text-base font-light tracking-wider text-muted"
               >
-                <div
-                  data-pagefind-meta="image_alt:A cover for Cured: The Tale of Two Imaginary Boys by Lol Tolhurst"
-                  class="cover-clip-path absolute inset-0 overflow-hidden"
-                >
-                  <div
-                    style="
-                      background-color: var(--bg-default);
-                      background-image: linear-gradient(
-                          90deg,
-                          rgba(var(--bg-default-rgb), 1) 0%,
-                          rgba(var(--bg-default-rgb), var(--bg-default-alpha))
-                            30%,
-                          rgba(var(--bg-default-rgb), 0) 50%,
-                          rgba(var(--bg-default-rgb), var(--bg-default-alpha))
-                            70%,
-                          rgba(var(--bg-default-rgb), 1) 100%
-                        ),
-                        url(/_image?/content%2Fassets%2Fcovers%2Fcured-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif);
-                    "
-                    class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
-                  ></div>
-                  <div class="absolute size-full backdrop-blur"></div>
-                </div>
-                <div
-                  class="relative -top-4 z-10 h-[372px] shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                >
-                  <img
-                    srcset="
-                      /_image?/content%2Fassets%2Fcovers%2Fcured-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;q=80&amp;f=avif 1x,
-                      /_image?/content%2Fassets%2Fcovers%2Fcured-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;q=80&amp;f=avif 2x
-                    "
-                    src="/_image?/content%2Fassets%2Fcovers%2Fcured-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
-                    alt="A cover for Cured: The Tale of Two Imaginary Boys by Lol Tolhurst"
-                    width="248"
-                    height="372"
-                    class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                    loading="eager"
-                    decoding="async"
-                    style="aspect-ratio: 0.66666667"
-                  />
-                </div>
+                The Tale of Two Imaginary Boys
               </div>
-              <div class="spacer-y-12"></div>
+            </h1>
+            <div class="mt-4 text-center text-md text-muted">
+              by<!-- -->
+              <div class="inline-block text-accent">
+                <a href="/reviews/authors/lol-tolhurst/">Lol Tolhurst</a>
+              </div>
+            </div>
+            <div class="mt-4">
               <picture
                 ><source
                   srcset="/svg/4-half-stars-dark.svg"
@@ -200,224 +192,295 @@
                   height="32"
                   width="160"
               /></picture>
+            </div>
+            <div
+              class="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+            >
+              <span class="tracking-wide">2016</span> |
+              <!-- -->Nonfiction
+            </div>
+            <div
+              data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Fcured-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
+              class="relative my-12 flex h-[340px] w-full max-w-popout flex-col items-center"
+            >
               <div
-                class="flex flex-col items-center tracking-0.5px text-subtle"
+                data-pagefind-meta="image_alt:A cover for Cured: The Tale of Two Imaginary Boys by Lol Tolhurst"
+                class="cover-clip-path absolute inset-0 overflow-hidden"
               >
-                <span>on</span>
-                <!-- -->Mon, Jul 18, 2022
+                <div
+                  style="
+                    background-color: var(--bg-default);
+                    background-image: linear-gradient(
+                        90deg,
+                        rgba(var(--bg-default-rgb), 1) 0%,
+                        rgba(var(--bg-default-rgb), var(--bg-default-alpha)) 30%,
+                        rgba(var(--bg-default-rgb), 0) 50%,
+                        rgba(var(--bg-default-rgb), var(--bg-default-alpha)) 70%,
+                        rgba(var(--bg-default-rgb), 1) 100%
+                      ),
+                      url(/_image?/content%2Fassets%2Fcovers%2Fcured-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif);
+                  "
+                  class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
+                ></div>
+                <div class="absolute size-full backdrop-blur"></div>
               </div>
-              <div class="spacer-y-8"></div>
-            </header>
-            <div class="flex flex-col px-pageMargin desktop:px-gutter">
               <div
-                class="rendered-markdown font-light text-md/7 tracking-0.3px tablet:text-xl/8 max-w-prose"
+                class="relative -top-4 z-10 h-[372px] shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
               >
-                <p>
-                  After enjoying
-                  <a href="/reviews/set-the-boy-free-by-johnny-marr/"
-                    >Johnny Marr’s autobiography</a
-                  >, I turned to this well-received memoir from Lol Tolhurst,
-                  founding member of The Cure. As a big Cure fan in my teens—and
-                  still partial to their back catalog—I came in interested.
-                </p>
-                <!-- end -->
-                <p>
-                  Tolhurst proves a grand raconteur, transporting the listener
-                  back to 1970s new town England, a land of perpetual greyness.
-                  Looking for an escape, his longtime friend Robert Smith starts
-                  a band. Lol teaches himself to play drums to join. The Cure
-                  (then called Easy Cure) is born. They rehearse three times a
-                  week every week, and soon they’re playing live gigs. They keep
-                  rehearsing and writing, getting better and better. After an
-                  aborted record deal with Hansa, they land with fledgling
-                  Fiction records. Guided by Fiction founder Chris Parry, their
-                  ascent to stardom begins.
-                </p>
-                <p>
-                  Along the way, we get some memorable anecdotes, like peeing on
-                  Billy Idol:
-                </p>
-                <blockquote>
-                  <p>
-                    He gave me one of his trademark sneers and I hastily zipped
-                    up and hightailed it out of there in a flurry of drunken
-                    apologies.
-                  </p>
-                </blockquote>
-                <p>
-                  Or conversing with Terri Hooley, only to realize the punk icon
-                  was asleep and his one open eye was glass:
-                </p>
-                <blockquote>
-                  <p>
-                    At least he didn’t take it out and pop it in my beer, which
-                    I hear he liked to do sometimes. Terri Hooley, a lovely man
-                    and a true punk original.
-                  </p>
-                </blockquote>
-                <p>
-                  Not all the stories are humorous. Lol’s drinking grows
-                  problematic. At an after-hours club, he gets into a drunken
-                  fight, resulting in taking a pint glass to the face. After a
-                  trip to the ER and stitches, he returns to the club:
-                </p>
-                <blockquote>
-                  <p>
-                    Tomorrow I was bound to look much worse. I decided to drink
-                    until I no longer cared how I looked or felt. And so I did.
-                    It was three in the morning on December 24, 1979.
-                  </p>
-                </blockquote>
-                <p>
-                  As the band’s ascent continues, they embark on their first
-                  visit to America via New York City. Lol and Robert prove eager
-                  to experience American delicacies:
-                </p>
-                <blockquote>
-                  <p>
-                    The other touchstone was Marvel comics. They were readily
-                    available in England in the 1970s. The stories were the
-                    usual good vs. evil stuff and often set in the very city we
-                    were in, but what intrigued me and Robert as teens were the
-                    adverts in the back for items unavailable or unknown to us
-                    then in the UK. Twinkies, for one. So as our first foray
-                    into America we set out on a mission to find and consume a
-                    Twinkie.
-                  </p>
-                </blockquote>
-                <p>
-                  And as their international fame grows, so does their fan base:
-                </p>
-                <blockquote>
-                  <p>
-                    Contrary to popular belief, we were not pale-faced Goths who
-                    sat in dark rooms with candles and cried all the time.
-                    Although we did have some fans like that—two very sweet
-                    Japanese girls used to just stand and cry in front of us
-                    whenever they managed to come into contact with us. We named
-                    them Doom and Gloom. In the nicest way, you understand.
-                  </p>
-                </blockquote>
-                <p>
-                  But Lol’s drinking soon consumes him, culminating in his
-                  dismissal from the band post <em>Disintegration</em>.
-                  Estranged from the band—his surrogate family—he moves to Los
-                  Angeles, sobers up, and finds happiness in raising his son.
-                  This “post band” part of the story can drag or seem
-                  self-indulgent in memoirs, but Tolhurst keeps it short and
-                  grounded. The eventual reconciliation between him and Robert
-                  proves just as understated and even more poignant for it.
-                </p>
-                <p>
-                  I’m glad I chose the audiobook. Lol proves a natural
-                  storyteller. His neutral tone lends a quiet authority, and
-                  hearing the ever-so-slight crack in his voice during the
-                  story’s rougher moments conveys far more emphasis than the
-                  written page’s overused exclamation points.
-                </p>
+                <img
+                  srcset="
+                    /_image?/content%2Fassets%2Fcovers%2Fcured-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;q=80&amp;f=avif 1x,
+                    /_image?/content%2Fassets%2Fcovers%2Fcured-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;q=80&amp;f=avif 2x
+                  "
+                  src="/_image?/content%2Fassets%2Fcovers%2Fcured-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
+                  alt="A cover for Cured: The Tale of Two Imaginary Boys by Lol Tolhurst"
+                  width="248"
+                  height="372"
+                  class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
+                  loading="eager"
+                  decoding="async"
+                  style="aspect-ratio: 0.66666667"
+                />
               </div>
             </div>
-            <div class="spacer-y-20"></div>
+          </header>
+          <div
+            class="flex flex-col items-center gap-16 px-container pb-20 desktop:gap-20 desktop:pb-32"
+          >
+            <div
+              class="rendered-markdown font-light tracking-0.3px text-md/7 tablet:text-xl/8 max-w-prose first-letter:leading-[.8] first-letter:text-default tablet:first-letter:pr-3 desktop:first-letter:text-[64px] [&amp;&gt;p:first-child]:first-letter:float-left [&amp;&gt;p:first-child]:first-letter:mt-[6px] [&amp;&gt;p:first-child]:first-letter:pr-2 [&amp;&gt;p:first-child]:first-letter:font-sans [&amp;&gt;p:first-child]:first-letter:text-[56px] [&amp;&gt;p:first-child]:first-letter:font-bold"
+            >
+              <p>
+                After enjoying
+                <a href="/reviews/set-the-boy-free-by-johnny-marr/"
+                  >Johnny Marr’s autobiography</a
+                >, I turned to this well-received memoir from Lol Tolhurst,
+                founding member of The Cure. As a big Cure fan in my teens—and
+                still partial to their back catalog—I came in interested.
+              </p>
+              <!-- end -->
+              <p>
+                Tolhurst proves a grand raconteur, transporting the listener
+                back to 1970s new town England, a land of perpetual greyness.
+                Looking for an escape, his longtime friend Robert Smith starts a
+                band. Lol teaches himself to play drums to join. The Cure (then
+                called Easy Cure) is born. They rehearse three times a week
+                every week, and soon they’re playing live gigs. They keep
+                rehearsing and writing, getting better and better. After an
+                aborted record deal with Hansa, they land with fledgling Fiction
+                records. Guided by Fiction founder Chris Parry, their ascent to
+                stardom begins.
+              </p>
+              <p>
+                Along the way, we get some memorable anecdotes, like peeing on
+                Billy Idol:
+              </p>
+              <blockquote>
+                <p>
+                  He gave me one of his trademark sneers and I hastily zipped up
+                  and hightailed it out of there in a flurry of drunken
+                  apologies.
+                </p>
+              </blockquote>
+              <p>
+                Or conversing with Terri Hooley, only to realize the punk icon
+                was asleep and his one open eye was glass:
+              </p>
+              <blockquote>
+                <p>
+                  At least he didn’t take it out and pop it in my beer, which I
+                  hear he liked to do sometimes. Terri Hooley, a lovely man and
+                  a true punk original.
+                </p>
+              </blockquote>
+              <p>
+                Not all the stories are humorous. Lol’s drinking grows
+                problematic. At an after-hours club, he gets into a drunken
+                fight, resulting in taking a pint glass to the face. After a
+                trip to the ER and stitches, he returns to the club:
+              </p>
+              <blockquote>
+                <p>
+                  Tomorrow I was bound to look much worse. I decided to drink
+                  until I no longer cared how I looked or felt. And so I did. It
+                  was three in the morning on December 24, 1979.
+                </p>
+              </blockquote>
+              <p>
+                As the band’s ascent continues, they embark on their first visit
+                to America via New York City. Lol and Robert prove eager to
+                experience American delicacies:
+              </p>
+              <blockquote>
+                <p>
+                  The other touchstone was Marvel comics. They were readily
+                  available in England in the 1970s. The stories were the usual
+                  good vs. evil stuff and often set in the very city we were in,
+                  but what intrigued me and Robert as teens were the adverts in
+                  the back for items unavailable or unknown to us then in the
+                  UK. Twinkies, for one. So as our first foray into America we
+                  set out on a mission to find and consume a Twinkie.
+                </p>
+              </blockquote>
+              <p>
+                And as their international fame grows, so does their fan base:
+              </p>
+              <blockquote>
+                <p>
+                  Contrary to popular belief, we were not pale-faced Goths who
+                  sat in dark rooms with candles and cried all the time.
+                  Although we did have some fans like that—two very sweet
+                  Japanese girls used to just stand and cry in front of us
+                  whenever they managed to come into contact with us. We named
+                  them Doom and Gloom. In the nicest way, you understand.
+                </p>
+              </blockquote>
+              <p>
+                But Lol’s drinking soon consumes him, culminating in his
+                dismissal from the band post <em>Disintegration</em>. Estranged
+                from the band—his surrogate family—he moves to Los Angeles,
+                sobers up, and finds happiness in raising his son. This “post
+                band” part of the story can drag or seem self-indulgent in
+                memoirs, but Tolhurst keeps it short and grounded. The eventual
+                reconciliation between him and Robert proves just as understated
+                and even more poignant for it.
+              </p>
+              <p>
+                I’m glad I chose the audiobook. Lol proves a natural
+                storyteller. His neutral tone lends a quiet authority, and
+                hearing the ever-so-slight crack in his voice during the story’s
+                rougher moments conveys far more emphasis than the written
+                page’s overused exclamation points.
+              </p>
+            </div>
             <div class="w-full max-w-popout">
               <h2
-                class="px-gutter text-md font-normal text-subtle shadow-bottom"
+                class="py-10 font-sans text-xs font-semibold uppercase tracking-wide text-subtle shadow-bottom"
               >
                 Reading History
-                <div class="spacer-y-2"></div>
               </h2>
               <ul>
                 <li
-                  class="grid auto-rows-auto grid-cols-[16px_1ch_1fr] px-gutter pt-4 even:bg-subtle"
+                  class="grid auto-rows-auto grid-cols-[16px_16px_1fr] pt-4 font-sans text-xs even:bg-subtle"
                 >
-                  <div class="mt-1">
-                    <svg
-                      width="1em"
-                      height="1em"
-                      viewBox="0 0 16 16"
-                      class="fill-subtle mr-[1ch] min-h-4 min-w-4"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <title>Watched on</title>
-                      <path
-                        fill-rule="evenodd"
-                        d="M14 2H2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1zM2 1a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2z"
-                      ></path>
-                      <path
-                        fill-rule="evenodd"
-                        d="M14 2H2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1zM2 1a2 2 0 0 0-2 2v2h16V3a2 2 0 0 0-2-2H2z"
-                      ></path>
-                      <path
-                        fill-rule="evenodd"
-                        d="M3.5 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5zm9 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5z"
-                      ></path>
-                    </svg>
-                  </div>
+                  <svg
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 16 16"
+                    class="fill-subtle mr-[1ch] min-h-4 min-w-4"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>Watched on</title>
+                    <path
+                      fill-rule="evenodd"
+                      d="M14 2H2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1zM2 1a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2z"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      d="M14 2H2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1zM2 1a2 2 0 0 0-2 2v2h16V3a2 2 0 0 0-2-2H2z"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      d="M3.5 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5zm9 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5z"
+                    ></path>
+                  </svg>
                   <div class="col-start-3">
-                    <span class="inline-block text-default"
+                    <span
+                      class="inline-block font-sans text-xs font-normal tracking-normal text-subtle"
                       >Mon, Jul 18, 2022</span
                     >
-                    <span class="font-light text-muted"
-                      ><span>via</span> <span>Audible</span></span
+                    <span class="text-subtle"
+                      ><span>via</span>
+                      <span class="font-sans text-xs font-normal text-subtle"
+                        >Audible</span
+                      ></span
                     >
-                    <span class="text-sm font-light leading-none text-subtle"
-                      >(<span
-                        class="rendered-markdown font-light text-sm leading-none"
+                    <span class="font-light tracking-normal text-subtle"
+                      >(<span class="rendered-markdown font-light leading-none"
                         ><span>Read by Lol Tolhurst</span></span
                       >)</span
                     >
                   </div>
                   <div class="col-start-3 row-start-2">
                     <details class="font-light text-subtle">
-                      <summary>
+                      <summary class="cursor-pointer leading-6">
                         Listened to over<!-- -->
-                        <!-- -->3<!-- -->
-                        Days
+                        <span class="font-normal text-subtle"
+                          >3<!-- -->
+                          Days</span
+                        >
                       </summary>
-                      <ol
-                        class="-ml-gutter grid w-full grid-cols-[auto_1fr_auto] items-center pt-2"
-                      >
-                        <li class="contents *:odd:bg-subtle">
-                          <div class="whitespace-nowrap px-gutter leading-10">
-                            16 Jul 2022
-                          </div>
-                          <div class="h-10 w-full">
+                      <ol class="grid w-full grid-cols-[auto,1fr,auto]">
+                        <li
+                          class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr,auto,auto,1fr] py-3"
+                        >
+                          <div
+                            class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid"
+                          >
+                            <div class="">16 Jul 2022</div>
                             <div
-                              class="progress-bar-bg leading-[38px]"
+                              class="col-start-3 self-center text-nowrap pb-1 text-right font-sans text-xs text-subtle"
+                            >
+                              <div class="">33%</div>
+                            </div>
+                          </div>
+                          <div
+                            class="col-span-2 col-start-2 row-start-3 bg-subtle"
+                          >
+                            <div
+                              class="progress-bar-bg leading-[6px] tablet:mb-0"
                               style="--bar-percent: 33%"
                             >
                                
                             </div>
                           </div>
-                          <div class="px-gutter text-right leading-10">33%</div>
                         </li>
-                        <li class="contents *:odd:bg-subtle">
-                          <div class="whitespace-nowrap px-gutter leading-10">
-                            17 Jul 2022
-                          </div>
-                          <div class="h-10 w-full">
+                        <li
+                          class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr,auto,auto,1fr] py-3"
+                        >
+                          <div
+                            class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid"
+                          >
+                            <div class="">17 Jul 2022</div>
                             <div
-                              class="progress-bar-bg leading-[38px]"
+                              class="col-start-3 self-center text-nowrap pb-1 text-right font-sans text-xs text-subtle"
+                            >
+                              <div class="">78%</div>
+                            </div>
+                          </div>
+                          <div
+                            class="col-span-2 col-start-2 row-start-3 bg-subtle"
+                          >
+                            <div
+                              class="progress-bar-bg leading-[6px] tablet:mb-0"
                               style="--bar-percent: 78%"
                             >
                                
                             </div>
                           </div>
-                          <div class="px-gutter text-right leading-10">78%</div>
                         </li>
-                        <li class="contents *:odd:bg-subtle">
-                          <div class="whitespace-nowrap px-gutter leading-10">
-                            18 Jul 2022
-                          </div>
-                          <div class="h-10 w-full">
+                        <li
+                          class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr,auto,auto,1fr] py-3"
+                        >
+                          <div
+                            class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid"
+                          >
+                            <div class="">18 Jul 2022</div>
                             <div
-                              class="progress-bar-bg leading-[38px]"
+                              class="col-start-3 self-center text-nowrap pb-1 text-right font-sans text-xs text-subtle"
+                            >
+                              <div class="">Finished</div>
+                            </div>
+                          </div>
+                          <div
+                            class="col-span-2 col-start-2 row-start-3 bg-subtle"
+                          >
+                            <div
+                              class="progress-bar-bg leading-[6px] tablet:mb-0"
                               style="--bar-percent: 100%"
                             >
                                
                             </div>
-                          </div>
-                          <div class="px-gutter text-right leading-10">
-                            Finished
                           </div>
                         </li>
                       </ol>
@@ -427,71 +490,69 @@
                 </li>
               </ul>
             </div>
-            <div class="spacer-y-32"></div>
-            <div
+          </div>
+          <div
+            data-pagefind-ignore="true"
+            class="flex w-full flex-col items-center gap-y-12 bg-subtle pb-32 pt-16 tablet:pt-8 desktop:gap-y-24"
+          >
+            <nav
               data-pagefind-ignore="true"
-              class="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+              class="relative flex w-full flex-col items-center tablet:w-auto"
             >
-              <nav
-                class="relative flex w-full flex-col items-center tablet:w-auto"
+              <div
+                class="relative mx-auto w-full max-w-screen-max desktop:px-20"
               >
-                <div
-                  class="w-full px-gutter py-2 shadow-bottom tablet:py-4 tablet:shadow-none desktop:px-pageMargin desktop:py-4"
-                >
-                  <span class="font-semibold text-muted">More<!-- --> </span
-                  ><a class="text-accent" href="/reviews/">Reviews</a>
+                <div class="px-container">
+                  <h2
+                    class="py-10 font-sans text-xs font-semibold uppercase tracking-wide text-subtle"
+                  >
+                    More<!-- -->
+                    <a href="/reviews/" class="text-accent">Reviews</a>
+                  </h2>
                 </div>
                 <ul
-                  class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-11 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
+                  class="flex flex-wrap justify-center gap-x-[4%] gap-y-[6vw] px-[2%] tablet:gap-x-[3%] tablet:px-container desktop:justify-between"
                 >
                   <li
-                    class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+                    class="relative flex w-[46%] max-w-[248px] flex-col items-center border-default bg-default tablet:w-[22.75%]"
                   >
-                    <a
-                      href="/reviews/consider-this-by-chuck-palahniuk/"
-                      class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
-                      ><img
-                        srcset="
-                          /_image?/content%2Fassets%2Fcovers%2Fconsider-this-by-chuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=44&amp;q=80&amp;f=avif   44w,
-                          /_image?/content%2Fassets%2Fcovers%2Fconsider-this-by-chuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=88&amp;q=80&amp;f=avif   88w,
-                          /_image?/content%2Fassets%2Fcovers%2Fconsider-this-by-chuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;q=80&amp;f=avif 176w,
-                          /_image?/content%2Fassets%2Fcovers%2Fconsider-this-by-chuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=352&amp;q=80&amp;f=avif 352w
-                        "
-                        src="/_image?/content%2Fassets%2Fcovers%2Fconsider-this-by-chuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;h=264&amp;q=80&amp;f=avif"
-                        alt="A cover for Consider This: Moments in My Writing Life After Which Everything Was Different by Chuck Palahniuk"
-                        height="264"
-                        width="176"
-                        class="aspect-[0.66666667]"
-                        loading="lazy"
-                        decoding="async"
-                        style="aspect-ratio: 0.66666667"
-                    /></a>
-                    <div class="tablet:spacer-y-2"></div>
+                    <img
+                      srcset="
+                        /_image?/content%2Fassets%2Fcovers%2Fconsider-this-by-chuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;q=80&amp;f=avif   62w,
+                        /_image?/content%2Fassets%2Fcovers%2Fconsider-this-by-chuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;q=80&amp;f=avif 124w,
+                        /_image?/content%2Fassets%2Fcovers%2Fconsider-this-by-chuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;q=80&amp;f=avif 248w,
+                        /_image?/content%2Fassets%2Fcovers%2Fconsider-this-by-chuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;q=80&amp;f=avif 496w
+                      "
+                      src="/_image?/content%2Fassets%2Fcovers%2Fconsider-this-by-chuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
+                      alt=""
+                      width="248"
+                      height="372"
+                      loading="lazy"
+                      decoding="async"
+                      style="aspect-ratio: 0.66666667"
+                    />
                     <div
-                      class="flex grow flex-col tablet:w-full tablet:items-center"
+                      class="flex grow flex-col items-center px-[8%] pb-8 pt-3 desktop:pl-[8.5%] desktop:pr-[10%]"
                     >
-                      <div class="tablet:spacer-y-1"></div>
-                      <a
-                        href="/reviews/consider-this-by-chuck-palahniuk/"
-                        class="block text-md leading-5 text-accent tablet:text-center tablet:text-base tablet:leading-5 desktop:text-md"
-                        >Consider This</a
-                      >
-                      <div class="spacer-y-1 tablet:spacer-y-2"></div>
-                      <div
-                        class="text-base leading-5 text-muted text-left tablet:text-center"
-                      >
-                        Chuck Palahniuk
+                      <div class="text-center text-md font-medium leading-6">
+                        <a
+                          href="/reviews/consider-this-by-chuck-palahniuk/"
+                          rel="canonical"
+                          class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] tablet:before:opacity-15"
+                          >Consider This</a
+                        >
                       </div>
-                      <div class="spacer-y-3"></div>
                       <div
-                        class="text-sm leading-4 tracking-0.5px text-subtle text-left tablet:text-center"
+                        class="py-2 text-center font-sans text-xxs font-light uppercase leading-4 tracking-wide text-subtle"
                       >
-                        <span
-                          >2020<!-- -->
-                          | </span
-                        >Nonfiction
+                        2020<!-- -->
+                        |<!-- -->
+                        <span class="whitespace-nowrap">Nonfiction</span>
                       </div>
-                      <div class="spacer-y-3"></div>
+                      <p class="text-center text-base text-subtle">
+                        by
+                        <!-- -->Chuck Palahniuk
+                      </p>
                       <picture
                         ><source
                           srcset="/svg/4-stars-dark.svg"
@@ -499,60 +560,52 @@
                         <img
                           src="/svg/4-stars.svg"
                           alt="B: 4 stars (out of 5)"
-                          height="16"
-                          width="80"
+                          height="18"
+                          width="90"
+                          class="mt-2"
                       /></picture>
-                      <div class="spacer-y-2"></div>
                     </div>
                   </li>
                   <li
-                    class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+                    class="relative flex w-[46%] max-w-[248px] flex-col items-center border-default bg-default tablet:w-[22.75%]"
                   >
-                    <a
-                      href="/reviews/the-creative-act-by-rick-rubin/"
-                      class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
-                      ><img
-                        srcset="
-                          /_image?/content%2Fassets%2Fcovers%2Fthe-creative-act-by-rick-rubin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=44&amp;q=80&amp;f=avif   44w,
-                          /_image?/content%2Fassets%2Fcovers%2Fthe-creative-act-by-rick-rubin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=88&amp;q=80&amp;f=avif   88w,
-                          /_image?/content%2Fassets%2Fcovers%2Fthe-creative-act-by-rick-rubin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;q=80&amp;f=avif 176w,
-                          /_image?/content%2Fassets%2Fcovers%2Fthe-creative-act-by-rick-rubin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=352&amp;q=80&amp;f=avif 352w
-                        "
-                        src="/_image?/content%2Fassets%2Fcovers%2Fthe-creative-act-by-rick-rubin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;h=264&amp;q=80&amp;f=avif"
-                        alt="A cover for The Creative Act: A Way of Being by Rick Rubin"
-                        height="264"
-                        width="176"
-                        class="aspect-[0.66666667]"
-                        loading="lazy"
-                        decoding="async"
-                        style="aspect-ratio: 0.66666667"
-                    /></a>
-                    <div class="tablet:spacer-y-2"></div>
+                    <img
+                      srcset="
+                        /_image?/content%2Fassets%2Fcovers%2Fthe-creative-act-by-rick-rubin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;q=80&amp;f=avif   62w,
+                        /_image?/content%2Fassets%2Fcovers%2Fthe-creative-act-by-rick-rubin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;q=80&amp;f=avif 124w,
+                        /_image?/content%2Fassets%2Fcovers%2Fthe-creative-act-by-rick-rubin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;q=80&amp;f=avif 248w,
+                        /_image?/content%2Fassets%2Fcovers%2Fthe-creative-act-by-rick-rubin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;q=80&amp;f=avif 496w
+                      "
+                      src="/_image?/content%2Fassets%2Fcovers%2Fthe-creative-act-by-rick-rubin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
+                      alt=""
+                      width="248"
+                      height="372"
+                      loading="lazy"
+                      decoding="async"
+                      style="aspect-ratio: 0.66666667"
+                    />
                     <div
-                      class="flex grow flex-col tablet:w-full tablet:items-center"
+                      class="flex grow flex-col items-center px-[8%] pb-8 pt-3 desktop:pl-[8.5%] desktop:pr-[10%]"
                     >
-                      <div class="tablet:spacer-y-1"></div>
-                      <a
-                        href="/reviews/the-creative-act-by-rick-rubin/"
-                        class="block text-md leading-5 text-accent tablet:text-center tablet:text-base tablet:leading-5 desktop:text-md"
-                        >The Creative Act</a
-                      >
-                      <div class="spacer-y-1 tablet:spacer-y-2"></div>
-                      <div
-                        class="text-base leading-5 text-muted text-left tablet:text-center"
-                      >
-                        Rick Rubin
+                      <div class="text-center text-md font-medium leading-6">
+                        <a
+                          href="/reviews/the-creative-act-by-rick-rubin/"
+                          rel="canonical"
+                          class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] tablet:before:opacity-15"
+                          >The Creative Act</a
+                        >
                       </div>
-                      <div class="spacer-y-3"></div>
                       <div
-                        class="text-sm leading-4 tracking-0.5px text-subtle text-left tablet:text-center"
+                        class="py-2 text-center font-sans text-xxs font-light uppercase leading-4 tracking-wide text-subtle"
                       >
-                        <span
-                          >2023<!-- -->
-                          | </span
-                        >Nonfiction
+                        2023<!-- -->
+                        |<!-- -->
+                        <span class="whitespace-nowrap">Nonfiction</span>
                       </div>
-                      <div class="spacer-y-3"></div>
+                      <p class="text-center text-base text-subtle">
+                        by
+                        <!-- -->Rick Rubin
+                      </p>
                       <picture
                         ><source
                           srcset="/svg/3-stars-dark.svg"
@@ -560,60 +613,52 @@
                         <img
                           src="/svg/3-stars.svg"
                           alt="C+: 3 stars (out of 5)"
-                          height="16"
-                          width="80"
+                          height="18"
+                          width="90"
+                          class="mt-2"
                       /></picture>
-                      <div class="spacer-y-2"></div>
                     </div>
                   </li>
                   <li
-                    class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+                    class="relative flex w-[46%] max-w-[248px] flex-col items-center border-default bg-default tablet:w-[22.75%]"
                   >
-                    <a
-                      href="/reviews/the-dark-tunnel-by-ross-macdonald/"
-                      class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
-                      ><img
-                        srcset="
-                          /_image?/content%2Fassets%2Fcovers%2Fthe-dark-tunnel-by-ross-macdonald.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=44&amp;q=80&amp;f=avif   44w,
-                          /_image?/content%2Fassets%2Fcovers%2Fthe-dark-tunnel-by-ross-macdonald.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=88&amp;q=80&amp;f=avif   88w,
-                          /_image?/content%2Fassets%2Fcovers%2Fthe-dark-tunnel-by-ross-macdonald.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;q=80&amp;f=avif 176w,
-                          /_image?/content%2Fassets%2Fcovers%2Fthe-dark-tunnel-by-ross-macdonald.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=352&amp;q=80&amp;f=avif 352w
-                        "
-                        src="/_image?/content%2Fassets%2Fcovers%2Fthe-dark-tunnel-by-ross-macdonald.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;h=264&amp;q=80&amp;f=avif"
-                        alt="A cover for The Dark Tunnel by Ross Macdonald (as Kenneth Millar)"
-                        height="264"
-                        width="176"
-                        class="aspect-[0.66666667]"
-                        loading="lazy"
-                        decoding="async"
-                        style="aspect-ratio: 0.66666667"
-                    /></a>
-                    <div class="tablet:spacer-y-2"></div>
+                    <img
+                      srcset="
+                        /_image?/content%2Fassets%2Fcovers%2Fthe-dark-tunnel-by-ross-macdonald.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;q=80&amp;f=avif   62w,
+                        /_image?/content%2Fassets%2Fcovers%2Fthe-dark-tunnel-by-ross-macdonald.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;q=80&amp;f=avif 124w,
+                        /_image?/content%2Fassets%2Fcovers%2Fthe-dark-tunnel-by-ross-macdonald.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;q=80&amp;f=avif 248w,
+                        /_image?/content%2Fassets%2Fcovers%2Fthe-dark-tunnel-by-ross-macdonald.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;q=80&amp;f=avif 496w
+                      "
+                      src="/_image?/content%2Fassets%2Fcovers%2Fthe-dark-tunnel-by-ross-macdonald.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
+                      alt=""
+                      width="248"
+                      height="372"
+                      loading="lazy"
+                      decoding="async"
+                      style="aspect-ratio: 0.66666667"
+                    />
                     <div
-                      class="flex grow flex-col tablet:w-full tablet:items-center"
+                      class="flex grow flex-col items-center px-[8%] pb-8 pt-3 desktop:pl-[8.5%] desktop:pr-[10%]"
                     >
-                      <div class="tablet:spacer-y-1"></div>
-                      <a
-                        href="/reviews/the-dark-tunnel-by-ross-macdonald/"
-                        class="block text-md leading-5 text-accent tablet:text-center tablet:text-base tablet:leading-5 desktop:text-md"
-                        >The Dark Tunnel</a
-                      >
-                      <div class="spacer-y-1 tablet:spacer-y-2"></div>
-                      <div
-                        class="text-base leading-5 text-muted text-left tablet:text-center"
-                      >
-                        Ross Macdonald
+                      <div class="text-center text-md font-medium leading-6">
+                        <a
+                          href="/reviews/the-dark-tunnel-by-ross-macdonald/"
+                          rel="canonical"
+                          class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] tablet:before:opacity-15"
+                          >The Dark Tunnel</a
+                        >
                       </div>
-                      <div class="spacer-y-3"></div>
                       <div
-                        class="text-sm leading-4 tracking-0.5px text-subtle text-left tablet:text-center"
+                        class="py-2 text-center font-sans text-xxs font-light uppercase leading-4 tracking-wide text-subtle"
                       >
-                        <span
-                          >1944<!-- -->
-                          | </span
-                        >Novel
+                        1944<!-- -->
+                        |<!-- -->
+                        <span class="whitespace-nowrap">Novel</span>
                       </div>
-                      <div class="spacer-y-3"></div>
+                      <p class="text-center text-base text-subtle">
+                        by
+                        <!-- -->Ross Macdonald
+                      </p>
                       <picture
                         ><source
                           srcset="/svg/2-stars-dark.svg"
@@ -621,60 +666,52 @@
                         <img
                           src="/svg/2-stars.svg"
                           alt="D+: 2 stars (out of 5)"
-                          height="16"
-                          width="80"
+                          height="18"
+                          width="90"
+                          class="mt-2"
                       /></picture>
-                      <div class="spacer-y-2"></div>
                     </div>
                   </li>
                   <li
-                    class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+                    class="relative flex w-[46%] max-w-[248px] flex-col items-center border-default bg-default tablet:w-[22.75%]"
                   >
-                    <a
-                      href="/reviews/desert-pickup-by-richard-laymon/"
-                      class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
-                      ><img
-                        srcset="
-                          /_image?/content%2Fassets%2Fcovers%2Fshort-stories-volume-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=44&amp;q=80&amp;f=avif   44w,
-                          /_image?/content%2Fassets%2Fcovers%2Fshort-stories-volume-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=88&amp;q=80&amp;f=avif   88w,
-                          /_image?/content%2Fassets%2Fcovers%2Fshort-stories-volume-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;q=80&amp;f=avif 176w,
-                          /_image?/content%2Fassets%2Fcovers%2Fshort-stories-volume-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=352&amp;q=80&amp;f=avif 352w
-                        "
-                        src="/_image?/content%2Fassets%2Fcovers%2Fshort-stories-volume-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;h=264&amp;q=80&amp;f=avif"
-                        alt="A cover for Short Stories: Volume One: The Mystery and Men&#x27;s Magazines by Richard Laymon"
-                        height="264"
-                        width="176"
-                        class="aspect-[0.66666667]"
-                        loading="lazy"
-                        decoding="async"
-                        style="aspect-ratio: 0.66666667"
-                    /></a>
-                    <div class="tablet:spacer-y-2"></div>
+                    <img
+                      srcset="
+                        /_image?/content%2Fassets%2Fcovers%2Fshort-stories-volume-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;q=80&amp;f=avif   62w,
+                        /_image?/content%2Fassets%2Fcovers%2Fshort-stories-volume-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;q=80&amp;f=avif 124w,
+                        /_image?/content%2Fassets%2Fcovers%2Fshort-stories-volume-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;q=80&amp;f=avif 248w,
+                        /_image?/content%2Fassets%2Fcovers%2Fshort-stories-volume-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;q=80&amp;f=avif 496w
+                      "
+                      src="/_image?/content%2Fassets%2Fcovers%2Fshort-stories-volume-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
+                      alt=""
+                      width="248"
+                      height="372"
+                      loading="lazy"
+                      decoding="async"
+                      style="aspect-ratio: 0.66666667"
+                    />
                     <div
-                      class="flex grow flex-col tablet:w-full tablet:items-center"
+                      class="flex grow flex-col items-center px-[8%] pb-8 pt-3 desktop:pl-[8.5%] desktop:pr-[10%]"
                     >
-                      <div class="tablet:spacer-y-1"></div>
-                      <a
-                        href="/reviews/desert-pickup-by-richard-laymon/"
-                        class="block text-md leading-5 text-accent tablet:text-center tablet:text-base tablet:leading-5 desktop:text-md"
-                        >Desert Pickup</a
-                      >
-                      <div class="spacer-y-1 tablet:spacer-y-2"></div>
-                      <div
-                        class="text-base leading-5 text-muted text-left tablet:text-center"
-                      >
-                        Richard Laymon
+                      <div class="text-center text-md font-medium leading-6">
+                        <a
+                          href="/reviews/desert-pickup-by-richard-laymon/"
+                          rel="canonical"
+                          class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] tablet:before:opacity-15"
+                          >Desert Pickup</a
+                        >
                       </div>
-                      <div class="spacer-y-3"></div>
                       <div
-                        class="text-sm leading-4 tracking-0.5px text-subtle text-left tablet:text-center"
+                        class="py-2 text-center font-sans text-xxs font-light uppercase leading-4 tracking-wide text-subtle"
                       >
-                        <span
-                          >1970<!-- -->
-                          | </span
-                        >Short Story
+                        1970<!-- -->
+                        |<!-- -->
+                        <span class="whitespace-nowrap">Short Story</span>
                       </div>
-                      <div class="spacer-y-3"></div>
+                      <p class="text-center text-base text-subtle">
+                        by
+                        <!-- -->Richard Laymon
+                      </p>
                       <picture
                         ><source
                           srcset="/svg/2-half-stars-dark.svg"
@@ -682,91 +719,118 @@
                         <img
                           src="/svg/2-half-stars.svg"
                           alt="C-: 2.5 stars (out of 5)"
-                          height="16"
-                          width="80"
+                          height="18"
+                          width="90"
+                          class="mt-2"
                       /></picture>
-                      <div class="spacer-y-2"></div>
                     </div>
                   </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+          <script type="application/ld+json">
+            {
+              "@context": "http://schema.org",
+              "@type": "Review",
+              "itemReviewed": {
+                "@type": "Book",
+                "name": "Cured",
+                "image": "/_image?/content%2Fassets%2Fcovers%2Fcured-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=1200&h=630&q=80&f=jpeg"
+              },
+              "reviewRating": { "@type": "Rating", "ratingValue": 5 },
+              "author": { "@type": "Person", "name": "Frank Showalter" }
+            }
+          </script>
+        </main>
+        <footer
+          class="flex flex-wrap items-start justify-between gap-[10%] bg-footer px-container py-20 text-inverse tablet:px-12 tablet:pt-10 desktop:p-20"
+        >
+          <div class="flex flex-col pb-12">
+            <div class="flex flex-col">
+              <div
+                class="whitespace-nowrap font-normal leading-8"
+                style="font-size: 1.5625rem"
+              >
+                <a href="/">Frank&#x27;s Book Log</a>
+              </div>
+              <p class="w-full pl-px text-sm italic leading-4 opacity-85">
+                Literature is a relative term.
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col gap-20 pb-20 pt-10 tablet:basis-1/2 tablet:pt-20"
+          >
+            <ul class="flex w-full flex-col gap-y-10 text-inverse max:w-auto">
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a class="hover:text-accent" href="/">Home</a>
+              </li>
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a class="hover:text-accent" href="/how-i-grade/"
+                  >How I Grade</a
+                >
+              </li>
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a class="hover:text-accent" href="/reviews/">Reviews</a>
+              </li>
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a class="hover:text-accent" href="/readings/">Reading Log</a>
+                <ol class="mt-4">
                   <li
-                    class="col-span-full block px-gutter py-4 text-right shadow-bottom tablet:absolute tablet:right-0 tablet:top-0 tablet:shadow-none desktop:right-[var(--gutter-width)]"
+                    class="mb-2 font-sans text-xs uppercase tracking-wide text-inverse-subtle"
                   >
-                    <a href="/reviews/" class="text-accent"
-                      >All<!-- -->
-                      <span class="inline tablet:hidden desktop:inline"
-                        >Reviews</span
-                      >
-                      <!-- -->→</a
+                    <a class="hover:text-inverse" href="/readings/stats/"
+                      >Stats</a
                     >
                   </li>
-                </ul>
-              </nav>
-            </div>
-            <script type="application/ld+json">
-              {
-                "@context": "http://schema.org",
-                "@type": "Review",
-                "itemReviewed": {
-                  "@type": "Book",
-                  "name": "Cured",
-                  "image": "/_image?/content%2Fassets%2Fcovers%2Fcured-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=1200&h=630&q=80&f=jpeg"
-                },
-                "reviewRating": { "@type": "Rating", "ratingValue": 5 },
-                "author": { "@type": "Person", "name": "Frank Showalter" }
-              }
-            </script>
-          </main>
-        </div>
-        <footer
-          class="flex flex-col items-center gap-y-6 bg-[url(&#x27;/assets/ripnotcomingsoon.avif&#x27;)] px-pageMargin py-8 text-inverse"
-        >
-          <ul
-            class="flex w-full flex-wrap justify-center gap-x-4 gap-y-2 text-inverse tablet:gap-x-6 max:w-auto"
-          >
-            <li class="block whitespace-nowrap tracking-0.5px">
-              <a class="text-inverse" href="/">Home</a>
-            </li>
-            <li class="block whitespace-nowrap tracking-0.5px">
-              <a class="text-inherit" href="/how-i-grade/">How I Grade</a>
-            </li>
-            <li class="block whitespace-nowrap tracking-0.5px">
-              <a class="text-inherit" href="/reviews/">Reviews</a>
-            </li>
-            <li class="block whitespace-nowrap tracking-0.5px">
-              <a class="text-inherit" href="/readings/">Reading Log</a>
-            </li>
-            <li class="block whitespace-nowrap tracking-0.5px">
-              <a class="text-inherit" href="/authors/">Authors</a>
-            </li>
-            <li class="block whitespace-nowrap tracking-0.5px">
-              <a class="text-inherit" href="/shelf/">Shelf</a>
-            </li>
-          </ul>
-          <p class="text-sm font-light leading-4">
-            All images used in accordance with the<!-- -->
+                </ol>
+              </li>
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a class="hover:text-accent" href="/authors/">Authors</a>
+              </li>
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a class="hover:text-accent" href="/shelf/">Shelf</a>
+              </li>
+            </ul>
             <a
-              href="http://www.copyright.gov/title17/92chap1.html#107"
-              class="text-inherit"
-              >Fair Use Law.</a
+              href="#top"
+              class="mb-8 w-full max-w-button bg-canvas py-5 text-center font-sans text-xs uppercase tracking-wide text-default hover:bg-inverse hover:text-inverse"
+              >To the top</a
             >
-          </p>
-          <a href="#top" class="sr-only">To the top ↑</a>
+            <p class="w-full font-normal leading-4 text-inverse-subtle">
+              All covers used in accordance with the<!-- -->
+              <a
+                href="http://www.copyright.gov/title17/92chap1.html#107"
+                class="text-inherit underline decoration-2 underline-offset-4 hover:bg-default hover:text-default"
+                >Fair Use Law.</a
+              >
+            </p>
+          </div>
         </footer>
       </div>
     </div>
     <dialog
-      class="relative m-0 h-screen max-h-none w-screen max-w-unset border border-default bg-canvas shadow-lg open:flex open:flex-col tablet:mx-auto tablet:mt-16 tablet:h-min tablet:max-h-[min(100vh_-_128px,900px)] tablet:min-h-60 tablet:max-w-[min(100vw_-_2_*_var(--gutter-width),36rem)] tablet:rounded-xl desktop:min-h-0"
+      class="relative m-0 h-screen max-h-none w-screen max-w-unset border border-default bg-subtle shadow-lg open:flex open:flex-col tablet:mx-auto tablet:mt-16 tablet:h-min tablet:max-h-[min(100vh_-_128px,900px)] tablet:min-h-60 tablet:max-w-[min(100vw_-_64px,36rem)] tablet:rounded-xl desktop:min-h-0"
       aria-label="Search"
     >
       <div data-dialog-frame class="contents">
-        <button data-close-modal>Cancel</button>
+        <button
+          data-close-modal
+          class="px-4 font-sans text-sm font-light hover:bg-inverse hover:text-inverse focus:outline-accent"
+        >
+          Cancel
+        </button>
         <div class="contents"><div id="pagefind__search"></div></div>
-        <div class="hidden px-gutter py-4 desktop:block">
+        <div
+          class="hidden px-[var(--search-dialog-padding)] py-4 font-sans text-xs font-light tracking-wide text-subtle desktop:block"
+        >
           <kbd class="rounded-md bg-default p-2 font-mono text-xs text-subtle"
             >Tab</kbd
           >
           to navigate
-          <kbd class="rounded-md bg-subtle p-2 font-mono text-xs text-subtle"
+          <kbd
+            class="ml-4 rounded-md bg-default p-2 font-mono text-xs text-subtle"
             >ESC</kbd
           >
           to close
@@ -776,14 +840,11 @@
     <script>
       (() => {
         const openBtn = document.querySelector("button[data-open-modal]");
-        const shortcut = openBtn?.querySelector("kbd");
-        if (!openBtn || !(shortcut instanceof HTMLElement)) return;
-        const platformKey = shortcut.querySelector("kbd");
-        if (platformKey && /(Mac|iPhone|iPod|iPad)/i.test(navigator.platform)) {
-          platformKey.textContent = "⌘";
+        if (!openBtn) return;
+        if (/(Mac|iPhone|iPod|iPad)/i.test(navigator.platform)) {
           openBtn.setAttribute("aria-keyshortcuts", "Meta+K");
+          openBtn.setAttribute("title", `Search: ⌘K`);
         }
-        shortcut.style.display = "";
       })();
     </script>
   </body>

@@ -7,7 +7,7 @@ import {
 } from "src/utils";
 
 import type { FilterableState } from "../../utils";
-import type { ListItemValue } from "./List";
+import type { ListItemValue } from "./Author";
 
 export type Sort =
   | "year-published-desc"
@@ -152,7 +152,7 @@ export function reducer(state: State, action: ActionType): State {
     case Actions.FILTER_KIND: {
       return (
         clearFilter(action.value, state, "kind") ??
-        updateFilter(state, "medium", (value) => {
+        updateFilter(state, "kind", (value) => {
           return value.kind === action.value;
         })
       );

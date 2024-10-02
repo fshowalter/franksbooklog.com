@@ -2,8 +2,7 @@ import { getFixedCoverImageProps } from "src/api/covers";
 import { allShelfWorks } from "src/api/shelf";
 import { ListItemCoverImageConfig } from "src/components/ListItemCover";
 
-import type { ListItemValue } from "./List";
-import type { Props } from "./Shelf";
+import type { ListItemValue, Props } from "./Shelf";
 
 export async function getProps(): Promise<Props> {
   const { works, distinctPublishedYears, distinctKinds, distinctAuthors } =

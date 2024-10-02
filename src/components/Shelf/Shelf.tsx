@@ -1,11 +1,31 @@
 import { useReducer } from "react";
+import type { CoverImageProps } from "src/api/covers";
+import type { ShelfWork } from "src/api/shelf";
+import { GroupedList } from "src/components/GroupedList";
+import { ListItem } from "src/components/ListItem";
+import { ListItemCover } from "src/components/ListItemCover";
+import { ListItemTitle } from "src/components/ListItemTitle";
+import { toSentenceArray } from "src/utils";
 
+import { SolidBackdrop } from "../Backdrop";
+import { ListItemKindAndYear } from "../ListItemKindAndYear";
 import { ListWithFiltersLayout } from "../ListWithFiltersLayout";
 import { Filters } from "./Filters";
-import { Header } from "./Header";
-import { List, type ListItemValue } from "./List";
 import type { Sort } from "./Shelf.reducer";
 import { initState, reducer } from "./Shelf.reducer";
+import { Actions } from "./Shelf.reducer";
+
+interface Author
+  extends Pick<ShelfWork["authors"][number], "name" | "notes" | "sortName"> {}
+
+export interface ListItemValue
+  extends Pick<
+    ShelfWork,
+    "slug" | "title" | "yearPublished" | "sortTitle" | "kind"
+  > {
+  authors: Author[];
+  coverImageProps: CoverImageProps;
+}
 
 export interface Props {
   values: ListItemValue[];
@@ -33,24 +53,65 @@ export function Shelf({
 
   return (
     <ListWithFiltersLayout
-      header={<Header shelfCount={values.length} />}
+      backdrop={
+        <SolidBackdrop
+          title="The Shelf"
+          deck={`"Classic: A book which people praise and don’t read."`}
+        />
+      }
+      totalCount={state.filteredValues.length}
       filters={
         <Filters
+          sortValue={state.sortValue}
           dispatch={dispatch}
           distinctAuthors={distinctAuthors}
           distinctKinds={distinctKinds}
           distinctPublishedYears={distinctPublishedYears}
-          sortValue={state.sortValue}
         />
       }
       list={
-        <List
-          dispatch={dispatch}
+        <GroupedList
           groupedValues={state.groupedValues}
-          totalCount={state.filteredValues.length}
           visibleCount={state.showCount}
-        />
+          totalCount={state.filteredValues.length}
+          onShowMore={() => dispatch({ type: Actions.SHOW_MORE })}
+          data-testid="list"
+        >
+          {(value) => {
+            return <ShelfListItem value={value} key={value.slug} />;
+          }}
+        </GroupedList>
       }
     />
+  );
+}
+
+function ShelfListItem({ value }: { value: ListItemValue }): JSX.Element {
+  return (
+    <ListItem>
+      <ListItemCover imageProps={value.coverImageProps} />
+      <div className="flex grow flex-col gap-y-1 tablet:w-full tablet:gap-y-2 desktop:pr-4">
+        <ListItemTitle title={value.title} />
+        <Authors
+          values={value.authors}
+          className="font-sans text-xs leading-5 text-muted"
+        />
+        <ListItemKindAndYear year={value.yearPublished} kind={value.kind} />
+      </div>
+    </ListItem>
+  );
+}
+
+function Authors({
+  values,
+  className,
+}: {
+  values: ListItemValue["authors"];
+  className: string;
+}) {
+  return (
+    <div className={className}>
+      {toSentenceArray(values.map((value) => value.name))}
+    </div>
   );
 }

@@ -1,21 +1,24 @@
 import { ccn } from "src/utils/concatClassNames";
 
-export function PageTitle({
+export function SubHeading({
   children,
+  as,
   className,
 }: {
   children: React.ReactNode;
+  as: "h2" | "h3" | "h4" | "h5";
   className?: string;
-}): JSX.Element {
+}) {
+  const Component = as;
+
   return (
-    <h1
-      data-pagefind-meta="title"
+    <Component
       className={ccn(
-        "text-[2rem] font-normal leading-none desktop:text-[2.25rem]",
+        "py-10 font-sans text-xs font-semibold uppercase tracking-wide text-subtle",
         className,
       )}
     >
       {children}
-    </h1>
+    </Component>
   );
 }

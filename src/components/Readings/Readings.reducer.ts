@@ -1,7 +1,7 @@
 import type { FilterableState } from "src/utils";
 import { filterTools, sortString } from "src/utils";
 
-import type { ListItemValue } from "./List";
+import type { ListItemValue } from "./Readings";
 
 const SHOW_COUNT_DEFAULT = 100;
 
@@ -20,30 +20,13 @@ function sortValues(values: ListItemValue[], sortOrder: Sort) {
   return values.sort(comparer);
 }
 
-const yearFormatter = new Intl.DateTimeFormat("en-US", {
-  year: "numeric",
-  timeZone: "UTC",
-});
-
-const monthGroupFormatter = new Intl.DateTimeFormat("en-US", {
-  month: "long",
-  year: "numeric",
-  timeZone: "UTC",
-});
-
-const dayGroupFormatter = new Intl.DateTimeFormat("en-US", {
-  day: "numeric",
-  weekday: "short",
-  timeZone: "UTC",
-});
-
 function groupValues(
   values: ListItemValue[],
 ): Map<string, Map<string, ListItemValue[]>> {
   const groupedValues = new Map<string, Map<string, ListItemValue[]>>();
 
   values.map((value) => {
-    const monthYearGroup = monthGroupFormatter.format(value.date);
+    const monthYearGroup = `${value.readingMonth} ${value.readingYear}`;
 
     let groupValue = groupedValues.get(monthYearGroup);
 
@@ -52,7 +35,7 @@ function groupValues(
       groupedValues.set(monthYearGroup, groupValue);
     }
 
-    const dayGroup = dayGroupFormatter.format(value.date);
+    const dayGroup = `${value.readingDay}-${value.readingDate}`;
 
     let dayGroupValue = groupValue.get(dayGroup);
 
@@ -180,7 +163,7 @@ export function reducer(state: State, action: ActionType): State {
     }
     case Actions.FILTER_READING_YEAR: {
       return updateFilter(state, "readingYear", (value) => {
-        const readingYear = yearFormatter.format(value.date);
+        const readingYear = value.readingYear;
         return (
           readingYear >= action.values[0] && readingYear <= action.values[1]
         );

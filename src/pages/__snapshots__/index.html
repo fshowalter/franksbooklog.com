@@ -24,1037 +24,1011 @@
     />
     <title>Frank&#39;s Book Log</title>
   </head>
-  <body class="data-[search-modal-open]:blur-sm">
+  <body>
     <div>
       <a
         href="#content"
         class="absolute left-1/2 top-0.5 z-50 mx-auto bg-subtle px-6 py-2 text-center text-accent [transform:translate(-50%,calc(-100%_-_2px))] focus:[transform:translate(-50%,0%)]"
         >Skip to content</a
       >
-      <div
-        class="image-filter mx-auto min-h-4 w-full max-w-canvas bg-[url(&#x27;/assets/ripnotcomingsoon.avif&#x27;)] desktop:sticky desktop:top-0 desktop:z-40"
-      ></div>
-      <div class="mx-auto flex min-h-full max-w-canvas flex-col bg-default">
+      <div class="flex min-h-full w-full flex-col bg-default">
         <header
-          class="flex flex-col items-center gap-6 bg-default px-pageMargin py-6 text-center shadow-bottom desktop:sticky desktop:top-4 desktop:z-40 desktop:flex-row desktop:justify-between desktop:gap-8 desktop:py-5 desktop:text-left max:justify-center max:py-8"
+          class="z-20 flex w-full items-center justify-between px-container py-4 tablet:p-6 desktop:inset-x-0 desktop:z-40 desktop:flex-row desktop:flex-wrap desktop:px-16 desktop:py-8 desktop:text-left"
+          style="position: absolute"
         >
-          <div
-            class="items-inherit justify-items-inherit flex flex-col max:absolute max:left-[var(--page-margin-width)]"
-          >
-            <h1
-              class="whitespace-nowrap text-[1.5625rem] font-normal leading-8"
-            >
-              <a class="text-default" href="/">Frank&#x27;s Book Log</a>
-            </h1>
-            <p class="w-full text-sm italic leading-4 text-muted desktop:pl-px">
-              Literature is a relative term.
-            </p>
-          </div>
-          <div
-            class="w-full max-w-prose desktop:order-4 desktop:w-auto max:absolute max:right-[var(--page-margin-width)]"
-          >
-            <button
-              data-open-modal="true"
-              disabled=""
-              aria-label="Search"
-              aria-keyshortcuts="Control+K"
-              class="safari-border-radius-fix flex w-full items-center overflow-hidden rounded-md text-sm leading-6 text-subtle ring-1 ring-border hover:ring-accent"
-            >
-              <kbd
-                class="ml-auto mt-px hidden min-h-6 flex-none items-center bg-subtle pl-3 pr-4 font-mono text-sm font-light opacity-70 desktop:flex"
-                ><kbd class="text-md leading-5">Ctrl</kbd
-                ><kbd class="text-sm">K</kbd></kbd
-              ><svg
-                class="mr-2 size-10 flex-none border-0 border-r border-default bg-subtle fill-subtle px-3 py-1 desktop:w-4 desktop:border-r-0 desktop:bg-unset desktop:px-0"
-                viewBox="0 0 16 16"
+          <div></div>
+          <div class="flex items-center">
+            <nav class="hidden w-full desktop:block desktop:w-auto">
+              <ul class="flex flex-wrap justify-start gap-x-6 text-xl">
+                <li class="block whitespace-nowrap tracking-serif-wide">
+                  <a
+                    class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
+                    href="/"
+                    >Home</a
+                  >
+                </li>
+                <li class="block whitespace-nowrap tracking-serif-wide">
+                  <a
+                    class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
+                    href="/how-i-grade/"
+                    >How I Grade</a
+                  >
+                </li>
+                <li class="block whitespace-nowrap tracking-serif-wide">
+                  <a
+                    class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
+                    href="/reviews/"
+                    >Reviews</a
+                  >
+                </li>
+                <li class="block whitespace-nowrap tracking-serif-wide">
+                  <a
+                    class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
+                    href="/readings/"
+                    >Reading Log</a
+                  >
+                </li>
+                <li class="block whitespace-nowrap tracking-serif-wide">
+                  <a
+                    class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
+                    href="/authors/"
+                    >Authors</a
+                  >
+                </li>
+                <li class="block whitespace-nowrap tracking-serif-wide">
+                  <a
+                    class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
+                    href="/shelf/"
+                    >Shelf</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <div class="z-[1000]">
+              <button
+                data-open-modal="true"
+                disabled=""
+                aria-label="Search"
+                aria-keyshortcuts="Control+K"
+                class="flex items-center justify-between overflow-hidden text-sm leading-6 ring-default desktop:ml-6"
+                type="button"
+                title="Search: Control+K"
               >
-                <path
-                  fill-rule="evenodd"
-                  d="M10.442 10.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z"
-                ></path>
-                <path
-                  fill-rule="evenodd"
-                  d="M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z"
-                ></path></svg
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6 desktop:size-7"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <input type="checkbox" id="mobile-nav" class="hidden" /><label
+              for="mobile-nav"
+              class="hamburger-icon desktop:hidden"
               ><span
-                class="flex items-baseline whitespace-nowrap p-2 text-base opacity-70 desktop:hidden"
-                >Quick search...</span
-              >
-            </button>
-          </div>
-          <nav class="w-full desktop:w-auto">
+                style="background: var(--fg-default)"
+                class="hamburger-icon-bars"
+              ></span
+            ></label>
             <ul
-              class="flex flex-wrap justify-center gap-x-4 gap-y-2 text-accent tablet:gap-x-6 desktop:flex-nowrap desktop:justify-start"
+              class="hamburger-menu flex flex-col items-start gap-y-5 text-left text-inverse desktop:hidden"
             >
-              <li class="block whitespace-nowrap tracking-0.5px">
-                <a class="text-muted" href="/">Home</a>
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a href="/">Home</a>
               </li>
-              <li class="block whitespace-nowrap tracking-0.5px">
-                <a class="text-inherit" href="/how-i-grade/">How I Grade</a>
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a href="/how-i-grade/">How I Grade</a>
               </li>
-              <li class="block whitespace-nowrap tracking-0.5px">
-                <a class="text-inherit" href="/reviews/">Reviews</a>
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a href="/reviews/">Reviews</a>
               </li>
-              <li class="block whitespace-nowrap tracking-0.5px">
-                <a class="text-inherit" href="/readings/">Reading Log</a>
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a href="/readings/">Reading Log</a>
+                <ol class="mt-4">
+                  <li
+                    class="mb-2 font-sans text-xs uppercase tracking-wide text-inverse-subtle"
+                  >
+                    <a href="/readings/stats/">Stats</a>
+                  </li>
+                </ol>
               </li>
-              <li class="block whitespace-nowrap tracking-0.5px">
-                <a class="text-inherit" href="/authors/">Authors</a>
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a href="/authors/">Authors</a>
               </li>
-              <li class="block whitespace-nowrap tracking-0.5px">
-                <a class="text-inherit" href="/shelf/">Shelf</a>
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a href="/shelf/">Shelf</a>
               </li>
             </ul>
-          </nav>
+          </div>
         </header>
-        <div class="grow" id="content">
-          <main>
-            <ol class="flex flex-col">
-              <li class="relative flex even:bg-subtle">
-                <article
-                  class="mx-auto flex max-w-[960px] flex-col items-center px-pageMargin py-10 tablet:grid tablet:w-full tablet:grid-cols-12 tablet:gap-x-6"
+        <main class="grow bg-subtle pb-8" id="content">
+          <header
+            class="min-h-[240px] desktop:min-h-[clamp(640px,50vh,1350px)] relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pb-8 pt-40 tablet:pb-10 tablet:pt-40 desktop:pb-16 desktop:pt-40"
+          >
+            <div
+              class="z-10 mx-auto flex w-full max-w-screen-max flex-col px-container"
+            >
+              <h1 class="text-default text-4xl desktop:text-7xl">
+                Frank&#x27;s Book Log
+              </h1>
+              <p class="mt-1 text-base desktop:my-4 desktop:text-xl">
+                Literature is a relative term.
+              </p>
+            </div>
+          </header>
+          <nav
+            class="mx-auto max-w-screen-max bg-[#f6f6f6] tablet:bg-subtle tablet:px-container"
+          >
+            <h2
+              class="py-10 font-sans text-xs font-semibold uppercase tracking-wide text-subtle px-container tablet:px-0"
+            >
+              Latest Reviews
+            </h2>
+            <ol
+              class="flex flex-wrap justify-center gap-x-[4%] gap-y-[6vw] px-[2%] tablet:gap-x-[3%] tablet:px-0 desktop:justify-between desktop:gap-x-[2%]"
+            >
+              <li
+                class="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[14.16666667%]"
+              >
+                <img
+                  srcset="
+                    /_image?/content%2Fassets%2Fcovers%2Frecessional-by-david-mamet.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;q=80&amp;f=avif   62w,
+                    /_image?/content%2Fassets%2Fcovers%2Frecessional-by-david-mamet.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;q=80&amp;f=avif 124w,
+                    /_image?/content%2Fassets%2Fcovers%2Frecessional-by-david-mamet.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;q=80&amp;f=avif 248w,
+                    /_image?/content%2Fassets%2Fcovers%2Frecessional-by-david-mamet.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;q=80&amp;f=avif 496w
+                  "
+                  src="/_image?/content%2Fassets%2Fcovers%2Frecessional-by-david-mamet.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
+                  alt="A cover of Recessional by David Mamet"
+                  width="248"
+                  height="372"
+                  loading="eager"
+                  decoding="async"
+                  style="aspect-ratio: 0.66666667"
+                />
+                <div
+                  class="flex grow flex-col items-center px-[8%] pb-8 pt-2 desktop:pl-[8.5%] desktop:pr-[10%]"
                 >
                   <div
-                    class="whitespace-nowrap text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle tablet:col-span-12 tablet:self-start tablet:leading-8 desktop:absolute desktop:left-[var(--page-margin-width)]"
+                    class="whitespace-nowrap py-2 text-center font-sans text-xxs font-light uppercase leading-4 text-subtle"
+                  >
+                    25 Aug 2024
+                  </div>
+                  <div class="text-center text-md font-medium leading-6">
+                    <a
+                      href="/reviews/recessional-by-david-mamet/"
+                      rel="canonical"
+                      class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] before:tablet:opacity-15"
+                      >Recessional</a
+                    >
+                  </div>
+                  <div
+                    class="font-sans text-xxs font-light uppercase leading-8 tracking-wide text-subtle"
+                  >
+                    2022<!-- -->
+                    |
+                    <!-- -->Nonfiction
+                  </div>
+                  <p class="text-center text-base font-light text-subtle">
+                    by<!-- -->
+                    <span class="font-normal text-accent"
+                      ><a href="/reviews/authors/david-mamet/"
+                        >David Mamet</a
+                      ></span
+                    >
+                  </p>
+                  <picture
+                    ><source
+                      srcset="/svg/2-stars-dark.svg"
+                      media="(prefers-color-scheme: dark)" />
+                    <img
+                      src="/svg/2-stars.svg"
+                      alt="D: 2 stars (out of 5)"
+                      height="18"
+                      width="90"
+                      class="mt-2"
+                  /></picture>
+                </div>
+              </li>
+              <li
+                class="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[14.16666667%]"
+              >
+                <img
+                  srcset="
+                    /_image?/content%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;q=80&amp;f=avif   62w,
+                    /_image?/content%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;q=80&amp;f=avif 124w,
+                    /_image?/content%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;q=80&amp;f=avif 248w,
+                    /_image?/content%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;q=80&amp;f=avif 496w
+                  "
+                  src="/_image?/content%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
+                  alt="A cover of Fast Forward by Stephen Morris"
+                  width="248"
+                  height="372"
+                  loading="lazy"
+                  decoding="async"
+                  style="aspect-ratio: 0.66666667"
+                />
+                <div
+                  class="flex grow flex-col items-center px-[8%] pb-8 pt-2 desktop:pl-[8.5%] desktop:pr-[10%]"
+                >
+                  <div
+                    class="whitespace-nowrap py-2 text-center font-sans text-xxs font-light uppercase leading-4 text-subtle"
                   >
                     01 Jul 2024
-                    <div class="spacer-y-6"></div>
                   </div>
-                  <a
-                    rel="canonical"
-                    href="/reviews/fast-forward-by-stephen-morris/"
-                    class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default tablet:col-span-4 tablet:mx-0 tablet:self-start tablet:justify-self-end"
-                    ><img
-                      srcset="
-                        /_image?/content%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;q=80&amp;f=avif 1x,
-                        /_image?/content%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=352&amp;q=80&amp;f=avif 2x
-                      "
-                      src="/_image?/content%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;h=264&amp;q=80&amp;f=avif"
-                      alt="A cover of Fast Forward by Stephen Morris"
-                      width="176"
-                      height="264"
-                      loading="eager"
-                      decoding="async"
-                      style="aspect-ratio: 0.66666667"
-                  /></a>
+                  <div class="text-center text-md font-medium leading-6">
+                    <a
+                      href="/reviews/fast-forward-by-stephen-morris/"
+                      rel="canonical"
+                      class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] before:tablet:opacity-15"
+                      >Fast Forward</a
+                    >
+                  </div>
                   <div
-                    class="flex flex-col items-center tablet:col-span-8 tablet:items-start"
+                    class="font-sans text-xxs font-light uppercase leading-8 tracking-wide text-subtle"
                   >
-                    <div class="spacer-y-4 tablet:spacer-y-0"></div>
-                    <h2
-                      class="text-center text-2.5xl font-bold leading-8 tablet:text-left"
-                    >
-                      <a
-                        href="/reviews/fast-forward-by-stephen-morris/"
-                        rel="canonical"
-                        class="inline-block"
-                        >Fast Forward</a
-                      >
-                    </h2>
-                    <div
-                      class="text-sm font-light uppercase leading-8 tracking-0.75px text-subtle"
-                    >
-                      2020<!-- -->
-                      |
-                      <!-- -->Nonfiction
-                    </div>
-                    <p class="text-center">
-                      by<!-- -->
-                      <span class="text-accent"
-                        ><a href="/reviews/authors/stephen-morris/"
-                          >Stephen Morris</a
-                        ></span
-                      >
-                    </p>
-                    <div class="spacer-y-4"></div>
-                    <picture
-                      ><source
-                        srcset="/svg/4-half-stars-dark.svg"
-                        media="(prefers-color-scheme: dark)" />
-                      <img
-                        src="/svg/4-half-stars.svg"
-                        alt="A-: 4.5 stars (out of 5)"
-                        height="24"
-                        width="120"
-                    /></picture>
-                    <div class="spacer-y-4"></div>
-                    <div
-                      class="rendered-markdown font-light max-w-[34rem] text-lg leading-normal tracking-0.3px text-muted"
-                    >
-                      <p>
-                        Every bit as entertaining as his first volume, drummer
-                        Stephen Morris’s second volume of memoirs picks up where
-                        <em>Record Play Pause</em> ended, chronicling New
-                        Order’s rise to super-stardom and the tensions that tore
-                        it apart.
-                        <a
-                          class="!no-underline uppercase whitespace-nowrap text-accent text-sm leading-none"
-                          href="/reviews/fast-forward-by-stephen-morris/"
-                          >Continue reading...</a
-                        >
-                      </p>
-                    </div>
+                    2020<!-- -->
+                    |
+                    <!-- -->Nonfiction
                   </div>
-                </article>
+                  <p class="text-center text-base font-light text-subtle">
+                    by<!-- -->
+                    <span class="font-normal text-accent"
+                      ><a href="/reviews/authors/stephen-morris/"
+                        >Stephen Morris</a
+                      ></span
+                    >
+                  </p>
+                  <picture
+                    ><source
+                      srcset="/svg/4-half-stars-dark.svg"
+                      media="(prefers-color-scheme: dark)" />
+                    <img
+                      src="/svg/4-half-stars.svg"
+                      alt="A-: 4.5 stars (out of 5)"
+                      height="18"
+                      width="90"
+                      class="mt-2"
+                  /></picture>
+                </div>
               </li>
-              <li class="relative flex even:bg-subtle">
-                <article
-                  class="mx-auto flex max-w-[960px] flex-col items-center px-pageMargin py-10 tablet:grid tablet:w-full tablet:grid-cols-12 tablet:gap-x-6"
+              <li
+                class="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[14.16666667%]"
+              >
+                <img
+                  srcset="
+                    /_image?/content%2Fassets%2Fcovers%2Fgothic-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;q=80&amp;f=avif   62w,
+                    /_image?/content%2Fassets%2Fcovers%2Fgothic-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;q=80&amp;f=avif 124w,
+                    /_image?/content%2Fassets%2Fcovers%2Fgothic-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;q=80&amp;f=avif 248w,
+                    /_image?/content%2Fassets%2Fcovers%2Fgothic-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;q=80&amp;f=avif 496w
+                  "
+                  src="/_image?/content%2Fassets%2Fcovers%2Fgothic-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
+                  alt="A cover of Gothic by Philip Fracassi"
+                  width="248"
+                  height="372"
+                  loading="lazy"
+                  decoding="async"
+                  style="aspect-ratio: 0.66666667"
+                />
+                <div
+                  class="flex grow flex-col items-center px-[8%] pb-8 pt-2 desktop:pl-[8.5%] desktop:pr-[10%]"
                 >
                   <div
-                    class="whitespace-nowrap text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle tablet:col-span-12 tablet:self-start tablet:leading-8 desktop:absolute desktop:left-[var(--page-margin-width)]"
+                    class="whitespace-nowrap py-2 text-center font-sans text-xxs font-light uppercase leading-4 text-subtle"
                   >
                     30 Jun 2024
-                    <div class="spacer-y-6"></div>
                   </div>
-                  <a
-                    rel="canonical"
-                    href="/reviews/gothic-by-philip-fracassi/"
-                    class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default tablet:col-span-4 tablet:mx-0 tablet:self-start tablet:justify-self-end"
-                    ><img
-                      srcset="
-                        /_image?/content%2Fassets%2Fcovers%2Fgothic-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;q=80&amp;f=avif 1x,
-                        /_image?/content%2Fassets%2Fcovers%2Fgothic-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=352&amp;q=80&amp;f=avif 2x
-                      "
-                      src="/_image?/content%2Fassets%2Fcovers%2Fgothic-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;h=264&amp;q=80&amp;f=avif"
-                      alt="A cover of Gothic by Philip Fracassi"
-                      width="176"
-                      height="264"
-                      loading="lazy"
-                      decoding="async"
-                      style="aspect-ratio: 0.66666667"
-                  /></a>
+                  <div class="text-center text-md font-medium leading-6">
+                    <a
+                      href="/reviews/gothic-by-philip-fracassi/"
+                      rel="canonical"
+                      class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] before:tablet:opacity-15"
+                      >Gothic</a
+                    >
+                  </div>
                   <div
-                    class="flex flex-col items-center tablet:col-span-8 tablet:items-start"
+                    class="font-sans text-xxs font-light uppercase leading-8 tracking-wide text-subtle"
                   >
-                    <div class="spacer-y-4 tablet:spacer-y-0"></div>
-                    <h2
-                      class="text-center text-2.5xl font-bold leading-8 tablet:text-left"
-                    >
-                      <a
-                        href="/reviews/gothic-by-philip-fracassi/"
-                        rel="canonical"
-                        class="inline-block"
-                        >Gothic</a
-                      >
-                    </h2>
-                    <div
-                      class="text-sm font-light uppercase leading-8 tracking-0.75px text-subtle"
-                    >
-                      2023<!-- -->
-                      |
-                      <!-- -->Novel
-                    </div>
-                    <p class="text-center">
-                      by<!-- -->
-                      <span class="text-accent"
-                        ><a href="/reviews/authors/philip-fracassi/"
-                          >Philip Fracassi</a
-                        ></span
-                      >
-                    </p>
-                    <div class="spacer-y-4"></div>
-                    <picture
-                      ><source
-                        srcset="/svg/4-stars-dark.svg"
-                        media="(prefers-color-scheme: dark)" />
-                      <img
-                        src="/svg/4-stars.svg"
-                        alt="B+: 4 stars (out of 5)"
-                        height="24"
-                        width="120"
-                    /></picture>
-                    <div class="spacer-y-4"></div>
-                    <div
-                      class="rendered-markdown font-light max-w-[34rem] text-lg leading-normal tracking-0.3px text-muted"
-                    >
-                      <blockquote>
-                        <p>“It’s like Christine… but wood!”</p>
-                      </blockquote>
-                      <p>
-                        So remarks a character in Philip Fracassi’s meta horror
-                        novel about a haunted desk. And while the statement is
-                        true per se, it doesn’t do justice to Fracassi’s work,
-                        which proves far leaner and meaner than King’s.
-                        <a
-                          class="!no-underline uppercase whitespace-nowrap text-accent text-sm leading-none"
-                          href="/reviews/gothic-by-philip-fracassi/"
-                          >Continue reading...</a
-                        >
-                      </p>
-                    </div>
+                    2023<!-- -->
+                    |
+                    <!-- -->Novel
                   </div>
-                </article>
+                  <p class="text-center text-base font-light text-subtle">
+                    by<!-- -->
+                    <span class="font-normal text-accent"
+                      ><a href="/reviews/authors/philip-fracassi/"
+                        >Philip Fracassi</a
+                      ></span
+                    >
+                  </p>
+                  <picture
+                    ><source
+                      srcset="/svg/4-stars-dark.svg"
+                      media="(prefers-color-scheme: dark)" />
+                    <img
+                      src="/svg/4-stars.svg"
+                      alt="B+: 4 stars (out of 5)"
+                      height="18"
+                      width="90"
+                      class="mt-2"
+                  /></picture>
+                </div>
               </li>
-              <li class="relative flex even:bg-subtle">
-                <article
-                  class="mx-auto flex max-w-[960px] flex-col items-center px-pageMargin py-10 tablet:grid tablet:w-full tablet:grid-cols-12 tablet:gap-x-6"
+              <li
+                class="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[14.16666667%]"
+              >
+                <img
+                  srcset="
+                    /_image?/content%2Fassets%2Fcovers%2Frecord-play-pause-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;q=80&amp;f=avif   62w,
+                    /_image?/content%2Fassets%2Fcovers%2Frecord-play-pause-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;q=80&amp;f=avif 124w,
+                    /_image?/content%2Fassets%2Fcovers%2Frecord-play-pause-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;q=80&amp;f=avif 248w,
+                    /_image?/content%2Fassets%2Fcovers%2Frecord-play-pause-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;q=80&amp;f=avif 496w
+                  "
+                  src="/_image?/content%2Fassets%2Fcovers%2Frecord-play-pause-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
+                  alt="A cover of Record Play Pause by Stephen Morris"
+                  width="248"
+                  height="372"
+                  loading="lazy"
+                  decoding="async"
+                  style="aspect-ratio: 0.66666667"
+                />
+                <div
+                  class="flex grow flex-col items-center px-[8%] pb-8 pt-2 desktop:pl-[8.5%] desktop:pr-[10%]"
                 >
                   <div
-                    class="whitespace-nowrap text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle tablet:col-span-12 tablet:self-start tablet:leading-8 desktop:absolute desktop:left-[var(--page-margin-width)]"
+                    class="whitespace-nowrap py-2 text-center font-sans text-xxs font-light uppercase leading-4 text-subtle"
                   >
                     11 Nov 2023
-                    <div class="spacer-y-6"></div>
                   </div>
-                  <a
-                    rel="canonical"
-                    href="/reviews/record-play-pause-by-stephen-morris/"
-                    class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default tablet:col-span-4 tablet:mx-0 tablet:self-start tablet:justify-self-end"
-                    ><img
-                      srcset="
-                        /_image?/content%2Fassets%2Fcovers%2Frecord-play-pause-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;q=80&amp;f=avif 1x,
-                        /_image?/content%2Fassets%2Fcovers%2Frecord-play-pause-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=352&amp;q=80&amp;f=avif 2x
-                      "
-                      src="/_image?/content%2Fassets%2Fcovers%2Frecord-play-pause-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;h=264&amp;q=80&amp;f=avif"
-                      alt="A cover of Record Play Pause by Stephen Morris"
-                      width="176"
-                      height="264"
-                      loading="lazy"
-                      decoding="async"
-                      style="aspect-ratio: 0.66666667"
-                  /></a>
+                  <div class="text-center text-md font-medium leading-6">
+                    <a
+                      href="/reviews/record-play-pause-by-stephen-morris/"
+                      rel="canonical"
+                      class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] before:tablet:opacity-15"
+                      >Record Play Pause</a
+                    >
+                  </div>
                   <div
-                    class="flex flex-col items-center tablet:col-span-8 tablet:items-start"
+                    class="font-sans text-xxs font-light uppercase leading-8 tracking-wide text-subtle"
                   >
-                    <div class="spacer-y-4 tablet:spacer-y-0"></div>
-                    <h2
-                      class="text-center text-2.5xl font-bold leading-8 tablet:text-left"
-                    >
-                      <a
-                        href="/reviews/record-play-pause-by-stephen-morris/"
-                        rel="canonical"
-                        class="inline-block"
-                        >Record Play Pause</a
-                      >
-                    </h2>
-                    <div
-                      class="text-sm font-light uppercase leading-8 tracking-0.75px text-subtle"
-                    >
-                      2019<!-- -->
-                      |
-                      <!-- -->Nonfiction
-                    </div>
-                    <p class="text-center">
-                      by<!-- -->
-                      <span class="text-accent"
-                        ><a href="/reviews/authors/stephen-morris/"
-                          >Stephen Morris</a
-                        ></span
-                      >
-                    </p>
-                    <div class="spacer-y-4"></div>
-                    <picture
-                      ><source
-                        srcset="/svg/5-stars-dark.svg"
-                        media="(prefers-color-scheme: dark)" />
-                      <img
-                        src="/svg/5-stars.svg"
-                        alt="A: 5 stars (out of 5)"
-                        height="24"
-                        width="120"
-                    /></picture>
-                    <div class="spacer-y-4"></div>
-                    <div
-                      class="rendered-markdown font-light max-w-[34rem] text-lg leading-normal tracking-0.3px text-muted"
-                    >
-                      <p>
-                        Warm, witty, self-deprecating and self-aware, drummer
-                        Stephen Morris’s first volume of memoirs chronicles his
-                        formative years in the Manchester suburb of Macclesfield
-                        through joining Joy Division, its end, and the early
-                        days of New Order.
-                        <a
-                          class="!no-underline uppercase whitespace-nowrap text-accent text-sm leading-none"
-                          href="/reviews/record-play-pause-by-stephen-morris/"
-                          >Continue reading...</a
-                        >
-                      </p>
-                    </div>
+                    2019<!-- -->
+                    |
+                    <!-- -->Nonfiction
                   </div>
-                </article>
+                  <p class="text-center text-base font-light text-subtle">
+                    by<!-- -->
+                    <span class="font-normal text-accent"
+                      ><a href="/reviews/authors/stephen-morris/"
+                        >Stephen Morris</a
+                      ></span
+                    >
+                  </p>
+                  <picture
+                    ><source
+                      srcset="/svg/5-stars-dark.svg"
+                      media="(prefers-color-scheme: dark)" />
+                    <img
+                      src="/svg/5-stars.svg"
+                      alt="A: 5 stars (out of 5)"
+                      height="18"
+                      width="90"
+                      class="mt-2"
+                  /></picture>
+                </div>
               </li>
-              <li class="relative flex even:bg-subtle">
-                <article
-                  class="mx-auto flex max-w-[960px] flex-col items-center px-pageMargin py-10 tablet:grid tablet:w-full tablet:grid-cols-12 tablet:gap-x-6"
+              <li
+                class="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[14.16666667%]"
+              >
+                <img
+                  srcset="
+                    /_image?/content%2Fassets%2Fcovers%2Ffright-night-origins-by-tom-holland-a-jack-ulrich.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;q=80&amp;f=avif   62w,
+                    /_image?/content%2Fassets%2Fcovers%2Ffright-night-origins-by-tom-holland-a-jack-ulrich.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;q=80&amp;f=avif 124w,
+                    /_image?/content%2Fassets%2Fcovers%2Ffright-night-origins-by-tom-holland-a-jack-ulrich.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;q=80&amp;f=avif 248w,
+                    /_image?/content%2Fassets%2Fcovers%2Ffright-night-origins-by-tom-holland-a-jack-ulrich.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;q=80&amp;f=avif 496w
+                  "
+                  src="/_image?/content%2Fassets%2Fcovers%2Ffright-night-origins-by-tom-holland-a-jack-ulrich.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
+                  alt="A cover of Fright Night Origins by Tom Holland and A. Jack Ulrich"
+                  width="248"
+                  height="372"
+                  loading="lazy"
+                  decoding="async"
+                  style="aspect-ratio: 0.66666667"
+                />
+                <div
+                  class="flex grow flex-col items-center px-[8%] pb-8 pt-2 desktop:pl-[8.5%] desktop:pr-[10%]"
                 >
                   <div
-                    class="whitespace-nowrap text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle tablet:col-span-12 tablet:self-start tablet:leading-8 desktop:absolute desktop:left-[var(--page-margin-width)]"
+                    class="whitespace-nowrap py-2 text-center font-sans text-xxs font-light uppercase leading-4 text-subtle"
                   >
                     06 Nov 2023
-                    <div class="spacer-y-6"></div>
                   </div>
-                  <a
-                    rel="canonical"
-                    href="/reviews/fright-night-origins-by-tom-holland-a-jack-ulrich/"
-                    class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default tablet:col-span-4 tablet:mx-0 tablet:self-start tablet:justify-self-end"
-                    ><img
-                      srcset="
-                        /_image?/content%2Fassets%2Fcovers%2Ffright-night-origins-by-tom-holland-a-jack-ulrich.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;q=80&amp;f=avif 1x,
-                        /_image?/content%2Fassets%2Fcovers%2Ffright-night-origins-by-tom-holland-a-jack-ulrich.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=352&amp;q=80&amp;f=avif 2x
-                      "
-                      src="/_image?/content%2Fassets%2Fcovers%2Ffright-night-origins-by-tom-holland-a-jack-ulrich.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;h=264&amp;q=80&amp;f=avif"
-                      alt="A cover of Fright Night Origins by Tom Holland and A. Jack Ulrich"
-                      width="176"
-                      height="264"
-                      loading="lazy"
-                      decoding="async"
-                      style="aspect-ratio: 0.66666667"
-                  /></a>
+                  <div class="text-center text-md font-medium leading-6">
+                    <a
+                      href="/reviews/fright-night-origins-by-tom-holland-a-jack-ulrich/"
+                      rel="canonical"
+                      class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] before:tablet:opacity-15"
+                      >Fright Night Origins</a
+                    >
+                  </div>
                   <div
-                    class="flex flex-col items-center tablet:col-span-8 tablet:items-start"
+                    class="font-sans text-xxs font-light uppercase leading-8 tracking-wide text-subtle"
                   >
-                    <div class="spacer-y-4 tablet:spacer-y-0"></div>
-                    <h2
-                      class="text-center text-2.5xl font-bold leading-8 tablet:text-left"
-                    >
-                      <a
-                        href="/reviews/fright-night-origins-by-tom-holland-a-jack-ulrich/"
-                        rel="canonical"
-                        class="inline-block"
-                        >Fright Night Origins</a
-                      >
-                    </h2>
-                    <div
-                      class="text-sm font-light uppercase leading-8 tracking-0.75px text-subtle"
-                    >
-                      2023<!-- -->
-                      |
-                      <!-- -->Novel
-                    </div>
-                    <p class="text-center">
-                      by<!-- -->
-                      <span class="text-accent"
-                        ><a href="/reviews/authors/tom-holland/"
-                          >Tom Holland</a
-                        ></span
-                      >
-                      and
-                      <span class="text-accent"
-                        ><a href="/reviews/authors/a-jack-ulrich/"
-                          >A. Jack Ulrich</a
-                        ></span
-                      >
-                    </p>
-                    <div class="spacer-y-4"></div>
-                    <picture
-                      ><source
-                        srcset="/svg/3-stars-dark.svg"
-                        media="(prefers-color-scheme: dark)" />
-                      <img
-                        src="/svg/3-stars.svg"
-                        alt="C+: 3 stars (out of 5)"
-                        height="24"
-                        width="120"
-                    /></picture>
-                    <div class="spacer-y-4"></div>
-                    <div
-                      class="rendered-markdown font-light max-w-[34rem] text-lg leading-normal tracking-0.3px text-muted"
-                    >
-                      <p>
-                        Tom Holland, director and screenwriter of the original
-                        <em>Fright Night</em> film, partners with A. Jack Ulrich
-                        to craft an expanded novelization of the film,
-                        proffering more backstory and setting up an expanded
-                        universe and sequel.
-                        <a
-                          class="!no-underline uppercase whitespace-nowrap text-accent text-sm leading-none"
-                          href="/reviews/fright-night-origins-by-tom-holland-a-jack-ulrich/"
-                          >Continue reading...</a
-                        >
-                      </p>
-                    </div>
+                    2023<!-- -->
+                    |
+                    <!-- -->Novel
                   </div>
-                </article>
+                  <p class="text-center text-base font-light text-subtle">
+                    by<!-- -->
+                    <span class="font-normal text-accent"
+                      ><a href="/reviews/authors/tom-holland/"
+                        >Tom Holland</a
+                      ></span
+                    >
+                    and
+                    <span class="font-normal text-accent"
+                      ><a href="/reviews/authors/a-jack-ulrich/"
+                        >A. Jack Ulrich</a
+                      ></span
+                    >
+                  </p>
+                  <picture
+                    ><source
+                      srcset="/svg/3-stars-dark.svg"
+                      media="(prefers-color-scheme: dark)" />
+                    <img
+                      src="/svg/3-stars.svg"
+                      alt="C+: 3 stars (out of 5)"
+                      height="18"
+                      width="90"
+                      class="mt-2"
+                  /></picture>
+                </div>
               </li>
-              <li class="relative flex even:bg-subtle">
-                <article
-                  class="mx-auto flex max-w-[960px] flex-col items-center px-pageMargin py-10 tablet:grid tablet:w-full tablet:grid-cols-12 tablet:gap-x-6"
+              <li
+                class="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[14.16666667%]"
+              >
+                <img
+                  srcset="
+                    /_image?/content%2Fassets%2Fcovers%2Fdont-let-them-get-you-down-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;q=80&amp;f=avif   62w,
+                    /_image?/content%2Fassets%2Fcovers%2Fdont-let-them-get-you-down-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;q=80&amp;f=avif 124w,
+                    /_image?/content%2Fassets%2Fcovers%2Fdont-let-them-get-you-down-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;q=80&amp;f=avif 248w,
+                    /_image?/content%2Fassets%2Fcovers%2Fdont-let-them-get-you-down-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;q=80&amp;f=avif 496w
+                  "
+                  src="/_image?/content%2Fassets%2Fcovers%2Fdont-let-them-get-you-down-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
+                  alt="A cover of Don&#x27;t Let Them Get You Down by Philip Fracassi"
+                  width="248"
+                  height="372"
+                  loading="lazy"
+                  decoding="async"
+                  style="aspect-ratio: 0.66666667"
+                />
+                <div
+                  class="flex grow flex-col items-center px-[8%] pb-8 pt-2 desktop:pl-[8.5%] desktop:pr-[10%]"
                 >
                   <div
-                    class="whitespace-nowrap text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle tablet:col-span-12 tablet:self-start tablet:leading-8 desktop:absolute desktop:left-[var(--page-margin-width)]"
+                    class="whitespace-nowrap py-2 text-center font-sans text-xxs font-light uppercase leading-4 text-subtle"
                   >
                     29 Oct 2023
-                    <div class="spacer-y-6"></div>
                   </div>
-                  <a
-                    rel="canonical"
-                    href="/reviews/dont-let-them-get-you-down-by-philip-fracassi/"
-                    class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default tablet:col-span-4 tablet:mx-0 tablet:self-start tablet:justify-self-end"
-                    ><img
-                      srcset="
-                        /_image?/content%2Fassets%2Fcovers%2Fdont-let-them-get-you-down-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;q=80&amp;f=avif 1x,
-                        /_image?/content%2Fassets%2Fcovers%2Fdont-let-them-get-you-down-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=352&amp;q=80&amp;f=avif 2x
-                      "
-                      src="/_image?/content%2Fassets%2Fcovers%2Fdont-let-them-get-you-down-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;h=264&amp;q=80&amp;f=avif"
-                      alt="A cover of Don&#x27;t Let Them Get You Down by Philip Fracassi"
-                      width="176"
-                      height="264"
-                      loading="lazy"
-                      decoding="async"
-                      style="aspect-ratio: 0.66666667"
-                  /></a>
+                  <div class="text-center text-md font-medium leading-6">
+                    <a
+                      href="/reviews/dont-let-them-get-you-down-by-philip-fracassi/"
+                      rel="canonical"
+                      class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] before:tablet:opacity-15"
+                      >Don&#x27;t Let Them Get You Down</a
+                    >
+                  </div>
                   <div
-                    class="flex flex-col items-center tablet:col-span-8 tablet:items-start"
+                    class="font-sans text-xxs font-light uppercase leading-8 tracking-wide text-subtle"
                   >
-                    <div class="spacer-y-4 tablet:spacer-y-0"></div>
-                    <h2
-                      class="text-center text-2.5xl font-bold leading-8 tablet:text-left"
-                    >
-                      <a
-                        href="/reviews/dont-let-them-get-you-down-by-philip-fracassi/"
-                        rel="canonical"
-                        class="inline-block"
-                        >Don&#x27;t Let Them Get You Down</a
-                      >
-                    </h2>
-                    <div
-                      class="text-sm font-light uppercase leading-8 tracking-0.75px text-subtle"
-                    >
-                      2022<!-- -->
-                      |
-                      <!-- -->Novel
-                    </div>
-                    <p class="text-center">
-                      by<!-- -->
-                      <span class="text-accent"
-                        ><a href="/reviews/authors/philip-fracassi/"
-                          >Philip Fracassi</a
-                        ></span
-                      >
-                    </p>
-                    <div class="spacer-y-4"></div>
-                    <picture
-                      ><source
-                        srcset="/svg/2-half-stars-dark.svg"
-                        media="(prefers-color-scheme: dark)" />
-                      <img
-                        src="/svg/2-half-stars.svg"
-                        alt="C-: 2.5 stars (out of 5)"
-                        height="24"
-                        width="120"
-                    /></picture>
-                    <div class="spacer-y-4"></div>
-                    <div
-                      class="rendered-markdown font-light max-w-[34rem] text-lg leading-normal tracking-0.3px text-muted"
-                    >
-                      <p>
-                        <em>Don’t Let Them Get You Down</em> follows Peter, a
-                        copywriter for a medical website, struggling to hold his
-                        life together while battling a spiraling depression
-                        triggered by his wife’s cancer death two years prior.
-                        <a
-                          class="!no-underline uppercase whitespace-nowrap text-accent text-sm leading-none"
-                          href="/reviews/dont-let-them-get-you-down-by-philip-fracassi/"
-                          >Continue reading...</a
-                        >
-                      </p>
-                    </div>
+                    2022<!-- -->
+                    |
+                    <!-- -->Novel
                   </div>
-                </article>
+                  <p class="text-center text-base font-light text-subtle">
+                    by<!-- -->
+                    <span class="font-normal text-accent"
+                      ><a href="/reviews/authors/philip-fracassi/"
+                        >Philip Fracassi</a
+                      ></span
+                    >
+                  </p>
+                  <picture
+                    ><source
+                      srcset="/svg/2-half-stars-dark.svg"
+                      media="(prefers-color-scheme: dark)" />
+                    <img
+                      src="/svg/2-half-stars.svg"
+                      alt="C-: 2.5 stars (out of 5)"
+                      height="18"
+                      width="90"
+                      class="mt-2"
+                  /></picture>
+                </div>
               </li>
-              <li class="relative flex even:bg-subtle">
-                <article
-                  class="mx-auto flex max-w-[960px] flex-col items-center px-pageMargin py-10 tablet:grid tablet:w-full tablet:grid-cols-12 tablet:gap-x-6"
+              <li
+                class="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[14.16666667%]"
+              >
+                <img
+                  srcset="
+                    /_image?/content%2Fassets%2Fcovers%2Fthe-creative-act-by-rick-rubin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;q=80&amp;f=avif   62w,
+                    /_image?/content%2Fassets%2Fcovers%2Fthe-creative-act-by-rick-rubin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;q=80&amp;f=avif 124w,
+                    /_image?/content%2Fassets%2Fcovers%2Fthe-creative-act-by-rick-rubin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;q=80&amp;f=avif 248w,
+                    /_image?/content%2Fassets%2Fcovers%2Fthe-creative-act-by-rick-rubin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;q=80&amp;f=avif 496w
+                  "
+                  src="/_image?/content%2Fassets%2Fcovers%2Fthe-creative-act-by-rick-rubin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
+                  alt="A cover of The Creative Act by Rick Rubin"
+                  width="248"
+                  height="372"
+                  loading="lazy"
+                  decoding="async"
+                  style="aspect-ratio: 0.66666667"
+                />
+                <div
+                  class="flex grow flex-col items-center px-[8%] pb-8 pt-2 desktop:pl-[8.5%] desktop:pr-[10%]"
                 >
                   <div
-                    class="whitespace-nowrap text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle tablet:col-span-12 tablet:self-start tablet:leading-8 desktop:absolute desktop:left-[var(--page-margin-width)]"
+                    class="whitespace-nowrap py-2 text-center font-sans text-xxs font-light uppercase leading-4 text-subtle"
                   >
                     22 Oct 2023
-                    <div class="spacer-y-6"></div>
                   </div>
-                  <a
-                    rel="canonical"
-                    href="/reviews/the-creative-act-by-rick-rubin/"
-                    class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default tablet:col-span-4 tablet:mx-0 tablet:self-start tablet:justify-self-end"
-                    ><img
-                      srcset="
-                        /_image?/content%2Fassets%2Fcovers%2Fthe-creative-act-by-rick-rubin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;q=80&amp;f=avif 1x,
-                        /_image?/content%2Fassets%2Fcovers%2Fthe-creative-act-by-rick-rubin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=352&amp;q=80&amp;f=avif 2x
-                      "
-                      src="/_image?/content%2Fassets%2Fcovers%2Fthe-creative-act-by-rick-rubin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;h=264&amp;q=80&amp;f=avif"
-                      alt="A cover of The Creative Act by Rick Rubin"
-                      width="176"
-                      height="264"
-                      loading="lazy"
-                      decoding="async"
-                      style="aspect-ratio: 0.66666667"
-                  /></a>
+                  <div class="text-center text-md font-medium leading-6">
+                    <a
+                      href="/reviews/the-creative-act-by-rick-rubin/"
+                      rel="canonical"
+                      class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] before:tablet:opacity-15"
+                      >The Creative Act</a
+                    >
+                  </div>
                   <div
-                    class="flex flex-col items-center tablet:col-span-8 tablet:items-start"
+                    class="font-sans text-xxs font-light uppercase leading-8 tracking-wide text-subtle"
                   >
-                    <div class="spacer-y-4 tablet:spacer-y-0"></div>
-                    <h2
-                      class="text-center text-2.5xl font-bold leading-8 tablet:text-left"
-                    >
-                      <a
-                        href="/reviews/the-creative-act-by-rick-rubin/"
-                        rel="canonical"
-                        class="inline-block"
-                        >The Creative Act</a
-                      >
-                    </h2>
-                    <div
-                      class="text-sm font-light uppercase leading-8 tracking-0.75px text-subtle"
-                    >
-                      2023<!-- -->
-                      |
-                      <!-- -->Nonfiction
-                    </div>
-                    <p class="text-center">
-                      by<!-- -->
-                      <span class="text-accent"
-                        ><a href="/reviews/authors/rick-rubin/"
-                          >Rick Rubin</a
-                        ></span
-                      >
-                    </p>
-                    <div class="spacer-y-4"></div>
-                    <picture
-                      ><source
-                        srcset="/svg/3-stars-dark.svg"
-                        media="(prefers-color-scheme: dark)" />
-                      <img
-                        src="/svg/3-stars.svg"
-                        alt="C+: 3 stars (out of 5)"
-                        height="24"
-                        width="120"
-                    /></picture>
-                    <div class="spacer-y-4"></div>
-                    <div
-                      class="rendered-markdown font-light max-w-[34rem] text-lg leading-normal tracking-0.3px text-muted"
-                    >
-                      <p>
-                        Rick Rubin, the famed music producer of such disparate
-                        acts as the Beastie Boys, Slayer, Tom Petty, and Johnny
-                        Cash, proffers a meditation on creativity.
-                        <a
-                          class="!no-underline uppercase whitespace-nowrap text-accent text-sm leading-none"
-                          href="/reviews/the-creative-act-by-rick-rubin/"
-                          >Continue reading...</a
-                        >
-                      </p>
-                    </div>
+                    2023<!-- -->
+                    |
+                    <!-- -->Nonfiction
                   </div>
-                </article>
+                  <p class="text-center text-base font-light text-subtle">
+                    by<!-- -->
+                    <span class="font-normal text-accent"
+                      ><a href="/reviews/authors/rick-rubin/"
+                        >Rick Rubin</a
+                      ></span
+                    >
+                  </p>
+                  <picture
+                    ><source
+                      srcset="/svg/3-stars-dark.svg"
+                      media="(prefers-color-scheme: dark)" />
+                    <img
+                      src="/svg/3-stars.svg"
+                      alt="C+: 3 stars (out of 5)"
+                      height="18"
+                      width="90"
+                      class="mt-2"
+                  /></picture>
+                </div>
               </li>
-              <li class="relative flex even:bg-subtle">
-                <article
-                  class="mx-auto flex max-w-[960px] flex-col items-center px-pageMargin py-10 tablet:grid tablet:w-full tablet:grid-cols-12 tablet:gap-x-6"
+              <li
+                class="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[14.16666667%]"
+              >
+                <img
+                  srcset="
+                    /_image?/content%2Fassets%2Fcovers%2Fsacculina-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;q=80&amp;f=avif   62w,
+                    /_image?/content%2Fassets%2Fcovers%2Fsacculina-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;q=80&amp;f=avif 124w,
+                    /_image?/content%2Fassets%2Fcovers%2Fsacculina-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;q=80&amp;f=avif 248w,
+                    /_image?/content%2Fassets%2Fcovers%2Fsacculina-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;q=80&amp;f=avif 496w
+                  "
+                  src="/_image?/content%2Fassets%2Fcovers%2Fsacculina-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
+                  alt="A cover of Sacculina by Philip Fracassi"
+                  width="248"
+                  height="372"
+                  loading="lazy"
+                  decoding="async"
+                  style="aspect-ratio: 0.66666667"
+                />
+                <div
+                  class="flex grow flex-col items-center px-[8%] pb-8 pt-2 desktop:pl-[8.5%] desktop:pr-[10%]"
                 >
                   <div
-                    class="whitespace-nowrap text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle tablet:col-span-12 tablet:self-start tablet:leading-8 desktop:absolute desktop:left-[var(--page-margin-width)]"
+                    class="whitespace-nowrap py-2 text-center font-sans text-xxs font-light uppercase leading-4 text-subtle"
                   >
                     09 Oct 2023
-                    <div class="spacer-y-6"></div>
                   </div>
-                  <a
-                    rel="canonical"
-                    href="/reviews/sacculina-by-philip-fracassi/"
-                    class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default tablet:col-span-4 tablet:mx-0 tablet:self-start tablet:justify-self-end"
-                    ><img
-                      srcset="
-                        /_image?/content%2Fassets%2Fcovers%2Fsacculina-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;q=80&amp;f=avif 1x,
-                        /_image?/content%2Fassets%2Fcovers%2Fsacculina-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=352&amp;q=80&amp;f=avif 2x
-                      "
-                      src="/_image?/content%2Fassets%2Fcovers%2Fsacculina-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;h=264&amp;q=80&amp;f=avif"
-                      alt="A cover of Sacculina by Philip Fracassi"
-                      width="176"
-                      height="264"
-                      loading="lazy"
-                      decoding="async"
-                      style="aspect-ratio: 0.66666667"
-                  /></a>
+                  <div class="text-center text-md font-medium leading-6">
+                    <a
+                      href="/reviews/sacculina-by-philip-fracassi/"
+                      rel="canonical"
+                      class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] before:tablet:opacity-15"
+                      >Sacculina</a
+                    >
+                  </div>
                   <div
-                    class="flex flex-col items-center tablet:col-span-8 tablet:items-start"
+                    class="font-sans text-xxs font-light uppercase leading-8 tracking-wide text-subtle"
                   >
-                    <div class="spacer-y-4 tablet:spacer-y-0"></div>
-                    <h2
-                      class="text-center text-2.5xl font-bold leading-8 tablet:text-left"
-                    >
-                      <a
-                        href="/reviews/sacculina-by-philip-fracassi/"
-                        rel="canonical"
-                        class="inline-block"
-                        >Sacculina</a
-                      >
-                    </h2>
-                    <div
-                      class="text-sm font-light uppercase leading-8 tracking-0.75px text-subtle"
-                    >
-                      2017<!-- -->
-                      |
-                      <!-- -->Novella
-                    </div>
-                    <p class="text-center">
-                      by<!-- -->
-                      <span class="text-accent"
-                        ><a href="/reviews/authors/philip-fracassi/"
-                          >Philip Fracassi</a
-                        ></span
-                      >
-                    </p>
-                    <div class="spacer-y-4"></div>
-                    <picture
-                      ><source
-                        srcset="/svg/4-stars-dark.svg"
-                        media="(prefers-color-scheme: dark)" />
-                      <img
-                        src="/svg/4-stars.svg"
-                        alt="B: 4 stars (out of 5)"
-                        height="24"
-                        width="120"
-                    /></picture>
-                    <div class="spacer-y-4"></div>
-                    <div
-                      class="rendered-markdown font-light max-w-[34rem] text-lg leading-normal tracking-0.3px text-muted"
-                    >
-                      <p>
-                        To celebrate Jim’s older brother Jack’s release
-                        following a six-year prison stint, the brothers, their
-                        father Henry, and Jack’s hulking best friend Chris,
-                        charter a fishing boat in the Pacific. The choppy seas
-                        don’t bode well for an outing, but the group presses
-                        ahead, and their grizzled captain takes them a few miles
-                        offshore to a deep spot good for fishing. But the men
-                        soon realize they’re under threat by an unknown,
-                        overwhelming assailant—and how alone they are at sea.
-                        <a
-                          class="!no-underline uppercase whitespace-nowrap text-accent text-sm leading-none"
-                          href="/reviews/sacculina-by-philip-fracassi/"
-                          >Continue reading...</a
-                        >
-                      </p>
-                    </div>
+                    2017<!-- -->
+                    |
+                    <!-- -->Novella
                   </div>
-                </article>
+                  <p class="text-center text-base font-light text-subtle">
+                    by<!-- -->
+                    <span class="font-normal text-accent"
+                      ><a href="/reviews/authors/philip-fracassi/"
+                        >Philip Fracassi</a
+                      ></span
+                    >
+                  </p>
+                  <picture
+                    ><source
+                      srcset="/svg/4-stars-dark.svg"
+                      media="(prefers-color-scheme: dark)" />
+                    <img
+                      src="/svg/4-stars.svg"
+                      alt="B: 4 stars (out of 5)"
+                      height="18"
+                      width="90"
+                      class="mt-2"
+                  /></picture>
+                </div>
               </li>
-              <li class="relative flex even:bg-subtle">
-                <article
-                  class="mx-auto flex max-w-[960px] flex-col items-center px-pageMargin py-10 tablet:grid tablet:w-full tablet:grid-cols-12 tablet:gap-x-6"
+              <li
+                class="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[14.16666667%]"
+              >
+                <img
+                  srcset="
+                    /_image?/content%2Fassets%2Fcovers%2Fthe-cipher-by-kathe-koja.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;q=80&amp;f=avif   62w,
+                    /_image?/content%2Fassets%2Fcovers%2Fthe-cipher-by-kathe-koja.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;q=80&amp;f=avif 124w,
+                    /_image?/content%2Fassets%2Fcovers%2Fthe-cipher-by-kathe-koja.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;q=80&amp;f=avif 248w,
+                    /_image?/content%2Fassets%2Fcovers%2Fthe-cipher-by-kathe-koja.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;q=80&amp;f=avif 496w
+                  "
+                  src="/_image?/content%2Fassets%2Fcovers%2Fthe-cipher-by-kathe-koja.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
+                  alt="A cover of The Cipher by Kathe Koja"
+                  width="248"
+                  height="372"
+                  loading="lazy"
+                  decoding="async"
+                  style="aspect-ratio: 0.66666667"
+                />
+                <div
+                  class="flex grow flex-col items-center px-[8%] pb-8 pt-2 desktop:pl-[8.5%] desktop:pr-[10%]"
                 >
                   <div
-                    class="whitespace-nowrap text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle tablet:col-span-12 tablet:self-start tablet:leading-8 desktop:absolute desktop:left-[var(--page-margin-width)]"
+                    class="whitespace-nowrap py-2 text-center font-sans text-xxs font-light uppercase leading-4 text-subtle"
                   >
                     29 Jan 2023
-                    <div class="spacer-y-6"></div>
                   </div>
-                  <a
-                    rel="canonical"
-                    href="/reviews/the-cipher-by-kathe-koja/"
-                    class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default tablet:col-span-4 tablet:mx-0 tablet:self-start tablet:justify-self-end"
-                    ><img
-                      srcset="
-                        /_image?/content%2Fassets%2Fcovers%2Fthe-cipher-by-kathe-koja.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;q=80&amp;f=avif 1x,
-                        /_image?/content%2Fassets%2Fcovers%2Fthe-cipher-by-kathe-koja.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=352&amp;q=80&amp;f=avif 2x
-                      "
-                      src="/_image?/content%2Fassets%2Fcovers%2Fthe-cipher-by-kathe-koja.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;h=264&amp;q=80&amp;f=avif"
-                      alt="A cover of The Cipher by Kathe Koja"
-                      width="176"
-                      height="264"
-                      loading="lazy"
-                      decoding="async"
-                      style="aspect-ratio: 0.66666667"
-                  /></a>
+                  <div class="text-center text-md font-medium leading-6">
+                    <a
+                      href="/reviews/the-cipher-by-kathe-koja/"
+                      rel="canonical"
+                      class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] before:tablet:opacity-15"
+                      >The Cipher</a
+                    >
+                  </div>
                   <div
-                    class="flex flex-col items-center tablet:col-span-8 tablet:items-start"
+                    class="font-sans text-xxs font-light uppercase leading-8 tracking-wide text-subtle"
                   >
-                    <div class="spacer-y-4 tablet:spacer-y-0"></div>
-                    <h2
-                      class="text-center text-2.5xl font-bold leading-8 tablet:text-left"
-                    >
-                      <a
-                        href="/reviews/the-cipher-by-kathe-koja/"
-                        rel="canonical"
-                        class="inline-block"
-                        >The Cipher</a
-                      >
-                    </h2>
-                    <div
-                      class="text-sm font-light uppercase leading-8 tracking-0.75px text-subtle"
-                    >
-                      1991<!-- -->
-                      |
-                      <!-- -->Novel
-                    </div>
-                    <p class="text-center">
-                      by<!-- -->
-                      <span class="text-accent"
-                        ><a href="/reviews/authors/kathe-koja/"
-                          >Kathe Koja</a
-                        ></span
-                      >
-                    </p>
-                    <div class="spacer-y-4"></div>
-                    <picture
-                      ><source
-                        srcset="/svg/4-stars-dark.svg"
-                        media="(prefers-color-scheme: dark)" />
-                      <img
-                        src="/svg/4-stars.svg"
-                        alt="B: 4 stars (out of 5)"
-                        height="24"
-                        width="120"
-                    /></picture>
-                    <div class="spacer-y-4"></div>
-                    <div
-                      class="rendered-markdown font-light max-w-[34rem] text-lg leading-normal tracking-0.3px text-muted"
-                    >
-                      <p>
-                        How to describe <em>The Cipher</em>? The plot concerns
-                        Nicholas, an aimless twenty-something drifting through
-                        life, who discovers a mysterious hole inside a disused
-                        storage room in his derelict apartment building. Weird
-                        things ensue.
-                        <a
-                          class="!no-underline uppercase whitespace-nowrap text-accent text-sm leading-none"
-                          href="/reviews/the-cipher-by-kathe-koja/"
-                          >Continue reading...</a
-                        >
-                      </p>
-                    </div>
+                    1991<!-- -->
+                    |
+                    <!-- -->Novel
                   </div>
-                </article>
+                  <p class="text-center text-base font-light text-subtle">
+                    by<!-- -->
+                    <span class="font-normal text-accent"
+                      ><a href="/reviews/authors/kathe-koja/"
+                        >Kathe Koja</a
+                      ></span
+                    >
+                  </p>
+                  <picture
+                    ><source
+                      srcset="/svg/4-stars-dark.svg"
+                      media="(prefers-color-scheme: dark)" />
+                    <img
+                      src="/svg/4-stars.svg"
+                      alt="B: 4 stars (out of 5)"
+                      height="18"
+                      width="90"
+                      class="mt-2"
+                  /></picture>
+                </div>
               </li>
-              <li class="relative flex even:bg-subtle">
-                <article
-                  class="mx-auto flex max-w-[960px] flex-col items-center px-pageMargin py-10 tablet:grid tablet:w-full tablet:grid-cols-12 tablet:gap-x-6"
+              <li
+                class="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[14.16666667%]"
+              >
+                <img
+                  srcset="
+                    /_image?/content%2Fassets%2Fcovers%2Fshort-stories-volume-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;q=80&amp;f=avif   62w,
+                    /_image?/content%2Fassets%2Fcovers%2Fshort-stories-volume-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;q=80&amp;f=avif 124w,
+                    /_image?/content%2Fassets%2Fcovers%2Fshort-stories-volume-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;q=80&amp;f=avif 248w,
+                    /_image?/content%2Fassets%2Fcovers%2Fshort-stories-volume-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;q=80&amp;f=avif 496w
+                  "
+                  src="/_image?/content%2Fassets%2Fcovers%2Fshort-stories-volume-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
+                  alt="A cover of Roadside Pickup by Richard Laymon"
+                  width="248"
+                  height="372"
+                  loading="lazy"
+                  decoding="async"
+                  style="aspect-ratio: 0.66666667"
+                />
+                <div
+                  class="flex grow flex-col items-center px-[8%] pb-8 pt-2 desktop:pl-[8.5%] desktop:pr-[10%]"
                 >
                   <div
-                    class="whitespace-nowrap text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle tablet:col-span-12 tablet:self-start tablet:leading-8 desktop:absolute desktop:left-[var(--page-margin-width)]"
+                    class="whitespace-nowrap py-2 text-center font-sans text-xxs font-light uppercase leading-4 text-subtle"
                   >
                     21 Jan 2023
-                    <div class="spacer-y-6"></div>
                   </div>
-                  <a
-                    rel="canonical"
-                    href="/reviews/roadside-pickup-by-richard-laymon/"
-                    class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default tablet:col-span-4 tablet:mx-0 tablet:self-start tablet:justify-self-end"
-                    ><img
-                      srcset="
-                        /_image?/content%2Fassets%2Fcovers%2Fshort-stories-volume-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;q=80&amp;f=avif 1x,
-                        /_image?/content%2Fassets%2Fcovers%2Fshort-stories-volume-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=352&amp;q=80&amp;f=avif 2x
-                      "
-                      src="/_image?/content%2Fassets%2Fcovers%2Fshort-stories-volume-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;h=264&amp;q=80&amp;f=avif"
-                      alt="A cover of Roadside Pickup by Richard Laymon"
-                      width="176"
-                      height="264"
-                      loading="lazy"
-                      decoding="async"
-                      style="aspect-ratio: 0.66666667"
-                  /></a>
+                  <div class="text-center text-md font-medium leading-6">
+                    <a
+                      href="/reviews/roadside-pickup-by-richard-laymon/"
+                      rel="canonical"
+                      class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] before:tablet:opacity-15"
+                      >Roadside Pickup</a
+                    >
+                  </div>
                   <div
-                    class="flex flex-col items-center tablet:col-span-8 tablet:items-start"
+                    class="font-sans text-xxs font-light uppercase leading-8 tracking-wide text-subtle"
                   >
-                    <div class="spacer-y-4 tablet:spacer-y-0"></div>
-                    <h2
-                      class="text-center text-2.5xl font-bold leading-8 tablet:text-left"
-                    >
-                      <a
-                        href="/reviews/roadside-pickup-by-richard-laymon/"
-                        rel="canonical"
-                        class="inline-block"
-                        >Roadside Pickup</a
-                      >
-                    </h2>
-                    <div
-                      class="text-sm font-light uppercase leading-8 tracking-0.75px text-subtle"
-                    >
-                      1974<!-- -->
-                      |
-                      <!-- -->Short Story
-                    </div>
-                    <p class="text-center">
-                      by<!-- -->
-                      <span class="text-accent"
-                        ><a href="/reviews/authors/richard-laymon/"
-                          >Richard Laymon</a
-                        ></span
-                      >
-                    </p>
-                    <div class="spacer-y-4"></div>
-                    <picture
-                      ><source
-                        srcset="/svg/2-half-stars-dark.svg"
-                        media="(prefers-color-scheme: dark)" />
-                      <img
-                        src="/svg/2-half-stars.svg"
-                        alt="C-: 2.5 stars (out of 5)"
-                        height="24"
-                        width="120"
-                    /></picture>
-                    <div class="spacer-y-4"></div>
-                    <div
-                      class="rendered-markdown font-light max-w-[34rem] text-lg leading-normal tracking-0.3px text-muted"
-                    >
-                      <p>
-                        Early morning darkness. Colleen sits stranded in her
-                        car. Three hours have produced three cars. None have
-                        stopped. But the fourth does. A young man with
-                        fashionable clothes and booze on his breath. Won’t she
-                        let him give her a ride?
-                      </p>
-                      <p>
-                        Laymon’s second published story proffers a predictable
-                        twist, but at under two thousand words, it doesn’t drag.
-                      </p>
-                    </div>
+                    1974<!-- -->
+                    |
+                    <!-- -->Short Story
                   </div>
-                </article>
+                  <p class="text-center text-base font-light text-subtle">
+                    by<!-- -->
+                    <span class="font-normal text-accent"
+                      ><a href="/reviews/authors/richard-laymon/"
+                        >Richard Laymon</a
+                      ></span
+                    >
+                  </p>
+                  <picture
+                    ><source
+                      srcset="/svg/2-half-stars-dark.svg"
+                      media="(prefers-color-scheme: dark)" />
+                    <img
+                      src="/svg/2-half-stars.svg"
+                      alt="C-: 2.5 stars (out of 5)"
+                      height="18"
+                      width="90"
+                      class="mt-2"
+                  /></picture>
+                </div>
               </li>
-              <li class="relative flex even:bg-subtle">
-                <article
-                  class="mx-auto flex max-w-[960px] flex-col items-center px-pageMargin py-10 tablet:grid tablet:w-full tablet:grid-cols-12 tablet:gap-x-6"
+              <li
+                class="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[14.16666667%]"
+              >
+                <img
+                  srcset="
+                    /_image?/content%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;q=80&amp;f=avif   62w,
+                    /_image?/content%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;q=80&amp;f=avif 124w,
+                    /_image?/content%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;q=80&amp;f=avif 248w,
+                    /_image?/content%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;q=80&amp;f=avif 496w
+                  "
+                  src="/_image?/content%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
+                  alt="A cover of Fright Night by John Skipp and Craig Spector"
+                  width="248"
+                  height="372"
+                  loading="lazy"
+                  decoding="async"
+                  style="aspect-ratio: 0.66666667"
+                />
+                <div
+                  class="flex grow flex-col items-center px-[8%] pb-8 pt-2 desktop:pl-[8.5%] desktop:pr-[10%]"
                 >
                   <div
-                    class="whitespace-nowrap text-center text-sm font-light uppercase leading-4 tracking-0.75px text-subtle tablet:col-span-12 tablet:self-start tablet:leading-8 desktop:absolute desktop:left-[var(--page-margin-width)]"
+                    class="whitespace-nowrap py-2 text-center font-sans text-xxs font-light uppercase leading-4 text-subtle"
                   >
                     21 Jan 2023
-                    <div class="spacer-y-6"></div>
                   </div>
-                  <a
-                    rel="canonical"
-                    href="/reviews/fright-night-by-john-skipp-craig-spector/"
-                    class="cover-clip-path mx-auto block max-w-prose border-8 border-solid border-default bg-default tablet:col-span-4 tablet:mx-0 tablet:self-start tablet:justify-self-end"
-                    ><img
-                      srcset="
-                        /_image?/content%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;q=80&amp;f=avif 1x,
-                        /_image?/content%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=352&amp;q=80&amp;f=avif 2x
-                      "
-                      src="/_image?/content%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;h=264&amp;q=80&amp;f=avif"
-                      alt="A cover of Fright Night by John Skipp and Craig Spector"
-                      width="176"
-                      height="264"
-                      loading="lazy"
-                      decoding="async"
-                      style="aspect-ratio: 0.66666667"
-                  /></a>
+                  <div class="text-center text-md font-medium leading-6">
+                    <a
+                      href="/reviews/fright-night-by-john-skipp-craig-spector/"
+                      rel="canonical"
+                      class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] before:tablet:opacity-15"
+                      >Fright Night</a
+                    >
+                  </div>
                   <div
-                    class="flex flex-col items-center tablet:col-span-8 tablet:items-start"
+                    class="font-sans text-xxs font-light uppercase leading-8 tracking-wide text-subtle"
                   >
-                    <div class="spacer-y-4 tablet:spacer-y-0"></div>
-                    <h2
-                      class="text-center text-2.5xl font-bold leading-8 tablet:text-left"
-                    >
-                      <a
-                        href="/reviews/fright-night-by-john-skipp-craig-spector/"
-                        rel="canonical"
-                        class="inline-block"
-                        >Fright Night</a
-                      >
-                    </h2>
-                    <div
-                      class="text-sm font-light uppercase leading-8 tracking-0.75px text-subtle"
-                    >
-                      1985<!-- -->
-                      |
-                      <!-- -->Novel
-                    </div>
-                    <p class="text-center">
-                      by<!-- -->
-                      <span class="text-accent"
-                        ><a href="/reviews/authors/john-skipp/"
-                          >John Skipp</a
-                        ></span
-                      >
-                      and
-                      <span class="text-accent"
-                        ><a href="/reviews/authors/craig-spector/"
-                          >Craig Spector</a
-                        ></span
-                      >
-                    </p>
-                    <div class="spacer-y-4"></div>
-                    <picture
-                      ><source
-                        srcset="/svg/1-star-dark.svg"
-                        media="(prefers-color-scheme: dark)" />
-                      <img
-                        src="/svg/1-star.svg"
-                        alt="F: 1 star (out of 5)"
-                        height="24"
-                        width="120"
-                    /></picture>
-                    <div class="spacer-y-4"></div>
-                    <div
-                      class="rendered-markdown font-light max-w-[34rem] text-lg leading-normal tracking-0.3px text-muted"
-                    >
-                      <p>
-                        During a late-night make-out session with his
-                        girlfriend, high-schooler Charlie Brewster spies two men
-                        carrying a coffin into the basement of the house
-                        next-door. Charlie soon discovers his suave new
-                        neighbor, Jerry Dandrige, has fangs. When the police
-                        don’t believe him, Charlie appeals to the local
-                        creature-feature host, washed up horror icon Peter
-                        Vincent, for help.
-                        <a
-                          class="!no-underline uppercase whitespace-nowrap text-accent text-sm leading-none"
-                          href="/reviews/fright-night-by-john-skipp-craig-spector/"
-                          >Continue reading...</a
-                        >
-                      </p>
-                    </div>
+                    1985<!-- -->
+                    |
+                    <!-- -->Novel
                   </div>
-                </article>
+                  <p class="text-center text-base font-light text-subtle">
+                    by<!-- -->
+                    <span class="font-normal text-accent"
+                      ><a href="/reviews/authors/john-skipp/"
+                        >John Skipp</a
+                      ></span
+                    >
+                    and
+                    <span class="font-normal text-accent"
+                      ><a href="/reviews/authors/craig-spector/"
+                        >Craig Spector</a
+                      ></span
+                    >
+                  </p>
+                  <picture
+                    ><source
+                      srcset="/svg/1-star-dark.svg"
+                      media="(prefers-color-scheme: dark)" />
+                    <img
+                      src="/svg/1-star.svg"
+                      alt="F: 1 star (out of 5)"
+                      height="18"
+                      width="90"
+                      class="mt-2"
+                  /></picture>
+                </div>
+              </li>
+              <li
+                class="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[14.16666667%]"
+              >
+                <img
+                  srcset="
+                    /_image?/content%2Fassets%2Fcovers%2Fdoctor-sleep-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;q=80&amp;f=avif   62w,
+                    /_image?/content%2Fassets%2Fcovers%2Fdoctor-sleep-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;q=80&amp;f=avif 124w,
+                    /_image?/content%2Fassets%2Fcovers%2Fdoctor-sleep-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;q=80&amp;f=avif 248w,
+                    /_image?/content%2Fassets%2Fcovers%2Fdoctor-sleep-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;q=80&amp;f=avif 496w
+                  "
+                  src="/_image?/content%2Fassets%2Fcovers%2Fdoctor-sleep-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
+                  alt="A cover of Doctor Sleep by Stephen King"
+                  width="248"
+                  height="372"
+                  loading="lazy"
+                  decoding="async"
+                  style="aspect-ratio: 0.66666667"
+                />
+                <div
+                  class="flex grow flex-col items-center px-[8%] pb-8 pt-2 desktop:pl-[8.5%] desktop:pr-[10%]"
+                >
+                  <div
+                    class="whitespace-nowrap py-2 text-center font-sans text-xxs font-light uppercase leading-4 text-subtle"
+                  >
+                    14 Jan 2023
+                  </div>
+                  <div class="text-center text-md font-medium leading-6">
+                    <a
+                      href="/reviews/doctor-sleep-by-stephen-king/"
+                      rel="canonical"
+                      class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] before:tablet:opacity-15"
+                      >Doctor Sleep</a
+                    >
+                  </div>
+                  <div
+                    class="font-sans text-xxs font-light uppercase leading-8 tracking-wide text-subtle"
+                  >
+                    2013<!-- -->
+                    |
+                    <!-- -->Novel
+                  </div>
+                  <p class="text-center text-base font-light text-subtle">
+                    by<!-- -->
+                    <span class="font-normal text-accent"
+                      ><a href="/reviews/authors/stephen-king/"
+                        >Stephen King</a
+                      ></span
+                    >
+                  </p>
+                  <picture
+                    ><source
+                      srcset="/svg/3-stars-dark.svg"
+                      media="(prefers-color-scheme: dark)" />
+                    <img
+                      src="/svg/3-stars.svg"
+                      alt="C+: 3 stars (out of 5)"
+                      height="18"
+                      width="90"
+                      class="mt-2"
+                  /></picture>
+                </div>
               </li>
             </ol>
-            <a
-              href="/reviews/"
-              class="flex justify-end px-pageMargin py-10 text-lg text-accent"
-              >All Reviews →</a
-            >
-          </main>
-        </div>
+            <div class="flex px-container py-10">
+              <a
+                href="/reviews/"
+                class="mx-auto w-full max-w-button bg-default py-5 text-center font-sans text-xs font-semibold uppercase tracking-wide text-accent hover:bg-accent hover:text-inverse"
+                >All Reviews</a
+              >
+            </div>
+          </nav>
+        </main>
         <footer
-          class="flex flex-col items-center gap-y-6 bg-[url(&#x27;/assets/ripnotcomingsoon.avif&#x27;)] px-pageMargin py-8 text-inverse"
+          class="flex flex-wrap items-start justify-between gap-[10%] bg-footer px-container py-20 text-inverse tablet:px-12 tablet:pt-10 desktop:p-20"
         >
-          <ul
-            class="flex w-full flex-wrap justify-center gap-x-4 gap-y-2 text-inverse tablet:gap-x-6 max:w-auto"
+          <div class="flex flex-col pb-12">
+            <div class="flex flex-col">
+              <div
+                class="whitespace-nowrap font-normal leading-8"
+                style="font-size: 1.5625rem"
+              >
+                <a href="/">Frank&#x27;s Book Log</a>
+              </div>
+              <p class="w-full pl-px text-sm italic leading-4 opacity-85">
+                Literature is a relative term.
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col gap-20 pb-20 pt-10 tablet:basis-1/2 tablet:pt-20"
           >
-            <li class="block whitespace-nowrap tracking-0.5px">
-              <a class="text-inverse" href="/">Home</a>
-            </li>
-            <li class="block whitespace-nowrap tracking-0.5px">
-              <a class="text-inherit" href="/how-i-grade/">How I Grade</a>
-            </li>
-            <li class="block whitespace-nowrap tracking-0.5px">
-              <a class="text-inherit" href="/reviews/">Reviews</a>
-            </li>
-            <li class="block whitespace-nowrap tracking-0.5px">
-              <a class="text-inherit" href="/readings/">Reading Log</a>
-            </li>
-            <li class="block whitespace-nowrap tracking-0.5px">
-              <a class="text-inherit" href="/authors/">Authors</a>
-            </li>
-            <li class="block whitespace-nowrap tracking-0.5px">
-              <a class="text-inherit" href="/shelf/">Shelf</a>
-            </li>
-          </ul>
-          <p class="text-sm font-light leading-4">
-            All images used in accordance with the<!-- -->
+            <ul class="flex w-full flex-col gap-y-10 text-inverse max:w-auto">
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a class="hover:text-accent" href="/">Home</a>
+              </li>
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a class="hover:text-accent" href="/how-i-grade/"
+                  >How I Grade</a
+                >
+              </li>
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a class="hover:text-accent" href="/reviews/">Reviews</a>
+              </li>
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a class="hover:text-accent" href="/readings/">Reading Log</a>
+                <ol class="mt-4">
+                  <li
+                    class="mb-2 font-sans text-xs uppercase tracking-wide text-inverse-subtle"
+                  >
+                    <a class="hover:text-inverse" href="/readings/stats/"
+                      >Stats</a
+                    >
+                  </li>
+                </ol>
+              </li>
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a class="hover:text-accent" href="/authors/">Authors</a>
+              </li>
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a class="hover:text-accent" href="/shelf/">Shelf</a>
+              </li>
+            </ul>
             <a
-              href="http://www.copyright.gov/title17/92chap1.html#107"
-              class="text-inherit"
-              >Fair Use Law.</a
+              href="#top"
+              class="mb-8 w-full max-w-button bg-canvas py-5 text-center font-sans text-xs uppercase tracking-wide text-default hover:bg-inverse hover:text-inverse"
+              >To the top</a
             >
-          </p>
-          <a href="#top" class="sr-only">To the top ↑</a>
+            <p class="w-full font-normal leading-4 text-inverse-subtle">
+              All covers used in accordance with the<!-- -->
+              <a
+                href="http://www.copyright.gov/title17/92chap1.html#107"
+                class="text-inherit underline decoration-2 underline-offset-4 hover:bg-default hover:text-default"
+                >Fair Use Law.</a
+              >
+            </p>
+          </div>
         </footer>
       </div>
     </div>
     <dialog
-      class="relative m-0 h-screen max-h-none w-screen max-w-unset border border-default bg-canvas shadow-lg open:flex open:flex-col tablet:mx-auto tablet:mt-16 tablet:h-min tablet:max-h-[min(100vh_-_128px,900px)] tablet:min-h-60 tablet:max-w-[min(100vw_-_2_*_var(--gutter-width),36rem)] tablet:rounded-xl desktop:min-h-0"
+      class="relative m-0 h-screen max-h-none w-screen max-w-unset border border-default bg-subtle shadow-lg open:flex open:flex-col tablet:mx-auto tablet:mt-16 tablet:h-min tablet:max-h-[min(100vh_-_128px,900px)] tablet:min-h-60 tablet:max-w-[min(100vw_-_64px,36rem)] tablet:rounded-xl desktop:min-h-0"
       aria-label="Search"
     >
       <div data-dialog-frame class="contents">
-        <button data-close-modal>Cancel</button>
+        <button
+          data-close-modal
+          class="px-4 font-sans text-sm font-light hover:bg-inverse hover:text-inverse focus:outline-accent"
+        >
+          Cancel
+        </button>
         <div class="contents"><div id="pagefind__search"></div></div>
-        <div class="hidden px-gutter py-4 desktop:block">
+        <div
+          class="hidden px-[var(--search-dialog-padding)] py-4 font-sans text-xs font-light tracking-wide text-subtle desktop:block"
+        >
           <kbd class="rounded-md bg-default p-2 font-mono text-xs text-subtle"
             >Tab</kbd
           >
           to navigate
-          <kbd class="rounded-md bg-subtle p-2 font-mono text-xs text-subtle"
+          <kbd
+            class="ml-4 rounded-md bg-default p-2 font-mono text-xs text-subtle"
             >ESC</kbd
           >
           to close
@@ -1064,14 +1038,11 @@
     <script>
       (() => {
         const openBtn = document.querySelector("button[data-open-modal]");
-        const shortcut = openBtn?.querySelector("kbd");
-        if (!openBtn || !(shortcut instanceof HTMLElement)) return;
-        const platformKey = shortcut.querySelector("kbd");
-        if (platformKey && /(Mac|iPhone|iPod|iPad)/i.test(navigator.platform)) {
-          platformKey.textContent = "⌘";
+        if (!openBtn) return;
+        if (/(Mac|iPhone|iPod|iPad)/i.test(navigator.platform)) {
           openBtn.setAttribute("aria-keyshortcuts", "Meta+K");
+          openBtn.setAttribute("title", `Search: ⌘K`);
         }
-        shortcut.style.display = "";
       })();
     </script>
   </body>

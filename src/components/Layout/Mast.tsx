@@ -1,56 +1,118 @@
-import { NavListItems } from "./NavListItems";
+import { Logo } from "./Logo";
+import type { NavItem } from "./navItems";
+import { navItems } from "./navItems";
 
-export function Mast({ currentPath }: { currentPath: string }) {
+export function Mast({
+  hideLogo,
+  hasBackdrop,
+}: {
+  hideLogo: boolean;
+  hasBackdrop: boolean;
+}) {
   return (
-    <header className="flex flex-col items-center gap-6 bg-default px-pageMargin py-6 text-center shadow-bottom desktop:sticky desktop:top-4 desktop:z-40 desktop:flex-row desktop:justify-between desktop:gap-8 desktop:py-5 desktop:text-left max:justify-center max:py-8">
-      <div className="items-inherit justify-items-inherit flex flex-col max:absolute max:left-[var(--page-margin-width)]">
-        <h1 className="whitespace-nowrap text-[1.5625rem] font-normal leading-8">
-          <a className="text-default" href="/">
-            Frank&apos;s Book Log
-          </a>
-        </h1>
-        <p className="w-full text-sm italic leading-4 text-muted desktop:pl-px">
-          Literature is a relative term.
-        </p>
-      </div>
-      <div className="w-full max-w-prose desktop:order-4 desktop:w-auto max:absolute max:right-[var(--page-margin-width)]">
-        <button
-          data-open-modal
-          disabled
-          aria-label="Search"
-          aria-keyshortcuts="Control+K"
-          className="safari-border-radius-fix flex w-full items-center overflow-hidden rounded-md text-sm leading-6 text-subtle ring-1 ring-border hover:ring-accent"
-        >
-          <kbd className="ml-auto mt-px hidden min-h-6 flex-none items-center bg-subtle pl-3 pr-4 font-mono text-sm font-light opacity-70 desktop:flex">
-            <kbd className="text-md leading-5">Ctrl</kbd>
-            <kbd className="text-sm">K</kbd>
-          </kbd>
-          <svg
-            className="mr-2 size-10 flex-none border-0 border-r border-default bg-subtle fill-subtle px-3 py-1 desktop:w-4 desktop:border-r-0 desktop:bg-unset desktop:px-0"
-            viewBox="0 0 16 16"
-          >
-            <path
-              fillRule="evenodd"
-              d="M10.442 10.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z"
-            />
-            <path
-              fillRule="evenodd"
-              d="M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z"
-            />
-          </svg>
-          <span className="flex items-baseline whitespace-nowrap p-2 text-base opacity-70 desktop:hidden">
-            Quick search...
-          </span>
-        </button>
-      </div>
-      <nav className="w-full desktop:w-auto">
-        <ul className="flex flex-wrap justify-center gap-x-4 gap-y-2 text-accent tablet:gap-x-6 desktop:flex-nowrap desktop:justify-start">
-          <NavListItems
-            activeClassName="text-muted"
-            currentPath={currentPath}
+    <header
+      className="z-20 flex w-full items-center justify-between px-container py-4 tablet:p-6 desktop:inset-x-0 desktop:z-40 desktop:flex-row desktop:flex-wrap desktop:px-16 desktop:py-8 desktop:text-left"
+      style={{
+        position: hasBackdrop ? "absolute" : "static",
+      }}
+    >
+      {hideLogo ? <div /> : <Logo />}
+      <div className="flex items-center">
+        <nav className="hidden w-full desktop:block desktop:w-auto">
+          <ul className={`flex flex-wrap justify-start gap-x-6 text-xl`}>
+            {navItems.map((item) => {
+              return <NavListItem key={item.target} value={item} />;
+            })}
+          </ul>
+        </nav>
+        <SearchButton />
+        <input type="checkbox" id="mobile-nav" className="hidden" />
+        <label htmlFor="mobile-nav" className="hamburger-icon desktop:hidden">
+          <span
+            style={{ background: "var(--fg-default)" }}
+            className="hamburger-icon-bars"
           />
+        </label>
+        <ul className="hamburger-menu flex flex-col items-start gap-y-5 text-left text-inverse desktop:hidden">
+          {navItems.map((item) => {
+            return <MenuItem key={item.target} value={item} />;
+          })}
         </ul>
-      </nav>
+      </div>
     </header>
+  );
+}
+
+function MenuItem({ value }: { value: NavItem }): JSX.Element {
+  return (
+    <li className="block w-1/2 whitespace-nowrap text-2xl">
+      <a href={value.target}>{value.text}</a>
+      <SubMenu values={value.subItems} />
+    </li>
+  );
+}
+
+function SubMenu({ values }: { values: NavItem[] }): JSX.Element | null {
+  if (values.length === 0) {
+    return null;
+  }
+
+  return (
+    <ol className="mt-4">
+      {values.map((value) => {
+        return (
+          <li
+            key={value.target}
+            className="mb-2 font-sans text-xs uppercase tracking-wide text-inverse-subtle"
+          >
+            <a href={value.target}>{value.text}</a>
+          </li>
+        );
+      })}
+    </ol>
+  );
+}
+
+function NavListItem({ value }: { value: NavItem }): JSX.Element {
+  return (
+    <li className="block whitespace-nowrap tracking-serif-wide">
+      <a
+        className={`text-inherit transition-all duration-500 ease-in-out hover:text-accent`}
+        href={value.target}
+      >
+        {value.text}
+      </a>
+    </li>
+  );
+}
+
+function SearchButton() {
+  return (
+    <div className="z-[1000]">
+      <button
+        data-open-modal
+        disabled
+        aria-label="Search"
+        aria-keyshortcuts="Control+K"
+        className="flex items-center justify-between overflow-hidden text-sm leading-6 ring-default desktop:ml-6"
+        type="button"
+        title="Search: Control+K"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth="1.5"
+          stroke="currentColor"
+          className="size-6 desktop:size-7"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+          />
+        </svg>
+      </button>
+    </div>
   );
 }
