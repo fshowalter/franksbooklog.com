@@ -6,7 +6,7 @@ export function Footer(): JSX.Element {
   return (
     <footer
       className={
-        "bg-footer flex flex-wrap items-start justify-between gap-[10%] px-container py-20 text-inverse tablet:px-12 tablet:pt-10 desktop:p-20"
+        "flex flex-wrap items-start justify-between gap-[10%] bg-footer px-container py-20 text-inverse tablet:px-12 tablet:pt-10 desktop:p-20"
       }
     >
       <div className="flex flex-col pb-12">
@@ -24,7 +24,7 @@ export function Footer(): JSX.Element {
         >
           To the top
         </a>
-        <p className="text-inverse-subtle w-full font-normal leading-4">
+        <p className="w-full font-normal leading-4 text-inverse-subtle">
           All covers used in accordance with the{" "}
           <a
             href="http://www.copyright.gov/title17/92chap1.html#107"
@@ -60,7 +60,7 @@ function SubNavList({ values }: { values: NavItem[] }): JSX.Element | null {
         return (
           <li
             key={value.target}
-            className="text-inverse-subtle mb-2 font-sans text-xs uppercase tracking-wide"
+            className="mb-2 font-sans text-xs uppercase tracking-wide text-inverse-subtle"
           >
             <a className="hover:text-inverse" href={value.target}>
               {value.text}
