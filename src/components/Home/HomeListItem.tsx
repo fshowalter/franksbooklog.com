@@ -49,8 +49,7 @@ export function HomeListItem({
       <Cover
         imageProps={value.coverImageProps}
         decoding="async"
-        width={CoverImageConfig.width}
-        height={CoverImageConfig.height}
+        {...CoverImageConfig}
         alt={`A cover of ${value.title} by ${toSentenceArray(
           value.authors.map((a) => a.name),
         ).join("")}`}
