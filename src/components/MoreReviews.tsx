@@ -1,7 +1,6 @@
 import type { CoverImageProps } from "src/api/covers";
 import type { Review } from "src/api/reviews";
 import { toSentenceArray } from "src/utils";
-import { ccn } from "src/utils/concatClassNames";
 
 import { Cover } from "./Cover";
 import { Grade } from "./Grade";

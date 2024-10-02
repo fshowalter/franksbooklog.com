@@ -1,7 +1,7 @@
 import type { FilterableState } from "src/utils";
 import { buildGroupValues, collator, filterTools, sortString } from "src/utils";
 
-import type { ListItemValue } from "./List";
+import type { ListItemValue } from "./Shelf";
 
 export type Sort =
   | "year-published-desc"

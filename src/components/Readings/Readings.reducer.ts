@@ -20,11 +20,6 @@ function sortValues(values: ListItemValue[], sortOrder: Sort) {
   return values.sort(comparer);
 }
 
-const yearFormatter = new Intl.DateTimeFormat("en-US", {
-  year: "numeric",
-  timeZone: "UTC",
-});
-
 function groupValues(
   values: ListItemValue[],
 ): Map<string, Map<string, ListItemValue[]>> {

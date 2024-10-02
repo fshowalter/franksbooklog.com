@@ -1,5 +1,4 @@
-import type { BackdropImageProps } from "src/api/backdrops";
-import { Backdrop, SolidBackdrop } from "src/components/Backdrop";
+import { SolidBackdrop } from "src/components/Backdrop";
 import { Layout } from "src/components/Layout";
 import { LongFormText } from "src/components/LongFormText";
 import type { MoreReviewsValue } from "src/components/MoreReviews";

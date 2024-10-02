@@ -26,6 +26,7 @@ export default {
       muted: "var(--fg-muted)",
       inverse: "var(--fg-inverse)",
       subtle: "var(--fg-subtle)",
+      "inverse-subtle": "var(--fg-inverse-subtle)",
       inherit: "inherit",
       emphasis: "var(--fg-emphasis)",
       progress: "var(--fg-progress)",

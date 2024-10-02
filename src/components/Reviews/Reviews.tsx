@@ -1,4 +1,5 @@
 import { useReducer } from "react";
+import type { CoverImageProps } from "src/api/covers";
 import type { Review } from "src/api/reviews";
 import { ListItem } from "src/components/ListItem";
 import { ListItemCover } from "src/components/ListItemCover";
@@ -21,6 +22,8 @@ export interface Props {
   distinctKinds: readonly string[];
   initialSort: Sort;
 }
+
+interface Author extends Pick<Review["authors"][0], "name" | "sortName"> {}
 
 export interface ListItemValue
   extends Pick<

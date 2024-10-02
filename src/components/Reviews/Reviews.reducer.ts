@@ -19,7 +19,7 @@ export type Sort =
   | "author-asc"
   | "author-desc";
 
-import type { ListItemValue } from "./List";
+import type { ListItemValue } from "./Reviews";
 
 const groupValues = buildGroupValues(groupForValue);
 const { updateFilter, clearFilter } = filterTools(sortValues, groupValues);

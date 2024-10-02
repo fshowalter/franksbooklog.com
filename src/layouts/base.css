@@ -10,6 +10,7 @@
   --bg-default-rgb: 255, 255, 255;
   --bg-default: #fff;
   --bg-inverse: rgb(0 0 0 / 75%);
+  --fg-inverse-subtle: #b0b0b0;
   --bg-footer: #252525;
   --bg-progress: #14bd41;
   --bg-stripe: #f7f5f3;

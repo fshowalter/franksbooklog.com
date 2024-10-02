@@ -6,7 +6,7 @@ import {
 } from "src/utils";
 
 import type { FilterableState } from "../../utils";
-import type { ListItemValue } from "./List";
+import type { ListItemValue } from "./Authors";
 
 export enum Actions {
   FILTER_NAME = "FILTER_NAME",

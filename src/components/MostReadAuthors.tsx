@@ -82,7 +82,7 @@ export function MostReadAuthors({
   );
 }
 
-function Name({ value }: { value: ListItemValue }): JSX.Element {
+function Name({ value }: { value: MostReadAuthorsValue }): JSX.Element {
   if (value.slug) {
     return (
       <a className="text-accent" href={`/authors/${value.slug}/`}>
@@ -96,26 +96,17 @@ function Name({ value }: { value: ListItemValue }): JSX.Element {
 
 function ReadingSubListItem({ value }: { value: ReadingSubListItemValue }) {
   return (
-    <ListItem className="items-center">
-      <ListItemCover
-        slug={value.reviewed ? value.slug : null}
-        imageProps={value.coverImageProps}
-      />
+    <ListItem>
+      <ListItemCover imageProps={value.coverImageProps} />
       <div className="grow">
-        <div>
-          <ListItemTitle
-            title={value.title}
-            slug={value.reviewed ? value.slug : null}
-          />
-          <div className="spacer-y-2" />
-          <ListItemKindAndYear year={value.yearPublished} kind={value.kind} />
-          <div className="spacer-y-2" />
-          <div className="text-base leading-4 text-subtle">
-            {value.edition} on {dateFormatter.format(value.date)}
-          </div>
-          <div className="spacer-y-2" />
+        <ListItemTitle
+          title={value.title}
+          slug={value.reviewed ? value.slug : null}
+        />
+        <ListItemKindAndYear year={value.yearPublished} kind={value.kind} />
+        <div className="text-base leading-4 text-subtle">
+          {value.edition} on {dateFormatter.format(value.date)}
         </div>
-        <div className="spacer-y-2" />
       </div>
     </ListItem>
   );

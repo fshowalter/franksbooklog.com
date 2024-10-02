@@ -2,8 +2,7 @@ import { getFixedCoverImageProps } from "src/api/covers";
 import { allReviews } from "src/api/reviews";
 import { ListItemCoverImageConfig } from "src/components/ListItemCover";
 
-import type { ListItemValue } from "./List";
-import type { Props } from "./Reviews";
+import type { ListItemValue, Props } from "./Reviews";
 
 export async function getProps(): Promise<Props> {
   const {

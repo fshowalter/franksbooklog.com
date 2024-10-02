@@ -1,4 +1,5 @@
 import { useReducer } from "react";
+import type { CoverImageProps } from "src/api/covers";
 import type { ShelfWork } from "src/api/shelf";
 import { GroupedList } from "src/components/GroupedList";
 import { ListItem } from "src/components/ListItem";

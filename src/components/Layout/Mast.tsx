@@ -5,11 +5,9 @@ import { navItems } from "./navItems";
 export function Mast({
   hideLogo,
   hasBackdrop,
-  addGradient,
 }: {
   hideLogo: boolean;
   hasBackdrop: boolean;
-  addGradient: boolean;
 }) {
   return (
     <header
@@ -23,13 +21,7 @@ export function Mast({
         <nav className="hidden w-full desktop:block desktop:w-auto">
           <ul className={`flex flex-wrap justify-start gap-x-6 text-xl`}>
             {navItems.map((item) => {
-              return (
-                <NavListItem
-                  key={item.target}
-                  hasBackdrop={hasBackdrop}
-                  value={item}
-                />
-              );
+              return <NavListItem key={item.target} value={item} />;
             })}
           </ul>
         </nav>
@@ -71,7 +63,7 @@ function SubMenu({ values }: { values: NavItem[] }): JSX.Element | null {
         return (
           <li
             key={value.target}
-            className="text-inverse-subtle mb-2 font-sans text-xs uppercase tracking-wide"
+            className="mb-2 font-sans text-xs uppercase tracking-wide text-inverse-subtle"
           >
             <a href={value.target}>{value.text}</a>
           </li>
@@ -81,15 +73,9 @@ function SubMenu({ values }: { values: NavItem[] }): JSX.Element | null {
   );
 }
 
-function NavListItem({
-  value,
-  hasBackdrop,
-}: {
-  value: NavItem;
-  hasBackdrop: boolean;
-}): JSX.Element {
+function NavListItem({ value }: { value: NavItem }): JSX.Element {
   return (
-    <li className="tracking-serif-wide block whitespace-nowrap">
+    <li className="block whitespace-nowrap tracking-serif-wide">
       <a
         className={`text-inherit transition-all duration-500 ease-in-out hover:text-accent`}
         href={value.target}
