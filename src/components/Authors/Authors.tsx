@@ -62,7 +62,11 @@ export function Authors({ values, initialSort }: Props): JSX.Element {
 function AuthorListItem({ value }: { value: ListItemValue }): JSX.Element {
   return (
     <ListItem itemsCenter={true} extraVerticalPadding={true}>
-      <ListItemAvatar name={value.name} imageProps={value.avatarImageProps} />
+      <ListItemAvatar
+        name={value.name}
+        imageProps={value.avatarImageProps}
+        fill={value.reviewedWorkCount > 0 ? undefined : "var(--bg-subtle)"}
+      />
       <AuthorName
         value={value.name}
         slug={value.reviewedWorkCount > 0 ? value.slug : null}
@@ -81,6 +85,14 @@ function AuthorName({
   value: ListItemValue["name"];
   slug: string | null;
 }) {
+  if (!slug) {
+    return (
+      <span className="font-sans text-sm font-light leading-normal text-subtle">
+        {value}
+      </span>
+    );
+  }
+
   return (
     <a
       href={`/authors/${slug}/`}
