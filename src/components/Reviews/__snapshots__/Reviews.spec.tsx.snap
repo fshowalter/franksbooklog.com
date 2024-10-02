@@ -45854,7 +45854,7 @@ exports[`Reviews > renders 1`] = `
               class="flex flex-wrap justify-start gap-x-6 text-xl"
             >
               <li
-                class="tracking-serif-wide block whitespace-nowrap"
+                class="block whitespace-nowrap tracking-serif-wide"
               >
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
@@ -45864,7 +45864,7 @@ exports[`Reviews > renders 1`] = `
                 </a>
               </li>
               <li
-                class="tracking-serif-wide block whitespace-nowrap"
+                class="block whitespace-nowrap tracking-serif-wide"
               >
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
@@ -45874,7 +45874,7 @@ exports[`Reviews > renders 1`] = `
                 </a>
               </li>
               <li
-                class="tracking-serif-wide block whitespace-nowrap"
+                class="block whitespace-nowrap tracking-serif-wide"
               >
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
@@ -45884,7 +45884,7 @@ exports[`Reviews > renders 1`] = `
                 </a>
               </li>
               <li
-                class="tracking-serif-wide block whitespace-nowrap"
+                class="block whitespace-nowrap tracking-serif-wide"
               >
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
@@ -45894,7 +45894,7 @@ exports[`Reviews > renders 1`] = `
                 </a>
               </li>
               <li
-                class="tracking-serif-wide block whitespace-nowrap"
+                class="block whitespace-nowrap tracking-serif-wide"
               >
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
@@ -45904,7 +45904,7 @@ exports[`Reviews > renders 1`] = `
                 </a>
               </li>
               <li
-                class="tracking-serif-wide block whitespace-nowrap"
+                class="block whitespace-nowrap tracking-serif-wide"
               >
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
@@ -45954,7 +45954,6 @@ exports[`Reviews > renders 1`] = `
           >
             <span
               class="hamburger-icon-bars"
-              style="background: rgb(255, 255, 255);"
             />
           </label>
           <ul
@@ -45999,7 +45998,7 @@ exports[`Reviews > renders 1`] = `
                 class="mt-4"
               >
                 <li
-                  class="text-inverse-subtle mb-2 font-sans text-xs uppercase tracking-wide"
+                  class="mb-2 font-sans text-xs uppercase tracking-wide text-inverse-subtle"
                 >
                   <a
                     href="/readings/stats/"
@@ -46062,10 +46061,10 @@ exports[`Reviews > renders 1`] = `
               class="flex grow flex-col bg-subtle"
             >
               <div
-                class="tablet-landscape:px-0 relative tablet:px-12"
+                class="relative tablet:px-12 tablet-landscape:px-0"
               >
                 <div
-                  class="tablet-landscape:col-span-3 tablet-landscape:mx-0 tablet-landscape:w-full relative z-10 row-start-1 bg-default text-xs tablet:-mx-12 tablet:px-0"
+                  class="relative z-10 row-start-1 bg-default text-xs tablet:-mx-12 tablet:px-0 tablet-landscape:col-span-3 tablet-landscape:mx-0 tablet-landscape:w-full"
                 >
                   <div
                     class="mx-auto flex w-full max-w-screen-max flex-wrap items-baseline justify-between gap-x-4 gap-y-5 px-container py-10 font-sans font-medium uppercase tracking-wide text-subtle"
@@ -46081,27 +46080,27 @@ exports[`Reviews > renders 1`] = `
                        Results
                     </span>
                     <button
-                      class="tablet-landscape:hidden ml-auto flex justify-center gap-x-4 text-nowrap px-4 py-2 uppercase text-muted shadow-all"
+                      class="ml-auto flex justify-center gap-x-4 text-nowrap px-4 py-2 uppercase text-muted shadow-all tablet-landscape:hidden"
                     >
                       Filter & Sort
                     </button>
                   </div>
                 </div>
                 <div
-                  class="tablet-landscape:grid tablet-landscape:grid-rows-[auto_1fr] mx-auto max-w-screen-max grid-cols-[1fr_48px_minmax(398px,33%)]"
+                  class="mx-auto max-w-screen-max grid-cols-[1fr_48px_minmax(398px,33%)] tablet-landscape:grid tablet-landscape:grid-rows-[auto_1fr]"
                 >
                   <div
-                    class="tablet-landscape:mr-12 tablet-landscape:block tablet-landscape:py-24 tablet-landscape:pb-12 tablet-landscape:shadow-none relative z-10 col-start-3 row-span-2 row-start-2 grid min-w-[350px] text-sm transition-[grid-template-rows] duration-200 ease-in-out desktop:mr-20"
+                    class="relative z-10 col-start-3 row-span-2 row-start-2 grid min-w-[350px] text-sm transition-[grid-template-rows] duration-200 ease-in-out tablet-landscape:mr-12 tablet-landscape:block tablet-landscape:py-24 tablet-landscape:pb-12 tablet-landscape:shadow-none desktop:mr-20"
                     style="grid-template-rows: 0fr;"
                   >
                     <div
-                      class="tablet-landscape:overflow-visible tablet-landscape:bg-default tablet-landscape:px-container tablet-landscape:pt-0 w-full overflow-hidden bg-subtle text-sm tablet:text-base desktop:px-8"
+                      class="w-full overflow-hidden bg-subtle text-sm tablet:text-base tablet-landscape:overflow-visible tablet-landscape:bg-default tablet-landscape:px-container tablet-landscape:pt-0 desktop:px-8"
                     >
                       <fieldset
-                        class="tablet-landscape:mt-0 tablet-landscape:px-0 mt-4 flex flex-col gap-10 bg-default px-container py-10 tablet:gap-12"
+                        class="mt-4 flex flex-col gap-10 bg-default px-container py-10 tablet:gap-12 tablet-landscape:mt-0 tablet-landscape:px-0"
                       >
                         <legend
-                          class="tablet-landscape::block tablet-landscape:shadow-bottom hidden w-full py-10 font-sans text-xs font-bold uppercase tracking-wide text-subtle"
+                          class="tablet-landscape::block hidden w-full py-10 font-sans text-xs font-bold uppercase tracking-wide text-subtle tablet-landscape:shadow-bottom"
                         >
                           Filter & Sort
                         </legend>
@@ -46677,7 +46676,7 @@ exports[`Reviews > renders 1`] = `
                     </div>
                   </div>
                   <div
-                    class="tablet-landscape:pl-12 col-start-1 row-start-2 pb-10 desktop:pl-20"
+                    class="col-start-1 row-start-2 pb-10 tablet-landscape:pl-12 desktop:pl-20"
                   >
                     <ol
                       class="bg-default"
@@ -50243,7 +50242,7 @@ exports[`Reviews > renders 1`] = `
         </div>
       </main>
       <footer
-        class="bg-footer flex flex-wrap items-start justify-between gap-[10%] px-container py-20 text-inverse tablet:px-12 tablet:pt-10 desktop:p-20"
+        class="flex flex-wrap items-start justify-between gap-[10%] bg-footer px-container py-20 text-inverse tablet:px-12 tablet:pt-10 desktop:p-20"
       >
         <div
           class="flex flex-col pb-12"
@@ -50317,7 +50316,7 @@ exports[`Reviews > renders 1`] = `
                 class="mt-4"
               >
                 <li
-                  class="text-inverse-subtle mb-2 font-sans text-xs uppercase tracking-wide"
+                  class="mb-2 font-sans text-xs uppercase tracking-wide text-inverse-subtle"
                 >
                   <a
                     class="hover:text-inverse"
@@ -50356,7 +50355,7 @@ exports[`Reviews > renders 1`] = `
             To the top
           </a>
           <p
-            class="text-inverse-subtle w-full font-normal leading-4"
+            class="w-full font-normal leading-4 text-inverse-subtle"
           >
             All covers used in accordance with the 
             <a

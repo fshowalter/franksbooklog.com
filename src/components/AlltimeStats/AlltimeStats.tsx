@@ -22,10 +22,7 @@ export function AlltimeStats({
   mostReadAuthors,
 }: Props): JSX.Element {
   return (
-    <Layout
-      addGradient={false}
-      className="flex flex-col items-center bg-subtle"
-    >
+    <Layout className="flex flex-col items-center bg-subtle">
       <StatsBackdrop
         breadcrumb={
           <a

@@ -10,15 +10,17 @@ export interface Props {
 
 export function Home({ values }: Props): JSX.Element {
   return (
-    <Layout hideLogo={true} addGradient={false} className="bg-subtle pb-8">
+    <Layout hideLogo={true} className="bg-subtle pb-8">
       <SolidBackdrop
         title="Frank's Book Log"
         deck="Literature is a relative term."
         titleStyle="text-default text-4xl desktop:text-7xl"
       />
-      <nav className="mx-auto max-w-screen-max bg-subtle px-container">
-        <SubHeading as="h2">Latest Reviews</SubHeading>
-        <ol className="flex flex-wrap justify-center gap-x-[3%] gap-y-[6vw] desktop:justify-between">
+      <nav className="mx-auto max-w-screen-max bg-[#f6f6f6] tablet:bg-subtle tablet:px-container">
+        <SubHeading as="h2" className="px-container tablet:px-0">
+          Latest Reviews
+        </SubHeading>
+        <ol className="flex flex-wrap justify-center gap-x-[4%] gap-y-[6vw] px-[2%] tablet:gap-x-[3%] tablet:px-0 desktop:justify-between">
           {values.map((value, index) => {
             return (
               <HomeListItem
@@ -29,7 +31,7 @@ export function Home({ values }: Props): JSX.Element {
             );
           })}
         </ol>
-        <div className="flex py-10">
+        <div className="flex px-container py-10">
           <a
             href="/reviews/"
             className="mx-auto w-full max-w-button bg-default py-5 text-center font-sans text-xs font-semibold uppercase tracking-wide text-accent hover:bg-accent hover:text-inverse"

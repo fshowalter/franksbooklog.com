@@ -29,7 +29,7 @@ export function Mast({
         <input type="checkbox" id="mobile-nav" className="hidden" />
         <label htmlFor="mobile-nav" className="hamburger-icon desktop:hidden">
           <span
-            style={{ background: hasBackdrop ? "#fff" : "var(--fg-default)" }}
+            style={{ background: "var(--fg-default)" }}
             className="hamburger-icon-bars"
           />
         </label>

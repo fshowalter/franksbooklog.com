@@ -40,42 +40,42 @@
           <div class="flex items-center">
             <nav class="hidden w-full desktop:block desktop:w-auto">
               <ul class="flex flex-wrap justify-start gap-x-6 text-xl">
-                <li class="tracking-serif-wide block whitespace-nowrap">
+                <li class="block whitespace-nowrap tracking-serif-wide">
                   <a
                     class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                     href="/"
                     >Home</a
                   >
                 </li>
-                <li class="tracking-serif-wide block whitespace-nowrap">
+                <li class="block whitespace-nowrap tracking-serif-wide">
                   <a
                     class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                     href="/how-i-grade/"
                     >How I Grade</a
                   >
                 </li>
-                <li class="tracking-serif-wide block whitespace-nowrap">
+                <li class="block whitespace-nowrap tracking-serif-wide">
                   <a
                     class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                     href="/reviews/"
                     >Reviews</a
                   >
                 </li>
-                <li class="tracking-serif-wide block whitespace-nowrap">
+                <li class="block whitespace-nowrap tracking-serif-wide">
                   <a
                     class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                     href="/readings/"
                     >Reading Log</a
                   >
                 </li>
-                <li class="tracking-serif-wide block whitespace-nowrap">
+                <li class="block whitespace-nowrap tracking-serif-wide">
                   <a
                     class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                     href="/authors/"
                     >Authors</a
                   >
                 </li>
-                <li class="tracking-serif-wide block whitespace-nowrap">
+                <li class="block whitespace-nowrap tracking-serif-wide">
                   <a
                     class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                     href="/shelf/"
@@ -113,7 +113,10 @@
             <input type="checkbox" id="mobile-nav" class="hidden" /><label
               for="mobile-nav"
               class="hamburger-icon desktop:hidden"
-              ><span style="background: #fff" class="hamburger-icon-bars"></span
+              ><span
+                style="background: var(--fg-default)"
+                class="hamburger-icon-bars"
+              ></span
             ></label>
             <ul
               class="hamburger-menu flex flex-col items-start gap-y-5 text-left text-inverse desktop:hidden"
@@ -131,7 +134,7 @@
                 <a href="/readings/">Reading Log</a>
                 <ol class="mt-4">
                   <li
-                    class="text-inverse-subtle mb-2 font-sans text-xs uppercase tracking-wide"
+                    class="mb-2 font-sans text-xs uppercase tracking-wide text-inverse-subtle"
                   >
                     <a href="/readings/stats/">Stats</a>
                   </li>
@@ -161,17 +164,19 @@
               </p>
             </div>
           </header>
-          <nav class="mx-auto max-w-screen-max bg-subtle px-container">
+          <nav
+            class="mx-auto max-w-screen-max bg-[#f6f6f6] tablet:bg-subtle tablet:px-container"
+          >
             <h2
-              class="py-10 font-sans text-xs font-semibold uppercase tracking-wide text-subtle"
+              class="py-10 font-sans text-xs font-semibold uppercase tracking-wide text-subtle px-container tablet:px-0"
             >
               Latest Reviews
             </h2>
             <ol
-              class="flex flex-wrap justify-center gap-x-[3%] gap-y-[6vw] desktop:justify-between"
+              class="flex flex-wrap justify-center gap-x-[4%] gap-y-[6vw] px-[2%] tablet:gap-x-[3%] tablet:px-0 desktop:justify-between"
             >
               <li
-                class="relative flex w-[48.5%] max-w-[248px] flex-col items-center border-default bg-default tablet:w-[31.33333333%] desktop:w-[14.16666667%]"
+                class="relative flex w-[46%] max-w-[248px] flex-col items-center border-default bg-default tablet:w-[31.33333333%] desktop:w-[14.16666667%]"
               >
                 <img
                   srcset="
@@ -200,7 +205,7 @@
                     <a
                       href="/reviews/recessional-by-david-mamet/"
                       rel="canonical"
-                      class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-[#fff] before:opacity-15 hover:text-accent hover:underline hover:before:opacity-0"
+                      class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] before:tablet:opacity-15"
                       >Recessional</a
                     >
                   </div>
@@ -233,7 +238,7 @@
                 </div>
               </li>
               <li
-                class="relative flex w-[48.5%] max-w-[248px] flex-col items-center border-default bg-default tablet:w-[31.33333333%] desktop:w-[14.16666667%]"
+                class="relative flex w-[46%] max-w-[248px] flex-col items-center border-default bg-default tablet:w-[31.33333333%] desktop:w-[14.16666667%]"
               >
                 <img
                   srcset="
@@ -262,7 +267,7 @@
                     <a
                       href="/reviews/fast-forward-by-stephen-morris/"
                       rel="canonical"
-                      class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-[#fff] before:opacity-15 hover:text-accent hover:underline hover:before:opacity-0"
+                      class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] before:tablet:opacity-15"
                       >Fast Forward</a
                     >
                   </div>
@@ -295,7 +300,7 @@
                 </div>
               </li>
               <li
-                class="relative flex w-[48.5%] max-w-[248px] flex-col items-center border-default bg-default tablet:w-[31.33333333%] desktop:w-[14.16666667%]"
+                class="relative flex w-[46%] max-w-[248px] flex-col items-center border-default bg-default tablet:w-[31.33333333%] desktop:w-[14.16666667%]"
               >
                 <img
                   srcset="
@@ -324,7 +329,7 @@
                     <a
                       href="/reviews/gothic-by-philip-fracassi/"
                       rel="canonical"
-                      class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-[#fff] before:opacity-15 hover:text-accent hover:underline hover:before:opacity-0"
+                      class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] before:tablet:opacity-15"
                       >Gothic</a
                     >
                   </div>
@@ -357,7 +362,7 @@
                 </div>
               </li>
               <li
-                class="relative flex w-[48.5%] max-w-[248px] flex-col items-center border-default bg-default tablet:w-[31.33333333%] desktop:w-[14.16666667%]"
+                class="relative flex w-[46%] max-w-[248px] flex-col items-center border-default bg-default tablet:w-[31.33333333%] desktop:w-[14.16666667%]"
               >
                 <img
                   srcset="
@@ -386,7 +391,7 @@
                     <a
                       href="/reviews/record-play-pause-by-stephen-morris/"
                       rel="canonical"
-                      class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-[#fff] before:opacity-15 hover:text-accent hover:underline hover:before:opacity-0"
+                      class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] before:tablet:opacity-15"
                       >Record Play Pause</a
                     >
                   </div>
@@ -419,7 +424,7 @@
                 </div>
               </li>
               <li
-                class="relative flex w-[48.5%] max-w-[248px] flex-col items-center border-default bg-default tablet:w-[31.33333333%] desktop:w-[14.16666667%]"
+                class="relative flex w-[46%] max-w-[248px] flex-col items-center border-default bg-default tablet:w-[31.33333333%] desktop:w-[14.16666667%]"
               >
                 <img
                   srcset="
@@ -448,7 +453,7 @@
                     <a
                       href="/reviews/fright-night-origins-by-tom-holland-a-jack-ulrich/"
                       rel="canonical"
-                      class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-[#fff] before:opacity-15 hover:text-accent hover:underline hover:before:opacity-0"
+                      class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] before:tablet:opacity-15"
                       >Fright Night Origins</a
                     >
                   </div>
@@ -487,7 +492,7 @@
                 </div>
               </li>
               <li
-                class="relative flex w-[48.5%] max-w-[248px] flex-col items-center border-default bg-default tablet:w-[31.33333333%] desktop:w-[14.16666667%]"
+                class="relative flex w-[46%] max-w-[248px] flex-col items-center border-default bg-default tablet:w-[31.33333333%] desktop:w-[14.16666667%]"
               >
                 <img
                   srcset="
@@ -516,7 +521,7 @@
                     <a
                       href="/reviews/dont-let-them-get-you-down-by-philip-fracassi/"
                       rel="canonical"
-                      class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-[#fff] before:opacity-15 hover:text-accent hover:underline hover:before:opacity-0"
+                      class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] before:tablet:opacity-15"
                       >Don&#x27;t Let Them Get You Down</a
                     >
                   </div>
@@ -549,7 +554,7 @@
                 </div>
               </li>
               <li
-                class="relative flex w-[48.5%] max-w-[248px] flex-col items-center border-default bg-default tablet:w-[31.33333333%] desktop:w-[14.16666667%]"
+                class="relative flex w-[46%] max-w-[248px] flex-col items-center border-default bg-default tablet:w-[31.33333333%] desktop:w-[14.16666667%]"
               >
                 <img
                   srcset="
@@ -578,7 +583,7 @@
                     <a
                       href="/reviews/the-creative-act-by-rick-rubin/"
                       rel="canonical"
-                      class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-[#fff] before:opacity-15 hover:text-accent hover:underline hover:before:opacity-0"
+                      class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] before:tablet:opacity-15"
                       >The Creative Act</a
                     >
                   </div>
@@ -611,7 +616,7 @@
                 </div>
               </li>
               <li
-                class="relative flex w-[48.5%] max-w-[248px] flex-col items-center border-default bg-default tablet:w-[31.33333333%] desktop:w-[14.16666667%]"
+                class="relative flex w-[46%] max-w-[248px] flex-col items-center border-default bg-default tablet:w-[31.33333333%] desktop:w-[14.16666667%]"
               >
                 <img
                   srcset="
@@ -640,7 +645,7 @@
                     <a
                       href="/reviews/sacculina-by-philip-fracassi/"
                       rel="canonical"
-                      class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-[#fff] before:opacity-15 hover:text-accent hover:underline hover:before:opacity-0"
+                      class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] before:tablet:opacity-15"
                       >Sacculina</a
                     >
                   </div>
@@ -673,7 +678,7 @@
                 </div>
               </li>
               <li
-                class="relative flex w-[48.5%] max-w-[248px] flex-col items-center border-default bg-default tablet:w-[31.33333333%] desktop:w-[14.16666667%]"
+                class="relative flex w-[46%] max-w-[248px] flex-col items-center border-default bg-default tablet:w-[31.33333333%] desktop:w-[14.16666667%]"
               >
                 <img
                   srcset="
@@ -702,7 +707,7 @@
                     <a
                       href="/reviews/the-cipher-by-kathe-koja/"
                       rel="canonical"
-                      class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-[#fff] before:opacity-15 hover:text-accent hover:underline hover:before:opacity-0"
+                      class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] before:tablet:opacity-15"
                       >The Cipher</a
                     >
                   </div>
@@ -735,7 +740,7 @@
                 </div>
               </li>
               <li
-                class="relative flex w-[48.5%] max-w-[248px] flex-col items-center border-default bg-default tablet:w-[31.33333333%] desktop:w-[14.16666667%]"
+                class="relative flex w-[46%] max-w-[248px] flex-col items-center border-default bg-default tablet:w-[31.33333333%] desktop:w-[14.16666667%]"
               >
                 <img
                   srcset="
@@ -764,7 +769,7 @@
                     <a
                       href="/reviews/roadside-pickup-by-richard-laymon/"
                       rel="canonical"
-                      class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-[#fff] before:opacity-15 hover:text-accent hover:underline hover:before:opacity-0"
+                      class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] before:tablet:opacity-15"
                       >Roadside Pickup</a
                     >
                   </div>
@@ -797,7 +802,7 @@
                 </div>
               </li>
               <li
-                class="relative flex w-[48.5%] max-w-[248px] flex-col items-center border-default bg-default tablet:w-[31.33333333%] desktop:w-[14.16666667%]"
+                class="relative flex w-[46%] max-w-[248px] flex-col items-center border-default bg-default tablet:w-[31.33333333%] desktop:w-[14.16666667%]"
               >
                 <img
                   srcset="
@@ -826,7 +831,7 @@
                     <a
                       href="/reviews/fright-night-by-john-skipp-craig-spector/"
                       rel="canonical"
-                      class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-[#fff] before:opacity-15 hover:text-accent hover:underline hover:before:opacity-0"
+                      class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] before:tablet:opacity-15"
                       >Fright Night</a
                     >
                   </div>
@@ -865,7 +870,7 @@
                 </div>
               </li>
               <li
-                class="relative flex w-[48.5%] max-w-[248px] flex-col items-center border-default bg-default tablet:w-[31.33333333%] desktop:w-[14.16666667%]"
+                class="relative flex w-[46%] max-w-[248px] flex-col items-center border-default bg-default tablet:w-[31.33333333%] desktop:w-[14.16666667%]"
               >
                 <img
                   srcset="
@@ -894,7 +899,7 @@
                     <a
                       href="/reviews/doctor-sleep-by-stephen-king/"
                       rel="canonical"
-                      class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-[#fff] before:opacity-15 hover:text-accent hover:underline hover:before:opacity-0"
+                      class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] before:tablet:opacity-15"
                       >Doctor Sleep</a
                     >
                   </div>
@@ -927,7 +932,7 @@
                 </div>
               </li>
             </ol>
-            <div class="flex py-10">
+            <div class="flex px-container py-10">
               <a
                 href="/reviews/"
                 class="mx-auto w-full max-w-button bg-default py-5 text-center font-sans text-xs font-semibold uppercase tracking-wide text-accent hover:bg-accent hover:text-inverse"
@@ -937,7 +942,7 @@
           </nav>
         </main>
         <footer
-          class="bg-footer flex flex-wrap items-start justify-between gap-[10%] px-container py-20 text-inverse tablet:px-12 tablet:pt-10 desktop:p-20"
+          class="flex flex-wrap items-start justify-between gap-[10%] bg-footer px-container py-20 text-inverse tablet:px-12 tablet:pt-10 desktop:p-20"
         >
           <div class="flex flex-col pb-12">
             <div class="flex flex-col">
@@ -971,7 +976,7 @@
                 <a class="hover:text-accent" href="/readings/">Reading Log</a>
                 <ol class="mt-4">
                   <li
-                    class="text-inverse-subtle mb-2 font-sans text-xs uppercase tracking-wide"
+                    class="mb-2 font-sans text-xs uppercase tracking-wide text-inverse-subtle"
                   >
                     <a class="hover:text-inverse" href="/readings/stats/"
                       >Stats</a
@@ -991,7 +996,7 @@
               class="mb-8 w-full max-w-button bg-canvas py-5 text-center font-sans text-xs uppercase tracking-wide text-default hover:bg-inverse hover:text-inverse"
               >To the top</a
             >
-            <p class="text-inverse-subtle w-full font-normal leading-4">
+            <p class="w-full font-normal leading-4 text-inverse-subtle">
               All covers used in accordance with the<!-- -->
               <a
                 href="http://www.copyright.gov/title17/92chap1.html#107"

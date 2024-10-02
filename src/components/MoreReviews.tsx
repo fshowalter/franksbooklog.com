@@ -34,9 +34,9 @@ export function MoreReviews({
       data-pagefind-ignore
       className="relative flex w-full flex-col items-center tablet:w-auto"
     >
-      <div className="relative mx-auto w-full max-w-screen-max px-container desktop:px-20">
-        {children}
-        <ul className="flex flex-wrap justify-center gap-x-[3%] gap-y-[6vw] desktop:justify-between">
+      <div className="relative mx-auto w-full max-w-screen-max desktop:px-20">
+        <div className="px-container">{children}</div>
+        <ul className="flex flex-wrap justify-center gap-x-[4%] gap-y-[6vw] px-[2%] tablet:gap-x-[3%] tablet:px-container desktop:justify-between">
           {values.map((value) => {
             return <MoreReviewsCard key={value.slug} value={value} />;
           })}
@@ -52,7 +52,7 @@ export function MoreReviewsCard({
   value: MoreReviewsValue;
 }): JSX.Element {
   return (
-    <li className="relative flex w-[48.5%] max-w-[248px] flex-col items-center border-default bg-default tablet:w-[22.75%]">
+    <li className="relative flex w-[46%] max-w-[248px] flex-col items-center border-default bg-default tablet:w-[22.75%]">
       <Cover
         imageProps={value.coverImageProps}
         decoding="async"
@@ -65,7 +65,7 @@ export function MoreReviewsCard({
           <a
             href={`/reviews/${value.slug}/`}
             rel="canonical"
-            className="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-[#fff] before:opacity-15 hover:text-accent hover:underline hover:before:opacity-0"
+            className="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] tablet:before:opacity-15"
           >
             {value.title}
           </a>

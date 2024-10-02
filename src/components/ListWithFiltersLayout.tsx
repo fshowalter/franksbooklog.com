@@ -9,7 +9,6 @@ type Props = {
   list: React.ReactNode;
   totalCount: number;
   listHeaderButtons?: React.ReactNode;
-  mastGradient?: boolean;
 };
 
 export function ListWithFiltersLayout({
@@ -19,13 +18,12 @@ export function ListWithFiltersLayout({
   list,
   listHeaderButtons,
   subNav,
-  mastGradient,
   ...rest
 }: Props): JSX.Element {
   const [filtersVisible, toggleFilters] = useState(false);
 
   return (
-    <Layout className="bg-subtle" {...rest} addGradient={mastGradient}>
+    <Layout className="bg-subtle" {...rest}>
       {backdrop}
       {subNav && subNav}
       <div className="mx-auto flex flex-col items-center bg-default">

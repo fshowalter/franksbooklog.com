@@ -52,42 +52,42 @@
             <div class="flex items-center">
               <nav class="hidden w-full desktop:block desktop:w-auto">
                 <ul class="flex flex-wrap justify-start gap-x-6 text-xl">
-                  <li class="tracking-serif-wide block whitespace-nowrap">
+                  <li class="block whitespace-nowrap tracking-serif-wide">
                     <a
                       class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                       href="/"
                       >Home</a
                     >
                   </li>
-                  <li class="tracking-serif-wide block whitespace-nowrap">
+                  <li class="block whitespace-nowrap tracking-serif-wide">
                     <a
                       class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                       href="/how-i-grade/"
                       >How I Grade</a
                     >
                   </li>
-                  <li class="tracking-serif-wide block whitespace-nowrap">
+                  <li class="block whitespace-nowrap tracking-serif-wide">
                     <a
                       class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                       href="/reviews/"
                       >Reviews</a
                     >
                   </li>
-                  <li class="tracking-serif-wide block whitespace-nowrap">
+                  <li class="block whitespace-nowrap tracking-serif-wide">
                     <a
                       class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                       href="/readings/"
                       >Reading Log</a
                     >
                   </li>
-                  <li class="tracking-serif-wide block whitespace-nowrap">
+                  <li class="block whitespace-nowrap tracking-serif-wide">
                     <a
                       class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                       href="/authors/"
                       >Authors</a
                     >
                   </li>
-                  <li class="tracking-serif-wide block whitespace-nowrap">
+                  <li class="block whitespace-nowrap tracking-serif-wide">
                     <a
                       class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                       href="/shelf/"
@@ -126,7 +126,7 @@
                 for="mobile-nav"
                 class="hamburger-icon desktop:hidden"
                 ><span
-                  style="background: #fff"
+                  style="background: var(--fg-default)"
                   class="hamburger-icon-bars"
                 ></span
               ></label>
@@ -146,7 +146,7 @@
                   <a href="/readings/">Reading Log</a>
                   <ol class="mt-4">
                     <li
-                      class="text-inverse-subtle mb-2 font-sans text-xs uppercase tracking-wide"
+                      class="mb-2 font-sans text-xs uppercase tracking-wide text-inverse-subtle"
                     >
                       <a href="/readings/stats/">Stats</a>
                     </li>
@@ -183,7 +183,7 @@
               <section class="flex flex-col items-center pb-32 pt-16">
                 <div class="px-container">
                   <div
-                    class="rendered-markdown font-light text-md/7 tracking-0.3px tablet:text-xl/8 max-w-prose"
+                    class="rendered-markdown font-light tracking-0.3px text-md/7 tablet:text-xl/8 max-w-prose"
                   >
                     <p>
                       I apply the following criteria to both long and short form
@@ -313,19 +313,21 @@
                 class="relative flex w-full flex-col items-center tablet:w-auto"
               >
                 <div
-                  class="relative mx-auto w-full max-w-screen-max px-container desktop:px-20"
+                  class="relative mx-auto w-full max-w-screen-max desktop:px-20"
                 >
-                  <h2
-                    class="py-10 font-sans text-xs font-semibold uppercase tracking-wide text-subtle"
-                  >
-                    Recent<!-- -->
-                    <a href="/reviews/" class="text-accent">Reviews</a>
-                  </h2>
+                  <div class="px-container">
+                    <h2
+                      class="py-10 font-sans text-xs font-semibold uppercase tracking-wide text-subtle"
+                    >
+                      Recent<!-- -->
+                      <a href="/reviews/" class="text-accent">Reviews</a>
+                    </h2>
+                  </div>
                   <ul
-                    class="flex flex-wrap justify-center gap-x-[3%] gap-y-[6vw] desktop:justify-between"
+                    class="flex flex-wrap justify-center gap-x-[4%] gap-y-[6vw] px-[2%] tablet:gap-x-[3%] tablet:px-container desktop:justify-between"
                   >
                     <li
-                      class="relative flex w-[48.5%] max-w-[248px] flex-col items-center border-default bg-default tablet:w-[22.75%]"
+                      class="relative flex w-[46%] max-w-[248px] flex-col items-center border-default bg-default tablet:w-[22.75%]"
                     >
                       <img
                         srcset="
@@ -349,7 +351,7 @@
                           <a
                             href="/reviews/recessional-by-david-mamet/"
                             rel="canonical"
-                            class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-[#fff] before:opacity-15 hover:text-accent hover:underline hover:before:opacity-0"
+                            class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] tablet:before:opacity-15"
                             >Recessional</a
                           >
                         </div>
@@ -378,7 +380,7 @@
                       </div>
                     </li>
                     <li
-                      class="relative flex w-[48.5%] max-w-[248px] flex-col items-center border-default bg-default tablet:w-[22.75%]"
+                      class="relative flex w-[46%] max-w-[248px] flex-col items-center border-default bg-default tablet:w-[22.75%]"
                     >
                       <img
                         srcset="
@@ -402,7 +404,7 @@
                           <a
                             href="/reviews/fast-forward-by-stephen-morris/"
                             rel="canonical"
-                            class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-[#fff] before:opacity-15 hover:text-accent hover:underline hover:before:opacity-0"
+                            class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] tablet:before:opacity-15"
                             >Fast Forward</a
                           >
                         </div>
@@ -431,7 +433,7 @@
                       </div>
                     </li>
                     <li
-                      class="relative flex w-[48.5%] max-w-[248px] flex-col items-center border-default bg-default tablet:w-[22.75%]"
+                      class="relative flex w-[46%] max-w-[248px] flex-col items-center border-default bg-default tablet:w-[22.75%]"
                     >
                       <img
                         srcset="
@@ -455,7 +457,7 @@
                           <a
                             href="/reviews/gothic-by-philip-fracassi/"
                             rel="canonical"
-                            class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-[#fff] before:opacity-15 hover:text-accent hover:underline hover:before:opacity-0"
+                            class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] tablet:before:opacity-15"
                             >Gothic</a
                           >
                         </div>
@@ -484,7 +486,7 @@
                       </div>
                     </li>
                     <li
-                      class="relative flex w-[48.5%] max-w-[248px] flex-col items-center border-default bg-default tablet:w-[22.75%]"
+                      class="relative flex w-[46%] max-w-[248px] flex-col items-center border-default bg-default tablet:w-[22.75%]"
                     >
                       <img
                         srcset="
@@ -508,7 +510,7 @@
                           <a
                             href="/reviews/record-play-pause-by-stephen-morris/"
                             rel="canonical"
-                            class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-[#fff] before:opacity-15 hover:text-accent hover:underline hover:before:opacity-0"
+                            class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] tablet:before:opacity-15"
                             >Record Play Pause</a
                           >
                         </div>
@@ -542,7 +544,7 @@
             </div>
           </main>
           <footer
-            class="bg-footer flex flex-wrap items-start justify-between gap-[10%] px-container py-20 text-inverse tablet:px-12 tablet:pt-10 desktop:p-20"
+            class="flex flex-wrap items-start justify-between gap-[10%] bg-footer px-container py-20 text-inverse tablet:px-12 tablet:pt-10 desktop:p-20"
           >
             <div class="flex flex-col pb-12">
               <div class="flex flex-col">
@@ -576,7 +578,7 @@
                   <a class="hover:text-accent" href="/readings/">Reading Log</a>
                   <ol class="mt-4">
                     <li
-                      class="text-inverse-subtle mb-2 font-sans text-xs uppercase tracking-wide"
+                      class="mb-2 font-sans text-xs uppercase tracking-wide text-inverse-subtle"
                     >
                       <a class="hover:text-inverse" href="/readings/stats/"
                         >Stats</a
@@ -596,7 +598,7 @@
                 class="mb-8 w-full max-w-button bg-canvas py-5 text-center font-sans text-xs uppercase tracking-wide text-default hover:bg-inverse hover:text-inverse"
                 >To the top</a
               >
-              <p class="text-inverse-subtle w-full font-normal leading-4">
+              <p class="w-full font-normal leading-4 text-inverse-subtle">
                 All covers used in accordance with the<!-- -->
                 <a
                   href="http://www.copyright.gov/title17/92chap1.html#107"

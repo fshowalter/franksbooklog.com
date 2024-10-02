@@ -43,7 +43,7 @@ export function HomeListItem({
   eagerLoadCoverImage: boolean;
 }): JSX.Element {
   return (
-    <li className="relative flex w-[48.5%] max-w-[248px] flex-col items-center border-default bg-default tablet:w-[31.33333333%] desktop:w-[14.16666667%]">
+    <li className="relative flex w-[46%] max-w-[248px] flex-col items-center border-default bg-default tablet:w-[31.33333333%] desktop:w-[14.16666667%]">
       <Cover
         imageProps={value.coverImageProps}
         decoding="async"
@@ -62,7 +62,7 @@ export function HomeListItem({
           <a
             href={`/reviews/${value.slug}/`}
             rel="canonical"
-            className="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-[#fff] before:opacity-15 hover:text-accent hover:underline hover:before:opacity-0"
+            className="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] before:tablet:opacity-15"
           >
             {value.title}
           </a>
