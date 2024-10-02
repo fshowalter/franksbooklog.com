@@ -1,6 +1,6 @@
 import { type Author, getAuthorDetails } from "src/api/authors";
 import { getAvatarImageProps } from "src/api/avatars";
-import { getFixedCoverImageProps } from "src/api/covers";
+import { getFluidCoverImageProps } from "src/api/covers";
 
 import { ListItemCoverImageConfig } from "../ListItemCover";
 import type { ListItemValue, Props } from "./Author";
@@ -33,7 +33,7 @@ export async function getProps(slug: string): Promise<Props> {
         sortTitle: work.sortTitle,
         gradeValue: work.gradeValue,
         reviewed: work.reviewed,
-        coverImageProps: await getFixedCoverImageProps(
+        coverImageProps: await getFluidCoverImageProps(
           work,
           ListItemCoverImageConfig,
         ),

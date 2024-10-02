@@ -38,7 +38,7 @@ export function MoreReviews({
     >
       <div className="relative mx-auto w-full max-w-screen-desktop">
         <div className="px-container">{children}</div>
-        <ul className="flex flex-wrap justify-center gap-x-[4%] gap-y-[6vw] px-[2%] tablet:justify-between tablet:gap-x-[3%] tablet:px-container">
+        <ul className="flex flex-wrap justify-center gap-x-[4%] gap-y-[6vw] px-[4%] tablet:justify-between tablet:gap-x-[3%] tablet:px-container">
           {values.map((value) => {
             return <MoreReviewsCard key={value.slug} value={value} />;
           })}
