@@ -8,6 +8,8 @@ import { Grade } from "./Grade";
 export const MoreReviewsImageConfig = {
   width: 248,
   height: 372,
+  sizes:
+    "(max-width: 561px) 46vw, (max-width: 767px) 248px, (max-width: 1186px) calc((100vw - 96px) * 0.2275), 248px",
 };
 
 interface Author extends Pick<Review["authors"][0], "name"> {}
@@ -32,11 +34,11 @@ export function MoreReviews({
   return (
     <nav
       data-pagefind-ignore
-      className="relative flex w-full flex-col items-center tablet:w-auto"
+      className="relative flex w-full flex-col items-center"
     >
-      <div className="relative mx-auto w-full max-w-screen-max desktop:px-20">
+      <div className="relative mx-auto w-full max-w-screen-desktop">
         <div className="px-container">{children}</div>
-        <ul className="flex flex-wrap justify-center gap-x-[4%] gap-y-[6vw] px-[2%] tablet:gap-x-[3%] tablet:px-container desktop:justify-between">
+        <ul className="flex flex-wrap justify-center gap-x-[4%] gap-y-[6vw] px-[2%] tablet:justify-between tablet:gap-x-[3%] tablet:px-container">
           {values.map((value) => {
             return <MoreReviewsCard key={value.slug} value={value} />;
           })}
