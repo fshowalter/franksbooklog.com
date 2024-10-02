@@ -80,7 +80,7 @@ export function Shelf({
           data-testid="list"
         >
           {(value) => {
-            return <ShelfListItem value={value} key={value.imdbId} />;
+            return <ShelfListItem value={value} key={value.slug} />;
           }}
         </GroupedList>
       }

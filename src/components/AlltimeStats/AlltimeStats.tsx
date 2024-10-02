@@ -28,7 +28,14 @@ export function AlltimeStats({
       className="flex flex-col items-center bg-subtle"
     >
       <StatsBackdrop
-        breadcrumb={<a href="/readings/">Reading Log</a>}
+        breadcrumb={
+          <a
+            className="decoration-2 underline-offset-8 hover:text-accent hover:underline"
+            href="/readings/"
+          >
+            Reading Log
+          </a>
+        }
         title="All-Time Stats"
         deck={`${(distinctStatYears.length - 1).toString()} Years in Review`}
       >
@@ -38,6 +45,7 @@ export function AlltimeStats({
             return `/readings/stats/${year}/`;
           }}
           years={distinctStatYears}
+          className="mb-8"
         />
         <Callouts
           workCount={stats.workCount}

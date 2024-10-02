@@ -25,117 +25,163 @@
     />
     <title>How I Grade | Frank&#39;s Book Log</title>
   </head>
-  <body class="data-[search-modal-open]:blur-sm">
-    <div>
-      <a
-        href="#content"
-        class="absolute left-1/2 top-0.5 z-50 mx-auto bg-subtle px-6 py-2 text-center text-accent [transform:translate(-50%,calc(-100%_-_2px))] focus:[transform:translate(-50%,0%)]"
-        >Skip to content</a
-      >
-      <div
-        class="image-filter mx-auto min-h-4 w-full max-w-canvas bg-[url(&#x27;/assets/ripnotcomingsoon.avif&#x27;)] desktop:sticky desktop:top-0 desktop:z-40"
-      ></div>
-      <div class="mx-auto flex min-h-full max-w-canvas flex-col bg-default">
-        <header
-          class="flex flex-col items-center gap-6 bg-default px-pageMargin py-6 text-center shadow-bottom desktop:sticky desktop:top-4 desktop:z-40 desktop:flex-row desktop:justify-between desktop:gap-8 desktop:py-5 desktop:text-left max:justify-center max:py-8"
+  <body>
+    <div data-pagefind-body>
+      <div>
+        <a
+          href="#content"
+          class="absolute left-1/2 top-0.5 z-50 mx-auto bg-subtle px-6 py-2 text-center text-accent [transform:translate(-50%,calc(-100%_-_2px))] focus:[transform:translate(-50%,0%)]"
+          >Skip to content</a
         >
-          <div
-            class="items-inherit justify-items-inherit flex flex-col max:absolute max:left-[var(--page-margin-width)]"
+        <div class="flex min-h-full w-full flex-col bg-default">
+          <header
+            class="z-20 flex w-full items-center justify-between px-container py-4 tablet:p-6 desktop:inset-x-0 desktop:z-40 desktop:flex-row desktop:flex-wrap desktop:px-16 desktop:py-8 desktop:text-left"
+            style="position: absolute"
           >
-            <h1
-              class="whitespace-nowrap text-[1.5625rem] font-normal leading-8"
-            >
-              <a class="text-default" href="/">Frank&#x27;s Book Log</a>
-            </h1>
-            <p class="w-full text-sm italic leading-4 text-muted desktop:pl-px">
-              Literature is a relative term.
-            </p>
-          </div>
-          <div
-            class="w-full max-w-prose desktop:order-4 desktop:w-auto max:absolute max:right-[var(--page-margin-width)]"
-          >
-            <button
-              data-open-modal="true"
-              disabled=""
-              aria-label="Search"
-              aria-keyshortcuts="Control+K"
-              class="safari-border-radius-fix flex w-full items-center overflow-hidden rounded-md text-sm leading-6 text-subtle ring-1 ring-border hover:ring-accent"
-            >
-              <kbd
-                class="ml-auto mt-px hidden min-h-6 flex-none items-center bg-subtle pl-3 pr-4 font-mono text-sm font-light opacity-70 desktop:flex"
-                ><kbd class="text-md leading-5">Ctrl</kbd
-                ><kbd class="text-sm">K</kbd></kbd
-              ><svg
-                class="mr-2 size-10 flex-none border-0 border-r border-default bg-subtle fill-subtle px-3 py-1 desktop:w-4 desktop:border-r-0 desktop:bg-unset desktop:px-0"
-                viewBox="0 0 16 16"
+            <div class="flex flex-col">
+              <div
+                class="whitespace-nowrap font-normal leading-8"
+                style="font-size: 1.5625rem"
               >
-                <path
-                  fill-rule="evenodd"
-                  d="M10.442 10.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z"
-                ></path>
-                <path
-                  fill-rule="evenodd"
-                  d="M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z"
-                ></path></svg
-              ><span
-                class="flex items-baseline whitespace-nowrap p-2 text-base opacity-70 desktop:hidden"
-                >Quick search...</span
-              >
-            </button>
-          </div>
-          <nav class="w-full desktop:w-auto">
-            <ul
-              class="flex flex-wrap justify-center gap-x-4 gap-y-2 text-accent tablet:gap-x-6 desktop:flex-nowrap desktop:justify-start"
-            >
-              <li class="block whitespace-nowrap tracking-0.5px">
-                <a class="text-muted" href="/">Home</a>
-              </li>
-              <li class="block whitespace-nowrap tracking-0.5px">
-                <a class="text-inherit" href="/how-i-grade/">How I Grade</a>
-              </li>
-              <li class="block whitespace-nowrap tracking-0.5px">
-                <a class="text-inherit" href="/reviews/">Reviews</a>
-              </li>
-              <li class="block whitespace-nowrap tracking-0.5px">
-                <a class="text-inherit" href="/readings/">Reading Log</a>
-              </li>
-              <li class="block whitespace-nowrap tracking-0.5px">
-                <a class="text-inherit" href="/authors/">Authors</a>
-              </li>
-              <li class="block whitespace-nowrap tracking-0.5px">
-                <a class="text-inherit" href="/shelf/">Shelf</a>
-              </li>
-            </ul>
-          </nav>
-        </header>
-        <div class="grow" id="content">
-          <div data-pagefind-body>
-            <main>
-              <article class="flex flex-col items-center">
-                <h1
-                  data-pagefind-meta="title"
-                  class="text-[2rem] font-normal leading-none desktop:text-[2.25rem] px-pageMargin py-6 text-center desktop:py-8"
+                <a href="/">Frank&#x27;s Book Log</a>
+              </div>
+              <p class="w-full pl-px text-sm italic leading-4 opacity-85">
+                Literature is a relative term.
+              </p>
+            </div>
+            <div class="flex items-center">
+              <nav class="hidden w-full desktop:block desktop:w-auto">
+                <ul class="flex flex-wrap justify-start gap-x-6 text-xl">
+                  <li class="tracking-serif-wide block whitespace-nowrap">
+                    <a
+                      class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
+                      href="/"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="tracking-serif-wide block whitespace-nowrap">
+                    <a
+                      class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
+                      href="/how-i-grade/"
+                      >How I Grade</a
+                    >
+                  </li>
+                  <li class="tracking-serif-wide block whitespace-nowrap">
+                    <a
+                      class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
+                      href="/reviews/"
+                      >Reviews</a
+                    >
+                  </li>
+                  <li class="tracking-serif-wide block whitespace-nowrap">
+                    <a
+                      class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
+                      href="/readings/"
+                      >Reading Log</a
+                    >
+                  </li>
+                  <li class="tracking-serif-wide block whitespace-nowrap">
+                    <a
+                      class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
+                      href="/authors/"
+                      >Authors</a
+                    >
+                  </li>
+                  <li class="tracking-serif-wide block whitespace-nowrap">
+                    <a
+                      class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
+                      href="/shelf/"
+                      >Shelf</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+              <div class="z-[1000]">
+                <button
+                  data-open-modal="true"
+                  disabled=""
+                  aria-label="Search"
+                  aria-keyshortcuts="Control+K"
+                  class="flex items-center justify-between overflow-hidden text-sm leading-6 ring-default desktop:ml-6"
+                  type="button"
+                  title="Search: Control+K"
                 >
-                  How I Grade
-                </h1>
-                <img
-                  srcset="
-                    /_image?/content%2Fassets%2Fbackdrops%2Fhow-i-grade.png%3ForigWidth%3D2000%26origHeight%3D1125%26origFormat%3Dpng&amp;w=240&amp;q=80&amp;f=avif   240w,
-                    /_image?/content%2Fassets%2Fbackdrops%2Fhow-i-grade.png%3ForigWidth%3D2000%26origHeight%3D1125%26origFormat%3Dpng&amp;w=480&amp;q=80&amp;f=avif   480w,
-                    /_image?/content%2Fassets%2Fbackdrops%2Fhow-i-grade.png%3ForigWidth%3D2000%26origHeight%3D1125%26origFormat%3Dpng&amp;w=960&amp;q=80&amp;f=avif   960w,
-                    /_image?/content%2Fassets%2Fbackdrops%2Fhow-i-grade.png%3ForigWidth%3D2000%26origHeight%3D1125%26origFormat%3Dpng&amp;w=1920&amp;q=80&amp;f=avif 1920w
-                  "
-                  src="/_image?/content%2Fassets%2Fbackdrops%2Fhow-i-grade.png%3ForigWidth%3D2000%26origHeight%3D1125%26origFormat%3Dpng&amp;w=960&amp;h=540&amp;q=80&amp;f=avif"
-                  width="960"
-                  height="540"
-                  sizes="(min-width: 960px) 960px, 100vw"
-                  loading="lazy"
-                  decoding="async"
-                  alt="Shelves teeming with books."
-                  class="mb-[5.33px]"
-                />
-                <div class="spacer-y-16"></div>
-                <div class="px-pageMargin">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6 desktop:size-7"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+              <input type="checkbox" id="mobile-nav" class="hidden" /><label
+                for="mobile-nav"
+                class="hamburger-icon desktop:hidden"
+                ><span
+                  style="background: #fff"
+                  class="hamburger-icon-bars"
+                ></span
+              ></label>
+              <ul
+                class="hamburger-menu flex flex-col items-start gap-y-5 text-left text-inverse desktop:hidden"
+              >
+                <li class="block w-1/2 whitespace-nowrap text-2xl">
+                  <a href="/">Home</a>
+                </li>
+                <li class="block w-1/2 whitespace-nowrap text-2xl">
+                  <a href="/how-i-grade/">How I Grade</a>
+                </li>
+                <li class="block w-1/2 whitespace-nowrap text-2xl">
+                  <a href="/reviews/">Reviews</a>
+                </li>
+                <li class="block w-1/2 whitespace-nowrap text-2xl">
+                  <a href="/readings/">Reading Log</a>
+                  <ol class="mt-4">
+                    <li
+                      class="text-inverse-subtle mb-2 font-sans text-xs uppercase tracking-wide"
+                    >
+                      <a href="/readings/stats/">Stats</a>
+                    </li>
+                  </ol>
+                </li>
+                <li class="block w-1/2 whitespace-nowrap text-2xl">
+                  <a href="/authors/">Authors</a>
+                </li>
+                <li class="block w-1/2 whitespace-nowrap text-2xl">
+                  <a href="/shelf/">Shelf</a>
+                </li>
+              </ul>
+            </div>
+          </header>
+          <main class="grow" id="content">
+            <article>
+              <header
+                class="min-h-[240px] desktop:min-h-[clamp(640px,50vh,1350px)] relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pb-8 pt-40 tablet:pb-10 tablet:pt-40 desktop:pb-16 desktop:pt-40"
+              >
+                <div
+                  class="z-10 mx-auto flex w-full max-w-screen-max flex-col px-container"
+                >
+                  <h1
+                    class="font-sans text-2xl font-bold uppercase tracking-widest desktop:text-7xl"
+                  >
+                    How I Grade
+                  </h1>
+                  <p class="mt-1 text-base desktop:my-4 desktop:text-xl">
+                    &quot;A work of art is never completed, only
+                    abandoned.&quot;
+                  </p>
+                </div>
+              </header>
+              <section class="flex flex-col items-center pb-32 pt-16">
+                <div class="px-container">
                   <div
                     class="rendered-markdown font-light text-md/7 tracking-0.3px tablet:text-xl/8 max-w-prose"
                   >
@@ -256,71 +302,121 @@
                     <p>I can only hope.</p>
                   </div>
                 </div>
-                <div class="spacer-y-32"></div>
-              </article>
-              <div
-                class="flex w-full max-w-popout items-center justify-center bg-default tablet:max-w-full tablet:bg-subtle tablet:pb-32 tablet:pt-8"
+              </section>
+            </article>
+            <div
+              data-pagefind-ignore="true"
+              class="flex w-full flex-col items-center gap-y-12 bg-subtle pb-32 pt-16 tablet:pt-8 desktop:gap-y-24"
+            >
+              <nav
+                data-pagefind-ignore="true"
+                class="relative flex w-full flex-col items-center tablet:w-auto"
               >
-                <nav
-                  class="relative flex w-full flex-col items-center tablet:w-auto"
+                <div
+                  class="relative mx-auto w-full max-w-screen-max px-container desktop:px-20"
                 >
-                  <div
-                    class="w-full px-gutter py-2 shadow-bottom tablet:py-4 tablet:shadow-none desktop:px-pageMargin desktop:py-4"
+                  <h2
+                    class="py-10 font-sans text-xs font-semibold uppercase tracking-wide text-subtle"
                   >
-                    <span class="font-semibold text-muted">Latest<!-- --> </span
-                    ><a class="text-accent" href="/reviews/">Reviews</a>
-                  </div>
+                    Recent<!-- -->
+                    <a href="/reviews/" class="text-accent">Reviews</a>
+                  </h2>
                   <ul
-                    class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-11 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
+                    class="flex flex-wrap justify-center gap-x-[3%] gap-y-[6vw] desktop:justify-between"
                   >
                     <li
-                      class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+                      class="relative flex w-[48.5%] max-w-[248px] flex-col items-center border-default bg-default tablet:w-[22.75%]"
                     >
-                      <a
-                        href="/reviews/fast-forward-by-stephen-morris/"
-                        class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
-                        ><img
-                          srcset="
-                            /_image?/content%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=44&amp;q=80&amp;f=avif   44w,
-                            /_image?/content%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=88&amp;q=80&amp;f=avif   88w,
-                            /_image?/content%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;q=80&amp;f=avif 176w,
-                            /_image?/content%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=352&amp;q=80&amp;f=avif 352w
-                          "
-                          src="/_image?/content%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;h=264&amp;q=80&amp;f=avif"
-                          alt="A cover for Fast Forward: Confessions of a Post-Punk Percussionist: Volume II by Stephen Morris"
-                          height="264"
-                          width="176"
-                          class="aspect-[0.66666667]"
-                          loading="lazy"
-                          decoding="async"
-                          style="aspect-ratio: 0.66666667"
-                      /></a>
-                      <div class="tablet:spacer-y-2"></div>
+                      <img
+                        srcset="
+                          /_image?/content%2Fassets%2Fcovers%2Frecessional-by-david-mamet.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=44&amp;q=80&amp;f=avif   44w,
+                          /_image?/content%2Fassets%2Fcovers%2Frecessional-by-david-mamet.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=88&amp;q=80&amp;f=avif   88w,
+                          /_image?/content%2Fassets%2Fcovers%2Frecessional-by-david-mamet.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;q=80&amp;f=avif 176w,
+                          /_image?/content%2Fassets%2Fcovers%2Frecessional-by-david-mamet.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=352&amp;q=80&amp;f=avif 352w
+                        "
+                        src="/_image?/content%2Fassets%2Fcovers%2Frecessional-by-david-mamet.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;h=264&amp;q=80&amp;f=avif"
+                        alt=""
+                        width="248"
+                        height="372"
+                        loading="lazy"
+                        decoding="async"
+                        style="aspect-ratio: 0.66666667"
+                      />
                       <div
-                        class="flex grow flex-col tablet:w-full tablet:items-center"
+                        class="flex grow flex-col items-center px-[8%] pb-8 pt-3 desktop:pl-[8.5%] desktop:pr-[10%]"
                       >
-                        <div class="tablet:spacer-y-1"></div>
-                        <a
-                          href="/reviews/fast-forward-by-stephen-morris/"
-                          class="block text-md leading-5 text-accent tablet:text-center tablet:text-base tablet:leading-5 desktop:text-md"
-                          >Fast Forward</a
-                        >
-                        <div class="spacer-y-1 tablet:spacer-y-2"></div>
-                        <div
-                          class="text-base leading-5 text-muted text-left tablet:text-center"
-                        >
-                          Stephen Morris
+                        <div class="text-center text-md font-medium leading-6">
+                          <a
+                            href="/reviews/recessional-by-david-mamet/"
+                            rel="canonical"
+                            class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-[#fff] before:opacity-15 hover:text-accent hover:underline hover:before:opacity-0"
+                            >Recessional</a
+                          >
                         </div>
-                        <div class="spacer-y-3"></div>
                         <div
-                          class="text-sm leading-4 tracking-0.5px text-subtle text-left tablet:text-center"
+                          class="py-2 text-center font-sans text-xxs font-light uppercase leading-4 tracking-wide text-subtle"
                         >
-                          <span
-                            >2020<!-- -->
-                            | </span
-                          >Nonfiction
+                          2022<!-- -->
+                          |<!-- -->
+                          <span class="whitespace-nowrap">Nonfiction</span>
                         </div>
-                        <div class="spacer-y-3"></div>
+                        <p class="text-center text-base text-subtle">
+                          by
+                          <!-- -->David Mamet
+                        </p>
+                        <picture
+                          ><source
+                            srcset="/svg/2-stars-dark.svg"
+                            media="(prefers-color-scheme: dark)" />
+                          <img
+                            src="/svg/2-stars.svg"
+                            alt="D: 2 stars (out of 5)"
+                            height="18"
+                            width="90"
+                            class="mt-2"
+                        /></picture>
+                      </div>
+                    </li>
+                    <li
+                      class="relative flex w-[48.5%] max-w-[248px] flex-col items-center border-default bg-default tablet:w-[22.75%]"
+                    >
+                      <img
+                        srcset="
+                          /_image?/content%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=44&amp;q=80&amp;f=avif   44w,
+                          /_image?/content%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=88&amp;q=80&amp;f=avif   88w,
+                          /_image?/content%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;q=80&amp;f=avif 176w,
+                          /_image?/content%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=352&amp;q=80&amp;f=avif 352w
+                        "
+                        src="/_image?/content%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;h=264&amp;q=80&amp;f=avif"
+                        alt=""
+                        width="248"
+                        height="372"
+                        loading="lazy"
+                        decoding="async"
+                        style="aspect-ratio: 0.66666667"
+                      />
+                      <div
+                        class="flex grow flex-col items-center px-[8%] pb-8 pt-3 desktop:pl-[8.5%] desktop:pr-[10%]"
+                      >
+                        <div class="text-center text-md font-medium leading-6">
+                          <a
+                            href="/reviews/fast-forward-by-stephen-morris/"
+                            rel="canonical"
+                            class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-[#fff] before:opacity-15 hover:text-accent hover:underline hover:before:opacity-0"
+                            >Fast Forward</a
+                          >
+                        </div>
+                        <div
+                          class="py-2 text-center font-sans text-xxs font-light uppercase leading-4 tracking-wide text-subtle"
+                        >
+                          2020<!-- -->
+                          |<!-- -->
+                          <span class="whitespace-nowrap">Nonfiction</span>
+                        </div>
+                        <p class="text-center text-base text-subtle">
+                          by
+                          <!-- -->Stephen Morris
+                        </p>
                         <picture
                           ><source
                             srcset="/svg/4-half-stars-dark.svg"
@@ -328,60 +424,52 @@
                           <img
                             src="/svg/4-half-stars.svg"
                             alt="A-: 4.5 stars (out of 5)"
-                            height="16"
-                            width="80"
+                            height="18"
+                            width="90"
+                            class="mt-2"
                         /></picture>
-                        <div class="spacer-y-2"></div>
                       </div>
                     </li>
                     <li
-                      class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+                      class="relative flex w-[48.5%] max-w-[248px] flex-col items-center border-default bg-default tablet:w-[22.75%]"
                     >
-                      <a
-                        href="/reviews/gothic-by-philip-fracassi/"
-                        class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
-                        ><img
-                          srcset="
-                            /_image?/content%2Fassets%2Fcovers%2Fgothic-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=44&amp;q=80&amp;f=avif   44w,
-                            /_image?/content%2Fassets%2Fcovers%2Fgothic-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=88&amp;q=80&amp;f=avif   88w,
-                            /_image?/content%2Fassets%2Fcovers%2Fgothic-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;q=80&amp;f=avif 176w,
-                            /_image?/content%2Fassets%2Fcovers%2Fgothic-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=352&amp;q=80&amp;f=avif 352w
-                          "
-                          src="/_image?/content%2Fassets%2Fcovers%2Fgothic-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;h=264&amp;q=80&amp;f=avif"
-                          alt="A cover for Gothic by Philip Fracassi"
-                          height="264"
-                          width="176"
-                          class="aspect-[0.66666667]"
-                          loading="lazy"
-                          decoding="async"
-                          style="aspect-ratio: 0.66666667"
-                      /></a>
-                      <div class="tablet:spacer-y-2"></div>
+                      <img
+                        srcset="
+                          /_image?/content%2Fassets%2Fcovers%2Fgothic-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=44&amp;q=80&amp;f=avif   44w,
+                          /_image?/content%2Fassets%2Fcovers%2Fgothic-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=88&amp;q=80&amp;f=avif   88w,
+                          /_image?/content%2Fassets%2Fcovers%2Fgothic-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;q=80&amp;f=avif 176w,
+                          /_image?/content%2Fassets%2Fcovers%2Fgothic-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=352&amp;q=80&amp;f=avif 352w
+                        "
+                        src="/_image?/content%2Fassets%2Fcovers%2Fgothic-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;h=264&amp;q=80&amp;f=avif"
+                        alt=""
+                        width="248"
+                        height="372"
+                        loading="lazy"
+                        decoding="async"
+                        style="aspect-ratio: 0.66666667"
+                      />
                       <div
-                        class="flex grow flex-col tablet:w-full tablet:items-center"
+                        class="flex grow flex-col items-center px-[8%] pb-8 pt-3 desktop:pl-[8.5%] desktop:pr-[10%]"
                       >
-                        <div class="tablet:spacer-y-1"></div>
-                        <a
-                          href="/reviews/gothic-by-philip-fracassi/"
-                          class="block text-md leading-5 text-accent tablet:text-center tablet:text-base tablet:leading-5 desktop:text-md"
-                          >Gothic</a
-                        >
-                        <div class="spacer-y-1 tablet:spacer-y-2"></div>
-                        <div
-                          class="text-base leading-5 text-muted text-left tablet:text-center"
-                        >
-                          Philip Fracassi
+                        <div class="text-center text-md font-medium leading-6">
+                          <a
+                            href="/reviews/gothic-by-philip-fracassi/"
+                            rel="canonical"
+                            class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-[#fff] before:opacity-15 hover:text-accent hover:underline hover:before:opacity-0"
+                            >Gothic</a
+                          >
                         </div>
-                        <div class="spacer-y-3"></div>
                         <div
-                          class="text-sm leading-4 tracking-0.5px text-subtle text-left tablet:text-center"
+                          class="py-2 text-center font-sans text-xxs font-light uppercase leading-4 tracking-wide text-subtle"
                         >
-                          <span
-                            >2023<!-- -->
-                            | </span
-                          >Novel
+                          2023<!-- -->
+                          |<!-- -->
+                          <span class="whitespace-nowrap">Novel</span>
                         </div>
-                        <div class="spacer-y-3"></div>
+                        <p class="text-center text-base text-subtle">
+                          by
+                          <!-- -->Philip Fracassi
+                        </p>
                         <picture
                           ><source
                             srcset="/svg/4-stars-dark.svg"
@@ -389,60 +477,52 @@
                           <img
                             src="/svg/4-stars.svg"
                             alt="B+: 4 stars (out of 5)"
-                            height="16"
-                            width="80"
+                            height="18"
+                            width="90"
+                            class="mt-2"
                         /></picture>
-                        <div class="spacer-y-2"></div>
                       </div>
                     </li>
                     <li
-                      class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+                      class="relative flex w-[48.5%] max-w-[248px] flex-col items-center border-default bg-default tablet:w-[22.75%]"
                     >
-                      <a
-                        href="/reviews/record-play-pause-by-stephen-morris/"
-                        class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
-                        ><img
-                          srcset="
-                            /_image?/content%2Fassets%2Fcovers%2Frecord-play-pause-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=44&amp;q=80&amp;f=avif   44w,
-                            /_image?/content%2Fassets%2Fcovers%2Frecord-play-pause-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=88&amp;q=80&amp;f=avif   88w,
-                            /_image?/content%2Fassets%2Fcovers%2Frecord-play-pause-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;q=80&amp;f=avif 176w,
-                            /_image?/content%2Fassets%2Fcovers%2Frecord-play-pause-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=352&amp;q=80&amp;f=avif 352w
-                          "
-                          src="/_image?/content%2Fassets%2Fcovers%2Frecord-play-pause-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;h=264&amp;q=80&amp;f=avif"
-                          alt="A cover for Record Play Pause by Stephen Morris"
-                          height="264"
-                          width="176"
-                          class="aspect-[0.66666667]"
-                          loading="lazy"
-                          decoding="async"
-                          style="aspect-ratio: 0.66666667"
-                      /></a>
-                      <div class="tablet:spacer-y-2"></div>
+                      <img
+                        srcset="
+                          /_image?/content%2Fassets%2Fcovers%2Frecord-play-pause-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=44&amp;q=80&amp;f=avif   44w,
+                          /_image?/content%2Fassets%2Fcovers%2Frecord-play-pause-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=88&amp;q=80&amp;f=avif   88w,
+                          /_image?/content%2Fassets%2Fcovers%2Frecord-play-pause-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;q=80&amp;f=avif 176w,
+                          /_image?/content%2Fassets%2Fcovers%2Frecord-play-pause-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=352&amp;q=80&amp;f=avif 352w
+                        "
+                        src="/_image?/content%2Fassets%2Fcovers%2Frecord-play-pause-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;h=264&amp;q=80&amp;f=avif"
+                        alt=""
+                        width="248"
+                        height="372"
+                        loading="lazy"
+                        decoding="async"
+                        style="aspect-ratio: 0.66666667"
+                      />
                       <div
-                        class="flex grow flex-col tablet:w-full tablet:items-center"
+                        class="flex grow flex-col items-center px-[8%] pb-8 pt-3 desktop:pl-[8.5%] desktop:pr-[10%]"
                       >
-                        <div class="tablet:spacer-y-1"></div>
-                        <a
-                          href="/reviews/record-play-pause-by-stephen-morris/"
-                          class="block text-md leading-5 text-accent tablet:text-center tablet:text-base tablet:leading-5 desktop:text-md"
-                          >Record Play Pause</a
-                        >
-                        <div class="spacer-y-1 tablet:spacer-y-2"></div>
-                        <div
-                          class="text-base leading-5 text-muted text-left tablet:text-center"
-                        >
-                          Stephen Morris
+                        <div class="text-center text-md font-medium leading-6">
+                          <a
+                            href="/reviews/record-play-pause-by-stephen-morris/"
+                            rel="canonical"
+                            class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-[#fff] before:opacity-15 hover:text-accent hover:underline hover:before:opacity-0"
+                            >Record Play Pause</a
+                          >
                         </div>
-                        <div class="spacer-y-3"></div>
                         <div
-                          class="text-sm leading-4 tracking-0.5px text-subtle text-left tablet:text-center"
+                          class="py-2 text-center font-sans text-xxs font-light uppercase leading-4 tracking-wide text-subtle"
                         >
-                          <span
-                            >2019<!-- -->
-                            | </span
-                          >Nonfiction
+                          2019<!-- -->
+                          |<!-- -->
+                          <span class="whitespace-nowrap">Nonfiction</span>
                         </div>
-                        <div class="spacer-y-3"></div>
+                        <p class="text-center text-base text-subtle">
+                          by
+                          <!-- -->Stephen Morris
+                        </p>
                         <picture
                           ><source
                             srcset="/svg/5-stars-dark.svg"
@@ -450,142 +530,106 @@
                           <img
                             src="/svg/5-stars.svg"
                             alt="A: 5 stars (out of 5)"
-                            height="16"
-                            width="80"
+                            height="18"
+                            width="90"
+                            class="mt-2"
                         /></picture>
-                        <div class="spacer-y-2"></div>
                       </div>
-                    </li>
-                    <li
-                      class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
-                    >
-                      <a
-                        href="/reviews/fright-night-origins-by-tom-holland-a-jack-ulrich/"
-                        class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
-                        ><img
-                          srcset="
-                            /_image?/content%2Fassets%2Fcovers%2Ffright-night-origins-by-tom-holland-a-jack-ulrich.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=44&amp;q=80&amp;f=avif   44w,
-                            /_image?/content%2Fassets%2Fcovers%2Ffright-night-origins-by-tom-holland-a-jack-ulrich.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=88&amp;q=80&amp;f=avif   88w,
-                            /_image?/content%2Fassets%2Fcovers%2Ffright-night-origins-by-tom-holland-a-jack-ulrich.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;q=80&amp;f=avif 176w,
-                            /_image?/content%2Fassets%2Fcovers%2Ffright-night-origins-by-tom-holland-a-jack-ulrich.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=352&amp;q=80&amp;f=avif 352w
-                          "
-                          src="/_image?/content%2Fassets%2Fcovers%2Ffright-night-origins-by-tom-holland-a-jack-ulrich.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;h=264&amp;q=80&amp;f=avif"
-                          alt="A cover for Fright Night Origins by Tom Holland and A. Jack Ulrich"
-                          height="264"
-                          width="176"
-                          class="aspect-[0.66666667]"
-                          loading="lazy"
-                          decoding="async"
-                          style="aspect-ratio: 0.66666667"
-                      /></a>
-                      <div class="tablet:spacer-y-2"></div>
-                      <div
-                        class="flex grow flex-col tablet:w-full tablet:items-center"
-                      >
-                        <div class="tablet:spacer-y-1"></div>
-                        <a
-                          href="/reviews/fright-night-origins-by-tom-holland-a-jack-ulrich/"
-                          class="block text-md leading-5 text-accent tablet:text-center tablet:text-base tablet:leading-5 desktop:text-md"
-                          >Fright Night Origins</a
-                        >
-                        <div class="spacer-y-1 tablet:spacer-y-2"></div>
-                        <div
-                          class="text-base leading-5 text-muted text-left tablet:text-center"
-                        >
-                          Tom Holland<!-- -->
-                          and
-                          <!-- -->A. Jack Ulrich
-                        </div>
-                        <div class="spacer-y-3"></div>
-                        <div
-                          class="text-sm leading-4 tracking-0.5px text-subtle text-left tablet:text-center"
-                        >
-                          <span
-                            >2023<!-- -->
-                            | </span
-                          >Novel
-                        </div>
-                        <div class="spacer-y-3"></div>
-                        <picture
-                          ><source
-                            srcset="/svg/3-stars-dark.svg"
-                            media="(prefers-color-scheme: dark)" />
-                          <img
-                            src="/svg/3-stars.svg"
-                            alt="C+: 3 stars (out of 5)"
-                            height="16"
-                            width="80"
-                        /></picture>
-                        <div class="spacer-y-2"></div>
-                      </div>
-                    </li>
-                    <li
-                      class="col-span-full block px-gutter py-4 text-right shadow-bottom tablet:absolute tablet:right-0 tablet:top-0 tablet:shadow-none desktop:right-[var(--gutter-width)]"
-                    >
-                      <a href="/reviews/" class="text-accent"
-                        >All<!-- -->
-                        <span class="inline tablet:hidden desktop:inline"
-                          >Reviews</span
-                        >
-                        <!-- -->→</a
-                      >
                     </li>
                   </ul>
-                </nav>
-              </div>
-            </main>
-          </div>
-        </div>
-        <footer
-          class="flex flex-col items-center gap-y-6 bg-[url(&#x27;/assets/ripnotcomingsoon.avif&#x27;)] px-pageMargin py-8 text-inverse"
-        >
-          <ul
-            class="flex w-full flex-wrap justify-center gap-x-4 gap-y-2 text-inverse tablet:gap-x-6 max:w-auto"
+                </div>
+              </nav>
+            </div>
+          </main>
+          <footer
+            class="bg-footer flex flex-wrap items-start justify-between gap-[10%] px-container py-20 text-inverse tablet:px-12 tablet:pt-10 desktop:p-20"
           >
-            <li class="block whitespace-nowrap tracking-0.5px">
-              <a class="text-inverse" href="/">Home</a>
-            </li>
-            <li class="block whitespace-nowrap tracking-0.5px">
-              <a class="text-inherit" href="/how-i-grade/">How I Grade</a>
-            </li>
-            <li class="block whitespace-nowrap tracking-0.5px">
-              <a class="text-inherit" href="/reviews/">Reviews</a>
-            </li>
-            <li class="block whitespace-nowrap tracking-0.5px">
-              <a class="text-inherit" href="/readings/">Reading Log</a>
-            </li>
-            <li class="block whitespace-nowrap tracking-0.5px">
-              <a class="text-inherit" href="/authors/">Authors</a>
-            </li>
-            <li class="block whitespace-nowrap tracking-0.5px">
-              <a class="text-inherit" href="/shelf/">Shelf</a>
-            </li>
-          </ul>
-          <p class="text-sm font-light leading-4">
-            All images used in accordance with the<!-- -->
-            <a
-              href="http://www.copyright.gov/title17/92chap1.html#107"
-              class="text-inherit"
-              >Fair Use Law.</a
+            <div class="flex flex-col pb-12">
+              <div class="flex flex-col">
+                <div
+                  class="whitespace-nowrap font-normal leading-8"
+                  style="font-size: 1.5625rem"
+                >
+                  <a href="/">Frank&#x27;s Book Log</a>
+                </div>
+                <p class="w-full pl-px text-sm italic leading-4 opacity-85">
+                  Literature is a relative term.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex flex-col gap-20 pb-20 pt-10 tablet:basis-1/2 tablet:pt-20"
             >
-          </p>
-          <a href="#top" class="sr-only">To the top ↑</a>
-        </footer>
+              <ul class="flex w-full flex-col gap-y-10 text-inverse max:w-auto">
+                <li class="block w-1/2 whitespace-nowrap text-2xl">
+                  <a class="hover:text-accent" href="/">Home</a>
+                </li>
+                <li class="block w-1/2 whitespace-nowrap text-2xl">
+                  <a class="hover:text-accent" href="/how-i-grade/"
+                    >How I Grade</a
+                  >
+                </li>
+                <li class="block w-1/2 whitespace-nowrap text-2xl">
+                  <a class="hover:text-accent" href="/reviews/">Reviews</a>
+                </li>
+                <li class="block w-1/2 whitespace-nowrap text-2xl">
+                  <a class="hover:text-accent" href="/readings/">Reading Log</a>
+                  <ol class="mt-4">
+                    <li
+                      class="text-inverse-subtle mb-2 font-sans text-xs uppercase tracking-wide"
+                    >
+                      <a class="hover:text-inverse" href="/readings/stats/"
+                        >Stats</a
+                      >
+                    </li>
+                  </ol>
+                </li>
+                <li class="block w-1/2 whitespace-nowrap text-2xl">
+                  <a class="hover:text-accent" href="/authors/">Authors</a>
+                </li>
+                <li class="block w-1/2 whitespace-nowrap text-2xl">
+                  <a class="hover:text-accent" href="/shelf/">Shelf</a>
+                </li>
+              </ul>
+              <a
+                href="#top"
+                class="mb-8 w-full max-w-button bg-canvas py-5 text-center font-sans text-xs uppercase tracking-wide text-default hover:bg-inverse hover:text-inverse"
+                >To the top</a
+              >
+              <p class="text-inverse-subtle w-full font-normal leading-4">
+                All covers used in accordance with the<!-- -->
+                <a
+                  href="http://www.copyright.gov/title17/92chap1.html#107"
+                  class="text-inherit underline decoration-2 underline-offset-4 hover:bg-default hover:text-default"
+                  >Fair Use Law.</a
+                >
+              </p>
+            </div>
+          </footer>
+        </div>
       </div>
     </div>
     <dialog
-      class="relative m-0 h-screen max-h-none w-screen max-w-unset border border-default bg-canvas shadow-lg open:flex open:flex-col tablet:mx-auto tablet:mt-16 tablet:h-min tablet:max-h-[min(100vh_-_128px,900px)] tablet:min-h-60 tablet:max-w-[min(100vw_-_2_*_var(--gutter-width),36rem)] tablet:rounded-xl desktop:min-h-0"
+      class="relative m-0 h-screen max-h-none w-screen max-w-unset border border-default bg-subtle shadow-lg open:flex open:flex-col tablet:mx-auto tablet:mt-16 tablet:h-min tablet:max-h-[min(100vh_-_128px,900px)] tablet:min-h-60 tablet:max-w-[min(100vw_-_64px,36rem)] tablet:rounded-xl desktop:min-h-0"
       aria-label="Search"
     >
       <div data-dialog-frame class="contents">
-        <button data-close-modal>Cancel</button>
+        <button
+          data-close-modal
+          class="px-4 font-sans text-sm font-light hover:bg-inverse hover:text-inverse focus:outline-accent"
+        >
+          Cancel
+        </button>
         <div class="contents"><div id="pagefind__search"></div></div>
-        <div class="hidden px-gutter py-4 desktop:block">
+        <div
+          class="hidden px-[var(--search-dialog-padding)] py-4 font-sans text-xs font-light tracking-wide text-subtle desktop:block"
+        >
           <kbd class="rounded-md bg-default p-2 font-mono text-xs text-subtle"
             >Tab</kbd
           >
           to navigate
-          <kbd class="rounded-md bg-subtle p-2 font-mono text-xs text-subtle"
+          <kbd
+            class="ml-4 rounded-md bg-default p-2 font-mono text-xs text-subtle"
             >ESC</kbd
           >
           to close
@@ -595,14 +639,11 @@
     <script>
       (() => {
         const openBtn = document.querySelector("button[data-open-modal]");
-        const shortcut = openBtn?.querySelector("kbd");
-        if (!openBtn || !(shortcut instanceof HTMLElement)) return;
-        const platformKey = shortcut.querySelector("kbd");
-        if (platformKey && /(Mac|iPhone|iPod|iPad)/i.test(navigator.platform)) {
-          platformKey.textContent = "⌘";
+        if (!openBtn) return;
+        if (/(Mac|iPhone|iPod|iPad)/i.test(navigator.platform)) {
           openBtn.setAttribute("aria-keyshortcuts", "Meta+K");
+          openBtn.setAttribute("title", `Search: ⌘K`);
         }
-        shortcut.style.display = "";
       })();
     </script>
   </body>

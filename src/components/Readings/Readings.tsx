@@ -146,7 +146,7 @@ function ReadingListItem({ value }: { value: ListItemValue }): JSX.Element {
   return (
     <ListItem>
       <ListItemCover imageProps={value.coverImageProps} />
-      <div className="flex grow flex-col gap-y-1 tablet:gap-y-2">
+      <div className="flex grow flex-col items-start gap-y-1 tablet:w-full tablet:gap-y-2 desktop:pr-4">
         <TitleAndProgress
           title={value.title}
           progress={value.progress}
@@ -158,10 +158,14 @@ function ReadingListItem({ value }: { value: ListItemValue }): JSX.Element {
           className="font-sans text-xs leading-5 text-muted"
         />
         <ListItemKindAndYear year={value.yearPublished} kind={value.kind} />
+        <div className="font-sans text-xs font-light leading-4 text-subtle">
+          {value.edition}
+        </div>
+
         {value.progress === "Abandoned" ? (
           <div>Abandoned</div>
         ) : (
-          <div className="grid grid-cols-[1fr,auto] items-center">
+          <div className="grid grid-cols-[1fr,auto] items-center self-stretch">
             <div className="flex h-[6px] flex-col bg-subtle">
               <BarGradient value={progressValue} maxValue={100} />
             </div>
@@ -170,9 +174,6 @@ function ReadingListItem({ value }: { value: ListItemValue }): JSX.Element {
             </span>
           </div>
         )}
-        <div className="font-sans text-xs font-light leading-4 text-subtle">
-          {value.edition}
-        </div>
       </div>
     </ListItem>
   );

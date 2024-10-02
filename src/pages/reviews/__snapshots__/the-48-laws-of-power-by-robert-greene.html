@@ -27,164 +27,156 @@
     />
     <title>The 48 Laws of Power by Robert Greene | Frank&#39;s Book Log</title>
   </head>
-  <body class="data-[search-modal-open]:blur-sm">
+  <body>
     <div>
       <a
         href="#content"
         class="absolute left-1/2 top-0.5 z-50 mx-auto bg-subtle px-6 py-2 text-center text-accent [transform:translate(-50%,calc(-100%_-_2px))] focus:[transform:translate(-50%,0%)]"
         >Skip to content</a
       >
-      <div
-        class="image-filter mx-auto min-h-4 w-full max-w-canvas bg-[url(&#x27;/assets/ripnotcomingsoon.avif&#x27;)] desktop:sticky desktop:top-0 desktop:z-40"
-      ></div>
-      <div class="mx-auto flex min-h-full max-w-canvas flex-col bg-default">
+      <div class="flex min-h-full w-full flex-col bg-default">
         <header
-          class="flex flex-col items-center gap-6 bg-default px-pageMargin py-6 text-center shadow-bottom desktop:sticky desktop:top-4 desktop:z-40 desktop:flex-row desktop:justify-between desktop:gap-8 desktop:py-5 desktop:text-left max:justify-center max:py-8"
+          class="z-20 flex w-full items-center justify-between px-container py-4 tablet:p-6 desktop:inset-x-0 desktop:z-40 desktop:flex-row desktop:flex-wrap desktop:px-16 desktop:py-8 desktop:text-left"
+          style="position: static"
         >
-          <div
-            class="items-inherit justify-items-inherit flex flex-col max:absolute max:left-[var(--page-margin-width)]"
-          >
-            <h1
-              class="whitespace-nowrap text-[1.5625rem] font-normal leading-8"
+          <div class="flex flex-col">
+            <div
+              class="whitespace-nowrap font-normal leading-8"
+              style="font-size: 1.5625rem"
             >
-              <a class="text-default" href="/">Frank&#x27;s Book Log</a>
-            </h1>
-            <p class="w-full text-sm italic leading-4 text-muted desktop:pl-px">
+              <a href="/">Frank&#x27;s Book Log</a>
+            </div>
+            <p class="w-full pl-px text-sm italic leading-4 opacity-85">
               Literature is a relative term.
             </p>
           </div>
-          <div
-            class="w-full max-w-prose desktop:order-4 desktop:w-auto max:absolute max:right-[var(--page-margin-width)]"
-          >
-            <button
-              data-open-modal="true"
-              disabled=""
-              aria-label="Search"
-              aria-keyshortcuts="Control+K"
-              class="safari-border-radius-fix flex w-full items-center overflow-hidden rounded-md text-sm leading-6 text-subtle ring-1 ring-border hover:ring-accent"
-            >
-              <kbd
-                class="ml-auto mt-px hidden min-h-6 flex-none items-center bg-subtle pl-3 pr-4 font-mono text-sm font-light opacity-70 desktop:flex"
-                ><kbd class="text-md leading-5">Ctrl</kbd
-                ><kbd class="text-sm">K</kbd></kbd
-              ><svg
-                class="mr-2 size-10 flex-none border-0 border-r border-default bg-subtle fill-subtle px-3 py-1 desktop:w-4 desktop:border-r-0 desktop:bg-unset desktop:px-0"
-                viewBox="0 0 16 16"
+          <div class="flex items-center">
+            <nav class="hidden w-full desktop:block desktop:w-auto">
+              <ul class="flex flex-wrap justify-start gap-x-6 text-xl">
+                <li class="tracking-serif-wide block whitespace-nowrap">
+                  <a
+                    class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
+                    href="/"
+                    >Home</a
+                  >
+                </li>
+                <li class="tracking-serif-wide block whitespace-nowrap">
+                  <a
+                    class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
+                    href="/how-i-grade/"
+                    >How I Grade</a
+                  >
+                </li>
+                <li class="tracking-serif-wide block whitespace-nowrap">
+                  <a
+                    class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
+                    href="/reviews/"
+                    >Reviews</a
+                  >
+                </li>
+                <li class="tracking-serif-wide block whitespace-nowrap">
+                  <a
+                    class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
+                    href="/readings/"
+                    >Reading Log</a
+                  >
+                </li>
+                <li class="tracking-serif-wide block whitespace-nowrap">
+                  <a
+                    class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
+                    href="/authors/"
+                    >Authors</a
+                  >
+                </li>
+                <li class="tracking-serif-wide block whitespace-nowrap">
+                  <a
+                    class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
+                    href="/shelf/"
+                    >Shelf</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <div class="z-[1000]">
+              <button
+                data-open-modal="true"
+                disabled=""
+                aria-label="Search"
+                aria-keyshortcuts="Control+K"
+                class="flex items-center justify-between overflow-hidden text-sm leading-6 ring-default desktop:ml-6"
+                type="button"
+                title="Search: Control+K"
               >
-                <path
-                  fill-rule="evenodd"
-                  d="M10.442 10.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z"
-                ></path>
-                <path
-                  fill-rule="evenodd"
-                  d="M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z"
-                ></path></svg
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6 desktop:size-7"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <input type="checkbox" id="mobile-nav" class="hidden" /><label
+              for="mobile-nav"
+              class="hamburger-icon desktop:hidden"
               ><span
-                class="flex items-baseline whitespace-nowrap p-2 text-base opacity-70 desktop:hidden"
-                >Quick search...</span
-              >
-            </button>
-          </div>
-          <nav class="w-full desktop:w-auto">
+                style="background: var(--fg-default)"
+                class="hamburger-icon-bars"
+              ></span
+            ></label>
             <ul
-              class="flex flex-wrap justify-center gap-x-4 gap-y-2 text-accent tablet:gap-x-6 desktop:flex-nowrap desktop:justify-start"
+              class="hamburger-menu flex flex-col items-start gap-y-5 text-left text-inverse desktop:hidden"
             >
-              <li class="block whitespace-nowrap tracking-0.5px">
-                <a class="text-muted" href="/">Home</a>
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a href="/">Home</a>
               </li>
-              <li class="block whitespace-nowrap tracking-0.5px">
-                <a class="text-inherit" href="/how-i-grade/">How I Grade</a>
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a href="/how-i-grade/">How I Grade</a>
               </li>
-              <li class="block whitespace-nowrap tracking-0.5px">
-                <a class="text-inherit" href="/reviews/">Reviews</a>
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a href="/reviews/">Reviews</a>
               </li>
-              <li class="block whitespace-nowrap tracking-0.5px">
-                <a class="text-inherit" href="/readings/">Reading Log</a>
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a href="/readings/">Reading Log</a>
+                <ol class="mt-4">
+                  <li
+                    class="text-inverse-subtle mb-2 font-sans text-xs uppercase tracking-wide"
+                  >
+                    <a href="/readings/stats/">Stats</a>
+                  </li>
+                </ol>
               </li>
-              <li class="block whitespace-nowrap tracking-0.5px">
-                <a class="text-inherit" href="/authors/">Authors</a>
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a href="/authors/">Authors</a>
               </li>
-              <li class="block whitespace-nowrap tracking-0.5px">
-                <a class="text-inherit" href="/shelf/">Shelf</a>
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a href="/shelf/">Shelf</a>
               </li>
             </ul>
-          </nav>
+          </div>
         </header>
-        <div class="grow" id="content">
-          <main
-            data-pagefind-body="true"
-            id="top"
-            class="flex flex-col items-center pt-6 desktop:pt-12"
-          >
-            <header class="flex w-full flex-col items-center px-pageMargin">
-              <div class="text-center">
-                <h1
-                  data-pagefind-meta="title"
-                  class="text-[2rem] font-normal leading-none desktop:text-[2.25rem]"
-                >
-                  The 48 Laws of Power
-                </h1>
+        <main class="grow flex flex-col" id="content" data-pagefind-body="true">
+          <header class="mb-12 flex flex-col items-center px-[8%] pt-10">
+            <h1
+              data-pagefind-meta="title"
+              class="text-center text-4xl desktop:text-6xl"
+            >
+              The 48 Laws of Power
+            </h1>
+            <div class="mt-4 text-center text-md text-muted">
+              by<!-- -->
+              <div class="inline-block text-accent">
+                <a href="/reviews/authors/robert-greene/">Robert Greene</a>
               </div>
-              <div class="spacer-y-2"></div>
-              <div class="text-center text-md text-muted">
-                by<!-- -->
-                <div class="inline-block text-accent">
-                  <a href="/reviews/authors/robert-greene/">Robert Greene</a>
-                </div>
-              </div>
-              <div class="spacer-y-2 desktop:spacer-y-4"></div>
-              <div class="uppercase tracking-1px text-subtle">
-                <span class="tracking-0.25px">1998</span> |
-                <!-- -->Nonfiction
-              </div>
-              <div class="spacer-y-8"></div>
-              <div
-                data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Fthe-48-laws-of-power-by-robert-greene.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
-                class="relative flex h-[340px] w-full max-w-popout flex-col items-center"
-              >
-                <div
-                  data-pagefind-meta="image_alt:A cover for The 48 Laws of Power by Robert Greene"
-                  class="cover-clip-path absolute inset-0 overflow-hidden"
-                >
-                  <div
-                    style="
-                      background-color: var(--bg-default);
-                      background-image: linear-gradient(
-                          90deg,
-                          rgba(var(--bg-default-rgb), 1) 0%,
-                          rgba(var(--bg-default-rgb), var(--bg-default-alpha))
-                            30%,
-                          rgba(var(--bg-default-rgb), 0) 50%,
-                          rgba(var(--bg-default-rgb), var(--bg-default-alpha))
-                            70%,
-                          rgba(var(--bg-default-rgb), 1) 100%
-                        ),
-                        url(/_image?/content%2Fassets%2Fcovers%2Fthe-48-laws-of-power-by-robert-greene.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif);
-                    "
-                    class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
-                  ></div>
-                  <div class="absolute size-full backdrop-blur"></div>
-                </div>
-                <div
-                  class="relative -top-4 z-10 h-[372px] shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                >
-                  <img
-                    srcset="
-                      /_image?/content%2Fassets%2Fcovers%2Fthe-48-laws-of-power-by-robert-greene.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;q=80&amp;f=avif 1x,
-                      /_image?/content%2Fassets%2Fcovers%2Fthe-48-laws-of-power-by-robert-greene.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;q=80&amp;f=avif 2x
-                    "
-                    src="/_image?/content%2Fassets%2Fcovers%2Fthe-48-laws-of-power-by-robert-greene.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
-                    alt="A cover for The 48 Laws of Power by Robert Greene"
-                    width="248"
-                    height="372"
-                    class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                    loading="eager"
-                    decoding="async"
-                    style="aspect-ratio: 0.66666667"
-                  />
-                </div>
-              </div>
-              <div class="spacer-y-12"></div>
+            </div>
+            <div class="mt-4">
               <picture
                 ><source
                   srcset="/svg/2-stars-dark.svg"
@@ -195,148 +187,230 @@
                   height="32"
                   width="160"
               /></picture>
+            </div>
+            <div
+              class="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+            >
+              <span class="tracking-wide">1998</span> |
+              <!-- -->Nonfiction
+            </div>
+            <div
+              data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Fthe-48-laws-of-power-by-robert-greene.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
+              class="relative my-12 flex h-[340px] w-full max-w-popout flex-col items-center"
+            >
               <div
-                class="flex flex-col items-center tracking-0.5px text-subtle"
+                data-pagefind-meta="image_alt:A cover for The 48 Laws of Power by Robert Greene"
+                class="cover-clip-path absolute inset-0 overflow-hidden"
               >
-                <span>on</span>
-                <!-- -->Fri, Jul 15, 2022
+                <div
+                  style="
+                    background-color: var(--bg-default);
+                    background-image: linear-gradient(
+                        90deg,
+                        rgba(var(--bg-default-rgb), 1) 0%,
+                        rgba(var(--bg-default-rgb), var(--bg-default-alpha)) 30%,
+                        rgba(var(--bg-default-rgb), 0) 50%,
+                        rgba(var(--bg-default-rgb), var(--bg-default-alpha)) 70%,
+                        rgba(var(--bg-default-rgb), 1) 100%
+                      ),
+                      url(/_image?/content%2Fassets%2Fcovers%2Fthe-48-laws-of-power-by-robert-greene.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif);
+                  "
+                  class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
+                ></div>
+                <div class="absolute size-full backdrop-blur"></div>
               </div>
-              <div class="spacer-y-8"></div>
-            </header>
-            <div class="flex flex-col px-pageMargin desktop:px-gutter">
               <div
-                class="rendered-markdown font-light text-md/7 tracking-0.3px tablet:text-xl/8 max-w-prose"
+                class="relative -top-4 z-10 h-[372px] shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
               >
-                <p>
-                  A passable synthesis of Sun Tzu’s <em>The Art of War</em>,
-                  Machiavelli’s <em>The Prince</em>, and Carl von Clausewitz’s
-                  <em>On War</em> that reads somewhere between the source texts
-                  and CliffsNotes. Greene presents the book in an episodic
-                  manner. Laws don’t build on one-another and he re-introduces
-                  historical figures like Mata Hari and Cardinal Richelieu each
-                  time he cites them as examples. Written prior to social
-                  media’s emergence and claiming Henry Kissinger as a
-                  contemporary example, it—unlike its source text—feels dated.
-                  An updated version leading with modern examples and working
-                  back to the fundamental laws might fare better.
-                </p>
+                <img
+                  srcset="
+                    /_image?/content%2Fassets%2Fcovers%2Fthe-48-laws-of-power-by-robert-greene.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;q=80&amp;f=avif 1x,
+                    /_image?/content%2Fassets%2Fcovers%2Fthe-48-laws-of-power-by-robert-greene.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;q=80&amp;f=avif 2x
+                  "
+                  src="/_image?/content%2Fassets%2Fcovers%2Fthe-48-laws-of-power-by-robert-greene.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
+                  alt="A cover for The 48 Laws of Power by Robert Greene"
+                  width="248"
+                  height="372"
+                  class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
+                  loading="eager"
+                  decoding="async"
+                  style="aspect-ratio: 0.66666667"
+                />
               </div>
             </div>
-            <div class="spacer-y-20"></div>
+          </header>
+          <div
+            class="flex flex-col items-center gap-16 px-container pb-20 desktop:gap-20 desktop:pb-32"
+          >
+            <div
+              class="rendered-markdown font-light text-md/7 tracking-0.3px tablet:text-xl/8 max-w-prose first-letter:leading-[.8] first-letter:text-default tablet:first-letter:pr-3 desktop:first-letter:text-[64px] [&amp;&gt;p:first-child]:first-letter:float-left [&amp;&gt;p:first-child]:first-letter:mt-[6px] [&amp;&gt;p:first-child]:first-letter:pr-2 [&amp;&gt;p:first-child]:first-letter:font-sans [&amp;&gt;p:first-child]:first-letter:text-[56px] [&amp;&gt;p:first-child]:first-letter:font-bold"
+            >
+              <p>
+                A passable synthesis of Sun Tzu’s <em>The Art of War</em>,
+                Machiavelli’s <em>The Prince</em>, and Carl von Clausewitz’s
+                <em>On War</em> that reads somewhere between the source texts
+                and CliffsNotes. Greene presents the book in an episodic manner.
+                Laws don’t build on one-another and he re-introduces historical
+                figures like Mata Hari and Cardinal Richelieu each time he cites
+                them as examples. Written prior to social media’s emergence and
+                claiming Henry Kissinger as a contemporary example, it—unlike
+                its source text—feels dated. An updated version leading with
+                modern examples and working back to the fundamental laws might
+                fare better.
+              </p>
+            </div>
             <div class="w-full max-w-popout">
               <h2
-                class="px-gutter text-md font-normal text-subtle shadow-bottom"
+                class="py-10 font-sans text-xs font-semibold uppercase tracking-wide text-subtle shadow-bottom"
               >
                 Reading History
-                <div class="spacer-y-2"></div>
               </h2>
               <ul>
                 <li
-                  class="grid auto-rows-auto grid-cols-[16px_1ch_1fr] px-gutter pt-4 even:bg-subtle"
+                  class="grid auto-rows-auto grid-cols-[16px_16px_1fr] pt-4 font-sans text-xs even:bg-subtle"
                 >
-                  <div class="mt-1">
-                    <svg
-                      width="1em"
-                      height="1em"
-                      viewBox="0 0 16 16"
-                      class="fill-subtle mr-[1ch] min-h-4 min-w-4"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <title>Watched on</title>
-                      <path
-                        fill-rule="evenodd"
-                        d="M14 2H2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1zM2 1a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2z"
-                      ></path>
-                      <path
-                        fill-rule="evenodd"
-                        d="M14 2H2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1zM2 1a2 2 0 0 0-2 2v2h16V3a2 2 0 0 0-2-2H2z"
-                      ></path>
-                      <path
-                        fill-rule="evenodd"
-                        d="M3.5 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5zm9 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5z"
-                      ></path>
-                    </svg>
-                  </div>
+                  <svg
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 16 16"
+                    class="fill-subtle mr-[1ch] min-h-4 min-w-4"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>Watched on</title>
+                    <path
+                      fill-rule="evenodd"
+                      d="M14 2H2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1zM2 1a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2z"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      d="M14 2H2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1zM2 1a2 2 0 0 0-2 2v2h16V3a2 2 0 0 0-2-2H2z"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      d="M3.5 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5zm9 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5z"
+                    ></path>
+                  </svg>
                   <div class="col-start-3">
-                    <span class="inline-block text-default"
+                    <span
+                      class="inline-block font-sans text-xs font-normal tracking-normal text-subtle"
                       >Fri, Jul 15, 2022</span
                     >
-                    <span class="font-light text-muted"
-                      ><span>via</span> <span>Audible</span></span
+                    <span class="text-subtle"
+                      ><span>via</span>
+                      <span class="font-sans text-xs font-normal text-subtle"
+                        >Audible</span
+                      ></span
                     >
-                    <span class="text-sm font-light leading-none text-subtle"
-                      >(<span
-                        class="rendered-markdown font-light text-sm leading-none"
+                    <span class="font-light tracking-normal text-subtle"
+                      >(<span class="rendered-markdown font-light leading-none"
                         ><span>Read by Richard Poe</span></span
                       >)</span
                     >
                   </div>
                   <div class="col-start-3 row-start-2">
                     <details class="font-light text-subtle">
-                      <summary>
+                      <summary class="cursor-pointer leading-6">
                         Listened to over<!-- -->
-                        <!-- -->6<!-- -->
-                        Days
+                        <span class="font-normal text-subtle"
+                          >6<!-- -->
+                          Days</span
+                        >
                       </summary>
-                      <ol
-                        class="-ml-gutter grid w-full grid-cols-[auto_1fr_auto] items-center pt-2"
-                      >
-                        <li class="contents *:odd:bg-subtle">
-                          <div class="whitespace-nowrap px-gutter leading-10">
-                            10 Jul 2022
-                          </div>
-                          <div class="h-10 w-full">
+                      <ol class="grid w-full grid-cols-[auto,1fr,auto]">
+                        <li
+                          class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr,auto,auto,1fr] py-3"
+                        >
+                          <div
+                            class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid"
+                          >
+                            <div class="">10 Jul 2022</div>
                             <div
-                              class="progress-bar-bg leading-[38px]"
+                              class="col-start-3 self-center text-nowrap pb-1 text-right font-sans text-xs text-subtle"
+                            >
+                              <div class="">41%</div>
+                            </div>
+                          </div>
+                          <div
+                            class="col-span-2 col-start-2 row-start-3 bg-subtle"
+                          >
+                            <div
+                              class="progress-bar-bg leading-[6px] tablet:mb-0"
                               style="--bar-percent: 41%"
                             >
                                
                             </div>
                           </div>
-                          <div class="px-gutter text-right leading-10">41%</div>
                         </li>
-                        <li class="contents *:odd:bg-subtle">
-                          <div class="whitespace-nowrap px-gutter leading-10">
-                            12 Jul 2022
-                          </div>
-                          <div class="h-10 w-full">
+                        <li
+                          class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr,auto,auto,1fr] py-3"
+                        >
+                          <div
+                            class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid"
+                          >
+                            <div class="">12 Jul 2022</div>
                             <div
-                              class="progress-bar-bg leading-[38px]"
+                              class="col-start-3 self-center text-nowrap pb-1 text-right font-sans text-xs text-subtle"
+                            >
+                              <div class="">61%</div>
+                            </div>
+                          </div>
+                          <div
+                            class="col-span-2 col-start-2 row-start-3 bg-subtle"
+                          >
+                            <div
+                              class="progress-bar-bg leading-[6px] tablet:mb-0"
                               style="--bar-percent: 61%"
                             >
                                
                             </div>
                           </div>
-                          <div class="px-gutter text-right leading-10">61%</div>
                         </li>
-                        <li class="contents *:odd:bg-subtle">
-                          <div class="whitespace-nowrap px-gutter leading-10">
-                            14 Jul 2022
-                          </div>
-                          <div class="h-10 w-full">
+                        <li
+                          class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr,auto,auto,1fr] py-3"
+                        >
+                          <div
+                            class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid"
+                          >
+                            <div class="">14 Jul 2022</div>
                             <div
-                              class="progress-bar-bg leading-[38px]"
+                              class="col-start-3 self-center text-nowrap pb-1 text-right font-sans text-xs text-subtle"
+                            >
+                              <div class="">77%</div>
+                            </div>
+                          </div>
+                          <div
+                            class="col-span-2 col-start-2 row-start-3 bg-subtle"
+                          >
+                            <div
+                              class="progress-bar-bg leading-[6px] tablet:mb-0"
                               style="--bar-percent: 77%"
                             >
                                
                             </div>
                           </div>
-                          <div class="px-gutter text-right leading-10">77%</div>
                         </li>
-                        <li class="contents *:odd:bg-subtle">
-                          <div class="whitespace-nowrap px-gutter leading-10">
-                            15 Jul 2022
-                          </div>
-                          <div class="h-10 w-full">
+                        <li
+                          class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr,auto,auto,1fr] py-3"
+                        >
+                          <div
+                            class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid"
+                          >
+                            <div class="">15 Jul 2022</div>
                             <div
-                              class="progress-bar-bg leading-[38px]"
+                              class="col-start-3 self-center text-nowrap pb-1 text-right font-sans text-xs text-subtle"
+                            >
+                              <div class="">Finished</div>
+                            </div>
+                          </div>
+                          <div
+                            class="col-span-2 col-start-2 row-start-3 bg-subtle"
+                          >
+                            <div
+                              class="progress-bar-bg leading-[6px] tablet:mb-0"
                               style="--bar-percent: 100%"
                             >
                                
                             </div>
-                          </div>
-                          <div class="px-gutter text-right leading-10">
-                            Finished
                           </div>
                         </li>
                       </ol>
@@ -346,71 +420,67 @@
                 </li>
               </ul>
             </div>
-            <div class="spacer-y-32"></div>
-            <div
+          </div>
+          <div
+            data-pagefind-ignore="true"
+            class="flex w-full flex-col items-center gap-y-12 bg-subtle pb-32 pt-16 tablet:pt-8 desktop:gap-y-24"
+          >
+            <nav
               data-pagefind-ignore="true"
-              class="flex w-full flex-col items-center gap-y-12 bg-default tablet:bg-subtle tablet:pb-32 tablet:pt-8 desktop:gap-y-24"
+              class="relative flex w-full flex-col items-center tablet:w-auto"
             >
-              <nav
-                class="relative flex w-full flex-col items-center tablet:w-auto"
+              <div
+                class="relative mx-auto w-full max-w-screen-max px-container desktop:px-20"
               >
-                <div
-                  class="w-full px-gutter py-2 shadow-bottom tablet:py-4 tablet:shadow-none desktop:px-pageMargin desktop:py-4"
+                <h2
+                  class="py-10 font-sans text-xs font-semibold uppercase tracking-wide text-subtle"
                 >
-                  <span class="font-semibold text-muted">More<!-- --> </span
-                  ><a class="text-accent" href="/reviews/">Reviews</a>
-                </div>
+                  More<!-- -->
+                  <a href="/reviews/" class="text-accent">Reviews</a>
+                </h2>
                 <ul
-                  class="w-full tablet:grid tablet:grid-cols-[repeat(4,minmax(78px,248px))] tablet:gap-11 tablet:px-gutter desktop:grid-cols-[repeat(4,1fr)] desktop:gap-x-16 desktop:px-pageMargin desktop:pt-2"
+                  class="flex flex-wrap justify-center gap-x-[3%] gap-y-[6vw] desktop:justify-between"
                 >
                   <li
-                    class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+                    class="relative flex w-[48.5%] max-w-[248px] flex-col items-center border-default bg-default tablet:w-[22.75%]"
                   >
-                    <a
-                      href="/reviews/the-woods-are-dark-by-richard-laymon/"
-                      class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
-                      ><img
-                        srcset="
-                          /_image?/content%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=44&amp;q=80&amp;f=avif   44w,
-                          /_image?/content%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=88&amp;q=80&amp;f=avif   88w,
-                          /_image?/content%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;q=80&amp;f=avif 176w,
-                          /_image?/content%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=352&amp;q=80&amp;f=avif 352w
-                        "
-                        src="/_image?/content%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;h=264&amp;q=80&amp;f=avif"
-                        alt="A cover for The Woods Are Dark by Richard Laymon"
-                        height="264"
-                        width="176"
-                        class="aspect-[0.66666667]"
-                        loading="lazy"
-                        decoding="async"
-                        style="aspect-ratio: 0.66666667"
-                    /></a>
-                    <div class="tablet:spacer-y-2"></div>
+                    <img
+                      srcset="
+                        /_image?/content%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=44&amp;q=80&amp;f=avif   44w,
+                        /_image?/content%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=88&amp;q=80&amp;f=avif   88w,
+                        /_image?/content%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;q=80&amp;f=avif 176w,
+                        /_image?/content%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=352&amp;q=80&amp;f=avif 352w
+                      "
+                      src="/_image?/content%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;h=264&amp;q=80&amp;f=avif"
+                      alt=""
+                      width="248"
+                      height="372"
+                      loading="lazy"
+                      decoding="async"
+                      style="aspect-ratio: 0.66666667"
+                    />
                     <div
-                      class="flex grow flex-col tablet:w-full tablet:items-center"
+                      class="flex grow flex-col items-center px-[8%] pb-8 pt-3 desktop:pl-[8.5%] desktop:pr-[10%]"
                     >
-                      <div class="tablet:spacer-y-1"></div>
-                      <a
-                        href="/reviews/the-woods-are-dark-by-richard-laymon/"
-                        class="block text-md leading-5 text-accent tablet:text-center tablet:text-base tablet:leading-5 desktop:text-md"
-                        >The Woods Are Dark</a
-                      >
-                      <div class="spacer-y-1 tablet:spacer-y-2"></div>
-                      <div
-                        class="text-base leading-5 text-muted text-left tablet:text-center"
-                      >
-                        Richard Laymon
+                      <div class="text-center text-md font-medium leading-6">
+                        <a
+                          href="/reviews/the-woods-are-dark-by-richard-laymon/"
+                          rel="canonical"
+                          class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-[#fff] before:opacity-15 hover:text-accent hover:underline hover:before:opacity-0"
+                          >The Woods Are Dark</a
+                        >
                       </div>
-                      <div class="spacer-y-3"></div>
                       <div
-                        class="text-sm leading-4 tracking-0.5px text-subtle text-left tablet:text-center"
+                        class="py-2 text-center font-sans text-xxs font-light uppercase leading-4 tracking-wide text-subtle"
                       >
-                        <span
-                          >1981<!-- -->
-                          | </span
-                        >Novel
+                        1981<!-- -->
+                        |<!-- -->
+                        <span class="whitespace-nowrap">Novel</span>
                       </div>
-                      <div class="spacer-y-3"></div>
+                      <p class="text-center text-base text-subtle">
+                        by
+                        <!-- -->Richard Laymon
+                      </p>
                       <picture
                         ><source
                           srcset="/svg/3-stars-dark.svg"
@@ -418,60 +488,52 @@
                         <img
                           src="/svg/3-stars.svg"
                           alt="C+: 3 stars (out of 5)"
-                          height="16"
-                          width="80"
+                          height="18"
+                          width="90"
+                          class="mt-2"
                       /></picture>
-                      <div class="spacer-y-2"></div>
                     </div>
                   </li>
                   <li
-                    class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+                    class="relative flex w-[48.5%] max-w-[248px] flex-col items-center border-default bg-default tablet:w-[22.75%]"
                   >
-                    <a
-                      href="/reviews/salems-lot-by-stephen-king/"
-                      class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
-                      ><img
-                        srcset="
-                          /_image?/content%2Fassets%2Fcovers%2Fsalems-lot-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=44&amp;q=80&amp;f=avif   44w,
-                          /_image?/content%2Fassets%2Fcovers%2Fsalems-lot-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=88&amp;q=80&amp;f=avif   88w,
-                          /_image?/content%2Fassets%2Fcovers%2Fsalems-lot-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;q=80&amp;f=avif 176w,
-                          /_image?/content%2Fassets%2Fcovers%2Fsalems-lot-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=352&amp;q=80&amp;f=avif 352w
-                        "
-                        src="/_image?/content%2Fassets%2Fcovers%2Fsalems-lot-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;h=264&amp;q=80&amp;f=avif"
-                        alt="A cover for &#x27;Salem&#x27;s Lot by Stephen King"
-                        height="264"
-                        width="176"
-                        class="aspect-[0.66666667]"
-                        loading="lazy"
-                        decoding="async"
-                        style="aspect-ratio: 0.66666667"
-                    /></a>
-                    <div class="tablet:spacer-y-2"></div>
+                    <img
+                      srcset="
+                        /_image?/content%2Fassets%2Fcovers%2Fsalems-lot-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=44&amp;q=80&amp;f=avif   44w,
+                        /_image?/content%2Fassets%2Fcovers%2Fsalems-lot-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=88&amp;q=80&amp;f=avif   88w,
+                        /_image?/content%2Fassets%2Fcovers%2Fsalems-lot-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;q=80&amp;f=avif 176w,
+                        /_image?/content%2Fassets%2Fcovers%2Fsalems-lot-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=352&amp;q=80&amp;f=avif 352w
+                      "
+                      src="/_image?/content%2Fassets%2Fcovers%2Fsalems-lot-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;h=264&amp;q=80&amp;f=avif"
+                      alt=""
+                      width="248"
+                      height="372"
+                      loading="lazy"
+                      decoding="async"
+                      style="aspect-ratio: 0.66666667"
+                    />
                     <div
-                      class="flex grow flex-col tablet:w-full tablet:items-center"
+                      class="flex grow flex-col items-center px-[8%] pb-8 pt-3 desktop:pl-[8.5%] desktop:pr-[10%]"
                     >
-                      <div class="tablet:spacer-y-1"></div>
-                      <a
-                        href="/reviews/salems-lot-by-stephen-king/"
-                        class="block text-md leading-5 text-accent tablet:text-center tablet:text-base tablet:leading-5 desktop:text-md"
-                        >&#x27;Salem&#x27;s Lot</a
-                      >
-                      <div class="spacer-y-1 tablet:spacer-y-2"></div>
-                      <div
-                        class="text-base leading-5 text-muted text-left tablet:text-center"
-                      >
-                        Stephen King
+                      <div class="text-center text-md font-medium leading-6">
+                        <a
+                          href="/reviews/salems-lot-by-stephen-king/"
+                          rel="canonical"
+                          class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-[#fff] before:opacity-15 hover:text-accent hover:underline hover:before:opacity-0"
+                          >&#x27;Salem&#x27;s Lot</a
+                        >
                       </div>
-                      <div class="spacer-y-3"></div>
                       <div
-                        class="text-sm leading-4 tracking-0.5px text-subtle text-left tablet:text-center"
+                        class="py-2 text-center font-sans text-xxs font-light uppercase leading-4 tracking-wide text-subtle"
                       >
-                        <span
-                          >1975<!-- -->
-                          | </span
-                        >Novel
+                        1975<!-- -->
+                        |<!-- -->
+                        <span class="whitespace-nowrap">Novel</span>
                       </div>
-                      <div class="spacer-y-3"></div>
+                      <p class="text-center text-base text-subtle">
+                        by
+                        <!-- -->Stephen King
+                      </p>
                       <picture
                         ><source
                           srcset="/svg/4-stars-dark.svg"
@@ -479,62 +541,54 @@
                         <img
                           src="/svg/4-stars.svg"
                           alt="B: 4 stars (out of 5)"
-                          height="16"
-                          width="80"
+                          height="18"
+                          width="90"
+                          class="mt-2"
                       /></picture>
-                      <div class="spacer-y-2"></div>
                     </div>
                   </li>
                   <li
-                    class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+                    class="relative flex w-[48.5%] max-w-[248px] flex-col items-center border-default bg-default tablet:w-[22.75%]"
                   >
-                    <a
-                      href="/reviews/about-face-by-david-h-hackworth-julie-sherman/"
-                      class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
-                      ><img
-                        srcset="
-                          /_image?/content%2Fassets%2Fcovers%2Fabout-face-by-david-h-hackworth-julie-sherman.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=44&amp;q=80&amp;f=avif   44w,
-                          /_image?/content%2Fassets%2Fcovers%2Fabout-face-by-david-h-hackworth-julie-sherman.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=88&amp;q=80&amp;f=avif   88w,
-                          /_image?/content%2Fassets%2Fcovers%2Fabout-face-by-david-h-hackworth-julie-sherman.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;q=80&amp;f=avif 176w,
-                          /_image?/content%2Fassets%2Fcovers%2Fabout-face-by-david-h-hackworth-julie-sherman.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=352&amp;q=80&amp;f=avif 352w
-                        "
-                        src="/_image?/content%2Fassets%2Fcovers%2Fabout-face-by-david-h-hackworth-julie-sherman.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;h=264&amp;q=80&amp;f=avif"
-                        alt="A cover for About Face: The Odyssey of an American Warrior by David H. Hackworth and Julie Sherman"
-                        height="264"
-                        width="176"
-                        class="aspect-[0.66666667]"
-                        loading="lazy"
-                        decoding="async"
-                        style="aspect-ratio: 0.66666667"
-                    /></a>
-                    <div class="tablet:spacer-y-2"></div>
+                    <img
+                      srcset="
+                        /_image?/content%2Fassets%2Fcovers%2Fabout-face-by-david-h-hackworth-julie-sherman.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=44&amp;q=80&amp;f=avif   44w,
+                        /_image?/content%2Fassets%2Fcovers%2Fabout-face-by-david-h-hackworth-julie-sherman.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=88&amp;q=80&amp;f=avif   88w,
+                        /_image?/content%2Fassets%2Fcovers%2Fabout-face-by-david-h-hackworth-julie-sherman.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;q=80&amp;f=avif 176w,
+                        /_image?/content%2Fassets%2Fcovers%2Fabout-face-by-david-h-hackworth-julie-sherman.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=352&amp;q=80&amp;f=avif 352w
+                      "
+                      src="/_image?/content%2Fassets%2Fcovers%2Fabout-face-by-david-h-hackworth-julie-sherman.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;h=264&amp;q=80&amp;f=avif"
+                      alt=""
+                      width="248"
+                      height="372"
+                      loading="lazy"
+                      decoding="async"
+                      style="aspect-ratio: 0.66666667"
+                    />
                     <div
-                      class="flex grow flex-col tablet:w-full tablet:items-center"
+                      class="flex grow flex-col items-center px-[8%] pb-8 pt-3 desktop:pl-[8.5%] desktop:pr-[10%]"
                     >
-                      <div class="tablet:spacer-y-1"></div>
-                      <a
-                        href="/reviews/about-face-by-david-h-hackworth-julie-sherman/"
-                        class="block text-md leading-5 text-accent tablet:text-center tablet:text-base tablet:leading-5 desktop:text-md"
-                        >About Face</a
-                      >
-                      <div class="spacer-y-1 tablet:spacer-y-2"></div>
+                      <div class="text-center text-md font-medium leading-6">
+                        <a
+                          href="/reviews/about-face-by-david-h-hackworth-julie-sherman/"
+                          rel="canonical"
+                          class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-[#fff] before:opacity-15 hover:text-accent hover:underline hover:before:opacity-0"
+                          >About Face</a
+                        >
+                      </div>
                       <div
-                        class="text-base leading-5 text-muted text-left tablet:text-center"
+                        class="py-2 text-center font-sans text-xxs font-light uppercase leading-4 tracking-wide text-subtle"
                       >
-                        David H. Hackworth<!-- -->
+                        1989<!-- -->
+                        |<!-- -->
+                        <span class="whitespace-nowrap">Nonfiction</span>
+                      </div>
+                      <p class="text-center text-base text-subtle">
+                        by
+                        <!-- -->David H. Hackworth<!-- -->
                         and
                         <!-- -->Julie Sherman
-                      </div>
-                      <div class="spacer-y-3"></div>
-                      <div
-                        class="text-sm leading-4 tracking-0.5px text-subtle text-left tablet:text-center"
-                      >
-                        <span
-                          >1989<!-- -->
-                          | </span
-                        >Nonfiction
-                      </div>
-                      <div class="spacer-y-3"></div>
+                      </p>
                       <picture
                         ><source
                           srcset="/svg/4-half-stars-dark.svg"
@@ -542,60 +596,52 @@
                         <img
                           src="/svg/4-half-stars.svg"
                           alt="A-: 4.5 stars (out of 5)"
-                          height="16"
-                          width="80"
+                          height="18"
+                          width="90"
+                          class="mt-2"
                       /></picture>
-                      <div class="spacer-y-2"></div>
                     </div>
                   </li>
                   <li
-                    class="flex flex-row items-center gap-x-4 px-gutter py-4 even:bg-subtle tablet:max-w-[176px] tablet:flex-col tablet:items-start tablet:p-0 even:tablet:bg-unset"
+                    class="relative flex w-[48.5%] max-w-[248px] flex-col items-center border-default bg-default tablet:w-[22.75%]"
                   >
-                    <a
-                      href="/reviews/altar-by-philip-fracassi/"
-                      class="min-w-20 max-w-20 shrink-0 tablet:max-w-poster safari-border-radius-fix overflow-hidden"
-                      ><img
-                        srcset="
-                          /_image?/content%2Fassets%2Fcovers%2Fbehold-the-void-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=44&amp;q=80&amp;f=avif   44w,
-                          /_image?/content%2Fassets%2Fcovers%2Fbehold-the-void-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=88&amp;q=80&amp;f=avif   88w,
-                          /_image?/content%2Fassets%2Fcovers%2Fbehold-the-void-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;q=80&amp;f=avif 176w,
-                          /_image?/content%2Fassets%2Fcovers%2Fbehold-the-void-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=352&amp;q=80&amp;f=avif 352w
-                        "
-                        src="/_image?/content%2Fassets%2Fcovers%2Fbehold-the-void-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;h=264&amp;q=80&amp;f=avif"
-                        alt="A cover for Behold the Void by Philip Fracassi"
-                        height="264"
-                        width="176"
-                        class="aspect-[0.66666667]"
-                        loading="lazy"
-                        decoding="async"
-                        style="aspect-ratio: 0.66666667"
-                    /></a>
-                    <div class="tablet:spacer-y-2"></div>
+                    <img
+                      srcset="
+                        /_image?/content%2Fassets%2Fcovers%2Fbehold-the-void-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=44&amp;q=80&amp;f=avif   44w,
+                        /_image?/content%2Fassets%2Fcovers%2Fbehold-the-void-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=88&amp;q=80&amp;f=avif   88w,
+                        /_image?/content%2Fassets%2Fcovers%2Fbehold-the-void-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;q=80&amp;f=avif 176w,
+                        /_image?/content%2Fassets%2Fcovers%2Fbehold-the-void-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=352&amp;q=80&amp;f=avif 352w
+                      "
+                      src="/_image?/content%2Fassets%2Fcovers%2Fbehold-the-void-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=176&amp;h=264&amp;q=80&amp;f=avif"
+                      alt=""
+                      width="248"
+                      height="372"
+                      loading="lazy"
+                      decoding="async"
+                      style="aspect-ratio: 0.66666667"
+                    />
                     <div
-                      class="flex grow flex-col tablet:w-full tablet:items-center"
+                      class="flex grow flex-col items-center px-[8%] pb-8 pt-3 desktop:pl-[8.5%] desktop:pr-[10%]"
                     >
-                      <div class="tablet:spacer-y-1"></div>
-                      <a
-                        href="/reviews/altar-by-philip-fracassi/"
-                        class="block text-md leading-5 text-accent tablet:text-center tablet:text-base tablet:leading-5 desktop:text-md"
-                        >Altar</a
-                      >
-                      <div class="spacer-y-1 tablet:spacer-y-2"></div>
-                      <div
-                        class="text-base leading-5 text-muted text-left tablet:text-center"
-                      >
-                        Philip Fracassi
+                      <div class="text-center text-md font-medium leading-6">
+                        <a
+                          href="/reviews/altar-by-philip-fracassi/"
+                          rel="canonical"
+                          class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-[#fff] before:opacity-15 hover:text-accent hover:underline hover:before:opacity-0"
+                          >Altar</a
+                        >
                       </div>
-                      <div class="spacer-y-3"></div>
                       <div
-                        class="text-sm leading-4 tracking-0.5px text-subtle text-left tablet:text-center"
+                        class="py-2 text-center font-sans text-xxs font-light uppercase leading-4 tracking-wide text-subtle"
                       >
-                        <span
-                          >2016<!-- -->
-                          | </span
-                        >Short Story
+                        2016<!-- -->
+                        |<!-- -->
+                        <span class="whitespace-nowrap">Short Story</span>
                       </div>
-                      <div class="spacer-y-3"></div>
+                      <p class="text-center text-base text-subtle">
+                        by
+                        <!-- -->Philip Fracassi
+                      </p>
                       <picture
                         ><source
                           srcset="/svg/4-half-stars-dark.svg"
@@ -603,91 +649,118 @@
                         <img
                           src="/svg/4-half-stars.svg"
                           alt="A-: 4.5 stars (out of 5)"
-                          height="16"
-                          width="80"
+                          height="18"
+                          width="90"
+                          class="mt-2"
                       /></picture>
-                      <div class="spacer-y-2"></div>
                     </div>
-                  </li>
-                  <li
-                    class="col-span-full block px-gutter py-4 text-right shadow-bottom tablet:absolute tablet:right-0 tablet:top-0 tablet:shadow-none desktop:right-[var(--gutter-width)]"
-                  >
-                    <a href="/reviews/" class="text-accent"
-                      >All<!-- -->
-                      <span class="inline tablet:hidden desktop:inline"
-                        >Reviews</span
-                      >
-                      <!-- -->→</a
-                    >
                   </li>
                 </ul>
-              </nav>
-            </div>
-            <script type="application/ld+json">
-              {
-                "@context": "http://schema.org",
-                "@type": "Review",
-                "itemReviewed": {
-                  "@type": "Book",
-                  "name": "The 48 Laws of Power",
-                  "image": "/_image?/content%2Fassets%2Fcovers%2Fthe-48-laws-of-power-by-robert-greene.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=1200&h=630&q=80&f=jpeg"
-                },
-                "reviewRating": { "@type": "Rating", "ratingValue": 2 },
-                "author": { "@type": "Person", "name": "Frank Showalter" }
-              }
-            </script>
-          </main>
-        </div>
+              </div>
+            </nav>
+          </div>
+          <script type="application/ld+json">
+            {
+              "@context": "http://schema.org",
+              "@type": "Review",
+              "itemReviewed": {
+                "@type": "Book",
+                "name": "The 48 Laws of Power",
+                "image": "/_image?/content%2Fassets%2Fcovers%2Fthe-48-laws-of-power-by-robert-greene.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=1200&h=630&q=80&f=jpeg"
+              },
+              "reviewRating": { "@type": "Rating", "ratingValue": 2 },
+              "author": { "@type": "Person", "name": "Frank Showalter" }
+            }
+          </script>
+        </main>
         <footer
-          class="flex flex-col items-center gap-y-6 bg-[url(&#x27;/assets/ripnotcomingsoon.avif&#x27;)] px-pageMargin py-8 text-inverse"
+          class="bg-footer flex flex-wrap items-start justify-between gap-[10%] px-container py-20 text-inverse tablet:px-12 tablet:pt-10 desktop:p-20"
         >
-          <ul
-            class="flex w-full flex-wrap justify-center gap-x-4 gap-y-2 text-inverse tablet:gap-x-6 max:w-auto"
+          <div class="flex flex-col pb-12">
+            <div class="flex flex-col">
+              <div
+                class="whitespace-nowrap font-normal leading-8"
+                style="font-size: 1.5625rem"
+              >
+                <a href="/">Frank&#x27;s Book Log</a>
+              </div>
+              <p class="w-full pl-px text-sm italic leading-4 opacity-85">
+                Literature is a relative term.
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col gap-20 pb-20 pt-10 tablet:basis-1/2 tablet:pt-20"
           >
-            <li class="block whitespace-nowrap tracking-0.5px">
-              <a class="text-inverse" href="/">Home</a>
-            </li>
-            <li class="block whitespace-nowrap tracking-0.5px">
-              <a class="text-inherit" href="/how-i-grade/">How I Grade</a>
-            </li>
-            <li class="block whitespace-nowrap tracking-0.5px">
-              <a class="text-inherit" href="/reviews/">Reviews</a>
-            </li>
-            <li class="block whitespace-nowrap tracking-0.5px">
-              <a class="text-inherit" href="/readings/">Reading Log</a>
-            </li>
-            <li class="block whitespace-nowrap tracking-0.5px">
-              <a class="text-inherit" href="/authors/">Authors</a>
-            </li>
-            <li class="block whitespace-nowrap tracking-0.5px">
-              <a class="text-inherit" href="/shelf/">Shelf</a>
-            </li>
-          </ul>
-          <p class="text-sm font-light leading-4">
-            All images used in accordance with the<!-- -->
+            <ul class="flex w-full flex-col gap-y-10 text-inverse max:w-auto">
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a class="hover:text-accent" href="/">Home</a>
+              </li>
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a class="hover:text-accent" href="/how-i-grade/"
+                  >How I Grade</a
+                >
+              </li>
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a class="hover:text-accent" href="/reviews/">Reviews</a>
+              </li>
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a class="hover:text-accent" href="/readings/">Reading Log</a>
+                <ol class="mt-4">
+                  <li
+                    class="text-inverse-subtle mb-2 font-sans text-xs uppercase tracking-wide"
+                  >
+                    <a class="hover:text-inverse" href="/readings/stats/"
+                      >Stats</a
+                    >
+                  </li>
+                </ol>
+              </li>
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a class="hover:text-accent" href="/authors/">Authors</a>
+              </li>
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a class="hover:text-accent" href="/shelf/">Shelf</a>
+              </li>
+            </ul>
             <a
-              href="http://www.copyright.gov/title17/92chap1.html#107"
-              class="text-inherit"
-              >Fair Use Law.</a
+              href="#top"
+              class="mb-8 w-full max-w-button bg-canvas py-5 text-center font-sans text-xs uppercase tracking-wide text-default hover:bg-inverse hover:text-inverse"
+              >To the top</a
             >
-          </p>
-          <a href="#top" class="sr-only">To the top ↑</a>
+            <p class="text-inverse-subtle w-full font-normal leading-4">
+              All covers used in accordance with the<!-- -->
+              <a
+                href="http://www.copyright.gov/title17/92chap1.html#107"
+                class="text-inherit underline decoration-2 underline-offset-4 hover:bg-default hover:text-default"
+                >Fair Use Law.</a
+              >
+            </p>
+          </div>
         </footer>
       </div>
     </div>
     <dialog
-      class="relative m-0 h-screen max-h-none w-screen max-w-unset border border-default bg-canvas shadow-lg open:flex open:flex-col tablet:mx-auto tablet:mt-16 tablet:h-min tablet:max-h-[min(100vh_-_128px,900px)] tablet:min-h-60 tablet:max-w-[min(100vw_-_2_*_var(--gutter-width),36rem)] tablet:rounded-xl desktop:min-h-0"
+      class="relative m-0 h-screen max-h-none w-screen max-w-unset border border-default bg-subtle shadow-lg open:flex open:flex-col tablet:mx-auto tablet:mt-16 tablet:h-min tablet:max-h-[min(100vh_-_128px,900px)] tablet:min-h-60 tablet:max-w-[min(100vw_-_64px,36rem)] tablet:rounded-xl desktop:min-h-0"
       aria-label="Search"
     >
       <div data-dialog-frame class="contents">
-        <button data-close-modal>Cancel</button>
+        <button
+          data-close-modal
+          class="px-4 font-sans text-sm font-light hover:bg-inverse hover:text-inverse focus:outline-accent"
+        >
+          Cancel
+        </button>
         <div class="contents"><div id="pagefind__search"></div></div>
-        <div class="hidden px-gutter py-4 desktop:block">
+        <div
+          class="hidden px-[var(--search-dialog-padding)] py-4 font-sans text-xs font-light tracking-wide text-subtle desktop:block"
+        >
           <kbd class="rounded-md bg-default p-2 font-mono text-xs text-subtle"
             >Tab</kbd
           >
           to navigate
-          <kbd class="rounded-md bg-subtle p-2 font-mono text-xs text-subtle"
+          <kbd
+            class="ml-4 rounded-md bg-default p-2 font-mono text-xs text-subtle"
             >ESC</kbd
           >
           to close
@@ -697,14 +770,11 @@
     <script>
       (() => {
         const openBtn = document.querySelector("button[data-open-modal]");
-        const shortcut = openBtn?.querySelector("kbd");
-        if (!openBtn || !(shortcut instanceof HTMLElement)) return;
-        const platformKey = shortcut.querySelector("kbd");
-        if (platformKey && /(Mac|iPhone|iPod|iPad)/i.test(navigator.platform)) {
-          platformKey.textContent = "⌘";
+        if (!openBtn) return;
+        if (/(Mac|iPhone|iPod|iPad)/i.test(navigator.platform)) {
           openBtn.setAttribute("aria-keyshortcuts", "Meta+K");
+          openBtn.setAttribute("title", `Search: ⌘K`);
         }
-        shortcut.style.display = "";
       })();
     </script>
   </body>

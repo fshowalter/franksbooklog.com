@@ -84,7 +84,7 @@ export function Reviews({
           className="bg-default"
           onShowMore={() => dispatch({ type: Actions.SHOW_MORE })}
         >
-          {(value) => <ReviewsListItem value={value} key={value.imdbId} />}
+          {(value) => <ReviewsListItem value={value} key={value.slug} />}
         </GroupedList>
       }
     />
@@ -95,7 +95,7 @@ function ReviewsListItem({ value }: { value: ListItemValue }): JSX.Element {
   return (
     <ListItem>
       <ListItemCover imageProps={value.coverImageProps} />
-      <div className="flex grow flex-col gap-y-1 tablet:w-full tablet:gap-y-2 desktop:pr-4">
+      <div className="flex grow flex-col items-start gap-y-1 tablet:w-full tablet:gap-y-2 desktop:pr-4">
         <ListItemTitle title={value.title} slug={value.slug} />
         <Authors
           values={value.authors}

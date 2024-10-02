@@ -29,7 +29,14 @@ export function YearStats({
       className="flex flex-col items-center bg-subtle"
     >
       <StatsBackdrop
-        breadcrumb={<a href="/viewings/">Viewing Log</a>}
+        breadcrumb={
+          <a
+            className="decoration-2 underline-offset-8 hover:text-accent hover:underline"
+            href="/readings/"
+          >
+            Reading Log
+          </a>
+        }
         title={`${year} Stats`}
         deck={
           [...distinctStatYears].reverse()[0] === year
@@ -47,6 +54,7 @@ export function YearStats({
             return `/readings/stats/${year}/`;
           }}
           years={distinctStatYears}
+          className="mb-8"
         />
         <Callouts workCount={stats.workCount} bookCount={stats.bookCount} />
       </StatsBackdrop>

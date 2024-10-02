@@ -90,7 +90,7 @@ export function AvatarBackdrop({
       </div>
       <Breadcrumb value={breadcrumb} />
       <Title value={name} center={true} />
-      <Deck value={deck} shadow={false} center={true} />
+      <Deck value={deck} center={true} subtle={true} />
     </Wrapper>
   );
 }
@@ -114,7 +114,7 @@ export function StatsBackdrop({
         center={true}
         value={title}
       />
-      <p className="text-inverse-subtle mb-6 text-center font-sans text-xs uppercase tracking-wide">
+      <p className="mb-6 text-center font-sans text-xs uppercase tracking-wide text-subtle">
         {deck}
       </p>
       {children}
@@ -189,18 +189,20 @@ function Breadcrumb({ value }: { value?: React.ReactNode }) {
   }
 
   return (
-    <p className="mb-2 font-sans text-sm uppercase tracking-wide">{value}</p>
+    <p className="mb-2 font-sans text-sm uppercase tracking-wide text-subtle">
+      {value}
+    </p>
   );
 }
 
 function Deck({
   value,
-  shadow,
   center,
+  subtle,
 }: {
   value?: React.ReactNode;
-  shadow: boolean;
   center?: boolean;
+  subtle?: boolean;
 }) {
   if (!value) {
     return null;
@@ -208,7 +210,7 @@ function Deck({
 
   return (
     <p
-      className={`mt-1 text-base desktop:my-4 desktop:text-xl ${center ? "text-center" : ""}`}
+      className={`mt-1 text-base desktop:my-4 desktop:text-xl ${center ? "text-center" : ""} ${subtle ? "text-subtle" : ""}`}
     >
       {value}
     </p>

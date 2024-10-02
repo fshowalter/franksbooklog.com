@@ -11,6 +11,7 @@ import { ListWithFiltersLayout } from "src/components/ListWithFiltersLayout";
 import { toSentenceArray } from "src/utils";
 
 import { AvatarBackdrop } from "../Backdrop";
+import { ListItemKindAndYear } from "../ListItemKindAndYear";
 import type { Sort } from "./Author.reducer";
 import { Actions, initState, reducer } from "./Author.reducer";
 import { Filters } from "./Filters";
@@ -108,7 +109,7 @@ export function Author({
           onShowMore={() => dispatch({ type: Actions.SHOW_MORE })}
         >
           {(value) => {
-            return <WorkListItem value={value} key={value.imdbId} />;
+            return <WorkListItem value={value} key={value.slug} />;
           }}
         </GroupedList>
       }
@@ -119,23 +120,15 @@ export function Author({
 function WorkListItem({ value }: { value: ListItemValue }): JSX.Element {
   return (
     <ListItem>
-      <ListItemCover
-        slug={value.reviewed ? value.slug : null}
-        imageProps={value.coverImageProps}
-      />
-      <div className="pr-gutter grow tablet:w-full desktop:pr-4">
-        <div>
-          <ListItemTitle
-            title={value.title}
-            slug={value.reviewed ? value.slug : null}
-          />
-          <OtherAuthors values={value.otherAuthors} />
-          <div className="spacer-y-2" />
-          <YearAndKind year={value.yearPublished} kind={value.kind} />
-          <div className="spacer-y-2" />
-          <Grade value={value.grade} height={16} />
-          <div className="spacer-y-2" />
-        </div>
+      <ListItemCover imageProps={value.coverImageProps} />
+      <div className="flex grow flex-col items-start gap-y-1 tablet:w-full tablet:gap-y-2 desktop:pr-4">
+        <ListItemTitle
+          title={value.title}
+          slug={value.reviewed ? value.slug : null}
+        />
+        <OtherAuthors values={value.otherAuthors} />
+        <ListItemKindAndYear year={value.yearPublished} kind={value.kind} />
+        <Grade value={value.grade} height={16} />
       </div>
     </ListItem>
   );
@@ -147,26 +140,8 @@ function OtherAuthors({ values }: { values: ListItemValue["otherAuthors"] }) {
   }
 
   return (
-    <>
-      <div className="spacer-y-1" />
-      <div className="text-base leading-5 text-muted">
-        (with {toSentenceArray(values.map((value) => value.name))})
-      </div>
-    </>
-  );
-}
-
-function YearAndKind({
-  kind,
-  year,
-}: {
-  kind: string;
-  year: string;
-}): JSX.Element | null {
-  return (
-    <div className="tracking-0.5px text-sm leading-4 text-subtle">
-      <span>{kind} | </span>
-      {year}
+    <div className="font-sans text-xs leading-5 text-subtle">
+      (with {toSentenceArray(values.map((value) => value.name))})
     </div>
   );
 }
@@ -202,9 +177,9 @@ function Deck({
   }
 
   return (
-    <div className="px-gutter text-center text-subtle">
+    <>
       Author of {reviewedWorkCount} reviewed {works}
       {shelfText}.
-    </div>
+    </>
   );
 }
