@@ -1,4 +1,4 @@
-import { getFixedCoverImageProps } from "src/api/covers";
+import { getFluidCoverImageProps } from "src/api/covers";
 import { allTimelineEntries } from "src/api/timelineEntries";
 import { ListItemCoverImageConfig } from "src/components/ListItemCover";
 
@@ -42,7 +42,7 @@ export async function getProps(): Promise<Props> {
         }),
         title: entry.title,
         slug: entry.slug,
-        coverImageProps: await getFixedCoverImageProps(
+        coverImageProps: await getFluidCoverImageProps(
           entry,
           ListItemCoverImageConfig,
         ),
