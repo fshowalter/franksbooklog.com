@@ -62,11 +62,7 @@ export function Authors({ values, initialSort }: Props): JSX.Element {
 function AuthorListItem({ value }: { value: ListItemValue }): JSX.Element {
   return (
     <ListItem itemsCenter={true} extraVerticalPadding={true}>
-      <ListItemAvatar
-        name={value.name}
-        slug={value.reviewedWorkCount > 0 ? value.slug : null}
-        imageProps={value.avatarImageProps}
-      />
+      <ListItemAvatar name={value.name} imageProps={value.avatarImageProps} />
       <AuthorName
         value={value.name}
         slug={value.reviewedWorkCount > 0 ? value.slug : null}

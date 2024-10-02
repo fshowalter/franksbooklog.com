@@ -6,7 +6,6 @@ interface AvatarProps extends React.ImgHTMLAttributes<HTMLImageElement> {
   width: number;
   height: number;
   loading: "lazy" | "eager";
-  decoding: "async" | "auto" | "sync";
   className?: string;
 }
 
