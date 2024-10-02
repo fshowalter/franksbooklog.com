@@ -4,7 +4,6 @@ import { AuthorLink } from "src/components/AuthorLink";
 import { Cover } from "src/components/Cover";
 import { Grade } from "src/components/Grade";
 import { LongFormText } from "src/components/LongFormText";
-import { PageTitle } from "src/components/PageTitle";
 import { toSentenceArray } from "src/utils/";
 
 import { Layout } from "../Layout";
@@ -18,18 +17,6 @@ export const CoverImageConfig = {
   width: 248,
   height: 372,
 };
-
-const dateFormat = new Intl.DateTimeFormat("en-US", {
-  weekday: "short",
-  month: "short",
-  day: "numeric",
-  year: "numeric",
-  timeZone: "UTC",
-});
-
-function formatDate(date: Date) {
-  return dateFormat.format(date);
-}
 
 export interface Props {
   value: ReviewWithContent;

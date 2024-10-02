@@ -3,7 +3,6 @@ import { DecadeDistribution } from "src/components/DecadeDistribution";
 import { EditionDistribution } from "src/components/EditionDistribution";
 import { KindDistribution } from "src/components/KindDistribution";
 import { MostReadAuthors } from "src/components/MostReadAuthors";
-import { PageTitle } from "src/components/PageTitle";
 import { StatsNavigation } from "src/components/StatsNavigation";
 
 import { StatsBackdrop } from "../Backdrop";

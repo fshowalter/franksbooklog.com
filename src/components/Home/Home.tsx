@@ -1,4 +1,4 @@
-import { Backdrop, SolidBackdrop } from "../Backdrop";
+import { SolidBackdrop } from "../Backdrop";
 import { Layout } from "../Layout";
 import { SubHeading } from "../SubHeading";
 import type { ListItemValue } from "./HomeListItem";
@@ -6,10 +6,9 @@ import { HomeListItem } from "./HomeListItem";
 
 export interface Props {
   values: ListItemValue[];
-  backdropImageProps: BackdropImageProps;
 }
 
-export function Home({ values, backdropImageProps }: Props): JSX.Element {
+export function Home({ values }: Props): JSX.Element {
   return (
     <Layout hideLogo={true} addGradient={false} className="bg-subtle pb-8">
       <SolidBackdrop
@@ -33,7 +32,7 @@ export function Home({ values, backdropImageProps }: Props): JSX.Element {
         <div className="flex py-10">
           <a
             href="/reviews/"
-            className="hover:bg-accent mx-auto w-full max-w-button bg-default py-5 text-center font-sans text-xs font-semibold uppercase tracking-wide text-accent hover:text-inverse"
+            className="mx-auto w-full max-w-button bg-default py-5 text-center font-sans text-xs font-semibold uppercase tracking-wide text-accent hover:bg-accent hover:text-inverse"
           >
             All Reviews
           </a>

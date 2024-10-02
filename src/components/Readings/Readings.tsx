@@ -12,7 +12,6 @@ import { toSentenceArray } from "src/utils";
 
 import { SolidBackdrop } from "../Backdrop";
 import { Filters } from "./Filters";
-import { Header } from "./Header";
 import type { Sort } from "./Readings.reducer";
 import { Actions, initState, reducer } from "./Readings.reducer";
 

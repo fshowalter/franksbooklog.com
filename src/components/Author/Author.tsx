@@ -15,8 +15,6 @@ import { ListItemKindAndYear } from "../ListItemKindAndYear";
 import type { Sort } from "./Author.reducer";
 import { Actions, initState, reducer } from "./Author.reducer";
 import { Filters } from "./Filters";
-import { Header } from "./Header";
-import { List, type ListItemValue } from "./List";
 
 export interface Props
   extends Pick<Author, "name" | "reviewedWorkCount" | "shelfWorkCount"> {
@@ -26,6 +24,11 @@ export interface Props
   initialSort: Sort;
   avatarImageProps: AvatarImageProps | null;
 }
+
+export const AvatarImageConfig = {
+  width: 250,
+  height: 250,
+};
 
 type AuthorWork = Author["works"][number];
 

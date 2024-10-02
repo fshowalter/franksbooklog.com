@@ -10,10 +10,7 @@ import { SolidBackdrop } from "../Backdrop";
 import { ListItemKindAndYear } from "../ListItemKindAndYear";
 import { ListWithFiltersLayout } from "../ListWithFiltersLayout";
 import { Filters } from "./Filters";
-import { Header } from "./Header";
-import { List, type ListItemValue } from "./List";
 import type { Sort } from "./Shelf.reducer";
-import type { ActionType } from "./Shelf.reducer";
 import { initState, reducer } from "./Shelf.reducer";
 import { Actions } from "./Shelf.reducer";
 

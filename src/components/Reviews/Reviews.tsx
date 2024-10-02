@@ -11,10 +11,7 @@ import { SolidBackdrop } from "../Backdrop";
 import { Grade } from "../Grade";
 import { GroupedList } from "../GroupedList";
 import { Filters } from "./Filters";
-import { Header } from "./Header";
-import { List } from "./List";
 import type { Sort } from "./Reviews.reducer";
-import type { ActionType } from "./Reviews.reducer";
 import { Actions, initState, reducer } from "./Reviews.reducer";
 
 export interface Props {

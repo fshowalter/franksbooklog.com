@@ -4,7 +4,6 @@ import { ListItem } from "./ListItem";
 import { ListItemCover } from "./ListItemCover";
 import { ListItemKindAndYear } from "./ListItemKindAndYear";
 import { ListItemTitle } from "./ListItemTitle";
-import { StatHeading } from "./StatHeading";
 
 interface ReadingSubListItemValue {
   sequence: number;

@@ -3,9 +3,8 @@ import { getAvatarImageProps } from "src/api/avatars";
 import { getFixedCoverImageProps } from "src/api/covers";
 
 import { ListItemCoverImageConfig } from "../ListItemCover";
-import type { Props } from "./Author";
-import { AvatarImageConfig } from "./Header";
-import { type ListItemValue } from "./List";
+import type { ListItemValue, Props } from "./Author";
+import { AvatarImageConfig } from "./Author";
 
 function filterOtherAuthors(author: Author, work: Author["works"][number]) {
   return work.authors

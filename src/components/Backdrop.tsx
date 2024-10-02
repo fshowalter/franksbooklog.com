@@ -1,48 +1,6 @@
 import type { AvatarImageProps } from "src/api/avatars";
-import type { BackdropImageProps } from "src/api/backdrops";
 
 import { Avatar } from "./Avatar";
-
-export const BackdropImageConfig = {
-  width: 2400,
-  height: 1350,
-  sizes: "100vw",
-};
-
-export function Backdrop({
-  imageProps,
-  title,
-  deck,
-  breadcrumb,
-  titleStyle,
-  size = "default",
-}: {
-  imageProps: BackdropImageProps;
-  title: string;
-  deck?: string;
-  titleStyle?: string;
-  breadcrumb?: React.ReactNode;
-  size?: "default" | "large";
-}) {
-  const heroImage = (
-    <img
-      className="absolute inset-0 size-full object-cover object-top"
-      {...imageProps}
-      {...BackdropImageConfig}
-      loading="eager"
-      fetchPriority="high"
-      alt=""
-    />
-  );
-
-  return (
-    <Wrapper heroImage={heroImage} size={size}>
-      <Breadcrumb value={breadcrumb} />
-      <Title value={title} className={titleStyle} />
-      <Deck value={deck} shadow={true} />
-    </Wrapper>
-  );
-}
 
 export function SolidBackdrop({
   title,
@@ -59,7 +17,7 @@ export function SolidBackdrop({
     <Wrapper size="small">
       <Breadcrumb value={breadcrumb} />
       <Title value={title} className={titleStyle} />
-      <Deck value={deck} shadow={false} />
+      <Deck value={deck} />
     </Wrapper>
   );
 }

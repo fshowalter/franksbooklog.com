@@ -1,8 +1,6 @@
-import { getBackdropImageProps } from "src/api/backdrops";
-import { getFixedCoverImageProps } from "src/api/covers";
+import { getFluidCoverImageProps } from "src/api/covers";
 import { loadExcerptHtml, mostRecentReviews } from "src/api/reviews";
 
-import { BackdropImageConfig } from "../Backdrop";
 import type { Props } from "./Home";
 import { CoverImageConfig } from "./HomeListItem";
 
@@ -16,15 +14,11 @@ export async function getProps(): Promise<Props> {
   );
 
   return {
-    backdropImageProps: await getBackdropImageProps(
-      "home",
-      BackdropImageConfig,
-    ),
     values: await Promise.all(
       reviews.map(async (review) => {
         return {
           ...review,
-          coverImageProps: await getFixedCoverImageProps(
+          coverImageProps: await getFluidCoverImageProps(
             review,
             CoverImageConfig,
           ),
