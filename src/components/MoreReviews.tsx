@@ -48,11 +48,7 @@ export function MoreReviews({
   );
 }
 
-export function MoreReviewsCard({
-  value,
-}: {
-  value: MoreReviewsValue;
-}): JSX.Element {
+function MoreReviewsCard({ value }: { value: MoreReviewsValue }): JSX.Element {
   return (
     <li className="relative flex w-[46%] max-w-[248px] flex-col items-center border-default bg-default tablet:w-[22.75%]">
       <Cover
