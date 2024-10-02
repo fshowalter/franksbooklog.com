@@ -43,7 +43,7 @@ export function HomeListItem({
   eagerLoadCoverImage: boolean;
 }): JSX.Element {
   return (
-    <li className="relative flex w-[46%] max-w-[248px] flex-col items-center border-default bg-default tablet:w-[31.33333333%] desktop:w-[14.16666667%]">
+    <li className="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[14.16666667%]">
       <Cover
         imageProps={value.coverImageProps}
         decoding="async"
