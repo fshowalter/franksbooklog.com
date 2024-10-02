@@ -64,8 +64,8 @@ function AuthorListItem({ value }: { value: ListItemValue }): JSX.Element {
     <ListItem itemsCenter={true} extraVerticalPadding={true}>
       <ListItemAvatar
         name={value.name}
-        slug={value.reviewedWorkCount > 0 ? value.slug : null}
         imageProps={value.avatarImageProps}
+        fill={value.reviewedWorkCount > 0 ? undefined : "var(--bg-subtle)"}
       />
       <AuthorName
         value={value.name}
@@ -85,6 +85,14 @@ function AuthorName({
   value: ListItemValue["name"];
   slug: string | null;
 }) {
+  if (!slug) {
+    return (
+      <span className="font-sans text-sm font-light leading-normal text-subtle">
+        {value}
+      </span>
+    );
+  }
+
   return (
     <a
       href={`/authors/${slug}/`}

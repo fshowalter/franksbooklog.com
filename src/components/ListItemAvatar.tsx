@@ -1,19 +1,22 @@
 import type { AvatarImageProps } from "src/api/avatars";
 import { Avatar } from "src/components/Avatar";
+import { ccn } from "src/utils/concatClassNames";
 
 export const ListItemAvatarImageConfig = {
-  width: 64,
-  height: 64,
+  width: 80,
+  height: 80,
 };
 
 export function ListItemAvatar({
   name,
-  slug,
   imageProps,
+  className,
+  fill,
 }: {
   name: string;
-  slug: string | null;
   imageProps: AvatarImageProps | null;
+  className?: string;
+  fill?: string;
 }) {
   const avatar = (
     <Avatar
@@ -22,24 +25,22 @@ export function ListItemAvatar({
       width={ListItemAvatarImageConfig.width}
       height={ListItemAvatarImageConfig.height}
       loading="lazy"
-      decoding="async"
+      className="w-full"
+      fill={fill}
     />
   );
 
-  if (!slug) {
-    return (
-      <div className="safari-border-radius-fix w-16 max-w-16 overflow-hidden rounded-[50%] shadow-all">
-        {avatar}
-      </div>
-    );
-  }
-
   return (
-    <a
-      href={`/authors/${slug}/`}
-      className="safari-border-radius-fix w-16 max-w-16 overflow-hidden rounded-[50%] shadow-all"
+    <div
+      className={ccn(
+        "safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20",
+        className,
+      )}
+      style={{
+        boxShadow: fill ? `0 0 0 1px ${fill}` : undefined,
+      }}
     >
       {avatar}
-    </a>
+    </div>
   );
 }

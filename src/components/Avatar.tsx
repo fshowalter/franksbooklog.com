@@ -6,14 +6,15 @@ interface AvatarProps extends React.ImgHTMLAttributes<HTMLImageElement> {
   width: number;
   height: number;
   loading: "lazy" | "eager";
-  decoding: "async" | "auto" | "sync";
   className?: string;
+  fill?: string;
 }
 
 export function Avatar({
   name,
   imageProps,
   className,
+  fill,
   ...rest
 }: AvatarProps): JSX.Element {
   if (imageProps) {
@@ -25,7 +26,7 @@ export function Avatar({
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 16 16"
-        fill="var(--bg-stripe)"
+        fill={fill ? fill : "var(--bg-stripe)"}
         width="100%"
       >
         <path

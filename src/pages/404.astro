@@ -1,5 +1,4 @@
 ---
-import { getOpenGraphBackdropSrc } from "src/api/backdrops";
 import { Article } from "src/components/Article/Article";
 import { getProps } from "src/components/Article/getProps";
 import Layout from "src/layouts/Layout.astro";
@@ -10,15 +9,8 @@ const props = await getProps({
   slug,
   deck: '"Dick Laurent is dead."',
 });
-
-const openGraphImageSrc = await getOpenGraphBackdropSrc(slug);
 ---
 
-<Layout
-  title="404: Not Found"
-  description="Dick Laurent is dead."
-  image={openGraphImageSrc}
-  article
->
+<Layout title="404: Not Found" description="Dick Laurent is dead." article>
   <Article {...props} />
 </Layout>
