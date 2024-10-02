@@ -8,6 +8,8 @@ import { toSentenceArray } from "src/utils";
 export const CoverImageConfig = {
   width: 248,
   height: 372,
+  sizes:
+    "(max-width: 599px) 48vw, (max-width: 767px) 31vw, (max-width: 899px) calc((100vw - 96px) * 0.32), (max-width: 1279px) calc((100vw - 96px) * 0.22.75), (max-width: 1695px) calc((100vw - 160px) * 0.1416666667), 218px",
 };
 
 function formatDate(reviewDate: Date) {
