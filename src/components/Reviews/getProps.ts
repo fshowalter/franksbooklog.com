@@ -1,4 +1,4 @@
-import { getFixedCoverImageProps } from "src/api/covers";
+import { getFluidCoverImageProps } from "src/api/covers";
 import { allReviews } from "src/api/reviews";
 import { ListItemCoverImageConfig } from "src/components/ListItemCover";
 
@@ -25,7 +25,7 @@ export async function getProps(): Promise<Props> {
         grade: review.grade,
         gradeValue: review.gradeValue,
         sortTitle: review.sortTitle,
-        coverImageProps: await getFixedCoverImageProps(
+        coverImageProps: await getFluidCoverImageProps(
           review,
           ListItemCoverImageConfig,
         ),
