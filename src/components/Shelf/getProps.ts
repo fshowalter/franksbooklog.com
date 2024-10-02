@@ -1,4 +1,4 @@
-import { getFixedCoverImageProps } from "src/api/covers";
+import { getFluidCoverImageProps } from "src/api/covers";
 import { allShelfWorks } from "src/api/shelf";
 import { ListItemCoverImageConfig } from "src/components/ListItemCover";
 
@@ -18,7 +18,7 @@ export async function getProps(): Promise<Props> {
         title: work.title,
         slug: work.slug,
         sortTitle: work.sortTitle,
-        coverImageProps: await getFixedCoverImageProps(
+        coverImageProps: await getFluidCoverImageProps(
           work,
           ListItemCoverImageConfig,
         ),
