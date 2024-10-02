@@ -1,4 +1,4 @@
-import { getFixedCoverImageProps } from "src/api/covers";
+import { getFluidCoverImageProps } from "src/api/covers";
 import { allStatYears, statsForYear } from "src/api/yearStats";
 import { ListItemCoverImageConfig } from "src/components/ListItemCover";
 
@@ -20,7 +20,7 @@ export async function getProps(year: string): Promise<Props> {
             author.readings.map(async (reading) => {
               return {
                 ...reading,
-                coverImageProps: await getFixedCoverImageProps(
+                coverImageProps: await getFluidCoverImageProps(
                   reading,
                   ListItemCoverImageConfig,
                 ),
