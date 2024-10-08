@@ -68,7 +68,7 @@
     "eslint-plugin-simple-import-sort": "12.1.1",
     "eslint-plugin-tailwindcss": "3.17.4",
     "eslint-plugin-testing-library": "6.3.0",
-    "eslint-plugin-vitest": "0.5.4",
+    "@vitest/eslint-plugin": "1.0.1",
     "globals": "15.10.0",
     "jsdom": "25.0.1",
     "knip": "5.33.1",
