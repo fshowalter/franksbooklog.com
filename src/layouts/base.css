@@ -14,6 +14,8 @@
   --bg-footer: #252525;
   --bg-progress: #14bd41;
   --bg-stripe: #f7f5f3;
+  --bg-unreviewed: #f7f5f3;
+  --bg-group: #f7f5f3;
   --bg-subtle: #fafafa;
   --border-accent: #054a93;
   --border-default: #e9e7e0;
@@ -43,6 +45,7 @@
     --bg-inverse: #322f2f;
     --bg-progress: #379634;
     --bg-stripe: #3c393a;
+    --bg-group: #3c393a;
     --bg-subtle: #373434;
     --border-accent: #499ef8;
     --border-default: #484745;

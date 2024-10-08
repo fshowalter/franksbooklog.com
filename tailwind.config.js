@@ -12,6 +12,8 @@ export default {
       abandoned: "var(--bg-abandoned)",
       inverse: "var(--bg-inverse)",
       stripe: "var(--bg-stripe)",
+      group: "var(--bg-group)",
+      unreviewed: "var(--bg-unreviewed)",
       accent: "var(--bg-accent)",
       unset: "unset",
     },
