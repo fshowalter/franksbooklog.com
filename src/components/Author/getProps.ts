@@ -16,6 +16,28 @@ function filterOtherAuthors(author: Author, work: Author["works"][number]) {
     });
 }
 
+function deck({
+  reviewedWorkCount,
+  shelfWorkCount,
+}: {
+  reviewedWorkCount: Author["reviewedWorkCount"];
+  shelfWorkCount: Author["shelfWorkCount"];
+}): string {
+  let shelfText = "";
+
+  if (shelfWorkCount > 0) {
+    shelfText = ` with ${shelfWorkCount} on the shelf`;
+  }
+
+  let works = "works";
+
+  if (reviewedWorkCount === 1) {
+    works = "work";
+  }
+
+  return `Author of ${reviewedWorkCount} reviewed ${works} ${shelfText}.`;
+}
+
 export async function getProps(slug: string): Promise<Props> {
   const { author, distinctKinds, distinctPublishedYears } =
     await getAuthorDetails(slug);
@@ -46,9 +68,8 @@ export async function getProps(slug: string): Promise<Props> {
 
   return {
     works,
+    deck: deck(author),
     name: author.name,
-    shelfWorkCount: author.shelfWorkCount,
-    reviewedWorkCount: author.reviewedWorkCount,
     distinctKinds,
     distinctPublishedYears,
     initialSort: "year-published-asc",

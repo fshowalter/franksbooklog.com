@@ -16,7 +16,7 @@ export function Mast({
         position: hasBackdrop ? "absolute" : "static",
       }}
     >
-      {hideLogo ? <div /> : <Logo />}
+      {hideLogo ? <div /> : <Logo className="mt-2 tablet:mt-0" />}
       <div className="flex items-center">
         <nav className="hidden w-full desktop:block desktop:w-auto">
           <ul className={`flex flex-wrap justify-start gap-x-6 text-xl`}>
@@ -104,7 +104,7 @@ function SearchButton() {
           viewBox="0 0 24 24"
           strokeWidth="1.5"
           stroke="currentColor"
-          className="size-6 desktop:size-7"
+          className="size-7"
         >
           <path
             strokeLinecap="round"

@@ -17,7 +17,7 @@ exports[`Review > matches snapshot for slug 'about-face-by-david-h-hackworth-jul
         style="position: static;"
       >
         <div
-          class="flex flex-col"
+          class="flex flex-col mt-2 tablet:mt-0"
         >
           <div
             class="whitespace-nowrap font-normal leading-8"
@@ -119,7 +119,7 @@ exports[`Review > matches snapshot for slug 'about-face-by-david-h-hackworth-jul
               type="button"
             >
               <svg
-                class="size-6 desktop:size-7"
+                class="size-7"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.5"
@@ -1127,7 +1127,7 @@ exports[`Review > matches snapshot for slug 'altar-by-philip-fracassi' 1`] = `
         style="position: static;"
       >
         <div
-          class="flex flex-col"
+          class="flex flex-col mt-2 tablet:mt-0"
         >
           <div
             class="whitespace-nowrap font-normal leading-8"
@@ -1229,7 +1229,7 @@ exports[`Review > matches snapshot for slug 'altar-by-philip-fracassi' 1`] = `
               type="button"
             >
               <svg
-                class="size-6 desktop:size-7"
+                class="size-7"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.5"
@@ -1991,7 +1991,7 @@ exports[`Review > matches snapshot for slug 'behold-the-void-by-philip-fracassi'
         style="position: static;"
       >
         <div
-          class="flex flex-col"
+          class="flex flex-col mt-2 tablet:mt-0"
         >
           <div
             class="whitespace-nowrap font-normal leading-8"
@@ -2093,7 +2093,7 @@ exports[`Review > matches snapshot for slug 'behold-the-void-by-philip-fracassi'
               type="button"
             >
               <svg
-                class="size-6 desktop:size-7"
+                class="size-7"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.5"
@@ -3572,7 +3572,7 @@ exports[`Review > matches snapshot for slug 'brother-iron-sister-steel-by-dave-d
         style="position: static;"
       >
         <div
-          class="flex flex-col"
+          class="flex flex-col mt-2 tablet:mt-0"
         >
           <div
             class="whitespace-nowrap font-normal leading-8"
@@ -3674,7 +3674,7 @@ exports[`Review > matches snapshot for slug 'brother-iron-sister-steel-by-dave-d
               type="button"
             >
               <svg
-                class="size-6 desktop:size-7"
+                class="size-7"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.5"
@@ -4495,7 +4495,7 @@ exports[`Review > matches snapshot for slug 'cant-hurt-me-by-david-goggins' 1`] 
         style="position: static;"
       >
         <div
-          class="flex flex-col"
+          class="flex flex-col mt-2 tablet:mt-0"
         >
           <div
             class="whitespace-nowrap font-normal leading-8"
@@ -4597,7 +4597,7 @@ exports[`Review > matches snapshot for slug 'cant-hurt-me-by-david-goggins' 1`] 
               type="button"
             >
               <svg
-                class="size-6 desktop:size-7"
+                class="size-7"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.5"
@@ -5500,7 +5500,7 @@ exports[`Review > matches snapshot for slug 'carrie-by-stephen-king' 1`] = `
         style="position: static;"
       >
         <div
-          class="flex flex-col"
+          class="flex flex-col mt-2 tablet:mt-0"
         >
           <div
             class="whitespace-nowrap font-normal leading-8"
@@ -5602,7 +5602,7 @@ exports[`Review > matches snapshot for slug 'carrie-by-stephen-king' 1`] = `
               type="button"
             >
               <svg
-                class="size-6 desktop:size-7"
+                class="size-7"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.5"
@@ -6653,7 +6653,7 @@ exports[`Review > matches snapshot for slug 'casino-royale-by-ian-fleming' 1`] =
         style="position: static;"
       >
         <div
-          class="flex flex-col"
+          class="flex flex-col mt-2 tablet:mt-0"
         >
           <div
             class="whitespace-nowrap font-normal leading-8"
@@ -6755,7 +6755,7 @@ exports[`Review > matches snapshot for slug 'casino-royale-by-ian-fleming' 1`] =
               type="button"
             >
               <svg
-                class="size-6 desktop:size-7"
+                class="size-7"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.5"
@@ -7747,7 +7747,7 @@ exports[`Review > matches snapshot for slug 'churchill-by-andrew-roberts' 1`] = 
         style="position: static;"
       >
         <div
-          class="flex flex-col"
+          class="flex flex-col mt-2 tablet:mt-0"
         >
           <div
             class="whitespace-nowrap font-normal leading-8"
@@ -7849,7 +7849,7 @@ exports[`Review > matches snapshot for slug 'churchill-by-andrew-roberts' 1`] = 
               type="button"
             >
               <svg
-                class="size-6 desktop:size-7"
+                class="size-7"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.5"
@@ -8935,7 +8935,7 @@ exports[`Review > matches snapshot for slug 'coffin-by-philip-fracassi' 1`] = `
         style="position: static;"
       >
         <div
-          class="flex flex-col"
+          class="flex flex-col mt-2 tablet:mt-0"
         >
           <div
             class="whitespace-nowrap font-normal leading-8"
@@ -9037,7 +9037,7 @@ exports[`Review > matches snapshot for slug 'coffin-by-philip-fracassi' 1`] = `
               type="button"
             >
               <svg
-                class="size-6 desktop:size-7"
+                class="size-7"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.5"
@@ -9763,7 +9763,7 @@ exports[`Review > matches snapshot for slug 'consider-this-by-chuck-palahniuk' 1
         style="position: static;"
       >
         <div
-          class="flex flex-col"
+          class="flex flex-col mt-2 tablet:mt-0"
         >
           <div
             class="whitespace-nowrap font-normal leading-8"
@@ -9865,7 +9865,7 @@ exports[`Review > matches snapshot for slug 'consider-this-by-chuck-palahniuk' 1
               type="button"
             >
               <svg
-                class="size-6 desktop:size-7"
+                class="size-7"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.5"
@@ -10685,7 +10685,7 @@ exports[`Review > matches snapshot for slug 'cured-by-lol-tolhurst' 1`] = `
         style="position: static;"
       >
         <div
-          class="flex flex-col"
+          class="flex flex-col mt-2 tablet:mt-0"
         >
           <div
             class="whitespace-nowrap font-normal leading-8"
@@ -10787,7 +10787,7 @@ exports[`Review > matches snapshot for slug 'cured-by-lol-tolhurst' 1`] = `
               type="button"
             >
               <svg
-                class="size-6 desktop:size-7"
+                class="size-7"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.5"
@@ -11716,7 +11716,7 @@ exports[`Review > matches snapshot for slug 'desert-pickup-by-richard-laymon' 1`
         style="position: static;"
       >
         <div
-          class="flex flex-col"
+          class="flex flex-col mt-2 tablet:mt-0"
         >
           <div
             class="whitespace-nowrap font-normal leading-8"
@@ -11818,7 +11818,7 @@ exports[`Review > matches snapshot for slug 'desert-pickup-by-richard-laymon' 1`
               type="button"
             >
               <svg
-                class="size-6 desktop:size-7"
+                class="size-7"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.5"
@@ -12558,7 +12558,7 @@ exports[`Review > matches snapshot for slug 'doctor-sleep-by-stephen-king' 1`] =
         style="position: static;"
       >
         <div
-          class="flex flex-col"
+          class="flex flex-col mt-2 tablet:mt-0"
         >
           <div
             class="whitespace-nowrap font-normal leading-8"
@@ -12660,7 +12660,7 @@ exports[`Review > matches snapshot for slug 'doctor-sleep-by-stephen-king' 1`] =
               type="button"
             >
               <svg
-                class="size-6 desktop:size-7"
+                class="size-7"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.5"
@@ -14183,7 +14183,7 @@ exports[`Review > matches snapshot for slug 'dont-let-them-get-you-down-by-phili
         style="position: static;"
       >
         <div
-          class="flex flex-col"
+          class="flex flex-col mt-2 tablet:mt-0"
         >
           <div
             class="whitespace-nowrap font-normal leading-8"
@@ -14285,7 +14285,7 @@ exports[`Review > matches snapshot for slug 'dont-let-them-get-you-down-by-phili
               type="button"
             >
               <svg
-                class="size-6 desktop:size-7"
+                class="size-7"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.5"
@@ -15336,7 +15336,7 @@ exports[`Review > matches snapshot for slug 'dracula-by-bram-stoker' 1`] = `
         style="position: static;"
       >
         <div
-          class="flex flex-col"
+          class="flex flex-col mt-2 tablet:mt-0"
         >
           <div
             class="whitespace-nowrap font-normal leading-8"
@@ -15438,7 +15438,7 @@ exports[`Review > matches snapshot for slug 'dracula-by-bram-stoker' 1`] = `
               type="button"
             >
               <svg
-                class="size-6 desktop:size-7"
+                class="size-7"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.5"
@@ -16591,7 +16591,7 @@ exports[`Review > matches snapshot for slug 'draft-no-4-by-john-mcphee' 1`] = `
         style="position: static;"
       >
         <div
-          class="flex flex-col"
+          class="flex flex-col mt-2 tablet:mt-0"
         >
           <div
             class="whitespace-nowrap font-normal leading-8"
@@ -16693,7 +16693,7 @@ exports[`Review > matches snapshot for slug 'draft-no-4-by-john-mcphee' 1`] = `
               type="button"
             >
               <svg
-                class="size-6 desktop:size-7"
+                class="size-7"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.5"
@@ -17440,7 +17440,7 @@ exports[`Review > matches snapshot for slug 'extreme-ownership-by-jocko-willink-
         style="position: static;"
       >
         <div
-          class="flex flex-col"
+          class="flex flex-col mt-2 tablet:mt-0"
         >
           <div
             class="whitespace-nowrap font-normal leading-8"
@@ -17542,7 +17542,7 @@ exports[`Review > matches snapshot for slug 'extreme-ownership-by-jocko-willink-
               type="button"
             >
               <svg
-                class="size-6 desktop:size-7"
+                class="size-7"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.5"
@@ -18303,7 +18303,7 @@ exports[`Review > matches snapshot for slug 'fail-safe-by-philip-fracassi' 1`] =
         style="position: static;"
       >
         <div
-          class="flex flex-col"
+          class="flex flex-col mt-2 tablet:mt-0"
         >
           <div
             class="whitespace-nowrap font-normal leading-8"
@@ -18405,7 +18405,7 @@ exports[`Review > matches snapshot for slug 'fail-safe-by-philip-fracassi' 1`] =
               type="button"
             >
               <svg
-                class="size-6 desktop:size-7"
+                class="size-7"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.5"
@@ -19158,7 +19158,7 @@ exports[`Review > matches snapshot for slug 'fast-forward-by-stephen-morris' 1`]
         style="position: static;"
       >
         <div
-          class="flex flex-col"
+          class="flex flex-col mt-2 tablet:mt-0"
         >
           <div
             class="whitespace-nowrap font-normal leading-8"
@@ -19260,7 +19260,7 @@ exports[`Review > matches snapshot for slug 'fast-forward-by-stephen-morris' 1`]
               type="button"
             >
               <svg
-                class="size-6 desktop:size-7"
+                class="size-7"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.5"
@@ -20992,7 +20992,7 @@ exports[`Review > matches snapshot for slug 'fight-club-by-chuck-palahniuk' 1`] 
         style="position: static;"
       >
         <div
-          class="flex flex-col"
+          class="flex flex-col mt-2 tablet:mt-0"
         >
           <div
             class="whitespace-nowrap font-normal leading-8"
@@ -21094,7 +21094,7 @@ exports[`Review > matches snapshot for slug 'fight-club-by-chuck-palahniuk' 1`] 
               type="button"
             >
               <svg
-                class="size-6 desktop:size-7"
+                class="size-7"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.5"
@@ -22010,7 +22010,7 @@ exports[`Review > matches snapshot for slug 'fright-night-by-john-skipp-craig-sp
         style="position: static;"
       >
         <div
-          class="flex flex-col"
+          class="flex flex-col mt-2 tablet:mt-0"
         >
           <div
             class="whitespace-nowrap font-normal leading-8"
@@ -22112,7 +22112,7 @@ exports[`Review > matches snapshot for slug 'fright-night-by-john-skipp-craig-sp
               type="button"
             >
               <svg
-                class="size-6 desktop:size-7"
+                class="size-7"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.5"
@@ -23266,7 +23266,7 @@ exports[`Review > matches snapshot for slug 'fright-night-origins-by-tom-holland
         style="position: static;"
       >
         <div
-          class="flex flex-col"
+          class="flex flex-col mt-2 tablet:mt-0"
         >
           <div
             class="whitespace-nowrap font-normal leading-8"
@@ -23368,7 +23368,7 @@ exports[`Review > matches snapshot for slug 'fright-night-origins-by-tom-holland
               type="button"
             >
               <svg
-                class="size-6 desktop:size-7"
+                class="size-7"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.5"
@@ -24402,7 +24402,7 @@ exports[`Review > matches snapshot for slug 'gothic-by-philip-fracassi' 1`] = `
         style="position: static;"
       >
         <div
-          class="flex flex-col"
+          class="flex flex-col mt-2 tablet:mt-0"
         >
           <div
             class="whitespace-nowrap font-normal leading-8"
@@ -24504,7 +24504,7 @@ exports[`Review > matches snapshot for slug 'gothic-by-philip-fracassi' 1`] = `
               type="button"
             >
               <svg
-                class="size-6 desktop:size-7"
+                class="size-7"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.5"
@@ -25586,7 +25586,7 @@ exports[`Review > matches snapshot for slug 'hawk-mountain-by-conner-habib' 1`] 
         style="position: static;"
       >
         <div
-          class="flex flex-col"
+          class="flex flex-col mt-2 tablet:mt-0"
         >
           <div
             class="whitespace-nowrap font-normal leading-8"
@@ -25688,7 +25688,7 @@ exports[`Review > matches snapshot for slug 'hawk-mountain-by-conner-habib' 1`] 
               type="button"
             >
               <svg
-                class="size-6 desktop:size-7"
+                class="size-7"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.5"
@@ -27015,7 +27015,7 @@ exports[`Review > matches snapshot for slug 'i-will-find-you-by-joe-kenda' 1`] =
         style="position: static;"
       >
         <div
-          class="flex flex-col"
+          class="flex flex-col mt-2 tablet:mt-0"
         >
           <div
             class="whitespace-nowrap font-normal leading-8"
@@ -27117,7 +27117,7 @@ exports[`Review > matches snapshot for slug 'i-will-find-you-by-joe-kenda' 1`] =
               type="button"
             >
               <svg
-                class="size-6 desktop:size-7"
+                class="size-7"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.5"
@@ -28032,7 +28032,7 @@ exports[`Review > matches snapshot for slug 'is-this-anything-by-jerry-seinfeld'
         style="position: static;"
       >
         <div
-          class="flex flex-col"
+          class="flex flex-col mt-2 tablet:mt-0"
         >
           <div
             class="whitespace-nowrap font-normal leading-8"
@@ -28134,7 +28134,7 @@ exports[`Review > matches snapshot for slug 'is-this-anything-by-jerry-seinfeld'
               type="button"
             >
               <svg
-                class="size-6 desktop:size-7"
+                class="size-7"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.5"
@@ -28995,7 +28995,7 @@ exports[`Review > matches snapshot for slug 'less-than-zero-by-bret-easton-ellis
         style="position: static;"
       >
         <div
-          class="flex flex-col"
+          class="flex flex-col mt-2 tablet:mt-0"
         >
           <div
             class="whitespace-nowrap font-normal leading-8"
@@ -29097,7 +29097,7 @@ exports[`Review > matches snapshot for slug 'less-than-zero-by-bret-easton-ellis
               type="button"
             >
               <svg
-                class="size-6 desktop:size-7"
+                class="size-7"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.5"
@@ -30009,7 +30009,7 @@ exports[`Review > matches snapshot for slug 'live-and-let-die-by-ian-fleming' 1`
         style="position: static;"
       >
         <div
-          class="flex flex-col"
+          class="flex flex-col mt-2 tablet:mt-0"
         >
           <div
             class="whitespace-nowrap font-normal leading-8"
@@ -30111,7 +30111,7 @@ exports[`Review > matches snapshot for slug 'live-and-let-die-by-ian-fleming' 1`
               type="button"
             >
               <svg
-                class="size-6 desktop:size-7"
+                class="size-7"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.5"
@@ -31341,7 +31341,7 @@ exports[`Review > matches snapshot for slug 'living-with-a-seal-by-jesse-itzler'
         style="position: static;"
       >
         <div
-          class="flex flex-col"
+          class="flex flex-col mt-2 tablet:mt-0"
         >
           <div
             class="whitespace-nowrap font-normal leading-8"
@@ -31443,7 +31443,7 @@ exports[`Review > matches snapshot for slug 'living-with-a-seal-by-jesse-itzler'
               type="button"
             >
               <svg
-                class="size-6 desktop:size-7"
+                class="size-7"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.5"
@@ -32276,7 +32276,7 @@ exports[`Review > matches snapshot for slug 'mandala-by-philip-fracassi' 1`] = `
         style="position: static;"
       >
         <div
-          class="flex flex-col"
+          class="flex flex-col mt-2 tablet:mt-0"
         >
           <div
             class="whitespace-nowrap font-normal leading-8"
@@ -32378,7 +32378,7 @@ exports[`Review > matches snapshot for slug 'mandala-by-philip-fracassi' 1`] = `
               type="button"
             >
               <svg
-                class="size-6 desktop:size-7"
+                class="size-7"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.5"
@@ -33222,7 +33222,7 @@ exports[`Review > matches snapshot for slug 'moonraker-by-ian-fleming' 1`] = `
         style="position: static;"
       >
         <div
-          class="flex flex-col"
+          class="flex flex-col mt-2 tablet:mt-0"
         >
           <div
             class="whitespace-nowrap font-normal leading-8"
@@ -33324,7 +33324,7 @@ exports[`Review > matches snapshot for slug 'moonraker-by-ian-fleming' 1`] = `
               type="button"
             >
               <svg
-                class="size-6 desktop:size-7"
+                class="size-7"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.5"
@@ -34195,7 +34195,7 @@ exports[`Review > matches snapshot for slug 'mother-by-philip-fracassi' 1`] = `
         style="position: static;"
       >
         <div
-          class="flex flex-col"
+          class="flex flex-col mt-2 tablet:mt-0"
         >
           <div
             class="whitespace-nowrap font-normal leading-8"
@@ -34297,7 +34297,7 @@ exports[`Review > matches snapshot for slug 'mother-by-philip-fracassi' 1`] = `
               type="button"
             >
               <svg
-                class="size-6 desktop:size-7"
+                class="size-7"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.5"
@@ -35051,7 +35051,7 @@ exports[`Review > matches snapshot for slug 'on-writing-by-stephen-king' 1`] = `
         style="position: static;"
       >
         <div
-          class="flex flex-col"
+          class="flex flex-col mt-2 tablet:mt-0"
         >
           <div
             class="whitespace-nowrap font-normal leading-8"
@@ -35153,7 +35153,7 @@ exports[`Review > matches snapshot for slug 'on-writing-by-stephen-king' 1`] = `
               type="button"
             >
               <svg
-                class="size-6 desktop:size-7"
+                class="size-7"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.5"
@@ -36079,7 +36079,7 @@ exports[`Review > matches snapshot for slug 'out-are-the-lights-by-richard-laymo
         style="position: static;"
       >
         <div
-          class="flex flex-col"
+          class="flex flex-col mt-2 tablet:mt-0"
         >
           <div
             class="whitespace-nowrap font-normal leading-8"
@@ -36181,7 +36181,7 @@ exports[`Review > matches snapshot for slug 'out-are-the-lights-by-richard-laymo
               type="button"
             >
               <svg
-                class="size-6 desktop:size-7"
+                class="size-7"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.5"
@@ -37267,7 +37267,7 @@ exports[`Review > matches snapshot for slug 'recessional-by-david-mamet' 1`] = `
         style="position: static;"
       >
         <div
-          class="flex flex-col"
+          class="flex flex-col mt-2 tablet:mt-0"
         >
           <div
             class="whitespace-nowrap font-normal leading-8"
@@ -37369,7 +37369,7 @@ exports[`Review > matches snapshot for slug 'recessional-by-david-mamet' 1`] = `
               type="button"
             >
               <svg
-                class="size-6 desktop:size-7"
+                class="size-7"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.5"
@@ -38476,7 +38476,7 @@ exports[`Review > matches snapshot for slug 'record-play-pause-by-stephen-morris
         style="position: static;"
       >
         <div
-          class="flex flex-col"
+          class="flex flex-col mt-2 tablet:mt-0"
         >
           <div
             class="whitespace-nowrap font-normal leading-8"
@@ -38578,7 +38578,7 @@ exports[`Review > matches snapshot for slug 'record-play-pause-by-stephen-morris
               type="button"
             >
               <svg
-                class="size-6 desktop:size-7"
+                class="size-7"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.5"
@@ -39544,7 +39544,7 @@ exports[`Review > matches snapshot for slug 'roadside-pickup-by-richard-laymon' 
         style="position: static;"
       >
         <div
-          class="flex flex-col"
+          class="flex flex-col mt-2 tablet:mt-0"
         >
           <div
             class="whitespace-nowrap font-normal leading-8"
@@ -39646,7 +39646,7 @@ exports[`Review > matches snapshot for slug 'roadside-pickup-by-richard-laymon' 
               type="button"
             >
               <svg
-                class="size-6 desktop:size-7"
+                class="size-7"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.5"
@@ -40355,7 +40355,7 @@ exports[`Review > matches snapshot for slug 'sacculina-by-philip-fracassi' 1`] =
         style="position: static;"
       >
         <div
-          class="flex flex-col"
+          class="flex flex-col mt-2 tablet:mt-0"
         >
           <div
             class="whitespace-nowrap font-normal leading-8"
@@ -40457,7 +40457,7 @@ exports[`Review > matches snapshot for slug 'sacculina-by-philip-fracassi' 1`] =
               type="button"
             >
               <svg
-                class="size-6 desktop:size-7"
+                class="size-7"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.5"
@@ -41432,7 +41432,7 @@ exports[`Review > matches snapshot for slug 'salems-lot-by-stephen-king' 1`] = `
         style="position: static;"
       >
         <div
-          class="flex flex-col"
+          class="flex flex-col mt-2 tablet:mt-0"
         >
           <div
             class="whitespace-nowrap font-normal leading-8"
@@ -41534,7 +41534,7 @@ exports[`Review > matches snapshot for slug 'salems-lot-by-stephen-king' 1`] = `
               type="button"
             >
               <svg
-                class="size-6 desktop:size-7"
+                class="size-7"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.5"
@@ -42640,7 +42640,7 @@ exports[`Review > matches snapshot for slug 'set-the-boy-free-by-johnny-marr' 1`
         style="position: static;"
       >
         <div
-          class="flex flex-col"
+          class="flex flex-col mt-2 tablet:mt-0"
         >
           <div
             class="whitespace-nowrap font-normal leading-8"
@@ -42742,7 +42742,7 @@ exports[`Review > matches snapshot for slug 'set-the-boy-free-by-johnny-marr' 1`
               type="button"
             >
               <svg
-                class="size-6 desktop:size-7"
+                class="size-7"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.5"
@@ -43613,7 +43613,7 @@ exports[`Review > matches snapshot for slug 'soft-construction-of-a-sunset-by-ph
         style="position: static;"
       >
         <div
-          class="flex flex-col"
+          class="flex flex-col mt-2 tablet:mt-0"
         >
           <div
             class="whitespace-nowrap font-normal leading-8"
@@ -43715,7 +43715,7 @@ exports[`Review > matches snapshot for slug 'soft-construction-of-a-sunset-by-ph
               type="button"
             >
               <svg
-                class="size-6 desktop:size-7"
+                class="size-7"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.5"
@@ -44427,7 +44427,7 @@ exports[`Review > matches snapshot for slug 'surfer-girl-by-philip-fracassi' 1`]
         style="position: static;"
       >
         <div
-          class="flex flex-col"
+          class="flex flex-col mt-2 tablet:mt-0"
         >
           <div
             class="whitespace-nowrap font-normal leading-8"
@@ -44529,7 +44529,7 @@ exports[`Review > matches snapshot for slug 'surfer-girl-by-philip-fracassi' 1`]
               type="button"
             >
               <svg
-                class="size-6 desktop:size-7"
+                class="size-7"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.5"
@@ -45274,7 +45274,7 @@ exports[`Review > matches snapshot for slug 'the-48-laws-of-power-by-robert-gree
         style="position: static;"
       >
         <div
-          class="flex flex-col"
+          class="flex flex-col mt-2 tablet:mt-0"
         >
           <div
             class="whitespace-nowrap font-normal leading-8"
@@ -45376,7 +45376,7 @@ exports[`Review > matches snapshot for slug 'the-48-laws-of-power-by-robert-gree
               type="button"
             >
               <svg
-                class="size-6 desktop:size-7"
+                class="size-7"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.5"
@@ -46236,7 +46236,7 @@ exports[`Review > matches snapshot for slug 'the-baby-farmer-by-philip-fracassi'
         style="position: static;"
       >
         <div
-          class="flex flex-col"
+          class="flex flex-col mt-2 tablet:mt-0"
         >
           <div
             class="whitespace-nowrap font-normal leading-8"
@@ -46338,7 +46338,7 @@ exports[`Review > matches snapshot for slug 'the-baby-farmer-by-philip-fracassi'
               type="button"
             >
               <svg
-                class="size-6 desktop:size-7"
+                class="size-7"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.5"
@@ -47086,7 +47086,7 @@ exports[`Review > matches snapshot for slug 'the-big-sleep-by-raymond-chandler' 
         style="position: static;"
       >
         <div
-          class="flex flex-col"
+          class="flex flex-col mt-2 tablet:mt-0"
         >
           <div
             class="whitespace-nowrap font-normal leading-8"
@@ -47188,7 +47188,7 @@ exports[`Review > matches snapshot for slug 'the-big-sleep-by-raymond-chandler' 
               type="button"
             >
               <svg
-                class="size-6 desktop:size-7"
+                class="size-7"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.5"
@@ -48125,7 +48125,7 @@ exports[`Review > matches snapshot for slug 'the-cellar-by-richard-laymon' 1`] =
         style="position: static;"
       >
         <div
-          class="flex flex-col"
+          class="flex flex-col mt-2 tablet:mt-0"
         >
           <div
             class="whitespace-nowrap font-normal leading-8"
@@ -48227,7 +48227,7 @@ exports[`Review > matches snapshot for slug 'the-cellar-by-richard-laymon' 1`] =
               type="button"
             >
               <svg
-                class="size-6 desktop:size-7"
+                class="size-7"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.5"
@@ -49206,7 +49206,7 @@ exports[`Review > matches snapshot for slug 'the-cipher-by-kathe-koja' 1`] = `
         style="position: static;"
       >
         <div
-          class="flex flex-col"
+          class="flex flex-col mt-2 tablet:mt-0"
         >
           <div
             class="whitespace-nowrap font-normal leading-8"
@@ -49308,7 +49308,7 @@ exports[`Review > matches snapshot for slug 'the-cipher-by-kathe-koja' 1`] = `
               type="button"
             >
               <svg
-                class="size-6 desktop:size-7"
+                class="size-7"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.5"
@@ -50500,7 +50500,7 @@ exports[`Review > matches snapshot for slug 'the-creative-act-by-rick-rubin' 1`]
         style="position: static;"
       >
         <div
-          class="flex flex-col"
+          class="flex flex-col mt-2 tablet:mt-0"
         >
           <div
             class="whitespace-nowrap font-normal leading-8"
@@ -50602,7 +50602,7 @@ exports[`Review > matches snapshot for slug 'the-creative-act-by-rick-rubin' 1`]
               type="button"
             >
               <svg
-                class="size-6 desktop:size-7"
+                class="size-7"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.5"
@@ -51439,7 +51439,7 @@ exports[`Review > matches snapshot for slug 'the-dark-tunnel-by-ross-macdonald' 
         style="position: static;"
       >
         <div
-          class="flex flex-col"
+          class="flex flex-col mt-2 tablet:mt-0"
         >
           <div
             class="whitespace-nowrap font-normal leading-8"
@@ -51541,7 +51541,7 @@ exports[`Review > matches snapshot for slug 'the-dark-tunnel-by-ross-macdonald' 
               type="button"
             >
               <svg
-                class="size-6 desktop:size-7"
+                class="size-7"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.5"
@@ -52707,7 +52707,7 @@ exports[`Review > matches snapshot for slug 'the-horse-thief-by-philip-fracassi'
         style="position: static;"
       >
         <div
-          class="flex flex-col"
+          class="flex flex-col mt-2 tablet:mt-0"
         >
           <div
             class="whitespace-nowrap font-normal leading-8"
@@ -52809,7 +52809,7 @@ exports[`Review > matches snapshot for slug 'the-horse-thief-by-philip-fracassi'
               type="button"
             >
               <svg
-                class="size-6 desktop:size-7"
+                class="size-7"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.5"
@@ -53597,7 +53597,7 @@ exports[`Review > matches snapshot for slug 'the-max-muscle-plan-by-brad-schoenf
         style="position: static;"
       >
         <div
-          class="flex flex-col"
+          class="flex flex-col mt-2 tablet:mt-0"
         >
           <div
             class="whitespace-nowrap font-normal leading-8"
@@ -53699,7 +53699,7 @@ exports[`Review > matches snapshot for slug 'the-max-muscle-plan-by-brad-schoenf
               type="button"
             >
               <svg
-                class="size-6 desktop:size-7"
+                class="size-7"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.5"
@@ -54505,7 +54505,7 @@ exports[`Review > matches snapshot for slug 'the-postman-always-rings-twice-by-j
         style="position: static;"
       >
         <div
-          class="flex flex-col"
+          class="flex flex-col mt-2 tablet:mt-0"
         >
           <div
             class="whitespace-nowrap font-normal leading-8"
@@ -54607,7 +54607,7 @@ exports[`Review > matches snapshot for slug 'the-postman-always-rings-twice-by-j
               type="button"
             >
               <svg
-                class="size-6 desktop:size-7"
+                class="size-7"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.5"
@@ -55622,7 +55622,7 @@ exports[`Review > matches snapshot for slug 'the-rise-of-theodore-roosevelt-by-e
         style="position: static;"
       >
         <div
-          class="flex flex-col"
+          class="flex flex-col mt-2 tablet:mt-0"
         >
           <div
             class="whitespace-nowrap font-normal leading-8"
@@ -55724,7 +55724,7 @@ exports[`Review > matches snapshot for slug 'the-rise-of-theodore-roosevelt-by-e
               type="button"
             >
               <svg
-                class="size-6 desktop:size-7"
+                class="size-7"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.5"
@@ -56713,7 +56713,7 @@ exports[`Review > matches snapshot for slug 'the-rules-of-attraction-by-bret-eas
         style="position: static;"
       >
         <div
-          class="flex flex-col"
+          class="flex flex-col mt-2 tablet:mt-0"
         >
           <div
             class="whitespace-nowrap font-normal leading-8"
@@ -56815,7 +56815,7 @@ exports[`Review > matches snapshot for slug 'the-rules-of-attraction-by-bret-eas
               type="button"
             >
               <svg
-                class="size-6 desktop:size-7"
+                class="size-7"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.5"
@@ -58057,7 +58057,7 @@ exports[`Review > matches snapshot for slug 'the-secret-history-by-donna-tartt' 
         style="position: static;"
       >
         <div
-          class="flex flex-col"
+          class="flex flex-col mt-2 tablet:mt-0"
         >
           <div
             class="whitespace-nowrap font-normal leading-8"
@@ -58159,7 +58159,7 @@ exports[`Review > matches snapshot for slug 'the-secret-history-by-donna-tartt' 
               type="button"
             >
               <svg
-                class="size-6 desktop:size-7"
+                class="size-7"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.5"
@@ -59081,7 +59081,7 @@ exports[`Review > matches snapshot for slug 'the-shining-by-stephen-king' 1`] = 
         style="position: static;"
       >
         <div
-          class="flex flex-col"
+          class="flex flex-col mt-2 tablet:mt-0"
         >
           <div
             class="whitespace-nowrap font-normal leading-8"
@@ -59183,7 +59183,7 @@ exports[`Review > matches snapshot for slug 'the-shining-by-stephen-king' 1`] = 
               type="button"
             >
               <svg
-                class="size-6 desktop:size-7"
+                class="size-7"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.5"
@@ -60350,7 +60350,7 @@ exports[`Review > matches snapshot for slug 'the-skeptics-guide-to-the-universe-
         style="position: static;"
       >
         <div
-          class="flex flex-col"
+          class="flex flex-col mt-2 tablet:mt-0"
         >
           <div
             class="whitespace-nowrap font-normal leading-8"
@@ -60452,7 +60452,7 @@ exports[`Review > matches snapshot for slug 'the-skeptics-guide-to-the-universe-
               type="button"
             >
               <svg
-                class="size-6 desktop:size-7"
+                class="size-7"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.5"
@@ -61392,7 +61392,7 @@ exports[`Review > matches snapshot for slug 'the-woods-are-dark-by-richard-laymo
         style="position: static;"
       >
         <div
-          class="flex flex-col"
+          class="flex flex-col mt-2 tablet:mt-0"
         >
           <div
             class="whitespace-nowrap font-normal leading-8"
@@ -61494,7 +61494,7 @@ exports[`Review > matches snapshot for slug 'the-woods-are-dark-by-richard-laymo
               type="button"
             >
               <svg
-                class="size-6 desktop:size-7"
+                class="size-7"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.5"
@@ -62394,7 +62394,7 @@ exports[`Review > matches snapshot for slug 'total-recall-by-arnold-schwarzenegg
         style="position: static;"
       >
         <div
-          class="flex flex-col"
+          class="flex flex-col mt-2 tablet:mt-0"
         >
           <div
             class="whitespace-nowrap font-normal leading-8"
@@ -62496,7 +62496,7 @@ exports[`Review > matches snapshot for slug 'total-recall-by-arnold-schwarzenegg
               type="button"
             >
               <svg
-                class="size-6 desktop:size-7"
+                class="size-7"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.5"
@@ -63396,7 +63396,7 @@ exports[`Review > matches snapshot for slug 'what-doesnt-kill-us-by-scott-carney
         style="position: static;"
       >
         <div
-          class="flex flex-col"
+          class="flex flex-col mt-2 tablet:mt-0"
         >
           <div
             class="whitespace-nowrap font-normal leading-8"
@@ -63498,7 +63498,7 @@ exports[`Review > matches snapshot for slug 'what-doesnt-kill-us-by-scott-carney
               type="button"
             >
               <svg
-                class="size-6 desktop:size-7"
+                class="size-7"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.5"

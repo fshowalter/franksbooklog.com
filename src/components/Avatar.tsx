@@ -1,7 +1,6 @@
 import type { AvatarImageProps } from "src/api/avatars";
 
 interface AvatarProps extends React.ImgHTMLAttributes<HTMLImageElement> {
-  name: string;
   imageProps: AvatarImageProps | null;
   width: number;
   height: number;
@@ -11,14 +10,13 @@ interface AvatarProps extends React.ImgHTMLAttributes<HTMLImageElement> {
 }
 
 export function Avatar({
-  name,
   imageProps,
   className,
   fill,
   ...rest
 }: AvatarProps): JSX.Element {
   if (imageProps) {
-    return <img alt={name} {...imageProps} {...rest} className={className} />;
+    return <img {...imageProps} {...rest} className={className} />;
   }
 
   return (

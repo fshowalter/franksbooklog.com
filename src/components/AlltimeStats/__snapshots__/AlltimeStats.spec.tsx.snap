@@ -17,7 +17,7 @@ exports[`Home > matches snapshot 1`] = `
         style="position: absolute;"
       >
         <div
-          class="flex flex-col"
+          class="flex flex-col mt-2 tablet:mt-0"
         >
           <div
             class="whitespace-nowrap font-normal leading-8"
@@ -119,7 +119,7 @@ exports[`Home > matches snapshot 1`] = `
               type="button"
             >
               <svg
-                class="size-6 desktop:size-7"
+                class="size-7"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.5"

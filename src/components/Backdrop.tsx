@@ -38,12 +38,11 @@ export function AvatarBackdrop({
       <div className="safari-border-radius-fix mx-auto mb-6 w-4/5 max-w-[250px] overflow-hidden rounded-full">
         <Avatar
           imageProps={avatarImageProps}
-          name={name}
           width={250}
           height={250}
           loading="lazy"
           decoding="async"
-          data-pagefind-meta="image[src], image_alt[alt]"
+          data-pagefind-meta="image[src]"
         />
       </div>
       <Breadcrumb value={breadcrumb} />
@@ -133,7 +132,7 @@ function Title({
       className={
         className
           ? className
-          : `font-sans ${center ? "text-center" : ""} text-2xl font-bold uppercase tracking-widest desktop:text-7xl`
+          : `font-sans ${center ? "text-center" : ""} text-2xl font-bold uppercase tracking-widest tablet:text-4xl tablet-landscape:text-5xl desktop:text-7xl`
       }
     >
       {value}
