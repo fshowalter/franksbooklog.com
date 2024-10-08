@@ -4,16 +4,18 @@ import { getProps } from "src/components/Article/getProps";
 import Layout from "src/layouts/Layout.astro";
 
 const slug = "how-i-grade";
+const deck = `"A work of art is never completed, only abandoned."`;
 
 const props = await getProps({
   slug,
-  deck: `"A work of art is never completed, only abandoned."`,
+  deck,
 });
 ---
 
 <Layout
   title={props.title}
-  description="The criteria I use to rate books on this site."
+  description={deck}
+  image="/how-i-grade/og.jpg"
   article
 >
   <div data-pagefind-body>
