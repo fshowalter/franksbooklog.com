@@ -1,7 +1,7 @@
 import {
   getFixedCoverImageProps,
   getFluidCoverImageProps,
-  getOpenGraphCoverSrc,
+  getStructuredDataCoverSrc,
 } from "src/api/covers";
 import { allReviews, loadContent } from "src/api/reviews";
 
@@ -18,8 +18,8 @@ export async function getProps(slug: string): Promise<Props> {
   const reviewWithContent = await loadContent(baseReview);
 
   return {
+    structuredDataCoverSrc: await getStructuredDataCoverSrc(reviewWithContent),
     value: reviewWithContent,
-    seoImageSrc: await getOpenGraphCoverSrc(reviewWithContent),
     coverImageProps: await getFixedCoverImageProps(
       reviewWithContent,
       CoverImageConfig,

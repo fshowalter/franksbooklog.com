@@ -1,0 +1,841 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
+    <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <meta
+      name="description"
+      content="When writing my review of The Cellar, I remembered something King had written in On Writing about reader-friendliness. Looking for the exact quote hooked me and I decided a reread might prove inspirational.
+"
+    />
+    <meta
+      name="og:image"
+      content="/reviews/on-writing-by-stephen-king/og.jpg"
+    />
+    <meta property="og:url" content="https://www.franksbooklog.com//" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="On Writing by Stephen King" />
+    <meta
+      property="og:description"
+      content="When writing my review of The Cellar, I remembered something King had written in On Writing about reader-friendliness. Looking for the exact quote hooked me and I decided a reread might prove inspirational.
+"
+    />
+    <title>On Writing by Stephen King | Frank&#39;s Book Log</title>
+  </head>
+  <body>
+    <div>
+      <a
+        href="#content"
+        class="absolute left-1/2 top-0.5 z-50 mx-auto bg-subtle px-6 py-2 text-center text-accent [transform:translate(-50%,calc(-100%_-_2px))] focus:[transform:translate(-50%,0%)]"
+        >Skip to content</a
+      >
+      <div class="flex min-h-full w-full flex-col bg-default">
+        <header
+          class="z-20 flex w-full items-center justify-between px-container py-4 tablet:p-6 desktop:inset-x-0 desktop:z-40 desktop:flex-row desktop:flex-wrap desktop:px-16 desktop:py-8 desktop:text-left"
+          style="position: static"
+        >
+          <div class="flex flex-col">
+            <div
+              class="whitespace-nowrap font-normal leading-8"
+              style="font-size: 1.5625rem"
+            >
+              <a href="/">Frank&#x27;s Book Log</a>
+            </div>
+            <p class="w-full pl-px text-sm italic leading-4 opacity-85">
+              Literature is a relative term.
+            </p>
+          </div>
+          <div class="flex items-center">
+            <nav class="hidden w-full desktop:block desktop:w-auto">
+              <ul class="flex flex-wrap justify-start gap-x-6 text-xl">
+                <li class="block whitespace-nowrap tracking-serif-wide">
+                  <a
+                    class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
+                    href="/"
+                    >Home</a
+                  >
+                </li>
+                <li class="block whitespace-nowrap tracking-serif-wide">
+                  <a
+                    class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
+                    href="/how-i-grade/"
+                    >How I Grade</a
+                  >
+                </li>
+                <li class="block whitespace-nowrap tracking-serif-wide">
+                  <a
+                    class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
+                    href="/reviews/"
+                    >Reviews</a
+                  >
+                </li>
+                <li class="block whitespace-nowrap tracking-serif-wide">
+                  <a
+                    class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
+                    href="/readings/"
+                    >Reading Log</a
+                  >
+                </li>
+                <li class="block whitespace-nowrap tracking-serif-wide">
+                  <a
+                    class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
+                    href="/authors/"
+                    >Authors</a
+                  >
+                </li>
+                <li class="block whitespace-nowrap tracking-serif-wide">
+                  <a
+                    class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
+                    href="/shelf/"
+                    >Shelf</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <div class="z-[1000]">
+              <button
+                data-open-modal="true"
+                disabled=""
+                aria-label="Search"
+                aria-keyshortcuts="Control+K"
+                class="flex items-center justify-between overflow-hidden text-sm leading-6 ring-default desktop:ml-6"
+                type="button"
+                title="Search: Control+K"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6 desktop:size-7"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <input type="checkbox" id="mobile-nav" class="hidden" /><label
+              for="mobile-nav"
+              class="hamburger-icon desktop:hidden"
+              ><span
+                style="background: var(--fg-default)"
+                class="hamburger-icon-bars"
+              ></span
+            ></label>
+            <ul
+              class="hamburger-menu flex flex-col items-start gap-y-5 text-left text-inverse desktop:hidden"
+            >
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a href="/">Home</a>
+              </li>
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a href="/how-i-grade/">How I Grade</a>
+              </li>
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a href="/reviews/">Reviews</a>
+              </li>
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a href="/readings/">Reading Log</a>
+                <ol class="mt-4">
+                  <li
+                    class="mb-2 font-sans text-xs uppercase tracking-wide text-inverse-subtle"
+                  >
+                    <a href="/readings/stats/">Stats</a>
+                  </li>
+                </ol>
+              </li>
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a href="/authors/">Authors</a>
+              </li>
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a href="/shelf/">Shelf</a>
+              </li>
+            </ul>
+          </div>
+        </header>
+        <main class="grow flex flex-col" id="content" data-pagefind-body="true">
+          <header class="mb-12 flex flex-col items-center px-[8%] pt-10">
+            <h1
+              data-pagefind-meta="title"
+              class="text-center text-4xl desktop:text-6xl"
+            >
+              On Writing
+              <div
+                class="max-w-prose pt-2 text-base font-light tracking-wider text-muted"
+              >
+                A Memoir of the Craft
+              </div>
+            </h1>
+            <div class="mt-4 text-center text-md text-muted">
+              by<!-- -->
+              <div class="inline-block text-accent">
+                <a href="/reviews/authors/stephen-king/">Stephen King</a>
+              </div>
+            </div>
+            <div class="mt-4">
+              <picture
+                ><source
+                  srcset="/svg/4-half-stars-dark.svg"
+                  media="(prefers-color-scheme: dark)" />
+                <img
+                  src="/svg/4-half-stars.svg"
+                  alt="A-: 4.5 stars (out of 5)"
+                  height="32"
+                  width="160"
+              /></picture>
+            </div>
+            <div
+              class="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+            >
+              <span class="tracking-wide">2000</span> |
+              <!-- -->Nonfiction
+            </div>
+            <div
+              data-pagefind-meta="image:/_image?/content%2Fassets%2Fcovers%2Fon-writing-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
+              class="relative my-12 flex h-[340px] w-full max-w-popout flex-col items-center"
+            >
+              <div class="cover-clip-path absolute inset-0 overflow-hidden">
+                <div
+                  style="
+                    background-color: var(--bg-default);
+                    background-image: linear-gradient(
+                        90deg,
+                        rgba(var(--bg-default-rgb), 1) 0%,
+                        rgba(var(--bg-default-rgb), var(--bg-default-alpha)) 30%,
+                        rgba(var(--bg-default-rgb), 0) 50%,
+                        rgba(var(--bg-default-rgb), var(--bg-default-alpha)) 70%,
+                        rgba(var(--bg-default-rgb), 1) 100%
+                      ),
+                      url(/_image?/content%2Fassets%2Fcovers%2Fon-writing-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif);
+                  "
+                  class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
+                ></div>
+                <div class="absolute size-full backdrop-blur"></div>
+              </div>
+              <div
+                class="relative -top-4 z-10 h-[372px] shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
+              >
+                <img
+                  srcset="
+                    /_image?/content%2Fassets%2Fcovers%2Fon-writing-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;q=80&amp;f=avif 1x,
+                    /_image?/content%2Fassets%2Fcovers%2Fon-writing-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;q=80&amp;f=avif 2x
+                  "
+                  src="/_image?/content%2Fassets%2Fcovers%2Fon-writing-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
+                  width="248"
+                  height="372"
+                  class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
+                  loading="eager"
+                  decoding="async"
+                  style="aspect-ratio: 0.66666667"
+                />
+              </div>
+            </div>
+          </header>
+          <div
+            class="flex flex-col items-center gap-16 px-container pb-20 desktop:gap-20 desktop:pb-32"
+          >
+            <div
+              class="rendered-markdown font-light tracking-0.3px text-md/7 tablet:text-xl/8 max-w-prose first-letter:leading-[.8] first-letter:text-default tablet:first-letter:pr-3 desktop:first-letter:text-[64px] [&amp;&gt;p:first-child]:first-letter:float-left [&amp;&gt;p:first-child]:first-letter:mt-[6px] [&amp;&gt;p:first-child]:first-letter:pr-2 [&amp;&gt;p:first-child]:first-letter:font-sans [&amp;&gt;p:first-child]:first-letter:text-[56px] [&amp;&gt;p:first-child]:first-letter:font-bold"
+            >
+              <p>
+                When writing my review of
+                <a href="/reviews/the-cellar-by-richard-laymon/"
+                  ><em>The Cellar</em></a
+                >, I remembered something King had written in
+                <em>On Writing</em> about reader-friendliness. Looking for the
+                exact quote hooked me and I decided a reread might prove
+                inspirational.
+              </p>
+              <!-- end -->
+              <p>
+                <em>On Writing</em> remains the gold standard for professional
+                memoirs cum instructional manuals. The first section proffers a
+                compelling autobiography. King details his professional
+                ascension alongside his personal descent into addiction and
+                eventual recovery. The second section offers pragmatic guidance
+                for would-be professional writers. In the third section, a coda,
+                King details his near-fatal accident, rehabilitation, and return
+                to writing.
+              </p>
+              <p>
+                King’s charming conversational tone shines. Consider this bit
+                detailing his early writing follies:
+              </p>
+              <blockquote>
+                <p>
+                  “They were camped in a big dratty farmhouse room,” I might
+                  write; it was another year or two before I discovered that
+                  drat and draft were different words. During that same period I
+                  remember believing that details were dentals and that a bitch
+                  was an extremely tall woman. A son of a bitch was apt to be a
+                  basketball player. When you’re six, most of your Bingo balls
+                  are still floating around in the draw-tank.
+                </p>
+              </blockquote>
+              <p>That last sentence had me chuckling aloud.</p>
+              <p>
+                For writers, King offers solid advice. Be brief (second draft
+                equals first draft minus ten percent), be clear (beware
+                pronouns), and don’t be lazy (avoid adverbs). He gives great
+                examples, culminating in a first-to-second draft comparison of
+                one of his stories, “1408”. For aspiring writers of all kinds,
+                it’s a must-read.
+              </p>
+              <p>
+                But King’s guidance also betrays his biggest weakness as a
+                writer. He distrusts plot. He constructs all his novels based on
+                situations. From the situation, characters take shape, and the
+                story proceeds. This would explain his history of underwhelming
+                endings. That said, he admits the following:
+              </p>
+              <blockquote>
+                <p>
+                  The only plot-driven novel of mine which I really like is The
+                  Dead Zone (and in all fairness, I must say I like that one a
+                  great deal).
+                </p>
+              </blockquote>
+              <p>
+                Given I found <em>The Dead Zone</em
+                ><span>
+                  one of King’s most satisfying reads, I wish he could find a
+                  middle ground between no-plot and all-plot. He confesses to
+                  almost abandoning
+                  <span data-work-slug="the-stand-by-stephen-king"
+                    ><em>The Stand</em> five-hundred pages in because he had
+                    lost the narrative thread. A bit of advanced plotting may
+                    have helped. It might even have prevented the awful
+                    ending.</span
+                  ></span
+                >
+              </p>
+              <p>
+                But I digress. After the world-class writing seminar, King
+                demonstrates his mastery of the craft with a harrowing account
+                of the accident that should have killed him. Even here, battling
+                raw emotion and still recovering from traumatic injuries, King
+                retains his signature voice. Consider this bit describing the
+                man driving the van which hit him:
+              </p>
+              <blockquote>
+                <p>
+                  He and Bullet left the campground where they were staying, he
+                  later tells an investigator, because he wanted “some of those
+                  Marzes-bars they have up to the store.” When I hear this
+                  little detail some weeks later, it occurs to me that I have
+                  nearly been killed by a character right out of one of my own
+                  novels.
+                </p>
+              </blockquote>
+              <p>
+                This breaks King’s own adverb rule, but proves mastery is
+                knowing when that’s okay.
+              </p>
+            </div>
+            <div class="w-full max-w-popout">
+              <h2
+                class="py-10 font-sans text-xs font-semibold uppercase tracking-wide text-subtle shadow-bottom"
+              >
+                Reading History
+              </h2>
+              <ul>
+                <li
+                  class="grid auto-rows-auto grid-cols-[16px_16px_1fr] pt-4 font-sans text-xs even:bg-subtle"
+                >
+                  <svg
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 16 16"
+                    class="fill-subtle mr-[1ch] min-h-4 min-w-4"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>Watched on</title>
+                    <path
+                      fill-rule="evenodd"
+                      d="M14 2H2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1zM2 1a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2z"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      d="M14 2H2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1zM2 1a2 2 0 0 0-2 2v2h16V3a2 2 0 0 0-2-2H2z"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      d="M3.5 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5zm9 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5z"
+                    ></path>
+                  </svg>
+                  <div class="col-start-3">
+                    <span
+                      class="inline-block font-sans text-xs font-normal tracking-normal text-subtle"
+                      >Mon, Mar 21, 2022</span
+                    >
+                    <span class="text-subtle"
+                      ><span>via</span>
+                      <span class="font-sans text-xs font-normal text-subtle"
+                        >Kindle</span
+                      ></span
+                    >
+                    <span class="font-light tracking-normal text-subtle"
+                      >(<span class="rendered-markdown font-light leading-none"
+                        ><span>Scribner</span></span
+                      >)</span
+                    >
+                  </div>
+                  <div class="col-start-3 row-start-2">
+                    <details class="font-light text-subtle">
+                      <summary class="cursor-pointer leading-6">
+                        Read over<!-- -->
+                        <span class="font-normal text-subtle"
+                          >3<!-- -->
+                          Days</span
+                        >
+                      </summary>
+                      <ol class="grid w-full grid-cols-[auto,1fr,auto]">
+                        <li
+                          class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr,auto,auto,1fr] py-3"
+                        >
+                          <div
+                            class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid"
+                          >
+                            <div class="">19 Mar 2022</div>
+                            <div
+                              class="col-start-3 self-center text-nowrap pb-1 text-right font-sans text-xs text-subtle"
+                            >
+                              <div class="">20%</div>
+                            </div>
+                          </div>
+                          <div
+                            class="col-span-2 col-start-2 row-start-3 bg-subtle"
+                          >
+                            <div
+                              class="progress-bar-bg leading-[6px] tablet:mb-0"
+                              style="--bar-percent: 20%"
+                            >
+                               
+                            </div>
+                          </div>
+                        </li>
+                        <li
+                          class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr,auto,auto,1fr] py-3"
+                        >
+                          <div
+                            class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid"
+                          >
+                            <div class="">20 Mar 2022</div>
+                            <div
+                              class="col-start-3 self-center text-nowrap pb-1 text-right font-sans text-xs text-subtle"
+                            >
+                              <div class="">71%</div>
+                            </div>
+                          </div>
+                          <div
+                            class="col-span-2 col-start-2 row-start-3 bg-subtle"
+                          >
+                            <div
+                              class="progress-bar-bg leading-[6px] tablet:mb-0"
+                              style="--bar-percent: 71%"
+                            >
+                               
+                            </div>
+                          </div>
+                        </li>
+                        <li
+                          class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr,auto,auto,1fr] py-3"
+                        >
+                          <div
+                            class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid"
+                          >
+                            <div class="">21 Mar 2022</div>
+                            <div
+                              class="col-start-3 self-center text-nowrap pb-1 text-right font-sans text-xs text-subtle"
+                            >
+                              <div class="">Finished</div>
+                            </div>
+                          </div>
+                          <div
+                            class="col-span-2 col-start-2 row-start-3 bg-subtle"
+                          >
+                            <div
+                              class="progress-bar-bg leading-[6px] tablet:mb-0"
+                              style="--bar-percent: 100%"
+                            >
+                               
+                            </div>
+                          </div>
+                        </li>
+                      </ol>
+                    </details>
+                  </div>
+                  <div class="col-span-3 col-start-1 row-start-3 pt-4"></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            data-pagefind-ignore="true"
+            class="flex w-full flex-col items-center gap-y-12 bg-subtle pb-32 pt-16 tablet:pt-8 desktop:gap-y-24"
+          >
+            <nav
+              data-pagefind-ignore="true"
+              class="relative flex w-full flex-col items-center"
+            >
+              <div class="relative mx-auto w-full max-w-screen-desktop">
+                <div class="px-container">
+                  <h2
+                    class="py-10 font-sans text-xs font-semibold uppercase tracking-wide text-subtle"
+                  >
+                    More<!-- -->
+                    <a href="/reviews/" class="text-accent">Reviews</a>
+                  </h2>
+                </div>
+                <ul
+                  class="flex flex-wrap justify-center gap-x-[4%] gap-y-[6vw] px-[4%] tablet:justify-between tablet:gap-x-[3%] tablet:px-container"
+                >
+                  <li
+                    class="relative flex w-[46%] max-w-[248px] flex-col items-center border-default bg-default tablet:w-[22.75%]"
+                  >
+                    <img
+                      srcset="
+                        /_image?/content%2Fassets%2Fcovers%2Fmoonraker-by-ian-fleming.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;q=80&amp;f=avif   62w,
+                        /_image?/content%2Fassets%2Fcovers%2Fmoonraker-by-ian-fleming.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;q=80&amp;f=avif 124w,
+                        /_image?/content%2Fassets%2Fcovers%2Fmoonraker-by-ian-fleming.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;q=80&amp;f=avif 248w,
+                        /_image?/content%2Fassets%2Fcovers%2Fmoonraker-by-ian-fleming.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;q=80&amp;f=avif 496w
+                      "
+                      src="/_image?/content%2Fassets%2Fcovers%2Fmoonraker-by-ian-fleming.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
+                      width="248"
+                      height="372"
+                      sizes="(max-width: 561px) 46vw, (max-width: 767px) 248px, (max-width: 1186px) calc((100vw - 96px) * 0.2275), 248px"
+                      alt=""
+                      loading="lazy"
+                      decoding="async"
+                      style="aspect-ratio: 0.66666667"
+                    />
+                    <div
+                      class="flex grow flex-col items-center px-[8%] pb-8 pt-3 desktop:pl-[8.5%] desktop:pr-[10%]"
+                    >
+                      <div class="text-center text-md font-medium leading-6">
+                        <a
+                          href="/reviews/moonraker-by-ian-fleming/"
+                          rel="canonical"
+                          class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] tablet:before:opacity-15"
+                          >Moonraker</a
+                        >
+                      </div>
+                      <div
+                        class="py-2 text-center font-sans text-xxs font-light uppercase leading-4 tracking-wide text-subtle"
+                      >
+                        1955<!-- -->
+                        |<!-- -->
+                        <span class="whitespace-nowrap">Novel</span>
+                      </div>
+                      <p class="text-center text-base text-subtle">
+                        by
+                        <!-- -->Ian Fleming
+                      </p>
+                      <picture
+                        ><source
+                          srcset="/svg/4-stars-dark.svg"
+                          media="(prefers-color-scheme: dark)" />
+                        <img
+                          src="/svg/4-stars.svg"
+                          alt="B: 4 stars (out of 5)"
+                          height="18"
+                          width="90"
+                          class="mt-2"
+                      /></picture>
+                    </div>
+                  </li>
+                  <li
+                    class="relative flex w-[46%] max-w-[248px] flex-col items-center border-default bg-default tablet:w-[22.75%]"
+                  >
+                    <img
+                      srcset="
+                        /_image?/content%2Fassets%2Fcovers%2Fbehold-the-void-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;q=80&amp;f=avif   62w,
+                        /_image?/content%2Fassets%2Fcovers%2Fbehold-the-void-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;q=80&amp;f=avif 124w,
+                        /_image?/content%2Fassets%2Fcovers%2Fbehold-the-void-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;q=80&amp;f=avif 248w,
+                        /_image?/content%2Fassets%2Fcovers%2Fbehold-the-void-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;q=80&amp;f=avif 496w
+                      "
+                      src="/_image?/content%2Fassets%2Fcovers%2Fbehold-the-void-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
+                      width="248"
+                      height="372"
+                      sizes="(max-width: 561px) 46vw, (max-width: 767px) 248px, (max-width: 1186px) calc((100vw - 96px) * 0.2275), 248px"
+                      alt=""
+                      loading="lazy"
+                      decoding="async"
+                      style="aspect-ratio: 0.66666667"
+                    />
+                    <div
+                      class="flex grow flex-col items-center px-[8%] pb-8 pt-3 desktop:pl-[8.5%] desktop:pr-[10%]"
+                    >
+                      <div class="text-center text-md font-medium leading-6">
+                        <a
+                          href="/reviews/mother-by-philip-fracassi/"
+                          rel="canonical"
+                          class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] tablet:before:opacity-15"
+                          >Mother</a
+                        >
+                      </div>
+                      <div
+                        class="py-2 text-center font-sans text-xxs font-light uppercase leading-4 tracking-wide text-subtle"
+                      >
+                        2015<!-- -->
+                        |<!-- -->
+                        <span class="whitespace-nowrap">Short Story</span>
+                      </div>
+                      <p class="text-center text-base text-subtle">
+                        by
+                        <!-- -->Philip Fracassi
+                      </p>
+                      <picture
+                        ><source
+                          srcset="/svg/3-half-stars-dark.svg"
+                          media="(prefers-color-scheme: dark)" />
+                        <img
+                          src="/svg/3-half-stars.svg"
+                          alt="B-: 3.5 stars (out of 5)"
+                          height="18"
+                          width="90"
+                          class="mt-2"
+                      /></picture>
+                    </div>
+                  </li>
+                  <li
+                    class="relative flex w-[46%] max-w-[248px] flex-col items-center border-default bg-default tablet:w-[22.75%]"
+                  >
+                    <img
+                      srcset="
+                        /_image?/content%2Fassets%2Fcovers%2Fout-are-the-lights-and-other-tales-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;q=80&amp;f=avif   62w,
+                        /_image?/content%2Fassets%2Fcovers%2Fout-are-the-lights-and-other-tales-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;q=80&amp;f=avif 124w,
+                        /_image?/content%2Fassets%2Fcovers%2Fout-are-the-lights-and-other-tales-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;q=80&amp;f=avif 248w,
+                        /_image?/content%2Fassets%2Fcovers%2Fout-are-the-lights-and-other-tales-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;q=80&amp;f=avif 496w
+                      "
+                      src="/_image?/content%2Fassets%2Fcovers%2Fout-are-the-lights-and-other-tales-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
+                      width="248"
+                      height="372"
+                      sizes="(max-width: 561px) 46vw, (max-width: 767px) 248px, (max-width: 1186px) calc((100vw - 96px) * 0.2275), 248px"
+                      alt=""
+                      loading="lazy"
+                      decoding="async"
+                      style="aspect-ratio: 0.66666667"
+                    />
+                    <div
+                      class="flex grow flex-col items-center px-[8%] pb-8 pt-3 desktop:pl-[8.5%] desktop:pr-[10%]"
+                    >
+                      <div class="text-center text-md font-medium leading-6">
+                        <a
+                          href="/reviews/out-are-the-lights-by-richard-laymon/"
+                          rel="canonical"
+                          class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] tablet:before:opacity-15"
+                          >Out Are the Lights</a
+                        >
+                      </div>
+                      <div
+                        class="py-2 text-center font-sans text-xxs font-light uppercase leading-4 tracking-wide text-subtle"
+                      >
+                        1982<!-- -->
+                        |<!-- -->
+                        <span class="whitespace-nowrap">Novel</span>
+                      </div>
+                      <p class="text-center text-base text-subtle">
+                        by
+                        <!-- -->Richard Laymon
+                      </p>
+                      <picture
+                        ><source
+                          srcset="/svg/2-half-stars-dark.svg"
+                          media="(prefers-color-scheme: dark)" />
+                        <img
+                          src="/svg/2-half-stars.svg"
+                          alt="C-: 2.5 stars (out of 5)"
+                          height="18"
+                          width="90"
+                          class="mt-2"
+                      /></picture>
+                    </div>
+                  </li>
+                  <li
+                    class="relative flex w-[46%] max-w-[248px] flex-col items-center border-default bg-default tablet:w-[22.75%]"
+                  >
+                    <img
+                      srcset="
+                        /_image?/content%2Fassets%2Fcovers%2Fthe-postman-always-rings-twice-by-james-m-cain.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;q=80&amp;f=avif   62w,
+                        /_image?/content%2Fassets%2Fcovers%2Fthe-postman-always-rings-twice-by-james-m-cain.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;q=80&amp;f=avif 124w,
+                        /_image?/content%2Fassets%2Fcovers%2Fthe-postman-always-rings-twice-by-james-m-cain.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;q=80&amp;f=avif 248w,
+                        /_image?/content%2Fassets%2Fcovers%2Fthe-postman-always-rings-twice-by-james-m-cain.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;q=80&amp;f=avif 496w
+                      "
+                      src="/_image?/content%2Fassets%2Fcovers%2Fthe-postman-always-rings-twice-by-james-m-cain.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
+                      width="248"
+                      height="372"
+                      sizes="(max-width: 561px) 46vw, (max-width: 767px) 248px, (max-width: 1186px) calc((100vw - 96px) * 0.2275), 248px"
+                      alt=""
+                      loading="lazy"
+                      decoding="async"
+                      style="aspect-ratio: 0.66666667"
+                    />
+                    <div
+                      class="flex grow flex-col items-center px-[8%] pb-8 pt-3 desktop:pl-[8.5%] desktop:pr-[10%]"
+                    >
+                      <div class="text-center text-md font-medium leading-6">
+                        <a
+                          href="/reviews/the-postman-always-rings-twice-by-james-m-cain/"
+                          rel="canonical"
+                          class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] tablet:before:opacity-15"
+                          >The Postman Always Rings Twice</a
+                        >
+                      </div>
+                      <div
+                        class="py-2 text-center font-sans text-xxs font-light uppercase leading-4 tracking-wide text-subtle"
+                      >
+                        1934<!-- -->
+                        |<!-- -->
+                        <span class="whitespace-nowrap">Novel</span>
+                      </div>
+                      <p class="text-center text-base text-subtle">
+                        by
+                        <!-- -->James M. Cain
+                      </p>
+                      <picture
+                        ><source
+                          srcset="/svg/4-stars-dark.svg"
+                          media="(prefers-color-scheme: dark)" />
+                        <img
+                          src="/svg/4-stars.svg"
+                          alt="B+: 4 stars (out of 5)"
+                          height="18"
+                          width="90"
+                          class="mt-2"
+                      /></picture>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+          <script type="application/ld+json">
+            {
+              "@context": "http://schema.org",
+              "@type": "Review",
+              "itemReviewed": {
+                "@type": "Book",
+                "name": "On Writing",
+                "image": "/_image?/content%2Fassets%2Fcovers%2Fon-writing-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=500&h=750&q=80&f=jpeg"
+              },
+              "reviewRating": { "@type": "Rating", "ratingValue": 5 },
+              "author": { "@type": "Person", "name": "Frank Showalter" }
+            }
+          </script>
+        </main>
+        <footer
+          class="flex flex-wrap items-start justify-between gap-[10%] bg-footer px-container py-20 text-inverse tablet:px-12 tablet:pt-10 desktop:p-20"
+        >
+          <div class="flex flex-col pb-12">
+            <div class="flex flex-col">
+              <div
+                class="whitespace-nowrap font-normal leading-8"
+                style="font-size: 1.5625rem"
+              >
+                <a href="/">Frank&#x27;s Book Log</a>
+              </div>
+              <p class="w-full pl-px text-sm italic leading-4 opacity-85">
+                Literature is a relative term.
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col gap-20 pb-20 pt-10 tablet:basis-1/2 tablet:pt-20"
+          >
+            <ul class="flex w-full flex-col gap-y-10 text-inverse max:w-auto">
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a class="hover:text-accent" href="/">Home</a>
+              </li>
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a class="hover:text-accent" href="/how-i-grade/"
+                  >How I Grade</a
+                >
+              </li>
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a class="hover:text-accent" href="/reviews/">Reviews</a>
+              </li>
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a class="hover:text-accent" href="/readings/">Reading Log</a>
+                <ol class="mt-4">
+                  <li
+                    class="mb-2 font-sans text-xs uppercase tracking-wide text-inverse-subtle"
+                  >
+                    <a class="hover:text-inverse" href="/readings/stats/"
+                      >Stats</a
+                    >
+                  </li>
+                </ol>
+              </li>
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a class="hover:text-accent" href="/authors/">Authors</a>
+              </li>
+              <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <a class="hover:text-accent" href="/shelf/">Shelf</a>
+              </li>
+            </ul>
+            <a
+              href="#top"
+              class="mb-8 w-full max-w-button bg-canvas py-5 text-center font-sans text-xs uppercase tracking-wide text-default hover:bg-inverse hover:text-inverse"
+              >To the top</a
+            >
+            <p class="w-full font-normal leading-4 text-inverse-subtle">
+              All covers used in accordance with the<!-- -->
+              <a
+                href="http://www.copyright.gov/title17/92chap1.html#107"
+                class="text-inherit underline decoration-2 underline-offset-4 hover:bg-default hover:text-default"
+                >Fair Use Law.</a
+              >
+            </p>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <dialog
+      class="relative m-0 h-screen max-h-none w-screen max-w-unset border border-default bg-subtle shadow-lg open:flex open:flex-col tablet:mx-auto tablet:mt-16 tablet:h-min tablet:max-h-[min(100vh_-_128px,900px)] tablet:min-h-60 tablet:max-w-[min(100vw_-_64px,36rem)] tablet:rounded-xl desktop:min-h-0"
+      aria-label="Search"
+    >
+      <div data-dialog-frame class="contents">
+        <button
+          data-close-modal
+          class="px-4 font-sans text-sm font-light hover:bg-inverse hover:text-inverse focus:outline-accent"
+        >
+          Cancel
+        </button>
+        <div class="contents"><div id="pagefind__search"></div></div>
+        <div
+          class="hidden px-[var(--search-dialog-padding)] py-4 font-sans text-xs font-light tracking-wide text-subtle desktop:block"
+        >
+          <kbd class="rounded-md bg-default p-2 font-mono text-xs text-subtle"
+            >Tab</kbd
+          >
+          to navigate
+          <kbd
+            class="ml-4 rounded-md bg-default p-2 font-mono text-xs text-subtle"
+            >ESC</kbd
+          >
+          to close
+        </div>
+      </div>
+    </dialog>
+    <script>
+      (() => {
+        const openBtn = document.querySelector("button[data-open-modal]");
+        if (!openBtn) return;
+        if (/(Mac|iPhone|iPod|iPad)/i.test(navigator.platform)) {
+          openBtn.setAttribute("aria-keyshortcuts", "Meta+K");
+          openBtn.setAttribute("title", `Search: ⌘K`);
+        }
+      })();
+    </script>
+  </body>
+</html>

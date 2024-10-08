@@ -6,7 +6,7 @@ import * as prettier from "prettier";
 import { allReviews } from "src/api/reviews";
 import { describe, it } from "vitest";
 
-import Review from "./[slug].astro";
+import Review from "./index.astro";
 
 const { reviews } = await allReviews();
 

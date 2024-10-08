@@ -55,7 +55,7 @@ export async function GET() {
           link: `https://www.franksbooklog.com/reviews/${item.slug}/`,
           content: `<img src="${
             cover.src
-          }" alt="${cover.alt}">${addMetaToExcerpt(item.excerpt, item)}`,
+          }" alt="">${addMetaToExcerpt(item.excerpt, item)}`,
         };
       }),
     ),

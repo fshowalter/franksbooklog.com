@@ -4,7 +4,6 @@ import { getProps } from "src/components/Review/getProps";
 import { Review } from "src/components/Review/Review";
 import Layout from "src/layouts/Layout.astro";
 import { toSentenceArray } from "src/utils";
-import { textStarsForGrade } from "src/utils/textStarsForGrade";
 
 export async function getStaticPaths() {
   const { reviews } = await allReviews();
@@ -34,8 +33,8 @@ const props = await getProps(slug);
 
 <Layout
   title={`${props.value.title} by ${toSentenceArray(props.value.authors.map((author) => author.name)).join("")}`}
-  description={`${textStarsForGrade(props.value.grade)} ${props.value.excerptPlainText ?? ""}`}
-  image={props.seoImageSrc}
+  description={props.value.excerptPlainText}
+  image={`/reviews/${slug}/og.jpg`}
   article
 >
   <Review {...props} />
