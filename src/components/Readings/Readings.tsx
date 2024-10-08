@@ -26,6 +26,7 @@ export interface Props {
   bookCount: number;
   abandonedCount: number;
   workCount: number;
+  deck: string;
 }
 export interface ListItemValue
   extends Pick<
@@ -54,6 +55,7 @@ export function Readings({
   distinctReadingYears,
   distinctWorkYears,
   initialSort,
+  deck,
 }: Props): JSX.Element {
   const [state, dispatch] = useReducer(
     reducer,
@@ -66,12 +68,7 @@ export function Readings({
 
   return (
     <ListWithFiltersLayout
-      backdrop={
-        <SolidBackdrop
-          title="Reading Log"
-          deck={`"It is what you read when you don't have to that determines what you will be when you can't help it."`}
-        />
-      }
+      backdrop={<SolidBackdrop title="Reading Log" deck={deck} />}
       totalCount={state.filteredValues.length}
       listHeaderButtons={
         <ListHeaderButton href="/readings/stats/" text="stats" />

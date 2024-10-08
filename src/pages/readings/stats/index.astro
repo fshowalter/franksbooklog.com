@@ -8,7 +8,8 @@ const props = await getProps();
 
 <Layout
   title="All-Time Stats"
-  description="My most-read authors and other stats."
+  description={props.deck}
+  image="/readings/stats/og.jpg"
 >
   <AlltimeStats {...props} />
 </Layout>

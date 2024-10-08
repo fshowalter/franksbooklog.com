@@ -30,7 +30,8 @@ const props = await getProps(year);
 
 <Layout
   title={`${props.year} Stats`}
-  description={`My most-read authors and other stats for ${props.year}.`}
+  description={props.deck}
+  image={`/readings/stats/${props.year}/og.jpg`}
 >
   <YearStats {...props} />
 </Layout>
