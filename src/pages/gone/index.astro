@@ -3,14 +3,15 @@ import { Article } from "src/components/Article/Article";
 import { getProps } from "src/components/Article/getProps";
 import Layout from "src/layouts/Layout.astro";
 
-const slug = "not-found";
+const slug = "gone";
+const deck = `"Forget it, Jake. It's Chinatown."`;
 
 const props = await getProps({
   slug,
-  deck: '"Dick Laurent is dead."',
+  deck,
 });
 ---
 
-<Layout title="404: Not Found" description="Dick Laurent is dead." article>
+<Layout title="410: Gone" description={deck} image="/gone/og.jpg" article>
   <Article {...props} />
 </Layout>

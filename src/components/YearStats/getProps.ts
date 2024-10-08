@@ -12,6 +12,10 @@ export async function getProps(year: string): Promise<Props> {
   return {
     year,
     stats,
+    deck:
+      [...distinctStatYears].reverse()[0] === year
+        ? "A year in progress..."
+        : "A Year in Review",
     mostReadAuthors: await Promise.all(
       stats.mostReadAuthors.map(async (author) => {
         return {

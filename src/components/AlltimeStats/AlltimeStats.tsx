@@ -14,10 +14,12 @@ export interface Props {
   stats: AlltimeStats;
   mostReadAuthors: React.ComponentProps<typeof MostReadAuthors>["values"];
   distinctStatYears: string[];
+  deck: string;
 }
 
 export function AlltimeStats({
   stats,
+  deck,
   distinctStatYears,
   mostReadAuthors,
 }: Props): JSX.Element {
@@ -33,7 +35,7 @@ export function AlltimeStats({
           </a>
         }
         title="All-Time Stats"
-        deck={`${(distinctStatYears.length - 1).toString()} Years in Review`}
+        deck={deck}
       >
         <StatsNavigation
           currentYear={"all"}

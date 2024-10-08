@@ -14,6 +14,7 @@ export interface Props {
   stats: YearStats;
   mostReadAuthors: React.ComponentProps<typeof MostReadAuthors>["values"];
   distinctStatYears: readonly string[];
+  deck: string;
 }
 
 export function YearStats({
@@ -21,6 +22,7 @@ export function YearStats({
   stats,
   mostReadAuthors,
   distinctStatYears,
+  deck,
 }: Props): JSX.Element {
   return (
     <Layout className="flex flex-col items-center bg-subtle">
@@ -34,11 +36,7 @@ export function YearStats({
           </a>
         }
         title={`${year} Stats`}
-        deck={
-          [...distinctStatYears].reverse()[0] === year
-            ? "A year in progress..."
-            : "A Year in Review"
-        }
+        deck={deck}
       >
         <StatsNavigation
           currentYear={year}

@@ -66,6 +66,7 @@ export async function getProps(): Promise<Props> {
   );
 
   return {
+    deck: `"It is what you read when you don't have to that determines what you will be when you can't help it."`,
     values,
     distinctKinds,
     distinctReadingYears,

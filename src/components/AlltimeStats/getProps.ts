@@ -11,6 +11,7 @@ export async function getProps(): Promise<Props> {
 
   return {
     stats,
+    deck: `${(distinctStatYears.length - 1).toString()} Years in Review`,
     mostReadAuthors: await Promise.all(
       stats.mostReadAuthors.map(async (author) => {
         return {

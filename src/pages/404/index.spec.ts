@@ -5,9 +5,9 @@ import { loadRenderers } from "astro:container";
 import * as prettier from "prettier";
 import { describe, it } from "vitest";
 
-import Page from "./404.astro";
+import Page from "./index.astro";
 
-describe("/404", () => {
+describe("/404/", () => {
   it("matches snapshot", { timeout: 40000 }, async ({ expect }) => {
     const renderers = await loadRenderers([reactContainerRenderer()]);
     const container = await AstroContainer.create({ renderers });
@@ -18,6 +18,6 @@ describe("/404", () => {
 
     void expect(
       await prettier.format(result, { parser: "html" }),
-    ).toMatchFileSnapshot(`__snapshots__/404.html`);
+    ).toMatchFileSnapshot(`__snapshots__/index.html`);
   });
 });

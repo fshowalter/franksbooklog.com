@@ -6,7 +6,7 @@ import * as prettier from "prettier";
 import { allStatYears } from "src/api/yearStats";
 import { describe, it } from "vitest";
 
-import YearStats from "./[year].astro";
+import YearStats from "./index.astro";
 
 const statYears = await allStatYears();
 
