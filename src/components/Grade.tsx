@@ -17,6 +17,16 @@ const gradeMap: Record<string, [string, string]> = {
   F: ["/svg/1-star.svg", "1 star (out of 5)"],
 };
 
+export function fileForGrade(value: string) {
+  if (!value || value == "Abandoned") {
+    return null;
+  }
+
+  const [src] = gradeMap[value];
+
+  return src;
+}
+
 export function Grade({
   value,
   height,

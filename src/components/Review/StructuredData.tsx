@@ -1,11 +1,11 @@
 import type { ReviewWithContent } from "src/api/reviews";
 
 interface Props extends Pick<ReviewWithContent, "grade" | "title"> {
-  seoImageSrc: string;
+  coverImgSrc: string;
 }
 
-export function StructuredData({ title, grade, seoImageSrc }: Props) {
-  const structuredData = buildStructuredData(title, grade, seoImageSrc);
+export function StructuredData({ title, grade, coverImgSrc }: Props) {
+  const structuredData = buildStructuredData(title, grade, coverImgSrc);
 
   if (!structuredData) {
     return null;
@@ -22,7 +22,7 @@ export function StructuredData({ title, grade, seoImageSrc }: Props) {
 function buildStructuredData(
   title: Props["title"],
   grade: Props["grade"],
-  seoImageSrc: Props["seoImageSrc"],
+  imageSrc: Props["coverImgSrc"],
 ) {
   if (grade == "Abandoned") {
     return null;
@@ -42,7 +42,7 @@ function buildStructuredData(
     itemReviewed: {
       "@type": "Book",
       name: title,
-      image: seoImageSrc,
+      image: imageSrc,
     },
     reviewRating: {
       "@type": "Rating",

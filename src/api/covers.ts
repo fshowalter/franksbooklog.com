@@ -1,13 +1,14 @@
-import { getImage } from "astro:assets";
-import { toSentenceArray } from "src/utils";
+import fs from "node:fs";
+import path from "node:path";
 
-import { allWorksJson, type WorkJson } from "./data/worksJson";
+import { getImage } from "astro:assets";
+import sharp from "sharp";
+
 import { normalizeSources } from "./utils/normalizeSources";
 
 export interface CoverImageProps {
   src: string;
   srcSet: string;
-  alt: string;
 }
 
 interface Work {
@@ -15,93 +16,17 @@ interface Work {
   includedInSlugs: string[];
 }
 
-let cachedWorksJson: WorkJson[] | null = null;
-
-if (import.meta.env.MODE !== "development") {
-  cachedWorksJson = await allWorksJson();
-}
-
 const images = import.meta.glob<{ default: ImageMetadata }>(
   "/content/assets/covers/*.png",
 );
 
-function altTextForWorkJson(workJson: WorkJson) {
-  const title = workJson.subtitle
-    ? `${workJson.title}: ${workJson.subtitle}`
-    : workJson.title;
-
-  const authors = toSentenceArray(
-    workJson.authors.map((author) => {
-      return author.notes ? `${author.name} (${author.notes})` : author.name;
-    }),
-  ).join("");
-
-  return `A cover for ${title} by ${authors}`;
-}
-
-function parentCoverForWork(work: Work, worksJson: WorkJson[]) {
-  let parentWorkCoverPath: string | undefined;
-
-  const parentSlug = work.includedInSlugs.find((slug) => {
-    parentWorkCoverPath = Object.keys(images).find((image) => {
-      return image.endsWith(`${slug}.png`);
-    });
-
-    return parentWorkCoverPath ? slug : parentWorkCoverPath;
-  });
-
-  if (parentSlug && parentWorkCoverPath) {
-    const parentWork = worksJson.find((work) => work.slug === parentSlug)!;
-    return {
-      workCoverPath: parentWorkCoverPath,
-      altText: altTextForWorkJson(parentWork),
-    };
-  } else {
-    const defaultWorkCoverPath = Object.keys(images).find((image) => {
-      return image.endsWith(`default.png`);
-    })!;
-
-    return {
-      workCoverPath: defaultWorkCoverPath,
-      altText: "A blank cover.",
-    };
-  }
-}
-
-async function getWorkCoverFileAndAltText(work: Work) {
-  const worksJson = cachedWorksJson || (await allWorksJson());
-
-  let workCoverPath = Object.keys(images).find((path) => {
-    return path.endsWith(`${work.slug}.png`);
-  });
-
-  let altText: string;
-
-  if (workCoverPath) {
-    altText = altTextForWorkJson(
-      worksJson.find((workJson) => {
-        return workJson.slug === work.slug;
-      })!,
-    );
-  } else {
-    ({ workCoverPath, altText } = parentCoverForWork(work, worksJson));
-  }
-
-  const workCoverFile = await images[workCoverPath]();
-
-  return {
-    workCoverFile,
-    altText,
-  };
-}
-
-export async function getOpenGraphCoverSrc(work: Work): Promise<string> {
-  const { workCoverFile } = await getWorkCoverFileAndAltText(work);
+export async function getStructuredDataCoverSrc(work: Work): Promise<string> {
+  const workCoverFile = await getWorkCoverFile(work);
 
   const optimizedImage = await getImage({
     src: workCoverFile.default,
-    width: 1200,
-    height: 630,
+    width: 500,
+    height: 750,
     format: "jpeg",
     quality: 80,
   });
@@ -109,8 +34,84 @@ export async function getOpenGraphCoverSrc(work: Work): Promise<string> {
   return normalizeSources(optimizedImage.src);
 }
 
+export async function getOpenGraphCoverAsBase64String(work: Work) {
+  const imageBuffer = await sharp(getWorkCoverPath(work))
+    .resize(420)
+    .toFormat("png")
+    .toBuffer();
+
+  return `data:${"image/png"};base64,${imageBuffer.toString("base64")}`;
+}
+
+function coverPath(slug: string) {
+  const coverPath = path.resolve(`./content/assets/covers/${slug}.png`);
+  if (fs.existsSync(coverPath)) {
+    return coverPath;
+  }
+
+  return null;
+}
+
+function getWorkCoverPath(work: Work) {
+  const workCover = coverPath(work.slug);
+
+  if (workCover) {
+    return workCover;
+  }
+
+  let parentCover;
+
+  for (const includedInSlug of work.includedInSlugs) {
+    parentCover = coverPath(includedInSlug);
+
+    if (parentCover) {
+      break;
+    }
+  }
+
+  if (parentCover) {
+    return parentCover;
+  }
+
+  return coverPath("default") || "";
+}
+
+async function getWorkCoverFile(work: Work) {
+  const workSlug = work.slug;
+
+  const coverKey = Object.keys(images).find((image) => {
+    return image.endsWith(`${workSlug}.png`);
+  });
+
+  if (coverKey) {
+    return await images[coverKey]();
+  }
+
+  let parentCoverKey;
+
+  for (const includedInSlug of work.includedInSlugs) {
+    parentCoverKey = Object.keys(images).find((image) => {
+      return image.endsWith(`${includedInSlug}.png`);
+    });
+
+    if (parentCoverKey) {
+      break;
+    }
+  }
+
+  if (parentCoverKey) {
+    return await images[parentCoverKey]();
+  }
+
+  const defaultWorkCoverKey = Object.keys(images).find((image) => {
+    return image.endsWith(`default.png`);
+  })!;
+
+  return await images[defaultWorkCoverKey]();
+}
+
 export async function getFeedCoverProps(work: Work): Promise<CoverImageProps> {
-  const { workCoverFile, altText } = await getWorkCoverFileAndAltText(work);
+  const workCoverFile = await getWorkCoverFile(work);
 
   const optimizedImage = await getImage({
     src: workCoverFile.default,
@@ -123,7 +124,6 @@ export async function getFeedCoverProps(work: Work): Promise<CoverImageProps> {
   return {
     srcSet: normalizeSources(optimizedImage.srcSet.attribute),
     src: normalizeSources(optimizedImage.src),
-    alt: altText,
   };
 }
 
@@ -131,7 +131,7 @@ export async function getFluidCoverImageProps(
   work: Work,
   { width, height }: { width: number; height: number },
 ): Promise<CoverImageProps> {
-  const { workCoverFile, altText } = await getWorkCoverFileAndAltText(work);
+  const workCoverFile = await getWorkCoverFile(work);
 
   const optimizedImage = await getImage({
     src: workCoverFile.default,
@@ -145,7 +145,6 @@ export async function getFluidCoverImageProps(
   return {
     srcSet: normalizeSources(optimizedImage.srcSet.attribute),
     src: normalizeSources(optimizedImage.src),
-    alt: altText,
   };
 }
 
@@ -153,7 +152,7 @@ export async function getFixedCoverImageProps(
   work: Work,
   { width, height }: { width: number; height: number },
 ): Promise<CoverImageProps> {
-  const { workCoverFile, altText } = await getWorkCoverFileAndAltText(work);
+  const workCoverFile = await getWorkCoverFile(work);
 
   const optimizedImage = await getImage({
     src: workCoverFile.default,
@@ -167,6 +166,5 @@ export async function getFixedCoverImageProps(
   return {
     srcSet: normalizeSources(optimizedImage.srcSet.attribute),
     src: normalizeSources(optimizedImage.src),
-    alt: altText,
   };
 }

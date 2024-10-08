@@ -27,5 +27,9 @@ export async function getProps(): Promise<Props> {
     }),
   );
 
-  return { values, initialSort: "name-asc" };
+  return {
+    values,
+    initialSort: "name-asc",
+    deck: '"There is nothing to writing. All you do is sit down at a typewriter and bleed."',
+  };
 }

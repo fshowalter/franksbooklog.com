@@ -21,14 +21,14 @@ export const CoverImageConfig = {
 export interface Props {
   value: ReviewWithContent;
   coverImageProps: CoverImageProps;
-  seoImageSrc: string;
+  structuredDataCoverSrc: string;
   moreReviews: React.ComponentProps<typeof MoreReviews>["values"];
 }
 
 export function Review({
   value,
   coverImageProps,
-  seoImageSrc,
+  structuredDataCoverSrc,
   moreReviews,
 }: Props): JSX.Element {
   return (
@@ -97,7 +97,7 @@ export function Review({
       <StructuredData
         title={value.title}
         grade={value.grade}
-        seoImageSrc={seoImageSrc}
+        coverImgSrc={structuredDataCoverSrc}
       />
     </Layout>
   );
@@ -154,10 +154,7 @@ function ReviewCover({
       data-pagefind-meta={`image:${coverImageProps.src}`}
       className="relative my-12 flex h-[340px] w-full max-w-popout flex-col items-center"
     >
-      <div
-        data-pagefind-meta={`image_alt:${coverImageProps.alt}`}
-        className="cover-clip-path absolute inset-0 overflow-hidden"
-      >
+      <div className="cover-clip-path absolute inset-0 overflow-hidden">
         <div
           style={{
             backgroundColor: "var(--bg-default)",

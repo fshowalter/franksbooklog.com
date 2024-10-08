@@ -21,9 +21,10 @@ export interface ListItemValue
 export interface Props {
   values: ListItemValue[];
   initialSort: Sort;
+  deck: string;
 }
 
-export function Authors({ values, initialSort }: Props): JSX.Element {
+export function Authors({ values, initialSort, deck }: Props): JSX.Element {
   const [state, dispatch] = useReducer(
     reducer,
     {
@@ -35,13 +36,7 @@ export function Authors({ values, initialSort }: Props): JSX.Element {
 
   return (
     <ListWithFiltersLayout
-      backdrop={
-        <SolidBackdrop
-          title="Authors"
-          deck='"There is nothing to writing. All you do is sit down at a typewriter and
-        bleed."'
-        />
-      }
+      backdrop={<SolidBackdrop title="Authors" deck={deck} />}
       totalCount={state.filteredValues.length}
       filters={<Filters dispatch={dispatch} sortValue={state.sortValue} />}
       list={
