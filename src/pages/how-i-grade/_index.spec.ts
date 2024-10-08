@@ -5,9 +5,9 @@ import { loadRenderers } from "astro:container";
 import * as prettier from "prettier";
 import { describe, it } from "vitest";
 
-import Page from "./how-i-grade.astro";
+import Page from "./index.astro";
 
-describe("/how-i-grade", () => {
+describe("/how-i-grade/", () => {
   it("matches snapshot", { timeout: 40000 }, async ({ expect }) => {
     const renderers = await loadRenderers([reactContainerRenderer()]);
     const container = await AstroContainer.create({ renderers });
@@ -18,6 +18,6 @@ describe("/how-i-grade", () => {
 
     void expect(
       await prettier.format(result, { parser: "html" }),
-    ).toMatchFileSnapshot(`__snapshots__/how-i-grade.html`);
+    ).toMatchFileSnapshot(`__snapshots__/index.html`);
   });
 });
