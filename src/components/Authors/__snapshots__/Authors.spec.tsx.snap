@@ -28,7 +28,7 @@ exports[`Authors > can filter by name 1`] = `
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
           >
             <img
-              alt="Bram Stoker"
+              alt=""
               class="w-full"
               height="80"
               loading="lazy"
@@ -216,7 +216,7 @@ exports[`Authors > can sort by name a->z 1`] = `
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
           >
             <img
-              alt="Raymond Chandler"
+              alt=""
               class="w-full"
               height="80"
               loading="lazy"
@@ -323,7 +323,7 @@ exports[`Authors > can sort by name a->z 1`] = `
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
           >
             <img
-              alt="Bret Easton Ellis"
+              alt=""
               class="w-full"
               height="80"
               loading="lazy"
@@ -373,7 +373,7 @@ exports[`Authors > can sort by name a->z 1`] = `
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
           >
             <img
-              alt="Ian Fleming"
+              alt=""
               class="w-full"
               height="80"
               loading="lazy"
@@ -403,7 +403,7 @@ exports[`Authors > can sort by name a->z 1`] = `
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
           >
             <img
-              alt="Philip Fracassi"
+              alt=""
               class="w-full"
               height="80"
               loading="lazy"
@@ -772,7 +772,7 @@ exports[`Authors > can sort by name a->z 1`] = `
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
           >
             <img
-              alt="Stephen King"
+              alt=""
               class="w-full"
               height="80"
               loading="lazy"
@@ -859,7 +859,7 @@ exports[`Authors > can sort by name a->z 1`] = `
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
           >
             <img
-              alt="Richard Laymon"
+              alt=""
               class="w-full"
               height="80"
               loading="lazy"
@@ -1094,7 +1094,7 @@ exports[`Authors > can sort by name a->z 1`] = `
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
           >
             <img
-              alt="Stephen Morris"
+              alt=""
               class="w-full"
               height="80"
               loading="lazy"
@@ -1201,7 +1201,7 @@ exports[`Authors > can sort by name a->z 1`] = `
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
           >
             <img
-              alt="Chuck Palahniuk"
+              alt=""
               class="w-full"
               height="80"
               loading="lazy"
@@ -1567,7 +1567,7 @@ exports[`Authors > can sort by name a->z 1`] = `
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
           >
             <img
-              alt="Bram Stoker"
+              alt=""
               class="w-full"
               height="80"
               loading="lazy"
@@ -1595,13 +1595,12 @@ exports[`Authors > can sort by name a->z 1`] = `
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
-            style="box-shadow: 0 0 0 1px var(--bg-subtle);"
           >
             <div
               class="w-full"
             >
               <svg
-                fill="var(--bg-subtle)"
+                fill="var(--bg-stripe)"
                 viewBox="0 0 16 16"
                 width="100%"
                 xmlns="http://www.w3.org/2000/svg"
@@ -2075,13 +2074,12 @@ exports[`Authors > can sort by name z->a 1`] = `
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
-            style="box-shadow: 0 0 0 1px var(--bg-subtle);"
           >
             <div
               class="w-full"
             >
               <svg
-                fill="var(--bg-subtle)"
+                fill="var(--bg-stripe)"
                 viewBox="0 0 16 16"
                 width="100%"
                 xmlns="http://www.w3.org/2000/svg"
@@ -2114,7 +2112,7 @@ exports[`Authors > can sort by name z->a 1`] = `
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
           >
             <img
-              alt="Bram Stoker"
+              alt=""
               class="w-full"
               height="80"
               loading="lazy"
@@ -2480,7 +2478,7 @@ exports[`Authors > can sort by name z->a 1`] = `
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
           >
             <img
-              alt="Chuck Palahniuk"
+              alt=""
               class="w-full"
               height="80"
               loading="lazy"
@@ -2587,7 +2585,7 @@ exports[`Authors > can sort by name z->a 1`] = `
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
           >
             <img
-              alt="Stephen Morris"
+              alt=""
               class="w-full"
               height="80"
               loading="lazy"
@@ -2822,7 +2820,7 @@ exports[`Authors > can sort by name z->a 1`] = `
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
           >
             <img
-              alt="Richard Laymon"
+              alt=""
               class="w-full"
               height="80"
               loading="lazy"
@@ -2909,7 +2907,7 @@ exports[`Authors > can sort by name z->a 1`] = `
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
           >
             <img
-              alt="Stephen King"
+              alt=""
               class="w-full"
               height="80"
               loading="lazy"
@@ -3278,7 +3276,7 @@ exports[`Authors > can sort by name z->a 1`] = `
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
           >
             <img
-              alt="Philip Fracassi"
+              alt=""
               class="w-full"
               height="80"
               loading="lazy"
@@ -3308,7 +3306,7 @@ exports[`Authors > can sort by name z->a 1`] = `
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
           >
             <img
-              alt="Ian Fleming"
+              alt=""
               class="w-full"
               height="80"
               loading="lazy"
@@ -3358,7 +3356,7 @@ exports[`Authors > can sort by name z->a 1`] = `
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
           >
             <img
-              alt="Bret Easton Ellis"
+              alt=""
               class="w-full"
               height="80"
               loading="lazy"
@@ -3465,7 +3463,7 @@ exports[`Authors > can sort by name z->a 1`] = `
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
           >
             <img
-              alt="Raymond Chandler"
+              alt=""
               class="w-full"
               height="80"
               loading="lazy"
@@ -3649,13 +3647,12 @@ exports[`Authors > can sort by review count asc 1`] = `
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
-            style="box-shadow: 0 0 0 1px var(--bg-subtle);"
           >
             <div
               class="w-full"
             >
               <svg
-                fill="var(--bg-subtle)"
+                fill="var(--bg-stripe)"
                 viewBox="0 0 16 16"
                 width="100%"
                 xmlns="http://www.w3.org/2000/svg"
@@ -3799,7 +3796,7 @@ exports[`Authors > can sort by review count asc 1`] = `
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
           >
             <img
-              alt="Raymond Chandler"
+              alt=""
               class="w-full"
               height="80"
               loading="lazy"
@@ -4680,7 +4677,7 @@ exports[`Authors > can sort by review count asc 1`] = `
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
           >
             <img
-              alt="Bram Stoker"
+              alt=""
               class="w-full"
               height="80"
               loading="lazy"
@@ -4858,7 +4855,7 @@ exports[`Authors > can sort by review count asc 1`] = `
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
           >
             <img
-              alt="Bret Easton Ellis"
+              alt=""
               class="w-full"
               height="80"
               loading="lazy"
@@ -4888,7 +4885,7 @@ exports[`Authors > can sort by review count asc 1`] = `
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
           >
             <img
-              alt="Stephen Morris"
+              alt=""
               class="w-full"
               height="80"
               loading="lazy"
@@ -4918,7 +4915,7 @@ exports[`Authors > can sort by review count asc 1`] = `
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
           >
             <img
-              alt="Chuck Palahniuk"
+              alt=""
               class="w-full"
               height="80"
               loading="lazy"
@@ -4948,7 +4945,7 @@ exports[`Authors > can sort by review count asc 1`] = `
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
           >
             <img
-              alt="Ian Fleming"
+              alt=""
               class="w-full"
               height="80"
               loading="lazy"
@@ -4978,7 +4975,7 @@ exports[`Authors > can sort by review count asc 1`] = `
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
           >
             <img
-              alt="Stephen King"
+              alt=""
               class="w-full"
               height="80"
               loading="lazy"
@@ -5008,7 +5005,7 @@ exports[`Authors > can sort by review count asc 1`] = `
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
           >
             <img
-              alt="Richard Laymon"
+              alt=""
               class="w-full"
               height="80"
               loading="lazy"
@@ -5038,7 +5035,7 @@ exports[`Authors > can sort by review count asc 1`] = `
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
           >
             <img
-              alt="Philip Fracassi"
+              alt=""
               class="w-full"
               height="80"
               loading="lazy"
@@ -5093,7 +5090,7 @@ exports[`Authors > can sort by review count desc 1`] = `
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
           >
             <img
-              alt="Philip Fracassi"
+              alt=""
               class="w-full"
               height="80"
               loading="lazy"
@@ -5123,7 +5120,7 @@ exports[`Authors > can sort by review count desc 1`] = `
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
           >
             <img
-              alt="Stephen King"
+              alt=""
               class="w-full"
               height="80"
               loading="lazy"
@@ -5153,7 +5150,7 @@ exports[`Authors > can sort by review count desc 1`] = `
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
           >
             <img
-              alt="Richard Laymon"
+              alt=""
               class="w-full"
               height="80"
               loading="lazy"
@@ -5183,7 +5180,7 @@ exports[`Authors > can sort by review count desc 1`] = `
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
           >
             <img
-              alt="Ian Fleming"
+              alt=""
               class="w-full"
               height="80"
               loading="lazy"
@@ -5213,7 +5210,7 @@ exports[`Authors > can sort by review count desc 1`] = `
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
           >
             <img
-              alt="Bret Easton Ellis"
+              alt=""
               class="w-full"
               height="80"
               loading="lazy"
@@ -5243,7 +5240,7 @@ exports[`Authors > can sort by review count desc 1`] = `
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
           >
             <img
-              alt="Stephen Morris"
+              alt=""
               class="w-full"
               height="80"
               loading="lazy"
@@ -5273,7 +5270,7 @@ exports[`Authors > can sort by review count desc 1`] = `
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
           >
             <img
-              alt="Chuck Palahniuk"
+              alt=""
               class="w-full"
               height="80"
               loading="lazy"
@@ -5414,7 +5411,7 @@ exports[`Authors > can sort by review count desc 1`] = `
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
           >
             <img
-              alt="Raymond Chandler"
+              alt=""
               class="w-full"
               height="80"
               loading="lazy"
@@ -6295,7 +6292,7 @@ exports[`Authors > can sort by review count desc 1`] = `
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
           >
             <img
-              alt="Bram Stoker"
+              alt=""
               class="w-full"
               height="80"
               loading="lazy"
@@ -6471,13 +6468,12 @@ exports[`Authors > can sort by review count desc 1`] = `
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
-            style="box-shadow: 0 0 0 1px var(--bg-subtle);"
           >
             <div
               class="w-full"
             >
               <svg
-                fill="var(--bg-subtle)"
+                fill="var(--bg-stripe)"
                 viewBox="0 0 16 16"
                 width="100%"
                 xmlns="http://www.w3.org/2000/svg"
@@ -6646,7 +6642,7 @@ exports[`Authors > can sort by work count asc 1`] = `
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
           >
             <img
-              alt="Raymond Chandler"
+              alt=""
               class="w-full"
               height="80"
               loading="lazy"
@@ -7673,13 +7669,12 @@ exports[`Authors > can sort by work count asc 1`] = `
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
-            style="box-shadow: 0 0 0 1px var(--bg-subtle);"
           >
             <div
               class="w-full"
             >
               <svg
-                fill="var(--bg-subtle)"
+                fill="var(--bg-stripe)"
                 viewBox="0 0 16 16"
                 width="100%"
                 xmlns="http://www.w3.org/2000/svg"
@@ -7712,7 +7707,7 @@ exports[`Authors > can sort by work count asc 1`] = `
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
           >
             <img
-              alt="Bret Easton Ellis"
+              alt=""
               class="w-full"
               height="80"
               loading="lazy"
@@ -7742,7 +7737,7 @@ exports[`Authors > can sort by work count asc 1`] = `
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
           >
             <img
-              alt="Stephen Morris"
+              alt=""
               class="w-full"
               height="80"
               loading="lazy"
@@ -7772,7 +7767,7 @@ exports[`Authors > can sort by work count asc 1`] = `
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
           >
             <img
-              alt="Bram Stoker"
+              alt=""
               class="w-full"
               height="80"
               loading="lazy"
@@ -7802,7 +7797,7 @@ exports[`Authors > can sort by work count asc 1`] = `
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
           >
             <img
-              alt="Ian Fleming"
+              alt=""
               class="w-full"
               height="80"
               loading="lazy"
@@ -7832,7 +7827,7 @@ exports[`Authors > can sort by work count asc 1`] = `
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
           >
             <img
-              alt="Chuck Palahniuk"
+              alt=""
               class="w-full"
               height="80"
               loading="lazy"
@@ -7862,7 +7857,7 @@ exports[`Authors > can sort by work count asc 1`] = `
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
           >
             <img
-              alt="Philip Fracassi"
+              alt=""
               class="w-full"
               height="80"
               loading="lazy"
@@ -7892,7 +7887,7 @@ exports[`Authors > can sort by work count asc 1`] = `
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
           >
             <img
-              alt="Stephen King"
+              alt=""
               class="w-full"
               height="80"
               loading="lazy"
@@ -7922,7 +7917,7 @@ exports[`Authors > can sort by work count asc 1`] = `
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
           >
             <img
-              alt="Richard Laymon"
+              alt=""
               class="w-full"
               height="80"
               loading="lazy"
@@ -7977,7 +7972,7 @@ exports[`Authors > can sort by work count desc 1`] = `
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
           >
             <img
-              alt="Richard Laymon"
+              alt=""
               class="w-full"
               height="80"
               loading="lazy"
@@ -8007,7 +8002,7 @@ exports[`Authors > can sort by work count desc 1`] = `
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
           >
             <img
-              alt="Stephen King"
+              alt=""
               class="w-full"
               height="80"
               loading="lazy"
@@ -8037,7 +8032,7 @@ exports[`Authors > can sort by work count desc 1`] = `
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
           >
             <img
-              alt="Philip Fracassi"
+              alt=""
               class="w-full"
               height="80"
               loading="lazy"
@@ -8067,7 +8062,7 @@ exports[`Authors > can sort by work count desc 1`] = `
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
           >
             <img
-              alt="Chuck Palahniuk"
+              alt=""
               class="w-full"
               height="80"
               loading="lazy"
@@ -8097,7 +8092,7 @@ exports[`Authors > can sort by work count desc 1`] = `
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
           >
             <img
-              alt="Ian Fleming"
+              alt=""
               class="w-full"
               height="80"
               loading="lazy"
@@ -8127,7 +8122,7 @@ exports[`Authors > can sort by work count desc 1`] = `
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
           >
             <img
-              alt="Bret Easton Ellis"
+              alt=""
               class="w-full"
               height="80"
               loading="lazy"
@@ -8157,7 +8152,7 @@ exports[`Authors > can sort by work count desc 1`] = `
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
           >
             <img
-              alt="Stephen Morris"
+              alt=""
               class="w-full"
               height="80"
               loading="lazy"
@@ -8187,7 +8182,7 @@ exports[`Authors > can sort by work count desc 1`] = `
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
           >
             <img
-              alt="Bram Stoker"
+              alt=""
               class="w-full"
               height="80"
               loading="lazy"
@@ -8328,7 +8323,7 @@ exports[`Authors > can sort by work count desc 1`] = `
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
           >
             <img
-              alt="Raymond Chandler"
+              alt=""
               class="w-full"
               height="80"
               loading="lazy"
@@ -9355,13 +9350,12 @@ exports[`Authors > can sort by work count desc 1`] = `
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
-            style="box-shadow: 0 0 0 1px var(--bg-subtle);"
           >
             <div
               class="w-full"
             >
               <svg
-                fill="var(--bg-subtle)"
+                fill="var(--bg-stripe)"
                 viewBox="0 0 16 16"
                 width="100%"
                 xmlns="http://www.w3.org/2000/svg"

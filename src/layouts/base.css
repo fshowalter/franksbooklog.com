@@ -149,7 +149,6 @@
 @layer components {
   .hamburger-icon {
     z-index: 100;
-    /* padding: 12px; */
     margin-left: 16px;
     background: transparent;
     border-radius: 50% 50% 50% 50%;
@@ -159,9 +158,11 @@
       0 0 0 0 transparent,
       0 0 0 0 transparent;
     cursor: pointer;
-    height: 24px;
+    height: 40px;
+    width: 40px;
     position: relative;
     display: flex;
+    justify-content: center;
     align-items: center;
   }
 

@@ -1,6 +1,8 @@
-export function Logo() {
+import { ccn } from "src/utils/concatClassNames";
+
+export function Logo({ className }: { className?: string }) {
   return (
-    <div className="flex flex-col">
+    <div className={ccn("flex flex-col", className)}>
       <div
         className="whitespace-nowrap font-normal leading-8"
         style={{ fontSize: "1.5625rem" }}

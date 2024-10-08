@@ -1,0 +1,725 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
+    <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <meta name="description" content="Author of 1 reviewed work ." />
+    <meta
+      name="og:image"
+      content="https://www.franksbooklog.com/assets/default_og.jpg"
+    />
+    <meta property="og:url" content="https://www.franksbooklog.com//" />
+    <meta property="og:title" content="Arnold Schwarzenegger" />
+    <meta property="og:description" content="Author of 1 reviewed work ." />
+    <title>Arnold Schwarzenegger | Frank&#39;s Book Log</title>
+  </head>
+  <body>
+    <style>
+      astro-island,
+      astro-slot,
+      astro-static-slot {
+        display: contents;
+      }
+    </style>
+    <script>
+      (() => {
+        var e = async (t) => {
+          await (
+            await t()
+          )();
+        };
+        (self.Astro || (self.Astro = {})).load = e;
+        window.dispatchEvent(new Event("astro:load"));
+      })();
+      (() => {
+        var A = Object.defineProperty;
+        var g = (i, o, a) =>
+          o in i
+            ? A(i, o, {
+                enumerable: !0,
+                configurable: !0,
+                writable: !0,
+                value: a,
+              })
+            : (i[o] = a);
+        var d = (i, o, a) => g(i, typeof o != "symbol" ? o + "" : o, a);
+        {
+          let i = {
+              0: (t) => m(t),
+              1: (t) => a(t),
+              2: (t) => new RegExp(t),
+              3: (t) => new Date(t),
+              4: (t) => new Map(a(t)),
+              5: (t) => new Set(a(t)),
+              6: (t) => BigInt(t),
+              7: (t) => new URL(t),
+              8: (t) => new Uint8Array(t),
+              9: (t) => new Uint16Array(t),
+              10: (t) => new Uint32Array(t),
+              11: (t) => (1 / 0) * t,
+            },
+            o = (t) => {
+              let [l, e] = t;
+              return l in i ? i[l](e) : void 0;
+            },
+            a = (t) => t.map(o),
+            m = (t) =>
+              typeof t != "object" || t === null
+                ? t
+                : Object.fromEntries(
+                    Object.entries(t).map(([l, e]) => [l, o(e)]),
+                  );
+          class y extends HTMLElement {
+            constructor() {
+              super(...arguments);
+              d(this, "Component");
+              d(this, "hydrator");
+              d(this, "hydrate", async () => {
+                var b;
+                if (!this.hydrator || !this.isConnected) return;
+                let e =
+                  (b = this.parentElement) == null
+                    ? void 0
+                    : b.closest("astro-island[ssr]");
+                if (e) {
+                  e.addEventListener("astro:hydrate", this.hydrate, {
+                    once: !0,
+                  });
+                  return;
+                }
+                let c = this.querySelectorAll("astro-slot"),
+                  n = {},
+                  h = this.querySelectorAll("template[data-astro-template]");
+                for (let r of h) {
+                  let s = r.closest(this.tagName);
+                  s != null &&
+                    s.isSameNode(this) &&
+                    ((n[r.getAttribute("data-astro-template") || "default"] =
+                      r.innerHTML),
+                    r.remove());
+                }
+                for (let r of c) {
+                  let s = r.closest(this.tagName);
+                  s != null &&
+                    s.isSameNode(this) &&
+                    (n[r.getAttribute("name") || "default"] = r.innerHTML);
+                }
+                let p;
+                try {
+                  p = this.hasAttribute("props")
+                    ? m(JSON.parse(this.getAttribute("props")))
+                    : {};
+                } catch (r) {
+                  let s = this.getAttribute("component-url") || "<unknown>",
+                    v = this.getAttribute("component-export");
+                  throw (
+                    (v && (s += ` (export ${v})`),
+                    console.error(
+                      `[hydrate] Error parsing props for component ${s}`,
+                      this.getAttribute("props"),
+                      r,
+                    ),
+                    r)
+                  );
+                }
+                let u;
+                await this.hydrator(this)(this.Component, p, n, {
+                  client: this.getAttribute("client"),
+                }),
+                  this.removeAttribute("ssr"),
+                  this.dispatchEvent(new CustomEvent("astro:hydrate"));
+              });
+              d(this, "unmount", () => {
+                this.isConnected ||
+                  this.dispatchEvent(new CustomEvent("astro:unmount"));
+              });
+            }
+            disconnectedCallback() {
+              document.removeEventListener("astro:after-swap", this.unmount),
+                document.addEventListener("astro:after-swap", this.unmount, {
+                  once: !0,
+                });
+            }
+            connectedCallback() {
+              if (
+                !this.hasAttribute("await-children") ||
+                document.readyState === "interactive" ||
+                document.readyState === "complete"
+              )
+                this.childrenConnectedCallback();
+              else {
+                let e = () => {
+                    document.removeEventListener("DOMContentLoaded", e),
+                      c.disconnect(),
+                      this.childrenConnectedCallback();
+                  },
+                  c = new MutationObserver(() => {
+                    var n;
+                    ((n = this.lastChild) == null ? void 0 : n.nodeType) ===
+                      Node.COMMENT_NODE &&
+                      this.lastChild.nodeValue === "astro:end" &&
+                      (this.lastChild.remove(), e());
+                  });
+                c.observe(this, { childList: !0 }),
+                  document.addEventListener("DOMContentLoaded", e);
+              }
+            }
+            async childrenConnectedCallback() {
+              let e = this.getAttribute("before-hydration-url");
+              e && (await import(e)), this.start();
+            }
+            async start() {
+              let e = JSON.parse(this.getAttribute("opts")),
+                c = this.getAttribute("client");
+              if (Astro[c] === void 0) {
+                window.addEventListener(`astro:${c}`, () => this.start(), {
+                  once: !0,
+                });
+                return;
+              }
+              try {
+                await Astro[c](
+                  async () => {
+                    let n = this.getAttribute("renderer-url"),
+                      [h, { default: p }] = await Promise.all([
+                        import(this.getAttribute("component-url")),
+                        n ? import(n) : () => () => {},
+                      ]),
+                      u = this.getAttribute("component-export") || "default";
+                    if (!u.includes(".")) this.Component = h[u];
+                    else {
+                      this.Component = h;
+                      for (let f of u.split("."))
+                        this.Component = this.Component[f];
+                    }
+                    return (this.hydrator = p), this.hydrate;
+                  },
+                  e,
+                  this,
+                );
+              } catch (n) {
+                console.error(
+                  `[astro-island] Error hydrating ${this.getAttribute("component-url")}`,
+                  n,
+                );
+              }
+            }
+            attributeChangedCallback() {
+              this.hydrate();
+            }
+          }
+          d(y, "observedAttributes", ["props"]),
+            customElements.get("astro-island") ||
+              customElements.define("astro-island", y);
+        }
+      })();
+    </script>
+    <astro-island
+      uid="24XVck"
+      prefix="r0"
+      component-url="src/components/Author/Author"
+      component-export="Author"
+      renderer-url="@astrojs/react/client.js"
+      props='{"works":[1,[[0,{"title":[0,"Total Recall"],"yearPublished":[0,"2012"],"slug":[0,"total-recall-by-arnold-schwarzenegger"],"kind":[0,"Nonfiction"],"grade":[0,"C+"],"sortTitle":[0,"Total Recall: My Unbelievably True Life Story"],"gradeValue":[0,7],"reviewed":[0,true],"coverImageProps":[0,{"srcSet":[0,"/_image?/content%2Fassets%2Fcovers%2Ftotal-recall-by-arnold-schwarzenegger.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=20&amp;q=80&amp;f=avif 20w, /_image?/content%2Fassets%2Fcovers%2Ftotal-recall-by-arnold-schwarzenegger.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=40&amp;q=80&amp;f=avif 40w, /_image?/content%2Fassets%2Fcovers%2Ftotal-recall-by-arnold-schwarzenegger.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=80&amp;q=80&amp;f=avif 80w, /_image?/content%2Fassets%2Fcovers%2Ftotal-recall-by-arnold-schwarzenegger.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=160&amp;q=80&amp;f=avif 160w"],"src":[0,"/_image?/content%2Fassets%2Fcovers%2Ftotal-recall-by-arnold-schwarzenegger.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=80&amp;h=113&amp;q=80&amp;f=avif"]}],"otherAuthors":[1,[]]}]]],"deck":[0,"Author of 1 reviewed work ."],"name":[0,"Arnold Schwarzenegger"],"distinctKinds":[1,[[0,"Nonfiction"]]],"distinctPublishedYears":[1,[[0,"2012"]]],"initialSort":[0,"year-published-asc"],"avatarImageProps":[0,null]}'
+      ssr=""
+      client="load"
+      before-hydration-url="astro:scripts/before-hydration.js"
+      opts='{"name":"Author","value":true}'
+      await-children=""
+      ><div>
+        <a
+          href="#content"
+          class="absolute left-1/2 top-0.5 z-50 mx-auto bg-subtle px-6 py-2 text-center text-accent [transform:translate(-50%,calc(-100%_-_2px))] focus:[transform:translate(-50%,0%)]"
+          >Skip to content</a
+        >
+        <div class="flex min-h-full w-full flex-col bg-default">
+          <header
+            class="z-20 flex w-full items-center justify-between px-container py-4 tablet:p-6 desktop:inset-x-0 desktop:z-40 desktop:flex-row desktop:flex-wrap desktop:px-16 desktop:py-8 desktop:text-left"
+            style="position: absolute"
+          >
+            <div class="flex flex-col mt-2 tablet:mt-0">
+              <div
+                class="whitespace-nowrap font-normal leading-8"
+                style="font-size: 1.5625rem"
+              >
+                <a href="/">Frank&#x27;s Book Log</a>
+              </div>
+              <p class="w-full pl-px text-sm italic leading-4 opacity-85">
+                Literature is a relative term.
+              </p>
+            </div>
+            <div class="flex items-center">
+              <nav class="hidden w-full desktop:block desktop:w-auto">
+                <ul class="flex flex-wrap justify-start gap-x-6 text-xl">
+                  <li class="block whitespace-nowrap tracking-serif-wide">
+                    <a
+                      class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
+                      href="/"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="block whitespace-nowrap tracking-serif-wide">
+                    <a
+                      class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
+                      href="/how-i-grade/"
+                      >How I Grade</a
+                    >
+                  </li>
+                  <li class="block whitespace-nowrap tracking-serif-wide">
+                    <a
+                      class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
+                      href="/reviews/"
+                      >Reviews</a
+                    >
+                  </li>
+                  <li class="block whitespace-nowrap tracking-serif-wide">
+                    <a
+                      class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
+                      href="/readings/"
+                      >Reading Log</a
+                    >
+                  </li>
+                  <li class="block whitespace-nowrap tracking-serif-wide">
+                    <a
+                      class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
+                      href="/authors/"
+                      >Authors</a
+                    >
+                  </li>
+                  <li class="block whitespace-nowrap tracking-serif-wide">
+                    <a
+                      class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
+                      href="/shelf/"
+                      >Shelf</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+              <div class="z-[1000]">
+                <button
+                  data-open-modal="true"
+                  disabled=""
+                  aria-label="Search"
+                  aria-keyshortcuts="Control+K"
+                  class="flex items-center justify-between overflow-hidden text-sm leading-6 ring-default desktop:ml-6"
+                  type="button"
+                  title="Search: Control+K"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-7"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+              <input type="checkbox" id="mobile-nav" class="hidden" /><label
+                for="mobile-nav"
+                class="hamburger-icon desktop:hidden"
+                ><span
+                  style="background: var(--fg-default)"
+                  class="hamburger-icon-bars"
+                ></span
+              ></label>
+              <ul
+                class="hamburger-menu flex flex-col items-start gap-y-5 text-left text-inverse desktop:hidden"
+              >
+                <li class="block w-1/2 whitespace-nowrap text-2xl">
+                  <a href="/">Home</a>
+                </li>
+                <li class="block w-1/2 whitespace-nowrap text-2xl">
+                  <a href="/how-i-grade/">How I Grade</a>
+                </li>
+                <li class="block w-1/2 whitespace-nowrap text-2xl">
+                  <a href="/reviews/">Reviews</a>
+                </li>
+                <li class="block w-1/2 whitespace-nowrap text-2xl">
+                  <a href="/readings/">Reading Log</a>
+                  <ol class="mt-4">
+                    <li
+                      class="mb-2 font-sans text-xs uppercase tracking-wide text-inverse-subtle"
+                    >
+                      <a href="/readings/stats/">Stats</a>
+                    </li>
+                  </ol>
+                </li>
+                <li class="block w-1/2 whitespace-nowrap text-2xl">
+                  <a href="/authors/">Authors</a>
+                </li>
+                <li class="block w-1/2 whitespace-nowrap text-2xl">
+                  <a href="/shelf/">Shelf</a>
+                </li>
+              </ul>
+            </div>
+          </header>
+          <main class="grow bg-subtle" id="content" data-pagefind-body="true">
+            <header
+              class="min-h-[240px] desktop:min-h-[clamp(640px,50vh,1350px)] relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pb-8 pt-40 tablet:pb-10 tablet:pt-40 desktop:pb-16 desktop:pt-40"
+            >
+              <div
+                class="items-center z-10 mx-auto flex w-full max-w-screen-max flex-col px-container"
+              >
+                <div
+                  class="safari-border-radius-fix mx-auto mb-6 w-4/5 max-w-[250px] overflow-hidden rounded-full"
+                >
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 16 16"
+                      fill="var(--bg-stripe)"
+                      width="100%"
+                    >
+                      <path
+                        clip-rule="evenodd"
+                        d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
+                        fill-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <p
+                  class="mb-2 font-sans text-sm uppercase tracking-wide text-subtle"
+                >
+                  <a
+                    class="underline decoration-2 underline-offset-8 hover:text-accent"
+                    href="/authors/"
+                    >Authors</a
+                  >
+                </p>
+                <h1
+                  class="font-sans text-center text-2xl font-bold uppercase tracking-widest tablet:text-4xl tablet-landscape:text-5xl desktop:text-7xl"
+                >
+                  Arnold Schwarzenegger
+                </h1>
+                <p
+                  class="mt-1 text-base desktop:my-4 desktop:text-xl text-center text-subtle"
+                >
+                  Author of 1 reviewed work .
+                </p>
+              </div>
+            </header>
+            <div class="mx-auto flex flex-col items-center bg-default">
+              <div class="mx-auto flex w-full flex-col items-stretch">
+                <div class="flex grow flex-col bg-subtle">
+                  <div class="relative tablet:px-12 tablet-landscape:px-0">
+                    <div
+                      class="relative z-10 row-start-1 bg-default text-xs tablet:-mx-12 tablet:px-0 tablet-landscape:col-span-3 tablet-landscape:mx-0 tablet-landscape:w-full"
+                    >
+                      <div
+                        class="mx-auto flex w-full max-w-screen-max flex-wrap items-baseline justify-between gap-x-4 gap-y-5 px-container py-10 font-sans font-medium uppercase tracking-wide text-subtle"
+                      >
+                        <span class="block pr-4"
+                          ><span class="font-semibold text-default">1</span>
+                          <!-- -->Results</span
+                        ><button
+                          class="ml-auto flex justify-center gap-x-4 text-nowrap px-4 py-2 uppercase text-muted shadow-all tablet-landscape:hidden"
+                          style="background-color: var(--bg-canvas)"
+                        >
+                          Filter &amp; Sort
+                        </button>
+                      </div>
+                    </div>
+                    <div
+                      class="mx-auto max-w-screen-max grid-cols-[1fr_48px_minmax(398px,33%)] tablet-landscape:grid tablet-landscape:grid-rows-[auto_1fr]"
+                    >
+                      <div
+                        class="relative z-10 col-start-3 row-span-2 row-start-2 grid min-w-[350px] text-sm transition-[grid-template-rows] duration-200 ease-in-out tablet-landscape:mr-12 tablet-landscape:block tablet-landscape:py-24 tablet-landscape:pb-12 tablet-landscape:shadow-none desktop:mr-20"
+                        style="grid-template-rows: 0fr"
+                      >
+                        <div
+                          class="w-full overflow-hidden bg-subtle text-sm tablet:text-base tablet-landscape:overflow-visible tablet-landscape:bg-default tablet-landscape:px-container tablet-landscape:pt-0 desktop:px-8"
+                        >
+                          <fieldset
+                            class="mt-4 flex flex-col gap-10 bg-default px-container py-10 tablet:gap-12 tablet-landscape:mt-0 tablet-landscape:px-0"
+                          >
+                            <legend
+                              class="tablet-landscape::block hidden w-full py-10 font-sans text-xs font-bold uppercase tracking-wide text-subtle tablet-landscape:shadow-bottom"
+                            >
+                              Filter &amp; Sort
+                            </legend>
+                            <div class="flex flex-col justify-end">
+                              <button
+                                type="button"
+                                class="mx-auto w-full max-w-button bg-canvas py-5 text-center font-sans text-xs font-semibold uppercase tracking-wide shadow-all hover:bg-inverse hover:text-inverse"
+                              >
+                                Hide Reviewed
+                              </button>
+                            </div>
+                            <label class="flex flex-col text-subtle"
+                              ><span
+                                class="inline-block h-6 text-left font-sans text-xxs uppercase leading-none tracking-wide text-subtle"
+                                >Title</span
+                              ><input
+                                type="text"
+                                placeholder="Enter all or part of a title"
+                                class="border-0 bg-default px-4 py-2 text-base text-default shadow-all placeholder:text-default placeholder:opacity-50"
+                            /></label>
+                            <fieldset class="text-subtle">
+                              <legend
+                                class="inline-block h-6 text-left font-sans text-xxs uppercase leading-none tracking-wide text-subtle"
+                              >
+                                Work Year
+                              </legend>
+                              <div class="flex items-baseline">
+                                <label
+                                  class="flex flex-1 items-center gap-x-[.5ch]"
+                                  ><span
+                                    class="min-w-10 text-left text-sm tracking-serif-wide"
+                                    >From</span
+                                  ><select
+                                    class="select-background-image w-full appearance-none border-none bg-default py-2 pl-4 pr-8 text-base leading-6 text-subtle shadow-all outline-accent"
+                                  >
+                                    <option value="2012" selected="">
+                                      2012
+                                    </option>
+                                  </select></label
+                                ><label class="flex flex-1 items-center"
+                                  ><span
+                                    class="min-w-10 text-center text-sm tracking-serif-wide"
+                                    >to</span
+                                  ><select
+                                    class="select-background-image w-full appearance-none border-none bg-default py-2 pl-4 pr-8 text-base leading-6 text-subtle shadow-all outline-accent"
+                                  >
+                                    <option value="2012" selected="">
+                                      2012
+                                    </option>
+                                  </select></label
+                                >
+                              </div>
+                            </fieldset>
+                            <label class="flex flex-col"
+                              ><span
+                                class="inline-block h-6 text-left font-sans text-xxs uppercase leading-none tracking-wide text-subtle"
+                                >Kind</span
+                              ><select
+                                class="select-background-image w-full appearance-none border-none bg-default py-2 pl-4 pr-8 text-base leading-6 text-subtle shadow-all outline-accent"
+                              >
+                                <option value="All">All</option>
+                                <option value="Nonfiction">Nonfiction</option>
+                              </select></label
+                            ><label class="flex flex-col"
+                              ><span
+                                class="inline-block h-6 text-left font-sans text-xxs uppercase leading-none tracking-wide text-subtle"
+                                >Order By</span
+                              ><select
+                                class="select-background-image w-full appearance-none border-none bg-default py-2 pl-4 pr-8 text-base leading-6 text-subtle shadow-all outline-accent"
+                              >
+                                <option value="year-published-desc">
+                                  Work Year (Newest First)
+                                </option>
+                                <option value="year-published-asc" selected="">
+                                  Work Year (Oldest First)
+                                </option>
+                                <option value="title-asc">Title (A → Z)</option>
+                                <option value="title-desc">
+                                  Title (Z → A)
+                                </option>
+                                <option value="grade-desc">
+                                  Grade (Best First)
+                                </option>
+                                <option value="grade-asc">
+                                  Grade (Worst First)
+                                </option>
+                              </select></label
+                            >
+                          </fieldset>
+                        </div>
+                      </div>
+                      <div
+                        class="col-start-1 row-start-2 pb-10 tablet-landscape:pl-12 desktop:pl-20"
+                      >
+                        <ol data-testid="list">
+                          <li class="block">
+                            <div style="z-index: 1" class="pt-0 text-md">
+                              <div
+                                class="mb-1 max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+                              >
+                                2012
+                              </div>
+                            </div>
+                            <div class="bg-subtle">
+                              <ol>
+                                <li
+                                  class="bg-default relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+                                >
+                                  <div class="w-list-item-cover shrink-0">
+                                    <img
+                                      srcset="
+                                        /_image?/content%2Fassets%2Fcovers%2Ftotal-recall-by-arnold-schwarzenegger.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=20&amp;q=80&amp;f=avif   20w,
+                                        /_image?/content%2Fassets%2Fcovers%2Ftotal-recall-by-arnold-schwarzenegger.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=40&amp;q=80&amp;f=avif   40w,
+                                        /_image?/content%2Fassets%2Fcovers%2Ftotal-recall-by-arnold-schwarzenegger.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=80&amp;q=80&amp;f=avif   80w,
+                                        /_image?/content%2Fassets%2Fcovers%2Ftotal-recall-by-arnold-schwarzenegger.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=160&amp;q=80&amp;f=avif 160w
+                                      "
+                                      src="/_image?/content%2Fassets%2Fcovers%2Ftotal-recall-by-arnold-schwarzenegger.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=80&amp;h=113&amp;q=80&amp;f=avif"
+                                      alt=""
+                                      width="80"
+                                      height="113"
+                                      sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+                                      loading="lazy"
+                                      decoding="async"
+                                      class="aspect-cover"
+                                    />
+                                  </div>
+                                  <div
+                                    class="flex grow flex-col items-start gap-y-1 tablet:w-full tablet:gap-y-2 desktop:pr-4"
+                                  >
+                                    <a
+                                      href="/reviews/total-recall-by-arnold-schwarzenegger/"
+                                      class="block font-sans text-sm font-medium text-accent decoration-accent decoration-2 underline-offset-4 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 hover:underline hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                                      >Total Recall</a
+                                    >
+                                    <div
+                                      class="font-sans text-xs font-light leading-4 text-subtle"
+                                    >
+                                      <span
+                                        >Nonfiction<!-- -->
+                                        | </span
+                                      >2012
+                                    </div>
+                                    <picture
+                                      ><source
+                                        srcset="/svg/3-stars-dark.svg"
+                                        media="(prefers-color-scheme: dark)" />
+                                      <img
+                                        src="/svg/3-stars.svg"
+                                        alt="C+: 3 stars (out of 5)"
+                                        height="16"
+                                        width="80"
+                                    /></picture>
+                                  </div>
+                                </li>
+                              </ol>
+                            </div>
+                          </li>
+                        </ol>
+                        <div
+                          class="flex flex-col items-center px-container py-10"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+          <footer
+            class="flex flex-wrap items-start justify-between gap-[10%] bg-footer px-container py-20 text-inverse tablet:px-12 tablet:pt-10 desktop:p-20"
+          >
+            <div class="flex flex-col pb-12">
+              <div class="flex flex-col">
+                <div
+                  class="whitespace-nowrap font-normal leading-8"
+                  style="font-size: 1.5625rem"
+                >
+                  <a href="/">Frank&#x27;s Book Log</a>
+                </div>
+                <p class="w-full pl-px text-sm italic leading-4 opacity-85">
+                  Literature is a relative term.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex flex-col gap-20 pb-20 pt-10 tablet:basis-1/2 tablet:pt-20"
+            >
+              <ul class="flex w-full flex-col gap-y-10 text-inverse max:w-auto">
+                <li class="block w-1/2 whitespace-nowrap text-2xl">
+                  <a class="hover:text-accent" href="/">Home</a>
+                </li>
+                <li class="block w-1/2 whitespace-nowrap text-2xl">
+                  <a class="hover:text-accent" href="/how-i-grade/"
+                    >How I Grade</a
+                  >
+                </li>
+                <li class="block w-1/2 whitespace-nowrap text-2xl">
+                  <a class="hover:text-accent" href="/reviews/">Reviews</a>
+                </li>
+                <li class="block w-1/2 whitespace-nowrap text-2xl">
+                  <a class="hover:text-accent" href="/readings/">Reading Log</a>
+                  <ol class="mt-4">
+                    <li
+                      class="mb-2 font-sans text-xs uppercase tracking-wide text-inverse-subtle"
+                    >
+                      <a class="hover:text-inverse" href="/readings/stats/"
+                        >Stats</a
+                      >
+                    </li>
+                  </ol>
+                </li>
+                <li class="block w-1/2 whitespace-nowrap text-2xl">
+                  <a class="hover:text-accent" href="/authors/">Authors</a>
+                </li>
+                <li class="block w-1/2 whitespace-nowrap text-2xl">
+                  <a class="hover:text-accent" href="/shelf/">Shelf</a>
+                </li>
+              </ul>
+              <a
+                href="#top"
+                class="mb-8 w-full max-w-button bg-canvas py-5 text-center font-sans text-xs uppercase tracking-wide text-default hover:bg-inverse hover:text-inverse"
+                >To the top</a
+              >
+              <p class="w-full font-normal leading-4 text-inverse-subtle">
+                All covers used in accordance with the<!-- -->
+                <a
+                  href="http://www.copyright.gov/title17/92chap1.html#107"
+                  class="text-inherit underline decoration-2 underline-offset-4 hover:bg-default hover:text-default"
+                  >Fair Use Law.</a
+                >
+              </p>
+            </div>
+          </footer>
+        </div>
+      </div>
+      <!--astro:end--></astro-island
+    >
+    <dialog
+      class="relative m-0 h-screen max-h-none w-screen max-w-unset border border-default bg-subtle shadow-lg open:flex open:flex-col tablet:mx-auto tablet:mt-16 tablet:h-min tablet:max-h-[min(100vh_-_128px,900px)] tablet:min-h-60 tablet:max-w-[min(100vw_-_64px,36rem)] tablet:rounded-xl desktop:min-h-0"
+      aria-label="Search"
+    >
+      <div data-dialog-frame class="contents">
+        <button
+          data-close-modal
+          class="px-4 font-sans text-sm font-light hover:bg-inverse hover:text-inverse focus:outline-accent"
+        >
+          Cancel
+        </button>
+        <div class="contents"><div id="pagefind__search"></div></div>
+        <div
+          class="hidden px-[var(--search-dialog-padding)] py-4 font-sans text-xs font-light tracking-wide text-subtle desktop:block"
+        >
+          <kbd class="rounded-md bg-default p-2 font-mono text-xs text-subtle"
+            >Tab</kbd
+          >
+          to navigate
+          <kbd
+            class="ml-4 rounded-md bg-default p-2 font-mono text-xs text-subtle"
+            >ESC</kbd
+          >
+          to close
+        </div>
+      </div>
+    </dialog>
+    <script>
+      (() => {
+        const openBtn = document.querySelector("button[data-open-modal]");
+        if (!openBtn) return;
+        if (/(Mac|iPhone|iPod|iPad)/i.test(navigator.platform)) {
+          openBtn.setAttribute("aria-keyshortcuts", "Meta+K");
+          openBtn.setAttribute("title", `Search: ⌘K`);
+        }
+      })();
+    </script>
+  </body>
+</html>

@@ -16,13 +16,13 @@ import type { Sort } from "./Author.reducer";
 import { Actions, initState, reducer } from "./Author.reducer";
 import { Filters } from "./Filters";
 
-export interface Props
-  extends Pick<Author, "name" | "reviewedWorkCount" | "shelfWorkCount"> {
+export interface Props extends Pick<Author, "name"> {
   works: ListItemValue[];
   distinctKinds: readonly string[];
   distinctPublishedYears: readonly string[];
   initialSort: Sort;
   avatarImageProps: AvatarImageProps | null;
+  deck: string;
 }
 
 export const AvatarImageConfig = {
@@ -53,8 +53,7 @@ export interface ListItemValue
 export function Author({
   works,
   name,
-  reviewedWorkCount,
-  shelfWorkCount,
+  deck,
   distinctKinds,
   distinctPublishedYears,
   initialSort,
@@ -84,12 +83,7 @@ export function Author({
             </a>
           }
           name={name}
-          deck={
-            <Deck
-              reviewedWorkCount={reviewedWorkCount}
-              shelfWorkCount={shelfWorkCount}
-            />
-          }
+          deck={deck}
         />
       }
       totalCount={state.filteredValues.length}
@@ -145,43 +139,5 @@ function OtherAuthors({ values }: { values: ListItemValue["otherAuthors"] }) {
     <div className="font-sans text-xs leading-5 text-subtle">
       (with {toSentenceArray(values.map((value) => value.name))})
     </div>
-  );
-}
-
-function Deck({
-  reviewedWorkCount,
-  shelfWorkCount,
-}: {
-  reviewedWorkCount: Author["reviewedWorkCount"];
-  shelfWorkCount: Author["shelfWorkCount"];
-}): JSX.Element {
-  let shelfText = <></>;
-
-  if (shelfWorkCount > 0) {
-    shelfText = (
-      <>
-        {" "}
-        with {shelfWorkCount} on{" "}
-        <a
-          className="underline decoration-2 underline-offset-8 hover:text-accent"
-          href="/shelf/"
-        >
-          the shelf
-        </a>
-      </>
-    );
-  }
-
-  let works = "works";
-
-  if (reviewedWorkCount === 1) {
-    works = "work";
-  }
-
-  return (
-    <>
-      Author of {reviewedWorkCount} reviewed {works}
-      {shelfText}.
-    </>
   );
 }
