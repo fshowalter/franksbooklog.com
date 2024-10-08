@@ -39,7 +39,7 @@ export function filterTools<T, S, G>(
         ...currentState.filters,
       };
 
-      delete filters[key]; // eslint-disable-line @typescript-eslint/no-dynamic-delete
+      delete filters[key];
 
       return applyFilters(filters, currentState);
     },

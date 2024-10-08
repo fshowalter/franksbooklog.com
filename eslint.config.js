@@ -1,11 +1,9 @@
-import { fixupPluginRules } from "@eslint/compat";
 import eslint from "@eslint/js";
+import vitest from "@vitest/eslint-plugin";
 import eslintPluginAstro from "eslint-plugin-astro";
 import react from "eslint-plugin-react";
 import simpleImportSort from "eslint-plugin-simple-import-sort";
 import tailwind from "eslint-plugin-tailwindcss";
-import testingLibrary from "eslint-plugin-testing-library";
-import vitest from "eslint-plugin-vitest";
 import globals from "globals";
 import tsEslint from "typescript-eslint";
 
@@ -39,6 +37,7 @@ export default tsEslint.config(
       parserOptions: {
         project: true,
         tsconfigRootDir: import.meta.dirname,
+        warnOnUnsupportedTypeScriptVersion: false,
       },
     },
     rules: {
@@ -60,7 +59,7 @@ export default tsEslint.config(
     files: ["**/*.tsx"],
     extends: [...tailwind.configs["flat/recommended"]],
     plugins: {
-      react: fixupPluginRules({ rules: react.rules }),
+      react,
     },
     settings: {
       react: {
@@ -79,17 +78,6 @@ export default tsEslint.config(
     },
     rules: {
       ...vitest.configs.recommended.rules,
-    },
-  },
-  {
-    files: ["src/components/**/?(*.)+(spec|test).[jt]s?(x)"],
-    plugins: {
-      "testing-library": fixupPluginRules({
-        rules: testingLibrary.rules,
-      }),
-    },
-    rules: {
-      ...testingLibrary.configs.react.rules,
     },
   },
 );

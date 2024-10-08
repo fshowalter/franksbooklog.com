@@ -9,7 +9,7 @@ chokidar
   .watch(["../booklog/reviews", "../booklog/export", "../booklog/readings"])
   .on("all", (event, sourcePath) => {
     if (event === "add" || event === "change") {
-      console.log(event, sourcePath); // eslint-disable-line no-console
+      console.log(event, sourcePath);
 
       let dest;
       const name = sourcePath.replace(
