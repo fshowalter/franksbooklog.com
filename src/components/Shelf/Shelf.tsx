@@ -88,7 +88,7 @@ export function Shelf({
 
 function ShelfListItem({ value }: { value: ListItemValue }): JSX.Element {
   return (
-    <ListItem>
+    <ListItem background="bg-unreviewed">
       <ListItemCover imageProps={value.coverImageProps} />
       <div className="flex grow flex-col gap-y-1 tablet:w-full tablet:gap-y-2 desktop:pr-4">
         <ListItemTitle title={value.title} />

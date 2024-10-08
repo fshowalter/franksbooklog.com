@@ -120,14 +120,14 @@ function DateListItem({
   const [day, date] = dayAndDate.split("-");
 
   return (
-    <li className="relative flex max-w-screen-max flex-col gap-2 gap-x-4 first:pt-0 odd:bg-stripe tablet:flex-row tablet:items-center tablet:gap-x-8 tablet:px-4 desktop:px-6">
-      <div className="px-container py-1 text-muted tablet:px-0">
-        <div className="flex items-center gap-1 tablet:block tablet:shadow-all">
-          <div className="py-2 uppercase tablet:w-12 tablet:bg-canvas tablet:text-center tablet:text-sm/none">
-            {day}
-          </div>
-          <div className="text-center text-muted tablet:bg-subtle tablet:text-2.5xl/8">
+    <li className="relative flex max-w-screen-max flex-col bg-group last-of-type:pb-12 tablet:mb-12 tablet:flex-row tablet:py-4 tablet:pr-4 tablet:last-of-type:pb-4">
+      <div className="px-container py-4 tablet:px-4 tablet:pt-11 tablet:text-muted">
+        <div className="flex items-center gap-1 tablet:block">
+          <div className="text-center text-2xl text-muted tablet:text-2.5xl/8">
             {date}
+          </div>
+          <div className="ml-1 py-2 font-sans text-xxs/none uppercase text-subtle tablet:ml-0 tablet:w-12 tablet:text-center">
+            {day}
           </div>
         </div>
       </div>
