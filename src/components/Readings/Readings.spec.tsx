@@ -12,7 +12,6 @@ describe("Readings", () => {
     expect.hasAssertions();
     render(<Readings {...props} />);
 
-    // eslint-disable-next-line testing-library/no-unnecessary-act
     await act(async () => {
       await userEvent.type(screen.getByLabelText("Title"), "Dracula");
       await new Promise((r) => setTimeout(r, 500));

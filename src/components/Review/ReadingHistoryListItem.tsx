@@ -75,13 +75,7 @@ function EditionNotes({
   return (
     <span className="font-light tracking-normal text-subtle">
       (
-      <RenderedMarkdown
-        // eslint-disable-next-line react/no-danger
-        text={value}
-        className="leading-none"
-        as="span"
-      />
-      )
+      <RenderedMarkdown text={value} className="leading-none" as="span" />)
     </span>
   );
 }
@@ -154,11 +148,7 @@ function ReadingNotes({
   }
   return (
     <div className="pb-6 text-sm font-light">
-      <RenderedMarkdown
-        className="leading-normal text-muted"
-        // eslint-disable-next-line react/no-danger
-        text={value}
-      />
+      <RenderedMarkdown className="leading-normal text-muted" text={value} />
     </div>
   );
 }
