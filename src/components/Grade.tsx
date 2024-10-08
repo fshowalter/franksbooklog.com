@@ -18,6 +18,10 @@ const gradeMap: Record<string, [string, string]> = {
 };
 
 export function fileForGrade(value: string) {
+  if (!value || value == "Abandoned") {
+    return null;
+  }
+
   const [src] = gradeMap[value];
 
   return src;

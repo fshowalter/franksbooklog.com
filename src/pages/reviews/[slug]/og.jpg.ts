@@ -2,7 +2,7 @@ import path from "node:path";
 
 import type { APIRoute, InferGetStaticPropsType } from "astro";
 import sharp from "sharp";
-import { getOpenGraphBackdropAsBase64String } from "src/api/covers";
+import { getOpenGraphCoverAsBase64String } from "src/api/covers";
 import { allReviews } from "src/api/reviews";
 import { fileForGrade } from "src/components/Grade";
 import { OpenGraphImage } from "src/components/Review/OpenGraphImage";
@@ -28,19 +28,27 @@ type Props = InferGetStaticPropsType<typeof getStaticPaths>;
 export const GET: APIRoute = async function get({ props }) {
   const { work } = props as Props;
 
-  const gradeBuffer = await sharp(
-    path.resolve(`./public${fileForGrade(work.grade)}`),
-  )
-    .resize(240)
-    .toFormat("png")
-    .toBuffer();
+  let gradeString;
+
+  const gradeFile = fileForGrade(work.grade);
+
+  if (gradeFile) {
+    const gradeBuffer = await sharp(
+      path.resolve(`./public${fileForGrade(work.grade)}`),
+    )
+      .resize(240)
+      .toFormat("png")
+      .toBuffer();
+
+    gradeString = `data:${"image/png"};base64,${gradeBuffer.toString("base64")}`;
+  }
 
   const jpeg = await componentToImage(
     OpenGraphImage({
       title: work.title,
       authors: work.authors.map((author) => author.name),
-      backdrop: await getOpenGraphBackdropAsBase64String(work),
-      grade: `data:${"image/png"};base64,${gradeBuffer.toString("base64")}`,
+      cover: await getOpenGraphCoverAsBase64String(work),
+      grade: gradeString,
     }),
   );
 

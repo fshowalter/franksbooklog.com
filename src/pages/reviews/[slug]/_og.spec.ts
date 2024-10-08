@@ -13,6 +13,7 @@ const testSlugs = new Set([
   "extreme-ownership-by-jocko-willink-leif-babin",
   "roadside-pickup-by-richard-laymon",
   "altar-by-philip-fracassi",
+  "living-with-a-seal-by-jesse-itzler",
 ]);
 
 const testReviews = reviews.filter((review) => {

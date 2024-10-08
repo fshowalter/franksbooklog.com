@@ -34,7 +34,7 @@ export async function getStructuredDataCoverSrc(work: Work): Promise<string> {
   return normalizeSources(optimizedImage.src);
 }
 
-export async function getOpenGraphBackdropAsBase64String(work: Work) {
+export async function getOpenGraphCoverAsBase64String(work: Work) {
   const imageBuffer = await sharp(getWorkCoverPath(work))
     .resize(420)
     .toFormat("png")

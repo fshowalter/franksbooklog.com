@@ -3204,6 +3204,11 @@ exports[`Reviews > can filter by kind then show all 1`] = `
               </span>
               2015
             </div>
+            <div
+              class="bg-abandoned p-1 font-sans text-xxs font-semibold uppercase text-[#fff]"
+            >
+              Abandoned
+            </div>
           </div>
         </li>
       </ol>
@@ -8203,6 +8208,11 @@ exports[`Reviews > can filter by year reviewed 1`] = `
               </span>
               2015
             </div>
+            <div
+              class="bg-abandoned p-1 font-sans text-xxs font-semibold uppercase text-[#fff]"
+            >
+              Abandoned
+            </div>
           </div>
         </li>
       </ol>
@@ -11162,6 +11172,11 @@ exports[`Reviews > can filter by year reviewed reversed 1`] = `
                  | 
               </span>
               2015
+            </div>
+            <div
+              class="bg-abandoned p-1 font-sans text-xxs font-semibold uppercase text-[#fff]"
+            >
+              Abandoned
             </div>
           </div>
         </li>
@@ -14679,6 +14694,11 @@ exports[`Reviews > can sort by author z->a 1`] = `
                  | 
               </span>
               2015
+            </div>
+            <div
+              class="bg-abandoned p-1 font-sans text-xxs font-semibold uppercase text-[#fff]"
+            >
+              Abandoned
             </div>
           </div>
         </li>
@@ -18748,6 +18768,11 @@ exports[`Reviews > can sort by date reviewed with newest first 1`] = `
               </span>
               2015
             </div>
+            <div
+              class="bg-abandoned p-1 font-sans text-xxs font-semibold uppercase text-[#fff]"
+            >
+              Abandoned
+            </div>
           </div>
         </li>
       </ol>
@@ -21028,6 +21053,11 @@ exports[`Reviews > can sort by date reviewed with oldest first 1`] = `
                  | 
               </span>
               2015
+            </div>
+            <div
+              class="bg-abandoned p-1 font-sans text-xxs font-semibold uppercase text-[#fff]"
+            >
+              Abandoned
             </div>
           </div>
         </li>
@@ -26961,6 +26991,11 @@ exports[`Reviews > can sort by grade with best first 1`] = `
               </span>
               2015
             </div>
+            <div
+              class="bg-abandoned p-1 font-sans text-xxs font-semibold uppercase text-[#fff]"
+            >
+              Abandoned
+            </div>
           </div>
         </li>
       </ol>
@@ -27031,6 +27066,11 @@ exports[`Reviews > can sort by grade with worst first 1`] = `
                  | 
               </span>
               2015
+            </div>
+            <div
+              class="bg-abandoned p-1 font-sans text-xxs font-semibold uppercase text-[#fff]"
+            >
+              Abandoned
             </div>
           </div>
         </li>
@@ -32819,6 +32859,11 @@ exports[`Reviews > can sort by title a->z 1`] = `
               </span>
               2015
             </div>
+            <div
+              class="bg-abandoned p-1 font-sans text-xxs font-semibold uppercase text-[#fff]"
+            >
+              Abandoned
+            </div>
           </div>
         </li>
       </ol>
@@ -35719,6 +35764,11 @@ exports[`Reviews > can sort by title z->a 1`] = `
                  | 
               </span>
               2015
+            </div>
+            <div
+              class="bg-abandoned p-1 font-sans text-xxs font-semibold uppercase text-[#fff]"
+            >
+              Abandoned
             </div>
           </div>
         </li>
@@ -39585,6 +39635,11 @@ exports[`Reviews > can sort by year published with newest first 1`] = `
                  | 
               </span>
               2015
+            </div>
+            <div
+              class="bg-abandoned p-1 font-sans text-xxs font-semibold uppercase text-[#fff]"
+            >
+              Abandoned
             </div>
           </div>
         </li>
@@ -44117,6 +44172,11 @@ exports[`Reviews > can sort by year published with oldest first 1`] = `
               </span>
               2015
             </div>
+            <div
+              class="bg-abandoned p-1 font-sans text-xxs font-semibold uppercase text-[#fff]"
+            >
+              Abandoned
+            </div>
           </div>
         </li>
         <li
@@ -48317,6 +48377,11 @@ exports[`Reviews > renders 1`] = `
                                   </span>
                                   2015
                                 </div>
+                                <div
+                                  class="bg-abandoned p-1 font-sans text-xxs font-semibold uppercase text-[#fff]"
+                                >
+                                  Abandoned
+                                </div>
                               </div>
                             </li>
                           </ol>
@@ -50434,6 +50499,11 @@ exports[`Reviews > sorts abandoned readings first 1`] = `
                  | 
               </span>
               2015
+            </div>
+            <div
+              class="bg-abandoned p-1 font-sans text-xxs font-semibold uppercase text-[#fff]"
+            >
+              Abandoned
             </div>
           </div>
         </li>

@@ -3,13 +3,13 @@ import { toSentenceArray } from "src/utils";
 export function OpenGraphImage({
   title,
   authors,
-  backdrop,
+  cover,
   grade,
 }: {
   title: string;
   authors: string[];
-  backdrop: string;
-  grade: string;
+  cover: string;
+  grade: string | undefined;
 }): JSX.Element {
   return (
     <div
@@ -21,7 +21,7 @@ export function OpenGraphImage({
       }}
     >
       <img
-        src={backdrop}
+        src={cover}
         style={{
           objectFit: "cover",
         }}
@@ -40,6 +40,7 @@ export function OpenGraphImage({
           width: "780px",
           height: "630px",
           backgroundColor: "#252525",
+          alignItems: "flex-start",
         }}
       >
         <div
@@ -79,12 +80,27 @@ export function OpenGraphImage({
         >
           by {toSentenceArray(authors)}
         </div>
-        <img
-          src={grade}
-          height={48}
-          width={240}
-          style={{ marginTop: "36px" }}
-        />
+        {grade ? (
+          <img
+            src={grade}
+            height={48}
+            width={240}
+            style={{ marginTop: "36px" }}
+          />
+        ) : (
+          <div
+            style={{
+              fontFamily: "ArgentumSans",
+              color: "white",
+              backgroundColor: "red",
+              textTransform: "uppercase",
+              marginTop: "36px",
+              padding: "4px",
+            }}
+          >
+            Abandoned
+          </div>
+        )}
       </div>
     </div>
   );

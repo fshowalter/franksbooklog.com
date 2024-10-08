@@ -103,8 +103,21 @@ function ReviewsListItem({ value }: { value: ListItemValue }): JSX.Element {
         />
         <ListItemKindAndYear year={value.yearPublished} kind={value.kind} />
         <Grade value={value.grade} height={16} />
+        <Abandoned value={value.grade} />
       </div>
     </ListItem>
+  );
+}
+
+function Abandoned({ value }: { value: string }) {
+  if (value !== "Abandoned") {
+    return null;
+  }
+
+  return (
+    <div className="bg-abandoned p-1 font-sans text-xxs font-semibold uppercase text-[#fff]">
+      Abandoned
+    </div>
   );
 }
 
