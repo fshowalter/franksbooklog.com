@@ -8,19 +8,16 @@ export const ListItemAvatarImageConfig = {
 };
 
 export function ListItemAvatar({
-  name,
   imageProps,
   className,
   fill,
 }: {
-  name: string;
   imageProps: AvatarImageProps | null;
   className?: string;
   fill?: string;
 }) {
   const avatar = (
     <Avatar
-      name={name}
       imageProps={imageProps}
       width={ListItemAvatarImageConfig.width}
       height={ListItemAvatarImageConfig.height}

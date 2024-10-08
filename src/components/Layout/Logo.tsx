@@ -1,6 +1,6 @@
 import { ccn } from "src/utils/concatClassNames";
 
-export function Logo({ className }: { className: string }) {
+export function Logo({ className }: { className?: string }) {
   return (
     <div className={ccn("flex flex-col", className)}>
       <div

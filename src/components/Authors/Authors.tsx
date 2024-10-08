@@ -57,11 +57,7 @@ export function Authors({ values, initialSort, deck }: Props): JSX.Element {
 function AuthorListItem({ value }: { value: ListItemValue }): JSX.Element {
   return (
     <ListItem itemsCenter={true} extraVerticalPadding={true}>
-      <ListItemAvatar
-        name={value.name}
-        imageProps={value.avatarImageProps}
-        fill={value.reviewedWorkCount > 0 ? undefined : "var(--bg-subtle)"}
-      />
+      <ListItemAvatar imageProps={value.avatarImageProps} />
       <AuthorName
         value={value.name}
         slug={value.reviewedWorkCount > 0 ? value.slug : null}

@@ -16,7 +16,7 @@ export function Avatar({
   ...rest
 }: AvatarProps): JSX.Element {
   if (imageProps) {
-    return <img {...imageProps} {...rest} className={className} />;
+    return <img {...imageProps} alt="" {...rest} className={className} />;
   }
 
   return (
