@@ -33,7 +33,10 @@ export function ListWithFiltersLayout({
               <div className="relative z-10 row-start-1 bg-default text-xs tablet:-mx-12 tablet:px-0 tablet-landscape:col-span-3 tablet-landscape:mx-0 tablet-landscape:w-full">
                 <ListHeader
                   totalCount={totalCount}
-                  onToggleFilters={() => toggleFilters(!filtersVisible)}
+                  onToggleFilters={() => {
+                    console.log("boo");
+                    toggleFilters(!filtersVisible);
+                  }}
                   filtersVisible={filtersVisible}
                   listHeaderButtons={listHeaderButtons}
                 />

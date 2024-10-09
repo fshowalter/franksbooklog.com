@@ -38,7 +38,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg-accent: #c86666;
+    --bg-accent: #5e2417;
     --bg-canvas: #484745;
     --bg-default-alpha: 0.5;
     --bg-default-rgb: 50, 47, 47;
@@ -46,6 +46,7 @@
     --bg-inverse: #322f2f;
     --bg-progress: #379634;
     --bg-stripe: #3c393a;
+    --bg-unreviewed: #3c393a;
     --bg-group: #3c393a;
     --bg-subtle: #373434;
     --border-accent: #499ef8;
