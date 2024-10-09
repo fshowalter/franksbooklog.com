@@ -724,7 +724,7 @@ exports[`Home > matches snapshot 1`] = `
                       class="font-sans text-sm text-muted"
                     >
                       <a
-                        class="text-accent"
+                        class="inline-block font-normal leading-6 text-accent"
                         href="/authors/philip-fracassi/"
                       >
                         Philip Fracassi
@@ -1271,7 +1271,7 @@ exports[`Home > matches snapshot 1`] = `
                       class="font-sans text-sm text-muted"
                     >
                       <a
-                        class="text-accent"
+                        class="inline-block font-normal leading-6 text-accent"
                         href="/authors/richard-laymon/"
                       >
                         Richard Laymon
@@ -1506,7 +1506,7 @@ exports[`Home > matches snapshot 1`] = `
                       class="font-sans text-sm text-muted"
                     >
                       <a
-                        class="text-accent"
+                        class="inline-block font-normal leading-6 text-accent"
                         href="/authors/stephen-king/"
                       >
                         Stephen King
@@ -1741,7 +1741,7 @@ exports[`Home > matches snapshot 1`] = `
                       class="font-sans text-sm text-muted"
                     >
                       <a
-                        class="text-accent"
+                        class="inline-block font-normal leading-6 text-accent"
                         href="/authors/ian-fleming/"
                       >
                         Ian Fleming
@@ -1898,7 +1898,7 @@ exports[`Home > matches snapshot 1`] = `
                       class="font-sans text-sm text-muted"
                     >
                       <a
-                        class="text-accent"
+                        class="inline-block font-normal leading-6 text-accent"
                         href="/authors/stephen-morris/"
                       >
                         Stephen Morris
@@ -2055,7 +2055,7 @@ exports[`Home > matches snapshot 1`] = `
                       class="font-sans text-sm text-muted"
                     >
                       <a
-                        class="text-accent"
+                        class="inline-block font-normal leading-6 text-accent"
                         href="/authors/bret-easton-ellis/"
                       >
                         Bret Easton Ellis
@@ -2173,7 +2173,7 @@ exports[`Home > matches snapshot 1`] = `
                       class="font-sans text-sm text-muted"
                     >
                       <a
-                        class="text-accent"
+                        class="inline-block font-normal leading-6 text-accent"
                         href="/authors/chuck-palahniuk/"
                       >
                         Chuck Palahniuk
