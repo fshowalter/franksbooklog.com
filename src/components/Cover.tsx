@@ -19,6 +19,7 @@ export function Cover({
     <img
       {...imageProps}
       {...rest}
+      alt=""
       loading={loading}
       decoding={decoding}
       style={{ aspectRatio: "0.66666667" }}
