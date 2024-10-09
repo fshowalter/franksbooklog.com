@@ -28,10 +28,6 @@ const { year } = Astro.props;
 const props = await getProps(year);
 ---
 
-<Layout
-  title={`${props.year} Stats`}
-  description={props.deck}
-  image={`/readings/stats/${props.year}/og.jpg`}
->
+<Layout title={`${props.year} Stats`} description={props.deck}>
   <YearStats {...props} />
 </Layout>

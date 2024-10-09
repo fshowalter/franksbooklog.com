@@ -6,10 +6,6 @@ import Layout from "src/layouts/Layout.astro";
 const props = await getProps();
 ---
 
-<Layout
-  title="All-Time Stats"
-  description={props.deck}
-  image="/readings/stats/og.jpg"
->
+<Layout title="All-Time Stats" description={props.deck}>
   <AlltimeStats {...props} />
 </Layout>
