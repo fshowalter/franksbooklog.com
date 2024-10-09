@@ -5,7 +5,7 @@ import { KindDistribution } from "src/components/KindDistribution";
 import { MostReadAuthors } from "src/components/MostReadAuthors";
 import { StatsNavigation } from "src/components/StatsNavigation";
 
-import { StatsBackdrop } from "../Backdrop";
+import { SolidBackdrop } from "../Backdrop";
 import { Layout } from "../Layout";
 import { Callouts } from "./Callouts";
 
@@ -26,7 +26,7 @@ export function YearStats({
 }: Props): JSX.Element {
   return (
     <Layout className="flex flex-col items-center bg-subtle">
-      <StatsBackdrop
+      <SolidBackdrop
         breadcrumb={
           <a
             className="decoration-2 underline-offset-8 hover:text-accent hover:underline"
@@ -37,21 +37,20 @@ export function YearStats({
         }
         title={`${year} Stats`}
         deck={deck}
-      >
-        <StatsNavigation
-          currentYear={year}
-          linkFunc={(year: string) => {
-            if (year === "all") {
-              return "/readings/stats/";
-            }
+      />
+      <StatsNavigation
+        currentYear={year}
+        linkFunc={(year: string) => {
+          if (year === "all") {
+            return "/readings/stats/";
+          }
 
-            return `/readings/stats/${year}/`;
-          }}
-          years={distinctStatYears}
-          className="mb-8"
-        />
-        <Callouts workCount={stats.workCount} bookCount={stats.bookCount} />
-      </StatsBackdrop>
+          return `/readings/stats/${year}/`;
+        }}
+        years={distinctStatYears}
+        className="mb-12 w-full"
+      />
+      <Callouts workCount={stats.workCount} bookCount={stats.bookCount} />
       <div className="mx-auto flex w-full max-w-screen-max flex-col items-stretch gap-y-8 py-10 tablet:px-container">
         <div className="mx-auto flex w-full flex-col gap-y-8 desktop:max-w-[calc(66%_+_24px)]">
           <MostReadAuthors values={mostReadAuthors} />

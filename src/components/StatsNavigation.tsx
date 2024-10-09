@@ -7,18 +7,20 @@ function AllTimeLink({
   currentYear: string;
   linkFunc: (year: string) => string;
 }): JSX.Element {
-  if (!currentYear || currentYear === "all") {
-    return <></>;
-  }
-
   return (
-    <li className="block">
-      <a
-        className="decoration-1 underline-offset-8 opacity-75 hover:text-accent hover:underline hover:opacity-100"
-        href={linkFunc("all")}
-      >
-        All-Time
-      </a>
+    <li
+      className={`text-center ${"all" === currentYear ? "bg-subtle text-default" : "text-inverse"}`}
+    >
+      {"all" === currentYear ? (
+        <div className="whitespace-nowrap p-4 desktop:py-4">All-Time</div>
+      ) : (
+        <a
+          className="block whitespace-nowrap p-4 hover:bg-default hover:text-default desktop:py-4"
+          href={linkFunc("all")}
+        >
+          All-Time
+        </a>
+      )}
     </li>
   );
 }
@@ -32,18 +34,20 @@ function YearLink({
   currentYear: string;
   linkFunc: (y: string) => string;
 }): JSX.Element | null {
-  if (year === currentYear) {
-    return <li className="block font-medium">{year}</li>;
-  }
-
   return (
-    <li className="block">
-      <a
-        className="decoration-1 underline-offset-8 opacity-75 hover:text-accent hover:underline hover:opacity-100"
-        href={linkFunc(year)}
-      >
-        {year}
-      </a>
+    <li
+      className={`text-center ${year === currentYear ? "bg-subtle text-default" : "text-inverse"}`}
+    >
+      {year === currentYear ? (
+        <div className="p-4 desktop:py-4">{year}</div>
+      ) : (
+        <a
+          className="block p-4 hover:bg-subtle hover:text-accent"
+          href={linkFunc(year)}
+        >
+          {year}
+        </a>
+      )}
     </li>
   );
 }
@@ -60,23 +64,20 @@ export function StatsNavigation({
   className?: string;
 }): JSX.Element {
   return (
-    <ul
-      className={ccn(
-        "flex flex-wrap justify-center gap-x-4 gap-y-2 text-md desktop:text-xl",
-        className,
-      )}
-    >
-      <AllTimeLink currentYear={currentYear} linkFunc={linkFunc} />
-      {[...years].reverse().map((year) => {
-        return (
-          <YearLink
-            key={year}
-            year={year}
-            currentYear={currentYear}
-            linkFunc={linkFunc}
-          />
-        );
-      })}
-    </ul>
+    <nav className={ccn("bg-accent", className)}>
+      <ul className="mx-auto flex max-w-screen-max overflow-x-auto px-container font-sans text-sm font-normal tracking-wide desktop:justify-center">
+        <AllTimeLink currentYear={currentYear} linkFunc={linkFunc} />
+        {[...years].reverse().map((year) => {
+          return (
+            <YearLink
+              key={year}
+              year={year}
+              currentYear={currentYear}
+              linkFunc={linkFunc}
+            />
+          );
+        })}
+      </ul>
+    </nav>
   );
 }

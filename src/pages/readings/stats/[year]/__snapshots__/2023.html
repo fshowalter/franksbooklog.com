@@ -161,7 +161,7 @@
             class="min-h-[240px] desktop:min-h-[clamp(640px,50vh,1350px)] relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pb-8 pt-40 tablet:pb-10 tablet:pt-40 desktop:pb-16 desktop:pt-40"
           >
             <div
-              class="items-center z-10 mx-auto flex w-full max-w-screen-max flex-col px-container"
+              class="z-10 mx-auto flex w-full max-w-screen-max flex-col px-container"
             >
               <p
                 class="mb-2 font-sans text-sm uppercase tracking-wide text-subtle"
@@ -172,64 +172,64 @@
                   >Reading Log</a
                 >
               </p>
-              <h1 class="mb-4 text-4xl desktop:text-7xl">2023 Stats</h1>
-              <p
-                class="mb-6 text-center font-sans text-xs uppercase tracking-wide text-subtle"
+              <h1
+                class="font-sans text-3xl font-bold uppercase tracking-widest tablet:text-4xl tablet-landscape:text-5xl desktop:text-7xl"
               >
+                2023 Stats
+              </h1>
+              <p class="mt-1 text-base desktop:my-4 desktop:text-xl">
                 A Year in Review
               </p>
-              <ul
-                class="flex flex-wrap justify-center gap-x-4 gap-y-2 text-md desktop:text-xl mb-8"
-              >
-                <li class="block">
-                  <a
-                    class="decoration-1 underline-offset-8 opacity-75 hover:text-accent hover:underline hover:opacity-100"
-                    href="/readings/stats/"
-                    >All-Time</a
-                  >
-                </li>
-                <li class="block">
-                  <a
-                    class="decoration-1 underline-offset-8 opacity-75 hover:text-accent hover:underline hover:opacity-100"
-                    href="/readings/stats/2024/"
-                    >2024</a
-                  >
-                </li>
-                <li class="block font-medium">2023</li>
-                <li class="block">
-                  <a
-                    class="decoration-1 underline-offset-8 opacity-75 hover:text-accent hover:underline hover:opacity-100"
-                    href="/readings/stats/2022/"
-                    >2022</a
-                  >
-                </li>
-              </ul>
-              <div
-                class="flex flex-wrap justify-center gap-6 desktop:flex-nowrap"
-              >
-                <div
-                  class="flex size-36 flex-col justify-center rounded-full bg-subtle text-center text-default shadow-all"
-                >
-                  <div class="text-[2rem] leading-8">10</div>
-                  <div
-                    class="font-sans text-sm font-light leading-6 text-subtle"
-                  >
-                    Titles
-                  </div>
-                </div>
-                <div
-                  class="flex size-36 flex-col justify-center rounded-full bg-subtle text-center text-default shadow-all"
-                >
-                  <div class="text-[2rem] leading-8">8</div>
-                  <div
-                    class="font-sans text-sm font-light leading-6 text-subtle"
-                  >
-                    Books
-                  </div>
-                </div>
-              </div>
             </div>
           </header>
+          <nav class="bg-accent mb-12 w-full">
+            <ul
+              class="mx-auto flex max-w-screen-max overflow-x-auto px-container font-sans text-sm font-normal tracking-wide desktop:justify-center"
+            >
+              <li class="text-center text-inverse">
+                <a
+                  class="block whitespace-nowrap p-4 hover:bg-default hover:text-default desktop:py-4"
+                  href="/readings/stats/"
+                  >All-Time</a
+                >
+              </li>
+              <li class="text-center text-inverse">
+                <a
+                  class="block p-4 hover:bg-subtle hover:text-accent"
+                  href="/readings/stats/2024/"
+                  >2024</a
+                >
+              </li>
+              <li class="text-center bg-subtle text-default">
+                <div class="p-4 desktop:py-4">2023</div>
+              </li>
+              <li class="text-center text-inverse">
+                <a
+                  class="block p-4 hover:bg-subtle hover:text-accent"
+                  href="/readings/stats/2022/"
+                  >2022</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="flex flex-wrap justify-center gap-6 desktop:flex-nowrap">
+            <div
+              class="flex size-36 flex-col justify-center rounded-full bg-stripe text-center text-default shadow-all"
+            >
+              <div class="text-[2rem] leading-8">10</div>
+              <div class="font-sans text-sm font-light leading-6 text-subtle">
+                Titles
+              </div>
+            </div>
+            <div
+              class="flex size-36 flex-col justify-center rounded-full bg-stripe text-center text-default shadow-all"
+            >
+              <div class="text-[2rem] leading-8">8</div>
+              <div class="font-sans text-sm font-light leading-6 text-subtle">
+                Books
+              </div>
+            </div>
+          </div>
           <div
             class="mx-auto flex w-full max-w-screen-max flex-col items-stretch gap-y-8 py-10 tablet:px-container"
           >
@@ -256,10 +256,12 @@
                         2
                       </div>
                     </div>
-                    <div class="col-span-2 row-start-2 bg-subtle">
-                      <details class="bg-subtle tablet:px-2">
+                    <div
+                      class="col-span-2 row-start-2 px-container tablet:px-0"
+                    >
+                      <details class="bg-group tablet:px-2">
                         <summary
-                          class="cursor-pointer px-container py-1 font-sans text-sm text-subtle tablet:px-0"
+                          class="cursor-pointer px-4 py-1 font-sans text-sm text-subtle tablet:px-0"
                         >
                           Details
                         </summary>
@@ -285,24 +287,21 @@
                                 class="aspect-cover"
                               />
                             </div>
-                            <div class="grow">
+                            <div class="flex grow flex-col gap-y-1">
                               <a
                                 href="/reviews/sacculina-by-philip-fracassi/"
                                 class="block font-sans text-sm font-medium text-accent decoration-accent decoration-2 underline-offset-4 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 hover:underline hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
                                 >Sacculina</a
                               >
                               <div
-                                class="font-sans text-xs font-light leading-4 text-subtle"
+                                class="-mt-px font-sans text-xs font-light text-muted"
                               >
-                                <span
-                                  >Novella<!-- -->
-                                  | </span
-                                >2017
+                                2023-10-09
                               </div>
-                              <div class="text-base leading-4 text-subtle">
-                                Kindle<!-- -->
-                                on
-                                <!-- -->October 9, 2023
+                              <div
+                                class="mt-1 font-sans text-xs font-light text-muted"
+                              >
+                                Kindle
                               </div>
                             </div>
                           </li>
@@ -327,24 +326,21 @@
                                 class="aspect-cover"
                               />
                             </div>
-                            <div class="grow">
+                            <div class="flex grow flex-col gap-y-1">
                               <a
                                 href="/reviews/dont-let-them-get-you-down-by-philip-fracassi/"
                                 class="block font-sans text-sm font-medium text-accent decoration-accent decoration-2 underline-offset-4 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 hover:underline hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
                                 >Don&#x27;t Let Them Get You Down</a
                               >
                               <div
-                                class="font-sans text-xs font-light leading-4 text-subtle"
+                                class="-mt-px font-sans text-xs font-light text-muted"
                               >
-                                <span
-                                  >Novel<!-- -->
-                                  | </span
-                                >2022
+                                2023-10-29
                               </div>
-                              <div class="text-base leading-4 text-subtle">
-                                Kindle<!-- -->
-                                on
-                                <!-- -->October 29, 2023
+                              <div
+                                class="mt-1 font-sans text-xs font-light text-muted"
+                              >
+                                Kindle
                               </div>
                             </div>
                           </li>
@@ -365,10 +361,12 @@
                         2
                       </div>
                     </div>
-                    <div class="col-span-2 row-start-2 bg-subtle">
-                      <details class="bg-subtle tablet:px-2">
+                    <div
+                      class="col-span-2 row-start-2 px-container tablet:px-0"
+                    >
+                      <details class="bg-group tablet:px-2">
                         <summary
-                          class="cursor-pointer px-container py-1 font-sans text-sm text-subtle tablet:px-0"
+                          class="cursor-pointer px-4 py-1 font-sans text-sm text-subtle tablet:px-0"
                         >
                           Details
                         </summary>
@@ -394,24 +392,21 @@
                                 class="aspect-cover"
                               />
                             </div>
-                            <div class="grow">
+                            <div class="flex grow flex-col gap-y-1">
                               <a
                                 href="/reviews/record-play-pause-by-stephen-morris/"
                                 class="block font-sans text-sm font-medium text-accent decoration-accent decoration-2 underline-offset-4 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 hover:underline hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
                                 >Record Play Pause</a
                               >
                               <div
-                                class="font-sans text-xs font-light leading-4 text-subtle"
+                                class="-mt-px font-sans text-xs font-light text-muted"
                               >
-                                <span
-                                  >Nonfiction<!-- -->
-                                  | </span
-                                >2019
+                                2023-11-11
                               </div>
-                              <div class="text-base leading-4 text-subtle">
-                                Audible<!-- -->
-                                on
-                                <!-- -->November 11, 2023
+                              <div
+                                class="mt-1 font-sans text-xs font-light text-muted"
+                              >
+                                Audible
                               </div>
                             </div>
                           </li>
@@ -436,24 +431,21 @@
                                 class="aspect-cover"
                               />
                             </div>
-                            <div class="grow">
+                            <div class="flex grow flex-col gap-y-1">
                               <a
                                 href="/reviews/fast-forward-by-stephen-morris/"
                                 class="block font-sans text-sm font-medium text-accent decoration-accent decoration-2 underline-offset-4 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 hover:underline hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
                                 >Fast Forward</a
                               >
                               <div
-                                class="font-sans text-xs font-light leading-4 text-subtle"
+                                class="-mt-px font-sans text-xs font-light text-muted"
                               >
-                                <span
-                                  >Nonfiction<!-- -->
-                                  | </span
-                                >2020
+                                2023-12-09
                               </div>
-                              <div class="text-base leading-4 text-subtle">
-                                Audible<!-- -->
-                                on
-                                <!-- -->December 9, 2023
+                              <div
+                                class="mt-1 font-sans text-xs font-light text-muted"
+                              >
+                                Audible
                               </div>
                             </div>
                           </li>
