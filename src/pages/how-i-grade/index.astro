@@ -12,12 +12,7 @@ const props = await getProps({
 });
 ---
 
-<Layout
-  title={props.title}
-  description={deck}
-  image="/how-i-grade/og.jpg"
-  article
->
+<Layout title={props.title} description={deck} article>
   <div data-pagefind-body>
     <Article {...props} />
   </div>

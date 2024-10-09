@@ -20,6 +20,9 @@ describe("/readings/stats/:year", () => {
       const result = await container.renderToString(
         YearStats as AstroComponentFactory,
         {
+          request: new Request(
+            `https://www.franksbooklog.com/readings/stats/${year}/`,
+          ),
           props: { year: year },
         },
       );

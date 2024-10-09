@@ -6,9 +6,6 @@ import Layout from "src/layouts/Layout.astro";
 const props = await getProps();
 ---
 
-<Layout
-  title="Reviews"
-  description="A sortable and filterable list of every book or short story I've read and reviewed since 2022."
->
+<Layout title="Reviews" description={props.deck}>
   <Reviews client:load {...props} />
 </Layout>

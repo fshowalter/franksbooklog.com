@@ -17,7 +17,9 @@ describe("/authors/", () => {
     });
     const result = await container.renderToString(
       Index as AstroComponentFactory,
-      {},
+      {
+        request: new Request(`https://www.franksbooklog.com/authors/`),
+      },
     );
 
     void expect(

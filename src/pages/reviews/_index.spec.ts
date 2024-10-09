@@ -5,16 +5,20 @@ import { loadRenderers } from "astro:container";
 import * as prettier from "prettier";
 import { describe, it } from "vitest";
 
-import Page from "./index.astro";
+import Index from "./index.astro";
 
-describe("/gone", () => {
-  it("matches snapshot", { timeout: 40000 }, async ({ expect }) => {
+describe("/reviews/", () => {
+  it("matches snapshot", { timeout: 10000 }, async ({ expect }) => {
     const renderers = await loadRenderers([reactContainerRenderer()]);
     const container = await AstroContainer.create({ renderers });
+    container.addClientRenderer({
+      name: "@astrojs/react",
+      entrypoint: "@astrojs/react/client.js",
+    });
     const result = await container.renderToString(
-      Page as AstroComponentFactory,
+      Index as AstroComponentFactory,
       {
-        request: new Request(`https://www.franksbooklog.com/gone/`),
+        request: new Request(`https://www.franksbooklog.com/reviews/`),
       },
     );
 
