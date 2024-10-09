@@ -360,7 +360,7 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
                       class="font-sans text-sm text-muted"
                     >
                       <a
-                        class="text-accent"
+                        class="inline-block font-normal leading-6 text-accent"
                         href="/authors/philip-fracassi/"
                       >
                         Philip Fracassi
@@ -790,7 +790,7 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
                       class="font-sans text-sm text-muted"
                     >
                       <a
-                        class="text-accent"
+                        class="inline-block font-normal leading-6 text-accent"
                         href="/authors/richard-laymon/"
                       >
                         Richard Laymon
@@ -986,7 +986,7 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
                       class="font-sans text-sm text-muted"
                     >
                       <a
-                        class="text-accent"
+                        class="inline-block font-normal leading-6 text-accent"
                         href="/authors/stephen-king/"
                       >
                         Stephen King
@@ -1182,7 +1182,7 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
                       class="font-sans text-sm text-muted"
                     >
                       <a
-                        class="text-accent"
+                        class="inline-block font-normal leading-6 text-accent"
                         href="/authors/ian-fleming/"
                       >
                         Ian Fleming
@@ -1339,7 +1339,7 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
                       class="font-sans text-sm text-muted"
                     >
                       <a
-                        class="text-accent"
+                        class="inline-block font-normal leading-6 text-accent"
                         href="/authors/bret-easton-ellis/"
                       >
                         Bret Easton Ellis
@@ -1457,7 +1457,7 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
                       class="font-sans text-sm text-muted"
                     >
                       <a
-                        class="text-accent"
+                        class="inline-block font-normal leading-6 text-accent"
                         href="/authors/chuck-palahniuk/"
                       >
                         Chuck Palahniuk
@@ -2580,7 +2580,7 @@ exports[`YearStats > matches snapshot for slug 2023 1`] = `
                       class="font-sans text-sm text-muted"
                     >
                       <a
-                        class="text-accent"
+                        class="inline-block font-normal leading-6 text-accent"
                         href="/authors/philip-fracassi/"
                       >
                         Philip Fracassi
@@ -2698,7 +2698,7 @@ exports[`YearStats > matches snapshot for slug 2023 1`] = `
                       class="font-sans text-sm text-muted"
                     >
                       <a
-                        class="text-accent"
+                        class="inline-block font-normal leading-6 text-accent"
                         href="/authors/stephen-morris/"
                       >
                         Stephen Morris

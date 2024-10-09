@@ -77,7 +77,10 @@ export function MostReadAuthors({
 function Name({ value }: { value: MostReadAuthorsValue }): JSX.Element {
   if (value.slug) {
     return (
-      <a className="text-accent" href={`/authors/${value.slug}/`}>
+      <a
+        className="inline-block font-normal leading-6 text-accent"
+        href={`/authors/${value.slug}/`}
+      >
         {value.name}
       </a>
     );
