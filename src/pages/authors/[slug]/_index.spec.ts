@@ -10,7 +10,12 @@ import Review from "./index.astro";
 
 const authors = await allAuthors();
 
-const testSlugs = ["jesse-itzler", "arnold-schwarzenegger", "richard-laymon"];
+const testSlugs = [
+  "jesse-itzler",
+  "arnold-schwarzenegger",
+  "richard-laymon",
+  "stephen-king",
+];
 
 const testAuthors = authors.filter((author) => testSlugs.includes(author.slug));
 
@@ -29,6 +34,9 @@ describe("/authors/:slug", () => {
       const result = await container.renderToString(
         Review as AstroComponentFactory,
         {
+          request: new Request(
+            `https://www.franksbooklog.com/authors/${author.slug}/`,
+          ),
           props: { slug: author.slug },
         },
       );

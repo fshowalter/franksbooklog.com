@@ -2,21 +2,19 @@
 import "./base.css";
 import "@pagefind/default-ui/css/ui.css";
 
-interface Props {
+type Props = {
   title: string;
   description: string;
-  image?: string | null;
   article?: boolean;
-}
+};
 
 const siteMeta = {
   author: "Frank Showalter",
-  url: "https://www.franksbooklog.com/",
-  image: "/assets/default_og.jpg",
+  url: "https://www.franksbooklog.com",
   title: "Frank's Book Log",
 };
 
-const { title, description, image, article = false } = Astro.props;
+const { title, description, article = false } = Astro.props;
 let pageTitle;
 
 if (title.startsWith(siteMeta.title)) {
@@ -24,8 +22,6 @@ if (title.startsWith(siteMeta.title)) {
 } else {
   pageTitle = `${title} | ${siteMeta.title}`;
 }
-
-const ogImage = image || "https://www.franksbooklog.com/assets/default_og.jpg";
 
 const pathname = new URL(Astro.request.url).pathname;
 ---
@@ -41,7 +37,7 @@ const pathname = new URL(Astro.request.url).pathname;
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="sitemap" href="/sitemap-index.xml" />
     <meta name="description" content={description} />
-    <meta name="og:image" content={ogImage} />
+    <meta name="og:image" content={`${siteMeta.url}${pathname}og.jpg`} />
     <meta property="og:url" content={`${siteMeta.url}${pathname}`} />
     {article && <meta property="og:type" content="article" />}
     <meta property="og:title" content={title} />

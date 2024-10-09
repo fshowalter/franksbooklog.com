@@ -46,6 +46,7 @@ export async function getProps(): Promise<Props> {
   );
 
   return {
+    deck: `"I intend to put up with nothing that I can put down."`,
     values,
     distinctKinds,
     distinctPublishedYears,

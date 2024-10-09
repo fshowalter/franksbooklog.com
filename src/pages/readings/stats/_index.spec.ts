@@ -13,7 +13,9 @@ describe("/readings/stats", () => {
     const container = await AstroContainer.create({ renderers });
     const result = await container.renderToString(
       Index as AstroComponentFactory,
-      {},
+      {
+        request: new Request(`https://www.franksbooklog.com/readings/stats/`),
+      },
     );
 
     void expect(

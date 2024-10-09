@@ -13,7 +13,9 @@ describe("/gone", () => {
     const container = await AstroContainer.create({ renderers });
     const result = await container.renderToString(
       Page as AstroComponentFactory,
-      {},
+      {
+        request: new Request(`https://www.franksbooklog.com/gone/`),
+      },
     );
 
     void expect(

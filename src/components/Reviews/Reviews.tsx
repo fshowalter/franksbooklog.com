@@ -21,6 +21,7 @@ export interface Props {
   distinctReviewYears: readonly string[];
   distinctKinds: readonly string[];
   initialSort: Sort;
+  deck: string;
 }
 
 interface Author extends Pick<Review["authors"][0], "name" | "sortName"> {}
@@ -47,6 +48,7 @@ export function Reviews({
   distinctReviewYears,
   distinctKinds,
   initialSort,
+  deck,
 }: Props): JSX.Element {
   const [state, dispatch] = useReducer(
     reducer,
@@ -59,12 +61,7 @@ export function Reviews({
 
   return (
     <ListWithFiltersLayout
-      backdrop={
-        <SolidBackdrop
-          title="Reviews"
-          deck={`"I intend to put up with nothing that I can put down."`}
-        />
-      }
+      backdrop={<SolidBackdrop title="Reviews" deck={deck} />}
       totalCount={state.filteredValues.length}
       filters={
         <Filters
