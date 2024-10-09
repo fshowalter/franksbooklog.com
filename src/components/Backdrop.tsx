@@ -68,7 +68,7 @@ function Wrapper({
 
   const largeSizes = "min-h-[90vh] max-h-[1350px]";
 
-  const smallSizes = "min-h-[240px] desktop:min-h-[clamp(640px,50vh,1350px)]";
+  const smallSizes = "min-h-[clamp(340px,50vh,1350px)]";
 
   const sizes =
     size === "large"

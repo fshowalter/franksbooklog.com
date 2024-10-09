@@ -45096,7 +45096,7 @@ exports[`Shelf > renders 1`] = `
         id="content"
       >
         <header
-          class="min-h-[240px] desktop:min-h-[clamp(640px,50vh,1350px)] relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pb-8 pt-40 tablet:pb-10 tablet:pt-40 desktop:pb-16 desktop:pt-40"
+          class="min-h-[clamp(340px,50vh,1350px)] relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pb-8 pt-40 tablet:pb-10 tablet:pt-40 desktop:pb-16 desktop:pt-40"
         >
           <div
             class=" z-10 mx-auto flex w-full max-w-screen-max flex-col px-container"
@@ -50014,7 +50014,7 @@ exports[`Shelf > renders 1`] = `
             To the top
           </a>
           <p
-            class="w-full font-normal leading-4 text-inverse-subtle"
+            class="w-full font-normal leading-5 text-inverse-subtle"
           >
             All covers used in accordance with the 
             <a

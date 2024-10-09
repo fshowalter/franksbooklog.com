@@ -225,7 +225,7 @@ exports[`Home > matches snapshot 1`] = `
         id="content"
       >
         <header
-          class="min-h-[240px] desktop:min-h-[clamp(640px,50vh,1350px)] relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pb-8 pt-40 tablet:pb-10 tablet:pt-40 desktop:pb-16 desktop:pt-40"
+          class="min-h-[clamp(340px,50vh,1350px)] relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pb-8 pt-40 tablet:pb-10 tablet:pt-40 desktop:pb-16 desktop:pt-40"
         >
           <div
             class=" z-10 mx-auto flex w-full max-w-screen-max flex-col px-container"
@@ -778,7 +778,7 @@ exports[`Home > matches snapshot 1`] = `
                               Soft Construction of a Sunset
                             </a>
                             <div
-                              class="-mt-px font-sans text-xs font-light text-muted"
+                              class="-mt-px font-sans text-xs text-muted"
                             >
                               2022-04-17
                             </div>
@@ -817,7 +817,7 @@ exports[`Home > matches snapshot 1`] = `
                               Altar
                             </a>
                             <div
-                              class="-mt-px font-sans text-xs font-light text-muted"
+                              class="-mt-px font-sans text-xs text-muted"
                             >
                               2022-04-18
                             </div>
@@ -856,7 +856,7 @@ exports[`Home > matches snapshot 1`] = `
                               The Horse Thief
                             </a>
                             <div
-                              class="-mt-px font-sans text-xs font-light text-muted"
+                              class="-mt-px font-sans text-xs text-muted"
                             >
                               2022-04-19
                             </div>
@@ -895,7 +895,7 @@ exports[`Home > matches snapshot 1`] = `
                               Coffin
                             </a>
                             <div
-                              class="-mt-px font-sans text-xs font-light text-muted"
+                              class="-mt-px font-sans text-xs text-muted"
                             >
                               2022-04-20
                             </div>
@@ -934,7 +934,7 @@ exports[`Home > matches snapshot 1`] = `
                               The Baby Farmer
                             </a>
                             <div
-                              class="-mt-px font-sans text-xs font-light text-muted"
+                              class="-mt-px font-sans text-xs text-muted"
                             >
                               2022-04-21
                             </div>
@@ -973,7 +973,7 @@ exports[`Home > matches snapshot 1`] = `
                               Surfer Girl
                             </a>
                             <div
-                              class="-mt-px font-sans text-xs font-light text-muted"
+                              class="-mt-px font-sans text-xs text-muted"
                             >
                               2022-04-22
                             </div>
@@ -1012,7 +1012,7 @@ exports[`Home > matches snapshot 1`] = `
                               Mother
                             </a>
                             <div
-                              class="-mt-px font-sans text-xs font-light text-muted"
+                              class="-mt-px font-sans text-xs text-muted"
                             >
                               2022-04-23
                             </div>
@@ -1051,7 +1051,7 @@ exports[`Home > matches snapshot 1`] = `
                               Fail-Safe
                             </a>
                             <div
-                              class="-mt-px font-sans text-xs font-light text-muted"
+                              class="-mt-px font-sans text-xs text-muted"
                             >
                               2022-04-30
                             </div>
@@ -1090,7 +1090,7 @@ exports[`Home > matches snapshot 1`] = `
                               Mandala
                             </a>
                             <div
-                              class="-mt-px font-sans text-xs font-light text-muted"
+                              class="-mt-px font-sans text-xs text-muted"
                             >
                               2022-05-07
                             </div>
@@ -1129,7 +1129,7 @@ exports[`Home > matches snapshot 1`] = `
                               Behold the Void
                             </a>
                             <div
-                              class="-mt-px font-sans text-xs font-light text-muted"
+                              class="-mt-px font-sans text-xs text-muted"
                             >
                               2022-05-07
                             </div>
@@ -1168,7 +1168,7 @@ exports[`Home > matches snapshot 1`] = `
                               Sacculina
                             </a>
                             <div
-                              class="-mt-px font-sans text-xs font-light text-muted"
+                              class="-mt-px font-sans text-xs text-muted"
                             >
                               2023-10-09
                             </div>
@@ -1207,7 +1207,7 @@ exports[`Home > matches snapshot 1`] = `
                               Don't Let Them Get You Down
                             </a>
                             <div
-                              class="-mt-px font-sans text-xs font-light text-muted"
+                              class="-mt-px font-sans text-xs text-muted"
                             >
                               2023-10-29
                             </div>
@@ -1246,7 +1246,7 @@ exports[`Home > matches snapshot 1`] = `
                               Gothic
                             </a>
                             <div
-                              class="-mt-px font-sans text-xs font-light text-muted"
+                              class="-mt-px font-sans text-xs text-muted"
                             >
                               2024-06-30
                             </div>
@@ -1325,7 +1325,7 @@ exports[`Home > matches snapshot 1`] = `
                               The Cellar
                             </a>
                             <div
-                              class="-mt-px font-sans text-xs font-light text-muted"
+                              class="-mt-px font-sans text-xs text-muted"
                             >
                               2022-03-16
                             </div>
@@ -1364,7 +1364,7 @@ exports[`Home > matches snapshot 1`] = `
                               Desert Pickup
                             </a>
                             <div
-                              class="-mt-px font-sans text-xs font-light text-muted"
+                              class="-mt-px font-sans text-xs text-muted"
                             >
                               2022-04-03
                             </div>
@@ -1403,7 +1403,7 @@ exports[`Home > matches snapshot 1`] = `
                               The Woods Are Dark
                             </a>
                             <div
-                              class="-mt-px font-sans text-xs font-light text-muted"
+                              class="-mt-px font-sans text-xs text-muted"
                             >
                               2022-09-11
                             </div>
@@ -1442,7 +1442,7 @@ exports[`Home > matches snapshot 1`] = `
                               Out Are the Lights
                             </a>
                             <div
-                              class="-mt-px font-sans text-xs font-light text-muted"
+                              class="-mt-px font-sans text-xs text-muted"
                             >
                               2022-10-11
                             </div>
@@ -1481,7 +1481,7 @@ exports[`Home > matches snapshot 1`] = `
                               Roadside Pickup
                             </a>
                             <div
-                              class="-mt-px font-sans text-xs font-light text-muted"
+                              class="-mt-px font-sans text-xs text-muted"
                             >
                               2023-01-21
                             </div>
@@ -1560,7 +1560,7 @@ exports[`Home > matches snapshot 1`] = `
                               On Writing
                             </a>
                             <div
-                              class="-mt-px font-sans text-xs font-light text-muted"
+                              class="-mt-px font-sans text-xs text-muted"
                             >
                               2022-03-21
                             </div>
@@ -1599,7 +1599,7 @@ exports[`Home > matches snapshot 1`] = `
                               Carrie
                             </a>
                             <div
-                              class="-mt-px font-sans text-xs font-light text-muted"
+                              class="-mt-px font-sans text-xs text-muted"
                             >
                               2022-09-19
                             </div>
@@ -1638,7 +1638,7 @@ exports[`Home > matches snapshot 1`] = `
                               'Salem's Lot
                             </a>
                             <div
-                              class="-mt-px font-sans text-xs font-light text-muted"
+                              class="-mt-px font-sans text-xs text-muted"
                             >
                               2022-10-14
                             </div>
@@ -1677,7 +1677,7 @@ exports[`Home > matches snapshot 1`] = `
                               The Shining
                             </a>
                             <div
-                              class="-mt-px font-sans text-xs font-light text-muted"
+                              class="-mt-px font-sans text-xs text-muted"
                             >
                               2022-10-29
                             </div>
@@ -1716,7 +1716,7 @@ exports[`Home > matches snapshot 1`] = `
                               Doctor Sleep
                             </a>
                             <div
-                              class="-mt-px font-sans text-xs font-light text-muted"
+                              class="-mt-px font-sans text-xs text-muted"
                             >
                               2023-01-14
                             </div>
@@ -1795,7 +1795,7 @@ exports[`Home > matches snapshot 1`] = `
                               Casino Royale
                             </a>
                             <div
-                              class="-mt-px font-sans text-xs font-light text-muted"
+                              class="-mt-px font-sans text-xs text-muted"
                             >
                               2022-06-14
                             </div>
@@ -1834,7 +1834,7 @@ exports[`Home > matches snapshot 1`] = `
                               Live and Let Die
                             </a>
                             <div
-                              class="-mt-px font-sans text-xs font-light text-muted"
+                              class="-mt-px font-sans text-xs text-muted"
                             >
                               2022-06-30
                             </div>
@@ -1873,7 +1873,7 @@ exports[`Home > matches snapshot 1`] = `
                               Moonraker
                             </a>
                             <div
-                              class="-mt-px font-sans text-xs font-light text-muted"
+                              class="-mt-px font-sans text-xs text-muted"
                             >
                               2022-10-16
                             </div>
@@ -1952,7 +1952,7 @@ exports[`Home > matches snapshot 1`] = `
                               Record Play Pause
                             </a>
                             <div
-                              class="-mt-px font-sans text-xs font-light text-muted"
+                              class="-mt-px font-sans text-xs text-muted"
                             >
                               2023-11-11
                             </div>
@@ -1991,7 +1991,7 @@ exports[`Home > matches snapshot 1`] = `
                               Fast Forward
                             </a>
                             <div
-                              class="-mt-px font-sans text-xs font-light text-muted"
+                              class="-mt-px font-sans text-xs text-muted"
                             >
                               2023-12-09
                             </div>
@@ -2030,7 +2030,7 @@ exports[`Home > matches snapshot 1`] = `
                               Fast Forward
                             </a>
                             <div
-                              class="-mt-px font-sans text-xs font-light text-muted"
+                              class="-mt-px font-sans text-xs text-muted"
                             >
                               2024-07-01
                             </div>
@@ -2109,7 +2109,7 @@ exports[`Home > matches snapshot 1`] = `
                               Less Than Zero
                             </a>
                             <div
-                              class="-mt-px font-sans text-xs font-light text-muted"
+                              class="-mt-px font-sans text-xs text-muted"
                             >
                               2022-04-02
                             </div>
@@ -2148,7 +2148,7 @@ exports[`Home > matches snapshot 1`] = `
                               The Rules of Attraction
                             </a>
                             <div
-                              class="-mt-px font-sans text-xs font-light text-muted"
+                              class="-mt-px font-sans text-xs text-muted"
                             >
                               2022-07-14
                             </div>
@@ -2227,7 +2227,7 @@ exports[`Home > matches snapshot 1`] = `
                               Fight Club
                             </a>
                             <div
-                              class="-mt-px font-sans text-xs font-light text-muted"
+                              class="-mt-px font-sans text-xs text-muted"
                             >
                               2022-07-16
                             </div>
@@ -2266,7 +2266,7 @@ exports[`Home > matches snapshot 1`] = `
                               Consider This
                             </a>
                             <div
-                              class="-mt-px font-sans text-xs font-light text-muted"
+                              class="-mt-px font-sans text-xs text-muted"
                             >
                               2022-09-22
                             </div>
@@ -2919,7 +2919,7 @@ exports[`Home > matches snapshot 1`] = `
             To the top
           </a>
           <p
-            class="w-full font-normal leading-4 text-inverse-subtle"
+            class="w-full font-normal leading-5 text-inverse-subtle"
           >
             All covers used in accordance with the 
             <a

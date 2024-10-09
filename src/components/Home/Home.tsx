@@ -16,7 +16,7 @@ export function Home({ values }: Props): JSX.Element {
         deck="Literature is a relative term."
         titleStyle="text-default text-4xl desktop:text-7xl"
       />
-      <nav className="mx-auto max-w-screen-max bg-[#f6f6f6] tablet:bg-subtle tablet:px-container">
+      <nav className="mx-auto max-w-screen-max bg-subtle tablet:px-container">
         <SubHeading as="h2" className="px-container tablet:px-0">
           Latest Reviews
         </SubHeading>
