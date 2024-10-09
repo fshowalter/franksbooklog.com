@@ -52,33 +52,6 @@ export function AvatarBackdrop({
   );
 }
 
-export function StatsBackdrop({
-  title,
-  deck,
-  breadcrumb,
-  children,
-}: {
-  title: string;
-  deck: React.ReactNode;
-  breadcrumb: React.ReactNode;
-  children: React.ReactNode;
-}) {
-  return (
-    <Wrapper centerText={true} size="small">
-      <Breadcrumb value={breadcrumb} />
-      <Title
-        className="mb-4 text-4xl desktop:text-7xl"
-        center={true}
-        value={title}
-      />
-      <p className="mb-6 text-center font-sans text-xs uppercase tracking-wide text-subtle">
-        {deck}
-      </p>
-      {children}
-    </Wrapper>
-  );
-}
-
 function Wrapper({
   children,
   centerText = false,
