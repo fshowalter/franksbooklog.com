@@ -161,7 +161,7 @@
             class="min-h-[240px] desktop:min-h-[clamp(640px,50vh,1350px)] relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pb-8 pt-40 tablet:pb-10 tablet:pt-40 desktop:pb-16 desktop:pt-40"
           >
             <div
-              class="items-center z-10 mx-auto flex w-full max-w-screen-max flex-col px-container"
+              class="z-10 mx-auto flex w-full max-w-screen-max flex-col px-container"
             >
               <p
                 class="mb-2 font-sans text-sm uppercase tracking-wide text-subtle"
@@ -172,64 +172,64 @@
                   >Reading Log</a
                 >
               </p>
-              <h1 class="mb-4 text-4xl desktop:text-7xl">2024 Stats</h1>
-              <p
-                class="mb-6 text-center font-sans text-xs uppercase tracking-wide text-subtle"
+              <h1
+                class="font-sans text-3xl font-bold uppercase tracking-widest tablet:text-4xl tablet-landscape:text-5xl desktop:text-7xl"
               >
+                2024 Stats
+              </h1>
+              <p class="mt-1 text-base desktop:my-4 desktop:text-xl">
                 A year in progress...
               </p>
-              <ul
-                class="flex flex-wrap justify-center gap-x-4 gap-y-2 text-md desktop:text-xl mb-8"
-              >
-                <li class="block">
-                  <a
-                    class="decoration-1 underline-offset-8 opacity-75 hover:text-accent hover:underline hover:opacity-100"
-                    href="/readings/stats/"
-                    >All-Time</a
-                  >
-                </li>
-                <li class="block font-medium">2024</li>
-                <li class="block">
-                  <a
-                    class="decoration-1 underline-offset-8 opacity-75 hover:text-accent hover:underline hover:opacity-100"
-                    href="/readings/stats/2023/"
-                    >2023</a
-                  >
-                </li>
-                <li class="block">
-                  <a
-                    class="decoration-1 underline-offset-8 opacity-75 hover:text-accent hover:underline hover:opacity-100"
-                    href="/readings/stats/2022/"
-                    >2022</a
-                  >
-                </li>
-              </ul>
-              <div
-                class="flex flex-wrap justify-center gap-6 desktop:flex-nowrap"
-              >
-                <div
-                  class="flex size-36 flex-col justify-center rounded-full bg-subtle text-center text-default shadow-all"
-                >
-                  <div class="text-[2rem] leading-8">3</div>
-                  <div
-                    class="font-sans text-sm font-light leading-6 text-subtle"
-                  >
-                    Titles
-                  </div>
-                </div>
-                <div
-                  class="flex size-36 flex-col justify-center rounded-full bg-subtle text-center text-default shadow-all"
-                >
-                  <div class="text-[2rem] leading-8">3</div>
-                  <div
-                    class="font-sans text-sm font-light leading-6 text-subtle"
-                  >
-                    Books
-                  </div>
-                </div>
-              </div>
             </div>
           </header>
+          <nav class="bg-accent mb-12 w-full">
+            <ul
+              class="mx-auto flex max-w-screen-max overflow-x-auto px-container font-sans text-sm font-normal tracking-wide desktop:justify-center"
+            >
+              <li class="text-center text-inverse">
+                <a
+                  class="block whitespace-nowrap p-4 hover:bg-default hover:text-default desktop:py-4"
+                  href="/readings/stats/"
+                  >All-Time</a
+                >
+              </li>
+              <li class="text-center bg-subtle text-default">
+                <div class="p-4 desktop:py-4">2024</div>
+              </li>
+              <li class="text-center text-inverse">
+                <a
+                  class="block p-4 hover:bg-subtle hover:text-accent"
+                  href="/readings/stats/2023/"
+                  >2023</a
+                >
+              </li>
+              <li class="text-center text-inverse">
+                <a
+                  class="block p-4 hover:bg-subtle hover:text-accent"
+                  href="/readings/stats/2022/"
+                  >2022</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="flex flex-wrap justify-center gap-6 desktop:flex-nowrap">
+            <div
+              class="flex size-36 flex-col justify-center rounded-full bg-stripe text-center text-default shadow-all"
+            >
+              <div class="text-[2rem] leading-8">3</div>
+              <div class="font-sans text-sm font-light leading-6 text-subtle">
+                Titles
+              </div>
+            </div>
+            <div
+              class="flex size-36 flex-col justify-center rounded-full bg-stripe text-center text-default shadow-all"
+            >
+              <div class="text-[2rem] leading-8">3</div>
+              <div class="font-sans text-sm font-light leading-6 text-subtle">
+                Books
+              </div>
+            </div>
+          </div>
           <div
             class="mx-auto flex w-full max-w-screen-max flex-col items-stretch gap-y-8 py-10 tablet:px-container"
           >

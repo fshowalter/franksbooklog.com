@@ -2,7 +2,6 @@ import type { CoverImageProps } from "src/api/covers";
 
 import { ListItem } from "./ListItem";
 import { ListItemCover } from "./ListItemCover";
-import { ListItemKindAndYear } from "./ListItemKindAndYear";
 import { ListItemTitle } from "./ListItemTitle";
 
 interface ReadingSubListItemValue {
@@ -24,8 +23,8 @@ interface MostReadAuthorsValue {
   readings: ReadingSubListItemValue[];
 }
 
-const dateFormatter = new Intl.DateTimeFormat("en-US", {
-  month: "long",
+const dateFormatter = new Intl.DateTimeFormat("UTC", {
+  month: "numeric",
   day: "numeric",
   year: "numeric",
   timeZone: "UTC",
@@ -57,9 +56,9 @@ export function MostReadAuthors({
                   {value.count}
                 </div>
               </div>
-              <div className="col-span-2 row-start-2 bg-subtle">
-                <details className="bg-subtle tablet:px-2">
-                  <summary className="cursor-pointer px-container py-1 font-sans text-sm text-subtle tablet:px-0">
+              <div className="col-span-2 row-start-2 px-container tablet:px-0">
+                <details className="bg-group tablet:px-2">
+                  <summary className="cursor-pointer px-4 py-1 font-sans text-sm text-subtle tablet:px-0">
                     Details
                   </summary>
                   <ol className="py-2 tablet:px-4">
@@ -98,14 +97,16 @@ function ReadingSubListItem({ value }: { value: ReadingSubListItemValue }) {
   return (
     <ListItem>
       <ListItemCover imageProps={value.coverImageProps} />
-      <div className="grow">
+      <div className="flex grow flex-col gap-y-1">
         <ListItemTitle
           title={value.title}
           slug={value.reviewed ? value.slug : null}
         />
-        <ListItemKindAndYear year={value.yearPublished} kind={value.kind} />
-        <div className="text-base leading-4 text-subtle">
-          {value.edition} on {dateFormatter.format(value.date)}
+        <div className="-mt-px font-sans text-xs font-light text-muted">
+          {value.date}
+        </div>
+        <div className="mt-1 font-sans text-xs font-light text-muted">
+          {value.edition}
         </div>
       </div>
     </ListItem>

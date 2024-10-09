@@ -91,7 +91,7 @@ function Wrapper({
   heroImage?: React.ReactNode;
 }) {
   const defaultSizes =
-    "min-h-[400px] tablet:min-h-[640px] desktop:min-h-[clamp(640px,60vh,1350px)]";
+    "min-h-[400px] tablet:min-h-[640px] desktop:min-h-[clamp(640px,70vh,1350px)]";
 
   const largeSizes = "min-h-[90vh] max-h-[1350px]";
 
@@ -132,7 +132,7 @@ function Title({
       className={
         className
           ? className
-          : `font-sans ${center ? "text-center" : ""} text-2xl font-bold uppercase tracking-widest tablet:text-4xl tablet-landscape:text-5xl desktop:text-7xl`
+          : `font-sans ${center ? "text-center" : ""} text-3xl font-bold uppercase tracking-widest tablet:text-4xl tablet-landscape:text-5xl desktop:text-7xl`
       }
     >
       {value}

@@ -17,7 +17,7 @@ const GradeDistribution = Distribution.extend({
 
 const MostReadAuthorReading = z.object({
   sequence: z.number(),
-  date: z.coerce.date(),
+  date: z.string(),
   slug: z.string(),
   title: z.string(),
   edition: z.string(),
