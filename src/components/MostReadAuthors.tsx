@@ -6,7 +6,7 @@ import { ListItemTitle } from "./ListItemTitle";
 
 interface ReadingSubListItemValue {
   sequence: number;
-  date: Date;
+  date: string;
   edition: string;
   kind: string;
   title: string;
@@ -22,13 +22,6 @@ interface MostReadAuthorsValue {
   count: number;
   readings: ReadingSubListItemValue[];
 }
-
-const dateFormatter = new Intl.DateTimeFormat("UTC", {
-  month: "numeric",
-  day: "numeric",
-  year: "numeric",
-  timeZone: "UTC",
-});
 
 export function MostReadAuthors({
   values,
