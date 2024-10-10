@@ -1,13 +1,13 @@
-import type { AlltimeStats } from "src/api/alltimeStats";
-import { StatsCallout } from "src/components/StatsCallout";
+import type { AlltimeStats } from "~/api/alltimeStats";
 
-interface Props
-  extends Pick<AlltimeStats, "bookCount" | "workCount" | "reviewCount"> {}
+import { StatsCallout } from "~/components/StatsCallout";
+
+type Props = {} & Pick<AlltimeStats, "bookCount" | "reviewCount" | "workCount">;
 
 export function Callouts({
   bookCount,
-  workCount,
   reviewCount,
+  workCount,
 }: Props): JSX.Element {
   return (
     <div className="flex flex-wrap justify-center gap-6 desktop:flex-nowrap">

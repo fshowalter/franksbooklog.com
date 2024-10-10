@@ -1,12 +1,11 @@
+import { experimental_AstroContainer as AstroContainer } from "astro/container";
 import fs from "node:fs";
 import path from "node:path";
-
-import { experimental_AstroContainer as AstroContainer } from "astro/container";
 import { describe, it } from "vitest";
 
 import * as OgEndpoint from "./og.jpg.ts";
 
-describe("/og.jpg", () => {
+describe("/readings/og.jpg", () => {
   it("matches file", { timeout: 40000 }, async ({ expect }) => {
     const container = await AstroContainer.create();
 

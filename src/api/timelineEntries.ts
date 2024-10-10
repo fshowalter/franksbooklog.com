@@ -1,23 +1,24 @@
 import type { TimelineEntryJson } from "./data/timelineEntriesJson";
+
 import { allTimelineEntriesJson } from "./data/timelineEntriesJson";
 
-export interface TimelineEntry extends TimelineEntryJson {}
+export type TimelineEntry = {} & TimelineEntryJson;
 
-interface TimelineEntries {
-  timelineEntries: TimelineEntry[];
-  distinctWorkYears: string[];
-  distinctReadingYears: string[];
-  distinctKinds: string[];
-  distinctEditions: string[];
-  bookCount: number;
-  shortStoryCount: number;
+type TimelineEntries = {
   abandonedCount: number;
+  bookCount: number;
+  distinctEditions: string[];
+  distinctKinds: string[];
+  distinctReadingYears: string[];
+  distinctWorkYears: string[];
+  shortStoryCount: number;
+  timelineEntries: TimelineEntry[];
   workCount: number;
-}
+};
 
 const yearFormatter = new Intl.DateTimeFormat("en-US", {
-  year: "numeric",
   timeZone: "UTC",
+  year: "numeric",
 });
 
 export async function allTimelineEntries(): Promise<TimelineEntries> {
@@ -38,15 +39,15 @@ export async function allTimelineEntries(): Promise<TimelineEntries> {
   });
 
   return {
-    timelineEntries,
-    distinctEditions: Array.from(distinctEditions).toSorted(),
-    distinctReadingYears: Array.from(distinctReadingYears).toSorted(),
-    distinctWorkYears: Array.from(distinctWorkYears).toSorted(),
-    distinctKinds: Array.from(distinctKinds).toSorted(),
-    bookCount: works.filter((work) => work.kind !== "Short Story").length,
     abandonedCount: works.filter((work) => work.progress === "Abandoned")
       .length,
+    bookCount: works.filter((work) => work.kind !== "Short Story").length,
+    distinctEditions: Array.from(distinctEditions).toSorted(),
+    distinctKinds: Array.from(distinctKinds).toSorted(),
+    distinctReadingYears: Array.from(distinctReadingYears).toSorted(),
+    distinctWorkYears: Array.from(distinctWorkYears).toSorted(),
     shortStoryCount: works.filter((work) => work.kind === "Short Story").length,
+    timelineEntries,
     workCount: works.length,
   };
 }

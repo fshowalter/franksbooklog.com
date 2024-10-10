@@ -1,24 +1,25 @@
+import type { FilterableState } from "~/utils";
+
 import {
   buildGroupValues,
   collator,
   filterTools,
   sortNumber,
   sortString,
-} from "src/utils";
+} from "~/utils";
 
-import type { FilterableState } from "../../utils";
 import type { ListItemValue } from "./Author";
 
 export type Sort =
-  | "year-published-desc"
-  | "year-published-asc"
+  | "grade-asc"
+  | "grade-desc"
   | "title-asc"
   | "title-desc"
-  | "grade-asc"
-  | "grade-desc";
+  | "year-published-asc"
+  | "year-published-desc";
 
 const groupValues = buildGroupValues(groupForValue);
-const { updateFilter, clearFilter, applyFilters } = filterTools(
+const { applyFilters, clearFilter, updateFilter } = filterTools(
   sortValues,
   groupValues,
 );
@@ -26,15 +27,15 @@ const { updateFilter, clearFilter, applyFilters } = filterTools(
 function sortValues(values: ListItemValue[], sortOrder: Sort) {
   const sortMap: Record<Sort, (a: ListItemValue, b: ListItemValue) => number> =
     {
-      "year-published-desc": (a, b) =>
-        sortString(a.yearPublished, b.yearPublished) * -1,
-      "year-published-asc": (a, b) =>
-        sortString(a.yearPublished, b.yearPublished),
-      "title-asc": (a, b) => collator.compare(a.sortTitle, b.sortTitle),
-      "title-desc": (a, b) => collator.compare(a.sortTitle, b.sortTitle) * -1,
       "grade-asc": (a, b) => sortNumber(a.gradeValue ?? -1, b.gradeValue ?? -1),
       "grade-desc": (a, b) =>
         sortNumber(a.gradeValue ?? -1, b.gradeValue ?? -1) * -1,
+      "title-asc": (a, b) => collator.compare(a.sortTitle, b.sortTitle),
+      "title-desc": (a, b) => collator.compare(a.sortTitle, b.sortTitle) * -1,
+      "year-published-asc": (a, b) =>
+        sortString(a.yearPublished, b.yearPublished),
+      "year-published-desc": (a, b) =>
+        sortString(a.yearPublished, b.yearPublished) * -1,
     };
 
   const comparer = sortMap[sortOrder];
@@ -65,77 +66,76 @@ function groupForValue(value: ListItemValue, sortValue: Sort): string {
   }
 }
 
-interface State
-  extends FilterableState<ListItemValue, Sort, Map<string, ListItemValue[]>> {
+type State = {
   hideReviewed: boolean;
-}
+} & FilterableState<ListItemValue, Sort, Map<string, ListItemValue[]>>;
 
 const SHOW_COUNT_DEFAULT = 100;
 
 export function initState({
-  values,
   initialSort,
+  values,
 }: {
-  values: ListItemValue[];
   initialSort: Sort;
+  values: ListItemValue[];
 }): State {
   return {
     allValues: values,
     filteredValues: values,
+    filters: {},
     groupedValues: groupValues(
       values.slice(0, SHOW_COUNT_DEFAULT),
       initialSort,
     ),
-    filters: {},
+    hideReviewed: false,
     showCount: SHOW_COUNT_DEFAULT,
     sortValue: initialSort,
-    hideReviewed: false,
   };
 }
 
 export enum Actions {
-  FILTER_TITLE = "FILTER_TITLE",
   FILTER_KIND = "FILTER_KIND",
+  FILTER_TITLE = "FILTER_TITLE",
   FILTER_YEAR_PUBLISHED = "FILTER_YEAR_PUBLISHED",
-  TOGGLE_REVIEWED = "TOGGLE_REVIEWED",
-  SORT = "SORT",
   SHOW_MORE = "SHOW_MORE",
+  SORT = "SORT",
+  TOGGLE_REVIEWED = "TOGGLE_REVIEWED",
 }
 
-interface FilterTitleAction {
+type FilterTitleAction = {
   type: Actions.FILTER_TITLE;
   value: string;
-}
+};
 
-interface FilterKindAction {
+type FilterKindAction = {
   type: Actions.FILTER_KIND;
   value: string;
-}
+};
 
-interface ToggleReviewedAction {
+type ToggleReviewedAction = {
   type: Actions.TOGGLE_REVIEWED;
-}
+};
 
-interface FilterYearPublishedAction {
+type FilterYearPublishedAction = {
   type: Actions.FILTER_YEAR_PUBLISHED;
   values: [string, string];
-}
-interface SortAction {
+};
+type SortAction = {
   type: Actions.SORT;
   value: Sort;
-}
+};
 
-interface ShowMoreAction {
+type ShowMoreAction = {
   type: Actions.SHOW_MORE;
-}
+};
 
 export type ActionType =
-  | FilterTitleAction
-  | ToggleReviewedAction
-  | FilterYearPublishedAction
   | FilterKindAction
+  | FilterTitleAction
+  | FilterYearPublishedAction
+  | ShowMoreAction
   | SortAction
-  | ShowMoreAction;
+  | ToggleReviewedAction;
 
 export function reducer(state: State, action: ActionType): State {
   let filters;
@@ -173,9 +173,9 @@ export function reducer(state: State, action: ActionType): State {
       );
       return {
         ...state,
-        sortValue: action.value,
         filteredValues,
         groupedValues,
+        sortValue: action.value,
       };
     }
     case Actions.SHOW_MORE: {

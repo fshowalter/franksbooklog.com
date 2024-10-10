@@ -1,11 +1,11 @@
 ---
-import { AlltimeStats } from "src/components/AlltimeStats/AlltimeStats";
-import { getProps } from "src/components/AlltimeStats/getProps";
-import Layout from "src/layouts/Layout.astro";
+import { AlltimeStats } from "~/components/AlltimeStats/AlltimeStats";
+import { getProps } from "~/components/AlltimeStats/getProps";
+import Layout from "~/layouts/Layout.astro";
 
 const props = await getProps();
 ---
 
-<Layout title="All-Time Stats" description={props.deck}>
+<Layout description={props.deck} title="All-Time Stats">
   <AlltimeStats {...props} />
 </Layout>

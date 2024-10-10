@@ -1,4 +1,4 @@
-import { ccn } from "src/utils/concatClassNames";
+import { ccn } from "~/utils/concatClassNames";
 
 function AllTimeLink({
   currentYear,
@@ -26,13 +26,13 @@ function AllTimeLink({
 }
 
 function YearLink({
-  year,
   currentYear,
   linkFunc,
+  year,
 }: {
-  year: string;
   currentYear: string;
   linkFunc: (y: string) => string;
+  year: string;
 }): JSX.Element | null {
   return (
     <li
@@ -53,15 +53,15 @@ function YearLink({
 }
 
 export function StatsNavigation({
-  currentYear,
-  years,
-  linkFunc,
   className,
+  currentYear,
+  linkFunc,
+  years,
 }: {
-  currentYear: string;
-  years: readonly string[];
-  linkFunc: (year: string) => string;
   className?: string;
+  currentYear: string;
+  linkFunc: (year: string) => string;
+  years: readonly string[];
 }): JSX.Element {
   return (
     <nav className={ccn("bg-accent", className)}>
@@ -70,10 +70,10 @@ export function StatsNavigation({
         {[...years].reverse().map((year) => {
           return (
             <YearLink
-              key={year}
-              year={year}
               currentYear={currentYear}
+              key={year}
               linkFunc={linkFunc}
+              year={year}
             />
           );
         })}

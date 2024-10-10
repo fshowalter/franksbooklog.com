@@ -1,13 +1,13 @@
 import type { ElementType } from "react";
 
 export function LabelText({
-  value,
-  htmlFor,
   as = "span",
+  htmlFor,
+  value,
 }: {
-  value: string;
-  htmlFor?: string;
   as?: ElementType;
+  htmlFor?: string;
+  value: string;
 }) {
   const Component = as;
 

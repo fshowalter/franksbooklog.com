@@ -1,11 +1,12 @@
 import rss from "@astrojs/rss";
-import { getFeedCoverProps } from "src/api/covers";
+
+import { getFeedCoverProps } from "~/api/covers";
 import {
   loadExcerptHtml,
   mostRecentReviews,
   type ReviewWithExcerpt,
-} from "src/api/reviews";
-import { textStarsForGrade } from "src/utils/textStarsForGrade";
+} from "~/api/reviews";
+import { textStarsForGrade } from "~/utils/textStarsForGrade";
 
 function addMetaToExcerpt(excerpt: string, review: ReviewWithExcerpt) {
   const meta = `${textStarsForGrade(review.grade)}`;
@@ -34,15 +35,10 @@ export async function GET() {
   );
 
   return rss({
-    // `<title>` field in output xml
-    title: "Frank's Book Log",
-    // `<description>` field in output xml
-    description: "Reviews of current, cult, classic, and forgotten books.",
-    // Pull in your project "site" from the endpoint context
-    // https://docs.astro.build/en/reference/api-reference/#contextsite
-    site: "https://www.franksbooklog.com",
     customData:
       "<image><url>https://www.franksbooklog.com/assets/favicon-128.png</url><title>Frank's Book Log</title><link>https://www.franksbooklog.com/</link></image>",
+    // `<description>` field in output xml
+    description: "Reviews of current, cult, classic, and forgotten books.",
     // Array of `<item>`s in output xml
     // See "Generating items" section for examples using content collections and glob imports
     items: await Promise.all(
@@ -50,14 +46,19 @@ export async function GET() {
         const cover = await getFeedCoverProps(item);
 
         return {
-          title: `${item.title} by ${authorsToString(item.authors)}`,
-          pubDate: item.date,
-          link: `https://www.franksbooklog.com/reviews/${item.slug}/`,
           content: `<img src="${
             cover.src
           }" alt="">${addMetaToExcerpt(item.excerpt, item)}`,
+          link: `https://www.franksbooklog.com/reviews/${item.slug}/`,
+          pubDate: item.date,
+          title: `${item.title} by ${authorsToString(item.authors)}`,
         };
       }),
     ),
+    // Pull in your project "site" from the endpoint context
+    // https://docs.astro.build/en/reference/api-reference/#contextsite
+    site: "https://www.franksbooklog.com",
+    // `<title>` field in output xml
+    title: "Frank's Book Log",
   });
 }

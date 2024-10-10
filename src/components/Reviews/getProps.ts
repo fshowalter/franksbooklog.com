@@ -1,15 +1,15 @@
-import { getFluidCoverImageProps } from "src/api/covers";
-import { allReviews } from "src/api/reviews";
-import { ListItemCoverImageConfig } from "src/components/ListItemCover";
+import { getFluidCoverImageProps } from "~/api/covers";
+import { allReviews } from "~/api/reviews";
+import { ListItemCoverImageConfig } from "~/components/ListItemCover";
 
 import type { ListItemValue, Props } from "./Reviews";
 
 export async function getProps(): Promise<Props> {
   const {
-    reviews,
-    distinctPublishedYears,
     distinctKinds,
+    distinctPublishedYears,
     distinctReviewYears,
+    reviews,
   } = await allReviews();
 
   reviews.sort((a, b) =>
@@ -19,18 +19,6 @@ export async function getProps(): Promise<Props> {
   const values = await Promise.all(
     reviews.map(async (review) => {
       const value: ListItemValue = {
-        date: review.date,
-        title: review.title,
-        slug: review.slug,
-        grade: review.grade,
-        gradeValue: review.gradeValue,
-        sortTitle: review.sortTitle,
-        coverImageProps: await getFluidCoverImageProps(
-          review,
-          ListItemCoverImageConfig,
-        ),
-        yearPublished: review.yearPublished,
-        kind: review.kind,
         authors: review.authors.map((author) => {
           const authorValue: ListItemValue["authors"][0] = {
             name: author.name,
@@ -39,6 +27,18 @@ export async function getProps(): Promise<Props> {
 
           return authorValue;
         }),
+        coverImageProps: await getFluidCoverImageProps(
+          review,
+          ListItemCoverImageConfig,
+        ),
+        date: review.date,
+        grade: review.grade,
+        gradeValue: review.gradeValue,
+        kind: review.kind,
+        slug: review.slug,
+        sortTitle: review.sortTitle,
+        title: review.title,
+        yearPublished: review.yearPublished,
       };
 
       return value;
@@ -47,10 +47,10 @@ export async function getProps(): Promise<Props> {
 
   return {
     deck: `"I intend to put up with nothing that I can put down."`,
-    values,
     distinctKinds,
     distinctPublishedYears,
     distinctReviewYears,
     initialSort: "author-asc",
+    values,
   };
 }

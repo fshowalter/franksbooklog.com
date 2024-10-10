@@ -1,14 +1,15 @@
 import type { UnreviewedWorkJson } from "./data/unreviewedWorksJson";
+
 import { allUnreviewedWorksJson } from "./data/unreviewedWorksJson";
 
-export interface ShelfWork extends UnreviewedWorkJson {}
+export type ShelfWork = {} & UnreviewedWorkJson;
 
-interface Shelf {
-  works: ShelfWork[];
+type Shelf = {
   distinctAuthors: string[];
-  distinctPublishedYears: string[];
   distinctKinds: string[];
-}
+  distinctPublishedYears: string[];
+  works: ShelfWork[];
+};
 
 function parseUnreviewedWorksJson(
   unreviewedWorksJson: UnreviewedWorkJson[],
@@ -30,10 +31,10 @@ function parseUnreviewedWorksJson(
   });
 
   return {
-    works,
+    distinctAuthors: Array.from(distinctAuthors).toSorted(),
     distinctKinds: Array.from(distinctKinds).toSorted(),
     distinctPublishedYears: Array.from(distinctPublishedYears).toSorted(),
-    distinctAuthors: Array.from(distinctAuthors).toSorted(),
+    works,
   };
 }
 

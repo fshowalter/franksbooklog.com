@@ -1,32 +1,33 @@
-import type { FilterableState } from "src/utils";
-import { buildGroupValues, collator, filterTools, sortString } from "src/utils";
+import type { FilterableState } from "~/utils";
+
+import { buildGroupValues, collator, filterTools, sortString } from "~/utils";
 
 import type { ListItemValue } from "./Shelf";
 
 export type Sort =
-  | "year-published-desc"
-  | "year-published-asc"
+  | "author-asc"
+  | "author-desc"
   | "title-asc"
   | "title-desc"
-  | "author-asc"
-  | "author-desc";
+  | "year-published-asc"
+  | "year-published-desc";
 
 const groupValues = buildGroupValues(groupForValue);
-const { updateFilter, clearFilter } = filterTools(sortValues, groupValues);
+const { clearFilter, updateFilter } = filterTools(sortValues, groupValues);
 
 function sortValues(values: ListItemValue[], sortOrder: Sort) {
   const sortMap: Record<Sort, (a: ListItemValue, b: ListItemValue) => number> =
     {
-      "year-published-desc": (a, b) =>
-        sortString(a.yearPublished, b.yearPublished) * -1,
-      "year-published-asc": (a, b) =>
-        sortString(a.yearPublished, b.yearPublished),
-      "title-asc": (a, b) => collator.compare(a.sortTitle, b.sortTitle),
-      "title-desc": (a, b) => collator.compare(a.sortTitle, b.sortTitle) * -1,
       "author-asc": (a, b) =>
         sortString(a.authors[0].sortName, b.authors[0].sortName),
       "author-desc": (a, b) =>
         sortString(a.authors[0].sortName, b.authors[0].sortName) * -1,
+      "title-asc": (a, b) => collator.compare(a.sortTitle, b.sortTitle),
+      "title-desc": (a, b) => collator.compare(a.sortTitle, b.sortTitle) * -1,
+      "year-published-asc": (a, b) =>
+        sortString(a.yearPublished, b.yearPublished),
+      "year-published-desc": (a, b) =>
+        sortString(a.yearPublished, b.yearPublished) * -1,
     };
 
   const comparer = sortMap[sortOrder];
@@ -62,69 +63,69 @@ type State = FilterableState<ListItemValue, Sort, Map<string, ListItemValue[]>>;
 const SHOW_COUNT_DEFAULT = 100;
 
 export function initState({
-  values,
   initialSort,
+  values,
 }: {
-  values: ListItemValue[];
   initialSort: Sort;
+  values: ListItemValue[];
 }): State {
   return {
     allValues: values,
     filteredValues: values,
+    filters: {},
     groupedValues: groupValues(
       values.slice(0, SHOW_COUNT_DEFAULT),
       initialSort,
     ),
-    filters: {},
     showCount: SHOW_COUNT_DEFAULT,
     sortValue: initialSort,
   };
 }
 
 export enum Actions {
-  FILTER_TITLE = "FILTER_TITLE",
-  FILTER_KIND = "FILTER_KIND",
   FILTER_AUTHOR = "FILTER_AUTHOR",
+  FILTER_KIND = "FILTER_KIND",
+  FILTER_TITLE = "FILTER_TITLE",
   FILTER_YEAR_PUBLISHED = "FILTER_YEAR_PUBLISHED",
-  SORT = "SORT",
   SHOW_MORE = "SHOW_MORE",
+  SORT = "SORT",
 }
 
-interface FilterTitleAction {
+type FilterTitleAction = {
   type: Actions.FILTER_TITLE;
   value: string;
-}
+};
 
-interface FilterKindAction {
+type FilterKindAction = {
   type: Actions.FILTER_KIND;
   value: string;
-}
+};
 
-interface FilterAuthorAction {
+type FilterAuthorAction = {
   type: Actions.FILTER_AUTHOR;
   value: string;
-}
+};
 
-interface FilterYearPublishedAction {
+type FilterYearPublishedAction = {
   type: Actions.FILTER_YEAR_PUBLISHED;
   values: [string, string];
-}
-interface SortAction {
+};
+type SortAction = {
   type: Actions.SORT;
   value: Sort;
-}
+};
 
-interface ShowMoreAction {
+type ShowMoreAction = {
   type: Actions.SHOW_MORE;
-}
+};
 
 export type ActionType =
+  | FilterAuthorAction
+  | FilterKindAction
   | FilterTitleAction
   | FilterYearPublishedAction
-  | FilterKindAction
-  | FilterAuthorAction
-  | SortAction
-  | ShowMoreAction;
+  | ShowMoreAction
+  | SortAction;
 
 export function reducer(state: State, action: ActionType): State {
   let filteredValues;
@@ -171,9 +172,9 @@ export function reducer(state: State, action: ActionType): State {
       );
       return {
         ...state,
-        sortValue: action.value,
         filteredValues,
         groupedValues,
+        sortValue: action.value,
       };
     }
     case Actions.SHOW_MORE: {

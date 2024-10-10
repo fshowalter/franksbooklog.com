@@ -1,9 +1,10 @@
-import { type Author, getAuthorDetails } from "src/api/authors";
-import { getAvatarImageProps } from "src/api/avatars";
-import { getFluidCoverImageProps } from "src/api/covers";
+import { type Author, getAuthorDetails } from "~/api/authors";
+import { getAvatarImageProps } from "~/api/avatars";
+import { getFluidCoverImageProps } from "~/api/covers";
+import { ListItemCoverImageConfig } from "~/components/ListItemCover";
 
-import { ListItemCoverImageConfig } from "../ListItemCover";
 import type { ListItemValue, Props } from "./Author";
+
 import { AvatarImageConfig } from "./Author";
 
 function filterOtherAuthors(author: Author, work: Author["works"][number]) {
@@ -47,19 +48,19 @@ export async function getProps(slug: string): Promise<Props> {
   const works = await Promise.all(
     author.works.map(async (work) => {
       const value: ListItemValue = {
-        title: work.title,
-        yearPublished: work.yearPublished,
-        slug: work.slug,
-        kind: work.kind,
-        grade: work.grade,
-        sortTitle: work.sortTitle,
-        gradeValue: work.gradeValue,
-        reviewed: work.reviewed,
         coverImageProps: await getFluidCoverImageProps(
           work,
           ListItemCoverImageConfig,
         ),
+        grade: work.grade,
+        gradeValue: work.gradeValue,
+        kind: work.kind,
         otherAuthors: filterOtherAuthors(author, work),
+        reviewed: work.reviewed,
+        slug: work.slug,
+        sortTitle: work.sortTitle,
+        title: work.title,
+        yearPublished: work.yearPublished,
       };
 
       return value;
@@ -67,12 +68,12 @@ export async function getProps(slug: string): Promise<Props> {
   );
 
   return {
-    works,
+    avatarImageProps: await getAvatarImageProps(author.slug, AvatarImageConfig),
     deck: deck(author),
-    name: author.name,
     distinctKinds,
     distinctPublishedYears,
     initialSort: "year-published-asc",
-    avatarImageProps: await getAvatarImageProps(author.slug, AvatarImageConfig),
+    name: author.name,
+    works,
   };
 }

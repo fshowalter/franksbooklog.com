@@ -1,5 +1,4 @@
 import { promises as fs } from "node:fs";
-
 import { z } from "zod";
 
 import { getContentPath } from "./utils/getContentPath";
@@ -8,33 +7,33 @@ import { WorkKindSchema } from "./utils/workKindSchema";
 const authorsJsonDirectory = getContentPath("data", "authors");
 
 const WorkAuthorSchema = z.object({
-  slug: z.string(),
-  notes: z.nullable(z.string()),
   name: z.string(),
+  notes: z.nullable(z.string()),
+  slug: z.string(),
   sortName: z.string(),
 });
 
 const WorkSchema = z.object({
+  authors: z.array(WorkAuthorSchema),
+  grade: z.nullable(z.string()),
+  gradeValue: z.nullable(z.number()),
+  includedInSlugs: z.array(z.string()),
+  kind: WorkKindSchema,
+  reviewed: z.boolean(),
+  slug: z.string(),
+  sortTitle: z.string(),
   title: z.string(),
   yearPublished: z.string(),
-  kind: WorkKindSchema,
-  slug: z.string(),
-  grade: z.nullable(z.string()),
-  sortTitle: z.string(),
-  gradeValue: z.nullable(z.number()),
-  authors: z.array(WorkAuthorSchema),
-  reviewed: z.boolean(),
-  includedInSlugs: z.array(z.string()),
 });
 
 const AuthorJsonSchema = z.object({
   name: z.string(),
-  sortName: z.string(),
-  slug: z.string(),
   reviewedWorkCount: z.number(),
+  shelfWorkCount: z.number(),
+  slug: z.string(),
+  sortName: z.string(),
   workCount: z.number(),
   works: z.array(WorkSchema),
-  shelfWorkCount: z.number(),
 });
 
 async function parseAllAuthorsJson() {

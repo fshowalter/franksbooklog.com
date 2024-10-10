@@ -7,13 +7,14 @@ import smartypants from "remark-smartypants";
 import strip from "strip-markdown";
 
 import type { MarkdownReading } from "./data/readingsMarkdown";
-import { allReadingsMarkdown } from "./data/readingsMarkdown";
 import type {
   ReviewedWorkJson,
   ReviewedWorkJsonReading,
 } from "./data/reviewedWorksJson";
-import { allReviewedWorksJson } from "./data/reviewedWorksJson";
 import type { MarkdownReview } from "./data/reviewsMarkdown";
+
+import { allReadingsMarkdown } from "./data/readingsMarkdown";
+import { allReviewedWorksJson } from "./data/reviewedWorksJson";
 import { allReviewsMarkdown } from "./data/reviewsMarkdown";
 import { linkReviewedWorks } from "./utils/linkReviewedWorks";
 import { getHtml } from "./utils/markdown/getHtml";
@@ -26,8 +27,8 @@ import {
 
 let cachedReadingsMarkdown: MarkdownReading[] | null = null;
 let cachedMarkdownReviews: MarkdownReview[] | null = null;
-let cachedReviewedWorksJson: ReviewedWorkJson[] | null = null;
-let cachedReviews: Reviews | null = null;
+let cachedReviewedWorksJson: null | ReviewedWorkJson[] = null;
+let cachedReviews: null | Reviews = null;
 
 if (import.meta.env.MODE !== "development") {
   cachedReadingsMarkdown = await allReadingsMarkdown();
@@ -35,26 +36,27 @@ if (import.meta.env.MODE !== "development") {
   cachedMarkdownReviews = await allReviewsMarkdown();
 }
 
-interface ReviewReading extends ReviewedWorkJsonReading, MarkdownReading {
-  editionNotes: string | null;
-  readingNotes: string | null;
-}
+type ReviewReading = {
+  editionNotes: null | string;
+  readingNotes: null | string;
+} & MarkdownReading &
+  ReviewedWorkJsonReading;
 
-export interface Review extends ReviewedWorkJson, MarkdownReview {}
+export type Review = {} & MarkdownReview & ReviewedWorkJson;
 
-interface Reviews {
-  reviews: Review[];
-  distinctReviewYears: string[];
-  distinctPublishedYears: string[];
+type Reviews = {
   distinctKinds: string[];
-}
+  distinctPublishedYears: string[];
+  distinctReviewYears: string[];
+  reviews: Review[];
+};
 
 function getMastProcessor() {
   return remark().use(remarkGfm).use(smartypants);
 }
 
 function getHtmlAsSpan(
-  content: string | null,
+  content: null | string,
   reviewedWorks: { slug: string }[],
 ) {
   if (!content) {
@@ -72,9 +74,9 @@ function getHtmlAsSpan(
   return linkReviewedWorks(html, reviewedWorks);
 }
 
-export interface ReviewWithExcerpt extends Review {
+export type ReviewWithExcerpt = {
   excerpt: string;
-}
+} & Review;
 
 export async function loadExcerptHtml(
   review: Review,
@@ -112,11 +114,11 @@ export async function loadExcerptHtml(
   };
 }
 
-export interface ReviewWithContent extends Review {
-  readings: ReviewReading[];
+export type ReviewWithContent = {
+  content: null | string;
   excerptPlainText: string;
-  content: string | null;
-}
+  readings: ReviewReading[];
+} & Review;
 
 export async function loadContent(review: Review): Promise<ReviewWithContent> {
   const readingsMarkdown =
@@ -152,9 +154,9 @@ export async function loadContent(review: Review): Promise<ReviewWithContent> {
 
   return {
     ...review,
-    readings,
     content: getHtml(review.rawContent, reviewedWorksJson),
     excerptPlainText,
+    readings,
   };
 }
 
@@ -170,7 +172,7 @@ async function parseReviewedWorksJson(
     distinctKinds.add(work.kind);
     distinctPublishedYears.add(work.yearPublished);
 
-    const { rawContent, grade, date } = reviewsMarkdown.find(
+    const { date, grade, rawContent } = reviewsMarkdown.find(
       (reviewsmarkdown) => {
         return reviewsmarkdown.slug === work.slug;
       },
@@ -185,17 +187,17 @@ async function parseReviewedWorksJson(
 
     return {
       ...work,
-      rawContent,
-      grade,
       date,
+      grade,
+      rawContent,
     };
   });
 
   return {
-    reviews,
     distinctKinds: Array.from(distinctKinds).toSorted(),
     distinctPublishedYears: Array.from(distinctPublishedYears).toSorted(),
     distinctReviewYears: Array.from(distinctReviewYears).toSorted(),
+    reviews,
   };
 }
 

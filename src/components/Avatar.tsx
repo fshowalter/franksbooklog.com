@@ -1,18 +1,18 @@
-import type { AvatarImageProps } from "src/api/avatars";
+import type { AvatarImageProps } from "~/api/avatars";
 
-interface AvatarProps extends React.ImgHTMLAttributes<HTMLImageElement> {
-  imageProps: AvatarImageProps | null;
-  width: number;
-  height: number;
-  loading: "lazy" | "eager";
+type AvatarProps = {
   className?: string;
   fill?: string;
-}
+  height: number;
+  imageProps: AvatarImageProps | null;
+  loading: "eager" | "lazy";
+  width: number;
+} & React.ImgHTMLAttributes<HTMLImageElement>;
 
 export function Avatar({
-  imageProps,
   className,
   fill,
+  imageProps,
   ...rest
 }: AvatarProps): JSX.Element {
   if (imageProps) {
@@ -22,10 +22,10 @@ export function Avatar({
   return (
     <div className={className}>
       <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 16 16"
         fill={fill ? fill : "var(--bg-stripe)"}
+        viewBox="0 0 16 16"
         width="100%"
+        xmlns="http://www.w3.org/2000/svg"
       >
         <path
           clipRule="evenodd"

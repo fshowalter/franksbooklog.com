@@ -1,6 +1,7 @@
 import { render } from "@testing-library/react";
-import { allReviews } from "src/api/reviews";
 import { describe, it } from "vitest";
+
+import { allReviews } from "~/api/reviews";
 
 import { getProps } from "./getProps";
 import { Review } from "./Review";

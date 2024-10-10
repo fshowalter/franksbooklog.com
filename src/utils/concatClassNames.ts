@@ -9,8 +9,8 @@
 
 export function ccn(...classNames: unknown[]) {
   let i = 0,
-    tmp: unknown,
-    str = "";
+    str = "",
+    tmp: unknown;
   const len = classNames.length;
 
   for (; i < len; i++) {

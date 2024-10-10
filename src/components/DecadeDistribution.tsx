@@ -5,5 +5,5 @@ export function DecadeDistribution({
 }: {
   values: React.ComponentProps<typeof Distribution>["values"];
 }): JSX.Element {
-  return <Distribution values={values} title="By Year Published" />;
+  return <Distribution title="By Year Published" values={values} />;
 }

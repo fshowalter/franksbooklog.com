@@ -1,6 +1,5 @@
-import { promises as fs } from "node:fs";
-
 import matter from "gray-matter";
+import { promises as fs } from "node:fs";
 import { z } from "zod";
 
 import { getContentPath } from "./utils/getContentPath";
@@ -13,23 +12,23 @@ const TimelineEntrySchema = z.object({
 });
 
 const DataSchema = z.object({
-  sequence: z.number(),
-  work_slug: z.string(),
   edition: z.string(),
   edition_notes: z.nullable(z.string()),
+  sequence: z.number(),
   timeline: z.array(TimelineEntrySchema),
+  work_slug: z.string(),
 });
 
 type TimelineEntry = z.infer<typeof TimelineEntrySchema>;
 
-export interface MarkdownReading {
+export type MarkdownReading = {
+  edition: string;
+  editionNotesRaw: null | string;
+  readingNotesRaw: null | string;
   sequence: number;
   slug: string;
-  edition: string;
   timeline: TimelineEntry[];
-  editionNotesRaw: string | null;
-  readingNotesRaw: string | null;
-}
+};
 
 async function parseAllReadingsMarkdown() {
   const dirents = await fs.readdir(readingsMarkdownDirectory, {
@@ -45,16 +44,16 @@ async function parseAllReadingsMarkdown() {
           "utf8",
         );
 
-        const { data, content } = matter(fileContents);
+        const { content, data } = matter(fileContents);
         const greyMatter = DataSchema.parse(data);
 
         const markdownReading: MarkdownReading = {
-          sequence: greyMatter.sequence,
-          slug: greyMatter.work_slug,
           edition: greyMatter.edition,
-          timeline: greyMatter.timeline,
           editionNotesRaw: greyMatter.edition_notes,
           readingNotesRaw: content,
+          sequence: greyMatter.sequence,
+          slug: greyMatter.work_slug,
+          timeline: greyMatter.timeline,
         };
 
         return markdownReading;

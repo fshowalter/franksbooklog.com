@@ -1,48 +1,49 @@
-import type { FilterableState } from "src/utils";
+import type { FilterableState } from "~/utils";
+
 import {
   buildGroupValues,
   collator,
   filterTools,
   sortNumber,
   sortString,
-} from "src/utils";
+} from "~/utils";
 
 export type Sort =
-  | "review-date-desc"
-  | "review-date-asc"
-  | "year-published-desc"
-  | "year-published-asc"
-  | "title-asc"
-  | "title-desc"
+  | "author-asc"
+  | "author-desc"
   | "grade-asc"
   | "grade-desc"
-  | "author-asc"
-  | "author-desc";
+  | "review-date-asc"
+  | "review-date-desc"
+  | "title-asc"
+  | "title-desc"
+  | "year-published-asc"
+  | "year-published-desc";
 
 import type { ListItemValue } from "./Reviews";
 
 const groupValues = buildGroupValues(groupForValue);
-const { updateFilter, clearFilter } = filterTools(sortValues, groupValues);
+const { clearFilter, updateFilter } = filterTools(sortValues, groupValues);
 
 function sortValues(values: ListItemValue[], sortOrder: Sort) {
   const sortMap: Record<Sort, (a: ListItemValue, b: ListItemValue) => number> =
     {
-      "review-date-desc": (a, b) =>
-        sortString(a.date.toISOString(), b.date.toISOString()) * -1,
-      "review-date-asc": (a, b) =>
-        sortString(a.date.toISOString(), b.date.toISOString()),
-      "year-published-desc": (a, b) =>
-        sortString(a.yearPublished, b.yearPublished) * -1,
-      "year-published-asc": (a, b) =>
-        sortString(a.yearPublished, b.yearPublished),
-      "title-asc": (a, b) => collator.compare(a.sortTitle, b.sortTitle),
-      "title-desc": (a, b) => collator.compare(a.sortTitle, b.sortTitle) * -1,
-      "grade-asc": (a, b) => sortNumber(a.gradeValue, b.gradeValue),
-      "grade-desc": (a, b) => sortNumber(a.gradeValue, b.gradeValue) * -1,
       "author-asc": (a, b) =>
         sortString(a.authors[0].sortName, b.authors[0].sortName),
       "author-desc": (a, b) =>
         sortString(a.authors[0].sortName, b.authors[0].sortName) * -1,
+      "grade-asc": (a, b) => sortNumber(a.gradeValue, b.gradeValue),
+      "grade-desc": (a, b) => sortNumber(a.gradeValue, b.gradeValue) * -1,
+      "review-date-asc": (a, b) =>
+        sortString(a.date.toISOString(), b.date.toISOString()),
+      "review-date-desc": (a, b) =>
+        sortString(a.date.toISOString(), b.date.toISOString()) * -1,
+      "title-asc": (a, b) => collator.compare(a.sortTitle, b.sortTitle),
+      "title-desc": (a, b) => collator.compare(a.sortTitle, b.sortTitle) * -1,
+      "year-published-asc": (a, b) =>
+        sortString(a.yearPublished, b.yearPublished),
+      "year-published-desc": (a, b) =>
+        sortString(a.yearPublished, b.yearPublished) * -1,
     };
 
   const comparer = sortMap[sortOrder];
@@ -51,13 +52,13 @@ function sortValues(values: ListItemValue[], sortOrder: Sort) {
 
 const monthGroupFormat = new Intl.DateTimeFormat("en-US", {
   month: "long",
-  year: "numeric",
   timeZone: "UTC",
+  year: "numeric",
 });
 
 const yearFormat = new Intl.DateTimeFormat("en-US", {
-  year: "numeric",
   timeZone: "UTC",
+  year: "numeric",
 });
 
 function groupForValue(value: ListItemValue, sortValue: Sort): string {
@@ -97,69 +98,69 @@ type State = FilterableState<ListItemValue, Sort, Map<string, ListItemValue[]>>;
 const SHOW_COUNT_DEFAULT = 100;
 
 export function initState({
-  values,
   initialSort,
+  values,
 }: {
-  values: ListItemValue[];
   initialSort: Sort;
+  values: ListItemValue[];
 }): State {
   return {
     allValues: values,
     filteredValues: values,
+    filters: {},
     groupedValues: groupValues(
       values.slice(0, SHOW_COUNT_DEFAULT),
       initialSort,
     ),
-    filters: {},
     showCount: SHOW_COUNT_DEFAULT,
     sortValue: initialSort,
   };
 }
 
 export enum Actions {
-  FILTER_TITLE = "FILTER_TITLE",
   FILTER_KIND = "FILTER_KIND",
+  FILTER_TITLE = "FILTER_TITLE",
   FILTER_YEAR_PUBLISHED = "FILTER_YEAR_PUBLISHED",
   FILTER_YEAR_REVIEWED = "FILTER_YEAR_REVIEWED",
-  SORT = "SORT",
   SHOW_MORE = "SHOW_MORE",
+  SORT = "SORT",
 }
 
-interface FilterTitleAction {
+type FilterTitleAction = {
   type: Actions.FILTER_TITLE;
   value: string;
-}
+};
 
-interface FilterKindAction {
+type FilterKindAction = {
   type: Actions.FILTER_KIND;
   value: string;
-}
+};
 
-interface FilterYearReviewedAction {
+type FilterYearReviewedAction = {
   type: Actions.FILTER_YEAR_REVIEWED;
   values: [string, string];
-}
+};
 
-interface FilterYearPublishedAction {
+type FilterYearPublishedAction = {
   type: Actions.FILTER_YEAR_PUBLISHED;
   values: [string, string];
-}
-interface SortAction {
+};
+type SortAction = {
   type: Actions.SORT;
   value: Sort;
-}
+};
 
-interface ShowMoreAction {
+type ShowMoreAction = {
   type: Actions.SHOW_MORE;
-}
+};
 
 export type ActionType =
-  | FilterTitleAction
-  | FilterYearReviewedAction
-  | FilterYearPublishedAction
   | FilterKindAction
-  | SortAction
-  | ShowMoreAction;
+  | FilterTitleAction
+  | FilterYearPublishedAction
+  | FilterYearReviewedAction
+  | ShowMoreAction
+  | SortAction;
 
 export function reducer(state: State, action: ActionType): State {
   let filteredValues;
@@ -202,9 +203,9 @@ export function reducer(state: State, action: ActionType): State {
       );
       return {
         ...state,
-        sortValue: action.value,
         filteredValues,
         groupedValues,
+        sortValue: action.value,
       };
     }
     case Actions.SHOW_MORE: {

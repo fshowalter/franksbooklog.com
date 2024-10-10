@@ -1,22 +1,22 @@
-import type { AvatarImageProps } from "src/api/avatars";
+import type { AvatarImageProps } from "~/api/avatars";
 
 import { Avatar } from "./Avatar";
 
 export function SolidBackdrop({
-  title,
-  deck,
   breadcrumb,
+  deck,
+  title,
   titleStyle,
 }: {
-  title: string;
-  deck: React.ReactNode;
-  titleStyle?: string;
   breadcrumb?: React.ReactNode;
+  deck: React.ReactNode;
+  title: string;
+  titleStyle?: string;
 }) {
   return (
     <Wrapper size="small">
       <Breadcrumb value={breadcrumb} />
-      <Title value={title} className={titleStyle} />
+      <Title className={titleStyle} value={title} />
       <Deck value={deck} />
     </Wrapper>
   );
@@ -24,44 +24,44 @@ export function SolidBackdrop({
 
 export function AvatarBackdrop({
   avatarImageProps,
-  name,
-  deck,
   breadcrumb,
+  deck,
+  name,
 }: {
   avatarImageProps: AvatarImageProps | null;
-  name: string;
-  deck: React.ReactNode;
   breadcrumb?: React.ReactNode;
+  deck: React.ReactNode;
+  name: string;
 }) {
   return (
     <Wrapper centerText={true} size="small">
       <div className="safari-border-radius-fix mx-auto mb-6 w-4/5 max-w-[250px] overflow-hidden rounded-full">
         <Avatar
-          imageProps={avatarImageProps}
-          width={250}
-          height={250}
-          loading="lazy"
-          decoding="async"
           data-pagefind-meta="image[src]"
+          decoding="async"
+          height={250}
+          imageProps={avatarImageProps}
+          loading="lazy"
+          width={250}
         />
       </div>
       <Breadcrumb value={breadcrumb} />
-      <Title value={name} center={true} />
-      <Deck value={deck} center={true} subtle={true} />
+      <Title center={true} value={name} />
+      <Deck center={true} subtle={true} value={deck} />
     </Wrapper>
   );
 }
 
 function Wrapper({
-  children,
   centerText = false,
-  size = "default",
+  children,
   heroImage,
+  size = "default",
 }: {
-  children: React.ReactNode;
   centerText?: boolean;
-  size?: "default" | "large" | "small";
+  children: React.ReactNode;
   heroImage?: React.ReactNode;
+  size?: "default" | "large" | "small";
 }) {
   const defaultSizes =
     "min-h-[400px] tablet:min-h-[640px] desktop:min-h-[clamp(640px,70vh,1350px)]";
@@ -92,13 +92,13 @@ function Wrapper({
 }
 
 function Title({
-  value,
-  className,
   center,
+  className,
+  value,
 }: {
-  value: string;
-  className?: string;
   center?: boolean;
+  className?: string;
+  value: string;
 }) {
   return (
     <h1
@@ -126,13 +126,13 @@ function Breadcrumb({ value }: { value?: React.ReactNode }) {
 }
 
 function Deck({
-  value,
   center,
   subtle,
+  value,
 }: {
-  value?: React.ReactNode;
   center?: boolean;
   subtle?: boolean;
+  value?: React.ReactNode;
 }) {
   if (!value) {
     return null;

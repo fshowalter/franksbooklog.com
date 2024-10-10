@@ -1,7 +1,8 @@
-import { getFluidCoverImageProps } from "src/api/covers";
-import { loadExcerptHtml, mostRecentReviews } from "src/api/reviews";
+import { getFluidCoverImageProps } from "~/api/covers";
+import { loadExcerptHtml, mostRecentReviews } from "~/api/reviews";
 
 import type { Props } from "./Home";
+
 import { CoverImageConfig } from "./HomeListItem";
 
 export async function getProps(): Promise<Props> {
@@ -14,6 +15,7 @@ export async function getProps(): Promise<Props> {
   );
 
   return {
+    deck: "Literature is a relative term.",
     values: await Promise.all(
       reviews.map(async (review) => {
         return {

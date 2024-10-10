@@ -1,19 +1,19 @@
 import type { ElementType } from "react";
 
-interface Props {
-  name: string;
-  notes?: string | null;
-  slug: string | null;
-  className?: string;
+type Props = {
   as?: ElementType;
-}
+  className?: string;
+  name: string;
+  notes?: null | string;
+  slug: null | string;
+};
 
 export function AuthorLink({
   as = "div",
+  className,
   name,
   notes,
   slug,
-  className,
 }: Props): JSX.Element {
   const Component = as;
 

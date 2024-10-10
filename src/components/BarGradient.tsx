@@ -1,11 +1,11 @@
 import React from "react";
 
 export function BarGradient({
-  value,
   maxValue,
+  value,
 }: {
-  value: number;
   maxValue: number;
+  value: number;
 }): JSX.Element {
   const styles = {
     "--bar-percent": `${(value / maxValue) * 100}%`,

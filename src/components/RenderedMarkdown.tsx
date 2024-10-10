@@ -1,14 +1,15 @@
 import type { ElementType } from "react";
-import { ccn } from "src/utils/concatClassNames";
+
+import { ccn } from "~/utils/concatClassNames";
 
 export function RenderedMarkdown({
-  className,
   as = "div",
+  className,
   text,
 }: {
-  text: string | null;
-  className?: string;
   as?: ElementType;
+  className?: string;
+  text: null | string;
 }): JSX.Element | null {
   if (!text) {
     return null;

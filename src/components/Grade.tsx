@@ -6,8 +6,8 @@ const gradeMap: Record<string, [string, string]> = {
   "A+": ["/svg/5-stars.svg", "5 stars (out of 5)"],
   "A-": ["/svg/4-half-stars.svg", "4.5 stars (out of 5)"],
   B: ["/svg/4-stars.svg", "4 stars (out of 5)"],
-  "B-": ["/svg/3-half-stars.svg", "3.5 stars (out of 5)"],
   "B+": ["/svg/4-stars.svg", "4 stars (out of 5)"],
+  "B-": ["/svg/3-half-stars.svg", "3.5 stars (out of 5)"],
   C: ["/svg/3-stars.svg", "3 stars (out of 5)"],
   "C+": ["/svg/3-stars.svg", "3 stars (out of 5)"],
   "C-": ["/svg/2-half-stars.svg", "2.5 stars (out of 5)"],
@@ -28,13 +28,13 @@ export function fileForGrade(value: string) {
 }
 
 export function Grade({
-  value,
-  height,
   className,
+  height,
+  value,
 }: {
-  value?: string | null;
-  height: 32 | 24 | 18 | 16;
   className?: string;
+  height: 16 | 18 | 24 | 32;
+  value?: null | string;
 }): JSX.Element | null {
   if (!value || value == "Abandoned") {
     return null;
@@ -47,15 +47,15 @@ export function Grade({
   return (
     <picture>
       <source
-        srcSet={src.replace(".svg", "-dark.svg")}
         media="(prefers-color-scheme: dark)"
+        srcSet={src.replace(".svg", "-dark.svg")}
       />
       <img
-        src={src}
         alt={`${value}: ${alt}`}
-        height={height}
-        width={width}
         className={className}
+        height={height}
+        src={src}
+        width={width}
       />
     </picture>
   );

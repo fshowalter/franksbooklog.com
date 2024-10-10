@@ -1,12 +1,13 @@
-import path from "node:path";
-
 import type { APIRoute, InferGetStaticPropsType } from "astro";
+
+import path from "node:path";
 import sharp from "sharp";
-import { getOpenGraphCoverAsBase64String } from "src/api/covers";
-import { allReviews } from "src/api/reviews";
-import { fileForGrade } from "src/components/Grade";
-import { OpenGraphImage } from "src/components/Review/OpenGraphImage";
-import { componentToImage } from "src/utils/componentToImage";
+
+import { getOpenGraphCoverAsBase64String } from "~/api/covers";
+import { allReviews } from "~/api/reviews";
+import { fileForGrade } from "~/components/Grade";
+import { OpenGraphImage } from "~/components/Review/OpenGraphImage";
+import { componentToImage } from "~/utils/componentToImage";
 
 export async function getStaticPaths() {
   const { reviews } = await allReviews();
@@ -45,10 +46,10 @@ export const GET: APIRoute = async function get({ props }) {
 
   const jpeg = await componentToImage(
     OpenGraphImage({
-      title: work.title,
       authors: work.authors.map((author) => author.name),
       cover: await getOpenGraphCoverAsBase64String(work),
       grade: gradeString,
+      title: work.title,
     }),
   );
 

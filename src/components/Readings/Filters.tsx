@@ -1,48 +1,49 @@
-import { DebouncedInput } from "src/components/DebouncedInput";
-import { SelectField } from "src/components/SelectField";
-import { SelectOptions } from "src/components/SelectOptions";
-import { YearInput } from "src/components/YearInput";
+import { DebouncedInput } from "~/components/DebouncedInput";
+import { SelectField } from "~/components/SelectField";
+import { SelectOptions } from "~/components/SelectOptions";
+import { YearInput } from "~/components/YearInput";
 
 import type { ActionType, Sort } from "./Readings.reducer";
+
 import { Actions } from "./Readings.reducer";
 
 export function Filters({
   dispatch,
-  distinctWorkYears,
-  distinctReadingYears,
-  distinctKinds,
   distinctEditions,
+  distinctKinds,
+  distinctReadingYears,
+  distinctWorkYears,
   sortValue,
 }: {
   dispatch: React.Dispatch<ActionType>;
-  distinctWorkYears: readonly string[];
-  distinctReadingYears: readonly string[];
-  distinctKinds: readonly string[];
   distinctEditions: readonly string[];
+  distinctKinds: readonly string[];
+  distinctReadingYears: readonly string[];
+  distinctWorkYears: readonly string[];
   sortValue: Sort;
 }): JSX.Element {
   return (
     <>
       <DebouncedInput
         label="Title"
-        placeholder="Enter all or part of a title"
         onInputChange={(value) =>
           dispatch({ type: Actions.FILTER_TITLE, value })
         }
+        placeholder="Enter all or part of a title"
       />
       <YearInput
         label="Work Year"
-        years={distinctWorkYears}
         onYearChange={(values) =>
           dispatch({ type: Actions.FILTER_PUBLISHED_YEAR, values })
         }
+        years={distinctWorkYears}
       />
       <YearInput
         label="Reading Year"
-        years={distinctReadingYears}
         onYearChange={(values) =>
           dispatch({ type: Actions.FILTER_READING_YEAR, values })
         }
+        years={distinctReadingYears}
       />
       <SelectField
         label="Kind"
@@ -67,7 +68,6 @@ export function Filters({
         <SelectOptions options={distinctEditions} />
       </SelectField>
       <SelectField
-        value={sortValue}
         label="Order By"
         onChange={(e) =>
           dispatch({
@@ -75,6 +75,7 @@ export function Filters({
             value: e.target.value as Sort,
           })
         }
+        value={sortValue}
       >
         <option value="progress-date-desc">Reading Date (Newest First)</option>
         <option value="progress-date-asc">Reading Date (Oldest First)</option>

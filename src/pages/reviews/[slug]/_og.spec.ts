@@ -1,19 +1,19 @@
+import { experimental_AstroContainer as AstroContainer } from "astro/container";
 import fs from "node:fs";
 import path from "node:path";
-
-import { experimental_AstroContainer as AstroContainer } from "astro/container";
-import { allReviews } from "src/api/reviews.ts";
 import { describe, it } from "vitest";
+
+import { allReviews } from "~/api/reviews.ts";
 
 import * as OgEndpoint from "./og.jpg.ts";
 
 const { reviews } = await allReviews();
 const testSlugs = new Set([
-  "the-skeptics-guide-to-the-universe-by-steven-novella",
-  "extreme-ownership-by-jocko-willink-leif-babin",
-  "roadside-pickup-by-richard-laymon",
   "altar-by-philip-fracassi",
+  "extreme-ownership-by-jocko-willink-leif-babin",
   "living-with-a-seal-by-jesse-itzler",
+  "roadside-pickup-by-richard-laymon",
+  "the-skeptics-guide-to-the-universe-by-steven-novella",
 ]);
 
 const testReviews = reviews.filter((review) => {
@@ -29,10 +29,10 @@ describe("/reviews/:slug/og.jpg", () => {
 
       // @ts-expect-error astro signature is wrong
       const response = await container.renderToResponse(OgEndpoint, {
-        routeType: "endpoint",
         props: {
           work: review,
         },
+        routeType: "endpoint",
       });
 
       const result = Buffer.from(await response.arrayBuffer());

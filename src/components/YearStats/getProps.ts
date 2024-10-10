@@ -1,6 +1,6 @@
-import { getFluidCoverImageProps } from "src/api/covers";
-import { allStatYears, statsForYear } from "src/api/yearStats";
-import { ListItemCoverImageConfig } from "src/components/ListItemCover";
+import { getFluidCoverImageProps } from "~/api/covers";
+import { allStatYears, statsForYear } from "~/api/yearStats";
+import { ListItemCoverImageConfig } from "~/components/ListItemCover";
 
 import type { Props } from "./YearStats";
 
@@ -10,12 +10,11 @@ export async function getProps(year: string): Promise<Props> {
   const stats = await statsForYear(year);
 
   return {
-    year,
-    stats,
     deck:
       [...distinctStatYears].reverse()[0] === year
         ? "A year in progress..."
         : "A Year in Review",
+    distinctStatYears,
     mostReadAuthors: await Promise.all(
       stats.mostReadAuthors.map(async (author) => {
         return {
@@ -34,6 +33,7 @@ export async function getProps(year: string): Promise<Props> {
         };
       }),
     ),
-    distinctStatYears,
+    stats,
+    year,
   };
 }

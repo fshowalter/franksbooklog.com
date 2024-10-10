@@ -1,52 +1,52 @@
-import { toSentenceArray } from "src/utils";
+import { toSentenceArray } from "~/utils";
 
 export function OpenGraphImage({
-  title,
   authors,
   cover,
   grade,
+  title,
 }: {
-  title: string;
   authors: string[];
   cover: string;
   grade: string | undefined;
+  title: string;
 }): JSX.Element {
   return (
     <div
       style={{
         display: "flex",
-        position: "relative",
         height: "630px",
+        position: "relative",
         width: "1200px",
       }}
     >
       <img
+        height={630}
         src={cover}
         style={{
           objectFit: "cover",
         }}
         width={420}
-        height={630}
       />
       <div
         style={{
+          alignItems: "flex-start",
+          backgroundColor: "#252525",
           display: "flex",
           flexDirection: "column",
+          height: "630px",
           justifyContent: "center",
+          paddingBottom: "32px",
           paddingLeft: "80px",
           paddingRight: "80px",
-          paddingBottom: "32px",
           paddingTop: "32px",
           width: "780px",
-          height: "630px",
-          backgroundColor: "#252525",
-          alignItems: "flex-start",
         }}
       >
         <div
           style={{
-            fontFamily: "ArgentumSans",
             color: "#b0b0b0",
+            fontFamily: "ArgentumSans",
             marginBottom: "24px",
             textTransform: "uppercase",
           }}
@@ -55,47 +55,47 @@ export function OpenGraphImage({
         </div>
         <div
           style={{
-            fontFamily: "FrankRuhlLibre",
             color: "#fff",
+            display: "flex",
+            flexWrap: "wrap",
+            fontFamily: "FrankRuhlLibre",
             fontSize: "64px",
             lineHeight: 1,
             textWrap: "balance",
-            display: "flex",
-            flexWrap: "wrap",
           }}
         >
           {title}
         </div>
         <div
           style={{
-            fontFamily: "FrankRuhlLibre",
             color: "#fff",
-            fontSize: "28px",
-            lineHeight: 1,
-            textWrap: "balance",
             display: "flex",
             flexWrap: "wrap",
+            fontFamily: "FrankRuhlLibre",
+            fontSize: "28px",
+            lineHeight: 1,
             marginTop: "16px",
+            textWrap: "balance",
           }}
         >
           by {toSentenceArray(authors)}
         </div>
         {grade ? (
           <img
-            src={grade}
             height={48}
-            width={240}
+            src={grade}
             style={{ marginTop: "36px" }}
+            width={240}
           />
         ) : (
           <div
             style={{
-              fontFamily: "ArgentumSans",
-              color: "white",
               backgroundColor: "red",
-              textTransform: "uppercase",
+              color: "white",
+              fontFamily: "ArgentumSans",
               marginTop: "36px",
               padding: "4px",
+              textTransform: "uppercase",
             }}
           >
             Abandoned

@@ -1,7 +1,7 @@
 export const collator = new Intl.Collator("en", {
-  sensitivity: "base",
   ignorePunctuation: true,
   numeric: true,
+  sensitivity: "base",
 });
 
 export function sortNumber(a: number, b: number): number {

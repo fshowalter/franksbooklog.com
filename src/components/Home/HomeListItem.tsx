@@ -1,54 +1,54 @@
-import type { CoverImageProps } from "src/api/covers";
-import type { ReviewWithExcerpt } from "src/api/reviews";
-import { AuthorLink } from "src/components/AuthorLink";
-import { Cover } from "src/components/Cover";
-import { Grade } from "src/components/Grade";
-import { toSentenceArray } from "src/utils";
+import type { CoverImageProps } from "~/api/covers";
+import type { ReviewWithExcerpt } from "~/api/reviews";
+
+import { AuthorLink } from "~/components/AuthorLink";
+import { Cover } from "~/components/Cover";
+import { Grade } from "~/components/Grade";
+import { toSentenceArray } from "~/utils";
 
 export const CoverImageConfig = {
-  width: 248,
   height: 372,
   sizes:
     "(max-width: 599px) 48vw, (max-width: 767px) 31vw, (max-width: 899px) calc((100vw - 96px) * 0.32), (max-width: 1279px) calc((100vw - 96px) * 0.22.75), (max-width: 1695px) calc((100vw - 160px) * 0.1416666667), 218px",
+  width: 248,
 };
 
 function formatDate(reviewDate: Date) {
   return reviewDate.toLocaleString("en-GB", {
     day: "2-digit",
     month: "short",
-    year: "numeric",
     timeZone: "UTC",
+    year: "numeric",
   });
 }
 
-export interface ListItemValue
-  extends Pick<
-    ReviewWithExcerpt,
-    | "grade"
-    | "sequence"
-    | "slug"
-    | "excerpt"
-    | "date"
-    | "title"
-    | "kind"
-    | "yearPublished"
-    | "authors"
-  > {
+export type ListItemValue = {
   coverImageProps: CoverImageProps;
-}
+} & Pick<
+  ReviewWithExcerpt,
+  | "authors"
+  | "date"
+  | "excerpt"
+  | "grade"
+  | "kind"
+  | "sequence"
+  | "slug"
+  | "title"
+  | "yearPublished"
+>;
 
 export function HomeListItem({
-  value,
   eagerLoadCoverImage,
+  value,
 }: {
-  value: ListItemValue;
   eagerLoadCoverImage: boolean;
+  value: ListItemValue;
 }): JSX.Element {
   return (
     <li className="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[14.16666667%]">
       <Cover
-        imageProps={value.coverImageProps}
         decoding="async"
+        imageProps={value.coverImageProps}
         {...CoverImageConfig}
         alt={`A cover of ${value.title} by ${toSentenceArray(
           value.authors.map((a) => a.name),
@@ -61,9 +61,9 @@ export function HomeListItem({
         </div>
         <div className="text-center text-md font-medium leading-6">
           <a
+            className="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] before:tablet:opacity-15"
             href={`/reviews/${value.slug}/`}
             rel="canonical"
-            className="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] before:tablet:opacity-15"
           >
             {value.title}
           </a>
@@ -78,17 +78,17 @@ export function HomeListItem({
               return (
                 <AuthorLink
                   as="span"
+                  className="font-normal text-accent"
                   key={author.slug}
                   name={author.name}
                   notes={author.notes}
                   slug={author.slug}
-                  className="font-normal text-accent"
                 />
               );
             }),
           )}
         </p>{" "}
-        <Grade value={value.grade} height={18} className="mt-2" />
+        <Grade className="mt-2" height={18} value={value.grade} />
       </div>
     </li>
   );

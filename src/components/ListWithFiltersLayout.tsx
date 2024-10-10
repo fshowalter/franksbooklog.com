@@ -4,20 +4,20 @@ import { Layout } from "./Layout";
 
 type Props = {
   backdrop: React.ReactNode;
-  subNav?: React.ReactNode;
   filters: React.ReactNode;
   list: React.ReactNode;
-  totalCount: number;
   listHeaderButtons?: React.ReactNode;
+  subNav?: React.ReactNode;
+  totalCount: number;
 };
 
 export function ListWithFiltersLayout({
-  totalCount,
   backdrop,
   filters,
   list,
   listHeaderButtons,
   subNav,
+  totalCount,
   ...rest
 }: Props): JSX.Element {
   const [filtersVisible, toggleFilters] = useState(false);
@@ -32,13 +32,13 @@ export function ListWithFiltersLayout({
             <div className="relative tablet:px-12 tablet-landscape:px-0">
               <div className="relative z-10 row-start-1 bg-default text-xs tablet:-mx-12 tablet:px-0 tablet-landscape:col-span-3 tablet-landscape:mx-0 tablet-landscape:w-full">
                 <ListHeader
-                  totalCount={totalCount}
+                  filtersVisible={filtersVisible}
+                  listHeaderButtons={listHeaderButtons}
                   onToggleFilters={() => {
                     console.log("boo");
                     toggleFilters(!filtersVisible);
                   }}
-                  filtersVisible={filtersVisible}
-                  listHeaderButtons={listHeaderButtons}
+                  totalCount={totalCount}
                 />
               </div>
               <div className="mx-auto max-w-screen-max grid-cols-[1fr_48px_minmax(398px,33%)] tablet-landscape:grid tablet-landscape:grid-rows-[auto_1fr]">
@@ -71,15 +71,15 @@ export function ListWithFiltersLayout({
 }
 
 function ListHeader({
-  totalCount,
-  onToggleFilters,
   filtersVisible,
   listHeaderButtons,
+  onToggleFilters,
+  totalCount,
 }: {
-  totalCount: number;
-  onToggleFilters: () => void;
   filtersVisible: boolean;
   listHeaderButtons?: ReactNode;
+  onToggleFilters: () => void;
+  totalCount: number;
 }): JSX.Element {
   return (
     <div className="mx-auto flex w-full max-w-screen-max flex-wrap items-baseline justify-between gap-x-4 gap-y-5 px-container py-10 font-sans font-medium uppercase tracking-wide text-subtle">
@@ -95,8 +95,8 @@ function ListHeader({
         </div>
       )}
       <button
-        onClick={onToggleFilters}
         className={`ml-auto flex justify-center gap-x-4 text-nowrap px-4 py-2 uppercase text-muted shadow-all tablet-landscape:hidden`}
+        onClick={onToggleFilters}
         style={{
           backgroundColor: filtersVisible
             ? "var(--bg-subtle)"

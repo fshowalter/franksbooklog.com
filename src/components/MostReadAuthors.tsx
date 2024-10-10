@@ -1,27 +1,27 @@
-import type { CoverImageProps } from "src/api/covers";
+import type { CoverImageProps } from "~/api/covers";
 
 import { ListItem } from "./ListItem";
 import { ListItemCover } from "./ListItemCover";
 import { ListItemTitle } from "./ListItemTitle";
 
-interface ReadingSubListItemValue {
-  sequence: number;
+type ReadingSubListItemValue = {
+  coverImageProps: CoverImageProps;
   date: string;
   edition: string;
   kind: string;
+  reviewed: boolean;
+  sequence: number;
+  slug: null | string;
   title: string;
   yearPublished: string;
-  slug: string | null;
-  coverImageProps: CoverImageProps;
-  reviewed: boolean;
-}
+};
 
-interface MostReadAuthorsValue {
-  name: string;
-  slug: string | null;
+type MostReadAuthorsValue = {
   count: number;
+  name: string;
   readings: ReadingSubListItemValue[];
-}
+  slug: null | string;
+};
 
 export function MostReadAuthors({
   values,
@@ -40,7 +40,7 @@ export function MostReadAuthors({
       <div className="w-full tablet:whitespace-nowrap">
         {values.map((value) => {
           return (
-            <div key={value.name} className="py-3">
+            <div className="py-3" key={value.name}>
               <div className="flex justify-between px-container tablet:px-0">
                 <div className="font-sans text-sm text-muted">
                   <Name value={value} />
@@ -95,8 +95,8 @@ function ReadingSubListItem({ value }: { value: ReadingSubListItemValue }) {
       <ListItemCover imageProps={value.coverImageProps} />
       <div className="flex grow flex-col gap-y-1">
         <ListItemTitle
-          title={value.title}
           slug={value.reviewed ? value.slug : null}
+          title={value.title}
         />
         <div className="-mt-px font-sans text-xs text-muted">{value.date}</div>
         <div className="mt-1 font-sans text-xs font-light text-muted">

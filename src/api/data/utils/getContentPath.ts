@@ -1,7 +1,7 @@
 import { join } from "path";
 
 export function getContentPath(
-  kind: "data" | "reviews" | "readings" | "pages",
+  kind: "data" | "pages" | "readings" | "reviews",
   path?: string,
 ) {
   if (path) {

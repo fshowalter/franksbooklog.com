@@ -1,4 +1,4 @@
-import { ccn } from "src/utils/concatClassNames";
+import { ccn } from "~/utils/concatClassNames";
 
 export function Logo({ className }: { className?: string }) {
   return (

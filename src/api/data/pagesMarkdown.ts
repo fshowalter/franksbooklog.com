@@ -1,21 +1,20 @@
-import { promises as fs } from "node:fs";
-
 import matter from "gray-matter";
+import { promises as fs } from "node:fs";
 import { z } from "zod";
 
 import { getContentPath } from "./utils/getContentPath";
 
 const pagesMarkdownDirectory = getContentPath("pages");
 
-interface MarkdownPage {
+type MarkdownPage = {
+  rawContent: string;
   slug: string;
   title: string;
-  rawContent: string;
-}
+};
 
 const DataSchema = z.object({
-  title: z.string(),
   slug: z.string(),
+  title: z.string(),
 });
 
 async function parseAllPagesMarkdown() {
@@ -32,13 +31,13 @@ async function parseAllPagesMarkdown() {
           "utf8",
         );
 
-        const { data, content } = matter(fileContents);
+        const { content, data } = matter(fileContents);
         const greyMatter = DataSchema.parse(data);
 
         const markdownPage: MarkdownPage = {
+          rawContent: content,
           slug: greyMatter.slug,
           title: greyMatter.title,
-          rawContent: content,
         };
 
         return markdownPage;

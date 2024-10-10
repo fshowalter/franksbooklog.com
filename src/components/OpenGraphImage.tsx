@@ -1,6 +1,6 @@
 export function OpenGraphImage({
-  title,
   sectionHead = "Frank's Book Log",
+  title,
 }: {
   sectionHead?: string;
   title: string;
@@ -8,30 +8,30 @@ export function OpenGraphImage({
   return (
     <div
       style={{
-        display: "flex",
-        position: "relative",
-        height: "630px",
-        width: "1200px",
         backgroundColor: "#f2f0e8",
+        display: "flex",
+        height: "630px",
+        position: "relative",
+        width: "1200px",
       }}
     >
       <div
         style={{
+          bottom: 0,
           display: "flex",
           flexDirection: "column",
+          paddingBottom: "64px",
           paddingLeft: "80px",
           paddingRight: "80px",
-          paddingBottom: "64px",
           paddingTop: "32px",
-          width: "1200px",
           position: "absolute",
-          bottom: 0,
+          width: "1200px",
         }}
       >
         <div
           style={{
-            fontFamily: "ArgentumSans",
             color: "rgb(0 0 0 / 60%)",
+            fontFamily: "ArgentumSans",
             marginBottom: "16px",
             textTransform: "uppercase",
           }}
@@ -40,15 +40,15 @@ export function OpenGraphImage({
         </div>
         <div
           style={{
-            fontFamily: "ArgentumSans",
             color: "rgb(0 0 0 / 75%)",
-            fontSize: "88px",
-            lineHeight: 1,
-            textWrap: "balance",
             display: "flex",
             flexWrap: "wrap",
+            fontFamily: "ArgentumSans",
+            fontSize: "88px",
             fontWeight: 600,
+            lineHeight: 1,
             textTransform: "uppercase",
+            textWrap: "balance",
           }}
         >
           {title}

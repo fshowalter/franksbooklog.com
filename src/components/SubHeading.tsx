@@ -1,12 +1,12 @@
-import { ccn } from "src/utils/concatClassNames";
+import { ccn } from "~/utils/concatClassNames";
 
 export function SubHeading({
-  children,
   as,
+  children,
   className,
 }: {
-  children: React.ReactNode;
   as: "h2" | "h3" | "h4" | "h5";
+  children: React.ReactNode;
   className?: string;
 }) {
   const Component = as;

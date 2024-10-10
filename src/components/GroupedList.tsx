@@ -1,20 +1,20 @@
 import { Button } from "./Button";
 
 export function GroupedList<T>({
-  groupedValues,
-  visibleCount,
-  totalCount,
-  onShowMore,
   children,
   className,
+  groupedValues,
+  onShowMore,
+  totalCount,
+  visibleCount,
   ...rest
 }: {
-  groupedValues: Map<string, Iterable<T>>;
-  visibleCount: number;
-  totalCount: number;
-  onShowMore: () => void;
   children: (item: T) => React.ReactNode;
   className?: string;
+  groupedValues: Map<string, Iterable<T>>;
+  onShowMore: () => void;
+  totalCount: number;
+  visibleCount: number;
 }): JSX.Element {
   return (
     <>
@@ -39,17 +39,17 @@ export function GroupedList<T>({
 }
 
 function GroupingListItem({
-  groupText,
   children,
+  groupText,
   zIndex,
 }: {
-  groupText: string;
   children: React.ReactNode;
+  groupText: string;
   zIndex: number;
 }) {
   return (
     <li className="block">
-      <div style={{ zIndex: zIndex }} className="pt-0 text-md">
+      <div className="pt-0 text-md" style={{ zIndex: zIndex }}>
         <div className="mb-1 max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4">
           {groupText}
         </div>

@@ -1,9 +1,9 @@
 export function StatsCallout({
-  value,
   label,
+  value,
 }: {
-  value: number;
   label: string;
+  value: number;
 }): JSX.Element {
   return (
     <div className="flex size-36 flex-col justify-center rounded-full bg-stripe text-center text-default shadow-all">

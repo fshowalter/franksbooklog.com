@@ -1,7 +1,8 @@
-import { DebouncedInput } from "src/components/DebouncedInput";
-import { SelectField } from "src/components/SelectField";
+import { DebouncedInput } from "~/components/DebouncedInput";
+import { SelectField } from "~/components/SelectField";
 
 import type { ActionType, Sort } from "./Authors.reducer";
+
 import { Actions } from "./Authors.reducer";
 
 export function Filters({
@@ -15,13 +16,12 @@ export function Filters({
     <>
       <DebouncedInput
         label="Name"
-        placeholder="Enter all or part of a name"
         onInputChange={(value) =>
           dispatch({ type: Actions.FILTER_NAME, value })
         }
+        placeholder="Enter all or part of a name"
       />
       <SelectField
-        value={sortValue}
         label="Order By"
         onChange={(e) =>
           dispatch({
@@ -29,6 +29,7 @@ export function Filters({
             value: e.target.value as Sort,
           })
         }
+        value={sortValue}
       >
         <option value="name-asc">Name (A &rarr; Z)</option>
         <option value="name-desc">Name (Z &rarr; A)</option>

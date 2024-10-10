@@ -1,42 +1,43 @@
-import type { CoverImageProps } from "src/api/covers";
-import type { Review, ReviewWithContent } from "src/api/reviews";
-import { AuthorLink } from "src/components/AuthorLink";
-import { Cover } from "src/components/Cover";
-import { Grade } from "src/components/Grade";
-import { LongFormText } from "src/components/LongFormText";
-import { toSentenceArray } from "src/utils/";
+import type { CoverImageProps } from "~/api/covers";
+import type { Review, ReviewWithContent } from "~/api/reviews";
 
-import { Layout } from "../Layout";
-import { MoreReviews } from "../MoreReviews";
-import { SubHeading } from "../SubHeading";
+import { AuthorLink } from "~/components/AuthorLink";
+import { Cover } from "~/components/Cover";
+import { Grade } from "~/components/Grade";
+import { Layout } from "~/components/Layout";
+import { LongFormText } from "~/components/LongFormText";
+import { MoreReviews } from "~/components/MoreReviews";
+import { SubHeading } from "~/components/SubHeading";
+import { toSentenceArray } from "~/utils/";
+
 import { IncludedWorks } from "./IncludedWorks";
 import { ReadingHistoryListItem } from "./ReadingHistoryListItem";
 import { StructuredData } from "./StructuredData";
 
 export const CoverImageConfig = {
-  width: 248,
   height: 372,
+  width: 248,
 };
 
-export interface Props {
-  value: ReviewWithContent;
+export type Props = {
   coverImageProps: CoverImageProps;
-  structuredDataCoverSrc: string;
   moreReviews: React.ComponentProps<typeof MoreReviews>["values"];
-}
+  structuredDataCoverSrc: string;
+  value: ReviewWithContent;
+};
 
 export function Review({
-  value,
   coverImageProps,
-  structuredDataCoverSrc,
   moreReviews,
+  structuredDataCoverSrc,
+  value,
 }: Props): JSX.Element {
   return (
-    <Layout hasBackdrop={false} className="flex flex-col" data-pagefind-body>
+    <Layout className="flex flex-col" data-pagefind-body hasBackdrop={false}>
       <header className="mb-12 flex flex-col items-center px-[8%] pt-10">
         <h1
-          data-pagefind-meta="title"
           className="text-center text-4xl desktop:text-6xl"
+          data-pagefind-meta="title"
         >
           {value.title}
           {value.subtitle && (
@@ -46,16 +47,16 @@ export function Review({
           )}
         </h1>
         <Authors
-          values={value.authors}
           className="mt-4 text-center text-md text-muted"
+          values={value.authors}
         />
         <div className="mt-4">
           <ReviewGrade value={value.grade} />
         </div>
         <YearAndKind
-          yearPublished={value.yearPublished}
-          kind={value.kind}
           className="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+          kind={value.kind}
+          yearPublished={value.yearPublished}
         />
         <ReviewCover coverImageProps={coverImageProps} />
       </header>
@@ -82,35 +83,35 @@ export function Review({
       </div>
 
       <div
-        data-pagefind-ignore
         className="flex w-full flex-col items-center gap-y-12 bg-subtle pb-32 pt-16 tablet:pt-8 desktop:gap-y-24"
+        data-pagefind-ignore
       >
         <MoreReviews values={moreReviews}>
           <SubHeading as="h2">
             More{" "}
-            <a href={`/reviews/`} className="text-accent">
+            <a className="text-accent" href={`/reviews/`}>
               Reviews
             </a>
           </SubHeading>
         </MoreReviews>
       </div>
       <StructuredData
-        title={value.title}
-        grade={value.grade}
         coverImgSrc={structuredDataCoverSrc}
+        grade={value.grade}
+        title={value.title}
       />
     </Layout>
   );
 }
 
 function YearAndKind({
-  yearPublished,
-  kind,
   className,
+  kind,
+  yearPublished,
 }: {
-  yearPublished: ReviewWithContent["yearPublished"];
-  kind: ReviewWithContent["kind"];
   className: string;
+  kind: ReviewWithContent["kind"];
+  yearPublished: ReviewWithContent["yearPublished"];
 }) {
   return (
     <div className={className}>
@@ -120,11 +121,11 @@ function YearAndKind({
 }
 
 function Authors({
-  values,
   className,
+  values,
 }: {
-  values: ReviewWithContent["authors"];
   className: string;
+  values: ReviewWithContent["authors"];
 }) {
   return (
     <div className={className}>
@@ -132,11 +133,11 @@ function Authors({
       {toSentenceArray(
         values.map((author) => (
           <AuthorLink
+            className="inline-block text-accent"
             key={author.slug}
             name={author.name}
-            slug={author.slug}
             notes={author.notes}
-            className="inline-block text-accent"
+            slug={author.slug}
           />
         )),
       )}
@@ -151,29 +152,29 @@ function ReviewCover({
 }) {
   return (
     <div
-      data-pagefind-meta={`image:${coverImageProps.src}`}
       className="relative my-12 flex h-[340px] w-full max-w-popout flex-col items-center"
+      data-pagefind-meta={`image:${coverImageProps.src}`}
     >
       <div className="cover-clip-path absolute inset-0 overflow-hidden">
         <div
+          className={
+            "absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
+          }
           style={{
             backgroundColor: "var(--bg-default)",
             backgroundImage: `linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(${coverImageProps.src})`,
           }}
-          className={
-            "absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
-          }
         />
         <div className="absolute size-full backdrop-blur" />
       </div>
       <div className="relative -top-4 z-10 h-[372px] shadow-[0_5px_20px_rgba(49,46,42,0.22)]">
         <Cover
-          imageProps={coverImageProps}
-          width={CoverImageConfig.width}
-          height={CoverImageConfig.height}
-          loading={"eager"}
-          decoding="async"
           className="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
+          decoding="async"
+          height={CoverImageConfig.height}
+          imageProps={coverImageProps}
+          loading={"eager"}
+          width={CoverImageConfig.width}
         />
       </div>
     </div>
@@ -188,5 +189,5 @@ function ReviewGrade({ value }: { value: ReviewWithContent["grade"] }) {
       </div>
     );
   }
-  return <Grade value={value} height={32} />;
+  return <Grade height={32} value={value} />;
 }

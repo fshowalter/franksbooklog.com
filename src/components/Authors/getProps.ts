@@ -1,6 +1,6 @@
-import { allAuthors } from "src/api/authors";
-import { getAvatarImageProps } from "src/api/avatars";
-import { ListItemAvatarImageConfig } from "src/components/ListItemAvatar";
+import { allAuthors } from "~/api/authors";
+import { getAvatarImageProps } from "~/api/avatars";
+import { ListItemAvatarImageConfig } from "~/components/ListItemAvatar";
 
 import type { ListItemValue, Props } from "./Authors";
 
@@ -12,15 +12,15 @@ export async function getProps(): Promise<Props> {
   const values = await Promise.all(
     authors.map(async (author) => {
       const value: ListItemValue = {
-        name: author.name,
-        slug: author.slug,
-        sortName: author.sortName,
-        reviewedWorkCount: author.reviewedWorkCount,
-        workCount: author.workCount,
         avatarImageProps: await getAvatarImageProps(
           author.slug,
           ListItemAvatarImageConfig,
         ),
+        name: author.name,
+        reviewedWorkCount: author.reviewedWorkCount,
+        slug: author.slug,
+        sortName: author.sortName,
+        workCount: author.workCount,
       };
 
       return value;
@@ -28,8 +28,8 @@ export async function getProps(): Promise<Props> {
   );
 
   return {
-    values,
-    initialSort: "name-asc",
     deck: '"There is nothing to writing. All you do is sit down at a typewriter and bleed."',
+    initialSort: "name-asc",
+    values,
   };
 }

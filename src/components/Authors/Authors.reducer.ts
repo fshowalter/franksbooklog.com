@@ -1,17 +1,13 @@
-import {
-  buildGroupValues,
-  filterTools,
-  sortNumber,
-  sortString,
-} from "src/utils";
+import type { FilterableState } from "~/utils";
 
-import type { FilterableState } from "../../utils";
+import { buildGroupValues, filterTools, sortNumber, sortString } from "~/utils";
+
 import type { ListItemValue } from "./Authors";
 
 export enum Actions {
   FILTER_NAME = "FILTER_NAME",
-  SORT = "SORT",
   SHOW_MORE = "SHOW_MORE",
+  SORT = "SORT",
 }
 
 export type Sort =
@@ -72,40 +68,40 @@ type State = FilterableState<ListItemValue, Sort, Map<string, ListItemValue[]>>;
 const SHOW_COUNT_DEFAULT = 100;
 
 export function initState({
-  values,
   initialSort,
+  values,
 }: {
-  values: ListItemValue[];
   initialSort: Sort;
+  values: ListItemValue[];
 }): State {
   return {
     allValues: values,
     filteredValues: values,
+    filters: {},
     groupedValues: groupValues(
       values.slice(0, SHOW_COUNT_DEFAULT),
       initialSort,
     ),
-    filters: {},
     showCount: SHOW_COUNT_DEFAULT,
     sortValue: initialSort,
   };
 }
 
-interface FilterNameAction {
+type FilterNameAction = {
   type: Actions.FILTER_NAME;
   value: string;
-}
+};
 
-interface SortAction {
+type SortAction = {
   type: Actions.SORT;
   value: Sort;
-}
+};
 
-interface ShowMoreAction {
+type ShowMoreAction = {
   type: Actions.SHOW_MORE;
-}
+};
 
-export type ActionType = FilterNameAction | SortAction | ShowMoreAction;
+export type ActionType = FilterNameAction | ShowMoreAction | SortAction;
 
 export function reducer(state: State, action: ActionType): State {
   let filteredValues;
@@ -126,9 +122,9 @@ export function reducer(state: State, action: ActionType): State {
       );
       return {
         ...state,
-        sortValue: action.value,
         filteredValues,
         groupedValues,
+        sortValue: action.value,
       };
     }
     case Actions.SHOW_MORE: {

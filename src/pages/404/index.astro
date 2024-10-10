@@ -1,17 +1,17 @@
 ---
-import { Article } from "src/components/Article/Article";
-import { getProps } from "src/components/Article/getProps";
-import Layout from "src/layouts/Layout.astro";
+import { Article } from "~/components/Article/Article";
+import { getProps } from "~/components/Article/getProps";
+import Layout from "~/layouts/Layout.astro";
 
 const slug = "not-found";
 const deck = '"Dick Laurent is dead."';
 
 const props = await getProps({
-  slug,
   deck,
+  slug,
 });
 ---
 
-<Layout title="404: Not Found" description={deck}>
+<Layout description={deck} noOpenGraph title="404: Not Found">
   <Article {...props} />
 </Layout>

@@ -1,11 +1,11 @@
-import { getFluidCoverImageProps } from "src/api/covers";
-import { allShelfWorks } from "src/api/shelf";
-import { ListItemCoverImageConfig } from "src/components/ListItemCover";
+import { getFluidCoverImageProps } from "~/api/covers";
+import { allShelfWorks } from "~/api/shelf";
+import { ListItemCoverImageConfig } from "~/components/ListItemCover";
 
 import type { ListItemValue, Props } from "./Shelf";
 
 export async function getProps(): Promise<Props> {
-  const { works, distinctPublishedYears, distinctKinds, distinctAuthors } =
+  const { distinctAuthors, distinctKinds, distinctPublishedYears, works } =
     await allShelfWorks();
 
   works.sort((a, b) =>
@@ -15,24 +15,24 @@ export async function getProps(): Promise<Props> {
   const values = await Promise.all(
     works.map(async (work) => {
       const value: ListItemValue = {
-        title: work.title,
-        slug: work.slug,
-        sortTitle: work.sortTitle,
-        coverImageProps: await getFluidCoverImageProps(
-          work,
-          ListItemCoverImageConfig,
-        ),
-        yearPublished: work.yearPublished,
-        kind: work.kind,
         authors: work.authors.map((author) => {
           const authorValue: ListItemValue["authors"][number] = {
             name: author.name,
-            sortName: author.sortName,
             notes: author.notes,
+            sortName: author.sortName,
           };
 
           return authorValue;
         }),
+        coverImageProps: await getFluidCoverImageProps(
+          work,
+          ListItemCoverImageConfig,
+        ),
+        kind: work.kind,
+        slug: work.slug,
+        sortTitle: work.sortTitle,
+        title: work.title,
+        yearPublished: work.yearPublished,
       };
 
       return value;
@@ -40,10 +40,11 @@ export async function getProps(): Promise<Props> {
   );
 
   return {
-    values,
+    deck: `"Classic: A book which people praise and don’t read."`,
+    distinctAuthors,
     distinctKinds,
     distinctPublishedYears,
-    distinctAuthors,
     initialSort: "author-asc",
+    values,
   };
 }

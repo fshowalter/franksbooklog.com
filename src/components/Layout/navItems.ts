@@ -1,44 +1,44 @@
 export type NavItem = {
-  text: string;
-  target: string;
   subItems: NavItem[];
+  target: string;
+  text: string;
 };
 
 export const navItems: NavItem[] = [
   {
-    text: "Home",
+    subItems: [],
     target: "/",
-    subItems: [],
+    text: "Home",
   },
   {
-    text: "How I Grade",
+    subItems: [],
     target: "/how-i-grade/",
-    subItems: [],
+    text: "How I Grade",
   },
   {
-    text: "Reviews",
+    subItems: [],
     target: "/reviews/",
-    subItems: [],
+    text: "Reviews",
   },
   {
-    text: "Reading Log",
-    target: "/readings/",
     subItems: [
       {
-        text: "Stats",
-        target: "/readings/stats/",
         subItems: [],
+        target: "/readings/stats/",
+        text: "Stats",
       },
     ],
+    target: "/readings/",
+    text: "Reading Log",
   },
   {
-    text: "Authors",
+    subItems: [],
     target: "/authors/",
-    subItems: [],
+    text: "Authors",
   },
   {
-    text: "Shelf",
-    target: "/shelf/",
     subItems: [],
+    target: "/shelf/",
+    text: "Shelf",
   },
 ];
