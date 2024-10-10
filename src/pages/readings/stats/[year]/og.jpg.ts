@@ -1,8 +1,9 @@
 import type { APIRoute } from "astro";
 import type { InferGetStaticPropsType } from "astro";
-import { allStatYears } from "src/api/yearStats";
-import { OpenGraphImage } from "src/components/OpenGraphImage";
-import { componentToImage } from "src/utils/componentToImage";
+
+import { allStatYears } from "~/api/yearStats";
+import { OpenGraphImage } from "~/components/OpenGraphImage";
+import { componentToImage } from "~/utils/componentToImage";
 
 export async function getStaticPaths() {
   const statYears = await allStatYears();

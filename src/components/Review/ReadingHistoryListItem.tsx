@@ -1,26 +1,27 @@
-import type { ReviewWithContent } from "src/api/reviews";
-import { BarGradient } from "src/components/BarGradient";
-import { DateIcon } from "src/components/DateIcon";
-import { RenderedMarkdown } from "src/components/RenderedMarkdown";
+import type { ReviewWithContent } from "~/api/reviews";
+
+import { BarGradient } from "~/components/BarGradient";
+import { DateIcon } from "~/components/DateIcon";
+import { RenderedMarkdown } from "~/components/RenderedMarkdown";
 
 const dateFormat = new Intl.DateTimeFormat("en-US", {
-  weekday: "short",
-  month: "short",
   day: "numeric",
-  year: "numeric",
+  month: "short",
   timeZone: "UTC",
+  weekday: "short",
+  year: "numeric",
 });
 
 const progressDateFormat = new Intl.DateTimeFormat("en-GB", {
-  month: "short",
   day: "numeric",
-  year: "numeric",
+  month: "short",
   timeZone: "UTC",
+  year: "numeric",
 });
 
-interface Props {
+type Props = {
   value: ReviewWithContent["readings"][0];
-}
+};
 
 export function ReadingHistoryListItem({ value }: Props) {
   return (
@@ -75,7 +76,7 @@ function EditionNotes({
   return (
     <span className="font-light tracking-normal text-subtle">
       (
-      <RenderedMarkdown text={value} className="leading-none" as="span" />)
+      <RenderedMarkdown as="span" className="leading-none" text={value} />)
     </span>
   );
 }
@@ -116,8 +117,8 @@ function Details({ value }: { value: ReviewWithContent["readings"][0] }) {
 
           return (
             <li
-              key={entryDate}
               className="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr,auto,auto,1fr] py-3"
+              key={entryDate}
             >
               <div className="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid">
                 <div className="">{entryDate}</div>
@@ -127,7 +128,7 @@ function Details({ value }: { value: ReviewWithContent["readings"][0] }) {
               </div>
               <div className="col-span-2 col-start-2 row-start-3 bg-subtle">
                 {progressValue && (
-                  <BarGradient value={progressValue} maxValue={100} />
+                  <BarGradient maxValue={100} value={progressValue} />
                 )}
               </div>
             </li>

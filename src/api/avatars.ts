@@ -1,15 +1,14 @@
+import { getImage } from "astro:assets";
 import fs from "node:fs";
 import path from "node:path";
-
-import { getImage } from "astro:assets";
 import sharp from "sharp";
 
 import { normalizeSources } from "./utils/normalizeSources";
 
-export interface AvatarImageProps {
+export type AvatarImageProps = {
   src: string;
   srcSet: string;
-}
+};
 
 const images = import.meta.glob<{ default: ImageMetadata }>(
   "/content/assets/avatars/*.png",
@@ -60,7 +59,7 @@ async function getAvatarFile(slug: string) {
 
 export async function getAvatarImageProps(
   slug: string,
-  { width, height }: { width: number; height: number },
+  { height, width }: { height: number; width: number },
 ): Promise<AvatarImageProps | null> {
   const avatarFile = await getAvatarFile(slug);
 
@@ -69,16 +68,16 @@ export async function getAvatarImageProps(
   }
 
   const optimizedImage = await getImage({
+    densities: [1, 2],
+    format: "avif",
+    height: height,
+    quality: 80,
     src: avatarFile.default,
     width: width,
-    height: height,
-    format: "avif",
-    densities: [1, 2],
-    quality: 80,
   });
 
   return {
-    srcSet: normalizeSources(optimizedImage.srcSet.attribute),
     src: normalizeSources(optimizedImage.src),
+    srcSet: normalizeSources(optimizedImage.srcSet.attribute),
   };
 }

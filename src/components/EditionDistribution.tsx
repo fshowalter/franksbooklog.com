@@ -5,5 +5,5 @@ export function EditionDistribution({
 }: {
   values: React.ComponentProps<typeof Distribution>["values"];
 }): JSX.Element {
-  return <Distribution values={values} title="By Edition" />;
+  return <Distribution title="By Edition" values={values} />;
 }

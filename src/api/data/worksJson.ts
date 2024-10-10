@@ -1,5 +1,4 @@
 import { promises as fs } from "node:fs";
-
 import { z } from "zod";
 
 import { getContentPath } from "./utils/getContentPath";
@@ -8,18 +7,18 @@ const worksJsonFile = getContentPath("data", "works.json");
 
 const AuthorSchema = z.object({
   name: z.string(),
-  sortName: z.string(),
-  slug: z.string(),
   notes: z.nullable(z.string()),
+  slug: z.string(),
+  sortName: z.string(),
 });
 
 const WorkJsonSchema = z.object({
-  slug: z.string(),
-  includedInSlugs: z.array(z.string()),
-  title: z.string(),
-  subtitle: z.nullable(z.string()),
   authors: z.array(AuthorSchema),
+  includedInSlugs: z.array(z.string()),
   includedWorkSlugs: z.array(z.string()),
+  slug: z.string(),
+  subtitle: z.nullable(z.string()),
+  title: z.string(),
 });
 
 export type WorkJson = z.infer<typeof WorkJsonSchema>;

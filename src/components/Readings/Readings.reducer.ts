@@ -1,19 +1,20 @@
-import type { FilterableState } from "src/utils";
-import { filterTools, sortString } from "src/utils";
+import type { FilterableState } from "~/utils";
+
+import { filterTools, sortString } from "~/utils";
 
 import type { ListItemValue } from "./Readings";
 
 const SHOW_COUNT_DEFAULT = 100;
 
-export type Sort = "progress-date-desc" | "progress-date-asc";
+export type Sort = "progress-date-asc" | "progress-date-desc";
 
-const { updateFilter, clearFilter } = filterTools(sortValues, groupValues);
+const { clearFilter, updateFilter } = filterTools(sortValues, groupValues);
 
 function sortValues(values: ListItemValue[], sortOrder: Sort) {
   const sortMap: Record<Sort, (a: ListItemValue, b: ListItemValue) => number> =
     {
-      "progress-date-desc": (a, b) => sortString(a.sequence, b.sequence) * -1,
       "progress-date-asc": (a, b) => sortString(a.sequence, b.sequence),
+      "progress-date-desc": (a, b) => sortString(a.sequence, b.sequence) * -1,
     };
 
   const comparer = sortMap[sortOrder];
@@ -57,11 +58,11 @@ type State = FilterableState<
 >;
 
 export function initState({
-  values,
   initialSort,
+  values,
 }: {
-  values: ListItemValue[];
   initialSort: Sort;
+  values: ListItemValue[];
 }): State {
   return {
     allValues: values,
@@ -74,57 +75,57 @@ export function initState({
 }
 
 export enum Actions {
-  FILTER_TITLE = "FILTER_TITLE",
-  FILTER_KIND = "FILTER_KIND",
   FILTER_EDITION = "FILTER_EDITION",
+  FILTER_KIND = "FILTER_KIND",
   FILTER_PUBLISHED_YEAR = "FILTER_PUBLISHED_YEAR",
   FILTER_READING_YEAR = "FILTER_READING_YEAR",
-  SORT = "SORT",
+  FILTER_TITLE = "FILTER_TITLE",
   SHOW_MORE = "SHOW_MORE",
+  SORT = "SORT",
 }
 
-interface FilterTitleAction {
+type FilterTitleAction = {
   type: Actions.FILTER_TITLE;
   value: string;
-}
+};
 
-interface FilterKindAction {
+type FilterKindAction = {
   type: Actions.FILTER_KIND;
   value: string;
-}
+};
 
-interface FilterEditionAction {
+type FilterEditionAction = {
   type: Actions.FILTER_EDITION;
   value: string;
-}
+};
 
-interface FilterPublishedYearAction {
+type FilterPublishedYearAction = {
   type: Actions.FILTER_PUBLISHED_YEAR;
   values: [string, string];
-}
+};
 
-interface FilterReadingYearAction {
+type FilterReadingYearAction = {
   type: Actions.FILTER_READING_YEAR;
   values: [string, string];
-}
+};
 
-interface SortAction {
+type SortAction = {
   type: Actions.SORT;
   value: Sort;
-}
+};
 
-interface ShowMoreAction {
+type ShowMoreAction = {
   type: Actions.SHOW_MORE;
-}
+};
 
 export type ActionType =
-  | FilterTitleAction
+  | FilterEditionAction
+  | FilterKindAction
   | FilterPublishedYearAction
   | FilterReadingYearAction
-  | FilterKindAction
-  | FilterEditionAction
-  | SortAction
-  | ShowMoreAction;
+  | FilterTitleAction
+  | ShowMoreAction
+  | SortAction;
 
 export function reducer(state: State, action: ActionType): State {
   let groupedValues;
@@ -174,9 +175,9 @@ export function reducer(state: State, action: ActionType): State {
       groupedValues = groupValues(filteredValues.slice(0, state.showCount));
       return {
         ...state,
-        sortValue: action.value,
         filteredValues,
         groupedValues,
+        sortValue: action.value,
       };
     }
     case Actions.SHOW_MORE: {

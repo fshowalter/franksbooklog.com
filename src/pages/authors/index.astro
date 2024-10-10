@@ -1,11 +1,11 @@
 ---
-import { Authors } from "src/components/Authors/Authors";
-import { getProps } from "src/components/Authors/getProps";
-import Layout from "src/layouts/Layout.astro";
+import { Authors } from "~/components/Authors/Authors";
+import { getProps } from "~/components/Authors/getProps";
+import Layout from "~/layouts/Layout.astro";
 
 const props = await getProps();
 ---
 
-<Layout title="Authors" description={props.deck}>
+<Layout description={props.deck} title="Authors">
   <Authors client:load {...props} />
 </Layout>

@@ -1,5 +1,4 @@
 import { promises as fs } from "node:fs";
-
 import { z } from "zod";
 
 import { getContentPath } from "./utils/getContentPath";
@@ -7,8 +6,8 @@ import { getContentPath } from "./utils/getContentPath";
 const alltimeStatsFile = getContentPath("data", "all-time-stats.json");
 
 const Distribution = z.object({
-  name: z.string(),
   count: z.number(),
+  name: z.string(),
 });
 
 const GradeDistribution = Distribution.extend({
@@ -16,33 +15,33 @@ const GradeDistribution = Distribution.extend({
 });
 
 const MostReadAuthorReading = z.object({
-  sequence: z.number(),
   date: z.string(),
-  slug: z.string(),
-  title: z.string(),
   edition: z.string(),
   includedInSlugs: z.array(z.string()),
-  yearPublished: z.string(),
-  reviewed: z.boolean(),
   kind: z.string(),
+  reviewed: z.boolean(),
+  sequence: z.number(),
+  slug: z.string(),
+  title: z.string(),
+  yearPublished: z.string(),
 });
 
 const MostReadAuthorSchema = z.object({
-  name: z.string(),
   count: z.number(),
-  slug: z.nullable(z.string()),
+  name: z.string(),
   readings: z.array(MostReadAuthorReading),
+  slug: z.nullable(z.string()),
 });
 
 const AlltimeStatsJsonSchema = z.object({
-  reviewCount: z.number(),
-  workCount: z.number(),
   bookCount: z.number(),
+  decadeDistribution: z.array(Distribution),
+  editionDistribution: z.array(Distribution),
   gradeDistribution: z.array(GradeDistribution),
   kindDistribution: z.array(Distribution),
-  editionDistribution: z.array(Distribution),
-  decadeDistribution: z.array(Distribution),
   mostReadAuthors: z.array(MostReadAuthorSchema),
+  reviewCount: z.number(),
+  workCount: z.number(),
 });
 
 export type AlltimeStatsJson = z.infer<typeof AlltimeStatsJsonSchema>;

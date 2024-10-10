@@ -1,18 +1,18 @@
 ---
-import { Article } from "src/components/Article/Article";
-import { getProps } from "src/components/Article/getProps";
-import Layout from "src/layouts/Layout.astro";
+import { Article } from "~/components/Article/Article";
+import { getProps } from "~/components/Article/getProps";
+import Layout from "~/layouts/Layout.astro";
 
 const slug = "how-i-grade";
 const deck = `"A work of art is never completed, only abandoned."`;
 
 const props = await getProps({
-  slug,
   deck,
+  slug,
 });
 ---
 
-<Layout title={props.title} description={deck} article>
+<Layout article description={deck} title={props.title}>
   <div data-pagefind-body>
     <Article {...props} />
   </div>

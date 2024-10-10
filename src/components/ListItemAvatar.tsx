@@ -1,29 +1,30 @@
-import type { AvatarImageProps } from "src/api/avatars";
-import { Avatar } from "src/components/Avatar";
-import { ccn } from "src/utils/concatClassNames";
+import type { AvatarImageProps } from "~/api/avatars";
+
+import { Avatar } from "~/components/Avatar";
+import { ccn } from "~/utils/concatClassNames";
 
 export const ListItemAvatarImageConfig = {
-  width: 80,
   height: 80,
+  width: 80,
 };
 
 export function ListItemAvatar({
-  imageProps,
   className,
   fill,
+  imageProps,
 }: {
-  imageProps: AvatarImageProps | null;
   className?: string;
   fill?: string;
+  imageProps: AvatarImageProps | null;
 }) {
   const avatar = (
     <Avatar
-      imageProps={imageProps}
-      width={ListItemAvatarImageConfig.width}
-      height={ListItemAvatarImageConfig.height}
-      loading="lazy"
       className="w-full"
       fill={fill}
+      height={ListItemAvatarImageConfig.height}
+      imageProps={imageProps}
+      loading="lazy"
+      width={ListItemAvatarImageConfig.width}
     />
   );
 

@@ -1,76 +1,77 @@
 import { useReducer } from "react";
-import type { Author } from "src/api/authors";
-import type { AvatarImageProps } from "src/api/avatars";
-import type { CoverImageProps } from "src/api/covers";
-import { Grade } from "src/components/Grade";
-import { GroupedList } from "src/components/GroupedList";
-import { ListItem } from "src/components/ListItem";
-import { ListItemCover } from "src/components/ListItemCover";
-import { ListItemTitle } from "src/components/ListItemTitle";
-import { ListWithFiltersLayout } from "src/components/ListWithFiltersLayout";
-import { toSentenceArray } from "src/utils";
 
-import { AvatarBackdrop } from "../Backdrop";
-import { ListItemKindAndYear } from "../ListItemKindAndYear";
+import type { Author } from "~/api/authors";
+import type { AvatarImageProps } from "~/api/avatars";
+import type { CoverImageProps } from "~/api/covers";
+
+import { AvatarBackdrop } from "~/components/Backdrop";
+import { Grade } from "~/components/Grade";
+import { GroupedList } from "~/components/GroupedList";
+import { ListItem } from "~/components/ListItem";
+import { ListItemCover } from "~/components/ListItemCover";
+import { ListItemKindAndYear } from "~/components/ListItemKindAndYear";
+import { ListItemTitle } from "~/components/ListItemTitle";
+import { ListWithFiltersLayout } from "~/components/ListWithFiltersLayout";
+import { toSentenceArray } from "~/utils";
+
 import type { Sort } from "./Author.reducer";
+
 import { Actions, initState, reducer } from "./Author.reducer";
 import { Filters } from "./Filters";
 
-export interface Props extends Pick<Author, "name"> {
-  works: ListItemValue[];
+export type Props = {
+  avatarImageProps: AvatarImageProps | null;
+  deck: string;
   distinctKinds: readonly string[];
   distinctPublishedYears: readonly string[];
   initialSort: Sort;
-  avatarImageProps: AvatarImageProps | null;
-  deck: string;
-}
+  works: ListItemValue[];
+} & Pick<Author, "name">;
 
 export const AvatarImageConfig = {
-  width: 250,
   height: 250,
+  width: 250,
 };
 
 type AuthorWork = Author["works"][number];
 
-export interface ListItemValue
-  extends Pick<
-    AuthorWork,
-    | "title"
-    | "yearPublished"
-    | "kind"
-    | "slug"
-    | "sortTitle"
-    | "grade"
-    | "gradeValue"
-    | "reviewed"
-  > {
+export type ListItemValue = {
   coverImageProps: CoverImageProps;
   otherAuthors: {
     name: string;
   }[];
-}
+} & Pick<
+  AuthorWork,
+  | "grade"
+  | "gradeValue"
+  | "kind"
+  | "reviewed"
+  | "slug"
+  | "sortTitle"
+  | "title"
+  | "yearPublished"
+>;
 
 export function Author({
-  works,
-  name,
+  avatarImageProps,
   deck,
   distinctKinds,
   distinctPublishedYears,
   initialSort,
-  avatarImageProps,
+  name,
+  works,
 }: Props): JSX.Element {
   const [state, dispatch] = useReducer(
     reducer,
     {
-      values: works,
       initialSort,
+      values: works,
     },
     initState,
   );
 
   return (
     <ListWithFiltersLayout
-      data-pagefind-body
       backdrop={
         <AvatarBackdrop
           avatarImageProps={avatarImageProps}
@@ -82,33 +83,34 @@ export function Author({
               Authors
             </a>
           }
-          name={name}
           deck={deck}
+          name={name}
         />
       }
-      totalCount={state.filteredValues.length}
+      data-pagefind-body
       filters={
         <Filters
           dispatch={dispatch}
           distinctKinds={distinctKinds}
           distinctPublishedYears={distinctPublishedYears}
-          sortValue={state.sortValue}
           hideReviewed={state.hideReviewed}
+          sortValue={state.sortValue}
         />
       }
       list={
         <GroupedList
           data-testid="list"
           groupedValues={state.groupedValues}
-          visibleCount={state.showCount}
-          totalCount={state.filteredValues.length}
           onShowMore={() => dispatch({ type: Actions.SHOW_MORE })}
+          totalCount={state.filteredValues.length}
+          visibleCount={state.showCount}
         >
           {(value) => {
-            return <WorkListItem value={value} key={value.slug} />;
+            return <WorkListItem key={value.slug} value={value} />;
           }}
         </GroupedList>
       }
+      totalCount={state.filteredValues.length}
     />
   );
 }
@@ -119,12 +121,12 @@ function WorkListItem({ value }: { value: ListItemValue }): JSX.Element {
       <ListItemCover imageProps={value.coverImageProps} />
       <div className="flex grow flex-col items-start gap-y-1 tablet:w-full tablet:gap-y-2 desktop:pr-4">
         <ListItemTitle
-          title={value.title}
           slug={value.reviewed ? value.slug : null}
+          title={value.title}
         />
         <OtherAuthors values={value.otherAuthors} />
-        <ListItemKindAndYear year={value.yearPublished} kind={value.kind} />
-        <Grade value={value.grade} height={16} />
+        <ListItemKindAndYear kind={value.kind} year={value.yearPublished} />
+        <Grade height={16} value={value.grade} />
       </div>
     </ListItem>
   );

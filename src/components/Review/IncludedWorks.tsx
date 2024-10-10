@@ -1,13 +1,13 @@
-import type { ReviewWithContent } from "src/api/reviews";
+import type { ReviewWithContent } from "~/api/reviews";
 
-import { toSentenceArray } from "../../utils";
-import { Grade } from "../Grade";
-import { ListItemKindAndYear } from "../ListItemKindAndYear";
-import { SubHeading } from "../SubHeading";
+import { Grade } from "~/components/Grade";
+import { ListItemKindAndYear } from "~/components/ListItemKindAndYear";
+import { SubHeading } from "~/components/SubHeading";
+import { toSentenceArray } from "~/utils";
 
-interface Props {
+type Props = {
   values: ReviewWithContent["includedWorks"];
-}
+};
 
 export function IncludedWorks({ values }: Props) {
   return (
@@ -17,10 +17,10 @@ export function IncludedWorks({ values }: Props) {
       </SubHeading>
       <ul className="w-full max-w-popout">
         {values.map((value) => (
-          <li key={value.slug} className="py-4 shadow-bottom">
+          <li className="py-4 shadow-bottom" key={value.slug}>
             <a
-              href={`/reviews/${value.slug}/`}
               className="font-sans text-sm font-medium text-accent decoration-accent decoration-2 underline-offset-4 hover:underline"
+              href={`/reviews/${value.slug}/`}
             >
               {value.title}
             </a>{" "}
@@ -30,11 +30,11 @@ export function IncludedWorks({ values }: Props) {
             </div>
             <div className="py-1">
               <ListItemKindAndYear
-                year={value.yearPublished}
                 kind={value.kind}
+                year={value.yearPublished}
               />
             </div>
-            <Grade value={value.grade} height={16} className="mt-1" />
+            <Grade className="mt-1" height={16} value={value.grade} />
           </li>
         ))}
       </ul>

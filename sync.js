@@ -1,9 +1,8 @@
 #! /usr/bin/env node
 
+import chokidar from "chokidar";
 import fs from "node:fs";
 import path from "node:path";
-
-import chokidar from "chokidar";
 
 chokidar
   .watch(["../booklog/reviews", "../booklog/export", "../booklog/readings"])

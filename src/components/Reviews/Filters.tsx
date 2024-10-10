@@ -1,46 +1,47 @@
-import { DebouncedInput } from "src/components/DebouncedInput";
-import { SelectField } from "src/components/SelectField";
-import { SelectOptions } from "src/components/SelectOptions";
-import { YearInput } from "src/components/YearInput";
+import { DebouncedInput } from "~/components/DebouncedInput";
+import { SelectField } from "~/components/SelectField";
+import { SelectOptions } from "~/components/SelectOptions";
+import { YearInput } from "~/components/YearInput";
 
 import type { ActionType, Sort } from "./Reviews.reducer";
+
 import { Actions } from "./Reviews.reducer";
 
 export function Filters({
   dispatch,
-  sortValue,
+  distinctKinds,
   distinctPublishedYears,
   distinctReviewYears,
-  distinctKinds,
+  sortValue,
 }: {
   dispatch: React.Dispatch<ActionType>;
-  sortValue: Sort;
-  distinctReviewYears: readonly string[];
-  distinctPublishedYears: readonly string[];
   distinctKinds: readonly string[];
+  distinctPublishedYears: readonly string[];
+  distinctReviewYears: readonly string[];
+  sortValue: Sort;
 }) {
   return (
     <>
       <DebouncedInput
         label="Title"
-        placeholder="Enter all or part of a title"
         onInputChange={(value) =>
           dispatch({ type: Actions.FILTER_TITLE, value })
         }
+        placeholder="Enter all or part of a title"
       />
       <YearInput
         label="Work Year"
-        years={distinctPublishedYears}
         onYearChange={(values) =>
           dispatch({ type: Actions.FILTER_YEAR_PUBLISHED, values })
         }
+        years={distinctPublishedYears}
       />
       <YearInput
         label="Review Year"
-        years={distinctReviewYears}
         onYearChange={(values) =>
           dispatch({ type: Actions.FILTER_YEAR_REVIEWED, values })
         }
+        years={distinctReviewYears}
       />
       <SelectField
         label="Kind"
@@ -54,7 +55,6 @@ export function Filters({
         <SelectOptions options={distinctKinds} />
       </SelectField>
       <SelectField
-        value={sortValue}
         label="Order By"
         onChange={(e) =>
           dispatch({
@@ -62,6 +62,7 @@ export function Filters({
             value: e.target.value as Sort,
           })
         }
+        value={sortValue}
       >
         <option value="author-asc">Author (A &rarr; Z)</option>
         <option value="author-desc">Author (Z &rarr; A)</option>

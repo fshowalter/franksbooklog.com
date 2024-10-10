@@ -1,8 +1,9 @@
 import type { APIRoute, InferGetStaticPropsType } from "astro";
-import { allAuthors } from "src/api/authors";
-import { getOpenGraphAvatarAsBase64String } from "src/api/avatars";
-import { OpenGraphImage } from "src/components/Author/OpenGraphImage";
-import { componentToImage } from "src/utils/componentToImage";
+
+import { allAuthors } from "~/api/authors";
+import { getOpenGraphAvatarAsBase64String } from "~/api/avatars";
+import { OpenGraphImage } from "~/components/Author/OpenGraphImage";
+import { componentToImage } from "~/utils/componentToImage";
 
 export async function getStaticPaths() {
   const authors = await allAuthors();
@@ -13,8 +14,8 @@ export async function getStaticPaths() {
         slug: member.slug,
       },
       props: {
-        slug: member.slug,
         name: member.name,
+        slug: member.slug,
       },
     };
   });
@@ -23,12 +24,12 @@ export async function getStaticPaths() {
 type Props = InferGetStaticPropsType<typeof getStaticPaths>;
 
 export const GET: APIRoute = async function get({ props }) {
-  const { slug, name } = props as Props;
+  const { name, slug } = props as Props;
 
   const jpeg = await componentToImage(
     OpenGraphImage({
-      name,
       avatar: await getOpenGraphAvatarAsBase64String(slug),
+      name,
     }),
   );
 

@@ -4,31 +4,31 @@ import sharp from "sharp";
 
 async function componentToSvg(component: JSX.Element) {
   return await satori(component, {
-    width: 1200,
-    height: 630,
     fonts: [
       {
-        name: "FrankRuhlLibre",
         data: await fs.readFile(
           "./public/fonts/Frank-Ruhl-Libre/Frank-Ruhl-Libre-Regular.ttf",
         ),
+        name: "FrankRuhlLibre",
         weight: 400,
       },
       {
-        name: "ArgentumSans",
         data: await fs.readFile(
           "./public/fonts/ArgentumSans/ArgentumSans-Regular.ttf",
         ),
+        name: "ArgentumSans",
         weight: 400,
       },
       {
-        name: "ArgentumSans",
         data: await fs.readFile(
           "./public/fonts/ArgentumSans/ArgentumSans-SemiBold.ttf",
         ),
+        name: "ArgentumSans",
         weight: 600,
       },
     ],
+    height: 630,
+    width: 1200,
   });
 }
 

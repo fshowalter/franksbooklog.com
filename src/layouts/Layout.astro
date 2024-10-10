@@ -3,18 +3,24 @@ import "./base.css";
 import "@pagefind/default-ui/css/ui.css";
 
 type Props = {
-  title: string;
-  description: string;
   article?: boolean;
+  description: string;
+  noOpenGraph?: boolean;
+  title: string;
 };
 
 const siteMeta = {
   author: "Frank Showalter",
-  url: "https://www.franksbooklog.com",
   title: "Frank's Book Log",
+  url: "https://www.franksbooklog.com",
 };
 
-const { title, description, article = false } = Astro.props;
+const {
+  article = false,
+  description,
+  noOpenGraph = false,
+  title,
+} = Astro.props;
 let pageTitle;
 
 if (title.startsWith(siteMeta.title)) {
@@ -30,31 +36,36 @@ const pathname = new URL(Astro.request.url).pathname;
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" href="/favicon.ico" sizes="48x48" />
-    <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <link rel="sitemap" href="/sitemap-index.xml" />
-    <meta name="description" content={description} />
-    <meta name="og:image" content={`${siteMeta.url}${pathname}og.jpg`} />
-    <meta property="og:url" content={`${siteMeta.url}${pathname}`} />
-    {article && <meta property="og:type" content="article" />}
-    <meta property="og:title" content={title} />
-    <meta property="og:description" content={description} />
+    <meta content="width=device-width" name="viewport" />
+    <link href="/favicon.ico" rel="icon" sizes="48x48" />
+    <link href="/favicon.svg" rel="icon" sizes="any" type="image/svg+xml" />
+    <link href="/apple-touch-icon.png" rel="apple-touch-icon" />
+    <link href="/site.webmanifest" rel="manifest" />
+    <link href="/sitemap-index.xml" rel="sitemap" />
+    <meta content={description} name="description" />
+    {
+      !noOpenGraph && (
+        <>
+          <meta content={`${siteMeta.url}${pathname}og.jpg`} name="og:image" />
+          <meta content={`${siteMeta.url}${pathname}`} property="og:url" />
+          <meta content={title} property="og:title" />
+          <meta content={description} property="og:description" />
+        </>
+      )
+    }
+    {!noOpenGraph && article && <meta content="article" property="og:type" />}
     <title>{pageTitle}</title>
   </head>
   <body>
     <slot />
     <dialog
-      class="relative m-0 h-screen max-h-none w-screen max-w-unset border border-default bg-subtle shadow-lg open:flex open:flex-col tablet:mx-auto tablet:mt-16 tablet:h-min tablet:max-h-[min(100vh_-_128px,900px)] tablet:min-h-60 tablet:max-w-[min(100vw_-_64px,36rem)] tablet:rounded-xl desktop:min-h-0"
       aria-label="Search"
+      class="relative m-0 h-screen max-h-none w-screen max-w-unset border border-default bg-subtle shadow-lg open:flex open:flex-col tablet:mx-auto tablet:mt-16 tablet:h-min tablet:max-h-[min(100vh_-_128px,900px)] tablet:min-h-60 tablet:max-w-[min(100vw_-_64px,36rem)] tablet:rounded-xl desktop:min-h-0"
     >
-      <div data-dialog-frame class="contents">
+      <div class="contents" data-dialog-frame>
         <button
-          data-close-modal
           class="px-4 font-sans text-sm font-light hover:bg-inverse hover:text-inverse focus:outline-accent"
-          >Cancel</button
+          data-close-modal>Cancel</button
         >
         <div class="contents">
           <div id="pagefind__search"></div>

@@ -4,10 +4,11 @@ import { remark } from "remark";
 import remarkGfm from "remark-gfm";
 import remarkRehype from "remark-rehype";
 import smartypants from "remark-smartypants";
-import { linkReviewedWorks } from "src/api/utils/linkReviewedWorks";
+
+import { linkReviewedWorks } from "~/api/utils/linkReviewedWorks";
 
 export function getHtml(
-  content: string | null,
+  content: null | string,
   reviewedWorks: { slug: string }[],
 ) {
   if (!content) {

@@ -1,6 +1,7 @@
 import type { APIRoute } from "astro";
-import { OpenGraphImage } from "src/components/OpenGraphImage";
-import { componentToImage } from "src/utils/componentToImage";
+
+import { OpenGraphImage } from "~/components/OpenGraphImage";
+import { componentToImage } from "~/utils/componentToImage";
 
 export const GET: APIRoute = async function get() {
   const jpeg = await componentToImage(

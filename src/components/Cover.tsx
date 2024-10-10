@@ -1,18 +1,19 @@
 import React from "react";
-import type { CoverImageProps } from "src/api/covers";
 
-interface Props extends React.ImgHTMLAttributes<HTMLImageElement> {
-  imageProps: CoverImageProps | null;
-  width: number;
-  height: number;
-  loading: "lazy" | "eager";
+import type { CoverImageProps } from "~/api/covers";
+
+type Props = {
   decoding: "async" | "auto" | "sync";
-}
+  height: number;
+  imageProps: CoverImageProps | null;
+  loading: "eager" | "lazy";
+  width: number;
+} & React.ImgHTMLAttributes<HTMLImageElement>;
 
 export function Cover({
+  decoding = "async",
   imageProps,
   loading = "lazy",
-  decoding = "async",
   ...rest
 }: Props): JSX.Element {
   return (
@@ -20,8 +21,8 @@ export function Cover({
       {...imageProps}
       {...rest}
       alt=""
-      loading={loading}
       decoding={decoding}
+      loading={loading}
       style={{ aspectRatio: "0.66666667" }}
     />
   );

@@ -2,30 +2,30 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" href="/favicon.ico" sizes="48x48" />
-    <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <link rel="sitemap" href="/sitemap-index.xml" />
-    <meta name="description" content="A year in progress..." />
+    <meta content="width=device-width" name="viewport" />
+    <link href="/favicon.ico" rel="icon" sizes="48x48" />
+    <link href="/favicon.svg" rel="icon" sizes="any" type="image/svg+xml" />
+    <link href="/apple-touch-icon.png" rel="apple-touch-icon" />
+    <link href="/site.webmanifest" rel="manifest" />
+    <link href="/sitemap-index.xml" rel="sitemap" />
+    <meta content="A year in progress..." name="description" />
     <meta
-      name="og:image"
       content="https://www.franksbooklog.com/readings/stats/2024/og.jpg"
+      name="og:image"
     />
     <meta
-      property="og:url"
       content="https://www.franksbooklog.com/readings/stats/2024/"
+      property="og:url"
     />
-    <meta property="og:title" content="2024 Stats" />
-    <meta property="og:description" content="A year in progress..." />
+    <meta content="2024 Stats" property="og:title" />
+    <meta content="A year in progress..." property="og:description" />
     <title>2024 Stats | Frank&#39;s Book Log</title>
   </head>
   <body>
     <div>
       <a
-        href="#content"
         class="absolute left-1/2 top-0.5 z-50 mx-auto bg-subtle px-6 py-2 text-center text-accent [transform:translate(-50%,calc(-100%_-_2px))] focus:[transform:translate(-50%,0%)]"
+        href="#content"
         >Skip to content</a
       >
       <div class="flex min-h-full w-full flex-col bg-default">
@@ -93,36 +93,36 @@
             </nav>
             <div class="z-[1000]">
               <button
+                aria-keyshortcuts="Control+K"
+                aria-label="Search"
+                class="flex items-center justify-between overflow-hidden text-sm leading-6 ring-default desktop:ml-6"
                 data-open-modal="true"
                 disabled=""
-                aria-label="Search"
-                aria-keyshortcuts="Control+K"
-                class="flex items-center justify-between overflow-hidden text-sm leading-6 ring-default desktop:ml-6"
-                type="button"
                 title="Search: Control+K"
+                type="button"
               >
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
                   class="size-7"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
+                    d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
                   ></path>
                 </svg>
               </button>
             </div>
-            <input type="checkbox" id="mobile-nav" class="hidden" /><label
-              for="mobile-nav"
+            <input class="hidden" id="mobile-nav" type="checkbox" /><label
               class="hamburger-icon desktop:hidden"
+              for="mobile-nav"
               ><span
-                style="background: var(--fg-default)"
                 class="hamburger-icon-bars"
+                style="background: var(--fg-default)"
               ></span
             ></label>
             <ul
@@ -406,15 +406,15 @@
               </li>
             </ul>
             <a
-              href="#top"
               class="mb-8 w-full max-w-button bg-canvas py-5 text-center font-sans text-xs uppercase tracking-wide text-default hover:bg-inverse hover:text-inverse"
+              href="#top"
               >To the top</a
             >
             <p class="w-full font-normal leading-5 text-inverse-subtle">
               All covers used in accordance with the<!-- -->
               <a
-                href="http://www.copyright.gov/title17/92chap1.html#107"
                 class="text-inherit underline decoration-2 underline-offset-4 hover:bg-default hover:text-default"
+                href="http://www.copyright.gov/title17/92chap1.html#107"
                 >Fair Use Law.</a
               >
             </p>
@@ -423,13 +423,13 @@
       </div>
     </div>
     <dialog
-      class="relative m-0 h-screen max-h-none w-screen max-w-unset border border-default bg-subtle shadow-lg open:flex open:flex-col tablet:mx-auto tablet:mt-16 tablet:h-min tablet:max-h-[min(100vh_-_128px,900px)] tablet:min-h-60 tablet:max-w-[min(100vw_-_64px,36rem)] tablet:rounded-xl desktop:min-h-0"
       aria-label="Search"
+      class="relative m-0 h-screen max-h-none w-screen max-w-unset border border-default bg-subtle shadow-lg open:flex open:flex-col tablet:mx-auto tablet:mt-16 tablet:h-min tablet:max-h-[min(100vh_-_128px,900px)] tablet:min-h-60 tablet:max-w-[min(100vw_-_64px,36rem)] tablet:rounded-xl desktop:min-h-0"
     >
-      <div data-dialog-frame class="contents">
+      <div class="contents" data-dialog-frame>
         <button
-          data-close-modal
           class="px-4 font-sans text-sm font-light hover:bg-inverse hover:text-inverse focus:outline-accent"
+          data-close-modal
         >
           Cancel
         </button>

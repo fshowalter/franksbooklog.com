@@ -1,26 +1,28 @@
 import type { ChangeEvent } from "react";
+
 import React from "react";
-import { ccn } from "src/utils/concatClassNames";
+
+import { ccn } from "~/utils/concatClassNames";
 
 export function SelectInput({
-  value,
-  onChange,
   children,
   className,
+  onChange,
+  value,
 }: {
-  value?: string | number | undefined;
   children: React.ReactNode;
-  onChange: (e: ChangeEvent<HTMLSelectElement>) => void;
   className?: string;
+  onChange: (e: ChangeEvent<HTMLSelectElement>) => void;
+  value?: number | string | undefined;
 }): JSX.Element {
   return (
     <select
-      value={value}
-      onChange={onChange}
       className={ccn(
         "select-background-image w-full appearance-none border-none bg-default py-2 pl-4 pr-8 text-base leading-6 text-subtle shadow-all outline-accent",
         className,
       )}
+      onChange={onChange}
+      value={value}
     >
       {children}
     </select>

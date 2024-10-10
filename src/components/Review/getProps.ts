@@ -2,10 +2,10 @@ import {
   getFixedCoverImageProps,
   getFluidCoverImageProps,
   getStructuredDataCoverSrc,
-} from "src/api/covers";
-import { allReviews, loadContent } from "src/api/reviews";
+} from "~/api/covers";
+import { allReviews, loadContent } from "~/api/reviews";
+import { MoreReviewsImageConfig } from "~/components/MoreReviews";
 
-import { MoreReviewsImageConfig } from "../MoreReviews";
 import { CoverImageConfig, type Props } from "./Review";
 
 export async function getProps(slug: string): Promise<Props> {
@@ -18,8 +18,6 @@ export async function getProps(slug: string): Promise<Props> {
   const reviewWithContent = await loadContent(baseReview);
 
   return {
-    structuredDataCoverSrc: await getStructuredDataCoverSrc(reviewWithContent),
-    value: reviewWithContent,
     coverImageProps: await getFixedCoverImageProps(
       reviewWithContent,
       CoverImageConfig,
@@ -35,5 +33,7 @@ export async function getProps(slug: string): Promise<Props> {
         };
       }),
     ),
+    structuredDataCoverSrc: await getStructuredDataCoverSrc(reviewWithContent),
+    value: reviewWithContent,
   };
 }

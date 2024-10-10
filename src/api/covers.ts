@@ -1,20 +1,19 @@
+import { getImage } from "astro:assets";
 import fs from "node:fs";
 import path from "node:path";
-
-import { getImage } from "astro:assets";
 import sharp from "sharp";
 
 import { normalizeSources } from "./utils/normalizeSources";
 
-export interface CoverImageProps {
+export type CoverImageProps = {
   src: string;
   srcSet: string;
-}
+};
 
-interface Work {
-  slug: string;
+type Work = {
   includedInSlugs: string[];
-}
+  slug: string;
+};
 
 const images = import.meta.glob<{ default: ImageMetadata }>(
   "/content/assets/covers/*.png",
@@ -24,11 +23,11 @@ export async function getStructuredDataCoverSrc(work: Work): Promise<string> {
   const workCoverFile = await getWorkCoverFile(work);
 
   const optimizedImage = await getImage({
+    format: "jpeg",
+    height: 750,
+    quality: 80,
     src: workCoverFile.default,
     width: 500,
-    height: 750,
-    format: "jpeg",
-    quality: 80,
   });
 
   return normalizeSources(optimizedImage.src);
@@ -114,57 +113,57 @@ export async function getFeedCoverProps(work: Work): Promise<CoverImageProps> {
   const workCoverFile = await getWorkCoverFile(work);
 
   const optimizedImage = await getImage({
+    format: "jpeg",
+    height: 750,
+    quality: 80,
     src: workCoverFile.default,
     width: 500,
-    height: 750,
-    format: "jpeg",
-    quality: 80,
   });
 
   return {
-    srcSet: normalizeSources(optimizedImage.srcSet.attribute),
     src: normalizeSources(optimizedImage.src),
+    srcSet: normalizeSources(optimizedImage.srcSet.attribute),
   };
 }
 
 export async function getFluidCoverImageProps(
   work: Work,
-  { width, height }: { width: number; height: number },
+  { height, width }: { height: number; width: number },
 ): Promise<CoverImageProps> {
   const workCoverFile = await getWorkCoverFile(work);
 
   const optimizedImage = await getImage({
+    format: "avif",
+    height: height,
+    quality: 80,
     src: workCoverFile.default,
     width: width,
-    height: height,
-    format: "avif",
     widths: [0.25, 0.5, 1, 2].map((w) => w * width),
-    quality: 80,
   });
 
   return {
-    srcSet: normalizeSources(optimizedImage.srcSet.attribute),
     src: normalizeSources(optimizedImage.src),
+    srcSet: normalizeSources(optimizedImage.srcSet.attribute),
   };
 }
 
 export async function getFixedCoverImageProps(
   work: Work,
-  { width, height }: { width: number; height: number },
+  { height, width }: { height: number; width: number },
 ): Promise<CoverImageProps> {
   const workCoverFile = await getWorkCoverFile(work);
 
   const optimizedImage = await getImage({
+    densities: [1, 2],
+    format: "avif",
+    height: height,
+    quality: 80,
     src: workCoverFile.default,
     width: width,
-    height: height,
-    format: "avif",
-    densities: [1, 2],
-    quality: 80,
   });
 
   return {
-    srcSet: normalizeSources(optimizedImage.srcSet.attribute),
     src: normalizeSources(optimizedImage.src),
+    srcSet: normalizeSources(optimizedImage.srcSet.attribute),
   };
 }

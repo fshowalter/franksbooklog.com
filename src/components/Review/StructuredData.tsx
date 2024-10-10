@@ -1,10 +1,10 @@
-import type { ReviewWithContent } from "src/api/reviews";
+import type { ReviewWithContent } from "~/api/reviews";
 
-interface Props extends Pick<ReviewWithContent, "grade" | "title"> {
+type Props = {
   coverImgSrc: string;
-}
+} & Pick<ReviewWithContent, "grade" | "title">;
 
-export function StructuredData({ title, grade, coverImgSrc }: Props) {
+export function StructuredData({ coverImgSrc, grade, title }: Props) {
   const structuredData = buildStructuredData(title, grade, coverImgSrc);
 
   if (!structuredData) {
@@ -13,8 +13,8 @@ export function StructuredData({ title, grade, coverImgSrc }: Props) {
 
   return (
     <script
-      type="application/ld+json"
       dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      type="application/ld+json"
     />
   );
 }
@@ -39,18 +39,18 @@ function buildStructuredData(
   return {
     "@context": "http://schema.org",
     "@type": "Review",
+    author: {
+      "@type": "Person",
+      name: "Frank Showalter",
+    },
     itemReviewed: {
       "@type": "Book",
-      name: title,
       image: imageSrc,
+      name: title,
     },
     reviewRating: {
       "@type": "Rating",
       ratingValue: gradeMap[grade[0]],
-    },
-    author: {
-      "@type": "Person",
-      name: "Frank Showalter",
     },
   };
 }

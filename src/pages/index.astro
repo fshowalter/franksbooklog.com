@@ -1,14 +1,11 @@
 ---
-import { getProps } from "src/components/Home/getProps";
-import { Home } from "src/components/Home/Home";
-import Layout from "src/layouts/Layout.astro";
+import { getProps } from "~/components/Home/getProps";
+import { Home } from "~/components/Home/Home";
+import Layout from "~/layouts/Layout.astro";
 
 const props = await getProps();
 ---
 
-<Layout
-  title="Frank's Book Log"
-  description="Reviews of current, cult, classic, and forgotten books."
->
+<Layout description={props.deck} title="Frank's Book Log">
   <Home {...props} />
 </Layout>

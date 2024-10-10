@@ -1,38 +1,38 @@
 export function OpenGraphImage({
-  name,
   avatar,
+  name,
 }: {
-  name: string;
   avatar: string;
+  name: string;
 }): JSX.Element {
   return (
     <div
       style={{
+        alignItems: "center",
+        backgroundColor: "#f2f0e8",
         display: "flex",
         flexDirection: "column",
-        position: "relative",
         height: "630px",
-        width: "1200px",
-        backgroundColor: "#f2f0e8",
-        alignItems: "center",
         justifyContent: "center",
+        position: "relative",
+        width: "1200px",
       }}
     >
       <img
+        height={250}
         src={avatar}
         style={{
-          objectFit: "cover",
-          marginBottom: "32px",
           borderRadius: "50%",
+          marginBottom: "32px",
+          objectFit: "cover",
         }}
         width={250}
-        height={250}
       />
       <div
         style={{
+          alignItems: "center",
           display: "flex",
           flexDirection: "column",
-          alignItems: "center",
           paddingLeft: "80px",
           paddingRight: "80px",
           width: "1200px",
@@ -40,26 +40,26 @@ export function OpenGraphImage({
       >
         <div
           style={{
+            color: "rgb(0 0 0 / 60%)",
             fontFamily: "ArgentumSans",
             marginBottom: "16px",
             textTransform: "uppercase",
-            color: "rgb(0 0 0 / 60%)",
           }}
         >
           Frank&apos;s Book Log
         </div>
         <div
           style={{
-            fontFamily: "ArgentumSans",
             color: "rgb(0 0 0 / 75%)",
-            fontSize: "88px",
-            lineHeight: 1,
-            textWrap: "balance",
             display: "flex",
             flexWrap: "wrap",
+            fontFamily: "ArgentumSans",
+            fontSize: "88px",
             fontWeight: 600,
-            textTransform: "uppercase",
+            lineHeight: 1,
             textAlign: "center",
+            textTransform: "uppercase",
+            textWrap: "balance",
           }}
         >
           {name}

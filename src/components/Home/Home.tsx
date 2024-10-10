@@ -1,19 +1,22 @@
-import { SolidBackdrop } from "../Backdrop";
-import { Layout } from "../Layout";
-import { SubHeading } from "../SubHeading";
+import { SolidBackdrop } from "~/components/Backdrop";
+import { Layout } from "~/components/Layout";
+import { SubHeading } from "~/components/SubHeading";
+
 import type { ListItemValue } from "./HomeListItem";
+
 import { HomeListItem } from "./HomeListItem";
 
-export interface Props {
+export type Props = {
+  deck: string;
   values: ListItemValue[];
-}
+};
 
-export function Home({ values }: Props): JSX.Element {
+export function Home({ deck, values }: Props): JSX.Element {
   return (
-    <Layout hideLogo={true} className="bg-subtle pb-8">
+    <Layout className="bg-subtle pb-8" hideLogo={true}>
       <SolidBackdrop
+        deck={deck}
         title="Frank's Book Log"
-        deck="Literature is a relative term."
         titleStyle="text-default text-4xl desktop:text-7xl"
       />
       <nav className="mx-auto max-w-screen-max bg-subtle tablet:px-container">
@@ -33,8 +36,8 @@ export function Home({ values }: Props): JSX.Element {
         </ol>
         <div className="flex px-container py-10">
           <a
-            href="/reviews/"
             className="mx-auto w-full max-w-button bg-default py-5 text-center font-sans text-xs font-semibold uppercase tracking-wide text-accent hover:bg-accent hover:text-inverse"
+            href="/reviews/"
           >
             All Reviews
           </a>

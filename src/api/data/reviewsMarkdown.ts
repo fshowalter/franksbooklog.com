@@ -1,18 +1,17 @@
-import { promises as fs } from "node:fs";
-
 import matter from "gray-matter";
+import { promises as fs } from "node:fs";
 import { z } from "zod";
 
 import { getContentPath } from "./utils/getContentPath";
 
 const reviewsMarkdownDirectory = getContentPath("reviews");
 
-export interface MarkdownReview {
-  slug: string;
+export type MarkdownReview = {
   date: Date;
   grade: string;
   rawContent: string;
-}
+  slug: string;
+};
 
 const DataSchema = z.object({
   date: z.date(),
@@ -34,14 +33,14 @@ async function parseAllReviewsMarkdown(): Promise<MarkdownReview[]> {
           "utf8",
         );
 
-        const { data, content } = matter(fileContents);
+        const { content, data } = matter(fileContents);
         const greyMatter = DataSchema.parse(data);
 
         return {
-          slug: greyMatter.work_slug,
           date: greyMatter.date,
           grade: greyMatter.grade,
           rawContent: content,
+          slug: greyMatter.work_slug,
         };
       }),
   );

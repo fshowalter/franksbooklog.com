@@ -1,4 +1,4 @@
-export function toSentenceArray<T extends string | JSX.Element>(
+export function toSentenceArray<T extends JSX.Element | string>(
   values: readonly T[],
 ): T[] {
   const words = values.filter(Boolean);

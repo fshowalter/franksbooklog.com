@@ -1,10 +1,12 @@
+import type { AstroComponentFactory } from "astro/runtime/server/index.js";
+
 import { getContainerRenderer as reactContainerRenderer } from "@astrojs/react";
 import { experimental_AstroContainer as AstroContainer } from "astro/container";
-import type { AstroComponentFactory } from "astro/runtime/server/index.js";
 import { loadRenderers } from "astro:container";
 import * as prettier from "prettier";
-import { allReviews } from "src/api/reviews";
 import { describe, it } from "vitest";
+
+import { allReviews } from "~/api/reviews";
 
 import Review from "./index.astro";
 
@@ -20,10 +22,10 @@ describe("/reviews/:slug", () => {
       const result = await container.renderToString(
         Review as AstroComponentFactory,
         {
+          props: { slug: review.slug },
           request: new Request(
             `https://www.franksbooklog.com/reviews/${review.slug}/`,
           ),
-          props: { slug: review.slug },
         },
       );
 

@@ -1,5 +1,4 @@
 import { promises as fs } from "node:fs";
-
 import { z } from "zod";
 
 import { getContentPath } from "./utils/getContentPath";
@@ -12,17 +11,17 @@ const AuthorSchema = z.object({
 });
 
 const TimelineEntryJsonSchema = z.object({
-  sequence: z.string(),
-  slug: z.string(),
-  edition: z.string(),
+  authors: z.array(AuthorSchema),
   date: z.coerce.date(),
+  edition: z.string(),
+  includedInSlugs: z.array(z.string()),
+  kind: WorkKindSchema,
   progress: z.string(),
   reviewed: z.boolean(),
-  yearPublished: z.string(),
+  sequence: z.string(),
+  slug: z.string(),
   title: z.string(),
-  kind: WorkKindSchema,
-  authors: z.array(AuthorSchema),
-  includedInSlugs: z.array(z.string()),
+  yearPublished: z.string(),
 });
 
 export type TimelineEntryJson = z.infer<typeof TimelineEntryJsonSchema>;

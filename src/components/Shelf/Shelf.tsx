@@ -1,87 +1,85 @@
 import { useReducer } from "react";
-import type { CoverImageProps } from "src/api/covers";
-import type { ShelfWork } from "src/api/shelf";
-import { GroupedList } from "src/components/GroupedList";
-import { ListItem } from "src/components/ListItem";
-import { ListItemCover } from "src/components/ListItemCover";
-import { ListItemTitle } from "src/components/ListItemTitle";
-import { toSentenceArray } from "src/utils";
 
-import { SolidBackdrop } from "../Backdrop";
-import { ListItemKindAndYear } from "../ListItemKindAndYear";
-import { ListWithFiltersLayout } from "../ListWithFiltersLayout";
-import { Filters } from "./Filters";
+import type { CoverImageProps } from "~/api/covers";
+import type { ShelfWork } from "~/api/shelf";
+
+import { SolidBackdrop } from "~/components/Backdrop";
+import { GroupedList } from "~/components/GroupedList";
+import { ListItem } from "~/components/ListItem";
+import { ListItemCover } from "~/components/ListItemCover";
+import { ListItemKindAndYear } from "~/components/ListItemKindAndYear";
+import { ListItemTitle } from "~/components/ListItemTitle";
+import { ListWithFiltersLayout } from "~/components/ListWithFiltersLayout";
+import { toSentenceArray } from "~/utils";
+
 import type { Sort } from "./Shelf.reducer";
+
+import { Filters } from "./Filters";
 import { initState, reducer } from "./Shelf.reducer";
 import { Actions } from "./Shelf.reducer";
 
-interface Author
-  extends Pick<ShelfWork["authors"][number], "name" | "notes" | "sortName"> {}
+type Author = {} & Pick<
+  ShelfWork["authors"][number],
+  "name" | "notes" | "sortName"
+>;
 
-export interface ListItemValue
-  extends Pick<
-    ShelfWork,
-    "slug" | "title" | "yearPublished" | "sortTitle" | "kind"
-  > {
+export type ListItemValue = {
   authors: Author[];
   coverImageProps: CoverImageProps;
-}
+} & Pick<ShelfWork, "kind" | "slug" | "sortTitle" | "title" | "yearPublished">;
 
-export interface Props {
-  values: ListItemValue[];
+export type Props = {
+  deck: string;
   distinctAuthors: readonly string[];
   distinctKinds: readonly string[];
   distinctPublishedYears: readonly string[];
   initialSort: Sort;
-}
+  values: ListItemValue[];
+};
 
 export function Shelf({
-  values,
+  deck,
   distinctAuthors,
   distinctKinds,
   distinctPublishedYears,
   initialSort,
+  values,
 }: Props): JSX.Element {
   const [state, dispatch] = useReducer(
     reducer,
     {
-      values,
       initialSort,
+      values,
     },
     initState,
   );
 
   return (
     <ListWithFiltersLayout
-      backdrop={
-        <SolidBackdrop
-          title="The Shelf"
-          deck={`"Classic: A book which people praise and don’t read."`}
-        />
-      }
-      totalCount={state.filteredValues.length}
+      backdrop={<SolidBackdrop deck={deck} title="The Shelf" />}
       filters={
         <Filters
-          sortValue={state.sortValue}
           dispatch={dispatch}
           distinctAuthors={distinctAuthors}
           distinctKinds={distinctKinds}
           distinctPublishedYears={distinctPublishedYears}
+          sortValue={state.sortValue}
         />
       }
       list={
         <GroupedList
-          groupedValues={state.groupedValues}
-          visibleCount={state.showCount}
-          totalCount={state.filteredValues.length}
-          onShowMore={() => dispatch({ type: Actions.SHOW_MORE })}
           data-testid="list"
+          groupedValues={state.groupedValues}
+          onShowMore={() => dispatch({ type: Actions.SHOW_MORE })}
+          totalCount={state.filteredValues.length}
+          visibleCount={state.showCount}
         >
           {(value) => {
-            return <ShelfListItem value={value} key={value.slug} />;
+            return <ShelfListItem key={value.slug} value={value} />;
           }}
         </GroupedList>
       }
+      totalCount={state.filteredValues.length}
     />
   );
 }
@@ -93,21 +91,21 @@ function ShelfListItem({ value }: { value: ListItemValue }): JSX.Element {
       <div className="flex grow flex-col gap-y-1 tablet:w-full tablet:gap-y-2 desktop:pr-4">
         <ListItemTitle title={value.title} />
         <Authors
-          values={value.authors}
           className="font-sans text-xs leading-5 text-muted"
+          values={value.authors}
         />
-        <ListItemKindAndYear year={value.yearPublished} kind={value.kind} />
+        <ListItemKindAndYear kind={value.kind} year={value.yearPublished} />
       </div>
     </ListItem>
   );
 }
 
 function Authors({
-  values,
   className,
+  values,
 }: {
-  values: ListItemValue["authors"];
   className: string;
+  values: ListItemValue["authors"];
 }) {
   return (
     <div className={className}>

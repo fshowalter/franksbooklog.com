@@ -2,30 +2,24 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" href="/favicon.ico" sizes="48x48" />
-    <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <link rel="sitemap" href="/sitemap-index.xml" />
-    <meta
-      name="description"
-      content="Reviews of current, cult, classic, and forgotten books."
-    />
-    <meta name="og:image" content="https://www.franksbooklog.com/og.jpg" />
-    <meta property="og:url" content="https://www.franksbooklog.com/" />
-    <meta property="og:title" content="Frank's Book Log" />
-    <meta
-      property="og:description"
-      content="Reviews of current, cult, classic, and forgotten books."
-    />
+    <meta content="width=device-width" name="viewport" />
+    <link href="/favicon.ico" rel="icon" sizes="48x48" />
+    <link href="/favicon.svg" rel="icon" sizes="any" type="image/svg+xml" />
+    <link href="/apple-touch-icon.png" rel="apple-touch-icon" />
+    <link href="/site.webmanifest" rel="manifest" />
+    <link href="/sitemap-index.xml" rel="sitemap" />
+    <meta content="Literature is a relative term." name="description" />
+    <meta content="https://www.franksbooklog.com/og.jpg" name="og:image" />
+    <meta content="https://www.franksbooklog.com/" property="og:url" />
+    <meta content="Frank's Book Log" property="og:title" />
+    <meta content="Literature is a relative term." property="og:description" />
     <title>Frank&#39;s Book Log</title>
   </head>
   <body>
     <div>
       <a
-        href="#content"
         class="absolute left-1/2 top-0.5 z-50 mx-auto bg-subtle px-6 py-2 text-center text-accent [transform:translate(-50%,calc(-100%_-_2px))] focus:[transform:translate(-50%,0%)]"
+        href="#content"
         >Skip to content</a
       >
       <div class="flex min-h-full w-full flex-col bg-default">
@@ -83,36 +77,36 @@
             </nav>
             <div class="z-[1000]">
               <button
+                aria-keyshortcuts="Control+K"
+                aria-label="Search"
+                class="flex items-center justify-between overflow-hidden text-sm leading-6 ring-default desktop:ml-6"
                 data-open-modal="true"
                 disabled=""
-                aria-label="Search"
-                aria-keyshortcuts="Control+K"
-                class="flex items-center justify-between overflow-hidden text-sm leading-6 ring-default desktop:ml-6"
-                type="button"
                 title="Search: Control+K"
+                type="button"
               >
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
                   class="size-7"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
+                    d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
                   ></path>
                 </svg>
               </button>
             </div>
-            <input type="checkbox" id="mobile-nav" class="hidden" /><label
-              for="mobile-nav"
+            <input class="hidden" id="mobile-nav" type="checkbox" /><label
               class="hamburger-icon desktop:hidden"
+              for="mobile-nav"
               ><span
-                style="background: var(--fg-default)"
                 class="hamburger-icon-bars"
+                style="background: var(--fg-default)"
               ></span
             ></label>
             <ul
@@ -174,19 +168,19 @@
                 class="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[14.16666667%]"
               >
                 <img
+                  src="/_image?/content%2Fassets%2Fcovers%2Frecessional-by-david-mamet.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
                   srcset="
                     /_image?/content%2Fassets%2Fcovers%2Frecessional-by-david-mamet.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;q=80&amp;f=avif   62w,
                     /_image?/content%2Fassets%2Fcovers%2Frecessional-by-david-mamet.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;q=80&amp;f=avif 124w,
                     /_image?/content%2Fassets%2Fcovers%2Frecessional-by-david-mamet.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;q=80&amp;f=avif 248w,
                     /_image?/content%2Fassets%2Fcovers%2Frecessional-by-david-mamet.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;q=80&amp;f=avif 496w
                   "
-                  src="/_image?/content%2Fassets%2Fcovers%2Frecessional-by-david-mamet.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
-                  width="248"
                   height="372"
                   sizes="(max-width: 599px) 48vw, (max-width: 767px) 31vw, (max-width: 899px) calc((100vw - 96px) * 0.32), (max-width: 1279px) calc((100vw - 96px) * 0.22.75), (max-width: 1695px) calc((100vw - 160px) * 0.1416666667), 218px"
+                  width="248"
                   alt=""
-                  loading="eager"
                   decoding="async"
+                  loading="eager"
                   style="aspect-ratio: 0.66666667"
                 />
                 <div
@@ -199,9 +193,9 @@
                   </div>
                   <div class="text-center text-md font-medium leading-6">
                     <a
+                      class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] before:tablet:opacity-15"
                       href="/reviews/recessional-by-david-mamet/"
                       rel="canonical"
-                      class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] before:tablet:opacity-15"
                       >Recessional</a
                     >
                   </div>
@@ -222,14 +216,14 @@
                   </p>
                   <picture
                     ><source
-                      srcset="/svg/2-stars-dark.svg"
-                      media="(prefers-color-scheme: dark)" />
+                      media="(prefers-color-scheme: dark)"
+                      srcset="/svg/2-stars-dark.svg" />
                     <img
-                      src="/svg/2-stars.svg"
                       alt="D: 2 stars (out of 5)"
-                      height="18"
-                      width="90"
                       class="mt-2"
+                      height="18"
+                      src="/svg/2-stars.svg"
+                      width="90"
                   /></picture>
                 </div>
               </li>
@@ -237,19 +231,19 @@
                 class="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[14.16666667%]"
               >
                 <img
+                  src="/_image?/content%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
                   srcset="
                     /_image?/content%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;q=80&amp;f=avif   62w,
                     /_image?/content%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;q=80&amp;f=avif 124w,
                     /_image?/content%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;q=80&amp;f=avif 248w,
                     /_image?/content%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;q=80&amp;f=avif 496w
                   "
-                  src="/_image?/content%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
-                  width="248"
                   height="372"
                   sizes="(max-width: 599px) 48vw, (max-width: 767px) 31vw, (max-width: 899px) calc((100vw - 96px) * 0.32), (max-width: 1279px) calc((100vw - 96px) * 0.22.75), (max-width: 1695px) calc((100vw - 160px) * 0.1416666667), 218px"
+                  width="248"
                   alt=""
-                  loading="lazy"
                   decoding="async"
+                  loading="lazy"
                   style="aspect-ratio: 0.66666667"
                 />
                 <div
@@ -262,9 +256,9 @@
                   </div>
                   <div class="text-center text-md font-medium leading-6">
                     <a
+                      class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] before:tablet:opacity-15"
                       href="/reviews/fast-forward-by-stephen-morris/"
                       rel="canonical"
-                      class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] before:tablet:opacity-15"
                       >Fast Forward</a
                     >
                   </div>
@@ -285,14 +279,14 @@
                   </p>
                   <picture
                     ><source
-                      srcset="/svg/4-half-stars-dark.svg"
-                      media="(prefers-color-scheme: dark)" />
+                      media="(prefers-color-scheme: dark)"
+                      srcset="/svg/4-half-stars-dark.svg" />
                     <img
-                      src="/svg/4-half-stars.svg"
                       alt="A-: 4.5 stars (out of 5)"
-                      height="18"
-                      width="90"
                       class="mt-2"
+                      height="18"
+                      src="/svg/4-half-stars.svg"
+                      width="90"
                   /></picture>
                 </div>
               </li>
@@ -300,19 +294,19 @@
                 class="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[14.16666667%]"
               >
                 <img
+                  src="/_image?/content%2Fassets%2Fcovers%2Fgothic-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
                   srcset="
                     /_image?/content%2Fassets%2Fcovers%2Fgothic-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;q=80&amp;f=avif   62w,
                     /_image?/content%2Fassets%2Fcovers%2Fgothic-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;q=80&amp;f=avif 124w,
                     /_image?/content%2Fassets%2Fcovers%2Fgothic-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;q=80&amp;f=avif 248w,
                     /_image?/content%2Fassets%2Fcovers%2Fgothic-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;q=80&amp;f=avif 496w
                   "
-                  src="/_image?/content%2Fassets%2Fcovers%2Fgothic-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
-                  width="248"
                   height="372"
                   sizes="(max-width: 599px) 48vw, (max-width: 767px) 31vw, (max-width: 899px) calc((100vw - 96px) * 0.32), (max-width: 1279px) calc((100vw - 96px) * 0.22.75), (max-width: 1695px) calc((100vw - 160px) * 0.1416666667), 218px"
+                  width="248"
                   alt=""
-                  loading="lazy"
                   decoding="async"
+                  loading="lazy"
                   style="aspect-ratio: 0.66666667"
                 />
                 <div
@@ -325,9 +319,9 @@
                   </div>
                   <div class="text-center text-md font-medium leading-6">
                     <a
+                      class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] before:tablet:opacity-15"
                       href="/reviews/gothic-by-philip-fracassi/"
                       rel="canonical"
-                      class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] before:tablet:opacity-15"
                       >Gothic</a
                     >
                   </div>
@@ -348,14 +342,14 @@
                   </p>
                   <picture
                     ><source
-                      srcset="/svg/4-stars-dark.svg"
-                      media="(prefers-color-scheme: dark)" />
+                      media="(prefers-color-scheme: dark)"
+                      srcset="/svg/4-stars-dark.svg" />
                     <img
-                      src="/svg/4-stars.svg"
                       alt="B+: 4 stars (out of 5)"
-                      height="18"
-                      width="90"
                       class="mt-2"
+                      height="18"
+                      src="/svg/4-stars.svg"
+                      width="90"
                   /></picture>
                 </div>
               </li>
@@ -363,19 +357,19 @@
                 class="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[14.16666667%]"
               >
                 <img
+                  src="/_image?/content%2Fassets%2Fcovers%2Frecord-play-pause-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
                   srcset="
                     /_image?/content%2Fassets%2Fcovers%2Frecord-play-pause-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;q=80&amp;f=avif   62w,
                     /_image?/content%2Fassets%2Fcovers%2Frecord-play-pause-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;q=80&amp;f=avif 124w,
                     /_image?/content%2Fassets%2Fcovers%2Frecord-play-pause-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;q=80&amp;f=avif 248w,
                     /_image?/content%2Fassets%2Fcovers%2Frecord-play-pause-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;q=80&amp;f=avif 496w
                   "
-                  src="/_image?/content%2Fassets%2Fcovers%2Frecord-play-pause-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
-                  width="248"
                   height="372"
                   sizes="(max-width: 599px) 48vw, (max-width: 767px) 31vw, (max-width: 899px) calc((100vw - 96px) * 0.32), (max-width: 1279px) calc((100vw - 96px) * 0.22.75), (max-width: 1695px) calc((100vw - 160px) * 0.1416666667), 218px"
+                  width="248"
                   alt=""
-                  loading="lazy"
                   decoding="async"
+                  loading="lazy"
                   style="aspect-ratio: 0.66666667"
                 />
                 <div
@@ -388,9 +382,9 @@
                   </div>
                   <div class="text-center text-md font-medium leading-6">
                     <a
+                      class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] before:tablet:opacity-15"
                       href="/reviews/record-play-pause-by-stephen-morris/"
                       rel="canonical"
-                      class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] before:tablet:opacity-15"
                       >Record Play Pause</a
                     >
                   </div>
@@ -411,14 +405,14 @@
                   </p>
                   <picture
                     ><source
-                      srcset="/svg/5-stars-dark.svg"
-                      media="(prefers-color-scheme: dark)" />
+                      media="(prefers-color-scheme: dark)"
+                      srcset="/svg/5-stars-dark.svg" />
                     <img
-                      src="/svg/5-stars.svg"
                       alt="A: 5 stars (out of 5)"
-                      height="18"
-                      width="90"
                       class="mt-2"
+                      height="18"
+                      src="/svg/5-stars.svg"
+                      width="90"
                   /></picture>
                 </div>
               </li>
@@ -426,19 +420,19 @@
                 class="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[14.16666667%]"
               >
                 <img
+                  src="/_image?/content%2Fassets%2Fcovers%2Ffright-night-origins-by-tom-holland-a-jack-ulrich.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
                   srcset="
                     /_image?/content%2Fassets%2Fcovers%2Ffright-night-origins-by-tom-holland-a-jack-ulrich.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;q=80&amp;f=avif   62w,
                     /_image?/content%2Fassets%2Fcovers%2Ffright-night-origins-by-tom-holland-a-jack-ulrich.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;q=80&amp;f=avif 124w,
                     /_image?/content%2Fassets%2Fcovers%2Ffright-night-origins-by-tom-holland-a-jack-ulrich.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;q=80&amp;f=avif 248w,
                     /_image?/content%2Fassets%2Fcovers%2Ffright-night-origins-by-tom-holland-a-jack-ulrich.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;q=80&amp;f=avif 496w
                   "
-                  src="/_image?/content%2Fassets%2Fcovers%2Ffright-night-origins-by-tom-holland-a-jack-ulrich.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
-                  width="248"
                   height="372"
                   sizes="(max-width: 599px) 48vw, (max-width: 767px) 31vw, (max-width: 899px) calc((100vw - 96px) * 0.32), (max-width: 1279px) calc((100vw - 96px) * 0.22.75), (max-width: 1695px) calc((100vw - 160px) * 0.1416666667), 218px"
+                  width="248"
                   alt=""
-                  loading="lazy"
                   decoding="async"
+                  loading="lazy"
                   style="aspect-ratio: 0.66666667"
                 />
                 <div
@@ -451,9 +445,9 @@
                   </div>
                   <div class="text-center text-md font-medium leading-6">
                     <a
+                      class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] before:tablet:opacity-15"
                       href="/reviews/fright-night-origins-by-tom-holland-a-jack-ulrich/"
                       rel="canonical"
-                      class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] before:tablet:opacity-15"
                       >Fright Night Origins</a
                     >
                   </div>
@@ -480,14 +474,14 @@
                   </p>
                   <picture
                     ><source
-                      srcset="/svg/3-stars-dark.svg"
-                      media="(prefers-color-scheme: dark)" />
+                      media="(prefers-color-scheme: dark)"
+                      srcset="/svg/3-stars-dark.svg" />
                     <img
-                      src="/svg/3-stars.svg"
                       alt="C+: 3 stars (out of 5)"
-                      height="18"
-                      width="90"
                       class="mt-2"
+                      height="18"
+                      src="/svg/3-stars.svg"
+                      width="90"
                   /></picture>
                 </div>
               </li>
@@ -495,19 +489,19 @@
                 class="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[14.16666667%]"
               >
                 <img
+                  src="/_image?/content%2Fassets%2Fcovers%2Fdont-let-them-get-you-down-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
                   srcset="
                     /_image?/content%2Fassets%2Fcovers%2Fdont-let-them-get-you-down-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;q=80&amp;f=avif   62w,
                     /_image?/content%2Fassets%2Fcovers%2Fdont-let-them-get-you-down-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;q=80&amp;f=avif 124w,
                     /_image?/content%2Fassets%2Fcovers%2Fdont-let-them-get-you-down-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;q=80&amp;f=avif 248w,
                     /_image?/content%2Fassets%2Fcovers%2Fdont-let-them-get-you-down-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;q=80&amp;f=avif 496w
                   "
-                  src="/_image?/content%2Fassets%2Fcovers%2Fdont-let-them-get-you-down-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
-                  width="248"
                   height="372"
                   sizes="(max-width: 599px) 48vw, (max-width: 767px) 31vw, (max-width: 899px) calc((100vw - 96px) * 0.32), (max-width: 1279px) calc((100vw - 96px) * 0.22.75), (max-width: 1695px) calc((100vw - 160px) * 0.1416666667), 218px"
+                  width="248"
                   alt=""
-                  loading="lazy"
                   decoding="async"
+                  loading="lazy"
                   style="aspect-ratio: 0.66666667"
                 />
                 <div
@@ -520,9 +514,9 @@
                   </div>
                   <div class="text-center text-md font-medium leading-6">
                     <a
+                      class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] before:tablet:opacity-15"
                       href="/reviews/dont-let-them-get-you-down-by-philip-fracassi/"
                       rel="canonical"
-                      class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] before:tablet:opacity-15"
                       >Don&#x27;t Let Them Get You Down</a
                     >
                   </div>
@@ -543,14 +537,14 @@
                   </p>
                   <picture
                     ><source
-                      srcset="/svg/2-half-stars-dark.svg"
-                      media="(prefers-color-scheme: dark)" />
+                      media="(prefers-color-scheme: dark)"
+                      srcset="/svg/2-half-stars-dark.svg" />
                     <img
-                      src="/svg/2-half-stars.svg"
                       alt="C-: 2.5 stars (out of 5)"
-                      height="18"
-                      width="90"
                       class="mt-2"
+                      height="18"
+                      src="/svg/2-half-stars.svg"
+                      width="90"
                   /></picture>
                 </div>
               </li>
@@ -558,19 +552,19 @@
                 class="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[14.16666667%]"
               >
                 <img
+                  src="/_image?/content%2Fassets%2Fcovers%2Fthe-creative-act-by-rick-rubin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
                   srcset="
                     /_image?/content%2Fassets%2Fcovers%2Fthe-creative-act-by-rick-rubin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;q=80&amp;f=avif   62w,
                     /_image?/content%2Fassets%2Fcovers%2Fthe-creative-act-by-rick-rubin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;q=80&amp;f=avif 124w,
                     /_image?/content%2Fassets%2Fcovers%2Fthe-creative-act-by-rick-rubin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;q=80&amp;f=avif 248w,
                     /_image?/content%2Fassets%2Fcovers%2Fthe-creative-act-by-rick-rubin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;q=80&amp;f=avif 496w
                   "
-                  src="/_image?/content%2Fassets%2Fcovers%2Fthe-creative-act-by-rick-rubin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
-                  width="248"
                   height="372"
                   sizes="(max-width: 599px) 48vw, (max-width: 767px) 31vw, (max-width: 899px) calc((100vw - 96px) * 0.32), (max-width: 1279px) calc((100vw - 96px) * 0.22.75), (max-width: 1695px) calc((100vw - 160px) * 0.1416666667), 218px"
+                  width="248"
                   alt=""
-                  loading="lazy"
                   decoding="async"
+                  loading="lazy"
                   style="aspect-ratio: 0.66666667"
                 />
                 <div
@@ -583,9 +577,9 @@
                   </div>
                   <div class="text-center text-md font-medium leading-6">
                     <a
+                      class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] before:tablet:opacity-15"
                       href="/reviews/the-creative-act-by-rick-rubin/"
                       rel="canonical"
-                      class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] before:tablet:opacity-15"
                       >The Creative Act</a
                     >
                   </div>
@@ -606,14 +600,14 @@
                   </p>
                   <picture
                     ><source
-                      srcset="/svg/3-stars-dark.svg"
-                      media="(prefers-color-scheme: dark)" />
+                      media="(prefers-color-scheme: dark)"
+                      srcset="/svg/3-stars-dark.svg" />
                     <img
-                      src="/svg/3-stars.svg"
                       alt="C+: 3 stars (out of 5)"
-                      height="18"
-                      width="90"
                       class="mt-2"
+                      height="18"
+                      src="/svg/3-stars.svg"
+                      width="90"
                   /></picture>
                 </div>
               </li>
@@ -621,19 +615,19 @@
                 class="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[14.16666667%]"
               >
                 <img
+                  src="/_image?/content%2Fassets%2Fcovers%2Fsacculina-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
                   srcset="
                     /_image?/content%2Fassets%2Fcovers%2Fsacculina-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;q=80&amp;f=avif   62w,
                     /_image?/content%2Fassets%2Fcovers%2Fsacculina-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;q=80&amp;f=avif 124w,
                     /_image?/content%2Fassets%2Fcovers%2Fsacculina-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;q=80&amp;f=avif 248w,
                     /_image?/content%2Fassets%2Fcovers%2Fsacculina-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;q=80&amp;f=avif 496w
                   "
-                  src="/_image?/content%2Fassets%2Fcovers%2Fsacculina-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
-                  width="248"
                   height="372"
                   sizes="(max-width: 599px) 48vw, (max-width: 767px) 31vw, (max-width: 899px) calc((100vw - 96px) * 0.32), (max-width: 1279px) calc((100vw - 96px) * 0.22.75), (max-width: 1695px) calc((100vw - 160px) * 0.1416666667), 218px"
+                  width="248"
                   alt=""
-                  loading="lazy"
                   decoding="async"
+                  loading="lazy"
                   style="aspect-ratio: 0.66666667"
                 />
                 <div
@@ -646,9 +640,9 @@
                   </div>
                   <div class="text-center text-md font-medium leading-6">
                     <a
+                      class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] before:tablet:opacity-15"
                       href="/reviews/sacculina-by-philip-fracassi/"
                       rel="canonical"
-                      class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] before:tablet:opacity-15"
                       >Sacculina</a
                     >
                   </div>
@@ -669,14 +663,14 @@
                   </p>
                   <picture
                     ><source
-                      srcset="/svg/4-stars-dark.svg"
-                      media="(prefers-color-scheme: dark)" />
+                      media="(prefers-color-scheme: dark)"
+                      srcset="/svg/4-stars-dark.svg" />
                     <img
-                      src="/svg/4-stars.svg"
                       alt="B: 4 stars (out of 5)"
-                      height="18"
-                      width="90"
                       class="mt-2"
+                      height="18"
+                      src="/svg/4-stars.svg"
+                      width="90"
                   /></picture>
                 </div>
               </li>
@@ -684,19 +678,19 @@
                 class="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[14.16666667%]"
               >
                 <img
+                  src="/_image?/content%2Fassets%2Fcovers%2Fthe-cipher-by-kathe-koja.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
                   srcset="
                     /_image?/content%2Fassets%2Fcovers%2Fthe-cipher-by-kathe-koja.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;q=80&amp;f=avif   62w,
                     /_image?/content%2Fassets%2Fcovers%2Fthe-cipher-by-kathe-koja.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;q=80&amp;f=avif 124w,
                     /_image?/content%2Fassets%2Fcovers%2Fthe-cipher-by-kathe-koja.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;q=80&amp;f=avif 248w,
                     /_image?/content%2Fassets%2Fcovers%2Fthe-cipher-by-kathe-koja.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;q=80&amp;f=avif 496w
                   "
-                  src="/_image?/content%2Fassets%2Fcovers%2Fthe-cipher-by-kathe-koja.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
-                  width="248"
                   height="372"
                   sizes="(max-width: 599px) 48vw, (max-width: 767px) 31vw, (max-width: 899px) calc((100vw - 96px) * 0.32), (max-width: 1279px) calc((100vw - 96px) * 0.22.75), (max-width: 1695px) calc((100vw - 160px) * 0.1416666667), 218px"
+                  width="248"
                   alt=""
-                  loading="lazy"
                   decoding="async"
+                  loading="lazy"
                   style="aspect-ratio: 0.66666667"
                 />
                 <div
@@ -709,9 +703,9 @@
                   </div>
                   <div class="text-center text-md font-medium leading-6">
                     <a
+                      class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] before:tablet:opacity-15"
                       href="/reviews/the-cipher-by-kathe-koja/"
                       rel="canonical"
-                      class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] before:tablet:opacity-15"
                       >The Cipher</a
                     >
                   </div>
@@ -732,14 +726,14 @@
                   </p>
                   <picture
                     ><source
-                      srcset="/svg/4-stars-dark.svg"
-                      media="(prefers-color-scheme: dark)" />
+                      media="(prefers-color-scheme: dark)"
+                      srcset="/svg/4-stars-dark.svg" />
                     <img
-                      src="/svg/4-stars.svg"
                       alt="B: 4 stars (out of 5)"
-                      height="18"
-                      width="90"
                       class="mt-2"
+                      height="18"
+                      src="/svg/4-stars.svg"
+                      width="90"
                   /></picture>
                 </div>
               </li>
@@ -747,19 +741,19 @@
                 class="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[14.16666667%]"
               >
                 <img
+                  src="/_image?/content%2Fassets%2Fcovers%2Fshort-stories-volume-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
                   srcset="
                     /_image?/content%2Fassets%2Fcovers%2Fshort-stories-volume-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;q=80&amp;f=avif   62w,
                     /_image?/content%2Fassets%2Fcovers%2Fshort-stories-volume-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;q=80&amp;f=avif 124w,
                     /_image?/content%2Fassets%2Fcovers%2Fshort-stories-volume-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;q=80&amp;f=avif 248w,
                     /_image?/content%2Fassets%2Fcovers%2Fshort-stories-volume-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;q=80&amp;f=avif 496w
                   "
-                  src="/_image?/content%2Fassets%2Fcovers%2Fshort-stories-volume-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
-                  width="248"
                   height="372"
                   sizes="(max-width: 599px) 48vw, (max-width: 767px) 31vw, (max-width: 899px) calc((100vw - 96px) * 0.32), (max-width: 1279px) calc((100vw - 96px) * 0.22.75), (max-width: 1695px) calc((100vw - 160px) * 0.1416666667), 218px"
+                  width="248"
                   alt=""
-                  loading="lazy"
                   decoding="async"
+                  loading="lazy"
                   style="aspect-ratio: 0.66666667"
                 />
                 <div
@@ -772,9 +766,9 @@
                   </div>
                   <div class="text-center text-md font-medium leading-6">
                     <a
+                      class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] before:tablet:opacity-15"
                       href="/reviews/roadside-pickup-by-richard-laymon/"
                       rel="canonical"
-                      class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] before:tablet:opacity-15"
                       >Roadside Pickup</a
                     >
                   </div>
@@ -795,14 +789,14 @@
                   </p>
                   <picture
                     ><source
-                      srcset="/svg/2-half-stars-dark.svg"
-                      media="(prefers-color-scheme: dark)" />
+                      media="(prefers-color-scheme: dark)"
+                      srcset="/svg/2-half-stars-dark.svg" />
                     <img
-                      src="/svg/2-half-stars.svg"
                       alt="C-: 2.5 stars (out of 5)"
-                      height="18"
-                      width="90"
                       class="mt-2"
+                      height="18"
+                      src="/svg/2-half-stars.svg"
+                      width="90"
                   /></picture>
                 </div>
               </li>
@@ -810,19 +804,19 @@
                 class="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[14.16666667%]"
               >
                 <img
+                  src="/_image?/content%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
                   srcset="
                     /_image?/content%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;q=80&amp;f=avif   62w,
                     /_image?/content%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;q=80&amp;f=avif 124w,
                     /_image?/content%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;q=80&amp;f=avif 248w,
                     /_image?/content%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;q=80&amp;f=avif 496w
                   "
-                  src="/_image?/content%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
-                  width="248"
                   height="372"
                   sizes="(max-width: 599px) 48vw, (max-width: 767px) 31vw, (max-width: 899px) calc((100vw - 96px) * 0.32), (max-width: 1279px) calc((100vw - 96px) * 0.22.75), (max-width: 1695px) calc((100vw - 160px) * 0.1416666667), 218px"
+                  width="248"
                   alt=""
-                  loading="lazy"
                   decoding="async"
+                  loading="lazy"
                   style="aspect-ratio: 0.66666667"
                 />
                 <div
@@ -835,9 +829,9 @@
                   </div>
                   <div class="text-center text-md font-medium leading-6">
                     <a
+                      class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] before:tablet:opacity-15"
                       href="/reviews/fright-night-by-john-skipp-craig-spector/"
                       rel="canonical"
-                      class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] before:tablet:opacity-15"
                       >Fright Night</a
                     >
                   </div>
@@ -864,14 +858,14 @@
                   </p>
                   <picture
                     ><source
-                      srcset="/svg/1-star-dark.svg"
-                      media="(prefers-color-scheme: dark)" />
+                      media="(prefers-color-scheme: dark)"
+                      srcset="/svg/1-star-dark.svg" />
                     <img
-                      src="/svg/1-star.svg"
                       alt="F: 1 star (out of 5)"
-                      height="18"
-                      width="90"
                       class="mt-2"
+                      height="18"
+                      src="/svg/1-star.svg"
+                      width="90"
                   /></picture>
                 </div>
               </li>
@@ -879,19 +873,19 @@
                 class="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[14.16666667%]"
               >
                 <img
+                  src="/_image?/content%2Fassets%2Fcovers%2Fdoctor-sleep-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
                   srcset="
                     /_image?/content%2Fassets%2Fcovers%2Fdoctor-sleep-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;q=80&amp;f=avif   62w,
                     /_image?/content%2Fassets%2Fcovers%2Fdoctor-sleep-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;q=80&amp;f=avif 124w,
                     /_image?/content%2Fassets%2Fcovers%2Fdoctor-sleep-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;q=80&amp;f=avif 248w,
                     /_image?/content%2Fassets%2Fcovers%2Fdoctor-sleep-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;q=80&amp;f=avif 496w
                   "
-                  src="/_image?/content%2Fassets%2Fcovers%2Fdoctor-sleep-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
-                  width="248"
                   height="372"
                   sizes="(max-width: 599px) 48vw, (max-width: 767px) 31vw, (max-width: 899px) calc((100vw - 96px) * 0.32), (max-width: 1279px) calc((100vw - 96px) * 0.22.75), (max-width: 1695px) calc((100vw - 160px) * 0.1416666667), 218px"
+                  width="248"
                   alt=""
-                  loading="lazy"
                   decoding="async"
+                  loading="lazy"
                   style="aspect-ratio: 0.66666667"
                 />
                 <div
@@ -904,9 +898,9 @@
                   </div>
                   <div class="text-center text-md font-medium leading-6">
                     <a
+                      class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] before:tablet:opacity-15"
                       href="/reviews/doctor-sleep-by-stephen-king/"
                       rel="canonical"
-                      class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] before:tablet:opacity-15"
                       >Doctor Sleep</a
                     >
                   </div>
@@ -927,22 +921,22 @@
                   </p>
                   <picture
                     ><source
-                      srcset="/svg/3-stars-dark.svg"
-                      media="(prefers-color-scheme: dark)" />
+                      media="(prefers-color-scheme: dark)"
+                      srcset="/svg/3-stars-dark.svg" />
                     <img
-                      src="/svg/3-stars.svg"
                       alt="C+: 3 stars (out of 5)"
-                      height="18"
-                      width="90"
                       class="mt-2"
+                      height="18"
+                      src="/svg/3-stars.svg"
+                      width="90"
                   /></picture>
                 </div>
               </li>
             </ol>
             <div class="flex px-container py-10">
               <a
-                href="/reviews/"
                 class="mx-auto w-full max-w-button bg-default py-5 text-center font-sans text-xs font-semibold uppercase tracking-wide text-accent hover:bg-accent hover:text-inverse"
+                href="/reviews/"
                 >All Reviews</a
               >
             </div>
@@ -999,15 +993,15 @@
               </li>
             </ul>
             <a
-              href="#top"
               class="mb-8 w-full max-w-button bg-canvas py-5 text-center font-sans text-xs uppercase tracking-wide text-default hover:bg-inverse hover:text-inverse"
+              href="#top"
               >To the top</a
             >
             <p class="w-full font-normal leading-5 text-inverse-subtle">
               All covers used in accordance with the<!-- -->
               <a
-                href="http://www.copyright.gov/title17/92chap1.html#107"
                 class="text-inherit underline decoration-2 underline-offset-4 hover:bg-default hover:text-default"
+                href="http://www.copyright.gov/title17/92chap1.html#107"
                 >Fair Use Law.</a
               >
             </p>
@@ -1016,13 +1010,13 @@
       </div>
     </div>
     <dialog
-      class="relative m-0 h-screen max-h-none w-screen max-w-unset border border-default bg-subtle shadow-lg open:flex open:flex-col tablet:mx-auto tablet:mt-16 tablet:h-min tablet:max-h-[min(100vh_-_128px,900px)] tablet:min-h-60 tablet:max-w-[min(100vw_-_64px,36rem)] tablet:rounded-xl desktop:min-h-0"
       aria-label="Search"
+      class="relative m-0 h-screen max-h-none w-screen max-w-unset border border-default bg-subtle shadow-lg open:flex open:flex-col tablet:mx-auto tablet:mt-16 tablet:h-min tablet:max-h-[min(100vh_-_128px,900px)] tablet:min-h-60 tablet:max-w-[min(100vw_-_64px,36rem)] tablet:rounded-xl desktop:min-h-0"
     >
-      <div data-dialog-frame class="contents">
+      <div class="contents" data-dialog-frame>
         <button
-          data-close-modal
           class="px-4 font-sans text-sm font-light hover:bg-inverse hover:text-inverse focus:outline-accent"
+          data-close-modal
         >
           Cancel
         </button>

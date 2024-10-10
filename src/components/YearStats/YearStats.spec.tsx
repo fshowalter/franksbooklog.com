@@ -1,6 +1,7 @@
 import { render } from "@testing-library/react";
-import { allStatYears } from "src/api/yearStats";
 import { describe, it } from "vitest";
+
+import { allStatYears } from "~/api/yearStats";
 
 import { getProps } from "./getProps";
 import { YearStats } from "./YearStats";

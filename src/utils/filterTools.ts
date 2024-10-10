@@ -1,11 +1,11 @@
-export interface FilterableState<T, S, G> {
-  filters: Record<string, (item: T) => boolean>;
-  filteredValues: T[];
+export type FilterableState<T, S, G> = {
   allValues: T[];
-  sortValue: S;
-  showCount: number;
+  filteredValues: T[];
+  filters: Record<string, (item: T) => boolean>;
   groupedValues: G;
-}
+  showCount: number;
+  sortValue: S;
+};
 
 export function filterTools<T, S, G>(
   sorter: (items: T[], sortOrder: S) => T[],
@@ -14,23 +14,12 @@ export function filterTools<T, S, G>(
   const applyFilters = buildApplyFilters(sorter, grouper);
 
   return {
-    updateFilter: <State extends FilterableState<T, S, G>>(
-      currentState: State,
-      key: string,
-      handler: (item: T) => boolean,
-    ): State => {
-      const filters = {
-        ...currentState.filters,
-        [key]: handler,
-      };
-
-      return applyFilters(filters, currentState);
-    },
+    applyFilters,
     clearFilter: <State extends FilterableState<T, S, G>>(
       value: string,
       currentState: State,
       key: string,
-    ): State | null => {
+    ): null | State => {
       if (value != "All") {
         return null;
       }
@@ -43,7 +32,18 @@ export function filterTools<T, S, G>(
 
       return applyFilters(filters, currentState);
     },
-    applyFilters,
+    updateFilter: <State extends FilterableState<T, S, G>>(
+      currentState: State,
+      key: string,
+      handler: (item: T) => boolean,
+    ): State => {
+      const filters = {
+        ...currentState.filters,
+        [key]: handler,
+      };
+
+      return applyFilters(filters, currentState);
+    },
   };
 }
 
@@ -57,8 +57,8 @@ function buildApplyFilters<T, S, G>(
   ): State {
     const filteredValues = sorter(
       filterValues({
-        values: currentState.allValues,
         filters: newFilters,
+        values: currentState.allValues,
       }),
       currentState.sortValue,
     );
@@ -70,19 +70,19 @@ function buildApplyFilters<T, S, G>(
 
     return {
       ...currentState,
-      filters: newFilters,
       filteredValues,
+      filters: newFilters,
       groupedValues,
     };
   };
 }
 
 function filterValues<T>({
-  values,
   filters,
+  values,
 }: {
-  values: readonly T[];
   filters: Record<string, (arg0: T) => boolean>;
+  values: readonly T[];
 }): T[] {
   return values.filter((value) => {
     return Object.values(filters).every((filter) => {

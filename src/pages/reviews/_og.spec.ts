@@ -1,7 +1,6 @@
+import { experimental_AstroContainer as AstroContainer } from "astro/container";
 import fs from "node:fs";
 import path from "node:path";
-
-import { experimental_AstroContainer as AstroContainer } from "astro/container";
 import { describe, it } from "vitest";
 
 import * as OgEndpoint from "./og.jpg.ts";

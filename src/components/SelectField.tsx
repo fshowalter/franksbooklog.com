@@ -1,26 +1,27 @@
 import type { ChangeEvent } from "react";
-import { ccn } from "src/utils/concatClassNames";
+
+import { ccn } from "~/utils/concatClassNames";
 
 import { LabelText } from "./LabelText";
 import { SelectInput } from "./SelectInput";
 
 export function SelectField({
-  label,
-  value,
-  onChange,
   children,
   className,
+  label,
+  onChange,
+  value,
 }: {
-  label: string;
-  value?: string;
-  onChange: (e: ChangeEvent<HTMLSelectElement>) => void;
   children: React.ReactNode;
   className?: string;
+  label: string;
+  onChange: (e: ChangeEvent<HTMLSelectElement>) => void;
+  value?: string;
 }): JSX.Element {
   return (
     <label className={ccn("flex flex-col", className)}>
       <LabelText value={label} />
-      <SelectInput value={value?.toString()} onChange={onChange}>
+      <SelectInput onChange={onChange} value={value?.toString()}>
         {children}
       </SelectInput>
     </label>

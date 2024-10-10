@@ -1,11 +1,11 @@
-import type { AlltimeStats } from "src/api/alltimeStats";
+import type { AlltimeStats } from "~/api/alltimeStats";
 
-import { Distribution } from "../Distribution";
+import { Distribution } from "~/components/Distribution";
 
 export function GradeDistribution({
   values,
 }: {
-  values: Pick<AlltimeStats["gradeDistribution"][0], "name" | "count">[];
+  values: Pick<AlltimeStats["gradeDistribution"][0], "count" | "name">[];
 }): JSX.Element | null {
-  return <Distribution values={values} title="Grade Distribution" />;
+  return <Distribution title="Grade Distribution" values={values} />;
 }

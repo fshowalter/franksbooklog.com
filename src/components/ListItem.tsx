@@ -1,13 +1,13 @@
 export function ListItem({
-  children,
   background = "bg-default",
-  itemsCenter = false,
+  children,
   extraVerticalPadding = false,
+  itemsCenter = false,
 }: {
-  children: React.ReactNode;
   background?: string;
-  itemsCenter?: boolean;
+  children: React.ReactNode;
   extraVerticalPadding?: boolean;
+  itemsCenter?: boolean;
 }) {
   return (
     <li

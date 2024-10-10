@@ -45,12 +45,12 @@ function underscoreDebounce<F extends onChangeHandler>(
 
 export function DebouncedInput({
   label,
-  placeholder,
   onInputChange,
+  placeholder,
 }: {
   label: string;
-  placeholder: string;
   onInputChange: onChangeHandler;
+  placeholder: string;
 }): JSX.Element {
   const debouncedHandleChange = underscoreDebounce(onInputChange, 150);
 
@@ -58,12 +58,12 @@ export function DebouncedInput({
     <label className="flex flex-col text-subtle">
       <LabelText value={label} />
       <input
-        type="text"
-        placeholder={placeholder}
+        className="border-0 bg-default px-4 py-2 text-base text-default shadow-all placeholder:text-default placeholder:opacity-50"
         onChange={(e: React.FormEvent<HTMLInputElement>) =>
           debouncedHandleChange((e.target as HTMLInputElement).value)
         }
-        className="border-0 bg-default px-4 py-2 text-base text-default shadow-all placeholder:text-default placeholder:opacity-50"
+        placeholder={placeholder}
+        type="text"
       />
     </label>
   );

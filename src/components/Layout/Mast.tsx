@@ -1,13 +1,14 @@
-import { Logo } from "./Logo";
 import type { NavItem } from "./navItems";
+
+import { Logo } from "./Logo";
 import { navItems } from "./navItems";
 
 export function Mast({
-  hideLogo,
   hasBackdrop,
+  hideLogo,
 }: {
-  hideLogo: boolean;
   hasBackdrop: boolean;
+  hideLogo: boolean;
 }) {
   return (
     <header
@@ -26,11 +27,11 @@ export function Mast({
           </ul>
         </nav>
         <SearchButton />
-        <input type="checkbox" id="mobile-nav" className="hidden" />
-        <label htmlFor="mobile-nav" className="hamburger-icon desktop:hidden">
+        <input className="hidden" id="mobile-nav" type="checkbox" />
+        <label className="hamburger-icon desktop:hidden" htmlFor="mobile-nav">
           <span
-            style={{ background: "var(--fg-default)" }}
             className="hamburger-icon-bars"
+            style={{ background: "var(--fg-default)" }}
           />
         </label>
         <ul className="hamburger-menu flex flex-col items-start gap-y-5 text-left text-inverse desktop:hidden">
@@ -62,8 +63,8 @@ function SubMenu({ values }: { values: NavItem[] }): JSX.Element | null {
       {values.map((value) => {
         return (
           <li
-            key={value.target}
             className="mb-2 font-sans text-xs uppercase tracking-wide text-inverse-subtle"
+            key={value.target}
           >
             <a href={value.target}>{value.text}</a>
           </li>
@@ -90,27 +91,27 @@ function SearchButton() {
   return (
     <div className="z-[1000]">
       <button
-        suppressHydrationWarning
+        aria-keyshortcuts="Control+K"
+        aria-label="Search"
+        className="flex items-center justify-between overflow-hidden text-sm leading-6 ring-default desktop:ml-6"
         data-open-modal
         disabled
-        aria-label="Search"
-        aria-keyshortcuts="Control+K"
-        className="flex items-center justify-between overflow-hidden text-sm leading-6 ring-default desktop:ml-6"
-        type="button"
+        suppressHydrationWarning
         title="Search: Control+K"
+        type="button"
       >
         <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth="1.5"
-          stroke="currentColor"
           className="size-7"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
         >
           <path
+            d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
             strokeLinecap="round"
             strokeLinejoin="round"
-            d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
           />
         </svg>
       </button>

@@ -5,12 +5,12 @@ import { SelectInput } from "./SelectInput";
 
 export function YearInput({
   label,
-  years,
   onYearChange,
+  years,
 }: {
   label: string;
-  years: readonly string[];
   onYearChange: (values: [string, string]) => void;
+  years: readonly string[];
 }): JSX.Element {
   const [minYear, setMinYear] = useState(years[0]);
   const [maxYear, setMaxYear] = useState(years[years.length - 1]);
@@ -46,8 +46,8 @@ export function YearInput({
             From
           </span>
           <SelectInput
-            value={minYear}
             onChange={(e) => handleMinChange(e.target.value)}
+            value={minYear}
           >
             {years.map((year) => {
               return (
@@ -63,8 +63,8 @@ export function YearInput({
             to
           </span>
           <SelectInput
-            value={maxYear}
             onChange={(e) => handleMaxChange(e.target.value)}
+            value={maxYear}
           >
             {years
               .slice()

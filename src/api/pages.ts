@@ -2,10 +2,10 @@ import { allPagesMarkdown } from "./data/pagesMarkdown";
 import { allReviewedWorksJson } from "./data/reviewedWorksJson";
 import { getHtml } from "./utils/markdown/getHtml";
 
-interface MarkdownPage {
+type MarkdownPage = {
+  content: null | string;
   title: string;
-  content: string | null;
-}
+};
 
 export async function getPage(slug: string): Promise<MarkdownPage> {
   const pages = await allPagesMarkdown();
@@ -17,7 +17,7 @@ export async function getPage(slug: string): Promise<MarkdownPage> {
   const reviewedWorksJson = await allReviewedWorksJson();
 
   return {
-    title: matchingPage.title,
     content: getHtml(matchingPage.rawContent, reviewedWorksJson),
+    title: matchingPage.title,
   };
 }

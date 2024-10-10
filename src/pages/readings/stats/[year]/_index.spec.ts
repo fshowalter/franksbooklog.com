@@ -1,10 +1,12 @@
+import type { AstroComponentFactory } from "astro/runtime/server/index.js";
+
 import { getContainerRenderer as reactContainerRenderer } from "@astrojs/react";
 import { experimental_AstroContainer as AstroContainer } from "astro/container";
-import type { AstroComponentFactory } from "astro/runtime/server/index.js";
 import { loadRenderers } from "astro:container";
 import * as prettier from "prettier";
-import { allStatYears } from "src/api/yearStats";
 import { describe, it } from "vitest";
+
+import { allStatYears } from "~/api/yearStats";
 
 import YearStats from "./index.astro";
 
@@ -20,10 +22,10 @@ describe("/readings/stats/:year", () => {
       const result = await container.renderToString(
         YearStats as AstroComponentFactory,
         {
+          props: { year: year },
           request: new Request(
             `https://www.franksbooklog.com/readings/stats/${year}/`,
           ),
-          props: { year: year },
         },
       );
 

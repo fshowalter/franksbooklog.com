@@ -1,27 +1,28 @@
-import type { AlltimeStats } from "src/api/alltimeStats";
-import { DecadeDistribution } from "src/components/DecadeDistribution";
-import { EditionDistribution } from "src/components/EditionDistribution";
-import { KindDistribution } from "src/components/KindDistribution";
-import { MostReadAuthors } from "src/components/MostReadAuthors";
-import { StatsNavigation } from "src/components/StatsNavigation";
+import type { AlltimeStats } from "~/api/alltimeStats";
 
-import { SolidBackdrop } from "../Backdrop";
-import { Layout } from "../Layout";
+import { SolidBackdrop } from "~/components/Backdrop";
+import { DecadeDistribution } from "~/components/DecadeDistribution";
+import { EditionDistribution } from "~/components/EditionDistribution";
+import { KindDistribution } from "~/components/KindDistribution";
+import { Layout } from "~/components/Layout";
+import { MostReadAuthors } from "~/components/MostReadAuthors";
+import { StatsNavigation } from "~/components/StatsNavigation";
+
 import { Callouts } from "./Callouts";
 import { GradeDistribution } from "./GradeDistribution";
 
-export interface Props {
-  stats: AlltimeStats;
-  mostReadAuthors: React.ComponentProps<typeof MostReadAuthors>["values"];
-  distinctStatYears: string[];
+export type Props = {
   deck: string;
-}
+  distinctStatYears: string[];
+  mostReadAuthors: React.ComponentProps<typeof MostReadAuthors>["values"];
+  stats: AlltimeStats;
+};
 
 export function AlltimeStats({
-  stats,
   deck,
   distinctStatYears,
   mostReadAuthors,
+  stats,
 }: Props): JSX.Element {
   return (
     <Layout className="flex flex-col items-center bg-subtle">
@@ -34,21 +35,21 @@ export function AlltimeStats({
             Reading Log
           </a>
         }
-        title="All-Time Stats"
         deck={deck}
+        title="All-Time Stats"
       />
       <StatsNavigation
+        className="mb-12 w-full"
         currentYear={"all"}
         linkFunc={(year: string) => {
           return `/readings/stats/${year}/`;
         }}
         years={distinctStatYears}
-        className="mb-12 w-full"
       />
       <Callouts
-        workCount={stats.workCount}
         bookCount={stats.bookCount}
         reviewCount={stats.reviewCount}
+        workCount={stats.workCount}
       />
       <div className="mx-auto flex w-full max-w-screen-max flex-col items-stretch gap-y-8 py-10 tablet:px-container">
         <div className="mx-auto flex w-full flex-col gap-y-8 desktop:max-w-[calc(66%_+_24px)]">

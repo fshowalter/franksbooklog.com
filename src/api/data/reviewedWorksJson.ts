@@ -1,5 +1,4 @@
 import { promises as fs } from "node:fs";
-
 import { z } from "zod";
 
 import { getContentPath } from "./utils/getContentPath";
@@ -8,18 +7,18 @@ import { WorkKindSchema } from "./utils/workKindSchema";
 const reviewedWorksJsonFile = getContentPath("data", "reviewed-works.json");
 
 const ReadingSchema = z.object({
+  abandoned: z.boolean(),
+  date: z.coerce.date(),
   isAudiobook: z.boolean(),
   readingTime: z.number(),
-  abandoned: z.boolean(),
   sequence: z.number(),
-  date: z.coerce.date(),
 });
 
 const AuthorSchema = z.object({
   name: z.string(),
-  sortName: z.string(),
-  slug: z.string(),
   notes: z.nullable(z.string()),
+  slug: z.string(),
+  sortName: z.string(),
 });
 
 const IncludedWorkAuthorSchema = z.object({
@@ -28,11 +27,11 @@ const IncludedWorkAuthorSchema = z.object({
 });
 
 const IncludedWorkSchema = z.object({
-  title: z.string(),
   authors: z.array(IncludedWorkAuthorSchema),
-  slug: z.string(),
   grade: z.string(),
   kind: WorkKindSchema,
+  slug: z.string(),
+  title: z.string(),
   yearPublished: z.string(),
 });
 
@@ -41,13 +40,13 @@ const MoreReviewAuthorSchema = z.object({
 });
 
 const MoreReviewSchema = z.object({
-  title: z.string(),
-  yearPublished: z.string(),
-  kind: WorkKindSchema,
   authors: z.array(MoreReviewAuthorSchema),
   grade: z.string(),
-  slug: z.string(),
   includedInSlugs: z.array(z.string()),
+  kind: WorkKindSchema,
+  slug: z.string(),
+  title: z.string(),
+  yearPublished: z.string(),
 });
 
 const MoreByAuthorSchema = z.object({
@@ -57,20 +56,20 @@ const MoreByAuthorSchema = z.object({
 });
 
 const ReviewedWorkJsonSchema = z.object({
-  sequence: z.number(),
-  slug: z.string(),
-  includedInSlugs: z.array(z.string()),
-  title: z.string(),
-  subtitle: z.nullable(z.string()),
-  sortTitle: z.string(),
-  yearPublished: z.string(),
   authors: z.array(AuthorSchema),
   gradeValue: z.number(),
-  kind: WorkKindSchema,
-  moreReviews: z.array(MoreReviewSchema),
-  moreByAuthors: z.array(MoreByAuthorSchema),
+  includedInSlugs: z.array(z.string()),
   includedWorks: z.array(IncludedWorkSchema),
+  kind: WorkKindSchema,
+  moreByAuthors: z.array(MoreByAuthorSchema),
+  moreReviews: z.array(MoreReviewSchema),
   readings: z.array(ReadingSchema),
+  sequence: z.number(),
+  slug: z.string(),
+  sortTitle: z.string(),
+  subtitle: z.nullable(z.string()),
+  title: z.string(),
+  yearPublished: z.string(),
 });
 
 export type ReviewedWorkJsonReading = z.infer<typeof ReadingSchema>;

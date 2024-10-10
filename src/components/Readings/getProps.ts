@@ -1,21 +1,21 @@
-import { getFluidCoverImageProps } from "src/api/covers";
-import { allTimelineEntries } from "src/api/timelineEntries";
-import { ListItemCoverImageConfig } from "src/components/ListItemCover";
+import { getFluidCoverImageProps } from "~/api/covers";
+import { allTimelineEntries } from "~/api/timelineEntries";
+import { ListItemCoverImageConfig } from "~/components/ListItemCover";
 
 import type { ListItemValue } from "./Readings";
 import type { Props } from "./Readings";
 
 export async function getProps(): Promise<Props> {
   const {
-    timelineEntries,
-    distinctWorkYears,
+    abandonedCount,
+    bookCount,
+    distinctEditions,
     distinctKinds,
     distinctReadingYears,
-    distinctEditions,
-    bookCount,
-    workCount,
-    abandonedCount,
+    distinctWorkYears,
     shortStoryCount,
+    timelineEntries,
+    workCount,
   } = await allTimelineEntries();
 
   timelineEntries.sort((a, b) => b.sequence.localeCompare(a.sequence));
@@ -24,34 +24,6 @@ export async function getProps(): Promise<Props> {
     timelineEntries.map(async (entry) => {
       const readingDate = new Date(entry.date);
       const value: ListItemValue = {
-        readingDate: readingDate.toLocaleString("en-US", {
-          day: "numeric",
-          timeZone: "UTC",
-        }),
-        readingMonth: readingDate.toLocaleString("en-US", {
-          month: "long",
-          timeZone: "UTC",
-        }),
-        readingDay: readingDate.toLocaleString("en-US", {
-          weekday: "short",
-          timeZone: "UTC",
-        }),
-        readingYear: readingDate.toLocaleString("en-US", {
-          year: "numeric",
-          timeZone: "UTC",
-        }),
-        title: entry.title,
-        slug: entry.slug,
-        coverImageProps: await getFluidCoverImageProps(
-          entry,
-          ListItemCoverImageConfig,
-        ),
-        yearPublished: entry.yearPublished,
-        kind: entry.kind,
-        sequence: entry.sequence,
-        progress: entry.progress,
-        reviewed: entry.reviewed,
-        edition: entry.edition,
         authors: entry.authors.map((author) => {
           const authorValue: ListItemValue["authors"][0] = {
             name: author.name,
@@ -59,6 +31,34 @@ export async function getProps(): Promise<Props> {
 
           return authorValue;
         }),
+        coverImageProps: await getFluidCoverImageProps(
+          entry,
+          ListItemCoverImageConfig,
+        ),
+        edition: entry.edition,
+        kind: entry.kind,
+        progress: entry.progress,
+        readingDate: readingDate.toLocaleString("en-US", {
+          day: "numeric",
+          timeZone: "UTC",
+        }),
+        readingDay: readingDate.toLocaleString("en-US", {
+          timeZone: "UTC",
+          weekday: "short",
+        }),
+        readingMonth: readingDate.toLocaleString("en-US", {
+          month: "long",
+          timeZone: "UTC",
+        }),
+        readingYear: readingDate.toLocaleString("en-US", {
+          timeZone: "UTC",
+          year: "numeric",
+        }),
+        reviewed: entry.reviewed,
+        sequence: entry.sequence,
+        slug: entry.slug,
+        title: entry.title,
+        yearPublished: entry.yearPublished,
       };
 
       return value;
@@ -66,16 +66,16 @@ export async function getProps(): Promise<Props> {
   );
 
   return {
+    abandonedCount,
+    bookCount,
     deck: `"It is what you read when you don't have to that determines what you will be when you can't help it."`,
-    values,
+    distinctEditions,
     distinctKinds,
     distinctReadingYears,
     distinctWorkYears,
-    distinctEditions,
     initialSort: "progress-date-desc",
-    workCount,
-    bookCount,
-    abandonedCount,
     shortStoryCount,
+    values,
+    workCount,
   };
 }

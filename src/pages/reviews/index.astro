@@ -1,11 +1,11 @@
 ---
-import { getProps } from "src/components/Reviews/getProps";
-import { Reviews } from "src/components/Reviews/Reviews";
-import Layout from "src/layouts/Layout.astro";
+import { getProps } from "~/components/Reviews/getProps";
+import { Reviews } from "~/components/Reviews/Reviews";
+import Layout from "~/layouts/Layout.astro";
 
 const props = await getProps();
 ---
 
-<Layout title="Reviews" description={props.deck}>
+<Layout description={props.deck} title="Reviews">
   <Reviews client:load {...props} />
 </Layout>

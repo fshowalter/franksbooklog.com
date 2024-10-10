@@ -1,39 +1,40 @@
-import { DebouncedInput } from "src/components/DebouncedInput";
-import { SelectField } from "src/components/SelectField";
-import { SelectOptions } from "src/components/SelectOptions";
-import { YearInput } from "src/components/YearInput";
+import { DebouncedInput } from "~/components/DebouncedInput";
+import { SelectField } from "~/components/SelectField";
+import { SelectOptions } from "~/components/SelectOptions";
+import { YearInput } from "~/components/YearInput";
 
 import type { ActionType, Sort } from "./Shelf.reducer";
+
 import { Actions } from "./Shelf.reducer";
 
 export function Filters({
   dispatch,
-  sortValue,
-  distinctPublishedYears,
   distinctAuthors,
   distinctKinds,
+  distinctPublishedYears,
+  sortValue,
 }: {
   dispatch: React.Dispatch<ActionType>;
-  sortValue: string;
   distinctAuthors: readonly string[];
-  distinctPublishedYears: readonly string[];
   distinctKinds: readonly string[];
+  distinctPublishedYears: readonly string[];
+  sortValue: string;
 }) {
   return (
     <>
       <DebouncedInput
         label="Title"
-        placeholder="Enter all or part of a title"
         onInputChange={(value) =>
           dispatch({ type: Actions.FILTER_TITLE, value })
         }
+        placeholder="Enter all or part of a title"
       />
       <YearInput
         label="Year Published"
-        years={distinctPublishedYears}
         onYearChange={(values) =>
           dispatch({ type: Actions.FILTER_YEAR_PUBLISHED, values })
         }
+        years={distinctPublishedYears}
       />
       <SelectField
         label="Kind"
@@ -58,7 +59,6 @@ export function Filters({
         <SelectOptions options={distinctAuthors} />
       </SelectField>
       <SelectField
-        value={sortValue}
         label="Order By"
         onChange={(e) =>
           dispatch({
@@ -66,6 +66,7 @@ export function Filters({
             value: e.target.value as Sort,
           })
         }
+        value={sortValue}
       >
         <option value="author-asc">Author (A &rarr; Z)</option>
         <option value="author-desc">Author (Z &rarr; A)</option>

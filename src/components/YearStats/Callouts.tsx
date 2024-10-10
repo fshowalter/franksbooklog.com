@@ -1,7 +1,8 @@
-import type { YearStats } from "src/api/yearStats";
-import { StatsCallout } from "src/components/StatsCallout";
+import type { YearStats } from "~/api/yearStats";
 
-interface Props extends Pick<YearStats, "bookCount" | "workCount"> {}
+import { StatsCallout } from "~/components/StatsCallout";
+
+type Props = {} & Pick<YearStats, "bookCount" | "workCount">;
 
 export function Callouts({ bookCount, workCount }: Props): JSX.Element {
   return (

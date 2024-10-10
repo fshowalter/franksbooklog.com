@@ -1,5 +1,6 @@
-import { Logo } from "./Logo";
 import type { NavItem } from "./navItems";
+
+import { Logo } from "./Logo";
 import { navItems } from "./navItems";
 
 export function Footer(): JSX.Element {
@@ -19,16 +20,16 @@ export function Footer(): JSX.Element {
           })}
         </ul>
         <a
-          href="#top"
           className="mb-8 w-full max-w-button bg-canvas py-5 text-center font-sans text-xs uppercase tracking-wide text-default hover:bg-inverse hover:text-inverse"
+          href="#top"
         >
           To the top
         </a>
         <p className="w-full font-normal leading-5 text-inverse-subtle">
           All covers used in accordance with the{" "}
           <a
-            href="http://www.copyright.gov/title17/92chap1.html#107"
             className="text-inherit underline decoration-2 underline-offset-4 hover:bg-default hover:text-default"
+            href="http://www.copyright.gov/title17/92chap1.html#107"
           >
             Fair Use Law.
           </a>
@@ -59,8 +60,8 @@ function SubNavList({ values }: { values: NavItem[] }): JSX.Element | null {
       {values.map((value) => {
         return (
           <li
-            key={value.target}
             className="mb-2 font-sans text-xs uppercase tracking-wide text-inverse-subtle"
+            key={value.target}
           >
             <a className="hover:text-inverse" href={value.target}>
               {value.text}

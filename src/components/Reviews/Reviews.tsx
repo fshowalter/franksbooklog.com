@@ -1,89 +1,91 @@
 import { useReducer } from "react";
-import type { CoverImageProps } from "src/api/covers";
-import type { Review } from "src/api/reviews";
-import { ListItem } from "src/components/ListItem";
-import { ListItemCover } from "src/components/ListItemCover";
-import { ListItemKindAndYear } from "src/components/ListItemKindAndYear";
-import { ListItemTitle } from "src/components/ListItemTitle";
-import { ListWithFiltersLayout } from "src/components/ListWithFiltersLayout";
-import { toSentenceArray } from "src/utils";
 
-import { SolidBackdrop } from "../Backdrop";
-import { Grade } from "../Grade";
-import { GroupedList } from "../GroupedList";
-import { Filters } from "./Filters";
+import type { CoverImageProps } from "~/api/covers";
+import type { Review } from "~/api/reviews";
+
+import { SolidBackdrop } from "~/components/Backdrop";
+import { Grade } from "~/components/Grade";
+import { GroupedList } from "~/components/GroupedList";
+import { ListItem } from "~/components/ListItem";
+import { ListItemCover } from "~/components/ListItemCover";
+import { ListItemKindAndYear } from "~/components/ListItemKindAndYear";
+import { ListItemTitle } from "~/components/ListItemTitle";
+import { ListWithFiltersLayout } from "~/components/ListWithFiltersLayout";
+import { toSentenceArray } from "~/utils";
+
 import type { Sort } from "./Reviews.reducer";
+
+import { Filters } from "./Filters";
 import { Actions, initState, reducer } from "./Reviews.reducer";
 
-export interface Props {
-  values: ListItemValue[];
+export type Props = {
+  deck: string;
+  distinctKinds: readonly string[];
   distinctPublishedYears: readonly string[];
   distinctReviewYears: readonly string[];
-  distinctKinds: readonly string[];
   initialSort: Sort;
-  deck: string;
-}
+  values: ListItemValue[];
+};
 
-interface Author extends Pick<Review["authors"][0], "name" | "sortName"> {}
+type Author = {} & Pick<Review["authors"][0], "name" | "sortName">;
 
-export interface ListItemValue
-  extends Pick<
-    Review,
-    | "grade"
-    | "slug"
-    | "date"
-    | "gradeValue"
-    | "title"
-    | "yearPublished"
-    | "sortTitle"
-    | "kind"
-  > {
+export type ListItemValue = {
   authors: Author[];
   coverImageProps: CoverImageProps;
-}
+} & Pick<
+  Review,
+  | "date"
+  | "grade"
+  | "gradeValue"
+  | "kind"
+  | "slug"
+  | "sortTitle"
+  | "title"
+  | "yearPublished"
+>;
 
 export function Reviews({
-  values,
+  deck,
+  distinctKinds,
   distinctPublishedYears,
   distinctReviewYears,
-  distinctKinds,
   initialSort,
-  deck,
+  values,
 }: Props): JSX.Element {
   const [state, dispatch] = useReducer(
     reducer,
     {
-      values,
       initialSort,
+      values,
     },
     initState,
   );
 
   return (
     <ListWithFiltersLayout
-      backdrop={<SolidBackdrop title="Reviews" deck={deck} />}
-      totalCount={state.filteredValues.length}
+      backdrop={<SolidBackdrop deck={deck} title="Reviews" />}
       filters={
         <Filters
           dispatch={dispatch}
-          sortValue={state.sortValue}
           distinctKinds={distinctKinds}
           distinctPublishedYears={distinctPublishedYears}
           distinctReviewYears={distinctReviewYears}
+          sortValue={state.sortValue}
         />
       }
       list={
         <GroupedList
+          className="bg-default"
           data-testid="list"
           groupedValues={state.groupedValues}
-          visibleCount={state.showCount}
-          totalCount={state.filteredValues.length}
-          className="bg-default"
           onShowMore={() => dispatch({ type: Actions.SHOW_MORE })}
+          totalCount={state.filteredValues.length}
+          visibleCount={state.showCount}
         >
-          {(value) => <ReviewsListItem value={value} key={value.slug} />}
+          {(value) => <ReviewsListItem key={value.slug} value={value} />}
         </GroupedList>
       }
+      totalCount={state.filteredValues.length}
     />
   );
 }
@@ -93,13 +95,13 @@ function ReviewsListItem({ value }: { value: ListItemValue }): JSX.Element {
     <ListItem>
       <ListItemCover imageProps={value.coverImageProps} />
       <div className="flex grow flex-col items-start gap-y-1 tablet:w-full tablet:gap-y-2 desktop:pr-4">
-        <ListItemTitle title={value.title} slug={value.slug} />
+        <ListItemTitle slug={value.slug} title={value.title} />
         <Authors
-          values={value.authors}
           className="font-sans text-xs leading-5 text-muted"
+          values={value.authors}
         />
-        <ListItemKindAndYear year={value.yearPublished} kind={value.kind} />
-        <Grade value={value.grade} height={16} />
+        <ListItemKindAndYear kind={value.kind} year={value.yearPublished} />
+        <Grade height={16} value={value.grade} />
         <Abandoned value={value.grade} />
       </div>
     </ListItem>
@@ -119,11 +121,11 @@ function Abandoned({ value }: { value: string }) {
 }
 
 function Authors({
-  values,
   className,
+  values,
 }: {
-  values: Author[];
   className: string;
+  values: Author[];
 }) {
   return (
     <div className={className}>

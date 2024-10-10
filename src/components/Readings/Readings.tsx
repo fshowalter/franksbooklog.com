@@ -1,85 +1,83 @@
 import { useReducer } from "react";
-import type { CoverImageProps } from "src/api/covers";
-import type { TimelineEntry } from "src/api/timelineEntries";
-import { BarGradient } from "src/components/BarGradient";
-import { GroupedList } from "src/components/GroupedList";
-import { ListItem } from "src/components/ListItem";
-import { ListItemCover } from "src/components/ListItemCover";
-import { ListItemKindAndYear } from "src/components/ListItemKindAndYear";
-import { ListWithFiltersLayout } from "src/components/ListWithFiltersLayout";
-import { ListHeaderButton } from "src/components/ListWithFiltersLayout";
-import { toSentenceArray } from "src/utils";
 
-import { SolidBackdrop } from "../Backdrop";
-import { Filters } from "./Filters";
+import type { CoverImageProps } from "~/api/covers";
+import type { TimelineEntry } from "~/api/timelineEntries";
+
+import { SolidBackdrop } from "~/components/Backdrop";
+import { BarGradient } from "~/components/BarGradient";
+import { GroupedList } from "~/components/GroupedList";
+import { ListItem } from "~/components/ListItem";
+import { ListItemCover } from "~/components/ListItemCover";
+import { ListItemKindAndYear } from "~/components/ListItemKindAndYear";
+import { ListWithFiltersLayout } from "~/components/ListWithFiltersLayout";
+import { ListHeaderButton } from "~/components/ListWithFiltersLayout";
+import { toSentenceArray } from "~/utils";
+
 import type { Sort } from "./Readings.reducer";
+
+import { Filters } from "./Filters";
 import { Actions, initState, reducer } from "./Readings.reducer";
 
-export interface Props {
-  values: ListItemValue[];
+export type Props = {
+  abandonedCount: number;
+  bookCount: number;
+  deck: string;
   distinctEditions: string[];
-  distinctWorkYears: string[];
   distinctKinds: string[];
   distinctReadingYears: string[];
+  distinctWorkYears: string[];
   initialSort: Sort;
   shortStoryCount: number;
-  bookCount: number;
-  abandonedCount: number;
+  values: ListItemValue[];
   workCount: number;
-  deck: string;
-}
-export interface ListItemValue
-  extends Pick<
-    TimelineEntry,
-    | "slug"
-    | "reviewed"
-    | "sequence"
-    | "yearPublished"
-    | "progress"
-    | "title"
-    | "edition"
-    | "kind"
-    | "authors"
-  > {
-  readingDate: string;
-  readingMonth: string;
-  readingDay: string;
-  readingYear: string;
+};
+export type ListItemValue = {
   coverImageProps: CoverImageProps;
-}
+  readingDate: string;
+  readingDay: string;
+  readingMonth: string;
+  readingYear: string;
+} & Pick<
+  TimelineEntry,
+  | "authors"
+  | "edition"
+  | "kind"
+  | "progress"
+  | "reviewed"
+  | "sequence"
+  | "slug"
+  | "title"
+  | "yearPublished"
+>;
 
 export function Readings({
-  values,
+  deck,
   distinctEditions,
   distinctKinds,
   distinctReadingYears,
   distinctWorkYears,
   initialSort,
-  deck,
+  values,
 }: Props): JSX.Element {
   const [state, dispatch] = useReducer(
     reducer,
     {
-      values,
       initialSort,
+      values,
     },
     initState,
   );
 
   return (
     <ListWithFiltersLayout
-      backdrop={<SolidBackdrop title="Reading Log" deck={deck} />}
-      totalCount={state.filteredValues.length}
-      listHeaderButtons={
-        <ListHeaderButton href="/readings/stats/" text="stats" />
-      }
+      backdrop={<SolidBackdrop deck={deck} title="Reading Log" />}
       filters={
         <Filters
           dispatch={dispatch}
           distinctEditions={distinctEditions}
           distinctKinds={distinctKinds}
-          distinctWorkYears={distinctWorkYears}
           distinctReadingYears={distinctReadingYears}
+          distinctWorkYears={distinctWorkYears}
           sortValue={state.sortValue}
         />
       }
@@ -87,22 +85,26 @@ export function Readings({
         <GroupedList
           data-testid="list"
           groupedValues={state.groupedValues}
-          visibleCount={state.showCount}
-          totalCount={state.filteredValues.length}
           onShowMore={() => dispatch({ type: Actions.SHOW_MORE })}
+          totalCount={state.filteredValues.length}
+          visibleCount={state.showCount}
         >
           {(dateGroup) => {
             const [dayAndDate, values] = dateGroup;
             return (
               <DateListItem
-                values={values}
-                key={dayAndDate}
                 dayAndDate={dayAndDate}
+                key={dayAndDate}
+                values={values}
               />
             );
           }}
         </GroupedList>
       }
+      listHeaderButtons={
+        <ListHeaderButton href="/readings/stats/" text="stats" />
+      }
+      totalCount={state.filteredValues.length}
     />
   );
 }
@@ -130,7 +132,7 @@ function DateListItem({
       </div>
       <ul className="flex grow flex-col tablet:my-4 tablet:gap-y-0 tablet:bg-subtle">
         {values.map((value) => {
-          return <ReadingListItem value={value} key={value.sequence} />;
+          return <ReadingListItem key={value.sequence} value={value} />;
         })}
       </ul>
     </li>
@@ -144,16 +146,16 @@ function ReadingListItem({ value }: { value: ListItemValue }): JSX.Element {
       <ListItemCover imageProps={value.coverImageProps} />
       <div className="flex grow flex-col items-start gap-y-1 tablet:w-full tablet:gap-y-2 desktop:pr-4">
         <TitleAndProgress
-          title={value.title}
           progress={value.progress}
           reviewed={value.reviewed}
           slug={value.slug}
+          title={value.title}
         />
         <Authors
-          values={value.authors}
           className="font-sans text-xs leading-5 text-muted"
+          values={value.authors}
         />
-        <ListItemKindAndYear year={value.yearPublished} kind={value.kind} />
+        <ListItemKindAndYear kind={value.kind} year={value.yearPublished} />
         <div className="font-sans text-xs font-light leading-4 text-subtle">
           {value.edition}
         </div>
@@ -163,7 +165,7 @@ function ReadingListItem({ value }: { value: ListItemValue }): JSX.Element {
         ) : (
           <div className="grid grid-cols-[1fr,auto] items-center self-stretch">
             <div className="flex h-[6px] flex-col bg-subtle">
-              <BarGradient value={progressValue} maxValue={100} />
+              <BarGradient maxValue={100} value={progressValue} />
             </div>
             <span className="pl-4 font-sans text-xxs text-subtle">
               {value.progress}
@@ -190,15 +192,15 @@ function parseProgress(progress: string) {
 }
 
 function TitleAndProgress({
-  title,
   progress,
   reviewed,
   slug,
+  title,
 }: {
-  title: ListItemValue["title"];
   progress: ListItemValue["progress"];
   reviewed: ListItemValue["reviewed"];
   slug: ListItemValue["slug"];
+  title: ListItemValue["title"];
 }) {
   const progressBox = (
     <span className="text-xs font-light text-subtle">{progress}</span>
@@ -207,8 +209,8 @@ function TitleAndProgress({
   if (reviewed) {
     return (
       <a
-        href={`/reviews/${slug}/`}
         className="block font-sans text-sm font-medium text-accent decoration-accent decoration-2 underline-offset-4 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 hover:underline hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+        href={`/reviews/${slug}/`}
       >
         {title}&#8239;&#8239;{progressBox}
       </a>
@@ -223,11 +225,11 @@ function TitleAndProgress({
 }
 
 function Authors({
-  values,
   className,
+  values,
 }: {
-  values: ListItemValue["authors"];
   className: string;
+  values: ListItemValue["authors"];
 }) {
   return (
     <div className={className}>

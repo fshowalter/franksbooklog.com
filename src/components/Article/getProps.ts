@@ -1,22 +1,21 @@
-import { getFluidCoverImageProps } from "src/api/covers";
-import { getPage } from "src/api/pages";
-import { mostRecentReviews } from "src/api/reviews";
+import { getFluidCoverImageProps } from "~/api/covers";
+import { getPage } from "~/api/pages";
+import { mostRecentReviews } from "~/api/reviews";
+import { MoreReviewsImageConfig } from "~/components/MoreReviews";
 
-import { MoreReviewsImageConfig } from "../MoreReviews";
 import type { Props } from "./Article";
 
 export async function getProps({
-  slug,
   deck,
+  slug,
 }: {
-  slug: string;
   deck: string;
+  slug: string;
 }): Promise<Props> {
-  const { title, content } = await getPage(slug);
+  const { content, title } = await getPage(slug);
   const recentReviews = await mostRecentReviews(4);
 
   return {
-    title,
     content,
     deck,
     recentReviews: await Promise.all(
@@ -30,5 +29,6 @@ export async function getProps({
         };
       }),
     ),
+    title,
   };
 }
