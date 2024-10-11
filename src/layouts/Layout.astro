@@ -21,13 +21,10 @@ const {
   noOpenGraph = false,
   title,
 } = Astro.props;
-let pageTitle;
 
-if (title.startsWith(siteMeta.title)) {
-  pageTitle = title;
-} else {
-  pageTitle = `${title} | ${siteMeta.title}`;
-}
+const pageTitle = title.startsWith(siteMeta.title)
+  ? title
+  : `${title} | ${siteMeta.title}`;
 
 const pathname = new URL(Astro.request.url).pathname;
 ---
@@ -35,7 +32,7 @@ const pathname = new URL(Astro.request.url).pathname;
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta content="width=device-width" name="viewport" />
     <link href="/favicon.ico" rel="icon" sizes="48x48" />
     <link href="/favicon.svg" rel="icon" sizes="any" type="image/svg+xml" />
