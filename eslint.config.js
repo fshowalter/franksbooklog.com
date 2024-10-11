@@ -9,7 +9,7 @@ import tsEslint from "typescript-eslint";
 
 export default tsEslint.config(
   {
-    ignores: ["dist/", ".astro/"],
+    ignores: ["dist/", ".astro/", "coverage/", "content/", "public/"],
   },
   eslint.configs.recommended,
   perfectionist.configs["recommended-natural"],
