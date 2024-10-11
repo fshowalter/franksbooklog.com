@@ -29,8 +29,8 @@ export function ListWithFiltersLayout({
       <div className="mx-auto flex flex-col items-center bg-default">
         <div className="mx-auto flex w-full flex-col items-stretch">
           <div className="flex grow flex-col bg-subtle">
-            <div className="relative tablet:px-12 tablet-landscape:px-0">
-              <div className="relative z-10 row-start-1 bg-default text-xs tablet:-mx-12 tablet:px-0 tablet-landscape:col-span-3 tablet-landscape:mx-0 tablet-landscape:w-full">
+            <div className="relative tablet-landscape:px-0">
+              <div className="relative z-10 row-start-1 bg-default text-xs tablet:px-0 tablet-landscape:col-span-3 tablet-landscape:mx-0 tablet-landscape:w-full">
                 <ListHeader
                   filtersVisible={filtersVisible}
                   listHeaderButtons={listHeaderButtons}
@@ -49,7 +49,7 @@ export function ListWithFiltersLayout({
                   }}
                 >
                   <div className="w-full overflow-hidden bg-subtle text-sm tablet:text-base tablet-landscape:overflow-visible tablet-landscape:bg-default tablet-landscape:px-container tablet-landscape:pt-0 desktop:px-8">
-                    <fieldset className="mt-4 flex flex-col gap-10 bg-default px-container py-10 tablet:gap-12 tablet-landscape:mt-0 tablet-landscape:px-0">
+                    <fieldset className="flex flex-col gap-10 bg-default px-container pb-10 tablet:gap-12 tablet-landscape:mt-0 tablet-landscape:px-0 tablet-landscape:pt-10">
                       <legend className="tablet-landscape::block hidden w-full py-10 font-sans text-xs font-bold uppercase tracking-wide text-subtle tablet-landscape:shadow-bottom">
                         Filter & Sort
                       </legend>
@@ -58,7 +58,7 @@ export function ListWithFiltersLayout({
                   </div>
                 </div>
 
-                <div className="col-start-1 row-start-2 pb-10 tablet-landscape:pl-12 desktop:pl-20">
+                <div className="col-start-1 row-start-2 pb-10 tablet:px-12 tablet-landscape:px-0 tablet-landscape:pl-12 desktop:pl-20">
                   {list}
                 </div>
               </div>
