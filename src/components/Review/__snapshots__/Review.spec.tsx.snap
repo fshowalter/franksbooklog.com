@@ -51716,7 +51716,11 @@ exports[`Review > matches snapshot for slug 'the-dark-tunnel-by-ross-macdonald' 
               >
                 Ross Macdonald
               </a>
-               (as Kenneth Millar)
+              <span
+                class="text-subtle"
+              >
+                 (as Kenneth Millar)
+              </span>
             </div>
           </div>
           <div
