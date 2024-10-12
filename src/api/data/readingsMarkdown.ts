@@ -3,6 +3,7 @@ import { promises as fs } from "node:fs";
 import { z } from "zod";
 
 import { getContentPath } from "./utils/getContentPath";
+import { nullableString } from "./utils/nullable";
 
 const readingsMarkdownDirectory = getContentPath("readings");
 
@@ -11,20 +12,25 @@ const TimelineEntrySchema = z.object({
   progress: z.string(),
 });
 
-const DataSchema = z.object({
-  edition: z.string(),
-  edition_notes: z.nullable(z.string()),
-  sequence: z.number(),
-  timeline: z.array(TimelineEntrySchema),
-  work_slug: z.string(),
-});
+const DataSchema = z
+  .object({
+    edition: z.string(),
+    edition_notes: nullableString(),
+    sequence: z.number(),
+    timeline: z.array(TimelineEntrySchema),
+    work_slug: z.string(),
+  })
+  .transform(({ edition, edition_notes, sequence, timeline, work_slug }) => {
+    // fix zod making anything with undefined optional
+    return { edition, edition_notes, sequence, timeline, work_slug };
+  });
 
 type TimelineEntry = z.infer<typeof TimelineEntrySchema>;
 
 export type MarkdownReading = {
   edition: string;
-  editionNotesRaw: null | string;
-  readingNotesRaw: null | string;
+  editionNotesRaw: string | undefined;
+  readingNotesRaw: string | undefined;
   sequence: number;
   slug: string;
   timeline: TimelineEntry[];

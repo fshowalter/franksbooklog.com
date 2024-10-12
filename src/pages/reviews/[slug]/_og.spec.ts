@@ -23,7 +23,7 @@ const testReviews = reviews.filter((review) => {
 describe("/reviews/:slug/og.jpg", () => {
   it.for(testReviews)(
     "matches file",
-    { timeout: 40000 },
+    { timeout: 40_000 },
     async (review, { expect }) => {
       const container = await AstroContainer.create();
 
@@ -38,7 +38,7 @@ describe("/reviews/:slug/og.jpg", () => {
       const result = Buffer.from(await response.arrayBuffer());
 
       const snapshotFile = path.join(
-        __dirname,
+        import.meta.dirname,
         "__image_snapshots__",
         `${review.slug}-og.jpg`,
       );

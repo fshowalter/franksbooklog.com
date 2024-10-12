@@ -2,7 +2,7 @@ import { promises as fs } from "node:fs";
 import { z } from "zod";
 
 import { getContentPath } from "./utils/getContentPath";
-import { WorkKindSchema } from "./utils/workKindSchema";
+import { WorkKindSchema } from "./WorkKindSchema";
 
 const timelineEntriesJsonFile = getContentPath("data", "timeline-entries.json");
 

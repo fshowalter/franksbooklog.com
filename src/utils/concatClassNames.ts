@@ -14,10 +14,8 @@ export function ccn(...classNames: unknown[]) {
   const len = classNames.length;
 
   for (; i < len; i++) {
-    if ((tmp = classNames[i])) {
-      if (typeof tmp === "string") {
-        str += (str && " ") + tmp;
-      }
+    if ((tmp = classNames[i]) && typeof tmp === "string") {
+      str += (str && " ") + tmp;
     }
   }
   return str;

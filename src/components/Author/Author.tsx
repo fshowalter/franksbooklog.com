@@ -20,7 +20,7 @@ import { Actions, initState, reducer } from "./Author.reducer";
 import { Filters } from "./Filters";
 
 export type Props = {
-  avatarImageProps: AvatarImageProps | null;
+  avatarImageProps: AvatarImageProps | undefined;
   deck: string;
   distinctKinds: readonly string[];
   distinctPublishedYears: readonly string[];
@@ -121,7 +121,7 @@ function WorkListItem({ value }: { value: ListItemValue }): JSX.Element {
       <ListItemCover imageProps={value.coverImageProps} />
       <div className="flex grow flex-col items-start gap-y-1 tablet:w-full tablet:gap-y-2 desktop:pr-4">
         <ListItemTitle
-          slug={value.reviewed ? value.slug : null}
+          slug={value.reviewed ? value.slug : undefined}
           title={value.title}
         />
         <OtherAuthors values={value.otherAuthors} />
@@ -134,7 +134,7 @@ function WorkListItem({ value }: { value: ListItemValue }): JSX.Element {
 
 function OtherAuthors({ values }: { values: ListItemValue["otherAuthors"] }) {
   if (values.length === 0) {
-    return null;
+    return false;
   }
 
   return (

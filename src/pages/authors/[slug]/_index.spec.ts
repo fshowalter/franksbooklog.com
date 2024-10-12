@@ -12,19 +12,19 @@ import Review from "./index.astro";
 
 const authors = await allAuthors();
 
-const testSlugs = [
-  "jesse-itzler",
+const testSlugs = new Set([
   "arnold-schwarzenegger",
+  "jesse-itzler",
   "richard-laymon",
   "stephen-king",
-];
+]);
 
-const testAuthors = authors.filter((author) => testSlugs.includes(author.slug));
+const testAuthors = authors.filter((author) => testSlugs.has(author.slug));
 
 describe("/authors/:slug", () => {
   it.for(testAuthors)(
     "matches snapshot for slug $slug",
-    { timeout: 10000 },
+    { timeout: 10_000 },
     async (author, { expect }) => {
       const renderers = await loadRenderers([reactContainerRenderer()]);
       const container = await AstroContainer.create({ renderers });

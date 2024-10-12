@@ -12,9 +12,7 @@ export function Distribution({
   title: string;
   values: readonly Value[];
 }): JSX.Element | null {
-  const maxBar = values.reduce((acc, value) => {
-    return (acc += value.count);
-  }, 0);
+  const maxBar = values.reduce((total, val) => total + val.count, 0);
 
   return (
     <section className="w-full bg-default px-container pb-8">

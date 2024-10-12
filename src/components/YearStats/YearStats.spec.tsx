@@ -11,7 +11,7 @@ const statYears = await allStatYears();
 describe("YearStats", () => {
   it.for(statYears)(
     "matches snapshot for slug %i",
-    { timeout: 10000 },
+    { timeout: 10_000 },
     async (year, { expect }) => {
       const props = await getProps(year);
 

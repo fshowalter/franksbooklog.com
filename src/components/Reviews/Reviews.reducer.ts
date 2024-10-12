@@ -81,13 +81,13 @@ function groupForValue(value: ListItemValue, sortValue: Sort): string {
     }
     case "title-asc":
     case "title-desc": {
-      const letter = value.sortTitle.substring(0, 1);
+      const letter = value.sortTitle.slice(0, 1);
 
       if (letter.toLowerCase() == letter.toUpperCase()) {
         return "#";
       }
 
-      return value.sortTitle.substring(0, 1).toLocaleUpperCase();
+      return value.sortTitle.slice(0, 1).toLocaleUpperCase();
     }
     // no default
   }

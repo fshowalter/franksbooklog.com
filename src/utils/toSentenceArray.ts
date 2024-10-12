@@ -18,8 +18,11 @@ export function toSentenceArray<T extends JSX.Element | string>(
     return [...words, ...lastWords] as T[];
   }
 
-  return [
-    ...words.reduce<T[]>((prev, curr) => prev.concat(curr, ", " as T), []),
-    ...lastWords,
-  ] as T[];
+  const wordsWithCommas = [];
+
+  for (const word of words) {
+    wordsWithCommas.push(word, ", ");
+  }
+
+  return [...wordsWithCommas, ...lastWords] as T[];
 }

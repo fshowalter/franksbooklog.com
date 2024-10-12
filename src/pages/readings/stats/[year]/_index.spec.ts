@@ -15,7 +15,7 @@ const statYears = await allStatYears();
 describe("/readings/stats/:year", () => {
   it.for(statYears)(
     "matches snapshot for year %i",
-    { timeout: 10000 },
+    { timeout: 10_000 },
     async (year, { expect }) => {
       const renderers = await loadRenderers([reactContainerRenderer()]);
       const container = await AstroContainer.create({ renderers });

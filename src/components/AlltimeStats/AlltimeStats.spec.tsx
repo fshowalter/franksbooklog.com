@@ -7,7 +7,7 @@ import { getProps } from "./getProps";
 const props = await getProps();
 
 describe("Home", () => {
-  it("matches snapshot", { timeout: 40000 }, ({ expect }) => {
+  it("matches snapshot", { timeout: 40_000 }, ({ expect }) => {
     const { asFragment } = render(<AlltimeStats {...props} />);
 
     expect(asFragment()).toMatchSnapshot();

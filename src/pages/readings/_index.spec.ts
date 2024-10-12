@@ -9,7 +9,7 @@ import { describe, it } from "vitest";
 import Index from "./index.astro";
 
 describe("/readings/", () => {
-  it("matches snapshot", { timeout: 10000 }, async ({ expect }) => {
+  it("matches snapshot", { timeout: 10_000 }, async ({ expect }) => {
     const renderers = await loadRenderers([reactContainerRenderer()]);
     const container = await AstroContainer.create({ renderers });
     container.addClientRenderer({

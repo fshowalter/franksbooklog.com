@@ -1,12 +1,20 @@
-import { join } from "path";
+import path from "node:path";
 
 export function getContentPath(
   kind: "data" | "reviews" | "viewings",
-  path?: string,
+  subPath?: string,
 ) {
-  if (path) {
-    return join(process.cwd(), "src", "api", "data", "fixtures", kind, path);
+  if (subPath) {
+    return path.join(
+      process.cwd(),
+      "src",
+      "api",
+      "data",
+      "fixtures",
+      kind,
+      subPath,
+    );
   }
 
-  return join(process.cwd(), "src", "api", "data", "fixtures", kind);
+  return path.join(process.cwd(), "src", "api", "data", "fixtures", kind);
 }

@@ -25,10 +25,10 @@ import {
   trimToExcerpt,
 } from "./utils/markdown/trimToExcerpt";
 
-let cachedReadingsMarkdown: MarkdownReading[] | null = null;
-let cachedMarkdownReviews: MarkdownReview[] | null = null;
-let cachedReviewedWorksJson: null | ReviewedWorkJson[] = null;
-let cachedReviews: null | Reviews = null;
+let cachedReadingsMarkdown: MarkdownReading[];
+let cachedMarkdownReviews: MarkdownReview[];
+let cachedReviewedWorksJson: ReviewedWorkJson[];
+let cachedReviews: Reviews;
 
 if (import.meta.env.MODE !== "development") {
   cachedReadingsMarkdown = await allReadingsMarkdown();
@@ -37,8 +37,8 @@ if (import.meta.env.MODE !== "development") {
 }
 
 type ReviewReading = {
-  editionNotes: null | string;
-  readingNotes: null | string;
+  editionNotes: string | undefined;
+  readingNotes: string | undefined;
 } & MarkdownReading &
   ReviewedWorkJsonReading;
 
@@ -56,11 +56,11 @@ function getMastProcessor() {
 }
 
 function getHtmlAsSpan(
-  content: null | string,
+  content: string | undefined,
   reviewedWorks: { slug: string }[],
 ) {
   if (!content) {
-    return null;
+    return;
   }
 
   const html = getMastProcessor()
@@ -115,7 +115,7 @@ export async function loadExcerptHtml(
 }
 
 export type ReviewWithContent = {
-  content: null | string;
+  content: string | undefined;
   excerptPlainText: string;
   readings: ReviewReading[];
 } & Review;
@@ -194,9 +194,9 @@ async function parseReviewedWorksJson(
   });
 
   return {
-    distinctKinds: Array.from(distinctKinds).toSorted(),
-    distinctPublishedYears: Array.from(distinctPublishedYears).toSorted(),
-    distinctReviewYears: Array.from(distinctReviewYears).toSorted(),
+    distinctKinds: [...distinctKinds].toSorted(),
+    distinctPublishedYears: [...distinctPublishedYears].toSorted(),
+    distinctReviewYears: [...distinctReviewYears].toSorted(),
     reviews,
   };
 }

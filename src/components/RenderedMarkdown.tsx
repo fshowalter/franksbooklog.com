@@ -9,10 +9,10 @@ export function RenderedMarkdown({
 }: {
   as?: ElementType;
   className?: string;
-  text: null | string;
-}): JSX.Element | null {
+  text: string | undefined;
+}): false | JSX.Element {
   if (!text) {
-    return null;
+    return false;
   }
 
   const Component = as;

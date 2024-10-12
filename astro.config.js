@@ -41,15 +41,15 @@ function pagefind() {
         const { errors: createErrors, index } = await createIndex({});
         if (!index) {
           logger.error("Pagefind failed to create index");
-          createErrors.forEach((e) => logger.error(e));
+          for (const e of createErrors) logger.error(e);
           return;
         }
         const { errors: addErrors, page_count } = await index.addDirectory({
           path: outDir,
         });
-        if (addErrors.length) {
+        if (addErrors.length > 0) {
           logger.error("Pagefind failed to index files");
-          addErrors.forEach((e) => logger.error(e));
+          for (const e of addErrors) logger.error(e);
           return;
         } else {
           logger.info(`Pagefind indexed ${page_count} pages`);
@@ -57,9 +57,9 @@ function pagefind() {
         const { errors: writeErrors, outputPath } = await index.writeFiles({
           outputPath: path.join(outDir, "pagefind"),
         });
-        if (writeErrors.length) {
+        if (writeErrors.length > 0) {
           logger.error("Pagefind failed to write index");
-          writeErrors.forEach((e) => logger.error(e));
+          for (const e of writeErrors) logger.error(e);
           return;
         } else {
           logger.info(`Pagefind wrote index to ${outputPath}`);
@@ -68,11 +68,7 @@ function pagefind() {
       "astro:config:setup": ({ config }) => {
         outDir = fileURLToPath(config.outDir);
 
-        if (config.build.assetsPrefix) {
-          assets = null;
-        } else {
-          assets = config.build.assets;
-        }
+        assets = config.build.assetsPrefix ? null : config.build.assets; //eslint-disable-line unicorn/no-null
       },
       "astro:server:setup": ({ logger, server }) => {
         if (!outDir) {

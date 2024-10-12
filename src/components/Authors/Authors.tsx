@@ -14,7 +14,7 @@ import type { Sort } from "./Authors.reducer";
 import { Actions, initState, reducer } from "./Authors.reducer";
 import { Filters } from "./Filters";
 export type ListItemValue = {
-  avatarImageProps: AvatarImageProps | null;
+  avatarImageProps: AvatarImageProps | undefined;
 } & Pick<
   Author,
   "name" | "reviewedWorkCount" | "slug" | "sortName" | "workCount"
@@ -61,7 +61,7 @@ function AuthorListItem({ value }: { value: ListItemValue }): JSX.Element {
     <ListItem extraVerticalPadding={true} itemsCenter={true}>
       <ListItemAvatar imageProps={value.avatarImageProps} />
       <AuthorName
-        slug={value.reviewedWorkCount > 0 ? value.slug : null}
+        slug={value.reviewedWorkCount > 0 ? value.slug : undefined}
         value={value.name}
       />
       <div className="ml-auto text-nowrap font-sans text-xs text-subtle">
@@ -75,7 +75,7 @@ function AuthorName({
   slug,
   value,
 }: {
-  slug: null | string;
+  slug?: string;
   value: ListItemValue["name"];
 }) {
   if (!slug) {

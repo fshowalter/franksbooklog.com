@@ -31,21 +31,21 @@ export async function allTimelineEntries(): Promise<TimelineEntries> {
     return entry.progress === "Finished" || entry.progress === "Abandoned";
   });
 
-  timelineEntries.forEach((entry) => {
+  for (const entry of timelineEntries) {
     distinctEditions.add(entry.edition);
     distinctKinds.add(entry.kind);
     distinctReadingYears.add(yearFormatter.format(entry.date));
     distinctWorkYears.add(entry.yearPublished);
-  });
+  }
 
   return {
     abandonedCount: works.filter((work) => work.progress === "Abandoned")
       .length,
     bookCount: works.filter((work) => work.kind !== "Short Story").length,
-    distinctEditions: Array.from(distinctEditions).toSorted(),
-    distinctKinds: Array.from(distinctKinds).toSorted(),
-    distinctReadingYears: Array.from(distinctReadingYears).toSorted(),
-    distinctWorkYears: Array.from(distinctWorkYears).toSorted(),
+    distinctEditions: [...distinctEditions].toSorted(),
+    distinctKinds: [...distinctKinds].toSorted(),
+    distinctReadingYears: [...distinctReadingYears].toSorted(),
+    distinctWorkYears: [...distinctWorkYears].toSorted(),
     shortStoryCount: works.filter((work) => work.kind === "Short Story").length,
     timelineEntries,
     workCount: works.length,

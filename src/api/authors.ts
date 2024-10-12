@@ -19,14 +19,14 @@ export async function getAuthorDetails(slug: string): Promise<AuthorDetails> {
 
   const author = authors.find((value) => value.slug === slug)!;
 
-  author.works.forEach((work) => {
+  for (const work of author.works) {
     distinctKinds.add(work.kind);
     distinctPublishedYears.add(work.yearPublished);
-  });
+  }
 
   return {
     author,
-    distinctKinds: Array.from(distinctKinds).toSorted(),
-    distinctPublishedYears: Array.from(distinctPublishedYears).toSorted(),
+    distinctKinds: [...distinctKinds].toSorted(),
+    distinctPublishedYears: [...distinctPublishedYears].toSorted(),
   };
 }

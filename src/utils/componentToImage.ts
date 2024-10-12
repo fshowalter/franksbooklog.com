@@ -1,4 +1,4 @@
-import fs from "fs/promises";
+import fs from "node:fs/promises";
 import satori from "satori";
 import sharp from "sharp";
 

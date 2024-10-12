@@ -2,7 +2,7 @@ export function ListItemTitle({
   slug,
   title,
 }: {
-  slug?: null | string;
+  slug?: string;
   title: string;
 }) {
   if (slug) {

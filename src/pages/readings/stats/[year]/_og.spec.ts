@@ -12,7 +12,7 @@ const statYears = await allStatYears();
 describe("/readings/stats/:year/og.jpg", () => {
   it.for(statYears)(
     "matches file",
-    { timeout: 40000 },
+    { timeout: 40_000 },
     async (year, { expect }) => {
       const container = await AstroContainer.create();
 
@@ -27,7 +27,7 @@ describe("/readings/stats/:year/og.jpg", () => {
       const result = Buffer.from(await response.arrayBuffer());
 
       const snapshotFile = path.join(
-        __dirname,
+        import.meta.dirname,
         "__image_snapshots__",
         `${year}-og.jpg`,
       );

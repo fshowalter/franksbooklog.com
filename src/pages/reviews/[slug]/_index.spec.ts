@@ -15,7 +15,7 @@ const { reviews } = await allReviews();
 describe("/reviews/:slug", () => {
   it.for(reviews)(
     "matches snapshot for slug $slug",
-    { timeout: 10000 },
+    { timeout: 10_000 },
     async (review, { expect }) => {
       const renderers = await loadRenderers([reactContainerRenderer()]);
       const container = await AstroContainer.create({ renderers });
