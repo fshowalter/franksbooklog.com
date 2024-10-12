@@ -27,10 +27,10 @@ function underscoreDebounce<F extends onChangeHandler>(
   func: F,
   wait: number,
 ): onChangeHandler {
-  let timeout: NodeJS.Timeout | null = null;
+  let timeout: NodeJS.Timeout | undefined;
 
   const later = function later(value: string) {
-    timeout = null;
+    timeout = undefined;
     func(value);
   };
 

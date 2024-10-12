@@ -110,7 +110,7 @@ function ReviewsListItem({ value }: { value: ListItemValue }): JSX.Element {
 
 function Abandoned({ value }: { value: string }) {
   if (value !== "Abandoned") {
-    return null;
+    return false;
   }
 
   return (

@@ -9,14 +9,18 @@ import * as OgEndpoint from "./og.jpg.ts";
 
 const authors = await allAuthors();
 
-const testSlugs = ["jesse-itzler", "arnold-schwarzenegger", "richard-laymon"];
+const testSlugs = new Set([
+  "arnold-schwarzenegger",
+  "jesse-itzler",
+  "richard-laymon",
+]);
 
-const testAuthors = authors.filter((author) => testSlugs.includes(author.slug));
+const testAuthors = authors.filter((author) => testSlugs.has(author.slug));
 
 describe("/authors/:slug/og.jpg", () => {
   it.for(testAuthors)(
     "matches file",
-    { timeout: 40000 },
+    { timeout: 40_000 },
     async (author, { expect }) => {
       const container = await AstroContainer.create();
 
@@ -32,7 +36,7 @@ describe("/authors/:slug/og.jpg", () => {
       const result = Buffer.from(await response.arrayBuffer());
 
       const snapshotFile = path.join(
-        __dirname,
+        import.meta.dirname,
         "__image_snapshots__",
         `${author.slug}-og.jpg`,
       );

@@ -6,7 +6,7 @@ import { describe, it } from "vitest";
 import * as OgEndpoint from "./og.jpg.ts";
 
 describe("/shelf/og.jpg", () => {
-  it("matches file", { timeout: 40000 }, async ({ expect }) => {
+  it("matches file", { timeout: 40_000 }, async ({ expect }) => {
     const container = await AstroContainer.create();
 
     // @ts-expect-error astro signature is wrong
@@ -16,7 +16,11 @@ describe("/shelf/og.jpg", () => {
 
     const result = Buffer.from(await response.arrayBuffer());
 
-    const snapshotFile = path.join(__dirname, "__image_snapshots__", "og.jpg");
+    const snapshotFile = path.join(
+      import.meta.dirname,
+      "__image_snapshots__",
+      "og.jpg",
+    );
 
     if (!fs.existsSync(snapshotFile)) {
       fs.writeFileSync(snapshotFile, result);

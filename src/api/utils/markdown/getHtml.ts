@@ -8,11 +8,11 @@ import smartypants from "remark-smartypants";
 import { linkReviewedWorks } from "~/api/utils/linkReviewedWorks";
 
 export function getHtml(
-  content: null | string,
+  content: string | undefined,
   reviewedWorks: { slug: string }[],
 ) {
   if (!content) {
-    return null;
+    return;
   }
 
   const html = remark()

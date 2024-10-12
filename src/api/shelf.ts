@@ -21,9 +21,9 @@ function parseUnreviewedWorksJson(
   const works = unreviewedWorksJson.map((work) => {
     distinctKinds.add(work.kind);
     distinctPublishedYears.add(work.yearPublished);
-    work.authors.forEach((author) => {
+    for (const author of work.authors) {
       distinctAuthors.add(author.name);
-    });
+    }
 
     return {
       ...work,
@@ -31,9 +31,9 @@ function parseUnreviewedWorksJson(
   });
 
   return {
-    distinctAuthors: Array.from(distinctAuthors).toSorted(),
-    distinctKinds: Array.from(distinctKinds).toSorted(),
-    distinctPublishedYears: Array.from(distinctPublishedYears).toSorted(),
+    distinctAuthors: [...distinctAuthors].toSorted(),
+    distinctKinds: [...distinctKinds].toSorted(),
+    distinctPublishedYears: [...distinctPublishedYears].toSorted(),
     works,
   };
 }

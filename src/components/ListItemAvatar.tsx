@@ -15,7 +15,7 @@ export function ListItemAvatar({
 }: {
   className?: string;
   fill?: string;
-  imageProps: AvatarImageProps | null;
+  imageProps: AvatarImageProps | undefined;
 }) {
   const avatar = (
     <Avatar

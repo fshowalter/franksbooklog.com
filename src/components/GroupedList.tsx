@@ -24,7 +24,7 @@ export function GroupedList<T>({
 
           return (
             <GroupingListItem groupText={group} key={group} zIndex={index + 1}>
-              <ol>{[...groupValues].map(children)}</ol>
+              <ol>{[...groupValues].map((value) => children(value))}</ol>
             </GroupingListItem>
           );
         })}

@@ -50,9 +50,9 @@ function NavListItem({ value }: { value: NavItem }): JSX.Element {
   );
 }
 
-function SubNavList({ values }: { values: NavItem[] }): JSX.Element | null {
+function SubNavList({ values }: { values: NavItem[] }) {
   if (values.length === 0) {
-    return null;
+    return false;
   }
 
   return (

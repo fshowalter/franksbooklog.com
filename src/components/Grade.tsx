@@ -1,6 +1,3 @@
-/**
- * Maps grade letters to their letter and alt-text.
- */
 const gradeMap: Record<string, [string, string]> = {
   A: ["/svg/5-stars.svg", "5 stars (out of 5)"],
   "A+": ["/svg/5-stars.svg", "5 stars (out of 5)"],
@@ -19,7 +16,7 @@ const gradeMap: Record<string, [string, string]> = {
 
 export function fileForGrade(value: string) {
   if (!value || value == "Abandoned") {
-    return null;
+    return;
   }
 
   const [src] = gradeMap[value];
@@ -34,10 +31,10 @@ export function Grade({
 }: {
   className?: string;
   height: 16 | 18 | 24 | 32;
-  value?: null | string;
-}): JSX.Element | null {
+  value?: string;
+}) {
   if (!value || value == "Abandoned") {
-    return null;
+    return;
   }
 
   const [src, alt] = gradeMap[value];

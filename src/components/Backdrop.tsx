@@ -28,7 +28,7 @@ export function AvatarBackdrop({
   deck,
   name,
 }: {
-  avatarImageProps: AvatarImageProps | null;
+  avatarImageProps: AvatarImageProps | undefined;
   breadcrumb?: React.ReactNode;
   deck: React.ReactNode;
   name: string;
@@ -103,9 +103,8 @@ function Title({
   return (
     <h1
       className={
-        className
-          ? className
-          : `font-sans ${center ? "text-center" : ""} text-3xl font-bold uppercase tracking-widest tablet:text-4xl tablet-landscape:text-5xl desktop:text-7xl`
+        className ||
+        `font-sans ${center ? "text-center" : ""} text-3xl font-bold uppercase tracking-widest tablet:text-4xl tablet-landscape:text-5xl desktop:text-7xl`
       }
     >
       {value}
@@ -115,7 +114,7 @@ function Title({
 
 function Breadcrumb({ value }: { value?: React.ReactNode }) {
   if (!value) {
-    return null;
+    return false;
   }
 
   return (
@@ -135,7 +134,7 @@ function Deck({
   value?: React.ReactNode;
 }) {
   if (!value) {
-    return null;
+    return false;
   }
 
   return (

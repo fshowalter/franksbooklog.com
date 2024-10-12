@@ -19,9 +19,9 @@ export function filterTools<T, S, G>(
       value: string,
       currentState: State,
       key: string,
-    ): null | State => {
+    ): State | undefined => {
       if (value != "All") {
-        return null;
+        return undefined;
       }
 
       const filters = {

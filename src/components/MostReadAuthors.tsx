@@ -11,7 +11,7 @@ type ReadingSubListItemValue = {
   kind: string;
   reviewed: boolean;
   sequence: number;
-  slug: null | string;
+  slug: string | undefined;
   title: string;
   yearPublished: string;
 };
@@ -20,16 +20,16 @@ type MostReadAuthorsValue = {
   count: number;
   name: string;
   readings: ReadingSubListItemValue[];
-  slug: null | string;
+  slug: string | undefined;
 };
 
 export function MostReadAuthors({
   values,
 }: {
   values: readonly MostReadAuthorsValue[];
-}): JSX.Element | null {
-  if (values.length == 0) {
-    return null;
+}): false | JSX.Element {
+  if (values.length === 0) {
+    return false;
   }
 
   return (
@@ -95,7 +95,7 @@ function ReadingSubListItem({ value }: { value: ReadingSubListItemValue }) {
       <ListItemCover imageProps={value.coverImageProps} />
       <div className="flex grow flex-col gap-y-1">
         <ListItemTitle
-          slug={value.reviewed ? value.slug : null}
+          slug={value.reviewed ? value.slug : undefined}
           title={value.title}
         />
         <div className="-mt-px font-sans text-xs text-muted">{value.date}</div>

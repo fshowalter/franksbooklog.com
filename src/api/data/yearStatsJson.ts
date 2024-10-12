@@ -1,39 +1,17 @@
 import { promises as fs } from "node:fs";
 import { z } from "zod";
 
+import { DistributionSchema } from "./DistributionSchema";
+import { MostReadAuthorSchema } from "./MostReadAuthorSchema";
 import { getContentPath } from "./utils/getContentPath";
 
 const yearStatsJsonDirectory = getContentPath("data", "year-stats");
 
-const Distribution = z.object({
-  count: z.number(),
-  name: z.string(),
-});
-
-const MostReadAuthorReading = z.object({
-  date: z.string(),
-  edition: z.string(),
-  includedInSlugs: z.array(z.string()),
-  kind: z.string(),
-  reviewed: z.boolean(),
-  sequence: z.number(),
-  slug: z.string(),
-  title: z.string(),
-  yearPublished: z.string(),
-});
-
-const MostReadAuthorSchema = z.object({
-  count: z.number(),
-  name: z.string(),
-  readings: z.array(MostReadAuthorReading),
-  slug: z.nullable(z.string()),
-});
-
 const YearStatsJsonSchema = z.object({
   bookCount: z.number(),
-  decadeDistribution: z.array(Distribution),
-  editionDistribution: z.array(Distribution),
-  kindDistribution: z.array(Distribution),
+  decadeDistribution: z.array(DistributionSchema),
+  editionDistribution: z.array(DistributionSchema),
+  kindDistribution: z.array(DistributionSchema),
   mostReadAuthors: z.array(MostReadAuthorSchema),
   workCount: z.number(),
   year: z.string(),

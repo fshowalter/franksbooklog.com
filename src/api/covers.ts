@@ -48,7 +48,7 @@ function coverPath(slug: string) {
     return coverPath;
   }
 
-  return null;
+  return;
 }
 
 function getWorkCoverPath(work: Work) {

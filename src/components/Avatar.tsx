@@ -4,7 +4,7 @@ type AvatarProps = {
   className?: string;
   fill?: string;
   height: number;
-  imageProps: AvatarImageProps | null;
+  imageProps: AvatarImageProps | undefined;
   loading: "eager" | "lazy";
   width: number;
 } & React.ImgHTMLAttributes<HTMLImageElement>;
@@ -22,7 +22,7 @@ export function Avatar({
   return (
     <div className={className}>
       <svg
-        fill={fill ? fill : "var(--bg-stripe)"}
+        fill={fill || "var(--bg-stripe)"}
         viewBox="0 0 16 16"
         width="100%"
         xmlns="http://www.w3.org/2000/svg"

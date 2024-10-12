@@ -71,7 +71,7 @@ function EditionNotes({
   value: ReviewWithContent["readings"][0]["editionNotes"];
 }) {
   if (!value) {
-    return null;
+    return false;
   }
   return (
     <span className="font-light tracking-normal text-subtle">
@@ -83,7 +83,7 @@ function EditionNotes({
 
 function Details({ value }: { value: ReviewWithContent["readings"][0] }) {
   if (value.readingTime === 1) {
-    return null;
+    return false;
   }
 
   const summaryText = value.abandoned
@@ -102,15 +102,15 @@ function Details({ value }: { value: ReviewWithContent["readings"][0] }) {
       </summary>
       <ol className="grid w-full grid-cols-[auto,1fr,auto]">
         {value.timeline.map((entry) => {
-          let progressValue = null;
+          let progressValue;
           const progressNumber = entry.progress.split("%", 1)[0];
 
           if (progressNumber === "Finished") {
             progressValue = 100;
           }
 
-          if (!isNaN(Number(progressNumber))) {
-            progressValue = parseInt(progressNumber);
+          if (!Number.isNaN(Number(progressNumber))) {
+            progressValue = Number.parseInt(progressNumber);
           }
 
           const entryDate = progressDateFormat.format(entry.date);
@@ -145,7 +145,7 @@ function ReadingNotes({
   value: ReviewWithContent["readings"][0]["readingNotes"];
 }) {
   if (!value) {
-    return null;
+    return false;
   }
   return (
     <div className="pb-6 text-sm font-light">

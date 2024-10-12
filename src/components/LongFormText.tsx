@@ -7,12 +7,8 @@ export function LongFormText({
   text,
 }: {
   className?: string;
-  text: null | string;
+  text: string | undefined;
 }) {
-  if (!text) {
-    return null;
-  }
-
   return (
     <RenderedMarkdown
       className={ccn("tracking-0.3px text-md/7 tablet:text-xl/8", className)}

@@ -20,7 +20,7 @@ function avatarPath(slug: string) {
     return avatarPath;
   }
 
-  return null;
+  return;
 }
 
 export async function getOpenGraphAvatarAsBase64String(slug: string) {
@@ -51,7 +51,7 @@ async function getAvatarFile(slug: string) {
   });
 
   if (!imagePath) {
-    return null;
+    return;
   }
 
   return await images[imagePath]();
@@ -60,11 +60,11 @@ async function getAvatarFile(slug: string) {
 export async function getAvatarImageProps(
   slug: string,
   { height, width }: { height: number; width: number },
-): Promise<AvatarImageProps | null> {
+): Promise<AvatarImageProps | undefined> {
   const avatarFile = await getAvatarFile(slug);
 
   if (!avatarFile) {
-    return null;
+    return;
   }
 
   const optimizedImage = await getImage({

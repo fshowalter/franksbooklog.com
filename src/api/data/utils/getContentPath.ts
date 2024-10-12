@@ -1,12 +1,12 @@
-import { join } from "path";
+import path from "node:path";
 
 export function getContentPath(
   kind: "data" | "pages" | "readings" | "reviews",
-  path?: string,
+  subPath?: string,
 ) {
-  if (path) {
-    return join(process.cwd(), "content", kind, path);
+  if (subPath) {
+    return path.join(process.cwd(), "content", kind, subPath);
   }
 
-  return join(process.cwd(), "content", kind);
+  return path.join(process.cwd(), "content", kind);
 }

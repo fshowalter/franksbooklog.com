@@ -4,8 +4,8 @@ type Props = {
   as?: ElementType;
   className?: string;
   name: string;
-  notes?: null | string;
-  slug: null | string;
+  notes?: string;
+  slug?: string;
 };
 
 export function AuthorLink({
@@ -17,17 +17,11 @@ export function AuthorLink({
 }: Props): JSX.Element {
   const Component = as;
 
-  let authorNotes = null;
-
-  if (notes) {
-    authorNotes = <> ({notes})</>;
-  }
-
   if (slug) {
     return (
       <Component className={className}>
         <a href={`/reviews/authors/${slug}/`}>{name}</a>
-        {authorNotes}
+        <AuthorNotes notes={notes} />
       </Component>
     );
   }
@@ -35,7 +29,15 @@ export function AuthorLink({
   return (
     <Component className={className}>
       {name}
-      {authorNotes}
+      <AuthorNotes notes={notes} />
     </Component>
   );
+}
+
+function AuthorNotes({ notes }: { notes?: string }) {
+  if (!notes) {
+    return false;
+  }
+
+  return <span className="text-subtle"> ({notes})</span>;
 }

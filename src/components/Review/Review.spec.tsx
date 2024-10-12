@@ -11,7 +11,7 @@ const { reviews } = await allReviews();
 describe("Review", () => {
   it.for(reviews)(
     "matches snapshot for slug $slug",
-    { timeout: 10000 },
+    { timeout: 10_000 },
     async (review, { expect }) => {
       const props = await getProps(review.slug);
 

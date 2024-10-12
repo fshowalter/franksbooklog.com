@@ -13,7 +13,7 @@ export function YearInput({
   years: readonly string[];
 }): JSX.Element {
   const [minYear, setMinYear] = useState(years[0]);
-  const [maxYear, setMaxYear] = useState(years[years.length - 1]);
+  const [maxYear, setMaxYear] = useState(years.at(-1) as string);
 
   const handleMinChange = (value: string) => {
     const newMin = value;
@@ -66,16 +66,13 @@ export function YearInput({
             onChange={(e) => handleMaxChange(e.target.value)}
             value={maxYear}
           >
-            {years
-              .slice()
-              .reverse()
-              .map((year) => {
-                return (
-                  <option key={year} value={year}>
-                    {year}
-                  </option>
-                );
-              })}
+            {[...years].reverse().map((year) => {
+              return (
+                <option key={year} value={year}>
+                  {year}
+                </option>
+              );
+            })}
           </SelectInput>
         </label>
       </div>

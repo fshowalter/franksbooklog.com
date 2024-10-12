@@ -8,7 +8,7 @@ export function StructuredData({ coverImgSrc, grade, title }: Props) {
   const structuredData = buildStructuredData(title, grade, coverImgSrc);
 
   if (!structuredData) {
-    return null;
+    return false;
   }
 
   return (
@@ -25,7 +25,7 @@ function buildStructuredData(
   imageSrc: Props["coverImgSrc"],
 ) {
   if (grade == "Abandoned") {
-    return null;
+    return false;
   }
 
   const gradeMap: Record<string, number> = {

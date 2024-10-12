@@ -4,6 +4,7 @@ import eslintPluginAstro from "eslint-plugin-astro";
 import perfectionist from "eslint-plugin-perfectionist";
 import react from "eslint-plugin-react";
 import tailwind from "eslint-plugin-tailwindcss";
+import eslintPluginUnicorn from "eslint-plugin-unicorn";
 import globals from "globals";
 import tsEslint from "typescript-eslint";
 
@@ -12,8 +13,16 @@ export default tsEslint.config(
     ignores: ["dist/", ".astro/", "coverage/", "content/", "public/"],
   },
   eslint.configs.recommended,
+  eslintPluginUnicorn.configs["flat/recommended"],
   perfectionist.configs["recommended-natural"],
   ...eslintPluginAstro.configs.recommended,
+  {
+    rules: {
+      "unicorn/filename-case": "off",
+      "unicorn/no-nested-ternary": "off",
+      "unicorn/prevent-abbreviations": "off",
+    },
+  },
   {
     files: ["*.js"],
     languageOptions: {

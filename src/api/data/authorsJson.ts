@@ -2,29 +2,64 @@ import { promises as fs } from "node:fs";
 import { z } from "zod";
 
 import { getContentPath } from "./utils/getContentPath";
-import { WorkKindSchema } from "./utils/workKindSchema";
+import { nullableNumber, nullableString } from "./utils/nullable";
+import { WorkKindSchema } from "./WorkKindSchema";
 
 const authorsJsonDirectory = getContentPath("data", "authors");
 
-const WorkAuthorSchema = z.object({
-  name: z.string(),
-  notes: z.nullable(z.string()),
-  slug: z.string(),
-  sortName: z.string(),
-});
+const WorkAuthorSchema = z
+  .object({
+    name: z.string(),
+    notes: nullableString(),
+    slug: z.string(),
+    sortName: z.string(),
+  })
+  .transform(({ name, notes, slug, sortName }) => {
+    // fix zod making anything with undefined optional
+    return { name, notes, slug, sortName };
+  });
 
-const WorkSchema = z.object({
-  authors: z.array(WorkAuthorSchema),
-  grade: z.nullable(z.string()),
-  gradeValue: z.nullable(z.number()),
-  includedInSlugs: z.array(z.string()),
-  kind: WorkKindSchema,
-  reviewed: z.boolean(),
-  slug: z.string(),
-  sortTitle: z.string(),
-  title: z.string(),
-  yearPublished: z.string(),
-});
+const WorkSchema = z
+  .object({
+    authors: z.array(WorkAuthorSchema),
+    grade: nullableString(),
+    gradeValue: nullableNumber(),
+    includedInSlugs: z.array(z.string()),
+    kind: WorkKindSchema,
+    reviewed: z.boolean(),
+    slug: z.string(),
+    sortTitle: z.string(),
+    title: z.string(),
+    yearPublished: z.string(),
+  })
+  .transform(
+    ({
+      authors,
+      grade,
+      gradeValue,
+      includedInSlugs,
+      kind,
+      reviewed,
+      slug,
+      sortTitle,
+      title,
+      yearPublished,
+    }) => {
+      // fix zod making anything with undefined optional
+      return {
+        authors,
+        grade,
+        gradeValue,
+        includedInSlugs,
+        kind,
+        reviewed,
+        slug,
+        sortTitle,
+        title,
+        yearPublished,
+      };
+    },
+  );
 
 const AuthorJsonSchema = z.object({
   name: z.string(),
