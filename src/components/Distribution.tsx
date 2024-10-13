@@ -11,7 +11,7 @@ export function Distribution({
 }: {
   title: string;
   values: readonly Value[];
-}): JSX.Element | null {
+}) {
   const maxBar = values.reduce((total, val) => total + val.count, 0);
 
   return (

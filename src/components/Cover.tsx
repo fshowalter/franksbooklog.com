@@ -5,7 +5,7 @@ import type { CoverImageProps } from "~/api/covers";
 type Props = {
   decoding: "async" | "auto" | "sync";
   height: number;
-  imageProps: CoverImageProps | null;
+  imageProps: CoverImageProps | undefined;
   loading: "eager" | "lazy";
   width: number;
 } & React.ImgHTMLAttributes<HTMLImageElement>;

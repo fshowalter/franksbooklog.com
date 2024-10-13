@@ -33,7 +33,7 @@ function YearLink({
   currentYear: string;
   linkFunc: (y: string) => string;
   year: string;
-}): JSX.Element | null {
+}) {
   return (
     <li
       className={`text-center ${year === currentYear ? "bg-subtle text-default" : "text-inverse"}`}
