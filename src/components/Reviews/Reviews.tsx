@@ -102,7 +102,7 @@ function ReviewsListItem({ value }: { value: ListItemValue }): JSX.Element {
         />
         <Grade
           className="mb-2 mt-1 tablet:mb-3 tablet:mt-2"
-          height={18}
+          height={16}
           value={value.grade}
         />
         <Abandoned value={value.grade} />
