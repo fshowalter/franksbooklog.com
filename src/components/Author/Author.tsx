@@ -4,6 +4,7 @@ import type { Author } from "~/api/authors";
 import type { AvatarImageProps } from "~/api/avatars";
 import type { CoverImageProps } from "~/api/covers";
 
+import { Abandoned } from "~/components/Abandoned";
 import { AvatarBackdrop } from "~/components/Backdrop";
 import { Grade } from "~/components/Grade";
 import { GroupedList } from "~/components/GroupedList";
@@ -16,7 +17,6 @@ import { toSentenceArray } from "~/utils";
 
 import type { Sort } from "./Author.reducer";
 
-import { Abandoned } from "../Abandoned";
 import { Actions, initState, reducer } from "./Author.reducer";
 import { Filters } from "./Filters";
 
