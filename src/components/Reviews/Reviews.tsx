@@ -94,15 +94,19 @@ function ReviewsListItem({ value }: { value: ListItemValue }): JSX.Element {
   return (
     <ListItem>
       <ListItemCover imageProps={value.coverImageProps} />
-      <div className="flex grow flex-col items-start gap-y-1 tablet:w-full tablet:gap-y-2 desktop:pr-4">
+      <div className="flex grow flex-col items-start tablet:w-full tablet:pr-4">
         <ListItemTitle slug={value.slug} title={value.title} />
         <Authors
-          className="font-sans text-xs leading-5 text-muted"
+          className="font-sans text-xs leading-4 text-muted tablet:mt-1"
           values={value.authors}
         />
-        <ListItemKindAndYear kind={value.kind} year={value.yearPublished} />
-        <Grade height={16} value={value.grade} />
+        <Grade
+          className="mb-2 mt-1 tablet:mb-3 tablet:mt-2"
+          height={18}
+          value={value.grade}
+        />
         <Abandoned value={value.grade} />
+        <ListItemKindAndYear kind={value.kind} year={value.yearPublished} />
       </div>
     </ListItem>
   );
@@ -114,7 +118,7 @@ function Abandoned({ value }: { value: string }) {
   }
 
   return (
-    <div className="bg-abandoned p-1 font-sans text-xxs font-semibold uppercase text-[#fff]">
+    <div className="my-2 bg-abandoned p-1 font-sans text-xxs font-semibold uppercase text-[#fff] tablet:my-3">
       Abandoned
     </div>
   );
