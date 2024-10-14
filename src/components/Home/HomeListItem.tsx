@@ -61,7 +61,7 @@ export function HomeListItem({
         </div>
         <div className="text-center text-md font-medium leading-6">
           <a
-            className="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] before:tablet:opacity-15"
+            className="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-[#fff] before:opacity-15 hover:text-accent hover:underline hover:before:opacity-0"
             href={`/reviews/${value.slug}/`}
             rel="canonical"
           >
