@@ -4,6 +4,7 @@ import type { Author } from "~/api/authors";
 import type { AvatarImageProps } from "~/api/avatars";
 import type { CoverImageProps } from "~/api/covers";
 
+import { Abandoned } from "~/components/Abandoned";
 import { AvatarBackdrop } from "~/components/Backdrop";
 import { Grade } from "~/components/Grade";
 import { GroupedList } from "~/components/GroupedList";
@@ -116,17 +117,40 @@ export function Author({
 }
 
 function WorkListItem({ value }: { value: ListItemValue }): JSX.Element {
+  if (value.reviewed) {
+    return (
+      <ListItem>
+        <ListItemCover imageProps={value.coverImageProps} />
+        <div className="flex grow flex-col items-start tablet:w-full tablet:pr-4">
+          <ListItemTitle
+            slug={value.reviewed ? value.slug : undefined}
+            title={value.title}
+          />
+          <OtherAuthors values={value.otherAuthors} />
+          <Grade
+            className="mb-2 mt-1 tablet:mb-3 tablet:mt-2"
+            height={16}
+            value={value.grade}
+          />
+          <Abandoned value={value.grade} />
+          <ListItemKindAndYear kind={value.kind} year={value.yearPublished} />
+        </div>
+      </ListItem>
+    );
+  }
+
   return (
-    <ListItem>
+    <ListItem background="bg-unreviewed" itemsCenter={true}>
       <ListItemCover imageProps={value.coverImageProps} />
-      <div className="flex grow flex-col items-start gap-y-1 tablet:w-full tablet:gap-y-2 desktop:pr-4">
+      <div className="flex grow flex-col items-start tablet:w-full tablet:pr-4">
         <ListItemTitle
           slug={value.reviewed ? value.slug : undefined}
           title={value.title}
         />
         <OtherAuthors values={value.otherAuthors} />
-        <ListItemKindAndYear kind={value.kind} year={value.yearPublished} />
-        <Grade height={16} value={value.grade} />
+        <div className="mt-1">
+          <ListItemKindAndYear kind={value.kind} year={value.yearPublished} />
+        </div>
       </div>
     </ListItem>
   );

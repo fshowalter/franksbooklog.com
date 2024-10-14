@@ -3,6 +3,7 @@ import { useReducer } from "react";
 import type { CoverImageProps } from "~/api/covers";
 import type { Review } from "~/api/reviews";
 
+import { Abandoned } from "~/components/Abandoned";
 import { SolidBackdrop } from "~/components/Backdrop";
 import { Grade } from "~/components/Grade";
 import { GroupedList } from "~/components/GroupedList";
@@ -109,18 +110,6 @@ function ReviewsListItem({ value }: { value: ListItemValue }): JSX.Element {
         <ListItemKindAndYear kind={value.kind} year={value.yearPublished} />
       </div>
     </ListItem>
-  );
-}
-
-function Abandoned({ value }: { value: string }) {
-  if (value !== "Abandoned") {
-    return false;
-  }
-
-  return (
-    <div className="my-2 bg-abandoned p-1 font-sans text-xxs font-semibold uppercase text-[#fff] tablet:my-3">
-      Abandoned
-    </div>
   );
 }
 
