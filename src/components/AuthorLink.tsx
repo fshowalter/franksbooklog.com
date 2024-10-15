@@ -20,7 +20,7 @@ export function AuthorLink({
   if (slug) {
     return (
       <Component className={className}>
-        <a href={`/reviews/authors/${slug}/`}>{name}</a>
+        <a href={`/authors/${slug}/`}>{name}</a>
         <AuthorNotes notes={notes} />
       </Component>
     );
