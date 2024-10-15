@@ -127,20 +127,18 @@ function WorkListItem({ value }: { value: ListItemValue }): JSX.Element {
             title={value.title}
           />
           <OtherAuthors values={value.otherAuthors} />
-          <Grade
-            className="mb-2 mt-1 tablet:mb-3 tablet:mt-2"
-            height={16}
-            value={value.grade}
-          />
+          <div className="mt-1 tablet:mt-2">
+            <ListItemKindAndYear kind={value.kind} year={value.yearPublished} />
+          </div>
+          <Grade className="mt-2 tablet:mt-3" height={16} value={value.grade} />
           <Abandoned value={value.grade} />
-          <ListItemKindAndYear kind={value.kind} year={value.yearPublished} />
         </div>
       </ListItem>
     );
   }
 
   return (
-    <ListItem background="bg-unreviewed" itemsCenter={true}>
+    <ListItem background="bg-unreviewed">
       <ListItemCover imageProps={value.coverImageProps} />
       <div className="flex grow flex-col items-start tablet:w-full tablet:pr-4">
         <ListItemTitle
@@ -148,7 +146,7 @@ function WorkListItem({ value }: { value: ListItemValue }): JSX.Element {
           title={value.title}
         />
         <OtherAuthors values={value.otherAuthors} />
-        <div className="mt-1">
+        <div className="mt-1 tablet:mt-2">
           <ListItemKindAndYear kind={value.kind} year={value.yearPublished} />
         </div>
       </div>
