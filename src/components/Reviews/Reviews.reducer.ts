@@ -63,21 +63,17 @@ const yearFormat = new Intl.DateTimeFormat("en-US", {
 
 function groupForValue(value: ListItemValue, sortValue: Sort): string {
   switch (sortValue) {
-    case "year-published-asc":
-    case "year-published-desc": {
-      return value.yearPublished.toString();
-    }
-    case "review-date-asc":
-    case "review-date-desc": {
-      return monthGroupFormat.format(value.date);
+    case "author-asc":
+    case "author-desc": {
+      return value.authors[0].sortName[0];
     }
     case "grade-asc":
     case "grade-desc": {
       return value.grade;
     }
-    case "author-asc":
-    case "author-desc": {
-      return value.authors[0].sortName[0];
+    case "review-date-asc":
+    case "review-date-desc": {
+      return monthGroupFormat.format(value.date);
     }
     case "title-asc":
     case "title-desc": {
@@ -88,6 +84,10 @@ function groupForValue(value: ListItemValue, sortValue: Sort): string {
       }
 
       return value.sortTitle.slice(0, 1).toLocaleUpperCase();
+    }
+    case "year-published-asc":
+    case "year-published-desc": {
+      return value.yearPublished.toString();
     }
     // no default
   }
