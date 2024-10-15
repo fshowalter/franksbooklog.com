@@ -36,10 +36,6 @@ function sortValues(values: ListItemValue[], sortOrder: Sort) {
 
 function groupForValue(value: ListItemValue, sortValue: Sort): string {
   switch (sortValue) {
-    case "year-published-asc":
-    case "year-published-desc": {
-      return value.yearPublished;
-    }
     case "author-asc":
     case "author-desc": {
       return value.authors[0].sortName[0];
@@ -53,6 +49,10 @@ function groupForValue(value: ListItemValue, sortValue: Sort): string {
       }
 
       return value.sortTitle.slice(0, 1).toLocaleUpperCase();
+    }
+    case "year-published-asc":
+    case "year-published-desc": {
+      return value.yearPublished;
     }
     // no default
   }
