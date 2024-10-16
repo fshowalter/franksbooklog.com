@@ -112,7 +112,7 @@ export default defineConfig({
     sitemap(),
     pagefind(),
   ],
-  site: "http://www.franksbooklog.com",
+  site: "https://www.franksbooklog.com",
   trailingSlash: "always",
   vite: {
     optimizeDeps: {
