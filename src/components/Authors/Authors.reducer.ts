@@ -114,19 +114,6 @@ export function reducer(state: State, action: ActionType): State {
         return regex.test(value.name);
       });
     }
-    case Actions.SORT: {
-      filteredValues = sortValues(state.filteredValues, action.value);
-      groupedValues = groupValues(
-        filteredValues.slice(0, state.showCount),
-        action.value,
-      );
-      return {
-        ...state,
-        filteredValues,
-        groupedValues,
-        sortValue: action.value,
-      };
-    }
     case Actions.SHOW_MORE: {
       const showCount = state.showCount + SHOW_COUNT_DEFAULT;
 
@@ -139,6 +126,19 @@ export function reducer(state: State, action: ActionType): State {
         ...state,
         groupedValues,
         showCount,
+      };
+    }
+    case Actions.SORT: {
+      filteredValues = sortValues(state.filteredValues, action.value);
+      groupedValues = groupValues(
+        filteredValues.slice(0, state.showCount),
+        action.value,
+      );
+      return {
+        ...state,
+        filteredValues,
+        groupedValues,
+        sortValue: action.value,
       };
     }
     // no default

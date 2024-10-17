@@ -132,28 +132,6 @@ export function reducer(state: State, action: ActionType): State {
   let groupedValues;
 
   switch (action.type) {
-    case Actions.FILTER_TITLE: {
-      const regex = new RegExp(action.value, "i");
-      return updateFilter(state, "title", (value) => {
-        return regex.test(value.title);
-      });
-    }
-    case Actions.FILTER_KIND: {
-      return (
-        clearFilter(action.value, state, "kind") ??
-        updateFilter(state, "kind", (value) => {
-          return value.kind === action.value;
-        })
-      );
-    }
-    case Actions.FILTER_YEAR_PUBLISHED: {
-      return updateFilter(state, "yearPublished", (value) => {
-        const yearPublished = value.yearPublished;
-        return (
-          yearPublished >= action.values[0] && yearPublished <= action.values[1]
-        );
-      });
-    }
     case Actions.FILTER_AUTHOR: {
       return (
         clearFilter(action.value, state, "author") ??
@@ -164,18 +142,27 @@ export function reducer(state: State, action: ActionType): State {
         })
       );
     }
-    case Actions.SORT: {
-      filteredValues = sortValues(state.filteredValues, action.value);
-      groupedValues = groupValues(
-        filteredValues.slice(0, state.showCount),
-        action.value,
+    case Actions.FILTER_KIND: {
+      return (
+        clearFilter(action.value, state, "kind") ??
+        updateFilter(state, "kind", (value) => {
+          return value.kind === action.value;
+        })
       );
-      return {
-        ...state,
-        filteredValues,
-        groupedValues,
-        sortValue: action.value,
-      };
+    }
+    case Actions.FILTER_TITLE: {
+      const regex = new RegExp(action.value, "i");
+      return updateFilter(state, "title", (value) => {
+        return regex.test(value.title);
+      });
+    }
+    case Actions.FILTER_YEAR_PUBLISHED: {
+      return updateFilter(state, "yearPublished", (value) => {
+        const yearPublished = value.yearPublished;
+        return (
+          yearPublished >= action.values[0] && yearPublished <= action.values[1]
+        );
+      });
     }
     case Actions.SHOW_MORE: {
       const showCount = state.showCount + SHOW_COUNT_DEFAULT;
@@ -189,6 +176,19 @@ export function reducer(state: State, action: ActionType): State {
         ...state,
         groupedValues,
         showCount,
+      };
+    }
+    case Actions.SORT: {
+      filteredValues = sortValues(state.filteredValues, action.value);
+      groupedValues = groupValues(
+        filteredValues.slice(0, state.showCount),
+        action.value,
+      );
+      return {
+        ...state,
+        filteredValues,
+        groupedValues,
+        sortValue: action.value,
       };
     }
 
