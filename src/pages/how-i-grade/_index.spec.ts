@@ -15,6 +15,7 @@ describe("/how-i-grade/", () => {
     const result = await container.renderToString(
       Page as AstroComponentFactory,
       {
+        partial: false,
         request: new Request(`https://www.franksbooklog.com/how-i-grade/`),
       },
     );

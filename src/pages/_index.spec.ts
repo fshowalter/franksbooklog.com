@@ -14,7 +14,10 @@ describe("/", () => {
     const container = await AstroContainer.create({ renderers });
     const result = await container.renderToString(
       Index as AstroComponentFactory,
-      {},
+      {
+        partial: false,
+        request: new Request(`https://www.franksbooklog.com/`),
+      },
     );
 
     void expect(

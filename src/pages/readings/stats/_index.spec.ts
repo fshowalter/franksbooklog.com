@@ -15,6 +15,7 @@ describe("/readings/stats", () => {
     const result = await container.renderToString(
       Index as AstroComponentFactory,
       {
+        partial: false,
         request: new Request(`https://www.franksbooklog.com/readings/stats/`),
       },
     );
