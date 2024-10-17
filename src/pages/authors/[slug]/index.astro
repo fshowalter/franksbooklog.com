@@ -27,6 +27,11 @@ const { slug } = Astro.props;
 const props = await getProps(slug);
 ---
 
-<Layout description={props.deck} title={props.name}>
+<Layout
+  article={false}
+  canonical={true}
+  description={props.deck}
+  title={props.name}
+>
   <Author client:load {...props} />
 </Layout>
