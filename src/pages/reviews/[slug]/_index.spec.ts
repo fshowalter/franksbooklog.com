@@ -22,6 +22,7 @@ describe("/reviews/:slug", () => {
       const result = await container.renderToString(
         Review as AstroComponentFactory,
         {
+          partial: false,
           props: { slug: review.slug },
           request: new Request(
             `https://www.franksbooklog.com/reviews/${review.slug}/`,

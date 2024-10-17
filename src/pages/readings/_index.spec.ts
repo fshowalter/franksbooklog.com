@@ -18,7 +18,10 @@ describe("/readings/", () => {
     });
     const result = await container.renderToString(
       Index as AstroComponentFactory,
-      { request: new Request(`https://www.franksbooklog.com/readings/`) },
+      {
+        partial: false,
+        request: new Request(`https://www.franksbooklog.com/readings/`),
+      },
     );
 
     void expect(

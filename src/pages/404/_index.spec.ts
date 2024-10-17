@@ -15,6 +15,7 @@ describe("/404/", () => {
     const result = await container.renderToString(
       Page as AstroComponentFactory,
       {
+        partial: false,
         request: new Request("https://www.franksbooklog.com/404/"),
       },
     );
