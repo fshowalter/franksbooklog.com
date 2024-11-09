@@ -2520,15 +2520,15 @@
         ]
       },
       {
-        "title": "Gothic",
-        "kind": "Novel",
+        "title": "Goth",
+        "kind": "Nonfiction",
         "yearPublished": "2023",
-        "slug": "gothic-by-philip-fracassi",
-        "grade": "B+",
+        "slug": "goth-by-lol-tolhurst",
+        "grade": "C",
         "includedInSlugs": [],
         "authors": [
           {
-            "name": "Philip Fracassi"
+            "name": "Lol Tolhurst"
           }
         ]
       }
@@ -2599,6 +2599,99 @@
           },
           {
             "name": "Craig Spector"
+          }
+        ]
+      },
+      {
+        "title": "Goth",
+        "kind": "Nonfiction",
+        "yearPublished": "2023",
+        "slug": "goth-by-lol-tolhurst",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Lol Tolhurst"
+          }
+        ]
+      },
+      {
+        "title": "Gothic",
+        "kind": "Novel",
+        "yearPublished": "2023",
+        "slug": "gothic-by-philip-fracassi",
+        "grade": "B+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Philip Fracassi"
+          }
+        ]
+      }
+    ],
+    "includedWorks": []
+  },
+  {
+    "sequence": 62,
+    "slug": "goth-by-lol-tolhurst",
+    "title": "Goth",
+    "subtitle": "A History",
+    "sortTitle": "Goth: A History",
+    "yearPublished": "2023",
+    "grade": "C",
+    "gradeValue": 6,
+    "kind": "Nonfiction",
+    "date": "2024-11-08",
+    "authors": [
+      {
+        "slug": "lol-tolhurst",
+        "notes": null,
+        "name": "Lol Tolhurst",
+        "sortName": "Tolhurst, Lol"
+      }
+    ],
+    "readings": [
+      {
+        "sequence": 62,
+        "date": "2024-11-08",
+        "isAudiobook": true,
+        "abandoned": false,
+        "readingTime": 15
+      }
+    ],
+    "includedInSlugs": [],
+    "yearReviewed": 2024,
+    "moreByAuthors": [],
+    "moreReviews": [
+      {
+        "title": "Fright Night",
+        "kind": "Novel",
+        "yearPublished": "1985",
+        "slug": "fright-night-by-john-skipp-craig-spector",
+        "grade": "F",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "John Skipp"
+          },
+          {
+            "name": "Craig Spector"
+          }
+        ]
+      },
+      {
+        "title": "Fright Night Origins",
+        "kind": "Novel",
+        "yearPublished": "2023",
+        "slug": "fright-night-origins-by-tom-holland-a-jack-ulrich",
+        "grade": "C+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Tom Holland"
+          },
+          {
+            "name": "A. Jack Ulrich"
           }
         ]
       },
@@ -2729,22 +2822,6 @@
     ],
     "moreReviews": [
       {
-        "title": "Fright Night",
-        "kind": "Novel",
-        "yearPublished": "1985",
-        "slug": "fright-night-by-john-skipp-craig-spector",
-        "grade": "F",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "John Skipp"
-          },
-          {
-            "name": "Craig Spector"
-          }
-        ]
-      },
-      {
         "title": "Fright Night Origins",
         "kind": "Novel",
         "yearPublished": "2023",
@@ -2757,6 +2834,19 @@
           },
           {
             "name": "A. Jack Ulrich"
+          }
+        ]
+      },
+      {
+        "title": "Goth",
+        "kind": "Nonfiction",
+        "yearPublished": "2023",
+        "slug": "goth-by-lol-tolhurst",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Lol Tolhurst"
           }
         ]
       },
@@ -2824,18 +2914,15 @@
     "moreByAuthors": [],
     "moreReviews": [
       {
-        "title": "Fright Night Origins",
-        "kind": "Novel",
+        "title": "Goth",
+        "kind": "Nonfiction",
         "yearPublished": "2023",
-        "slug": "fright-night-origins-by-tom-holland-a-jack-ulrich",
-        "grade": "C+",
+        "slug": "goth-by-lol-tolhurst",
+        "grade": "C",
         "includedInSlugs": [],
         "authors": [
           {
-            "name": "Tom Holland"
-          },
-          {
-            "name": "A. Jack Ulrich"
+            "name": "Lol Tolhurst"
           }
         ]
       },

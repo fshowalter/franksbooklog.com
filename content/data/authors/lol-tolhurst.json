@@ -21,9 +21,28 @@
         }
       ],
       "includedInSlugs": []
+    },
+    {
+      "title": "Goth",
+      "yearPublished": "2023",
+      "kind": "Nonfiction",
+      "slug": "goth-by-lol-tolhurst",
+      "sortTitle": "Goth: A History",
+      "reviewed": true,
+      "grade": "C",
+      "gradeValue": 6,
+      "authors": [
+        {
+          "slug": "lol-tolhurst",
+          "notes": null,
+          "name": "Lol Tolhurst",
+          "sortName": "Tolhurst, Lol"
+        }
+      ],
+      "includedInSlugs": []
     }
   ],
-  "reviewedWorkCount": 1,
-  "workCount": 1,
+  "reviewedWorkCount": 2,
+  "workCount": 2,
   "shelfWorkCount": 0
 }

@@ -1,7 +1,7 @@
 {
-  "reviewCount": 60,
-  "workCount": 61,
-  "bookCount": 49,
+  "reviewCount": 61,
+  "workCount": 62,
+  "bookCount": 50,
   "gradeDistribution": [
     {
       "name": "A",
@@ -35,7 +35,7 @@
     },
     {
       "name": "C",
-      "count": 4,
+      "count": 5,
       "sortValue": 6
     },
     {
@@ -71,7 +71,7 @@
     },
     {
       "name": "Nonfiction",
-      "count": 24
+      "count": 25
     },
     {
       "name": "Novel",
@@ -89,7 +89,7 @@
   "editionDistribution": [
     {
       "name": "Audible",
-      "count": 28
+      "count": 29
     },
     {
       "name": "Kindle",
@@ -135,7 +135,7 @@
     },
     {
       "name": "2020s",
-      "count": 10
+      "count": 11
     }
   ],
   "mostReadAuthors": [
@@ -570,6 +570,35 @@
           "kind": "Nonfiction",
           "title": "Consider This",
           "yearPublished": "2020",
+          "includedInSlugs": [],
+          "reviewed": true
+        }
+      ]
+    },
+    {
+      "name": "Lol Tolhurst",
+      "count": 2,
+      "slug": "lol-tolhurst",
+      "readings": [
+        {
+          "sequence": 31,
+          "date": "2022-07-18",
+          "slug": "cured-by-lol-tolhurst",
+          "edition": "Audible",
+          "kind": "Nonfiction",
+          "title": "Cured",
+          "yearPublished": "2016",
+          "includedInSlugs": [],
+          "reviewed": true
+        },
+        {
+          "sequence": 62,
+          "date": "2024-11-08",
+          "slug": "goth-by-lol-tolhurst",
+          "edition": "Audible",
+          "kind": "Nonfiction",
+          "title": "Goth",
+          "yearPublished": "2023",
           "includedInSlugs": [],
           "reviewed": true
         }
