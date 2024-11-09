@@ -5,7 +5,9 @@ import fs from "node:fs";
 import path from "node:path";
 
 chokidar
-  .watch(["../booklog/reviews", "../booklog/export", "../booklog/readings"])
+  .watch(["../booklog/reviews", "../booklog/export", "../booklog/readings"], {
+    awaitWriteFinish: true,
+  })
   .on("all", (event, sourcePath) => {
     if (event === "add" || event === "change") {
       console.log(event, sourcePath);
