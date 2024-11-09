@@ -15,7 +15,7 @@
     <meta content="2 Years in Review" name="description" />
     <meta
       content="https://www.franksbooklog.com/readings/stats/og.jpg"
-      name="og:image"
+      property="og:image"
     />
     <meta
       content="https://www.franksbooklog.com/readings/stats/"
@@ -23,7 +23,7 @@
     />
     <meta content="All-Time Stats" property="og:title" />
     <meta content="2 Years in Review" property="og:description" />
-    <title>All-Time Stats | Frank&#39;s Book Log</title>
+    <title>All-Time Stats - Frank&#39;s Book Log</title>
   </head>
   <body>
     <div>
@@ -95,7 +95,7 @@
                 </li>
               </ul>
             </nav>
-            <div class="z-[1000]">
+            <div class="search-button z-[1000]">
               <button
                 aria-keyshortcuts="Control+K"
                 aria-label="Search"
@@ -186,30 +186,34 @@
               </p>
             </div>
           </header>
-          <nav class="bg-accent mb-12 w-full">
+          <nav class="bg-footer mb-12 w-full">
             <ul
-              class="mx-auto flex max-w-screen-max overflow-x-auto px-container font-sans text-sm font-normal tracking-wide desktop:justify-center"
+              class="scrollbar-hidden mx-auto flex max-w-screen-max overflow-x-auto px-container font-sans text-sm font-normal tracking-wide desktop:justify-center"
             >
               <li class="text-center bg-subtle text-default">
-                <div class="whitespace-nowrap p-4 desktop:py-4">All-Time</div>
+                <div
+                  class="whitespace-nowrap bg-subtle p-4 text-default desktop:py-4"
+                >
+                  All-Time
+                </div>
               </li>
               <li class="text-center text-inverse">
                 <a
-                  class="block p-4 hover:bg-subtle hover:text-accent"
+                  class="block p-4 hover:bg-accent hover:text-inverse"
                   href="/readings/stats/2024/"
                   >2024</a
                 >
               </li>
               <li class="text-center text-inverse">
                 <a
-                  class="block p-4 hover:bg-subtle hover:text-accent"
+                  class="block p-4 hover:bg-accent hover:text-inverse"
                   href="/readings/stats/2023/"
                   >2023</a
                 >
               </li>
               <li class="text-center text-inverse">
                 <a
-                  class="block p-4 hover:bg-subtle hover:text-accent"
+                  class="block p-4 hover:bg-accent hover:text-inverse"
                   href="/readings/stats/2022/"
                   >2022</a
                 >
@@ -2313,14 +2317,14 @@
     </div>
     <dialog
       aria-label="Search"
-      class="relative m-0 h-screen max-h-none w-screen max-w-unset border border-default bg-subtle shadow-lg open:flex open:flex-col tablet:mx-auto tablet:mt-16 tablet:h-min tablet:max-h-[min(100vh_-_128px,900px)] tablet:min-h-60 tablet:max-w-[min(100vw_-_64px,36rem)] tablet:rounded-xl desktop:min-h-0"
+      class="fixed inset-x-4 h-screen w-full rounded-lg border border-default bg-default shadow-lg backdrop:bg-[#000] backdrop:opacity-40 open:flex open:flex-col tablet:mx-auto tablet:mt-16 tablet:h-min tablet:max-h-[min(100vh_-_128px,900px)] tablet:min-h-60 tablet:max-w-[min(100vw_-_64px,36rem)] tablet:rounded-xl desktop:min-h-0"
     >
       <div class="contents" data-dialog-frame>
         <button
-          class="px-4 font-sans text-sm hover:text-accent focus:outline-accent"
+          class="px-2 font-mono text-xs font-light hover:bg-inverse hover:text-inverse focus:outline-accent"
           data-close-modal
         >
-          Cancel
+          ESC
         </button>
         <div class="contents"><div id="pagefind__search"></div></div>
         <div

@@ -107,7 +107,7 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
             </ul>
           </nav>
           <div
-            class="z-[1000]"
+            class="search-button z-[1000]"
           >
             <button
               aria-keyshortcuts="Control+K"
@@ -253,16 +253,16 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
           </div>
         </header>
         <nav
-          class="bg-accent mb-12 w-full"
+          class="bg-footer mb-12 w-full"
         >
           <ul
-            class="mx-auto flex max-w-screen-max overflow-x-auto px-container font-sans text-sm font-normal tracking-wide desktop:justify-center"
+            class="scrollbar-hidden mx-auto flex max-w-screen-max overflow-x-auto px-container font-sans text-sm font-normal tracking-wide desktop:justify-center"
           >
             <li
               class="text-center text-inverse"
             >
               <a
-                class="block whitespace-nowrap p-4 hover:bg-default hover:text-default desktop:py-4"
+                class="block whitespace-nowrap p-4 hover:bg-accent hover:text-inverse desktop:py-4"
                 href="/readings/stats/"
               >
                 All-Time
@@ -272,7 +272,7 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
               class="text-center text-inverse"
             >
               <a
-                class="block p-4 hover:bg-subtle hover:text-accent"
+                class="block p-4 hover:bg-accent hover:text-inverse"
                 href="/readings/stats/2024/"
               >
                 2024
@@ -282,7 +282,7 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
               class="text-center text-inverse"
             >
               <a
-                class="block p-4 hover:bg-subtle hover:text-accent"
+                class="block p-4 hover:bg-accent hover:text-inverse"
                 href="/readings/stats/2023/"
               >
                 2023
@@ -292,7 +292,7 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
               class="text-center bg-subtle text-default"
             >
               <div
-                class="p-4 desktop:py-4"
+                class="bg-subtle p-4 text-default desktop:py-4"
               >
                 2022
               </div>
@@ -2327,7 +2327,7 @@ exports[`YearStats > matches snapshot for slug 2023 1`] = `
             </ul>
           </nav>
           <div
-            class="z-[1000]"
+            class="search-button z-[1000]"
           >
             <button
               aria-keyshortcuts="Control+K"
@@ -2473,16 +2473,16 @@ exports[`YearStats > matches snapshot for slug 2023 1`] = `
           </div>
         </header>
         <nav
-          class="bg-accent mb-12 w-full"
+          class="bg-footer mb-12 w-full"
         >
           <ul
-            class="mx-auto flex max-w-screen-max overflow-x-auto px-container font-sans text-sm font-normal tracking-wide desktop:justify-center"
+            class="scrollbar-hidden mx-auto flex max-w-screen-max overflow-x-auto px-container font-sans text-sm font-normal tracking-wide desktop:justify-center"
           >
             <li
               class="text-center text-inverse"
             >
               <a
-                class="block whitespace-nowrap p-4 hover:bg-default hover:text-default desktop:py-4"
+                class="block whitespace-nowrap p-4 hover:bg-accent hover:text-inverse desktop:py-4"
                 href="/readings/stats/"
               >
                 All-Time
@@ -2492,7 +2492,7 @@ exports[`YearStats > matches snapshot for slug 2023 1`] = `
               class="text-center text-inverse"
             >
               <a
-                class="block p-4 hover:bg-subtle hover:text-accent"
+                class="block p-4 hover:bg-accent hover:text-inverse"
                 href="/readings/stats/2024/"
               >
                 2024
@@ -2502,7 +2502,7 @@ exports[`YearStats > matches snapshot for slug 2023 1`] = `
               class="text-center bg-subtle text-default"
             >
               <div
-                class="p-4 desktop:py-4"
+                class="bg-subtle p-4 text-default desktop:py-4"
               >
                 2023
               </div>
@@ -2511,7 +2511,7 @@ exports[`YearStats > matches snapshot for slug 2023 1`] = `
               class="text-center text-inverse"
             >
               <a
-                class="block p-4 hover:bg-subtle hover:text-accent"
+                class="block p-4 hover:bg-accent hover:text-inverse"
                 href="/readings/stats/2022/"
               >
                 2022
@@ -3400,7 +3400,7 @@ exports[`YearStats > matches snapshot for slug 2024 1`] = `
             </ul>
           </nav>
           <div
-            class="z-[1000]"
+            class="search-button z-[1000]"
           >
             <button
               aria-keyshortcuts="Control+K"
@@ -3546,16 +3546,16 @@ exports[`YearStats > matches snapshot for slug 2024 1`] = `
           </div>
         </header>
         <nav
-          class="bg-accent mb-12 w-full"
+          class="bg-footer mb-12 w-full"
         >
           <ul
-            class="mx-auto flex max-w-screen-max overflow-x-auto px-container font-sans text-sm font-normal tracking-wide desktop:justify-center"
+            class="scrollbar-hidden mx-auto flex max-w-screen-max overflow-x-auto px-container font-sans text-sm font-normal tracking-wide desktop:justify-center"
           >
             <li
               class="text-center text-inverse"
             >
               <a
-                class="block whitespace-nowrap p-4 hover:bg-default hover:text-default desktop:py-4"
+                class="block whitespace-nowrap p-4 hover:bg-accent hover:text-inverse desktop:py-4"
                 href="/readings/stats/"
               >
                 All-Time
@@ -3565,7 +3565,7 @@ exports[`YearStats > matches snapshot for slug 2024 1`] = `
               class="text-center bg-subtle text-default"
             >
               <div
-                class="p-4 desktop:py-4"
+                class="bg-subtle p-4 text-default desktop:py-4"
               >
                 2024
               </div>
@@ -3574,7 +3574,7 @@ exports[`YearStats > matches snapshot for slug 2024 1`] = `
               class="text-center text-inverse"
             >
               <a
-                class="block p-4 hover:bg-subtle hover:text-accent"
+                class="block p-4 hover:bg-accent hover:text-inverse"
                 href="/readings/stats/2023/"
               >
                 2023
@@ -3584,7 +3584,7 @@ exports[`YearStats > matches snapshot for slug 2024 1`] = `
               class="text-center text-inverse"
             >
               <a
-                class="block p-4 hover:bg-subtle hover:text-accent"
+                class="block p-4 hover:bg-accent hover:text-inverse"
                 href="/readings/stats/2022/"
               >
                 2022

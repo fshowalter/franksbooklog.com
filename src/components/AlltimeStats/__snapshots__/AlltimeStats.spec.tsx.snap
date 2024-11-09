@@ -107,7 +107,7 @@ exports[`Home > matches snapshot 1`] = `
             </ul>
           </nav>
           <div
-            class="z-[1000]"
+            class="search-button z-[1000]"
           >
             <button
               aria-keyshortcuts="Control+K"
@@ -253,16 +253,16 @@ exports[`Home > matches snapshot 1`] = `
           </div>
         </header>
         <nav
-          class="bg-accent mb-12 w-full"
+          class="bg-footer mb-12 w-full"
         >
           <ul
-            class="mx-auto flex max-w-screen-max overflow-x-auto px-container font-sans text-sm font-normal tracking-wide desktop:justify-center"
+            class="scrollbar-hidden mx-auto flex max-w-screen-max overflow-x-auto px-container font-sans text-sm font-normal tracking-wide desktop:justify-center"
           >
             <li
               class="text-center bg-subtle text-default"
             >
               <div
-                class="whitespace-nowrap p-4 desktop:py-4"
+                class="whitespace-nowrap bg-subtle p-4 text-default desktop:py-4"
               >
                 All-Time
               </div>
@@ -271,7 +271,7 @@ exports[`Home > matches snapshot 1`] = `
               class="text-center text-inverse"
             >
               <a
-                class="block p-4 hover:bg-subtle hover:text-accent"
+                class="block p-4 hover:bg-accent hover:text-inverse"
                 href="/readings/stats/2024/"
               >
                 2024
@@ -281,7 +281,7 @@ exports[`Home > matches snapshot 1`] = `
               class="text-center text-inverse"
             >
               <a
-                class="block p-4 hover:bg-subtle hover:text-accent"
+                class="block p-4 hover:bg-accent hover:text-inverse"
                 href="/readings/stats/2023/"
               >
                 2023
@@ -291,7 +291,7 @@ exports[`Home > matches snapshot 1`] = `
               class="text-center text-inverse"
             >
               <a
-                class="block p-4 hover:bg-subtle hover:text-accent"
+                class="block p-4 hover:bg-accent hover:text-inverse"
                 href="/readings/stats/2022/"
               >
                 2022
