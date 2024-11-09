@@ -12,10 +12,12 @@ function AllTimeLink({
       className={`text-center ${"all" === currentYear ? "bg-subtle text-default" : "text-inverse"}`}
     >
       {"all" === currentYear ? (
-        <div className="whitespace-nowrap p-4 desktop:py-4">All-Time</div>
+        <div className="whitespace-nowrap bg-subtle p-4 text-default desktop:py-4">
+          All-Time
+        </div>
       ) : (
         <a
-          className="block whitespace-nowrap p-4 hover:bg-default hover:text-default desktop:py-4"
+          className="block whitespace-nowrap p-4 hover:bg-accent hover:text-inverse desktop:py-4"
           href={linkFunc("all")}
         >
           All-Time
@@ -39,10 +41,10 @@ function YearLink({
       className={`text-center ${year === currentYear ? "bg-subtle text-default" : "text-inverse"}`}
     >
       {year === currentYear ? (
-        <div className="p-4 desktop:py-4">{year}</div>
+        <div className="bg-subtle p-4 text-default desktop:py-4">{year}</div>
       ) : (
         <a
-          className="block p-4 hover:bg-subtle hover:text-accent"
+          className="block p-4 hover:bg-accent hover:text-inverse"
           href={linkFunc(year)}
         >
           {year}
@@ -64,8 +66,8 @@ export function StatsNavigation({
   years: readonly string[];
 }): JSX.Element {
   return (
-    <nav className={ccn("bg-accent", className)}>
-      <ul className="mx-auto flex max-w-screen-max overflow-x-auto px-container font-sans text-sm font-normal tracking-wide desktop:justify-center">
+    <nav className={ccn("bg-footer", className)}>
+      <ul className="scrollbar-hidden mx-auto flex max-w-screen-max overflow-x-auto px-container font-sans text-sm font-normal tracking-wide desktop:justify-center">
         <AllTimeLink currentYear={currentYear} linkFunc={linkFunc} />
         {[...years].reverse().map((year) => {
           return (

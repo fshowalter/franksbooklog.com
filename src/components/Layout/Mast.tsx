@@ -89,7 +89,7 @@ function NavListItem({ value }: { value: NavItem }): JSX.Element {
 
 function SearchButton() {
   return (
-    <div className="z-[1000]">
+    <div className="search-button z-[1000]">
       <button
         aria-keyshortcuts="Control+K"
         aria-label="Search"

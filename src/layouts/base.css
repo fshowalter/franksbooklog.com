@@ -11,7 +11,7 @@
   --bg-default: #fff;
   --bg-inverse: rgb(0 0 0 / 75%);
   --fg-inverse-subtle: #b0b0b0;
-  --bg-footer: #252525;
+  --bg-footer: #504b43;
   --bg-progress: #14bd41;
   --bg-stripe: #f7f5f3;
   --bg-unreviewed: #f7f5f3;
@@ -203,15 +203,23 @@
 
   #mobile-nav:checked + .hamburger-icon {
     box-shadow:
-      0 0 0 100vw #252525,
-      0 0 0 100vh #252525;
+      0 0 0 100vw #504b43,
+      0 0 0 100vh #504b43;
     border-radius: 0;
-    background: #252525;
+    background: #504b43;
   }
 
   #mobile-nav:checked + .hamburger-icon .hamburger-icon-bars {
     transform: rotate(45deg);
     background-color: #fff !important;
+  }
+
+  .search-button {
+    color: inherit;
+  }
+
+  body:has(#mobile-nav:checked) .search-button {
+    color: #fff;
   }
 
   #mobile-nav:checked + .hamburger-icon .hamburger-icon-bars:after {
@@ -415,6 +423,15 @@
 
   .justify-items-inherit {
     justify-items: inherit;
+  }
+
+  .scrollbar-hidden {
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hidden::-webkit-scrollbar {
+    width: 0;
+    height: 0;
   }
 
   .cover-clip-path {

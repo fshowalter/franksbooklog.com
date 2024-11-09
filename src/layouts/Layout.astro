@@ -18,7 +18,7 @@ const { article, canonical, description, title } = Astro.props;
 
 const pageTitle = title.startsWith(siteMeta.title)
   ? title
-  : `${title} | ${siteMeta.title}`;
+  : `${title} - ${siteMeta.title}`;
 
 const canonicalUrl = `${import.meta.env.SITE}${new URL(Astro.request.url).pathname}`;
 ---
@@ -38,7 +38,7 @@ const canonicalUrl = `${import.meta.env.SITE}${new URL(Astro.request.url).pathna
     {
       canonical && (
         <>
-          <meta content={`${canonicalUrl}og.jpg`} name="og:image" />
+          <meta content={`${canonicalUrl}og.jpg`} property="og:image" />
           <meta content={`${canonicalUrl}`} property="og:url" />
           <meta content={title} property="og:title" />
           <meta content={description} property="og:description" />
@@ -52,12 +52,12 @@ const canonicalUrl = `${import.meta.env.SITE}${new URL(Astro.request.url).pathna
     <slot />
     <dialog
       aria-label="Search"
-      class="relative m-0 h-screen max-h-none w-screen max-w-unset border border-default bg-subtle shadow-lg open:flex open:flex-col tablet:mx-auto tablet:mt-16 tablet:h-min tablet:max-h-[min(100vh_-_128px,900px)] tablet:min-h-60 tablet:max-w-[min(100vw_-_64px,36rem)] tablet:rounded-xl desktop:min-h-0"
+      class="fixed inset-x-4 h-screen w-full rounded-lg border border-default bg-default shadow-lg backdrop:bg-[#000] backdrop:opacity-40 open:flex open:flex-col tablet:mx-auto tablet:mt-16 tablet:h-min tablet:max-h-[min(100vh_-_128px,900px)] tablet:min-h-60 tablet:max-w-[min(100vw_-_64px,36rem)] tablet:rounded-xl desktop:min-h-0"
     >
       <div class="contents" data-dialog-frame>
         <button
-          class="px-4 font-sans text-sm hover:text-accent focus:outline-accent"
-          data-close-modal>Cancel</button
+          class="px-2 font-mono text-xs font-light hover:bg-inverse hover:text-inverse focus:outline-accent"
+          data-close-modal>ESC</button
         >
         <div class="contents">
           <div id="pagefind__search"></div>
@@ -182,48 +182,63 @@ const canonicalUrl = `${import.meta.env.SITE}${new URL(Astro.request.url).pathna
     overflow: hidden;
   }
 
+  [data-search-modal-open]:before {
+    content: "";
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    backdrop-filter: blur(4px);
+    z-index: 1000;
+  }
+
   button[data-close-modal] {
     position: absolute;
     z-index: 1;
-    height: calc(64px * var(--pagefind-ui-scale));
+    height: calc(24px * var(--pagefind-ui-scale));
     border: 0;
-    background: transparent;
+    background: var(--bg-subtle);
     cursor: pointer;
     color: var(--fg-muted);
-    top: 1rem;
+    margin: 18px 0;
     right: var(--search-dialog-padding);
   }
 
   #pagefind__search {
-    --pagefind-ui-scale: 0.76190476;
+    --pagefind-ui-scale: 1;
     --pagefind-ui-primary: var(--fg-accent);
     --pagefind-ui-text: var(--fg-default);
     --pagefind-ui-background: var(--bg-default);
     --pagefind-ui-border: var(--border-default);
     --pagefind-ui-tag: #eeeeee;
-    --pagefind-ui-border-width: 2px;
+    --pagefind-ui-border-width: 1px;
     --pagefind-ui-border-radius: 8px;
     --pagefind-ui-image-border-radius: 8px;
     --pagefind-ui-image-box-ratio: 3 / 2;
     --pagefind-ui-font: var(--font-serif);
     --cancel-space: 5rem;
     --pagefind-ui-image-border-radius: "unset";
-  }
-
-  #pagefind__search input:focus {
-    outline: 1px solid var(--fg-accent);
-    outline-offset: -2px;
+    --search-dialog-padding: 1rem;
   }
 
   #pagefind__search .pagefind-ui__search-input {
-    width: calc(
-      100% - (var(--cancel-space)) - 2 * var(--search-dialog-padding)
-    );
-    margin: 1rem 0;
+    width: calc(100% - (var(--cancel-space)));
     flex-shrink: 0;
     font-family: var(--font-serif);
-    left: var(--search-dialog-padding);
+    left: 0;
     font-weight: normal;
+    outline: none;
+    border: none;
+    font-size: 1.125rem;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+  }
+
+  #pagefind__search .pagefind-ui__search-input::placeholder {
+    opacity: 1;
+    color: #9ca3af;
   }
 
   #pagefind__search,
@@ -233,10 +248,12 @@ const canonicalUrl = `${import.meta.env.SITE}${new URL(Astro.request.url).pathna
   }
 
   #pagefind__search .pagefind-ui__form:before {
-    left: calc(var(--search-dialog-padding) + 1rem);
-    top: calc(43px * var(--pagefind-ui-scale));
+    left: var(--search-dialog-padding);
     width: calc(20px * var(--pagefind-ui-scale));
     height: calc(20px * var(--pagefind-ui-scale));
+    top: 0;
+    position: absolute;
+    margin: 18px 0;
   }
 
   #pagefind__search .pagefind-ui__form:after {
@@ -244,9 +261,9 @@ const canonicalUrl = `${import.meta.env.SITE}${new URL(Astro.request.url).pathna
     position: absolute;
     left: 0;
     right: 0;
-    height: 2px;
+    height: 1px;
     background-color: var(--border-default);
-    top: 80px;
+    top: calc(3.5rem + 1px);
   }
 
   #pagefind__search .pagefind-ui__search-clear {
@@ -265,12 +282,15 @@ const canonicalUrl = `${import.meta.env.SITE}${new URL(Astro.request.url).pathna
 
   #pagefind__search .pagefind-ui__search-clear {
     inset-inline-end: var(--cancel-space);
-    width: calc(60px * var(--pagefind-ui-scale));
+    width: calc(24px * var(--pagefind-ui-scale));
+    height: calc(24px * var(--pagefind-ui-scale));
     padding: 0;
     background-color: transparent;
     overflow: hidden;
-    top: calc(2px + 1rem);
+    top: 1rem;
     right: calc(var(--search-dialog-padding) + var(--cancel-space) + 2px);
+    background-color: var(--bg-subtle);
+    border-radius: 50%;
   }
 
   #pagefind__search .pagefind-ui__search-clear:focus {
@@ -288,7 +308,7 @@ const canonicalUrl = `${import.meta.env.SITE}${new URL(Astro.request.url).pathna
     width: 100%;
     height: 100%;
     right: 0;
-    padding: calc(30px * var(--pagefind-ui-scale)) 8px;
+    padding: 0;
     display: flex;
   }
 
@@ -297,6 +317,7 @@ const canonicalUrl = `${import.meta.env.SITE}${new URL(Astro.request.url).pathna
     font-weight: normal;
     font-family: var(--font-sans);
     color: var(--fg-subtle);
+    font-size: 0.75rem;
   }
 
   #pagefind__search .pagefind-ui__results-area {
@@ -306,7 +327,7 @@ const canonicalUrl = `${import.meta.env.SITE}${new URL(Astro.request.url).pathna
   #pagefind__search .pagefind-ui__result {
     padding: 1rem var(--search-dialog-padding);
     display: grid;
-    grid-template-columns: 25% 1fr;
+    grid-template-columns: min(25%, 80px) 1fr;
     column-gap: 1.5rem;
   }
 
@@ -321,6 +342,7 @@ const canonicalUrl = `${import.meta.env.SITE}${new URL(Astro.request.url).pathna
     position: unset;
     left: unset;
     transform: unset;
+    margin: 0 auto;
   }
 
   #pagefind__search .pagefind-ui__result:focus-within {
@@ -333,7 +355,7 @@ const canonicalUrl = `${import.meta.env.SITE}${new URL(Astro.request.url).pathna
     margin: 1rem auto;
     width: calc(100% - 2 * var(--search-dialog-padding));
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 500;
     height: 2.5rem;
     display: block;
     font-family: var(--font-sans);
@@ -355,6 +377,7 @@ const canonicalUrl = `${import.meta.env.SITE}${new URL(Astro.request.url).pathna
   #pagefind__search .pagefind-ui__result-title {
     font-family: var(--font-sans);
     line-height: 1.25rem;
+    font-size: 1rem;
   }
 
   #pagefind__search .pagefind-ui__result-link {
@@ -363,6 +386,7 @@ const canonicalUrl = `${import.meta.env.SITE}${new URL(Astro.request.url).pathna
 
   #pagefind__search .pagefind-ui__result-excerpt {
     font-family: var(--font-serif);
+    min-width: auto;
   }
 
   #pagefind__search .pagefind-ui__button:focus {
