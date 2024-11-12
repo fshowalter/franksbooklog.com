@@ -36,7 +36,7 @@ function deck({
     works = "work";
   }
 
-  return `Author of ${reviewedWorkCount} reviewed ${works} ${shelfText}.`;
+  return `Author of ${reviewedWorkCount} reviewed ${works}${shelfText}.`;
 }
 
 export async function getProps(slug: string): Promise<Props> {
