@@ -13,8 +13,6 @@ export const MoreReviewsImageConfig = {
   width: 248,
 };
 
-type Author = {} & Pick<Review["authors"][0], "name">;
-
 export type MoreReviewsValue = {
   authors: Author[];
   coverImageProps: CoverImageProps;
@@ -24,6 +22,8 @@ export type MoreReviewsValue = {
   title: Review["title"];
   yearPublished: Review["yearPublished"];
 };
+
+type Author = Pick<Review["authors"][0], "name"> & {};
 
 export function MoreReviews({
   children,

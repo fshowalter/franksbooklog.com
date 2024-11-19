@@ -19,21 +19,7 @@ import type { Sort } from "./Reviews.reducer";
 import { Filters } from "./Filters";
 import { Actions, initState, reducer } from "./Reviews.reducer";
 
-export type Props = {
-  deck: string;
-  distinctKinds: readonly string[];
-  distinctPublishedYears: readonly string[];
-  distinctReviewYears: readonly string[];
-  initialSort: Sort;
-  values: ListItemValue[];
-};
-
-type Author = {} & Pick<Review["authors"][0], "name" | "sortName">;
-
-export type ListItemValue = {
-  authors: Author[];
-  coverImageProps: CoverImageProps;
-} & Pick<
+export type ListItemValue = Pick<
   Review,
   | "date"
   | "grade"
@@ -43,7 +29,21 @@ export type ListItemValue = {
   | "sortTitle"
   | "title"
   | "yearPublished"
->;
+> & {
+  authors: Author[];
+  coverImageProps: CoverImageProps;
+};
+
+export type Props = {
+  deck: string;
+  distinctKinds: readonly string[];
+  distinctPublishedYears: readonly string[];
+  distinctReviewYears: readonly string[];
+  initialSort: Sort;
+  values: ListItemValue[];
+};
+
+type Author = Pick<Review["authors"][0], "name" | "sortName"> & {};
 
 export function Reviews({
   deck,
@@ -91,6 +91,20 @@ export function Reviews({
   );
 }
 
+function Authors({
+  className,
+  values,
+}: {
+  className: string;
+  values: Author[];
+}) {
+  return (
+    <div className={className}>
+      {toSentenceArray(values.map((value) => value.name))}
+    </div>
+  );
+}
+
 function ReviewsListItem({ value }: { value: ListItemValue }): JSX.Element {
   return (
     <ListItem>
@@ -106,19 +120,5 @@ function ReviewsListItem({ value }: { value: ListItemValue }): JSX.Element {
         <ListItemKindAndYear kind={value.kind} year={value.yearPublished} />
       </div>
     </ListItem>
-  );
-}
-
-function Authors({
-  className,
-  values,
-}: {
-  className: string;
-  values: Author[];
-}) {
-  return (
-    <div className={className}>
-      {toSentenceArray(values.map((value) => value.name))}
-    </div>
   );
 }

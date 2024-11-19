@@ -7,38 +7,6 @@ import type { ListItemValue, Props } from "./Author";
 
 import { AvatarImageConfig } from "./Author";
 
-function filterOtherAuthors(author: Author, work: Author["works"][number]) {
-  return work.authors
-    .filter((workAuthor) => {
-      return author.name !== workAuthor.name;
-    })
-    .map((otherAuthor) => {
-      return { name: otherAuthor.name };
-    });
-}
-
-function deck({
-  reviewedWorkCount,
-  shelfWorkCount,
-}: {
-  reviewedWorkCount: Author["reviewedWorkCount"];
-  shelfWorkCount: Author["shelfWorkCount"];
-}): string {
-  let shelfText = "";
-
-  if (shelfWorkCount > 0) {
-    shelfText = ` with ${shelfWorkCount} on the shelf`;
-  }
-
-  let works = "works";
-
-  if (reviewedWorkCount === 1) {
-    works = "work";
-  }
-
-  return `Author of ${reviewedWorkCount} reviewed ${works}${shelfText}.`;
-}
-
 export async function getProps(slug: string): Promise<Props> {
   const { author, distinctKinds, distinctPublishedYears } =
     await getAuthorDetails(slug);
@@ -76,4 +44,36 @@ export async function getProps(slug: string): Promise<Props> {
     name: author.name,
     works,
   };
+}
+
+function deck({
+  reviewedWorkCount,
+  shelfWorkCount,
+}: {
+  reviewedWorkCount: Author["reviewedWorkCount"];
+  shelfWorkCount: Author["shelfWorkCount"];
+}): string {
+  let shelfText = "";
+
+  if (shelfWorkCount > 0) {
+    shelfText = ` with ${shelfWorkCount} on the shelf`;
+  }
+
+  let works = "works";
+
+  if (reviewedWorkCount === 1) {
+    works = "work";
+  }
+
+  return `Author of ${reviewedWorkCount} reviewed ${works}${shelfText}.`;
+}
+
+function filterOtherAuthors(author: Author, work: Author["works"][number]) {
+  return work.authors
+    .filter((workAuthor) => {
+      return author.name !== workAuthor.name;
+    })
+    .map((otherAuthor) => {
+      return { name: otherAuthor.name };
+    });
 }

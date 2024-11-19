@@ -2,7 +2,7 @@ import type { TimelineEntryJson } from "./data/timelineEntriesJson";
 
 import { allTimelineEntriesJson } from "./data/timelineEntriesJson";
 
-export type TimelineEntry = {} & TimelineEntryJson;
+export type TimelineEntry = TimelineEntryJson & {};
 
 type TimelineEntries = {
   abandonedCount: number;

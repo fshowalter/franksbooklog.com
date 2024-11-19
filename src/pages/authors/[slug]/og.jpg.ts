@@ -5,6 +5,8 @@ import { getOpenGraphAvatarAsBase64String } from "~/api/avatars";
 import { OpenGraphImage } from "~/components/Author/OpenGraphImage";
 import { componentToImage } from "~/utils/componentToImage";
 
+type Props = InferGetStaticPropsType<typeof getStaticPaths>;
+
 export async function getStaticPaths() {
   const authors = await allAuthors();
 
@@ -20,8 +22,6 @@ export async function getStaticPaths() {
     };
   });
 }
-
-type Props = InferGetStaticPropsType<typeof getStaticPaths>;
 
 export const GET: APIRoute = async function get({ props }) {
   const { name, slug } = props as Props;

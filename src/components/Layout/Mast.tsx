@@ -53,27 +53,6 @@ function MenuItem({ value }: { value: NavItem }): JSX.Element {
   );
 }
 
-function SubMenu({ values }: { values: NavItem[] }) {
-  if (values.length === 0) {
-    return false;
-  }
-
-  return (
-    <ol className="mt-4">
-      {values.map((value) => {
-        return (
-          <li
-            className="mb-2 font-sans text-xs uppercase tracking-wide text-inverse-subtle"
-            key={value.target}
-          >
-            <a href={value.target}>{value.text}</a>
-          </li>
-        );
-      })}
-    </ol>
-  );
-}
-
 function NavListItem({ value }: { value: NavItem }): JSX.Element {
   return (
     <li className="block whitespace-nowrap tracking-serif-wide">
@@ -116,5 +95,26 @@ function SearchButton() {
         </svg>
       </button>
     </div>
+  );
+}
+
+function SubMenu({ values }: { values: NavItem[] }) {
+  if (values.length === 0) {
+    return false;
+  }
+
+  return (
+    <ol className="mt-4">
+      {values.map((value) => {
+        return (
+          <li
+            className="mb-2 font-sans text-xs uppercase tracking-wide text-inverse-subtle"
+            key={value.target}
+          >
+            <a href={value.target}>{value.text}</a>
+          </li>
+        );
+      })}
+    </ol>
   );
 }

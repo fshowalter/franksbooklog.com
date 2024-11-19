@@ -8,23 +8,6 @@ import {
 } from "~/api/reviews";
 import { textStarsForGrade } from "~/utils/textStarsForGrade";
 
-function addMetaToExcerpt(excerpt: string, review: ReviewWithExcerpt) {
-  const meta = `${textStarsForGrade(review.grade)}`;
-  return `<p>${meta}</p>${excerpt}`;
-}
-
-function authorsToString(authors: ReviewWithExcerpt["authors"]) {
-  const authorsArray = authors.map((author) => {
-    if (author.notes) {
-      return `${author.name} (${author.notes})`;
-    }
-
-    return author.name;
-  });
-
-  return new Intl.ListFormat().format(authorsArray);
-}
-
 export async function GET() {
   const reviews = await mostRecentReviews(10);
 
@@ -61,4 +44,21 @@ export async function GET() {
     // `<title>` field in output xml
     title: "Frank's Book Log",
   });
+}
+
+function addMetaToExcerpt(excerpt: string, review: ReviewWithExcerpt) {
+  const meta = `${textStarsForGrade(review.grade)}`;
+  return `<p>${meta}</p>${excerpt}`;
+}
+
+function authorsToString(authors: ReviewWithExcerpt["authors"]) {
+  const authorsArray = authors.map((author) => {
+    if (author.notes) {
+      return `${author.name} (${author.notes})`;
+    }
+
+    return author.name;
+  });
+
+  return new Intl.ListFormat().format(authorsArray);
 }

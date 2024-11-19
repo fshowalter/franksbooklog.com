@@ -2,6 +2,12 @@ import fs from "node:fs/promises";
 import satori from "satori";
 import sharp from "sharp";
 
+export async function componentToImage(component: JSX.Element) {
+  return await sharp(Buffer.from(await componentToSvg(component)))
+    .jpeg()
+    .toBuffer();
+}
+
 async function componentToSvg(component: JSX.Element) {
   return await satori(component, {
     fonts: [
@@ -30,10 +36,4 @@ async function componentToSvg(component: JSX.Element) {
     height: 630,
     width: 1200,
   });
-}
-
-export async function componentToImage(component: JSX.Element) {
-  return await sharp(Buffer.from(await componentToSvg(component)))
-    .jpeg()
-    .toBuffer();
 }

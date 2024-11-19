@@ -5,6 +5,8 @@ import { allStatYears } from "~/api/yearStats";
 import { OpenGraphImage } from "~/components/OpenGraphImage";
 import { componentToImage } from "~/utils/componentToImage";
 
+type Props = InferGetStaticPropsType<typeof getStaticPaths>;
+
 export async function getStaticPaths() {
   const statYears = await allStatYears();
 
@@ -19,8 +21,6 @@ export async function getStaticPaths() {
     };
   });
 }
-
-type Props = InferGetStaticPropsType<typeof getStaticPaths>;
 
 export const GET: APIRoute = async function get({ props }) {
   const { year } = props as Props;

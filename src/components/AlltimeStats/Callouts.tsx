@@ -2,7 +2,7 @@ import type { AlltimeStats } from "~/api/alltimeStats";
 
 import { StatsCallout } from "~/components/StatsCallout";
 
-type Props = {} & Pick<AlltimeStats, "bookCount" | "reviewCount" | "workCount">;
+type Props = Pick<AlltimeStats, "bookCount" | "reviewCount" | "workCount"> & {};
 
 export function Callouts({
   bookCount,

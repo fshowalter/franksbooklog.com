@@ -2,7 +2,7 @@ import type { YearStats } from "~/api/yearStats";
 
 import { StatsCallout } from "~/components/StatsCallout";
 
-type Props = {} & Pick<YearStats, "bookCount" | "workCount">;
+type Props = Pick<YearStats, "bookCount" | "workCount"> & {};
 
 export function Callouts({ bookCount, workCount }: Props): JSX.Element {
   return (

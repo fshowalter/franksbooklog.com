@@ -57,6 +57,10 @@ const UnreviewedWorkJsonSchema = z
 
 export type UnreviewedWorkJson = z.infer<typeof UnreviewedWorkJsonSchema>;
 
+export async function allUnreviewedWorksJson(): Promise<UnreviewedWorkJson[]> {
+  return await parseAllUnreviewedWorksJson();
+}
+
 async function parseAllUnreviewedWorksJson() {
   const json = await fs.readFile(unreviewedWorksJsonFile, "utf8");
   const data = JSON.parse(json) as unknown[];
@@ -64,8 +68,4 @@ async function parseAllUnreviewedWorksJson() {
   return data.map((item) => {
     return UnreviewedWorkJsonSchema.parse(item);
   });
-}
-
-export async function allUnreviewedWorksJson(): Promise<UnreviewedWorkJson[]> {
-  return await parseAllUnreviewedWorksJson();
 }

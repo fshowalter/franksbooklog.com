@@ -19,6 +19,74 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
   "/content/assets/covers/*.png",
 );
 
+export async function getFeedCoverProps(work: Work): Promise<CoverImageProps> {
+  const workCoverFile = await getWorkCoverFile(work);
+
+  const optimizedImage = await getImage({
+    format: "jpeg",
+    height: 750,
+    quality: 80,
+    src: workCoverFile.default,
+    width: 500,
+  });
+
+  return {
+    src: normalizeSources(optimizedImage.src),
+    srcSet: normalizeSources(optimizedImage.srcSet.attribute),
+  };
+}
+
+export async function getFixedCoverImageProps(
+  work: Work,
+  { height, width }: { height: number; width: number },
+): Promise<CoverImageProps> {
+  const workCoverFile = await getWorkCoverFile(work);
+
+  const optimizedImage = await getImage({
+    densities: [1, 2],
+    format: "avif",
+    height: height,
+    quality: 80,
+    src: workCoverFile.default,
+    width: width,
+  });
+
+  return {
+    src: normalizeSources(optimizedImage.src),
+    srcSet: normalizeSources(optimizedImage.srcSet.attribute),
+  };
+}
+
+export async function getFluidCoverImageProps(
+  work: Work,
+  { height, width }: { height: number; width: number },
+): Promise<CoverImageProps> {
+  const workCoverFile = await getWorkCoverFile(work);
+
+  const optimizedImage = await getImage({
+    format: "avif",
+    height: height,
+    quality: 80,
+    src: workCoverFile.default,
+    width: width,
+    widths: [0.25, 0.5, 1, 2].map((w) => w * width),
+  });
+
+  return {
+    src: normalizeSources(optimizedImage.src),
+    srcSet: normalizeSources(optimizedImage.srcSet.attribute),
+  };
+}
+
+export async function getOpenGraphCoverAsBase64String(work: Work) {
+  const imageBuffer = await sharp(getWorkCoverPath(work))
+    .resize(420)
+    .toFormat("png")
+    .toBuffer();
+
+  return `data:${"image/png"};base64,${imageBuffer.toString("base64")}`;
+}
+
 export async function getStructuredDataCoverSrc(work: Work): Promise<string> {
   const workCoverFile = await getWorkCoverFile(work);
 
@@ -33,15 +101,6 @@ export async function getStructuredDataCoverSrc(work: Work): Promise<string> {
   return normalizeSources(optimizedImage.src);
 }
 
-export async function getOpenGraphCoverAsBase64String(work: Work) {
-  const imageBuffer = await sharp(getWorkCoverPath(work))
-    .resize(420)
-    .toFormat("png")
-    .toBuffer();
-
-  return `data:${"image/png"};base64,${imageBuffer.toString("base64")}`;
-}
-
 function coverPath(slug: string) {
   const coverPath = path.resolve(`./content/assets/covers/${slug}.png`);
   if (fs.existsSync(coverPath)) {
@@ -49,30 +108,6 @@ function coverPath(slug: string) {
   }
 
   return;
-}
-
-function getWorkCoverPath(work: Work) {
-  const workCover = coverPath(work.slug);
-
-  if (workCover) {
-    return workCover;
-  }
-
-  let parentCover;
-
-  for (const includedInSlug of work.includedInSlugs) {
-    parentCover = coverPath(includedInSlug);
-
-    if (parentCover) {
-      break;
-    }
-  }
-
-  if (parentCover) {
-    return parentCover;
-  }
-
-  return coverPath("default") || "";
 }
 
 async function getWorkCoverFile(work: Work) {
@@ -109,61 +144,26 @@ async function getWorkCoverFile(work: Work) {
   return await images[defaultWorkCoverKey]();
 }
 
-export async function getFeedCoverProps(work: Work): Promise<CoverImageProps> {
-  const workCoverFile = await getWorkCoverFile(work);
+function getWorkCoverPath(work: Work) {
+  const workCover = coverPath(work.slug);
 
-  const optimizedImage = await getImage({
-    format: "jpeg",
-    height: 750,
-    quality: 80,
-    src: workCoverFile.default,
-    width: 500,
-  });
+  if (workCover) {
+    return workCover;
+  }
 
-  return {
-    src: normalizeSources(optimizedImage.src),
-    srcSet: normalizeSources(optimizedImage.srcSet.attribute),
-  };
-}
+  let parentCover;
 
-export async function getFluidCoverImageProps(
-  work: Work,
-  { height, width }: { height: number; width: number },
-): Promise<CoverImageProps> {
-  const workCoverFile = await getWorkCoverFile(work);
+  for (const includedInSlug of work.includedInSlugs) {
+    parentCover = coverPath(includedInSlug);
 
-  const optimizedImage = await getImage({
-    format: "avif",
-    height: height,
-    quality: 80,
-    src: workCoverFile.default,
-    width: width,
-    widths: [0.25, 0.5, 1, 2].map((w) => w * width),
-  });
+    if (parentCover) {
+      break;
+    }
+  }
 
-  return {
-    src: normalizeSources(optimizedImage.src),
-    srcSet: normalizeSources(optimizedImage.srcSet.attribute),
-  };
-}
+  if (parentCover) {
+    return parentCover;
+  }
 
-export async function getFixedCoverImageProps(
-  work: Work,
-  { height, width }: { height: number; width: number },
-): Promise<CoverImageProps> {
-  const workCoverFile = await getWorkCoverFile(work);
-
-  const optimizedImage = await getImage({
-    densities: [1, 2],
-    format: "avif",
-    height: height,
-    quality: 80,
-    src: workCoverFile.default,
-    width: width,
-  });
-
-  return {
-    src: normalizeSources(optimizedImage.src),
-    srcSet: normalizeSources(optimizedImage.srcSet.attribute),
-  };
+  return coverPath("default") || "";
 }

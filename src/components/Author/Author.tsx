@@ -20,28 +20,21 @@ import type { Sort } from "./Author.reducer";
 import { Actions, initState, reducer } from "./Author.reducer";
 import { Filters } from "./Filters";
 
-export type Props = {
+export type Props = Pick<Author, "name"> & {
   avatarImageProps: AvatarImageProps | undefined;
   deck: string;
   distinctKinds: readonly string[];
   distinctPublishedYears: readonly string[];
   initialSort: Sort;
   works: ListItemValue[];
-} & Pick<Author, "name">;
+};
 
 export const AvatarImageConfig = {
   height: 250,
   width: 250,
 };
 
-type AuthorWork = Author["works"][number];
-
-export type ListItemValue = {
-  coverImageProps: CoverImageProps;
-  otherAuthors: {
-    name: string;
-  }[];
-} & Pick<
+export type ListItemValue = Pick<
   AuthorWork,
   | "grade"
   | "gradeValue"
@@ -51,7 +44,14 @@ export type ListItemValue = {
   | "sortTitle"
   | "title"
   | "yearPublished"
->;
+> & {
+  coverImageProps: CoverImageProps;
+  otherAuthors: {
+    name: string;
+  }[];
+};
+
+type AuthorWork = Author["works"][number];
 
 export function Author({
   avatarImageProps,
@@ -116,6 +116,18 @@ export function Author({
   );
 }
 
+function OtherAuthors({ values }: { values: ListItemValue["otherAuthors"] }) {
+  if (values.length === 0) {
+    return false;
+  }
+
+  return (
+    <div className="font-sans text-xs leading-5 text-subtle">
+      (with {toSentenceArray(values.map((value) => value.name))})
+    </div>
+  );
+}
+
 function WorkListItem({ value }: { value: ListItemValue }): JSX.Element {
   if (value.reviewed) {
     return (
@@ -151,17 +163,5 @@ function WorkListItem({ value }: { value: ListItemValue }): JSX.Element {
         </div>
       </div>
     </ListItem>
-  );
-}
-
-function OtherAuthors({ values }: { values: ListItemValue["otherAuthors"] }) {
-  if (values.length === 0) {
-    return false;
-  }
-
-  return (
-    <div className="font-sans text-xs leading-5 text-subtle">
-      (with {toSentenceArray(values.map((value) => value.name))})
-    </div>
   );
 }

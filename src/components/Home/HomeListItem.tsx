@@ -13,18 +13,7 @@ export const CoverImageConfig = {
   width: 248,
 };
 
-function formatDate(reviewDate: Date) {
-  return reviewDate.toLocaleString("en-GB", {
-    day: "2-digit",
-    month: "short",
-    timeZone: "UTC",
-    year: "numeric",
-  });
-}
-
-export type ListItemValue = {
-  coverImageProps: CoverImageProps;
-} & Pick<
+export type ListItemValue = Pick<
   ReviewWithExcerpt,
   | "authors"
   | "date"
@@ -35,7 +24,9 @@ export type ListItemValue = {
   | "slug"
   | "title"
   | "yearPublished"
->;
+> & {
+  coverImageProps: CoverImageProps;
+};
 
 export function HomeListItem({
   eagerLoadCoverImage,
@@ -92,4 +83,13 @@ export function HomeListItem({
       </div>
     </li>
   );
+}
+
+function formatDate(reviewDate: Date) {
+  return reviewDate.toLocaleString("en-GB", {
+    day: "2-digit",
+    month: "short",
+    timeZone: "UTC",
+    year: "numeric",
+  });
 }

@@ -26,6 +26,10 @@ const TimelineEntryJsonSchema = z.object({
 
 export type TimelineEntryJson = z.infer<typeof TimelineEntryJsonSchema>;
 
+export async function allTimelineEntriesJson(): Promise<TimelineEntryJson[]> {
+  return await parseAllTimelineEntriesJson();
+}
+
 async function parseAllTimelineEntriesJson() {
   const json = await fs.readFile(timelineEntriesJsonFile, "utf8");
   const data = JSON.parse(json) as unknown[];
@@ -33,8 +37,4 @@ async function parseAllTimelineEntriesJson() {
   return data.map((item) => {
     return TimelineEntryJsonSchema.parse(item);
   });
-}
-
-export async function allTimelineEntriesJson(): Promise<TimelineEntryJson[]> {
-  return await parseAllTimelineEntriesJson();
 }

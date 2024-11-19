@@ -71,6 +71,12 @@ const AuthorJsonSchema = z.object({
   works: z.array(WorkSchema),
 });
 
+export type AuthorJson = z.infer<typeof AuthorJsonSchema>;
+
+export async function allAuthorsJson(): Promise<AuthorJson[]> {
+  return await parseAllAuthorsJson();
+}
+
 async function parseAllAuthorsJson() {
   const dirents = await fs.readdir(authorsJsonDirectory, {
     withFileTypes: true,
@@ -89,10 +95,4 @@ async function parseAllAuthorsJson() {
         return AuthorJsonSchema.parse(json);
       }),
   );
-}
-
-export type AuthorJson = z.infer<typeof AuthorJsonSchema>;
-
-export async function allAuthorsJson(): Promise<AuthorJson[]> {
-  return await parseAllAuthorsJson();
 }

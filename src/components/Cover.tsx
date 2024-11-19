@@ -2,13 +2,13 @@ import React from "react";
 
 import type { CoverImageProps } from "~/api/covers";
 
-type Props = {
+type Props = React.ImgHTMLAttributes<HTMLImageElement> & {
   decoding: "async" | "auto" | "sync";
   height: number;
   imageProps: CoverImageProps | undefined;
   loading: "eager" | "lazy";
   width: number;
-} & React.ImgHTMLAttributes<HTMLImageElement>;
+};
 
 export function Cover({
   decoding = "async",

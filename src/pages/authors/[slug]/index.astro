@@ -4,6 +4,10 @@ import { Author } from "~/components/Author/Author";
 import { getProps } from "~/components/Author/getProps";
 import Layout from "~/layouts/Layout.astro";
 
+interface Props {
+  slug: string;
+}
+
 export async function getStaticPaths() {
   const authors = await allAuthors();
 
@@ -17,10 +21,6 @@ export async function getStaticPaths() {
       },
     };
   });
-}
-
-interface Props {
-  slug: string;
 }
 
 const { slug } = Astro.props;

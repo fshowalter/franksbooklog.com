@@ -52,35 +52,6 @@ function Date({ value }: { value: ReviewWithContent["readings"][0]["date"] }) {
   );
 }
 
-function Edition({
-  value,
-}: {
-  value: ReviewWithContent["readings"][0]["edition"];
-}) {
-  return (
-    <span className="text-subtle">
-      <span>via</span>{" "}
-      <span className="font-sans text-xs font-normal text-subtle">{value}</span>
-    </span>
-  );
-}
-
-function EditionNotes({
-  value,
-}: {
-  value: ReviewWithContent["readings"][0]["editionNotes"];
-}) {
-  if (!value) {
-    return false;
-  }
-  return (
-    <span className="font-light tracking-normal text-subtle">
-      (
-      <RenderedMarkdown as="span" className="leading-none" text={value} />)
-    </span>
-  );
-}
-
 function Details({ value }: { value: ReviewWithContent["readings"][0] }) {
   if (value.readingTime === 1) {
     return false;
@@ -136,6 +107,35 @@ function Details({ value }: { value: ReviewWithContent["readings"][0] }) {
         })}
       </ol>
     </details>
+  );
+}
+
+function Edition({
+  value,
+}: {
+  value: ReviewWithContent["readings"][0]["edition"];
+}) {
+  return (
+    <span className="text-subtle">
+      <span>via</span>{" "}
+      <span className="font-sans text-xs font-normal text-subtle">{value}</span>
+    </span>
+  );
+}
+
+function EditionNotes({
+  value,
+}: {
+  value: ReviewWithContent["readings"][0]["editionNotes"];
+}) {
+  if (!value) {
+    return false;
+  }
+  return (
+    <span className="font-light tracking-normal text-subtle">
+      (
+      <RenderedMarkdown as="span" className="leading-none" text={value} />)
+    </span>
   );
 }
 

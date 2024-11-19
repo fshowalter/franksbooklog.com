@@ -10,46 +10,58 @@ export type Sort = "progress-date-asc" | "progress-date-desc";
 
 const { clearFilter, updateFilter } = filterTools(sortValues, groupValues);
 
-function sortValues(values: ListItemValue[], sortOrder: Sort) {
-  const sortMap: Record<Sort, (a: ListItemValue, b: ListItemValue) => number> =
-    {
-      "progress-date-asc": (a, b) => sortString(a.sequence, b.sequence),
-      "progress-date-desc": (a, b) => sortString(a.sequence, b.sequence) * -1,
-    };
-
-  const comparer = sortMap[sortOrder];
-  return values.sort(comparer);
+export enum Actions {
+  FILTER_EDITION = "FILTER_EDITION",
+  FILTER_KIND = "FILTER_KIND",
+  FILTER_PUBLISHED_YEAR = "FILTER_PUBLISHED_YEAR",
+  FILTER_READING_YEAR = "FILTER_READING_YEAR",
+  FILTER_TITLE = "FILTER_TITLE",
+  SHOW_MORE = "SHOW_MORE",
+  SORT = "SORT",
 }
 
-function groupValues(
-  values: ListItemValue[],
-): Map<string, Map<string, ListItemValue[]>> {
-  const groupedValues = new Map<string, Map<string, ListItemValue[]>>();
+export type ActionType =
+  | FilterEditionAction
+  | FilterKindAction
+  | FilterPublishedYearAction
+  | FilterReadingYearAction
+  | FilterTitleAction
+  | ShowMoreAction
+  | SortAction;
 
-  values.map((value) => {
-    const monthYearGroup = `${value.readingMonth} ${value.readingYear}`;
+type FilterEditionAction = {
+  type: Actions.FILTER_EDITION;
+  value: string;
+};
 
-    let groupValue = groupedValues.get(monthYearGroup);
+type FilterKindAction = {
+  type: Actions.FILTER_KIND;
+  value: string;
+};
 
-    if (!groupValue) {
-      groupValue = new Map<string, ListItemValue[]>();
-      groupedValues.set(monthYearGroup, groupValue);
-    }
+type FilterPublishedYearAction = {
+  type: Actions.FILTER_PUBLISHED_YEAR;
+  values: [string, string];
+};
 
-    const dayGroup = `${value.readingDay}-${value.readingDate}`;
+type FilterReadingYearAction = {
+  type: Actions.FILTER_READING_YEAR;
+  values: [string, string];
+};
 
-    let dayGroupValue = groupValue.get(dayGroup);
+type FilterTitleAction = {
+  type: Actions.FILTER_TITLE;
+  value: string;
+};
 
-    if (!dayGroupValue) {
-      dayGroupValue = [];
-      groupValue.set(dayGroup, dayGroupValue);
-    }
+type ShowMoreAction = {
+  type: Actions.SHOW_MORE;
+};
 
-    dayGroupValue.push(value);
-  });
-
-  return groupedValues;
-}
+type SortAction = {
+  type: Actions.SORT;
+  value: Sort;
+};
 
 type State = FilterableState<
   ListItemValue,
@@ -73,59 +85,6 @@ export function initState({
     sortValue: initialSort,
   };
 }
-
-export enum Actions {
-  FILTER_EDITION = "FILTER_EDITION",
-  FILTER_KIND = "FILTER_KIND",
-  FILTER_PUBLISHED_YEAR = "FILTER_PUBLISHED_YEAR",
-  FILTER_READING_YEAR = "FILTER_READING_YEAR",
-  FILTER_TITLE = "FILTER_TITLE",
-  SHOW_MORE = "SHOW_MORE",
-  SORT = "SORT",
-}
-
-type FilterTitleAction = {
-  type: Actions.FILTER_TITLE;
-  value: string;
-};
-
-type FilterKindAction = {
-  type: Actions.FILTER_KIND;
-  value: string;
-};
-
-type FilterEditionAction = {
-  type: Actions.FILTER_EDITION;
-  value: string;
-};
-
-type FilterPublishedYearAction = {
-  type: Actions.FILTER_PUBLISHED_YEAR;
-  values: [string, string];
-};
-
-type FilterReadingYearAction = {
-  type: Actions.FILTER_READING_YEAR;
-  values: [string, string];
-};
-
-type SortAction = {
-  type: Actions.SORT;
-  value: Sort;
-};
-
-type ShowMoreAction = {
-  type: Actions.SHOW_MORE;
-};
-
-export type ActionType =
-  | FilterEditionAction
-  | FilterKindAction
-  | FilterPublishedYearAction
-  | FilterReadingYearAction
-  | FilterTitleAction
-  | ShowMoreAction
-  | SortAction;
 
 export function reducer(state: State, action: ActionType): State {
   let groupedValues;
@@ -193,4 +152,45 @@ export function reducer(state: State, action: ActionType): State {
     }
     // no default
   }
+}
+
+function groupValues(
+  values: ListItemValue[],
+): Map<string, Map<string, ListItemValue[]>> {
+  const groupedValues = new Map<string, Map<string, ListItemValue[]>>();
+
+  values.map((value) => {
+    const monthYearGroup = `${value.readingMonth} ${value.readingYear}`;
+
+    let groupValue = groupedValues.get(monthYearGroup);
+
+    if (!groupValue) {
+      groupValue = new Map<string, ListItemValue[]>();
+      groupedValues.set(monthYearGroup, groupValue);
+    }
+
+    const dayGroup = `${value.readingDay}-${value.readingDate}`;
+
+    let dayGroupValue = groupValue.get(dayGroup);
+
+    if (!dayGroupValue) {
+      dayGroupValue = [];
+      groupValue.set(dayGroup, dayGroupValue);
+    }
+
+    dayGroupValue.push(value);
+  });
+
+  return groupedValues;
+}
+
+function sortValues(values: ListItemValue[], sortOrder: Sort) {
+  const sortMap: Record<Sort, (a: ListItemValue, b: ListItemValue) => number> =
+    {
+      "progress-date-asc": (a, b) => sortString(a.sequence, b.sequence),
+      "progress-date-desc": (a, b) => sortString(a.sequence, b.sequence) * -1,
+    };
+
+  const comparer = sortMap[sortOrder];
+  return values.sort(comparer);
 }
