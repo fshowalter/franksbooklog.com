@@ -38,7 +38,7 @@ if (import.meta.env.MODE !== "development") {
 
 export type Review = MarkdownReview & ReviewedWorkJson & {};
 
-export type ReviewWithContent = Review & {
+export type ReviewWithContent = Omit<Review, "readings"> & {
   content: string | undefined;
   excerptPlainText: string;
   readings: ReviewReading[];
@@ -48,11 +48,11 @@ export type ReviewWithExcerpt = Review & {
   excerpt: string;
 };
 
-type ReviewReading = MarkdownReading & ReviewedWorkJsonReading &
-  {
-  editionNotes: string | undefined;
-  readingNotes: string | undefined;
-};
+type ReviewReading = MarkdownReading &
+  ReviewedWorkJsonReading & {
+    editionNotes: string | undefined;
+    readingNotes: string | undefined;
+  };
 
 type Reviews = {
   distinctKinds: string[];
