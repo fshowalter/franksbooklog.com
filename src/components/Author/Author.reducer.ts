@@ -24,7 +24,11 @@ const { applyFilters, clearFilter, updateFilter } = filterTools(
   groupValues,
 );
 
-type State = FilterableState<ListItemValue, Sort, Map<string, ListItemValue[]>> & {
+type State = FilterableState<
+  ListItemValue,
+  Sort,
+  Map<string, ListItemValue[]>
+> & {
   hideReviewed: boolean;
 };
 

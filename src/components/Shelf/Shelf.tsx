@@ -18,7 +18,10 @@ import { Filters } from "./Filters";
 import { initState, reducer } from "./Shelf.reducer";
 import { Actions } from "./Shelf.reducer";
 
-export type ListItemValue = Pick<ShelfWork, "kind" | "slug" | "sortTitle" | "title" | "yearPublished"> & {
+export type ListItemValue = Pick<
+  ShelfWork,
+  "kind" | "slug" | "sortTitle" | "title" | "yearPublished"
+> & {
   authors: Author[];
   coverImageProps: CoverImageProps;
 };
