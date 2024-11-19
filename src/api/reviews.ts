@@ -36,23 +36,23 @@ if (import.meta.env.MODE !== "development") {
   cachedMarkdownReviews = await allReviewsMarkdown();
 }
 
-export type Review = {} & MarkdownReview & ReviewedWorkJson;
+export type Review = MarkdownReview & ReviewedWorkJson & {};
 
-export type ReviewWithContent = {
+export type ReviewWithContent = Review & {
   content: string | undefined;
   excerptPlainText: string;
   readings: ReviewReading[];
-} & Review;
+};
 
-export type ReviewWithExcerpt = {
+export type ReviewWithExcerpt = Review & {
   excerpt: string;
-} & Review;
+};
 
-type ReviewReading = {
+type ReviewReading = MarkdownReading & ReviewedWorkJsonReading &
+  {
   editionNotes: string | undefined;
   readingNotes: string | undefined;
-} & MarkdownReading &
-  ReviewedWorkJsonReading;
+};
 
 type Reviews = {
   distinctKinds: string[];
