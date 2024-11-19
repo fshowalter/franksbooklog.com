@@ -15,24 +15,7 @@ export type Sort =
 const groupValues = buildGroupValues(groupForValue);
 const { clearFilter, updateFilter } = filterTools(sortValues, groupValues);
 
-function sortValues(values: ListItemValue[], sortOrder: Sort) {
-  const sortMap: Record<Sort, (a: ListItemValue, b: ListItemValue) => number> =
-    {
-      "author-asc": (a, b) =>
-        sortString(a.authors[0].sortName, b.authors[0].sortName),
-      "author-desc": (a, b) =>
-        sortString(a.authors[0].sortName, b.authors[0].sortName) * -1,
-      "title-asc": (a, b) => collator.compare(a.sortTitle, b.sortTitle),
-      "title-desc": (a, b) => collator.compare(a.sortTitle, b.sortTitle) * -1,
-      "year-published-asc": (a, b) =>
-        sortString(a.yearPublished, b.yearPublished),
-      "year-published-desc": (a, b) =>
-        sortString(a.yearPublished, b.yearPublished) * -1,
-    };
-
-  const comparer = sortMap[sortOrder];
-  return values.sort(comparer);
-}
+type State = FilterableState<ListItemValue, Sort, Map<string, ListItemValue[]>>;
 
 function groupForValue(value: ListItemValue, sortValue: Sort): string {
   switch (sortValue) {
@@ -58,9 +41,71 @@ function groupForValue(value: ListItemValue, sortValue: Sort): string {
   }
 }
 
-type State = FilterableState<ListItemValue, Sort, Map<string, ListItemValue[]>>;
+function sortValues(values: ListItemValue[], sortOrder: Sort) {
+  const sortMap: Record<Sort, (a: ListItemValue, b: ListItemValue) => number> =
+    {
+      "author-asc": (a, b) =>
+        sortString(a.authors[0].sortName, b.authors[0].sortName),
+      "author-desc": (a, b) =>
+        sortString(a.authors[0].sortName, b.authors[0].sortName) * -1,
+      "title-asc": (a, b) => collator.compare(a.sortTitle, b.sortTitle),
+      "title-desc": (a, b) => collator.compare(a.sortTitle, b.sortTitle) * -1,
+      "year-published-asc": (a, b) =>
+        sortString(a.yearPublished, b.yearPublished),
+      "year-published-desc": (a, b) =>
+        sortString(a.yearPublished, b.yearPublished) * -1,
+    };
+
+  const comparer = sortMap[sortOrder];
+  return values.sort(comparer);
+}
 
 const SHOW_COUNT_DEFAULT = 100;
+
+export enum Actions {
+  FILTER_AUTHOR = "FILTER_AUTHOR",
+  FILTER_KIND = "FILTER_KIND",
+  FILTER_TITLE = "FILTER_TITLE",
+  FILTER_YEAR_PUBLISHED = "FILTER_YEAR_PUBLISHED",
+  SHOW_MORE = "SHOW_MORE",
+  SORT = "SORT",
+}
+
+export type ActionType =
+  | FilterAuthorAction
+  | FilterKindAction
+  | FilterTitleAction
+  | FilterYearPublishedAction
+  | ShowMoreAction
+  | SortAction;
+
+type FilterAuthorAction = {
+  type: Actions.FILTER_AUTHOR;
+  value: string;
+};
+
+type FilterKindAction = {
+  type: Actions.FILTER_KIND;
+  value: string;
+};
+
+type FilterTitleAction = {
+  type: Actions.FILTER_TITLE;
+  value: string;
+};
+
+type FilterYearPublishedAction = {
+  type: Actions.FILTER_YEAR_PUBLISHED;
+  values: [string, string];
+};
+type ShowMoreAction = {
+  type: Actions.SHOW_MORE;
+};
+
+type SortAction = {
+  type: Actions.SORT;
+  value: Sort;
+};
 
 export function initState({
   initialSort,
@@ -81,51 +126,6 @@ export function initState({
     sortValue: initialSort,
   };
 }
-
-export enum Actions {
-  FILTER_AUTHOR = "FILTER_AUTHOR",
-  FILTER_KIND = "FILTER_KIND",
-  FILTER_TITLE = "FILTER_TITLE",
-  FILTER_YEAR_PUBLISHED = "FILTER_YEAR_PUBLISHED",
-  SHOW_MORE = "SHOW_MORE",
-  SORT = "SORT",
-}
-
-type FilterTitleAction = {
-  type: Actions.FILTER_TITLE;
-  value: string;
-};
-
-type FilterKindAction = {
-  type: Actions.FILTER_KIND;
-  value: string;
-};
-
-type FilterAuthorAction = {
-  type: Actions.FILTER_AUTHOR;
-  value: string;
-};
-
-type FilterYearPublishedAction = {
-  type: Actions.FILTER_YEAR_PUBLISHED;
-  values: [string, string];
-};
-type SortAction = {
-  type: Actions.SORT;
-  value: Sort;
-};
-
-type ShowMoreAction = {
-  type: Actions.SHOW_MORE;
-};
-
-export type ActionType =
-  | FilterAuthorAction
-  | FilterKindAction
-  | FilterTitleAction
-  | FilterYearPublishedAction
-  | ShowMoreAction
-  | SortAction;
 
 export function reducer(state: State, action: ActionType): State {
   let filteredValues;

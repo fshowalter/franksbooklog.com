@@ -104,22 +104,6 @@ export function Review({
   );
 }
 
-function YearAndKind({
-  className,
-  kind,
-  yearPublished,
-}: {
-  className: string;
-  kind: ReviewWithContent["kind"];
-  yearPublished: ReviewWithContent["yearPublished"];
-}) {
-  return (
-    <div className={className}>
-      <span className="tracking-wide">{yearPublished}</span> | {kind}
-    </div>
-  );
-}
-
 function Authors({
   className,
   values,
@@ -190,4 +174,20 @@ function ReviewGrade({ value }: { value: ReviewWithContent["grade"] }) {
     );
   }
   return <Grade height={32} value={value} />;
+}
+
+function YearAndKind({
+  className,
+  kind,
+  yearPublished,
+}: {
+  className: string;
+  kind: ReviewWithContent["kind"];
+  yearPublished: ReviewWithContent["yearPublished"];
+}) {
+  return (
+    <div className={className}>
+      <span className="tracking-wide">{yearPublished}</span> | {kind}
+    </div>
+  );
 }

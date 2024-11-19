@@ -18,6 +18,24 @@ import type { Sort } from "./Readings.reducer";
 import { Filters } from "./Filters";
 import { Actions, initState, reducer } from "./Readings.reducer";
 
+export type ListItemValue = Pick<
+  TimelineEntry,
+  | "authors"
+  | "edition"
+  | "kind"
+  | "progress"
+  | "reviewed"
+  | "sequence"
+  | "slug"
+  | "title"
+  | "yearPublished"
+> & {
+  coverImageProps: CoverImageProps;
+  readingDate: string;
+  readingDay: string;
+  readingMonth: string;
+  readingYear: string;
+};
 export type Props = {
   abandonedCount: number;
   bookCount: number;
@@ -31,24 +49,6 @@ export type Props = {
   values: ListItemValue[];
   workCount: number;
 };
-export type ListItemValue = {
-  coverImageProps: CoverImageProps;
-  readingDate: string;
-  readingDay: string;
-  readingMonth: string;
-  readingYear: string;
-} & Pick<
-  TimelineEntry,
-  | "authors"
-  | "edition"
-  | "kind"
-  | "progress"
-  | "reviewed"
-  | "sequence"
-  | "slug"
-  | "title"
-  | "yearPublished"
->;
 
 export function Readings({
   deck,
@@ -109,6 +109,19 @@ export function Readings({
   );
 }
 
+function Authors({
+  className,
+  values,
+}: {
+  className: string;
+  values: ListItemValue["authors"];
+}) {
+  return (
+    <div className={className}>
+      {toSentenceArray(values.map((author) => author.name))}
+    </div>
+  );
+}
 function DateListItem({
   dayAndDate,
   values,
@@ -138,6 +151,21 @@ function DateListItem({
     </li>
   );
 }
+
+function parseProgress(progress: string) {
+  const progressNumber = progress.split("%", 1)[0];
+
+  if (progressNumber === "Finished") {
+    return 100;
+  }
+
+  if (!Number.isNaN(Number(progressNumber))) {
+    return Number.parseInt(progressNumber);
+  }
+
+  return 100;
+}
+
 function ReadingListItem({ value }: { value: ListItemValue }): JSX.Element {
   const progressValue = parseProgress(value.progress);
 
@@ -177,20 +205,6 @@ function ReadingListItem({ value }: { value: ListItemValue }): JSX.Element {
   );
 }
 
-function parseProgress(progress: string) {
-  const progressNumber = progress.split("%", 1)[0];
-
-  if (progressNumber === "Finished") {
-    return 100;
-  }
-
-  if (!Number.isNaN(Number(progressNumber))) {
-    return Number.parseInt(progressNumber);
-  }
-
-  return 100;
-}
-
 function TitleAndProgress({
   progress,
   reviewed,
@@ -221,19 +235,5 @@ function TitleAndProgress({
     <span className="block font-sans text-sm font-normal text-muted">
       {title}&#8239;&#8239;{progressBox}
     </span>
-  );
-}
-
-function Authors({
-  className,
-  values,
-}: {
-  className: string;
-  values: ListItemValue["authors"];
-}) {
-  return (
-    <div className={className}>
-      {toSentenceArray(values.map((author) => author.name))}
-    </div>
   );
 }

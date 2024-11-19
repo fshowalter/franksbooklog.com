@@ -1,5 +1,35 @@
 import { ccn } from "~/utils/concatClassNames";
 
+export function StatsNavigation({
+  className,
+  currentYear,
+  linkFunc,
+  years,
+}: {
+  className?: string;
+  currentYear: string;
+  linkFunc: (year: string) => string;
+  years: readonly string[];
+}): JSX.Element {
+  return (
+    <nav className={ccn("bg-footer", className)}>
+      <ul className="scrollbar-hidden mx-auto flex max-w-screen-max overflow-x-auto px-container font-sans text-sm font-normal tracking-wide desktop:justify-center">
+        <AllTimeLink currentYear={currentYear} linkFunc={linkFunc} />
+        {[...years].reverse().map((year) => {
+          return (
+            <YearLink
+              currentYear={currentYear}
+              key={year}
+              linkFunc={linkFunc}
+              year={year}
+            />
+          );
+        })}
+      </ul>
+    </nav>
+  );
+}
+
 function AllTimeLink({
   currentYear,
   linkFunc,
@@ -51,35 +81,5 @@ function YearLink({
         </a>
       )}
     </li>
-  );
-}
-
-export function StatsNavigation({
-  className,
-  currentYear,
-  linkFunc,
-  years,
-}: {
-  className?: string;
-  currentYear: string;
-  linkFunc: (year: string) => string;
-  years: readonly string[];
-}): JSX.Element {
-  return (
-    <nav className={ccn("bg-footer", className)}>
-      <ul className="scrollbar-hidden mx-auto flex max-w-screen-max overflow-x-auto px-container font-sans text-sm font-normal tracking-wide desktop:justify-center">
-        <AllTimeLink currentYear={currentYear} linkFunc={linkFunc} />
-        {[...years].reverse().map((year) => {
-          return (
-            <YearLink
-              currentYear={currentYear}
-              key={year}
-              linkFunc={linkFunc}
-              year={year}
-            />
-          );
-        })}
-      </ul>
-    </nav>
   );
 }

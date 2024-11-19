@@ -61,6 +61,8 @@ const yearFormat = new Intl.DateTimeFormat("en-US", {
   year: "numeric",
 });
 
+type State = FilterableState<ListItemValue, Sort, Map<string, ListItemValue[]>>;
+
 function groupForValue(value: ListItemValue, sortValue: Sort): string {
   switch (sortValue) {
     case "author-asc":
@@ -93,9 +95,52 @@ function groupForValue(value: ListItemValue, sortValue: Sort): string {
   }
 }
 
-type State = FilterableState<ListItemValue, Sort, Map<string, ListItemValue[]>>;
-
 const SHOW_COUNT_DEFAULT = 100;
+
+export enum Actions {
+  FILTER_KIND = "FILTER_KIND",
+  FILTER_TITLE = "FILTER_TITLE",
+  FILTER_YEAR_PUBLISHED = "FILTER_YEAR_PUBLISHED",
+  FILTER_YEAR_REVIEWED = "FILTER_YEAR_REVIEWED",
+  SHOW_MORE = "SHOW_MORE",
+  SORT = "SORT",
+}
+
+export type ActionType =
+  | FilterKindAction
+  | FilterTitleAction
+  | FilterYearPublishedAction
+  | FilterYearReviewedAction
+  | ShowMoreAction
+  | SortAction;
+
+type FilterKindAction = {
+  type: Actions.FILTER_KIND;
+  value: string;
+};
+
+type FilterTitleAction = {
+  type: Actions.FILTER_TITLE;
+  value: string;
+};
+
+type FilterYearPublishedAction = {
+  type: Actions.FILTER_YEAR_PUBLISHED;
+  values: [string, string];
+};
+
+type FilterYearReviewedAction = {
+  type: Actions.FILTER_YEAR_REVIEWED;
+  values: [string, string];
+};
+type ShowMoreAction = {
+  type: Actions.SHOW_MORE;
+};
+
+type SortAction = {
+  type: Actions.SORT;
+  value: Sort;
+};
 
 export function initState({
   initialSort,
@@ -116,51 +161,6 @@ export function initState({
     sortValue: initialSort,
   };
 }
-
-export enum Actions {
-  FILTER_KIND = "FILTER_KIND",
-  FILTER_TITLE = "FILTER_TITLE",
-  FILTER_YEAR_PUBLISHED = "FILTER_YEAR_PUBLISHED",
-  FILTER_YEAR_REVIEWED = "FILTER_YEAR_REVIEWED",
-  SHOW_MORE = "SHOW_MORE",
-  SORT = "SORT",
-}
-
-type FilterTitleAction = {
-  type: Actions.FILTER_TITLE;
-  value: string;
-};
-
-type FilterKindAction = {
-  type: Actions.FILTER_KIND;
-  value: string;
-};
-
-type FilterYearReviewedAction = {
-  type: Actions.FILTER_YEAR_REVIEWED;
-  values: [string, string];
-};
-
-type FilterYearPublishedAction = {
-  type: Actions.FILTER_YEAR_PUBLISHED;
-  values: [string, string];
-};
-type SortAction = {
-  type: Actions.SORT;
-  value: Sort;
-};
-
-type ShowMoreAction = {
-  type: Actions.SHOW_MORE;
-};
-
-export type ActionType =
-  | FilterKindAction
-  | FilterTitleAction
-  | FilterYearPublishedAction
-  | FilterYearReviewedAction
-  | ShowMoreAction
-  | SortAction;
 
 export function reducer(state: State, action: ActionType): State {
   let filteredValues;

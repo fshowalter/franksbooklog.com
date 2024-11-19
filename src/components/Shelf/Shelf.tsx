@@ -18,15 +18,13 @@ import { Filters } from "./Filters";
 import { initState, reducer } from "./Shelf.reducer";
 import { Actions } from "./Shelf.reducer";
 
-type Author = {} & Pick<
-  ShelfWork["authors"][number],
-  "name" | "notes" | "sortName"
->;
-
-export type ListItemValue = {
+export type ListItemValue = Pick<
+  ShelfWork,
+  "kind" | "slug" | "sortTitle" | "title" | "yearPublished"
+> & {
   authors: Author[];
   coverImageProps: CoverImageProps;
-} & Pick<ShelfWork, "kind" | "slug" | "sortTitle" | "title" | "yearPublished">;
+};
 
 export type Props = {
   deck: string;
@@ -36,6 +34,11 @@ export type Props = {
   initialSort: Sort;
   values: ListItemValue[];
 };
+
+type Author = Pick<
+  ShelfWork["authors"][number],
+  "name" | "notes" | "sortName"
+> & {};
 
 export function Shelf({
   deck,
@@ -84,6 +87,20 @@ export function Shelf({
   );
 }
 
+function Authors({
+  className,
+  values,
+}: {
+  className: string;
+  values: ListItemValue["authors"];
+}) {
+  return (
+    <div className={className}>
+      {toSentenceArray(values.map((value) => value.name))}
+    </div>
+  );
+}
+
 function ShelfListItem({ value }: { value: ListItemValue }): JSX.Element {
   return (
     <ListItem background="bg-unreviewed">
@@ -97,19 +114,5 @@ function ShelfListItem({ value }: { value: ListItemValue }): JSX.Element {
         <ListItemKindAndYear kind={value.kind} year={value.yearPublished} />
       </div>
     </ListItem>
-  );
-}
-
-function Authors({
-  className,
-  values,
-}: {
-  className: string;
-  values: ListItemValue["authors"];
-}) {
-  return (
-    <div className={className}>
-      {toSentenceArray(values.map((value) => value.name))}
-    </div>
   );
 }

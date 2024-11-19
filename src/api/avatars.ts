@@ -14,13 +14,29 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
   "/content/assets/avatars/*.png",
 );
 
-function avatarPath(slug: string) {
-  const avatarPath = path.resolve(`./content/assets/avatars/${slug}.png`);
-  if (fs.existsSync(avatarPath)) {
-    return avatarPath;
+export async function getAvatarImageProps(
+  slug: string,
+  { height, width }: { height: number; width: number },
+): Promise<AvatarImageProps | undefined> {
+  const avatarFile = await getAvatarFile(slug);
+
+  if (!avatarFile) {
+    return;
   }
 
-  return;
+  const optimizedImage = await getImage({
+    densities: [1, 2],
+    format: "avif",
+    height: height,
+    quality: 80,
+    src: avatarFile.default,
+    width: width,
+  });
+
+  return {
+    src: normalizeSources(optimizedImage.src),
+    srcSet: normalizeSources(optimizedImage.srcSet.attribute),
+  };
 }
 
 export async function getOpenGraphAvatarAsBase64String(slug: string) {
@@ -45,6 +61,15 @@ export async function getOpenGraphAvatarAsBase64String(slug: string) {
   return `data:${"image/png"};base64,${imageBuffer.toString("base64")}`;
 }
 
+function avatarPath(slug: string) {
+  const avatarPath = path.resolve(`./content/assets/avatars/${slug}.png`);
+  if (fs.existsSync(avatarPath)) {
+    return avatarPath;
+  }
+
+  return;
+}
+
 async function getAvatarFile(slug: string) {
   const imagePath = Object.keys(images).find((path) => {
     return path.endsWith(`${slug}.png`);
@@ -55,29 +80,4 @@ async function getAvatarFile(slug: string) {
   }
 
   return await images[imagePath]();
-}
-
-export async function getAvatarImageProps(
-  slug: string,
-  { height, width }: { height: number; width: number },
-): Promise<AvatarImageProps | undefined> {
-  const avatarFile = await getAvatarFile(slug);
-
-  if (!avatarFile) {
-    return;
-  }
-
-  const optimizedImage = await getImage({
-    densities: [1, 2],
-    format: "avif",
-    height: height,
-    quality: 80,
-    src: avatarFile.default,
-    width: width,
-  });
-
-  return {
-    src: normalizeSources(optimizedImage.src),
-    srcSet: normalizeSources(optimizedImage.srcSet.attribute),
-  };
 }

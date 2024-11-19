@@ -17,6 +17,10 @@ const DataSchema = z.object({
   title: z.string(),
 });
 
+export async function allPagesMarkdown(): Promise<MarkdownPage[]> {
+  return await parseAllPagesMarkdown();
+}
+
 async function parseAllPagesMarkdown() {
   const dirents = await fs.readdir(pagesMarkdownDirectory, {
     withFileTypes: true,
@@ -43,8 +47,4 @@ async function parseAllPagesMarkdown() {
         return markdownPage;
       }),
   );
-}
-
-export async function allPagesMarkdown(): Promise<MarkdownPage[]> {
-  return await parseAllPagesMarkdown();
 }

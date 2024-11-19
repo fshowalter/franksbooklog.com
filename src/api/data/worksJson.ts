@@ -50,6 +50,10 @@ const WorkJsonSchema = z
 
 export type WorkJson = z.infer<typeof WorkJsonSchema>;
 
+export async function allWorksJson(): Promise<WorkJson[]> {
+  return await parseAllWorksJson();
+}
+
 async function parseAllWorksJson() {
   const json = await fs.readFile(worksJsonFile, "utf8");
   const data = JSON.parse(json) as unknown[];
@@ -57,8 +61,4 @@ async function parseAllWorksJson() {
   return data.map((item) => {
     return WorkJsonSchema.parse(item);
   });
-}
-
-export async function allWorksJson(): Promise<WorkJson[]> {
-  return await parseAllWorksJson();
 }

@@ -2,7 +2,7 @@ import type { UnreviewedWorkJson } from "./data/unreviewedWorksJson";
 
 import { allUnreviewedWorksJson } from "./data/unreviewedWorksJson";
 
-export type ShelfWork = {} & UnreviewedWorkJson;
+export type ShelfWork = UnreviewedWorkJson & {};
 
 type Shelf = {
   distinctAuthors: string[];
@@ -10,6 +10,13 @@ type Shelf = {
   distinctPublishedYears: string[];
   works: ShelfWork[];
 };
+
+export async function allShelfWorks(): Promise<Shelf> {
+  const unreviewedWorksJson = await allUnreviewedWorksJson();
+  const shelfWorks = parseUnreviewedWorksJson(unreviewedWorksJson);
+
+  return shelfWorks;
+}
 
 function parseUnreviewedWorksJson(
   unreviewedWorksJson: UnreviewedWorkJson[],
@@ -36,11 +43,4 @@ function parseUnreviewedWorksJson(
     distinctPublishedYears: [...distinctPublishedYears].toSorted(),
     works,
   };
-}
-
-export async function allShelfWorks(): Promise<Shelf> {
-  const unreviewedWorksJson = await allUnreviewedWorksJson();
-  const shelfWorks = parseUnreviewedWorksJson(unreviewedWorksJson);
-
-  return shelfWorks;
 }

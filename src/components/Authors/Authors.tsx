@@ -13,12 +13,12 @@ import type { Sort } from "./Authors.reducer";
 
 import { Actions, initState, reducer } from "./Authors.reducer";
 import { Filters } from "./Filters";
-export type ListItemValue = {
-  avatarImageProps: AvatarImageProps | undefined;
-} & Pick<
+export type ListItemValue = Pick<
   Author,
   "name" | "reviewedWorkCount" | "slug" | "sortName" | "workCount"
->;
+> & {
+  avatarImageProps: AvatarImageProps | undefined;
+};
 
 export type Props = {
   deck: string;

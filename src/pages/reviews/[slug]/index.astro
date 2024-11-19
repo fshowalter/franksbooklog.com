@@ -5,6 +5,10 @@ import { Review } from "~/components/Review/Review";
 import Layout from "~/layouts/Layout.astro";
 import { toSentenceArray } from "~/utils";
 
+interface Props {
+  slug: string;
+}
+
 export async function getStaticPaths() {
   const { reviews } = await allReviews();
 
@@ -20,10 +24,6 @@ export async function getStaticPaths() {
       };
     }),
   );
-}
-
-interface Props {
-  slug: string;
 }
 
 const { slug } = Astro.props;

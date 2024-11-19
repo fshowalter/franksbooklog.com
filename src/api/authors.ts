@@ -1,16 +1,16 @@
 import { allAuthorsJson, type AuthorJson } from "./data/authorsJson";
 
-export type Author = {} & AuthorJson;
-
-export async function allAuthors(): Promise<Author[]> {
-  return await allAuthorsJson();
-}
+export type Author = AuthorJson & {};
 
 type AuthorDetails = {
   author: Author;
   distinctKinds: string[];
   distinctPublishedYears: string[];
 };
+
+export async function allAuthors(): Promise<Author[]> {
+  return await allAuthorsJson();
+}
 
 export async function getAuthorDetails(slug: string): Promise<AuthorDetails> {
   const authors = await allAuthorsJson();

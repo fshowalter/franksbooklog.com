@@ -25,8 +25,6 @@ const DataSchema = z
     return { edition, edition_notes, sequence, timeline, work_slug };
   });
 
-type TimelineEntry = z.infer<typeof TimelineEntrySchema>;
-
 export type MarkdownReading = {
   edition: string;
   editionNotesRaw: string | undefined;
@@ -35,6 +33,12 @@ export type MarkdownReading = {
   slug: string;
   timeline: TimelineEntry[];
 };
+
+type TimelineEntry = z.infer<typeof TimelineEntrySchema>;
+
+export async function allReadingsMarkdown(): Promise<MarkdownReading[]> {
+  return await parseAllReadingsMarkdown();
+}
 
 async function parseAllReadingsMarkdown() {
   const dirents = await fs.readdir(readingsMarkdownDirectory, {
@@ -65,8 +69,4 @@ async function parseAllReadingsMarkdown() {
         return markdownReading;
       }),
   );
-}
-
-export async function allReadingsMarkdown(): Promise<MarkdownReading[]> {
-  return await parseAllReadingsMarkdown();
 }

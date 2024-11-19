@@ -115,9 +115,13 @@ const ReviewedWorkJsonSchema = z
     },
   );
 
+export type ReviewedWorkJson = z.infer<typeof ReviewedWorkJsonSchema>;
+
 export type ReviewedWorkJsonReading = z.infer<typeof ReadingSchema>;
 
-export type ReviewedWorkJson = z.infer<typeof ReviewedWorkJsonSchema>;
+export async function allReviewedWorksJson(): Promise<ReviewedWorkJson[]> {
+  return await parseAllReviewedWorksJson();
+}
 
 async function parseAllReviewedWorksJson() {
   const json = await fs.readFile(reviewedWorksJsonFile, "utf8");
@@ -126,8 +130,4 @@ async function parseAllReviewedWorksJson() {
   return data.map((item) => {
     return ReviewedWorkJsonSchema.parse(item);
   });
-}
-
-export async function allReviewedWorksJson(): Promise<ReviewedWorkJson[]> {
-  return await parseAllReviewedWorksJson();
 }

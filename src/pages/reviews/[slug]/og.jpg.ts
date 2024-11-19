@@ -9,6 +9,8 @@ import { fileForGrade } from "~/components/Grade";
 import { OpenGraphImage } from "~/components/Review/OpenGraphImage";
 import { componentToImage } from "~/utils/componentToImage";
 
+type Props = InferGetStaticPropsType<typeof getStaticPaths>;
+
 export async function getStaticPaths() {
   const { reviews } = await allReviews();
 
@@ -23,8 +25,6 @@ export async function getStaticPaths() {
     };
   });
 }
-
-type Props = InferGetStaticPropsType<typeof getStaticPaths>;
 
 export const GET: APIRoute = async function get({ props }) {
   const { work } = props as Props;

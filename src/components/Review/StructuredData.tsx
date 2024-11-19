@@ -1,8 +1,8 @@
 import type { ReviewWithContent } from "~/api/reviews";
 
-type Props = {
+type Props = Pick<ReviewWithContent, "grade" | "title"> & {
   coverImgSrc: string;
-} & Pick<ReviewWithContent, "grade" | "title">;
+};
 
 export function StructuredData({ coverImgSrc, grade, title }: Props) {
   const structuredData = buildStructuredData(title, grade, coverImgSrc);

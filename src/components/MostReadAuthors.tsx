@@ -4,6 +4,13 @@ import { ListItem } from "./ListItem";
 import { ListItemCover } from "./ListItemCover";
 import { ListItemTitle } from "./ListItemTitle";
 
+type MostReadAuthorsValue = {
+  count: number;
+  name: string;
+  readings: ReadingSubListItemValue[];
+  slug: string | undefined;
+};
+
 type ReadingSubListItemValue = {
   coverImageProps: CoverImageProps;
   date: string;
@@ -14,13 +21,6 @@ type ReadingSubListItemValue = {
   slug: string | undefined;
   title: string;
   yearPublished: string;
-};
-
-type MostReadAuthorsValue = {
-  count: number;
-  name: string;
-  readings: ReadingSubListItemValue[];
-  slug: string | undefined;
 };
 
 export function MostReadAuthors({

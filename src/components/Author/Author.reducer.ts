@@ -24,23 +24,13 @@ const { applyFilters, clearFilter, updateFilter } = filterTools(
   groupValues,
 );
 
-function sortValues(values: ListItemValue[], sortOrder: Sort) {
-  const sortMap: Record<Sort, (a: ListItemValue, b: ListItemValue) => number> =
-    {
-      "grade-asc": (a, b) => sortNumber(a.gradeValue ?? -1, b.gradeValue ?? -1),
-      "grade-desc": (a, b) =>
-        sortNumber(a.gradeValue ?? -1, b.gradeValue ?? -1) * -1,
-      "title-asc": (a, b) => collator.compare(a.sortTitle, b.sortTitle),
-      "title-desc": (a, b) => collator.compare(a.sortTitle, b.sortTitle) * -1,
-      "year-published-asc": (a, b) =>
-        sortString(a.yearPublished, b.yearPublished),
-      "year-published-desc": (a, b) =>
-        sortString(a.yearPublished, b.yearPublished) * -1,
-    };
-
-  const comparer = sortMap[sortOrder];
-  return values.sort(comparer);
-}
+type State = FilterableState<
+  ListItemValue,
+  Sort,
+  Map<string, ListItemValue[]>
+> & {
+  hideReviewed: boolean;
+};
 
 function groupForValue(value: ListItemValue, sortValue: Sort): string {
   switch (sortValue) {
@@ -66,11 +56,69 @@ function groupForValue(value: ListItemValue, sortValue: Sort): string {
   }
 }
 
-type State = {
-  hideReviewed: boolean;
-} & FilterableState<ListItemValue, Sort, Map<string, ListItemValue[]>>;
+function sortValues(values: ListItemValue[], sortOrder: Sort) {
+  const sortMap: Record<Sort, (a: ListItemValue, b: ListItemValue) => number> =
+    {
+      "grade-asc": (a, b) => sortNumber(a.gradeValue ?? -1, b.gradeValue ?? -1),
+      "grade-desc": (a, b) =>
+        sortNumber(a.gradeValue ?? -1, b.gradeValue ?? -1) * -1,
+      "title-asc": (a, b) => collator.compare(a.sortTitle, b.sortTitle),
+      "title-desc": (a, b) => collator.compare(a.sortTitle, b.sortTitle) * -1,
+      "year-published-asc": (a, b) =>
+        sortString(a.yearPublished, b.yearPublished),
+      "year-published-desc": (a, b) =>
+        sortString(a.yearPublished, b.yearPublished) * -1,
+    };
+
+  const comparer = sortMap[sortOrder];
+  return values.sort(comparer);
+}
 
 const SHOW_COUNT_DEFAULT = 100;
+
+export enum Actions {
+  FILTER_KIND = "FILTER_KIND",
+  FILTER_TITLE = "FILTER_TITLE",
+  FILTER_YEAR_PUBLISHED = "FILTER_YEAR_PUBLISHED",
+  SHOW_MORE = "SHOW_MORE",
+  SORT = "SORT",
+  TOGGLE_REVIEWED = "TOGGLE_REVIEWED",
+}
+
+export type ActionType =
+  | FilterKindAction
+  | FilterTitleAction
+  | FilterYearPublishedAction
+  | ShowMoreAction
+  | SortAction
+  | ToggleReviewedAction;
+
+type FilterKindAction = {
+  type: Actions.FILTER_KIND;
+  value: string;
+};
+
+type FilterTitleAction = {
+  type: Actions.FILTER_TITLE;
+  value: string;
+};
+
+type FilterYearPublishedAction = {
+  type: Actions.FILTER_YEAR_PUBLISHED;
+  values: [string, string];
+};
+
+type ShowMoreAction = {
+  type: Actions.SHOW_MORE;
+};
+type SortAction = {
+  type: Actions.SORT;
+  value: Sort;
+};
+
+type ToggleReviewedAction = {
+  type: Actions.TOGGLE_REVIEWED;
+};
 
 export function initState({
   initialSort,
@@ -92,50 +140,6 @@ export function initState({
     sortValue: initialSort,
   };
 }
-
-export enum Actions {
-  FILTER_KIND = "FILTER_KIND",
-  FILTER_TITLE = "FILTER_TITLE",
-  FILTER_YEAR_PUBLISHED = "FILTER_YEAR_PUBLISHED",
-  SHOW_MORE = "SHOW_MORE",
-  SORT = "SORT",
-  TOGGLE_REVIEWED = "TOGGLE_REVIEWED",
-}
-
-type FilterTitleAction = {
-  type: Actions.FILTER_TITLE;
-  value: string;
-};
-
-type FilterKindAction = {
-  type: Actions.FILTER_KIND;
-  value: string;
-};
-
-type ToggleReviewedAction = {
-  type: Actions.TOGGLE_REVIEWED;
-};
-
-type FilterYearPublishedAction = {
-  type: Actions.FILTER_YEAR_PUBLISHED;
-  values: [string, string];
-};
-type SortAction = {
-  type: Actions.SORT;
-  value: Sort;
-};
-
-type ShowMoreAction = {
-  type: Actions.SHOW_MORE;
-};
-
-export type ActionType =
-  | FilterKindAction
-  | FilterTitleAction
-  | FilterYearPublishedAction
-  | ShowMoreAction
-  | SortAction
-  | ToggleReviewedAction;
 
 export function reducer(state: State, action: ActionType): State {
   let filters;

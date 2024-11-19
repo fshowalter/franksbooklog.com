@@ -2,26 +2,6 @@ import type { AvatarImageProps } from "~/api/avatars";
 
 import { Avatar } from "./Avatar";
 
-export function SolidBackdrop({
-  breadcrumb,
-  deck,
-  title,
-  titleStyle,
-}: {
-  breadcrumb?: React.ReactNode;
-  deck: React.ReactNode;
-  title: string;
-  titleStyle?: string;
-}) {
-  return (
-    <Wrapper size="small">
-      <Breadcrumb value={breadcrumb} />
-      <Title className={titleStyle} value={title} />
-      <Deck value={deck} />
-    </Wrapper>
-  );
-}
-
 export function AvatarBackdrop({
   avatarImageProps,
   breadcrumb,
@@ -49,6 +29,81 @@ export function AvatarBackdrop({
       <Title center={true} value={name} />
       <Deck center={true} subtle={true} value={deck} />
     </Wrapper>
+  );
+}
+
+export function SolidBackdrop({
+  breadcrumb,
+  deck,
+  title,
+  titleStyle,
+}: {
+  breadcrumb?: React.ReactNode;
+  deck: React.ReactNode;
+  title: string;
+  titleStyle?: string;
+}) {
+  return (
+    <Wrapper size="small">
+      <Breadcrumb value={breadcrumb} />
+      <Title className={titleStyle} value={title} />
+      <Deck value={deck} />
+    </Wrapper>
+  );
+}
+
+function Breadcrumb({ value }: { value?: React.ReactNode }) {
+  if (!value) {
+    return false;
+  }
+
+  return (
+    <p className="mb-2 font-sans text-sm uppercase tracking-wide text-subtle">
+      {value}
+    </p>
+  );
+}
+
+function Deck({
+  center,
+  subtle,
+  value,
+}: {
+  center?: boolean;
+  subtle?: boolean;
+  value?: React.ReactNode;
+}) {
+  if (!value) {
+    return false;
+  }
+
+  return (
+    <p
+      className={`mt-1 text-base desktop:my-4 desktop:text-xl ${center ? "text-center" : ""} ${subtle ? "text-subtle" : ""}`}
+    >
+      {value}
+    </p>
+  );
+}
+
+function Title({
+  center,
+  className,
+  value,
+}: {
+  center?: boolean;
+  className?: string;
+  value: string;
+}) {
+  return (
+    <h1
+      className={
+        className ||
+        `font-sans ${center ? "text-center" : ""} text-3xl font-bold uppercase tracking-widest tablet:text-4xl tablet-landscape:text-5xl desktop:text-7xl`
+      }
+    >
+      {value}
+    </h1>
   );
 }
 
@@ -88,60 +143,5 @@ function Wrapper({
         {children}
       </div>
     </header>
-  );
-}
-
-function Title({
-  center,
-  className,
-  value,
-}: {
-  center?: boolean;
-  className?: string;
-  value: string;
-}) {
-  return (
-    <h1
-      className={
-        className ||
-        `font-sans ${center ? "text-center" : ""} text-3xl font-bold uppercase tracking-widest tablet:text-4xl tablet-landscape:text-5xl desktop:text-7xl`
-      }
-    >
-      {value}
-    </h1>
-  );
-}
-
-function Breadcrumb({ value }: { value?: React.ReactNode }) {
-  if (!value) {
-    return false;
-  }
-
-  return (
-    <p className="mb-2 font-sans text-sm uppercase tracking-wide text-subtle">
-      {value}
-    </p>
-  );
-}
-
-function Deck({
-  center,
-  subtle,
-  value,
-}: {
-  center?: boolean;
-  subtle?: boolean;
-  value?: React.ReactNode;
-}) {
-  if (!value) {
-    return false;
-  }
-
-  return (
-    <p
-      className={`mt-1 text-base desktop:my-4 desktop:text-xl ${center ? "text-center" : ""} ${subtle ? "text-subtle" : ""}`}
-    >
-      {value}
-    </p>
   );
 }
