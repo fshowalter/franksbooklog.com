@@ -15,7 +15,7 @@ describe("/feed.xml", () => {
 
     const result = await response.text();
 
-    void expect(
+    await expect(
       await prettier.format(result, {
         parser: "xml",
         plugins: ["@prettier/plugin-xml"],
