@@ -6,7 +6,7 @@ import { loadRenderers } from "astro:container";
 import * as prettier from "prettier";
 import { describe, it } from "vitest";
 
-import { normalizeScriptSrc } from "~/utils/nomalizeScriptSrc";
+import { normalizeScriptSrc } from "~/utils/normalizeScriptSrc";
 
 import Index from "./index.astro";
 

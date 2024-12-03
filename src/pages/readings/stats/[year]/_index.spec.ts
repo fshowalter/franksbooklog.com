@@ -7,7 +7,7 @@ import * as prettier from "prettier";
 import { describe, it } from "vitest";
 
 import { allStatYears } from "~/api/yearStats";
-import { normalizeScriptSrc } from "~/utils/nomalizeScriptSrc";
+import { normalizeScriptSrc } from "~/utils/normalizeScriptSrc";
 
 import YearStats from "./index.astro";
 
