@@ -6,6 +6,8 @@ import { loadRenderers } from "astro:container";
 import * as prettier from "prettier";
 import { describe, it } from "vitest";
 
+import { normalizeScriptSrc } from "~/utils/normalizeScriptSrc";
+
 import Index from "./index.astro";
 
 describe("/authors/", () => {
@@ -25,7 +27,9 @@ describe("/authors/", () => {
     );
 
     await expect(
-      await prettier.format(result, { filepath: "index.html" }),
+      await prettier.format(normalizeScriptSrc(result), {
+        filepath: "index.html",
+      }),
     ).toMatchFileSnapshot(`__snapshots__/index.html`);
   });
 });

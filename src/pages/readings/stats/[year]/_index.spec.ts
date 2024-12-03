@@ -7,6 +7,7 @@ import * as prettier from "prettier";
 import { describe, it } from "vitest";
 
 import { allStatYears } from "~/api/yearStats";
+import { normalizeScriptSrc } from "~/utils/normalizeScriptSrc";
 
 import YearStats from "./index.astro";
 
@@ -31,7 +32,9 @@ describe("/readings/stats/:year", () => {
       );
 
       await expect(
-        await prettier.format(result, { filepath: "index.html" }),
+        await prettier.format(normalizeScriptSrc(result), {
+          filepath: "index.html",
+        }),
       ).toMatchFileSnapshot(`__snapshots__/${year}.html`);
     },
   );

@@ -32,8 +32,8 @@ exports[`Authors > can filter by name 1`] = `
               class="w-full"
               height="80"
               loading="lazy"
-              src="/_image?/content%2Fassets%2Favatars%2Fbram-stoker.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
-              srcset="/_image?/content%2Fassets%2Favatars%2Fbram-stoker.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&q=80&f=avif 1x, /_image?/content%2Fassets%2Favatars%2Fbram-stoker.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&q=80&f=avif 2x"
+              src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fbram-stoker.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fbram-stoker.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fbram-stoker.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&h=160&q=80&f=avif 2x"
               width="80"
             />
           </div>
@@ -220,8 +220,8 @@ exports[`Authors > can sort by name a->z 1`] = `
               class="w-full"
               height="80"
               loading="lazy"
-              src="/_image?/content%2Fassets%2Favatars%2Fraymond-chandler.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
-              srcset="/_image?/content%2Fassets%2Favatars%2Fraymond-chandler.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&q=80&f=avif 1x, /_image?/content%2Fassets%2Favatars%2Fraymond-chandler.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&q=80&f=avif 2x"
+              src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fraymond-chandler.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fraymond-chandler.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fraymond-chandler.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&h=160&q=80&f=avif 2x"
               width="80"
             />
           </div>
@@ -327,8 +327,8 @@ exports[`Authors > can sort by name a->z 1`] = `
               class="w-full"
               height="80"
               loading="lazy"
-              src="/_image?/content%2Fassets%2Favatars%2Fbret-easton-ellis.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
-              srcset="/_image?/content%2Fassets%2Favatars%2Fbret-easton-ellis.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&q=80&f=avif 1x, /_image?/content%2Fassets%2Favatars%2Fbret-easton-ellis.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&q=80&f=avif 2x"
+              src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fbret-easton-ellis.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fbret-easton-ellis.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fbret-easton-ellis.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&h=160&q=80&f=avif 2x"
               width="80"
             />
           </div>
@@ -377,8 +377,8 @@ exports[`Authors > can sort by name a->z 1`] = `
               class="w-full"
               height="80"
               loading="lazy"
-              src="/_image?/content%2Fassets%2Favatars%2Fian-fleming.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
-              srcset="/_image?/content%2Fassets%2Favatars%2Fian-fleming.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&q=80&f=avif 1x, /_image?/content%2Fassets%2Favatars%2Fian-fleming.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&q=80&f=avif 2x"
+              src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fian-fleming.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fian-fleming.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fian-fleming.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&h=160&q=80&f=avif 2x"
               width="80"
             />
           </div>
@@ -407,8 +407,8 @@ exports[`Authors > can sort by name a->z 1`] = `
               class="w-full"
               height="80"
               loading="lazy"
-              src="/_image?/content%2Fassets%2Favatars%2Fphilip-fracassi.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
-              srcset="/_image?/content%2Fassets%2Favatars%2Fphilip-fracassi.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&q=80&f=avif 1x, /_image?/content%2Fassets%2Favatars%2Fphilip-fracassi.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&q=80&f=avif 2x"
+              src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fphilip-fracassi.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fphilip-fracassi.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fphilip-fracassi.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&h=160&q=80&f=avif 2x"
               width="80"
             />
           </div>
@@ -776,8 +776,8 @@ exports[`Authors > can sort by name a->z 1`] = `
               class="w-full"
               height="80"
               loading="lazy"
-              src="/_image?/content%2Fassets%2Favatars%2Fstephen-king.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
-              srcset="/_image?/content%2Fassets%2Favatars%2Fstephen-king.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&q=80&f=avif 1x, /_image?/content%2Fassets%2Favatars%2Fstephen-king.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&q=80&f=avif 2x"
+              src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fstephen-king.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fstephen-king.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fstephen-king.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&h=160&q=80&f=avif 2x"
               width="80"
             />
           </div>
@@ -863,8 +863,8 @@ exports[`Authors > can sort by name a->z 1`] = `
               class="w-full"
               height="80"
               loading="lazy"
-              src="/_image?/content%2Fassets%2Favatars%2Frichard-laymon.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
-              srcset="/_image?/content%2Fassets%2Favatars%2Frichard-laymon.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&q=80&f=avif 1x, /_image?/content%2Fassets%2Favatars%2Frichard-laymon.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&q=80&f=avif 2x"
+              src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Frichard-laymon.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Frichard-laymon.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Frichard-laymon.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&h=160&q=80&f=avif 2x"
               width="80"
             />
           </div>
@@ -1098,8 +1098,8 @@ exports[`Authors > can sort by name a->z 1`] = `
               class="w-full"
               height="80"
               loading="lazy"
-              src="/_image?/content%2Fassets%2Favatars%2Fstephen-morris.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
-              srcset="/_image?/content%2Fassets%2Favatars%2Fstephen-morris.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&q=80&f=avif 1x, /_image?/content%2Fassets%2Favatars%2Fstephen-morris.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&q=80&f=avif 2x"
+              src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fstephen-morris.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fstephen-morris.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fstephen-morris.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&h=160&q=80&f=avif 2x"
               width="80"
             />
           </div>
@@ -1205,8 +1205,8 @@ exports[`Authors > can sort by name a->z 1`] = `
               class="w-full"
               height="80"
               loading="lazy"
-              src="/_image?/content%2Fassets%2Favatars%2Fchuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
-              srcset="/_image?/content%2Fassets%2Favatars%2Fchuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&q=80&f=avif 1x, /_image?/content%2Fassets%2Favatars%2Fchuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&q=80&f=avif 2x"
+              src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fchuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fchuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fchuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&h=160&q=80&f=avif 2x"
               width="80"
             />
           </div>
@@ -1571,8 +1571,8 @@ exports[`Authors > can sort by name a->z 1`] = `
               class="w-full"
               height="80"
               loading="lazy"
-              src="/_image?/content%2Fassets%2Favatars%2Fbram-stoker.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
-              srcset="/_image?/content%2Fassets%2Favatars%2Fbram-stoker.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&q=80&f=avif 1x, /_image?/content%2Fassets%2Favatars%2Fbram-stoker.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&q=80&f=avif 2x"
+              src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fbram-stoker.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fbram-stoker.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fbram-stoker.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&h=160&q=80&f=avif 2x"
               width="80"
             />
           </div>
@@ -2116,8 +2116,8 @@ exports[`Authors > can sort by name z->a 1`] = `
               class="w-full"
               height="80"
               loading="lazy"
-              src="/_image?/content%2Fassets%2Favatars%2Fbram-stoker.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
-              srcset="/_image?/content%2Fassets%2Favatars%2Fbram-stoker.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&q=80&f=avif 1x, /_image?/content%2Fassets%2Favatars%2Fbram-stoker.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&q=80&f=avif 2x"
+              src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fbram-stoker.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fbram-stoker.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fbram-stoker.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&h=160&q=80&f=avif 2x"
               width="80"
             />
           </div>
@@ -2482,8 +2482,8 @@ exports[`Authors > can sort by name z->a 1`] = `
               class="w-full"
               height="80"
               loading="lazy"
-              src="/_image?/content%2Fassets%2Favatars%2Fchuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
-              srcset="/_image?/content%2Fassets%2Favatars%2Fchuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&q=80&f=avif 1x, /_image?/content%2Fassets%2Favatars%2Fchuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&q=80&f=avif 2x"
+              src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fchuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fchuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fchuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&h=160&q=80&f=avif 2x"
               width="80"
             />
           </div>
@@ -2589,8 +2589,8 @@ exports[`Authors > can sort by name z->a 1`] = `
               class="w-full"
               height="80"
               loading="lazy"
-              src="/_image?/content%2Fassets%2Favatars%2Fstephen-morris.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
-              srcset="/_image?/content%2Fassets%2Favatars%2Fstephen-morris.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&q=80&f=avif 1x, /_image?/content%2Fassets%2Favatars%2Fstephen-morris.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&q=80&f=avif 2x"
+              src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fstephen-morris.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fstephen-morris.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fstephen-morris.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&h=160&q=80&f=avif 2x"
               width="80"
             />
           </div>
@@ -2824,8 +2824,8 @@ exports[`Authors > can sort by name z->a 1`] = `
               class="w-full"
               height="80"
               loading="lazy"
-              src="/_image?/content%2Fassets%2Favatars%2Frichard-laymon.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
-              srcset="/_image?/content%2Fassets%2Favatars%2Frichard-laymon.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&q=80&f=avif 1x, /_image?/content%2Fassets%2Favatars%2Frichard-laymon.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&q=80&f=avif 2x"
+              src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Frichard-laymon.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Frichard-laymon.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Frichard-laymon.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&h=160&q=80&f=avif 2x"
               width="80"
             />
           </div>
@@ -2911,8 +2911,8 @@ exports[`Authors > can sort by name z->a 1`] = `
               class="w-full"
               height="80"
               loading="lazy"
-              src="/_image?/content%2Fassets%2Favatars%2Fstephen-king.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
-              srcset="/_image?/content%2Fassets%2Favatars%2Fstephen-king.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&q=80&f=avif 1x, /_image?/content%2Fassets%2Favatars%2Fstephen-king.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&q=80&f=avif 2x"
+              src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fstephen-king.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fstephen-king.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fstephen-king.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&h=160&q=80&f=avif 2x"
               width="80"
             />
           </div>
@@ -3280,8 +3280,8 @@ exports[`Authors > can sort by name z->a 1`] = `
               class="w-full"
               height="80"
               loading="lazy"
-              src="/_image?/content%2Fassets%2Favatars%2Fphilip-fracassi.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
-              srcset="/_image?/content%2Fassets%2Favatars%2Fphilip-fracassi.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&q=80&f=avif 1x, /_image?/content%2Fassets%2Favatars%2Fphilip-fracassi.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&q=80&f=avif 2x"
+              src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fphilip-fracassi.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fphilip-fracassi.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fphilip-fracassi.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&h=160&q=80&f=avif 2x"
               width="80"
             />
           </div>
@@ -3310,8 +3310,8 @@ exports[`Authors > can sort by name z->a 1`] = `
               class="w-full"
               height="80"
               loading="lazy"
-              src="/_image?/content%2Fassets%2Favatars%2Fian-fleming.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
-              srcset="/_image?/content%2Fassets%2Favatars%2Fian-fleming.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&q=80&f=avif 1x, /_image?/content%2Fassets%2Favatars%2Fian-fleming.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&q=80&f=avif 2x"
+              src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fian-fleming.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fian-fleming.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fian-fleming.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&h=160&q=80&f=avif 2x"
               width="80"
             />
           </div>
@@ -3360,8 +3360,8 @@ exports[`Authors > can sort by name z->a 1`] = `
               class="w-full"
               height="80"
               loading="lazy"
-              src="/_image?/content%2Fassets%2Favatars%2Fbret-easton-ellis.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
-              srcset="/_image?/content%2Fassets%2Favatars%2Fbret-easton-ellis.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&q=80&f=avif 1x, /_image?/content%2Fassets%2Favatars%2Fbret-easton-ellis.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&q=80&f=avif 2x"
+              src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fbret-easton-ellis.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fbret-easton-ellis.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fbret-easton-ellis.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&h=160&q=80&f=avif 2x"
               width="80"
             />
           </div>
@@ -3467,8 +3467,8 @@ exports[`Authors > can sort by name z->a 1`] = `
               class="w-full"
               height="80"
               loading="lazy"
-              src="/_image?/content%2Fassets%2Favatars%2Fraymond-chandler.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
-              srcset="/_image?/content%2Fassets%2Favatars%2Fraymond-chandler.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&q=80&f=avif 1x, /_image?/content%2Fassets%2Favatars%2Fraymond-chandler.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&q=80&f=avif 2x"
+              src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fraymond-chandler.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fraymond-chandler.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fraymond-chandler.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&h=160&q=80&f=avif 2x"
               width="80"
             />
           </div>
@@ -3800,8 +3800,8 @@ exports[`Authors > can sort by review count asc 1`] = `
               class="w-full"
               height="80"
               loading="lazy"
-              src="/_image?/content%2Fassets%2Favatars%2Fraymond-chandler.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
-              srcset="/_image?/content%2Fassets%2Favatars%2Fraymond-chandler.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&q=80&f=avif 1x, /_image?/content%2Fassets%2Favatars%2Fraymond-chandler.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&q=80&f=avif 2x"
+              src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fraymond-chandler.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fraymond-chandler.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fraymond-chandler.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&h=160&q=80&f=avif 2x"
               width="80"
             />
           </div>
@@ -4681,8 +4681,8 @@ exports[`Authors > can sort by review count asc 1`] = `
               class="w-full"
               height="80"
               loading="lazy"
-              src="/_image?/content%2Fassets%2Favatars%2Fbram-stoker.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
-              srcset="/_image?/content%2Fassets%2Favatars%2Fbram-stoker.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&q=80&f=avif 1x, /_image?/content%2Fassets%2Favatars%2Fbram-stoker.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&q=80&f=avif 2x"
+              src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fbram-stoker.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fbram-stoker.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fbram-stoker.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&h=160&q=80&f=avif 2x"
               width="80"
             />
           </div>
@@ -4859,8 +4859,8 @@ exports[`Authors > can sort by review count asc 1`] = `
               class="w-full"
               height="80"
               loading="lazy"
-              src="/_image?/content%2Fassets%2Favatars%2Fbret-easton-ellis.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
-              srcset="/_image?/content%2Fassets%2Favatars%2Fbret-easton-ellis.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&q=80&f=avif 1x, /_image?/content%2Fassets%2Favatars%2Fbret-easton-ellis.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&q=80&f=avif 2x"
+              src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fbret-easton-ellis.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fbret-easton-ellis.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fbret-easton-ellis.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&h=160&q=80&f=avif 2x"
               width="80"
             />
           </div>
@@ -4889,8 +4889,8 @@ exports[`Authors > can sort by review count asc 1`] = `
               class="w-full"
               height="80"
               loading="lazy"
-              src="/_image?/content%2Fassets%2Favatars%2Fstephen-morris.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
-              srcset="/_image?/content%2Fassets%2Favatars%2Fstephen-morris.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&q=80&f=avif 1x, /_image?/content%2Fassets%2Favatars%2Fstephen-morris.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&q=80&f=avif 2x"
+              src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fstephen-morris.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fstephen-morris.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fstephen-morris.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&h=160&q=80&f=avif 2x"
               width="80"
             />
           </div>
@@ -4919,8 +4919,8 @@ exports[`Authors > can sort by review count asc 1`] = `
               class="w-full"
               height="80"
               loading="lazy"
-              src="/_image?/content%2Fassets%2Favatars%2Fchuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
-              srcset="/_image?/content%2Fassets%2Favatars%2Fchuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&q=80&f=avif 1x, /_image?/content%2Fassets%2Favatars%2Fchuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&q=80&f=avif 2x"
+              src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fchuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fchuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fchuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&h=160&q=80&f=avif 2x"
               width="80"
             />
           </div>
@@ -4949,8 +4949,8 @@ exports[`Authors > can sort by review count asc 1`] = `
               class="w-full"
               height="80"
               loading="lazy"
-              src="/_image?/content%2Fassets%2Favatars%2Fian-fleming.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
-              srcset="/_image?/content%2Fassets%2Favatars%2Fian-fleming.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&q=80&f=avif 1x, /_image?/content%2Fassets%2Favatars%2Fian-fleming.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&q=80&f=avif 2x"
+              src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fian-fleming.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fian-fleming.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fian-fleming.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&h=160&q=80&f=avif 2x"
               width="80"
             />
           </div>
@@ -4979,8 +4979,8 @@ exports[`Authors > can sort by review count asc 1`] = `
               class="w-full"
               height="80"
               loading="lazy"
-              src="/_image?/content%2Fassets%2Favatars%2Fstephen-king.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
-              srcset="/_image?/content%2Fassets%2Favatars%2Fstephen-king.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&q=80&f=avif 1x, /_image?/content%2Fassets%2Favatars%2Fstephen-king.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&q=80&f=avif 2x"
+              src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fstephen-king.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fstephen-king.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fstephen-king.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&h=160&q=80&f=avif 2x"
               width="80"
             />
           </div>
@@ -5009,8 +5009,8 @@ exports[`Authors > can sort by review count asc 1`] = `
               class="w-full"
               height="80"
               loading="lazy"
-              src="/_image?/content%2Fassets%2Favatars%2Frichard-laymon.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
-              srcset="/_image?/content%2Fassets%2Favatars%2Frichard-laymon.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&q=80&f=avif 1x, /_image?/content%2Fassets%2Favatars%2Frichard-laymon.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&q=80&f=avif 2x"
+              src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Frichard-laymon.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Frichard-laymon.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Frichard-laymon.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&h=160&q=80&f=avif 2x"
               width="80"
             />
           </div>
@@ -5039,8 +5039,8 @@ exports[`Authors > can sort by review count asc 1`] = `
               class="w-full"
               height="80"
               loading="lazy"
-              src="/_image?/content%2Fassets%2Favatars%2Fphilip-fracassi.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
-              srcset="/_image?/content%2Fassets%2Favatars%2Fphilip-fracassi.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&q=80&f=avif 1x, /_image?/content%2Fassets%2Favatars%2Fphilip-fracassi.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&q=80&f=avif 2x"
+              src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fphilip-fracassi.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fphilip-fracassi.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fphilip-fracassi.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&h=160&q=80&f=avif 2x"
               width="80"
             />
           </div>
@@ -5094,8 +5094,8 @@ exports[`Authors > can sort by review count desc 1`] = `
               class="w-full"
               height="80"
               loading="lazy"
-              src="/_image?/content%2Fassets%2Favatars%2Fphilip-fracassi.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
-              srcset="/_image?/content%2Fassets%2Favatars%2Fphilip-fracassi.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&q=80&f=avif 1x, /_image?/content%2Fassets%2Favatars%2Fphilip-fracassi.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&q=80&f=avif 2x"
+              src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fphilip-fracassi.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fphilip-fracassi.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fphilip-fracassi.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&h=160&q=80&f=avif 2x"
               width="80"
             />
           </div>
@@ -5124,8 +5124,8 @@ exports[`Authors > can sort by review count desc 1`] = `
               class="w-full"
               height="80"
               loading="lazy"
-              src="/_image?/content%2Fassets%2Favatars%2Fstephen-king.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
-              srcset="/_image?/content%2Fassets%2Favatars%2Fstephen-king.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&q=80&f=avif 1x, /_image?/content%2Fassets%2Favatars%2Fstephen-king.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&q=80&f=avif 2x"
+              src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fstephen-king.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fstephen-king.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fstephen-king.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&h=160&q=80&f=avif 2x"
               width="80"
             />
           </div>
@@ -5154,8 +5154,8 @@ exports[`Authors > can sort by review count desc 1`] = `
               class="w-full"
               height="80"
               loading="lazy"
-              src="/_image?/content%2Fassets%2Favatars%2Frichard-laymon.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
-              srcset="/_image?/content%2Fassets%2Favatars%2Frichard-laymon.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&q=80&f=avif 1x, /_image?/content%2Fassets%2Favatars%2Frichard-laymon.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&q=80&f=avif 2x"
+              src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Frichard-laymon.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Frichard-laymon.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Frichard-laymon.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&h=160&q=80&f=avif 2x"
               width="80"
             />
           </div>
@@ -5184,8 +5184,8 @@ exports[`Authors > can sort by review count desc 1`] = `
               class="w-full"
               height="80"
               loading="lazy"
-              src="/_image?/content%2Fassets%2Favatars%2Fian-fleming.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
-              srcset="/_image?/content%2Fassets%2Favatars%2Fian-fleming.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&q=80&f=avif 1x, /_image?/content%2Fassets%2Favatars%2Fian-fleming.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&q=80&f=avif 2x"
+              src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fian-fleming.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fian-fleming.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fian-fleming.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&h=160&q=80&f=avif 2x"
               width="80"
             />
           </div>
@@ -5214,8 +5214,8 @@ exports[`Authors > can sort by review count desc 1`] = `
               class="w-full"
               height="80"
               loading="lazy"
-              src="/_image?/content%2Fassets%2Favatars%2Fbret-easton-ellis.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
-              srcset="/_image?/content%2Fassets%2Favatars%2Fbret-easton-ellis.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&q=80&f=avif 1x, /_image?/content%2Fassets%2Favatars%2Fbret-easton-ellis.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&q=80&f=avif 2x"
+              src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fbret-easton-ellis.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fbret-easton-ellis.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fbret-easton-ellis.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&h=160&q=80&f=avif 2x"
               width="80"
             />
           </div>
@@ -5244,8 +5244,8 @@ exports[`Authors > can sort by review count desc 1`] = `
               class="w-full"
               height="80"
               loading="lazy"
-              src="/_image?/content%2Fassets%2Favatars%2Fstephen-morris.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
-              srcset="/_image?/content%2Fassets%2Favatars%2Fstephen-morris.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&q=80&f=avif 1x, /_image?/content%2Fassets%2Favatars%2Fstephen-morris.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&q=80&f=avif 2x"
+              src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fstephen-morris.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fstephen-morris.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fstephen-morris.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&h=160&q=80&f=avif 2x"
               width="80"
             />
           </div>
@@ -5274,8 +5274,8 @@ exports[`Authors > can sort by review count desc 1`] = `
               class="w-full"
               height="80"
               loading="lazy"
-              src="/_image?/content%2Fassets%2Favatars%2Fchuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
-              srcset="/_image?/content%2Fassets%2Favatars%2Fchuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&q=80&f=avif 1x, /_image?/content%2Fassets%2Favatars%2Fchuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&q=80&f=avif 2x"
+              src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fchuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fchuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fchuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&h=160&q=80&f=avif 2x"
               width="80"
             />
           </div>
@@ -5415,8 +5415,8 @@ exports[`Authors > can sort by review count desc 1`] = `
               class="w-full"
               height="80"
               loading="lazy"
-              src="/_image?/content%2Fassets%2Favatars%2Fraymond-chandler.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
-              srcset="/_image?/content%2Fassets%2Favatars%2Fraymond-chandler.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&q=80&f=avif 1x, /_image?/content%2Fassets%2Favatars%2Fraymond-chandler.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&q=80&f=avif 2x"
+              src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fraymond-chandler.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fraymond-chandler.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fraymond-chandler.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&h=160&q=80&f=avif 2x"
               width="80"
             />
           </div>
@@ -6296,8 +6296,8 @@ exports[`Authors > can sort by review count desc 1`] = `
               class="w-full"
               height="80"
               loading="lazy"
-              src="/_image?/content%2Fassets%2Favatars%2Fbram-stoker.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
-              srcset="/_image?/content%2Fassets%2Favatars%2Fbram-stoker.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&q=80&f=avif 1x, /_image?/content%2Fassets%2Favatars%2Fbram-stoker.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&q=80&f=avif 2x"
+              src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fbram-stoker.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fbram-stoker.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fbram-stoker.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&h=160&q=80&f=avif 2x"
               width="80"
             />
           </div>
@@ -6646,8 +6646,8 @@ exports[`Authors > can sort by work count asc 1`] = `
               class="w-full"
               height="80"
               loading="lazy"
-              src="/_image?/content%2Fassets%2Favatars%2Fraymond-chandler.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
-              srcset="/_image?/content%2Fassets%2Favatars%2Fraymond-chandler.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&q=80&f=avif 1x, /_image?/content%2Fassets%2Favatars%2Fraymond-chandler.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&q=80&f=avif 2x"
+              src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fraymond-chandler.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fraymond-chandler.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fraymond-chandler.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&h=160&q=80&f=avif 2x"
               width="80"
             />
           </div>
@@ -7711,8 +7711,8 @@ exports[`Authors > can sort by work count asc 1`] = `
               class="w-full"
               height="80"
               loading="lazy"
-              src="/_image?/content%2Fassets%2Favatars%2Fbret-easton-ellis.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
-              srcset="/_image?/content%2Fassets%2Favatars%2Fbret-easton-ellis.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&q=80&f=avif 1x, /_image?/content%2Fassets%2Favatars%2Fbret-easton-ellis.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&q=80&f=avif 2x"
+              src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fbret-easton-ellis.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fbret-easton-ellis.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fbret-easton-ellis.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&h=160&q=80&f=avif 2x"
               width="80"
             />
           </div>
@@ -7741,8 +7741,8 @@ exports[`Authors > can sort by work count asc 1`] = `
               class="w-full"
               height="80"
               loading="lazy"
-              src="/_image?/content%2Fassets%2Favatars%2Fstephen-morris.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
-              srcset="/_image?/content%2Fassets%2Favatars%2Fstephen-morris.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&q=80&f=avif 1x, /_image?/content%2Fassets%2Favatars%2Fstephen-morris.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&q=80&f=avif 2x"
+              src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fstephen-morris.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fstephen-morris.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fstephen-morris.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&h=160&q=80&f=avif 2x"
               width="80"
             />
           </div>
@@ -7771,8 +7771,8 @@ exports[`Authors > can sort by work count asc 1`] = `
               class="w-full"
               height="80"
               loading="lazy"
-              src="/_image?/content%2Fassets%2Favatars%2Fbram-stoker.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
-              srcset="/_image?/content%2Fassets%2Favatars%2Fbram-stoker.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&q=80&f=avif 1x, /_image?/content%2Fassets%2Favatars%2Fbram-stoker.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&q=80&f=avif 2x"
+              src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fbram-stoker.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fbram-stoker.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fbram-stoker.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&h=160&q=80&f=avif 2x"
               width="80"
             />
           </div>
@@ -7801,8 +7801,8 @@ exports[`Authors > can sort by work count asc 1`] = `
               class="w-full"
               height="80"
               loading="lazy"
-              src="/_image?/content%2Fassets%2Favatars%2Fian-fleming.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
-              srcset="/_image?/content%2Fassets%2Favatars%2Fian-fleming.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&q=80&f=avif 1x, /_image?/content%2Fassets%2Favatars%2Fian-fleming.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&q=80&f=avif 2x"
+              src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fian-fleming.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fian-fleming.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fian-fleming.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&h=160&q=80&f=avif 2x"
               width="80"
             />
           </div>
@@ -7831,8 +7831,8 @@ exports[`Authors > can sort by work count asc 1`] = `
               class="w-full"
               height="80"
               loading="lazy"
-              src="/_image?/content%2Fassets%2Favatars%2Fchuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
-              srcset="/_image?/content%2Fassets%2Favatars%2Fchuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&q=80&f=avif 1x, /_image?/content%2Fassets%2Favatars%2Fchuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&q=80&f=avif 2x"
+              src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fchuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fchuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fchuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&h=160&q=80&f=avif 2x"
               width="80"
             />
           </div>
@@ -7861,8 +7861,8 @@ exports[`Authors > can sort by work count asc 1`] = `
               class="w-full"
               height="80"
               loading="lazy"
-              src="/_image?/content%2Fassets%2Favatars%2Fphilip-fracassi.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
-              srcset="/_image?/content%2Fassets%2Favatars%2Fphilip-fracassi.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&q=80&f=avif 1x, /_image?/content%2Fassets%2Favatars%2Fphilip-fracassi.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&q=80&f=avif 2x"
+              src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fphilip-fracassi.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fphilip-fracassi.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fphilip-fracassi.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&h=160&q=80&f=avif 2x"
               width="80"
             />
           </div>
@@ -7891,8 +7891,8 @@ exports[`Authors > can sort by work count asc 1`] = `
               class="w-full"
               height="80"
               loading="lazy"
-              src="/_image?/content%2Fassets%2Favatars%2Fstephen-king.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
-              srcset="/_image?/content%2Fassets%2Favatars%2Fstephen-king.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&q=80&f=avif 1x, /_image?/content%2Fassets%2Favatars%2Fstephen-king.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&q=80&f=avif 2x"
+              src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fstephen-king.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fstephen-king.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fstephen-king.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&h=160&q=80&f=avif 2x"
               width="80"
             />
           </div>
@@ -7921,8 +7921,8 @@ exports[`Authors > can sort by work count asc 1`] = `
               class="w-full"
               height="80"
               loading="lazy"
-              src="/_image?/content%2Fassets%2Favatars%2Frichard-laymon.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
-              srcset="/_image?/content%2Fassets%2Favatars%2Frichard-laymon.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&q=80&f=avif 1x, /_image?/content%2Fassets%2Favatars%2Frichard-laymon.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&q=80&f=avif 2x"
+              src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Frichard-laymon.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Frichard-laymon.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Frichard-laymon.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&h=160&q=80&f=avif 2x"
               width="80"
             />
           </div>
@@ -7976,8 +7976,8 @@ exports[`Authors > can sort by work count desc 1`] = `
               class="w-full"
               height="80"
               loading="lazy"
-              src="/_image?/content%2Fassets%2Favatars%2Frichard-laymon.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
-              srcset="/_image?/content%2Fassets%2Favatars%2Frichard-laymon.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&q=80&f=avif 1x, /_image?/content%2Fassets%2Favatars%2Frichard-laymon.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&q=80&f=avif 2x"
+              src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Frichard-laymon.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Frichard-laymon.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Frichard-laymon.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&h=160&q=80&f=avif 2x"
               width="80"
             />
           </div>
@@ -8006,8 +8006,8 @@ exports[`Authors > can sort by work count desc 1`] = `
               class="w-full"
               height="80"
               loading="lazy"
-              src="/_image?/content%2Fassets%2Favatars%2Fstephen-king.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
-              srcset="/_image?/content%2Fassets%2Favatars%2Fstephen-king.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&q=80&f=avif 1x, /_image?/content%2Fassets%2Favatars%2Fstephen-king.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&q=80&f=avif 2x"
+              src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fstephen-king.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fstephen-king.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fstephen-king.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&h=160&q=80&f=avif 2x"
               width="80"
             />
           </div>
@@ -8036,8 +8036,8 @@ exports[`Authors > can sort by work count desc 1`] = `
               class="w-full"
               height="80"
               loading="lazy"
-              src="/_image?/content%2Fassets%2Favatars%2Fphilip-fracassi.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
-              srcset="/_image?/content%2Fassets%2Favatars%2Fphilip-fracassi.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&q=80&f=avif 1x, /_image?/content%2Fassets%2Favatars%2Fphilip-fracassi.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&q=80&f=avif 2x"
+              src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fphilip-fracassi.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fphilip-fracassi.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fphilip-fracassi.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&h=160&q=80&f=avif 2x"
               width="80"
             />
           </div>
@@ -8066,8 +8066,8 @@ exports[`Authors > can sort by work count desc 1`] = `
               class="w-full"
               height="80"
               loading="lazy"
-              src="/_image?/content%2Fassets%2Favatars%2Fchuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
-              srcset="/_image?/content%2Fassets%2Favatars%2Fchuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&q=80&f=avif 1x, /_image?/content%2Fassets%2Favatars%2Fchuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&q=80&f=avif 2x"
+              src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fchuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fchuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fchuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&h=160&q=80&f=avif 2x"
               width="80"
             />
           </div>
@@ -8096,8 +8096,8 @@ exports[`Authors > can sort by work count desc 1`] = `
               class="w-full"
               height="80"
               loading="lazy"
-              src="/_image?/content%2Fassets%2Favatars%2Fian-fleming.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
-              srcset="/_image?/content%2Fassets%2Favatars%2Fian-fleming.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&q=80&f=avif 1x, /_image?/content%2Fassets%2Favatars%2Fian-fleming.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&q=80&f=avif 2x"
+              src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fian-fleming.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fian-fleming.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fian-fleming.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&h=160&q=80&f=avif 2x"
               width="80"
             />
           </div>
@@ -8126,8 +8126,8 @@ exports[`Authors > can sort by work count desc 1`] = `
               class="w-full"
               height="80"
               loading="lazy"
-              src="/_image?/content%2Fassets%2Favatars%2Fbret-easton-ellis.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
-              srcset="/_image?/content%2Fassets%2Favatars%2Fbret-easton-ellis.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&q=80&f=avif 1x, /_image?/content%2Fassets%2Favatars%2Fbret-easton-ellis.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&q=80&f=avif 2x"
+              src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fbret-easton-ellis.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fbret-easton-ellis.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fbret-easton-ellis.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&h=160&q=80&f=avif 2x"
               width="80"
             />
           </div>
@@ -8156,8 +8156,8 @@ exports[`Authors > can sort by work count desc 1`] = `
               class="w-full"
               height="80"
               loading="lazy"
-              src="/_image?/content%2Fassets%2Favatars%2Fstephen-morris.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
-              srcset="/_image?/content%2Fassets%2Favatars%2Fstephen-morris.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&q=80&f=avif 1x, /_image?/content%2Fassets%2Favatars%2Fstephen-morris.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&q=80&f=avif 2x"
+              src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fstephen-morris.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fstephen-morris.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fstephen-morris.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&h=160&q=80&f=avif 2x"
               width="80"
             />
           </div>
@@ -8186,8 +8186,8 @@ exports[`Authors > can sort by work count desc 1`] = `
               class="w-full"
               height="80"
               loading="lazy"
-              src="/_image?/content%2Fassets%2Favatars%2Fbram-stoker.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
-              srcset="/_image?/content%2Fassets%2Favatars%2Fbram-stoker.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&q=80&f=avif 1x, /_image?/content%2Fassets%2Favatars%2Fbram-stoker.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&q=80&f=avif 2x"
+              src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fbram-stoker.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fbram-stoker.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fbram-stoker.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&h=160&q=80&f=avif 2x"
               width="80"
             />
           </div>
@@ -8327,8 +8327,8 @@ exports[`Authors > can sort by work count desc 1`] = `
               class="w-full"
               height="80"
               loading="lazy"
-              src="/_image?/content%2Fassets%2Favatars%2Fraymond-chandler.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
-              srcset="/_image?/content%2Fassets%2Favatars%2Fraymond-chandler.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&q=80&f=avif 1x, /_image?/content%2Fassets%2Favatars%2Fraymond-chandler.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&q=80&f=avif 2x"
+              src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fraymond-chandler.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fraymond-chandler.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fraymond-chandler.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&h=160&q=80&f=avif 2x"
               width="80"
             />
           </div>
