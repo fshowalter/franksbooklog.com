@@ -1,4 +1,4 @@
-import { useReducer } from "react";
+import { type JSX, useReducer } from "react";
 
 import type { CoverImageProps } from "~/api/covers";
 import type { Review } from "~/api/reviews";

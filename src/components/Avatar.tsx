@@ -1,3 +1,5 @@
+import type { JSX } from "react";
+
 import type { AvatarImageProps } from "~/api/avatars";
 
 type AvatarProps = React.ImgHTMLAttributes<HTMLImageElement> & {

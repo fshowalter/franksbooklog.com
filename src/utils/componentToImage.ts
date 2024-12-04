@@ -1,3 +1,5 @@
+import type { JSX } from "react";
+
 import fs from "node:fs/promises";
 import satori from "satori";
 import sharp from "sharp";

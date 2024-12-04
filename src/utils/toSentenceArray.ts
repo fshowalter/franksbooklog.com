@@ -1,3 +1,4 @@
+import type { JSX } from "react";
 export function toSentenceArray<T extends JSX.Element | string>(
   values: readonly T[],
 ): T[] {

@@ -1,3 +1,5 @@
+import type { JSX } from "react";
+
 import { toSentenceArray } from "~/utils";
 
 export function OpenGraphImage({

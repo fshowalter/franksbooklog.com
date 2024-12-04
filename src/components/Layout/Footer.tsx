@@ -1,3 +1,5 @@
+import type { JSX } from "react";
+
 import type { NavItem } from "./navItems";
 
 import { Logo } from "./Logo";

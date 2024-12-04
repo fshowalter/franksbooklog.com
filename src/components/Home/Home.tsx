@@ -1,3 +1,5 @@
+import type { JSX } from "react";
+
 import { SolidBackdrop } from "~/components/Backdrop";
 import { Layout } from "~/components/Layout";
 import { SubHeading } from "~/components/SubHeading";
