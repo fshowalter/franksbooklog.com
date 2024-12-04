@@ -1,3 +1,4 @@
+import type { JSX } from "react";
 export function OpenGraphImage({
   sectionHead = "Frank's Book Log",
   title,

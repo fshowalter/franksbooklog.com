@@ -1,3 +1,5 @@
+import type { JSX } from "react";
+
 import type { CoverImageProps } from "~/api/covers";
 
 import { ListItem } from "./ListItem";

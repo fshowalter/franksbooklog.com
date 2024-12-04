@@ -1,3 +1,5 @@
+import type { JSX } from "react";
+
 import type { MoreReviewsValue } from "~/components/MoreReviews";
 
 import { SolidBackdrop } from "~/components/Backdrop";

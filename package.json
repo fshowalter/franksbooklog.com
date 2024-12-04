@@ -58,8 +58,8 @@
     "@types/hast": "3.0.4",
     "@types/mdast": "4.0.4",
     "@types/node": "22.10.1",
-    "@types/react": "18.3.12",
-    "@types/react-dom": "18.3.1",
+    "@types/react": "npm:types-react@rc",
+    "@types/react-dom": "npm:types-react-dom@rc",
     "@vitest/coverage-istanbul": "2.1.8",
     "@vitest/eslint-plugin": "1.1.14",
     "babel-plugin-react-compiler": "19.0.0-beta-df7b47d-20241124",
@@ -90,6 +90,8 @@
   "overrides": {
     "vite": "6.0.2",
     "react": "19.0.0-rc-fb9a90fa48-20240614",
-    "react-dom": "19.0.0-rc-fb9a90fa48-20240614"
+    "react-dom": "19.0.0-rc-fb9a90fa48-20240614",
+    "@types/react": "npm:types-react@rc",
+    "@types/react-dom": "npm:types-react-dom@rc"
   }
 }

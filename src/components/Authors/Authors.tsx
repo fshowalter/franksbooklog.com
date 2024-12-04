@@ -1,4 +1,4 @@
-import { useReducer } from "react";
+import { type JSX, useReducer } from "react";
 
 import type { Author } from "~/api/authors";
 import type { AvatarImageProps } from "~/api/avatars";

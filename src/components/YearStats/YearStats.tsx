@@ -1,3 +1,5 @@
+import type { JSX } from "react";
+
 import type { YearStats } from "~/api/yearStats";
 
 import { SolidBackdrop } from "~/components/Backdrop";

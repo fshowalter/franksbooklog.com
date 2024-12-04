@@ -1,3 +1,5 @@
+import type { JSX } from "react";
+
 import { LabelText } from "./LabelText";
 
 type onChangeHandler = (value: string) => void;

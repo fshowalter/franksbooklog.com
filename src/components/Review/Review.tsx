@@ -1,3 +1,5 @@
+import type { JSX } from "react";
+
 import type { CoverImageProps } from "~/api/covers";
 import type { Review, ReviewWithContent } from "~/api/reviews";
 
