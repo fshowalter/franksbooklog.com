@@ -145,6 +145,7 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
           >
             <span
               class="hamburger-icon-bars"
+              style="background: var(--fg-default);"
             />
           </label>
           <ul
@@ -2365,6 +2366,7 @@ exports[`YearStats > matches snapshot for slug 2023 1`] = `
           >
             <span
               class="hamburger-icon-bars"
+              style="background: var(--fg-default);"
             />
           </label>
           <ul
@@ -3438,6 +3440,7 @@ exports[`YearStats > matches snapshot for slug 2024 1`] = `
           >
             <span
               class="hamburger-icon-bars"
+              style="background: var(--fg-default);"
             />
           </label>
           <ul
