@@ -11,7 +11,7 @@ import { toSentenceArray } from "~/utils";
 export const CoverImageConfig = {
   height: 372,
   sizes:
-    "(max-width: 599px) 48vw, (max-width: 767px) 31vw, (max-width: 899px) calc((100vw - 96px) * 0.32), (max-width: 1279px) calc((100vw - 96px) * 0.22.75), (max-width: 1695px) calc((100vw - 160px) * 0.1416666667), 218px",
+    "(min-width: 1800px) 218px, (min-width: 1300px) calc(11.67vw + 10px), (min-width: 1260px) calc(-445vw + 5855px), (min-width: 900px) calc(19.12vw + 11px), (min-width: 600px) 27.5vw, calc(41.43vw + 8px)",
   width: 248,
 };
 
