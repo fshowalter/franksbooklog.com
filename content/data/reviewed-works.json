@@ -2520,15 +2520,15 @@
         ]
       },
       {
-        "title": "Goth",
-        "kind": "Nonfiction",
-        "yearPublished": "2023",
-        "slug": "goth-by-lol-tolhurst",
-        "grade": "C",
+        "title": "Ghost Story",
+        "kind": "Novel",
+        "yearPublished": "1979",
+        "slug": "ghost-story-by-peter-straub",
+        "grade": "B",
         "includedInSlugs": [],
         "authors": [
           {
-            "name": "Lol Tolhurst"
+            "name": "Peter Straub"
           }
         ]
       }
@@ -2603,6 +2603,99 @@
         ]
       },
       {
+        "title": "Ghost Story",
+        "kind": "Novel",
+        "yearPublished": "1979",
+        "slug": "ghost-story-by-peter-straub",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Peter Straub"
+          }
+        ]
+      },
+      {
+        "title": "Goth",
+        "kind": "Nonfiction",
+        "yearPublished": "2023",
+        "slug": "goth-by-lol-tolhurst",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Lol Tolhurst"
+          }
+        ]
+      }
+    ],
+    "includedWorks": []
+  },
+  {
+    "sequence": 63,
+    "slug": "ghost-story-by-peter-straub",
+    "title": "Ghost Story",
+    "subtitle": null,
+    "sortTitle": "Ghost Story",
+    "yearPublished": "1979",
+    "grade": "B",
+    "gradeValue": 9,
+    "kind": "Novel",
+    "date": "2024-12-01",
+    "authors": [
+      {
+        "slug": "peter-straub",
+        "notes": null,
+        "name": "Peter Straub",
+        "sortName": "Straub, Peter"
+      }
+    ],
+    "readings": [
+      {
+        "sequence": 63,
+        "date": "2024-12-01",
+        "isAudiobook": false,
+        "abandoned": false,
+        "readingTime": 22
+      }
+    ],
+    "includedInSlugs": [],
+    "yearReviewed": 2024,
+    "moreByAuthors": [],
+    "moreReviews": [
+      {
+        "title": "Fright Night",
+        "kind": "Novel",
+        "yearPublished": "1985",
+        "slug": "fright-night-by-john-skipp-craig-spector",
+        "grade": "F",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "John Skipp"
+          },
+          {
+            "name": "Craig Spector"
+          }
+        ]
+      },
+      {
+        "title": "Fright Night Origins",
+        "kind": "Novel",
+        "yearPublished": "2023",
+        "slug": "fright-night-origins-by-tom-holland-a-jack-ulrich",
+        "grade": "C+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Tom Holland"
+          },
+          {
+            "name": "A. Jack Ulrich"
+          }
+        ]
+      },
+      {
         "title": "Goth",
         "kind": "Nonfiction",
         "yearPublished": "2023",
@@ -2664,22 +2757,6 @@
     "moreByAuthors": [],
     "moreReviews": [
       {
-        "title": "Fright Night",
-        "kind": "Novel",
-        "yearPublished": "1985",
-        "slug": "fright-night-by-john-skipp-craig-spector",
-        "grade": "F",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "John Skipp"
-          },
-          {
-            "name": "Craig Spector"
-          }
-        ]
-      },
-      {
         "title": "Fright Night Origins",
         "kind": "Novel",
         "yearPublished": "2023",
@@ -2692,6 +2769,19 @@
           },
           {
             "name": "A. Jack Ulrich"
+          }
+        ]
+      },
+      {
+        "title": "Ghost Story",
+        "kind": "Novel",
+        "yearPublished": "1979",
+        "slug": "ghost-story-by-peter-straub",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Peter Straub"
           }
         ]
       },
@@ -2822,18 +2912,15 @@
     ],
     "moreReviews": [
       {
-        "title": "Fright Night Origins",
+        "title": "Ghost Story",
         "kind": "Novel",
-        "yearPublished": "2023",
-        "slug": "fright-night-origins-by-tom-holland-a-jack-ulrich",
-        "grade": "C+",
+        "yearPublished": "1979",
+        "slug": "ghost-story-by-peter-straub",
+        "grade": "B",
         "includedInSlugs": [],
         "authors": [
           {
-            "name": "Tom Holland"
-          },
-          {
-            "name": "A. Jack Ulrich"
+            "name": "Peter Straub"
           }
         ]
       },

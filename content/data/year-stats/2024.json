@@ -1,7 +1,7 @@
 {
   "year": "2024",
-  "workCount": 4,
-  "bookCount": 4,
+  "workCount": 5,
+  "bookCount": 5,
   "kindDistribution": [
     {
       "name": "Nonfiction",
@@ -9,7 +9,7 @@
     },
     {
       "name": "Novel",
-      "count": 1
+      "count": 2
     }
   ],
   "editionDistribution": [
@@ -19,10 +19,14 @@
     },
     {
       "name": "Kindle",
-      "count": 2
+      "count": 3
     }
   ],
   "decadeDistribution": [
+    {
+      "name": "1970s",
+      "count": 1
+    },
     {
       "name": "2020s",
       "count": 4
