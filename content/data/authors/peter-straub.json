@@ -4,6 +4,25 @@
   "slug": "peter-straub",
   "works": [
     {
+      "title": "Ghost Story",
+      "yearPublished": "1979",
+      "kind": "Novel",
+      "slug": "ghost-story-by-peter-straub",
+      "sortTitle": "Ghost Story",
+      "reviewed": true,
+      "grade": "B",
+      "gradeValue": 9,
+      "authors": [
+        {
+          "slug": "peter-straub",
+          "notes": null,
+          "name": "Peter Straub",
+          "sortName": "Straub, Peter"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
       "title": "The Talisman",
       "yearPublished": "1984",
       "kind": "Novel",
@@ -29,7 +48,7 @@
       "includedInSlugs": []
     }
   ],
-  "reviewedWorkCount": 0,
-  "workCount": 1,
+  "reviewedWorkCount": 1,
+  "workCount": 2,
   "shelfWorkCount": 1
 }
