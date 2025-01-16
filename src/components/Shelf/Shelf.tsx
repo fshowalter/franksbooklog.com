@@ -108,7 +108,7 @@ function ShelfListItem({ value }: { value: ListItemValue }): JSX.Element {
       <div className="flex grow flex-col gap-y-1 tablet:w-full tablet:gap-y-2 desktop:pr-4">
         <ListItemTitle title={value.title} />
         <Authors
-          className="font-sans text-xs leading-5 text-muted"
+          className="font-sans text-xs text-muted"
           values={value.authors}
         />
         <ListItemKindAndYear kind={value.kind} year={value.yearPublished} />

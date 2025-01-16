@@ -88,9 +88,7 @@ function Details({ value }: { value: ReviewWithContent["readings"][0] }) {
     <details className="font-light text-subtle">
       <summary className="cursor-pointer leading-6">
         {summaryText}{" "}
-        <span className="font-normal text-subtle">
-          {value.readingTime} Days
-        </span>
+        <span className="text-accent">{value.readingTime} Days</span>
       </summary>
       <ol className="grid w-full grid-cols-[auto,1fr,auto] pt-3">
         {value.timeline.map((entry) => {

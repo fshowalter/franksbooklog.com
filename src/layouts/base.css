@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --bg-accent: #a52422;
+  --bg-accent: #bf211e;
   --bg-abandoned: #da0101;
   --bg-canvas: #f2f0e8;
   --bg-default-alpha: 0.4;
@@ -14,13 +14,13 @@
   --bg-footer: #504b43;
   --bg-progress: #14bd41;
   --bg-stripe: #f7f5f3;
-  --bg-unreviewed: #f7f5f3;
+  --bg-unreviewed: #fefefe;
   --bg-avatar-default: #ededed;
   --bg-group: #f7f5f3;
   --bg-subtle: #fafafa;
   --border-accent: #054a93;
   --border-default: #e9e7e0;
-  --fg-accent: #a52422;
+  --fg-accent: #993955;
   --fg-default: rgb(0 0 0 / 75%);
   --fg-emphasis: rgb(0 0 0 / 95%);
   --fg-inverse: #fff;
