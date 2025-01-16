@@ -1,15 +1,13 @@
 import type { Root, RootContent } from "mdast";
 
-export const EXCERPT_SEPARATOR = "<!-- end -->";
-
 export function trimToExcerpt() {
   return (tree: Root) => {
     const separatorIndex = tree.children.findIndex((node: RootContent) => {
-      return node.type === "html" && node.value.trim() === EXCERPT_SEPARATOR;
+      return node.type === "paragraph";
     });
 
     if (separatorIndex !== -1) {
-      tree.children.splice(separatorIndex);
+      tree.children.splice(separatorIndex + 1);
     }
   };
 }

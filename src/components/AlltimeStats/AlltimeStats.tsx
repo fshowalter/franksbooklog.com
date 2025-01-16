@@ -30,10 +30,7 @@ export function AlltimeStats({
     <Layout className="flex flex-col items-center bg-subtle">
       <SolidBackdrop
         breadcrumb={
-          <a
-            className="decoration-2 underline-offset-8 hover:text-accent hover:underline"
-            href="/readings/"
-          >
+          <a className="text-accent" href="/readings/">
             Reading Log
           </a>
         }
