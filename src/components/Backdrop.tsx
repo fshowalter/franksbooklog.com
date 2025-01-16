@@ -15,6 +15,7 @@ export function AvatarBackdrop({
 }) {
   return (
     <Wrapper centerText={true} size="small">
+      <Breadcrumb value={breadcrumb} />
       <div className="safari-border-radius-fix mx-auto mb-6 w-4/5 max-w-[250px] overflow-hidden rounded-full">
         <Avatar
           data-pagefind-meta="image[src]"
@@ -25,7 +26,6 @@ export function AvatarBackdrop({
           width={250}
         />
       </div>
-      <Breadcrumb value={breadcrumb} />
       <Title center={true} value={name} />
       <Deck center={true} subtle={true} value={deck} />
     </Wrapper>
@@ -58,7 +58,7 @@ function Breadcrumb({ value }: { value?: React.ReactNode }) {
   }
 
   return (
-    <p className="mb-2 font-sans text-sm uppercase tracking-wide text-subtle">
+    <p className="mb-6 font-sans text-sm uppercase tracking-wide text-subtle">
       {value}
     </p>
   );

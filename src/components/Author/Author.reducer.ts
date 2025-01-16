@@ -19,18 +19,9 @@ export type Sort =
   | "year-published-desc";
 
 const groupValues = buildGroupValues(groupForValue);
-const { applyFilters, clearFilter, updateFilter } = filterTools(
-  sortValues,
-  groupValues,
-);
+const { clearFilter, updateFilter } = filterTools(sortValues, groupValues);
 
-type State = FilterableState<
-  ListItemValue,
-  Sort,
-  Map<string, ListItemValue[]>
-> & {
-  hideReviewed: boolean;
-};
+type State = FilterableState<ListItemValue, Sort, Map<string, ListItemValue[]>>;
 
 function groupForValue(value: ListItemValue, sortValue: Sort): string {
   switch (sortValue) {
@@ -90,8 +81,7 @@ export type ActionType =
   | FilterTitleAction
   | FilterYearPublishedAction
   | ShowMoreAction
-  | SortAction
-  | ToggleReviewedAction;
+  | SortAction;
 
 type FilterKindAction = {
   type: Actions.FILTER_KIND;
@@ -116,10 +106,6 @@ type SortAction = {
   value: Sort;
 };
 
-type ToggleReviewedAction = {
-  type: Actions.TOGGLE_REVIEWED;
-};
-
 export function initState({
   initialSort,
   values,
@@ -135,14 +121,12 @@ export function initState({
       values.slice(0, SHOW_COUNT_DEFAULT),
       initialSort,
     ),
-    hideReviewed: false,
     showCount: SHOW_COUNT_DEFAULT,
     sortValue: initialSort,
   };
 }
 
 export function reducer(state: State, action: ActionType): State {
-  let filters;
   let filteredValues;
   let groupedValues;
 
@@ -194,25 +178,6 @@ export function reducer(state: State, action: ActionType): State {
         filteredValues,
         groupedValues,
         sortValue: action.value,
-      };
-    }
-    case Actions.TOGGLE_REVIEWED: {
-      if (state.hideReviewed) {
-        filters = {
-          ...state.filters,
-        };
-        delete filters.reviewed;
-      } else {
-        filters = {
-          ...state.filters,
-          reviewed: (item: ListItemValue) => {
-            return !item.reviewed;
-          },
-        };
-      }
-      return {
-        ...applyFilters(filters, state),
-        hideReviewed: !state.hideReviewed,
       };
     }
     // no default

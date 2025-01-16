@@ -77,10 +77,7 @@ export function Author({
         <AvatarBackdrop
           avatarImageProps={avatarImageProps}
           breadcrumb={
-            <a
-              className="underline decoration-2 underline-offset-8 hover:text-accent"
-              href="/authors/"
-            >
+            <a className="text-accent" href="/authors/">
               Authors
             </a>
           }
@@ -94,7 +91,6 @@ export function Author({
           dispatch={dispatch}
           distinctKinds={distinctKinds}
           distinctPublishedYears={distinctPublishedYears}
-          hideReviewed={state.hideReviewed}
           sortValue={state.sortValue}
         />
       }
@@ -131,7 +127,7 @@ function OtherAuthors({ values }: { values: ListItemValue["otherAuthors"] }) {
 function WorkListItem({ value }: { value: ListItemValue }): JSX.Element {
   if (value.reviewed) {
     return (
-      <ListItem>
+      <ListItem className="has-[a:hover]:bg-stripe">
         <ListItemCover imageProps={value.coverImageProps} />
         <div className="flex grow flex-col items-start tablet:w-full tablet:pr-4">
           <ListItemTitle

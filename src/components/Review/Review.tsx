@@ -37,17 +37,25 @@ export function Review({
   return (
     <Layout className="flex flex-col" data-pagefind-body hasBackdrop={false}>
       <header className="mb-12 flex flex-col items-center px-[8%] pt-10">
+        <nav className="pb-3">
+          <a
+            className="font-sans text-xs uppercase tracking-wider text-accent"
+            href="/reviews/"
+          >
+            Reviews
+          </a>
+        </nav>
         <h1
           className="text-center text-4xl desktop:text-6xl"
           data-pagefind-meta="title"
         >
           {value.title}
-          {value.subtitle && (
-            <div className="max-w-prose pt-2 text-base font-light tracking-wider text-muted">
-              {value.subtitle}
-            </div>
-          )}
         </h1>
+        {value.subtitle && (
+          <p className="max-w-prose pt-2 text-base font-light tracking-wider text-muted">
+            {value.subtitle}
+          </p>
+        )}
         <Authors
           className="mt-4 text-center text-md text-muted"
           values={value.authors}
@@ -156,10 +164,10 @@ function ReviewCover({
       <div className="relative -top-4 z-10 h-[372px] shadow-[0_5px_20px_rgba(49,46,42,0.22)]">
         <Cover
           className="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-          decoding="async"
+          decoding="auto"
           height={CoverImageConfig.height}
           imageProps={coverImageProps}
-          loading={"eager"}
+          loading="eager"
           width={CoverImageConfig.width}
         />
       </div>
