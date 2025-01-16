@@ -752,7 +752,7 @@ exports[`Home > matches snapshot 1`] = `
                         class="py-2 tablet:px-4"
                       >
                         <li
-                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
                         >
                           <div
                             class="w-list-item-cover shrink-0"
@@ -773,7 +773,7 @@ exports[`Home > matches snapshot 1`] = `
                             class="flex grow flex-col gap-y-1"
                           >
                             <a
-                              class="block font-sans text-sm font-medium text-accent decoration-accent decoration-2 underline-offset-4 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 hover:underline hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                              class="block font-sans text-sm font-medium decoration-2 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:bg-accent after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
                               href="/reviews/soft-construction-of-a-sunset-by-philip-fracassi/"
                             >
                               Soft Construction of a Sunset
@@ -791,7 +791,7 @@ exports[`Home > matches snapshot 1`] = `
                           </div>
                         </li>
                         <li
-                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
                         >
                           <div
                             class="w-list-item-cover shrink-0"
@@ -812,7 +812,7 @@ exports[`Home > matches snapshot 1`] = `
                             class="flex grow flex-col gap-y-1"
                           >
                             <a
-                              class="block font-sans text-sm font-medium text-accent decoration-accent decoration-2 underline-offset-4 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 hover:underline hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                              class="block font-sans text-sm font-medium decoration-2 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:bg-accent after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
                               href="/reviews/altar-by-philip-fracassi/"
                             >
                               Altar
@@ -830,7 +830,7 @@ exports[`Home > matches snapshot 1`] = `
                           </div>
                         </li>
                         <li
-                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
                         >
                           <div
                             class="w-list-item-cover shrink-0"
@@ -851,7 +851,7 @@ exports[`Home > matches snapshot 1`] = `
                             class="flex grow flex-col gap-y-1"
                           >
                             <a
-                              class="block font-sans text-sm font-medium text-accent decoration-accent decoration-2 underline-offset-4 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 hover:underline hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                              class="block font-sans text-sm font-medium decoration-2 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:bg-accent after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
                               href="/reviews/the-horse-thief-by-philip-fracassi/"
                             >
                               The Horse Thief
@@ -869,7 +869,7 @@ exports[`Home > matches snapshot 1`] = `
                           </div>
                         </li>
                         <li
-                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
                         >
                           <div
                             class="w-list-item-cover shrink-0"
@@ -890,7 +890,7 @@ exports[`Home > matches snapshot 1`] = `
                             class="flex grow flex-col gap-y-1"
                           >
                             <a
-                              class="block font-sans text-sm font-medium text-accent decoration-accent decoration-2 underline-offset-4 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 hover:underline hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                              class="block font-sans text-sm font-medium decoration-2 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:bg-accent after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
                               href="/reviews/coffin-by-philip-fracassi/"
                             >
                               Coffin
@@ -908,7 +908,7 @@ exports[`Home > matches snapshot 1`] = `
                           </div>
                         </li>
                         <li
-                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
                         >
                           <div
                             class="w-list-item-cover shrink-0"
@@ -929,7 +929,7 @@ exports[`Home > matches snapshot 1`] = `
                             class="flex grow flex-col gap-y-1"
                           >
                             <a
-                              class="block font-sans text-sm font-medium text-accent decoration-accent decoration-2 underline-offset-4 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 hover:underline hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                              class="block font-sans text-sm font-medium decoration-2 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:bg-accent after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
                               href="/reviews/the-baby-farmer-by-philip-fracassi/"
                             >
                               The Baby Farmer
@@ -947,7 +947,7 @@ exports[`Home > matches snapshot 1`] = `
                           </div>
                         </li>
                         <li
-                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
                         >
                           <div
                             class="w-list-item-cover shrink-0"
@@ -968,7 +968,7 @@ exports[`Home > matches snapshot 1`] = `
                             class="flex grow flex-col gap-y-1"
                           >
                             <a
-                              class="block font-sans text-sm font-medium text-accent decoration-accent decoration-2 underline-offset-4 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 hover:underline hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                              class="block font-sans text-sm font-medium decoration-2 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:bg-accent after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
                               href="/reviews/surfer-girl-by-philip-fracassi/"
                             >
                               Surfer Girl
@@ -986,7 +986,7 @@ exports[`Home > matches snapshot 1`] = `
                           </div>
                         </li>
                         <li
-                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
                         >
                           <div
                             class="w-list-item-cover shrink-0"
@@ -1007,7 +1007,7 @@ exports[`Home > matches snapshot 1`] = `
                             class="flex grow flex-col gap-y-1"
                           >
                             <a
-                              class="block font-sans text-sm font-medium text-accent decoration-accent decoration-2 underline-offset-4 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 hover:underline hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                              class="block font-sans text-sm font-medium decoration-2 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:bg-accent after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
                               href="/reviews/mother-by-philip-fracassi/"
                             >
                               Mother
@@ -1025,7 +1025,7 @@ exports[`Home > matches snapshot 1`] = `
                           </div>
                         </li>
                         <li
-                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
                         >
                           <div
                             class="w-list-item-cover shrink-0"
@@ -1046,7 +1046,7 @@ exports[`Home > matches snapshot 1`] = `
                             class="flex grow flex-col gap-y-1"
                           >
                             <a
-                              class="block font-sans text-sm font-medium text-accent decoration-accent decoration-2 underline-offset-4 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 hover:underline hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                              class="block font-sans text-sm font-medium decoration-2 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:bg-accent after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
                               href="/reviews/fail-safe-by-philip-fracassi/"
                             >
                               Fail-Safe
@@ -1064,7 +1064,7 @@ exports[`Home > matches snapshot 1`] = `
                           </div>
                         </li>
                         <li
-                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
                         >
                           <div
                             class="w-list-item-cover shrink-0"
@@ -1085,7 +1085,7 @@ exports[`Home > matches snapshot 1`] = `
                             class="flex grow flex-col gap-y-1"
                           >
                             <a
-                              class="block font-sans text-sm font-medium text-accent decoration-accent decoration-2 underline-offset-4 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 hover:underline hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                              class="block font-sans text-sm font-medium decoration-2 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:bg-accent after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
                               href="/reviews/mandala-by-philip-fracassi/"
                             >
                               Mandala
@@ -1103,7 +1103,7 @@ exports[`Home > matches snapshot 1`] = `
                           </div>
                         </li>
                         <li
-                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
                         >
                           <div
                             class="w-list-item-cover shrink-0"
@@ -1124,7 +1124,7 @@ exports[`Home > matches snapshot 1`] = `
                             class="flex grow flex-col gap-y-1"
                           >
                             <a
-                              class="block font-sans text-sm font-medium text-accent decoration-accent decoration-2 underline-offset-4 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 hover:underline hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                              class="block font-sans text-sm font-medium decoration-2 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:bg-accent after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
                               href="/reviews/behold-the-void-by-philip-fracassi/"
                             >
                               Behold the Void
@@ -1142,7 +1142,7 @@ exports[`Home > matches snapshot 1`] = `
                           </div>
                         </li>
                         <li
-                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
                         >
                           <div
                             class="w-list-item-cover shrink-0"
@@ -1163,7 +1163,7 @@ exports[`Home > matches snapshot 1`] = `
                             class="flex grow flex-col gap-y-1"
                           >
                             <a
-                              class="block font-sans text-sm font-medium text-accent decoration-accent decoration-2 underline-offset-4 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 hover:underline hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                              class="block font-sans text-sm font-medium decoration-2 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:bg-accent after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
                               href="/reviews/sacculina-by-philip-fracassi/"
                             >
                               Sacculina
@@ -1181,7 +1181,7 @@ exports[`Home > matches snapshot 1`] = `
                           </div>
                         </li>
                         <li
-                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
                         >
                           <div
                             class="w-list-item-cover shrink-0"
@@ -1202,7 +1202,7 @@ exports[`Home > matches snapshot 1`] = `
                             class="flex grow flex-col gap-y-1"
                           >
                             <a
-                              class="block font-sans text-sm font-medium text-accent decoration-accent decoration-2 underline-offset-4 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 hover:underline hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                              class="block font-sans text-sm font-medium decoration-2 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:bg-accent after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
                               href="/reviews/dont-let-them-get-you-down-by-philip-fracassi/"
                             >
                               Don't Let Them Get You Down
@@ -1220,7 +1220,7 @@ exports[`Home > matches snapshot 1`] = `
                           </div>
                         </li>
                         <li
-                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
                         >
                           <div
                             class="w-list-item-cover shrink-0"
@@ -1241,7 +1241,7 @@ exports[`Home > matches snapshot 1`] = `
                             class="flex grow flex-col gap-y-1"
                           >
                             <a
-                              class="block font-sans text-sm font-medium text-accent decoration-accent decoration-2 underline-offset-4 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 hover:underline hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                              class="block font-sans text-sm font-medium decoration-2 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:bg-accent after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
                               href="/reviews/gothic-by-philip-fracassi/"
                             >
                               Gothic
@@ -1299,7 +1299,7 @@ exports[`Home > matches snapshot 1`] = `
                         class="py-2 tablet:px-4"
                       >
                         <li
-                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
                         >
                           <div
                             class="w-list-item-cover shrink-0"
@@ -1320,7 +1320,7 @@ exports[`Home > matches snapshot 1`] = `
                             class="flex grow flex-col gap-y-1"
                           >
                             <a
-                              class="block font-sans text-sm font-medium text-accent decoration-accent decoration-2 underline-offset-4 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 hover:underline hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                              class="block font-sans text-sm font-medium decoration-2 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:bg-accent after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
                               href="/reviews/the-cellar-by-richard-laymon/"
                             >
                               The Cellar
@@ -1338,7 +1338,7 @@ exports[`Home > matches snapshot 1`] = `
                           </div>
                         </li>
                         <li
-                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
                         >
                           <div
                             class="w-list-item-cover shrink-0"
@@ -1359,7 +1359,7 @@ exports[`Home > matches snapshot 1`] = `
                             class="flex grow flex-col gap-y-1"
                           >
                             <a
-                              class="block font-sans text-sm font-medium text-accent decoration-accent decoration-2 underline-offset-4 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 hover:underline hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                              class="block font-sans text-sm font-medium decoration-2 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:bg-accent after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
                               href="/reviews/desert-pickup-by-richard-laymon/"
                             >
                               Desert Pickup
@@ -1377,7 +1377,7 @@ exports[`Home > matches snapshot 1`] = `
                           </div>
                         </li>
                         <li
-                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
                         >
                           <div
                             class="w-list-item-cover shrink-0"
@@ -1398,7 +1398,7 @@ exports[`Home > matches snapshot 1`] = `
                             class="flex grow flex-col gap-y-1"
                           >
                             <a
-                              class="block font-sans text-sm font-medium text-accent decoration-accent decoration-2 underline-offset-4 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 hover:underline hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                              class="block font-sans text-sm font-medium decoration-2 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:bg-accent after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
                               href="/reviews/the-woods-are-dark-by-richard-laymon/"
                             >
                               The Woods Are Dark
@@ -1416,7 +1416,7 @@ exports[`Home > matches snapshot 1`] = `
                           </div>
                         </li>
                         <li
-                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
                         >
                           <div
                             class="w-list-item-cover shrink-0"
@@ -1437,7 +1437,7 @@ exports[`Home > matches snapshot 1`] = `
                             class="flex grow flex-col gap-y-1"
                           >
                             <a
-                              class="block font-sans text-sm font-medium text-accent decoration-accent decoration-2 underline-offset-4 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 hover:underline hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                              class="block font-sans text-sm font-medium decoration-2 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:bg-accent after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
                               href="/reviews/out-are-the-lights-by-richard-laymon/"
                             >
                               Out Are the Lights
@@ -1455,7 +1455,7 @@ exports[`Home > matches snapshot 1`] = `
                           </div>
                         </li>
                         <li
-                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
                         >
                           <div
                             class="w-list-item-cover shrink-0"
@@ -1476,7 +1476,7 @@ exports[`Home > matches snapshot 1`] = `
                             class="flex grow flex-col gap-y-1"
                           >
                             <a
-                              class="block font-sans text-sm font-medium text-accent decoration-accent decoration-2 underline-offset-4 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 hover:underline hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                              class="block font-sans text-sm font-medium decoration-2 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:bg-accent after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
                               href="/reviews/roadside-pickup-by-richard-laymon/"
                             >
                               Roadside Pickup
@@ -1534,7 +1534,7 @@ exports[`Home > matches snapshot 1`] = `
                         class="py-2 tablet:px-4"
                       >
                         <li
-                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
                         >
                           <div
                             class="w-list-item-cover shrink-0"
@@ -1555,7 +1555,7 @@ exports[`Home > matches snapshot 1`] = `
                             class="flex grow flex-col gap-y-1"
                           >
                             <a
-                              class="block font-sans text-sm font-medium text-accent decoration-accent decoration-2 underline-offset-4 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 hover:underline hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                              class="block font-sans text-sm font-medium decoration-2 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:bg-accent after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
                               href="/reviews/on-writing-by-stephen-king/"
                             >
                               On Writing
@@ -1573,7 +1573,7 @@ exports[`Home > matches snapshot 1`] = `
                           </div>
                         </li>
                         <li
-                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
                         >
                           <div
                             class="w-list-item-cover shrink-0"
@@ -1594,7 +1594,7 @@ exports[`Home > matches snapshot 1`] = `
                             class="flex grow flex-col gap-y-1"
                           >
                             <a
-                              class="block font-sans text-sm font-medium text-accent decoration-accent decoration-2 underline-offset-4 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 hover:underline hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                              class="block font-sans text-sm font-medium decoration-2 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:bg-accent after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
                               href="/reviews/carrie-by-stephen-king/"
                             >
                               Carrie
@@ -1612,7 +1612,7 @@ exports[`Home > matches snapshot 1`] = `
                           </div>
                         </li>
                         <li
-                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
                         >
                           <div
                             class="w-list-item-cover shrink-0"
@@ -1633,7 +1633,7 @@ exports[`Home > matches snapshot 1`] = `
                             class="flex grow flex-col gap-y-1"
                           >
                             <a
-                              class="block font-sans text-sm font-medium text-accent decoration-accent decoration-2 underline-offset-4 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 hover:underline hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                              class="block font-sans text-sm font-medium decoration-2 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:bg-accent after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
                               href="/reviews/salems-lot-by-stephen-king/"
                             >
                               'Salem's Lot
@@ -1651,7 +1651,7 @@ exports[`Home > matches snapshot 1`] = `
                           </div>
                         </li>
                         <li
-                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
                         >
                           <div
                             class="w-list-item-cover shrink-0"
@@ -1672,7 +1672,7 @@ exports[`Home > matches snapshot 1`] = `
                             class="flex grow flex-col gap-y-1"
                           >
                             <a
-                              class="block font-sans text-sm font-medium text-accent decoration-accent decoration-2 underline-offset-4 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 hover:underline hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                              class="block font-sans text-sm font-medium decoration-2 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:bg-accent after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
                               href="/reviews/the-shining-by-stephen-king/"
                             >
                               The Shining
@@ -1690,7 +1690,7 @@ exports[`Home > matches snapshot 1`] = `
                           </div>
                         </li>
                         <li
-                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
                         >
                           <div
                             class="w-list-item-cover shrink-0"
@@ -1711,7 +1711,7 @@ exports[`Home > matches snapshot 1`] = `
                             class="flex grow flex-col gap-y-1"
                           >
                             <a
-                              class="block font-sans text-sm font-medium text-accent decoration-accent decoration-2 underline-offset-4 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 hover:underline hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                              class="block font-sans text-sm font-medium decoration-2 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:bg-accent after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
                               href="/reviews/doctor-sleep-by-stephen-king/"
                             >
                               Doctor Sleep
@@ -1769,7 +1769,7 @@ exports[`Home > matches snapshot 1`] = `
                         class="py-2 tablet:px-4"
                       >
                         <li
-                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
                         >
                           <div
                             class="w-list-item-cover shrink-0"
@@ -1790,7 +1790,7 @@ exports[`Home > matches snapshot 1`] = `
                             class="flex grow flex-col gap-y-1"
                           >
                             <a
-                              class="block font-sans text-sm font-medium text-accent decoration-accent decoration-2 underline-offset-4 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 hover:underline hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                              class="block font-sans text-sm font-medium decoration-2 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:bg-accent after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
                               href="/reviews/casino-royale-by-ian-fleming/"
                             >
                               Casino Royale
@@ -1808,7 +1808,7 @@ exports[`Home > matches snapshot 1`] = `
                           </div>
                         </li>
                         <li
-                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
                         >
                           <div
                             class="w-list-item-cover shrink-0"
@@ -1829,7 +1829,7 @@ exports[`Home > matches snapshot 1`] = `
                             class="flex grow flex-col gap-y-1"
                           >
                             <a
-                              class="block font-sans text-sm font-medium text-accent decoration-accent decoration-2 underline-offset-4 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 hover:underline hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                              class="block font-sans text-sm font-medium decoration-2 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:bg-accent after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
                               href="/reviews/live-and-let-die-by-ian-fleming/"
                             >
                               Live and Let Die
@@ -1847,7 +1847,7 @@ exports[`Home > matches snapshot 1`] = `
                           </div>
                         </li>
                         <li
-                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
                         >
                           <div
                             class="w-list-item-cover shrink-0"
@@ -1868,7 +1868,7 @@ exports[`Home > matches snapshot 1`] = `
                             class="flex grow flex-col gap-y-1"
                           >
                             <a
-                              class="block font-sans text-sm font-medium text-accent decoration-accent decoration-2 underline-offset-4 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 hover:underline hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                              class="block font-sans text-sm font-medium decoration-2 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:bg-accent after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
                               href="/reviews/moonraker-by-ian-fleming/"
                             >
                               Moonraker
@@ -1926,7 +1926,7 @@ exports[`Home > matches snapshot 1`] = `
                         class="py-2 tablet:px-4"
                       >
                         <li
-                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
                         >
                           <div
                             class="w-list-item-cover shrink-0"
@@ -1947,7 +1947,7 @@ exports[`Home > matches snapshot 1`] = `
                             class="flex grow flex-col gap-y-1"
                           >
                             <a
-                              class="block font-sans text-sm font-medium text-accent decoration-accent decoration-2 underline-offset-4 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 hover:underline hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                              class="block font-sans text-sm font-medium decoration-2 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:bg-accent after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
                               href="/reviews/record-play-pause-by-stephen-morris/"
                             >
                               Record Play Pause
@@ -1965,7 +1965,7 @@ exports[`Home > matches snapshot 1`] = `
                           </div>
                         </li>
                         <li
-                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
                         >
                           <div
                             class="w-list-item-cover shrink-0"
@@ -1986,7 +1986,7 @@ exports[`Home > matches snapshot 1`] = `
                             class="flex grow flex-col gap-y-1"
                           >
                             <a
-                              class="block font-sans text-sm font-medium text-accent decoration-accent decoration-2 underline-offset-4 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 hover:underline hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                              class="block font-sans text-sm font-medium decoration-2 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:bg-accent after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
                               href="/reviews/fast-forward-by-stephen-morris/"
                             >
                               Fast Forward
@@ -2004,7 +2004,7 @@ exports[`Home > matches snapshot 1`] = `
                           </div>
                         </li>
                         <li
-                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
                         >
                           <div
                             class="w-list-item-cover shrink-0"
@@ -2025,7 +2025,7 @@ exports[`Home > matches snapshot 1`] = `
                             class="flex grow flex-col gap-y-1"
                           >
                             <a
-                              class="block font-sans text-sm font-medium text-accent decoration-accent decoration-2 underline-offset-4 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 hover:underline hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                              class="block font-sans text-sm font-medium decoration-2 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:bg-accent after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
                               href="/reviews/fast-forward-by-stephen-morris/"
                             >
                               Fast Forward
@@ -2083,7 +2083,7 @@ exports[`Home > matches snapshot 1`] = `
                         class="py-2 tablet:px-4"
                       >
                         <li
-                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
                         >
                           <div
                             class="w-list-item-cover shrink-0"
@@ -2104,7 +2104,7 @@ exports[`Home > matches snapshot 1`] = `
                             class="flex grow flex-col gap-y-1"
                           >
                             <a
-                              class="block font-sans text-sm font-medium text-accent decoration-accent decoration-2 underline-offset-4 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 hover:underline hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                              class="block font-sans text-sm font-medium decoration-2 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:bg-accent after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
                               href="/reviews/less-than-zero-by-bret-easton-ellis/"
                             >
                               Less Than Zero
@@ -2122,7 +2122,7 @@ exports[`Home > matches snapshot 1`] = `
                           </div>
                         </li>
                         <li
-                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
                         >
                           <div
                             class="w-list-item-cover shrink-0"
@@ -2143,7 +2143,7 @@ exports[`Home > matches snapshot 1`] = `
                             class="flex grow flex-col gap-y-1"
                           >
                             <a
-                              class="block font-sans text-sm font-medium text-accent decoration-accent decoration-2 underline-offset-4 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 hover:underline hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                              class="block font-sans text-sm font-medium decoration-2 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:bg-accent after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
                               href="/reviews/the-rules-of-attraction-by-bret-easton-ellis/"
                             >
                               The Rules of Attraction
@@ -2201,7 +2201,7 @@ exports[`Home > matches snapshot 1`] = `
                         class="py-2 tablet:px-4"
                       >
                         <li
-                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
                         >
                           <div
                             class="w-list-item-cover shrink-0"
@@ -2222,7 +2222,7 @@ exports[`Home > matches snapshot 1`] = `
                             class="flex grow flex-col gap-y-1"
                           >
                             <a
-                              class="block font-sans text-sm font-medium text-accent decoration-accent decoration-2 underline-offset-4 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 hover:underline hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                              class="block font-sans text-sm font-medium decoration-2 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:bg-accent after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
                               href="/reviews/fight-club-by-chuck-palahniuk/"
                             >
                               Fight Club
@@ -2240,7 +2240,7 @@ exports[`Home > matches snapshot 1`] = `
                           </div>
                         </li>
                         <li
-                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
                         >
                           <div
                             class="w-list-item-cover shrink-0"
@@ -2261,7 +2261,7 @@ exports[`Home > matches snapshot 1`] = `
                             class="flex grow flex-col gap-y-1"
                           >
                             <a
-                              class="block font-sans text-sm font-medium text-accent decoration-accent decoration-2 underline-offset-4 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 hover:underline hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                              class="block font-sans text-sm font-medium decoration-2 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:bg-accent after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
                               href="/reviews/consider-this-by-chuck-palahniuk/"
                             >
                               Consider This

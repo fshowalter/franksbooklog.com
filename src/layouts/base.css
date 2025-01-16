@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --bg-accent: #6f1a07;
+  --bg-accent: #a52422;
   --bg-abandoned: #da0101;
   --bg-canvas: #f2f0e8;
   --bg-default-alpha: 0.4;
@@ -19,7 +19,7 @@
   --bg-subtle: #fafafa;
   --border-accent: #054a93;
   --border-default: #e9e7e0;
-  --fg-accent: #6f1a07;
+  --fg-accent: #a52422;
   --fg-default: rgb(0 0 0 / 75%);
   --fg-emphasis: rgb(0 0 0 / 95%);
   --fg-inverse: #fff;
