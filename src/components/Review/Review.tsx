@@ -72,7 +72,7 @@ export function Review({
             <IncludedWorks values={value.includedWorks} />
           </div>
         )}
-        <div className="w-full max-w-prose">
+        <div className="w-full max-w-popout">
           <SubHeading as="h2" className="text-center shadow-bottom">
             Reading History
           </SubHeading>

@@ -1,15 +1,26 @@
 import type { ReviewWithContent } from "~/api/reviews";
 
 import { BarGradient } from "~/components/BarGradient";
-import { DateIcon } from "~/components/DateIcon";
 import { RenderedMarkdown } from "~/components/RenderedMarkdown";
 
-const dateFormat = new Intl.DateTimeFormat("en-US", {
-  day: "numeric",
+const monthFormat = new Intl.DateTimeFormat("en-US", {
   month: "short",
   timeZone: "UTC",
-  weekday: "short",
+});
+
+const yearFormat = new Intl.DateTimeFormat("en-US", {
+  timeZone: "UTC",
   year: "numeric",
+});
+
+const dayFormat = new Intl.DateTimeFormat("en-US", {
+  day: "numeric",
+  timeZone: "UTC",
+});
+
+const weekdayFormat = new Intl.DateTimeFormat("en-US", {
+  timeZone: "UTC",
+  weekday: "short",
 });
 
 const progressDateFormat = new Intl.DateTimeFormat("en-GB", {
@@ -25,30 +36,40 @@ type Props = {
 
 export function ReadingHistoryListItem({ value }: Props) {
   return (
-    <li className="grid auto-rows-auto grid-cols-[16px_16px_1fr] pt-4 font-sans text-xs even:bg-subtle">
-      <DateIcon />{" "}
-      <div className="col-start-3">
-        <Date value={value.date} />
-        <Edition value={value.edition} />{" "}
-        <EditionNotes value={value.editionNotes} />
+    <li className="mb-1 flex flex-col bg-subtle px-container font-sans text-xs font-light tablet:px-6">
+      <div className="flex gap-x-4 py-4 tablet:gap-x-6">
+        <div className="size-auto self-start">
+          <Date date={value.date} />
+        </div>
+        <div className="mt-12 grow">
+          <Edition value={value.edition} />
+          <EditionNotes value={value.editionNotes} />
+          <Details value={value} />
+        </div>
       </div>
-      <div className="col-start-3 row-start-2">
-        <Details value={value} />
-      </div>
-      <div className="col-span-3 col-start-1 row-start-3 pt-4">
+      <div>
         <ReadingNotes value={value.readingNotes} />
       </div>
     </li>
   );
 }
 
-function Date({ value }: { value: ReviewWithContent["readings"][0]["date"] }) {
+function Date({ date }: { date: Date }) {
   return (
-    <>
-      <span className="inline-block font-sans text-xs font-normal tracking-normal text-subtle">
-        {dateFormat.format(value)}
-      </span>{" "}
-    </>
+    <div className="bg-subtle py-2 text-center">
+      <div className="px-4 pb-2 font-serif text-md font-normal text-subtle">
+        {yearFormat.format(date)}
+      </div>
+      <div className="bg-default py-1 text-subtle">
+        {monthFormat.format(date)}
+      </div>
+      <div className="bg-default font-serif text-md font-normal text-default">
+        {dayFormat.format(date)}
+      </div>
+      <div className="bg-default py-1 text-subtle">
+        {weekdayFormat.format(date)}
+      </div>
+    </div>
   );
 }
 
@@ -71,7 +92,7 @@ function Details({ value }: { value: ReviewWithContent["readings"][0] }) {
           {value.readingTime} Days
         </span>
       </summary>
-      <ol className="grid w-full grid-cols-[auto,1fr,auto]">
+      <ol className="grid w-full grid-cols-[auto,1fr,auto] pt-3">
         {value.timeline.map((entry) => {
           let progressValue;
           const progressNumber = entry.progress.split("%", 1)[0];
@@ -88,16 +109,16 @@ function Details({ value }: { value: ReviewWithContent["readings"][0] }) {
 
           return (
             <li
-              className="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr,auto,auto,1fr] py-3"
+              className="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr,auto,auto,1fr] py-1"
               key={entryDate}
             >
-              <div className="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid">
+              <div className="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-xs">
                 <div className="">{entryDate}</div>
-                <div className="col-start-3 self-center text-nowrap pb-1 text-right font-sans text-xs text-subtle">
+                <div className="col-start-3 self-center text-nowrap pb-1 text-right font-sans text-xs">
                   <div className="">{entry.progress}</div>
                 </div>
               </div>
-              <div className="col-span-2 col-start-2 row-start-3 bg-subtle">
+              <div className="col-span-2 col-start-2 row-start-3 bg-stripe">
                 {progressValue && (
                   <BarGradient maxValue={100} value={progressValue} />
                 )}
@@ -116,9 +137,8 @@ function Edition({
   value: ReviewWithContent["readings"][0]["edition"];
 }) {
   return (
-    <span className="text-subtle">
-      <span>via</span>{" "}
-      <span className="font-sans text-xs font-normal text-subtle">{value}</span>
+    <span className="font-serif text-base font-normal text-default">
+      {value}
     </span>
   );
 }
@@ -133,6 +153,7 @@ function EditionNotes({
   }
   return (
     <span className="font-light tracking-normal text-subtle">
+      {" "}
       (
       <RenderedMarkdown as="span" className="leading-none" text={value} />)
     </span>
@@ -148,8 +169,11 @@ function ReadingNotes({
     return false;
   }
   return (
-    <div className="pb-6 text-sm font-light">
-      <RenderedMarkdown className="leading-normal text-muted" text={value} />
+    <div className="px-2 pb-6 text-sm font-light tablet:mx-24 tablet:px-0">
+      <RenderedMarkdown
+        className="leading-normal tracking-prose text-muted"
+        text={value}
+      />
     </div>
   );
 }

@@ -282,7 +282,7 @@
                 himself.
               </p>
             </div>
-            <div class="w-full max-w-prose">
+            <div class="w-full max-w-popout">
               <h2
                 class="py-10 font-sans text-xs font-semibold uppercase tracking-wide text-subtle text-center shadow-bottom"
               >
@@ -290,180 +290,169 @@
               </h2>
               <ul>
                 <li
-                  class="grid auto-rows-auto grid-cols-[16px_16px_1fr] pt-4 font-sans text-xs even:bg-subtle"
+                  class="mb-1 flex flex-col bg-subtle px-container font-sans text-xs font-light tablet:px-6"
                 >
-                  <svg
-                    class="fill-subtle mr-[1ch] min-h-4 min-w-4"
-                    height="1em"
-                    viewBox="0 0 16 16"
-                    width="1em"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <title>Watched on</title>
-                    <path
-                      d="M14 2H2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1zM2 1a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2z"
-                      fill-rule="evenodd"
-                    ></path>
-                    <path
-                      d="M14 2H2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1zM2 1a2 2 0 0 0-2 2v2h16V3a2 2 0 0 0-2-2H2z"
-                      fill-rule="evenodd"
-                    ></path>
-                    <path
-                      d="M3.5 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5zm9 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5z"
-                      fill-rule="evenodd"
-                    ></path>
-                  </svg>
-                  <div class="col-start-3">
-                    <span
-                      class="inline-block font-sans text-xs font-normal tracking-normal text-subtle"
-                      >Thu, Oct 13, 2022</span
-                    >
-                    <span class="text-subtle"
-                      ><span>via</span>
-                      <span class="font-sans text-xs font-normal text-subtle"
+                  <div class="flex gap-x-4 py-4 tablet:gap-x-6">
+                    <div class="size-auto self-start">
+                      <div class="bg-subtle py-2 text-center">
+                        <div
+                          class="px-4 pb-2 font-serif text-md font-normal text-subtle"
+                        >
+                          2022
+                        </div>
+                        <div class="bg-default py-1 text-subtle">Oct</div>
+                        <div
+                          class="bg-default font-serif text-md font-normal text-default"
+                        >
+                          13
+                        </div>
+                        <div class="bg-default py-1 text-subtle">Thu</div>
+                      </div>
+                    </div>
+                    <div class="mt-12 grow">
+                      <span
+                        class="font-serif text-base font-normal text-default"
                         >Audible</span
-                      ></span
-                    >
-                    <span class="font-light tracking-normal text-subtle"
-                      >(<span class="rendered-markdown font-light leading-none"
-                        ><span>Read by Adam Skolnick</span></span
-                      >)</span
-                    >
+                      ><span class="font-light tracking-normal text-subtle">
+                        <!-- -->(<span
+                          class="rendered-markdown font-light leading-none"
+                          ><span>Read by Adam Skolnick</span></span
+                        >)</span
+                      >
+                      <details class="font-light text-subtle">
+                        <summary class="cursor-pointer leading-6">
+                          Listened to over<!-- -->
+                          <span class="font-normal text-subtle"
+                            >10<!-- -->
+                            Days</span
+                          >
+                        </summary>
+                        <ol class="grid w-full grid-cols-[auto,1fr,auto] pt-3">
+                          <li
+                            class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr,auto,auto,1fr] py-1"
+                          >
+                            <div
+                              class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-xs"
+                            >
+                              <div class="">4 Oct 2022</div>
+                              <div
+                                class="col-start-3 self-center text-nowrap pb-1 text-right font-sans text-xs"
+                              >
+                                <div class="">11%</div>
+                              </div>
+                            </div>
+                            <div
+                              class="col-span-2 col-start-2 row-start-3 bg-stripe"
+                            >
+                              <div
+                                class="progress-bar-bg leading-[6px] tablet:mb-0"
+                                style="--bar-percent: 11%"
+                              >
+                                 
+                              </div>
+                            </div>
+                          </li>
+                          <li
+                            class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr,auto,auto,1fr] py-1"
+                          >
+                            <div
+                              class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-xs"
+                            >
+                              <div class="">8 Oct 2022</div>
+                              <div
+                                class="col-start-3 self-center text-nowrap pb-1 text-right font-sans text-xs"
+                              >
+                                <div class="">24%</div>
+                              </div>
+                            </div>
+                            <div
+                              class="col-span-2 col-start-2 row-start-3 bg-stripe"
+                            >
+                              <div
+                                class="progress-bar-bg leading-[6px] tablet:mb-0"
+                                style="--bar-percent: 24%"
+                              >
+                                 
+                              </div>
+                            </div>
+                          </li>
+                          <li
+                            class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr,auto,auto,1fr] py-1"
+                          >
+                            <div
+                              class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-xs"
+                            >
+                              <div class="">9 Oct 2022</div>
+                              <div
+                                class="col-start-3 self-center text-nowrap pb-1 text-right font-sans text-xs"
+                              >
+                                <div class="">39%</div>
+                              </div>
+                            </div>
+                            <div
+                              class="col-span-2 col-start-2 row-start-3 bg-stripe"
+                            >
+                              <div
+                                class="progress-bar-bg leading-[6px] tablet:mb-0"
+                                style="--bar-percent: 39%"
+                              >
+                                 
+                              </div>
+                            </div>
+                          </li>
+                          <li
+                            class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr,auto,auto,1fr] py-1"
+                          >
+                            <div
+                              class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-xs"
+                            >
+                              <div class="">10 Oct 2022</div>
+                              <div
+                                class="col-start-3 self-center text-nowrap pb-1 text-right font-sans text-xs"
+                              >
+                                <div class="">90%</div>
+                              </div>
+                            </div>
+                            <div
+                              class="col-span-2 col-start-2 row-start-3 bg-stripe"
+                            >
+                              <div
+                                class="progress-bar-bg leading-[6px] tablet:mb-0"
+                                style="--bar-percent: 90%"
+                              >
+                                 
+                              </div>
+                            </div>
+                          </li>
+                          <li
+                            class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr,auto,auto,1fr] py-1"
+                          >
+                            <div
+                              class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-xs"
+                            >
+                              <div class="">13 Oct 2022</div>
+                              <div
+                                class="col-start-3 self-center text-nowrap pb-1 text-right font-sans text-xs"
+                              >
+                                <div class="">Finished</div>
+                              </div>
+                            </div>
+                            <div
+                              class="col-span-2 col-start-2 row-start-3 bg-stripe"
+                            >
+                              <div
+                                class="progress-bar-bg leading-[6px] tablet:mb-0"
+                                style="--bar-percent: 100%"
+                              >
+                                 
+                              </div>
+                            </div>
+                          </li>
+                        </ol>
+                      </details>
+                    </div>
                   </div>
-                  <div class="col-start-3 row-start-2">
-                    <details class="font-light text-subtle">
-                      <summary class="cursor-pointer leading-6">
-                        Listened to over<!-- -->
-                        <span class="font-normal text-subtle"
-                          >10<!-- -->
-                          Days</span
-                        >
-                      </summary>
-                      <ol class="grid w-full grid-cols-[auto,1fr,auto]">
-                        <li
-                          class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr,auto,auto,1fr] py-3"
-                        >
-                          <div
-                            class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid"
-                          >
-                            <div class="">4 Oct 2022</div>
-                            <div
-                              class="col-start-3 self-center text-nowrap pb-1 text-right font-sans text-xs text-subtle"
-                            >
-                              <div class="">11%</div>
-                            </div>
-                          </div>
-                          <div
-                            class="col-span-2 col-start-2 row-start-3 bg-subtle"
-                          >
-                            <div
-                              class="progress-bar-bg leading-[6px] tablet:mb-0"
-                              style="--bar-percent: 11%"
-                            >
-                               
-                            </div>
-                          </div>
-                        </li>
-                        <li
-                          class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr,auto,auto,1fr] py-3"
-                        >
-                          <div
-                            class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid"
-                          >
-                            <div class="">8 Oct 2022</div>
-                            <div
-                              class="col-start-3 self-center text-nowrap pb-1 text-right font-sans text-xs text-subtle"
-                            >
-                              <div class="">24%</div>
-                            </div>
-                          </div>
-                          <div
-                            class="col-span-2 col-start-2 row-start-3 bg-subtle"
-                          >
-                            <div
-                              class="progress-bar-bg leading-[6px] tablet:mb-0"
-                              style="--bar-percent: 24%"
-                            >
-                               
-                            </div>
-                          </div>
-                        </li>
-                        <li
-                          class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr,auto,auto,1fr] py-3"
-                        >
-                          <div
-                            class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid"
-                          >
-                            <div class="">9 Oct 2022</div>
-                            <div
-                              class="col-start-3 self-center text-nowrap pb-1 text-right font-sans text-xs text-subtle"
-                            >
-                              <div class="">39%</div>
-                            </div>
-                          </div>
-                          <div
-                            class="col-span-2 col-start-2 row-start-3 bg-subtle"
-                          >
-                            <div
-                              class="progress-bar-bg leading-[6px] tablet:mb-0"
-                              style="--bar-percent: 39%"
-                            >
-                               
-                            </div>
-                          </div>
-                        </li>
-                        <li
-                          class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr,auto,auto,1fr] py-3"
-                        >
-                          <div
-                            class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid"
-                          >
-                            <div class="">10 Oct 2022</div>
-                            <div
-                              class="col-start-3 self-center text-nowrap pb-1 text-right font-sans text-xs text-subtle"
-                            >
-                              <div class="">90%</div>
-                            </div>
-                          </div>
-                          <div
-                            class="col-span-2 col-start-2 row-start-3 bg-subtle"
-                          >
-                            <div
-                              class="progress-bar-bg leading-[6px] tablet:mb-0"
-                              style="--bar-percent: 90%"
-                            >
-                               
-                            </div>
-                          </div>
-                        </li>
-                        <li
-                          class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr,auto,auto,1fr] py-3"
-                        >
-                          <div
-                            class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid"
-                          >
-                            <div class="">13 Oct 2022</div>
-                            <div
-                              class="col-start-3 self-center text-nowrap pb-1 text-right font-sans text-xs text-subtle"
-                            >
-                              <div class="">Finished</div>
-                            </div>
-                          </div>
-                          <div
-                            class="col-span-2 col-start-2 row-start-3 bg-subtle"
-                          >
-                            <div
-                              class="progress-bar-bg leading-[6px] tablet:mb-0"
-                              style="--bar-percent: 100%"
-                            >
-                               
-                            </div>
-                          </div>
-                        </li>
-                      </ol>
-                    </details>
-                  </div>
-                  <div class="col-span-3 col-start-1 row-start-3 pt-4"></div>
+                  <div></div>
                 </li>
               </ul>
             </div>
