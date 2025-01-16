@@ -13,7 +13,7 @@ export async function getProps({
   slug: string;
 }): Promise<Props> {
   const { content, title } = await getPage(slug);
-  const recentReviews = await mostRecentReviews(4);
+  const recentReviews = await mostRecentReviews(6);
 
   return {
     content,

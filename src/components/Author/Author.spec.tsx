@@ -122,27 +122,6 @@ describe("Author", () => {
     expect(screen.getByTestId("list")).toMatchSnapshot();
   });
 
-  it("can hide reviewed titles", async ({ expect }) => {
-    expect.hasAssertions();
-
-    render(<Author {...props} />);
-
-    await userEvent.click(screen.getByText("Hide Reviewed"));
-
-    expect(screen.getByTestId("list")).toMatchSnapshot();
-  });
-
-  it("can show hidden reviewed titles", async ({ expect }) => {
-    expect.hasAssertions();
-
-    render(<Author {...props} />);
-
-    await userEvent.click(screen.getByText("Hide Reviewed"));
-    await userEvent.click(screen.getByText("Show Reviewed"));
-
-    expect(screen.getByTestId("list")).toMatchSnapshot();
-  });
-
   it("can view more titles", async ({ expect }) => {
     expect.hasAssertions();
 

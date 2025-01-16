@@ -1,4 +1,3 @@
-import { Button } from "~/components/Button";
 import { DebouncedInput } from "~/components/DebouncedInput";
 import { SelectField } from "~/components/SelectField";
 import { SelectOptions } from "~/components/SelectOptions";
@@ -12,23 +11,15 @@ export function Filters({
   dispatch,
   distinctKinds,
   distinctPublishedYears,
-  hideReviewed,
   sortValue,
 }: {
   dispatch: React.Dispatch<ActionType>;
   distinctKinds: readonly string[];
   distinctPublishedYears: readonly string[];
-  hideReviewed: boolean;
   sortValue: Sort;
 }) {
   return (
     <>
-      <div className="flex flex-col justify-end">
-        <Button onClick={() => dispatch({ type: Actions.TOGGLE_REVIEWED })}>
-          {hideReviewed ? "Show Reviewed" : "Hide Reviewed"}
-        </Button>
-      </div>
-
       <DebouncedInput
         label="Title"
         onInputChange={(value) =>

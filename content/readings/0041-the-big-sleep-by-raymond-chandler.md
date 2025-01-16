@@ -7,3 +7,5 @@ timeline:
     progress: Finished
 edition_notes: Read by Scott Brick
 ---
+
+Brick is a fine narrator but ill-suited for the voice of Marlowe. And the decision to add jazz and orchestral interludes between chapters gave the production a radio-play semblance that also felt awry.

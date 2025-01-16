@@ -229,17 +229,27 @@ exports[`Review > matches snapshot for slug 'about-face-by-david-h-hackworth-jul
         <header
           class="mb-12 flex flex-col items-center px-[8%] pt-10"
         >
+          <nav
+            class="pb-3"
+          >
+            <a
+              class="font-sans text-xs uppercase tracking-wider text-accent"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </nav>
           <h1
             class="text-center text-4xl desktop:text-6xl"
             data-pagefind-meta="title"
           >
             About Face
-            <div
-              class="max-w-prose pt-2 text-base font-light tracking-wider text-muted"
-            >
-              The Odyssey of an American Warrior
-            </div>
           </h1>
+          <p
+            class="max-w-prose pt-2 text-base font-light tracking-wider text-muted"
+          >
+            The Odyssey of an American Warrior
+          </p>
           <div
             class="mt-4 text-center text-md text-muted"
           >
@@ -311,7 +321,7 @@ exports[`Review > matches snapshot for slug 'about-face-by-david-h-hackworth-jul
               <img
                 alt=""
                 class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                decoding="async"
+                decoding="auto"
                 height="372"
                 loading="eager"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fabout-face-by-david-h-hackworth-julie-sherman.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
@@ -1325,6 +1335,16 @@ exports[`Review > matches snapshot for slug 'altar-by-philip-fracassi' 1`] = `
         <header
           class="mb-12 flex flex-col items-center px-[8%] pt-10"
         >
+          <nav
+            class="pb-3"
+          >
+            <a
+              class="font-sans text-xs uppercase tracking-wider text-accent"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </nav>
           <h1
             class="text-center text-4xl desktop:text-6xl"
             data-pagefind-meta="title"
@@ -1392,7 +1412,7 @@ exports[`Review > matches snapshot for slug 'altar-by-philip-fracassi' 1`] = `
               <img
                 alt=""
                 class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                decoding="async"
+                decoding="auto"
                 height="372"
                 loading="eager"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fbehold-the-void-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
@@ -2176,6 +2196,16 @@ exports[`Review > matches snapshot for slug 'behold-the-void-by-philip-fracassi'
         <header
           class="mb-12 flex flex-col items-center px-[8%] pt-10"
         >
+          <nav
+            class="pb-3"
+          >
+            <a
+              class="font-sans text-xs uppercase tracking-wider text-accent"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </nav>
           <h1
             class="text-center text-4xl desktop:text-6xl"
             data-pagefind-meta="title"
@@ -2243,7 +2273,7 @@ exports[`Review > matches snapshot for slug 'behold-the-void-by-philip-fracassi'
               <img
                 alt=""
                 class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                decoding="async"
+                decoding="auto"
                 height="372"
                 loading="eager"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fbehold-the-void-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
@@ -3743,6 +3773,16 @@ exports[`Review > matches snapshot for slug 'brother-iron-sister-steel-by-dave-d
         <header
           class="mb-12 flex flex-col items-center px-[8%] pt-10"
         >
+          <nav
+            class="pb-3"
+          >
+            <a
+              class="font-sans text-xs uppercase tracking-wider text-accent"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </nav>
           <h1
             class="text-center text-4xl desktop:text-6xl"
             data-pagefind-meta="title"
@@ -3810,7 +3850,7 @@ exports[`Review > matches snapshot for slug 'brother-iron-sister-steel-by-dave-d
               <img
                 alt=""
                 class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                decoding="async"
+                decoding="auto"
                 height="372"
                 loading="eager"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fbrother-iron-sister-steel-by-dave-draper.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
@@ -4652,17 +4692,27 @@ exports[`Review > matches snapshot for slug 'cant-hurt-me-by-david-goggins' 1`] 
         <header
           class="mb-12 flex flex-col items-center px-[8%] pt-10"
         >
+          <nav
+            class="pb-3"
+          >
+            <a
+              class="font-sans text-xs uppercase tracking-wider text-accent"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </nav>
           <h1
             class="text-center text-4xl desktop:text-6xl"
             data-pagefind-meta="title"
           >
             Can't Hurt Me
-            <div
-              class="max-w-prose pt-2 text-base font-light tracking-wider text-muted"
-            >
-              Master Your Mind and Defy the Odds
-            </div>
           </h1>
+          <p
+            class="max-w-prose pt-2 text-base font-light tracking-wider text-muted"
+          >
+            Master Your Mind and Defy the Odds
+          </p>
           <div
             class="mt-4 text-center text-md text-muted"
           >
@@ -4724,7 +4774,7 @@ exports[`Review > matches snapshot for slug 'cant-hurt-me-by-david-goggins' 1`] 
               <img
                 alt=""
                 class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                decoding="async"
+                decoding="auto"
                 height="372"
                 loading="eager"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fcant-hurt-me-by-david-goggins.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
@@ -5643,6 +5693,16 @@ exports[`Review > matches snapshot for slug 'carrie-by-stephen-king' 1`] = `
         <header
           class="mb-12 flex flex-col items-center px-[8%] pt-10"
         >
+          <nav
+            class="pb-3"
+          >
+            <a
+              class="font-sans text-xs uppercase tracking-wider text-accent"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </nav>
           <h1
             class="text-center text-4xl desktop:text-6xl"
             data-pagefind-meta="title"
@@ -5710,7 +5770,7 @@ exports[`Review > matches snapshot for slug 'carrie-by-stephen-king' 1`] = `
               <img
                 alt=""
                 class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                decoding="async"
+                decoding="auto"
                 height="372"
                 loading="eager"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fcarrie-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
@@ -6782,6 +6842,16 @@ exports[`Review > matches snapshot for slug 'casino-royale-by-ian-fleming' 1`] =
         <header
           class="mb-12 flex flex-col items-center px-[8%] pt-10"
         >
+          <nav
+            class="pb-3"
+          >
+            <a
+              class="font-sans text-xs uppercase tracking-wider text-accent"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </nav>
           <h1
             class="text-center text-4xl desktop:text-6xl"
             data-pagefind-meta="title"
@@ -6849,7 +6919,7 @@ exports[`Review > matches snapshot for slug 'casino-royale-by-ian-fleming' 1`] =
               <img
                 alt=""
                 class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                decoding="async"
+                decoding="auto"
                 height="372"
                 loading="eager"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fcasino-royale-by-ian-fleming.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
@@ -7862,17 +7932,27 @@ exports[`Review > matches snapshot for slug 'churchill-by-andrew-roberts' 1`] = 
         <header
           class="mb-12 flex flex-col items-center px-[8%] pt-10"
         >
+          <nav
+            class="pb-3"
+          >
+            <a
+              class="font-sans text-xs uppercase tracking-wider text-accent"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </nav>
           <h1
             class="text-center text-4xl desktop:text-6xl"
             data-pagefind-meta="title"
           >
             Churchill
-            <div
-              class="max-w-prose pt-2 text-base font-light tracking-wider text-muted"
-            >
-              Walking with Destiny
-            </div>
           </h1>
+          <p
+            class="max-w-prose pt-2 text-base font-light tracking-wider text-muted"
+          >
+            Walking with Destiny
+          </p>
           <div
             class="mt-4 text-center text-md text-muted"
           >
@@ -7934,7 +8014,7 @@ exports[`Review > matches snapshot for slug 'churchill-by-andrew-roberts' 1`] = 
               <img
                 alt=""
                 class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                decoding="async"
+                decoding="auto"
                 height="372"
                 loading="eager"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fchurchill-by-andrew-roberts.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
@@ -9036,6 +9116,16 @@ exports[`Review > matches snapshot for slug 'coffin-by-philip-fracassi' 1`] = `
         <header
           class="mb-12 flex flex-col items-center px-[8%] pt-10"
         >
+          <nav
+            class="pb-3"
+          >
+            <a
+              class="font-sans text-xs uppercase tracking-wider text-accent"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </nav>
           <h1
             class="text-center text-4xl desktop:text-6xl"
             data-pagefind-meta="title"
@@ -9103,7 +9193,7 @@ exports[`Review > matches snapshot for slug 'coffin-by-philip-fracassi' 1`] = `
               <img
                 alt=""
                 class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                decoding="async"
+                decoding="auto"
                 height="372"
                 loading="eager"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fbehold-the-void-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
@@ -9851,17 +9941,27 @@ exports[`Review > matches snapshot for slug 'consider-this-by-chuck-palahniuk' 1
         <header
           class="mb-12 flex flex-col items-center px-[8%] pt-10"
         >
+          <nav
+            class="pb-3"
+          >
+            <a
+              class="font-sans text-xs uppercase tracking-wider text-accent"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </nav>
           <h1
             class="text-center text-4xl desktop:text-6xl"
             data-pagefind-meta="title"
           >
             Consider This
-            <div
-              class="max-w-prose pt-2 text-base font-light tracking-wider text-muted"
-            >
-              Moments in My Writing Life After Which Everything Was Different
-            </div>
           </h1>
+          <p
+            class="max-w-prose pt-2 text-base font-light tracking-wider text-muted"
+          >
+            Moments in My Writing Life After Which Everything Was Different
+          </p>
           <div
             class="mt-4 text-center text-md text-muted"
           >
@@ -9923,7 +10023,7 @@ exports[`Review > matches snapshot for slug 'consider-this-by-chuck-palahniuk' 1
               <img
                 alt=""
                 class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                decoding="async"
+                decoding="auto"
                 height="372"
                 loading="eager"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fconsider-this-by-chuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
@@ -10759,17 +10859,27 @@ exports[`Review > matches snapshot for slug 'cured-by-lol-tolhurst' 1`] = `
         <header
           class="mb-12 flex flex-col items-center px-[8%] pt-10"
         >
+          <nav
+            class="pb-3"
+          >
+            <a
+              class="font-sans text-xs uppercase tracking-wider text-accent"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </nav>
           <h1
             class="text-center text-4xl desktop:text-6xl"
             data-pagefind-meta="title"
           >
             Cured
-            <div
-              class="max-w-prose pt-2 text-base font-light tracking-wider text-muted"
-            >
-              The Tale of Two Imaginary Boys
-            </div>
           </h1>
+          <p
+            class="max-w-prose pt-2 text-base font-light tracking-wider text-muted"
+          >
+            The Tale of Two Imaginary Boys
+          </p>
           <div
             class="mt-4 text-center text-md text-muted"
           >
@@ -10831,7 +10941,7 @@ exports[`Review > matches snapshot for slug 'cured-by-lol-tolhurst' 1`] = `
               <img
                 alt=""
                 class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                decoding="async"
+                decoding="auto"
                 height="372"
                 loading="eager"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fcured-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
@@ -11776,6 +11886,16 @@ exports[`Review > matches snapshot for slug 'desert-pickup-by-richard-laymon' 1`
         <header
           class="mb-12 flex flex-col items-center px-[8%] pt-10"
         >
+          <nav
+            class="pb-3"
+          >
+            <a
+              class="font-sans text-xs uppercase tracking-wider text-accent"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </nav>
           <h1
             class="text-center text-4xl desktop:text-6xl"
             data-pagefind-meta="title"
@@ -11843,7 +11963,7 @@ exports[`Review > matches snapshot for slug 'desert-pickup-by-richard-laymon' 1`
               <img
                 alt=""
                 class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                decoding="async"
+                decoding="auto"
                 height="372"
                 loading="eager"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fshort-stories-volume-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
@@ -12605,6 +12725,16 @@ exports[`Review > matches snapshot for slug 'doctor-sleep-by-stephen-king' 1`] =
         <header
           class="mb-12 flex flex-col items-center px-[8%] pt-10"
         >
+          <nav
+            class="pb-3"
+          >
+            <a
+              class="font-sans text-xs uppercase tracking-wider text-accent"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </nav>
           <h1
             class="text-center text-4xl desktop:text-6xl"
             data-pagefind-meta="title"
@@ -12672,7 +12802,7 @@ exports[`Review > matches snapshot for slug 'doctor-sleep-by-stephen-king' 1`] =
               <img
                 alt=""
                 class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                decoding="async"
+                decoding="auto"
                 height="372"
                 loading="eager"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdoctor-sleep-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
@@ -14216,6 +14346,16 @@ exports[`Review > matches snapshot for slug 'dont-let-them-get-you-down-by-phili
         <header
           class="mb-12 flex flex-col items-center px-[8%] pt-10"
         >
+          <nav
+            class="pb-3"
+          >
+            <a
+              class="font-sans text-xs uppercase tracking-wider text-accent"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </nav>
           <h1
             class="text-center text-4xl desktop:text-6xl"
             data-pagefind-meta="title"
@@ -14283,7 +14423,7 @@ exports[`Review > matches snapshot for slug 'dont-let-them-get-you-down-by-phili
               <img
                 alt=""
                 class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                decoding="async"
+                decoding="auto"
                 height="372"
                 loading="eager"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdont-let-them-get-you-down-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
@@ -15355,6 +15495,16 @@ exports[`Review > matches snapshot for slug 'dracula-by-bram-stoker' 1`] = `
         <header
           class="mb-12 flex flex-col items-center px-[8%] pt-10"
         >
+          <nav
+            class="pb-3"
+          >
+            <a
+              class="font-sans text-xs uppercase tracking-wider text-accent"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </nav>
           <h1
             class="text-center text-4xl desktop:text-6xl"
             data-pagefind-meta="title"
@@ -15422,7 +15572,7 @@ exports[`Review > matches snapshot for slug 'dracula-by-bram-stoker' 1`] = `
               <img
                 alt=""
                 class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                decoding="async"
+                decoding="auto"
                 height="372"
                 loading="eager"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdracula-by-bram-stoker.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
@@ -16596,17 +16746,27 @@ exports[`Review > matches snapshot for slug 'draft-no-4-by-john-mcphee' 1`] = `
         <header
           class="mb-12 flex flex-col items-center px-[8%] pt-10"
         >
+          <nav
+            class="pb-3"
+          >
+            <a
+              class="font-sans text-xs uppercase tracking-wider text-accent"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </nav>
           <h1
             class="text-center text-4xl desktop:text-6xl"
             data-pagefind-meta="title"
           >
             Draft No. 4
-            <div
-              class="max-w-prose pt-2 text-base font-light tracking-wider text-muted"
-            >
-              On the Writing Process
-            </div>
           </h1>
+          <p
+            class="max-w-prose pt-2 text-base font-light tracking-wider text-muted"
+          >
+            On the Writing Process
+          </p>
           <div
             class="mt-4 text-center text-md text-muted"
           >
@@ -16668,7 +16828,7 @@ exports[`Review > matches snapshot for slug 'draft-no-4-by-john-mcphee' 1`] = `
               <img
                 alt=""
                 class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                decoding="async"
+                decoding="auto"
                 height="372"
                 loading="eager"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdraft-no-4-by-john-mcphee.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
@@ -17432,17 +17592,27 @@ exports[`Review > matches snapshot for slug 'extreme-ownership-by-jocko-willink-
         <header
           class="mb-12 flex flex-col items-center px-[8%] pt-10"
         >
+          <nav
+            class="pb-3"
+          >
+            <a
+              class="font-sans text-xs uppercase tracking-wider text-accent"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </nav>
           <h1
             class="text-center text-4xl desktop:text-6xl"
             data-pagefind-meta="title"
           >
             Extreme Ownership
-            <div
-              class="max-w-prose pt-2 text-base font-light tracking-wider text-muted"
-            >
-              How U.S. Navy SEALs Lead and Win
-            </div>
           </h1>
+          <p
+            class="max-w-prose pt-2 text-base font-light tracking-wider text-muted"
+          >
+            How U.S. Navy SEALs Lead and Win
+          </p>
           <div
             class="mt-4 text-center text-md text-muted"
           >
@@ -17514,7 +17684,7 @@ exports[`Review > matches snapshot for slug 'extreme-ownership-by-jocko-willink-
               <img
                 alt=""
                 class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                decoding="async"
+                decoding="auto"
                 height="372"
                 loading="eager"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fextreme-ownership-by-jocko-willink-leif-babin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
@@ -18282,6 +18452,16 @@ exports[`Review > matches snapshot for slug 'fail-safe-by-philip-fracassi' 1`] =
         <header
           class="mb-12 flex flex-col items-center px-[8%] pt-10"
         >
+          <nav
+            class="pb-3"
+          >
+            <a
+              class="font-sans text-xs uppercase tracking-wider text-accent"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </nav>
           <h1
             class="text-center text-4xl desktop:text-6xl"
             data-pagefind-meta="title"
@@ -18349,7 +18529,7 @@ exports[`Review > matches snapshot for slug 'fail-safe-by-philip-fracassi' 1`] =
               <img
                 alt=""
                 class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                decoding="async"
+                decoding="auto"
                 height="372"
                 loading="eager"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fbehold-the-void-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
@@ -19124,17 +19304,27 @@ exports[`Review > matches snapshot for slug 'fast-forward-by-stephen-morris' 1`]
         <header
           class="mb-12 flex flex-col items-center px-[8%] pt-10"
         >
+          <nav
+            class="pb-3"
+          >
+            <a
+              class="font-sans text-xs uppercase tracking-wider text-accent"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </nav>
           <h1
             class="text-center text-4xl desktop:text-6xl"
             data-pagefind-meta="title"
           >
             Fast Forward
-            <div
-              class="max-w-prose pt-2 text-base font-light tracking-wider text-muted"
-            >
-              Confessions of a Post-Punk Percussionist: Volume II
-            </div>
           </h1>
+          <p
+            class="max-w-prose pt-2 text-base font-light tracking-wider text-muted"
+          >
+            Confessions of a Post-Punk Percussionist: Volume II
+          </p>
           <div
             class="mt-4 text-center text-md text-muted"
           >
@@ -19196,7 +19386,7 @@ exports[`Review > matches snapshot for slug 'fast-forward-by-stephen-morris' 1`]
               <img
                 alt=""
                 class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                decoding="async"
+                decoding="auto"
                 height="372"
                 loading="eager"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
@@ -20931,6 +21121,16 @@ exports[`Review > matches snapshot for slug 'fight-club-by-chuck-palahniuk' 1`] 
         <header
           class="mb-12 flex flex-col items-center px-[8%] pt-10"
         >
+          <nav
+            class="pb-3"
+          >
+            <a
+              class="font-sans text-xs uppercase tracking-wider text-accent"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </nav>
           <h1
             class="text-center text-4xl desktop:text-6xl"
             data-pagefind-meta="title"
@@ -20998,7 +21198,7 @@ exports[`Review > matches snapshot for slug 'fight-club-by-chuck-palahniuk' 1`] 
               <img
                 alt=""
                 class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                decoding="async"
+                decoding="auto"
                 height="372"
                 loading="eager"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffight-club-by-chuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
@@ -21935,6 +22135,16 @@ exports[`Review > matches snapshot for slug 'fright-night-by-john-skipp-craig-sp
         <header
           class="mb-12 flex flex-col items-center px-[8%] pt-10"
         >
+          <nav
+            class="pb-3"
+          >
+            <a
+              class="font-sans text-xs uppercase tracking-wider text-accent"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </nav>
           <h1
             class="text-center text-4xl desktop:text-6xl"
             data-pagefind-meta="title"
@@ -22012,7 +22222,7 @@ exports[`Review > matches snapshot for slug 'fright-night-by-john-skipp-craig-sp
               <img
                 alt=""
                 class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                decoding="async"
+                decoding="auto"
                 height="372"
                 loading="eager"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
@@ -23177,6 +23387,16 @@ exports[`Review > matches snapshot for slug 'fright-night-origins-by-tom-holland
         <header
           class="mb-12 flex flex-col items-center px-[8%] pt-10"
         >
+          <nav
+            class="pb-3"
+          >
+            <a
+              class="font-sans text-xs uppercase tracking-wider text-accent"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </nav>
           <h1
             class="text-center text-4xl desktop:text-6xl"
             data-pagefind-meta="title"
@@ -23254,7 +23474,7 @@ exports[`Review > matches snapshot for slug 'fright-night-origins-by-tom-holland
               <img
                 alt=""
                 class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                decoding="async"
+                decoding="auto"
                 height="372"
                 loading="eager"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffright-night-origins-by-tom-holland-a-jack-ulrich.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
@@ -24299,6 +24519,16 @@ exports[`Review > matches snapshot for slug 'gothic-by-philip-fracassi' 1`] = `
         <header
           class="mb-12 flex flex-col items-center px-[8%] pt-10"
         >
+          <nav
+            class="pb-3"
+          >
+            <a
+              class="font-sans text-xs uppercase tracking-wider text-accent"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </nav>
           <h1
             class="text-center text-4xl desktop:text-6xl"
             data-pagefind-meta="title"
@@ -24366,7 +24596,7 @@ exports[`Review > matches snapshot for slug 'gothic-by-philip-fracassi' 1`] = `
               <img
                 alt=""
                 class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                decoding="async"
+                decoding="auto"
                 height="372"
                 loading="eager"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgothic-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
@@ -25469,6 +25699,16 @@ exports[`Review > matches snapshot for slug 'hawk-mountain-by-conner-habib' 1`] 
         <header
           class="mb-12 flex flex-col items-center px-[8%] pt-10"
         >
+          <nav
+            class="pb-3"
+          >
+            <a
+              class="font-sans text-xs uppercase tracking-wider text-accent"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </nav>
           <h1
             class="text-center text-4xl desktop:text-6xl"
             data-pagefind-meta="title"
@@ -25536,7 +25776,7 @@ exports[`Review > matches snapshot for slug 'hawk-mountain-by-conner-habib' 1`] 
               <img
                 alt=""
                 class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                decoding="async"
+                decoding="auto"
                 height="372"
                 loading="eager"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fhawk-mountain-by-conner-habib.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
@@ -26884,17 +27124,27 @@ exports[`Review > matches snapshot for slug 'i-will-find-you-by-joe-kenda' 1`] =
         <header
           class="mb-12 flex flex-col items-center px-[8%] pt-10"
         >
+          <nav
+            class="pb-3"
+          >
+            <a
+              class="font-sans text-xs uppercase tracking-wider text-accent"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </nav>
           <h1
             class="text-center text-4xl desktop:text-6xl"
             data-pagefind-meta="title"
           >
             I Will Find You
-            <div
-              class="max-w-prose pt-2 text-base font-light tracking-wider text-muted"
-            >
-              Solving Killer Cases from My Life Fighting Crime
-            </div>
           </h1>
+          <p
+            class="max-w-prose pt-2 text-base font-light tracking-wider text-muted"
+          >
+            Solving Killer Cases from My Life Fighting Crime
+          </p>
           <div
             class="mt-4 text-center text-md text-muted"
           >
@@ -26956,7 +27206,7 @@ exports[`Review > matches snapshot for slug 'i-will-find-you-by-joe-kenda' 1`] =
               <img
                 alt=""
                 class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                decoding="async"
+                decoding="auto"
                 height="372"
                 loading="eager"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fi-will-find-you-by-joe-kenda.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
@@ -27887,6 +28137,16 @@ exports[`Review > matches snapshot for slug 'is-this-anything-by-jerry-seinfeld'
         <header
           class="mb-12 flex flex-col items-center px-[8%] pt-10"
         >
+          <nav
+            class="pb-3"
+          >
+            <a
+              class="font-sans text-xs uppercase tracking-wider text-accent"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </nav>
           <h1
             class="text-center text-4xl desktop:text-6xl"
             data-pagefind-meta="title"
@@ -27954,7 +28214,7 @@ exports[`Review > matches snapshot for slug 'is-this-anything-by-jerry-seinfeld'
               <img
                 alt=""
                 class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                decoding="async"
+                decoding="auto"
                 height="372"
                 loading="eager"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fis-this-anything-by-jerry-seinfeld.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
@@ -28836,6 +29096,16 @@ exports[`Review > matches snapshot for slug 'less-than-zero-by-bret-easton-ellis
         <header
           class="mb-12 flex flex-col items-center px-[8%] pt-10"
         >
+          <nav
+            class="pb-3"
+          >
+            <a
+              class="font-sans text-xs uppercase tracking-wider text-accent"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </nav>
           <h1
             class="text-center text-4xl desktop:text-6xl"
             data-pagefind-meta="title"
@@ -28903,7 +29173,7 @@ exports[`Review > matches snapshot for slug 'less-than-zero-by-bret-easton-ellis
               <img
                 alt=""
                 class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                decoding="async"
+                decoding="auto"
                 height="372"
                 loading="eager"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fless-than-zero-by-bret-easton-ellis.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
@@ -29836,6 +30106,16 @@ exports[`Review > matches snapshot for slug 'live-and-let-die-by-ian-fleming' 1`
         <header
           class="mb-12 flex flex-col items-center px-[8%] pt-10"
         >
+          <nav
+            class="pb-3"
+          >
+            <a
+              class="font-sans text-xs uppercase tracking-wider text-accent"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </nav>
           <h1
             class="text-center text-4xl desktop:text-6xl"
             data-pagefind-meta="title"
@@ -29903,7 +30183,7 @@ exports[`Review > matches snapshot for slug 'live-and-let-die-by-ian-fleming' 1`
               <img
                 alt=""
                 class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                decoding="async"
+                decoding="auto"
                 height="372"
                 loading="eager"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Flive-and-let-die-by-ian-fleming.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
@@ -31154,17 +31434,27 @@ exports[`Review > matches snapshot for slug 'living-with-a-seal-by-jesse-itzler'
         <header
           class="mb-12 flex flex-col items-center px-[8%] pt-10"
         >
+          <nav
+            class="pb-3"
+          >
+            <a
+              class="font-sans text-xs uppercase tracking-wider text-accent"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </nav>
           <h1
             class="text-center text-4xl desktop:text-6xl"
             data-pagefind-meta="title"
           >
             Living with a SEAL
-            <div
-              class="max-w-prose pt-2 text-base font-light tracking-wider text-muted"
-            >
-              31 Days Training with the Toughest Man on the Planet
-            </div>
           </h1>
+          <p
+            class="max-w-prose pt-2 text-base font-light tracking-wider text-muted"
+          >
+            31 Days Training with the Toughest Man on the Planet
+          </p>
           <div
             class="mt-4 text-center text-md text-muted"
           >
@@ -31219,7 +31509,7 @@ exports[`Review > matches snapshot for slug 'living-with-a-seal-by-jesse-itzler'
               <img
                 alt=""
                 class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                decoding="async"
+                decoding="auto"
                 height="372"
                 loading="eager"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fliving-with-a-seal-by-jesse-itzler.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
@@ -32075,6 +32365,16 @@ exports[`Review > matches snapshot for slug 'mandala-by-philip-fracassi' 1`] = `
         <header
           class="mb-12 flex flex-col items-center px-[8%] pt-10"
         >
+          <nav
+            class="pb-3"
+          >
+            <a
+              class="font-sans text-xs uppercase tracking-wider text-accent"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </nav>
           <h1
             class="text-center text-4xl desktop:text-6xl"
             data-pagefind-meta="title"
@@ -32142,7 +32442,7 @@ exports[`Review > matches snapshot for slug 'mandala-by-philip-fracassi' 1`] = `
               <img
                 alt=""
                 class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                decoding="async"
+                decoding="auto"
                 height="372"
                 loading="eager"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fbehold-the-void-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
@@ -33007,6 +33307,16 @@ exports[`Review > matches snapshot for slug 'moonraker-by-ian-fleming' 1`] = `
         <header
           class="mb-12 flex flex-col items-center px-[8%] pt-10"
         >
+          <nav
+            class="pb-3"
+          >
+            <a
+              class="font-sans text-xs uppercase tracking-wider text-accent"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </nav>
           <h1
             class="text-center text-4xl desktop:text-6xl"
             data-pagefind-meta="title"
@@ -33074,7 +33384,7 @@ exports[`Review > matches snapshot for slug 'moonraker-by-ian-fleming' 1`] = `
               <img
                 alt=""
                 class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                decoding="async"
+                decoding="auto"
                 height="372"
                 loading="eager"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fmoonraker-by-ian-fleming.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
@@ -33966,6 +34276,16 @@ exports[`Review > matches snapshot for slug 'mother-by-philip-fracassi' 1`] = `
         <header
           class="mb-12 flex flex-col items-center px-[8%] pt-10"
         >
+          <nav
+            class="pb-3"
+          >
+            <a
+              class="font-sans text-xs uppercase tracking-wider text-accent"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </nav>
           <h1
             class="text-center text-4xl desktop:text-6xl"
             data-pagefind-meta="title"
@@ -34033,7 +34353,7 @@ exports[`Review > matches snapshot for slug 'mother-by-philip-fracassi' 1`] = `
               <img
                 alt=""
                 class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                decoding="async"
+                decoding="auto"
                 height="372"
                 loading="eager"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fbehold-the-void-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
@@ -34809,17 +35129,27 @@ exports[`Review > matches snapshot for slug 'on-writing-by-stephen-king' 1`] = `
         <header
           class="mb-12 flex flex-col items-center px-[8%] pt-10"
         >
+          <nav
+            class="pb-3"
+          >
+            <a
+              class="font-sans text-xs uppercase tracking-wider text-accent"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </nav>
           <h1
             class="text-center text-4xl desktop:text-6xl"
             data-pagefind-meta="title"
           >
             On Writing
-            <div
-              class="max-w-prose pt-2 text-base font-light tracking-wider text-muted"
-            >
-              A Memoir of the Craft
-            </div>
           </h1>
+          <p
+            class="max-w-prose pt-2 text-base font-light tracking-wider text-muted"
+          >
+            A Memoir of the Craft
+          </p>
           <div
             class="mt-4 text-center text-md text-muted"
           >
@@ -34881,7 +35211,7 @@ exports[`Review > matches snapshot for slug 'on-writing-by-stephen-king' 1`] = `
               <img
                 alt=""
                 class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                decoding="async"
+                decoding="auto"
                 height="372"
                 loading="eager"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fon-writing-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
@@ -35823,6 +36153,16 @@ exports[`Review > matches snapshot for slug 'out-are-the-lights-by-richard-laymo
         <header
           class="mb-12 flex flex-col items-center px-[8%] pt-10"
         >
+          <nav
+            class="pb-3"
+          >
+            <a
+              class="font-sans text-xs uppercase tracking-wider text-accent"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </nav>
           <h1
             class="text-center text-4xl desktop:text-6xl"
             data-pagefind-meta="title"
@@ -35890,7 +36230,7 @@ exports[`Review > matches snapshot for slug 'out-are-the-lights-by-richard-laymo
               <img
                 alt=""
                 class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                decoding="async"
+                decoding="auto"
                 height="372"
                 loading="eager"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fout-are-the-lights-and-other-tales-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
@@ -36997,17 +37337,27 @@ exports[`Review > matches snapshot for slug 'recessional-by-david-mamet' 1`] = `
         <header
           class="mb-12 flex flex-col items-center px-[8%] pt-10"
         >
+          <nav
+            class="pb-3"
+          >
+            <a
+              class="font-sans text-xs uppercase tracking-wider text-accent"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </nav>
           <h1
             class="text-center text-4xl desktop:text-6xl"
             data-pagefind-meta="title"
           >
             Recessional
-            <div
-              class="max-w-prose pt-2 text-base font-light tracking-wider text-muted"
-            >
-              The Death of Free Speech and the Cost of a Free Lunch
-            </div>
           </h1>
+          <p
+            class="max-w-prose pt-2 text-base font-light tracking-wider text-muted"
+          >
+            The Death of Free Speech and the Cost of a Free Lunch
+          </p>
           <div
             class="mt-4 text-center text-md text-muted"
           >
@@ -37069,7 +37419,7 @@ exports[`Review > matches snapshot for slug 'recessional-by-david-mamet' 1`] = `
               <img
                 alt=""
                 class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                decoding="async"
+                decoding="auto"
                 height="372"
                 loading="eager"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frecessional-by-david-mamet.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
@@ -38192,6 +38542,16 @@ exports[`Review > matches snapshot for slug 'record-play-pause-by-stephen-morris
         <header
           class="mb-12 flex flex-col items-center px-[8%] pt-10"
         >
+          <nav
+            class="pb-3"
+          >
+            <a
+              class="font-sans text-xs uppercase tracking-wider text-accent"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </nav>
           <h1
             class="text-center text-4xl desktop:text-6xl"
             data-pagefind-meta="title"
@@ -38259,7 +38619,7 @@ exports[`Review > matches snapshot for slug 'record-play-pause-by-stephen-morris
               <img
                 alt=""
                 class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                decoding="async"
+                decoding="auto"
                 height="372"
                 loading="eager"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frecord-play-pause-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
@@ -39246,6 +39606,16 @@ exports[`Review > matches snapshot for slug 'roadside-pickup-by-richard-laymon' 
         <header
           class="mb-12 flex flex-col items-center px-[8%] pt-10"
         >
+          <nav
+            class="pb-3"
+          >
+            <a
+              class="font-sans text-xs uppercase tracking-wider text-accent"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </nav>
           <h1
             class="text-center text-4xl desktop:text-6xl"
             data-pagefind-meta="title"
@@ -39313,7 +39683,7 @@ exports[`Review > matches snapshot for slug 'roadside-pickup-by-richard-laymon' 
               <img
                 alt=""
                 class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                decoding="async"
+                decoding="auto"
                 height="372"
                 loading="eager"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fshort-stories-volume-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
@@ -40044,6 +40414,16 @@ exports[`Review > matches snapshot for slug 'sacculina-by-philip-fracassi' 1`] =
         <header
           class="mb-12 flex flex-col items-center px-[8%] pt-10"
         >
+          <nav
+            class="pb-3"
+          >
+            <a
+              class="font-sans text-xs uppercase tracking-wider text-accent"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </nav>
           <h1
             class="text-center text-4xl desktop:text-6xl"
             data-pagefind-meta="title"
@@ -40111,7 +40491,7 @@ exports[`Review > matches snapshot for slug 'sacculina-by-philip-fracassi' 1`] =
               <img
                 alt=""
                 class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                decoding="async"
+                decoding="auto"
                 height="372"
                 loading="eager"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsacculina-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
@@ -41107,6 +41487,16 @@ exports[`Review > matches snapshot for slug 'salems-lot-by-stephen-king' 1`] = `
         <header
           class="mb-12 flex flex-col items-center px-[8%] pt-10"
         >
+          <nav
+            class="pb-3"
+          >
+            <a
+              class="font-sans text-xs uppercase tracking-wider text-accent"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </nav>
           <h1
             class="text-center text-4xl desktop:text-6xl"
             data-pagefind-meta="title"
@@ -41174,7 +41564,7 @@ exports[`Review > matches snapshot for slug 'salems-lot-by-stephen-king' 1`] = `
               <img
                 alt=""
                 class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                decoding="async"
+                decoding="auto"
                 height="372"
                 loading="eager"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsalems-lot-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
@@ -42301,17 +42691,27 @@ exports[`Review > matches snapshot for slug 'set-the-boy-free-by-johnny-marr' 1`
         <header
           class="mb-12 flex flex-col items-center px-[8%] pt-10"
         >
+          <nav
+            class="pb-3"
+          >
+            <a
+              class="font-sans text-xs uppercase tracking-wider text-accent"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </nav>
           <h1
             class="text-center text-4xl desktop:text-6xl"
             data-pagefind-meta="title"
           >
             Set the Boy Free
-            <div
-              class="max-w-prose pt-2 text-base font-light tracking-wider text-muted"
-            >
-              The Autobiography
-            </div>
           </h1>
+          <p
+            class="max-w-prose pt-2 text-base font-light tracking-wider text-muted"
+          >
+            The Autobiography
+          </p>
           <div
             class="mt-4 text-center text-md text-muted"
           >
@@ -42373,7 +42773,7 @@ exports[`Review > matches snapshot for slug 'set-the-boy-free-by-johnny-marr' 1`
               <img
                 alt=""
                 class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                decoding="async"
+                decoding="auto"
                 height="372"
                 loading="eager"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fset-the-boy-free-by-johnny-marr.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
@@ -43260,6 +43660,16 @@ exports[`Review > matches snapshot for slug 'soft-construction-of-a-sunset-by-ph
         <header
           class="mb-12 flex flex-col items-center px-[8%] pt-10"
         >
+          <nav
+            class="pb-3"
+          >
+            <a
+              class="font-sans text-xs uppercase tracking-wider text-accent"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </nav>
           <h1
             class="text-center text-4xl desktop:text-6xl"
             data-pagefind-meta="title"
@@ -43327,7 +43737,7 @@ exports[`Review > matches snapshot for slug 'soft-construction-of-a-sunset-by-ph
               <img
                 alt=""
                 class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                decoding="async"
+                decoding="auto"
                 height="372"
                 loading="eager"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fbehold-the-void-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
@@ -44061,6 +44471,16 @@ exports[`Review > matches snapshot for slug 'surfer-girl-by-philip-fracassi' 1`]
         <header
           class="mb-12 flex flex-col items-center px-[8%] pt-10"
         >
+          <nav
+            class="pb-3"
+          >
+            <a
+              class="font-sans text-xs uppercase tracking-wider text-accent"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </nav>
           <h1
             class="text-center text-4xl desktop:text-6xl"
             data-pagefind-meta="title"
@@ -44128,7 +44548,7 @@ exports[`Review > matches snapshot for slug 'surfer-girl-by-philip-fracassi' 1`]
               <img
                 alt=""
                 class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                decoding="async"
+                decoding="auto"
                 height="372"
                 loading="eager"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fbehold-the-void-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
@@ -44895,6 +45315,16 @@ exports[`Review > matches snapshot for slug 'the-48-laws-of-power-by-robert-gree
         <header
           class="mb-12 flex flex-col items-center px-[8%] pt-10"
         >
+          <nav
+            class="pb-3"
+          >
+            <a
+              class="font-sans text-xs uppercase tracking-wider text-accent"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </nav>
           <h1
             class="text-center text-4xl desktop:text-6xl"
             data-pagefind-meta="title"
@@ -44962,7 +45392,7 @@ exports[`Review > matches snapshot for slug 'the-48-laws-of-power-by-robert-gree
               <img
                 alt=""
                 class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                decoding="async"
+                decoding="auto"
                 height="372"
                 loading="eager"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-48-laws-of-power-by-robert-greene.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
@@ -45843,6 +46273,16 @@ exports[`Review > matches snapshot for slug 'the-baby-farmer-by-philip-fracassi'
         <header
           class="mb-12 flex flex-col items-center px-[8%] pt-10"
         >
+          <nav
+            class="pb-3"
+          >
+            <a
+              class="font-sans text-xs uppercase tracking-wider text-accent"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </nav>
           <h1
             class="text-center text-4xl desktop:text-6xl"
             data-pagefind-meta="title"
@@ -45910,7 +46350,7 @@ exports[`Review > matches snapshot for slug 'the-baby-farmer-by-philip-fracassi'
               <img
                 alt=""
                 class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                decoding="async"
+                decoding="auto"
                 height="372"
                 loading="eager"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fbehold-the-void-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
@@ -46680,6 +47120,16 @@ exports[`Review > matches snapshot for slug 'the-big-sleep-by-raymond-chandler' 
         <header
           class="mb-12 flex flex-col items-center px-[8%] pt-10"
         >
+          <nav
+            class="pb-3"
+          >
+            <a
+              class="font-sans text-xs uppercase tracking-wider text-accent"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </nav>
           <h1
             class="text-center text-4xl desktop:text-6xl"
             data-pagefind-meta="title"
@@ -46747,7 +47197,7 @@ exports[`Review > matches snapshot for slug 'the-big-sleep-by-raymond-chandler' 
               <img
                 alt=""
                 class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                decoding="async"
+                decoding="auto"
                 height="372"
                 loading="eager"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-big-sleep-by-raymond-chandler.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
@@ -47706,6 +48156,16 @@ exports[`Review > matches snapshot for slug 'the-cellar-by-richard-laymon' 1`] =
         <header
           class="mb-12 flex flex-col items-center px-[8%] pt-10"
         >
+          <nav
+            class="pb-3"
+          >
+            <a
+              class="font-sans text-xs uppercase tracking-wider text-accent"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </nav>
           <h1
             class="text-center text-4xl desktop:text-6xl"
             data-pagefind-meta="title"
@@ -47773,7 +48233,7 @@ exports[`Review > matches snapshot for slug 'the-cellar-by-richard-laymon' 1`] =
               <img
                 alt=""
                 class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                decoding="async"
+                decoding="auto"
                 height="372"
                 loading="eager"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-cellar-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
@@ -48773,6 +49233,16 @@ exports[`Review > matches snapshot for slug 'the-cipher-by-kathe-koja' 1`] = `
         <header
           class="mb-12 flex flex-col items-center px-[8%] pt-10"
         >
+          <nav
+            class="pb-3"
+          >
+            <a
+              class="font-sans text-xs uppercase tracking-wider text-accent"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </nav>
           <h1
             class="text-center text-4xl desktop:text-6xl"
             data-pagefind-meta="title"
@@ -48840,7 +49310,7 @@ exports[`Review > matches snapshot for slug 'the-cipher-by-kathe-koja' 1`] = `
               <img
                 alt=""
                 class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                decoding="async"
+                decoding="auto"
                 height="372"
                 loading="eager"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-cipher-by-kathe-koja.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
@@ -50053,17 +50523,27 @@ exports[`Review > matches snapshot for slug 'the-creative-act-by-rick-rubin' 1`]
         <header
           class="mb-12 flex flex-col items-center px-[8%] pt-10"
         >
+          <nav
+            class="pb-3"
+          >
+            <a
+              class="font-sans text-xs uppercase tracking-wider text-accent"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </nav>
           <h1
             class="text-center text-4xl desktop:text-6xl"
             data-pagefind-meta="title"
           >
             The Creative Act
-            <div
-              class="max-w-prose pt-2 text-base font-light tracking-wider text-muted"
-            >
-              A Way of Being
-            </div>
           </h1>
+          <p
+            class="max-w-prose pt-2 text-base font-light tracking-wider text-muted"
+          >
+            A Way of Being
+          </p>
           <div
             class="mt-4 text-center text-md text-muted"
           >
@@ -50125,7 +50605,7 @@ exports[`Review > matches snapshot for slug 'the-creative-act-by-rick-rubin' 1`]
               <img
                 alt=""
                 class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                decoding="async"
+                decoding="auto"
                 height="372"
                 loading="eager"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-creative-act-by-rick-rubin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
@@ -50979,6 +51459,16 @@ exports[`Review > matches snapshot for slug 'the-dark-tunnel-by-ross-macdonald' 
         <header
           class="mb-12 flex flex-col items-center px-[8%] pt-10"
         >
+          <nav
+            class="pb-3"
+          >
+            <a
+              class="font-sans text-xs uppercase tracking-wider text-accent"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </nav>
           <h1
             class="text-center text-4xl desktop:text-6xl"
             data-pagefind-meta="title"
@@ -51051,7 +51541,7 @@ exports[`Review > matches snapshot for slug 'the-dark-tunnel-by-ross-macdonald' 
               <img
                 alt=""
                 class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                decoding="async"
+                decoding="auto"
                 height="372"
                 loading="eager"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-dark-tunnel-by-ross-macdonald.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
@@ -52237,6 +52727,16 @@ exports[`Review > matches snapshot for slug 'the-horse-thief-by-philip-fracassi'
         <header
           class="mb-12 flex flex-col items-center px-[8%] pt-10"
         >
+          <nav
+            class="pb-3"
+          >
+            <a
+              class="font-sans text-xs uppercase tracking-wider text-accent"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </nav>
           <h1
             class="text-center text-4xl desktop:text-6xl"
             data-pagefind-meta="title"
@@ -52304,7 +52804,7 @@ exports[`Review > matches snapshot for slug 'the-horse-thief-by-philip-fracassi'
               <img
                 alt=""
                 class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                decoding="async"
+                decoding="auto"
                 height="372"
                 loading="eager"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fbehold-the-void-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
@@ -53114,6 +53614,16 @@ exports[`Review > matches snapshot for slug 'the-max-muscle-plan-by-brad-schoenf
         <header
           class="mb-12 flex flex-col items-center px-[8%] pt-10"
         >
+          <nav
+            class="pb-3"
+          >
+            <a
+              class="font-sans text-xs uppercase tracking-wider text-accent"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </nav>
           <h1
             class="text-center text-4xl desktop:text-6xl"
             data-pagefind-meta="title"
@@ -53181,7 +53691,7 @@ exports[`Review > matches snapshot for slug 'the-max-muscle-plan-by-brad-schoenf
               <img
                 alt=""
                 class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                decoding="async"
+                decoding="auto"
                 height="372"
                 loading="eager"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-max-muscle-plan-by-brad-schoenfeld.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
@@ -54008,6 +54518,16 @@ exports[`Review > matches snapshot for slug 'the-postman-always-rings-twice-by-j
         <header
           class="mb-12 flex flex-col items-center px-[8%] pt-10"
         >
+          <nav
+            class="pb-3"
+          >
+            <a
+              class="font-sans text-xs uppercase tracking-wider text-accent"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </nav>
           <h1
             class="text-center text-4xl desktop:text-6xl"
             data-pagefind-meta="title"
@@ -54075,7 +54595,7 @@ exports[`Review > matches snapshot for slug 'the-postman-always-rings-twice-by-j
               <img
                 alt=""
                 class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                decoding="async"
+                decoding="auto"
                 height="372"
                 loading="eager"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-postman-always-rings-twice-by-james-m-cain.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
@@ -55111,6 +55631,16 @@ exports[`Review > matches snapshot for slug 'the-rise-of-theodore-roosevelt-by-e
         <header
           class="mb-12 flex flex-col items-center px-[8%] pt-10"
         >
+          <nav
+            class="pb-3"
+          >
+            <a
+              class="font-sans text-xs uppercase tracking-wider text-accent"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </nav>
           <h1
             class="text-center text-4xl desktop:text-6xl"
             data-pagefind-meta="title"
@@ -55178,7 +55708,7 @@ exports[`Review > matches snapshot for slug 'the-rise-of-theodore-roosevelt-by-e
               <img
                 alt=""
                 class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                decoding="async"
+                decoding="auto"
                 height="372"
                 loading="eager"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-rise-of-theodore-roosevelt-by-edmund-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
@@ -56188,6 +56718,16 @@ exports[`Review > matches snapshot for slug 'the-rules-of-attraction-by-bret-eas
         <header
           class="mb-12 flex flex-col items-center px-[8%] pt-10"
         >
+          <nav
+            class="pb-3"
+          >
+            <a
+              class="font-sans text-xs uppercase tracking-wider text-accent"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </nav>
           <h1
             class="text-center text-4xl desktop:text-6xl"
             data-pagefind-meta="title"
@@ -56255,7 +56795,7 @@ exports[`Review > matches snapshot for slug 'the-rules-of-attraction-by-bret-eas
               <img
                 alt=""
                 class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                decoding="async"
+                decoding="auto"
                 height="372"
                 loading="eager"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-rules-of-attraction-by-bret-easton-ellis.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
@@ -57518,6 +58058,16 @@ exports[`Review > matches snapshot for slug 'the-secret-history-by-donna-tartt' 
         <header
           class="mb-12 flex flex-col items-center px-[8%] pt-10"
         >
+          <nav
+            class="pb-3"
+          >
+            <a
+              class="font-sans text-xs uppercase tracking-wider text-accent"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </nav>
           <h1
             class="text-center text-4xl desktop:text-6xl"
             data-pagefind-meta="title"
@@ -57585,7 +58135,7 @@ exports[`Review > matches snapshot for slug 'the-secret-history-by-donna-tartt' 
               <img
                 alt=""
                 class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                decoding="async"
+                decoding="auto"
                 height="372"
                 loading="eager"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-secret-history-by-donna-tartt.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
@@ -58528,6 +59078,16 @@ exports[`Review > matches snapshot for slug 'the-shining-by-stephen-king' 1`] = 
         <header
           class="mb-12 flex flex-col items-center px-[8%] pt-10"
         >
+          <nav
+            class="pb-3"
+          >
+            <a
+              class="font-sans text-xs uppercase tracking-wider text-accent"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </nav>
           <h1
             class="text-center text-4xl desktop:text-6xl"
             data-pagefind-meta="title"
@@ -58595,7 +59155,7 @@ exports[`Review > matches snapshot for slug 'the-shining-by-stephen-king' 1`] = 
               <img
                 alt=""
                 class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                decoding="async"
+                decoding="auto"
                 height="372"
                 loading="eager"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-shining-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
@@ -59783,17 +60343,27 @@ exports[`Review > matches snapshot for slug 'the-skeptics-guide-to-the-universe-
         <header
           class="mb-12 flex flex-col items-center px-[8%] pt-10"
         >
+          <nav
+            class="pb-3"
+          >
+            <a
+              class="font-sans text-xs uppercase tracking-wider text-accent"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </nav>
           <h1
             class="text-center text-4xl desktop:text-6xl"
             data-pagefind-meta="title"
           >
             The Skeptics' Guide to the Universe
-            <div
-              class="max-w-prose pt-2 text-base font-light tracking-wider text-muted"
-            >
-              How to Know What's Really Real in a World Increasingly Full of Fake
-            </div>
           </h1>
+          <p
+            class="max-w-prose pt-2 text-base font-light tracking-wider text-muted"
+          >
+            How to Know What's Really Real in a World Increasingly Full of Fake
+          </p>
           <div
             class="mt-4 text-center text-md text-muted"
           >
@@ -59855,7 +60425,7 @@ exports[`Review > matches snapshot for slug 'the-skeptics-guide-to-the-universe-
               <img
                 alt=""
                 class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                decoding="async"
+                decoding="auto"
                 height="372"
                 loading="eager"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-skeptics-guide-to-the-universe-by-steven-novella.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
@@ -60811,6 +61381,16 @@ exports[`Review > matches snapshot for slug 'the-woods-are-dark-by-richard-laymo
         <header
           class="mb-12 flex flex-col items-center px-[8%] pt-10"
         >
+          <nav
+            class="pb-3"
+          >
+            <a
+              class="font-sans text-xs uppercase tracking-wider text-accent"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </nav>
           <h1
             class="text-center text-4xl desktop:text-6xl"
             data-pagefind-meta="title"
@@ -60878,7 +61458,7 @@ exports[`Review > matches snapshot for slug 'the-woods-are-dark-by-richard-laymo
               <img
                 alt=""
                 class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                decoding="async"
+                decoding="auto"
                 height="372"
                 loading="eager"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
@@ -61799,17 +62379,27 @@ exports[`Review > matches snapshot for slug 'total-recall-by-arnold-schwarzenegg
         <header
           class="mb-12 flex flex-col items-center px-[8%] pt-10"
         >
+          <nav
+            class="pb-3"
+          >
+            <a
+              class="font-sans text-xs uppercase tracking-wider text-accent"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </nav>
           <h1
             class="text-center text-4xl desktop:text-6xl"
             data-pagefind-meta="title"
           >
             Total Recall
-            <div
-              class="max-w-prose pt-2 text-base font-light tracking-wider text-muted"
-            >
-              My Unbelievably True Life Story
-            </div>
           </h1>
+          <p
+            class="max-w-prose pt-2 text-base font-light tracking-wider text-muted"
+          >
+            My Unbelievably True Life Story
+          </p>
           <div
             class="mt-4 text-center text-md text-muted"
           >
@@ -61871,7 +62461,7 @@ exports[`Review > matches snapshot for slug 'total-recall-by-arnold-schwarzenegg
               <img
                 alt=""
                 class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                decoding="async"
+                decoding="auto"
                 height="372"
                 loading="eager"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftotal-recall-by-arnold-schwarzenegger.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
@@ -62787,17 +63377,27 @@ exports[`Review > matches snapshot for slug 'what-doesnt-kill-us-by-scott-carney
         <header
           class="mb-12 flex flex-col items-center px-[8%] pt-10"
         >
+          <nav
+            class="pb-3"
+          >
+            <a
+              class="font-sans text-xs uppercase tracking-wider text-accent"
+              href="/reviews/"
+            >
+              Reviews
+            </a>
+          </nav>
           <h1
             class="text-center text-4xl desktop:text-6xl"
             data-pagefind-meta="title"
           >
             What Doesn't Kill Us
-            <div
-              class="max-w-prose pt-2 text-base font-light tracking-wider text-muted"
-            >
-              How Freezing Water, Extreme Altitude, and Environmental Conditioning Will Renew Our Lost Evolutionary Strength
-            </div>
           </h1>
+          <p
+            class="max-w-prose pt-2 text-base font-light tracking-wider text-muted"
+          >
+            How Freezing Water, Extreme Altitude, and Environmental Conditioning Will Renew Our Lost Evolutionary Strength
+          </p>
           <div
             class="mt-4 text-center text-md text-muted"
           >
@@ -62859,7 +63459,7 @@ exports[`Review > matches snapshot for slug 'what-doesnt-kill-us-by-scott-carney
               <img
                 alt=""
                 class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
-                decoding="async"
+                decoding="auto"
                 height="372"
                 loading="eager"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fwhat-doesnt-kill-us-by-scott-carney.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
