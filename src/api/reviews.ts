@@ -20,10 +20,7 @@ import { linkReviewedWorks } from "./utils/linkReviewedWorks";
 import { getHtml } from "./utils/markdown/getHtml";
 import { removeFootnotes } from "./utils/markdown/removeFootnotes";
 import { rootAsSpan } from "./utils/markdown/rootAsSpan";
-import {
-  EXCERPT_SEPARATOR,
-  trimToExcerpt,
-} from "./utils/markdown/trimToExcerpt";
+import { trimToExcerpt } from "./utils/markdown/trimToExcerpt";
 
 let cachedReadingsMarkdown: MarkdownReading[];
 let cachedMarkdownReviews: MarkdownReview[];
@@ -128,8 +125,6 @@ export async function loadExcerptHtml(
   review: Review,
 ): Promise<ReviewWithExcerpt> {
   const reviewsMarkdown = cachedMarkdownReviews || (await allReviewsMarkdown());
-  const reviewedWorksJson =
-    cachedReviewedWorksJson || (await allReviewedWorksJson());
 
   const { rawContent } = reviewsMarkdown.find((markdown) => {
     return markdown.slug === review.slug;
@@ -144,19 +139,15 @@ export async function loadExcerptHtml(
     .processSync(rawContent)
     .toString();
 
-  const hasExcerptBreak = rawContent.includes(EXCERPT_SEPARATOR);
-
-  if (hasExcerptBreak) {
-    excerptHtml = excerptHtml.replace(/\n+$/, "");
-    excerptHtml = excerptHtml.replace(
-      /<\/p>$/,
-      ` <a class="!no-underline uppercase whitespace-nowrap text-accent text-sm leading-none" href="/reviews/${review.slug}/">Continue reading...</a></p>`,
-    );
-  }
+  excerptHtml = excerptHtml.replace(/\n+$/, "");
+  excerptHtml = excerptHtml.replace(
+    /<\/p>$/,
+    ` <a href="/reviews/${review.slug}/">Read more...</a></p>`,
+  );
 
   return {
     ...review,
-    excerpt: linkReviewedWorks(excerptHtml, reviewedWorksJson),
+    excerpt: excerptHtml,
   };
 }
 

@@ -235,7 +235,7 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
               class="mb-6 font-sans text-sm uppercase tracking-wide text-subtle"
             >
               <a
-                class="decoration-2 underline-offset-8 hover:text-accent hover:underline"
+                class="text-accent"
                 href="/readings/"
               >
                 Reading Log
@@ -2456,7 +2456,7 @@ exports[`YearStats > matches snapshot for slug 2023 1`] = `
               class="mb-6 font-sans text-sm uppercase tracking-wide text-subtle"
             >
               <a
-                class="decoration-2 underline-offset-8 hover:text-accent hover:underline"
+                class="text-accent"
                 href="/readings/"
               >
                 Reading Log
@@ -3530,7 +3530,7 @@ exports[`YearStats > matches snapshot for slug 2024 1`] = `
               class="mb-6 font-sans text-sm uppercase tracking-wide text-subtle"
             >
               <a
-                class="decoration-2 underline-offset-8 hover:text-accent hover:underline"
+                class="text-accent"
                 href="/readings/"
               >
                 Reading Log
