@@ -20,7 +20,6 @@ export async function getProps(): Promise<Props> {
         reviewedWorkCount: author.reviewedWorkCount,
         slug: author.slug,
         sortName: author.sortName,
-        workCount: author.workCount,
       };
 
       return value;

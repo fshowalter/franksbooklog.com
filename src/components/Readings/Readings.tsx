@@ -170,7 +170,7 @@ function ReadingListItem({ value }: { value: ListItemValue }): JSX.Element {
   const progressValue = parseProgress(value.progress);
 
   return (
-    <ListItem>
+    <ListItem className="has-[a:hover]:bg-[var(--bg-subtle)]">
       <ListItemCover imageProps={value.coverImageProps} />
       <div className="flex grow flex-col items-start gap-y-1 tablet:w-full tablet:gap-y-2 desktop:pr-4">
         <TitleAndProgress
@@ -180,7 +180,7 @@ function ReadingListItem({ value }: { value: ListItemValue }): JSX.Element {
           title={value.title}
         />
         <Authors
-          className="font-sans text-xs leading-5 text-muted"
+          className="font-sans text-xs text-muted"
           values={value.authors}
         />
         <ListItemKindAndYear kind={value.kind} year={value.yearPublished} />
@@ -222,12 +222,15 @@ function TitleAndProgress({
 
   if (reviewed) {
     return (
-      <a
-        className="block font-sans text-sm font-medium text-accent decoration-accent decoration-2 underline-offset-4 before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 hover:underline hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
-        href={`/reviews/${slug}/`}
-      >
-        {title}&#8239;&#8239;{progressBox}
-      </a>
+      <span className="block font-sans">
+        <a
+          className="text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+          href={`/reviews/${slug}/`}
+        >
+          {title}
+        </a>
+        &#8239;&#8239;{progressBox}
+      </span>
     );
   }
 
