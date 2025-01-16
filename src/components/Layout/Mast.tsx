@@ -19,7 +19,7 @@ export function Mast({
         position: hasBackdrop ? "absolute" : "static",
       }}
     >
-      {hideLogo ? <div /> : <Logo className="mt-2 tablet:mt-0" />}
+      {hideLogo ? <div /> : <Logo className="" />}
       <div className="flex items-center">
         <nav className="hidden w-full desktop:block desktop:w-auto">
           <ul className={`flex flex-wrap justify-start gap-x-6 text-xl`}>

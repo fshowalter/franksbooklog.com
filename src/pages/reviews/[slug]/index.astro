@@ -1,11 +1,12 @@
 ---
-import { allReviews } from "~/api/reviews";
+import { allReviews, getContentPlainText } from "~/api/reviews";
 import { getProps } from "~/components/Review/getProps";
 import { Review } from "~/components/Review/Review";
 import Layout from "~/layouts/Layout.astro";
 import { toSentenceArray } from "~/utils";
 
 interface Props {
+  contentPlainText: string;
   slug: string;
 }
 
@@ -19,6 +20,7 @@ export async function getStaticPaths() {
           slug: review.slug,
         },
         props: {
+          contentPlainText: getContentPlainText(review.rawContent),
           slug: review.slug,
         },
       };
@@ -26,16 +28,45 @@ export async function getStaticPaths() {
   );
 }
 
-const { slug } = Astro.props;
+const { contentPlainText, slug } = Astro.props;
 
 const props = await getProps(slug);
+
+//trim the string to the maximum length
+var description = contentPlainText
+  .replaceAll(/\r?\n|\r/g, " ")
+  .slice(0, Math.max(0, 160));
+
+//re-trim if we are in the middle of a word
+description = description.slice(
+  0,
+  Math.max(0, Math.min(description.length, description.lastIndexOf(" "))),
+);
+
+let title = `${props.value.title} by ${toSentenceArray(props.value.authors.map((author) => author.name)).join("")}`;
+
+const kind = props.value.kind == "Short Story" ? "story" : "book";
+
+title = `${title} ${kind} review`;
 ---
 
 <Layout
-  article={true}
   canonical={true}
-  description={props.value.excerptPlainText}
-  title={`${props.value.title} by ${toSentenceArray(props.value.authors.map((author) => author.name)).join("")}`}
+  meta={{ description }}
+  openGraph={{ description, type: "article" }}
+  title={title}
 >
+  <Fragment slot="meta-theme-color">
+    <meta
+      content="#fff"
+      media="(prefers-color-scheme: light)"
+      name="theme-color"
+    />
+    <meta
+      content="#322f2f"
+      media="(prefers-color-scheme: dark)"
+      name="theme-color"
+    />
+  </Fragment>
   <Review {...props} />
 </Layout>

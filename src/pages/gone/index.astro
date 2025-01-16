@@ -12,6 +12,11 @@ const props = await getProps({
 });
 ---
 
-<Layout article={false} canonical={false} description={deck} title="410: Gone">
+<Layout
+  canonical={false}
+  meta={{ description: deck }}
+  openGraph={false}
+  title="410: Gone"
+>
   <Article {...props} />
 </Layout>

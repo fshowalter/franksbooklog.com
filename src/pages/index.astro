@@ -7,9 +7,12 @@ const props = await getProps();
 ---
 
 <Layout
-  article={false}
   canonical={true}
-  description={props.deck}
+  meta={{
+    description:
+      "Quality reviews of current, cult, classic, and forgotten books, short stories, and non-fiction.",
+  }}
+  openGraph={{ description: props.deck, type: "website" }}
   title="Frank's Book Log"
 >
   <Home {...props} />

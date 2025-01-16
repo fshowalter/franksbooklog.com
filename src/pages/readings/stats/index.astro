@@ -7,9 +7,15 @@ const props = await getProps();
 ---
 
 <Layout
-  article={false}
   canonical={true}
-  description={props.deck}
+  meta={{
+    description:
+      "My all-time reading stats. Includes my most-read authors, as well as grade, kind, release year, and edition distributions.",
+  }}
+  openGraph={{
+    description: props.deck,
+    type: "website",
+  }}
   title="All-Time Stats"
 >
   <AlltimeStats {...props} />

@@ -17,7 +17,7 @@ exports[`Home > matches snapshot 1`] = `
         style="position: absolute;"
       >
         <div
-          class="flex flex-col mt-2 tablet:mt-0"
+          class="flex flex-col"
         >
           <div
             class="whitespace-nowrap font-normal leading-8"
@@ -229,7 +229,7 @@ exports[`Home > matches snapshot 1`] = `
           class="min-h-[clamp(340px,50vh,1350px)] relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pb-8 pt-40 tablet:pb-10 tablet:pt-40 desktop:pb-16 desktop:pt-40"
         >
           <div
-            class=" z-10 mx-auto flex w-full max-w-screen-max flex-col px-container"
+            class=" z-10 mx-auto flex w-full max-w-screen-max px-container flex-col"
           >
             <p
               class="mb-6 font-sans text-sm uppercase tracking-wide text-subtle"

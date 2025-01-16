@@ -7,9 +7,15 @@ const props = await getProps();
 ---
 
 <Layout
-  article={false}
   canonical={true}
-  description={props.deck}
+  meta={{
+    description:
+      "My to-review bucket list. See what I've yet to read and review. Sort or filter titles by reason, release date, or title.",
+  }}
+  openGraph={{
+    description: props.deck,
+    type: "website",
+  }}
   title="The Shelf"
 >
   <Shelf client:load {...props} />

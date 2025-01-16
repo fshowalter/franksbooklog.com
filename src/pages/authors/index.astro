@@ -7,9 +7,15 @@ const props = await getProps();
 ---
 
 <Layout
-  article={false}
   canonical={true}
-  description={props.deck}
+  meta={{
+    description:
+      "A sortable index of authors who contributed to the books and stories reviewed on this site. Sort by name or review count.",
+  }}
+  openGraph={{
+    description: props.deck,
+    type: "website",
+  }}
   title="Authors"
 >
   <Authors client:load {...props} />
