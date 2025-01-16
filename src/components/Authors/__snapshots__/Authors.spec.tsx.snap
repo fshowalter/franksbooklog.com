@@ -12,7 +12,7 @@ exports[`Authors > can filter by name 1`] = `
       style="z-index: 1;"
     >
       <div
-        class="mb-1 max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+        class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
       >
         S
       </div>
@@ -22,7 +22,7 @@ exports[`Authors > can filter by name 1`] = `
     >
       <ol>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -69,7 +69,7 @@ exports[`Authors > can sort by name a->z 1`] = `
       style="z-index: 1;"
     >
       <div
-        class="mb-1 max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+        class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
       >
         B
       </div>
@@ -79,7 +79,7 @@ exports[`Authors > can sort by name a->z 1`] = `
     >
       <ol>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -126,7 +126,7 @@ exports[`Authors > can sort by name a->z 1`] = `
       style="z-index: 2;"
     >
       <div
-        class="mb-1 max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+        class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
       >
         C
       </div>
@@ -136,7 +136,7 @@ exports[`Authors > can sort by name a->z 1`] = `
     >
       <ol>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -173,7 +173,7 @@ exports[`Authors > can sort by name a->z 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -210,7 +210,7 @@ exports[`Authors > can sort by name a->z 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -250,7 +250,7 @@ exports[`Authors > can sort by name a->z 1`] = `
       style="z-index: 3;"
     >
       <div
-        class="mb-1 max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+        class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
       >
         D
       </div>
@@ -260,7 +260,7 @@ exports[`Authors > can sort by name a->z 1`] = `
     >
       <ol>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -307,7 +307,7 @@ exports[`Authors > can sort by name a->z 1`] = `
       style="z-index: 4;"
     >
       <div
-        class="mb-1 max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+        class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
       >
         E
       </div>
@@ -317,7 +317,7 @@ exports[`Authors > can sort by name a->z 1`] = `
     >
       <ol>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -357,7 +357,7 @@ exports[`Authors > can sort by name a->z 1`] = `
       style="z-index: 5;"
     >
       <div
-        class="mb-1 max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+        class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
       >
         F
       </div>
@@ -367,7 +367,7 @@ exports[`Authors > can sort by name a->z 1`] = `
     >
       <ol>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -397,7 +397,7 @@ exports[`Authors > can sort by name a->z 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -437,7 +437,7 @@ exports[`Authors > can sort by name a->z 1`] = `
       style="z-index: 6;"
     >
       <div
-        class="mb-1 max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+        class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
       >
         G
       </div>
@@ -447,7 +447,7 @@ exports[`Authors > can sort by name a->z 1`] = `
     >
       <ol>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -484,7 +484,7 @@ exports[`Authors > can sort by name a->z 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -531,7 +531,7 @@ exports[`Authors > can sort by name a->z 1`] = `
       style="z-index: 7;"
     >
       <div
-        class="mb-1 max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+        class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
       >
         H
       </div>
@@ -541,7 +541,7 @@ exports[`Authors > can sort by name a->z 1`] = `
     >
       <ol>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -578,7 +578,7 @@ exports[`Authors > can sort by name a->z 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -615,7 +615,7 @@ exports[`Authors > can sort by name a->z 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -662,7 +662,7 @@ exports[`Authors > can sort by name a->z 1`] = `
       style="z-index: 8;"
     >
       <div
-        class="mb-1 max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+        class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
       >
         I
       </div>
@@ -672,7 +672,7 @@ exports[`Authors > can sort by name a->z 1`] = `
     >
       <ol>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -719,7 +719,7 @@ exports[`Authors > can sort by name a->z 1`] = `
       style="z-index: 9;"
     >
       <div
-        class="mb-1 max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+        class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
       >
         K
       </div>
@@ -729,7 +729,7 @@ exports[`Authors > can sort by name a->z 1`] = `
     >
       <ol>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -766,7 +766,7 @@ exports[`Authors > can sort by name a->z 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -796,7 +796,7 @@ exports[`Authors > can sort by name a->z 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -843,7 +843,7 @@ exports[`Authors > can sort by name a->z 1`] = `
       style="z-index: 10;"
     >
       <div
-        class="mb-1 max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+        class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
       >
         L
       </div>
@@ -853,7 +853,7 @@ exports[`Authors > can sort by name a->z 1`] = `
     >
       <ol>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -893,7 +893,7 @@ exports[`Authors > can sort by name a->z 1`] = `
       style="z-index: 11;"
     >
       <div
-        class="mb-1 max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+        class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
       >
         M
       </div>
@@ -903,7 +903,7 @@ exports[`Authors > can sort by name a->z 1`] = `
     >
       <ol>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -940,7 +940,7 @@ exports[`Authors > can sort by name a->z 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -977,7 +977,7 @@ exports[`Authors > can sort by name a->z 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -1014,7 +1014,7 @@ exports[`Authors > can sort by name a->z 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -1051,7 +1051,7 @@ exports[`Authors > can sort by name a->z 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -1088,7 +1088,7 @@ exports[`Authors > can sort by name a->z 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -1128,7 +1128,7 @@ exports[`Authors > can sort by name a->z 1`] = `
       style="z-index: 12;"
     >
       <div
-        class="mb-1 max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+        class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
       >
         N
       </div>
@@ -1138,7 +1138,7 @@ exports[`Authors > can sort by name a->z 1`] = `
     >
       <ol>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -1185,7 +1185,7 @@ exports[`Authors > can sort by name a->z 1`] = `
       style="z-index: 13;"
     >
       <div
-        class="mb-1 max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+        class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
       >
         P
       </div>
@@ -1195,7 +1195,7 @@ exports[`Authors > can sort by name a->z 1`] = `
     >
       <ol>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -1235,7 +1235,7 @@ exports[`Authors > can sort by name a->z 1`] = `
       style="z-index: 14;"
     >
       <div
-        class="mb-1 max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+        class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
       >
         R
       </div>
@@ -1245,7 +1245,7 @@ exports[`Authors > can sort by name a->z 1`] = `
     >
       <ol>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -1282,7 +1282,7 @@ exports[`Authors > can sort by name a->z 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -1329,7 +1329,7 @@ exports[`Authors > can sort by name a->z 1`] = `
       style="z-index: 15;"
     >
       <div
-        class="mb-1 max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+        class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
       >
         S
       </div>
@@ -1339,7 +1339,7 @@ exports[`Authors > can sort by name a->z 1`] = `
     >
       <ol>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -1376,7 +1376,7 @@ exports[`Authors > can sort by name a->z 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -1413,7 +1413,7 @@ exports[`Authors > can sort by name a->z 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -1450,7 +1450,7 @@ exports[`Authors > can sort by name a->z 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -1487,7 +1487,7 @@ exports[`Authors > can sort by name a->z 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -1524,7 +1524,7 @@ exports[`Authors > can sort by name a->z 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -1561,7 +1561,7 @@ exports[`Authors > can sort by name a->z 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -1591,7 +1591,7 @@ exports[`Authors > can sort by name a->z 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -1637,7 +1637,7 @@ exports[`Authors > can sort by name a->z 1`] = `
       style="z-index: 16;"
     >
       <div
-        class="mb-1 max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+        class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
       >
         T
       </div>
@@ -1647,7 +1647,7 @@ exports[`Authors > can sort by name a->z 1`] = `
     >
       <ol>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -1684,7 +1684,7 @@ exports[`Authors > can sort by name a->z 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -1731,7 +1731,7 @@ exports[`Authors > can sort by name a->z 1`] = `
       style="z-index: 17;"
     >
       <div
-        class="mb-1 max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+        class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
       >
         U
       </div>
@@ -1741,7 +1741,7 @@ exports[`Authors > can sort by name a->z 1`] = `
     >
       <ol>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -1788,7 +1788,7 @@ exports[`Authors > can sort by name a->z 1`] = `
       style="z-index: 18;"
     >
       <div
-        class="mb-1 max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+        class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
       >
         W
       </div>
@@ -1798,7 +1798,7 @@ exports[`Authors > can sort by name a->z 1`] = `
     >
       <ol>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -1852,7 +1852,7 @@ exports[`Authors > can sort by name z->a 1`] = `
       style="z-index: 1;"
     >
       <div
-        class="mb-1 max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+        class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
       >
         W
       </div>
@@ -1862,7 +1862,7 @@ exports[`Authors > can sort by name z->a 1`] = `
     >
       <ol>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -1909,7 +1909,7 @@ exports[`Authors > can sort by name z->a 1`] = `
       style="z-index: 2;"
     >
       <div
-        class="mb-1 max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+        class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
       >
         U
       </div>
@@ -1919,7 +1919,7 @@ exports[`Authors > can sort by name z->a 1`] = `
     >
       <ol>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -1966,7 +1966,7 @@ exports[`Authors > can sort by name z->a 1`] = `
       style="z-index: 3;"
     >
       <div
-        class="mb-1 max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+        class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
       >
         T
       </div>
@@ -1976,7 +1976,7 @@ exports[`Authors > can sort by name z->a 1`] = `
     >
       <ol>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -2013,7 +2013,7 @@ exports[`Authors > can sort by name z->a 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -2060,7 +2060,7 @@ exports[`Authors > can sort by name z->a 1`] = `
       style="z-index: 4;"
     >
       <div
-        class="mb-1 max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+        class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
       >
         S
       </div>
@@ -2070,7 +2070,7 @@ exports[`Authors > can sort by name z->a 1`] = `
     >
       <ol>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -2106,7 +2106,7 @@ exports[`Authors > can sort by name z->a 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -2136,7 +2136,7 @@ exports[`Authors > can sort by name z->a 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -2173,7 +2173,7 @@ exports[`Authors > can sort by name z->a 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -2210,7 +2210,7 @@ exports[`Authors > can sort by name z->a 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -2247,7 +2247,7 @@ exports[`Authors > can sort by name z->a 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -2284,7 +2284,7 @@ exports[`Authors > can sort by name z->a 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -2321,7 +2321,7 @@ exports[`Authors > can sort by name z->a 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -2368,7 +2368,7 @@ exports[`Authors > can sort by name z->a 1`] = `
       style="z-index: 5;"
     >
       <div
-        class="mb-1 max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+        class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
       >
         R
       </div>
@@ -2378,7 +2378,7 @@ exports[`Authors > can sort by name z->a 1`] = `
     >
       <ol>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -2415,7 +2415,7 @@ exports[`Authors > can sort by name z->a 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -2462,7 +2462,7 @@ exports[`Authors > can sort by name z->a 1`] = `
       style="z-index: 6;"
     >
       <div
-        class="mb-1 max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+        class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
       >
         P
       </div>
@@ -2472,7 +2472,7 @@ exports[`Authors > can sort by name z->a 1`] = `
     >
       <ol>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -2512,7 +2512,7 @@ exports[`Authors > can sort by name z->a 1`] = `
       style="z-index: 7;"
     >
       <div
-        class="mb-1 max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+        class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
       >
         N
       </div>
@@ -2522,7 +2522,7 @@ exports[`Authors > can sort by name z->a 1`] = `
     >
       <ol>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -2569,7 +2569,7 @@ exports[`Authors > can sort by name z->a 1`] = `
       style="z-index: 8;"
     >
       <div
-        class="mb-1 max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+        class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
       >
         M
       </div>
@@ -2579,7 +2579,7 @@ exports[`Authors > can sort by name z->a 1`] = `
     >
       <ol>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -2609,7 +2609,7 @@ exports[`Authors > can sort by name z->a 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -2646,7 +2646,7 @@ exports[`Authors > can sort by name z->a 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -2683,7 +2683,7 @@ exports[`Authors > can sort by name z->a 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -2720,7 +2720,7 @@ exports[`Authors > can sort by name z->a 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -2757,7 +2757,7 @@ exports[`Authors > can sort by name z->a 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -2804,7 +2804,7 @@ exports[`Authors > can sort by name z->a 1`] = `
       style="z-index: 9;"
     >
       <div
-        class="mb-1 max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+        class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
       >
         L
       </div>
@@ -2814,7 +2814,7 @@ exports[`Authors > can sort by name z->a 1`] = `
     >
       <ol>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -2854,7 +2854,7 @@ exports[`Authors > can sort by name z->a 1`] = `
       style="z-index: 10;"
     >
       <div
-        class="mb-1 max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+        class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
       >
         K
       </div>
@@ -2864,7 +2864,7 @@ exports[`Authors > can sort by name z->a 1`] = `
     >
       <ol>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -2901,7 +2901,7 @@ exports[`Authors > can sort by name z->a 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -2931,7 +2931,7 @@ exports[`Authors > can sort by name z->a 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -2978,7 +2978,7 @@ exports[`Authors > can sort by name z->a 1`] = `
       style="z-index: 11;"
     >
       <div
-        class="mb-1 max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+        class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
       >
         I
       </div>
@@ -2988,7 +2988,7 @@ exports[`Authors > can sort by name z->a 1`] = `
     >
       <ol>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -3035,7 +3035,7 @@ exports[`Authors > can sort by name z->a 1`] = `
       style="z-index: 12;"
     >
       <div
-        class="mb-1 max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+        class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
       >
         H
       </div>
@@ -3045,7 +3045,7 @@ exports[`Authors > can sort by name z->a 1`] = `
     >
       <ol>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -3082,7 +3082,7 @@ exports[`Authors > can sort by name z->a 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -3119,7 +3119,7 @@ exports[`Authors > can sort by name z->a 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -3166,7 +3166,7 @@ exports[`Authors > can sort by name z->a 1`] = `
       style="z-index: 13;"
     >
       <div
-        class="mb-1 max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+        class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
       >
         G
       </div>
@@ -3176,7 +3176,7 @@ exports[`Authors > can sort by name z->a 1`] = `
     >
       <ol>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -3213,7 +3213,7 @@ exports[`Authors > can sort by name z->a 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -3260,7 +3260,7 @@ exports[`Authors > can sort by name z->a 1`] = `
       style="z-index: 14;"
     >
       <div
-        class="mb-1 max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+        class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
       >
         F
       </div>
@@ -3270,7 +3270,7 @@ exports[`Authors > can sort by name z->a 1`] = `
     >
       <ol>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -3300,7 +3300,7 @@ exports[`Authors > can sort by name z->a 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -3340,7 +3340,7 @@ exports[`Authors > can sort by name z->a 1`] = `
       style="z-index: 15;"
     >
       <div
-        class="mb-1 max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+        class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
       >
         E
       </div>
@@ -3350,7 +3350,7 @@ exports[`Authors > can sort by name z->a 1`] = `
     >
       <ol>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -3390,7 +3390,7 @@ exports[`Authors > can sort by name z->a 1`] = `
       style="z-index: 16;"
     >
       <div
-        class="mb-1 max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+        class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
       >
         D
       </div>
@@ -3400,7 +3400,7 @@ exports[`Authors > can sort by name z->a 1`] = `
     >
       <ol>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -3447,7 +3447,7 @@ exports[`Authors > can sort by name z->a 1`] = `
       style="z-index: 17;"
     >
       <div
-        class="mb-1 max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+        class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
       >
         C
       </div>
@@ -3457,7 +3457,7 @@ exports[`Authors > can sort by name z->a 1`] = `
     >
       <ol>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -3487,7 +3487,7 @@ exports[`Authors > can sort by name z->a 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -3524,7 +3524,7 @@ exports[`Authors > can sort by name z->a 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -3571,7 +3571,7 @@ exports[`Authors > can sort by name z->a 1`] = `
       style="z-index: 18;"
     >
       <div
-        class="mb-1 max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+        class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
       >
         B
       </div>
@@ -3581,7 +3581,7 @@ exports[`Authors > can sort by name z->a 1`] = `
     >
       <ol>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -3635,7 +3635,7 @@ exports[`Authors > can sort by review count asc 1`] = `
       style="z-index: 1;"
     >
       <div
-        class="mb-1 max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+        class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
       />
     </div>
     <div
@@ -3643,7 +3643,7 @@ exports[`Authors > can sort by review count asc 1`] = `
     >
       <ol>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -3679,7 +3679,7 @@ exports[`Authors > can sort by review count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -3716,7 +3716,7 @@ exports[`Authors > can sort by review count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -3753,7 +3753,7 @@ exports[`Authors > can sort by review count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -3790,7 +3790,7 @@ exports[`Authors > can sort by review count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -3820,7 +3820,7 @@ exports[`Authors > can sort by review count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -3857,7 +3857,7 @@ exports[`Authors > can sort by review count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -3894,7 +3894,7 @@ exports[`Authors > can sort by review count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -3931,7 +3931,7 @@ exports[`Authors > can sort by review count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -3968,7 +3968,7 @@ exports[`Authors > can sort by review count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -4005,7 +4005,7 @@ exports[`Authors > can sort by review count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -4042,7 +4042,7 @@ exports[`Authors > can sort by review count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -4079,7 +4079,7 @@ exports[`Authors > can sort by review count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -4116,7 +4116,7 @@ exports[`Authors > can sort by review count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -4153,7 +4153,7 @@ exports[`Authors > can sort by review count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -4190,7 +4190,7 @@ exports[`Authors > can sort by review count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -4227,7 +4227,7 @@ exports[`Authors > can sort by review count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -4264,7 +4264,7 @@ exports[`Authors > can sort by review count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -4301,7 +4301,7 @@ exports[`Authors > can sort by review count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -4338,7 +4338,7 @@ exports[`Authors > can sort by review count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -4375,7 +4375,7 @@ exports[`Authors > can sort by review count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -4412,7 +4412,7 @@ exports[`Authors > can sort by review count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -4449,7 +4449,7 @@ exports[`Authors > can sort by review count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -4486,7 +4486,7 @@ exports[`Authors > can sort by review count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -4523,7 +4523,7 @@ exports[`Authors > can sort by review count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -4560,7 +4560,7 @@ exports[`Authors > can sort by review count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -4597,7 +4597,7 @@ exports[`Authors > can sort by review count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -4634,7 +4634,7 @@ exports[`Authors > can sort by review count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -4671,7 +4671,7 @@ exports[`Authors > can sort by review count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -4701,7 +4701,7 @@ exports[`Authors > can sort by review count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -4738,7 +4738,7 @@ exports[`Authors > can sort by review count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -4775,7 +4775,7 @@ exports[`Authors > can sort by review count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -4812,7 +4812,7 @@ exports[`Authors > can sort by review count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -4849,7 +4849,7 @@ exports[`Authors > can sort by review count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -4879,7 +4879,7 @@ exports[`Authors > can sort by review count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -4909,7 +4909,7 @@ exports[`Authors > can sort by review count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -4939,7 +4939,7 @@ exports[`Authors > can sort by review count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -4969,7 +4969,7 @@ exports[`Authors > can sort by review count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -4999,7 +4999,7 @@ exports[`Authors > can sort by review count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -5029,7 +5029,7 @@ exports[`Authors > can sort by review count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -5076,7 +5076,7 @@ exports[`Authors > can sort by review count desc 1`] = `
       style="z-index: 1;"
     >
       <div
-        class="mb-1 max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+        class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
       />
     </div>
     <div
@@ -5084,7 +5084,7 @@ exports[`Authors > can sort by review count desc 1`] = `
     >
       <ol>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -5114,7 +5114,7 @@ exports[`Authors > can sort by review count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -5144,7 +5144,7 @@ exports[`Authors > can sort by review count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -5174,7 +5174,7 @@ exports[`Authors > can sort by review count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -5204,7 +5204,7 @@ exports[`Authors > can sort by review count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -5234,7 +5234,7 @@ exports[`Authors > can sort by review count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -5264,7 +5264,7 @@ exports[`Authors > can sort by review count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -5294,7 +5294,7 @@ exports[`Authors > can sort by review count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -5331,7 +5331,7 @@ exports[`Authors > can sort by review count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -5368,7 +5368,7 @@ exports[`Authors > can sort by review count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -5405,7 +5405,7 @@ exports[`Authors > can sort by review count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -5435,7 +5435,7 @@ exports[`Authors > can sort by review count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -5472,7 +5472,7 @@ exports[`Authors > can sort by review count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -5509,7 +5509,7 @@ exports[`Authors > can sort by review count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -5546,7 +5546,7 @@ exports[`Authors > can sort by review count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -5583,7 +5583,7 @@ exports[`Authors > can sort by review count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -5620,7 +5620,7 @@ exports[`Authors > can sort by review count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -5657,7 +5657,7 @@ exports[`Authors > can sort by review count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -5694,7 +5694,7 @@ exports[`Authors > can sort by review count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -5731,7 +5731,7 @@ exports[`Authors > can sort by review count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -5768,7 +5768,7 @@ exports[`Authors > can sort by review count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -5805,7 +5805,7 @@ exports[`Authors > can sort by review count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -5842,7 +5842,7 @@ exports[`Authors > can sort by review count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -5879,7 +5879,7 @@ exports[`Authors > can sort by review count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -5916,7 +5916,7 @@ exports[`Authors > can sort by review count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -5953,7 +5953,7 @@ exports[`Authors > can sort by review count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -5990,7 +5990,7 @@ exports[`Authors > can sort by review count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -6027,7 +6027,7 @@ exports[`Authors > can sort by review count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -6064,7 +6064,7 @@ exports[`Authors > can sort by review count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -6101,7 +6101,7 @@ exports[`Authors > can sort by review count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -6138,7 +6138,7 @@ exports[`Authors > can sort by review count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -6175,7 +6175,7 @@ exports[`Authors > can sort by review count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -6212,7 +6212,7 @@ exports[`Authors > can sort by review count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -6249,7 +6249,7 @@ exports[`Authors > can sort by review count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -6286,7 +6286,7 @@ exports[`Authors > can sort by review count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -6316,7 +6316,7 @@ exports[`Authors > can sort by review count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -6353,7 +6353,7 @@ exports[`Authors > can sort by review count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -6390,7 +6390,7 @@ exports[`Authors > can sort by review count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -6427,7 +6427,7 @@ exports[`Authors > can sort by review count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -6464,7 +6464,7 @@ exports[`Authors > can sort by review count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -6517,7 +6517,7 @@ exports[`Authors > can sort by work count asc 1`] = `
       style="z-index: 1;"
     >
       <div
-        class="mb-1 max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+        class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
       />
     </div>
     <div
@@ -6525,7 +6525,7 @@ exports[`Authors > can sort by work count asc 1`] = `
     >
       <ol>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -6562,7 +6562,7 @@ exports[`Authors > can sort by work count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -6599,7 +6599,7 @@ exports[`Authors > can sort by work count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -6636,7 +6636,7 @@ exports[`Authors > can sort by work count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -6666,7 +6666,7 @@ exports[`Authors > can sort by work count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -6703,7 +6703,7 @@ exports[`Authors > can sort by work count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -6740,7 +6740,7 @@ exports[`Authors > can sort by work count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -6777,7 +6777,7 @@ exports[`Authors > can sort by work count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -6814,7 +6814,7 @@ exports[`Authors > can sort by work count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -6851,7 +6851,7 @@ exports[`Authors > can sort by work count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -6888,7 +6888,7 @@ exports[`Authors > can sort by work count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -6925,7 +6925,7 @@ exports[`Authors > can sort by work count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -6962,7 +6962,7 @@ exports[`Authors > can sort by work count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -6999,7 +6999,7 @@ exports[`Authors > can sort by work count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -7036,7 +7036,7 @@ exports[`Authors > can sort by work count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -7073,7 +7073,7 @@ exports[`Authors > can sort by work count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -7110,7 +7110,7 @@ exports[`Authors > can sort by work count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -7147,7 +7147,7 @@ exports[`Authors > can sort by work count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -7184,7 +7184,7 @@ exports[`Authors > can sort by work count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -7221,7 +7221,7 @@ exports[`Authors > can sort by work count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -7258,7 +7258,7 @@ exports[`Authors > can sort by work count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -7295,7 +7295,7 @@ exports[`Authors > can sort by work count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -7332,7 +7332,7 @@ exports[`Authors > can sort by work count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -7369,7 +7369,7 @@ exports[`Authors > can sort by work count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -7406,7 +7406,7 @@ exports[`Authors > can sort by work count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -7443,7 +7443,7 @@ exports[`Authors > can sort by work count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -7480,7 +7480,7 @@ exports[`Authors > can sort by work count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -7517,7 +7517,7 @@ exports[`Authors > can sort by work count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -7554,7 +7554,7 @@ exports[`Authors > can sort by work count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -7591,7 +7591,7 @@ exports[`Authors > can sort by work count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -7628,7 +7628,7 @@ exports[`Authors > can sort by work count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -7665,7 +7665,7 @@ exports[`Authors > can sort by work count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -7701,7 +7701,7 @@ exports[`Authors > can sort by work count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -7731,7 +7731,7 @@ exports[`Authors > can sort by work count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -7761,7 +7761,7 @@ exports[`Authors > can sort by work count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -7791,7 +7791,7 @@ exports[`Authors > can sort by work count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -7821,7 +7821,7 @@ exports[`Authors > can sort by work count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -7851,7 +7851,7 @@ exports[`Authors > can sort by work count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -7881,7 +7881,7 @@ exports[`Authors > can sort by work count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -7911,7 +7911,7 @@ exports[`Authors > can sort by work count asc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -7958,7 +7958,7 @@ exports[`Authors > can sort by work count desc 1`] = `
       style="z-index: 1;"
     >
       <div
-        class="mb-1 max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+        class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
       />
     </div>
     <div
@@ -7966,7 +7966,7 @@ exports[`Authors > can sort by work count desc 1`] = `
     >
       <ol>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -7996,7 +7996,7 @@ exports[`Authors > can sort by work count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -8026,7 +8026,7 @@ exports[`Authors > can sort by work count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -8056,7 +8056,7 @@ exports[`Authors > can sort by work count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -8086,7 +8086,7 @@ exports[`Authors > can sort by work count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -8116,7 +8116,7 @@ exports[`Authors > can sort by work count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -8146,7 +8146,7 @@ exports[`Authors > can sort by work count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -8176,7 +8176,7 @@ exports[`Authors > can sort by work count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -8206,7 +8206,7 @@ exports[`Authors > can sort by work count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -8243,7 +8243,7 @@ exports[`Authors > can sort by work count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -8280,7 +8280,7 @@ exports[`Authors > can sort by work count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -8317,7 +8317,7 @@ exports[`Authors > can sort by work count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -8347,7 +8347,7 @@ exports[`Authors > can sort by work count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -8384,7 +8384,7 @@ exports[`Authors > can sort by work count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -8421,7 +8421,7 @@ exports[`Authors > can sort by work count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -8458,7 +8458,7 @@ exports[`Authors > can sort by work count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -8495,7 +8495,7 @@ exports[`Authors > can sort by work count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -8532,7 +8532,7 @@ exports[`Authors > can sort by work count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -8569,7 +8569,7 @@ exports[`Authors > can sort by work count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -8606,7 +8606,7 @@ exports[`Authors > can sort by work count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -8643,7 +8643,7 @@ exports[`Authors > can sort by work count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -8680,7 +8680,7 @@ exports[`Authors > can sort by work count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -8717,7 +8717,7 @@ exports[`Authors > can sort by work count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -8754,7 +8754,7 @@ exports[`Authors > can sort by work count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -8791,7 +8791,7 @@ exports[`Authors > can sort by work count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -8828,7 +8828,7 @@ exports[`Authors > can sort by work count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -8865,7 +8865,7 @@ exports[`Authors > can sort by work count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -8902,7 +8902,7 @@ exports[`Authors > can sort by work count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -8939,7 +8939,7 @@ exports[`Authors > can sort by work count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -8976,7 +8976,7 @@ exports[`Authors > can sort by work count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -9013,7 +9013,7 @@ exports[`Authors > can sort by work count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -9050,7 +9050,7 @@ exports[`Authors > can sort by work count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -9087,7 +9087,7 @@ exports[`Authors > can sort by work count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -9124,7 +9124,7 @@ exports[`Authors > can sort by work count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -9161,7 +9161,7 @@ exports[`Authors > can sort by work count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -9198,7 +9198,7 @@ exports[`Authors > can sort by work count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -9235,7 +9235,7 @@ exports[`Authors > can sort by work count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -9272,7 +9272,7 @@ exports[`Authors > can sort by work count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -9309,7 +9309,7 @@ exports[`Authors > can sort by work count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
@@ -9346,7 +9346,7 @@ exports[`Authors > can sort by work count desc 1`] = `
           </div>
         </li>
         <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6"
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
         >
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20"
