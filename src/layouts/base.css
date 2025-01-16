@@ -406,9 +406,7 @@
 
       li::before {
         display: block;
-        content: counter(
-          list-item
-        ); /* list item is the default user-agent counter and doesn't require defining! It'll match the expected li value in an ol */
+        content: counter(list-item);
         position: absolute;
         right: calc(100% + 0.25em);
         text-align: right;
