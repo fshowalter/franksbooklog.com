@@ -24,7 +24,7 @@ export function Avatar({
   return (
     <div className={className}>
       <svg
-        fill={fill || "var(--bg-stripe)"}
+        fill={fill || "var(--bg-avatar-default)"}
         viewBox="0 0 16 16"
         width="100%"
         xmlns="http://www.w3.org/2000/svg"

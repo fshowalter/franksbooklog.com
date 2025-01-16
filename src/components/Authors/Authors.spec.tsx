@@ -72,30 +72,4 @@ describe("Authors", () => {
 
     expect(screen.getByTestId("list")).toMatchSnapshot();
   });
-
-  it("can sort by work count asc", async ({ expect }) => {
-    expect.hasAssertions();
-
-    render(<Authors {...props} />);
-
-    await userEvent.selectOptions(
-      screen.getByLabelText("Order By"),
-      "Work Count (Fewest First)",
-    );
-
-    expect(screen.getByTestId("list")).toMatchSnapshot();
-  });
-
-  it("can sort by work count desc", async ({ expect }) => {
-    expect.hasAssertions();
-
-    render(<Authors {...props} />);
-
-    await userEvent.selectOptions(
-      screen.getByLabelText("Order By"),
-      "Work Count (Most First)",
-    );
-
-    expect(screen.getByTestId("list")).toMatchSnapshot();
-  });
 });

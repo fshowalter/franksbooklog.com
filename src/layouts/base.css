@@ -15,6 +15,7 @@
   --bg-progress: #14bd41;
   --bg-stripe: #f7f5f3;
   --bg-unreviewed: #f7f5f3;
+  --bg-avatar-default: #ededed;
   --bg-group: #f7f5f3;
   --bg-subtle: #fafafa;
   --border-accent: #054a93;
@@ -39,6 +40,7 @@
   :root {
     --bg-accent: #a52422;
     --bg-canvas: #484745;
+    --bg-avatar-default: #464646;
     --bg-default-alpha: 0.5;
     --bg-default-rgb: 50, 47, 47;
     --bg-default: #322f2f;

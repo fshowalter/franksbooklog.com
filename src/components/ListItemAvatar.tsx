@@ -31,7 +31,7 @@ export function ListItemAvatar({
   return (
     <div
       className={ccn(
-        "safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all tablet:w-20",
+        "safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20",
         className,
       )}
       style={{
