@@ -11,7 +11,7 @@ import { Grade } from "./Grade";
 export const MoreReviewsImageConfig = {
   height: 372,
   sizes:
-    "(max-width: 561px) 46vw, (max-width: 767px) 248px, (max-width: 1186px) calc((100vw - 96px) * 0.2275), 248px",
+    "(min-width: 1800px) 218px, (min-width: 1280px) calc(11.8vw + 8px), (min-width: 820px) 216px, (min-width: 600px) calc(23.5vw + 28px), calc(41.43vw + 8px)",
   width: 248,
 };
 
@@ -36,24 +36,22 @@ export function MoreReviews({
 }): JSX.Element {
   return (
     <nav
-      className="relative flex w-full flex-col items-center"
-      data-pagefind-ignore
+      className="mx-auto w-full max-w-screen-max bg-subtle tablet:max-w-popout desktop:max-w-screen-max desktop:px-container"
+      data-page-find-ignore
     >
-      <div className="relative mx-auto w-full max-w-screen-desktop">
-        <div className="px-container">{children}</div>
-        <ul className="flex flex-wrap justify-center gap-x-[4%] gap-y-[6vw] px-[4%] tablet:justify-between tablet:gap-x-[3%] tablet:px-container">
-          {values.map((value) => {
-            return <MoreReviewsCard key={value.slug} value={value} />;
-          })}
-        </ul>
-      </div>
+      <div className="px-container tablet:px-0">{children}</div>
+      <ul className="flex flex-wrap justify-center gap-x-[4%] gap-y-[6vw] px-[4%] tablet:gap-x-[3%] tablet:px-0 desktop:justify-between desktop:gap-x-[2%]">
+        {values.map((value) => {
+          return <MoreReviewsCard key={value.slug} value={value} />;
+        })}
+      </ul>
     </nav>
   );
 }
 
 function MoreReviewsCard({ value }: { value: MoreReviewsValue }): JSX.Element {
   return (
-    <li className="relative flex w-[46%] max-w-[248px] flex-col items-center border-default bg-default tablet:w-[22.75%]">
+    <li className="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default has-[a:hover]:bg-stripe min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] desktop:w-[14.16666667%]">
       <Cover
         decoding="async"
         imageProps={value.coverImageProps}
@@ -64,7 +62,7 @@ function MoreReviewsCard({ value }: { value: MoreReviewsValue }): JSX.Element {
       <div className="flex grow flex-col items-center px-[8%] pb-8 pt-3 desktop:pl-[8.5%] desktop:pr-[10%]">
         <div className="text-center text-md font-medium leading-6">
           <a
-            className="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover hover:text-accent hover:underline hover:before:opacity-0 tablet:before:bg-[#fff] tablet:before:opacity-15"
+            className="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0"
             href={`/reviews/${value.slug}/`}
             rel="canonical"
           >
