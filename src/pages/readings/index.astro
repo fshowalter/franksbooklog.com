@@ -7,9 +7,12 @@ const props = await getProps();
 ---
 
 <Layout
-  article={false}
   canonical={true}
-  description={props.deck}
+  meta={{
+    description:
+      "A list of every book or story I've read since 2022. Filter by title, work year, reading year, kind, or edition. Sort by oldest or newest.",
+  }}
+  openGraph={{ description: props.deck, type: "website" }}
   title="Reading Log"
 >
   <Readings client:load {...props} />

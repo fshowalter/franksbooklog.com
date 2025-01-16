@@ -28,10 +28,15 @@ const props = await getProps(slug);
 ---
 
 <Layout
-  article={false}
   canonical={true}
-  description={props.deck}
-  title={props.name}
+  meta={{
+    description: `Reviews of books and stories written by ${props.name}. Sort reviews by best or worst, newest or oldest. Filter by year, kind, or title.`,
+  }}
+  openGraph={{
+    description: props.deck,
+    type: "website",
+  }}
+  title={`${props.name} book & story reviews`}
 >
   <Author client:load {...props} />
 </Layout>

@@ -29,9 +29,14 @@ const props = await getProps(year);
 ---
 
 <Layout
-  article={false}
   canonical={true}
-  description={props.deck}
+  meta={{
+    description: `My ${year} reading stats. Includes my most-read authors; as well as kind, year published, and edition distributions.`,
+  }}
+  openGraph={{
+    description: props.deck,
+    type: "website",
+  }}
   title={`${props.year} Stats`}
 >
   <YearStats {...props} />

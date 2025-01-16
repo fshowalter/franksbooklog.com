@@ -1,4 +1,5 @@
 ---
+import { getContentPlainText } from "~/api/pages";
 import { Article } from "~/components/Article/Article";
 import { getProps } from "~/components/Article/getProps";
 import Layout from "~/layouts/Layout.astro";
@@ -10,9 +11,27 @@ const props = await getProps({
   deck,
   slug,
 });
+
+const contextPlainText = getContentPlainText(props.rawContent);
+
+//trim the string to the maximum length
+var description = contextPlainText
+  .replaceAll(/\r?\n|\r/g, " ")
+  .slice(0, Math.max(0, 160));
+
+//re-trim if we are in the middle of a word
+description = description.slice(
+  0,
+  Math.max(0, Math.min(description.length, description.lastIndexOf(" "))),
+);
 ---
 
-<Layout article={true} canonical={true} description={deck} title={props.title}>
+<Layout
+  canonical={true}
+  meta={{ description }}
+  openGraph={{ description: props.deck, type: "article" }}
+  title={props.title}
+>
   <div data-pagefind-body>
     <Article {...props} />
   </div>

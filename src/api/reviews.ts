@@ -76,6 +76,14 @@ export async function allReviews(): Promise<Reviews> {
   return reviews;
 }
 
+export function getContentPlainText(rawContent: string): string {
+  return getMastProcessor()
+    .use(removeFootnotes)
+    .use(strip)
+    .processSync(rawContent)
+    .toString();
+}
+
 export async function loadContent(review: Review): Promise<ReviewWithContent> {
   const readingsMarkdown =
     cachedReadingsMarkdown || (await allReadingsMarkdown());

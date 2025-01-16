@@ -35,16 +35,18 @@ export function AvatarBackdrop({
 export function SolidBackdrop({
   breadcrumb,
   deck,
+  narrowTitle = false,
   title,
   titleStyle,
 }: {
   breadcrumb?: React.ReactNode;
   deck: React.ReactNode;
+  narrowTitle?: boolean;
   title: string;
   titleStyle?: string;
 }) {
   return (
-    <Wrapper size="small">
+    <Wrapper narrowChildren={narrowTitle} size="small">
       <Breadcrumb value={breadcrumb} />
       <Title className={titleStyle} value={title} />
       <Deck value={deck} />
@@ -111,11 +113,13 @@ function Wrapper({
   centerText = false,
   children,
   heroImage,
+  narrowChildren = false,
   size = "default",
 }: {
   centerText?: boolean;
   children: React.ReactNode;
   heroImage?: React.ReactNode;
+  narrowChildren?: boolean;
   size?: "default" | "large" | "small";
 }) {
   const defaultSizes =
@@ -138,7 +142,7 @@ function Wrapper({
     >
       {heroImage}
       <div
-        className={`${centerText ? "items-center" : ""} z-10 mx-auto flex w-full max-w-screen-max flex-col px-container`}
+        className={`${centerText ? "items-center" : ""} z-10 mx-auto flex w-full ${narrowChildren ? "max-w-prose" : "max-w-screen-max px-container"} flex-col`}
       >
         {children}
       </div>

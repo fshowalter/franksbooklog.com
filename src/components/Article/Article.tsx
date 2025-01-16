@@ -24,7 +24,7 @@ export function Article({
   return (
     <Layout>
       <article>
-        <SolidBackdrop deck={deck} title={title} />
+        <SolidBackdrop deck={deck} narrowTitle={true} title={title} />
         <section className="flex flex-col items-center pb-32 pt-16">
           <div className="px-container">
             <LongFormText className="max-w-prose" text={content} />
