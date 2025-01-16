@@ -12,32 +12,37 @@ type Props = {
 export function IncludedWorks({ values }: Props) {
   return (
     <>
-      <SubHeading as="h2" className="shadow-bottom">
+      <SubHeading as="h2" className="text-center shadow-bottom">
         Included Works
       </SubHeading>
-      <ul className="w-full max-w-popout">
-        {values.map((value) => (
-          <li className="py-4 shadow-bottom" key={value.slug}>
-            <a
-              className="font-sans text-sm font-medium text-accent decoration-accent decoration-2 underline-offset-4 hover:underline"
-              href={`/reviews/${value.slug}/`}
+      <div className="w-full max-w-popout bg-subtle px-container py-8 tablet:pt-12">
+        <ul className="">
+          {values.map((value) => (
+            <li
+              className="relative mb-1 bg-default px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
+              key={value.slug}
             >
-              {value.title}
-            </a>{" "}
-            <div className="font-sans text-xs leading-6 text-muted">
-              <span className="font-light text-subtle">by</span>{" "}
-              {toSentenceArray(value.authors.map((author) => author.name))}
-            </div>
-            <div className="py-1">
-              <ListItemKindAndYear
-                kind={value.kind}
-                year={value.yearPublished}
-              />
-            </div>
-            <Grade className="mt-1" height={16} value={value.grade} />
-          </li>
-        ))}
-      </ul>
+              <a
+                className="font-sans text-sm font-medium text-accent after:absolute after:left-0 after:top-0 after:size-full after:opacity-0"
+                href={`/reviews/${value.slug}/`}
+              >
+                {value.title}
+              </a>{" "}
+              <div className="font-sans text-xs leading-6 text-muted">
+                <span className="font-light text-subtle">by</span>{" "}
+                {toSentenceArray(value.authors.map((author) => author.name))}
+              </div>
+              <div className="py-1">
+                <ListItemKindAndYear
+                  kind={value.kind}
+                  year={value.yearPublished}
+                />
+              </div>
+              <Grade className="mt-1" height={16} value={value.grade} />
+            </li>
+          ))}
+        </ul>
+      </div>
     </>
   );
 }
