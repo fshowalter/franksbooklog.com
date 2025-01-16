@@ -14,9 +14,7 @@ export type Sort =
   | "name-asc"
   | "name-desc"
   | "review-count-asc"
-  | "review-count-desc"
-  | "work-count-asc"
-  | "work-count-desc";
+  | "review-count-desc";
 
 const groupValues = buildGroupValues(groupForValue);
 const { updateFilter } = filterTools(sortValues, groupValues);
@@ -39,10 +37,6 @@ function groupForValue(item: ListItemValue, sortValue: Sort): string {
     case "review-count-desc": {
       return "";
     }
-    case "work-count-asc":
-    case "work-count-desc": {
-      return "";
-    }
     // no default
   }
 }
@@ -56,8 +50,6 @@ function sortValues(values: ListItemValue[], sortOrder: Sort) {
         sortNumber(a.reviewedWorkCount, b.reviewedWorkCount),
       "review-count-desc": (a, b) =>
         sortNumber(a.reviewedWorkCount, b.reviewedWorkCount) * -1,
-      "work-count-asc": (a, b) => sortNumber(a.workCount, b.workCount),
-      "work-count-desc": (a, b) => sortNumber(a.workCount, b.workCount) * -1,
     };
 
   const comparer = sortMap[sortOrder];
