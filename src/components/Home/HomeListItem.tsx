@@ -38,7 +38,7 @@ export function HomeListItem({
   value: ListItemValue;
 }): JSX.Element {
   return (
-    <li className="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[14.16666667%]">
+    <li className="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default has-[a:hover]:bg-stripe min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[14.16666667%]">
       <Cover
         decoding="async"
         imageProps={value.coverImageProps}
@@ -54,7 +54,7 @@ export function HomeListItem({
         </div>
         <div className="text-center text-md font-medium leading-6">
           <a
-            className="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-[#fff] before:opacity-15 hover:text-accent hover:underline hover:before:opacity-0"
+            className="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0"
             href={`/reviews/${value.slug}/`}
             rel="canonical"
           >
@@ -71,11 +71,10 @@ export function HomeListItem({
               return (
                 <AuthorLink
                   as="span"
-                  className="font-normal text-accent"
+                  className="font-normal text-default"
                   key={author.slug}
                   name={author.name}
                   notes={author.notes}
-                  slug={author.slug}
                 />
               );
             }),

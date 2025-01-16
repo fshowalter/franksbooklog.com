@@ -237,7 +237,7 @@ exports[`Home > matches snapshot 1`] = `
             class="flex flex-wrap justify-center gap-x-[4%] gap-y-[6vw] px-[4%] tablet:gap-x-[3%] tablet:px-0 desktop:justify-between desktop:gap-x-[2%]"
           >
             <li
-              class="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[14.16666667%]"
+              class="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default has-[a:hover]:bg-stripe min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[14.16666667%]"
             >
               <img
                 alt=""
@@ -262,7 +262,7 @@ exports[`Home > matches snapshot 1`] = `
                   class="text-center text-md font-medium leading-6"
                 >
                   <a
-                    class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-[#fff] before:opacity-15 hover:text-accent hover:underline hover:before:opacity-0"
+                    class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0"
                     href="/reviews/recessional-by-david-mamet/"
                     rel="canonical"
                   >
@@ -279,13 +279,9 @@ exports[`Home > matches snapshot 1`] = `
                 >
                   by 
                   <span
-                    class="font-normal text-accent"
+                    class="font-normal text-default"
                   >
-                    <a
-                      href="/authors/david-mamet/"
-                    >
-                      David Mamet
-                    </a>
+                    David Mamet
                   </span>
                 </p>
                  
@@ -305,7 +301,7 @@ exports[`Home > matches snapshot 1`] = `
               </div>
             </li>
             <li
-              class="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[14.16666667%]"
+              class="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default has-[a:hover]:bg-stripe min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[14.16666667%]"
             >
               <img
                 alt=""
@@ -330,7 +326,7 @@ exports[`Home > matches snapshot 1`] = `
                   class="text-center text-md font-medium leading-6"
                 >
                   <a
-                    class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-[#fff] before:opacity-15 hover:text-accent hover:underline hover:before:opacity-0"
+                    class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0"
                     href="/reviews/fast-forward-by-stephen-morris/"
                     rel="canonical"
                   >
@@ -347,13 +343,9 @@ exports[`Home > matches snapshot 1`] = `
                 >
                   by 
                   <span
-                    class="font-normal text-accent"
+                    class="font-normal text-default"
                   >
-                    <a
-                      href="/authors/stephen-morris/"
-                    >
-                      Stephen Morris
-                    </a>
+                    Stephen Morris
                   </span>
                 </p>
                  
@@ -373,7 +365,7 @@ exports[`Home > matches snapshot 1`] = `
               </div>
             </li>
             <li
-              class="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[14.16666667%]"
+              class="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default has-[a:hover]:bg-stripe min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[14.16666667%]"
             >
               <img
                 alt=""
@@ -398,7 +390,7 @@ exports[`Home > matches snapshot 1`] = `
                   class="text-center text-md font-medium leading-6"
                 >
                   <a
-                    class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-[#fff] before:opacity-15 hover:text-accent hover:underline hover:before:opacity-0"
+                    class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0"
                     href="/reviews/gothic-by-philip-fracassi/"
                     rel="canonical"
                   >
@@ -415,13 +407,9 @@ exports[`Home > matches snapshot 1`] = `
                 >
                   by 
                   <span
-                    class="font-normal text-accent"
+                    class="font-normal text-default"
                   >
-                    <a
-                      href="/authors/philip-fracassi/"
-                    >
-                      Philip Fracassi
-                    </a>
+                    Philip Fracassi
                   </span>
                 </p>
                  
@@ -441,7 +429,7 @@ exports[`Home > matches snapshot 1`] = `
               </div>
             </li>
             <li
-              class="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[14.16666667%]"
+              class="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default has-[a:hover]:bg-stripe min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[14.16666667%]"
             >
               <img
                 alt=""
@@ -466,7 +454,7 @@ exports[`Home > matches snapshot 1`] = `
                   class="text-center text-md font-medium leading-6"
                 >
                   <a
-                    class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-[#fff] before:opacity-15 hover:text-accent hover:underline hover:before:opacity-0"
+                    class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0"
                     href="/reviews/record-play-pause-by-stephen-morris/"
                     rel="canonical"
                   >
@@ -483,13 +471,9 @@ exports[`Home > matches snapshot 1`] = `
                 >
                   by 
                   <span
-                    class="font-normal text-accent"
+                    class="font-normal text-default"
                   >
-                    <a
-                      href="/authors/stephen-morris/"
-                    >
-                      Stephen Morris
-                    </a>
+                    Stephen Morris
                   </span>
                 </p>
                  
@@ -509,7 +493,7 @@ exports[`Home > matches snapshot 1`] = `
               </div>
             </li>
             <li
-              class="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[14.16666667%]"
+              class="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default has-[a:hover]:bg-stripe min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[14.16666667%]"
             >
               <img
                 alt=""
@@ -534,7 +518,7 @@ exports[`Home > matches snapshot 1`] = `
                   class="text-center text-md font-medium leading-6"
                 >
                   <a
-                    class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-[#fff] before:opacity-15 hover:text-accent hover:underline hover:before:opacity-0"
+                    class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0"
                     href="/reviews/fright-night-origins-by-tom-holland-a-jack-ulrich/"
                     rel="canonical"
                   >
@@ -551,23 +535,15 @@ exports[`Home > matches snapshot 1`] = `
                 >
                   by 
                   <span
-                    class="font-normal text-accent"
+                    class="font-normal text-default"
                   >
-                    <a
-                      href="/authors/tom-holland/"
-                    >
-                      Tom Holland
-                    </a>
+                    Tom Holland
                   </span>
                    and 
                   <span
-                    class="font-normal text-accent"
+                    class="font-normal text-default"
                   >
-                    <a
-                      href="/authors/a-jack-ulrich/"
-                    >
-                      A. Jack Ulrich
-                    </a>
+                    A. Jack Ulrich
                   </span>
                 </p>
                  
@@ -587,7 +563,7 @@ exports[`Home > matches snapshot 1`] = `
               </div>
             </li>
             <li
-              class="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[14.16666667%]"
+              class="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default has-[a:hover]:bg-stripe min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[14.16666667%]"
             >
               <img
                 alt=""
@@ -612,7 +588,7 @@ exports[`Home > matches snapshot 1`] = `
                   class="text-center text-md font-medium leading-6"
                 >
                   <a
-                    class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-[#fff] before:opacity-15 hover:text-accent hover:underline hover:before:opacity-0"
+                    class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0"
                     href="/reviews/dont-let-them-get-you-down-by-philip-fracassi/"
                     rel="canonical"
                   >
@@ -629,13 +605,9 @@ exports[`Home > matches snapshot 1`] = `
                 >
                   by 
                   <span
-                    class="font-normal text-accent"
+                    class="font-normal text-default"
                   >
-                    <a
-                      href="/authors/philip-fracassi/"
-                    >
-                      Philip Fracassi
-                    </a>
+                    Philip Fracassi
                   </span>
                 </p>
                  
@@ -655,7 +627,7 @@ exports[`Home > matches snapshot 1`] = `
               </div>
             </li>
             <li
-              class="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[14.16666667%]"
+              class="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default has-[a:hover]:bg-stripe min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[14.16666667%]"
             >
               <img
                 alt=""
@@ -680,7 +652,7 @@ exports[`Home > matches snapshot 1`] = `
                   class="text-center text-md font-medium leading-6"
                 >
                   <a
-                    class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-[#fff] before:opacity-15 hover:text-accent hover:underline hover:before:opacity-0"
+                    class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0"
                     href="/reviews/the-creative-act-by-rick-rubin/"
                     rel="canonical"
                   >
@@ -697,13 +669,9 @@ exports[`Home > matches snapshot 1`] = `
                 >
                   by 
                   <span
-                    class="font-normal text-accent"
+                    class="font-normal text-default"
                   >
-                    <a
-                      href="/authors/rick-rubin/"
-                    >
-                      Rick Rubin
-                    </a>
+                    Rick Rubin
                   </span>
                 </p>
                  
@@ -723,7 +691,7 @@ exports[`Home > matches snapshot 1`] = `
               </div>
             </li>
             <li
-              class="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[14.16666667%]"
+              class="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default has-[a:hover]:bg-stripe min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[14.16666667%]"
             >
               <img
                 alt=""
@@ -748,7 +716,7 @@ exports[`Home > matches snapshot 1`] = `
                   class="text-center text-md font-medium leading-6"
                 >
                   <a
-                    class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-[#fff] before:opacity-15 hover:text-accent hover:underline hover:before:opacity-0"
+                    class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0"
                     href="/reviews/sacculina-by-philip-fracassi/"
                     rel="canonical"
                   >
@@ -765,13 +733,9 @@ exports[`Home > matches snapshot 1`] = `
                 >
                   by 
                   <span
-                    class="font-normal text-accent"
+                    class="font-normal text-default"
                   >
-                    <a
-                      href="/authors/philip-fracassi/"
-                    >
-                      Philip Fracassi
-                    </a>
+                    Philip Fracassi
                   </span>
                 </p>
                  
@@ -791,7 +755,7 @@ exports[`Home > matches snapshot 1`] = `
               </div>
             </li>
             <li
-              class="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[14.16666667%]"
+              class="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default has-[a:hover]:bg-stripe min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[14.16666667%]"
             >
               <img
                 alt=""
@@ -816,7 +780,7 @@ exports[`Home > matches snapshot 1`] = `
                   class="text-center text-md font-medium leading-6"
                 >
                   <a
-                    class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-[#fff] before:opacity-15 hover:text-accent hover:underline hover:before:opacity-0"
+                    class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0"
                     href="/reviews/the-cipher-by-kathe-koja/"
                     rel="canonical"
                   >
@@ -833,13 +797,9 @@ exports[`Home > matches snapshot 1`] = `
                 >
                   by 
                   <span
-                    class="font-normal text-accent"
+                    class="font-normal text-default"
                   >
-                    <a
-                      href="/authors/kathe-koja/"
-                    >
-                      Kathe Koja
-                    </a>
+                    Kathe Koja
                   </span>
                 </p>
                  
@@ -859,7 +819,7 @@ exports[`Home > matches snapshot 1`] = `
               </div>
             </li>
             <li
-              class="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[14.16666667%]"
+              class="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default has-[a:hover]:bg-stripe min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[14.16666667%]"
             >
               <img
                 alt=""
@@ -884,7 +844,7 @@ exports[`Home > matches snapshot 1`] = `
                   class="text-center text-md font-medium leading-6"
                 >
                   <a
-                    class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-[#fff] before:opacity-15 hover:text-accent hover:underline hover:before:opacity-0"
+                    class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0"
                     href="/reviews/roadside-pickup-by-richard-laymon/"
                     rel="canonical"
                   >
@@ -901,13 +861,9 @@ exports[`Home > matches snapshot 1`] = `
                 >
                   by 
                   <span
-                    class="font-normal text-accent"
+                    class="font-normal text-default"
                   >
-                    <a
-                      href="/authors/richard-laymon/"
-                    >
-                      Richard Laymon
-                    </a>
+                    Richard Laymon
                   </span>
                 </p>
                  
@@ -927,7 +883,7 @@ exports[`Home > matches snapshot 1`] = `
               </div>
             </li>
             <li
-              class="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[14.16666667%]"
+              class="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default has-[a:hover]:bg-stripe min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[14.16666667%]"
             >
               <img
                 alt=""
@@ -952,7 +908,7 @@ exports[`Home > matches snapshot 1`] = `
                   class="text-center text-md font-medium leading-6"
                 >
                   <a
-                    class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-[#fff] before:opacity-15 hover:text-accent hover:underline hover:before:opacity-0"
+                    class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0"
                     href="/reviews/fright-night-by-john-skipp-craig-spector/"
                     rel="canonical"
                   >
@@ -969,23 +925,15 @@ exports[`Home > matches snapshot 1`] = `
                 >
                   by 
                   <span
-                    class="font-normal text-accent"
+                    class="font-normal text-default"
                   >
-                    <a
-                      href="/authors/john-skipp/"
-                    >
-                      John Skipp
-                    </a>
+                    John Skipp
                   </span>
                    and 
                   <span
-                    class="font-normal text-accent"
+                    class="font-normal text-default"
                   >
-                    <a
-                      href="/authors/craig-spector/"
-                    >
-                      Craig Spector
-                    </a>
+                    Craig Spector
                   </span>
                 </p>
                  
@@ -1005,7 +953,7 @@ exports[`Home > matches snapshot 1`] = `
               </div>
             </li>
             <li
-              class="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[14.16666667%]"
+              class="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default has-[a:hover]:bg-stripe min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[14.16666667%]"
             >
               <img
                 alt=""
@@ -1030,7 +978,7 @@ exports[`Home > matches snapshot 1`] = `
                   class="text-center text-md font-medium leading-6"
                 >
                   <a
-                    class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-[#fff] before:opacity-15 hover:text-accent hover:underline hover:before:opacity-0"
+                    class="z-10 inline-block decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0"
                     href="/reviews/doctor-sleep-by-stephen-king/"
                     rel="canonical"
                   >
@@ -1047,13 +995,9 @@ exports[`Home > matches snapshot 1`] = `
                 >
                   by 
                   <span
-                    class="font-normal text-accent"
+                    class="font-normal text-default"
                   >
-                    <a
-                      href="/authors/stephen-king/"
-                    >
-                      Stephen King
-                    </a>
+                    Stephen King
                   </span>
                 </p>
                  
