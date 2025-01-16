@@ -18,7 +18,10 @@ export function getHtml(
   const html = remark()
     .use(remarkGfm)
     .use(smartypants)
-    .use(remarkRehype, { allowDangerousHtml: true })
+    .use(remarkRehype, {
+      allowDangerousHtml: true,
+      footnoteBackContent: "↩\u{FE0E}",
+    })
     .use(rehypeRaw)
     .use(rehypeStringify)
     .processSync(content)

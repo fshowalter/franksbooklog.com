@@ -2,7 +2,7 @@ const PROSE_CONTENT_WIDTH = "39rem";
 
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
+  content: ["./src/**/*.{astro,js,jsx,md,mdx,ts,tsx}"],
   theme: {
     backgroundColor: {
       abandoned: "var(--bg-abandoned)",
