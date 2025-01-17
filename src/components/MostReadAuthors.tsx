@@ -100,7 +100,8 @@ function ReadingSubListItem({ value }: { value: ReadingSubListItemValue }) {
           slug={value.reviewed ? value.slug : undefined}
           title={value.title}
         />
-        <div className="-mt-px font-sans text-xs text-muted">{value.date}</div>
+        <div className="mt-1 font-sans text-xs text-muted">{value.date}</div>
+        <div className="mt-1 font-sans text-xs text-muted">{value.kind}</div>
         <div className="mt-1 font-sans text-xs font-light text-muted">
           {value.edition}
         </div>
