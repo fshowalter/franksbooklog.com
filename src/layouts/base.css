@@ -3,60 +3,60 @@
 @tailwind utilities;
 
 :root {
-  --bg-accent: #bf211e;
   --bg-abandoned: #da0101;
+  --bg-accent: #bf211e;
+  --bg-avatar-default: #ededed;
   --bg-canvas: #f2f0e8;
   --bg-default-alpha: 0.4;
   --bg-default-rgb: 255, 255, 255;
   --bg-default: #fff;
-  --bg-inverse: rgb(0 0 0 / 75%);
-  --fg-inverse-subtle: #e8e8e8;
   --bg-footer: #504b43;
+  --bg-group: #f7f5f3;
+  --bg-inverse: rgb(0 0 0 / 75%);
   --bg-progress: #14bd41;
   --bg-stripe: #f7f5f3;
-  --bg-unreviewed: #fefefe;
-  --bg-avatar-default: #ededed;
-  --bg-group: #f7f5f3;
   --bg-subtle: #fafafa;
+  --bg-unreviewed: #fefefe;
   --border-accent: #054a93;
   --border-default: #e9e7e0;
+  --container-padding: 8%;
   --fg-accent: #b02e0c;
   --fg-default: rgb(0 0 0 / 75%);
   --fg-emphasis: rgb(0 0 0 / 95%);
+  --fg-inverse-subtle: #e8e8e8;
   --fg-inverse: #fff;
   --fg-muted: rgb(0 0 0 / 65%);
   --fg-subtle: rgb(0 0 0 / 60%);
+  --font-sans: "ArgentumSans";
+  --font-serif: "FrankRuhlLibre";
   --gutter-width: 20px;
   --header-offset: 0;
   --image-filter: initial;
-  --container-padding: 8%;
-  --search-dialog-padding: 8%;
-  --font-sans: "ArgentumSans";
-  --font-serif: "FrankRuhlLibre";
   --list-item-cover-width: 64px;
+  --search-dialog-padding: 8%;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --bg-accent: #a52422;
-    --bg-canvas: #484745;
     --bg-avatar-default: #252525;
+    --bg-canvas: #484745;
     --bg-default-alpha: 0.5;
     --bg-default-rgb: 50, 47, 47;
     --bg-default: #322f2f;
     --bg-footer: #252525;
+    --bg-group: #3c393a;
     --bg-inverse: #322f2f;
     --bg-progress: #379634;
     --bg-stripe: #3c393a;
-    --bg-unreviewed: #3c393a;
-    --bg-group: #3c393a;
     --bg-subtle: #373434;
+    --bg-unreviewed: #3c393a;
     --border-accent: #499ef8;
     --border-default: #484745;
     --fg-accent: #c86666;
-    --fg-inverse: #e6e6e6;
     --fg-default: rgb(255 255 255 / 75%);
     --fg-emphasis: rgb(255 255 255 / 95%);
+    --fg-inverse: #e6e6e6;
     --fg-muted: rgb(255 255 255 / 65%);
     --fg-subtle: rgb(255 255 255 / 60%);
     --image-filter: brightness(0.8) contrast(1.2);
@@ -66,16 +66,16 @@
 @media screen(tablet) {
   :root {
     --container-padding: 48px;
-    --search-dialog-padding: 24px;
     --list-item-cover-width: 76px;
+    --search-dialog-padding: 24px;
   }
 }
 
 @media screen(desktop) {
   :root {
     --container-padding: 80px;
-    --search-dialog-padding: 32px;
     --list-item-cover-width: 80px;
+    --search-dialog-padding: 32px;
   }
 }
 
@@ -86,18 +86,18 @@
   }
 
   :root {
-    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
   }
 
   body {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-family: "FrankRuhlLibre", "Iowan Old Style", "Georgia", "Cambria",
-      "Times New Roman", "Times", "serif";
-    font-feature-settings: "kern", "liga", "clig", "calt", "ss06", "lnum";
-    font-kerning: normal;
     background-color: var(--bg-canvas);
     color: var(--fg-default);
+    font-family: FrankRuhlLibre, "Iowan Old Style", Georgia, Cambria,
+      "Times New Roman", Times, serif;
+    font-feature-settings: "kern", "liga", "clig", "calt", "ss06", "lnum";
+    font-kerning: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     font-weight: normal;
   }
 
@@ -106,43 +106,42 @@
   }
 
   @font-face {
-    font-family: "ArgentumSans";
-    src: url("/fonts/ArgentumSans/ArgentumSans-SemiBold.woff2") format("woff2");
+    font-display: swap;
+    font-family: ArgentumSans;
+    font-style: normal;
     font-weight: 600;
-    font-style: normal;
-    font-variant-numeric: lining-nums;
-    font-display: swap;
+    src: url("/fonts/ArgentumSans/ArgentumSans-SemiBold.woff2") format("woff2");
   }
 
   @font-face {
-    font-family: "ArgentumSans";
-    src: url("/fonts/ArgentumSans/ArgentumSans-Medium.woff2") format("woff2");
+    font-display: swap;
+    font-family: ArgentumSans;
+    font-style: normal;
     font-weight: 500;
-    font-style: normal;
-    font-display: swap;
+    src: url("/fonts/ArgentumSans/ArgentumSans-Medium.woff2") format("woff2");
   }
 
   @font-face {
-    font-family: "ArgentumSans";
-    src: url("/fonts/ArgentumSans/ArgentumSans-Light.woff2") format("woff2");
+    font-display: swap;
+    font-family: ArgentumSans;
+    font-style: normal;
     font-weight: 300;
-    font-style: normal;
-    font-display: swap;
+    src: url("/fonts/ArgentumSans/ArgentumSans-Light.woff2") format("woff2");
   }
 
   @font-face {
-    font-family: "ArgentumSans";
-    src: url("/fonts/ArgentumSans/ArgentumSans-Regular.woff2") format("woff2");
+    font-display: swap;
+    font-family: ArgentumSans;
+    font-style: normal;
     font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+    src: url("/fonts/ArgentumSans/ArgentumSans-Regular.woff2") format("woff2");
   }
 
   @font-face {
-    font-family: "FrankRuhlLibre";
+    font-display: swap;
+    font-family: FrankRuhlLibre;
     font-style: normal;
     font-weight: 300 900;
-    font-display: swap;
     src: url("/fonts/Frank-Ruhl-Libre/Frank-Ruhl-Libre_latin_300 900_normal.woff2")
       format("woff2");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
@@ -153,45 +152,42 @@
 
 @layer components {
   .hamburger-icon {
-    z-index: 100;
-    margin-left: 16px;
+    align-items: center;
     background: transparent;
-    border-radius: 50% 50% 50% 50%;
-    -webkit-transition: 0.2s ease-in-out;
-    transition: 0.2s ease-in-out;
+    border-radius: 50%;
     box-shadow:
       0 0 0 0 transparent,
       0 0 0 0 transparent;
     cursor: pointer;
-    height: 40px;
-    width: 40px;
-    position: relative;
     display: flex;
+    height: 40px;
     justify-content: center;
-    align-items: center;
+    margin-left: 16px;
+    position: relative;
+    transition: 0.2s ease-in-out;
+    width: 40px;
+    z-index: 100;
   }
 
   .hamburger-icon-bars {
-    position: relative;
-    width: 24px;
-    height: 2px;
     display: block;
-    -webkit-transform-origin: center;
+    height: 2px;
+    position: relative;
     transform-origin: center;
-    -webkit-transition: 0.2s ease-in-out;
     transition: 0.2s ease-in-out;
     transition-property: top, bottom, transform;
+    width: 24px;
   }
 
   .hamburger-icon-bars::after,
   .hamburger-icon-bars::before {
-    transition: 0.2s ease-in-out;
-    content: "";
-    position: absolute;
-    display: block;
-    width: 24px;
-    height: 2px;
     background: inherit;
+    content: "";
+    display: block;
+    height: 2px;
+    position: absolute;
+    transition: 0.2s ease-in-out;
+    width: 24px;
   }
 
   .hamburger-icon-bars::before {
@@ -203,16 +199,16 @@
   }
 
   #mobile-nav:checked + .hamburger-icon {
+    background: #504b43;
+    border-radius: 0;
     box-shadow:
       0 0 0 100vw #504b43,
       0 0 0 100vh #504b43;
-    border-radius: 0;
-    background: #504b43;
   }
 
   #mobile-nav:checked + .hamburger-icon .hamburger-icon-bars {
-    transform: rotate(45deg);
     background-color: #fff !important;
+    transform: rotate(45deg);
   }
 
   .search-button {
@@ -224,39 +220,35 @@
   }
 
   #mobile-nav:checked + .hamburger-icon .hamburger-icon-bars::after {
-    transform: rotate(90deg);
     bottom: 0;
+    transform: rotate(90deg);
   }
 
   #mobile-nav:checked + .hamburger-icon .hamburger-icon-bars::before {
-    transform: rotate(90deg);
     top: 0;
+    transform: rotate(90deg);
   }
 
   .hamburger-menu {
-    position: fixed;
-    width: 0;
     height: 0;
-    top: -100%;
-    left: 100%;
-    transform: translate(-100%, 100%);
+    inset: -100% 0 0 100%;
     opacity: 0;
-    bottom: 0;
-    right: 0;
-    -webkit-transition: 0.2s 0s ease-in-out;
-    transition: 0.2s 0s ease-in-out;
     overflow: hidden;
+    position: fixed;
+    transform: translate(-100%, 100%);
+    transition: 0.2s 0s ease-in-out;
+    width: 0;
   }
 
   #mobile-nav:checked + .hamburger-icon + .hamburger-menu {
-    opacity: 1;
+    bottom: 0;
     height: 100%;
+    margin-top: 80px;
+    opacity: 1;
+    overflow: hidden;
+    padding: 0 16% 0 12%;
     width: 100%;
     z-index: 250;
-    padding: 0 16% 0 12%;
-    margin-top: 80px;
-    bottom: 0;
-    overflow: hidden;
   }
 
   .mast:has(#mobile-nav:checked) {
@@ -264,8 +256,8 @@
   }
 
   body:has(#mobile-nav:checked) {
-    position: fixed;
     overflow: hidden;
+    position: fixed;
     width: 100vw;
   }
 
@@ -293,17 +285,17 @@
     }
 
     sup a {
-      position: relative;
       border: solid 1px var(--border-default);
-      top: 0.3em;
-      padding: 0.2em 0.6em;
-      margin: 0 0.3em;
       border-radius: 3em;
+      margin: 0 0.3em;
+      padding: 0.2em 0.6em;
+      position: relative;
+      top: 0.3em;
     }
 
     a:hover {
-      color: var(--fg-inverse);
       background-color: var(--bg-accent);
+      color: var(--fg-inverse);
       transition: all 80ms ease-in;
     }
 
@@ -338,9 +330,9 @@
 
     h2 {
       font-size: 24px;
+      font-weight: 600;
       line-height: 24px;
       margin-bottom: 8px;
-      font-weight: 600;
     }
 
     h3 {
@@ -350,7 +342,7 @@
 
     hr {
       border: 1px solid var(--border-default);
-      margin: 39px auto 39px;
+      margin: 39px auto;
       width: 75%;
     }
 
@@ -384,9 +376,9 @@
 
     .footnotes {
       box-shadow: 0 -1px var(--border-default);
-      padding-top: 2rem;
-      margin-top: 3.5rem;
       font-size: 1rem;
+      margin-top: 3.5rem;
+      padding-top: 2rem;
 
       h2 {
         margin-bottom: 1.5rem;
@@ -398,19 +390,19 @@
       }
 
       li {
-        line-height: 1.25rem;
         font-family: var(--font-sans);
         font-size: 0.875rem;
         font-weight: 300;
+        line-height: 1.25rem;
       }
 
       li::before {
-        display: block;
         content: counter(list-item);
+        display: block;
+        font-family: var(--font-serif);
         position: absolute;
         right: calc(100% + 0.25em);
         text-align: right;
-        font-family: var(--font-serif);
       }
     }
   }
@@ -450,8 +442,8 @@
   }
 
   .scrollbar-hidden::-webkit-scrollbar {
-    width: 0;
     height: 0;
+    width: 0;
   }
 
   .cover-clip-path {
