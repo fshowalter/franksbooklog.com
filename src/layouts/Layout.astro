@@ -209,27 +209,24 @@ const canonicalUrl = `${import.meta.env.SITE}${new URL(Astro.request.url).pathna
     overflow: hidden;
   }
 
-  [data-search-modal-open]:before {
-    content: "";
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+  [data-search-modal-open]::before {
     backdrop-filter: blur(4px);
+    content: "";
+    inset: 0;
+    position: fixed;
     z-index: 1000;
   }
 
   button[data-close-modal] {
-    position: absolute;
-    z-index: 1;
-    height: calc(24px * var(--pagefind-ui-scale));
-    border: 0;
     background: var(--bg-subtle);
-    cursor: pointer;
+    border: 0;
     color: var(--fg-muted);
+    cursor: pointer;
+    height: calc(24px * var(--pagefind-ui-scale));
     margin: 18px 0;
+    position: absolute;
     right: var(--search-dialog-padding);
+    z-index: 1;
   }
 
   #pagefind__search {
@@ -238,10 +235,9 @@ const canonicalUrl = `${import.meta.env.SITE}${new URL(Astro.request.url).pathna
     --pagefind-ui-text: var(--fg-default);
     --pagefind-ui-background: var(--bg-default);
     --pagefind-ui-border: var(--border-default);
-    --pagefind-ui-tag: #eeeeee;
+    --pagefind-ui-tag: #eee;
     --pagefind-ui-border-width: 1px;
     --pagefind-ui-border-radius: 8px;
-    --pagefind-ui-image-border-radius: 8px;
     --pagefind-ui-image-box-ratio: 3 / 2;
     --pagefind-ui-font: var(--font-serif);
     --cancel-space: 5rem;
@@ -250,22 +246,22 @@ const canonicalUrl = `${import.meta.env.SITE}${new URL(Astro.request.url).pathna
   }
 
   #pagefind__search .pagefind-ui__search-input {
-    width: calc(100% - (var(--cancel-space)));
+    align-items: center;
+    border: none;
+    display: flex;
     flex-shrink: 0;
     font-family: var(--font-serif);
-    left: 0;
-    font-weight: normal;
-    outline: none;
-    border: none;
     font-size: 1.125rem;
+    font-weight: normal;
     height: 3.5rem;
-    display: flex;
-    align-items: center;
+    left: 0;
+    outline: none;
+    width: calc(100% - (var(--cancel-space)));
   }
 
   #pagefind__search .pagefind-ui__search-input::placeholder {
-    opacity: 1;
     color: #9ca3af;
+    opacity: 1;
   }
 
   #pagefind__search,
@@ -274,33 +270,29 @@ const canonicalUrl = `${import.meta.env.SITE}${new URL(Astro.request.url).pathna
     display: contents;
   }
 
-  #pagefind__search .pagefind-ui__form:before {
-    left: var(--search-dialog-padding);
-    width: calc(20px * var(--pagefind-ui-scale));
+  #pagefind__search .pagefind-ui__form::before {
     height: calc(20px * var(--pagefind-ui-scale));
-    top: 0;
-    position: absolute;
+    left: var(--search-dialog-padding);
     margin: 18px 0;
+    position: absolute;
+    top: 0;
+    width: calc(20px * var(--pagefind-ui-scale));
   }
 
-  #pagefind__search .pagefind-ui__form:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 1px;
+  #pagefind__search .pagefind-ui__form::after {
     background-color: var(--border-default);
+    content: "";
+    height: 1px;
+    left: 0;
+    position: absolute;
+    right: 0;
     top: calc(3.5rem + 1px);
   }
 
-  #pagefind__search .pagefind-ui__search-clear {
-    position: absolute;
-  }
-
   #pagefind__search .pagefind-ui__drawer {
+    outline-offset: -2px;
     overflow-y: auto;
     overscroll-behavior: contain;
-    outline-offset: -2px;
   }
 
   #pagefind__search .pagefind-ui__drawer:focus {
@@ -308,16 +300,17 @@ const canonicalUrl = `${import.meta.env.SITE}${new URL(Astro.request.url).pathna
   }
 
   #pagefind__search .pagefind-ui__search-clear {
-    inset-inline-end: var(--cancel-space);
-    width: calc(24px * var(--pagefind-ui-scale));
-    height: calc(24px * var(--pagefind-ui-scale));
-    padding: 0;
     background-color: transparent;
-    overflow: hidden;
-    top: 1rem;
-    right: calc(var(--search-dialog-padding) + var(--cancel-space) + 2px);
     background-color: var(--bg-subtle);
     border-radius: 50%;
+    height: calc(24px * var(--pagefind-ui-scale));
+    inset-inline-end: var(--cancel-space);
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    right: calc(var(--search-dialog-padding) + var(--cancel-space) + 2px);
+    top: 1rem;
+    width: calc(24px * var(--pagefind-ui-scale));
   }
 
   #pagefind__search .pagefind-ui__search-clear:focus {
@@ -325,26 +318,24 @@ const canonicalUrl = `${import.meta.env.SITE}${new URL(Astro.request.url).pathna
   }
 
   #pagefind__search .pagefind-ui__search-clear::before {
+    background-color: var(--fg-subtle);
     content: "";
-    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='m13.41 12 6.3-6.29a1 1 0 1 0-1.42-1.42L12 10.59l-6.29-6.3a1 1 0 0 0-1.42 1.42l6.3 6.29-6.3 6.29a1 1 0 0 0 .33 1.64 1 1 0 0 0 1.09-.22l6.29-6.3 6.29 6.3a1 1 0 0 0 1.64-.33 1 1 0 0 0-.22-1.09L13.41 12Z'/%3E%3C/svg%3E")
-      center / 50% no-repeat;
+    display: block;
+    display: flex;
+    height: 100%;
     mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='m13.41 12 6.3-6.29a1 1 0 1 0-1.42-1.42L12 10.59l-6.29-6.3a1 1 0 0 0-1.42 1.42l6.3 6.29-6.3 6.29a1 1 0 0 0 .33 1.64 1 1 0 0 0 1.09-.22l6.29-6.3 6.29 6.3a1 1 0 0 0 1.64-.33 1 1 0 0 0-.22-1.09L13.41 12Z'/%3E%3C/svg%3E")
       center / 50% no-repeat;
-    background-color: var(--fg-subtle);
-    display: block;
-    width: 100%;
-    height: 100%;
-    right: 0;
     padding: 0;
-    display: flex;
+    right: 0;
+    width: 100%;
   }
 
   #pagefind__search .pagefind-ui__message {
-    padding: 1rem var(--search-dialog-padding);
-    font-weight: normal;
-    font-family: var(--font-sans);
     color: var(--fg-subtle);
+    font-family: var(--font-sans);
     font-size: 0.75rem;
+    font-weight: normal;
+    padding: 1rem var(--search-dialog-padding);
   }
 
   #pagefind__search .pagefind-ui__results-area {
@@ -352,59 +343,59 @@ const canonicalUrl = `${import.meta.env.SITE}${new URL(Astro.request.url).pathna
   }
 
   #pagefind__search .pagefind-ui__result {
-    padding: 1rem var(--search-dialog-padding);
+    column-gap: 1.5rem;
     display: grid;
     grid-template-columns: min(25%, 80px) 1fr;
-    column-gap: 1.5rem;
+    padding: 1rem var(--search-dialog-padding);
   }
 
   #pagefind__search .pagefind-ui__result-thumb {
-    max-width: unset;
     aspect-ratio: unset;
+    max-width: unset;
     position: unset;
     width: 100%;
   }
 
   #pagefind__search .pagefind-ui__result-image {
-    position: unset;
     left: unset;
-    transform: unset;
     margin: 0 auto;
+    position: unset;
+    transform: unset;
   }
 
   #pagefind__search .pagefind-ui__result:focus-within {
-    outline: 1px solid var(--fg-accent);
     background-color: var(--bg-subtle);
+    outline: 1px solid var(--fg-accent);
     outline-offset: -2px;
   }
 
   #pagefind__search .pagefind-ui__button {
-    margin: 1rem auto;
-    width: calc(100% - 2 * var(--search-dialog-padding));
-    font-size: 1rem;
-    font-weight: 500;
-    height: 2.5rem;
+    background-color: var(--bg-canvas);
+    border-radius: unset;
+    color: var(--fg-default);
     display: block;
     font-family: var(--font-sans);
-    text-transform: uppercase;
-    background-color: var(--bg-canvas);
-    letter-spacing: 0.8px;
+    font-size: 1rem;
     font-size: 12px;
-    color: var(--fg-default);
+    font-weight: 500;
+    height: 2.5rem;
+    letter-spacing: 0.8px;
+    margin: 1rem auto;
     max-width: 430px;
-    border-radius: unset;
+    text-transform: uppercase;
+    width: calc(100% - 2 * var(--search-dialog-padding));
   }
 
   #pagefind__search .pagefind-ui__button:hover {
-    color: var(--fg-inverse);
     background-color: var(--bg-inverse);
     border-color: inherit;
+    color: var(--fg-inverse);
   }
 
   #pagefind__search .pagefind-ui__result-title {
     font-family: var(--font-sans);
-    line-height: 1.25rem;
     font-size: 1rem;
+    line-height: 1.25rem;
   }
 
   #pagefind__search .pagefind-ui__result-link {
@@ -413,15 +404,12 @@ const canonicalUrl = `${import.meta.env.SITE}${new URL(Astro.request.url).pathna
 
   #pagefind__search .pagefind-ui__result-excerpt {
     font-family: var(--font-serif);
+    font-size: 0.875rem;
     min-width: auto;
   }
 
   #pagefind__search .pagefind-ui__button:focus {
     outline: 1px solid var(--fg-accent);
     outline-offset: -2px;
-  }
-
-  #pagefind__search .pagefind-ui__result-excerpt {
-    font-size: 0.875rem;
   }
 </style>

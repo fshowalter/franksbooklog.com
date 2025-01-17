@@ -73,7 +73,6 @@ export enum Actions {
   FILTER_YEAR_PUBLISHED = "FILTER_YEAR_PUBLISHED",
   SHOW_MORE = "SHOW_MORE",
   SORT = "SORT",
-  TOGGLE_REVIEWED = "TOGGLE_REVIEWED",
 }
 
 export type ActionType =
