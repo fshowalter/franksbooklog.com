@@ -107,7 +107,7 @@ function Authors({
 
 function ReviewsListItem({ value }: { value: ListItemValue }): JSX.Element {
   return (
-    <ListItem className="has-[a:hover]:bg-stripe">
+    <ListItem className="has-[a:hover]:shadow-hover has-[a:hover]:bg-stripe">
       <ListItemCover imageProps={value.coverImageProps} />
       <div className="flex grow flex-col items-start tablet:w-full tablet:pr-4">
         <ListItemTitle slug={value.slug} title={value.title} />

@@ -170,7 +170,7 @@ function ReadingListItem({ value }: { value: ListItemValue }): JSX.Element {
   const progressValue = parseProgress(value.progress);
 
   return (
-    <ListItem className="has-[a:hover]:bg-[var(--bg-subtle)]">
+    <ListItem className="has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover">
       <ListItemCover imageProps={value.coverImageProps} />
       <div className="flex grow flex-col items-start gap-y-1 tablet:w-full tablet:gap-y-2 desktop:pr-4">
         <TitleAndProgress

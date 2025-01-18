@@ -7,13 +7,26 @@ export default getViteConfig({
       include: ["src/**"],
       provider: "istanbul",
     },
-    environmentMatchGlobs: [
-      ["src/pages/**", "node"],
-      ["src/components/**", "jsdom"],
-      // ...
-    ],
     globals: true, // needed for testing-library teardown
     // Vitest configuration options
     setupFiles: ["setupTests.ts"],
+    workspace: [
+      {
+        extends: true,
+        test: {
+          environment: "node",
+          include: ["src/pages/**/*.spec.ts"],
+          name: "pages-node",
+        },
+      },
+      {
+        extends: true,
+        test: {
+          environment: "jsdom",
+          include: ["src/components/**/*.spec.tsx"],
+          name: "components-jsdom",
+        },
+      },
+    ],
   },
 });

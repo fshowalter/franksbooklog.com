@@ -93,7 +93,7 @@ function Name({ value }: { value: MostReadAuthorsValue }): JSX.Element {
 
 function ReadingSubListItem({ value }: { value: ReadingSubListItemValue }) {
   return (
-    <ListItem className="has-[a:hover]:bg-subtle">
+    <ListItem className="has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover">
       <ListItemCover imageProps={value.coverImageProps} />
       <div className="flex grow flex-col gap-y-1">
         <ListItemTitle

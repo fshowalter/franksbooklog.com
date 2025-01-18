@@ -127,7 +127,7 @@ function OtherAuthors({ values }: { values: ListItemValue["otherAuthors"] }) {
 function WorkListItem({ value }: { value: ListItemValue }): JSX.Element {
   if (value.reviewed) {
     return (
-      <ListItem className="has-[a:hover]:bg-stripe">
+      <ListItem className="has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover">
         <ListItemCover imageProps={value.coverImageProps} />
         <div className="flex grow flex-col items-start tablet:w-full tablet:pr-4">
           <ListItemTitle
