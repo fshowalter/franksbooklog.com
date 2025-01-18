@@ -1,3 +1,7 @@
+# sitemap 
+/sitemap.xml /sitemap-index.xml 301
+/sitemap_index.xml /sitemap-index.xml 301
+
 # /reviews/authors to /authors
 /reviews/authors/* /authors/:splat 301
 
