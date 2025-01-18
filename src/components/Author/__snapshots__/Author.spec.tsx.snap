@@ -63,7 +63,7 @@ exports[`Author > can filter by kind 1`] = `
           </div>
         </li>
         <li
-          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe"
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
         >
           <div
             class="w-list-item-cover shrink-0"
@@ -138,7 +138,7 @@ exports[`Author > can filter by kind 1`] = `
     >
       <ol>
         <li
-          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe"
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
         >
           <div
             class="w-list-item-cover shrink-0"
@@ -213,7 +213,7 @@ exports[`Author > can filter by kind 1`] = `
     >
       <ol>
         <li
-          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe"
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
         >
           <div
             class="w-list-item-cover shrink-0"
@@ -2252,7 +2252,7 @@ exports[`Author > can filter by title 1`] = `
     >
       <ol>
         <li
-          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe"
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
         >
           <div
             class="w-list-item-cover shrink-0"
@@ -2416,7 +2416,7 @@ exports[`Author > can filter by year published 1`] = `
           </div>
         </li>
         <li
-          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe"
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
         >
           <div
             class="w-list-item-cover shrink-0"
@@ -2614,7 +2614,7 @@ exports[`Author > can filter by year published 1`] = `
           </div>
         </li>
         <li
-          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe"
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
         >
           <div
             class="w-list-item-cover shrink-0"
@@ -2730,7 +2730,7 @@ exports[`Author > can filter by year published 1`] = `
           </div>
         </li>
         <li
-          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe"
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
         >
           <div
             class="w-list-item-cover shrink-0"
@@ -3774,7 +3774,7 @@ exports[`Author > can sort by grade with best first 1`] = `
     >
       <ol>
         <li
-          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe"
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
         >
           <div
             class="w-list-item-cover shrink-0"
@@ -3829,7 +3829,7 @@ exports[`Author > can sort by grade with best first 1`] = `
           </div>
         </li>
         <li
-          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe"
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
         >
           <div
             class="w-list-item-cover shrink-0"
@@ -3904,7 +3904,7 @@ exports[`Author > can sort by grade with best first 1`] = `
     >
       <ol>
         <li
-          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe"
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
         >
           <div
             class="w-list-item-cover shrink-0"
@@ -3959,7 +3959,7 @@ exports[`Author > can sort by grade with best first 1`] = `
           </div>
         </li>
         <li
-          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe"
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
         >
           <div
             class="w-list-item-cover shrink-0"
@@ -4014,7 +4014,7 @@ exports[`Author > can sort by grade with best first 1`] = `
           </div>
         </li>
         <li
-          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe"
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
         >
           <div
             class="w-list-item-cover shrink-0"
@@ -13080,7 +13080,7 @@ exports[`Author > can sort by title a->z 1`] = `
           </div>
         </li>
         <li
-          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe"
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
         >
           <div
             class="w-list-item-cover shrink-0"
@@ -13483,7 +13483,7 @@ exports[`Author > can sort by title a->z 1`] = `
           </div>
         </li>
         <li
-          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe"
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
         >
           <div
             class="w-list-item-cover shrink-0"
@@ -16341,7 +16341,7 @@ exports[`Author > can sort by title a->z 1`] = `
           </div>
         </li>
         <li
-          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe"
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
         >
           <div
             class="w-list-item-cover shrink-0"
@@ -16750,7 +16750,7 @@ exports[`Author > can sort by title z->a 1`] = `
           </div>
         </li>
         <li
-          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe"
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
         >
           <div
             class="w-list-item-cover shrink-0"
@@ -17726,7 +17726,7 @@ exports[`Author > can sort by title z->a 1`] = `
     >
       <ol>
         <li
-          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe"
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
         >
           <div
             class="w-list-item-cover shrink-0"
@@ -18210,7 +18210,7 @@ exports[`Author > can sort by title z->a 1`] = `
           </div>
         </li>
         <li
-          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe"
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
         >
           <div
             class="w-list-item-cover shrink-0"
@@ -21068,7 +21068,7 @@ exports[`Author > can sort by title z->a 1`] = `
           </div>
         </li>
         <li
-          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe"
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
         >
           <div
             class="w-list-item-cover shrink-0"
@@ -25737,7 +25737,7 @@ exports[`Author > can sort by year published with oldest first 1`] = `
     >
       <ol>
         <li
-          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe"
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
         >
           <div
             class="w-list-item-cover shrink-0"
@@ -25812,7 +25812,7 @@ exports[`Author > can sort by year published with oldest first 1`] = `
     >
       <ol>
         <li
-          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe"
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
         >
           <div
             class="w-list-item-cover shrink-0"
@@ -26336,7 +26336,7 @@ exports[`Author > can sort by year published with oldest first 1`] = `
           </div>
         </li>
         <li
-          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe"
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
         >
           <div
             class="w-list-item-cover shrink-0"
@@ -26411,7 +26411,7 @@ exports[`Author > can sort by year published with oldest first 1`] = `
     >
       <ol>
         <li
-          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe"
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
         >
           <div
             class="w-list-item-cover shrink-0"
@@ -26609,7 +26609,7 @@ exports[`Author > can sort by year published with oldest first 1`] = `
     >
       <ol>
         <li
-          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe"
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
         >
           <div
             class="w-list-item-cover shrink-0"
@@ -35608,7 +35608,7 @@ exports[`Author > can view more titles 1`] = `
           </div>
         </li>
         <li
-          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe"
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
         >
           <div
             class="w-list-item-cover shrink-0"
@@ -35806,7 +35806,7 @@ exports[`Author > can view more titles 1`] = `
           </div>
         </li>
         <li
-          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe"
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
         >
           <div
             class="w-list-item-cover shrink-0"
@@ -35963,7 +35963,7 @@ exports[`Author > can view more titles 1`] = `
           </div>
         </li>
         <li
-          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe"
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
         >
           <div
             class="w-list-item-cover shrink-0"
@@ -36405,7 +36405,7 @@ exports[`Author > can view more titles 1`] = `
     >
       <ol>
         <li
-          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe"
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
         >
           <div
             class="w-list-item-cover shrink-0"
@@ -36480,7 +36480,7 @@ exports[`Author > can view more titles 1`] = `
     >
       <ol>
         <li
-          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe"
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
         >
           <div
             class="w-list-item-cover shrink-0"

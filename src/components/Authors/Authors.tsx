@@ -59,7 +59,7 @@ export function Authors({ deck, initialSort, values }: Props): JSX.Element {
 function AuthorListItem({ value }: { value: ListItemValue }): JSX.Element {
   return (
     <ListItem
-      className="has-[a:hover]:bg-stripe"
+      className="has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
       extraVerticalPadding={true}
       itemsCenter={true}
     >
