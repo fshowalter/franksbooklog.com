@@ -54,7 +54,6 @@ export function ListWithFiltersLayout({
                   filtersVisible={filtersVisible}
                   listHeaderButtons={listHeaderButtons}
                   onToggleFilters={() => {
-                    console.log("boo");
                     toggleFilters(!filtersVisible);
                   }}
                   totalCount={totalCount}
