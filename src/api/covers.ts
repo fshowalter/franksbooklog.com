@@ -101,6 +101,29 @@ export async function getStructuredDataCoverSrc(work: Work): Promise<string> {
   return normalizeSources(optimizedImage.src);
 }
 
+export async function getUpdateCoverProps(
+  slug: string,
+): Promise<CoverImageProps> {
+  const coverFilePath = Object.keys(images).find((path) => {
+    return path.endsWith(`/${slug}.png`);
+  })!;
+
+  const coverFile = await images[coverFilePath]();
+
+  const optimizedImage = await getImage({
+    format: "png",
+    height: 750,
+    quality: 100,
+    src: coverFile.default,
+    width: 500,
+  });
+
+  return {
+    src: normalizeSources(optimizedImage.src),
+    srcSet: normalizeSources(optimizedImage.srcSet.attribute),
+  };
+}
+
 function coverPath(slug: string) {
   const coverPath = path.resolve(`./content/assets/covers/${slug}.png`);
   if (fs.existsSync(coverPath)) {
