@@ -84,7 +84,7 @@ exports[`Author > can filter by kind 1`] = `
             class="flex grow flex-col items-start tablet:w-full tablet:pr-4"
           >
             <a
-              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
               href="/reviews/the-cellar-by-richard-laymon/"
             >
               The Cellar
@@ -159,7 +159,7 @@ exports[`Author > can filter by kind 1`] = `
             class="flex grow flex-col items-start tablet:w-full tablet:pr-4"
           >
             <a
-              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
               href="/reviews/the-woods-are-dark-by-richard-laymon/"
             >
               The Woods Are Dark
@@ -234,7 +234,7 @@ exports[`Author > can filter by kind 1`] = `
             class="flex grow flex-col items-start tablet:w-full tablet:pr-4"
           >
             <a
-              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
               href="/reviews/out-are-the-lights-by-richard-laymon/"
             >
               Out Are the Lights
@@ -2273,7 +2273,7 @@ exports[`Author > can filter by title 1`] = `
             class="flex grow flex-col items-start tablet:w-full tablet:pr-4"
           >
             <a
-              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
               href="/reviews/the-cellar-by-richard-laymon/"
             >
               The Cellar
@@ -2437,7 +2437,7 @@ exports[`Author > can filter by year published 1`] = `
             class="flex grow flex-col items-start tablet:w-full tablet:pr-4"
           >
             <a
-              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
               href="/reviews/the-cellar-by-richard-laymon/"
             >
               The Cellar
@@ -2635,7 +2635,7 @@ exports[`Author > can filter by year published 1`] = `
             class="flex grow flex-col items-start tablet:w-full tablet:pr-4"
           >
             <a
-              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
               href="/reviews/the-woods-are-dark-by-richard-laymon/"
             >
               The Woods Are Dark
@@ -2751,7 +2751,7 @@ exports[`Author > can filter by year published 1`] = `
             class="flex grow flex-col items-start tablet:w-full tablet:pr-4"
           >
             <a
-              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
               href="/reviews/out-are-the-lights-by-richard-laymon/"
             >
               Out Are the Lights
@@ -3795,7 +3795,7 @@ exports[`Author > can sort by grade with best first 1`] = `
             class="flex grow flex-col items-start tablet:w-full tablet:pr-4"
           >
             <a
-              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
               href="/reviews/the-woods-are-dark-by-richard-laymon/"
             >
               The Woods Are Dark
@@ -3850,7 +3850,7 @@ exports[`Author > can sort by grade with best first 1`] = `
             class="flex grow flex-col items-start tablet:w-full tablet:pr-4"
           >
             <a
-              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
               href="/reviews/the-cellar-by-richard-laymon/"
             >
               The Cellar
@@ -3925,7 +3925,7 @@ exports[`Author > can sort by grade with best first 1`] = `
             class="flex grow flex-col items-start tablet:w-full tablet:pr-4"
           >
             <a
-              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
               href="/reviews/out-are-the-lights-by-richard-laymon/"
             >
               Out Are the Lights
@@ -3980,7 +3980,7 @@ exports[`Author > can sort by grade with best first 1`] = `
             class="flex grow flex-col items-start tablet:w-full tablet:pr-4"
           >
             <a
-              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
               href="/reviews/roadside-pickup-by-richard-laymon/"
             >
               Roadside Pickup
@@ -4035,7 +4035,7 @@ exports[`Author > can sort by grade with best first 1`] = `
             class="flex grow flex-col items-start tablet:w-full tablet:pr-4"
           >
             <a
-              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
               href="/reviews/desert-pickup-by-richard-laymon/"
             >
               Desert Pickup
@@ -13101,7 +13101,7 @@ exports[`Author > can sort by title a->z 1`] = `
             class="flex grow flex-col items-start tablet:w-full tablet:pr-4"
           >
             <a
-              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
               href="/reviews/the-cellar-by-richard-laymon/"
             >
               The Cellar
@@ -13504,7 +13504,7 @@ exports[`Author > can sort by title a->z 1`] = `
             class="flex grow flex-col items-start tablet:w-full tablet:pr-4"
           >
             <a
-              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
               href="/reviews/desert-pickup-by-richard-laymon/"
             >
               Desert Pickup
@@ -16362,7 +16362,7 @@ exports[`Author > can sort by title a->z 1`] = `
             class="flex grow flex-col items-start tablet:w-full tablet:pr-4"
           >
             <a
-              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
               href="/reviews/out-are-the-lights-by-richard-laymon/"
             >
               Out Are the Lights
@@ -16771,7 +16771,7 @@ exports[`Author > can sort by title z->a 1`] = `
             class="flex grow flex-col items-start tablet:w-full tablet:pr-4"
           >
             <a
-              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
               href="/reviews/the-woods-are-dark-by-richard-laymon/"
             >
               The Woods Are Dark
@@ -17747,7 +17747,7 @@ exports[`Author > can sort by title z->a 1`] = `
             class="flex grow flex-col items-start tablet:w-full tablet:pr-4"
           >
             <a
-              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
               href="/reviews/roadside-pickup-by-richard-laymon/"
             >
               Roadside Pickup
@@ -18231,7 +18231,7 @@ exports[`Author > can sort by title z->a 1`] = `
             class="flex grow flex-col items-start tablet:w-full tablet:pr-4"
           >
             <a
-              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
               href="/reviews/out-are-the-lights-by-richard-laymon/"
             >
               Out Are the Lights
@@ -21089,7 +21089,7 @@ exports[`Author > can sort by title z->a 1`] = `
             class="flex grow flex-col items-start tablet:w-full tablet:pr-4"
           >
             <a
-              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
               href="/reviews/desert-pickup-by-richard-laymon/"
             >
               Desert Pickup
@@ -25758,7 +25758,7 @@ exports[`Author > can sort by year published with oldest first 1`] = `
             class="flex grow flex-col items-start tablet:w-full tablet:pr-4"
           >
             <a
-              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
               href="/reviews/desert-pickup-by-richard-laymon/"
             >
               Desert Pickup
@@ -25833,7 +25833,7 @@ exports[`Author > can sort by year published with oldest first 1`] = `
             class="flex grow flex-col items-start tablet:w-full tablet:pr-4"
           >
             <a
-              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
               href="/reviews/roadside-pickup-by-richard-laymon/"
             >
               Roadside Pickup
@@ -26357,7 +26357,7 @@ exports[`Author > can sort by year published with oldest first 1`] = `
             class="flex grow flex-col items-start tablet:w-full tablet:pr-4"
           >
             <a
-              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
               href="/reviews/the-cellar-by-richard-laymon/"
             >
               The Cellar
@@ -26432,7 +26432,7 @@ exports[`Author > can sort by year published with oldest first 1`] = `
             class="flex grow flex-col items-start tablet:w-full tablet:pr-4"
           >
             <a
-              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
               href="/reviews/the-woods-are-dark-by-richard-laymon/"
             >
               The Woods Are Dark
@@ -26630,7 +26630,7 @@ exports[`Author > can sort by year published with oldest first 1`] = `
             class="flex grow flex-col items-start tablet:w-full tablet:pr-4"
           >
             <a
-              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
               href="/reviews/out-are-the-lights-by-richard-laymon/"
             >
               Out Are the Lights
@@ -35629,7 +35629,7 @@ exports[`Author > can view more titles 1`] = `
             class="flex grow flex-col items-start tablet:w-full tablet:pr-4"
           >
             <a
-              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
               href="/reviews/out-are-the-lights-by-richard-laymon/"
             >
               Out Are the Lights
@@ -35827,7 +35827,7 @@ exports[`Author > can view more titles 1`] = `
             class="flex grow flex-col items-start tablet:w-full tablet:pr-4"
           >
             <a
-              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
               href="/reviews/the-woods-are-dark-by-richard-laymon/"
             >
               The Woods Are Dark
@@ -35984,7 +35984,7 @@ exports[`Author > can view more titles 1`] = `
             class="flex grow flex-col items-start tablet:w-full tablet:pr-4"
           >
             <a
-              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
               href="/reviews/the-cellar-by-richard-laymon/"
             >
               The Cellar
@@ -36426,7 +36426,7 @@ exports[`Author > can view more titles 1`] = `
             class="flex grow flex-col items-start tablet:w-full tablet:pr-4"
           >
             <a
-              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
               href="/reviews/roadside-pickup-by-richard-laymon/"
             >
               Roadside Pickup
@@ -36501,7 +36501,7 @@ exports[`Author > can view more titles 1`] = `
             class="flex grow flex-col items-start tablet:w-full tablet:pr-4"
           >
             <a
-              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
               href="/reviews/desert-pickup-by-richard-laymon/"
             >
               Desert Pickup
