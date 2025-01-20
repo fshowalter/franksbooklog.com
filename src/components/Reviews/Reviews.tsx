@@ -1,10 +1,11 @@
 import { type JSX, useReducer } from "react";
 
+import type { BackdropImageProps } from "~/api/backdrops";
 import type { CoverImageProps } from "~/api/covers";
 import type { Review } from "~/api/reviews";
 
 import { Abandoned } from "~/components/Abandoned";
-import { SolidBackdrop } from "~/components/Backdrop";
+import { Backdrop } from "~/components/Backdrop";
 import { Grade } from "~/components/Grade";
 import { GroupedList } from "~/components/GroupedList";
 import { ListItem } from "~/components/ListItem";
@@ -35,6 +36,7 @@ export type ListItemValue = Pick<
 };
 
 export type Props = {
+  backdropImageProps: BackdropImageProps;
   deck: string;
   distinctKinds: readonly string[];
   distinctPublishedYears: readonly string[];
@@ -46,6 +48,7 @@ export type Props = {
 type Author = Pick<Review["authors"][0], "name" | "sortName"> & {};
 
 export function Reviews({
+  backdropImageProps,
   deck,
   distinctKinds,
   distinctPublishedYears,
@@ -64,7 +67,9 @@ export function Reviews({
 
   return (
     <ListWithFiltersLayout
-      backdrop={<SolidBackdrop deck={deck} title="Reviews" />}
+      backdrop={
+        <Backdrop deck={deck} imageProps={backdropImageProps} title="Reviews" />
+      }
       filters={
         <Filters
           dispatch={dispatch}

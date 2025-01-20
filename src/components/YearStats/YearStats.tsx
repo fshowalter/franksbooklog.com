@@ -28,7 +28,10 @@ export function YearStats({
   year,
 }: Props): JSX.Element {
   return (
-    <Layout className="flex flex-col items-center bg-subtle">
+    <Layout
+      addGradient={false}
+      className="flex flex-col items-center bg-subtle"
+    >
       <SolidBackdrop
         breadcrumb={
           <a className="text-accent" href="/readings/">

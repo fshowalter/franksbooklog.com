@@ -73,6 +73,7 @@ export function Author({
 
   return (
     <ListWithFiltersLayout
+      addGradient={false}
       backdrop={
         <AvatarBackdrop
           avatarImageProps={avatarImageProps}

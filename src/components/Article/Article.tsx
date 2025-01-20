@@ -1,14 +1,16 @@
 import type { JSX } from "react";
 
+import type { BackdropImageProps } from "~/api/backdrops";
 import type { MoreReviewsValue } from "~/components/MoreReviews";
 
-import { SolidBackdrop } from "~/components/Backdrop";
+import { Backdrop } from "~/components/Backdrop";
 import { Layout } from "~/components/Layout";
 import { LongFormText } from "~/components/LongFormText";
 import { MoreReviews } from "~/components/MoreReviews";
 import { SubHeading } from "~/components/SubHeading";
 
 export type Props = {
+  backdropImageProps: BackdropImageProps;
   content: string | undefined;
   deck: string;
   recentReviews: MoreReviewsValue[];
@@ -16,6 +18,7 @@ export type Props = {
 };
 
 export function Article({
+  backdropImageProps,
   content,
   deck,
   recentReviews,
@@ -24,7 +27,7 @@ export function Article({
   return (
     <Layout>
       <article>
-        <SolidBackdrop deck={deck} narrowTitle={true} title={title} />
+        <Backdrop deck={deck} imageProps={backdropImageProps} title={title} />
         <section className="flex flex-col items-center pb-32 pt-16">
           <div className="px-container">
             <LongFormText className="max-w-prose" text={content} />

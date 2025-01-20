@@ -2,8 +2,9 @@ import { type JSX, useReducer } from "react";
 
 import type { Author } from "~/api/authors";
 import type { AvatarImageProps } from "~/api/avatars";
+import type { BackdropImageProps } from "~/api/backdrops";
 
-import { SolidBackdrop } from "~/components/Backdrop";
+import { Backdrop } from "~/components/Backdrop";
 import { GroupedList } from "~/components/GroupedList";
 import { ListItem } from "~/components/ListItem";
 import { ListItemAvatar } from "~/components/ListItemAvatar";
@@ -21,12 +22,18 @@ export type ListItemValue = Pick<
 };
 
 export type Props = {
+  backdropImageProps: BackdropImageProps;
   deck: string;
   initialSort: Sort;
   values: ListItemValue[];
 };
 
-export function Authors({ deck, initialSort, values }: Props): JSX.Element {
+export function Authors({
+  backdropImageProps,
+  deck,
+  initialSort,
+  values,
+}: Props): JSX.Element {
   const [state, dispatch] = useReducer(
     reducer,
     {
@@ -38,7 +45,9 @@ export function Authors({ deck, initialSort, values }: Props): JSX.Element {
 
   return (
     <ListWithFiltersLayout
-      backdrop={<SolidBackdrop deck={deck} title="Authors" />}
+      backdrop={
+        <Backdrop deck={deck} imageProps={backdropImageProps} title="Authors" />
+      }
       filters={<Filters dispatch={dispatch} sortValue={state.sortValue} />}
       list={
         <GroupedList

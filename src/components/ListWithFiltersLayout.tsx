@@ -3,6 +3,7 @@ import { type JSX, type ReactNode, useState } from "react";
 import { Layout } from "./Layout";
 
 type Props = {
+  addGradient?: boolean;
   backdrop: React.ReactNode;
   filters: React.ReactNode;
   list: React.ReactNode;
@@ -31,6 +32,7 @@ export function ListHeaderButton({
 }
 
 export function ListWithFiltersLayout({
+  addGradient = true,
   backdrop,
   filters,
   list,
@@ -42,7 +44,7 @@ export function ListWithFiltersLayout({
   const [filtersVisible, toggleFilters] = useState(false);
 
   return (
-    <Layout className="bg-subtle" {...rest}>
+    <Layout addGradient={addGradient} className="bg-subtle" {...rest}>
       {backdrop}
       {subNav && subNav}
       <div className="mx-auto flex flex-col items-center bg-default">

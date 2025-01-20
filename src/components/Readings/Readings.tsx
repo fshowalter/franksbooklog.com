@@ -1,9 +1,10 @@
 import { type JSX, useReducer } from "react";
 
+import type { BackdropImageProps } from "~/api/backdrops";
 import type { CoverImageProps } from "~/api/covers";
 import type { TimelineEntry } from "~/api/timelineEntries";
 
-import { SolidBackdrop } from "~/components/Backdrop";
+import { Backdrop } from "~/components/Backdrop";
 import { BarGradient } from "~/components/BarGradient";
 import { GroupedList } from "~/components/GroupedList";
 import { ListItem } from "~/components/ListItem";
@@ -38,6 +39,7 @@ export type ListItemValue = Pick<
 };
 export type Props = {
   abandonedCount: number;
+  backdropImageProps: BackdropImageProps;
   bookCount: number;
   deck: string;
   distinctEditions: string[];
@@ -51,6 +53,7 @@ export type Props = {
 };
 
 export function Readings({
+  backdropImageProps,
   deck,
   distinctEditions,
   distinctKinds,
@@ -70,7 +73,13 @@ export function Readings({
 
   return (
     <ListWithFiltersLayout
-      backdrop={<SolidBackdrop deck={deck} title="Reading Log" />}
+      backdrop={
+        <Backdrop
+          deck={deck}
+          imageProps={backdropImageProps}
+          title="Reading Log"
+        />
+      }
       filters={
         <Filters
           dispatch={dispatch}
@@ -170,7 +179,7 @@ function ReadingListItem({ value }: { value: ListItemValue }): JSX.Element {
   const progressValue = parseProgress(value.progress);
 
   return (
-    <ListItem className="has-[a:hover]:shadow-hover has-[a:hover]:bg-subtle">
+    <ListItem className="has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover">
       <ListItemCover imageProps={value.coverImageProps} />
       <div className="flex grow flex-col items-start gap-y-1 tablet:w-full tablet:gap-y-2 desktop:pr-4">
         <TitleAndProgress

@@ -1,5 +1,7 @@
+import { getBackdropImageProps } from "~/api/backdrops";
 import { getFluidCoverImageProps } from "~/api/covers";
 import { allShelfWorks } from "~/api/shelf";
+import { BackdropImageConfig } from "~/components/Backdrop";
 import { ListItemCoverImageConfig } from "~/components/ListItemCover";
 
 import type { ListItemValue, Props } from "./Shelf";
@@ -40,7 +42,11 @@ export async function getProps(): Promise<Props> {
   );
 
   return {
-    deck: `"Classic: A book which people praise and don’t read."`,
+    backdropImageProps: await getBackdropImageProps(
+      "shelf",
+      BackdropImageConfig,
+    ),
+    deck: `"I don't mind a reasonable amount of trouble."`,
     distinctAuthors,
     distinctKinds,
     distinctPublishedYears,

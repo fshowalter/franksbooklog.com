@@ -1,5 +1,7 @@
+import { getBackdropImageProps } from "~/api/backdrops";
 import { getFluidCoverImageProps } from "~/api/covers";
 import { allTimelineEntries } from "~/api/timelineEntries";
+import { BackdropImageConfig } from "~/components/Backdrop";
 import { ListItemCoverImageConfig } from "~/components/ListItemCover";
 
 import type { ListItemValue } from "./Readings";
@@ -67,8 +69,12 @@ export async function getProps(): Promise<Props> {
 
   return {
     abandonedCount,
+    backdropImageProps: await getBackdropImageProps(
+      "readings",
+      BackdropImageConfig,
+    ),
     bookCount,
-    deck: `"It is what you read when you don't have to that determines what you will be when you can't help it."`,
+    deck: `"Stealing a man's wife, that's nothing, but stealing his car, that's larceny."`,
     distinctEditions,
     distinctKinds,
     distinctReadingYears,

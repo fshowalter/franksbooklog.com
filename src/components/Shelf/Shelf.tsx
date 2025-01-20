@@ -1,9 +1,10 @@
 import { type JSX, useReducer } from "react";
 
+import type { BackdropImageProps } from "~/api/backdrops";
 import type { CoverImageProps } from "~/api/covers";
 import type { ShelfWork } from "~/api/shelf";
 
-import { SolidBackdrop } from "~/components/Backdrop";
+import { Backdrop } from "~/components/Backdrop";
 import { GroupedList } from "~/components/GroupedList";
 import { ListItem } from "~/components/ListItem";
 import { ListItemCover } from "~/components/ListItemCover";
@@ -27,6 +28,7 @@ export type ListItemValue = Pick<
 };
 
 export type Props = {
+  backdropImageProps: BackdropImageProps;
   deck: string;
   distinctAuthors: readonly string[];
   distinctKinds: readonly string[];
@@ -41,6 +43,7 @@ type Author = Pick<
 > & {};
 
 export function Shelf({
+  backdropImageProps,
   deck,
   distinctAuthors,
   distinctKinds,
@@ -59,7 +62,13 @@ export function Shelf({
 
   return (
     <ListWithFiltersLayout
-      backdrop={<SolidBackdrop deck={deck} title="The Shelf" />}
+      backdrop={
+        <Backdrop
+          deck={deck}
+          imageProps={backdropImageProps}
+          title="The Shelf"
+        />
+      }
       filters={
         <Filters
           dispatch={dispatch}
