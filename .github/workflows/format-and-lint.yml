@@ -54,3 +54,4 @@ jobs:
         with:
           commit-message: "refactor: apply lint autofix"
           title: autofix-${{ github.event.pull_request.title }}
+          base: main
