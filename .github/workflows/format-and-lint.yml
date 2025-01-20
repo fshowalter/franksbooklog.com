@@ -49,9 +49,13 @@ jobs:
 
       - name: create pull request
         uses: peter-evans/create-pull-request@v7
+        id: create-pull-request
         env:
           GITHUB_TOKEN: ${{ secrets.REPO_SCOPED_TOKEN }}
         with:
           commit-message: "refactor: apply lint autofix"
           title: autofix-${{ github.event.pull_request.title }}
-          base: main
+          base: ${{ github.head_ref }}
+      - name: fail if PR
+        if: { { steps.create-pull-request.outputs.pull-request-number } }
+        run: exit 1
