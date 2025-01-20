@@ -57,5 +57,5 @@ jobs:
           title: autofix-${{ github.event.pull_request.title }}
           base: ${{ github.head_ref }}
       - name: fail if PR
-        if: { { steps.create-pull-request.outputs.pull-request-number } }
+        if: steps.create-pull-request.outputs.pull-request-number
         run: exit 1
