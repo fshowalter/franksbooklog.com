@@ -38,7 +38,7 @@ export function HomeListItem({
   value: ListItemValue;
 }): JSX.Element {
   return (
-    <li className="has-[a:hover]:shadow-hover relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default has-[a:hover]:bg-stripe min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[14.16666667%]">
+    <li className="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[14.16666667%]">
       <Cover
         decoding="async"
         imageProps={value.coverImageProps}
