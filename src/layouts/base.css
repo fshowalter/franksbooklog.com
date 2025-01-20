@@ -416,25 +416,8 @@
 }
 
 @layer utilities {
-  .font-sans-narrow {
-    font-stretch: 90%;
-    font-variation-settings: "wdth" 90;
-  }
-
-  .image-filter {
-    filter: var(--image-filter);
-  }
-
   .safari-border-radius-fix {
     transform: translateZ(0);
-  }
-
-  .items-inherit {
-    align-items: inherit;
-  }
-
-  .justify-items-inherit {
-    justify-items: inherit;
   }
 
   .scrollbar-hidden {
