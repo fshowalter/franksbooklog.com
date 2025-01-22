@@ -4,43 +4,45 @@ slug: how-i-grade
 title: How I Grade
 ---
 
-I apply the following criteria to both long and short form works. It's a work-in-progress.
+Grading systems are a balancing act--communicating nuance in an efficient manner. I use these criteria for both long-form and short-form works. 
 
 - ## great
 
-  ![5 stars](/svg/5-stars.svg) I loved it. A must-read. Perfect, or almost perfect. These are the works I recommend to everyone. A hard rating to earn.
+  ![5 stars (out of 5)](/svg/5-stars.svg) I loved it. A must-read. Perfect, or almost perfect. These are the works I recommend to everyone. A hard rating to earn.
 
 - ## good
 
-  ![4 stars](/svg/4-stars.svg) I liked it. Unless you hate the genre or author, read it. These are the works I recommend to most folks. They may not resonate like the 5-star selections, but they don’t disappoint.
+  ![4 stars (out of 5)](/svg/4-stars.svg) I liked it. Unless you hate the genre or author, read it. These are the works I recommend to most folks. They may not resonate like the 5-star selections, but they don’t disappoint.
 
 - ## okay
 
-  ![3 stars](/svg/3-stars.svg) I wouldn’t recommend it, but I wouldn’t recommend _against_ it either. Most works fall into this category.
+  ![3 stars (out of 5)](/svg/3-stars.svg) I wouldn’t recommend it, but I wouldn’t recommend _against_ it either. Most works fall into this category.
 
 - ## bad
 
-  ![2 stars](/svg/2-stars.svg) I didn’t like it. For a long-form work, this hints at a disappointing ending. For a shorter work, it underwhelmed. Approach with caution.
+  ![2 stars (out of 5)](/svg/2-stars.svg) I didn’t like it. For a long-form work, this hints at a disappointing ending. For a shorter work, it underwhelmed. Approach with caution.
 
 - ## awful
 
-  ![1 star](/svg/1-star.svg) I hated it. Another a hard rating to earn. Almost impossible for long works as they're sooner abandoned.
+  ![1 star (out of 5)](/svg/1-star.svg) I hated it. Another a hard rating to earn. Almost impossible for long works as they're sooner abandoned.
+
+Not every book gets a rating. I used to finish every book I started, but not anymore. I'm embracing the abandon. 
 
 ---
 
 ## On Abandoning Books
 
-Fifty-three pages into the 320 page novel, I closed it and moved on.
+Fifty-three pages into the 320-page novel, I closed it and moved on.
 
 It wasn’t easy.
 
-I used to finish every book I started. Finishing brought a sense of accomplishment. A comfort in completing a task, checking a box, achieving a goal. Letting go of that illusionary security is hard.
+Finishing books brought a sense of accomplishment--a comfort in completing a task, checking a box, achieving a goal. Letting go of that illusory security is hard.
 
 But I’m learning.
 
 Forcing myself to finish every book didn’t make me a better person. It didn’t make me smarter or more well-rounded. It just made reading a chore rather than a pleasure.
 
-Statistics say I’ve got more life behind me than ahead. Which means I’ll never finish all the books I want to read.
+I'm old enough that I’ve got more life behind me than ahead, which means I’ll never finish all the books I want to read.
 
 It’s about opportunity cost. I loved the pulp storytelling of Graham Masterton’s <span data-work-slug="the-devils-of-d-day-by-graham-masterton">_The Devils of D-Day_</span>. Mark Richard’s writing in <span data-work-slug="the-ice-at-the-bottom-of-the-world-by-mark-richard">_The Ice at the Bottom of the World_</span> floored me. Clive Barker’s imagination made _The Books of Blood_ unforgettable. Knowing there are more books out there like those, while I’m forcing myself to trudge through a mediocre read, pushed me to abandon lesser efforts.
 
