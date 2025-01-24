@@ -303,6 +303,19 @@
         ]
       },
       {
+        "title": "Brain Wave",
+        "kind": "Novel",
+        "yearPublished": "1954",
+        "slug": "brain-wave-by-poul-anderson",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Poul Anderson"
+          }
+        ]
+      },
+      {
         "title": "Brother Iron, Sister Steel",
         "kind": "Nonfiction",
         "yearPublished": "2001",
@@ -312,19 +325,6 @@
         "authors": [
           {
             "name": "Dave Draper"
-          }
-        ]
-      },
-      {
-        "title": "Can't Hurt Me",
-        "kind": "Nonfiction",
-        "yearPublished": "2018",
-        "slug": "cant-hurt-me-by-david-goggins",
-        "grade": "B",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "David Goggins"
           }
         ]
       }
@@ -516,6 +516,19 @@
         ]
       },
       {
+        "title": "Brain Wave",
+        "kind": "Novel",
+        "yearPublished": "1954",
+        "slug": "brain-wave-by-poul-anderson",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Poul Anderson"
+          }
+        ]
+      },
+      {
         "title": "Brother Iron, Sister Steel",
         "kind": "Nonfiction",
         "yearPublished": "2001",
@@ -525,19 +538,6 @@
         "authors": [
           {
             "name": "Dave Draper"
-          }
-        ]
-      },
-      {
-        "title": "Can't Hurt Me",
-        "kind": "Nonfiction",
-        "yearPublished": "2018",
-        "slug": "cant-hurt-me-by-david-goggins",
-        "grade": "B",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "David Goggins"
           }
         ]
       }
@@ -663,35 +663,35 @@
     ]
   },
   {
-    "sequence": "2022-03-06-2022-03-05-1",
-    "slug": "brother-iron-sister-steel-by-dave-draper",
-    "title": "Brother Iron, Sister Steel",
+    "sequence": "2013-04-07-2013-02-20-1",
+    "slug": "brain-wave-by-poul-anderson",
+    "title": "Brain Wave",
     "subtitle": null,
-    "sortTitle": "Brother Iron, Sister Steel",
-    "yearPublished": "2001",
+    "sortTitle": "Brain Wave",
+    "yearPublished": "1954",
     "grade": "C",
     "gradeValue": 6,
-    "kind": "Nonfiction",
-    "date": "2022-03-06",
+    "kind": "Novel",
+    "date": "2013-04-07",
     "authors": [
       {
-        "slug": "dave-draper",
+        "slug": "poul-anderson",
         "notes": null,
-        "name": "Dave Draper",
-        "sortName": "Draper, Dave"
+        "name": "Poul Anderson",
+        "sortName": "Anderson, Poul"
       }
     ],
     "readings": [
       {
         "sequence": 1,
-        "date": "2022-03-06",
+        "date": "2013-04-07",
         "isAudiobook": false,
         "abandoned": false,
-        "readingTime": 2
+        "readingTime": 47
       }
     ],
     "includedInSlugs": [],
-    "yearReviewed": 2022,
+    "yearReviewed": 2013,
     "moreByAuthors": [],
     "moreReviews": [
       {
@@ -732,6 +732,119 @@
         "authors": [
           {
             "name": "Raymond Chandler"
+          }
+        ]
+      },
+      {
+        "title": "Brother Iron, Sister Steel",
+        "kind": "Nonfiction",
+        "yearPublished": "2001",
+        "slug": "brother-iron-sister-steel-by-dave-draper",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Dave Draper"
+          }
+        ]
+      },
+      {
+        "title": "Can't Hurt Me",
+        "kind": "Nonfiction",
+        "yearPublished": "2018",
+        "slug": "cant-hurt-me-by-david-goggins",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "David Goggins"
+          }
+        ]
+      },
+      {
+        "title": "Carrie",
+        "kind": "Novel",
+        "yearPublished": "1974",
+        "slug": "carrie-by-stephen-king",
+        "grade": "B-",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Stephen King"
+          }
+        ]
+      }
+    ],
+    "includedWorks": []
+  },
+  {
+    "sequence": "2022-03-06-2022-03-05-1",
+    "slug": "brother-iron-sister-steel-by-dave-draper",
+    "title": "Brother Iron, Sister Steel",
+    "subtitle": null,
+    "sortTitle": "Brother Iron, Sister Steel",
+    "yearPublished": "2001",
+    "grade": "C",
+    "gradeValue": 6,
+    "kind": "Nonfiction",
+    "date": "2022-03-06",
+    "authors": [
+      {
+        "slug": "dave-draper",
+        "notes": null,
+        "name": "Dave Draper",
+        "sortName": "Draper, Dave"
+      }
+    ],
+    "readings": [
+      {
+        "sequence": 1,
+        "date": "2022-03-06",
+        "isAudiobook": false,
+        "abandoned": false,
+        "readingTime": 2
+      }
+    ],
+    "includedInSlugs": [],
+    "yearReviewed": 2022,
+    "moreByAuthors": [],
+    "moreReviews": [
+      {
+        "title": "Behold the Void",
+        "kind": "Collection",
+        "yearPublished": "2017",
+        "slug": "behold-the-void-by-philip-fracassi",
+        "grade": "B+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Philip Fracassi"
+          }
+        ]
+      },
+      {
+        "title": "The Big Sleep",
+        "kind": "Novel",
+        "yearPublished": "1939",
+        "slug": "the-big-sleep-by-raymond-chandler",
+        "grade": "C+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Raymond Chandler"
+          }
+        ]
+      },
+      {
+        "title": "Brain Wave",
+        "kind": "Novel",
+        "yearPublished": "1954",
+        "slug": "brain-wave-by-poul-anderson",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Poul Anderson"
           }
         ]
       },
@@ -810,19 +923,6 @@
     "moreByAuthors": [],
     "moreReviews": [
       {
-        "title": "Behold the Void",
-        "kind": "Collection",
-        "yearPublished": "2017",
-        "slug": "behold-the-void-by-philip-fracassi",
-        "grade": "B+",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Philip Fracassi"
-          }
-        ]
-      },
-      {
         "title": "The Big Sleep",
         "kind": "Novel",
         "yearPublished": "1939",
@@ -832,6 +932,19 @@
         "authors": [
           {
             "name": "Raymond Chandler"
+          }
+        ]
+      },
+      {
+        "title": "Brain Wave",
+        "kind": "Novel",
+        "yearPublished": "1954",
+        "slug": "brain-wave-by-poul-anderson",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Poul Anderson"
           }
         ]
       },
@@ -1008,15 +1121,15 @@
     ],
     "moreReviews": [
       {
-        "title": "The Big Sleep",
+        "title": "Brain Wave",
         "kind": "Novel",
-        "yearPublished": "1939",
-        "slug": "the-big-sleep-by-raymond-chandler",
-        "grade": "C+",
+        "yearPublished": "1954",
+        "slug": "brain-wave-by-poul-anderson",
+        "grade": "C",
         "includedInSlugs": [],
         "authors": [
           {
-            "name": "Raymond Chandler"
+            "name": "Poul Anderson"
           }
         ]
       },
@@ -7122,6 +7235,19 @@
         ]
       },
       {
+        "title": "Brain Wave",
+        "kind": "Novel",
+        "yearPublished": "1954",
+        "slug": "brain-wave-by-poul-anderson",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Poul Anderson"
+          }
+        ]
+      },
+      {
         "title": "Brother Iron, Sister Steel",
         "kind": "Nonfiction",
         "yearPublished": "2001",
@@ -7131,19 +7257,6 @@
         "authors": [
           {
             "name": "Dave Draper"
-          }
-        ]
-      },
-      {
-        "title": "Can't Hurt Me",
-        "kind": "Nonfiction",
-        "yearPublished": "2018",
-        "slug": "cant-hurt-me-by-david-goggins",
-        "grade": "B",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "David Goggins"
           }
         ]
       }
@@ -7226,6 +7339,19 @@
         ]
       },
       {
+        "title": "Brain Wave",
+        "kind": "Novel",
+        "yearPublished": "1954",
+        "slug": "brain-wave-by-poul-anderson",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Poul Anderson"
+          }
+        ]
+      },
+      {
         "title": "Brother Iron, Sister Steel",
         "kind": "Nonfiction",
         "yearPublished": "2001",
@@ -7248,19 +7374,6 @@
         "authors": [
           {
             "name": "David Goggins"
-          }
-        ]
-      },
-      {
-        "title": "Carrie",
-        "kind": "Novel",
-        "yearPublished": "1974",
-        "slug": "carrie-by-stephen-king",
-        "grade": "B-",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Stephen King"
           }
         ]
       }

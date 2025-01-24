@@ -1,7 +1,7 @@
 {
-  "reviewCount": 62,
-  "workCount": 63,
-  "bookCount": 51,
+  "reviewCount": 63,
+  "workCount": 64,
+  "bookCount": 52,
   "gradeDistribution": [
     {
       "name": "A",
@@ -35,7 +35,7 @@
     },
     {
       "name": "C",
-      "count": 5,
+      "count": 6,
       "sortValue": 6
     },
     {
@@ -75,7 +75,7 @@
     },
     {
       "name": "Novel",
-      "count": 25
+      "count": 26
     },
     {
       "name": "Novella",
@@ -94,6 +94,10 @@
     {
       "name": "Kindle",
       "count": 34
+    },
+    {
+      "name": "Paperback",
+      "count": 1
     }
   ],
   "decadeDistribution": [
@@ -111,7 +115,7 @@
     },
     {
       "name": "1950s",
-      "count": 3
+      "count": 4
     },
     {
       "name": "1970s",
