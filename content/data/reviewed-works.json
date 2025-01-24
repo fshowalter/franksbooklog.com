@@ -6684,15 +6684,15 @@
     ],
     "moreReviews": [
       {
-        "title": "Total Recall",
+        "title": "True Myths",
         "kind": "Nonfiction",
-        "yearPublished": "2012",
-        "slug": "total-recall-by-arnold-schwarzenegger",
-        "grade": "C+",
+        "yearPublished": "1996",
+        "slug": "true-myths-by-nigel-andrews",
+        "grade": "D+",
         "includedInSlugs": [],
         "authors": [
           {
-            "name": "Arnold Schwarzenegger"
+            "name": "Nigel Andrews"
           }
         ]
       },
@@ -7075,15 +7075,15 @@
         ]
       },
       {
-        "title": "What Doesn't Kill Us",
+        "title": "True Myths",
         "kind": "Nonfiction",
-        "yearPublished": "2017",
-        "slug": "what-doesnt-kill-us-by-scott-carney",
-        "grade": "C+",
+        "yearPublished": "1996",
+        "slug": "true-myths-by-nigel-andrews",
+        "grade": "D+",
         "includedInSlugs": [],
         "authors": [
           {
-            "name": "Scott Carney"
+            "name": "Nigel Andrews"
           }
         ]
       }
@@ -7281,15 +7281,15 @@
         ]
       },
       {
-        "title": "What Doesn't Kill Us",
+        "title": "True Myths",
         "kind": "Nonfiction",
-        "yearPublished": "2017",
-        "slug": "what-doesnt-kill-us-by-scott-carney",
-        "grade": "C+",
+        "yearPublished": "1996",
+        "slug": "true-myths-by-nigel-andrews",
+        "grade": "D+",
         "includedInSlugs": [],
         "authors": [
           {
-            "name": "Scott Carney"
+            "name": "Nigel Andrews"
           }
         ]
       }
@@ -8538,6 +8538,19 @@
         ]
       },
       {
+        "title": "True Myths",
+        "kind": "Nonfiction",
+        "yearPublished": "1996",
+        "slug": "true-myths-by-nigel-andrews",
+        "grade": "D+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Nigel Andrews"
+          }
+        ]
+      },
+      {
         "title": "What Doesn't Kill Us",
         "kind": "Nonfiction",
         "yearPublished": "2017",
@@ -8547,19 +8560,6 @@
         "authors": [
           {
             "name": "Scott Carney"
-          }
-        ]
-      },
-      {
-        "title": "The Woods Are Dark",
-        "kind": "Novel",
-        "yearPublished": "1981",
-        "slug": "the-woods-are-dark-by-richard-laymon",
-        "grade": "C+",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Richard Laymon"
           }
         ]
       }
@@ -9431,19 +9431,6 @@
     ],
     "moreReviews": [
       {
-        "title": "The M.A.X. Muscle Plan",
-        "kind": "Nonfiction",
-        "yearPublished": "2012",
-        "slug": "the-max-muscle-plan-by-brad-schoenfeld",
-        "grade": "C-",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Brad Schoenfeld"
-          }
-        ]
-      },
-      {
         "title": "Total Recall",
         "kind": "Nonfiction",
         "yearPublished": "2012",
@@ -9453,6 +9440,19 @@
         "authors": [
           {
             "name": "Arnold Schwarzenegger"
+          }
+        ]
+      },
+      {
+        "title": "True Myths",
+        "kind": "Nonfiction",
+        "yearPublished": "1996",
+        "slug": "true-myths-by-nigel-andrews",
+        "grade": "D+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Nigel Andrews"
           }
         ]
       },
@@ -9590,6 +9590,121 @@
         ]
       },
       {
+        "title": "True Myths",
+        "kind": "Nonfiction",
+        "yearPublished": "1996",
+        "slug": "true-myths-by-nigel-andrews",
+        "grade": "D+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Nigel Andrews"
+          }
+        ]
+      },
+      {
+        "title": "What Doesn't Kill Us",
+        "kind": "Nonfiction",
+        "yearPublished": "2017",
+        "slug": "what-doesnt-kill-us-by-scott-carney",
+        "grade": "C+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Scott Carney"
+          }
+        ]
+      },
+      {
+        "title": "The Woods Are Dark",
+        "kind": "Novel",
+        "yearPublished": "1981",
+        "slug": "the-woods-are-dark-by-richard-laymon",
+        "grade": "C+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Richard Laymon"
+          }
+        ]
+      }
+    ],
+    "includedWorks": []
+  },
+  {
+    "sequence": "2013-04-16-2013-04-07-1",
+    "slug": "true-myths-by-nigel-andrews",
+    "title": "True Myths",
+    "subtitle": "The Life and Times of Arnold Schwarzenegger",
+    "sortTitle": "True Myths: The Life and Times of Arnold Schwarzenegger",
+    "yearPublished": "1996",
+    "grade": "D+",
+    "gradeValue": 4,
+    "kind": "Nonfiction",
+    "date": "2013-04-16",
+    "authors": [
+      {
+        "slug": "nigel-andrews",
+        "notes": null,
+        "name": "Nigel Andrews",
+        "sortName": "Andrews, Nigel"
+      }
+    ],
+    "readings": [
+      {
+        "sequence": 1,
+        "date": "2013-04-16",
+        "isAudiobook": false,
+        "abandoned": false,
+        "readingTime": 10
+      }
+    ],
+    "includedInSlugs": [],
+    "yearReviewed": 2013,
+    "moreByAuthors": [],
+    "moreReviews": [
+      {
+        "title": "Surfer Girl",
+        "kind": "Short Story",
+        "yearPublished": "2017",
+        "slug": "surfer-girl-by-philip-fracassi",
+        "grade": "C+",
+        "includedInSlugs": [
+          "behold-the-void-by-philip-fracassi"
+        ],
+        "authors": [
+          {
+            "name": "Philip Fracassi"
+          }
+        ]
+      },
+      {
+        "title": "The M.A.X. Muscle Plan",
+        "kind": "Nonfiction",
+        "yearPublished": "2012",
+        "slug": "the-max-muscle-plan-by-brad-schoenfeld",
+        "grade": "C-",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Brad Schoenfeld"
+          }
+        ]
+      },
+      {
+        "title": "Total Recall",
+        "kind": "Nonfiction",
+        "yearPublished": "2012",
+        "slug": "total-recall-by-arnold-schwarzenegger",
+        "grade": "C+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Arnold Schwarzenegger"
+          }
+        ]
+      },
+      {
         "title": "What Doesn't Kill Us",
         "kind": "Nonfiction",
         "yearPublished": "2017",
@@ -9664,21 +9779,6 @@
     "moreByAuthors": [],
     "moreReviews": [
       {
-        "title": "Surfer Girl",
-        "kind": "Short Story",
-        "yearPublished": "2017",
-        "slug": "surfer-girl-by-philip-fracassi",
-        "grade": "C+",
-        "includedInSlugs": [
-          "behold-the-void-by-philip-fracassi"
-        ],
-        "authors": [
-          {
-            "name": "Philip Fracassi"
-          }
-        ]
-      },
-      {
         "title": "The M.A.X. Muscle Plan",
         "kind": "Nonfiction",
         "yearPublished": "2012",
@@ -9701,6 +9801,19 @@
         "authors": [
           {
             "name": "Arnold Schwarzenegger"
+          }
+        ]
+      },
+      {
+        "title": "True Myths",
+        "kind": "Nonfiction",
+        "yearPublished": "1996",
+        "slug": "true-myths-by-nigel-andrews",
+        "grade": "D+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Nigel Andrews"
           }
         ]
       },
