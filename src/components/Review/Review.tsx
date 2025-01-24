@@ -28,6 +28,13 @@ export type Props = {
   value: ReviewWithContent;
 };
 
+const dateFormat = new Intl.DateTimeFormat("en-US", {
+  day: "numeric",
+  month: "short",
+  timeZone: "UTC",
+  year: "numeric",
+});
+
 export function Review({
   coverImageProps,
   moreReviews,
@@ -36,7 +43,7 @@ export function Review({
 }: Props): JSX.Element {
   return (
     <Layout className="flex flex-col" data-pagefind-body hasBackdrop={false}>
-      <header className="mb-12 flex flex-col items-center px-[8%] pt-10">
+      <header className="relative z-[1] mb-12 flex flex-col items-center px-[8%] pt-10">
         <nav className="pb-3">
           <a
             className="font-sans text-xs uppercase tracking-wider text-accent"
@@ -64,11 +71,14 @@ export function Review({
           <ReviewGrade value={value.grade} />
         </div>
         <YearAndKind
-          className="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+          className="mb-4 mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle tablet:mb-6"
           kind={value.kind}
           yearPublished={value.yearPublished}
         />
         <ReviewCover coverImageProps={coverImageProps} />
+        <div className="relative mt-4 bg-default px-[1ch] font-sans text-xs uppercase tracking-wide text-subtle after:absolute after:left-[-11%] after:top-1/2 after:-z-10 after:w-[122%] after:border-t after:border-[var(--fg-subtle)] tablet:mt-6">
+          Reviewed {dateFormat.format(value.date)}
+        </div>
       </header>
       <div className="flex flex-col items-center gap-16 px-container pb-20 desktop:gap-20 desktop:pb-32">
         <LongFormText

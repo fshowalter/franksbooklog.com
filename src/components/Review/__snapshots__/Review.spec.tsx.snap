@@ -227,7 +227,7 @@ exports[`Review > matches snapshot for slug 'about-face-by-david-h-hackworth-jul
         id="content"
       >
         <header
-          class="mb-12 flex flex-col items-center px-[8%] pt-10"
+          class="relative z-[1] mb-12 flex flex-col items-center px-[8%] pt-10"
         >
           <nav
             class="pb-3"
@@ -291,7 +291,7 @@ exports[`Review > matches snapshot for slug 'about-face-by-david-h-hackworth-jul
             </picture>
           </div>
           <div
-            class="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+            class="mb-4 mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle tablet:mb-6"
           >
             <span
               class="tracking-wide"
@@ -330,6 +330,11 @@ exports[`Review > matches snapshot for slug 'about-face-by-david-h-hackworth-jul
                 width="248"
               />
             </div>
+          </div>
+          <div
+            class="relative mt-4 bg-default px-[1ch] font-sans text-xs uppercase tracking-wide text-subtle after:absolute after:left-[-11%] after:top-1/2 after:-z-10 after:w-[122%] after:border-t after:border-[var(--fg-subtle)] tablet:mt-6"
+          >
+            Reviewed Sep 5, 2022
           </div>
         </header>
         <div
@@ -1451,7 +1456,7 @@ exports[`Review > matches snapshot for slug 'altar-by-philip-fracassi' 1`] = `
         id="content"
       >
         <header
-          class="mb-12 flex flex-col items-center px-[8%] pt-10"
+          class="relative z-[1] mb-12 flex flex-col items-center px-[8%] pt-10"
         >
           <nav
             class="pb-3"
@@ -1500,7 +1505,7 @@ exports[`Review > matches snapshot for slug 'altar-by-philip-fracassi' 1`] = `
             </picture>
           </div>
           <div
-            class="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+            class="mb-4 mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle tablet:mb-6"
           >
             <span
               class="tracking-wide"
@@ -1539,6 +1544,11 @@ exports[`Review > matches snapshot for slug 'altar-by-philip-fracassi' 1`] = `
                 width="248"
               />
             </div>
+          </div>
+          <div
+            class="relative mt-4 bg-default px-[1ch] font-sans text-xs uppercase tracking-wide text-subtle after:absolute after:left-[-11%] after:top-1/2 after:-z-10 after:w-[122%] after:border-t after:border-[var(--fg-subtle)] tablet:mt-6"
+          >
+            Reviewed Apr 18, 2022
           </div>
         </header>
         <div
@@ -2430,7 +2440,7 @@ exports[`Review > matches snapshot for slug 'behold-the-void-by-philip-fracassi'
         id="content"
       >
         <header
-          class="mb-12 flex flex-col items-center px-[8%] pt-10"
+          class="relative z-[1] mb-12 flex flex-col items-center px-[8%] pt-10"
         >
           <nav
             class="pb-3"
@@ -2479,7 +2489,7 @@ exports[`Review > matches snapshot for slug 'behold-the-void-by-philip-fracassi'
             </picture>
           </div>
           <div
-            class="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+            class="mb-4 mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle tablet:mb-6"
           >
             <span
               class="tracking-wide"
@@ -2518,6 +2528,11 @@ exports[`Review > matches snapshot for slug 'behold-the-void-by-philip-fracassi'
                 width="248"
               />
             </div>
+          </div>
+          <div
+            class="relative mt-4 bg-default px-[1ch] font-sans text-xs uppercase tracking-wide text-subtle after:absolute after:left-[-11%] after:top-1/2 after:-z-10 after:w-[122%] after:border-t after:border-[var(--fg-subtle)] tablet:mt-6"
+          >
+            Reviewed May 7, 2022
           </div>
         </header>
         <div
@@ -4065,7 +4080,7 @@ exports[`Review > matches snapshot for slug 'brother-iron-sister-steel-by-dave-d
         id="content"
       >
         <header
-          class="mb-12 flex flex-col items-center px-[8%] pt-10"
+          class="relative z-[1] mb-12 flex flex-col items-center px-[8%] pt-10"
         >
           <nav
             class="pb-3"
@@ -4114,7 +4129,7 @@ exports[`Review > matches snapshot for slug 'brother-iron-sister-steel-by-dave-d
             </picture>
           </div>
           <div
-            class="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+            class="mb-4 mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle tablet:mb-6"
           >
             <span
               class="tracking-wide"
@@ -4153,6 +4168,11 @@ exports[`Review > matches snapshot for slug 'brother-iron-sister-steel-by-dave-d
                 width="248"
               />
             </div>
+          </div>
+          <div
+            class="relative mt-4 bg-default px-[1ch] font-sans text-xs uppercase tracking-wide text-subtle after:absolute after:left-[-11%] after:top-1/2 after:-z-10 after:w-[122%] after:border-t after:border-[var(--fg-subtle)] tablet:mt-6"
+          >
+            Reviewed Mar 6, 2022
           </div>
         </header>
         <div
@@ -5102,7 +5122,7 @@ exports[`Review > matches snapshot for slug 'cant-hurt-me-by-david-goggins' 1`] 
         id="content"
       >
         <header
-          class="mb-12 flex flex-col items-center px-[8%] pt-10"
+          class="relative z-[1] mb-12 flex flex-col items-center px-[8%] pt-10"
         >
           <nav
             class="pb-3"
@@ -5156,7 +5176,7 @@ exports[`Review > matches snapshot for slug 'cant-hurt-me-by-david-goggins' 1`] 
             </picture>
           </div>
           <div
-            class="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+            class="mb-4 mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle tablet:mb-6"
           >
             <span
               class="tracking-wide"
@@ -5195,6 +5215,11 @@ exports[`Review > matches snapshot for slug 'cant-hurt-me-by-david-goggins' 1`] 
                 width="248"
               />
             </div>
+          </div>
+          <div
+            class="relative mt-4 bg-default px-[1ch] font-sans text-xs uppercase tracking-wide text-subtle after:absolute after:left-[-11%] after:top-1/2 after:-z-10 after:w-[122%] after:border-t after:border-[var(--fg-subtle)] tablet:mt-6"
+          >
+            Reviewed Oct 13, 2022
           </div>
         </header>
         <div
@@ -6221,7 +6246,7 @@ exports[`Review > matches snapshot for slug 'carrie-by-stephen-king' 1`] = `
         id="content"
       >
         <header
-          class="mb-12 flex flex-col items-center px-[8%] pt-10"
+          class="relative z-[1] mb-12 flex flex-col items-center px-[8%] pt-10"
         >
           <nav
             class="pb-3"
@@ -6270,7 +6295,7 @@ exports[`Review > matches snapshot for slug 'carrie-by-stephen-king' 1`] = `
             </picture>
           </div>
           <div
-            class="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+            class="mb-4 mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle tablet:mb-6"
           >
             <span
               class="tracking-wide"
@@ -6309,6 +6334,11 @@ exports[`Review > matches snapshot for slug 'carrie-by-stephen-king' 1`] = `
                 width="248"
               />
             </div>
+          </div>
+          <div
+            class="relative mt-4 bg-default px-[1ch] font-sans text-xs uppercase tracking-wide text-subtle after:absolute after:left-[-11%] after:top-1/2 after:-z-10 after:w-[122%] after:border-t after:border-[var(--fg-subtle)] tablet:mt-6"
+          >
+            Reviewed Sep 19, 2022
           </div>
         </header>
         <div
@@ -7488,7 +7518,7 @@ exports[`Review > matches snapshot for slug 'casino-royale-by-ian-fleming' 1`] =
         id="content"
       >
         <header
-          class="mb-12 flex flex-col items-center px-[8%] pt-10"
+          class="relative z-[1] mb-12 flex flex-col items-center px-[8%] pt-10"
         >
           <nav
             class="pb-3"
@@ -7537,7 +7567,7 @@ exports[`Review > matches snapshot for slug 'casino-royale-by-ian-fleming' 1`] =
             </picture>
           </div>
           <div
-            class="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+            class="mb-4 mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle tablet:mb-6"
           >
             <span
               class="tracking-wide"
@@ -7576,6 +7606,11 @@ exports[`Review > matches snapshot for slug 'casino-royale-by-ian-fleming' 1`] =
                 width="248"
               />
             </div>
+          </div>
+          <div
+            class="relative mt-4 bg-default px-[1ch] font-sans text-xs uppercase tracking-wide text-subtle after:absolute after:left-[-11%] after:top-1/2 after:-z-10 after:w-[122%] after:border-t after:border-[var(--fg-subtle)] tablet:mt-6"
+          >
+            Reviewed Jun 14, 2022
           </div>
         </header>
         <div
@@ -8760,7 +8795,7 @@ exports[`Review > matches snapshot for slug 'churchill-by-andrew-roberts' 1`] = 
         id="content"
       >
         <header
-          class="mb-12 flex flex-col items-center px-[8%] pt-10"
+          class="relative z-[1] mb-12 flex flex-col items-center px-[8%] pt-10"
         >
           <nav
             class="pb-3"
@@ -8814,7 +8849,7 @@ exports[`Review > matches snapshot for slug 'churchill-by-andrew-roberts' 1`] = 
             </picture>
           </div>
           <div
-            class="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+            class="mb-4 mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle tablet:mb-6"
           >
             <span
               class="tracking-wide"
@@ -8853,6 +8888,11 @@ exports[`Review > matches snapshot for slug 'churchill-by-andrew-roberts' 1`] = 
                 width="248"
               />
             </div>
+          </div>
+          <div
+            class="relative mt-4 bg-default px-[1ch] font-sans text-xs uppercase tracking-wide text-subtle after:absolute after:left-[-11%] after:top-1/2 after:-z-10 after:w-[122%] after:border-t after:border-[var(--fg-subtle)] tablet:mt-6"
+          >
+            Reviewed Jun 14, 2022
           </div>
         </header>
         <div
@@ -10062,7 +10102,7 @@ exports[`Review > matches snapshot for slug 'coffin-by-philip-fracassi' 1`] = `
         id="content"
       >
         <header
-          class="mb-12 flex flex-col items-center px-[8%] pt-10"
+          class="relative z-[1] mb-12 flex flex-col items-center px-[8%] pt-10"
         >
           <nav
             class="pb-3"
@@ -10111,7 +10151,7 @@ exports[`Review > matches snapshot for slug 'coffin-by-philip-fracassi' 1`] = `
             </picture>
           </div>
           <div
-            class="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+            class="mb-4 mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle tablet:mb-6"
           >
             <span
               class="tracking-wide"
@@ -10150,6 +10190,11 @@ exports[`Review > matches snapshot for slug 'coffin-by-philip-fracassi' 1`] = `
                 width="248"
               />
             </div>
+          </div>
+          <div
+            class="relative mt-4 bg-default px-[1ch] font-sans text-xs uppercase tracking-wide text-subtle after:absolute after:left-[-11%] after:top-1/2 after:-z-10 after:w-[122%] after:border-t after:border-[var(--fg-subtle)] tablet:mt-6"
+          >
+            Reviewed Apr 20, 2022
           </div>
         </header>
         <div
@@ -11005,7 +11050,7 @@ exports[`Review > matches snapshot for slug 'consider-this-by-chuck-palahniuk' 1
         id="content"
       >
         <header
-          class="mb-12 flex flex-col items-center px-[8%] pt-10"
+          class="relative z-[1] mb-12 flex flex-col items-center px-[8%] pt-10"
         >
           <nav
             class="pb-3"
@@ -11059,7 +11104,7 @@ exports[`Review > matches snapshot for slug 'consider-this-by-chuck-palahniuk' 1
             </picture>
           </div>
           <div
-            class="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+            class="mb-4 mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle tablet:mb-6"
           >
             <span
               class="tracking-wide"
@@ -11098,6 +11143,11 @@ exports[`Review > matches snapshot for slug 'consider-this-by-chuck-palahniuk' 1
                 width="248"
               />
             </div>
+          </div>
+          <div
+            class="relative mt-4 bg-default px-[1ch] font-sans text-xs uppercase tracking-wide text-subtle after:absolute after:left-[-11%] after:top-1/2 after:-z-10 after:w-[122%] after:border-t after:border-[var(--fg-subtle)] tablet:mt-6"
+          >
+            Reviewed Sep 22, 2022
           </div>
         </header>
         <div
@@ -12041,7 +12091,7 @@ exports[`Review > matches snapshot for slug 'cured-by-lol-tolhurst' 1`] = `
         id="content"
       >
         <header
-          class="mb-12 flex flex-col items-center px-[8%] pt-10"
+          class="relative z-[1] mb-12 flex flex-col items-center px-[8%] pt-10"
         >
           <nav
             class="pb-3"
@@ -12095,7 +12145,7 @@ exports[`Review > matches snapshot for slug 'cured-by-lol-tolhurst' 1`] = `
             </picture>
           </div>
           <div
-            class="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+            class="mb-4 mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle tablet:mb-6"
           >
             <span
               class="tracking-wide"
@@ -12134,6 +12184,11 @@ exports[`Review > matches snapshot for slug 'cured-by-lol-tolhurst' 1`] = `
                 width="248"
               />
             </div>
+          </div>
+          <div
+            class="relative mt-4 bg-default px-[1ch] font-sans text-xs uppercase tracking-wide text-subtle after:absolute after:left-[-11%] after:top-1/2 after:-z-10 after:w-[122%] after:border-t after:border-[var(--fg-subtle)] tablet:mt-6"
+          >
+            Reviewed Jul 18, 2022
           </div>
         </header>
         <div
@@ -13186,7 +13241,7 @@ exports[`Review > matches snapshot for slug 'desert-pickup-by-richard-laymon' 1`
         id="content"
       >
         <header
-          class="mb-12 flex flex-col items-center px-[8%] pt-10"
+          class="relative z-[1] mb-12 flex flex-col items-center px-[8%] pt-10"
         >
           <nav
             class="pb-3"
@@ -13235,7 +13290,7 @@ exports[`Review > matches snapshot for slug 'desert-pickup-by-richard-laymon' 1`
             </picture>
           </div>
           <div
-            class="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+            class="mb-4 mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle tablet:mb-6"
           >
             <span
               class="tracking-wide"
@@ -13274,6 +13329,11 @@ exports[`Review > matches snapshot for slug 'desert-pickup-by-richard-laymon' 1`
                 width="248"
               />
             </div>
+          </div>
+          <div
+            class="relative mt-4 bg-default px-[1ch] font-sans text-xs uppercase tracking-wide text-subtle after:absolute after:left-[-11%] after:top-1/2 after:-z-10 after:w-[122%] after:border-t after:border-[var(--fg-subtle)] tablet:mt-6"
+          >
+            Reviewed Apr 3, 2022
           </div>
         </header>
         <div
@@ -14143,7 +14203,7 @@ exports[`Review > matches snapshot for slug 'doctor-sleep-by-stephen-king' 1`] =
         id="content"
       >
         <header
-          class="mb-12 flex flex-col items-center px-[8%] pt-10"
+          class="relative z-[1] mb-12 flex flex-col items-center px-[8%] pt-10"
         >
           <nav
             class="pb-3"
@@ -14192,7 +14252,7 @@ exports[`Review > matches snapshot for slug 'doctor-sleep-by-stephen-king' 1`] =
             </picture>
           </div>
           <div
-            class="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+            class="mb-4 mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle tablet:mb-6"
           >
             <span
               class="tracking-wide"
@@ -14231,6 +14291,11 @@ exports[`Review > matches snapshot for slug 'doctor-sleep-by-stephen-king' 1`] =
                 width="248"
               />
             </div>
+          </div>
+          <div
+            class="relative mt-4 bg-default px-[1ch] font-sans text-xs uppercase tracking-wide text-subtle after:absolute after:left-[-11%] after:top-1/2 after:-z-10 after:w-[122%] after:border-t after:border-[var(--fg-subtle)] tablet:mt-6"
+          >
+            Reviewed Jan 14, 2023
           </div>
         </header>
         <div
@@ -15882,7 +15947,7 @@ exports[`Review > matches snapshot for slug 'dont-let-them-get-you-down-by-phili
         id="content"
       >
         <header
-          class="mb-12 flex flex-col items-center px-[8%] pt-10"
+          class="relative z-[1] mb-12 flex flex-col items-center px-[8%] pt-10"
         >
           <nav
             class="pb-3"
@@ -15931,7 +15996,7 @@ exports[`Review > matches snapshot for slug 'dont-let-them-get-you-down-by-phili
             </picture>
           </div>
           <div
-            class="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+            class="mb-4 mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle tablet:mb-6"
           >
             <span
               class="tracking-wide"
@@ -15970,6 +16035,11 @@ exports[`Review > matches snapshot for slug 'dont-let-them-get-you-down-by-phili
                 width="248"
               />
             </div>
+          </div>
+          <div
+            class="relative mt-4 bg-default px-[1ch] font-sans text-xs uppercase tracking-wide text-subtle after:absolute after:left-[-11%] after:top-1/2 after:-z-10 after:w-[122%] after:border-t after:border-[var(--fg-subtle)] tablet:mt-6"
+          >
+            Reviewed Oct 29, 2023
           </div>
         </header>
         <div
@@ -17149,7 +17219,7 @@ exports[`Review > matches snapshot for slug 'dracula-by-bram-stoker' 1`] = `
         id="content"
       >
         <header
-          class="mb-12 flex flex-col items-center px-[8%] pt-10"
+          class="relative z-[1] mb-12 flex flex-col items-center px-[8%] pt-10"
         >
           <nav
             class="pb-3"
@@ -17198,7 +17268,7 @@ exports[`Review > matches snapshot for slug 'dracula-by-bram-stoker' 1`] = `
             </picture>
           </div>
           <div
-            class="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+            class="mb-4 mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle tablet:mb-6"
           >
             <span
               class="tracking-wide"
@@ -17237,6 +17307,11 @@ exports[`Review > matches snapshot for slug 'dracula-by-bram-stoker' 1`] = `
                 width="248"
               />
             </div>
+          </div>
+          <div
+            class="relative mt-4 bg-default px-[1ch] font-sans text-xs uppercase tracking-wide text-subtle after:absolute after:left-[-11%] after:top-1/2 after:-z-10 after:w-[122%] after:border-t after:border-[var(--fg-subtle)] tablet:mt-6"
+          >
+            Reviewed Jul 9, 2022
           </div>
         </header>
         <div
@@ -18518,7 +18593,7 @@ exports[`Review > matches snapshot for slug 'draft-no-4-by-john-mcphee' 1`] = `
         id="content"
       >
         <header
-          class="mb-12 flex flex-col items-center px-[8%] pt-10"
+          class="relative z-[1] mb-12 flex flex-col items-center px-[8%] pt-10"
         >
           <nav
             class="pb-3"
@@ -18572,7 +18647,7 @@ exports[`Review > matches snapshot for slug 'draft-no-4-by-john-mcphee' 1`] = `
             </picture>
           </div>
           <div
-            class="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+            class="mb-4 mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle tablet:mb-6"
           >
             <span
               class="tracking-wide"
@@ -18611,6 +18686,11 @@ exports[`Review > matches snapshot for slug 'draft-no-4-by-john-mcphee' 1`] = `
                 width="248"
               />
             </div>
+          </div>
+          <div
+            class="relative mt-4 bg-default px-[1ch] font-sans text-xs uppercase tracking-wide text-subtle after:absolute after:left-[-11%] after:top-1/2 after:-z-10 after:w-[122%] after:border-t after:border-[var(--fg-subtle)] tablet:mt-6"
+          >
+            Reviewed Sep 11, 2022
           </div>
         </header>
         <div
@@ -19482,7 +19562,7 @@ exports[`Review > matches snapshot for slug 'extreme-ownership-by-jocko-willink-
         id="content"
       >
         <header
-          class="mb-12 flex flex-col items-center px-[8%] pt-10"
+          class="relative z-[1] mb-12 flex flex-col items-center px-[8%] pt-10"
         >
           <nav
             class="pb-3"
@@ -19546,7 +19626,7 @@ exports[`Review > matches snapshot for slug 'extreme-ownership-by-jocko-willink-
             </picture>
           </div>
           <div
-            class="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+            class="mb-4 mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle tablet:mb-6"
           >
             <span
               class="tracking-wide"
@@ -19585,6 +19665,11 @@ exports[`Review > matches snapshot for slug 'extreme-ownership-by-jocko-willink-
                 width="248"
               />
             </div>
+          </div>
+          <div
+            class="relative mt-4 bg-default px-[1ch] font-sans text-xs uppercase tracking-wide text-subtle after:absolute after:left-[-11%] after:top-1/2 after:-z-10 after:w-[122%] after:border-t after:border-[var(--fg-subtle)] tablet:mt-6"
+          >
+            Reviewed Jun 26, 2022
           </div>
         </header>
         <div
@@ -20460,7 +20545,7 @@ exports[`Review > matches snapshot for slug 'fail-safe-by-philip-fracassi' 1`] =
         id="content"
       >
         <header
-          class="mb-12 flex flex-col items-center px-[8%] pt-10"
+          class="relative z-[1] mb-12 flex flex-col items-center px-[8%] pt-10"
         >
           <nav
             class="pb-3"
@@ -20509,7 +20594,7 @@ exports[`Review > matches snapshot for slug 'fail-safe-by-philip-fracassi' 1`] =
             </picture>
           </div>
           <div
-            class="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+            class="mb-4 mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle tablet:mb-6"
           >
             <span
               class="tracking-wide"
@@ -20548,6 +20633,11 @@ exports[`Review > matches snapshot for slug 'fail-safe-by-philip-fracassi' 1`] =
                 width="248"
               />
             </div>
+          </div>
+          <div
+            class="relative mt-4 bg-default px-[1ch] font-sans text-xs uppercase tracking-wide text-subtle after:absolute after:left-[-11%] after:top-1/2 after:-z-10 after:w-[122%] after:border-t after:border-[var(--fg-subtle)] tablet:mt-6"
+          >
+            Reviewed Apr 30, 2022
           </div>
         </header>
         <div
@@ -21430,7 +21520,7 @@ exports[`Review > matches snapshot for slug 'fast-forward-by-stephen-morris' 1`]
         id="content"
       >
         <header
-          class="mb-12 flex flex-col items-center px-[8%] pt-10"
+          class="relative z-[1] mb-12 flex flex-col items-center px-[8%] pt-10"
         >
           <nav
             class="pb-3"
@@ -21484,7 +21574,7 @@ exports[`Review > matches snapshot for slug 'fast-forward-by-stephen-morris' 1`]
             </picture>
           </div>
           <div
-            class="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+            class="mb-4 mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle tablet:mb-6"
           >
             <span
               class="tracking-wide"
@@ -21523,6 +21613,11 @@ exports[`Review > matches snapshot for slug 'fast-forward-by-stephen-morris' 1`]
                 width="248"
               />
             </div>
+          </div>
+          <div
+            class="relative mt-4 bg-default px-[1ch] font-sans text-xs uppercase tracking-wide text-subtle after:absolute after:left-[-11%] after:top-1/2 after:-z-10 after:w-[122%] after:border-t after:border-[var(--fg-subtle)] tablet:mt-6"
+          >
+            Reviewed Jul 1, 2024
           </div>
         </header>
         <div
@@ -23365,7 +23460,7 @@ exports[`Review > matches snapshot for slug 'fight-club-by-chuck-palahniuk' 1`] 
         id="content"
       >
         <header
-          class="mb-12 flex flex-col items-center px-[8%] pt-10"
+          class="relative z-[1] mb-12 flex flex-col items-center px-[8%] pt-10"
         >
           <nav
             class="pb-3"
@@ -23414,7 +23509,7 @@ exports[`Review > matches snapshot for slug 'fight-club-by-chuck-palahniuk' 1`] 
             </picture>
           </div>
           <div
-            class="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+            class="mb-4 mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle tablet:mb-6"
           >
             <span
               class="tracking-wide"
@@ -23453,6 +23548,11 @@ exports[`Review > matches snapshot for slug 'fight-club-by-chuck-palahniuk' 1`] 
                 width="248"
               />
             </div>
+          </div>
+          <div
+            class="relative mt-4 bg-default px-[1ch] font-sans text-xs uppercase tracking-wide text-subtle after:absolute after:left-[-11%] after:top-1/2 after:-z-10 after:w-[122%] after:border-t after:border-[var(--fg-subtle)] tablet:mt-6"
+          >
+            Reviewed Jul 16, 2022
           </div>
         </header>
         <div
@@ -24497,7 +24597,7 @@ exports[`Review > matches snapshot for slug 'fright-night-by-john-skipp-craig-sp
         id="content"
       >
         <header
-          class="mb-12 flex flex-col items-center px-[8%] pt-10"
+          class="relative z-[1] mb-12 flex flex-col items-center px-[8%] pt-10"
         >
           <nav
             class="pb-3"
@@ -24556,7 +24656,7 @@ exports[`Review > matches snapshot for slug 'fright-night-by-john-skipp-craig-sp
             </picture>
           </div>
           <div
-            class="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+            class="mb-4 mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle tablet:mb-6"
           >
             <span
               class="tracking-wide"
@@ -24595,6 +24695,11 @@ exports[`Review > matches snapshot for slug 'fright-night-by-john-skipp-craig-sp
                 width="248"
               />
             </div>
+          </div>
+          <div
+            class="relative mt-4 bg-default px-[1ch] font-sans text-xs uppercase tracking-wide text-subtle after:absolute after:left-[-11%] after:top-1/2 after:-z-10 after:w-[122%] after:border-t after:border-[var(--fg-subtle)] tablet:mt-6"
+          >
+            Reviewed Jan 21, 2023
           </div>
         </header>
         <div
@@ -25867,7 +25972,7 @@ exports[`Review > matches snapshot for slug 'fright-night-origins-by-tom-holland
         id="content"
       >
         <header
-          class="mb-12 flex flex-col items-center px-[8%] pt-10"
+          class="relative z-[1] mb-12 flex flex-col items-center px-[8%] pt-10"
         >
           <nav
             class="pb-3"
@@ -25926,7 +26031,7 @@ exports[`Review > matches snapshot for slug 'fright-night-origins-by-tom-holland
             </picture>
           </div>
           <div
-            class="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+            class="mb-4 mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle tablet:mb-6"
           >
             <span
               class="tracking-wide"
@@ -25965,6 +26070,11 @@ exports[`Review > matches snapshot for slug 'fright-night-origins-by-tom-holland
                 width="248"
               />
             </div>
+          </div>
+          <div
+            class="relative mt-4 bg-default px-[1ch] font-sans text-xs uppercase tracking-wide text-subtle after:absolute after:left-[-11%] after:top-1/2 after:-z-10 after:w-[122%] after:border-t after:border-[var(--fg-subtle)] tablet:mt-6"
+          >
+            Reviewed Nov 6, 2023
           </div>
         </header>
         <div
@@ -27117,7 +27227,7 @@ exports[`Review > matches snapshot for slug 'ghost-story-by-peter-straub' 1`] = 
         id="content"
       >
         <header
-          class="mb-12 flex flex-col items-center px-[8%] pt-10"
+          class="relative z-[1] mb-12 flex flex-col items-center px-[8%] pt-10"
         >
           <nav
             class="pb-3"
@@ -27166,7 +27276,7 @@ exports[`Review > matches snapshot for slug 'ghost-story-by-peter-straub' 1`] = 
             </picture>
           </div>
           <div
-            class="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+            class="mb-4 mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle tablet:mb-6"
           >
             <span
               class="tracking-wide"
@@ -27205,6 +27315,11 @@ exports[`Review > matches snapshot for slug 'ghost-story-by-peter-straub' 1`] = 
                 width="248"
               />
             </div>
+          </div>
+          <div
+            class="relative mt-4 bg-default px-[1ch] font-sans text-xs uppercase tracking-wide text-subtle after:absolute after:left-[-11%] after:top-1/2 after:-z-10 after:w-[122%] after:border-t after:border-[var(--fg-subtle)] tablet:mt-6"
+          >
+            Reviewed Dec 1, 2024
           </div>
         </header>
         <div
@@ -28845,7 +28960,7 @@ exports[`Review > matches snapshot for slug 'goth-by-lol-tolhurst' 1`] = `
         id="content"
       >
         <header
-          class="mb-12 flex flex-col items-center px-[8%] pt-10"
+          class="relative z-[1] mb-12 flex flex-col items-center px-[8%] pt-10"
         >
           <nav
             class="pb-3"
@@ -28899,7 +29014,7 @@ exports[`Review > matches snapshot for slug 'goth-by-lol-tolhurst' 1`] = `
             </picture>
           </div>
           <div
-            class="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+            class="mb-4 mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle tablet:mb-6"
           >
             <span
               class="tracking-wide"
@@ -28938,6 +29053,11 @@ exports[`Review > matches snapshot for slug 'goth-by-lol-tolhurst' 1`] = `
                 width="248"
               />
             </div>
+          </div>
+          <div
+            class="relative mt-4 bg-default px-[1ch] font-sans text-xs uppercase tracking-wide text-subtle after:absolute after:left-[-11%] after:top-1/2 after:-z-10 after:w-[122%] after:border-t after:border-[var(--fg-subtle)] tablet:mt-6"
+          >
+            Reviewed Nov 8, 2024
           </div>
         </header>
         <div
@@ -29990,7 +30110,7 @@ exports[`Review > matches snapshot for slug 'gothic-by-philip-fracassi' 1`] = `
         id="content"
       >
         <header
-          class="mb-12 flex flex-col items-center px-[8%] pt-10"
+          class="relative z-[1] mb-12 flex flex-col items-center px-[8%] pt-10"
         >
           <nav
             class="pb-3"
@@ -30039,7 +30159,7 @@ exports[`Review > matches snapshot for slug 'gothic-by-philip-fracassi' 1`] = `
             </picture>
           </div>
           <div
-            class="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+            class="mb-4 mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle tablet:mb-6"
           >
             <span
               class="tracking-wide"
@@ -30078,6 +30198,11 @@ exports[`Review > matches snapshot for slug 'gothic-by-philip-fracassi' 1`] = `
                 width="248"
               />
             </div>
+          </div>
+          <div
+            class="relative mt-4 bg-default px-[1ch] font-sans text-xs uppercase tracking-wide text-subtle after:absolute after:left-[-11%] after:top-1/2 after:-z-10 after:w-[122%] after:border-t after:border-[var(--fg-subtle)] tablet:mt-6"
+          >
+            Reviewed Jun 30, 2024
           </div>
         </header>
         <div
@@ -31288,7 +31413,7 @@ exports[`Review > matches snapshot for slug 'hawk-mountain-by-conner-habib' 1`] 
         id="content"
       >
         <header
-          class="mb-12 flex flex-col items-center px-[8%] pt-10"
+          class="relative z-[1] mb-12 flex flex-col items-center px-[8%] pt-10"
         >
           <nav
             class="pb-3"
@@ -31337,7 +31462,7 @@ exports[`Review > matches snapshot for slug 'hawk-mountain-by-conner-habib' 1`] 
             </picture>
           </div>
           <div
-            class="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+            class="mb-4 mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle tablet:mb-6"
           >
             <span
               class="tracking-wide"
@@ -31376,6 +31501,11 @@ exports[`Review > matches snapshot for slug 'hawk-mountain-by-conner-habib' 1`] 
                 width="248"
               />
             </div>
+          </div>
+          <div
+            class="relative mt-4 bg-default px-[1ch] font-sans text-xs uppercase tracking-wide text-subtle after:absolute after:left-[-11%] after:top-1/2 after:-z-10 after:w-[122%] after:border-t after:border-[var(--fg-subtle)] tablet:mt-6"
+          >
+            Reviewed Sep 4, 2022
           </div>
         </header>
         <div
@@ -32831,7 +32961,7 @@ exports[`Review > matches snapshot for slug 'i-will-find-you-by-joe-kenda' 1`] =
         id="content"
       >
         <header
-          class="mb-12 flex flex-col items-center px-[8%] pt-10"
+          class="relative z-[1] mb-12 flex flex-col items-center px-[8%] pt-10"
         >
           <nav
             class="pb-3"
@@ -32885,7 +33015,7 @@ exports[`Review > matches snapshot for slug 'i-will-find-you-by-joe-kenda' 1`] =
             </picture>
           </div>
           <div
-            class="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+            class="mb-4 mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle tablet:mb-6"
           >
             <span
               class="tracking-wide"
@@ -32924,6 +33054,11 @@ exports[`Review > matches snapshot for slug 'i-will-find-you-by-joe-kenda' 1`] =
                 width="248"
               />
             </div>
+          </div>
+          <div
+            class="relative mt-4 bg-default px-[1ch] font-sans text-xs uppercase tracking-wide text-subtle after:absolute after:left-[-11%] after:top-1/2 after:-z-10 after:w-[122%] after:border-t after:border-[var(--fg-subtle)] tablet:mt-6"
+          >
+            Reviewed Sep 17, 2022
           </div>
         </header>
         <div
@@ -33962,7 +34097,7 @@ exports[`Review > matches snapshot for slug 'is-this-anything-by-jerry-seinfeld'
         id="content"
       >
         <header
-          class="mb-12 flex flex-col items-center px-[8%] pt-10"
+          class="relative z-[1] mb-12 flex flex-col items-center px-[8%] pt-10"
         >
           <nav
             class="pb-3"
@@ -34011,7 +34146,7 @@ exports[`Review > matches snapshot for slug 'is-this-anything-by-jerry-seinfeld'
             </picture>
           </div>
           <div
-            class="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+            class="mb-4 mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle tablet:mb-6"
           >
             <span
               class="tracking-wide"
@@ -34050,6 +34185,11 @@ exports[`Review > matches snapshot for slug 'is-this-anything-by-jerry-seinfeld'
                 width="248"
               />
             </div>
+          </div>
+          <div
+            class="relative mt-4 bg-default px-[1ch] font-sans text-xs uppercase tracking-wide text-subtle after:absolute after:left-[-11%] after:top-1/2 after:-z-10 after:w-[122%] after:border-t after:border-[var(--fg-subtle)] tablet:mt-6"
+          >
+            Reviewed Sep 10, 2022
           </div>
         </header>
         <div
@@ -35026,7 +35166,7 @@ exports[`Review > matches snapshot for slug 'less-than-zero-by-bret-easton-ellis
         id="content"
       >
         <header
-          class="mb-12 flex flex-col items-center px-[8%] pt-10"
+          class="relative z-[1] mb-12 flex flex-col items-center px-[8%] pt-10"
         >
           <nav
             class="pb-3"
@@ -35075,7 +35215,7 @@ exports[`Review > matches snapshot for slug 'less-than-zero-by-bret-easton-ellis
             </picture>
           </div>
           <div
-            class="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+            class="mb-4 mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle tablet:mb-6"
           >
             <span
               class="tracking-wide"
@@ -35114,6 +35254,11 @@ exports[`Review > matches snapshot for slug 'less-than-zero-by-bret-easton-ellis
                 width="248"
               />
             </div>
+          </div>
+          <div
+            class="relative mt-4 bg-default px-[1ch] font-sans text-xs uppercase tracking-wide text-subtle after:absolute after:left-[-11%] after:top-1/2 after:-z-10 after:w-[122%] after:border-t after:border-[var(--fg-subtle)] tablet:mt-6"
+          >
+            Reviewed Apr 2, 2022
           </div>
         </header>
         <div
@@ -36154,7 +36299,7 @@ exports[`Review > matches snapshot for slug 'live-and-let-die-by-ian-fleming' 1`
         id="content"
       >
         <header
-          class="mb-12 flex flex-col items-center px-[8%] pt-10"
+          class="relative z-[1] mb-12 flex flex-col items-center px-[8%] pt-10"
         >
           <nav
             class="pb-3"
@@ -36203,7 +36348,7 @@ exports[`Review > matches snapshot for slug 'live-and-let-die-by-ian-fleming' 1`
             </picture>
           </div>
           <div
-            class="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+            class="mb-4 mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle tablet:mb-6"
           >
             <span
               class="tracking-wide"
@@ -36242,6 +36387,11 @@ exports[`Review > matches snapshot for slug 'live-and-let-die-by-ian-fleming' 1`
                 width="248"
               />
             </div>
+          </div>
+          <div
+            class="relative mt-4 bg-default px-[1ch] font-sans text-xs uppercase tracking-wide text-subtle after:absolute after:left-[-11%] after:top-1/2 after:-z-10 after:w-[122%] after:border-t after:border-[var(--fg-subtle)] tablet:mt-6"
+          >
+            Reviewed Jun 30, 2022
           </div>
         </header>
         <div
@@ -37600,7 +37750,7 @@ exports[`Review > matches snapshot for slug 'living-with-a-seal-by-jesse-itzler'
         id="content"
       >
         <header
-          class="mb-12 flex flex-col items-center px-[8%] pt-10"
+          class="relative z-[1] mb-12 flex flex-col items-center px-[8%] pt-10"
         >
           <nav
             class="pb-3"
@@ -37647,7 +37797,7 @@ exports[`Review > matches snapshot for slug 'living-with-a-seal-by-jesse-itzler'
             </div>
           </div>
           <div
-            class="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+            class="mb-4 mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle tablet:mb-6"
           >
             <span
               class="tracking-wide"
@@ -37686,6 +37836,11 @@ exports[`Review > matches snapshot for slug 'living-with-a-seal-by-jesse-itzler'
                 width="248"
               />
             </div>
+          </div>
+          <div
+            class="relative mt-4 bg-default px-[1ch] font-sans text-xs uppercase tracking-wide text-subtle after:absolute after:left-[-11%] after:top-1/2 after:-z-10 after:w-[122%] after:border-t after:border-[var(--fg-subtle)] tablet:mt-6"
+          >
+            Reviewed Jun 1, 2022
           </div>
         </header>
         <div
@@ -38649,7 +38804,7 @@ exports[`Review > matches snapshot for slug 'mandala-by-philip-fracassi' 1`] = `
         id="content"
       >
         <header
-          class="mb-12 flex flex-col items-center px-[8%] pt-10"
+          class="relative z-[1] mb-12 flex flex-col items-center px-[8%] pt-10"
         >
           <nav
             class="pb-3"
@@ -38698,7 +38853,7 @@ exports[`Review > matches snapshot for slug 'mandala-by-philip-fracassi' 1`] = `
             </picture>
           </div>
           <div
-            class="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+            class="mb-4 mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle tablet:mb-6"
           >
             <span
               class="tracking-wide"
@@ -38737,6 +38892,11 @@ exports[`Review > matches snapshot for slug 'mandala-by-philip-fracassi' 1`] = `
                 width="248"
               />
             </div>
+          </div>
+          <div
+            class="relative mt-4 bg-default px-[1ch] font-sans text-xs uppercase tracking-wide text-subtle after:absolute after:left-[-11%] after:top-1/2 after:-z-10 after:w-[122%] after:border-t after:border-[var(--fg-subtle)] tablet:mt-6"
+          >
+            Reviewed May 7, 2022
           </div>
         </header>
         <div
@@ -39709,7 +39869,7 @@ exports[`Review > matches snapshot for slug 'moonraker-by-ian-fleming' 1`] = `
         id="content"
       >
         <header
-          class="mb-12 flex flex-col items-center px-[8%] pt-10"
+          class="relative z-[1] mb-12 flex flex-col items-center px-[8%] pt-10"
         >
           <nav
             class="pb-3"
@@ -39758,7 +39918,7 @@ exports[`Review > matches snapshot for slug 'moonraker-by-ian-fleming' 1`] = `
             </picture>
           </div>
           <div
-            class="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+            class="mb-4 mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle tablet:mb-6"
           >
             <span
               class="tracking-wide"
@@ -39797,6 +39957,11 @@ exports[`Review > matches snapshot for slug 'moonraker-by-ian-fleming' 1`] = `
                 width="248"
               />
             </div>
+          </div>
+          <div
+            class="relative mt-4 bg-default px-[1ch] font-sans text-xs uppercase tracking-wide text-subtle after:absolute after:left-[-11%] after:top-1/2 after:-z-10 after:w-[122%] after:border-t after:border-[var(--fg-subtle)] tablet:mt-6"
+          >
+            Reviewed Oct 16, 2022
           </div>
         </header>
         <div
@@ -40796,7 +40961,7 @@ exports[`Review > matches snapshot for slug 'mother-by-philip-fracassi' 1`] = `
         id="content"
       >
         <header
-          class="mb-12 flex flex-col items-center px-[8%] pt-10"
+          class="relative z-[1] mb-12 flex flex-col items-center px-[8%] pt-10"
         >
           <nav
             class="pb-3"
@@ -40845,7 +41010,7 @@ exports[`Review > matches snapshot for slug 'mother-by-philip-fracassi' 1`] = `
             </picture>
           </div>
           <div
-            class="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+            class="mb-4 mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle tablet:mb-6"
           >
             <span
               class="tracking-wide"
@@ -40884,6 +41049,11 @@ exports[`Review > matches snapshot for slug 'mother-by-philip-fracassi' 1`] = `
                 width="248"
               />
             </div>
+          </div>
+          <div
+            class="relative mt-4 bg-default px-[1ch] font-sans text-xs uppercase tracking-wide text-subtle after:absolute after:left-[-11%] after:top-1/2 after:-z-10 after:w-[122%] after:border-t after:border-[var(--fg-subtle)] tablet:mt-6"
+          >
+            Reviewed Apr 23, 2022
           </div>
         </header>
         <div
@@ -41754,7 +41924,7 @@ exports[`Review > matches snapshot for slug 'on-writing-by-stephen-king' 1`] = `
         id="content"
       >
         <header
-          class="mb-12 flex flex-col items-center px-[8%] pt-10"
+          class="relative z-[1] mb-12 flex flex-col items-center px-[8%] pt-10"
         >
           <nav
             class="pb-3"
@@ -41808,7 +41978,7 @@ exports[`Review > matches snapshot for slug 'on-writing-by-stephen-king' 1`] = `
             </picture>
           </div>
           <div
-            class="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+            class="mb-4 mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle tablet:mb-6"
           >
             <span
               class="tracking-wide"
@@ -41847,6 +42017,11 @@ exports[`Review > matches snapshot for slug 'on-writing-by-stephen-king' 1`] = `
                 width="248"
               />
             </div>
+          </div>
+          <div
+            class="relative mt-4 bg-default px-[1ch] font-sans text-xs uppercase tracking-wide text-subtle after:absolute after:left-[-11%] after:top-1/2 after:-z-10 after:w-[122%] after:border-t after:border-[var(--fg-subtle)] tablet:mt-6"
+          >
+            Reviewed Mar 21, 2022
           </div>
         </header>
         <div
@@ -42896,7 +43071,7 @@ exports[`Review > matches snapshot for slug 'out-are-the-lights-by-richard-laymo
         id="content"
       >
         <header
-          class="mb-12 flex flex-col items-center px-[8%] pt-10"
+          class="relative z-[1] mb-12 flex flex-col items-center px-[8%] pt-10"
         >
           <nav
             class="pb-3"
@@ -42945,7 +43120,7 @@ exports[`Review > matches snapshot for slug 'out-are-the-lights-by-richard-laymo
             </picture>
           </div>
           <div
-            class="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+            class="mb-4 mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle tablet:mb-6"
           >
             <span
               class="tracking-wide"
@@ -42984,6 +43159,11 @@ exports[`Review > matches snapshot for slug 'out-are-the-lights-by-richard-laymo
                 width="248"
               />
             </div>
+          </div>
+          <div
+            class="relative mt-4 bg-default px-[1ch] font-sans text-xs uppercase tracking-wide text-subtle after:absolute after:left-[-11%] after:top-1/2 after:-z-10 after:w-[122%] after:border-t after:border-[var(--fg-subtle)] tablet:mt-6"
+          >
+            Reviewed Oct 11, 2022
           </div>
         </header>
         <div
@@ -44198,7 +44378,7 @@ exports[`Review > matches snapshot for slug 'recessional-by-david-mamet' 1`] = `
         id="content"
       >
         <header
-          class="mb-12 flex flex-col items-center px-[8%] pt-10"
+          class="relative z-[1] mb-12 flex flex-col items-center px-[8%] pt-10"
         >
           <nav
             class="pb-3"
@@ -44252,7 +44432,7 @@ exports[`Review > matches snapshot for slug 'recessional-by-david-mamet' 1`] = `
             </picture>
           </div>
           <div
-            class="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+            class="mb-4 mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle tablet:mb-6"
           >
             <span
               class="tracking-wide"
@@ -44291,6 +44471,11 @@ exports[`Review > matches snapshot for slug 'recessional-by-david-mamet' 1`] = `
                 width="248"
               />
             </div>
+          </div>
+          <div
+            class="relative mt-4 bg-default px-[1ch] font-sans text-xs uppercase tracking-wide text-subtle after:absolute after:left-[-11%] after:top-1/2 after:-z-10 after:w-[122%] after:border-t after:border-[var(--fg-subtle)] tablet:mt-6"
+          >
+            Reviewed Aug 25, 2024
           </div>
         </header>
         <div
@@ -45521,7 +45706,7 @@ exports[`Review > matches snapshot for slug 'record-play-pause-by-stephen-morris
         id="content"
       >
         <header
-          class="mb-12 flex flex-col items-center px-[8%] pt-10"
+          class="relative z-[1] mb-12 flex flex-col items-center px-[8%] pt-10"
         >
           <nav
             class="pb-3"
@@ -45570,7 +45755,7 @@ exports[`Review > matches snapshot for slug 'record-play-pause-by-stephen-morris
             </picture>
           </div>
           <div
-            class="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+            class="mb-4 mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle tablet:mb-6"
           >
             <span
               class="tracking-wide"
@@ -45609,6 +45794,11 @@ exports[`Review > matches snapshot for slug 'record-play-pause-by-stephen-morris
                 width="248"
               />
             </div>
+          </div>
+          <div
+            class="relative mt-4 bg-default px-[1ch] font-sans text-xs uppercase tracking-wide text-subtle after:absolute after:left-[-11%] after:top-1/2 after:-z-10 after:w-[122%] after:border-t after:border-[var(--fg-subtle)] tablet:mt-6"
+          >
+            Reviewed Nov 11, 2023
           </div>
         </header>
         <div
@@ -46703,7 +46893,7 @@ exports[`Review > matches snapshot for slug 'roadside-pickup-by-richard-laymon' 
         id="content"
       >
         <header
-          class="mb-12 flex flex-col items-center px-[8%] pt-10"
+          class="relative z-[1] mb-12 flex flex-col items-center px-[8%] pt-10"
         >
           <nav
             class="pb-3"
@@ -46752,7 +46942,7 @@ exports[`Review > matches snapshot for slug 'roadside-pickup-by-richard-laymon' 
             </picture>
           </div>
           <div
-            class="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+            class="mb-4 mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle tablet:mb-6"
           >
             <span
               class="tracking-wide"
@@ -46791,6 +46981,11 @@ exports[`Review > matches snapshot for slug 'roadside-pickup-by-richard-laymon' 
                 width="248"
               />
             </div>
+          </div>
+          <div
+            class="relative mt-4 bg-default px-[1ch] font-sans text-xs uppercase tracking-wide text-subtle after:absolute after:left-[-11%] after:top-1/2 after:-z-10 after:w-[122%] after:border-t after:border-[var(--fg-subtle)] tablet:mt-6"
+          >
+            Reviewed Jan 21, 2023
           </div>
         </header>
         <div
@@ -47626,7 +47821,7 @@ exports[`Review > matches snapshot for slug 'sacculina-by-philip-fracassi' 1`] =
         id="content"
       >
         <header
-          class="mb-12 flex flex-col items-center px-[8%] pt-10"
+          class="relative z-[1] mb-12 flex flex-col items-center px-[8%] pt-10"
         >
           <nav
             class="pb-3"
@@ -47675,7 +47870,7 @@ exports[`Review > matches snapshot for slug 'sacculina-by-philip-fracassi' 1`] =
             </picture>
           </div>
           <div
-            class="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+            class="mb-4 mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle tablet:mb-6"
           >
             <span
               class="tracking-wide"
@@ -47714,6 +47909,11 @@ exports[`Review > matches snapshot for slug 'sacculina-by-philip-fracassi' 1`] =
                 width="248"
               />
             </div>
+          </div>
+          <div
+            class="relative mt-4 bg-default px-[1ch] font-sans text-xs uppercase tracking-wide text-subtle after:absolute after:left-[-11%] after:top-1/2 after:-z-10 after:w-[122%] after:border-t after:border-[var(--fg-subtle)] tablet:mt-6"
+          >
+            Reviewed Oct 9, 2023
           </div>
         </header>
         <div
@@ -48817,7 +49017,7 @@ exports[`Review > matches snapshot for slug 'salems-lot-by-stephen-king' 1`] = `
         id="content"
       >
         <header
-          class="mb-12 flex flex-col items-center px-[8%] pt-10"
+          class="relative z-[1] mb-12 flex flex-col items-center px-[8%] pt-10"
         >
           <nav
             class="pb-3"
@@ -48866,7 +49066,7 @@ exports[`Review > matches snapshot for slug 'salems-lot-by-stephen-king' 1`] = `
             </picture>
           </div>
           <div
-            class="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+            class="mb-4 mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle tablet:mb-6"
           >
             <span
               class="tracking-wide"
@@ -48905,6 +49105,11 @@ exports[`Review > matches snapshot for slug 'salems-lot-by-stephen-king' 1`] = `
                 width="248"
               />
             </div>
+          </div>
+          <div
+            class="relative mt-4 bg-default px-[1ch] font-sans text-xs uppercase tracking-wide text-subtle after:absolute after:left-[-11%] after:top-1/2 after:-z-10 after:w-[122%] after:border-t after:border-[var(--fg-subtle)] tablet:mt-6"
+          >
+            Reviewed Oct 14, 2022
           </div>
         </header>
         <div
@@ -50139,7 +50344,7 @@ exports[`Review > matches snapshot for slug 'set-the-boy-free-by-johnny-marr' 1`
         id="content"
       >
         <header
-          class="mb-12 flex flex-col items-center px-[8%] pt-10"
+          class="relative z-[1] mb-12 flex flex-col items-center px-[8%] pt-10"
         >
           <nav
             class="pb-3"
@@ -50193,7 +50398,7 @@ exports[`Review > matches snapshot for slug 'set-the-boy-free-by-johnny-marr' 1`
             </picture>
           </div>
           <div
-            class="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+            class="mb-4 mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle tablet:mb-6"
           >
             <span
               class="tracking-wide"
@@ -50232,6 +50437,11 @@ exports[`Review > matches snapshot for slug 'set-the-boy-free-by-johnny-marr' 1`
                 width="248"
               />
             </div>
+          </div>
+          <div
+            class="relative mt-4 bg-default px-[1ch] font-sans text-xs uppercase tracking-wide text-subtle after:absolute after:left-[-11%] after:top-1/2 after:-z-10 after:w-[122%] after:border-t after:border-[var(--fg-subtle)] tablet:mt-6"
+          >
+            Reviewed Jun 25, 2022
           </div>
         </header>
         <div
@@ -51226,7 +51436,7 @@ exports[`Review > matches snapshot for slug 'soft-construction-of-a-sunset-by-ph
         id="content"
       >
         <header
-          class="mb-12 flex flex-col items-center px-[8%] pt-10"
+          class="relative z-[1] mb-12 flex flex-col items-center px-[8%] pt-10"
         >
           <nav
             class="pb-3"
@@ -51275,7 +51485,7 @@ exports[`Review > matches snapshot for slug 'soft-construction-of-a-sunset-by-ph
             </picture>
           </div>
           <div
-            class="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+            class="mb-4 mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle tablet:mb-6"
           >
             <span
               class="tracking-wide"
@@ -51314,6 +51524,11 @@ exports[`Review > matches snapshot for slug 'soft-construction-of-a-sunset-by-ph
                 width="248"
               />
             </div>
+          </div>
+          <div
+            class="relative mt-4 bg-default px-[1ch] font-sans text-xs uppercase tracking-wide text-subtle after:absolute after:left-[-11%] after:top-1/2 after:-z-10 after:w-[122%] after:border-t after:border-[var(--fg-subtle)] tablet:mt-6"
+          >
+            Reviewed Apr 17, 2022
           </div>
         </header>
         <div
@@ -52155,7 +52370,7 @@ exports[`Review > matches snapshot for slug 'surfer-girl-by-philip-fracassi' 1`]
         id="content"
       >
         <header
-          class="mb-12 flex flex-col items-center px-[8%] pt-10"
+          class="relative z-[1] mb-12 flex flex-col items-center px-[8%] pt-10"
         >
           <nav
             class="pb-3"
@@ -52204,7 +52419,7 @@ exports[`Review > matches snapshot for slug 'surfer-girl-by-philip-fracassi' 1`]
             </picture>
           </div>
           <div
-            class="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+            class="mb-4 mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle tablet:mb-6"
           >
             <span
               class="tracking-wide"
@@ -52243,6 +52458,11 @@ exports[`Review > matches snapshot for slug 'surfer-girl-by-philip-fracassi' 1`]
                 width="248"
               />
             </div>
+          </div>
+          <div
+            class="relative mt-4 bg-default px-[1ch] font-sans text-xs uppercase tracking-wide text-subtle after:absolute after:left-[-11%] after:top-1/2 after:-z-10 after:w-[122%] after:border-t after:border-[var(--fg-subtle)] tablet:mt-6"
+          >
+            Reviewed Apr 22, 2022
           </div>
         </header>
         <div
@@ -53117,7 +53337,7 @@ exports[`Review > matches snapshot for slug 'the-48-laws-of-power-by-robert-gree
         id="content"
       >
         <header
-          class="mb-12 flex flex-col items-center px-[8%] pt-10"
+          class="relative z-[1] mb-12 flex flex-col items-center px-[8%] pt-10"
         >
           <nav
             class="pb-3"
@@ -53166,7 +53386,7 @@ exports[`Review > matches snapshot for slug 'the-48-laws-of-power-by-robert-gree
             </picture>
           </div>
           <div
-            class="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+            class="mb-4 mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle tablet:mb-6"
           >
             <span
               class="tracking-wide"
@@ -53205,6 +53425,11 @@ exports[`Review > matches snapshot for slug 'the-48-laws-of-power-by-robert-gree
                 width="248"
               />
             </div>
+          </div>
+          <div
+            class="relative mt-4 bg-default px-[1ch] font-sans text-xs uppercase tracking-wide text-subtle after:absolute after:left-[-11%] after:top-1/2 after:-z-10 after:w-[122%] after:border-t after:border-[var(--fg-subtle)] tablet:mt-6"
+          >
+            Reviewed Jul 15, 2022
           </div>
         </header>
         <div
@@ -54193,7 +54418,7 @@ exports[`Review > matches snapshot for slug 'the-baby-farmer-by-philip-fracassi'
         id="content"
       >
         <header
-          class="mb-12 flex flex-col items-center px-[8%] pt-10"
+          class="relative z-[1] mb-12 flex flex-col items-center px-[8%] pt-10"
         >
           <nav
             class="pb-3"
@@ -54242,7 +54467,7 @@ exports[`Review > matches snapshot for slug 'the-baby-farmer-by-philip-fracassi'
             </picture>
           </div>
           <div
-            class="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+            class="mb-4 mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle tablet:mb-6"
           >
             <span
               class="tracking-wide"
@@ -54281,6 +54506,11 @@ exports[`Review > matches snapshot for slug 'the-baby-farmer-by-philip-fracassi'
                 width="248"
               />
             </div>
+          </div>
+          <div
+            class="relative mt-4 bg-default px-[1ch] font-sans text-xs uppercase tracking-wide text-subtle after:absolute after:left-[-11%] after:top-1/2 after:-z-10 after:w-[122%] after:border-t after:border-[var(--fg-subtle)] tablet:mt-6"
+          >
+            Reviewed Apr 21, 2022
           </div>
         </header>
         <div
@@ -55158,7 +55388,7 @@ exports[`Review > matches snapshot for slug 'the-big-sleep-by-raymond-chandler' 
         id="content"
       >
         <header
-          class="mb-12 flex flex-col items-center px-[8%] pt-10"
+          class="relative z-[1] mb-12 flex flex-col items-center px-[8%] pt-10"
         >
           <nav
             class="pb-3"
@@ -55207,7 +55437,7 @@ exports[`Review > matches snapshot for slug 'the-big-sleep-by-raymond-chandler' 
             </picture>
           </div>
           <div
-            class="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+            class="mb-4 mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle tablet:mb-6"
           >
             <span
               class="tracking-wide"
@@ -55246,6 +55476,11 @@ exports[`Review > matches snapshot for slug 'the-big-sleep-by-raymond-chandler' 
                 width="248"
               />
             </div>
+          </div>
+          <div
+            class="relative mt-4 bg-default px-[1ch] font-sans text-xs uppercase tracking-wide text-subtle after:absolute after:left-[-11%] after:top-1/2 after:-z-10 after:w-[122%] after:border-t after:border-[var(--fg-subtle)] tablet:mt-6"
+          >
+            Reviewed Sep 24, 2022
           </div>
         </header>
         <div
@@ -56289,7 +56524,7 @@ exports[`Review > matches snapshot for slug 'the-cellar-by-richard-laymon' 1`] =
         id="content"
       >
         <header
-          class="mb-12 flex flex-col items-center px-[8%] pt-10"
+          class="relative z-[1] mb-12 flex flex-col items-center px-[8%] pt-10"
         >
           <nav
             class="pb-3"
@@ -56338,7 +56573,7 @@ exports[`Review > matches snapshot for slug 'the-cellar-by-richard-laymon' 1`] =
             </picture>
           </div>
           <div
-            class="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+            class="mb-4 mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle tablet:mb-6"
           >
             <span
               class="tracking-wide"
@@ -56377,6 +56612,11 @@ exports[`Review > matches snapshot for slug 'the-cellar-by-richard-laymon' 1`] =
                 width="248"
               />
             </div>
+          </div>
+          <div
+            class="relative mt-4 bg-default px-[1ch] font-sans text-xs uppercase tracking-wide text-subtle after:absolute after:left-[-11%] after:top-1/2 after:-z-10 after:w-[122%] after:border-t after:border-[var(--fg-subtle)] tablet:mt-6"
+          >
+            Reviewed Mar 16, 2022
           </div>
         </header>
         <div
@@ -57484,7 +57724,7 @@ exports[`Review > matches snapshot for slug 'the-cipher-by-kathe-koja' 1`] = `
         id="content"
       >
         <header
-          class="mb-12 flex flex-col items-center px-[8%] pt-10"
+          class="relative z-[1] mb-12 flex flex-col items-center px-[8%] pt-10"
         >
           <nav
             class="pb-3"
@@ -57533,7 +57773,7 @@ exports[`Review > matches snapshot for slug 'the-cipher-by-kathe-koja' 1`] = `
             </picture>
           </div>
           <div
-            class="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+            class="mb-4 mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle tablet:mb-6"
           >
             <span
               class="tracking-wide"
@@ -57572,6 +57812,11 @@ exports[`Review > matches snapshot for slug 'the-cipher-by-kathe-koja' 1`] = `
                 width="248"
               />
             </div>
+          </div>
+          <div
+            class="relative mt-4 bg-default px-[1ch] font-sans text-xs uppercase tracking-wide text-subtle after:absolute after:left-[-11%] after:top-1/2 after:-z-10 after:w-[122%] after:border-t after:border-[var(--fg-subtle)] tablet:mt-6"
+          >
+            Reviewed Jan 29, 2023
           </div>
         </header>
         <div
@@ -58892,7 +59137,7 @@ exports[`Review > matches snapshot for slug 'the-creative-act-by-rick-rubin' 1`]
         id="content"
       >
         <header
-          class="mb-12 flex flex-col items-center px-[8%] pt-10"
+          class="relative z-[1] mb-12 flex flex-col items-center px-[8%] pt-10"
         >
           <nav
             class="pb-3"
@@ -58946,7 +59191,7 @@ exports[`Review > matches snapshot for slug 'the-creative-act-by-rick-rubin' 1`]
             </picture>
           </div>
           <div
-            class="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+            class="mb-4 mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle tablet:mb-6"
           >
             <span
               class="tracking-wide"
@@ -58985,6 +59230,11 @@ exports[`Review > matches snapshot for slug 'the-creative-act-by-rick-rubin' 1`]
                 width="248"
               />
             </div>
+          </div>
+          <div
+            class="relative mt-4 bg-default px-[1ch] font-sans text-xs uppercase tracking-wide text-subtle after:absolute after:left-[-11%] after:top-1/2 after:-z-10 after:w-[122%] after:border-t after:border-[var(--fg-subtle)] tablet:mt-6"
+          >
+            Reviewed Oct 22, 2023
           </div>
         </header>
         <div
@@ -59946,7 +60196,7 @@ exports[`Review > matches snapshot for slug 'the-dark-tunnel-by-ross-macdonald' 
         id="content"
       >
         <header
-          class="mb-12 flex flex-col items-center px-[8%] pt-10"
+          class="relative z-[1] mb-12 flex flex-col items-center px-[8%] pt-10"
         >
           <nav
             class="pb-3"
@@ -60000,7 +60250,7 @@ exports[`Review > matches snapshot for slug 'the-dark-tunnel-by-ross-macdonald' 
             </picture>
           </div>
           <div
-            class="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+            class="mb-4 mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle tablet:mb-6"
           >
             <span
               class="tracking-wide"
@@ -60039,6 +60289,11 @@ exports[`Review > matches snapshot for slug 'the-dark-tunnel-by-ross-macdonald' 
                 width="248"
               />
             </div>
+          </div>
+          <div
+            class="relative mt-4 bg-default px-[1ch] font-sans text-xs uppercase tracking-wide text-subtle after:absolute after:left-[-11%] after:top-1/2 after:-z-10 after:w-[122%] after:border-t after:border-[var(--fg-subtle)] tablet:mt-6"
+          >
+            Reviewed Apr 17, 2022
           </div>
         </header>
         <div
@@ -61332,7 +61587,7 @@ exports[`Review > matches snapshot for slug 'the-horse-thief-by-philip-fracassi'
         id="content"
       >
         <header
-          class="mb-12 flex flex-col items-center px-[8%] pt-10"
+          class="relative z-[1] mb-12 flex flex-col items-center px-[8%] pt-10"
         >
           <nav
             class="pb-3"
@@ -61381,7 +61636,7 @@ exports[`Review > matches snapshot for slug 'the-horse-thief-by-philip-fracassi'
             </picture>
           </div>
           <div
-            class="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+            class="mb-4 mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle tablet:mb-6"
           >
             <span
               class="tracking-wide"
@@ -61420,6 +61675,11 @@ exports[`Review > matches snapshot for slug 'the-horse-thief-by-philip-fracassi'
                 width="248"
               />
             </div>
+          </div>
+          <div
+            class="relative mt-4 bg-default px-[1ch] font-sans text-xs uppercase tracking-wide text-subtle after:absolute after:left-[-11%] after:top-1/2 after:-z-10 after:w-[122%] after:border-t after:border-[var(--fg-subtle)] tablet:mt-6"
+          >
+            Reviewed Apr 19, 2022
           </div>
         </header>
         <div
@@ -62337,7 +62597,7 @@ exports[`Review > matches snapshot for slug 'the-max-muscle-plan-by-brad-schoenf
         id="content"
       >
         <header
-          class="mb-12 flex flex-col items-center px-[8%] pt-10"
+          class="relative z-[1] mb-12 flex flex-col items-center px-[8%] pt-10"
         >
           <nav
             class="pb-3"
@@ -62386,7 +62646,7 @@ exports[`Review > matches snapshot for slug 'the-max-muscle-plan-by-brad-schoenf
             </picture>
           </div>
           <div
-            class="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+            class="mb-4 mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle tablet:mb-6"
           >
             <span
               class="tracking-wide"
@@ -62425,6 +62685,11 @@ exports[`Review > matches snapshot for slug 'the-max-muscle-plan-by-brad-schoenf
                 width="248"
               />
             </div>
+          </div>
+          <div
+            class="relative mt-4 bg-default px-[1ch] font-sans text-xs uppercase tracking-wide text-subtle after:absolute after:left-[-11%] after:top-1/2 after:-z-10 after:w-[122%] after:border-t after:border-[var(--fg-subtle)] tablet:mt-6"
+          >
+            Reviewed Mar 18, 2022
           </div>
         </header>
         <div
@@ -63359,7 +63624,7 @@ exports[`Review > matches snapshot for slug 'the-postman-always-rings-twice-by-j
         id="content"
       >
         <header
-          class="mb-12 flex flex-col items-center px-[8%] pt-10"
+          class="relative z-[1] mb-12 flex flex-col items-center px-[8%] pt-10"
         >
           <nav
             class="pb-3"
@@ -63408,7 +63673,7 @@ exports[`Review > matches snapshot for slug 'the-postman-always-rings-twice-by-j
             </picture>
           </div>
           <div
-            class="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+            class="mb-4 mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle tablet:mb-6"
           >
             <span
               class="tracking-wide"
@@ -63447,6 +63712,11 @@ exports[`Review > matches snapshot for slug 'the-postman-always-rings-twice-by-j
                 width="248"
               />
             </div>
+          </div>
+          <div
+            class="relative mt-4 bg-default px-[1ch] font-sans text-xs uppercase tracking-wide text-subtle after:absolute after:left-[-11%] after:top-1/2 after:-z-10 after:w-[122%] after:border-t after:border-[var(--fg-subtle)] tablet:mt-6"
+          >
+            Reviewed Jul 24, 2022
           </div>
         </header>
         <div
@@ -64590,7 +64860,7 @@ exports[`Review > matches snapshot for slug 'the-rise-of-theodore-roosevelt-by-e
         id="content"
       >
         <header
-          class="mb-12 flex flex-col items-center px-[8%] pt-10"
+          class="relative z-[1] mb-12 flex flex-col items-center px-[8%] pt-10"
         >
           <nav
             class="pb-3"
@@ -64639,7 +64909,7 @@ exports[`Review > matches snapshot for slug 'the-rise-of-theodore-roosevelt-by-e
             </picture>
           </div>
           <div
-            class="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+            class="mb-4 mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle tablet:mb-6"
           >
             <span
               class="tracking-wide"
@@ -64678,6 +64948,11 @@ exports[`Review > matches snapshot for slug 'the-rise-of-theodore-roosevelt-by-e
                 width="248"
               />
             </div>
+          </div>
+          <div
+            class="relative mt-4 bg-default px-[1ch] font-sans text-xs uppercase tracking-wide text-subtle after:absolute after:left-[-11%] after:top-1/2 after:-z-10 after:w-[122%] after:border-t after:border-[var(--fg-subtle)] tablet:mt-6"
+          >
+            Reviewed May 7, 2022
           </div>
         </header>
         <div
@@ -65795,7 +66070,7 @@ exports[`Review > matches snapshot for slug 'the-rules-of-attraction-by-bret-eas
         id="content"
       >
         <header
-          class="mb-12 flex flex-col items-center px-[8%] pt-10"
+          class="relative z-[1] mb-12 flex flex-col items-center px-[8%] pt-10"
         >
           <nav
             class="pb-3"
@@ -65844,7 +66119,7 @@ exports[`Review > matches snapshot for slug 'the-rules-of-attraction-by-bret-eas
             </picture>
           </div>
           <div
-            class="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+            class="mb-4 mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle tablet:mb-6"
           >
             <span
               class="tracking-wide"
@@ -65883,6 +66158,11 @@ exports[`Review > matches snapshot for slug 'the-rules-of-attraction-by-bret-eas
                 width="248"
               />
             </div>
+          </div>
+          <div
+            class="relative mt-4 bg-default px-[1ch] font-sans text-xs uppercase tracking-wide text-subtle after:absolute after:left-[-11%] after:top-1/2 after:-z-10 after:w-[122%] after:border-t after:border-[var(--fg-subtle)] tablet:mt-6"
+          >
+            Reviewed Jul 14, 2022
           </div>
         </header>
         <div
@@ -67253,7 +67533,7 @@ exports[`Review > matches snapshot for slug 'the-secret-history-by-donna-tartt' 
         id="content"
       >
         <header
-          class="mb-12 flex flex-col items-center px-[8%] pt-10"
+          class="relative z-[1] mb-12 flex flex-col items-center px-[8%] pt-10"
         >
           <nav
             class="pb-3"
@@ -67302,7 +67582,7 @@ exports[`Review > matches snapshot for slug 'the-secret-history-by-donna-tartt' 
             </picture>
           </div>
           <div
-            class="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+            class="mb-4 mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle tablet:mb-6"
           >
             <span
               class="tracking-wide"
@@ -67341,6 +67621,11 @@ exports[`Review > matches snapshot for slug 'the-secret-history-by-donna-tartt' 
                 width="248"
               />
             </div>
+          </div>
+          <div
+            class="relative mt-4 bg-default px-[1ch] font-sans text-xs uppercase tracking-wide text-subtle after:absolute after:left-[-11%] after:top-1/2 after:-z-10 after:w-[122%] after:border-t after:border-[var(--fg-subtle)] tablet:mt-6"
+          >
+            Reviewed Jul 2, 2022
           </div>
         </header>
         <div
@@ -68391,7 +68676,7 @@ exports[`Review > matches snapshot for slug 'the-shining-by-stephen-king' 1`] = 
         id="content"
       >
         <header
-          class="mb-12 flex flex-col items-center px-[8%] pt-10"
+          class="relative z-[1] mb-12 flex flex-col items-center px-[8%] pt-10"
         >
           <nav
             class="pb-3"
@@ -68440,7 +68725,7 @@ exports[`Review > matches snapshot for slug 'the-shining-by-stephen-king' 1`] = 
             </picture>
           </div>
           <div
-            class="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+            class="mb-4 mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle tablet:mb-6"
           >
             <span
               class="tracking-wide"
@@ -68479,6 +68764,11 @@ exports[`Review > matches snapshot for slug 'the-shining-by-stephen-king' 1`] = 
                 width="248"
               />
             </div>
+          </div>
+          <div
+            class="relative mt-4 bg-default px-[1ch] font-sans text-xs uppercase tracking-wide text-subtle after:absolute after:left-[-11%] after:top-1/2 after:-z-10 after:w-[122%] after:border-t after:border-[var(--fg-subtle)] tablet:mt-6"
+          >
+            Reviewed Oct 29, 2022
           </div>
         </header>
         <div
@@ -69774,7 +70064,7 @@ exports[`Review > matches snapshot for slug 'the-skeptics-guide-to-the-universe-
         id="content"
       >
         <header
-          class="mb-12 flex flex-col items-center px-[8%] pt-10"
+          class="relative z-[1] mb-12 flex flex-col items-center px-[8%] pt-10"
         >
           <nav
             class="pb-3"
@@ -69828,7 +70118,7 @@ exports[`Review > matches snapshot for slug 'the-skeptics-guide-to-the-universe-
             </picture>
           </div>
           <div
-            class="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+            class="mb-4 mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle tablet:mb-6"
           >
             <span
               class="tracking-wide"
@@ -69867,6 +70157,11 @@ exports[`Review > matches snapshot for slug 'the-skeptics-guide-to-the-universe-
                 width="248"
               />
             </div>
+          </div>
+          <div
+            class="relative mt-4 bg-default px-[1ch] font-sans text-xs uppercase tracking-wide text-subtle after:absolute after:left-[-11%] after:top-1/2 after:-z-10 after:w-[122%] after:border-t after:border-[var(--fg-subtle)] tablet:mt-6"
+          >
+            Reviewed Oct 29, 2022
           </div>
         </header>
         <div
@@ -71102,7 +71397,7 @@ exports[`Review > matches snapshot for slug 'the-woods-are-dark-by-richard-laymo
         id="content"
       >
         <header
-          class="mb-12 flex flex-col items-center px-[8%] pt-10"
+          class="relative z-[1] mb-12 flex flex-col items-center px-[8%] pt-10"
         >
           <nav
             class="pb-3"
@@ -71151,7 +71446,7 @@ exports[`Review > matches snapshot for slug 'the-woods-are-dark-by-richard-laymo
             </picture>
           </div>
           <div
-            class="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+            class="mb-4 mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle tablet:mb-6"
           >
             <span
               class="tracking-wide"
@@ -71190,6 +71485,11 @@ exports[`Review > matches snapshot for slug 'the-woods-are-dark-by-richard-laymo
                 width="248"
               />
             </div>
+          </div>
+          <div
+            class="relative mt-4 bg-default px-[1ch] font-sans text-xs uppercase tracking-wide text-subtle after:absolute after:left-[-11%] after:top-1/2 after:-z-10 after:w-[122%] after:border-t after:border-[var(--fg-subtle)] tablet:mt-6"
+          >
+            Reviewed Sep 11, 2022
           </div>
         </header>
         <div
@@ -72218,7 +72518,7 @@ exports[`Review > matches snapshot for slug 'total-recall-by-arnold-schwarzenegg
         id="content"
       >
         <header
-          class="mb-12 flex flex-col items-center px-[8%] pt-10"
+          class="relative z-[1] mb-12 flex flex-col items-center px-[8%] pt-10"
         >
           <nav
             class="pb-3"
@@ -72272,7 +72572,7 @@ exports[`Review > matches snapshot for slug 'total-recall-by-arnold-schwarzenegg
             </picture>
           </div>
           <div
-            class="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+            class="mb-4 mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle tablet:mb-6"
           >
             <span
               class="tracking-wide"
@@ -72311,6 +72611,11 @@ exports[`Review > matches snapshot for slug 'total-recall-by-arnold-schwarzenegg
                 width="248"
               />
             </div>
+          </div>
+          <div
+            class="relative mt-4 bg-default px-[1ch] font-sans text-xs uppercase tracking-wide text-subtle after:absolute after:left-[-11%] after:top-1/2 after:-z-10 after:w-[122%] after:border-t after:border-[var(--fg-subtle)] tablet:mt-6"
+          >
+            Reviewed May 21, 2022
           </div>
         </header>
         <div
@@ -73334,7 +73639,7 @@ exports[`Review > matches snapshot for slug 'what-doesnt-kill-us-by-scott-carney
         id="content"
       >
         <header
-          class="mb-12 flex flex-col items-center px-[8%] pt-10"
+          class="relative z-[1] mb-12 flex flex-col items-center px-[8%] pt-10"
         >
           <nav
             class="pb-3"
@@ -73388,7 +73693,7 @@ exports[`Review > matches snapshot for slug 'what-doesnt-kill-us-by-scott-carney
             </picture>
           </div>
           <div
-            class="mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle"
+            class="mb-4 mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle tablet:mb-6"
           >
             <span
               class="tracking-wide"
@@ -73427,6 +73732,11 @@ exports[`Review > matches snapshot for slug 'what-doesnt-kill-us-by-scott-carney
                 width="248"
               />
             </div>
+          </div>
+          <div
+            class="relative mt-4 bg-default px-[1ch] font-sans text-xs uppercase tracking-wide text-subtle after:absolute after:left-[-11%] after:top-1/2 after:-z-10 after:w-[122%] after:border-t after:border-[var(--fg-subtle)] tablet:mt-6"
+          >
+            Reviewed Oct 4, 2022
           </div>
         </header>
         <div
