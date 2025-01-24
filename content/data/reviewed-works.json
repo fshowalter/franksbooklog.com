@@ -8667,7 +8667,7 @@
     "includedWorks": []
   },
   {
-    "sequence": "2022-10-29-2022-10-16-1",
+    "sequence": "2022-10-29-2011-11-04-1",
     "slug": "the-shining-by-stephen-king",
     "title": "The Shining",
     "subtitle": null,
@@ -8686,6 +8686,13 @@
       }
     ],
     "readings": [
+      {
+        "sequence": 1,
+        "date": "2011-11-06",
+        "isAudiobook": false,
+        "abandoned": false,
+        "readingTime": 3
+      },
       {
         "sequence": 1,
         "date": "2022-10-29",
