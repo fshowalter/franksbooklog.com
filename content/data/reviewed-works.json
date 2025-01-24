@@ -5132,15 +5132,18 @@
         ]
       },
       {
-        "title": "On Writing",
+        "title": "Mr. S",
         "kind": "Nonfiction",
-        "yearPublished": "2000",
-        "slug": "on-writing-by-stephen-king",
-        "grade": "A-",
+        "yearPublished": "2003",
+        "slug": "mr-s-by-george-jacobs-william-stadiem",
+        "grade": "B",
         "includedInSlugs": [],
         "authors": [
           {
-            "name": "Stephen King"
+            "name": "George Jacobs"
+          },
+          {
+            "name": "William Stadiem"
           }
         ]
       }
@@ -5236,6 +5239,22 @@
         ]
       },
       {
+        "title": "Mr. S",
+        "kind": "Nonfiction",
+        "yearPublished": "2003",
+        "slug": "mr-s-by-george-jacobs-william-stadiem",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "George Jacobs"
+          },
+          {
+            "name": "William Stadiem"
+          }
+        ]
+      },
+      {
         "title": "On Writing",
         "kind": "Nonfiction",
         "yearPublished": "2000",
@@ -5245,21 +5264,6 @@
         "authors": [
           {
             "name": "Stephen King"
-          }
-        ]
-      },
-      {
-        "title": "Out Are the Lights",
-        "kind": "Novel",
-        "yearPublished": "1982",
-        "slug": "out-are-the-lights-by-richard-laymon",
-        "grade": "C-",
-        "includedInSlugs": [
-          "out-are-the-lights-and-other-tales-by-richard-laymon"
-        ],
-        "authors": [
-          {
-            "name": "Richard Laymon"
           }
         ]
       }
@@ -5433,6 +5437,134 @@
         ]
       },
       {
+        "title": "Mr. S",
+        "kind": "Nonfiction",
+        "yearPublished": "2003",
+        "slug": "mr-s-by-george-jacobs-william-stadiem",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "George Jacobs"
+          },
+          {
+            "name": "William Stadiem"
+          }
+        ]
+      },
+      {
+        "title": "On Writing",
+        "kind": "Nonfiction",
+        "yearPublished": "2000",
+        "slug": "on-writing-by-stephen-king",
+        "grade": "A-",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Stephen King"
+          }
+        ]
+      },
+      {
+        "title": "Out Are the Lights",
+        "kind": "Novel",
+        "yearPublished": "1982",
+        "slug": "out-are-the-lights-by-richard-laymon",
+        "grade": "C-",
+        "includedInSlugs": [
+          "out-are-the-lights-and-other-tales-by-richard-laymon"
+        ],
+        "authors": [
+          {
+            "name": "Richard Laymon"
+          }
+        ]
+      }
+    ],
+    "includedWorks": []
+  },
+  {
+    "sequence": "2012-06-14-2012-06-05-1",
+    "slug": "mr-s-by-george-jacobs-william-stadiem",
+    "title": "Mr. S",
+    "subtitle": "My Life with Frank Sinatra",
+    "sortTitle": "Mr. S: My Life with Frank Sinatra",
+    "yearPublished": "2003",
+    "grade": "B",
+    "gradeValue": 9,
+    "kind": "Nonfiction",
+    "date": "2012-06-14",
+    "authors": [
+      {
+        "slug": "george-jacobs",
+        "notes": null,
+        "name": "George Jacobs",
+        "sortName": "Jacobs, George"
+      },
+      {
+        "slug": "william-stadiem",
+        "notes": null,
+        "name": "William Stadiem",
+        "sortName": "Stadiem, William"
+      }
+    ],
+    "readings": [
+      {
+        "sequence": 1,
+        "date": "2012-06-14",
+        "isAudiobook": false,
+        "abandoned": false,
+        "readingTime": 10
+      }
+    ],
+    "includedInSlugs": [],
+    "yearReviewed": 2012,
+    "moreByAuthors": [],
+    "moreReviews": [
+      {
+        "title": "Mandala",
+        "kind": "Novella",
+        "yearPublished": "2017",
+        "slug": "mandala-by-philip-fracassi",
+        "grade": "B+",
+        "includedInSlugs": [
+          "behold-the-void-by-philip-fracassi"
+        ],
+        "authors": [
+          {
+            "name": "Philip Fracassi"
+          }
+        ]
+      },
+      {
+        "title": "Moonraker",
+        "kind": "Novel",
+        "yearPublished": "1955",
+        "slug": "moonraker-by-ian-fleming",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Ian Fleming"
+          }
+        ]
+      },
+      {
+        "title": "Mother",
+        "kind": "Short Story",
+        "yearPublished": "2015",
+        "slug": "mother-by-philip-fracassi",
+        "grade": "B-",
+        "includedInSlugs": [
+          "behold-the-void-by-philip-fracassi"
+        ],
+        "authors": [
+          {
+            "name": "Philip Fracassi"
+          }
+        ]
+      },
+      {
         "title": "On Writing",
         "kind": "Nonfiction",
         "yearPublished": "2000",
@@ -5594,21 +5726,6 @@
     ],
     "moreReviews": [
       {
-        "title": "Mandala",
-        "kind": "Novella",
-        "yearPublished": "2017",
-        "slug": "mandala-by-philip-fracassi",
-        "grade": "B+",
-        "includedInSlugs": [
-          "behold-the-void-by-philip-fracassi"
-        ],
-        "authors": [
-          {
-            "name": "Philip Fracassi"
-          }
-        ]
-      },
-      {
         "title": "Moonraker",
         "kind": "Novel",
         "yearPublished": "1955",
@@ -5633,6 +5750,22 @@
         "authors": [
           {
             "name": "Philip Fracassi"
+          }
+        ]
+      },
+      {
+        "title": "Mr. S",
+        "kind": "Nonfiction",
+        "yearPublished": "2003",
+        "slug": "mr-s-by-george-jacobs-william-stadiem",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "George Jacobs"
+          },
+          {
+            "name": "William Stadiem"
           }
         ]
       },
@@ -5806,19 +5939,6 @@
     ],
     "moreReviews": [
       {
-        "title": "Moonraker",
-        "kind": "Novel",
-        "yearPublished": "1955",
-        "slug": "moonraker-by-ian-fleming",
-        "grade": "B",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Ian Fleming"
-          }
-        ]
-      },
-      {
         "title": "Mother",
         "kind": "Short Story",
         "yearPublished": "2015",
@@ -5830,6 +5950,22 @@
         "authors": [
           {
             "name": "Philip Fracassi"
+          }
+        ]
+      },
+      {
+        "title": "Mr. S",
+        "kind": "Nonfiction",
+        "yearPublished": "2003",
+        "slug": "mr-s-by-george-jacobs-william-stadiem",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "George Jacobs"
+          },
+          {
+            "name": "William Stadiem"
           }
         ]
       },
@@ -8463,17 +8599,18 @@
     "moreByAuthors": [],
     "moreReviews": [
       {
-        "title": "Mother",
-        "kind": "Short Story",
-        "yearPublished": "2015",
-        "slug": "mother-by-philip-fracassi",
-        "grade": "B-",
-        "includedInSlugs": [
-          "behold-the-void-by-philip-fracassi"
-        ],
+        "title": "Mr. S",
+        "kind": "Nonfiction",
+        "yearPublished": "2003",
+        "slug": "mr-s-by-george-jacobs-william-stadiem",
+        "grade": "B",
+        "includedInSlugs": [],
         "authors": [
           {
-            "name": "Philip Fracassi"
+            "name": "George Jacobs"
+          },
+          {
+            "name": "William Stadiem"
           }
         ]
       },

@@ -1,0 +1,35 @@
+{
+  "name": "George Jacobs",
+  "sortName": "Jacobs, George",
+  "slug": "george-jacobs",
+  "works": [
+    {
+      "title": "Mr. S",
+      "yearPublished": "2003",
+      "kind": "Nonfiction",
+      "slug": "mr-s-by-george-jacobs-william-stadiem",
+      "sortTitle": "Mr. S: My Life with Frank Sinatra",
+      "reviewed": true,
+      "grade": "B",
+      "gradeValue": 9,
+      "authors": [
+        {
+          "slug": "george-jacobs",
+          "notes": null,
+          "name": "George Jacobs",
+          "sortName": "Jacobs, George"
+        },
+        {
+          "slug": "william-stadiem",
+          "notes": null,
+          "name": "William Stadiem",
+          "sortName": "Stadiem, William"
+        }
+      ],
+      "includedInSlugs": []
+    }
+  ],
+  "reviewedWorkCount": 1,
+  "workCount": 1,
+  "shelfWorkCount": 0
+}
