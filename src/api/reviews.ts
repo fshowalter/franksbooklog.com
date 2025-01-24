@@ -93,30 +93,35 @@ export async function loadContent(review: Review): Promise<ReviewWithContent> {
     .processSync(review.rawContent)
     .toString();
 
-  const readings = review.readings.map((reading) => {
-    const markdownReading = readingsMarkdown.find((markdownReading) => {
-      return (
-        markdownReading.sequence === reading.sequence &&
-        +markdownReading.timeline.at(-1)!.date === +reading.date
-      );
-    })!;
+  const readings = review.readings
+    .map((reading) => {
+      const markdownReading = readingsMarkdown.find((markdownReading) => {
+        return (
+          markdownReading.sequence === reading.sequence &&
+          +markdownReading.timeline.at(-1)!.date === +reading.date
+        );
+      })!;
 
-    if (!markdownReading) {
-      throw new Error(
-        `No markdown readings found with last date ${reading.date.toISOString()} and sequence ${reading.sequence}`,
-      );
-    }
+      if (!markdownReading) {
+        throw new Error(
+          `No markdown readings found with last date ${reading.date.toISOString()} and sequence ${reading.sequence}`,
+        );
+      }
 
-    return {
-      ...reading,
-      ...markdownReading,
-      editionNotes: getHtmlAsSpan(
-        markdownReading.editionNotesRaw,
-        reviewedWorksJson,
-      ),
-      readingNotes: getHtml(markdownReading.readingNotesRaw, reviewedWorksJson),
-    };
-  });
+      return {
+        ...reading,
+        ...markdownReading,
+        editionNotes: getHtmlAsSpan(
+          markdownReading.editionNotesRaw,
+          reviewedWorksJson,
+        ),
+        readingNotes: getHtml(
+          markdownReading.readingNotesRaw,
+          reviewedWorksJson,
+        ),
+      };
+    })
+    .reverse();
 
   return {
     ...review,

@@ -1,7 +1,7 @@
 {
   "reviewCount": 63,
-  "workCount": 64,
-  "bookCount": 52,
+  "workCount": 65,
+  "bookCount": 53,
   "gradeDistribution": [
     {
       "name": "A",
@@ -75,7 +75,7 @@
     },
     {
       "name": "Novel",
-      "count": 26
+      "count": 27
     },
     {
       "name": "Novella",
@@ -97,7 +97,7 @@
     },
     {
       "name": "Paperback",
-      "count": 1
+      "count": 2
     }
   ],
   "decadeDistribution": [
@@ -119,7 +119,7 @@
     },
     {
       "name": "1970s",
-      "count": 7
+      "count": 8
     },
     {
       "name": "1980s",
@@ -313,7 +313,7 @@
     },
     {
       "name": "Stephen King",
-      "count": 5,
+      "count": 6,
       "slug": "stephen-king",
       "readings": [
         {
@@ -346,6 +346,17 @@
           "kind": "Novel",
           "title": "Carrie",
           "yearPublished": "1974",
+          "includedInSlugs": [],
+          "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2011-11-06",
+          "slug": "the-shining-by-stephen-king",
+          "edition": "Paperback",
+          "kind": "Novel",
+          "title": "The Shining",
+          "yearPublished": "1977",
           "includedInSlugs": [],
           "reviewed": true
         },
