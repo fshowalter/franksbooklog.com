@@ -1474,6 +1474,62 @@ exports[`Reviews > can filter by kind 1`] = `
             </div>
           </div>
         </li>
+        <li
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="w-list-item-cover shrink-0"
+          >
+            <img
+              alt=""
+              class="aspect-cover"
+              decoding="async"
+              height="113"
+              loading="lazy"
+              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+              width="80"
+            />
+          </div>
+          <div
+            class="flex grow flex-col items-start tablet:w-full tablet:pr-4"
+          >
+            <a
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              href="/reviews/ghost-story-by-peter-straub/"
+            >
+              Ghost Story
+            </a>
+            <div
+              class="font-sans text-xs leading-4 text-muted tablet:mt-1"
+            >
+              Peter Straub
+            </div>
+            <picture>
+              <source
+                media="(prefers-color-scheme: dark)"
+                srcset="/svg/4-stars-dark.svg"
+              />
+              <img
+                alt="B: 4 stars (out of 5)"
+                class="mb-3 mt-2"
+                height="16"
+                src="/svg/4-stars.svg"
+                width="80"
+              />
+            </picture>
+            <div
+              class="font-sans text-xs font-light leading-4 text-subtle"
+            >
+              <span>
+                Novel
+                 | 
+              </span>
+              1979
+            </div>
+          </div>
+        </li>
       </ol>
     </div>
   </li>
@@ -5028,6 +5084,62 @@ exports[`Reviews > can filter by kind then show all 1`] = `
             </div>
           </div>
         </li>
+        <li
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="w-list-item-cover shrink-0"
+          >
+            <img
+              alt=""
+              class="aspect-cover"
+              decoding="async"
+              height="113"
+              loading="lazy"
+              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+              width="80"
+            />
+          </div>
+          <div
+            class="flex grow flex-col items-start tablet:w-full tablet:pr-4"
+          >
+            <a
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              href="/reviews/ghost-story-by-peter-straub/"
+            >
+              Ghost Story
+            </a>
+            <div
+              class="font-sans text-xs leading-4 text-muted tablet:mt-1"
+            >
+              Peter Straub
+            </div>
+            <picture>
+              <source
+                media="(prefers-color-scheme: dark)"
+                srcset="/svg/4-stars-dark.svg"
+              />
+              <img
+                alt="B: 4 stars (out of 5)"
+                class="mb-3 mt-2"
+                height="16"
+                src="/svg/4-stars.svg"
+                width="80"
+              />
+            </picture>
+            <div
+              class="font-sans text-xs font-light leading-4 text-subtle"
+            >
+              <span>
+                Novel
+                 | 
+              </span>
+              1979
+            </div>
+          </div>
+        </li>
       </ol>
     </div>
   </li>
@@ -5157,6 +5269,62 @@ exports[`Reviews > can filter by kind then show all 1`] = `
                  | 
               </span>
               2016
+            </div>
+          </div>
+        </li>
+        <li
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="w-list-item-cover shrink-0"
+          >
+            <img
+              alt=""
+              class="aspect-cover"
+              decoding="async"
+              height="113"
+              loading="lazy"
+              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+              width="80"
+            />
+          </div>
+          <div
+            class="flex grow flex-col items-start tablet:w-full tablet:pr-4"
+          >
+            <a
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              href="/reviews/goth-by-lol-tolhurst/"
+            >
+              Goth
+            </a>
+            <div
+              class="font-sans text-xs leading-4 text-muted tablet:mt-1"
+            >
+              Lol Tolhurst
+            </div>
+            <picture>
+              <source
+                media="(prefers-color-scheme: dark)"
+                srcset="/svg/3-stars-dark.svg"
+              />
+              <img
+                alt="C: 3 stars (out of 5)"
+                class="mb-3 mt-2"
+                height="16"
+                src="/svg/3-stars.svg"
+                width="80"
+              />
+            </picture>
+            <div
+              class="font-sans text-xs font-light leading-4 text-subtle"
+            >
+              <span>
+                Nonfiction
+                 | 
+              </span>
+              2023
             </div>
           </div>
         </li>
@@ -6779,6 +6947,62 @@ exports[`Reviews > can filter by year published reversed 1`] = `
                  | 
               </span>
               1985
+            </div>
+          </div>
+        </li>
+        <li
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="w-list-item-cover shrink-0"
+          >
+            <img
+              alt=""
+              class="aspect-cover"
+              decoding="async"
+              height="113"
+              loading="lazy"
+              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+              width="80"
+            />
+          </div>
+          <div
+            class="flex grow flex-col items-start tablet:w-full tablet:pr-4"
+          >
+            <a
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              href="/reviews/ghost-story-by-peter-straub/"
+            >
+              Ghost Story
+            </a>
+            <div
+              class="font-sans text-xs leading-4 text-muted tablet:mt-1"
+            >
+              Peter Straub
+            </div>
+            <picture>
+              <source
+                media="(prefers-color-scheme: dark)"
+                srcset="/svg/4-stars-dark.svg"
+              />
+              <img
+                alt="B: 4 stars (out of 5)"
+                class="mb-3 mt-2"
+                height="16"
+                src="/svg/4-stars.svg"
+                width="80"
+              />
+            </picture>
+            <div
+              class="font-sans text-xs font-light leading-4 text-subtle"
+            >
+              <span>
+                Novel
+                 | 
+              </span>
+              1979
             </div>
           </div>
         </li>
@@ -13057,6 +13281,62 @@ exports[`Reviews > can sort by author z->a 1`] = `
               height="113"
               loading="lazy"
               sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+              width="80"
+            />
+          </div>
+          <div
+            class="flex grow flex-col items-start tablet:w-full tablet:pr-4"
+          >
+            <a
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              href="/reviews/goth-by-lol-tolhurst/"
+            >
+              Goth
+            </a>
+            <div
+              class="font-sans text-xs leading-4 text-muted tablet:mt-1"
+            >
+              Lol Tolhurst
+            </div>
+            <picture>
+              <source
+                media="(prefers-color-scheme: dark)"
+                srcset="/svg/3-stars-dark.svg"
+              />
+              <img
+                alt="C: 3 stars (out of 5)"
+                class="mb-3 mt-2"
+                height="16"
+                src="/svg/3-stars.svg"
+                width="80"
+              />
+            </picture>
+            <div
+              class="font-sans text-xs font-light leading-4 text-subtle"
+            >
+              <span>
+                Nonfiction
+                 | 
+              </span>
+              2023
+            </div>
+          </div>
+        </li>
+        <li
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="w-list-item-cover shrink-0"
+          >
+            <img
+              alt=""
+              class="aspect-cover"
+              decoding="async"
+              height="113"
+              loading="lazy"
+              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
               src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-secret-history-by-donna-tartt.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
               srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-secret-history-by-donna-tartt.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-secret-history-by-donna-tartt.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-secret-history-by-donna-tartt.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-secret-history-by-donna-tartt.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
               width="80"
@@ -13120,6 +13400,62 @@ exports[`Reviews > can sort by author z->a 1`] = `
       class="bg-subtle"
     >
       <ol>
+        <li
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="w-list-item-cover shrink-0"
+          >
+            <img
+              alt=""
+              class="aspect-cover"
+              decoding="async"
+              height="113"
+              loading="lazy"
+              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+              width="80"
+            />
+          </div>
+          <div
+            class="flex grow flex-col items-start tablet:w-full tablet:pr-4"
+          >
+            <a
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              href="/reviews/ghost-story-by-peter-straub/"
+            >
+              Ghost Story
+            </a>
+            <div
+              class="font-sans text-xs leading-4 text-muted tablet:mt-1"
+            >
+              Peter Straub
+            </div>
+            <picture>
+              <source
+                media="(prefers-color-scheme: dark)"
+                srcset="/svg/4-stars-dark.svg"
+              />
+              <img
+                alt="B: 4 stars (out of 5)"
+                class="mb-3 mt-2"
+                height="16"
+                src="/svg/4-stars.svg"
+                width="80"
+              />
+            </picture>
+            <div
+              class="font-sans text-xs font-light leading-4 text-subtle"
+            >
+              <span>
+                Novel
+                 | 
+              </span>
+              1979
+            </div>
+          </div>
+        </li>
         <li
           class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
         >
@@ -16591,6 +16927,158 @@ exports[`Reviews > can sort by date reviewed with newest first 1`] = `
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
       >
+        December 2024
+      </div>
+    </div>
+    <div
+      class="bg-subtle"
+    >
+      <ol>
+        <li
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="w-list-item-cover shrink-0"
+          >
+            <img
+              alt=""
+              class="aspect-cover"
+              decoding="async"
+              height="113"
+              loading="lazy"
+              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+              width="80"
+            />
+          </div>
+          <div
+            class="flex grow flex-col items-start tablet:w-full tablet:pr-4"
+          >
+            <a
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              href="/reviews/ghost-story-by-peter-straub/"
+            >
+              Ghost Story
+            </a>
+            <div
+              class="font-sans text-xs leading-4 text-muted tablet:mt-1"
+            >
+              Peter Straub
+            </div>
+            <picture>
+              <source
+                media="(prefers-color-scheme: dark)"
+                srcset="/svg/4-stars-dark.svg"
+              />
+              <img
+                alt="B: 4 stars (out of 5)"
+                class="mb-3 mt-2"
+                height="16"
+                src="/svg/4-stars.svg"
+                width="80"
+              />
+            </picture>
+            <div
+              class="font-sans text-xs font-light leading-4 text-subtle"
+            >
+              <span>
+                Novel
+                 | 
+              </span>
+              1979
+            </div>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </li>
+  <li
+    class="block"
+  >
+    <div
+      class="pt-0 text-md"
+      style="z-index: 2;"
+    >
+      <div
+        class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+      >
+        November 2024
+      </div>
+    </div>
+    <div
+      class="bg-subtle"
+    >
+      <ol>
+        <li
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="w-list-item-cover shrink-0"
+          >
+            <img
+              alt=""
+              class="aspect-cover"
+              decoding="async"
+              height="113"
+              loading="lazy"
+              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+              width="80"
+            />
+          </div>
+          <div
+            class="flex grow flex-col items-start tablet:w-full tablet:pr-4"
+          >
+            <a
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              href="/reviews/goth-by-lol-tolhurst/"
+            >
+              Goth
+            </a>
+            <div
+              class="font-sans text-xs leading-4 text-muted tablet:mt-1"
+            >
+              Lol Tolhurst
+            </div>
+            <picture>
+              <source
+                media="(prefers-color-scheme: dark)"
+                srcset="/svg/3-stars-dark.svg"
+              />
+              <img
+                alt="C: 3 stars (out of 5)"
+                class="mb-3 mt-2"
+                height="16"
+                src="/svg/3-stars.svg"
+                width="80"
+              />
+            </picture>
+            <div
+              class="font-sans text-xs font-light leading-4 text-subtle"
+            >
+              <span>
+                Nonfiction
+                 | 
+              </span>
+              2023
+            </div>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </li>
+  <li
+    class="block"
+  >
+    <div
+      class="pt-0 text-md"
+      style="z-index: 3;"
+    >
+      <div
+        class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+      >
         August 2024
       </div>
     </div>
@@ -16662,7 +17150,7 @@ exports[`Reviews > can sort by date reviewed with newest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 2;"
+      style="z-index: 4;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -16738,7 +17226,7 @@ exports[`Reviews > can sort by date reviewed with newest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 3;"
+      style="z-index: 5;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -16814,7 +17302,7 @@ exports[`Reviews > can sort by date reviewed with newest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 4;"
+      style="z-index: 6;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -16948,7 +17436,7 @@ exports[`Reviews > can sort by date reviewed with newest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 5;"
+      style="z-index: 7;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -17136,7 +17624,7 @@ exports[`Reviews > can sort by date reviewed with newest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 6;"
+      style="z-index: 8;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -17382,7 +17870,7 @@ exports[`Reviews > can sort by date reviewed with newest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 7;"
+      style="z-index: 9;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -17794,7 +18282,7 @@ exports[`Reviews > can sort by date reviewed with newest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 8;"
+      style="z-index: 10;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -18320,7 +18808,7 @@ exports[`Reviews > can sort by date reviewed with newest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 9;"
+      style="z-index: 11;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -18732,7 +19220,7 @@ exports[`Reviews > can sort by date reviewed with newest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 10;"
+      style="z-index: 12;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -19082,7 +19570,7 @@ exports[`Reviews > can sort by date reviewed with newest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 11;"
+      style="z-index: 13;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -19326,7 +19814,7 @@ exports[`Reviews > can sort by date reviewed with newest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 12;"
+      style="z-index: 14;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -19962,7 +20450,7 @@ exports[`Reviews > can sort by date reviewed with newest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 13;"
+      style="z-index: 15;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -23829,6 +24317,158 @@ exports[`Reviews > can sort by date reviewed with oldest first 1`] = `
       </ol>
     </div>
   </li>
+  <li
+    class="block"
+  >
+    <div
+      class="pt-0 text-md"
+      style="z-index: 14;"
+    >
+      <div
+        class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+      >
+        November 2024
+      </div>
+    </div>
+    <div
+      class="bg-subtle"
+    >
+      <ol>
+        <li
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="w-list-item-cover shrink-0"
+          >
+            <img
+              alt=""
+              class="aspect-cover"
+              decoding="async"
+              height="113"
+              loading="lazy"
+              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+              width="80"
+            />
+          </div>
+          <div
+            class="flex grow flex-col items-start tablet:w-full tablet:pr-4"
+          >
+            <a
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              href="/reviews/goth-by-lol-tolhurst/"
+            >
+              Goth
+            </a>
+            <div
+              class="font-sans text-xs leading-4 text-muted tablet:mt-1"
+            >
+              Lol Tolhurst
+            </div>
+            <picture>
+              <source
+                media="(prefers-color-scheme: dark)"
+                srcset="/svg/3-stars-dark.svg"
+              />
+              <img
+                alt="C: 3 stars (out of 5)"
+                class="mb-3 mt-2"
+                height="16"
+                src="/svg/3-stars.svg"
+                width="80"
+              />
+            </picture>
+            <div
+              class="font-sans text-xs font-light leading-4 text-subtle"
+            >
+              <span>
+                Nonfiction
+                 | 
+              </span>
+              2023
+            </div>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </li>
+  <li
+    class="block"
+  >
+    <div
+      class="pt-0 text-md"
+      style="z-index: 15;"
+    >
+      <div
+        class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+      >
+        December 2024
+      </div>
+    </div>
+    <div
+      class="bg-subtle"
+    >
+      <ol>
+        <li
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="w-list-item-cover shrink-0"
+          >
+            <img
+              alt=""
+              class="aspect-cover"
+              decoding="async"
+              height="113"
+              loading="lazy"
+              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+              width="80"
+            />
+          </div>
+          <div
+            class="flex grow flex-col items-start tablet:w-full tablet:pr-4"
+          >
+            <a
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              href="/reviews/ghost-story-by-peter-straub/"
+            >
+              Ghost Story
+            </a>
+            <div
+              class="font-sans text-xs leading-4 text-muted tablet:mt-1"
+            >
+              Peter Straub
+            </div>
+            <picture>
+              <source
+                media="(prefers-color-scheme: dark)"
+                srcset="/svg/4-stars-dark.svg"
+              />
+              <img
+                alt="B: 4 stars (out of 5)"
+                class="mb-3 mt-2"
+                height="16"
+                src="/svg/4-stars.svg"
+                width="80"
+              />
+            </picture>
+            <div
+              class="font-sans text-xs font-light leading-4 text-subtle"
+            >
+              <span>
+                Novel
+                 | 
+              </span>
+              1979
+            </div>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </li>
 </ol>
 `;
 
@@ -25275,6 +25915,62 @@ exports[`Reviews > can sort by grade with best first 1`] = `
               height="113"
               loading="lazy"
               sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+              width="80"
+            />
+          </div>
+          <div
+            class="flex grow flex-col items-start tablet:w-full tablet:pr-4"
+          >
+            <a
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              href="/reviews/ghost-story-by-peter-straub/"
+            >
+              Ghost Story
+            </a>
+            <div
+              class="font-sans text-xs leading-4 text-muted tablet:mt-1"
+            >
+              Peter Straub
+            </div>
+            <picture>
+              <source
+                media="(prefers-color-scheme: dark)"
+                srcset="/svg/4-stars-dark.svg"
+              />
+              <img
+                alt="B: 4 stars (out of 5)"
+                class="mb-3 mt-2"
+                height="16"
+                src="/svg/4-stars.svg"
+                width="80"
+              />
+            </picture>
+            <div
+              class="font-sans text-xs font-light leading-4 text-subtle"
+            >
+              <span>
+                Novel
+                 | 
+              </span>
+              1979
+            </div>
+          </div>
+        </li>
+        <li
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="w-list-item-cover shrink-0"
+          >
+            <img
+              alt=""
+              class="aspect-cover"
+              decoding="async"
+              height="113"
+              loading="lazy"
+              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
               src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-shining-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
               srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-shining-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-shining-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-shining-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-shining-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
               width="80"
@@ -26500,6 +27196,62 @@ exports[`Reviews > can sort by grade with best first 1`] = `
       class="bg-subtle"
     >
       <ol>
+        <li
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="w-list-item-cover shrink-0"
+          >
+            <img
+              alt=""
+              class="aspect-cover"
+              decoding="async"
+              height="113"
+              loading="lazy"
+              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+              width="80"
+            />
+          </div>
+          <div
+            class="flex grow flex-col items-start tablet:w-full tablet:pr-4"
+          >
+            <a
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              href="/reviews/goth-by-lol-tolhurst/"
+            >
+              Goth
+            </a>
+            <div
+              class="font-sans text-xs leading-4 text-muted tablet:mt-1"
+            >
+              Lol Tolhurst
+            </div>
+            <picture>
+              <source
+                media="(prefers-color-scheme: dark)"
+                srcset="/svg/3-stars-dark.svg"
+              />
+              <img
+                alt="C: 3 stars (out of 5)"
+                class="mb-3 mt-2"
+                height="16"
+                src="/svg/3-stars.svg"
+                width="80"
+              />
+            </picture>
+            <div
+              class="font-sans text-xs font-light leading-4 text-subtle"
+            >
+              <span>
+                Nonfiction
+                 | 
+              </span>
+              2023
+            </div>
+          </div>
+        </li>
         <li
           class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
         >
@@ -28185,6 +28937,62 @@ exports[`Reviews > can sort by grade with worst first 1`] = `
               height="113"
               loading="lazy"
               sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+              width="80"
+            />
+          </div>
+          <div
+            class="flex grow flex-col items-start tablet:w-full tablet:pr-4"
+          >
+            <a
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              href="/reviews/goth-by-lol-tolhurst/"
+            >
+              Goth
+            </a>
+            <div
+              class="font-sans text-xs leading-4 text-muted tablet:mt-1"
+            >
+              Lol Tolhurst
+            </div>
+            <picture>
+              <source
+                media="(prefers-color-scheme: dark)"
+                srcset="/svg/3-stars-dark.svg"
+              />
+              <img
+                alt="C: 3 stars (out of 5)"
+                class="mb-3 mt-2"
+                height="16"
+                src="/svg/3-stars.svg"
+                width="80"
+              />
+            </picture>
+            <div
+              class="font-sans text-xs font-light leading-4 text-subtle"
+            >
+              <span>
+                Nonfiction
+                 | 
+              </span>
+              2023
+            </div>
+          </div>
+        </li>
+        <li
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="w-list-item-cover shrink-0"
+          >
+            <img
+              alt=""
+              class="aspect-cover"
+              decoding="async"
+              height="113"
+              loading="lazy"
+              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
               src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fis-this-anything-by-jerry-seinfeld.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
               srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fis-this-anything-by-jerry-seinfeld.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fis-this-anything-by-jerry-seinfeld.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fis-this-anything-by-jerry-seinfeld.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fis-this-anything-by-jerry-seinfeld.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
               width="80"
@@ -29799,6 +30607,62 @@ exports[`Reviews > can sort by grade with worst first 1`] = `
                  | 
               </span>
               1991
+            </div>
+          </div>
+        </li>
+        <li
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="w-list-item-cover shrink-0"
+          >
+            <img
+              alt=""
+              class="aspect-cover"
+              decoding="async"
+              height="113"
+              loading="lazy"
+              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+              width="80"
+            />
+          </div>
+          <div
+            class="flex grow flex-col items-start tablet:w-full tablet:pr-4"
+          >
+            <a
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              href="/reviews/ghost-story-by-peter-straub/"
+            >
+              Ghost Story
+            </a>
+            <div
+              class="font-sans text-xs leading-4 text-muted tablet:mt-1"
+            >
+              Peter Straub
+            </div>
+            <picture>
+              <source
+                media="(prefers-color-scheme: dark)"
+                srcset="/svg/4-stars-dark.svg"
+              />
+              <img
+                alt="B: 4 stars (out of 5)"
+                class="mb-3 mt-2"
+                height="16"
+                src="/svg/4-stars.svg"
+                width="80"
+              />
+            </picture>
+            <div
+              class="font-sans text-xs font-light leading-4 text-subtle"
+            >
+              <span>
+                Novel
+                 | 
+              </span>
+              1979
             </div>
           </div>
         </li>
@@ -32898,6 +33762,118 @@ exports[`Reviews > can sort by title a->z 1`] = `
       class="bg-subtle"
     >
       <ol>
+        <li
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="w-list-item-cover shrink-0"
+          >
+            <img
+              alt=""
+              class="aspect-cover"
+              decoding="async"
+              height="113"
+              loading="lazy"
+              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+              width="80"
+            />
+          </div>
+          <div
+            class="flex grow flex-col items-start tablet:w-full tablet:pr-4"
+          >
+            <a
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              href="/reviews/ghost-story-by-peter-straub/"
+            >
+              Ghost Story
+            </a>
+            <div
+              class="font-sans text-xs leading-4 text-muted tablet:mt-1"
+            >
+              Peter Straub
+            </div>
+            <picture>
+              <source
+                media="(prefers-color-scheme: dark)"
+                srcset="/svg/4-stars-dark.svg"
+              />
+              <img
+                alt="B: 4 stars (out of 5)"
+                class="mb-3 mt-2"
+                height="16"
+                src="/svg/4-stars.svg"
+                width="80"
+              />
+            </picture>
+            <div
+              class="font-sans text-xs font-light leading-4 text-subtle"
+            >
+              <span>
+                Novel
+                 | 
+              </span>
+              1979
+            </div>
+          </div>
+        </li>
+        <li
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="w-list-item-cover shrink-0"
+          >
+            <img
+              alt=""
+              class="aspect-cover"
+              decoding="async"
+              height="113"
+              loading="lazy"
+              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+              width="80"
+            />
+          </div>
+          <div
+            class="flex grow flex-col items-start tablet:w-full tablet:pr-4"
+          >
+            <a
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              href="/reviews/goth-by-lol-tolhurst/"
+            >
+              Goth
+            </a>
+            <div
+              class="font-sans text-xs leading-4 text-muted tablet:mt-1"
+            >
+              Lol Tolhurst
+            </div>
+            <picture>
+              <source
+                media="(prefers-color-scheme: dark)"
+                srcset="/svg/3-stars-dark.svg"
+              />
+              <img
+                alt="C: 3 stars (out of 5)"
+                class="mb-3 mt-2"
+                height="16"
+                src="/svg/3-stars.svg"
+                width="80"
+              />
+            </picture>
+            <div
+              class="font-sans text-xs font-light leading-4 text-subtle"
+            >
+              <span>
+                Nonfiction
+                 | 
+              </span>
+              2023
+            </div>
+          </div>
+        </li>
         <li
           class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
         >
@@ -36802,6 +37778,118 @@ exports[`Reviews > can sort by title z->a 1`] = `
             </div>
           </div>
         </li>
+        <li
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="w-list-item-cover shrink-0"
+          >
+            <img
+              alt=""
+              class="aspect-cover"
+              decoding="async"
+              height="113"
+              loading="lazy"
+              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+              width="80"
+            />
+          </div>
+          <div
+            class="flex grow flex-col items-start tablet:w-full tablet:pr-4"
+          >
+            <a
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              href="/reviews/goth-by-lol-tolhurst/"
+            >
+              Goth
+            </a>
+            <div
+              class="font-sans text-xs leading-4 text-muted tablet:mt-1"
+            >
+              Lol Tolhurst
+            </div>
+            <picture>
+              <source
+                media="(prefers-color-scheme: dark)"
+                srcset="/svg/3-stars-dark.svg"
+              />
+              <img
+                alt="C: 3 stars (out of 5)"
+                class="mb-3 mt-2"
+                height="16"
+                src="/svg/3-stars.svg"
+                width="80"
+              />
+            </picture>
+            <div
+              class="font-sans text-xs font-light leading-4 text-subtle"
+            >
+              <span>
+                Nonfiction
+                 | 
+              </span>
+              2023
+            </div>
+          </div>
+        </li>
+        <li
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="w-list-item-cover shrink-0"
+          >
+            <img
+              alt=""
+              class="aspect-cover"
+              decoding="async"
+              height="113"
+              loading="lazy"
+              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+              width="80"
+            />
+          </div>
+          <div
+            class="flex grow flex-col items-start tablet:w-full tablet:pr-4"
+          >
+            <a
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              href="/reviews/ghost-story-by-peter-straub/"
+            >
+              Ghost Story
+            </a>
+            <div
+              class="font-sans text-xs leading-4 text-muted tablet:mt-1"
+            >
+              Peter Straub
+            </div>
+            <picture>
+              <source
+                media="(prefers-color-scheme: dark)"
+                srcset="/svg/4-stars-dark.svg"
+              />
+              <img
+                alt="B: 4 stars (out of 5)"
+                class="mb-3 mt-2"
+                height="16"
+                src="/svg/4-stars.svg"
+                width="80"
+              />
+            </picture>
+            <div
+              class="font-sans text-xs font-light leading-4 text-subtle"
+            >
+              <span>
+                Novel
+                 | 
+              </span>
+              1979
+            </div>
+          </div>
+        </li>
       </ol>
     </div>
   </li>
@@ -38576,6 +39664,62 @@ exports[`Reviews > can sort by year published with newest first 1`] = `
             >
               <span>
                 Novel
+                 | 
+              </span>
+              2023
+            </div>
+          </div>
+        </li>
+        <li
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="w-list-item-cover shrink-0"
+          >
+            <img
+              alt=""
+              class="aspect-cover"
+              decoding="async"
+              height="113"
+              loading="lazy"
+              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+              width="80"
+            />
+          </div>
+          <div
+            class="flex grow flex-col items-start tablet:w-full tablet:pr-4"
+          >
+            <a
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              href="/reviews/goth-by-lol-tolhurst/"
+            >
+              Goth
+            </a>
+            <div
+              class="font-sans text-xs leading-4 text-muted tablet:mt-1"
+            >
+              Lol Tolhurst
+            </div>
+            <picture>
+              <source
+                media="(prefers-color-scheme: dark)"
+                srcset="/svg/3-stars-dark.svg"
+              />
+              <img
+                alt="C: 3 stars (out of 5)"
+                class="mb-3 mt-2"
+                height="16"
+                src="/svg/3-stars.svg"
+                width="80"
+              />
+            </picture>
+            <div
+              class="font-sans text-xs font-light leading-4 text-subtle"
+            >
+              <span>
+                Nonfiction
                  | 
               </span>
               2023
@@ -41648,6 +42792,62 @@ exports[`Reviews > can sort by year published with newest first 1`] = `
             >
               <span>
                 Nonfiction
+                 | 
+              </span>
+              1979
+            </div>
+          </div>
+        </li>
+        <li
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="w-list-item-cover shrink-0"
+          >
+            <img
+              alt=""
+              class="aspect-cover"
+              decoding="async"
+              height="113"
+              loading="lazy"
+              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+              width="80"
+            />
+          </div>
+          <div
+            class="flex grow flex-col items-start tablet:w-full tablet:pr-4"
+          >
+            <a
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              href="/reviews/ghost-story-by-peter-straub/"
+            >
+              Ghost Story
+            </a>
+            <div
+              class="font-sans text-xs leading-4 text-muted tablet:mt-1"
+            >
+              Peter Straub
+            </div>
+            <picture>
+              <source
+                media="(prefers-color-scheme: dark)"
+                srcset="/svg/4-stars-dark.svg"
+              />
+              <img
+                alt="B: 4 stars (out of 5)"
+                class="mb-3 mt-2"
+                height="16"
+                src="/svg/4-stars.svg"
+                width="80"
+              />
+            </picture>
+            <div
+              class="font-sans text-xs font-light leading-4 text-subtle"
+            >
+              <span>
+                Novel
                  | 
               </span>
               1979
@@ -43522,6 +44722,62 @@ exports[`Reviews > can sort by year published with oldest first 1`] = `
             </div>
           </div>
         </li>
+        <li
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="w-list-item-cover shrink-0"
+          >
+            <img
+              alt=""
+              class="aspect-cover"
+              decoding="async"
+              height="113"
+              loading="lazy"
+              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+              width="80"
+            />
+          </div>
+          <div
+            class="flex grow flex-col items-start tablet:w-full tablet:pr-4"
+          >
+            <a
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              href="/reviews/ghost-story-by-peter-straub/"
+            >
+              Ghost Story
+            </a>
+            <div
+              class="font-sans text-xs leading-4 text-muted tablet:mt-1"
+            >
+              Peter Straub
+            </div>
+            <picture>
+              <source
+                media="(prefers-color-scheme: dark)"
+                srcset="/svg/4-stars-dark.svg"
+              />
+              <img
+                alt="B: 4 stars (out of 5)"
+                class="mb-3 mt-2"
+                height="16"
+                src="/svg/4-stars.svg"
+                width="80"
+              />
+            </picture>
+            <div
+              class="font-sans text-xs font-light leading-4 text-subtle"
+            >
+              <span>
+                Novel
+                 | 
+              </span>
+              1979
+            </div>
+          </div>
+        </li>
       </ol>
     </div>
   </li>
@@ -46493,6 +47749,62 @@ exports[`Reviews > can sort by year published with oldest first 1`] = `
               height="113"
               loading="lazy"
               sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+              width="80"
+            />
+          </div>
+          <div
+            class="flex grow flex-col items-start tablet:w-full tablet:pr-4"
+          >
+            <a
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              href="/reviews/goth-by-lol-tolhurst/"
+            >
+              Goth
+            </a>
+            <div
+              class="font-sans text-xs leading-4 text-muted tablet:mt-1"
+            >
+              Lol Tolhurst
+            </div>
+            <picture>
+              <source
+                media="(prefers-color-scheme: dark)"
+                srcset="/svg/3-stars-dark.svg"
+              />
+              <img
+                alt="C: 3 stars (out of 5)"
+                class="mb-3 mt-2"
+                height="16"
+                src="/svg/3-stars.svg"
+                width="80"
+              />
+            </picture>
+            <div
+              class="font-sans text-xs font-light leading-4 text-subtle"
+            >
+              <span>
+                Nonfiction
+                 | 
+              </span>
+              2023
+            </div>
+          </div>
+        </li>
+        <li
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="w-list-item-cover shrink-0"
+          >
+            <img
+              alt=""
+              class="aspect-cover"
+              decoding="async"
+              height="113"
+              loading="lazy"
+              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
               src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffright-night-origins-by-tom-holland-a-jack-ulrich.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
               srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffright-night-origins-by-tom-holland-a-jack-ulrich.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffright-night-origins-by-tom-holland-a-jack-ulrich.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffright-night-origins-by-tom-holland-a-jack-ulrich.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffright-night-origins-by-tom-holland-a-jack-ulrich.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
               width="80"
@@ -46867,7 +48179,7 @@ exports[`Reviews > renders 1`] = `
                       <span
                         class="font-semibold text-default"
                       >
-                        60
+                        62
                       </span>
                        Results
                     </span>
@@ -50879,6 +52191,61 @@ exports[`Reviews > renders 1`] = `
                                 </div>
                               </div>
                             </li>
+                            <li
+                              class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+                            >
+                              <div
+                                class="w-list-item-cover shrink-0"
+                              >
+                                <img
+                                  alt=""
+                                  class="aspect-cover"
+                                  decoding="async"
+                                  height="113"
+                                  loading="lazy"
+                                  sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+                                  src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+                                  srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+                                  width="80"
+                                />
+                              </div>
+                              <div
+                                class="flex grow flex-col items-start tablet:w-full tablet:pr-4"
+                              >
+                                <a
+                                  class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                                  href="/reviews/ghost-story-by-peter-straub/"
+                                >
+                                  Ghost Story
+                                </a>
+                                <div
+                                  class="font-sans text-xs leading-4 text-muted tablet:mt-1"
+                                >
+                                  Peter Straub
+                                </div>
+                                <picture>
+                                  <source
+                                    media="(prefers-color-scheme: dark)"
+                                    srcset="/svg/4-stars-dark.svg"
+                                  />
+                                  <img
+                                    alt="B: 4 stars (out of 5)"
+                                    class="mb-3 mt-2"
+                                    height="16"
+                                    src="/svg/4-stars.svg"
+                                    width="80"
+                                  />
+                                </picture>
+                                <div
+                                  class="font-sans text-xs font-light leading-4 text-subtle"
+                                >
+                                  <span>
+                                    Novel | 
+                                  </span>
+                                  1979
+                                </div>
+                              </div>
+                            </li>
                           </ol>
                         </div>
                       </li>
@@ -51006,6 +52373,61 @@ exports[`Reviews > renders 1`] = `
                                     Nonfiction | 
                                   </span>
                                   2016
+                                </div>
+                              </div>
+                            </li>
+                            <li
+                              class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+                            >
+                              <div
+                                class="w-list-item-cover shrink-0"
+                              >
+                                <img
+                                  alt=""
+                                  class="aspect-cover"
+                                  decoding="async"
+                                  height="113"
+                                  loading="lazy"
+                                  sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+                                  src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+                                  srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+                                  width="80"
+                                />
+                              </div>
+                              <div
+                                class="flex grow flex-col items-start tablet:w-full tablet:pr-4"
+                              >
+                                <a
+                                  class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                                  href="/reviews/goth-by-lol-tolhurst/"
+                                >
+                                  Goth
+                                </a>
+                                <div
+                                  class="font-sans text-xs leading-4 text-muted tablet:mt-1"
+                                >
+                                  Lol Tolhurst
+                                </div>
+                                <picture>
+                                  <source
+                                    media="(prefers-color-scheme: dark)"
+                                    srcset="/svg/3-stars-dark.svg"
+                                  />
+                                  <img
+                                    alt="C: 3 stars (out of 5)"
+                                    class="mb-3 mt-2"
+                                    height="16"
+                                    src="/svg/3-stars.svg"
+                                    width="80"
+                                  />
+                                </picture>
+                                <div
+                                  class="font-sans text-xs font-light leading-4 text-subtle"
+                                >
+                                  <span>
+                                    Nonfiction | 
+                                  </span>
+                                  2023
                                 </div>
                               </div>
                             </li>
@@ -51961,6 +53383,62 @@ exports[`Reviews > sorts abandoned readings first 1`] = `
       class="bg-subtle"
     >
       <ol>
+        <li
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="w-list-item-cover shrink-0"
+          >
+            <img
+              alt=""
+              class="aspect-cover"
+              decoding="async"
+              height="113"
+              loading="lazy"
+              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+              width="80"
+            />
+          </div>
+          <div
+            class="flex grow flex-col items-start tablet:w-full tablet:pr-4"
+          >
+            <a
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              href="/reviews/goth-by-lol-tolhurst/"
+            >
+              Goth
+            </a>
+            <div
+              class="font-sans text-xs leading-4 text-muted tablet:mt-1"
+            >
+              Lol Tolhurst
+            </div>
+            <picture>
+              <source
+                media="(prefers-color-scheme: dark)"
+                srcset="/svg/3-stars-dark.svg"
+              />
+              <img
+                alt="C: 3 stars (out of 5)"
+                class="mb-3 mt-2"
+                height="16"
+                src="/svg/3-stars.svg"
+                width="80"
+              />
+            </picture>
+            <div
+              class="font-sans text-xs font-light leading-4 text-subtle"
+            >
+              <span>
+                Nonfiction
+                 | 
+              </span>
+              2023
+            </div>
+          </div>
+        </li>
         <li
           class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
         >
@@ -53588,6 +55066,62 @@ exports[`Reviews > sorts abandoned readings first 1`] = `
                  | 
               </span>
               1991
+            </div>
+          </div>
+        </li>
+        <li
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="w-list-item-cover shrink-0"
+          >
+            <img
+              alt=""
+              class="aspect-cover"
+              decoding="async"
+              height="113"
+              loading="lazy"
+              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+              width="80"
+            />
+          </div>
+          <div
+            class="flex grow flex-col items-start tablet:w-full tablet:pr-4"
+          >
+            <a
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              href="/reviews/ghost-story-by-peter-straub/"
+            >
+              Ghost Story
+            </a>
+            <div
+              class="font-sans text-xs leading-4 text-muted tablet:mt-1"
+            >
+              Peter Straub
+            </div>
+            <picture>
+              <source
+                media="(prefers-color-scheme: dark)"
+                srcset="/svg/4-stars-dark.svg"
+              />
+              <img
+                alt="B: 4 stars (out of 5)"
+                class="mb-3 mt-2"
+                height="16"
+                src="/svg/4-stars.svg"
+                width="80"
+              />
+            </picture>
+            <div
+              class="font-sans text-xs font-light leading-4 text-subtle"
+            >
+              <span>
+                Novel
+                 | 
+              </span>
+              1979
             </div>
           </div>
         </li>

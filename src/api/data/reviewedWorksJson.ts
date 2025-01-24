@@ -71,7 +71,7 @@ const ReviewedWorkJsonSchema = z
     moreByAuthors: z.array(MoreByAuthorSchema),
     moreReviews: z.array(MoreReviewSchema),
     readings: z.array(ReadingSchema),
-    sequence: z.number(),
+    sequence: z.string(),
     slug: z.string(),
     sortTitle: z.string(),
     subtitle: nullableString(),

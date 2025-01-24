@@ -95,8 +95,17 @@ export async function loadContent(review: Review): Promise<ReviewWithContent> {
 
   const readings = review.readings.map((reading) => {
     const markdownReading = readingsMarkdown.find((markdownReading) => {
-      return markdownReading.sequence === reading.sequence;
+      return (
+        markdownReading.sequence === reading.sequence &&
+        +markdownReading.timeline.at(-1)!.date === +reading.date
+      );
     })!;
+
+    if (!markdownReading) {
+      throw new Error(
+        `No markdown readings found with last date ${reading.date.toISOString()} and sequence ${reading.sequence}`,
+      );
+    }
 
     return {
       ...reading,
@@ -108,10 +117,6 @@ export async function loadContent(review: Review): Promise<ReviewWithContent> {
       readingNotes: getHtml(markdownReading.readingNotesRaw, reviewedWorksJson),
     };
   });
-
-  if (readings.length === 0) {
-    throw new Error(`No markdown readings found with work_slug ${review.slug}`);
-  }
 
   return {
     ...review,
@@ -155,7 +160,7 @@ export async function mostRecentReviews(limit: number) {
   const reviewedWorksJson =
     cachedReviewedWorksJson || (await allReviewedWorksJson());
 
-  reviewedWorksJson.sort((a, b) => b.sequence - a.sequence);
+  reviewedWorksJson.sort((a, b) => b.sequence.localeCompare(a.sequence));
   const slicedWorks = reviewedWorksJson.slice(0, limit);
 
   const { reviews } = await parseReviewedWorksJson(slicedWorks);

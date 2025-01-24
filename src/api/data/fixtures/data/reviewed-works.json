@@ -1,6 +1,6 @@
 [
   {
-    "sequence": 34,
+    "sequence": "2022-09-05-2022-08-29-1",
     "slug": "about-face-by-david-h-hackworth-julie-sherman",
     "title": "About Face",
     "subtitle": "The Odyssey of an American Warrior",
@@ -26,7 +26,7 @@
     ],
     "readings": [
       {
-        "sequence": 34,
+        "sequence": 1,
         "date": "2022-09-05",
         "isAudiobook": true,
         "abandoned": false,
@@ -37,6 +37,19 @@
     "yearReviewed": 2022,
     "moreByAuthors": [],
     "moreReviews": [
+      {
+        "title": "The Woods Are Dark",
+        "kind": "Novel",
+        "yearPublished": "1981",
+        "slug": "the-woods-are-dark-by-richard-laymon",
+        "grade": "C+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Richard Laymon"
+          }
+        ]
+      },
       {
         "title": "'Salem's Lot",
         "kind": "Novel",
@@ -92,12 +105,25 @@
             "name": "Philip Fracassi"
           }
         ]
+      },
+      {
+        "title": "Behold the Void",
+        "kind": "Collection",
+        "yearPublished": "2017",
+        "slug": "behold-the-void-by-philip-fracassi",
+        "grade": "B+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Philip Fracassi"
+          }
+        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": 9,
+    "sequence": "2022-04-18-2022-04-18-1",
     "slug": "altar-by-philip-fracassi",
     "title": "Altar",
     "subtitle": null,
@@ -117,7 +143,7 @@
     ],
     "readings": [
       {
-        "sequence": 9,
+        "sequence": 1,
         "date": "2022-04-18",
         "isAudiobook": false,
         "abandoned": false,
@@ -133,6 +159,19 @@
         "name": "Philip Fracassi",
         "slug": "philip-fracassi",
         "works": [
+          {
+            "title": "Don't Let Them Get You Down",
+            "kind": "Novel",
+            "yearPublished": "2022",
+            "slug": "dont-let-them-get-you-down-by-philip-fracassi",
+            "grade": "C-",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Philip Fracassi"
+              }
+            ]
+          },
           {
             "title": "Gothic",
             "kind": "Novel",
@@ -188,11 +227,39 @@
                 "name": "Philip Fracassi"
               }
             ]
+          },
+          {
+            "title": "Coffin",
+            "kind": "Short Story",
+            "yearPublished": "2017",
+            "slug": "coffin-by-philip-fracassi",
+            "grade": "C+",
+            "includedInSlugs": [
+              "behold-the-void-by-philip-fracassi"
+            ],
+            "authors": [
+              {
+                "name": "Philip Fracassi"
+              }
+            ]
           }
         ]
       }
     ],
     "moreReviews": [
+      {
+        "title": "'Salem's Lot",
+        "kind": "Novel",
+        "yearPublished": "1975",
+        "slug": "salems-lot-by-stephen-king",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Stephen King"
+          }
+        ]
+      },
       {
         "title": "The 48 Laws of Power",
         "kind": "Nonfiction",
@@ -247,12 +314,25 @@
             "name": "Dave Draper"
           }
         ]
+      },
+      {
+        "title": "Can't Hurt Me",
+        "kind": "Nonfiction",
+        "yearPublished": "2018",
+        "slug": "cant-hurt-me-by-david-goggins",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "David Goggins"
+          }
+        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": 17,
+    "sequence": "2022-05-07-2022-04-17-2",
     "slug": "behold-the-void-by-philip-fracassi",
     "title": "Behold the Void",
     "subtitle": null,
@@ -272,7 +352,7 @@
     ],
     "readings": [
       {
-        "sequence": 17,
+        "sequence": 2,
         "date": "2022-05-07",
         "isAudiobook": false,
         "abandoned": false,
@@ -286,6 +366,21 @@
         "name": "Philip Fracassi",
         "slug": "philip-fracassi",
         "works": [
+          {
+            "title": "Mother",
+            "kind": "Short Story",
+            "yearPublished": "2015",
+            "slug": "mother-by-philip-fracassi",
+            "grade": "B-",
+            "includedInSlugs": [
+              "behold-the-void-by-philip-fracassi"
+            ],
+            "authors": [
+              {
+                "name": "Philip Fracassi"
+              }
+            ]
+          },
           {
             "title": "Altar",
             "kind": "Short Story",
@@ -345,11 +440,39 @@
                 "name": "Philip Fracassi"
               }
             ]
+          },
+          {
+            "title": "The Horse Thief",
+            "kind": "Short Story",
+            "yearPublished": "2017",
+            "slug": "the-horse-thief-by-philip-fracassi",
+            "grade": "B",
+            "includedInSlugs": [
+              "behold-the-void-by-philip-fracassi"
+            ],
+            "authors": [
+              {
+                "name": "Philip Fracassi"
+              }
+            ]
           }
         ]
       }
     ],
     "moreReviews": [
+      {
+        "title": "'Salem's Lot",
+        "kind": "Novel",
+        "yearPublished": "1975",
+        "slug": "salems-lot-by-stephen-king",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Stephen King"
+          }
+        ]
+      },
       {
         "title": "The 48 Laws of Power",
         "kind": "Nonfiction",
@@ -402,6 +525,19 @@
         "authors": [
           {
             "name": "Dave Draper"
+          }
+        ]
+      },
+      {
+        "title": "Can't Hurt Me",
+        "kind": "Nonfiction",
+        "yearPublished": "2018",
+        "slug": "cant-hurt-me-by-david-goggins",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "David Goggins"
           }
         ]
       }
@@ -527,7 +663,7 @@
     ]
   },
   {
-    "sequence": 1,
+    "sequence": "2022-03-06-2022-03-05-1",
     "slug": "brother-iron-sister-steel-by-dave-draper",
     "title": "Brother Iron, Sister Steel",
     "subtitle": null,
@@ -558,6 +694,21 @@
     "yearReviewed": 2022,
     "moreByAuthors": [],
     "moreReviews": [
+      {
+        "title": "The Baby Farmer",
+        "kind": "Short Story",
+        "yearPublished": "2017",
+        "slug": "the-baby-farmer-by-philip-fracassi",
+        "grade": "C+",
+        "includedInSlugs": [
+          "behold-the-void-by-philip-fracassi"
+        ],
+        "authors": [
+          {
+            "name": "Philip Fracassi"
+          }
+        ]
+      },
       {
         "title": "Behold the Void",
         "kind": "Collection",
@@ -609,12 +760,25 @@
             "name": "Stephen King"
           }
         ]
+      },
+      {
+        "title": "Casino Royale",
+        "kind": "Novel",
+        "yearPublished": "1953",
+        "slug": "casino-royale-by-ian-fleming",
+        "grade": "B-",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Ian Fleming"
+          }
+        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": 44,
+    "sequence": "2022-10-13-2022-10-04-1",
     "slug": "cant-hurt-me-by-david-goggins",
     "title": "Can't Hurt Me",
     "subtitle": "Master Your Mind and Defy the Odds",
@@ -634,7 +798,7 @@
     ],
     "readings": [
       {
-        "sequence": 44,
+        "sequence": 1,
         "date": "2022-10-13",
         "isAudiobook": true,
         "abandoned": false,
@@ -645,6 +809,19 @@
     "yearReviewed": 2022,
     "moreByAuthors": [],
     "moreReviews": [
+      {
+        "title": "Behold the Void",
+        "kind": "Collection",
+        "yearPublished": "2017",
+        "slug": "behold-the-void-by-philip-fracassi",
+        "grade": "B+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Philip Fracassi"
+          }
+        ]
+      },
       {
         "title": "The Big Sleep",
         "kind": "Novel",
@@ -696,12 +873,25 @@
             "name": "Ian Fleming"
           }
         ]
+      },
+      {
+        "title": "The Cellar",
+        "kind": "Novel",
+        "yearPublished": "1980",
+        "slug": "the-cellar-by-richard-laymon",
+        "grade": "C+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Richard Laymon"
+          }
+        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": 39,
+    "sequence": "2022-09-19-2022-09-09-1",
     "slug": "carrie-by-stephen-king",
     "title": "Carrie",
     "subtitle": null,
@@ -721,7 +911,7 @@
     ],
     "readings": [
       {
-        "sequence": 39,
+        "sequence": 1,
         "date": "2022-09-19",
         "isAudiobook": false,
         "abandoned": false,
@@ -735,6 +925,19 @@
         "name": "Stephen King",
         "slug": "stephen-king",
         "works": [
+          {
+            "title": "The Shining",
+            "kind": "Novel",
+            "yearPublished": "1977",
+            "slug": "the-shining-by-stephen-king",
+            "grade": "B",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          },
           {
             "title": "On Writing",
             "kind": "Nonfiction",
@@ -786,11 +989,37 @@
                 "name": "Stephen King"
               }
             ]
+          },
+          {
+            "title": "On Writing",
+            "kind": "Nonfiction",
+            "yearPublished": "2000",
+            "slug": "on-writing-by-stephen-king",
+            "grade": "A-",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
           }
         ]
       }
     ],
     "moreReviews": [
+      {
+        "title": "The Big Sleep",
+        "kind": "Novel",
+        "yearPublished": "1939",
+        "slug": "the-big-sleep-by-raymond-chandler",
+        "grade": "C+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Raymond Chandler"
+          }
+        ]
+      },
       {
         "title": "Brother Iron, Sister Steel",
         "kind": "Nonfiction",
@@ -842,12 +1071,25 @@
             "name": "Richard Laymon"
           }
         ]
+      },
+      {
+        "title": "Churchill",
+        "kind": "Nonfiction",
+        "yearPublished": "2018",
+        "slug": "churchill-by-andrew-roberts",
+        "grade": "A-",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Andrew Roberts"
+          }
+        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": 22,
+    "sequence": "2022-06-14-2022-06-08-1",
     "slug": "casino-royale-by-ian-fleming",
     "title": "Casino Royale",
     "subtitle": null,
@@ -867,7 +1109,7 @@
     ],
     "readings": [
       {
-        "sequence": 22,
+        "sequence": 1,
         "date": "2022-06-14",
         "isAudiobook": false,
         "abandoned": false,
@@ -878,6 +1120,19 @@
     "yearReviewed": 2022,
     "moreByAuthors": [],
     "moreReviews": [
+      {
+        "title": "Brother Iron, Sister Steel",
+        "kind": "Nonfiction",
+        "yearPublished": "2001",
+        "slug": "brother-iron-sister-steel-by-dave-draper",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Dave Draper"
+          }
+        ]
+      },
       {
         "title": "Can't Hurt Me",
         "kind": "Nonfiction",
@@ -929,12 +1184,25 @@
             "name": "Andrew Roberts"
           }
         ]
+      },
+      {
+        "title": "The Cipher",
+        "kind": "Novel",
+        "yearPublished": "1991",
+        "slug": "the-cipher-by-kathe-koja",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Kathe Koja"
+          }
+        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": 21,
+    "sequence": "2022-06-14-2022-05-21-1",
     "slug": "churchill-by-andrew-roberts",
     "title": "Churchill",
     "subtitle": "Walking with Destiny",
@@ -954,7 +1222,7 @@
     ],
     "readings": [
       {
-        "sequence": 21,
+        "sequence": 1,
         "date": "2022-06-14",
         "isAudiobook": true,
         "abandoned": false,
@@ -965,6 +1233,19 @@
     "yearReviewed": 2022,
     "moreByAuthors": [],
     "moreReviews": [
+      {
+        "title": "Carrie",
+        "kind": "Novel",
+        "yearPublished": "1974",
+        "slug": "carrie-by-stephen-king",
+        "grade": "B-",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Stephen King"
+          }
+        ]
+      },
       {
         "title": "Casino Royale",
         "kind": "Novel",
@@ -1018,12 +1299,25 @@
             "name": "Philip Fracassi"
           }
         ]
+      },
+      {
+        "title": "Consider This",
+        "kind": "Nonfiction",
+        "yearPublished": "2020",
+        "slug": "consider-this-by-chuck-palahniuk",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Chuck Palahniuk"
+          }
+        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": 11,
+    "sequence": "2022-04-20-2022-04-20-1",
     "slug": "coffin-by-philip-fracassi",
     "title": "Coffin",
     "subtitle": null,
@@ -1043,7 +1337,7 @@
     ],
     "readings": [
       {
-        "sequence": 11,
+        "sequence": 1,
         "date": "2022-04-20",
         "isAudiobook": false,
         "abandoned": false,
@@ -1059,6 +1353,21 @@
         "name": "Philip Fracassi",
         "slug": "philip-fracassi",
         "works": [
+          {
+            "title": "Altar",
+            "kind": "Short Story",
+            "yearPublished": "2016",
+            "slug": "altar-by-philip-fracassi",
+            "grade": "A-",
+            "includedInSlugs": [
+              "behold-the-void-by-philip-fracassi"
+            ],
+            "authors": [
+              {
+                "name": "Philip Fracassi"
+              }
+            ]
+          },
           {
             "title": "The Baby Farmer",
             "kind": "Short Story",
@@ -1116,11 +1425,39 @@
                 "name": "Philip Fracassi"
               }
             ]
+          },
+          {
+            "title": "Mandala",
+            "kind": "Novella",
+            "yearPublished": "2017",
+            "slug": "mandala-by-philip-fracassi",
+            "grade": "B+",
+            "includedInSlugs": [
+              "behold-the-void-by-philip-fracassi"
+            ],
+            "authors": [
+              {
+                "name": "Philip Fracassi"
+              }
+            ]
           }
         ]
       }
     ],
     "moreReviews": [
+      {
+        "title": "The Cellar",
+        "kind": "Novel",
+        "yearPublished": "1980",
+        "slug": "the-cellar-by-richard-laymon",
+        "grade": "C+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Richard Laymon"
+          }
+        ]
+      },
       {
         "title": "Churchill",
         "kind": "Nonfiction",
@@ -1172,12 +1509,25 @@
             "name": "Rick Rubin"
           }
         ]
+      },
+      {
+        "title": "Cured",
+        "kind": "Nonfiction",
+        "yearPublished": "2016",
+        "slug": "cured-by-lol-tolhurst",
+        "grade": "A-",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Lol Tolhurst"
+          }
+        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": 40,
+    "sequence": "2022-09-22-2022-09-21-1",
     "slug": "consider-this-by-chuck-palahniuk",
     "title": "Consider This",
     "subtitle": "Moments in My Writing Life After Which Everything Was Different",
@@ -1197,7 +1547,7 @@
     ],
     "readings": [
       {
-        "sequence": 40,
+        "sequence": 1,
         "date": "2022-09-22",
         "isAudiobook": true,
         "abandoned": false,
@@ -1208,6 +1558,19 @@
     "yearReviewed": 2022,
     "moreByAuthors": [],
     "moreReviews": [
+      {
+        "title": "Churchill",
+        "kind": "Nonfiction",
+        "yearPublished": "2018",
+        "slug": "churchill-by-andrew-roberts",
+        "grade": "A-",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Andrew Roberts"
+          }
+        ]
+      },
       {
         "title": "The Cipher",
         "kind": "Novel",
@@ -1261,12 +1624,25 @@
             "name": "Lol Tolhurst"
           }
         ]
+      },
+      {
+        "title": "The Dark Tunnel",
+        "kind": "Novel",
+        "yearPublished": "1944",
+        "slug": "the-dark-tunnel-by-ross-macdonald",
+        "grade": "D+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Ross Macdonald"
+          }
+        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": 31,
+    "sequence": "2022-07-18-2022-07-16-1",
     "slug": "cured-by-lol-tolhurst",
     "title": "Cured",
     "subtitle": "The Tale of Two Imaginary Boys",
@@ -1286,7 +1662,7 @@
     ],
     "readings": [
       {
-        "sequence": 31,
+        "sequence": 1,
         "date": "2022-07-18",
         "isAudiobook": true,
         "abandoned": false,
@@ -1297,6 +1673,21 @@
     "yearReviewed": 2022,
     "moreByAuthors": [],
     "moreReviews": [
+      {
+        "title": "Coffin",
+        "kind": "Short Story",
+        "yearPublished": "2017",
+        "slug": "coffin-by-philip-fracassi",
+        "grade": "C+",
+        "includedInSlugs": [
+          "behold-the-void-by-philip-fracassi"
+        ],
+        "authors": [
+          {
+            "name": "Philip Fracassi"
+          }
+        ]
+      },
       {
         "title": "Consider This",
         "kind": "Nonfiction",
@@ -1350,12 +1741,25 @@
             "name": "Richard Laymon"
           }
         ]
+      },
+      {
+        "title": "Doctor Sleep",
+        "kind": "Novel",
+        "yearPublished": "2013",
+        "slug": "doctor-sleep-by-stephen-king",
+        "grade": "C+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Stephen King"
+          }
+        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": 6,
+    "sequence": "2022-04-03-2022-04-03-1",
     "slug": "desert-pickup-by-richard-laymon",
     "title": "Desert Pickup",
     "subtitle": null,
@@ -1375,7 +1779,7 @@
     ],
     "readings": [
       {
-        "sequence": 6,
+        "sequence": 1,
         "date": "2022-04-03",
         "isAudiobook": false,
         "abandoned": false,
@@ -1391,6 +1795,19 @@
         "name": "Richard Laymon",
         "slug": "richard-laymon",
         "works": [
+          {
+            "title": "The Cellar",
+            "kind": "Novel",
+            "yearPublished": "1980",
+            "slug": "the-cellar-by-richard-laymon",
+            "grade": "C+",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Richard Laymon"
+              }
+            ]
+          },
           {
             "title": "The Woods Are Dark",
             "kind": "Novel",
@@ -1446,11 +1863,37 @@
                 "name": "Richard Laymon"
               }
             ]
+          },
+          {
+            "title": "The Woods Are Dark",
+            "kind": "Novel",
+            "yearPublished": "1981",
+            "slug": "the-woods-are-dark-by-richard-laymon",
+            "grade": "C+",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Richard Laymon"
+              }
+            ]
           }
         ]
       }
     ],
     "moreReviews": [
+      {
+        "title": "The Creative Act",
+        "kind": "Nonfiction",
+        "yearPublished": "2023",
+        "slug": "the-creative-act-by-rick-rubin",
+        "grade": "C+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Rick Rubin"
+          }
+        ]
+      },
       {
         "title": "Cured",
         "kind": "Nonfiction",
@@ -1502,12 +1945,25 @@
             "name": "Philip Fracassi"
           }
         ]
+      },
+      {
+        "title": "Dracula",
+        "kind": "Novel",
+        "yearPublished": "1897",
+        "slug": "dracula-by-bram-stoker",
+        "grade": "C+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Bram Stoker"
+          }
+        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": 49,
+    "sequence": "2023-01-14-2022-10-30-1",
     "slug": "doctor-sleep-by-stephen-king",
     "title": "Doctor Sleep",
     "subtitle": null,
@@ -1527,7 +1983,7 @@
     ],
     "readings": [
       {
-        "sequence": 49,
+        "sequence": 1,
         "date": "2023-01-14",
         "isAudiobook": false,
         "abandoned": false,
@@ -1541,6 +1997,19 @@
         "name": "Stephen King",
         "slug": "stephen-king",
         "works": [
+          {
+            "title": "'Salem's Lot",
+            "kind": "Novel",
+            "yearPublished": "1975",
+            "slug": "salems-lot-by-stephen-king",
+            "grade": "B",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          },
           {
             "title": "The Shining",
             "kind": "Novel",
@@ -1592,11 +2061,37 @@
                 "name": "Stephen King"
               }
             ]
+          },
+          {
+            "title": "The Shining",
+            "kind": "Novel",
+            "yearPublished": "1977",
+            "slug": "the-shining-by-stephen-king",
+            "grade": "B",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
           }
         ]
       }
     ],
     "moreReviews": [
+      {
+        "title": "Cured",
+        "kind": "Nonfiction",
+        "yearPublished": "2016",
+        "slug": "cured-by-lol-tolhurst",
+        "grade": "A-",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Lol Tolhurst"
+          }
+        ]
+      },
       {
         "title": "The Dark Tunnel",
         "kind": "Novel",
@@ -1650,12 +2145,25 @@
             "name": "Bram Stoker"
           }
         ]
+      },
+      {
+        "title": "Draft No. 4",
+        "kind": "Nonfiction",
+        "yearPublished": "2013",
+        "slug": "draft-no-4-by-john-mcphee",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "John McPhee"
+          }
+        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": 55,
+    "sequence": "2023-10-29-2023-10-11-1",
     "slug": "dont-let-them-get-you-down-by-philip-fracassi",
     "title": "Don't Let Them Get You Down",
     "subtitle": null,
@@ -1675,7 +2183,7 @@
     ],
     "readings": [
       {
-        "sequence": 55,
+        "sequence": 1,
         "date": "2023-10-29",
         "isAudiobook": false,
         "abandoned": false,
@@ -1689,6 +2197,19 @@
         "name": "Philip Fracassi",
         "slug": "philip-fracassi",
         "works": [
+          {
+            "title": "Sacculina",
+            "kind": "Novella",
+            "yearPublished": "2017",
+            "slug": "sacculina-by-philip-fracassi",
+            "grade": "B",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Philip Fracassi"
+              }
+            ]
+          },
           {
             "title": "Soft Construction of a Sunset",
             "kind": "Short Story",
@@ -1746,11 +2267,39 @@
                 "name": "Philip Fracassi"
               }
             ]
+          },
+          {
+            "title": "Altar",
+            "kind": "Short Story",
+            "yearPublished": "2016",
+            "slug": "altar-by-philip-fracassi",
+            "grade": "A-",
+            "includedInSlugs": [
+              "behold-the-void-by-philip-fracassi"
+            ],
+            "authors": [
+              {
+                "name": "Philip Fracassi"
+              }
+            ]
           }
         ]
       }
     ],
     "moreReviews": [
+      {
+        "title": "The Dark Tunnel",
+        "kind": "Novel",
+        "yearPublished": "1944",
+        "slug": "the-dark-tunnel-by-ross-macdonald",
+        "grade": "D+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Ross Macdonald"
+          }
+        ]
+      },
       {
         "title": "Desert Pickup",
         "kind": "Short Story",
@@ -1804,12 +2353,28 @@
             "name": "John McPhee"
           }
         ]
+      },
+      {
+        "title": "Extreme Ownership",
+        "kind": "Nonfiction",
+        "yearPublished": "2015",
+        "slug": "extreme-ownership-by-jocko-willink-leif-babin",
+        "grade": "A",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Jocko Willink"
+          },
+          {
+            "name": "Leif Babin"
+          }
+        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": 27,
+    "sequence": "2022-07-09-2022-07-02-1",
     "slug": "dracula-by-bram-stoker",
     "title": "Dracula",
     "subtitle": null,
@@ -1829,7 +2394,7 @@
     ],
     "readings": [
       {
-        "sequence": 27,
+        "sequence": 1,
         "date": "2022-07-09",
         "isAudiobook": true,
         "abandoned": false,
@@ -1840,6 +2405,21 @@
     "yearReviewed": 2022,
     "moreByAuthors": [],
     "moreReviews": [
+      {
+        "title": "Desert Pickup",
+        "kind": "Short Story",
+        "yearPublished": "1970",
+        "slug": "desert-pickup-by-richard-laymon",
+        "grade": "C-",
+        "includedInSlugs": [
+          "short-stories-volume-one-by-richard-laymon"
+        ],
+        "authors": [
+          {
+            "name": "Richard Laymon"
+          }
+        ]
+      },
       {
         "title": "Doctor Sleep",
         "kind": "Novel",
@@ -1894,12 +2474,27 @@
             "name": "Leif Babin"
           }
         ]
+      },
+      {
+        "title": "Fail-Safe",
+        "kind": "Short Story",
+        "yearPublished": "2017",
+        "slug": "fail-safe-by-philip-fracassi",
+        "grade": "C",
+        "includedInSlugs": [
+          "behold-the-void-by-philip-fracassi"
+        ],
+        "authors": [
+          {
+            "name": "Philip Fracassi"
+          }
+        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": 37,
+    "sequence": "2022-09-11-2022-09-11-1",
     "slug": "draft-no-4-by-john-mcphee",
     "title": "Draft No. 4",
     "subtitle": "On the Writing Process",
@@ -1919,7 +2514,7 @@
     ],
     "readings": [
       {
-        "sequence": 37,
+        "sequence": 1,
         "date": "2022-09-11",
         "isAudiobook": true,
         "abandoned": false,
@@ -1930,6 +2525,19 @@
     "yearReviewed": 2022,
     "moreByAuthors": [],
     "moreReviews": [
+      {
+        "title": "Doctor Sleep",
+        "kind": "Novel",
+        "yearPublished": "2013",
+        "slug": "doctor-sleep-by-stephen-king",
+        "grade": "C+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Stephen King"
+          }
+        ]
+      },
       {
         "title": "Don't Let Them Get You Down",
         "kind": "Novel",
@@ -1986,12 +2594,25 @@
             "name": "Philip Fracassi"
           }
         ]
+      },
+      {
+        "title": "Fast Forward",
+        "kind": "Nonfiction",
+        "yearPublished": "2020",
+        "slug": "fast-forward-by-stephen-morris",
+        "grade": "A-",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Stephen Morris"
+          }
+        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": 24,
+    "sequence": "2022-06-26-2022-06-26-1",
     "slug": "extreme-ownership-by-jocko-willink-leif-babin",
     "title": "Extreme Ownership",
     "subtitle": "How U.S. Navy SEALs Lead and Win",
@@ -2017,7 +2638,7 @@
     ],
     "readings": [
       {
-        "sequence": 24,
+        "sequence": 1,
         "date": "2022-06-26",
         "isAudiobook": true,
         "abandoned": false,
@@ -2028,6 +2649,19 @@
     "yearReviewed": 2022,
     "moreByAuthors": [],
     "moreReviews": [
+      {
+        "title": "Don't Let Them Get You Down",
+        "kind": "Novel",
+        "yearPublished": "2022",
+        "slug": "dont-let-them-get-you-down-by-philip-fracassi",
+        "grade": "C-",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Philip Fracassi"
+          }
+        ]
+      },
       {
         "title": "Dracula",
         "kind": "Novel",
@@ -2081,12 +2715,25 @@
             "name": "Stephen Morris"
           }
         ]
+      },
+      {
+        "title": "Fight Club",
+        "kind": "Novel",
+        "yearPublished": "1996",
+        "slug": "fight-club-by-chuck-palahniuk",
+        "grade": "A-",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Chuck Palahniuk"
+          }
+        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": 15,
+    "sequence": "2022-04-30-2022-04-30-1",
     "slug": "fail-safe-by-philip-fracassi",
     "title": "Fail-Safe",
     "subtitle": null,
@@ -2106,7 +2753,7 @@
     ],
     "readings": [
       {
-        "sequence": 15,
+        "sequence": 1,
         "date": "2022-04-30",
         "isAudiobook": false,
         "abandoned": false,
@@ -2122,6 +2769,21 @@
         "name": "Philip Fracassi",
         "slug": "philip-fracassi",
         "works": [
+          {
+            "title": "The Baby Farmer",
+            "kind": "Short Story",
+            "yearPublished": "2017",
+            "slug": "the-baby-farmer-by-philip-fracassi",
+            "grade": "C+",
+            "includedInSlugs": [
+              "behold-the-void-by-philip-fracassi"
+            ],
+            "authors": [
+              {
+                "name": "Philip Fracassi"
+              }
+            ]
+          },
           {
             "title": "Behold the Void",
             "kind": "Collection",
@@ -2179,11 +2841,37 @@
                 "name": "Philip Fracassi"
               }
             ]
+          },
+          {
+            "title": "Sacculina",
+            "kind": "Novella",
+            "yearPublished": "2017",
+            "slug": "sacculina-by-philip-fracassi",
+            "grade": "B",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Philip Fracassi"
+              }
+            ]
           }
         ]
       }
     ],
     "moreReviews": [
+      {
+        "title": "Dracula",
+        "kind": "Novel",
+        "yearPublished": "1897",
+        "slug": "dracula-by-bram-stoker",
+        "grade": "C+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Bram Stoker"
+          }
+        ]
+      },
       {
         "title": "Draft No. 4",
         "kind": "Nonfiction",
@@ -2238,12 +2926,28 @@
             "name": "Chuck Palahniuk"
           }
         ]
+      },
+      {
+        "title": "Fright Night",
+        "kind": "Novel",
+        "yearPublished": "1985",
+        "slug": "fright-night-by-john-skipp-craig-spector",
+        "grade": "F",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "John Skipp"
+          },
+          {
+            "name": "Craig Spector"
+          }
+        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": 60,
+    "sequence": "2024-07-01-2024-06-28-2",
     "slug": "fast-forward-by-stephen-morris",
     "title": "Fast Forward",
     "subtitle": "Confessions of a Post-Punk Percussionist: Volume II",
@@ -2263,14 +2967,14 @@
     ],
     "readings": [
       {
-        "sequence": 58,
+        "sequence": 1,
         "date": "2023-12-09",
         "isAudiobook": true,
         "abandoned": false,
         "readingTime": 29
       },
       {
-        "sequence": 60,
+        "sequence": 2,
         "date": "2024-07-01",
         "isAudiobook": true,
         "abandoned": false,
@@ -2281,6 +2985,19 @@
     "yearReviewed": 2024,
     "moreByAuthors": [],
     "moreReviews": [
+      {
+        "title": "Draft No. 4",
+        "kind": "Nonfiction",
+        "yearPublished": "2013",
+        "slug": "draft-no-4-by-john-mcphee",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "John McPhee"
+          }
+        ]
+      },
       {
         "title": "Extreme Ownership",
         "kind": "Nonfiction",
@@ -2340,12 +3057,28 @@
             "name": "Craig Spector"
           }
         ]
+      },
+      {
+        "title": "Fright Night Origins",
+        "kind": "Novel",
+        "yearPublished": "2023",
+        "slug": "fright-night-origins-by-tom-holland-a-jack-ulrich",
+        "grade": "C+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Tom Holland"
+          },
+          {
+            "name": "A. Jack Ulrich"
+          }
+        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": 30,
+    "sequence": "2022-07-16-2022-07-15-1",
     "slug": "fight-club-by-chuck-palahniuk",
     "title": "Fight Club",
     "subtitle": null,
@@ -2365,7 +3098,7 @@
     ],
     "readings": [
       {
-        "sequence": 30,
+        "sequence": 1,
         "date": "2022-07-16",
         "isAudiobook": true,
         "abandoned": false,
@@ -2376,6 +3109,22 @@
     "yearReviewed": 2022,
     "moreByAuthors": [],
     "moreReviews": [
+      {
+        "title": "Extreme Ownership",
+        "kind": "Nonfiction",
+        "yearPublished": "2015",
+        "slug": "extreme-ownership-by-jocko-willink-leif-babin",
+        "grade": "A",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Jocko Willink"
+          },
+          {
+            "name": "Leif Babin"
+          }
+        ]
+      },
       {
         "title": "Fail-Safe",
         "kind": "Short Story",
@@ -2435,12 +3184,25 @@
             "name": "A. Jack Ulrich"
           }
         ]
+      },
+      {
+        "title": "Ghost Story",
+        "kind": "Novel",
+        "yearPublished": "1979",
+        "slug": "ghost-story-by-peter-straub",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Peter Straub"
+          }
+        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": 50,
+    "sequence": "2023-01-21-2023-01-15-1",
     "slug": "fright-night-by-john-skipp-craig-spector",
     "title": "Fright Night",
     "subtitle": null,
@@ -2466,7 +3228,7 @@
     ],
     "readings": [
       {
-        "sequence": 50,
+        "sequence": 1,
         "date": "2023-01-21",
         "isAudiobook": false,
         "abandoned": false,
@@ -2477,6 +3239,21 @@
     "yearReviewed": 2023,
     "moreByAuthors": [],
     "moreReviews": [
+      {
+        "title": "Fail-Safe",
+        "kind": "Short Story",
+        "yearPublished": "2017",
+        "slug": "fail-safe-by-philip-fracassi",
+        "grade": "C",
+        "includedInSlugs": [
+          "behold-the-void-by-philip-fracassi"
+        ],
+        "authors": [
+          {
+            "name": "Philip Fracassi"
+          }
+        ]
+      },
       {
         "title": "Fast Forward",
         "kind": "Nonfiction",
@@ -2520,15 +3297,28 @@
         ]
       },
       {
-        "title": "Gothic",
+        "title": "Ghost Story",
         "kind": "Novel",
-        "yearPublished": "2023",
-        "slug": "gothic-by-philip-fracassi",
-        "grade": "B+",
+        "yearPublished": "1979",
+        "slug": "ghost-story-by-peter-straub",
+        "grade": "B",
         "includedInSlugs": [],
         "authors": [
           {
-            "name": "Philip Fracassi"
+            "name": "Peter Straub"
+          }
+        ]
+      },
+      {
+        "title": "Goth",
+        "kind": "Nonfiction",
+        "yearPublished": "2023",
+        "slug": "goth-by-lol-tolhurst",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Lol Tolhurst"
           }
         ]
       }
@@ -2536,7 +3326,7 @@
     "includedWorks": []
   },
   {
-    "sequence": 56,
+    "sequence": "2023-11-06-2023-10-29-1",
     "slug": "fright-night-origins-by-tom-holland-a-jack-ulrich",
     "title": "Fright Night Origins",
     "subtitle": null,
@@ -2562,7 +3352,7 @@
     ],
     "readings": [
       {
-        "sequence": 56,
+        "sequence": 1,
         "date": "2023-11-06",
         "isAudiobook": true,
         "abandoned": false,
@@ -2571,6 +3361,122 @@
     ],
     "includedInSlugs": [],
     "yearReviewed": 2023,
+    "moreByAuthors": [],
+    "moreReviews": [
+      {
+        "title": "Fast Forward",
+        "kind": "Nonfiction",
+        "yearPublished": "2020",
+        "slug": "fast-forward-by-stephen-morris",
+        "grade": "A-",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Stephen Morris"
+          }
+        ]
+      },
+      {
+        "title": "Fight Club",
+        "kind": "Novel",
+        "yearPublished": "1996",
+        "slug": "fight-club-by-chuck-palahniuk",
+        "grade": "A-",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Chuck Palahniuk"
+          }
+        ]
+      },
+      {
+        "title": "Fright Night",
+        "kind": "Novel",
+        "yearPublished": "1985",
+        "slug": "fright-night-by-john-skipp-craig-spector",
+        "grade": "F",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "John Skipp"
+          },
+          {
+            "name": "Craig Spector"
+          }
+        ]
+      },
+      {
+        "title": "Ghost Story",
+        "kind": "Novel",
+        "yearPublished": "1979",
+        "slug": "ghost-story-by-peter-straub",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Peter Straub"
+          }
+        ]
+      },
+      {
+        "title": "Goth",
+        "kind": "Nonfiction",
+        "yearPublished": "2023",
+        "slug": "goth-by-lol-tolhurst",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Lol Tolhurst"
+          }
+        ]
+      },
+      {
+        "title": "Gothic",
+        "kind": "Novel",
+        "yearPublished": "2023",
+        "slug": "gothic-by-philip-fracassi",
+        "grade": "B+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Philip Fracassi"
+          }
+        ]
+      }
+    ],
+    "includedWorks": []
+  },
+  {
+    "sequence": "2024-12-01-2024-11-10-1",
+    "slug": "ghost-story-by-peter-straub",
+    "title": "Ghost Story",
+    "subtitle": null,
+    "sortTitle": "Ghost Story",
+    "yearPublished": "1979",
+    "grade": "B",
+    "gradeValue": 9,
+    "kind": "Novel",
+    "date": "2024-12-01",
+    "authors": [
+      {
+        "slug": "peter-straub",
+        "notes": null,
+        "name": "Peter Straub",
+        "sortName": "Straub, Peter"
+      }
+    ],
+    "readings": [
+      {
+        "sequence": 1,
+        "date": "2024-12-01",
+        "isAudiobook": false,
+        "abandoned": false,
+        "readingTime": 22
+      }
+    ],
+    "includedInSlugs": [],
+    "yearReviewed": 2024,
     "moreByAuthors": [],
     "moreReviews": [
       {
@@ -2599,6 +3505,35 @@
           },
           {
             "name": "Craig Spector"
+          }
+        ]
+      },
+      {
+        "title": "Fright Night Origins",
+        "kind": "Novel",
+        "yearPublished": "2023",
+        "slug": "fright-night-origins-by-tom-holland-a-jack-ulrich",
+        "grade": "C+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Tom Holland"
+          },
+          {
+            "name": "A. Jack Ulrich"
+          }
+        ]
+      },
+      {
+        "title": "Goth",
+        "kind": "Nonfiction",
+        "yearPublished": "2023",
+        "slug": "goth-by-lol-tolhurst",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Lol Tolhurst"
           }
         ]
       },
@@ -2632,7 +3567,128 @@
     "includedWorks": []
   },
   {
-    "sequence": 59,
+    "sequence": "2024-11-08-2024-10-25-1",
+    "slug": "goth-by-lol-tolhurst",
+    "title": "Goth",
+    "subtitle": "A History",
+    "sortTitle": "Goth: A History",
+    "yearPublished": "2023",
+    "grade": "C",
+    "gradeValue": 6,
+    "kind": "Nonfiction",
+    "date": "2024-11-08",
+    "authors": [
+      {
+        "slug": "lol-tolhurst",
+        "notes": null,
+        "name": "Lol Tolhurst",
+        "sortName": "Tolhurst, Lol"
+      }
+    ],
+    "readings": [
+      {
+        "sequence": 1,
+        "date": "2024-11-08",
+        "isAudiobook": true,
+        "abandoned": false,
+        "readingTime": 15
+      }
+    ],
+    "includedInSlugs": [],
+    "yearReviewed": 2024,
+    "moreByAuthors": [],
+    "moreReviews": [
+      {
+        "title": "Fright Night",
+        "kind": "Novel",
+        "yearPublished": "1985",
+        "slug": "fright-night-by-john-skipp-craig-spector",
+        "grade": "F",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "John Skipp"
+          },
+          {
+            "name": "Craig Spector"
+          }
+        ]
+      },
+      {
+        "title": "Fright Night Origins",
+        "kind": "Novel",
+        "yearPublished": "2023",
+        "slug": "fright-night-origins-by-tom-holland-a-jack-ulrich",
+        "grade": "C+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Tom Holland"
+          },
+          {
+            "name": "A. Jack Ulrich"
+          }
+        ]
+      },
+      {
+        "title": "Ghost Story",
+        "kind": "Novel",
+        "yearPublished": "1979",
+        "slug": "ghost-story-by-peter-straub",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Peter Straub"
+          }
+        ]
+      },
+      {
+        "title": "Gothic",
+        "kind": "Novel",
+        "yearPublished": "2023",
+        "slug": "gothic-by-philip-fracassi",
+        "grade": "B+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Philip Fracassi"
+          }
+        ]
+      },
+      {
+        "title": "Hawk Mountain",
+        "kind": "Novel",
+        "yearPublished": "2022",
+        "slug": "hawk-mountain-by-conner-habib",
+        "grade": "C+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Conner Habib"
+          }
+        ]
+      },
+      {
+        "title": "The Horse Thief",
+        "kind": "Short Story",
+        "yearPublished": "2017",
+        "slug": "the-horse-thief-by-philip-fracassi",
+        "grade": "B",
+        "includedInSlugs": [
+          "behold-the-void-by-philip-fracassi"
+        ],
+        "authors": [
+          {
+            "name": "Philip Fracassi"
+          }
+        ]
+      }
+    ],
+    "includedWorks": []
+  },
+  {
+    "sequence": "2024-06-30-2024-06-28-1",
     "slug": "gothic-by-philip-fracassi",
     "title": "Gothic",
     "subtitle": null,
@@ -2652,7 +3708,7 @@
     ],
     "readings": [
       {
-        "sequence": 59,
+        "sequence": 1,
         "date": "2024-06-30",
         "isAudiobook": false,
         "abandoned": false,
@@ -2666,6 +3722,21 @@
         "name": "Philip Fracassi",
         "slug": "philip-fracassi",
         "works": [
+          {
+            "title": "Soft Construction of a Sunset",
+            "kind": "Short Story",
+            "yearPublished": "2017",
+            "slug": "soft-construction-of-a-sunset-by-philip-fracassi",
+            "grade": "B-",
+            "includedInSlugs": [
+              "behold-the-void-by-philip-fracassi"
+            ],
+            "authors": [
+              {
+                "name": "Philip Fracassi"
+              }
+            ]
+          },
           {
             "title": "Surfer Girl",
             "kind": "Short Story",
@@ -2723,27 +3794,26 @@
                 "name": "Philip Fracassi"
               }
             ]
+          },
+          {
+            "title": "The Baby Farmer",
+            "kind": "Short Story",
+            "yearPublished": "2017",
+            "slug": "the-baby-farmer-by-philip-fracassi",
+            "grade": "C+",
+            "includedInSlugs": [
+              "behold-the-void-by-philip-fracassi"
+            ],
+            "authors": [
+              {
+                "name": "Philip Fracassi"
+              }
+            ]
           }
         ]
       }
     ],
     "moreReviews": [
-      {
-        "title": "Fright Night",
-        "kind": "Novel",
-        "yearPublished": "1985",
-        "slug": "fright-night-by-john-skipp-craig-spector",
-        "grade": "F",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "John Skipp"
-          },
-          {
-            "name": "Craig Spector"
-          }
-        ]
-      },
       {
         "title": "Fright Night Origins",
         "kind": "Novel",
@@ -2757,6 +3827,32 @@
           },
           {
             "name": "A. Jack Ulrich"
+          }
+        ]
+      },
+      {
+        "title": "Ghost Story",
+        "kind": "Novel",
+        "yearPublished": "1979",
+        "slug": "ghost-story-by-peter-straub",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Peter Straub"
+          }
+        ]
+      },
+      {
+        "title": "Goth",
+        "kind": "Nonfiction",
+        "yearPublished": "2023",
+        "slug": "goth-by-lol-tolhurst",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Lol Tolhurst"
           }
         ]
       },
@@ -2787,12 +3883,25 @@
             "name": "Philip Fracassi"
           }
         ]
+      },
+      {
+        "title": "I Will Find You",
+        "kind": "Nonfiction",
+        "yearPublished": "2017",
+        "slug": "i-will-find-you-by-joe-kenda",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Joe Kenda"
+          }
+        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": 33,
+    "sequence": "2022-09-04-2022-07-24-1",
     "slug": "hawk-mountain-by-conner-habib",
     "title": "Hawk Mountain",
     "subtitle": null,
@@ -2812,7 +3921,7 @@
     ],
     "readings": [
       {
-        "sequence": 33,
+        "sequence": 1,
         "date": "2022-09-04",
         "isAudiobook": false,
         "abandoned": false,
@@ -2824,18 +3933,28 @@
     "moreByAuthors": [],
     "moreReviews": [
       {
-        "title": "Fright Night Origins",
+        "title": "Ghost Story",
         "kind": "Novel",
-        "yearPublished": "2023",
-        "slug": "fright-night-origins-by-tom-holland-a-jack-ulrich",
-        "grade": "C+",
+        "yearPublished": "1979",
+        "slug": "ghost-story-by-peter-straub",
+        "grade": "B",
         "includedInSlugs": [],
         "authors": [
           {
-            "name": "Tom Holland"
-          },
+            "name": "Peter Straub"
+          }
+        ]
+      },
+      {
+        "title": "Goth",
+        "kind": "Nonfiction",
+        "yearPublished": "2023",
+        "slug": "goth-by-lol-tolhurst",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
           {
-            "name": "A. Jack Ulrich"
+            "name": "Lol Tolhurst"
           }
         ]
       },
@@ -2879,12 +3998,25 @@
             "name": "Joe Kenda"
           }
         ]
+      },
+      {
+        "title": "Is This Anything?",
+        "kind": "Nonfiction",
+        "yearPublished": "2020",
+        "slug": "is-this-anything-by-jerry-seinfeld",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Jerry Seinfeld"
+          }
+        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": 38,
+    "sequence": "2022-09-17-2022-09-13-1",
     "slug": "i-will-find-you-by-joe-kenda",
     "title": "I Will Find You",
     "subtitle": "Solving Killer Cases from My Life Fighting Crime",
@@ -2904,7 +4036,7 @@
     ],
     "readings": [
       {
-        "sequence": 38,
+        "sequence": 1,
         "date": "2022-09-17",
         "isAudiobook": true,
         "abandoned": false,
@@ -2915,6 +4047,19 @@
     "yearReviewed": 2022,
     "moreByAuthors": [],
     "moreReviews": [
+      {
+        "title": "Gothic",
+        "kind": "Novel",
+        "yearPublished": "2023",
+        "slug": "gothic-by-philip-fracassi",
+        "grade": "B+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Philip Fracassi"
+          }
+        ]
+      },
       {
         "title": "Hawk Mountain",
         "kind": "Novel",
@@ -2968,12 +4113,25 @@
             "name": "Bret Easton Ellis"
           }
         ]
+      },
+      {
+        "title": "Live and Let Die",
+        "kind": "Novel",
+        "yearPublished": "1954",
+        "slug": "live-and-let-die-by-ian-fleming",
+        "grade": "D",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Ian Fleming"
+          }
+        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": 35,
+    "sequence": "2022-09-10-2022-09-06-1",
     "slug": "is-this-anything-by-jerry-seinfeld",
     "title": "Is This Anything?",
     "subtitle": null,
@@ -2993,7 +4151,7 @@
     ],
     "readings": [
       {
-        "sequence": 35,
+        "sequence": 1,
         "date": "2022-09-10",
         "isAudiobook": true,
         "abandoned": false,
@@ -3004,6 +4162,19 @@
     "yearReviewed": 2022,
     "moreByAuthors": [],
     "moreReviews": [
+      {
+        "title": "Hawk Mountain",
+        "kind": "Novel",
+        "yearPublished": "2022",
+        "slug": "hawk-mountain-by-conner-habib",
+        "grade": "C+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Conner Habib"
+          }
+        ]
+      },
       {
         "title": "The Horse Thief",
         "kind": "Short Story",
@@ -3057,12 +4228,25 @@
             "name": "Ian Fleming"
           }
         ]
+      },
+      {
+        "title": "Living with a SEAL",
+        "kind": "Nonfiction",
+        "yearPublished": "2015",
+        "slug": "living-with-a-seal-by-jesse-itzler",
+        "grade": "Abandoned",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Jesse Itzler"
+          }
+        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": 5,
+    "sequence": "2022-04-02-2022-03-22-1",
     "slug": "less-than-zero-by-bret-easton-ellis",
     "title": "Less Than Zero",
     "subtitle": null,
@@ -3082,7 +4266,7 @@
     ],
     "readings": [
       {
-        "sequence": 5,
+        "sequence": 1,
         "date": "2022-04-02",
         "isAudiobook": false,
         "abandoned": false,
@@ -3093,6 +4277,21 @@
     "yearReviewed": 2022,
     "moreByAuthors": [],
     "moreReviews": [
+      {
+        "title": "The Horse Thief",
+        "kind": "Short Story",
+        "yearPublished": "2017",
+        "slug": "the-horse-thief-by-philip-fracassi",
+        "grade": "B",
+        "includedInSlugs": [
+          "behold-the-void-by-philip-fracassi"
+        ],
+        "authors": [
+          {
+            "name": "Philip Fracassi"
+          }
+        ]
+      },
       {
         "title": "I Will Find You",
         "kind": "Nonfiction",
@@ -3144,12 +4343,27 @@
             "name": "Jesse Itzler"
           }
         ]
+      },
+      {
+        "title": "Mandala",
+        "kind": "Novella",
+        "yearPublished": "2017",
+        "slug": "mandala-by-philip-fracassi",
+        "grade": "B+",
+        "includedInSlugs": [
+          "behold-the-void-by-philip-fracassi"
+        ],
+        "authors": [
+          {
+            "name": "Philip Fracassi"
+          }
+        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": 25,
+    "sequence": "2022-06-30-2022-06-17-1",
     "slug": "live-and-let-die-by-ian-fleming",
     "title": "Live and Let Die",
     "subtitle": null,
@@ -3169,7 +4383,7 @@
     ],
     "readings": [
       {
-        "sequence": 25,
+        "sequence": 1,
         "date": "2022-06-30",
         "isAudiobook": false,
         "abandoned": false,
@@ -3180,6 +4394,19 @@
     "yearReviewed": 2022,
     "moreByAuthors": [],
     "moreReviews": [
+      {
+        "title": "I Will Find You",
+        "kind": "Nonfiction",
+        "yearPublished": "2017",
+        "slug": "i-will-find-you-by-joe-kenda",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Joe Kenda"
+          }
+        ]
+      },
       {
         "title": "Is This Anything?",
         "kind": "Nonfiction",
@@ -3233,12 +4460,25 @@
             "name": "Philip Fracassi"
           }
         ]
+      },
+      {
+        "title": "Moonraker",
+        "kind": "Novel",
+        "yearPublished": "1955",
+        "slug": "moonraker-by-ian-fleming",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Ian Fleming"
+          }
+        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": 20,
+    "sequence": "2022-06-01-2022-05-24-1",
     "slug": "living-with-a-seal-by-jesse-itzler",
     "title": "Living with a SEAL",
     "subtitle": "31 Days Training with the Toughest Man on the Planet",
@@ -3258,7 +4498,7 @@
     ],
     "readings": [
       {
-        "sequence": 20,
+        "sequence": 1,
         "date": "2022-06-01",
         "isAudiobook": false,
         "abandoned": true,
@@ -3269,6 +4509,19 @@
     "yearReviewed": 2022,
     "moreByAuthors": [],
     "moreReviews": [
+      {
+        "title": "Is This Anything?",
+        "kind": "Nonfiction",
+        "yearPublished": "2020",
+        "slug": "is-this-anything-by-jerry-seinfeld",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Jerry Seinfeld"
+          }
+        ]
+      },
       {
         "title": "Less Than Zero",
         "kind": "Novel",
@@ -3322,12 +4575,27 @@
             "name": "Ian Fleming"
           }
         ]
+      },
+      {
+        "title": "Mother",
+        "kind": "Short Story",
+        "yearPublished": "2015",
+        "slug": "mother-by-philip-fracassi",
+        "grade": "B-",
+        "includedInSlugs": [
+          "behold-the-void-by-philip-fracassi"
+        ],
+        "authors": [
+          {
+            "name": "Philip Fracassi"
+          }
+        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": 16,
+    "sequence": "2022-05-07-2022-05-01-1",
     "slug": "mandala-by-philip-fracassi",
     "title": "Mandala",
     "subtitle": null,
@@ -3347,7 +4615,7 @@
     ],
     "readings": [
       {
-        "sequence": 16,
+        "sequence": 1,
         "date": "2022-05-07",
         "isAudiobook": false,
         "abandoned": false,
@@ -3363,6 +4631,21 @@
         "name": "Philip Fracassi",
         "slug": "philip-fracassi",
         "works": [
+          {
+            "title": "Coffin",
+            "kind": "Short Story",
+            "yearPublished": "2017",
+            "slug": "coffin-by-philip-fracassi",
+            "grade": "C+",
+            "includedInSlugs": [
+              "behold-the-void-by-philip-fracassi"
+            ],
+            "authors": [
+              {
+                "name": "Philip Fracassi"
+              }
+            ]
+          },
           {
             "title": "Fail-Safe",
             "kind": "Short Story",
@@ -3420,11 +4703,39 @@
                 "name": "Philip Fracassi"
               }
             ]
+          },
+          {
+            "title": "Surfer Girl",
+            "kind": "Short Story",
+            "yearPublished": "2017",
+            "slug": "surfer-girl-by-philip-fracassi",
+            "grade": "C+",
+            "includedInSlugs": [
+              "behold-the-void-by-philip-fracassi"
+            ],
+            "authors": [
+              {
+                "name": "Philip Fracassi"
+              }
+            ]
           }
         ]
       }
     ],
     "moreReviews": [
+      {
+        "title": "Less Than Zero",
+        "kind": "Novel",
+        "yearPublished": "1985",
+        "slug": "less-than-zero-by-bret-easton-ellis",
+        "grade": "B+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Bret Easton Ellis"
+          }
+        ]
+      },
       {
         "title": "Live and Let Die",
         "kind": "Novel",
@@ -3478,12 +4789,25 @@
             "name": "Philip Fracassi"
           }
         ]
+      },
+      {
+        "title": "On Writing",
+        "kind": "Nonfiction",
+        "yearPublished": "2000",
+        "slug": "on-writing-by-stephen-king",
+        "grade": "A-",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Stephen King"
+          }
+        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": 46,
+    "sequence": "2022-10-16-2022-10-15-1",
     "slug": "moonraker-by-ian-fleming",
     "title": "Moonraker",
     "subtitle": null,
@@ -3503,7 +4827,7 @@
     ],
     "readings": [
       {
-        "sequence": 46,
+        "sequence": 1,
         "date": "2022-10-16",
         "isAudiobook": true,
         "abandoned": false,
@@ -3514,6 +4838,19 @@
     "yearReviewed": 2022,
     "moreByAuthors": [],
     "moreReviews": [
+      {
+        "title": "Live and Let Die",
+        "kind": "Novel",
+        "yearPublished": "1954",
+        "slug": "live-and-let-die-by-ian-fleming",
+        "grade": "D",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Ian Fleming"
+          }
+        ]
+      },
       {
         "title": "Living with a SEAL",
         "kind": "Nonfiction",
@@ -3569,12 +4906,27 @@
             "name": "Stephen King"
           }
         ]
+      },
+      {
+        "title": "Out Are the Lights",
+        "kind": "Novel",
+        "yearPublished": "1982",
+        "slug": "out-are-the-lights-by-richard-laymon",
+        "grade": "C-",
+        "includedInSlugs": [
+          "out-are-the-lights-and-other-tales-by-richard-laymon"
+        ],
+        "authors": [
+          {
+            "name": "Richard Laymon"
+          }
+        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": 14,
+    "sequence": "2022-04-23-2022-04-23-1",
     "slug": "mother-by-philip-fracassi",
     "title": "Mother",
     "subtitle": null,
@@ -3594,7 +4946,7 @@
     ],
     "readings": [
       {
-        "sequence": 14,
+        "sequence": 1,
         "date": "2022-04-23",
         "isAudiobook": false,
         "abandoned": false,
@@ -3610,6 +4962,21 @@
         "name": "Philip Fracassi",
         "slug": "philip-fracassi",
         "works": [
+          {
+            "title": "Surfer Girl",
+            "kind": "Short Story",
+            "yearPublished": "2017",
+            "slug": "surfer-girl-by-philip-fracassi",
+            "grade": "C+",
+            "includedInSlugs": [
+              "behold-the-void-by-philip-fracassi"
+            ],
+            "authors": [
+              {
+                "name": "Philip Fracassi"
+              }
+            ]
+          },
           {
             "title": "Don't Let Them Get You Down",
             "kind": "Novel",
@@ -3665,11 +5032,37 @@
                 "name": "Philip Fracassi"
               }
             ]
+          },
+          {
+            "title": "Behold the Void",
+            "kind": "Collection",
+            "yearPublished": "2017",
+            "slug": "behold-the-void-by-philip-fracassi",
+            "grade": "B+",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Philip Fracassi"
+              }
+            ]
           }
         ]
       }
     ],
     "moreReviews": [
+      {
+        "title": "Living with a SEAL",
+        "kind": "Nonfiction",
+        "yearPublished": "2015",
+        "slug": "living-with-a-seal-by-jesse-itzler",
+        "grade": "Abandoned",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Jesse Itzler"
+          }
+        ]
+      },
       {
         "title": "Mandala",
         "kind": "Novella",
@@ -3725,12 +5118,25 @@
             "name": "Richard Laymon"
           }
         ]
+      },
+      {
+        "title": "The Postman Always Rings Twice",
+        "kind": "Novel",
+        "yearPublished": "1934",
+        "slug": "the-postman-always-rings-twice-by-james-m-cain",
+        "grade": "B+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "James M. Cain"
+          }
+        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": 4,
+    "sequence": "2022-03-21-2022-03-19-1",
     "slug": "on-writing-by-stephen-king",
     "title": "On Writing",
     "subtitle": "A Memoir of the Craft",
@@ -3750,7 +5156,7 @@
     ],
     "readings": [
       {
-        "sequence": 4,
+        "sequence": 1,
         "date": "2022-03-21",
         "isAudiobook": false,
         "abandoned": false,
@@ -3764,6 +5170,19 @@
         "name": "Stephen King",
         "slug": "stephen-king",
         "works": [
+          {
+            "title": "Carrie",
+            "kind": "Novel",
+            "yearPublished": "1974",
+            "slug": "carrie-by-stephen-king",
+            "grade": "B-",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          },
           {
             "title": "'Salem's Lot",
             "kind": "Novel",
@@ -3815,11 +5234,39 @@
                 "name": "Stephen King"
               }
             ]
+          },
+          {
+            "title": "'Salem's Lot",
+            "kind": "Novel",
+            "yearPublished": "1975",
+            "slug": "salems-lot-by-stephen-king",
+            "grade": "B",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
           }
         ]
       }
     ],
     "moreReviews": [
+      {
+        "title": "Mandala",
+        "kind": "Novella",
+        "yearPublished": "2017",
+        "slug": "mandala-by-philip-fracassi",
+        "grade": "B+",
+        "includedInSlugs": [
+          "behold-the-void-by-philip-fracassi"
+        ],
+        "authors": [
+          {
+            "name": "Philip Fracassi"
+          }
+        ]
+      },
       {
         "title": "Moonraker",
         "kind": "Novel",
@@ -3875,12 +5322,25 @@
             "name": "James M. Cain"
           }
         ]
+      },
+      {
+        "title": "Recessional",
+        "kind": "Nonfiction",
+        "yearPublished": "2022",
+        "slug": "recessional-by-david-mamet",
+        "grade": "D",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "David Mamet"
+          }
+        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": 43,
+    "sequence": "2022-10-11-2022-09-24-2",
     "slug": "out-are-the-lights-by-richard-laymon",
     "title": "Out Are the Lights",
     "subtitle": null,
@@ -3900,7 +5360,7 @@
     ],
     "readings": [
       {
-        "sequence": 43,
+        "sequence": 2,
         "date": "2022-10-11",
         "isAudiobook": false,
         "abandoned": false,
@@ -3916,6 +5376,21 @@
         "name": "Richard Laymon",
         "slug": "richard-laymon",
         "works": [
+          {
+            "title": "Roadside Pickup",
+            "kind": "Short Story",
+            "yearPublished": "1974",
+            "slug": "roadside-pickup-by-richard-laymon",
+            "grade": "C-",
+            "includedInSlugs": [
+              "short-stories-volume-one-by-richard-laymon"
+            ],
+            "authors": [
+              {
+                "name": "Richard Laymon"
+              }
+            ]
+          },
           {
             "title": "The Cellar",
             "kind": "Novel",
@@ -3971,11 +5446,37 @@
                 "name": "Richard Laymon"
               }
             ]
+          },
+          {
+            "title": "The Cellar",
+            "kind": "Novel",
+            "yearPublished": "1980",
+            "slug": "the-cellar-by-richard-laymon",
+            "grade": "C+",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Richard Laymon"
+              }
+            ]
           }
         ]
       }
     ],
     "moreReviews": [
+      {
+        "title": "Moonraker",
+        "kind": "Novel",
+        "yearPublished": "1955",
+        "slug": "moonraker-by-ian-fleming",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Ian Fleming"
+          }
+        ]
+      },
       {
         "title": "Mother",
         "kind": "Short Story",
@@ -4029,12 +5530,25 @@
             "name": "David Mamet"
           }
         ]
+      },
+      {
+        "title": "Record Play Pause",
+        "kind": "Nonfiction",
+        "yearPublished": "2019",
+        "slug": "record-play-pause-by-stephen-morris",
+        "grade": "A",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Stephen Morris"
+          }
+        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": 61,
+    "sequence": "2024-08-25-2024-08-02-1",
     "slug": "recessional-by-david-mamet",
     "title": "Recessional",
     "subtitle": "The Death of Free Speech and the Cost of a Free Lunch",
@@ -4054,7 +5568,7 @@
     ],
     "readings": [
       {
-        "sequence": 61,
+        "sequence": 1,
         "date": "2024-08-25",
         "isAudiobook": false,
         "abandoned": false,
@@ -4065,6 +5579,19 @@
     "yearReviewed": 2024,
     "moreByAuthors": [],
     "moreReviews": [
+      {
+        "title": "On Writing",
+        "kind": "Nonfiction",
+        "yearPublished": "2000",
+        "slug": "on-writing-by-stephen-king",
+        "grade": "A-",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Stephen King"
+          }
+        ]
+      },
       {
         "title": "Out Are the Lights",
         "kind": "Novel",
@@ -4118,12 +5645,27 @@
             "name": "Edmund Morris"
           }
         ]
+      },
+      {
+        "title": "Roadside Pickup",
+        "kind": "Short Story",
+        "yearPublished": "1974",
+        "slug": "roadside-pickup-by-richard-laymon",
+        "grade": "C-",
+        "includedInSlugs": [
+          "short-stories-volume-one-by-richard-laymon"
+        ],
+        "authors": [
+          {
+            "name": "Richard Laymon"
+          }
+        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": 57,
+    "sequence": "2023-11-11-2023-11-06-1",
     "slug": "record-play-pause-by-stephen-morris",
     "title": "Record Play Pause",
     "subtitle": null,
@@ -4143,7 +5685,7 @@
     ],
     "readings": [
       {
-        "sequence": 57,
+        "sequence": 1,
         "date": "2023-11-11",
         "isAudiobook": true,
         "abandoned": false,
@@ -4154,6 +5696,21 @@
     "yearReviewed": 2023,
     "moreByAuthors": [],
     "moreReviews": [
+      {
+        "title": "Out Are the Lights",
+        "kind": "Novel",
+        "yearPublished": "1982",
+        "slug": "out-are-the-lights-by-richard-laymon",
+        "grade": "C-",
+        "includedInSlugs": [
+          "out-are-the-lights-and-other-tales-by-richard-laymon"
+        ],
+        "authors": [
+          {
+            "name": "Richard Laymon"
+          }
+        ]
+      },
       {
         "title": "The Postman Always Rings Twice",
         "kind": "Novel",
@@ -4207,12 +5764,25 @@
             "name": "Richard Laymon"
           }
         ]
+      },
+      {
+        "title": "The Rules of Attraction",
+        "kind": "Novel",
+        "yearPublished": "1987",
+        "slug": "the-rules-of-attraction-by-bret-easton-ellis",
+        "grade": "C+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Bret Easton Ellis"
+          }
+        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": 51,
+    "sequence": "2023-01-21-2023-01-21-1",
     "slug": "roadside-pickup-by-richard-laymon",
     "title": "Roadside Pickup",
     "subtitle": null,
@@ -4232,7 +5802,7 @@
     ],
     "readings": [
       {
-        "sequence": 51,
+        "sequence": 1,
         "date": "2023-01-21",
         "isAudiobook": false,
         "abandoned": false,
@@ -4249,6 +5819,19 @@
         "slug": "richard-laymon",
         "works": [
           {
+            "title": "The Woods Are Dark",
+            "kind": "Novel",
+            "yearPublished": "1981",
+            "slug": "the-woods-are-dark-by-richard-laymon",
+            "grade": "C+",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Richard Laymon"
+              }
+            ]
+          },
+          {
             "title": "Out Are the Lights",
             "kind": "Novel",
             "yearPublished": "1982",
@@ -4262,52 +5845,24 @@
                 "name": "Richard Laymon"
               }
             ]
-          },
-          {
-            "title": "Desert Pickup",
-            "kind": "Short Story",
-            "yearPublished": "1970",
-            "slug": "desert-pickup-by-richard-laymon",
-            "grade": "C-",
-            "includedInSlugs": [
-              "short-stories-volume-one-by-richard-laymon"
-            ],
-            "authors": [
-              {
-                "name": "Richard Laymon"
-              }
-            ]
-          },
-          {
-            "title": "The Cellar",
-            "kind": "Novel",
-            "yearPublished": "1980",
-            "slug": "the-cellar-by-richard-laymon",
-            "grade": "C+",
-            "includedInSlugs": [],
-            "authors": [
-              {
-                "name": "Richard Laymon"
-              }
-            ]
-          },
-          {
-            "title": "The Woods Are Dark",
-            "kind": "Novel",
-            "yearPublished": "1981",
-            "slug": "the-woods-are-dark-by-richard-laymon",
-            "grade": "C+",
-            "includedInSlugs": [],
-            "authors": [
-              {
-                "name": "Richard Laymon"
-              }
-            ]
           }
         ]
       }
     ],
     "moreReviews": [
+      {
+        "title": "Recessional",
+        "kind": "Nonfiction",
+        "yearPublished": "2022",
+        "slug": "recessional-by-david-mamet",
+        "grade": "D",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "David Mamet"
+          }
+        ]
+      },
       {
         "title": "Record Play Pause",
         "kind": "Nonfiction",
@@ -4359,12 +5914,25 @@
             "name": "Philip Fracassi"
           }
         ]
+      },
+      {
+        "title": "The Secret History",
+        "kind": "Novel",
+        "yearPublished": "1992",
+        "slug": "the-secret-history-by-donna-tartt",
+        "grade": "A",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Donna Tartt"
+          }
+        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": 53,
+    "sequence": "2023-10-09-2023-10-07-1",
     "slug": "sacculina-by-philip-fracassi",
     "title": "Sacculina",
     "subtitle": null,
@@ -4384,7 +5952,7 @@
     ],
     "readings": [
       {
-        "sequence": 53,
+        "sequence": 1,
         "date": "2023-10-09",
         "isAudiobook": false,
         "abandoned": false,
@@ -4398,6 +5966,21 @@
         "name": "Philip Fracassi",
         "slug": "philip-fracassi",
         "works": [
+          {
+            "title": "Fail-Safe",
+            "kind": "Short Story",
+            "yearPublished": "2017",
+            "slug": "fail-safe-by-philip-fracassi",
+            "grade": "C",
+            "includedInSlugs": [
+              "behold-the-void-by-philip-fracassi"
+            ],
+            "authors": [
+              {
+                "name": "Philip Fracassi"
+              }
+            ]
+          },
           {
             "title": "The Horse Thief",
             "kind": "Short Story",
@@ -4457,11 +6040,37 @@
                 "name": "Philip Fracassi"
               }
             ]
+          },
+          {
+            "title": "Don't Let Them Get You Down",
+            "kind": "Novel",
+            "yearPublished": "2022",
+            "slug": "dont-let-them-get-you-down-by-philip-fracassi",
+            "grade": "C-",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Philip Fracassi"
+              }
+            ]
           }
         ]
       }
     ],
     "moreReviews": [
+      {
+        "title": "The Rise of Theodore Roosevelt",
+        "kind": "Nonfiction",
+        "yearPublished": "1979",
+        "slug": "the-rise-of-theodore-roosevelt-by-edmund-morris",
+        "grade": "A-",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Edmund Morris"
+          }
+        ]
+      },
       {
         "title": "Roadside Pickup",
         "kind": "Short Story",
@@ -4515,12 +6124,25 @@
             "name": "Johnny Marr"
           }
         ]
+      },
+      {
+        "title": "The Shining",
+        "kind": "Novel",
+        "yearPublished": "1977",
+        "slug": "the-shining-by-stephen-king",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Stephen King"
+          }
+        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": 45,
+    "sequence": "2022-10-14-2022-10-07-1",
     "slug": "salems-lot-by-stephen-king",
     "title": "'Salem's Lot",
     "subtitle": null,
@@ -4540,7 +6162,7 @@
     ],
     "readings": [
       {
-        "sequence": 45,
+        "sequence": 1,
         "date": "2022-10-14",
         "isAudiobook": true,
         "abandoned": false,
@@ -4555,45 +6177,6 @@
         "slug": "stephen-king",
         "works": [
           {
-            "title": "Doctor Sleep",
-            "kind": "Novel",
-            "yearPublished": "2013",
-            "slug": "doctor-sleep-by-stephen-king",
-            "grade": "C+",
-            "includedInSlugs": [],
-            "authors": [
-              {
-                "name": "Stephen King"
-              }
-            ]
-          },
-          {
-            "title": "Carrie",
-            "kind": "Novel",
-            "yearPublished": "1974",
-            "slug": "carrie-by-stephen-king",
-            "grade": "B-",
-            "includedInSlugs": [],
-            "authors": [
-              {
-                "name": "Stephen King"
-              }
-            ]
-          },
-          {
-            "title": "The Shining",
-            "kind": "Novel",
-            "yearPublished": "1977",
-            "slug": "the-shining-by-stephen-king",
-            "grade": "B",
-            "includedInSlugs": [],
-            "authors": [
-              {
-                "name": "Stephen King"
-              }
-            ]
-          },
-          {
             "title": "On Writing",
             "kind": "Nonfiction",
             "yearPublished": "2000",
@@ -4605,11 +6188,37 @@
                 "name": "Stephen King"
               }
             ]
+          },
+          {
+            "title": "Doctor Sleep",
+            "kind": "Novel",
+            "yearPublished": "2013",
+            "slug": "doctor-sleep-by-stephen-king",
+            "grade": "C+",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
           }
         ]
       }
     ],
     "moreReviews": [
+      {
+        "title": "Total Recall",
+        "kind": "Nonfiction",
+        "yearPublished": "2012",
+        "slug": "total-recall-by-arnold-schwarzenegger",
+        "grade": "C+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Arnold Schwarzenegger"
+          }
+        ]
+      },
       {
         "title": "What Doesn't Kill Us",
         "kind": "Nonfiction",
@@ -4664,12 +6273,27 @@
             "name": "Julie Sherman"
           }
         ]
+      },
+      {
+        "title": "Altar",
+        "kind": "Short Story",
+        "yearPublished": "2016",
+        "slug": "altar-by-philip-fracassi",
+        "grade": "A-",
+        "includedInSlugs": [
+          "behold-the-void-by-philip-fracassi"
+        ],
+        "authors": [
+          {
+            "name": "Philip Fracassi"
+          }
+        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": 23,
+    "sequence": "2022-06-25-2022-06-24-1",
     "slug": "set-the-boy-free-by-johnny-marr",
     "title": "Set the Boy Free",
     "subtitle": "The Autobiography",
@@ -4689,7 +6313,7 @@
     ],
     "readings": [
       {
-        "sequence": 23,
+        "sequence": 1,
         "date": "2022-06-25",
         "isAudiobook": true,
         "abandoned": false,
@@ -4700,6 +6324,19 @@
     "yearReviewed": 2022,
     "moreByAuthors": [],
     "moreReviews": [
+      {
+        "title": "The Rules of Attraction",
+        "kind": "Novel",
+        "yearPublished": "1987",
+        "slug": "the-rules-of-attraction-by-bret-easton-ellis",
+        "grade": "C+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Bret Easton Ellis"
+          }
+        ]
+      },
       {
         "title": "Sacculina",
         "kind": "Novella",
@@ -4751,12 +6388,27 @@
             "name": "Steven Novella"
           }
         ]
+      },
+      {
+        "title": "Soft Construction of a Sunset",
+        "kind": "Short Story",
+        "yearPublished": "2017",
+        "slug": "soft-construction-of-a-sunset-by-philip-fracassi",
+        "grade": "B-",
+        "includedInSlugs": [
+          "behold-the-void-by-philip-fracassi"
+        ],
+        "authors": [
+          {
+            "name": "Philip Fracassi"
+          }
+        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": 8,
+    "sequence": "2022-04-17-2022-04-17-1",
     "slug": "soft-construction-of-a-sunset-by-philip-fracassi",
     "title": "Soft Construction of a Sunset",
     "subtitle": null,
@@ -4776,7 +6428,7 @@
     ],
     "readings": [
       {
-        "sequence": 8,
+        "sequence": 1,
         "date": "2022-04-17",
         "isAudiobook": false,
         "abandoned": false,
@@ -4792,6 +6444,21 @@
         "name": "Philip Fracassi",
         "slug": "philip-fracassi",
         "works": [
+          {
+            "title": "The Horse Thief",
+            "kind": "Short Story",
+            "yearPublished": "2017",
+            "slug": "the-horse-thief-by-philip-fracassi",
+            "grade": "B",
+            "includedInSlugs": [
+              "behold-the-void-by-philip-fracassi"
+            ],
+            "authors": [
+              {
+                "name": "Philip Fracassi"
+              }
+            ]
+          },
           {
             "title": "Mandala",
             "kind": "Novella",
@@ -4847,11 +6514,37 @@
                 "name": "Philip Fracassi"
               }
             ]
+          },
+          {
+            "title": "Gothic",
+            "kind": "Novel",
+            "yearPublished": "2023",
+            "slug": "gothic-by-philip-fracassi",
+            "grade": "B+",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Philip Fracassi"
+              }
+            ]
           }
         ]
       }
     ],
     "moreReviews": [
+      {
+        "title": "Set the Boy Free",
+        "kind": "Nonfiction",
+        "yearPublished": "2016",
+        "slug": "set-the-boy-free-by-johnny-marr",
+        "grade": "B+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Johnny Marr"
+          }
+        ]
+      },
       {
         "title": "The Shining",
         "kind": "Novel",
@@ -4903,12 +6596,25 @@
             "name": "Arnold Schwarzenegger"
           }
         ]
+      },
+      {
+        "title": "What Doesn't Kill Us",
+        "kind": "Nonfiction",
+        "yearPublished": "2017",
+        "slug": "what-doesnt-kill-us-by-scott-carney",
+        "grade": "C+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Scott Carney"
+          }
+        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": 13,
+    "sequence": "2022-04-22-2022-04-22-1",
     "slug": "surfer-girl-by-philip-fracassi",
     "title": "Surfer Girl",
     "subtitle": null,
@@ -4928,7 +6634,7 @@
     ],
     "readings": [
       {
-        "sequence": 13,
+        "sequence": 1,
         "date": "2022-04-22",
         "isAudiobook": false,
         "abandoned": false,
@@ -4944,6 +6650,21 @@
         "name": "Philip Fracassi",
         "slug": "philip-fracassi",
         "works": [
+          {
+            "title": "Mandala",
+            "kind": "Novella",
+            "yearPublished": "2017",
+            "slug": "mandala-by-philip-fracassi",
+            "grade": "B+",
+            "includedInSlugs": [
+              "behold-the-void-by-philip-fracassi"
+            ],
+            "authors": [
+              {
+                "name": "Philip Fracassi"
+              }
+            ]
+          },
           {
             "title": "Sacculina",
             "kind": "Novella",
@@ -4997,11 +6718,39 @@
                 "name": "Philip Fracassi"
               }
             ]
+          },
+          {
+            "title": "Mother",
+            "kind": "Short Story",
+            "yearPublished": "2015",
+            "slug": "mother-by-philip-fracassi",
+            "grade": "B-",
+            "includedInSlugs": [
+              "behold-the-void-by-philip-fracassi"
+            ],
+            "authors": [
+              {
+                "name": "Philip Fracassi"
+              }
+            ]
           }
         ]
       }
     ],
     "moreReviews": [
+      {
+        "title": "Set the Boy Free",
+        "kind": "Nonfiction",
+        "yearPublished": "2016",
+        "slug": "set-the-boy-free-by-johnny-marr",
+        "grade": "B+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Johnny Marr"
+          }
+        ]
+      },
       {
         "title": "The Shining",
         "kind": "Novel",
@@ -5053,12 +6802,25 @@
             "name": "Arnold Schwarzenegger"
           }
         ]
+      },
+      {
+        "title": "What Doesn't Kill Us",
+        "kind": "Nonfiction",
+        "yearPublished": "2017",
+        "slug": "what-doesnt-kill-us-by-scott-carney",
+        "grade": "C+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Scott Carney"
+          }
+        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": 29,
+    "sequence": "2022-07-15-2022-07-10-1",
     "slug": "the-48-laws-of-power-by-robert-greene",
     "title": "The 48 Laws of Power",
     "subtitle": null,
@@ -5078,7 +6840,7 @@
     ],
     "readings": [
       {
-        "sequence": 29,
+        "sequence": 1,
         "date": "2022-07-15",
         "isAudiobook": true,
         "abandoned": false,
@@ -5089,6 +6851,19 @@
     "yearReviewed": 2022,
     "moreByAuthors": [],
     "moreReviews": [
+      {
+        "title": "What Doesn't Kill Us",
+        "kind": "Nonfiction",
+        "yearPublished": "2017",
+        "slug": "what-doesnt-kill-us-by-scott-carney",
+        "grade": "C+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Scott Carney"
+          }
+        ]
+      },
       {
         "title": "The Woods Are Dark",
         "kind": "Novel",
@@ -5145,12 +6920,27 @@
             "name": "Philip Fracassi"
           }
         ]
+      },
+      {
+        "title": "The Baby Farmer",
+        "kind": "Short Story",
+        "yearPublished": "2017",
+        "slug": "the-baby-farmer-by-philip-fracassi",
+        "grade": "C+",
+        "includedInSlugs": [
+          "behold-the-void-by-philip-fracassi"
+        ],
+        "authors": [
+          {
+            "name": "Philip Fracassi"
+          }
+        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": 12,
+    "sequence": "2022-04-21-2022-04-21-1",
     "slug": "the-baby-farmer-by-philip-fracassi",
     "title": "The Baby Farmer",
     "subtitle": null,
@@ -5170,7 +6960,7 @@
     ],
     "readings": [
       {
-        "sequence": 12,
+        "sequence": 1,
         "date": "2022-04-21",
         "isAudiobook": false,
         "abandoned": false,
@@ -5186,6 +6976,19 @@
         "name": "Philip Fracassi",
         "slug": "philip-fracassi",
         "works": [
+          {
+            "title": "Gothic",
+            "kind": "Novel",
+            "yearPublished": "2023",
+            "slug": "gothic-by-philip-fracassi",
+            "grade": "B+",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Philip Fracassi"
+              }
+            ]
+          },
           {
             "title": "Mother",
             "kind": "Short Story",
@@ -5243,11 +7046,39 @@
                 "name": "Philip Fracassi"
               }
             ]
+          },
+          {
+            "title": "Fail-Safe",
+            "kind": "Short Story",
+            "yearPublished": "2017",
+            "slug": "fail-safe-by-philip-fracassi",
+            "grade": "C",
+            "includedInSlugs": [
+              "behold-the-void-by-philip-fracassi"
+            ],
+            "authors": [
+              {
+                "name": "Philip Fracassi"
+              }
+            ]
           }
         ]
       }
     ],
     "moreReviews": [
+      {
+        "title": "'Salem's Lot",
+        "kind": "Novel",
+        "yearPublished": "1975",
+        "slug": "salems-lot-by-stephen-king",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Stephen King"
+          }
+        ]
+      },
       {
         "title": "The 48 Laws of Power",
         "kind": "Nonfiction",
@@ -5302,12 +7133,25 @@
             "name": "Dave Draper"
           }
         ]
+      },
+      {
+        "title": "Can't Hurt Me",
+        "kind": "Nonfiction",
+        "yearPublished": "2018",
+        "slug": "cant-hurt-me-by-david-goggins",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "David Goggins"
+          }
+        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": 41,
+    "sequence": "2022-09-24-2022-09-24-1",
     "slug": "the-big-sleep-by-raymond-chandler",
     "title": "The Big Sleep",
     "subtitle": null,
@@ -5327,7 +7171,7 @@
     ],
     "readings": [
       {
-        "sequence": 41,
+        "sequence": 1,
         "date": "2022-09-24",
         "isAudiobook": true,
         "abandoned": false,
@@ -5338,6 +7182,21 @@
     "yearReviewed": 2022,
     "moreByAuthors": [],
     "moreReviews": [
+      {
+        "title": "Altar",
+        "kind": "Short Story",
+        "yearPublished": "2016",
+        "slug": "altar-by-philip-fracassi",
+        "grade": "A-",
+        "includedInSlugs": [
+          "behold-the-void-by-philip-fracassi"
+        ],
+        "authors": [
+          {
+            "name": "Philip Fracassi"
+          }
+        ]
+      },
       {
         "title": "The Baby Farmer",
         "kind": "Short Story",
@@ -5391,12 +7250,25 @@
             "name": "David Goggins"
           }
         ]
+      },
+      {
+        "title": "Carrie",
+        "kind": "Novel",
+        "yearPublished": "1974",
+        "slug": "carrie-by-stephen-king",
+        "grade": "B-",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Stephen King"
+          }
+        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": 2,
+    "sequence": "2022-03-16-2022-03-07-1",
     "slug": "the-cellar-by-richard-laymon",
     "title": "The Cellar",
     "subtitle": null,
@@ -5416,7 +7288,7 @@
     ],
     "readings": [
       {
-        "sequence": 2,
+        "sequence": 1,
         "date": "2022-03-16",
         "isAudiobook": false,
         "abandoned": false,
@@ -5431,49 +7303,6 @@
         "slug": "richard-laymon",
         "works": [
           {
-            "title": "Desert Pickup",
-            "kind": "Short Story",
-            "yearPublished": "1970",
-            "slug": "desert-pickup-by-richard-laymon",
-            "grade": "C-",
-            "includedInSlugs": [
-              "short-stories-volume-one-by-richard-laymon"
-            ],
-            "authors": [
-              {
-                "name": "Richard Laymon"
-              }
-            ]
-          },
-          {
-            "title": "Roadside Pickup",
-            "kind": "Short Story",
-            "yearPublished": "1974",
-            "slug": "roadside-pickup-by-richard-laymon",
-            "grade": "C-",
-            "includedInSlugs": [
-              "short-stories-volume-one-by-richard-laymon"
-            ],
-            "authors": [
-              {
-                "name": "Richard Laymon"
-              }
-            ]
-          },
-          {
-            "title": "The Woods Are Dark",
-            "kind": "Novel",
-            "yearPublished": "1981",
-            "slug": "the-woods-are-dark-by-richard-laymon",
-            "grade": "C+",
-            "includedInSlugs": [],
-            "authors": [
-              {
-                "name": "Richard Laymon"
-              }
-            ]
-          },
-          {
             "title": "Out Are the Lights",
             "kind": "Novel",
             "yearPublished": "1982",
@@ -5487,11 +7316,39 @@
                 "name": "Richard Laymon"
               }
             ]
+          },
+          {
+            "title": "Desert Pickup",
+            "kind": "Short Story",
+            "yearPublished": "1970",
+            "slug": "desert-pickup-by-richard-laymon",
+            "grade": "C-",
+            "includedInSlugs": [
+              "short-stories-volume-one-by-richard-laymon"
+            ],
+            "authors": [
+              {
+                "name": "Richard Laymon"
+              }
+            ]
           }
         ]
       }
     ],
     "moreReviews": [
+      {
+        "title": "Can't Hurt Me",
+        "kind": "Nonfiction",
+        "yearPublished": "2018",
+        "slug": "cant-hurt-me-by-david-goggins",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "David Goggins"
+          }
+        ]
+      },
       {
         "title": "Carrie",
         "kind": "Novel",
@@ -5543,12 +7400,27 @@
             "name": "Kathe Koja"
           }
         ]
+      },
+      {
+        "title": "Coffin",
+        "kind": "Short Story",
+        "yearPublished": "2017",
+        "slug": "coffin-by-philip-fracassi",
+        "grade": "C+",
+        "includedInSlugs": [
+          "behold-the-void-by-philip-fracassi"
+        ],
+        "authors": [
+          {
+            "name": "Philip Fracassi"
+          }
+        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": 52,
+    "sequence": "2023-01-29-2023-01-22-1",
     "slug": "the-cipher-by-kathe-koja",
     "title": "The Cipher",
     "subtitle": null,
@@ -5568,7 +7440,7 @@
     ],
     "readings": [
       {
-        "sequence": 52,
+        "sequence": 1,
         "date": "2023-01-29",
         "isAudiobook": false,
         "abandoned": false,
@@ -5579,6 +7451,19 @@
     "yearReviewed": 2023,
     "moreByAuthors": [],
     "moreReviews": [
+      {
+        "title": "Casino Royale",
+        "kind": "Novel",
+        "yearPublished": "1953",
+        "slug": "casino-royale-by-ian-fleming",
+        "grade": "B-",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Ian Fleming"
+          }
+        ]
+      },
       {
         "title": "The Cellar",
         "kind": "Novel",
@@ -5632,12 +7517,25 @@
             "name": "Chuck Palahniuk"
           }
         ]
+      },
+      {
+        "title": "The Creative Act",
+        "kind": "Nonfiction",
+        "yearPublished": "2023",
+        "slug": "the-creative-act-by-rick-rubin",
+        "grade": "C+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Rick Rubin"
+          }
+        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": 54,
+    "sequence": "2023-10-22-2023-10-22-1",
     "slug": "the-creative-act-by-rick-rubin",
     "title": "The Creative Act",
     "subtitle": "A Way of Being",
@@ -5657,7 +7555,7 @@
     ],
     "readings": [
       {
-        "sequence": 54,
+        "sequence": 1,
         "date": "2023-10-22",
         "isAudiobook": true,
         "abandoned": false,
@@ -5668,6 +7566,19 @@
     "yearReviewed": 2023,
     "moreByAuthors": [],
     "moreReviews": [
+      {
+        "title": "The Cipher",
+        "kind": "Novel",
+        "yearPublished": "1991",
+        "slug": "the-cipher-by-kathe-koja",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Kathe Koja"
+          }
+        ]
+      },
       {
         "title": "Coffin",
         "kind": "Short Story",
@@ -5721,12 +7632,27 @@
             "name": "Ross Macdonald"
           }
         ]
+      },
+      {
+        "title": "Desert Pickup",
+        "kind": "Short Story",
+        "yearPublished": "1970",
+        "slug": "desert-pickup-by-richard-laymon",
+        "grade": "C-",
+        "includedInSlugs": [
+          "short-stories-volume-one-by-richard-laymon"
+        ],
+        "authors": [
+          {
+            "name": "Richard Laymon"
+          }
+        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": 7,
+    "sequence": "2022-04-17-2022-04-03-2",
     "slug": "the-dark-tunnel-by-ross-macdonald",
     "title": "The Dark Tunnel",
     "subtitle": null,
@@ -5746,7 +7672,7 @@
     ],
     "readings": [
       {
-        "sequence": 7,
+        "sequence": 2,
         "date": "2022-04-17",
         "isAudiobook": false,
         "abandoned": false,
@@ -5757,6 +7683,19 @@
     "yearReviewed": 2022,
     "moreByAuthors": [],
     "moreReviews": [
+      {
+        "title": "Consider This",
+        "kind": "Nonfiction",
+        "yearPublished": "2020",
+        "slug": "consider-this-by-chuck-palahniuk",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Chuck Palahniuk"
+          }
+        ]
+      },
       {
         "title": "The Creative Act",
         "kind": "Nonfiction",
@@ -5810,12 +7749,25 @@
             "name": "Stephen King"
           }
         ]
+      },
+      {
+        "title": "Don't Let Them Get You Down",
+        "kind": "Novel",
+        "yearPublished": "2022",
+        "slug": "dont-let-them-get-you-down-by-philip-fracassi",
+        "grade": "C-",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Philip Fracassi"
+          }
+        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": 10,
+    "sequence": "2022-04-19-2022-04-19-1",
     "slug": "the-horse-thief-by-philip-fracassi",
     "title": "The Horse Thief",
     "subtitle": null,
@@ -5835,7 +7787,7 @@
     ],
     "readings": [
       {
-        "sequence": 10,
+        "sequence": 1,
         "date": "2022-04-19",
         "isAudiobook": false,
         "abandoned": false,
@@ -5851,6 +7803,19 @@
         "name": "Philip Fracassi",
         "slug": "philip-fracassi",
         "works": [
+          {
+            "title": "Behold the Void",
+            "kind": "Collection",
+            "yearPublished": "2017",
+            "slug": "behold-the-void-by-philip-fracassi",
+            "grade": "B+",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Philip Fracassi"
+              }
+            ]
+          },
           {
             "title": "Coffin",
             "kind": "Short Story",
@@ -5908,11 +7873,39 @@
                 "name": "Philip Fracassi"
               }
             ]
+          },
+          {
+            "title": "Soft Construction of a Sunset",
+            "kind": "Short Story",
+            "yearPublished": "2017",
+            "slug": "soft-construction-of-a-sunset-by-philip-fracassi",
+            "grade": "B-",
+            "includedInSlugs": [
+              "behold-the-void-by-philip-fracassi"
+            ],
+            "authors": [
+              {
+                "name": "Philip Fracassi"
+              }
+            ]
           }
         ]
       }
     ],
     "moreReviews": [
+      {
+        "title": "Goth",
+        "kind": "Nonfiction",
+        "yearPublished": "2023",
+        "slug": "goth-by-lol-tolhurst",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Lol Tolhurst"
+          }
+        ]
+      },
       {
         "title": "Gothic",
         "kind": "Novel",
@@ -5964,12 +7957,25 @@
             "name": "Jerry Seinfeld"
           }
         ]
+      },
+      {
+        "title": "Less Than Zero",
+        "kind": "Novel",
+        "yearPublished": "1985",
+        "slug": "less-than-zero-by-bret-easton-ellis",
+        "grade": "B+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Bret Easton Ellis"
+          }
+        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": 3,
+    "sequence": "2022-03-18-2022-03-17-1",
     "slug": "the-max-muscle-plan-by-brad-schoenfeld",
     "title": "The M.A.X. Muscle Plan",
     "subtitle": null,
@@ -5989,7 +7995,7 @@
     ],
     "readings": [
       {
-        "sequence": 3,
+        "sequence": 1,
         "date": "2022-03-18",
         "isAudiobook": false,
         "abandoned": false,
@@ -6000,6 +8006,19 @@
     "yearReviewed": 2022,
     "moreByAuthors": [],
     "moreReviews": [
+      {
+        "title": "The Skeptics' Guide to the Universe",
+        "kind": "Nonfiction",
+        "yearPublished": "2018",
+        "slug": "the-skeptics-guide-to-the-universe-by-steven-novella",
+        "grade": "B+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Steven Novella"
+          }
+        ]
+      },
       {
         "title": "Soft Construction of a Sunset",
         "kind": "Short Story",
@@ -6055,12 +8074,25 @@
             "name": "Scott Carney"
           }
         ]
+      },
+      {
+        "title": "The Woods Are Dark",
+        "kind": "Novel",
+        "yearPublished": "1981",
+        "slug": "the-woods-are-dark-by-richard-laymon",
+        "grade": "C+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Richard Laymon"
+          }
+        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": 32,
+    "sequence": "2022-07-24-2022-07-18-1",
     "slug": "the-postman-always-rings-twice-by-james-m-cain",
     "title": "The Postman Always Rings Twice",
     "subtitle": null,
@@ -6080,7 +8112,7 @@
     ],
     "readings": [
       {
-        "sequence": 32,
+        "sequence": 1,
         "date": "2022-07-24",
         "isAudiobook": false,
         "abandoned": false,
@@ -6091,6 +8123,21 @@
     "yearReviewed": 2022,
     "moreByAuthors": [],
     "moreReviews": [
+      {
+        "title": "Mother",
+        "kind": "Short Story",
+        "yearPublished": "2015",
+        "slug": "mother-by-philip-fracassi",
+        "grade": "B-",
+        "includedInSlugs": [
+          "behold-the-void-by-philip-fracassi"
+        ],
+        "authors": [
+          {
+            "name": "Philip Fracassi"
+          }
+        ]
+      },
       {
         "title": "On Writing",
         "kind": "Nonfiction",
@@ -6144,12 +8191,25 @@
             "name": "Stephen Morris"
           }
         ]
+      },
+      {
+        "title": "The Rise of Theodore Roosevelt",
+        "kind": "Nonfiction",
+        "yearPublished": "1979",
+        "slug": "the-rise-of-theodore-roosevelt-by-edmund-morris",
+        "grade": "A-",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Edmund Morris"
+          }
+        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": 18,
+    "sequence": "2022-05-07-2022-03-19-2",
     "slug": "the-rise-of-theodore-roosevelt-by-edmund-morris",
     "title": "The Rise of Theodore Roosevelt",
     "subtitle": null,
@@ -6169,7 +8229,7 @@
     ],
     "readings": [
       {
-        "sequence": 18,
+        "sequence": 2,
         "date": "2022-05-07",
         "isAudiobook": true,
         "abandoned": false,
@@ -6180,6 +8240,19 @@
     "yearReviewed": 2022,
     "moreByAuthors": [],
     "moreReviews": [
+      {
+        "title": "The Postman Always Rings Twice",
+        "kind": "Novel",
+        "yearPublished": "1934",
+        "slug": "the-postman-always-rings-twice-by-james-m-cain",
+        "grade": "B+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "James M. Cain"
+          }
+        ]
+      },
       {
         "title": "Recessional",
         "kind": "Nonfiction",
@@ -6233,12 +8306,25 @@
             "name": "Bret Easton Ellis"
           }
         ]
+      },
+      {
+        "title": "Sacculina",
+        "kind": "Novella",
+        "yearPublished": "2017",
+        "slug": "sacculina-by-philip-fracassi",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Philip Fracassi"
+          }
+        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": 28,
+    "sequence": "2022-07-14-2022-07-02-2",
     "slug": "the-rules-of-attraction-by-bret-easton-ellis",
     "title": "The Rules of Attraction",
     "subtitle": null,
@@ -6258,7 +8344,7 @@
     ],
     "readings": [
       {
-        "sequence": 28,
+        "sequence": 2,
         "date": "2022-07-14",
         "isAudiobook": false,
         "abandoned": false,
@@ -6269,6 +8355,19 @@
     "yearReviewed": 2022,
     "moreByAuthors": [],
     "moreReviews": [
+      {
+        "title": "Record Play Pause",
+        "kind": "Nonfiction",
+        "yearPublished": "2019",
+        "slug": "record-play-pause-by-stephen-morris",
+        "grade": "A",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Stephen Morris"
+          }
+        ]
+      },
       {
         "title": "The Rise of Theodore Roosevelt",
         "kind": "Nonfiction",
@@ -6322,12 +8421,25 @@
             "name": "Donna Tartt"
           }
         ]
+      },
+      {
+        "title": "Set the Boy Free",
+        "kind": "Nonfiction",
+        "yearPublished": "2016",
+        "slug": "set-the-boy-free-by-johnny-marr",
+        "grade": "B+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Johnny Marr"
+          }
+        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": 26,
+    "sequence": "2022-07-02-2022-06-25-1",
     "slug": "the-secret-history-by-donna-tartt",
     "title": "The Secret History",
     "subtitle": null,
@@ -6347,7 +8459,7 @@
     ],
     "readings": [
       {
-        "sequence": 26,
+        "sequence": 1,
         "date": "2022-07-02",
         "isAudiobook": true,
         "abandoned": false,
@@ -6358,6 +8470,21 @@
     "yearReviewed": 2022,
     "moreByAuthors": [],
     "moreReviews": [
+      {
+        "title": "Roadside Pickup",
+        "kind": "Short Story",
+        "yearPublished": "1974",
+        "slug": "roadside-pickup-by-richard-laymon",
+        "grade": "C-",
+        "includedInSlugs": [
+          "short-stories-volume-one-by-richard-laymon"
+        ],
+        "authors": [
+          {
+            "name": "Richard Laymon"
+          }
+        ]
+      },
       {
         "title": "The Rules of Attraction",
         "kind": "Novel",
@@ -6409,12 +8536,25 @@
             "name": "Stephen King"
           }
         ]
+      },
+      {
+        "title": "The Skeptics' Guide to the Universe",
+        "kind": "Nonfiction",
+        "yearPublished": "2018",
+        "slug": "the-skeptics-guide-to-the-universe-by-steven-novella",
+        "grade": "B+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Steven Novella"
+          }
+        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": 47,
+    "sequence": "2022-10-29-2022-10-16-1",
     "slug": "the-shining-by-stephen-king",
     "title": "The Shining",
     "subtitle": null,
@@ -6434,7 +8574,7 @@
     ],
     "readings": [
       {
-        "sequence": 47,
+        "sequence": 1,
         "date": "2022-10-29",
         "isAudiobook": true,
         "abandoned": false,
@@ -6449,45 +8589,6 @@
         "slug": "stephen-king",
         "works": [
           {
-            "title": "Carrie",
-            "kind": "Novel",
-            "yearPublished": "1974",
-            "slug": "carrie-by-stephen-king",
-            "grade": "B-",
-            "includedInSlugs": [],
-            "authors": [
-              {
-                "name": "Stephen King"
-              }
-            ]
-          },
-          {
-            "title": "'Salem's Lot",
-            "kind": "Novel",
-            "yearPublished": "1975",
-            "slug": "salems-lot-by-stephen-king",
-            "grade": "B",
-            "includedInSlugs": [],
-            "authors": [
-              {
-                "name": "Stephen King"
-              }
-            ]
-          },
-          {
-            "title": "On Writing",
-            "kind": "Nonfiction",
-            "yearPublished": "2000",
-            "slug": "on-writing-by-stephen-king",
-            "grade": "A-",
-            "includedInSlugs": [],
-            "authors": [
-              {
-                "name": "Stephen King"
-              }
-            ]
-          },
-          {
             "title": "Doctor Sleep",
             "kind": "Novel",
             "yearPublished": "2013",
@@ -6499,11 +8600,37 @@
                 "name": "Stephen King"
               }
             ]
+          },
+          {
+            "title": "Carrie",
+            "kind": "Novel",
+            "yearPublished": "1974",
+            "slug": "carrie-by-stephen-king",
+            "grade": "B-",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
           }
         ]
       }
     ],
     "moreReviews": [
+      {
+        "title": "Sacculina",
+        "kind": "Novella",
+        "yearPublished": "2017",
+        "slug": "sacculina-by-philip-fracassi",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Philip Fracassi"
+          }
+        ]
+      },
       {
         "title": "The Secret History",
         "kind": "Novel",
@@ -6557,12 +8684,27 @@
             "name": "Philip Fracassi"
           }
         ]
+      },
+      {
+        "title": "Surfer Girl",
+        "kind": "Short Story",
+        "yearPublished": "2017",
+        "slug": "surfer-girl-by-philip-fracassi",
+        "grade": "C+",
+        "includedInSlugs": [
+          "behold-the-void-by-philip-fracassi"
+        ],
+        "authors": [
+          {
+            "name": "Philip Fracassi"
+          }
+        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": 48,
+    "sequence": "2022-10-29-2022-10-22-1",
     "slug": "the-skeptics-guide-to-the-universe-by-steven-novella",
     "title": "The Skeptics' Guide to the Universe",
     "subtitle": "How to Know What's Really Real in a World Increasingly Full of Fake",
@@ -6582,7 +8724,7 @@
     ],
     "readings": [
       {
-        "sequence": 48,
+        "sequence": 1,
         "date": "2022-10-29",
         "isAudiobook": true,
         "abandoned": false,
@@ -6593,6 +8735,19 @@
     "yearReviewed": 2022,
     "moreByAuthors": [],
     "moreReviews": [
+      {
+        "title": "The Secret History",
+        "kind": "Novel",
+        "yearPublished": "1992",
+        "slug": "the-secret-history-by-donna-tartt",
+        "grade": "A",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Donna Tartt"
+          }
+        ]
+      },
       {
         "title": "Set the Boy Free",
         "kind": "Nonfiction",
@@ -6648,12 +8803,25 @@
             "name": "Philip Fracassi"
           }
         ]
+      },
+      {
+        "title": "The M.A.X. Muscle Plan",
+        "kind": "Nonfiction",
+        "yearPublished": "2012",
+        "slug": "the-max-muscle-plan-by-brad-schoenfeld",
+        "grade": "C-",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Brad Schoenfeld"
+          }
+        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": 36,
+    "sequence": "2022-09-11-2022-09-10-1",
     "slug": "the-woods-are-dark-by-richard-laymon",
     "title": "The Woods Are Dark",
     "subtitle": null,
@@ -6673,7 +8841,7 @@
     ],
     "readings": [
       {
-        "sequence": 36,
+        "sequence": 1,
         "date": "2022-09-11",
         "isAudiobook": true,
         "abandoned": false,
@@ -6687,6 +8855,21 @@
         "name": "Richard Laymon",
         "slug": "richard-laymon",
         "works": [
+          {
+            "title": "Desert Pickup",
+            "kind": "Short Story",
+            "yearPublished": "1970",
+            "slug": "desert-pickup-by-richard-laymon",
+            "grade": "C-",
+            "includedInSlugs": [
+              "short-stories-volume-one-by-richard-laymon"
+            ],
+            "authors": [
+              {
+                "name": "Richard Laymon"
+              }
+            ]
+          },
           {
             "title": "Roadside Pickup",
             "kind": "Short Story",
@@ -6744,11 +8927,39 @@
                 "name": "Richard Laymon"
               }
             ]
+          },
+          {
+            "title": "Roadside Pickup",
+            "kind": "Short Story",
+            "yearPublished": "1974",
+            "slug": "roadside-pickup-by-richard-laymon",
+            "grade": "C-",
+            "includedInSlugs": [
+              "short-stories-volume-one-by-richard-laymon"
+            ],
+            "authors": [
+              {
+                "name": "Richard Laymon"
+              }
+            ]
           }
         ]
       }
     ],
     "moreReviews": [
+      {
+        "title": "The M.A.X. Muscle Plan",
+        "kind": "Nonfiction",
+        "yearPublished": "2012",
+        "slug": "the-max-muscle-plan-by-brad-schoenfeld",
+        "grade": "C-",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Brad Schoenfeld"
+          }
+        ]
+      },
       {
         "title": "Total Recall",
         "kind": "Nonfiction",
@@ -6800,12 +9011,28 @@
             "name": "Robert Greene"
           }
         ]
+      },
+      {
+        "title": "About Face",
+        "kind": "Nonfiction",
+        "yearPublished": "1989",
+        "slug": "about-face-by-david-h-hackworth-julie-sherman",
+        "grade": "A-",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "David H. Hackworth"
+          },
+          {
+            "name": "Julie Sherman"
+          }
+        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": 19,
+    "sequence": "2022-05-21-2022-05-07-1",
     "slug": "total-recall-by-arnold-schwarzenegger",
     "title": "Total Recall",
     "subtitle": "My Unbelievably True Life Story",
@@ -6825,7 +9052,7 @@
     ],
     "readings": [
       {
-        "sequence": 19,
+        "sequence": 1,
         "date": "2022-05-21",
         "isAudiobook": true,
         "abandoned": false,
@@ -6836,6 +9063,21 @@
     "yearReviewed": 2022,
     "moreByAuthors": [],
     "moreReviews": [
+      {
+        "title": "Soft Construction of a Sunset",
+        "kind": "Short Story",
+        "yearPublished": "2017",
+        "slug": "soft-construction-of-a-sunset-by-philip-fracassi",
+        "grade": "B-",
+        "includedInSlugs": [
+          "behold-the-void-by-philip-fracassi"
+        ],
+        "authors": [
+          {
+            "name": "Philip Fracassi"
+          }
+        ]
+      },
       {
         "title": "Surfer Girl",
         "kind": "Short Story",
@@ -6889,12 +9131,25 @@
             "name": "Richard Laymon"
           }
         ]
+      },
+      {
+        "title": "'Salem's Lot",
+        "kind": "Novel",
+        "yearPublished": "1975",
+        "slug": "salems-lot-by-stephen-king",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Stephen King"
+          }
+        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": 42,
+    "sequence": "2022-10-04-2022-09-25-1",
     "slug": "what-doesnt-kill-us-by-scott-carney",
     "title": "What Doesn't Kill Us",
     "subtitle": "How Freezing Water, Extreme Altitude, and Environmental Conditioning Will Renew Our Lost Evolutionary Strength",
@@ -6914,7 +9169,7 @@
     ],
     "readings": [
       {
-        "sequence": 42,
+        "sequence": 1,
         "date": "2022-10-04",
         "isAudiobook": true,
         "abandoned": false,
@@ -6925,6 +9180,21 @@
     "yearReviewed": 2022,
     "moreByAuthors": [],
     "moreReviews": [
+      {
+        "title": "Surfer Girl",
+        "kind": "Short Story",
+        "yearPublished": "2017",
+        "slug": "surfer-girl-by-philip-fracassi",
+        "grade": "C+",
+        "includedInSlugs": [
+          "behold-the-void-by-philip-fracassi"
+        ],
+        "authors": [
+          {
+            "name": "Philip Fracassi"
+          }
+        ]
+      },
       {
         "title": "The M.A.X. Muscle Plan",
         "kind": "Nonfiction",
@@ -6974,6 +9244,19 @@
         "authors": [
           {
             "name": "Stephen King"
+          }
+        ]
+      },
+      {
+        "title": "The 48 Laws of Power",
+        "kind": "Nonfiction",
+        "yearPublished": "1998",
+        "slug": "the-48-laws-of-power-by-robert-greene",
+        "grade": "D+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Robert Greene"
           }
         ]
       }
