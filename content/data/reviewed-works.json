@@ -1739,15 +1739,15 @@
         ]
       },
       {
-        "title": "The Dark Tunnel",
+        "title": "Dark Crusade",
         "kind": "Novel",
-        "yearPublished": "1944",
-        "slug": "the-dark-tunnel-by-ross-macdonald",
-        "grade": "D+",
+        "yearPublished": "1976",
+        "slug": "dark-crusade-by-karl-edward-wagner",
+        "grade": "C",
         "includedInSlugs": [],
         "authors": [
           {
-            "name": "Ross Macdonald"
+            "name": "Karl Edward Wagner"
           }
         ]
       }
@@ -1824,6 +1824,121 @@
         "authors": [
           {
             "name": "Rick Rubin"
+          }
+        ]
+      },
+      {
+        "title": "Dark Crusade",
+        "kind": "Novel",
+        "yearPublished": "1976",
+        "slug": "dark-crusade-by-karl-edward-wagner",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Karl Edward Wagner"
+          }
+        ]
+      },
+      {
+        "title": "The Dark Tunnel",
+        "kind": "Novel",
+        "yearPublished": "1944",
+        "slug": "the-dark-tunnel-by-ross-macdonald",
+        "grade": "D+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Ross Macdonald"
+          }
+        ]
+      },
+      {
+        "title": "Desert Pickup",
+        "kind": "Short Story",
+        "yearPublished": "1970",
+        "slug": "desert-pickup-by-richard-laymon",
+        "grade": "C-",
+        "includedInSlugs": [
+          "short-stories-volume-one-by-richard-laymon"
+        ],
+        "authors": [
+          {
+            "name": "Richard Laymon"
+          }
+        ]
+      }
+    ],
+    "includedWorks": []
+  },
+  {
+    "sequence": "2012-05-18-2012-05-13-1",
+    "slug": "dark-crusade-by-karl-edward-wagner",
+    "title": "Dark Crusade",
+    "subtitle": null,
+    "sortTitle": "Dark Crusade",
+    "yearPublished": "1976",
+    "grade": "C",
+    "gradeValue": 6,
+    "kind": "Novel",
+    "date": "2012-05-18",
+    "authors": [
+      {
+        "slug": "karl-edward-wagner",
+        "notes": null,
+        "name": "Karl Edward Wagner",
+        "sortName": "Wagner, Karl Edward"
+      }
+    ],
+    "readings": [
+      {
+        "sequence": 1,
+        "date": "2012-05-18",
+        "isAudiobook": false,
+        "abandoned": false,
+        "readingTime": 6
+      }
+    ],
+    "includedInSlugs": [],
+    "yearReviewed": 2012,
+    "moreByAuthors": [],
+    "moreReviews": [
+      {
+        "title": "Consider This",
+        "kind": "Nonfiction",
+        "yearPublished": "2020",
+        "slug": "consider-this-by-chuck-palahniuk",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Chuck Palahniuk"
+          }
+        ]
+      },
+      {
+        "title": "The Creative Act",
+        "kind": "Nonfiction",
+        "yearPublished": "2023",
+        "slug": "the-creative-act-by-rick-rubin",
+        "grade": "C+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Rick Rubin"
+          }
+        ]
+      },
+      {
+        "title": "Cured",
+        "kind": "Nonfiction",
+        "yearPublished": "2016",
+        "slug": "cured-by-lol-tolhurst",
+        "grade": "A-",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Lol Tolhurst"
           }
         ]
       },
@@ -1995,19 +2110,6 @@
     ],
     "moreReviews": [
       {
-        "title": "The Creative Act",
-        "kind": "Nonfiction",
-        "yearPublished": "2023",
-        "slug": "the-creative-act-by-rick-rubin",
-        "grade": "C+",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Rick Rubin"
-          }
-        ]
-      },
-      {
         "title": "Cured",
         "kind": "Nonfiction",
         "yearPublished": "2016",
@@ -2017,6 +2119,19 @@
         "authors": [
           {
             "name": "Lol Tolhurst"
+          }
+        ]
+      },
+      {
+        "title": "Dark Crusade",
+        "kind": "Novel",
+        "yearPublished": "1976",
+        "slug": "dark-crusade-by-karl-edward-wagner",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Karl Edward Wagner"
           }
         ]
       },
@@ -2193,15 +2308,15 @@
     ],
     "moreReviews": [
       {
-        "title": "Cured",
-        "kind": "Nonfiction",
-        "yearPublished": "2016",
-        "slug": "cured-by-lol-tolhurst",
-        "grade": "A-",
+        "title": "Dark Crusade",
+        "kind": "Novel",
+        "yearPublished": "1976",
+        "slug": "dark-crusade-by-karl-edward-wagner",
+        "grade": "C",
         "includedInSlugs": [],
         "authors": [
           {
-            "name": "Lol Tolhurst"
+            "name": "Karl Edward Wagner"
           }
         ]
       },
@@ -7734,6 +7849,19 @@
         ]
       },
       {
+        "title": "Dark Crusade",
+        "kind": "Novel",
+        "yearPublished": "1976",
+        "slug": "dark-crusade-by-karl-edward-wagner",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Karl Edward Wagner"
+          }
+        ]
+      },
+      {
         "title": "The Dark Tunnel",
         "kind": "Novel",
         "yearPublished": "1944",
@@ -7743,21 +7871,6 @@
         "authors": [
           {
             "name": "Ross Macdonald"
-          }
-        ]
-      },
-      {
-        "title": "Desert Pickup",
-        "kind": "Short Story",
-        "yearPublished": "1970",
-        "slug": "desert-pickup-by-richard-laymon",
-        "grade": "C-",
-        "includedInSlugs": [
-          "short-stories-volume-one-by-richard-laymon"
-        ],
-        "authors": [
-          {
-            "name": "Richard Laymon"
           }
         ]
       }
@@ -7797,19 +7910,6 @@
     "moreByAuthors": [],
     "moreReviews": [
       {
-        "title": "Consider This",
-        "kind": "Nonfiction",
-        "yearPublished": "2020",
-        "slug": "consider-this-by-chuck-palahniuk",
-        "grade": "B",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Chuck Palahniuk"
-          }
-        ]
-      },
-      {
         "title": "The Creative Act",
         "kind": "Nonfiction",
         "yearPublished": "2023",
@@ -7832,6 +7932,19 @@
         "authors": [
           {
             "name": "Lol Tolhurst"
+          }
+        ]
+      },
+      {
+        "title": "Dark Crusade",
+        "kind": "Novel",
+        "yearPublished": "1976",
+        "slug": "dark-crusade-by-karl-edward-wagner",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Karl Edward Wagner"
           }
         ]
       },
