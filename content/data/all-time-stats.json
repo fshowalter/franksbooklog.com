@@ -1,7 +1,7 @@
 {
-  "reviewCount": 64,
-  "workCount": 66,
-  "bookCount": 54,
+  "reviewCount": 65,
+  "workCount": 67,
+  "bookCount": 55,
   "gradeDistribution": [
     {
       "name": "A",
@@ -35,7 +35,7 @@
     },
     {
       "name": "C",
-      "count": 7,
+      "count": 8,
       "sortValue": 6
     },
     {
@@ -71,7 +71,7 @@
     },
     {
       "name": "Nonfiction",
-      "count": 25
+      "count": 26
     },
     {
       "name": "Novel",
@@ -90,6 +90,10 @@
     {
       "name": "Audible",
       "count": 29
+    },
+    {
+      "name": "Hardcover",
+      "count": 1
     },
     {
       "name": "Kindle",
@@ -131,7 +135,7 @@
     },
     {
       "name": "2000s",
-      "count": 2
+      "count": 3
     },
     {
       "name": "2010s",

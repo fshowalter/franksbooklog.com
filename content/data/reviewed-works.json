@@ -875,15 +875,15 @@
         ]
       },
       {
-        "title": "Casino Royale",
-        "kind": "Novel",
-        "yearPublished": "1953",
-        "slug": "casino-royale-by-ian-fleming",
-        "grade": "B-",
+        "title": "Cary Grant",
+        "kind": "Nonfiction",
+        "yearPublished": "2004",
+        "slug": "cary-grant-by-marc-eliot",
+        "grade": "C",
         "includedInSlugs": [],
         "authors": [
           {
-            "name": "Ian Fleming"
+            "name": "Marc Eliot"
           }
         ]
       }
@@ -975,6 +975,19 @@
         ]
       },
       {
+        "title": "Cary Grant",
+        "kind": "Nonfiction",
+        "yearPublished": "2004",
+        "slug": "cary-grant-by-marc-eliot",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Marc Eliot"
+          }
+        ]
+      },
+      {
         "title": "Casino Royale",
         "kind": "Novel",
         "yearPublished": "1953",
@@ -984,19 +997,6 @@
         "authors": [
           {
             "name": "Ian Fleming"
-          }
-        ]
-      },
-      {
-        "title": "The Cellar",
-        "kind": "Novel",
-        "yearPublished": "1980",
-        "slug": "the-cellar-by-richard-laymon",
-        "grade": "C+",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Richard Laymon"
           }
         ]
       }
@@ -1160,6 +1160,119 @@
         ]
       },
       {
+        "title": "Cary Grant",
+        "kind": "Nonfiction",
+        "yearPublished": "2004",
+        "slug": "cary-grant-by-marc-eliot",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Marc Eliot"
+          }
+        ]
+      },
+      {
+        "title": "Casino Royale",
+        "kind": "Novel",
+        "yearPublished": "1953",
+        "slug": "casino-royale-by-ian-fleming",
+        "grade": "B-",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Ian Fleming"
+          }
+        ]
+      },
+      {
+        "title": "The Cellar",
+        "kind": "Novel",
+        "yearPublished": "1980",
+        "slug": "the-cellar-by-richard-laymon",
+        "grade": "C+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Richard Laymon"
+          }
+        ]
+      }
+    ],
+    "includedWorks": []
+  },
+  {
+    "sequence": "2012-05-31-2012-05-15-1",
+    "slug": "cary-grant-by-marc-eliot",
+    "title": "Cary Grant",
+    "subtitle": "A Biography",
+    "sortTitle": "Cary Grant: A Biography",
+    "yearPublished": "2004",
+    "grade": "C",
+    "gradeValue": 6,
+    "kind": "Nonfiction",
+    "date": "2012-05-31",
+    "authors": [
+      {
+        "slug": "marc-eliot",
+        "notes": null,
+        "name": "Marc Eliot",
+        "sortName": "Eliot, Marc"
+      }
+    ],
+    "readings": [
+      {
+        "sequence": 1,
+        "date": "2012-05-31",
+        "isAudiobook": false,
+        "abandoned": false,
+        "readingTime": 17
+      }
+    ],
+    "includedInSlugs": [],
+    "yearReviewed": 2012,
+    "moreByAuthors": [],
+    "moreReviews": [
+      {
+        "title": "Brother Iron, Sister Steel",
+        "kind": "Nonfiction",
+        "yearPublished": "2001",
+        "slug": "brother-iron-sister-steel-by-dave-draper",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Dave Draper"
+          }
+        ]
+      },
+      {
+        "title": "Can't Hurt Me",
+        "kind": "Nonfiction",
+        "yearPublished": "2018",
+        "slug": "cant-hurt-me-by-david-goggins",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "David Goggins"
+          }
+        ]
+      },
+      {
+        "title": "Carrie",
+        "kind": "Novel",
+        "yearPublished": "1974",
+        "slug": "carrie-by-stephen-king",
+        "grade": "B-",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Stephen King"
+          }
+        ]
+      },
+      {
         "title": "Casino Royale",
         "kind": "Novel",
         "yearPublished": "1953",
@@ -1234,19 +1347,6 @@
     "moreByAuthors": [],
     "moreReviews": [
       {
-        "title": "Brother Iron, Sister Steel",
-        "kind": "Nonfiction",
-        "yearPublished": "2001",
-        "slug": "brother-iron-sister-steel-by-dave-draper",
-        "grade": "C",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Dave Draper"
-          }
-        ]
-      },
-      {
         "title": "Can't Hurt Me",
         "kind": "Nonfiction",
         "yearPublished": "2018",
@@ -1269,6 +1369,19 @@
         "authors": [
           {
             "name": "Stephen King"
+          }
+        ]
+      },
+      {
+        "title": "Cary Grant",
+        "kind": "Nonfiction",
+        "yearPublished": "2004",
+        "slug": "cary-grant-by-marc-eliot",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Marc Eliot"
           }
         ]
       },
@@ -1347,15 +1460,15 @@
     "moreByAuthors": [],
     "moreReviews": [
       {
-        "title": "Carrie",
-        "kind": "Novel",
-        "yearPublished": "1974",
-        "slug": "carrie-by-stephen-king",
-        "grade": "B-",
+        "title": "Cary Grant",
+        "kind": "Nonfiction",
+        "yearPublished": "2004",
+        "slug": "cary-grant-by-marc-eliot",
+        "grade": "C",
         "includedInSlugs": [],
         "authors": [
           {
-            "name": "Stephen King"
+            "name": "Marc Eliot"
           }
         ]
       },
@@ -7565,19 +7678,6 @@
     ],
     "moreReviews": [
       {
-        "title": "Can't Hurt Me",
-        "kind": "Nonfiction",
-        "yearPublished": "2018",
-        "slug": "cant-hurt-me-by-david-goggins",
-        "grade": "B",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "David Goggins"
-          }
-        ]
-      },
-      {
         "title": "Carrie",
         "kind": "Novel",
         "yearPublished": "1974",
@@ -7587,6 +7687,19 @@
         "authors": [
           {
             "name": "Stephen King"
+          }
+        ]
+      },
+      {
+        "title": "Cary Grant",
+        "kind": "Nonfiction",
+        "yearPublished": "2004",
+        "slug": "cary-grant-by-marc-eliot",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Marc Eliot"
           }
         ]
       },

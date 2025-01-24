@@ -1,0 +1,29 @@
+{
+  "name": "Marc Eliot",
+  "sortName": "Eliot, Marc",
+  "slug": "marc-eliot",
+  "works": [
+    {
+      "title": "Cary Grant",
+      "yearPublished": "2004",
+      "kind": "Nonfiction",
+      "slug": "cary-grant-by-marc-eliot",
+      "sortTitle": "Cary Grant: A Biography",
+      "reviewed": true,
+      "grade": "C",
+      "gradeValue": 6,
+      "authors": [
+        {
+          "slug": "marc-eliot",
+          "notes": null,
+          "name": "Marc Eliot",
+          "sortName": "Eliot, Marc"
+        }
+      ],
+      "includedInSlugs": []
+    }
+  ],
+  "reviewedWorkCount": 1,
+  "workCount": 1,
+  "shelfWorkCount": 0
+}
