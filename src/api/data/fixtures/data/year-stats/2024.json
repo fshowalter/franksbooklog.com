@@ -1,31 +1,35 @@
 {
   "year": "2024",
-  "workCount": 3,
-  "bookCount": 3,
+  "workCount": 5,
+  "bookCount": 5,
   "kindDistribution": [
     {
       "name": "Nonfiction",
-      "count": 2
+      "count": 3
     },
     {
       "name": "Novel",
-      "count": 1
+      "count": 2
     }
   ],
   "editionDistribution": [
     {
       "name": "Audible",
-      "count": 1
+      "count": 2
     },
     {
       "name": "Kindle",
-      "count": 2
+      "count": 3
     }
   ],
   "decadeDistribution": [
     {
+      "name": "1970s",
+      "count": 1
+    },
+    {
       "name": "2020s",
-      "count": 3
+      "count": 4
     }
   ],
   "mostReadAuthors": []
