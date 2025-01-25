@@ -1,7 +1,7 @@
 {
   "reviewCount": 67,
-  "workCount": 69,
-  "bookCount": 57,
+  "workCount": 70,
+  "bookCount": 58,
   "gradeDistribution": [
     {
       "name": "A",
@@ -75,7 +75,7 @@
     },
     {
       "name": "Novel",
-      "count": 28
+      "count": 29
     },
     {
       "name": "Novella",
@@ -101,7 +101,7 @@
     },
     {
       "name": "Paperback",
-      "count": 3
+      "count": 4
     }
   ],
   "decadeDistribution": [
@@ -127,7 +127,7 @@
     },
     {
       "name": "1980s",
-      "count": 7
+      "count": 8
     },
     {
       "name": "1990s",
@@ -390,7 +390,7 @@
     },
     {
       "name": "Richard Laymon",
-      "count": 5,
+      "count": 6,
       "slug": "richard-laymon",
       "readings": [
         {
@@ -440,6 +440,17 @@
           "yearPublished": "1981",
           "includedInSlugs": [],
           "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2014-03-12",
+          "slug": "your-secret-admirer-by-richard-laymon",
+          "edition": "Paperback",
+          "kind": "Novel",
+          "title": "Your Secret Admirer",
+          "yearPublished": "1980",
+          "includedInSlugs": [],
+          "reviewed": false
         },
         {
           "sequence": 2,
