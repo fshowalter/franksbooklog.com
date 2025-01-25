@@ -57,11 +57,11 @@ export function MostReadAuthors({
                     Details
                   </summary>
                   <ol className="py-2 tablet:px-4">
-                    {value.readings.map((viewing) => {
+                    {value.readings.map((reading) => {
                       return (
                         <ReadingSubListItem
-                          key={viewing.sequence}
-                          value={viewing}
+                          key={`${reading.date}-${reading.slug}-${reading.sequence}`}
+                          value={reading}
                         />
                       );
                     })}
