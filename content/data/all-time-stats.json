@@ -1,7 +1,7 @@
 {
   "reviewCount": 67,
-  "workCount": 70,
-  "bookCount": 58,
+  "workCount": 71,
+  "bookCount": 59,
   "gradeDistribution": [
     {
       "name": "A",
@@ -75,7 +75,7 @@
     },
     {
       "name": "Novel",
-      "count": 29
+      "count": 30
     },
     {
       "name": "Novella",
@@ -101,7 +101,7 @@
     },
     {
       "name": "Paperback",
-      "count": 4
+      "count": 5
     }
   ],
   "decadeDistribution": [
@@ -123,7 +123,7 @@
     },
     {
       "name": "1970s",
-      "count": 9
+      "count": 10
     },
     {
       "name": "1980s",
@@ -317,7 +317,7 @@
     },
     {
       "name": "Stephen King",
-      "count": 6,
+      "count": 7,
       "slug": "stephen-king",
       "readings": [
         {
@@ -385,6 +385,17 @@
           "yearPublished": "1975",
           "includedInSlugs": [],
           "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2014-04-04",
+          "slug": "the-dead-zone-by-stephen-king",
+          "edition": "Paperback",
+          "kind": "Novel",
+          "title": "The Dead Zone",
+          "yearPublished": "1979",
+          "includedInSlugs": [],
+          "reviewed": false
         }
       ]
     },
