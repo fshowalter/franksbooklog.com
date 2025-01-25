@@ -1,6 +1,6 @@
 import type { JSX } from "react";
 
-import type { CoverImageProps } from "~/api/covers";
+import type { FixedCoverImageProps } from "~/api/covers";
 import type { Review, ReviewWithContent } from "~/api/reviews";
 
 import { AuthorLink } from "~/components/AuthorLink";
@@ -22,7 +22,7 @@ export const CoverImageConfig = {
 };
 
 export type Props = {
-  coverImageProps: CoverImageProps;
+  coverImageProps: FixedCoverImageProps;
   moreReviews: React.ComponentProps<typeof MoreReviews>["values"];
   structuredDataCoverSrc: string;
   value: ReviewWithContent;
@@ -152,7 +152,7 @@ function Authors({
 function ReviewCover({
   coverImageProps,
 }: {
-  coverImageProps: CoverImageProps;
+  coverImageProps: FixedCoverImageProps;
 }) {
   return (
     <div
@@ -171,12 +171,17 @@ function ReviewCover({
         />
         <div className="absolute size-full backdrop-blur" />
       </div>
-      <div className="relative -top-4 z-10 h-[372px] shadow-[0_5px_20px_rgba(49,46,42,0.22)]">
+      <div
+        className={`relative -top-4 z-10 h-[372px] ${coverImageProps.hasAlpha ? "" : "shadow-[0_5px_20px_rgba(49,46,42,0.22)]"}`}
+      >
         <Cover
-          className="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
+          className={`safari-border-radius-fix ${coverImageProps.hasAlpha ? "" : "shadow-[0_5px_20px_rgba(49,46,42,0.22)]"}`}
           decoding="auto"
           height={CoverImageConfig.height}
-          imageProps={coverImageProps}
+          imageProps={{
+            src: coverImageProps.src,
+            srcSet: coverImageProps.srcSet,
+          }}
           loading="eager"
           width={CoverImageConfig.width}
         />

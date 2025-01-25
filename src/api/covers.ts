@@ -10,6 +10,10 @@ export type CoverImageProps = {
   srcSet: string;
 };
 
+export type FixedCoverImageProps = CoverImageProps & {
+  hasAlpha: boolean;
+};
+
 type Work = {
   includedInSlugs: string[];
   slug: string;
@@ -39,8 +43,10 @@ export async function getFeedCoverProps(work: Work): Promise<CoverImageProps> {
 export async function getFixedCoverImageProps(
   work: Work,
   { height, width }: { height: number; width: number },
-): Promise<CoverImageProps> {
+): Promise<FixedCoverImageProps> {
   const workCoverFile = await getWorkCoverFile(work);
+
+  const hasAlpha = await hasTransparentPixels(getWorkCoverPath(work));
 
   const optimizedImage = await getImage({
     densities: [1, 2],
@@ -52,6 +58,7 @@ export async function getFixedCoverImageProps(
   });
 
   return {
+    hasAlpha: hasAlpha,
     src: normalizeSources(optimizedImage.src),
     srcSet: normalizeSources(optimizedImage.srcSet.attribute),
   };
@@ -189,4 +196,23 @@ function getWorkCoverPath(work: Work) {
   }
 
   return coverPath("default") || "";
+}
+
+async function hasTransparentPixels(imagePath: string) {
+  try {
+    const image = await sharp(imagePath).raw().toBuffer();
+
+    for (let i = 3; i < image.length; i += 4) {
+      // Start from 3 for the alpha channel
+      if (image[i] < 255) {
+        // Check if the alpha value is less than 255 (fully opaque)
+        return true; // Image has transparent pixels
+      }
+    }
+
+    return false; // No transparent pixels found
+  } catch (error) {
+    console.error("Error:", error);
+    return false; // Assume no transparency on error
+  }
 }

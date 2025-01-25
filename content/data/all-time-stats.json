@@ -1,7 +1,7 @@
 {
   "reviewCount": 67,
-  "workCount": 72,
-  "bookCount": 60,
+  "workCount": 73,
+  "bookCount": 61,
   "gradeDistribution": [
     {
       "name": "A",
@@ -75,7 +75,7 @@
     },
     {
       "name": "Novel",
-      "count": 31
+      "count": 32
     },
     {
       "name": "Novella",
@@ -101,7 +101,7 @@
     },
     {
       "name": "Paperback",
-      "count": 6
+      "count": 7
     }
   ],
   "decadeDistribution": [
@@ -127,7 +127,7 @@
     },
     {
       "name": "1980s",
-      "count": 9
+      "count": 10
     },
     {
       "name": "1990s",
@@ -317,7 +317,7 @@
     },
     {
       "name": "Richard Laymon",
-      "count": 7,
+      "count": 8,
       "slug": "richard-laymon",
       "readings": [
         {
@@ -343,6 +343,17 @@
             "short-stories-volume-one-by-richard-laymon"
           ],
           "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2014-04-11",
+          "slug": "the-lawmen-by-richard-laymon",
+          "edition": "Paperback",
+          "kind": "Novel",
+          "title": "The Lawmen",
+          "yearPublished": "1983",
+          "includedInSlugs": [],
+          "reviewed": false
         },
         {
           "sequence": 1,
