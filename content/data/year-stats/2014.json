@@ -1,17 +1,17 @@
 {
   "year": "2014",
-  "workCount": 2,
-  "bookCount": 2,
+  "workCount": 3,
+  "bookCount": 3,
   "kindDistribution": [
     {
       "name": "Novel",
-      "count": 2
+      "count": 3
     }
   ],
   "editionDistribution": [
     {
       "name": "Paperback",
-      "count": 2
+      "count": 3
     }
   ],
   "decadeDistribution": [
@@ -21,8 +21,38 @@
     },
     {
       "name": "1980s",
-      "count": 1
+      "count": 2
     }
   ],
-  "mostReadAuthors": []
+  "mostReadAuthors": [
+    {
+      "name": "Richard Laymon",
+      "count": 2,
+      "slug": "richard-laymon",
+      "readings": [
+        {
+          "sequence": 1,
+          "date": "2014-04-05",
+          "slug": "nightmare-lake-by-richard-laymon",
+          "edition": "Paperback",
+          "kind": "Novel",
+          "title": "Nightmare Lake",
+          "yearPublished": "1983",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2014-03-12",
+          "slug": "your-secret-admirer-by-richard-laymon",
+          "edition": "Paperback",
+          "kind": "Novel",
+          "title": "Your Secret Admirer",
+          "yearPublished": "1980",
+          "includedInSlugs": [],
+          "reviewed": false
+        }
+      ]
+    }
+  ]
 }
