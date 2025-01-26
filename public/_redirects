@@ -10,3 +10,6 @@
 
 # /stats to /readins/stats
 /stats/* /readings/stats/:splat 301
+
+# misc
+/page-* /reviews 301
