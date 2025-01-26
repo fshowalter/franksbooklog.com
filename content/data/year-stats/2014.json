@@ -1,17 +1,17 @@
 {
   "year": "2014",
-  "workCount": 4,
-  "bookCount": 4,
+  "workCount": 5,
+  "bookCount": 5,
   "kindDistribution": [
     {
       "name": "Novel",
-      "count": 4
+      "count": 5
     }
   ],
   "editionDistribution": [
     {
       "name": "Paperback",
-      "count": 4
+      "count": 5
     }
   ],
   "decadeDistribution": [
@@ -21,7 +21,7 @@
     },
     {
       "name": "1980s",
-      "count": 3
+      "count": 4
     }
   ],
   "mostReadAuthors": [
@@ -59,6 +59,35 @@
           "edition": "Paperback",
           "kind": "Novel",
           "title": "Your Secret Admirer",
+          "yearPublished": "1980",
+          "includedInSlugs": [],
+          "reviewed": false
+        }
+      ]
+    },
+    {
+      "name": "Stephen King",
+      "count": 2,
+      "slug": "stephen-king",
+      "readings": [
+        {
+          "sequence": 1,
+          "date": "2014-04-04",
+          "slug": "the-dead-zone-by-stephen-king",
+          "edition": "Paperback",
+          "kind": "Novel",
+          "title": "The Dead Zone",
+          "yearPublished": "1979",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2014-04-22",
+          "slug": "firestarter-by-stephen-king",
+          "edition": "Paperback",
+          "kind": "Novel",
+          "title": "Firestarter",
           "yearPublished": "1980",
           "includedInSlugs": [],
           "reviewed": false
