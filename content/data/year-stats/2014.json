@@ -1,8 +1,12 @@
 {
   "year": "2014",
-  "workCount": 5,
-  "bookCount": 5,
+  "workCount": 6,
+  "bookCount": 6,
   "kindDistribution": [
+    {
+      "name": "Nonfiction",
+      "count": 1
+    },
     {
       "name": "Novel",
       "count": 5
@@ -10,8 +14,12 @@
   ],
   "editionDistribution": [
     {
+      "name": "Kindle",
+      "count": 2
+    },
+    {
       "name": "Paperback",
-      "count": 5
+      "count": 4
     }
   ],
   "decadeDistribution": [
@@ -21,7 +29,7 @@
     },
     {
       "name": "1980s",
-      "count": 4
+      "count": 5
     }
   ],
   "mostReadAuthors": [
@@ -67,9 +75,20 @@
     },
     {
       "name": "Stephen King",
-      "count": 2,
+      "count": 3,
       "slug": "stephen-king",
       "readings": [
+        {
+          "sequence": 1,
+          "date": "2014-06-04",
+          "slug": "danse-macabre-by-stephen-king",
+          "edition": "Kindle",
+          "kind": "Nonfiction",
+          "title": "Danse Macabre",
+          "yearPublished": "1981",
+          "includedInSlugs": [],
+          "reviewed": true
+        },
         {
           "sequence": 1,
           "date": "2014-04-04",
@@ -85,7 +104,7 @@
           "sequence": 1,
           "date": "2014-04-22",
           "slug": "firestarter-by-stephen-king",
-          "edition": "Paperback",
+          "edition": "Kindle",
           "kind": "Novel",
           "title": "Firestarter",
           "yearPublished": "1980",
