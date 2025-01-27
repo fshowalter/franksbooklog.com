@@ -1,6 +1,6 @@
 {
   "year": "2014",
-  "workCount": 6,
+  "workCount": 8,
   "bookCount": 6,
   "kindDistribution": [
     {
@@ -10,6 +10,10 @@
     {
       "name": "Novel",
       "count": 5
+    },
+    {
+      "name": "Short Story",
+      "count": 2
     }
   ],
   "editionDistribution": [
@@ -19,7 +23,7 @@
     },
     {
       "name": "Paperback",
-      "count": 4
+      "count": 6
     }
   ],
   "decadeDistribution": [
@@ -29,13 +33,13 @@
     },
     {
       "name": "1980s",
-      "count": 5
+      "count": 7
     }
   ],
   "mostReadAuthors": [
     {
       "name": "Richard Laymon",
-      "count": 3,
+      "count": 5,
       "slug": "richard-laymon",
       "readings": [
         {
@@ -46,6 +50,17 @@
           "kind": "Novel",
           "title": "Nightmare Lake",
           "yearPublished": "1983",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2014-06-09",
+          "slug": "shootout-at-joes-by-richard-laymon",
+          "edition": "Paperback",
+          "kind": "Short Story",
+          "title": "Shootout at Joe's",
+          "yearPublished": "1984",
           "includedInSlugs": [],
           "reviewed": false
         },
@@ -68,6 +83,17 @@
           "kind": "Novel",
           "title": "Your Secret Admirer",
           "yearPublished": "1980",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 2,
+          "date": "2014-06-09",
+          "slug": "dawsons-city-by-richard-laymon",
+          "edition": "Paperback",
+          "kind": "Short Story",
+          "title": "Dawson's City",
+          "yearPublished": "1984",
           "includedInSlugs": [],
           "reviewed": false
         }
