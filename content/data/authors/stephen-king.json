@@ -194,6 +194,25 @@
       "includedInSlugs": []
     },
     {
+      "title": "Danse Macabre",
+      "yearPublished": "1981",
+      "kind": "Nonfiction",
+      "slug": "danse-macabre-by-stephen-king",
+      "sortTitle": "Danse Macabre",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "stephen-king",
+          "notes": null,
+          "name": "Stephen King",
+          "sortName": "King, Stephen"
+        }
+      ],
+      "includedInSlugs": []
+    },
+    {
       "title": "The Dark Half",
       "yearPublished": "1989",
       "kind": "Novel",
@@ -942,6 +961,6 @@
     }
   ],
   "reviewedWorkCount": 5,
-  "workCount": 49,
-  "shelfWorkCount": 44
+  "workCount": 50,
+  "shelfWorkCount": 45
 }
