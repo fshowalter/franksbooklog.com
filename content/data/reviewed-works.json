@@ -1037,11 +1037,11 @@
         "slug": "stephen-king",
         "works": [
           {
-            "title": "Danse Macabre",
-            "kind": "Nonfiction",
-            "yearPublished": "1981",
-            "slug": "danse-macabre-by-stephen-king",
-            "grade": "C",
+            "title": "The Shining",
+            "kind": "Novel",
+            "yearPublished": "1977",
+            "slug": "the-shining-by-stephen-king",
+            "grade": "B",
             "includedInSlugs": [],
             "authors": [
               {
@@ -1102,11 +1102,11 @@
             ]
           },
           {
-            "title": "Danse Macabre",
+            "title": "On Writing",
             "kind": "Nonfiction",
-            "yearPublished": "1981",
-            "slug": "danse-macabre-by-stephen-king",
-            "grade": "C",
+            "yearPublished": "2000",
+            "slug": "on-writing-by-stephen-king",
+            "grade": "A-",
             "includedInSlugs": [],
             "authors": [
               {
@@ -1850,15 +1850,15 @@
         ]
       },
       {
-        "title": "Danse Macabre",
-        "kind": "Nonfiction",
-        "yearPublished": "1981",
-        "slug": "danse-macabre-by-stephen-king",
+        "title": "Dark Crusade",
+        "kind": "Novel",
+        "yearPublished": "1976",
+        "slug": "dark-crusade-by-karl-edward-wagner",
         "grade": "C",
         "includedInSlugs": [],
         "authors": [
           {
-            "name": "Stephen King"
+            "name": "Karl Edward Wagner"
           }
         ]
       }
@@ -1939,204 +1939,6 @@
         ]
       },
       {
-        "title": "Danse Macabre",
-        "kind": "Nonfiction",
-        "yearPublished": "1981",
-        "slug": "danse-macabre-by-stephen-king",
-        "grade": "C",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Stephen King"
-          }
-        ]
-      },
-      {
-        "title": "Dark Crusade",
-        "kind": "Novel",
-        "yearPublished": "1976",
-        "slug": "dark-crusade-by-karl-edward-wagner",
-        "grade": "C",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Karl Edward Wagner"
-          }
-        ]
-      },
-      {
-        "title": "The Dark Tunnel",
-        "kind": "Novel",
-        "yearPublished": "1944",
-        "slug": "the-dark-tunnel-by-ross-macdonald",
-        "grade": "D+",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Ross Macdonald"
-          }
-        ]
-      }
-    ],
-    "includedWorks": []
-  },
-  {
-    "sequence": "2014-06-04-2014-05-23-1",
-    "slug": "danse-macabre-by-stephen-king",
-    "title": "Danse Macabre",
-    "subtitle": null,
-    "sortTitle": "Danse Macabre",
-    "yearPublished": "1981",
-    "grade": "C",
-    "gradeValue": 6,
-    "kind": "Nonfiction",
-    "date": "2014-06-04",
-    "authors": [
-      {
-        "slug": "stephen-king",
-        "notes": null,
-        "name": "Stephen King",
-        "sortName": "King, Stephen"
-      }
-    ],
-    "readings": [
-      {
-        "sequence": 1,
-        "date": "2014-06-04",
-        "isAudiobook": false,
-        "abandoned": false,
-        "readingTime": 13
-      }
-    ],
-    "includedInSlugs": [],
-    "yearReviewed": 2014,
-    "moreByAuthors": [
-      {
-        "name": "Stephen King",
-        "slug": "stephen-king",
-        "works": [
-          {
-            "title": "Carrie",
-            "kind": "Novel",
-            "yearPublished": "1974",
-            "slug": "carrie-by-stephen-king",
-            "grade": "B-",
-            "includedInSlugs": [],
-            "authors": [
-              {
-                "name": "Stephen King"
-              }
-            ]
-          },
-          {
-            "title": "'Salem's Lot",
-            "kind": "Novel",
-            "yearPublished": "1975",
-            "slug": "salems-lot-by-stephen-king",
-            "grade": "B",
-            "includedInSlugs": [],
-            "authors": [
-              {
-                "name": "Stephen King"
-              }
-            ]
-          },
-          {
-            "title": "The Shining",
-            "kind": "Novel",
-            "yearPublished": "1977",
-            "slug": "the-shining-by-stephen-king",
-            "grade": "B",
-            "includedInSlugs": [],
-            "authors": [
-              {
-                "name": "Stephen King"
-              }
-            ]
-          },
-          {
-            "title": "On Writing",
-            "kind": "Nonfiction",
-            "yearPublished": "2000",
-            "slug": "on-writing-by-stephen-king",
-            "grade": "A-",
-            "includedInSlugs": [],
-            "authors": [
-              {
-                "name": "Stephen King"
-              }
-            ]
-          },
-          {
-            "title": "Doctor Sleep",
-            "kind": "Novel",
-            "yearPublished": "2013",
-            "slug": "doctor-sleep-by-stephen-king",
-            "grade": "C+",
-            "includedInSlugs": [],
-            "authors": [
-              {
-                "name": "Stephen King"
-              }
-            ]
-          },
-          {
-            "title": "Carrie",
-            "kind": "Novel",
-            "yearPublished": "1974",
-            "slug": "carrie-by-stephen-king",
-            "grade": "B-",
-            "includedInSlugs": [],
-            "authors": [
-              {
-                "name": "Stephen King"
-              }
-            ]
-          }
-        ]
-      }
-    ],
-    "moreReviews": [
-      {
-        "title": "Consider This",
-        "kind": "Nonfiction",
-        "yearPublished": "2020",
-        "slug": "consider-this-by-chuck-palahniuk",
-        "grade": "B",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Chuck Palahniuk"
-          }
-        ]
-      },
-      {
-        "title": "The Creative Act",
-        "kind": "Nonfiction",
-        "yearPublished": "2023",
-        "slug": "the-creative-act-by-rick-rubin",
-        "grade": "C+",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Rick Rubin"
-          }
-        ]
-      },
-      {
-        "title": "Cured",
-        "kind": "Nonfiction",
-        "yearPublished": "2016",
-        "slug": "cured-by-lol-tolhurst",
-        "grade": "A-",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Lol Tolhurst"
-          }
-        ]
-      },
-      {
         "title": "Dark Crusade",
         "kind": "Novel",
         "yearPublished": "1976",
@@ -2213,6 +2015,19 @@
     "moreByAuthors": [],
     "moreReviews": [
       {
+        "title": "Consider This",
+        "kind": "Nonfiction",
+        "yearPublished": "2020",
+        "slug": "consider-this-by-chuck-palahniuk",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Chuck Palahniuk"
+          }
+        ]
+      },
+      {
         "title": "The Creative Act",
         "kind": "Nonfiction",
         "yearPublished": "2023",
@@ -2235,19 +2050,6 @@
         "authors": [
           {
             "name": "Lol Tolhurst"
-          }
-        ]
-      },
-      {
-        "title": "Danse Macabre",
-        "kind": "Nonfiction",
-        "yearPublished": "1981",
-        "slug": "danse-macabre-by-stephen-king",
-        "grade": "C",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Stephen King"
           }
         ]
       },
@@ -2419,15 +2221,15 @@
     ],
     "moreReviews": [
       {
-        "title": "Danse Macabre",
+        "title": "Cured",
         "kind": "Nonfiction",
-        "yearPublished": "1981",
-        "slug": "danse-macabre-by-stephen-king",
-        "grade": "C",
+        "yearPublished": "2016",
+        "slug": "cured-by-lol-tolhurst",
+        "grade": "A-",
         "includedInSlugs": [],
         "authors": [
           {
-            "name": "Stephen King"
+            "name": "Lol Tolhurst"
           }
         ]
       },
@@ -2535,10 +2337,10 @@
         "slug": "stephen-king",
         "works": [
           {
-            "title": "The Shining",
+            "title": "'Salem's Lot",
             "kind": "Novel",
-            "yearPublished": "1977",
-            "slug": "the-shining-by-stephen-king",
+            "yearPublished": "1975",
+            "slug": "salems-lot-by-stephen-king",
             "grade": "B",
             "includedInSlugs": [],
             "authors": [
@@ -2548,11 +2350,11 @@
             ]
           },
           {
-            "title": "Danse Macabre",
-            "kind": "Nonfiction",
-            "yearPublished": "1981",
-            "slug": "danse-macabre-by-stephen-king",
-            "grade": "C",
+            "title": "The Shining",
+            "kind": "Novel",
+            "yearPublished": "1977",
+            "slug": "the-shining-by-stephen-king",
+            "grade": "B",
             "includedInSlugs": [],
             "authors": [
               {
@@ -5840,6 +5642,19 @@
         "slug": "stephen-king",
         "works": [
           {
+            "title": "Carrie",
+            "kind": "Novel",
+            "yearPublished": "1974",
+            "slug": "carrie-by-stephen-king",
+            "grade": "B-",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          },
+          {
             "title": "'Salem's Lot",
             "kind": "Novel",
             "yearPublished": "1975",
@@ -5858,19 +5673,6 @@
             "yearPublished": "1977",
             "slug": "the-shining-by-stephen-king",
             "grade": "B",
-            "includedInSlugs": [],
-            "authors": [
-              {
-                "name": "Stephen King"
-              }
-            ]
-          },
-          {
-            "title": "Danse Macabre",
-            "kind": "Nonfiction",
-            "yearPublished": "1981",
-            "slug": "danse-macabre-by-stephen-king",
-            "grade": "C",
             "includedInSlugs": [],
             "authors": [
               {
@@ -6868,58 +6670,6 @@
             "yearPublished": "2013",
             "slug": "doctor-sleep-by-stephen-king",
             "grade": "C+",
-            "includedInSlugs": [],
-            "authors": [
-              {
-                "name": "Stephen King"
-              }
-            ]
-          },
-          {
-            "title": "Carrie",
-            "kind": "Novel",
-            "yearPublished": "1974",
-            "slug": "carrie-by-stephen-king",
-            "grade": "B-",
-            "includedInSlugs": [],
-            "authors": [
-              {
-                "name": "Stephen King"
-              }
-            ]
-          },
-          {
-            "title": "The Shining",
-            "kind": "Novel",
-            "yearPublished": "1977",
-            "slug": "the-shining-by-stephen-king",
-            "grade": "B",
-            "includedInSlugs": [],
-            "authors": [
-              {
-                "name": "Stephen King"
-              }
-            ]
-          },
-          {
-            "title": "Danse Macabre",
-            "kind": "Nonfiction",
-            "yearPublished": "1981",
-            "slug": "danse-macabre-by-stephen-king",
-            "grade": "C",
-            "includedInSlugs": [],
-            "authors": [
-              {
-                "name": "Stephen King"
-              }
-            ]
-          },
-          {
-            "title": "On Writing",
-            "kind": "Nonfiction",
-            "yearPublished": "2000",
-            "slug": "on-writing-by-stephen-king",
-            "grade": "A-",
             "includedInSlugs": [],
             "authors": [
               {
@@ -8461,19 +8211,6 @@
         ]
       },
       {
-        "title": "Danse Macabre",
-        "kind": "Nonfiction",
-        "yearPublished": "1981",
-        "slug": "danse-macabre-by-stephen-king",
-        "grade": "C",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Stephen King"
-          }
-        ]
-      },
-      {
         "title": "Dark Crusade",
         "kind": "Novel",
         "yearPublished": "1976",
@@ -8483,6 +8220,19 @@
         "authors": [
           {
             "name": "Karl Edward Wagner"
+          }
+        ]
+      },
+      {
+        "title": "The Dark Tunnel",
+        "kind": "Novel",
+        "yearPublished": "1944",
+        "slug": "the-dark-tunnel-by-ross-macdonald",
+        "grade": "D+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Ross Macdonald"
           }
         ]
       }
@@ -8522,6 +8272,19 @@
     "moreByAuthors": [],
     "moreReviews": [
       {
+        "title": "The Creative Act",
+        "kind": "Nonfiction",
+        "yearPublished": "2023",
+        "slug": "the-creative-act-by-rick-rubin",
+        "grade": "C+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Rick Rubin"
+          }
+        ]
+      },
+      {
         "title": "Cured",
         "kind": "Nonfiction",
         "yearPublished": "2016",
@@ -8531,19 +8294,6 @@
         "authors": [
           {
             "name": "Lol Tolhurst"
-          }
-        ]
-      },
-      {
-        "title": "Danse Macabre",
-        "kind": "Nonfiction",
-        "yearPublished": "1981",
-        "slug": "danse-macabre-by-stephen-king",
-        "grade": "C",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Stephen King"
           }
         ]
       },
@@ -9440,6 +9190,19 @@
             "yearPublished": "2013",
             "slug": "doctor-sleep-by-stephen-king",
             "grade": "C+",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          },
+          {
+            "title": "Carrie",
+            "kind": "Novel",
+            "yearPublished": "1974",
+            "slug": "carrie-by-stephen-king",
+            "grade": "B-",
             "includedInSlugs": [],
             "authors": [
               {

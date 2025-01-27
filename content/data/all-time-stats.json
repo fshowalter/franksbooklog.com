@@ -1,5 +1,5 @@
 {
-  "reviewCount": 69,
+  "reviewCount": 68,
   "workCount": 76,
   "bookCount": 64,
   "gradeDistribution": [
@@ -35,7 +35,7 @@
     },
     {
       "name": "C",
-      "count": 9,
+      "count": 8,
       "sortValue": 6
     },
     {
@@ -362,7 +362,7 @@
           "title": "Danse Macabre",
           "yearPublished": "1981",
           "includedInSlugs": [],
-          "reviewed": true
+          "reviewed": false
         },
         {
           "sequence": 1,

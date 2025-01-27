@@ -199,9 +199,9 @@
       "kind": "Nonfiction",
       "slug": "danse-macabre-by-stephen-king",
       "sortTitle": "Danse Macabre",
-      "reviewed": true,
-      "grade": "C",
-      "gradeValue": 6,
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
       "authors": [
         {
           "slug": "stephen-king",
@@ -960,7 +960,7 @@
       "includedInSlugs": []
     }
   ],
-  "reviewedWorkCount": 6,
+  "reviewedWorkCount": 5,
   "workCount": 50,
-  "shelfWorkCount": 44
+  "shelfWorkCount": 45
 }
