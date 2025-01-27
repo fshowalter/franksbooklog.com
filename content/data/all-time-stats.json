@@ -1,6 +1,6 @@
 {
   "reviewCount": 68,
-  "workCount": 76,
+  "workCount": 78,
   "bookCount": 64,
   "gradeDistribution": [
     {
@@ -83,7 +83,7 @@
     },
     {
       "name": "Short Story",
-      "count": 10
+      "count": 12
     }
   ],
   "editionDistribution": [
@@ -101,7 +101,7 @@
     },
     {
       "name": "Paperback",
-      "count": 8
+      "count": 10
     }
   ],
   "decadeDistribution": [
@@ -127,7 +127,7 @@
     },
     {
       "name": "1980s",
-      "count": 12
+      "count": 14
     },
     {
       "name": "1990s",
@@ -316,6 +316,129 @@
       ]
     },
     {
+      "name": "Richard Laymon",
+      "count": 10,
+      "slug": "richard-laymon",
+      "readings": [
+        {
+          "sequence": 1,
+          "date": "2014-04-05",
+          "slug": "nightmare-lake-by-richard-laymon",
+          "edition": "Paperback",
+          "kind": "Novel",
+          "title": "Nightmare Lake",
+          "yearPublished": "1983",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2014-06-09",
+          "slug": "shootout-at-joes-by-richard-laymon",
+          "edition": "Paperback",
+          "kind": "Short Story",
+          "title": "Shootout at Joe's",
+          "yearPublished": "1984",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2023-01-21",
+          "slug": "roadside-pickup-by-richard-laymon",
+          "edition": "Kindle",
+          "kind": "Short Story",
+          "title": "Roadside Pickup",
+          "yearPublished": "1974",
+          "includedInSlugs": [
+            "short-stories-volume-one-by-richard-laymon"
+          ],
+          "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2014-04-11",
+          "slug": "the-lawmen-by-richard-laymon",
+          "edition": "Paperback",
+          "kind": "Novel",
+          "title": "The Lawmen",
+          "yearPublished": "1983",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2022-03-16",
+          "slug": "the-cellar-by-richard-laymon",
+          "edition": "Kindle",
+          "kind": "Novel",
+          "title": "The Cellar",
+          "yearPublished": "1980",
+          "includedInSlugs": [],
+          "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2022-04-03",
+          "slug": "desert-pickup-by-richard-laymon",
+          "edition": "Kindle",
+          "kind": "Short Story",
+          "title": "Desert Pickup",
+          "yearPublished": "1970",
+          "includedInSlugs": [
+            "short-stories-volume-one-by-richard-laymon"
+          ],
+          "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2022-09-11",
+          "slug": "the-woods-are-dark-by-richard-laymon",
+          "edition": "Audible",
+          "kind": "Novel",
+          "title": "The Woods Are Dark",
+          "yearPublished": "1981",
+          "includedInSlugs": [],
+          "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2014-03-12",
+          "slug": "your-secret-admirer-by-richard-laymon",
+          "edition": "Paperback",
+          "kind": "Novel",
+          "title": "Your Secret Admirer",
+          "yearPublished": "1980",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 2,
+          "date": "2014-06-09",
+          "slug": "dawsons-city-by-richard-laymon",
+          "edition": "Paperback",
+          "kind": "Short Story",
+          "title": "Dawson's City",
+          "yearPublished": "1984",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 2,
+          "date": "2022-10-11",
+          "slug": "out-are-the-lights-by-richard-laymon",
+          "edition": "Kindle",
+          "kind": "Novel",
+          "title": "Out Are the Lights",
+          "yearPublished": "1982",
+          "includedInSlugs": [
+            "out-are-the-lights-and-other-tales-by-richard-laymon"
+          ],
+          "reviewed": true
+        }
+      ]
+    },
+    {
       "name": "Stephen King",
       "count": 9,
       "slug": "stephen-king",
@@ -418,107 +541,6 @@
           "yearPublished": "1980",
           "includedInSlugs": [],
           "reviewed": false
-        }
-      ]
-    },
-    {
-      "name": "Richard Laymon",
-      "count": 8,
-      "slug": "richard-laymon",
-      "readings": [
-        {
-          "sequence": 1,
-          "date": "2014-04-05",
-          "slug": "nightmare-lake-by-richard-laymon",
-          "edition": "Paperback",
-          "kind": "Novel",
-          "title": "Nightmare Lake",
-          "yearPublished": "1983",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "sequence": 1,
-          "date": "2023-01-21",
-          "slug": "roadside-pickup-by-richard-laymon",
-          "edition": "Kindle",
-          "kind": "Short Story",
-          "title": "Roadside Pickup",
-          "yearPublished": "1974",
-          "includedInSlugs": [
-            "short-stories-volume-one-by-richard-laymon"
-          ],
-          "reviewed": true
-        },
-        {
-          "sequence": 1,
-          "date": "2014-04-11",
-          "slug": "the-lawmen-by-richard-laymon",
-          "edition": "Paperback",
-          "kind": "Novel",
-          "title": "The Lawmen",
-          "yearPublished": "1983",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "sequence": 1,
-          "date": "2022-03-16",
-          "slug": "the-cellar-by-richard-laymon",
-          "edition": "Kindle",
-          "kind": "Novel",
-          "title": "The Cellar",
-          "yearPublished": "1980",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "sequence": 1,
-          "date": "2022-04-03",
-          "slug": "desert-pickup-by-richard-laymon",
-          "edition": "Kindle",
-          "kind": "Short Story",
-          "title": "Desert Pickup",
-          "yearPublished": "1970",
-          "includedInSlugs": [
-            "short-stories-volume-one-by-richard-laymon"
-          ],
-          "reviewed": true
-        },
-        {
-          "sequence": 1,
-          "date": "2022-09-11",
-          "slug": "the-woods-are-dark-by-richard-laymon",
-          "edition": "Audible",
-          "kind": "Novel",
-          "title": "The Woods Are Dark",
-          "yearPublished": "1981",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "sequence": 1,
-          "date": "2014-03-12",
-          "slug": "your-secret-admirer-by-richard-laymon",
-          "edition": "Paperback",
-          "kind": "Novel",
-          "title": "Your Secret Admirer",
-          "yearPublished": "1980",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "sequence": 2,
-          "date": "2022-10-11",
-          "slug": "out-are-the-lights-by-richard-laymon",
-          "edition": "Kindle",
-          "kind": "Novel",
-          "title": "Out Are the Lights",
-          "yearPublished": "1982",
-          "includedInSlugs": [
-            "out-are-the-lights-and-other-tales-by-richard-laymon"
-          ],
-          "reviewed": true
         }
       ]
     },
