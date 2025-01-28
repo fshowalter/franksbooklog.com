@@ -1089,11 +1089,11 @@
             ]
           },
           {
-            "title": "The Shining",
+            "title": "Rage",
             "kind": "Novel",
-            "yearPublished": "1977",
-            "slug": "the-shining-by-stephen-king",
-            "grade": "B",
+            "yearPublished": "1976",
+            "slug": "rage-by-stephen-king",
+            "grade": "C",
             "includedInSlugs": [],
             "authors": [
               {
@@ -1102,10 +1102,10 @@
             ]
           },
           {
-            "title": "Night Shift",
-            "kind": "Collection",
-            "yearPublished": "1978",
-            "slug": "night-shift-by-stephen-king",
+            "title": "The Shining",
+            "kind": "Novel",
+            "yearPublished": "1977",
+            "slug": "the-shining-by-stephen-king",
             "grade": "B",
             "includedInSlugs": [],
             "authors": [
@@ -2402,11 +2402,11 @@
             ]
           },
           {
-            "title": "The Shining",
+            "title": "Rage",
             "kind": "Novel",
-            "yearPublished": "1977",
-            "slug": "the-shining-by-stephen-king",
-            "grade": "B",
+            "yearPublished": "1976",
+            "slug": "rage-by-stephen-king",
+            "grade": "C",
             "includedInSlugs": [],
             "authors": [
               {
@@ -5640,11 +5640,11 @@
         "slug": "stephen-king",
         "works": [
           {
-            "title": "Carrie",
+            "title": "'Salem's Lot",
             "kind": "Novel",
-            "yearPublished": "1974",
-            "slug": "carrie-by-stephen-king",
-            "grade": "B-",
+            "yearPublished": "1975",
+            "slug": "salems-lot-by-stephen-king",
+            "grade": "B",
             "includedInSlugs": [],
             "authors": [
               {
@@ -5653,11 +5653,11 @@
             ]
           },
           {
-            "title": "'Salem's Lot",
+            "title": "Rage",
             "kind": "Novel",
-            "yearPublished": "1975",
-            "slug": "salems-lot-by-stephen-king",
-            "grade": "B",
+            "yearPublished": "1976",
+            "slug": "rage-by-stephen-king",
+            "grade": "C",
             "includedInSlugs": [],
             "authors": [
               {
@@ -6106,11 +6106,11 @@
         "slug": "stephen-king",
         "works": [
           {
-            "title": "'Salem's Lot",
+            "title": "Rage",
             "kind": "Novel",
-            "yearPublished": "1975",
-            "slug": "salems-lot-by-stephen-king",
-            "grade": "B",
+            "yearPublished": "1976",
+            "slug": "rage-by-stephen-king",
+            "grade": "C",
             "includedInSlugs": [],
             "authors": [
               {
@@ -6456,6 +6456,196 @@
         ]
       },
       {
+        "title": "Rage",
+        "kind": "Novel",
+        "yearPublished": "1976",
+        "slug": "rage-by-stephen-king",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Stephen King"
+          }
+        ]
+      },
+      {
+        "title": "Recessional",
+        "kind": "Nonfiction",
+        "yearPublished": "2022",
+        "slug": "recessional-by-david-mamet",
+        "grade": "D",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "David Mamet"
+          }
+        ]
+      }
+    ],
+    "includedWorks": []
+  },
+  {
+    "sequence": "2012-05-13-2011-11-06-1",
+    "slug": "rage-by-stephen-king",
+    "title": "Rage",
+    "subtitle": null,
+    "sortTitle": "Rage",
+    "yearPublished": "1976",
+    "grade": "C",
+    "gradeValue": 6,
+    "kind": "Novel",
+    "date": "2012-05-13",
+    "authors": [
+      {
+        "slug": "stephen-king",
+        "notes": "as Richard Bachman",
+        "name": "Stephen King",
+        "sortName": "King, Stephen"
+      }
+    ],
+    "readings": [
+      {
+        "sequence": 1,
+        "date": "2012-05-13",
+        "isAudiobook": false,
+        "abandoned": false,
+        "readingTime": 190
+      }
+    ],
+    "includedInSlugs": [],
+    "yearReviewed": 2012,
+    "moreByAuthors": [
+      {
+        "name": "Stephen King",
+        "slug": "stephen-king",
+        "works": [
+          {
+            "title": "Doctor Sleep",
+            "kind": "Novel",
+            "yearPublished": "2013",
+            "slug": "doctor-sleep-by-stephen-king",
+            "grade": "C+",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          },
+          {
+            "title": "Carrie",
+            "kind": "Novel",
+            "yearPublished": "1974",
+            "slug": "carrie-by-stephen-king",
+            "grade": "B-",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          },
+          {
+            "title": "'Salem's Lot",
+            "kind": "Novel",
+            "yearPublished": "1975",
+            "slug": "salems-lot-by-stephen-king",
+            "grade": "B",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          },
+          {
+            "title": "The Shining",
+            "kind": "Novel",
+            "yearPublished": "1977",
+            "slug": "the-shining-by-stephen-king",
+            "grade": "B",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          },
+          {
+            "title": "Night Shift",
+            "kind": "Collection",
+            "yearPublished": "1978",
+            "slug": "night-shift-by-stephen-king",
+            "grade": "B",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          },
+          {
+            "title": "On Writing",
+            "kind": "Nonfiction",
+            "yearPublished": "2000",
+            "slug": "on-writing-by-stephen-king",
+            "grade": "A-",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "moreReviews": [
+      {
+        "title": "Mr. S",
+        "kind": "Nonfiction",
+        "yearPublished": "2003",
+        "slug": "mr-s-by-george-jacobs-william-stadiem",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "George Jacobs"
+          },
+          {
+            "name": "William Stadiem"
+          }
+        ]
+      },
+      {
+        "title": "Out Are the Lights",
+        "kind": "Novel",
+        "yearPublished": "1982",
+        "slug": "out-are-the-lights-by-richard-laymon",
+        "grade": "C-",
+        "includedInSlugs": [
+          "out-are-the-lights-and-other-tales-by-richard-laymon"
+        ],
+        "authors": [
+          {
+            "name": "Richard Laymon"
+          }
+        ]
+      },
+      {
+        "title": "The Postman Always Rings Twice",
+        "kind": "Novel",
+        "yearPublished": "1934",
+        "slug": "the-postman-always-rings-twice-by-james-m-cain",
+        "grade": "B+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "James M. Cain"
+          }
+        ]
+      },
+      {
         "title": "Recessional",
         "kind": "Nonfiction",
         "yearPublished": "2022",
@@ -6478,6 +6668,19 @@
         "authors": [
           {
             "name": "Stephen Morris"
+          }
+        ]
+      },
+      {
+        "title": "The Rise of Theodore Roosevelt",
+        "kind": "Nonfiction",
+        "yearPublished": "1979",
+        "slug": "the-rise-of-theodore-roosevelt-by-edmund-morris",
+        "grade": "A-",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Edmund Morris"
           }
         ]
       }
@@ -6517,19 +6720,6 @@
     "moreByAuthors": [],
     "moreReviews": [
       {
-        "title": "On Writing",
-        "kind": "Nonfiction",
-        "yearPublished": "2000",
-        "slug": "on-writing-by-stephen-king",
-        "grade": "A-",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Stephen King"
-          }
-        ]
-      },
-      {
         "title": "Out Are the Lights",
         "kind": "Novel",
         "yearPublished": "1982",
@@ -6554,6 +6744,19 @@
         "authors": [
           {
             "name": "James M. Cain"
+          }
+        ]
+      },
+      {
+        "title": "Rage",
+        "kind": "Novel",
+        "yearPublished": "1976",
+        "slug": "rage-by-stephen-king",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Stephen King"
           }
         ]
       },
@@ -6634,21 +6837,6 @@
     "moreByAuthors": [],
     "moreReviews": [
       {
-        "title": "Out Are the Lights",
-        "kind": "Novel",
-        "yearPublished": "1982",
-        "slug": "out-are-the-lights-by-richard-laymon",
-        "grade": "C-",
-        "includedInSlugs": [
-          "out-are-the-lights-and-other-tales-by-richard-laymon"
-        ],
-        "authors": [
-          {
-            "name": "Richard Laymon"
-          }
-        ]
-      },
-      {
         "title": "The Postman Always Rings Twice",
         "kind": "Novel",
         "yearPublished": "1934",
@@ -6658,6 +6846,19 @@
         "authors": [
           {
             "name": "James M. Cain"
+          }
+        ]
+      },
+      {
+        "title": "Rage",
+        "kind": "Novel",
+        "yearPublished": "1976",
+        "slug": "rage-by-stephen-king",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Stephen King"
           }
         ]
       },
@@ -7153,6 +7354,19 @@
             ]
           },
           {
+            "title": "Rage",
+            "kind": "Novel",
+            "yearPublished": "1976",
+            "slug": "rage-by-stephen-king",
+            "grade": "C",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          },
+          {
             "title": "The Shining",
             "kind": "Novel",
             "yearPublished": "1977",
@@ -7171,19 +7385,6 @@
             "yearPublished": "1978",
             "slug": "night-shift-by-stephen-king",
             "grade": "B",
-            "includedInSlugs": [],
-            "authors": [
-              {
-                "name": "Stephen King"
-              }
-            ]
-          },
-          {
-            "title": "On Writing",
-            "kind": "Nonfiction",
-            "yearPublished": "2000",
-            "slug": "on-writing-by-stephen-king",
-            "grade": "A-",
             "includedInSlugs": [],
             "authors": [
               {
@@ -9274,6 +9475,19 @@
         ]
       },
       {
+        "title": "Rage",
+        "kind": "Novel",
+        "yearPublished": "1976",
+        "slug": "rage-by-stephen-king",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Stephen King"
+          }
+        ]
+      },
+      {
         "title": "Recessional",
         "kind": "Nonfiction",
         "yearPublished": "2022",
@@ -9296,19 +9510,6 @@
         "authors": [
           {
             "name": "Stephen Morris"
-          }
-        ]
-      },
-      {
-        "title": "The Rise of Theodore Roosevelt",
-        "kind": "Nonfiction",
-        "yearPublished": "1979",
-        "slug": "the-rise-of-theodore-roosevelt-by-edmund-morris",
-        "grade": "A-",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Edmund Morris"
           }
         ]
       }
@@ -9348,15 +9549,15 @@
     "moreByAuthors": [],
     "moreReviews": [
       {
-        "title": "The Postman Always Rings Twice",
+        "title": "Rage",
         "kind": "Novel",
-        "yearPublished": "1934",
-        "slug": "the-postman-always-rings-twice-by-james-m-cain",
-        "grade": "B+",
+        "yearPublished": "1976",
+        "slug": "rage-by-stephen-king",
+        "grade": "C",
         "includedInSlugs": [],
         "authors": [
           {
-            "name": "James M. Cain"
+            "name": "Stephen King"
           }
         ]
       },
@@ -9702,6 +9903,71 @@
         "name": "Stephen King",
         "slug": "stephen-king",
         "works": [
+          {
+            "title": "Carrie",
+            "kind": "Novel",
+            "yearPublished": "1974",
+            "slug": "carrie-by-stephen-king",
+            "grade": "B-",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          },
+          {
+            "title": "'Salem's Lot",
+            "kind": "Novel",
+            "yearPublished": "1975",
+            "slug": "salems-lot-by-stephen-king",
+            "grade": "B",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          },
+          {
+            "title": "Rage",
+            "kind": "Novel",
+            "yearPublished": "1976",
+            "slug": "rage-by-stephen-king",
+            "grade": "C",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          },
+          {
+            "title": "Night Shift",
+            "kind": "Collection",
+            "yearPublished": "1978",
+            "slug": "night-shift-by-stephen-king",
+            "grade": "B",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          },
+          {
+            "title": "On Writing",
+            "kind": "Nonfiction",
+            "yearPublished": "2000",
+            "slug": "on-writing-by-stephen-king",
+            "grade": "A-",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          },
           {
             "title": "Doctor Sleep",
             "kind": "Novel",
