@@ -9442,6 +9442,13 @@
         "isAudiobook": true,
         "abandoned": false,
         "readingTime": 2
+      },
+      {
+        "sequence": 1,
+        "date": "2014-03-18",
+        "isAudiobook": false,
+        "abandoned": false,
+        "readingTime": 5
       }
     ],
     "includedInSlugs": [],

@@ -1,7 +1,7 @@
 {
   "reviewCount": 68,
-  "workCount": 78,
-  "bookCount": 64,
+  "workCount": 79,
+  "bookCount": 65,
   "gradeDistribution": [
     {
       "name": "A",
@@ -75,7 +75,7 @@
     },
     {
       "name": "Novel",
-      "count": 34
+      "count": 35
     },
     {
       "name": "Novella",
@@ -101,7 +101,7 @@
     },
     {
       "name": "Paperback",
-      "count": 10
+      "count": 11
     }
   ],
   "decadeDistribution": [
@@ -127,7 +127,7 @@
     },
     {
       "name": "1980s",
-      "count": 14
+      "count": 15
     },
     {
       "name": "1990s",
@@ -317,7 +317,7 @@
     },
     {
       "name": "Richard Laymon",
-      "count": 10,
+      "count": 11,
       "slug": "richard-laymon",
       "readings": [
         {
@@ -395,6 +395,17 @@
           "date": "2022-09-11",
           "slug": "the-woods-are-dark-by-richard-laymon",
           "edition": "Audible",
+          "kind": "Novel",
+          "title": "The Woods Are Dark",
+          "yearPublished": "1981",
+          "includedInSlugs": [],
+          "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2014-03-18",
+          "slug": "the-woods-are-dark-by-richard-laymon",
+          "edition": "Paperback",
           "kind": "Novel",
           "title": "The Woods Are Dark",
           "yearPublished": "1981",
