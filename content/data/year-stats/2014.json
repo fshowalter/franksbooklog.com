@@ -1,7 +1,7 @@
 {
   "year": "2014",
-  "workCount": 10,
-  "bookCount": 8,
+  "workCount": 11,
+  "bookCount": 9,
   "kindDistribution": [
     {
       "name": "Nonfiction",
@@ -9,7 +9,7 @@
     },
     {
       "name": "Novel",
-      "count": 7
+      "count": 8
     },
     {
       "name": "Short Story",
@@ -23,13 +23,13 @@
     },
     {
       "name": "Paperback",
-      "count": 8
+      "count": 9
     }
   ],
   "decadeDistribution": [
     {
       "name": "1970s",
-      "count": 1
+      "count": 2
     },
     {
       "name": "1980s",
@@ -123,7 +123,7 @@
     },
     {
       "name": "Stephen King",
-      "count": 3,
+      "count": 4,
       "slug": "stephen-king",
       "readings": [
         {
@@ -158,6 +158,17 @@
           "yearPublished": "1980",
           "includedInSlugs": [],
           "reviewed": false
+        },
+        {
+          "sequence": 2,
+          "date": "2014-03-02",
+          "slug": "the-stand-by-stephen-king",
+          "edition": "Paperback",
+          "kind": "Novel",
+          "title": "The Stand",
+          "yearPublished": "1978",
+          "includedInSlugs": [],
+          "reviewed": true
         }
       ]
     }

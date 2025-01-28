@@ -1,7 +1,7 @@
 {
-  "reviewCount": 70,
-  "workCount": 82,
-  "bookCount": 68,
+  "reviewCount": 71,
+  "workCount": 83,
+  "bookCount": 69,
   "gradeDistribution": [
     {
       "name": "A",
@@ -50,7 +50,7 @@
     },
     {
       "name": "D",
-      "count": 2,
+      "count": 3,
       "sortValue": 3
     },
     {
@@ -75,7 +75,7 @@
     },
     {
       "name": "Novel",
-      "count": 37
+      "count": 38
     },
     {
       "name": "Novella",
@@ -101,7 +101,7 @@
     },
     {
       "name": "Paperback",
-      "count": 14
+      "count": 15
     }
   ],
   "decadeDistribution": [
@@ -123,7 +123,7 @@
     },
     {
       "name": "1970s",
-      "count": 12
+      "count": 13
     },
     {
       "name": "1980s",
@@ -462,7 +462,7 @@
     },
     {
       "name": "Stephen King",
-      "count": 11,
+      "count": 12,
       "slug": "stephen-king",
       "readings": [
         {
@@ -582,6 +582,17 @@
           "edition": "Paperback",
           "kind": "Collection",
           "title": "Night Shift",
+          "yearPublished": "1978",
+          "includedInSlugs": [],
+          "reviewed": true
+        },
+        {
+          "sequence": 2,
+          "date": "2014-03-02",
+          "slug": "the-stand-by-stephen-king",
+          "edition": "Paperback",
+          "kind": "Novel",
+          "title": "The Stand",
           "yearPublished": "1978",
           "includedInSlugs": [],
           "reviewed": true

@@ -1183,9 +1183,9 @@
       "kind": "Novel",
       "slug": "the-stand-by-stephen-king",
       "sortTitle": "Stand",
-      "reviewed": false,
-      "grade": null,
-      "gradeValue": null,
+      "reviewed": true,
+      "grade": "D",
+      "gradeValue": 3,
       "authors": [
         {
           "slug": "stephen-king",
@@ -1399,7 +1399,7 @@
       ]
     }
   ],
-  "reviewedWorkCount": 7,
+  "reviewedWorkCount": 8,
   "workCount": 71,
-  "shelfWorkCount": 64
+  "shelfWorkCount": 63
 }
