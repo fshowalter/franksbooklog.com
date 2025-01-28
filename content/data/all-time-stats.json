@@ -1,7 +1,7 @@
 {
-  "reviewCount": 69,
-  "workCount": 81,
-  "bookCount": 67,
+  "reviewCount": 70,
+  "workCount": 82,
+  "bookCount": 68,
   "gradeDistribution": [
     {
       "name": "A",
@@ -35,7 +35,7 @@
     },
     {
       "name": "C",
-      "count": 8,
+      "count": 9,
       "sortValue": 6
     },
     {
@@ -75,7 +75,7 @@
     },
     {
       "name": "Novel",
-      "count": 36
+      "count": 37
     },
     {
       "name": "Novella",
@@ -101,7 +101,7 @@
     },
     {
       "name": "Paperback",
-      "count": 13
+      "count": 14
     }
   ],
   "decadeDistribution": [
@@ -123,7 +123,7 @@
     },
     {
       "name": "1970s",
-      "count": 11
+      "count": 12
     },
     {
       "name": "1980s",
@@ -462,7 +462,7 @@
     },
     {
       "name": "Stephen King",
-      "count": 10,
+      "count": 11,
       "slug": "stephen-king",
       "readings": [
         {
@@ -484,6 +484,17 @@
           "kind": "Nonfiction",
           "title": "On Writing",
           "yearPublished": "2000",
+          "includedInSlugs": [],
+          "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2012-05-13",
+          "slug": "rage-by-stephen-king",
+          "edition": "Paperback",
+          "kind": "Novel",
+          "title": "Rage",
+          "yearPublished": "1976",
           "includedInSlugs": [],
           "reviewed": true
         },

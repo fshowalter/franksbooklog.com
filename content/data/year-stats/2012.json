@@ -1,7 +1,7 @@
 {
   "year": "2012",
-  "workCount": 4,
-  "bookCount": 4,
+  "workCount": 5,
+  "bookCount": 5,
   "kindDistribution": [
     {
       "name": "Collection",
@@ -13,7 +13,7 @@
     },
     {
       "name": "Novel",
-      "count": 1
+      "count": 2
     }
   ],
   "editionDistribution": [
@@ -23,18 +23,48 @@
     },
     {
       "name": "Paperback",
-      "count": 2
+      "count": 3
     }
   ],
   "decadeDistribution": [
     {
       "name": "1970s",
-      "count": 2
+      "count": 3
     },
     {
       "name": "2000s",
       "count": 2
     }
   ],
-  "mostReadAuthors": []
+  "mostReadAuthors": [
+    {
+      "name": "Stephen King",
+      "count": 2,
+      "slug": "stephen-king",
+      "readings": [
+        {
+          "sequence": 1,
+          "date": "2012-05-13",
+          "slug": "rage-by-stephen-king",
+          "edition": "Paperback",
+          "kind": "Novel",
+          "title": "Rage",
+          "yearPublished": "1976",
+          "includedInSlugs": [],
+          "reviewed": true
+        },
+        {
+          "sequence": 2,
+          "date": "2012-05-14",
+          "slug": "night-shift-by-stephen-king",
+          "edition": "Paperback",
+          "kind": "Collection",
+          "title": "Night Shift",
+          "yearPublished": "1978",
+          "includedInSlugs": [],
+          "reviewed": true
+        }
+      ]
+    }
+  ]
 }

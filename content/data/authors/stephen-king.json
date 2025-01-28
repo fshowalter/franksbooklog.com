@@ -1010,9 +1010,9 @@
       "kind": "Novel",
       "slug": "rage-by-stephen-king",
       "sortTitle": "Rage",
-      "reviewed": false,
-      "grade": null,
-      "gradeValue": null,
+      "reviewed": true,
+      "grade": "C",
+      "gradeValue": 6,
       "authors": [
         {
           "slug": "stephen-king",
@@ -1399,7 +1399,7 @@
       ]
     }
   ],
-  "reviewedWorkCount": 6,
+  "reviewedWorkCount": 7,
   "workCount": 71,
-  "shelfWorkCount": 65
+  "shelfWorkCount": 64
 }
