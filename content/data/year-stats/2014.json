@@ -1,7 +1,7 @@
 {
   "year": "2014",
-  "workCount": 8,
-  "bookCount": 6,
+  "workCount": 9,
+  "bookCount": 7,
   "kindDistribution": [
     {
       "name": "Nonfiction",
@@ -9,7 +9,7 @@
     },
     {
       "name": "Novel",
-      "count": 5
+      "count": 6
     },
     {
       "name": "Short Story",
@@ -23,7 +23,7 @@
     },
     {
       "name": "Paperback",
-      "count": 6
+      "count": 7
     }
   ],
   "decadeDistribution": [
@@ -33,13 +33,13 @@
     },
     {
       "name": "1980s",
-      "count": 7
+      "count": 8
     }
   ],
   "mostReadAuthors": [
     {
       "name": "Richard Laymon",
-      "count": 5,
+      "count": 6,
       "slug": "richard-laymon",
       "readings": [
         {
@@ -74,6 +74,17 @@
           "yearPublished": "1983",
           "includedInSlugs": [],
           "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2014-03-18",
+          "slug": "the-woods-are-dark-by-richard-laymon",
+          "edition": "Paperback",
+          "kind": "Novel",
+          "title": "The Woods Are Dark",
+          "yearPublished": "1981",
+          "includedInSlugs": [],
+          "reviewed": true
         },
         {
           "sequence": 1,

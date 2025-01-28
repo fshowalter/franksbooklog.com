@@ -121,7 +121,9 @@ export async function loadContent(review: Review): Promise<ReviewWithContent> {
         ),
       };
     })
-    .reverse();
+    .sort((a, b) => {
+      return +b.timeline.at(-1)!.date - +a.timeline.at(-1)!.date;
+    });
 
   return {
     ...review,
