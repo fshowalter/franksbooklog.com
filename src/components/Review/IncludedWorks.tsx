@@ -22,12 +22,7 @@ export function IncludedWorks({ values }: Props) {
               className="relative mb-1 bg-default px-container py-4 last-of-type:mb-0 has-[a:hover]:bg-stripe tablet:gap-x-6 tablet:px-4 desktop:px-6"
               key={value.slug}
             >
-              <a
-                className="font-sans text-sm font-medium text-accent after:absolute after:left-0 after:top-0 after:size-full after:opacity-0"
-                href={`/reviews/${value.slug}/`}
-              >
-                {value.title}
-              </a>{" "}
+              <Title value={value} />{" "}
               <div className="font-sans text-xs leading-6 text-muted">
                 <span className="font-light text-subtle">by</span>{" "}
                 {toSentenceArray(value.authors.map((author) => author.name))}
@@ -44,5 +39,24 @@ export function IncludedWorks({ values }: Props) {
         </ul>
       </div>
     </>
+  );
+}
+
+function Title({ value }: { value: ReviewWithContent["includedWorks"][0] }) {
+  if (value.grade) {
+    return (
+      <a
+        className="font-sans text-sm font-medium text-accent after:absolute after:left-0 after:top-0 after:size-full after:opacity-0"
+        href={`/reviews/${value.slug}/`}
+      >
+        {value.title}
+      </a>
+    );
+  }
+
+  return (
+    <span className="font-sans text-sm font-normal text-muted">
+      {value.title}
+    </span>
   );
 }

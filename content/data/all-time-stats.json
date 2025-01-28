@@ -1,7 +1,7 @@
 {
-  "reviewCount": 68,
-  "workCount": 80,
-  "bookCount": 66,
+  "reviewCount": 69,
+  "workCount": 81,
+  "bookCount": 67,
   "gradeDistribution": [
     {
       "name": "A",
@@ -20,7 +20,7 @@
     },
     {
       "name": "B",
-      "count": 11,
+      "count": 12,
       "sortValue": 9
     },
     {
@@ -67,7 +67,7 @@
   "kindDistribution": [
     {
       "name": "Collection",
-      "count": 1
+      "count": 2
     },
     {
       "name": "Nonfiction",
@@ -101,7 +101,7 @@
     },
     {
       "name": "Paperback",
-      "count": 12
+      "count": 13
     }
   ],
   "decadeDistribution": [
@@ -123,7 +123,7 @@
     },
     {
       "name": "1970s",
-      "count": 10
+      "count": 11
     },
     {
       "name": "1980s",
@@ -462,7 +462,7 @@
     },
     {
       "name": "Stephen King",
-      "count": 9,
+      "count": 10,
       "slug": "stephen-king",
       "readings": [
         {
@@ -563,6 +563,17 @@
           "yearPublished": "1980",
           "includedInSlugs": [],
           "reviewed": false
+        },
+        {
+          "sequence": 2,
+          "date": "2012-05-14",
+          "slug": "night-shift-by-stephen-king",
+          "edition": "Paperback",
+          "kind": "Collection",
+          "title": "Night Shift",
+          "yearPublished": "1978",
+          "includedInSlugs": [],
+          "reviewed": true
         }
       ]
     },
