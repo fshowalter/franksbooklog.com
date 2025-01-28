@@ -1,8 +1,12 @@
 {
   "year": "2012",
-  "workCount": 3,
-  "bookCount": 3,
+  "workCount": 4,
+  "bookCount": 4,
   "kindDistribution": [
+    {
+      "name": "Collection",
+      "count": 1
+    },
     {
       "name": "Nonfiction",
       "count": 2
@@ -19,13 +23,13 @@
     },
     {
       "name": "Paperback",
-      "count": 1
+      "count": 2
     }
   ],
   "decadeDistribution": [
     {
       "name": "1970s",
-      "count": 1
+      "count": 2
     },
     {
       "name": "2000s",

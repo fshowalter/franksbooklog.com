@@ -34,9 +34,9 @@ const IncludedWorkAuthorSchema = z.object({
 
 const IncludedWorkSchema = z.object({
   authors: z.array(IncludedWorkAuthorSchema),
-  grade: z.string(),
+  grade: nullableString(),
   kind: WorkKindSchema,
-  slug: z.string(),
+  slug: nullableString(),
   title: z.string(),
   yearPublished: z.string(),
 });
