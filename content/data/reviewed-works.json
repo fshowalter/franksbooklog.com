@@ -1037,11 +1037,11 @@
         "slug": "stephen-king",
         "works": [
           {
-            "title": "Night Shift",
-            "kind": "Collection",
+            "title": "The Stand",
+            "kind": "Novel",
             "yearPublished": "1978",
-            "slug": "night-shift-by-stephen-king",
-            "grade": "B",
+            "slug": "the-stand-by-stephen-king",
+            "grade": "D",
             "includedInSlugs": [],
             "authors": [
               {
@@ -2337,10 +2337,10 @@
         "slug": "stephen-king",
         "works": [
           {
-            "title": "The Shining",
-            "kind": "Novel",
-            "yearPublished": "1977",
-            "slug": "the-shining-by-stephen-king",
+            "title": "Night Shift",
+            "kind": "Collection",
+            "yearPublished": "1978",
+            "slug": "night-shift-by-stephen-king",
             "grade": "B",
             "includedInSlugs": [],
             "authors": [
@@ -2350,11 +2350,11 @@
             ]
           },
           {
-            "title": "Night Shift",
-            "kind": "Collection",
+            "title": "The Stand",
+            "kind": "Novel",
             "yearPublished": "1978",
-            "slug": "night-shift-by-stephen-king",
-            "grade": "B",
+            "slug": "the-stand-by-stephen-king",
+            "grade": "D",
             "includedInSlugs": [],
             "authors": [
               {
@@ -5679,6 +5679,19 @@
             ]
           },
           {
+            "title": "The Stand",
+            "kind": "Novel",
+            "yearPublished": "1978",
+            "slug": "the-stand-by-stephen-king",
+            "grade": "D",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          },
+          {
             "title": "On Writing",
             "kind": "Nonfiction",
             "yearPublished": "2000",
@@ -5697,19 +5710,6 @@
             "yearPublished": "2013",
             "slug": "doctor-sleep-by-stephen-king",
             "grade": "C+",
-            "includedInSlugs": [],
-            "authors": [
-              {
-                "name": "Stephen King"
-              }
-            ]
-          },
-          {
-            "title": "Carrie",
-            "kind": "Novel",
-            "yearPublished": "1974",
-            "slug": "carrie-by-stephen-king",
-            "grade": "B-",
             "includedInSlugs": [],
             "authors": [
               {
@@ -6106,19 +6106,6 @@
         "slug": "stephen-king",
         "works": [
           {
-            "title": "Rage",
-            "kind": "Novel",
-            "yearPublished": "1976",
-            "slug": "rage-by-stephen-king",
-            "grade": "C",
-            "includedInSlugs": [],
-            "authors": [
-              {
-                "name": "Stephen King"
-              }
-            ]
-          },
-          {
             "title": "The Shining",
             "kind": "Novel",
             "yearPublished": "1977",
@@ -6137,6 +6124,19 @@
             "yearPublished": "1978",
             "slug": "night-shift-by-stephen-king",
             "grade": "B",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          },
+          {
+            "title": "The Stand",
+            "kind": "Novel",
+            "yearPublished": "1978",
+            "slug": "the-stand-by-stephen-king",
+            "grade": "D",
             "includedInSlugs": [],
             "authors": [
               {
@@ -6260,15 +6260,15 @@
         ]
       },
       {
-        "title": "Recessional",
-        "kind": "Nonfiction",
-        "yearPublished": "2022",
-        "slug": "recessional-by-david-mamet",
-        "grade": "D",
+        "title": "Rage",
+        "kind": "Novel",
+        "yearPublished": "1976",
+        "slug": "rage-by-stephen-king",
+        "grade": "C",
         "includedInSlugs": [],
         "authors": [
           {
-            "name": "David Mamet"
+            "name": "Stephen King"
           }
         ]
       }
@@ -6585,11 +6585,11 @@
             ]
           },
           {
-            "title": "On Writing",
-            "kind": "Nonfiction",
-            "yearPublished": "2000",
-            "slug": "on-writing-by-stephen-king",
-            "grade": "A-",
+            "title": "The Stand",
+            "kind": "Novel",
+            "yearPublished": "1978",
+            "slug": "the-stand-by-stephen-king",
+            "grade": "D",
             "includedInSlugs": [],
             "authors": [
               {
@@ -6602,18 +6602,15 @@
     ],
     "moreReviews": [
       {
-        "title": "Mr. S",
+        "title": "On Writing",
         "kind": "Nonfiction",
-        "yearPublished": "2003",
-        "slug": "mr-s-by-george-jacobs-william-stadiem",
-        "grade": "B",
+        "yearPublished": "2000",
+        "slug": "on-writing-by-stephen-king",
+        "grade": "A-",
         "includedInSlugs": [],
         "authors": [
           {
-            "name": "George Jacobs"
-          },
-          {
-            "name": "William Stadiem"
+            "name": "Stephen King"
           }
         ]
       },
@@ -7762,6 +7759,19 @@
         ]
       },
       {
+        "title": "The Stand",
+        "kind": "Novel",
+        "yearPublished": "1978",
+        "slug": "the-stand-by-stephen-king",
+        "grade": "D",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Stephen King"
+          }
+        ]
+      },
+      {
         "title": "The M.A.X. Muscle Plan",
         "kind": "Nonfiction",
         "yearPublished": "2012",
@@ -7784,19 +7794,6 @@
         "authors": [
           {
             "name": "Arnold Schwarzenegger"
-          }
-        ]
-      },
-      {
-        "title": "True Myths",
-        "kind": "Nonfiction",
-        "yearPublished": "1996",
-        "slug": "true-myths-by-nigel-andrews",
-        "grade": "D+",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Nigel Andrews"
           }
         ]
       }
@@ -7929,19 +7926,6 @@
     ],
     "moreReviews": [
       {
-        "title": "Set the Boy Free",
-        "kind": "Nonfiction",
-        "yearPublished": "2016",
-        "slug": "set-the-boy-free-by-johnny-marr",
-        "grade": "B+",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Johnny Marr"
-          }
-        ]
-      },
-      {
         "title": "The Shining",
         "kind": "Novel",
         "yearPublished": "1977",
@@ -7964,6 +7948,19 @@
         "authors": [
           {
             "name": "Steven Novella"
+          }
+        ]
+      },
+      {
+        "title": "The Stand",
+        "kind": "Novel",
+        "yearPublished": "1978",
+        "slug": "the-stand-by-stephen-king",
+        "grade": "D",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Stephen King"
           }
         ]
       },
@@ -9317,19 +9314,6 @@
     "moreByAuthors": [],
     "moreReviews": [
       {
-        "title": "The Skeptics' Guide to the Universe",
-        "kind": "Nonfiction",
-        "yearPublished": "2018",
-        "slug": "the-skeptics-guide-to-the-universe-by-steven-novella",
-        "grade": "B+",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Steven Novella"
-          }
-        ]
-      },
-      {
         "title": "Soft Construction of a Sunset",
         "kind": "Short Story",
         "yearPublished": "2017",
@@ -9341,6 +9325,19 @@
         "authors": [
           {
             "name": "Philip Fracassi"
+          }
+        ]
+      },
+      {
+        "title": "The Stand",
+        "kind": "Novel",
+        "yearPublished": "1978",
+        "slug": "the-stand-by-stephen-king",
+        "grade": "D",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Stephen King"
           }
         ]
       },
@@ -9956,11 +9953,11 @@
             ]
           },
           {
-            "title": "On Writing",
-            "kind": "Nonfiction",
-            "yearPublished": "2000",
-            "slug": "on-writing-by-stephen-king",
-            "grade": "A-",
+            "title": "The Stand",
+            "kind": "Novel",
+            "yearPublished": "1978",
+            "slug": "the-stand-by-stephen-king",
+            "grade": "D",
             "includedInSlugs": [],
             "authors": [
               {
@@ -9969,11 +9966,11 @@
             ]
           },
           {
-            "title": "Doctor Sleep",
-            "kind": "Novel",
-            "yearPublished": "2013",
-            "slug": "doctor-sleep-by-stephen-king",
-            "grade": "C+",
+            "title": "On Writing",
+            "kind": "Nonfiction",
+            "yearPublished": "2000",
+            "slug": "on-writing-by-stephen-king",
+            "grade": "A-",
             "includedInSlugs": [],
             "authors": [
               {
@@ -10157,6 +10154,195 @@
         ]
       },
       {
+        "title": "The Stand",
+        "kind": "Novel",
+        "yearPublished": "1978",
+        "slug": "the-stand-by-stephen-king",
+        "grade": "D",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Stephen King"
+          }
+        ]
+      },
+      {
+        "title": "Surfer Girl",
+        "kind": "Short Story",
+        "yearPublished": "2017",
+        "slug": "surfer-girl-by-philip-fracassi",
+        "grade": "C+",
+        "includedInSlugs": [
+          "behold-the-void-by-philip-fracassi"
+        ],
+        "authors": [
+          {
+            "name": "Philip Fracassi"
+          }
+        ]
+      }
+    ],
+    "includedWorks": []
+  },
+  {
+    "sequence": "2014-03-02-2012-05-15-2",
+    "slug": "the-stand-by-stephen-king",
+    "title": "The Stand",
+    "subtitle": null,
+    "sortTitle": "Stand",
+    "yearPublished": "1978",
+    "grade": "D",
+    "gradeValue": 3,
+    "kind": "Novel",
+    "date": "2014-03-02",
+    "authors": [
+      {
+        "slug": "stephen-king",
+        "notes": null,
+        "name": "Stephen King",
+        "sortName": "King, Stephen"
+      }
+    ],
+    "readings": [
+      {
+        "sequence": 2,
+        "date": "2014-03-02",
+        "isAudiobook": false,
+        "abandoned": false,
+        "readingTime": 657
+      }
+    ],
+    "includedInSlugs": [],
+    "yearReviewed": 2014,
+    "moreByAuthors": [
+      {
+        "name": "Stephen King",
+        "slug": "stephen-king",
+        "works": [
+          {
+            "title": "Rage",
+            "kind": "Novel",
+            "yearPublished": "1976",
+            "slug": "rage-by-stephen-king",
+            "grade": "C",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          },
+          {
+            "title": "The Shining",
+            "kind": "Novel",
+            "yearPublished": "1977",
+            "slug": "the-shining-by-stephen-king",
+            "grade": "B",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          },
+          {
+            "title": "Night Shift",
+            "kind": "Collection",
+            "yearPublished": "1978",
+            "slug": "night-shift-by-stephen-king",
+            "grade": "B",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          },
+          {
+            "title": "On Writing",
+            "kind": "Nonfiction",
+            "yearPublished": "2000",
+            "slug": "on-writing-by-stephen-king",
+            "grade": "A-",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          },
+          {
+            "title": "Doctor Sleep",
+            "kind": "Novel",
+            "yearPublished": "2013",
+            "slug": "doctor-sleep-by-stephen-king",
+            "grade": "C+",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          },
+          {
+            "title": "Carrie",
+            "kind": "Novel",
+            "yearPublished": "1974",
+            "slug": "carrie-by-stephen-king",
+            "grade": "B-",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "moreReviews": [
+      {
+        "title": "Set the Boy Free",
+        "kind": "Nonfiction",
+        "yearPublished": "2016",
+        "slug": "set-the-boy-free-by-johnny-marr",
+        "grade": "B+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Johnny Marr"
+          }
+        ]
+      },
+      {
+        "title": "The Skeptics' Guide to the Universe",
+        "kind": "Nonfiction",
+        "yearPublished": "2018",
+        "slug": "the-skeptics-guide-to-the-universe-by-steven-novella",
+        "grade": "B+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Steven Novella"
+          }
+        ]
+      },
+      {
+        "title": "Soft Construction of a Sunset",
+        "kind": "Short Story",
+        "yearPublished": "2017",
+        "slug": "soft-construction-of-a-sunset-by-philip-fracassi",
+        "grade": "B-",
+        "includedInSlugs": [
+          "behold-the-void-by-philip-fracassi"
+        ],
+        "authors": [
+          {
+            "name": "Philip Fracassi"
+          }
+        ]
+      },
+      {
         "title": "Surfer Girl",
         "kind": "Short Story",
         "yearPublished": "2017",
@@ -10181,6 +10367,19 @@
         "authors": [
           {
             "name": "Brad Schoenfeld"
+          }
+        ]
+      },
+      {
+        "title": "Total Recall",
+        "kind": "Nonfiction",
+        "yearPublished": "2012",
+        "slug": "total-recall-by-arnold-schwarzenegger",
+        "grade": "C+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Arnold Schwarzenegger"
           }
         ]
       }
@@ -10438,17 +10637,15 @@
     "moreByAuthors": [],
     "moreReviews": [
       {
-        "title": "Soft Construction of a Sunset",
-        "kind": "Short Story",
-        "yearPublished": "2017",
-        "slug": "soft-construction-of-a-sunset-by-philip-fracassi",
-        "grade": "B-",
-        "includedInSlugs": [
-          "behold-the-void-by-philip-fracassi"
-        ],
+        "title": "The Stand",
+        "kind": "Novel",
+        "yearPublished": "1978",
+        "slug": "the-stand-by-stephen-king",
+        "grade": "D",
+        "includedInSlugs": [],
         "authors": [
           {
-            "name": "Philip Fracassi"
+            "name": "Stephen King"
           }
         ]
       },
