@@ -1,7 +1,7 @@
 {
   "reviewCount": 68,
-  "workCount": 79,
-  "bookCount": 65,
+  "workCount": 80,
+  "bookCount": 66,
   "gradeDistribution": [
     {
       "name": "A",
@@ -75,7 +75,7 @@
     },
     {
       "name": "Novel",
-      "count": 35
+      "count": 36
     },
     {
       "name": "Novella",
@@ -101,7 +101,7 @@
     },
     {
       "name": "Paperback",
-      "count": 11
+      "count": 12
     }
   ],
   "decadeDistribution": [
@@ -127,7 +127,7 @@
     },
     {
       "name": "1980s",
-      "count": 15
+      "count": 16
     },
     {
       "name": "1990s",
@@ -317,7 +317,7 @@
     },
     {
       "name": "Richard Laymon",
-      "count": 11,
+      "count": 12,
       "slug": "richard-laymon",
       "readings": [
         {
@@ -422,6 +422,17 @@
           "yearPublished": "1980",
           "includedInSlugs": [],
           "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2014-02-24",
+          "slug": "the-cellar-by-richard-laymon",
+          "edition": "Paperback",
+          "kind": "Novel",
+          "title": "The Cellar",
+          "yearPublished": "1980",
+          "includedInSlugs": [],
+          "reviewed": true
         },
         {
           "sequence": 2,
