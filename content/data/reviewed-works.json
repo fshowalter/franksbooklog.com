@@ -6293,6 +6293,13 @@
     "readings": [
       {
         "sequence": 1,
+        "date": "2014-04-28",
+        "isAudiobook": false,
+        "abandoned": false,
+        "readingTime": 5
+      },
+      {
+        "sequence": 1,
         "date": "2022-10-11",
         "isAudiobook": false,
         "abandoned": false,

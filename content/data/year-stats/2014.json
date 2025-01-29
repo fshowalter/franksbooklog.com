@@ -1,7 +1,7 @@
 {
   "year": "2014",
-  "workCount": 12,
-  "bookCount": 10,
+  "workCount": 13,
+  "bookCount": 11,
   "kindDistribution": [
     {
       "name": "Nonfiction",
@@ -9,7 +9,7 @@
     },
     {
       "name": "Novel",
-      "count": 9
+      "count": 10
     },
     {
       "name": "Short Story",
@@ -23,7 +23,7 @@
     },
     {
       "name": "Paperback",
-      "count": 10
+      "count": 11
     }
   ],
   "decadeDistribution": [
@@ -33,13 +33,13 @@
     },
     {
       "name": "1980s",
-      "count": 9
+      "count": 10
     }
   ],
   "mostReadAuthors": [
     {
       "name": "Richard Laymon",
-      "count": 7,
+      "count": 8,
       "slug": "richard-laymon",
       "readings": [
         {
@@ -96,6 +96,19 @@
           "yearPublished": "1983",
           "includedInSlugs": [],
           "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2014-04-28",
+          "slug": "out-are-the-lights-by-richard-laymon",
+          "edition": "Paperback",
+          "kind": "Novel",
+          "title": "Out Are the Lights",
+          "yearPublished": "1982",
+          "includedInSlugs": [
+            "out-are-the-lights-and-other-tales-by-richard-laymon"
+          ],
+          "reviewed": true
         },
         {
           "sequence": 1,
