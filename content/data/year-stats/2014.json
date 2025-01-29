@@ -44,45 +44,12 @@
       "readings": [
         {
           "sequence": 1,
-          "date": "2014-04-05",
-          "slug": "nightmare-lake-by-richard-laymon",
+          "date": "2014-02-24",
+          "slug": "the-cellar-by-richard-laymon",
           "edition": "Paperback",
           "kind": "Novel",
-          "title": "Nightmare Lake",
-          "yearPublished": "1983",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "sequence": 1,
-          "date": "2014-06-09",
-          "slug": "shootout-at-joes-by-richard-laymon",
-          "edition": "Paperback",
-          "kind": "Short Story",
-          "title": "Shootout at Joe's",
-          "yearPublished": "1984",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "sequence": 1,
-          "date": "2014-04-11",
-          "slug": "the-lawmen-by-richard-laymon",
-          "edition": "Paperback",
-          "kind": "Novel",
-          "title": "The Lawmen",
-          "yearPublished": "1983",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "sequence": 1,
-          "date": "2014-03-18",
-          "slug": "the-woods-are-dark-by-richard-laymon",
-          "edition": "Paperback",
-          "kind": "Novel",
-          "title": "The Woods Are Dark",
-          "yearPublished": "1981",
+          "title": "The Cellar",
+          "yearPublished": "1980",
           "includedInSlugs": [],
           "reviewed": true
         },
@@ -99,14 +66,47 @@
         },
         {
           "sequence": 1,
-          "date": "2014-02-24",
-          "slug": "the-cellar-by-richard-laymon",
+          "date": "2014-03-18",
+          "slug": "the-woods-are-dark-by-richard-laymon",
           "edition": "Paperback",
           "kind": "Novel",
-          "title": "The Cellar",
-          "yearPublished": "1980",
+          "title": "The Woods Are Dark",
+          "yearPublished": "1981",
           "includedInSlugs": [],
           "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2014-04-05",
+          "slug": "nightmare-lake-by-richard-laymon",
+          "edition": "Paperback",
+          "kind": "Novel",
+          "title": "Nightmare Lake",
+          "yearPublished": "1983",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2014-04-11",
+          "slug": "the-lawmen-by-richard-laymon",
+          "edition": "Paperback",
+          "kind": "Novel",
+          "title": "The Lawmen",
+          "yearPublished": "1983",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2014-06-09",
+          "slug": "shootout-at-joes-by-richard-laymon",
+          "edition": "Paperback",
+          "kind": "Short Story",
+          "title": "Shootout at Joe's",
+          "yearPublished": "1984",
+          "includedInSlugs": [],
+          "reviewed": false
         },
         {
           "sequence": 2,
@@ -128,25 +128,14 @@
       "readings": [
         {
           "sequence": 1,
-          "date": "2014-06-04",
-          "slug": "danse-macabre-by-stephen-king",
-          "edition": "Kindle",
-          "kind": "Nonfiction",
-          "title": "Danse Macabre",
-          "yearPublished": "1981",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "sequence": 1,
-          "date": "2014-04-04",
-          "slug": "the-dead-zone-by-stephen-king",
+          "date": "2014-03-02",
+          "slug": "the-stand-by-stephen-king",
           "edition": "Paperback",
           "kind": "Novel",
-          "title": "The Dead Zone",
-          "yearPublished": "1979",
+          "title": "The Stand",
+          "yearPublished": "1978",
           "includedInSlugs": [],
-          "reviewed": false
+          "reviewed": true
         },
         {
           "sequence": 1,
@@ -161,6 +150,17 @@
         },
         {
           "sequence": 1,
+          "date": "2014-04-04",
+          "slug": "the-dead-zone-by-stephen-king",
+          "edition": "Paperback",
+          "kind": "Novel",
+          "title": "The Dead Zone",
+          "yearPublished": "1979",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
           "date": "2014-04-22",
           "slug": "firestarter-by-stephen-king",
           "edition": "Kindle",
@@ -171,15 +171,15 @@
           "reviewed": false
         },
         {
-          "sequence": 2,
-          "date": "2014-03-02",
-          "slug": "the-stand-by-stephen-king",
-          "edition": "Paperback",
-          "kind": "Novel",
-          "title": "The Stand",
-          "yearPublished": "1978",
+          "sequence": 1,
+          "date": "2014-06-04",
+          "slug": "danse-macabre-by-stephen-king",
+          "edition": "Kindle",
+          "kind": "Nonfiction",
+          "title": "Danse Macabre",
+          "yearPublished": "1981",
           "includedInSlugs": [],
-          "reviewed": true
+          "reviewed": false
         }
       ]
     }
