@@ -84,50 +84,11 @@
       "readings": [
         {
           "sequence": 1,
-          "date": "2022-04-30",
-          "slug": "fail-safe-by-philip-fracassi",
-          "edition": "Kindle",
-          "kind": "Short Story",
-          "title": "Fail-Safe",
-          "yearPublished": "2017",
-          "includedInSlugs": [
-            "behold-the-void-by-philip-fracassi"
-          ],
-          "reviewed": true
-        },
-        {
-          "sequence": 1,
           "date": "2022-04-17",
           "slug": "soft-construction-of-a-sunset-by-philip-fracassi",
           "edition": "Kindle",
           "kind": "Short Story",
           "title": "Soft Construction of a Sunset",
-          "yearPublished": "2017",
-          "includedInSlugs": [
-            "behold-the-void-by-philip-fracassi"
-          ],
-          "reviewed": true
-        },
-        {
-          "sequence": 1,
-          "date": "2022-05-07",
-          "slug": "mandala-by-philip-fracassi",
-          "edition": "Kindle",
-          "kind": "Novella",
-          "title": "Mandala",
-          "yearPublished": "2017",
-          "includedInSlugs": [
-            "behold-the-void-by-philip-fracassi"
-          ],
-          "reviewed": true
-        },
-        {
-          "sequence": 1,
-          "date": "2022-04-22",
-          "slug": "surfer-girl-by-philip-fracassi",
-          "edition": "Kindle",
-          "kind": "Short Story",
-          "title": "Surfer Girl",
           "yearPublished": "2017",
           "includedInSlugs": [
             "behold-the-void-by-philip-fracassi"
@@ -149,12 +110,12 @@
         },
         {
           "sequence": 1,
-          "date": "2022-04-23",
-          "slug": "mother-by-philip-fracassi",
+          "date": "2022-04-19",
+          "slug": "the-horse-thief-by-philip-fracassi",
           "edition": "Kindle",
           "kind": "Short Story",
-          "title": "Mother",
-          "yearPublished": "2015",
+          "title": "The Horse Thief",
+          "yearPublished": "2017",
           "includedInSlugs": [
             "behold-the-void-by-philip-fracassi"
           ],
@@ -162,11 +123,11 @@
         },
         {
           "sequence": 1,
-          "date": "2022-04-19",
-          "slug": "the-horse-thief-by-philip-fracassi",
+          "date": "2022-04-20",
+          "slug": "coffin-by-philip-fracassi",
           "edition": "Kindle",
           "kind": "Short Story",
-          "title": "The Horse Thief",
+          "title": "Coffin",
           "yearPublished": "2017",
           "includedInSlugs": [
             "behold-the-void-by-philip-fracassi"
@@ -188,11 +149,50 @@
         },
         {
           "sequence": 1,
-          "date": "2022-04-20",
-          "slug": "coffin-by-philip-fracassi",
+          "date": "2022-04-22",
+          "slug": "surfer-girl-by-philip-fracassi",
           "edition": "Kindle",
           "kind": "Short Story",
-          "title": "Coffin",
+          "title": "Surfer Girl",
+          "yearPublished": "2017",
+          "includedInSlugs": [
+            "behold-the-void-by-philip-fracassi"
+          ],
+          "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2022-04-23",
+          "slug": "mother-by-philip-fracassi",
+          "edition": "Kindle",
+          "kind": "Short Story",
+          "title": "Mother",
+          "yearPublished": "2015",
+          "includedInSlugs": [
+            "behold-the-void-by-philip-fracassi"
+          ],
+          "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2022-04-30",
+          "slug": "fail-safe-by-philip-fracassi",
+          "edition": "Kindle",
+          "kind": "Short Story",
+          "title": "Fail-Safe",
+          "yearPublished": "2017",
+          "includedInSlugs": [
+            "behold-the-void-by-philip-fracassi"
+          ],
+          "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2022-05-07",
+          "slug": "mandala-by-philip-fracassi",
+          "edition": "Kindle",
+          "kind": "Novella",
+          "title": "Mandala",
           "yearPublished": "2017",
           "includedInSlugs": [
             "behold-the-void-by-philip-fracassi"
@@ -241,23 +241,23 @@
         },
         {
           "sequence": 1,
-          "date": "2022-10-29",
-          "slug": "the-shining-by-stephen-king",
-          "edition": "Audible",
-          "kind": "Novel",
-          "title": "The Shining",
-          "yearPublished": "1977",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "sequence": 1,
           "date": "2022-10-14",
           "slug": "salems-lot-by-stephen-king",
           "edition": "Audible",
           "kind": "Novel",
           "title": "'Salem's Lot",
           "yearPublished": "1975",
+          "includedInSlugs": [],
+          "reviewed": true
+        },
+        {
+          "sequence": 2,
+          "date": "2022-10-29",
+          "slug": "the-shining-by-stephen-king",
+          "edition": "Audible",
+          "kind": "Novel",
+          "title": "The Shining",
+          "yearPublished": "1977",
           "includedInSlugs": [],
           "reviewed": true
         }
@@ -293,7 +293,7 @@
           "reviewed": true
         },
         {
-          "sequence": 1,
+          "sequence": 2,
           "date": "2022-09-11",
           "slug": "the-woods-are-dark-by-richard-laymon",
           "edition": "Audible",
@@ -304,7 +304,7 @@
           "reviewed": true
         },
         {
-          "sequence": 2,
+          "sequence": 1,
           "date": "2022-10-11",
           "slug": "out-are-the-lights-by-richard-laymon",
           "edition": "Kindle",
@@ -324,13 +324,13 @@
       "slug": "ian-fleming",
       "readings": [
         {
-          "sequence": 1,
-          "date": "2022-10-16",
-          "slug": "moonraker-by-ian-fleming",
-          "edition": "Audible",
+          "sequence": 2,
+          "date": "2022-06-14",
+          "slug": "casino-royale-by-ian-fleming",
+          "edition": "Kindle",
           "kind": "Novel",
-          "title": "Moonraker",
-          "yearPublished": "1955",
+          "title": "Casino Royale",
+          "yearPublished": "1953",
           "includedInSlugs": [],
           "reviewed": true
         },
@@ -347,12 +347,12 @@
         },
         {
           "sequence": 1,
-          "date": "2022-06-14",
-          "slug": "casino-royale-by-ian-fleming",
-          "edition": "Kindle",
+          "date": "2022-10-16",
+          "slug": "moonraker-by-ian-fleming",
+          "edition": "Audible",
           "kind": "Novel",
-          "title": "Casino Royale",
-          "yearPublished": "1953",
+          "title": "Moonraker",
+          "yearPublished": "1955",
           "includedInSlugs": [],
           "reviewed": true
         }
@@ -365,23 +365,23 @@
       "readings": [
         {
           "sequence": 1,
-          "date": "2022-09-22",
-          "slug": "consider-this-by-chuck-palahniuk",
-          "edition": "Audible",
-          "kind": "Nonfiction",
-          "title": "Consider This",
-          "yearPublished": "2020",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "sequence": 1,
           "date": "2022-07-16",
           "slug": "fight-club-by-chuck-palahniuk",
           "edition": "Audible",
           "kind": "Novel",
           "title": "Fight Club",
           "yearPublished": "1996",
+          "includedInSlugs": [],
+          "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2022-09-22",
+          "slug": "consider-this-by-chuck-palahniuk",
+          "edition": "Audible",
+          "kind": "Nonfiction",
+          "title": "Consider This",
+          "yearPublished": "2020",
           "includedInSlugs": [],
           "reviewed": true
         }
@@ -404,7 +404,7 @@
           "reviewed": true
         },
         {
-          "sequence": 2,
+          "sequence": 1,
           "date": "2022-07-14",
           "slug": "the-rules-of-attraction-by-bret-easton-ellis",
           "edition": "Kindle",
