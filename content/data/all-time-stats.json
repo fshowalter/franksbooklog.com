@@ -1,7 +1,7 @@
 {
-  "reviewCount": 71,
-  "workCount": 83,
-  "bookCount": 69,
+  "reviewCount": 72,
+  "workCount": 84,
+  "bookCount": 70,
   "gradeDistribution": [
     {
       "name": "A",
@@ -50,7 +50,7 @@
     },
     {
       "name": "D",
-      "count": 3,
+      "count": 4,
       "sortValue": 3
     },
     {
@@ -75,7 +75,7 @@
     },
     {
       "name": "Novel",
-      "count": 38
+      "count": 39
     },
     {
       "name": "Novella",
@@ -101,7 +101,7 @@
     },
     {
       "name": "Paperback",
-      "count": 15
+      "count": 16
     }
   ],
   "decadeDistribution": [
@@ -123,7 +123,7 @@
     },
     {
       "name": "1970s",
-      "count": 13
+      "count": 14
     },
     {
       "name": "1980s",
@@ -147,6 +147,156 @@
     }
   ],
   "mostReadAuthors": [
+    {
+      "name": "Stephen King",
+      "count": 13,
+      "slug": "stephen-king",
+      "readings": [
+        {
+          "sequence": 1,
+          "date": "2023-01-14",
+          "slug": "doctor-sleep-by-stephen-king",
+          "edition": "Kindle",
+          "kind": "Novel",
+          "title": "Doctor Sleep",
+          "yearPublished": "2013",
+          "includedInSlugs": [],
+          "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2022-03-21",
+          "slug": "on-writing-by-stephen-king",
+          "edition": "Kindle",
+          "kind": "Nonfiction",
+          "title": "On Writing",
+          "yearPublished": "2000",
+          "includedInSlugs": [],
+          "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2012-05-13",
+          "slug": "rage-by-stephen-king",
+          "edition": "Paperback",
+          "kind": "Novel",
+          "title": "Rage",
+          "yearPublished": "1976",
+          "includedInSlugs": [],
+          "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2022-09-19",
+          "slug": "carrie-by-stephen-king",
+          "edition": "Kindle",
+          "kind": "Novel",
+          "title": "Carrie",
+          "yearPublished": "1974",
+          "includedInSlugs": [],
+          "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2014-06-04",
+          "slug": "danse-macabre-by-stephen-king",
+          "edition": "Kindle",
+          "kind": "Nonfiction",
+          "title": "Danse Macabre",
+          "yearPublished": "1981",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2011-11-06",
+          "slug": "the-shining-by-stephen-king",
+          "edition": "Paperback",
+          "kind": "Novel",
+          "title": "The Shining",
+          "yearPublished": "1977",
+          "includedInSlugs": [],
+          "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2022-10-29",
+          "slug": "the-shining-by-stephen-king",
+          "edition": "Audible",
+          "kind": "Novel",
+          "title": "The Shining",
+          "yearPublished": "1977",
+          "includedInSlugs": [],
+          "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2022-10-14",
+          "slug": "salems-lot-by-stephen-king",
+          "edition": "Audible",
+          "kind": "Novel",
+          "title": "'Salem's Lot",
+          "yearPublished": "1975",
+          "includedInSlugs": [],
+          "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2014-04-04",
+          "slug": "the-dead-zone-by-stephen-king",
+          "edition": "Paperback",
+          "kind": "Novel",
+          "title": "The Dead Zone",
+          "yearPublished": "1979",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2014-03-09",
+          "slug": "the-long-walk-by-stephen-king",
+          "edition": "Paperback",
+          "kind": "Novel",
+          "title": "The Long Walk",
+          "yearPublished": "1978",
+          "includedInSlugs": [],
+          "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2014-04-22",
+          "slug": "firestarter-by-stephen-king",
+          "edition": "Kindle",
+          "kind": "Novel",
+          "title": "Firestarter",
+          "yearPublished": "1980",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 2,
+          "date": "2012-05-14",
+          "slug": "night-shift-by-stephen-king",
+          "edition": "Paperback",
+          "kind": "Collection",
+          "title": "Night Shift",
+          "yearPublished": "1978",
+          "includedInSlugs": [],
+          "reviewed": true
+        },
+        {
+          "sequence": 2,
+          "date": "2014-03-02",
+          "slug": "the-stand-by-stephen-king",
+          "edition": "Paperback",
+          "kind": "Novel",
+          "title": "The Stand",
+          "yearPublished": "1978",
+          "includedInSlugs": [],
+          "reviewed": true
+        }
+      ]
+    },
     {
       "name": "Philip Fracassi",
       "count": 13,
@@ -456,145 +606,6 @@
           "includedInSlugs": [
             "out-are-the-lights-and-other-tales-by-richard-laymon"
           ],
-          "reviewed": true
-        }
-      ]
-    },
-    {
-      "name": "Stephen King",
-      "count": 12,
-      "slug": "stephen-king",
-      "readings": [
-        {
-          "sequence": 1,
-          "date": "2023-01-14",
-          "slug": "doctor-sleep-by-stephen-king",
-          "edition": "Kindle",
-          "kind": "Novel",
-          "title": "Doctor Sleep",
-          "yearPublished": "2013",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "sequence": 1,
-          "date": "2022-03-21",
-          "slug": "on-writing-by-stephen-king",
-          "edition": "Kindle",
-          "kind": "Nonfiction",
-          "title": "On Writing",
-          "yearPublished": "2000",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "sequence": 1,
-          "date": "2012-05-13",
-          "slug": "rage-by-stephen-king",
-          "edition": "Paperback",
-          "kind": "Novel",
-          "title": "Rage",
-          "yearPublished": "1976",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "sequence": 1,
-          "date": "2022-09-19",
-          "slug": "carrie-by-stephen-king",
-          "edition": "Kindle",
-          "kind": "Novel",
-          "title": "Carrie",
-          "yearPublished": "1974",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "sequence": 1,
-          "date": "2014-06-04",
-          "slug": "danse-macabre-by-stephen-king",
-          "edition": "Kindle",
-          "kind": "Nonfiction",
-          "title": "Danse Macabre",
-          "yearPublished": "1981",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "sequence": 1,
-          "date": "2011-11-06",
-          "slug": "the-shining-by-stephen-king",
-          "edition": "Paperback",
-          "kind": "Novel",
-          "title": "The Shining",
-          "yearPublished": "1977",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "sequence": 1,
-          "date": "2022-10-29",
-          "slug": "the-shining-by-stephen-king",
-          "edition": "Audible",
-          "kind": "Novel",
-          "title": "The Shining",
-          "yearPublished": "1977",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "sequence": 1,
-          "date": "2022-10-14",
-          "slug": "salems-lot-by-stephen-king",
-          "edition": "Audible",
-          "kind": "Novel",
-          "title": "'Salem's Lot",
-          "yearPublished": "1975",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "sequence": 1,
-          "date": "2014-04-04",
-          "slug": "the-dead-zone-by-stephen-king",
-          "edition": "Paperback",
-          "kind": "Novel",
-          "title": "The Dead Zone",
-          "yearPublished": "1979",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "sequence": 1,
-          "date": "2014-04-22",
-          "slug": "firestarter-by-stephen-king",
-          "edition": "Kindle",
-          "kind": "Novel",
-          "title": "Firestarter",
-          "yearPublished": "1980",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "sequence": 2,
-          "date": "2012-05-14",
-          "slug": "night-shift-by-stephen-king",
-          "edition": "Paperback",
-          "kind": "Collection",
-          "title": "Night Shift",
-          "yearPublished": "1978",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "sequence": 2,
-          "date": "2014-03-02",
-          "slug": "the-stand-by-stephen-king",
-          "edition": "Paperback",
-          "kind": "Novel",
-          "title": "The Stand",
-          "yearPublished": "1978",
-          "includedInSlugs": [],
           "reviewed": true
         }
       ]
