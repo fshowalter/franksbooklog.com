@@ -772,9 +772,9 @@
       "kind": "Novel",
       "slug": "the-long-walk-by-stephen-king",
       "sortTitle": "Long Walk",
-      "reviewed": false,
-      "grade": null,
-      "gradeValue": null,
+      "reviewed": true,
+      "grade": "D",
+      "gradeValue": 3,
       "authors": [
         {
           "slug": "stephen-king",
@@ -1399,7 +1399,7 @@
       ]
     }
   ],
-  "reviewedWorkCount": 8,
+  "reviewedWorkCount": 9,
   "workCount": 71,
-  "shelfWorkCount": 63
+  "shelfWorkCount": 62
 }

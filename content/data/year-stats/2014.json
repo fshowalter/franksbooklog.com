@@ -1,7 +1,7 @@
 {
   "year": "2014",
-  "workCount": 11,
-  "bookCount": 9,
+  "workCount": 12,
+  "bookCount": 10,
   "kindDistribution": [
     {
       "name": "Nonfiction",
@@ -9,7 +9,7 @@
     },
     {
       "name": "Novel",
-      "count": 8
+      "count": 9
     },
     {
       "name": "Short Story",
@@ -23,13 +23,13 @@
     },
     {
       "name": "Paperback",
-      "count": 9
+      "count": 10
     }
   ],
   "decadeDistribution": [
     {
       "name": "1970s",
-      "count": 2
+      "count": 3
     },
     {
       "name": "1980s",
@@ -123,7 +123,7 @@
     },
     {
       "name": "Stephen King",
-      "count": 4,
+      "count": 5,
       "slug": "stephen-king",
       "readings": [
         {
@@ -147,6 +147,17 @@
           "yearPublished": "1979",
           "includedInSlugs": [],
           "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2014-03-09",
+          "slug": "the-long-walk-by-stephen-king",
+          "edition": "Paperback",
+          "kind": "Novel",
+          "title": "The Long Walk",
+          "yearPublished": "1978",
+          "includedInSlugs": [],
+          "reviewed": true
         },
         {
           "sequence": 1,
