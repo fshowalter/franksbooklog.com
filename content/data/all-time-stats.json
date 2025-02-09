@@ -1,7 +1,7 @@
 {
   "reviewCount": 72,
-  "workCount": 85,
-  "bookCount": 71,
+  "workCount": 86,
+  "bookCount": 72,
   "gradeDistribution": [
     {
       "name": "A",
@@ -75,7 +75,7 @@
     },
     {
       "name": "Novel",
-      "count": 40
+      "count": 41
     },
     {
       "name": "Novella",
@@ -101,7 +101,7 @@
     },
     {
       "name": "Paperback",
-      "count": 17
+      "count": 18
     }
   ],
   "decadeDistribution": [
@@ -127,7 +127,7 @@
     },
     {
       "name": "1980s",
-      "count": 17
+      "count": 18
     },
     {
       "name": "1990s",
@@ -149,7 +149,7 @@
   "mostReadAuthors": [
     {
       "name": "Stephen King",
-      "count": 13,
+      "count": 14,
       "slug": "stephen-king",
       "readings": [
         {
@@ -225,6 +225,17 @@
           "edition": "Kindle",
           "kind": "Novel",
           "title": "Firestarter",
+          "yearPublished": "1980",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2014-05-11",
+          "slug": "roadwork-by-stephen-king",
+          "edition": "Paperback",
+          "kind": "Novel",
+          "title": "Roadwork",
           "yearPublished": "1980",
           "includedInSlugs": [],
           "reviewed": false
