@@ -1,7 +1,7 @@
 {
   "year": "2014",
-  "workCount": 18,
-  "bookCount": 16,
+  "workCount": 19,
+  "bookCount": 17,
   "kindDistribution": [
     {
       "name": "Nonfiction",
@@ -9,7 +9,7 @@
     },
     {
       "name": "Novel",
-      "count": 15
+      "count": 16
     },
     {
       "name": "Short Story",
@@ -23,7 +23,7 @@
     },
     {
       "name": "Paperback",
-      "count": 15
+      "count": 16
     }
   ],
   "decadeDistribution": [
@@ -33,7 +33,7 @@
     },
     {
       "name": "1980s",
-      "count": 15
+      "count": 16
     }
   ],
   "mostReadAuthors": [
@@ -169,7 +169,7 @@
     },
     {
       "name": "Stephen King",
-      "count": 7,
+      "count": 8,
       "slug": "stephen-king",
       "readings": [
         {
@@ -248,6 +248,17 @@
           "yearPublished": "1981",
           "includedInSlugs": [],
           "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2014-07-10",
+          "slug": "the-running-man-by-stephen-king",
+          "edition": "Paperback",
+          "kind": "Novel",
+          "title": "The Running Man",
+          "yearPublished": "1981",
+          "includedInSlugs": [],
+          "reviewed": false
         }
       ]
     }
