@@ -1,7 +1,7 @@
 {
   "year": "2014",
-  "workCount": 16,
-  "bookCount": 14,
+  "workCount": 17,
+  "bookCount": 15,
   "kindDistribution": [
     {
       "name": "Nonfiction",
@@ -9,7 +9,7 @@
     },
     {
       "name": "Novel",
-      "count": 13
+      "count": 14
     },
     {
       "name": "Short Story",
@@ -19,7 +19,7 @@
   "editionDistribution": [
     {
       "name": "Kindle",
-      "count": 2
+      "count": 3
     },
     {
       "name": "Paperback",
@@ -33,7 +33,7 @@
     },
     {
       "name": "1980s",
-      "count": 13
+      "count": 14
     }
   ],
   "mostReadAuthors": [
@@ -158,7 +158,7 @@
     },
     {
       "name": "Stephen King",
-      "count": 6,
+      "count": 7,
       "slug": "stephen-king",
       "readings": [
         {
@@ -226,6 +226,17 @@
           "yearPublished": "1981",
           "includedInSlugs": [],
           "reviewed": false
+        },
+        {
+          "sequence": 4,
+          "date": "2014-06-17",
+          "slug": "cujo-by-stephen-king",
+          "edition": "Kindle",
+          "kind": "Novel",
+          "title": "Cujo",
+          "yearPublished": "1981",
+          "includedInSlugs": [],
+          "reviewed": true
         }
       ]
     }
