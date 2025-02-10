@@ -1037,11 +1037,11 @@
         "slug": "stephen-king",
         "works": [
           {
-            "title": "The Stand",
+            "title": "Cujo",
             "kind": "Novel",
-            "yearPublished": "1978",
-            "slug": "the-stand-by-stephen-king",
-            "grade": "D",
+            "yearPublished": "1981",
+            "slug": "cujo-by-stephen-king",
+            "grade": "B",
             "includedInSlugs": [],
             "authors": [
               {
@@ -1735,15 +1735,15 @@
         ]
       },
       {
-        "title": "Cured",
-        "kind": "Nonfiction",
-        "yearPublished": "2016",
-        "slug": "cured-by-lol-tolhurst",
-        "grade": "A-",
+        "title": "Cujo",
+        "kind": "Novel",
+        "yearPublished": "1981",
+        "slug": "cujo-by-stephen-king",
+        "grade": "B",
         "includedInSlugs": [],
         "authors": [
           {
-            "name": "Lol Tolhurst"
+            "name": "Stephen King"
           }
         ]
       }
@@ -1837,6 +1837,19 @@
         ]
       },
       {
+        "title": "Cujo",
+        "kind": "Novel",
+        "yearPublished": "1981",
+        "slug": "cujo-by-stephen-king",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Stephen King"
+          }
+        ]
+      },
+      {
         "title": "Cured",
         "kind": "Nonfiction",
         "yearPublished": "2016",
@@ -1848,54 +1861,126 @@
             "name": "Lol Tolhurst"
           }
         ]
-      },
-      {
-        "title": "Dark Crusade",
-        "kind": "Novel",
-        "yearPublished": "1976",
-        "slug": "dark-crusade-by-karl-edward-wagner",
-        "grade": "C",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Karl Edward Wagner"
-          }
-        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": "2022-07-18-1",
-    "slug": "cured-by-lol-tolhurst",
-    "title": "Cured",
-    "subtitle": "The Tale of Two Imaginary Boys",
-    "sortTitle": "Cured: The Tale of Two Imaginary Boys",
-    "yearPublished": "2016",
-    "grade": "A-",
-    "gradeValue": 11,
-    "kind": "Nonfiction",
-    "date": "2022-07-18",
+    "sequence": "2014-06-17-4",
+    "slug": "cujo-by-stephen-king",
+    "title": "Cujo",
+    "subtitle": null,
+    "sortTitle": "Cujo",
+    "yearPublished": "1981",
+    "grade": "B",
+    "gradeValue": 9,
+    "kind": "Novel",
+    "date": "2014-06-17",
     "authors": [
       {
-        "slug": "lol-tolhurst",
+        "slug": "stephen-king",
         "notes": null,
-        "name": "Lol Tolhurst",
-        "sortName": "Tolhurst, Lol"
+        "name": "Stephen King",
+        "sortName": "King, Stephen"
       }
     ],
     "readings": [
       {
-        "sequence": 1,
-        "date": "2022-07-18",
-        "isAudiobook": true,
+        "sequence": 4,
+        "date": "2014-06-17",
+        "isAudiobook": false,
         "abandoned": false,
-        "readingTime": 3
+        "readingTime": 9
       }
     ],
     "includedInSlugs": [],
-    "yearReviewed": 2022,
-    "moreByAuthors": [],
+    "yearReviewed": 2014,
+    "moreByAuthors": [
+      {
+        "name": "Stephen King",
+        "slug": "stephen-king",
+        "works": [
+          {
+            "title": "The Long Walk",
+            "kind": "Novel",
+            "yearPublished": "1978",
+            "slug": "the-long-walk-by-stephen-king",
+            "grade": "D",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          },
+          {
+            "title": "Night Shift",
+            "kind": "Collection",
+            "yearPublished": "1978",
+            "slug": "night-shift-by-stephen-king",
+            "grade": "B",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          },
+          {
+            "title": "The Stand",
+            "kind": "Novel",
+            "yearPublished": "1978",
+            "slug": "the-stand-by-stephen-king",
+            "grade": "D",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          },
+          {
+            "title": "On Writing",
+            "kind": "Nonfiction",
+            "yearPublished": "2000",
+            "slug": "on-writing-by-stephen-king",
+            "grade": "A-",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          },
+          {
+            "title": "Doctor Sleep",
+            "kind": "Novel",
+            "yearPublished": "2013",
+            "slug": "doctor-sleep-by-stephen-king",
+            "grade": "C+",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          },
+          {
+            "title": "Carrie",
+            "kind": "Novel",
+            "yearPublished": "1974",
+            "slug": "carrie-by-stephen-king",
+            "grade": "B-",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          }
+        ]
+      }
+    ],
     "moreReviews": [
       {
         "title": "Coffin",
@@ -1935,6 +2020,119 @@
         "authors": [
           {
             "name": "Rick Rubin"
+          }
+        ]
+      },
+      {
+        "title": "Cured",
+        "kind": "Nonfiction",
+        "yearPublished": "2016",
+        "slug": "cured-by-lol-tolhurst",
+        "grade": "A-",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Lol Tolhurst"
+          }
+        ]
+      },
+      {
+        "title": "Dark Crusade",
+        "kind": "Novel",
+        "yearPublished": "1976",
+        "slug": "dark-crusade-by-karl-edward-wagner",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Karl Edward Wagner"
+          }
+        ]
+      },
+      {
+        "title": "The Dark Tunnel",
+        "kind": "Novel",
+        "yearPublished": "1944",
+        "slug": "the-dark-tunnel-by-ross-macdonald",
+        "grade": "D+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Ross Macdonald"
+          }
+        ]
+      }
+    ],
+    "includedWorks": []
+  },
+  {
+    "sequence": "2022-07-18-1",
+    "slug": "cured-by-lol-tolhurst",
+    "title": "Cured",
+    "subtitle": "The Tale of Two Imaginary Boys",
+    "sortTitle": "Cured: The Tale of Two Imaginary Boys",
+    "yearPublished": "2016",
+    "grade": "A-",
+    "gradeValue": 11,
+    "kind": "Nonfiction",
+    "date": "2022-07-18",
+    "authors": [
+      {
+        "slug": "lol-tolhurst",
+        "notes": null,
+        "name": "Lol Tolhurst",
+        "sortName": "Tolhurst, Lol"
+      }
+    ],
+    "readings": [
+      {
+        "sequence": 1,
+        "date": "2022-07-18",
+        "isAudiobook": true,
+        "abandoned": false,
+        "readingTime": 3
+      }
+    ],
+    "includedInSlugs": [],
+    "yearReviewed": 2022,
+    "moreByAuthors": [],
+    "moreReviews": [
+      {
+        "title": "Consider This",
+        "kind": "Nonfiction",
+        "yearPublished": "2020",
+        "slug": "consider-this-by-chuck-palahniuk",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Chuck Palahniuk"
+          }
+        ]
+      },
+      {
+        "title": "The Creative Act",
+        "kind": "Nonfiction",
+        "yearPublished": "2023",
+        "slug": "the-creative-act-by-rick-rubin",
+        "grade": "C+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Rick Rubin"
+          }
+        ]
+      },
+      {
+        "title": "Cujo",
+        "kind": "Novel",
+        "yearPublished": "1981",
+        "slug": "cujo-by-stephen-king",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Stephen King"
           }
         ]
       },
@@ -2015,19 +2213,6 @@
     "moreByAuthors": [],
     "moreReviews": [
       {
-        "title": "Consider This",
-        "kind": "Nonfiction",
-        "yearPublished": "2020",
-        "slug": "consider-this-by-chuck-palahniuk",
-        "grade": "B",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Chuck Palahniuk"
-          }
-        ]
-      },
-      {
         "title": "The Creative Act",
         "kind": "Nonfiction",
         "yearPublished": "2023",
@@ -2037,6 +2222,19 @@
         "authors": [
           {
             "name": "Rick Rubin"
+          }
+        ]
+      },
+      {
+        "title": "Cujo",
+        "kind": "Novel",
+        "yearPublished": "1981",
+        "slug": "cujo-by-stephen-king",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Stephen King"
           }
         ]
       },
@@ -2337,11 +2535,11 @@
         "slug": "stephen-king",
         "works": [
           {
-            "title": "Night Shift",
-            "kind": "Collection",
+            "title": "The Stand",
+            "kind": "Novel",
             "yearPublished": "1978",
-            "slug": "night-shift-by-stephen-king",
-            "grade": "B",
+            "slug": "the-stand-by-stephen-king",
+            "grade": "D",
             "includedInSlugs": [],
             "authors": [
               {
@@ -2350,11 +2548,11 @@
             ]
           },
           {
-            "title": "The Stand",
+            "title": "Cujo",
             "kind": "Novel",
-            "yearPublished": "1978",
-            "slug": "the-stand-by-stephen-king",
-            "grade": "D",
+            "yearPublished": "1981",
+            "slug": "cujo-by-stephen-king",
+            "grade": "B",
             "includedInSlugs": [],
             "authors": [
               {
@@ -5688,11 +5886,11 @@
             ]
           },
           {
-            "title": "On Writing",
-            "kind": "Nonfiction",
-            "yearPublished": "2000",
-            "slug": "on-writing-by-stephen-king",
-            "grade": "A-",
+            "title": "Cujo",
+            "kind": "Novel",
+            "yearPublished": "1981",
+            "slug": "cujo-by-stephen-king",
+            "grade": "B",
             "includedInSlugs": [],
             "authors": [
               {
@@ -5701,11 +5899,11 @@
             ]
           },
           {
-            "title": "Doctor Sleep",
-            "kind": "Novel",
-            "yearPublished": "2013",
-            "slug": "doctor-sleep-by-stephen-king",
-            "grade": "C+",
+            "title": "On Writing",
+            "kind": "Nonfiction",
+            "yearPublished": "2000",
+            "slug": "on-writing-by-stephen-king",
+            "grade": "A-",
             "includedInSlugs": [],
             "authors": [
               {
@@ -6102,19 +6300,6 @@
         "slug": "stephen-king",
         "works": [
           {
-            "title": "The Long Walk",
-            "kind": "Novel",
-            "yearPublished": "1978",
-            "slug": "the-long-walk-by-stephen-king",
-            "grade": "D",
-            "includedInSlugs": [],
-            "authors": [
-              {
-                "name": "Stephen King"
-              }
-            ]
-          },
-          {
             "title": "Night Shift",
             "kind": "Collection",
             "yearPublished": "1978",
@@ -6133,6 +6318,19 @@
             "yearPublished": "1978",
             "slug": "the-stand-by-stephen-king",
             "grade": "D",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          },
+          {
+            "title": "Cujo",
+            "kind": "Novel",
+            "yearPublished": "1981",
+            "slug": "cujo-by-stephen-king",
+            "grade": "B",
             "includedInSlugs": [],
             "authors": [
               {
@@ -8920,6 +9118,19 @@
         ]
       },
       {
+        "title": "Cujo",
+        "kind": "Novel",
+        "yearPublished": "1981",
+        "slug": "cujo-by-stephen-king",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Stephen King"
+          }
+        ]
+      },
+      {
         "title": "Cured",
         "kind": "Nonfiction",
         "yearPublished": "2016",
@@ -8942,19 +9153,6 @@
         "authors": [
           {
             "name": "Karl Edward Wagner"
-          }
-        ]
-      },
-      {
-        "title": "The Dark Tunnel",
-        "kind": "Novel",
-        "yearPublished": "1944",
-        "slug": "the-dark-tunnel-by-ross-macdonald",
-        "grade": "D+",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Ross Macdonald"
           }
         ]
       }
@@ -8994,15 +9192,15 @@
     "moreByAuthors": [],
     "moreReviews": [
       {
-        "title": "The Creative Act",
-        "kind": "Nonfiction",
-        "yearPublished": "2023",
-        "slug": "the-creative-act-by-rick-rubin",
-        "grade": "C+",
+        "title": "Cujo",
+        "kind": "Novel",
+        "yearPublished": "1981",
+        "slug": "cujo-by-stephen-king",
+        "grade": "B",
         "includedInSlugs": [],
         "authors": [
           {
-            "name": "Rick Rubin"
+            "name": "Stephen King"
           }
         ]
       },
@@ -9385,11 +9583,11 @@
             ]
           },
           {
-            "title": "On Writing",
-            "kind": "Nonfiction",
-            "yearPublished": "2000",
-            "slug": "on-writing-by-stephen-king",
-            "grade": "A-",
+            "title": "Cujo",
+            "kind": "Novel",
+            "yearPublished": "1981",
+            "slug": "cujo-by-stephen-king",
+            "grade": "B",
             "includedInSlugs": [],
             "authors": [
               {
@@ -10464,6 +10662,19 @@
             ]
           },
           {
+            "title": "Cujo",
+            "kind": "Novel",
+            "yearPublished": "1981",
+            "slug": "cujo-by-stephen-king",
+            "grade": "B",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          },
+          {
             "title": "On Writing",
             "kind": "Nonfiction",
             "yearPublished": "2000",
@@ -10482,19 +10693,6 @@
             "yearPublished": "2013",
             "slug": "doctor-sleep-by-stephen-king",
             "grade": "C+",
-            "includedInSlugs": [],
-            "authors": [
-              {
-                "name": "Stephen King"
-              }
-            ]
-          },
-          {
-            "title": "Carrie",
-            "kind": "Novel",
-            "yearPublished": "1974",
-            "slug": "carrie-by-stephen-king",
-            "grade": "B-",
             "includedInSlugs": [],
             "authors": [
               {

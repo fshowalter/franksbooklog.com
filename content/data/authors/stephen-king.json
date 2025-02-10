@@ -224,9 +224,9 @@
       "kind": "Novel",
       "slug": "cujo-by-stephen-king",
       "sortTitle": "Cujo",
-      "reviewed": false,
-      "grade": null,
-      "gradeValue": null,
+      "reviewed": true,
+      "grade": "B",
+      "gradeValue": 9,
       "authors": [
         {
           "slug": "stephen-king",
@@ -1399,7 +1399,7 @@
       ]
     }
   ],
-  "reviewedWorkCount": 9,
+  "reviewedWorkCount": 10,
   "workCount": 71,
-  "shelfWorkCount": 62
+  "shelfWorkCount": 61
 }
