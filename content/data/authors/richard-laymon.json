@@ -220,9 +220,9 @@
       "kind": "Novel",
       "slug": "beware-by-richard-laymon",
       "sortTitle": "Beware!",
-      "reviewed": false,
-      "grade": null,
-      "gradeValue": null,
+      "reviewed": true,
+      "grade": "C",
+      "gradeValue": 6,
       "authors": [
         {
           "slug": "richard-laymon",
@@ -2533,7 +2533,7 @@
       "includedInSlugs": []
     }
   ],
-  "reviewedWorkCount": 5,
+  "reviewedWorkCount": 6,
   "workCount": 131,
-  "shelfWorkCount": 126
+  "shelfWorkCount": 125
 }

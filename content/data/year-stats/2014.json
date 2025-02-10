@@ -1,7 +1,7 @@
 {
   "year": "2014",
-  "workCount": 17,
-  "bookCount": 15,
+  "workCount": 18,
+  "bookCount": 16,
   "kindDistribution": [
     {
       "name": "Nonfiction",
@@ -9,7 +9,7 @@
     },
     {
       "name": "Novel",
-      "count": 14
+      "count": 15
     },
     {
       "name": "Short Story",
@@ -23,7 +23,7 @@
     },
     {
       "name": "Paperback",
-      "count": 14
+      "count": 15
     }
   ],
   "decadeDistribution": [
@@ -33,13 +33,13 @@
     },
     {
       "name": "1980s",
-      "count": 14
+      "count": 15
     }
   ],
   "mostReadAuthors": [
     {
       "name": "Richard Laymon",
-      "count": 10,
+      "count": 11,
       "slug": "richard-laymon",
       "readings": [
         {
@@ -153,6 +153,17 @@
           "yearPublished": "1986",
           "includedInSlugs": [],
           "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2014-06-27",
+          "slug": "beware-by-richard-laymon",
+          "edition": "Paperback",
+          "kind": "Novel",
+          "title": "Beware!",
+          "yearPublished": "1985",
+          "includedInSlugs": [],
+          "reviewed": true
         }
       ]
     },

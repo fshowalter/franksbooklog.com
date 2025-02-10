@@ -290,6 +290,19 @@
         ]
       },
       {
+        "title": "Beware!",
+        "kind": "Novel",
+        "yearPublished": "1985",
+        "slug": "beware-by-richard-laymon",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Richard Laymon"
+          }
+        ]
+      },
+      {
         "title": "The Big Sleep",
         "kind": "Novel",
         "yearPublished": "1939",
@@ -312,19 +325,6 @@
         "authors": [
           {
             "name": "Edward Lee"
-          }
-        ]
-      },
-      {
-        "title": "Brain Wave",
-        "kind": "Novel",
-        "yearPublished": "1954",
-        "slug": "brain-wave-by-poul-anderson",
-        "grade": "C",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Poul Anderson"
           }
         ]
       }
@@ -503,6 +503,19 @@
         ]
       },
       {
+        "title": "Beware!",
+        "kind": "Novel",
+        "yearPublished": "1985",
+        "slug": "beware-by-richard-laymon",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Richard Laymon"
+          }
+        ]
+      },
+      {
         "title": "The Big Sleep",
         "kind": "Novel",
         "yearPublished": "1939",
@@ -525,19 +538,6 @@
         "authors": [
           {
             "name": "Edward Lee"
-          }
-        ]
-      },
-      {
-        "title": "Brain Wave",
-        "kind": "Novel",
-        "yearPublished": "1954",
-        "slug": "brain-wave-by-poul-anderson",
-        "grade": "C",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Poul Anderson"
           }
         ]
       }
@@ -663,6 +663,214 @@
     ]
   },
   {
+    "sequence": "2014-06-27-1",
+    "slug": "beware-by-richard-laymon",
+    "title": "Beware!",
+    "subtitle": null,
+    "sortTitle": "Beware!",
+    "yearPublished": "1985",
+    "grade": "C",
+    "gradeValue": 6,
+    "kind": "Novel",
+    "date": "2014-06-27",
+    "authors": [
+      {
+        "slug": "richard-laymon",
+        "notes": null,
+        "name": "Richard Laymon",
+        "sortName": "Laymon, Richard"
+      }
+    ],
+    "readings": [
+      {
+        "sequence": 1,
+        "date": "2014-06-27",
+        "isAudiobook": false,
+        "abandoned": false,
+        "readingTime": 10
+      }
+    ],
+    "includedInSlugs": [],
+    "yearReviewed": 2014,
+    "moreByAuthors": [
+      {
+        "name": "Richard Laymon",
+        "slug": "richard-laymon",
+        "works": [
+          {
+            "title": "The Cellar",
+            "kind": "Novel",
+            "yearPublished": "1980",
+            "slug": "the-cellar-by-richard-laymon",
+            "grade": "C+",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Richard Laymon"
+              }
+            ]
+          },
+          {
+            "title": "The Woods Are Dark",
+            "kind": "Novel",
+            "yearPublished": "1981",
+            "slug": "the-woods-are-dark-by-richard-laymon",
+            "grade": "C+",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Richard Laymon"
+              }
+            ]
+          },
+          {
+            "title": "Out Are the Lights",
+            "kind": "Novel",
+            "yearPublished": "1982",
+            "slug": "out-are-the-lights-by-richard-laymon",
+            "grade": "C-",
+            "includedInSlugs": [
+              "out-are-the-lights-and-other-tales-by-richard-laymon"
+            ],
+            "authors": [
+              {
+                "name": "Richard Laymon"
+              }
+            ]
+          },
+          {
+            "title": "Desert Pickup",
+            "kind": "Short Story",
+            "yearPublished": "1970",
+            "slug": "desert-pickup-by-richard-laymon",
+            "grade": "C-",
+            "includedInSlugs": [
+              "short-stories-volume-one-by-richard-laymon"
+            ],
+            "authors": [
+              {
+                "name": "Richard Laymon"
+              }
+            ]
+          },
+          {
+            "title": "Roadside Pickup",
+            "kind": "Short Story",
+            "yearPublished": "1974",
+            "slug": "roadside-pickup-by-richard-laymon",
+            "grade": "C-",
+            "includedInSlugs": [
+              "short-stories-volume-one-by-richard-laymon"
+            ],
+            "authors": [
+              {
+                "name": "Richard Laymon"
+              }
+            ]
+          },
+          {
+            "title": "The Cellar",
+            "kind": "Novel",
+            "yearPublished": "1980",
+            "slug": "the-cellar-by-richard-laymon",
+            "grade": "C+",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Richard Laymon"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "moreReviews": [
+      {
+        "title": "Altar",
+        "kind": "Short Story",
+        "yearPublished": "2016",
+        "slug": "altar-by-philip-fracassi",
+        "grade": "A-",
+        "includedInSlugs": [
+          "behold-the-void-by-philip-fracassi"
+        ],
+        "authors": [
+          {
+            "name": "Philip Fracassi"
+          }
+        ]
+      },
+      {
+        "title": "The Baby Farmer",
+        "kind": "Short Story",
+        "yearPublished": "2017",
+        "slug": "the-baby-farmer-by-philip-fracassi",
+        "grade": "C+",
+        "includedInSlugs": [
+          "behold-the-void-by-philip-fracassi"
+        ],
+        "authors": [
+          {
+            "name": "Philip Fracassi"
+          }
+        ]
+      },
+      {
+        "title": "Behold the Void",
+        "kind": "Collection",
+        "yearPublished": "2017",
+        "slug": "behold-the-void-by-philip-fracassi",
+        "grade": "B+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Philip Fracassi"
+          }
+        ]
+      },
+      {
+        "title": "The Big Sleep",
+        "kind": "Novel",
+        "yearPublished": "1939",
+        "slug": "the-big-sleep-by-raymond-chandler",
+        "grade": "C+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Raymond Chandler"
+          }
+        ]
+      },
+      {
+        "title": "The Black Train",
+        "kind": "Novel",
+        "yearPublished": "2009",
+        "slug": "the-black-train-by-edward-lee",
+        "grade": "D+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Edward Lee"
+          }
+        ]
+      },
+      {
+        "title": "Brain Wave",
+        "kind": "Novel",
+        "yearPublished": "1954",
+        "slug": "brain-wave-by-poul-anderson",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Poul Anderson"
+          }
+        ]
+      }
+    ],
+    "includedWorks": []
+  },
+  {
     "sequence": "2013-04-07-1",
     "slug": "brain-wave-by-poul-anderson",
     "title": "Brain Wave",
@@ -695,15 +903,15 @@
     "moreByAuthors": [],
     "moreReviews": [
       {
-        "title": "Behold the Void",
-        "kind": "Collection",
-        "yearPublished": "2017",
-        "slug": "behold-the-void-by-philip-fracassi",
-        "grade": "B+",
+        "title": "Beware!",
+        "kind": "Novel",
+        "yearPublished": "1985",
+        "slug": "beware-by-richard-laymon",
+        "grade": "C",
         "includedInSlugs": [],
         "authors": [
           {
-            "name": "Philip Fracassi"
+            "name": "Richard Laymon"
           }
         ]
       },
@@ -2333,19 +2541,6 @@
         "slug": "richard-laymon",
         "works": [
           {
-            "title": "The Cellar",
-            "kind": "Novel",
-            "yearPublished": "1980",
-            "slug": "the-cellar-by-richard-laymon",
-            "grade": "C+",
-            "includedInSlugs": [],
-            "authors": [
-              {
-                "name": "Richard Laymon"
-              }
-            ]
-          },
-          {
             "title": "The Woods Are Dark",
             "kind": "Novel",
             "yearPublished": "1981",
@@ -2367,6 +2562,19 @@
             "includedInSlugs": [
               "out-are-the-lights-and-other-tales-by-richard-laymon"
             ],
+            "authors": [
+              {
+                "name": "Richard Laymon"
+              }
+            ]
+          },
+          {
+            "title": "Beware!",
+            "kind": "Novel",
+            "yearPublished": "1985",
+            "slug": "beware-by-richard-laymon",
+            "grade": "C",
+            "includedInSlugs": [],
             "authors": [
               {
                 "name": "Richard Laymon"
@@ -6555,6 +6763,19 @@
             ]
           },
           {
+            "title": "Beware!",
+            "kind": "Novel",
+            "yearPublished": "1985",
+            "slug": "beware-by-richard-laymon",
+            "grade": "C",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Richard Laymon"
+              }
+            ]
+          },
+          {
             "title": "Desert Pickup",
             "kind": "Short Story",
             "yearPublished": "1970",
@@ -6578,19 +6799,6 @@
             "includedInSlugs": [
               "short-stories-volume-one-by-richard-laymon"
             ],
-            "authors": [
-              {
-                "name": "Richard Laymon"
-              }
-            ]
-          },
-          {
-            "title": "The Cellar",
-            "kind": "Novel",
-            "yearPublished": "1980",
-            "slug": "the-cellar-by-richard-laymon",
-            "grade": "C+",
-            "includedInSlugs": [],
             "authors": [
               {
                 "name": "Richard Laymon"
@@ -7154,6 +7362,62 @@
         "name": "Richard Laymon",
         "slug": "richard-laymon",
         "works": [
+          {
+            "title": "Out Are the Lights",
+            "kind": "Novel",
+            "yearPublished": "1982",
+            "slug": "out-are-the-lights-by-richard-laymon",
+            "grade": "C-",
+            "includedInSlugs": [
+              "out-are-the-lights-and-other-tales-by-richard-laymon"
+            ],
+            "authors": [
+              {
+                "name": "Richard Laymon"
+              }
+            ]
+          },
+          {
+            "title": "Beware!",
+            "kind": "Novel",
+            "yearPublished": "1985",
+            "slug": "beware-by-richard-laymon",
+            "grade": "C",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Richard Laymon"
+              }
+            ]
+          },
+          {
+            "title": "Desert Pickup",
+            "kind": "Short Story",
+            "yearPublished": "1970",
+            "slug": "desert-pickup-by-richard-laymon",
+            "grade": "C-",
+            "includedInSlugs": [
+              "short-stories-volume-one-by-richard-laymon"
+            ],
+            "authors": [
+              {
+                "name": "Richard Laymon"
+              }
+            ]
+          },
+          {
+            "title": "The Cellar",
+            "kind": "Novel",
+            "yearPublished": "1980",
+            "slug": "the-cellar-by-richard-laymon",
+            "grade": "C+",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Richard Laymon"
+              }
+            ]
+          },
           {
             "title": "The Woods Are Dark",
             "kind": "Novel",
@@ -8497,6 +8761,19 @@
         ]
       },
       {
+        "title": "Beware!",
+        "kind": "Novel",
+        "yearPublished": "1985",
+        "slug": "beware-by-richard-laymon",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Richard Laymon"
+          }
+        ]
+      },
+      {
         "title": "The Big Sleep",
         "kind": "Novel",
         "yearPublished": "1939",
@@ -8519,19 +8796,6 @@
         "authors": [
           {
             "name": "Edward Lee"
-          }
-        ]
-      },
-      {
-        "title": "Brain Wave",
-        "kind": "Novel",
-        "yearPublished": "1954",
-        "slug": "brain-wave-by-poul-anderson",
-        "grade": "C",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Poul Anderson"
           }
         ]
       }
@@ -8571,21 +8835,6 @@
     "moreByAuthors": [],
     "moreReviews": [
       {
-        "title": "Altar",
-        "kind": "Short Story",
-        "yearPublished": "2016",
-        "slug": "altar-by-philip-fracassi",
-        "grade": "A-",
-        "includedInSlugs": [
-          "behold-the-void-by-philip-fracassi"
-        ],
-        "authors": [
-          {
-            "name": "Philip Fracassi"
-          }
-        ]
-      },
-      {
         "title": "The Baby Farmer",
         "kind": "Short Story",
         "yearPublished": "2017",
@@ -8610,6 +8859,19 @@
         "authors": [
           {
             "name": "Philip Fracassi"
+          }
+        ]
+      },
+      {
+        "title": "Beware!",
+        "kind": "Novel",
+        "yearPublished": "1985",
+        "slug": "beware-by-richard-laymon",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Richard Laymon"
           }
         ]
       },
@@ -8688,21 +8950,6 @@
     "moreByAuthors": [],
     "moreReviews": [
       {
-        "title": "The Baby Farmer",
-        "kind": "Short Story",
-        "yearPublished": "2017",
-        "slug": "the-baby-farmer-by-philip-fracassi",
-        "grade": "C+",
-        "includedInSlugs": [
-          "behold-the-void-by-philip-fracassi"
-        ],
-        "authors": [
-          {
-            "name": "Philip Fracassi"
-          }
-        ]
-      },
-      {
         "title": "Behold the Void",
         "kind": "Collection",
         "yearPublished": "2017",
@@ -8712,6 +8959,19 @@
         "authors": [
           {
             "name": "Philip Fracassi"
+          }
+        ]
+      },
+      {
+        "title": "Beware!",
+        "kind": "Novel",
+        "yearPublished": "1985",
+        "slug": "beware-by-richard-laymon",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Richard Laymon"
           }
         ]
       },
@@ -8813,29 +9073,12 @@
         "slug": "richard-laymon",
         "works": [
           {
-            "title": "Out Are the Lights",
+            "title": "Beware!",
             "kind": "Novel",
-            "yearPublished": "1982",
-            "slug": "out-are-the-lights-by-richard-laymon",
-            "grade": "C-",
-            "includedInSlugs": [
-              "out-are-the-lights-and-other-tales-by-richard-laymon"
-            ],
-            "authors": [
-              {
-                "name": "Richard Laymon"
-              }
-            ]
-          },
-          {
-            "title": "Desert Pickup",
-            "kind": "Short Story",
-            "yearPublished": "1970",
-            "slug": "desert-pickup-by-richard-laymon",
-            "grade": "C-",
-            "includedInSlugs": [
-              "short-stories-volume-one-by-richard-laymon"
-            ],
+            "yearPublished": "1985",
+            "slug": "beware-by-richard-laymon",
+            "grade": "C",
+            "includedInSlugs": [],
             "authors": [
               {
                 "name": "Richard Laymon"
@@ -10890,14 +11133,12 @@
             ]
           },
           {
-            "title": "Desert Pickup",
-            "kind": "Short Story",
-            "yearPublished": "1970",
-            "slug": "desert-pickup-by-richard-laymon",
-            "grade": "C-",
-            "includedInSlugs": [
-              "short-stories-volume-one-by-richard-laymon"
-            ],
+            "title": "Beware!",
+            "kind": "Novel",
+            "yearPublished": "1985",
+            "slug": "beware-by-richard-laymon",
+            "grade": "C",
+            "includedInSlugs": [],
             "authors": [
               {
                 "name": "Richard Laymon"
@@ -10905,10 +11146,10 @@
             ]
           },
           {
-            "title": "Roadside Pickup",
+            "title": "Desert Pickup",
             "kind": "Short Story",
-            "yearPublished": "1974",
-            "slug": "roadside-pickup-by-richard-laymon",
+            "yearPublished": "1970",
+            "slug": "desert-pickup-by-richard-laymon",
             "grade": "C-",
             "includedInSlugs": [
               "short-stories-volume-one-by-richard-laymon"
