@@ -1,7 +1,7 @@
 {
   "year": "2014",
-  "workCount": 14,
-  "bookCount": 12,
+  "workCount": 15,
+  "bookCount": 13,
   "kindDistribution": [
     {
       "name": "Nonfiction",
@@ -9,7 +9,7 @@
     },
     {
       "name": "Novel",
-      "count": 11
+      "count": 12
     },
     {
       "name": "Short Story",
@@ -23,7 +23,7 @@
     },
     {
       "name": "Paperback",
-      "count": 12
+      "count": 13
     }
   ],
   "decadeDistribution": [
@@ -33,13 +33,13 @@
     },
     {
       "name": "1980s",
-      "count": 11
+      "count": 12
     }
   ],
   "mostReadAuthors": [
     {
       "name": "Richard Laymon",
-      "count": 8,
+      "count": 9,
       "slug": "richard-laymon",
       "readings": [
         {
@@ -109,6 +109,17 @@
             "out-are-the-lights-and-other-tales-by-richard-laymon"
           ],
           "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2014-05-21",
+          "slug": "night-show-by-richard-laymon",
+          "edition": "Paperback",
+          "kind": "Novel",
+          "title": "Night Show",
+          "yearPublished": "1984",
+          "includedInSlugs": [],
+          "reviewed": false
         },
         {
           "sequence": 1,
