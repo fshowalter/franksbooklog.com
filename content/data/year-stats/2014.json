@@ -1,7 +1,7 @@
 {
   "year": "2014",
-  "workCount": 15,
-  "bookCount": 13,
+  "workCount": 16,
+  "bookCount": 14,
   "kindDistribution": [
     {
       "name": "Nonfiction",
@@ -9,7 +9,7 @@
     },
     {
       "name": "Novel",
-      "count": 12
+      "count": 13
     },
     {
       "name": "Short Story",
@@ -23,7 +23,7 @@
     },
     {
       "name": "Paperback",
-      "count": 13
+      "count": 14
     }
   ],
   "decadeDistribution": [
@@ -33,13 +33,13 @@
     },
     {
       "name": "1980s",
-      "count": 12
+      "count": 13
     }
   ],
   "mostReadAuthors": [
     {
       "name": "Richard Laymon",
-      "count": 9,
+      "count": 10,
       "slug": "richard-laymon",
       "readings": [
         {
@@ -140,6 +140,17 @@
           "kind": "Short Story",
           "title": "Dawson's City",
           "yearPublished": "1984",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 2,
+          "date": "2014-06-09",
+          "slug": "allhallows-eve-by-richard-laymon",
+          "edition": "Paperback",
+          "kind": "Novel",
+          "title": "Allhallow's Eve",
+          "yearPublished": "1986",
           "includedInSlugs": [],
           "reviewed": false
         }
