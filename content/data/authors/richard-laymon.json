@@ -2365,9 +2365,9 @@
       "kind": "Novel",
       "slug": "tread-softly-by-richard-laymon",
       "sortTitle": "Tread Softly",
-      "reviewed": false,
-      "grade": null,
-      "gradeValue": null,
+      "reviewed": true,
+      "grade": "C",
+      "gradeValue": 6,
       "authors": [
         {
           "slug": "richard-laymon",
@@ -2533,7 +2533,7 @@
       "includedInSlugs": []
     }
   ],
-  "reviewedWorkCount": 8,
+  "reviewedWorkCount": 9,
   "workCount": 131,
-  "shelfWorkCount": 123
+  "shelfWorkCount": 122
 }
