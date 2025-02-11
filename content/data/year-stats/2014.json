@@ -1,7 +1,7 @@
 {
   "year": "2014",
-  "workCount": 24,
-  "bookCount": 20,
+  "workCount": 25,
+  "bookCount": 21,
   "kindDistribution": [
     {
       "name": "Nonfiction",
@@ -9,7 +9,7 @@
     },
     {
       "name": "Novel",
-      "count": 18
+      "count": 19
     },
     {
       "name": "Short Story",
@@ -27,7 +27,7 @@
     },
     {
       "name": "Paperback",
-      "count": 20
+      "count": 21
     }
   ],
   "decadeDistribution": [
@@ -37,7 +37,7 @@
     },
     {
       "name": "1980s",
-      "count": 20
+      "count": 21
     },
     {
       "name": "2010s",
@@ -47,7 +47,7 @@
   "mostReadAuthors": [
     {
       "name": "Richard Laymon",
-      "count": 14,
+      "count": 15,
       "slug": "richard-laymon",
       "readings": [
         {
@@ -203,6 +203,17 @@
           "kind": "Short Story",
           "title": "The Intruder",
           "yearPublished": "1984",
+          "includedInSlugs": [],
+          "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2014-09-21",
+          "slug": "tread-softly-by-richard-laymon",
+          "edition": "Paperback",
+          "kind": "Novel",
+          "title": "Tread Softly",
+          "yearPublished": "1987",
           "includedInSlugs": [],
           "reviewed": true
         }
