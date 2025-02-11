@@ -1,7 +1,7 @@
 {
   "reviewCount": 76,
-  "workCount": 94,
-  "bookCount": 78,
+  "workCount": 96,
+  "bookCount": 80,
   "gradeDistribution": [
     {
       "name": "A",
@@ -75,7 +75,7 @@
     },
     {
       "name": "Novel",
-      "count": 47
+      "count": 49
     },
     {
       "name": "Novella",
@@ -97,11 +97,11 @@
     },
     {
       "name": "Kindle",
-      "count": 37
+      "count": 38
     },
     {
       "name": "Paperback",
-      "count": 25
+      "count": 26
     }
   ],
   "decadeDistribution": [
@@ -127,7 +127,7 @@
     },
     {
       "name": "1980s",
-      "count": 26
+      "count": 28
     },
     {
       "name": "1990s",
@@ -373,7 +373,7 @@
     },
     {
       "name": "Stephen King",
-      "count": 16,
+      "count": 18,
       "slug": "stephen-king",
       "readings": [
         {
@@ -494,6 +494,28 @@
           "kind": "Novel",
           "title": "The Running Man",
           "yearPublished": "1981",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2014-08-05",
+          "slug": "the-gunslinger-by-stephen-king",
+          "edition": "Paperback",
+          "kind": "Novel",
+          "title": "The Gunslinger",
+          "yearPublished": "1982",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2019-03-06",
+          "slug": "the-gunslinger-by-stephen-king",
+          "edition": "Kindle",
+          "kind": "Novel",
+          "title": "The Gunslinger",
+          "yearPublished": "1982",
           "includedInSlugs": [],
           "reviewed": false
         },

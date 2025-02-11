@@ -1,7 +1,7 @@
 {
   "year": "2014",
-  "workCount": 22,
-  "bookCount": 18,
+  "workCount": 23,
+  "bookCount": 19,
   "kindDistribution": [
     {
       "name": "Nonfiction",
@@ -9,7 +9,7 @@
     },
     {
       "name": "Novel",
-      "count": 17
+      "count": 18
     },
     {
       "name": "Short Story",
@@ -23,7 +23,7 @@
     },
     {
       "name": "Paperback",
-      "count": 19
+      "count": 20
     }
   ],
   "decadeDistribution": [
@@ -33,7 +33,7 @@
     },
     {
       "name": "1980s",
-      "count": 19
+      "count": 20
     }
   ],
   "mostReadAuthors": [
@@ -202,7 +202,7 @@
     },
     {
       "name": "Stephen King",
-      "count": 8,
+      "count": 9,
       "slug": "stephen-king",
       "readings": [
         {
@@ -290,6 +290,17 @@
           "kind": "Novel",
           "title": "The Running Man",
           "yearPublished": "1981",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2014-08-05",
+          "slug": "the-gunslinger-by-stephen-king",
+          "edition": "Paperback",
+          "kind": "Novel",
+          "title": "The Gunslinger",
+          "yearPublished": "1982",
           "includedInSlugs": [],
           "reviewed": false
         }
