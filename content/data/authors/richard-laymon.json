@@ -1378,9 +1378,9 @@
       "kind": "Short Story",
       "slug": "the-last-hand-by-richard-laymon",
       "sortTitle": "Last Hand",
-      "reviewed": false,
-      "grade": null,
-      "gradeValue": null,
+      "reviewed": true,
+      "grade": "D",
+      "gradeValue": 3,
       "authors": [
         {
           "slug": "richard-laymon",
@@ -2533,7 +2533,7 @@
       "includedInSlugs": []
     }
   ],
-  "reviewedWorkCount": 6,
+  "reviewedWorkCount": 7,
   "workCount": 131,
-  "shelfWorkCount": 125
+  "shelfWorkCount": 124
 }
