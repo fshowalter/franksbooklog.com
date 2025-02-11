@@ -1,7 +1,7 @@
 {
   "reviewCount": 75,
-  "workCount": 92,
-  "bookCount": 77,
+  "workCount": 93,
+  "bookCount": 78,
   "gradeDistribution": [
     {
       "name": "A",
@@ -75,7 +75,7 @@
     },
     {
       "name": "Novel",
-      "count": 46
+      "count": 47
     },
     {
       "name": "Novella",
@@ -101,7 +101,7 @@
     },
     {
       "name": "Paperback",
-      "count": 23
+      "count": 24
     }
   ],
   "decadeDistribution": [
@@ -127,7 +127,7 @@
     },
     {
       "name": "1980s",
-      "count": 24
+      "count": 25
     },
     {
       "name": "1990s",
@@ -149,7 +149,7 @@
   "mostReadAuthors": [
     {
       "name": "Richard Laymon",
-      "count": 17,
+      "count": 18,
       "slug": "richard-laymon",
       "readings": [
         {
@@ -285,6 +285,17 @@
           "yearPublished": "1985",
           "includedInSlugs": [],
           "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2014-07-22",
+          "slug": "the-beast-house-by-richard-laymon",
+          "edition": "Paperback",
+          "kind": "Novel",
+          "title": "The Beast House",
+          "yearPublished": "1986",
+          "includedInSlugs": [],
+          "reviewed": false
         },
         {
           "sequence": 1,
