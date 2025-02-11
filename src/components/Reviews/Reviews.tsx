@@ -109,13 +109,13 @@ function ReviewsListItem({ value }: { value: ListItemValue }): JSX.Element {
   return (
     <ListItem className="has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover">
       <ListItemCover imageProps={value.coverImageProps} />
-      <div className="flex grow flex-col items-start tablet:w-full tablet:pr-4">
+      <div className="flex grow flex-col items-start gap-y-2 tablet:w-full tablet:pr-4">
         <ListItemTitle slug={value.slug} title={value.title} />
         <Authors
-          className="font-sans text-xs leading-4 text-muted tablet:mt-1"
+          className="font-sans text-xs leading-4 text-muted"
           values={value.authors}
         />
-        <Grade className="mb-3 mt-2" height={16} value={value.grade} />
+        <Grade className="mb-1" height={16} value={value.grade} />
         <Abandoned value={value.grade} />
         <ListItemKindAndYear kind={value.kind} year={value.yearPublished} />
       </div>

@@ -1,11 +1,11 @@
 {
   "year": "2014",
-  "workCount": 23,
-  "bookCount": 19,
+  "workCount": 24,
+  "bookCount": 20,
   "kindDistribution": [
     {
       "name": "Nonfiction",
-      "count": 1
+      "count": 2
     },
     {
       "name": "Novel",
@@ -17,6 +17,10 @@
     }
   ],
   "editionDistribution": [
+    {
+      "name": "Hardcover",
+      "count": 1
+    },
     {
       "name": "Kindle",
       "count": 3
@@ -34,6 +38,10 @@
     {
       "name": "1980s",
       "count": 20
+    },
+    {
+      "name": "2010s",
+      "count": 1
     }
   ],
   "mostReadAuthors": [
