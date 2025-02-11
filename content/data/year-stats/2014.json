@@ -1,7 +1,7 @@
 {
   "year": "2014",
-  "workCount": 20,
-  "bookCount": 17,
+  "workCount": 22,
+  "bookCount": 18,
   "kindDistribution": [
     {
       "name": "Nonfiction",
@@ -9,11 +9,11 @@
     },
     {
       "name": "Novel",
-      "count": 16
+      "count": 17
     },
     {
       "name": "Short Story",
-      "count": 3
+      "count": 4
     }
   ],
   "editionDistribution": [
@@ -23,7 +23,7 @@
     },
     {
       "name": "Paperback",
-      "count": 17
+      "count": 19
     }
   ],
   "decadeDistribution": [
@@ -33,13 +33,13 @@
     },
     {
       "name": "1980s",
-      "count": 17
+      "count": 19
     }
   ],
   "mostReadAuthors": [
     {
       "name": "Richard Laymon",
-      "count": 12,
+      "count": 14,
       "slug": "richard-laymon",
       "readings": [
         {
@@ -173,6 +173,28 @@
           "kind": "Short Story",
           "title": "The Last Hand",
           "yearPublished": "1985",
+          "includedInSlugs": [],
+          "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2014-07-22",
+          "slug": "the-beast-house-by-richard-laymon",
+          "edition": "Paperback",
+          "kind": "Novel",
+          "title": "The Beast House",
+          "yearPublished": "1986",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2014-07-23",
+          "slug": "the-intruder-by-richard-laymon",
+          "edition": "Paperback",
+          "kind": "Short Story",
+          "title": "The Intruder",
+          "yearPublished": "1984",
           "includedInSlugs": [],
           "reviewed": true
         }
