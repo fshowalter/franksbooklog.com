@@ -1245,9 +1245,9 @@
       "kind": "Short Story",
       "slug": "the-intruder-by-richard-laymon",
       "sortTitle": "Intruder",
-      "reviewed": false,
-      "grade": null,
-      "gradeValue": null,
+      "reviewed": true,
+      "grade": "C",
+      "gradeValue": 6,
       "authors": [
         {
           "slug": "richard-laymon",
@@ -2533,7 +2533,7 @@
       "includedInSlugs": []
     }
   ],
-  "reviewedWorkCount": 7,
+  "reviewedWorkCount": 8,
   "workCount": 131,
-  "shelfWorkCount": 124
+  "shelfWorkCount": 123
 }

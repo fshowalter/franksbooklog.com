@@ -1,6 +1,6 @@
 {
   "year": "2014",
-  "workCount": 21,
+  "workCount": 22,
   "bookCount": 18,
   "kindDistribution": [
     {
@@ -13,7 +13,7 @@
     },
     {
       "name": "Short Story",
-      "count": 3
+      "count": 4
     }
   ],
   "editionDistribution": [
@@ -23,7 +23,7 @@
     },
     {
       "name": "Paperback",
-      "count": 18
+      "count": 19
     }
   ],
   "decadeDistribution": [
@@ -33,13 +33,13 @@
     },
     {
       "name": "1980s",
-      "count": 18
+      "count": 19
     }
   ],
   "mostReadAuthors": [
     {
       "name": "Richard Laymon",
-      "count": 13,
+      "count": 14,
       "slug": "richard-laymon",
       "readings": [
         {
@@ -186,6 +186,17 @@
           "yearPublished": "1986",
           "includedInSlugs": [],
           "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2014-07-23",
+          "slug": "the-intruder-by-richard-laymon",
+          "edition": "Paperback",
+          "kind": "Short Story",
+          "title": "The Intruder",
+          "yearPublished": "1984",
+          "includedInSlugs": [],
+          "reviewed": true
         }
       ]
     },
