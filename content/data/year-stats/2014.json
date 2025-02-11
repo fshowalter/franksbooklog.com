@@ -1,6 +1,6 @@
 {
   "year": "2014",
-  "workCount": 19,
+  "workCount": 20,
   "bookCount": 17,
   "kindDistribution": [
     {
@@ -13,7 +13,7 @@
     },
     {
       "name": "Short Story",
-      "count": 2
+      "count": 3
     }
   ],
   "editionDistribution": [
@@ -23,7 +23,7 @@
     },
     {
       "name": "Paperback",
-      "count": 16
+      "count": 17
     }
   ],
   "decadeDistribution": [
@@ -33,13 +33,13 @@
     },
     {
       "name": "1980s",
-      "count": 16
+      "count": 17
     }
   ],
   "mostReadAuthors": [
     {
       "name": "Richard Laymon",
-      "count": 11,
+      "count": 12,
       "slug": "richard-laymon",
       "readings": [
         {
@@ -161,6 +161,17 @@
           "edition": "Paperback",
           "kind": "Novel",
           "title": "Beware!",
+          "yearPublished": "1985",
+          "includedInSlugs": [],
+          "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2014-07-13",
+          "slug": "the-last-hand-by-richard-laymon",
+          "edition": "Paperback",
+          "kind": "Short Story",
+          "title": "The Last Hand",
           "yearPublished": "1985",
           "includedInSlugs": [],
           "reviewed": true
