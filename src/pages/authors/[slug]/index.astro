@@ -1,5 +1,5 @@
 ---
-import { allAuthors } from "~/api/authors";
+import { allAuthorsWithReviews } from "~/api/authors";
 import { Author } from "~/components/Author/Author";
 import { getProps } from "~/components/Author/getProps";
 import Layout from "~/layouts/Layout.astro";
@@ -9,7 +9,7 @@ interface Props {
 }
 
 export async function getStaticPaths() {
-  const authors = await allAuthors();
+  const authors = await allAuthorsWithReviews();
 
   return authors.map((author) => {
     return {
