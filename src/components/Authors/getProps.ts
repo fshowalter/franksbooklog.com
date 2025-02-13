@@ -1,11 +1,11 @@
-import { allAuthors } from "~/api/authors";
+import { allAuthorsWithReviews } from "~/api/authors";
 import { getAvatarImageProps } from "~/api/avatars";
 import { ListItemAvatarImageConfig } from "~/components/ListItemAvatar";
 
 import type { ListItemValue, Props } from "./Authors";
 
 export async function getProps(): Promise<Props> {
-  const authors = await allAuthors();
+  const authors = await allAuthorsWithReviews();
 
   authors.sort((a, b) => a.sortName.localeCompare(b.sortName));
 

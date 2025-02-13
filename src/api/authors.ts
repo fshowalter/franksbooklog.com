@@ -12,6 +12,12 @@ export async function allAuthors(): Promise<Author[]> {
   return await allAuthorsJson();
 }
 
+export async function allAuthorsWithReviews(): Promise<Author[]> {
+  const authors = await allAuthorsJson();
+
+  return authors.filter((author) => author.reviewedWorkCount > 0);
+}
+
 export async function getAuthorDetails(slug: string): Promise<AuthorDetails> {
   const authors = await allAuthorsJson();
   const distinctKinds = new Set<string>();
