@@ -1,0 +1,29 @@
+{
+  "name": "James Kaplan",
+  "sortName": "Kaplan, James",
+  "slug": "james-kaplan",
+  "works": [
+    {
+      "title": "Frank",
+      "yearPublished": "2010",
+      "kind": "Nonfiction",
+      "slug": "frank-by-james-kaplan",
+      "sortTitle": "Frank: The Voice",
+      "reviewed": false,
+      "grade": null,
+      "gradeValue": null,
+      "authors": [
+        {
+          "slug": "james-kaplan",
+          "notes": null,
+          "name": "James Kaplan",
+          "sortName": "Kaplan, James"
+        }
+      ],
+      "includedInSlugs": []
+    }
+  ],
+  "reviewedWorkCount": 0,
+  "workCount": 1,
+  "shelfWorkCount": 1
+}
