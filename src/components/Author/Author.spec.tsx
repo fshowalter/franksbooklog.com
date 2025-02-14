@@ -121,14 +121,4 @@ describe("Author", () => {
 
     expect(screen.getByTestId("list")).toMatchSnapshot();
   });
-
-  it("can view more titles", async ({ expect }) => {
-    expect.hasAssertions();
-
-    render(<Author {...props} />);
-
-    await userEvent.click(screen.getByText("Show More"));
-
-    expect(screen.getByTestId("list")).toMatchSnapshot();
-  });
 });

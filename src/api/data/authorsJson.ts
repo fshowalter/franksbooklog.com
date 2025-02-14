@@ -2,7 +2,7 @@ import { promises as fs } from "node:fs";
 import { z } from "zod";
 
 import { getContentPath } from "./utils/getContentPath";
-import { nullableNumber, nullableString } from "./utils/nullable";
+import { nullableString } from "./utils/nullable";
 import { WorkKindSchema } from "./WorkKindSchema";
 
 const authorsJsonDirectory = getContentPath("data", "authors");
@@ -19,56 +19,23 @@ const WorkAuthorSchema = z
     return { name, notes, slug, sortName };
   });
 
-const WorkSchema = z
-  .object({
-    authors: z.array(WorkAuthorSchema),
-    grade: nullableString(),
-    gradeValue: nullableNumber(),
-    includedInSlugs: z.array(z.string()),
-    kind: WorkKindSchema,
-    reviewed: z.boolean(),
-    slug: z.string(),
-    sortTitle: z.string(),
-    title: z.string(),
-    yearPublished: z.string(),
-  })
-  .transform(
-    ({
-      authors,
-      grade,
-      gradeValue,
-      includedInSlugs,
-      kind,
-      reviewed,
-      slug,
-      sortTitle,
-      title,
-      yearPublished,
-    }) => {
-      // fix zod making anything with undefined optional
-      return {
-        authors,
-        grade,
-        gradeValue,
-        includedInSlugs,
-        kind,
-        reviewed,
-        slug,
-        sortTitle,
-        title,
-        yearPublished,
-      };
-    },
-  );
+const WorkSchema = z.object({
+  authors: z.array(WorkAuthorSchema),
+  grade: z.string(),
+  gradeValue: z.number(),
+  includedInSlugs: z.array(z.string()),
+  kind: WorkKindSchema,
+  slug: z.string(),
+  sortTitle: z.string(),
+  title: z.string(),
+  yearPublished: z.string(),
+});
 
 const AuthorJsonSchema = z.object({
   name: z.string(),
-  reviewedWorkCount: z.number(),
-  shelfWorkCount: z.number(),
+  reviewedWorks: z.array(WorkSchema),
   slug: z.string(),
   sortName: z.string(),
-  workCount: z.number(),
-  works: z.array(WorkSchema),
 });
 
 export type AuthorJson = z.infer<typeof AuthorJsonSchema>;

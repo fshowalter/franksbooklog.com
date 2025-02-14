@@ -2,14 +2,13 @@
   "name": "A. Jack Ulrich",
   "sortName": "Ulrich, A. Jack",
   "slug": "a-jack-ulrich",
-  "works": [
+  "reviewedWorks": [
     {
       "title": "Fright Night Origins",
       "yearPublished": "2023",
       "kind": "Novel",
       "slug": "fright-night-origins-by-tom-holland-a-jack-ulrich",
       "sortTitle": "Fright Night Origins",
-      "reviewed": true,
       "grade": "C+",
       "gradeValue": 7,
       "authors": [
@@ -28,8 +27,5 @@
       ],
       "includedInSlugs": []
     }
-  ],
-  "reviewedWorkCount": 1,
-  "workCount": 1,
-  "shelfWorkCount": 0
+  ]
 }

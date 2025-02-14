@@ -12,12 +12,6 @@ export async function allAuthors(): Promise<Author[]> {
   return await allAuthorsJson();
 }
 
-export async function allAuthorsWithReviews(): Promise<Author[]> {
-  const authors = await allAuthorsJson();
-
-  return authors.filter((author) => author.reviewedWorkCount > 0);
-}
-
 export async function getAuthorDetails(slug: string): Promise<AuthorDetails> {
   const authors = await allAuthorsJson();
   const distinctKinds = new Set<string>();
@@ -25,7 +19,7 @@ export async function getAuthorDetails(slug: string): Promise<AuthorDetails> {
 
   const author = authors.find((value) => value.slug === slug)!;
 
-  for (const work of author.works) {
+  for (const work of author.reviewedWorks) {
     distinctKinds.add(work.kind);
     distinctPublishedYears.add(work.yearPublished);
   }

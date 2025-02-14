@@ -2,14 +2,13 @@
   "name": "Craig Spector",
   "sortName": "Spector, Craig",
   "slug": "craig-spector",
-  "works": [
+  "reviewedWorks": [
     {
       "title": "Fright Night",
       "yearPublished": "1985",
       "kind": "Novel",
       "slug": "fright-night-by-john-skipp-craig-spector",
       "sortTitle": "Fright Night",
-      "reviewed": true,
       "grade": "F",
       "gradeValue": 1,
       "authors": [
@@ -28,8 +27,5 @@
       ],
       "includedInSlugs": []
     }
-  ],
-  "reviewedWorkCount": 1,
-  "workCount": 1,
-  "shelfWorkCount": 0
+  ]
 }

@@ -1,7 +1,7 @@
 {
-  "reviewCount": 62,
-  "workCount": 63,
-  "bookCount": 51,
+  "reviewCount": 78,
+  "workCount": 100,
+  "bookCount": 84,
   "gradeDistribution": [
     {
       "name": "A",
@@ -20,7 +20,7 @@
     },
     {
       "name": "B",
-      "count": 10,
+      "count": 13,
       "sortValue": 9
     },
     {
@@ -35,7 +35,7 @@
     },
     {
       "name": "C",
-      "count": 5,
+      "count": 13,
       "sortValue": 6
     },
     {
@@ -45,12 +45,12 @@
     },
     {
       "name": "D+",
-      "count": 2,
+      "count": 4,
       "sortValue": 4
     },
     {
       "name": "D",
-      "count": 2,
+      "count": 5,
       "sortValue": 3
     },
     {
@@ -67,15 +67,15 @@
   "kindDistribution": [
     {
       "name": "Collection",
-      "count": 1
+      "count": 2
     },
     {
       "name": "Nonfiction",
-      "count": 25
+      "count": 32
     },
     {
       "name": "Novel",
-      "count": 25
+      "count": 50
     },
     {
       "name": "Novella",
@@ -83,7 +83,7 @@
     },
     {
       "name": "Short Story",
-      "count": 10
+      "count": 14
     }
   ],
   "editionDistribution": [
@@ -92,8 +92,16 @@
       "count": 29
     },
     {
+      "name": "Hardcover",
+      "count": 4
+    },
+    {
       "name": "Kindle",
-      "count": 34
+      "count": 38
+    },
+    {
+      "name": "Paperback",
+      "count": 29
     }
   ],
   "decadeDistribution": [
@@ -111,27 +119,27 @@
     },
     {
       "name": "1950s",
-      "count": 3
-    },
-    {
-      "name": "1970s",
-      "count": 7
-    },
-    {
-      "name": "1980s",
-      "count": 7
-    },
-    {
-      "name": "1990s",
       "count": 4
     },
     {
+      "name": "1970s",
+      "count": 14
+    },
+    {
+      "name": "1980s",
+      "count": 29
+    },
+    {
+      "name": "1990s",
+      "count": 5
+    },
+    {
       "name": "2000s",
-      "count": 2
+      "count": 6
     },
     {
       "name": "2010s",
-      "count": 25
+      "count": 27
     },
     {
       "name": "2020s",
@@ -140,251 +148,175 @@
   ],
   "mostReadAuthors": [
     {
-      "name": "Philip Fracassi",
-      "count": 13,
-      "slug": "philip-fracassi",
-      "readings": [
-        {
-          "sequence": 1,
-          "date": "2022-04-30",
-          "slug": "fail-safe-by-philip-fracassi",
-          "edition": "Kindle",
-          "kind": "Short Story",
-          "title": "Fail-Safe",
-          "yearPublished": "2017",
-          "includedInSlugs": [
-            "behold-the-void-by-philip-fracassi"
-          ],
-          "reviewed": true
-        },
-        {
-          "sequence": 1,
-          "date": "2024-06-30",
-          "slug": "gothic-by-philip-fracassi",
-          "edition": "Kindle",
-          "kind": "Novel",
-          "title": "Gothic",
-          "yearPublished": "2023",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "sequence": 1,
-          "date": "2022-04-17",
-          "slug": "soft-construction-of-a-sunset-by-philip-fracassi",
-          "edition": "Kindle",
-          "kind": "Short Story",
-          "title": "Soft Construction of a Sunset",
-          "yearPublished": "2017",
-          "includedInSlugs": [
-            "behold-the-void-by-philip-fracassi"
-          ],
-          "reviewed": true
-        },
-        {
-          "sequence": 1,
-          "date": "2022-05-07",
-          "slug": "mandala-by-philip-fracassi",
-          "edition": "Kindle",
-          "kind": "Novella",
-          "title": "Mandala",
-          "yearPublished": "2017",
-          "includedInSlugs": [
-            "behold-the-void-by-philip-fracassi"
-          ],
-          "reviewed": true
-        },
-        {
-          "sequence": 1,
-          "date": "2022-04-22",
-          "slug": "surfer-girl-by-philip-fracassi",
-          "edition": "Kindle",
-          "kind": "Short Story",
-          "title": "Surfer Girl",
-          "yearPublished": "2017",
-          "includedInSlugs": [
-            "behold-the-void-by-philip-fracassi"
-          ],
-          "reviewed": true
-        },
-        {
-          "sequence": 1,
-          "date": "2022-04-18",
-          "slug": "altar-by-philip-fracassi",
-          "edition": "Kindle",
-          "kind": "Short Story",
-          "title": "Altar",
-          "yearPublished": "2016",
-          "includedInSlugs": [
-            "behold-the-void-by-philip-fracassi"
-          ],
-          "reviewed": true
-        },
-        {
-          "sequence": 1,
-          "date": "2022-04-23",
-          "slug": "mother-by-philip-fracassi",
-          "edition": "Kindle",
-          "kind": "Short Story",
-          "title": "Mother",
-          "yearPublished": "2015",
-          "includedInSlugs": [
-            "behold-the-void-by-philip-fracassi"
-          ],
-          "reviewed": true
-        },
-        {
-          "sequence": 1,
-          "date": "2023-10-09",
-          "slug": "sacculina-by-philip-fracassi",
-          "edition": "Kindle",
-          "kind": "Novella",
-          "title": "Sacculina",
-          "yearPublished": "2017",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "sequence": 1,
-          "date": "2022-04-19",
-          "slug": "the-horse-thief-by-philip-fracassi",
-          "edition": "Kindle",
-          "kind": "Short Story",
-          "title": "The Horse Thief",
-          "yearPublished": "2017",
-          "includedInSlugs": [
-            "behold-the-void-by-philip-fracassi"
-          ],
-          "reviewed": true
-        },
-        {
-          "sequence": 1,
-          "date": "2023-10-29",
-          "slug": "dont-let-them-get-you-down-by-philip-fracassi",
-          "edition": "Kindle",
-          "kind": "Novel",
-          "title": "Don't Let Them Get You Down",
-          "yearPublished": "2022",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "sequence": 1,
-          "date": "2022-04-21",
-          "slug": "the-baby-farmer-by-philip-fracassi",
-          "edition": "Kindle",
-          "kind": "Short Story",
-          "title": "The Baby Farmer",
-          "yearPublished": "2017",
-          "includedInSlugs": [
-            "behold-the-void-by-philip-fracassi"
-          ],
-          "reviewed": true
-        },
-        {
-          "sequence": 1,
-          "date": "2022-04-20",
-          "slug": "coffin-by-philip-fracassi",
-          "edition": "Kindle",
-          "kind": "Short Story",
-          "title": "Coffin",
-          "yearPublished": "2017",
-          "includedInSlugs": [
-            "behold-the-void-by-philip-fracassi"
-          ],
-          "reviewed": true
-        },
-        {
-          "sequence": 2,
-          "date": "2022-05-07",
-          "slug": "behold-the-void-by-philip-fracassi",
-          "edition": "Kindle",
-          "kind": "Collection",
-          "title": "Behold the Void",
-          "yearPublished": "2017",
-          "includedInSlugs": [],
-          "reviewed": true
-        }
-      ]
-    },
-    {
-      "name": "Stephen King",
-      "count": 5,
-      "slug": "stephen-king",
-      "readings": [
-        {
-          "sequence": 1,
-          "date": "2023-01-14",
-          "slug": "doctor-sleep-by-stephen-king",
-          "edition": "Kindle",
-          "kind": "Novel",
-          "title": "Doctor Sleep",
-          "yearPublished": "2013",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "sequence": 1,
-          "date": "2022-03-21",
-          "slug": "on-writing-by-stephen-king",
-          "edition": "Kindle",
-          "kind": "Nonfiction",
-          "title": "On Writing",
-          "yearPublished": "2000",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "sequence": 1,
-          "date": "2022-09-19",
-          "slug": "carrie-by-stephen-king",
-          "edition": "Kindle",
-          "kind": "Novel",
-          "title": "Carrie",
-          "yearPublished": "1974",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "sequence": 1,
-          "date": "2022-10-29",
-          "slug": "the-shining-by-stephen-king",
-          "edition": "Audible",
-          "kind": "Novel",
-          "title": "The Shining",
-          "yearPublished": "1977",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "sequence": 1,
-          "date": "2022-10-14",
-          "slug": "salems-lot-by-stephen-king",
-          "edition": "Audible",
-          "kind": "Novel",
-          "title": "'Salem's Lot",
-          "yearPublished": "1975",
-          "includedInSlugs": [],
-          "reviewed": true
-        }
-      ]
-    },
-    {
       "name": "Richard Laymon",
-      "count": 5,
+      "count": 20,
       "slug": "richard-laymon",
       "readings": [
         {
           "sequence": 1,
-          "date": "2023-01-21",
-          "slug": "roadside-pickup-by-richard-laymon",
-          "edition": "Kindle",
-          "kind": "Short Story",
-          "title": "Roadside Pickup",
-          "yearPublished": "1974",
+          "date": "2014-02-24",
+          "slug": "the-cellar-by-richard-laymon",
+          "edition": "Paperback",
+          "kind": "Novel",
+          "title": "The Cellar",
+          "yearPublished": "1980",
+          "includedInSlugs": [],
+          "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2014-03-12",
+          "slug": "your-secret-admirer-by-richard-laymon",
+          "edition": "Paperback",
+          "kind": "Novel",
+          "title": "Your Secret Admirer",
+          "yearPublished": "1980",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2014-03-18",
+          "slug": "the-woods-are-dark-by-richard-laymon",
+          "edition": "Paperback",
+          "kind": "Novel",
+          "title": "The Woods Are Dark",
+          "yearPublished": "1981",
+          "includedInSlugs": [],
+          "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2014-04-05",
+          "slug": "nightmare-lake-by-richard-laymon",
+          "edition": "Paperback",
+          "kind": "Novel",
+          "title": "Nightmare Lake",
+          "yearPublished": "1983",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2014-04-11",
+          "slug": "the-lawmen-by-richard-laymon",
+          "edition": "Paperback",
+          "kind": "Novel",
+          "title": "The Lawmen",
+          "yearPublished": "1983",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2014-04-28",
+          "slug": "out-are-the-lights-by-richard-laymon",
+          "edition": "Paperback",
+          "kind": "Novel",
+          "title": "Out Are the Lights",
+          "yearPublished": "1982",
           "includedInSlugs": [
-            "short-stories-volume-one-by-richard-laymon"
+            "out-are-the-lights-and-other-tales-by-richard-laymon"
           ],
+          "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2014-05-21",
+          "slug": "night-show-by-richard-laymon",
+          "edition": "Paperback",
+          "kind": "Novel",
+          "title": "Night Show",
+          "yearPublished": "1984",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2014-06-09",
+          "slug": "shootout-at-joes-by-richard-laymon",
+          "edition": "Paperback",
+          "kind": "Short Story",
+          "title": "Shootout at Joe's",
+          "yearPublished": "1984",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 2,
+          "date": "2014-06-09",
+          "slug": "dawsons-city-by-richard-laymon",
+          "edition": "Paperback",
+          "kind": "Short Story",
+          "title": "Dawson's City",
+          "yearPublished": "1984",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 2,
+          "date": "2014-06-09",
+          "slug": "allhallows-eve-by-richard-laymon",
+          "edition": "Paperback",
+          "kind": "Novel",
+          "title": "Allhallow's Eve",
+          "yearPublished": "1986",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2014-06-27",
+          "slug": "beware-by-richard-laymon",
+          "edition": "Paperback",
+          "kind": "Novel",
+          "title": "Beware!",
+          "yearPublished": "1985",
+          "includedInSlugs": [],
+          "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2014-07-13",
+          "slug": "the-last-hand-by-richard-laymon",
+          "edition": "Paperback",
+          "kind": "Short Story",
+          "title": "The Last Hand",
+          "yearPublished": "1985",
+          "includedInSlugs": [],
+          "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2014-07-22",
+          "slug": "the-beast-house-by-richard-laymon",
+          "edition": "Paperback",
+          "kind": "Novel",
+          "title": "The Beast House",
+          "yearPublished": "1986",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2014-07-23",
+          "slug": "the-intruder-by-richard-laymon",
+          "edition": "Paperback",
+          "kind": "Short Story",
+          "title": "The Intruder",
+          "yearPublished": "1984",
+          "includedInSlugs": [],
+          "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2014-09-21",
+          "slug": "tread-softly-by-richard-laymon",
+          "edition": "Paperback",
+          "kind": "Novel",
+          "title": "Tread Softly",
+          "yearPublished": "1987",
+          "includedInSlugs": [],
           "reviewed": true
         },
         {
@@ -412,7 +344,7 @@
           "reviewed": true
         },
         {
-          "sequence": 1,
+          "sequence": 2,
           "date": "2022-09-11",
           "slug": "the-woods-are-dark-by-richard-laymon",
           "edition": "Audible",
@@ -423,7 +355,7 @@
           "reviewed": true
         },
         {
-          "sequence": 2,
+          "sequence": 1,
           "date": "2022-10-11",
           "slug": "out-are-the-lights-by-richard-laymon",
           "edition": "Kindle",
@@ -433,6 +365,392 @@
           "includedInSlugs": [
             "out-are-the-lights-and-other-tales-by-richard-laymon"
           ],
+          "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2023-01-21",
+          "slug": "roadside-pickup-by-richard-laymon",
+          "edition": "Kindle",
+          "kind": "Short Story",
+          "title": "Roadside Pickup",
+          "yearPublished": "1974",
+          "includedInSlugs": [
+            "short-stories-volume-one-by-richard-laymon"
+          ],
+          "reviewed": true
+        }
+      ]
+    },
+    {
+      "name": "Stephen King",
+      "count": 18,
+      "slug": "stephen-king",
+      "readings": [
+        {
+          "sequence": 1,
+          "date": "2011-11-06",
+          "slug": "the-shining-by-stephen-king",
+          "edition": "Paperback",
+          "kind": "Novel",
+          "title": "The Shining",
+          "yearPublished": "1977",
+          "includedInSlugs": [],
+          "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2012-05-13",
+          "slug": "rage-by-stephen-king",
+          "edition": "Paperback",
+          "kind": "Novel",
+          "title": "Rage",
+          "yearPublished": "1976",
+          "includedInSlugs": [],
+          "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2012-05-14",
+          "slug": "night-shift-by-stephen-king",
+          "edition": "Paperback",
+          "kind": "Collection",
+          "title": "Night Shift",
+          "yearPublished": "1978",
+          "includedInSlugs": [],
+          "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2014-03-02",
+          "slug": "the-stand-by-stephen-king",
+          "edition": "Paperback",
+          "kind": "Novel",
+          "title": "The Stand",
+          "yearPublished": "1978",
+          "includedInSlugs": [],
+          "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2014-03-09",
+          "slug": "the-long-walk-by-stephen-king",
+          "edition": "Paperback",
+          "kind": "Novel",
+          "title": "The Long Walk",
+          "yearPublished": "1978",
+          "includedInSlugs": [],
+          "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2014-04-04",
+          "slug": "the-dead-zone-by-stephen-king",
+          "edition": "Paperback",
+          "kind": "Novel",
+          "title": "The Dead Zone",
+          "yearPublished": "1979",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2014-04-22",
+          "slug": "firestarter-by-stephen-king",
+          "edition": "Kindle",
+          "kind": "Novel",
+          "title": "Firestarter",
+          "yearPublished": "1980",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2014-05-11",
+          "slug": "roadwork-by-stephen-king",
+          "edition": "Paperback",
+          "kind": "Novel",
+          "title": "Roadwork",
+          "yearPublished": "1980",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2014-06-04",
+          "slug": "danse-macabre-by-stephen-king",
+          "edition": "Kindle",
+          "kind": "Nonfiction",
+          "title": "Danse Macabre",
+          "yearPublished": "1981",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 4,
+          "date": "2014-06-17",
+          "slug": "cujo-by-stephen-king",
+          "edition": "Kindle",
+          "kind": "Novel",
+          "title": "Cujo",
+          "yearPublished": "1981",
+          "includedInSlugs": [],
+          "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2014-07-10",
+          "slug": "the-running-man-by-stephen-king",
+          "edition": "Paperback",
+          "kind": "Novel",
+          "title": "The Running Man",
+          "yearPublished": "1981",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2014-08-05",
+          "slug": "the-gunslinger-by-stephen-king",
+          "edition": "Paperback",
+          "kind": "Novel",
+          "title": "The Gunslinger",
+          "yearPublished": "1982",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2019-03-06",
+          "slug": "the-gunslinger-by-stephen-king",
+          "edition": "Kindle",
+          "kind": "Novel",
+          "title": "The Gunslinger",
+          "yearPublished": "1982",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2022-03-21",
+          "slug": "on-writing-by-stephen-king",
+          "edition": "Kindle",
+          "kind": "Nonfiction",
+          "title": "On Writing",
+          "yearPublished": "2000",
+          "includedInSlugs": [],
+          "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2022-09-19",
+          "slug": "carrie-by-stephen-king",
+          "edition": "Kindle",
+          "kind": "Novel",
+          "title": "Carrie",
+          "yearPublished": "1974",
+          "includedInSlugs": [],
+          "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2022-10-14",
+          "slug": "salems-lot-by-stephen-king",
+          "edition": "Audible",
+          "kind": "Novel",
+          "title": "'Salem's Lot",
+          "yearPublished": "1975",
+          "includedInSlugs": [],
+          "reviewed": true
+        },
+        {
+          "sequence": 2,
+          "date": "2022-10-29",
+          "slug": "the-shining-by-stephen-king",
+          "edition": "Audible",
+          "kind": "Novel",
+          "title": "The Shining",
+          "yearPublished": "1977",
+          "includedInSlugs": [],
+          "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2023-01-14",
+          "slug": "doctor-sleep-by-stephen-king",
+          "edition": "Kindle",
+          "kind": "Novel",
+          "title": "Doctor Sleep",
+          "yearPublished": "2013",
+          "includedInSlugs": [],
+          "reviewed": true
+        }
+      ]
+    },
+    {
+      "name": "Philip Fracassi",
+      "count": 13,
+      "slug": "philip-fracassi",
+      "readings": [
+        {
+          "sequence": 1,
+          "date": "2022-04-17",
+          "slug": "soft-construction-of-a-sunset-by-philip-fracassi",
+          "edition": "Kindle",
+          "kind": "Short Story",
+          "title": "Soft Construction of a Sunset",
+          "yearPublished": "2017",
+          "includedInSlugs": [
+            "behold-the-void-by-philip-fracassi"
+          ],
+          "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2022-04-18",
+          "slug": "altar-by-philip-fracassi",
+          "edition": "Kindle",
+          "kind": "Short Story",
+          "title": "Altar",
+          "yearPublished": "2016",
+          "includedInSlugs": [
+            "behold-the-void-by-philip-fracassi"
+          ],
+          "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2022-04-19",
+          "slug": "the-horse-thief-by-philip-fracassi",
+          "edition": "Kindle",
+          "kind": "Short Story",
+          "title": "The Horse Thief",
+          "yearPublished": "2017",
+          "includedInSlugs": [
+            "behold-the-void-by-philip-fracassi"
+          ],
+          "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2022-04-20",
+          "slug": "coffin-by-philip-fracassi",
+          "edition": "Kindle",
+          "kind": "Short Story",
+          "title": "Coffin",
+          "yearPublished": "2017",
+          "includedInSlugs": [
+            "behold-the-void-by-philip-fracassi"
+          ],
+          "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2022-04-21",
+          "slug": "the-baby-farmer-by-philip-fracassi",
+          "edition": "Kindle",
+          "kind": "Short Story",
+          "title": "The Baby Farmer",
+          "yearPublished": "2017",
+          "includedInSlugs": [
+            "behold-the-void-by-philip-fracassi"
+          ],
+          "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2022-04-22",
+          "slug": "surfer-girl-by-philip-fracassi",
+          "edition": "Kindle",
+          "kind": "Short Story",
+          "title": "Surfer Girl",
+          "yearPublished": "2017",
+          "includedInSlugs": [
+            "behold-the-void-by-philip-fracassi"
+          ],
+          "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2022-04-23",
+          "slug": "mother-by-philip-fracassi",
+          "edition": "Kindle",
+          "kind": "Short Story",
+          "title": "Mother",
+          "yearPublished": "2015",
+          "includedInSlugs": [
+            "behold-the-void-by-philip-fracassi"
+          ],
+          "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2022-04-30",
+          "slug": "fail-safe-by-philip-fracassi",
+          "edition": "Kindle",
+          "kind": "Short Story",
+          "title": "Fail-Safe",
+          "yearPublished": "2017",
+          "includedInSlugs": [
+            "behold-the-void-by-philip-fracassi"
+          ],
+          "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2022-05-07",
+          "slug": "mandala-by-philip-fracassi",
+          "edition": "Kindle",
+          "kind": "Novella",
+          "title": "Mandala",
+          "yearPublished": "2017",
+          "includedInSlugs": [
+            "behold-the-void-by-philip-fracassi"
+          ],
+          "reviewed": true
+        },
+        {
+          "sequence": 2,
+          "date": "2022-05-07",
+          "slug": "behold-the-void-by-philip-fracassi",
+          "edition": "Kindle",
+          "kind": "Collection",
+          "title": "Behold the Void",
+          "yearPublished": "2017",
+          "includedInSlugs": [],
+          "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2023-10-09",
+          "slug": "sacculina-by-philip-fracassi",
+          "edition": "Kindle",
+          "kind": "Novella",
+          "title": "Sacculina",
+          "yearPublished": "2017",
+          "includedInSlugs": [],
+          "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2023-10-29",
+          "slug": "dont-let-them-get-you-down-by-philip-fracassi",
+          "edition": "Kindle",
+          "kind": "Novel",
+          "title": "Don't Let Them Get You Down",
+          "yearPublished": "2022",
+          "includedInSlugs": [],
+          "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2024-06-30",
+          "slug": "gothic-by-philip-fracassi",
+          "edition": "Kindle",
+          "kind": "Novel",
+          "title": "Gothic",
+          "yearPublished": "2023",
+          "includedInSlugs": [],
           "reviewed": true
         }
       ]
@@ -465,7 +783,7 @@
           "reviewed": true
         },
         {
-          "sequence": 2,
+          "sequence": 1,
           "date": "2024-07-01",
           "slug": "fast-forward-by-stephen-morris",
           "edition": "Audible",
@@ -483,13 +801,13 @@
       "slug": "ian-fleming",
       "readings": [
         {
-          "sequence": 1,
-          "date": "2022-10-16",
-          "slug": "moonraker-by-ian-fleming",
-          "edition": "Audible",
+          "sequence": 2,
+          "date": "2022-06-14",
+          "slug": "casino-royale-by-ian-fleming",
+          "edition": "Kindle",
           "kind": "Novel",
-          "title": "Moonraker",
-          "yearPublished": "1955",
+          "title": "Casino Royale",
+          "yearPublished": "1953",
           "includedInSlugs": [],
           "reviewed": true
         },
@@ -506,12 +824,12 @@
         },
         {
           "sequence": 1,
-          "date": "2022-06-14",
-          "slug": "casino-royale-by-ian-fleming",
-          "edition": "Kindle",
+          "date": "2022-10-16",
+          "slug": "moonraker-by-ian-fleming",
+          "edition": "Audible",
           "kind": "Novel",
-          "title": "Casino Royale",
-          "yearPublished": "1953",
+          "title": "Moonraker",
+          "yearPublished": "1955",
           "includedInSlugs": [],
           "reviewed": true
         }
@@ -524,6 +842,17 @@
       "readings": [
         {
           "sequence": 1,
+          "date": "2022-07-16",
+          "slug": "fight-club-by-chuck-palahniuk",
+          "edition": "Audible",
+          "kind": "Novel",
+          "title": "Fight Club",
+          "yearPublished": "1996",
+          "includedInSlugs": [],
+          "reviewed": true
+        },
+        {
+          "sequence": 1,
           "date": "2022-09-22",
           "slug": "consider-this-by-chuck-palahniuk",
           "edition": "Audible",
@@ -532,15 +861,33 @@
           "yearPublished": "2020",
           "includedInSlugs": [],
           "reviewed": true
+        }
+      ]
+    },
+    {
+      "name": "Bret Easton Ellis",
+      "count": 2,
+      "slug": "bret-easton-ellis",
+      "readings": [
+        {
+          "sequence": 1,
+          "date": "2022-04-02",
+          "slug": "less-than-zero-by-bret-easton-ellis",
+          "edition": "Kindle",
+          "kind": "Novel",
+          "title": "Less Than Zero",
+          "yearPublished": "1985",
+          "includedInSlugs": [],
+          "reviewed": true
         },
         {
           "sequence": 1,
-          "date": "2022-07-16",
-          "slug": "fight-club-by-chuck-palahniuk",
-          "edition": "Audible",
+          "date": "2022-07-14",
+          "slug": "the-rules-of-attraction-by-bret-easton-ellis",
+          "edition": "Kindle",
           "kind": "Novel",
-          "title": "Fight Club",
-          "yearPublished": "1996",
+          "title": "The Rules of Attraction",
+          "yearPublished": "1987",
           "includedInSlugs": [],
           "reviewed": true
         }
@@ -570,35 +917,6 @@
           "kind": "Nonfiction",
           "title": "Goth",
           "yearPublished": "2023",
-          "includedInSlugs": [],
-          "reviewed": true
-        }
-      ]
-    },
-    {
-      "name": "Bret Easton Ellis",
-      "count": 2,
-      "slug": "bret-easton-ellis",
-      "readings": [
-        {
-          "sequence": 1,
-          "date": "2022-04-02",
-          "slug": "less-than-zero-by-bret-easton-ellis",
-          "edition": "Kindle",
-          "kind": "Novel",
-          "title": "Less Than Zero",
-          "yearPublished": "1985",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "sequence": 2,
-          "date": "2022-07-14",
-          "slug": "the-rules-of-attraction-by-bret-easton-ellis",
-          "edition": "Kindle",
-          "kind": "Novel",
-          "title": "The Rules of Attraction",
-          "yearPublished": "1987",
           "includedInSlugs": [],
           "reviewed": true
         }

@@ -39,7 +39,6 @@ export type ListItemValue = Pick<
   | "grade"
   | "gradeValue"
   | "kind"
-  | "reviewed"
   | "slug"
   | "sortTitle"
   | "title"
@@ -51,7 +50,7 @@ export type ListItemValue = Pick<
   }[];
 };
 
-type AuthorWork = Author["works"][number];
+type AuthorWork = Author["reviewedWorks"][number];
 
 export function Author({
   avatarImageProps,
@@ -125,38 +124,17 @@ function OtherAuthors({ values }: { values: ListItemValue["otherAuthors"] }) {
 }
 
 function WorkListItem({ value }: { value: ListItemValue }): JSX.Element {
-  if (value.reviewed) {
-    return (
-      <ListItem className="has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover">
-        <ListItemCover imageProps={value.coverImageProps} />
-        <div className="flex grow flex-col items-start tablet:w-full tablet:pr-4">
-          <ListItemTitle
-            slug={value.reviewed ? value.slug : undefined}
-            title={value.title}
-          />
-          <OtherAuthors values={value.otherAuthors} />
-          <div className="mt-1 tablet:mt-2">
-            <ListItemKindAndYear kind={value.kind} year={value.yearPublished} />
-          </div>
-          <Grade className="mt-2 tablet:mt-3" height={16} value={value.grade} />
-          <Abandoned value={value.grade} />
-        </div>
-      </ListItem>
-    );
-  }
-
   return (
-    <ListItem background="bg-unreviewed">
+    <ListItem className="has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover">
       <ListItemCover imageProps={value.coverImageProps} />
       <div className="flex grow flex-col items-start tablet:w-full tablet:pr-4">
-        <ListItemTitle
-          slug={value.reviewed ? value.slug : undefined}
-          title={value.title}
-        />
+        <ListItemTitle slug={value.slug} title={value.title} />
         <OtherAuthors values={value.otherAuthors} />
         <div className="mt-1 tablet:mt-2">
           <ListItemKindAndYear kind={value.kind} year={value.yearPublished} />
         </div>
+        <Grade className="mt-2 tablet:mt-3" height={16} value={value.grade} />
+        <Abandoned value={value.grade} />
       </div>
     </ListItem>
   );

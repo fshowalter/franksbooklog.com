@@ -2,14 +2,13 @@
   "name": "Jocko Willink",
   "sortName": "Willink, Jocko",
   "slug": "jocko-willink",
-  "works": [
+  "reviewedWorks": [
     {
       "title": "Extreme Ownership",
       "yearPublished": "2015",
       "kind": "Nonfiction",
       "slug": "extreme-ownership-by-jocko-willink-leif-babin",
       "sortTitle": "Extreme Ownership: How U.S. Navy SEALs Lead and Win",
-      "reviewed": true,
       "grade": "A",
       "gradeValue": 12,
       "authors": [
@@ -28,8 +27,5 @@
       ],
       "includedInSlugs": []
     }
-  ],
-  "reviewedWorkCount": 1,
-  "workCount": 1,
-  "shelfWorkCount": 0
+  ]
 }

@@ -96,7 +96,10 @@ export function Review({
           </SubHeading>
           <ul>
             {value.readings.map((value) => (
-              <ReadingHistoryListItem key={value.sequence} value={value} />
+              <ReadingHistoryListItem
+                key={`${value.date.toISOString()}-${value.sequence}`}
+                value={value}
+              />
             ))}
           </ul>
         </div>
