@@ -2,14 +2,13 @@
   "name": "Robert Greene",
   "sortName": "Greene, Robert",
   "slug": "robert-greene",
-  "works": [
+  "reviewedWorks": [
     {
       "title": "The 48 Laws of Power",
       "yearPublished": "1998",
       "kind": "Nonfiction",
       "slug": "the-48-laws-of-power-by-robert-greene",
       "sortTitle": "48 Laws of Power",
-      "reviewed": true,
       "grade": "D+",
       "gradeValue": 4,
       "authors": [
@@ -22,8 +21,5 @@
       ],
       "includedInSlugs": []
     }
-  ],
-  "reviewedWorkCount": 1,
-  "workCount": 1,
-  "shelfWorkCount": 0
+  ]
 }

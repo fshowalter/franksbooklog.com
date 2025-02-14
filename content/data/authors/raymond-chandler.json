@@ -2,14 +2,13 @@
   "name": "Raymond Chandler",
   "sortName": "Chandler, Raymond",
   "slug": "raymond-chandler",
-  "works": [
+  "reviewedWorks": [
     {
       "title": "The Big Sleep",
       "yearPublished": "1939",
       "kind": "Novel",
       "slug": "the-big-sleep-by-raymond-chandler",
       "sortTitle": "Big Sleep",
-      "reviewed": true,
       "grade": "C+",
       "gradeValue": 7,
       "authors": [
@@ -22,8 +21,5 @@
       ],
       "includedInSlugs": []
     }
-  ],
-  "reviewedWorkCount": 1,
-  "workCount": 1,
-  "shelfWorkCount": 0
+  ]
 }

@@ -69,6 +69,96 @@ exports[`Authors > can sort by name a->z 1`] = `
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
       >
+        A
+      </div>
+    </div>
+    <div
+      class="bg-subtle"
+    >
+      <ol>
+        <li
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+          >
+            <div
+              class="w-full"
+            >
+              <svg
+                fill="var(--bg-avatar-default)"
+                viewBox="0 0 16 16"
+                width="100%"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </div>
+          </div>
+          <a
+            class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+            href="/authors/poul-anderson/"
+          >
+            Poul Anderson
+          </a>
+          <div
+            class="ml-auto text-nowrap font-sans text-xs text-subtle"
+          >
+            1
+          </div>
+        </li>
+        <li
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+          >
+            <div
+              class="w-full"
+            >
+              <svg
+                fill="var(--bg-avatar-default)"
+                viewBox="0 0 16 16"
+                width="100%"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </div>
+          </div>
+          <a
+            class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+            href="/authors/nigel-andrews/"
+          >
+            Nigel Andrews
+          </a>
+          <div
+            class="ml-auto text-nowrap font-sans text-xs text-subtle"
+          >
+            1
+          </div>
+        </li>
+      </ol>
+    </div>
+  </li>
+  <li
+    class="block"
+  >
+    <div
+      class="pt-0 text-md"
+      style="z-index: 2;"
+    >
+      <div
+        class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+      >
         B
       </div>
     </div>
@@ -119,7 +209,7 @@ exports[`Authors > can sort by name a->z 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 2;"
+      style="z-index: 3;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -237,7 +327,7 @@ exports[`Authors > can sort by name a->z 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 3;"
+      style="z-index: 4;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -292,7 +382,7 @@ exports[`Authors > can sort by name a->z 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 4;"
+      style="z-index: 5;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -304,6 +394,41 @@ exports[`Authors > can sort by name a->z 1`] = `
       class="bg-subtle"
     >
       <ol>
+        <li
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+          >
+            <div
+              class="w-full"
+            >
+              <svg
+                fill="var(--bg-avatar-default)"
+                viewBox="0 0 16 16"
+                width="100%"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </div>
+          </div>
+          <a
+            class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+            href="/authors/marc-eliot/"
+          >
+            Marc Eliot
+          </a>
+          <div
+            class="ml-auto text-nowrap font-sans text-xs text-subtle"
+          >
+            1
+          </div>
+        </li>
         <li
           class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
         >
@@ -340,7 +465,7 @@ exports[`Authors > can sort by name a->z 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 5;"
+      style="z-index: 6;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -416,7 +541,7 @@ exports[`Authors > can sort by name a->z 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 6;"
+      style="z-index: 7;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -506,7 +631,7 @@ exports[`Authors > can sort by name a->z 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 7;"
+      style="z-index: 8;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -631,7 +756,7 @@ exports[`Authors > can sort by name a->z 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 8;"
+      style="z-index: 9;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -686,7 +811,62 @@ exports[`Authors > can sort by name a->z 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 9;"
+      style="z-index: 10;"
+    >
+      <div
+        class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+      >
+        J
+      </div>
+    </div>
+    <div
+      class="bg-subtle"
+    >
+      <ol>
+        <li
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+          >
+            <div
+              class="w-full"
+            >
+              <svg
+                fill="var(--bg-avatar-default)"
+                viewBox="0 0 16 16"
+                width="100%"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </div>
+          </div>
+          <a
+            class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+            href="/authors/george-jacobs/"
+          >
+            George Jacobs
+          </a>
+          <div
+            class="ml-auto text-nowrap font-sans text-xs text-subtle"
+          >
+            1
+          </div>
+        </li>
+      </ol>
+    </div>
+  </li>
+  <li
+    class="block"
+  >
+    <div
+      class="pt-0 text-md"
+      style="z-index: 11;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -758,7 +938,7 @@ exports[`Authors > can sort by name a->z 1`] = `
           <div
             class="ml-auto text-nowrap font-sans text-xs text-subtle"
           >
-            5
+            10
           </div>
         </li>
         <li
@@ -804,7 +984,7 @@ exports[`Authors > can sort by name a->z 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 10;"
+      style="z-index: 12;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -841,7 +1021,42 @@ exports[`Authors > can sort by name a->z 1`] = `
           <div
             class="ml-auto text-nowrap font-sans text-xs text-subtle"
           >
-            5
+            9
+          </div>
+        </li>
+        <li
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+          >
+            <div
+              class="w-full"
+            >
+              <svg
+                fill="var(--bg-avatar-default)"
+                viewBox="0 0 16 16"
+                width="100%"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </div>
+          </div>
+          <a
+            class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+            href="/authors/edward-lee/"
+          >
+            Edward Lee
+          </a>
+          <div
+            class="ml-auto text-nowrap font-sans text-xs text-subtle"
+          >
+            1
           </div>
         </li>
       </ol>
@@ -852,7 +1067,7 @@ exports[`Authors > can sort by name a->z 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 11;"
+      style="z-index: 13;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -1029,6 +1244,41 @@ exports[`Authors > can sort by name a->z 1`] = `
           </div>
           <a
             class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+            href="/authors/david-miller/"
+          >
+            David Miller
+          </a>
+          <div
+            class="ml-auto text-nowrap font-sans text-xs text-subtle"
+          >
+            1
+          </div>
+        </li>
+        <li
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+          >
+            <div
+              class="w-full"
+            >
+              <svg
+                fill="var(--bg-avatar-default)"
+                viewBox="0 0 16 16"
+                width="100%"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </div>
+          </div>
+          <a
+            class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
             href="/authors/edmund-morris/"
           >
             Edmund Morris
@@ -1075,7 +1325,7 @@ exports[`Authors > can sort by name a->z 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 12;"
+      style="z-index: 14;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -1130,7 +1380,7 @@ exports[`Authors > can sort by name a->z 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 13;"
+      style="z-index: 15;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -1178,7 +1428,7 @@ exports[`Authors > can sort by name a->z 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 14;"
+      style="z-index: 16;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -1268,7 +1518,7 @@ exports[`Authors > can sort by name a->z 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 15;"
+      style="z-index: 17;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -1496,6 +1746,41 @@ exports[`Authors > can sort by name a->z 1`] = `
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
           >
+            <div
+              class="w-full"
+            >
+              <svg
+                fill="var(--bg-avatar-default)"
+                viewBox="0 0 16 16"
+                width="100%"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </div>
+          </div>
+          <a
+            class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+            href="/authors/william-stadiem/"
+          >
+            William Stadiem
+          </a>
+          <div
+            class="ml-auto text-nowrap font-sans text-xs text-subtle"
+          >
+            1
+          </div>
+        </li>
+        <li
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+          >
             <img
               alt=""
               class="w-full"
@@ -1561,7 +1846,7 @@ exports[`Authors > can sort by name a->z 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 16;"
+      style="z-index: 18;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -1651,7 +1936,7 @@ exports[`Authors > can sort by name a->z 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 17;"
+      style="z-index: 19;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -1706,7 +1991,7 @@ exports[`Authors > can sort by name a->z 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 18;"
+      style="z-index: 20;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -1718,6 +2003,41 @@ exports[`Authors > can sort by name a->z 1`] = `
       class="bg-subtle"
     >
       <ol>
+        <li
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+          >
+            <div
+              class="w-full"
+            >
+              <svg
+                fill="var(--bg-avatar-default)"
+                viewBox="0 0 16 16"
+                width="100%"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </div>
+          </div>
+          <a
+            class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+            href="/authors/karl-edward-wagner/"
+          >
+            Karl Edward Wagner
+          </a>
+          <div
+            class="ml-auto text-nowrap font-sans text-xs text-subtle"
+          >
+            1
+          </div>
+        </li>
         <li
           class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
         >
@@ -1815,6 +2135,41 @@ exports[`Authors > can sort by name z->a 1`] = `
             1
           </div>
         </li>
+        <li
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+          >
+            <div
+              class="w-full"
+            >
+              <svg
+                fill="var(--bg-avatar-default)"
+                viewBox="0 0 16 16"
+                width="100%"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </div>
+          </div>
+          <a
+            class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+            href="/authors/karl-edward-wagner/"
+          >
+            Karl Edward Wagner
+          </a>
+          <div
+            class="ml-auto text-nowrap font-sans text-xs text-subtle"
+          >
+            1
+          </div>
+        </li>
       </ol>
     </div>
   </li>
@@ -2036,6 +2391,41 @@ exports[`Authors > can sort by name z->a 1`] = `
             href="/authors/bram-stoker/"
           >
             Bram Stoker
+          </a>
+          <div
+            class="ml-auto text-nowrap font-sans text-xs text-subtle"
+          >
+            1
+          </div>
+        </li>
+        <li
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+          >
+            <div
+              class="w-full"
+            >
+              <svg
+                fill="var(--bg-avatar-default)"
+                viewBox="0 0 16 16"
+                width="100%"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </div>
+          </div>
+          <a
+            class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+            href="/authors/william-stadiem/"
+          >
+            William Stadiem
           </a>
           <div
             class="ml-auto text-nowrap font-sans text-xs text-subtle"
@@ -2554,6 +2944,41 @@ exports[`Authors > can sort by name z->a 1`] = `
           </div>
           <a
             class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+            href="/authors/david-miller/"
+          >
+            David Miller
+          </a>
+          <div
+            class="ml-auto text-nowrap font-sans text-xs text-subtle"
+          >
+            1
+          </div>
+        </li>
+        <li
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+          >
+            <div
+              class="w-full"
+            >
+              <svg
+                fill="var(--bg-avatar-default)"
+                viewBox="0 0 16 16"
+                width="100%"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </div>
+          </div>
+          <a
+            class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
             href="/authors/john-mcphee/"
           >
             John McPhee
@@ -2695,6 +3120,41 @@ exports[`Authors > can sort by name z->a 1`] = `
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
           >
+            <div
+              class="w-full"
+            >
+              <svg
+                fill="var(--bg-avatar-default)"
+                viewBox="0 0 16 16"
+                width="100%"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </div>
+          </div>
+          <a
+            class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+            href="/authors/edward-lee/"
+          >
+            Edward Lee
+          </a>
+          <div
+            class="ml-auto text-nowrap font-sans text-xs text-subtle"
+          >
+            1
+          </div>
+        </li>
+        <li
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+          >
             <img
               alt=""
               class="w-full"
@@ -2714,7 +3174,7 @@ exports[`Authors > can sort by name z->a 1`] = `
           <div
             class="ml-auto text-nowrap font-sans text-xs text-subtle"
           >
-            5
+            9
           </div>
         </li>
       </ol>
@@ -2797,7 +3257,7 @@ exports[`Authors > can sort by name z->a 1`] = `
           <div
             class="ml-auto text-nowrap font-sans text-xs text-subtle"
           >
-            5
+            10
           </div>
         </li>
         <li
@@ -2844,6 +3304,61 @@ exports[`Authors > can sort by name z->a 1`] = `
     <div
       class="pt-0 text-md"
       style="z-index: 11;"
+    >
+      <div
+        class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+      >
+        J
+      </div>
+    </div>
+    <div
+      class="bg-subtle"
+    >
+      <ol>
+        <li
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+          >
+            <div
+              class="w-full"
+            >
+              <svg
+                fill="var(--bg-avatar-default)"
+                viewBox="0 0 16 16"
+                width="100%"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </div>
+          </div>
+          <a
+            class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+            href="/authors/george-jacobs/"
+          >
+            George Jacobs
+          </a>
+          <div
+            class="ml-auto text-nowrap font-sans text-xs text-subtle"
+          >
+            1
+          </div>
+        </li>
+      </ol>
+    </div>
+  </li>
+  <li
+    class="block"
+  >
+    <div
+      class="pt-0 text-md"
+      style="z-index: 12;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -2898,7 +3413,7 @@ exports[`Authors > can sort by name z->a 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 12;"
+      style="z-index: 13;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -3023,7 +3538,7 @@ exports[`Authors > can sort by name z->a 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 13;"
+      style="z-index: 14;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -3113,7 +3628,7 @@ exports[`Authors > can sort by name z->a 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 14;"
+      style="z-index: 15;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -3189,7 +3704,7 @@ exports[`Authors > can sort by name z->a 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 15;"
+      style="z-index: 16;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -3229,6 +3744,41 @@ exports[`Authors > can sort by name z->a 1`] = `
             2
           </div>
         </li>
+        <li
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+          >
+            <div
+              class="w-full"
+            >
+              <svg
+                fill="var(--bg-avatar-default)"
+                viewBox="0 0 16 16"
+                width="100%"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </div>
+          </div>
+          <a
+            class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+            href="/authors/marc-eliot/"
+          >
+            Marc Eliot
+          </a>
+          <div
+            class="ml-auto text-nowrap font-sans text-xs text-subtle"
+          >
+            1
+          </div>
+        </li>
       </ol>
     </div>
   </li>
@@ -3237,7 +3787,7 @@ exports[`Authors > can sort by name z->a 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 16;"
+      style="z-index: 17;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -3292,7 +3842,7 @@ exports[`Authors > can sort by name z->a 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 17;"
+      style="z-index: 18;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -3410,7 +3960,7 @@ exports[`Authors > can sort by name z->a 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 18;"
+      style="z-index: 19;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -3460,6 +4010,96 @@ exports[`Authors > can sort by name z->a 1`] = `
       </ol>
     </div>
   </li>
+  <li
+    class="block"
+  >
+    <div
+      class="pt-0 text-md"
+      style="z-index: 20;"
+    >
+      <div
+        class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+      >
+        A
+      </div>
+    </div>
+    <div
+      class="bg-subtle"
+    >
+      <ol>
+        <li
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+          >
+            <div
+              class="w-full"
+            >
+              <svg
+                fill="var(--bg-avatar-default)"
+                viewBox="0 0 16 16"
+                width="100%"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </div>
+          </div>
+          <a
+            class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+            href="/authors/nigel-andrews/"
+          >
+            Nigel Andrews
+          </a>
+          <div
+            class="ml-auto text-nowrap font-sans text-xs text-subtle"
+          >
+            1
+          </div>
+        </li>
+        <li
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+          >
+            <div
+              class="w-full"
+            >
+              <svg
+                fill="var(--bg-avatar-default)"
+                viewBox="0 0 16 16"
+                width="100%"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </div>
+          </div>
+          <a
+            class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+            href="/authors/poul-anderson/"
+          >
+            Poul Anderson
+          </a>
+          <div
+            class="ml-auto text-nowrap font-sans text-xs text-subtle"
+          >
+            1
+          </div>
+        </li>
+      </ol>
+    </div>
+  </li>
 </ol>
 `;
 
@@ -3482,6 +4122,76 @@ exports[`Authors > can sort by review count asc 1`] = `
       class="bg-subtle"
     >
       <ol>
+        <li
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+          >
+            <div
+              class="w-full"
+            >
+              <svg
+                fill="var(--bg-avatar-default)"
+                viewBox="0 0 16 16"
+                width="100%"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </div>
+          </div>
+          <a
+            class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+            href="/authors/poul-anderson/"
+          >
+            Poul Anderson
+          </a>
+          <div
+            class="ml-auto text-nowrap font-sans text-xs text-subtle"
+          >
+            1
+          </div>
+        </li>
+        <li
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+          >
+            <div
+              class="w-full"
+            >
+              <svg
+                fill="var(--bg-avatar-default)"
+                viewBox="0 0 16 16"
+                width="100%"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </div>
+          </div>
+          <a
+            class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+            href="/authors/nigel-andrews/"
+          >
+            Nigel Andrews
+          </a>
+          <div
+            class="ml-auto text-nowrap font-sans text-xs text-subtle"
+          >
+            1
+          </div>
+        </li>
         <li
           class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
         >
@@ -3643,6 +4353,41 @@ exports[`Authors > can sort by review count asc 1`] = `
             href="/authors/dave-draper/"
           >
             Dave Draper
+          </a>
+          <div
+            class="ml-auto text-nowrap font-sans text-xs text-subtle"
+          >
+            1
+          </div>
+        </li>
+        <li
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+          >
+            <div
+              class="w-full"
+            >
+              <svg
+                fill="var(--bg-avatar-default)"
+                viewBox="0 0 16 16"
+                width="100%"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </div>
+          </div>
+          <a
+            class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+            href="/authors/marc-eliot/"
+          >
+            Marc Eliot
           </a>
           <div
             class="ml-auto text-nowrap font-sans text-xs text-subtle"
@@ -3885,6 +4630,41 @@ exports[`Authors > can sort by review count asc 1`] = `
           </div>
           <a
             class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+            href="/authors/george-jacobs/"
+          >
+            George Jacobs
+          </a>
+          <div
+            class="ml-auto text-nowrap font-sans text-xs text-subtle"
+          >
+            1
+          </div>
+        </li>
+        <li
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+          >
+            <div
+              class="w-full"
+            >
+              <svg
+                fill="var(--bg-avatar-default)"
+                viewBox="0 0 16 16"
+                width="100%"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </div>
+          </div>
+          <a
+            class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
             href="/authors/joe-kenda/"
           >
             Joe Kenda
@@ -3923,6 +4703,41 @@ exports[`Authors > can sort by review count asc 1`] = `
             href="/authors/kathe-koja/"
           >
             Kathe Koja
+          </a>
+          <div
+            class="ml-auto text-nowrap font-sans text-xs text-subtle"
+          >
+            1
+          </div>
+        </li>
+        <li
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+          >
+            <div
+              class="w-full"
+            >
+              <svg
+                fill="var(--bg-avatar-default)"
+                viewBox="0 0 16 16"
+                width="100%"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </div>
+          </div>
+          <a
+            class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+            href="/authors/edward-lee/"
+          >
+            Edward Lee
           </a>
           <div
             class="ml-auto text-nowrap font-sans text-xs text-subtle"
@@ -4063,6 +4878,41 @@ exports[`Authors > can sort by review count asc 1`] = `
             href="/authors/john-mcphee/"
           >
             John McPhee
+          </a>
+          <div
+            class="ml-auto text-nowrap font-sans text-xs text-subtle"
+          >
+            1
+          </div>
+        </li>
+        <li
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+          >
+            <div
+              class="w-full"
+            >
+              <svg
+                fill="var(--bg-avatar-default)"
+                viewBox="0 0 16 16"
+                width="100%"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </div>
+          </div>
+          <a
+            class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+            href="/authors/david-miller/"
+          >
+            David Miller
           </a>
           <div
             class="ml-auto text-nowrap font-sans text-xs text-subtle"
@@ -4426,6 +5276,41 @@ exports[`Authors > can sort by review count asc 1`] = `
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
           >
+            <div
+              class="w-full"
+            >
+              <svg
+                fill="var(--bg-avatar-default)"
+                viewBox="0 0 16 16"
+                width="100%"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </div>
+          </div>
+          <a
+            class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+            href="/authors/william-stadiem/"
+          >
+            William Stadiem
+          </a>
+          <div
+            class="ml-auto text-nowrap font-sans text-xs text-subtle"
+          >
+            1
+          </div>
+        </li>
+        <li
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+          >
             <img
               alt=""
               class="w-full"
@@ -4546,6 +5431,41 @@ exports[`Authors > can sort by review count asc 1`] = `
             href="/authors/a-jack-ulrich/"
           >
             A. Jack Ulrich
+          </a>
+          <div
+            class="ml-auto text-nowrap font-sans text-xs text-subtle"
+          >
+            1
+          </div>
+        </li>
+        <li
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+          >
+            <div
+              class="w-full"
+            >
+              <svg
+                fill="var(--bg-avatar-default)"
+                viewBox="0 0 16 16"
+                width="100%"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </div>
+          </div>
+          <a
+            class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+            href="/authors/karl-edward-wagner/"
+          >
+            Karl Edward Wagner
           </a>
           <div
             class="ml-auto text-nowrap font-sans text-xs text-subtle"
@@ -4746,34 +5666,6 @@ exports[`Authors > can sort by review count asc 1`] = `
               class="w-full"
               height="80"
               loading="lazy"
-              src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fstephen-king.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
-              srcset="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fstephen-king.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fstephen-king.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&h=160&q=80&f=avif 2x"
-              width="80"
-            />
-          </div>
-          <a
-            class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
-            href="/authors/stephen-king/"
-          >
-            Stephen King
-          </a>
-          <div
-            class="ml-auto text-nowrap font-sans text-xs text-subtle"
-          >
-            5
-          </div>
-        </li>
-        <li
-          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
-        >
-          <div
-            class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
-          >
-            <img
-              alt=""
-              class="w-full"
-              height="80"
-              loading="lazy"
               src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Frichard-laymon.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
               srcset="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Frichard-laymon.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Frichard-laymon.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&h=160&q=80&f=avif 2x"
               width="80"
@@ -4788,7 +5680,35 @@ exports[`Authors > can sort by review count asc 1`] = `
           <div
             class="ml-auto text-nowrap font-sans text-xs text-subtle"
           >
-            5
+            9
+          </div>
+        </li>
+        <li
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+          >
+            <img
+              alt=""
+              class="w-full"
+              height="80"
+              loading="lazy"
+              src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fstephen-king.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fstephen-king.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=80&h=80&q=80&f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fstephen-king.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&w=160&h=160&q=80&f=avif 2x"
+              width="80"
+            />
+          </div>
+          <a
+            class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+            href="/authors/stephen-king/"
+          >
+            Stephen King
+          </a>
+          <div
+            class="ml-auto text-nowrap font-sans text-xs text-subtle"
+          >
+            10
           </div>
         </li>
         <li
@@ -4897,7 +5817,7 @@ exports[`Authors > can sort by review count desc 1`] = `
           <div
             class="ml-auto text-nowrap font-sans text-xs text-subtle"
           >
-            5
+            10
           </div>
         </li>
         <li
@@ -4925,7 +5845,7 @@ exports[`Authors > can sort by review count desc 1`] = `
           <div
             class="ml-auto text-nowrap font-sans text-xs text-subtle"
           >
-            5
+            9
           </div>
         </li>
         <li
@@ -5100,6 +6020,76 @@ exports[`Authors > can sort by review count desc 1`] = `
           </div>
           <a
             class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+            href="/authors/poul-anderson/"
+          >
+            Poul Anderson
+          </a>
+          <div
+            class="ml-auto text-nowrap font-sans text-xs text-subtle"
+          >
+            1
+          </div>
+        </li>
+        <li
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+          >
+            <div
+              class="w-full"
+            >
+              <svg
+                fill="var(--bg-avatar-default)"
+                viewBox="0 0 16 16"
+                width="100%"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </div>
+          </div>
+          <a
+            class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+            href="/authors/nigel-andrews/"
+          >
+            Nigel Andrews
+          </a>
+          <div
+            class="ml-auto text-nowrap font-sans text-xs text-subtle"
+          >
+            1
+          </div>
+        </li>
+        <li
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+          >
+            <div
+              class="w-full"
+            >
+              <svg
+                fill="var(--bg-avatar-default)"
+                viewBox="0 0 16 16"
+                width="100%"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </div>
+          </div>
+          <a
+            class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
             href="/authors/leif-babin/"
           >
             Leif Babin
@@ -5236,6 +6226,41 @@ exports[`Authors > can sort by review count desc 1`] = `
             href="/authors/dave-draper/"
           >
             Dave Draper
+          </a>
+          <div
+            class="ml-auto text-nowrap font-sans text-xs text-subtle"
+          >
+            1
+          </div>
+        </li>
+        <li
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+          >
+            <div
+              class="w-full"
+            >
+              <svg
+                fill="var(--bg-avatar-default)"
+                viewBox="0 0 16 16"
+                width="100%"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </div>
+          </div>
+          <a
+            class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+            href="/authors/marc-eliot/"
+          >
+            Marc Eliot
           </a>
           <div
             class="ml-auto text-nowrap font-sans text-xs text-subtle"
@@ -5478,6 +6503,41 @@ exports[`Authors > can sort by review count desc 1`] = `
           </div>
           <a
             class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+            href="/authors/george-jacobs/"
+          >
+            George Jacobs
+          </a>
+          <div
+            class="ml-auto text-nowrap font-sans text-xs text-subtle"
+          >
+            1
+          </div>
+        </li>
+        <li
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+          >
+            <div
+              class="w-full"
+            >
+              <svg
+                fill="var(--bg-avatar-default)"
+                viewBox="0 0 16 16"
+                width="100%"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </div>
+          </div>
+          <a
+            class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
             href="/authors/joe-kenda/"
           >
             Joe Kenda
@@ -5516,6 +6576,41 @@ exports[`Authors > can sort by review count desc 1`] = `
             href="/authors/kathe-koja/"
           >
             Kathe Koja
+          </a>
+          <div
+            class="ml-auto text-nowrap font-sans text-xs text-subtle"
+          >
+            1
+          </div>
+        </li>
+        <li
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+          >
+            <div
+              class="w-full"
+            >
+              <svg
+                fill="var(--bg-avatar-default)"
+                viewBox="0 0 16 16"
+                width="100%"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </div>
+          </div>
+          <a
+            class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+            href="/authors/edward-lee/"
+          >
+            Edward Lee
           </a>
           <div
             class="ml-auto text-nowrap font-sans text-xs text-subtle"
@@ -5656,6 +6751,41 @@ exports[`Authors > can sort by review count desc 1`] = `
             href="/authors/john-mcphee/"
           >
             John McPhee
+          </a>
+          <div
+            class="ml-auto text-nowrap font-sans text-xs text-subtle"
+          >
+            1
+          </div>
+        </li>
+        <li
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+          >
+            <div
+              class="w-full"
+            >
+              <svg
+                fill="var(--bg-avatar-default)"
+                viewBox="0 0 16 16"
+                width="100%"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </div>
+          </div>
+          <a
+            class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+            href="/authors/david-miller/"
+          >
+            David Miller
           </a>
           <div
             class="ml-auto text-nowrap font-sans text-xs text-subtle"
@@ -6019,6 +7149,41 @@ exports[`Authors > can sort by review count desc 1`] = `
           <div
             class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
           >
+            <div
+              class="w-full"
+            >
+              <svg
+                fill="var(--bg-avatar-default)"
+                viewBox="0 0 16 16"
+                width="100%"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </div>
+          </div>
+          <a
+            class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+            href="/authors/william-stadiem/"
+          >
+            William Stadiem
+          </a>
+          <div
+            class="ml-auto text-nowrap font-sans text-xs text-subtle"
+          >
+            1
+          </div>
+        </li>
+        <li
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+          >
             <img
               alt=""
               class="w-full"
@@ -6139,6 +7304,41 @@ exports[`Authors > can sort by review count desc 1`] = `
             href="/authors/a-jack-ulrich/"
           >
             A. Jack Ulrich
+          </a>
+          <div
+            class="ml-auto text-nowrap font-sans text-xs text-subtle"
+          >
+            1
+          </div>
+        </li>
+        <li
+          class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+          >
+            <div
+              class="w-full"
+            >
+              <svg
+                fill="var(--bg-avatar-default)"
+                viewBox="0 0 16 16"
+                width="100%"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </div>
+          </div>
+          <a
+            class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+            href="/authors/karl-edward-wagner/"
+          >
+            Karl Edward Wagner
           </a>
           <div
             class="ml-auto text-nowrap font-sans text-xs text-subtle"

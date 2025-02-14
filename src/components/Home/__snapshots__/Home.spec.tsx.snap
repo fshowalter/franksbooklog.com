@@ -61,16 +61,6 @@ exports[`Home > matches snapshot 1`] = `
               >
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
-                  href="/readings/"
-                >
-                  Reading Log
-                </a>
-              </li>
-              <li
-                class="block whitespace-nowrap tracking-serif-wide"
-              >
-                <a
-                  class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                   href="/authors/"
                 >
                   Authors
@@ -81,9 +71,9 @@ exports[`Home > matches snapshot 1`] = `
               >
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
-                  href="/shelf/"
+                  href="/readings/"
                 >
-                  Shelf
+                  Reading Log
                 </a>
               </li>
             </ul>
@@ -164,6 +154,15 @@ exports[`Home > matches snapshot 1`] = `
               class="block w-1/2 whitespace-nowrap text-2xl"
             >
               <a
+                href="/authors/"
+              >
+                Authors
+              </a>
+            </li>
+            <li
+              class="block w-1/2 whitespace-nowrap text-2xl"
+            >
+              <a
                 href="/readings/"
               >
                 Reading Log
@@ -181,24 +180,6 @@ exports[`Home > matches snapshot 1`] = `
                   </a>
                 </li>
               </ol>
-            </li>
-            <li
-              class="block w-1/2 whitespace-nowrap text-2xl"
-            >
-              <a
-                href="/authors/"
-              >
-                Authors
-              </a>
-            </li>
-            <li
-              class="block w-1/2 whitespace-nowrap text-2xl"
-            >
-              <a
-                href="/shelf/"
-              >
-                Shelf
-              </a>
             </li>
           </ul>
         </div>
@@ -955,8 +936,8 @@ exports[`Home > matches snapshot 1`] = `
                 height="372"
                 loading="lazy"
                 sizes="(min-width: 1800px) 218px, (min-width: 1300px) calc(11.67vw + 10px), (min-width: 1260px) calc(-445vw + 5855px), (min-width: 900px) calc(19.12vw + 11px), (min-width: 600px) 27.5vw, calc(41.43vw + 8px)"
-                src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fshort-stories-volume-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
-                srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fshort-stories-volume-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=62&h=93&q=80&f=avif 62w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fshort-stories-volume-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=124&h=186&q=80&f=avif 124w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fshort-stories-volume-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 248w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fshort-stories-volume-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 496w"
+                src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
+                srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=62&h=93&q=80&f=avif 62w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=124&h=186&q=80&f=avif 124w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 248w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 496w"
                 style="aspect-ratio: 0.66666667;"
                 width="248"
               />
@@ -973,16 +954,16 @@ exports[`Home > matches snapshot 1`] = `
                 >
                   <a
                     class="inline-block text-accent decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:opacity-0 hover:before:opacity-0"
-                    href="/reviews/roadside-pickup-by-richard-laymon/"
+                    href="/reviews/fright-night-by-john-skipp-craig-spector/"
                     rel="canonical"
                   >
-                    Roadside Pickup
+                    Fright Night
                   </a>
                 </div>
                 <div
                   class="font-sans text-xxs font-light uppercase leading-8 tracking-wide text-subtle"
                 >
-                  1974 | Short Story
+                  1985 | Novel
                 </div>
                 <p
                   class="text-center text-base font-light text-subtle"
@@ -991,20 +972,26 @@ exports[`Home > matches snapshot 1`] = `
                   <span
                     class="font-normal text-default"
                   >
-                    Richard Laymon
+                    John Skipp
+                  </span>
+                   and 
+                  <span
+                    class="font-normal text-default"
+                  >
+                    Craig Spector
                   </span>
                 </p>
                  
                 <picture>
                   <source
                     media="(prefers-color-scheme: dark)"
-                    srcset="/svg/2-half-stars-dark.svg"
+                    srcset="/svg/1-star-dark.svg"
                   />
                   <img
-                    alt="C-: 2.5 stars (out of 5)"
+                    alt="F: 1 star (out of 5)"
                     class="mt-2"
                     height="18"
-                    src="/svg/2-half-stars.svg"
+                    src="/svg/1-star.svg"
                     width="90"
                   />
                 </picture>
@@ -1090,6 +1077,16 @@ exports[`Home > matches snapshot 1`] = `
             >
               <a
                 class="hover:text-accent"
+                href="/authors/"
+              >
+                Authors
+              </a>
+            </li>
+            <li
+              class="block w-1/2 whitespace-nowrap text-2xl"
+            >
+              <a
+                class="hover:text-accent"
                 href="/readings/"
               >
                 Reading Log
@@ -1108,26 +1105,6 @@ exports[`Home > matches snapshot 1`] = `
                   </a>
                 </li>
               </ol>
-            </li>
-            <li
-              class="block w-1/2 whitespace-nowrap text-2xl"
-            >
-              <a
-                class="hover:text-accent"
-                href="/authors/"
-              >
-                Authors
-              </a>
-            </li>
-            <li
-              class="block w-1/2 whitespace-nowrap text-2xl"
-            >
-              <a
-                class="hover:text-accent"
-                href="/shelf/"
-              >
-                Shelf
-              </a>
             </li>
           </ul>
           <a

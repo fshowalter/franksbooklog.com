@@ -11,10 +11,12 @@ export async function getProps(slug: string): Promise<Props> {
   const { author, distinctKinds, distinctPublishedYears } =
     await getAuthorDetails(slug);
 
-  author.works.sort((a, b) => a.yearPublished.localeCompare(b.yearPublished));
+  author.reviewedWorks.sort((a, b) =>
+    a.yearPublished.localeCompare(b.yearPublished),
+  );
 
   const works = await Promise.all(
-    author.works.map(async (work) => {
+    author.reviewedWorks.map(async (work) => {
       const value: ListItemValue = {
         coverImageProps: await getFluidCoverImageProps(
           work,
@@ -24,7 +26,6 @@ export async function getProps(slug: string): Promise<Props> {
         gradeValue: work.gradeValue,
         kind: work.kind,
         otherAuthors: filterOtherAuthors(author, work),
-        reviewed: work.reviewed,
         slug: work.slug,
         sortTitle: work.sortTitle,
         title: work.title,
@@ -47,17 +48,11 @@ export async function getProps(slug: string): Promise<Props> {
 }
 
 function deck({
-  reviewedWorkCount,
-  shelfWorkCount,
+  reviewedWorks,
 }: {
-  reviewedWorkCount: Author["reviewedWorkCount"];
-  shelfWorkCount: Author["shelfWorkCount"];
+  reviewedWorks: Author["reviewedWorks"];
 }): string {
-  let shelfText = "";
-
-  if (shelfWorkCount > 0) {
-    shelfText = ` with ${shelfWorkCount} on the shelf`;
-  }
+  const reviewedWorkCount = reviewedWorks.length;
 
   let works = "works";
 
@@ -65,10 +60,13 @@ function deck({
     works = "work";
   }
 
-  return `Author of ${reviewedWorkCount} reviewed ${works}${shelfText}.`;
+  return `Author of ${reviewedWorkCount} reviewed ${works}.`;
 }
 
-function filterOtherAuthors(author: Author, work: Author["works"][number]) {
+function filterOtherAuthors(
+  author: Author,
+  work: Author["reviewedWorks"][number],
+) {
   return work.authors
     .filter((workAuthor) => {
       return author.name !== workAuthor.name;

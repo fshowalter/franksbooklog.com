@@ -1,6 +1,6 @@
 [
   {
-    "sequence": "2022-09-05-2022-08-29-1",
+    "sequence": "2022-09-05-1",
     "slug": "about-face-by-david-h-hackworth-julie-sherman",
     "title": "About Face",
     "subtitle": "The Odyssey of an American Warrior",
@@ -123,7 +123,7 @@
     "includedWorks": []
   },
   {
-    "sequence": "2022-04-18-2022-04-18-1",
+    "sequence": "2022-04-18-1",
     "slug": "altar-by-philip-fracassi",
     "title": "Altar",
     "subtitle": null,
@@ -290,6 +290,19 @@
         ]
       },
       {
+        "title": "Beware!",
+        "kind": "Novel",
+        "yearPublished": "1985",
+        "slug": "beware-by-richard-laymon",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Richard Laymon"
+          }
+        ]
+      },
+      {
         "title": "The Big Sleep",
         "kind": "Novel",
         "yearPublished": "1939",
@@ -303,28 +316,15 @@
         ]
       },
       {
-        "title": "Brother Iron, Sister Steel",
-        "kind": "Nonfiction",
-        "yearPublished": "2001",
-        "slug": "brother-iron-sister-steel-by-dave-draper",
-        "grade": "C",
+        "title": "The Black Train",
+        "kind": "Novel",
+        "yearPublished": "2009",
+        "slug": "the-black-train-by-edward-lee",
+        "grade": "D+",
         "includedInSlugs": [],
         "authors": [
           {
-            "name": "Dave Draper"
-          }
-        ]
-      },
-      {
-        "title": "Can't Hurt Me",
-        "kind": "Nonfiction",
-        "yearPublished": "2018",
-        "slug": "cant-hurt-me-by-david-goggins",
-        "grade": "B",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "David Goggins"
+            "name": "Edward Lee"
           }
         ]
       }
@@ -332,7 +332,7 @@
     "includedWorks": []
   },
   {
-    "sequence": "2022-05-07-2022-04-17-2",
+    "sequence": "2022-05-07-2",
     "slug": "behold-the-void-by-philip-fracassi",
     "title": "Behold the Void",
     "subtitle": null,
@@ -503,6 +503,19 @@
         ]
       },
       {
+        "title": "Beware!",
+        "kind": "Novel",
+        "yearPublished": "1985",
+        "slug": "beware-by-richard-laymon",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Richard Laymon"
+          }
+        ]
+      },
+      {
         "title": "The Big Sleep",
         "kind": "Novel",
         "yearPublished": "1939",
@@ -516,28 +529,15 @@
         ]
       },
       {
-        "title": "Brother Iron, Sister Steel",
-        "kind": "Nonfiction",
-        "yearPublished": "2001",
-        "slug": "brother-iron-sister-steel-by-dave-draper",
-        "grade": "C",
+        "title": "The Black Train",
+        "kind": "Novel",
+        "yearPublished": "2009",
+        "slug": "the-black-train-by-edward-lee",
+        "grade": "D+",
         "includedInSlugs": [],
         "authors": [
           {
-            "name": "Dave Draper"
-          }
-        ]
-      },
-      {
-        "title": "Can't Hurt Me",
-        "kind": "Nonfiction",
-        "yearPublished": "2018",
-        "slug": "cant-hurt-me-by-david-goggins",
-        "grade": "B",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "David Goggins"
+            "name": "Edward Lee"
           }
         ]
       }
@@ -663,37 +663,141 @@
     ]
   },
   {
-    "sequence": "2022-03-06-2022-03-05-1",
-    "slug": "brother-iron-sister-steel-by-dave-draper",
-    "title": "Brother Iron, Sister Steel",
+    "sequence": "2014-06-27-1",
+    "slug": "beware-by-richard-laymon",
+    "title": "Beware!",
     "subtitle": null,
-    "sortTitle": "Brother Iron, Sister Steel",
-    "yearPublished": "2001",
+    "sortTitle": "Beware!",
+    "yearPublished": "1985",
     "grade": "C",
     "gradeValue": 6,
-    "kind": "Nonfiction",
-    "date": "2022-03-06",
+    "kind": "Novel",
+    "date": "2014-06-27",
     "authors": [
       {
-        "slug": "dave-draper",
+        "slug": "richard-laymon",
         "notes": null,
-        "name": "Dave Draper",
-        "sortName": "Draper, Dave"
+        "name": "Richard Laymon",
+        "sortName": "Laymon, Richard"
       }
     ],
     "readings": [
       {
         "sequence": 1,
-        "date": "2022-03-06",
+        "date": "2014-06-27",
         "isAudiobook": false,
         "abandoned": false,
-        "readingTime": 2
+        "readingTime": 10
       }
     ],
     "includedInSlugs": [],
-    "yearReviewed": 2022,
-    "moreByAuthors": [],
+    "yearReviewed": 2014,
+    "moreByAuthors": [
+      {
+        "name": "Richard Laymon",
+        "slug": "richard-laymon",
+        "works": [
+          {
+            "title": "The Woods Are Dark",
+            "kind": "Novel",
+            "yearPublished": "1981",
+            "slug": "the-woods-are-dark-by-richard-laymon",
+            "grade": "C+",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Richard Laymon"
+              }
+            ]
+          },
+          {
+            "title": "Out Are the Lights",
+            "kind": "Novel",
+            "yearPublished": "1982",
+            "slug": "out-are-the-lights-by-richard-laymon",
+            "grade": "C-",
+            "includedInSlugs": [
+              "out-are-the-lights-and-other-tales-by-richard-laymon"
+            ],
+            "authors": [
+              {
+                "name": "Richard Laymon"
+              }
+            ]
+          },
+          {
+            "title": "The Intruder",
+            "kind": "Short Story",
+            "yearPublished": "1984",
+            "slug": "the-intruder-by-richard-laymon",
+            "grade": "C",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Richard Laymon"
+              }
+            ]
+          },
+          {
+            "title": "The Last Hand",
+            "kind": "Short Story",
+            "yearPublished": "1985",
+            "slug": "the-last-hand-by-richard-laymon",
+            "grade": "D",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Richard Laymon"
+              }
+            ]
+          },
+          {
+            "title": "Tread Softly",
+            "kind": "Novel",
+            "yearPublished": "1987",
+            "slug": "tread-softly-by-richard-laymon",
+            "grade": "C",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Richard Laymon"
+              }
+            ]
+          },
+          {
+            "title": "Desert Pickup",
+            "kind": "Short Story",
+            "yearPublished": "1970",
+            "slug": "desert-pickup-by-richard-laymon",
+            "grade": "C-",
+            "includedInSlugs": [
+              "short-stories-volume-one-by-richard-laymon"
+            ],
+            "authors": [
+              {
+                "name": "Richard Laymon"
+              }
+            ]
+          }
+        ]
+      }
+    ],
     "moreReviews": [
+      {
+        "title": "Altar",
+        "kind": "Short Story",
+        "yearPublished": "2016",
+        "slug": "altar-by-philip-fracassi",
+        "grade": "A-",
+        "includedInSlugs": [
+          "behold-the-void-by-philip-fracassi"
+        ],
+        "authors": [
+          {
+            "name": "Philip Fracassi"
+          }
+        ]
+      },
       {
         "title": "The Baby Farmer",
         "kind": "Short Story",
@@ -736,6 +840,219 @@
         ]
       },
       {
+        "title": "The Black Train",
+        "kind": "Novel",
+        "yearPublished": "2009",
+        "slug": "the-black-train-by-edward-lee",
+        "grade": "D+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Edward Lee"
+          }
+        ]
+      },
+      {
+        "title": "Brain Wave",
+        "kind": "Novel",
+        "yearPublished": "1954",
+        "slug": "brain-wave-by-poul-anderson",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Poul Anderson"
+          }
+        ]
+      }
+    ],
+    "includedWorks": []
+  },
+  {
+    "sequence": "2013-04-07-1",
+    "slug": "brain-wave-by-poul-anderson",
+    "title": "Brain Wave",
+    "subtitle": null,
+    "sortTitle": "Brain Wave",
+    "yearPublished": "1954",
+    "grade": "C",
+    "gradeValue": 6,
+    "kind": "Novel",
+    "date": "2013-04-07",
+    "authors": [
+      {
+        "slug": "poul-anderson",
+        "notes": null,
+        "name": "Poul Anderson",
+        "sortName": "Anderson, Poul"
+      }
+    ],
+    "readings": [
+      {
+        "sequence": 1,
+        "date": "2013-04-07",
+        "isAudiobook": false,
+        "abandoned": false,
+        "readingTime": 47
+      }
+    ],
+    "includedInSlugs": [],
+    "yearReviewed": 2013,
+    "moreByAuthors": [],
+    "moreReviews": [
+      {
+        "title": "Beware!",
+        "kind": "Novel",
+        "yearPublished": "1985",
+        "slug": "beware-by-richard-laymon",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Richard Laymon"
+          }
+        ]
+      },
+      {
+        "title": "The Big Sleep",
+        "kind": "Novel",
+        "yearPublished": "1939",
+        "slug": "the-big-sleep-by-raymond-chandler",
+        "grade": "C+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Raymond Chandler"
+          }
+        ]
+      },
+      {
+        "title": "The Black Train",
+        "kind": "Novel",
+        "yearPublished": "2009",
+        "slug": "the-black-train-by-edward-lee",
+        "grade": "D+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Edward Lee"
+          }
+        ]
+      },
+      {
+        "title": "Brother Iron, Sister Steel",
+        "kind": "Nonfiction",
+        "yearPublished": "2001",
+        "slug": "brother-iron-sister-steel-by-dave-draper",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Dave Draper"
+          }
+        ]
+      },
+      {
+        "title": "Can't Hurt Me",
+        "kind": "Nonfiction",
+        "yearPublished": "2018",
+        "slug": "cant-hurt-me-by-david-goggins",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "David Goggins"
+          }
+        ]
+      },
+      {
+        "title": "Carrie",
+        "kind": "Novel",
+        "yearPublished": "1974",
+        "slug": "carrie-by-stephen-king",
+        "grade": "B-",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Stephen King"
+          }
+        ]
+      }
+    ],
+    "includedWorks": []
+  },
+  {
+    "sequence": "2022-03-06-1",
+    "slug": "brother-iron-sister-steel-by-dave-draper",
+    "title": "Brother Iron, Sister Steel",
+    "subtitle": null,
+    "sortTitle": "Brother Iron, Sister Steel",
+    "yearPublished": "2001",
+    "grade": "C",
+    "gradeValue": 6,
+    "kind": "Nonfiction",
+    "date": "2022-03-06",
+    "authors": [
+      {
+        "slug": "dave-draper",
+        "notes": null,
+        "name": "Dave Draper",
+        "sortName": "Draper, Dave"
+      }
+    ],
+    "readings": [
+      {
+        "sequence": 1,
+        "date": "2022-03-06",
+        "isAudiobook": false,
+        "abandoned": false,
+        "readingTime": 2
+      }
+    ],
+    "includedInSlugs": [],
+    "yearReviewed": 2022,
+    "moreByAuthors": [],
+    "moreReviews": [
+      {
+        "title": "The Big Sleep",
+        "kind": "Novel",
+        "yearPublished": "1939",
+        "slug": "the-big-sleep-by-raymond-chandler",
+        "grade": "C+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Raymond Chandler"
+          }
+        ]
+      },
+      {
+        "title": "The Black Train",
+        "kind": "Novel",
+        "yearPublished": "2009",
+        "slug": "the-black-train-by-edward-lee",
+        "grade": "D+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Edward Lee"
+          }
+        ]
+      },
+      {
+        "title": "Brain Wave",
+        "kind": "Novel",
+        "yearPublished": "1954",
+        "slug": "brain-wave-by-poul-anderson",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Poul Anderson"
+          }
+        ]
+      },
+      {
         "title": "Can't Hurt Me",
         "kind": "Nonfiction",
         "yearPublished": "2018",
@@ -762,15 +1079,15 @@
         ]
       },
       {
-        "title": "Casino Royale",
-        "kind": "Novel",
-        "yearPublished": "1953",
-        "slug": "casino-royale-by-ian-fleming",
-        "grade": "B-",
+        "title": "Cary Grant",
+        "kind": "Nonfiction",
+        "yearPublished": "2004",
+        "slug": "cary-grant-by-marc-eliot",
+        "grade": "C",
         "includedInSlugs": [],
         "authors": [
           {
-            "name": "Ian Fleming"
+            "name": "Marc Eliot"
           }
         ]
       }
@@ -778,7 +1095,7 @@
     "includedWorks": []
   },
   {
-    "sequence": "2022-10-13-2022-10-04-1",
+    "sequence": "2022-10-13-1",
     "slug": "cant-hurt-me-by-david-goggins",
     "title": "Can't Hurt Me",
     "subtitle": "Master Your Mind and Defy the Odds",
@@ -810,28 +1127,28 @@
     "moreByAuthors": [],
     "moreReviews": [
       {
-        "title": "Behold the Void",
-        "kind": "Collection",
-        "yearPublished": "2017",
-        "slug": "behold-the-void-by-philip-fracassi",
-        "grade": "B+",
+        "title": "The Black Train",
+        "kind": "Novel",
+        "yearPublished": "2009",
+        "slug": "the-black-train-by-edward-lee",
+        "grade": "D+",
         "includedInSlugs": [],
         "authors": [
           {
-            "name": "Philip Fracassi"
+            "name": "Edward Lee"
           }
         ]
       },
       {
-        "title": "The Big Sleep",
+        "title": "Brain Wave",
         "kind": "Novel",
-        "yearPublished": "1939",
-        "slug": "the-big-sleep-by-raymond-chandler",
-        "grade": "C+",
+        "yearPublished": "1954",
+        "slug": "brain-wave-by-poul-anderson",
+        "grade": "C",
         "includedInSlugs": [],
         "authors": [
           {
-            "name": "Raymond Chandler"
+            "name": "Poul Anderson"
           }
         ]
       },
@@ -862,6 +1179,19 @@
         ]
       },
       {
+        "title": "Cary Grant",
+        "kind": "Nonfiction",
+        "yearPublished": "2004",
+        "slug": "cary-grant-by-marc-eliot",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Marc Eliot"
+          }
+        ]
+      },
+      {
         "title": "Casino Royale",
         "kind": "Novel",
         "yearPublished": "1953",
@@ -873,25 +1203,12 @@
             "name": "Ian Fleming"
           }
         ]
-      },
-      {
-        "title": "The Cellar",
-        "kind": "Novel",
-        "yearPublished": "1980",
-        "slug": "the-cellar-by-richard-laymon",
-        "grade": "C+",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Richard Laymon"
-          }
-        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": "2022-09-19-2022-09-09-1",
+    "sequence": "2022-09-19-1",
     "slug": "carrie-by-stephen-king",
     "title": "Carrie",
     "subtitle": null,
@@ -926,10 +1243,10 @@
         "slug": "stephen-king",
         "works": [
           {
-            "title": "The Shining",
+            "title": "Cujo",
             "kind": "Novel",
-            "yearPublished": "1977",
-            "slug": "the-shining-by-stephen-king",
+            "yearPublished": "1981",
+            "slug": "cujo-by-stephen-king",
             "grade": "B",
             "includedInSlugs": [],
             "authors": [
@@ -978,11 +1295,11 @@
             ]
           },
           {
-            "title": "The Shining",
+            "title": "Rage",
             "kind": "Novel",
-            "yearPublished": "1977",
-            "slug": "the-shining-by-stephen-king",
-            "grade": "B",
+            "yearPublished": "1976",
+            "slug": "rage-by-stephen-king",
+            "grade": "C",
             "includedInSlugs": [],
             "authors": [
               {
@@ -991,11 +1308,11 @@
             ]
           },
           {
-            "title": "On Writing",
-            "kind": "Nonfiction",
-            "yearPublished": "2000",
-            "slug": "on-writing-by-stephen-king",
-            "grade": "A-",
+            "title": "The Shining",
+            "kind": "Novel",
+            "yearPublished": "1977",
+            "slug": "the-shining-by-stephen-king",
+            "grade": "B",
             "includedInSlugs": [],
             "authors": [
               {
@@ -1008,15 +1325,15 @@
     ],
     "moreReviews": [
       {
-        "title": "The Big Sleep",
+        "title": "Brain Wave",
         "kind": "Novel",
-        "yearPublished": "1939",
-        "slug": "the-big-sleep-by-raymond-chandler",
-        "grade": "C+",
+        "yearPublished": "1954",
+        "slug": "brain-wave-by-poul-anderson",
+        "grade": "C",
         "includedInSlugs": [],
         "authors": [
           {
-            "name": "Raymond Chandler"
+            "name": "Poul Anderson"
           }
         ]
       },
@@ -1043,6 +1360,119 @@
         "authors": [
           {
             "name": "David Goggins"
+          }
+        ]
+      },
+      {
+        "title": "Cary Grant",
+        "kind": "Nonfiction",
+        "yearPublished": "2004",
+        "slug": "cary-grant-by-marc-eliot",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Marc Eliot"
+          }
+        ]
+      },
+      {
+        "title": "Casino Royale",
+        "kind": "Novel",
+        "yearPublished": "1953",
+        "slug": "casino-royale-by-ian-fleming",
+        "grade": "B-",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Ian Fleming"
+          }
+        ]
+      },
+      {
+        "title": "The Cellar",
+        "kind": "Novel",
+        "yearPublished": "1980",
+        "slug": "the-cellar-by-richard-laymon",
+        "grade": "C+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Richard Laymon"
+          }
+        ]
+      }
+    ],
+    "includedWorks": []
+  },
+  {
+    "sequence": "2012-05-31-1",
+    "slug": "cary-grant-by-marc-eliot",
+    "title": "Cary Grant",
+    "subtitle": "A Biography",
+    "sortTitle": "Cary Grant: A Biography",
+    "yearPublished": "2004",
+    "grade": "C",
+    "gradeValue": 6,
+    "kind": "Nonfiction",
+    "date": "2012-05-31",
+    "authors": [
+      {
+        "slug": "marc-eliot",
+        "notes": null,
+        "name": "Marc Eliot",
+        "sortName": "Eliot, Marc"
+      }
+    ],
+    "readings": [
+      {
+        "sequence": 1,
+        "date": "2012-05-31",
+        "isAudiobook": false,
+        "abandoned": false,
+        "readingTime": 17
+      }
+    ],
+    "includedInSlugs": [],
+    "yearReviewed": 2012,
+    "moreByAuthors": [],
+    "moreReviews": [
+      {
+        "title": "Brother Iron, Sister Steel",
+        "kind": "Nonfiction",
+        "yearPublished": "2001",
+        "slug": "brother-iron-sister-steel-by-dave-draper",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Dave Draper"
+          }
+        ]
+      },
+      {
+        "title": "Can't Hurt Me",
+        "kind": "Nonfiction",
+        "yearPublished": "2018",
+        "slug": "cant-hurt-me-by-david-goggins",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "David Goggins"
+          }
+        ]
+      },
+      {
+        "title": "Carrie",
+        "kind": "Novel",
+        "yearPublished": "1974",
+        "slug": "carrie-by-stephen-king",
+        "grade": "B-",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Stephen King"
           }
         ]
       },
@@ -1089,7 +1519,7 @@
     "includedWorks": []
   },
   {
-    "sequence": "2022-06-14-2022-06-08-1",
+    "sequence": "2022-06-14-2",
     "slug": "casino-royale-by-ian-fleming",
     "title": "Casino Royale",
     "subtitle": null,
@@ -1109,7 +1539,7 @@
     ],
     "readings": [
       {
-        "sequence": 1,
+        "sequence": 2,
         "date": "2022-06-14",
         "isAudiobook": false,
         "abandoned": false,
@@ -1120,19 +1550,6 @@
     "yearReviewed": 2022,
     "moreByAuthors": [],
     "moreReviews": [
-      {
-        "title": "Brother Iron, Sister Steel",
-        "kind": "Nonfiction",
-        "yearPublished": "2001",
-        "slug": "brother-iron-sister-steel-by-dave-draper",
-        "grade": "C",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Dave Draper"
-          }
-        ]
-      },
       {
         "title": "Can't Hurt Me",
         "kind": "Nonfiction",
@@ -1156,6 +1573,19 @@
         "authors": [
           {
             "name": "Stephen King"
+          }
+        ]
+      },
+      {
+        "title": "Cary Grant",
+        "kind": "Nonfiction",
+        "yearPublished": "2004",
+        "slug": "cary-grant-by-marc-eliot",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Marc Eliot"
           }
         ]
       },
@@ -1202,7 +1632,7 @@
     "includedWorks": []
   },
   {
-    "sequence": "2022-06-14-2022-05-21-1",
+    "sequence": "2022-06-14-1",
     "slug": "churchill-by-andrew-roberts",
     "title": "Churchill",
     "subtitle": "Walking with Destiny",
@@ -1234,15 +1664,15 @@
     "moreByAuthors": [],
     "moreReviews": [
       {
-        "title": "Carrie",
-        "kind": "Novel",
-        "yearPublished": "1974",
-        "slug": "carrie-by-stephen-king",
-        "grade": "B-",
+        "title": "Cary Grant",
+        "kind": "Nonfiction",
+        "yearPublished": "2004",
+        "slug": "cary-grant-by-marc-eliot",
+        "grade": "C",
         "includedInSlugs": [],
         "authors": [
           {
-            "name": "Stephen King"
+            "name": "Marc Eliot"
           }
         ]
       },
@@ -1317,7 +1747,7 @@
     "includedWorks": []
   },
   {
-    "sequence": "2022-04-20-2022-04-20-1",
+    "sequence": "2022-04-20-1",
     "slug": "coffin-by-philip-fracassi",
     "title": "Coffin",
     "subtitle": null,
@@ -1511,15 +1941,15 @@
         ]
       },
       {
-        "title": "Cured",
-        "kind": "Nonfiction",
-        "yearPublished": "2016",
-        "slug": "cured-by-lol-tolhurst",
-        "grade": "A-",
+        "title": "Cujo",
+        "kind": "Novel",
+        "yearPublished": "1981",
+        "slug": "cujo-by-stephen-king",
+        "grade": "B",
         "includedInSlugs": [],
         "authors": [
           {
-            "name": "Lol Tolhurst"
+            "name": "Stephen King"
           }
         ]
       }
@@ -1527,7 +1957,7 @@
     "includedWorks": []
   },
   {
-    "sequence": "2022-09-22-2022-09-21-1",
+    "sequence": "2022-09-22-1",
     "slug": "consider-this-by-chuck-palahniuk",
     "title": "Consider This",
     "subtitle": "Moments in My Writing Life After Which Everything Was Different",
@@ -1613,6 +2043,19 @@
         ]
       },
       {
+        "title": "Cujo",
+        "kind": "Novel",
+        "yearPublished": "1981",
+        "slug": "cujo-by-stephen-king",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Stephen King"
+          }
+        ]
+      },
+      {
         "title": "Cured",
         "kind": "Nonfiction",
         "yearPublished": "2016",
@@ -1624,54 +2067,126 @@
             "name": "Lol Tolhurst"
           }
         ]
-      },
-      {
-        "title": "The Dark Tunnel",
-        "kind": "Novel",
-        "yearPublished": "1944",
-        "slug": "the-dark-tunnel-by-ross-macdonald",
-        "grade": "D+",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Ross Macdonald"
-          }
-        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": "2022-07-18-2022-07-16-1",
-    "slug": "cured-by-lol-tolhurst",
-    "title": "Cured",
-    "subtitle": "The Tale of Two Imaginary Boys",
-    "sortTitle": "Cured: The Tale of Two Imaginary Boys",
-    "yearPublished": "2016",
-    "grade": "A-",
-    "gradeValue": 11,
-    "kind": "Nonfiction",
-    "date": "2022-07-18",
+    "sequence": "2014-06-17-4",
+    "slug": "cujo-by-stephen-king",
+    "title": "Cujo",
+    "subtitle": null,
+    "sortTitle": "Cujo",
+    "yearPublished": "1981",
+    "grade": "B",
+    "gradeValue": 9,
+    "kind": "Novel",
+    "date": "2014-06-17",
     "authors": [
       {
-        "slug": "lol-tolhurst",
+        "slug": "stephen-king",
         "notes": null,
-        "name": "Lol Tolhurst",
-        "sortName": "Tolhurst, Lol"
+        "name": "Stephen King",
+        "sortName": "King, Stephen"
       }
     ],
     "readings": [
       {
-        "sequence": 1,
-        "date": "2022-07-18",
-        "isAudiobook": true,
+        "sequence": 4,
+        "date": "2014-06-17",
+        "isAudiobook": false,
         "abandoned": false,
-        "readingTime": 3
+        "readingTime": 9
       }
     ],
     "includedInSlugs": [],
-    "yearReviewed": 2022,
-    "moreByAuthors": [],
+    "yearReviewed": 2014,
+    "moreByAuthors": [
+      {
+        "name": "Stephen King",
+        "slug": "stephen-king",
+        "works": [
+          {
+            "title": "The Long Walk",
+            "kind": "Novel",
+            "yearPublished": "1978",
+            "slug": "the-long-walk-by-stephen-king",
+            "grade": "D",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          },
+          {
+            "title": "Night Shift",
+            "kind": "Collection",
+            "yearPublished": "1978",
+            "slug": "night-shift-by-stephen-king",
+            "grade": "B",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          },
+          {
+            "title": "The Stand",
+            "kind": "Novel",
+            "yearPublished": "1978",
+            "slug": "the-stand-by-stephen-king",
+            "grade": "D",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          },
+          {
+            "title": "On Writing",
+            "kind": "Nonfiction",
+            "yearPublished": "2000",
+            "slug": "on-writing-by-stephen-king",
+            "grade": "A-",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          },
+          {
+            "title": "Doctor Sleep",
+            "kind": "Novel",
+            "yearPublished": "2013",
+            "slug": "doctor-sleep-by-stephen-king",
+            "grade": "C+",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          },
+          {
+            "title": "Carrie",
+            "kind": "Novel",
+            "yearPublished": "1974",
+            "slug": "carrie-by-stephen-king",
+            "grade": "B-",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          }
+        ]
+      }
+    ],
     "moreReviews": [
       {
         "title": "Coffin",
@@ -1711,6 +2226,234 @@
         "authors": [
           {
             "name": "Rick Rubin"
+          }
+        ]
+      },
+      {
+        "title": "Cured",
+        "kind": "Nonfiction",
+        "yearPublished": "2016",
+        "slug": "cured-by-lol-tolhurst",
+        "grade": "A-",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Lol Tolhurst"
+          }
+        ]
+      },
+      {
+        "title": "Dark Crusade",
+        "kind": "Novel",
+        "yearPublished": "1976",
+        "slug": "dark-crusade-by-karl-edward-wagner",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Karl Edward Wagner"
+          }
+        ]
+      },
+      {
+        "title": "The Dark Tunnel",
+        "kind": "Novel",
+        "yearPublished": "1944",
+        "slug": "the-dark-tunnel-by-ross-macdonald",
+        "grade": "D+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Ross Macdonald"
+          }
+        ]
+      }
+    ],
+    "includedWorks": []
+  },
+  {
+    "sequence": "2022-07-18-1",
+    "slug": "cured-by-lol-tolhurst",
+    "title": "Cured",
+    "subtitle": "The Tale of Two Imaginary Boys",
+    "sortTitle": "Cured: The Tale of Two Imaginary Boys",
+    "yearPublished": "2016",
+    "grade": "A-",
+    "gradeValue": 11,
+    "kind": "Nonfiction",
+    "date": "2022-07-18",
+    "authors": [
+      {
+        "slug": "lol-tolhurst",
+        "notes": null,
+        "name": "Lol Tolhurst",
+        "sortName": "Tolhurst, Lol"
+      }
+    ],
+    "readings": [
+      {
+        "sequence": 1,
+        "date": "2022-07-18",
+        "isAudiobook": true,
+        "abandoned": false,
+        "readingTime": 3
+      }
+    ],
+    "includedInSlugs": [],
+    "yearReviewed": 2022,
+    "moreByAuthors": [],
+    "moreReviews": [
+      {
+        "title": "Consider This",
+        "kind": "Nonfiction",
+        "yearPublished": "2020",
+        "slug": "consider-this-by-chuck-palahniuk",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Chuck Palahniuk"
+          }
+        ]
+      },
+      {
+        "title": "The Creative Act",
+        "kind": "Nonfiction",
+        "yearPublished": "2023",
+        "slug": "the-creative-act-by-rick-rubin",
+        "grade": "C+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Rick Rubin"
+          }
+        ]
+      },
+      {
+        "title": "Cujo",
+        "kind": "Novel",
+        "yearPublished": "1981",
+        "slug": "cujo-by-stephen-king",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Stephen King"
+          }
+        ]
+      },
+      {
+        "title": "Dark Crusade",
+        "kind": "Novel",
+        "yearPublished": "1976",
+        "slug": "dark-crusade-by-karl-edward-wagner",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Karl Edward Wagner"
+          }
+        ]
+      },
+      {
+        "title": "The Dark Tunnel",
+        "kind": "Novel",
+        "yearPublished": "1944",
+        "slug": "the-dark-tunnel-by-ross-macdonald",
+        "grade": "D+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Ross Macdonald"
+          }
+        ]
+      },
+      {
+        "title": "Desert Pickup",
+        "kind": "Short Story",
+        "yearPublished": "1970",
+        "slug": "desert-pickup-by-richard-laymon",
+        "grade": "C-",
+        "includedInSlugs": [
+          "short-stories-volume-one-by-richard-laymon"
+        ],
+        "authors": [
+          {
+            "name": "Richard Laymon"
+          }
+        ]
+      }
+    ],
+    "includedWorks": []
+  },
+  {
+    "sequence": "2012-05-18-1",
+    "slug": "dark-crusade-by-karl-edward-wagner",
+    "title": "Dark Crusade",
+    "subtitle": null,
+    "sortTitle": "Dark Crusade",
+    "yearPublished": "1976",
+    "grade": "C",
+    "gradeValue": 6,
+    "kind": "Novel",
+    "date": "2012-05-18",
+    "authors": [
+      {
+        "slug": "karl-edward-wagner",
+        "notes": null,
+        "name": "Karl Edward Wagner",
+        "sortName": "Wagner, Karl Edward"
+      }
+    ],
+    "readings": [
+      {
+        "sequence": 1,
+        "date": "2012-05-18",
+        "isAudiobook": false,
+        "abandoned": false,
+        "readingTime": 6
+      }
+    ],
+    "includedInSlugs": [],
+    "yearReviewed": 2012,
+    "moreByAuthors": [],
+    "moreReviews": [
+      {
+        "title": "The Creative Act",
+        "kind": "Nonfiction",
+        "yearPublished": "2023",
+        "slug": "the-creative-act-by-rick-rubin",
+        "grade": "C+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Rick Rubin"
+          }
+        ]
+      },
+      {
+        "title": "Cujo",
+        "kind": "Novel",
+        "yearPublished": "1981",
+        "slug": "cujo-by-stephen-king",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Stephen King"
+          }
+        ]
+      },
+      {
+        "title": "Cured",
+        "kind": "Nonfiction",
+        "yearPublished": "2016",
+        "slug": "cured-by-lol-tolhurst",
+        "grade": "A-",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Lol Tolhurst"
           }
         ]
       },
@@ -1759,7 +2502,7 @@
     "includedWorks": []
   },
   {
-    "sequence": "2022-04-03-2022-04-03-1",
+    "sequence": "2022-04-03-1",
     "slug": "desert-pickup-by-richard-laymon",
     "title": "Desert Pickup",
     "subtitle": null,
@@ -1796,11 +2539,11 @@
         "slug": "richard-laymon",
         "works": [
           {
-            "title": "The Cellar",
+            "title": "Beware!",
             "kind": "Novel",
-            "yearPublished": "1980",
-            "slug": "the-cellar-by-richard-laymon",
-            "grade": "C+",
+            "yearPublished": "1985",
+            "slug": "beware-by-richard-laymon",
+            "grade": "C",
             "includedInSlugs": [],
             "authors": [
               {
@@ -1809,11 +2552,11 @@
             ]
           },
           {
-            "title": "The Woods Are Dark",
-            "kind": "Novel",
-            "yearPublished": "1981",
-            "slug": "the-woods-are-dark-by-richard-laymon",
-            "grade": "C+",
+            "title": "The Last Hand",
+            "kind": "Short Story",
+            "yearPublished": "1985",
+            "slug": "the-last-hand-by-richard-laymon",
+            "grade": "D",
             "includedInSlugs": [],
             "authors": [
               {
@@ -1822,14 +2565,12 @@
             ]
           },
           {
-            "title": "Out Are the Lights",
+            "title": "Tread Softly",
             "kind": "Novel",
-            "yearPublished": "1982",
-            "slug": "out-are-the-lights-by-richard-laymon",
-            "grade": "C-",
-            "includedInSlugs": [
-              "out-are-the-lights-and-other-tales-by-richard-laymon"
-            ],
+            "yearPublished": "1987",
+            "slug": "tread-softly-by-richard-laymon",
+            "grade": "C",
+            "includedInSlugs": [],
             "authors": [
               {
                 "name": "Richard Laymon"
@@ -1882,19 +2623,6 @@
     ],
     "moreReviews": [
       {
-        "title": "The Creative Act",
-        "kind": "Nonfiction",
-        "yearPublished": "2023",
-        "slug": "the-creative-act-by-rick-rubin",
-        "grade": "C+",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Rick Rubin"
-          }
-        ]
-      },
-      {
         "title": "Cured",
         "kind": "Nonfiction",
         "yearPublished": "2016",
@@ -1904,6 +2632,19 @@
         "authors": [
           {
             "name": "Lol Tolhurst"
+          }
+        ]
+      },
+      {
+        "title": "Dark Crusade",
+        "kind": "Novel",
+        "yearPublished": "1976",
+        "slug": "dark-crusade-by-karl-edward-wagner",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Karl Edward Wagner"
           }
         ]
       },
@@ -1963,7 +2704,7 @@
     "includedWorks": []
   },
   {
-    "sequence": "2023-01-14-2022-10-30-1",
+    "sequence": "2023-01-14-1",
     "slug": "doctor-sleep-by-stephen-king",
     "title": "Doctor Sleep",
     "subtitle": null,
@@ -1998,11 +2739,11 @@
         "slug": "stephen-king",
         "works": [
           {
-            "title": "'Salem's Lot",
+            "title": "The Stand",
             "kind": "Novel",
-            "yearPublished": "1975",
-            "slug": "salems-lot-by-stephen-king",
-            "grade": "B",
+            "yearPublished": "1978",
+            "slug": "the-stand-by-stephen-king",
+            "grade": "D",
             "includedInSlugs": [],
             "authors": [
               {
@@ -2011,10 +2752,10 @@
             ]
           },
           {
-            "title": "The Shining",
+            "title": "Cujo",
             "kind": "Novel",
-            "yearPublished": "1977",
-            "slug": "the-shining-by-stephen-king",
+            "yearPublished": "1981",
+            "slug": "cujo-by-stephen-king",
             "grade": "B",
             "includedInSlugs": [],
             "authors": [
@@ -2063,11 +2804,11 @@
             ]
           },
           {
-            "title": "The Shining",
+            "title": "Rage",
             "kind": "Novel",
-            "yearPublished": "1977",
-            "slug": "the-shining-by-stephen-king",
-            "grade": "B",
+            "yearPublished": "1976",
+            "slug": "rage-by-stephen-king",
+            "grade": "C",
             "includedInSlugs": [],
             "authors": [
               {
@@ -2080,15 +2821,15 @@
     ],
     "moreReviews": [
       {
-        "title": "Cured",
-        "kind": "Nonfiction",
-        "yearPublished": "2016",
-        "slug": "cured-by-lol-tolhurst",
-        "grade": "A-",
+        "title": "Dark Crusade",
+        "kind": "Novel",
+        "yearPublished": "1976",
+        "slug": "dark-crusade-by-karl-edward-wagner",
+        "grade": "C",
         "includedInSlugs": [],
         "authors": [
           {
-            "name": "Lol Tolhurst"
+            "name": "Karl Edward Wagner"
           }
         ]
       },
@@ -2163,7 +2904,7 @@
     "includedWorks": []
   },
   {
-    "sequence": "2023-10-29-2023-10-11-1",
+    "sequence": "2023-10-29-1",
     "slug": "dont-let-them-get-you-down-by-philip-fracassi",
     "title": "Don't Let Them Get You Down",
     "subtitle": null,
@@ -2374,7 +3115,7 @@
     "includedWorks": []
   },
   {
-    "sequence": "2022-07-09-2022-07-02-1",
+    "sequence": "2022-07-09-1",
     "slug": "dracula-by-bram-stoker",
     "title": "Dracula",
     "subtitle": null,
@@ -2494,7 +3235,7 @@
     "includedWorks": []
   },
   {
-    "sequence": "2022-09-11-2022-09-11-1",
+    "sequence": "2022-09-11-1",
     "slug": "draft-no-4-by-john-mcphee",
     "title": "Draft No. 4",
     "subtitle": "On the Writing Process",
@@ -2612,7 +3353,7 @@
     "includedWorks": []
   },
   {
-    "sequence": "2022-06-26-2022-06-26-1",
+    "sequence": "2022-06-26-1",
     "slug": "extreme-ownership-by-jocko-willink-leif-babin",
     "title": "Extreme Ownership",
     "subtitle": "How U.S. Navy SEALs Lead and Win",
@@ -2733,7 +3474,7 @@
     "includedWorks": []
   },
   {
-    "sequence": "2022-04-30-2022-04-30-1",
+    "sequence": "2022-04-30-1",
     "slug": "fail-safe-by-philip-fracassi",
     "title": "Fail-Safe",
     "subtitle": null,
@@ -2947,7 +3688,7 @@
     "includedWorks": []
   },
   {
-    "sequence": "2024-07-01-2024-06-28-2",
+    "sequence": "2024-07-01-1",
     "slug": "fast-forward-by-stephen-morris",
     "title": "Fast Forward",
     "subtitle": "Confessions of a Post-Punk Percussionist: Volume II",
@@ -2974,7 +3715,7 @@
         "readingTime": 29
       },
       {
-        "sequence": 2,
+        "sequence": 1,
         "date": "2024-07-01",
         "isAudiobook": true,
         "abandoned": false,
@@ -3078,7 +3819,7 @@
     "includedWorks": []
   },
   {
-    "sequence": "2022-07-16-2022-07-15-1",
+    "sequence": "2022-07-16-1",
     "slug": "fight-club-by-chuck-palahniuk",
     "title": "Fight Club",
     "subtitle": null,
@@ -3202,7 +3943,7 @@
     "includedWorks": []
   },
   {
-    "sequence": "2023-01-21-2023-01-15-1",
+    "sequence": "2023-01-21-2",
     "slug": "fright-night-by-john-skipp-craig-spector",
     "title": "Fright Night",
     "subtitle": null,
@@ -3228,7 +3969,7 @@
     ],
     "readings": [
       {
-        "sequence": 1,
+        "sequence": 2,
         "date": "2023-01-21",
         "isAudiobook": false,
         "abandoned": false,
@@ -3326,7 +4067,7 @@
     "includedWorks": []
   },
   {
-    "sequence": "2023-11-06-2023-10-29-1",
+    "sequence": "2023-11-06-1",
     "slug": "fright-night-origins-by-tom-holland-a-jack-ulrich",
     "title": "Fright Night Origins",
     "subtitle": null,
@@ -3448,7 +4189,7 @@
     "includedWorks": []
   },
   {
-    "sequence": "2024-12-01-2024-11-10-1",
+    "sequence": "2024-12-01-1",
     "slug": "ghost-story-by-peter-straub",
     "title": "Ghost Story",
     "subtitle": null,
@@ -3567,7 +4308,7 @@
     "includedWorks": []
   },
   {
-    "sequence": "2024-11-08-2024-10-25-1",
+    "sequence": "2024-11-08-1",
     "slug": "goth-by-lol-tolhurst",
     "title": "Goth",
     "subtitle": "A History",
@@ -3688,7 +4429,7 @@
     "includedWorks": []
   },
   {
-    "sequence": "2024-06-30-2024-06-28-1",
+    "sequence": "2024-06-30-1",
     "slug": "gothic-by-philip-fracassi",
     "title": "Gothic",
     "subtitle": null,
@@ -3901,7 +4642,7 @@
     "includedWorks": []
   },
   {
-    "sequence": "2022-09-04-2022-07-24-1",
+    "sequence": "2022-09-04-1",
     "slug": "hawk-mountain-by-conner-habib",
     "title": "Hawk Mountain",
     "subtitle": null,
@@ -4000,15 +4741,15 @@
         ]
       },
       {
-        "title": "Is This Anything?",
-        "kind": "Nonfiction",
-        "yearPublished": "2020",
-        "slug": "is-this-anything-by-jerry-seinfeld",
+        "title": "The Intruder",
+        "kind": "Short Story",
+        "yearPublished": "1984",
+        "slug": "the-intruder-by-richard-laymon",
         "grade": "C",
         "includedInSlugs": [],
         "authors": [
           {
-            "name": "Jerry Seinfeld"
+            "name": "Richard Laymon"
           }
         ]
       }
@@ -4016,7 +4757,7 @@
     "includedWorks": []
   },
   {
-    "sequence": "2022-09-17-2022-09-13-1",
+    "sequence": "2022-09-17-1",
     "slug": "i-will-find-you-by-joe-kenda",
     "title": "I Will Find You",
     "subtitle": "Solving Killer Cases from My Life Fighting Crime",
@@ -4089,6 +4830,19 @@
         ]
       },
       {
+        "title": "The Intruder",
+        "kind": "Short Story",
+        "yearPublished": "1984",
+        "slug": "the-intruder-by-richard-laymon",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Richard Laymon"
+          }
+        ]
+      },
+      {
         "title": "Is This Anything?",
         "kind": "Nonfiction",
         "yearPublished": "2020",
@@ -4102,28 +4856,15 @@
         ]
       },
       {
-        "title": "Less Than Zero",
-        "kind": "Novel",
+        "title": "The Last Hand",
+        "kind": "Short Story",
         "yearPublished": "1985",
-        "slug": "less-than-zero-by-bret-easton-ellis",
-        "grade": "B+",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Bret Easton Ellis"
-          }
-        ]
-      },
-      {
-        "title": "Live and Let Die",
-        "kind": "Novel",
-        "yearPublished": "1954",
-        "slug": "live-and-let-die-by-ian-fleming",
+        "slug": "the-last-hand-by-richard-laymon",
         "grade": "D",
         "includedInSlugs": [],
         "authors": [
           {
-            "name": "Ian Fleming"
+            "name": "Richard Laymon"
           }
         ]
       }
@@ -4131,7 +4872,7 @@
     "includedWorks": []
   },
   {
-    "sequence": "2022-09-10-2022-09-06-1",
+    "sequence": "2022-09-10-1",
     "slug": "is-this-anything-by-jerry-seinfeld",
     "title": "Is This Anything?",
     "subtitle": null,
@@ -4163,19 +4904,6 @@
     "moreByAuthors": [],
     "moreReviews": [
       {
-        "title": "Hawk Mountain",
-        "kind": "Novel",
-        "yearPublished": "2022",
-        "slug": "hawk-mountain-by-conner-habib",
-        "grade": "C+",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Conner Habib"
-          }
-        ]
-      },
-      {
         "title": "The Horse Thief",
         "kind": "Short Story",
         "yearPublished": "2017",
@@ -4204,6 +4932,32 @@
         ]
       },
       {
+        "title": "The Intruder",
+        "kind": "Short Story",
+        "yearPublished": "1984",
+        "slug": "the-intruder-by-richard-laymon",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Richard Laymon"
+          }
+        ]
+      },
+      {
+        "title": "The Last Hand",
+        "kind": "Short Story",
+        "yearPublished": "1985",
+        "slug": "the-last-hand-by-richard-laymon",
+        "grade": "D",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Richard Laymon"
+          }
+        ]
+      },
+      {
         "title": "Less Than Zero",
         "kind": "Novel",
         "yearPublished": "1985",
@@ -4228,25 +4982,12 @@
             "name": "Ian Fleming"
           }
         ]
-      },
-      {
-        "title": "Living with a SEAL",
-        "kind": "Nonfiction",
-        "yearPublished": "2015",
-        "slug": "living-with-a-seal-by-jesse-itzler",
-        "grade": "Abandoned",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Jesse Itzler"
-          }
-        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": "2022-04-02-2022-03-22-1",
+    "sequence": "2022-04-02-1",
     "slug": "less-than-zero-by-bret-easton-ellis",
     "title": "Less Than Zero",
     "subtitle": null,
@@ -4278,30 +5019,15 @@
     "moreByAuthors": [],
     "moreReviews": [
       {
-        "title": "The Horse Thief",
+        "title": "The Intruder",
         "kind": "Short Story",
-        "yearPublished": "2017",
-        "slug": "the-horse-thief-by-philip-fracassi",
-        "grade": "B",
-        "includedInSlugs": [
-          "behold-the-void-by-philip-fracassi"
-        ],
-        "authors": [
-          {
-            "name": "Philip Fracassi"
-          }
-        ]
-      },
-      {
-        "title": "I Will Find You",
-        "kind": "Nonfiction",
-        "yearPublished": "2017",
-        "slug": "i-will-find-you-by-joe-kenda",
-        "grade": "B",
+        "yearPublished": "1984",
+        "slug": "the-intruder-by-richard-laymon",
+        "grade": "C",
         "includedInSlugs": [],
         "authors": [
           {
-            "name": "Joe Kenda"
+            "name": "Richard Laymon"
           }
         ]
       },
@@ -4315,6 +5041,19 @@
         "authors": [
           {
             "name": "Jerry Seinfeld"
+          }
+        ]
+      },
+      {
+        "title": "The Last Hand",
+        "kind": "Short Story",
+        "yearPublished": "1985",
+        "slug": "the-last-hand-by-richard-laymon",
+        "grade": "D",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Richard Laymon"
           }
         ]
       },
@@ -4345,17 +5084,15 @@
         ]
       },
       {
-        "title": "Mandala",
-        "kind": "Novella",
-        "yearPublished": "2017",
-        "slug": "mandala-by-philip-fracassi",
-        "grade": "B+",
-        "includedInSlugs": [
-          "behold-the-void-by-philip-fracassi"
-        ],
+        "title": "The Long Walk",
+        "kind": "Novel",
+        "yearPublished": "1978",
+        "slug": "the-long-walk-by-stephen-king",
+        "grade": "D",
+        "includedInSlugs": [],
         "authors": [
           {
-            "name": "Philip Fracassi"
+            "name": "Stephen King"
           }
         ]
       }
@@ -4363,7 +5100,7 @@
     "includedWorks": []
   },
   {
-    "sequence": "2022-06-30-2022-06-17-1",
+    "sequence": "2022-06-30-1",
     "slug": "live-and-let-die-by-ian-fleming",
     "title": "Live and Let Die",
     "subtitle": null,
@@ -4395,19 +5132,6 @@
     "moreByAuthors": [],
     "moreReviews": [
       {
-        "title": "I Will Find You",
-        "kind": "Nonfiction",
-        "yearPublished": "2017",
-        "slug": "i-will-find-you-by-joe-kenda",
-        "grade": "B",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Joe Kenda"
-          }
-        ]
-      },
-      {
         "title": "Is This Anything?",
         "kind": "Nonfiction",
         "yearPublished": "2020",
@@ -4417,6 +5141,19 @@
         "authors": [
           {
             "name": "Jerry Seinfeld"
+          }
+        ]
+      },
+      {
+        "title": "The Last Hand",
+        "kind": "Short Story",
+        "yearPublished": "1985",
+        "slug": "the-last-hand-by-richard-laymon",
+        "grade": "D",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Richard Laymon"
           }
         ]
       },
@@ -4447,6 +5184,19 @@
         ]
       },
       {
+        "title": "The Long Walk",
+        "kind": "Novel",
+        "yearPublished": "1978",
+        "slug": "the-long-walk-by-stephen-king",
+        "grade": "D",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Stephen King"
+          }
+        ]
+      },
+      {
         "title": "Mandala",
         "kind": "Novella",
         "yearPublished": "2017",
@@ -4460,25 +5210,12 @@
             "name": "Philip Fracassi"
           }
         ]
-      },
-      {
-        "title": "Moonraker",
-        "kind": "Novel",
-        "yearPublished": "1955",
-        "slug": "moonraker-by-ian-fleming",
-        "grade": "B",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Ian Fleming"
-          }
-        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": "2022-06-01-2022-05-24-1",
+    "sequence": "2022-06-01-1",
     "slug": "living-with-a-seal-by-jesse-itzler",
     "title": "Living with a SEAL",
     "subtitle": "31 Days Training with the Toughest Man on the Planet",
@@ -4510,15 +5247,15 @@
     "moreByAuthors": [],
     "moreReviews": [
       {
-        "title": "Is This Anything?",
-        "kind": "Nonfiction",
-        "yearPublished": "2020",
-        "slug": "is-this-anything-by-jerry-seinfeld",
-        "grade": "C",
+        "title": "The Last Hand",
+        "kind": "Short Story",
+        "yearPublished": "1985",
+        "slug": "the-last-hand-by-richard-laymon",
+        "grade": "D",
         "includedInSlugs": [],
         "authors": [
           {
-            "name": "Jerry Seinfeld"
+            "name": "Richard Laymon"
           }
         ]
       },
@@ -4549,6 +5286,19 @@
         ]
       },
       {
+        "title": "The Long Walk",
+        "kind": "Novel",
+        "yearPublished": "1978",
+        "slug": "the-long-walk-by-stephen-king",
+        "grade": "D",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Stephen King"
+          }
+        ]
+      },
+      {
         "title": "Mandala",
         "kind": "Novella",
         "yearPublished": "2017",
@@ -4575,27 +5325,12 @@
             "name": "Ian Fleming"
           }
         ]
-      },
-      {
-        "title": "Mother",
-        "kind": "Short Story",
-        "yearPublished": "2015",
-        "slug": "mother-by-philip-fracassi",
-        "grade": "B-",
-        "includedInSlugs": [
-          "behold-the-void-by-philip-fracassi"
-        ],
-        "authors": [
-          {
-            "name": "Philip Fracassi"
-          }
-        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": "2022-05-07-2022-05-01-1",
+    "sequence": "2022-05-07-1",
     "slug": "mandala-by-philip-fracassi",
     "title": "Mandala",
     "subtitle": null,
@@ -4724,19 +5459,6 @@
     ],
     "moreReviews": [
       {
-        "title": "Less Than Zero",
-        "kind": "Novel",
-        "yearPublished": "1985",
-        "slug": "less-than-zero-by-bret-easton-ellis",
-        "grade": "B+",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Bret Easton Ellis"
-          }
-        ]
-      },
-      {
         "title": "Live and Let Die",
         "kind": "Novel",
         "yearPublished": "1954",
@@ -4759,6 +5481,19 @@
         "authors": [
           {
             "name": "Jesse Itzler"
+          }
+        ]
+      },
+      {
+        "title": "The Long Walk",
+        "kind": "Novel",
+        "yearPublished": "1978",
+        "slug": "the-long-walk-by-stephen-king",
+        "grade": "D",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Stephen King"
           }
         ]
       },
@@ -4791,15 +5526,18 @@
         ]
       },
       {
-        "title": "On Writing",
+        "title": "Mr. S",
         "kind": "Nonfiction",
-        "yearPublished": "2000",
-        "slug": "on-writing-by-stephen-king",
-        "grade": "A-",
+        "yearPublished": "2003",
+        "slug": "mr-s-by-george-jacobs-william-stadiem",
+        "grade": "B",
         "includedInSlugs": [],
         "authors": [
           {
-            "name": "Stephen King"
+            "name": "George Jacobs"
+          },
+          {
+            "name": "William Stadiem"
           }
         ]
       }
@@ -4807,7 +5545,7 @@
     "includedWorks": []
   },
   {
-    "sequence": "2022-10-16-2022-10-15-1",
+    "sequence": "2022-10-16-1",
     "slug": "moonraker-by-ian-fleming",
     "title": "Moonraker",
     "subtitle": null,
@@ -4839,19 +5577,6 @@
     "moreByAuthors": [],
     "moreReviews": [
       {
-        "title": "Live and Let Die",
-        "kind": "Novel",
-        "yearPublished": "1954",
-        "slug": "live-and-let-die-by-ian-fleming",
-        "grade": "D",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Ian Fleming"
-          }
-        ]
-      },
-      {
         "title": "Living with a SEAL",
         "kind": "Nonfiction",
         "yearPublished": "2015",
@@ -4861,6 +5586,19 @@
         "authors": [
           {
             "name": "Jesse Itzler"
+          }
+        ]
+      },
+      {
+        "title": "The Long Walk",
+        "kind": "Novel",
+        "yearPublished": "1978",
+        "slug": "the-long-walk-by-stephen-king",
+        "grade": "D",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Stephen King"
           }
         ]
       },
@@ -4895,30 +5633,31 @@
         ]
       },
       {
-        "title": "On Writing",
+        "title": "Mr. S",
         "kind": "Nonfiction",
-        "yearPublished": "2000",
-        "slug": "on-writing-by-stephen-king",
-        "grade": "A-",
+        "yearPublished": "2003",
+        "slug": "mr-s-by-george-jacobs-william-stadiem",
+        "grade": "B",
         "includedInSlugs": [],
         "authors": [
           {
-            "name": "Stephen King"
+            "name": "George Jacobs"
+          },
+          {
+            "name": "William Stadiem"
           }
         ]
       },
       {
-        "title": "Out Are the Lights",
-        "kind": "Novel",
-        "yearPublished": "1982",
-        "slug": "out-are-the-lights-by-richard-laymon",
-        "grade": "C-",
-        "includedInSlugs": [
-          "out-are-the-lights-and-other-tales-by-richard-laymon"
-        ],
+        "title": "Night Shift",
+        "kind": "Collection",
+        "yearPublished": "1978",
+        "slug": "night-shift-by-stephen-king",
+        "grade": "B",
+        "includedInSlugs": [],
         "authors": [
           {
-            "name": "Richard Laymon"
+            "name": "Stephen King"
           }
         ]
       }
@@ -4926,7 +5665,7 @@
     "includedWorks": []
   },
   {
-    "sequence": "2022-04-23-2022-04-23-1",
+    "sequence": "2022-04-23-1",
     "slug": "mother-by-philip-fracassi",
     "title": "Mother",
     "subtitle": null,
@@ -5051,15 +5790,15 @@
     ],
     "moreReviews": [
       {
-        "title": "Living with a SEAL",
-        "kind": "Nonfiction",
-        "yearPublished": "2015",
-        "slug": "living-with-a-seal-by-jesse-itzler",
-        "grade": "Abandoned",
+        "title": "The Long Walk",
+        "kind": "Novel",
+        "yearPublished": "1978",
+        "slug": "the-long-walk-by-stephen-king",
+        "grade": "D",
         "includedInSlugs": [],
         "authors": [
           {
-            "name": "Jesse Itzler"
+            "name": "Stephen King"
           }
         ]
       },
@@ -5092,6 +5831,145 @@
         ]
       },
       {
+        "title": "Mr. S",
+        "kind": "Nonfiction",
+        "yearPublished": "2003",
+        "slug": "mr-s-by-george-jacobs-william-stadiem",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "George Jacobs"
+          },
+          {
+            "name": "William Stadiem"
+          }
+        ]
+      },
+      {
+        "title": "Night Shift",
+        "kind": "Collection",
+        "yearPublished": "1978",
+        "slug": "night-shift-by-stephen-king",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Stephen King"
+          }
+        ]
+      },
+      {
+        "title": "On Writing",
+        "kind": "Nonfiction",
+        "yearPublished": "2000",
+        "slug": "on-writing-by-stephen-king",
+        "grade": "A-",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Stephen King"
+          }
+        ]
+      }
+    ],
+    "includedWorks": []
+  },
+  {
+    "sequence": "2012-06-14-1",
+    "slug": "mr-s-by-george-jacobs-william-stadiem",
+    "title": "Mr. S",
+    "subtitle": "My Life with Frank Sinatra",
+    "sortTitle": "Mr. S: My Life with Frank Sinatra",
+    "yearPublished": "2003",
+    "grade": "B",
+    "gradeValue": 9,
+    "kind": "Nonfiction",
+    "date": "2012-06-14",
+    "authors": [
+      {
+        "slug": "george-jacobs",
+        "notes": null,
+        "name": "George Jacobs",
+        "sortName": "Jacobs, George"
+      },
+      {
+        "slug": "william-stadiem",
+        "notes": null,
+        "name": "William Stadiem",
+        "sortName": "Stadiem, William"
+      }
+    ],
+    "readings": [
+      {
+        "sequence": 1,
+        "date": "2012-06-14",
+        "isAudiobook": false,
+        "abandoned": false,
+        "readingTime": 10
+      }
+    ],
+    "includedInSlugs": [],
+    "yearReviewed": 2012,
+    "moreByAuthors": [],
+    "moreReviews": [
+      {
+        "title": "Mandala",
+        "kind": "Novella",
+        "yearPublished": "2017",
+        "slug": "mandala-by-philip-fracassi",
+        "grade": "B+",
+        "includedInSlugs": [
+          "behold-the-void-by-philip-fracassi"
+        ],
+        "authors": [
+          {
+            "name": "Philip Fracassi"
+          }
+        ]
+      },
+      {
+        "title": "Moonraker",
+        "kind": "Novel",
+        "yearPublished": "1955",
+        "slug": "moonraker-by-ian-fleming",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Ian Fleming"
+          }
+        ]
+      },
+      {
+        "title": "Mother",
+        "kind": "Short Story",
+        "yearPublished": "2015",
+        "slug": "mother-by-philip-fracassi",
+        "grade": "B-",
+        "includedInSlugs": [
+          "behold-the-void-by-philip-fracassi"
+        ],
+        "authors": [
+          {
+            "name": "Philip Fracassi"
+          }
+        ]
+      },
+      {
+        "title": "Night Shift",
+        "kind": "Collection",
+        "yearPublished": "1978",
+        "slug": "night-shift-by-stephen-king",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Stephen King"
+          }
+        ]
+      },
+      {
         "title": "On Writing",
         "kind": "Nonfiction",
         "yearPublished": "2000",
@@ -5118,6 +5996,198 @@
             "name": "Richard Laymon"
           }
         ]
+      }
+    ],
+    "includedWorks": []
+  },
+  {
+    "sequence": "2012-05-14-1",
+    "slug": "night-shift-by-stephen-king",
+    "title": "Night Shift",
+    "subtitle": null,
+    "sortTitle": "Night Shift",
+    "yearPublished": "1978",
+    "grade": "B",
+    "gradeValue": 9,
+    "kind": "Collection",
+    "date": "2012-05-14",
+    "authors": [
+      {
+        "slug": "stephen-king",
+        "notes": null,
+        "name": "Stephen King",
+        "sortName": "King, Stephen"
+      }
+    ],
+    "readings": [
+      {
+        "sequence": 1,
+        "date": "2012-05-14",
+        "isAudiobook": false,
+        "abandoned": false,
+        "readingTime": 2
+      }
+    ],
+    "includedInSlugs": [],
+    "yearReviewed": 2012,
+    "moreByAuthors": [
+      {
+        "name": "Stephen King",
+        "slug": "stephen-king",
+        "works": [
+          {
+            "title": "Rage",
+            "kind": "Novel",
+            "yearPublished": "1976",
+            "slug": "rage-by-stephen-king",
+            "grade": "C",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          },
+          {
+            "title": "The Shining",
+            "kind": "Novel",
+            "yearPublished": "1977",
+            "slug": "the-shining-by-stephen-king",
+            "grade": "B",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          },
+          {
+            "title": "The Long Walk",
+            "kind": "Novel",
+            "yearPublished": "1978",
+            "slug": "the-long-walk-by-stephen-king",
+            "grade": "D",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          },
+          {
+            "title": "The Stand",
+            "kind": "Novel",
+            "yearPublished": "1978",
+            "slug": "the-stand-by-stephen-king",
+            "grade": "D",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          },
+          {
+            "title": "Cujo",
+            "kind": "Novel",
+            "yearPublished": "1981",
+            "slug": "cujo-by-stephen-king",
+            "grade": "B",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          },
+          {
+            "title": "On Writing",
+            "kind": "Nonfiction",
+            "yearPublished": "2000",
+            "slug": "on-writing-by-stephen-king",
+            "grade": "A-",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "moreReviews": [
+      {
+        "title": "Moonraker",
+        "kind": "Novel",
+        "yearPublished": "1955",
+        "slug": "moonraker-by-ian-fleming",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Ian Fleming"
+          }
+        ]
+      },
+      {
+        "title": "Mother",
+        "kind": "Short Story",
+        "yearPublished": "2015",
+        "slug": "mother-by-philip-fracassi",
+        "grade": "B-",
+        "includedInSlugs": [
+          "behold-the-void-by-philip-fracassi"
+        ],
+        "authors": [
+          {
+            "name": "Philip Fracassi"
+          }
+        ]
+      },
+      {
+        "title": "Mr. S",
+        "kind": "Nonfiction",
+        "yearPublished": "2003",
+        "slug": "mr-s-by-george-jacobs-william-stadiem",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "George Jacobs"
+          },
+          {
+            "name": "William Stadiem"
+          }
+        ]
+      },
+      {
+        "title": "Out Are the Lights",
+        "kind": "Novel",
+        "yearPublished": "1982",
+        "slug": "out-are-the-lights-by-richard-laymon",
+        "grade": "C-",
+        "includedInSlugs": [
+          "out-are-the-lights-and-other-tales-by-richard-laymon"
+        ],
+        "authors": [
+          {
+            "name": "Richard Laymon"
+          }
+        ]
+      },
+      {
+        "title": "Peter Cushing",
+        "kind": "Nonfiction",
+        "yearPublished": "2013",
+        "slug": "peter-cushing-by-david-miller",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "David Miller"
+          }
+        ]
       },
       {
         "title": "The Postman Always Rings Twice",
@@ -5133,10 +6203,271 @@
         ]
       }
     ],
-    "includedWorks": []
+    "includedWorks": [
+      {
+        "slug": "battleground-by-stephen-king",
+        "title": "Battleground",
+        "grade": null,
+        "kind": "Short Story",
+        "yearPublished": "1972",
+        "authors": [
+          {
+            "name": "Stephen King",
+            "slug": "stephen-king"
+          }
+        ]
+      },
+      {
+        "slug": "the-boogeyman-by-stephen-king",
+        "title": "The Boogeyman",
+        "grade": null,
+        "kind": "Short Story",
+        "yearPublished": "1973",
+        "authors": [
+          {
+            "name": "Stephen King",
+            "slug": "stephen-king"
+          }
+        ]
+      },
+      {
+        "slug": "children-of-the-corn-by-stephen-king",
+        "title": "Children of the Corn",
+        "grade": null,
+        "kind": "Short Story",
+        "yearPublished": "1977",
+        "authors": [
+          {
+            "name": "Stephen King",
+            "slug": "stephen-king"
+          }
+        ]
+      },
+      {
+        "slug": "graveyard-shift-by-stephen-king",
+        "title": "Graveyard Shift",
+        "grade": null,
+        "kind": "Short Story",
+        "yearPublished": "1970",
+        "authors": [
+          {
+            "name": "Stephen King",
+            "slug": "stephen-king"
+          }
+        ]
+      },
+      {
+        "slug": "gray-matter-by-stephen-king",
+        "title": "Gray Matter",
+        "grade": null,
+        "kind": "Short Story",
+        "yearPublished": "1973",
+        "authors": [
+          {
+            "name": "Stephen King",
+            "slug": "stephen-king"
+          }
+        ]
+      },
+      {
+        "slug": "i-am-the-doorway-by-stephen-king",
+        "title": "I Am the Doorway",
+        "grade": null,
+        "kind": "Short Story",
+        "yearPublished": "1971",
+        "authors": [
+          {
+            "name": "Stephen King",
+            "slug": "stephen-king"
+          }
+        ]
+      },
+      {
+        "slug": "i-know-what-you-need-by-stephen-king",
+        "title": "I Know What You Need",
+        "grade": null,
+        "kind": "Short Story",
+        "yearPublished": "1976",
+        "authors": [
+          {
+            "name": "Stephen King",
+            "slug": "stephen-king"
+          }
+        ]
+      },
+      {
+        "slug": "jerusalems-lot-by-stephen-king",
+        "title": "Jerusalem's Lot",
+        "grade": null,
+        "kind": "Short Story",
+        "yearPublished": "1978",
+        "authors": [
+          {
+            "name": "Stephen King",
+            "slug": "stephen-king"
+          }
+        ]
+      },
+      {
+        "slug": "the-last-rung-on-the-ladder-by-stephen-king",
+        "title": "The Last Rung on the Ladder",
+        "grade": null,
+        "kind": "Short Story",
+        "yearPublished": "1978",
+        "authors": [
+          {
+            "name": "Stephen King",
+            "slug": "stephen-king"
+          }
+        ]
+      },
+      {
+        "slug": "the-lawnmower-man-by-stephen-king",
+        "title": "The Lawnmower Man",
+        "grade": null,
+        "kind": "Short Story",
+        "yearPublished": "1975",
+        "authors": [
+          {
+            "name": "Stephen King",
+            "slug": "stephen-king"
+          }
+        ]
+      },
+      {
+        "slug": "the-ledge-by-stephen-king",
+        "title": "The Ledge",
+        "grade": null,
+        "kind": "Short Story",
+        "yearPublished": "1976",
+        "authors": [
+          {
+            "name": "Stephen King",
+            "slug": "stephen-king"
+          }
+        ]
+      },
+      {
+        "slug": "the-man-who-loved-flowers-by-stephen-king",
+        "title": "The Man Who Loved Flowers",
+        "grade": null,
+        "kind": "Short Story",
+        "yearPublished": "1977",
+        "authors": [
+          {
+            "name": "Stephen King",
+            "slug": "stephen-king"
+          }
+        ]
+      },
+      {
+        "slug": "the-mangler-by-stephen-king",
+        "title": "The Mangler",
+        "grade": null,
+        "kind": "Short Story",
+        "yearPublished": "1972",
+        "authors": [
+          {
+            "name": "Stephen King",
+            "slug": "stephen-king"
+          }
+        ]
+      },
+      {
+        "slug": "night-surf-by-stephen-king",
+        "title": "Night Surf",
+        "grade": null,
+        "kind": "Short Story",
+        "yearPublished": "1969",
+        "authors": [
+          {
+            "name": "Stephen King",
+            "slug": "stephen-king"
+          }
+        ]
+      },
+      {
+        "slug": "one-for-the-road-by-stephen-king",
+        "title": "One for the Road",
+        "grade": null,
+        "kind": "Short Story",
+        "yearPublished": "1977",
+        "authors": [
+          {
+            "name": "Stephen King",
+            "slug": "stephen-king"
+          }
+        ]
+      },
+      {
+        "slug": "quitters-inc-by-stephen-king",
+        "title": "Quitters, Inc.",
+        "grade": null,
+        "kind": "Short Story",
+        "yearPublished": "1978",
+        "authors": [
+          {
+            "name": "Stephen King",
+            "slug": "stephen-king"
+          }
+        ]
+      },
+      {
+        "slug": "sometimes-they-come-back-by-stephen-king",
+        "title": "Sometimes They Come Back",
+        "grade": null,
+        "kind": "Short Story",
+        "yearPublished": "1974",
+        "authors": [
+          {
+            "name": "Stephen King",
+            "slug": "stephen-king"
+          }
+        ]
+      },
+      {
+        "slug": "strawberry-spring-by-stephen-king",
+        "title": "Strawberry Spring",
+        "grade": null,
+        "kind": "Short Story",
+        "yearPublished": "1968",
+        "authors": [
+          {
+            "name": "Stephen King",
+            "slug": "stephen-king"
+          }
+        ]
+      },
+      {
+        "slug": "trucks-by-stephen-king",
+        "title": "Trucks",
+        "grade": null,
+        "kind": "Short Story",
+        "yearPublished": "1973",
+        "authors": [
+          {
+            "name": "Stephen King",
+            "slug": "stephen-king"
+          }
+        ]
+      },
+      {
+        "slug": "the-woman-in-the-room-by-stephen-king",
+        "title": "The Woman in the Room",
+        "grade": null,
+        "kind": "Short Story",
+        "yearPublished": "1978",
+        "authors": [
+          {
+            "name": "Stephen King",
+            "slug": "stephen-king"
+          }
+        ]
+      }
+    ]
   },
   {
-    "sequence": "2022-03-21-2022-03-19-1",
+    "sequence": "2022-03-21-1",
     "slug": "on-writing-by-stephen-king",
     "title": "On Writing",
     "subtitle": "A Memoir of the Craft",
@@ -5171,23 +6502,10 @@
         "slug": "stephen-king",
         "works": [
           {
-            "title": "Carrie",
-            "kind": "Novel",
-            "yearPublished": "1974",
-            "slug": "carrie-by-stephen-king",
-            "grade": "B-",
-            "includedInSlugs": [],
-            "authors": [
-              {
-                "name": "Stephen King"
-              }
-            ]
-          },
-          {
-            "title": "'Salem's Lot",
-            "kind": "Novel",
-            "yearPublished": "1975",
-            "slug": "salems-lot-by-stephen-king",
+            "title": "Night Shift",
+            "kind": "Collection",
+            "yearPublished": "1978",
+            "slug": "night-shift-by-stephen-king",
             "grade": "B",
             "includedInSlugs": [],
             "authors": [
@@ -5197,10 +6515,23 @@
             ]
           },
           {
-            "title": "The Shining",
+            "title": "The Stand",
             "kind": "Novel",
-            "yearPublished": "1977",
-            "slug": "the-shining-by-stephen-king",
+            "yearPublished": "1978",
+            "slug": "the-stand-by-stephen-king",
+            "grade": "D",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          },
+          {
+            "title": "Cujo",
+            "kind": "Novel",
+            "yearPublished": "1981",
+            "slug": "cujo-by-stephen-king",
             "grade": "B",
             "includedInSlugs": [],
             "authors": [
@@ -5253,21 +6584,6 @@
     ],
     "moreReviews": [
       {
-        "title": "Mandala",
-        "kind": "Novella",
-        "yearPublished": "2017",
-        "slug": "mandala-by-philip-fracassi",
-        "grade": "B+",
-        "includedInSlugs": [
-          "behold-the-void-by-philip-fracassi"
-        ],
-        "authors": [
-          {
-            "name": "Philip Fracassi"
-          }
-        ]
-      },
-      {
         "title": "Moonraker",
         "kind": "Novel",
         "yearPublished": "1955",
@@ -5296,6 +6612,22 @@
         ]
       },
       {
+        "title": "Mr. S",
+        "kind": "Nonfiction",
+        "yearPublished": "2003",
+        "slug": "mr-s-by-george-jacobs-william-stadiem",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "George Jacobs"
+          },
+          {
+            "name": "William Stadiem"
+          }
+        ]
+      },
+      {
         "title": "Out Are the Lights",
         "kind": "Novel",
         "yearPublished": "1982",
@@ -5311,6 +6643,19 @@
         ]
       },
       {
+        "title": "Peter Cushing",
+        "kind": "Nonfiction",
+        "yearPublished": "2013",
+        "slug": "peter-cushing-by-david-miller",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "David Miller"
+          }
+        ]
+      },
+      {
         "title": "The Postman Always Rings Twice",
         "kind": "Novel",
         "yearPublished": "1934",
@@ -5322,25 +6667,12 @@
             "name": "James M. Cain"
           }
         ]
-      },
-      {
-        "title": "Recessional",
-        "kind": "Nonfiction",
-        "yearPublished": "2022",
-        "slug": "recessional-by-david-mamet",
-        "grade": "D",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "David Mamet"
-          }
-        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": "2022-10-11-2022-09-24-2",
+    "sequence": "2022-10-11-1",
     "slug": "out-are-the-lights-by-richard-laymon",
     "title": "Out Are the Lights",
     "subtitle": null,
@@ -5360,7 +6692,14 @@
     ],
     "readings": [
       {
-        "sequence": 2,
+        "sequence": 1,
+        "date": "2014-04-28",
+        "isAudiobook": false,
+        "abandoned": false,
+        "readingTime": 5
+      },
+      {
+        "sequence": 1,
         "date": "2022-10-11",
         "isAudiobook": false,
         "abandoned": false,
@@ -5418,14 +6757,12 @@
             ]
           },
           {
-            "title": "Desert Pickup",
+            "title": "The Intruder",
             "kind": "Short Story",
-            "yearPublished": "1970",
-            "slug": "desert-pickup-by-richard-laymon",
-            "grade": "C-",
-            "includedInSlugs": [
-              "short-stories-volume-one-by-richard-laymon"
-            ],
+            "yearPublished": "1984",
+            "slug": "the-intruder-by-richard-laymon",
+            "grade": "C",
+            "includedInSlugs": [],
             "authors": [
               {
                 "name": "Richard Laymon"
@@ -5433,26 +6770,24 @@
             ]
           },
           {
-            "title": "Roadside Pickup",
-            "kind": "Short Story",
-            "yearPublished": "1974",
-            "slug": "roadside-pickup-by-richard-laymon",
-            "grade": "C-",
-            "includedInSlugs": [
-              "short-stories-volume-one-by-richard-laymon"
-            ],
-            "authors": [
-              {
-                "name": "Richard Laymon"
-              }
-            ]
-          },
-          {
-            "title": "The Cellar",
+            "title": "Beware!",
             "kind": "Novel",
-            "yearPublished": "1980",
-            "slug": "the-cellar-by-richard-laymon",
-            "grade": "C+",
+            "yearPublished": "1985",
+            "slug": "beware-by-richard-laymon",
+            "grade": "C",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Richard Laymon"
+              }
+            ]
+          },
+          {
+            "title": "The Last Hand",
+            "kind": "Short Story",
+            "yearPublished": "1985",
+            "slug": "the-last-hand-by-richard-laymon",
+            "grade": "D",
             "includedInSlugs": [],
             "authors": [
               {
@@ -5465,30 +6800,31 @@
     ],
     "moreReviews": [
       {
-        "title": "Moonraker",
-        "kind": "Novel",
-        "yearPublished": "1955",
-        "slug": "moonraker-by-ian-fleming",
+        "title": "Mr. S",
+        "kind": "Nonfiction",
+        "yearPublished": "2003",
+        "slug": "mr-s-by-george-jacobs-william-stadiem",
         "grade": "B",
         "includedInSlugs": [],
         "authors": [
           {
-            "name": "Ian Fleming"
+            "name": "George Jacobs"
+          },
+          {
+            "name": "William Stadiem"
           }
         ]
       },
       {
-        "title": "Mother",
-        "kind": "Short Story",
-        "yearPublished": "2015",
-        "slug": "mother-by-philip-fracassi",
-        "grade": "B-",
-        "includedInSlugs": [
-          "behold-the-void-by-philip-fracassi"
-        ],
+        "title": "Night Shift",
+        "kind": "Collection",
+        "yearPublished": "1978",
+        "slug": "night-shift-by-stephen-king",
+        "grade": "B",
+        "includedInSlugs": [],
         "authors": [
           {
-            "name": "Philip Fracassi"
+            "name": "Stephen King"
           }
         ]
       },
@@ -5502,6 +6838,308 @@
         "authors": [
           {
             "name": "Stephen King"
+          }
+        ]
+      },
+      {
+        "title": "Peter Cushing",
+        "kind": "Nonfiction",
+        "yearPublished": "2013",
+        "slug": "peter-cushing-by-david-miller",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "David Miller"
+          }
+        ]
+      },
+      {
+        "title": "The Postman Always Rings Twice",
+        "kind": "Novel",
+        "yearPublished": "1934",
+        "slug": "the-postman-always-rings-twice-by-james-m-cain",
+        "grade": "B+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "James M. Cain"
+          }
+        ]
+      },
+      {
+        "title": "Rage",
+        "kind": "Novel",
+        "yearPublished": "1976",
+        "slug": "rage-by-stephen-king",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Stephen King"
+          }
+        ]
+      }
+    ],
+    "includedWorks": []
+  },
+  {
+    "sequence": "2014-08-25-1",
+    "slug": "peter-cushing-by-david-miller",
+    "title": "Peter Cushing",
+    "subtitle": "A Life in Film",
+    "sortTitle": "Peter Cushing: A Life in Film",
+    "yearPublished": "2013",
+    "grade": "C",
+    "gradeValue": 6,
+    "kind": "Nonfiction",
+    "date": "2014-08-25",
+    "authors": [
+      {
+        "slug": "david-miller",
+        "notes": null,
+        "name": "David Miller",
+        "sortName": "Miller, David"
+      }
+    ],
+    "readings": [
+      {
+        "sequence": 1,
+        "date": "2014-08-25",
+        "isAudiobook": false,
+        "abandoned": false,
+        "readingTime": 20
+      }
+    ],
+    "includedInSlugs": [],
+    "yearReviewed": 2014,
+    "moreByAuthors": [],
+    "moreReviews": [
+      {
+        "title": "Night Shift",
+        "kind": "Collection",
+        "yearPublished": "1978",
+        "slug": "night-shift-by-stephen-king",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Stephen King"
+          }
+        ]
+      },
+      {
+        "title": "On Writing",
+        "kind": "Nonfiction",
+        "yearPublished": "2000",
+        "slug": "on-writing-by-stephen-king",
+        "grade": "A-",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Stephen King"
+          }
+        ]
+      },
+      {
+        "title": "Out Are the Lights",
+        "kind": "Novel",
+        "yearPublished": "1982",
+        "slug": "out-are-the-lights-by-richard-laymon",
+        "grade": "C-",
+        "includedInSlugs": [
+          "out-are-the-lights-and-other-tales-by-richard-laymon"
+        ],
+        "authors": [
+          {
+            "name": "Richard Laymon"
+          }
+        ]
+      },
+      {
+        "title": "The Postman Always Rings Twice",
+        "kind": "Novel",
+        "yearPublished": "1934",
+        "slug": "the-postman-always-rings-twice-by-james-m-cain",
+        "grade": "B+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "James M. Cain"
+          }
+        ]
+      },
+      {
+        "title": "Rage",
+        "kind": "Novel",
+        "yearPublished": "1976",
+        "slug": "rage-by-stephen-king",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Stephen King"
+          }
+        ]
+      },
+      {
+        "title": "Recessional",
+        "kind": "Nonfiction",
+        "yearPublished": "2022",
+        "slug": "recessional-by-david-mamet",
+        "grade": "D",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "David Mamet"
+          }
+        ]
+      }
+    ],
+    "includedWorks": []
+  },
+  {
+    "sequence": "2012-05-13-1",
+    "slug": "rage-by-stephen-king",
+    "title": "Rage",
+    "subtitle": null,
+    "sortTitle": "Rage",
+    "yearPublished": "1976",
+    "grade": "C",
+    "gradeValue": 6,
+    "kind": "Novel",
+    "date": "2012-05-13",
+    "authors": [
+      {
+        "slug": "stephen-king",
+        "notes": "as Richard Bachman",
+        "name": "Stephen King",
+        "sortName": "King, Stephen"
+      }
+    ],
+    "readings": [
+      {
+        "sequence": 1,
+        "date": "2012-05-13",
+        "isAudiobook": false,
+        "abandoned": false,
+        "readingTime": 190
+      }
+    ],
+    "includedInSlugs": [],
+    "yearReviewed": 2012,
+    "moreByAuthors": [
+      {
+        "name": "Stephen King",
+        "slug": "stephen-king",
+        "works": [
+          {
+            "title": "Doctor Sleep",
+            "kind": "Novel",
+            "yearPublished": "2013",
+            "slug": "doctor-sleep-by-stephen-king",
+            "grade": "C+",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          },
+          {
+            "title": "Carrie",
+            "kind": "Novel",
+            "yearPublished": "1974",
+            "slug": "carrie-by-stephen-king",
+            "grade": "B-",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          },
+          {
+            "title": "'Salem's Lot",
+            "kind": "Novel",
+            "yearPublished": "1975",
+            "slug": "salems-lot-by-stephen-king",
+            "grade": "B",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          },
+          {
+            "title": "The Shining",
+            "kind": "Novel",
+            "yearPublished": "1977",
+            "slug": "the-shining-by-stephen-king",
+            "grade": "B",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          },
+          {
+            "title": "The Long Walk",
+            "kind": "Novel",
+            "yearPublished": "1978",
+            "slug": "the-long-walk-by-stephen-king",
+            "grade": "D",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          },
+          {
+            "title": "Night Shift",
+            "kind": "Collection",
+            "yearPublished": "1978",
+            "slug": "night-shift-by-stephen-king",
+            "grade": "B",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "moreReviews": [
+      {
+        "title": "Out Are the Lights",
+        "kind": "Novel",
+        "yearPublished": "1982",
+        "slug": "out-are-the-lights-by-richard-laymon",
+        "grade": "C-",
+        "includedInSlugs": [
+          "out-are-the-lights-and-other-tales-by-richard-laymon"
+        ],
+        "authors": [
+          {
+            "name": "Richard Laymon"
+          }
+        ]
+      },
+      {
+        "title": "Peter Cushing",
+        "kind": "Nonfiction",
+        "yearPublished": "2013",
+        "slug": "peter-cushing-by-david-miller",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "David Miller"
           }
         ]
       },
@@ -5543,12 +7181,25 @@
             "name": "Stephen Morris"
           }
         ]
+      },
+      {
+        "title": "The Rise of Theodore Roosevelt",
+        "kind": "Nonfiction",
+        "yearPublished": "1979",
+        "slug": "the-rise-of-theodore-roosevelt-by-edmund-morris",
+        "grade": "A-",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Edmund Morris"
+          }
+        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": "2024-08-25-2024-08-02-1",
+    "sequence": "2024-08-25-1",
     "slug": "recessional-by-david-mamet",
     "title": "Recessional",
     "subtitle": "The Death of Free Speech and the Cost of a Free Lunch",
@@ -5580,30 +7231,15 @@
     "moreByAuthors": [],
     "moreReviews": [
       {
-        "title": "On Writing",
+        "title": "Peter Cushing",
         "kind": "Nonfiction",
-        "yearPublished": "2000",
-        "slug": "on-writing-by-stephen-king",
-        "grade": "A-",
+        "yearPublished": "2013",
+        "slug": "peter-cushing-by-david-miller",
+        "grade": "C",
         "includedInSlugs": [],
         "authors": [
           {
-            "name": "Stephen King"
-          }
-        ]
-      },
-      {
-        "title": "Out Are the Lights",
-        "kind": "Novel",
-        "yearPublished": "1982",
-        "slug": "out-are-the-lights-by-richard-laymon",
-        "grade": "C-",
-        "includedInSlugs": [
-          "out-are-the-lights-and-other-tales-by-richard-laymon"
-        ],
-        "authors": [
-          {
-            "name": "Richard Laymon"
+            "name": "David Miller"
           }
         ]
       },
@@ -5617,6 +7253,19 @@
         "authors": [
           {
             "name": "James M. Cain"
+          }
+        ]
+      },
+      {
+        "title": "Rage",
+        "kind": "Novel",
+        "yearPublished": "1976",
+        "slug": "rage-by-stephen-king",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Stephen King"
           }
         ]
       },
@@ -5665,7 +7314,7 @@
     "includedWorks": []
   },
   {
-    "sequence": "2023-11-11-2023-11-06-1",
+    "sequence": "2023-11-11-1",
     "slug": "record-play-pause-by-stephen-morris",
     "title": "Record Play Pause",
     "subtitle": null,
@@ -5697,21 +7346,6 @@
     "moreByAuthors": [],
     "moreReviews": [
       {
-        "title": "Out Are the Lights",
-        "kind": "Novel",
-        "yearPublished": "1982",
-        "slug": "out-are-the-lights-by-richard-laymon",
-        "grade": "C-",
-        "includedInSlugs": [
-          "out-are-the-lights-and-other-tales-by-richard-laymon"
-        ],
-        "authors": [
-          {
-            "name": "Richard Laymon"
-          }
-        ]
-      },
-      {
         "title": "The Postman Always Rings Twice",
         "kind": "Novel",
         "yearPublished": "1934",
@@ -5721,6 +7355,19 @@
         "authors": [
           {
             "name": "James M. Cain"
+          }
+        ]
+      },
+      {
+        "title": "Rage",
+        "kind": "Novel",
+        "yearPublished": "1976",
+        "slug": "rage-by-stephen-king",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Stephen King"
           }
         ]
       },
@@ -5782,7 +7429,7 @@
     "includedWorks": []
   },
   {
-    "sequence": "2023-01-21-2023-01-21-1",
+    "sequence": "2023-01-21-1",
     "slug": "roadside-pickup-by-richard-laymon",
     "title": "Roadside Pickup",
     "subtitle": null,
@@ -5818,6 +7465,60 @@
         "name": "Richard Laymon",
         "slug": "richard-laymon",
         "works": [
+          {
+            "title": "The Last Hand",
+            "kind": "Short Story",
+            "yearPublished": "1985",
+            "slug": "the-last-hand-by-richard-laymon",
+            "grade": "D",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Richard Laymon"
+              }
+            ]
+          },
+          {
+            "title": "Tread Softly",
+            "kind": "Novel",
+            "yearPublished": "1987",
+            "slug": "tread-softly-by-richard-laymon",
+            "grade": "C",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Richard Laymon"
+              }
+            ]
+          },
+          {
+            "title": "Desert Pickup",
+            "kind": "Short Story",
+            "yearPublished": "1970",
+            "slug": "desert-pickup-by-richard-laymon",
+            "grade": "C-",
+            "includedInSlugs": [
+              "short-stories-volume-one-by-richard-laymon"
+            ],
+            "authors": [
+              {
+                "name": "Richard Laymon"
+              }
+            ]
+          },
+          {
+            "title": "The Cellar",
+            "kind": "Novel",
+            "yearPublished": "1980",
+            "slug": "the-cellar-by-richard-laymon",
+            "grade": "C+",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Richard Laymon"
+              }
+            ]
+          },
           {
             "title": "The Woods Are Dark",
             "kind": "Novel",
@@ -5932,7 +7633,7 @@
     "includedWorks": []
   },
   {
-    "sequence": "2023-10-09-2023-10-07-1",
+    "sequence": "2023-10-09-1",
     "slug": "sacculina-by-philip-fracassi",
     "title": "Sacculina",
     "subtitle": null,
@@ -6142,7 +7843,7 @@
     "includedWorks": []
   },
   {
-    "sequence": "2022-10-14-2022-10-07-1",
+    "sequence": "2022-10-14-1",
     "slug": "salems-lot-by-stephen-king",
     "title": "'Salem's Lot",
     "subtitle": null,
@@ -6201,21 +7902,73 @@
                 "name": "Stephen King"
               }
             ]
+          },
+          {
+            "title": "Carrie",
+            "kind": "Novel",
+            "yearPublished": "1974",
+            "slug": "carrie-by-stephen-king",
+            "grade": "B-",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          },
+          {
+            "title": "Rage",
+            "kind": "Novel",
+            "yearPublished": "1976",
+            "slug": "rage-by-stephen-king",
+            "grade": "C",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          },
+          {
+            "title": "The Shining",
+            "kind": "Novel",
+            "yearPublished": "1977",
+            "slug": "the-shining-by-stephen-king",
+            "grade": "B",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          },
+          {
+            "title": "The Long Walk",
+            "kind": "Novel",
+            "yearPublished": "1978",
+            "slug": "the-long-walk-by-stephen-king",
+            "grade": "D",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
           }
         ]
       }
     ],
     "moreReviews": [
       {
-        "title": "Total Recall",
+        "title": "True Myths",
         "kind": "Nonfiction",
-        "yearPublished": "2012",
-        "slug": "total-recall-by-arnold-schwarzenegger",
-        "grade": "C+",
+        "yearPublished": "1996",
+        "slug": "true-myths-by-nigel-andrews",
+        "grade": "D+",
         "includedInSlugs": [],
         "authors": [
           {
-            "name": "Arnold Schwarzenegger"
+            "name": "Nigel Andrews"
           }
         ]
       },
@@ -6293,7 +8046,7 @@
     "includedWorks": []
   },
   {
-    "sequence": "2022-06-25-2022-06-24-1",
+    "sequence": "2022-06-25-1",
     "slug": "set-the-boy-free-by-johnny-marr",
     "title": "Set the Boy Free",
     "subtitle": "The Autobiography",
@@ -6408,7 +8161,7 @@
     "includedWorks": []
   },
   {
-    "sequence": "2022-04-17-2022-04-17-1",
+    "sequence": "2022-04-17-1",
     "slug": "soft-construction-of-a-sunset-by-philip-fracassi",
     "title": "Soft Construction of a Sunset",
     "subtitle": null,
@@ -6572,6 +8325,19 @@
         ]
       },
       {
+        "title": "The Stand",
+        "kind": "Novel",
+        "yearPublished": "1978",
+        "slug": "the-stand-by-stephen-king",
+        "grade": "D",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Stephen King"
+          }
+        ]
+      },
+      {
         "title": "The M.A.X. Muscle Plan",
         "kind": "Nonfiction",
         "yearPublished": "2012",
@@ -6596,25 +8362,12 @@
             "name": "Arnold Schwarzenegger"
           }
         ]
-      },
-      {
-        "title": "What Doesn't Kill Us",
-        "kind": "Nonfiction",
-        "yearPublished": "2017",
-        "slug": "what-doesnt-kill-us-by-scott-carney",
-        "grade": "C+",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Scott Carney"
-          }
-        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": "2022-04-22-2022-04-22-1",
+    "sequence": "2022-04-22-1",
     "slug": "surfer-girl-by-philip-fracassi",
     "title": "Surfer Girl",
     "subtitle": null,
@@ -6739,19 +8492,6 @@
     ],
     "moreReviews": [
       {
-        "title": "Set the Boy Free",
-        "kind": "Nonfiction",
-        "yearPublished": "2016",
-        "slug": "set-the-boy-free-by-johnny-marr",
-        "grade": "B+",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Johnny Marr"
-          }
-        ]
-      },
-      {
         "title": "The Shining",
         "kind": "Novel",
         "yearPublished": "1977",
@@ -6774,6 +8514,19 @@
         "authors": [
           {
             "name": "Steven Novella"
+          }
+        ]
+      },
+      {
+        "title": "The Stand",
+        "kind": "Novel",
+        "yearPublished": "1978",
+        "slug": "the-stand-by-stephen-king",
+        "grade": "D",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Stephen King"
           }
         ]
       },
@@ -6804,15 +8557,15 @@
         ]
       },
       {
-        "title": "What Doesn't Kill Us",
-        "kind": "Nonfiction",
-        "yearPublished": "2017",
-        "slug": "what-doesnt-kill-us-by-scott-carney",
-        "grade": "C+",
+        "title": "Tread Softly",
+        "kind": "Novel",
+        "yearPublished": "1987",
+        "slug": "tread-softly-by-richard-laymon",
+        "grade": "C",
         "includedInSlugs": [],
         "authors": [
           {
-            "name": "Scott Carney"
+            "name": "Richard Laymon"
           }
         ]
       }
@@ -6820,7 +8573,7 @@
     "includedWorks": []
   },
   {
-    "sequence": "2022-07-15-2022-07-10-1",
+    "sequence": "2022-07-15-1",
     "slug": "the-48-laws-of-power-by-robert-greene",
     "title": "The 48 Laws of Power",
     "subtitle": null,
@@ -6940,7 +8693,7 @@
     "includedWorks": []
   },
   {
-    "sequence": "2022-04-21-2022-04-21-1",
+    "sequence": "2022-04-21-1",
     "slug": "the-baby-farmer-by-philip-fracassi",
     "title": "The Baby Farmer",
     "subtitle": null,
@@ -7109,6 +8862,19 @@
         ]
       },
       {
+        "title": "Beware!",
+        "kind": "Novel",
+        "yearPublished": "1985",
+        "slug": "beware-by-richard-laymon",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Richard Laymon"
+          }
+        ]
+      },
+      {
         "title": "The Big Sleep",
         "kind": "Novel",
         "yearPublished": "1939",
@@ -7122,28 +8888,15 @@
         ]
       },
       {
-        "title": "Brother Iron, Sister Steel",
-        "kind": "Nonfiction",
-        "yearPublished": "2001",
-        "slug": "brother-iron-sister-steel-by-dave-draper",
-        "grade": "C",
+        "title": "The Black Train",
+        "kind": "Novel",
+        "yearPublished": "2009",
+        "slug": "the-black-train-by-edward-lee",
+        "grade": "D+",
         "includedInSlugs": [],
         "authors": [
           {
-            "name": "Dave Draper"
-          }
-        ]
-      },
-      {
-        "title": "Can't Hurt Me",
-        "kind": "Nonfiction",
-        "yearPublished": "2018",
-        "slug": "cant-hurt-me-by-david-goggins",
-        "grade": "B",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "David Goggins"
+            "name": "Edward Lee"
           }
         ]
       }
@@ -7151,7 +8904,7 @@
     "includedWorks": []
   },
   {
-    "sequence": "2022-09-24-2022-09-24-1",
+    "sequence": "2022-09-24-1",
     "slug": "the-big-sleep-by-raymond-chandler",
     "title": "The Big Sleep",
     "subtitle": null,
@@ -7183,21 +8936,6 @@
     "moreByAuthors": [],
     "moreReviews": [
       {
-        "title": "Altar",
-        "kind": "Short Story",
-        "yearPublished": "2016",
-        "slug": "altar-by-philip-fracassi",
-        "grade": "A-",
-        "includedInSlugs": [
-          "behold-the-void-by-philip-fracassi"
-        ],
-        "authors": [
-          {
-            "name": "Philip Fracassi"
-          }
-        ]
-      },
-      {
         "title": "The Baby Farmer",
         "kind": "Short Story",
         "yearPublished": "2017",
@@ -7226,6 +8964,145 @@
         ]
       },
       {
+        "title": "Beware!",
+        "kind": "Novel",
+        "yearPublished": "1985",
+        "slug": "beware-by-richard-laymon",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Richard Laymon"
+          }
+        ]
+      },
+      {
+        "title": "The Black Train",
+        "kind": "Novel",
+        "yearPublished": "2009",
+        "slug": "the-black-train-by-edward-lee",
+        "grade": "D+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Edward Lee"
+          }
+        ]
+      },
+      {
+        "title": "Brain Wave",
+        "kind": "Novel",
+        "yearPublished": "1954",
+        "slug": "brain-wave-by-poul-anderson",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Poul Anderson"
+          }
+        ]
+      },
+      {
+        "title": "Brother Iron, Sister Steel",
+        "kind": "Nonfiction",
+        "yearPublished": "2001",
+        "slug": "brother-iron-sister-steel-by-dave-draper",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Dave Draper"
+          }
+        ]
+      }
+    ],
+    "includedWorks": []
+  },
+  {
+    "sequence": "2017-02-20-1",
+    "slug": "the-black-train-by-edward-lee",
+    "title": "The Black Train",
+    "subtitle": null,
+    "sortTitle": "Black Train",
+    "yearPublished": "2009",
+    "grade": "D+",
+    "gradeValue": 4,
+    "kind": "Novel",
+    "date": "2017-02-20",
+    "authors": [
+      {
+        "slug": "edward-lee",
+        "notes": null,
+        "name": "Edward Lee",
+        "sortName": "Lee, Edward"
+      }
+    ],
+    "readings": [
+      {
+        "sequence": 1,
+        "date": "2017-02-20",
+        "isAudiobook": false,
+        "abandoned": false,
+        "readingTime": 375
+      }
+    ],
+    "includedInSlugs": [],
+    "yearReviewed": 2017,
+    "moreByAuthors": [],
+    "moreReviews": [
+      {
+        "title": "Behold the Void",
+        "kind": "Collection",
+        "yearPublished": "2017",
+        "slug": "behold-the-void-by-philip-fracassi",
+        "grade": "B+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Philip Fracassi"
+          }
+        ]
+      },
+      {
+        "title": "Beware!",
+        "kind": "Novel",
+        "yearPublished": "1985",
+        "slug": "beware-by-richard-laymon",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Richard Laymon"
+          }
+        ]
+      },
+      {
+        "title": "The Big Sleep",
+        "kind": "Novel",
+        "yearPublished": "1939",
+        "slug": "the-big-sleep-by-raymond-chandler",
+        "grade": "C+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Raymond Chandler"
+          }
+        ]
+      },
+      {
+        "title": "Brain Wave",
+        "kind": "Novel",
+        "yearPublished": "1954",
+        "slug": "brain-wave-by-poul-anderson",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Poul Anderson"
+          }
+        ]
+      },
+      {
         "title": "Brother Iron, Sister Steel",
         "kind": "Nonfiction",
         "yearPublished": "2001",
@@ -7250,25 +9127,12 @@
             "name": "David Goggins"
           }
         ]
-      },
-      {
-        "title": "Carrie",
-        "kind": "Novel",
-        "yearPublished": "1974",
-        "slug": "carrie-by-stephen-king",
-        "grade": "B-",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Stephen King"
-          }
-        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": "2022-03-16-2022-03-07-1",
+    "sequence": "2022-03-16-1",
     "slug": "the-cellar-by-richard-laymon",
     "title": "The Cellar",
     "subtitle": null,
@@ -7289,6 +9153,13 @@
     "readings": [
       {
         "sequence": 1,
+        "date": "2014-02-24",
+        "isAudiobook": false,
+        "abandoned": false,
+        "readingTime": 5
+      },
+      {
+        "sequence": 1,
         "date": "2022-03-16",
         "isAudiobook": false,
         "abandoned": false,
@@ -7303,14 +9174,12 @@
         "slug": "richard-laymon",
         "works": [
           {
-            "title": "Out Are the Lights",
+            "title": "Tread Softly",
             "kind": "Novel",
-            "yearPublished": "1982",
-            "slug": "out-are-the-lights-by-richard-laymon",
-            "grade": "C-",
-            "includedInSlugs": [
-              "out-are-the-lights-and-other-tales-by-richard-laymon"
-            ],
+            "yearPublished": "1987",
+            "slug": "tread-softly-by-richard-laymon",
+            "grade": "C",
+            "includedInSlugs": [],
             "authors": [
               {
                 "name": "Richard Laymon"
@@ -7331,24 +9200,67 @@
                 "name": "Richard Laymon"
               }
             ]
+          },
+          {
+            "title": "Roadside Pickup",
+            "kind": "Short Story",
+            "yearPublished": "1974",
+            "slug": "roadside-pickup-by-richard-laymon",
+            "grade": "C-",
+            "includedInSlugs": [
+              "short-stories-volume-one-by-richard-laymon"
+            ],
+            "authors": [
+              {
+                "name": "Richard Laymon"
+              }
+            ]
+          },
+          {
+            "title": "The Woods Are Dark",
+            "kind": "Novel",
+            "yearPublished": "1981",
+            "slug": "the-woods-are-dark-by-richard-laymon",
+            "grade": "C+",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Richard Laymon"
+              }
+            ]
+          },
+          {
+            "title": "Out Are the Lights",
+            "kind": "Novel",
+            "yearPublished": "1982",
+            "slug": "out-are-the-lights-by-richard-laymon",
+            "grade": "C-",
+            "includedInSlugs": [
+              "out-are-the-lights-and-other-tales-by-richard-laymon"
+            ],
+            "authors": [
+              {
+                "name": "Richard Laymon"
+              }
+            ]
+          },
+          {
+            "title": "The Intruder",
+            "kind": "Short Story",
+            "yearPublished": "1984",
+            "slug": "the-intruder-by-richard-laymon",
+            "grade": "C",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Richard Laymon"
+              }
+            ]
           }
         ]
       }
     ],
     "moreReviews": [
-      {
-        "title": "Can't Hurt Me",
-        "kind": "Nonfiction",
-        "yearPublished": "2018",
-        "slug": "cant-hurt-me-by-david-goggins",
-        "grade": "B",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "David Goggins"
-          }
-        ]
-      },
       {
         "title": "Carrie",
         "kind": "Novel",
@@ -7359,6 +9271,19 @@
         "authors": [
           {
             "name": "Stephen King"
+          }
+        ]
+      },
+      {
+        "title": "Cary Grant",
+        "kind": "Nonfiction",
+        "yearPublished": "2004",
+        "slug": "cary-grant-by-marc-eliot",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Marc Eliot"
           }
         ]
       },
@@ -7420,7 +9345,7 @@
     "includedWorks": []
   },
   {
-    "sequence": "2023-01-29-2023-01-22-1",
+    "sequence": "2023-01-29-1",
     "slug": "the-cipher-by-kathe-koja",
     "title": "The Cipher",
     "subtitle": null,
@@ -7535,7 +9460,7 @@
     "includedWorks": []
   },
   {
-    "sequence": "2023-10-22-2023-10-22-1",
+    "sequence": "2023-10-22-1",
     "slug": "the-creative-act-by-rick-rubin",
     "title": "The Creative Act",
     "subtitle": "A Way of Being",
@@ -7608,6 +9533,19 @@
         ]
       },
       {
+        "title": "Cujo",
+        "kind": "Novel",
+        "yearPublished": "1981",
+        "slug": "cujo-by-stephen-king",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Stephen King"
+          }
+        ]
+      },
+      {
         "title": "Cured",
         "kind": "Nonfiction",
         "yearPublished": "2016",
@@ -7621,30 +9559,15 @@
         ]
       },
       {
-        "title": "The Dark Tunnel",
+        "title": "Dark Crusade",
         "kind": "Novel",
-        "yearPublished": "1944",
-        "slug": "the-dark-tunnel-by-ross-macdonald",
-        "grade": "D+",
+        "yearPublished": "1976",
+        "slug": "dark-crusade-by-karl-edward-wagner",
+        "grade": "C",
         "includedInSlugs": [],
         "authors": [
           {
-            "name": "Ross Macdonald"
-          }
-        ]
-      },
-      {
-        "title": "Desert Pickup",
-        "kind": "Short Story",
-        "yearPublished": "1970",
-        "slug": "desert-pickup-by-richard-laymon",
-        "grade": "C-",
-        "includedInSlugs": [
-          "short-stories-volume-one-by-richard-laymon"
-        ],
-        "authors": [
-          {
-            "name": "Richard Laymon"
+            "name": "Karl Edward Wagner"
           }
         ]
       }
@@ -7652,7 +9575,7 @@
     "includedWorks": []
   },
   {
-    "sequence": "2022-04-17-2022-04-03-2",
+    "sequence": "2022-04-17-2",
     "slug": "the-dark-tunnel-by-ross-macdonald",
     "title": "The Dark Tunnel",
     "subtitle": null,
@@ -7684,28 +9607,15 @@
     "moreByAuthors": [],
     "moreReviews": [
       {
-        "title": "Consider This",
-        "kind": "Nonfiction",
-        "yearPublished": "2020",
-        "slug": "consider-this-by-chuck-palahniuk",
+        "title": "Cujo",
+        "kind": "Novel",
+        "yearPublished": "1981",
+        "slug": "cujo-by-stephen-king",
         "grade": "B",
         "includedInSlugs": [],
         "authors": [
           {
-            "name": "Chuck Palahniuk"
-          }
-        ]
-      },
-      {
-        "title": "The Creative Act",
-        "kind": "Nonfiction",
-        "yearPublished": "2023",
-        "slug": "the-creative-act-by-rick-rubin",
-        "grade": "C+",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Rick Rubin"
+            "name": "Stephen King"
           }
         ]
       },
@@ -7719,6 +9629,19 @@
         "authors": [
           {
             "name": "Lol Tolhurst"
+          }
+        ]
+      },
+      {
+        "title": "Dark Crusade",
+        "kind": "Novel",
+        "yearPublished": "1976",
+        "slug": "dark-crusade-by-karl-edward-wagner",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Karl Edward Wagner"
           }
         ]
       },
@@ -7767,7 +9690,7 @@
     "includedWorks": []
   },
   {
-    "sequence": "2022-04-19-2022-04-19-1",
+    "sequence": "2022-04-19-1",
     "slug": "the-horse-thief-by-philip-fracassi",
     "title": "The Horse Thief",
     "subtitle": null,
@@ -7946,6 +9869,195 @@
         ]
       },
       {
+        "title": "The Intruder",
+        "kind": "Short Story",
+        "yearPublished": "1984",
+        "slug": "the-intruder-by-richard-laymon",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Richard Laymon"
+          }
+        ]
+      },
+      {
+        "title": "Is This Anything?",
+        "kind": "Nonfiction",
+        "yearPublished": "2020",
+        "slug": "is-this-anything-by-jerry-seinfeld",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Jerry Seinfeld"
+          }
+        ]
+      }
+    ],
+    "includedWorks": []
+  },
+  {
+    "sequence": "2014-07-23-1",
+    "slug": "the-intruder-by-richard-laymon",
+    "title": "The Intruder",
+    "subtitle": null,
+    "sortTitle": "Intruder",
+    "yearPublished": "1984",
+    "grade": "C",
+    "gradeValue": 6,
+    "kind": "Short Story",
+    "date": "2014-07-23",
+    "authors": [
+      {
+        "slug": "richard-laymon",
+        "notes": null,
+        "name": "Richard Laymon",
+        "sortName": "Laymon, Richard"
+      }
+    ],
+    "readings": [
+      {
+        "sequence": 1,
+        "date": "2014-07-23",
+        "isAudiobook": false,
+        "abandoned": false,
+        "readingTime": 1
+      }
+    ],
+    "includedInSlugs": [],
+    "yearReviewed": 2014,
+    "moreByAuthors": [
+      {
+        "name": "Richard Laymon",
+        "slug": "richard-laymon",
+        "works": [
+          {
+            "title": "The Cellar",
+            "kind": "Novel",
+            "yearPublished": "1980",
+            "slug": "the-cellar-by-richard-laymon",
+            "grade": "C+",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Richard Laymon"
+              }
+            ]
+          },
+          {
+            "title": "The Woods Are Dark",
+            "kind": "Novel",
+            "yearPublished": "1981",
+            "slug": "the-woods-are-dark-by-richard-laymon",
+            "grade": "C+",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Richard Laymon"
+              }
+            ]
+          },
+          {
+            "title": "Out Are the Lights",
+            "kind": "Novel",
+            "yearPublished": "1982",
+            "slug": "out-are-the-lights-by-richard-laymon",
+            "grade": "C-",
+            "includedInSlugs": [
+              "out-are-the-lights-and-other-tales-by-richard-laymon"
+            ],
+            "authors": [
+              {
+                "name": "Richard Laymon"
+              }
+            ]
+          },
+          {
+            "title": "Beware!",
+            "kind": "Novel",
+            "yearPublished": "1985",
+            "slug": "beware-by-richard-laymon",
+            "grade": "C",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Richard Laymon"
+              }
+            ]
+          },
+          {
+            "title": "The Last Hand",
+            "kind": "Short Story",
+            "yearPublished": "1985",
+            "slug": "the-last-hand-by-richard-laymon",
+            "grade": "D",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Richard Laymon"
+              }
+            ]
+          },
+          {
+            "title": "Tread Softly",
+            "kind": "Novel",
+            "yearPublished": "1987",
+            "slug": "tread-softly-by-richard-laymon",
+            "grade": "C",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Richard Laymon"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "moreReviews": [
+      {
+        "title": "Hawk Mountain",
+        "kind": "Novel",
+        "yearPublished": "2022",
+        "slug": "hawk-mountain-by-conner-habib",
+        "grade": "C+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Conner Habib"
+          }
+        ]
+      },
+      {
+        "title": "The Horse Thief",
+        "kind": "Short Story",
+        "yearPublished": "2017",
+        "slug": "the-horse-thief-by-philip-fracassi",
+        "grade": "B",
+        "includedInSlugs": [
+          "behold-the-void-by-philip-fracassi"
+        ],
+        "authors": [
+          {
+            "name": "Philip Fracassi"
+          }
+        ]
+      },
+      {
+        "title": "I Will Find You",
+        "kind": "Nonfiction",
+        "yearPublished": "2017",
+        "slug": "i-will-find-you-by-joe-kenda",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Joe Kenda"
+          }
+        ]
+      },
+      {
         "title": "Is This Anything?",
         "kind": "Nonfiction",
         "yearPublished": "2020",
@@ -7970,12 +10082,433 @@
             "name": "Bret Easton Ellis"
           }
         ]
+      },
+      {
+        "title": "Live and Let Die",
+        "kind": "Novel",
+        "yearPublished": "1954",
+        "slug": "live-and-let-die-by-ian-fleming",
+        "grade": "D",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Ian Fleming"
+          }
+        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": "2022-03-18-2022-03-17-1",
+    "sequence": "2014-07-13-1",
+    "slug": "the-last-hand-by-richard-laymon",
+    "title": "The Last Hand",
+    "subtitle": null,
+    "sortTitle": "Last Hand",
+    "yearPublished": "1985",
+    "grade": "D",
+    "gradeValue": 3,
+    "kind": "Short Story",
+    "date": "2014-07-13",
+    "authors": [
+      {
+        "slug": "richard-laymon",
+        "notes": null,
+        "name": "Richard Laymon",
+        "sortName": "Laymon, Richard"
+      }
+    ],
+    "readings": [
+      {
+        "sequence": 1,
+        "date": "2014-07-13",
+        "isAudiobook": false,
+        "abandoned": false,
+        "readingTime": 1
+      }
+    ],
+    "includedInSlugs": [],
+    "yearReviewed": 2014,
+    "moreByAuthors": [
+      {
+        "name": "Richard Laymon",
+        "slug": "richard-laymon",
+        "works": [
+          {
+            "title": "Out Are the Lights",
+            "kind": "Novel",
+            "yearPublished": "1982",
+            "slug": "out-are-the-lights-by-richard-laymon",
+            "grade": "C-",
+            "includedInSlugs": [
+              "out-are-the-lights-and-other-tales-by-richard-laymon"
+            ],
+            "authors": [
+              {
+                "name": "Richard Laymon"
+              }
+            ]
+          },
+          {
+            "title": "The Intruder",
+            "kind": "Short Story",
+            "yearPublished": "1984",
+            "slug": "the-intruder-by-richard-laymon",
+            "grade": "C",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Richard Laymon"
+              }
+            ]
+          },
+          {
+            "title": "Beware!",
+            "kind": "Novel",
+            "yearPublished": "1985",
+            "slug": "beware-by-richard-laymon",
+            "grade": "C",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Richard Laymon"
+              }
+            ]
+          },
+          {
+            "title": "Tread Softly",
+            "kind": "Novel",
+            "yearPublished": "1987",
+            "slug": "tread-softly-by-richard-laymon",
+            "grade": "C",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Richard Laymon"
+              }
+            ]
+          },
+          {
+            "title": "Desert Pickup",
+            "kind": "Short Story",
+            "yearPublished": "1970",
+            "slug": "desert-pickup-by-richard-laymon",
+            "grade": "C-",
+            "includedInSlugs": [
+              "short-stories-volume-one-by-richard-laymon"
+            ],
+            "authors": [
+              {
+                "name": "Richard Laymon"
+              }
+            ]
+          },
+          {
+            "title": "Roadside Pickup",
+            "kind": "Short Story",
+            "yearPublished": "1974",
+            "slug": "roadside-pickup-by-richard-laymon",
+            "grade": "C-",
+            "includedInSlugs": [
+              "short-stories-volume-one-by-richard-laymon"
+            ],
+            "authors": [
+              {
+                "name": "Richard Laymon"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "moreReviews": [
+      {
+        "title": "The Horse Thief",
+        "kind": "Short Story",
+        "yearPublished": "2017",
+        "slug": "the-horse-thief-by-philip-fracassi",
+        "grade": "B",
+        "includedInSlugs": [
+          "behold-the-void-by-philip-fracassi"
+        ],
+        "authors": [
+          {
+            "name": "Philip Fracassi"
+          }
+        ]
+      },
+      {
+        "title": "I Will Find You",
+        "kind": "Nonfiction",
+        "yearPublished": "2017",
+        "slug": "i-will-find-you-by-joe-kenda",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Joe Kenda"
+          }
+        ]
+      },
+      {
+        "title": "Is This Anything?",
+        "kind": "Nonfiction",
+        "yearPublished": "2020",
+        "slug": "is-this-anything-by-jerry-seinfeld",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Jerry Seinfeld"
+          }
+        ]
+      },
+      {
+        "title": "Less Than Zero",
+        "kind": "Novel",
+        "yearPublished": "1985",
+        "slug": "less-than-zero-by-bret-easton-ellis",
+        "grade": "B+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Bret Easton Ellis"
+          }
+        ]
+      },
+      {
+        "title": "Live and Let Die",
+        "kind": "Novel",
+        "yearPublished": "1954",
+        "slug": "live-and-let-die-by-ian-fleming",
+        "grade": "D",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Ian Fleming"
+          }
+        ]
+      },
+      {
+        "title": "Living with a SEAL",
+        "kind": "Nonfiction",
+        "yearPublished": "2015",
+        "slug": "living-with-a-seal-by-jesse-itzler",
+        "grade": "Abandoned",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Jesse Itzler"
+          }
+        ]
+      }
+    ],
+    "includedWorks": []
+  },
+  {
+    "sequence": "2014-03-09-1",
+    "slug": "the-long-walk-by-stephen-king",
+    "title": "The Long Walk",
+    "subtitle": null,
+    "sortTitle": "Long Walk",
+    "yearPublished": "1978",
+    "grade": "D",
+    "gradeValue": 3,
+    "kind": "Novel",
+    "date": "2014-03-09",
+    "authors": [
+      {
+        "slug": "stephen-king",
+        "notes": "as Richard Bachman",
+        "name": "Stephen King",
+        "sortName": "King, Stephen"
+      }
+    ],
+    "readings": [
+      {
+        "sequence": 1,
+        "date": "2014-03-09",
+        "isAudiobook": false,
+        "abandoned": false,
+        "readingTime": 8
+      }
+    ],
+    "includedInSlugs": [],
+    "yearReviewed": 2014,
+    "moreByAuthors": [
+      {
+        "name": "Stephen King",
+        "slug": "stephen-king",
+        "works": [
+          {
+            "title": "'Salem's Lot",
+            "kind": "Novel",
+            "yearPublished": "1975",
+            "slug": "salems-lot-by-stephen-king",
+            "grade": "B",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          },
+          {
+            "title": "Rage",
+            "kind": "Novel",
+            "yearPublished": "1976",
+            "slug": "rage-by-stephen-king",
+            "grade": "C",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          },
+          {
+            "title": "The Shining",
+            "kind": "Novel",
+            "yearPublished": "1977",
+            "slug": "the-shining-by-stephen-king",
+            "grade": "B",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          },
+          {
+            "title": "Night Shift",
+            "kind": "Collection",
+            "yearPublished": "1978",
+            "slug": "night-shift-by-stephen-king",
+            "grade": "B",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          },
+          {
+            "title": "The Stand",
+            "kind": "Novel",
+            "yearPublished": "1978",
+            "slug": "the-stand-by-stephen-king",
+            "grade": "D",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          },
+          {
+            "title": "Cujo",
+            "kind": "Novel",
+            "yearPublished": "1981",
+            "slug": "cujo-by-stephen-king",
+            "grade": "B",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "moreReviews": [
+      {
+        "title": "Less Than Zero",
+        "kind": "Novel",
+        "yearPublished": "1985",
+        "slug": "less-than-zero-by-bret-easton-ellis",
+        "grade": "B+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Bret Easton Ellis"
+          }
+        ]
+      },
+      {
+        "title": "Live and Let Die",
+        "kind": "Novel",
+        "yearPublished": "1954",
+        "slug": "live-and-let-die-by-ian-fleming",
+        "grade": "D",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Ian Fleming"
+          }
+        ]
+      },
+      {
+        "title": "Living with a SEAL",
+        "kind": "Nonfiction",
+        "yearPublished": "2015",
+        "slug": "living-with-a-seal-by-jesse-itzler",
+        "grade": "Abandoned",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Jesse Itzler"
+          }
+        ]
+      },
+      {
+        "title": "Mandala",
+        "kind": "Novella",
+        "yearPublished": "2017",
+        "slug": "mandala-by-philip-fracassi",
+        "grade": "B+",
+        "includedInSlugs": [
+          "behold-the-void-by-philip-fracassi"
+        ],
+        "authors": [
+          {
+            "name": "Philip Fracassi"
+          }
+        ]
+      },
+      {
+        "title": "Moonraker",
+        "kind": "Novel",
+        "yearPublished": "1955",
+        "slug": "moonraker-by-ian-fleming",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Ian Fleming"
+          }
+        ]
+      },
+      {
+        "title": "Mother",
+        "kind": "Short Story",
+        "yearPublished": "2015",
+        "slug": "mother-by-philip-fracassi",
+        "grade": "B-",
+        "includedInSlugs": [
+          "behold-the-void-by-philip-fracassi"
+        ],
+        "authors": [
+          {
+            "name": "Philip Fracassi"
+          }
+        ]
+      }
+    ],
+    "includedWorks": []
+  },
+  {
+    "sequence": "2022-03-18-1",
     "slug": "the-max-muscle-plan-by-brad-schoenfeld",
     "title": "The M.A.X. Muscle Plan",
     "subtitle": null,
@@ -8007,19 +10540,6 @@
     "moreByAuthors": [],
     "moreReviews": [
       {
-        "title": "The Skeptics' Guide to the Universe",
-        "kind": "Nonfiction",
-        "yearPublished": "2018",
-        "slug": "the-skeptics-guide-to-the-universe-by-steven-novella",
-        "grade": "B+",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Steven Novella"
-          }
-        ]
-      },
-      {
         "title": "Soft Construction of a Sunset",
         "kind": "Short Story",
         "yearPublished": "2017",
@@ -8031,6 +10551,19 @@
         "authors": [
           {
             "name": "Philip Fracassi"
+          }
+        ]
+      },
+      {
+        "title": "The Stand",
+        "kind": "Novel",
+        "yearPublished": "1978",
+        "slug": "the-stand-by-stephen-king",
+        "grade": "D",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Stephen King"
           }
         ]
       },
@@ -8063,28 +10596,28 @@
         ]
       },
       {
-        "title": "What Doesn't Kill Us",
-        "kind": "Nonfiction",
-        "yearPublished": "2017",
-        "slug": "what-doesnt-kill-us-by-scott-carney",
-        "grade": "C+",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Scott Carney"
-          }
-        ]
-      },
-      {
-        "title": "The Woods Are Dark",
+        "title": "Tread Softly",
         "kind": "Novel",
-        "yearPublished": "1981",
-        "slug": "the-woods-are-dark-by-richard-laymon",
-        "grade": "C+",
+        "yearPublished": "1987",
+        "slug": "tread-softly-by-richard-laymon",
+        "grade": "C",
         "includedInSlugs": [],
         "authors": [
           {
             "name": "Richard Laymon"
+          }
+        ]
+      },
+      {
+        "title": "True Myths",
+        "kind": "Nonfiction",
+        "yearPublished": "1996",
+        "slug": "true-myths-by-nigel-andrews",
+        "grade": "D+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Nigel Andrews"
           }
         ]
       }
@@ -8092,7 +10625,7 @@
     "includedWorks": []
   },
   {
-    "sequence": "2022-07-24-2022-07-18-1",
+    "sequence": "2022-07-24-1",
     "slug": "the-postman-always-rings-twice-by-james-m-cain",
     "title": "The Postman Always Rings Twice",
     "subtitle": null,
@@ -8124,21 +10657,6 @@
     "moreByAuthors": [],
     "moreReviews": [
       {
-        "title": "Mother",
-        "kind": "Short Story",
-        "yearPublished": "2015",
-        "slug": "mother-by-philip-fracassi",
-        "grade": "B-",
-        "includedInSlugs": [
-          "behold-the-void-by-philip-fracassi"
-        ],
-        "authors": [
-          {
-            "name": "Philip Fracassi"
-          }
-        ]
-      },
-      {
         "title": "On Writing",
         "kind": "Nonfiction",
         "yearPublished": "2000",
@@ -8167,6 +10685,32 @@
         ]
       },
       {
+        "title": "Peter Cushing",
+        "kind": "Nonfiction",
+        "yearPublished": "2013",
+        "slug": "peter-cushing-by-david-miller",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "David Miller"
+          }
+        ]
+      },
+      {
+        "title": "Rage",
+        "kind": "Novel",
+        "yearPublished": "1976",
+        "slug": "rage-by-stephen-king",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Stephen King"
+          }
+        ]
+      },
+      {
         "title": "Recessional",
         "kind": "Nonfiction",
         "yearPublished": "2022",
@@ -8191,25 +10735,12 @@
             "name": "Stephen Morris"
           }
         ]
-      },
-      {
-        "title": "The Rise of Theodore Roosevelt",
-        "kind": "Nonfiction",
-        "yearPublished": "1979",
-        "slug": "the-rise-of-theodore-roosevelt-by-edmund-morris",
-        "grade": "A-",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Edmund Morris"
-          }
-        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": "2022-05-07-2022-03-19-2",
+    "sequence": "2022-05-07-3",
     "slug": "the-rise-of-theodore-roosevelt-by-edmund-morris",
     "title": "The Rise of Theodore Roosevelt",
     "subtitle": null,
@@ -8229,7 +10760,7 @@
     ],
     "readings": [
       {
-        "sequence": 2,
+        "sequence": 3,
         "date": "2022-05-07",
         "isAudiobook": true,
         "abandoned": false,
@@ -8241,15 +10772,15 @@
     "moreByAuthors": [],
     "moreReviews": [
       {
-        "title": "The Postman Always Rings Twice",
+        "title": "Rage",
         "kind": "Novel",
-        "yearPublished": "1934",
-        "slug": "the-postman-always-rings-twice-by-james-m-cain",
-        "grade": "B+",
+        "yearPublished": "1976",
+        "slug": "rage-by-stephen-king",
+        "grade": "C",
         "includedInSlugs": [],
         "authors": [
           {
-            "name": "James M. Cain"
+            "name": "Stephen King"
           }
         ]
       },
@@ -8324,7 +10855,7 @@
     "includedWorks": []
   },
   {
-    "sequence": "2022-07-14-2022-07-02-2",
+    "sequence": "2022-07-14-1",
     "slug": "the-rules-of-attraction-by-bret-easton-ellis",
     "title": "The Rules of Attraction",
     "subtitle": null,
@@ -8344,7 +10875,7 @@
     ],
     "readings": [
       {
-        "sequence": 2,
+        "sequence": 1,
         "date": "2022-07-14",
         "isAudiobook": false,
         "abandoned": false,
@@ -8439,7 +10970,7 @@
     "includedWorks": []
   },
   {
-    "sequence": "2022-07-02-2022-06-25-1",
+    "sequence": "2022-07-02-1",
     "slug": "the-secret-history-by-donna-tartt",
     "title": "The Secret History",
     "subtitle": null,
@@ -8554,7 +11085,7 @@
     "includedWorks": []
   },
   {
-    "sequence": "2022-10-29-2022-10-16-1",
+    "sequence": "2022-10-29-2",
     "slug": "the-shining-by-stephen-king",
     "title": "The Shining",
     "subtitle": null,
@@ -8575,6 +11106,13 @@
     "readings": [
       {
         "sequence": 1,
+        "date": "2011-11-06",
+        "isAudiobook": false,
+        "abandoned": false,
+        "readingTime": 3
+      },
+      {
+        "sequence": 2,
         "date": "2022-10-29",
         "isAudiobook": true,
         "abandoned": false,
@@ -8589,11 +11127,11 @@
         "slug": "stephen-king",
         "works": [
           {
-            "title": "Doctor Sleep",
+            "title": "Carrie",
             "kind": "Novel",
-            "yearPublished": "2013",
-            "slug": "doctor-sleep-by-stephen-king",
-            "grade": "C+",
+            "yearPublished": "1974",
+            "slug": "carrie-by-stephen-king",
+            "grade": "B-",
             "includedInSlugs": [],
             "authors": [
               {
@@ -8602,11 +11140,63 @@
             ]
           },
           {
-            "title": "Carrie",
+            "title": "'Salem's Lot",
             "kind": "Novel",
-            "yearPublished": "1974",
-            "slug": "carrie-by-stephen-king",
-            "grade": "B-",
+            "yearPublished": "1975",
+            "slug": "salems-lot-by-stephen-king",
+            "grade": "B",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          },
+          {
+            "title": "Rage",
+            "kind": "Novel",
+            "yearPublished": "1976",
+            "slug": "rage-by-stephen-king",
+            "grade": "C",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          },
+          {
+            "title": "The Long Walk",
+            "kind": "Novel",
+            "yearPublished": "1978",
+            "slug": "the-long-walk-by-stephen-king",
+            "grade": "D",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          },
+          {
+            "title": "Night Shift",
+            "kind": "Collection",
+            "yearPublished": "1978",
+            "slug": "night-shift-by-stephen-king",
+            "grade": "B",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          },
+          {
+            "title": "The Stand",
+            "kind": "Novel",
+            "yearPublished": "1978",
+            "slug": "the-stand-by-stephen-king",
+            "grade": "D",
             "includedInSlugs": [],
             "authors": [
               {
@@ -8704,7 +11294,7 @@
     "includedWorks": []
   },
   {
-    "sequence": "2022-10-29-2022-10-22-1",
+    "sequence": "2022-10-29-1",
     "slug": "the-skeptics-guide-to-the-universe-by-steven-novella",
     "title": "The Skeptics' Guide to the Universe",
     "subtitle": "How to Know What's Really Real in a World Increasingly Full of Fake",
@@ -8790,6 +11380,195 @@
         ]
       },
       {
+        "title": "The Stand",
+        "kind": "Novel",
+        "yearPublished": "1978",
+        "slug": "the-stand-by-stephen-king",
+        "grade": "D",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Stephen King"
+          }
+        ]
+      },
+      {
+        "title": "Surfer Girl",
+        "kind": "Short Story",
+        "yearPublished": "2017",
+        "slug": "surfer-girl-by-philip-fracassi",
+        "grade": "C+",
+        "includedInSlugs": [
+          "behold-the-void-by-philip-fracassi"
+        ],
+        "authors": [
+          {
+            "name": "Philip Fracassi"
+          }
+        ]
+      }
+    ],
+    "includedWorks": []
+  },
+  {
+    "sequence": "2014-03-02-1",
+    "slug": "the-stand-by-stephen-king",
+    "title": "The Stand",
+    "subtitle": null,
+    "sortTitle": "Stand",
+    "yearPublished": "1978",
+    "grade": "D",
+    "gradeValue": 3,
+    "kind": "Novel",
+    "date": "2014-03-02",
+    "authors": [
+      {
+        "slug": "stephen-king",
+        "notes": null,
+        "name": "Stephen King",
+        "sortName": "King, Stephen"
+      }
+    ],
+    "readings": [
+      {
+        "sequence": 1,
+        "date": "2014-03-02",
+        "isAudiobook": false,
+        "abandoned": false,
+        "readingTime": 657
+      }
+    ],
+    "includedInSlugs": [],
+    "yearReviewed": 2014,
+    "moreByAuthors": [
+      {
+        "name": "Stephen King",
+        "slug": "stephen-king",
+        "works": [
+          {
+            "title": "The Shining",
+            "kind": "Novel",
+            "yearPublished": "1977",
+            "slug": "the-shining-by-stephen-king",
+            "grade": "B",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          },
+          {
+            "title": "The Long Walk",
+            "kind": "Novel",
+            "yearPublished": "1978",
+            "slug": "the-long-walk-by-stephen-king",
+            "grade": "D",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          },
+          {
+            "title": "Night Shift",
+            "kind": "Collection",
+            "yearPublished": "1978",
+            "slug": "night-shift-by-stephen-king",
+            "grade": "B",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          },
+          {
+            "title": "Cujo",
+            "kind": "Novel",
+            "yearPublished": "1981",
+            "slug": "cujo-by-stephen-king",
+            "grade": "B",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          },
+          {
+            "title": "On Writing",
+            "kind": "Nonfiction",
+            "yearPublished": "2000",
+            "slug": "on-writing-by-stephen-king",
+            "grade": "A-",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          },
+          {
+            "title": "Doctor Sleep",
+            "kind": "Novel",
+            "yearPublished": "2013",
+            "slug": "doctor-sleep-by-stephen-king",
+            "grade": "C+",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Stephen King"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "moreReviews": [
+      {
+        "title": "Set the Boy Free",
+        "kind": "Nonfiction",
+        "yearPublished": "2016",
+        "slug": "set-the-boy-free-by-johnny-marr",
+        "grade": "B+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Johnny Marr"
+          }
+        ]
+      },
+      {
+        "title": "The Skeptics' Guide to the Universe",
+        "kind": "Nonfiction",
+        "yearPublished": "2018",
+        "slug": "the-skeptics-guide-to-the-universe-by-steven-novella",
+        "grade": "B+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Steven Novella"
+          }
+        ]
+      },
+      {
+        "title": "Soft Construction of a Sunset",
+        "kind": "Short Story",
+        "yearPublished": "2017",
+        "slug": "soft-construction-of-a-sunset-by-philip-fracassi",
+        "grade": "B-",
+        "includedInSlugs": [
+          "behold-the-void-by-philip-fracassi"
+        ],
+        "authors": [
+          {
+            "name": "Philip Fracassi"
+          }
+        ]
+      },
+      {
         "title": "Surfer Girl",
         "kind": "Short Story",
         "yearPublished": "2017",
@@ -8816,12 +11595,25 @@
             "name": "Brad Schoenfeld"
           }
         ]
+      },
+      {
+        "title": "Total Recall",
+        "kind": "Nonfiction",
+        "yearPublished": "2012",
+        "slug": "total-recall-by-arnold-schwarzenegger",
+        "grade": "C+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Arnold Schwarzenegger"
+          }
+        ]
       }
     ],
     "includedWorks": []
   },
   {
-    "sequence": "2022-09-11-2022-09-10-1",
+    "sequence": "2022-09-11-2",
     "slug": "the-woods-are-dark-by-richard-laymon",
     "title": "The Woods Are Dark",
     "subtitle": null,
@@ -8842,6 +11634,13 @@
     "readings": [
       {
         "sequence": 1,
+        "date": "2014-03-18",
+        "isAudiobook": false,
+        "abandoned": false,
+        "readingTime": 5
+      },
+      {
+        "sequence": 2,
         "date": "2022-09-11",
         "isAudiobook": true,
         "abandoned": false,
@@ -8914,14 +11713,12 @@
             ]
           },
           {
-            "title": "Desert Pickup",
+            "title": "The Intruder",
             "kind": "Short Story",
-            "yearPublished": "1970",
-            "slug": "desert-pickup-by-richard-laymon",
-            "grade": "C-",
-            "includedInSlugs": [
-              "short-stories-volume-one-by-richard-laymon"
-            ],
+            "yearPublished": "1984",
+            "slug": "the-intruder-by-richard-laymon",
+            "grade": "C",
+            "includedInSlugs": [],
             "authors": [
               {
                 "name": "Richard Laymon"
@@ -8929,14 +11726,12 @@
             ]
           },
           {
-            "title": "Roadside Pickup",
-            "kind": "Short Story",
-            "yearPublished": "1974",
-            "slug": "roadside-pickup-by-richard-laymon",
-            "grade": "C-",
-            "includedInSlugs": [
-              "short-stories-volume-one-by-richard-laymon"
-            ],
+            "title": "Beware!",
+            "kind": "Novel",
+            "yearPublished": "1985",
+            "slug": "beware-by-richard-laymon",
+            "grade": "C",
+            "includedInSlugs": [],
             "authors": [
               {
                 "name": "Richard Laymon"
@@ -8948,28 +11743,28 @@
     ],
     "moreReviews": [
       {
-        "title": "The M.A.X. Muscle Plan",
-        "kind": "Nonfiction",
-        "yearPublished": "2012",
-        "slug": "the-max-muscle-plan-by-brad-schoenfeld",
-        "grade": "C-",
+        "title": "Tread Softly",
+        "kind": "Novel",
+        "yearPublished": "1987",
+        "slug": "tread-softly-by-richard-laymon",
+        "grade": "C",
         "includedInSlugs": [],
         "authors": [
           {
-            "name": "Brad Schoenfeld"
+            "name": "Richard Laymon"
           }
         ]
       },
       {
-        "title": "Total Recall",
+        "title": "True Myths",
         "kind": "Nonfiction",
-        "yearPublished": "2012",
-        "slug": "total-recall-by-arnold-schwarzenegger",
-        "grade": "C+",
+        "yearPublished": "1996",
+        "slug": "true-myths-by-nigel-andrews",
+        "grade": "D+",
         "includedInSlugs": [],
         "authors": [
           {
-            "name": "Arnold Schwarzenegger"
+            "name": "Nigel Andrews"
           }
         ]
       },
@@ -9032,7 +11827,7 @@
     "includedWorks": []
   },
   {
-    "sequence": "2022-05-21-2022-05-07-1",
+    "sequence": "2022-05-21-1",
     "slug": "total-recall-by-arnold-schwarzenegger",
     "title": "Total Recall",
     "subtitle": "My Unbelievably True Life Story",
@@ -9064,17 +11859,15 @@
     "moreByAuthors": [],
     "moreReviews": [
       {
-        "title": "Soft Construction of a Sunset",
-        "kind": "Short Story",
-        "yearPublished": "2017",
-        "slug": "soft-construction-of-a-sunset-by-philip-fracassi",
-        "grade": "B-",
-        "includedInSlugs": [
-          "behold-the-void-by-philip-fracassi"
-        ],
+        "title": "The Stand",
+        "kind": "Novel",
+        "yearPublished": "1978",
+        "slug": "the-stand-by-stephen-king",
+        "grade": "D",
+        "includedInSlugs": [],
         "authors": [
           {
-            "name": "Philip Fracassi"
+            "name": "Stephen King"
           }
         ]
       },
@@ -9103,6 +11896,323 @@
         "authors": [
           {
             "name": "Brad Schoenfeld"
+          }
+        ]
+      },
+      {
+        "title": "Tread Softly",
+        "kind": "Novel",
+        "yearPublished": "1987",
+        "slug": "tread-softly-by-richard-laymon",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Richard Laymon"
+          }
+        ]
+      },
+      {
+        "title": "True Myths",
+        "kind": "Nonfiction",
+        "yearPublished": "1996",
+        "slug": "true-myths-by-nigel-andrews",
+        "grade": "D+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Nigel Andrews"
+          }
+        ]
+      },
+      {
+        "title": "What Doesn't Kill Us",
+        "kind": "Nonfiction",
+        "yearPublished": "2017",
+        "slug": "what-doesnt-kill-us-by-scott-carney",
+        "grade": "C+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Scott Carney"
+          }
+        ]
+      }
+    ],
+    "includedWorks": []
+  },
+  {
+    "sequence": "2014-09-21-1",
+    "slug": "tread-softly-by-richard-laymon",
+    "title": "Tread Softly",
+    "subtitle": null,
+    "sortTitle": "Tread Softly",
+    "yearPublished": "1987",
+    "grade": "C",
+    "gradeValue": 6,
+    "kind": "Novel",
+    "date": "2014-09-21",
+    "authors": [
+      {
+        "slug": "richard-laymon",
+        "notes": "as Richard Kelly",
+        "name": "Richard Laymon",
+        "sortName": "Laymon, Richard"
+      }
+    ],
+    "readings": [
+      {
+        "sequence": 1,
+        "date": "2014-09-21",
+        "isAudiobook": false,
+        "abandoned": false,
+        "readingTime": 27
+      }
+    ],
+    "includedInSlugs": [],
+    "yearReviewed": 2014,
+    "moreByAuthors": [
+      {
+        "name": "Richard Laymon",
+        "slug": "richard-laymon",
+        "works": [
+          {
+            "title": "The Intruder",
+            "kind": "Short Story",
+            "yearPublished": "1984",
+            "slug": "the-intruder-by-richard-laymon",
+            "grade": "C",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Richard Laymon"
+              }
+            ]
+          },
+          {
+            "title": "Beware!",
+            "kind": "Novel",
+            "yearPublished": "1985",
+            "slug": "beware-by-richard-laymon",
+            "grade": "C",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Richard Laymon"
+              }
+            ]
+          },
+          {
+            "title": "The Last Hand",
+            "kind": "Short Story",
+            "yearPublished": "1985",
+            "slug": "the-last-hand-by-richard-laymon",
+            "grade": "D",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Richard Laymon"
+              }
+            ]
+          },
+          {
+            "title": "Desert Pickup",
+            "kind": "Short Story",
+            "yearPublished": "1970",
+            "slug": "desert-pickup-by-richard-laymon",
+            "grade": "C-",
+            "includedInSlugs": [
+              "short-stories-volume-one-by-richard-laymon"
+            ],
+            "authors": [
+              {
+                "name": "Richard Laymon"
+              }
+            ]
+          },
+          {
+            "title": "Roadside Pickup",
+            "kind": "Short Story",
+            "yearPublished": "1974",
+            "slug": "roadside-pickup-by-richard-laymon",
+            "grade": "C-",
+            "includedInSlugs": [
+              "short-stories-volume-one-by-richard-laymon"
+            ],
+            "authors": [
+              {
+                "name": "Richard Laymon"
+              }
+            ]
+          },
+          {
+            "title": "The Cellar",
+            "kind": "Novel",
+            "yearPublished": "1980",
+            "slug": "the-cellar-by-richard-laymon",
+            "grade": "C+",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Richard Laymon"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "moreReviews": [
+      {
+        "title": "Surfer Girl",
+        "kind": "Short Story",
+        "yearPublished": "2017",
+        "slug": "surfer-girl-by-philip-fracassi",
+        "grade": "C+",
+        "includedInSlugs": [
+          "behold-the-void-by-philip-fracassi"
+        ],
+        "authors": [
+          {
+            "name": "Philip Fracassi"
+          }
+        ]
+      },
+      {
+        "title": "The M.A.X. Muscle Plan",
+        "kind": "Nonfiction",
+        "yearPublished": "2012",
+        "slug": "the-max-muscle-plan-by-brad-schoenfeld",
+        "grade": "C-",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Brad Schoenfeld"
+          }
+        ]
+      },
+      {
+        "title": "Total Recall",
+        "kind": "Nonfiction",
+        "yearPublished": "2012",
+        "slug": "total-recall-by-arnold-schwarzenegger",
+        "grade": "C+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Arnold Schwarzenegger"
+          }
+        ]
+      },
+      {
+        "title": "True Myths",
+        "kind": "Nonfiction",
+        "yearPublished": "1996",
+        "slug": "true-myths-by-nigel-andrews",
+        "grade": "D+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Nigel Andrews"
+          }
+        ]
+      },
+      {
+        "title": "What Doesn't Kill Us",
+        "kind": "Nonfiction",
+        "yearPublished": "2017",
+        "slug": "what-doesnt-kill-us-by-scott-carney",
+        "grade": "C+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Scott Carney"
+          }
+        ]
+      },
+      {
+        "title": "The Woods Are Dark",
+        "kind": "Novel",
+        "yearPublished": "1981",
+        "slug": "the-woods-are-dark-by-richard-laymon",
+        "grade": "C+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Richard Laymon"
+          }
+        ]
+      }
+    ],
+    "includedWorks": []
+  },
+  {
+    "sequence": "2013-04-16-1",
+    "slug": "true-myths-by-nigel-andrews",
+    "title": "True Myths",
+    "subtitle": "The Life and Times of Arnold Schwarzenegger",
+    "sortTitle": "True Myths: The Life and Times of Arnold Schwarzenegger",
+    "yearPublished": "1996",
+    "grade": "D+",
+    "gradeValue": 4,
+    "kind": "Nonfiction",
+    "date": "2013-04-16",
+    "authors": [
+      {
+        "slug": "nigel-andrews",
+        "notes": null,
+        "name": "Nigel Andrews",
+        "sortName": "Andrews, Nigel"
+      }
+    ],
+    "readings": [
+      {
+        "sequence": 1,
+        "date": "2013-04-16",
+        "isAudiobook": false,
+        "abandoned": false,
+        "readingTime": 10
+      }
+    ],
+    "includedInSlugs": [],
+    "yearReviewed": 2013,
+    "moreByAuthors": [],
+    "moreReviews": [
+      {
+        "title": "The M.A.X. Muscle Plan",
+        "kind": "Nonfiction",
+        "yearPublished": "2012",
+        "slug": "the-max-muscle-plan-by-brad-schoenfeld",
+        "grade": "C-",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Brad Schoenfeld"
+          }
+        ]
+      },
+      {
+        "title": "Total Recall",
+        "kind": "Nonfiction",
+        "yearPublished": "2012",
+        "slug": "total-recall-by-arnold-schwarzenegger",
+        "grade": "C+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Arnold Schwarzenegger"
+          }
+        ]
+      },
+      {
+        "title": "Tread Softly",
+        "kind": "Novel",
+        "yearPublished": "1987",
+        "slug": "tread-softly-by-richard-laymon",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Richard Laymon"
           }
         ]
       },
@@ -9149,7 +12259,7 @@
     "includedWorks": []
   },
   {
-    "sequence": "2022-10-04-2022-09-25-1",
+    "sequence": "2022-10-04-1",
     "slug": "what-doesnt-kill-us-by-scott-carney",
     "title": "What Doesn't Kill Us",
     "subtitle": "How Freezing Water, Extreme Altitude, and Environmental Conditioning Will Renew Our Lost Evolutionary Strength",
@@ -9181,34 +12291,6 @@
     "moreByAuthors": [],
     "moreReviews": [
       {
-        "title": "Surfer Girl",
-        "kind": "Short Story",
-        "yearPublished": "2017",
-        "slug": "surfer-girl-by-philip-fracassi",
-        "grade": "C+",
-        "includedInSlugs": [
-          "behold-the-void-by-philip-fracassi"
-        ],
-        "authors": [
-          {
-            "name": "Philip Fracassi"
-          }
-        ]
-      },
-      {
-        "title": "The M.A.X. Muscle Plan",
-        "kind": "Nonfiction",
-        "yearPublished": "2012",
-        "slug": "the-max-muscle-plan-by-brad-schoenfeld",
-        "grade": "C-",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Brad Schoenfeld"
-          }
-        ]
-      },
-      {
         "title": "Total Recall",
         "kind": "Nonfiction",
         "yearPublished": "2012",
@@ -9218,6 +12300,32 @@
         "authors": [
           {
             "name": "Arnold Schwarzenegger"
+          }
+        ]
+      },
+      {
+        "title": "Tread Softly",
+        "kind": "Novel",
+        "yearPublished": "1987",
+        "slug": "tread-softly-by-richard-laymon",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Richard Laymon"
+          }
+        ]
+      },
+      {
+        "title": "True Myths",
+        "kind": "Nonfiction",
+        "yearPublished": "1996",
+        "slug": "true-myths-by-nigel-andrews",
+        "grade": "D+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Nigel Andrews"
           }
         ]
       },

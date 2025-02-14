@@ -2,14 +2,13 @@
   "name": "Stephen Morris",
   "sortName": "Morris, Stephen",
   "slug": "stephen-morris",
-  "works": [
+  "reviewedWorks": [
     {
       "title": "Fast Forward",
       "yearPublished": "2020",
       "kind": "Nonfiction",
       "slug": "fast-forward-by-stephen-morris",
       "sortTitle": "Fast Forward: Confessions of a Post-Punk Percussionist: Volume II",
-      "reviewed": true,
       "grade": "A-",
       "gradeValue": 11,
       "authors": [
@@ -28,7 +27,6 @@
       "kind": "Nonfiction",
       "slug": "record-play-pause-by-stephen-morris",
       "sortTitle": "Record Play Pause",
-      "reviewed": true,
       "grade": "A",
       "gradeValue": 12,
       "authors": [
@@ -41,8 +39,5 @@
       ],
       "includedInSlugs": []
     }
-  ],
-  "reviewedWorkCount": 2,
-  "workCount": 2,
-  "shelfWorkCount": 0
+  ]
 }

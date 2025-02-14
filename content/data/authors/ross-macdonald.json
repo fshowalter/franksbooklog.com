@@ -2,14 +2,13 @@
   "name": "Ross Macdonald",
   "sortName": "Macdonald, Ross",
   "slug": "ross-macdonald",
-  "works": [
+  "reviewedWorks": [
     {
       "title": "The Dark Tunnel",
       "yearPublished": "1944",
       "kind": "Novel",
       "slug": "the-dark-tunnel-by-ross-macdonald",
       "sortTitle": "Dark Tunnel",
-      "reviewed": true,
       "grade": "D+",
       "gradeValue": 4,
       "authors": [
@@ -22,8 +21,5 @@
       ],
       "includedInSlugs": []
     }
-  ],
-  "reviewedWorkCount": 1,
-  "workCount": 1,
-  "shelfWorkCount": 0
+  ]
 }

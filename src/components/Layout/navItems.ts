@@ -21,6 +21,11 @@ export const navItems: NavItem[] = [
     text: "Reviews",
   },
   {
+    subItems: [],
+    target: "/authors/",
+    text: "Authors",
+  },
+  {
     subItems: [
       {
         subItems: [],
@@ -30,15 +35,5 @@ export const navItems: NavItem[] = [
     ],
     target: "/readings/",
     text: "Reading Log",
-  },
-  {
-    subItems: [],
-    target: "/authors/",
-    text: "Authors",
-  },
-  {
-    subItems: [],
-    target: "/shelf/",
-    text: "Shelf",
   },
 ];

@@ -2,14 +2,13 @@
   "name": "Edmund Morris",
   "sortName": "Morris, Edmund",
   "slug": "edmund-morris",
-  "works": [
+  "reviewedWorks": [
     {
       "title": "The Rise of Theodore Roosevelt",
       "yearPublished": "1979",
       "kind": "Nonfiction",
       "slug": "the-rise-of-theodore-roosevelt-by-edmund-morris",
       "sortTitle": "Rise of Theodore Roosevelt",
-      "reviewed": true,
       "grade": "A-",
       "gradeValue": 11,
       "authors": [
@@ -22,8 +21,5 @@
       ],
       "includedInSlugs": []
     }
-  ],
-  "reviewedWorkCount": 1,
-  "workCount": 1,
-  "shelfWorkCount": 0
+  ]
 }

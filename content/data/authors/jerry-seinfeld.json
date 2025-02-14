@@ -2,14 +2,13 @@
   "name": "Jerry Seinfeld",
   "sortName": "Seinfeld, Jerry",
   "slug": "jerry-seinfeld",
-  "works": [
+  "reviewedWorks": [
     {
       "title": "Is This Anything?",
       "yearPublished": "2020",
       "kind": "Nonfiction",
       "slug": "is-this-anything-by-jerry-seinfeld",
       "sortTitle": "Is This Anything?",
-      "reviewed": true,
       "grade": "C",
       "gradeValue": 6,
       "authors": [
@@ -22,8 +21,5 @@
       ],
       "includedInSlugs": []
     }
-  ],
-  "reviewedWorkCount": 1,
-  "workCount": 1,
-  "shelfWorkCount": 0
+  ]
 }
