@@ -8,6 +8,7 @@ export default {
       abandoned: "var(--bg-abandoned)",
       accent: "var(--bg-accent)",
       canvas: "var(--bg-canvas)",
+      cover: "var(--bg-cover)",
       default: "var(--bg-default)",
       footer: "var(--bg-footer)",
       group: "var(--bg-group)",
