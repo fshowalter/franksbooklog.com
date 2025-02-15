@@ -1,6 +1,6 @@
 {
   "year": "2014",
-  "workCount": 27,
+  "workCount": 28,
   "bookCount": 23,
   "kindDistribution": [
     {
@@ -17,7 +17,7 @@
     },
     {
       "name": "Short Story",
-      "count": 4
+      "count": 5
     }
   ],
   "editionDistribution": [
@@ -31,7 +31,7 @@
     },
     {
       "name": "Paperback",
-      "count": 23
+      "count": 24
     }
   ],
   "decadeDistribution": [
@@ -41,7 +41,7 @@
     },
     {
       "name": "1980s",
-      "count": 22
+      "count": 23
     },
     {
       "name": "2000s",
@@ -55,7 +55,7 @@
   "mostReadAuthors": [
     {
       "name": "Richard Laymon",
-      "count": 15,
+      "count": 16,
       "slug": "richard-laymon",
       "readings": [
         {
@@ -222,6 +222,17 @@
           "kind": "Novel",
           "title": "Tread Softly",
           "yearPublished": "1987",
+          "includedInSlugs": [],
+          "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2014-10-28",
+          "slug": "the-lonely-one-by-richard-laymon",
+          "edition": "Paperback",
+          "kind": "Short Story",
+          "title": "The Lonely One",
+          "yearPublished": "1985",
           "includedInSlugs": [],
           "reviewed": true
         }

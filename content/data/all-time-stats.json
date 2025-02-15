@@ -1,6 +1,6 @@
 {
-  "reviewCount": 78,
-  "workCount": 101,
+  "reviewCount": 79,
+  "workCount": 104,
   "bookCount": 85,
   "gradeDistribution": [
     {
@@ -30,7 +30,7 @@
     },
     {
       "name": "C+",
-      "count": 14,
+      "count": 15,
       "sortValue": 7
     },
     {
@@ -83,7 +83,7 @@
     },
     {
       "name": "Short Story",
-      "count": 14
+      "count": 17
     }
   ],
   "editionDistribution": [
@@ -101,7 +101,7 @@
     },
     {
       "name": "Paperback",
-      "count": 30
+      "count": 33
     }
   ],
   "decadeDistribution": [
@@ -127,7 +127,7 @@
     },
     {
       "name": "1980s",
-      "count": 30
+      "count": 33
     },
     {
       "name": "1990s",
@@ -149,7 +149,7 @@
   "mostReadAuthors": [
     {
       "name": "Richard Laymon",
-      "count": 20,
+      "count": 23,
       "slug": "richard-laymon",
       "readings": [
         {
@@ -321,6 +321,28 @@
         },
         {
           "sequence": 1,
+          "date": "2014-10-28",
+          "slug": "the-lonely-one-by-richard-laymon",
+          "edition": "Paperback",
+          "kind": "Short Story",
+          "title": "The Lonely One",
+          "yearPublished": "1985",
+          "includedInSlugs": [],
+          "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2015-01-28",
+          "slug": "the-lonely-one-by-richard-laymon",
+          "edition": "Paperback",
+          "kind": "Short Story",
+          "title": "The Lonely One",
+          "yearPublished": "1985",
+          "includedInSlugs": [],
+          "reviewed": true
+        },
+        {
+          "sequence": 1,
           "date": "2022-03-16",
           "slug": "the-cellar-by-richard-laymon",
           "edition": "Kindle",
@@ -378,6 +400,17 @@
           "includedInSlugs": [
             "short-stories-volume-one-by-richard-laymon"
           ],
+          "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2025-02-15",
+          "slug": "the-lonely-one-by-richard-laymon",
+          "edition": "Paperback",
+          "kind": "Short Story",
+          "title": "The Lonely One",
+          "yearPublished": "1985",
+          "includedInSlugs": [],
           "reviewed": true
         }
       ]
