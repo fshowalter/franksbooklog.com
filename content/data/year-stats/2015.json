@@ -1,11 +1,15 @@
 {
   "year": "2015",
-  "workCount": 3,
-  "bookCount": 2,
+  "workCount": 4,
+  "bookCount": 3,
   "kindDistribution": [
     {
       "name": "Nonfiction",
       "count": 2
+    },
+    {
+      "name": "Novel",
+      "count": 1
     },
     {
       "name": "Short Story",
@@ -13,6 +17,10 @@
     }
   ],
   "editionDistribution": [
+    {
+      "name": "Hardcover",
+      "count": 1
+    },
     {
       "name": "Paperback",
       "count": 3
@@ -29,7 +37,7 @@
     },
     {
       "name": "2010s",
-      "count": 1
+      "count": 2
     }
   ],
   "mostReadAuthors": []
