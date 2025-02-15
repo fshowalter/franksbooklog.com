@@ -1,7 +1,7 @@
 {
   "reviewCount": 78,
-  "workCount": 100,
-  "bookCount": 84,
+  "workCount": 101,
+  "bookCount": 85,
   "gradeDistribution": [
     {
       "name": "A",
@@ -67,7 +67,7 @@
   "kindDistribution": [
     {
       "name": "Collection",
-      "count": 2
+      "count": 3
     },
     {
       "name": "Nonfiction",
@@ -101,7 +101,7 @@
     },
     {
       "name": "Paperback",
-      "count": 29
+      "count": 30
     }
   ],
   "decadeDistribution": [
@@ -127,7 +127,7 @@
     },
     {
       "name": "1980s",
-      "count": 29
+      "count": 30
     },
     {
       "name": "1990s",
@@ -384,7 +384,7 @@
     },
     {
       "name": "Stephen King",
-      "count": 18,
+      "count": 19,
       "slug": "stephen-king",
       "readings": [
         {
@@ -515,6 +515,17 @@
           "edition": "Paperback",
           "kind": "Novel",
           "title": "The Gunslinger",
+          "yearPublished": "1982",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2014-10-27",
+          "slug": "different-seasons-by-stephen-king",
+          "edition": "Paperback",
+          "kind": "Collection",
+          "title": "Different Seasons",
           "yearPublished": "1982",
           "includedInSlugs": [],
           "reviewed": false
