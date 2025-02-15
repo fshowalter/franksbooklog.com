@@ -51,7 +51,7 @@ export function MoreReviews({
 
 function MoreReviewsCard({ value }: { value: MoreReviewsValue }): JSX.Element {
   return (
-    <li className="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] desktop:w-[14.16666667%]">
+    <li className="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-cover-back has-[a:hover]:shadow-hover min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] desktop:w-[14.16666667%]">
       <Cover
         decoding="async"
         imageProps={value.coverImageProps}
@@ -59,7 +59,7 @@ function MoreReviewsCard({ value }: { value: MoreReviewsValue }): JSX.Element {
         alt=""
         loading="lazy"
       />
-      <div className="flex grow flex-col items-center px-[8%] pb-8 pt-3 desktop:pl-[8.5%] desktop:pr-[10%]">
+      <div className="flex w-full grow flex-col items-center bg-default px-[8%] pb-8 pt-3 has-[a:hover]:bg-stripe desktop:pl-[8.5%] desktop:pr-[10%]">
         <div className="text-center text-md font-medium leading-6">
           <a
             className="z-10 inline-block text-accent decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:before:opacity-0"
@@ -74,7 +74,8 @@ function MoreReviewsCard({ value }: { value: MoreReviewsValue }): JSX.Element {
           <span className="whitespace-nowrap">{value.kind}</span>
         </div>
         <p className="text-center text-base text-subtle">
-          by {toSentenceArray(value.authors.map((author) => author.name))}
+          <span className="font-light">by</span>{" "}
+          {toSentenceArray(value.authors.map((author) => author.name))}
         </p>{" "}
         <Grade className="mt-2" height={18} value={value.grade} />
       </div>
