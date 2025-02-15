@@ -1,6 +1,6 @@
 {
   "year": "2014",
-  "workCount": 28,
+  "workCount": 29,
   "bookCount": 23,
   "kindDistribution": [
     {
@@ -17,7 +17,7 @@
     },
     {
       "name": "Short Story",
-      "count": 5
+      "count": 6
     }
   ],
   "editionDistribution": [
@@ -31,7 +31,7 @@
     },
     {
       "name": "Paperback",
-      "count": 24
+      "count": 25
     }
   ],
   "decadeDistribution": [
@@ -41,7 +41,7 @@
     },
     {
       "name": "1980s",
-      "count": 23
+      "count": 24
     },
     {
       "name": "2000s",
@@ -55,7 +55,7 @@
   "mostReadAuthors": [
     {
       "name": "Richard Laymon",
-      "count": 16,
+      "count": 17,
       "slug": "richard-laymon",
       "readings": [
         {
@@ -235,6 +235,17 @@
           "yearPublished": "1985",
           "includedInSlugs": [],
           "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2014-11-02",
+          "slug": "live-bait-by-richard-laymon",
+          "edition": "Paperback",
+          "kind": "Short Story",
+          "title": "Live Bait",
+          "yearPublished": "1985",
+          "includedInSlugs": [],
+          "reviewed": false
         }
       ]
     },
