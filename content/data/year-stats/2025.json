@@ -1,12 +1,8 @@
 {
-  "year": "2015",
-  "workCount": 2,
-  "bookCount": 1,
+  "year": "2025",
+  "workCount": 1,
+  "bookCount": 0,
   "kindDistribution": [
-    {
-      "name": "Nonfiction",
-      "count": 1
-    },
     {
       "name": "Short Story",
       "count": 1
@@ -15,16 +11,12 @@
   "editionDistribution": [
     {
       "name": "Paperback",
-      "count": 2
+      "count": 1
     }
   ],
   "decadeDistribution": [
     {
       "name": "1980s",
-      "count": 1
-    },
-    {
-      "name": "2010s",
       "count": 1
     }
   ],
