@@ -1,20 +1,24 @@
 {
   "year": "2016",
-  "workCount": 1,
-  "bookCount": 1,
+  "workCount": 2,
+  "bookCount": 2,
   "kindDistribution": [
     {
       "name": "Nonfiction",
-      "count": 1
+      "count": 2
     }
   ],
   "editionDistribution": [
     {
       "name": "Paperback",
-      "count": 1
+      "count": 2
     }
   ],
   "decadeDistribution": [
+    {
+      "name": "1990s",
+      "count": 1
+    },
     {
       "name": "2010s",
       "count": 1
