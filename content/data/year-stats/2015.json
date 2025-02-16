@@ -1,11 +1,11 @@
 {
   "year": "2015",
-  "workCount": 5,
-  "bookCount": 4,
+  "workCount": 6,
+  "bookCount": 5,
   "kindDistribution": [
     {
       "name": "Nonfiction",
-      "count": 2
+      "count": 3
     },
     {
       "name": "Novel",
@@ -19,7 +19,7 @@
   "editionDistribution": [
     {
       "name": "Hardcover",
-      "count": 1
+      "count": 2
     },
     {
       "name": "Paperback",
@@ -37,8 +37,38 @@
     },
     {
       "name": "2010s",
-      "count": 2
+      "count": 3
     }
   ],
-  "mostReadAuthors": []
+  "mostReadAuthors": [
+    {
+      "name": "James Kaplan",
+      "count": 2,
+      "slug": "james-kaplan",
+      "readings": [
+        {
+          "sequence": 1,
+          "date": "2015-01-25",
+          "slug": "frank-by-james-kaplan",
+          "edition": "Paperback",
+          "kind": "Nonfiction",
+          "title": "Frank",
+          "yearPublished": "2010",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2015-12-30",
+          "slug": "sinatra-by-james-kaplan",
+          "edition": "Hardcover",
+          "kind": "Nonfiction",
+          "title": "Sinatra",
+          "yearPublished": "2015",
+          "includedInSlugs": [],
+          "reviewed": false
+        }
+      ]
+    }
+  ]
 }
