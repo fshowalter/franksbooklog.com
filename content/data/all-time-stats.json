@@ -93,7 +93,7 @@
     },
     {
       "name": "Hardcover",
-      "count": 6
+      "count": 7
     },
     {
       "name": "Kindle",
@@ -101,7 +101,7 @@
     },
     {
       "name": "Paperback",
-      "count": 38
+      "count": 37
     }
   ],
   "decadeDistribution": [
@@ -841,7 +841,7 @@
           "sequence": 1,
           "date": "2016-01-03",
           "slug": "life-the-rat-pack-by-james-kaplan",
-          "edition": "Paperback",
+          "edition": "Hardcover",
           "kind": "Nonfiction",
           "title": "LIFE The Rat Pack",
           "yearPublished": "2013",
