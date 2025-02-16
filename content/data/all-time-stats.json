@@ -817,17 +817,6 @@
       "readings": [
         {
           "sequence": 1,
-          "date": "2015-01-03",
-          "slug": "life-the-rat-pack-by-james-kaplan",
-          "edition": "Paperback",
-          "kind": "Nonfiction",
-          "title": "LIFE The Rat Pack",
-          "yearPublished": "2013",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "sequence": 1,
           "date": "2015-01-25",
           "slug": "frank-by-james-kaplan",
           "edition": "Paperback",
@@ -845,6 +834,17 @@
           "kind": "Nonfiction",
           "title": "Sinatra",
           "yearPublished": "2015",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2016-01-03",
+          "slug": "life-the-rat-pack-by-james-kaplan",
+          "edition": "Paperback",
+          "kind": "Nonfiction",
+          "title": "LIFE The Rat Pack",
+          "yearPublished": "2013",
           "includedInSlugs": [],
           "reviewed": false
         }
