@@ -1,7 +1,7 @@
 {
   "reviewCount": 79,
-  "workCount": 108,
-  "bookCount": 88,
+  "workCount": 109,
+  "bookCount": 89,
   "gradeDistribution": [
     {
       "name": "A",
@@ -71,7 +71,7 @@
     },
     {
       "name": "Nonfiction",
-      "count": 33
+      "count": 34
     },
     {
       "name": "Novel",
@@ -93,7 +93,7 @@
     },
     {
       "name": "Hardcover",
-      "count": 5
+      "count": 6
     },
     {
       "name": "Kindle",
@@ -139,7 +139,7 @@
     },
     {
       "name": "2010s",
-      "count": 28
+      "count": 29
     },
     {
       "name": "2020s",
@@ -945,6 +945,35 @@
           "yearPublished": "1987",
           "includedInSlugs": [],
           "reviewed": true
+        }
+      ]
+    },
+    {
+      "name": "James Kaplan",
+      "count": 2,
+      "slug": "james-kaplan",
+      "readings": [
+        {
+          "sequence": 1,
+          "date": "2015-01-25",
+          "slug": "frank-by-james-kaplan",
+          "edition": "Paperback",
+          "kind": "Nonfiction",
+          "title": "Frank",
+          "yearPublished": "2010",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2015-12-30",
+          "slug": "sinatra-by-james-kaplan",
+          "edition": "Hardcover",
+          "kind": "Nonfiction",
+          "title": "Sinatra",
+          "yearPublished": "2015",
+          "includedInSlugs": [],
+          "reviewed": false
         }
       ]
     },
