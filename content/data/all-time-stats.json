@@ -1,7 +1,7 @@
 {
   "reviewCount": 79,
-  "workCount": 109,
-  "bookCount": 89,
+  "workCount": 110,
+  "bookCount": 90,
   "gradeDistribution": [
     {
       "name": "A",
@@ -71,7 +71,7 @@
     },
     {
       "name": "Nonfiction",
-      "count": 34
+      "count": 35
     },
     {
       "name": "Novel",
@@ -101,7 +101,7 @@
     },
     {
       "name": "Paperback",
-      "count": 36
+      "count": 37
     }
   ],
   "decadeDistribution": [
@@ -139,7 +139,7 @@
     },
     {
       "name": "2010s",
-      "count": 29
+      "count": 30
     },
     {
       "name": "2020s",
@@ -811,6 +811,46 @@
       ]
     },
     {
+      "name": "James Kaplan",
+      "count": 3,
+      "slug": "james-kaplan",
+      "readings": [
+        {
+          "sequence": 1,
+          "date": "2015-01-03",
+          "slug": "life-the-rat-pack-by-james-kaplan",
+          "edition": "Paperback",
+          "kind": "Nonfiction",
+          "title": "LIFE The Rat Pack",
+          "yearPublished": "2013",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2015-01-25",
+          "slug": "frank-by-james-kaplan",
+          "edition": "Paperback",
+          "kind": "Nonfiction",
+          "title": "Frank",
+          "yearPublished": "2010",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2015-12-30",
+          "slug": "sinatra-by-james-kaplan",
+          "edition": "Hardcover",
+          "kind": "Nonfiction",
+          "title": "Sinatra",
+          "yearPublished": "2015",
+          "includedInSlugs": [],
+          "reviewed": false
+        }
+      ]
+    },
+    {
       "name": "Stephen Morris",
       "count": 3,
       "slug": "stephen-morris",
@@ -945,35 +985,6 @@
           "yearPublished": "1987",
           "includedInSlugs": [],
           "reviewed": true
-        }
-      ]
-    },
-    {
-      "name": "James Kaplan",
-      "count": 2,
-      "slug": "james-kaplan",
-      "readings": [
-        {
-          "sequence": 1,
-          "date": "2015-01-25",
-          "slug": "frank-by-james-kaplan",
-          "edition": "Paperback",
-          "kind": "Nonfiction",
-          "title": "Frank",
-          "yearPublished": "2010",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "sequence": 1,
-          "date": "2015-12-30",
-          "slug": "sinatra-by-james-kaplan",
-          "edition": "Hardcover",
-          "kind": "Nonfiction",
-          "title": "Sinatra",
-          "yearPublished": "2015",
-          "includedInSlugs": [],
-          "reviewed": false
         }
       ]
     },

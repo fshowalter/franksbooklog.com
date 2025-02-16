@@ -1,11 +1,11 @@
 {
   "year": "2015",
-  "workCount": 6,
-  "bookCount": 5,
+  "workCount": 7,
+  "bookCount": 6,
   "kindDistribution": [
     {
       "name": "Nonfiction",
-      "count": 3
+      "count": 4
     },
     {
       "name": "Novel",
@@ -23,7 +23,7 @@
     },
     {
       "name": "Paperback",
-      "count": 4
+      "count": 5
     }
   ],
   "decadeDistribution": [
@@ -37,15 +37,26 @@
     },
     {
       "name": "2010s",
-      "count": 3
+      "count": 4
     }
   ],
   "mostReadAuthors": [
     {
       "name": "James Kaplan",
-      "count": 2,
+      "count": 3,
       "slug": "james-kaplan",
       "readings": [
+        {
+          "sequence": 1,
+          "date": "2015-01-03",
+          "slug": "life-the-rat-pack-by-james-kaplan",
+          "edition": "Paperback",
+          "kind": "Nonfiction",
+          "title": "LIFE The Rat Pack",
+          "yearPublished": "2013",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
         {
           "sequence": 1,
           "date": "2015-01-25",
