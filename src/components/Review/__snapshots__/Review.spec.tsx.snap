@@ -5340,11 +5340,11 @@ exports[`Review > matches snapshot for slug 'brain-wave-by-poul-anderson' 1`] = 
               />
             </div>
             <div
-              class="relative -top-4 z-10 h-[372px] "
+              class="relative -top-4 z-10 h-[372px] shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
             >
               <img
                 alt=""
-                class="safari-border-radius-fix "
+                class="safari-border-radius-fix shadow-[0_5px_20px_rgba(49,46,42,0.22)]"
                 decoding="auto"
                 height="372"
                 loading="eager"
