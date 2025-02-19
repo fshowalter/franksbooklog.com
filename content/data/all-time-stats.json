@@ -1,7 +1,7 @@
 {
   "reviewCount": 79,
-  "workCount": 111,
-  "bookCount": 91,
+  "workCount": 112,
+  "bookCount": 92,
   "gradeDistribution": [
     {
       "name": "A",
@@ -75,7 +75,7 @@
     },
     {
       "name": "Novel",
-      "count": 52
+      "count": 53
     },
     {
       "name": "Novella",
@@ -101,7 +101,7 @@
     },
     {
       "name": "Paperback",
-      "count": 37
+      "count": 38
     }
   ],
   "decadeDistribution": [
@@ -127,7 +127,7 @@
     },
     {
       "name": "1980s",
-      "count": 34
+      "count": 35
     },
     {
       "name": "1990s",
@@ -428,7 +428,7 @@
     },
     {
       "name": "Stephen King",
-      "count": 19,
+      "count": 20,
       "slug": "stephen-king",
       "readings": [
         {
@@ -571,6 +571,17 @@
           "kind": "Collection",
           "title": "Different Seasons",
           "yearPublished": "1982",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2016-01-14",
+          "slug": "christine-by-stephen-king",
+          "edition": "Paperback",
+          "kind": "Novel",
+          "title": "Christine",
+          "yearPublished": "1983",
           "includedInSlugs": [],
           "reviewed": false
         },
