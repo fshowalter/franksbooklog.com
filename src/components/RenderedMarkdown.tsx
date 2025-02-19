@@ -19,7 +19,7 @@ export function RenderedMarkdown({
 
   return (
     <Component
-      className={ccn("rendered-markdown font-light", className)}
+      className={ccn("rendered-markdown", className)}
       dangerouslySetInnerHTML={{
         __html: text,
       }}

@@ -2484,15 +2484,15 @@
         ]
       },
       {
-        "title": "Doctor Sleep",
+        "title": "The Devils of D-Day",
         "kind": "Novel",
-        "yearPublished": "2013",
-        "slug": "doctor-sleep-by-stephen-king",
-        "grade": "C+",
+        "yearPublished": "1978",
+        "slug": "the-devils-of-d-day-by-graham-masterton",
+        "grade": "B",
         "includedInSlugs": [],
         "authors": [
           {
-            "name": "Stephen King"
+            "name": "Graham Masterton"
           }
         ]
       }
@@ -2660,6 +2660,19 @@
         ]
       },
       {
+        "title": "The Devils of D-Day",
+        "kind": "Novel",
+        "yearPublished": "1978",
+        "slug": "the-devils-of-d-day-by-graham-masterton",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Graham Masterton"
+          }
+        ]
+      },
+      {
         "title": "Doctor Sleep",
         "kind": "Novel",
         "yearPublished": "2013",
@@ -2682,19 +2695,6 @@
         "authors": [
           {
             "name": "Philip Fracassi"
-          }
-        ]
-      },
-      {
-        "title": "Dracula",
-        "kind": "Novel",
-        "yearPublished": "1897",
-        "slug": "dracula-by-bram-stoker",
-        "grade": "C+",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Bram Stoker"
           }
         ]
       }
@@ -2819,19 +2819,6 @@
     ],
     "moreReviews": [
       {
-        "title": "Dark Crusade",
-        "kind": "Novel",
-        "yearPublished": "1976",
-        "slug": "dark-crusade-by-karl-edward-wagner",
-        "grade": "C",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Karl Edward Wagner"
-          }
-        ]
-      },
-      {
         "title": "The Dark Tunnel",
         "kind": "Novel",
         "yearPublished": "1944",
@@ -2856,6 +2843,19 @@
         "authors": [
           {
             "name": "Richard Laymon"
+          }
+        ]
+      },
+      {
+        "title": "The Devils of D-Day",
+        "kind": "Novel",
+        "yearPublished": "1978",
+        "slug": "the-devils-of-d-day-by-graham-masterton",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Graham Masterton"
           }
         ]
       },
@@ -3027,19 +3027,6 @@
     ],
     "moreReviews": [
       {
-        "title": "The Dark Tunnel",
-        "kind": "Novel",
-        "yearPublished": "1944",
-        "slug": "the-dark-tunnel-by-ross-macdonald",
-        "grade": "D+",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Ross Macdonald"
-          }
-        ]
-      },
-      {
         "title": "Desert Pickup",
         "kind": "Short Story",
         "yearPublished": "1970",
@@ -3051,6 +3038,19 @@
         "authors": [
           {
             "name": "Richard Laymon"
+          }
+        ]
+      },
+      {
+        "title": "The Devils of D-Day",
+        "kind": "Novel",
+        "yearPublished": "1978",
+        "slug": "the-devils-of-d-day-by-graham-masterton",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Graham Masterton"
           }
         ]
       },
@@ -3145,17 +3145,15 @@
     "moreByAuthors": [],
     "moreReviews": [
       {
-        "title": "Desert Pickup",
-        "kind": "Short Story",
-        "yearPublished": "1970",
-        "slug": "desert-pickup-by-richard-laymon",
-        "grade": "C-",
-        "includedInSlugs": [
-          "short-stories-volume-one-by-richard-laymon"
-        ],
+        "title": "The Devils of D-Day",
+        "kind": "Novel",
+        "yearPublished": "1978",
+        "slug": "the-devils-of-d-day-by-graham-masterton",
+        "grade": "B",
+        "includedInSlugs": [],
         "authors": [
           {
-            "name": "Richard Laymon"
+            "name": "Graham Masterton"
           }
         ]
       },
@@ -9657,6 +9655,108 @@
         ]
       },
       {
+        "title": "The Devils of D-Day",
+        "kind": "Novel",
+        "yearPublished": "1978",
+        "slug": "the-devils-of-d-day-by-graham-masterton",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Graham Masterton"
+          }
+        ]
+      },
+      {
+        "title": "Doctor Sleep",
+        "kind": "Novel",
+        "yearPublished": "2013",
+        "slug": "doctor-sleep-by-stephen-king",
+        "grade": "C+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Stephen King"
+          }
+        ]
+      }
+    ],
+    "includedWorks": []
+  },
+  {
+    "sequence": "2016-01-26-1",
+    "slug": "the-devils-of-d-day-by-graham-masterton",
+    "title": "The Devils of D-Day",
+    "subtitle": null,
+    "sortTitle": "Devils of D-Day",
+    "yearPublished": "1978",
+    "grade": "B",
+    "gradeValue": 9,
+    "kind": "Novel",
+    "date": "2016-01-26",
+    "authors": [
+      {
+        "slug": "graham-masterton",
+        "notes": null,
+        "name": "Graham Masterton",
+        "sortName": "Masterton, Graham"
+      }
+    ],
+    "readings": [
+      {
+        "sequence": 1,
+        "date": "2016-01-26",
+        "isAudiobook": false,
+        "abandoned": false,
+        "readingTime": 12
+      }
+    ],
+    "includedInSlugs": [],
+    "yearReviewed": 2016,
+    "moreByAuthors": [],
+    "moreReviews": [
+      {
+        "title": "Dark Crusade",
+        "kind": "Novel",
+        "yearPublished": "1976",
+        "slug": "dark-crusade-by-karl-edward-wagner",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Karl Edward Wagner"
+          }
+        ]
+      },
+      {
+        "title": "The Dark Tunnel",
+        "kind": "Novel",
+        "yearPublished": "1944",
+        "slug": "the-dark-tunnel-by-ross-macdonald",
+        "grade": "D+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Ross Macdonald"
+          }
+        ]
+      },
+      {
+        "title": "Desert Pickup",
+        "kind": "Short Story",
+        "yearPublished": "1970",
+        "slug": "desert-pickup-by-richard-laymon",
+        "grade": "C-",
+        "includedInSlugs": [
+          "short-stories-volume-one-by-richard-laymon"
+        ],
+        "authors": [
+          {
+            "name": "Richard Laymon"
+          }
+        ]
+      },
+      {
         "title": "Doctor Sleep",
         "kind": "Novel",
         "yearPublished": "2013",
@@ -9679,6 +9779,19 @@
         "authors": [
           {
             "name": "Philip Fracassi"
+          }
+        ]
+      },
+      {
+        "title": "Dracula",
+        "kind": "Novel",
+        "yearPublished": "1897",
+        "slug": "dracula-by-bram-stoker",
+        "grade": "C+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Bram Stoker"
           }
         ]
       }
