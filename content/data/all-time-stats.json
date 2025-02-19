@@ -1,7 +1,7 @@
 {
   "reviewCount": 81,
-  "workCount": 114,
-  "bookCount": 94,
+  "workCount": 115,
+  "bookCount": 95,
   "gradeDistribution": [
     {
       "name": "A",
@@ -75,7 +75,7 @@
     },
     {
       "name": "Novel",
-      "count": 55
+      "count": 56
     },
     {
       "name": "Novella",
@@ -101,7 +101,7 @@
     },
     {
       "name": "Paperback",
-      "count": 40
+      "count": 41
     }
   ],
   "decadeDistribution": [
@@ -111,7 +111,7 @@
     },
     {
       "name": "1930s",
-      "count": 2
+      "count": 3
     },
     {
       "name": "1940s",
@@ -965,6 +965,35 @@
           "kind": "Nonfiction",
           "title": "Consider This",
           "yearPublished": "2020",
+          "includedInSlugs": [],
+          "reviewed": true
+        }
+      ]
+    },
+    {
+      "name": "Raymond Chandler",
+      "count": 2,
+      "slug": "raymond-chandler",
+      "readings": [
+        {
+          "sequence": 2,
+          "date": "2016-02-12",
+          "slug": "the-big-sleep-by-raymond-chandler",
+          "edition": "Paperback",
+          "kind": "Novel",
+          "title": "The Big Sleep",
+          "yearPublished": "1939",
+          "includedInSlugs": [],
+          "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2022-09-24",
+          "slug": "the-big-sleep-by-raymond-chandler",
+          "edition": "Audible",
+          "kind": "Novel",
+          "title": "The Big Sleep",
+          "yearPublished": "1939",
           "includedInSlugs": [],
           "reviewed": true
         }
