@@ -9011,7 +9011,7 @@
     "includedWorks": []
   },
   {
-    "sequence": "2022-09-24-1",
+    "sequence": "2016-02-12-2",
     "slug": "the-big-sleep-by-raymond-chandler",
     "title": "The Big Sleep",
     "subtitle": null,
@@ -9020,7 +9020,7 @@
     "grade": "C+",
     "gradeValue": 7,
     "kind": "Novel",
-    "date": "2022-09-24",
+    "date": "2016-02-12",
     "authors": [
       {
         "slug": "raymond-chandler",
@@ -9036,10 +9036,17 @@
         "isAudiobook": true,
         "abandoned": false,
         "readingTime": 1
+      },
+      {
+        "sequence": 2,
+        "date": "2016-02-12",
+        "isAudiobook": false,
+        "abandoned": false,
+        "readingTime": 15
       }
     ],
     "includedInSlugs": [],
-    "yearReviewed": 2022,
+    "yearReviewed": 2016,
     "moreByAuthors": [],
     "moreReviews": [
       {
