@@ -1,11 +1,11 @@
 {
   "year": "2016",
-  "workCount": 7,
-  "bookCount": 7,
+  "workCount": 8,
+  "bookCount": 8,
   "kindDistribution": [
     {
       "name": "Nonfiction",
-      "count": 3
+      "count": 4
     },
     {
       "name": "Novel",
@@ -19,7 +19,7 @@
     },
     {
       "name": "Paperback",
-      "count": 5
+      "count": 6
     }
   ],
   "decadeDistribution": [
@@ -37,6 +37,10 @@
     },
     {
       "name": "1990s",
+      "count": 1
+    },
+    {
+      "name": "2000s",
       "count": 1
     },
     {
