@@ -1,17 +1,17 @@
 {
   "year": "2017",
-  "workCount": 3,
-  "bookCount": 3,
+  "workCount": 4,
+  "bookCount": 4,
   "kindDistribution": [
     {
       "name": "Novel",
-      "count": 3
+      "count": 4
     }
   ],
   "editionDistribution": [
     {
       "name": "Kindle",
-      "count": 1
+      "count": 2
     },
     {
       "name": "Paperback",
@@ -29,6 +29,10 @@
     },
     {
       "name": "2000s",
+      "count": 1
+    },
+    {
+      "name": "2010s",
       "count": 1
     }
   ],
