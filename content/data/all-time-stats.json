@@ -1,7 +1,7 @@
 {
   "reviewCount": 81,
-  "workCount": 120,
-  "bookCount": 100,
+  "workCount": 121,
+  "bookCount": 101,
   "gradeDistribution": [
     {
       "name": "A",
@@ -75,7 +75,7 @@
     },
     {
       "name": "Novel",
-      "count": 57
+      "count": 58
     },
     {
       "name": "Novella",
@@ -97,7 +97,7 @@
     },
     {
       "name": "Kindle",
-      "count": 38
+      "count": 39
     },
     {
       "name": "Paperback",
@@ -127,7 +127,7 @@
     },
     {
       "name": "1980s",
-      "count": 36
+      "count": 37
     },
     {
       "name": "1990s",
@@ -149,7 +149,7 @@
   "mostReadAuthors": [
     {
       "name": "Richard Laymon",
-      "count": 24,
+      "count": 25,
       "slug": "richard-laymon",
       "readings": [
         {
@@ -351,6 +351,17 @@
           "yearPublished": "1985",
           "includedInSlugs": [],
           "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2017-10-14",
+          "slug": "flesh-by-richard-laymon",
+          "edition": "Kindle",
+          "kind": "Novel",
+          "title": "Flesh",
+          "yearPublished": "1987",
+          "includedInSlugs": [],
+          "reviewed": false
         },
         {
           "sequence": 1,

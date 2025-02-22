@@ -1,14 +1,18 @@
 {
   "year": "2017",
-  "workCount": 2,
-  "bookCount": 2,
+  "workCount": 3,
+  "bookCount": 3,
   "kindDistribution": [
     {
       "name": "Novel",
-      "count": 2
+      "count": 3
     }
   ],
   "editionDistribution": [
+    {
+      "name": "Kindle",
+      "count": 1
+    },
     {
       "name": "Paperback",
       "count": 2
@@ -17,6 +21,10 @@
   "decadeDistribution": [
     {
       "name": "1930s",
+      "count": 1
+    },
+    {
+      "name": "1980s",
       "count": 1
     },
     {
