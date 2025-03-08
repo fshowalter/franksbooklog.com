@@ -1,7 +1,7 @@
 {
   "reviewCount": 81,
-  "workCount": 124,
-  "bookCount": 104,
+  "workCount": 125,
+  "bookCount": 105,
   "gradeDistribution": [
     {
       "name": "A",
@@ -71,7 +71,7 @@
     },
     {
       "name": "Nonfiction",
-      "count": 40
+      "count": 41
     },
     {
       "name": "Novel",
@@ -97,7 +97,7 @@
     },
     {
       "name": "Kindle",
-      "count": 42
+      "count": 43
     },
     {
       "name": "Paperback",
@@ -139,7 +139,7 @@
     },
     {
       "name": "2010s",
-      "count": 33
+      "count": 34
     },
     {
       "name": "2020s",
@@ -1040,31 +1040,31 @@
       ]
     },
     {
-      "name": "Lol Tolhurst",
+      "name": "Roger Ebert",
       "count": 2,
-      "slug": "lol-tolhurst",
+      "slug": null,
       "readings": [
         {
           "sequence": 1,
-          "date": "2022-07-18",
-          "slug": "cured-by-lol-tolhurst",
-          "edition": "Audible",
+          "date": "2014-12-30",
+          "slug": "the-great-movies-by-roger-ebert",
+          "edition": "Paperback",
           "kind": "Nonfiction",
-          "title": "Cured",
-          "yearPublished": "2016",
+          "title": "The Great Movies",
+          "yearPublished": "2002",
           "includedInSlugs": [],
-          "reviewed": true
+          "reviewed": false
         },
         {
           "sequence": 1,
-          "date": "2024-11-08",
-          "slug": "goth-by-lol-tolhurst",
-          "edition": "Audible",
+          "date": "2017-11-08",
+          "slug": "life-itself-by-roger-ebert",
+          "edition": "Kindle",
           "kind": "Nonfiction",
-          "title": "Goth",
-          "yearPublished": "2023",
+          "title": "Life Itself",
+          "yearPublished": "2011",
           "includedInSlugs": [],
-          "reviewed": true
+          "reviewed": false
         }
       ]
     }

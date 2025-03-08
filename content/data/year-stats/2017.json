@@ -1,10 +1,14 @@
 {
   "year": "2017",
-  "workCount": 6,
-  "bookCount": 6,
+  "workCount": 7,
+  "bookCount": 7,
   "kindDistribution": [
     {
       "name": "Collection",
+      "count": 1
+    },
+    {
+      "name": "Nonfiction",
       "count": 1
     },
     {
@@ -15,7 +19,7 @@
   "editionDistribution": [
     {
       "name": "Kindle",
-      "count": 4
+      "count": 5
     },
     {
       "name": "Paperback",
@@ -41,7 +45,7 @@
     },
     {
       "name": "2010s",
-      "count": 1
+      "count": 2
     }
   ],
   "mostReadAuthors": []
