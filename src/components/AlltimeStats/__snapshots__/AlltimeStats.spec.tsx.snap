@@ -135,7 +135,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
           >
             <span
               class="hamburger-icon-bars"
-              style="background: var(--fg-default);"
+              style="background-color: var(--fg-default);"
             />
           </label>
           <ul
