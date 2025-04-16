@@ -37,7 +37,7 @@ jobs:
             ${{ runner.os }}-astro-cache-v3-
 
       - name: install dependencies
-        run: npm ci
+        run: npm install
 
       - name: build
         run: npm run build
