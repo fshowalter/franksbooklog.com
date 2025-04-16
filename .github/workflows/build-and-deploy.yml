@@ -25,9 +25,6 @@ jobs:
           npm --version &&
           npm list -g --depth 0
 
-      - name: install dependencies
-        run: npm ci
-
       - name: get astro cache
         id: astro-cache-build
         uses: actions/cache@5a3ec84eff668545956fd18022155c47e93e2684 # v4
@@ -38,6 +35,9 @@ jobs:
           key: ${{ runner.os }}-astro-cache-v2-${{ github.run_id }}
           restore-keys: |
             ${{ runner.os }}-astro-cache-v3-
+
+      - name: install dependencies
+        run: npm ci
 
       - name: build
         run: npm run build
