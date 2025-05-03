@@ -1,7 +1,7 @@
 {
   "reviewCount": 81,
-  "workCount": 128,
-  "bookCount": 107,
+  "workCount": 129,
+  "bookCount": 108,
   "gradeDistribution": [
     {
       "name": "A",
@@ -75,7 +75,7 @@
     },
     {
       "name": "Novel",
-      "count": 62
+      "count": 63
     },
     {
       "name": "Novella",
@@ -97,7 +97,7 @@
     },
     {
       "name": "Kindle",
-      "count": 45
+      "count": 46
     },
     {
       "name": "Paperback",
@@ -127,7 +127,7 @@
     },
     {
       "name": "1980s",
-      "count": 37
+      "count": 38
     },
     {
       "name": "1990s",
@@ -439,7 +439,7 @@
     },
     {
       "name": "Stephen King",
-      "count": 20,
+      "count": 21,
       "slug": "stephen-king",
       "readings": [
         {
@@ -592,6 +592,17 @@
           "edition": "Paperback",
           "kind": "Novel",
           "title": "Christine",
+          "yearPublished": "1983",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2017-12-18",
+          "slug": "pet-sematary-by-stephen-king",
+          "edition": "Kindle",
+          "kind": "Novel",
+          "title": "Pet Sematary",
           "yearPublished": "1983",
           "includedInSlugs": [],
           "reviewed": false
