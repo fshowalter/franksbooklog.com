@@ -1,7 +1,7 @@
 {
   "reviewCount": 81,
-  "workCount": 130,
-  "bookCount": 109,
+  "workCount": 131,
+  "bookCount": 110,
   "gradeDistribution": [
     {
       "name": "A",
@@ -66,6 +66,10 @@
   ],
   "kindDistribution": [
     {
+      "name": "Anthology",
+      "count": 1
+    },
+    {
       "name": "Collection",
       "count": 4
     },
@@ -97,7 +101,7 @@
     },
     {
       "name": "Kindle",
-      "count": 47
+      "count": 48
     },
     {
       "name": "Paperback",
@@ -127,7 +131,7 @@
     },
     {
       "name": "1980s",
-      "count": 38
+      "count": 39
     },
     {
       "name": "1990s",
