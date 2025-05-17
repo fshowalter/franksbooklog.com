@@ -6,17 +6,25 @@ import { Logo } from "./Logo";
 import { navItems } from "./navItems";
 
 export function Mast({
+  addGradient,
   hasBackdrop,
   hideLogo,
+  staticMast,
 }: {
+  addGradient: boolean;
   hasBackdrop: boolean;
   hideLogo: boolean;
+  staticMast: boolean;
 }) {
   return (
     <header
       className="z-20 flex w-full items-center justify-between px-container py-4 tablet:p-6 desktop:inset-x-0 desktop:z-40 desktop:flex-row desktop:flex-wrap desktop:px-16 desktop:py-8 desktop:text-left"
       style={{
-        position: hasBackdrop ? "absolute" : "static",
+        backgroundImage: addGradient
+          ? "linear-gradient(to bottom, rgba(80,75,67,.85), transparent 95%)"
+          : "unset",
+        color: hasBackdrop ? "#fff" : "var(--fg-default)",
+        position: staticMast ? "static" : "absolute",
       }}
     >
       {hideLogo ? <div /> : <Logo className="" />}
@@ -24,7 +32,13 @@ export function Mast({
         <nav className="hidden w-full desktop:block desktop:w-auto">
           <ul className={`flex flex-wrap justify-start gap-x-6 text-xl`}>
             {navItems.map((item) => {
-              return <NavListItem key={item.target} value={item} />;
+              return (
+                <NavListItem
+                  hasBackdrop={hasBackdrop}
+                  key={item.target}
+                  value={item}
+                />
+              );
             })}
           </ul>
         </nav>
@@ -33,7 +47,9 @@ export function Mast({
         <label className="hamburger-icon desktop:hidden" htmlFor="mobile-nav">
           <span
             className="hamburger-icon-bars"
-            style={{ backgroundColor: "var(--fg-default)" }}
+            style={{
+              backgroundColor: hasBackdrop ? "#fff" : "var(--fg-default)",
+            }}
           />
         </label>
         <ul className="hamburger-menu flex flex-col items-start gap-y-5 text-left text-inverse desktop:hidden">
@@ -55,12 +71,21 @@ function MenuItem({ value }: { value: NavItem }): JSX.Element {
   );
 }
 
-function NavListItem({ value }: { value: NavItem }): JSX.Element {
+function NavListItem({
+  hasBackdrop,
+  value,
+}: {
+  hasBackdrop: boolean;
+  value: NavItem;
+}): JSX.Element {
   return (
     <li className="block whitespace-nowrap tracking-serif-wide">
       <a
-        className={`text-inherit transition-all duration-500 ease-in-out hover:text-accent`}
+        className={`text-inherit transition-all duration-500 ease-in-out ${hasBackdrop ? "hover:bg-[rgba(0,0,0,.50)]" : "hover:text-accent"}`}
         href={value.target}
+        style={{
+          textShadow: hasBackdrop ? "1px 1px 2px black" : "unset",
+        }}
       >
         {value.text}
       </a>
@@ -70,11 +95,11 @@ function NavListItem({ value }: { value: NavItem }): JSX.Element {
 
 function SearchButton() {
   return (
-    <div className="search-button z-[1000]">
+    <div className="z-[1000]">
       <button
         aria-keyshortcuts="Control+K"
         aria-label="Search"
-        className="flex items-center justify-between overflow-hidden text-sm leading-6 ring-default desktop:ml-6"
+        className="flex size-10 items-center justify-center overflow-hidden text-sm leading-6 ring-default desktop:ml-6"
         data-open-modal
         disabled
         suppressHydrationWarning
@@ -100,7 +125,7 @@ function SearchButton() {
   );
 }
 
-function SubMenu({ values }: { values: NavItem[] }) {
+function SubMenu({ values }: { values: NavItem[] }): false | JSX.Element {
   if (values.length === 0) {
     return false;
   }
@@ -110,7 +135,7 @@ function SubMenu({ values }: { values: NavItem[] }) {
       {values.map((value) => {
         return (
           <li
-            className="mb-2 font-sans text-xs uppercase tracking-wide text-inverse-subtle"
+            className="mb-4 ml-1 font-sans text-xs uppercase tracking-wider text-inverse-subtle last:mb-0"
             key={value.target}
           >
             <a href={value.target}>{value.text}</a>

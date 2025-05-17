@@ -40,6 +40,12 @@
     <link
       rel="preload"
       as="image"
+      imagesrcset="/_image/?href=%2Fcontent%2Fassets%2Fbackdrops%2Fhome.png%3ForigWidth%3D2400%26origHeight%3D1350%26origFormat%3Dpng&amp;w=720&amp;h=405&amp;q=80&amp;f=avif 720w, /_image/?href=%2Fcontent%2Fassets%2Fbackdrops%2Fhome.png%3ForigWidth%3D2400%26origHeight%3D1350%26origFormat%3Dpng&amp;w=1200&amp;h=675&amp;q=80&amp;f=avif 1200w, /_image/?href=%2Fcontent%2Fassets%2Fbackdrops%2Fhome.png%3ForigWidth%3D2400%26origHeight%3D1350%26origFormat%3Dpng&amp;w=1920&amp;h=1080&amp;q=80&amp;f=avif 1920w, /_image/?href=%2Fcontent%2Fassets%2Fbackdrops%2Fhome.png%3ForigWidth%3D2400%26origHeight%3D1350%26origFormat%3Dpng&amp;w=2400&amp;h=1350&amp;q=80&amp;f=avif 2400w"
+      imagesizes="100vw"
+      fetchpriority="high"
+    /><link
+      rel="preload"
+      as="image"
       imagesrcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;h=93&amp;q=80&amp;f=avif 62w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;h=186&amp;q=80&amp;f=avif 124w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif 248w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;h=744&amp;q=80&amp;f=avif 496w"
       imagesizes="(min-width: 1800px) 218px, (min-width: 1300px) calc(11.67vw + 10px), (min-width: 1260px) calc(-445vw + 5855px), (min-width: 900px) calc(19.12vw + 11px), (min-width: 600px) 27.5vw, calc(41.43vw + 8px)"
     />
@@ -52,7 +58,15 @@
       <div class="flex min-h-full w-full flex-col bg-default">
         <header
           class="z-20 flex w-full items-center justify-between px-container py-4 tablet:p-6 desktop:inset-x-0 desktop:z-40 desktop:flex-row desktop:flex-wrap desktop:px-16 desktop:py-8 desktop:text-left"
-          style="position: absolute"
+          style="
+            background-image: linear-gradient(
+              to bottom,
+              rgba(80, 75, 67, 0.85),
+              transparent 95%
+            );
+            color: #fff;
+            position: absolute;
+          "
         >
           <div></div>
           <div class="flex items-center">
@@ -60,46 +74,51 @@
               <ul class="flex flex-wrap justify-start gap-x-6 text-xl">
                 <li class="block whitespace-nowrap tracking-serif-wide">
                   <a
-                    class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
+                    class="text-inherit transition-all duration-500 ease-in-out hover:bg-[rgba(0,0,0,.50)]"
                     href="/"
+                    style="text-shadow: 1px 1px 2px black"
                     >Home</a
                   >
                 </li>
                 <li class="block whitespace-nowrap tracking-serif-wide">
                   <a
-                    class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
+                    class="text-inherit transition-all duration-500 ease-in-out hover:bg-[rgba(0,0,0,.50)]"
                     href="/how-i-grade/"
+                    style="text-shadow: 1px 1px 2px black"
                     >How I Grade</a
                   >
                 </li>
                 <li class="block whitespace-nowrap tracking-serif-wide">
                   <a
-                    class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
+                    class="text-inherit transition-all duration-500 ease-in-out hover:bg-[rgba(0,0,0,.50)]"
                     href="/reviews/"
+                    style="text-shadow: 1px 1px 2px black"
                     >Reviews</a
                   >
                 </li>
                 <li class="block whitespace-nowrap tracking-serif-wide">
                   <a
-                    class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
+                    class="text-inherit transition-all duration-500 ease-in-out hover:bg-[rgba(0,0,0,.50)]"
                     href="/authors/"
+                    style="text-shadow: 1px 1px 2px black"
                     >Authors</a
                   >
                 </li>
                 <li class="block whitespace-nowrap tracking-serif-wide">
                   <a
-                    class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
+                    class="text-inherit transition-all duration-500 ease-in-out hover:bg-[rgba(0,0,0,.50)]"
                     href="/readings/"
+                    style="text-shadow: 1px 1px 2px black"
                     >Reading Log</a
                   >
                 </li>
               </ul>
             </nav>
-            <div class="search-button z-[1000]">
+            <div class="z-[1000]">
               <button
                 aria-keyshortcuts="Control+K"
                 aria-label="Search"
-                class="flex items-center justify-between overflow-hidden text-sm leading-6 ring-default desktop:ml-6"
+                class="flex size-10 items-center justify-center overflow-hidden text-sm leading-6 ring-default desktop:ml-6"
                 data-open-modal="true"
                 disabled=""
                 title="Search: Control+K"
@@ -126,7 +145,7 @@
               for="mobile-nav"
               ><span
                 class="hamburger-icon-bars"
-                style="background-color: var(--fg-default)"
+                style="background-color: #fff"
               ></span
             ></label>
             <ul
@@ -148,7 +167,7 @@
                 <a href="/readings/">Reading Log</a>
                 <ol class="mt-4">
                   <li
-                    class="mb-2 font-sans text-xs uppercase tracking-wide text-inverse-subtle"
+                    class="mb-4 ml-1 font-sans text-xs uppercase tracking-wider text-inverse-subtle last:mb-0"
                   >
                     <a href="/readings/stats/">Stats</a>
                   </li>
@@ -159,15 +178,32 @@
         </header>
         <main class="grow bg-subtle pb-8" id="content">
           <header
-            class="min-h-[clamp(340px,50vh,1350px)] relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pb-8 pt-40 tablet:pb-10 tablet:pt-40 desktop:pb-16 desktop:pt-40"
+            class="min-h-[400px] tablet:min-h-[640px] desktop:min-h-[clamp(640px,70vh,1350px)] text-inverse relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pb-8 pt-40 tablet:pb-10 tablet:pt-40 desktop:pb-16 desktop:pt-40"
           >
+            <img
+              class="absolute inset-0 size-full object-cover object-top contrast-75"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fbackdrops%2Fhome.png%3ForigWidth%3D2400%26origHeight%3D1350%26origFormat%3Dpng&amp;w=2400&amp;h=1350&amp;q=80&amp;f=avif"
+              srcset="
+                /_image/?href=%2Fcontent%2Fassets%2Fbackdrops%2Fhome.png%3ForigWidth%3D2400%26origHeight%3D1350%26origFormat%3Dpng&amp;w=720&amp;h=405&amp;q=80&amp;f=avif    720w,
+                /_image/?href=%2Fcontent%2Fassets%2Fbackdrops%2Fhome.png%3ForigWidth%3D2400%26origHeight%3D1350%26origFormat%3Dpng&amp;w=1200&amp;h=675&amp;q=80&amp;f=avif  1200w,
+                /_image/?href=%2Fcontent%2Fassets%2Fbackdrops%2Fhome.png%3ForigWidth%3D2400%26origHeight%3D1350%26origFormat%3Dpng&amp;w=1920&amp;h=1080&amp;q=80&amp;f=avif 1920w,
+                /_image/?href=%2Fcontent%2Fassets%2Fbackdrops%2Fhome.png%3ForigWidth%3D2400%26origHeight%3D1350%26origFormat%3Dpng&amp;w=2400&amp;h=1350&amp;q=80&amp;f=avif 2400w
+              "
+              height="1350"
+              sizes="100vw"
+              width="2400"
+              alt=""
+              fetchpriority="high"
+              loading="eager"
+            />
+            <div class="absolute inset-0 bg-canvas opacity-15"></div>
             <div
               class="z-10 mx-auto flex w-full max-w-screen-max px-container flex-col"
             >
-              <h1 class="text-default text-4xl desktop:text-7xl">
-                Frank&#x27;s Book Log
-              </h1>
-              <p class="mt-1 text-base desktop:my-4 desktop:text-xl">
+              <h1 class="text-4xl desktop:text-7xl">Frank&#x27;s Book Log</h1>
+              <p
+                class="mt-1 text-base desktop:my-4 desktop:text-xl [text-shadow:1px_1px_2px_black]"
+              >
                 Literature is a relative term.
               </p>
             </div>

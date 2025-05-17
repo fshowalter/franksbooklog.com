@@ -1,4 +1,5 @@
 import type { AvatarImageProps } from "~/api/avatars";
+import type { BackdropImageProps } from "~/api/backdrops";
 
 import { Avatar } from "./Avatar";
 
@@ -68,10 +69,12 @@ function Breadcrumb({ value }: { value?: React.ReactNode }) {
 
 function Deck({
   center,
+  shadow,
   subtle,
   value,
 }: {
   center?: boolean;
+  shadow?: boolean;
   subtle?: boolean;
   value?: React.ReactNode;
 }) {
@@ -81,7 +84,7 @@ function Deck({
 
   return (
     <p
-      className={`mt-1 text-base desktop:my-4 desktop:text-xl ${center ? "text-center" : ""} ${subtle ? "text-subtle" : ""}`}
+      className={`mt-1 text-base desktop:my-4 desktop:text-xl ${center ? "text-center" : ""} ${shadow ? "[text-shadow:1px_1px_2px_black]" : ""} ${subtle ? "text-subtle" : ""}`}
     >
       {value}
     </p>
@@ -115,12 +118,14 @@ function Wrapper({
   heroImage,
   narrowChildren = false,
   size = "default",
+  textInverse = false,
 }: {
   centerText?: boolean;
   children: React.ReactNode;
   heroImage?: React.ReactNode;
   narrowChildren?: boolean;
   size?: "default" | "large" | "small";
+  textInverse?: boolean;
 }) {
   const defaultSizes =
     "min-h-[400px] tablet:min-h-[640px] desktop:min-h-[clamp(640px,70vh,1350px)]";
@@ -138,14 +143,56 @@ function Wrapper({
 
   return (
     <header
-      className={`${sizes} relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pb-8 pt-40 tablet:pb-10 tablet:pt-40 desktop:pb-16 desktop:pt-40`}
+      className={`${sizes} ${textInverse ? "text-inverse" : ""} relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pb-8 pt-40 tablet:pb-10 tablet:pt-40 desktop:pb-16 desktop:pt-40`}
     >
       {heroImage}
+      <div className="absolute inset-0 bg-canvas opacity-15"></div>
       <div
         className={`${centerText ? "items-center" : ""} z-10 mx-auto flex w-full ${narrowChildren ? "px-container text-center tablet:max-w-unset tablet:px-0" : "max-w-screen-max px-container"} flex-col`}
       >
         {children}
       </div>
     </header>
+  );
+}
+
+export const BackdropImageConfig = {
+  height: 1350,
+  sizes: "100vw",
+  width: 2400,
+};
+
+export function Backdrop({
+  breadcrumb,
+  deck,
+  imageProps,
+  size = "default",
+  title,
+  titleStyle,
+}: {
+  breadcrumb?: React.ReactNode;
+  deck?: React.ReactNode;
+  imageProps: BackdropImageProps;
+  size?: "default" | "large";
+  title: string;
+  titleStyle?: string;
+}) {
+  const heroImage = (
+    <img
+      className="absolute inset-0 size-full object-cover object-top contrast-75"
+      {...imageProps}
+      {...BackdropImageConfig}
+      alt=""
+      fetchPriority="high"
+      loading="eager"
+    />
+  );
+
+  return (
+    <Wrapper heroImage={heroImage} size={size} textInverse={true}>
+      <Breadcrumb value={breadcrumb} />
+      <Title className={titleStyle} value={title} />
+      <Deck shadow={true} value={deck} />
+    </Wrapper>
   );
 }

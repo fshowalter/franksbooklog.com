@@ -1,5 +1,7 @@
+import { getBackdropImageProps } from "~/api/backdrops";
 import { getFluidCoverImageProps } from "~/api/covers";
 import { loadExcerptHtml, mostRecentReviews } from "~/api/reviews";
+import { BackdropImageConfig } from "~/components/Backdrop";
 
 import type { Props } from "./Home";
 
@@ -15,6 +17,10 @@ export async function getProps(): Promise<Props> {
   );
 
   return {
+    backdropImageProps: await getBackdropImageProps(
+      "home",
+      BackdropImageConfig,
+    ),
     deck: "Literature is a relative term.",
     values: await Promise.all(
       reviews.map(async (review) => {
