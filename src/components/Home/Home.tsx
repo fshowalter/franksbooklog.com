@@ -1,6 +1,8 @@
 import type { JSX } from "react";
 
-import { SolidBackdrop } from "~/components/Backdrop";
+import type { BackdropImageProps } from "~/api/backdrops";
+
+import { Backdrop } from "~/components/Backdrop";
 import { Layout } from "~/components/Layout";
 import { SubHeading } from "~/components/SubHeading";
 
@@ -9,17 +11,19 @@ import type { ListItemValue } from "./HomeListItem";
 import { HomeListItem } from "./HomeListItem";
 
 export type Props = {
+  backdropImageProps: BackdropImageProps;
   deck: string;
   values: ListItemValue[];
 };
 
-export function Home({ deck, values }: Props): JSX.Element {
+export function Home({ backdropImageProps, deck, values }: Props): JSX.Element {
   return (
     <Layout className="bg-subtle pb-8" hideLogo={true}>
-      <SolidBackdrop
+      <Backdrop
         deck={deck}
+        imageProps={backdropImageProps}
         title="Frank's Book Log"
-        titleStyle="text-default text-4xl desktop:text-7xl"
+        titleStyle="text-4xl desktop:text-7xl"
       />
       <nav className="mx-auto max-w-screen-max bg-subtle tablet:px-container">
         <SubHeading as="h2" className="px-container tablet:px-0">
