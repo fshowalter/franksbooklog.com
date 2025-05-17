@@ -1,7 +1,7 @@
 {
   "reviewCount": 81,
-  "workCount": 131,
-  "bookCount": 110,
+  "workCount": 132,
+  "bookCount": 111,
   "gradeDistribution": [
     {
       "name": "A",
@@ -79,7 +79,7 @@
     },
     {
       "name": "Novel",
-      "count": 63
+      "count": 64
     },
     {
       "name": "Novella",
@@ -101,7 +101,7 @@
     },
     {
       "name": "Kindle",
-      "count": 48
+      "count": 49
     },
     {
       "name": "Paperback",
@@ -131,7 +131,7 @@
     },
     {
       "name": "1980s",
-      "count": 39
+      "count": 40
     },
     {
       "name": "1990s",
@@ -153,7 +153,7 @@
   "mostReadAuthors": [
     {
       "name": "Richard Laymon",
-      "count": 25,
+      "count": 26,
       "slug": "richard-laymon",
       "readings": [
         {
@@ -364,6 +364,17 @@
           "kind": "Novel",
           "title": "Flesh",
           "yearPublished": "1987",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2018-01-11",
+          "slug": "midnights-lair-by-richard-laymon",
+          "edition": "Kindle",
+          "kind": "Novel",
+          "title": "Midnight's Lair",
+          "yearPublished": "1988",
           "includedInSlugs": [],
           "reviewed": false
         },
