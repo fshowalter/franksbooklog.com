@@ -9,20 +9,22 @@ export function Mast({
   addGradient,
   hasBackdrop,
   hideLogo,
+  staticMast,
 }: {
   addGradient: boolean;
   hasBackdrop: boolean;
   hideLogo: boolean;
+  staticMast: boolean;
 }) {
   return (
     <header
       className="z-20 flex w-full items-center justify-between px-container py-4 tablet:p-6 desktop:inset-x-0 desktop:z-40 desktop:flex-row desktop:flex-wrap desktop:px-16 desktop:py-8 desktop:text-left"
       style={{
         backgroundImage: addGradient
-          ? "linear-gradient(to bottom, rgba(0,0,0,.85), transparent 95%)"
+          ? "linear-gradient(to bottom, rgba(80,75,67,.85), transparent 95%)"
           : "unset",
         color: hasBackdrop ? "#fff" : "var(--fg-default)",
-        position: hasBackdrop ? "absolute" : "static",
+        position: staticMast ? "static" : "absolute",
       }}
     >
       {hideLogo ? <div /> : <Logo className="" />}

@@ -18,7 +18,7 @@ export type Props = {
 
 export function Home({ backdropImageProps, deck, values }: Props): JSX.Element {
   return (
-    <Layout className="bg-subtle pb-8" hideLogo={true}>
+    <Layout className="bg-subtle pb-8" hasBackdrop={true} hideLogo={true}>
       <Backdrop
         deck={deck}
         imageProps={backdropImageProps}
