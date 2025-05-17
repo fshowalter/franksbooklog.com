@@ -14,7 +14,7 @@ exports[`YearStats > matches snapshot for slug 2011 1`] = `
     >
       <header
         class="z-20 flex w-full items-center justify-between px-container py-4 tablet:p-6 desktop:inset-x-0 desktop:z-40 desktop:flex-row desktop:flex-wrap desktop:px-16 desktop:py-8 desktop:text-left"
-        style="position: absolute;"
+        style="color: var(--fg-default); position: absolute;"
       >
         <div
           class="flex flex-col"
@@ -50,6 +50,7 @@ exports[`YearStats > matches snapshot for slug 2011 1`] = `
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                   href="/"
+                  style="text-shadow: unset;"
                 >
                   Home
                 </a>
@@ -60,6 +61,7 @@ exports[`YearStats > matches snapshot for slug 2011 1`] = `
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                   href="/how-i-grade/"
+                  style="text-shadow: unset;"
                 >
                   How I Grade
                 </a>
@@ -70,6 +72,7 @@ exports[`YearStats > matches snapshot for slug 2011 1`] = `
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                   href="/reviews/"
+                  style="text-shadow: unset;"
                 >
                   Reviews
                 </a>
@@ -80,6 +83,7 @@ exports[`YearStats > matches snapshot for slug 2011 1`] = `
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                   href="/authors/"
+                  style="text-shadow: unset;"
                 >
                   Authors
                 </a>
@@ -90,6 +94,7 @@ exports[`YearStats > matches snapshot for slug 2011 1`] = `
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                   href="/readings/"
+                  style="text-shadow: unset;"
                 >
                   Reading Log
                 </a>
@@ -97,12 +102,12 @@ exports[`YearStats > matches snapshot for slug 2011 1`] = `
             </ul>
           </nav>
           <div
-            class="search-button z-[1000]"
+            class="z-[1000]"
           >
             <button
               aria-keyshortcuts="Control+K"
               aria-label="Search"
-              class="flex items-center justify-between overflow-hidden text-sm leading-6 ring-default desktop:ml-6"
+              class="flex size-10 items-center justify-center overflow-hidden text-sm leading-6 ring-default desktop:ml-6"
               data-open-modal="true"
               disabled=""
               title="Search: Control+K"
@@ -189,7 +194,7 @@ exports[`YearStats > matches snapshot for slug 2011 1`] = `
                 class="mt-4"
               >
                 <li
-                  class="mb-2 font-sans text-xs uppercase tracking-wide text-inverse-subtle"
+                  class="mb-4 ml-1 font-sans text-xs uppercase tracking-wider text-inverse-subtle last:mb-0"
                 >
                   <a
                     href="/readings/stats/"
@@ -207,8 +212,11 @@ exports[`YearStats > matches snapshot for slug 2011 1`] = `
         id="content"
       >
         <header
-          class="min-h-[clamp(340px,50vh,1350px)] relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pb-8 pt-40 tablet:pb-10 tablet:pt-40 desktop:pb-16 desktop:pt-40"
+          class="min-h-[clamp(340px,50vh,1350px)]  relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pb-8 pt-40 tablet:pb-10 tablet:pt-40 desktop:pb-16 desktop:pt-40"
         >
+          <div
+            class="absolute inset-0 bg-canvas opacity-15"
+          />
           <div
             class=" z-10 mx-auto flex w-full max-w-screen-max px-container flex-col"
           >
@@ -228,7 +236,7 @@ exports[`YearStats > matches snapshot for slug 2011 1`] = `
               2011 Stats
             </h1>
             <p
-              class="mt-1 text-base desktop:my-4 desktop:text-xl  "
+              class="mt-1 text-base desktop:my-4 desktop:text-xl   "
             >
               A Year in Review
             </p>
@@ -655,7 +663,7 @@ exports[`YearStats > matches snapshot for slug 2012 1`] = `
     >
       <header
         class="z-20 flex w-full items-center justify-between px-container py-4 tablet:p-6 desktop:inset-x-0 desktop:z-40 desktop:flex-row desktop:flex-wrap desktop:px-16 desktop:py-8 desktop:text-left"
-        style="position: absolute;"
+        style="color: var(--fg-default); position: absolute;"
       >
         <div
           class="flex flex-col"
@@ -691,6 +699,7 @@ exports[`YearStats > matches snapshot for slug 2012 1`] = `
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                   href="/"
+                  style="text-shadow: unset;"
                 >
                   Home
                 </a>
@@ -701,6 +710,7 @@ exports[`YearStats > matches snapshot for slug 2012 1`] = `
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                   href="/how-i-grade/"
+                  style="text-shadow: unset;"
                 >
                   How I Grade
                 </a>
@@ -711,6 +721,7 @@ exports[`YearStats > matches snapshot for slug 2012 1`] = `
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                   href="/reviews/"
+                  style="text-shadow: unset;"
                 >
                   Reviews
                 </a>
@@ -721,6 +732,7 @@ exports[`YearStats > matches snapshot for slug 2012 1`] = `
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                   href="/authors/"
+                  style="text-shadow: unset;"
                 >
                   Authors
                 </a>
@@ -731,6 +743,7 @@ exports[`YearStats > matches snapshot for slug 2012 1`] = `
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                   href="/readings/"
+                  style="text-shadow: unset;"
                 >
                   Reading Log
                 </a>
@@ -738,12 +751,12 @@ exports[`YearStats > matches snapshot for slug 2012 1`] = `
             </ul>
           </nav>
           <div
-            class="search-button z-[1000]"
+            class="z-[1000]"
           >
             <button
               aria-keyshortcuts="Control+K"
               aria-label="Search"
-              class="flex items-center justify-between overflow-hidden text-sm leading-6 ring-default desktop:ml-6"
+              class="flex size-10 items-center justify-center overflow-hidden text-sm leading-6 ring-default desktop:ml-6"
               data-open-modal="true"
               disabled=""
               title="Search: Control+K"
@@ -830,7 +843,7 @@ exports[`YearStats > matches snapshot for slug 2012 1`] = `
                 class="mt-4"
               >
                 <li
-                  class="mb-2 font-sans text-xs uppercase tracking-wide text-inverse-subtle"
+                  class="mb-4 ml-1 font-sans text-xs uppercase tracking-wider text-inverse-subtle last:mb-0"
                 >
                   <a
                     href="/readings/stats/"
@@ -848,8 +861,11 @@ exports[`YearStats > matches snapshot for slug 2012 1`] = `
         id="content"
       >
         <header
-          class="min-h-[clamp(340px,50vh,1350px)] relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pb-8 pt-40 tablet:pb-10 tablet:pt-40 desktop:pb-16 desktop:pt-40"
+          class="min-h-[clamp(340px,50vh,1350px)]  relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pb-8 pt-40 tablet:pb-10 tablet:pt-40 desktop:pb-16 desktop:pt-40"
         >
+          <div
+            class="absolute inset-0 bg-canvas opacity-15"
+          />
           <div
             class=" z-10 mx-auto flex w-full max-w-screen-max px-container flex-col"
           >
@@ -869,7 +885,7 @@ exports[`YearStats > matches snapshot for slug 2012 1`] = `
               2012 Stats
             </h1>
             <p
-              class="mt-1 text-base desktop:my-4 desktop:text-xl  "
+              class="mt-1 text-base desktop:my-4 desktop:text-xl   "
             >
               A Year in Review
             </p>
@@ -1550,7 +1566,7 @@ exports[`YearStats > matches snapshot for slug 2013 1`] = `
     >
       <header
         class="z-20 flex w-full items-center justify-between px-container py-4 tablet:p-6 desktop:inset-x-0 desktop:z-40 desktop:flex-row desktop:flex-wrap desktop:px-16 desktop:py-8 desktop:text-left"
-        style="position: absolute;"
+        style="color: var(--fg-default); position: absolute;"
       >
         <div
           class="flex flex-col"
@@ -1586,6 +1602,7 @@ exports[`YearStats > matches snapshot for slug 2013 1`] = `
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                   href="/"
+                  style="text-shadow: unset;"
                 >
                   Home
                 </a>
@@ -1596,6 +1613,7 @@ exports[`YearStats > matches snapshot for slug 2013 1`] = `
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                   href="/how-i-grade/"
+                  style="text-shadow: unset;"
                 >
                   How I Grade
                 </a>
@@ -1606,6 +1624,7 @@ exports[`YearStats > matches snapshot for slug 2013 1`] = `
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                   href="/reviews/"
+                  style="text-shadow: unset;"
                 >
                   Reviews
                 </a>
@@ -1616,6 +1635,7 @@ exports[`YearStats > matches snapshot for slug 2013 1`] = `
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                   href="/authors/"
+                  style="text-shadow: unset;"
                 >
                   Authors
                 </a>
@@ -1626,6 +1646,7 @@ exports[`YearStats > matches snapshot for slug 2013 1`] = `
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                   href="/readings/"
+                  style="text-shadow: unset;"
                 >
                   Reading Log
                 </a>
@@ -1633,12 +1654,12 @@ exports[`YearStats > matches snapshot for slug 2013 1`] = `
             </ul>
           </nav>
           <div
-            class="search-button z-[1000]"
+            class="z-[1000]"
           >
             <button
               aria-keyshortcuts="Control+K"
               aria-label="Search"
-              class="flex items-center justify-between overflow-hidden text-sm leading-6 ring-default desktop:ml-6"
+              class="flex size-10 items-center justify-center overflow-hidden text-sm leading-6 ring-default desktop:ml-6"
               data-open-modal="true"
               disabled=""
               title="Search: Control+K"
@@ -1725,7 +1746,7 @@ exports[`YearStats > matches snapshot for slug 2013 1`] = `
                 class="mt-4"
               >
                 <li
-                  class="mb-2 font-sans text-xs uppercase tracking-wide text-inverse-subtle"
+                  class="mb-4 ml-1 font-sans text-xs uppercase tracking-wider text-inverse-subtle last:mb-0"
                 >
                   <a
                     href="/readings/stats/"
@@ -1743,8 +1764,11 @@ exports[`YearStats > matches snapshot for slug 2013 1`] = `
         id="content"
       >
         <header
-          class="min-h-[clamp(340px,50vh,1350px)] relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pb-8 pt-40 tablet:pb-10 tablet:pt-40 desktop:pb-16 desktop:pt-40"
+          class="min-h-[clamp(340px,50vh,1350px)]  relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pb-8 pt-40 tablet:pb-10 tablet:pt-40 desktop:pb-16 desktop:pt-40"
         >
+          <div
+            class="absolute inset-0 bg-canvas opacity-15"
+          />
           <div
             class=" z-10 mx-auto flex w-full max-w-screen-max px-container flex-col"
           >
@@ -1764,7 +1788,7 @@ exports[`YearStats > matches snapshot for slug 2013 1`] = `
               2013 Stats
             </h1>
             <p
-              class="mt-1 text-base desktop:my-4 desktop:text-xl  "
+              class="mt-1 text-base desktop:my-4 desktop:text-xl   "
             >
               A Year in Review
             </p>
@@ -2275,7 +2299,7 @@ exports[`YearStats > matches snapshot for slug 2014 1`] = `
     >
       <header
         class="z-20 flex w-full items-center justify-between px-container py-4 tablet:p-6 desktop:inset-x-0 desktop:z-40 desktop:flex-row desktop:flex-wrap desktop:px-16 desktop:py-8 desktop:text-left"
-        style="position: absolute;"
+        style="color: var(--fg-default); position: absolute;"
       >
         <div
           class="flex flex-col"
@@ -2311,6 +2335,7 @@ exports[`YearStats > matches snapshot for slug 2014 1`] = `
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                   href="/"
+                  style="text-shadow: unset;"
                 >
                   Home
                 </a>
@@ -2321,6 +2346,7 @@ exports[`YearStats > matches snapshot for slug 2014 1`] = `
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                   href="/how-i-grade/"
+                  style="text-shadow: unset;"
                 >
                   How I Grade
                 </a>
@@ -2331,6 +2357,7 @@ exports[`YearStats > matches snapshot for slug 2014 1`] = `
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                   href="/reviews/"
+                  style="text-shadow: unset;"
                 >
                   Reviews
                 </a>
@@ -2341,6 +2368,7 @@ exports[`YearStats > matches snapshot for slug 2014 1`] = `
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                   href="/authors/"
+                  style="text-shadow: unset;"
                 >
                   Authors
                 </a>
@@ -2351,6 +2379,7 @@ exports[`YearStats > matches snapshot for slug 2014 1`] = `
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                   href="/readings/"
+                  style="text-shadow: unset;"
                 >
                   Reading Log
                 </a>
@@ -2358,12 +2387,12 @@ exports[`YearStats > matches snapshot for slug 2014 1`] = `
             </ul>
           </nav>
           <div
-            class="search-button z-[1000]"
+            class="z-[1000]"
           >
             <button
               aria-keyshortcuts="Control+K"
               aria-label="Search"
-              class="flex items-center justify-between overflow-hidden text-sm leading-6 ring-default desktop:ml-6"
+              class="flex size-10 items-center justify-center overflow-hidden text-sm leading-6 ring-default desktop:ml-6"
               data-open-modal="true"
               disabled=""
               title="Search: Control+K"
@@ -2450,7 +2479,7 @@ exports[`YearStats > matches snapshot for slug 2014 1`] = `
                 class="mt-4"
               >
                 <li
-                  class="mb-2 font-sans text-xs uppercase tracking-wide text-inverse-subtle"
+                  class="mb-4 ml-1 font-sans text-xs uppercase tracking-wider text-inverse-subtle last:mb-0"
                 >
                   <a
                     href="/readings/stats/"
@@ -2468,8 +2497,11 @@ exports[`YearStats > matches snapshot for slug 2014 1`] = `
         id="content"
       >
         <header
-          class="min-h-[clamp(340px,50vh,1350px)] relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pb-8 pt-40 tablet:pb-10 tablet:pt-40 desktop:pb-16 desktop:pt-40"
+          class="min-h-[clamp(340px,50vh,1350px)]  relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pb-8 pt-40 tablet:pb-10 tablet:pt-40 desktop:pb-16 desktop:pt-40"
         >
+          <div
+            class="absolute inset-0 bg-canvas opacity-15"
+          />
           <div
             class=" z-10 mx-auto flex w-full max-w-screen-max px-container flex-col"
           >
@@ -2489,7 +2521,7 @@ exports[`YearStats > matches snapshot for slug 2014 1`] = `
               2014 Stats
             </h1>
             <p
-              class="mt-1 text-base desktop:my-4 desktop:text-xl  "
+              class="mt-1 text-base desktop:my-4 desktop:text-xl   "
             >
               A Year in Review
             </p>
@@ -4248,7 +4280,7 @@ exports[`YearStats > matches snapshot for slug 2015 1`] = `
     >
       <header
         class="z-20 flex w-full items-center justify-between px-container py-4 tablet:p-6 desktop:inset-x-0 desktop:z-40 desktop:flex-row desktop:flex-wrap desktop:px-16 desktop:py-8 desktop:text-left"
-        style="position: absolute;"
+        style="color: var(--fg-default); position: absolute;"
       >
         <div
           class="flex flex-col"
@@ -4284,6 +4316,7 @@ exports[`YearStats > matches snapshot for slug 2015 1`] = `
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                   href="/"
+                  style="text-shadow: unset;"
                 >
                   Home
                 </a>
@@ -4294,6 +4327,7 @@ exports[`YearStats > matches snapshot for slug 2015 1`] = `
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                   href="/how-i-grade/"
+                  style="text-shadow: unset;"
                 >
                   How I Grade
                 </a>
@@ -4304,6 +4338,7 @@ exports[`YearStats > matches snapshot for slug 2015 1`] = `
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                   href="/reviews/"
+                  style="text-shadow: unset;"
                 >
                   Reviews
                 </a>
@@ -4314,6 +4349,7 @@ exports[`YearStats > matches snapshot for slug 2015 1`] = `
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                   href="/authors/"
+                  style="text-shadow: unset;"
                 >
                   Authors
                 </a>
@@ -4324,6 +4360,7 @@ exports[`YearStats > matches snapshot for slug 2015 1`] = `
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                   href="/readings/"
+                  style="text-shadow: unset;"
                 >
                   Reading Log
                 </a>
@@ -4331,12 +4368,12 @@ exports[`YearStats > matches snapshot for slug 2015 1`] = `
             </ul>
           </nav>
           <div
-            class="search-button z-[1000]"
+            class="z-[1000]"
           >
             <button
               aria-keyshortcuts="Control+K"
               aria-label="Search"
-              class="flex items-center justify-between overflow-hidden text-sm leading-6 ring-default desktop:ml-6"
+              class="flex size-10 items-center justify-center overflow-hidden text-sm leading-6 ring-default desktop:ml-6"
               data-open-modal="true"
               disabled=""
               title="Search: Control+K"
@@ -4423,7 +4460,7 @@ exports[`YearStats > matches snapshot for slug 2015 1`] = `
                 class="mt-4"
               >
                 <li
-                  class="mb-2 font-sans text-xs uppercase tracking-wide text-inverse-subtle"
+                  class="mb-4 ml-1 font-sans text-xs uppercase tracking-wider text-inverse-subtle last:mb-0"
                 >
                   <a
                     href="/readings/stats/"
@@ -4441,8 +4478,11 @@ exports[`YearStats > matches snapshot for slug 2015 1`] = `
         id="content"
       >
         <header
-          class="min-h-[clamp(340px,50vh,1350px)] relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pb-8 pt-40 tablet:pb-10 tablet:pt-40 desktop:pb-16 desktop:pt-40"
+          class="min-h-[clamp(340px,50vh,1350px)]  relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pb-8 pt-40 tablet:pb-10 tablet:pt-40 desktop:pb-16 desktop:pt-40"
         >
+          <div
+            class="absolute inset-0 bg-canvas opacity-15"
+          />
           <div
             class=" z-10 mx-auto flex w-full max-w-screen-max px-container flex-col"
           >
@@ -4462,7 +4502,7 @@ exports[`YearStats > matches snapshot for slug 2015 1`] = `
               2015 Stats
             </h1>
             <p
-              class="mt-1 text-base desktop:my-4 desktop:text-xl  "
+              class="mt-1 text-base desktop:my-4 desktop:text-xl   "
             >
               A Year in Review
             </p>
@@ -4889,7 +4929,7 @@ exports[`YearStats > matches snapshot for slug 2017 1`] = `
     >
       <header
         class="z-20 flex w-full items-center justify-between px-container py-4 tablet:p-6 desktop:inset-x-0 desktop:z-40 desktop:flex-row desktop:flex-wrap desktop:px-16 desktop:py-8 desktop:text-left"
-        style="position: absolute;"
+        style="color: var(--fg-default); position: absolute;"
       >
         <div
           class="flex flex-col"
@@ -4925,6 +4965,7 @@ exports[`YearStats > matches snapshot for slug 2017 1`] = `
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                   href="/"
+                  style="text-shadow: unset;"
                 >
                   Home
                 </a>
@@ -4935,6 +4976,7 @@ exports[`YearStats > matches snapshot for slug 2017 1`] = `
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                   href="/how-i-grade/"
+                  style="text-shadow: unset;"
                 >
                   How I Grade
                 </a>
@@ -4945,6 +4987,7 @@ exports[`YearStats > matches snapshot for slug 2017 1`] = `
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                   href="/reviews/"
+                  style="text-shadow: unset;"
                 >
                   Reviews
                 </a>
@@ -4955,6 +4998,7 @@ exports[`YearStats > matches snapshot for slug 2017 1`] = `
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                   href="/authors/"
+                  style="text-shadow: unset;"
                 >
                   Authors
                 </a>
@@ -4965,6 +5009,7 @@ exports[`YearStats > matches snapshot for slug 2017 1`] = `
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                   href="/readings/"
+                  style="text-shadow: unset;"
                 >
                   Reading Log
                 </a>
@@ -4972,12 +5017,12 @@ exports[`YearStats > matches snapshot for slug 2017 1`] = `
             </ul>
           </nav>
           <div
-            class="search-button z-[1000]"
+            class="z-[1000]"
           >
             <button
               aria-keyshortcuts="Control+K"
               aria-label="Search"
-              class="flex items-center justify-between overflow-hidden text-sm leading-6 ring-default desktop:ml-6"
+              class="flex size-10 items-center justify-center overflow-hidden text-sm leading-6 ring-default desktop:ml-6"
               data-open-modal="true"
               disabled=""
               title="Search: Control+K"
@@ -5064,7 +5109,7 @@ exports[`YearStats > matches snapshot for slug 2017 1`] = `
                 class="mt-4"
               >
                 <li
-                  class="mb-2 font-sans text-xs uppercase tracking-wide text-inverse-subtle"
+                  class="mb-4 ml-1 font-sans text-xs uppercase tracking-wider text-inverse-subtle last:mb-0"
                 >
                   <a
                     href="/readings/stats/"
@@ -5082,8 +5127,11 @@ exports[`YearStats > matches snapshot for slug 2017 1`] = `
         id="content"
       >
         <header
-          class="min-h-[clamp(340px,50vh,1350px)] relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pb-8 pt-40 tablet:pb-10 tablet:pt-40 desktop:pb-16 desktop:pt-40"
+          class="min-h-[clamp(340px,50vh,1350px)]  relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pb-8 pt-40 tablet:pb-10 tablet:pt-40 desktop:pb-16 desktop:pt-40"
         >
+          <div
+            class="absolute inset-0 bg-canvas opacity-15"
+          />
           <div
             class=" z-10 mx-auto flex w-full max-w-screen-max px-container flex-col"
           >
@@ -5103,7 +5151,7 @@ exports[`YearStats > matches snapshot for slug 2017 1`] = `
               2017 Stats
             </h1>
             <p
-              class="mt-1 text-base desktop:my-4 desktop:text-xl  "
+              class="mt-1 text-base desktop:my-4 desktop:text-xl   "
             >
               A Year in Review
             </p>
@@ -5530,7 +5578,7 @@ exports[`YearStats > matches snapshot for slug 2019 1`] = `
     >
       <header
         class="z-20 flex w-full items-center justify-between px-container py-4 tablet:p-6 desktop:inset-x-0 desktop:z-40 desktop:flex-row desktop:flex-wrap desktop:px-16 desktop:py-8 desktop:text-left"
-        style="position: absolute;"
+        style="color: var(--fg-default); position: absolute;"
       >
         <div
           class="flex flex-col"
@@ -5566,6 +5614,7 @@ exports[`YearStats > matches snapshot for slug 2019 1`] = `
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                   href="/"
+                  style="text-shadow: unset;"
                 >
                   Home
                 </a>
@@ -5576,6 +5625,7 @@ exports[`YearStats > matches snapshot for slug 2019 1`] = `
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                   href="/how-i-grade/"
+                  style="text-shadow: unset;"
                 >
                   How I Grade
                 </a>
@@ -5586,6 +5636,7 @@ exports[`YearStats > matches snapshot for slug 2019 1`] = `
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                   href="/reviews/"
+                  style="text-shadow: unset;"
                 >
                   Reviews
                 </a>
@@ -5596,6 +5647,7 @@ exports[`YearStats > matches snapshot for slug 2019 1`] = `
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                   href="/authors/"
+                  style="text-shadow: unset;"
                 >
                   Authors
                 </a>
@@ -5606,6 +5658,7 @@ exports[`YearStats > matches snapshot for slug 2019 1`] = `
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                   href="/readings/"
+                  style="text-shadow: unset;"
                 >
                   Reading Log
                 </a>
@@ -5613,12 +5666,12 @@ exports[`YearStats > matches snapshot for slug 2019 1`] = `
             </ul>
           </nav>
           <div
-            class="search-button z-[1000]"
+            class="z-[1000]"
           >
             <button
               aria-keyshortcuts="Control+K"
               aria-label="Search"
-              class="flex items-center justify-between overflow-hidden text-sm leading-6 ring-default desktop:ml-6"
+              class="flex size-10 items-center justify-center overflow-hidden text-sm leading-6 ring-default desktop:ml-6"
               data-open-modal="true"
               disabled=""
               title="Search: Control+K"
@@ -5705,7 +5758,7 @@ exports[`YearStats > matches snapshot for slug 2019 1`] = `
                 class="mt-4"
               >
                 <li
-                  class="mb-2 font-sans text-xs uppercase tracking-wide text-inverse-subtle"
+                  class="mb-4 ml-1 font-sans text-xs uppercase tracking-wider text-inverse-subtle last:mb-0"
                 >
                   <a
                     href="/readings/stats/"
@@ -5723,8 +5776,11 @@ exports[`YearStats > matches snapshot for slug 2019 1`] = `
         id="content"
       >
         <header
-          class="min-h-[clamp(340px,50vh,1350px)] relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pb-8 pt-40 tablet:pb-10 tablet:pt-40 desktop:pb-16 desktop:pt-40"
+          class="min-h-[clamp(340px,50vh,1350px)]  relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pb-8 pt-40 tablet:pb-10 tablet:pt-40 desktop:pb-16 desktop:pt-40"
         >
+          <div
+            class="absolute inset-0 bg-canvas opacity-15"
+          />
           <div
             class=" z-10 mx-auto flex w-full max-w-screen-max px-container flex-col"
           >
@@ -5744,7 +5800,7 @@ exports[`YearStats > matches snapshot for slug 2019 1`] = `
               2019 Stats
             </h1>
             <p
-              class="mt-1 text-base desktop:my-4 desktop:text-xl  "
+              class="mt-1 text-base desktop:my-4 desktop:text-xl   "
             >
               A Year in Review
             </p>
@@ -6171,7 +6227,7 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
     >
       <header
         class="z-20 flex w-full items-center justify-between px-container py-4 tablet:p-6 desktop:inset-x-0 desktop:z-40 desktop:flex-row desktop:flex-wrap desktop:px-16 desktop:py-8 desktop:text-left"
-        style="position: absolute;"
+        style="color: var(--fg-default); position: absolute;"
       >
         <div
           class="flex flex-col"
@@ -6207,6 +6263,7 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                   href="/"
+                  style="text-shadow: unset;"
                 >
                   Home
                 </a>
@@ -6217,6 +6274,7 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                   href="/how-i-grade/"
+                  style="text-shadow: unset;"
                 >
                   How I Grade
                 </a>
@@ -6227,6 +6285,7 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                   href="/reviews/"
+                  style="text-shadow: unset;"
                 >
                   Reviews
                 </a>
@@ -6237,6 +6296,7 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                   href="/authors/"
+                  style="text-shadow: unset;"
                 >
                   Authors
                 </a>
@@ -6247,6 +6307,7 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                   href="/readings/"
+                  style="text-shadow: unset;"
                 >
                   Reading Log
                 </a>
@@ -6254,12 +6315,12 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
             </ul>
           </nav>
           <div
-            class="search-button z-[1000]"
+            class="z-[1000]"
           >
             <button
               aria-keyshortcuts="Control+K"
               aria-label="Search"
-              class="flex items-center justify-between overflow-hidden text-sm leading-6 ring-default desktop:ml-6"
+              class="flex size-10 items-center justify-center overflow-hidden text-sm leading-6 ring-default desktop:ml-6"
               data-open-modal="true"
               disabled=""
               title="Search: Control+K"
@@ -6346,7 +6407,7 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
                 class="mt-4"
               >
                 <li
-                  class="mb-2 font-sans text-xs uppercase tracking-wide text-inverse-subtle"
+                  class="mb-4 ml-1 font-sans text-xs uppercase tracking-wider text-inverse-subtle last:mb-0"
                 >
                   <a
                     href="/readings/stats/"
@@ -6364,8 +6425,11 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
         id="content"
       >
         <header
-          class="min-h-[clamp(340px,50vh,1350px)] relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pb-8 pt-40 tablet:pb-10 tablet:pt-40 desktop:pb-16 desktop:pt-40"
+          class="min-h-[clamp(340px,50vh,1350px)]  relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pb-8 pt-40 tablet:pb-10 tablet:pt-40 desktop:pb-16 desktop:pt-40"
         >
+          <div
+            class="absolute inset-0 bg-canvas opacity-15"
+          />
           <div
             class=" z-10 mx-auto flex w-full max-w-screen-max px-container flex-col"
           >
@@ -6385,7 +6449,7 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
               2022 Stats
             </h1>
             <p
-              class="mt-1 text-base desktop:my-4 desktop:text-xl  "
+              class="mt-1 text-base desktop:my-4 desktop:text-xl   "
             >
               A Year in Review
             </p>
@@ -8558,7 +8622,7 @@ exports[`YearStats > matches snapshot for slug 2023 1`] = `
     >
       <header
         class="z-20 flex w-full items-center justify-between px-container py-4 tablet:p-6 desktop:inset-x-0 desktop:z-40 desktop:flex-row desktop:flex-wrap desktop:px-16 desktop:py-8 desktop:text-left"
-        style="position: absolute;"
+        style="color: var(--fg-default); position: absolute;"
       >
         <div
           class="flex flex-col"
@@ -8594,6 +8658,7 @@ exports[`YearStats > matches snapshot for slug 2023 1`] = `
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                   href="/"
+                  style="text-shadow: unset;"
                 >
                   Home
                 </a>
@@ -8604,6 +8669,7 @@ exports[`YearStats > matches snapshot for slug 2023 1`] = `
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                   href="/how-i-grade/"
+                  style="text-shadow: unset;"
                 >
                   How I Grade
                 </a>
@@ -8614,6 +8680,7 @@ exports[`YearStats > matches snapshot for slug 2023 1`] = `
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                   href="/reviews/"
+                  style="text-shadow: unset;"
                 >
                   Reviews
                 </a>
@@ -8624,6 +8691,7 @@ exports[`YearStats > matches snapshot for slug 2023 1`] = `
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                   href="/authors/"
+                  style="text-shadow: unset;"
                 >
                   Authors
                 </a>
@@ -8634,6 +8702,7 @@ exports[`YearStats > matches snapshot for slug 2023 1`] = `
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                   href="/readings/"
+                  style="text-shadow: unset;"
                 >
                   Reading Log
                 </a>
@@ -8641,12 +8710,12 @@ exports[`YearStats > matches snapshot for slug 2023 1`] = `
             </ul>
           </nav>
           <div
-            class="search-button z-[1000]"
+            class="z-[1000]"
           >
             <button
               aria-keyshortcuts="Control+K"
               aria-label="Search"
-              class="flex items-center justify-between overflow-hidden text-sm leading-6 ring-default desktop:ml-6"
+              class="flex size-10 items-center justify-center overflow-hidden text-sm leading-6 ring-default desktop:ml-6"
               data-open-modal="true"
               disabled=""
               title="Search: Control+K"
@@ -8733,7 +8802,7 @@ exports[`YearStats > matches snapshot for slug 2023 1`] = `
                 class="mt-4"
               >
                 <li
-                  class="mb-2 font-sans text-xs uppercase tracking-wide text-inverse-subtle"
+                  class="mb-4 ml-1 font-sans text-xs uppercase tracking-wider text-inverse-subtle last:mb-0"
                 >
                   <a
                     href="/readings/stats/"
@@ -8751,8 +8820,11 @@ exports[`YearStats > matches snapshot for slug 2023 1`] = `
         id="content"
       >
         <header
-          class="min-h-[clamp(340px,50vh,1350px)] relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pb-8 pt-40 tablet:pb-10 tablet:pt-40 desktop:pb-16 desktop:pt-40"
+          class="min-h-[clamp(340px,50vh,1350px)]  relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pb-8 pt-40 tablet:pb-10 tablet:pt-40 desktop:pb-16 desktop:pt-40"
         >
+          <div
+            class="absolute inset-0 bg-canvas opacity-15"
+          />
           <div
             class=" z-10 mx-auto flex w-full max-w-screen-max px-container flex-col"
           >
@@ -8772,7 +8844,7 @@ exports[`YearStats > matches snapshot for slug 2023 1`] = `
               2023 Stats
             </h1>
             <p
-              class="mt-1 text-base desktop:my-4 desktop:text-xl  "
+              class="mt-1 text-base desktop:my-4 desktop:text-xl   "
             >
               A Year in Review
             </p>
@@ -9693,7 +9765,7 @@ exports[`YearStats > matches snapshot for slug 2024 1`] = `
     >
       <header
         class="z-20 flex w-full items-center justify-between px-container py-4 tablet:p-6 desktop:inset-x-0 desktop:z-40 desktop:flex-row desktop:flex-wrap desktop:px-16 desktop:py-8 desktop:text-left"
-        style="position: absolute;"
+        style="color: var(--fg-default); position: absolute;"
       >
         <div
           class="flex flex-col"
@@ -9729,6 +9801,7 @@ exports[`YearStats > matches snapshot for slug 2024 1`] = `
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                   href="/"
+                  style="text-shadow: unset;"
                 >
                   Home
                 </a>
@@ -9739,6 +9812,7 @@ exports[`YearStats > matches snapshot for slug 2024 1`] = `
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                   href="/how-i-grade/"
+                  style="text-shadow: unset;"
                 >
                   How I Grade
                 </a>
@@ -9749,6 +9823,7 @@ exports[`YearStats > matches snapshot for slug 2024 1`] = `
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                   href="/reviews/"
+                  style="text-shadow: unset;"
                 >
                   Reviews
                 </a>
@@ -9759,6 +9834,7 @@ exports[`YearStats > matches snapshot for slug 2024 1`] = `
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                   href="/authors/"
+                  style="text-shadow: unset;"
                 >
                   Authors
                 </a>
@@ -9769,6 +9845,7 @@ exports[`YearStats > matches snapshot for slug 2024 1`] = `
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                   href="/readings/"
+                  style="text-shadow: unset;"
                 >
                   Reading Log
                 </a>
@@ -9776,12 +9853,12 @@ exports[`YearStats > matches snapshot for slug 2024 1`] = `
             </ul>
           </nav>
           <div
-            class="search-button z-[1000]"
+            class="z-[1000]"
           >
             <button
               aria-keyshortcuts="Control+K"
               aria-label="Search"
-              class="flex items-center justify-between overflow-hidden text-sm leading-6 ring-default desktop:ml-6"
+              class="flex size-10 items-center justify-center overflow-hidden text-sm leading-6 ring-default desktop:ml-6"
               data-open-modal="true"
               disabled=""
               title="Search: Control+K"
@@ -9868,7 +9945,7 @@ exports[`YearStats > matches snapshot for slug 2024 1`] = `
                 class="mt-4"
               >
                 <li
-                  class="mb-2 font-sans text-xs uppercase tracking-wide text-inverse-subtle"
+                  class="mb-4 ml-1 font-sans text-xs uppercase tracking-wider text-inverse-subtle last:mb-0"
                 >
                   <a
                     href="/readings/stats/"
@@ -9886,8 +9963,11 @@ exports[`YearStats > matches snapshot for slug 2024 1`] = `
         id="content"
       >
         <header
-          class="min-h-[clamp(340px,50vh,1350px)] relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pb-8 pt-40 tablet:pb-10 tablet:pt-40 desktop:pb-16 desktop:pt-40"
+          class="min-h-[clamp(340px,50vh,1350px)]  relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pb-8 pt-40 tablet:pb-10 tablet:pt-40 desktop:pb-16 desktop:pt-40"
         >
+          <div
+            class="absolute inset-0 bg-canvas opacity-15"
+          />
           <div
             class=" z-10 mx-auto flex w-full max-w-screen-max px-container flex-col"
           >
@@ -9907,7 +9987,7 @@ exports[`YearStats > matches snapshot for slug 2024 1`] = `
               2024 Stats
             </h1>
             <p
-              class="mt-1 text-base desktop:my-4 desktop:text-xl  "
+              class="mt-1 text-base desktop:my-4 desktop:text-xl   "
             >
               A year in progress...
             </p>

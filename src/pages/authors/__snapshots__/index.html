@@ -244,7 +244,7 @@
       })();
     </script>
     <astro-island
-      uid="14WtLh"
+      uid="6beb5"
       prefix="r1"
       component-url="~/components/Authors/Authors"
       component-export="Authors"
@@ -264,7 +264,11 @@
         <div class="flex min-h-full w-full flex-col bg-default">
           <header
             class="z-20 flex w-full items-center justify-between px-container py-4 tablet:p-6 desktop:inset-x-0 desktop:z-40 desktop:flex-row desktop:flex-wrap desktop:px-16 desktop:py-8 desktop:text-left"
-            style="position: absolute"
+            style="
+              background-image: unset;
+              color: var(--fg-default);
+              position: absolute;
+            "
           >
             <div class="flex flex-col">
               <div
@@ -284,6 +288,7 @@
                     <a
                       class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                       href="/"
+                      style="text-shadow: unset"
                       >Home</a
                     >
                   </li>
@@ -291,6 +296,7 @@
                     <a
                       class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                       href="/how-i-grade/"
+                      style="text-shadow: unset"
                       >How I Grade</a
                     >
                   </li>
@@ -298,6 +304,7 @@
                     <a
                       class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                       href="/reviews/"
+                      style="text-shadow: unset"
                       >Reviews</a
                     >
                   </li>
@@ -305,6 +312,7 @@
                     <a
                       class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                       href="/authors/"
+                      style="text-shadow: unset"
                       >Authors</a
                     >
                   </li>
@@ -312,16 +320,17 @@
                     <a
                       class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                       href="/readings/"
+                      style="text-shadow: unset"
                       >Reading Log</a
                     >
                   </li>
                 </ul>
               </nav>
-              <div class="search-button z-[1000]">
+              <div class="z-[1000]">
                 <button
                   aria-keyshortcuts="Control+K"
                   aria-label="Search"
-                  class="flex items-center justify-between overflow-hidden text-sm leading-6 ring-default desktop:ml-6"
+                  class="flex size-10 items-center justify-center overflow-hidden text-sm leading-6 ring-default desktop:ml-6"
                   data-open-modal="true"
                   disabled=""
                   title="Search: Control+K"
@@ -370,7 +379,7 @@
                   <a href="/readings/">Reading Log</a>
                   <ol class="mt-4">
                     <li
-                      class="mb-2 font-sans text-xs uppercase tracking-wide text-inverse-subtle"
+                      class="mb-4 ml-1 font-sans text-xs uppercase tracking-wider text-inverse-subtle last:mb-0"
                     >
                       <a href="/readings/stats/">Stats</a>
                     </li>
@@ -383,6 +392,7 @@
             <header
               class="min-h-[clamp(340px,50vh,1350px)] relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pb-8 pt-40 tablet:pb-10 tablet:pt-40 desktop:pb-16 desktop:pt-40"
             >
+              <div class="absolute inset-0 bg-canvas opacity-15"></div>
               <div
                 class="z-10 mx-auto flex w-full max-w-screen-max px-container flex-col"
               >
