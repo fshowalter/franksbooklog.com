@@ -79,7 +79,6 @@ export function Reviews({
           sortValue={state.sortValue}
         />
       }
-      hasBackdrop={true}
       list={
         <GroupedList
           className="bg-default"
