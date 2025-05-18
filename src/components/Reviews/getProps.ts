@@ -52,7 +52,7 @@ export async function getProps(): Promise<Props> {
       "reviews",
       BackdropImageConfig,
     ),
-    deck: `"You were always the best of them, LLoyd."`,
+    deck: `"You were always the best of them, Lloyd."`,
     distinctKinds,
     distinctPublishedYears,
     distinctReviewYears,
