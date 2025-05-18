@@ -1,5 +1,7 @@
+import { getBackdropImageProps } from "~/api/backdrops";
 import { getFluidCoverImageProps } from "~/api/covers";
 import { allReviews } from "~/api/reviews";
+import { BackdropImageConfig } from "~/components/Backdrop";
 import { ListItemCoverImageConfig } from "~/components/ListItemCover";
 
 import type { ListItemValue, Props } from "./Reviews";
@@ -46,7 +48,11 @@ export async function getProps(): Promise<Props> {
   );
 
   return {
-    deck: `"I intend to put up with nothing that I can put down."`,
+    backdropImageProps: await getBackdropImageProps(
+      "reviews",
+      BackdropImageConfig,
+    ),
+    deck: `"You were always the best of them, LLoyd."`,
     distinctKinds,
     distinctPublishedYears,
     distinctReviewYears,

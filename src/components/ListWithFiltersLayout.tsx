@@ -42,7 +42,7 @@ export function ListWithFiltersLayout({
   const [filtersVisible, toggleFilters] = useState(false);
 
   return (
-    <Layout className="bg-subtle" {...rest}>
+    <Layout className="bg-subtle" hasBackdrop={true} {...rest}>
       {backdrop}
       {subNav && subNav}
       <div className="mx-auto flex flex-col items-center bg-default">

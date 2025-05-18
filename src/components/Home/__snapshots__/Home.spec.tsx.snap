@@ -198,7 +198,7 @@ exports[`Home > matches snapshot 1`] = `
         >
           <img
             alt=""
-            class="absolute inset-0 size-full object-cover object-top contrast-75"
+            class="absolute inset-0 size-full object-cover object-top"
             fetchpriority="high"
             height="1350"
             loading="eager"
@@ -208,7 +208,7 @@ exports[`Home > matches snapshot 1`] = `
             width="2400"
           />
           <div
-            class="absolute inset-0 bg-canvas opacity-15"
+            class="absolute inset-0 bg-canvas opacity-25"
           />
           <div
             class=" z-10 mx-auto flex w-full max-w-screen-max px-container flex-col"

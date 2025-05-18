@@ -146,7 +146,7 @@ function Wrapper({
       className={`${sizes} ${textInverse ? "text-inverse" : ""} relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pb-8 pt-40 tablet:pb-10 tablet:pt-40 desktop:pb-16 desktop:pt-40`}
     >
       {heroImage}
-      <div className="absolute inset-0 bg-canvas opacity-15"></div>
+      <div className="absolute inset-0 bg-canvas opacity-25"></div>
       <div
         className={`${centerText ? "items-center" : ""} z-10 mx-auto flex w-full ${narrowChildren ? "px-container text-center tablet:max-w-unset tablet:px-0" : "max-w-screen-max px-container"} flex-col`}
       >
@@ -179,7 +179,7 @@ export function Backdrop({
 }) {
   const heroImage = (
     <img
-      className="absolute inset-0 size-full object-cover object-top contrast-75"
+      className="absolute inset-0 size-full object-cover object-top"
       {...imageProps}
       {...BackdropImageConfig}
       alt=""
