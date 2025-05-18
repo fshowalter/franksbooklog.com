@@ -194,7 +194,7 @@ exports[`Home > matches snapshot 1`] = `
         id="content"
       >
         <header
-          class="min-h-[400px] tablet:min-h-[640px] desktop:min-h-[clamp(640px,70vh,1350px)] text-inverse relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pb-8 pt-40 tablet:pb-10 tablet:pt-40 desktop:pb-16 desktop:pt-40"
+          class="min-h-[400px] tablet:min-h-[640px] desktop:min-h-[clamp(640px,70vh,1350px)] text-inverse relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pt-40 tablet:pt-40 desktop:pb-16 desktop:pt-40"
         >
           <img
             alt=""
@@ -211,7 +211,7 @@ exports[`Home > matches snapshot 1`] = `
             class="absolute inset-0 bg-canvas opacity-25"
           />
           <div
-            class=" z-10 mx-auto flex w-full max-w-screen-max px-container flex-col"
+            class=" z-10 mx-auto flex w-full max-w-screen-max px-container flex-col bg-gradient-to-t from-[rgba(80,75,67,.85)] via-[rgba(80,75,67,.85)] desktop:bg-none py-8 tablet:pb-10 tablet:pt-20 desktop:py-0"
           >
             <h1
               class="text-4xl desktop:text-7xl"

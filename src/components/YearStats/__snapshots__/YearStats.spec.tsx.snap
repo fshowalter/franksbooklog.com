@@ -212,13 +212,13 @@ exports[`YearStats > matches snapshot for slug 2011 1`] = `
         id="content"
       >
         <header
-          class="min-h-[clamp(340px,50vh,1350px)]  relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pb-8 pt-40 tablet:pb-10 tablet:pt-40 desktop:pb-16 desktop:pt-40"
+          class="min-h-[clamp(340px,50vh,1350px)]  relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pt-40 tablet:pt-40 desktop:pb-16 desktop:pt-40"
         >
           <div
             class="absolute inset-0 bg-canvas opacity-25"
           />
           <div
-            class=" z-10 mx-auto flex w-full max-w-screen-max px-container flex-col"
+            class=" z-10 mx-auto flex w-full max-w-screen-max px-container flex-col  py-8 tablet:pb-10 tablet:pt-20 desktop:py-0"
           >
             <p
               class="mb-6 font-sans text-sm uppercase tracking-wide text-subtle"
@@ -861,13 +861,13 @@ exports[`YearStats > matches snapshot for slug 2012 1`] = `
         id="content"
       >
         <header
-          class="min-h-[clamp(340px,50vh,1350px)]  relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pb-8 pt-40 tablet:pb-10 tablet:pt-40 desktop:pb-16 desktop:pt-40"
+          class="min-h-[clamp(340px,50vh,1350px)]  relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pt-40 tablet:pt-40 desktop:pb-16 desktop:pt-40"
         >
           <div
             class="absolute inset-0 bg-canvas opacity-25"
           />
           <div
-            class=" z-10 mx-auto flex w-full max-w-screen-max px-container flex-col"
+            class=" z-10 mx-auto flex w-full max-w-screen-max px-container flex-col  py-8 tablet:pb-10 tablet:pt-20 desktop:py-0"
           >
             <p
               class="mb-6 font-sans text-sm uppercase tracking-wide text-subtle"
@@ -1764,13 +1764,13 @@ exports[`YearStats > matches snapshot for slug 2013 1`] = `
         id="content"
       >
         <header
-          class="min-h-[clamp(340px,50vh,1350px)]  relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pb-8 pt-40 tablet:pb-10 tablet:pt-40 desktop:pb-16 desktop:pt-40"
+          class="min-h-[clamp(340px,50vh,1350px)]  relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pt-40 tablet:pt-40 desktop:pb-16 desktop:pt-40"
         >
           <div
             class="absolute inset-0 bg-canvas opacity-25"
           />
           <div
-            class=" z-10 mx-auto flex w-full max-w-screen-max px-container flex-col"
+            class=" z-10 mx-auto flex w-full max-w-screen-max px-container flex-col  py-8 tablet:pb-10 tablet:pt-20 desktop:py-0"
           >
             <p
               class="mb-6 font-sans text-sm uppercase tracking-wide text-subtle"
@@ -2497,13 +2497,13 @@ exports[`YearStats > matches snapshot for slug 2014 1`] = `
         id="content"
       >
         <header
-          class="min-h-[clamp(340px,50vh,1350px)]  relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pb-8 pt-40 tablet:pb-10 tablet:pt-40 desktop:pb-16 desktop:pt-40"
+          class="min-h-[clamp(340px,50vh,1350px)]  relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pt-40 tablet:pt-40 desktop:pb-16 desktop:pt-40"
         >
           <div
             class="absolute inset-0 bg-canvas opacity-25"
           />
           <div
-            class=" z-10 mx-auto flex w-full max-w-screen-max px-container flex-col"
+            class=" z-10 mx-auto flex w-full max-w-screen-max px-container flex-col  py-8 tablet:pb-10 tablet:pt-20 desktop:py-0"
           >
             <p
               class="mb-6 font-sans text-sm uppercase tracking-wide text-subtle"
@@ -4478,13 +4478,13 @@ exports[`YearStats > matches snapshot for slug 2015 1`] = `
         id="content"
       >
         <header
-          class="min-h-[clamp(340px,50vh,1350px)]  relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pb-8 pt-40 tablet:pb-10 tablet:pt-40 desktop:pb-16 desktop:pt-40"
+          class="min-h-[clamp(340px,50vh,1350px)]  relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pt-40 tablet:pt-40 desktop:pb-16 desktop:pt-40"
         >
           <div
             class="absolute inset-0 bg-canvas opacity-25"
           />
           <div
-            class=" z-10 mx-auto flex w-full max-w-screen-max px-container flex-col"
+            class=" z-10 mx-auto flex w-full max-w-screen-max px-container flex-col  py-8 tablet:pb-10 tablet:pt-20 desktop:py-0"
           >
             <p
               class="mb-6 font-sans text-sm uppercase tracking-wide text-subtle"
@@ -5127,13 +5127,13 @@ exports[`YearStats > matches snapshot for slug 2017 1`] = `
         id="content"
       >
         <header
-          class="min-h-[clamp(340px,50vh,1350px)]  relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pb-8 pt-40 tablet:pb-10 tablet:pt-40 desktop:pb-16 desktop:pt-40"
+          class="min-h-[clamp(340px,50vh,1350px)]  relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pt-40 tablet:pt-40 desktop:pb-16 desktop:pt-40"
         >
           <div
             class="absolute inset-0 bg-canvas opacity-25"
           />
           <div
-            class=" z-10 mx-auto flex w-full max-w-screen-max px-container flex-col"
+            class=" z-10 mx-auto flex w-full max-w-screen-max px-container flex-col  py-8 tablet:pb-10 tablet:pt-20 desktop:py-0"
           >
             <p
               class="mb-6 font-sans text-sm uppercase tracking-wide text-subtle"
@@ -5776,13 +5776,13 @@ exports[`YearStats > matches snapshot for slug 2019 1`] = `
         id="content"
       >
         <header
-          class="min-h-[clamp(340px,50vh,1350px)]  relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pb-8 pt-40 tablet:pb-10 tablet:pt-40 desktop:pb-16 desktop:pt-40"
+          class="min-h-[clamp(340px,50vh,1350px)]  relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pt-40 tablet:pt-40 desktop:pb-16 desktop:pt-40"
         >
           <div
             class="absolute inset-0 bg-canvas opacity-25"
           />
           <div
-            class=" z-10 mx-auto flex w-full max-w-screen-max px-container flex-col"
+            class=" z-10 mx-auto flex w-full max-w-screen-max px-container flex-col  py-8 tablet:pb-10 tablet:pt-20 desktop:py-0"
           >
             <p
               class="mb-6 font-sans text-sm uppercase tracking-wide text-subtle"
@@ -6425,13 +6425,13 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
         id="content"
       >
         <header
-          class="min-h-[clamp(340px,50vh,1350px)]  relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pb-8 pt-40 tablet:pb-10 tablet:pt-40 desktop:pb-16 desktop:pt-40"
+          class="min-h-[clamp(340px,50vh,1350px)]  relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pt-40 tablet:pt-40 desktop:pb-16 desktop:pt-40"
         >
           <div
             class="absolute inset-0 bg-canvas opacity-25"
           />
           <div
-            class=" z-10 mx-auto flex w-full max-w-screen-max px-container flex-col"
+            class=" z-10 mx-auto flex w-full max-w-screen-max px-container flex-col  py-8 tablet:pb-10 tablet:pt-20 desktop:py-0"
           >
             <p
               class="mb-6 font-sans text-sm uppercase tracking-wide text-subtle"
@@ -8820,13 +8820,13 @@ exports[`YearStats > matches snapshot for slug 2023 1`] = `
         id="content"
       >
         <header
-          class="min-h-[clamp(340px,50vh,1350px)]  relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pb-8 pt-40 tablet:pb-10 tablet:pt-40 desktop:pb-16 desktop:pt-40"
+          class="min-h-[clamp(340px,50vh,1350px)]  relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pt-40 tablet:pt-40 desktop:pb-16 desktop:pt-40"
         >
           <div
             class="absolute inset-0 bg-canvas opacity-25"
           />
           <div
-            class=" z-10 mx-auto flex w-full max-w-screen-max px-container flex-col"
+            class=" z-10 mx-auto flex w-full max-w-screen-max px-container flex-col  py-8 tablet:pb-10 tablet:pt-20 desktop:py-0"
           >
             <p
               class="mb-6 font-sans text-sm uppercase tracking-wide text-subtle"
@@ -9963,13 +9963,13 @@ exports[`YearStats > matches snapshot for slug 2024 1`] = `
         id="content"
       >
         <header
-          class="min-h-[clamp(340px,50vh,1350px)]  relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pb-8 pt-40 tablet:pb-10 tablet:pt-40 desktop:pb-16 desktop:pt-40"
+          class="min-h-[clamp(340px,50vh,1350px)]  relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pt-40 tablet:pt-40 desktop:pb-16 desktop:pt-40"
         >
           <div
             class="absolute inset-0 bg-canvas opacity-25"
           />
           <div
-            class=" z-10 mx-auto flex w-full max-w-screen-max px-container flex-col"
+            class=" z-10 mx-auto flex w-full max-w-screen-max px-container flex-col  py-8 tablet:pb-10 tablet:pt-20 desktop:py-0"
           >
             <p
               class="mb-6 font-sans text-sm uppercase tracking-wide text-subtle"
