@@ -214,7 +214,7 @@ exports[`Home > matches snapshot 1`] = `
             class=" z-10 mx-auto flex w-full max-w-screen-max px-container flex-col bg-gradient-to-t from-[rgba(80,75,67,.85)] via-[rgba(80,75,67,.85)] desktop:bg-none py-8 tablet:pb-10 tablet:pt-20 desktop:py-0"
           >
             <h1
-              class="text-4xl desktop:text-7xl"
+              class="[text-shadow:1px_1px_2px_var(--bg-footer)] text-4xl desktop:text-7xl"
             >
               Frank's Book Log
             </h1>
