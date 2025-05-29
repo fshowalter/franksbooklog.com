@@ -21,7 +21,7 @@ export function Mast({
       className="z-20 flex w-full items-center justify-between px-container py-4 tablet:p-6 desktop:inset-x-0 desktop:z-40 desktop:flex-row desktop:flex-wrap desktop:px-16 desktop:py-8 desktop:text-left"
       style={{
         backgroundImage: addGradient
-          ? "linear-gradient(to bottom, rgba(80,75,67,.85), transparent 95%)"
+          ? "linear-gradient(to bottom, rgba(0,0,0,.85), transparent 95%)"
           : "unset",
         color: hasBackdrop ? "#fff" : "var(--fg-default)",
         position: staticMast ? "static" : "absolute",
@@ -79,7 +79,7 @@ function NavListItem({
   value: NavItem;
 }): JSX.Element {
   return (
-    <li className="block whitespace-nowrap tracking-serif-wide">
+    <li className="mast-item block whitespace-nowrap tracking-serif-wide">
       <a
         className={`text-inherit transition-all duration-500 ease-in-out ${hasBackdrop ? "hover:bg-[rgba(0,0,0,.50)]" : "hover:text-accent"}`}
         href={value.target}
@@ -95,7 +95,7 @@ function NavListItem({
 
 function SearchButton() {
   return (
-    <div className="z-[1000]">
+    <div className="search-button z-[1000]">
       <button
         aria-keyshortcuts="Control+K"
         aria-label="Search"

@@ -244,7 +244,7 @@
       })();
     </script>
     <astro-island
-      uid="1r2vkE"
+      uid="Z2qdK4H"
       prefix="r1"
       component-url="~/components/Reviews/Reviews"
       component-export="Reviews"
@@ -274,7 +274,7 @@
             style="
               background-image: linear-gradient(
                 to bottom,
-                rgba(80, 75, 67, 0.85),
+                rgba(0, 0, 0, 0.85),
                 transparent 95%
               );
               color: #fff;
@@ -289,13 +289,15 @@
                 <a href="/">Frank&#x27;s Book Log</a>
               </div>
               <p class="w-full pl-px text-sm italic leading-4 opacity-85">
-                Literature is a relative term.
+                by Frank Showalter
               </p>
             </div>
             <div class="flex items-center">
               <nav class="hidden w-full desktop:block desktop:w-auto">
                 <ul class="flex flex-wrap justify-start gap-x-6 text-xl">
-                  <li class="block whitespace-nowrap tracking-serif-wide">
+                  <li
+                    class="mast-item block whitespace-nowrap tracking-serif-wide"
+                  >
                     <a
                       class="text-inherit transition-all duration-500 ease-in-out hover:bg-[rgba(0,0,0,.50)]"
                       href="/"
@@ -303,7 +305,9 @@
                       >Home</a
                     >
                   </li>
-                  <li class="block whitespace-nowrap tracking-serif-wide">
+                  <li
+                    class="mast-item block whitespace-nowrap tracking-serif-wide"
+                  >
                     <a
                       class="text-inherit transition-all duration-500 ease-in-out hover:bg-[rgba(0,0,0,.50)]"
                       href="/how-i-grade/"
@@ -311,7 +315,9 @@
                       >How I Grade</a
                     >
                   </li>
-                  <li class="block whitespace-nowrap tracking-serif-wide">
+                  <li
+                    class="mast-item block whitespace-nowrap tracking-serif-wide"
+                  >
                     <a
                       class="text-inherit transition-all duration-500 ease-in-out hover:bg-[rgba(0,0,0,.50)]"
                       href="/reviews/"
@@ -319,7 +325,9 @@
                       >Reviews</a
                     >
                   </li>
-                  <li class="block whitespace-nowrap tracking-serif-wide">
+                  <li
+                    class="mast-item block whitespace-nowrap tracking-serif-wide"
+                  >
                     <a
                       class="text-inherit transition-all duration-500 ease-in-out hover:bg-[rgba(0,0,0,.50)]"
                       href="/authors/"
@@ -327,7 +335,9 @@
                       >Authors</a
                     >
                   </li>
-                  <li class="block whitespace-nowrap tracking-serif-wide">
+                  <li
+                    class="mast-item block whitespace-nowrap tracking-serif-wide"
+                  >
                     <a
                       class="text-inherit transition-all duration-500 ease-in-out hover:bg-[rgba(0,0,0,.50)]"
                       href="/readings/"
@@ -337,7 +347,7 @@
                   </li>
                 </ul>
               </nav>
-              <div class="z-[1000]">
+              <div class="search-button z-[1000]">
                 <button
                   aria-keyshortcuts="Control+K"
                   aria-label="Search"
@@ -419,9 +429,8 @@
                 fetchpriority="high"
                 loading="eager"
               />
-              <div class="absolute inset-0 bg-canvas opacity-25"></div>
               <div
-                class="z-10 mx-auto flex w-full max-w-screen-max px-container flex-col bg-gradient-to-t from-[rgba(80,75,67,.85)] via-[rgba(80,75,67,.85)] desktop:bg-none py-8 tablet:pb-10 tablet:pt-20 desktop:py-0"
+                class="z-10 mx-auto flex w-full max-w-screen-max px-container flex-col bg-gradient-to-t from-[rgba(0,0,0,.85)] via-[rgba(0,0,0,.85)] desktop:bg-none py-8 tablet:pb-10 tablet:pt-20 desktop:py-0"
               >
                 <h1
                   class="font-sans text-3xl font-bold uppercase tracking-widest tablet:text-4xl tablet-landscape:text-5xl desktop:text-7xl"
@@ -5237,67 +5246,120 @@
               </div>
             </div>
           </main>
-          <footer
-            class="flex flex-wrap items-start justify-between gap-[10%] bg-footer px-container py-20 text-inverse tablet:px-12 tablet:pt-10 desktop:p-20"
-          >
-            <div class="flex flex-col pb-12">
-              <div class="flex flex-col">
-                <div
-                  class="whitespace-nowrap font-normal leading-8"
-                  style="font-size: 1.5625rem"
+          <footer class="bg-canvas">
+            <div class="mx-auto max-w-screen-max px-container py-20">
+              <div
+                class="flex w-full flex-col tablet:flex-row-reverse tablet:justify-between"
+              >
+                <a
+                  class="mx-auto mb-8 w-full max-w-button bg-footer py-5 text-center font-sans text-xs uppercase tracking-wide text-inverse hover:bg-subtle hover:text-default tablet:mx-0"
+                  href="#top"
+                  >To the top</a
                 >
-                  <a href="/">Frank&#x27;s Book Log</a>
-                </div>
-                <p class="w-full pl-px text-sm italic leading-4 opacity-85">
-                  Literature is a relative term.
-                </p>
-              </div>
-            </div>
-            <div
-              class="flex flex-col gap-20 pb-20 pt-10 tablet:basis-1/2 tablet:pt-20"
-            >
-              <ul class="flex w-full flex-col gap-y-10 text-inverse max:w-auto">
-                <li class="block w-1/2 whitespace-nowrap text-2xl">
-                  <a class="hover:text-accent" href="/">Home</a>
-                </li>
-                <li class="block w-1/2 whitespace-nowrap text-2xl">
-                  <a class="hover:text-accent" href="/how-i-grade/"
-                    >How I Grade</a
+                <div class="flex flex-col">
+                  <div
+                    class="whitespace-nowrap font-normal leading-8"
+                    style="font-size: 1.5625rem"
                   >
-                </li>
-                <li class="block w-1/2 whitespace-nowrap text-2xl">
-                  <a class="hover:text-accent" href="/reviews/">Reviews</a>
-                </li>
-                <li class="block w-1/2 whitespace-nowrap text-2xl">
-                  <a class="hover:text-accent" href="/authors/">Authors</a>
-                </li>
-                <li class="block w-1/2 whitespace-nowrap text-2xl">
-                  <a class="hover:text-accent" href="/readings/">Reading Log</a>
-                  <ol class="mt-4">
-                    <li
-                      class="mb-2 font-sans text-xs uppercase tracking-wide text-inverse-subtle"
-                    >
-                      <a class="hover:text-inverse" href="/readings/stats/"
-                        >Stats</a
+                    <a href="/">Frank&#x27;s Book Log</a>
+                  </div>
+                  <p class="w-full pl-px text-sm italic leading-4 opacity-85">
+                    by Frank Showalter
+                  </p>
+                </div>
+              </div>
+              <div class="justify-between tablet:flex">
+                <div class="flex max-w-prose flex-col pb-12 tablet:pr-32">
+                  <div
+                    class="footer-text pt-10 font-sans text-base font-light text-subtle"
+                  >
+                    <p>
+                      Hi there, I&#x27;m Frank, a husband and father old enough
+                      to have read Stephen King&#x27;s
+                      <em>The Dark Half</em> during its first printing.
+                    </p>
+                    <p>
+                      This site began in 2012, when I realized I&#x27;d
+                      accumulated more books than I could ever hope to finish.
+                      Worse still, I had books I thought I&#x27;d read but
+                      couldn&#x27;t remember. Clearly, I needed a system.
+                    </p>
+                    <p>
+                      What started on Goodreads evolved into this little corner
+                      of the internet where I share my thoughts on what
+                      I&#x27;ve read.
+                    </p>
+                    <p>
+                      New visitors might want to start by reading about<!-- -->
+                      <a href="/how-i-grade/">how I grade</a>. After that, feel
+                      free to browse my <a href="/reviews/">reviews</a>, which
+                      are also indexed <a href="/authors/">by author</a>.
+                    </p>
+                    <p>
+                      I also keep a <a href="/readings/">reading log</a> that
+                      tracks everything I read, whether it gets a full review or
+                      not, complete with <a href="/readings/stats/">stats</a>.
+                      In an age of endless content, sometimes the act of
+                      remembering what we&#x27;ve read becomes as important as
+                      the reading itself.
+                    </p>
+                    <p>
+                      In an era of algorithmic recommendations and corporate
+                      marketing machines, consider this site a human
+                      alternative—one person&#x27;s attempt to catalog his
+                      personal library and maybe help a few fellow travelers
+                      along the way.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="flex grow-0 flex-col gap-20 pb-20 pt-10 tablet:basis-[430px] tablet:pr-10"
+                >
+                  <ul class="flex w-full flex-col gap-y-10 max:w-auto">
+                    <li class="block w-1/2 whitespace-nowrap text-2xl">
+                      <a class="hover:text-accent" href="/">Home</a>
+                    </li>
+                    <li class="block w-1/2 whitespace-nowrap text-2xl">
+                      <a class="hover:text-accent" href="/how-i-grade/"
+                        >How I Grade</a
                       >
                     </li>
-                  </ol>
-                </li>
-              </ul>
-              <a
-                class="mb-8 w-full max-w-button bg-canvas py-5 text-center font-sans text-xs uppercase tracking-wide text-default hover:bg-inverse hover:text-inverse"
-                href="#top"
-                >To the top</a
-              >
-              <p class="w-full font-normal leading-5 text-inverse-subtle">
-                All covers used in accordance with the<!-- -->
-                <a
-                  class="text-inherit underline decoration-2 underline-offset-4 hover:bg-default hover:text-default"
-                  href="http://www.copyright.gov/title17/92chap1.html#107"
-                  >Fair Use Law.</a
-                >
-              </p>
+                    <li class="block w-1/2 whitespace-nowrap text-2xl">
+                      <a class="hover:text-accent" href="/reviews/">Reviews</a>
+                    </li>
+                    <li class="block w-1/2 whitespace-nowrap text-2xl">
+                      <a class="hover:text-accent" href="/authors/">Authors</a>
+                    </li>
+                    <li class="block w-1/2 whitespace-nowrap text-2xl">
+                      <a class="hover:text-accent" href="/readings/"
+                        >Reading Log</a
+                      >
+                      <ol class="mt-4">
+                        <li
+                          class="mb-4 ml-1 font-sans text-xs uppercase tracking-wide text-subtle last:mb-0"
+                        >
+                          <a class="hover:text-default" href="/readings/stats/"
+                            >Stats</a
+                          >
+                        </li>
+                      </ol>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
+            <p
+              class="w-full bg-footer px-container py-10 text-center font-normal leading-5 text-inverse"
+            >
+              All reviews by Frank Showalter. All images used in accordance with
+              the<!-- -->
+              <a
+                class="text-inherit underline decoration-dashed hover:bg-default hover:text-default"
+                href="http://www.copyright.gov/title17/92chap1.html#107"
+                rel="nofollow"
+                >Fair Use Law</a
+              >.
+            </p>
           </footer>
         </div>
       </div>
