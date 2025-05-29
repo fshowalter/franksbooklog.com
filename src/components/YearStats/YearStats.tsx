@@ -36,6 +36,7 @@ export function YearStats({
           </a>
         }
         deck={deck}
+        narrowTitle={true}
         title={`${year} Stats`}
       />
       <StatsNavigation

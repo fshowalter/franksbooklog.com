@@ -25,7 +25,7 @@ export function Home({ backdropImageProps, deck, values }: Props): JSX.Element {
         title="Frank's Book Log"
         titleStyle="[text-shadow:1px_1px_2px_var(--bg-footer)] text-4xl desktop:text-7xl"
       />
-      <nav className="mx-auto max-w-screen-max bg-subtle tablet:px-container">
+      <nav className="mx-auto max-w-screen-max tablet:px-container">
         <SubHeading as="h2" className="px-container tablet:px-0">
           Latest Reviews
         </SubHeading>

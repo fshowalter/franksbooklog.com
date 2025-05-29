@@ -35,6 +35,7 @@ export function AlltimeStats({
           </a>
         }
         deck={deck}
+        narrowTitle={true}
         title="All-Time Stats"
       />
       <StatsNavigation

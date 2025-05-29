@@ -33,6 +33,7 @@
         "ignoreFunctions": ["screen"]
       }
     ],
+    "no-descending-specificity": null,
     "function-no-unknown": [
       true,
       {
