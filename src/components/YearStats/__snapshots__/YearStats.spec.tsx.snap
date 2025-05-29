@@ -32,7 +32,7 @@ exports[`YearStats > matches snapshot for slug 2011 1`] = `
           <p
             class="w-full pl-px text-sm italic leading-4 opacity-85"
           >
-            Literature is a relative term.
+            by Frank Showalter
           </p>
         </div>
         <div
@@ -45,7 +45,7 @@ exports[`YearStats > matches snapshot for slug 2011 1`] = `
               class="flex flex-wrap justify-start gap-x-6 text-xl"
             >
               <li
-                class="block whitespace-nowrap tracking-serif-wide"
+                class="mast-item block whitespace-nowrap tracking-serif-wide"
               >
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
@@ -56,7 +56,7 @@ exports[`YearStats > matches snapshot for slug 2011 1`] = `
                 </a>
               </li>
               <li
-                class="block whitespace-nowrap tracking-serif-wide"
+                class="mast-item block whitespace-nowrap tracking-serif-wide"
               >
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
@@ -67,7 +67,7 @@ exports[`YearStats > matches snapshot for slug 2011 1`] = `
                 </a>
               </li>
               <li
-                class="block whitespace-nowrap tracking-serif-wide"
+                class="mast-item block whitespace-nowrap tracking-serif-wide"
               >
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
@@ -78,7 +78,7 @@ exports[`YearStats > matches snapshot for slug 2011 1`] = `
                 </a>
               </li>
               <li
-                class="block whitespace-nowrap tracking-serif-wide"
+                class="mast-item block whitespace-nowrap tracking-serif-wide"
               >
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
@@ -89,7 +89,7 @@ exports[`YearStats > matches snapshot for slug 2011 1`] = `
                 </a>
               </li>
               <li
-                class="block whitespace-nowrap tracking-serif-wide"
+                class="mast-item block whitespace-nowrap tracking-serif-wide"
               >
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
@@ -102,7 +102,7 @@ exports[`YearStats > matches snapshot for slug 2011 1`] = `
             </ul>
           </nav>
           <div
-            class="z-[1000]"
+            class="search-button z-[1000]"
           >
             <button
               aria-keyshortcuts="Control+K"
@@ -215,10 +215,7 @@ exports[`YearStats > matches snapshot for slug 2011 1`] = `
           class="min-h-[clamp(340px,50vh,1350px)]  relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pt-40 tablet:pt-40 desktop:pb-16 desktop:pt-40"
         >
           <div
-            class="absolute inset-0 bg-canvas opacity-25"
-          />
-          <div
-            class=" z-10 mx-auto flex w-full max-w-screen-max px-container flex-col  py-8 tablet:pb-10 tablet:pt-20 desktop:py-0"
+            class=" z-10 mx-auto flex w-full px-container text-center tablet:max-w-unset tablet:px-0 flex-col  py-8 tablet:pb-10 tablet:pt-20 desktop:py-0"
           >
             <p
               class="mb-6 font-sans text-sm uppercase tracking-wide text-subtle"
@@ -529,120 +526,190 @@ exports[`YearStats > matches snapshot for slug 2011 1`] = `
         </div>
       </main>
       <footer
-        class="flex flex-wrap items-start justify-between gap-[10%] bg-footer px-container py-20 text-inverse tablet:px-12 tablet:pt-10 desktop:p-20"
+        class="bg-canvas"
       >
         <div
-          class="flex flex-col pb-12"
+          class="mx-auto max-w-screen-max px-container py-20"
         >
           <div
-            class="flex flex-col"
+            class="flex w-full flex-col tablet:flex-row-reverse tablet:justify-between"
+          >
+            <a
+              class="mx-auto mb-8 w-full max-w-button bg-footer py-5 text-center font-sans text-xs uppercase tracking-wide text-inverse hover:bg-subtle hover:text-default tablet:mx-0"
+              href="#top"
+            >
+              To the top
+            </a>
+            <div
+              class="flex flex-col"
+            >
+              <div
+                class="whitespace-nowrap font-normal leading-8"
+                style="font-size: 1.5625rem;"
+              >
+                <a
+                  href="/"
+                >
+                  Frank's Book Log
+                </a>
+              </div>
+              <p
+                class="w-full pl-px text-sm italic leading-4 opacity-85"
+              >
+                by Frank Showalter
+              </p>
+            </div>
+          </div>
+          <div
+            class="justify-between tablet:flex"
           >
             <div
-              class="whitespace-nowrap font-normal leading-8"
-              style="font-size: 1.5625rem;"
+              class="flex max-w-prose flex-col pb-12 tablet:pr-32"
             >
-              <a
-                href="/"
+              <div
+                class="footer-text pt-10 font-sans text-base font-light text-subtle"
               >
-                Frank's Book Log
-              </a>
-            </div>
-            <p
-              class="w-full pl-px text-sm italic leading-4 opacity-85"
-            >
-              Literature is a relative term.
-            </p>
-          </div>
-        </div>
-        <div
-          class="flex flex-col gap-20 pb-20 pt-10 tablet:basis-1/2 tablet:pt-20"
-        >
-          <ul
-            class="flex w-full flex-col gap-y-10 text-inverse max:w-auto"
-          >
-            <li
-              class="block w-1/2 whitespace-nowrap text-2xl"
-            >
-              <a
-                class="hover:text-accent"
-                href="/"
-              >
-                Home
-              </a>
-            </li>
-            <li
-              class="block w-1/2 whitespace-nowrap text-2xl"
-            >
-              <a
-                class="hover:text-accent"
-                href="/how-i-grade/"
-              >
-                How I Grade
-              </a>
-            </li>
-            <li
-              class="block w-1/2 whitespace-nowrap text-2xl"
-            >
-              <a
-                class="hover:text-accent"
-                href="/reviews/"
-              >
-                Reviews
-              </a>
-            </li>
-            <li
-              class="block w-1/2 whitespace-nowrap text-2xl"
-            >
-              <a
-                class="hover:text-accent"
-                href="/authors/"
-              >
-                Authors
-              </a>
-            </li>
-            <li
-              class="block w-1/2 whitespace-nowrap text-2xl"
-            >
-              <a
-                class="hover:text-accent"
-                href="/readings/"
-              >
-                Reading Log
-              </a>
-              <ol
-                class="mt-4"
-              >
-                <li
-                  class="mb-2 font-sans text-xs uppercase tracking-wide text-inverse-subtle"
-                >
+                <p>
+                  Hi there, I'm Frank, a husband and father old enough to have read Stephen King's 
+                  <em>
+                    The Dark Half
+                  </em>
+                   during its first printing.
+                </p>
+                <p>
+                  This site began in 2012, when I realized I'd accumulated more books than I could ever hope to finish. Worse still, I had books I thought I'd read but couldn't remember. Clearly, I needed a system.
+                </p>
+                <p>
+                  What started on Goodreads evolved into this little corner of the internet where I share my thoughts on what I've read.
+                </p>
+                <p>
+                  New visitors might want to start by reading about 
                   <a
-                    class="hover:text-inverse"
+                    href="/how-i-grade/"
+                  >
+                    how I grade
+                  </a>
+                  . After that, feel free to browse my 
+                  <a
+                    href="/reviews/"
+                  >
+                    reviews
+                  </a>
+                  , which are also indexed 
+                  <a
+                    href="/authors/"
+                  >
+                    by author
+                  </a>
+                  .
+                </p>
+                <p>
+                  I also keep a 
+                  <a
+                    href="/readings/"
+                  >
+                    reading log
+                  </a>
+                   that tracks everything I read, whether it gets a full review or not, complete with 
+                  <a
                     href="/readings/stats/"
                   >
-                    Stats
+                    stats
+                  </a>
+                  . In an age of endless content, sometimes the act of remembering what we've read becomes as important as the reading itself.
+                </p>
+                <p>
+                  In an era of algorithmic recommendations and corporate marketing machines, consider this site a human alternative—one person's attempt to catalog his personal library and maybe help a few fellow travelers along the way.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex grow-0 flex-col gap-20 pb-20 pt-10 tablet:basis-[430px] tablet:pr-10"
+            >
+              <ul
+                class="flex w-full flex-col gap-y-10 max:w-auto"
+              >
+                <li
+                  class="block w-1/2 whitespace-nowrap text-2xl"
+                >
+                  <a
+                    class="hover:text-accent"
+                    href="/"
+                  >
+                    Home
                   </a>
                 </li>
-              </ol>
-            </li>
-          </ul>
-          <a
-            class="mb-8 w-full max-w-button bg-canvas py-5 text-center font-sans text-xs uppercase tracking-wide text-default hover:bg-inverse hover:text-inverse"
-            href="#top"
-          >
-            To the top
-          </a>
-          <p
-            class="w-full font-normal leading-5 text-inverse-subtle"
-          >
-            All covers used in accordance with the 
-            <a
-              class="text-inherit underline decoration-2 underline-offset-4 hover:bg-default hover:text-default"
-              href="http://www.copyright.gov/title17/92chap1.html#107"
-            >
-              Fair Use Law.
-            </a>
-          </p>
+                <li
+                  class="block w-1/2 whitespace-nowrap text-2xl"
+                >
+                  <a
+                    class="hover:text-accent"
+                    href="/how-i-grade/"
+                  >
+                    How I Grade
+                  </a>
+                </li>
+                <li
+                  class="block w-1/2 whitespace-nowrap text-2xl"
+                >
+                  <a
+                    class="hover:text-accent"
+                    href="/reviews/"
+                  >
+                    Reviews
+                  </a>
+                </li>
+                <li
+                  class="block w-1/2 whitespace-nowrap text-2xl"
+                >
+                  <a
+                    class="hover:text-accent"
+                    href="/authors/"
+                  >
+                    Authors
+                  </a>
+                </li>
+                <li
+                  class="block w-1/2 whitespace-nowrap text-2xl"
+                >
+                  <a
+                    class="hover:text-accent"
+                    href="/readings/"
+                  >
+                    Reading Log
+                  </a>
+                  <ol
+                    class="mt-4"
+                  >
+                    <li
+                      class="mb-4 ml-1 font-sans text-xs uppercase tracking-wide text-subtle last:mb-0"
+                    >
+                      <a
+                        class="hover:text-default"
+                        href="/readings/stats/"
+                      >
+                        Stats
+                      </a>
+                    </li>
+                  </ol>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+        <p
+          class="w-full bg-footer px-container py-10 text-center font-normal leading-5 text-inverse"
+        >
+          All reviews by Frank Showalter. All images used in accordance with the 
+          <a
+            class="text-inherit underline decoration-dashed hover:bg-default hover:text-default"
+            href="http://www.copyright.gov/title17/92chap1.html#107"
+            rel="nofollow"
+          >
+            Fair Use Law
+          </a>
+          .
+        </p>
       </footer>
     </div>
   </div>
@@ -681,7 +748,7 @@ exports[`YearStats > matches snapshot for slug 2012 1`] = `
           <p
             class="w-full pl-px text-sm italic leading-4 opacity-85"
           >
-            Literature is a relative term.
+            by Frank Showalter
           </p>
         </div>
         <div
@@ -694,7 +761,7 @@ exports[`YearStats > matches snapshot for slug 2012 1`] = `
               class="flex flex-wrap justify-start gap-x-6 text-xl"
             >
               <li
-                class="block whitespace-nowrap tracking-serif-wide"
+                class="mast-item block whitespace-nowrap tracking-serif-wide"
               >
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
@@ -705,7 +772,7 @@ exports[`YearStats > matches snapshot for slug 2012 1`] = `
                 </a>
               </li>
               <li
-                class="block whitespace-nowrap tracking-serif-wide"
+                class="mast-item block whitespace-nowrap tracking-serif-wide"
               >
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
@@ -716,7 +783,7 @@ exports[`YearStats > matches snapshot for slug 2012 1`] = `
                 </a>
               </li>
               <li
-                class="block whitespace-nowrap tracking-serif-wide"
+                class="mast-item block whitespace-nowrap tracking-serif-wide"
               >
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
@@ -727,7 +794,7 @@ exports[`YearStats > matches snapshot for slug 2012 1`] = `
                 </a>
               </li>
               <li
-                class="block whitespace-nowrap tracking-serif-wide"
+                class="mast-item block whitespace-nowrap tracking-serif-wide"
               >
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
@@ -738,7 +805,7 @@ exports[`YearStats > matches snapshot for slug 2012 1`] = `
                 </a>
               </li>
               <li
-                class="block whitespace-nowrap tracking-serif-wide"
+                class="mast-item block whitespace-nowrap tracking-serif-wide"
               >
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
@@ -751,7 +818,7 @@ exports[`YearStats > matches snapshot for slug 2012 1`] = `
             </ul>
           </nav>
           <div
-            class="z-[1000]"
+            class="search-button z-[1000]"
           >
             <button
               aria-keyshortcuts="Control+K"
@@ -864,10 +931,7 @@ exports[`YearStats > matches snapshot for slug 2012 1`] = `
           class="min-h-[clamp(340px,50vh,1350px)]  relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pt-40 tablet:pt-40 desktop:pb-16 desktop:pt-40"
         >
           <div
-            class="absolute inset-0 bg-canvas opacity-25"
-          />
-          <div
-            class=" z-10 mx-auto flex w-full max-w-screen-max px-container flex-col  py-8 tablet:pb-10 tablet:pt-20 desktop:py-0"
+            class=" z-10 mx-auto flex w-full px-container text-center tablet:max-w-unset tablet:px-0 flex-col  py-8 tablet:pb-10 tablet:pt-20 desktop:py-0"
           >
             <p
               class="mb-6 font-sans text-sm uppercase tracking-wide text-subtle"
@@ -1432,120 +1496,190 @@ exports[`YearStats > matches snapshot for slug 2012 1`] = `
         </div>
       </main>
       <footer
-        class="flex flex-wrap items-start justify-between gap-[10%] bg-footer px-container py-20 text-inverse tablet:px-12 tablet:pt-10 desktop:p-20"
+        class="bg-canvas"
       >
         <div
-          class="flex flex-col pb-12"
+          class="mx-auto max-w-screen-max px-container py-20"
         >
           <div
-            class="flex flex-col"
+            class="flex w-full flex-col tablet:flex-row-reverse tablet:justify-between"
+          >
+            <a
+              class="mx-auto mb-8 w-full max-w-button bg-footer py-5 text-center font-sans text-xs uppercase tracking-wide text-inverse hover:bg-subtle hover:text-default tablet:mx-0"
+              href="#top"
+            >
+              To the top
+            </a>
+            <div
+              class="flex flex-col"
+            >
+              <div
+                class="whitespace-nowrap font-normal leading-8"
+                style="font-size: 1.5625rem;"
+              >
+                <a
+                  href="/"
+                >
+                  Frank's Book Log
+                </a>
+              </div>
+              <p
+                class="w-full pl-px text-sm italic leading-4 opacity-85"
+              >
+                by Frank Showalter
+              </p>
+            </div>
+          </div>
+          <div
+            class="justify-between tablet:flex"
           >
             <div
-              class="whitespace-nowrap font-normal leading-8"
-              style="font-size: 1.5625rem;"
+              class="flex max-w-prose flex-col pb-12 tablet:pr-32"
             >
-              <a
-                href="/"
+              <div
+                class="footer-text pt-10 font-sans text-base font-light text-subtle"
               >
-                Frank's Book Log
-              </a>
-            </div>
-            <p
-              class="w-full pl-px text-sm italic leading-4 opacity-85"
-            >
-              Literature is a relative term.
-            </p>
-          </div>
-        </div>
-        <div
-          class="flex flex-col gap-20 pb-20 pt-10 tablet:basis-1/2 tablet:pt-20"
-        >
-          <ul
-            class="flex w-full flex-col gap-y-10 text-inverse max:w-auto"
-          >
-            <li
-              class="block w-1/2 whitespace-nowrap text-2xl"
-            >
-              <a
-                class="hover:text-accent"
-                href="/"
-              >
-                Home
-              </a>
-            </li>
-            <li
-              class="block w-1/2 whitespace-nowrap text-2xl"
-            >
-              <a
-                class="hover:text-accent"
-                href="/how-i-grade/"
-              >
-                How I Grade
-              </a>
-            </li>
-            <li
-              class="block w-1/2 whitespace-nowrap text-2xl"
-            >
-              <a
-                class="hover:text-accent"
-                href="/reviews/"
-              >
-                Reviews
-              </a>
-            </li>
-            <li
-              class="block w-1/2 whitespace-nowrap text-2xl"
-            >
-              <a
-                class="hover:text-accent"
-                href="/authors/"
-              >
-                Authors
-              </a>
-            </li>
-            <li
-              class="block w-1/2 whitespace-nowrap text-2xl"
-            >
-              <a
-                class="hover:text-accent"
-                href="/readings/"
-              >
-                Reading Log
-              </a>
-              <ol
-                class="mt-4"
-              >
-                <li
-                  class="mb-2 font-sans text-xs uppercase tracking-wide text-inverse-subtle"
-                >
+                <p>
+                  Hi there, I'm Frank, a husband and father old enough to have read Stephen King's 
+                  <em>
+                    The Dark Half
+                  </em>
+                   during its first printing.
+                </p>
+                <p>
+                  This site began in 2012, when I realized I'd accumulated more books than I could ever hope to finish. Worse still, I had books I thought I'd read but couldn't remember. Clearly, I needed a system.
+                </p>
+                <p>
+                  What started on Goodreads evolved into this little corner of the internet where I share my thoughts on what I've read.
+                </p>
+                <p>
+                  New visitors might want to start by reading about 
                   <a
-                    class="hover:text-inverse"
+                    href="/how-i-grade/"
+                  >
+                    how I grade
+                  </a>
+                  . After that, feel free to browse my 
+                  <a
+                    href="/reviews/"
+                  >
+                    reviews
+                  </a>
+                  , which are also indexed 
+                  <a
+                    href="/authors/"
+                  >
+                    by author
+                  </a>
+                  .
+                </p>
+                <p>
+                  I also keep a 
+                  <a
+                    href="/readings/"
+                  >
+                    reading log
+                  </a>
+                   that tracks everything I read, whether it gets a full review or not, complete with 
+                  <a
                     href="/readings/stats/"
                   >
-                    Stats
+                    stats
+                  </a>
+                  . In an age of endless content, sometimes the act of remembering what we've read becomes as important as the reading itself.
+                </p>
+                <p>
+                  In an era of algorithmic recommendations and corporate marketing machines, consider this site a human alternative—one person's attempt to catalog his personal library and maybe help a few fellow travelers along the way.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex grow-0 flex-col gap-20 pb-20 pt-10 tablet:basis-[430px] tablet:pr-10"
+            >
+              <ul
+                class="flex w-full flex-col gap-y-10 max:w-auto"
+              >
+                <li
+                  class="block w-1/2 whitespace-nowrap text-2xl"
+                >
+                  <a
+                    class="hover:text-accent"
+                    href="/"
+                  >
+                    Home
                   </a>
                 </li>
-              </ol>
-            </li>
-          </ul>
-          <a
-            class="mb-8 w-full max-w-button bg-canvas py-5 text-center font-sans text-xs uppercase tracking-wide text-default hover:bg-inverse hover:text-inverse"
-            href="#top"
-          >
-            To the top
-          </a>
-          <p
-            class="w-full font-normal leading-5 text-inverse-subtle"
-          >
-            All covers used in accordance with the 
-            <a
-              class="text-inherit underline decoration-2 underline-offset-4 hover:bg-default hover:text-default"
-              href="http://www.copyright.gov/title17/92chap1.html#107"
-            >
-              Fair Use Law.
-            </a>
-          </p>
+                <li
+                  class="block w-1/2 whitespace-nowrap text-2xl"
+                >
+                  <a
+                    class="hover:text-accent"
+                    href="/how-i-grade/"
+                  >
+                    How I Grade
+                  </a>
+                </li>
+                <li
+                  class="block w-1/2 whitespace-nowrap text-2xl"
+                >
+                  <a
+                    class="hover:text-accent"
+                    href="/reviews/"
+                  >
+                    Reviews
+                  </a>
+                </li>
+                <li
+                  class="block w-1/2 whitespace-nowrap text-2xl"
+                >
+                  <a
+                    class="hover:text-accent"
+                    href="/authors/"
+                  >
+                    Authors
+                  </a>
+                </li>
+                <li
+                  class="block w-1/2 whitespace-nowrap text-2xl"
+                >
+                  <a
+                    class="hover:text-accent"
+                    href="/readings/"
+                  >
+                    Reading Log
+                  </a>
+                  <ol
+                    class="mt-4"
+                  >
+                    <li
+                      class="mb-4 ml-1 font-sans text-xs uppercase tracking-wide text-subtle last:mb-0"
+                    >
+                      <a
+                        class="hover:text-default"
+                        href="/readings/stats/"
+                      >
+                        Stats
+                      </a>
+                    </li>
+                  </ol>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+        <p
+          class="w-full bg-footer px-container py-10 text-center font-normal leading-5 text-inverse"
+        >
+          All reviews by Frank Showalter. All images used in accordance with the 
+          <a
+            class="text-inherit underline decoration-dashed hover:bg-default hover:text-default"
+            href="http://www.copyright.gov/title17/92chap1.html#107"
+            rel="nofollow"
+          >
+            Fair Use Law
+          </a>
+          .
+        </p>
       </footer>
     </div>
   </div>
@@ -1584,7 +1718,7 @@ exports[`YearStats > matches snapshot for slug 2013 1`] = `
           <p
             class="w-full pl-px text-sm italic leading-4 opacity-85"
           >
-            Literature is a relative term.
+            by Frank Showalter
           </p>
         </div>
         <div
@@ -1597,7 +1731,7 @@ exports[`YearStats > matches snapshot for slug 2013 1`] = `
               class="flex flex-wrap justify-start gap-x-6 text-xl"
             >
               <li
-                class="block whitespace-nowrap tracking-serif-wide"
+                class="mast-item block whitespace-nowrap tracking-serif-wide"
               >
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
@@ -1608,7 +1742,7 @@ exports[`YearStats > matches snapshot for slug 2013 1`] = `
                 </a>
               </li>
               <li
-                class="block whitespace-nowrap tracking-serif-wide"
+                class="mast-item block whitespace-nowrap tracking-serif-wide"
               >
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
@@ -1619,7 +1753,7 @@ exports[`YearStats > matches snapshot for slug 2013 1`] = `
                 </a>
               </li>
               <li
-                class="block whitespace-nowrap tracking-serif-wide"
+                class="mast-item block whitespace-nowrap tracking-serif-wide"
               >
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
@@ -1630,7 +1764,7 @@ exports[`YearStats > matches snapshot for slug 2013 1`] = `
                 </a>
               </li>
               <li
-                class="block whitespace-nowrap tracking-serif-wide"
+                class="mast-item block whitespace-nowrap tracking-serif-wide"
               >
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
@@ -1641,7 +1775,7 @@ exports[`YearStats > matches snapshot for slug 2013 1`] = `
                 </a>
               </li>
               <li
-                class="block whitespace-nowrap tracking-serif-wide"
+                class="mast-item block whitespace-nowrap tracking-serif-wide"
               >
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
@@ -1654,7 +1788,7 @@ exports[`YearStats > matches snapshot for slug 2013 1`] = `
             </ul>
           </nav>
           <div
-            class="z-[1000]"
+            class="search-button z-[1000]"
           >
             <button
               aria-keyshortcuts="Control+K"
@@ -1767,10 +1901,7 @@ exports[`YearStats > matches snapshot for slug 2013 1`] = `
           class="min-h-[clamp(340px,50vh,1350px)]  relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pt-40 tablet:pt-40 desktop:pb-16 desktop:pt-40"
         >
           <div
-            class="absolute inset-0 bg-canvas opacity-25"
-          />
-          <div
-            class=" z-10 mx-auto flex w-full max-w-screen-max px-container flex-col  py-8 tablet:pb-10 tablet:pt-20 desktop:py-0"
+            class=" z-10 mx-auto flex w-full px-container text-center tablet:max-w-unset tablet:px-0 flex-col  py-8 tablet:pb-10 tablet:pt-20 desktop:py-0"
           >
             <p
               class="mb-6 font-sans text-sm uppercase tracking-wide text-subtle"
@@ -2165,120 +2296,190 @@ exports[`YearStats > matches snapshot for slug 2013 1`] = `
         </div>
       </main>
       <footer
-        class="flex flex-wrap items-start justify-between gap-[10%] bg-footer px-container py-20 text-inverse tablet:px-12 tablet:pt-10 desktop:p-20"
+        class="bg-canvas"
       >
         <div
-          class="flex flex-col pb-12"
+          class="mx-auto max-w-screen-max px-container py-20"
         >
           <div
-            class="flex flex-col"
+            class="flex w-full flex-col tablet:flex-row-reverse tablet:justify-between"
+          >
+            <a
+              class="mx-auto mb-8 w-full max-w-button bg-footer py-5 text-center font-sans text-xs uppercase tracking-wide text-inverse hover:bg-subtle hover:text-default tablet:mx-0"
+              href="#top"
+            >
+              To the top
+            </a>
+            <div
+              class="flex flex-col"
+            >
+              <div
+                class="whitespace-nowrap font-normal leading-8"
+                style="font-size: 1.5625rem;"
+              >
+                <a
+                  href="/"
+                >
+                  Frank's Book Log
+                </a>
+              </div>
+              <p
+                class="w-full pl-px text-sm italic leading-4 opacity-85"
+              >
+                by Frank Showalter
+              </p>
+            </div>
+          </div>
+          <div
+            class="justify-between tablet:flex"
           >
             <div
-              class="whitespace-nowrap font-normal leading-8"
-              style="font-size: 1.5625rem;"
+              class="flex max-w-prose flex-col pb-12 tablet:pr-32"
             >
-              <a
-                href="/"
+              <div
+                class="footer-text pt-10 font-sans text-base font-light text-subtle"
               >
-                Frank's Book Log
-              </a>
-            </div>
-            <p
-              class="w-full pl-px text-sm italic leading-4 opacity-85"
-            >
-              Literature is a relative term.
-            </p>
-          </div>
-        </div>
-        <div
-          class="flex flex-col gap-20 pb-20 pt-10 tablet:basis-1/2 tablet:pt-20"
-        >
-          <ul
-            class="flex w-full flex-col gap-y-10 text-inverse max:w-auto"
-          >
-            <li
-              class="block w-1/2 whitespace-nowrap text-2xl"
-            >
-              <a
-                class="hover:text-accent"
-                href="/"
-              >
-                Home
-              </a>
-            </li>
-            <li
-              class="block w-1/2 whitespace-nowrap text-2xl"
-            >
-              <a
-                class="hover:text-accent"
-                href="/how-i-grade/"
-              >
-                How I Grade
-              </a>
-            </li>
-            <li
-              class="block w-1/2 whitespace-nowrap text-2xl"
-            >
-              <a
-                class="hover:text-accent"
-                href="/reviews/"
-              >
-                Reviews
-              </a>
-            </li>
-            <li
-              class="block w-1/2 whitespace-nowrap text-2xl"
-            >
-              <a
-                class="hover:text-accent"
-                href="/authors/"
-              >
-                Authors
-              </a>
-            </li>
-            <li
-              class="block w-1/2 whitespace-nowrap text-2xl"
-            >
-              <a
-                class="hover:text-accent"
-                href="/readings/"
-              >
-                Reading Log
-              </a>
-              <ol
-                class="mt-4"
-              >
-                <li
-                  class="mb-2 font-sans text-xs uppercase tracking-wide text-inverse-subtle"
-                >
+                <p>
+                  Hi there, I'm Frank, a husband and father old enough to have read Stephen King's 
+                  <em>
+                    The Dark Half
+                  </em>
+                   during its first printing.
+                </p>
+                <p>
+                  This site began in 2012, when I realized I'd accumulated more books than I could ever hope to finish. Worse still, I had books I thought I'd read but couldn't remember. Clearly, I needed a system.
+                </p>
+                <p>
+                  What started on Goodreads evolved into this little corner of the internet where I share my thoughts on what I've read.
+                </p>
+                <p>
+                  New visitors might want to start by reading about 
                   <a
-                    class="hover:text-inverse"
+                    href="/how-i-grade/"
+                  >
+                    how I grade
+                  </a>
+                  . After that, feel free to browse my 
+                  <a
+                    href="/reviews/"
+                  >
+                    reviews
+                  </a>
+                  , which are also indexed 
+                  <a
+                    href="/authors/"
+                  >
+                    by author
+                  </a>
+                  .
+                </p>
+                <p>
+                  I also keep a 
+                  <a
+                    href="/readings/"
+                  >
+                    reading log
+                  </a>
+                   that tracks everything I read, whether it gets a full review or not, complete with 
+                  <a
                     href="/readings/stats/"
                   >
-                    Stats
+                    stats
+                  </a>
+                  . In an age of endless content, sometimes the act of remembering what we've read becomes as important as the reading itself.
+                </p>
+                <p>
+                  In an era of algorithmic recommendations and corporate marketing machines, consider this site a human alternative—one person's attempt to catalog his personal library and maybe help a few fellow travelers along the way.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex grow-0 flex-col gap-20 pb-20 pt-10 tablet:basis-[430px] tablet:pr-10"
+            >
+              <ul
+                class="flex w-full flex-col gap-y-10 max:w-auto"
+              >
+                <li
+                  class="block w-1/2 whitespace-nowrap text-2xl"
+                >
+                  <a
+                    class="hover:text-accent"
+                    href="/"
+                  >
+                    Home
                   </a>
                 </li>
-              </ol>
-            </li>
-          </ul>
-          <a
-            class="mb-8 w-full max-w-button bg-canvas py-5 text-center font-sans text-xs uppercase tracking-wide text-default hover:bg-inverse hover:text-inverse"
-            href="#top"
-          >
-            To the top
-          </a>
-          <p
-            class="w-full font-normal leading-5 text-inverse-subtle"
-          >
-            All covers used in accordance with the 
-            <a
-              class="text-inherit underline decoration-2 underline-offset-4 hover:bg-default hover:text-default"
-              href="http://www.copyright.gov/title17/92chap1.html#107"
-            >
-              Fair Use Law.
-            </a>
-          </p>
+                <li
+                  class="block w-1/2 whitespace-nowrap text-2xl"
+                >
+                  <a
+                    class="hover:text-accent"
+                    href="/how-i-grade/"
+                  >
+                    How I Grade
+                  </a>
+                </li>
+                <li
+                  class="block w-1/2 whitespace-nowrap text-2xl"
+                >
+                  <a
+                    class="hover:text-accent"
+                    href="/reviews/"
+                  >
+                    Reviews
+                  </a>
+                </li>
+                <li
+                  class="block w-1/2 whitespace-nowrap text-2xl"
+                >
+                  <a
+                    class="hover:text-accent"
+                    href="/authors/"
+                  >
+                    Authors
+                  </a>
+                </li>
+                <li
+                  class="block w-1/2 whitespace-nowrap text-2xl"
+                >
+                  <a
+                    class="hover:text-accent"
+                    href="/readings/"
+                  >
+                    Reading Log
+                  </a>
+                  <ol
+                    class="mt-4"
+                  >
+                    <li
+                      class="mb-4 ml-1 font-sans text-xs uppercase tracking-wide text-subtle last:mb-0"
+                    >
+                      <a
+                        class="hover:text-default"
+                        href="/readings/stats/"
+                      >
+                        Stats
+                      </a>
+                    </li>
+                  </ol>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+        <p
+          class="w-full bg-footer px-container py-10 text-center font-normal leading-5 text-inverse"
+        >
+          All reviews by Frank Showalter. All images used in accordance with the 
+          <a
+            class="text-inherit underline decoration-dashed hover:bg-default hover:text-default"
+            href="http://www.copyright.gov/title17/92chap1.html#107"
+            rel="nofollow"
+          >
+            Fair Use Law
+          </a>
+          .
+        </p>
       </footer>
     </div>
   </div>
@@ -2317,7 +2518,7 @@ exports[`YearStats > matches snapshot for slug 2014 1`] = `
           <p
             class="w-full pl-px text-sm italic leading-4 opacity-85"
           >
-            Literature is a relative term.
+            by Frank Showalter
           </p>
         </div>
         <div
@@ -2330,7 +2531,7 @@ exports[`YearStats > matches snapshot for slug 2014 1`] = `
               class="flex flex-wrap justify-start gap-x-6 text-xl"
             >
               <li
-                class="block whitespace-nowrap tracking-serif-wide"
+                class="mast-item block whitespace-nowrap tracking-serif-wide"
               >
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
@@ -2341,7 +2542,7 @@ exports[`YearStats > matches snapshot for slug 2014 1`] = `
                 </a>
               </li>
               <li
-                class="block whitespace-nowrap tracking-serif-wide"
+                class="mast-item block whitespace-nowrap tracking-serif-wide"
               >
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
@@ -2352,7 +2553,7 @@ exports[`YearStats > matches snapshot for slug 2014 1`] = `
                 </a>
               </li>
               <li
-                class="block whitespace-nowrap tracking-serif-wide"
+                class="mast-item block whitespace-nowrap tracking-serif-wide"
               >
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
@@ -2363,7 +2564,7 @@ exports[`YearStats > matches snapshot for slug 2014 1`] = `
                 </a>
               </li>
               <li
-                class="block whitespace-nowrap tracking-serif-wide"
+                class="mast-item block whitespace-nowrap tracking-serif-wide"
               >
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
@@ -2374,7 +2575,7 @@ exports[`YearStats > matches snapshot for slug 2014 1`] = `
                 </a>
               </li>
               <li
-                class="block whitespace-nowrap tracking-serif-wide"
+                class="mast-item block whitespace-nowrap tracking-serif-wide"
               >
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
@@ -2387,7 +2588,7 @@ exports[`YearStats > matches snapshot for slug 2014 1`] = `
             </ul>
           </nav>
           <div
-            class="z-[1000]"
+            class="search-button z-[1000]"
           >
             <button
               aria-keyshortcuts="Control+K"
@@ -2500,10 +2701,7 @@ exports[`YearStats > matches snapshot for slug 2014 1`] = `
           class="min-h-[clamp(340px,50vh,1350px)]  relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pt-40 tablet:pt-40 desktop:pb-16 desktop:pt-40"
         >
           <div
-            class="absolute inset-0 bg-canvas opacity-25"
-          />
-          <div
-            class=" z-10 mx-auto flex w-full max-w-screen-max px-container flex-col  py-8 tablet:pb-10 tablet:pt-20 desktop:py-0"
+            class=" z-10 mx-auto flex w-full px-container text-center tablet:max-w-unset tablet:px-0 flex-col  py-8 tablet:pb-10 tablet:pt-20 desktop:py-0"
           >
             <p
               class="mb-6 font-sans text-sm uppercase tracking-wide text-subtle"
@@ -4146,120 +4344,190 @@ exports[`YearStats > matches snapshot for slug 2014 1`] = `
         </div>
       </main>
       <footer
-        class="flex flex-wrap items-start justify-between gap-[10%] bg-footer px-container py-20 text-inverse tablet:px-12 tablet:pt-10 desktop:p-20"
+        class="bg-canvas"
       >
         <div
-          class="flex flex-col pb-12"
+          class="mx-auto max-w-screen-max px-container py-20"
         >
           <div
-            class="flex flex-col"
+            class="flex w-full flex-col tablet:flex-row-reverse tablet:justify-between"
+          >
+            <a
+              class="mx-auto mb-8 w-full max-w-button bg-footer py-5 text-center font-sans text-xs uppercase tracking-wide text-inverse hover:bg-subtle hover:text-default tablet:mx-0"
+              href="#top"
+            >
+              To the top
+            </a>
+            <div
+              class="flex flex-col"
+            >
+              <div
+                class="whitespace-nowrap font-normal leading-8"
+                style="font-size: 1.5625rem;"
+              >
+                <a
+                  href="/"
+                >
+                  Frank's Book Log
+                </a>
+              </div>
+              <p
+                class="w-full pl-px text-sm italic leading-4 opacity-85"
+              >
+                by Frank Showalter
+              </p>
+            </div>
+          </div>
+          <div
+            class="justify-between tablet:flex"
           >
             <div
-              class="whitespace-nowrap font-normal leading-8"
-              style="font-size: 1.5625rem;"
+              class="flex max-w-prose flex-col pb-12 tablet:pr-32"
             >
-              <a
-                href="/"
+              <div
+                class="footer-text pt-10 font-sans text-base font-light text-subtle"
               >
-                Frank's Book Log
-              </a>
-            </div>
-            <p
-              class="w-full pl-px text-sm italic leading-4 opacity-85"
-            >
-              Literature is a relative term.
-            </p>
-          </div>
-        </div>
-        <div
-          class="flex flex-col gap-20 pb-20 pt-10 tablet:basis-1/2 tablet:pt-20"
-        >
-          <ul
-            class="flex w-full flex-col gap-y-10 text-inverse max:w-auto"
-          >
-            <li
-              class="block w-1/2 whitespace-nowrap text-2xl"
-            >
-              <a
-                class="hover:text-accent"
-                href="/"
-              >
-                Home
-              </a>
-            </li>
-            <li
-              class="block w-1/2 whitespace-nowrap text-2xl"
-            >
-              <a
-                class="hover:text-accent"
-                href="/how-i-grade/"
-              >
-                How I Grade
-              </a>
-            </li>
-            <li
-              class="block w-1/2 whitespace-nowrap text-2xl"
-            >
-              <a
-                class="hover:text-accent"
-                href="/reviews/"
-              >
-                Reviews
-              </a>
-            </li>
-            <li
-              class="block w-1/2 whitespace-nowrap text-2xl"
-            >
-              <a
-                class="hover:text-accent"
-                href="/authors/"
-              >
-                Authors
-              </a>
-            </li>
-            <li
-              class="block w-1/2 whitespace-nowrap text-2xl"
-            >
-              <a
-                class="hover:text-accent"
-                href="/readings/"
-              >
-                Reading Log
-              </a>
-              <ol
-                class="mt-4"
-              >
-                <li
-                  class="mb-2 font-sans text-xs uppercase tracking-wide text-inverse-subtle"
-                >
+                <p>
+                  Hi there, I'm Frank, a husband and father old enough to have read Stephen King's 
+                  <em>
+                    The Dark Half
+                  </em>
+                   during its first printing.
+                </p>
+                <p>
+                  This site began in 2012, when I realized I'd accumulated more books than I could ever hope to finish. Worse still, I had books I thought I'd read but couldn't remember. Clearly, I needed a system.
+                </p>
+                <p>
+                  What started on Goodreads evolved into this little corner of the internet where I share my thoughts on what I've read.
+                </p>
+                <p>
+                  New visitors might want to start by reading about 
                   <a
-                    class="hover:text-inverse"
+                    href="/how-i-grade/"
+                  >
+                    how I grade
+                  </a>
+                  . After that, feel free to browse my 
+                  <a
+                    href="/reviews/"
+                  >
+                    reviews
+                  </a>
+                  , which are also indexed 
+                  <a
+                    href="/authors/"
+                  >
+                    by author
+                  </a>
+                  .
+                </p>
+                <p>
+                  I also keep a 
+                  <a
+                    href="/readings/"
+                  >
+                    reading log
+                  </a>
+                   that tracks everything I read, whether it gets a full review or not, complete with 
+                  <a
                     href="/readings/stats/"
                   >
-                    Stats
+                    stats
+                  </a>
+                  . In an age of endless content, sometimes the act of remembering what we've read becomes as important as the reading itself.
+                </p>
+                <p>
+                  In an era of algorithmic recommendations and corporate marketing machines, consider this site a human alternative—one person's attempt to catalog his personal library and maybe help a few fellow travelers along the way.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex grow-0 flex-col gap-20 pb-20 pt-10 tablet:basis-[430px] tablet:pr-10"
+            >
+              <ul
+                class="flex w-full flex-col gap-y-10 max:w-auto"
+              >
+                <li
+                  class="block w-1/2 whitespace-nowrap text-2xl"
+                >
+                  <a
+                    class="hover:text-accent"
+                    href="/"
+                  >
+                    Home
                   </a>
                 </li>
-              </ol>
-            </li>
-          </ul>
-          <a
-            class="mb-8 w-full max-w-button bg-canvas py-5 text-center font-sans text-xs uppercase tracking-wide text-default hover:bg-inverse hover:text-inverse"
-            href="#top"
-          >
-            To the top
-          </a>
-          <p
-            class="w-full font-normal leading-5 text-inverse-subtle"
-          >
-            All covers used in accordance with the 
-            <a
-              class="text-inherit underline decoration-2 underline-offset-4 hover:bg-default hover:text-default"
-              href="http://www.copyright.gov/title17/92chap1.html#107"
-            >
-              Fair Use Law.
-            </a>
-          </p>
+                <li
+                  class="block w-1/2 whitespace-nowrap text-2xl"
+                >
+                  <a
+                    class="hover:text-accent"
+                    href="/how-i-grade/"
+                  >
+                    How I Grade
+                  </a>
+                </li>
+                <li
+                  class="block w-1/2 whitespace-nowrap text-2xl"
+                >
+                  <a
+                    class="hover:text-accent"
+                    href="/reviews/"
+                  >
+                    Reviews
+                  </a>
+                </li>
+                <li
+                  class="block w-1/2 whitespace-nowrap text-2xl"
+                >
+                  <a
+                    class="hover:text-accent"
+                    href="/authors/"
+                  >
+                    Authors
+                  </a>
+                </li>
+                <li
+                  class="block w-1/2 whitespace-nowrap text-2xl"
+                >
+                  <a
+                    class="hover:text-accent"
+                    href="/readings/"
+                  >
+                    Reading Log
+                  </a>
+                  <ol
+                    class="mt-4"
+                  >
+                    <li
+                      class="mb-4 ml-1 font-sans text-xs uppercase tracking-wide text-subtle last:mb-0"
+                    >
+                      <a
+                        class="hover:text-default"
+                        href="/readings/stats/"
+                      >
+                        Stats
+                      </a>
+                    </li>
+                  </ol>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+        <p
+          class="w-full bg-footer px-container py-10 text-center font-normal leading-5 text-inverse"
+        >
+          All reviews by Frank Showalter. All images used in accordance with the 
+          <a
+            class="text-inherit underline decoration-dashed hover:bg-default hover:text-default"
+            href="http://www.copyright.gov/title17/92chap1.html#107"
+            rel="nofollow"
+          >
+            Fair Use Law
+          </a>
+          .
+        </p>
       </footer>
     </div>
   </div>
@@ -4298,7 +4566,7 @@ exports[`YearStats > matches snapshot for slug 2015 1`] = `
           <p
             class="w-full pl-px text-sm italic leading-4 opacity-85"
           >
-            Literature is a relative term.
+            by Frank Showalter
           </p>
         </div>
         <div
@@ -4311,7 +4579,7 @@ exports[`YearStats > matches snapshot for slug 2015 1`] = `
               class="flex flex-wrap justify-start gap-x-6 text-xl"
             >
               <li
-                class="block whitespace-nowrap tracking-serif-wide"
+                class="mast-item block whitespace-nowrap tracking-serif-wide"
               >
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
@@ -4322,7 +4590,7 @@ exports[`YearStats > matches snapshot for slug 2015 1`] = `
                 </a>
               </li>
               <li
-                class="block whitespace-nowrap tracking-serif-wide"
+                class="mast-item block whitespace-nowrap tracking-serif-wide"
               >
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
@@ -4333,7 +4601,7 @@ exports[`YearStats > matches snapshot for slug 2015 1`] = `
                 </a>
               </li>
               <li
-                class="block whitespace-nowrap tracking-serif-wide"
+                class="mast-item block whitespace-nowrap tracking-serif-wide"
               >
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
@@ -4344,7 +4612,7 @@ exports[`YearStats > matches snapshot for slug 2015 1`] = `
                 </a>
               </li>
               <li
-                class="block whitespace-nowrap tracking-serif-wide"
+                class="mast-item block whitespace-nowrap tracking-serif-wide"
               >
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
@@ -4355,7 +4623,7 @@ exports[`YearStats > matches snapshot for slug 2015 1`] = `
                 </a>
               </li>
               <li
-                class="block whitespace-nowrap tracking-serif-wide"
+                class="mast-item block whitespace-nowrap tracking-serif-wide"
               >
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
@@ -4368,7 +4636,7 @@ exports[`YearStats > matches snapshot for slug 2015 1`] = `
             </ul>
           </nav>
           <div
-            class="z-[1000]"
+            class="search-button z-[1000]"
           >
             <button
               aria-keyshortcuts="Control+K"
@@ -4481,10 +4749,7 @@ exports[`YearStats > matches snapshot for slug 2015 1`] = `
           class="min-h-[clamp(340px,50vh,1350px)]  relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pt-40 tablet:pt-40 desktop:pb-16 desktop:pt-40"
         >
           <div
-            class="absolute inset-0 bg-canvas opacity-25"
-          />
-          <div
-            class=" z-10 mx-auto flex w-full max-w-screen-max px-container flex-col  py-8 tablet:pb-10 tablet:pt-20 desktop:py-0"
+            class=" z-10 mx-auto flex w-full px-container text-center tablet:max-w-unset tablet:px-0 flex-col  py-8 tablet:pb-10 tablet:pt-20 desktop:py-0"
           >
             <p
               class="mb-6 font-sans text-sm uppercase tracking-wide text-subtle"
@@ -4795,120 +5060,190 @@ exports[`YearStats > matches snapshot for slug 2015 1`] = `
         </div>
       </main>
       <footer
-        class="flex flex-wrap items-start justify-between gap-[10%] bg-footer px-container py-20 text-inverse tablet:px-12 tablet:pt-10 desktop:p-20"
+        class="bg-canvas"
       >
         <div
-          class="flex flex-col pb-12"
+          class="mx-auto max-w-screen-max px-container py-20"
         >
           <div
-            class="flex flex-col"
+            class="flex w-full flex-col tablet:flex-row-reverse tablet:justify-between"
+          >
+            <a
+              class="mx-auto mb-8 w-full max-w-button bg-footer py-5 text-center font-sans text-xs uppercase tracking-wide text-inverse hover:bg-subtle hover:text-default tablet:mx-0"
+              href="#top"
+            >
+              To the top
+            </a>
+            <div
+              class="flex flex-col"
+            >
+              <div
+                class="whitespace-nowrap font-normal leading-8"
+                style="font-size: 1.5625rem;"
+              >
+                <a
+                  href="/"
+                >
+                  Frank's Book Log
+                </a>
+              </div>
+              <p
+                class="w-full pl-px text-sm italic leading-4 opacity-85"
+              >
+                by Frank Showalter
+              </p>
+            </div>
+          </div>
+          <div
+            class="justify-between tablet:flex"
           >
             <div
-              class="whitespace-nowrap font-normal leading-8"
-              style="font-size: 1.5625rem;"
+              class="flex max-w-prose flex-col pb-12 tablet:pr-32"
             >
-              <a
-                href="/"
+              <div
+                class="footer-text pt-10 font-sans text-base font-light text-subtle"
               >
-                Frank's Book Log
-              </a>
-            </div>
-            <p
-              class="w-full pl-px text-sm italic leading-4 opacity-85"
-            >
-              Literature is a relative term.
-            </p>
-          </div>
-        </div>
-        <div
-          class="flex flex-col gap-20 pb-20 pt-10 tablet:basis-1/2 tablet:pt-20"
-        >
-          <ul
-            class="flex w-full flex-col gap-y-10 text-inverse max:w-auto"
-          >
-            <li
-              class="block w-1/2 whitespace-nowrap text-2xl"
-            >
-              <a
-                class="hover:text-accent"
-                href="/"
-              >
-                Home
-              </a>
-            </li>
-            <li
-              class="block w-1/2 whitespace-nowrap text-2xl"
-            >
-              <a
-                class="hover:text-accent"
-                href="/how-i-grade/"
-              >
-                How I Grade
-              </a>
-            </li>
-            <li
-              class="block w-1/2 whitespace-nowrap text-2xl"
-            >
-              <a
-                class="hover:text-accent"
-                href="/reviews/"
-              >
-                Reviews
-              </a>
-            </li>
-            <li
-              class="block w-1/2 whitespace-nowrap text-2xl"
-            >
-              <a
-                class="hover:text-accent"
-                href="/authors/"
-              >
-                Authors
-              </a>
-            </li>
-            <li
-              class="block w-1/2 whitespace-nowrap text-2xl"
-            >
-              <a
-                class="hover:text-accent"
-                href="/readings/"
-              >
-                Reading Log
-              </a>
-              <ol
-                class="mt-4"
-              >
-                <li
-                  class="mb-2 font-sans text-xs uppercase tracking-wide text-inverse-subtle"
-                >
+                <p>
+                  Hi there, I'm Frank, a husband and father old enough to have read Stephen King's 
+                  <em>
+                    The Dark Half
+                  </em>
+                   during its first printing.
+                </p>
+                <p>
+                  This site began in 2012, when I realized I'd accumulated more books than I could ever hope to finish. Worse still, I had books I thought I'd read but couldn't remember. Clearly, I needed a system.
+                </p>
+                <p>
+                  What started on Goodreads evolved into this little corner of the internet where I share my thoughts on what I've read.
+                </p>
+                <p>
+                  New visitors might want to start by reading about 
                   <a
-                    class="hover:text-inverse"
+                    href="/how-i-grade/"
+                  >
+                    how I grade
+                  </a>
+                  . After that, feel free to browse my 
+                  <a
+                    href="/reviews/"
+                  >
+                    reviews
+                  </a>
+                  , which are also indexed 
+                  <a
+                    href="/authors/"
+                  >
+                    by author
+                  </a>
+                  .
+                </p>
+                <p>
+                  I also keep a 
+                  <a
+                    href="/readings/"
+                  >
+                    reading log
+                  </a>
+                   that tracks everything I read, whether it gets a full review or not, complete with 
+                  <a
                     href="/readings/stats/"
                   >
-                    Stats
+                    stats
+                  </a>
+                  . In an age of endless content, sometimes the act of remembering what we've read becomes as important as the reading itself.
+                </p>
+                <p>
+                  In an era of algorithmic recommendations and corporate marketing machines, consider this site a human alternative—one person's attempt to catalog his personal library and maybe help a few fellow travelers along the way.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex grow-0 flex-col gap-20 pb-20 pt-10 tablet:basis-[430px] tablet:pr-10"
+            >
+              <ul
+                class="flex w-full flex-col gap-y-10 max:w-auto"
+              >
+                <li
+                  class="block w-1/2 whitespace-nowrap text-2xl"
+                >
+                  <a
+                    class="hover:text-accent"
+                    href="/"
+                  >
+                    Home
                   </a>
                 </li>
-              </ol>
-            </li>
-          </ul>
-          <a
-            class="mb-8 w-full max-w-button bg-canvas py-5 text-center font-sans text-xs uppercase tracking-wide text-default hover:bg-inverse hover:text-inverse"
-            href="#top"
-          >
-            To the top
-          </a>
-          <p
-            class="w-full font-normal leading-5 text-inverse-subtle"
-          >
-            All covers used in accordance with the 
-            <a
-              class="text-inherit underline decoration-2 underline-offset-4 hover:bg-default hover:text-default"
-              href="http://www.copyright.gov/title17/92chap1.html#107"
-            >
-              Fair Use Law.
-            </a>
-          </p>
+                <li
+                  class="block w-1/2 whitespace-nowrap text-2xl"
+                >
+                  <a
+                    class="hover:text-accent"
+                    href="/how-i-grade/"
+                  >
+                    How I Grade
+                  </a>
+                </li>
+                <li
+                  class="block w-1/2 whitespace-nowrap text-2xl"
+                >
+                  <a
+                    class="hover:text-accent"
+                    href="/reviews/"
+                  >
+                    Reviews
+                  </a>
+                </li>
+                <li
+                  class="block w-1/2 whitespace-nowrap text-2xl"
+                >
+                  <a
+                    class="hover:text-accent"
+                    href="/authors/"
+                  >
+                    Authors
+                  </a>
+                </li>
+                <li
+                  class="block w-1/2 whitespace-nowrap text-2xl"
+                >
+                  <a
+                    class="hover:text-accent"
+                    href="/readings/"
+                  >
+                    Reading Log
+                  </a>
+                  <ol
+                    class="mt-4"
+                  >
+                    <li
+                      class="mb-4 ml-1 font-sans text-xs uppercase tracking-wide text-subtle last:mb-0"
+                    >
+                      <a
+                        class="hover:text-default"
+                        href="/readings/stats/"
+                      >
+                        Stats
+                      </a>
+                    </li>
+                  </ol>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+        <p
+          class="w-full bg-footer px-container py-10 text-center font-normal leading-5 text-inverse"
+        >
+          All reviews by Frank Showalter. All images used in accordance with the 
+          <a
+            class="text-inherit underline decoration-dashed hover:bg-default hover:text-default"
+            href="http://www.copyright.gov/title17/92chap1.html#107"
+            rel="nofollow"
+          >
+            Fair Use Law
+          </a>
+          .
+        </p>
       </footer>
     </div>
   </div>
@@ -4947,7 +5282,7 @@ exports[`YearStats > matches snapshot for slug 2017 1`] = `
           <p
             class="w-full pl-px text-sm italic leading-4 opacity-85"
           >
-            Literature is a relative term.
+            by Frank Showalter
           </p>
         </div>
         <div
@@ -4960,7 +5295,7 @@ exports[`YearStats > matches snapshot for slug 2017 1`] = `
               class="flex flex-wrap justify-start gap-x-6 text-xl"
             >
               <li
-                class="block whitespace-nowrap tracking-serif-wide"
+                class="mast-item block whitespace-nowrap tracking-serif-wide"
               >
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
@@ -4971,7 +5306,7 @@ exports[`YearStats > matches snapshot for slug 2017 1`] = `
                 </a>
               </li>
               <li
-                class="block whitespace-nowrap tracking-serif-wide"
+                class="mast-item block whitespace-nowrap tracking-serif-wide"
               >
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
@@ -4982,7 +5317,7 @@ exports[`YearStats > matches snapshot for slug 2017 1`] = `
                 </a>
               </li>
               <li
-                class="block whitespace-nowrap tracking-serif-wide"
+                class="mast-item block whitespace-nowrap tracking-serif-wide"
               >
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
@@ -4993,7 +5328,7 @@ exports[`YearStats > matches snapshot for slug 2017 1`] = `
                 </a>
               </li>
               <li
-                class="block whitespace-nowrap tracking-serif-wide"
+                class="mast-item block whitespace-nowrap tracking-serif-wide"
               >
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
@@ -5004,7 +5339,7 @@ exports[`YearStats > matches snapshot for slug 2017 1`] = `
                 </a>
               </li>
               <li
-                class="block whitespace-nowrap tracking-serif-wide"
+                class="mast-item block whitespace-nowrap tracking-serif-wide"
               >
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
@@ -5017,7 +5352,7 @@ exports[`YearStats > matches snapshot for slug 2017 1`] = `
             </ul>
           </nav>
           <div
-            class="z-[1000]"
+            class="search-button z-[1000]"
           >
             <button
               aria-keyshortcuts="Control+K"
@@ -5130,10 +5465,7 @@ exports[`YearStats > matches snapshot for slug 2017 1`] = `
           class="min-h-[clamp(340px,50vh,1350px)]  relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pt-40 tablet:pt-40 desktop:pb-16 desktop:pt-40"
         >
           <div
-            class="absolute inset-0 bg-canvas opacity-25"
-          />
-          <div
-            class=" z-10 mx-auto flex w-full max-w-screen-max px-container flex-col  py-8 tablet:pb-10 tablet:pt-20 desktop:py-0"
+            class=" z-10 mx-auto flex w-full px-container text-center tablet:max-w-unset tablet:px-0 flex-col  py-8 tablet:pb-10 tablet:pt-20 desktop:py-0"
           >
             <p
               class="mb-6 font-sans text-sm uppercase tracking-wide text-subtle"
@@ -5444,120 +5776,190 @@ exports[`YearStats > matches snapshot for slug 2017 1`] = `
         </div>
       </main>
       <footer
-        class="flex flex-wrap items-start justify-between gap-[10%] bg-footer px-container py-20 text-inverse tablet:px-12 tablet:pt-10 desktop:p-20"
+        class="bg-canvas"
       >
         <div
-          class="flex flex-col pb-12"
+          class="mx-auto max-w-screen-max px-container py-20"
         >
           <div
-            class="flex flex-col"
+            class="flex w-full flex-col tablet:flex-row-reverse tablet:justify-between"
+          >
+            <a
+              class="mx-auto mb-8 w-full max-w-button bg-footer py-5 text-center font-sans text-xs uppercase tracking-wide text-inverse hover:bg-subtle hover:text-default tablet:mx-0"
+              href="#top"
+            >
+              To the top
+            </a>
+            <div
+              class="flex flex-col"
+            >
+              <div
+                class="whitespace-nowrap font-normal leading-8"
+                style="font-size: 1.5625rem;"
+              >
+                <a
+                  href="/"
+                >
+                  Frank's Book Log
+                </a>
+              </div>
+              <p
+                class="w-full pl-px text-sm italic leading-4 opacity-85"
+              >
+                by Frank Showalter
+              </p>
+            </div>
+          </div>
+          <div
+            class="justify-between tablet:flex"
           >
             <div
-              class="whitespace-nowrap font-normal leading-8"
-              style="font-size: 1.5625rem;"
+              class="flex max-w-prose flex-col pb-12 tablet:pr-32"
             >
-              <a
-                href="/"
+              <div
+                class="footer-text pt-10 font-sans text-base font-light text-subtle"
               >
-                Frank's Book Log
-              </a>
-            </div>
-            <p
-              class="w-full pl-px text-sm italic leading-4 opacity-85"
-            >
-              Literature is a relative term.
-            </p>
-          </div>
-        </div>
-        <div
-          class="flex flex-col gap-20 pb-20 pt-10 tablet:basis-1/2 tablet:pt-20"
-        >
-          <ul
-            class="flex w-full flex-col gap-y-10 text-inverse max:w-auto"
-          >
-            <li
-              class="block w-1/2 whitespace-nowrap text-2xl"
-            >
-              <a
-                class="hover:text-accent"
-                href="/"
-              >
-                Home
-              </a>
-            </li>
-            <li
-              class="block w-1/2 whitespace-nowrap text-2xl"
-            >
-              <a
-                class="hover:text-accent"
-                href="/how-i-grade/"
-              >
-                How I Grade
-              </a>
-            </li>
-            <li
-              class="block w-1/2 whitespace-nowrap text-2xl"
-            >
-              <a
-                class="hover:text-accent"
-                href="/reviews/"
-              >
-                Reviews
-              </a>
-            </li>
-            <li
-              class="block w-1/2 whitespace-nowrap text-2xl"
-            >
-              <a
-                class="hover:text-accent"
-                href="/authors/"
-              >
-                Authors
-              </a>
-            </li>
-            <li
-              class="block w-1/2 whitespace-nowrap text-2xl"
-            >
-              <a
-                class="hover:text-accent"
-                href="/readings/"
-              >
-                Reading Log
-              </a>
-              <ol
-                class="mt-4"
-              >
-                <li
-                  class="mb-2 font-sans text-xs uppercase tracking-wide text-inverse-subtle"
-                >
+                <p>
+                  Hi there, I'm Frank, a husband and father old enough to have read Stephen King's 
+                  <em>
+                    The Dark Half
+                  </em>
+                   during its first printing.
+                </p>
+                <p>
+                  This site began in 2012, when I realized I'd accumulated more books than I could ever hope to finish. Worse still, I had books I thought I'd read but couldn't remember. Clearly, I needed a system.
+                </p>
+                <p>
+                  What started on Goodreads evolved into this little corner of the internet where I share my thoughts on what I've read.
+                </p>
+                <p>
+                  New visitors might want to start by reading about 
                   <a
-                    class="hover:text-inverse"
+                    href="/how-i-grade/"
+                  >
+                    how I grade
+                  </a>
+                  . After that, feel free to browse my 
+                  <a
+                    href="/reviews/"
+                  >
+                    reviews
+                  </a>
+                  , which are also indexed 
+                  <a
+                    href="/authors/"
+                  >
+                    by author
+                  </a>
+                  .
+                </p>
+                <p>
+                  I also keep a 
+                  <a
+                    href="/readings/"
+                  >
+                    reading log
+                  </a>
+                   that tracks everything I read, whether it gets a full review or not, complete with 
+                  <a
                     href="/readings/stats/"
                   >
-                    Stats
+                    stats
+                  </a>
+                  . In an age of endless content, sometimes the act of remembering what we've read becomes as important as the reading itself.
+                </p>
+                <p>
+                  In an era of algorithmic recommendations and corporate marketing machines, consider this site a human alternative—one person's attempt to catalog his personal library and maybe help a few fellow travelers along the way.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex grow-0 flex-col gap-20 pb-20 pt-10 tablet:basis-[430px] tablet:pr-10"
+            >
+              <ul
+                class="flex w-full flex-col gap-y-10 max:w-auto"
+              >
+                <li
+                  class="block w-1/2 whitespace-nowrap text-2xl"
+                >
+                  <a
+                    class="hover:text-accent"
+                    href="/"
+                  >
+                    Home
                   </a>
                 </li>
-              </ol>
-            </li>
-          </ul>
-          <a
-            class="mb-8 w-full max-w-button bg-canvas py-5 text-center font-sans text-xs uppercase tracking-wide text-default hover:bg-inverse hover:text-inverse"
-            href="#top"
-          >
-            To the top
-          </a>
-          <p
-            class="w-full font-normal leading-5 text-inverse-subtle"
-          >
-            All covers used in accordance with the 
-            <a
-              class="text-inherit underline decoration-2 underline-offset-4 hover:bg-default hover:text-default"
-              href="http://www.copyright.gov/title17/92chap1.html#107"
-            >
-              Fair Use Law.
-            </a>
-          </p>
+                <li
+                  class="block w-1/2 whitespace-nowrap text-2xl"
+                >
+                  <a
+                    class="hover:text-accent"
+                    href="/how-i-grade/"
+                  >
+                    How I Grade
+                  </a>
+                </li>
+                <li
+                  class="block w-1/2 whitespace-nowrap text-2xl"
+                >
+                  <a
+                    class="hover:text-accent"
+                    href="/reviews/"
+                  >
+                    Reviews
+                  </a>
+                </li>
+                <li
+                  class="block w-1/2 whitespace-nowrap text-2xl"
+                >
+                  <a
+                    class="hover:text-accent"
+                    href="/authors/"
+                  >
+                    Authors
+                  </a>
+                </li>
+                <li
+                  class="block w-1/2 whitespace-nowrap text-2xl"
+                >
+                  <a
+                    class="hover:text-accent"
+                    href="/readings/"
+                  >
+                    Reading Log
+                  </a>
+                  <ol
+                    class="mt-4"
+                  >
+                    <li
+                      class="mb-4 ml-1 font-sans text-xs uppercase tracking-wide text-subtle last:mb-0"
+                    >
+                      <a
+                        class="hover:text-default"
+                        href="/readings/stats/"
+                      >
+                        Stats
+                      </a>
+                    </li>
+                  </ol>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+        <p
+          class="w-full bg-footer px-container py-10 text-center font-normal leading-5 text-inverse"
+        >
+          All reviews by Frank Showalter. All images used in accordance with the 
+          <a
+            class="text-inherit underline decoration-dashed hover:bg-default hover:text-default"
+            href="http://www.copyright.gov/title17/92chap1.html#107"
+            rel="nofollow"
+          >
+            Fair Use Law
+          </a>
+          .
+        </p>
       </footer>
     </div>
   </div>
@@ -5596,7 +5998,7 @@ exports[`YearStats > matches snapshot for slug 2019 1`] = `
           <p
             class="w-full pl-px text-sm italic leading-4 opacity-85"
           >
-            Literature is a relative term.
+            by Frank Showalter
           </p>
         </div>
         <div
@@ -5609,7 +6011,7 @@ exports[`YearStats > matches snapshot for slug 2019 1`] = `
               class="flex flex-wrap justify-start gap-x-6 text-xl"
             >
               <li
-                class="block whitespace-nowrap tracking-serif-wide"
+                class="mast-item block whitespace-nowrap tracking-serif-wide"
               >
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
@@ -5620,7 +6022,7 @@ exports[`YearStats > matches snapshot for slug 2019 1`] = `
                 </a>
               </li>
               <li
-                class="block whitespace-nowrap tracking-serif-wide"
+                class="mast-item block whitespace-nowrap tracking-serif-wide"
               >
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
@@ -5631,7 +6033,7 @@ exports[`YearStats > matches snapshot for slug 2019 1`] = `
                 </a>
               </li>
               <li
-                class="block whitespace-nowrap tracking-serif-wide"
+                class="mast-item block whitespace-nowrap tracking-serif-wide"
               >
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
@@ -5642,7 +6044,7 @@ exports[`YearStats > matches snapshot for slug 2019 1`] = `
                 </a>
               </li>
               <li
-                class="block whitespace-nowrap tracking-serif-wide"
+                class="mast-item block whitespace-nowrap tracking-serif-wide"
               >
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
@@ -5653,7 +6055,7 @@ exports[`YearStats > matches snapshot for slug 2019 1`] = `
                 </a>
               </li>
               <li
-                class="block whitespace-nowrap tracking-serif-wide"
+                class="mast-item block whitespace-nowrap tracking-serif-wide"
               >
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
@@ -5666,7 +6068,7 @@ exports[`YearStats > matches snapshot for slug 2019 1`] = `
             </ul>
           </nav>
           <div
-            class="z-[1000]"
+            class="search-button z-[1000]"
           >
             <button
               aria-keyshortcuts="Control+K"
@@ -5779,10 +6181,7 @@ exports[`YearStats > matches snapshot for slug 2019 1`] = `
           class="min-h-[clamp(340px,50vh,1350px)]  relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pt-40 tablet:pt-40 desktop:pb-16 desktop:pt-40"
         >
           <div
-            class="absolute inset-0 bg-canvas opacity-25"
-          />
-          <div
-            class=" z-10 mx-auto flex w-full max-w-screen-max px-container flex-col  py-8 tablet:pb-10 tablet:pt-20 desktop:py-0"
+            class=" z-10 mx-auto flex w-full px-container text-center tablet:max-w-unset tablet:px-0 flex-col  py-8 tablet:pb-10 tablet:pt-20 desktop:py-0"
           >
             <p
               class="mb-6 font-sans text-sm uppercase tracking-wide text-subtle"
@@ -6093,120 +6492,190 @@ exports[`YearStats > matches snapshot for slug 2019 1`] = `
         </div>
       </main>
       <footer
-        class="flex flex-wrap items-start justify-between gap-[10%] bg-footer px-container py-20 text-inverse tablet:px-12 tablet:pt-10 desktop:p-20"
+        class="bg-canvas"
       >
         <div
-          class="flex flex-col pb-12"
+          class="mx-auto max-w-screen-max px-container py-20"
         >
           <div
-            class="flex flex-col"
+            class="flex w-full flex-col tablet:flex-row-reverse tablet:justify-between"
+          >
+            <a
+              class="mx-auto mb-8 w-full max-w-button bg-footer py-5 text-center font-sans text-xs uppercase tracking-wide text-inverse hover:bg-subtle hover:text-default tablet:mx-0"
+              href="#top"
+            >
+              To the top
+            </a>
+            <div
+              class="flex flex-col"
+            >
+              <div
+                class="whitespace-nowrap font-normal leading-8"
+                style="font-size: 1.5625rem;"
+              >
+                <a
+                  href="/"
+                >
+                  Frank's Book Log
+                </a>
+              </div>
+              <p
+                class="w-full pl-px text-sm italic leading-4 opacity-85"
+              >
+                by Frank Showalter
+              </p>
+            </div>
+          </div>
+          <div
+            class="justify-between tablet:flex"
           >
             <div
-              class="whitespace-nowrap font-normal leading-8"
-              style="font-size: 1.5625rem;"
+              class="flex max-w-prose flex-col pb-12 tablet:pr-32"
             >
-              <a
-                href="/"
+              <div
+                class="footer-text pt-10 font-sans text-base font-light text-subtle"
               >
-                Frank's Book Log
-              </a>
-            </div>
-            <p
-              class="w-full pl-px text-sm italic leading-4 opacity-85"
-            >
-              Literature is a relative term.
-            </p>
-          </div>
-        </div>
-        <div
-          class="flex flex-col gap-20 pb-20 pt-10 tablet:basis-1/2 tablet:pt-20"
-        >
-          <ul
-            class="flex w-full flex-col gap-y-10 text-inverse max:w-auto"
-          >
-            <li
-              class="block w-1/2 whitespace-nowrap text-2xl"
-            >
-              <a
-                class="hover:text-accent"
-                href="/"
-              >
-                Home
-              </a>
-            </li>
-            <li
-              class="block w-1/2 whitespace-nowrap text-2xl"
-            >
-              <a
-                class="hover:text-accent"
-                href="/how-i-grade/"
-              >
-                How I Grade
-              </a>
-            </li>
-            <li
-              class="block w-1/2 whitespace-nowrap text-2xl"
-            >
-              <a
-                class="hover:text-accent"
-                href="/reviews/"
-              >
-                Reviews
-              </a>
-            </li>
-            <li
-              class="block w-1/2 whitespace-nowrap text-2xl"
-            >
-              <a
-                class="hover:text-accent"
-                href="/authors/"
-              >
-                Authors
-              </a>
-            </li>
-            <li
-              class="block w-1/2 whitespace-nowrap text-2xl"
-            >
-              <a
-                class="hover:text-accent"
-                href="/readings/"
-              >
-                Reading Log
-              </a>
-              <ol
-                class="mt-4"
-              >
-                <li
-                  class="mb-2 font-sans text-xs uppercase tracking-wide text-inverse-subtle"
-                >
+                <p>
+                  Hi there, I'm Frank, a husband and father old enough to have read Stephen King's 
+                  <em>
+                    The Dark Half
+                  </em>
+                   during its first printing.
+                </p>
+                <p>
+                  This site began in 2012, when I realized I'd accumulated more books than I could ever hope to finish. Worse still, I had books I thought I'd read but couldn't remember. Clearly, I needed a system.
+                </p>
+                <p>
+                  What started on Goodreads evolved into this little corner of the internet where I share my thoughts on what I've read.
+                </p>
+                <p>
+                  New visitors might want to start by reading about 
                   <a
-                    class="hover:text-inverse"
+                    href="/how-i-grade/"
+                  >
+                    how I grade
+                  </a>
+                  . After that, feel free to browse my 
+                  <a
+                    href="/reviews/"
+                  >
+                    reviews
+                  </a>
+                  , which are also indexed 
+                  <a
+                    href="/authors/"
+                  >
+                    by author
+                  </a>
+                  .
+                </p>
+                <p>
+                  I also keep a 
+                  <a
+                    href="/readings/"
+                  >
+                    reading log
+                  </a>
+                   that tracks everything I read, whether it gets a full review or not, complete with 
+                  <a
                     href="/readings/stats/"
                   >
-                    Stats
+                    stats
+                  </a>
+                  . In an age of endless content, sometimes the act of remembering what we've read becomes as important as the reading itself.
+                </p>
+                <p>
+                  In an era of algorithmic recommendations and corporate marketing machines, consider this site a human alternative—one person's attempt to catalog his personal library and maybe help a few fellow travelers along the way.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex grow-0 flex-col gap-20 pb-20 pt-10 tablet:basis-[430px] tablet:pr-10"
+            >
+              <ul
+                class="flex w-full flex-col gap-y-10 max:w-auto"
+              >
+                <li
+                  class="block w-1/2 whitespace-nowrap text-2xl"
+                >
+                  <a
+                    class="hover:text-accent"
+                    href="/"
+                  >
+                    Home
                   </a>
                 </li>
-              </ol>
-            </li>
-          </ul>
-          <a
-            class="mb-8 w-full max-w-button bg-canvas py-5 text-center font-sans text-xs uppercase tracking-wide text-default hover:bg-inverse hover:text-inverse"
-            href="#top"
-          >
-            To the top
-          </a>
-          <p
-            class="w-full font-normal leading-5 text-inverse-subtle"
-          >
-            All covers used in accordance with the 
-            <a
-              class="text-inherit underline decoration-2 underline-offset-4 hover:bg-default hover:text-default"
-              href="http://www.copyright.gov/title17/92chap1.html#107"
-            >
-              Fair Use Law.
-            </a>
-          </p>
+                <li
+                  class="block w-1/2 whitespace-nowrap text-2xl"
+                >
+                  <a
+                    class="hover:text-accent"
+                    href="/how-i-grade/"
+                  >
+                    How I Grade
+                  </a>
+                </li>
+                <li
+                  class="block w-1/2 whitespace-nowrap text-2xl"
+                >
+                  <a
+                    class="hover:text-accent"
+                    href="/reviews/"
+                  >
+                    Reviews
+                  </a>
+                </li>
+                <li
+                  class="block w-1/2 whitespace-nowrap text-2xl"
+                >
+                  <a
+                    class="hover:text-accent"
+                    href="/authors/"
+                  >
+                    Authors
+                  </a>
+                </li>
+                <li
+                  class="block w-1/2 whitespace-nowrap text-2xl"
+                >
+                  <a
+                    class="hover:text-accent"
+                    href="/readings/"
+                  >
+                    Reading Log
+                  </a>
+                  <ol
+                    class="mt-4"
+                  >
+                    <li
+                      class="mb-4 ml-1 font-sans text-xs uppercase tracking-wide text-subtle last:mb-0"
+                    >
+                      <a
+                        class="hover:text-default"
+                        href="/readings/stats/"
+                      >
+                        Stats
+                      </a>
+                    </li>
+                  </ol>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+        <p
+          class="w-full bg-footer px-container py-10 text-center font-normal leading-5 text-inverse"
+        >
+          All reviews by Frank Showalter. All images used in accordance with the 
+          <a
+            class="text-inherit underline decoration-dashed hover:bg-default hover:text-default"
+            href="http://www.copyright.gov/title17/92chap1.html#107"
+            rel="nofollow"
+          >
+            Fair Use Law
+          </a>
+          .
+        </p>
       </footer>
     </div>
   </div>
@@ -6245,7 +6714,7 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
           <p
             class="w-full pl-px text-sm italic leading-4 opacity-85"
           >
-            Literature is a relative term.
+            by Frank Showalter
           </p>
         </div>
         <div
@@ -6258,7 +6727,7 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
               class="flex flex-wrap justify-start gap-x-6 text-xl"
             >
               <li
-                class="block whitespace-nowrap tracking-serif-wide"
+                class="mast-item block whitespace-nowrap tracking-serif-wide"
               >
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
@@ -6269,7 +6738,7 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
                 </a>
               </li>
               <li
-                class="block whitespace-nowrap tracking-serif-wide"
+                class="mast-item block whitespace-nowrap tracking-serif-wide"
               >
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
@@ -6280,7 +6749,7 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
                 </a>
               </li>
               <li
-                class="block whitespace-nowrap tracking-serif-wide"
+                class="mast-item block whitespace-nowrap tracking-serif-wide"
               >
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
@@ -6291,7 +6760,7 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
                 </a>
               </li>
               <li
-                class="block whitespace-nowrap tracking-serif-wide"
+                class="mast-item block whitespace-nowrap tracking-serif-wide"
               >
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
@@ -6302,7 +6771,7 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
                 </a>
               </li>
               <li
-                class="block whitespace-nowrap tracking-serif-wide"
+                class="mast-item block whitespace-nowrap tracking-serif-wide"
               >
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
@@ -6315,7 +6784,7 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
             </ul>
           </nav>
           <div
-            class="z-[1000]"
+            class="search-button z-[1000]"
           >
             <button
               aria-keyshortcuts="Control+K"
@@ -6428,10 +6897,7 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
           class="min-h-[clamp(340px,50vh,1350px)]  relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pt-40 tablet:pt-40 desktop:pb-16 desktop:pt-40"
         >
           <div
-            class="absolute inset-0 bg-canvas opacity-25"
-          />
-          <div
-            class=" z-10 mx-auto flex w-full max-w-screen-max px-container flex-col  py-8 tablet:pb-10 tablet:pt-20 desktop:py-0"
+            class=" z-10 mx-auto flex w-full px-container text-center tablet:max-w-unset tablet:px-0 flex-col  py-8 tablet:pb-10 tablet:pt-20 desktop:py-0"
           >
             <p
               class="mb-6 font-sans text-sm uppercase tracking-wide text-subtle"
@@ -8488,120 +8954,190 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
         </div>
       </main>
       <footer
-        class="flex flex-wrap items-start justify-between gap-[10%] bg-footer px-container py-20 text-inverse tablet:px-12 tablet:pt-10 desktop:p-20"
+        class="bg-canvas"
       >
         <div
-          class="flex flex-col pb-12"
+          class="mx-auto max-w-screen-max px-container py-20"
         >
           <div
-            class="flex flex-col"
+            class="flex w-full flex-col tablet:flex-row-reverse tablet:justify-between"
+          >
+            <a
+              class="mx-auto mb-8 w-full max-w-button bg-footer py-5 text-center font-sans text-xs uppercase tracking-wide text-inverse hover:bg-subtle hover:text-default tablet:mx-0"
+              href="#top"
+            >
+              To the top
+            </a>
+            <div
+              class="flex flex-col"
+            >
+              <div
+                class="whitespace-nowrap font-normal leading-8"
+                style="font-size: 1.5625rem;"
+              >
+                <a
+                  href="/"
+                >
+                  Frank's Book Log
+                </a>
+              </div>
+              <p
+                class="w-full pl-px text-sm italic leading-4 opacity-85"
+              >
+                by Frank Showalter
+              </p>
+            </div>
+          </div>
+          <div
+            class="justify-between tablet:flex"
           >
             <div
-              class="whitespace-nowrap font-normal leading-8"
-              style="font-size: 1.5625rem;"
+              class="flex max-w-prose flex-col pb-12 tablet:pr-32"
             >
-              <a
-                href="/"
+              <div
+                class="footer-text pt-10 font-sans text-base font-light text-subtle"
               >
-                Frank's Book Log
-              </a>
-            </div>
-            <p
-              class="w-full pl-px text-sm italic leading-4 opacity-85"
-            >
-              Literature is a relative term.
-            </p>
-          </div>
-        </div>
-        <div
-          class="flex flex-col gap-20 pb-20 pt-10 tablet:basis-1/2 tablet:pt-20"
-        >
-          <ul
-            class="flex w-full flex-col gap-y-10 text-inverse max:w-auto"
-          >
-            <li
-              class="block w-1/2 whitespace-nowrap text-2xl"
-            >
-              <a
-                class="hover:text-accent"
-                href="/"
-              >
-                Home
-              </a>
-            </li>
-            <li
-              class="block w-1/2 whitespace-nowrap text-2xl"
-            >
-              <a
-                class="hover:text-accent"
-                href="/how-i-grade/"
-              >
-                How I Grade
-              </a>
-            </li>
-            <li
-              class="block w-1/2 whitespace-nowrap text-2xl"
-            >
-              <a
-                class="hover:text-accent"
-                href="/reviews/"
-              >
-                Reviews
-              </a>
-            </li>
-            <li
-              class="block w-1/2 whitespace-nowrap text-2xl"
-            >
-              <a
-                class="hover:text-accent"
-                href="/authors/"
-              >
-                Authors
-              </a>
-            </li>
-            <li
-              class="block w-1/2 whitespace-nowrap text-2xl"
-            >
-              <a
-                class="hover:text-accent"
-                href="/readings/"
-              >
-                Reading Log
-              </a>
-              <ol
-                class="mt-4"
-              >
-                <li
-                  class="mb-2 font-sans text-xs uppercase tracking-wide text-inverse-subtle"
-                >
+                <p>
+                  Hi there, I'm Frank, a husband and father old enough to have read Stephen King's 
+                  <em>
+                    The Dark Half
+                  </em>
+                   during its first printing.
+                </p>
+                <p>
+                  This site began in 2012, when I realized I'd accumulated more books than I could ever hope to finish. Worse still, I had books I thought I'd read but couldn't remember. Clearly, I needed a system.
+                </p>
+                <p>
+                  What started on Goodreads evolved into this little corner of the internet where I share my thoughts on what I've read.
+                </p>
+                <p>
+                  New visitors might want to start by reading about 
                   <a
-                    class="hover:text-inverse"
+                    href="/how-i-grade/"
+                  >
+                    how I grade
+                  </a>
+                  . After that, feel free to browse my 
+                  <a
+                    href="/reviews/"
+                  >
+                    reviews
+                  </a>
+                  , which are also indexed 
+                  <a
+                    href="/authors/"
+                  >
+                    by author
+                  </a>
+                  .
+                </p>
+                <p>
+                  I also keep a 
+                  <a
+                    href="/readings/"
+                  >
+                    reading log
+                  </a>
+                   that tracks everything I read, whether it gets a full review or not, complete with 
+                  <a
                     href="/readings/stats/"
                   >
-                    Stats
+                    stats
+                  </a>
+                  . In an age of endless content, sometimes the act of remembering what we've read becomes as important as the reading itself.
+                </p>
+                <p>
+                  In an era of algorithmic recommendations and corporate marketing machines, consider this site a human alternative—one person's attempt to catalog his personal library and maybe help a few fellow travelers along the way.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex grow-0 flex-col gap-20 pb-20 pt-10 tablet:basis-[430px] tablet:pr-10"
+            >
+              <ul
+                class="flex w-full flex-col gap-y-10 max:w-auto"
+              >
+                <li
+                  class="block w-1/2 whitespace-nowrap text-2xl"
+                >
+                  <a
+                    class="hover:text-accent"
+                    href="/"
+                  >
+                    Home
                   </a>
                 </li>
-              </ol>
-            </li>
-          </ul>
-          <a
-            class="mb-8 w-full max-w-button bg-canvas py-5 text-center font-sans text-xs uppercase tracking-wide text-default hover:bg-inverse hover:text-inverse"
-            href="#top"
-          >
-            To the top
-          </a>
-          <p
-            class="w-full font-normal leading-5 text-inverse-subtle"
-          >
-            All covers used in accordance with the 
-            <a
-              class="text-inherit underline decoration-2 underline-offset-4 hover:bg-default hover:text-default"
-              href="http://www.copyright.gov/title17/92chap1.html#107"
-            >
-              Fair Use Law.
-            </a>
-          </p>
+                <li
+                  class="block w-1/2 whitespace-nowrap text-2xl"
+                >
+                  <a
+                    class="hover:text-accent"
+                    href="/how-i-grade/"
+                  >
+                    How I Grade
+                  </a>
+                </li>
+                <li
+                  class="block w-1/2 whitespace-nowrap text-2xl"
+                >
+                  <a
+                    class="hover:text-accent"
+                    href="/reviews/"
+                  >
+                    Reviews
+                  </a>
+                </li>
+                <li
+                  class="block w-1/2 whitespace-nowrap text-2xl"
+                >
+                  <a
+                    class="hover:text-accent"
+                    href="/authors/"
+                  >
+                    Authors
+                  </a>
+                </li>
+                <li
+                  class="block w-1/2 whitespace-nowrap text-2xl"
+                >
+                  <a
+                    class="hover:text-accent"
+                    href="/readings/"
+                  >
+                    Reading Log
+                  </a>
+                  <ol
+                    class="mt-4"
+                  >
+                    <li
+                      class="mb-4 ml-1 font-sans text-xs uppercase tracking-wide text-subtle last:mb-0"
+                    >
+                      <a
+                        class="hover:text-default"
+                        href="/readings/stats/"
+                      >
+                        Stats
+                      </a>
+                    </li>
+                  </ol>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+        <p
+          class="w-full bg-footer px-container py-10 text-center font-normal leading-5 text-inverse"
+        >
+          All reviews by Frank Showalter. All images used in accordance with the 
+          <a
+            class="text-inherit underline decoration-dashed hover:bg-default hover:text-default"
+            href="http://www.copyright.gov/title17/92chap1.html#107"
+            rel="nofollow"
+          >
+            Fair Use Law
+          </a>
+          .
+        </p>
       </footer>
     </div>
   </div>
@@ -8640,7 +9176,7 @@ exports[`YearStats > matches snapshot for slug 2023 1`] = `
           <p
             class="w-full pl-px text-sm italic leading-4 opacity-85"
           >
-            Literature is a relative term.
+            by Frank Showalter
           </p>
         </div>
         <div
@@ -8653,7 +9189,7 @@ exports[`YearStats > matches snapshot for slug 2023 1`] = `
               class="flex flex-wrap justify-start gap-x-6 text-xl"
             >
               <li
-                class="block whitespace-nowrap tracking-serif-wide"
+                class="mast-item block whitespace-nowrap tracking-serif-wide"
               >
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
@@ -8664,7 +9200,7 @@ exports[`YearStats > matches snapshot for slug 2023 1`] = `
                 </a>
               </li>
               <li
-                class="block whitespace-nowrap tracking-serif-wide"
+                class="mast-item block whitespace-nowrap tracking-serif-wide"
               >
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
@@ -8675,7 +9211,7 @@ exports[`YearStats > matches snapshot for slug 2023 1`] = `
                 </a>
               </li>
               <li
-                class="block whitespace-nowrap tracking-serif-wide"
+                class="mast-item block whitespace-nowrap tracking-serif-wide"
               >
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
@@ -8686,7 +9222,7 @@ exports[`YearStats > matches snapshot for slug 2023 1`] = `
                 </a>
               </li>
               <li
-                class="block whitespace-nowrap tracking-serif-wide"
+                class="mast-item block whitespace-nowrap tracking-serif-wide"
               >
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
@@ -8697,7 +9233,7 @@ exports[`YearStats > matches snapshot for slug 2023 1`] = `
                 </a>
               </li>
               <li
-                class="block whitespace-nowrap tracking-serif-wide"
+                class="mast-item block whitespace-nowrap tracking-serif-wide"
               >
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
@@ -8710,7 +9246,7 @@ exports[`YearStats > matches snapshot for slug 2023 1`] = `
             </ul>
           </nav>
           <div
-            class="z-[1000]"
+            class="search-button z-[1000]"
           >
             <button
               aria-keyshortcuts="Control+K"
@@ -8823,10 +9359,7 @@ exports[`YearStats > matches snapshot for slug 2023 1`] = `
           class="min-h-[clamp(340px,50vh,1350px)]  relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pt-40 tablet:pt-40 desktop:pb-16 desktop:pt-40"
         >
           <div
-            class="absolute inset-0 bg-canvas opacity-25"
-          />
-          <div
-            class=" z-10 mx-auto flex w-full max-w-screen-max px-container flex-col  py-8 tablet:pb-10 tablet:pt-20 desktop:py-0"
+            class=" z-10 mx-auto flex w-full px-container text-center tablet:max-w-unset tablet:px-0 flex-col  py-8 tablet:pb-10 tablet:pt-20 desktop:py-0"
           >
             <p
               class="mb-6 font-sans text-sm uppercase tracking-wide text-subtle"
@@ -9631,120 +10164,190 @@ exports[`YearStats > matches snapshot for slug 2023 1`] = `
         </div>
       </main>
       <footer
-        class="flex flex-wrap items-start justify-between gap-[10%] bg-footer px-container py-20 text-inverse tablet:px-12 tablet:pt-10 desktop:p-20"
+        class="bg-canvas"
       >
         <div
-          class="flex flex-col pb-12"
+          class="mx-auto max-w-screen-max px-container py-20"
         >
           <div
-            class="flex flex-col"
+            class="flex w-full flex-col tablet:flex-row-reverse tablet:justify-between"
+          >
+            <a
+              class="mx-auto mb-8 w-full max-w-button bg-footer py-5 text-center font-sans text-xs uppercase tracking-wide text-inverse hover:bg-subtle hover:text-default tablet:mx-0"
+              href="#top"
+            >
+              To the top
+            </a>
+            <div
+              class="flex flex-col"
+            >
+              <div
+                class="whitespace-nowrap font-normal leading-8"
+                style="font-size: 1.5625rem;"
+              >
+                <a
+                  href="/"
+                >
+                  Frank's Book Log
+                </a>
+              </div>
+              <p
+                class="w-full pl-px text-sm italic leading-4 opacity-85"
+              >
+                by Frank Showalter
+              </p>
+            </div>
+          </div>
+          <div
+            class="justify-between tablet:flex"
           >
             <div
-              class="whitespace-nowrap font-normal leading-8"
-              style="font-size: 1.5625rem;"
+              class="flex max-w-prose flex-col pb-12 tablet:pr-32"
             >
-              <a
-                href="/"
+              <div
+                class="footer-text pt-10 font-sans text-base font-light text-subtle"
               >
-                Frank's Book Log
-              </a>
-            </div>
-            <p
-              class="w-full pl-px text-sm italic leading-4 opacity-85"
-            >
-              Literature is a relative term.
-            </p>
-          </div>
-        </div>
-        <div
-          class="flex flex-col gap-20 pb-20 pt-10 tablet:basis-1/2 tablet:pt-20"
-        >
-          <ul
-            class="flex w-full flex-col gap-y-10 text-inverse max:w-auto"
-          >
-            <li
-              class="block w-1/2 whitespace-nowrap text-2xl"
-            >
-              <a
-                class="hover:text-accent"
-                href="/"
-              >
-                Home
-              </a>
-            </li>
-            <li
-              class="block w-1/2 whitespace-nowrap text-2xl"
-            >
-              <a
-                class="hover:text-accent"
-                href="/how-i-grade/"
-              >
-                How I Grade
-              </a>
-            </li>
-            <li
-              class="block w-1/2 whitespace-nowrap text-2xl"
-            >
-              <a
-                class="hover:text-accent"
-                href="/reviews/"
-              >
-                Reviews
-              </a>
-            </li>
-            <li
-              class="block w-1/2 whitespace-nowrap text-2xl"
-            >
-              <a
-                class="hover:text-accent"
-                href="/authors/"
-              >
-                Authors
-              </a>
-            </li>
-            <li
-              class="block w-1/2 whitespace-nowrap text-2xl"
-            >
-              <a
-                class="hover:text-accent"
-                href="/readings/"
-              >
-                Reading Log
-              </a>
-              <ol
-                class="mt-4"
-              >
-                <li
-                  class="mb-2 font-sans text-xs uppercase tracking-wide text-inverse-subtle"
-                >
+                <p>
+                  Hi there, I'm Frank, a husband and father old enough to have read Stephen King's 
+                  <em>
+                    The Dark Half
+                  </em>
+                   during its first printing.
+                </p>
+                <p>
+                  This site began in 2012, when I realized I'd accumulated more books than I could ever hope to finish. Worse still, I had books I thought I'd read but couldn't remember. Clearly, I needed a system.
+                </p>
+                <p>
+                  What started on Goodreads evolved into this little corner of the internet where I share my thoughts on what I've read.
+                </p>
+                <p>
+                  New visitors might want to start by reading about 
                   <a
-                    class="hover:text-inverse"
+                    href="/how-i-grade/"
+                  >
+                    how I grade
+                  </a>
+                  . After that, feel free to browse my 
+                  <a
+                    href="/reviews/"
+                  >
+                    reviews
+                  </a>
+                  , which are also indexed 
+                  <a
+                    href="/authors/"
+                  >
+                    by author
+                  </a>
+                  .
+                </p>
+                <p>
+                  I also keep a 
+                  <a
+                    href="/readings/"
+                  >
+                    reading log
+                  </a>
+                   that tracks everything I read, whether it gets a full review or not, complete with 
+                  <a
                     href="/readings/stats/"
                   >
-                    Stats
+                    stats
+                  </a>
+                  . In an age of endless content, sometimes the act of remembering what we've read becomes as important as the reading itself.
+                </p>
+                <p>
+                  In an era of algorithmic recommendations and corporate marketing machines, consider this site a human alternative—one person's attempt to catalog his personal library and maybe help a few fellow travelers along the way.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex grow-0 flex-col gap-20 pb-20 pt-10 tablet:basis-[430px] tablet:pr-10"
+            >
+              <ul
+                class="flex w-full flex-col gap-y-10 max:w-auto"
+              >
+                <li
+                  class="block w-1/2 whitespace-nowrap text-2xl"
+                >
+                  <a
+                    class="hover:text-accent"
+                    href="/"
+                  >
+                    Home
                   </a>
                 </li>
-              </ol>
-            </li>
-          </ul>
-          <a
-            class="mb-8 w-full max-w-button bg-canvas py-5 text-center font-sans text-xs uppercase tracking-wide text-default hover:bg-inverse hover:text-inverse"
-            href="#top"
-          >
-            To the top
-          </a>
-          <p
-            class="w-full font-normal leading-5 text-inverse-subtle"
-          >
-            All covers used in accordance with the 
-            <a
-              class="text-inherit underline decoration-2 underline-offset-4 hover:bg-default hover:text-default"
-              href="http://www.copyright.gov/title17/92chap1.html#107"
-            >
-              Fair Use Law.
-            </a>
-          </p>
+                <li
+                  class="block w-1/2 whitespace-nowrap text-2xl"
+                >
+                  <a
+                    class="hover:text-accent"
+                    href="/how-i-grade/"
+                  >
+                    How I Grade
+                  </a>
+                </li>
+                <li
+                  class="block w-1/2 whitespace-nowrap text-2xl"
+                >
+                  <a
+                    class="hover:text-accent"
+                    href="/reviews/"
+                  >
+                    Reviews
+                  </a>
+                </li>
+                <li
+                  class="block w-1/2 whitespace-nowrap text-2xl"
+                >
+                  <a
+                    class="hover:text-accent"
+                    href="/authors/"
+                  >
+                    Authors
+                  </a>
+                </li>
+                <li
+                  class="block w-1/2 whitespace-nowrap text-2xl"
+                >
+                  <a
+                    class="hover:text-accent"
+                    href="/readings/"
+                  >
+                    Reading Log
+                  </a>
+                  <ol
+                    class="mt-4"
+                  >
+                    <li
+                      class="mb-4 ml-1 font-sans text-xs uppercase tracking-wide text-subtle last:mb-0"
+                    >
+                      <a
+                        class="hover:text-default"
+                        href="/readings/stats/"
+                      >
+                        Stats
+                      </a>
+                    </li>
+                  </ol>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+        <p
+          class="w-full bg-footer px-container py-10 text-center font-normal leading-5 text-inverse"
+        >
+          All reviews by Frank Showalter. All images used in accordance with the 
+          <a
+            class="text-inherit underline decoration-dashed hover:bg-default hover:text-default"
+            href="http://www.copyright.gov/title17/92chap1.html#107"
+            rel="nofollow"
+          >
+            Fair Use Law
+          </a>
+          .
+        </p>
       </footer>
     </div>
   </div>
@@ -9783,7 +10386,7 @@ exports[`YearStats > matches snapshot for slug 2024 1`] = `
           <p
             class="w-full pl-px text-sm italic leading-4 opacity-85"
           >
-            Literature is a relative term.
+            by Frank Showalter
           </p>
         </div>
         <div
@@ -9796,7 +10399,7 @@ exports[`YearStats > matches snapshot for slug 2024 1`] = `
               class="flex flex-wrap justify-start gap-x-6 text-xl"
             >
               <li
-                class="block whitespace-nowrap tracking-serif-wide"
+                class="mast-item block whitespace-nowrap tracking-serif-wide"
               >
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
@@ -9807,7 +10410,7 @@ exports[`YearStats > matches snapshot for slug 2024 1`] = `
                 </a>
               </li>
               <li
-                class="block whitespace-nowrap tracking-serif-wide"
+                class="mast-item block whitespace-nowrap tracking-serif-wide"
               >
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
@@ -9818,7 +10421,7 @@ exports[`YearStats > matches snapshot for slug 2024 1`] = `
                 </a>
               </li>
               <li
-                class="block whitespace-nowrap tracking-serif-wide"
+                class="mast-item block whitespace-nowrap tracking-serif-wide"
               >
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
@@ -9829,7 +10432,7 @@ exports[`YearStats > matches snapshot for slug 2024 1`] = `
                 </a>
               </li>
               <li
-                class="block whitespace-nowrap tracking-serif-wide"
+                class="mast-item block whitespace-nowrap tracking-serif-wide"
               >
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
@@ -9840,7 +10443,7 @@ exports[`YearStats > matches snapshot for slug 2024 1`] = `
                 </a>
               </li>
               <li
-                class="block whitespace-nowrap tracking-serif-wide"
+                class="mast-item block whitespace-nowrap tracking-serif-wide"
               >
                 <a
                   class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
@@ -9853,7 +10456,7 @@ exports[`YearStats > matches snapshot for slug 2024 1`] = `
             </ul>
           </nav>
           <div
-            class="z-[1000]"
+            class="search-button z-[1000]"
           >
             <button
               aria-keyshortcuts="Control+K"
@@ -9966,10 +10569,7 @@ exports[`YearStats > matches snapshot for slug 2024 1`] = `
           class="min-h-[clamp(340px,50vh,1350px)]  relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pt-40 tablet:pt-40 desktop:pb-16 desktop:pt-40"
         >
           <div
-            class="absolute inset-0 bg-canvas opacity-25"
-          />
-          <div
-            class=" z-10 mx-auto flex w-full max-w-screen-max px-container flex-col  py-8 tablet:pb-10 tablet:pt-20 desktop:py-0"
+            class=" z-10 mx-auto flex w-full px-container text-center tablet:max-w-unset tablet:px-0 flex-col  py-8 tablet:pb-10 tablet:pt-20 desktop:py-0"
           >
             <p
               class="mb-6 font-sans text-sm uppercase tracking-wide text-subtle"
@@ -10364,120 +10964,190 @@ exports[`YearStats > matches snapshot for slug 2024 1`] = `
         </div>
       </main>
       <footer
-        class="flex flex-wrap items-start justify-between gap-[10%] bg-footer px-container py-20 text-inverse tablet:px-12 tablet:pt-10 desktop:p-20"
+        class="bg-canvas"
       >
         <div
-          class="flex flex-col pb-12"
+          class="mx-auto max-w-screen-max px-container py-20"
         >
           <div
-            class="flex flex-col"
+            class="flex w-full flex-col tablet:flex-row-reverse tablet:justify-between"
+          >
+            <a
+              class="mx-auto mb-8 w-full max-w-button bg-footer py-5 text-center font-sans text-xs uppercase tracking-wide text-inverse hover:bg-subtle hover:text-default tablet:mx-0"
+              href="#top"
+            >
+              To the top
+            </a>
+            <div
+              class="flex flex-col"
+            >
+              <div
+                class="whitespace-nowrap font-normal leading-8"
+                style="font-size: 1.5625rem;"
+              >
+                <a
+                  href="/"
+                >
+                  Frank's Book Log
+                </a>
+              </div>
+              <p
+                class="w-full pl-px text-sm italic leading-4 opacity-85"
+              >
+                by Frank Showalter
+              </p>
+            </div>
+          </div>
+          <div
+            class="justify-between tablet:flex"
           >
             <div
-              class="whitespace-nowrap font-normal leading-8"
-              style="font-size: 1.5625rem;"
+              class="flex max-w-prose flex-col pb-12 tablet:pr-32"
             >
-              <a
-                href="/"
+              <div
+                class="footer-text pt-10 font-sans text-base font-light text-subtle"
               >
-                Frank's Book Log
-              </a>
-            </div>
-            <p
-              class="w-full pl-px text-sm italic leading-4 opacity-85"
-            >
-              Literature is a relative term.
-            </p>
-          </div>
-        </div>
-        <div
-          class="flex flex-col gap-20 pb-20 pt-10 tablet:basis-1/2 tablet:pt-20"
-        >
-          <ul
-            class="flex w-full flex-col gap-y-10 text-inverse max:w-auto"
-          >
-            <li
-              class="block w-1/2 whitespace-nowrap text-2xl"
-            >
-              <a
-                class="hover:text-accent"
-                href="/"
-              >
-                Home
-              </a>
-            </li>
-            <li
-              class="block w-1/2 whitespace-nowrap text-2xl"
-            >
-              <a
-                class="hover:text-accent"
-                href="/how-i-grade/"
-              >
-                How I Grade
-              </a>
-            </li>
-            <li
-              class="block w-1/2 whitespace-nowrap text-2xl"
-            >
-              <a
-                class="hover:text-accent"
-                href="/reviews/"
-              >
-                Reviews
-              </a>
-            </li>
-            <li
-              class="block w-1/2 whitespace-nowrap text-2xl"
-            >
-              <a
-                class="hover:text-accent"
-                href="/authors/"
-              >
-                Authors
-              </a>
-            </li>
-            <li
-              class="block w-1/2 whitespace-nowrap text-2xl"
-            >
-              <a
-                class="hover:text-accent"
-                href="/readings/"
-              >
-                Reading Log
-              </a>
-              <ol
-                class="mt-4"
-              >
-                <li
-                  class="mb-2 font-sans text-xs uppercase tracking-wide text-inverse-subtle"
-                >
+                <p>
+                  Hi there, I'm Frank, a husband and father old enough to have read Stephen King's 
+                  <em>
+                    The Dark Half
+                  </em>
+                   during its first printing.
+                </p>
+                <p>
+                  This site began in 2012, when I realized I'd accumulated more books than I could ever hope to finish. Worse still, I had books I thought I'd read but couldn't remember. Clearly, I needed a system.
+                </p>
+                <p>
+                  What started on Goodreads evolved into this little corner of the internet where I share my thoughts on what I've read.
+                </p>
+                <p>
+                  New visitors might want to start by reading about 
                   <a
-                    class="hover:text-inverse"
+                    href="/how-i-grade/"
+                  >
+                    how I grade
+                  </a>
+                  . After that, feel free to browse my 
+                  <a
+                    href="/reviews/"
+                  >
+                    reviews
+                  </a>
+                  , which are also indexed 
+                  <a
+                    href="/authors/"
+                  >
+                    by author
+                  </a>
+                  .
+                </p>
+                <p>
+                  I also keep a 
+                  <a
+                    href="/readings/"
+                  >
+                    reading log
+                  </a>
+                   that tracks everything I read, whether it gets a full review or not, complete with 
+                  <a
                     href="/readings/stats/"
                   >
-                    Stats
+                    stats
+                  </a>
+                  . In an age of endless content, sometimes the act of remembering what we've read becomes as important as the reading itself.
+                </p>
+                <p>
+                  In an era of algorithmic recommendations and corporate marketing machines, consider this site a human alternative—one person's attempt to catalog his personal library and maybe help a few fellow travelers along the way.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex grow-0 flex-col gap-20 pb-20 pt-10 tablet:basis-[430px] tablet:pr-10"
+            >
+              <ul
+                class="flex w-full flex-col gap-y-10 max:w-auto"
+              >
+                <li
+                  class="block w-1/2 whitespace-nowrap text-2xl"
+                >
+                  <a
+                    class="hover:text-accent"
+                    href="/"
+                  >
+                    Home
                   </a>
                 </li>
-              </ol>
-            </li>
-          </ul>
-          <a
-            class="mb-8 w-full max-w-button bg-canvas py-5 text-center font-sans text-xs uppercase tracking-wide text-default hover:bg-inverse hover:text-inverse"
-            href="#top"
-          >
-            To the top
-          </a>
-          <p
-            class="w-full font-normal leading-5 text-inverse-subtle"
-          >
-            All covers used in accordance with the 
-            <a
-              class="text-inherit underline decoration-2 underline-offset-4 hover:bg-default hover:text-default"
-              href="http://www.copyright.gov/title17/92chap1.html#107"
-            >
-              Fair Use Law.
-            </a>
-          </p>
+                <li
+                  class="block w-1/2 whitespace-nowrap text-2xl"
+                >
+                  <a
+                    class="hover:text-accent"
+                    href="/how-i-grade/"
+                  >
+                    How I Grade
+                  </a>
+                </li>
+                <li
+                  class="block w-1/2 whitespace-nowrap text-2xl"
+                >
+                  <a
+                    class="hover:text-accent"
+                    href="/reviews/"
+                  >
+                    Reviews
+                  </a>
+                </li>
+                <li
+                  class="block w-1/2 whitespace-nowrap text-2xl"
+                >
+                  <a
+                    class="hover:text-accent"
+                    href="/authors/"
+                  >
+                    Authors
+                  </a>
+                </li>
+                <li
+                  class="block w-1/2 whitespace-nowrap text-2xl"
+                >
+                  <a
+                    class="hover:text-accent"
+                    href="/readings/"
+                  >
+                    Reading Log
+                  </a>
+                  <ol
+                    class="mt-4"
+                  >
+                    <li
+                      class="mb-4 ml-1 font-sans text-xs uppercase tracking-wide text-subtle last:mb-0"
+                    >
+                      <a
+                        class="hover:text-default"
+                        href="/readings/stats/"
+                      >
+                        Stats
+                      </a>
+                    </li>
+                  </ol>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+        <p
+          class="w-full bg-footer px-container py-10 text-center font-normal leading-5 text-inverse"
+        >
+          All reviews by Frank Showalter. All images used in accordance with the 
+          <a
+            class="text-inherit underline decoration-dashed hover:bg-default hover:text-default"
+            href="http://www.copyright.gov/title17/92chap1.html#107"
+            rel="nofollow"
+          >
+            Fair Use Law
+          </a>
+          .
+        </p>
       </footer>
     </div>
   </div>
