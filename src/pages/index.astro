@@ -15,5 +15,8 @@ const props = await getProps();
   openGraph={{ description: props.deck, type: "website" }}
   title="Frank's Book Log"
 >
+  <Fragment slot="meta-theme-color">
+    <meta content="rgba(0,0,0,.85)" name="theme-color" />
+  </Fragment>
   <Home {...props} />
 </Layout>
