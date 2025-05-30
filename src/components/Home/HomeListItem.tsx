@@ -64,7 +64,7 @@ export function HomeListItem({
         <div className="py-2 text-center font-sans text-xxs font-light uppercase leading-4 tracking-wide text-subtle">
           {value.yearPublished} | {value.kind}
         </div>
-        <p className="py-3 text-center text-base font-light leading-5 text-subtle">
+        <p className="py-2 text-center text-base font-light leading-5 text-subtle">
           by{" "}
           {toSentenceArray(
             value.authors.map((author) => {
