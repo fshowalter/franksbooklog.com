@@ -20,8 +20,7 @@ exports[`YearStats > matches snapshot for slug 2011 1`] = `
           class="flex flex-col"
         >
           <div
-            class="whitespace-nowrap font-normal leading-8"
-            style="font-size: 1.5625rem;"
+            class="whitespace-nowrap text-[1.375rem] font-normal leading-8 tablet:text-[1.5625rem]"
           >
             <a
               href="/"
@@ -544,8 +543,7 @@ exports[`YearStats > matches snapshot for slug 2011 1`] = `
               class="flex flex-col"
             >
               <div
-                class="whitespace-nowrap font-normal leading-8"
-                style="font-size: 1.5625rem;"
+                class="whitespace-nowrap text-[1.375rem] font-normal leading-8 tablet:text-[1.5625rem]"
               >
                 <a
                   href="/"
@@ -736,8 +734,7 @@ exports[`YearStats > matches snapshot for slug 2012 1`] = `
           class="flex flex-col"
         >
           <div
-            class="whitespace-nowrap font-normal leading-8"
-            style="font-size: 1.5625rem;"
+            class="whitespace-nowrap text-[1.375rem] font-normal leading-8 tablet:text-[1.5625rem]"
           >
             <a
               href="/"
@@ -1514,8 +1511,7 @@ exports[`YearStats > matches snapshot for slug 2012 1`] = `
               class="flex flex-col"
             >
               <div
-                class="whitespace-nowrap font-normal leading-8"
-                style="font-size: 1.5625rem;"
+                class="whitespace-nowrap text-[1.375rem] font-normal leading-8 tablet:text-[1.5625rem]"
               >
                 <a
                   href="/"
@@ -1706,8 +1702,7 @@ exports[`YearStats > matches snapshot for slug 2013 1`] = `
           class="flex flex-col"
         >
           <div
-            class="whitespace-nowrap font-normal leading-8"
-            style="font-size: 1.5625rem;"
+            class="whitespace-nowrap text-[1.375rem] font-normal leading-8 tablet:text-[1.5625rem]"
           >
             <a
               href="/"
@@ -2314,8 +2309,7 @@ exports[`YearStats > matches snapshot for slug 2013 1`] = `
               class="flex flex-col"
             >
               <div
-                class="whitespace-nowrap font-normal leading-8"
-                style="font-size: 1.5625rem;"
+                class="whitespace-nowrap text-[1.375rem] font-normal leading-8 tablet:text-[1.5625rem]"
               >
                 <a
                   href="/"
@@ -2506,8 +2500,7 @@ exports[`YearStats > matches snapshot for slug 2014 1`] = `
           class="flex flex-col"
         >
           <div
-            class="whitespace-nowrap font-normal leading-8"
-            style="font-size: 1.5625rem;"
+            class="whitespace-nowrap text-[1.375rem] font-normal leading-8 tablet:text-[1.5625rem]"
           >
             <a
               href="/"
@@ -4362,8 +4355,7 @@ exports[`YearStats > matches snapshot for slug 2014 1`] = `
               class="flex flex-col"
             >
               <div
-                class="whitespace-nowrap font-normal leading-8"
-                style="font-size: 1.5625rem;"
+                class="whitespace-nowrap text-[1.375rem] font-normal leading-8 tablet:text-[1.5625rem]"
               >
                 <a
                   href="/"
@@ -4554,8 +4546,7 @@ exports[`YearStats > matches snapshot for slug 2015 1`] = `
           class="flex flex-col"
         >
           <div
-            class="whitespace-nowrap font-normal leading-8"
-            style="font-size: 1.5625rem;"
+            class="whitespace-nowrap text-[1.375rem] font-normal leading-8 tablet:text-[1.5625rem]"
           >
             <a
               href="/"
@@ -5078,8 +5069,7 @@ exports[`YearStats > matches snapshot for slug 2015 1`] = `
               class="flex flex-col"
             >
               <div
-                class="whitespace-nowrap font-normal leading-8"
-                style="font-size: 1.5625rem;"
+                class="whitespace-nowrap text-[1.375rem] font-normal leading-8 tablet:text-[1.5625rem]"
               >
                 <a
                   href="/"
@@ -5270,8 +5260,7 @@ exports[`YearStats > matches snapshot for slug 2017 1`] = `
           class="flex flex-col"
         >
           <div
-            class="whitespace-nowrap font-normal leading-8"
-            style="font-size: 1.5625rem;"
+            class="whitespace-nowrap text-[1.375rem] font-normal leading-8 tablet:text-[1.5625rem]"
           >
             <a
               href="/"
@@ -5794,8 +5783,7 @@ exports[`YearStats > matches snapshot for slug 2017 1`] = `
               class="flex flex-col"
             >
               <div
-                class="whitespace-nowrap font-normal leading-8"
-                style="font-size: 1.5625rem;"
+                class="whitespace-nowrap text-[1.375rem] font-normal leading-8 tablet:text-[1.5625rem]"
               >
                 <a
                   href="/"
@@ -5986,8 +5974,7 @@ exports[`YearStats > matches snapshot for slug 2019 1`] = `
           class="flex flex-col"
         >
           <div
-            class="whitespace-nowrap font-normal leading-8"
-            style="font-size: 1.5625rem;"
+            class="whitespace-nowrap text-[1.375rem] font-normal leading-8 tablet:text-[1.5625rem]"
           >
             <a
               href="/"
@@ -6510,8 +6497,7 @@ exports[`YearStats > matches snapshot for slug 2019 1`] = `
               class="flex flex-col"
             >
               <div
-                class="whitespace-nowrap font-normal leading-8"
-                style="font-size: 1.5625rem;"
+                class="whitespace-nowrap text-[1.375rem] font-normal leading-8 tablet:text-[1.5625rem]"
               >
                 <a
                   href="/"
@@ -6702,8 +6688,7 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
           class="flex flex-col"
         >
           <div
-            class="whitespace-nowrap font-normal leading-8"
-            style="font-size: 1.5625rem;"
+            class="whitespace-nowrap text-[1.375rem] font-normal leading-8 tablet:text-[1.5625rem]"
           >
             <a
               href="/"
@@ -8972,8 +8957,7 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
               class="flex flex-col"
             >
               <div
-                class="whitespace-nowrap font-normal leading-8"
-                style="font-size: 1.5625rem;"
+                class="whitespace-nowrap text-[1.375rem] font-normal leading-8 tablet:text-[1.5625rem]"
               >
                 <a
                   href="/"
@@ -9164,8 +9148,7 @@ exports[`YearStats > matches snapshot for slug 2023 1`] = `
           class="flex flex-col"
         >
           <div
-            class="whitespace-nowrap font-normal leading-8"
-            style="font-size: 1.5625rem;"
+            class="whitespace-nowrap text-[1.375rem] font-normal leading-8 tablet:text-[1.5625rem]"
           >
             <a
               href="/"
@@ -10182,8 +10165,7 @@ exports[`YearStats > matches snapshot for slug 2023 1`] = `
               class="flex flex-col"
             >
               <div
-                class="whitespace-nowrap font-normal leading-8"
-                style="font-size: 1.5625rem;"
+                class="whitespace-nowrap text-[1.375rem] font-normal leading-8 tablet:text-[1.5625rem]"
               >
                 <a
                   href="/"
@@ -10374,8 +10356,7 @@ exports[`YearStats > matches snapshot for slug 2024 1`] = `
           class="flex flex-col"
         >
           <div
-            class="whitespace-nowrap font-normal leading-8"
-            style="font-size: 1.5625rem;"
+            class="whitespace-nowrap text-[1.375rem] font-normal leading-8 tablet:text-[1.5625rem]"
           >
             <a
               href="/"
@@ -10982,8 +10963,7 @@ exports[`YearStats > matches snapshot for slug 2024 1`] = `
               class="flex flex-col"
             >
               <div
-                class="whitespace-nowrap font-normal leading-8"
-                style="font-size: 1.5625rem;"
+                class="whitespace-nowrap text-[1.375rem] font-normal leading-8 tablet:text-[1.5625rem]"
               >
                 <a
                   href="/"
