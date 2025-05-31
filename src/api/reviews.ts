@@ -96,16 +96,11 @@ export async function loadContent(review: Review): Promise<ReviewWithContent> {
   const readings = review.readings
     .map((reading) => {
       const markdownReading = readingsMarkdown.find((markdownReading) => {
-        return (
-          markdownReading.sequence === reading.sequence &&
-          +markdownReading.timeline.at(-1)!.date === +reading.date
-        );
+        return markdownReading.slug === review.slug;
       })!;
 
       if (!markdownReading) {
-        throw new Error(
-          `No markdown readings found with last date ${reading.date.toISOString()} and sequence ${reading.sequence}`,
-        );
+        throw new Error(`No markdown readings found with slug ${review.slug}`);
       }
 
       return {
