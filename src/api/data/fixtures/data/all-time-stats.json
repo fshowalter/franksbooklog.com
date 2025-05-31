@@ -1,7 +1,7 @@
 {
-  "reviewCount": 78,
-  "workCount": 100,
-  "bookCount": 84,
+  "reviewCount": 81,
+  "workCount": 133,
+  "bookCount": 112,
   "gradeDistribution": [
     {
       "name": "A",
@@ -20,7 +20,7 @@
     },
     {
       "name": "B",
-      "count": 13,
+      "count": 14,
       "sortValue": 9
     },
     {
@@ -30,7 +30,7 @@
     },
     {
       "name": "C+",
-      "count": 14,
+      "count": 15,
       "sortValue": 7
     },
     {
@@ -60,48 +60,52 @@
     },
     {
       "name": "Abandoned",
-      "count": 1,
+      "count": 2,
       "sortValue": 0
     }
   ],
   "kindDistribution": [
     {
+      "name": "Anthology",
+      "count": 1
+    },
+    {
       "name": "Collection",
-      "count": 2
+      "count": 4
     },
     {
       "name": "Nonfiction",
-      "count": 32
+      "count": 42
     },
     {
       "name": "Novel",
-      "count": 50
+      "count": 65
     },
     {
       "name": "Novella",
-      "count": 2
+      "count": 3
     },
     {
       "name": "Short Story",
-      "count": 14
+      "count": 18
     }
   ],
   "editionDistribution": [
     {
       "name": "Audible",
-      "count": 29
+      "count": 30
     },
     {
       "name": "Hardcover",
-      "count": 4
+      "count": 10
     },
     {
       "name": "Kindle",
-      "count": 38
+      "count": 49
     },
     {
       "name": "Paperback",
-      "count": 29
+      "count": 44
     }
   ],
   "decadeDistribution": [
@@ -111,7 +115,7 @@
     },
     {
       "name": "1930s",
-      "count": 2
+      "count": 4
     },
     {
       "name": "1940s",
@@ -123,23 +127,23 @@
     },
     {
       "name": "1970s",
-      "count": 14
+      "count": 19
     },
     {
       "name": "1980s",
-      "count": 29
+      "count": 40
     },
     {
       "name": "1990s",
-      "count": 5
-    },
-    {
-      "name": "2000s",
       "count": 6
     },
     {
+      "name": "2000s",
+      "count": 12
+    },
+    {
       "name": "2010s",
-      "count": 27
+      "count": 35
     },
     {
       "name": "2020s",
@@ -149,7 +153,7 @@
   "mostReadAuthors": [
     {
       "name": "Richard Laymon",
-      "count": 20,
+      "count": 26,
       "slug": "richard-laymon",
       "readings": [
         {
@@ -321,6 +325,61 @@
         },
         {
           "sequence": 1,
+          "date": "2014-10-28",
+          "slug": "the-lonely-one-by-richard-laymon",
+          "edition": "Paperback",
+          "kind": "Short Story",
+          "title": "The Lonely One",
+          "yearPublished": "1985",
+          "includedInSlugs": [],
+          "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2014-11-02",
+          "slug": "live-bait-by-richard-laymon",
+          "edition": "Paperback",
+          "kind": "Short Story",
+          "title": "Live Bait",
+          "yearPublished": "1985",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2015-01-28",
+          "slug": "the-lonely-one-by-richard-laymon",
+          "edition": "Paperback",
+          "kind": "Short Story",
+          "title": "The Lonely One",
+          "yearPublished": "1985",
+          "includedInSlugs": [],
+          "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2017-10-14",
+          "slug": "flesh-by-richard-laymon",
+          "edition": "Kindle",
+          "kind": "Novel",
+          "title": "Flesh",
+          "yearPublished": "1987",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2018-01-11",
+          "slug": "midnights-lair-by-richard-laymon",
+          "edition": "Kindle",
+          "kind": "Novel",
+          "title": "Midnight's Lair",
+          "yearPublished": "1988",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
           "date": "2022-03-16",
           "slug": "the-cellar-by-richard-laymon",
           "edition": "Kindle",
@@ -379,12 +438,23 @@
             "short-stories-volume-one-by-richard-laymon"
           ],
           "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2025-02-15",
+          "slug": "the-lonely-one-by-richard-laymon",
+          "edition": "Paperback",
+          "kind": "Short Story",
+          "title": "The Lonely One",
+          "yearPublished": "1985",
+          "includedInSlugs": [],
+          "reviewed": true
         }
       ]
     },
     {
       "name": "Stephen King",
-      "count": 18,
+      "count": 21,
       "slug": "stephen-king",
       "readings": [
         {
@@ -516,6 +586,39 @@
           "kind": "Novel",
           "title": "The Gunslinger",
           "yearPublished": "1982",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2014-10-27",
+          "slug": "different-seasons-by-stephen-king",
+          "edition": "Paperback",
+          "kind": "Collection",
+          "title": "Different Seasons",
+          "yearPublished": "1982",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2016-01-14",
+          "slug": "christine-by-stephen-king",
+          "edition": "Paperback",
+          "kind": "Novel",
+          "title": "Christine",
+          "yearPublished": "1983",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2017-12-18",
+          "slug": "pet-sematary-by-stephen-king",
+          "edition": "Kindle",
+          "kind": "Novel",
+          "title": "Pet Sematary",
+          "yearPublished": "1983",
           "includedInSlugs": [],
           "reviewed": false
         },
@@ -756,6 +859,46 @@
       ]
     },
     {
+      "name": "James Kaplan",
+      "count": 3,
+      "slug": null,
+      "readings": [
+        {
+          "sequence": 1,
+          "date": "2015-01-25",
+          "slug": "frank-by-james-kaplan",
+          "edition": "Paperback",
+          "kind": "Nonfiction",
+          "title": "Frank",
+          "yearPublished": "2010",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2015-12-30",
+          "slug": "sinatra-by-james-kaplan",
+          "edition": "Hardcover",
+          "kind": "Nonfiction",
+          "title": "Sinatra",
+          "yearPublished": "2015",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2016-01-03",
+          "slug": "life-the-rat-pack-by-james-kaplan",
+          "edition": "Hardcover",
+          "kind": "Nonfiction",
+          "title": "LIFE The Rat Pack",
+          "yearPublished": "2013",
+          "includedInSlugs": [],
+          "reviewed": false
+        }
+      ]
+    },
+    {
       "name": "Stephen Morris",
       "count": 3,
       "slug": "stephen-morris",
@@ -865,6 +1008,35 @@
       ]
     },
     {
+      "name": "Raymond Chandler",
+      "count": 2,
+      "slug": "raymond-chandler",
+      "readings": [
+        {
+          "sequence": 2,
+          "date": "2016-02-12",
+          "slug": "the-big-sleep-by-raymond-chandler",
+          "edition": "Paperback",
+          "kind": "Novel",
+          "title": "The Big Sleep",
+          "yearPublished": "1939",
+          "includedInSlugs": [],
+          "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2022-09-24",
+          "slug": "the-big-sleep-by-raymond-chandler",
+          "edition": "Audible",
+          "kind": "Novel",
+          "title": "The Big Sleep",
+          "yearPublished": "1939",
+          "includedInSlugs": [],
+          "reviewed": true
+        }
+      ]
+    },
+    {
       "name": "Bret Easton Ellis",
       "count": 2,
       "slug": "bret-easton-ellis",
@@ -894,31 +1066,31 @@
       ]
     },
     {
-      "name": "Lol Tolhurst",
+      "name": "Roger Ebert",
       "count": 2,
-      "slug": "lol-tolhurst",
+      "slug": null,
       "readings": [
         {
           "sequence": 1,
-          "date": "2022-07-18",
-          "slug": "cured-by-lol-tolhurst",
-          "edition": "Audible",
+          "date": "2014-12-30",
+          "slug": "the-great-movies-by-roger-ebert",
+          "edition": "Paperback",
           "kind": "Nonfiction",
-          "title": "Cured",
-          "yearPublished": "2016",
+          "title": "The Great Movies",
+          "yearPublished": "2002",
           "includedInSlugs": [],
-          "reviewed": true
+          "reviewed": false
         },
         {
           "sequence": 1,
-          "date": "2024-11-08",
-          "slug": "goth-by-lol-tolhurst",
-          "edition": "Audible",
+          "date": "2017-11-08",
+          "slug": "life-itself-by-roger-ebert",
+          "edition": "Kindle",
           "kind": "Nonfiction",
-          "title": "Goth",
-          "yearPublished": "2023",
+          "title": "Life Itself",
+          "yearPublished": "2011",
           "includedInSlugs": [],
-          "reviewed": true
+          "reviewed": false
         }
       ]
     }

@@ -234,7 +234,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
             <p
               class="mt-1 text-base desktop:my-4 desktop:text-xl   "
             >
-              9 Years in Review
+              12 Years in Review
             </p>
           </div>
         </header>
@@ -252,6 +252,16 @@ exports[`/readings/stats > matches snapshot 1`] = `
               >
                 All-Time
               </div>
+            </li>
+            <li
+              class="text-center text-inverse"
+            >
+              <a
+                class="block p-4 hover:bg-accent hover:text-inverse"
+                href="/readings/stats/2025/"
+              >
+                2025
+              </a>
             </li>
             <li
               class="text-center text-inverse"
@@ -298,9 +308,29 @@ exports[`/readings/stats > matches snapshot 1`] = `
             >
               <a
                 class="block p-4 hover:bg-accent hover:text-inverse"
+                href="/readings/stats/2018/"
+              >
+                2018
+              </a>
+            </li>
+            <li
+              class="text-center text-inverse"
+            >
+              <a
+                class="block p-4 hover:bg-accent hover:text-inverse"
                 href="/readings/stats/2017/"
               >
                 2017
+              </a>
+            </li>
+            <li
+              class="text-center text-inverse"
+            >
+              <a
+                class="block p-4 hover:bg-accent hover:text-inverse"
+                href="/readings/stats/2016/"
+              >
+                2016
               </a>
             </li>
             <li
@@ -364,7 +394,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
             <div
               class="text-[2rem] leading-8"
             >
-              100
+              133
             </div>
              
             <div
@@ -379,7 +409,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
             <div
               class="text-[2rem] leading-8"
             >
-              84
+              112
             </div>
              
             <div
@@ -394,7 +424,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
             <div
               class="text-[2rem] leading-8"
             >
-              78
+              81
             </div>
              
             <div
@@ -443,7 +473,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="progress-bar-bg leading-[6px] tablet:mb-0"
-                      style="--bar-percent: 3.8461538461538463%;"
+                      style="--bar-percent: 3.7037037037037033%;"
                     >
                        
                     </div>
@@ -471,7 +501,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="progress-bar-bg leading-[6px] tablet:mb-0"
-                      style="--bar-percent: 10.256410256410255%;"
+                      style="--bar-percent: 9.876543209876543%;"
                     >
                        
                     </div>
@@ -499,7 +529,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="progress-bar-bg leading-[6px] tablet:mb-0"
-                      style="--bar-percent: 8.974358974358974%;"
+                      style="--bar-percent: 8.641975308641975%;"
                     >
                        
                     </div>
@@ -519,7 +549,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     <div
                       class="col-start-2 self-center text-nowrap pb-1 text-right font-sans text-xs text-subtle"
                     >
-                      13
+                      14
                     </div>
                   </div>
                   <div
@@ -527,7 +557,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="progress-bar-bg leading-[6px] tablet:mb-0"
-                      style="--bar-percent: 16.666666666666664%;"
+                      style="--bar-percent: 17.28395061728395%;"
                     >
                        
                     </div>
@@ -555,7 +585,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="progress-bar-bg leading-[6px] tablet:mb-0"
-                      style="--bar-percent: 5.128205128205128%;"
+                      style="--bar-percent: 4.938271604938271%;"
                     >
                        
                     </div>
@@ -575,7 +605,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     <div
                       class="col-start-2 self-center text-nowrap pb-1 text-right font-sans text-xs text-subtle"
                     >
-                      14
+                      15
                     </div>
                   </div>
                   <div
@@ -583,7 +613,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="progress-bar-bg leading-[6px] tablet:mb-0"
-                      style="--bar-percent: 17.94871794871795%;"
+                      style="--bar-percent: 18.51851851851852%;"
                     >
                        
                     </div>
@@ -611,7 +641,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="progress-bar-bg leading-[6px] tablet:mb-0"
-                      style="--bar-percent: 16.666666666666664%;"
+                      style="--bar-percent: 16.049382716049383%;"
                     >
                        
                     </div>
@@ -639,7 +669,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="progress-bar-bg leading-[6px] tablet:mb-0"
-                      style="--bar-percent: 6.41025641025641%;"
+                      style="--bar-percent: 6.172839506172839%;"
                     >
                        
                     </div>
@@ -667,7 +697,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="progress-bar-bg leading-[6px] tablet:mb-0"
-                      style="--bar-percent: 5.128205128205128%;"
+                      style="--bar-percent: 4.938271604938271%;"
                     >
                        
                     </div>
@@ -695,7 +725,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="progress-bar-bg leading-[6px] tablet:mb-0"
-                      style="--bar-percent: 6.41025641025641%;"
+                      style="--bar-percent: 6.172839506172839%;"
                     >
                        
                     </div>
@@ -723,7 +753,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="progress-bar-bg leading-[6px] tablet:mb-0"
-                      style="--bar-percent: 1.282051282051282%;"
+                      style="--bar-percent: 1.2345679012345678%;"
                     >
                        
                     </div>
@@ -743,7 +773,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     <div
                       class="col-start-2 self-center text-nowrap pb-1 text-right font-sans text-xs text-subtle"
                     >
-                      1
+                      2
                     </div>
                   </div>
                   <div
@@ -751,7 +781,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="progress-bar-bg leading-[6px] tablet:mb-0"
-                      style="--bar-percent: 1.282051282051282%;"
+                      style="--bar-percent: 2.4691358024691357%;"
                     >
                        
                     </div>
@@ -789,7 +819,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     <div
                       class="col-start-2 self-center text-nowrap pb-1 text-right font-sans text-xs text-subtle"
                     >
-                      20
+                      26
                     </div>
                   </div>
                   <div
@@ -1471,6 +1501,223 @@ exports[`/readings/stats > matches snapshot 1`] = `
                               height="113"
                               loading="lazy"
                               sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+                              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+                              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+                              width="80"
+                            />
+                          </div>
+                          <div
+                            class="flex grow flex-col gap-y-1"
+                          >
+                            <a
+                              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                              href="/reviews/the-lonely-one-by-richard-laymon/"
+                            >
+                              The Lonely One
+                            </a>
+                            <div
+                              class="mt-1 font-sans text-xs text-muted"
+                            >
+                              2014-10-28
+                            </div>
+                            <div
+                              class="mt-1 font-sans text-xs text-muted"
+                            >
+                              Short Story
+                            </div>
+                            <div
+                              class="mt-1 font-sans text-xs font-light text-muted"
+                            >
+                              Paperback
+                            </div>
+                          </div>
+                        </li>
+                        <li
+                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover"
+                        >
+                          <div
+                            class="w-list-item-cover shrink-0"
+                          >
+                            <img
+                              alt=""
+                              class="aspect-cover"
+                              decoding="async"
+                              height="113"
+                              loading="lazy"
+                              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+                              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Flive-bait-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+                              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Flive-bait-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Flive-bait-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Flive-bait-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Flive-bait-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+                              width="80"
+                            />
+                          </div>
+                          <div
+                            class="flex grow flex-col gap-y-1"
+                          >
+                            <span
+                              class="block font-sans text-sm font-normal text-muted"
+                            >
+                              Live Bait
+                            </span>
+                            <div
+                              class="mt-1 font-sans text-xs text-muted"
+                            >
+                              2014-11-02
+                            </div>
+                            <div
+                              class="mt-1 font-sans text-xs text-muted"
+                            >
+                              Short Story
+                            </div>
+                            <div
+                              class="mt-1 font-sans text-xs font-light text-muted"
+                            >
+                              Paperback
+                            </div>
+                          </div>
+                        </li>
+                        <li
+                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover"
+                        >
+                          <div
+                            class="w-list-item-cover shrink-0"
+                          >
+                            <img
+                              alt=""
+                              class="aspect-cover"
+                              decoding="async"
+                              height="113"
+                              loading="lazy"
+                              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+                              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+                              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+                              width="80"
+                            />
+                          </div>
+                          <div
+                            class="flex grow flex-col gap-y-1"
+                          >
+                            <a
+                              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                              href="/reviews/the-lonely-one-by-richard-laymon/"
+                            >
+                              The Lonely One
+                            </a>
+                            <div
+                              class="mt-1 font-sans text-xs text-muted"
+                            >
+                              2015-01-28
+                            </div>
+                            <div
+                              class="mt-1 font-sans text-xs text-muted"
+                            >
+                              Short Story
+                            </div>
+                            <div
+                              class="mt-1 font-sans text-xs font-light text-muted"
+                            >
+                              Paperback
+                            </div>
+                          </div>
+                        </li>
+                        <li
+                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover"
+                        >
+                          <div
+                            class="w-list-item-cover shrink-0"
+                          >
+                            <img
+                              alt=""
+                              class="aspect-cover"
+                              decoding="async"
+                              height="113"
+                              loading="lazy"
+                              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+                              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fflesh-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+                              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fflesh-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fflesh-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fflesh-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fflesh-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+                              width="80"
+                            />
+                          </div>
+                          <div
+                            class="flex grow flex-col gap-y-1"
+                          >
+                            <span
+                              class="block font-sans text-sm font-normal text-muted"
+                            >
+                              Flesh
+                            </span>
+                            <div
+                              class="mt-1 font-sans text-xs text-muted"
+                            >
+                              2017-10-14
+                            </div>
+                            <div
+                              class="mt-1 font-sans text-xs text-muted"
+                            >
+                              Novel
+                            </div>
+                            <div
+                              class="mt-1 font-sans text-xs font-light text-muted"
+                            >
+                              Kindle
+                            </div>
+                          </div>
+                        </li>
+                        <li
+                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover"
+                        >
+                          <div
+                            class="w-list-item-cover shrink-0"
+                          >
+                            <img
+                              alt=""
+                              class="aspect-cover"
+                              decoding="async"
+                              height="113"
+                              loading="lazy"
+                              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+                              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fmidnights-lair-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+                              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fmidnights-lair-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fmidnights-lair-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fmidnights-lair-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fmidnights-lair-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+                              width="80"
+                            />
+                          </div>
+                          <div
+                            class="flex grow flex-col gap-y-1"
+                          >
+                            <span
+                              class="block font-sans text-sm font-normal text-muted"
+                            >
+                              Midnight's Lair
+                            </span>
+                            <div
+                              class="mt-1 font-sans text-xs text-muted"
+                            >
+                              2018-01-11
+                            </div>
+                            <div
+                              class="mt-1 font-sans text-xs text-muted"
+                            >
+                              Novel
+                            </div>
+                            <div
+                              class="mt-1 font-sans text-xs font-light text-muted"
+                            >
+                              Kindle
+                            </div>
+                          </div>
+                        </li>
+                        <li
+                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover"
+                        >
+                          <div
+                            class="w-list-item-cover shrink-0"
+                          >
+                            <img
+                              alt=""
+                              class="aspect-cover"
+                              decoding="async"
+                              height="113"
+                              loading="lazy"
+                              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
                               src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-cellar-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
                               srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-cellar-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-cellar-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-cellar-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-cellar-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
                               width="80"
@@ -1678,6 +1925,50 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             </div>
                           </div>
                         </li>
+                        <li
+                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover"
+                        >
+                          <div
+                            class="w-list-item-cover shrink-0"
+                          >
+                            <img
+                              alt=""
+                              class="aspect-cover"
+                              decoding="async"
+                              height="113"
+                              loading="lazy"
+                              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+                              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+                              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+                              width="80"
+                            />
+                          </div>
+                          <div
+                            class="flex grow flex-col gap-y-1"
+                          >
+                            <a
+                              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                              href="/reviews/the-lonely-one-by-richard-laymon/"
+                            >
+                              The Lonely One
+                            </a>
+                            <div
+                              class="mt-1 font-sans text-xs text-muted"
+                            >
+                              2025-02-15
+                            </div>
+                            <div
+                              class="mt-1 font-sans text-xs text-muted"
+                            >
+                              Short Story
+                            </div>
+                            <div
+                              class="mt-1 font-sans text-xs font-light text-muted"
+                            >
+                              Paperback
+                            </div>
+                          </div>
+                        </li>
                       </ol>
                     </details>
                   </div>
@@ -1701,7 +1992,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     <div
                       class="col-start-2 self-center text-nowrap pb-1 text-right font-sans text-xs text-subtle"
                     >
-                      18
+                      21
                     </div>
                   </div>
                   <div
@@ -2237,6 +2528,135 @@ exports[`/readings/stats > matches snapshot 1`] = `
                               class="mt-1 font-sans text-xs font-light text-muted"
                             >
                               Paperback
+                            </div>
+                          </div>
+                        </li>
+                        <li
+                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover"
+                        >
+                          <div
+                            class="w-list-item-cover shrink-0"
+                          >
+                            <img
+                              alt=""
+                              class="aspect-cover"
+                              decoding="async"
+                              height="113"
+                              loading="lazy"
+                              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+                              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdifferent-seasons-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+                              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdifferent-seasons-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdifferent-seasons-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdifferent-seasons-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdifferent-seasons-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+                              width="80"
+                            />
+                          </div>
+                          <div
+                            class="flex grow flex-col gap-y-1"
+                          >
+                            <span
+                              class="block font-sans text-sm font-normal text-muted"
+                            >
+                              Different Seasons
+                            </span>
+                            <div
+                              class="mt-1 font-sans text-xs text-muted"
+                            >
+                              2014-10-27
+                            </div>
+                            <div
+                              class="mt-1 font-sans text-xs text-muted"
+                            >
+                              Collection
+                            </div>
+                            <div
+                              class="mt-1 font-sans text-xs font-light text-muted"
+                            >
+                              Paperback
+                            </div>
+                          </div>
+                        </li>
+                        <li
+                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover"
+                        >
+                          <div
+                            class="w-list-item-cover shrink-0"
+                          >
+                            <img
+                              alt=""
+                              class="aspect-cover"
+                              decoding="async"
+                              height="113"
+                              loading="lazy"
+                              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+                              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fchristine-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+                              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fchristine-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fchristine-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fchristine-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fchristine-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+                              width="80"
+                            />
+                          </div>
+                          <div
+                            class="flex grow flex-col gap-y-1"
+                          >
+                            <span
+                              class="block font-sans text-sm font-normal text-muted"
+                            >
+                              Christine
+                            </span>
+                            <div
+                              class="mt-1 font-sans text-xs text-muted"
+                            >
+                              2016-01-14
+                            </div>
+                            <div
+                              class="mt-1 font-sans text-xs text-muted"
+                            >
+                              Novel
+                            </div>
+                            <div
+                              class="mt-1 font-sans text-xs font-light text-muted"
+                            >
+                              Paperback
+                            </div>
+                          </div>
+                        </li>
+                        <li
+                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover"
+                        >
+                          <div
+                            class="w-list-item-cover shrink-0"
+                          >
+                            <img
+                              alt=""
+                              class="aspect-cover"
+                              decoding="async"
+                              height="113"
+                              loading="lazy"
+                              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+                              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fpet-sematary-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+                              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fpet-sematary-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fpet-sematary-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fpet-sematary-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fpet-sematary-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+                              width="80"
+                            />
+                          </div>
+                          <div
+                            class="flex grow flex-col gap-y-1"
+                          >
+                            <span
+                              class="block font-sans text-sm font-normal text-muted"
+                            >
+                              Pet Sematary
+                            </span>
+                            <div
+                              class="mt-1 font-sans text-xs text-muted"
+                            >
+                              2017-12-18
+                            </div>
+                            <div
+                              class="mt-1 font-sans text-xs text-muted"
+                            >
+                              Novel
+                            </div>
+                            <div
+                              class="mt-1 font-sans text-xs font-light text-muted"
+                            >
+                              Kindle
                             </div>
                           </div>
                         </li>
@@ -3128,6 +3548,170 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     <div
                       class="font-sans text-sm text-muted"
                     >
+                      James Kaplan
+                    </div>
+                    <div
+                      class="col-start-2 self-center text-nowrap pb-1 text-right font-sans text-xs text-subtle"
+                    >
+                      3
+                    </div>
+                  </div>
+                  <div
+                    class="col-span-2 row-start-2 px-container tablet:px-0"
+                  >
+                    <details
+                      class="bg-group tablet:px-2"
+                    >
+                      <summary
+                        class="cursor-pointer px-4 py-1 font-sans text-sm text-subtle tablet:px-0"
+                      >
+                        Details
+                      </summary>
+                      <ol
+                        class="py-2 tablet:px-4"
+                      >
+                        <li
+                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover"
+                        >
+                          <div
+                            class="w-list-item-cover shrink-0"
+                          >
+                            <img
+                              alt=""
+                              class="aspect-cover"
+                              decoding="async"
+                              height="113"
+                              loading="lazy"
+                              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+                              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffrank-by-james-kaplan.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+                              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffrank-by-james-kaplan.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffrank-by-james-kaplan.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffrank-by-james-kaplan.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffrank-by-james-kaplan.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+                              width="80"
+                            />
+                          </div>
+                          <div
+                            class="flex grow flex-col gap-y-1"
+                          >
+                            <span
+                              class="block font-sans text-sm font-normal text-muted"
+                            >
+                              Frank
+                            </span>
+                            <div
+                              class="mt-1 font-sans text-xs text-muted"
+                            >
+                              2015-01-25
+                            </div>
+                            <div
+                              class="mt-1 font-sans text-xs text-muted"
+                            >
+                              Nonfiction
+                            </div>
+                            <div
+                              class="mt-1 font-sans text-xs font-light text-muted"
+                            >
+                              Paperback
+                            </div>
+                          </div>
+                        </li>
+                        <li
+                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover"
+                        >
+                          <div
+                            class="w-list-item-cover shrink-0"
+                          >
+                            <img
+                              alt=""
+                              class="aspect-cover"
+                              decoding="async"
+                              height="113"
+                              loading="lazy"
+                              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+                              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsinatra-by-james-kaplan.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+                              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsinatra-by-james-kaplan.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsinatra-by-james-kaplan.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsinatra-by-james-kaplan.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsinatra-by-james-kaplan.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+                              width="80"
+                            />
+                          </div>
+                          <div
+                            class="flex grow flex-col gap-y-1"
+                          >
+                            <span
+                              class="block font-sans text-sm font-normal text-muted"
+                            >
+                              Sinatra
+                            </span>
+                            <div
+                              class="mt-1 font-sans text-xs text-muted"
+                            >
+                              2015-12-30
+                            </div>
+                            <div
+                              class="mt-1 font-sans text-xs text-muted"
+                            >
+                              Nonfiction
+                            </div>
+                            <div
+                              class="mt-1 font-sans text-xs font-light text-muted"
+                            >
+                              Hardcover
+                            </div>
+                          </div>
+                        </li>
+                        <li
+                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover"
+                        >
+                          <div
+                            class="w-list-item-cover shrink-0"
+                          >
+                            <img
+                              alt=""
+                              class="aspect-cover"
+                              decoding="async"
+                              height="113"
+                              loading="lazy"
+                              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+                              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Flife-the-rat-pack-by-james-kaplan.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+                              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Flife-the-rat-pack-by-james-kaplan.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Flife-the-rat-pack-by-james-kaplan.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Flife-the-rat-pack-by-james-kaplan.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Flife-the-rat-pack-by-james-kaplan.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+                              width="80"
+                            />
+                          </div>
+                          <div
+                            class="flex grow flex-col gap-y-1"
+                          >
+                            <span
+                              class="block font-sans text-sm font-normal text-muted"
+                            >
+                              LIFE The Rat Pack
+                            </span>
+                            <div
+                              class="mt-1 font-sans text-xs text-muted"
+                            >
+                              2016-01-03
+                            </div>
+                            <div
+                              class="mt-1 font-sans text-xs text-muted"
+                            >
+                              Nonfiction
+                            </div>
+                            <div
+                              class="mt-1 font-sans text-xs font-light text-muted"
+                            >
+                              Hardcover
+                            </div>
+                          </div>
+                        </li>
+                      </ol>
+                    </details>
+                  </div>
+                </div>
+                <div
+                  class="py-3"
+                >
+                  <div
+                    class="flex justify-between px-container tablet:px-0"
+                  >
+                    <div
+                      class="font-sans text-sm text-muted"
+                    >
                       <a
                         class="inline-block font-normal leading-6 text-accent"
                         href="/authors/stephen-morris/"
@@ -3602,6 +4186,134 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     >
                       <a
                         class="inline-block font-normal leading-6 text-accent"
+                        href="/authors/raymond-chandler/"
+                      >
+                        Raymond Chandler
+                      </a>
+                    </div>
+                    <div
+                      class="col-start-2 self-center text-nowrap pb-1 text-right font-sans text-xs text-subtle"
+                    >
+                      2
+                    </div>
+                  </div>
+                  <div
+                    class="col-span-2 row-start-2 px-container tablet:px-0"
+                  >
+                    <details
+                      class="bg-group tablet:px-2"
+                    >
+                      <summary
+                        class="cursor-pointer px-4 py-1 font-sans text-sm text-subtle tablet:px-0"
+                      >
+                        Details
+                      </summary>
+                      <ol
+                        class="py-2 tablet:px-4"
+                      >
+                        <li
+                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover"
+                        >
+                          <div
+                            class="w-list-item-cover shrink-0"
+                          >
+                            <img
+                              alt=""
+                              class="aspect-cover"
+                              decoding="async"
+                              height="113"
+                              loading="lazy"
+                              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+                              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-big-sleep-by-raymond-chandler.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+                              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-big-sleep-by-raymond-chandler.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-big-sleep-by-raymond-chandler.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-big-sleep-by-raymond-chandler.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-big-sleep-by-raymond-chandler.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+                              width="80"
+                            />
+                          </div>
+                          <div
+                            class="flex grow flex-col gap-y-1"
+                          >
+                            <a
+                              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                              href="/reviews/the-big-sleep-by-raymond-chandler/"
+                            >
+                              The Big Sleep
+                            </a>
+                            <div
+                              class="mt-1 font-sans text-xs text-muted"
+                            >
+                              2016-02-12
+                            </div>
+                            <div
+                              class="mt-1 font-sans text-xs text-muted"
+                            >
+                              Novel
+                            </div>
+                            <div
+                              class="mt-1 font-sans text-xs font-light text-muted"
+                            >
+                              Paperback
+                            </div>
+                          </div>
+                        </li>
+                        <li
+                          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover"
+                        >
+                          <div
+                            class="w-list-item-cover shrink-0"
+                          >
+                            <img
+                              alt=""
+                              class="aspect-cover"
+                              decoding="async"
+                              height="113"
+                              loading="lazy"
+                              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+                              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-big-sleep-by-raymond-chandler.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+                              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-big-sleep-by-raymond-chandler.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-big-sleep-by-raymond-chandler.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-big-sleep-by-raymond-chandler.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-big-sleep-by-raymond-chandler.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+                              width="80"
+                            />
+                          </div>
+                          <div
+                            class="flex grow flex-col gap-y-1"
+                          >
+                            <a
+                              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                              href="/reviews/the-big-sleep-by-raymond-chandler/"
+                            >
+                              The Big Sleep
+                            </a>
+                            <div
+                              class="mt-1 font-sans text-xs text-muted"
+                            >
+                              2022-09-24
+                            </div>
+                            <div
+                              class="mt-1 font-sans text-xs text-muted"
+                            >
+                              Novel
+                            </div>
+                            <div
+                              class="mt-1 font-sans text-xs font-light text-muted"
+                            >
+                              Audible
+                            </div>
+                          </div>
+                        </li>
+                      </ol>
+                    </details>
+                  </div>
+                </div>
+                <div
+                  class="py-3"
+                >
+                  <div
+                    class="flex justify-between px-container tablet:px-0"
+                  >
+                    <div
+                      class="font-sans text-sm text-muted"
+                    >
+                      <a
+                        class="inline-block font-normal leading-6 text-accent"
                         href="/authors/bret-easton-ellis/"
                       >
                         Bret Easton Ellis
@@ -3728,12 +4440,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     <div
                       class="font-sans text-sm text-muted"
                     >
-                      <a
-                        class="inline-block font-normal leading-6 text-accent"
-                        href="/authors/lol-tolhurst/"
-                      >
-                        Lol Tolhurst
-                      </a>
+                      Roger Ebert
                     </div>
                     <div
                       class="col-start-2 self-center text-nowrap pb-1 text-right font-sans text-xs text-subtle"
@@ -3768,24 +4475,23 @@ exports[`/readings/stats > matches snapshot 1`] = `
                               height="113"
                               loading="lazy"
                               sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
-                              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fcured-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
-                              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fcured-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fcured-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fcured-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fcured-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+                              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-great-movies-by-roger-ebert.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+                              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-great-movies-by-roger-ebert.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-great-movies-by-roger-ebert.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-great-movies-by-roger-ebert.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-great-movies-by-roger-ebert.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
                               width="80"
                             />
                           </div>
                           <div
                             class="flex grow flex-col gap-y-1"
                           >
-                            <a
-                              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
-                              href="/reviews/cured-by-lol-tolhurst/"
+                            <span
+                              class="block font-sans text-sm font-normal text-muted"
                             >
-                              Cured
-                            </a>
+                              The Great Movies
+                            </span>
                             <div
                               class="mt-1 font-sans text-xs text-muted"
                             >
-                              2022-07-18
+                              2014-12-30
                             </div>
                             <div
                               class="mt-1 font-sans text-xs text-muted"
@@ -3795,7 +4501,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             <div
                               class="mt-1 font-sans text-xs font-light text-muted"
                             >
-                              Audible
+                              Paperback
                             </div>
                           </div>
                         </li>
@@ -3812,24 +4518,23 @@ exports[`/readings/stats > matches snapshot 1`] = `
                               height="113"
                               loading="lazy"
                               sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
-                              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
-                              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+                              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Flife-itself-by-roger-ebert.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+                              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Flife-itself-by-roger-ebert.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Flife-itself-by-roger-ebert.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Flife-itself-by-roger-ebert.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Flife-itself-by-roger-ebert.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
                               width="80"
                             />
                           </div>
                           <div
                             class="flex grow flex-col gap-y-1"
                           >
-                            <a
-                              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
-                              href="/reviews/goth-by-lol-tolhurst/"
+                            <span
+                              class="block font-sans text-sm font-normal text-muted"
                             >
-                              Goth
-                            </a>
+                              Life Itself
+                            </span>
                             <div
                               class="mt-1 font-sans text-xs text-muted"
                             >
-                              2024-11-08
+                              2017-11-08
                             </div>
                             <div
                               class="mt-1 font-sans text-xs text-muted"
@@ -3839,7 +4544,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                             <div
                               class="mt-1 font-sans text-xs font-light text-muted"
                             >
-                              Audible
+                              Kindle
                             </div>
                           </div>
                         </li>
@@ -3886,7 +4591,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="progress-bar-bg leading-[6px] tablet:mb-0"
-                      style="--bar-percent: 1%;"
+                      style="--bar-percent: 0.7518796992481203%;"
                     >
                        
                     </div>
@@ -3906,7 +4611,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     <div
                       class="col-start-2 self-center text-nowrap pb-1 text-right font-sans text-xs text-subtle"
                     >
-                      2
+                      4
                     </div>
                   </div>
                   <div
@@ -3914,7 +4619,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="progress-bar-bg leading-[6px] tablet:mb-0"
-                      style="--bar-percent: 2%;"
+                      style="--bar-percent: 3.007518796992481%;"
                     >
                        
                     </div>
@@ -3942,7 +4647,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="progress-bar-bg leading-[6px] tablet:mb-0"
-                      style="--bar-percent: 1%;"
+                      style="--bar-percent: 0.7518796992481203%;"
                     >
                        
                     </div>
@@ -3970,7 +4675,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="progress-bar-bg leading-[6px] tablet:mb-0"
-                      style="--bar-percent: 4%;"
+                      style="--bar-percent: 3.007518796992481%;"
                     >
                        
                     </div>
@@ -3990,7 +4695,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     <div
                       class="col-start-2 self-center text-nowrap pb-1 text-right font-sans text-xs text-subtle"
                     >
-                      14
+                      19
                     </div>
                   </div>
                   <div
@@ -3998,7 +4703,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="progress-bar-bg leading-[6px] tablet:mb-0"
-                      style="--bar-percent: 14.000000000000002%;"
+                      style="--bar-percent: 14.285714285714285%;"
                     >
                        
                     </div>
@@ -4018,7 +4723,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     <div
                       class="col-start-2 self-center text-nowrap pb-1 text-right font-sans text-xs text-subtle"
                     >
-                      29
+                      40
                     </div>
                   </div>
                   <div
@@ -4026,7 +4731,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="progress-bar-bg leading-[6px] tablet:mb-0"
-                      style="--bar-percent: 28.999999999999996%;"
+                      style="--bar-percent: 30.075187969924812%;"
                     >
                        
                     </div>
@@ -4046,7 +4751,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     <div
                       class="col-start-2 self-center text-nowrap pb-1 text-right font-sans text-xs text-subtle"
                     >
-                      5
+                      6
                     </div>
                   </div>
                   <div
@@ -4054,7 +4759,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="progress-bar-bg leading-[6px] tablet:mb-0"
-                      style="--bar-percent: 5%;"
+                      style="--bar-percent: 4.511278195488721%;"
                     >
                        
                     </div>
@@ -4074,7 +4779,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     <div
                       class="col-start-2 self-center text-nowrap pb-1 text-right font-sans text-xs text-subtle"
                     >
-                      6
+                      12
                     </div>
                   </div>
                   <div
@@ -4082,7 +4787,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="progress-bar-bg leading-[6px] tablet:mb-0"
-                      style="--bar-percent: 6%;"
+                      style="--bar-percent: 9.022556390977442%;"
                     >
                        
                     </div>
@@ -4102,7 +4807,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     <div
                       class="col-start-2 self-center text-nowrap pb-1 text-right font-sans text-xs text-subtle"
                     >
-                      27
+                      35
                     </div>
                   </div>
                   <div
@@ -4110,7 +4815,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="progress-bar-bg leading-[6px] tablet:mb-0"
-                      style="--bar-percent: 27%;"
+                      style="--bar-percent: 26.31578947368421%;"
                     >
                        
                     </div>
@@ -4138,7 +4843,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="progress-bar-bg leading-[6px] tablet:mb-0"
-                      style="--bar-percent: 11%;"
+                      style="--bar-percent: 8.270676691729323%;"
                     >
                        
                     </div>
@@ -4166,12 +4871,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     <div
                       class="font-sans text-xs text-muted"
                     >
-                      Collection
+                      Anthology
                     </div>
                     <div
                       class="col-start-2 self-center text-nowrap pb-1 text-right font-sans text-xs text-subtle"
                     >
-                      2
+                      1
                     </div>
                   </div>
                   <div
@@ -4179,7 +4884,35 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="progress-bar-bg leading-[6px] tablet:mb-0"
-                      style="--bar-percent: 2%;"
+                      style="--bar-percent: 0.7518796992481203%;"
+                    >
+                       
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-span-2 grid grid-cols-subgrid py-3"
+                >
+                  <div
+                    class="col-span-2 grid grid-cols-subgrid"
+                  >
+                    <div
+                      class="font-sans text-xs text-muted"
+                    >
+                      Collection
+                    </div>
+                    <div
+                      class="col-start-2 self-center text-nowrap pb-1 text-right font-sans text-xs text-subtle"
+                    >
+                      4
+                    </div>
+                  </div>
+                  <div
+                    class="col-span-2 row-start-2 bg-subtle"
+                  >
+                    <div
+                      class="progress-bar-bg leading-[6px] tablet:mb-0"
+                      style="--bar-percent: 3.007518796992481%;"
                     >
                        
                     </div>
@@ -4199,7 +4932,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     <div
                       class="col-start-2 self-center text-nowrap pb-1 text-right font-sans text-xs text-subtle"
                     >
-                      32
+                      42
                     </div>
                   </div>
                   <div
@@ -4207,7 +4940,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="progress-bar-bg leading-[6px] tablet:mb-0"
-                      style="--bar-percent: 32%;"
+                      style="--bar-percent: 31.57894736842105%;"
                     >
                        
                     </div>
@@ -4227,7 +4960,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     <div
                       class="col-start-2 self-center text-nowrap pb-1 text-right font-sans text-xs text-subtle"
                     >
-                      50
+                      65
                     </div>
                   </div>
                   <div
@@ -4235,7 +4968,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="progress-bar-bg leading-[6px] tablet:mb-0"
-                      style="--bar-percent: 50%;"
+                      style="--bar-percent: 48.87218045112782%;"
                     >
                        
                     </div>
@@ -4255,7 +4988,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     <div
                       class="col-start-2 self-center text-nowrap pb-1 text-right font-sans text-xs text-subtle"
                     >
-                      2
+                      3
                     </div>
                   </div>
                   <div
@@ -4263,7 +4996,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="progress-bar-bg leading-[6px] tablet:mb-0"
-                      style="--bar-percent: 2%;"
+                      style="--bar-percent: 2.2556390977443606%;"
                     >
                        
                     </div>
@@ -4283,7 +5016,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     <div
                       class="col-start-2 self-center text-nowrap pb-1 text-right font-sans text-xs text-subtle"
                     >
-                      14
+                      18
                     </div>
                   </div>
                   <div
@@ -4291,7 +5024,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="progress-bar-bg leading-[6px] tablet:mb-0"
-                      style="--bar-percent: 14.000000000000002%;"
+                      style="--bar-percent: 13.533834586466165%;"
                     >
                        
                     </div>
@@ -4324,7 +5057,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     <div
                       class="col-start-2 self-center text-nowrap pb-1 text-right font-sans text-xs text-subtle"
                     >
-                      29
+                      30
                     </div>
                   </div>
                   <div
@@ -4332,7 +5065,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="progress-bar-bg leading-[6px] tablet:mb-0"
-                      style="--bar-percent: 28.999999999999996%;"
+                      style="--bar-percent: 22.55639097744361%;"
                     >
                        
                     </div>
@@ -4352,7 +5085,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     <div
                       class="col-start-2 self-center text-nowrap pb-1 text-right font-sans text-xs text-subtle"
                     >
-                      4
+                      10
                     </div>
                   </div>
                   <div
@@ -4360,7 +5093,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="progress-bar-bg leading-[6px] tablet:mb-0"
-                      style="--bar-percent: 4%;"
+                      style="--bar-percent: 7.518796992481203%;"
                     >
                        
                     </div>
@@ -4380,7 +5113,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     <div
                       class="col-start-2 self-center text-nowrap pb-1 text-right font-sans text-xs text-subtle"
                     >
-                      38
+                      49
                     </div>
                   </div>
                   <div
@@ -4388,7 +5121,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="progress-bar-bg leading-[6px] tablet:mb-0"
-                      style="--bar-percent: 38%;"
+                      style="--bar-percent: 36.84210526315789%;"
                     >
                        
                     </div>
@@ -4408,7 +5141,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     <div
                       class="col-start-2 self-center text-nowrap pb-1 text-right font-sans text-xs text-subtle"
                     >
-                      29
+                      44
                     </div>
                   </div>
                   <div
@@ -4416,7 +5149,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="progress-bar-bg leading-[6px] tablet:mb-0"
-                      style="--bar-percent: 28.999999999999996%;"
+                      style="--bar-percent: 33.08270676691729%;"
                     >
                        
                     </div>

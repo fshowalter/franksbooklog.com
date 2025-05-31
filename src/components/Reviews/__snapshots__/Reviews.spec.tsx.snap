@@ -78,6 +78,54 @@ exports[`Reviews > can filter by kind 1`] = `
             </div>
           </div>
         </li>
+        <li
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="w-list-item-cover shrink-0"
+          >
+            <img
+              alt=""
+              class="aspect-cover"
+              decoding="async"
+              height="113"
+              loading="lazy"
+              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+              width="80"
+            />
+          </div>
+          <div
+            class="flex grow flex-col items-start gap-y-2 tablet:w-full tablet:pr-4"
+          >
+            <a
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              href="/reviews/refugee-by-piers-anthony/"
+            >
+              Refugee
+            </a>
+            <div
+              class="font-sans text-xs leading-4 text-muted"
+            >
+              Piers Anthony
+            </div>
+            <div
+              class="bg-abandoned p-1 font-sans text-xxs font-semibold uppercase text-[#fff] tablet:my-1"
+            >
+              Abandoned
+            </div>
+            <div
+              class="font-sans text-xs font-light leading-4 text-subtle"
+            >
+              <span>
+                Novel
+                 | 
+              </span>
+              1983
+            </div>
+          </div>
+        </li>
       </ol>
     </div>
   </li>
@@ -1732,6 +1780,62 @@ exports[`Reviews > can filter by kind 1`] = `
             </div>
           </div>
         </li>
+        <li
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="w-list-item-cover shrink-0"
+          >
+            <img
+              alt=""
+              class="aspect-cover"
+              decoding="async"
+              height="113"
+              loading="lazy"
+              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+              width="80"
+            />
+          </div>
+          <div
+            class="flex grow flex-col items-start gap-y-2 tablet:w-full tablet:pr-4"
+          >
+            <a
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              href="/reviews/the-devils-of-d-day-by-graham-masterton/"
+            >
+              The Devils of D-Day
+            </a>
+            <div
+              class="font-sans text-xs leading-4 text-muted"
+            >
+              Graham Masterton
+            </div>
+            <picture>
+              <source
+                media="(prefers-color-scheme: dark)"
+                srcset="/svg/4-stars-dark.svg"
+              />
+              <img
+                alt="B: 4 stars (out of 5)"
+                class="mb-1"
+                height="16"
+                src="/svg/4-stars.svg"
+                width="80"
+              />
+            </picture>
+            <div
+              class="font-sans text-xs font-light leading-4 text-subtle"
+            >
+              <span>
+                Novel
+                 | 
+              </span>
+              1978
+            </div>
+          </div>
+        </li>
       </ol>
     </div>
   </li>
@@ -2287,6 +2391,54 @@ exports[`Reviews > can filter by kind then show all 1`] = `
                  | 
               </span>
               1996
+            </div>
+          </div>
+        </li>
+        <li
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="w-list-item-cover shrink-0"
+          >
+            <img
+              alt=""
+              class="aspect-cover"
+              decoding="async"
+              height="113"
+              loading="lazy"
+              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+              width="80"
+            />
+          </div>
+          <div
+            class="flex grow flex-col items-start gap-y-2 tablet:w-full tablet:pr-4"
+          >
+            <a
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              href="/reviews/refugee-by-piers-anthony/"
+            >
+              Refugee
+            </a>
+            <div
+              class="font-sans text-xs leading-4 text-muted"
+            >
+              Piers Anthony
+            </div>
+            <div
+              class="bg-abandoned p-1 font-sans text-xxs font-semibold uppercase text-[#fff] tablet:my-1"
+            >
+              Abandoned
+            </div>
+            <div
+              class="font-sans text-xs font-light leading-4 text-subtle"
+            >
+              <span>
+                Novel
+                 | 
+              </span>
+              1983
             </div>
           </div>
         </li>
@@ -5245,6 +5397,62 @@ exports[`Reviews > can filter by kind then show all 1`] = `
               height="113"
               loading="lazy"
               sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+              width="80"
+            />
+          </div>
+          <div
+            class="flex grow flex-col items-start gap-y-2 tablet:w-full tablet:pr-4"
+          >
+            <a
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              href="/reviews/the-lonely-one-by-richard-laymon/"
+            >
+              The Lonely One
+            </a>
+            <div
+              class="font-sans text-xs leading-4 text-muted"
+            >
+              Richard Laymon
+            </div>
+            <picture>
+              <source
+                media="(prefers-color-scheme: dark)"
+                srcset="/svg/3-stars-dark.svg"
+              />
+              <img
+                alt="C+: 3 stars (out of 5)"
+                class="mb-1"
+                height="16"
+                src="/svg/3-stars.svg"
+                width="80"
+              />
+            </picture>
+            <div
+              class="font-sans text-xs font-light leading-4 text-subtle"
+            >
+              <span>
+                Short Story
+                 | 
+              </span>
+              1985
+            </div>
+          </div>
+        </li>
+        <li
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="w-list-item-cover shrink-0"
+          >
+            <img
+              alt=""
+              class="aspect-cover"
+              decoding="async"
+              height="113"
+              loading="lazy"
+              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
               src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
               srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
               width="80"
@@ -5585,6 +5793,62 @@ exports[`Reviews > can filter by kind then show all 1`] = `
                  | 
               </span>
               2016
+            </div>
+          </div>
+        </li>
+        <li
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="w-list-item-cover shrink-0"
+          >
+            <img
+              alt=""
+              class="aspect-cover"
+              decoding="async"
+              height="113"
+              loading="lazy"
+              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+              width="80"
+            />
+          </div>
+          <div
+            class="flex grow flex-col items-start gap-y-2 tablet:w-full tablet:pr-4"
+          >
+            <a
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              href="/reviews/the-devils-of-d-day-by-graham-masterton/"
+            >
+              The Devils of D-Day
+            </a>
+            <div
+              class="font-sans text-xs leading-4 text-muted"
+            >
+              Graham Masterton
+            </div>
+            <picture>
+              <source
+                media="(prefers-color-scheme: dark)"
+                srcset="/svg/4-stars-dark.svg"
+              />
+              <img
+                alt="B: 4 stars (out of 5)"
+                class="mb-1"
+                height="16"
+                src="/svg/4-stars.svg"
+                width="80"
+              />
+            </picture>
+            <div
+              class="font-sans text-xs font-light leading-4 text-subtle"
+            >
+              <span>
+                Novel
+                 | 
+              </span>
+              1978
             </div>
           </div>
         </li>
@@ -6993,6 +7257,74 @@ exports[`Reviews > can filter by year published 1`] = `
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
       >
+        A
+      </div>
+    </div>
+    <div
+      class="bg-subtle"
+    >
+      <ol>
+        <li
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="w-list-item-cover shrink-0"
+          >
+            <img
+              alt=""
+              class="aspect-cover"
+              decoding="async"
+              height="113"
+              loading="lazy"
+              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+              width="80"
+            />
+          </div>
+          <div
+            class="flex grow flex-col items-start gap-y-2 tablet:w-full tablet:pr-4"
+          >
+            <a
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              href="/reviews/refugee-by-piers-anthony/"
+            >
+              Refugee
+            </a>
+            <div
+              class="font-sans text-xs leading-4 text-muted"
+            >
+              Piers Anthony
+            </div>
+            <div
+              class="bg-abandoned p-1 font-sans text-xxs font-semibold uppercase text-[#fff] tablet:my-1"
+            >
+              Abandoned
+            </div>
+            <div
+              class="font-sans text-xs font-light leading-4 text-subtle"
+            >
+              <span>
+                Novel
+                 | 
+              </span>
+              1983
+            </div>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </li>
+  <li
+    class="block"
+  >
+    <div
+      class="pt-0 text-md"
+      style="z-index: 2;"
+    >
+      <div
+        class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+      >
         E
       </div>
     </div>
@@ -7120,7 +7452,7 @@ exports[`Reviews > can filter by year published 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 2;"
+      style="z-index: 3;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -7198,7 +7530,7 @@ exports[`Reviews > can filter by year published 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 3;"
+      style="z-index: 4;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -7274,7 +7606,7 @@ exports[`Reviews > can filter by year published 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 4;"
+      style="z-index: 5;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -7579,6 +7911,62 @@ exports[`Reviews > can filter by year published 1`] = `
               height="113"
               loading="lazy"
               sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+              width="80"
+            />
+          </div>
+          <div
+            class="flex grow flex-col items-start gap-y-2 tablet:w-full tablet:pr-4"
+          >
+            <a
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              href="/reviews/the-lonely-one-by-richard-laymon/"
+            >
+              The Lonely One
+            </a>
+            <div
+              class="font-sans text-xs leading-4 text-muted"
+            >
+              Richard Laymon
+            </div>
+            <picture>
+              <source
+                media="(prefers-color-scheme: dark)"
+                srcset="/svg/3-stars-dark.svg"
+              />
+              <img
+                alt="C+: 3 stars (out of 5)"
+                class="mb-1"
+                height="16"
+                src="/svg/3-stars.svg"
+                width="80"
+              />
+            </picture>
+            <div
+              class="font-sans text-xs font-light leading-4 text-subtle"
+            >
+              <span>
+                Short Story
+                 | 
+              </span>
+              1985
+            </div>
+          </div>
+        </li>
+        <li
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="w-list-item-cover shrink-0"
+          >
+            <img
+              alt=""
+              class="aspect-cover"
+              decoding="async"
+              height="113"
+              loading="lazy"
+              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
               src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
               srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
               width="80"
@@ -7686,7 +8074,7 @@ exports[`Reviews > can filter by year published 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 5;"
+      style="z-index: 6;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -7837,6 +8225,54 @@ exports[`Reviews > can filter by year published reversed 1`] = `
                  | 
               </span>
               1996
+            </div>
+          </div>
+        </li>
+        <li
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="w-list-item-cover shrink-0"
+          >
+            <img
+              alt=""
+              class="aspect-cover"
+              decoding="async"
+              height="113"
+              loading="lazy"
+              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+              width="80"
+            />
+          </div>
+          <div
+            class="flex grow flex-col items-start gap-y-2 tablet:w-full tablet:pr-4"
+          >
+            <a
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              href="/reviews/refugee-by-piers-anthony/"
+            >
+              Refugee
+            </a>
+            <div
+              class="font-sans text-xs leading-4 text-muted"
+            >
+              Piers Anthony
+            </div>
+            <div
+              class="bg-abandoned p-1 font-sans text-xxs font-semibold uppercase text-[#fff] tablet:my-1"
+            >
+              Abandoned
+            </div>
+            <div
+              class="font-sans text-xs font-light leading-4 text-subtle"
+            >
+              <span>
+                Novel
+                 | 
+              </span>
+              1983
             </div>
           </div>
         </li>
@@ -8927,6 +9363,62 @@ exports[`Reviews > can filter by year published reversed 1`] = `
               height="113"
               loading="lazy"
               sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+              width="80"
+            />
+          </div>
+          <div
+            class="flex grow flex-col items-start gap-y-2 tablet:w-full tablet:pr-4"
+          >
+            <a
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              href="/reviews/the-lonely-one-by-richard-laymon/"
+            >
+              The Lonely One
+            </a>
+            <div
+              class="font-sans text-xs leading-4 text-muted"
+            >
+              Richard Laymon
+            </div>
+            <picture>
+              <source
+                media="(prefers-color-scheme: dark)"
+                srcset="/svg/3-stars-dark.svg"
+              />
+              <img
+                alt="C+: 3 stars (out of 5)"
+                class="mb-1"
+                height="16"
+                src="/svg/3-stars.svg"
+                width="80"
+              />
+            </picture>
+            <div
+              class="font-sans text-xs font-light leading-4 text-subtle"
+            >
+              <span>
+                Short Story
+                 | 
+              </span>
+              1985
+            </div>
+          </div>
+        </li>
+        <li
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="w-list-item-cover shrink-0"
+          >
+            <img
+              alt=""
+              class="aspect-cover"
+              decoding="async"
+              height="113"
+              loading="lazy"
+              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
               src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
               srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
               width="80"
@@ -9046,6 +9538,62 @@ exports[`Reviews > can filter by year published reversed 1`] = `
       class="bg-subtle"
     >
       <ol>
+        <li
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="w-list-item-cover shrink-0"
+          >
+            <img
+              alt=""
+              class="aspect-cover"
+              decoding="async"
+              height="113"
+              loading="lazy"
+              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+              width="80"
+            />
+          </div>
+          <div
+            class="flex grow flex-col items-start gap-y-2 tablet:w-full tablet:pr-4"
+          >
+            <a
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              href="/reviews/the-devils-of-d-day-by-graham-masterton/"
+            >
+              The Devils of D-Day
+            </a>
+            <div
+              class="font-sans text-xs leading-4 text-muted"
+            >
+              Graham Masterton
+            </div>
+            <picture>
+              <source
+                media="(prefers-color-scheme: dark)"
+                srcset="/svg/4-stars-dark.svg"
+              />
+              <img
+                alt="B: 4 stars (out of 5)"
+                class="mb-1"
+                height="16"
+                src="/svg/4-stars.svg"
+                width="80"
+              />
+            </picture>
+            <div
+              class="font-sans text-xs font-light leading-4 text-subtle"
+            >
+              <span>
+                Novel
+                 | 
+              </span>
+              1978
+            </div>
+          </div>
+        </li>
         <li
           class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
         >
@@ -16753,6 +17301,62 @@ exports[`Reviews > can sort by author z->a 1`] = `
               height="113"
               loading="lazy"
               sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+              width="80"
+            />
+          </div>
+          <div
+            class="flex grow flex-col items-start gap-y-2 tablet:w-full tablet:pr-4"
+          >
+            <a
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              href="/reviews/the-devils-of-d-day-by-graham-masterton/"
+            >
+              The Devils of D-Day
+            </a>
+            <div
+              class="font-sans text-xs leading-4 text-muted"
+            >
+              Graham Masterton
+            </div>
+            <picture>
+              <source
+                media="(prefers-color-scheme: dark)"
+                srcset="/svg/4-stars-dark.svg"
+              />
+              <img
+                alt="B: 4 stars (out of 5)"
+                class="mb-1"
+                height="16"
+                src="/svg/4-stars.svg"
+                width="80"
+              />
+            </picture>
+            <div
+              class="font-sans text-xs font-light leading-4 text-subtle"
+            >
+              <span>
+                Novel
+                 | 
+              </span>
+              1978
+            </div>
+          </div>
+        </li>
+        <li
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="w-list-item-cover shrink-0"
+          >
+            <img
+              alt=""
+              class="aspect-cover"
+              decoding="async"
+              height="113"
+              loading="lazy"
+              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
               src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fset-the-boy-free-by-johnny-marr.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
               srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fset-the-boy-free-by-johnny-marr.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fset-the-boy-free-by-johnny-marr.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fset-the-boy-free-by-johnny-marr.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fset-the-boy-free-by-johnny-marr.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
               width="80"
@@ -17362,6 +17966,62 @@ exports[`Reviews > can sort by author z->a 1`] = `
                 class="mb-1"
                 height="16"
                 src="/svg/2-stars.svg"
+                width="80"
+              />
+            </picture>
+            <div
+              class="font-sans text-xs font-light leading-4 text-subtle"
+            >
+              <span>
+                Short Story
+                 | 
+              </span>
+              1985
+            </div>
+          </div>
+        </li>
+        <li
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="w-list-item-cover shrink-0"
+          >
+            <img
+              alt=""
+              class="aspect-cover"
+              decoding="async"
+              height="113"
+              loading="lazy"
+              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+              width="80"
+            />
+          </div>
+          <div
+            class="flex grow flex-col items-start gap-y-2 tablet:w-full tablet:pr-4"
+          >
+            <a
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              href="/reviews/the-lonely-one-by-richard-laymon/"
+            >
+              The Lonely One
+            </a>
+            <div
+              class="font-sans text-xs leading-4 text-muted"
+            >
+              Richard Laymon
+            </div>
+            <picture>
+              <source
+                media="(prefers-color-scheme: dark)"
+                srcset="/svg/3-stars-dark.svg"
+              />
+              <img
+                alt="C+: 3 stars (out of 5)"
+                class="mb-1"
+                height="16"
+                src="/svg/3-stars.svg"
                 width="80"
               />
             </picture>
@@ -20051,6 +20711,54 @@ exports[`Reviews > can sort by author z->a 1`] = `
               height="113"
               loading="lazy"
               sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+              width="80"
+            />
+          </div>
+          <div
+            class="flex grow flex-col items-start gap-y-2 tablet:w-full tablet:pr-4"
+          >
+            <a
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              href="/reviews/refugee-by-piers-anthony/"
+            >
+              Refugee
+            </a>
+            <div
+              class="font-sans text-xs leading-4 text-muted"
+            >
+              Piers Anthony
+            </div>
+            <div
+              class="bg-abandoned p-1 font-sans text-xxs font-semibold uppercase text-[#fff] tablet:my-1"
+            >
+              Abandoned
+            </div>
+            <div
+              class="font-sans text-xs font-light leading-4 text-subtle"
+            >
+              <span>
+                Novel
+                 | 
+              </span>
+              1983
+            </div>
+          </div>
+        </li>
+        <li
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="w-list-item-cover shrink-0"
+          >
+            <img
+              alt=""
+              class="aspect-cover"
+              decoding="async"
+              height="113"
+              loading="lazy"
+              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
               src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftrue-myths-by-nigel-andrews.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
               srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftrue-myths-by-nigel-andrews.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftrue-myths-by-nigel-andrews.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftrue-myths-by-nigel-andrews.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftrue-myths-by-nigel-andrews.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
               width="80"
@@ -20171,6 +20879,82 @@ exports[`Reviews > can sort by date reviewed with newest first 1`] = `
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
       >
+        February 2025
+      </div>
+    </div>
+    <div
+      class="bg-subtle"
+    >
+      <ol>
+        <li
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="w-list-item-cover shrink-0"
+          >
+            <img
+              alt=""
+              class="aspect-cover"
+              decoding="async"
+              height="113"
+              loading="lazy"
+              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+              width="80"
+            />
+          </div>
+          <div
+            class="flex grow flex-col items-start gap-y-2 tablet:w-full tablet:pr-4"
+          >
+            <a
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              href="/reviews/the-lonely-one-by-richard-laymon/"
+            >
+              The Lonely One
+            </a>
+            <div
+              class="font-sans text-xs leading-4 text-muted"
+            >
+              Richard Laymon
+            </div>
+            <picture>
+              <source
+                media="(prefers-color-scheme: dark)"
+                srcset="/svg/3-stars-dark.svg"
+              />
+              <img
+                alt="C+: 3 stars (out of 5)"
+                class="mb-1"
+                height="16"
+                src="/svg/3-stars.svg"
+                width="80"
+              />
+            </picture>
+            <div
+              class="font-sans text-xs font-light leading-4 text-subtle"
+            >
+              <span>
+                Short Story
+                 | 
+              </span>
+              1985
+            </div>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </li>
+  <li
+    class="block"
+  >
+    <div
+      class="pt-0 text-md"
+      style="z-index: 2;"
+    >
+      <div
+        class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+      >
         December 2024
       </div>
     </div>
@@ -20242,7 +21026,7 @@ exports[`Reviews > can sort by date reviewed with newest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 2;"
+      style="z-index: 3;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -20318,7 +21102,7 @@ exports[`Reviews > can sort by date reviewed with newest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 3;"
+      style="z-index: 4;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -20394,7 +21178,7 @@ exports[`Reviews > can sort by date reviewed with newest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 4;"
+      style="z-index: 5;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -20470,7 +21254,7 @@ exports[`Reviews > can sort by date reviewed with newest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 5;"
+      style="z-index: 6;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -20546,7 +21330,7 @@ exports[`Reviews > can sort by date reviewed with newest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 6;"
+      style="z-index: 7;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -20680,7 +21464,7 @@ exports[`Reviews > can sort by date reviewed with newest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 7;"
+      style="z-index: 8;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -20868,7 +21652,7 @@ exports[`Reviews > can sort by date reviewed with newest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 8;"
+      style="z-index: 9;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -21114,7 +21898,7 @@ exports[`Reviews > can sort by date reviewed with newest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 9;"
+      style="z-index: 10;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -21526,7 +22310,7 @@ exports[`Reviews > can sort by date reviewed with newest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 10;"
+      style="z-index: 11;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -22052,7 +22836,7 @@ exports[`Reviews > can sort by date reviewed with newest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 11;"
+      style="z-index: 12;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -22464,7 +23248,7 @@ exports[`Reviews > can sort by date reviewed with newest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 12;"
+      style="z-index: 13;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -22814,7 +23598,7 @@ exports[`Reviews > can sort by date reviewed with newest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 13;"
+      style="z-index: 14;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -23058,7 +23842,7 @@ exports[`Reviews > can sort by date reviewed with newest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 14;"
+      style="z-index: 15;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -23694,7 +24478,7 @@ exports[`Reviews > can sort by date reviewed with newest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 15;"
+      style="z-index: 16;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -23938,7 +24722,7 @@ exports[`Reviews > can sort by date reviewed with newest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 16;"
+      style="z-index: 17;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -24014,7 +24798,131 @@ exports[`Reviews > can sort by date reviewed with newest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 17;"
+      style="z-index: 18;"
+    >
+      <div
+        class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+      >
+        January 2016
+      </div>
+    </div>
+    <div
+      class="bg-subtle"
+    >
+      <ol>
+        <li
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="w-list-item-cover shrink-0"
+          >
+            <img
+              alt=""
+              class="aspect-cover"
+              decoding="async"
+              height="113"
+              loading="lazy"
+              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+              width="80"
+            />
+          </div>
+          <div
+            class="flex grow flex-col items-start gap-y-2 tablet:w-full tablet:pr-4"
+          >
+            <a
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              href="/reviews/refugee-by-piers-anthony/"
+            >
+              Refugee
+            </a>
+            <div
+              class="font-sans text-xs leading-4 text-muted"
+            >
+              Piers Anthony
+            </div>
+            <div
+              class="bg-abandoned p-1 font-sans text-xxs font-semibold uppercase text-[#fff] tablet:my-1"
+            >
+              Abandoned
+            </div>
+            <div
+              class="font-sans text-xs font-light leading-4 text-subtle"
+            >
+              <span>
+                Novel
+                 | 
+              </span>
+              1983
+            </div>
+          </div>
+        </li>
+        <li
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="w-list-item-cover shrink-0"
+          >
+            <img
+              alt=""
+              class="aspect-cover"
+              decoding="async"
+              height="113"
+              loading="lazy"
+              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+              width="80"
+            />
+          </div>
+          <div
+            class="flex grow flex-col items-start gap-y-2 tablet:w-full tablet:pr-4"
+          >
+            <a
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              href="/reviews/the-devils-of-d-day-by-graham-masterton/"
+            >
+              The Devils of D-Day
+            </a>
+            <div
+              class="font-sans text-xs leading-4 text-muted"
+            >
+              Graham Masterton
+            </div>
+            <picture>
+              <source
+                media="(prefers-color-scheme: dark)"
+                srcset="/svg/4-stars-dark.svg"
+              />
+              <img
+                alt="B: 4 stars (out of 5)"
+                class="mb-1"
+                height="16"
+                src="/svg/4-stars.svg"
+                width="80"
+              />
+            </picture>
+            <div
+              class="font-sans text-xs font-light leading-4 text-subtle"
+            >
+              <span>
+                Novel
+                 | 
+              </span>
+              1978
+            </div>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </li>
+  <li
+    class="block"
+  >
+    <div
+      class="pt-0 text-md"
+      style="z-index: 19;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -24090,7 +24998,7 @@ exports[`Reviews > can sort by date reviewed with newest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 18;"
+      style="z-index: 20;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -24166,7 +25074,7 @@ exports[`Reviews > can sort by date reviewed with newest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 19;"
+      style="z-index: 21;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -24298,7 +25206,7 @@ exports[`Reviews > can sort by date reviewed with newest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 20;"
+      style="z-index: 22;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -24430,7 +25338,7 @@ exports[`Reviews > can sort by date reviewed with newest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 21;"
+      style="z-index: 23;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -24562,7 +25470,7 @@ exports[`Reviews > can sort by date reviewed with newest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 22;"
+      style="z-index: 24;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -24694,7 +25602,7 @@ exports[`Reviews > can sort by date reviewed with newest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 23;"
+      style="z-index: 25;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -24772,7 +25680,7 @@ exports[`Reviews > can sort by date reviewed with newest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 24;"
+      style="z-index: 26;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -26031,6 +26939,130 @@ exports[`Reviews > can sort by date reviewed with oldest first 1`] = `
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
       >
+        January 2016
+      </div>
+    </div>
+    <div
+      class="bg-subtle"
+    >
+      <ol>
+        <li
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="w-list-item-cover shrink-0"
+          >
+            <img
+              alt=""
+              class="aspect-cover"
+              decoding="async"
+              height="113"
+              loading="lazy"
+              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+              width="80"
+            />
+          </div>
+          <div
+            class="flex grow flex-col items-start gap-y-2 tablet:w-full tablet:pr-4"
+          >
+            <a
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              href="/reviews/the-devils-of-d-day-by-graham-masterton/"
+            >
+              The Devils of D-Day
+            </a>
+            <div
+              class="font-sans text-xs leading-4 text-muted"
+            >
+              Graham Masterton
+            </div>
+            <picture>
+              <source
+                media="(prefers-color-scheme: dark)"
+                srcset="/svg/4-stars-dark.svg"
+              />
+              <img
+                alt="B: 4 stars (out of 5)"
+                class="mb-1"
+                height="16"
+                src="/svg/4-stars.svg"
+                width="80"
+              />
+            </picture>
+            <div
+              class="font-sans text-xs font-light leading-4 text-subtle"
+            >
+              <span>
+                Novel
+                 | 
+              </span>
+              1978
+            </div>
+          </div>
+        </li>
+        <li
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="w-list-item-cover shrink-0"
+          >
+            <img
+              alt=""
+              class="aspect-cover"
+              decoding="async"
+              height="113"
+              loading="lazy"
+              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+              width="80"
+            />
+          </div>
+          <div
+            class="flex grow flex-col items-start gap-y-2 tablet:w-full tablet:pr-4"
+          >
+            <a
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              href="/reviews/refugee-by-piers-anthony/"
+            >
+              Refugee
+            </a>
+            <div
+              class="font-sans text-xs leading-4 text-muted"
+            >
+              Piers Anthony
+            </div>
+            <div
+              class="bg-abandoned p-1 font-sans text-xxs font-semibold uppercase text-[#fff] tablet:my-1"
+            >
+              Abandoned
+            </div>
+            <div
+              class="font-sans text-xs font-light leading-4 text-subtle"
+            >
+              <span>
+                Novel
+                 | 
+              </span>
+              1983
+            </div>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </li>
+  <li
+    class="block"
+  >
+    <div
+      class="pt-0 text-md"
+      style="z-index: 10;"
+    >
+      <div
+        class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+      >
         February 2017
       </div>
     </div>
@@ -26102,7 +27134,7 @@ exports[`Reviews > can sort by date reviewed with oldest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 10;"
+      style="z-index: 11;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -26346,7 +27378,7 @@ exports[`Reviews > can sort by date reviewed with oldest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 11;"
+      style="z-index: 12;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -26982,7 +28014,7 @@ exports[`Reviews > can sort by date reviewed with oldest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 12;"
+      style="z-index: 13;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -27226,7 +28258,7 @@ exports[`Reviews > can sort by date reviewed with oldest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 13;"
+      style="z-index: 14;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -27576,7 +28608,7 @@ exports[`Reviews > can sort by date reviewed with oldest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 14;"
+      style="z-index: 15;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -27988,7 +29020,7 @@ exports[`Reviews > can sort by date reviewed with oldest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 15;"
+      style="z-index: 16;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -28514,7 +29546,7 @@ exports[`Reviews > can sort by date reviewed with oldest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 16;"
+      style="z-index: 17;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -28926,7 +29958,7 @@ exports[`Reviews > can sort by date reviewed with oldest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 17;"
+      style="z-index: 18;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -29172,7 +30204,7 @@ exports[`Reviews > can sort by date reviewed with oldest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 18;"
+      style="z-index: 19;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -29360,7 +30392,7 @@ exports[`Reviews > can sort by date reviewed with oldest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 19;"
+      style="z-index: 20;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -29494,7 +30526,7 @@ exports[`Reviews > can sort by date reviewed with oldest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 20;"
+      style="z-index: 21;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -29570,7 +30602,7 @@ exports[`Reviews > can sort by date reviewed with oldest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 21;"
+      style="z-index: 22;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -29646,7 +30678,7 @@ exports[`Reviews > can sort by date reviewed with oldest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 22;"
+      style="z-index: 23;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -29722,7 +30754,7 @@ exports[`Reviews > can sort by date reviewed with oldest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 23;"
+      style="z-index: 24;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -29798,7 +30830,7 @@ exports[`Reviews > can sort by date reviewed with oldest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 24;"
+      style="z-index: 25;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -29863,6 +30895,82 @@ exports[`Reviews > can sort by date reviewed with oldest first 1`] = `
                  | 
               </span>
               1979
+            </div>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </li>
+  <li
+    class="block"
+  >
+    <div
+      class="pt-0 text-md"
+      style="z-index: 26;"
+    >
+      <div
+        class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+      >
+        February 2025
+      </div>
+    </div>
+    <div
+      class="bg-subtle"
+    >
+      <ol>
+        <li
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="w-list-item-cover shrink-0"
+          >
+            <img
+              alt=""
+              class="aspect-cover"
+              decoding="async"
+              height="113"
+              loading="lazy"
+              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+              width="80"
+            />
+          </div>
+          <div
+            class="flex grow flex-col items-start gap-y-2 tablet:w-full tablet:pr-4"
+          >
+            <a
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              href="/reviews/the-lonely-one-by-richard-laymon/"
+            >
+              The Lonely One
+            </a>
+            <div
+              class="font-sans text-xs leading-4 text-muted"
+            >
+              Richard Laymon
+            </div>
+            <picture>
+              <source
+                media="(prefers-color-scheme: dark)"
+                srcset="/svg/3-stars-dark.svg"
+              />
+              <img
+                alt="C+: 3 stars (out of 5)"
+                class="mb-1"
+                height="16"
+                src="/svg/3-stars.svg"
+                width="80"
+              />
+            </picture>
+            <div
+              class="font-sans text-xs font-light leading-4 text-subtle"
+            >
+              <span>
+                Short Story
+                 | 
+              </span>
+              1985
             </div>
           </div>
         </li>
@@ -31541,6 +32649,62 @@ exports[`Reviews > can sort by grade with best first 1`] = `
               height="113"
               loading="lazy"
               sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+              width="80"
+            />
+          </div>
+          <div
+            class="flex grow flex-col items-start gap-y-2 tablet:w-full tablet:pr-4"
+          >
+            <a
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              href="/reviews/the-devils-of-d-day-by-graham-masterton/"
+            >
+              The Devils of D-Day
+            </a>
+            <div
+              class="font-sans text-xs leading-4 text-muted"
+            >
+              Graham Masterton
+            </div>
+            <picture>
+              <source
+                media="(prefers-color-scheme: dark)"
+                srcset="/svg/4-stars-dark.svg"
+              />
+              <img
+                alt="B: 4 stars (out of 5)"
+                class="mb-1"
+                height="16"
+                src="/svg/4-stars.svg"
+                width="80"
+              />
+            </picture>
+            <div
+              class="font-sans text-xs font-light leading-4 text-subtle"
+            >
+              <span>
+                Novel
+                 | 
+              </span>
+              1978
+            </div>
+          </div>
+        </li>
+        <li
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="w-list-item-cover shrink-0"
+          >
+            <img
+              alt=""
+              class="aspect-cover"
+              decoding="async"
+              height="113"
+              loading="lazy"
+              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
               src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-shining-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
               srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-shining-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-shining-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-shining-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-shining-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
               width="80"
@@ -32519,6 +33683,62 @@ exports[`Reviews > can sort by grade with best first 1`] = `
                  | 
               </span>
               1987
+            </div>
+          </div>
+        </li>
+        <li
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="w-list-item-cover shrink-0"
+          >
+            <img
+              alt=""
+              class="aspect-cover"
+              decoding="async"
+              height="113"
+              loading="lazy"
+              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+              width="80"
+            />
+          </div>
+          <div
+            class="flex grow flex-col items-start gap-y-2 tablet:w-full tablet:pr-4"
+          >
+            <a
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              href="/reviews/the-lonely-one-by-richard-laymon/"
+            >
+              The Lonely One
+            </a>
+            <div
+              class="font-sans text-xs leading-4 text-muted"
+            >
+              Richard Laymon
+            </div>
+            <picture>
+              <source
+                media="(prefers-color-scheme: dark)"
+                srcset="/svg/3-stars-dark.svg"
+              />
+              <img
+                alt="C+: 3 stars (out of 5)"
+                class="mb-1"
+                height="16"
+                src="/svg/3-stars.svg"
+                width="80"
+              />
+            </picture>
+            <div
+              class="font-sans text-xs font-light leading-4 text-subtle"
+            >
+              <span>
+                Short Story
+                 | 
+              </span>
+              1985
             </div>
           </div>
         </li>
@@ -34484,6 +35704,54 @@ exports[`Reviews > can sort by grade with best first 1`] = `
             </div>
           </div>
         </li>
+        <li
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="w-list-item-cover shrink-0"
+          >
+            <img
+              alt=""
+              class="aspect-cover"
+              decoding="async"
+              height="113"
+              loading="lazy"
+              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+              width="80"
+            />
+          </div>
+          <div
+            class="flex grow flex-col items-start gap-y-2 tablet:w-full tablet:pr-4"
+          >
+            <a
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              href="/reviews/refugee-by-piers-anthony/"
+            >
+              Refugee
+            </a>
+            <div
+              class="font-sans text-xs leading-4 text-muted"
+            >
+              Piers Anthony
+            </div>
+            <div
+              class="bg-abandoned p-1 font-sans text-xxs font-semibold uppercase text-[#fff] tablet:my-1"
+            >
+              Abandoned
+            </div>
+            <div
+              class="font-sans text-xs font-light leading-4 text-subtle"
+            >
+              <span>
+                Novel
+                 | 
+              </span>
+              1983
+            </div>
+          </div>
+        </li>
       </ol>
     </div>
   </li>
@@ -34557,6 +35825,54 @@ exports[`Reviews > can sort by grade with worst first 1`] = `
                  | 
               </span>
               2015
+            </div>
+          </div>
+        </li>
+        <li
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="w-list-item-cover shrink-0"
+          >
+            <img
+              alt=""
+              class="aspect-cover"
+              decoding="async"
+              height="113"
+              loading="lazy"
+              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+              width="80"
+            />
+          </div>
+          <div
+            class="flex grow flex-col items-start gap-y-2 tablet:w-full tablet:pr-4"
+          >
+            <a
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              href="/reviews/refugee-by-piers-anthony/"
+            >
+              Refugee
+            </a>
+            <div
+              class="font-sans text-xs leading-4 text-muted"
+            >
+              Piers Anthony
+            </div>
+            <div
+              class="bg-abandoned p-1 font-sans text-xxs font-semibold uppercase text-[#fff] tablet:my-1"
+            >
+              Abandoned
+            </div>
+            <div
+              class="font-sans text-xs font-light leading-4 text-subtle"
+            >
+              <span>
+                Novel
+                 | 
+              </span>
+              1983
             </div>
           </div>
         </li>
@@ -36825,6 +38141,62 @@ exports[`Reviews > can sort by grade with worst first 1`] = `
               height="113"
               loading="lazy"
               sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+              width="80"
+            />
+          </div>
+          <div
+            class="flex grow flex-col items-start gap-y-2 tablet:w-full tablet:pr-4"
+          >
+            <a
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              href="/reviews/the-lonely-one-by-richard-laymon/"
+            >
+              The Lonely One
+            </a>
+            <div
+              class="font-sans text-xs leading-4 text-muted"
+            >
+              Richard Laymon
+            </div>
+            <picture>
+              <source
+                media="(prefers-color-scheme: dark)"
+                srcset="/svg/3-stars-dark.svg"
+              />
+              <img
+                alt="C+: 3 stars (out of 5)"
+                class="mb-1"
+                height="16"
+                src="/svg/3-stars.svg"
+                width="80"
+              />
+            </picture>
+            <div
+              class="font-sans text-xs font-light leading-4 text-subtle"
+            >
+              <span>
+                Short Story
+                 | 
+              </span>
+              1985
+            </div>
+          </div>
+        </li>
+        <li
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="w-list-item-cover shrink-0"
+          >
+            <img
+              alt=""
+              class="aspect-cover"
+              decoding="async"
+              height="113"
+              loading="lazy"
+              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
               src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
               srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
               width="80"
@@ -37856,6 +39228,62 @@ exports[`Reviews > can sort by grade with worst first 1`] = `
             >
               <span>
                 Collection
+                 | 
+              </span>
+              1978
+            </div>
+          </div>
+        </li>
+        <li
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="w-list-item-cover shrink-0"
+          >
+            <img
+              alt=""
+              class="aspect-cover"
+              decoding="async"
+              height="113"
+              loading="lazy"
+              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+              width="80"
+            />
+          </div>
+          <div
+            class="flex grow flex-col items-start gap-y-2 tablet:w-full tablet:pr-4"
+          >
+            <a
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              href="/reviews/the-devils-of-d-day-by-graham-masterton/"
+            >
+              The Devils of D-Day
+            </a>
+            <div
+              class="font-sans text-xs leading-4 text-muted"
+            >
+              Graham Masterton
+            </div>
+            <picture>
+              <source
+                media="(prefers-color-scheme: dark)"
+                srcset="/svg/4-stars-dark.svg"
+              />
+              <img
+                alt="B: 4 stars (out of 5)"
+                class="mb-1"
+                height="16"
+                src="/svg/4-stars.svg"
+                width="80"
+              />
+            </picture>
+            <div
+              class="font-sans text-xs font-light leading-4 text-subtle"
+            >
+              <span>
+                Novel
                  | 
               </span>
               1978
@@ -40681,6 +42109,62 @@ exports[`Reviews > can sort by title a->z 1`] = `
               height="113"
               loading="lazy"
               sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+              width="80"
+            />
+          </div>
+          <div
+            class="flex grow flex-col items-start gap-y-2 tablet:w-full tablet:pr-4"
+          >
+            <a
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              href="/reviews/the-devils-of-d-day-by-graham-masterton/"
+            >
+              The Devils of D-Day
+            </a>
+            <div
+              class="font-sans text-xs leading-4 text-muted"
+            >
+              Graham Masterton
+            </div>
+            <picture>
+              <source
+                media="(prefers-color-scheme: dark)"
+                srcset="/svg/4-stars-dark.svg"
+              />
+              <img
+                alt="B: 4 stars (out of 5)"
+                class="mb-1"
+                height="16"
+                src="/svg/4-stars.svg"
+                width="80"
+              />
+            </picture>
+            <div
+              class="font-sans text-xs font-light leading-4 text-subtle"
+            >
+              <span>
+                Novel
+                 | 
+              </span>
+              1978
+            </div>
+          </div>
+        </li>
+        <li
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="w-list-item-cover shrink-0"
+          >
+            <img
+              alt=""
+              class="aspect-cover"
+              decoding="async"
+              height="113"
+              loading="lazy"
+              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
               src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdoctor-sleep-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
               srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdoctor-sleep-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdoctor-sleep-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdoctor-sleep-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdoctor-sleep-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
               width="80"
@@ -42031,6 +43515,62 @@ exports[`Reviews > can sort by title a->z 1`] = `
               height="113"
               loading="lazy"
               sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+              width="80"
+            />
+          </div>
+          <div
+            class="flex grow flex-col items-start gap-y-2 tablet:w-full tablet:pr-4"
+          >
+            <a
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              href="/reviews/the-lonely-one-by-richard-laymon/"
+            >
+              The Lonely One
+            </a>
+            <div
+              class="font-sans text-xs leading-4 text-muted"
+            >
+              Richard Laymon
+            </div>
+            <picture>
+              <source
+                media="(prefers-color-scheme: dark)"
+                srcset="/svg/3-stars-dark.svg"
+              />
+              <img
+                alt="C+: 3 stars (out of 5)"
+                class="mb-1"
+                height="16"
+                src="/svg/3-stars.svg"
+                width="80"
+              />
+            </picture>
+            <div
+              class="font-sans text-xs font-light leading-4 text-subtle"
+            >
+              <span>
+                Short Story
+                 | 
+              </span>
+              1985
+            </div>
+          </div>
+        </li>
+        <li
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="w-list-item-cover shrink-0"
+          >
+            <img
+              alt=""
+              class="aspect-cover"
+              decoding="async"
+              height="113"
+              loading="lazy"
+              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
               src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-long-walk-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
               srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-long-walk-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-long-walk-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-long-walk-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-long-walk-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
               width="80"
@@ -42845,6 +44385,54 @@ exports[`Reviews > can sort by title a->z 1`] = `
                  | 
               </span>
               2019
+            </div>
+          </div>
+        </li>
+        <li
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="w-list-item-cover shrink-0"
+          >
+            <img
+              alt=""
+              class="aspect-cover"
+              decoding="async"
+              height="113"
+              loading="lazy"
+              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+              width="80"
+            />
+          </div>
+          <div
+            class="flex grow flex-col items-start gap-y-2 tablet:w-full tablet:pr-4"
+          >
+            <a
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              href="/reviews/refugee-by-piers-anthony/"
+            >
+              Refugee
+            </a>
+            <div
+              class="font-sans text-xs leading-4 text-muted"
+            >
+              Piers Anthony
+            </div>
+            <div
+              class="bg-abandoned p-1 font-sans text-xxs font-semibold uppercase text-[#fff] tablet:my-1"
+            >
+              Abandoned
+            </div>
+            <div
+              class="font-sans text-xs font-light leading-4 text-subtle"
+            >
+              <span>
+                Novel
+                 | 
+              </span>
+              1983
             </div>
           </div>
         </li>
@@ -45045,6 +46633,54 @@ exports[`Reviews > can sort by title z->a 1`] = `
               height="113"
               loading="lazy"
               sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+              width="80"
+            />
+          </div>
+          <div
+            class="flex grow flex-col items-start gap-y-2 tablet:w-full tablet:pr-4"
+          >
+            <a
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              href="/reviews/refugee-by-piers-anthony/"
+            >
+              Refugee
+            </a>
+            <div
+              class="font-sans text-xs leading-4 text-muted"
+            >
+              Piers Anthony
+            </div>
+            <div
+              class="bg-abandoned p-1 font-sans text-xxs font-semibold uppercase text-[#fff] tablet:my-1"
+            >
+              Abandoned
+            </div>
+            <div
+              class="font-sans text-xs font-light leading-4 text-subtle"
+            >
+              <span>
+                Novel
+                 | 
+              </span>
+              1983
+            </div>
+          </div>
+        </li>
+        <li
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="w-list-item-cover shrink-0"
+          >
+            <img
+              alt=""
+              class="aspect-cover"
+              decoding="async"
+              height="113"
+              loading="lazy"
+              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
               src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frecord-play-pause-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
               srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frecord-play-pause-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frecord-play-pause-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frecord-play-pause-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frecord-play-pause-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
               width="80"
@@ -45859,6 +47495,62 @@ exports[`Reviews > can sort by title z->a 1`] = `
                  | 
               </span>
               1978
+            </div>
+          </div>
+        </li>
+        <li
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="w-list-item-cover shrink-0"
+          >
+            <img
+              alt=""
+              class="aspect-cover"
+              decoding="async"
+              height="113"
+              loading="lazy"
+              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+              width="80"
+            />
+          </div>
+          <div
+            class="flex grow flex-col items-start gap-y-2 tablet:w-full tablet:pr-4"
+          >
+            <a
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              href="/reviews/the-lonely-one-by-richard-laymon/"
+            >
+              The Lonely One
+            </a>
+            <div
+              class="font-sans text-xs leading-4 text-muted"
+            >
+              Richard Laymon
+            </div>
+            <picture>
+              <source
+                media="(prefers-color-scheme: dark)"
+                srcset="/svg/3-stars-dark.svg"
+              />
+              <img
+                alt="C+: 3 stars (out of 5)"
+                class="mb-1"
+                height="16"
+                src="/svg/3-stars.svg"
+                width="80"
+              />
+            </picture>
+            <div
+              class="font-sans text-xs font-light leading-4 text-subtle"
+            >
+              <span>
+                Short Story
+                 | 
+              </span>
+              1985
             </div>
           </div>
         </li>
@@ -47209,6 +48901,62 @@ exports[`Reviews > can sort by title z->a 1`] = `
                  | 
               </span>
               2013
+            </div>
+          </div>
+        </li>
+        <li
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="w-list-item-cover shrink-0"
+          >
+            <img
+              alt=""
+              class="aspect-cover"
+              decoding="async"
+              height="113"
+              loading="lazy"
+              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+              width="80"
+            />
+          </div>
+          <div
+            class="flex grow flex-col items-start gap-y-2 tablet:w-full tablet:pr-4"
+          >
+            <a
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              href="/reviews/the-devils-of-d-day-by-graham-masterton/"
+            >
+              The Devils of D-Day
+            </a>
+            <div
+              class="font-sans text-xs leading-4 text-muted"
+            >
+              Graham Masterton
+            </div>
+            <picture>
+              <source
+                media="(prefers-color-scheme: dark)"
+                srcset="/svg/4-stars-dark.svg"
+              />
+              <img
+                alt="B: 4 stars (out of 5)"
+                class="mb-1"
+                height="16"
+                src="/svg/4-stars.svg"
+                width="80"
+              />
+            </picture>
+            <div
+              class="font-sans text-xs font-light leading-4 text-subtle"
+            >
+              <span>
+                Novel
+                 | 
+              </span>
+              1978
             </div>
           </div>
         </li>
@@ -51823,6 +53571,62 @@ exports[`Reviews > can sort by year published with newest first 1`] = `
               height="113"
               loading="lazy"
               sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+              width="80"
+            />
+          </div>
+          <div
+            class="flex grow flex-col items-start gap-y-2 tablet:w-full tablet:pr-4"
+          >
+            <a
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              href="/reviews/the-lonely-one-by-richard-laymon/"
+            >
+              The Lonely One
+            </a>
+            <div
+              class="font-sans text-xs leading-4 text-muted"
+            >
+              Richard Laymon
+            </div>
+            <picture>
+              <source
+                media="(prefers-color-scheme: dark)"
+                srcset="/svg/3-stars-dark.svg"
+              />
+              <img
+                alt="C+: 3 stars (out of 5)"
+                class="mb-1"
+                height="16"
+                src="/svg/3-stars.svg"
+                width="80"
+              />
+            </picture>
+            <div
+              class="font-sans text-xs font-light leading-4 text-subtle"
+            >
+              <span>
+                Short Story
+                 | 
+              </span>
+              1985
+            </div>
+          </div>
+        </li>
+        <li
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="w-list-item-cover shrink-0"
+          >
+            <img
+              alt=""
+              class="aspect-cover"
+              decoding="async"
+              height="113"
+              loading="lazy"
+              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
               src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fless-than-zero-by-bret-easton-ellis.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
               srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fless-than-zero-by-bret-easton-ellis.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fless-than-zero-by-bret-easton-ellis.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fless-than-zero-by-bret-easton-ellis.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fless-than-zero-by-bret-easton-ellis.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
               width="80"
@@ -52125,6 +53929,74 @@ exports[`Reviews > can sort by year published with newest first 1`] = `
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
       >
+        1983
+      </div>
+    </div>
+    <div
+      class="bg-subtle"
+    >
+      <ol>
+        <li
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="w-list-item-cover shrink-0"
+          >
+            <img
+              alt=""
+              class="aspect-cover"
+              decoding="async"
+              height="113"
+              loading="lazy"
+              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+              width="80"
+            />
+          </div>
+          <div
+            class="flex grow flex-col items-start gap-y-2 tablet:w-full tablet:pr-4"
+          >
+            <a
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              href="/reviews/refugee-by-piers-anthony/"
+            >
+              Refugee
+            </a>
+            <div
+              class="font-sans text-xs leading-4 text-muted"
+            >
+              Piers Anthony
+            </div>
+            <div
+              class="bg-abandoned p-1 font-sans text-xxs font-semibold uppercase text-[#fff] tablet:my-1"
+            >
+              Abandoned
+            </div>
+            <div
+              class="font-sans text-xs font-light leading-4 text-subtle"
+            >
+              <span>
+                Novel
+                 | 
+              </span>
+              1983
+            </div>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </li>
+  <li
+    class="block"
+  >
+    <div
+      class="pt-0 text-md"
+      style="z-index: 25;"
+    >
+      <div
+        class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+      >
         1982
       </div>
     </div>
@@ -52196,7 +54068,7 @@ exports[`Reviews > can sort by year published with newest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 25;"
+      style="z-index: 26;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -52328,7 +54200,7 @@ exports[`Reviews > can sort by year published with newest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 26;"
+      style="z-index: 27;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -52404,7 +54276,7 @@ exports[`Reviews > can sort by year published with newest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 27;"
+      style="z-index: 28;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -52536,7 +54408,7 @@ exports[`Reviews > can sort by year published with newest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 28;"
+      style="z-index: 29;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -52716,6 +54588,62 @@ exports[`Reviews > can sort by year published with newest first 1`] = `
             </div>
           </div>
         </li>
+        <li
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="w-list-item-cover shrink-0"
+          >
+            <img
+              alt=""
+              class="aspect-cover"
+              decoding="async"
+              height="113"
+              loading="lazy"
+              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+              width="80"
+            />
+          </div>
+          <div
+            class="flex grow flex-col items-start gap-y-2 tablet:w-full tablet:pr-4"
+          >
+            <a
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              href="/reviews/the-devils-of-d-day-by-graham-masterton/"
+            >
+              The Devils of D-Day
+            </a>
+            <div
+              class="font-sans text-xs leading-4 text-muted"
+            >
+              Graham Masterton
+            </div>
+            <picture>
+              <source
+                media="(prefers-color-scheme: dark)"
+                srcset="/svg/4-stars-dark.svg"
+              />
+              <img
+                alt="B: 4 stars (out of 5)"
+                class="mb-1"
+                height="16"
+                src="/svg/4-stars.svg"
+                width="80"
+              />
+            </picture>
+            <div
+              class="font-sans text-xs font-light leading-4 text-subtle"
+            >
+              <span>
+                Novel
+                 | 
+              </span>
+              1978
+            </div>
+          </div>
+        </li>
       </ol>
     </div>
   </li>
@@ -52724,7 +54652,7 @@ exports[`Reviews > can sort by year published with newest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 29;"
+      style="z-index: 30;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -52800,7 +54728,7 @@ exports[`Reviews > can sort by year published with newest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 30;"
+      style="z-index: 31;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -52932,7 +54860,7 @@ exports[`Reviews > can sort by year published with newest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 31;"
+      style="z-index: 32;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -53008,7 +54936,7 @@ exports[`Reviews > can sort by year published with newest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 32;"
+      style="z-index: 33;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -53140,7 +55068,7 @@ exports[`Reviews > can sort by year published with newest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 33;"
+      style="z-index: 34;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -53216,7 +55144,7 @@ exports[`Reviews > can sort by year published with newest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 34;"
+      style="z-index: 35;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -53292,7 +55220,7 @@ exports[`Reviews > can sort by year published with newest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 35;"
+      style="z-index: 36;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -53424,7 +55352,7 @@ exports[`Reviews > can sort by year published with newest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 36;"
+      style="z-index: 37;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -53500,7 +55428,7 @@ exports[`Reviews > can sort by year published with newest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 37;"
+      style="z-index: 38;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -53576,7 +55504,7 @@ exports[`Reviews > can sort by year published with newest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 38;"
+      style="z-index: 39;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -53652,7 +55580,7 @@ exports[`Reviews > can sort by year published with newest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 39;"
+      style="z-index: 40;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -53728,7 +55656,7 @@ exports[`Reviews > can sort by year published with newest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 40;"
+      style="z-index: 41;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -55072,6 +57000,62 @@ exports[`Reviews > can sort by year published with oldest first 1`] = `
             </div>
           </div>
         </li>
+        <li
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="w-list-item-cover shrink-0"
+          >
+            <img
+              alt=""
+              class="aspect-cover"
+              decoding="async"
+              height="113"
+              loading="lazy"
+              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+              width="80"
+            />
+          </div>
+          <div
+            class="flex grow flex-col items-start gap-y-2 tablet:w-full tablet:pr-4"
+          >
+            <a
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              href="/reviews/the-devils-of-d-day-by-graham-masterton/"
+            >
+              The Devils of D-Day
+            </a>
+            <div
+              class="font-sans text-xs leading-4 text-muted"
+            >
+              Graham Masterton
+            </div>
+            <picture>
+              <source
+                media="(prefers-color-scheme: dark)"
+                srcset="/svg/4-stars-dark.svg"
+              />
+              <img
+                alt="B: 4 stars (out of 5)"
+                class="mb-1"
+                height="16"
+                src="/svg/4-stars.svg"
+                width="80"
+              />
+            </picture>
+            <div
+              class="font-sans text-xs font-light leading-4 text-subtle"
+            >
+              <span>
+                Novel
+                 | 
+              </span>
+              1978
+            </div>
+          </div>
+        </li>
       </ol>
     </div>
   </li>
@@ -55501,6 +57485,74 @@ exports[`Reviews > can sort by year published with oldest first 1`] = `
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
       >
+        1983
+      </div>
+    </div>
+    <div
+      class="bg-subtle"
+    >
+      <ol>
+        <li
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="w-list-item-cover shrink-0"
+          >
+            <img
+              alt=""
+              class="aspect-cover"
+              decoding="async"
+              height="113"
+              loading="lazy"
+              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+              width="80"
+            />
+          </div>
+          <div
+            class="flex grow flex-col items-start gap-y-2 tablet:w-full tablet:pr-4"
+          >
+            <a
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              href="/reviews/refugee-by-piers-anthony/"
+            >
+              Refugee
+            </a>
+            <div
+              class="font-sans text-xs leading-4 text-muted"
+            >
+              Piers Anthony
+            </div>
+            <div
+              class="bg-abandoned p-1 font-sans text-xxs font-semibold uppercase text-[#fff] tablet:my-1"
+            >
+              Abandoned
+            </div>
+            <div
+              class="font-sans text-xs font-light leading-4 text-subtle"
+            >
+              <span>
+                Novel
+                 | 
+              </span>
+              1983
+            </div>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </li>
+  <li
+    class="block"
+  >
+    <div
+      class="pt-0 text-md"
+      style="z-index: 19;"
+    >
+      <div
+        class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+      >
         1984
       </div>
     </div>
@@ -55572,7 +57624,7 @@ exports[`Reviews > can sort by year published with oldest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 19;"
+      style="z-index: 20;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -55584,6 +57636,62 @@ exports[`Reviews > can sort by year published with oldest first 1`] = `
       class="bg-subtle"
     >
       <ol>
+        <li
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="w-list-item-cover shrink-0"
+          >
+            <img
+              alt=""
+              class="aspect-cover"
+              decoding="async"
+              height="113"
+              loading="lazy"
+              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+              width="80"
+            />
+          </div>
+          <div
+            class="flex grow flex-col items-start gap-y-2 tablet:w-full tablet:pr-4"
+          >
+            <a
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              href="/reviews/the-lonely-one-by-richard-laymon/"
+            >
+              The Lonely One
+            </a>
+            <div
+              class="font-sans text-xs leading-4 text-muted"
+            >
+              Richard Laymon
+            </div>
+            <picture>
+              <source
+                media="(prefers-color-scheme: dark)"
+                srcset="/svg/3-stars-dark.svg"
+              />
+              <img
+                alt="C+: 3 stars (out of 5)"
+                class="mb-1"
+                height="16"
+                src="/svg/3-stars.svg"
+                width="80"
+              />
+            </picture>
+            <div
+              class="font-sans text-xs font-light leading-4 text-subtle"
+            >
+              <span>
+                Short Story
+                 | 
+              </span>
+              1985
+            </div>
+          </div>
+        </li>
         <li
           class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
         >
@@ -55818,7 +57926,7 @@ exports[`Reviews > can sort by year published with oldest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 20;"
+      style="z-index: 21;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -55950,7 +58058,7 @@ exports[`Reviews > can sort by year published with oldest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 21;"
+      style="z-index: 22;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -56028,7 +58136,7 @@ exports[`Reviews > can sort by year published with oldest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 22;"
+      style="z-index: 23;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -56104,7 +58212,7 @@ exports[`Reviews > can sort by year published with oldest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 23;"
+      style="z-index: 24;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -56180,7 +58288,7 @@ exports[`Reviews > can sort by year published with oldest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 24;"
+      style="z-index: 25;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -56312,7 +58420,7 @@ exports[`Reviews > can sort by year published with oldest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 25;"
+      style="z-index: 26;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -56388,7 +58496,7 @@ exports[`Reviews > can sort by year published with oldest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 26;"
+      style="z-index: 27;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -56464,7 +58572,7 @@ exports[`Reviews > can sort by year published with oldest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 27;"
+      style="z-index: 28;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -56540,7 +58648,7 @@ exports[`Reviews > can sort by year published with oldest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 28;"
+      style="z-index: 29;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -56618,7 +58726,7 @@ exports[`Reviews > can sort by year published with oldest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 29;"
+      style="z-index: 30;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -56694,7 +58802,7 @@ exports[`Reviews > can sort by year published with oldest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 30;"
+      style="z-index: 31;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -56770,7 +58878,7 @@ exports[`Reviews > can sort by year published with oldest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 31;"
+      style="z-index: 32;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -56902,7 +59010,7 @@ exports[`Reviews > can sort by year published with oldest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 32;"
+      style="z-index: 33;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -57090,7 +59198,7 @@ exports[`Reviews > can sort by year published with oldest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 33;"
+      style="z-index: 34;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -57272,7 +59380,7 @@ exports[`Reviews > can sort by year published with oldest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 34;"
+      style="z-index: 35;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -57460,7 +59568,7 @@ exports[`Reviews > can sort by year published with oldest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 35;"
+      style="z-index: 36;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -58096,7 +60204,7 @@ exports[`Reviews > can sort by year published with oldest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 36;"
+      style="z-index: 37;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -58284,7 +60392,7 @@ exports[`Reviews > can sort by year published with oldest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 37;"
+      style="z-index: 38;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -58360,7 +60468,7 @@ exports[`Reviews > can sort by year published with oldest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 38;"
+      style="z-index: 39;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -58548,7 +60656,7 @@ exports[`Reviews > can sort by year published with oldest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 39;"
+      style="z-index: 40;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -58736,7 +60844,7 @@ exports[`Reviews > can sort by year published with oldest first 1`] = `
   >
     <div
       class="pt-0 text-md"
-      style="z-index: 40;"
+      style="z-index: 41;"
     >
       <div
         class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
@@ -59243,7 +61351,7 @@ exports[`Reviews > renders 1`] = `
                       <span
                         class="font-semibold text-default"
                       >
-                        78
+                        81
                       </span>
                        Results
                     </span>
@@ -59395,6 +61503,11 @@ exports[`Reviews > renders 1`] = `
                                   1982
                                 </option>
                                 <option
+                                  value="1983"
+                                >
+                                  1983
+                                </option>
+                                <option
                                   value="1984"
                                 >
                                   1984
@@ -59636,6 +61749,11 @@ exports[`Reviews > renders 1`] = `
                                   value="1984"
                                 >
                                   1984
+                                </option>
+                                <option
+                                  value="1983"
+                                >
+                                  1983
                                 </option>
                                 <option
                                   value="1982"
@@ -59764,6 +61882,11 @@ exports[`Reviews > renders 1`] = `
                                   2014
                                 </option>
                                 <option
+                                  value="2016"
+                                >
+                                  2016
+                                </option>
+                                <option
                                   value="2017"
                                 >
                                   2017
@@ -59782,6 +61905,11 @@ exports[`Reviews > renders 1`] = `
                                   value="2024"
                                 >
                                   2024
+                                </option>
+                                <option
+                                  value="2025"
+                                >
+                                  2025
                                 </option>
                               </select>
                             </label>
@@ -59797,6 +61925,11 @@ exports[`Reviews > renders 1`] = `
                                 class="select-background-image w-full appearance-none border-none bg-default py-2 pl-4 pr-8 text-base leading-6 text-subtle shadow-all outline-accent"
                               >
                                 <option
+                                  value="2025"
+                                >
+                                  2025
+                                </option>
+                                <option
                                   value="2024"
                                 >
                                   2024
@@ -59815,6 +61948,11 @@ exports[`Reviews > renders 1`] = `
                                   value="2017"
                                 >
                                   2017
+                                </option>
+                                <option
+                                  value="2016"
+                                >
+                                  2016
                                 </option>
                                 <option
                                   value="2014"
@@ -60075,6 +62213,53 @@ exports[`Reviews > renders 1`] = `
                                     Nonfiction | 
                                   </span>
                                   1996
+                                </div>
+                              </div>
+                            </li>
+                            <li
+                              class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+                            >
+                              <div
+                                class="w-list-item-cover shrink-0"
+                              >
+                                <img
+                                  alt=""
+                                  class="aspect-cover"
+                                  decoding="async"
+                                  height="113"
+                                  loading="lazy"
+                                  sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+                                  src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+                                  srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+                                  width="80"
+                                />
+                              </div>
+                              <div
+                                class="flex grow flex-col items-start gap-y-2 tablet:w-full tablet:pr-4"
+                              >
+                                <a
+                                  class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                                  href="/reviews/refugee-by-piers-anthony/"
+                                >
+                                  Refugee
+                                </a>
+                                <div
+                                  class="font-sans text-xs leading-4 text-muted"
+                                >
+                                  Piers Anthony
+                                </div>
+                                <div
+                                  class="bg-abandoned p-1 font-sans text-xxs font-semibold uppercase text-[#fff] tablet:my-1"
+                                >
+                                  Abandoned
+                                </div>
+                                <div
+                                  class="font-sans text-xs font-light leading-4 text-subtle"
+                                >
+                                  <span>
+                                    Novel | 
+                                  </span>
+                                  1983
                                 </div>
                               </div>
                             </li>
@@ -62978,6 +65163,61 @@ exports[`Reviews > renders 1`] = `
                                   height="113"
                                   loading="lazy"
                                   sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+                                  src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+                                  srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+                                  width="80"
+                                />
+                              </div>
+                              <div
+                                class="flex grow flex-col items-start gap-y-2 tablet:w-full tablet:pr-4"
+                              >
+                                <a
+                                  class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                                  href="/reviews/the-lonely-one-by-richard-laymon/"
+                                >
+                                  The Lonely One
+                                </a>
+                                <div
+                                  class="font-sans text-xs leading-4 text-muted"
+                                >
+                                  Richard Laymon
+                                </div>
+                                <picture>
+                                  <source
+                                    media="(prefers-color-scheme: dark)"
+                                    srcset="/svg/3-stars-dark.svg"
+                                  />
+                                  <img
+                                    alt="C+: 3 stars (out of 5)"
+                                    class="mb-1"
+                                    height="16"
+                                    src="/svg/3-stars.svg"
+                                    width="80"
+                                  />
+                                </picture>
+                                <div
+                                  class="font-sans text-xs font-light leading-4 text-subtle"
+                                >
+                                  <span>
+                                    Short Story | 
+                                  </span>
+                                  1985
+                                </div>
+                              </div>
+                            </li>
+                            <li
+                              class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+                            >
+                              <div
+                                class="w-list-item-cover shrink-0"
+                              >
+                                <img
+                                  alt=""
+                                  class="aspect-cover"
+                                  decoding="async"
+                                  height="113"
+                                  loading="lazy"
+                                  sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
                                   src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
                                   srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
                                   width="80"
@@ -63312,6 +65552,61 @@ exports[`Reviews > renders 1`] = `
                                     Nonfiction | 
                                   </span>
                                   2016
+                                </div>
+                              </div>
+                            </li>
+                            <li
+                              class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+                            >
+                              <div
+                                class="w-list-item-cover shrink-0"
+                              >
+                                <img
+                                  alt=""
+                                  class="aspect-cover"
+                                  decoding="async"
+                                  height="113"
+                                  loading="lazy"
+                                  sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+                                  src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+                                  srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+                                  width="80"
+                                />
+                              </div>
+                              <div
+                                class="flex grow flex-col items-start gap-y-2 tablet:w-full tablet:pr-4"
+                              >
+                                <a
+                                  class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                                  href="/reviews/the-devils-of-d-day-by-graham-masterton/"
+                                >
+                                  The Devils of D-Day
+                                </a>
+                                <div
+                                  class="font-sans text-xs leading-4 text-muted"
+                                >
+                                  Graham Masterton
+                                </div>
+                                <picture>
+                                  <source
+                                    media="(prefers-color-scheme: dark)"
+                                    srcset="/svg/4-stars-dark.svg"
+                                  />
+                                  <img
+                                    alt="B: 4 stars (out of 5)"
+                                    class="mb-1"
+                                    height="16"
+                                    src="/svg/4-stars.svg"
+                                    width="80"
+                                  />
+                                </picture>
+                                <div
+                                  class="font-sans text-xs font-light leading-4 text-subtle"
+                                >
+                                  <span>
+                                    Novel | 
+                                  </span>
+                                  1978
                                 </div>
                               </div>
                             </li>
@@ -64861,6 +67156,54 @@ exports[`Reviews > sorts abandoned readings first 1`] = `
                  | 
               </span>
               2015
+            </div>
+          </div>
+        </li>
+        <li
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="w-list-item-cover shrink-0"
+          >
+            <img
+              alt=""
+              class="aspect-cover"
+              decoding="async"
+              height="113"
+              loading="lazy"
+              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frefugee-by-piers-anthony.png%3ForigWidth%3D500%26origHeight%3D749%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+              width="80"
+            />
+          </div>
+          <div
+            class="flex grow flex-col items-start gap-y-2 tablet:w-full tablet:pr-4"
+          >
+            <a
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              href="/reviews/refugee-by-piers-anthony/"
+            >
+              Refugee
+            </a>
+            <div
+              class="font-sans text-xs leading-4 text-muted"
+            >
+              Piers Anthony
+            </div>
+            <div
+              class="bg-abandoned p-1 font-sans text-xxs font-semibold uppercase text-[#fff] tablet:my-1"
+            >
+              Abandoned
+            </div>
+            <div
+              class="font-sans text-xs font-light leading-4 text-subtle"
+            >
+              <span>
+                Novel
+                 | 
+              </span>
+              1983
             </div>
           </div>
         </li>
@@ -67129,6 +69472,62 @@ exports[`Reviews > sorts abandoned readings first 1`] = `
               height="113"
               loading="lazy"
               sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+              width="80"
+            />
+          </div>
+          <div
+            class="flex grow flex-col items-start gap-y-2 tablet:w-full tablet:pr-4"
+          >
+            <a
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              href="/reviews/the-lonely-one-by-richard-laymon/"
+            >
+              The Lonely One
+            </a>
+            <div
+              class="font-sans text-xs leading-4 text-muted"
+            >
+              Richard Laymon
+            </div>
+            <picture>
+              <source
+                media="(prefers-color-scheme: dark)"
+                srcset="/svg/3-stars-dark.svg"
+              />
+              <img
+                alt="C+: 3 stars (out of 5)"
+                class="mb-1"
+                height="16"
+                src="/svg/3-stars.svg"
+                width="80"
+              />
+            </picture>
+            <div
+              class="font-sans text-xs font-light leading-4 text-subtle"
+            >
+              <span>
+                Short Story
+                 | 
+              </span>
+              1985
+            </div>
+          </div>
+        </li>
+        <li
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="w-list-item-cover shrink-0"
+          >
+            <img
+              alt=""
+              class="aspect-cover"
+              decoding="async"
+              height="113"
+              loading="lazy"
+              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
               src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
               srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
               width="80"
@@ -68160,6 +70559,62 @@ exports[`Reviews > sorts abandoned readings first 1`] = `
             >
               <span>
                 Collection
+                 | 
+              </span>
+              1978
+            </div>
+          </div>
+        </li>
+        <li
+          class="bg-default   relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+        >
+          <div
+            class="w-list-item-cover shrink-0"
+          >
+            <img
+              alt=""
+              class="aspect-cover"
+              decoding="async"
+              height="113"
+              loading="lazy"
+              sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif"
+              srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=28&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=57&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=113&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-devils-of-d-day-by-graham-masterton.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=226&q=80&f=avif 160w"
+              width="80"
+            />
+          </div>
+          <div
+            class="flex grow flex-col items-start gap-y-2 tablet:w-full tablet:pr-4"
+          >
+            <a
+              class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+              href="/reviews/the-devils-of-d-day-by-graham-masterton/"
+            >
+              The Devils of D-Day
+            </a>
+            <div
+              class="font-sans text-xs leading-4 text-muted"
+            >
+              Graham Masterton
+            </div>
+            <picture>
+              <source
+                media="(prefers-color-scheme: dark)"
+                srcset="/svg/4-stars-dark.svg"
+              />
+              <img
+                alt="B: 4 stars (out of 5)"
+                class="mb-1"
+                height="16"
+                src="/svg/4-stars.svg"
+                width="80"
+              />
+            </picture>
+            <div
+              class="font-sans text-xs font-light leading-4 text-subtle"
+            >
+              <span>
+                Novel
                  | 
               </span>
               1978
