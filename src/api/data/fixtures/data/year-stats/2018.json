@@ -1,0 +1,36 @@
+{
+  "year": "2018",
+  "workCount": 3,
+  "bookCount": 3,
+  "kindDistribution": [
+    {
+      "name": "Anthology",
+      "count": 1
+    },
+    {
+      "name": "Novel",
+      "count": 2
+    }
+  ],
+  "editionDistribution": [
+    {
+      "name": "Hardcover",
+      "count": 1
+    },
+    {
+      "name": "Kindle",
+      "count": 2
+    }
+  ],
+  "decadeDistribution": [
+    {
+      "name": "1980s",
+      "count": 2
+    },
+    {
+      "name": "2000s",
+      "count": 1
+    }
+  ],
+  "mostReadAuthors": []
+}

@@ -5,6 +5,7 @@ import type { Review } from "~/api/reviews";
 
 import { toSentenceArray } from "~/utils";
 
+import { AuthorLink } from "./AuthorLink";
 import { Cover } from "./Cover";
 import { Grade } from "./Grade";
 
@@ -25,7 +26,7 @@ export type MoreReviewsValue = {
   yearPublished: Review["yearPublished"];
 };
 
-type Author = Pick<Review["authors"][0], "name"> & {};
+type Author = Pick<Review["authors"][0], "name" | "notes"> & {};
 
 export function MoreReviews({
   children,
@@ -62,7 +63,7 @@ function MoreReviewsCard({ value }: { value: MoreReviewsValue }): JSX.Element {
       <div className="flex w-full grow flex-col items-center bg-default px-[8%] pb-8 pt-3 has-[a:hover]:bg-stripe desktop:pl-[8.5%] desktop:pr-[10%]">
         <div className="text-center text-md font-medium leading-6">
           <a
-            className="z-10 inline-block text-accent decoration-2 underline-offset-4 before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-[#fff] before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:before:opacity-0"
+            className="inline-block before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0"
             href={`/reviews/${value.slug}/`}
             rel="canonical"
           >
@@ -73,9 +74,21 @@ function MoreReviewsCard({ value }: { value: MoreReviewsValue }): JSX.Element {
           {value.yearPublished} |{" "}
           <span className="whitespace-nowrap">{value.kind}</span>
         </div>
-        <p className="text-center text-base text-subtle">
-          <span className="font-light">by</span>{" "}
-          {toSentenceArray(value.authors.map((author) => author.name))}
+        <p className="py-2 text-center text-base font-light leading-5 text-subtle">
+          by{" "}
+          {toSentenceArray(
+            value.authors.map((author) => {
+              return (
+                <AuthorLink
+                  as="span"
+                  className="font-normal text-default"
+                  key={author.name}
+                  name={author.name}
+                  notes={author.notes}
+                />
+              );
+            }),
+          )}
         </p>{" "}
         <Grade className="mt-2" height={18} value={value.grade} />
       </div>
