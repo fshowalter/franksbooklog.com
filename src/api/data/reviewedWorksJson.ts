@@ -41,9 +41,15 @@ const IncludedWorkSchema = z.object({
   yearPublished: z.string(),
 });
 
-const MoreReviewAuthorSchema = z.object({
-  name: z.string(),
-});
+const MoreReviewAuthorSchema = z
+  .object({
+    name: z.string(),
+    notes: nullableString(),
+  })
+  .transform(({ name, notes }) => {
+    // fix zod making anything with undefined optional
+    return { name, notes };
+  });
 
 const MoreReviewSchema = z.object({
   authors: z.array(MoreReviewAuthorSchema),
