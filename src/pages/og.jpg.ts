@@ -8,6 +8,7 @@ export const GET: APIRoute = async function get() {
   const jpeg = await componentToImage(
     OpenGraphImage({
       backdrop: await getOpenGraphBackdropAsBase64String("home"),
+      sectionHead: "",
       title: "Frank's Book Log",
     }),
   );
