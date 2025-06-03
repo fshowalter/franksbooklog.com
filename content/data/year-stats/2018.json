@@ -1,7 +1,7 @@
 {
   "year": "2018",
-  "workCount": 4,
-  "bookCount": 4,
+  "workCount": 5,
+  "bookCount": 5,
   "kindDistribution": [
     {
       "name": "Anthology",
@@ -9,7 +9,7 @@
     },
     {
       "name": "Nonfiction",
-      "count": 1
+      "count": 2
     },
     {
       "name": "Novel",
@@ -23,7 +23,7 @@
     },
     {
       "name": "Kindle",
-      "count": 3
+      "count": 4
     }
   ],
   "decadeDistribution": [
@@ -33,6 +33,10 @@
     },
     {
       "name": "2000s",
+      "count": 1
+    },
+    {
+      "name": "2010s",
       "count": 1
     }
   ],
