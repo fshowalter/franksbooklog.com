@@ -1,7 +1,7 @@
 {
   "year": "2018",
-  "workCount": 5,
-  "bookCount": 5,
+  "workCount": 6,
+  "bookCount": 6,
   "kindDistribution": [
     {
       "name": "Anthology",
@@ -13,7 +13,7 @@
     },
     {
       "name": "Novel",
-      "count": 2
+      "count": 3
     }
   ],
   "editionDistribution": [
@@ -23,13 +23,13 @@
     },
     {
       "name": "Kindle",
-      "count": 4
+      "count": 5
     }
   ],
   "decadeDistribution": [
     {
       "name": "1980s",
-      "count": 3
+      "count": 4
     },
     {
       "name": "2000s",
@@ -40,5 +40,35 @@
       "count": 1
     }
   ],
-  "mostReadAuthors": []
+  "mostReadAuthors": [
+    {
+      "name": "Richard Laymon",
+      "count": 2,
+      "slug": "richard-laymon",
+      "readings": [
+        {
+          "sequence": 1,
+          "date": "2018-01-11",
+          "slug": "midnights-lair-by-richard-laymon",
+          "edition": "Kindle",
+          "kind": "Novel",
+          "title": "Midnight's Lair",
+          "yearPublished": "1988",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 2,
+          "date": "2018-03-12",
+          "slug": "resurrection-dreams-by-richard-laymon",
+          "edition": "Kindle",
+          "kind": "Novel",
+          "title": "Resurrection Dreams",
+          "yearPublished": "1988",
+          "includedInSlugs": [],
+          "reviewed": false
+        }
+      ]
+    }
+  ]
 }

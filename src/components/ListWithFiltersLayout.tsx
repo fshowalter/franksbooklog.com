@@ -5,6 +5,7 @@ import { Layout } from "./Layout";
 type Props = {
   backdrop: React.ReactNode;
   filters: React.ReactNode;
+  hasBackdrop?: boolean;
   list: React.ReactNode;
   listHeaderButtons?: React.ReactNode;
   subNav?: React.ReactNode;
@@ -33,6 +34,7 @@ export function ListHeaderButton({
 export function ListWithFiltersLayout({
   backdrop,
   filters,
+  hasBackdrop = true,
   list,
   listHeaderButtons,
   subNav,
@@ -42,7 +44,7 @@ export function ListWithFiltersLayout({
   const [filtersVisible, toggleFilters] = useState(false);
 
   return (
-    <Layout className="bg-subtle" hasBackdrop={true} {...rest}>
+    <Layout className="bg-subtle" hasBackdrop={hasBackdrop} {...rest}>
       {backdrop}
       {subNav && subNav}
       <div className="mx-auto flex flex-col items-center bg-default">
