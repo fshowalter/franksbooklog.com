@@ -93,6 +93,7 @@ export function Author({
           sortValue={state.sortValue}
         />
       }
+      hasBackdrop={false}
       list={
         <GroupedList
           data-testid="list"
