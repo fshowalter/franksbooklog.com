@@ -29,7 +29,7 @@ export function Home({ backdropImageProps, deck, values }: Props): JSX.Element {
         <SubHeading as="h2" className="px-container tablet:px-0">
           Latest Reviews
         </SubHeading>
-        <ol className="flex flex-wrap justify-center gap-x-[4%] gap-y-[6vw] px-[4%] tablet:gap-x-[3%] tablet:px-0 desktop:justify-between desktop:gap-x-[2%]">
+        <ol className="flex flex-wrap justify-center gap-x-[4%] gap-y-[6vw] px-[4%] tablet:gap-x-[3%] tablet:px-0 desktop:justify-between desktop:gap-x-[1%]">
           {values.map((value, index) => {
             return (
               <HomeListItem
