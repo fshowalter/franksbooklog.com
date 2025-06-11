@@ -75,7 +75,7 @@ export default {
     },
     screens: {
       desktop: "1280px",
-      max: "1696px",
+      max: "1776px",
       tablet: "768px",
       "tablet-landscape": "1024px",
     },
