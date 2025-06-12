@@ -127,7 +127,13 @@ function Authors({
 }) {
   return (
     <div className={className}>
-      {toSentenceArray(values.map((author) => author.name))}
+      {toSentenceArray(
+        values.map((value) => (
+          <span className="font-normal text-muted" key={value.name}>
+            {value.name}
+          </span>
+        )),
+      )}
     </div>
   );
 }
@@ -189,7 +195,7 @@ function ReadingListItem({ value }: { value: ListItemValue }): JSX.Element {
           title={value.title}
         />
         <Authors
-          className="font-sans text-xs text-muted"
+          className="font-sans text-xs font-light text-subtle"
           values={value.authors}
         />
         <ListItemKindAndYear kind={value.kind} year={value.yearPublished} />
