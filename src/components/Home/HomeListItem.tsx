@@ -38,16 +38,18 @@ export function HomeListItem({
   value: ListItemValue;
 }): JSX.Element {
   return (
-    <li className="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-cover-back has-[a:hover]:shadow-hover min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[15.75%]">
-      <Cover
-        decoding="async"
-        imageProps={value.coverImageProps}
-        {...CoverImageConfig}
-        alt={`A cover of ${value.title} by ${toSentenceArray(
-          value.authors.map((a) => a.name),
-        ).join("")}`}
-        loading={eagerLoadCoverImage ? "eager" : "lazy"}
-      />
+    <li className="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default has-[a:hover]:shadow-hover min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[15.75%]">
+      <div className="bg-cover-back">
+        <Cover
+          decoding="async"
+          imageProps={value.coverImageProps}
+          {...CoverImageConfig}
+          alt={`A cover of ${value.title} by ${toSentenceArray(
+            value.authors.map((a) => a.name),
+          ).join("")}`}
+          loading={eagerLoadCoverImage ? "eager" : "lazy"}
+        />
+      </div>
       <div className="flex w-full grow flex-col items-center bg-default px-[8%] pb-8 pt-2 has-[a:hover]:bg-stripe desktop:pl-[8.5%] desktop:pr-[10%]">
         <div className="whitespace-nowrap py-2 text-center font-sans text-xxs font-light uppercase leading-4 text-subtle">
           {formatDate(value.date)}
