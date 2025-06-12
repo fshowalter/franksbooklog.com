@@ -50,11 +50,11 @@ export function HomeListItem({
           loading={eagerLoadCoverImage ? "eager" : "lazy"}
         />
       </div>
-      <div className="flex w-full grow flex-col items-center bg-default px-[8%] pb-8 pt-2 has-[a:hover]:bg-stripe desktop:pl-[8.5%] desktop:pr-[10%]">
-        <div className="whitespace-nowrap py-2 text-center font-sans text-xxs font-light uppercase leading-4 text-subtle">
+      <div className="flex w-full grow flex-col bg-default px-[8%] pb-8 pt-2 has-[a:hover]:bg-stripe desktop:pl-[8.5%] desktop:pr-[10%]">
+        <div className="whitespace-nowrap py-1 font-sans text-xxs font-light uppercase leading-4 text-subtle">
           {formatDate(value.date)}
         </div>
-        <div className="text-center text-md font-medium leading-6 max:py-1 max:text-xl max:leading-6">
+        <div className="text-md font-medium leading-6 max:py-1 max:text-xl max:leading-6">
           <a
             className="inline-block before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0"
             href={`/reviews/${value.slug}/`}
@@ -63,11 +63,10 @@ export function HomeListItem({
             {value.title}
           </a>
         </div>
-        <div className="py-2 text-center font-sans text-xxs font-light uppercase leading-4 tracking-wide text-subtle">
-          {value.yearPublished} |{" "}
-          <span className="whitespace-nowrap">{value.kind}</span>
+        <div className="py-2 font-sans text-xxs font-light uppercase leading-4 tracking-wide text-subtle">
+          {value.yearPublished} | {value.kind}
         </div>
-        <p className="py-2 text-center text-base font-light leading-5 text-subtle max:text-md">
+        <p className="py-2 text-base font-light leading-5 text-subtle max:text-default">
           by{" "}
           {toSentenceArray(
             value.authors.map((author) => {
