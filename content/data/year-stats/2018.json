@@ -1,7 +1,7 @@
 {
   "year": "2018",
-  "workCount": 9,
-  "bookCount": 9,
+  "workCount": 10,
+  "bookCount": 10,
   "kindDistribution": [
     {
       "name": "Anthology",
@@ -13,7 +13,7 @@
     },
     {
       "name": "Novel",
-      "count": 4
+      "count": 5
     }
   ],
   "editionDistribution": [
@@ -23,10 +23,14 @@
     },
     {
       "name": "Kindle",
-      "count": 8
+      "count": 9
     }
   ],
   "decadeDistribution": [
+    {
+      "name": "1970s",
+      "count": 1
+    },
     {
       "name": "1980s",
       "count": 5
