@@ -1,7 +1,7 @@
 {
   "reviewCount": 81,
-  "workCount": 137,
-  "bookCount": 116,
+  "workCount": 138,
+  "bookCount": 117,
   "gradeDistribution": [
     {
       "name": "A",
@@ -79,7 +79,7 @@
     },
     {
       "name": "Novel",
-      "count": 66
+      "count": 67
     },
     {
       "name": "Novella",
@@ -101,7 +101,7 @@
     },
     {
       "name": "Kindle",
-      "count": 53
+      "count": 54
     },
     {
       "name": "Paperback",
@@ -131,7 +131,7 @@
     },
     {
       "name": "1980s",
-      "count": 42
+      "count": 43
     },
     {
       "name": "1990s",
@@ -153,7 +153,7 @@
   "mostReadAuthors": [
     {
       "name": "Richard Laymon",
-      "count": 27,
+      "count": 28,
       "slug": "richard-laymon",
       "readings": [
         {
@@ -386,6 +386,17 @@
           "kind": "Novel",
           "title": "Resurrection Dreams",
           "yearPublished": "1988",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 2,
+          "date": "2018-05-20",
+          "slug": "funland-by-richard-laymon",
+          "edition": "Kindle",
+          "kind": "Novel",
+          "title": "Funland",
+          "yearPublished": "1989",
           "includedInSlugs": [],
           "reviewed": false
         },
