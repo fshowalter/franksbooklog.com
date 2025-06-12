@@ -9,10 +9,10 @@ import { Grade } from "~/components/Grade";
 import { toSentenceArray } from "~/utils";
 
 export const CoverImageConfig = {
-  height: 375,
+  height: 372,
   sizes:
     "(min-width: 1800px) 218px, (min-width: 1300px) calc(11.67vw + 10px), (min-width: 1260px) calc(-445vw + 5855px), (min-width: 900px) calc(19.12vw + 11px), (min-width: 600px) 27.5vw, calc(41.43vw + 8px)",
-  width: 250,
+  width: 248,
 };
 
 export type ListItemValue = Pick<
