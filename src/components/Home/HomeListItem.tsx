@@ -54,7 +54,7 @@ export function HomeListItem({
         <div className="whitespace-nowrap py-1 font-sans text-xxs font-light uppercase leading-4 text-subtle">
           {formatDate(value.date)}
         </div>
-        <div className="text-md font-medium leading-6 max:py-1 max:text-xl max:leading-6">
+        <div className="py-2 text-md font-medium leading-5 max:py-1 max:text-xl max:leading-6">
           <a
             className="inline-block before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0"
             href={`/reviews/${value.slug}/`}
@@ -66,7 +66,7 @@ export function HomeListItem({
         <div className="py-2 font-sans text-xxs font-light uppercase leading-4 tracking-wide text-subtle">
           {value.yearPublished} | {value.kind}
         </div>
-        <p className="py-2 text-base font-light leading-5 text-subtle max:text-default">
+        <p className="py-1 text-base font-light leading-5 text-subtle max:py-2">
           by{" "}
           {toSentenceArray(
             value.authors.map((author) => {

@@ -260,7 +260,7 @@ exports[`Home > matches snapshot 1`] = `
                   15 Feb 2025
                 </div>
                 <div
-                  class="text-md font-medium leading-6 max:py-1 max:text-xl max:leading-6"
+                  class="py-2 text-md font-medium leading-5 max:py-1 max:text-xl max:leading-6"
                 >
                   <a
                     class="inline-block before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0"
@@ -276,7 +276,7 @@ exports[`Home > matches snapshot 1`] = `
                   1985 | Short Story
                 </div>
                 <p
-                  class="py-2 text-base font-light leading-5 text-subtle max:text-default"
+                  class="py-1 text-base font-light leading-5 text-subtle max:py-2"
                 >
                   by 
                   <span
@@ -328,7 +328,7 @@ exports[`Home > matches snapshot 1`] = `
                   01 Dec 2024
                 </div>
                 <div
-                  class="text-md font-medium leading-6 max:py-1 max:text-xl max:leading-6"
+                  class="py-2 text-md font-medium leading-5 max:py-1 max:text-xl max:leading-6"
                 >
                   <a
                     class="inline-block before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0"
@@ -344,7 +344,7 @@ exports[`Home > matches snapshot 1`] = `
                   1979 | Novel
                 </div>
                 <p
-                  class="py-2 text-base font-light leading-5 text-subtle max:text-default"
+                  class="py-1 text-base font-light leading-5 text-subtle max:py-2"
                 >
                   by 
                   <span
@@ -396,7 +396,7 @@ exports[`Home > matches snapshot 1`] = `
                   08 Nov 2024
                 </div>
                 <div
-                  class="text-md font-medium leading-6 max:py-1 max:text-xl max:leading-6"
+                  class="py-2 text-md font-medium leading-5 max:py-1 max:text-xl max:leading-6"
                 >
                   <a
                     class="inline-block before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0"
@@ -412,7 +412,7 @@ exports[`Home > matches snapshot 1`] = `
                   2023 | Nonfiction
                 </div>
                 <p
-                  class="py-2 text-base font-light leading-5 text-subtle max:text-default"
+                  class="py-1 text-base font-light leading-5 text-subtle max:py-2"
                 >
                   by 
                   <span
@@ -464,7 +464,7 @@ exports[`Home > matches snapshot 1`] = `
                   25 Aug 2024
                 </div>
                 <div
-                  class="text-md font-medium leading-6 max:py-1 max:text-xl max:leading-6"
+                  class="py-2 text-md font-medium leading-5 max:py-1 max:text-xl max:leading-6"
                 >
                   <a
                     class="inline-block before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0"
@@ -480,7 +480,7 @@ exports[`Home > matches snapshot 1`] = `
                   2022 | Nonfiction
                 </div>
                 <p
-                  class="py-2 text-base font-light leading-5 text-subtle max:text-default"
+                  class="py-1 text-base font-light leading-5 text-subtle max:py-2"
                 >
                   by 
                   <span
@@ -532,7 +532,7 @@ exports[`Home > matches snapshot 1`] = `
                   01 Jul 2024
                 </div>
                 <div
-                  class="text-md font-medium leading-6 max:py-1 max:text-xl max:leading-6"
+                  class="py-2 text-md font-medium leading-5 max:py-1 max:text-xl max:leading-6"
                 >
                   <a
                     class="inline-block before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0"
@@ -548,7 +548,7 @@ exports[`Home > matches snapshot 1`] = `
                   2020 | Nonfiction
                 </div>
                 <p
-                  class="py-2 text-base font-light leading-5 text-subtle max:text-default"
+                  class="py-1 text-base font-light leading-5 text-subtle max:py-2"
                 >
                   by 
                   <span
@@ -600,7 +600,7 @@ exports[`Home > matches snapshot 1`] = `
                   30 Jun 2024
                 </div>
                 <div
-                  class="text-md font-medium leading-6 max:py-1 max:text-xl max:leading-6"
+                  class="py-2 text-md font-medium leading-5 max:py-1 max:text-xl max:leading-6"
                 >
                   <a
                     class="inline-block before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0"
@@ -616,7 +616,7 @@ exports[`Home > matches snapshot 1`] = `
                   2023 | Novel
                 </div>
                 <p
-                  class="py-2 text-base font-light leading-5 text-subtle max:text-default"
+                  class="py-1 text-base font-light leading-5 text-subtle max:py-2"
                 >
                   by 
                   <span
@@ -668,7 +668,7 @@ exports[`Home > matches snapshot 1`] = `
                   11 Nov 2023
                 </div>
                 <div
-                  class="text-md font-medium leading-6 max:py-1 max:text-xl max:leading-6"
+                  class="py-2 text-md font-medium leading-5 max:py-1 max:text-xl max:leading-6"
                 >
                   <a
                     class="inline-block before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0"
@@ -684,7 +684,7 @@ exports[`Home > matches snapshot 1`] = `
                   2019 | Nonfiction
                 </div>
                 <p
-                  class="py-2 text-base font-light leading-5 text-subtle max:text-default"
+                  class="py-1 text-base font-light leading-5 text-subtle max:py-2"
                 >
                   by 
                   <span
@@ -736,7 +736,7 @@ exports[`Home > matches snapshot 1`] = `
                   06 Nov 2023
                 </div>
                 <div
-                  class="text-md font-medium leading-6 max:py-1 max:text-xl max:leading-6"
+                  class="py-2 text-md font-medium leading-5 max:py-1 max:text-xl max:leading-6"
                 >
                   <a
                     class="inline-block before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0"
@@ -752,7 +752,7 @@ exports[`Home > matches snapshot 1`] = `
                   2023 | Novel
                 </div>
                 <p
-                  class="py-2 text-base font-light leading-5 text-subtle max:text-default"
+                  class="py-1 text-base font-light leading-5 text-subtle max:py-2"
                 >
                   by 
                   <span
@@ -810,7 +810,7 @@ exports[`Home > matches snapshot 1`] = `
                   29 Oct 2023
                 </div>
                 <div
-                  class="text-md font-medium leading-6 max:py-1 max:text-xl max:leading-6"
+                  class="py-2 text-md font-medium leading-5 max:py-1 max:text-xl max:leading-6"
                 >
                   <a
                     class="inline-block before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0"
@@ -826,7 +826,7 @@ exports[`Home > matches snapshot 1`] = `
                   2022 | Novel
                 </div>
                 <p
-                  class="py-2 text-base font-light leading-5 text-subtle max:text-default"
+                  class="py-1 text-base font-light leading-5 text-subtle max:py-2"
                 >
                   by 
                   <span
@@ -878,7 +878,7 @@ exports[`Home > matches snapshot 1`] = `
                   22 Oct 2023
                 </div>
                 <div
-                  class="text-md font-medium leading-6 max:py-1 max:text-xl max:leading-6"
+                  class="py-2 text-md font-medium leading-5 max:py-1 max:text-xl max:leading-6"
                 >
                   <a
                     class="inline-block before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0"
@@ -894,7 +894,7 @@ exports[`Home > matches snapshot 1`] = `
                   2023 | Nonfiction
                 </div>
                 <p
-                  class="py-2 text-base font-light leading-5 text-subtle max:text-default"
+                  class="py-1 text-base font-light leading-5 text-subtle max:py-2"
                 >
                   by 
                   <span
@@ -946,7 +946,7 @@ exports[`Home > matches snapshot 1`] = `
                   09 Oct 2023
                 </div>
                 <div
-                  class="text-md font-medium leading-6 max:py-1 max:text-xl max:leading-6"
+                  class="py-2 text-md font-medium leading-5 max:py-1 max:text-xl max:leading-6"
                 >
                   <a
                     class="inline-block before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0"
@@ -962,7 +962,7 @@ exports[`Home > matches snapshot 1`] = `
                   2017 | Novella
                 </div>
                 <p
-                  class="py-2 text-base font-light leading-5 text-subtle max:text-default"
+                  class="py-1 text-base font-light leading-5 text-subtle max:py-2"
                 >
                   by 
                   <span
@@ -1014,7 +1014,7 @@ exports[`Home > matches snapshot 1`] = `
                   29 Jan 2023
                 </div>
                 <div
-                  class="text-md font-medium leading-6 max:py-1 max:text-xl max:leading-6"
+                  class="py-2 text-md font-medium leading-5 max:py-1 max:text-xl max:leading-6"
                 >
                   <a
                     class="inline-block before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0"
@@ -1030,7 +1030,7 @@ exports[`Home > matches snapshot 1`] = `
                   1991 | Novel
                 </div>
                 <p
-                  class="py-2 text-base font-light leading-5 text-subtle max:text-default"
+                  class="py-1 text-base font-light leading-5 text-subtle max:py-2"
                 >
                   by 
                   <span
