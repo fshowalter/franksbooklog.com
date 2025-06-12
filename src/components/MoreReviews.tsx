@@ -76,7 +76,7 @@ function MoreReviewsCard({ value }: { value: MoreReviewsValue }): JSX.Element {
           {value.yearPublished} |{" "}
           <span className="whitespace-nowrap">{value.kind}</span>
         </div>
-        <p className="py-2 text-base font-light leading-5 text-subtle max:text-md">
+        <p className="py-1 text-base font-light leading-5 text-subtle max:py-2">
           by{" "}
           {toSentenceArray(
             value.authors.map((author) => {
