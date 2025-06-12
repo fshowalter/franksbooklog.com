@@ -1,7 +1,7 @@
 {
   "reviewCount": 81,
-  "workCount": 140,
-  "bookCount": 119,
+  "workCount": 141,
+  "bookCount": 120,
   "gradeDistribution": [
     {
       "name": "A",
@@ -79,7 +79,7 @@
     },
     {
       "name": "Novel",
-      "count": 68
+      "count": 69
     },
     {
       "name": "Novella",
@@ -101,7 +101,7 @@
     },
     {
       "name": "Kindle",
-      "count": 56
+      "count": 57
     },
     {
       "name": "Paperback",
@@ -131,7 +131,7 @@
     },
     {
       "name": "1980s",
-      "count": 43
+      "count": 44
     },
     {
       "name": "1990s",
@@ -476,7 +476,7 @@
     },
     {
       "name": "Stephen King",
-      "count": 21,
+      "count": 22,
       "slug": "stephen-king",
       "readings": [
         {
@@ -641,6 +641,17 @@
           "kind": "Novel",
           "title": "Pet Sematary",
           "yearPublished": "1983",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2018-06-29",
+          "slug": "the-talisman-by-stephen-king-peter-straub",
+          "edition": "Kindle",
+          "kind": "Novel",
+          "title": "The Talisman",
+          "yearPublished": "1984",
           "includedInSlugs": [],
           "reviewed": false
         },
