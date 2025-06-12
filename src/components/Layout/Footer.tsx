@@ -74,7 +74,7 @@ export function Footer(): JSX.Element {
       <p className="w-full bg-footer px-container py-10 text-center font-normal leading-5 text-inverse">
         All reviews by Frank Showalter. All images used in accordance with the{" "}
         <a
-          className="text-inherit underline decoration-dashed hover:bg-default hover:text-default"
+          className="text-inherit underline decoration-dashed underline-offset-4 hover:bg-default hover:text-default"
           href="http://www.copyright.gov/title17/92chap1.html#107"
           rel="nofollow"
         >
