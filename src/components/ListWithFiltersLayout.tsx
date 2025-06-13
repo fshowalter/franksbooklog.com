@@ -70,7 +70,7 @@ export function ListWithFiltersLayout({
                 >
                   <div className="overflow-hidden">
                     <div className="w-full bg-subtle text-sm tablet:pt-12 tablet:text-base tablet-landscape:overflow-visible tablet-landscape:bg-default tablet-landscape:px-container tablet-landscape:pt-0 desktop:px-8">
-                      <fieldset className="flex flex-col gap-8 bg-canvas px-container py-10 tablet-landscape:mt-0 tablet-landscape:gap-12 tablet-landscape:bg-default tablet-landscape:px-0">
+                      <fieldset className="flex flex-col gap-8 bg-group px-container py-10 tablet:bg-default tablet-landscape:mt-0 tablet-landscape:gap-12 tablet-landscape:px-0">
                         <legend className="hidden w-full py-10 font-sans text-xs font-bold uppercase tracking-wide text-subtle tablet-landscape:block tablet-landscape:shadow-bottom">
                           Filter & Sort
                         </legend>
