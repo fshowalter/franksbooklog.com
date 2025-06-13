@@ -7,7 +7,7 @@ import { navItems } from "./navItems";
 
 export function Footer(): JSX.Element {
   return (
-    <footer className={"bg-canvas"}>
+    <footer className="bg-canvas">
       <div className="mx-auto max-w-screen-max px-container py-20">
         <div className="flex w-full flex-col tablet:flex-row-reverse tablet:justify-between">
           <a
