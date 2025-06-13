@@ -63,7 +63,7 @@ export function HomeListItem({
             {value.title}
           </a>
         </div>
-        <p className="pt-1 font-sans text-xs font-light leading-5 text-subtle tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5">
+        <p className="pt-1 font-sans text-xs font-light leading-4 text-subtle tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5">
           by{" "}
           {toSentenceArray(
             value.authors.map((author) => {
@@ -80,7 +80,7 @@ export function HomeListItem({
           )}
         </p>{" "}
         <Grade
-          className="mt-3 h-4 w-20 tablet:h-[18px] tablet:w-[90px]"
+          className="mt-2 h-4 w-20 tablet:mt-3 tablet:h-[18px] tablet:w-[90px]"
           height={18}
           value={value.grade}
         />
