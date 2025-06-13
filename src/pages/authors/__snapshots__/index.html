@@ -237,7 +237,7 @@
       })();
     </script>
     <astro-island
-      uid="Z5m4JD"
+      uid="4TvoM"
       prefix="r1"
       component-url="~/components/Authors/Authors"
       component-export="Authors"
@@ -439,9 +439,9 @@
             <div class="mx-auto flex flex-col items-center bg-default">
               <div class="mx-auto flex w-full flex-col items-stretch">
                 <div class="flex grow flex-col bg-subtle">
-                  <div class="relative tablet-landscape:px-0">
+                  <div class="relative tablet:px-12 tablet-landscape:px-0">
                     <div
-                      class="relative z-10 row-start-1 bg-default text-xs tablet:px-0 tablet-landscape:col-span-3 tablet-landscape:mx-0 tablet-landscape:w-full"
+                      class="relative z-10 row-start-1 bg-default text-xs tablet:-mx-12 tablet:px-0 tablet-landscape:col-span-3 tablet-landscape:mx-0 tablet-landscape:w-full"
                     >
                       <div
                         class="mx-auto flex w-full max-w-screen-max flex-wrap items-baseline justify-between gap-x-4 gap-y-5 px-container py-10 font-sans font-medium uppercase tracking-wide text-subtle"
@@ -464,49 +464,53 @@
                         class="relative z-10 col-start-3 row-span-2 row-start-2 grid min-w-[320px] text-sm transition-[grid-template-rows] duration-300 ease-in-out tablet-landscape:mr-12 tablet-landscape:block tablet-landscape:py-24 tablet-landscape:pb-12 tablet-landscape:shadow-none desktop:mr-20"
                         style="grid-template-rows: 0fr"
                       >
-                        <div
-                          class="w-full overflow-hidden bg-subtle text-sm tablet:text-base tablet-landscape:overflow-visible tablet-landscape:bg-default tablet-landscape:px-container tablet-landscape:pt-0 desktop:px-8"
-                        >
-                          <fieldset
-                            class="flex flex-col gap-8 bg-canvas px-container pb-10 pt-8 tablet-landscape:mt-0 tablet-landscape:gap-12 tablet-landscape:bg-default tablet-landscape:px-0 tablet-landscape:pt-10"
+                        <div class="overflow-hidden">
+                          <div
+                            class="w-full bg-subtle text-sm tablet:pt-12 tablet:text-base tablet-landscape:overflow-visible tablet-landscape:bg-default tablet-landscape:px-container tablet-landscape:pt-0 desktop:px-8"
                           >
-                            <legend
-                              class="hidden w-full py-10 font-sans text-xs font-bold uppercase tracking-wide text-subtle tablet-landscape:block tablet-landscape:shadow-bottom"
+                            <fieldset
+                              class="flex flex-col gap-8 bg-canvas px-container py-10 tablet-landscape:mt-0 tablet-landscape:gap-12 tablet-landscape:bg-default tablet-landscape:px-0"
                             >
-                              Filter &amp; Sort
-                            </legend>
-                            <label class="flex flex-col text-subtle"
-                              ><span
-                                class="inline-block h-6 text-left font-sans text-xxs uppercase leading-none tracking-wide text-subtle"
-                                >Name</span
-                              ><input
-                                class="border-0 bg-default px-4 py-2 text-base text-default shadow-all placeholder:text-default placeholder:opacity-50"
-                                placeholder="Enter all or part of a name"
-                                type="text" /></label
-                            ><label class="flex flex-col"
-                              ><span
-                                class="inline-block h-6 text-left font-sans text-xxs uppercase leading-none tracking-wide text-subtle"
-                                >Order By</span
-                              ><select
-                                class="select-background-image w-full appearance-none border-none bg-default py-2 pl-4 pr-8 text-base leading-6 text-subtle shadow-all outline-accent"
+                              <legend
+                                class="hidden w-full py-10 font-sans text-xs font-bold uppercase tracking-wide text-subtle tablet-landscape:block tablet-landscape:shadow-bottom"
                               >
-                                <option value="name-asc" selected="">
-                                  Name (A → Z)
-                                </option>
-                                <option value="name-desc">Name (Z → A)</option>
-                                <option value="review-count-desc">
-                                  Review Count (Most First)
-                                </option>
-                                <option value="review-count-asc">
-                                  Review Count (Fewest First)
-                                </option>
-                              </select></label
-                            >
-                          </fieldset>
+                                Filter &amp; Sort
+                              </legend>
+                              <label class="flex flex-col text-subtle"
+                                ><span
+                                  class="inline-block h-6 text-left font-sans text-xxs uppercase leading-none tracking-wide text-subtle"
+                                  >Name</span
+                                ><input
+                                  class="border-0 bg-default px-4 py-2 text-base text-default shadow-all placeholder:text-default placeholder:opacity-50"
+                                  placeholder="Enter all or part of a name"
+                                  type="text" /></label
+                              ><label class="flex flex-col"
+                                ><span
+                                  class="inline-block h-6 text-left font-sans text-xxs uppercase leading-none tracking-wide text-subtle"
+                                  >Order By</span
+                                ><select
+                                  class="select-background-image w-full appearance-none border-none bg-default py-2 pl-4 pr-8 text-base leading-6 text-subtle shadow-all outline-accent"
+                                >
+                                  <option value="name-asc" selected="">
+                                    Name (A → Z)
+                                  </option>
+                                  <option value="name-desc">
+                                    Name (Z → A)
+                                  </option>
+                                  <option value="review-count-desc">
+                                    Review Count (Most First)
+                                  </option>
+                                  <option value="review-count-asc">
+                                    Review Count (Fewest First)
+                                  </option>
+                                </select></label
+                              >
+                            </fieldset>
+                          </div>
                         </div>
                       </div>
                       <div
-                        class="col-start-1 row-start-2 pb-10 tablet:px-12 tablet-landscape:px-0 tablet-landscape:pl-12 desktop:pl-20"
+                        class="col-start-1 row-start-2 pb-10 tablet-landscape:pl-12 desktop:pl-20"
                       >
                         <ol data-testid="list">
                           <li class="block">
