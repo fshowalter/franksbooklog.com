@@ -1,9 +1,9 @@
 import { type JSX, useReducer } from "react";
 
+import type { BackdropImageProps } from "~/api/backdrops";
 import type { CoverImageProps } from "~/api/covers";
 import type { Review } from "~/api/reviews";
 
-import { type BackdropImageProps } from "~/api/backdrops";
 import { Abandoned } from "~/components/Abandoned";
 import { Backdrop } from "~/components/Backdrop";
 import { Grade } from "~/components/Grade";
