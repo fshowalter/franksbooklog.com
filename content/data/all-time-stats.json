@@ -1,7 +1,7 @@
 {
   "reviewCount": 81,
-  "workCount": 141,
-  "bookCount": 120,
+  "workCount": 142,
+  "bookCount": 121,
   "gradeDistribution": [
     {
       "name": "A",
@@ -79,7 +79,7 @@
     },
     {
       "name": "Novel",
-      "count": 69
+      "count": 70
     },
     {
       "name": "Novella",
@@ -101,7 +101,7 @@
     },
     {
       "name": "Kindle",
-      "count": 57
+      "count": 58
     },
     {
       "name": "Paperback",
@@ -135,7 +135,7 @@
     },
     {
       "name": "1990s",
-      "count": 7
+      "count": 8
     },
     {
       "name": "2000s",
@@ -153,7 +153,7 @@
   "mostReadAuthors": [
     {
       "name": "Richard Laymon",
-      "count": 28,
+      "count": 29,
       "slug": "richard-laymon",
       "readings": [
         {
@@ -397,6 +397,17 @@
           "kind": "Novel",
           "title": "Funland",
           "yearPublished": "1989",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2018-07-06",
+          "slug": "the-stake-by-richard-laymon",
+          "edition": "Kindle",
+          "kind": "Novel",
+          "title": "The Stake",
+          "yearPublished": "1990",
           "includedInSlugs": [],
           "reviewed": false
         },
