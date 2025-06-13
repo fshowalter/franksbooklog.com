@@ -63,14 +63,14 @@ export function ListWithFiltersLayout({
               </div>
               <div className="mx-auto max-w-screen-max grid-cols-[1fr_48px_minmax(398px,33%)] tablet-landscape:grid tablet-landscape:grid-rows-[auto_1fr]">
                 <div
-                  className="relative z-10 col-start-3 row-span-2 row-start-2 grid min-w-[320px] text-sm transition-[grid-template-rows] duration-200 ease-in-out tablet-landscape:mr-12 tablet-landscape:block tablet-landscape:py-24 tablet-landscape:pb-12 tablet-landscape:shadow-none desktop:mr-20"
+                  className="relative z-10 col-start-3 row-span-2 row-start-2 grid min-w-[320px] text-sm transition-[grid-template-rows] duration-300 ease-in-out tablet-landscape:mr-12 tablet-landscape:block tablet-landscape:py-24 tablet-landscape:pb-12 tablet-landscape:shadow-none desktop:mr-20"
                   style={{
                     gridTemplateRows: filtersVisible ? "1fr" : "0fr",
                   }}
                 >
                   <div className="w-full overflow-hidden bg-subtle text-sm tablet:text-base tablet-landscape:overflow-visible tablet-landscape:bg-default tablet-landscape:px-container tablet-landscape:pt-0 desktop:px-8">
-                    <fieldset className="flex flex-col gap-10 bg-default px-container pb-10 tablet:gap-12 tablet-landscape:mt-0 tablet-landscape:px-0 tablet-landscape:pt-10">
-                      <legend className="tablet-landscape::block hidden w-full py-10 font-sans text-xs font-bold uppercase tracking-wide text-subtle tablet-landscape:shadow-bottom">
+                    <fieldset className="flex flex-col gap-8 bg-canvas px-container pb-10 pt-8 tablet-landscape:mt-0 tablet-landscape:gap-12 tablet-landscape:bg-default tablet-landscape:px-0 tablet-landscape:pt-10">
+                      <legend className="hidden w-full py-10 font-sans text-xs font-bold uppercase tracking-wide text-subtle tablet-landscape:block tablet-landscape:shadow-bottom">
                         Filter & Sort
                       </legend>
                       {filters}
