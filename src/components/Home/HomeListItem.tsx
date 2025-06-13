@@ -50,8 +50,8 @@ export function HomeListItem({
           loading={eagerLoadCoverImage ? "eager" : "lazy"}
         />
       </div>
-      <div className="flex w-full grow flex-col bg-default px-[8%] pb-8 pt-2 has-[a:hover]:bg-canvas desktop:pl-[8.5%] desktop:pr-[10%]">
-        <div className="whitespace-nowrap pt-1 font-sans text-xxs font-light leading-4 tracking-wide text-subtle">
+      <div className="flex w-full grow flex-col bg-default px-[8%] pb-8 has-[a:hover]:bg-canvas desktop:pl-[8.5%] desktop:pr-[10%]">
+        <div className="whitespace-nowrap pt-3 font-sans text-xxs font-light leading-4 tracking-wide text-subtle">
           {formatDate(value.date)}
         </div>
         <div className="pt-2 font-sans text-sm font-medium tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5 max:pt-2 max:text-xl max:leading-6">

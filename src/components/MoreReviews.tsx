@@ -62,8 +62,8 @@ function MoreReviewsCard({ value }: { value: MoreReviewsValue }): JSX.Element {
           loading="lazy"
         />
       </div>
-      <div className="flex w-full grow flex-col bg-default px-[8%] pb-8 pt-4 has-[a:hover]:bg-canvas desktop:pl-[8.5%] desktop:pr-[10%]">
-        <div className="font-sans text-sm font-medium leading-5 tablet:font-serif tablet:text-md max:py-1 max:text-xl max:leading-6">
+      <div className="flex w-full grow flex-col bg-default px-[8%] pb-8 has-[a:hover]:bg-canvas desktop:pl-[8.5%] desktop:pr-[10%]">
+        <div className="pt-4 font-sans text-sm font-medium tablet:pt-5 tablet:font-serif tablet:text-md tablet:leading-5 max:text-xl max:leading-6">
           <a
             className="inline-block before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0"
             href={`/reviews/${value.slug}/`}
@@ -72,11 +72,7 @@ function MoreReviewsCard({ value }: { value: MoreReviewsValue }): JSX.Element {
             {value.title}
           </a>
         </div>
-        <div className="py-2 font-sans text-xxs font-light uppercase leading-4 tracking-wide text-subtle">
-          {value.yearPublished} |{" "}
-          <span className="whitespace-nowrap">{value.kind}</span>
-        </div>
-        <p className="py-1 font-sans text-xs font-light leading-5 text-subtle tablet:font-serif tablet:text-base max:py-2">
+        <p className="pt-1 font-sans text-xs font-light leading-4 text-subtle tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5">
           by{" "}
           {toSentenceArray(
             value.authors.map((author) => {
@@ -92,7 +88,14 @@ function MoreReviewsCard({ value }: { value: MoreReviewsValue }): JSX.Element {
             }),
           )}
         </p>{" "}
-        <Grade className="mt-2" height={18} value={value.grade} />
+        <Grade
+          className="mt-2 h-4 w-20 tablet:mt-3 tablet:h-[18px] tablet:w-[90px]"
+          height={18}
+          value={value.grade}
+        />
+        <div className="mt-auto pt-6 font-sans text-xxs font-light leading-4 tracking-wide text-subtle">
+          {value.kind} | {value.yearPublished}
+        </div>
       </div>
     </li>
   );
