@@ -237,7 +237,7 @@
       })();
     </script>
     <astro-island
-      uid="1aQxVW"
+      uid="o90yN"
       prefix="r1"
       component-url="~/components/Readings/Readings"
       component-export="Readings"
@@ -439,9 +439,9 @@
             <div class="mx-auto flex flex-col items-center bg-default">
               <div class="mx-auto flex w-full flex-col items-stretch">
                 <div class="flex grow flex-col bg-subtle">
-                  <div class="relative tablet-landscape:px-0">
+                  <div class="relative tablet:px-12 tablet-landscape:px-0">
                     <div
-                      class="relative z-10 row-start-1 bg-default text-xs tablet:px-0 tablet-landscape:col-span-3 tablet-landscape:mx-0 tablet-landscape:w-full"
+                      class="relative z-10 row-start-1 bg-default text-xs tablet:-mx-12 tablet:px-0 tablet-landscape:col-span-3 tablet-landscape:mx-0 tablet-landscape:w-full"
                     >
                       <div
                         class="mx-auto flex w-full max-w-screen-max flex-wrap items-baseline justify-between gap-x-4 gap-y-5 px-container py-10 font-sans font-medium uppercase tracking-wide text-subtle"
@@ -478,260 +478,267 @@
                         class="relative z-10 col-start-3 row-span-2 row-start-2 grid min-w-[320px] text-sm transition-[grid-template-rows] duration-300 ease-in-out tablet-landscape:mr-12 tablet-landscape:block tablet-landscape:py-24 tablet-landscape:pb-12 tablet-landscape:shadow-none desktop:mr-20"
                         style="grid-template-rows: 0fr"
                       >
-                        <div
-                          class="w-full overflow-hidden bg-subtle text-sm tablet:text-base tablet-landscape:overflow-visible tablet-landscape:bg-default tablet-landscape:px-container tablet-landscape:pt-0 desktop:px-8"
-                        >
-                          <fieldset
-                            class="flex flex-col gap-8 bg-canvas px-container pb-10 pt-8 tablet-landscape:mt-0 tablet-landscape:gap-12 tablet-landscape:bg-default tablet-landscape:px-0 tablet-landscape:pt-10"
+                        <div class="overflow-hidden">
+                          <div
+                            class="w-full bg-subtle text-sm tablet:pt-12 tablet:text-base tablet-landscape:overflow-visible tablet-landscape:bg-default tablet-landscape:px-container tablet-landscape:pt-0 desktop:px-8"
                           >
-                            <legend
-                              class="hidden w-full py-10 font-sans text-xs font-bold uppercase tracking-wide text-subtle tablet-landscape:block tablet-landscape:shadow-bottom"
+                            <fieldset
+                              class="flex flex-col gap-8 bg-canvas px-container py-10 tablet-landscape:mt-0 tablet-landscape:gap-12 tablet-landscape:bg-default tablet-landscape:px-0"
                             >
-                              Filter &amp; Sort
-                            </legend>
-                            <label class="flex flex-col text-subtle"
-                              ><span
-                                class="inline-block h-6 text-left font-sans text-xxs uppercase leading-none tracking-wide text-subtle"
-                                >Title</span
-                              ><input
-                                class="border-0 bg-default px-4 py-2 text-base text-default shadow-all placeholder:text-default placeholder:opacity-50"
-                                placeholder="Enter all or part of a title"
-                                type="text"
-                            /></label>
-                            <fieldset class="text-subtle">
                               <legend
-                                class="inline-block h-6 text-left font-sans text-xxs uppercase leading-none tracking-wide text-subtle"
+                                class="hidden w-full py-10 font-sans text-xs font-bold uppercase tracking-wide text-subtle tablet-landscape:block tablet-landscape:shadow-bottom"
                               >
-                                Work Year
+                                Filter &amp; Sort
                               </legend>
-                              <div class="flex items-baseline">
-                                <label
-                                  class="flex flex-1 items-center gap-x-[.5ch]"
-                                  ><span
-                                    class="min-w-10 text-left text-sm tracking-serif-wide"
-                                    >From</span
-                                  ><select
-                                    class="select-background-image w-full appearance-none border-none bg-default py-2 pl-4 pr-8 text-base leading-6 text-subtle shadow-all outline-accent"
-                                  >
-                                    <option value="1897" selected="">
-                                      1897
-                                    </option>
-                                    <option value="1930">1930</option>
-                                    <option value="1934">1934</option>
-                                    <option value="1939">1939</option>
-                                    <option value="1944">1944</option>
-                                    <option value="1953">1953</option>
-                                    <option value="1954">1954</option>
-                                    <option value="1955">1955</option>
-                                    <option value="1970">1970</option>
-                                    <option value="1974">1974</option>
-                                    <option value="1975">1975</option>
-                                    <option value="1976">1976</option>
-                                    <option value="1977">1977</option>
-                                    <option value="1978">1978</option>
-                                    <option value="1979">1979</option>
-                                    <option value="1980">1980</option>
-                                    <option value="1981">1981</option>
-                                    <option value="1982">1982</option>
-                                    <option value="1983">1983</option>
-                                    <option value="1984">1984</option>
-                                    <option value="1985">1985</option>
-                                    <option value="1986">1986</option>
-                                    <option value="1987">1987</option>
-                                    <option value="1988">1988</option>
-                                    <option value="1989">1989</option>
-                                    <option value="1991">1991</option>
-                                    <option value="1992">1992</option>
-                                    <option value="1996">1996</option>
-                                    <option value="1998">1998</option>
-                                    <option value="2000">2000</option>
-                                    <option value="2001">2001</option>
-                                    <option value="2002">2002</option>
-                                    <option value="2003">2003</option>
-                                    <option value="2004">2004</option>
-                                    <option value="2005">2005</option>
-                                    <option value="2006">2006</option>
-                                    <option value="2009">2009</option>
-                                    <option value="2010">2010</option>
-                                    <option value="2011">2011</option>
-                                    <option value="2012">2012</option>
-                                    <option value="2013">2013</option>
-                                    <option value="2015">2015</option>
-                                    <option value="2016">2016</option>
-                                    <option value="2017">2017</option>
-                                    <option value="2018">2018</option>
-                                    <option value="2019">2019</option>
-                                    <option value="2020">2020</option>
-                                    <option value="2022">2022</option>
-                                    <option value="2023">2023</option>
-                                  </select></label
-                                ><label class="flex flex-1 items-center"
-                                  ><span
-                                    class="min-w-10 text-center text-sm tracking-serif-wide"
-                                    >to</span
-                                  ><select
-                                    class="select-background-image w-full appearance-none border-none bg-default py-2 pl-4 pr-8 text-base leading-6 text-subtle shadow-all outline-accent"
-                                  >
-                                    <option value="2023" selected="">
-                                      2023
-                                    </option>
-                                    <option value="2022">2022</option>
-                                    <option value="2020">2020</option>
-                                    <option value="2019">2019</option>
-                                    <option value="2018">2018</option>
-                                    <option value="2017">2017</option>
-                                    <option value="2016">2016</option>
-                                    <option value="2015">2015</option>
-                                    <option value="2013">2013</option>
-                                    <option value="2012">2012</option>
-                                    <option value="2011">2011</option>
-                                    <option value="2010">2010</option>
-                                    <option value="2009">2009</option>
-                                    <option value="2006">2006</option>
-                                    <option value="2005">2005</option>
-                                    <option value="2004">2004</option>
-                                    <option value="2003">2003</option>
-                                    <option value="2002">2002</option>
-                                    <option value="2001">2001</option>
-                                    <option value="2000">2000</option>
-                                    <option value="1998">1998</option>
-                                    <option value="1996">1996</option>
-                                    <option value="1992">1992</option>
-                                    <option value="1991">1991</option>
-                                    <option value="1989">1989</option>
-                                    <option value="1988">1988</option>
-                                    <option value="1987">1987</option>
-                                    <option value="1986">1986</option>
-                                    <option value="1985">1985</option>
-                                    <option value="1984">1984</option>
-                                    <option value="1983">1983</option>
-                                    <option value="1982">1982</option>
-                                    <option value="1981">1981</option>
-                                    <option value="1980">1980</option>
-                                    <option value="1979">1979</option>
-                                    <option value="1978">1978</option>
-                                    <option value="1977">1977</option>
-                                    <option value="1976">1976</option>
-                                    <option value="1975">1975</option>
-                                    <option value="1974">1974</option>
-                                    <option value="1970">1970</option>
-                                    <option value="1955">1955</option>
-                                    <option value="1954">1954</option>
-                                    <option value="1953">1953</option>
-                                    <option value="1944">1944</option>
-                                    <option value="1939">1939</option>
-                                    <option value="1934">1934</option>
-                                    <option value="1930">1930</option>
-                                    <option value="1897">1897</option>
-                                  </select></label
+                              <label class="flex flex-col text-subtle"
+                                ><span
+                                  class="inline-block h-6 text-left font-sans text-xxs uppercase leading-none tracking-wide text-subtle"
+                                  >Title</span
+                                ><input
+                                  class="border-0 bg-default px-4 py-2 text-base text-default shadow-all placeholder:text-default placeholder:opacity-50"
+                                  placeholder="Enter all or part of a title"
+                                  type="text"
+                              /></label>
+                              <fieldset class="text-subtle">
+                                <legend
+                                  class="inline-block h-6 text-left font-sans text-xxs uppercase leading-none tracking-wide text-subtle"
                                 >
-                              </div>
-                            </fieldset>
-                            <fieldset class="text-subtle">
-                              <legend
-                                class="inline-block h-6 text-left font-sans text-xxs uppercase leading-none tracking-wide text-subtle"
-                              >
-                                Reading Year
-                              </legend>
-                              <div class="flex items-baseline">
-                                <label
-                                  class="flex flex-1 items-center gap-x-[.5ch]"
-                                  ><span
-                                    class="min-w-10 text-left text-sm tracking-serif-wide"
-                                    >From</span
-                                  ><select
-                                    class="select-background-image w-full appearance-none border-none bg-default py-2 pl-4 pr-8 text-base leading-6 text-subtle shadow-all outline-accent"
+                                  Work Year
+                                </legend>
+                                <div class="flex items-baseline">
+                                  <label
+                                    class="flex flex-1 items-center gap-x-[.5ch]"
+                                    ><span
+                                      class="min-w-10 text-left text-sm tracking-serif-wide"
+                                      >From</span
+                                    ><select
+                                      class="select-background-image w-full appearance-none border-none bg-default py-2 pl-4 pr-8 text-base leading-6 text-subtle shadow-all outline-accent"
+                                    >
+                                      <option value="1897" selected="">
+                                        1897
+                                      </option>
+                                      <option value="1930">1930</option>
+                                      <option value="1934">1934</option>
+                                      <option value="1939">1939</option>
+                                      <option value="1944">1944</option>
+                                      <option value="1953">1953</option>
+                                      <option value="1954">1954</option>
+                                      <option value="1955">1955</option>
+                                      <option value="1970">1970</option>
+                                      <option value="1974">1974</option>
+                                      <option value="1975">1975</option>
+                                      <option value="1976">1976</option>
+                                      <option value="1977">1977</option>
+                                      <option value="1978">1978</option>
+                                      <option value="1979">1979</option>
+                                      <option value="1980">1980</option>
+                                      <option value="1981">1981</option>
+                                      <option value="1982">1982</option>
+                                      <option value="1983">1983</option>
+                                      <option value="1984">1984</option>
+                                      <option value="1985">1985</option>
+                                      <option value="1986">1986</option>
+                                      <option value="1987">1987</option>
+                                      <option value="1988">1988</option>
+                                      <option value="1989">1989</option>
+                                      <option value="1991">1991</option>
+                                      <option value="1992">1992</option>
+                                      <option value="1996">1996</option>
+                                      <option value="1998">1998</option>
+                                      <option value="2000">2000</option>
+                                      <option value="2001">2001</option>
+                                      <option value="2002">2002</option>
+                                      <option value="2003">2003</option>
+                                      <option value="2004">2004</option>
+                                      <option value="2005">2005</option>
+                                      <option value="2006">2006</option>
+                                      <option value="2009">2009</option>
+                                      <option value="2010">2010</option>
+                                      <option value="2011">2011</option>
+                                      <option value="2012">2012</option>
+                                      <option value="2013">2013</option>
+                                      <option value="2015">2015</option>
+                                      <option value="2016">2016</option>
+                                      <option value="2017">2017</option>
+                                      <option value="2018">2018</option>
+                                      <option value="2019">2019</option>
+                                      <option value="2020">2020</option>
+                                      <option value="2022">2022</option>
+                                      <option value="2023">2023</option>
+                                    </select></label
+                                  ><label class="flex flex-1 items-center"
+                                    ><span
+                                      class="min-w-10 text-center text-sm tracking-serif-wide"
+                                      >to</span
+                                    ><select
+                                      class="select-background-image w-full appearance-none border-none bg-default py-2 pl-4 pr-8 text-base leading-6 text-subtle shadow-all outline-accent"
+                                    >
+                                      <option value="2023" selected="">
+                                        2023
+                                      </option>
+                                      <option value="2022">2022</option>
+                                      <option value="2020">2020</option>
+                                      <option value="2019">2019</option>
+                                      <option value="2018">2018</option>
+                                      <option value="2017">2017</option>
+                                      <option value="2016">2016</option>
+                                      <option value="2015">2015</option>
+                                      <option value="2013">2013</option>
+                                      <option value="2012">2012</option>
+                                      <option value="2011">2011</option>
+                                      <option value="2010">2010</option>
+                                      <option value="2009">2009</option>
+                                      <option value="2006">2006</option>
+                                      <option value="2005">2005</option>
+                                      <option value="2004">2004</option>
+                                      <option value="2003">2003</option>
+                                      <option value="2002">2002</option>
+                                      <option value="2001">2001</option>
+                                      <option value="2000">2000</option>
+                                      <option value="1998">1998</option>
+                                      <option value="1996">1996</option>
+                                      <option value="1992">1992</option>
+                                      <option value="1991">1991</option>
+                                      <option value="1989">1989</option>
+                                      <option value="1988">1988</option>
+                                      <option value="1987">1987</option>
+                                      <option value="1986">1986</option>
+                                      <option value="1985">1985</option>
+                                      <option value="1984">1984</option>
+                                      <option value="1983">1983</option>
+                                      <option value="1982">1982</option>
+                                      <option value="1981">1981</option>
+                                      <option value="1980">1980</option>
+                                      <option value="1979">1979</option>
+                                      <option value="1978">1978</option>
+                                      <option value="1977">1977</option>
+                                      <option value="1976">1976</option>
+                                      <option value="1975">1975</option>
+                                      <option value="1974">1974</option>
+                                      <option value="1970">1970</option>
+                                      <option value="1955">1955</option>
+                                      <option value="1954">1954</option>
+                                      <option value="1953">1953</option>
+                                      <option value="1944">1944</option>
+                                      <option value="1939">1939</option>
+                                      <option value="1934">1934</option>
+                                      <option value="1930">1930</option>
+                                      <option value="1897">1897</option>
+                                    </select></label
                                   >
-                                    <option value="2011" selected="">
-                                      2011
-                                    </option>
-                                    <option value="2012">2012</option>
-                                    <option value="2013">2013</option>
-                                    <option value="2014">2014</option>
-                                    <option value="2015">2015</option>
-                                    <option value="2016">2016</option>
-                                    <option value="2017">2017</option>
-                                    <option value="2018">2018</option>
-                                    <option value="2019">2019</option>
-                                    <option value="2022">2022</option>
-                                    <option value="2023">2023</option>
-                                    <option value="2024">2024</option>
-                                    <option value="2025">2025</option>
-                                  </select></label
-                                ><label class="flex flex-1 items-center"
-                                  ><span
-                                    class="min-w-10 text-center text-sm tracking-serif-wide"
-                                    >to</span
-                                  ><select
-                                    class="select-background-image w-full appearance-none border-none bg-default py-2 pl-4 pr-8 text-base leading-6 text-subtle shadow-all outline-accent"
-                                  >
-                                    <option value="2025" selected="">
-                                      2025
-                                    </option>
-                                    <option value="2024">2024</option>
-                                    <option value="2023">2023</option>
-                                    <option value="2022">2022</option>
-                                    <option value="2019">2019</option>
-                                    <option value="2018">2018</option>
-                                    <option value="2017">2017</option>
-                                    <option value="2016">2016</option>
-                                    <option value="2015">2015</option>
-                                    <option value="2014">2014</option>
-                                    <option value="2013">2013</option>
-                                    <option value="2012">2012</option>
-                                    <option value="2011">2011</option>
-                                  </select></label
+                                </div>
+                              </fieldset>
+                              <fieldset class="text-subtle">
+                                <legend
+                                  class="inline-block h-6 text-left font-sans text-xxs uppercase leading-none tracking-wide text-subtle"
                                 >
-                              </div>
+                                  Reading Year
+                                </legend>
+                                <div class="flex items-baseline">
+                                  <label
+                                    class="flex flex-1 items-center gap-x-[.5ch]"
+                                    ><span
+                                      class="min-w-10 text-left text-sm tracking-serif-wide"
+                                      >From</span
+                                    ><select
+                                      class="select-background-image w-full appearance-none border-none bg-default py-2 pl-4 pr-8 text-base leading-6 text-subtle shadow-all outline-accent"
+                                    >
+                                      <option value="2011" selected="">
+                                        2011
+                                      </option>
+                                      <option value="2012">2012</option>
+                                      <option value="2013">2013</option>
+                                      <option value="2014">2014</option>
+                                      <option value="2015">2015</option>
+                                      <option value="2016">2016</option>
+                                      <option value="2017">2017</option>
+                                      <option value="2018">2018</option>
+                                      <option value="2019">2019</option>
+                                      <option value="2022">2022</option>
+                                      <option value="2023">2023</option>
+                                      <option value="2024">2024</option>
+                                      <option value="2025">2025</option>
+                                    </select></label
+                                  ><label class="flex flex-1 items-center"
+                                    ><span
+                                      class="min-w-10 text-center text-sm tracking-serif-wide"
+                                      >to</span
+                                    ><select
+                                      class="select-background-image w-full appearance-none border-none bg-default py-2 pl-4 pr-8 text-base leading-6 text-subtle shadow-all outline-accent"
+                                    >
+                                      <option value="2025" selected="">
+                                        2025
+                                      </option>
+                                      <option value="2024">2024</option>
+                                      <option value="2023">2023</option>
+                                      <option value="2022">2022</option>
+                                      <option value="2019">2019</option>
+                                      <option value="2018">2018</option>
+                                      <option value="2017">2017</option>
+                                      <option value="2016">2016</option>
+                                      <option value="2015">2015</option>
+                                      <option value="2014">2014</option>
+                                      <option value="2013">2013</option>
+                                      <option value="2012">2012</option>
+                                      <option value="2011">2011</option>
+                                    </select></label
+                                  >
+                                </div>
+                              </fieldset>
+                              <label class="flex flex-col"
+                                ><span
+                                  class="inline-block h-6 text-left font-sans text-xxs uppercase leading-none tracking-wide text-subtle"
+                                  >Kind</span
+                                ><select
+                                  class="select-background-image w-full appearance-none border-none bg-default py-2 pl-4 pr-8 text-base leading-6 text-subtle shadow-all outline-accent"
+                                >
+                                  <option value="All">All</option>
+                                  <option value="Anthology">Anthology</option>
+                                  <option value="Collection">Collection</option>
+                                  <option value="Nonfiction">Nonfiction</option>
+                                  <option value="Novel">Novel</option>
+                                  <option value="Novella">Novella</option>
+                                  <option value="Short Story">
+                                    Short Story
+                                  </option>
+                                </select></label
+                              ><label class="flex flex-col"
+                                ><span
+                                  class="inline-block h-6 text-left font-sans text-xxs uppercase leading-none tracking-wide text-subtle"
+                                  >Edition</span
+                                ><select
+                                  class="select-background-image w-full appearance-none border-none bg-default py-2 pl-4 pr-8 text-base leading-6 text-subtle shadow-all outline-accent"
+                                >
+                                  <option value="All">All</option>
+                                  <option value="Audible">Audible</option>
+                                  <option value="Hardcover">Hardcover</option>
+                                  <option value="Kindle">Kindle</option>
+                                  <option value="Paperback">Paperback</option>
+                                </select></label
+                              ><label class="flex flex-col"
+                                ><span
+                                  class="inline-block h-6 text-left font-sans text-xxs uppercase leading-none tracking-wide text-subtle"
+                                  >Order By</span
+                                ><select
+                                  class="select-background-image w-full appearance-none border-none bg-default py-2 pl-4 pr-8 text-base leading-6 text-subtle shadow-all outline-accent"
+                                >
+                                  <option
+                                    value="progress-date-desc"
+                                    selected=""
+                                  >
+                                    Reading Date (Newest First)
+                                  </option>
+                                  <option value="progress-date-asc">
+                                    Reading Date (Oldest First)
+                                  </option>
+                                </select></label
+                              >
                             </fieldset>
-                            <label class="flex flex-col"
-                              ><span
-                                class="inline-block h-6 text-left font-sans text-xxs uppercase leading-none tracking-wide text-subtle"
-                                >Kind</span
-                              ><select
-                                class="select-background-image w-full appearance-none border-none bg-default py-2 pl-4 pr-8 text-base leading-6 text-subtle shadow-all outline-accent"
-                              >
-                                <option value="All">All</option>
-                                <option value="Anthology">Anthology</option>
-                                <option value="Collection">Collection</option>
-                                <option value="Nonfiction">Nonfiction</option>
-                                <option value="Novel">Novel</option>
-                                <option value="Novella">Novella</option>
-                                <option value="Short Story">Short Story</option>
-                              </select></label
-                            ><label class="flex flex-col"
-                              ><span
-                                class="inline-block h-6 text-left font-sans text-xxs uppercase leading-none tracking-wide text-subtle"
-                                >Edition</span
-                              ><select
-                                class="select-background-image w-full appearance-none border-none bg-default py-2 pl-4 pr-8 text-base leading-6 text-subtle shadow-all outline-accent"
-                              >
-                                <option value="All">All</option>
-                                <option value="Audible">Audible</option>
-                                <option value="Hardcover">Hardcover</option>
-                                <option value="Kindle">Kindle</option>
-                                <option value="Paperback">Paperback</option>
-                              </select></label
-                            ><label class="flex flex-col"
-                              ><span
-                                class="inline-block h-6 text-left font-sans text-xxs uppercase leading-none tracking-wide text-subtle"
-                                >Order By</span
-                              ><select
-                                class="select-background-image w-full appearance-none border-none bg-default py-2 pl-4 pr-8 text-base leading-6 text-subtle shadow-all outline-accent"
-                              >
-                                <option value="progress-date-desc" selected="">
-                                  Reading Date (Newest First)
-                                </option>
-                                <option value="progress-date-asc">
-                                  Reading Date (Oldest First)
-                                </option>
-                              </select></label
-                            >
-                          </fieldset>
+                          </div>
                         </div>
                       </div>
                       <div
-                        class="col-start-1 row-start-2 pb-10 tablet:px-12 tablet-landscape:px-0 tablet-landscape:pl-12 desktop:pl-20"
+                        class="col-start-1 row-start-2 pb-10 tablet-landscape:pl-12 desktop:pl-20"
                       >
                         <ol data-testid="list">
                           <li class="block">
