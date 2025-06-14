@@ -52,17 +52,15 @@ export function MoreReviews({
 
 function MoreReviewsCard({ value }: { value: MoreReviewsValue }): JSX.Element {
   return (
-    <li className="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default has-[a:hover]:shadow-hover min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] desktop:w-[15.75%]">
-      <div className="bg-cover-back">
-        <Cover
-          decoding="async"
-          imageProps={value.coverImageProps}
-          {...MoreReviewsImageConfig}
-          alt=""
-          loading="lazy"
-        />
-      </div>
-      <div className="flex w-full grow flex-col bg-default px-[8%] pb-8 has-[a:hover]:bg-canvas desktop:pl-[8.5%] desktop:pr-[10%]">
+    <li className="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] desktop:w-[15.75%]">
+      <Cover
+        decoding="async"
+        imageProps={value.coverImageProps}
+        {...MoreReviewsImageConfig}
+        alt=""
+        loading="lazy"
+      />
+      <div className="flex w-full grow flex-col px-[8%] pb-8 desktop:pl-[8.5%] desktop:pr-[10%]">
         <div className="pt-4 font-sans text-sm font-medium tablet:pt-5 tablet:font-serif tablet:text-md tablet:leading-5 max:text-xl max:leading-6">
           <a
             className="inline-block before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0"
