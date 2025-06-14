@@ -64,7 +64,7 @@ export function Review({
           {value.title}
         </h1>
         {value.subtitle && (
-          <p className="max-w-prose pt-2 text-base font-light tracking-wider text-muted">
+          <p className="max-w-prose pt-2 text-center text-base font-light tracking-wider text-muted">
             {value.subtitle}
           </p>
         )}
