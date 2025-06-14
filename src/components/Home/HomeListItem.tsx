@@ -38,19 +38,17 @@ export function HomeListItem({
   value: ListItemValue;
 }): JSX.Element {
   return (
-    <li className="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default has-[a:hover]:shadow-hover min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[15.75%]">
-      <div className="bg-cover-back">
-        <Cover
-          decoding="async"
-          imageProps={value.coverImageProps}
-          {...CoverImageConfig}
-          alt={`A cover of ${value.title} by ${toSentenceArray(
-            value.authors.map((a) => a.name),
-          ).join("")}`}
-          loading={eagerLoadCoverImage ? "eager" : "lazy"}
-        />
-      </div>
-      <div className="flex w-full grow flex-col bg-default px-[8%] pb-8 has-[a:hover]:bg-canvas desktop:pl-[8.5%] desktop:pr-[10%]">
+    <li className="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[15.75%]">
+      <Cover
+        decoding="async"
+        imageProps={value.coverImageProps}
+        {...CoverImageConfig}
+        alt={`A cover of ${value.title} by ${toSentenceArray(
+          value.authors.map((a) => a.name),
+        ).join("")}`}
+        loading={eagerLoadCoverImage ? "eager" : "lazy"}
+      />
+      <div className="flex w-full grow flex-col px-[8%] pb-8 desktop:pl-[8.5%] desktop:pr-[10%]">
         <div className="whitespace-nowrap pt-3 font-sans text-xxs font-light leading-4 tracking-wide text-subtle">
           {formatDate(value.date)}
         </div>
