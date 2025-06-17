@@ -31,9 +31,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
         >
           <div
             class="
-        text-[1.375rem] leading-8 font-normal whitespace-nowrap
-        tablet:text-[1.5625rem]
-      "
+          text-[1.375rem] leading-8 font-normal whitespace-nowrap
+          tablet:text-[1.5625rem]
+        "
           >
             <a
               href="/"
@@ -52,9 +52,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
         >
           <nav
             class="
-          hidden w-full
-          desktop:block desktop:w-auto
-        "
+            hidden w-full
+            desktop:block desktop:w-auto
+          "
           >
             <ul
               class="flex flex-wrap justify-start gap-x-6 text-xl"
@@ -170,9 +170,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
           />
           <label
             class="
-          hamburger-icon
-          desktop:hidden
-        "
+            hamburger-icon
+            desktop:hidden
+          "
             for="mobile-nav"
           >
             <span
@@ -182,10 +182,10 @@ exports[`/readings/stats > matches snapshot 1`] = `
           </label>
           <ul
             class="
-          hamburger-menu flex flex-col items-start gap-y-5 text-left
-          text-inverse
-          desktop:hidden
-        "
+            hamburger-menu flex flex-col items-start gap-y-5 text-left
+            text-inverse
+            desktop:hidden
+          "
           >
             <li
               class="block w-1/2 text-2xl whitespace-nowrap"
@@ -271,9 +271,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
           
           z-10 mx-auto flex w-full
           
-            px-container text-center
-            tablet:max-w-unset tablet:px-0
-          
+                px-container text-center
+                tablet:max-w-unset tablet:px-0
+              
           flex-col
           
           py-8
@@ -321,10 +321,10 @@ exports[`/readings/stats > matches snapshot 1`] = `
         >
           <ul
             class="
-        mx-auto flex scrollbar-hidden max-w-(--breakpoint-max) overflow-x-auto
-        px-container font-sans text-sm font-normal tracking-wide
-        desktop:justify-center
-      "
+          mx-auto flex scrollbar-hidden max-w-(--breakpoint-max) overflow-x-auto
+          px-container font-sans text-sm font-normal tracking-wide
+          desktop:justify-center
+        "
           >
             <li
               class="
@@ -334,9 +334,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
             >
               <div
                 class="
-          bg-subtle p-4 whitespace-nowrap text-default
-          desktop:py-4
-        "
+            bg-subtle p-4 whitespace-nowrap text-default
+            desktop:py-4
+          "
               >
                 All-Time
               </div>
@@ -553,15 +553,15 @@ exports[`/readings/stats > matches snapshot 1`] = `
         </nav>
         <div
           class="
-      flex flex-wrap justify-center gap-6
-      desktop:flex-nowrap
-    "
+        flex flex-wrap justify-center gap-6
+        desktop:flex-nowrap
+      "
         >
           <div
             class="
-      flex size-36 flex-col justify-center rounded-full bg-stripe text-center
-      text-default shadow-all
-    "
+        flex size-36 flex-col justify-center rounded-full bg-stripe text-center
+        text-default shadow-all
+      "
           >
             <div
               class="text-[2rem] leading-8"
@@ -577,9 +577,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
           </div>
           <div
             class="
-      flex size-36 flex-col justify-center rounded-full bg-stripe text-center
-      text-default shadow-all
-    "
+        flex size-36 flex-col justify-center rounded-full bg-stripe text-center
+        text-default shadow-all
+      "
           >
             <div
               class="text-[2rem] leading-8"
@@ -595,9 +595,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
           </div>
           <div
             class="
-      flex size-36 flex-col justify-center rounded-full bg-stripe text-center
-      text-default shadow-all
-    "
+        flex size-36 flex-col justify-center rounded-full bg-stripe text-center
+        text-default shadow-all
+      "
           >
             <div
               class="text-[2rem] leading-8"
@@ -614,33 +614,33 @@ exports[`/readings/stats > matches snapshot 1`] = `
         </div>
         <div
           class="
-        mx-auto flex w-full max-w-(--breakpoint-max) flex-col items-stretch
-        gap-y-8 py-10
-        tablet:px-container
-      "
+          mx-auto flex w-full max-w-(--breakpoint-max) flex-col items-stretch
+          gap-y-8 py-10
+          tablet:px-container
+        "
         >
           <div
             class="
-          mx-auto flex w-full flex-col gap-y-8
-          desktop:max-w-[calc(66%+24px)]
-        "
+            mx-auto flex w-full flex-col gap-y-8
+            desktop:max-w-[calc(66%+24px)]
+          "
           >
             <section
               class="w-full bg-default px-container pb-8"
             >
               <h2
                 class="
-        py-4 font-medium
-        desktop:text-xl
-      "
+          py-4 font-medium
+          desktop:text-xl
+        "
               >
                 Grade Distribution
               </h2>
               <div
                 class="
-        grid w-full grid-cols-[1fr_auto]
-        tablet:whitespace-nowrap
-      "
+          grid w-full grid-cols-[1fr_auto]
+          tablet:whitespace-nowrap
+        "
               >
                 <div
                   class="col-span-2 grid grid-cols-subgrid py-3"
@@ -655,9 +655,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     </div>
                     <div
                       class="
-                  col-start-2 self-center pb-1 text-right font-sans text-xs
-                  text-nowrap text-subtle
-                "
+                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    text-nowrap text-subtle
+                  "
                     >
                       3
                     </div>
@@ -667,9 +667,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-      progress-bar-bg leading-[6px]
-      tablet:mb-0
-    "
+        progress-bar-bg leading-[6px]
+        tablet:mb-0
+      "
                       style="--bar-percent: 3.7037037037037033%;"
                     >
                        
@@ -689,9 +689,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     </div>
                     <div
                       class="
-                  col-start-2 self-center pb-1 text-right font-sans text-xs
-                  text-nowrap text-subtle
-                "
+                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    text-nowrap text-subtle
+                  "
                     >
                       8
                     </div>
@@ -701,9 +701,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-      progress-bar-bg leading-[6px]
-      tablet:mb-0
-    "
+        progress-bar-bg leading-[6px]
+        tablet:mb-0
+      "
                       style="--bar-percent: 9.876543209876543%;"
                     >
                        
@@ -723,9 +723,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     </div>
                     <div
                       class="
-                  col-start-2 self-center pb-1 text-right font-sans text-xs
-                  text-nowrap text-subtle
-                "
+                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    text-nowrap text-subtle
+                  "
                     >
                       7
                     </div>
@@ -735,9 +735,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-      progress-bar-bg leading-[6px]
-      tablet:mb-0
-    "
+        progress-bar-bg leading-[6px]
+        tablet:mb-0
+      "
                       style="--bar-percent: 8.641975308641975%;"
                     >
                        
@@ -757,9 +757,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     </div>
                     <div
                       class="
-                  col-start-2 self-center pb-1 text-right font-sans text-xs
-                  text-nowrap text-subtle
-                "
+                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    text-nowrap text-subtle
+                  "
                     >
                       14
                     </div>
@@ -769,9 +769,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-      progress-bar-bg leading-[6px]
-      tablet:mb-0
-    "
+        progress-bar-bg leading-[6px]
+        tablet:mb-0
+      "
                       style="--bar-percent: 17.28395061728395%;"
                     >
                        
@@ -791,9 +791,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     </div>
                     <div
                       class="
-                  col-start-2 self-center pb-1 text-right font-sans text-xs
-                  text-nowrap text-subtle
-                "
+                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    text-nowrap text-subtle
+                  "
                     >
                       4
                     </div>
@@ -803,9 +803,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-      progress-bar-bg leading-[6px]
-      tablet:mb-0
-    "
+        progress-bar-bg leading-[6px]
+        tablet:mb-0
+      "
                       style="--bar-percent: 4.938271604938271%;"
                     >
                        
@@ -825,9 +825,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     </div>
                     <div
                       class="
-                  col-start-2 self-center pb-1 text-right font-sans text-xs
-                  text-nowrap text-subtle
-                "
+                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    text-nowrap text-subtle
+                  "
                     >
                       15
                     </div>
@@ -837,9 +837,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-      progress-bar-bg leading-[6px]
-      tablet:mb-0
-    "
+        progress-bar-bg leading-[6px]
+        tablet:mb-0
+      "
                       style="--bar-percent: 18.51851851851852%;"
                     >
                        
@@ -859,9 +859,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     </div>
                     <div
                       class="
-                  col-start-2 self-center pb-1 text-right font-sans text-xs
-                  text-nowrap text-subtle
-                "
+                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    text-nowrap text-subtle
+                  "
                     >
                       13
                     </div>
@@ -871,9 +871,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-      progress-bar-bg leading-[6px]
-      tablet:mb-0
-    "
+        progress-bar-bg leading-[6px]
+        tablet:mb-0
+      "
                       style="--bar-percent: 16.049382716049383%;"
                     >
                        
@@ -893,9 +893,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     </div>
                     <div
                       class="
-                  col-start-2 self-center pb-1 text-right font-sans text-xs
-                  text-nowrap text-subtle
-                "
+                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    text-nowrap text-subtle
+                  "
                     >
                       5
                     </div>
@@ -905,9 +905,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-      progress-bar-bg leading-[6px]
-      tablet:mb-0
-    "
+        progress-bar-bg leading-[6px]
+        tablet:mb-0
+      "
                       style="--bar-percent: 6.172839506172839%;"
                     >
                        
@@ -927,9 +927,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     </div>
                     <div
                       class="
-                  col-start-2 self-center pb-1 text-right font-sans text-xs
-                  text-nowrap text-subtle
-                "
+                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    text-nowrap text-subtle
+                  "
                     >
                       4
                     </div>
@@ -939,9 +939,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-      progress-bar-bg leading-[6px]
-      tablet:mb-0
-    "
+        progress-bar-bg leading-[6px]
+        tablet:mb-0
+      "
                       style="--bar-percent: 4.938271604938271%;"
                     >
                        
@@ -961,9 +961,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     </div>
                     <div
                       class="
-                  col-start-2 self-center pb-1 text-right font-sans text-xs
-                  text-nowrap text-subtle
-                "
+                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    text-nowrap text-subtle
+                  "
                     >
                       5
                     </div>
@@ -973,9 +973,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-      progress-bar-bg leading-[6px]
-      tablet:mb-0
-    "
+        progress-bar-bg leading-[6px]
+        tablet:mb-0
+      "
                       style="--bar-percent: 6.172839506172839%;"
                     >
                        
@@ -995,9 +995,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     </div>
                     <div
                       class="
-                  col-start-2 self-center pb-1 text-right font-sans text-xs
-                  text-nowrap text-subtle
-                "
+                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    text-nowrap text-subtle
+                  "
                     >
                       1
                     </div>
@@ -1007,9 +1007,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-      progress-bar-bg leading-[6px]
-      tablet:mb-0
-    "
+        progress-bar-bg leading-[6px]
+        tablet:mb-0
+      "
                       style="--bar-percent: 1.2345679012345678%;"
                     >
                        
@@ -1029,9 +1029,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     </div>
                     <div
                       class="
-                  col-start-2 self-center pb-1 text-right font-sans text-xs
-                  text-nowrap text-subtle
-                "
+                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    text-nowrap text-subtle
+                  "
                     >
                       2
                     </div>
@@ -1041,9 +1041,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-      progress-bar-bg leading-[6px]
-      tablet:mb-0
-    "
+        progress-bar-bg leading-[6px]
+        tablet:mb-0
+      "
                       style="--bar-percent: 2.4691358024691357%;"
                     >
                        
@@ -1054,33 +1054,33 @@ exports[`/readings/stats > matches snapshot 1`] = `
             </section>
             <section
               class="
-      w-full bg-default pb-8
-      tablet:px-container
-    "
+        w-full bg-default pb-8
+        tablet:px-container
+      "
             >
               <h2
                 class="
-        px-container py-4 font-medium
-        tablet:px-0
-        desktop:text-xl
-      "
+          px-container py-4 font-medium
+          tablet:px-0
+          desktop:text-xl
+        "
               >
                 Most Read Authors
               </h2>
               <div
                 class="
-        w-full
-        tablet:whitespace-nowrap
-      "
+          w-full
+          tablet:whitespace-nowrap
+        "
               >
                 <div
                   class="py-3"
                 >
                   <div
                     class="
-                flex justify-between px-container
-                tablet:px-0
-              "
+                  flex justify-between px-container
+                  tablet:px-0
+                "
                   >
                     <div
                       class="font-sans text-sm text-muted"
@@ -1094,38 +1094,38 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     </div>
                     <div
                       class="
-                  col-start-2 self-center pb-1 text-right font-sans text-xs
-                  text-nowrap text-subtle
-                "
+                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    text-nowrap text-subtle
+                  "
                     >
                       26
                     </div>
                   </div>
                   <div
                     class="
-                col-span-2 row-start-2 px-container
-                tablet:px-0
-              "
+                  col-span-2 row-start-2 px-container
+                  tablet:px-0
+                "
                   >
                     <details
                       class="
-                  bg-group
-                  tablet:px-2
-                "
+                    bg-group
+                    tablet:px-2
+                  "
                     >
                       <summary
                         class="
-                    cursor-pointer px-4 py-1 font-sans text-sm text-subtle
-                    tablet:px-0
-                  "
+                      cursor-pointer px-4 py-1 font-sans text-sm text-subtle
+                      tablet:px-0
+                    "
                       >
                         Details
                       </summary>
                       <ol
                         class="
-                    py-2
-                    tablet:px-4
-                  "
+                      py-2
+                      tablet:px-4
+                    "
                       >
                         <li
                           class="
@@ -2679,9 +2679,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                 >
                   <div
                     class="
-                flex justify-between px-container
-                tablet:px-0
-              "
+                  flex justify-between px-container
+                  tablet:px-0
+                "
                   >
                     <div
                       class="font-sans text-sm text-muted"
@@ -2695,38 +2695,38 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     </div>
                     <div
                       class="
-                  col-start-2 self-center pb-1 text-right font-sans text-xs
-                  text-nowrap text-subtle
-                "
+                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    text-nowrap text-subtle
+                  "
                     >
                       21
                     </div>
                   </div>
                   <div
                     class="
-                col-span-2 row-start-2 px-container
-                tablet:px-0
-              "
+                  col-span-2 row-start-2 px-container
+                  tablet:px-0
+                "
                   >
                     <details
                       class="
-                  bg-group
-                  tablet:px-2
-                "
+                    bg-group
+                    tablet:px-2
+                  "
                     >
                       <summary
                         class="
-                    cursor-pointer px-4 py-1 font-sans text-sm text-subtle
-                    tablet:px-0
-                  "
+                      cursor-pointer px-4 py-1 font-sans text-sm text-subtle
+                      tablet:px-0
+                    "
                       >
                         Details
                       </summary>
                       <ol
                         class="
-                    py-2
-                    tablet:px-4
-                  "
+                      py-2
+                      tablet:px-4
+                    "
                       >
                         <li
                           class="
@@ -3971,9 +3971,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                 >
                   <div
                     class="
-                flex justify-between px-container
-                tablet:px-0
-              "
+                  flex justify-between px-container
+                  tablet:px-0
+                "
                   >
                     <div
                       class="font-sans text-sm text-muted"
@@ -3987,38 +3987,38 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     </div>
                     <div
                       class="
-                  col-start-2 self-center pb-1 text-right font-sans text-xs
-                  text-nowrap text-subtle
-                "
+                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    text-nowrap text-subtle
+                  "
                     >
                       13
                     </div>
                   </div>
                   <div
                     class="
-                col-span-2 row-start-2 px-container
-                tablet:px-0
-              "
+                  col-span-2 row-start-2 px-container
+                  tablet:px-0
+                "
                   >
                     <details
                       class="
-                  bg-group
-                  tablet:px-2
-                "
+                    bg-group
+                    tablet:px-2
+                  "
                     >
                       <summary
                         class="
-                    cursor-pointer px-4 py-1 font-sans text-sm text-subtle
-                    tablet:px-0
-                  "
+                      cursor-pointer px-4 py-1 font-sans text-sm text-subtle
+                      tablet:px-0
+                    "
                       >
                         Details
                       </summary>
                       <ol
                         class="
-                    py-2
-                    tablet:px-4
-                  "
+                      py-2
+                      tablet:px-4
+                    "
                       >
                         <li
                           class="
@@ -4861,9 +4861,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                 >
                   <div
                     class="
-                flex justify-between px-container
-                tablet:px-0
-              "
+                  flex justify-between px-container
+                  tablet:px-0
+                "
                   >
                     <div
                       class="font-sans text-sm text-muted"
@@ -4872,38 +4872,38 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     </div>
                     <div
                       class="
-                  col-start-2 self-center pb-1 text-right font-sans text-xs
-                  text-nowrap text-subtle
-                "
+                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    text-nowrap text-subtle
+                  "
                     >
                       3
                     </div>
                   </div>
                   <div
                     class="
-                col-span-2 row-start-2 px-container
-                tablet:px-0
-              "
+                  col-span-2 row-start-2 px-container
+                  tablet:px-0
+                "
                   >
                     <details
                       class="
-                  bg-group
-                  tablet:px-2
-                "
+                    bg-group
+                    tablet:px-2
+                  "
                     >
                       <summary
                         class="
-                    cursor-pointer px-4 py-1 font-sans text-sm text-subtle
-                    tablet:px-0
-                  "
+                      cursor-pointer px-4 py-1 font-sans text-sm text-subtle
+                      tablet:px-0
+                    "
                       >
                         Details
                       </summary>
                       <ol
                         class="
-                    py-2
-                    tablet:px-4
-                  "
+                      py-2
+                      tablet:px-4
+                    "
                       >
                         <li
                           class="
@@ -5073,9 +5073,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                 >
                   <div
                     class="
-                flex justify-between px-container
-                tablet:px-0
-              "
+                  flex justify-between px-container
+                  tablet:px-0
+                "
                   >
                     <div
                       class="font-sans text-sm text-muted"
@@ -5089,38 +5089,38 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     </div>
                     <div
                       class="
-                  col-start-2 self-center pb-1 text-right font-sans text-xs
-                  text-nowrap text-subtle
-                "
+                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    text-nowrap text-subtle
+                  "
                     >
                       3
                     </div>
                   </div>
                   <div
                     class="
-                col-span-2 row-start-2 px-container
-                tablet:px-0
-              "
+                  col-span-2 row-start-2 px-container
+                  tablet:px-0
+                "
                   >
                     <details
                       class="
-                  bg-group
-                  tablet:px-2
-                "
+                    bg-group
+                    tablet:px-2
+                  "
                     >
                       <summary
                         class="
-                    cursor-pointer px-4 py-1 font-sans text-sm text-subtle
-                    tablet:px-0
-                  "
+                      cursor-pointer px-4 py-1 font-sans text-sm text-subtle
+                      tablet:px-0
+                    "
                       >
                         Details
                       </summary>
                       <ol
                         class="
-                    py-2
-                    tablet:px-4
-                  "
+                      py-2
+                      tablet:px-4
+                    "
                       >
                         <li
                           class="
@@ -5323,9 +5323,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                 >
                   <div
                     class="
-                flex justify-between px-container
-                tablet:px-0
-              "
+                  flex justify-between px-container
+                  tablet:px-0
+                "
                   >
                     <div
                       class="font-sans text-sm text-muted"
@@ -5339,38 +5339,38 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     </div>
                     <div
                       class="
-                  col-start-2 self-center pb-1 text-right font-sans text-xs
-                  text-nowrap text-subtle
-                "
+                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    text-nowrap text-subtle
+                  "
                     >
                       3
                     </div>
                   </div>
                   <div
                     class="
-                col-span-2 row-start-2 px-container
-                tablet:px-0
-              "
+                  col-span-2 row-start-2 px-container
+                  tablet:px-0
+                "
                   >
                     <details
                       class="
-                  bg-group
-                  tablet:px-2
-                "
+                    bg-group
+                    tablet:px-2
+                  "
                     >
                       <summary
                         class="
-                    cursor-pointer px-4 py-1 font-sans text-sm text-subtle
-                    tablet:px-0
-                  "
+                      cursor-pointer px-4 py-1 font-sans text-sm text-subtle
+                      tablet:px-0
+                    "
                       >
                         Details
                       </summary>
                       <ol
                         class="
-                    py-2
-                    tablet:px-4
-                  "
+                      py-2
+                      tablet:px-4
+                    "
                       >
                         <li
                           class="
@@ -5573,9 +5573,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                 >
                   <div
                     class="
-                flex justify-between px-container
-                tablet:px-0
-              "
+                  flex justify-between px-container
+                  tablet:px-0
+                "
                   >
                     <div
                       class="font-sans text-sm text-muted"
@@ -5589,38 +5589,38 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     </div>
                     <div
                       class="
-                  col-start-2 self-center pb-1 text-right font-sans text-xs
-                  text-nowrap text-subtle
-                "
+                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    text-nowrap text-subtle
+                  "
                     >
                       2
                     </div>
                   </div>
                   <div
                     class="
-                col-span-2 row-start-2 px-container
-                tablet:px-0
-              "
+                  col-span-2 row-start-2 px-container
+                  tablet:px-0
+                "
                   >
                     <details
                       class="
-                  bg-group
-                  tablet:px-2
-                "
+                    bg-group
+                    tablet:px-2
+                  "
                     >
                       <summary
                         class="
-                    cursor-pointer px-4 py-1 font-sans text-sm text-subtle
-                    tablet:px-0
-                  "
+                      cursor-pointer px-4 py-1 font-sans text-sm text-subtle
+                      tablet:px-0
+                    "
                       >
                         Details
                       </summary>
                       <ol
                         class="
-                    py-2
-                    tablet:px-4
-                  "
+                      py-2
+                      tablet:px-4
+                    "
                       >
                         <li
                           class="
@@ -5759,9 +5759,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                 >
                   <div
                     class="
-                flex justify-between px-container
-                tablet:px-0
-              "
+                  flex justify-between px-container
+                  tablet:px-0
+                "
                   >
                     <div
                       class="font-sans text-sm text-muted"
@@ -5775,38 +5775,38 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     </div>
                     <div
                       class="
-                  col-start-2 self-center pb-1 text-right font-sans text-xs
-                  text-nowrap text-subtle
-                "
+                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    text-nowrap text-subtle
+                  "
                     >
                       2
                     </div>
                   </div>
                   <div
                     class="
-                col-span-2 row-start-2 px-container
-                tablet:px-0
-              "
+                  col-span-2 row-start-2 px-container
+                  tablet:px-0
+                "
                   >
                     <details
                       class="
-                  bg-group
-                  tablet:px-2
-                "
+                    bg-group
+                    tablet:px-2
+                  "
                     >
                       <summary
                         class="
-                    cursor-pointer px-4 py-1 font-sans text-sm text-subtle
-                    tablet:px-0
-                  "
+                      cursor-pointer px-4 py-1 font-sans text-sm text-subtle
+                      tablet:px-0
+                    "
                       >
                         Details
                       </summary>
                       <ol
                         class="
-                    py-2
-                    tablet:px-4
-                  "
+                      py-2
+                      tablet:px-4
+                    "
                       >
                         <li
                           class="
@@ -5945,9 +5945,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                 >
                   <div
                     class="
-                flex justify-between px-container
-                tablet:px-0
-              "
+                  flex justify-between px-container
+                  tablet:px-0
+                "
                   >
                     <div
                       class="font-sans text-sm text-muted"
@@ -5961,38 +5961,38 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     </div>
                     <div
                       class="
-                  col-start-2 self-center pb-1 text-right font-sans text-xs
-                  text-nowrap text-subtle
-                "
+                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    text-nowrap text-subtle
+                  "
                     >
                       2
                     </div>
                   </div>
                   <div
                     class="
-                col-span-2 row-start-2 px-container
-                tablet:px-0
-              "
+                  col-span-2 row-start-2 px-container
+                  tablet:px-0
+                "
                   >
                     <details
                       class="
-                  bg-group
-                  tablet:px-2
-                "
+                    bg-group
+                    tablet:px-2
+                  "
                     >
                       <summary
                         class="
-                    cursor-pointer px-4 py-1 font-sans text-sm text-subtle
-                    tablet:px-0
-                  "
+                      cursor-pointer px-4 py-1 font-sans text-sm text-subtle
+                      tablet:px-0
+                    "
                       >
                         Details
                       </summary>
                       <ol
                         class="
-                    py-2
-                    tablet:px-4
-                  "
+                      py-2
+                      tablet:px-4
+                    "
                       >
                         <li
                           class="
@@ -6131,9 +6131,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                 >
                   <div
                     class="
-                flex justify-between px-container
-                tablet:px-0
-              "
+                  flex justify-between px-container
+                  tablet:px-0
+                "
                   >
                     <div
                       class="font-sans text-sm text-muted"
@@ -6142,38 +6142,38 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     </div>
                     <div
                       class="
-                  col-start-2 self-center pb-1 text-right font-sans text-xs
-                  text-nowrap text-subtle
-                "
+                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    text-nowrap text-subtle
+                  "
                     >
                       2
                     </div>
                   </div>
                   <div
                     class="
-                col-span-2 row-start-2 px-container
-                tablet:px-0
-              "
+                  col-span-2 row-start-2 px-container
+                  tablet:px-0
+                "
                   >
                     <details
                       class="
-                  bg-group
-                  tablet:px-2
-                "
+                    bg-group
+                    tablet:px-2
+                  "
                     >
                       <summary
                         class="
-                    cursor-pointer px-4 py-1 font-sans text-sm text-subtle
-                    tablet:px-0
-                  "
+                      cursor-pointer px-4 py-1 font-sans text-sm text-subtle
+                      tablet:px-0
+                    "
                       >
                         Details
                       </summary>
                       <ol
                         class="
-                    py-2
-                    tablet:px-4
-                  "
+                      py-2
+                      tablet:px-4
+                    "
                       >
                         <li
                           class="
@@ -6290,26 +6290,26 @@ exports[`/readings/stats > matches snapshot 1`] = `
           </div>
           <div
             class="
-          flex flex-col items-start gap-y-8
-          desktop:flex-row desktop:gap-x-8
-        "
+            flex flex-col items-start gap-y-8
+            desktop:flex-row desktop:gap-x-8
+          "
           >
             <section
               class="w-full bg-default px-container pb-8"
             >
               <h2
                 class="
-        py-4 font-medium
-        desktop:text-xl
-      "
+          py-4 font-medium
+          desktop:text-xl
+        "
               >
                 By Year Published
               </h2>
               <div
                 class="
-        grid w-full grid-cols-[1fr_auto]
-        tablet:whitespace-nowrap
-      "
+          grid w-full grid-cols-[1fr_auto]
+          tablet:whitespace-nowrap
+        "
               >
                 <div
                   class="col-span-2 grid grid-cols-subgrid py-3"
@@ -6324,9 +6324,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     </div>
                     <div
                       class="
-                  col-start-2 self-center pb-1 text-right font-sans text-xs
-                  text-nowrap text-subtle
-                "
+                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    text-nowrap text-subtle
+                  "
                     >
                       1
                     </div>
@@ -6336,9 +6336,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-      progress-bar-bg leading-[6px]
-      tablet:mb-0
-    "
+        progress-bar-bg leading-[6px]
+        tablet:mb-0
+      "
                       style="--bar-percent: 0.7518796992481203%;"
                     >
                        
@@ -6358,9 +6358,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     </div>
                     <div
                       class="
-                  col-start-2 self-center pb-1 text-right font-sans text-xs
-                  text-nowrap text-subtle
-                "
+                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    text-nowrap text-subtle
+                  "
                     >
                       4
                     </div>
@@ -6370,9 +6370,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-      progress-bar-bg leading-[6px]
-      tablet:mb-0
-    "
+        progress-bar-bg leading-[6px]
+        tablet:mb-0
+      "
                       style="--bar-percent: 3.007518796992481%;"
                     >
                        
@@ -6392,9 +6392,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     </div>
                     <div
                       class="
-                  col-start-2 self-center pb-1 text-right font-sans text-xs
-                  text-nowrap text-subtle
-                "
+                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    text-nowrap text-subtle
+                  "
                     >
                       1
                     </div>
@@ -6404,9 +6404,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-      progress-bar-bg leading-[6px]
-      tablet:mb-0
-    "
+        progress-bar-bg leading-[6px]
+        tablet:mb-0
+      "
                       style="--bar-percent: 0.7518796992481203%;"
                     >
                        
@@ -6426,9 +6426,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     </div>
                     <div
                       class="
-                  col-start-2 self-center pb-1 text-right font-sans text-xs
-                  text-nowrap text-subtle
-                "
+                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    text-nowrap text-subtle
+                  "
                     >
                       4
                     </div>
@@ -6438,9 +6438,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-      progress-bar-bg leading-[6px]
-      tablet:mb-0
-    "
+        progress-bar-bg leading-[6px]
+        tablet:mb-0
+      "
                       style="--bar-percent: 3.007518796992481%;"
                     >
                        
@@ -6460,9 +6460,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     </div>
                     <div
                       class="
-                  col-start-2 self-center pb-1 text-right font-sans text-xs
-                  text-nowrap text-subtle
-                "
+                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    text-nowrap text-subtle
+                  "
                     >
                       19
                     </div>
@@ -6472,9 +6472,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-      progress-bar-bg leading-[6px]
-      tablet:mb-0
-    "
+        progress-bar-bg leading-[6px]
+        tablet:mb-0
+      "
                       style="--bar-percent: 14.285714285714285%;"
                     >
                        
@@ -6494,9 +6494,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     </div>
                     <div
                       class="
-                  col-start-2 self-center pb-1 text-right font-sans text-xs
-                  text-nowrap text-subtle
-                "
+                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    text-nowrap text-subtle
+                  "
                     >
                       40
                     </div>
@@ -6506,9 +6506,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-      progress-bar-bg leading-[6px]
-      tablet:mb-0
-    "
+        progress-bar-bg leading-[6px]
+        tablet:mb-0
+      "
                       style="--bar-percent: 30.075187969924812%;"
                     >
                        
@@ -6528,9 +6528,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     </div>
                     <div
                       class="
-                  col-start-2 self-center pb-1 text-right font-sans text-xs
-                  text-nowrap text-subtle
-                "
+                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    text-nowrap text-subtle
+                  "
                     >
                       6
                     </div>
@@ -6540,9 +6540,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-      progress-bar-bg leading-[6px]
-      tablet:mb-0
-    "
+        progress-bar-bg leading-[6px]
+        tablet:mb-0
+      "
                       style="--bar-percent: 4.511278195488721%;"
                     >
                        
@@ -6562,9 +6562,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     </div>
                     <div
                       class="
-                  col-start-2 self-center pb-1 text-right font-sans text-xs
-                  text-nowrap text-subtle
-                "
+                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    text-nowrap text-subtle
+                  "
                     >
                       12
                     </div>
@@ -6574,9 +6574,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-      progress-bar-bg leading-[6px]
-      tablet:mb-0
-    "
+        progress-bar-bg leading-[6px]
+        tablet:mb-0
+      "
                       style="--bar-percent: 9.022556390977442%;"
                     >
                        
@@ -6596,9 +6596,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     </div>
                     <div
                       class="
-                  col-start-2 self-center pb-1 text-right font-sans text-xs
-                  text-nowrap text-subtle
-                "
+                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    text-nowrap text-subtle
+                  "
                     >
                       35
                     </div>
@@ -6608,9 +6608,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-      progress-bar-bg leading-[6px]
-      tablet:mb-0
-    "
+        progress-bar-bg leading-[6px]
+        tablet:mb-0
+      "
                       style="--bar-percent: 26.31578947368421%;"
                     >
                        
@@ -6630,9 +6630,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     </div>
                     <div
                       class="
-                  col-start-2 self-center pb-1 text-right font-sans text-xs
-                  text-nowrap text-subtle
-                "
+                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    text-nowrap text-subtle
+                  "
                     >
                       11
                     </div>
@@ -6642,9 +6642,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-      progress-bar-bg leading-[6px]
-      tablet:mb-0
-    "
+        progress-bar-bg leading-[6px]
+        tablet:mb-0
+      "
                       style="--bar-percent: 8.270676691729323%;"
                     >
                        
@@ -6658,17 +6658,17 @@ exports[`/readings/stats > matches snapshot 1`] = `
             >
               <h2
                 class="
-        py-4 font-medium
-        desktop:text-xl
-      "
+          py-4 font-medium
+          desktop:text-xl
+        "
               >
                 By Kind
               </h2>
               <div
                 class="
-        grid w-full grid-cols-[1fr_auto]
-        tablet:whitespace-nowrap
-      "
+          grid w-full grid-cols-[1fr_auto]
+          tablet:whitespace-nowrap
+        "
               >
                 <div
                   class="col-span-2 grid grid-cols-subgrid py-3"
@@ -6683,9 +6683,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     </div>
                     <div
                       class="
-                  col-start-2 self-center pb-1 text-right font-sans text-xs
-                  text-nowrap text-subtle
-                "
+                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    text-nowrap text-subtle
+                  "
                     >
                       1
                     </div>
@@ -6695,9 +6695,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-      progress-bar-bg leading-[6px]
-      tablet:mb-0
-    "
+        progress-bar-bg leading-[6px]
+        tablet:mb-0
+      "
                       style="--bar-percent: 0.7518796992481203%;"
                     >
                        
@@ -6717,9 +6717,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     </div>
                     <div
                       class="
-                  col-start-2 self-center pb-1 text-right font-sans text-xs
-                  text-nowrap text-subtle
-                "
+                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    text-nowrap text-subtle
+                  "
                     >
                       4
                     </div>
@@ -6729,9 +6729,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-      progress-bar-bg leading-[6px]
-      tablet:mb-0
-    "
+        progress-bar-bg leading-[6px]
+        tablet:mb-0
+      "
                       style="--bar-percent: 3.007518796992481%;"
                     >
                        
@@ -6751,9 +6751,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     </div>
                     <div
                       class="
-                  col-start-2 self-center pb-1 text-right font-sans text-xs
-                  text-nowrap text-subtle
-                "
+                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    text-nowrap text-subtle
+                  "
                     >
                       42
                     </div>
@@ -6763,9 +6763,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-      progress-bar-bg leading-[6px]
-      tablet:mb-0
-    "
+        progress-bar-bg leading-[6px]
+        tablet:mb-0
+      "
                       style="--bar-percent: 31.57894736842105%;"
                     >
                        
@@ -6785,9 +6785,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     </div>
                     <div
                       class="
-                  col-start-2 self-center pb-1 text-right font-sans text-xs
-                  text-nowrap text-subtle
-                "
+                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    text-nowrap text-subtle
+                  "
                     >
                       65
                     </div>
@@ -6797,9 +6797,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-      progress-bar-bg leading-[6px]
-      tablet:mb-0
-    "
+        progress-bar-bg leading-[6px]
+        tablet:mb-0
+      "
                       style="--bar-percent: 48.87218045112782%;"
                     >
                        
@@ -6819,9 +6819,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     </div>
                     <div
                       class="
-                  col-start-2 self-center pb-1 text-right font-sans text-xs
-                  text-nowrap text-subtle
-                "
+                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    text-nowrap text-subtle
+                  "
                     >
                       3
                     </div>
@@ -6831,9 +6831,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-      progress-bar-bg leading-[6px]
-      tablet:mb-0
-    "
+        progress-bar-bg leading-[6px]
+        tablet:mb-0
+      "
                       style="--bar-percent: 2.2556390977443606%;"
                     >
                        
@@ -6853,9 +6853,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     </div>
                     <div
                       class="
-                  col-start-2 self-center pb-1 text-right font-sans text-xs
-                  text-nowrap text-subtle
-                "
+                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    text-nowrap text-subtle
+                  "
                     >
                       18
                     </div>
@@ -6865,9 +6865,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-      progress-bar-bg leading-[6px]
-      tablet:mb-0
-    "
+        progress-bar-bg leading-[6px]
+        tablet:mb-0
+      "
                       style="--bar-percent: 13.533834586466165%;"
                     >
                        
@@ -6881,17 +6881,17 @@ exports[`/readings/stats > matches snapshot 1`] = `
             >
               <h2
                 class="
-        py-4 font-medium
-        desktop:text-xl
-      "
+          py-4 font-medium
+          desktop:text-xl
+        "
               >
                 By Edition
               </h2>
               <div
                 class="
-        grid w-full grid-cols-[1fr_auto]
-        tablet:whitespace-nowrap
-      "
+          grid w-full grid-cols-[1fr_auto]
+          tablet:whitespace-nowrap
+        "
               >
                 <div
                   class="col-span-2 grid grid-cols-subgrid py-3"
@@ -6906,9 +6906,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     </div>
                     <div
                       class="
-                  col-start-2 self-center pb-1 text-right font-sans text-xs
-                  text-nowrap text-subtle
-                "
+                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    text-nowrap text-subtle
+                  "
                     >
                       30
                     </div>
@@ -6918,9 +6918,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-      progress-bar-bg leading-[6px]
-      tablet:mb-0
-    "
+        progress-bar-bg leading-[6px]
+        tablet:mb-0
+      "
                       style="--bar-percent: 22.55639097744361%;"
                     >
                        
@@ -6940,9 +6940,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     </div>
                     <div
                       class="
-                  col-start-2 self-center pb-1 text-right font-sans text-xs
-                  text-nowrap text-subtle
-                "
+                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    text-nowrap text-subtle
+                  "
                     >
                       10
                     </div>
@@ -6952,9 +6952,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-      progress-bar-bg leading-[6px]
-      tablet:mb-0
-    "
+        progress-bar-bg leading-[6px]
+        tablet:mb-0
+      "
                       style="--bar-percent: 7.518796992481203%;"
                     >
                        
@@ -6974,9 +6974,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     </div>
                     <div
                       class="
-                  col-start-2 self-center pb-1 text-right font-sans text-xs
-                  text-nowrap text-subtle
-                "
+                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    text-nowrap text-subtle
+                  "
                     >
                       49
                     </div>
@@ -6986,9 +6986,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-      progress-bar-bg leading-[6px]
-      tablet:mb-0
-    "
+        progress-bar-bg leading-[6px]
+        tablet:mb-0
+      "
                       style="--bar-percent: 36.84210526315789%;"
                     >
                        
@@ -7008,9 +7008,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     </div>
                     <div
                       class="
-                  col-start-2 self-center pb-1 text-right font-sans text-xs
-                  text-nowrap text-subtle
-                "
+                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    text-nowrap text-subtle
+                  "
                     >
                       44
                     </div>
@@ -7020,9 +7020,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-      progress-bar-bg leading-[6px]
-      tablet:mb-0
-    "
+        progress-bar-bg leading-[6px]
+        tablet:mb-0
+      "
                       style="--bar-percent: 33.08270676691729%;"
                     >
                        
@@ -7042,9 +7042,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
         >
           <div
             class="
-          flex w-full flex-col
-          tablet:flex-row-reverse tablet:justify-between
-        "
+            flex w-full flex-col
+            tablet:flex-row-reverse tablet:justify-between
+          "
           >
             <a
               class="
@@ -7062,9 +7062,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
             >
               <div
                 class="
-        text-[1.375rem] leading-8 font-normal whitespace-nowrap
-        tablet:text-[1.5625rem]
-      "
+          text-[1.375rem] leading-8 font-normal whitespace-nowrap
+          tablet:text-[1.5625rem]
+        "
               >
                 <a
                   href="/"
@@ -7081,20 +7081,20 @@ exports[`/readings/stats > matches snapshot 1`] = `
           </div>
           <div
             class="
-          justify-between
-          tablet:flex
-        "
+            justify-between
+            tablet:flex
+          "
           >
             <div
               class="
-            flex max-w-prose flex-col pb-12
-            tablet:pr-32
-          "
+              flex max-w-prose flex-col pb-12
+              tablet:pr-32
+            "
             >
               <div
                 class="
-              footer-text pt-10 font-sans text-base font-light text-subtle
-            "
+                footer-text pt-10 font-sans text-base font-light text-subtle
+              "
               >
                 <p>
                   Hi there, I'm Frank, a husband and father old enough to have read Stephen King's 
@@ -7152,15 +7152,15 @@ exports[`/readings/stats > matches snapshot 1`] = `
             </div>
             <div
               class="
-            flex grow-0 flex-col gap-20 pt-10 pb-20
-            tablet:basis-button tablet:pr-10
-          "
+              flex grow-0 flex-col gap-20 pt-10 pb-20
+              tablet:basis-button tablet:pr-10
+            "
             >
               <ul
                 class="
-              flex w-full flex-col gap-y-10
-              max:w-auto
-            "
+                flex w-full flex-col gap-y-10
+                max:w-auto
+              "
               >
                 <li
                   class="block w-1/2 text-2xl whitespace-nowrap"
@@ -7235,9 +7235,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
         </div>
         <p
           class="
-        w-full bg-footer px-container py-10 text-center leading-5 font-normal
-        text-inverse
-      "
+          w-full bg-footer px-container py-10 text-center leading-5 font-normal
+          text-inverse
+        "
         >
           All reviews by Frank Showalter. All images used in accordance with the 
           <a

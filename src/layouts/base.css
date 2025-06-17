@@ -83,7 +83,7 @@
     --fg-accent: #b02e0c;
     --fg-default: rgb(0 0 0 / 75%);
     --fg-emphasis: rgb(0 0 0 / 95%);
-    --fg-inverse-subtle: #e8e8e8;
+    --fg-inverse-subtle: #b0b0b0;
     --fg-inverse: #fff;
     --fg-muted: rgb(0 0 0 / 65%);
     --fg-subtle: rgb(0 0 0 / 60%);
@@ -251,45 +251,6 @@
     transition: 0.2s ease-in-out;
     width: 40px;
     z-index: 400;
-
-    #mobile-nav:checked + & {
-      background: #504b43;
-      border-radius: 0;
-    }
-
-    #mobile-nav:checked + & .hamburger-icon-bars {
-      background-color: #fff !important;
-      transform: rotate(45deg);
-    }
-
-    #mobile-nav:checked + & .hamburger-icon-bars::after {
-      bottom: 0;
-      transform: rotate(90deg);
-    }
-
-    #mobile-nav:checked + & .hamburger-icon-bars::before {
-      top: 0;
-      transform: rotate(90deg);
-    }
-
-    #mobile-nav:checked + & + .hamburger-menu {
-      bottom: 0;
-      height: 100%;
-      opacity: 1;
-      overflow-y: auto;
-      padding: 80px 16% 20px 12%;
-      transform: translateX(0);
-      width: 100%;
-      z-index: 250;
-
-      @media (width >= theme(--breakpoint-tablet)) {
-        padding: 160px 40px;
-      }
-
-      @media (width >= theme(--breakpoint-desktop)) {
-        padding: 160px 80px;
-      }
-    }
   }
 
   .hamburger-icon-bars {
@@ -300,53 +261,49 @@
     transition: 0.2s ease-in-out;
     transition-property: top, bottom, transform;
     width: 24px;
+  }
 
-    &::after {
-      background: inherit;
-      content: "";
-      display: block;
-      height: 2px;
-      position: absolute;
-      transition: 0.2s ease-in-out;
-      width: 24px;
-    }
+  .hamburger-icon-bars::after,
+  .hamburger-icon-bars::before {
+    background: inherit;
+    content: "";
+    display: block;
+    height: 2px;
+    position: absolute;
+    transition: 0.2s ease-in-out;
+    width: 24px;
+  }
 
-    &::before {
-      background: inherit;
-      content: "";
-      display: block;
-      height: 2px;
-      position: absolute;
-      transition: 0.2s ease-in-out;
-      width: 24px;
-    }
+  .hamburger-icon-bars::before {
+    top: -8px;
+  }
 
-    &::before {
-      top: -8px;
-    }
+  .hamburger-icon-bars::after {
+    bottom: -8px;
+  }
 
-    &::after {
-      bottom: -8px;
-    }
+  #mobile-nav:checked + .hamburger-icon {
+    background: var(--bg-footer);
+    border-radius: 0;
+  }
 
-    #mobile-nav:checked + .hamburger-icon & {
-      background-color: #fff !important;
-      transform: rotate(45deg);
-    }
-
-    #mobile-nav:checked + .hamburger-icon &::after {
-      bottom: 0;
-      transform: rotate(90deg);
-    }
-
-    #mobile-nav:checked + .hamburger-icon &::before {
-      top: 0;
-      transform: rotate(90deg);
-    }
+  #mobile-nav:checked + .hamburger-icon .hamburger-icon-bars {
+    background-color: #fff !important;
+    transform: rotate(45deg);
   }
 
   .search-button {
     color: inherit;
+  }
+
+  #mobile-nav:checked + .hamburger-icon .hamburger-icon-bars::after {
+    bottom: 0;
+    transform: rotate(90deg);
+  }
+
+  #mobile-nav:checked + .hamburger-icon .hamburger-icon-bars::before {
+    top: 0;
+    transform: rotate(90deg);
   }
 
   .hamburger-menu {
@@ -367,24 +324,24 @@
     @media (width >= theme(--breakpoint-desktop)) {
       max-width: 25vw;
     }
+  }
 
-    #mobile-nav:checked + .hamburger-icon + & {
-      bottom: 0;
-      height: 100%;
-      opacity: 1;
-      overflow-y: auto;
-      padding: 80px 16% 20px 12%;
-      transform: translateX(0);
-      width: 100%;
-      z-index: 250;
+  #mobile-nav:checked + .hamburger-icon + .hamburger-menu {
+    bottom: 0;
+    height: 100%;
+    opacity: 1;
+    overflow-y: auto;
+    padding: 80px 16% 20px 12%;
+    transform: translateX(0);
+    width: 100%;
+    z-index: 250;
 
-      @media (width >= theme(--breakpoint-tablet)) {
-        padding: 160px 40px;
-      }
+    @media (width >= theme(--breakpoint-tablet)) {
+      padding: 160px 40px;
+    }
 
-      @media (width >= theme(--breakpoint-desktop)) {
-        padding: 160px 80px;
-      }
+    @media (width >= theme(--breakpoint-desktop)) {
+      padding: 160px 80px;
     }
   }
 

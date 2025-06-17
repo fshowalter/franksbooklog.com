@@ -32,9 +32,9 @@ exports[`Home > matches snapshot 1`] = `
         >
           <nav
             class="
-          hidden w-full
-          desktop:block desktop:w-auto
-        "
+            hidden w-full
+            desktop:block desktop:w-auto
+          "
           >
             <ul
               class="flex flex-wrap justify-start gap-x-6 text-xl"
@@ -150,9 +150,9 @@ exports[`Home > matches snapshot 1`] = `
           />
           <label
             class="
-          hamburger-icon
-          desktop:hidden
-        "
+            hamburger-icon
+            desktop:hidden
+          "
             for="mobile-nav"
           >
             <span
@@ -162,10 +162,10 @@ exports[`Home > matches snapshot 1`] = `
           </label>
           <ul
             class="
-          hamburger-menu flex flex-col items-start gap-y-5 text-left
-          text-inverse
-          desktop:hidden
-        "
+            hamburger-menu flex flex-col items-start gap-y-5 text-left
+            text-inverse
+            desktop:hidden
+          "
           >
             <li
               class="block w-1/2 text-2xl whitespace-nowrap"
@@ -264,9 +264,9 @@ exports[`Home > matches snapshot 1`] = `
           max-w-(--breakpoint-max) px-container
           flex-col
           
-            bg-linear-to-t from-[rgba(0,0,0,.85)] via-[rgba(0,0,0,.85)]
-            desktop:bg-none
-          
+                bg-linear-to-t from-[rgba(0,0,0,.85)] via-[rgba(0,0,0,.85)]
+                desktop:bg-none
+              
           py-8
           tablet:pt-20 tablet:pb-10
           desktop:py-0
@@ -292,35 +292,35 @@ exports[`Home > matches snapshot 1`] = `
         </header>
         <nav
           class="
-        mx-auto max-w-(--breakpoint-max)
-        tablet:px-container
-      "
+          mx-auto max-w-(--breakpoint-max)
+          tablet:px-container
+        "
         >
           <h2
             class="py-10 font-sans text-xs font-semibold uppercase tracking-wide text-subtle 
-          px-container
-          tablet:px-0
-        "
+            px-container
+            tablet:px-0
+          "
           >
             Latest Reviews
           </h2>
           <ol
             class="
-          flex flex-wrap justify-center gap-x-[4%] gap-y-[6vw] px-[4%]
-          tablet:gap-x-[3%] tablet:px-0
-          desktop:justify-between desktop:gap-x-[1%]
-        "
+            flex flex-wrap justify-center gap-x-[4%] gap-y-[6vw] px-[4%]
+            tablet:gap-x-[3%] tablet:px-0
+            desktop:justify-between desktop:gap-x-[1%]
+          "
           >
             <li
               class="
-      relative flex w-[48%] max-w-[248px] flex-col items-center border-default
-      bg-default
-      has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
-      min-[600px]:w-[30.66666667%]
-      tablet:w-[31.33333333%]
-      min-[900px]:w-[22.75%]
-      desktop:w-[15.75%]
-    "
+        relative flex w-[48%] max-w-[248px] flex-col items-center border-default
+        bg-default
+        has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
+        min-[600px]:w-[30.66666667%]
+        tablet:w-[31.33333333%]
+        min-[900px]:w-[22.75%]
+        desktop:w-[15.75%]
+      "
             >
               <img
                 alt=""
@@ -335,24 +335,24 @@ exports[`Home > matches snapshot 1`] = `
               />
               <div
                 class="
-        flex w-full grow flex-col px-[8%] pb-8
-        desktop:pr-[10%] desktop:pl-[8.5%]
-      "
+          flex w-full grow flex-col px-[8%] pb-8
+          desktop:pr-[10%] desktop:pl-[8.5%]
+        "
               >
                 <div
                   class="
-          pt-3 font-sans text-xxs leading-4 font-light tracking-wide
-          whitespace-nowrap text-subtle
-        "
+            pt-3 font-sans text-xxs leading-4 font-light tracking-wide
+            whitespace-nowrap text-subtle
+          "
                 >
                   15 Feb 2025
                 </div>
                 <div
                   class="
-          pt-2 font-sans text-sm font-medium
-          max:pt-2 max:text-xl max:leading-6
-          tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5
-        "
+            pt-2 font-sans text-sm font-medium
+            max:pt-2 max:text-xl max:leading-6
+            tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5
+          "
                 >
                   <a
                     class="
@@ -371,9 +371,9 @@ exports[`Home > matches snapshot 1`] = `
                 </div>
                 <p
                   class="
-          pt-1 font-sans text-xs leading-4 font-light text-subtle
-          tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
-        "
+            pt-1 font-sans text-xs leading-4 font-light text-subtle
+            tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
+          "
                 >
                   by 
                   <span
@@ -401,9 +401,9 @@ exports[`Home > matches snapshot 1`] = `
                 </picture>
                 <div
                   class="
-          mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
-          text-subtle
-        "
+            mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
+            text-subtle
+          "
                 >
                   Short Story | 1985
                 </div>
@@ -411,14 +411,14 @@ exports[`Home > matches snapshot 1`] = `
             </li>
             <li
               class="
-      relative flex w-[48%] max-w-[248px] flex-col items-center border-default
-      bg-default
-      has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
-      min-[600px]:w-[30.66666667%]
-      tablet:w-[31.33333333%]
-      min-[900px]:w-[22.75%]
-      desktop:w-[15.75%]
-    "
+        relative flex w-[48%] max-w-[248px] flex-col items-center border-default
+        bg-default
+        has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
+        min-[600px]:w-[30.66666667%]
+        tablet:w-[31.33333333%]
+        min-[900px]:w-[22.75%]
+        desktop:w-[15.75%]
+      "
             >
               <img
                 alt=""
@@ -433,24 +433,24 @@ exports[`Home > matches snapshot 1`] = `
               />
               <div
                 class="
-        flex w-full grow flex-col px-[8%] pb-8
-        desktop:pr-[10%] desktop:pl-[8.5%]
-      "
+          flex w-full grow flex-col px-[8%] pb-8
+          desktop:pr-[10%] desktop:pl-[8.5%]
+        "
               >
                 <div
                   class="
-          pt-3 font-sans text-xxs leading-4 font-light tracking-wide
-          whitespace-nowrap text-subtle
-        "
+            pt-3 font-sans text-xxs leading-4 font-light tracking-wide
+            whitespace-nowrap text-subtle
+          "
                 >
                   01 Dec 2024
                 </div>
                 <div
                   class="
-          pt-2 font-sans text-sm font-medium
-          max:pt-2 max:text-xl max:leading-6
-          tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5
-        "
+            pt-2 font-sans text-sm font-medium
+            max:pt-2 max:text-xl max:leading-6
+            tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5
+          "
                 >
                   <a
                     class="
@@ -469,9 +469,9 @@ exports[`Home > matches snapshot 1`] = `
                 </div>
                 <p
                   class="
-          pt-1 font-sans text-xs leading-4 font-light text-subtle
-          tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
-        "
+            pt-1 font-sans text-xs leading-4 font-light text-subtle
+            tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
+          "
                 >
                   by 
                   <span
@@ -499,9 +499,9 @@ exports[`Home > matches snapshot 1`] = `
                 </picture>
                 <div
                   class="
-          mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
-          text-subtle
-        "
+            mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
+            text-subtle
+          "
                 >
                   Novel | 1979
                 </div>
@@ -509,14 +509,14 @@ exports[`Home > matches snapshot 1`] = `
             </li>
             <li
               class="
-      relative flex w-[48%] max-w-[248px] flex-col items-center border-default
-      bg-default
-      has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
-      min-[600px]:w-[30.66666667%]
-      tablet:w-[31.33333333%]
-      min-[900px]:w-[22.75%]
-      desktop:w-[15.75%]
-    "
+        relative flex w-[48%] max-w-[248px] flex-col items-center border-default
+        bg-default
+        has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
+        min-[600px]:w-[30.66666667%]
+        tablet:w-[31.33333333%]
+        min-[900px]:w-[22.75%]
+        desktop:w-[15.75%]
+      "
             >
               <img
                 alt=""
@@ -531,24 +531,24 @@ exports[`Home > matches snapshot 1`] = `
               />
               <div
                 class="
-        flex w-full grow flex-col px-[8%] pb-8
-        desktop:pr-[10%] desktop:pl-[8.5%]
-      "
+          flex w-full grow flex-col px-[8%] pb-8
+          desktop:pr-[10%] desktop:pl-[8.5%]
+        "
               >
                 <div
                   class="
-          pt-3 font-sans text-xxs leading-4 font-light tracking-wide
-          whitespace-nowrap text-subtle
-        "
+            pt-3 font-sans text-xxs leading-4 font-light tracking-wide
+            whitespace-nowrap text-subtle
+          "
                 >
                   08 Nov 2024
                 </div>
                 <div
                   class="
-          pt-2 font-sans text-sm font-medium
-          max:pt-2 max:text-xl max:leading-6
-          tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5
-        "
+            pt-2 font-sans text-sm font-medium
+            max:pt-2 max:text-xl max:leading-6
+            tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5
+          "
                 >
                   <a
                     class="
@@ -567,9 +567,9 @@ exports[`Home > matches snapshot 1`] = `
                 </div>
                 <p
                   class="
-          pt-1 font-sans text-xs leading-4 font-light text-subtle
-          tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
-        "
+            pt-1 font-sans text-xs leading-4 font-light text-subtle
+            tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
+          "
                 >
                   by 
                   <span
@@ -597,9 +597,9 @@ exports[`Home > matches snapshot 1`] = `
                 </picture>
                 <div
                   class="
-          mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
-          text-subtle
-        "
+            mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
+            text-subtle
+          "
                 >
                   Nonfiction | 2023
                 </div>
@@ -607,14 +607,14 @@ exports[`Home > matches snapshot 1`] = `
             </li>
             <li
               class="
-      relative flex w-[48%] max-w-[248px] flex-col items-center border-default
-      bg-default
-      has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
-      min-[600px]:w-[30.66666667%]
-      tablet:w-[31.33333333%]
-      min-[900px]:w-[22.75%]
-      desktop:w-[15.75%]
-    "
+        relative flex w-[48%] max-w-[248px] flex-col items-center border-default
+        bg-default
+        has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
+        min-[600px]:w-[30.66666667%]
+        tablet:w-[31.33333333%]
+        min-[900px]:w-[22.75%]
+        desktop:w-[15.75%]
+      "
             >
               <img
                 alt=""
@@ -629,24 +629,24 @@ exports[`Home > matches snapshot 1`] = `
               />
               <div
                 class="
-        flex w-full grow flex-col px-[8%] pb-8
-        desktop:pr-[10%] desktop:pl-[8.5%]
-      "
+          flex w-full grow flex-col px-[8%] pb-8
+          desktop:pr-[10%] desktop:pl-[8.5%]
+        "
               >
                 <div
                   class="
-          pt-3 font-sans text-xxs leading-4 font-light tracking-wide
-          whitespace-nowrap text-subtle
-        "
+            pt-3 font-sans text-xxs leading-4 font-light tracking-wide
+            whitespace-nowrap text-subtle
+          "
                 >
                   25 Aug 2024
                 </div>
                 <div
                   class="
-          pt-2 font-sans text-sm font-medium
-          max:pt-2 max:text-xl max:leading-6
-          tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5
-        "
+            pt-2 font-sans text-sm font-medium
+            max:pt-2 max:text-xl max:leading-6
+            tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5
+          "
                 >
                   <a
                     class="
@@ -665,9 +665,9 @@ exports[`Home > matches snapshot 1`] = `
                 </div>
                 <p
                   class="
-          pt-1 font-sans text-xs leading-4 font-light text-subtle
-          tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
-        "
+            pt-1 font-sans text-xs leading-4 font-light text-subtle
+            tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
+          "
                 >
                   by 
                   <span
@@ -695,9 +695,9 @@ exports[`Home > matches snapshot 1`] = `
                 </picture>
                 <div
                   class="
-          mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
-          text-subtle
-        "
+            mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
+            text-subtle
+          "
                 >
                   Nonfiction | 2022
                 </div>
@@ -705,14 +705,14 @@ exports[`Home > matches snapshot 1`] = `
             </li>
             <li
               class="
-      relative flex w-[48%] max-w-[248px] flex-col items-center border-default
-      bg-default
-      has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
-      min-[600px]:w-[30.66666667%]
-      tablet:w-[31.33333333%]
-      min-[900px]:w-[22.75%]
-      desktop:w-[15.75%]
-    "
+        relative flex w-[48%] max-w-[248px] flex-col items-center border-default
+        bg-default
+        has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
+        min-[600px]:w-[30.66666667%]
+        tablet:w-[31.33333333%]
+        min-[900px]:w-[22.75%]
+        desktop:w-[15.75%]
+      "
             >
               <img
                 alt=""
@@ -727,24 +727,24 @@ exports[`Home > matches snapshot 1`] = `
               />
               <div
                 class="
-        flex w-full grow flex-col px-[8%] pb-8
-        desktop:pr-[10%] desktop:pl-[8.5%]
-      "
+          flex w-full grow flex-col px-[8%] pb-8
+          desktop:pr-[10%] desktop:pl-[8.5%]
+        "
               >
                 <div
                   class="
-          pt-3 font-sans text-xxs leading-4 font-light tracking-wide
-          whitespace-nowrap text-subtle
-        "
+            pt-3 font-sans text-xxs leading-4 font-light tracking-wide
+            whitespace-nowrap text-subtle
+          "
                 >
                   01 Jul 2024
                 </div>
                 <div
                   class="
-          pt-2 font-sans text-sm font-medium
-          max:pt-2 max:text-xl max:leading-6
-          tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5
-        "
+            pt-2 font-sans text-sm font-medium
+            max:pt-2 max:text-xl max:leading-6
+            tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5
+          "
                 >
                   <a
                     class="
@@ -763,9 +763,9 @@ exports[`Home > matches snapshot 1`] = `
                 </div>
                 <p
                   class="
-          pt-1 font-sans text-xs leading-4 font-light text-subtle
-          tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
-        "
+            pt-1 font-sans text-xs leading-4 font-light text-subtle
+            tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
+          "
                 >
                   by 
                   <span
@@ -793,9 +793,9 @@ exports[`Home > matches snapshot 1`] = `
                 </picture>
                 <div
                   class="
-          mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
-          text-subtle
-        "
+            mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
+            text-subtle
+          "
                 >
                   Nonfiction | 2020
                 </div>
@@ -803,14 +803,14 @@ exports[`Home > matches snapshot 1`] = `
             </li>
             <li
               class="
-      relative flex w-[48%] max-w-[248px] flex-col items-center border-default
-      bg-default
-      has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
-      min-[600px]:w-[30.66666667%]
-      tablet:w-[31.33333333%]
-      min-[900px]:w-[22.75%]
-      desktop:w-[15.75%]
-    "
+        relative flex w-[48%] max-w-[248px] flex-col items-center border-default
+        bg-default
+        has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
+        min-[600px]:w-[30.66666667%]
+        tablet:w-[31.33333333%]
+        min-[900px]:w-[22.75%]
+        desktop:w-[15.75%]
+      "
             >
               <img
                 alt=""
@@ -825,24 +825,24 @@ exports[`Home > matches snapshot 1`] = `
               />
               <div
                 class="
-        flex w-full grow flex-col px-[8%] pb-8
-        desktop:pr-[10%] desktop:pl-[8.5%]
-      "
+          flex w-full grow flex-col px-[8%] pb-8
+          desktop:pr-[10%] desktop:pl-[8.5%]
+        "
               >
                 <div
                   class="
-          pt-3 font-sans text-xxs leading-4 font-light tracking-wide
-          whitespace-nowrap text-subtle
-        "
+            pt-3 font-sans text-xxs leading-4 font-light tracking-wide
+            whitespace-nowrap text-subtle
+          "
                 >
                   30 Jun 2024
                 </div>
                 <div
                   class="
-          pt-2 font-sans text-sm font-medium
-          max:pt-2 max:text-xl max:leading-6
-          tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5
-        "
+            pt-2 font-sans text-sm font-medium
+            max:pt-2 max:text-xl max:leading-6
+            tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5
+          "
                 >
                   <a
                     class="
@@ -861,9 +861,9 @@ exports[`Home > matches snapshot 1`] = `
                 </div>
                 <p
                   class="
-          pt-1 font-sans text-xs leading-4 font-light text-subtle
-          tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
-        "
+            pt-1 font-sans text-xs leading-4 font-light text-subtle
+            tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
+          "
                 >
                   by 
                   <span
@@ -891,9 +891,9 @@ exports[`Home > matches snapshot 1`] = `
                 </picture>
                 <div
                   class="
-          mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
-          text-subtle
-        "
+            mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
+            text-subtle
+          "
                 >
                   Novel | 2023
                 </div>
@@ -901,14 +901,14 @@ exports[`Home > matches snapshot 1`] = `
             </li>
             <li
               class="
-      relative flex w-[48%] max-w-[248px] flex-col items-center border-default
-      bg-default
-      has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
-      min-[600px]:w-[30.66666667%]
-      tablet:w-[31.33333333%]
-      min-[900px]:w-[22.75%]
-      desktop:w-[15.75%]
-    "
+        relative flex w-[48%] max-w-[248px] flex-col items-center border-default
+        bg-default
+        has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
+        min-[600px]:w-[30.66666667%]
+        tablet:w-[31.33333333%]
+        min-[900px]:w-[22.75%]
+        desktop:w-[15.75%]
+      "
             >
               <img
                 alt=""
@@ -923,24 +923,24 @@ exports[`Home > matches snapshot 1`] = `
               />
               <div
                 class="
-        flex w-full grow flex-col px-[8%] pb-8
-        desktop:pr-[10%] desktop:pl-[8.5%]
-      "
+          flex w-full grow flex-col px-[8%] pb-8
+          desktop:pr-[10%] desktop:pl-[8.5%]
+        "
               >
                 <div
                   class="
-          pt-3 font-sans text-xxs leading-4 font-light tracking-wide
-          whitespace-nowrap text-subtle
-        "
+            pt-3 font-sans text-xxs leading-4 font-light tracking-wide
+            whitespace-nowrap text-subtle
+          "
                 >
                   11 Nov 2023
                 </div>
                 <div
                   class="
-          pt-2 font-sans text-sm font-medium
-          max:pt-2 max:text-xl max:leading-6
-          tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5
-        "
+            pt-2 font-sans text-sm font-medium
+            max:pt-2 max:text-xl max:leading-6
+            tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5
+          "
                 >
                   <a
                     class="
@@ -959,9 +959,9 @@ exports[`Home > matches snapshot 1`] = `
                 </div>
                 <p
                   class="
-          pt-1 font-sans text-xs leading-4 font-light text-subtle
-          tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
-        "
+            pt-1 font-sans text-xs leading-4 font-light text-subtle
+            tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
+          "
                 >
                   by 
                   <span
@@ -989,9 +989,9 @@ exports[`Home > matches snapshot 1`] = `
                 </picture>
                 <div
                   class="
-          mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
-          text-subtle
-        "
+            mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
+            text-subtle
+          "
                 >
                   Nonfiction | 2019
                 </div>
@@ -999,14 +999,14 @@ exports[`Home > matches snapshot 1`] = `
             </li>
             <li
               class="
-      relative flex w-[48%] max-w-[248px] flex-col items-center border-default
-      bg-default
-      has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
-      min-[600px]:w-[30.66666667%]
-      tablet:w-[31.33333333%]
-      min-[900px]:w-[22.75%]
-      desktop:w-[15.75%]
-    "
+        relative flex w-[48%] max-w-[248px] flex-col items-center border-default
+        bg-default
+        has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
+        min-[600px]:w-[30.66666667%]
+        tablet:w-[31.33333333%]
+        min-[900px]:w-[22.75%]
+        desktop:w-[15.75%]
+      "
             >
               <img
                 alt=""
@@ -1021,24 +1021,24 @@ exports[`Home > matches snapshot 1`] = `
               />
               <div
                 class="
-        flex w-full grow flex-col px-[8%] pb-8
-        desktop:pr-[10%] desktop:pl-[8.5%]
-      "
+          flex w-full grow flex-col px-[8%] pb-8
+          desktop:pr-[10%] desktop:pl-[8.5%]
+        "
               >
                 <div
                   class="
-          pt-3 font-sans text-xxs leading-4 font-light tracking-wide
-          whitespace-nowrap text-subtle
-        "
+            pt-3 font-sans text-xxs leading-4 font-light tracking-wide
+            whitespace-nowrap text-subtle
+          "
                 >
                   06 Nov 2023
                 </div>
                 <div
                   class="
-          pt-2 font-sans text-sm font-medium
-          max:pt-2 max:text-xl max:leading-6
-          tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5
-        "
+            pt-2 font-sans text-sm font-medium
+            max:pt-2 max:text-xl max:leading-6
+            tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5
+          "
                 >
                   <a
                     class="
@@ -1057,9 +1057,9 @@ exports[`Home > matches snapshot 1`] = `
                 </div>
                 <p
                   class="
-          pt-1 font-sans text-xs leading-4 font-light text-subtle
-          tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
-        "
+            pt-1 font-sans text-xs leading-4 font-light text-subtle
+            tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
+          "
                 >
                   by 
                   <span
@@ -1093,9 +1093,9 @@ exports[`Home > matches snapshot 1`] = `
                 </picture>
                 <div
                   class="
-          mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
-          text-subtle
-        "
+            mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
+            text-subtle
+          "
                 >
                   Novel | 2023
                 </div>
@@ -1103,14 +1103,14 @@ exports[`Home > matches snapshot 1`] = `
             </li>
             <li
               class="
-      relative flex w-[48%] max-w-[248px] flex-col items-center border-default
-      bg-default
-      has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
-      min-[600px]:w-[30.66666667%]
-      tablet:w-[31.33333333%]
-      min-[900px]:w-[22.75%]
-      desktop:w-[15.75%]
-    "
+        relative flex w-[48%] max-w-[248px] flex-col items-center border-default
+        bg-default
+        has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
+        min-[600px]:w-[30.66666667%]
+        tablet:w-[31.33333333%]
+        min-[900px]:w-[22.75%]
+        desktop:w-[15.75%]
+      "
             >
               <img
                 alt=""
@@ -1125,24 +1125,24 @@ exports[`Home > matches snapshot 1`] = `
               />
               <div
                 class="
-        flex w-full grow flex-col px-[8%] pb-8
-        desktop:pr-[10%] desktop:pl-[8.5%]
-      "
+          flex w-full grow flex-col px-[8%] pb-8
+          desktop:pr-[10%] desktop:pl-[8.5%]
+        "
               >
                 <div
                   class="
-          pt-3 font-sans text-xxs leading-4 font-light tracking-wide
-          whitespace-nowrap text-subtle
-        "
+            pt-3 font-sans text-xxs leading-4 font-light tracking-wide
+            whitespace-nowrap text-subtle
+          "
                 >
                   29 Oct 2023
                 </div>
                 <div
                   class="
-          pt-2 font-sans text-sm font-medium
-          max:pt-2 max:text-xl max:leading-6
-          tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5
-        "
+            pt-2 font-sans text-sm font-medium
+            max:pt-2 max:text-xl max:leading-6
+            tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5
+          "
                 >
                   <a
                     class="
@@ -1161,9 +1161,9 @@ exports[`Home > matches snapshot 1`] = `
                 </div>
                 <p
                   class="
-          pt-1 font-sans text-xs leading-4 font-light text-subtle
-          tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
-        "
+            pt-1 font-sans text-xs leading-4 font-light text-subtle
+            tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
+          "
                 >
                   by 
                   <span
@@ -1191,9 +1191,9 @@ exports[`Home > matches snapshot 1`] = `
                 </picture>
                 <div
                   class="
-          mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
-          text-subtle
-        "
+            mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
+            text-subtle
+          "
                 >
                   Novel | 2022
                 </div>
@@ -1201,14 +1201,14 @@ exports[`Home > matches snapshot 1`] = `
             </li>
             <li
               class="
-      relative flex w-[48%] max-w-[248px] flex-col items-center border-default
-      bg-default
-      has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
-      min-[600px]:w-[30.66666667%]
-      tablet:w-[31.33333333%]
-      min-[900px]:w-[22.75%]
-      desktop:w-[15.75%]
-    "
+        relative flex w-[48%] max-w-[248px] flex-col items-center border-default
+        bg-default
+        has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
+        min-[600px]:w-[30.66666667%]
+        tablet:w-[31.33333333%]
+        min-[900px]:w-[22.75%]
+        desktop:w-[15.75%]
+      "
             >
               <img
                 alt=""
@@ -1223,24 +1223,24 @@ exports[`Home > matches snapshot 1`] = `
               />
               <div
                 class="
-        flex w-full grow flex-col px-[8%] pb-8
-        desktop:pr-[10%] desktop:pl-[8.5%]
-      "
+          flex w-full grow flex-col px-[8%] pb-8
+          desktop:pr-[10%] desktop:pl-[8.5%]
+        "
               >
                 <div
                   class="
-          pt-3 font-sans text-xxs leading-4 font-light tracking-wide
-          whitespace-nowrap text-subtle
-        "
+            pt-3 font-sans text-xxs leading-4 font-light tracking-wide
+            whitespace-nowrap text-subtle
+          "
                 >
                   22 Oct 2023
                 </div>
                 <div
                   class="
-          pt-2 font-sans text-sm font-medium
-          max:pt-2 max:text-xl max:leading-6
-          tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5
-        "
+            pt-2 font-sans text-sm font-medium
+            max:pt-2 max:text-xl max:leading-6
+            tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5
+          "
                 >
                   <a
                     class="
@@ -1259,9 +1259,9 @@ exports[`Home > matches snapshot 1`] = `
                 </div>
                 <p
                   class="
-          pt-1 font-sans text-xs leading-4 font-light text-subtle
-          tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
-        "
+            pt-1 font-sans text-xs leading-4 font-light text-subtle
+            tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
+          "
                 >
                   by 
                   <span
@@ -1289,9 +1289,9 @@ exports[`Home > matches snapshot 1`] = `
                 </picture>
                 <div
                   class="
-          mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
-          text-subtle
-        "
+            mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
+            text-subtle
+          "
                 >
                   Nonfiction | 2023
                 </div>
@@ -1299,14 +1299,14 @@ exports[`Home > matches snapshot 1`] = `
             </li>
             <li
               class="
-      relative flex w-[48%] max-w-[248px] flex-col items-center border-default
-      bg-default
-      has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
-      min-[600px]:w-[30.66666667%]
-      tablet:w-[31.33333333%]
-      min-[900px]:w-[22.75%]
-      desktop:w-[15.75%]
-    "
+        relative flex w-[48%] max-w-[248px] flex-col items-center border-default
+        bg-default
+        has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
+        min-[600px]:w-[30.66666667%]
+        tablet:w-[31.33333333%]
+        min-[900px]:w-[22.75%]
+        desktop:w-[15.75%]
+      "
             >
               <img
                 alt=""
@@ -1321,24 +1321,24 @@ exports[`Home > matches snapshot 1`] = `
               />
               <div
                 class="
-        flex w-full grow flex-col px-[8%] pb-8
-        desktop:pr-[10%] desktop:pl-[8.5%]
-      "
+          flex w-full grow flex-col px-[8%] pb-8
+          desktop:pr-[10%] desktop:pl-[8.5%]
+        "
               >
                 <div
                   class="
-          pt-3 font-sans text-xxs leading-4 font-light tracking-wide
-          whitespace-nowrap text-subtle
-        "
+            pt-3 font-sans text-xxs leading-4 font-light tracking-wide
+            whitespace-nowrap text-subtle
+          "
                 >
                   09 Oct 2023
                 </div>
                 <div
                   class="
-          pt-2 font-sans text-sm font-medium
-          max:pt-2 max:text-xl max:leading-6
-          tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5
-        "
+            pt-2 font-sans text-sm font-medium
+            max:pt-2 max:text-xl max:leading-6
+            tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5
+          "
                 >
                   <a
                     class="
@@ -1357,9 +1357,9 @@ exports[`Home > matches snapshot 1`] = `
                 </div>
                 <p
                   class="
-          pt-1 font-sans text-xs leading-4 font-light text-subtle
-          tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
-        "
+            pt-1 font-sans text-xs leading-4 font-light text-subtle
+            tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
+          "
                 >
                   by 
                   <span
@@ -1387,9 +1387,9 @@ exports[`Home > matches snapshot 1`] = `
                 </picture>
                 <div
                   class="
-          mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
-          text-subtle
-        "
+            mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
+            text-subtle
+          "
                 >
                   Novella | 2017
                 </div>
@@ -1397,14 +1397,14 @@ exports[`Home > matches snapshot 1`] = `
             </li>
             <li
               class="
-      relative flex w-[48%] max-w-[248px] flex-col items-center border-default
-      bg-default
-      has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
-      min-[600px]:w-[30.66666667%]
-      tablet:w-[31.33333333%]
-      min-[900px]:w-[22.75%]
-      desktop:w-[15.75%]
-    "
+        relative flex w-[48%] max-w-[248px] flex-col items-center border-default
+        bg-default
+        has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
+        min-[600px]:w-[30.66666667%]
+        tablet:w-[31.33333333%]
+        min-[900px]:w-[22.75%]
+        desktop:w-[15.75%]
+      "
             >
               <img
                 alt=""
@@ -1419,24 +1419,24 @@ exports[`Home > matches snapshot 1`] = `
               />
               <div
                 class="
-        flex w-full grow flex-col px-[8%] pb-8
-        desktop:pr-[10%] desktop:pl-[8.5%]
-      "
+          flex w-full grow flex-col px-[8%] pb-8
+          desktop:pr-[10%] desktop:pl-[8.5%]
+        "
               >
                 <div
                   class="
-          pt-3 font-sans text-xxs leading-4 font-light tracking-wide
-          whitespace-nowrap text-subtle
-        "
+            pt-3 font-sans text-xxs leading-4 font-light tracking-wide
+            whitespace-nowrap text-subtle
+          "
                 >
                   29 Jan 2023
                 </div>
                 <div
                   class="
-          pt-2 font-sans text-sm font-medium
-          max:pt-2 max:text-xl max:leading-6
-          tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5
-        "
+            pt-2 font-sans text-sm font-medium
+            max:pt-2 max:text-xl max:leading-6
+            tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5
+          "
                 >
                   <a
                     class="
@@ -1455,9 +1455,9 @@ exports[`Home > matches snapshot 1`] = `
                 </div>
                 <p
                   class="
-          pt-1 font-sans text-xs leading-4 font-light text-subtle
-          tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
-        "
+            pt-1 font-sans text-xs leading-4 font-light text-subtle
+            tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
+          "
                 >
                   by 
                   <span
@@ -1485,9 +1485,9 @@ exports[`Home > matches snapshot 1`] = `
                 </picture>
                 <div
                   class="
-          mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
-          text-subtle
-        "
+            mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
+            text-subtle
+          "
                 >
                   Novel | 1991
                 </div>
@@ -1518,9 +1518,9 @@ exports[`Home > matches snapshot 1`] = `
         >
           <div
             class="
-          flex w-full flex-col
-          tablet:flex-row-reverse tablet:justify-between
-        "
+            flex w-full flex-col
+            tablet:flex-row-reverse tablet:justify-between
+          "
           >
             <a
               class="
@@ -1538,9 +1538,9 @@ exports[`Home > matches snapshot 1`] = `
             >
               <div
                 class="
-        text-[1.375rem] leading-8 font-normal whitespace-nowrap
-        tablet:text-[1.5625rem]
-      "
+          text-[1.375rem] leading-8 font-normal whitespace-nowrap
+          tablet:text-[1.5625rem]
+        "
               >
                 <a
                   href="/"
@@ -1557,20 +1557,20 @@ exports[`Home > matches snapshot 1`] = `
           </div>
           <div
             class="
-          justify-between
-          tablet:flex
-        "
+            justify-between
+            tablet:flex
+          "
           >
             <div
               class="
-            flex max-w-prose flex-col pb-12
-            tablet:pr-32
-          "
+              flex max-w-prose flex-col pb-12
+              tablet:pr-32
+            "
             >
               <div
                 class="
-              footer-text pt-10 font-sans text-base font-light text-subtle
-            "
+                footer-text pt-10 font-sans text-base font-light text-subtle
+              "
               >
                 <p>
                   Hi there, I'm Frank, a husband and father old enough to have read Stephen King's 
@@ -1628,15 +1628,15 @@ exports[`Home > matches snapshot 1`] = `
             </div>
             <div
               class="
-            flex grow-0 flex-col gap-20 pt-10 pb-20
-            tablet:basis-button tablet:pr-10
-          "
+              flex grow-0 flex-col gap-20 pt-10 pb-20
+              tablet:basis-button tablet:pr-10
+            "
             >
               <ul
                 class="
-              flex w-full flex-col gap-y-10
-              max:w-auto
-            "
+                flex w-full flex-col gap-y-10
+                max:w-auto
+              "
               >
                 <li
                   class="block w-1/2 text-2xl whitespace-nowrap"
@@ -1711,9 +1711,9 @@ exports[`Home > matches snapshot 1`] = `
         </div>
         <p
           class="
-        w-full bg-footer px-container py-10 text-center leading-5 font-normal
-        text-inverse
-      "
+          w-full bg-footer px-container py-10 text-center leading-5 font-normal
+          text-inverse
+        "
         >
           All reviews by Frank Showalter. All images used in accordance with the 
           <a

@@ -13,9 +13,10 @@ exports[`Author > can filter by kind 1`] = `
     >
       <div
         class="
-          max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8
-          tablet:px-4
-        "
+            max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl
+            leading-8
+            tablet:px-4
+          "
       >
         1980
       </div>
@@ -54,9 +55,9 @@ exports[`Author > can filter by kind 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -76,9 +77,9 @@ exports[`Author > can filter by kind 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -98,9 +99,9 @@ exports[`Author > can filter by kind 1`] = `
               <img
                 alt="C+: 3 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/3-stars.svg"
                 width="80"
@@ -120,9 +121,10 @@ exports[`Author > can filter by kind 1`] = `
     >
       <div
         class="
-          max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8
-          tablet:px-4
-        "
+            max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl
+            leading-8
+            tablet:px-4
+          "
       >
         1981
       </div>
@@ -161,9 +163,9 @@ exports[`Author > can filter by kind 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -183,9 +185,9 @@ exports[`Author > can filter by kind 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -205,9 +207,9 @@ exports[`Author > can filter by kind 1`] = `
               <img
                 alt="C+: 3 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/3-stars.svg"
                 width="80"
@@ -227,9 +229,10 @@ exports[`Author > can filter by kind 1`] = `
     >
       <div
         class="
-          max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8
-          tablet:px-4
-        "
+            max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl
+            leading-8
+            tablet:px-4
+          "
       >
         1982
       </div>
@@ -268,9 +271,9 @@ exports[`Author > can filter by kind 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -290,9 +293,9 @@ exports[`Author > can filter by kind 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -312,9 +315,9 @@ exports[`Author > can filter by kind 1`] = `
               <img
                 alt="C-: 2.5 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/2-half-stars.svg"
                 width="80"
@@ -334,9 +337,10 @@ exports[`Author > can filter by kind 1`] = `
     >
       <div
         class="
-          max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8
-          tablet:px-4
-        "
+            max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl
+            leading-8
+            tablet:px-4
+          "
       >
         1985
       </div>
@@ -375,9 +379,9 @@ exports[`Author > can filter by kind 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -397,9 +401,9 @@ exports[`Author > can filter by kind 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -419,9 +423,9 @@ exports[`Author > can filter by kind 1`] = `
               <img
                 alt="C: 3 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/3-stars.svg"
                 width="80"
@@ -441,9 +445,10 @@ exports[`Author > can filter by kind 1`] = `
     >
       <div
         class="
-          max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8
-          tablet:px-4
-        "
+            max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl
+            leading-8
+            tablet:px-4
+          "
       >
         1987
       </div>
@@ -482,9 +487,9 @@ exports[`Author > can filter by kind 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -504,9 +509,9 @@ exports[`Author > can filter by kind 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -526,9 +531,9 @@ exports[`Author > can filter by kind 1`] = `
               <img
                 alt="C: 3 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/3-stars.svg"
                 width="80"
@@ -555,9 +560,10 @@ exports[`Author > can filter by title 1`] = `
     >
       <div
         class="
-          max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8
-          tablet:px-4
-        "
+            max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl
+            leading-8
+            tablet:px-4
+          "
       >
         1980
       </div>
@@ -596,9 +602,9 @@ exports[`Author > can filter by title 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -618,9 +624,9 @@ exports[`Author > can filter by title 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -640,9 +646,9 @@ exports[`Author > can filter by title 1`] = `
               <img
                 alt="C+: 3 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/3-stars.svg"
                 width="80"
@@ -669,9 +675,10 @@ exports[`Author > can filter by year published 1`] = `
     >
       <div
         class="
-          max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8
-          tablet:px-4
-        "
+            max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl
+            leading-8
+            tablet:px-4
+          "
       >
         1980
       </div>
@@ -710,9 +717,9 @@ exports[`Author > can filter by year published 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -732,9 +739,9 @@ exports[`Author > can filter by year published 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -754,9 +761,9 @@ exports[`Author > can filter by year published 1`] = `
               <img
                 alt="C+: 3 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/3-stars.svg"
                 width="80"
@@ -776,9 +783,10 @@ exports[`Author > can filter by year published 1`] = `
     >
       <div
         class="
-          max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8
-          tablet:px-4
-        "
+            max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl
+            leading-8
+            tablet:px-4
+          "
       >
         1981
       </div>
@@ -817,9 +825,9 @@ exports[`Author > can filter by year published 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -839,9 +847,9 @@ exports[`Author > can filter by year published 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -861,9 +869,9 @@ exports[`Author > can filter by year published 1`] = `
               <img
                 alt="C+: 3 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/3-stars.svg"
                 width="80"
@@ -883,9 +891,10 @@ exports[`Author > can filter by year published 1`] = `
     >
       <div
         class="
-          max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8
-          tablet:px-4
-        "
+            max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl
+            leading-8
+            tablet:px-4
+          "
       >
         1982
       </div>
@@ -924,9 +933,9 @@ exports[`Author > can filter by year published 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -946,9 +955,9 @@ exports[`Author > can filter by year published 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -968,9 +977,9 @@ exports[`Author > can filter by year published 1`] = `
               <img
                 alt="C-: 2.5 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/2-half-stars.svg"
                 width="80"
@@ -990,9 +999,10 @@ exports[`Author > can filter by year published 1`] = `
     >
       <div
         class="
-          max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8
-          tablet:px-4
-        "
+            max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl
+            leading-8
+            tablet:px-4
+          "
       >
         1984
       </div>
@@ -1031,9 +1041,9 @@ exports[`Author > can filter by year published 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -1053,9 +1063,9 @@ exports[`Author > can filter by year published 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -1075,9 +1085,9 @@ exports[`Author > can filter by year published 1`] = `
               <img
                 alt="C: 3 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/3-stars.svg"
                 width="80"
@@ -1097,9 +1107,10 @@ exports[`Author > can filter by year published 1`] = `
     >
       <div
         class="
-          max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8
-          tablet:px-4
-        "
+            max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl
+            leading-8
+            tablet:px-4
+          "
       >
         1985
       </div>
@@ -1138,9 +1149,9 @@ exports[`Author > can filter by year published 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -1160,9 +1171,9 @@ exports[`Author > can filter by year published 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -1182,9 +1193,9 @@ exports[`Author > can filter by year published 1`] = `
               <img
                 alt="D: 2 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/2-stars.svg"
                 width="80"
@@ -1222,9 +1233,9 @@ exports[`Author > can filter by year published 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -1244,9 +1255,9 @@ exports[`Author > can filter by year published 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -1266,9 +1277,9 @@ exports[`Author > can filter by year published 1`] = `
               <img
                 alt="C: 3 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/3-stars.svg"
                 width="80"
@@ -1306,9 +1317,9 @@ exports[`Author > can filter by year published 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -1328,9 +1339,9 @@ exports[`Author > can filter by year published 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -1350,9 +1361,9 @@ exports[`Author > can filter by year published 1`] = `
               <img
                 alt="C+: 3 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/3-stars.svg"
                 width="80"
@@ -1379,9 +1390,10 @@ exports[`Author > can sort by grade with best first 1`] = `
     >
       <div
         class="
-          max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8
-          tablet:px-4
-        "
+            max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl
+            leading-8
+            tablet:px-4
+          "
       >
         C+
       </div>
@@ -1420,9 +1432,9 @@ exports[`Author > can sort by grade with best first 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -1442,9 +1454,9 @@ exports[`Author > can sort by grade with best first 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -1464,9 +1476,9 @@ exports[`Author > can sort by grade with best first 1`] = `
               <img
                 alt="C+: 3 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/3-stars.svg"
                 width="80"
@@ -1504,9 +1516,9 @@ exports[`Author > can sort by grade with best first 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -1526,9 +1538,9 @@ exports[`Author > can sort by grade with best first 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -1548,9 +1560,9 @@ exports[`Author > can sort by grade with best first 1`] = `
               <img
                 alt="C+: 3 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/3-stars.svg"
                 width="80"
@@ -1588,9 +1600,9 @@ exports[`Author > can sort by grade with best first 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -1610,9 +1622,9 @@ exports[`Author > can sort by grade with best first 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -1632,9 +1644,9 @@ exports[`Author > can sort by grade with best first 1`] = `
               <img
                 alt="C+: 3 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/3-stars.svg"
                 width="80"
@@ -1654,9 +1666,10 @@ exports[`Author > can sort by grade with best first 1`] = `
     >
       <div
         class="
-          max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8
-          tablet:px-4
-        "
+            max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl
+            leading-8
+            tablet:px-4
+          "
       >
         C
       </div>
@@ -1695,9 +1708,9 @@ exports[`Author > can sort by grade with best first 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -1717,9 +1730,9 @@ exports[`Author > can sort by grade with best first 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -1739,9 +1752,9 @@ exports[`Author > can sort by grade with best first 1`] = `
               <img
                 alt="C: 3 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/3-stars.svg"
                 width="80"
@@ -1779,9 +1792,9 @@ exports[`Author > can sort by grade with best first 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -1801,9 +1814,9 @@ exports[`Author > can sort by grade with best first 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -1823,9 +1836,9 @@ exports[`Author > can sort by grade with best first 1`] = `
               <img
                 alt="C: 3 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/3-stars.svg"
                 width="80"
@@ -1863,9 +1876,9 @@ exports[`Author > can sort by grade with best first 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -1885,9 +1898,9 @@ exports[`Author > can sort by grade with best first 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -1907,9 +1920,9 @@ exports[`Author > can sort by grade with best first 1`] = `
               <img
                 alt="C: 3 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/3-stars.svg"
                 width="80"
@@ -1929,9 +1942,10 @@ exports[`Author > can sort by grade with best first 1`] = `
     >
       <div
         class="
-          max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8
-          tablet:px-4
-        "
+            max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl
+            leading-8
+            tablet:px-4
+          "
       >
         C-
       </div>
@@ -1970,9 +1984,9 @@ exports[`Author > can sort by grade with best first 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -1992,9 +2006,9 @@ exports[`Author > can sort by grade with best first 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -2014,9 +2028,9 @@ exports[`Author > can sort by grade with best first 1`] = `
               <img
                 alt="C-: 2.5 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/2-half-stars.svg"
                 width="80"
@@ -2054,9 +2068,9 @@ exports[`Author > can sort by grade with best first 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -2076,9 +2090,9 @@ exports[`Author > can sort by grade with best first 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -2098,9 +2112,9 @@ exports[`Author > can sort by grade with best first 1`] = `
               <img
                 alt="C-: 2.5 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/2-half-stars.svg"
                 width="80"
@@ -2138,9 +2152,9 @@ exports[`Author > can sort by grade with best first 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -2160,9 +2174,9 @@ exports[`Author > can sort by grade with best first 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -2182,9 +2196,9 @@ exports[`Author > can sort by grade with best first 1`] = `
               <img
                 alt="C-: 2.5 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/2-half-stars.svg"
                 width="80"
@@ -2204,9 +2218,10 @@ exports[`Author > can sort by grade with best first 1`] = `
     >
       <div
         class="
-          max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8
-          tablet:px-4
-        "
+            max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl
+            leading-8
+            tablet:px-4
+          "
       >
         D
       </div>
@@ -2245,9 +2260,9 @@ exports[`Author > can sort by grade with best first 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -2267,9 +2282,9 @@ exports[`Author > can sort by grade with best first 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -2289,9 +2304,9 @@ exports[`Author > can sort by grade with best first 1`] = `
               <img
                 alt="D: 2 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/2-stars.svg"
                 width="80"
@@ -2318,9 +2333,10 @@ exports[`Author > can sort by grade with worst first 1`] = `
     >
       <div
         class="
-          max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8
-          tablet:px-4
-        "
+            max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl
+            leading-8
+            tablet:px-4
+          "
       >
         D
       </div>
@@ -2359,9 +2375,9 @@ exports[`Author > can sort by grade with worst first 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -2381,9 +2397,9 @@ exports[`Author > can sort by grade with worst first 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -2403,9 +2419,9 @@ exports[`Author > can sort by grade with worst first 1`] = `
               <img
                 alt="D: 2 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/2-stars.svg"
                 width="80"
@@ -2425,9 +2441,10 @@ exports[`Author > can sort by grade with worst first 1`] = `
     >
       <div
         class="
-          max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8
-          tablet:px-4
-        "
+            max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl
+            leading-8
+            tablet:px-4
+          "
       >
         C-
       </div>
@@ -2466,9 +2483,9 @@ exports[`Author > can sort by grade with worst first 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -2488,9 +2505,9 @@ exports[`Author > can sort by grade with worst first 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -2510,9 +2527,9 @@ exports[`Author > can sort by grade with worst first 1`] = `
               <img
                 alt="C-: 2.5 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/2-half-stars.svg"
                 width="80"
@@ -2550,9 +2567,9 @@ exports[`Author > can sort by grade with worst first 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -2572,9 +2589,9 @@ exports[`Author > can sort by grade with worst first 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -2594,9 +2611,9 @@ exports[`Author > can sort by grade with worst first 1`] = `
               <img
                 alt="C-: 2.5 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/2-half-stars.svg"
                 width="80"
@@ -2634,9 +2651,9 @@ exports[`Author > can sort by grade with worst first 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -2656,9 +2673,9 @@ exports[`Author > can sort by grade with worst first 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -2678,9 +2695,9 @@ exports[`Author > can sort by grade with worst first 1`] = `
               <img
                 alt="C-: 2.5 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/2-half-stars.svg"
                 width="80"
@@ -2700,9 +2717,10 @@ exports[`Author > can sort by grade with worst first 1`] = `
     >
       <div
         class="
-          max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8
-          tablet:px-4
-        "
+            max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl
+            leading-8
+            tablet:px-4
+          "
       >
         C
       </div>
@@ -2741,9 +2759,9 @@ exports[`Author > can sort by grade with worst first 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -2763,9 +2781,9 @@ exports[`Author > can sort by grade with worst first 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -2785,9 +2803,9 @@ exports[`Author > can sort by grade with worst first 1`] = `
               <img
                 alt="C: 3 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/3-stars.svg"
                 width="80"
@@ -2825,9 +2843,9 @@ exports[`Author > can sort by grade with worst first 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -2847,9 +2865,9 @@ exports[`Author > can sort by grade with worst first 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -2869,9 +2887,9 @@ exports[`Author > can sort by grade with worst first 1`] = `
               <img
                 alt="C: 3 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/3-stars.svg"
                 width="80"
@@ -2909,9 +2927,9 @@ exports[`Author > can sort by grade with worst first 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -2931,9 +2949,9 @@ exports[`Author > can sort by grade with worst first 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -2953,9 +2971,9 @@ exports[`Author > can sort by grade with worst first 1`] = `
               <img
                 alt="C: 3 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/3-stars.svg"
                 width="80"
@@ -2975,9 +2993,10 @@ exports[`Author > can sort by grade with worst first 1`] = `
     >
       <div
         class="
-          max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8
-          tablet:px-4
-        "
+            max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl
+            leading-8
+            tablet:px-4
+          "
       >
         C+
       </div>
@@ -3016,9 +3035,9 @@ exports[`Author > can sort by grade with worst first 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -3038,9 +3057,9 @@ exports[`Author > can sort by grade with worst first 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -3060,9 +3079,9 @@ exports[`Author > can sort by grade with worst first 1`] = `
               <img
                 alt="C+: 3 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/3-stars.svg"
                 width="80"
@@ -3100,9 +3119,9 @@ exports[`Author > can sort by grade with worst first 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -3122,9 +3141,9 @@ exports[`Author > can sort by grade with worst first 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -3144,9 +3163,9 @@ exports[`Author > can sort by grade with worst first 1`] = `
               <img
                 alt="C+: 3 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/3-stars.svg"
                 width="80"
@@ -3184,9 +3203,9 @@ exports[`Author > can sort by grade with worst first 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -3206,9 +3225,9 @@ exports[`Author > can sort by grade with worst first 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -3228,9 +3247,9 @@ exports[`Author > can sort by grade with worst first 1`] = `
               <img
                 alt="C+: 3 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/3-stars.svg"
                 width="80"
@@ -3257,9 +3276,10 @@ exports[`Author > can sort by title a->z 1`] = `
     >
       <div
         class="
-          max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8
-          tablet:px-4
-        "
+            max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl
+            leading-8
+            tablet:px-4
+          "
       >
         B
       </div>
@@ -3298,9 +3318,9 @@ exports[`Author > can sort by title a->z 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -3320,9 +3340,9 @@ exports[`Author > can sort by title a->z 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -3342,9 +3362,9 @@ exports[`Author > can sort by title a->z 1`] = `
               <img
                 alt="C: 3 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/3-stars.svg"
                 width="80"
@@ -3364,9 +3384,10 @@ exports[`Author > can sort by title a->z 1`] = `
     >
       <div
         class="
-          max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8
-          tablet:px-4
-        "
+            max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl
+            leading-8
+            tablet:px-4
+          "
       >
         C
       </div>
@@ -3405,9 +3426,9 @@ exports[`Author > can sort by title a->z 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -3427,9 +3448,9 @@ exports[`Author > can sort by title a->z 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -3449,9 +3470,9 @@ exports[`Author > can sort by title a->z 1`] = `
               <img
                 alt="C+: 3 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/3-stars.svg"
                 width="80"
@@ -3471,9 +3492,10 @@ exports[`Author > can sort by title a->z 1`] = `
     >
       <div
         class="
-          max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8
-          tablet:px-4
-        "
+            max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl
+            leading-8
+            tablet:px-4
+          "
       >
         D
       </div>
@@ -3512,9 +3534,9 @@ exports[`Author > can sort by title a->z 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -3534,9 +3556,9 @@ exports[`Author > can sort by title a->z 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -3556,9 +3578,9 @@ exports[`Author > can sort by title a->z 1`] = `
               <img
                 alt="C-: 2.5 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/2-half-stars.svg"
                 width="80"
@@ -3578,9 +3600,10 @@ exports[`Author > can sort by title a->z 1`] = `
     >
       <div
         class="
-          max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8
-          tablet:px-4
-        "
+            max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl
+            leading-8
+            tablet:px-4
+          "
       >
         I
       </div>
@@ -3619,9 +3642,9 @@ exports[`Author > can sort by title a->z 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -3641,9 +3664,9 @@ exports[`Author > can sort by title a->z 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -3663,9 +3686,9 @@ exports[`Author > can sort by title a->z 1`] = `
               <img
                 alt="C: 3 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/3-stars.svg"
                 width="80"
@@ -3685,9 +3708,10 @@ exports[`Author > can sort by title a->z 1`] = `
     >
       <div
         class="
-          max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8
-          tablet:px-4
-        "
+            max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl
+            leading-8
+            tablet:px-4
+          "
       >
         L
       </div>
@@ -3726,9 +3750,9 @@ exports[`Author > can sort by title a->z 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -3748,9 +3772,9 @@ exports[`Author > can sort by title a->z 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -3770,9 +3794,9 @@ exports[`Author > can sort by title a->z 1`] = `
               <img
                 alt="D: 2 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/2-stars.svg"
                 width="80"
@@ -3810,9 +3834,9 @@ exports[`Author > can sort by title a->z 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -3832,9 +3856,9 @@ exports[`Author > can sort by title a->z 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -3854,9 +3878,9 @@ exports[`Author > can sort by title a->z 1`] = `
               <img
                 alt="C+: 3 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/3-stars.svg"
                 width="80"
@@ -3876,9 +3900,10 @@ exports[`Author > can sort by title a->z 1`] = `
     >
       <div
         class="
-          max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8
-          tablet:px-4
-        "
+            max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl
+            leading-8
+            tablet:px-4
+          "
       >
         O
       </div>
@@ -3917,9 +3942,9 @@ exports[`Author > can sort by title a->z 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -3939,9 +3964,9 @@ exports[`Author > can sort by title a->z 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -3961,9 +3986,9 @@ exports[`Author > can sort by title a->z 1`] = `
               <img
                 alt="C-: 2.5 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/2-half-stars.svg"
                 width="80"
@@ -3983,9 +4008,10 @@ exports[`Author > can sort by title a->z 1`] = `
     >
       <div
         class="
-          max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8
-          tablet:px-4
-        "
+            max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl
+            leading-8
+            tablet:px-4
+          "
       >
         R
       </div>
@@ -4024,9 +4050,9 @@ exports[`Author > can sort by title a->z 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -4046,9 +4072,9 @@ exports[`Author > can sort by title a->z 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -4068,9 +4094,9 @@ exports[`Author > can sort by title a->z 1`] = `
               <img
                 alt="C-: 2.5 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/2-half-stars.svg"
                 width="80"
@@ -4090,9 +4116,10 @@ exports[`Author > can sort by title a->z 1`] = `
     >
       <div
         class="
-          max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8
-          tablet:px-4
-        "
+            max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl
+            leading-8
+            tablet:px-4
+          "
       >
         T
       </div>
@@ -4131,9 +4158,9 @@ exports[`Author > can sort by title a->z 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -4153,9 +4180,9 @@ exports[`Author > can sort by title a->z 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -4175,9 +4202,9 @@ exports[`Author > can sort by title a->z 1`] = `
               <img
                 alt="C: 3 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/3-stars.svg"
                 width="80"
@@ -4197,9 +4224,10 @@ exports[`Author > can sort by title a->z 1`] = `
     >
       <div
         class="
-          max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8
-          tablet:px-4
-        "
+            max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl
+            leading-8
+            tablet:px-4
+          "
       >
         W
       </div>
@@ -4238,9 +4266,9 @@ exports[`Author > can sort by title a->z 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -4260,9 +4288,9 @@ exports[`Author > can sort by title a->z 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -4282,9 +4310,9 @@ exports[`Author > can sort by title a->z 1`] = `
               <img
                 alt="C+: 3 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/3-stars.svg"
                 width="80"
@@ -4311,9 +4339,10 @@ exports[`Author > can sort by title z->a 1`] = `
     >
       <div
         class="
-          max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8
-          tablet:px-4
-        "
+            max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl
+            leading-8
+            tablet:px-4
+          "
       >
         W
       </div>
@@ -4352,9 +4381,9 @@ exports[`Author > can sort by title z->a 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -4374,9 +4403,9 @@ exports[`Author > can sort by title z->a 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -4396,9 +4425,9 @@ exports[`Author > can sort by title z->a 1`] = `
               <img
                 alt="C+: 3 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/3-stars.svg"
                 width="80"
@@ -4418,9 +4447,10 @@ exports[`Author > can sort by title z->a 1`] = `
     >
       <div
         class="
-          max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8
-          tablet:px-4
-        "
+            max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl
+            leading-8
+            tablet:px-4
+          "
       >
         T
       </div>
@@ -4459,9 +4489,9 @@ exports[`Author > can sort by title z->a 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -4481,9 +4511,9 @@ exports[`Author > can sort by title z->a 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -4503,9 +4533,9 @@ exports[`Author > can sort by title z->a 1`] = `
               <img
                 alt="C: 3 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/3-stars.svg"
                 width="80"
@@ -4525,9 +4555,10 @@ exports[`Author > can sort by title z->a 1`] = `
     >
       <div
         class="
-          max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8
-          tablet:px-4
-        "
+            max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl
+            leading-8
+            tablet:px-4
+          "
       >
         R
       </div>
@@ -4566,9 +4597,9 @@ exports[`Author > can sort by title z->a 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -4588,9 +4619,9 @@ exports[`Author > can sort by title z->a 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -4610,9 +4641,9 @@ exports[`Author > can sort by title z->a 1`] = `
               <img
                 alt="C-: 2.5 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/2-half-stars.svg"
                 width="80"
@@ -4632,9 +4663,10 @@ exports[`Author > can sort by title z->a 1`] = `
     >
       <div
         class="
-          max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8
-          tablet:px-4
-        "
+            max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl
+            leading-8
+            tablet:px-4
+          "
       >
         O
       </div>
@@ -4673,9 +4705,9 @@ exports[`Author > can sort by title z->a 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -4695,9 +4727,9 @@ exports[`Author > can sort by title z->a 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -4717,9 +4749,9 @@ exports[`Author > can sort by title z->a 1`] = `
               <img
                 alt="C-: 2.5 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/2-half-stars.svg"
                 width="80"
@@ -4739,9 +4771,10 @@ exports[`Author > can sort by title z->a 1`] = `
     >
       <div
         class="
-          max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8
-          tablet:px-4
-        "
+            max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl
+            leading-8
+            tablet:px-4
+          "
       >
         L
       </div>
@@ -4780,9 +4813,9 @@ exports[`Author > can sort by title z->a 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -4802,9 +4835,9 @@ exports[`Author > can sort by title z->a 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -4824,9 +4857,9 @@ exports[`Author > can sort by title z->a 1`] = `
               <img
                 alt="C+: 3 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/3-stars.svg"
                 width="80"
@@ -4864,9 +4897,9 @@ exports[`Author > can sort by title z->a 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -4886,9 +4919,9 @@ exports[`Author > can sort by title z->a 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -4908,9 +4941,9 @@ exports[`Author > can sort by title z->a 1`] = `
               <img
                 alt="D: 2 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/2-stars.svg"
                 width="80"
@@ -4930,9 +4963,10 @@ exports[`Author > can sort by title z->a 1`] = `
     >
       <div
         class="
-          max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8
-          tablet:px-4
-        "
+            max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl
+            leading-8
+            tablet:px-4
+          "
       >
         I
       </div>
@@ -4971,9 +5005,9 @@ exports[`Author > can sort by title z->a 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -4993,9 +5027,9 @@ exports[`Author > can sort by title z->a 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -5015,9 +5049,9 @@ exports[`Author > can sort by title z->a 1`] = `
               <img
                 alt="C: 3 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/3-stars.svg"
                 width="80"
@@ -5037,9 +5071,10 @@ exports[`Author > can sort by title z->a 1`] = `
     >
       <div
         class="
-          max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8
-          tablet:px-4
-        "
+            max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl
+            leading-8
+            tablet:px-4
+          "
       >
         D
       </div>
@@ -5078,9 +5113,9 @@ exports[`Author > can sort by title z->a 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -5100,9 +5135,9 @@ exports[`Author > can sort by title z->a 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -5122,9 +5157,9 @@ exports[`Author > can sort by title z->a 1`] = `
               <img
                 alt="C-: 2.5 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/2-half-stars.svg"
                 width="80"
@@ -5144,9 +5179,10 @@ exports[`Author > can sort by title z->a 1`] = `
     >
       <div
         class="
-          max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8
-          tablet:px-4
-        "
+            max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl
+            leading-8
+            tablet:px-4
+          "
       >
         C
       </div>
@@ -5185,9 +5221,9 @@ exports[`Author > can sort by title z->a 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -5207,9 +5243,9 @@ exports[`Author > can sort by title z->a 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -5229,9 +5265,9 @@ exports[`Author > can sort by title z->a 1`] = `
               <img
                 alt="C+: 3 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/3-stars.svg"
                 width="80"
@@ -5251,9 +5287,10 @@ exports[`Author > can sort by title z->a 1`] = `
     >
       <div
         class="
-          max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8
-          tablet:px-4
-        "
+            max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl
+            leading-8
+            tablet:px-4
+          "
       >
         B
       </div>
@@ -5292,9 +5329,9 @@ exports[`Author > can sort by title z->a 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -5314,9 +5351,9 @@ exports[`Author > can sort by title z->a 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -5336,9 +5373,9 @@ exports[`Author > can sort by title z->a 1`] = `
               <img
                 alt="C: 3 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/3-stars.svg"
                 width="80"
@@ -5365,9 +5402,10 @@ exports[`Author > can sort by year published with newest first 1`] = `
     >
       <div
         class="
-          max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8
-          tablet:px-4
-        "
+            max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl
+            leading-8
+            tablet:px-4
+          "
       >
         1987
       </div>
@@ -5406,9 +5444,9 @@ exports[`Author > can sort by year published with newest first 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -5428,9 +5466,9 @@ exports[`Author > can sort by year published with newest first 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -5450,9 +5488,9 @@ exports[`Author > can sort by year published with newest first 1`] = `
               <img
                 alt="C: 3 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/3-stars.svg"
                 width="80"
@@ -5472,9 +5510,10 @@ exports[`Author > can sort by year published with newest first 1`] = `
     >
       <div
         class="
-          max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8
-          tablet:px-4
-        "
+            max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl
+            leading-8
+            tablet:px-4
+          "
       >
         1985
       </div>
@@ -5513,9 +5552,9 @@ exports[`Author > can sort by year published with newest first 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -5535,9 +5574,9 @@ exports[`Author > can sort by year published with newest first 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -5557,9 +5596,9 @@ exports[`Author > can sort by year published with newest first 1`] = `
               <img
                 alt="C+: 3 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/3-stars.svg"
                 width="80"
@@ -5597,9 +5636,9 @@ exports[`Author > can sort by year published with newest first 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -5619,9 +5658,9 @@ exports[`Author > can sort by year published with newest first 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -5641,9 +5680,9 @@ exports[`Author > can sort by year published with newest first 1`] = `
               <img
                 alt="D: 2 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/2-stars.svg"
                 width="80"
@@ -5681,9 +5720,9 @@ exports[`Author > can sort by year published with newest first 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -5703,9 +5742,9 @@ exports[`Author > can sort by year published with newest first 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -5725,9 +5764,9 @@ exports[`Author > can sort by year published with newest first 1`] = `
               <img
                 alt="C: 3 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/3-stars.svg"
                 width="80"
@@ -5747,9 +5786,10 @@ exports[`Author > can sort by year published with newest first 1`] = `
     >
       <div
         class="
-          max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8
-          tablet:px-4
-        "
+            max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl
+            leading-8
+            tablet:px-4
+          "
       >
         1984
       </div>
@@ -5788,9 +5828,9 @@ exports[`Author > can sort by year published with newest first 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -5810,9 +5850,9 @@ exports[`Author > can sort by year published with newest first 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -5832,9 +5872,9 @@ exports[`Author > can sort by year published with newest first 1`] = `
               <img
                 alt="C: 3 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/3-stars.svg"
                 width="80"
@@ -5854,9 +5894,10 @@ exports[`Author > can sort by year published with newest first 1`] = `
     >
       <div
         class="
-          max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8
-          tablet:px-4
-        "
+            max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl
+            leading-8
+            tablet:px-4
+          "
       >
         1982
       </div>
@@ -5895,9 +5936,9 @@ exports[`Author > can sort by year published with newest first 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -5917,9 +5958,9 @@ exports[`Author > can sort by year published with newest first 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -5939,9 +5980,9 @@ exports[`Author > can sort by year published with newest first 1`] = `
               <img
                 alt="C-: 2.5 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/2-half-stars.svg"
                 width="80"
@@ -5961,9 +6002,10 @@ exports[`Author > can sort by year published with newest first 1`] = `
     >
       <div
         class="
-          max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8
-          tablet:px-4
-        "
+            max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl
+            leading-8
+            tablet:px-4
+          "
       >
         1981
       </div>
@@ -6002,9 +6044,9 @@ exports[`Author > can sort by year published with newest first 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -6024,9 +6066,9 @@ exports[`Author > can sort by year published with newest first 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -6046,9 +6088,9 @@ exports[`Author > can sort by year published with newest first 1`] = `
               <img
                 alt="C+: 3 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/3-stars.svg"
                 width="80"
@@ -6068,9 +6110,10 @@ exports[`Author > can sort by year published with newest first 1`] = `
     >
       <div
         class="
-          max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8
-          tablet:px-4
-        "
+            max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl
+            leading-8
+            tablet:px-4
+          "
       >
         1980
       </div>
@@ -6109,9 +6152,9 @@ exports[`Author > can sort by year published with newest first 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -6131,9 +6174,9 @@ exports[`Author > can sort by year published with newest first 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -6153,9 +6196,9 @@ exports[`Author > can sort by year published with newest first 1`] = `
               <img
                 alt="C+: 3 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/3-stars.svg"
                 width="80"
@@ -6175,9 +6218,10 @@ exports[`Author > can sort by year published with newest first 1`] = `
     >
       <div
         class="
-          max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8
-          tablet:px-4
-        "
+            max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl
+            leading-8
+            tablet:px-4
+          "
       >
         1974
       </div>
@@ -6216,9 +6260,9 @@ exports[`Author > can sort by year published with newest first 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -6238,9 +6282,9 @@ exports[`Author > can sort by year published with newest first 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -6260,9 +6304,9 @@ exports[`Author > can sort by year published with newest first 1`] = `
               <img
                 alt="C-: 2.5 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/2-half-stars.svg"
                 width="80"
@@ -6282,9 +6326,10 @@ exports[`Author > can sort by year published with newest first 1`] = `
     >
       <div
         class="
-          max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8
-          tablet:px-4
-        "
+            max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl
+            leading-8
+            tablet:px-4
+          "
       >
         1970
       </div>
@@ -6323,9 +6368,9 @@ exports[`Author > can sort by year published with newest first 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -6345,9 +6390,9 @@ exports[`Author > can sort by year published with newest first 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -6367,9 +6412,9 @@ exports[`Author > can sort by year published with newest first 1`] = `
               <img
                 alt="C-: 2.5 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/2-half-stars.svg"
                 width="80"
@@ -6396,9 +6441,10 @@ exports[`Author > can sort by year published with oldest first 1`] = `
     >
       <div
         class="
-          max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8
-          tablet:px-4
-        "
+            max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl
+            leading-8
+            tablet:px-4
+          "
       >
         1970
       </div>
@@ -6437,9 +6483,9 @@ exports[`Author > can sort by year published with oldest first 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -6459,9 +6505,9 @@ exports[`Author > can sort by year published with oldest first 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -6481,9 +6527,9 @@ exports[`Author > can sort by year published with oldest first 1`] = `
               <img
                 alt="C-: 2.5 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/2-half-stars.svg"
                 width="80"
@@ -6503,9 +6549,10 @@ exports[`Author > can sort by year published with oldest first 1`] = `
     >
       <div
         class="
-          max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8
-          tablet:px-4
-        "
+            max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl
+            leading-8
+            tablet:px-4
+          "
       >
         1974
       </div>
@@ -6544,9 +6591,9 @@ exports[`Author > can sort by year published with oldest first 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -6566,9 +6613,9 @@ exports[`Author > can sort by year published with oldest first 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -6588,9 +6635,9 @@ exports[`Author > can sort by year published with oldest first 1`] = `
               <img
                 alt="C-: 2.5 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/2-half-stars.svg"
                 width="80"
@@ -6610,9 +6657,10 @@ exports[`Author > can sort by year published with oldest first 1`] = `
     >
       <div
         class="
-          max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8
-          tablet:px-4
-        "
+            max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl
+            leading-8
+            tablet:px-4
+          "
       >
         1980
       </div>
@@ -6651,9 +6699,9 @@ exports[`Author > can sort by year published with oldest first 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -6673,9 +6721,9 @@ exports[`Author > can sort by year published with oldest first 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -6695,9 +6743,9 @@ exports[`Author > can sort by year published with oldest first 1`] = `
               <img
                 alt="C+: 3 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/3-stars.svg"
                 width="80"
@@ -6717,9 +6765,10 @@ exports[`Author > can sort by year published with oldest first 1`] = `
     >
       <div
         class="
-          max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8
-          tablet:px-4
-        "
+            max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl
+            leading-8
+            tablet:px-4
+          "
       >
         1981
       </div>
@@ -6758,9 +6807,9 @@ exports[`Author > can sort by year published with oldest first 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -6780,9 +6829,9 @@ exports[`Author > can sort by year published with oldest first 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -6802,9 +6851,9 @@ exports[`Author > can sort by year published with oldest first 1`] = `
               <img
                 alt="C+: 3 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/3-stars.svg"
                 width="80"
@@ -6824,9 +6873,10 @@ exports[`Author > can sort by year published with oldest first 1`] = `
     >
       <div
         class="
-          max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8
-          tablet:px-4
-        "
+            max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl
+            leading-8
+            tablet:px-4
+          "
       >
         1982
       </div>
@@ -6865,9 +6915,9 @@ exports[`Author > can sort by year published with oldest first 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -6887,9 +6937,9 @@ exports[`Author > can sort by year published with oldest first 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -6909,9 +6959,9 @@ exports[`Author > can sort by year published with oldest first 1`] = `
               <img
                 alt="C-: 2.5 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/2-half-stars.svg"
                 width="80"
@@ -6931,9 +6981,10 @@ exports[`Author > can sort by year published with oldest first 1`] = `
     >
       <div
         class="
-          max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8
-          tablet:px-4
-        "
+            max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl
+            leading-8
+            tablet:px-4
+          "
       >
         1984
       </div>
@@ -6972,9 +7023,9 @@ exports[`Author > can sort by year published with oldest first 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -6994,9 +7045,9 @@ exports[`Author > can sort by year published with oldest first 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -7016,9 +7067,9 @@ exports[`Author > can sort by year published with oldest first 1`] = `
               <img
                 alt="C: 3 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/3-stars.svg"
                 width="80"
@@ -7038,9 +7089,10 @@ exports[`Author > can sort by year published with oldest first 1`] = `
     >
       <div
         class="
-          max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8
-          tablet:px-4
-        "
+            max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl
+            leading-8
+            tablet:px-4
+          "
       >
         1985
       </div>
@@ -7079,9 +7131,9 @@ exports[`Author > can sort by year published with oldest first 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -7101,9 +7153,9 @@ exports[`Author > can sort by year published with oldest first 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -7123,9 +7175,9 @@ exports[`Author > can sort by year published with oldest first 1`] = `
               <img
                 alt="C+: 3 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/3-stars.svg"
                 width="80"
@@ -7163,9 +7215,9 @@ exports[`Author > can sort by year published with oldest first 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -7185,9 +7237,9 @@ exports[`Author > can sort by year published with oldest first 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -7207,9 +7259,9 @@ exports[`Author > can sort by year published with oldest first 1`] = `
               <img
                 alt="D: 2 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/2-stars.svg"
                 width="80"
@@ -7247,9 +7299,9 @@ exports[`Author > can sort by year published with oldest first 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -7269,9 +7321,9 @@ exports[`Author > can sort by year published with oldest first 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -7291,9 +7343,9 @@ exports[`Author > can sort by year published with oldest first 1`] = `
               <img
                 alt="C: 3 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/3-stars.svg"
                 width="80"
@@ -7313,9 +7365,10 @@ exports[`Author > can sort by year published with oldest first 1`] = `
     >
       <div
         class="
-          max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8
-          tablet:px-4
-        "
+            max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl
+            leading-8
+            tablet:px-4
+          "
       >
         1987
       </div>
@@ -7354,9 +7407,9 @@ exports[`Author > can sort by year published with oldest first 1`] = `
           </div>
           <div
             class="
-        flex grow flex-col items-start
-        tablet:w-full tablet:pr-4
-      "
+          flex grow flex-col items-start
+          tablet:w-full tablet:pr-4
+        "
           >
             <a
               class="
@@ -7376,9 +7429,9 @@ exports[`Author > can sort by year published with oldest first 1`] = `
             </a>
             <div
               class="
-          mt-1
-          tablet:mt-2
-        "
+            mt-1
+            tablet:mt-2
+          "
             >
               <div
                 class="font-sans text-xs leading-4 font-light text-subtle"
@@ -7398,9 +7451,9 @@ exports[`Author > can sort by year published with oldest first 1`] = `
               <img
                 alt="C: 3 stars (out of 5)"
                 class="
-          mt-2
-          tablet:mt-3
-        "
+            mt-2
+            tablet:mt-3
+          "
                 height="16"
                 src="/svg/3-stars.svg"
                 width="80"
