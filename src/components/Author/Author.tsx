@@ -128,22 +128,30 @@ function WorkListItem({ value }: { value: ListItemValue }): JSX.Element {
   return (
     <ListItem className="has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover">
       <ListItemCover imageProps={value.coverImageProps} />
-      <div className={`
+      <div
+        className={`
         flex grow flex-col items-start
         tablet:w-full tablet:pr-4
-      `}>
+      `}
+      >
         <ListItemTitle slug={value.slug} title={value.title} />
         <OtherAuthors values={value.otherAuthors} />
-        <div className={`
+        <div
+          className={`
           mt-1
           tablet:mt-2
-        `}>
+        `}
+        >
           <ListItemKindAndYear kind={value.kind} year={value.yearPublished} />
         </div>
-        <Grade className={`
+        <Grade
+          className={`
           mt-2
           tablet:mt-3
-        `} height={16} value={value.grade} />
+        `}
+          height={16}
+          value={value.grade}
+        />
         <Abandoned value={value.grade} />
       </div>
     </ListItem>

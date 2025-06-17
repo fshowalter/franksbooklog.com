@@ -48,9 +48,11 @@ export function Review({
       hasBackdrop={false}
       staticMast={true}
     >
-      <header className={`
+      <header
+        className={`
         relative z-1 mb-12 flex flex-col items-center px-[8%] pt-10
-      `}>
+      `}
+      >
         <nav className="pb-3">
           <a
             className="font-sans text-xs tracking-wider text-accent uppercase"
@@ -69,10 +71,12 @@ export function Review({
           {value.title}
         </h1>
         {value.subtitle && (
-          <p className={`
+          <p
+            className={`
             max-w-prose pt-2 text-center text-base font-light tracking-wider
             text-muted
-          `}>
+          `}
+          >
             {value.subtitle}
           </p>
         )}
@@ -93,20 +97,24 @@ export function Review({
           yearPublished={value.yearPublished}
         />
         <ReviewCover coverImageProps={coverImageProps} />
-        <div className={`
+        <div
+          className={`
           relative mt-4 bg-default px-[1ch] font-sans text-xs tracking-wide
           text-subtle uppercase
           after:absolute after:top-1/2 after:left-[-11%] after:-z-10
           after:w-[122%] after:border-t after:border-(--fg-subtle)
           tablet:mt-6
-        `}>
+        `}
+        >
           Reviewed {dateFormat.format(value.date)}
         </div>
       </header>
-      <div className={`
+      <div
+        className={`
         flex flex-col items-center gap-16 px-container pb-20
         desktop:gap-20 desktop:pb-32
-      `}>
+      `}
+      >
         <LongFormText
           className={`
             max-w-prose
@@ -207,12 +215,10 @@ function ReviewCover({
     >
       <div className="absolute inset-0 overflow-hidden clip-path-cover">
         <div
-          className={
-            `
+          className={`
               absolute top-[-5%] left-[-5%] size-[110%] bg-default bg-cover
               bg-center
-            `
-          }
+            `}
           style={{
             backgroundColor: "var(--bg-default)",
             backgroundImage: `linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(${coverImageProps.src})`,
@@ -223,17 +229,25 @@ function ReviewCover({
       <div
         className={`
           relative -top-4 z-10 h-[372px]
-          ${coverImageProps.hasAlpha ? "" : `
+          ${
+            coverImageProps.hasAlpha
+              ? ""
+              : `
             shadow-[0_5px_20px_rgba(49,46,42,0.22)]
-          `}
+          `
+          }
         `}
       >
         <Cover
           className={`
             safari-border-radius-fix
-            ${coverImageProps.hasAlpha ? "" : `
+            ${
+              coverImageProps.hasAlpha
+                ? ""
+                : `
               shadow-[0_5px_20px_rgba(49,46,42,0.22)]
-            `}
+            `
+            }
           `}
           decoding="auto"
           height={CoverImageConfig.height}
@@ -252,10 +266,12 @@ function ReviewCover({
 function ReviewGrade({ value }: { value: ReviewWithContent["grade"] }) {
   if (value == "Abandoned") {
     return (
-      <div className={`
+      <div
+        className={`
         bg-abandoned px-2 py-1 font-sans text-sm font-medium tracking-wide
         text-inverse uppercase
-      `}>
+      `}
+      >
         Abandoned
       </div>
     );

@@ -15,11 +15,13 @@ export function StatsNavigation({
 }): JSX.Element {
   return (
     <nav className={ccn("bg-footer", className)}>
-      <ul className={`
+      <ul
+        className={`
         mx-auto flex scrollbar-hidden max-w-(--breakpoint-max) overflow-x-auto
         px-container font-sans text-sm font-normal tracking-wide
         desktop:justify-center
-      `}>
+      `}
+      >
         <AllTimeLink currentYear={currentYear} linkFunc={linkFunc} />
         {[...years].reverse().map((year) => {
           return (
@@ -51,10 +53,12 @@ function AllTimeLink({
       `}
     >
       {"all" === currentYear ? (
-        <div className={`
+        <div
+          className={`
           bg-subtle p-4 whitespace-nowrap text-default
           desktop:py-4
-        `}>
+        `}
+        >
           All-Time
         </div>
       ) : (
@@ -90,10 +94,14 @@ function YearLink({
       `}
     >
       {year === currentYear ? (
-        <div className={`
+        <div
+          className={`
           bg-subtle p-4 text-default
           desktop:py-4
-        `}>{year}</div>
+        `}
+        >
+          {year}
+        </div>
       ) : (
         <a
           className={`

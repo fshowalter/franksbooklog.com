@@ -44,15 +44,21 @@ export function MoreReviews({
       `}
       data-page-find-ignore
     >
-      <div className={`
+      <div
+        className={`
         px-container
         tablet:px-0
-      `}>{children}</div>
-      <ul className={`
+      `}
+      >
+        {children}
+      </div>
+      <ul
+        className={`
         flex flex-wrap justify-center gap-x-[4%] gap-y-[6vw] px-[4%]
         tablet:gap-x-[3%] tablet:px-0
         desktop:justify-between desktop:gap-x-[1%]
-      `}>
+      `}
+      >
         {values.map((value) => {
           return <MoreReviewsCard key={value.slug} value={value} />;
         })}
@@ -63,14 +69,16 @@ export function MoreReviews({
 
 function MoreReviewsCard({ value }: { value: MoreReviewsValue }): JSX.Element {
   return (
-    <li className={`
+    <li
+      className={`
       relative flex w-[48%] max-w-[248px] flex-col items-center border-default
       bg-default
       has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
       min-[600px]:w-[30.66666667%]
       tablet:w-[31.33333333%]
       desktop:w-[15.75%]
-    `}>
+    `}
+    >
       <Cover
         decoding="async"
         imageProps={value.coverImageProps}
@@ -78,15 +86,19 @@ function MoreReviewsCard({ value }: { value: MoreReviewsValue }): JSX.Element {
         alt=""
         loading="lazy"
       />
-      <div className={`
+      <div
+        className={`
         flex w-full grow flex-col px-[8%] pb-8
         desktop:pr-[10%] desktop:pl-[8.5%]
-      `}>
-        <div className={`
+      `}
+      >
+        <div
+          className={`
           pt-4 font-sans text-sm font-medium
           max:text-xl max:leading-6
           tablet:pt-5 tablet:font-serif tablet:text-md tablet:leading-5
-        `}>
+        `}
+        >
           <a
             className={`
               inline-block
@@ -102,10 +114,12 @@ function MoreReviewsCard({ value }: { value: MoreReviewsValue }): JSX.Element {
             {value.title}
           </a>
         </div>
-        <p className={`
+        <p
+          className={`
           pt-1 font-sans text-xs leading-4 font-light text-subtle
           tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
-        `}>
+        `}
+        >
           by{" "}
           {toSentenceArray(
             value.authors.map((author) => {
@@ -129,10 +143,12 @@ function MoreReviewsCard({ value }: { value: MoreReviewsValue }): JSX.Element {
           height={18}
           value={value.grade}
         />
-        <div className={`
+        <div
+          className={`
           mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
           text-subtle
-        `}>
+        `}
+        >
           {value.kind} | {value.yearPublished}
         </div>
       </div>

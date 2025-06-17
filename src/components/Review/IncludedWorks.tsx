@@ -15,10 +15,12 @@ export function IncludedWorks({ values }: Props) {
       <SubHeading as="h2" className="text-center shadow-bottom">
         Included Works
       </SubHeading>
-      <div className={`
+      <div
+        className={`
         w-full max-w-popout bg-subtle px-container py-8
         tablet:pt-12
-      `}>
+      `}
+      >
         <ul className="">
           {values.map((value) => (
             <li

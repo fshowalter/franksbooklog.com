@@ -20,9 +20,11 @@ export function ListHeaderButton({
   text: string;
 }) {
   return (
-    <div className={`
+    <div
+      className={`
       flex items-start gap-x-4 bg-default text-nowrap text-accent uppercase
-    `}>
+    `}
+    >
       <a
         className={`
           block px-4 py-2
@@ -55,17 +57,21 @@ export function ListWithFiltersLayout({
       <div className="mx-auto flex flex-col items-center bg-default">
         <div className="mx-auto flex w-full flex-col items-stretch">
           <div className="flex grow flex-col bg-subtle">
-            <div className={`
+            <div
+              className={`
               relative
               tablet:px-12
               tablet-landscape:px-0
-            `}>
-              <div className={`
+            `}
+            >
+              <div
+                className={`
                 relative z-10 row-start-1 bg-default text-xs
                 tablet:-mx-12 tablet:px-0
                 tablet-landscape:col-span-3 tablet-landscape:mx-0
                 tablet-landscape:w-full
-              `}>
+              `}
+              >
                 <ListHeader
                   filtersVisible={filtersVisible}
                   listHeaderButtons={listHeaderButtons}
@@ -75,11 +81,13 @@ export function ListWithFiltersLayout({
                   totalCount={totalCount}
                 />
               </div>
-              <div className={`
+              <div
+                className={`
                 mx-auto max-w-(--breakpoint-max)
                 grid-cols-[1fr_48px_minmax(398px,33%)]
                 tablet-landscape:grid tablet-landscape:grid-rows-[auto_1fr]
-              `}>
+              `}
+              >
                 <div
                   className={`
                     relative z-10 col-start-3 row-span-2 row-start-2 grid
@@ -95,25 +103,31 @@ export function ListWithFiltersLayout({
                   }}
                 >
                   <div className="overflow-hidden">
-                    <div className={`
+                    <div
+                      className={`
                       w-full bg-subtle text-sm
                       tablet:pt-12 tablet:text-base
                       tablet-landscape:overflow-visible
                       tablet-landscape:bg-default tablet-landscape:px-container
                       tablet-landscape:pt-0
                       desktop:px-8
-                    `}>
-                      <fieldset className={`
+                    `}
+                    >
+                      <fieldset
+                        className={`
                         flex flex-col gap-5 bg-group px-container py-10
                         tablet:gap-8 tablet:bg-default
                         tablet-landscape:mt-0 tablet-landscape:gap-12
                         tablet-landscape:px-0
-                      `}>
-                        <legend className={`
+                      `}
+                      >
+                        <legend
+                          className={`
                           hidden w-full py-10 font-sans text-xs font-bold
                           tracking-wide text-subtle uppercase
                           tablet-landscape:block tablet-landscape:shadow-bottom
-                        `}>
+                        `}
+                        >
                           Filter & Sort
                         </legend>
                         {filters}
@@ -122,11 +136,13 @@ export function ListWithFiltersLayout({
                   </div>
                 </div>
 
-                <div className={`
+                <div
+                  className={`
                   col-start-1 row-start-2 pb-10
                   tablet-landscape:pl-12
                   desktop:pl-20
-                `}>
+                `}
+                >
                   {list}
                 </div>
               </div>
@@ -150,11 +166,13 @@ function ListHeader({
   totalCount: number;
 }): JSX.Element {
   return (
-    <div className={`
+    <div
+      className={`
       mx-auto flex w-full max-w-(--breakpoint-max) flex-wrap items-baseline
       justify-between gap-x-4 gap-y-5 px-container py-10 font-sans font-medium
       tracking-wide text-subtle uppercase
-    `}>
+    `}
+    >
       <span className="block pr-4">
         <span className="font-semibold text-default">
           {totalCount.toLocaleString()}

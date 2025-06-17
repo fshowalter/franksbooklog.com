@@ -25,21 +25,28 @@ export function Home({ backdropImageProps, deck, values }: Props): JSX.Element {
         title="Frank's Book Log"
         titleStyle="[text-shadow:1px_1px_2px_var(--bg-footer)] text-4xl desktop:text-7xl"
       />
-      <nav className={`
+      <nav
+        className={`
         mx-auto max-w-(--breakpoint-max)
         tablet:px-container
-      `}>
-        <SubHeading as="h2" className={`
+      `}
+      >
+        <SubHeading
+          as="h2"
+          className={`
           px-container
           tablet:px-0
-        `}>
+        `}
+        >
           Latest Reviews
         </SubHeading>
-        <ol className={`
+        <ol
+          className={`
           flex flex-wrap justify-center gap-x-[4%] gap-y-[6vw] px-[4%]
           tablet:gap-x-[3%] tablet:px-0
           desktop:justify-between desktop:gap-x-[1%]
-        `}>
+        `}
+        >
           {values.map((value, index) => {
             return (
               <HomeListItem

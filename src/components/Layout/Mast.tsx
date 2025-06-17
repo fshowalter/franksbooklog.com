@@ -34,10 +34,12 @@ export function Mast({
     >
       {hideLogo ? <div /> : <Logo className="" />}
       <div className="flex items-center">
-        <nav className={`
+        <nav
+          className={`
           hidden w-full
           desktop:block desktop:w-auto
-        `}>
+        `}
+        >
           <ul className={`flex flex-wrap justify-start gap-x-6 text-xl`}>
             {navItems.map((item) => {
               return (
@@ -52,10 +54,13 @@ export function Mast({
         </nav>
         <SearchButton />
         <input className="hidden" id="mobile-nav" type="checkbox" />
-        <label className={`
+        <label
+          className={`
           hamburger-icon
           desktop:hidden
-        `} htmlFor="mobile-nav">
+        `}
+          htmlFor="mobile-nav"
+        >
           <span
             className="hamburger-icon-bars"
             style={{
@@ -63,11 +68,13 @@ export function Mast({
             }}
           />
         </label>
-        <ul className={`
+        <ul
+          className={`
           hamburger-menu flex flex-col items-start gap-y-5 text-left
           text-inverse
           desktop:hidden
-        `}>
+        `}
+        >
           {navItems.map((item) => {
             return <MenuItem key={item.target} value={item} />;
           })}

@@ -120,10 +120,12 @@ function ReviewsListItem({ value }: { value: ListItemValue }): JSX.Element {
   return (
     <ListItem className="has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover">
       <ListItemCover imageProps={value.coverImageProps} />
-      <div className={`
+      <div
+        className={`
         flex grow flex-col items-start gap-y-2
         tablet:w-full tablet:pr-4
-      `}>
+      `}
+      >
         <ListItemTitle slug={value.slug} title={value.title} />
         <Authors
           className="font-sans text-xs leading-4 font-light text-subtle"

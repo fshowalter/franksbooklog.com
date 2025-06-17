@@ -9,10 +9,12 @@ export function Footer(): JSX.Element {
   return (
     <footer className="bg-canvas">
       <div className="mx-auto max-w-(--breakpoint-desktop) px-container py-20">
-        <div className={`
+        <div
+          className={`
           flex w-full flex-col
           tablet:flex-row-reverse tablet:justify-between
-        `}>
+        `}
+        >
           <a
             className={`
               mx-auto mb-8 w-full max-w-button bg-footer py-5 text-center
@@ -26,17 +28,23 @@ export function Footer(): JSX.Element {
           </a>
           <Logo />
         </div>
-        <div className={`
+        <div
+          className={`
           justify-between
           tablet:flex
-        `}>
-          <div className={`
+        `}
+        >
+          <div
+            className={`
             flex max-w-prose flex-col pb-12
             tablet:pr-32
-          `}>
-            <div className={`
+          `}
+          >
+            <div
+              className={`
               footer-text pt-10 font-sans text-base font-light text-subtle
-            `}>
+            `}
+            >
               <p>
                 Hi there, I&apos;m Frank, a husband and father old enough to
                 have read Stephen King&apos;s <em>The Dark Half</em> during its
@@ -78,14 +86,18 @@ export function Footer(): JSX.Element {
               </p>
             </div>
           </div>
-          <div className={`
+          <div
+            className={`
             flex grow-0 flex-col gap-20 pt-10 pb-20
             tablet:basis-button tablet:pr-10
-          `}>
-            <ul className={`
+          `}
+          >
+            <ul
+              className={`
               flex w-full flex-col gap-y-10
               max:w-auto
-            `}>
+            `}
+            >
               {navItems.map((item) => {
                 return <NavListItem key={item.target} value={item} />;
               })}
@@ -93,10 +105,12 @@ export function Footer(): JSX.Element {
           </div>
         </div>
       </div>
-      <p className={`
+      <p
+        className={`
         w-full bg-footer px-container py-10 text-center leading-5 font-normal
         text-inverse
-      `}>
+      `}
+      >
         All reviews by Frank Showalter. All images used in accordance with the{" "}
         <a
           className={`

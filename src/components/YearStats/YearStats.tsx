@@ -52,21 +52,27 @@ export function YearStats({
         years={distinctStatYears}
       />
       <Callouts bookCount={stats.bookCount} workCount={stats.workCount} />
-      <div className={`
+      <div
+        className={`
         mx-auto flex w-full max-w-(--breakpoint-desktop) flex-col items-stretch
         gap-y-8 py-10
         tablet:px-container
-      `}>
-        <div className={`
+      `}
+      >
+        <div
+          className={`
           mx-auto flex w-full flex-col gap-y-8
           desktop:max-w-[calc(66%+24px)]
-        `}>
+        `}
+        >
           <MostReadAuthors values={mostReadAuthors} />
         </div>
-        <div className={`
+        <div
+          className={`
           flex flex-col items-start gap-y-8
           desktop:flex-row desktop:gap-x-8
-        `}>
+        `}
+        >
           <DecadeDistribution values={stats.decadeDistribution} />
           <KindDistribution values={stats.kindDistribution} />
           <EditionDistribution values={stats.editionDistribution} />

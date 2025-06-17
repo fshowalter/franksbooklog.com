@@ -38,7 +38,8 @@ export function HomeListItem({
   value: ListItemValue;
 }): JSX.Element {
   return (
-    <li className={`
+    <li
+      className={`
       relative flex w-[48%] max-w-[248px] flex-col items-center border-default
       bg-default
       has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
@@ -46,7 +47,8 @@ export function HomeListItem({
       tablet:w-[31.33333333%]
       min-[900px]:w-[22.75%]
       desktop:w-[15.75%]
-    `}>
+    `}
+    >
       <Cover
         decoding="async"
         imageProps={value.coverImageProps}
@@ -56,21 +58,27 @@ export function HomeListItem({
         ).join("")}`}
         loading={eagerLoadCoverImage ? "eager" : "lazy"}
       />
-      <div className={`
+      <div
+        className={`
         flex w-full grow flex-col px-[8%] pb-8
         desktop:pr-[10%] desktop:pl-[8.5%]
-      `}>
-        <div className={`
+      `}
+      >
+        <div
+          className={`
           pt-3 font-sans text-xxs leading-4 font-light tracking-wide
           whitespace-nowrap text-subtle
-        `}>
+        `}
+        >
           {formatDate(value.date)}
         </div>
-        <div className={`
+        <div
+          className={`
           pt-2 font-sans text-sm font-medium
           max:pt-2 max:text-xl max:leading-6
           tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5
-        `}>
+        `}
+        >
           <a
             className={`
               inline-block
@@ -86,10 +94,12 @@ export function HomeListItem({
             {value.title}
           </a>
         </div>
-        <p className={`
+        <p
+          className={`
           pt-1 font-sans text-xs leading-4 font-light text-subtle
           tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
-        `}>
+        `}
+        >
           by{" "}
           {toSentenceArray(
             value.authors.map((author) => {
@@ -113,10 +123,12 @@ export function HomeListItem({
           height={18}
           value={value.grade}
         />
-        <div className={`
+        <div
+          className={`
           mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
           text-subtle
-        `}>
+        `}
+        >
           {value.kind} | {value.yearPublished}
         </div>
       </div>
