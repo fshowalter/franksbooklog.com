@@ -1,4 +1,4 @@
-const PROSE_CONTENT_WIDTH = "36rem";
+// const PROSE_CONTENT_WIDTH = "36rem";
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -54,8 +54,8 @@ export default {
       },
       maxWidth: {
         button: "430px",
-        popout: `calc(64px + ${PROSE_CONTENT_WIDTH})`,
-        prose: PROSE_CONTENT_WIDTH,
+        popout: `calc(64px + var(--prose-content-width))`,
+        prose: "var(--prose-content-width)",
         unset: "unset",
       },
       padding: {

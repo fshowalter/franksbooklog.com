@@ -2,6 +2,7 @@
 
 @layer utilities {
   :root {
+    --prose-content-width: 36rem;
     --bg-abandoned: #da0101;
     --bg-accent: #bf211e;
     --bg-avatar-default: #ededed;
