@@ -17,7 +17,7 @@ export function Distribution({
   return (
     <section className="w-full bg-default px-container pb-8">
       <h2 className="py-4 font-medium desktop:text-xl">{title}</h2>
-      <div className="grid w-full grid-cols-[1fr,auto] tablet:whitespace-nowrap">
+      <div className="grid w-full grid-cols-[1fr_auto] tablet:whitespace-nowrap">
         {values.map((value) => {
           return (
             <div

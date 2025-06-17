@@ -48,7 +48,7 @@
   <body>
     <div>
       <a
-        class="absolute left-1/2 top-0.5 z-50 mx-auto bg-subtle px-6 py-2 text-center text-accent [transform:translate(-50%,calc(-100%_-_2px))] focus:[transform:translate(-50%,0%)]"
+        class="absolute left-1/2 top-0.5 z-50 mx-auto bg-subtle px-6 py-2 text-center text-accent [transform:translate(-50%,calc(-100%-2px))] focus:[transform:translate(-50%,0%)]"
         href="#content"
         >Skip to content</a
       >
@@ -126,7 +126,7 @@
                 </li>
               </ul>
             </nav>
-            <div class="search-button z-[1000]">
+            <div class="search-button z-1000">
               <button
                 aria-keyshortcuts="Control+K"
                 aria-label="Search"
@@ -455,7 +455,7 @@
                   By Year Published
                 </h2>
                 <div
-                  class="grid w-full grid-cols-[1fr,auto] tablet:whitespace-nowrap"
+                  class="grid w-full grid-cols-[1fr_auto] tablet:whitespace-nowrap"
                 >
                   <div class="col-span-2 grid grid-cols-subgrid py-3">
                     <div class="col-span-2 grid grid-cols-subgrid">
@@ -516,7 +516,7 @@
               <section class="w-full bg-default px-container pb-8">
                 <h2 class="py-4 font-medium desktop:text-xl">By Kind</h2>
                 <div
-                  class="grid w-full grid-cols-[1fr,auto] tablet:whitespace-nowrap"
+                  class="grid w-full grid-cols-[1fr_auto] tablet:whitespace-nowrap"
                 >
                   <div class="col-span-2 grid grid-cols-subgrid py-3">
                     <div class="col-span-2 grid grid-cols-subgrid">
@@ -579,7 +579,7 @@
               <section class="w-full bg-default px-container pb-8">
                 <h2 class="py-4 font-medium desktop:text-xl">By Edition</h2>
                 <div
-                  class="grid w-full grid-cols-[1fr,auto] tablet:whitespace-nowrap"
+                  class="grid w-full grid-cols-[1fr_auto] tablet:whitespace-nowrap"
                 >
                   <div class="col-span-2 grid grid-cols-subgrid py-3">
                     <div class="col-span-2 grid grid-cols-subgrid">
@@ -740,7 +740,7 @@
     </div>
     <dialog
       aria-label="Search"
-      class="fixed inset-x-4 h-screen w-full rounded-lg border border-default bg-default shadow-lg backdrop:bg-[#000] backdrop:opacity-40 open:flex open:flex-col tablet:mx-auto tablet:mt-16 tablet:h-min tablet:max-h-[min(100vh_-_128px,900px)] tablet:min-h-60 tablet:max-w-[min(100vw_-_64px,36rem)] tablet:rounded-xl desktop:min-h-0"
+      class="fixed inset-x-4 h-screen w-full rounded-lg border border-default bg-default shadow-lg backdrop:bg-black backdrop:opacity-40 open:flex open:flex-col tablet:mx-auto tablet:mt-16 tablet:h-min tablet:max-h-[min(100vh_-_128px,900px)] tablet:min-h-60 tablet:max-w-[min(100vw_-_64px,36rem)] tablet:rounded-xl desktop:min-h-0"
     >
       <div class="contents" data-dialog-frame>
         <button
@@ -751,7 +751,7 @@
         </button>
         <div class="contents"><div id="pagefind__search"></div></div>
         <div
-          class="hidden px-[var(--search-dialog-padding)] py-4 font-sans text-xs font-light tracking-wide text-subtle desktop:block"
+          class="hidden px-(--search-dialog-padding) py-4 font-sans text-xs font-light tracking-wide text-subtle desktop:block"
         >
           <kbd class="rounded-md bg-default p-2 font-mono text-xs text-subtle"
             >Tab</kbd

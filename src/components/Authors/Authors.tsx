@@ -96,7 +96,7 @@ function AuthorName({
 
   return (
     <a
-      className="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+      className="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-(--container-padding) before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
       href={`/authors/${slug}/`}
     >
       {value}

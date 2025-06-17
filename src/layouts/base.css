@@ -1,82 +1,82 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
-:root {
-  --bg-abandoned: #da0101;
-  --bg-accent: #bf211e;
-  --bg-avatar-default: #ededed;
-  --bg-canvas: #f2f0e8;
-  --bg-cover: rgb(10 10 10);
-  --bg-default-alpha: 0.4;
-  --bg-default-rgb: 255, 255, 255;
-  --bg-default: #fff;
-  --bg-footer: #4a4a4a;
-  --bg-group: #f7f5f3;
-  --bg-inverse: rgb(0 0 0 / 75%);
-  --bg-progress: #14bd41;
-  --bg-stripe: #f7f5f3;
-  --bg-subtle: #fafafa;
-  --bg-unreviewed: #fefefe;
-  --border-accent: #054a93;
-  --border-default: #e9e7e0;
-  --container-padding: 8%;
-  --fg-accent: #b02e0c;
-  --fg-default: rgb(0 0 0 / 75%);
-  --fg-emphasis: rgb(0 0 0 / 95%);
-  --fg-inverse-subtle: #e8e8e8;
-  --fg-inverse: #fff;
-  --fg-muted: rgb(0 0 0 / 65%);
-  --fg-subtle: rgb(0 0 0 / 60%);
-  --font-sans: "ArgentumSans";
-  --font-serif: "FrankRuhlLibre";
-  --gutter-width: 20px;
-  --header-offset: 0;
-  --image-filter: initial;
-  --list-item-cover-width: 64px;
-  --search-dialog-padding: 8%;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer utilities {
   :root {
-    --bg-accent: #a52422;
-    --bg-avatar-default: #252525;
-    --bg-canvas: #484745;
-    --bg-default-alpha: 0.5;
-    --bg-default-rgb: 50, 47, 47;
-    --bg-default: #322f2f;
-    --bg-footer: #252525;
-    --bg-group: #3c393a;
-    --bg-inverse: #322f2f;
-    --bg-progress: #379634;
-    --bg-stripe: #3c393a;
-    --bg-subtle: #373434;
-    --bg-unreviewed: #3c393a;
-    --border-accent: #499ef8;
-    --border-default: #484745;
-    --fg-accent: #c86666;
-    --fg-default: rgb(255 255 255 / 75%);
-    --fg-emphasis: rgb(255 255 255 / 95%);
-    --fg-inverse: #e6e6e6;
-    --fg-muted: rgb(255 255 255 / 65%);
-    --fg-subtle: rgb(255 255 255 / 60%);
-    --image-filter: brightness(0.8) contrast(1);
+    --bg-abandoned: #da0101;
+    --bg-accent: #bf211e;
+    --bg-avatar-default: #ededed;
+    --bg-canvas: #f2f0e8;
+    --bg-cover: rgb(10 10 10);
+    --bg-default-alpha: 0.4;
+    --bg-default-rgb: 255, 255, 255;
+    --bg-default: #fff;
+    --bg-footer: #4a4a4a;
+    --bg-group: #f7f5f3;
+    --bg-inverse: rgb(0 0 0 / 75%);
+    --bg-progress: #14bd41;
+    --bg-stripe: #f7f5f3;
+    --bg-subtle: #fafafa;
+    --bg-unreviewed: #fefefe;
+    --border-accent: #054a93;
+    --border-default: #e9e7e0;
+    --container-padding: 8%;
+    --fg-accent: #b02e0c;
+    --fg-default: rgb(0 0 0 / 75%);
+    --fg-emphasis: rgb(0 0 0 / 95%);
+    --fg-inverse-subtle: #e8e8e8;
+    --fg-inverse: #fff;
+    --fg-muted: rgb(0 0 0 / 65%);
+    --fg-subtle: rgb(0 0 0 / 60%);
+    --font-sans: 'ArgentumSans';
+    --font-serif: 'FrankRuhlLibre';
+    --gutter-width: 20px;
+    --header-offset: 0;
+    --image-filter: initial;
+    --list-item-cover-width: 64px;
+    --search-dialog-padding: 8%;
   }
-}
 
-@media screen(tablet) {
-  :root {
-    --container-padding: 48px;
-    --list-item-cover-width: 76px;
-    --search-dialog-padding: 24px;
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg-accent: #a52422;
+      --bg-avatar-default: #252525;
+      --bg-canvas: #484745;
+      --bg-default-alpha: 0.5;
+      --bg-default-rgb: 50, 47, 47;
+      --bg-default: #322f2f;
+      --bg-footer: #252525;
+      --bg-group: #3c393a;
+      --bg-inverse: #322f2f;
+      --bg-progress: #379634;
+      --bg-stripe: #3c393a;
+      --bg-subtle: #373434;
+      --bg-unreviewed: #3c393a;
+      --border-accent: #499ef8;
+      --border-default: #484745;
+      --fg-accent: #c86666;
+      --fg-default: rgb(255 255 255 / 75%);
+      --fg-emphasis: rgb(255 255 255 / 95%);
+      --fg-inverse: #e6e6e6;
+      --fg-muted: rgb(255 255 255 / 65%);
+      --fg-subtle: rgb(255 255 255 / 60%);
+      --image-filter: brightness(0.8) contrast(1);
+    }
   }
-}
 
-@media screen(desktop) {
-  :root {
-    --container-padding: 80px;
-    --list-item-cover-width: 80px;
-    --search-dialog-padding: 32px;
+  @media screen(tablet) {
+    :root {
+      --container-padding: 48px;
+      --list-item-cover-width: 76px;
+      --search-dialog-padding: 24px;
+    }
+  }
+
+  @media screen(desktop) {
+    :root {
+      --container-padding: 80px;
+      --list-item-cover-width: 80px;
+      --search-dialog-padding: 32px;
+    }
   }
 }
 

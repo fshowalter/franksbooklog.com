@@ -61,7 +61,7 @@
     />
     <div>
       <a
-        class="absolute left-1/2 top-0.5 z-50 mx-auto bg-subtle px-6 py-2 text-center text-accent [transform:translate(-50%,calc(-100%_-_2px))] focus:[transform:translate(-50%,0%)]"
+        class="absolute left-1/2 top-0.5 z-50 mx-auto bg-subtle px-6 py-2 text-center text-accent [transform:translate(-50%,calc(-100%-2px))] focus:[transform:translate(-50%,0%)]"
         href="#content"
         >Skip to content</a
       >
@@ -139,7 +139,7 @@
                 </li>
               </ul>
             </nav>
-            <div class="search-button z-[1000]">
+            <div class="search-button z-1000">
               <button
                 aria-keyshortcuts="Control+K"
                 aria-label="Search"
@@ -203,7 +203,7 @@
         </header>
         <main class="grow flex flex-col" id="content" data-pagefind-body="true">
           <header
-            class="relative z-[1] mb-12 flex flex-col items-center px-[8%] pt-10"
+            class="relative z-1 mb-12 flex flex-col items-center px-[8%] pt-10"
           >
             <nav class="pb-3">
               <a
@@ -285,7 +285,7 @@
               </div>
             </div>
             <div
-              class="relative mt-4 bg-default px-[1ch] font-sans text-xs uppercase tracking-wide text-subtle after:absolute after:left-[-11%] after:top-1/2 after:-z-10 after:w-[122%] after:border-t after:border-[var(--fg-subtle)] tablet:mt-6"
+              class="relative mt-4 bg-default px-[1ch] font-sans text-xs uppercase tracking-wide text-subtle after:absolute after:left-[-11%] after:top-1/2 after:-z-10 after:w-[122%] after:border-t after:border-(--fg-subtle) tablet:mt-6"
             >
               Reviewed
               <!-- -->Apr 3, 2022
@@ -893,7 +893,7 @@
     </div>
     <dialog
       aria-label="Search"
-      class="fixed inset-x-4 h-screen w-full rounded-lg border border-default bg-default shadow-lg backdrop:bg-[#000] backdrop:opacity-40 open:flex open:flex-col tablet:mx-auto tablet:mt-16 tablet:h-min tablet:max-h-[min(100vh_-_128px,900px)] tablet:min-h-60 tablet:max-w-[min(100vw_-_64px,36rem)] tablet:rounded-xl desktop:min-h-0"
+      class="fixed inset-x-4 h-screen w-full rounded-lg border border-default bg-default shadow-lg backdrop:bg-black backdrop:opacity-40 open:flex open:flex-col tablet:mx-auto tablet:mt-16 tablet:h-min tablet:max-h-[min(100vh_-_128px,900px)] tablet:min-h-60 tablet:max-w-[min(100vw_-_64px,36rem)] tablet:rounded-xl desktop:min-h-0"
     >
       <div class="contents" data-dialog-frame>
         <button
@@ -904,7 +904,7 @@
         </button>
         <div class="contents"><div id="pagefind__search"></div></div>
         <div
-          class="hidden px-[var(--search-dialog-padding)] py-4 font-sans text-xs font-light tracking-wide text-subtle desktop:block"
+          class="hidden px-(--search-dialog-padding) py-4 font-sans text-xs font-light tracking-wide text-subtle desktop:block"
         >
           <kbd class="rounded-md bg-default p-2 font-mono text-xs text-subtle"
             >Tab</kbd
