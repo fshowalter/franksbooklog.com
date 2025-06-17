@@ -19,7 +19,10 @@ export function DebouncedInput({
     <label className="flex flex-col text-subtle">
       <LabelText value={label} />
       <input
-        className="border-0 bg-default px-4 py-2 text-base text-default shadow-all placeholder:text-default placeholder:opacity-50"
+        className={`
+          border-0 bg-default px-4 py-2 text-base text-default shadow-all
+          placeholder:text-default placeholder:opacity-50
+        `}
         onChange={(e: React.FormEvent<HTMLInputElement>) =>
           debouncedHandleChange((e.target as HTMLInputElement).value)
         }

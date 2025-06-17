@@ -249,7 +249,7 @@
       })();
     </script>
     <astro-island
-      uid="1U6ruv"
+      uid="ac6Tz"
       prefix="r1"
       component-url="~/components/Author/Author"
       component-export="Author"
@@ -262,7 +262,7 @@
       await-children
       ><div>
         <a
-          class="absolute left-1/2 top-0.5 z-50 mx-auto bg-subtle px-6 py-2 text-center text-accent [transform:translate(-50%,calc(-100%_-_2px))] focus:[transform:translate(-50%,0%)]"
+          class="absolute top-0.5 left-1/2 z-50 mx-auto bg-subtle px-6 py-2 text-center text-accent [transform:translate(-50%,calc(-100%-2px))] focus:[transform:translate(-50%,0%)]"
           href="#content"
           >Skip to content</a
         >
@@ -277,11 +277,11 @@
           >
             <div class="flex flex-col">
               <div
-                class="whitespace-nowrap text-[1.375rem] font-normal leading-8 tablet:text-[1.5625rem]"
+                class="text-[1.375rem] leading-8 font-normal whitespace-nowrap tablet:text-[1.5625rem]"
               >
                 <a href="/">Frank&#x27;s Book Log</a>
               </div>
-              <p class="w-full pl-px text-sm italic leading-4 opacity-85">
+              <p class="w-full pl-px text-sm leading-4 italic opacity-85">
                 by Frank Showalter
               </p>
             </div>
@@ -289,7 +289,7 @@
               <nav class="hidden w-full desktop:block desktop:w-auto">
                 <ul class="flex flex-wrap justify-start gap-x-6 text-xl">
                   <li
-                    class="mast-item block whitespace-nowrap tracking-serif-wide"
+                    class="mast-item block tracking-serif-wide whitespace-nowrap"
                   >
                     <a
                       class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
@@ -299,7 +299,7 @@
                     >
                   </li>
                   <li
-                    class="mast-item block whitespace-nowrap tracking-serif-wide"
+                    class="mast-item block tracking-serif-wide whitespace-nowrap"
                   >
                     <a
                       class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
@@ -309,7 +309,7 @@
                     >
                   </li>
                   <li
-                    class="mast-item block whitespace-nowrap tracking-serif-wide"
+                    class="mast-item block tracking-serif-wide whitespace-nowrap"
                   >
                     <a
                       class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
@@ -319,7 +319,7 @@
                     >
                   </li>
                   <li
-                    class="mast-item block whitespace-nowrap tracking-serif-wide"
+                    class="mast-item block tracking-serif-wide whitespace-nowrap"
                   >
                     <a
                       class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
@@ -329,7 +329,7 @@
                     >
                   </li>
                   <li
-                    class="mast-item block whitespace-nowrap tracking-serif-wide"
+                    class="mast-item block tracking-serif-wide whitespace-nowrap"
                   >
                     <a
                       class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
@@ -340,7 +340,7 @@
                   </li>
                 </ul>
               </nav>
-              <div class="search-button z-[1000]">
+              <div class="search-button z-1000">
                 <button
                   aria-keyshortcuts="Control+K"
                   aria-label="Search"
@@ -377,23 +377,23 @@
               <ul
                 class="hamburger-menu flex flex-col items-start gap-y-5 text-left text-inverse desktop:hidden"
               >
-                <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <li class="block w-1/2 text-2xl whitespace-nowrap">
                   <a href="/">Home</a>
                 </li>
-                <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <li class="block w-1/2 text-2xl whitespace-nowrap">
                   <a href="/how-i-grade/">How I Grade</a>
                 </li>
-                <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <li class="block w-1/2 text-2xl whitespace-nowrap">
                   <a href="/reviews/">Reviews</a>
                 </li>
-                <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <li class="block w-1/2 text-2xl whitespace-nowrap">
                   <a href="/authors/">Authors</a>
                 </li>
-                <li class="block w-1/2 whitespace-nowrap text-2xl">
+                <li class="block w-1/2 text-2xl whitespace-nowrap">
                   <a href="/readings/">Reading Log</a>
                   <ol class="mt-4">
                     <li
-                      class="mb-4 ml-1 font-sans text-xs uppercase tracking-wider text-inverse-subtle last:mb-0"
+                      class="mb-4 ml-1 font-sans text-xs tracking-wider text-inverse-subtle uppercase last:mb-0"
                     >
                       <a href="/readings/stats/">Stats</a>
                     </li>
@@ -404,18 +404,18 @@
           </header>
           <main class="grow bg-subtle" id="content" data-pagefind-body="true">
             <header
-              class="min-h-[clamp(340px,50vh,1350px)] relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pt-40 tablet:pt-40 desktop:pb-16 desktop:pt-40"
+              class="min-h-[clamp(340px,50vh,1350px)] relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pt-40 tablet:pt-40 desktop:pt-40 desktop:pb-16"
             >
               <div
-                class="items-center z-10 mx-auto flex w-full max-w-screen-max px-container flex-col py-8 tablet:pb-10 tablet:pt-20 desktop:py-0"
+                class="items-center z-10 mx-auto flex w-full max-w-(--breakpoint-max) px-container flex-col py-8 tablet:pt-20 tablet:pb-10 desktop:py-0"
               >
                 <p
-                  class="mb-6 font-sans text-sm uppercase tracking-wide text-subtle"
+                  class="mb-6 font-sans text-sm tracking-wide text-subtle uppercase"
                 >
                   <a class="text-accent" href="/authors/">Authors</a>
                 </p>
                 <div
-                  class="safari-border-radius-fix mx-auto mb-6 w-4/5 max-w-[250px] overflow-hidden rounded-full"
+                  class="mx-auto mb-6 w-4/5 max-w-[250px] safari-border-radius-fix overflow-hidden rounded-full"
                 >
                   <div>
                     <svg
@@ -433,7 +433,7 @@
                   </div>
                 </div>
                 <h1
-                  class="font-sans text-center text-3xl font-bold uppercase tracking-widest tablet:text-4xl tablet-landscape:text-5xl desktop:text-7xl"
+                  class="font-sans text-center text-3xl font-bold tracking-widest uppercase tablet:text-4xl tablet-landscape:text-5xl desktop:text-7xl"
                 >
                   Jesse Itzler
                 </h1>
@@ -452,13 +452,13 @@
                       class="relative z-10 row-start-1 bg-default text-xs tablet:-mx-12 tablet:px-0 tablet-landscape:col-span-3 tablet-landscape:mx-0 tablet-landscape:w-full"
                     >
                       <div
-                        class="mx-auto flex w-full max-w-screen-max flex-wrap items-baseline justify-between gap-x-4 gap-y-5 px-container py-10 font-sans font-medium uppercase tracking-wide text-subtle"
+                        class="mx-auto flex w-full max-w-(--breakpoint-max) flex-wrap items-baseline justify-between gap-x-4 gap-y-5 px-container py-10 font-sans font-medium tracking-wide text-subtle uppercase"
                       >
                         <span class="block pr-4"
                           ><span class="font-semibold text-default">1</span>
                           <!-- -->Results</span
                         ><button
-                          class="ml-auto flex justify-center gap-x-4 text-nowrap px-4 py-2 uppercase text-muted shadow-all tablet-landscape:hidden"
+                          class="ml-auto flex justify-center gap-x-4 px-4 py-2 text-nowrap text-muted uppercase shadow-all tablet-landscape:hidden"
                           style="background-color: var(--bg-canvas)"
                         >
                           Filter &amp; Sort
@@ -466,7 +466,7 @@
                       </div>
                     </div>
                     <div
-                      class="mx-auto max-w-screen-max grid-cols-[1fr_48px_minmax(398px,33%)] tablet-landscape:grid tablet-landscape:grid-rows-[auto_1fr]"
+                      class="mx-auto max-w-(--breakpoint-max) grid-cols-[1fr_48px_minmax(398px,33%)] tablet-landscape:grid tablet-landscape:grid-rows-[auto_1fr]"
                     >
                       <div
                         class="relative z-10 col-start-3 row-span-2 row-start-2 grid min-w-[320px] text-sm transition-[grid-template-rows] duration-300 ease-in-out tablet-landscape:mr-12 tablet-landscape:block tablet-landscape:py-24 tablet-landscape:pb-12 tablet-landscape:shadow-none desktop:mr-20"
@@ -480,13 +480,13 @@
                               class="flex flex-col gap-5 bg-group px-container py-10 tablet:gap-8 tablet:bg-default tablet-landscape:mt-0 tablet-landscape:gap-12 tablet-landscape:px-0"
                             >
                               <legend
-                                class="hidden w-full py-10 font-sans text-xs font-bold uppercase tracking-wide text-subtle tablet-landscape:block tablet-landscape:shadow-bottom"
+                                class="hidden w-full py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase tablet-landscape:block tablet-landscape:shadow-bottom"
                               >
                                 Filter &amp; Sort
                               </legend>
                               <label class="flex flex-col text-subtle"
                                 ><span
-                                  class="inline-block h-6 text-left font-sans text-xxs uppercase leading-none tracking-wide text-subtle"
+                                  class="inline-block h-6 text-left font-sans text-xxs leading-none tracking-wide text-subtle uppercase"
                                   >Title</span
                                 ><input
                                   class="border-0 bg-default px-4 py-2 text-base text-default shadow-all placeholder:text-default placeholder:opacity-50"
@@ -495,7 +495,7 @@
                               /></label>
                               <fieldset class="text-subtle">
                                 <legend
-                                  class="inline-block h-6 text-left font-sans text-xxs uppercase leading-none tracking-wide text-subtle"
+                                  class="inline-block h-6 text-left font-sans text-xxs leading-none tracking-wide text-subtle uppercase"
                                 >
                                   Work Year
                                 </legend>
@@ -528,7 +528,7 @@
                               </fieldset>
                               <label class="flex flex-col"
                                 ><span
-                                  class="inline-block h-6 text-left font-sans text-xxs uppercase leading-none tracking-wide text-subtle"
+                                  class="inline-block h-6 text-left font-sans text-xxs leading-none tracking-wide text-subtle uppercase"
                                   >Kind</span
                                 ><select
                                   class="select-background-image w-full appearance-none border-none bg-default py-2 pl-4 pr-8 text-base leading-6 text-subtle shadow-all outline-accent"
@@ -538,7 +538,7 @@
                                 </select></label
                               ><label class="flex flex-col"
                                 ><span
-                                  class="inline-block h-6 text-left font-sans text-xxs uppercase leading-none tracking-wide text-subtle"
+                                  class="inline-block h-6 text-left font-sans text-xxs leading-none tracking-wide text-subtle uppercase"
                                   >Order By</span
                                 ><select
                                   class="select-background-image w-full appearance-none border-none bg-default py-2 pl-4 pr-8 text-base leading-6 text-subtle shadow-all outline-accent"
@@ -577,7 +577,7 @@
                           <li class="block">
                             <div class="pt-0 text-md" style="z-index: 1">
                               <div
-                                class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+                                class="max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
                               >
                                 2015
                               </div>
@@ -585,7 +585,7 @@
                             <div class="bg-subtle">
                               <ol>
                                 <li
-                                  class="bg-default relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+                                  class="bg-default relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
                                 >
                                   <div class="w-list-item-cover shrink-0">
                                     <img
@@ -609,13 +609,13 @@
                                     class="flex grow flex-col items-start tablet:w-full tablet:pr-4"
                                   >
                                     <a
-                                      class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                                      class="block font-sans text-sm font-medium text-accent before:absolute before:top-4 before:left-(--container-padding) before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
                                       href="/reviews/living-with-a-seal-by-jesse-itzler/"
                                       >Living with a SEAL</a
                                     >
                                     <div class="mt-1 tablet:mt-2">
                                       <div
-                                        class="font-sans text-xs font-light leading-4 text-subtle"
+                                        class="font-sans text-xs leading-4 font-light text-subtle"
                                       >
                                         <span
                                           >Nonfiction<!-- -->
@@ -624,7 +624,7 @@
                                       </div>
                                     </div>
                                     <div
-                                      class="bg-abandoned p-1 font-sans text-xxs font-semibold uppercase text-[#fff] tablet:my-1"
+                                      class="bg-abandoned p-1 font-sans text-xxs font-semibold text-inverse uppercase tablet:my-1"
                                     >
                                       Abandoned
                                     </div>
@@ -645,22 +645,24 @@
             </div>
           </main>
           <footer class="bg-canvas">
-            <div class="mx-auto max-w-screen-desktop px-container py-20">
+            <div
+              class="mx-auto max-w-(--breakpoint-desktop) px-container py-20"
+            >
               <div
                 class="flex w-full flex-col tablet:flex-row-reverse tablet:justify-between"
               >
                 <a
-                  class="mx-auto mb-8 w-full max-w-button bg-footer py-5 text-center font-sans text-xs uppercase tracking-wide text-inverse hover:bg-subtle hover:text-default tablet:mx-0"
+                  class="mx-auto mb-8 w-full max-w-button bg-footer py-5 text-center font-sans text-xs tracking-wide text-inverse uppercase hover:bg-subtle hover:text-default tablet:mx-0"
                   href="#top"
                   >To the top</a
                 >
                 <div class="flex flex-col">
                   <div
-                    class="whitespace-nowrap text-[1.375rem] font-normal leading-8 tablet:text-[1.5625rem]"
+                    class="text-[1.375rem] leading-8 font-normal whitespace-nowrap tablet:text-[1.5625rem]"
                   >
                     <a href="/">Frank&#x27;s Book Log</a>
                   </div>
-                  <p class="w-full pl-px text-sm italic leading-4 opacity-85">
+                  <p class="w-full pl-px text-sm leading-4 italic opacity-85">
                     by Frank Showalter
                   </p>
                 </div>
@@ -710,30 +712,30 @@
                   </div>
                 </div>
                 <div
-                  class="flex grow-0 flex-col gap-20 pb-20 pt-10 tablet:basis-[430px] tablet:pr-10"
+                  class="flex grow-0 flex-col gap-20 pt-10 pb-20 tablet:basis-button tablet:pr-10"
                 >
                   <ul class="flex w-full flex-col gap-y-10 max:w-auto">
-                    <li class="block w-1/2 whitespace-nowrap text-2xl">
+                    <li class="block w-1/2 text-2xl whitespace-nowrap">
                       <a class="hover:text-accent" href="/">Home</a>
                     </li>
-                    <li class="block w-1/2 whitespace-nowrap text-2xl">
+                    <li class="block w-1/2 text-2xl whitespace-nowrap">
                       <a class="hover:text-accent" href="/how-i-grade/"
                         >How I Grade</a
                       >
                     </li>
-                    <li class="block w-1/2 whitespace-nowrap text-2xl">
+                    <li class="block w-1/2 text-2xl whitespace-nowrap">
                       <a class="hover:text-accent" href="/reviews/">Reviews</a>
                     </li>
-                    <li class="block w-1/2 whitespace-nowrap text-2xl">
+                    <li class="block w-1/2 text-2xl whitespace-nowrap">
                       <a class="hover:text-accent" href="/authors/">Authors</a>
                     </li>
-                    <li class="block w-1/2 whitespace-nowrap text-2xl">
+                    <li class="block w-1/2 text-2xl whitespace-nowrap">
                       <a class="hover:text-accent" href="/readings/"
                         >Reading Log</a
                       >
                       <ol class="mt-4">
                         <li
-                          class="mb-4 ml-1 font-sans text-xs uppercase tracking-wide text-subtle last:mb-0"
+                          class="mb-4 ml-1 font-sans text-xs tracking-wide text-subtle uppercase last:mb-0"
                         >
                           <a class="hover:text-default" href="/readings/stats/"
                             >Stats</a
@@ -746,7 +748,7 @@
               </div>
             </div>
             <p
-              class="w-full bg-footer px-container py-10 text-center font-normal leading-5 text-inverse"
+              class="w-full bg-footer px-container py-10 text-center leading-5 font-normal text-inverse"
             >
               All reviews by Frank Showalter. All images used in accordance with
               the<!-- -->
@@ -764,7 +766,7 @@
     >
     <dialog
       aria-label="Search"
-      class="fixed inset-x-4 h-screen w-full rounded-lg border border-default bg-default shadow-lg backdrop:bg-[#000] backdrop:opacity-40 open:flex open:flex-col tablet:mx-auto tablet:mt-16 tablet:h-min tablet:max-h-[min(100vh_-_128px,900px)] tablet:min-h-60 tablet:max-w-[min(100vw_-_64px,36rem)] tablet:rounded-xl desktop:min-h-0"
+      class="fixed inset-x-4 h-screen w-full rounded-lg border border-default bg-default shadow-lg backdrop:bg-[rgba(0,0,0,.40)] open:flex open:flex-col tablet:mx-auto tablet:mt-16 tablet:h-min tablet:max-h-[min(100vh-128px,900px)] tablet:min-h-60 tablet:max-w-[min(100vw-64px,36rem)] tablet:rounded-xl desktop:min-h-0"
     >
       <div class="contents" data-dialog-frame>
         <button
@@ -775,7 +777,7 @@
         </button>
         <div class="contents"><div id="pagefind__search"></div></div>
         <div
-          class="hidden px-[var(--search-dialog-padding)] py-4 font-sans text-xs font-light tracking-wide text-subtle desktop:block"
+          class="hidden px-(--search-dialog-padding) py-4 font-sans text-xs font-light tracking-wide text-subtle desktop:block"
         >
           <kbd class="rounded-md bg-default p-2 font-mono text-xs text-subtle"
             >Tab</kbd
