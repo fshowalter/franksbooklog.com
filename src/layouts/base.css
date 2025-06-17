@@ -1,6 +1,62 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --aspect-cover: 1 / 1.5;
+  --background-color-*: initial;
+  --background-color-abandoned: var(--bg-abandoned);
+  --background-color-accent: var(--bg-accent);
+  --background-color-canvas: var(--bg-canvas);
+  --background-color-cover-back: var(--bg-cover);
+  --background-color-default: var(--bg-default);
+  --background-color-footer: var(--bg-footer);
+  --background-color-group: var(--bg-group);
+  --background-color-inverse: var(--bg-inverse);
+  --background-color-stripe: var(--bg-stripe);
+  --background-color-subtle: var(--bg-subtle);
+  --background-color-unreviewed: var(--bg-unreviewed);
+  --background-color-unset: unset;
+  --border-color-*: initial;
+  --border-color-default: var(--border-default);
+  --breakpoint-*: initial;
+  --breakpoint-desktop: 1280px;
+  --breakpoint-max: 1776px;
+  --breakpoint-tablet-landscape: 1024px;
+  --breakpoint-tablet: 768px;
+  --color-*: initial;
+  --color-accent: var(--fg-accent);
+  --color-border-accent: var(--border-accent);
+  --color-border: var(--border-default);
+  --color-default: var(--fg-default);
+  --color-emphasis: var(--fg-emphasis);
+  --color-inherit: inherit;
+  --color-inverse-subtle: var(--fg-inverse-subtle);
+  --color-inverse: var(--fg-inverse);
+  --color-muted: var(--fg-muted);
+  --color-progress: var(--fg-progress);
+  --color-subtle: var(--fg-subtle);
+  --container-button: 430px;
+  --container-popout: calc(64px + var(--container-prose));
+  --container-prose: 36rem;
+  --container-unset: unset;
+  --font-sans: var(--font-sans);
+  --font-serif: var(--font-serif);
+  --padding-container: var(--container-padding);
+  --shadow-all: 0 0 0 1px var(--border-default);
+  --shadow-bottom: 0px 1px var(--border-default);
+  --shadow-hover: 0 0 1px 1px var(--border-default);
+  --text-2_5xl: 1.625rem;
+  --text-md--line-height: 1.5rem;
+  --text-md: 1.125rem;
+  --text-xxs: 0.6875rem;
+  --tracking-*: initial;
+  --tracking-normal: 0;
+  --tracking-prose: 0.3px;
+  --tracking-serif-wide: 0.6px;
+  --tracking-wide: 0.8px;
+  --tracking-wider: 1.1px;
+  --tracking-widest: 2px;
+  --width-list-item-cover: var(--list-item-cover-width);
+}
 
 @layer utilities {
   :root {
@@ -66,7 +122,7 @@
     }
   }
 
-  @media screen(tablet) {
+  @media (width >= theme(--breakpoint-tablet)) {
     :root {
       --container-padding: 48px;
       --list-item-cover-width: 76px;
@@ -74,7 +130,7 @@
     }
   }
 
-  @media screen(desktop) {
+  @media (width >= theme(--breakpoint-desktop)) {
     :root {
       --container-padding: 80px;
       --list-item-cover-width: 80px;
@@ -157,6 +213,19 @@
 }
 
 @layer components {
+  body main {
+    transition: opacity 0.2s 0s ease-in-out;
+  }
+
+  body:has(#mobile-nav:checked) {
+    overflow-y: scroll;
+    position: fixed;
+
+    main {
+      opacity: 0.8;
+    }
+  }
+
   .hamburger-icon {
     align-items: center;
     background: transparent;
@@ -173,6 +242,45 @@
     transition: 0.2s ease-in-out;
     width: 40px;
     z-index: 400;
+
+    #mobile-nav:checked + & {
+      background: #504b43;
+      border-radius: 0;
+    }
+
+    #mobile-nav:checked + & .hamburger-icon-bars {
+      background-color: #fff !important;
+      transform: rotate(45deg);
+    }
+
+    #mobile-nav:checked + & .hamburger-icon-bars::after {
+      bottom: 0;
+      transform: rotate(90deg);
+    }
+
+    #mobile-nav:checked + & .hamburger-icon-bars::before {
+      top: 0;
+      transform: rotate(90deg);
+    }
+
+    #mobile-nav:checked + & + .hamburger-menu {
+      bottom: 0;
+      height: 100%;
+      opacity: 1;
+      overflow-y: auto;
+      padding: 80px 16% 20px 12%;
+      transform: translateX(0);
+      width: 100%;
+      z-index: 250;
+
+      @media (width >= theme(--breakpoint-tablet)) {
+        padding: 160px 40px;
+      }
+
+      @media (width >= theme(--breakpoint-desktop)) {
+        padding: 160px 80px;
+      }
+    }
   }
 
   .hamburger-icon-bars {
@@ -183,49 +291,53 @@
     transition: 0.2s ease-in-out;
     transition-property: top, bottom, transform;
     width: 24px;
-  }
 
-  .hamburger-icon-bars::after,
-  .hamburger-icon-bars::before {
-    background: inherit;
-    content: "";
-    display: block;
-    height: 2px;
-    position: absolute;
-    transition: 0.2s ease-in-out;
-    width: 24px;
-  }
+    &::after {
+      background: inherit;
+      content: "";
+      display: block;
+      height: 2px;
+      position: absolute;
+      transition: 0.2s ease-in-out;
+      width: 24px;
+    }
 
-  .hamburger-icon-bars::before {
-    top: -8px;
-  }
+    &::before {
+      background: inherit;
+      content: "";
+      display: block;
+      height: 2px;
+      position: absolute;
+      transition: 0.2s ease-in-out;
+      width: 24px;
+    }
 
-  .hamburger-icon-bars::after {
-    bottom: -8px;
-  }
+    &::before {
+      top: -8px;
+    }
 
-  #mobile-nav:checked + .hamburger-icon {
-    background: #504b43;
-    border-radius: 0;
-  }
+    &::after {
+      bottom: -8px;
+    }
 
-  #mobile-nav:checked + .hamburger-icon .hamburger-icon-bars {
-    background-color: #fff !important;
-    transform: rotate(45deg);
+    #mobile-nav:checked + .hamburger-icon & {
+      background-color: #fff !important;
+      transform: rotate(45deg);
+    }
+
+    #mobile-nav:checked + .hamburger-icon &::after {
+      bottom: 0;
+      transform: rotate(90deg);
+    }
+
+    #mobile-nav:checked + .hamburger-icon &::before {
+      top: 0;
+      transform: rotate(90deg);
+    }
   }
 
   .search-button {
     color: inherit;
-  }
-
-  #mobile-nav:checked + .hamburger-icon .hamburger-icon-bars::after {
-    bottom: 0;
-    transform: rotate(90deg);
-  }
-
-  #mobile-nav:checked + .hamburger-icon .hamburger-icon-bars::before {
-    top: 0;
-    transform: rotate(90deg);
   }
 
   .hamburger-menu {
@@ -239,57 +351,36 @@
     transition: 0.2s 0s ease-in-out;
     width: 0;
 
-    @media screen(tablet) {
+    @media (width >= theme(--breakpoint-tablet)) {
       max-width: 35vw;
     }
 
-    @media screen(desktop) {
+    @media (width >= theme(--breakpoint-desktop)) {
       max-width: 25vw;
     }
-  }
 
-  #mobile-nav:checked + .hamburger-icon + .hamburger-menu {
-    bottom: 0;
-    height: 100%;
-    opacity: 1;
-    overflow-y: auto;
-    padding: 80px 16% 20px 12%;
-    transform: translateX(0);
-    width: 100%;
-    z-index: 250;
+    #mobile-nav:checked + .hamburger-icon + & {
+      bottom: 0;
+      height: 100%;
+      opacity: 1;
+      overflow-y: auto;
+      padding: 80px 16% 20px 12%;
+      transform: translateX(0);
+      width: 100%;
+      z-index: 250;
 
-    @media screen(tablet) {
-      padding: 160px 40px;
-    }
+      @media (width >= theme(--breakpoint-tablet)) {
+        padding: 160px 40px;
+      }
 
-    @media screen(desktop) {
-      padding: 160px 80px;
+      @media (width >= theme(--breakpoint-desktop)) {
+        padding: 160px 80px;
+      }
     }
   }
 
   .mast-item {
     transition: 0.2s 0s ease-in-out;
-  }
-
-  body main {
-    transition: opacity 0.2s 0s ease-in-out;
-  }
-
-  body:has(#mobile-nav:checked) {
-    overflow-y: scroll;
-    position: fixed;
-
-    main {
-      opacity: 0.8;
-    }
-
-    .mast-item {
-      opacity: 0;
-    }
-
-    .search-button {
-      color: #fff !important;
-    }
   }
 
   .progress-bar-bg {
@@ -471,20 +562,18 @@
     background-position-y: 8px;
     background-repeat: no-repeat;
   }
-}
 
-@layer utilities {
   .safari-border-radius-fix {
     transform: translateZ(0);
   }
 
   .scrollbar-hidden {
     scrollbar-width: none;
-  }
 
-  .scrollbar-hidden::-webkit-scrollbar {
-    height: 0;
-    width: 0;
+    &::-webkit-scrollbar {
+      height: 0;
+      width: 0;
+    }
   }
 
   .cover-clip-path {
