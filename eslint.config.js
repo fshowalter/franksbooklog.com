@@ -4,10 +4,10 @@ import eslintPluginAstro from "eslint-plugin-astro";
 import perfectionist from "eslint-plugin-perfectionist";
 import react from "eslint-plugin-react";
 import reactCompiler from "eslint-plugin-react-compiler";
-import tailwind from "eslint-plugin-tailwindcss";
 import eslintPluginUnicorn from "eslint-plugin-unicorn";
 import globals from "globals";
 import tsEslint from "typescript-eslint";
+import eslintPluginBetterTailwindcss from "eslint-plugin-better-tailwindcss";
 
 export default tsEslint.config(
   {
@@ -60,21 +60,40 @@ export default tsEslint.config(
     },
   },
   {
-    extends: [...tailwind.configs["flat/recommended"]],
     files: ["**/*.astro"],
+    plugins: {
+      "better-tailwindcss": eslintPluginBetterTailwindcss,
+    },
+    rules: {
+      ...eslintPluginBetterTailwindcss.configs["recommended-error"].rules,
+    },
+    settings: {
+      "better-tailwindcss": {
+        // tailwindcss 4: the path to the entry file of the css based tailwind config (eg: `src/global.css`)
+        entryPoint: "src/layouts/base.css",
+      },
+    },
   },
   {
-    extends: [...tailwind.configs["flat/recommended"]],
     files: ["**/*.tsx"],
-    plugins: { react, "react-compiler": reactCompiler },
+    plugins: {
+      react,
+      "react-compiler": reactCompiler,
+      "better-tailwindcss": eslintPluginBetterTailwindcss,
+    },
     rules: {
       ...react.configs.recommended.rules,
+      ...eslintPluginBetterTailwindcss.configs["recommended-error"].rules,
       "react-compiler/react-compiler": "error",
       "react/react-in-jsx-scope": "off",
     },
     settings: {
       react: {
         version: "detect",
+      },
+      "better-tailwindcss": {
+        // tailwindcss 4: the path to the entry file of the css based tailwind config (eg: `src/global.css`)
+        entryPoint: "src/layouts/base.css",
       },
     },
   },

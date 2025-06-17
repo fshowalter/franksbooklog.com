@@ -1,6 +1,5 @@
 import react from "@astrojs/react";
 import sitemap from "@astrojs/sitemap";
-import tailwind from "@astrojs/tailwind";
 import playformInline from "@playform/inline";
 import compressor from "astro-compressor";
 import { defineConfig } from "astro/config";
@@ -8,6 +7,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { createIndex } from "pagefind";
 import sirv from "sirv";
+import tailwindcss from "@tailwindcss/vite";
 
 function contentHmr() {
   return {
@@ -106,11 +106,6 @@ export default defineConfig({
   },
   integrations: [
     react(),
-    tailwind({
-      // Example: Disable injecting a basic `base.css` import on every page.
-      // Useful if you need to define and/or import your own custom `base.css`.
-      applyBaseStyles: false,
-    }),
     sitemap({
       filter: (page) => page !== "https://www.franksbooklog.com/gone/",
     }),
@@ -125,6 +120,7 @@ export default defineConfig({
       exclude: ["fsevents"],
     },
     plugins: [
+      tailwindcss(),
       contentHmr(),
       react({
         babel: {
