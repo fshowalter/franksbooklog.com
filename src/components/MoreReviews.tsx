@@ -37,7 +37,7 @@ export function MoreReviews({
 }): JSX.Element {
   return (
     <nav
-      className="mx-auto w-full max-w-screen-max bg-subtle tablet:max-w-popout desktop:max-w-screen-max desktop:px-container"
+      className="mx-auto w-full max-w-(--breakpoint-max) bg-subtle tablet:max-w-popout desktop:max-w-(--breakpoint-max) desktop:px-container"
       data-page-find-ignore
     >
       <div className="px-container tablet:px-0">{children}</div>

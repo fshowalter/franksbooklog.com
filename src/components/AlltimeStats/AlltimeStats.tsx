@@ -51,8 +51,8 @@ export function AlltimeStats({
         reviewCount={stats.reviewCount}
         workCount={stats.workCount}
       />
-      <div className="mx-auto flex w-full max-w-screen-max flex-col items-stretch gap-y-8 py-10 tablet:px-container">
-        <div className="mx-auto flex w-full flex-col gap-y-8 desktop:max-w-[calc(66%_+_24px)]">
+      <div className="mx-auto flex w-full max-w-(--breakpoint-max) flex-col items-stretch gap-y-8 py-10 tablet:px-container">
+        <div className="mx-auto flex w-full flex-col gap-y-8 desktop:max-w-[calc(66%+24px)]">
           <GradeDistribution values={stats.gradeDistribution} />
           <MostReadAuthors values={mostReadAuthors} />
         </div>

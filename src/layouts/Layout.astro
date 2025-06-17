@@ -79,7 +79,7 @@ const canonicalUrl = `${import.meta.env.SITE}${new URL(Astro.request.url).pathna
     <slot />
     <dialog
       aria-label="Search"
-      class="fixed inset-x-4 h-screen w-full rounded-lg border border-default bg-default shadow-lg backdrop:bg-[#000] backdrop:opacity-40 open:flex open:flex-col tablet:mx-auto tablet:mt-16 tablet:h-min tablet:max-h-[min(100vh_-_128px,900px)] tablet:min-h-60 tablet:max-w-[min(100vw_-_64px,36rem)] tablet:rounded-xl desktop:min-h-0"
+      class="fixed inset-x-4 h-screen w-full rounded-lg border border-default bg-default shadow-lg backdrop:bg-[#000] backdrop:opacity-40 open:flex open:flex-col tablet:mx-auto tablet:mt-16 tablet:h-min tablet:max-h-[min(100vh-128px,900px)] tablet:min-h-60 tablet:max-w-[min(100vw-64px,36rem)] tablet:rounded-xl desktop:min-h-0"
     >
       <div class="contents" data-dialog-frame>
         <button
@@ -91,7 +91,7 @@ const canonicalUrl = `${import.meta.env.SITE}${new URL(Astro.request.url).pathna
         </div>
 
         <div
-          class="hidden px-[var(--search-dialog-padding)] py-4 font-sans text-xs font-light tracking-wide text-subtle desktop:block"
+          class="hidden px-(--search-dialog-padding) py-4 font-sans text-xs font-light tracking-wide text-subtle desktop:block"
         >
           <kbd class="rounded-md bg-default p-2 font-mono text-xs text-subtle"
             >Tab</kbd

@@ -15,7 +15,7 @@ export function StatsNavigation({
 }): JSX.Element {
   return (
     <nav className={ccn("bg-footer", className)}>
-      <ul className="scrollbar-hidden mx-auto flex max-w-screen-max overflow-x-auto px-container font-sans text-sm font-normal tracking-wide desktop:justify-center">
+      <ul className="scrollbar-hidden mx-auto flex max-w-(--breakpoint-max) overflow-x-auto px-container font-sans text-sm font-normal tracking-wide desktop:justify-center">
         <AllTimeLink currentYear={currentYear} linkFunc={linkFunc} />
         {[...years].reverse().map((year) => {
           return (

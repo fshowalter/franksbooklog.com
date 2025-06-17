@@ -61,7 +61,7 @@ export function ListWithFiltersLayout({
                   totalCount={totalCount}
                 />
               </div>
-              <div className="mx-auto max-w-screen-max grid-cols-[1fr_48px_minmax(398px,33%)] tablet-landscape:grid tablet-landscape:grid-rows-[auto_1fr]">
+              <div className="mx-auto max-w-(--breakpoint-max) grid-cols-[1fr_48px_minmax(398px,33%)] tablet-landscape:grid tablet-landscape:grid-rows-[auto_1fr]">
                 <div
                   className="relative z-10 col-start-3 row-span-2 row-start-2 grid min-w-[320px] text-sm transition-[grid-template-rows] duration-300 ease-in-out tablet-landscape:mr-12 tablet-landscape:block tablet-landscape:py-24 tablet-landscape:pb-12 tablet-landscape:shadow-none desktop:mr-20"
                   style={{
@@ -104,7 +104,7 @@ function ListHeader({
   totalCount: number;
 }): JSX.Element {
   return (
-    <div className="mx-auto flex w-full max-w-screen-max flex-wrap items-baseline justify-between gap-x-4 gap-y-5 px-container py-10 font-sans font-medium uppercase tracking-wide text-subtle">
+    <div className="mx-auto flex w-full max-w-(--breakpoint-max) flex-wrap items-baseline justify-between gap-x-4 gap-y-5 px-container py-10 font-sans font-medium uppercase tracking-wide text-subtle">
       <span className="block pr-4">
         <span className="font-semibold text-default">
           {totalCount.toLocaleString()}

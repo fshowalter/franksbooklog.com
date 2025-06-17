@@ -90,7 +90,7 @@ function Details({ value }: { value: ReviewWithContent["readings"][0] }) {
         {summaryText}{" "}
         <span className="text-accent">{value.readingTime} Days</span>
       </summary>
-      <ol className="grid w-full grid-cols-[auto,1fr,auto] pt-3">
+      <ol className="grid w-full grid-cols-[auto_1fr_auto] pt-3">
         {value.timeline.map((entry) => {
           let progressValue;
           const progressNumber = entry.progress.split("%", 1)[0];
@@ -107,7 +107,7 @@ function Details({ value }: { value: ReviewWithContent["readings"][0] }) {
 
           return (
             <li
-              className="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr,auto,auto,1fr] py-1"
+              className="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] py-1"
               key={entryDate}
             >
               <div className="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-xs">

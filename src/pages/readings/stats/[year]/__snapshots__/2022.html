@@ -48,7 +48,7 @@
   <body>
     <div>
       <a
-        class="absolute left-1/2 top-0.5 z-50 mx-auto bg-subtle px-6 py-2 text-center text-accent [transform:translate(-50%,calc(-100%_-_2px))] focus:[transform:translate(-50%,0%)]"
+        class="absolute left-1/2 top-0.5 z-50 mx-auto bg-subtle px-6 py-2 text-center text-accent [transform:translate(-50%,calc(-100%-2px))] focus:[transform:translate(-50%,0%)]"
         href="#content"
         >Skip to content</a
       >
@@ -126,7 +126,7 @@
                 </li>
               </ul>
             </nav>
-            <div class="search-button z-[1000]">
+            <div class="search-button z-1000">
               <button
                 aria-keyshortcuts="Control+K"
                 aria-label="Search"
@@ -212,7 +212,7 @@
           </header>
           <nav class="bg-footer mb-12 w-full">
             <ul
-              class="scrollbar-hidden mx-auto flex max-w-screen-max overflow-x-auto px-container font-sans text-sm font-normal tracking-wide desktop:justify-center"
+              class="scrollbar-hidden mx-auto flex max-w-(--breakpoint-max) overflow-x-auto px-container font-sans text-sm font-normal tracking-wide desktop:justify-center"
             >
               <li class="text-center text-inverse">
                 <a
@@ -329,10 +329,10 @@
             </div>
           </div>
           <div
-            class="mx-auto flex w-full max-w-screen-max flex-col items-stretch gap-y-8 py-10 tablet:px-container"
+            class="mx-auto flex w-full max-w-(--breakpoint-max) flex-col items-stretch gap-y-8 py-10 tablet:px-container"
           >
             <div
-              class="mx-auto flex w-full flex-col gap-y-8 desktop:max-w-[calc(66%_+_24px)]"
+              class="mx-auto flex w-full flex-col gap-y-8 desktop:max-w-[calc(66%+24px)]"
             >
               <section class="w-full bg-default pb-8 tablet:px-container">
                 <h2
@@ -367,7 +367,7 @@
                         </summary>
                         <ol class="py-2 tablet:px-4">
                           <li
-                            class="bg-default relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover"
+                            class="bg-default relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover"
                           >
                             <div class="w-list-item-cover shrink-0">
                               <img
@@ -389,7 +389,7 @@
                             </div>
                             <div class="flex grow flex-col gap-y-1">
                               <a
-                                class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                                class="block font-sans text-sm font-medium text-accent before:absolute before:left-(--container-padding) before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
                                 href="/reviews/soft-construction-of-a-sunset-by-philip-fracassi/"
                                 >Soft Construction of a Sunset</a
                               >
@@ -407,7 +407,7 @@
                             </div>
                           </li>
                           <li
-                            class="bg-default relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover"
+                            class="bg-default relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover"
                           >
                             <div class="w-list-item-cover shrink-0">
                               <img
@@ -429,7 +429,7 @@
                             </div>
                             <div class="flex grow flex-col gap-y-1">
                               <a
-                                class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                                class="block font-sans text-sm font-medium text-accent before:absolute before:left-(--container-padding) before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
                                 href="/reviews/altar-by-philip-fracassi/"
                                 >Altar</a
                               >
@@ -447,7 +447,7 @@
                             </div>
                           </li>
                           <li
-                            class="bg-default relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover"
+                            class="bg-default relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover"
                           >
                             <div class="w-list-item-cover shrink-0">
                               <img
@@ -469,7 +469,7 @@
                             </div>
                             <div class="flex grow flex-col gap-y-1">
                               <a
-                                class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                                class="block font-sans text-sm font-medium text-accent before:absolute before:left-(--container-padding) before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
                                 href="/reviews/the-horse-thief-by-philip-fracassi/"
                                 >The Horse Thief</a
                               >
@@ -487,7 +487,7 @@
                             </div>
                           </li>
                           <li
-                            class="bg-default relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover"
+                            class="bg-default relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover"
                           >
                             <div class="w-list-item-cover shrink-0">
                               <img
@@ -509,7 +509,7 @@
                             </div>
                             <div class="flex grow flex-col gap-y-1">
                               <a
-                                class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                                class="block font-sans text-sm font-medium text-accent before:absolute before:left-(--container-padding) before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
                                 href="/reviews/coffin-by-philip-fracassi/"
                                 >Coffin</a
                               >
@@ -527,7 +527,7 @@
                             </div>
                           </li>
                           <li
-                            class="bg-default relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover"
+                            class="bg-default relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover"
                           >
                             <div class="w-list-item-cover shrink-0">
                               <img
@@ -549,7 +549,7 @@
                             </div>
                             <div class="flex grow flex-col gap-y-1">
                               <a
-                                class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                                class="block font-sans text-sm font-medium text-accent before:absolute before:left-(--container-padding) before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
                                 href="/reviews/the-baby-farmer-by-philip-fracassi/"
                                 >The Baby Farmer</a
                               >
@@ -567,7 +567,7 @@
                             </div>
                           </li>
                           <li
-                            class="bg-default relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover"
+                            class="bg-default relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover"
                           >
                             <div class="w-list-item-cover shrink-0">
                               <img
@@ -589,7 +589,7 @@
                             </div>
                             <div class="flex grow flex-col gap-y-1">
                               <a
-                                class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                                class="block font-sans text-sm font-medium text-accent before:absolute before:left-(--container-padding) before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
                                 href="/reviews/surfer-girl-by-philip-fracassi/"
                                 >Surfer Girl</a
                               >
@@ -607,7 +607,7 @@
                             </div>
                           </li>
                           <li
-                            class="bg-default relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover"
+                            class="bg-default relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover"
                           >
                             <div class="w-list-item-cover shrink-0">
                               <img
@@ -629,7 +629,7 @@
                             </div>
                             <div class="flex grow flex-col gap-y-1">
                               <a
-                                class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                                class="block font-sans text-sm font-medium text-accent before:absolute before:left-(--container-padding) before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
                                 href="/reviews/mother-by-philip-fracassi/"
                                 >Mother</a
                               >
@@ -647,7 +647,7 @@
                             </div>
                           </li>
                           <li
-                            class="bg-default relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover"
+                            class="bg-default relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover"
                           >
                             <div class="w-list-item-cover shrink-0">
                               <img
@@ -669,7 +669,7 @@
                             </div>
                             <div class="flex grow flex-col gap-y-1">
                               <a
-                                class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                                class="block font-sans text-sm font-medium text-accent before:absolute before:left-(--container-padding) before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
                                 href="/reviews/fail-safe-by-philip-fracassi/"
                                 >Fail-Safe</a
                               >
@@ -687,7 +687,7 @@
                             </div>
                           </li>
                           <li
-                            class="bg-default relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover"
+                            class="bg-default relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover"
                           >
                             <div class="w-list-item-cover shrink-0">
                               <img
@@ -709,7 +709,7 @@
                             </div>
                             <div class="flex grow flex-col gap-y-1">
                               <a
-                                class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                                class="block font-sans text-sm font-medium text-accent before:absolute before:left-(--container-padding) before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
                                 href="/reviews/mandala-by-philip-fracassi/"
                                 >Mandala</a
                               >
@@ -727,7 +727,7 @@
                             </div>
                           </li>
                           <li
-                            class="bg-default relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover"
+                            class="bg-default relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover"
                           >
                             <div class="w-list-item-cover shrink-0">
                               <img
@@ -749,7 +749,7 @@
                             </div>
                             <div class="flex grow flex-col gap-y-1">
                               <a
-                                class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                                class="block font-sans text-sm font-medium text-accent before:absolute before:left-(--container-padding) before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
                                 href="/reviews/behold-the-void-by-philip-fracassi/"
                                 >Behold the Void</a
                               >
@@ -796,7 +796,7 @@
                         </summary>
                         <ol class="py-2 tablet:px-4">
                           <li
-                            class="bg-default relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover"
+                            class="bg-default relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover"
                           >
                             <div class="w-list-item-cover shrink-0">
                               <img
@@ -818,7 +818,7 @@
                             </div>
                             <div class="flex grow flex-col gap-y-1">
                               <a
-                                class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                                class="block font-sans text-sm font-medium text-accent before:absolute before:left-(--container-padding) before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
                                 href="/reviews/on-writing-by-stephen-king/"
                                 >On Writing</a
                               >
@@ -836,7 +836,7 @@
                             </div>
                           </li>
                           <li
-                            class="bg-default relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover"
+                            class="bg-default relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover"
                           >
                             <div class="w-list-item-cover shrink-0">
                               <img
@@ -858,7 +858,7 @@
                             </div>
                             <div class="flex grow flex-col gap-y-1">
                               <a
-                                class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                                class="block font-sans text-sm font-medium text-accent before:absolute before:left-(--container-padding) before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
                                 href="/reviews/carrie-by-stephen-king/"
                                 >Carrie</a
                               >
@@ -876,7 +876,7 @@
                             </div>
                           </li>
                           <li
-                            class="bg-default relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover"
+                            class="bg-default relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover"
                           >
                             <div class="w-list-item-cover shrink-0">
                               <img
@@ -898,7 +898,7 @@
                             </div>
                             <div class="flex grow flex-col gap-y-1">
                               <a
-                                class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                                class="block font-sans text-sm font-medium text-accent before:absolute before:left-(--container-padding) before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
                                 href="/reviews/salems-lot-by-stephen-king/"
                                 >&#x27;Salem&#x27;s Lot</a
                               >
@@ -916,7 +916,7 @@
                             </div>
                           </li>
                           <li
-                            class="bg-default relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover"
+                            class="bg-default relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover"
                           >
                             <div class="w-list-item-cover shrink-0">
                               <img
@@ -938,7 +938,7 @@
                             </div>
                             <div class="flex grow flex-col gap-y-1">
                               <a
-                                class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                                class="block font-sans text-sm font-medium text-accent before:absolute before:left-(--container-padding) before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
                                 href="/reviews/the-shining-by-stephen-king/"
                                 >The Shining</a
                               >
@@ -985,7 +985,7 @@
                         </summary>
                         <ol class="py-2 tablet:px-4">
                           <li
-                            class="bg-default relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover"
+                            class="bg-default relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover"
                           >
                             <div class="w-list-item-cover shrink-0">
                               <img
@@ -1007,7 +1007,7 @@
                             </div>
                             <div class="flex grow flex-col gap-y-1">
                               <a
-                                class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                                class="block font-sans text-sm font-medium text-accent before:absolute before:left-(--container-padding) before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
                                 href="/reviews/the-cellar-by-richard-laymon/"
                                 >The Cellar</a
                               >
@@ -1025,7 +1025,7 @@
                             </div>
                           </li>
                           <li
-                            class="bg-default relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover"
+                            class="bg-default relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover"
                           >
                             <div class="w-list-item-cover shrink-0">
                               <img
@@ -1047,7 +1047,7 @@
                             </div>
                             <div class="flex grow flex-col gap-y-1">
                               <a
-                                class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                                class="block font-sans text-sm font-medium text-accent before:absolute before:left-(--container-padding) before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
                                 href="/reviews/desert-pickup-by-richard-laymon/"
                                 >Desert Pickup</a
                               >
@@ -1065,7 +1065,7 @@
                             </div>
                           </li>
                           <li
-                            class="bg-default relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover"
+                            class="bg-default relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover"
                           >
                             <div class="w-list-item-cover shrink-0">
                               <img
@@ -1087,7 +1087,7 @@
                             </div>
                             <div class="flex grow flex-col gap-y-1">
                               <a
-                                class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                                class="block font-sans text-sm font-medium text-accent before:absolute before:left-(--container-padding) before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
                                 href="/reviews/the-woods-are-dark-by-richard-laymon/"
                                 >The Woods Are Dark</a
                               >
@@ -1105,7 +1105,7 @@
                             </div>
                           </li>
                           <li
-                            class="bg-default relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover"
+                            class="bg-default relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover"
                           >
                             <div class="w-list-item-cover shrink-0">
                               <img
@@ -1127,7 +1127,7 @@
                             </div>
                             <div class="flex grow flex-col gap-y-1">
                               <a
-                                class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                                class="block font-sans text-sm font-medium text-accent before:absolute before:left-(--container-padding) before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
                                 href="/reviews/out-are-the-lights-by-richard-laymon/"
                                 >Out Are the Lights</a
                               >
@@ -1174,7 +1174,7 @@
                         </summary>
                         <ol class="py-2 tablet:px-4">
                           <li
-                            class="bg-default relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover"
+                            class="bg-default relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover"
                           >
                             <div class="w-list-item-cover shrink-0">
                               <img
@@ -1196,7 +1196,7 @@
                             </div>
                             <div class="flex grow flex-col gap-y-1">
                               <a
-                                class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                                class="block font-sans text-sm font-medium text-accent before:absolute before:left-(--container-padding) before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
                                 href="/reviews/casino-royale-by-ian-fleming/"
                                 >Casino Royale</a
                               >
@@ -1214,7 +1214,7 @@
                             </div>
                           </li>
                           <li
-                            class="bg-default relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover"
+                            class="bg-default relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover"
                           >
                             <div class="w-list-item-cover shrink-0">
                               <img
@@ -1236,7 +1236,7 @@
                             </div>
                             <div class="flex grow flex-col gap-y-1">
                               <a
-                                class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                                class="block font-sans text-sm font-medium text-accent before:absolute before:left-(--container-padding) before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
                                 href="/reviews/live-and-let-die-by-ian-fleming/"
                                 >Live and Let Die</a
                               >
@@ -1254,7 +1254,7 @@
                             </div>
                           </li>
                           <li
-                            class="bg-default relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover"
+                            class="bg-default relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover"
                           >
                             <div class="w-list-item-cover shrink-0">
                               <img
@@ -1276,7 +1276,7 @@
                             </div>
                             <div class="flex grow flex-col gap-y-1">
                               <a
-                                class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                                class="block font-sans text-sm font-medium text-accent before:absolute before:left-(--container-padding) before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
                                 href="/reviews/moonraker-by-ian-fleming/"
                                 >Moonraker</a
                               >
@@ -1323,7 +1323,7 @@
                         </summary>
                         <ol class="py-2 tablet:px-4">
                           <li
-                            class="bg-default relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover"
+                            class="bg-default relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover"
                           >
                             <div class="w-list-item-cover shrink-0">
                               <img
@@ -1345,7 +1345,7 @@
                             </div>
                             <div class="flex grow flex-col gap-y-1">
                               <a
-                                class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                                class="block font-sans text-sm font-medium text-accent before:absolute before:left-(--container-padding) before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
                                 href="/reviews/fight-club-by-chuck-palahniuk/"
                                 >Fight Club</a
                               >
@@ -1363,7 +1363,7 @@
                             </div>
                           </li>
                           <li
-                            class="bg-default relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover"
+                            class="bg-default relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover"
                           >
                             <div class="w-list-item-cover shrink-0">
                               <img
@@ -1385,7 +1385,7 @@
                             </div>
                             <div class="flex grow flex-col gap-y-1">
                               <a
-                                class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                                class="block font-sans text-sm font-medium text-accent before:absolute before:left-(--container-padding) before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
                                 href="/reviews/consider-this-by-chuck-palahniuk/"
                                 >Consider This</a
                               >
@@ -1432,7 +1432,7 @@
                         </summary>
                         <ol class="py-2 tablet:px-4">
                           <li
-                            class="bg-default relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover"
+                            class="bg-default relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover"
                           >
                             <div class="w-list-item-cover shrink-0">
                               <img
@@ -1454,7 +1454,7 @@
                             </div>
                             <div class="flex grow flex-col gap-y-1">
                               <a
-                                class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                                class="block font-sans text-sm font-medium text-accent before:absolute before:left-(--container-padding) before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
                                 href="/reviews/less-than-zero-by-bret-easton-ellis/"
                                 >Less Than Zero</a
                               >
@@ -1472,7 +1472,7 @@
                             </div>
                           </li>
                           <li
-                            class="bg-default relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover"
+                            class="bg-default relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover"
                           >
                             <div class="w-list-item-cover shrink-0">
                               <img
@@ -1494,7 +1494,7 @@
                             </div>
                             <div class="flex grow flex-col gap-y-1">
                               <a
-                                class="block font-sans text-sm font-medium text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+                                class="block font-sans text-sm font-medium text-accent before:absolute before:left-(--container-padding) before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
                                 href="/reviews/the-rules-of-attraction-by-bret-easton-ellis/"
                                 >The Rules of Attraction</a
                               >
@@ -1526,7 +1526,7 @@
                   By Year Published
                 </h2>
                 <div
-                  class="grid w-full grid-cols-[1fr,auto] tablet:whitespace-nowrap"
+                  class="grid w-full grid-cols-[1fr_auto] tablet:whitespace-nowrap"
                 >
                   <div class="col-span-2 grid grid-cols-subgrid py-3">
                     <div class="col-span-2 grid grid-cols-subgrid">
@@ -1713,7 +1713,7 @@
               <section class="w-full bg-default px-container pb-8">
                 <h2 class="py-4 font-medium desktop:text-xl">By Kind</h2>
                 <div
-                  class="grid w-full grid-cols-[1fr,auto] tablet:whitespace-nowrap"
+                  class="grid w-full grid-cols-[1fr_auto] tablet:whitespace-nowrap"
                 >
                   <div class="col-span-2 grid grid-cols-subgrid py-3">
                     <div class="col-span-2 grid grid-cols-subgrid">
@@ -1812,7 +1812,7 @@
               <section class="w-full bg-default px-container pb-8">
                 <h2 class="py-4 font-medium desktop:text-xl">By Edition</h2>
                 <div
-                  class="grid w-full grid-cols-[1fr,auto] tablet:whitespace-nowrap"
+                  class="grid w-full grid-cols-[1fr_auto] tablet:whitespace-nowrap"
                 >
                   <div class="col-span-2 grid grid-cols-subgrid py-3">
                     <div class="col-span-2 grid grid-cols-subgrid">
@@ -1856,7 +1856,7 @@
           </div>
         </main>
         <footer class="bg-canvas">
-          <div class="mx-auto max-w-screen-desktop px-container py-20">
+          <div class="mx-auto max-w-(--breakpoint-desktop) px-container py-20">
             <div
               class="flex w-full flex-col tablet:flex-row-reverse tablet:justify-between"
             >
@@ -1921,7 +1921,7 @@
                 </div>
               </div>
               <div
-                class="flex grow-0 flex-col gap-20 pb-20 pt-10 tablet:basis-[430px] tablet:pr-10"
+                class="flex grow-0 flex-col gap-20 pb-20 pt-10 tablet:basis-button tablet:pr-10"
               >
                 <ul class="flex w-full flex-col gap-y-10 max:w-auto">
                   <li class="block w-1/2 whitespace-nowrap text-2xl">
@@ -1973,7 +1973,7 @@
     </div>
     <dialog
       aria-label="Search"
-      class="fixed inset-x-4 h-screen w-full rounded-lg border border-default bg-default shadow-lg backdrop:bg-[#000] backdrop:opacity-40 open:flex open:flex-col tablet:mx-auto tablet:mt-16 tablet:h-min tablet:max-h-[min(100vh_-_128px,900px)] tablet:min-h-60 tablet:max-w-[min(100vw_-_64px,36rem)] tablet:rounded-xl desktop:min-h-0"
+      class="fixed inset-x-4 h-screen w-full rounded-lg border border-default bg-default shadow-lg backdrop:bg-[#000] backdrop:opacity-40 open:flex open:flex-col tablet:mx-auto tablet:mt-16 tablet:h-min tablet:max-h-[min(100vh-128px,900px)] tablet:min-h-60 tablet:max-w-[min(100vw-64px,36rem)] tablet:rounded-xl desktop:min-h-0"
     >
       <div class="contents" data-dialog-frame>
         <button
@@ -1984,7 +1984,7 @@
         </button>
         <div class="contents"><div id="pagefind__search"></div></div>
         <div
-          class="hidden px-[var(--search-dialog-padding)] py-4 font-sans text-xs font-light tracking-wide text-subtle desktop:block"
+          class="hidden px-(--search-dialog-padding) py-4 font-sans text-xs font-light tracking-wide text-subtle desktop:block"
         >
           <kbd class="rounded-md bg-default p-2 font-mono text-xs text-subtle"
             >Tab</kbd

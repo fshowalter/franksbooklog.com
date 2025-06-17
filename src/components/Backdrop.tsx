@@ -147,7 +147,7 @@ function Wrapper({
     >
       {heroImage}
       <div
-        className={`${centerText ? "items-center" : ""} z-10 mx-auto flex w-full ${narrowChildren ? "px-container text-center tablet:max-w-unset tablet:px-0" : "max-w-screen-max px-container"} flex-col ${heroImage ? "bg-gradient-to-t from-[rgba(0,0,0,.85)] via-[rgba(0,0,0,.85)] desktop:bg-none" : ""} py-8 tablet:pb-10 tablet:pt-20 desktop:py-0`}
+        className={`${centerText ? "items-center" : ""} z-10 mx-auto flex w-full ${narrowChildren ? "px-container text-center tablet:max-w-unset tablet:px-0" : "max-w-(--breakpoint-max) px-container"} flex-col ${heroImage ? "bg-linear-to-t from-[rgba(0,0,0,.85)] via-[rgba(0,0,0,.85)] desktop:bg-none" : ""} py-8 tablet:pb-10 tablet:pt-20 desktop:py-0`}
       >
         {children}
       </div>

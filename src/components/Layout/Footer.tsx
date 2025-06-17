@@ -8,7 +8,7 @@ import { navItems } from "./navItems";
 export function Footer(): JSX.Element {
   return (
     <footer className="bg-canvas">
-      <div className="mx-auto max-w-screen-desktop px-container py-20">
+      <div className="mx-auto max-w-(--breakpoint-desktop) px-container py-20">
         <div className="flex w-full flex-col tablet:flex-row-reverse tablet:justify-between">
           <a
             className="mx-auto mb-8 w-full max-w-button bg-footer py-5 text-center font-sans text-xs uppercase tracking-wide text-inverse hover:bg-subtle hover:text-default tablet:mx-0"
@@ -62,7 +62,7 @@ export function Footer(): JSX.Element {
               </p>
             </div>
           </div>
-          <div className="flex grow-0 flex-col gap-20 pb-20 pt-10 tablet:basis-[430px] tablet:pr-10">
+          <div className="flex grow-0 flex-col gap-20 pb-20 pt-10 tablet:basis-button tablet:pr-10">
             <ul className="flex w-full flex-col gap-y-10 max:w-auto">
               {navItems.map((item) => {
                 return <NavListItem key={item.target} value={item} />;
