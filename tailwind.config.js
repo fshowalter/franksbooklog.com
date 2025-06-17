@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./src/**/*.{astro,js,jsx,md,mdx,ts,tsx}"],
+  content: ["./src/**/*.{astro,ts,tsx}"],
   theme: {
     backgroundColor: {
       abandoned: "var(--bg-abandoned)",
