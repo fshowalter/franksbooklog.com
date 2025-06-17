@@ -38,15 +38,15 @@ export function ReadingHistoryListItem({ value }: Props) {
   return (
     <li
       className={`
-      mb-1 flex flex-col bg-subtle px-container font-sans text-xs font-light
-      tablet:px-6
-    `}
+        mb-1 flex flex-col bg-subtle px-container font-sans text-xs font-light
+        tablet:px-6
+      `}
     >
       <div
         className={`
-        flex gap-x-4 py-4
-        tablet:gap-x-6
-      `}
+          flex gap-x-4 py-4
+          tablet:gap-x-6
+        `}
       >
         <div className="size-auto self-start">
           <Date date={value.date} />
@@ -125,16 +125,16 @@ function Details({ value }: { value: ReviewWithContent["readings"][0] }) {
             >
               <div
                 className={`
-                col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid
-                font-sans text-xs
-              `}
+                  col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid
+                  font-sans text-xs
+                `}
               >
                 <div className="">{entryDate}</div>
                 <div
                   className={`
-                  col-start-3 self-center pb-1 text-right font-sans text-xs
-                  text-nowrap
-                `}
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
+                    text-nowrap
+                  `}
                 >
                   <div className="">{entry.progress}</div>
                 </div>
@@ -192,9 +192,9 @@ function ReadingNotes({
   return (
     <div
       className={`
-      px-2 pb-6 text-sm font-light
-      tablet:mx-24 tablet:px-0
-    `}
+        px-2 pb-6 text-sm font-light
+        tablet:mx-24 tablet:px-0
+      `}
     >
       <RenderedMarkdown
         className="leading-normal tracking-prose text-muted"

@@ -37,71 +37,71 @@ export function MostReadAuthors({
   return (
     <section
       className={`
-      w-full bg-default pb-8
-      tablet:px-container
-    `}
+        w-full bg-default pb-8
+        tablet:px-container
+      `}
     >
       <h2
         className={`
-        px-container py-4 font-medium
-        tablet:px-0
-        desktop:text-xl
-      `}
+          px-container py-4 font-medium
+          tablet:px-0
+          desktop:text-xl
+        `}
       >
         Most Read Authors
       </h2>
       <div
         className={`
-        w-full
-        tablet:whitespace-nowrap
-      `}
+          w-full
+          tablet:whitespace-nowrap
+        `}
       >
         {values.map((value) => {
           return (
             <div className="py-3" key={value.name}>
               <div
                 className={`
-                flex justify-between px-container
-                tablet:px-0
-              `}
+                  flex justify-between px-container
+                  tablet:px-0
+                `}
               >
                 <div className="font-sans text-sm text-muted">
                   <Name value={value} />
                 </div>
                 <div
                   className={`
-                  col-start-2 self-center pb-1 text-right font-sans text-xs
-                  text-nowrap text-subtle
-                `}
+                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    text-nowrap text-subtle
+                  `}
                 >
                   {value.count}
                 </div>
               </div>
               <div
                 className={`
-                col-span-2 row-start-2 px-container
-                tablet:px-0
-              `}
+                  col-span-2 row-start-2 px-container
+                  tablet:px-0
+                `}
               >
                 <details
                   className={`
-                  bg-group
-                  tablet:px-2
-                `}
+                    bg-group
+                    tablet:px-2
+                  `}
                 >
                   <summary
                     className={`
-                    cursor-pointer px-4 py-1 font-sans text-sm text-subtle
-                    tablet:px-0
-                  `}
+                      cursor-pointer px-4 py-1 font-sans text-sm text-subtle
+                      tablet:px-0
+                    `}
                   >
                     Details
                   </summary>
                   <ol
                     className={`
-                    py-2
-                    tablet:px-4
-                  `}
+                      py-2
+                      tablet:px-4
+                    `}
                   >
                     {value.readings.map((reading) => {
                       return (

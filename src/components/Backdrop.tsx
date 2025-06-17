@@ -19,9 +19,9 @@ export function AvatarBackdrop({
       <Breadcrumb value={breadcrumb} />
       <div
         className={`
-        mx-auto mb-6 w-4/5 max-w-[250px] safari-border-radius-fix
-        overflow-hidden rounded-full
-      `}
+          mx-auto mb-6 w-4/5 max-w-[250px] safari-border-radius-fix
+          overflow-hidden rounded-full
+        `}
       >
         <Avatar
           data-pagefind-meta="image[src]"
@@ -178,18 +178,18 @@ function Wrapper({
           ${
             narrowChildren
               ? `
-            px-container text-center
-            tablet:max-w-unset tablet:px-0
-          `
+                px-container text-center
+                tablet:max-w-unset tablet:px-0
+              `
               : `max-w-(--breakpoint-max) px-container`
           }
           flex-col
           ${
             heroImage
               ? `
-            bg-linear-to-t from-[rgba(0,0,0,.85)] via-[rgba(0,0,0,.85)]
-            desktop:bg-none
-          `
+                bg-linear-to-t from-[rgba(0,0,0,.85)] via-[rgba(0,0,0,.85)]
+                desktop:bg-none
+              `
               : ""
           }
           py-8

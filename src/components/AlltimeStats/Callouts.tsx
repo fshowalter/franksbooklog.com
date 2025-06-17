@@ -14,9 +14,9 @@ export function Callouts({
   return (
     <div
       className={`
-      flex flex-wrap justify-center gap-6
-      desktop:flex-nowrap
-    `}
+        flex flex-wrap justify-center gap-6
+        desktop:flex-nowrap
+      `}
     >
       <StatsCallout label="Titles" value={workCount} />
       <StatsCallout label="Books" value={bookCount} />

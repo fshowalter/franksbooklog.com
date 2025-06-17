@@ -17,9 +17,9 @@ export function IncludedWorks({ values }: Props) {
       </SubHeading>
       <div
         className={`
-        w-full max-w-popout bg-subtle px-container py-8
-        tablet:pt-12
-      `}
+          w-full max-w-popout bg-subtle px-container py-8
+          tablet:pt-12
+        `}
       >
         <ul className="">
           {values.map((value) => (

@@ -22,8 +22,8 @@ export function ListHeaderButton({
   return (
     <div
       className={`
-      flex items-start gap-x-4 bg-default text-nowrap text-accent uppercase
-    `}
+        flex items-start gap-x-4 bg-default text-nowrap text-accent uppercase
+      `}
     >
       <a
         className={`
@@ -59,18 +59,18 @@ export function ListWithFiltersLayout({
           <div className="flex grow flex-col bg-subtle">
             <div
               className={`
-              relative
-              tablet:px-12
-              tablet-landscape:px-0
-            `}
+                relative
+                tablet:px-12
+                tablet-landscape:px-0
+              `}
             >
               <div
                 className={`
-                relative z-10 row-start-1 bg-default text-xs
-                tablet:-mx-12 tablet:px-0
-                tablet-landscape:col-span-3 tablet-landscape:mx-0
-                tablet-landscape:w-full
-              `}
+                  relative z-10 row-start-1 bg-default text-xs
+                  tablet:-mx-12 tablet:px-0
+                  tablet-landscape:col-span-3 tablet-landscape:mx-0
+                  tablet-landscape:w-full
+                `}
               >
                 <ListHeader
                   filtersVisible={filtersVisible}
@@ -83,10 +83,10 @@ export function ListWithFiltersLayout({
               </div>
               <div
                 className={`
-                mx-auto max-w-(--breakpoint-max)
-                grid-cols-[1fr_48px_minmax(398px,33%)]
-                tablet-landscape:grid tablet-landscape:grid-rows-[auto_1fr]
-              `}
+                  mx-auto max-w-(--breakpoint-max)
+                  grid-cols-[1fr_48px_minmax(398px,33%)]
+                  tablet-landscape:grid tablet-landscape:grid-rows-[auto_1fr]
+                `}
               >
                 <div
                   className={`
@@ -105,28 +105,29 @@ export function ListWithFiltersLayout({
                   <div className="overflow-hidden">
                     <div
                       className={`
-                      w-full bg-subtle text-sm
-                      tablet:pt-12 tablet:text-base
-                      tablet-landscape:overflow-visible
-                      tablet-landscape:bg-default tablet-landscape:px-container
-                      tablet-landscape:pt-0
-                      desktop:px-8
-                    `}
+                        w-full bg-subtle text-sm
+                        tablet:pt-12 tablet:text-base
+                        tablet-landscape:overflow-visible
+                        tablet-landscape:bg-default
+                        tablet-landscape:px-container tablet-landscape:pt-0
+                        desktop:px-8
+                      `}
                     >
                       <fieldset
                         className={`
-                        flex flex-col gap-5 bg-group px-container py-10
-                        tablet:gap-8 tablet:bg-default
-                        tablet-landscape:mt-0 tablet-landscape:gap-12
-                        tablet-landscape:px-0
-                      `}
+                          flex flex-col gap-5 bg-group px-container py-10
+                          tablet:gap-8 tablet:bg-default
+                          tablet-landscape:mt-0 tablet-landscape:gap-12
+                          tablet-landscape:px-0
+                        `}
                       >
                         <legend
                           className={`
-                          hidden w-full py-10 font-sans text-xs font-bold
-                          tracking-wide text-subtle uppercase
-                          tablet-landscape:block tablet-landscape:shadow-bottom
-                        `}
+                            hidden w-full py-10 font-sans text-xs font-bold
+                            tracking-wide text-subtle uppercase
+                            tablet-landscape:block
+                            tablet-landscape:shadow-bottom
+                          `}
                         >
                           Filter & Sort
                         </legend>
@@ -138,10 +139,10 @@ export function ListWithFiltersLayout({
 
                 <div
                   className={`
-                  col-start-1 row-start-2 pb-10
-                  tablet-landscape:pl-12
-                  desktop:pl-20
-                `}
+                    col-start-1 row-start-2 pb-10
+                    tablet-landscape:pl-12
+                    desktop:pl-20
+                  `}
                 >
                   {list}
                 </div>
@@ -168,10 +169,10 @@ function ListHeader({
   return (
     <div
       className={`
-      mx-auto flex w-full max-w-(--breakpoint-max) flex-wrap items-baseline
-      justify-between gap-x-4 gap-y-5 px-container py-10 font-sans font-medium
-      tracking-wide text-subtle uppercase
-    `}
+        mx-auto flex w-full max-w-(--breakpoint-max) flex-wrap items-baseline
+        justify-between gap-x-4 gap-y-5 px-container py-10 font-sans font-medium
+        tracking-wide text-subtle uppercase
+      `}
     >
       <span className="block pr-4">
         <span className="font-semibold text-default">

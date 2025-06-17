@@ -14,9 +14,9 @@ export function BarGradient({
   return (
     <div
       className={`
-      progress-bar-bg leading-[6px]
-      tablet:mb-0
-    `}
+        progress-bar-bg leading-[6px]
+        tablet:mb-0
+      `}
       style={styles}
     >
       &nbsp;

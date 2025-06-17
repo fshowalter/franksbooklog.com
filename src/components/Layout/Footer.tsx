@@ -11,9 +11,9 @@ export function Footer(): JSX.Element {
       <div className="mx-auto max-w-(--breakpoint-desktop) px-container py-20">
         <div
           className={`
-          flex w-full flex-col
-          tablet:flex-row-reverse tablet:justify-between
-        `}
+            flex w-full flex-col
+            tablet:flex-row-reverse tablet:justify-between
+          `}
         >
           <a
             className={`
@@ -30,20 +30,20 @@ export function Footer(): JSX.Element {
         </div>
         <div
           className={`
-          justify-between
-          tablet:flex
-        `}
+            justify-between
+            tablet:flex
+          `}
         >
           <div
             className={`
-            flex max-w-prose flex-col pb-12
-            tablet:pr-32
-          `}
+              flex max-w-prose flex-col pb-12
+              tablet:pr-32
+            `}
           >
             <div
               className={`
-              footer-text pt-10 font-sans text-base font-light text-subtle
-            `}
+                footer-text pt-10 font-sans text-base font-light text-subtle
+              `}
             >
               <p>
                 Hi there, I&apos;m Frank, a husband and father old enough to
@@ -88,15 +88,15 @@ export function Footer(): JSX.Element {
           </div>
           <div
             className={`
-            flex grow-0 flex-col gap-20 pt-10 pb-20
-            tablet:basis-button tablet:pr-10
-          `}
+              flex grow-0 flex-col gap-20 pt-10 pb-20
+              tablet:basis-button tablet:pr-10
+            `}
           >
             <ul
               className={`
-              flex w-full flex-col gap-y-10
-              max:w-auto
-            `}
+                flex w-full flex-col gap-y-10
+                max:w-auto
+              `}
             >
               {navItems.map((item) => {
                 return <NavListItem key={item.target} value={item} />;
@@ -107,9 +107,9 @@ export function Footer(): JSX.Element {
       </div>
       <p
         className={`
-        w-full bg-footer px-container py-10 text-center leading-5 font-normal
-        text-inverse
-      `}
+          w-full bg-footer px-container py-10 text-center leading-5 font-normal
+          text-inverse
+        `}
       >
         All reviews by Frank Showalter. All images used in accordance with the{" "}
         <a

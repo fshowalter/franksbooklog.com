@@ -122,9 +122,9 @@ function ReviewsListItem({ value }: { value: ListItemValue }): JSX.Element {
       <ListItemCover imageProps={value.coverImageProps} />
       <div
         className={`
-        flex grow flex-col items-start gap-y-2
-        tablet:w-full tablet:pr-4
-      `}
+          flex grow flex-col items-start gap-y-2
+          tablet:w-full tablet:pr-4
+        `}
       >
         <ListItemTitle slug={value.slug} title={value.title} />
         <Authors

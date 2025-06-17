@@ -40,14 +40,14 @@ export function HomeListItem({
   return (
     <li
       className={`
-      relative flex w-[48%] max-w-[248px] flex-col items-center border-default
-      bg-default
-      has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
-      min-[600px]:w-[30.66666667%]
-      tablet:w-[31.33333333%]
-      min-[900px]:w-[22.75%]
-      desktop:w-[15.75%]
-    `}
+        relative flex w-[48%] max-w-[248px] flex-col items-center border-default
+        bg-default
+        has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
+        min-[600px]:w-[30.66666667%]
+        tablet:w-[31.33333333%]
+        min-[900px]:w-[22.75%]
+        desktop:w-[15.75%]
+      `}
     >
       <Cover
         decoding="async"
@@ -60,24 +60,24 @@ export function HomeListItem({
       />
       <div
         className={`
-        flex w-full grow flex-col px-[8%] pb-8
-        desktop:pr-[10%] desktop:pl-[8.5%]
-      `}
+          flex w-full grow flex-col px-[8%] pb-8
+          desktop:pr-[10%] desktop:pl-[8.5%]
+        `}
       >
         <div
           className={`
-          pt-3 font-sans text-xxs leading-4 font-light tracking-wide
-          whitespace-nowrap text-subtle
-        `}
+            pt-3 font-sans text-xxs leading-4 font-light tracking-wide
+            whitespace-nowrap text-subtle
+          `}
         >
           {formatDate(value.date)}
         </div>
         <div
           className={`
-          pt-2 font-sans text-sm font-medium
-          max:pt-2 max:text-xl max:leading-6
-          tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5
-        `}
+            pt-2 font-sans text-sm font-medium
+            max:pt-2 max:text-xl max:leading-6
+            tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5
+          `}
         >
           <a
             className={`
@@ -96,9 +96,9 @@ export function HomeListItem({
         </div>
         <p
           className={`
-          pt-1 font-sans text-xs leading-4 font-light text-subtle
-          tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
-        `}
+            pt-1 font-sans text-xs leading-4 font-light text-subtle
+            tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
+          `}
         >
           by{" "}
           {toSentenceArray(
@@ -125,9 +125,9 @@ export function HomeListItem({
         />
         <div
           className={`
-          mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
-          text-subtle
-        `}
+            mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
+            text-subtle
+          `}
         >
           {value.kind} | {value.yearPublished}
         </div>

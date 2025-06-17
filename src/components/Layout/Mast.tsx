@@ -36,9 +36,9 @@ export function Mast({
       <div className="flex items-center">
         <nav
           className={`
-          hidden w-full
-          desktop:block desktop:w-auto
-        `}
+            hidden w-full
+            desktop:block desktop:w-auto
+          `}
         >
           <ul className={`flex flex-wrap justify-start gap-x-6 text-xl`}>
             {navItems.map((item) => {
@@ -56,9 +56,9 @@ export function Mast({
         <input className="hidden" id="mobile-nav" type="checkbox" />
         <label
           className={`
-          hamburger-icon
-          desktop:hidden
-        `}
+            hamburger-icon
+            desktop:hidden
+          `}
           htmlFor="mobile-nav"
         >
           <span
@@ -70,10 +70,10 @@ export function Mast({
         </label>
         <ul
           className={`
-          hamburger-menu flex flex-col items-start gap-y-5 text-left
-          text-inverse
-          desktop:hidden
-        `}
+            hamburger-menu flex flex-col items-start gap-y-5 text-left
+            text-inverse
+            desktop:hidden
+          `}
         >
           {navItems.map((item) => {
             return <MenuItem key={item.target} value={item} />;
