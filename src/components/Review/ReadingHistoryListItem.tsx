@@ -36,18 +36,8 @@ type Props = {
 
 export function ReadingHistoryListItem({ value }: Props) {
   return (
-    <li
-      className={`
-        mb-1 flex flex-col bg-subtle px-container font-sans text-xs font-light
-        tablet:px-6
-      `}
-    >
-      <div
-        className={`
-          flex gap-x-4 py-4
-          tablet:gap-x-6
-        `}
-      >
+    <li className="mb-1 flex flex-col bg-subtle px-container font-sans text-xs font-light tablet:px-6">
+      <div className="flex gap-x-4 py-4 tablet:gap-x-6">
         <div className="size-auto self-start">
           <Date date={value.date} />
         </div>
@@ -100,7 +90,7 @@ function Details({ value }: { value: ReviewWithContent["readings"][0] }) {
         {summaryText}{" "}
         <span className="text-accent">{value.readingTime} Days</span>
       </summary>
-      <ol className="grid w-full grid-cols-[auto_1fr_auto] pt-3">
+      <ol className="grid w-full grid-cols-[auto,1fr,auto] pt-3">
         {value.timeline.map((entry) => {
           let progressValue;
           const progressNumber = entry.progress.split("%", 1)[0];
@@ -117,25 +107,12 @@ function Details({ value }: { value: ReviewWithContent["readings"][0] }) {
 
           return (
             <li
-              className={`
-                relative col-span-3 grid grid-cols-subgrid
-                grid-rows-[1fr_auto_auto_1fr] py-1
-              `}
+              className="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr,auto,auto,1fr] py-1"
               key={entryDate}
             >
-              <div
-                className={`
-                  col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid
-                  font-sans text-xs
-                `}
-              >
+              <div className="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-xs">
                 <div className="">{entryDate}</div>
-                <div
-                  className={`
-                    col-start-3 self-center pb-1 text-right font-sans text-xs
-                    text-nowrap
-                  `}
-                >
+                <div className="col-start-3 self-center text-nowrap pb-1 text-right font-sans text-xs">
                   <div className="">{entry.progress}</div>
                 </div>
               </div>
@@ -190,12 +167,7 @@ function ReadingNotes({
     return false;
   }
   return (
-    <div
-      className={`
-        px-2 pb-6 text-sm font-light
-        tablet:mx-24 tablet:px-0
-      `}
-    >
+    <div className="px-2 pb-6 text-sm font-light tablet:mx-24 tablet:px-0">
       <RenderedMarkdown
         className="leading-normal tracking-prose text-muted"
         text={value}

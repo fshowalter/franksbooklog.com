@@ -48,33 +48,23 @@ export function Review({
       hasBackdrop={false}
       staticMast={true}
     >
-      <header
-        className={`relative z-1 mb-12 flex flex-col items-center px-[8%] pt-10`}
-      >
+      <header className="relative z-[1] mb-12 flex flex-col items-center px-[8%] pt-10">
         <nav className="pb-3">
           <a
-            className="font-sans text-xs tracking-wider text-accent uppercase"
+            className="font-sans text-xs uppercase tracking-wider text-accent"
             href="/reviews/"
           >
             Reviews
           </a>
         </nav>
         <h1
-          className={`
-            text-center text-4xl
-            desktop:text-6xl
-          `}
+          className="text-center text-4xl desktop:text-6xl"
           data-pagefind-meta="title"
         >
           {value.title}
         </h1>
         {value.subtitle && (
-          <p
-            className={`
-              max-w-prose pt-2 text-center text-base font-light tracking-wider
-              text-muted
-            `}
-          >
+          <p className="max-w-prose pt-2 text-center text-base font-light tracking-wider text-muted">
             {value.subtitle}
           </p>
         )}
@@ -86,46 +76,18 @@ export function Review({
           <ReviewGrade value={value.grade} />
         </div>
         <YearAndKind
-          className={`
-            mt-5 mb-4 font-sans text-xs font-light tracking-wide text-subtle
-            uppercase
-            tablet:mb-6
-          `}
+          className="mb-4 mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle tablet:mb-6"
           kind={value.kind}
           yearPublished={value.yearPublished}
         />
         <ReviewCover coverImageProps={coverImageProps} />
-        <div
-          className={`
-            relative mt-4 bg-default px-[1ch] font-sans text-xs tracking-wide
-            text-subtle uppercase
-            after:absolute after:top-1/2 after:left-[-11%] after:-z-10
-            after:w-[122%] after:border-t after:border-(--fg-subtle)
-            tablet:mt-6
-          `}
-        >
+        <div className="relative mt-4 bg-default px-[1ch] font-sans text-xs uppercase tracking-wide text-subtle after:absolute after:left-[-11%] after:top-1/2 after:-z-10 after:w-[122%] after:border-t after:border-[var(--fg-subtle)] tablet:mt-6">
           Reviewed {dateFormat.format(value.date)}
         </div>
       </header>
-      <div
-        className={`
-          flex flex-col items-center gap-16 px-container pb-20
-          desktop:gap-20 desktop:pb-32
-        `}
-      >
+      <div className="flex flex-col items-center gap-16 px-container pb-20 desktop:gap-20 desktop:pb-32">
         <LongFormText
-          className={`
-            max-w-prose
-            first-letter:leading-[.8] first-letter:text-default
-            tablet:first-letter:pr-3
-            desktop:first-letter:text-[64px]
-            [&>p:first-child]:first-letter:float-left
-            [&>p:first-child]:first-letter:mt-[6px]
-            [&>p:first-child]:first-letter:pr-2
-            [&>p:first-child]:first-letter:font-sans
-            [&>p:first-child]:first-letter:text-[56px]
-            [&>p:first-child]:first-letter:font-bold
-          `}
+          className="max-w-prose first-letter:leading-[.8] first-letter:text-default tablet:first-letter:pr-3 desktop:first-letter:text-[64px] [&>p:first-child]:first-letter:float-left [&>p:first-child]:first-letter:mt-[6px] [&>p:first-child]:first-letter:pr-2 [&>p:first-child]:first-letter:font-sans [&>p:first-child]:first-letter:text-[56px] [&>p:first-child]:first-letter:font-bold"
           text={value.content}
         />
         {value.includedWorks.length > 0 && (
@@ -149,11 +111,7 @@ export function Review({
       </div>
 
       <div
-        className={`
-          flex w-full flex-col items-center gap-y-12 bg-subtle pt-16 pb-32
-          tablet:pt-8
-          desktop:gap-y-24
-        `}
+        className="flex w-full flex-col items-center gap-y-12 bg-subtle pb-32 pt-16 tablet:pt-8 desktop:gap-y-24"
         data-pagefind-ignore
       >
         <MoreReviews values={moreReviews}>
@@ -206,17 +164,14 @@ function ReviewCover({
 }) {
   return (
     <div
-      className={`
-        relative my-12 flex h-[340px] w-full max-w-popout flex-col items-center
-      `}
+      className="relative my-12 flex h-[340px] w-full max-w-popout flex-col items-center"
       data-pagefind-meta={`image:${coverImageProps.src}`}
     >
-      <div className="absolute inset-0 overflow-hidden clip-path-cover">
+      <div className="cover-clip-path absolute inset-0 overflow-hidden">
         <div
-          className={`
-            absolute top-[-5%] left-[-5%] size-[110%] bg-default bg-cover
-            bg-center
-          `}
+          className={
+            "absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
+          }
           style={{
             backgroundColor: "var(--bg-default)",
             backgroundImage: `linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(${coverImageProps.src})`,
@@ -225,24 +180,10 @@ function ReviewCover({
         <div className="absolute size-full backdrop-blur" />
       </div>
       <div
-        className={`
-          relative -top-4 z-10 h-[372px]
-          ${
-            coverImageProps.hasAlpha
-              ? ""
-              : `shadow-[0_5px_20px_rgba(49,46,42,0.22)]`
-          }
-        `}
+        className={`relative -top-4 z-10 h-[372px] ${coverImageProps.hasAlpha ? "" : "shadow-[0_5px_20px_rgba(49,46,42,0.22)]"}`}
       >
         <Cover
-          className={`
-            safari-border-radius-fix
-            ${
-              coverImageProps.hasAlpha
-                ? ""
-                : `shadow-[0_5px_20px_rgba(49,46,42,0.22)]`
-            }
-          `}
+          className={`safari-border-radius-fix ${coverImageProps.hasAlpha ? "" : "shadow-[0_5px_20px_rgba(49,46,42,0.22)]"}`}
           decoding="auto"
           height={CoverImageConfig.height}
           imageProps={{
@@ -260,12 +201,7 @@ function ReviewCover({
 function ReviewGrade({ value }: { value: ReviewWithContent["grade"] }) {
   if (value == "Abandoned") {
     return (
-      <div
-        className={`
-          bg-abandoned px-2 py-1 font-sans text-sm font-medium tracking-wide
-          text-inverse uppercase
-        `}
-      >
+      <div className="bg-abandoned px-2 py-1 font-sans text-sm font-medium uppercase tracking-wide text-[#fff]">
         Abandoned
       </div>
     );

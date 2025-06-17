@@ -37,28 +37,11 @@ export function MoreReviews({
 }): JSX.Element {
   return (
     <nav
-      className={`
-        mx-auto w-full max-w-(--breakpoint-max) bg-subtle
-        tablet:max-w-popout
-        desktop:max-w-(--breakpoint-max) desktop:px-container
-      `}
+      className="mx-auto w-full max-w-screen-max bg-subtle tablet:max-w-popout desktop:max-w-screen-max desktop:px-container"
       data-page-find-ignore
     >
-      <div
-        className={`
-          px-container
-          tablet:px-0
-        `}
-      >
-        {children}
-      </div>
-      <ul
-        className={`
-          flex flex-wrap justify-center gap-x-[4%] gap-y-[6vw] px-[4%]
-          tablet:gap-x-[3%] tablet:px-0
-          desktop:justify-between desktop:gap-x-[1%]
-        `}
-      >
+      <div className="px-container tablet:px-0">{children}</div>
+      <ul className="flex flex-wrap justify-center gap-x-[4%] gap-y-[6vw] px-[4%] tablet:gap-x-[3%] tablet:px-0 desktop:justify-between desktop:gap-x-[1%]">
         {values.map((value) => {
           return <MoreReviewsCard key={value.slug} value={value} />;
         })}
@@ -69,16 +52,7 @@ export function MoreReviews({
 
 function MoreReviewsCard({ value }: { value: MoreReviewsValue }): JSX.Element {
   return (
-    <li
-      className={`
-        relative flex w-[48%] max-w-[248px] flex-col items-center border-default
-        bg-default
-        has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
-        min-[600px]:w-[30.66666667%]
-        tablet:w-[31.33333333%]
-        desktop:w-[15.75%]
-      `}
-    >
+    <li className="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] desktop:w-[15.75%]">
       <Cover
         decoding="async"
         imageProps={value.coverImageProps}
@@ -86,40 +60,17 @@ function MoreReviewsCard({ value }: { value: MoreReviewsValue }): JSX.Element {
         alt=""
         loading="lazy"
       />
-      <div
-        className={`
-          flex w-full grow flex-col px-[8%] pb-8
-          desktop:pr-[10%] desktop:pl-[8.5%]
-        `}
-      >
-        <div
-          className={`
-            pt-4 font-sans text-sm font-medium
-            max:text-xl max:leading-6
-            tablet:pt-5 tablet:font-serif tablet:text-md tablet:leading-5
-          `}
-        >
+      <div className="flex w-full grow flex-col px-[8%] pb-8 desktop:pl-[8.5%] desktop:pr-[10%]">
+        <div className="pt-4 font-sans text-sm font-medium tablet:pt-5 tablet:font-serif tablet:text-md tablet:leading-5 max:text-xl max:leading-6">
           <a
-            className={`
-              inline-block
-              before:absolute before:inset-x-0 before:top-0 before:aspect-cover
-              before:bg-default before:opacity-15
-              after:absolute after:top-0 after:left-0 after:z-10 after:size-full
-              after:opacity-0
-              hover:text-accent hover:before:opacity-0
-            `}
+            className="inline-block before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0"
             href={`/reviews/${value.slug}/`}
             rel="canonical"
           >
             {value.title}
           </a>
         </div>
-        <p
-          className={`
-            pt-1 font-sans text-xs leading-4 font-light text-subtle
-            tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
-          `}
-        >
+        <p className="pt-1 font-sans text-xs font-light leading-4 text-subtle tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5">
           by{" "}
           {toSentenceArray(
             value.authors.map((author) => {
@@ -136,19 +87,11 @@ function MoreReviewsCard({ value }: { value: MoreReviewsValue }): JSX.Element {
           )}
         </p>{" "}
         <Grade
-          className={`
-            mt-2 h-4 w-20
-            tablet:mt-3 tablet:h-[18px] tablet:w-[90px]
-          `}
+          className="mt-2 h-4 w-20 tablet:mt-3 tablet:h-[18px] tablet:w-[90px]"
           height={18}
           value={value.grade}
         />
-        <div
-          className={`
-            mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
-            text-subtle
-          `}
-        >
+        <div className="mt-auto pt-6 font-sans text-xxs font-light leading-4 tracking-wide text-subtle">
           {value.kind} | {value.yearPublished}
         </div>
       </div>

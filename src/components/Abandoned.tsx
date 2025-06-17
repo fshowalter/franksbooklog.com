@@ -4,12 +4,7 @@ export function Abandoned({ value }: { value: string | undefined }) {
   }
 
   return (
-    <div
-      className={`
-        bg-abandoned p-1 font-sans text-xxs font-semibold text-inverse uppercase
-        tablet:my-1
-      `}
-    >
+    <div className="bg-abandoned p-1 font-sans text-xxs font-semibold uppercase text-[#fff] tablet:my-1">
       Abandoned
     </div>
   );

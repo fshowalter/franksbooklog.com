@@ -6,7 +6,7 @@ export function ListItemKindAndYear({
   year: string;
 }) {
   return (
-    <div className="font-sans text-xs leading-4 font-light text-subtle">
+    <div className="font-sans text-xs font-light leading-4 text-subtle">
       <span>{kind} | </span>
       {year}
     </div>
