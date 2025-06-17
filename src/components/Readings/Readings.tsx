@@ -147,18 +147,38 @@ function DateListItem({
   const [day, date] = dayAndDate.split("-");
 
   return (
-    <li className="relative flex max-w-screen-max flex-col bg-group last-of-type:pb-12 tablet:mb-12 tablet:flex-row tablet:py-4 tablet:pr-4 tablet:last-of-type:pb-4">
-      <div className="px-container py-4 tablet:px-4 tablet:pt-11 tablet:text-muted">
-        <div className="flex items-center gap-1 tablet:block">
-          <div className="text-center text-2xl text-muted tablet:text-2.5xl/8">
+    <li className={`
+      relative flex max-w-(--breakpoint-max) flex-col bg-group
+      last-of-type:pb-12
+      tablet:mb-12 tablet:flex-row tablet:py-4 tablet:pr-4
+      tablet:last-of-type:pb-4
+    `}>
+      <div className={`
+        px-container py-4
+        tablet:px-4 tablet:pt-11 tablet:text-muted
+      `}>
+        <div className={`
+          flex items-center gap-1
+          tablet:block
+        `}>
+          <div className={`
+            text-center text-2xl text-muted
+            tablet:text-2.5xl/8
+          `}>
             {date}
           </div>
-          <div className="ml-1 py-2 font-sans text-xxs/none uppercase text-subtle tablet:ml-0 tablet:w-12 tablet:text-center">
+          <div className={`
+            ml-1 py-2 font-sans text-xxs/none text-subtle uppercase
+            tablet:ml-0 tablet:w-12 tablet:text-center
+          `}>
             {day}
           </div>
         </div>
       </div>
-      <ul className="flex grow flex-col tablet:my-4 tablet:gap-y-0 tablet:bg-subtle">
+      <ul className={`
+        flex grow flex-col
+        tablet:my-4 tablet:gap-y-0 tablet:bg-subtle
+      `}>
         {values.map((value) => {
           return <ReadingListItem key={value.sequence} value={value} />;
         })}
@@ -187,7 +207,11 @@ function ReadingListItem({ value }: { value: ListItemValue }): JSX.Element {
   return (
     <ListItem className="has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover">
       <ListItemCover imageProps={value.coverImageProps} />
-      <div className="flex grow flex-col items-start gap-y-1 tablet:w-full tablet:gap-y-2 desktop:pr-4">
+      <div className={`
+        flex grow flex-col items-start gap-y-1
+        tablet:w-full tablet:gap-y-2
+        desktop:pr-4
+      `}>
         <TitleAndProgress
           progress={value.progress}
           reviewed={value.reviewed}
@@ -199,7 +223,7 @@ function ReadingListItem({ value }: { value: ListItemValue }): JSX.Element {
           values={value.authors}
         />
         <ListItemKindAndYear kind={value.kind} year={value.yearPublished} />
-        <div className="font-sans text-xs font-light leading-4 text-subtle">
+        <div className="font-sans text-xs leading-4 font-light text-subtle">
           {value.edition}
         </div>
 
@@ -239,7 +263,17 @@ function TitleAndProgress({
     return (
       <span className="block font-sans">
         <a
-          className="text-sm font-medium text-accent before:absolute before:left-(--container-padding) before:top-4 before:aspect-cover before:w-list-item-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
+          className={`
+            text-sm font-medium text-accent
+            before:absolute before:top-4 before:left-(--container-padding)
+            before:aspect-cover before:w-list-item-cover before:bg-default
+            before:opacity-15
+            after:absolute after:top-0 after:left-0 after:z-10 after:size-full
+            after:opacity-0
+            hover:before:opacity-0
+            tablet:before:left-4
+            desktop:before:left-6
+          `}
           href={`/reviews/${slug}/`}
         >
           {title}

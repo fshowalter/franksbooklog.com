@@ -12,7 +12,10 @@ export function Callouts({
   workCount,
 }: Props): JSX.Element {
   return (
-    <div className="flex flex-wrap justify-center gap-6 desktop:flex-nowrap">
+    <div className={`
+      flex flex-wrap justify-center gap-6
+      desktop:flex-nowrap
+    `}>
       <StatsCallout label="Titles" value={workCount} />
       <StatsCallout label="Books" value={bookCount} />
       <StatsCallout label="Reviews" value={reviewCount} />
