@@ -12,13 +12,7 @@ export function BarGradient({
   } as React.CSSProperties;
 
   return (
-    <div
-      className={`
-        progress-bar-bg leading-[6px]
-        tablet:mb-0
-      `}
-      style={styles}
-    >
+    <div className="progress-bar-bg leading-[6px] tablet:mb-0" style={styles}>
       &nbsp;
     </div>
   );

@@ -1,24 +1,17 @@
 import eslint from "@eslint/js";
 import vitest from "@vitest/eslint-plugin";
 import eslintPluginAstro from "eslint-plugin-astro";
-import eslintPluginBetterTailwindcss from "eslint-plugin-better-tailwindcss";
 import perfectionist from "eslint-plugin-perfectionist";
 import react from "eslint-plugin-react";
 import reactCompiler from "eslint-plugin-react-compiler";
+import tailwind from "eslint-plugin-tailwindcss";
 import eslintPluginUnicorn from "eslint-plugin-unicorn";
 import globals from "globals";
 import tsEslint from "typescript-eslint";
 
 export default tsEslint.config(
   {
-    ignores: [
-      "dist/",
-      ".astro/",
-      "coverage/",
-      "__snapshots__",
-      "content/",
-      "public/",
-    ],
+    ignores: ["dist/", ".astro/", "coverage/", "content/", "public/"],
   },
   eslint.configs.recommended,
   eslintPluginUnicorn.configs.recommended,
@@ -67,44 +60,19 @@ export default tsEslint.config(
     },
   },
   {
+    extends: [...tailwind.configs["flat/recommended"]],
     files: ["**/*.astro"],
-    plugins: {
-      "better-tailwindcss": eslintPluginBetterTailwindcss,
-    },
-    rules: {
-      ...eslintPluginBetterTailwindcss.configs["recommended-error"].rules,
-    },
-    settings: {
-      "better-tailwindcss": {
-        // tailwindcss 4: the path to the entry file of the css based tailwind config (eg: `src/global.css`)
-        entryPoint: "src/layouts/base.css",
-      },
-    },
   },
   {
+    extends: [...tailwind.configs["flat/recommended"]],
     files: ["**/*.tsx"],
-    plugins: {
-      "better-tailwindcss": eslintPluginBetterTailwindcss,
-      react,
-      "react-compiler": reactCompiler,
-    },
+    plugins: { react, "react-compiler": reactCompiler },
     rules: {
       ...react.configs.recommended.rules,
-      ...eslintPluginBetterTailwindcss.configs["recommended-error"].rules,
-      "better-tailwindcss/no-unregistered-classes": [
-        "error",
-        {
-          detectComponentClasses: true,
-        },
-      ],
       "react-compiler/react-compiler": "error",
       "react/react-in-jsx-scope": "off",
     },
     settings: {
-      "better-tailwindcss": {
-        // tailwindcss 4: the path to the entry file of the css based tailwind config (eg: `src/global.css`)
-        entryPoint: "src/layouts/base.css",
-      },
       react: {
         version: "detect",
       },

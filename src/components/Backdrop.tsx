@@ -17,12 +17,7 @@ export function AvatarBackdrop({
   return (
     <Wrapper centerText={true} size="small">
       <Breadcrumb value={breadcrumb} />
-      <div
-        className={`
-          mx-auto mb-6 w-4/5 max-w-[250px] safari-border-radius-fix
-          overflow-hidden rounded-full
-        `}
-      >
+      <div className="safari-border-radius-fix mx-auto mb-6 w-4/5 max-w-[250px] overflow-hidden rounded-full">
         <Avatar
           data-pagefind-meta="image[src]"
           decoding="async"
@@ -66,7 +61,7 @@ function Breadcrumb({ value }: { value?: React.ReactNode }) {
   }
 
   return (
-    <p className="mb-6 font-sans text-sm tracking-wide text-subtle uppercase">
+    <p className="mb-6 font-sans text-sm uppercase tracking-wide text-subtle">
       {value}
     </p>
   );
@@ -89,13 +84,7 @@ function Deck({
 
   return (
     <p
-      className={`
-        mt-1 text-base
-        desktop:my-4 desktop:text-xl
-        ${center ? `text-center` : ""}
-        ${shadow ? `[text-shadow:1px_1px_2px_black]` : ""}
-        ${subtle ? `text-subtle` : ""}
-      `}
+      className={`mt-1 text-base desktop:my-4 desktop:text-xl ${center ? "text-center" : ""} ${shadow ? "[text-shadow:1px_1px_2px_black]" : ""} ${subtle ? "text-subtle" : ""}`}
     >
       {value}
     </p>
@@ -115,14 +104,7 @@ function Title({
     <h1
       className={
         className ||
-        `
-          font-sans
-          ${center ? "text-center" : ""}
-          text-3xl font-bold tracking-widest uppercase
-          tablet:text-4xl
-          tablet-landscape:text-5xl
-          desktop:text-7xl
-        `
+        `font-sans ${center ? "text-center" : ""} text-3xl font-bold uppercase tracking-widest tablet:text-4xl tablet-landscape:text-5xl desktop:text-7xl`
       }
     >
       {value}
@@ -161,41 +143,11 @@ function Wrapper({
 
   return (
     <header
-      className={`
-        ${sizes}
-        ${textInverse ? "text-inverse" : ""}
-        relative flex w-full flex-col content-start items-center justify-end
-        gap-6 bg-canvas pt-40
-        tablet:pt-40
-        desktop:pt-40 desktop:pb-16
-      `}
+      className={`${sizes} ${textInverse ? "text-inverse" : ""} relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pt-40 tablet:pt-40 desktop:pb-16 desktop:pt-40`}
     >
       {heroImage}
       <div
-        className={`
-          ${centerText ? "items-center" : ""}
-          z-10 mx-auto flex w-full
-          ${
-            narrowChildren
-              ? `
-                px-container text-center
-                tablet:max-w-unset tablet:px-0
-              `
-              : `max-w-(--breakpoint-max) px-container`
-          }
-          flex-col
-          ${
-            heroImage
-              ? `
-                bg-linear-to-t from-[rgba(0,0,0,.85)] via-[rgba(0,0,0,.85)]
-                desktop:bg-none
-              `
-              : ""
-          }
-          py-8
-          tablet:pt-20 tablet:pb-10
-          desktop:py-0
-        `}
+        className={`${centerText ? "items-center" : ""} z-10 mx-auto flex w-full ${narrowChildren ? "px-container text-center tablet:max-w-unset tablet:px-0" : "max-w-screen-max px-container"} flex-col ${heroImage ? "bg-gradient-to-t from-[rgba(0,0,0,.85)] via-[rgba(0,0,0,.85)] desktop:bg-none" : ""} py-8 tablet:pb-10 tablet:pt-20 desktop:py-0`}
       >
         {children}
       </div>
