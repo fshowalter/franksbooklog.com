@@ -1,5 +1,3 @@
-const PROSE_CONTENT_WIDTH = "36rem";
-
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./src/**/*.{astro,js,jsx,md,mdx,ts,tsx}"],
