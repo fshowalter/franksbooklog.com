@@ -1,6 +1,7 @@
 import eslint from "@eslint/js";
 import vitest from "@vitest/eslint-plugin";
 import eslintPluginAstro from "eslint-plugin-astro";
+import eslintPluginBetterTailwindcss from "eslint-plugin-better-tailwindcss";
 import perfectionist from "eslint-plugin-perfectionist";
 import react from "eslint-plugin-react";
 import reactCompiler from "eslint-plugin-react-compiler";
@@ -60,16 +61,38 @@ export default tsEslint.config(
   },
   {
     files: ["**/*.astro"],
+    plugins: {
+      "better-tailwindcss": eslintPluginBetterTailwindcss,
+    },
+    rules: {
+      ...eslintPluginBetterTailwindcss.configs["recommended-error"].rules,
+      "better-tailwindcss/no-conflicting-classes": "error",
+    },
+    settings: {
+      "better-tailwindcss": {
+        entryPoint: "src/layouts/base.css",
+      },
+    },
   },
+
   {
     files: ["**/*.tsx"],
-    plugins: { react, "react-compiler": reactCompiler },
+    plugins: {
+      "better-tailwindcss": eslintPluginBetterTailwindcss,
+      react,
+      "react-compiler": reactCompiler,
+    },
     rules: {
       ...react.configs.recommended.rules,
       "react-compiler/react-compiler": "error",
       "react/react-in-jsx-scope": "off",
+      ...eslintPluginBetterTailwindcss.configs["recommended-error"].rules,
+      "better-tailwindcss/no-conflicting-classes": "error",
     },
     settings: {
+      "better-tailwindcss": {
+        entryPoint: "src/layouts/base.css",
+      },
       react: {
         version: "detect",
       },
