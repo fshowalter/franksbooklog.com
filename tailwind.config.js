@@ -54,8 +54,8 @@ export default {
       },
       maxWidth: {
         button: "430px",
-        popout: `calc(64px + ${PROSE_CONTENT_WIDTH})`,
-        prose: PROSE_CONTENT_WIDTH,
+        popout: "calc(64px + 36rem)",
+        prose: "36rem",
         unset: "unset",
       },
       padding: {
