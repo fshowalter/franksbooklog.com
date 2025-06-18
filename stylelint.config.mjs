@@ -13,15 +13,7 @@ export default {
     "at-rule-no-unknown": [
       true,
       {
-        ignoreAtRules: [
-          "tailwind",
-          "apply",
-          "layer",
-          "config",
-          "variants",
-          "responsive",
-          "screen",
-        ],
+        ignoreAtRules: ["theme", "layer", "utility", "component"],
       },
     ],
     "function-no-unknown": [
@@ -33,9 +25,12 @@ export default {
     "media-query-no-invalid": [
       true,
       {
-        ignoreFunctions: ["screen"],
+        ignoreFunctions: ["theme"],
       },
     ],
+    "import-notation": null,
+    "custom-property-pattern": null,
+    "custom-property-empty-line-before": null,
     "no-descending-specificity": null,
     "order/order": [["custom-properties", "declarations", "rules", "at-rules"]],
     "order/properties-order": [["all"], { unspecified: "bottomAlphabetical" }],

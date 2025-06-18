@@ -88,6 +88,10 @@ export default tsEslint.config(
       "react/react-in-jsx-scope": "off",
       ...eslintPluginBetterTailwindcss.configs["recommended-error"].rules,
       "better-tailwindcss/no-conflicting-classes": "error",
+      "better-tailwindcss/no-unregistered-classes": [
+        "error",
+        { detectComponentClasses: true },
+      ],
     },
     settings: {
       "better-tailwindcss": {
