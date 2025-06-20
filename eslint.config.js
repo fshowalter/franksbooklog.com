@@ -70,7 +70,7 @@ export default tsEslint.config(
     },
     settings: {
       "better-tailwindcss": {
-        entryPoint: "src/layouts/base.css",
+        entryPoint: "src/layouts/tailwind.css",
       },
     },
   },
@@ -95,7 +95,7 @@ export default tsEslint.config(
     },
     settings: {
       "better-tailwindcss": {
-        entryPoint: "src/layouts/base.css",
+        entryPoint: "src/layouts/tailwind.css",
       },
       react: {
         version: "detect",
