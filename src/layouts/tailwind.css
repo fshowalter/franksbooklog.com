@@ -570,6 +570,10 @@
       }
     }
 
+    .pagefind-ui__hidden {
+      display: none !important;
+    }
+
     .pagefind-ui__message {
       color: var(--fg-subtle);
       font-family: var(--font-sans);
