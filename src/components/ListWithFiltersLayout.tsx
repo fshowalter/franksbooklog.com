@@ -20,9 +20,16 @@ export function ListHeaderButton({
   text: string;
 }) {
   return (
-    <div className="flex items-start gap-x-4 text-nowrap bg-default uppercase text-accent">
+    <div
+      className={`
+        flex items-start gap-x-4 bg-default text-nowrap text-accent uppercase
+      `}
+    >
       <a
-        className="block px-4 py-2 hover:bg-accent hover:text-inverse"
+        className={`
+          block px-4 py-2
+          hover:bg-accent hover:text-inverse
+        `}
         href={href}
       >
         {text}
@@ -50,8 +57,21 @@ export function ListWithFiltersLayout({
       <div className="mx-auto flex flex-col items-center bg-default">
         <div className="mx-auto flex w-full flex-col items-stretch">
           <div className="flex grow flex-col bg-subtle">
-            <div className="relative tablet:px-12 tablet-landscape:px-0">
-              <div className="relative z-10 row-start-1 bg-default text-xs tablet:-mx-12 tablet:px-0 tablet-landscape:col-span-3 tablet-landscape:mx-0 tablet-landscape:w-full">
+            <div
+              className={`
+                relative
+                tablet:px-12
+                tablet-landscape:px-0
+              `}
+            >
+              <div
+                className={`
+                  relative z-10 row-start-1 bg-default text-xs
+                  tablet:-mx-12 tablet:px-0
+                  tablet-landscape:col-span-3 tablet-landscape:mx-0
+                  tablet-landscape:w-full
+                `}
+              >
                 <ListHeader
                   filtersVisible={filtersVisible}
                   listHeaderButtons={listHeaderButtons}
@@ -61,17 +81,54 @@ export function ListWithFiltersLayout({
                   totalCount={totalCount}
                 />
               </div>
-              <div className="mx-auto max-w-screen-max grid-cols-[1fr_48px_minmax(398px,33%)] tablet-landscape:grid tablet-landscape:grid-rows-[auto_1fr]">
+              <div
+                className={`
+                  mx-auto max-w-(--breakpoint-max)
+                  grid-cols-[1fr_48px_minmax(398px,33%)]
+                  tablet-landscape:grid tablet-landscape:grid-rows-[auto_1fr]
+                `}
+              >
                 <div
-                  className="relative z-10 col-start-3 row-span-2 row-start-2 grid min-w-[320px] text-sm transition-[grid-template-rows] duration-300 ease-in-out tablet-landscape:mr-12 tablet-landscape:block tablet-landscape:py-24 tablet-landscape:pb-12 tablet-landscape:shadow-none desktop:mr-20"
+                  className={`
+                    relative z-10 col-start-3 row-span-2 row-start-2 grid
+                    min-w-[320px] text-sm transition-[grid-template-rows]
+                    duration-300 ease-in-out
+                    tablet-landscape:mr-12 tablet-landscape:block
+                    tablet-landscape:py-24 tablet-landscape:pb-12
+                    tablet-landscape:shadow-none
+                    desktop:mr-20
+                  `}
                   style={{
                     gridTemplateRows: filtersVisible ? "1fr" : "0fr",
                   }}
                 >
                   <div className="overflow-hidden">
-                    <div className="w-full bg-subtle text-sm tablet:pt-12 tablet:text-base tablet-landscape:overflow-visible tablet-landscape:bg-default tablet-landscape:px-container tablet-landscape:pt-0 desktop:px-8">
-                      <fieldset className="flex flex-col gap-5 bg-group px-container py-10 tablet:gap-8 tablet:bg-default tablet-landscape:mt-0 tablet-landscape:gap-12 tablet-landscape:px-0">
-                        <legend className="hidden w-full py-10 font-sans text-xs font-bold uppercase tracking-wide text-subtle tablet-landscape:block tablet-landscape:shadow-bottom">
+                    <div
+                      className={`
+                        w-full bg-subtle text-sm
+                        tablet:pt-12 tablet:text-base
+                        tablet-landscape:overflow-visible
+                        tablet-landscape:bg-default
+                        tablet-landscape:px-container tablet-landscape:pt-0
+                        desktop:px-8
+                      `}
+                    >
+                      <fieldset
+                        className={`
+                          flex flex-col gap-5 bg-group px-container py-10
+                          tablet:gap-8 tablet:bg-default
+                          tablet-landscape:mt-0 tablet-landscape:gap-12
+                          tablet-landscape:px-0
+                        `}
+                      >
+                        <legend
+                          className={`
+                            hidden w-full py-10 font-sans text-xs font-bold
+                            tracking-wide text-subtle uppercase
+                            tablet-landscape:block
+                            tablet-landscape:shadow-bottom
+                          `}
+                        >
                           Filter & Sort
                         </legend>
                         {filters}
@@ -80,7 +137,13 @@ export function ListWithFiltersLayout({
                   </div>
                 </div>
 
-                <div className="col-start-1 row-start-2 pb-10 tablet-landscape:pl-12 desktop:pl-20">
+                <div
+                  className={`
+                    col-start-1 row-start-2 pb-10
+                    tablet-landscape:pl-12
+                    desktop:pl-20
+                  `}
+                >
                   {list}
                 </div>
               </div>
@@ -104,7 +167,13 @@ function ListHeader({
   totalCount: number;
 }): JSX.Element {
   return (
-    <div className="mx-auto flex w-full max-w-screen-max flex-wrap items-baseline justify-between gap-x-4 gap-y-5 px-container py-10 font-sans font-medium uppercase tracking-wide text-subtle">
+    <div
+      className={`
+        mx-auto flex w-full max-w-(--breakpoint-max) flex-wrap items-baseline
+        justify-between gap-x-4 gap-y-5 px-container py-10 font-sans font-medium
+        tracking-wide text-subtle uppercase
+      `}
+    >
       <span className="block pr-4">
         <span className="font-semibold text-default">
           {totalCount.toLocaleString()}
@@ -117,7 +186,11 @@ function ListHeader({
         </div>
       )}
       <button
-        className={`ml-auto flex justify-center gap-x-4 text-nowrap px-4 py-2 uppercase text-muted shadow-all tablet-landscape:hidden`}
+        className={`
+          ml-auto flex justify-center gap-x-4 px-4 py-2 text-nowrap text-muted
+          uppercase shadow-all
+          tablet-landscape:hidden
+        `}
         onClick={onToggleFilters}
         style={{
           backgroundColor: filtersVisible

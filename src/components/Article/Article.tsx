@@ -25,14 +25,18 @@ export function Article({
     <Layout>
       <article>
         <SolidBackdrop deck={deck} narrowTitle={true} title={title} />
-        <section className="flex flex-col items-center pb-32 pt-16">
+        <section className="flex flex-col items-center pt-16 pb-32">
           <div className="px-container">
             <LongFormText className="max-w-prose" text={content} />
           </div>
         </section>
       </article>
       <div
-        className="flex w-full flex-col items-center gap-y-12 bg-subtle pb-32 pt-16 tablet:pt-8 desktop:gap-y-24"
+        className={`
+          flex w-full flex-col items-center gap-y-12 bg-subtle pt-16 pb-32
+          tablet:pt-8
+          desktop:gap-y-24
+        `}
         data-pagefind-ignore
       >
         <MoreReviews values={recentReviews}>

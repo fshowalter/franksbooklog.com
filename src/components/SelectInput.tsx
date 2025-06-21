@@ -18,7 +18,11 @@ export function SelectInput({
   return (
     <select
       className={ccn(
-        "select-background-image w-full appearance-none border-none bg-default py-2 pl-4 pr-8 text-base leading-6 text-subtle shadow-all outline-accent",
+        `
+          w-full appearance-none border-none bg-default select-background-image
+          py-2 pr-8 pl-4 text-base leading-6 text-subtle shadow-all
+          outline-accent
+        `,
         className,
       )}
       onChange={onChange}

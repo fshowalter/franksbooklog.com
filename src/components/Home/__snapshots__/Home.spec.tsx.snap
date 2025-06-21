@@ -2,9 +2,16 @@
 
 exports[`Home > matches snapshot 1`] = `
 <DocumentFragment>
-  <div>
+  <div
+    class="group"
+  >
     <a
-      class="absolute left-1/2 top-0.5 z-50 mx-auto bg-subtle px-6 py-2 text-center text-accent [transform:translate(-50%,calc(-100%_-_2px))] focus:[transform:translate(-50%,0%)]"
+      class="
+          absolute top-0.5 left-1/2 z-50 mx-auto bg-subtle px-6 py-2 text-center
+          text-accent
+          [transform:translate(-50%,calc(-100%-2px))]
+          focus:[transform:translate(-50%,0%)]
+        "
       href="#content"
     >
       Skip to content
@@ -13,7 +20,12 @@ exports[`Home > matches snapshot 1`] = `
       class="flex min-h-full w-full flex-col bg-default"
     >
       <header
-        class="z-20 flex w-full items-center justify-between px-container py-4 tablet:p-6 desktop:inset-x-0 desktop:z-40 desktop:flex-row desktop:flex-wrap desktop:px-16 desktop:py-8 desktop:text-left"
+        class="
+        group z-20 flex w-full items-center justify-between px-container py-4
+        tablet:p-6
+        desktop:inset-x-0 desktop:z-40 desktop:flex-row desktop:flex-wrap
+        desktop:px-16 desktop:py-8 desktop:text-left
+      "
         style="background-image: linear-gradient(to bottom, rgba(0,0,0,.85), transparent 95%); color: rgb(255, 255, 255); position: absolute;"
       >
         <div />
@@ -21,16 +33,22 @@ exports[`Home > matches snapshot 1`] = `
           class="flex items-center"
         >
           <nav
-            class="hidden w-full desktop:block desktop:w-auto"
+            class="
+            hidden w-full
+            desktop:block desktop:w-auto
+          "
           >
             <ul
               class="flex flex-wrap justify-start gap-x-6 text-xl"
             >
               <li
-                class="mast-item block whitespace-nowrap tracking-serif-wide"
+                class="block tracking-serif-wide whitespace-nowrap"
               >
                 <a
-                  class="text-inherit transition-all duration-500 ease-in-out hover:bg-[rgba(0,0,0,.50)]"
+                  class="
+          text-inherit transition-all duration-500 ease-in-out
+          hover:bg-[rgba(0,0,0,.50)]
+        "
                   href="/"
                   style="text-shadow: 1px 1px 2px black;"
                 >
@@ -38,10 +56,13 @@ exports[`Home > matches snapshot 1`] = `
                 </a>
               </li>
               <li
-                class="mast-item block whitespace-nowrap tracking-serif-wide"
+                class="block tracking-serif-wide whitespace-nowrap"
               >
                 <a
-                  class="text-inherit transition-all duration-500 ease-in-out hover:bg-[rgba(0,0,0,.50)]"
+                  class="
+          text-inherit transition-all duration-500 ease-in-out
+          hover:bg-[rgba(0,0,0,.50)]
+        "
                   href="/how-i-grade/"
                   style="text-shadow: 1px 1px 2px black;"
                 >
@@ -49,10 +70,13 @@ exports[`Home > matches snapshot 1`] = `
                 </a>
               </li>
               <li
-                class="mast-item block whitespace-nowrap tracking-serif-wide"
+                class="block tracking-serif-wide whitespace-nowrap"
               >
                 <a
-                  class="text-inherit transition-all duration-500 ease-in-out hover:bg-[rgba(0,0,0,.50)]"
+                  class="
+          text-inherit transition-all duration-500 ease-in-out
+          hover:bg-[rgba(0,0,0,.50)]
+        "
                   href="/reviews/"
                   style="text-shadow: 1px 1px 2px black;"
                 >
@@ -60,10 +84,13 @@ exports[`Home > matches snapshot 1`] = `
                 </a>
               </li>
               <li
-                class="mast-item block whitespace-nowrap tracking-serif-wide"
+                class="block tracking-serif-wide whitespace-nowrap"
               >
                 <a
-                  class="text-inherit transition-all duration-500 ease-in-out hover:bg-[rgba(0,0,0,.50)]"
+                  class="
+          text-inherit transition-all duration-500 ease-in-out
+          hover:bg-[rgba(0,0,0,.50)]
+        "
                   href="/authors/"
                   style="text-shadow: 1px 1px 2px black;"
                 >
@@ -71,10 +98,13 @@ exports[`Home > matches snapshot 1`] = `
                 </a>
               </li>
               <li
-                class="mast-item block whitespace-nowrap tracking-serif-wide"
+                class="block tracking-serif-wide whitespace-nowrap"
               >
                 <a
-                  class="text-inherit transition-all duration-500 ease-in-out hover:bg-[rgba(0,0,0,.50)]"
+                  class="
+          text-inherit transition-all duration-500 ease-in-out
+          hover:bg-[rgba(0,0,0,.50)]
+        "
                   href="/readings/"
                   style="text-shadow: 1px 1px 2px black;"
                 >
@@ -84,12 +114,19 @@ exports[`Home > matches snapshot 1`] = `
             </ul>
           </nav>
           <div
-            class="search-button z-[1000]"
+            class="
+        z-1000
+        group-has-[#nav:checked]:!text-[#fff]
+      "
           >
             <button
               aria-keyshortcuts="Control+K"
               aria-label="Search"
-              class="flex size-10 items-center justify-center overflow-hidden text-sm leading-6 ring-default desktop:ml-6"
+              class="
+          flex size-10 items-center justify-center overflow-hidden text-sm
+          leading-6 ring-default
+          desktop:ml-6
+        "
               data-open-modal="true"
               disabled=""
               title="Search: Control+K"
@@ -111,90 +148,143 @@ exports[`Home > matches snapshot 1`] = `
               </svg>
             </button>
           </div>
-          <input
-            class="hidden"
-            id="mobile-nav"
-            type="checkbox"
-          />
-          <label
-            class="hamburger-icon desktop:hidden"
-            for="mobile-nav"
+          <div
+            class="group"
           >
-            <span
-              class="hamburger-icon-bars"
-              style="background-color: rgb(255, 255, 255);"
+            <input
+              class="hidden"
+              id="nav"
+              type="checkbox"
             />
-          </label>
-          <ul
-            class="hamburger-menu flex flex-col items-start gap-y-5 text-left text-inverse desktop:hidden"
-          >
-            <li
-              class="block w-1/2 whitespace-nowrap text-2xl"
+            <label
+              class="
+          relative z-40 ml-2 flex h-10 w-10 cursor-pointer items-center
+          justify-center
+          desktop:hidden
+        "
+              for="nav"
             >
-              <a
-                href="/"
-              >
-                Home
-              </a>
-            </li>
-            <li
-              class="block w-1/2 whitespace-nowrap text-2xl"
+              <span
+                class="
+            relative block h-0.5 w-6 origin-center
+            transition-[top,bottom,transform] duration-200 ease-in-out
+            group-has-[#nav:checked]:transform-[rotate(45deg)]
+            group-has-[#nav:checked]:!bg-[#fff]
+            group-has-[#nav:checked]:before:top-0
+            group-has-[#nav:checked]:before:transform-[rotate(90deg)]
+            group-has-[#nav:checked]:after:bottom-0
+            group-has-[#nav:checked]:after:transform-[rotate(90deg)]
+            before:absolute before:-top-2 before:block before:h-0.5 before:w-6
+            before:bg-inherit before:transition before:duration-200
+            before:ease-in-out
+            after:absolute after:-bottom-2 after:block after:h-0.5 after:w-6
+            after:bg-inherit after:transition after:duration-200
+            after:ease-in-out
+          "
+                style="background-color: rgb(255, 255, 255);"
+              />
+            </label>
+            <ul
+              class="
+          fixed top-0 right-0 z-20 flex h-full w-0 transform-[translateX(100%)]
+          flex-col items-start gap-y-5 overflow-hidden bg-footer text-left
+          text-inverse opacity-0 duration-200 ease-in-out
+          group-has-[#nav:checked]:bottom-0 group-has-[#nav:checked]:z-20
+          group-has-[#nav:checked]:h-full group-has-[#nav:checked]:w-full
+          group-has-[#nav:checked]:transform-[translateX(0)]
+          group-has-[#nav:checked]:overflow-y-auto
+          group-has-[#nav:checked]:pt-20 group-has-[#nav:checked]:pr-[16%]
+          group-has-[#nav:checked]:pb-5 group-has-[#nav:checked]:pl-[12%]
+          group-has-[#nav:checked]:opacity-100
+          group-has-[#nav:checked]:tablet:px-10
+          group-has-[#nav:checked]:tablet:py-40
+          tablet:max-w-[35vw]
+          desktop:hidden
+        "
             >
-              <a
-                href="/how-i-grade/"
+              <li
+                class="block w-1/2 text-2xl whitespace-nowrap"
               >
-                How I Grade
-              </a>
-            </li>
-            <li
-              class="block w-1/2 whitespace-nowrap text-2xl"
-            >
-              <a
-                href="/reviews/"
-              >
-                Reviews
-              </a>
-            </li>
-            <li
-              class="block w-1/2 whitespace-nowrap text-2xl"
-            >
-              <a
-                href="/authors/"
-              >
-                Authors
-              </a>
-            </li>
-            <li
-              class="block w-1/2 whitespace-nowrap text-2xl"
-            >
-              <a
-                href="/readings/"
-              >
-                Reading Log
-              </a>
-              <ol
-                class="mt-4"
-              >
-                <li
-                  class="mb-4 ml-1 font-sans text-xs uppercase tracking-wider text-inverse-subtle last:mb-0"
+                <a
+                  href="/"
                 >
-                  <a
-                    href="/readings/stats/"
+                  Home
+                </a>
+              </li>
+              <li
+                class="block w-1/2 text-2xl whitespace-nowrap"
+              >
+                <a
+                  href="/how-i-grade/"
+                >
+                  How I Grade
+                </a>
+              </li>
+              <li
+                class="block w-1/2 text-2xl whitespace-nowrap"
+              >
+                <a
+                  href="/reviews/"
+                >
+                  Reviews
+                </a>
+              </li>
+              <li
+                class="block w-1/2 text-2xl whitespace-nowrap"
+              >
+                <a
+                  href="/authors/"
+                >
+                  Authors
+                </a>
+              </li>
+              <li
+                class="block w-1/2 text-2xl whitespace-nowrap"
+              >
+                <a
+                  href="/readings/"
+                >
+                  Reading Log
+                </a>
+                <ol
+                  class="mt-4"
+                >
+                  <li
+                    class="
+              mb-4 ml-1 font-sans text-xs tracking-wider text-inverse-subtle
+              uppercase
+              last:mb-0
+            "
                   >
-                    Stats
-                  </a>
-                </li>
-              </ol>
-            </li>
-          </ul>
+                    <a
+                      href="/readings/stats/"
+                    >
+                      Stats
+                    </a>
+                  </li>
+                </ol>
+              </li>
+            </ul>
+          </div>
         </div>
       </header>
       <main
-        class="grow bg-subtle pb-8"
+        class="
+            grow transition-[opacity] duration-200 ease-in-out
+            group-has-[#nav:checked]:opacity-80
+            bg-subtle pb-8
+          "
         id="content"
       >
         <header
-          class="min-h-[240px] tablet:min-h-[640px] desktop:min-h-[clamp(640px,70vh,1350px)] text-inverse relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pt-40 tablet:pt-40 desktop:pb-16 desktop:pt-40"
+          class="
+        min-h-[240px] tablet:min-h-[640px] desktop:min-h-[clamp(640px,70vh,1350px)]
+        text-inverse
+        relative flex w-full flex-col content-start items-center justify-end
+        gap-6 bg-canvas pt-40
+        tablet:pt-40
+        desktop:pt-40 desktop:pb-16
+      "
         >
           <img
             alt=""
@@ -208,58 +298,118 @@ exports[`Home > matches snapshot 1`] = `
             width="2400"
           />
           <div
-            class=" z-10 mx-auto flex w-full max-w-screen-max px-container flex-col bg-gradient-to-t from-[rgba(0,0,0,.85)] via-[rgba(0,0,0,.85)] desktop:bg-none py-8 tablet:pb-10 tablet:pt-20 desktop:py-0"
+            class="
+          
+          z-10 mx-auto flex w-full
+          max-w-(--breakpoint-max) px-container
+          flex-col
+          
+                bg-linear-to-t from-[rgba(0,0,0,.85)] via-[rgba(0,0,0,.85)]
+                desktop:bg-none
+              
+          py-8
+          tablet:pt-20 tablet:pb-10
+          desktop:py-0
+        "
           >
             <h1
-              class="[text-shadow:1px_1px_2px_var(--bg-footer)] text-4xl desktop:text-7xl"
+              class="
+          text-4xl
+          [text-shadow:1px_1px_2px_var(--bg-footer)]
+          desktop:text-7xl
+        "
             >
               Frank's Book Log
             </h1>
             <p
-              class="mt-1 text-base desktop:my-4 desktop:text-xl  [text-shadow:1px_1px_2px_black] "
+              class="
+        mt-1 text-base
+        desktop:my-4 desktop:text-xl
+        
+        [text-shadow:1px_1px_2px_black]
+        
+      "
             >
               Literature is a relative term.
             </p>
           </div>
         </header>
         <nav
-          class="mx-auto max-w-screen-max tablet:px-container"
+          class="
+          mx-auto max-w-(--breakpoint-max)
+          tablet:px-container
+        "
         >
           <h2
-            class="py-10 font-sans text-xs font-semibold uppercase tracking-wide text-subtle px-container tablet:px-0"
+            class="
+          py-10 font-sans text-xs font-semibold tracking-wide text-subtle
+          uppercase
+         
+            px-container
+            tablet:px-0
+          "
           >
             Latest Reviews
           </h2>
           <ol
-            class="flex flex-wrap justify-center gap-x-[4%] gap-y-[6vw] px-[4%] tablet:gap-x-[3%] tablet:px-0 desktop:justify-between desktop:gap-x-[1%]"
+            class="
+            flex flex-wrap justify-center gap-x-[4%] gap-y-[6vw] px-[4%]
+            tablet:gap-x-[3%] tablet:px-0
+            desktop:justify-between desktop:gap-x-[1%]
+          "
           >
             <li
-              class="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[15.75%]"
+              class="
+        relative flex w-[48%] max-w-[248px] flex-col items-center border-default
+        bg-default
+        has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
+        min-[600px]:w-[30.66666667%]
+        tablet:w-[31.33333333%]
+        min-[900px]:w-[22.75%]
+        desktop:w-[15.75%]
+      "
             >
               <img
                 alt=""
                 decoding="async"
                 height="372"
                 loading="eager"
-                sizes="(min-width: 1800px) 218px, (min-width: 1300px) calc(11.67vw + 10px), (min-width: 1260px) calc(-445vw + 5855px), (min-width: 900px) calc(19.12vw + 11px), (min-width: 600px) 27.5vw, calc(41.43vw + 8px)"
+                sizes="(min-width: 1840px) 248px, (min-width: 1300px) calc(13.08vw + 10px), (min-width: 1260px) calc(-360vw + 4784px), (min-width: 900px) calc(19.12vw + 11px), (min-width: 600px) 27.5vw, calc(41.43vw + 8px)"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
                 srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=62&h=93&q=80&f=avif 62w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=124&h=186&q=80&f=avif 124w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 248w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 496w"
                 style="aspect-ratio: 0.66666667;"
                 width="248"
               />
               <div
-                class="flex w-full grow flex-col px-[8%] pb-8 desktop:pl-[8.5%] desktop:pr-[10%]"
+                class="
+          flex w-full grow flex-col px-[8%] pb-8
+          desktop:pr-[10%] desktop:pl-[8.5%]
+        "
               >
                 <div
-                  class="whitespace-nowrap pt-3 font-sans text-xxs font-light leading-4 tracking-wide text-subtle"
+                  class="
+            pt-3 font-sans text-xxs leading-4 font-light tracking-wide
+            whitespace-nowrap text-subtle
+          "
                 >
                   15 Feb 2025
                 </div>
                 <div
-                  class="pt-2 font-sans text-sm font-medium tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5 max:pt-2 max:text-xl max:leading-6"
+                  class="
+            pt-2 font-sans text-sm font-medium
+            max:pt-2 max:text-xl max:leading-6
+            tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5
+          "
                 >
                   <a
-                    class="inline-block before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0"
+                    class="
+              inline-block
+              before:absolute before:inset-x-0 before:top-0 before:aspect-cover
+              before:bg-default before:opacity-15
+              after:absolute after:top-0 after:left-0 after:z-10 after:size-full
+              after:opacity-0
+              hover:text-accent hover:before:opacity-0
+            "
                     href="/reviews/the-lonely-one-by-richard-laymon/"
                     rel="canonical"
                   >
@@ -267,7 +417,10 @@ exports[`Home > matches snapshot 1`] = `
                   </a>
                 </div>
                 <p
-                  class="pt-1 font-sans text-xs font-light leading-4 text-subtle tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5"
+                  class="
+            pt-1 font-sans text-xs leading-4 font-light text-subtle
+            tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
+          "
                 >
                   by 
                   <span
@@ -284,46 +437,77 @@ exports[`Home > matches snapshot 1`] = `
                   />
                   <img
                     alt="C+: 3 stars (out of 5)"
-                    class="mt-2 h-4 w-20 tablet:mt-3 tablet:h-[18px] tablet:w-[90px]"
-                    height="18"
+                    class="
+            mt-2 h-4 w-20
+            tablet:mt-3 tablet:h-[18px] tablet:w-[90px]
+          "
+                    height="16"
                     src="/svg/3-stars.svg"
-                    width="90"
+                    width="80"
                   />
                 </picture>
                 <div
-                  class="mt-auto pt-6 font-sans text-xxs font-light leading-4 tracking-wide text-subtle"
+                  class="
+            mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
+            text-subtle
+          "
                 >
                   Short Story | 1985
                 </div>
               </div>
             </li>
             <li
-              class="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[15.75%]"
+              class="
+        relative flex w-[48%] max-w-[248px] flex-col items-center border-default
+        bg-default
+        has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
+        min-[600px]:w-[30.66666667%]
+        tablet:w-[31.33333333%]
+        min-[900px]:w-[22.75%]
+        desktop:w-[15.75%]
+      "
             >
               <img
                 alt=""
                 decoding="async"
                 height="372"
                 loading="lazy"
-                sizes="(min-width: 1800px) 218px, (min-width: 1300px) calc(11.67vw + 10px), (min-width: 1260px) calc(-445vw + 5855px), (min-width: 900px) calc(19.12vw + 11px), (min-width: 600px) 27.5vw, calc(41.43vw + 8px)"
+                sizes="(min-width: 1840px) 248px, (min-width: 1300px) calc(13.08vw + 10px), (min-width: 1260px) calc(-360vw + 4784px), (min-width: 900px) calc(19.12vw + 11px), (min-width: 600px) 27.5vw, calc(41.43vw + 8px)"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
                 srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=62&h=93&q=80&f=avif 62w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=124&h=186&q=80&f=avif 124w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 248w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 496w"
                 style="aspect-ratio: 0.66666667;"
                 width="248"
               />
               <div
-                class="flex w-full grow flex-col px-[8%] pb-8 desktop:pl-[8.5%] desktop:pr-[10%]"
+                class="
+          flex w-full grow flex-col px-[8%] pb-8
+          desktop:pr-[10%] desktop:pl-[8.5%]
+        "
               >
                 <div
-                  class="whitespace-nowrap pt-3 font-sans text-xxs font-light leading-4 tracking-wide text-subtle"
+                  class="
+            pt-3 font-sans text-xxs leading-4 font-light tracking-wide
+            whitespace-nowrap text-subtle
+          "
                 >
                   01 Dec 2024
                 </div>
                 <div
-                  class="pt-2 font-sans text-sm font-medium tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5 max:pt-2 max:text-xl max:leading-6"
+                  class="
+            pt-2 font-sans text-sm font-medium
+            max:pt-2 max:text-xl max:leading-6
+            tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5
+          "
                 >
                   <a
-                    class="inline-block before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0"
+                    class="
+              inline-block
+              before:absolute before:inset-x-0 before:top-0 before:aspect-cover
+              before:bg-default before:opacity-15
+              after:absolute after:top-0 after:left-0 after:z-10 after:size-full
+              after:opacity-0
+              hover:text-accent hover:before:opacity-0
+            "
                     href="/reviews/ghost-story-by-peter-straub/"
                     rel="canonical"
                   >
@@ -331,7 +515,10 @@ exports[`Home > matches snapshot 1`] = `
                   </a>
                 </div>
                 <p
-                  class="pt-1 font-sans text-xs font-light leading-4 text-subtle tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5"
+                  class="
+            pt-1 font-sans text-xs leading-4 font-light text-subtle
+            tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
+          "
                 >
                   by 
                   <span
@@ -348,46 +535,77 @@ exports[`Home > matches snapshot 1`] = `
                   />
                   <img
                     alt="B: 4 stars (out of 5)"
-                    class="mt-2 h-4 w-20 tablet:mt-3 tablet:h-[18px] tablet:w-[90px]"
-                    height="18"
+                    class="
+            mt-2 h-4 w-20
+            tablet:mt-3 tablet:h-[18px] tablet:w-[90px]
+          "
+                    height="16"
                     src="/svg/4-stars.svg"
-                    width="90"
+                    width="80"
                   />
                 </picture>
                 <div
-                  class="mt-auto pt-6 font-sans text-xxs font-light leading-4 tracking-wide text-subtle"
+                  class="
+            mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
+            text-subtle
+          "
                 >
                   Novel | 1979
                 </div>
               </div>
             </li>
             <li
-              class="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[15.75%]"
+              class="
+        relative flex w-[48%] max-w-[248px] flex-col items-center border-default
+        bg-default
+        has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
+        min-[600px]:w-[30.66666667%]
+        tablet:w-[31.33333333%]
+        min-[900px]:w-[22.75%]
+        desktop:w-[15.75%]
+      "
             >
               <img
                 alt=""
                 decoding="async"
                 height="372"
                 loading="lazy"
-                sizes="(min-width: 1800px) 218px, (min-width: 1300px) calc(11.67vw + 10px), (min-width: 1260px) calc(-445vw + 5855px), (min-width: 900px) calc(19.12vw + 11px), (min-width: 600px) 27.5vw, calc(41.43vw + 8px)"
+                sizes="(min-width: 1840px) 248px, (min-width: 1300px) calc(13.08vw + 10px), (min-width: 1260px) calc(-360vw + 4784px), (min-width: 900px) calc(19.12vw + 11px), (min-width: 600px) 27.5vw, calc(41.43vw + 8px)"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
                 srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=62&h=93&q=80&f=avif 62w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=124&h=186&q=80&f=avif 124w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 248w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 496w"
                 style="aspect-ratio: 0.66666667;"
                 width="248"
               />
               <div
-                class="flex w-full grow flex-col px-[8%] pb-8 desktop:pl-[8.5%] desktop:pr-[10%]"
+                class="
+          flex w-full grow flex-col px-[8%] pb-8
+          desktop:pr-[10%] desktop:pl-[8.5%]
+        "
               >
                 <div
-                  class="whitespace-nowrap pt-3 font-sans text-xxs font-light leading-4 tracking-wide text-subtle"
+                  class="
+            pt-3 font-sans text-xxs leading-4 font-light tracking-wide
+            whitespace-nowrap text-subtle
+          "
                 >
                   08 Nov 2024
                 </div>
                 <div
-                  class="pt-2 font-sans text-sm font-medium tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5 max:pt-2 max:text-xl max:leading-6"
+                  class="
+            pt-2 font-sans text-sm font-medium
+            max:pt-2 max:text-xl max:leading-6
+            tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5
+          "
                 >
                   <a
-                    class="inline-block before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0"
+                    class="
+              inline-block
+              before:absolute before:inset-x-0 before:top-0 before:aspect-cover
+              before:bg-default before:opacity-15
+              after:absolute after:top-0 after:left-0 after:z-10 after:size-full
+              after:opacity-0
+              hover:text-accent hover:before:opacity-0
+            "
                     href="/reviews/goth-by-lol-tolhurst/"
                     rel="canonical"
                   >
@@ -395,7 +613,10 @@ exports[`Home > matches snapshot 1`] = `
                   </a>
                 </div>
                 <p
-                  class="pt-1 font-sans text-xs font-light leading-4 text-subtle tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5"
+                  class="
+            pt-1 font-sans text-xs leading-4 font-light text-subtle
+            tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
+          "
                 >
                   by 
                   <span
@@ -412,46 +633,77 @@ exports[`Home > matches snapshot 1`] = `
                   />
                   <img
                     alt="C: 3 stars (out of 5)"
-                    class="mt-2 h-4 w-20 tablet:mt-3 tablet:h-[18px] tablet:w-[90px]"
-                    height="18"
+                    class="
+            mt-2 h-4 w-20
+            tablet:mt-3 tablet:h-[18px] tablet:w-[90px]
+          "
+                    height="16"
                     src="/svg/3-stars.svg"
-                    width="90"
+                    width="80"
                   />
                 </picture>
                 <div
-                  class="mt-auto pt-6 font-sans text-xxs font-light leading-4 tracking-wide text-subtle"
+                  class="
+            mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
+            text-subtle
+          "
                 >
                   Nonfiction | 2023
                 </div>
               </div>
             </li>
             <li
-              class="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[15.75%]"
+              class="
+        relative flex w-[48%] max-w-[248px] flex-col items-center border-default
+        bg-default
+        has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
+        min-[600px]:w-[30.66666667%]
+        tablet:w-[31.33333333%]
+        min-[900px]:w-[22.75%]
+        desktop:w-[15.75%]
+      "
             >
               <img
                 alt=""
                 decoding="async"
                 height="372"
                 loading="lazy"
-                sizes="(min-width: 1800px) 218px, (min-width: 1300px) calc(11.67vw + 10px), (min-width: 1260px) calc(-445vw + 5855px), (min-width: 900px) calc(19.12vw + 11px), (min-width: 600px) 27.5vw, calc(41.43vw + 8px)"
+                sizes="(min-width: 1840px) 248px, (min-width: 1300px) calc(13.08vw + 10px), (min-width: 1260px) calc(-360vw + 4784px), (min-width: 900px) calc(19.12vw + 11px), (min-width: 600px) 27.5vw, calc(41.43vw + 8px)"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frecessional-by-david-mamet.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
                 srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frecessional-by-david-mamet.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=62&h=93&q=80&f=avif 62w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frecessional-by-david-mamet.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=124&h=186&q=80&f=avif 124w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frecessional-by-david-mamet.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 248w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frecessional-by-david-mamet.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 496w"
                 style="aspect-ratio: 0.66666667;"
                 width="248"
               />
               <div
-                class="flex w-full grow flex-col px-[8%] pb-8 desktop:pl-[8.5%] desktop:pr-[10%]"
+                class="
+          flex w-full grow flex-col px-[8%] pb-8
+          desktop:pr-[10%] desktop:pl-[8.5%]
+        "
               >
                 <div
-                  class="whitespace-nowrap pt-3 font-sans text-xxs font-light leading-4 tracking-wide text-subtle"
+                  class="
+            pt-3 font-sans text-xxs leading-4 font-light tracking-wide
+            whitespace-nowrap text-subtle
+          "
                 >
                   25 Aug 2024
                 </div>
                 <div
-                  class="pt-2 font-sans text-sm font-medium tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5 max:pt-2 max:text-xl max:leading-6"
+                  class="
+            pt-2 font-sans text-sm font-medium
+            max:pt-2 max:text-xl max:leading-6
+            tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5
+          "
                 >
                   <a
-                    class="inline-block before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0"
+                    class="
+              inline-block
+              before:absolute before:inset-x-0 before:top-0 before:aspect-cover
+              before:bg-default before:opacity-15
+              after:absolute after:top-0 after:left-0 after:z-10 after:size-full
+              after:opacity-0
+              hover:text-accent hover:before:opacity-0
+            "
                     href="/reviews/recessional-by-david-mamet/"
                     rel="canonical"
                   >
@@ -459,7 +711,10 @@ exports[`Home > matches snapshot 1`] = `
                   </a>
                 </div>
                 <p
-                  class="pt-1 font-sans text-xs font-light leading-4 text-subtle tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5"
+                  class="
+            pt-1 font-sans text-xs leading-4 font-light text-subtle
+            tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
+          "
                 >
                   by 
                   <span
@@ -476,46 +731,77 @@ exports[`Home > matches snapshot 1`] = `
                   />
                   <img
                     alt="D: 2 stars (out of 5)"
-                    class="mt-2 h-4 w-20 tablet:mt-3 tablet:h-[18px] tablet:w-[90px]"
-                    height="18"
+                    class="
+            mt-2 h-4 w-20
+            tablet:mt-3 tablet:h-[18px] tablet:w-[90px]
+          "
+                    height="16"
                     src="/svg/2-stars.svg"
-                    width="90"
+                    width="80"
                   />
                 </picture>
                 <div
-                  class="mt-auto pt-6 font-sans text-xxs font-light leading-4 tracking-wide text-subtle"
+                  class="
+            mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
+            text-subtle
+          "
                 >
                   Nonfiction | 2022
                 </div>
               </div>
             </li>
             <li
-              class="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[15.75%]"
+              class="
+        relative flex w-[48%] max-w-[248px] flex-col items-center border-default
+        bg-default
+        has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
+        min-[600px]:w-[30.66666667%]
+        tablet:w-[31.33333333%]
+        min-[900px]:w-[22.75%]
+        desktop:w-[15.75%]
+      "
             >
               <img
                 alt=""
                 decoding="async"
                 height="372"
                 loading="lazy"
-                sizes="(min-width: 1800px) 218px, (min-width: 1300px) calc(11.67vw + 10px), (min-width: 1260px) calc(-445vw + 5855px), (min-width: 900px) calc(19.12vw + 11px), (min-width: 600px) 27.5vw, calc(41.43vw + 8px)"
+                sizes="(min-width: 1840px) 248px, (min-width: 1300px) calc(13.08vw + 10px), (min-width: 1260px) calc(-360vw + 4784px), (min-width: 900px) calc(19.12vw + 11px), (min-width: 600px) 27.5vw, calc(41.43vw + 8px)"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
                 srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=62&h=93&q=80&f=avif 62w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=124&h=186&q=80&f=avif 124w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 248w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 496w"
                 style="aspect-ratio: 0.66666667;"
                 width="248"
               />
               <div
-                class="flex w-full grow flex-col px-[8%] pb-8 desktop:pl-[8.5%] desktop:pr-[10%]"
+                class="
+          flex w-full grow flex-col px-[8%] pb-8
+          desktop:pr-[10%] desktop:pl-[8.5%]
+        "
               >
                 <div
-                  class="whitespace-nowrap pt-3 font-sans text-xxs font-light leading-4 tracking-wide text-subtle"
+                  class="
+            pt-3 font-sans text-xxs leading-4 font-light tracking-wide
+            whitespace-nowrap text-subtle
+          "
                 >
                   01 Jul 2024
                 </div>
                 <div
-                  class="pt-2 font-sans text-sm font-medium tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5 max:pt-2 max:text-xl max:leading-6"
+                  class="
+            pt-2 font-sans text-sm font-medium
+            max:pt-2 max:text-xl max:leading-6
+            tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5
+          "
                 >
                   <a
-                    class="inline-block before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0"
+                    class="
+              inline-block
+              before:absolute before:inset-x-0 before:top-0 before:aspect-cover
+              before:bg-default before:opacity-15
+              after:absolute after:top-0 after:left-0 after:z-10 after:size-full
+              after:opacity-0
+              hover:text-accent hover:before:opacity-0
+            "
                     href="/reviews/fast-forward-by-stephen-morris/"
                     rel="canonical"
                   >
@@ -523,7 +809,10 @@ exports[`Home > matches snapshot 1`] = `
                   </a>
                 </div>
                 <p
-                  class="pt-1 font-sans text-xs font-light leading-4 text-subtle tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5"
+                  class="
+            pt-1 font-sans text-xs leading-4 font-light text-subtle
+            tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
+          "
                 >
                   by 
                   <span
@@ -540,46 +829,77 @@ exports[`Home > matches snapshot 1`] = `
                   />
                   <img
                     alt="A-: 4.5 stars (out of 5)"
-                    class="mt-2 h-4 w-20 tablet:mt-3 tablet:h-[18px] tablet:w-[90px]"
-                    height="18"
+                    class="
+            mt-2 h-4 w-20
+            tablet:mt-3 tablet:h-[18px] tablet:w-[90px]
+          "
+                    height="16"
                     src="/svg/4-half-stars.svg"
-                    width="90"
+                    width="80"
                   />
                 </picture>
                 <div
-                  class="mt-auto pt-6 font-sans text-xxs font-light leading-4 tracking-wide text-subtle"
+                  class="
+            mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
+            text-subtle
+          "
                 >
                   Nonfiction | 2020
                 </div>
               </div>
             </li>
             <li
-              class="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[15.75%]"
+              class="
+        relative flex w-[48%] max-w-[248px] flex-col items-center border-default
+        bg-default
+        has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
+        min-[600px]:w-[30.66666667%]
+        tablet:w-[31.33333333%]
+        min-[900px]:w-[22.75%]
+        desktop:w-[15.75%]
+      "
             >
               <img
                 alt=""
                 decoding="async"
                 height="372"
                 loading="lazy"
-                sizes="(min-width: 1800px) 218px, (min-width: 1300px) calc(11.67vw + 10px), (min-width: 1260px) calc(-445vw + 5855px), (min-width: 900px) calc(19.12vw + 11px), (min-width: 600px) 27.5vw, calc(41.43vw + 8px)"
+                sizes="(min-width: 1840px) 248px, (min-width: 1300px) calc(13.08vw + 10px), (min-width: 1260px) calc(-360vw + 4784px), (min-width: 900px) calc(19.12vw + 11px), (min-width: 600px) 27.5vw, calc(41.43vw + 8px)"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgothic-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
                 srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgothic-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=62&h=93&q=80&f=avif 62w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgothic-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=124&h=186&q=80&f=avif 124w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgothic-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 248w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgothic-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 496w"
                 style="aspect-ratio: 0.66666667;"
                 width="248"
               />
               <div
-                class="flex w-full grow flex-col px-[8%] pb-8 desktop:pl-[8.5%] desktop:pr-[10%]"
+                class="
+          flex w-full grow flex-col px-[8%] pb-8
+          desktop:pr-[10%] desktop:pl-[8.5%]
+        "
               >
                 <div
-                  class="whitespace-nowrap pt-3 font-sans text-xxs font-light leading-4 tracking-wide text-subtle"
+                  class="
+            pt-3 font-sans text-xxs leading-4 font-light tracking-wide
+            whitespace-nowrap text-subtle
+          "
                 >
                   30 Jun 2024
                 </div>
                 <div
-                  class="pt-2 font-sans text-sm font-medium tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5 max:pt-2 max:text-xl max:leading-6"
+                  class="
+            pt-2 font-sans text-sm font-medium
+            max:pt-2 max:text-xl max:leading-6
+            tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5
+          "
                 >
                   <a
-                    class="inline-block before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0"
+                    class="
+              inline-block
+              before:absolute before:inset-x-0 before:top-0 before:aspect-cover
+              before:bg-default before:opacity-15
+              after:absolute after:top-0 after:left-0 after:z-10 after:size-full
+              after:opacity-0
+              hover:text-accent hover:before:opacity-0
+            "
                     href="/reviews/gothic-by-philip-fracassi/"
                     rel="canonical"
                   >
@@ -587,7 +907,10 @@ exports[`Home > matches snapshot 1`] = `
                   </a>
                 </div>
                 <p
-                  class="pt-1 font-sans text-xs font-light leading-4 text-subtle tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5"
+                  class="
+            pt-1 font-sans text-xs leading-4 font-light text-subtle
+            tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
+          "
                 >
                   by 
                   <span
@@ -604,46 +927,77 @@ exports[`Home > matches snapshot 1`] = `
                   />
                   <img
                     alt="B+: 4 stars (out of 5)"
-                    class="mt-2 h-4 w-20 tablet:mt-3 tablet:h-[18px] tablet:w-[90px]"
-                    height="18"
+                    class="
+            mt-2 h-4 w-20
+            tablet:mt-3 tablet:h-[18px] tablet:w-[90px]
+          "
+                    height="16"
                     src="/svg/4-stars.svg"
-                    width="90"
+                    width="80"
                   />
                 </picture>
                 <div
-                  class="mt-auto pt-6 font-sans text-xxs font-light leading-4 tracking-wide text-subtle"
+                  class="
+            mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
+            text-subtle
+          "
                 >
                   Novel | 2023
                 </div>
               </div>
             </li>
             <li
-              class="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[15.75%]"
+              class="
+        relative flex w-[48%] max-w-[248px] flex-col items-center border-default
+        bg-default
+        has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
+        min-[600px]:w-[30.66666667%]
+        tablet:w-[31.33333333%]
+        min-[900px]:w-[22.75%]
+        desktop:w-[15.75%]
+      "
             >
               <img
                 alt=""
                 decoding="async"
                 height="372"
                 loading="lazy"
-                sizes="(min-width: 1800px) 218px, (min-width: 1300px) calc(11.67vw + 10px), (min-width: 1260px) calc(-445vw + 5855px), (min-width: 900px) calc(19.12vw + 11px), (min-width: 600px) 27.5vw, calc(41.43vw + 8px)"
+                sizes="(min-width: 1840px) 248px, (min-width: 1300px) calc(13.08vw + 10px), (min-width: 1260px) calc(-360vw + 4784px), (min-width: 900px) calc(19.12vw + 11px), (min-width: 600px) 27.5vw, calc(41.43vw + 8px)"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frecord-play-pause-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
                 srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frecord-play-pause-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=62&h=93&q=80&f=avif 62w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frecord-play-pause-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=124&h=186&q=80&f=avif 124w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frecord-play-pause-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 248w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frecord-play-pause-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 496w"
                 style="aspect-ratio: 0.66666667;"
                 width="248"
               />
               <div
-                class="flex w-full grow flex-col px-[8%] pb-8 desktop:pl-[8.5%] desktop:pr-[10%]"
+                class="
+          flex w-full grow flex-col px-[8%] pb-8
+          desktop:pr-[10%] desktop:pl-[8.5%]
+        "
               >
                 <div
-                  class="whitespace-nowrap pt-3 font-sans text-xxs font-light leading-4 tracking-wide text-subtle"
+                  class="
+            pt-3 font-sans text-xxs leading-4 font-light tracking-wide
+            whitespace-nowrap text-subtle
+          "
                 >
                   11 Nov 2023
                 </div>
                 <div
-                  class="pt-2 font-sans text-sm font-medium tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5 max:pt-2 max:text-xl max:leading-6"
+                  class="
+            pt-2 font-sans text-sm font-medium
+            max:pt-2 max:text-xl max:leading-6
+            tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5
+          "
                 >
                   <a
-                    class="inline-block before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0"
+                    class="
+              inline-block
+              before:absolute before:inset-x-0 before:top-0 before:aspect-cover
+              before:bg-default before:opacity-15
+              after:absolute after:top-0 after:left-0 after:z-10 after:size-full
+              after:opacity-0
+              hover:text-accent hover:before:opacity-0
+            "
                     href="/reviews/record-play-pause-by-stephen-morris/"
                     rel="canonical"
                   >
@@ -651,7 +1005,10 @@ exports[`Home > matches snapshot 1`] = `
                   </a>
                 </div>
                 <p
-                  class="pt-1 font-sans text-xs font-light leading-4 text-subtle tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5"
+                  class="
+            pt-1 font-sans text-xs leading-4 font-light text-subtle
+            tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
+          "
                 >
                   by 
                   <span
@@ -668,46 +1025,77 @@ exports[`Home > matches snapshot 1`] = `
                   />
                   <img
                     alt="A: 5 stars (out of 5)"
-                    class="mt-2 h-4 w-20 tablet:mt-3 tablet:h-[18px] tablet:w-[90px]"
-                    height="18"
+                    class="
+            mt-2 h-4 w-20
+            tablet:mt-3 tablet:h-[18px] tablet:w-[90px]
+          "
+                    height="16"
                     src="/svg/5-stars.svg"
-                    width="90"
+                    width="80"
                   />
                 </picture>
                 <div
-                  class="mt-auto pt-6 font-sans text-xxs font-light leading-4 tracking-wide text-subtle"
+                  class="
+            mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
+            text-subtle
+          "
                 >
                   Nonfiction | 2019
                 </div>
               </div>
             </li>
             <li
-              class="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[15.75%]"
+              class="
+        relative flex w-[48%] max-w-[248px] flex-col items-center border-default
+        bg-default
+        has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
+        min-[600px]:w-[30.66666667%]
+        tablet:w-[31.33333333%]
+        min-[900px]:w-[22.75%]
+        desktop:w-[15.75%]
+      "
             >
               <img
                 alt=""
                 decoding="async"
                 height="372"
                 loading="lazy"
-                sizes="(min-width: 1800px) 218px, (min-width: 1300px) calc(11.67vw + 10px), (min-width: 1260px) calc(-445vw + 5855px), (min-width: 900px) calc(19.12vw + 11px), (min-width: 600px) 27.5vw, calc(41.43vw + 8px)"
+                sizes="(min-width: 1840px) 248px, (min-width: 1300px) calc(13.08vw + 10px), (min-width: 1260px) calc(-360vw + 4784px), (min-width: 900px) calc(19.12vw + 11px), (min-width: 600px) 27.5vw, calc(41.43vw + 8px)"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffright-night-origins-by-tom-holland-a-jack-ulrich.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
                 srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffright-night-origins-by-tom-holland-a-jack-ulrich.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=62&h=93&q=80&f=avif 62w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffright-night-origins-by-tom-holland-a-jack-ulrich.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=124&h=186&q=80&f=avif 124w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffright-night-origins-by-tom-holland-a-jack-ulrich.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 248w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffright-night-origins-by-tom-holland-a-jack-ulrich.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 496w"
                 style="aspect-ratio: 0.66666667;"
                 width="248"
               />
               <div
-                class="flex w-full grow flex-col px-[8%] pb-8 desktop:pl-[8.5%] desktop:pr-[10%]"
+                class="
+          flex w-full grow flex-col px-[8%] pb-8
+          desktop:pr-[10%] desktop:pl-[8.5%]
+        "
               >
                 <div
-                  class="whitespace-nowrap pt-3 font-sans text-xxs font-light leading-4 tracking-wide text-subtle"
+                  class="
+            pt-3 font-sans text-xxs leading-4 font-light tracking-wide
+            whitespace-nowrap text-subtle
+          "
                 >
                   06 Nov 2023
                 </div>
                 <div
-                  class="pt-2 font-sans text-sm font-medium tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5 max:pt-2 max:text-xl max:leading-6"
+                  class="
+            pt-2 font-sans text-sm font-medium
+            max:pt-2 max:text-xl max:leading-6
+            tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5
+          "
                 >
                   <a
-                    class="inline-block before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0"
+                    class="
+              inline-block
+              before:absolute before:inset-x-0 before:top-0 before:aspect-cover
+              before:bg-default before:opacity-15
+              after:absolute after:top-0 after:left-0 after:z-10 after:size-full
+              after:opacity-0
+              hover:text-accent hover:before:opacity-0
+            "
                     href="/reviews/fright-night-origins-by-tom-holland-a-jack-ulrich/"
                     rel="canonical"
                   >
@@ -715,7 +1103,10 @@ exports[`Home > matches snapshot 1`] = `
                   </a>
                 </div>
                 <p
-                  class="pt-1 font-sans text-xs font-light leading-4 text-subtle tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5"
+                  class="
+            pt-1 font-sans text-xs leading-4 font-light text-subtle
+            tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
+          "
                 >
                   by 
                   <span
@@ -738,46 +1129,77 @@ exports[`Home > matches snapshot 1`] = `
                   />
                   <img
                     alt="C+: 3 stars (out of 5)"
-                    class="mt-2 h-4 w-20 tablet:mt-3 tablet:h-[18px] tablet:w-[90px]"
-                    height="18"
+                    class="
+            mt-2 h-4 w-20
+            tablet:mt-3 tablet:h-[18px] tablet:w-[90px]
+          "
+                    height="16"
                     src="/svg/3-stars.svg"
-                    width="90"
+                    width="80"
                   />
                 </picture>
                 <div
-                  class="mt-auto pt-6 font-sans text-xxs font-light leading-4 tracking-wide text-subtle"
+                  class="
+            mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
+            text-subtle
+          "
                 >
                   Novel | 2023
                 </div>
               </div>
             </li>
             <li
-              class="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[15.75%]"
+              class="
+        relative flex w-[48%] max-w-[248px] flex-col items-center border-default
+        bg-default
+        has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
+        min-[600px]:w-[30.66666667%]
+        tablet:w-[31.33333333%]
+        min-[900px]:w-[22.75%]
+        desktop:w-[15.75%]
+      "
             >
               <img
                 alt=""
                 decoding="async"
                 height="372"
                 loading="lazy"
-                sizes="(min-width: 1800px) 218px, (min-width: 1300px) calc(11.67vw + 10px), (min-width: 1260px) calc(-445vw + 5855px), (min-width: 900px) calc(19.12vw + 11px), (min-width: 600px) 27.5vw, calc(41.43vw + 8px)"
+                sizes="(min-width: 1840px) 248px, (min-width: 1300px) calc(13.08vw + 10px), (min-width: 1260px) calc(-360vw + 4784px), (min-width: 900px) calc(19.12vw + 11px), (min-width: 600px) 27.5vw, calc(41.43vw + 8px)"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdont-let-them-get-you-down-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
                 srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdont-let-them-get-you-down-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=62&h=93&q=80&f=avif 62w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdont-let-them-get-you-down-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=124&h=186&q=80&f=avif 124w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdont-let-them-get-you-down-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 248w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdont-let-them-get-you-down-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 496w"
                 style="aspect-ratio: 0.66666667;"
                 width="248"
               />
               <div
-                class="flex w-full grow flex-col px-[8%] pb-8 desktop:pl-[8.5%] desktop:pr-[10%]"
+                class="
+          flex w-full grow flex-col px-[8%] pb-8
+          desktop:pr-[10%] desktop:pl-[8.5%]
+        "
               >
                 <div
-                  class="whitespace-nowrap pt-3 font-sans text-xxs font-light leading-4 tracking-wide text-subtle"
+                  class="
+            pt-3 font-sans text-xxs leading-4 font-light tracking-wide
+            whitespace-nowrap text-subtle
+          "
                 >
                   29 Oct 2023
                 </div>
                 <div
-                  class="pt-2 font-sans text-sm font-medium tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5 max:pt-2 max:text-xl max:leading-6"
+                  class="
+            pt-2 font-sans text-sm font-medium
+            max:pt-2 max:text-xl max:leading-6
+            tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5
+          "
                 >
                   <a
-                    class="inline-block before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0"
+                    class="
+              inline-block
+              before:absolute before:inset-x-0 before:top-0 before:aspect-cover
+              before:bg-default before:opacity-15
+              after:absolute after:top-0 after:left-0 after:z-10 after:size-full
+              after:opacity-0
+              hover:text-accent hover:before:opacity-0
+            "
                     href="/reviews/dont-let-them-get-you-down-by-philip-fracassi/"
                     rel="canonical"
                   >
@@ -785,7 +1207,10 @@ exports[`Home > matches snapshot 1`] = `
                   </a>
                 </div>
                 <p
-                  class="pt-1 font-sans text-xs font-light leading-4 text-subtle tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5"
+                  class="
+            pt-1 font-sans text-xs leading-4 font-light text-subtle
+            tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
+          "
                 >
                   by 
                   <span
@@ -802,46 +1227,77 @@ exports[`Home > matches snapshot 1`] = `
                   />
                   <img
                     alt="C-: 2.5 stars (out of 5)"
-                    class="mt-2 h-4 w-20 tablet:mt-3 tablet:h-[18px] tablet:w-[90px]"
-                    height="18"
+                    class="
+            mt-2 h-4 w-20
+            tablet:mt-3 tablet:h-[18px] tablet:w-[90px]
+          "
+                    height="16"
                     src="/svg/2-half-stars.svg"
-                    width="90"
+                    width="80"
                   />
                 </picture>
                 <div
-                  class="mt-auto pt-6 font-sans text-xxs font-light leading-4 tracking-wide text-subtle"
+                  class="
+            mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
+            text-subtle
+          "
                 >
                   Novel | 2022
                 </div>
               </div>
             </li>
             <li
-              class="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[15.75%]"
+              class="
+        relative flex w-[48%] max-w-[248px] flex-col items-center border-default
+        bg-default
+        has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
+        min-[600px]:w-[30.66666667%]
+        tablet:w-[31.33333333%]
+        min-[900px]:w-[22.75%]
+        desktop:w-[15.75%]
+      "
             >
               <img
                 alt=""
                 decoding="async"
                 height="372"
                 loading="lazy"
-                sizes="(min-width: 1800px) 218px, (min-width: 1300px) calc(11.67vw + 10px), (min-width: 1260px) calc(-445vw + 5855px), (min-width: 900px) calc(19.12vw + 11px), (min-width: 600px) 27.5vw, calc(41.43vw + 8px)"
+                sizes="(min-width: 1840px) 248px, (min-width: 1300px) calc(13.08vw + 10px), (min-width: 1260px) calc(-360vw + 4784px), (min-width: 900px) calc(19.12vw + 11px), (min-width: 600px) 27.5vw, calc(41.43vw + 8px)"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-creative-act-by-rick-rubin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
                 srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-creative-act-by-rick-rubin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=62&h=93&q=80&f=avif 62w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-creative-act-by-rick-rubin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=124&h=186&q=80&f=avif 124w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-creative-act-by-rick-rubin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 248w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-creative-act-by-rick-rubin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 496w"
                 style="aspect-ratio: 0.66666667;"
                 width="248"
               />
               <div
-                class="flex w-full grow flex-col px-[8%] pb-8 desktop:pl-[8.5%] desktop:pr-[10%]"
+                class="
+          flex w-full grow flex-col px-[8%] pb-8
+          desktop:pr-[10%] desktop:pl-[8.5%]
+        "
               >
                 <div
-                  class="whitespace-nowrap pt-3 font-sans text-xxs font-light leading-4 tracking-wide text-subtle"
+                  class="
+            pt-3 font-sans text-xxs leading-4 font-light tracking-wide
+            whitespace-nowrap text-subtle
+          "
                 >
                   22 Oct 2023
                 </div>
                 <div
-                  class="pt-2 font-sans text-sm font-medium tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5 max:pt-2 max:text-xl max:leading-6"
+                  class="
+            pt-2 font-sans text-sm font-medium
+            max:pt-2 max:text-xl max:leading-6
+            tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5
+          "
                 >
                   <a
-                    class="inline-block before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0"
+                    class="
+              inline-block
+              before:absolute before:inset-x-0 before:top-0 before:aspect-cover
+              before:bg-default before:opacity-15
+              after:absolute after:top-0 after:left-0 after:z-10 after:size-full
+              after:opacity-0
+              hover:text-accent hover:before:opacity-0
+            "
                     href="/reviews/the-creative-act-by-rick-rubin/"
                     rel="canonical"
                   >
@@ -849,7 +1305,10 @@ exports[`Home > matches snapshot 1`] = `
                   </a>
                 </div>
                 <p
-                  class="pt-1 font-sans text-xs font-light leading-4 text-subtle tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5"
+                  class="
+            pt-1 font-sans text-xs leading-4 font-light text-subtle
+            tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
+          "
                 >
                   by 
                   <span
@@ -866,46 +1325,77 @@ exports[`Home > matches snapshot 1`] = `
                   />
                   <img
                     alt="C+: 3 stars (out of 5)"
-                    class="mt-2 h-4 w-20 tablet:mt-3 tablet:h-[18px] tablet:w-[90px]"
-                    height="18"
+                    class="
+            mt-2 h-4 w-20
+            tablet:mt-3 tablet:h-[18px] tablet:w-[90px]
+          "
+                    height="16"
                     src="/svg/3-stars.svg"
-                    width="90"
+                    width="80"
                   />
                 </picture>
                 <div
-                  class="mt-auto pt-6 font-sans text-xxs font-light leading-4 tracking-wide text-subtle"
+                  class="
+            mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
+            text-subtle
+          "
                 >
                   Nonfiction | 2023
                 </div>
               </div>
             </li>
             <li
-              class="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[15.75%]"
+              class="
+        relative flex w-[48%] max-w-[248px] flex-col items-center border-default
+        bg-default
+        has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
+        min-[600px]:w-[30.66666667%]
+        tablet:w-[31.33333333%]
+        min-[900px]:w-[22.75%]
+        desktop:w-[15.75%]
+      "
             >
               <img
                 alt=""
                 decoding="async"
                 height="372"
                 loading="lazy"
-                sizes="(min-width: 1800px) 218px, (min-width: 1300px) calc(11.67vw + 10px), (min-width: 1260px) calc(-445vw + 5855px), (min-width: 900px) calc(19.12vw + 11px), (min-width: 600px) 27.5vw, calc(41.43vw + 8px)"
+                sizes="(min-width: 1840px) 248px, (min-width: 1300px) calc(13.08vw + 10px), (min-width: 1260px) calc(-360vw + 4784px), (min-width: 900px) calc(19.12vw + 11px), (min-width: 600px) 27.5vw, calc(41.43vw + 8px)"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsacculina-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
                 srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsacculina-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=62&h=93&q=80&f=avif 62w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsacculina-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=124&h=186&q=80&f=avif 124w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsacculina-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 248w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsacculina-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 496w"
                 style="aspect-ratio: 0.66666667;"
                 width="248"
               />
               <div
-                class="flex w-full grow flex-col px-[8%] pb-8 desktop:pl-[8.5%] desktop:pr-[10%]"
+                class="
+          flex w-full grow flex-col px-[8%] pb-8
+          desktop:pr-[10%] desktop:pl-[8.5%]
+        "
               >
                 <div
-                  class="whitespace-nowrap pt-3 font-sans text-xxs font-light leading-4 tracking-wide text-subtle"
+                  class="
+            pt-3 font-sans text-xxs leading-4 font-light tracking-wide
+            whitespace-nowrap text-subtle
+          "
                 >
                   09 Oct 2023
                 </div>
                 <div
-                  class="pt-2 font-sans text-sm font-medium tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5 max:pt-2 max:text-xl max:leading-6"
+                  class="
+            pt-2 font-sans text-sm font-medium
+            max:pt-2 max:text-xl max:leading-6
+            tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5
+          "
                 >
                   <a
-                    class="inline-block before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0"
+                    class="
+              inline-block
+              before:absolute before:inset-x-0 before:top-0 before:aspect-cover
+              before:bg-default before:opacity-15
+              after:absolute after:top-0 after:left-0 after:z-10 after:size-full
+              after:opacity-0
+              hover:text-accent hover:before:opacity-0
+            "
                     href="/reviews/sacculina-by-philip-fracassi/"
                     rel="canonical"
                   >
@@ -913,7 +1403,10 @@ exports[`Home > matches snapshot 1`] = `
                   </a>
                 </div>
                 <p
-                  class="pt-1 font-sans text-xs font-light leading-4 text-subtle tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5"
+                  class="
+            pt-1 font-sans text-xs leading-4 font-light text-subtle
+            tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
+          "
                 >
                   by 
                   <span
@@ -930,46 +1423,77 @@ exports[`Home > matches snapshot 1`] = `
                   />
                   <img
                     alt="B: 4 stars (out of 5)"
-                    class="mt-2 h-4 w-20 tablet:mt-3 tablet:h-[18px] tablet:w-[90px]"
-                    height="18"
+                    class="
+            mt-2 h-4 w-20
+            tablet:mt-3 tablet:h-[18px] tablet:w-[90px]
+          "
+                    height="16"
                     src="/svg/4-stars.svg"
-                    width="90"
+                    width="80"
                   />
                 </picture>
                 <div
-                  class="mt-auto pt-6 font-sans text-xxs font-light leading-4 tracking-wide text-subtle"
+                  class="
+            mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
+            text-subtle
+          "
                 >
                   Novella | 2017
                 </div>
               </div>
             </li>
             <li
-              class="relative flex w-[48%] max-w-[248px] flex-col items-center border-default bg-default has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover min-[600px]:w-[30.66666667%] tablet:w-[31.33333333%] min-[900px]:w-[22.75%] desktop:w-[15.75%]"
+              class="
+        relative flex w-[48%] max-w-[248px] flex-col items-center border-default
+        bg-default
+        has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
+        min-[600px]:w-[30.66666667%]
+        tablet:w-[31.33333333%]
+        min-[900px]:w-[22.75%]
+        desktop:w-[15.75%]
+      "
             >
               <img
                 alt=""
                 decoding="async"
                 height="372"
                 loading="lazy"
-                sizes="(min-width: 1800px) 218px, (min-width: 1300px) calc(11.67vw + 10px), (min-width: 1260px) calc(-445vw + 5855px), (min-width: 900px) calc(19.12vw + 11px), (min-width: 600px) 27.5vw, calc(41.43vw + 8px)"
+                sizes="(min-width: 1840px) 248px, (min-width: 1300px) calc(13.08vw + 10px), (min-width: 1260px) calc(-360vw + 4784px), (min-width: 900px) calc(19.12vw + 11px), (min-width: 600px) 27.5vw, calc(41.43vw + 8px)"
                 src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-cipher-by-kathe-koja.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
                 srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-cipher-by-kathe-koja.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=62&h=93&q=80&f=avif 62w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-cipher-by-kathe-koja.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=124&h=186&q=80&f=avif 124w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-cipher-by-kathe-koja.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 248w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-cipher-by-kathe-koja.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 496w"
                 style="aspect-ratio: 0.66666667;"
                 width="248"
               />
               <div
-                class="flex w-full grow flex-col px-[8%] pb-8 desktop:pl-[8.5%] desktop:pr-[10%]"
+                class="
+          flex w-full grow flex-col px-[8%] pb-8
+          desktop:pr-[10%] desktop:pl-[8.5%]
+        "
               >
                 <div
-                  class="whitespace-nowrap pt-3 font-sans text-xxs font-light leading-4 tracking-wide text-subtle"
+                  class="
+            pt-3 font-sans text-xxs leading-4 font-light tracking-wide
+            whitespace-nowrap text-subtle
+          "
                 >
                   29 Jan 2023
                 </div>
                 <div
-                  class="pt-2 font-sans text-sm font-medium tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5 max:pt-2 max:text-xl max:leading-6"
+                  class="
+            pt-2 font-sans text-sm font-medium
+            max:pt-2 max:text-xl max:leading-6
+            tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5
+          "
                 >
                   <a
-                    class="inline-block before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0"
+                    class="
+              inline-block
+              before:absolute before:inset-x-0 before:top-0 before:aspect-cover
+              before:bg-default before:opacity-15
+              after:absolute after:top-0 after:left-0 after:z-10 after:size-full
+              after:opacity-0
+              hover:text-accent hover:before:opacity-0
+            "
                     href="/reviews/the-cipher-by-kathe-koja/"
                     rel="canonical"
                   >
@@ -977,7 +1501,10 @@ exports[`Home > matches snapshot 1`] = `
                   </a>
                 </div>
                 <p
-                  class="pt-1 font-sans text-xs font-light leading-4 text-subtle tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5"
+                  class="
+            pt-1 font-sans text-xs leading-4 font-light text-subtle
+            tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
+          "
                 >
                   by 
                   <span
@@ -994,14 +1521,20 @@ exports[`Home > matches snapshot 1`] = `
                   />
                   <img
                     alt="B: 4 stars (out of 5)"
-                    class="mt-2 h-4 w-20 tablet:mt-3 tablet:h-[18px] tablet:w-[90px]"
-                    height="18"
+                    class="
+            mt-2 h-4 w-20
+            tablet:mt-3 tablet:h-[18px] tablet:w-[90px]
+          "
+                    height="16"
                     src="/svg/4-stars.svg"
-                    width="90"
+                    width="80"
                   />
                 </picture>
                 <div
-                  class="mt-auto pt-6 font-sans text-xxs font-light leading-4 tracking-wide text-subtle"
+                  class="
+            mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
+            text-subtle
+          "
                 >
                   Novel | 1991
                 </div>
@@ -1012,7 +1545,11 @@ exports[`Home > matches snapshot 1`] = `
             class="flex px-container py-10"
           >
             <a
-              class="mx-auto w-full max-w-button bg-default py-5 text-center font-sans text-xs font-semibold uppercase tracking-wide text-accent hover:bg-accent hover:text-inverse"
+              class="
+              mx-auto w-full max-w-button bg-default py-5 text-center font-sans
+              text-xs font-semibold tracking-wide text-accent uppercase
+              hover:bg-accent hover:text-inverse
+            "
               href="/reviews/"
             >
               All Reviews
@@ -1024,13 +1561,21 @@ exports[`Home > matches snapshot 1`] = `
         class="bg-canvas"
       >
         <div
-          class="mx-auto max-w-screen-desktop px-container py-20"
+          class="mx-auto max-w-(--breakpoint-desktop) px-container py-20"
         >
           <div
-            class="flex w-full flex-col tablet:flex-row-reverse tablet:justify-between"
+            class="
+            flex w-full flex-col
+            tablet:flex-row-reverse tablet:justify-between
+          "
           >
             <a
-              class="mx-auto mb-8 w-full max-w-button bg-footer py-5 text-center font-sans text-xs uppercase tracking-wide text-inverse hover:bg-subtle hover:text-default tablet:mx-0"
+              class="
+              mx-auto mb-8 w-full max-w-button bg-footer py-5 text-center
+              font-sans text-xs tracking-wide text-inverse uppercase
+              hover:bg-subtle hover:text-default
+              tablet:mx-0
+            "
               href="#top"
             >
               To the top
@@ -1039,7 +1584,10 @@ exports[`Home > matches snapshot 1`] = `
               class="flex flex-col"
             >
               <div
-                class="whitespace-nowrap text-[1.375rem] font-normal leading-8 tablet:text-[1.5625rem]"
+                class="
+          text-[1.375rem] leading-8 font-normal whitespace-nowrap
+          tablet:text-[1.5625rem]
+        "
               >
                 <a
                   href="/"
@@ -1048,83 +1596,137 @@ exports[`Home > matches snapshot 1`] = `
                 </a>
               </div>
               <p
-                class="w-full pl-px text-sm italic leading-4 opacity-85"
+                class="w-full pl-px text-sm leading-4 italic opacity-85"
               >
                 by Frank Showalter
               </p>
             </div>
           </div>
           <div
-            class="justify-between tablet:flex"
+            class="
+            justify-between
+            tablet:flex
+          "
           >
             <div
-              class="flex max-w-prose flex-col pb-12 tablet:pr-32"
+              class="
+              flex max-w-prose flex-col pb-12
+              tablet:pr-32
+            "
             >
               <div
-                class="footer-text pt-10 font-sans text-base font-light text-subtle"
+                class="pt-10 font-sans text-base font-light text-subtle"
               >
-                <p>
+                <p
+                  class="mb-6 text-pretty"
+                >
                   Hi there, I'm Frank, a husband and father old enough to have read Stephen King's 
                   <em>
                     The Dark Half
                   </em>
                    during its first printing.
                 </p>
-                <p>
+                <p
+                  class="mb-6 text-pretty"
+                >
                   This site began in 2012, when I realized I'd accumulated more books than I could ever hope to finish. Worse still, I had books I thought I'd read but couldn't remember. Clearly, I needed a system.
                 </p>
-                <p>
+                <p
+                  class="mb-6 text-pretty"
+                >
                   What started on Goodreads evolved into this little corner of the internet where I share my thoughts on what I've read.
                 </p>
-                <p>
+                <p
+                  class="mb-6 text-pretty"
+                >
                   New visitors might want to start by reading about 
                   <a
+                    class="
+        text-default underline decoration-subtle decoration-dashed
+        underline-offset-4 transition-all duration-150 ease-out
+        hover:bg-(--fg-inverse) hover:text-default hover:decoration-default
+        hover:duration-75 hover:ease-in
+      "
                     href="/how-i-grade/"
                   >
                     how I grade
                   </a>
                   . After that, feel free to browse my 
                   <a
+                    class="
+        text-default underline decoration-subtle decoration-dashed
+        underline-offset-4 transition-all duration-150 ease-out
+        hover:bg-(--fg-inverse) hover:text-default hover:decoration-default
+        hover:duration-75 hover:ease-in
+      "
                     href="/reviews/"
                   >
                     reviews
                   </a>
                   , which are also indexed 
                   <a
+                    class="
+        text-default underline decoration-subtle decoration-dashed
+        underline-offset-4 transition-all duration-150 ease-out
+        hover:bg-(--fg-inverse) hover:text-default hover:decoration-default
+        hover:duration-75 hover:ease-in
+      "
                     href="/authors/"
                   >
                     by author
                   </a>
                   .
                 </p>
-                <p>
+                <p
+                  class="mb-6 text-pretty"
+                >
                   I also keep a 
                   <a
+                    class="
+        text-default underline decoration-subtle decoration-dashed
+        underline-offset-4 transition-all duration-150 ease-out
+        hover:bg-(--fg-inverse) hover:text-default hover:decoration-default
+        hover:duration-75 hover:ease-in
+      "
                     href="/readings/"
                   >
                     reading log
                   </a>
                    that tracks everything I read, whether it gets a full review or not, complete with 
                   <a
+                    class="
+        text-default underline decoration-subtle decoration-dashed
+        underline-offset-4 transition-all duration-150 ease-out
+        hover:bg-(--fg-inverse) hover:text-default hover:decoration-default
+        hover:duration-75 hover:ease-in
+      "
                     href="/readings/stats/"
                   >
                     stats
                   </a>
                   . In an age of endless content, sometimes the act of remembering what we've read becomes as important as the reading itself.
                 </p>
-                <p>
+                <p
+                  class="text-pretty"
+                >
                   In an era of algorithmic recommendations and corporate marketing machines, consider this site a human alternative—one person's attempt to catalog his personal library and maybe help a few fellow travelers along the way.
                 </p>
               </div>
             </div>
             <div
-              class="flex grow-0 flex-col gap-20 pb-20 pt-10 tablet:basis-[430px] tablet:pr-10"
+              class="
+              flex grow-0 flex-col gap-20 pt-10 pb-20
+              tablet:basis-button tablet:pr-10
+            "
             >
               <ul
-                class="flex w-full flex-col gap-y-10 max:w-auto"
+                class="
+                flex w-full flex-col gap-y-10
+                max:w-auto
+              "
               >
                 <li
-                  class="block w-1/2 whitespace-nowrap text-2xl"
+                  class="block w-1/2 text-2xl whitespace-nowrap"
                 >
                   <a
                     class="hover:text-accent"
@@ -1134,7 +1736,7 @@ exports[`Home > matches snapshot 1`] = `
                   </a>
                 </li>
                 <li
-                  class="block w-1/2 whitespace-nowrap text-2xl"
+                  class="block w-1/2 text-2xl whitespace-nowrap"
                 >
                   <a
                     class="hover:text-accent"
@@ -1144,7 +1746,7 @@ exports[`Home > matches snapshot 1`] = `
                   </a>
                 </li>
                 <li
-                  class="block w-1/2 whitespace-nowrap text-2xl"
+                  class="block w-1/2 text-2xl whitespace-nowrap"
                 >
                   <a
                     class="hover:text-accent"
@@ -1154,7 +1756,7 @@ exports[`Home > matches snapshot 1`] = `
                   </a>
                 </li>
                 <li
-                  class="block w-1/2 whitespace-nowrap text-2xl"
+                  class="block w-1/2 text-2xl whitespace-nowrap"
                 >
                   <a
                     class="hover:text-accent"
@@ -1164,7 +1766,7 @@ exports[`Home > matches snapshot 1`] = `
                   </a>
                 </li>
                 <li
-                  class="block w-1/2 whitespace-nowrap text-2xl"
+                  class="block w-1/2 text-2xl whitespace-nowrap"
                 >
                   <a
                     class="hover:text-accent"
@@ -1176,7 +1778,10 @@ exports[`Home > matches snapshot 1`] = `
                     class="mt-4"
                   >
                     <li
-                      class="mb-4 ml-1 font-sans text-xs uppercase tracking-wide text-subtle last:mb-0"
+                      class="
+              mb-4 ml-1 font-sans text-xs tracking-wide text-subtle uppercase
+              last:mb-0
+            "
                     >
                       <a
                         class="hover:text-default"
@@ -1192,11 +1797,17 @@ exports[`Home > matches snapshot 1`] = `
           </div>
         </div>
         <p
-          class="w-full bg-footer px-container py-10 text-center font-normal leading-5 text-inverse"
+          class="
+          w-full bg-footer px-container py-10 text-center leading-5 font-normal
+          text-inverse
+        "
         >
           All reviews by Frank Showalter. All images used in accordance with the 
           <a
-            class="text-inherit underline decoration-dashed underline-offset-4 hover:bg-default hover:text-default"
+            class="
+            text-inherit underline decoration-dashed underline-offset-4
+            hover:bg-default hover:text-default
+          "
             href="http://www.copyright.gov/title17/92chap1.html#107"
             rel="nofollow"
           >

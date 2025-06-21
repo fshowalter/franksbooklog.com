@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html class="h-full" lang="en">
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width" name="viewport" />
@@ -54,21 +54,23 @@
       Book Log
     </title>
   </head>
-  <body>
+  <body
+    class="h-full w-full bg-canvas text-default has-[#nav:checked]:fixed has-[#nav:checked]:overflow-y-scroll data-search-modal-open:overflow-hidden data-search-modal-open:before:fixed data-search-modal-open:before:inset-0 data-search-modal-open:before:z-50 data-search-modal-open:before:backdrop-blur-xs"
+  >
     <link
       rel="preload"
       as="image"
       imagesrcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-postman-always-rings-twice-by-james-m-cain.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-postman-always-rings-twice-by-james-m-cain.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;h=744&amp;q=80&amp;f=avif 2x"
     />
-    <div>
+    <div class="group">
       <a
-        class="absolute left-1/2 top-0.5 z-50 mx-auto bg-subtle px-6 py-2 text-center text-accent [transform:translate(-50%,calc(-100%_-_2px))] focus:[transform:translate(-50%,0%)]"
+        class="absolute top-0.5 left-1/2 z-50 mx-auto bg-subtle px-6 py-2 text-center text-accent [transform:translate(-50%,calc(-100%-2px))] focus:[transform:translate(-50%,0%)]"
         href="#content"
         >Skip to content</a
       >
       <div class="flex min-h-full w-full flex-col bg-default">
         <header
-          class="z-20 flex w-full items-center justify-between px-container py-4 tablet:p-6 desktop:inset-x-0 desktop:z-40 desktop:flex-row desktop:flex-wrap desktop:px-16 desktop:py-8 desktop:text-left"
+          class="group z-20 flex w-full items-center justify-between px-container py-4 tablet:p-6 desktop:inset-x-0 desktop:z-40 desktop:flex-row desktop:flex-wrap desktop:px-16 desktop:py-8 desktop:text-left"
           style="
             background-image: unset;
             color: var(--fg-default);
@@ -77,20 +79,18 @@
         >
           <div class="flex flex-col">
             <div
-              class="whitespace-nowrap text-[1.375rem] font-normal leading-8 tablet:text-[1.5625rem]"
+              class="text-[1.375rem] leading-8 font-normal whitespace-nowrap tablet:text-[1.5625rem]"
             >
               <a href="/">Frank&#x27;s Book Log</a>
             </div>
-            <p class="w-full pl-px text-sm italic leading-4 opacity-85">
+            <p class="w-full pl-px text-sm leading-4 italic opacity-85">
               by Frank Showalter
             </p>
           </div>
           <div class="flex items-center">
             <nav class="hidden w-full desktop:block desktop:w-auto">
               <ul class="flex flex-wrap justify-start gap-x-6 text-xl">
-                <li
-                  class="mast-item block whitespace-nowrap tracking-serif-wide"
-                >
+                <li class="block tracking-serif-wide whitespace-nowrap">
                   <a
                     class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                     href="/"
@@ -98,9 +98,7 @@
                     >Home</a
                   >
                 </li>
-                <li
-                  class="mast-item block whitespace-nowrap tracking-serif-wide"
-                >
+                <li class="block tracking-serif-wide whitespace-nowrap">
                   <a
                     class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                     href="/how-i-grade/"
@@ -108,9 +106,7 @@
                     >How I Grade</a
                   >
                 </li>
-                <li
-                  class="mast-item block whitespace-nowrap tracking-serif-wide"
-                >
+                <li class="block tracking-serif-wide whitespace-nowrap">
                   <a
                     class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                     href="/reviews/"
@@ -118,9 +114,7 @@
                     >Reviews</a
                   >
                 </li>
-                <li
-                  class="mast-item block whitespace-nowrap tracking-serif-wide"
-                >
+                <li class="block tracking-serif-wide whitespace-nowrap">
                   <a
                     class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                     href="/authors/"
@@ -128,9 +122,7 @@
                     >Authors</a
                   >
                 </li>
-                <li
-                  class="mast-item block whitespace-nowrap tracking-serif-wide"
-                >
+                <li class="block tracking-serif-wide whitespace-nowrap">
                   <a
                     class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
                     href="/readings/"
@@ -140,7 +132,7 @@
                 </li>
               </ul>
             </nav>
-            <div class="search-button z-[1000]">
+            <div class="z-1000 group-has-[#nav:checked]:!text-[#fff]">
               <button
                 aria-keyshortcuts="Control+K"
                 aria-label="Search"
@@ -166,49 +158,55 @@
                 </svg>
               </button>
             </div>
-            <input class="hidden" id="mobile-nav" type="checkbox" /><label
-              class="hamburger-icon desktop:hidden"
-              for="mobile-nav"
-              ><span
-                class="hamburger-icon-bars"
-                style="background-color: var(--fg-default)"
-              ></span
-            ></label>
-            <ul
-              class="hamburger-menu flex flex-col items-start gap-y-5 text-left text-inverse desktop:hidden"
-            >
-              <li class="block w-1/2 whitespace-nowrap text-2xl">
-                <a href="/">Home</a>
-              </li>
-              <li class="block w-1/2 whitespace-nowrap text-2xl">
-                <a href="/how-i-grade/">How I Grade</a>
-              </li>
-              <li class="block w-1/2 whitespace-nowrap text-2xl">
-                <a href="/reviews/">Reviews</a>
-              </li>
-              <li class="block w-1/2 whitespace-nowrap text-2xl">
-                <a href="/authors/">Authors</a>
-              </li>
-              <li class="block w-1/2 whitespace-nowrap text-2xl">
-                <a href="/readings/">Reading Log</a>
-                <ol class="mt-4">
-                  <li
-                    class="mb-4 ml-1 font-sans text-xs uppercase tracking-wider text-inverse-subtle last:mb-0"
-                  >
-                    <a href="/readings/stats/">Stats</a>
-                  </li>
-                </ol>
-              </li>
-            </ul>
+            <div class="group">
+              <input class="hidden" id="nav" type="checkbox" /><label
+                class="relative z-40 ml-2 flex h-10 w-10 cursor-pointer items-center justify-center desktop:hidden"
+                for="nav"
+                ><span
+                  class="relative block h-0.5 w-6 origin-center transition-[top,bottom,transform] duration-200 ease-in-out group-has-[#nav:checked]:transform-[rotate(45deg)] group-has-[#nav:checked]:!bg-[#fff] group-has-[#nav:checked]:before:top-0 group-has-[#nav:checked]:before:transform-[rotate(90deg)] group-has-[#nav:checked]:after:bottom-0 group-has-[#nav:checked]:after:transform-[rotate(90deg)] before:absolute before:-top-2 before:block before:h-0.5 before:w-6 before:bg-inherit before:transition before:duration-200 before:ease-in-out after:absolute after:-bottom-2 after:block after:h-0.5 after:w-6 after:bg-inherit after:transition after:duration-200 after:ease-in-out"
+                  style="background-color: var(--fg-default)"
+                ></span
+              ></label>
+              <ul
+                class="fixed top-0 right-0 z-20 flex h-full w-0 transform-[translateX(100%)] flex-col items-start gap-y-5 overflow-hidden bg-footer text-left text-inverse opacity-0 duration-200 ease-in-out group-has-[#nav:checked]:bottom-0 group-has-[#nav:checked]:z-20 group-has-[#nav:checked]:h-full group-has-[#nav:checked]:w-full group-has-[#nav:checked]:transform-[translateX(0)] group-has-[#nav:checked]:overflow-y-auto group-has-[#nav:checked]:pt-20 group-has-[#nav:checked]:pr-[16%] group-has-[#nav:checked]:pb-5 group-has-[#nav:checked]:pl-[12%] group-has-[#nav:checked]:opacity-100 group-has-[#nav:checked]:tablet:px-10 group-has-[#nav:checked]:tablet:py-40 tablet:max-w-[35vw] desktop:hidden"
+              >
+                <li class="block w-1/2 text-2xl whitespace-nowrap">
+                  <a href="/">Home</a>
+                </li>
+                <li class="block w-1/2 text-2xl whitespace-nowrap">
+                  <a href="/how-i-grade/">How I Grade</a>
+                </li>
+                <li class="block w-1/2 text-2xl whitespace-nowrap">
+                  <a href="/reviews/">Reviews</a>
+                </li>
+                <li class="block w-1/2 text-2xl whitespace-nowrap">
+                  <a href="/authors/">Authors</a>
+                </li>
+                <li class="block w-1/2 text-2xl whitespace-nowrap">
+                  <a href="/readings/">Reading Log</a>
+                  <ol class="mt-4">
+                    <li
+                      class="mb-4 ml-1 font-sans text-xs tracking-wider text-inverse-subtle uppercase last:mb-0"
+                    >
+                      <a href="/readings/stats/">Stats</a>
+                    </li>
+                  </ol>
+                </li>
+              </ul>
+            </div>
           </div>
         </header>
-        <main class="grow flex flex-col" id="content" data-pagefind-body="true">
+        <main
+          class="grow transition-[opacity] duration-200 ease-in-out group-has-[#nav:checked]:opacity-80 flex flex-col"
+          id="content"
+          data-pagefind-body="true"
+        >
           <header
-            class="relative z-[1] mb-12 flex flex-col items-center px-[8%] pt-10"
+            class="relative z-1 mb-12 flex flex-col items-center px-[8%] pt-10"
           >
             <nav class="pb-3">
               <a
-                class="font-sans text-xs uppercase tracking-wider text-accent"
+                class="font-sans text-xs tracking-wider text-accent uppercase"
                 href="/reviews/"
                 >Reviews</a
               >
@@ -238,7 +236,7 @@
               /></picture>
             </div>
             <div
-              class="mb-4 mt-5 font-sans text-xs font-light uppercase tracking-wide text-subtle tablet:mb-6"
+              class="mt-5 mb-4 font-sans text-xs font-light tracking-wide text-subtle uppercase tablet:mb-6"
             >
               <span class="tracking-wide">1934</span> |
               <!-- -->Novel
@@ -247,9 +245,9 @@
               class="relative my-12 flex h-[340px] w-full max-w-popout flex-col items-center"
               data-pagefind-meta="image:/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-postman-always-rings-twice-by-james-m-cain.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
             >
-              <div class="cover-clip-path absolute inset-0 overflow-hidden">
+              <div class="absolute inset-0 overflow-hidden clip-path-cover">
                 <div
-                  class="absolute left-[-5%] top-[-5%] size-[110%] bg-default bg-cover bg-center"
+                  class="absolute top-[-5%] left-[-5%] size-[110%] bg-default bg-cover bg-center"
                   style="
                     background-color: var(--bg-default);
                     background-image:
@@ -286,7 +284,7 @@
               </div>
             </div>
             <div
-              class="relative mt-4 bg-default px-[1ch] font-sans text-xs uppercase tracking-wide text-subtle after:absolute after:left-[-11%] after:top-1/2 after:-z-10 after:w-[122%] after:border-t after:border-[var(--fg-subtle)] tablet:mt-6"
+              class="relative mt-4 bg-default px-[1ch] font-sans text-xs tracking-wide text-subtle uppercase after:absolute after:top-1/2 after:left-[-11%] after:-z-10 after:w-[122%] after:border-t after:border-(--fg-subtle) tablet:mt-6"
             >
               Reviewed
               <!-- -->Jul 24, 2022
@@ -296,7 +294,7 @@
             class="flex flex-col items-center gap-16 px-container pb-20 desktop:gap-20 desktop:pb-32"
           >
             <div
-              class="rendered-markdown tracking-0.3px text-md/7 tablet:text-xl/8 max-w-prose first-letter:leading-[.8] first-letter:text-default tablet:first-letter:pr-3 desktop:first-letter:text-[64px] [&amp;&gt;p:first-child]:first-letter:float-left [&amp;&gt;p:first-child]:first-letter:mt-[6px] [&amp;&gt;p:first-child]:first-letter:pr-2 [&amp;&gt;p:first-child]:first-letter:font-sans [&amp;&gt;p:first-child]:first-letter:text-[56px] [&amp;&gt;p:first-child]:first-letter:font-bold"
+              class="rendered-markdown text-md/7 tracking-[0.3px] tablet:text-xl/8 max-w-prose first-letter:leading-[.8] first-letter:text-default tablet:first-letter:pr-3 desktop:first-letter:text-[64px] [&amp;&gt;p:first-child]:first-letter:float-left [&amp;&gt;p:first-child]:first-letter:mt-[6px] [&amp;&gt;p:first-child]:first-letter:pr-2 [&amp;&gt;p:first-child]:first-letter:font-sans [&amp;&gt;p:first-child]:first-letter:text-[56px] [&amp;&gt;p:first-child]:first-letter:font-bold"
             >
               <p>
                 Aside from the characters saying “suspicions” instead of
@@ -404,7 +402,7 @@
             </div>
             <div class="w-full max-w-popout">
               <h2
-                class="py-10 font-sans text-xs font-semibold uppercase tracking-wide text-subtle text-center shadow-bottom"
+                class="py-10 font-sans text-xs font-semibold tracking-wide text-subtle uppercase text-center shadow-bottom"
               >
                 Reading History
               </h2>
@@ -446,16 +444,16 @@
                             Days</span
                           >
                         </summary>
-                        <ol class="grid w-full grid-cols-[auto,1fr,auto] pt-3">
+                        <ol class="grid w-full grid-cols-[auto_1fr_auto] pt-3">
                           <li
-                            class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr,auto,auto,1fr] py-1"
+                            class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] py-1"
                           >
                             <div
                               class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-xs"
                             >
                               <div class="">18 Jul 2022</div>
                               <div
-                                class="col-start-3 self-center text-nowrap pb-1 text-right font-sans text-xs"
+                                class="col-start-3 self-center pb-1 text-right font-sans text-xs text-nowrap"
                               >
                                 <div class="">13%</div>
                               </div>
@@ -464,7 +462,7 @@
                               class="col-span-2 col-start-2 row-start-3 bg-stripe"
                             >
                               <div
-                                class="progress-bar-bg leading-[6px] tablet:mb-0"
+                                class="bg-progress-bar leading-[6px] tablet:mb-0"
                                 style="--bar-percent: 13%"
                               >
                                  
@@ -472,14 +470,14 @@
                             </div>
                           </li>
                           <li
-                            class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr,auto,auto,1fr] py-1"
+                            class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] py-1"
                           >
                             <div
                               class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-xs"
                             >
                               <div class="">19 Jul 2022</div>
                               <div
-                                class="col-start-3 self-center text-nowrap pb-1 text-right font-sans text-xs"
+                                class="col-start-3 self-center pb-1 text-right font-sans text-xs text-nowrap"
                               >
                                 <div class="">19%</div>
                               </div>
@@ -488,7 +486,7 @@
                               class="col-span-2 col-start-2 row-start-3 bg-stripe"
                             >
                               <div
-                                class="progress-bar-bg leading-[6px] tablet:mb-0"
+                                class="bg-progress-bar leading-[6px] tablet:mb-0"
                                 style="--bar-percent: 19%"
                               >
                                  
@@ -496,14 +494,14 @@
                             </div>
                           </li>
                           <li
-                            class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr,auto,auto,1fr] py-1"
+                            class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] py-1"
                           >
                             <div
                               class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-xs"
                             >
                               <div class="">22 Jul 2022</div>
                               <div
-                                class="col-start-3 self-center text-nowrap pb-1 text-right font-sans text-xs"
+                                class="col-start-3 self-center pb-1 text-right font-sans text-xs text-nowrap"
                               >
                                 <div class="">31%</div>
                               </div>
@@ -512,7 +510,7 @@
                               class="col-span-2 col-start-2 row-start-3 bg-stripe"
                             >
                               <div
-                                class="progress-bar-bg leading-[6px] tablet:mb-0"
+                                class="bg-progress-bar leading-[6px] tablet:mb-0"
                                 style="--bar-percent: 31%"
                               >
                                  
@@ -520,14 +518,14 @@
                             </div>
                           </li>
                           <li
-                            class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr,auto,auto,1fr] py-1"
+                            class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] py-1"
                           >
                             <div
                               class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-xs"
                             >
                               <div class="">23 Jul 2022</div>
                               <div
-                                class="col-start-3 self-center text-nowrap pb-1 text-right font-sans text-xs"
+                                class="col-start-3 self-center pb-1 text-right font-sans text-xs text-nowrap"
                               >
                                 <div class="">80%</div>
                               </div>
@@ -536,7 +534,7 @@
                               class="col-span-2 col-start-2 row-start-3 bg-stripe"
                             >
                               <div
-                                class="progress-bar-bg leading-[6px] tablet:mb-0"
+                                class="bg-progress-bar leading-[6px] tablet:mb-0"
                                 style="--bar-percent: 80%"
                               >
                                  
@@ -544,14 +542,14 @@
                             </div>
                           </li>
                           <li
-                            class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr,auto,auto,1fr] py-1"
+                            class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] py-1"
                           >
                             <div
                               class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-xs"
                             >
                               <div class="">24 Jul 2022</div>
                               <div
-                                class="col-start-3 self-center text-nowrap pb-1 text-right font-sans text-xs"
+                                class="col-start-3 self-center pb-1 text-right font-sans text-xs text-nowrap"
                               >
                                 <div class="">Finished</div>
                               </div>
@@ -560,7 +558,7 @@
                               class="col-span-2 col-start-2 row-start-3 bg-stripe"
                             >
                               <div
-                                class="progress-bar-bg leading-[6px] tablet:mb-0"
+                                class="bg-progress-bar leading-[6px] tablet:mb-0"
                                 style="--bar-percent: 100%"
                               >
                                  
@@ -577,16 +575,16 @@
             </div>
           </div>
           <div
-            class="flex w-full flex-col items-center gap-y-12 bg-subtle pb-32 pt-16 tablet:pt-8 desktop:gap-y-24"
+            class="flex w-full flex-col items-center gap-y-12 bg-subtle pt-16 pb-32 tablet:pt-8 desktop:gap-y-24"
             data-pagefind-ignore="true"
           >
             <nav
-              class="mx-auto w-full max-w-screen-max bg-subtle tablet:max-w-popout desktop:max-w-screen-max desktop:px-container"
+              class="mx-auto w-full max-w-(--breakpoint-max) bg-subtle tablet:max-w-popout desktop:max-w-(--breakpoint-max) desktop:px-container"
               data-page-find-ignore="true"
             >
               <div class="px-container tablet:px-0">
                 <h2
-                  class="py-10 font-sans text-xs font-semibold uppercase tracking-wide text-subtle"
+                  class="py-10 font-sans text-xs font-semibold tracking-wide text-subtle uppercase"
                 >
                   More<!-- -->
                   <a class="text-accent" href="/reviews/">Reviews</a>
@@ -615,20 +613,20 @@
                     style="aspect-ratio: 0.66666667"
                   />
                   <div
-                    class="flex w-full grow flex-col px-[8%] pb-8 desktop:pl-[8.5%] desktop:pr-[10%]"
+                    class="flex w-full grow flex-col px-[8%] pb-8 desktop:pr-[10%] desktop:pl-[8.5%]"
                   >
                     <div
-                      class="pt-4 font-sans text-sm font-medium tablet:pt-5 tablet:font-serif tablet:text-md tablet:leading-5 max:text-xl max:leading-6"
+                      class="pt-4 font-sans text-sm font-medium max:text-xl max:leading-6 tablet:pt-5 tablet:font-serif tablet:text-md tablet:leading-5"
                     >
                       <a
-                        class="inline-block before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0"
+                        class="inline-block before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:z-10 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0"
                         href="/reviews/on-writing-by-stephen-king/"
                         rel="canonical"
                         >On Writing</a
                       >
                     </div>
                     <p
-                      class="pt-1 font-sans text-xs font-light leading-4 text-subtle tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5"
+                      class="pt-1 font-sans text-xs leading-4 font-light text-subtle tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5"
                     >
                       by<!-- -->
                       <span class="font-normal text-default">Stephen King</span>
@@ -645,7 +643,7 @@
                         width="90"
                     /></picture>
                     <div
-                      class="mt-auto pt-6 font-sans text-xxs font-light leading-4 tracking-wide text-subtle"
+                      class="mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide text-subtle"
                     >
                       Nonfiction<!-- -->
                       |
@@ -673,20 +671,20 @@
                     style="aspect-ratio: 0.66666667"
                   />
                   <div
-                    class="flex w-full grow flex-col px-[8%] pb-8 desktop:pl-[8.5%] desktop:pr-[10%]"
+                    class="flex w-full grow flex-col px-[8%] pb-8 desktop:pr-[10%] desktop:pl-[8.5%]"
                   >
                     <div
-                      class="pt-4 font-sans text-sm font-medium tablet:pt-5 tablet:font-serif tablet:text-md tablet:leading-5 max:text-xl max:leading-6"
+                      class="pt-4 font-sans text-sm font-medium max:text-xl max:leading-6 tablet:pt-5 tablet:font-serif tablet:text-md tablet:leading-5"
                     >
                       <a
-                        class="inline-block before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0"
+                        class="inline-block before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:z-10 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0"
                         href="/reviews/out-are-the-lights-by-richard-laymon/"
                         rel="canonical"
                         >Out Are the Lights</a
                       >
                     </div>
                     <p
-                      class="pt-1 font-sans text-xs font-light leading-4 text-subtle tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5"
+                      class="pt-1 font-sans text-xs leading-4 font-light text-subtle tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5"
                     >
                       by<!-- -->
                       <span class="font-normal text-default"
@@ -705,7 +703,7 @@
                         width="90"
                     /></picture>
                     <div
-                      class="mt-auto pt-6 font-sans text-xxs font-light leading-4 tracking-wide text-subtle"
+                      class="mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide text-subtle"
                     >
                       Novel<!-- -->
                       |
@@ -733,20 +731,20 @@
                     style="aspect-ratio: 0.66666667"
                   />
                   <div
-                    class="flex w-full grow flex-col px-[8%] pb-8 desktop:pl-[8.5%] desktop:pr-[10%]"
+                    class="flex w-full grow flex-col px-[8%] pb-8 desktop:pr-[10%] desktop:pl-[8.5%]"
                   >
                     <div
-                      class="pt-4 font-sans text-sm font-medium tablet:pt-5 tablet:font-serif tablet:text-md tablet:leading-5 max:text-xl max:leading-6"
+                      class="pt-4 font-sans text-sm font-medium max:text-xl max:leading-6 tablet:pt-5 tablet:font-serif tablet:text-md tablet:leading-5"
                     >
                       <a
-                        class="inline-block before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0"
+                        class="inline-block before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:z-10 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0"
                         href="/reviews/peter-cushing-by-david-miller/"
                         rel="canonical"
                         >Peter Cushing</a
                       >
                     </div>
                     <p
-                      class="pt-1 font-sans text-xs font-light leading-4 text-subtle tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5"
+                      class="pt-1 font-sans text-xs leading-4 font-light text-subtle tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5"
                     >
                       by<!-- -->
                       <span class="font-normal text-default">David Miller</span>
@@ -763,7 +761,7 @@
                         width="90"
                     /></picture>
                     <div
-                      class="mt-auto pt-6 font-sans text-xxs font-light leading-4 tracking-wide text-subtle"
+                      class="mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide text-subtle"
                     >
                       Nonfiction<!-- -->
                       |
@@ -791,20 +789,20 @@
                     style="aspect-ratio: 0.66666667"
                   />
                   <div
-                    class="flex w-full grow flex-col px-[8%] pb-8 desktop:pl-[8.5%] desktop:pr-[10%]"
+                    class="flex w-full grow flex-col px-[8%] pb-8 desktop:pr-[10%] desktop:pl-[8.5%]"
                   >
                     <div
-                      class="pt-4 font-sans text-sm font-medium tablet:pt-5 tablet:font-serif tablet:text-md tablet:leading-5 max:text-xl max:leading-6"
+                      class="pt-4 font-sans text-sm font-medium max:text-xl max:leading-6 tablet:pt-5 tablet:font-serif tablet:text-md tablet:leading-5"
                     >
                       <a
-                        class="inline-block before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0"
+                        class="inline-block before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:z-10 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0"
                         href="/reviews/rage-by-stephen-king/"
                         rel="canonical"
                         >Rage</a
                       >
                     </div>
                     <p
-                      class="pt-1 font-sans text-xs font-light leading-4 text-subtle tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5"
+                      class="pt-1 font-sans text-xs leading-4 font-light text-subtle tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5"
                     >
                       by<!-- -->
                       <span class="font-normal text-default"
@@ -825,7 +823,7 @@
                         width="90"
                     /></picture>
                     <div
-                      class="mt-auto pt-6 font-sans text-xxs font-light leading-4 tracking-wide text-subtle"
+                      class="mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide text-subtle"
                     >
                       Novel<!-- -->
                       |
@@ -853,20 +851,20 @@
                     style="aspect-ratio: 0.66666667"
                   />
                   <div
-                    class="flex w-full grow flex-col px-[8%] pb-8 desktop:pl-[8.5%] desktop:pr-[10%]"
+                    class="flex w-full grow flex-col px-[8%] pb-8 desktop:pr-[10%] desktop:pl-[8.5%]"
                   >
                     <div
-                      class="pt-4 font-sans text-sm font-medium tablet:pt-5 tablet:font-serif tablet:text-md tablet:leading-5 max:text-xl max:leading-6"
+                      class="pt-4 font-sans text-sm font-medium max:text-xl max:leading-6 tablet:pt-5 tablet:font-serif tablet:text-md tablet:leading-5"
                     >
                       <a
-                        class="inline-block before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0"
+                        class="inline-block before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:z-10 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0"
                         href="/reviews/recessional-by-david-mamet/"
                         rel="canonical"
                         >Recessional</a
                       >
                     </div>
                     <p
-                      class="pt-1 font-sans text-xs font-light leading-4 text-subtle tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5"
+                      class="pt-1 font-sans text-xs leading-4 font-light text-subtle tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5"
                     >
                       by<!-- -->
                       <span class="font-normal text-default">David Mamet</span>
@@ -883,7 +881,7 @@
                         width="90"
                     /></picture>
                     <div
-                      class="mt-auto pt-6 font-sans text-xxs font-light leading-4 tracking-wide text-subtle"
+                      class="mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide text-subtle"
                     >
                       Nonfiction<!-- -->
                       |
@@ -911,20 +909,20 @@
                     style="aspect-ratio: 0.66666667"
                   />
                   <div
-                    class="flex w-full grow flex-col px-[8%] pb-8 desktop:pl-[8.5%] desktop:pr-[10%]"
+                    class="flex w-full grow flex-col px-[8%] pb-8 desktop:pr-[10%] desktop:pl-[8.5%]"
                   >
                     <div
-                      class="pt-4 font-sans text-sm font-medium tablet:pt-5 tablet:font-serif tablet:text-md tablet:leading-5 max:text-xl max:leading-6"
+                      class="pt-4 font-sans text-sm font-medium max:text-xl max:leading-6 tablet:pt-5 tablet:font-serif tablet:text-md tablet:leading-5"
                     >
                       <a
-                        class="inline-block before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:z-10 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0"
+                        class="inline-block before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:z-10 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0"
                         href="/reviews/record-play-pause-by-stephen-morris/"
                         rel="canonical"
                         >Record Play Pause</a
                       >
                     </div>
                     <p
-                      class="pt-1 font-sans text-xs font-light leading-4 text-subtle tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5"
+                      class="pt-1 font-sans text-xs leading-4 font-light text-subtle tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5"
                     >
                       by<!-- -->
                       <span class="font-normal text-default"
@@ -943,7 +941,7 @@
                         width="90"
                     /></picture>
                     <div
-                      class="mt-auto pt-6 font-sans text-xxs font-light leading-4 tracking-wide text-subtle"
+                      class="mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide text-subtle"
                     >
                       Nonfiction<!-- -->
                       |
@@ -969,62 +967,81 @@
           </script>
         </main>
         <footer class="bg-canvas">
-          <div class="mx-auto max-w-screen-desktop px-container py-20">
+          <div class="mx-auto max-w-(--breakpoint-desktop) px-container py-20">
             <div
               class="flex w-full flex-col tablet:flex-row-reverse tablet:justify-between"
             >
               <a
-                class="mx-auto mb-8 w-full max-w-button bg-footer py-5 text-center font-sans text-xs uppercase tracking-wide text-inverse hover:bg-subtle hover:text-default tablet:mx-0"
+                class="mx-auto mb-8 w-full max-w-button bg-footer py-5 text-center font-sans text-xs tracking-wide text-inverse uppercase hover:bg-subtle hover:text-default tablet:mx-0"
                 href="#top"
                 >To the top</a
               >
               <div class="flex flex-col">
                 <div
-                  class="whitespace-nowrap text-[1.375rem] font-normal leading-8 tablet:text-[1.5625rem]"
+                  class="text-[1.375rem] leading-8 font-normal whitespace-nowrap tablet:text-[1.5625rem]"
                 >
                   <a href="/">Frank&#x27;s Book Log</a>
                 </div>
-                <p class="w-full pl-px text-sm italic leading-4 opacity-85">
+                <p class="w-full pl-px text-sm leading-4 italic opacity-85">
                   by Frank Showalter
                 </p>
               </div>
             </div>
             <div class="justify-between tablet:flex">
               <div class="flex max-w-prose flex-col pb-12 tablet:pr-32">
-                <div
-                  class="footer-text pt-10 font-sans text-base font-light text-subtle"
-                >
-                  <p>
+                <div class="pt-10 font-sans text-base font-light text-subtle">
+                  <p class="mb-6 text-pretty">
                     Hi there, I&#x27;m Frank, a husband and father old enough to
                     have read Stephen King&#x27;s <em>The Dark Half</em> during
                     its first printing.
                   </p>
-                  <p>
+                  <p class="mb-6 text-pretty">
                     This site began in 2012, when I realized I&#x27;d
                     accumulated more books than I could ever hope to finish.
                     Worse still, I had books I thought I&#x27;d read but
                     couldn&#x27;t remember. Clearly, I needed a system.
                   </p>
-                  <p>
+                  <p class="mb-6 text-pretty">
                     What started on Goodreads evolved into this little corner of
                     the internet where I share my thoughts on what I&#x27;ve
                     read.
                   </p>
-                  <p>
+                  <p class="mb-6 text-pretty">
                     New visitors might want to start by reading about<!-- -->
-                    <a href="/how-i-grade/">how I grade</a>. After that, feel
-                    free to browse my <a href="/reviews/">reviews</a>, which are
-                    also indexed <a href="/authors/">by author</a>.
+                    <a
+                      class="text-default underline decoration-subtle decoration-dashed underline-offset-4 transition-all duration-150 ease-out hover:bg-(--fg-inverse) hover:text-default hover:decoration-default hover:duration-75 hover:ease-in"
+                      href="/how-i-grade/"
+                      >how I grade</a
+                    >. After that, feel free to browse my<!-- -->
+                    <a
+                      class="text-default underline decoration-subtle decoration-dashed underline-offset-4 transition-all duration-150 ease-out hover:bg-(--fg-inverse) hover:text-default hover:decoration-default hover:duration-75 hover:ease-in"
+                      href="/reviews/"
+                      >reviews</a
+                    >, which are also indexed
+                    <a
+                      class="text-default underline decoration-subtle decoration-dashed underline-offset-4 transition-all duration-150 ease-out hover:bg-(--fg-inverse) hover:text-default hover:decoration-default hover:duration-75 hover:ease-in"
+                      href="/authors/"
+                      >by author</a
+                    >.
                   </p>
-                  <p>
-                    I also keep a <a href="/readings/">reading log</a> that
-                    tracks everything I read, whether it gets a full review or
-                    not, complete with <a href="/readings/stats/">stats</a>. In
-                    an age of endless content, sometimes the act of remembering
-                    what we&#x27;ve read becomes as important as the reading
-                    itself.
+                  <p class="mb-6 text-pretty">
+                    I also keep a<!-- -->
+                    <a
+                      class="text-default underline decoration-subtle decoration-dashed underline-offset-4 transition-all duration-150 ease-out hover:bg-(--fg-inverse) hover:text-default hover:decoration-default hover:duration-75 hover:ease-in"
+                      href="/readings/"
+                      >reading log</a
+                    >
+                    that tracks everything I read, whether it gets a full review
+                    or not, complete with<!-- -->
+                    <a
+                      class="text-default underline decoration-subtle decoration-dashed underline-offset-4 transition-all duration-150 ease-out hover:bg-(--fg-inverse) hover:text-default hover:decoration-default hover:duration-75 hover:ease-in"
+                      href="/readings/stats/"
+                      >stats</a
+                    >. In an age of endless content, sometimes the act of
+                    remembering what we&#x27;ve read becomes as important as the
+                    reading itself.
                   </p>
-                  <p>
+                  <p class="text-pretty">
                     In an era of algorithmic recommendations and corporate
                     marketing machines, consider this site a human
                     alternative—one person&#x27;s attempt to catalog his
@@ -1034,30 +1051,30 @@
                 </div>
               </div>
               <div
-                class="flex grow-0 flex-col gap-20 pb-20 pt-10 tablet:basis-[430px] tablet:pr-10"
+                class="flex grow-0 flex-col gap-20 pt-10 pb-20 tablet:basis-button tablet:pr-10"
               >
                 <ul class="flex w-full flex-col gap-y-10 max:w-auto">
-                  <li class="block w-1/2 whitespace-nowrap text-2xl">
+                  <li class="block w-1/2 text-2xl whitespace-nowrap">
                     <a class="hover:text-accent" href="/">Home</a>
                   </li>
-                  <li class="block w-1/2 whitespace-nowrap text-2xl">
+                  <li class="block w-1/2 text-2xl whitespace-nowrap">
                     <a class="hover:text-accent" href="/how-i-grade/"
                       >How I Grade</a
                     >
                   </li>
-                  <li class="block w-1/2 whitespace-nowrap text-2xl">
+                  <li class="block w-1/2 text-2xl whitespace-nowrap">
                     <a class="hover:text-accent" href="/reviews/">Reviews</a>
                   </li>
-                  <li class="block w-1/2 whitespace-nowrap text-2xl">
+                  <li class="block w-1/2 text-2xl whitespace-nowrap">
                     <a class="hover:text-accent" href="/authors/">Authors</a>
                   </li>
-                  <li class="block w-1/2 whitespace-nowrap text-2xl">
+                  <li class="block w-1/2 text-2xl whitespace-nowrap">
                     <a class="hover:text-accent" href="/readings/"
                       >Reading Log</a
                     >
                     <ol class="mt-4">
                       <li
-                        class="mb-4 ml-1 font-sans text-xs uppercase tracking-wide text-subtle last:mb-0"
+                        class="mb-4 ml-1 font-sans text-xs tracking-wide text-subtle uppercase last:mb-0"
                       >
                         <a class="hover:text-default" href="/readings/stats/"
                           >Stats</a
@@ -1070,7 +1087,7 @@
             </div>
           </div>
           <p
-            class="w-full bg-footer px-container py-10 text-center font-normal leading-5 text-inverse"
+            class="w-full bg-footer px-container py-10 text-center leading-5 font-normal text-inverse"
           >
             All reviews by Frank Showalter. All images used in accordance with
             the<!-- -->
@@ -1086,18 +1103,18 @@
     </div>
     <dialog
       aria-label="Search"
-      class="fixed inset-x-4 h-screen w-full rounded-lg border border-default bg-default shadow-lg backdrop:bg-[#000] backdrop:opacity-40 open:flex open:flex-col tablet:mx-auto tablet:mt-16 tablet:h-min tablet:max-h-[min(100vh_-_128px,900px)] tablet:min-h-60 tablet:max-w-[min(100vw_-_64px,36rem)] tablet:rounded-xl desktop:min-h-0"
+      class="fixed inset-x-4 m-auto h-screen w-full rounded-lg border border-default bg-default shadow-lg backdrop:bg-[#000] backdrop:opacity-40 open:flex open:flex-col tablet:mx-auto tablet:mt-16 tablet:h-min tablet:max-h-[min(100vh-128px,900px)] tablet:min-h-60 tablet:max-w-[min(100vw-64px,36rem)] tablet:rounded-xl desktop:min-h-0"
     >
       <div class="contents" data-dialog-frame>
         <button
-          class="px-2 font-mono text-xs font-light hover:bg-inverse hover:text-inverse focus:outline-accent"
+          class="absolute right-[var(--search-dialog-padding)] z-10 mt-5 h-[calc(24px_*_var(---pagefind-ui-scale))] cursor-pointer border-none bg-subtle px-2 font-mono text-xs font-light text-muted hover:bg-inverse hover:text-inverse focus:outline-accent"
           data-close-modal
         >
           ESC
         </button>
         <div class="contents"><div id="pagefind__search"></div></div>
         <div
-          class="hidden px-[var(--search-dialog-padding)] py-4 font-sans text-xs font-light tracking-wide text-subtle desktop:block"
+          class="hidden px-(--search-dialog-padding) py-4 font-sans text-xs font-light tracking-wide text-subtle desktop:block"
         >
           <kbd class="rounded-md bg-default p-2 font-mono text-xs text-subtle"
             >Tab</kbd
@@ -1111,16 +1128,6 @@
         </div>
       </div>
     </dialog>
-    <script>
-      (() => {
-        const openBtn = document.querySelector("button[data-open-modal]");
-        if (!openBtn) return;
-        if (/(Mac|iPhone|iPod|iPad)/i.test(navigator.platform)) {
-          openBtn.setAttribute("aria-keyshortcuts", "Meta+K");
-          openBtn.setAttribute("title", `Search: ⌘K`);
-        }
-      })();
-    </script>
     <script
       type="module"
       src="/src/layouts/Layout.astro?astro&type=script&index=0&lang.ts"

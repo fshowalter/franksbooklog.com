@@ -1,10 +1,14 @@
 import eslint from "@eslint/js";
 import vitest from "@vitest/eslint-plugin";
 import eslintPluginAstro from "eslint-plugin-astro";
+import eslintPluginBetterTailwindcss from "eslint-plugin-better-tailwindcss";
+import {
+  getDefaultAttributes,
+  getDefaultCallees,
+} from "eslint-plugin-better-tailwindcss/api/defaults";
 import perfectionist from "eslint-plugin-perfectionist";
 import react from "eslint-plugin-react";
 import reactCompiler from "eslint-plugin-react-compiler";
-import tailwind from "eslint-plugin-tailwindcss";
 import eslintPluginUnicorn from "eslint-plugin-unicorn";
 import globals from "globals";
 import tsEslint from "typescript-eslint";
@@ -60,19 +64,46 @@ export default tsEslint.config(
     },
   },
   {
-    extends: [...tailwind.configs["flat/recommended"]],
     files: ["**/*.astro"],
+    plugins: {
+      "better-tailwindcss": eslintPluginBetterTailwindcss,
+    },
+    rules: {
+      ...eslintPluginBetterTailwindcss.configs["recommended-error"].rules,
+      "better-tailwindcss/no-conflicting-classes": "error",
+    },
+    settings: {
+      "better-tailwindcss": {
+        entryPoint: "src/layouts/tailwind.css",
+      },
+    },
   },
+
   {
-    extends: [...tailwind.configs["flat/recommended"]],
     files: ["**/*.tsx"],
-    plugins: { react, "react-compiler": reactCompiler },
+    plugins: {
+      "better-tailwindcss": eslintPluginBetterTailwindcss,
+      react,
+      "react-compiler": reactCompiler,
+    },
     rules: {
       ...react.configs.recommended.rules,
       "react-compiler/react-compiler": "error",
       "react/react-in-jsx-scope": "off",
+      ...eslintPluginBetterTailwindcss.configs["recommended-error"].rules,
+      "better-tailwindcss/enforce-consistent-variable-syntax": "error",
+      "better-tailwindcss/no-conflicting-classes": "error",
+      "better-tailwindcss/no-unregistered-classes": [
+        "error",
+        { detectComponentClasses: true },
+      ],
     },
     settings: {
+      "better-tailwindcss": {
+        attributes: [...getDefaultAttributes(), ".*Classes"],
+        callees: [...getDefaultCallees(), "ccn"],
+        entryPoint: "src/layouts/tailwind.css",
+      },
       react: {
         version: "detect",
       },

@@ -1,10 +1,6 @@
 {
   "$schema": "https://unpkg.com/knip@5/schema.json",
-  "entry": ["src/pages/**/*.astro"],
+  "entry": ["src/**/*.astro", "src/layouts/pageFind.ts"],
   "project": ["**/*", "!src/**/__mocks__/**"],
-  "ignoreDependencies": [
-    "@prettier/plugin-xml",
-    "@vitest/coverage-v8",
-    "babel-plugin-react-compiler"
-  ]
+  "ignoreDependencies": ["@prettier/plugin-xml", "babel-plugin-react-compiler"]
 }

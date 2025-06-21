@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html class="h-full" lang="en">
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width" name="viewport" />
@@ -33,7 +33,9 @@
     <meta content="website" property="og:type" />
     <title>Authors - Frank&#39;s Book Log</title>
   </head>
-  <body>
+  <body
+    class="h-full w-full bg-canvas text-default has-[#nav:checked]:fixed has-[#nav:checked]:overflow-y-scroll data-search-modal-open:overflow-hidden data-search-modal-open:before:fixed data-search-modal-open:before:inset-0 data-search-modal-open:before:z-50 data-search-modal-open:before:backdrop-blur-xs"
+  >
     <style>
       astro-island,
       astro-slot,
@@ -237,7 +239,7 @@
       })();
     </script>
     <astro-island
-      uid="ZFFB3f"
+      uid="Z1QTGUM"
       prefix="r1"
       component-url="~/components/Authors/Authors"
       component-export="Authors"
@@ -255,15 +257,15 @@
         imagesizes="100vw"
         fetchpriority="high"
       />
-      <div>
+      <div class="group">
         <a
-          class="absolute left-1/2 top-0.5 z-50 mx-auto bg-subtle px-6 py-2 text-center text-accent [transform:translate(-50%,calc(-100%_-_2px))] focus:[transform:translate(-50%,0%)]"
+          class="absolute top-0.5 left-1/2 z-50 mx-auto bg-subtle px-6 py-2 text-center text-accent [transform:translate(-50%,calc(-100%-2px))] focus:[transform:translate(-50%,0%)]"
           href="#content"
           >Skip to content</a
         >
         <div class="flex min-h-full w-full flex-col bg-default">
           <header
-            class="z-20 flex w-full items-center justify-between px-container py-4 tablet:p-6 desktop:inset-x-0 desktop:z-40 desktop:flex-row desktop:flex-wrap desktop:px-16 desktop:py-8 desktop:text-left"
+            class="group z-20 flex w-full items-center justify-between px-container py-4 tablet:p-6 desktop:inset-x-0 desktop:z-40 desktop:flex-row desktop:flex-wrap desktop:px-16 desktop:py-8 desktop:text-left"
             style="
               background-image: linear-gradient(
                 to bottom,
@@ -276,20 +278,18 @@
           >
             <div class="flex flex-col">
               <div
-                class="whitespace-nowrap text-[1.375rem] font-normal leading-8 tablet:text-[1.5625rem]"
+                class="text-[1.375rem] leading-8 font-normal whitespace-nowrap tablet:text-[1.5625rem]"
               >
                 <a href="/">Frank&#x27;s Book Log</a>
               </div>
-              <p class="w-full pl-px text-sm italic leading-4 opacity-85">
+              <p class="w-full pl-px text-sm leading-4 italic opacity-85">
                 by Frank Showalter
               </p>
             </div>
             <div class="flex items-center">
               <nav class="hidden w-full desktop:block desktop:w-auto">
                 <ul class="flex flex-wrap justify-start gap-x-6 text-xl">
-                  <li
-                    class="mast-item block whitespace-nowrap tracking-serif-wide"
-                  >
+                  <li class="block tracking-serif-wide whitespace-nowrap">
                     <a
                       class="text-inherit transition-all duration-500 ease-in-out hover:bg-[rgba(0,0,0,.50)]"
                       href="/"
@@ -297,9 +297,7 @@
                       >Home</a
                     >
                   </li>
-                  <li
-                    class="mast-item block whitespace-nowrap tracking-serif-wide"
-                  >
+                  <li class="block tracking-serif-wide whitespace-nowrap">
                     <a
                       class="text-inherit transition-all duration-500 ease-in-out hover:bg-[rgba(0,0,0,.50)]"
                       href="/how-i-grade/"
@@ -307,9 +305,7 @@
                       >How I Grade</a
                     >
                   </li>
-                  <li
-                    class="mast-item block whitespace-nowrap tracking-serif-wide"
-                  >
+                  <li class="block tracking-serif-wide whitespace-nowrap">
                     <a
                       class="text-inherit transition-all duration-500 ease-in-out hover:bg-[rgba(0,0,0,.50)]"
                       href="/reviews/"
@@ -317,9 +313,7 @@
                       >Reviews</a
                     >
                   </li>
-                  <li
-                    class="mast-item block whitespace-nowrap tracking-serif-wide"
-                  >
+                  <li class="block tracking-serif-wide whitespace-nowrap">
                     <a
                       class="text-inherit transition-all duration-500 ease-in-out hover:bg-[rgba(0,0,0,.50)]"
                       href="/authors/"
@@ -327,9 +321,7 @@
                       >Authors</a
                     >
                   </li>
-                  <li
-                    class="mast-item block whitespace-nowrap tracking-serif-wide"
-                  >
+                  <li class="block tracking-serif-wide whitespace-nowrap">
                     <a
                       class="text-inherit transition-all duration-500 ease-in-out hover:bg-[rgba(0,0,0,.50)]"
                       href="/readings/"
@@ -339,7 +331,7 @@
                   </li>
                 </ul>
               </nav>
-              <div class="search-button z-[1000]">
+              <div class="z-1000 group-has-[#nav:checked]:!text-[#fff]">
                 <button
                   aria-keyshortcuts="Control+K"
                   aria-label="Search"
@@ -365,45 +357,50 @@
                   </svg>
                 </button>
               </div>
-              <input class="hidden" id="mobile-nav" type="checkbox" /><label
-                class="hamburger-icon desktop:hidden"
-                for="mobile-nav"
-                ><span
-                  class="hamburger-icon-bars"
-                  style="background-color: #fff"
-                ></span
-              ></label>
-              <ul
-                class="hamburger-menu flex flex-col items-start gap-y-5 text-left text-inverse desktop:hidden"
-              >
-                <li class="block w-1/2 whitespace-nowrap text-2xl">
-                  <a href="/">Home</a>
-                </li>
-                <li class="block w-1/2 whitespace-nowrap text-2xl">
-                  <a href="/how-i-grade/">How I Grade</a>
-                </li>
-                <li class="block w-1/2 whitespace-nowrap text-2xl">
-                  <a href="/reviews/">Reviews</a>
-                </li>
-                <li class="block w-1/2 whitespace-nowrap text-2xl">
-                  <a href="/authors/">Authors</a>
-                </li>
-                <li class="block w-1/2 whitespace-nowrap text-2xl">
-                  <a href="/readings/">Reading Log</a>
-                  <ol class="mt-4">
-                    <li
-                      class="mb-4 ml-1 font-sans text-xs uppercase tracking-wider text-inverse-subtle last:mb-0"
-                    >
-                      <a href="/readings/stats/">Stats</a>
-                    </li>
-                  </ol>
-                </li>
-              </ul>
+              <div class="group">
+                <input class="hidden" id="nav" type="checkbox" /><label
+                  class="relative z-40 ml-2 flex h-10 w-10 cursor-pointer items-center justify-center desktop:hidden"
+                  for="nav"
+                  ><span
+                    class="relative block h-0.5 w-6 origin-center transition-[top,bottom,transform] duration-200 ease-in-out group-has-[#nav:checked]:transform-[rotate(45deg)] group-has-[#nav:checked]:!bg-[#fff] group-has-[#nav:checked]:before:top-0 group-has-[#nav:checked]:before:transform-[rotate(90deg)] group-has-[#nav:checked]:after:bottom-0 group-has-[#nav:checked]:after:transform-[rotate(90deg)] before:absolute before:-top-2 before:block before:h-0.5 before:w-6 before:bg-inherit before:transition before:duration-200 before:ease-in-out after:absolute after:-bottom-2 after:block after:h-0.5 after:w-6 after:bg-inherit after:transition after:duration-200 after:ease-in-out"
+                    style="background-color: #fff"
+                  ></span
+                ></label>
+                <ul
+                  class="fixed top-0 right-0 z-20 flex h-full w-0 transform-[translateX(100%)] flex-col items-start gap-y-5 overflow-hidden bg-footer text-left text-inverse opacity-0 duration-200 ease-in-out group-has-[#nav:checked]:bottom-0 group-has-[#nav:checked]:z-20 group-has-[#nav:checked]:h-full group-has-[#nav:checked]:w-full group-has-[#nav:checked]:transform-[translateX(0)] group-has-[#nav:checked]:overflow-y-auto group-has-[#nav:checked]:pt-20 group-has-[#nav:checked]:pr-[16%] group-has-[#nav:checked]:pb-5 group-has-[#nav:checked]:pl-[12%] group-has-[#nav:checked]:opacity-100 group-has-[#nav:checked]:tablet:px-10 group-has-[#nav:checked]:tablet:py-40 tablet:max-w-[35vw] desktop:hidden"
+                >
+                  <li class="block w-1/2 text-2xl whitespace-nowrap">
+                    <a href="/">Home</a>
+                  </li>
+                  <li class="block w-1/2 text-2xl whitespace-nowrap">
+                    <a href="/how-i-grade/">How I Grade</a>
+                  </li>
+                  <li class="block w-1/2 text-2xl whitespace-nowrap">
+                    <a href="/reviews/">Reviews</a>
+                  </li>
+                  <li class="block w-1/2 text-2xl whitespace-nowrap">
+                    <a href="/authors/">Authors</a>
+                  </li>
+                  <li class="block w-1/2 text-2xl whitespace-nowrap">
+                    <a href="/readings/">Reading Log</a>
+                    <ol class="mt-4">
+                      <li
+                        class="mb-4 ml-1 font-sans text-xs tracking-wider text-inverse-subtle uppercase last:mb-0"
+                      >
+                        <a href="/readings/stats/">Stats</a>
+                      </li>
+                    </ol>
+                  </li>
+                </ul>
+              </div>
             </div>
           </header>
-          <main class="grow bg-subtle" id="content">
+          <main
+            class="grow transition-[opacity] duration-200 ease-in-out group-has-[#nav:checked]:opacity-80 bg-subtle"
+            id="content"
+          >
             <header
-              class="min-h-[240px] tablet:min-h-[640px] desktop:min-h-[clamp(640px,70vh,1350px)] text-inverse relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pt-40 tablet:pt-40 desktop:pb-16 desktop:pt-40"
+              class="min-h-[240px] tablet:min-h-[640px] desktop:min-h-[clamp(640px,70vh,1350px)] text-inverse relative flex w-full flex-col content-start items-center justify-end gap-6 bg-canvas pt-40 tablet:pt-40 desktop:pt-40 desktop:pb-16"
             >
               <img
                 class="absolute inset-0 size-full object-cover object-top"
@@ -422,10 +419,10 @@
                 loading="eager"
               />
               <div
-                class="z-10 mx-auto flex w-full max-w-screen-max px-container flex-col bg-gradient-to-t from-[rgba(0,0,0,.85)] via-[rgba(0,0,0,.85)] desktop:bg-none py-8 tablet:pb-10 tablet:pt-20 desktop:py-0"
+                class="z-10 mx-auto flex w-full max-w-(--breakpoint-max) px-container flex-col bg-linear-to-t from-[rgba(0,0,0,.85)] via-[rgba(0,0,0,.85)] desktop:bg-none py-8 tablet:pt-20 tablet:pb-10 desktop:py-0"
               >
                 <h1
-                  class="font-sans text-3xl font-bold uppercase tracking-widest tablet:text-4xl tablet-landscape:text-5xl desktop:text-7xl"
+                  class="font-sans text-3xl font-bold tracking-widest uppercase tablet:text-4xl tablet-landscape:text-5xl desktop:text-7xl"
                 >
                   Authors
                 </h1>
@@ -444,13 +441,13 @@
                       class="relative z-10 row-start-1 bg-default text-xs tablet:-mx-12 tablet:px-0 tablet-landscape:col-span-3 tablet-landscape:mx-0 tablet-landscape:w-full"
                     >
                       <div
-                        class="mx-auto flex w-full max-w-screen-max flex-wrap items-baseline justify-between gap-x-4 gap-y-5 px-container py-10 font-sans font-medium uppercase tracking-wide text-subtle"
+                        class="mx-auto flex w-full max-w-(--breakpoint-max) flex-wrap items-baseline justify-between gap-x-4 gap-y-5 px-container py-10 font-sans font-medium tracking-wide text-subtle uppercase"
                       >
                         <span class="block pr-4"
                           ><span class="font-semibold text-default">50</span>
                           <!-- -->Results</span
                         ><button
-                          class="ml-auto flex justify-center gap-x-4 text-nowrap px-4 py-2 uppercase text-muted shadow-all tablet-landscape:hidden"
+                          class="ml-auto flex justify-center gap-x-4 px-4 py-2 text-nowrap text-muted uppercase shadow-all tablet-landscape:hidden"
                           style="background-color: var(--bg-canvas)"
                         >
                           Filter &amp; Sort
@@ -458,7 +455,7 @@
                       </div>
                     </div>
                     <div
-                      class="mx-auto max-w-screen-max grid-cols-[1fr_48px_minmax(398px,33%)] tablet-landscape:grid tablet-landscape:grid-rows-[auto_1fr]"
+                      class="mx-auto max-w-(--breakpoint-max) grid-cols-[1fr_48px_minmax(398px,33%)] tablet-landscape:grid tablet-landscape:grid-rows-[auto_1fr]"
                     >
                       <div
                         class="relative z-10 col-start-3 row-span-2 row-start-2 grid min-w-[320px] text-sm transition-[grid-template-rows] duration-300 ease-in-out tablet-landscape:mr-12 tablet-landscape:block tablet-landscape:py-24 tablet-landscape:pb-12 tablet-landscape:shadow-none desktop:mr-20"
@@ -472,13 +469,13 @@
                               class="flex flex-col gap-5 bg-group px-container py-10 tablet:gap-8 tablet:bg-default tablet-landscape:mt-0 tablet-landscape:gap-12 tablet-landscape:px-0"
                             >
                               <legend
-                                class="hidden w-full py-10 font-sans text-xs font-bold uppercase tracking-wide text-subtle tablet-landscape:block tablet-landscape:shadow-bottom"
+                                class="hidden w-full py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase tablet-landscape:block tablet-landscape:shadow-bottom"
                               >
                                 Filter &amp; Sort
                               </legend>
                               <label class="flex flex-col text-subtle"
                                 ><span
-                                  class="inline-block h-6 text-left font-sans text-xxs uppercase leading-none tracking-wide text-subtle"
+                                  class="inline-block h-6 text-left font-sans text-xxs leading-none tracking-wide text-subtle uppercase"
                                   >Name</span
                                 ><input
                                   class="border-0 bg-default px-4 py-2 text-base text-default shadow-all placeholder:text-default placeholder:opacity-50"
@@ -486,10 +483,10 @@
                                   type="text" /></label
                               ><label class="flex flex-col"
                                 ><span
-                                  class="inline-block h-6 text-left font-sans text-xxs uppercase leading-none tracking-wide text-subtle"
+                                  class="inline-block h-6 text-left font-sans text-xxs leading-none tracking-wide text-subtle uppercase"
                                   >Order By</span
                                 ><select
-                                  class="select-background-image w-full appearance-none border-none bg-default py-2 pl-4 pr-8 text-base leading-6 text-subtle shadow-all outline-accent"
+                                  class="w-full appearance-none border-none bg-default select-background-image py-2 pr-8 pl-4 text-base leading-6 text-subtle shadow-all outline-accent"
                                 >
                                   <option value="name-asc" selected="">
                                     Name (A → Z)
@@ -516,7 +513,7 @@
                           <li class="block">
                             <div class="pt-0 text-md" style="z-index: 1">
                               <div
-                                class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+                                class="max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
                               >
                                 A
                               </div>
@@ -524,10 +521,10 @@
                             <div class="bg-subtle">
                               <ol>
                                 <li
-                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
                                 >
                                   <div
-                                    class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+                                    class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
                                   >
                                     <div class="w-full">
                                       <svg
@@ -545,21 +542,21 @@
                                     </div>
                                   </div>
                                   <a
-                                    class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+                                    class="font-sans text-sm leading-normal font-medium text-accent before:absolute before:top-4 before:left-(--container-padding) before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:top-6 tablet:before:left-4 tablet:before:w-20 desktop:before:left-6"
                                     href="/authors/poul-anderson/"
                                     >Poul Anderson</a
                                   >
                                   <div
-                                    class="ml-auto text-nowrap font-sans text-xs text-subtle"
+                                    class="ml-auto font-sans text-xs text-nowrap text-subtle"
                                   >
                                     1
                                   </div>
                                 </li>
                                 <li
-                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
                                 >
                                   <div
-                                    class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+                                    class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
                                   >
                                     <div class="w-full">
                                       <svg
@@ -577,21 +574,21 @@
                                     </div>
                                   </div>
                                   <a
-                                    class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+                                    class="font-sans text-sm leading-normal font-medium text-accent before:absolute before:top-4 before:left-(--container-padding) before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:top-6 tablet:before:left-4 tablet:before:w-20 desktop:before:left-6"
                                     href="/authors/nigel-andrews/"
                                     >Nigel Andrews</a
                                   >
                                   <div
-                                    class="ml-auto text-nowrap font-sans text-xs text-subtle"
+                                    class="ml-auto font-sans text-xs text-nowrap text-subtle"
                                   >
                                     1
                                   </div>
                                 </li>
                                 <li
-                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
                                 >
                                   <div
-                                    class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+                                    class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
                                   >
                                     <div class="w-full">
                                       <svg
@@ -609,12 +606,12 @@
                                     </div>
                                   </div>
                                   <a
-                                    class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+                                    class="font-sans text-sm leading-normal font-medium text-accent before:absolute before:top-4 before:left-(--container-padding) before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:top-6 tablet:before:left-4 tablet:before:w-20 desktop:before:left-6"
                                     href="/authors/piers-anthony/"
                                     >Piers Anthony</a
                                   >
                                   <div
-                                    class="ml-auto text-nowrap font-sans text-xs text-subtle"
+                                    class="ml-auto font-sans text-xs text-nowrap text-subtle"
                                   >
                                     1
                                   </div>
@@ -625,7 +622,7 @@
                           <li class="block">
                             <div class="pt-0 text-md" style="z-index: 2">
                               <div
-                                class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+                                class="max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
                               >
                                 B
                               </div>
@@ -633,10 +630,10 @@
                             <div class="bg-subtle">
                               <ol>
                                 <li
-                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
                                 >
                                   <div
-                                    class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+                                    class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
                                   >
                                     <div class="w-full">
                                       <svg
@@ -654,12 +651,12 @@
                                     </div>
                                   </div>
                                   <a
-                                    class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+                                    class="font-sans text-sm leading-normal font-medium text-accent before:absolute before:top-4 before:left-(--container-padding) before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:top-6 tablet:before:left-4 tablet:before:w-20 desktop:before:left-6"
                                     href="/authors/leif-babin/"
                                     >Leif Babin</a
                                   >
                                   <div
-                                    class="ml-auto text-nowrap font-sans text-xs text-subtle"
+                                    class="ml-auto font-sans text-xs text-nowrap text-subtle"
                                   >
                                     1
                                   </div>
@@ -670,7 +667,7 @@
                           <li class="block">
                             <div class="pt-0 text-md" style="z-index: 3">
                               <div
-                                class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+                                class="max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
                               >
                                 C
                               </div>
@@ -678,10 +675,10 @@
                             <div class="bg-subtle">
                               <ol>
                                 <li
-                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
                                 >
                                   <div
-                                    class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+                                    class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
                                   >
                                     <div class="w-full">
                                       <svg
@@ -699,21 +696,21 @@
                                     </div>
                                   </div>
                                   <a
-                                    class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+                                    class="font-sans text-sm leading-normal font-medium text-accent before:absolute before:top-4 before:left-(--container-padding) before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:top-6 tablet:before:left-4 tablet:before:w-20 desktop:before:left-6"
                                     href="/authors/james-m-cain/"
                                     >James M. Cain</a
                                   >
                                   <div
-                                    class="ml-auto text-nowrap font-sans text-xs text-subtle"
+                                    class="ml-auto font-sans text-xs text-nowrap text-subtle"
                                   >
                                     1
                                   </div>
                                 </li>
                                 <li
-                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
                                 >
                                   <div
-                                    class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+                                    class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
                                   >
                                     <div class="w-full">
                                       <svg
@@ -731,21 +728,21 @@
                                     </div>
                                   </div>
                                   <a
-                                    class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+                                    class="font-sans text-sm leading-normal font-medium text-accent before:absolute before:top-4 before:left-(--container-padding) before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:top-6 tablet:before:left-4 tablet:before:w-20 desktop:before:left-6"
                                     href="/authors/scott-carney/"
                                     >Scott Carney</a
                                   >
                                   <div
-                                    class="ml-auto text-nowrap font-sans text-xs text-subtle"
+                                    class="ml-auto font-sans text-xs text-nowrap text-subtle"
                                   >
                                     1
                                   </div>
                                 </li>
                                 <li
-                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
                                 >
                                   <div
-                                    class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+                                    class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
                                   >
                                     <img
                                       src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fraymond-chandler.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=80&amp;h=80&amp;q=80&amp;f=avif"
@@ -761,12 +758,12 @@
                                     />
                                   </div>
                                   <a
-                                    class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+                                    class="font-sans text-sm leading-normal font-medium text-accent before:absolute before:top-4 before:left-(--container-padding) before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:top-6 tablet:before:left-4 tablet:before:w-20 desktop:before:left-6"
                                     href="/authors/raymond-chandler/"
                                     >Raymond Chandler</a
                                   >
                                   <div
-                                    class="ml-auto text-nowrap font-sans text-xs text-subtle"
+                                    class="ml-auto font-sans text-xs text-nowrap text-subtle"
                                   >
                                     1
                                   </div>
@@ -777,7 +774,7 @@
                           <li class="block">
                             <div class="pt-0 text-md" style="z-index: 4">
                               <div
-                                class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+                                class="max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
                               >
                                 D
                               </div>
@@ -785,10 +782,10 @@
                             <div class="bg-subtle">
                               <ol>
                                 <li
-                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
                                 >
                                   <div
-                                    class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+                                    class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
                                   >
                                     <div class="w-full">
                                       <svg
@@ -806,12 +803,12 @@
                                     </div>
                                   </div>
                                   <a
-                                    class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+                                    class="font-sans text-sm leading-normal font-medium text-accent before:absolute before:top-4 before:left-(--container-padding) before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:top-6 tablet:before:left-4 tablet:before:w-20 desktop:before:left-6"
                                     href="/authors/dave-draper/"
                                     >Dave Draper</a
                                   >
                                   <div
-                                    class="ml-auto text-nowrap font-sans text-xs text-subtle"
+                                    class="ml-auto font-sans text-xs text-nowrap text-subtle"
                                   >
                                     1
                                   </div>
@@ -822,7 +819,7 @@
                           <li class="block">
                             <div class="pt-0 text-md" style="z-index: 5">
                               <div
-                                class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+                                class="max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
                               >
                                 E
                               </div>
@@ -830,10 +827,10 @@
                             <div class="bg-subtle">
                               <ol>
                                 <li
-                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
                                 >
                                   <div
-                                    class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+                                    class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
                                   >
                                     <div class="w-full">
                                       <svg
@@ -851,21 +848,21 @@
                                     </div>
                                   </div>
                                   <a
-                                    class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+                                    class="font-sans text-sm leading-normal font-medium text-accent before:absolute before:top-4 before:left-(--container-padding) before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:top-6 tablet:before:left-4 tablet:before:w-20 desktop:before:left-6"
                                     href="/authors/marc-eliot/"
                                     >Marc Eliot</a
                                   >
                                   <div
-                                    class="ml-auto text-nowrap font-sans text-xs text-subtle"
+                                    class="ml-auto font-sans text-xs text-nowrap text-subtle"
                                   >
                                     1
                                   </div>
                                 </li>
                                 <li
-                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
                                 >
                                   <div
-                                    class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+                                    class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
                                   >
                                     <img
                                       src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fbret-easton-ellis.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=80&amp;h=80&amp;q=80&amp;f=avif"
@@ -881,12 +878,12 @@
                                     />
                                   </div>
                                   <a
-                                    class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+                                    class="font-sans text-sm leading-normal font-medium text-accent before:absolute before:top-4 before:left-(--container-padding) before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:top-6 tablet:before:left-4 tablet:before:w-20 desktop:before:left-6"
                                     href="/authors/bret-easton-ellis/"
                                     >Bret Easton Ellis</a
                                   >
                                   <div
-                                    class="ml-auto text-nowrap font-sans text-xs text-subtle"
+                                    class="ml-auto font-sans text-xs text-nowrap text-subtle"
                                   >
                                     2
                                   </div>
@@ -897,7 +894,7 @@
                           <li class="block">
                             <div class="pt-0 text-md" style="z-index: 6">
                               <div
-                                class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+                                class="max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
                               >
                                 F
                               </div>
@@ -905,10 +902,10 @@
                             <div class="bg-subtle">
                               <ol>
                                 <li
-                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
                                 >
                                   <div
-                                    class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+                                    class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
                                   >
                                     <img
                                       src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fian-fleming.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=80&amp;h=80&amp;q=80&amp;f=avif"
@@ -924,21 +921,21 @@
                                     />
                                   </div>
                                   <a
-                                    class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+                                    class="font-sans text-sm leading-normal font-medium text-accent before:absolute before:top-4 before:left-(--container-padding) before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:top-6 tablet:before:left-4 tablet:before:w-20 desktop:before:left-6"
                                     href="/authors/ian-fleming/"
                                     >Ian Fleming</a
                                   >
                                   <div
-                                    class="ml-auto text-nowrap font-sans text-xs text-subtle"
+                                    class="ml-auto font-sans text-xs text-nowrap text-subtle"
                                   >
                                     3
                                   </div>
                                 </li>
                                 <li
-                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
                                 >
                                   <div
-                                    class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+                                    class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
                                   >
                                     <img
                                       src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fphilip-fracassi.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=80&amp;h=80&amp;q=80&amp;f=avif"
@@ -954,12 +951,12 @@
                                     />
                                   </div>
                                   <a
-                                    class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+                                    class="font-sans text-sm leading-normal font-medium text-accent before:absolute before:top-4 before:left-(--container-padding) before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:top-6 tablet:before:left-4 tablet:before:w-20 desktop:before:left-6"
                                     href="/authors/philip-fracassi/"
                                     >Philip Fracassi</a
                                   >
                                   <div
-                                    class="ml-auto text-nowrap font-sans text-xs text-subtle"
+                                    class="ml-auto font-sans text-xs text-nowrap text-subtle"
                                   >
                                     13
                                   </div>
@@ -970,7 +967,7 @@
                           <li class="block">
                             <div class="pt-0 text-md" style="z-index: 7">
                               <div
-                                class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+                                class="max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
                               >
                                 G
                               </div>
@@ -978,10 +975,10 @@
                             <div class="bg-subtle">
                               <ol>
                                 <li
-                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
                                 >
                                   <div
-                                    class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+                                    class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
                                   >
                                     <div class="w-full">
                                       <svg
@@ -999,21 +996,21 @@
                                     </div>
                                   </div>
                                   <a
-                                    class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+                                    class="font-sans text-sm leading-normal font-medium text-accent before:absolute before:top-4 before:left-(--container-padding) before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:top-6 tablet:before:left-4 tablet:before:w-20 desktop:before:left-6"
                                     href="/authors/david-goggins/"
                                     >David Goggins</a
                                   >
                                   <div
-                                    class="ml-auto text-nowrap font-sans text-xs text-subtle"
+                                    class="ml-auto font-sans text-xs text-nowrap text-subtle"
                                   >
                                     1
                                   </div>
                                 </li>
                                 <li
-                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
                                 >
                                   <div
-                                    class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+                                    class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
                                   >
                                     <div class="w-full">
                                       <svg
@@ -1031,12 +1028,12 @@
                                     </div>
                                   </div>
                                   <a
-                                    class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+                                    class="font-sans text-sm leading-normal font-medium text-accent before:absolute before:top-4 before:left-(--container-padding) before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:top-6 tablet:before:left-4 tablet:before:w-20 desktop:before:left-6"
                                     href="/authors/robert-greene/"
                                     >Robert Greene</a
                                   >
                                   <div
-                                    class="ml-auto text-nowrap font-sans text-xs text-subtle"
+                                    class="ml-auto font-sans text-xs text-nowrap text-subtle"
                                   >
                                     1
                                   </div>
@@ -1047,7 +1044,7 @@
                           <li class="block">
                             <div class="pt-0 text-md" style="z-index: 8">
                               <div
-                                class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+                                class="max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
                               >
                                 H
                               </div>
@@ -1055,10 +1052,10 @@
                             <div class="bg-subtle">
                               <ol>
                                 <li
-                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
                                 >
                                   <div
-                                    class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+                                    class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
                                   >
                                     <div class="w-full">
                                       <svg
@@ -1076,21 +1073,21 @@
                                     </div>
                                   </div>
                                   <a
-                                    class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+                                    class="font-sans text-sm leading-normal font-medium text-accent before:absolute before:top-4 before:left-(--container-padding) before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:top-6 tablet:before:left-4 tablet:before:w-20 desktop:before:left-6"
                                     href="/authors/conner-habib/"
                                     >Conner Habib</a
                                   >
                                   <div
-                                    class="ml-auto text-nowrap font-sans text-xs text-subtle"
+                                    class="ml-auto font-sans text-xs text-nowrap text-subtle"
                                   >
                                     1
                                   </div>
                                 </li>
                                 <li
-                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
                                 >
                                   <div
-                                    class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+                                    class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
                                   >
                                     <div class="w-full">
                                       <svg
@@ -1108,21 +1105,21 @@
                                     </div>
                                   </div>
                                   <a
-                                    class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+                                    class="font-sans text-sm leading-normal font-medium text-accent before:absolute before:top-4 before:left-(--container-padding) before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:top-6 tablet:before:left-4 tablet:before:w-20 desktop:before:left-6"
                                     href="/authors/david-h-hackworth/"
                                     >David H. Hackworth</a
                                   >
                                   <div
-                                    class="ml-auto text-nowrap font-sans text-xs text-subtle"
+                                    class="ml-auto font-sans text-xs text-nowrap text-subtle"
                                   >
                                     1
                                   </div>
                                 </li>
                                 <li
-                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
                                 >
                                   <div
-                                    class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+                                    class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
                                   >
                                     <div class="w-full">
                                       <svg
@@ -1140,12 +1137,12 @@
                                     </div>
                                   </div>
                                   <a
-                                    class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+                                    class="font-sans text-sm leading-normal font-medium text-accent before:absolute before:top-4 before:left-(--container-padding) before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:top-6 tablet:before:left-4 tablet:before:w-20 desktop:before:left-6"
                                     href="/authors/tom-holland/"
                                     >Tom Holland</a
                                   >
                                   <div
-                                    class="ml-auto text-nowrap font-sans text-xs text-subtle"
+                                    class="ml-auto font-sans text-xs text-nowrap text-subtle"
                                   >
                                     1
                                   </div>
@@ -1156,7 +1153,7 @@
                           <li class="block">
                             <div class="pt-0 text-md" style="z-index: 9">
                               <div
-                                class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+                                class="max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
                               >
                                 I
                               </div>
@@ -1164,10 +1161,10 @@
                             <div class="bg-subtle">
                               <ol>
                                 <li
-                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
                                 >
                                   <div
-                                    class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+                                    class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
                                   >
                                     <div class="w-full">
                                       <svg
@@ -1185,12 +1182,12 @@
                                     </div>
                                   </div>
                                   <a
-                                    class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+                                    class="font-sans text-sm leading-normal font-medium text-accent before:absolute before:top-4 before:left-(--container-padding) before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:top-6 tablet:before:left-4 tablet:before:w-20 desktop:before:left-6"
                                     href="/authors/jesse-itzler/"
                                     >Jesse Itzler</a
                                   >
                                   <div
-                                    class="ml-auto text-nowrap font-sans text-xs text-subtle"
+                                    class="ml-auto font-sans text-xs text-nowrap text-subtle"
                                   >
                                     1
                                   </div>
@@ -1201,7 +1198,7 @@
                           <li class="block">
                             <div class="pt-0 text-md" style="z-index: 10">
                               <div
-                                class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+                                class="max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
                               >
                                 J
                               </div>
@@ -1209,10 +1206,10 @@
                             <div class="bg-subtle">
                               <ol>
                                 <li
-                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
                                 >
                                   <div
-                                    class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+                                    class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
                                   >
                                     <div class="w-full">
                                       <svg
@@ -1230,12 +1227,12 @@
                                     </div>
                                   </div>
                                   <a
-                                    class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+                                    class="font-sans text-sm leading-normal font-medium text-accent before:absolute before:top-4 before:left-(--container-padding) before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:top-6 tablet:before:left-4 tablet:before:w-20 desktop:before:left-6"
                                     href="/authors/george-jacobs/"
                                     >George Jacobs</a
                                   >
                                   <div
-                                    class="ml-auto text-nowrap font-sans text-xs text-subtle"
+                                    class="ml-auto font-sans text-xs text-nowrap text-subtle"
                                   >
                                     1
                                   </div>
@@ -1246,7 +1243,7 @@
                           <li class="block">
                             <div class="pt-0 text-md" style="z-index: 11">
                               <div
-                                class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+                                class="max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
                               >
                                 K
                               </div>
@@ -1254,10 +1251,10 @@
                             <div class="bg-subtle">
                               <ol>
                                 <li
-                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
                                 >
                                   <div
-                                    class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+                                    class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
                                   >
                                     <div class="w-full">
                                       <svg
@@ -1275,21 +1272,21 @@
                                     </div>
                                   </div>
                                   <a
-                                    class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+                                    class="font-sans text-sm leading-normal font-medium text-accent before:absolute before:top-4 before:left-(--container-padding) before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:top-6 tablet:before:left-4 tablet:before:w-20 desktop:before:left-6"
                                     href="/authors/joe-kenda/"
                                     >Joe Kenda</a
                                   >
                                   <div
-                                    class="ml-auto text-nowrap font-sans text-xs text-subtle"
+                                    class="ml-auto font-sans text-xs text-nowrap text-subtle"
                                   >
                                     1
                                   </div>
                                 </li>
                                 <li
-                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
                                 >
                                   <div
-                                    class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+                                    class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
                                   >
                                     <img
                                       src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fstephen-king.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=80&amp;h=80&amp;q=80&amp;f=avif"
@@ -1305,21 +1302,21 @@
                                     />
                                   </div>
                                   <a
-                                    class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+                                    class="font-sans text-sm leading-normal font-medium text-accent before:absolute before:top-4 before:left-(--container-padding) before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:top-6 tablet:before:left-4 tablet:before:w-20 desktop:before:left-6"
                                     href="/authors/stephen-king/"
                                     >Stephen King</a
                                   >
                                   <div
-                                    class="ml-auto text-nowrap font-sans text-xs text-subtle"
+                                    class="ml-auto font-sans text-xs text-nowrap text-subtle"
                                   >
                                     10
                                   </div>
                                 </li>
                                 <li
-                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
                                 >
                                   <div
-                                    class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+                                    class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
                                   >
                                     <div class="w-full">
                                       <svg
@@ -1337,12 +1334,12 @@
                                     </div>
                                   </div>
                                   <a
-                                    class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+                                    class="font-sans text-sm leading-normal font-medium text-accent before:absolute before:top-4 before:left-(--container-padding) before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:top-6 tablet:before:left-4 tablet:before:w-20 desktop:before:left-6"
                                     href="/authors/kathe-koja/"
                                     >Kathe Koja</a
                                   >
                                   <div
-                                    class="ml-auto text-nowrap font-sans text-xs text-subtle"
+                                    class="ml-auto font-sans text-xs text-nowrap text-subtle"
                                   >
                                     1
                                   </div>
@@ -1353,7 +1350,7 @@
                           <li class="block">
                             <div class="pt-0 text-md" style="z-index: 12">
                               <div
-                                class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+                                class="max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
                               >
                                 L
                               </div>
@@ -1361,10 +1358,10 @@
                             <div class="bg-subtle">
                               <ol>
                                 <li
-                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
                                 >
                                   <div
-                                    class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+                                    class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
                                   >
                                     <img
                                       src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Frichard-laymon.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=80&amp;h=80&amp;q=80&amp;f=avif"
@@ -1380,21 +1377,21 @@
                                     />
                                   </div>
                                   <a
-                                    class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+                                    class="font-sans text-sm leading-normal font-medium text-accent before:absolute before:top-4 before:left-(--container-padding) before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:top-6 tablet:before:left-4 tablet:before:w-20 desktop:before:left-6"
                                     href="/authors/richard-laymon/"
                                     >Richard Laymon</a
                                   >
                                   <div
-                                    class="ml-auto text-nowrap font-sans text-xs text-subtle"
+                                    class="ml-auto font-sans text-xs text-nowrap text-subtle"
                                   >
                                     10
                                   </div>
                                 </li>
                                 <li
-                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
                                 >
                                   <div
-                                    class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+                                    class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
                                   >
                                     <div class="w-full">
                                       <svg
@@ -1412,12 +1409,12 @@
                                     </div>
                                   </div>
                                   <a
-                                    class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+                                    class="font-sans text-sm leading-normal font-medium text-accent before:absolute before:top-4 before:left-(--container-padding) before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:top-6 tablet:before:left-4 tablet:before:w-20 desktop:before:left-6"
                                     href="/authors/edward-lee/"
                                     >Edward Lee</a
                                   >
                                   <div
-                                    class="ml-auto text-nowrap font-sans text-xs text-subtle"
+                                    class="ml-auto font-sans text-xs text-nowrap text-subtle"
                                   >
                                     1
                                   </div>
@@ -1428,7 +1425,7 @@
                           <li class="block">
                             <div class="pt-0 text-md" style="z-index: 13">
                               <div
-                                class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+                                class="max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
                               >
                                 M
                               </div>
@@ -1436,10 +1433,10 @@
                             <div class="bg-subtle">
                               <ol>
                                 <li
-                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
                                 >
                                   <div
-                                    class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+                                    class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
                                   >
                                     <div class="w-full">
                                       <svg
@@ -1457,21 +1454,21 @@
                                     </div>
                                   </div>
                                   <a
-                                    class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+                                    class="font-sans text-sm leading-normal font-medium text-accent before:absolute before:top-4 before:left-(--container-padding) before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:top-6 tablet:before:left-4 tablet:before:w-20 desktop:before:left-6"
                                     href="/authors/ross-macdonald/"
                                     >Ross Macdonald</a
                                   >
                                   <div
-                                    class="ml-auto text-nowrap font-sans text-xs text-subtle"
+                                    class="ml-auto font-sans text-xs text-nowrap text-subtle"
                                   >
                                     1
                                   </div>
                                 </li>
                                 <li
-                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
                                 >
                                   <div
-                                    class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+                                    class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
                                   >
                                     <div class="w-full">
                                       <svg
@@ -1489,21 +1486,21 @@
                                     </div>
                                   </div>
                                   <a
-                                    class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+                                    class="font-sans text-sm leading-normal font-medium text-accent before:absolute before:top-4 before:left-(--container-padding) before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:top-6 tablet:before:left-4 tablet:before:w-20 desktop:before:left-6"
                                     href="/authors/david-mamet/"
                                     >David Mamet</a
                                   >
                                   <div
-                                    class="ml-auto text-nowrap font-sans text-xs text-subtle"
+                                    class="ml-auto font-sans text-xs text-nowrap text-subtle"
                                   >
                                     1
                                   </div>
                                 </li>
                                 <li
-                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
                                 >
                                   <div
-                                    class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+                                    class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
                                   >
                                     <div class="w-full">
                                       <svg
@@ -1521,21 +1518,21 @@
                                     </div>
                                   </div>
                                   <a
-                                    class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+                                    class="font-sans text-sm leading-normal font-medium text-accent before:absolute before:top-4 before:left-(--container-padding) before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:top-6 tablet:before:left-4 tablet:before:w-20 desktop:before:left-6"
                                     href="/authors/johnny-marr/"
                                     >Johnny Marr</a
                                   >
                                   <div
-                                    class="ml-auto text-nowrap font-sans text-xs text-subtle"
+                                    class="ml-auto font-sans text-xs text-nowrap text-subtle"
                                   >
                                     1
                                   </div>
                                 </li>
                                 <li
-                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
                                 >
                                   <div
-                                    class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+                                    class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
                                   >
                                     <div class="w-full">
                                       <svg
@@ -1553,21 +1550,21 @@
                                     </div>
                                   </div>
                                   <a
-                                    class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+                                    class="font-sans text-sm leading-normal font-medium text-accent before:absolute before:top-4 before:left-(--container-padding) before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:top-6 tablet:before:left-4 tablet:before:w-20 desktop:before:left-6"
                                     href="/authors/graham-masterton/"
                                     >Graham Masterton</a
                                   >
                                   <div
-                                    class="ml-auto text-nowrap font-sans text-xs text-subtle"
+                                    class="ml-auto font-sans text-xs text-nowrap text-subtle"
                                   >
                                     1
                                   </div>
                                 </li>
                                 <li
-                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
                                 >
                                   <div
-                                    class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+                                    class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
                                   >
                                     <div class="w-full">
                                       <svg
@@ -1585,21 +1582,21 @@
                                     </div>
                                   </div>
                                   <a
-                                    class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+                                    class="font-sans text-sm leading-normal font-medium text-accent before:absolute before:top-4 before:left-(--container-padding) before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:top-6 tablet:before:left-4 tablet:before:w-20 desktop:before:left-6"
                                     href="/authors/john-mcphee/"
                                     >John McPhee</a
                                   >
                                   <div
-                                    class="ml-auto text-nowrap font-sans text-xs text-subtle"
+                                    class="ml-auto font-sans text-xs text-nowrap text-subtle"
                                   >
                                     1
                                   </div>
                                 </li>
                                 <li
-                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
                                 >
                                   <div
-                                    class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+                                    class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
                                   >
                                     <div class="w-full">
                                       <svg
@@ -1617,21 +1614,21 @@
                                     </div>
                                   </div>
                                   <a
-                                    class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+                                    class="font-sans text-sm leading-normal font-medium text-accent before:absolute before:top-4 before:left-(--container-padding) before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:top-6 tablet:before:left-4 tablet:before:w-20 desktop:before:left-6"
                                     href="/authors/david-miller/"
                                     >David Miller</a
                                   >
                                   <div
-                                    class="ml-auto text-nowrap font-sans text-xs text-subtle"
+                                    class="ml-auto font-sans text-xs text-nowrap text-subtle"
                                   >
                                     1
                                   </div>
                                 </li>
                                 <li
-                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
                                 >
                                   <div
-                                    class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+                                    class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
                                   >
                                     <div class="w-full">
                                       <svg
@@ -1649,21 +1646,21 @@
                                     </div>
                                   </div>
                                   <a
-                                    class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+                                    class="font-sans text-sm leading-normal font-medium text-accent before:absolute before:top-4 before:left-(--container-padding) before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:top-6 tablet:before:left-4 tablet:before:w-20 desktop:before:left-6"
                                     href="/authors/edmund-morris/"
                                     >Edmund Morris</a
                                   >
                                   <div
-                                    class="ml-auto text-nowrap font-sans text-xs text-subtle"
+                                    class="ml-auto font-sans text-xs text-nowrap text-subtle"
                                   >
                                     1
                                   </div>
                                 </li>
                                 <li
-                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
                                 >
                                   <div
-                                    class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+                                    class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
                                   >
                                     <img
                                       src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fstephen-morris.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=80&amp;h=80&amp;q=80&amp;f=avif"
@@ -1679,12 +1676,12 @@
                                     />
                                   </div>
                                   <a
-                                    class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+                                    class="font-sans text-sm leading-normal font-medium text-accent before:absolute before:top-4 before:left-(--container-padding) before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:top-6 tablet:before:left-4 tablet:before:w-20 desktop:before:left-6"
                                     href="/authors/stephen-morris/"
                                     >Stephen Morris</a
                                   >
                                   <div
-                                    class="ml-auto text-nowrap font-sans text-xs text-subtle"
+                                    class="ml-auto font-sans text-xs text-nowrap text-subtle"
                                   >
                                     2
                                   </div>
@@ -1695,7 +1692,7 @@
                           <li class="block">
                             <div class="pt-0 text-md" style="z-index: 14">
                               <div
-                                class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+                                class="max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
                               >
                                 N
                               </div>
@@ -1703,10 +1700,10 @@
                             <div class="bg-subtle">
                               <ol>
                                 <li
-                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
                                 >
                                   <div
-                                    class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+                                    class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
                                   >
                                     <div class="w-full">
                                       <svg
@@ -1724,12 +1721,12 @@
                                     </div>
                                   </div>
                                   <a
-                                    class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+                                    class="font-sans text-sm leading-normal font-medium text-accent before:absolute before:top-4 before:left-(--container-padding) before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:top-6 tablet:before:left-4 tablet:before:w-20 desktop:before:left-6"
                                     href="/authors/steven-novella/"
                                     >Steven Novella</a
                                   >
                                   <div
-                                    class="ml-auto text-nowrap font-sans text-xs text-subtle"
+                                    class="ml-auto font-sans text-xs text-nowrap text-subtle"
                                   >
                                     1
                                   </div>
@@ -1740,7 +1737,7 @@
                           <li class="block">
                             <div class="pt-0 text-md" style="z-index: 15">
                               <div
-                                class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+                                class="max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
                               >
                                 P
                               </div>
@@ -1748,10 +1745,10 @@
                             <div class="bg-subtle">
                               <ol>
                                 <li
-                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
                                 >
                                   <div
-                                    class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+                                    class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
                                   >
                                     <img
                                       src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fchuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=80&amp;h=80&amp;q=80&amp;f=avif"
@@ -1767,12 +1764,12 @@
                                     />
                                   </div>
                                   <a
-                                    class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+                                    class="font-sans text-sm leading-normal font-medium text-accent before:absolute before:top-4 before:left-(--container-padding) before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:top-6 tablet:before:left-4 tablet:before:w-20 desktop:before:left-6"
                                     href="/authors/chuck-palahniuk/"
                                     >Chuck Palahniuk</a
                                   >
                                   <div
-                                    class="ml-auto text-nowrap font-sans text-xs text-subtle"
+                                    class="ml-auto font-sans text-xs text-nowrap text-subtle"
                                   >
                                     2
                                   </div>
@@ -1783,7 +1780,7 @@
                           <li class="block">
                             <div class="pt-0 text-md" style="z-index: 16">
                               <div
-                                class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+                                class="max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
                               >
                                 R
                               </div>
@@ -1791,10 +1788,10 @@
                             <div class="bg-subtle">
                               <ol>
                                 <li
-                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
                                 >
                                   <div
-                                    class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+                                    class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
                                   >
                                     <div class="w-full">
                                       <svg
@@ -1812,21 +1809,21 @@
                                     </div>
                                   </div>
                                   <a
-                                    class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+                                    class="font-sans text-sm leading-normal font-medium text-accent before:absolute before:top-4 before:left-(--container-padding) before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:top-6 tablet:before:left-4 tablet:before:w-20 desktop:before:left-6"
                                     href="/authors/andrew-roberts/"
                                     >Andrew Roberts</a
                                   >
                                   <div
-                                    class="ml-auto text-nowrap font-sans text-xs text-subtle"
+                                    class="ml-auto font-sans text-xs text-nowrap text-subtle"
                                   >
                                     1
                                   </div>
                                 </li>
                                 <li
-                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
                                 >
                                   <div
-                                    class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+                                    class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
                                   >
                                     <div class="w-full">
                                       <svg
@@ -1844,12 +1841,12 @@
                                     </div>
                                   </div>
                                   <a
-                                    class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+                                    class="font-sans text-sm leading-normal font-medium text-accent before:absolute before:top-4 before:left-(--container-padding) before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:top-6 tablet:before:left-4 tablet:before:w-20 desktop:before:left-6"
                                     href="/authors/rick-rubin/"
                                     >Rick Rubin</a
                                   >
                                   <div
-                                    class="ml-auto text-nowrap font-sans text-xs text-subtle"
+                                    class="ml-auto font-sans text-xs text-nowrap text-subtle"
                                   >
                                     1
                                   </div>
@@ -1860,7 +1857,7 @@
                           <li class="block">
                             <div class="pt-0 text-md" style="z-index: 17">
                               <div
-                                class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+                                class="max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
                               >
                                 S
                               </div>
@@ -1868,10 +1865,10 @@
                             <div class="bg-subtle">
                               <ol>
                                 <li
-                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
                                 >
                                   <div
-                                    class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+                                    class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
                                   >
                                     <div class="w-full">
                                       <svg
@@ -1889,21 +1886,21 @@
                                     </div>
                                   </div>
                                   <a
-                                    class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+                                    class="font-sans text-sm leading-normal font-medium text-accent before:absolute before:top-4 before:left-(--container-padding) before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:top-6 tablet:before:left-4 tablet:before:w-20 desktop:before:left-6"
                                     href="/authors/brad-schoenfeld/"
                                     >Brad Schoenfeld</a
                                   >
                                   <div
-                                    class="ml-auto text-nowrap font-sans text-xs text-subtle"
+                                    class="ml-auto font-sans text-xs text-nowrap text-subtle"
                                   >
                                     1
                                   </div>
                                 </li>
                                 <li
-                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
                                 >
                                   <div
-                                    class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+                                    class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
                                   >
                                     <div class="w-full">
                                       <svg
@@ -1921,21 +1918,21 @@
                                     </div>
                                   </div>
                                   <a
-                                    class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+                                    class="font-sans text-sm leading-normal font-medium text-accent before:absolute before:top-4 before:left-(--container-padding) before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:top-6 tablet:before:left-4 tablet:before:w-20 desktop:before:left-6"
                                     href="/authors/arnold-schwarzenegger/"
                                     >Arnold Schwarzenegger</a
                                   >
                                   <div
-                                    class="ml-auto text-nowrap font-sans text-xs text-subtle"
+                                    class="ml-auto font-sans text-xs text-nowrap text-subtle"
                                   >
                                     1
                                   </div>
                                 </li>
                                 <li
-                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
                                 >
                                   <div
-                                    class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+                                    class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
                                   >
                                     <div class="w-full">
                                       <svg
@@ -1953,21 +1950,21 @@
                                     </div>
                                   </div>
                                   <a
-                                    class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+                                    class="font-sans text-sm leading-normal font-medium text-accent before:absolute before:top-4 before:left-(--container-padding) before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:top-6 tablet:before:left-4 tablet:before:w-20 desktop:before:left-6"
                                     href="/authors/jerry-seinfeld/"
                                     >Jerry Seinfeld</a
                                   >
                                   <div
-                                    class="ml-auto text-nowrap font-sans text-xs text-subtle"
+                                    class="ml-auto font-sans text-xs text-nowrap text-subtle"
                                   >
                                     1
                                   </div>
                                 </li>
                                 <li
-                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
                                 >
                                   <div
-                                    class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+                                    class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
                                   >
                                     <div class="w-full">
                                       <svg
@@ -1985,21 +1982,21 @@
                                     </div>
                                   </div>
                                   <a
-                                    class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+                                    class="font-sans text-sm leading-normal font-medium text-accent before:absolute before:top-4 before:left-(--container-padding) before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:top-6 tablet:before:left-4 tablet:before:w-20 desktop:before:left-6"
                                     href="/authors/julie-sherman/"
                                     >Julie Sherman</a
                                   >
                                   <div
-                                    class="ml-auto text-nowrap font-sans text-xs text-subtle"
+                                    class="ml-auto font-sans text-xs text-nowrap text-subtle"
                                   >
                                     1
                                   </div>
                                 </li>
                                 <li
-                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
                                 >
                                   <div
-                                    class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+                                    class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
                                   >
                                     <div class="w-full">
                                       <svg
@@ -2017,21 +2014,21 @@
                                     </div>
                                   </div>
                                   <a
-                                    class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+                                    class="font-sans text-sm leading-normal font-medium text-accent before:absolute before:top-4 before:left-(--container-padding) before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:top-6 tablet:before:left-4 tablet:before:w-20 desktop:before:left-6"
                                     href="/authors/john-skipp/"
                                     >John Skipp</a
                                   >
                                   <div
-                                    class="ml-auto text-nowrap font-sans text-xs text-subtle"
+                                    class="ml-auto font-sans text-xs text-nowrap text-subtle"
                                   >
                                     1
                                   </div>
                                 </li>
                                 <li
-                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
                                 >
                                   <div
-                                    class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+                                    class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
                                   >
                                     <div class="w-full">
                                       <svg
@@ -2049,21 +2046,21 @@
                                     </div>
                                   </div>
                                   <a
-                                    class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+                                    class="font-sans text-sm leading-normal font-medium text-accent before:absolute before:top-4 before:left-(--container-padding) before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:top-6 tablet:before:left-4 tablet:before:w-20 desktop:before:left-6"
                                     href="/authors/craig-spector/"
                                     >Craig Spector</a
                                   >
                                   <div
-                                    class="ml-auto text-nowrap font-sans text-xs text-subtle"
+                                    class="ml-auto font-sans text-xs text-nowrap text-subtle"
                                   >
                                     1
                                   </div>
                                 </li>
                                 <li
-                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
                                 >
                                   <div
-                                    class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+                                    class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
                                   >
                                     <div class="w-full">
                                       <svg
@@ -2081,21 +2078,21 @@
                                     </div>
                                   </div>
                                   <a
-                                    class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+                                    class="font-sans text-sm leading-normal font-medium text-accent before:absolute before:top-4 before:left-(--container-padding) before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:top-6 tablet:before:left-4 tablet:before:w-20 desktop:before:left-6"
                                     href="/authors/william-stadiem/"
                                     >William Stadiem</a
                                   >
                                   <div
-                                    class="ml-auto text-nowrap font-sans text-xs text-subtle"
+                                    class="ml-auto font-sans text-xs text-nowrap text-subtle"
                                   >
                                     1
                                   </div>
                                 </li>
                                 <li
-                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
                                 >
                                   <div
-                                    class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+                                    class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
                                   >
                                     <img
                                       src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fbram-stoker.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=80&amp;h=80&amp;q=80&amp;f=avif"
@@ -2111,21 +2108,21 @@
                                     />
                                   </div>
                                   <a
-                                    class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+                                    class="font-sans text-sm leading-normal font-medium text-accent before:absolute before:top-4 before:left-(--container-padding) before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:top-6 tablet:before:left-4 tablet:before:w-20 desktop:before:left-6"
                                     href="/authors/bram-stoker/"
                                     >Bram Stoker</a
                                   >
                                   <div
-                                    class="ml-auto text-nowrap font-sans text-xs text-subtle"
+                                    class="ml-auto font-sans text-xs text-nowrap text-subtle"
                                   >
                                     1
                                   </div>
                                 </li>
                                 <li
-                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
                                 >
                                   <div
-                                    class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+                                    class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
                                   >
                                     <div class="w-full">
                                       <svg
@@ -2143,12 +2140,12 @@
                                     </div>
                                   </div>
                                   <a
-                                    class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+                                    class="font-sans text-sm leading-normal font-medium text-accent before:absolute before:top-4 before:left-(--container-padding) before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:top-6 tablet:before:left-4 tablet:before:w-20 desktop:before:left-6"
                                     href="/authors/peter-straub/"
                                     >Peter Straub</a
                                   >
                                   <div
-                                    class="ml-auto text-nowrap font-sans text-xs text-subtle"
+                                    class="ml-auto font-sans text-xs text-nowrap text-subtle"
                                   >
                                     1
                                   </div>
@@ -2159,7 +2156,7 @@
                           <li class="block">
                             <div class="pt-0 text-md" style="z-index: 18">
                               <div
-                                class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+                                class="max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
                               >
                                 T
                               </div>
@@ -2167,10 +2164,10 @@
                             <div class="bg-subtle">
                               <ol>
                                 <li
-                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
                                 >
                                   <div
-                                    class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+                                    class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
                                   >
                                     <div class="w-full">
                                       <svg
@@ -2188,21 +2185,21 @@
                                     </div>
                                   </div>
                                   <a
-                                    class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+                                    class="font-sans text-sm leading-normal font-medium text-accent before:absolute before:top-4 before:left-(--container-padding) before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:top-6 tablet:before:left-4 tablet:before:w-20 desktop:before:left-6"
                                     href="/authors/donna-tartt/"
                                     >Donna Tartt</a
                                   >
                                   <div
-                                    class="ml-auto text-nowrap font-sans text-xs text-subtle"
+                                    class="ml-auto font-sans text-xs text-nowrap text-subtle"
                                   >
                                     1
                                   </div>
                                 </li>
                                 <li
-                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
                                 >
                                   <div
-                                    class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+                                    class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
                                   >
                                     <div class="w-full">
                                       <svg
@@ -2220,12 +2217,12 @@
                                     </div>
                                   </div>
                                   <a
-                                    class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+                                    class="font-sans text-sm leading-normal font-medium text-accent before:absolute before:top-4 before:left-(--container-padding) before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:top-6 tablet:before:left-4 tablet:before:w-20 desktop:before:left-6"
                                     href="/authors/lol-tolhurst/"
                                     >Lol Tolhurst</a
                                   >
                                   <div
-                                    class="ml-auto text-nowrap font-sans text-xs text-subtle"
+                                    class="ml-auto font-sans text-xs text-nowrap text-subtle"
                                   >
                                     2
                                   </div>
@@ -2236,7 +2233,7 @@
                           <li class="block">
                             <div class="pt-0 text-md" style="z-index: 19">
                               <div
-                                class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+                                class="max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
                               >
                                 U
                               </div>
@@ -2244,10 +2241,10 @@
                             <div class="bg-subtle">
                               <ol>
                                 <li
-                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
                                 >
                                   <div
-                                    class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+                                    class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
                                   >
                                     <div class="w-full">
                                       <svg
@@ -2265,12 +2262,12 @@
                                     </div>
                                   </div>
                                   <a
-                                    class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+                                    class="font-sans text-sm leading-normal font-medium text-accent before:absolute before:top-4 before:left-(--container-padding) before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:top-6 tablet:before:left-4 tablet:before:w-20 desktop:before:left-6"
                                     href="/authors/a-jack-ulrich/"
                                     >A. Jack Ulrich</a
                                   >
                                   <div
-                                    class="ml-auto text-nowrap font-sans text-xs text-subtle"
+                                    class="ml-auto font-sans text-xs text-nowrap text-subtle"
                                   >
                                     1
                                   </div>
@@ -2281,7 +2278,7 @@
                           <li class="block">
                             <div class="pt-0 text-md" style="z-index: 20">
                               <div
-                                class="max-w-screen-max bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+                                class="max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
                               >
                                 W
                               </div>
@@ -2289,10 +2286,10 @@
                             <div class="bg-subtle">
                               <ol>
                                 <li
-                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
                                 >
                                   <div
-                                    class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+                                    class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
                                   >
                                     <div class="w-full">
                                       <svg
@@ -2310,21 +2307,21 @@
                                     </div>
                                   </div>
                                   <a
-                                    class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+                                    class="font-sans text-sm leading-normal font-medium text-accent before:absolute before:top-4 before:left-(--container-padding) before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:top-6 tablet:before:left-4 tablet:before:w-20 desktop:before:left-6"
                                     href="/authors/karl-edward-wagner/"
                                     >Karl Edward Wagner</a
                                   >
                                   <div
-                                    class="ml-auto text-nowrap font-sans text-xs text-subtle"
+                                    class="ml-auto font-sans text-xs text-nowrap text-subtle"
                                   >
                                     1
                                   </div>
                                 </li>
                                 <li
-                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-screen-max flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+                                  class="bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-4 desktop:px-6 has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
                                 >
                                   <div
-                                    class="safari-border-radius-fix w-16 overflow-hidden rounded-full shadow-all shadow-[var(--bg-avatar-default)] tablet:w-20"
+                                    class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
                                   >
                                     <div class="w-full">
                                       <svg
@@ -2342,12 +2339,12 @@
                                     </div>
                                   </div>
                                   <a
-                                    class="font-sans text-sm font-medium leading-normal text-accent before:absolute before:left-[var(--container-padding)] before:top-4 before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:left-0 after:top-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:left-4 tablet:before:top-6 tablet:before:w-20 desktop:before:left-6"
+                                    class="font-sans text-sm leading-normal font-medium text-accent before:absolute before:top-4 before:left-(--container-padding) before:aspect-square before:w-16 before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 tablet:before:top-6 tablet:before:left-4 tablet:before:w-20 desktop:before:left-6"
                                     href="/authors/jocko-willink/"
                                     >Jocko Willink</a
                                   >
                                   <div
-                                    class="ml-auto text-nowrap font-sans text-xs text-subtle"
+                                    class="ml-auto font-sans text-xs text-nowrap text-subtle"
                                   >
                                     1
                                   </div>
@@ -2367,62 +2364,83 @@
             </div>
           </main>
           <footer class="bg-canvas">
-            <div class="mx-auto max-w-screen-desktop px-container py-20">
+            <div
+              class="mx-auto max-w-(--breakpoint-desktop) px-container py-20"
+            >
               <div
                 class="flex w-full flex-col tablet:flex-row-reverse tablet:justify-between"
               >
                 <a
-                  class="mx-auto mb-8 w-full max-w-button bg-footer py-5 text-center font-sans text-xs uppercase tracking-wide text-inverse hover:bg-subtle hover:text-default tablet:mx-0"
+                  class="mx-auto mb-8 w-full max-w-button bg-footer py-5 text-center font-sans text-xs tracking-wide text-inverse uppercase hover:bg-subtle hover:text-default tablet:mx-0"
                   href="#top"
                   >To the top</a
                 >
                 <div class="flex flex-col">
                   <div
-                    class="whitespace-nowrap text-[1.375rem] font-normal leading-8 tablet:text-[1.5625rem]"
+                    class="text-[1.375rem] leading-8 font-normal whitespace-nowrap tablet:text-[1.5625rem]"
                   >
                     <a href="/">Frank&#x27;s Book Log</a>
                   </div>
-                  <p class="w-full pl-px text-sm italic leading-4 opacity-85">
+                  <p class="w-full pl-px text-sm leading-4 italic opacity-85">
                     by Frank Showalter
                   </p>
                 </div>
               </div>
               <div class="justify-between tablet:flex">
                 <div class="flex max-w-prose flex-col pb-12 tablet:pr-32">
-                  <div
-                    class="footer-text pt-10 font-sans text-base font-light text-subtle"
-                  >
-                    <p>
+                  <div class="pt-10 font-sans text-base font-light text-subtle">
+                    <p class="mb-6 text-pretty">
                       Hi there, I&#x27;m Frank, a husband and father old enough
                       to have read Stephen King&#x27;s
                       <em>The Dark Half</em> during its first printing.
                     </p>
-                    <p>
+                    <p class="mb-6 text-pretty">
                       This site began in 2012, when I realized I&#x27;d
                       accumulated more books than I could ever hope to finish.
                       Worse still, I had books I thought I&#x27;d read but
                       couldn&#x27;t remember. Clearly, I needed a system.
                     </p>
-                    <p>
+                    <p class="mb-6 text-pretty">
                       What started on Goodreads evolved into this little corner
                       of the internet where I share my thoughts on what
                       I&#x27;ve read.
                     </p>
-                    <p>
+                    <p class="mb-6 text-pretty">
                       New visitors might want to start by reading about<!-- -->
-                      <a href="/how-i-grade/">how I grade</a>. After that, feel
-                      free to browse my <a href="/reviews/">reviews</a>, which
-                      are also indexed <a href="/authors/">by author</a>.
+                      <a
+                        class="text-default underline decoration-subtle decoration-dashed underline-offset-4 transition-all duration-150 ease-out hover:bg-(--fg-inverse) hover:text-default hover:decoration-default hover:duration-75 hover:ease-in"
+                        href="/how-i-grade/"
+                        >how I grade</a
+                      >. After that, feel free to browse my<!-- -->
+                      <a
+                        class="text-default underline decoration-subtle decoration-dashed underline-offset-4 transition-all duration-150 ease-out hover:bg-(--fg-inverse) hover:text-default hover:decoration-default hover:duration-75 hover:ease-in"
+                        href="/reviews/"
+                        >reviews</a
+                      >, which are also indexed
+                      <a
+                        class="text-default underline decoration-subtle decoration-dashed underline-offset-4 transition-all duration-150 ease-out hover:bg-(--fg-inverse) hover:text-default hover:decoration-default hover:duration-75 hover:ease-in"
+                        href="/authors/"
+                        >by author</a
+                      >.
                     </p>
-                    <p>
-                      I also keep a <a href="/readings/">reading log</a> that
-                      tracks everything I read, whether it gets a full review or
-                      not, complete with <a href="/readings/stats/">stats</a>.
-                      In an age of endless content, sometimes the act of
+                    <p class="mb-6 text-pretty">
+                      I also keep a<!-- -->
+                      <a
+                        class="text-default underline decoration-subtle decoration-dashed underline-offset-4 transition-all duration-150 ease-out hover:bg-(--fg-inverse) hover:text-default hover:decoration-default hover:duration-75 hover:ease-in"
+                        href="/readings/"
+                        >reading log</a
+                      >
+                      that tracks everything I read, whether it gets a full
+                      review or not, complete with<!-- -->
+                      <a
+                        class="text-default underline decoration-subtle decoration-dashed underline-offset-4 transition-all duration-150 ease-out hover:bg-(--fg-inverse) hover:text-default hover:decoration-default hover:duration-75 hover:ease-in"
+                        href="/readings/stats/"
+                        >stats</a
+                      >. In an age of endless content, sometimes the act of
                       remembering what we&#x27;ve read becomes as important as
                       the reading itself.
                     </p>
-                    <p>
+                    <p class="text-pretty">
                       In an era of algorithmic recommendations and corporate
                       marketing machines, consider this site a human
                       alternative—one person&#x27;s attempt to catalog his
@@ -2432,30 +2450,30 @@
                   </div>
                 </div>
                 <div
-                  class="flex grow-0 flex-col gap-20 pb-20 pt-10 tablet:basis-[430px] tablet:pr-10"
+                  class="flex grow-0 flex-col gap-20 pt-10 pb-20 tablet:basis-button tablet:pr-10"
                 >
                   <ul class="flex w-full flex-col gap-y-10 max:w-auto">
-                    <li class="block w-1/2 whitespace-nowrap text-2xl">
+                    <li class="block w-1/2 text-2xl whitespace-nowrap">
                       <a class="hover:text-accent" href="/">Home</a>
                     </li>
-                    <li class="block w-1/2 whitespace-nowrap text-2xl">
+                    <li class="block w-1/2 text-2xl whitespace-nowrap">
                       <a class="hover:text-accent" href="/how-i-grade/"
                         >How I Grade</a
                       >
                     </li>
-                    <li class="block w-1/2 whitespace-nowrap text-2xl">
+                    <li class="block w-1/2 text-2xl whitespace-nowrap">
                       <a class="hover:text-accent" href="/reviews/">Reviews</a>
                     </li>
-                    <li class="block w-1/2 whitespace-nowrap text-2xl">
+                    <li class="block w-1/2 text-2xl whitespace-nowrap">
                       <a class="hover:text-accent" href="/authors/">Authors</a>
                     </li>
-                    <li class="block w-1/2 whitespace-nowrap text-2xl">
+                    <li class="block w-1/2 text-2xl whitespace-nowrap">
                       <a class="hover:text-accent" href="/readings/"
                         >Reading Log</a
                       >
                       <ol class="mt-4">
                         <li
-                          class="mb-4 ml-1 font-sans text-xs uppercase tracking-wide text-subtle last:mb-0"
+                          class="mb-4 ml-1 font-sans text-xs tracking-wide text-subtle uppercase last:mb-0"
                         >
                           <a class="hover:text-default" href="/readings/stats/"
                             >Stats</a
@@ -2468,7 +2486,7 @@
               </div>
             </div>
             <p
-              class="w-full bg-footer px-container py-10 text-center font-normal leading-5 text-inverse"
+              class="w-full bg-footer px-container py-10 text-center leading-5 font-normal text-inverse"
             >
               All reviews by Frank Showalter. All images used in accordance with
               the<!-- -->
@@ -2486,18 +2504,18 @@
     >
     <dialog
       aria-label="Search"
-      class="fixed inset-x-4 h-screen w-full rounded-lg border border-default bg-default shadow-lg backdrop:bg-[#000] backdrop:opacity-40 open:flex open:flex-col tablet:mx-auto tablet:mt-16 tablet:h-min tablet:max-h-[min(100vh_-_128px,900px)] tablet:min-h-60 tablet:max-w-[min(100vw_-_64px,36rem)] tablet:rounded-xl desktop:min-h-0"
+      class="fixed inset-x-4 m-auto h-screen w-full rounded-lg border border-default bg-default shadow-lg backdrop:bg-[#000] backdrop:opacity-40 open:flex open:flex-col tablet:mx-auto tablet:mt-16 tablet:h-min tablet:max-h-[min(100vh-128px,900px)] tablet:min-h-60 tablet:max-w-[min(100vw-64px,36rem)] tablet:rounded-xl desktop:min-h-0"
     >
       <div class="contents" data-dialog-frame>
         <button
-          class="px-2 font-mono text-xs font-light hover:bg-inverse hover:text-inverse focus:outline-accent"
+          class="absolute right-[var(--search-dialog-padding)] z-10 mt-5 h-[calc(24px_*_var(---pagefind-ui-scale))] cursor-pointer border-none bg-subtle px-2 font-mono text-xs font-light text-muted hover:bg-inverse hover:text-inverse focus:outline-accent"
           data-close-modal
         >
           ESC
         </button>
         <div class="contents"><div id="pagefind__search"></div></div>
         <div
-          class="hidden px-[var(--search-dialog-padding)] py-4 font-sans text-xs font-light tracking-wide text-subtle desktop:block"
+          class="hidden px-(--search-dialog-padding) py-4 font-sans text-xs font-light tracking-wide text-subtle desktop:block"
         >
           <kbd class="rounded-md bg-default p-2 font-mono text-xs text-subtle"
             >Tab</kbd
@@ -2511,16 +2529,6 @@
         </div>
       </div>
     </dialog>
-    <script>
-      (() => {
-        const openBtn = document.querySelector("button[data-open-modal]");
-        if (!openBtn) return;
-        if (/(Mac|iPhone|iPod|iPad)/i.test(navigator.platform)) {
-          openBtn.setAttribute("aria-keyshortcuts", "Meta+K");
-          openBtn.setAttribute("title", `Search: ⌘K`);
-        }
-      })();
-    </script>
     <script
       type="module"
       src="/src/layouts/Layout.astro?astro&type=script&index=0&lang.ts"

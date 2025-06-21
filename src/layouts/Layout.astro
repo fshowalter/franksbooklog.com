@@ -1,6 +1,5 @@
 ---
-import "./base.css";
-import "@pagefind/default-ui/css/ui.css";
+import "./tailwind.css";
 
 type Meta = {
   description: string;
@@ -33,7 +32,7 @@ const canonicalUrl = `${import.meta.env.SITE}${new URL(Astro.request.url).pathna
 ---
 
 <!doctype html>
-<html lang="en">
+<html class="h-full" lang="en">
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width" name="viewport" />
@@ -75,15 +74,38 @@ const canonicalUrl = `${import.meta.env.SITE}${new URL(Astro.request.url).pathna
     }
     <title>{pageTitle}</title>
   </head>
-  <body>
+  <body
+    class={`
+      h-full w-full bg-canvas text-default
+      has-[#nav:checked]:fixed has-[#nav:checked]:overflow-y-scroll
+      data-search-modal-open:overflow-hidden data-search-modal-open:before:fixed
+      data-search-modal-open:before:inset-0 data-search-modal-open:before:z-50
+      data-search-modal-open:before:backdrop-blur-xs
+    `}
+  >
     <slot />
     <dialog
       aria-label="Search"
-      class="fixed inset-x-4 h-screen w-full rounded-lg border border-default bg-default shadow-lg backdrop:bg-[#000] backdrop:opacity-40 open:flex open:flex-col tablet:mx-auto tablet:mt-16 tablet:h-min tablet:max-h-[min(100vh_-_128px,900px)] tablet:min-h-60 tablet:max-w-[min(100vw_-_64px,36rem)] tablet:rounded-xl desktop:min-h-0"
+      class={`
+        fixed inset-x-4 m-auto h-screen w-full rounded-lg border border-default
+        bg-default shadow-lg
+        backdrop:bg-[#000] backdrop:opacity-40
+        open:flex open:flex-col
+        tablet:mx-auto tablet:mt-16 tablet:h-min
+        tablet:max-h-[min(100vh-128px,900px)] tablet:min-h-60
+        tablet:max-w-[min(100vw-64px,36rem)] tablet:rounded-xl
+        desktop:min-h-0
+      `}
     >
       <div class="contents" data-dialog-frame>
         <button
-          class="px-2 font-mono text-xs font-light hover:bg-inverse hover:text-inverse focus:outline-accent"
+          class={`
+            absolute right-[var(--search-dialog-padding)] z-10 mt-5
+            h-[calc(24px_*_var(---pagefind-ui-scale))] cursor-pointer
+            border-none bg-subtle px-2 font-mono text-xs font-light text-muted
+            hover:bg-inverse hover:text-inverse
+            focus:outline-accent
+          `}
           data-close-modal>ESC</button
         >
         <div class="contents">
@@ -91,7 +113,11 @@ const canonicalUrl = `${import.meta.env.SITE}${new URL(Astro.request.url).pathna
         </div>
 
         <div
-          class="hidden px-[var(--search-dialog-padding)] py-4 font-sans text-xs font-light tracking-wide text-subtle desktop:block"
+          class={`
+            hidden px-(--search-dialog-padding) py-4 font-sans text-xs
+            font-light tracking-wide text-subtle
+            desktop:block
+          `}
         >
           <kbd class="rounded-md bg-default p-2 font-mono text-xs text-subtle"
             >Tab</kbd
@@ -105,311 +131,4 @@ const canonicalUrl = `${import.meta.env.SITE}${new URL(Astro.request.url).pathna
     </dialog>
   </body>
 </html>
-
-<script is:inline>
-  (() => {
-    const openBtn = document.querySelector("button[data-open-modal]");
-    if (!openBtn) return;
-    if (/(Mac|iPhone|iPod|iPad)/i.test(navigator.platform)) {
-      openBtn.setAttribute("aria-keyshortcuts", "Meta+K");
-      openBtn.setAttribute("title", `Search: ⌘K`);
-    }
-  })();
-</script>
-
-<script>
-  const openBtn = document.querySelector<HTMLButtonElement>(
-    "button[data-open-modal]",
-  )!;
-  const closeBtn = document.querySelector<HTMLButtonElement>(
-    "button[data-close-modal]",
-  )!;
-  const dialog = document.querySelector("dialog")!;
-  const dialogFrame = document.querySelector("div[data-dialog-frame]")!;
-
-  // ios safari doesn't bubble click events unless a parent has a listener
-  document.body.addEventListener("click", () => {});
-
-  /** Close the modal if a user clicks on a link or outside of the modal. */
-  const onClick = (event: MouseEvent) => {
-    const isLink = "href" in (event.target || {});
-    if (
-      isLink ||
-      (document.body.contains(event.target as Node) &&
-        !dialogFrame.contains(event.target as Node))
-    ) {
-      closeModal();
-    }
-
-    if (
-      event.target instanceof HTMLButtonElement &&
-      event.target.classList.contains("pagefind-ui__search-clear")
-    ) {
-      const input: HTMLElement = document.querySelector(
-        ".pagefind-ui__search-input",
-      )!;
-
-      input.focus();
-    }
-  };
-
-  const openModal = (event?: MouseEvent) => {
-    dialog.showModal();
-    document.body.toggleAttribute("data-search-modal-open", true);
-    dialog.querySelector("input")?.focus();
-    event?.stopPropagation();
-    window.addEventListener("click", onClick);
-  };
-
-  const closeModal = () => dialog.close();
-
-  openBtn.addEventListener("click", openModal);
-  openBtn.disabled = false;
-  closeBtn.addEventListener("click", closeModal);
-
-  dialog.addEventListener("close", () => {
-    document.body.toggleAttribute("data-search-modal-open", false);
-    window.removeEventListener("click", onClick);
-  });
-
-  // Listen for `ctrl + k` and `cmd + k` keyboard shortcuts.
-  window.addEventListener("keydown", (e: KeyboardEvent) => {
-    if ((e.metaKey === true || e.ctrlKey === true) && e.key === "k") {
-      dialog.open ? closeModal() : openModal();
-      e.preventDefault();
-    }
-
-    if (
-      e.target instanceof HTMLInputElement &&
-      e.target.classList.contains("pagefind-ui__search-input") &&
-      e.key === "Enter"
-    ) {
-      e.target.blur();
-    }
-  });
-
-  window.addEventListener("DOMContentLoaded", () => {
-    const onIdle = window.requestIdleCallback || ((cb) => setTimeout(cb, 1));
-    onIdle(async () => {
-      // @ts-expect-error — Missing types for @pagefind/default-ui package.
-      const { PagefindUI } = await import("@pagefind/default-ui");
-      new PagefindUI({
-        element: "#pagefind__search",
-        baseUrl: import.meta.env.BASE_URL,
-        bundlePath: import.meta.env.BASE_URL.replace(/\/$/, "") + "/pagefind/",
-        showImages: true,
-        showSubResults: false,
-      });
-    });
-  });
-</script>
-
-<style is:global>
-  [data-search-modal-open] {
-    overflow: hidden;
-  }
-
-  [data-search-modal-open]::before {
-    backdrop-filter: blur(4px);
-    content: "";
-    inset: 0;
-    position: fixed;
-    z-index: 1000;
-  }
-
-  button[data-close-modal] {
-    background: var(--bg-subtle);
-    border: 0;
-    color: var(--fg-muted);
-    cursor: pointer;
-    height: calc(24px * var(--pagefind-ui-scale));
-    margin: 18px 0;
-    position: absolute;
-    right: var(--search-dialog-padding);
-    z-index: 1;
-  }
-
-  #pagefind__search {
-    --pagefind-ui-scale: 1;
-    --pagefind-ui-primary: var(--fg-accent);
-    --pagefind-ui-text: var(--fg-default);
-    --pagefind-ui-background: var(--bg-default);
-    --pagefind-ui-border: var(--border-default);
-    --pagefind-ui-tag: #eee;
-    --pagefind-ui-border-width: 1px;
-    --pagefind-ui-border-radius: 8px;
-    --pagefind-ui-image-box-ratio: 3 / 2;
-    --pagefind-ui-font: var(--font-serif);
-    --cancel-space: 5rem;
-    --pagefind-ui-image-border-radius: "unset";
-    --search-dialog-padding: 1rem;
-  }
-
-  #pagefind__search .pagefind-ui__search-input {
-    align-items: center;
-    border: none;
-    display: flex;
-    flex-shrink: 0;
-    font-family: var(--font-serif);
-    font-size: 1.125rem;
-    font-weight: normal;
-    height: 3.5rem;
-    left: 0;
-    outline: none;
-    width: calc(100% - (var(--cancel-space)));
-  }
-
-  #pagefind__search .pagefind-ui__search-input::placeholder {
-    color: #9ca3af;
-    opacity: 1;
-  }
-
-  #pagefind__search,
-  #pagefind__search .pagefind-ui__form,
-  #pagefind__search .pagefind-ui {
-    display: contents;
-  }
-
-  #pagefind__search .pagefind-ui__form::before {
-    height: calc(20px * var(--pagefind-ui-scale));
-    left: var(--search-dialog-padding);
-    margin: 18px 0;
-    position: absolute;
-    top: 0;
-    width: calc(20px * var(--pagefind-ui-scale));
-  }
-
-  #pagefind__search .pagefind-ui__form::after {
-    background-color: var(--border-default);
-    content: "";
-    height: 1px;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: calc(3.5rem + 1px);
-  }
-
-  #pagefind__search .pagefind-ui__drawer {
-    outline-offset: -2px;
-    overflow-y: auto;
-    overscroll-behavior: contain;
-  }
-
-  #pagefind__search .pagefind-ui__drawer:focus {
-    outline: 1px solid var(--fg-accent);
-  }
-
-  #pagefind__search .pagefind-ui__search-clear {
-    background-color: transparent;
-    background-color: var(--bg-subtle);
-    border-radius: 50%;
-    height: calc(24px * var(--pagefind-ui-scale));
-    inset-inline-end: var(--cancel-space);
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    right: calc(var(--search-dialog-padding) + var(--cancel-space) + 2px);
-    top: 1rem;
-    width: calc(24px * var(--pagefind-ui-scale));
-  }
-
-  #pagefind__search .pagefind-ui__search-clear:focus {
-    outline: 1px solid var(--fg-accent);
-  }
-
-  #pagefind__search .pagefind-ui__search-clear::before {
-    background-color: var(--fg-subtle);
-    content: "";
-    display: block;
-    display: flex;
-    height: 100%;
-    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='m13.41 12 6.3-6.29a1 1 0 1 0-1.42-1.42L12 10.59l-6.29-6.3a1 1 0 0 0-1.42 1.42l6.3 6.29-6.3 6.29a1 1 0 0 0 .33 1.64 1 1 0 0 0 1.09-.22l6.29-6.3 6.29 6.3a1 1 0 0 0 1.64-.33 1 1 0 0 0-.22-1.09L13.41 12Z'/%3E%3C/svg%3E")
-      center / 50% no-repeat;
-    padding: 0;
-    right: 0;
-    width: 100%;
-  }
-
-  #pagefind__search .pagefind-ui__message {
-    color: var(--fg-subtle);
-    font-family: var(--font-sans);
-    font-size: 0.75rem;
-    font-weight: normal;
-    padding: 1rem var(--search-dialog-padding);
-  }
-
-  #pagefind__search .pagefind-ui__results-area {
-    margin-top: 0;
-  }
-
-  #pagefind__search .pagefind-ui__result {
-    column-gap: 1.5rem;
-    display: grid;
-    grid-template-columns: min(25%, 80px) 1fr;
-    padding: 1rem var(--search-dialog-padding);
-  }
-
-  #pagefind__search .pagefind-ui__result-thumb {
-    aspect-ratio: unset;
-    max-width: unset;
-    position: unset;
-    width: 100%;
-  }
-
-  #pagefind__search .pagefind-ui__result-image {
-    left: unset;
-    margin: 0 auto;
-    position: unset;
-    transform: unset;
-  }
-
-  #pagefind__search .pagefind-ui__result:focus-within {
-    background-color: var(--bg-subtle);
-    outline: 1px solid var(--fg-accent);
-    outline-offset: -2px;
-  }
-
-  #pagefind__search .pagefind-ui__button {
-    background-color: var(--bg-canvas);
-    border-radius: unset;
-    color: var(--fg-default);
-    display: block;
-    font-family: var(--font-sans);
-    font-size: 1rem;
-    font-size: 12px;
-    font-weight: 500;
-    height: 2.5rem;
-    letter-spacing: 0.8px;
-    margin: 1rem auto;
-    max-width: 430px;
-    text-transform: uppercase;
-    width: calc(100% - 2 * var(--search-dialog-padding));
-  }
-
-  #pagefind__search .pagefind-ui__button:hover {
-    background-color: var(--bg-inverse);
-    border-color: inherit;
-    color: var(--fg-inverse);
-  }
-
-  #pagefind__search .pagefind-ui__result-title {
-    font-family: var(--font-sans);
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-
-  #pagefind__search .pagefind-ui__result-link {
-    color: var(--fg-accent);
-  }
-
-  #pagefind__search .pagefind-ui__result-excerpt {
-    font-family: var(--font-serif);
-    font-size: 0.875rem;
-    min-width: auto;
-  }
-
-  #pagefind__search .pagefind-ui__button:focus {
-    outline: 1px solid var(--fg-accent);
-    outline-offset: -2px;
-  }
-</style>
+<script src="./pageFind.ts"></script>
