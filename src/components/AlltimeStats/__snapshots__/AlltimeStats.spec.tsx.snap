@@ -70,7 +70,6 @@ exports[`/readings/stats > matches snapshot 1`] = `
           hover:text-accent
         "
                   href="/"
-                  style="text-shadow: unset;"
                 >
                   Home
                 </a>
@@ -84,7 +83,6 @@ exports[`/readings/stats > matches snapshot 1`] = `
           hover:text-accent
         "
                   href="/how-i-grade/"
-                  style="text-shadow: unset;"
                 >
                   How I Grade
                 </a>
@@ -98,7 +96,6 @@ exports[`/readings/stats > matches snapshot 1`] = `
           hover:text-accent
         "
                   href="/reviews/"
-                  style="text-shadow: unset;"
                 >
                   Reviews
                 </a>
@@ -112,7 +109,6 @@ exports[`/readings/stats > matches snapshot 1`] = `
           hover:text-accent
         "
                   href="/authors/"
-                  style="text-shadow: unset;"
                 >
                   Authors
                 </a>
@@ -126,7 +122,6 @@ exports[`/readings/stats > matches snapshot 1`] = `
           hover:text-accent
         "
                   href="/readings/"
-                  style="text-shadow: unset;"
                 >
                   Reading Log
                 </a>
