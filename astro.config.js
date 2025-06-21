@@ -1,13 +1,14 @@
 import react from "@astrojs/react";
 import sitemap from "@astrojs/sitemap";
 import playformInline from "@playform/inline";
-import tailwindcss from '@tailwindcss/vite'
+import tailwindcss from "@tailwindcss/vite";
 import compressor from "astro-compressor";
 import { defineConfig } from "astro/config";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { createIndex } from "pagefind";
 import sirv from "sirv";
+
 function contentHmr() {
   return {
     enforce: "post",
@@ -109,7 +110,7 @@ export default defineConfig({
       filter: (page) => page !== "https://www.franksbooklog.com/gone/",
     }),
     pagefind(),
-    playformInline(),
+    // playformInline(),
     compressor(),
   ],
   site: "https://www.franksbooklog.com",
