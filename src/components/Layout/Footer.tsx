@@ -133,7 +133,7 @@ function FooterLink({ href, text }: { href: string; text: string }) {
       className={`
         text-default underline decoration-subtle decoration-dashed
         underline-offset-4 transition-all duration-150 ease-out
-        hover:bg-[var(--fg-inverse)] hover:text-default hover:decoration-default
+        hover:bg-(--fg-inverse) hover:text-default hover:decoration-default
         hover:duration-75 hover:ease-in
       `}
       href={href}

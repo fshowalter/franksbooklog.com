@@ -23,7 +23,11 @@ export function Home({ backdropImageProps, deck, values }: Props): JSX.Element {
         deck={deck}
         imageProps={backdropImageProps}
         title="Frank's Book Log"
-        titleStyle="[text-shadow:1px_1px_2px_var(--bg-footer)] text-4xl desktop:text-7xl"
+        titleClasses={`
+          text-4xl
+          [text-shadow:1px_1px_2px_var(--bg-footer)]
+          desktop:text-7xl
+        `}
       />
       <nav
         className={`

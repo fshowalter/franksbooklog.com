@@ -15,7 +15,13 @@ export function StatsNavigation({
 }): JSX.Element {
   return (
     <nav className={ccn("bg-footer", className)}>
-      <ul className="scrollbar-hidden mx-auto flex max-w-(--breakpoint-max) overflow-x-auto px-container font-sans text-sm font-normal tracking-wide desktop:justify-center">
+      <ul
+        className={`
+          mx-auto flex scrollbar-hidden max-w-(--breakpoint-max) overflow-x-auto
+          px-container font-sans text-sm font-normal tracking-wide
+          desktop:justify-center
+        `}
+      >
         <AllTimeLink currentYear={currentYear} linkFunc={linkFunc} />
         {[...years].reverse().map((year) => {
           return (
@@ -41,15 +47,27 @@ function AllTimeLink({
 }): JSX.Element {
   return (
     <li
-      className={`text-center ${"all" === currentYear ? "bg-subtle text-default" : "text-inverse"}`}
+      className={`
+        text-center
+        ${"all" === currentYear ? "bg-subtle text-default" : `text-inverse`}
+      `}
     >
       {"all" === currentYear ? (
-        <div className="whitespace-nowrap bg-subtle p-4 text-default desktop:py-4">
+        <div
+          className={`
+            bg-subtle p-4 whitespace-nowrap text-default
+            desktop:py-4
+          `}
+        >
           All-Time
         </div>
       ) : (
         <a
-          className="block whitespace-nowrap p-4 hover:bg-accent hover:text-inverse desktop:py-4"
+          className={`
+            block p-4 whitespace-nowrap
+            hover:bg-accent hover:text-inverse
+            desktop:py-4
+          `}
           href={linkFunc("all")}
         >
           All-Time
@@ -70,13 +88,26 @@ function YearLink({
 }) {
   return (
     <li
-      className={`text-center ${year === currentYear ? "bg-subtle text-default" : "text-inverse"}`}
+      className={`
+        text-center
+        ${year === currentYear ? "bg-subtle text-default" : `text-inverse`}
+      `}
     >
       {year === currentYear ? (
-        <div className="bg-subtle p-4 text-default desktop:py-4">{year}</div>
+        <div
+          className={`
+            bg-subtle p-4 text-default
+            desktop:py-4
+          `}
+        >
+          {year}
+        </div>
       ) : (
         <a
-          className="block p-4 hover:bg-accent hover:text-inverse"
+          className={`
+            block p-4
+            hover:bg-accent hover:text-inverse
+          `}
           href={linkFunc(year)}
         >
           {year}

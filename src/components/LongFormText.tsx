@@ -11,7 +11,13 @@ export function LongFormText({
 }) {
   return (
     <RenderedMarkdown
-      className={ccn("tracking-0.3px text-md/7 tablet:text-xl/8", className)}
+      className={ccn(
+        `
+          text-md/7 tracking-[0.3px]
+          tablet:text-xl/8
+        `,
+        className,
+      )}
       text={text}
     />
   );
