@@ -120,7 +120,7 @@ export function HomeListItem({
             mt-2 h-4 w-20
             tablet:mt-3 tablet:h-[18px] tablet:w-[90px]
           `}
-          height={18}
+          height={16}
           value={value.grade}
         />
         <div
