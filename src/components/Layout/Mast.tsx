@@ -144,7 +144,7 @@ function NavListItem({
         `}
         href={value.target}
         style={{
-          textShadow: hasBackdrop ? "1px 1px 2px black" : "unset",
+          textShadow: hasBackdrop ? "1px 1px 2px black" : undefined,
         }}
       >
         {value.text}

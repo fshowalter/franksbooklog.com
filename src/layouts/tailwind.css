@@ -609,10 +609,7 @@
     }
 
     .pagefind-ui__result-image {
-      left: unset;
       margin: 0 auto;
-      position: unset;
-      transform: unset;
     }
 
     .pagefind-ui__result-link {
@@ -620,9 +617,6 @@
     }
 
     .pagefind-ui__result-thumb {
-      aspect-ratio: unset;
-      max-width: unset;
-      position: unset;
       width: 100%;
     }
 
