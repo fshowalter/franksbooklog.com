@@ -1,3 +1,6 @@
+// @ts-expect-error no types for PagefindUI
+import { PagefindUI } from "@pagefind/default-ui";
+
 (() => {
   const openBtn = document.querySelector("button[data-open-modal]");
   if (!openBtn) return;
@@ -82,11 +85,9 @@ globalThis.addEventListener("keydown", (e: KeyboardEvent) => {
 
 globalThis.addEventListener("DOMContentLoaded", () => {
   const onIdle = globalThis.requestIdleCallback || ((cb) => setTimeout(cb, 1));
-  // eslint-disable-next-line @typescript-eslint/no-misused-promises
-  onIdle(async () => {
-    // @ts-expect-error no types for PagefindUI
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-    const { PagefindUI } = await import("@pagefind/default-ui");
+
+  onIdle(() => {
+    // esli nt-disable-next-line @typescript-eslint/no-unsafe-assignment
     // eslint-disable-next-line @typescript-eslint/no-unsafe-call
     new PagefindUI({
       baseUrl: import.meta.env.BASE_URL,
