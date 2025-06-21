@@ -27,7 +27,7 @@ export function Mast({
       style={{
         backgroundImage: addGradient
           ? "linear-gradient(to bottom, rgba(0,0,0,.85), transparent 95%)"
-          : "unset",
+          : undefined,
         color: hasBackdrop ? "#fff" : "var(--fg-default)",
         position: staticMast ? "static" : "absolute",
       }}
