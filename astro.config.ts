@@ -1,3 +1,6 @@
+import type { AstroIntegration } from "astro";
+import type { HmrContext } from "vite";
+
 import react from "@astrojs/react";
 import sitemap from "@astrojs/sitemap";
 import tailwindcss from "@tailwindcss/vite";
@@ -10,9 +13,9 @@ import sirv from "sirv";
 
 function contentHmr() {
   return {
-    enforce: "post",
+    enforce: "post" as const,
     // HMR
-    handleHotUpdate({ file, server }) {
+    handleHotUpdate({ file, server }: HmrContext) {
       console.log(file);
       if (file.includes("/content/")) {
         console.log("reloading content file...");
@@ -26,9 +29,10 @@ function contentHmr() {
   };
 }
 
-function pagefind() {
-  let outDir;
-  let assets;
+function pagefind(): AstroIntegration {
+  let outDir: string;
+  let assets: null | string;
+
   return {
     hooks: {
       "astro:build:done": async ({ logger }) => {

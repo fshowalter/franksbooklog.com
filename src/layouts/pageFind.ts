@@ -87,7 +87,6 @@ globalThis.addEventListener("DOMContentLoaded", () => {
   const onIdle = globalThis.requestIdleCallback || ((cb) => setTimeout(cb, 1));
 
   onIdle(() => {
-    // esli nt-disable-next-line @typescript-eslint/no-unsafe-assignment
     // eslint-disable-next-line @typescript-eslint/no-unsafe-call
     new PagefindUI({
       baseUrl: import.meta.env.BASE_URL,
