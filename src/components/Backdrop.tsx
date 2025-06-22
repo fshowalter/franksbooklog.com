@@ -164,10 +164,9 @@ function Wrapper({
       className={`
         ${sizes}
         ${textInverse ? "text-inverse" : ""}
+        ${heroImage ? "bg-[#000]" : "bg-canvas"}
         relative flex w-full flex-col content-start items-center justify-end
-        gap-6 bg-canvas pt-40
-        tablet:pt-40
-        desktop:pt-40 desktop:pb-16
+        gap-6 pt-40
       `}
     >
       {heroImage}
@@ -188,13 +187,12 @@ function Wrapper({
             heroImage
               ? `
                 bg-linear-to-t from-[rgba(0,0,0,.85)] via-[rgba(0,0,0,.85)]
-                desktop:bg-none
+                desktop:bg-radial-[at_-50%_150%] desktop:to-75%
               `
               : ""
           }
           py-8
           tablet:pt-20 tablet:pb-10
-          desktop:py-0
         `}
       >
         {children}
