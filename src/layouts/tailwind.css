@@ -210,10 +210,6 @@
   }
 }
 
-@utility safari-border-radius-fix {
-  transform: translateZ(0);
-}
-
 @utility bg-progress-bar {
   background-image: linear-gradient(
     to right,
@@ -223,6 +219,10 @@
     transparent
   );
   opacity: 0.33;
+}
+
+@utility safari-border-radius-fix {
+  transform: translateZ(0);
 }
 
 @utility select-background-image {
