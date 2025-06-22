@@ -295,10 +295,9 @@ exports[`YearStats > matches snapshot for slug 2011 1`] = `
           class="
         min-h-[clamp(340px,50vh,1350px)]
         
+        bg-canvas
         relative flex w-full flex-col content-start items-center justify-end
-        gap-6 bg-canvas pt-40
-        tablet:pt-40
-        desktop:pt-40 desktop:pb-16
+        gap-6 pt-40
       "
         >
           <div
@@ -313,7 +312,6 @@ exports[`YearStats > matches snapshot for slug 2011 1`] = `
           
           py-8
           tablet:pt-20 tablet:pb-10
-          desktop:py-0
         "
           >
             <p
@@ -1370,10 +1368,9 @@ exports[`YearStats > matches snapshot for slug 2012 1`] = `
           class="
         min-h-[clamp(340px,50vh,1350px)]
         
+        bg-canvas
         relative flex w-full flex-col content-start items-center justify-end
-        gap-6 bg-canvas pt-40
-        tablet:pt-40
-        desktop:pt-40 desktop:pb-16
+        gap-6 pt-40
       "
         >
           <div
@@ -1388,7 +1385,6 @@ exports[`YearStats > matches snapshot for slug 2012 1`] = `
           
           py-8
           tablet:pt-20 tablet:pb-10
-          desktop:py-0
         "
           >
             <p
@@ -2791,10 +2787,9 @@ exports[`YearStats > matches snapshot for slug 2013 1`] = `
           class="
         min-h-[clamp(340px,50vh,1350px)]
         
+        bg-canvas
         relative flex w-full flex-col content-start items-center justify-end
-        gap-6 bg-canvas pt-40
-        tablet:pt-40
-        desktop:pt-40 desktop:pb-16
+        gap-6 pt-40
       "
         >
           <div
@@ -2809,7 +2804,6 @@ exports[`YearStats > matches snapshot for slug 2013 1`] = `
           
           py-8
           tablet:pt-20 tablet:pb-10
-          desktop:py-0
         "
           >
             <p
@@ -3968,10 +3962,9 @@ exports[`YearStats > matches snapshot for slug 2014 1`] = `
           class="
         min-h-[clamp(340px,50vh,1350px)]
         
+        bg-canvas
         relative flex w-full flex-col content-start items-center justify-end
-        gap-6 bg-canvas pt-40
-        tablet:pt-40
-        desktop:pt-40 desktop:pb-16
+        gap-6 pt-40
       "
         >
           <div
@@ -3986,7 +3979,6 @@ exports[`YearStats > matches snapshot for slug 2014 1`] = `
           
           py-8
           tablet:pt-20 tablet:pb-10
-          desktop:py-0
         "
           >
             <p
@@ -7007,10 +6999,9 @@ exports[`YearStats > matches snapshot for slug 2015 1`] = `
           class="
         min-h-[clamp(340px,50vh,1350px)]
         
+        bg-canvas
         relative flex w-full flex-col content-start items-center justify-end
-        gap-6 bg-canvas pt-40
-        tablet:pt-40
-        desktop:pt-40 desktop:pb-16
+        gap-6 pt-40
       "
         >
           <div
@@ -7025,7 +7016,6 @@ exports[`YearStats > matches snapshot for slug 2015 1`] = `
           
           py-8
           tablet:pt-20 tablet:pb-10
-          desktop:py-0
         "
           >
             <p
@@ -8435,10 +8425,9 @@ exports[`YearStats > matches snapshot for slug 2016 1`] = `
           class="
         min-h-[clamp(340px,50vh,1350px)]
         
+        bg-canvas
         relative flex w-full flex-col content-start items-center justify-end
-        gap-6 bg-canvas pt-40
-        tablet:pt-40
-        desktop:pt-40 desktop:pb-16
+        gap-6 pt-40
       "
         >
           <div
@@ -8453,7 +8442,6 @@ exports[`YearStats > matches snapshot for slug 2016 1`] = `
           
           py-8
           tablet:pt-20 tablet:pb-10
-          desktop:py-0
         "
           >
             <p
@@ -9748,10 +9736,9 @@ exports[`YearStats > matches snapshot for slug 2017 1`] = `
           class="
         min-h-[clamp(340px,50vh,1350px)]
         
+        bg-canvas
         relative flex w-full flex-col content-start items-center justify-end
-        gap-6 bg-canvas pt-40
-        tablet:pt-40
-        desktop:pt-40 desktop:pb-16
+        gap-6 pt-40
       "
         >
           <div
@@ -9766,7 +9753,6 @@ exports[`YearStats > matches snapshot for slug 2017 1`] = `
           
           py-8
           tablet:pt-20 tablet:pb-10
-          desktop:py-0
         "
           >
             <p
@@ -11129,10 +11115,9 @@ exports[`YearStats > matches snapshot for slug 2018 1`] = `
           class="
         min-h-[clamp(340px,50vh,1350px)]
         
+        bg-canvas
         relative flex w-full flex-col content-start items-center justify-end
-        gap-6 bg-canvas pt-40
-        tablet:pt-40
-        desktop:pt-40 desktop:pb-16
+        gap-6 pt-40
       "
         >
           <div
@@ -11147,7 +11132,6 @@ exports[`YearStats > matches snapshot for slug 2018 1`] = `
           
           py-8
           tablet:pt-20 tablet:pb-10
-          desktop:py-0
         "
           >
             <p
@@ -12306,10 +12290,9 @@ exports[`YearStats > matches snapshot for slug 2019 1`] = `
           class="
         min-h-[clamp(340px,50vh,1350px)]
         
+        bg-canvas
         relative flex w-full flex-col content-start items-center justify-end
-        gap-6 bg-canvas pt-40
-        tablet:pt-40
-        desktop:pt-40 desktop:pb-16
+        gap-6 pt-40
       "
         >
           <div
@@ -12324,7 +12307,6 @@ exports[`YearStats > matches snapshot for slug 2019 1`] = `
           
           py-8
           tablet:pt-20 tablet:pb-10
-          desktop:py-0
         "
           >
             <p
@@ -13381,10 +13363,9 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
           class="
         min-h-[clamp(340px,50vh,1350px)]
         
+        bg-canvas
         relative flex w-full flex-col content-start items-center justify-end
-        gap-6 bg-canvas pt-40
-        tablet:pt-40
-        desktop:pt-40 desktop:pb-16
+        gap-6 pt-40
       "
         >
           <div
@@ -13399,7 +13380,6 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
           
           py-8
           tablet:pt-20 tablet:pb-10
-          desktop:py-0
         "
           >
             <p
@@ -16904,10 +16884,9 @@ exports[`YearStats > matches snapshot for slug 2023 1`] = `
           class="
         min-h-[clamp(340px,50vh,1350px)]
         
+        bg-canvas
         relative flex w-full flex-col content-start items-center justify-end
-        gap-6 bg-canvas pt-40
-        tablet:pt-40
-        desktop:pt-40 desktop:pb-16
+        gap-6 pt-40
       "
         >
           <div
@@ -16922,7 +16901,6 @@ exports[`YearStats > matches snapshot for slug 2023 1`] = `
           
           py-8
           tablet:pt-20 tablet:pb-10
-          desktop:py-0
         "
           >
             <p
@@ -18647,10 +18625,9 @@ exports[`YearStats > matches snapshot for slug 2024 1`] = `
           class="
         min-h-[clamp(340px,50vh,1350px)]
         
+        bg-canvas
         relative flex w-full flex-col content-start items-center justify-end
-        gap-6 bg-canvas pt-40
-        tablet:pt-40
-        desktop:pt-40 desktop:pb-16
+        gap-6 pt-40
       "
         >
           <div
@@ -18665,7 +18642,6 @@ exports[`YearStats > matches snapshot for slug 2024 1`] = `
           
           py-8
           tablet:pt-20 tablet:pb-10
-          desktop:py-0
         "
           >
             <p
@@ -19824,10 +19800,9 @@ exports[`YearStats > matches snapshot for slug 2025 1`] = `
           class="
         min-h-[clamp(340px,50vh,1350px)]
         
+        bg-canvas
         relative flex w-full flex-col content-start items-center justify-end
-        gap-6 bg-canvas pt-40
-        tablet:pt-40
-        desktop:pt-40 desktop:pb-16
+        gap-6 pt-40
       "
         >
           <div
@@ -19842,7 +19817,6 @@ exports[`YearStats > matches snapshot for slug 2025 1`] = `
           
           py-8
           tablet:pt-20 tablet:pb-10
-          desktop:py-0
         "
           >
             <p

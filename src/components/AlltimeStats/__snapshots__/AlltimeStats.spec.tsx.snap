@@ -295,10 +295,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
           class="
         min-h-[clamp(340px,50vh,1350px)]
         
+        bg-canvas
         relative flex w-full flex-col content-start items-center justify-end
-        gap-6 bg-canvas pt-40
-        tablet:pt-40
-        desktop:pt-40 desktop:pb-16
+        gap-6 pt-40
       "
         >
           <div
@@ -313,7 +312,6 @@ exports[`/readings/stats > matches snapshot 1`] = `
           
           py-8
           tablet:pt-20 tablet:pb-10
-          desktop:py-0
         "
           >
             <p
