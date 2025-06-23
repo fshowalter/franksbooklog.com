@@ -186,10 +186,13 @@ function Wrapper({
           ${
             heroImage
               ? `
-                after:absolute after:top-0 after:left-0 after:-z-10 after:h-full
-                after:w-full after:bg-radial-[at_-150%_150%]
-                after:from-[rgba(0,0,0,.85)] after:via-[rgba(0,0,0,.85)]
-                after:to-75%
+                bg-linear-to-t from-[rgba(0,0,0,.85)] via-[rgba(0,0,0,.85)]
+                to-85%
+                tablet:bg-none tablet:after:absolute tablet:after:top-0
+                tablet:after:left-0 tablet:after:-z-10 tablet:after:h-full
+                tablet:after:w-full tablet:after:bg-radial-[at_-100%_200%]
+                tablet:after:from-[rgba(0,0,0,.85)]
+                tablet:after:via-[rgba(0,0,0,.85)] tablet:after:to-75%
               `
               : ""
           }
