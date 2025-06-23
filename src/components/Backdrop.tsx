@@ -186,8 +186,10 @@ function Wrapper({
           ${
             heroImage
               ? `
-                bg-linear-to-t from-[rgba(0,0,0,.85)] via-[rgba(0,0,0,.85)]
-                desktop:bg-radial-[at_-50%_150%] desktop:to-75%
+                after:absolute after:top-0 after:left-0 after:-z-10 after:h-full
+                after:w-full after:bg-radial-[at_-150%_150%]
+                after:from-[rgba(0,0,0,.85)] after:via-[rgba(0,0,0,.85)]
+                after:to-75%
               `
               : ""
           }
