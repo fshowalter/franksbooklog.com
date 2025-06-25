@@ -315,7 +315,7 @@ exports[`Home > matches snapshot 1`] = `
             <h1
               class="
           text-4xl leading-8
-          [text-shadow:1px_1px_2px_var(--bg-footer)]
+          [text-shadow:1px_1px_2px_black]
           tablet:text-5xl tablet:leading-10
           desktop:text-7xl desktop:leading-10
         "
