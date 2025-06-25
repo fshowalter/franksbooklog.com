@@ -149,21 +149,21 @@
                   let s = this.getAttribute("component-url") || "<unknown>",
                     v = this.getAttribute("component-export");
                   throw (
-                    (v && (s += ` (export ${v})`),
+                    v && (s += ` (export ${v})`),
                     console.error(
                       `[hydrate] Error parsing props for component ${s}`,
                       this.getAttribute("props"),
                       r,
                     ),
-                    r)
+                    r
                   );
                 }
                 let u;
-                await this.hydrator(this)(this.Component, p, n, {
+                (await this.hydrator(this)(this.Component, p, n, {
                   client: this.getAttribute("client"),
                 }),
                   this.removeAttribute("ssr"),
-                  this.dispatchEvent(new CustomEvent("astro:hydrate"));
+                  this.dispatchEvent(new CustomEvent("astro:hydrate")));
               });
               d(this, "unmount", () => {
                 this.isConnected ||
@@ -171,10 +171,10 @@
               });
             }
             disconnectedCallback() {
-              document.removeEventListener("astro:after-swap", this.unmount),
+              (document.removeEventListener("astro:after-swap", this.unmount),
                 document.addEventListener("astro:after-swap", this.unmount, {
                   once: !0,
-                });
+                }));
             }
             connectedCallback() {
               if (
@@ -185,9 +185,9 @@
                 this.childrenConnectedCallback();
               else {
                 let e = () => {
-                    document.removeEventListener("DOMContentLoaded", e),
+                    (document.removeEventListener("DOMContentLoaded", e),
                       c.disconnect(),
-                      this.childrenConnectedCallback();
+                      this.childrenConnectedCallback());
                   },
                   c = new MutationObserver(() => {
                     var n;
@@ -196,13 +196,13 @@
                       this.lastChild.nodeValue === "astro:end" &&
                       (this.lastChild.remove(), e());
                   });
-                c.observe(this, { childList: !0 }),
-                  document.addEventListener("DOMContentLoaded", e);
+                (c.observe(this, { childList: !0 }),
+                  document.addEventListener("DOMContentLoaded", e));
               }
             }
             async childrenConnectedCallback() {
               let e = this.getAttribute("before-hydration-url");
-              e && (await import(e)), this.start();
+              (e && (await import(e)), this.start());
             }
             async start() {
               let e = JSON.parse(this.getAttribute("opts")),
@@ -228,7 +228,7 @@
                       for (let f of u.split("."))
                         this.Component = this.Component[f];
                     }
-                    return (this.hydrator = p), this.hydrate;
+                    return ((this.hydrator = p), this.hydrate);
                   },
                   e,
                   this,
@@ -244,9 +244,9 @@
               this.hydrate();
             }
           }
-          d(y, "observedAttributes", ["props"]),
+          (d(y, "observedAttributes", ["props"]),
             customElements.get("astro-island") ||
-              customElements.define("astro-island", y);
+              customElements.define("astro-island", y));
         }
       })();
     </script>
