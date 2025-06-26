@@ -48,6 +48,7 @@ export function Home({ backdropImageProps, deck, values }: Props): JSX.Element {
         <ol
           className={`
             flex flex-wrap justify-center gap-x-[4%] gap-y-[6vw] px-[4%]
+            max:gap-y-12
             tablet:gap-x-[3%] tablet:px-0
             desktop:justify-between desktop:gap-x-[1%]
           `}
