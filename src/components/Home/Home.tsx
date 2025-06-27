@@ -33,14 +33,14 @@ export function Home({ backdropImageProps, deck, values }: Props): JSX.Element {
       <nav
         className={`
           mx-auto max-w-(--breakpoint-max)
-          tablet:px-container
+          min-[600px]:px-container
         `}
       >
         <SubHeading
           as="h2"
           className={`
             px-container
-            tablet:px-0
+            min-[600px]:px-0
           `}
         >
           Latest Reviews
@@ -48,9 +48,8 @@ export function Home({ backdropImageProps, deck, values }: Props): JSX.Element {
         <ol
           className={`
             flex flex-wrap justify-center gap-x-[4%] gap-y-[6vw] px-[4%]
-            max:gap-y-12
-            tablet:gap-x-[3%] tablet:px-0
-            desktop:justify-between desktop:gap-x-[1%]
+            min-[600px]:-mx-4 min-[600px]:gap-x-0 min-[600px]:px-0
+            desktop:justify-between desktop:gap-y-4
           `}
         >
           {values.map((value, index) => {

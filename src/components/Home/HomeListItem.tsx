@@ -40,13 +40,12 @@ export function HomeListItem({
   return (
     <li
       className={`
-        relative flex w-[48%] max-w-[248px] flex-col items-center border-default
-        bg-default
+        relative flex w-[48%] max-w-[280px] flex-col items-center border-default
         has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
-        min-[600px]:w-[30.66666667%]
-        tablet:w-[31.33333333%]
-        min-[900px]:w-[22.75%]
-        desktop:w-[15.75%]
+        max:w-[100%]
+        min-[600px]:w-[33.33333333%] min-[600px]:p-4
+        min-[900px]:w-[25%]
+        min-[1280px]:w-[20%]
       `}
     >
       <Cover
@@ -60,7 +59,7 @@ export function HomeListItem({
       />
       <div
         className={`
-          flex w-full grow flex-col px-[8%] pb-8
+          flex w-full grow flex-col bg-default px-[8%] pb-8
           desktop:pr-[10%] desktop:pl-[8.5%]
         `}
       >
