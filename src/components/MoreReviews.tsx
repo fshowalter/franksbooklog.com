@@ -38,25 +38,18 @@ export function MoreReviews({
   return (
     <nav
       className={`
-        mx-auto w-full max-w-(--breakpoint-max) bg-subtle
-        tablet:max-w-popout
+        mx-auto w-full max-w-(--breakpoint-max) bg-subtle px-container
+        tablet:max-w-popout tablet:px-0
         desktop:max-w-(--breakpoint-max) desktop:px-container
       `}
       data-page-find-ignore
     >
-      <div
-        className={`
-          px-container
-          tablet:px-0
-        `}
-      >
-        {children}
-      </div>
+      <div className={``}>{children}</div>
       <ul
         className={`
-          flex flex-wrap justify-center gap-x-[4%] gap-y-[6vw] px-[4%]
-          tablet:gap-x-[3%] tablet:px-0
-          desktop:justify-between desktop:gap-x-[1%]
+          -mx-4 flex flex-wrap justify-center gap-x-[4%] gap-y-[6vw] px-[4%]
+          min-[600px]:gap-x-0 min-[600px]:px-0
+          desktop:justify-between desktop:gap-y-4
         `}
       >
         {values.map((value) => {
@@ -71,12 +64,11 @@ function MoreReviewsCard({ value }: { value: MoreReviewsValue }): JSX.Element {
   return (
     <li
       className={`
-        relative flex w-[48%] max-w-[248px] flex-col items-center border-default
-        bg-default
+        relative flex w-[48%] max-w-[280px] flex-col items-center border-default
         has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
-        min-[600px]:w-[30.66666667%]
-        tablet:w-[31.33333333%]
-        desktop:w-[15.75%]
+        max:w-[100%]
+        min-[600px]:w-[33.33333333%] min-[600px]:p-4
+        min-[1280px]:w-[16.66666667%]
       `}
     >
       <Cover
@@ -88,15 +80,15 @@ function MoreReviewsCard({ value }: { value: MoreReviewsValue }): JSX.Element {
       />
       <div
         className={`
-          flex w-full grow flex-col px-[8%] pb-8
+          flex w-full grow flex-col bg-default px-[8%] pb-8
           desktop:pr-[10%] desktop:pl-[8.5%]
         `}
       >
         <div
           className={`
-            pt-4 font-sans text-sm font-medium
+            pt-4 text-sm font-medium
             max:text-xl max:leading-6
-            tablet:pt-5 tablet:font-serif tablet:text-md tablet:leading-5
+            tablet:pt-5 tablet:text-md tablet:leading-5
           `}
         >
           <a
@@ -116,7 +108,7 @@ function MoreReviewsCard({ value }: { value: MoreReviewsValue }): JSX.Element {
         </div>
         <p
           className={`
-            pt-1 font-sans text-xs leading-4 font-light text-subtle
+            pt-1 text-xs leading-4 font-light text-subtle
             tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
           `}
         >

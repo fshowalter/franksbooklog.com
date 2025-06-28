@@ -30,25 +30,12 @@ export function Home({ backdropImageProps, deck, values }: Props): JSX.Element {
           desktop:text-7xl desktop:leading-10
         `}
       />
-      <nav
-        className={`
-          mx-auto max-w-(--breakpoint-max)
-          min-[600px]:px-container
-        `}
-      >
-        <SubHeading
-          as="h2"
-          className={`
-            px-container
-            min-[600px]:px-0
-          `}
-        >
-          Latest Reviews
-        </SubHeading>
+      <nav className={`mx-auto max-w-(--breakpoint-max) px-container`}>
+        <SubHeading as="h2">Latest Reviews</SubHeading>
         <ol
           className={`
-            flex flex-wrap justify-center gap-x-[4%] gap-y-[6vw] px-[4%]
-            min-[600px]:-mx-4 min-[600px]:gap-x-0 min-[600px]:px-0
+            -mx-4 flex flex-wrap justify-center
+            min-[900px]:-mx-4
             desktop:justify-between desktop:gap-y-4
           `}
         >

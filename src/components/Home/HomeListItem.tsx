@@ -40,12 +40,12 @@ export function HomeListItem({
   return (
     <li
       className={`
-        relative flex w-[48%] max-w-[280px] flex-col items-center border-default
+        relative flex w-[50%] max-w-[280px] flex-col items-center p-2
         has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
         max:w-[100%]
         min-[600px]:w-[33.33333333%] min-[600px]:p-4
         min-[900px]:w-[25%]
-        min-[1280px]:w-[20%]
+        min-[1280px]:w-[16.66666667%]
       `}
     >
       <Cover
