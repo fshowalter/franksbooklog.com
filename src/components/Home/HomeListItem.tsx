@@ -44,15 +44,15 @@ export function HomeListItem({
         has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
         max:w-[100%]
         min-[500px]:p-4
-        min-[600px]:w-[33.33333333%]
+        min-[640px]:w-[33.33333333%]
         min-[900px]:w-[25%]
-        min-[1280px]:w-[16.66666667%]
+        min-[1360px]:w-[16.66666667%]
       `}
     >
       <div
         className={`
           flex h-full w-full flex-col bg-default
-          min-[500px]:px-8 min-[500px]:pt-6 min-[500px]:pb-4
+          min-[640px]:px-8 min-[640px]:pt-6 min-[640px]:pb-4
         `}
       >
         <Cover
@@ -67,7 +67,7 @@ export function HomeListItem({
         <div
           className={`
             flex w-full grow flex-col bg-default px-[8%] pb-8
-            min-[600px]:px-0 min-[600px]:pb-4
+            min-[640px]:px-0 min-[640px]:pb-4
           `}
         >
           <div
@@ -88,11 +88,13 @@ export function HomeListItem({
             <a
               className={`
                 inline-block
-                before:absolute before:inset-x-4 before:top-4
+                before:absolute before:inset-x-2 before:top-2
                 before:aspect-cover before:bg-default before:opacity-15
                 after:absolute after:top-0 after:left-0 after:z-10
                 after:size-full after:opacity-0
                 hover:text-accent hover:before:opacity-0
+                min-[500px]:before:inset-x-4 min-[500px]:before:top-4
+                min-[640px]:before:inset-x-12 min-[640px]:before:top-10
               `}
               href={`/reviews/${value.slug}/`}
               rel="canonical"

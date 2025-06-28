@@ -47,8 +47,9 @@ export function MoreReviews({
       <div className={``}>{children}</div>
       <ul
         className={`
-          -mx-4 flex flex-wrap content-stretch justify-center
-          min-[500px]:-mx-12
+          -mx-2 flex flex-wrap content-stretch justify-center
+          min-[500px]:-mx-4
+          min-[736px]:-mx-12
           desktop:justify-between desktop:gap-y-4
         `}
       >
@@ -64,19 +65,19 @@ function MoreReviewsCard({ value }: { value: MoreReviewsValue }): JSX.Element {
   return (
     <li
       className={`
-        relative flex w-[48%] max-w-[344px] flex-col items-center border-default
+        relative flex w-[50%] max-w-[344px] flex-col items-center border-default
         p-2
         has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
         max:w-[100%]
         min-[500px]:p-4
-        min-[600px]:w-[33.33333333%]
+        min-[640px]:w-[33.33333333%]
         min-[1280px]:w-[16.66666667%]
       `}
     >
       <div
         className={`
           flex h-full w-full flex-col bg-default
-          min-[500px]:px-8 min-[500px]:py-4
+          min-[640px]:px-8 min-[640px]:pt-6 min-[640px]:pb-4
         `}
       >
         <Cover
@@ -89,7 +90,7 @@ function MoreReviewsCard({ value }: { value: MoreReviewsValue }): JSX.Element {
         <div
           className={`
             flex w-full grow flex-col bg-default px-[8%] pb-8
-            min-[600px]:px-0 min-[600px]:pb-4
+            min-[640px]:px-0 min-[640px]:pb-4
           `}
         >
           <div
@@ -107,6 +108,8 @@ function MoreReviewsCard({ value }: { value: MoreReviewsValue }): JSX.Element {
                 after:absolute after:top-0 after:left-0 after:z-10
                 after:size-full after:opacity-0
                 hover:text-accent hover:before:opacity-0
+                min-[500px]:before:inset-x-4 min-[500px]:before:top-4
+                min-[640px]:before:inset-x-12 min-[640px]:before:top-10
               `}
               href={`/reviews/${value.slug}/`}
               rel="canonical"
