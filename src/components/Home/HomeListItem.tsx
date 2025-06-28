@@ -40,11 +40,11 @@ export function HomeListItem({
   return (
     <li
       className={`
-        relative flex w-[50%] max-w-[344px] grow flex-col items-center
-        self-stretch p-2
+        relative flex w-[50%] max-w-[344px] grow flex-col items-center p-2
         has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
         max:w-[100%]
-        min-[600px]:w-[33.33333333%] min-[600px]:p-4
+        min-[500px]:p-4
+        min-[600px]:w-[33.33333333%]
         min-[900px]:w-[25%]
         min-[1280px]:w-[16.66666667%]
       `}
@@ -52,7 +52,7 @@ export function HomeListItem({
       <div
         className={`
           flex h-full w-full flex-col bg-default
-          min-[600px]:px-8 min-[600px]:py-4
+          min-[500px]:px-8 min-[500px]:pt-8 min-[500px]:pb-4
         `}
       >
         <Cover
@@ -88,7 +88,7 @@ export function HomeListItem({
             <a
               className={`
                 inline-block
-                before:absolute before:inset-x-0 before:top-0
+                before:absolute before:inset-x-4 before:top-4
                 before:aspect-cover before:bg-default before:opacity-15
                 after:absolute after:top-0 after:left-0 after:z-10
                 after:size-full after:opacity-0

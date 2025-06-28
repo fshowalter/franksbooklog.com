@@ -47,8 +47,8 @@ export function MoreReviews({
       <div className={``}>{children}</div>
       <ul
         className={`
-          -mx-4 flex flex-wrap justify-center gap-x-[4%] gap-y-[6vw] px-[4%]
-          min-[600px]:gap-x-0 min-[600px]:px-0
+          -mx-4 flex flex-wrap content-stretch justify-center
+          min-[500px]:-mx-12
           desktop:justify-between desktop:gap-y-4
         `}
       >
@@ -64,90 +64,99 @@ function MoreReviewsCard({ value }: { value: MoreReviewsValue }): JSX.Element {
   return (
     <li
       className={`
-        relative flex w-[48%] max-w-[280px] flex-col items-center border-default
+        relative flex w-[48%] max-w-[344px] flex-col items-center border-default
+        p-2
         has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
         max:w-[100%]
-        min-[600px]:w-[33.33333333%] min-[600px]:p-4
+        min-[500px]:p-4
+        min-[600px]:w-[33.33333333%]
         min-[1280px]:w-[16.66666667%]
       `}
     >
-      <Cover
-        decoding="async"
-        imageProps={value.coverImageProps}
-        {...MoreReviewsImageConfig}
-        alt=""
-        loading="lazy"
-      />
       <div
         className={`
-          flex w-full grow flex-col bg-default px-[8%] pb-8
-          desktop:pr-[10%] desktop:pl-[8.5%]
+          flex h-full w-full flex-col bg-default
+          min-[500px]:px-8 min-[500px]:py-4
         `}
       >
-        <div
-          className={`
-            pt-4 font-sans text-sm font-medium
-            max:text-xl max:leading-6
-            tablet:pt-5 tablet:font-serif tablet:text-md tablet:leading-5
-          `}
-        >
-          <a
-            className={`
-              inline-block
-              before:absolute before:inset-x-0 before:top-0 before:aspect-cover
-              before:bg-default before:opacity-15
-              after:absolute after:top-0 after:left-0 after:z-10 after:size-full
-              after:opacity-0
-              hover:text-accent hover:before:opacity-0
-            `}
-            href={`/reviews/${value.slug}/`}
-            rel="canonical"
-          >
-            {value.title}
-          </a>
-        </div>
-        <p
-          className={`
-            pt-1 font-sans text-xs leading-4 font-light text-subtle
-            tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
-          `}
-        >
-          <span
-            className={`
-              hidden
-              tablet:inline
-            `}
-          >
-            by{" "}
-          </span>
-          {toSentenceArray(
-            value.authors.map((author) => {
-              return (
-                <AuthorLink
-                  as="span"
-                  key={author.name}
-                  name={author.name}
-                  notes={author.notes}
-                />
-              );
-            }),
-          )}
-        </p>{" "}
-        <Grade
-          className={`
-            mt-2 h-4 w-20
-            tablet:mt-3 tablet:h-[18px] tablet:w-[90px]
-          `}
-          height={18}
-          value={value.grade}
+        <Cover
+          decoding="async"
+          imageProps={value.coverImageProps}
+          {...MoreReviewsImageConfig}
+          alt=""
+          loading="lazy"
         />
         <div
           className={`
-            mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
-            text-subtle
+            flex w-full grow flex-col bg-default px-[8%] pb-8
+            min-[600px]:px-0 min-[600px]:pb-4
           `}
         >
-          {value.kind} | {value.yearPublished}
+          <div
+            className={`
+              pt-4 font-sans text-sm font-medium
+              max:text-xl max:leading-6
+              tablet:pt-5 tablet:font-serif tablet:text-md tablet:leading-5
+            `}
+          >
+            <a
+              className={`
+                inline-block
+                before:absolute before:inset-x-0 before:top-0
+                before:aspect-cover before:bg-default before:opacity-15
+                after:absolute after:top-0 after:left-0 after:z-10
+                after:size-full after:opacity-0
+                hover:text-accent hover:before:opacity-0
+              `}
+              href={`/reviews/${value.slug}/`}
+              rel="canonical"
+            >
+              {value.title}
+            </a>
+          </div>
+          <p
+            className={`
+              pt-1 font-sans text-xs leading-4 font-light text-subtle
+              tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
+            `}
+          >
+            <span
+              className={`
+                hidden
+                tablet:inline
+              `}
+            >
+              by{" "}
+            </span>
+            {toSentenceArray(
+              value.authors.map((author) => {
+                return (
+                  <AuthorLink
+                    as="span"
+                    key={author.name}
+                    name={author.name}
+                    notes={author.notes}
+                  />
+                );
+              }),
+            )}
+          </p>{" "}
+          <Grade
+            className={`
+              mt-2 h-4 w-20
+              tablet:mt-3 tablet:h-[18px] tablet:w-[90px]
+            `}
+            height={18}
+            value={value.grade}
+          />
+          <div
+            className={`
+              mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
+              text-subtle
+            `}
+          >
+            {value.kind} | {value.yearPublished}
+          </div>
         </div>
       </div>
     </li>
