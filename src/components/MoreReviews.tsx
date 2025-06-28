@@ -40,7 +40,7 @@ export function MoreReviews({
       className={`
         mx-auto w-full max-w-(--breakpoint-max) bg-subtle px-container
         tablet:max-w-popout tablet:px-0
-        desktop:max-w-(--breakpoint-max) desktop:px-container
+        min-[1360px]:max-w-(--breakpoint-max) min-[1360px]:px-container
       `}
       data-page-find-ignore
     >
@@ -48,9 +48,9 @@ export function MoreReviews({
       <ul
         className={`
           -mx-2 flex flex-wrap content-stretch justify-center
-          min-[500px]:-mx-4
+          min-[496px]:-mx-4
           min-[736px]:-mx-12
-          desktop:justify-between desktop:gap-y-4
+          min-[1360px]:gap-y-4
         `}
       >
         {values.map((value) => {
@@ -69,15 +69,16 @@ function MoreReviewsCard({ value }: { value: MoreReviewsValue }): JSX.Element {
         p-2
         has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
         max:w-[100%]
-        min-[500px]:p-4
-        min-[640px]:w-[33.33333333%]
-        min-[1280px]:w-[16.66666667%]
+        min-[496px]:p-4
+        min-[768px]:w-[33.33333333%]
+        min-[1360px]:w-[16.66666667%]
       `}
     >
       <div
         className={`
           flex h-full w-full flex-col bg-default
-          min-[640px]:px-8 min-[640px]:pt-6 min-[640px]:pb-4
+          min-[496px]:px-8 min-[496px]:pb-4
+          min-[640px]:pt-6
         `}
       >
         <Cover
@@ -90,7 +91,7 @@ function MoreReviewsCard({ value }: { value: MoreReviewsValue }): JSX.Element {
         <div
           className={`
             flex w-full grow flex-col bg-default px-[8%] pb-8
-            min-[640px]:px-0 min-[640px]:pb-4
+            min-[496px]:px-0 min-[496px]:pb-4
           `}
         >
           <div
@@ -108,8 +109,7 @@ function MoreReviewsCard({ value }: { value: MoreReviewsValue }): JSX.Element {
                 after:absolute after:top-0 after:left-0 after:z-10
                 after:size-full after:opacity-0
                 hover:text-accent hover:before:opacity-0
-                min-[500px]:before:inset-x-4 min-[500px]:before:top-4
-                min-[640px]:before:inset-x-12 min-[640px]:before:top-10
+                min-[496px]:before:inset-x-12 min-[496px]:before:top-10
               `}
               href={`/reviews/${value.slug}/`}
               rel="canonical"

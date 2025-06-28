@@ -375,7 +375,7 @@
             data-pagefind-ignore="true"
           >
             <nav
-              class="mx-auto w-full max-w-(--breakpoint-max) bg-subtle px-container tablet:max-w-popout tablet:px-0 desktop:max-w-(--breakpoint-max) desktop:px-container"
+              class="mx-auto w-full max-w-(--breakpoint-max) bg-subtle px-container tablet:max-w-popout tablet:px-0 min-[1360px]:max-w-(--breakpoint-max) min-[1360px]:px-container"
               data-page-find-ignore="true"
             >
               <div class="">
@@ -387,353 +387,377 @@
                 </h2>
               </div>
               <ul
-                class="-mx-4 flex flex-wrap justify-center gap-x-[4%] gap-y-[6vw] px-[4%] min-[600px]:gap-x-0 min-[600px]:px-0 desktop:justify-between desktop:gap-y-4"
+                class="-mx-2 flex flex-wrap content-stretch justify-center min-[496px]:-mx-4 min-[736px]:-mx-12 min-[1360px]:gap-y-4"
               >
                 <li
-                  class="relative flex w-[48%] max-w-[280px] flex-col items-center border-default has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover max:w-[100%] min-[600px]:w-[33.33333333%] min-[600px]:p-4 min-[1280px]:w-[16.66666667%]"
+                  class="relative flex w-[50%] max-w-[344px] flex-col items-center border-default p-2 has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover max:w-[100%] min-[496px]:p-4 min-[768px]:w-[33.33333333%] min-[1360px]:w-[16.66666667%]"
                 >
-                  <img
-                    src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdracula-by-bram-stoker.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
-                    srcset="
-                      /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdracula-by-bram-stoker.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;h=93&amp;q=80&amp;f=avif    62w,
-                      /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdracula-by-bram-stoker.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;h=186&amp;q=80&amp;f=avif 124w,
-                      /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdracula-by-bram-stoker.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif 248w,
-                      /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdracula-by-bram-stoker.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;h=744&amp;q=80&amp;f=avif 496w
-                    "
-                    height="372"
-                    sizes="(min-width: 1800px) 218px, (min-width: 1280px) calc(11.8vw + 8px), (min-width: 820px) 216px, (min-width: 600px) calc(23.5vw + 28px), calc(41.43vw + 8px)"
-                    width="248"
-                    alt=""
-                    decoding="async"
-                    loading="lazy"
-                    style="aspect-ratio: 0.66666667"
-                  />
                   <div
-                    class="flex w-full grow flex-col bg-default px-[8%] pb-8 desktop:pr-[10%] desktop:pl-[8.5%]"
+                    class="flex h-full w-full flex-col bg-default min-[496px]:px-8 min-[496px]:pb-4 min-[640px]:pt-6"
                   >
+                    <img
+                      src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdracula-by-bram-stoker.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
+                      srcset="
+                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdracula-by-bram-stoker.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;h=93&amp;q=80&amp;f=avif    62w,
+                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdracula-by-bram-stoker.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;h=186&amp;q=80&amp;f=avif 124w,
+                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdracula-by-bram-stoker.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif 248w,
+                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdracula-by-bram-stoker.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;h=744&amp;q=80&amp;f=avif 496w
+                      "
+                      height="372"
+                      sizes="(min-width: 1800px) 218px, (min-width: 1280px) calc(11.8vw + 8px), (min-width: 820px) 216px, (min-width: 600px) calc(23.5vw + 28px), calc(41.43vw + 8px)"
+                      width="248"
+                      alt=""
+                      decoding="async"
+                      loading="lazy"
+                      style="aspect-ratio: 0.66666667"
+                    />
                     <div
-                      class="pt-4 font-sans text-sm font-medium max:text-xl max:leading-6 tablet:pt-5 tablet:font-serif tablet:text-md tablet:leading-5"
+                      class="flex w-full grow flex-col bg-default px-[8%] pb-8 min-[496px]:px-0 min-[496px]:pb-4"
                     >
-                      <a
-                        class="inline-block before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:z-10 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0"
-                        href="/reviews/dracula-by-bram-stoker/"
-                        rel="canonical"
-                        >Dracula</a
+                      <div
+                        class="pt-4 font-sans text-sm font-medium max:text-xl max:leading-6 tablet:pt-5 tablet:font-serif tablet:text-md tablet:leading-5"
                       >
-                    </div>
-                    <p
-                      class="pt-1 font-sans text-xs leading-4 font-light text-subtle tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5"
-                    >
-                      <span class="hidden tablet:inline">by<!-- --> </span
-                      ><span>Bram Stoker</span>
-                    </p>
-                    <picture
-                      ><source
-                        media="(prefers-color-scheme: dark)"
-                        srcset="/svg/3-stars-dark.svg" />
-                      <img
-                        alt="C+: 3 stars (out of 5)"
-                        class="mt-2 h-4 w-20 tablet:mt-3 tablet:h-[18px] tablet:w-[90px]"
-                        height="18"
-                        src="/svg/3-stars.svg"
-                        width="90"
-                    /></picture>
-                    <div
-                      class="mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide text-subtle"
-                    >
-                      Novel<!-- -->
-                      |
-                      <!-- -->1897
+                        <a
+                          class="inline-block before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:z-10 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 min-[496px]:before:inset-x-12 min-[496px]:before:top-10"
+                          href="/reviews/dracula-by-bram-stoker/"
+                          rel="canonical"
+                          >Dracula</a
+                        >
+                      </div>
+                      <p
+                        class="pt-1 font-sans text-xs leading-4 font-light text-subtle tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5"
+                      >
+                        <span class="hidden tablet:inline">by<!-- --> </span
+                        ><span>Bram Stoker</span>
+                      </p>
+                      <picture
+                        ><source
+                          media="(prefers-color-scheme: dark)"
+                          srcset="/svg/3-stars-dark.svg" />
+                        <img
+                          alt="C+: 3 stars (out of 5)"
+                          class="mt-2 h-4 w-20 tablet:mt-3 tablet:h-[18px] tablet:w-[90px]"
+                          height="18"
+                          src="/svg/3-stars.svg"
+                          width="90"
+                      /></picture>
+                      <div
+                        class="mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide text-subtle"
+                      >
+                        Novel<!-- -->
+                        |
+                        <!-- -->1897
+                      </div>
                     </div>
                   </div>
                 </li>
                 <li
-                  class="relative flex w-[48%] max-w-[280px] flex-col items-center border-default has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover max:w-[100%] min-[600px]:w-[33.33333333%] min-[600px]:p-4 min-[1280px]:w-[16.66666667%]"
+                  class="relative flex w-[50%] max-w-[344px] flex-col items-center border-default p-2 has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover max:w-[100%] min-[496px]:p-4 min-[768px]:w-[33.33333333%] min-[1360px]:w-[16.66666667%]"
                 >
-                  <img
-                    src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdraft-no-4-by-john-mcphee.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
-                    srcset="
-                      /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdraft-no-4-by-john-mcphee.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;h=93&amp;q=80&amp;f=avif    62w,
-                      /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdraft-no-4-by-john-mcphee.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;h=186&amp;q=80&amp;f=avif 124w,
-                      /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdraft-no-4-by-john-mcphee.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif 248w,
-                      /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdraft-no-4-by-john-mcphee.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;h=744&amp;q=80&amp;f=avif 496w
-                    "
-                    height="372"
-                    sizes="(min-width: 1800px) 218px, (min-width: 1280px) calc(11.8vw + 8px), (min-width: 820px) 216px, (min-width: 600px) calc(23.5vw + 28px), calc(41.43vw + 8px)"
-                    width="248"
-                    alt=""
-                    decoding="async"
-                    loading="lazy"
-                    style="aspect-ratio: 0.66666667"
-                  />
                   <div
-                    class="flex w-full grow flex-col bg-default px-[8%] pb-8 desktop:pr-[10%] desktop:pl-[8.5%]"
+                    class="flex h-full w-full flex-col bg-default min-[496px]:px-8 min-[496px]:pb-4 min-[640px]:pt-6"
                   >
+                    <img
+                      src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdraft-no-4-by-john-mcphee.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
+                      srcset="
+                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdraft-no-4-by-john-mcphee.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;h=93&amp;q=80&amp;f=avif    62w,
+                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdraft-no-4-by-john-mcphee.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;h=186&amp;q=80&amp;f=avif 124w,
+                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdraft-no-4-by-john-mcphee.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif 248w,
+                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdraft-no-4-by-john-mcphee.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;h=744&amp;q=80&amp;f=avif 496w
+                      "
+                      height="372"
+                      sizes="(min-width: 1800px) 218px, (min-width: 1280px) calc(11.8vw + 8px), (min-width: 820px) 216px, (min-width: 600px) calc(23.5vw + 28px), calc(41.43vw + 8px)"
+                      width="248"
+                      alt=""
+                      decoding="async"
+                      loading="lazy"
+                      style="aspect-ratio: 0.66666667"
+                    />
                     <div
-                      class="pt-4 font-sans text-sm font-medium max:text-xl max:leading-6 tablet:pt-5 tablet:font-serif tablet:text-md tablet:leading-5"
+                      class="flex w-full grow flex-col bg-default px-[8%] pb-8 min-[496px]:px-0 min-[496px]:pb-4"
                     >
-                      <a
-                        class="inline-block before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:z-10 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0"
-                        href="/reviews/draft-no-4-by-john-mcphee/"
-                        rel="canonical"
-                        >Draft No. 4</a
+                      <div
+                        class="pt-4 font-sans text-sm font-medium max:text-xl max:leading-6 tablet:pt-5 tablet:font-serif tablet:text-md tablet:leading-5"
                       >
-                    </div>
-                    <p
-                      class="pt-1 font-sans text-xs leading-4 font-light text-subtle tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5"
-                    >
-                      <span class="hidden tablet:inline">by<!-- --> </span
-                      ><span>John McPhee</span>
-                    </p>
-                    <picture
-                      ><source
-                        media="(prefers-color-scheme: dark)"
-                        srcset="/svg/3-stars-dark.svg" />
-                      <img
-                        alt="C: 3 stars (out of 5)"
-                        class="mt-2 h-4 w-20 tablet:mt-3 tablet:h-[18px] tablet:w-[90px]"
-                        height="18"
-                        src="/svg/3-stars.svg"
-                        width="90"
-                    /></picture>
-                    <div
-                      class="mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide text-subtle"
-                    >
-                      Nonfiction<!-- -->
-                      |
-                      <!-- -->2013
+                        <a
+                          class="inline-block before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:z-10 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 min-[496px]:before:inset-x-12 min-[496px]:before:top-10"
+                          href="/reviews/draft-no-4-by-john-mcphee/"
+                          rel="canonical"
+                          >Draft No. 4</a
+                        >
+                      </div>
+                      <p
+                        class="pt-1 font-sans text-xs leading-4 font-light text-subtle tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5"
+                      >
+                        <span class="hidden tablet:inline">by<!-- --> </span
+                        ><span>John McPhee</span>
+                      </p>
+                      <picture
+                        ><source
+                          media="(prefers-color-scheme: dark)"
+                          srcset="/svg/3-stars-dark.svg" />
+                        <img
+                          alt="C: 3 stars (out of 5)"
+                          class="mt-2 h-4 w-20 tablet:mt-3 tablet:h-[18px] tablet:w-[90px]"
+                          height="18"
+                          src="/svg/3-stars.svg"
+                          width="90"
+                      /></picture>
+                      <div
+                        class="mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide text-subtle"
+                      >
+                        Nonfiction<!-- -->
+                        |
+                        <!-- -->2013
+                      </div>
                     </div>
                   </div>
                 </li>
                 <li
-                  class="relative flex w-[48%] max-w-[280px] flex-col items-center border-default has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover max:w-[100%] min-[600px]:w-[33.33333333%] min-[600px]:p-4 min-[1280px]:w-[16.66666667%]"
+                  class="relative flex w-[50%] max-w-[344px] flex-col items-center border-default p-2 has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover max:w-[100%] min-[496px]:p-4 min-[768px]:w-[33.33333333%] min-[1360px]:w-[16.66666667%]"
                 >
-                  <img
-                    src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fextreme-ownership-by-jocko-willink-leif-babin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
-                    srcset="
-                      /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fextreme-ownership-by-jocko-willink-leif-babin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;h=93&amp;q=80&amp;f=avif    62w,
-                      /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fextreme-ownership-by-jocko-willink-leif-babin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;h=186&amp;q=80&amp;f=avif 124w,
-                      /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fextreme-ownership-by-jocko-willink-leif-babin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif 248w,
-                      /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fextreme-ownership-by-jocko-willink-leif-babin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;h=744&amp;q=80&amp;f=avif 496w
-                    "
-                    height="372"
-                    sizes="(min-width: 1800px) 218px, (min-width: 1280px) calc(11.8vw + 8px), (min-width: 820px) 216px, (min-width: 600px) calc(23.5vw + 28px), calc(41.43vw + 8px)"
-                    width="248"
-                    alt=""
-                    decoding="async"
-                    loading="lazy"
-                    style="aspect-ratio: 0.66666667"
-                  />
                   <div
-                    class="flex w-full grow flex-col bg-default px-[8%] pb-8 desktop:pr-[10%] desktop:pl-[8.5%]"
+                    class="flex h-full w-full flex-col bg-default min-[496px]:px-8 min-[496px]:pb-4 min-[640px]:pt-6"
                   >
+                    <img
+                      src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fextreme-ownership-by-jocko-willink-leif-babin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
+                      srcset="
+                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fextreme-ownership-by-jocko-willink-leif-babin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;h=93&amp;q=80&amp;f=avif    62w,
+                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fextreme-ownership-by-jocko-willink-leif-babin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;h=186&amp;q=80&amp;f=avif 124w,
+                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fextreme-ownership-by-jocko-willink-leif-babin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif 248w,
+                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fextreme-ownership-by-jocko-willink-leif-babin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;h=744&amp;q=80&amp;f=avif 496w
+                      "
+                      height="372"
+                      sizes="(min-width: 1800px) 218px, (min-width: 1280px) calc(11.8vw + 8px), (min-width: 820px) 216px, (min-width: 600px) calc(23.5vw + 28px), calc(41.43vw + 8px)"
+                      width="248"
+                      alt=""
+                      decoding="async"
+                      loading="lazy"
+                      style="aspect-ratio: 0.66666667"
+                    />
                     <div
-                      class="pt-4 font-sans text-sm font-medium max:text-xl max:leading-6 tablet:pt-5 tablet:font-serif tablet:text-md tablet:leading-5"
+                      class="flex w-full grow flex-col bg-default px-[8%] pb-8 min-[496px]:px-0 min-[496px]:pb-4"
                     >
-                      <a
-                        class="inline-block before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:z-10 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0"
-                        href="/reviews/extreme-ownership-by-jocko-willink-leif-babin/"
-                        rel="canonical"
-                        >Extreme Ownership</a
+                      <div
+                        class="pt-4 font-sans text-sm font-medium max:text-xl max:leading-6 tablet:pt-5 tablet:font-serif tablet:text-md tablet:leading-5"
                       >
-                    </div>
-                    <p
-                      class="pt-1 font-sans text-xs leading-4 font-light text-subtle tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5"
-                    >
-                      <span class="hidden tablet:inline">by<!-- --> </span
-                      ><span>Jocko Willink</span> and <span>Leif Babin</span>
-                    </p>
-                    <picture
-                      ><source
-                        media="(prefers-color-scheme: dark)"
-                        srcset="/svg/5-stars-dark.svg" />
-                      <img
-                        alt="A: 5 stars (out of 5)"
-                        class="mt-2 h-4 w-20 tablet:mt-3 tablet:h-[18px] tablet:w-[90px]"
-                        height="18"
-                        src="/svg/5-stars.svg"
-                        width="90"
-                    /></picture>
-                    <div
-                      class="mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide text-subtle"
-                    >
-                      Nonfiction<!-- -->
-                      |
-                      <!-- -->2015
+                        <a
+                          class="inline-block before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:z-10 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 min-[496px]:before:inset-x-12 min-[496px]:before:top-10"
+                          href="/reviews/extreme-ownership-by-jocko-willink-leif-babin/"
+                          rel="canonical"
+                          >Extreme Ownership</a
+                        >
+                      </div>
+                      <p
+                        class="pt-1 font-sans text-xs leading-4 font-light text-subtle tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5"
+                      >
+                        <span class="hidden tablet:inline">by<!-- --> </span
+                        ><span>Jocko Willink</span> and <span>Leif Babin</span>
+                      </p>
+                      <picture
+                        ><source
+                          media="(prefers-color-scheme: dark)"
+                          srcset="/svg/5-stars-dark.svg" />
+                        <img
+                          alt="A: 5 stars (out of 5)"
+                          class="mt-2 h-4 w-20 tablet:mt-3 tablet:h-[18px] tablet:w-[90px]"
+                          height="18"
+                          src="/svg/5-stars.svg"
+                          width="90"
+                      /></picture>
+                      <div
+                        class="mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide text-subtle"
+                      >
+                        Nonfiction<!-- -->
+                        |
+                        <!-- -->2015
+                      </div>
                     </div>
                   </div>
                 </li>
                 <li
-                  class="relative flex w-[48%] max-w-[280px] flex-col items-center border-default has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover max:w-[100%] min-[600px]:w-[33.33333333%] min-[600px]:p-4 min-[1280px]:w-[16.66666667%]"
+                  class="relative flex w-[50%] max-w-[344px] flex-col items-center border-default p-2 has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover max:w-[100%] min-[496px]:p-4 min-[768px]:w-[33.33333333%] min-[1360px]:w-[16.66666667%]"
                 >
-                  <img
-                    src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
-                    srcset="
-                      /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;h=93&amp;q=80&amp;f=avif    62w,
-                      /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;h=186&amp;q=80&amp;f=avif 124w,
-                      /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif 248w,
-                      /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;h=744&amp;q=80&amp;f=avif 496w
-                    "
-                    height="372"
-                    sizes="(min-width: 1800px) 218px, (min-width: 1280px) calc(11.8vw + 8px), (min-width: 820px) 216px, (min-width: 600px) calc(23.5vw + 28px), calc(41.43vw + 8px)"
-                    width="248"
-                    alt=""
-                    decoding="async"
-                    loading="lazy"
-                    style="aspect-ratio: 0.66666667"
-                  />
                   <div
-                    class="flex w-full grow flex-col bg-default px-[8%] pb-8 desktop:pr-[10%] desktop:pl-[8.5%]"
+                    class="flex h-full w-full flex-col bg-default min-[496px]:px-8 min-[496px]:pb-4 min-[640px]:pt-6"
                   >
+                    <img
+                      src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
+                      srcset="
+                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;h=93&amp;q=80&amp;f=avif    62w,
+                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;h=186&amp;q=80&amp;f=avif 124w,
+                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif 248w,
+                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;h=744&amp;q=80&amp;f=avif 496w
+                      "
+                      height="372"
+                      sizes="(min-width: 1800px) 218px, (min-width: 1280px) calc(11.8vw + 8px), (min-width: 820px) 216px, (min-width: 600px) calc(23.5vw + 28px), calc(41.43vw + 8px)"
+                      width="248"
+                      alt=""
+                      decoding="async"
+                      loading="lazy"
+                      style="aspect-ratio: 0.66666667"
+                    />
                     <div
-                      class="pt-4 font-sans text-sm font-medium max:text-xl max:leading-6 tablet:pt-5 tablet:font-serif tablet:text-md tablet:leading-5"
+                      class="flex w-full grow flex-col bg-default px-[8%] pb-8 min-[496px]:px-0 min-[496px]:pb-4"
                     >
-                      <a
-                        class="inline-block before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:z-10 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0"
-                        href="/reviews/fast-forward-by-stephen-morris/"
-                        rel="canonical"
-                        >Fast Forward</a
+                      <div
+                        class="pt-4 font-sans text-sm font-medium max:text-xl max:leading-6 tablet:pt-5 tablet:font-serif tablet:text-md tablet:leading-5"
                       >
-                    </div>
-                    <p
-                      class="pt-1 font-sans text-xs leading-4 font-light text-subtle tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5"
-                    >
-                      <span class="hidden tablet:inline">by<!-- --> </span
-                      ><span>Stephen Morris</span>
-                    </p>
-                    <picture
-                      ><source
-                        media="(prefers-color-scheme: dark)"
-                        srcset="/svg/4-half-stars-dark.svg" />
-                      <img
-                        alt="A-: 4.5 stars (out of 5)"
-                        class="mt-2 h-4 w-20 tablet:mt-3 tablet:h-[18px] tablet:w-[90px]"
-                        height="18"
-                        src="/svg/4-half-stars.svg"
-                        width="90"
-                    /></picture>
-                    <div
-                      class="mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide text-subtle"
-                    >
-                      Nonfiction<!-- -->
-                      |
-                      <!-- -->2020
+                        <a
+                          class="inline-block before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:z-10 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 min-[496px]:before:inset-x-12 min-[496px]:before:top-10"
+                          href="/reviews/fast-forward-by-stephen-morris/"
+                          rel="canonical"
+                          >Fast Forward</a
+                        >
+                      </div>
+                      <p
+                        class="pt-1 font-sans text-xs leading-4 font-light text-subtle tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5"
+                      >
+                        <span class="hidden tablet:inline">by<!-- --> </span
+                        ><span>Stephen Morris</span>
+                      </p>
+                      <picture
+                        ><source
+                          media="(prefers-color-scheme: dark)"
+                          srcset="/svg/4-half-stars-dark.svg" />
+                        <img
+                          alt="A-: 4.5 stars (out of 5)"
+                          class="mt-2 h-4 w-20 tablet:mt-3 tablet:h-[18px] tablet:w-[90px]"
+                          height="18"
+                          src="/svg/4-half-stars.svg"
+                          width="90"
+                      /></picture>
+                      <div
+                        class="mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide text-subtle"
+                      >
+                        Nonfiction<!-- -->
+                        |
+                        <!-- -->2020
+                      </div>
                     </div>
                   </div>
                 </li>
                 <li
-                  class="relative flex w-[48%] max-w-[280px] flex-col items-center border-default has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover max:w-[100%] min-[600px]:w-[33.33333333%] min-[600px]:p-4 min-[1280px]:w-[16.66666667%]"
+                  class="relative flex w-[50%] max-w-[344px] flex-col items-center border-default p-2 has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover max:w-[100%] min-[496px]:p-4 min-[768px]:w-[33.33333333%] min-[1360px]:w-[16.66666667%]"
                 >
-                  <img
-                    src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffight-club-by-chuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
-                    srcset="
-                      /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffight-club-by-chuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;h=93&amp;q=80&amp;f=avif    62w,
-                      /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffight-club-by-chuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;h=186&amp;q=80&amp;f=avif 124w,
-                      /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffight-club-by-chuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif 248w,
-                      /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffight-club-by-chuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;h=744&amp;q=80&amp;f=avif 496w
-                    "
-                    height="372"
-                    sizes="(min-width: 1800px) 218px, (min-width: 1280px) calc(11.8vw + 8px), (min-width: 820px) 216px, (min-width: 600px) calc(23.5vw + 28px), calc(41.43vw + 8px)"
-                    width="248"
-                    alt=""
-                    decoding="async"
-                    loading="lazy"
-                    style="aspect-ratio: 0.66666667"
-                  />
                   <div
-                    class="flex w-full grow flex-col bg-default px-[8%] pb-8 desktop:pr-[10%] desktop:pl-[8.5%]"
+                    class="flex h-full w-full flex-col bg-default min-[496px]:px-8 min-[496px]:pb-4 min-[640px]:pt-6"
                   >
+                    <img
+                      src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffight-club-by-chuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
+                      srcset="
+                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffight-club-by-chuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;h=93&amp;q=80&amp;f=avif    62w,
+                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffight-club-by-chuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;h=186&amp;q=80&amp;f=avif 124w,
+                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffight-club-by-chuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif 248w,
+                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffight-club-by-chuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;h=744&amp;q=80&amp;f=avif 496w
+                      "
+                      height="372"
+                      sizes="(min-width: 1800px) 218px, (min-width: 1280px) calc(11.8vw + 8px), (min-width: 820px) 216px, (min-width: 600px) calc(23.5vw + 28px), calc(41.43vw + 8px)"
+                      width="248"
+                      alt=""
+                      decoding="async"
+                      loading="lazy"
+                      style="aspect-ratio: 0.66666667"
+                    />
                     <div
-                      class="pt-4 font-sans text-sm font-medium max:text-xl max:leading-6 tablet:pt-5 tablet:font-serif tablet:text-md tablet:leading-5"
+                      class="flex w-full grow flex-col bg-default px-[8%] pb-8 min-[496px]:px-0 min-[496px]:pb-4"
                     >
-                      <a
-                        class="inline-block before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:z-10 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0"
-                        href="/reviews/fight-club-by-chuck-palahniuk/"
-                        rel="canonical"
-                        >Fight Club</a
+                      <div
+                        class="pt-4 font-sans text-sm font-medium max:text-xl max:leading-6 tablet:pt-5 tablet:font-serif tablet:text-md tablet:leading-5"
                       >
-                    </div>
-                    <p
-                      class="pt-1 font-sans text-xs leading-4 font-light text-subtle tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5"
-                    >
-                      <span class="hidden tablet:inline">by<!-- --> </span
-                      ><span>Chuck Palahniuk</span>
-                    </p>
-                    <picture
-                      ><source
-                        media="(prefers-color-scheme: dark)"
-                        srcset="/svg/4-half-stars-dark.svg" />
-                      <img
-                        alt="A-: 4.5 stars (out of 5)"
-                        class="mt-2 h-4 w-20 tablet:mt-3 tablet:h-[18px] tablet:w-[90px]"
-                        height="18"
-                        src="/svg/4-half-stars.svg"
-                        width="90"
-                    /></picture>
-                    <div
-                      class="mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide text-subtle"
-                    >
-                      Novel<!-- -->
-                      |
-                      <!-- -->1996
+                        <a
+                          class="inline-block before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:z-10 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 min-[496px]:before:inset-x-12 min-[496px]:before:top-10"
+                          href="/reviews/fight-club-by-chuck-palahniuk/"
+                          rel="canonical"
+                          >Fight Club</a
+                        >
+                      </div>
+                      <p
+                        class="pt-1 font-sans text-xs leading-4 font-light text-subtle tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5"
+                      >
+                        <span class="hidden tablet:inline">by<!-- --> </span
+                        ><span>Chuck Palahniuk</span>
+                      </p>
+                      <picture
+                        ><source
+                          media="(prefers-color-scheme: dark)"
+                          srcset="/svg/4-half-stars-dark.svg" />
+                        <img
+                          alt="A-: 4.5 stars (out of 5)"
+                          class="mt-2 h-4 w-20 tablet:mt-3 tablet:h-[18px] tablet:w-[90px]"
+                          height="18"
+                          src="/svg/4-half-stars.svg"
+                          width="90"
+                      /></picture>
+                      <div
+                        class="mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide text-subtle"
+                      >
+                        Novel<!-- -->
+                        |
+                        <!-- -->1996
+                      </div>
                     </div>
                   </div>
                 </li>
                 <li
-                  class="relative flex w-[48%] max-w-[280px] flex-col items-center border-default has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover max:w-[100%] min-[600px]:w-[33.33333333%] min-[600px]:p-4 min-[1280px]:w-[16.66666667%]"
+                  class="relative flex w-[50%] max-w-[344px] flex-col items-center border-default p-2 has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover max:w-[100%] min-[496px]:p-4 min-[768px]:w-[33.33333333%] min-[1360px]:w-[16.66666667%]"
                 >
-                  <img
-                    src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
-                    srcset="
-                      /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;h=93&amp;q=80&amp;f=avif    62w,
-                      /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;h=186&amp;q=80&amp;f=avif 124w,
-                      /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif 248w,
-                      /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;h=744&amp;q=80&amp;f=avif 496w
-                    "
-                    height="372"
-                    sizes="(min-width: 1800px) 218px, (min-width: 1280px) calc(11.8vw + 8px), (min-width: 820px) 216px, (min-width: 600px) calc(23.5vw + 28px), calc(41.43vw + 8px)"
-                    width="248"
-                    alt=""
-                    decoding="async"
-                    loading="lazy"
-                    style="aspect-ratio: 0.66666667"
-                  />
                   <div
-                    class="flex w-full grow flex-col bg-default px-[8%] pb-8 desktop:pr-[10%] desktop:pl-[8.5%]"
+                    class="flex h-full w-full flex-col bg-default min-[496px]:px-8 min-[496px]:pb-4 min-[640px]:pt-6"
                   >
+                    <img
+                      src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
+                      srcset="
+                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;h=93&amp;q=80&amp;f=avif    62w,
+                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;h=186&amp;q=80&amp;f=avif 124w,
+                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif 248w,
+                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;h=744&amp;q=80&amp;f=avif 496w
+                      "
+                      height="372"
+                      sizes="(min-width: 1800px) 218px, (min-width: 1280px) calc(11.8vw + 8px), (min-width: 820px) 216px, (min-width: 600px) calc(23.5vw + 28px), calc(41.43vw + 8px)"
+                      width="248"
+                      alt=""
+                      decoding="async"
+                      loading="lazy"
+                      style="aspect-ratio: 0.66666667"
+                    />
                     <div
-                      class="pt-4 font-sans text-sm font-medium max:text-xl max:leading-6 tablet:pt-5 tablet:font-serif tablet:text-md tablet:leading-5"
+                      class="flex w-full grow flex-col bg-default px-[8%] pb-8 min-[496px]:px-0 min-[496px]:pb-4"
                     >
-                      <a
-                        class="inline-block before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:z-10 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0"
-                        href="/reviews/fright-night-by-john-skipp-craig-spector/"
-                        rel="canonical"
-                        >Fright Night</a
+                      <div
+                        class="pt-4 font-sans text-sm font-medium max:text-xl max:leading-6 tablet:pt-5 tablet:font-serif tablet:text-md tablet:leading-5"
                       >
-                    </div>
-                    <p
-                      class="pt-1 font-sans text-xs leading-4 font-light text-subtle tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5"
-                    >
-                      <span class="hidden tablet:inline">by<!-- --> </span
-                      ><span>John Skipp</span> and <span>Craig Spector</span>
-                    </p>
-                    <picture
-                      ><source
-                        media="(prefers-color-scheme: dark)"
-                        srcset="/svg/1-star-dark.svg" />
-                      <img
-                        alt="F: 1 star (out of 5)"
-                        class="mt-2 h-4 w-20 tablet:mt-3 tablet:h-[18px] tablet:w-[90px]"
-                        height="18"
-                        src="/svg/1-star.svg"
-                        width="90"
-                    /></picture>
-                    <div
-                      class="mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide text-subtle"
-                    >
-                      Novel<!-- -->
-                      |
-                      <!-- -->1985
+                        <a
+                          class="inline-block before:absolute before:inset-x-0 before:top-0 before:aspect-cover before:bg-default before:opacity-15 after:absolute after:top-0 after:left-0 after:z-10 after:size-full after:opacity-0 hover:text-accent hover:before:opacity-0 min-[496px]:before:inset-x-12 min-[496px]:before:top-10"
+                          href="/reviews/fright-night-by-john-skipp-craig-spector/"
+                          rel="canonical"
+                          >Fright Night</a
+                        >
+                      </div>
+                      <p
+                        class="pt-1 font-sans text-xs leading-4 font-light text-subtle tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5"
+                      >
+                        <span class="hidden tablet:inline">by<!-- --> </span
+                        ><span>John Skipp</span> and <span>Craig Spector</span>
+                      </p>
+                      <picture
+                        ><source
+                          media="(prefers-color-scheme: dark)"
+                          srcset="/svg/1-star-dark.svg" />
+                        <img
+                          alt="F: 1 star (out of 5)"
+                          class="mt-2 h-4 w-20 tablet:mt-3 tablet:h-[18px] tablet:w-[90px]"
+                          height="18"
+                          src="/svg/1-star.svg"
+                          width="90"
+                      /></picture>
+                      <div
+                        class="mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide text-subtle"
+                      >
+                        Novel<!-- -->
+                        |
+                        <!-- -->1985
+                      </div>
                     </div>
                   </div>
                 </li>

@@ -348,1262 +348,1371 @@ exports[`Home > matches snapshot 1`] = `
           </h2>
           <ol
             class="
-            -mx-4 flex flex-wrap justify-center
-            min-[900px]:-mx-4
+            -mx-2 flex flex-wrap content-stretch justify-center
+            min-[500px]:-mx-4
+            min-[1280px]:-mx-12
             desktop:justify-between desktop:gap-y-4
           "
           >
             <li
               class="
-        relative flex w-[50%] max-w-[280px] flex-col items-center p-2
+        relative flex w-[50%] max-w-[344px] grow flex-col items-center p-2
         has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
         max:w-[100%]
-        min-[600px]:w-[33.33333333%] min-[600px]:p-4
+        min-[496px]:p-4
+        min-[768px]:w-[33.33333333%]
         min-[900px]:w-[25%]
-        min-[1280px]:w-[16.66666667%]
+        min-[1360px]:w-[16.66666667%]
       "
             >
-              <img
-                alt=""
-                decoding="async"
-                height="372"
-                loading="eager"
-                sizes="(min-width: 1840px) 248px, (min-width: 1300px) calc(13.08vw + 10px), (min-width: 1260px) calc(-360vw + 4784px), (min-width: 900px) calc(19.12vw + 11px), (min-width: 600px) 27.5vw, calc(41.43vw + 8px)"
-                src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
-                srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=62&h=93&q=80&f=avif 62w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=124&h=186&q=80&f=avif 124w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 248w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 496w"
-                style="aspect-ratio: 0.66666667;"
-                width="248"
-              />
               <div
                 class="
-          flex w-full grow flex-col bg-default px-[8%] pb-8
-          desktop:pr-[10%] desktop:pl-[8.5%]
+          flex h-full w-full flex-col bg-default
+          min-[496px]:px-8 min-[496px]:pt-6 min-[496px]:pb-4
         "
               >
+                <img
+                  alt=""
+                  decoding="async"
+                  height="372"
+                  loading="eager"
+                  sizes="(min-width: 1840px) 248px, (min-width: 1300px) calc(13.08vw + 10px), (min-width: 1260px) calc(-360vw + 4784px), (min-width: 900px) calc(19.12vw + 11px), (min-width: 600px) 27.5vw, calc(41.43vw + 8px)"
+                  src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
+                  srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=62&h=93&q=80&f=avif 62w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=124&h=186&q=80&f=avif 124w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 248w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 496w"
+                  style="aspect-ratio: 0.66666667;"
+                  width="248"
+                />
                 <div
                   class="
-            pt-3 font-sans text-xxs leading-4 font-light tracking-wide
-            whitespace-nowrap text-subtle
+            flex w-full grow flex-col bg-default px-[8%] pb-8
+            min-[496px]:px-0 min-[496px]:pb-4
           "
                 >
-                  15 Feb 2025
-                </div>
-                <div
-                  class="
-            pt-2 font-sans text-sm font-medium
-            max:pt-2 max:text-xl max:leading-6
-            tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5
-          "
-                >
-                  <a
+                  <div
                     class="
-              inline-block
-              before:absolute before:inset-x-0 before:top-0 before:aspect-cover
-              before:bg-default before:opacity-15
-              after:absolute after:top-0 after:left-0 after:z-10 after:size-full
-              after:opacity-0
-              hover:text-accent hover:before:opacity-0
-            "
-                    href="/reviews/the-lonely-one-by-richard-laymon/"
-                    rel="canonical"
-                  >
-                    The Lonely One
-                  </a>
-                </div>
-                <p
-                  class="
-            pt-1 font-sans text-xs leading-4 font-light text-subtle
-            tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
-          "
-                >
-                  <span
-                    class="
-              hidden
-              tablet:inline
+              pt-3 font-sans text-xxs leading-4 font-light tracking-wide
+              whitespace-nowrap text-subtle
             "
                   >
-                    by 
-                  </span>
-                  <span
-                    class=""
-                  >
-                    Richard Laymon
-                  </span>
-                </p>
-                 
-                <picture>
-                  <source
-                    media="(prefers-color-scheme: dark)"
-                    srcset="/svg/3-stars-dark.svg"
-                  />
-                  <img
-                    alt="C+: 3 stars (out of 5)"
+                    15 Feb 2025
+                  </div>
+                  <div
                     class="
-            mt-2 h-4 w-20
-            tablet:mt-3 tablet:h-[18px] tablet:w-[90px]
-          "
-                    height="16"
-                    src="/svg/3-stars.svg"
-                    width="80"
-                  />
-                </picture>
-                <div
-                  class="
-            mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
-            text-subtle
-          "
-                >
-                  Short Story | 1985
+              pt-2 font-sans text-sm font-medium
+              max:pt-2 max:text-xl max:leading-6
+              tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5
+            "
+                  >
+                    <a
+                      class="
+                inline-block
+                before:absolute before:inset-x-2 before:top-2
+                before:aspect-cover before:bg-default before:opacity-15
+                after:absolute after:top-0 after:left-0 after:z-10
+                after:size-full after:opacity-0
+                hover:text-accent hover:before:opacity-0
+                min-[496px]:before:inset-x-12 min-[496px]:before:top-10
+              "
+                      href="/reviews/the-lonely-one-by-richard-laymon/"
+                      rel="canonical"
+                    >
+                      The Lonely One
+                    </a>
+                  </div>
+                  <p
+                    class="
+              pt-1 font-sans text-xs leading-4 font-light text-subtle
+              tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
+            "
+                  >
+                    <span
+                      class="
+                hidden
+                tablet:inline
+              "
+                    >
+                      by 
+                    </span>
+                    <span
+                      class=""
+                    >
+                      Richard Laymon
+                    </span>
+                  </p>
+                   
+                  <picture>
+                    <source
+                      media="(prefers-color-scheme: dark)"
+                      srcset="/svg/3-stars-dark.svg"
+                    />
+                    <img
+                      alt="C+: 3 stars (out of 5)"
+                      class="
+              mt-2 h-4 w-20
+              tablet:mt-3 tablet:h-[18px] tablet:w-[90px]
+            "
+                      height="16"
+                      src="/svg/3-stars.svg"
+                      width="80"
+                    />
+                  </picture>
+                  <div
+                    class="
+              mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
+              text-subtle
+            "
+                  >
+                    Short Story | 1985
+                  </div>
                 </div>
               </div>
             </li>
             <li
               class="
-        relative flex w-[50%] max-w-[280px] flex-col items-center p-2
+        relative flex w-[50%] max-w-[344px] grow flex-col items-center p-2
         has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
         max:w-[100%]
-        min-[600px]:w-[33.33333333%] min-[600px]:p-4
+        min-[496px]:p-4
+        min-[768px]:w-[33.33333333%]
         min-[900px]:w-[25%]
-        min-[1280px]:w-[16.66666667%]
+        min-[1360px]:w-[16.66666667%]
       "
             >
-              <img
-                alt=""
-                decoding="async"
-                height="372"
-                loading="lazy"
-                sizes="(min-width: 1840px) 248px, (min-width: 1300px) calc(13.08vw + 10px), (min-width: 1260px) calc(-360vw + 4784px), (min-width: 900px) calc(19.12vw + 11px), (min-width: 600px) 27.5vw, calc(41.43vw + 8px)"
-                src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
-                srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=62&h=93&q=80&f=avif 62w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=124&h=186&q=80&f=avif 124w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 248w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 496w"
-                style="aspect-ratio: 0.66666667;"
-                width="248"
-              />
               <div
                 class="
-          flex w-full grow flex-col bg-default px-[8%] pb-8
-          desktop:pr-[10%] desktop:pl-[8.5%]
+          flex h-full w-full flex-col bg-default
+          min-[496px]:px-8 min-[496px]:pt-6 min-[496px]:pb-4
         "
               >
+                <img
+                  alt=""
+                  decoding="async"
+                  height="372"
+                  loading="lazy"
+                  sizes="(min-width: 1840px) 248px, (min-width: 1300px) calc(13.08vw + 10px), (min-width: 1260px) calc(-360vw + 4784px), (min-width: 900px) calc(19.12vw + 11px), (min-width: 600px) 27.5vw, calc(41.43vw + 8px)"
+                  src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
+                  srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=62&h=93&q=80&f=avif 62w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=124&h=186&q=80&f=avif 124w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 248w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 496w"
+                  style="aspect-ratio: 0.66666667;"
+                  width="248"
+                />
                 <div
                   class="
-            pt-3 font-sans text-xxs leading-4 font-light tracking-wide
-            whitespace-nowrap text-subtle
+            flex w-full grow flex-col bg-default px-[8%] pb-8
+            min-[496px]:px-0 min-[496px]:pb-4
           "
                 >
-                  01 Dec 2024
-                </div>
-                <div
-                  class="
-            pt-2 font-sans text-sm font-medium
-            max:pt-2 max:text-xl max:leading-6
-            tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5
-          "
-                >
-                  <a
+                  <div
                     class="
-              inline-block
-              before:absolute before:inset-x-0 before:top-0 before:aspect-cover
-              before:bg-default before:opacity-15
-              after:absolute after:top-0 after:left-0 after:z-10 after:size-full
-              after:opacity-0
-              hover:text-accent hover:before:opacity-0
-            "
-                    href="/reviews/ghost-story-by-peter-straub/"
-                    rel="canonical"
-                  >
-                    Ghost Story
-                  </a>
-                </div>
-                <p
-                  class="
-            pt-1 font-sans text-xs leading-4 font-light text-subtle
-            tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
-          "
-                >
-                  <span
-                    class="
-              hidden
-              tablet:inline
+              pt-3 font-sans text-xxs leading-4 font-light tracking-wide
+              whitespace-nowrap text-subtle
             "
                   >
-                    by 
-                  </span>
-                  <span
-                    class=""
-                  >
-                    Peter Straub
-                  </span>
-                </p>
-                 
-                <picture>
-                  <source
-                    media="(prefers-color-scheme: dark)"
-                    srcset="/svg/4-stars-dark.svg"
-                  />
-                  <img
-                    alt="B: 4 stars (out of 5)"
+                    01 Dec 2024
+                  </div>
+                  <div
                     class="
-            mt-2 h-4 w-20
-            tablet:mt-3 tablet:h-[18px] tablet:w-[90px]
-          "
-                    height="16"
-                    src="/svg/4-stars.svg"
-                    width="80"
-                  />
-                </picture>
-                <div
-                  class="
-            mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
-            text-subtle
-          "
-                >
-                  Novel | 1979
+              pt-2 font-sans text-sm font-medium
+              max:pt-2 max:text-xl max:leading-6
+              tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5
+            "
+                  >
+                    <a
+                      class="
+                inline-block
+                before:absolute before:inset-x-2 before:top-2
+                before:aspect-cover before:bg-default before:opacity-15
+                after:absolute after:top-0 after:left-0 after:z-10
+                after:size-full after:opacity-0
+                hover:text-accent hover:before:opacity-0
+                min-[496px]:before:inset-x-12 min-[496px]:before:top-10
+              "
+                      href="/reviews/ghost-story-by-peter-straub/"
+                      rel="canonical"
+                    >
+                      Ghost Story
+                    </a>
+                  </div>
+                  <p
+                    class="
+              pt-1 font-sans text-xs leading-4 font-light text-subtle
+              tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
+            "
+                  >
+                    <span
+                      class="
+                hidden
+                tablet:inline
+              "
+                    >
+                      by 
+                    </span>
+                    <span
+                      class=""
+                    >
+                      Peter Straub
+                    </span>
+                  </p>
+                   
+                  <picture>
+                    <source
+                      media="(prefers-color-scheme: dark)"
+                      srcset="/svg/4-stars-dark.svg"
+                    />
+                    <img
+                      alt="B: 4 stars (out of 5)"
+                      class="
+              mt-2 h-4 w-20
+              tablet:mt-3 tablet:h-[18px] tablet:w-[90px]
+            "
+                      height="16"
+                      src="/svg/4-stars.svg"
+                      width="80"
+                    />
+                  </picture>
+                  <div
+                    class="
+              mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
+              text-subtle
+            "
+                  >
+                    Novel | 1979
+                  </div>
                 </div>
               </div>
             </li>
             <li
               class="
-        relative flex w-[50%] max-w-[280px] flex-col items-center p-2
+        relative flex w-[50%] max-w-[344px] grow flex-col items-center p-2
         has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
         max:w-[100%]
-        min-[600px]:w-[33.33333333%] min-[600px]:p-4
+        min-[496px]:p-4
+        min-[768px]:w-[33.33333333%]
         min-[900px]:w-[25%]
-        min-[1280px]:w-[16.66666667%]
+        min-[1360px]:w-[16.66666667%]
       "
             >
-              <img
-                alt=""
-                decoding="async"
-                height="372"
-                loading="lazy"
-                sizes="(min-width: 1840px) 248px, (min-width: 1300px) calc(13.08vw + 10px), (min-width: 1260px) calc(-360vw + 4784px), (min-width: 900px) calc(19.12vw + 11px), (min-width: 600px) 27.5vw, calc(41.43vw + 8px)"
-                src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
-                srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=62&h=93&q=80&f=avif 62w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=124&h=186&q=80&f=avif 124w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 248w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 496w"
-                style="aspect-ratio: 0.66666667;"
-                width="248"
-              />
               <div
                 class="
-          flex w-full grow flex-col bg-default px-[8%] pb-8
-          desktop:pr-[10%] desktop:pl-[8.5%]
+          flex h-full w-full flex-col bg-default
+          min-[496px]:px-8 min-[496px]:pt-6 min-[496px]:pb-4
         "
               >
+                <img
+                  alt=""
+                  decoding="async"
+                  height="372"
+                  loading="lazy"
+                  sizes="(min-width: 1840px) 248px, (min-width: 1300px) calc(13.08vw + 10px), (min-width: 1260px) calc(-360vw + 4784px), (min-width: 900px) calc(19.12vw + 11px), (min-width: 600px) 27.5vw, calc(41.43vw + 8px)"
+                  src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
+                  srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=62&h=93&q=80&f=avif 62w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=124&h=186&q=80&f=avif 124w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 248w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 496w"
+                  style="aspect-ratio: 0.66666667;"
+                  width="248"
+                />
                 <div
                   class="
-            pt-3 font-sans text-xxs leading-4 font-light tracking-wide
-            whitespace-nowrap text-subtle
+            flex w-full grow flex-col bg-default px-[8%] pb-8
+            min-[496px]:px-0 min-[496px]:pb-4
           "
                 >
-                  08 Nov 2024
-                </div>
-                <div
-                  class="
-            pt-2 font-sans text-sm font-medium
-            max:pt-2 max:text-xl max:leading-6
-            tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5
-          "
-                >
-                  <a
+                  <div
                     class="
-              inline-block
-              before:absolute before:inset-x-0 before:top-0 before:aspect-cover
-              before:bg-default before:opacity-15
-              after:absolute after:top-0 after:left-0 after:z-10 after:size-full
-              after:opacity-0
-              hover:text-accent hover:before:opacity-0
-            "
-                    href="/reviews/goth-by-lol-tolhurst/"
-                    rel="canonical"
-                  >
-                    Goth
-                  </a>
-                </div>
-                <p
-                  class="
-            pt-1 font-sans text-xs leading-4 font-light text-subtle
-            tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
-          "
-                >
-                  <span
-                    class="
-              hidden
-              tablet:inline
+              pt-3 font-sans text-xxs leading-4 font-light tracking-wide
+              whitespace-nowrap text-subtle
             "
                   >
-                    by 
-                  </span>
-                  <span
-                    class=""
-                  >
-                    Lol Tolhurst
-                  </span>
-                </p>
-                 
-                <picture>
-                  <source
-                    media="(prefers-color-scheme: dark)"
-                    srcset="/svg/3-stars-dark.svg"
-                  />
-                  <img
-                    alt="C: 3 stars (out of 5)"
+                    08 Nov 2024
+                  </div>
+                  <div
                     class="
-            mt-2 h-4 w-20
-            tablet:mt-3 tablet:h-[18px] tablet:w-[90px]
-          "
-                    height="16"
-                    src="/svg/3-stars.svg"
-                    width="80"
-                  />
-                </picture>
-                <div
-                  class="
-            mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
-            text-subtle
-          "
-                >
-                  Nonfiction | 2023
+              pt-2 font-sans text-sm font-medium
+              max:pt-2 max:text-xl max:leading-6
+              tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5
+            "
+                  >
+                    <a
+                      class="
+                inline-block
+                before:absolute before:inset-x-2 before:top-2
+                before:aspect-cover before:bg-default before:opacity-15
+                after:absolute after:top-0 after:left-0 after:z-10
+                after:size-full after:opacity-0
+                hover:text-accent hover:before:opacity-0
+                min-[496px]:before:inset-x-12 min-[496px]:before:top-10
+              "
+                      href="/reviews/goth-by-lol-tolhurst/"
+                      rel="canonical"
+                    >
+                      Goth
+                    </a>
+                  </div>
+                  <p
+                    class="
+              pt-1 font-sans text-xs leading-4 font-light text-subtle
+              tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
+            "
+                  >
+                    <span
+                      class="
+                hidden
+                tablet:inline
+              "
+                    >
+                      by 
+                    </span>
+                    <span
+                      class=""
+                    >
+                      Lol Tolhurst
+                    </span>
+                  </p>
+                   
+                  <picture>
+                    <source
+                      media="(prefers-color-scheme: dark)"
+                      srcset="/svg/3-stars-dark.svg"
+                    />
+                    <img
+                      alt="C: 3 stars (out of 5)"
+                      class="
+              mt-2 h-4 w-20
+              tablet:mt-3 tablet:h-[18px] tablet:w-[90px]
+            "
+                      height="16"
+                      src="/svg/3-stars.svg"
+                      width="80"
+                    />
+                  </picture>
+                  <div
+                    class="
+              mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
+              text-subtle
+            "
+                  >
+                    Nonfiction | 2023
+                  </div>
                 </div>
               </div>
             </li>
             <li
               class="
-        relative flex w-[50%] max-w-[280px] flex-col items-center p-2
+        relative flex w-[50%] max-w-[344px] grow flex-col items-center p-2
         has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
         max:w-[100%]
-        min-[600px]:w-[33.33333333%] min-[600px]:p-4
+        min-[496px]:p-4
+        min-[768px]:w-[33.33333333%]
         min-[900px]:w-[25%]
-        min-[1280px]:w-[16.66666667%]
+        min-[1360px]:w-[16.66666667%]
       "
             >
-              <img
-                alt=""
-                decoding="async"
-                height="372"
-                loading="lazy"
-                sizes="(min-width: 1840px) 248px, (min-width: 1300px) calc(13.08vw + 10px), (min-width: 1260px) calc(-360vw + 4784px), (min-width: 900px) calc(19.12vw + 11px), (min-width: 600px) 27.5vw, calc(41.43vw + 8px)"
-                src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frecessional-by-david-mamet.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
-                srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frecessional-by-david-mamet.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=62&h=93&q=80&f=avif 62w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frecessional-by-david-mamet.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=124&h=186&q=80&f=avif 124w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frecessional-by-david-mamet.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 248w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frecessional-by-david-mamet.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 496w"
-                style="aspect-ratio: 0.66666667;"
-                width="248"
-              />
               <div
                 class="
-          flex w-full grow flex-col bg-default px-[8%] pb-8
-          desktop:pr-[10%] desktop:pl-[8.5%]
+          flex h-full w-full flex-col bg-default
+          min-[496px]:px-8 min-[496px]:pt-6 min-[496px]:pb-4
         "
               >
+                <img
+                  alt=""
+                  decoding="async"
+                  height="372"
+                  loading="lazy"
+                  sizes="(min-width: 1840px) 248px, (min-width: 1300px) calc(13.08vw + 10px), (min-width: 1260px) calc(-360vw + 4784px), (min-width: 900px) calc(19.12vw + 11px), (min-width: 600px) 27.5vw, calc(41.43vw + 8px)"
+                  src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frecessional-by-david-mamet.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
+                  srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frecessional-by-david-mamet.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=62&h=93&q=80&f=avif 62w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frecessional-by-david-mamet.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=124&h=186&q=80&f=avif 124w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frecessional-by-david-mamet.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 248w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frecessional-by-david-mamet.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 496w"
+                  style="aspect-ratio: 0.66666667;"
+                  width="248"
+                />
                 <div
                   class="
-            pt-3 font-sans text-xxs leading-4 font-light tracking-wide
-            whitespace-nowrap text-subtle
+            flex w-full grow flex-col bg-default px-[8%] pb-8
+            min-[496px]:px-0 min-[496px]:pb-4
           "
                 >
-                  25 Aug 2024
-                </div>
-                <div
-                  class="
-            pt-2 font-sans text-sm font-medium
-            max:pt-2 max:text-xl max:leading-6
-            tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5
-          "
-                >
-                  <a
+                  <div
                     class="
-              inline-block
-              before:absolute before:inset-x-0 before:top-0 before:aspect-cover
-              before:bg-default before:opacity-15
-              after:absolute after:top-0 after:left-0 after:z-10 after:size-full
-              after:opacity-0
-              hover:text-accent hover:before:opacity-0
-            "
-                    href="/reviews/recessional-by-david-mamet/"
-                    rel="canonical"
-                  >
-                    Recessional
-                  </a>
-                </div>
-                <p
-                  class="
-            pt-1 font-sans text-xs leading-4 font-light text-subtle
-            tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
-          "
-                >
-                  <span
-                    class="
-              hidden
-              tablet:inline
+              pt-3 font-sans text-xxs leading-4 font-light tracking-wide
+              whitespace-nowrap text-subtle
             "
                   >
-                    by 
-                  </span>
-                  <span
-                    class=""
-                  >
-                    David Mamet
-                  </span>
-                </p>
-                 
-                <picture>
-                  <source
-                    media="(prefers-color-scheme: dark)"
-                    srcset="/svg/2-stars-dark.svg"
-                  />
-                  <img
-                    alt="D: 2 stars (out of 5)"
+                    25 Aug 2024
+                  </div>
+                  <div
                     class="
-            mt-2 h-4 w-20
-            tablet:mt-3 tablet:h-[18px] tablet:w-[90px]
-          "
-                    height="16"
-                    src="/svg/2-stars.svg"
-                    width="80"
-                  />
-                </picture>
-                <div
-                  class="
-            mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
-            text-subtle
-          "
-                >
-                  Nonfiction | 2022
+              pt-2 font-sans text-sm font-medium
+              max:pt-2 max:text-xl max:leading-6
+              tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5
+            "
+                  >
+                    <a
+                      class="
+                inline-block
+                before:absolute before:inset-x-2 before:top-2
+                before:aspect-cover before:bg-default before:opacity-15
+                after:absolute after:top-0 after:left-0 after:z-10
+                after:size-full after:opacity-0
+                hover:text-accent hover:before:opacity-0
+                min-[496px]:before:inset-x-12 min-[496px]:before:top-10
+              "
+                      href="/reviews/recessional-by-david-mamet/"
+                      rel="canonical"
+                    >
+                      Recessional
+                    </a>
+                  </div>
+                  <p
+                    class="
+              pt-1 font-sans text-xs leading-4 font-light text-subtle
+              tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
+            "
+                  >
+                    <span
+                      class="
+                hidden
+                tablet:inline
+              "
+                    >
+                      by 
+                    </span>
+                    <span
+                      class=""
+                    >
+                      David Mamet
+                    </span>
+                  </p>
+                   
+                  <picture>
+                    <source
+                      media="(prefers-color-scheme: dark)"
+                      srcset="/svg/2-stars-dark.svg"
+                    />
+                    <img
+                      alt="D: 2 stars (out of 5)"
+                      class="
+              mt-2 h-4 w-20
+              tablet:mt-3 tablet:h-[18px] tablet:w-[90px]
+            "
+                      height="16"
+                      src="/svg/2-stars.svg"
+                      width="80"
+                    />
+                  </picture>
+                  <div
+                    class="
+              mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
+              text-subtle
+            "
+                  >
+                    Nonfiction | 2022
+                  </div>
                 </div>
               </div>
             </li>
             <li
               class="
-        relative flex w-[50%] max-w-[280px] flex-col items-center p-2
+        relative flex w-[50%] max-w-[344px] grow flex-col items-center p-2
         has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
         max:w-[100%]
-        min-[600px]:w-[33.33333333%] min-[600px]:p-4
+        min-[496px]:p-4
+        min-[768px]:w-[33.33333333%]
         min-[900px]:w-[25%]
-        min-[1280px]:w-[16.66666667%]
+        min-[1360px]:w-[16.66666667%]
       "
             >
-              <img
-                alt=""
-                decoding="async"
-                height="372"
-                loading="lazy"
-                sizes="(min-width: 1840px) 248px, (min-width: 1300px) calc(13.08vw + 10px), (min-width: 1260px) calc(-360vw + 4784px), (min-width: 900px) calc(19.12vw + 11px), (min-width: 600px) 27.5vw, calc(41.43vw + 8px)"
-                src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
-                srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=62&h=93&q=80&f=avif 62w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=124&h=186&q=80&f=avif 124w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 248w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 496w"
-                style="aspect-ratio: 0.66666667;"
-                width="248"
-              />
               <div
                 class="
-          flex w-full grow flex-col bg-default px-[8%] pb-8
-          desktop:pr-[10%] desktop:pl-[8.5%]
+          flex h-full w-full flex-col bg-default
+          min-[496px]:px-8 min-[496px]:pt-6 min-[496px]:pb-4
         "
               >
+                <img
+                  alt=""
+                  decoding="async"
+                  height="372"
+                  loading="lazy"
+                  sizes="(min-width: 1840px) 248px, (min-width: 1300px) calc(13.08vw + 10px), (min-width: 1260px) calc(-360vw + 4784px), (min-width: 900px) calc(19.12vw + 11px), (min-width: 600px) 27.5vw, calc(41.43vw + 8px)"
+                  src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
+                  srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=62&h=93&q=80&f=avif 62w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=124&h=186&q=80&f=avif 124w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 248w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 496w"
+                  style="aspect-ratio: 0.66666667;"
+                  width="248"
+                />
                 <div
                   class="
-            pt-3 font-sans text-xxs leading-4 font-light tracking-wide
-            whitespace-nowrap text-subtle
+            flex w-full grow flex-col bg-default px-[8%] pb-8
+            min-[496px]:px-0 min-[496px]:pb-4
           "
                 >
-                  01 Jul 2024
-                </div>
-                <div
-                  class="
-            pt-2 font-sans text-sm font-medium
-            max:pt-2 max:text-xl max:leading-6
-            tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5
-          "
-                >
-                  <a
+                  <div
                     class="
-              inline-block
-              before:absolute before:inset-x-0 before:top-0 before:aspect-cover
-              before:bg-default before:opacity-15
-              after:absolute after:top-0 after:left-0 after:z-10 after:size-full
-              after:opacity-0
-              hover:text-accent hover:before:opacity-0
-            "
-                    href="/reviews/fast-forward-by-stephen-morris/"
-                    rel="canonical"
-                  >
-                    Fast Forward
-                  </a>
-                </div>
-                <p
-                  class="
-            pt-1 font-sans text-xs leading-4 font-light text-subtle
-            tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
-          "
-                >
-                  <span
-                    class="
-              hidden
-              tablet:inline
+              pt-3 font-sans text-xxs leading-4 font-light tracking-wide
+              whitespace-nowrap text-subtle
             "
                   >
-                    by 
-                  </span>
-                  <span
-                    class=""
-                  >
-                    Stephen Morris
-                  </span>
-                </p>
-                 
-                <picture>
-                  <source
-                    media="(prefers-color-scheme: dark)"
-                    srcset="/svg/4-half-stars-dark.svg"
-                  />
-                  <img
-                    alt="A-: 4.5 stars (out of 5)"
+                    01 Jul 2024
+                  </div>
+                  <div
                     class="
-            mt-2 h-4 w-20
-            tablet:mt-3 tablet:h-[18px] tablet:w-[90px]
-          "
-                    height="16"
-                    src="/svg/4-half-stars.svg"
-                    width="80"
-                  />
-                </picture>
-                <div
-                  class="
-            mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
-            text-subtle
-          "
-                >
-                  Nonfiction | 2020
+              pt-2 font-sans text-sm font-medium
+              max:pt-2 max:text-xl max:leading-6
+              tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5
+            "
+                  >
+                    <a
+                      class="
+                inline-block
+                before:absolute before:inset-x-2 before:top-2
+                before:aspect-cover before:bg-default before:opacity-15
+                after:absolute after:top-0 after:left-0 after:z-10
+                after:size-full after:opacity-0
+                hover:text-accent hover:before:opacity-0
+                min-[496px]:before:inset-x-12 min-[496px]:before:top-10
+              "
+                      href="/reviews/fast-forward-by-stephen-morris/"
+                      rel="canonical"
+                    >
+                      Fast Forward
+                    </a>
+                  </div>
+                  <p
+                    class="
+              pt-1 font-sans text-xs leading-4 font-light text-subtle
+              tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
+            "
+                  >
+                    <span
+                      class="
+                hidden
+                tablet:inline
+              "
+                    >
+                      by 
+                    </span>
+                    <span
+                      class=""
+                    >
+                      Stephen Morris
+                    </span>
+                  </p>
+                   
+                  <picture>
+                    <source
+                      media="(prefers-color-scheme: dark)"
+                      srcset="/svg/4-half-stars-dark.svg"
+                    />
+                    <img
+                      alt="A-: 4.5 stars (out of 5)"
+                      class="
+              mt-2 h-4 w-20
+              tablet:mt-3 tablet:h-[18px] tablet:w-[90px]
+            "
+                      height="16"
+                      src="/svg/4-half-stars.svg"
+                      width="80"
+                    />
+                  </picture>
+                  <div
+                    class="
+              mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
+              text-subtle
+            "
+                  >
+                    Nonfiction | 2020
+                  </div>
                 </div>
               </div>
             </li>
             <li
               class="
-        relative flex w-[50%] max-w-[280px] flex-col items-center p-2
+        relative flex w-[50%] max-w-[344px] grow flex-col items-center p-2
         has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
         max:w-[100%]
-        min-[600px]:w-[33.33333333%] min-[600px]:p-4
+        min-[496px]:p-4
+        min-[768px]:w-[33.33333333%]
         min-[900px]:w-[25%]
-        min-[1280px]:w-[16.66666667%]
+        min-[1360px]:w-[16.66666667%]
       "
             >
-              <img
-                alt=""
-                decoding="async"
-                height="372"
-                loading="lazy"
-                sizes="(min-width: 1840px) 248px, (min-width: 1300px) calc(13.08vw + 10px), (min-width: 1260px) calc(-360vw + 4784px), (min-width: 900px) calc(19.12vw + 11px), (min-width: 600px) 27.5vw, calc(41.43vw + 8px)"
-                src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgothic-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
-                srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgothic-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=62&h=93&q=80&f=avif 62w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgothic-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=124&h=186&q=80&f=avif 124w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgothic-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 248w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgothic-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 496w"
-                style="aspect-ratio: 0.66666667;"
-                width="248"
-              />
               <div
                 class="
-          flex w-full grow flex-col bg-default px-[8%] pb-8
-          desktop:pr-[10%] desktop:pl-[8.5%]
+          flex h-full w-full flex-col bg-default
+          min-[496px]:px-8 min-[496px]:pt-6 min-[496px]:pb-4
         "
               >
+                <img
+                  alt=""
+                  decoding="async"
+                  height="372"
+                  loading="lazy"
+                  sizes="(min-width: 1840px) 248px, (min-width: 1300px) calc(13.08vw + 10px), (min-width: 1260px) calc(-360vw + 4784px), (min-width: 900px) calc(19.12vw + 11px), (min-width: 600px) 27.5vw, calc(41.43vw + 8px)"
+                  src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgothic-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
+                  srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgothic-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=62&h=93&q=80&f=avif 62w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgothic-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=124&h=186&q=80&f=avif 124w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgothic-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 248w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgothic-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 496w"
+                  style="aspect-ratio: 0.66666667;"
+                  width="248"
+                />
                 <div
                   class="
-            pt-3 font-sans text-xxs leading-4 font-light tracking-wide
-            whitespace-nowrap text-subtle
+            flex w-full grow flex-col bg-default px-[8%] pb-8
+            min-[496px]:px-0 min-[496px]:pb-4
           "
                 >
-                  30 Jun 2024
-                </div>
-                <div
-                  class="
-            pt-2 font-sans text-sm font-medium
-            max:pt-2 max:text-xl max:leading-6
-            tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5
-          "
-                >
-                  <a
+                  <div
                     class="
-              inline-block
-              before:absolute before:inset-x-0 before:top-0 before:aspect-cover
-              before:bg-default before:opacity-15
-              after:absolute after:top-0 after:left-0 after:z-10 after:size-full
-              after:opacity-0
-              hover:text-accent hover:before:opacity-0
-            "
-                    href="/reviews/gothic-by-philip-fracassi/"
-                    rel="canonical"
-                  >
-                    Gothic
-                  </a>
-                </div>
-                <p
-                  class="
-            pt-1 font-sans text-xs leading-4 font-light text-subtle
-            tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
-          "
-                >
-                  <span
-                    class="
-              hidden
-              tablet:inline
+              pt-3 font-sans text-xxs leading-4 font-light tracking-wide
+              whitespace-nowrap text-subtle
             "
                   >
-                    by 
-                  </span>
-                  <span
-                    class=""
-                  >
-                    Philip Fracassi
-                  </span>
-                </p>
-                 
-                <picture>
-                  <source
-                    media="(prefers-color-scheme: dark)"
-                    srcset="/svg/4-stars-dark.svg"
-                  />
-                  <img
-                    alt="B+: 4 stars (out of 5)"
+                    30 Jun 2024
+                  </div>
+                  <div
                     class="
-            mt-2 h-4 w-20
-            tablet:mt-3 tablet:h-[18px] tablet:w-[90px]
-          "
-                    height="16"
-                    src="/svg/4-stars.svg"
-                    width="80"
-                  />
-                </picture>
-                <div
-                  class="
-            mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
-            text-subtle
-          "
-                >
-                  Novel | 2023
+              pt-2 font-sans text-sm font-medium
+              max:pt-2 max:text-xl max:leading-6
+              tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5
+            "
+                  >
+                    <a
+                      class="
+                inline-block
+                before:absolute before:inset-x-2 before:top-2
+                before:aspect-cover before:bg-default before:opacity-15
+                after:absolute after:top-0 after:left-0 after:z-10
+                after:size-full after:opacity-0
+                hover:text-accent hover:before:opacity-0
+                min-[496px]:before:inset-x-12 min-[496px]:before:top-10
+              "
+                      href="/reviews/gothic-by-philip-fracassi/"
+                      rel="canonical"
+                    >
+                      Gothic
+                    </a>
+                  </div>
+                  <p
+                    class="
+              pt-1 font-sans text-xs leading-4 font-light text-subtle
+              tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
+            "
+                  >
+                    <span
+                      class="
+                hidden
+                tablet:inline
+              "
+                    >
+                      by 
+                    </span>
+                    <span
+                      class=""
+                    >
+                      Philip Fracassi
+                    </span>
+                  </p>
+                   
+                  <picture>
+                    <source
+                      media="(prefers-color-scheme: dark)"
+                      srcset="/svg/4-stars-dark.svg"
+                    />
+                    <img
+                      alt="B+: 4 stars (out of 5)"
+                      class="
+              mt-2 h-4 w-20
+              tablet:mt-3 tablet:h-[18px] tablet:w-[90px]
+            "
+                      height="16"
+                      src="/svg/4-stars.svg"
+                      width="80"
+                    />
+                  </picture>
+                  <div
+                    class="
+              mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
+              text-subtle
+            "
+                  >
+                    Novel | 2023
+                  </div>
                 </div>
               </div>
             </li>
             <li
               class="
-        relative flex w-[50%] max-w-[280px] flex-col items-center p-2
+        relative flex w-[50%] max-w-[344px] grow flex-col items-center p-2
         has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
         max:w-[100%]
-        min-[600px]:w-[33.33333333%] min-[600px]:p-4
+        min-[496px]:p-4
+        min-[768px]:w-[33.33333333%]
         min-[900px]:w-[25%]
-        min-[1280px]:w-[16.66666667%]
+        min-[1360px]:w-[16.66666667%]
       "
             >
-              <img
-                alt=""
-                decoding="async"
-                height="372"
-                loading="lazy"
-                sizes="(min-width: 1840px) 248px, (min-width: 1300px) calc(13.08vw + 10px), (min-width: 1260px) calc(-360vw + 4784px), (min-width: 900px) calc(19.12vw + 11px), (min-width: 600px) 27.5vw, calc(41.43vw + 8px)"
-                src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frecord-play-pause-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
-                srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frecord-play-pause-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=62&h=93&q=80&f=avif 62w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frecord-play-pause-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=124&h=186&q=80&f=avif 124w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frecord-play-pause-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 248w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frecord-play-pause-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 496w"
-                style="aspect-ratio: 0.66666667;"
-                width="248"
-              />
               <div
                 class="
-          flex w-full grow flex-col bg-default px-[8%] pb-8
-          desktop:pr-[10%] desktop:pl-[8.5%]
+          flex h-full w-full flex-col bg-default
+          min-[496px]:px-8 min-[496px]:pt-6 min-[496px]:pb-4
         "
               >
+                <img
+                  alt=""
+                  decoding="async"
+                  height="372"
+                  loading="lazy"
+                  sizes="(min-width: 1840px) 248px, (min-width: 1300px) calc(13.08vw + 10px), (min-width: 1260px) calc(-360vw + 4784px), (min-width: 900px) calc(19.12vw + 11px), (min-width: 600px) 27.5vw, calc(41.43vw + 8px)"
+                  src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frecord-play-pause-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
+                  srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frecord-play-pause-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=62&h=93&q=80&f=avif 62w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frecord-play-pause-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=124&h=186&q=80&f=avif 124w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frecord-play-pause-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 248w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frecord-play-pause-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 496w"
+                  style="aspect-ratio: 0.66666667;"
+                  width="248"
+                />
                 <div
                   class="
-            pt-3 font-sans text-xxs leading-4 font-light tracking-wide
-            whitespace-nowrap text-subtle
+            flex w-full grow flex-col bg-default px-[8%] pb-8
+            min-[496px]:px-0 min-[496px]:pb-4
           "
                 >
-                  11 Nov 2023
-                </div>
-                <div
-                  class="
-            pt-2 font-sans text-sm font-medium
-            max:pt-2 max:text-xl max:leading-6
-            tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5
-          "
-                >
-                  <a
+                  <div
                     class="
-              inline-block
-              before:absolute before:inset-x-0 before:top-0 before:aspect-cover
-              before:bg-default before:opacity-15
-              after:absolute after:top-0 after:left-0 after:z-10 after:size-full
-              after:opacity-0
-              hover:text-accent hover:before:opacity-0
-            "
-                    href="/reviews/record-play-pause-by-stephen-morris/"
-                    rel="canonical"
-                  >
-                    Record Play Pause
-                  </a>
-                </div>
-                <p
-                  class="
-            pt-1 font-sans text-xs leading-4 font-light text-subtle
-            tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
-          "
-                >
-                  <span
-                    class="
-              hidden
-              tablet:inline
+              pt-3 font-sans text-xxs leading-4 font-light tracking-wide
+              whitespace-nowrap text-subtle
             "
                   >
-                    by 
-                  </span>
-                  <span
-                    class=""
-                  >
-                    Stephen Morris
-                  </span>
-                </p>
-                 
-                <picture>
-                  <source
-                    media="(prefers-color-scheme: dark)"
-                    srcset="/svg/5-stars-dark.svg"
-                  />
-                  <img
-                    alt="A: 5 stars (out of 5)"
+                    11 Nov 2023
+                  </div>
+                  <div
                     class="
-            mt-2 h-4 w-20
-            tablet:mt-3 tablet:h-[18px] tablet:w-[90px]
-          "
-                    height="16"
-                    src="/svg/5-stars.svg"
-                    width="80"
-                  />
-                </picture>
-                <div
-                  class="
-            mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
-            text-subtle
-          "
-                >
-                  Nonfiction | 2019
+              pt-2 font-sans text-sm font-medium
+              max:pt-2 max:text-xl max:leading-6
+              tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5
+            "
+                  >
+                    <a
+                      class="
+                inline-block
+                before:absolute before:inset-x-2 before:top-2
+                before:aspect-cover before:bg-default before:opacity-15
+                after:absolute after:top-0 after:left-0 after:z-10
+                after:size-full after:opacity-0
+                hover:text-accent hover:before:opacity-0
+                min-[496px]:before:inset-x-12 min-[496px]:before:top-10
+              "
+                      href="/reviews/record-play-pause-by-stephen-morris/"
+                      rel="canonical"
+                    >
+                      Record Play Pause
+                    </a>
+                  </div>
+                  <p
+                    class="
+              pt-1 font-sans text-xs leading-4 font-light text-subtle
+              tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
+            "
+                  >
+                    <span
+                      class="
+                hidden
+                tablet:inline
+              "
+                    >
+                      by 
+                    </span>
+                    <span
+                      class=""
+                    >
+                      Stephen Morris
+                    </span>
+                  </p>
+                   
+                  <picture>
+                    <source
+                      media="(prefers-color-scheme: dark)"
+                      srcset="/svg/5-stars-dark.svg"
+                    />
+                    <img
+                      alt="A: 5 stars (out of 5)"
+                      class="
+              mt-2 h-4 w-20
+              tablet:mt-3 tablet:h-[18px] tablet:w-[90px]
+            "
+                      height="16"
+                      src="/svg/5-stars.svg"
+                      width="80"
+                    />
+                  </picture>
+                  <div
+                    class="
+              mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
+              text-subtle
+            "
+                  >
+                    Nonfiction | 2019
+                  </div>
                 </div>
               </div>
             </li>
             <li
               class="
-        relative flex w-[50%] max-w-[280px] flex-col items-center p-2
+        relative flex w-[50%] max-w-[344px] grow flex-col items-center p-2
         has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
         max:w-[100%]
-        min-[600px]:w-[33.33333333%] min-[600px]:p-4
+        min-[496px]:p-4
+        min-[768px]:w-[33.33333333%]
         min-[900px]:w-[25%]
-        min-[1280px]:w-[16.66666667%]
+        min-[1360px]:w-[16.66666667%]
       "
             >
-              <img
-                alt=""
-                decoding="async"
-                height="372"
-                loading="lazy"
-                sizes="(min-width: 1840px) 248px, (min-width: 1300px) calc(13.08vw + 10px), (min-width: 1260px) calc(-360vw + 4784px), (min-width: 900px) calc(19.12vw + 11px), (min-width: 600px) 27.5vw, calc(41.43vw + 8px)"
-                src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffright-night-origins-by-tom-holland-a-jack-ulrich.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
-                srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffright-night-origins-by-tom-holland-a-jack-ulrich.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=62&h=93&q=80&f=avif 62w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffright-night-origins-by-tom-holland-a-jack-ulrich.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=124&h=186&q=80&f=avif 124w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffright-night-origins-by-tom-holland-a-jack-ulrich.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 248w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffright-night-origins-by-tom-holland-a-jack-ulrich.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 496w"
-                style="aspect-ratio: 0.66666667;"
-                width="248"
-              />
               <div
                 class="
-          flex w-full grow flex-col bg-default px-[8%] pb-8
-          desktop:pr-[10%] desktop:pl-[8.5%]
+          flex h-full w-full flex-col bg-default
+          min-[496px]:px-8 min-[496px]:pt-6 min-[496px]:pb-4
         "
               >
+                <img
+                  alt=""
+                  decoding="async"
+                  height="372"
+                  loading="lazy"
+                  sizes="(min-width: 1840px) 248px, (min-width: 1300px) calc(13.08vw + 10px), (min-width: 1260px) calc(-360vw + 4784px), (min-width: 900px) calc(19.12vw + 11px), (min-width: 600px) 27.5vw, calc(41.43vw + 8px)"
+                  src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffright-night-origins-by-tom-holland-a-jack-ulrich.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
+                  srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffright-night-origins-by-tom-holland-a-jack-ulrich.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=62&h=93&q=80&f=avif 62w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffright-night-origins-by-tom-holland-a-jack-ulrich.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=124&h=186&q=80&f=avif 124w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffright-night-origins-by-tom-holland-a-jack-ulrich.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 248w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffright-night-origins-by-tom-holland-a-jack-ulrich.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 496w"
+                  style="aspect-ratio: 0.66666667;"
+                  width="248"
+                />
                 <div
                   class="
-            pt-3 font-sans text-xxs leading-4 font-light tracking-wide
-            whitespace-nowrap text-subtle
+            flex w-full grow flex-col bg-default px-[8%] pb-8
+            min-[496px]:px-0 min-[496px]:pb-4
           "
                 >
-                  06 Nov 2023
-                </div>
-                <div
-                  class="
-            pt-2 font-sans text-sm font-medium
-            max:pt-2 max:text-xl max:leading-6
-            tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5
-          "
-                >
-                  <a
+                  <div
                     class="
-              inline-block
-              before:absolute before:inset-x-0 before:top-0 before:aspect-cover
-              before:bg-default before:opacity-15
-              after:absolute after:top-0 after:left-0 after:z-10 after:size-full
-              after:opacity-0
-              hover:text-accent hover:before:opacity-0
-            "
-                    href="/reviews/fright-night-origins-by-tom-holland-a-jack-ulrich/"
-                    rel="canonical"
-                  >
-                    Fright Night Origins
-                  </a>
-                </div>
-                <p
-                  class="
-            pt-1 font-sans text-xs leading-4 font-light text-subtle
-            tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
-          "
-                >
-                  <span
-                    class="
-              hidden
-              tablet:inline
+              pt-3 font-sans text-xxs leading-4 font-light tracking-wide
+              whitespace-nowrap text-subtle
             "
                   >
-                    by 
-                  </span>
-                  <span
-                    class=""
-                  >
-                    Tom Holland
-                  </span>
-                   and 
-                  <span
-                    class=""
-                  >
-                    A. Jack Ulrich
-                  </span>
-                </p>
-                 
-                <picture>
-                  <source
-                    media="(prefers-color-scheme: dark)"
-                    srcset="/svg/3-stars-dark.svg"
-                  />
-                  <img
-                    alt="C+: 3 stars (out of 5)"
+                    06 Nov 2023
+                  </div>
+                  <div
                     class="
-            mt-2 h-4 w-20
-            tablet:mt-3 tablet:h-[18px] tablet:w-[90px]
-          "
-                    height="16"
-                    src="/svg/3-stars.svg"
-                    width="80"
-                  />
-                </picture>
-                <div
-                  class="
-            mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
-            text-subtle
-          "
-                >
-                  Novel | 2023
+              pt-2 font-sans text-sm font-medium
+              max:pt-2 max:text-xl max:leading-6
+              tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5
+            "
+                  >
+                    <a
+                      class="
+                inline-block
+                before:absolute before:inset-x-2 before:top-2
+                before:aspect-cover before:bg-default before:opacity-15
+                after:absolute after:top-0 after:left-0 after:z-10
+                after:size-full after:opacity-0
+                hover:text-accent hover:before:opacity-0
+                min-[496px]:before:inset-x-12 min-[496px]:before:top-10
+              "
+                      href="/reviews/fright-night-origins-by-tom-holland-a-jack-ulrich/"
+                      rel="canonical"
+                    >
+                      Fright Night Origins
+                    </a>
+                  </div>
+                  <p
+                    class="
+              pt-1 font-sans text-xs leading-4 font-light text-subtle
+              tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
+            "
+                  >
+                    <span
+                      class="
+                hidden
+                tablet:inline
+              "
+                    >
+                      by 
+                    </span>
+                    <span
+                      class=""
+                    >
+                      Tom Holland
+                    </span>
+                     and 
+                    <span
+                      class=""
+                    >
+                      A. Jack Ulrich
+                    </span>
+                  </p>
+                   
+                  <picture>
+                    <source
+                      media="(prefers-color-scheme: dark)"
+                      srcset="/svg/3-stars-dark.svg"
+                    />
+                    <img
+                      alt="C+: 3 stars (out of 5)"
+                      class="
+              mt-2 h-4 w-20
+              tablet:mt-3 tablet:h-[18px] tablet:w-[90px]
+            "
+                      height="16"
+                      src="/svg/3-stars.svg"
+                      width="80"
+                    />
+                  </picture>
+                  <div
+                    class="
+              mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
+              text-subtle
+            "
+                  >
+                    Novel | 2023
+                  </div>
                 </div>
               </div>
             </li>
             <li
               class="
-        relative flex w-[50%] max-w-[280px] flex-col items-center p-2
+        relative flex w-[50%] max-w-[344px] grow flex-col items-center p-2
         has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
         max:w-[100%]
-        min-[600px]:w-[33.33333333%] min-[600px]:p-4
+        min-[496px]:p-4
+        min-[768px]:w-[33.33333333%]
         min-[900px]:w-[25%]
-        min-[1280px]:w-[16.66666667%]
+        min-[1360px]:w-[16.66666667%]
       "
             >
-              <img
-                alt=""
-                decoding="async"
-                height="372"
-                loading="lazy"
-                sizes="(min-width: 1840px) 248px, (min-width: 1300px) calc(13.08vw + 10px), (min-width: 1260px) calc(-360vw + 4784px), (min-width: 900px) calc(19.12vw + 11px), (min-width: 600px) 27.5vw, calc(41.43vw + 8px)"
-                src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdont-let-them-get-you-down-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
-                srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdont-let-them-get-you-down-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=62&h=93&q=80&f=avif 62w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdont-let-them-get-you-down-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=124&h=186&q=80&f=avif 124w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdont-let-them-get-you-down-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 248w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdont-let-them-get-you-down-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 496w"
-                style="aspect-ratio: 0.66666667;"
-                width="248"
-              />
               <div
                 class="
-          flex w-full grow flex-col bg-default px-[8%] pb-8
-          desktop:pr-[10%] desktop:pl-[8.5%]
+          flex h-full w-full flex-col bg-default
+          min-[496px]:px-8 min-[496px]:pt-6 min-[496px]:pb-4
         "
               >
+                <img
+                  alt=""
+                  decoding="async"
+                  height="372"
+                  loading="lazy"
+                  sizes="(min-width: 1840px) 248px, (min-width: 1300px) calc(13.08vw + 10px), (min-width: 1260px) calc(-360vw + 4784px), (min-width: 900px) calc(19.12vw + 11px), (min-width: 600px) 27.5vw, calc(41.43vw + 8px)"
+                  src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdont-let-them-get-you-down-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
+                  srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdont-let-them-get-you-down-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=62&h=93&q=80&f=avif 62w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdont-let-them-get-you-down-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=124&h=186&q=80&f=avif 124w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdont-let-them-get-you-down-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 248w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdont-let-them-get-you-down-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 496w"
+                  style="aspect-ratio: 0.66666667;"
+                  width="248"
+                />
                 <div
                   class="
-            pt-3 font-sans text-xxs leading-4 font-light tracking-wide
-            whitespace-nowrap text-subtle
+            flex w-full grow flex-col bg-default px-[8%] pb-8
+            min-[496px]:px-0 min-[496px]:pb-4
           "
                 >
-                  29 Oct 2023
-                </div>
-                <div
-                  class="
-            pt-2 font-sans text-sm font-medium
-            max:pt-2 max:text-xl max:leading-6
-            tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5
-          "
-                >
-                  <a
+                  <div
                     class="
-              inline-block
-              before:absolute before:inset-x-0 before:top-0 before:aspect-cover
-              before:bg-default before:opacity-15
-              after:absolute after:top-0 after:left-0 after:z-10 after:size-full
-              after:opacity-0
-              hover:text-accent hover:before:opacity-0
-            "
-                    href="/reviews/dont-let-them-get-you-down-by-philip-fracassi/"
-                    rel="canonical"
-                  >
-                    Don't Let Them Get You Down
-                  </a>
-                </div>
-                <p
-                  class="
-            pt-1 font-sans text-xs leading-4 font-light text-subtle
-            tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
-          "
-                >
-                  <span
-                    class="
-              hidden
-              tablet:inline
+              pt-3 font-sans text-xxs leading-4 font-light tracking-wide
+              whitespace-nowrap text-subtle
             "
                   >
-                    by 
-                  </span>
-                  <span
-                    class=""
-                  >
-                    Philip Fracassi
-                  </span>
-                </p>
-                 
-                <picture>
-                  <source
-                    media="(prefers-color-scheme: dark)"
-                    srcset="/svg/2-half-stars-dark.svg"
-                  />
-                  <img
-                    alt="C-: 2.5 stars (out of 5)"
+                    29 Oct 2023
+                  </div>
+                  <div
                     class="
-            mt-2 h-4 w-20
-            tablet:mt-3 tablet:h-[18px] tablet:w-[90px]
-          "
-                    height="16"
-                    src="/svg/2-half-stars.svg"
-                    width="80"
-                  />
-                </picture>
-                <div
-                  class="
-            mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
-            text-subtle
-          "
-                >
-                  Novel | 2022
+              pt-2 font-sans text-sm font-medium
+              max:pt-2 max:text-xl max:leading-6
+              tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5
+            "
+                  >
+                    <a
+                      class="
+                inline-block
+                before:absolute before:inset-x-2 before:top-2
+                before:aspect-cover before:bg-default before:opacity-15
+                after:absolute after:top-0 after:left-0 after:z-10
+                after:size-full after:opacity-0
+                hover:text-accent hover:before:opacity-0
+                min-[496px]:before:inset-x-12 min-[496px]:before:top-10
+              "
+                      href="/reviews/dont-let-them-get-you-down-by-philip-fracassi/"
+                      rel="canonical"
+                    >
+                      Don't Let Them Get You Down
+                    </a>
+                  </div>
+                  <p
+                    class="
+              pt-1 font-sans text-xs leading-4 font-light text-subtle
+              tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
+            "
+                  >
+                    <span
+                      class="
+                hidden
+                tablet:inline
+              "
+                    >
+                      by 
+                    </span>
+                    <span
+                      class=""
+                    >
+                      Philip Fracassi
+                    </span>
+                  </p>
+                   
+                  <picture>
+                    <source
+                      media="(prefers-color-scheme: dark)"
+                      srcset="/svg/2-half-stars-dark.svg"
+                    />
+                    <img
+                      alt="C-: 2.5 stars (out of 5)"
+                      class="
+              mt-2 h-4 w-20
+              tablet:mt-3 tablet:h-[18px] tablet:w-[90px]
+            "
+                      height="16"
+                      src="/svg/2-half-stars.svg"
+                      width="80"
+                    />
+                  </picture>
+                  <div
+                    class="
+              mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
+              text-subtle
+            "
+                  >
+                    Novel | 2022
+                  </div>
                 </div>
               </div>
             </li>
             <li
               class="
-        relative flex w-[50%] max-w-[280px] flex-col items-center p-2
+        relative flex w-[50%] max-w-[344px] grow flex-col items-center p-2
         has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
         max:w-[100%]
-        min-[600px]:w-[33.33333333%] min-[600px]:p-4
+        min-[496px]:p-4
+        min-[768px]:w-[33.33333333%]
         min-[900px]:w-[25%]
-        min-[1280px]:w-[16.66666667%]
+        min-[1360px]:w-[16.66666667%]
       "
             >
-              <img
-                alt=""
-                decoding="async"
-                height="372"
-                loading="lazy"
-                sizes="(min-width: 1840px) 248px, (min-width: 1300px) calc(13.08vw + 10px), (min-width: 1260px) calc(-360vw + 4784px), (min-width: 900px) calc(19.12vw + 11px), (min-width: 600px) 27.5vw, calc(41.43vw + 8px)"
-                src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-creative-act-by-rick-rubin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
-                srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-creative-act-by-rick-rubin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=62&h=93&q=80&f=avif 62w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-creative-act-by-rick-rubin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=124&h=186&q=80&f=avif 124w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-creative-act-by-rick-rubin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 248w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-creative-act-by-rick-rubin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 496w"
-                style="aspect-ratio: 0.66666667;"
-                width="248"
-              />
               <div
                 class="
-          flex w-full grow flex-col bg-default px-[8%] pb-8
-          desktop:pr-[10%] desktop:pl-[8.5%]
+          flex h-full w-full flex-col bg-default
+          min-[496px]:px-8 min-[496px]:pt-6 min-[496px]:pb-4
         "
               >
+                <img
+                  alt=""
+                  decoding="async"
+                  height="372"
+                  loading="lazy"
+                  sizes="(min-width: 1840px) 248px, (min-width: 1300px) calc(13.08vw + 10px), (min-width: 1260px) calc(-360vw + 4784px), (min-width: 900px) calc(19.12vw + 11px), (min-width: 600px) 27.5vw, calc(41.43vw + 8px)"
+                  src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-creative-act-by-rick-rubin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
+                  srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-creative-act-by-rick-rubin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=62&h=93&q=80&f=avif 62w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-creative-act-by-rick-rubin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=124&h=186&q=80&f=avif 124w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-creative-act-by-rick-rubin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 248w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-creative-act-by-rick-rubin.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 496w"
+                  style="aspect-ratio: 0.66666667;"
+                  width="248"
+                />
                 <div
                   class="
-            pt-3 font-sans text-xxs leading-4 font-light tracking-wide
-            whitespace-nowrap text-subtle
+            flex w-full grow flex-col bg-default px-[8%] pb-8
+            min-[496px]:px-0 min-[496px]:pb-4
           "
                 >
-                  22 Oct 2023
-                </div>
-                <div
-                  class="
-            pt-2 font-sans text-sm font-medium
-            max:pt-2 max:text-xl max:leading-6
-            tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5
-          "
-                >
-                  <a
+                  <div
                     class="
-              inline-block
-              before:absolute before:inset-x-0 before:top-0 before:aspect-cover
-              before:bg-default before:opacity-15
-              after:absolute after:top-0 after:left-0 after:z-10 after:size-full
-              after:opacity-0
-              hover:text-accent hover:before:opacity-0
-            "
-                    href="/reviews/the-creative-act-by-rick-rubin/"
-                    rel="canonical"
-                  >
-                    The Creative Act
-                  </a>
-                </div>
-                <p
-                  class="
-            pt-1 font-sans text-xs leading-4 font-light text-subtle
-            tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
-          "
-                >
-                  <span
-                    class="
-              hidden
-              tablet:inline
+              pt-3 font-sans text-xxs leading-4 font-light tracking-wide
+              whitespace-nowrap text-subtle
             "
                   >
-                    by 
-                  </span>
-                  <span
-                    class=""
-                  >
-                    Rick Rubin
-                  </span>
-                </p>
-                 
-                <picture>
-                  <source
-                    media="(prefers-color-scheme: dark)"
-                    srcset="/svg/3-stars-dark.svg"
-                  />
-                  <img
-                    alt="C+: 3 stars (out of 5)"
+                    22 Oct 2023
+                  </div>
+                  <div
                     class="
-            mt-2 h-4 w-20
-            tablet:mt-3 tablet:h-[18px] tablet:w-[90px]
-          "
-                    height="16"
-                    src="/svg/3-stars.svg"
-                    width="80"
-                  />
-                </picture>
-                <div
-                  class="
-            mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
-            text-subtle
-          "
-                >
-                  Nonfiction | 2023
+              pt-2 font-sans text-sm font-medium
+              max:pt-2 max:text-xl max:leading-6
+              tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5
+            "
+                  >
+                    <a
+                      class="
+                inline-block
+                before:absolute before:inset-x-2 before:top-2
+                before:aspect-cover before:bg-default before:opacity-15
+                after:absolute after:top-0 after:left-0 after:z-10
+                after:size-full after:opacity-0
+                hover:text-accent hover:before:opacity-0
+                min-[496px]:before:inset-x-12 min-[496px]:before:top-10
+              "
+                      href="/reviews/the-creative-act-by-rick-rubin/"
+                      rel="canonical"
+                    >
+                      The Creative Act
+                    </a>
+                  </div>
+                  <p
+                    class="
+              pt-1 font-sans text-xs leading-4 font-light text-subtle
+              tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
+            "
+                  >
+                    <span
+                      class="
+                hidden
+                tablet:inline
+              "
+                    >
+                      by 
+                    </span>
+                    <span
+                      class=""
+                    >
+                      Rick Rubin
+                    </span>
+                  </p>
+                   
+                  <picture>
+                    <source
+                      media="(prefers-color-scheme: dark)"
+                      srcset="/svg/3-stars-dark.svg"
+                    />
+                    <img
+                      alt="C+: 3 stars (out of 5)"
+                      class="
+              mt-2 h-4 w-20
+              tablet:mt-3 tablet:h-[18px] tablet:w-[90px]
+            "
+                      height="16"
+                      src="/svg/3-stars.svg"
+                      width="80"
+                    />
+                  </picture>
+                  <div
+                    class="
+              mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
+              text-subtle
+            "
+                  >
+                    Nonfiction | 2023
+                  </div>
                 </div>
               </div>
             </li>
             <li
               class="
-        relative flex w-[50%] max-w-[280px] flex-col items-center p-2
+        relative flex w-[50%] max-w-[344px] grow flex-col items-center p-2
         has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
         max:w-[100%]
-        min-[600px]:w-[33.33333333%] min-[600px]:p-4
+        min-[496px]:p-4
+        min-[768px]:w-[33.33333333%]
         min-[900px]:w-[25%]
-        min-[1280px]:w-[16.66666667%]
+        min-[1360px]:w-[16.66666667%]
       "
             >
-              <img
-                alt=""
-                decoding="async"
-                height="372"
-                loading="lazy"
-                sizes="(min-width: 1840px) 248px, (min-width: 1300px) calc(13.08vw + 10px), (min-width: 1260px) calc(-360vw + 4784px), (min-width: 900px) calc(19.12vw + 11px), (min-width: 600px) 27.5vw, calc(41.43vw + 8px)"
-                src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsacculina-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
-                srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsacculina-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=62&h=93&q=80&f=avif 62w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsacculina-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=124&h=186&q=80&f=avif 124w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsacculina-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 248w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsacculina-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 496w"
-                style="aspect-ratio: 0.66666667;"
-                width="248"
-              />
               <div
                 class="
-          flex w-full grow flex-col bg-default px-[8%] pb-8
-          desktop:pr-[10%] desktop:pl-[8.5%]
+          flex h-full w-full flex-col bg-default
+          min-[496px]:px-8 min-[496px]:pt-6 min-[496px]:pb-4
         "
               >
+                <img
+                  alt=""
+                  decoding="async"
+                  height="372"
+                  loading="lazy"
+                  sizes="(min-width: 1840px) 248px, (min-width: 1300px) calc(13.08vw + 10px), (min-width: 1260px) calc(-360vw + 4784px), (min-width: 900px) calc(19.12vw + 11px), (min-width: 600px) 27.5vw, calc(41.43vw + 8px)"
+                  src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsacculina-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
+                  srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsacculina-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=62&h=93&q=80&f=avif 62w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsacculina-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=124&h=186&q=80&f=avif 124w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsacculina-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 248w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsacculina-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 496w"
+                  style="aspect-ratio: 0.66666667;"
+                  width="248"
+                />
                 <div
                   class="
-            pt-3 font-sans text-xxs leading-4 font-light tracking-wide
-            whitespace-nowrap text-subtle
+            flex w-full grow flex-col bg-default px-[8%] pb-8
+            min-[496px]:px-0 min-[496px]:pb-4
           "
                 >
-                  09 Oct 2023
-                </div>
-                <div
-                  class="
-            pt-2 font-sans text-sm font-medium
-            max:pt-2 max:text-xl max:leading-6
-            tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5
-          "
-                >
-                  <a
+                  <div
                     class="
-              inline-block
-              before:absolute before:inset-x-0 before:top-0 before:aspect-cover
-              before:bg-default before:opacity-15
-              after:absolute after:top-0 after:left-0 after:z-10 after:size-full
-              after:opacity-0
-              hover:text-accent hover:before:opacity-0
-            "
-                    href="/reviews/sacculina-by-philip-fracassi/"
-                    rel="canonical"
-                  >
-                    Sacculina
-                  </a>
-                </div>
-                <p
-                  class="
-            pt-1 font-sans text-xs leading-4 font-light text-subtle
-            tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
-          "
-                >
-                  <span
-                    class="
-              hidden
-              tablet:inline
+              pt-3 font-sans text-xxs leading-4 font-light tracking-wide
+              whitespace-nowrap text-subtle
             "
                   >
-                    by 
-                  </span>
-                  <span
-                    class=""
-                  >
-                    Philip Fracassi
-                  </span>
-                </p>
-                 
-                <picture>
-                  <source
-                    media="(prefers-color-scheme: dark)"
-                    srcset="/svg/4-stars-dark.svg"
-                  />
-                  <img
-                    alt="B: 4 stars (out of 5)"
+                    09 Oct 2023
+                  </div>
+                  <div
                     class="
-            mt-2 h-4 w-20
-            tablet:mt-3 tablet:h-[18px] tablet:w-[90px]
-          "
-                    height="16"
-                    src="/svg/4-stars.svg"
-                    width="80"
-                  />
-                </picture>
-                <div
-                  class="
-            mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
-            text-subtle
-          "
-                >
-                  Novella | 2017
+              pt-2 font-sans text-sm font-medium
+              max:pt-2 max:text-xl max:leading-6
+              tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5
+            "
+                  >
+                    <a
+                      class="
+                inline-block
+                before:absolute before:inset-x-2 before:top-2
+                before:aspect-cover before:bg-default before:opacity-15
+                after:absolute after:top-0 after:left-0 after:z-10
+                after:size-full after:opacity-0
+                hover:text-accent hover:before:opacity-0
+                min-[496px]:before:inset-x-12 min-[496px]:before:top-10
+              "
+                      href="/reviews/sacculina-by-philip-fracassi/"
+                      rel="canonical"
+                    >
+                      Sacculina
+                    </a>
+                  </div>
+                  <p
+                    class="
+              pt-1 font-sans text-xs leading-4 font-light text-subtle
+              tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
+            "
+                  >
+                    <span
+                      class="
+                hidden
+                tablet:inline
+              "
+                    >
+                      by 
+                    </span>
+                    <span
+                      class=""
+                    >
+                      Philip Fracassi
+                    </span>
+                  </p>
+                   
+                  <picture>
+                    <source
+                      media="(prefers-color-scheme: dark)"
+                      srcset="/svg/4-stars-dark.svg"
+                    />
+                    <img
+                      alt="B: 4 stars (out of 5)"
+                      class="
+              mt-2 h-4 w-20
+              tablet:mt-3 tablet:h-[18px] tablet:w-[90px]
+            "
+                      height="16"
+                      src="/svg/4-stars.svg"
+                      width="80"
+                    />
+                  </picture>
+                  <div
+                    class="
+              mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
+              text-subtle
+            "
+                  >
+                    Novella | 2017
+                  </div>
                 </div>
               </div>
             </li>
             <li
               class="
-        relative flex w-[50%] max-w-[280px] flex-col items-center p-2
+        relative flex w-[50%] max-w-[344px] grow flex-col items-center p-2
         has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
         max:w-[100%]
-        min-[600px]:w-[33.33333333%] min-[600px]:p-4
+        min-[496px]:p-4
+        min-[768px]:w-[33.33333333%]
         min-[900px]:w-[25%]
-        min-[1280px]:w-[16.66666667%]
+        min-[1360px]:w-[16.66666667%]
       "
             >
-              <img
-                alt=""
-                decoding="async"
-                height="372"
-                loading="lazy"
-                sizes="(min-width: 1840px) 248px, (min-width: 1300px) calc(13.08vw + 10px), (min-width: 1260px) calc(-360vw + 4784px), (min-width: 900px) calc(19.12vw + 11px), (min-width: 600px) 27.5vw, calc(41.43vw + 8px)"
-                src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-cipher-by-kathe-koja.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
-                srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-cipher-by-kathe-koja.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=62&h=93&q=80&f=avif 62w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-cipher-by-kathe-koja.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=124&h=186&q=80&f=avif 124w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-cipher-by-kathe-koja.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 248w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-cipher-by-kathe-koja.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 496w"
-                style="aspect-ratio: 0.66666667;"
-                width="248"
-              />
               <div
                 class="
-          flex w-full grow flex-col bg-default px-[8%] pb-8
-          desktop:pr-[10%] desktop:pl-[8.5%]
+          flex h-full w-full flex-col bg-default
+          min-[496px]:px-8 min-[496px]:pt-6 min-[496px]:pb-4
         "
               >
+                <img
+                  alt=""
+                  decoding="async"
+                  height="372"
+                  loading="lazy"
+                  sizes="(min-width: 1840px) 248px, (min-width: 1300px) calc(13.08vw + 10px), (min-width: 1260px) calc(-360vw + 4784px), (min-width: 900px) calc(19.12vw + 11px), (min-width: 600px) 27.5vw, calc(41.43vw + 8px)"
+                  src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-cipher-by-kathe-koja.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif"
+                  srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-cipher-by-kathe-koja.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=62&h=93&q=80&f=avif 62w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-cipher-by-kathe-koja.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=124&h=186&q=80&f=avif 124w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-cipher-by-kathe-koja.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=248&h=372&q=80&f=avif 248w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-cipher-by-kathe-koja.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=496&h=744&q=80&f=avif 496w"
+                  style="aspect-ratio: 0.66666667;"
+                  width="248"
+                />
                 <div
                   class="
-            pt-3 font-sans text-xxs leading-4 font-light tracking-wide
-            whitespace-nowrap text-subtle
+            flex w-full grow flex-col bg-default px-[8%] pb-8
+            min-[496px]:px-0 min-[496px]:pb-4
           "
                 >
-                  29 Jan 2023
-                </div>
-                <div
-                  class="
-            pt-2 font-sans text-sm font-medium
-            max:pt-2 max:text-xl max:leading-6
-            tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5
-          "
-                >
-                  <a
+                  <div
                     class="
-              inline-block
-              before:absolute before:inset-x-0 before:top-0 before:aspect-cover
-              before:bg-default before:opacity-15
-              after:absolute after:top-0 after:left-0 after:z-10 after:size-full
-              after:opacity-0
-              hover:text-accent hover:before:opacity-0
-            "
-                    href="/reviews/the-cipher-by-kathe-koja/"
-                    rel="canonical"
-                  >
-                    The Cipher
-                  </a>
-                </div>
-                <p
-                  class="
-            pt-1 font-sans text-xs leading-4 font-light text-subtle
-            tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
-          "
-                >
-                  <span
-                    class="
-              hidden
-              tablet:inline
+              pt-3 font-sans text-xxs leading-4 font-light tracking-wide
+              whitespace-nowrap text-subtle
             "
                   >
-                    by 
-                  </span>
-                  <span
-                    class=""
-                  >
-                    Kathe Koja
-                  </span>
-                </p>
-                 
-                <picture>
-                  <source
-                    media="(prefers-color-scheme: dark)"
-                    srcset="/svg/4-stars-dark.svg"
-                  />
-                  <img
-                    alt="B: 4 stars (out of 5)"
+                    29 Jan 2023
+                  </div>
+                  <div
                     class="
-            mt-2 h-4 w-20
-            tablet:mt-3 tablet:h-[18px] tablet:w-[90px]
-          "
-                    height="16"
-                    src="/svg/4-stars.svg"
-                    width="80"
-                  />
-                </picture>
-                <div
-                  class="
-            mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
-            text-subtle
-          "
-                >
-                  Novel | 1991
+              pt-2 font-sans text-sm font-medium
+              max:pt-2 max:text-xl max:leading-6
+              tablet:pt-3 tablet:font-serif tablet:text-md tablet:leading-5
+            "
+                  >
+                    <a
+                      class="
+                inline-block
+                before:absolute before:inset-x-2 before:top-2
+                before:aspect-cover before:bg-default before:opacity-15
+                after:absolute after:top-0 after:left-0 after:z-10
+                after:size-full after:opacity-0
+                hover:text-accent hover:before:opacity-0
+                min-[496px]:before:inset-x-12 min-[496px]:before:top-10
+              "
+                      href="/reviews/the-cipher-by-kathe-koja/"
+                      rel="canonical"
+                    >
+                      The Cipher
+                    </a>
+                  </div>
+                  <p
+                    class="
+              pt-1 font-sans text-xs leading-4 font-light text-subtle
+              tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
+            "
+                  >
+                    <span
+                      class="
+                hidden
+                tablet:inline
+              "
+                    >
+                      by 
+                    </span>
+                    <span
+                      class=""
+                    >
+                      Kathe Koja
+                    </span>
+                  </p>
+                   
+                  <picture>
+                    <source
+                      media="(prefers-color-scheme: dark)"
+                      srcset="/svg/4-stars-dark.svg"
+                    />
+                    <img
+                      alt="B: 4 stars (out of 5)"
+                      class="
+              mt-2 h-4 w-20
+              tablet:mt-3 tablet:h-[18px] tablet:w-[90px]
+            "
+                      height="16"
+                      src="/svg/4-stars.svg"
+                      width="80"
+                    />
+                  </picture>
+                  <div
+                    class="
+              mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
+              text-subtle
+            "
+                  >
+                    Novel | 1991
+                  </div>
                 </div>
               </div>
             </li>

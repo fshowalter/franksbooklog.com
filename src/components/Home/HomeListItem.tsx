@@ -43,8 +43,8 @@ export function HomeListItem({
         relative flex w-[50%] max-w-[344px] grow flex-col items-center p-2
         has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
         max:w-[100%]
-        min-[500px]:p-4
-        min-[640px]:w-[33.33333333%]
+        min-[496px]:p-4
+        min-[768px]:w-[33.33333333%]
         min-[900px]:w-[25%]
         min-[1360px]:w-[16.66666667%]
       `}
@@ -52,7 +52,7 @@ export function HomeListItem({
       <div
         className={`
           flex h-full w-full flex-col bg-default
-          min-[640px]:px-8 min-[640px]:pt-6 min-[640px]:pb-4
+          min-[496px]:px-8 min-[496px]:pt-6 min-[496px]:pb-4
         `}
       >
         <Cover
@@ -67,7 +67,7 @@ export function HomeListItem({
         <div
           className={`
             flex w-full grow flex-col bg-default px-[8%] pb-8
-            min-[640px]:px-0 min-[640px]:pb-4
+            min-[496px]:px-0 min-[496px]:pb-4
           `}
         >
           <div
@@ -93,8 +93,7 @@ export function HomeListItem({
                 after:absolute after:top-0 after:left-0 after:z-10
                 after:size-full after:opacity-0
                 hover:text-accent hover:before:opacity-0
-                min-[500px]:before:inset-x-4 min-[500px]:before:top-4
-                min-[640px]:before:inset-x-12 min-[640px]:before:top-10
+                min-[496px]:before:inset-x-12 min-[496px]:before:top-10
               `}
               href={`/reviews/${value.slug}/`}
               rel="canonical"
