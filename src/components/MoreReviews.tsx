@@ -112,13 +112,19 @@ function MoreReviewsCard({ value }: { value: MoreReviewsValue }): JSX.Element {
             tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
           `}
         >
-          by{" "}
+          <span
+            className={`
+              hidden
+              tablet:inline
+            `}
+          >
+            by{" "}
+          </span>
           {toSentenceArray(
             value.authors.map((author) => {
               return (
                 <AuthorLink
                   as="span"
-                  className="font-normal text-default"
                   key={author.name}
                   name={author.name}
                   notes={author.notes}
