@@ -34,8 +34,8 @@ export function Home({ backdropImageProps, deck, values }: Props): JSX.Element {
         <SubHeading as="h2">Latest Reviews</SubHeading>
         <ol
           className={`
-            -mx-4 flex flex-wrap justify-center
-            min-[900px]:-mx-4
+            -mx-4 flex flex-wrap content-stretch justify-center
+            min-[600px]:-mx-12
             desktop:justify-between desktop:gap-y-4
           `}
         >
