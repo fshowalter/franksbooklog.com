@@ -99,13 +99,20 @@ export function HomeListItem({
             tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
           `}
         >
-          by{" "}
+          <span
+            className={`
+              hidden
+              tablet:inline
+            `}
+          >
+            by{" "}
+          </span>
           {toSentenceArray(
             value.authors.map((author) => {
               return (
                 <AuthorLink
                   as="span"
-                  className="font-normal text-default"
+                  className=""
                   key={author.slug}
                   name={author.name}
                   notes={author.notes}
