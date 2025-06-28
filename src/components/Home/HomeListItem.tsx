@@ -52,7 +52,7 @@ export function HomeListItem({
       <div
         className={`
           flex h-full w-full flex-col bg-default
-          min-[500px]:px-8 min-[500px]:pt-8 min-[500px]:pb-4
+          min-[500px]:px-8 min-[500px]:pt-6 min-[500px]:pb-4
         `}
       >
         <Cover
