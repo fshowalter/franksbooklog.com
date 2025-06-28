@@ -40,7 +40,7 @@ export function HomeListItem({
   return (
     <li
       className={`
-        relative flex w-[50%] max-w-[280px] grow flex-col items-center
+        relative flex w-[50%] max-w-[344px] grow flex-col items-center
         self-stretch p-2
         has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
         max:w-[100%]
