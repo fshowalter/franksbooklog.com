@@ -66,8 +66,8 @@ export function HomeListItem({
         />
         <div
           className={`
-            flex w-full grow flex-col bg-default px-[8%] pb-8
-            min-[496px]:px-0 min-[496px]:pb-4
+            flex w-full grow flex-col bg-default px-1 pb-8
+            min-[496px]:pb-4
           `}
         >
           <div
