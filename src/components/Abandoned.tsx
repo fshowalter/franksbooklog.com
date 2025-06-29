@@ -1,4 +1,10 @@
-export function Abandoned({ value }: { value: string | undefined }) {
+export function Abandoned({
+  className,
+  value,
+}: {
+  className?: string;
+  value: string | undefined;
+}) {
   if (value !== "Abandoned") {
     return false;
   }
@@ -7,7 +13,7 @@ export function Abandoned({ value }: { value: string | undefined }) {
     <div
       className={`
         bg-abandoned p-1 font-sans text-xxs font-semibold text-[#fff] uppercase
-        tablet:my-1
+        ${className}
       `}
     >
       Abandoned
