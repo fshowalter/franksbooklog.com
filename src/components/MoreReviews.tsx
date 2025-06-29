@@ -5,6 +5,7 @@ import type { Review } from "~/api/reviews";
 
 import { toSentenceArray } from "~/utils";
 
+import { Abandoned } from "./Abandoned";
 import { AuthorLink } from "./AuthorLink";
 import { Cover } from "./Cover";
 import { Grade } from "./Grade";
@@ -47,8 +48,7 @@ export function MoreReviews({
       <div className={``}>{children}</div>
       <ul
         className={`
-          -mx-2 flex flex-wrap content-stretch justify-center
-          min-[496px]:-mx-4
+          -mx-4 flex flex-wrap content-stretch justify-center
           min-[736px]:-mx-12
           min-[1360px]:gap-y-4
         `}
@@ -66,7 +66,7 @@ function MoreReviewsCard({ value }: { value: MoreReviewsValue }): JSX.Element {
     <li
       className={`
         relative flex w-[50%] max-w-[344px] flex-col items-center border-default
-        p-2
+        p-1
         has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
         max:w-[100%]
         min-[496px]:p-4
@@ -76,7 +76,7 @@ function MoreReviewsCard({ value }: { value: MoreReviewsValue }): JSX.Element {
     >
       <div
         className={`
-          flex h-full w-full flex-col bg-default
+          flex h-full w-full flex-col bg-default p-3
           min-[496px]:px-8 min-[496px]:pb-4
           min-[640px]:pt-6
         `}
@@ -90,8 +90,8 @@ function MoreReviewsCard({ value }: { value: MoreReviewsValue }): JSX.Element {
         />
         <div
           className={`
-            flex w-full grow flex-col bg-default px-[8%] pb-8
-            min-[496px]:px-0 min-[496px]:pb-4
+            flex w-full grow flex-col bg-default px-1 pb-8
+            min-[496px]:pb-4
           `}
         >
           <div
@@ -150,6 +150,13 @@ function MoreReviewsCard({ value }: { value: MoreReviewsValue }): JSX.Element {
               tablet:mt-3 tablet:h-[18px] tablet:w-[90px]
             `}
             height={18}
+            value={value.grade}
+          />
+          <Abandoned
+            className={`
+              mt-2 self-start
+              tablet:mt-3
+            `}
             value={value.grade}
           />
           <div

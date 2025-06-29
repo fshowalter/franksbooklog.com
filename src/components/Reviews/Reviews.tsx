@@ -132,7 +132,7 @@ function ReviewsListItem({ value }: { value: ListItemValue }): JSX.Element {
           values={value.authors}
         />
         <Grade className="mb-1" height={16} value={value.grade} />
-        <Abandoned value={value.grade} />
+        <Abandoned className="tablet:my-1" value={value.grade} />
         <ListItemKindAndYear kind={value.kind} year={value.yearPublished} />
       </div>
     </ListItem>
