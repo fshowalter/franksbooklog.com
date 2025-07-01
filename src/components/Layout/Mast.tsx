@@ -77,16 +77,16 @@ function HamburgerMenu({ hasBackdrop }: { hasBackdrop: boolean }) {
             transition-[top,bottom,transform] duration-200 ease-in-out
             group-has-[#nav:checked]:transform-[rotate(45deg)]
             group-has-[#nav:checked]:!bg-[#fff]
-            group-has-[#nav:checked]:before:top-0
-            group-has-[#nav:checked]:before:transform-[rotate(90deg)]
-            group-has-[#nav:checked]:after:bottom-0
-            group-has-[#nav:checked]:after:transform-[rotate(90deg)]
             before:absolute before:-top-2 before:block before:h-0.5 before:w-6
             before:bg-inherit before:transition before:duration-200
             before:ease-in-out
+            group-has-[#nav:checked]:before:top-0
+            group-has-[#nav:checked]:before:transform-[rotate(90deg)]
             after:absolute after:-bottom-2 after:block after:h-0.5 after:w-6
             after:bg-inherit after:transition after:duration-200
             after:ease-in-out
+            group-has-[#nav:checked]:after:bottom-0
+            group-has-[#nav:checked]:after:transform-[rotate(90deg)]
           `}
           style={{
             backgroundColor: hasBackdrop ? "#fff" : "var(--fg-default)",
@@ -105,9 +105,9 @@ function HamburgerMenu({ hasBackdrop }: { hasBackdrop: boolean }) {
           group-has-[#nav:checked]:pt-20 group-has-[#nav:checked]:pr-[16%]
           group-has-[#nav:checked]:pb-5 group-has-[#nav:checked]:pl-[12%]
           group-has-[#nav:checked]:opacity-100
+          tablet:max-w-[35vw]
           group-has-[#nav:checked]:tablet:px-10
           group-has-[#nav:checked]:tablet:py-40
-          tablet:max-w-[35vw]
           desktop:hidden
         `}
       >
