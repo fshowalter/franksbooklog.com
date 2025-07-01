@@ -1,7 +1,7 @@
 {
   "year": "2018",
-  "workCount": 14,
-  "bookCount": 14,
+  "workCount": 15,
+  "bookCount": 15,
   "kindDistribution": [
     {
       "name": "Anthology",
@@ -13,7 +13,7 @@
     },
     {
       "name": "Novel",
-      "count": 7
+      "count": 8
     }
   ],
   "editionDistribution": [
@@ -23,7 +23,7 @@
     },
     {
       "name": "Kindle",
-      "count": 13
+      "count": 14
     }
   ],
   "decadeDistribution": [
@@ -33,7 +33,7 @@
     },
     {
       "name": "1980s",
-      "count": 6
+      "count": 7
     },
     {
       "name": "1990s",
@@ -95,6 +95,35 @@
           "kind": "Novel",
           "title": "The Stake",
           "yearPublished": "1990",
+          "includedInSlugs": [],
+          "reviewed": false
+        }
+      ]
+    },
+    {
+      "name": "Stephen King",
+      "count": 2,
+      "slug": "stephen-king",
+      "readings": [
+        {
+          "sequence": 1,
+          "date": "2018-06-29",
+          "slug": "the-talisman-by-stephen-king-peter-straub",
+          "edition": "Kindle",
+          "kind": "Novel",
+          "title": "The Talisman",
+          "yearPublished": "1984",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2018-07-18",
+          "slug": "cycle-of-the-werewolf-by-stephen-king",
+          "edition": "Kindle",
+          "kind": "Novel",
+          "title": "Cycle of the Werewolf",
+          "yearPublished": "1985",
           "includedInSlugs": [],
           "reviewed": false
         }
