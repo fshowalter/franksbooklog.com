@@ -1,11 +1,11 @@
 {
   "year": "2018",
-  "workCount": 13,
-  "bookCount": 13,
+  "workCount": 14,
+  "bookCount": 14,
   "kindDistribution": [
     {
       "name": "Anthology",
-      "count": 1
+      "count": 2
     },
     {
       "name": "Nonfiction",
@@ -23,7 +23,7 @@
     },
     {
       "name": "Kindle",
-      "count": 12
+      "count": 13
     }
   ],
   "decadeDistribution": [
@@ -37,7 +37,7 @@
     },
     {
       "name": "1990s",
-      "count": 2
+      "count": 3
     },
     {
       "name": "2000s",
@@ -95,6 +95,35 @@
           "kind": "Novel",
           "title": "The Stake",
           "yearPublished": "1990",
+          "includedInSlugs": [],
+          "reviewed": false
+        }
+      ]
+    },
+    {
+      "name": "Jeff Gelb",
+      "count": 2,
+      "slug": null,
+      "readings": [
+        {
+          "sequence": 1,
+          "date": "2018-01-05",
+          "slug": "hot-blood-by-jeff-gelb-lonn-m-friend",
+          "edition": "Kindle",
+          "kind": "Anthology",
+          "title": "Hot Blood",
+          "yearPublished": "1989",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 2,
+          "date": "2018-07-17",
+          "slug": "hotter-blood-by-jeff-gelb-michael-garrett",
+          "edition": "Kindle",
+          "kind": "Anthology",
+          "title": "Hotter Blood",
+          "yearPublished": "1991",
           "includedInSlugs": [],
           "reviewed": false
         }
