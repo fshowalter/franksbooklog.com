@@ -1,7 +1,7 @@
 {
   "reviewCount": 81,
-  "workCount": 144,
-  "bookCount": 123,
+  "workCount": 145,
+  "bookCount": 124,
   "gradeDistribution": [
     {
       "name": "A",
@@ -79,7 +79,7 @@
     },
     {
       "name": "Novel",
-      "count": 70
+      "count": 71
     },
     {
       "name": "Novella",
@@ -101,7 +101,7 @@
     },
     {
       "name": "Kindle",
-      "count": 60
+      "count": 61
     },
     {
       "name": "Paperback",
@@ -131,7 +131,7 @@
     },
     {
       "name": "1980s",
-      "count": 44
+      "count": 45
     },
     {
       "name": "1990s",
@@ -487,7 +487,7 @@
     },
     {
       "name": "Stephen King",
-      "count": 22,
+      "count": 23,
       "slug": "stephen-king",
       "readings": [
         {
@@ -663,6 +663,17 @@
           "kind": "Novel",
           "title": "The Talisman",
           "yearPublished": "1984",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2018-07-18",
+          "slug": "cycle-of-the-werewolf-by-stephen-king",
+          "edition": "Kindle",
+          "kind": "Novel",
+          "title": "Cycle of the Werewolf",
+          "yearPublished": "1985",
           "includedInSlugs": [],
           "reviewed": false
         },
