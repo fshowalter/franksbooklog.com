@@ -28,7 +28,7 @@
       {
         "sequence": 1,
         "date": "2022-09-05",
-        "isAudiobook": true,
+        "isAudiobook": false,
         "abandoned": false,
         "readingTime": 8
       }
@@ -1171,7 +1171,7 @@
       {
         "sequence": 1,
         "date": "2022-10-13",
-        "isAudiobook": true,
+        "isAudiobook": false,
         "abandoned": false,
         "readingTime": 10
       }
@@ -1738,7 +1738,7 @@
       {
         "sequence": 1,
         "date": "2022-06-14",
-        "isAudiobook": true,
+        "isAudiobook": false,
         "abandoned": false,
         "readingTime": 25
       }
@@ -2081,7 +2081,7 @@
       {
         "sequence": 1,
         "date": "2022-09-22",
-        "isAudiobook": true,
+        "isAudiobook": false,
         "abandoned": false,
         "readingTime": 2
       }
@@ -2414,7 +2414,7 @@
       {
         "sequence": 1,
         "date": "2022-07-18",
-        "isAudiobook": true,
+        "isAudiobook": false,
         "abandoned": false,
         "readingTime": 3
       }
@@ -3306,7 +3306,7 @@
       {
         "sequence": 1,
         "date": "2022-07-09",
-        "isAudiobook": true,
+        "isAudiobook": false,
         "abandoned": false,
         "readingTime": 8
       }
@@ -3431,7 +3431,7 @@
       {
         "sequence": 1,
         "date": "2022-09-11",
-        "isAudiobook": true,
+        "isAudiobook": false,
         "abandoned": false,
         "readingTime": 1
       }
@@ -3562,7 +3562,7 @@
       {
         "sequence": 1,
         "date": "2022-06-26",
-        "isAudiobook": true,
+        "isAudiobook": false,
         "abandoned": false,
         "readingTime": 1
       }
@@ -3911,14 +3911,14 @@
       {
         "sequence": 1,
         "date": "2023-12-09",
-        "isAudiobook": true,
+        "isAudiobook": false,
         "abandoned": false,
         "readingTime": 29
       },
       {
         "sequence": 1,
         "date": "2024-07-01",
-        "isAudiobook": true,
+        "isAudiobook": false,
         "abandoned": false,
         "readingTime": 4
       }
@@ -4051,7 +4051,7 @@
       {
         "sequence": 1,
         "date": "2022-07-16",
-        "isAudiobook": true,
+        "isAudiobook": false,
         "abandoned": false,
         "readingTime": 2
       }
@@ -4321,7 +4321,7 @@
       {
         "sequence": 1,
         "date": "2023-11-06",
-        "isAudiobook": true,
+        "isAudiobook": false,
         "abandoned": false,
         "readingTime": 9
       }
@@ -4571,7 +4571,7 @@
       {
         "sequence": 1,
         "date": "2024-11-08",
-        "isAudiobook": true,
+        "isAudiobook": false,
         "abandoned": false,
         "readingTime": 15
       }
@@ -5047,7 +5047,7 @@
       {
         "sequence": 1,
         "date": "2022-09-17",
-        "isAudiobook": true,
+        "isAudiobook": false,
         "abandoned": false,
         "readingTime": 5
       }
@@ -5168,7 +5168,7 @@
       {
         "sequence": 1,
         "date": "2022-09-10",
-        "isAudiobook": true,
+        "isAudiobook": false,
         "abandoned": false,
         "readingTime": 5
       }
@@ -5876,7 +5876,7 @@
       {
         "sequence": 1,
         "date": "2022-10-16",
-        "isAudiobook": true,
+        "isAudiobook": false,
         "abandoned": false,
         "readingTime": 2
       }
@@ -7732,7 +7732,7 @@
       {
         "sequence": 1,
         "date": "2023-11-11",
-        "isAudiobook": true,
+        "isAudiobook": false,
         "abandoned": false,
         "readingTime": 6
       }
@@ -8412,7 +8412,7 @@
       {
         "sequence": 1,
         "date": "2022-10-14",
-        "isAudiobook": true,
+        "isAudiobook": false,
         "abandoned": false,
         "readingTime": 8
       }
@@ -8628,7 +8628,7 @@
       {
         "sequence": 1,
         "date": "2022-06-25",
-        "isAudiobook": true,
+        "isAudiobook": false,
         "abandoned": false,
         "readingTime": 2
       }
@@ -9185,7 +9185,7 @@
       {
         "sequence": 1,
         "date": "2022-07-15",
-        "isAudiobook": true,
+        "isAudiobook": false,
         "abandoned": false,
         "readingTime": 6
       }
@@ -9536,7 +9536,7 @@
       {
         "sequence": 1,
         "date": "2022-09-24",
-        "isAudiobook": true,
+        "isAudiobook": false,
         "abandoned": false,
         "readingTime": 1
       },
@@ -10129,7 +10129,7 @@
       {
         "sequence": 1,
         "date": "2023-10-22",
-        "isAudiobook": true,
+        "isAudiobook": false,
         "abandoned": false,
         "readingTime": 1
       }
@@ -11830,7 +11830,7 @@
       {
         "sequence": 3,
         "date": "2022-05-07",
-        "isAudiobook": true,
+        "isAudiobook": false,
         "abandoned": false,
         "readingTime": 50
       }
@@ -12072,7 +12072,7 @@
       {
         "sequence": 1,
         "date": "2022-07-02",
-        "isAudiobook": true,
+        "isAudiobook": false,
         "abandoned": false,
         "readingTime": 8
       }
@@ -12200,7 +12200,7 @@
       {
         "sequence": 2,
         "date": "2022-10-29",
-        "isAudiobook": true,
+        "isAudiobook": false,
         "abandoned": false,
         "readingTime": 14
       }
@@ -12414,7 +12414,7 @@
       {
         "sequence": 1,
         "date": "2022-10-29",
-        "isAudiobook": true,
+        "isAudiobook": false,
         "abandoned": false,
         "readingTime": 8
       }
@@ -12758,7 +12758,7 @@
       {
         "sequence": 2,
         "date": "2022-09-11",
-        "isAudiobook": true,
+        "isAudiobook": false,
         "abandoned": false,
         "readingTime": 2
       }
@@ -12978,7 +12978,7 @@
       {
         "sequence": 1,
         "date": "2022-05-21",
-        "isAudiobook": true,
+        "isAudiobook": false,
         "abandoned": false,
         "readingTime": 15
       }
@@ -13434,7 +13434,7 @@
       {
         "sequence": 1,
         "date": "2022-10-04",
-        "isAudiobook": true,
+        "isAudiobook": false,
         "abandoned": false,
         "readingTime": 10
       }

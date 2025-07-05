@@ -22,12 +22,12 @@
   ],
   "editionDistribution": [
     {
-      "name": "Hardcover",
-      "count": 1
+      "name": "Ebook",
+      "count": 3
     },
     {
-      "name": "Kindle",
-      "count": 3
+      "name": "Hardcover",
+      "count": 1
     },
     {
       "name": "Paperback",
@@ -291,7 +291,7 @@
           "sequence": 1,
           "date": "2014-04-22",
           "slug": "firestarter-by-stephen-king",
-          "edition": "Kindle",
+          "edition": "Ebook",
           "kind": "Novel",
           "title": "Firestarter",
           "yearPublished": "1980",
@@ -313,7 +313,7 @@
           "sequence": 1,
           "date": "2014-06-04",
           "slug": "danse-macabre-by-stephen-king",
-          "edition": "Kindle",
+          "edition": "Ebook",
           "kind": "Nonfiction",
           "title": "Danse Macabre",
           "yearPublished": "1981",
@@ -324,7 +324,7 @@
           "sequence": 4,
           "date": "2014-06-17",
           "slug": "cujo-by-stephen-king",
-          "edition": "Kindle",
+          "edition": "Ebook",
           "kind": "Novel",
           "title": "Cujo",
           "yearPublished": "1981",
