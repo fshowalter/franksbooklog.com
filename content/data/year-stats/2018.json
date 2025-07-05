@@ -1,7 +1,7 @@
 {
   "year": "2018",
-  "workCount": 16,
-  "bookCount": 16,
+  "workCount": 17,
+  "bookCount": 17,
   "kindDistribution": [
     {
       "name": "Anthology",
@@ -17,13 +17,13 @@
     },
     {
       "name": "Novel",
-      "count": 8
+      "count": 9
     }
   ],
   "editionDistribution": [
     {
       "name": "Ebook",
-      "count": 15
+      "count": 16
     },
     {
       "name": "Hardcover",
@@ -31,6 +31,10 @@
     }
   ],
   "decadeDistribution": [
+    {
+      "name": "1940s",
+      "count": 1
+    },
     {
       "name": "1970s",
       "count": 1
