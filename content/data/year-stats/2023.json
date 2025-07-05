@@ -22,11 +22,11 @@
   ],
   "editionDistribution": [
     {
-      "name": "Audible",
+      "name": "Audiobook",
       "count": 4
     },
     {
-      "name": "Kindle",
+      "name": "Ebook",
       "count": 6
     }
   ],
@@ -62,7 +62,7 @@
           "sequence": 1,
           "date": "2023-11-11",
           "slug": "record-play-pause-by-stephen-morris",
-          "edition": "Audible",
+          "edition": "Audiobook",
           "kind": "Nonfiction",
           "title": "Record Play Pause",
           "yearPublished": "2019",
@@ -73,7 +73,7 @@
           "sequence": 1,
           "date": "2023-12-09",
           "slug": "fast-forward-by-stephen-morris",
-          "edition": "Audible",
+          "edition": "Audiobook",
           "kind": "Nonfiction",
           "title": "Fast Forward",
           "yearPublished": "2020",
@@ -91,7 +91,7 @@
           "sequence": 1,
           "date": "2023-10-09",
           "slug": "sacculina-by-philip-fracassi",
-          "edition": "Kindle",
+          "edition": "Ebook",
           "kind": "Novella",
           "title": "Sacculina",
           "yearPublished": "2017",
@@ -102,7 +102,7 @@
           "sequence": 1,
           "date": "2023-10-29",
           "slug": "dont-let-them-get-you-down-by-philip-fracassi",
-          "edition": "Kindle",
+          "edition": "Ebook",
           "kind": "Novel",
           "title": "Don't Let Them Get You Down",
           "yearPublished": "2022",
