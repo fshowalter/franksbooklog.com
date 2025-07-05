@@ -275,10 +275,10 @@ function TitleAndProgress({
 
   if (reviewed) {
     return (
-      <span className="block font-sans">
+      <span className="flex items-center font-sans text-sm">
         <a
           className={`
-            text-sm font-medium text-accent
+            text-sm leading-4 font-medium text-accent
             before:absolute before:top-4 before:left-(--container-padding)
             before:aspect-cover before:w-list-item-cover before:bg-default
             before:opacity-15
