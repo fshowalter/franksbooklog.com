@@ -1,7 +1,7 @@
 {
   "reviewCount": 81,
-  "workCount": 147,
-  "bookCount": 126,
+  "workCount": 150,
+  "bookCount": 129,
   "gradeDistribution": [
     {
       "name": "A",
@@ -75,11 +75,11 @@
     },
     {
       "name": "Nonfiction",
-      "count": 47
+      "count": 48
     },
     {
       "name": "Novel",
-      "count": 72
+      "count": 74
     },
     {
       "name": "Novella",
@@ -97,7 +97,7 @@
     },
     {
       "name": "Ebook",
-      "count": 63
+      "count": 66
     },
     {
       "name": "Hardcover",
@@ -126,12 +126,16 @@
       "count": 4
     },
     {
+      "name": "1960s",
+      "count": 1
+    },
+    {
       "name": "1970s",
       "count": 20
     },
     {
       "name": "1980s",
-      "count": 46
+      "count": 47
     },
     {
       "name": "1990s",
@@ -143,7 +147,7 @@
     },
     {
       "name": "2010s",
-      "count": 38
+      "count": 39
     },
     {
       "name": "2020s",
@@ -487,7 +491,7 @@
     },
     {
       "name": "Stephen King",
-      "count": 23,
+      "count": 24,
       "slug": "stephen-king",
       "readings": [
         {
@@ -674,6 +678,17 @@
           "kind": "Novel",
           "title": "Cycle of the Werewolf",
           "yearPublished": "1985",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2018-08-05",
+          "slug": "thinner-by-stephen-king",
+          "edition": "Ebook",
+          "kind": "Novel",
+          "title": "Thinner",
+          "yearPublished": "1984",
           "includedInSlugs": [],
           "reviewed": false
         },
