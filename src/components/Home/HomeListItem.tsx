@@ -81,7 +81,7 @@ export function HomeListItem({
           <div
             className={`
               pt-2 text-base leading-5 font-medium
-              max:pt-2 max:text-xl max:leading-6
+              max:pt-2 max:text-xl
               tablet:pt-3 tablet:text-md
             `}
           >
