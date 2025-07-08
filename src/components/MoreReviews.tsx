@@ -96,9 +96,9 @@ function MoreReviewsCard({ value }: { value: MoreReviewsValue }): JSX.Element {
         >
           <div
             className={`
-              pt-4 font-sans text-sm font-medium
+              pt-4 text-base leading-5 font-medium
               max:text-xl max:leading-6
-              tablet:pt-5 tablet:font-serif tablet:text-md tablet:leading-5
+              tablet:pt-5 tablet:text-md tablet:leading-5
             `}
           >
             <a
