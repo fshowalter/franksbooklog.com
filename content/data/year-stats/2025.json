@@ -1,14 +1,26 @@
 {
   "year": "2025",
-  "workCount": 1,
-  "bookCount": 0,
+  "workCount": 5,
+  "bookCount": 1,
   "kindDistribution": [
     {
-      "name": "Short Story",
+      "name": "Novel",
       "count": 1
+    },
+    {
+      "name": "Novella",
+      "count": 2
+    },
+    {
+      "name": "Short Story",
+      "count": 2
     }
   ],
   "editionDistribution": [
+    {
+      "name": "Ebook",
+      "count": 4
+    },
     {
       "name": "Paperback",
       "count": 1
@@ -16,9 +28,62 @@
   ],
   "decadeDistribution": [
     {
+      "name": "1960s",
+      "count": 1
+    },
+    {
       "name": "1980s",
+      "count": 1
+    },
+    {
+      "name": "2010s",
+      "count": 2
+    },
+    {
+      "name": "2020s",
       "count": 1
     }
   ],
-  "mostReadAuthors": []
+  "mostReadAuthors": [
+    {
+      "name": "Philip Fracassi",
+      "count": 3,
+      "slug": "philip-fracassi",
+      "readings": [
+        {
+          "sequence": 2,
+          "date": "2025-07-11",
+          "slug": "commodore-by-philip-fracassi",
+          "edition": "Ebook",
+          "kind": "Novella",
+          "title": "Commodore",
+          "yearPublished": "2021",
+          "includedInSlugs": [],
+          "reviewed": true
+        },
+        {
+          "sequence": 3,
+          "date": "2025-07-11",
+          "slug": "shiloh-by-philip-fracassi",
+          "edition": "Ebook",
+          "kind": "Novella",
+          "title": "Shiloh",
+          "yearPublished": "2017",
+          "includedInSlugs": [],
+          "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2025-07-12",
+          "slug": "king-mob-by-philip-fracassi",
+          "edition": "Ebook",
+          "kind": "Short Story",
+          "title": "King Mob",
+          "yearPublished": "2017",
+          "includedInSlugs": [],
+          "reviewed": true
+        }
+      ]
+    }
+  ]
 }

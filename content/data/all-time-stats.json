@@ -1,11 +1,11 @@
 {
-  "reviewCount": 81,
-  "workCount": 150,
-  "bookCount": 129,
+  "reviewCount": 85,
+  "workCount": 154,
+  "bookCount": 130,
   "gradeDistribution": [
     {
       "name": "A",
-      "count": 3,
+      "count": 4,
       "sortValue": 12
     },
     {
@@ -20,17 +20,17 @@
     },
     {
       "name": "B",
-      "count": 14,
+      "count": 15,
       "sortValue": 9
     },
     {
       "name": "B-",
-      "count": 4,
+      "count": 5,
       "sortValue": 8
     },
     {
       "name": "C+",
-      "count": 15,
+      "count": 16,
       "sortValue": 7
     },
     {
@@ -79,15 +79,15 @@
     },
     {
       "name": "Novel",
-      "count": 74
+      "count": 75
     },
     {
       "name": "Novella",
-      "count": 3
+      "count": 5
     },
     {
       "name": "Short Story",
-      "count": 18
+      "count": 19
     }
   ],
   "editionDistribution": [
@@ -97,7 +97,7 @@
     },
     {
       "name": "Ebook",
-      "count": 66
+      "count": 70
     },
     {
       "name": "Hardcover",
@@ -127,7 +127,7 @@
     },
     {
       "name": "1960s",
-      "count": 1
+      "count": 2
     },
     {
       "name": "1970s",
@@ -147,11 +147,11 @@
     },
     {
       "name": "2010s",
-      "count": 39
+      "count": 41
     },
     {
       "name": "2020s",
-      "count": 11
+      "count": 12
     }
   ],
   "mostReadAuthors": [
@@ -762,7 +762,7 @@
     },
     {
       "name": "Philip Fracassi",
-      "count": 13,
+      "count": 16,
       "slug": "philip-fracassi",
       "readings": [
         {
@@ -923,6 +923,39 @@
           "kind": "Novel",
           "title": "Gothic",
           "yearPublished": "2023",
+          "includedInSlugs": [],
+          "reviewed": true
+        },
+        {
+          "sequence": 2,
+          "date": "2025-07-11",
+          "slug": "commodore-by-philip-fracassi",
+          "edition": "Ebook",
+          "kind": "Novella",
+          "title": "Commodore",
+          "yearPublished": "2021",
+          "includedInSlugs": [],
+          "reviewed": true
+        },
+        {
+          "sequence": 3,
+          "date": "2025-07-11",
+          "slug": "shiloh-by-philip-fracassi",
+          "edition": "Ebook",
+          "kind": "Novella",
+          "title": "Shiloh",
+          "yearPublished": "2017",
+          "includedInSlugs": [],
+          "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2025-07-12",
+          "slug": "king-mob-by-philip-fracassi",
+          "edition": "Ebook",
+          "kind": "Short Story",
+          "title": "King Mob",
+          "yearPublished": "2017",
           "includedInSlugs": [],
           "reviewed": true
         }
