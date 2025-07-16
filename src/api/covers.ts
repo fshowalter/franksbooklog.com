@@ -2,10 +2,13 @@ import { getImage } from "astro:assets";
 import fs from "node:fs";
 import path from "node:path";
 import sharp from "sharp";
+import { he } from "zod/v4/locales";
 
 import { normalizeSources } from "./utils/normalizeSources";
 
 export type CoverImageProps = {
+  aspectRatio: number;
+  height: number;
   src: string;
   srcSet: string;
 };
@@ -35,6 +38,7 @@ export async function getFeedCoverProps(work: Work): Promise<CoverImageProps> {
   });
 
   return {
+    height: 750,
     src: normalizeSources(optimizedImage.src),
     srcSet: normalizeSources(optimizedImage.srcSet.attribute),
   };
@@ -59,6 +63,7 @@ export async function getFixedCoverImageProps(
 
   return {
     hasAlpha: hasAlpha,
+    height,
     src: normalizeSources(optimizedImage.src),
     srcSet: normalizeSources(optimizedImage.srcSet.attribute),
   };
@@ -66,13 +71,14 @@ export async function getFixedCoverImageProps(
 
 export async function getFluidCoverImageProps(
   work: Work,
-  { height, width }: { height: number; width: number },
+  { width }: { width: number },
 ): Promise<CoverImageProps> {
   const workCoverFile = await getWorkCoverFile(work);
+  const { aspectRatio, height } = await getCoverHeight(work, width);
 
   const optimizedImage = await getImage({
     format: "avif",
-    height: height,
+    height,
     quality: 80,
     src: workCoverFile.default,
     width: width,
@@ -80,6 +86,8 @@ export async function getFluidCoverImageProps(
   });
 
   return {
+    aspectRatio,
+    height,
     src: normalizeSources(optimizedImage.src),
     srcSet: normalizeSources(optimizedImage.srcSet.attribute),
   };
@@ -126,6 +134,7 @@ export async function getUpdateCoverProps(
   });
 
   return {
+    height: 750,
     src: normalizeSources(optimizedImage.src),
     srcSet: normalizeSources(optimizedImage.srcSet.attribute),
   };
@@ -138,6 +147,22 @@ function coverPath(slug: string) {
   }
 
   return;
+}
+
+async function getCoverHeight(work: Work, targetWidth: number) {
+  try {
+    const imagePath = getWorkCoverPath(work);
+    const { height, width } = await sharp(imagePath).metadata();
+    const aspectRatio = width / height;
+
+    return {
+      aspectRatio,
+      height: (height / width) * targetWidth,
+    };
+  } catch (error) {
+    console.error("Error:", error);
+    return { aspectRatio: 0, height: 0 };
+  }
 }
 
 async function getWorkCoverFile(work: Work) {
