@@ -9,6 +9,7 @@
   --background-color-default: var(--bg-default);
   --background-color-footer: var(--bg-footer);
   --background-color-group: var(--bg-group);
+  --background-color-hover: var(--bg-hover);
   --background-color-inverse: var(--bg-inverse);
   --background-color-stripe: var(--bg-stripe);
   --background-color-subtle: var(--bg-subtle);
@@ -81,6 +82,7 @@
     --bg-default: #fff;
     --bg-footer: #4a4a4a;
     --bg-group: #f7f5f3;
+    --bg-hover: #f7f5f3;
     --bg-inverse: rgb(0 0 0 / 75%);
     --bg-progress: #14bd41;
     --bg-stripe: #f7f5f3;
@@ -131,6 +133,7 @@
       --bg-default: #322f2f;
       --bg-footer: #252525;
       --bg-group: #3c393a;
+      --bg-hover: #3c393a;
       --bg-inverse: #322f2f;
       --bg-progress: #379634;
       --bg-stripe: #3c393a;
