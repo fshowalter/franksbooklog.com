@@ -184,7 +184,7 @@ function Wrapper({
                 px-container text-center
                 tablet:max-w-none tablet:px-0
               `
-              : `max-w-(--breakpoint-bp-max) px-container`
+              : `max-w-(--breakpoint-desktop) px-container`
           }
           flex-col
           ${

@@ -2,7 +2,6 @@ import { getImage } from "astro:assets";
 import fs from "node:fs";
 import path from "node:path";
 import sharp from "sharp";
-import { he } from "zod/v4/locales";
 
 import { normalizeSources } from "./utils/normalizeSources";
 

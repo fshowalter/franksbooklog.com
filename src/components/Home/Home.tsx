@@ -28,17 +28,19 @@ export function Home({ backdropImageProps, deck, values }: Props): JSX.Element {
           text-3xl leading-8
           [text-shadow:1px_1px_2px_black]
           tablet:text-4xl tablet:leading-10
+          laptop:text-5xl laptop:leading-10
           desktop:text-6xl desktop:leading-10
         `}
       />
-      <nav className={`mx-auto max-w-(--breakpoint-bp-max) px-container`}>
+      <nav className={`mx-auto max-w-(--breakpoint-desktop) px-container`}>
         <SubHeading as="h2">Latest Reviews</SubHeading>
         <ol
           className={`
             -mx-4 grid auto-rows-[auto_1fr] grid-cols-2 gap-x-2 gap-y-2
             tablet:grid-cols-3 tablet:gap-x-4 tablet:gap-y-4
-            desktop:grid-cols-4 desktop:gap-x-8 desktop:gap-y-8
-            bp-max:-mx-8 bp-max:grid-cols-6 bp-max:gap-y-12
+            tablet-landscape:grid-cols-4
+            laptop:-mx-6 laptop:grid-cols-6 laptop:gap-x-6 laptop:gap-y-6
+            desktop:-mx-8 desktop:grid-cols-6 desktop:gap-y-12
           `}
         >
           {values.map((value, index) => {

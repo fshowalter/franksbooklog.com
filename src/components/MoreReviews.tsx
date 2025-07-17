@@ -39,9 +39,9 @@ export function MoreReviews({
   return (
     <nav
       className={`
-        mx-auto w-full max-w-(--breakpoint-max) bg-subtle px-container
+        mx-auto w-full max-w-(--breakpoint-desktop) bg-subtle px-container
         tablet:max-w-popout tablet:px-0
-        min-[1360px]:max-w-(--breakpoint-max) min-[1360px]:px-container
+        min-[1360px]:max-w-(--breakpoint-desktop) min-[1360px]:px-container
       `}
       data-page-find-ignore
     >
@@ -68,10 +68,10 @@ function MoreReviewsCard({ value }: { value: MoreReviewsValue }): JSX.Element {
         relative flex w-[50%] max-w-[344px] flex-col items-center border-default
         p-1
         has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
-        max:w-[100%]
         min-[496px]:p-4
         min-[768px]:w-[33.33333333%]
         min-[1360px]:w-[16.66666667%]
+        desktop:w-[100%]
       `}
     >
       <div
@@ -97,8 +97,8 @@ function MoreReviewsCard({ value }: { value: MoreReviewsValue }): JSX.Element {
           <div
             className={`
               pt-4 text-base leading-5 font-medium
-              max:text-xl max:leading-6
               tablet:pt-5 tablet:text-md tablet:leading-5
+              desktop:text-xl desktop:leading-6
             `}
           >
             <a

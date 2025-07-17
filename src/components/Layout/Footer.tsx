@@ -8,7 +8,7 @@ import { navItems } from "./navItems";
 export function Footer(): JSX.Element {
   return (
     <footer className="bg-canvas">
-      <div className="mx-auto max-w-(--breakpoint-desktop) px-container py-20">
+      <div className="mx-auto max-w-(--breakpoint-laptop) px-container py-20">
         <div
           className={`
             flex w-full flex-col
@@ -36,11 +36,11 @@ export function Footer(): JSX.Element {
         >
           <div
             className={`
-              flex max-w-prose flex-col pb-12
+              flex max-w-[640px] flex-col pb-12
               tablet:pr-32
             `}
           >
-            <div className={`pt-10 font-sans text-base font-light text-subtle`}>
+            <div className={`pt-10 font-sans text-sm font-light text-subtle`}>
               <p className="mb-6 text-pretty">
                 Hi there, I&apos;m Frank, a husband and father old enough to
                 have read Stephen King&apos;s <em>The Dark Half</em> during its
@@ -87,14 +87,14 @@ export function Footer(): JSX.Element {
           </div>
           <div
             className={`
-              flex grow-0 flex-col gap-20 pt-10 pb-20
+              flex w-full max-w-button grow flex-col gap-20 pt-10 pb-20
               tablet:basis-button tablet:pr-10
             `}
           >
             <ul
               className={`
                 flex w-full flex-col gap-y-10
-                max:w-auto
+                desktop:w-auto
               `}
             >
               {navItems.map((item) => {

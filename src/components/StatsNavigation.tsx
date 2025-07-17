@@ -17,8 +17,9 @@ export function StatsNavigation({
     <nav className={ccn("bg-footer", className)}>
       <ul
         className={`
-          mx-auto flex scrollbar-hidden max-w-(--breakpoint-max) overflow-x-auto
-          px-container font-sans text-sm font-normal tracking-wide
+          mx-auto flex scrollbar-hidden max-w-(--breakpoint-desktop)
+          overflow-x-auto px-container font-sans text-sm font-normal
+          tracking-wide
           desktop:justify-center
         `}
       >

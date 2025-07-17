@@ -46,8 +46,7 @@ export function HomeListItem({
       <div
         className={`
           flex justify-center self-end bg-default px-3 pt-3
-          @min-[193px]:bg-default @min-[193px]:px-[clamp(4px,14cqw,32px)]
-          @min-[193px]:pt-[clamp(4px,10cqw,24px)]
+          @min-[200px]:px-[clamp(4px,10cqw,32px)] @min-[200px]:pt-6
         `}
       >
         <div
@@ -59,6 +58,7 @@ export function HomeListItem({
             after:absolute after:inset-x-0 after:top-0 after:bottom-0 after:z-20
             after:bg-default after:opacity-15
             group-hover/card:after:opacity-0
+            @min-[160px]:shadow-lg
           `}
         >
           <div
@@ -79,6 +79,7 @@ export function HomeListItem({
               alt={`A cover of ${value.title} by ${toSentenceArray(
                 value.authors.map((a) => a.name),
               ).join("")}`}
+              className="rounded-[2.5px]"
               loading={eagerLoadCoverImage ? "eager" : "lazy"}
             />
           </div>
@@ -87,8 +88,7 @@ export function HomeListItem({
       <div
         className={`
           flex justify-center bg-default px-4 pb-8
-          @min-[193px]:px-[clamp(4px,14cqw,32px)]
-          @min-[193px]:pb-[clamp(4px,8cqw,16px)]
+          @min-[193px]:px-[clamp(4px,14cqw,32px)] @min-[193px]:pb-6
         `}
       >
         <div className={`flex w-full max-w-[200px] flex-col`}>
@@ -104,7 +104,7 @@ export function HomeListItem({
             className={`
               pt-2 text-base leading-5 font-medium
               tablet:pt-3 tablet:text-md
-              bp-max:pt-2 bp-max:text-xl
+              desktop:pt-2 desktop:text-xl
             `}
           >
             <a

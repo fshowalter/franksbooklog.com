@@ -83,7 +83,7 @@ export function ListWithFiltersLayout({
               </div>
               <div
                 className={`
-                  mx-auto max-w-(--breakpoint-max)
+                  mx-auto max-w-(--breakpoint-desktop)
                   grid-cols-[1fr_48px_minmax(398px,33%)]
                   tablet-landscape:grid tablet-landscape:grid-rows-[auto_1fr]
                 `}
@@ -169,9 +169,9 @@ function ListHeader({
   return (
     <div
       className={`
-        mx-auto flex w-full max-w-(--breakpoint-max) flex-wrap items-baseline
-        justify-between gap-x-4 gap-y-5 px-container py-10 font-sans font-medium
-        tracking-wide text-subtle uppercase
+        mx-auto flex w-full max-w-(--breakpoint-desktop) flex-wrap
+        items-baseline justify-between gap-x-4 gap-y-5 px-container py-10
+        font-sans font-medium tracking-wide text-subtle uppercase
       `}
     >
       <span className="block pr-4">
