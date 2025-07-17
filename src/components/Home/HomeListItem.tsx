@@ -45,14 +45,14 @@ export function HomeListItem({
     >
       <div
         className={`
-          self-end
+          flex justify-center self-end bg-default px-3 pt-3
           @min-[193px]:bg-default @min-[193px]:px-[clamp(4px,14cqw,32px)]
           @min-[193px]:pt-[clamp(4px,10cqw,24px)]
         `}
       >
         <div
           className={`
-            relative
+            relative max-w-[200px]
             before:absolute before:top-0 before:left-0 before:z-20 before:block
             before:size-full before:bg-[url(/assets/spot.png)]
             before:bg-size-[100%_100%] before:mix-blend-soft-light
@@ -63,7 +63,7 @@ export function HomeListItem({
         >
           <div
             className={`
-              relative z-10 shadow-xl
+              relative z-10
               before:absolute before:top-0 before:left-0 before:block
               before:size-full before:bg-[url(/assets/spine-light.png)]
               before:bg-size-[100%_100%]
@@ -86,83 +86,84 @@ export function HomeListItem({
       </div>
       <div
         className={`
-          flex w-full flex-col px-1
-          @min-[193px]:bg-default @min-[193px]:px-[clamp(4px,14cqw,32px)]
+          flex justify-center bg-default px-4 pb-8
+          @min-[193px]:px-[clamp(4px,14cqw,32px)]
           @min-[193px]:pb-[clamp(4px,8cqw,16px)]
         `}
       >
-        <div
-          className={`
-            pt-3 font-sans text-xxs leading-4 font-light tracking-wide
-            whitespace-nowrap text-subtle
-          `}
-        >
-          {formatDate(value.date)}
-        </div>
-        <div
-          className={`
-            pt-2 text-base leading-5 font-medium
-            max:pt-2 max:text-xl
-            tablet:pt-3 tablet:text-md
-          `}
-        >
-          <a
+        <div className={`flex w-full max-w-[200px] flex-col`}>
+          <div
             className={`
-              block
-              after:absolute after:top-0 after:left-0 after:z-20 after:size-full
-              after:opacity-0
-              hover:text-accent
-            `}
-            href={`/reviews/${value.slug}/`}
-            rel="canonical"
-          >
-            {value.title}
-          </a>
-        </div>
-        <p
-          className={`
-            pt-1 font-sans text-xs leading-4 font-light text-subtle
-            tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
-          `}
-        >
-          <span
-            className={`
-              hidden
-              tablet:inline
+              pt-3 font-sans text-xxs leading-4 font-light tracking-wide
+              whitespace-nowrap text-subtle
             `}
           >
-            by{" "}
-          </span>
-          {toSentenceArray(
-            value.authors.map((author) => {
-              return (
-                <AuthorLink
-                  as="span"
-                  className=""
-                  key={author.slug}
-                  name={author.name}
-                  notes={author.notes}
-                />
-              );
-            }),
-          )}
-        </p>{" "}
-        <Grade
-          className={`
-            mt-2 h-4 w-20
-            tablet:mt-3 tablet:h-[18px] tablet:w-[90px]
-          `}
-          height={16}
-          value={value.grade}
-        />
-        <div
-          className={`
-            pt-4 font-sans text-xxs leading-4 font-light tracking-wide
-            text-subtle
-            @min-[193px]:mt-auto
-          `}
-        >
-          {value.kind} | {value.yearPublished}
+            {formatDate(value.date)}
+          </div>
+          <div
+            className={`
+              pt-2 text-base leading-5 font-medium
+              tablet:pt-3 tablet:text-md
+              bp-max:pt-2 bp-max:text-xl
+            `}
+          >
+            <a
+              className={`
+                block
+                after:absolute after:top-0 after:left-0 after:z-20
+                after:size-full after:opacity-0
+                hover:text-accent
+              `}
+              href={`/reviews/${value.slug}/`}
+              rel="canonical"
+            >
+              {value.title}
+            </a>
+          </div>
+          <p
+            className={`
+              pt-1 font-sans text-xs leading-4 font-light text-subtle
+              tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
+            `}
+          >
+            <span
+              className={`
+                hidden
+                tablet:inline
+              `}
+            >
+              by{" "}
+            </span>
+            {toSentenceArray(
+              value.authors.map((author) => {
+                return (
+                  <AuthorLink
+                    as="span"
+                    className=""
+                    key={author.slug}
+                    name={author.name}
+                    notes={author.notes}
+                  />
+                );
+              }),
+            )}
+          </p>{" "}
+          <Grade
+            className={`
+              mt-2 h-4 w-20
+              tablet:mt-3 tablet:h-[18px] tablet:w-[90px]
+            `}
+            height={16}
+            value={value.grade}
+          />
+          <div
+            className={`
+              mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
+              text-subtle
+            `}
+          >
+            {value.kind} | {value.yearPublished}
+          </div>
         </div>
       </div>
     </li>
