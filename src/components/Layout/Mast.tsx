@@ -21,8 +21,8 @@ export function Mast({
       className={`
         group z-20 flex w-full items-center justify-between px-container py-4
         tablet:p-6
-        desktop:inset-x-0 desktop:z-40 desktop:flex-row desktop:flex-wrap
-        desktop:px-16 desktop:py-8 desktop:text-left
+        laptop:inset-x-0 laptop:z-40 laptop:flex-row laptop:flex-wrap
+        laptop:px-16 laptop:py-8 laptop:text-left
       `}
       style={{
         backgroundImage: addGradient

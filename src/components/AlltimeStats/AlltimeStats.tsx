@@ -53,8 +53,8 @@ export function AlltimeStats({
       />
       <div
         className={`
-          mx-auto flex w-full max-w-(--breakpoint-max) flex-col items-stretch
-          gap-y-8 py-10
+          mx-auto flex w-full max-w-(--breakpoint-desktop) flex-col
+          items-stretch gap-y-8 py-10
           tablet:px-container
         `}
       >

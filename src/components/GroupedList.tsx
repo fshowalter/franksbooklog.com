@@ -54,7 +54,7 @@ function GroupingListItem({
       <div className="pt-0 text-md" style={{ zIndex: zIndex }}>
         <div
           className={`
-            max-w-(--breakpoint-max) bg-subtle px-container py-8 text-xl
+            max-w-(--breakpoint-desktop) bg-subtle px-container py-8 text-xl
             leading-8
             tablet:px-4
           `}

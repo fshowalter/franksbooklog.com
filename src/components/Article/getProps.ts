@@ -1,6 +1,8 @@
+import { getBackdropImageProps } from "~/api/backdrops";
 import { getFluidCoverImageProps } from "~/api/covers";
 import { getPage } from "~/api/pages";
 import { mostRecentReviews } from "~/api/reviews";
+import { BackdropImageConfig } from "~/components/Backdrop";
 import { MoreReviewsImageConfig } from "~/components/MoreReviews";
 
 import type { Props } from "./Article";
@@ -16,6 +18,7 @@ export async function getProps({
   const recentReviews = await mostRecentReviews(6);
 
   return {
+    backdropImageProps: await getBackdropImageProps(slug, BackdropImageConfig),
     content,
     deck,
     rawContent,

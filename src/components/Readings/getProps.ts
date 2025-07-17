@@ -74,7 +74,7 @@ export async function getProps(): Promise<Props> {
       BackdropImageConfig,
     ),
     bookCount,
-    deck: `"I want you to hit me as hard as you can."`,
+    deck: `"Would you have a Ben Hur 1860, Third Edition, the one with the duplicated line on page 116?"`,
     distinctEditions,
     distinctKinds,
     distinctReadingYears,

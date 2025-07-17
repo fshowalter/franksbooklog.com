@@ -149,7 +149,7 @@ function DateListItem({
   return (
     <li
       className={`
-        relative flex max-w-(--breakpoint-max) flex-col bg-group
+        relative flex max-w-(--breakpoint-desktop) flex-col bg-group
         last-of-type:pb-12
         tablet:mb-12 tablet:flex-row tablet:py-4 tablet:pr-4
         tablet:last-of-type:pb-4

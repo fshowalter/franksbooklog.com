@@ -41,8 +41,8 @@
   --tracking-widest: 2px;
 
   --breakpoint-*: initial;
-  --breakpoint-desktop: 1280px;
-  --breakpoint-bp-max: 1840px;
+  --breakpoint-desktop: 1840px;
+  --breakpoint-laptop: 1280px;
   --breakpoint-tablet: 768px;
   --breakpoint-tablet-landscape: 1024px;
 
@@ -159,7 +159,7 @@
     }
   }
 
-  @media (width >= theme(--breakpoint-desktop)) {
+  @media (width >= theme(--breakpoint-laptop)) {
     :root {
       --container-padding: 80px;
       --list-item-cover-width: 80px;

@@ -17,7 +17,7 @@ export function ListItem({
         ${background}
         ${itemsCenter ? "items-center" : ""}
         ${extraVerticalPadding ? `tablet:py-6` : ""}
-        relative mb-1 flex max-w-(--breakpoint-max) flex-row gap-x-4
+        relative mb-1 flex max-w-(--breakpoint-desktop) flex-row gap-x-4
         px-container py-4
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-4
