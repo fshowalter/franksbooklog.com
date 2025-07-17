@@ -33,7 +33,7 @@ export function Home({ backdropImageProps, deck, values }: Props): JSX.Element {
       <nav className={`mx-auto max-w-(--breakpoint-max) px-container`}>
         <SubHeading as="h2">Latest Reviews</SubHeading>
         <ol
-          className={`grid auto-rows-[auto_1fr] grid-cols-6 gap-x-12 gap-y-16`}
+          className={`grid auto-rows-[auto_1fr] grid-cols-6 gap-x-8 gap-y-16`}
         >
           {values.map((value, index) => {
             return (
