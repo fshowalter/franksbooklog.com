@@ -40,42 +40,57 @@ export function HomeListItem({
   return (
     <li
       className={`
-        group/card relative row-span-2 grid max-w-[344px] grid-rows-subgrid
-        gap-y-0
+        group/card @container relative row-span-2 grid grid-rows-subgrid gap-y-0
       `}
     >
       <div
         className={`
-          relative self-end
-          before:absolute before:inset-x-4 before:top-4 before:bottom-0
-          before:z-20 before:aspect-(--cover-aspect) before:bg-default
-          before:opacity-15
-          group-hover/card:before:opacity-0
-          min-[496px]:before:inset-x-0 min-[496px]:before:top-0
+          self-end
+          @min-[193px]:bg-default @min-[193px]:px-[clamp(4px,14cqw,32px)]
+          @min-[193px]:pt-[clamp(4px,10cqw,24px)]
         `}
       >
         <div
           className={`
-            relative shadow-xl
-            before:absolute before:top-0 before:left-0 before:block
-            before:size-full before:bg-[url(/assets/spine.png)]
-            before:bg-size-[100%_100%]
-            after:absolute after:top-0 after:left-0 after:block after:size-full
-            after:bg-[url(/assets/spot.png)] after:bg-size-[100%_100%]
+            relative
+            before:absolute before:top-0 before:left-0 before:z-20 before:block
+            before:size-full before:bg-[url(/assets/spot.png)]
+            before:bg-size-[100%_100%] before:mix-blend-soft-light
+            after:absolute after:inset-x-0 after:top-0 after:bottom-0 after:z-20
+            after:bg-default after:opacity-15
+            group-hover/card:after:opacity-0
           `}
         >
-          <Cover
-            decoding="async"
-            imageProps={value.coverImageProps}
-            {...CoverImageConfig}
-            alt={`A cover of ${value.title} by ${toSentenceArray(
-              value.authors.map((a) => a.name),
-            ).join("")}`}
-            loading={eagerLoadCoverImage ? "eager" : "lazy"}
-          />
+          <div
+            className={`
+              relative z-10 shadow-xl
+              before:absolute before:top-0 before:left-0 before:block
+              before:size-full before:bg-[url(/assets/spine-light.png)]
+              before:bg-size-[100%_100%]
+              after:absolute after:top-0 after:left-0 after:block
+              after:size-full after:bg-[url(/assets/spine-dark.png)]
+              after:bg-size-[100%_100%] after:mix-blend-multiply
+            `}
+          >
+            <Cover
+              decoding="async"
+              imageProps={value.coverImageProps}
+              {...CoverImageConfig}
+              alt={`A cover of ${value.title} by ${toSentenceArray(
+                value.authors.map((a) => a.name),
+              ).join("")}`}
+              loading={eagerLoadCoverImage ? "eager" : "lazy"}
+            />
+          </div>
         </div>
       </div>
-      <div className={`flex w-full flex-col px-1`}>
+      <div
+        className={`
+          flex w-full flex-col px-1
+          @min-[193px]:bg-default @min-[193px]:px-[clamp(4px,14cqw,32px)]
+          @min-[193px]:pb-[clamp(4px,8cqw,16px)]
+        `}
+      >
         <div
           className={`
             pt-3 font-sans text-xxs leading-4 font-light tracking-wide
@@ -144,6 +159,7 @@ export function HomeListItem({
           className={`
             pt-4 font-sans text-xxs leading-4 font-light tracking-wide
             text-subtle
+            @min-[193px]:mt-auto
           `}
         >
           {value.kind} | {value.yearPublished}
