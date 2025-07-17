@@ -22,6 +22,7 @@ export function Home({ backdropImageProps, deck, values }: Props): JSX.Element {
       <Backdrop
         deck={deck}
         imageProps={backdropImageProps}
+        size="small"
         title="Frank's Book Log"
         titleClasses={`
           text-3xl leading-8
@@ -30,10 +31,15 @@ export function Home({ backdropImageProps, deck, values }: Props): JSX.Element {
           desktop:text-6xl desktop:leading-10
         `}
       />
-      <nav className={`mx-auto max-w-(--breakpoint-max) px-container`}>
+      <nav className={`mx-auto max-w-(--breakpoint-bp-max) px-container`}>
         <SubHeading as="h2">Latest Reviews</SubHeading>
         <ol
-          className={`grid auto-rows-[auto_1fr] grid-cols-6 gap-x-8 gap-y-16`}
+          className={`
+            -mx-4 grid auto-rows-[auto_1fr] grid-cols-2 gap-x-2 gap-y-2
+            tablet:grid-cols-3 tablet:gap-x-4 tablet:gap-y-4
+            desktop:grid-cols-4 desktop:gap-x-8 desktop:gap-y-8
+            bp-max:-mx-8 bp-max:grid-cols-6 bp-max:gap-y-12
+          `}
         >
           {values.map((value, index) => {
             return (

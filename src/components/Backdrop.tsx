@@ -142,7 +142,7 @@ function Wrapper({
   children: React.ReactNode;
   heroImage?: React.ReactNode;
   narrowChildren?: boolean;
-  size?: "default" | "large" | "small";
+  size?: "default" | "large" | "small" | "xsmall";
   textInverse?: boolean;
 }) {
   const defaultSizes =
@@ -152,12 +152,16 @@ function Wrapper({
 
   const smallSizes = "min-h-[clamp(340px,50vh,1350px)]";
 
+  const xsmallSizes = "min-h-[clamp(340px,40vh,1350px)]";
+
   const sizes =
     size === "large"
       ? largeSizes
       : size === "small"
         ? smallSizes
-        : defaultSizes;
+        : size === "xsmall"
+          ? xsmallSizes
+          : defaultSizes;
 
   return (
     <header
@@ -180,7 +184,7 @@ function Wrapper({
                 px-container text-center
                 tablet:max-w-none tablet:px-0
               `
-              : `max-w-(--breakpoint-max) px-container`
+              : `max-w-(--breakpoint-bp-max) px-container`
           }
           flex-col
           ${
@@ -220,7 +224,7 @@ export function Backdrop({
   breadcrumb?: React.ReactNode;
   deck?: React.ReactNode;
   imageProps: BackdropImageProps;
-  size?: "default" | "large";
+  size?: "default" | "large" | "small";
   title: string;
   titleClasses?: string;
 }) {
