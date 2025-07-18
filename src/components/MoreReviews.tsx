@@ -41,16 +41,18 @@ export function MoreReviews({
       className={`
         mx-auto w-full max-w-(--breakpoint-desktop) bg-subtle px-container
         tablet:max-w-popout tablet:px-0
-        min-[1360px]:max-w-(--breakpoint-desktop) min-[1360px]:px-container
+        laptop:max-w-(--breakpoint-desktop) laptop:px-container
       `}
       data-page-find-ignore
     >
-      <div className={``}>{children}</div>
+      <div>{children}</div>
       <ul
         className={`
-          -mx-4 flex flex-wrap content-stretch justify-center
-          min-[736px]:-mx-12
-          min-[1360px]:gap-y-4
+          grid auto-rows-[auto_1fr] grid-cols-2 gap-x-[clamp(8px,2vw,32px)]
+          gap-y-[clamp(8px,2vw,32px)]
+          tablet:grid-cols-3 tablet:gap-x-4 tablet:gap-y-4
+          laptop:-mx-6 laptop:grid-cols-6 laptop:gap-x-6 laptop:gap-y-6
+          desktop:-mx-8 desktop:grid-cols-6 desktop:gap-y-12
         `}
       >
         {values.map((value) => {
@@ -65,35 +67,55 @@ function MoreReviewsCard({ value }: { value: MoreReviewsValue }): JSX.Element {
   return (
     <li
       className={`
-        relative flex w-[50%] max-w-[344px] flex-col items-center border-default
-        p-1
-        has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
-        min-[496px]:p-4
-        min-[768px]:w-[33.33333333%]
-        min-[1360px]:w-[16.66666667%]
-        desktop:w-[100%]
+        group/card @container relative row-span-2 grid grid-rows-subgrid gap-y-0
       `}
     >
       <div
         className={`
-          flex h-full w-full flex-col bg-default p-3
-          min-[496px]:px-8 min-[496px]:pb-4
-          min-[640px]:pt-6
+          flex justify-center self-end bg-default px-3 pt-3
+          @min-[200px]:px-[clamp(4px,10cqw,32px)] @min-[200px]:pt-6
         `}
       >
-        <Cover
-          decoding="async"
-          imageProps={value.coverImageProps}
-          {...MoreReviewsImageConfig}
-          alt=""
-          loading="lazy"
-        />
         <div
           className={`
-            flex w-full grow flex-col bg-default px-1 pb-8
-            min-[496px]:pb-4
+            relative max-w-[200px]
+            before:absolute before:top-0 before:left-0 before:z-20 before:block
+            before:size-full before:bg-[url(/assets/spot.png)]
+            before:bg-size-[100%_100%] before:mix-blend-soft-light
+            after:absolute after:inset-x-0 after:top-0 after:bottom-0 after:z-20
+            after:bg-default after:opacity-15
+            group-hover/card:after:opacity-0
+            @min-[160px]:shadow-lg
           `}
         >
+          <div
+            className={`
+              relative z-10
+              before:absolute before:top-0 before:left-0 before:block
+              before:size-full before:bg-[url(/assets/spine-light.png)]
+              before:bg-size-[100%_100%]
+              after:absolute after:top-0 after:left-0 after:block
+              after:size-full after:bg-[url(/assets/spine-dark.png)]
+              after:bg-size-[100%_100%] after:mix-blend-multiply
+            `}
+          >
+            <Cover
+              decoding="async"
+              imageProps={value.coverImageProps}
+              {...MoreReviewsImageConfig}
+              alt=""
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className={`
+          flex justify-center bg-default px-4 pb-8
+          @min-[193px]:px-[clamp(4px,14cqw,32px)] @min-[193px]:pb-6
+        `}
+      >
+        <div className={`flex w-full max-w-[200px] flex-col`}>
           <div
             className={`
               pt-4 text-base leading-5 font-medium
@@ -104,9 +126,7 @@ function MoreReviewsCard({ value }: { value: MoreReviewsValue }): JSX.Element {
             <a
               className={`
                 inline-block
-                before:absolute before:inset-x-2 before:top-2
-                before:aspect-cover before:bg-default before:opacity-15
-                after:absolute after:top-0 after:left-0 after:z-10
+                after:absolute after:top-0 after:left-0 after:z-60
                 after:size-full after:opacity-0
                 hover:text-accent hover:before:opacity-0
                 min-[496px]:before:inset-x-12 min-[496px]:before:top-10

@@ -45,22 +45,24 @@ export async function getFeedCoverProps(work: Work): Promise<CoverImageProps> {
 
 export async function getFixedCoverImageProps(
   work: Work,
-  { height, width }: { height: number; width: number },
+  { width }: { width: number },
 ): Promise<FixedCoverImageProps> {
   const workCoverFile = await getWorkCoverFile(work);
 
   const hasAlpha = await hasTransparentPixels(getWorkCoverPath(work));
+  const { aspectRatio, height } = await getCoverHeight(work, width);
 
   const optimizedImage = await getImage({
     densities: [1, 2],
     format: "avif",
-    height: height,
+    height,
     quality: 80,
     src: workCoverFile.default,
     width: width,
   });
 
   return {
+    aspectRatio,
     hasAlpha: hasAlpha,
     height,
     src: normalizeSources(optimizedImage.src),
