@@ -77,6 +77,12 @@ export async function getFluidCoverImageProps(
   const workCoverFile = await getWorkCoverFile(work);
   const { aspectRatio, height } = await getCoverHeight(work, width);
 
+  const hasAlpha = await hasTransparentPixels(getWorkCoverPath(work));
+
+  if (hasAlpha) {
+    console.log(work.slug);
+  }
+
   const optimizedImage = await getImage({
     format: "avif",
     height,
