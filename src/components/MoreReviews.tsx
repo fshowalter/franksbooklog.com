@@ -104,6 +104,7 @@ function MoreReviewsCard({ value }: { value: MoreReviewsValue }): JSX.Element {
               imageProps={value.coverImageProps}
               {...MoreReviewsImageConfig}
               alt=""
+              className="rounded-[2.5px]"
               loading="lazy"
             />
           </div>

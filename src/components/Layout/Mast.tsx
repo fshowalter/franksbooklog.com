@@ -37,7 +37,7 @@ export function Mast({
         <nav
           className={`
             hidden w-full
-            desktop:block desktop:w-auto
+            laptop:block laptop:w-auto
           `}
         >
           <ul className={`flex flex-wrap justify-start gap-x-6 text-xl`}>
@@ -67,7 +67,7 @@ function HamburgerMenu({ hasBackdrop }: { hasBackdrop: boolean }) {
         className={`
           relative z-40 ml-2 flex h-10 w-10 cursor-pointer items-center
           justify-center
-          desktop:hidden
+          laptop:hidden
         `}
         htmlFor="nav"
       >
@@ -108,7 +108,7 @@ function HamburgerMenu({ hasBackdrop }: { hasBackdrop: boolean }) {
           tablet:max-w-[35vw]
           group-has-[#nav:checked]:tablet:px-10
           group-has-[#nav:checked]:tablet:py-40
-          desktop:hidden
+          laptop:hidden
         `}
       >
         {navItems.map((item) => {
@@ -167,7 +167,7 @@ function SearchButton() {
         className={`
           flex size-10 items-center justify-center overflow-hidden text-sm
           leading-6 ring-default
-          desktop:ml-6
+          laptop:ml-6
         `}
         data-open-modal
         disabled
