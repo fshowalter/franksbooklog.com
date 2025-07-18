@@ -27,7 +27,12 @@ export function Article({
   return (
     <Layout hasBackdrop={true}>
       <article>
-        <Backdrop deck={deck} imageProps={backdropImageProps} title={title} />
+        <Backdrop
+          centerText={true}
+          deck={deck}
+          imageProps={backdropImageProps}
+          title={title}
+        />
         <section className="flex flex-col items-center pt-16 pb-32">
           <div className="px-container">
             <LongFormText className="max-w-prose" text={content} />
