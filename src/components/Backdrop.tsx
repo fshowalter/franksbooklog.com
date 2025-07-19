@@ -5,52 +5,85 @@ import { Avatar } from "./Avatar";
 
 export function AvatarBackdrop({
   avatarImageProps,
+  backdropImageProps,
   breadcrumb,
   deck,
   name,
 }: {
   avatarImageProps: AvatarImageProps | undefined;
+  backdropImageProps: BackdropImageProps;
   breadcrumb?: React.ReactNode;
   deck: React.ReactNode;
   name: string;
 }) {
+  const heroImage = (
+    <img
+      className={`
+        absolute inset-0 size-full object-cover object-top text-inverse blur-xs
+      `}
+      {...backdropImageProps}
+      {...BackdropImageConfig}
+      alt=""
+      fetchPriority="high"
+      loading="eager"
+    />
+  );
+
   return (
-    <Wrapper centerText={true} size="small">
+    <Wrapper
+      centerText={true}
+      heroImage={heroImage}
+      size="auto"
+      textInverse={true}
+    >
+      {avatarImageProps && (
+        <div
+          className={`
+            mx-auto mt-4 mb-6 w-4/5 max-w-[250px] transform-gpu overflow-hidden
+            ${avatarImageProps && "rounded-full shadow-all"}
+          `}
+        >
+          <Avatar
+            data-pagefind-meta="image[src]"
+            decoding="async"
+            height={250}
+            imageProps={avatarImageProps}
+            loading="lazy"
+            width={250}
+          />
+        </div>
+      )}
       <Breadcrumb value={breadcrumb} />
-      <div
-        className={`
-          mx-auto mb-6 w-4/5 max-w-[250px] safari-border-radius-fix
-          overflow-hidden rounded-full
-        `}
-      >
-        <Avatar
-          data-pagefind-meta="image[src]"
-          decoding="async"
-          height={250}
-          imageProps={avatarImageProps}
-          loading="lazy"
-          width={250}
-        />
-      </div>
       <Title center={true} value={name} />
-      <Deck center={true} subtle={true} value={deck} />
+      <Deck center={true} value={deck} />
     </Wrapper>
   );
 }
 
 export function BreadcrumbLink({
   children,
+  color = "inverse",
   href,
 }: {
   children: React.ReactNode;
+  color?: "default" | "inverse";
   href: string;
 }) {
   return (
     <a
       className={`
-        font-sans text-sm tracking-wide text-inverse uppercase
-        decoration-inverse-subtle decoration-2 underline-offset-8
-        hover:underline
+        font-sans text-sm tracking-wide uppercase underline-offset-8
+        ${
+          color === "inverse"
+            ? `
+              text-inverse decoration-inverse-subtle decoration-2
+              hover:underline
+            `
+            : `
+              text-subtle
+              hover:text-accent
+            `
+        }
       `}
       href={href}
     >
@@ -87,7 +120,7 @@ function Breadcrumb({ value }: { value?: React.ReactNode }) {
   }
 
   return (
-    <p className="mb-6 font-sans text-sm tracking-wide text-subtle uppercase">
+    <p className="mb-2 font-sans text-sm tracking-wide text-subtle uppercase">
       {value}
     </p>
   );
@@ -163,7 +196,7 @@ function Wrapper({
   children: React.ReactNode;
   heroImage?: React.ReactNode;
   narrowChildren?: boolean;
-  size?: "default" | "large" | "small" | "xsmall";
+  size?: "auto" | "default" | "large" | "small" | "xsmall";
   textInverse?: boolean;
 }) {
   const defaultSizes =
@@ -182,7 +215,9 @@ function Wrapper({
         ? smallSizes
         : size === "xsmall"
           ? xsmallSizes
-          : defaultSizes;
+          : size === "auto"
+            ? "min-h-[25vw]"
+            : defaultSizes;
 
   return (
     <header
@@ -191,7 +226,8 @@ function Wrapper({
         ${textInverse ? "text-inverse" : ""}
         ${heroImage ? "bg-[#000]" : "bg-canvas"}
         relative flex w-full flex-col content-start items-center justify-end
-        gap-6 pt-24
+        gap-6 pt-20
+        laptop:pt-24
       `}
     >
       {heroImage}
@@ -237,6 +273,7 @@ export const BackdropImageConfig = {
 };
 
 export function Backdrop({
+  blur = false,
   breadcrumb,
   centerText = false,
   deck,
@@ -245,6 +282,7 @@ export function Backdrop({
   title,
   titleClasses,
 }: {
+  blur?: boolean;
   breadcrumb?: React.ReactNode;
   centerText?: boolean;
   deck?: React.ReactNode;
@@ -255,7 +293,10 @@ export function Backdrop({
 }) {
   const heroImage = (
     <img
-      className="absolute inset-0 size-full object-cover object-top"
+      className={`
+        absolute inset-0 size-full object-cover object-top
+        ${blur && `blur-xs`}
+      `}
       {...imageProps}
       {...BackdropImageConfig}
       alt=""

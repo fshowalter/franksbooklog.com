@@ -2,10 +2,11 @@ import { type JSX, useReducer } from "react";
 
 import type { Author } from "~/api/authors";
 import type { AvatarImageProps } from "~/api/avatars";
+import type { BackdropImageProps } from "~/api/backdrops";
 import type { CoverImageProps } from "~/api/covers";
 
 import { Abandoned } from "~/components/Abandoned";
-import { AvatarBackdrop } from "~/components/Backdrop";
+import { AvatarBackdrop, BreadcrumbLink } from "~/components/Backdrop";
 import { Grade } from "~/components/Grade";
 import { GroupedList } from "~/components/GroupedList";
 import { ListItem } from "~/components/ListItem";
@@ -22,6 +23,7 @@ import { Filters } from "./Filters";
 
 export type Props = Pick<Author, "name"> & {
   avatarImageProps: AvatarImageProps | undefined;
+  backdropImageProps: BackdropImageProps;
   deck: string;
   distinctKinds: readonly string[];
   distinctPublishedYears: readonly string[];
@@ -54,6 +56,7 @@ type AuthorWork = Author["reviewedWorks"][number];
 
 export function Author({
   avatarImageProps,
+  backdropImageProps,
   deck,
   distinctKinds,
   distinctPublishedYears,
@@ -75,11 +78,8 @@ export function Author({
       backdrop={
         <AvatarBackdrop
           avatarImageProps={avatarImageProps}
-          breadcrumb={
-            <a className="text-accent" href="/authors/">
-              Authors
-            </a>
-          }
+          backdropImageProps={backdropImageProps}
+          breadcrumb={<BreadcrumbLink href="/authors/">Authors</BreadcrumbLink>}
           deck={deck}
           name={name}
         />
@@ -93,7 +93,7 @@ export function Author({
           sortValue={state.sortValue}
         />
       }
-      hasBackdrop={false}
+      hasBackdrop={true}
       list={
         <GroupedList
           data-testid="list"
@@ -128,7 +128,7 @@ function WorkListItem({ value }: { value: ListItemValue }): JSX.Element {
   return (
     <ListItem
       className={`
-        group/list-item
+        group/list-item transform-gpu
         has-[a:hover]:z-30 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       `}
@@ -137,7 +137,7 @@ function WorkListItem({ value }: { value: ListItemValue }): JSX.Element {
         className={`
           relative
           after:absolute after:top-0 after:left-0 after:z-10 after:size-full
-          after:bg-default after:opacity-15
+          after:bg-default after:opacity-15 after:transition-opacity
           group-has-[a:hover]/list-item:after:opacity-0
         `}
       >
