@@ -48,7 +48,14 @@
   <body
     class="h-full w-full bg-canvas text-default has-[#nav:checked]:fixed has-[#nav:checked]:overflow-y-scroll data-search-modal-open:overflow-hidden data-search-modal-open:before:fixed data-search-modal-open:before:inset-0 data-search-modal-open:before:z-50 data-search-modal-open:before:backdrop-blur-xs"
   >
-    <div class="group">
+    <link
+      rel="preload"
+      as="image"
+      imagesrcset="/_image/?href=%2Fcontent%2Fassets%2Fbackdrops%2Fstats.png%3ForigWidth%3D2400%26origHeight%3D1350%26origFormat%3Dpng&amp;w=720&amp;h=405&amp;q=80&amp;f=avif 720w, /_image/?href=%2Fcontent%2Fassets%2Fbackdrops%2Fstats.png%3ForigWidth%3D2400%26origHeight%3D1350%26origFormat%3Dpng&amp;w=1200&amp;h=675&amp;q=80&amp;f=avif 1200w, /_image/?href=%2Fcontent%2Fassets%2Fbackdrops%2Fstats.png%3ForigWidth%3D2400%26origHeight%3D1350%26origFormat%3Dpng&amp;w=1920&amp;h=1080&amp;q=80&amp;f=avif 1920w, /_image/?href=%2Fcontent%2Fassets%2Fbackdrops%2Fstats.png%3ForigWidth%3D2400%26origHeight%3D1350%26origFormat%3Dpng&amp;w=2400&amp;h=1350&amp;q=80&amp;f=avif 2400w"
+      imagesizes="100vw"
+      fetchpriority="high"
+    />
+    <div class="group/layout">
       <a
         class="absolute top-0.5 left-1/2 z-50 mx-auto [transform:translate(-50%,calc(-100%-2px))] bg-subtle px-6 py-2 text-center text-accent focus:[transform:translate(-50%,0%)]"
         href="#content"
@@ -56,8 +63,16 @@
       >
       <div class="flex min-h-full w-full flex-col bg-default">
         <header
-          class="group z-20 flex w-full items-center justify-between px-container py-4 tablet:p-6 desktop:inset-x-0 desktop:z-40 desktop:flex-row desktop:flex-wrap desktop:px-16 desktop:py-8 desktop:text-left"
-          style="color: var(--fg-default); position: absolute"
+          class="group/mast z-20 flex w-full items-center justify-between px-container py-4 tablet:p-6 laptop:inset-x-0 laptop:z-40 laptop:flex-row laptop:flex-wrap laptop:px-16 laptop:py-8 laptop:text-left"
+          style="
+            background-image: linear-gradient(
+              to bottom,
+              rgba(0, 0, 0, 0.85),
+              transparent 95%
+            );
+            color: #fff;
+            position: absolute;
+          "
         >
           <div class="flex flex-col">
             <div
@@ -70,50 +85,55 @@
             </p>
           </div>
           <div class="flex items-center">
-            <nav class="hidden w-full desktop:block desktop:w-auto">
+            <nav class="hidden w-full laptop:block laptop:w-auto">
               <ul class="flex flex-wrap justify-start gap-x-6 text-xl">
                 <li class="block tracking-serif-wide whitespace-nowrap">
                   <a
-                    class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
+                    class="text-inherit transition-all duration-500 ease-in-out to-50% hover:bg-linear-to-b hover:from-transparent hover:from-25% hover:via-[rgba(0,0,0,.8)] hover:to-transparent hover:to-75%"
                     href="/"
+                    style="text-shadow: 1px 1px 2px black"
                     >Home</a
                   >
                 </li>
                 <li class="block tracking-serif-wide whitespace-nowrap">
                   <a
-                    class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
+                    class="text-inherit transition-all duration-500 ease-in-out to-50% hover:bg-linear-to-b hover:from-transparent hover:from-25% hover:via-[rgba(0,0,0,.8)] hover:to-transparent hover:to-75%"
                     href="/how-i-grade/"
+                    style="text-shadow: 1px 1px 2px black"
                     >How I Grade</a
                   >
                 </li>
                 <li class="block tracking-serif-wide whitespace-nowrap">
                   <a
-                    class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
+                    class="text-inherit transition-all duration-500 ease-in-out to-50% hover:bg-linear-to-b hover:from-transparent hover:from-25% hover:via-[rgba(0,0,0,.8)] hover:to-transparent hover:to-75%"
                     href="/reviews/"
+                    style="text-shadow: 1px 1px 2px black"
                     >Reviews</a
                   >
                 </li>
                 <li class="block tracking-serif-wide whitespace-nowrap">
                   <a
-                    class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
+                    class="text-inherit transition-all duration-500 ease-in-out to-50% hover:bg-linear-to-b hover:from-transparent hover:from-25% hover:via-[rgba(0,0,0,.8)] hover:to-transparent hover:to-75%"
                     href="/authors/"
+                    style="text-shadow: 1px 1px 2px black"
                     >Authors</a
                   >
                 </li>
                 <li class="block tracking-serif-wide whitespace-nowrap">
                   <a
-                    class="text-inherit transition-all duration-500 ease-in-out hover:text-accent"
+                    class="text-inherit transition-all duration-500 ease-in-out to-50% hover:bg-linear-to-b hover:from-transparent hover:from-25% hover:via-[rgba(0,0,0,.8)] hover:to-transparent hover:to-75%"
                     href="/readings/"
+                    style="text-shadow: 1px 1px 2px black"
                     >Reading Log</a
                   >
                 </li>
               </ul>
             </nav>
-            <div class="z-1000 group-has-[#nav:checked]:!text-[#fff]">
+            <div class="z-1000 group-has-[#nav:checked]/mast:!text-[#fff]">
               <button
                 aria-keyshortcuts="Control+K"
                 aria-label="Search"
-                class="flex size-10 items-center justify-center overflow-hidden text-sm leading-6 ring-default desktop:ml-6"
+                class="flex size-10 items-center justify-center overflow-hidden text-sm leading-6 ring-default laptop:ml-6"
                 data-open-modal="true"
                 disabled=""
                 title="Search: Control+K"
@@ -137,15 +157,15 @@
             </div>
             <div class="group">
               <input class="hidden" id="nav" type="checkbox" /><label
-                class="relative z-40 ml-2 flex h-10 w-10 cursor-pointer items-center justify-center desktop:hidden"
+                class="relative z-40 ml-2 flex h-10 w-10 cursor-pointer items-center justify-center laptop:hidden"
                 for="nav"
                 ><span
-                  class="relative block h-0.5 w-6 origin-center transition-[top,bottom,transform] duration-200 ease-in-out group-has-[#nav:checked]:transform-[rotate(45deg)] group-has-[#nav:checked]:!bg-[#fff] before:absolute before:-top-2 before:block before:h-0.5 before:w-6 before:bg-inherit before:transition before:duration-200 before:ease-in-out group-has-[#nav:checked]:before:top-0 group-has-[#nav:checked]:before:transform-[rotate(90deg)] after:absolute after:-bottom-2 after:block after:h-0.5 after:w-6 after:bg-inherit after:transition after:duration-200 after:ease-in-out group-has-[#nav:checked]:after:bottom-0 group-has-[#nav:checked]:after:transform-[rotate(90deg)]"
-                  style="background-color: var(--fg-default)"
+                  class="relative block h-0.5 w-6 origin-center transition-[top,bottom,transform] duration-200 ease-in-out group-has-[#nav:checked]/mast:transform-[rotate(45deg)] group-has-[#nav:checked]/mast:!bg-[#fff] before:absolute before:-top-2 before:block before:h-0.5 before:w-6 before:bg-inherit before:transition before:duration-200 before:ease-in-out group-has-[#nav:checked]/mast:before:top-0 group-has-[#nav:checked]/mast:before:transform-[rotate(90deg)] after:absolute after:-bottom-2 after:block after:h-0.5 after:w-6 after:bg-inherit after:transition after:duration-200 after:ease-in-out group-has-[#nav:checked]/mast:after:bottom-0 group-has-[#nav:checked]/mast:after:transform-[rotate(90deg)]"
+                  style="background-color: #fff"
                 ></span
               ></label>
               <ul
-                class="fixed top-0 right-0 z-20 flex h-full w-0 transform-[translateX(100%)] flex-col items-start gap-y-5 overflow-hidden bg-footer text-left text-inverse opacity-0 duration-200 ease-in-out group-has-[#nav:checked]:bottom-0 group-has-[#nav:checked]:z-20 group-has-[#nav:checked]:h-full group-has-[#nav:checked]:w-full group-has-[#nav:checked]:transform-[translateX(0)] group-has-[#nav:checked]:overflow-y-auto group-has-[#nav:checked]:pt-20 group-has-[#nav:checked]:pr-[16%] group-has-[#nav:checked]:pb-5 group-has-[#nav:checked]:pl-[12%] group-has-[#nav:checked]:opacity-100 tablet:max-w-[35vw] group-has-[#nav:checked]:tablet:px-10 group-has-[#nav:checked]:tablet:py-40 desktop:hidden"
+                class="fixed top-0 right-0 z-20 flex h-full w-0 transform-[translateX(100%)] flex-col items-start gap-y-5 overflow-hidden bg-footer text-left text-inverse opacity-0 duration-200 ease-in-out group-has-[#nav:checked]/mast:bottom-0 group-has-[#nav:checked]/mast:z-20 group-has-[#nav:checked]/mast:h-full group-has-[#nav:checked]/mast:w-full group-has-[#nav:checked]/mast:transform-[translateX(0)] group-has-[#nav:checked]/mast:overflow-y-auto group-has-[#nav:checked]/mast:pt-20 group-has-[#nav:checked]/mast:pr-[16%] group-has-[#nav:checked]/mast:pb-5 group-has-[#nav:checked]/mast:pl-[12%] group-has-[#nav:checked]/mast:opacity-100 tablet:max-w-[35vw] group-has-[#nav:checked]/mast:tablet:px-10 group-has-[#nav:checked]/mast:tablet:py-40 laptop:hidden"
               >
                 <li class="block w-1/2 text-2xl whitespace-nowrap">
                   <a href="/">Home</a>
@@ -174,33 +194,55 @@
           </div>
         </header>
         <main
-          class="grow transition-[opacity] duration-200 ease-in-out group-has-[#nav:checked]:opacity-80 flex flex-col items-center bg-subtle"
+          class="grow transition-[opacity] duration-200 ease-in-out group-has-[#nav:checked]/layout:opacity-80 flex flex-col items-center bg-subtle"
           id="content"
         >
           <header
-            class="min-h-[clamp(340px,50vh,1350px)] bg-canvas relative flex w-full flex-col content-start items-center justify-end gap-6 pt-40"
+            class="min-h-[clamp(340px,50vh,1350px)] text-inverse bg-[#000] relative flex w-full flex-col content-start items-center justify-end gap-6 pt-20 laptop:pt-24"
           >
+            <img
+              class="absolute inset-0 size-full object-cover object-top blur-xs"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fbackdrops%2Fstats.png%3ForigWidth%3D2400%26origHeight%3D1350%26origFormat%3Dpng&amp;w=2400&amp;h=1350&amp;q=80&amp;f=avif"
+              srcset="
+                /_image/?href=%2Fcontent%2Fassets%2Fbackdrops%2Fstats.png%3ForigWidth%3D2400%26origHeight%3D1350%26origFormat%3Dpng&amp;w=720&amp;h=405&amp;q=80&amp;f=avif    720w,
+                /_image/?href=%2Fcontent%2Fassets%2Fbackdrops%2Fstats.png%3ForigWidth%3D2400%26origHeight%3D1350%26origFormat%3Dpng&amp;w=1200&amp;h=675&amp;q=80&amp;f=avif  1200w,
+                /_image/?href=%2Fcontent%2Fassets%2Fbackdrops%2Fstats.png%3ForigWidth%3D2400%26origHeight%3D1350%26origFormat%3Dpng&amp;w=1920&amp;h=1080&amp;q=80&amp;f=avif 1920w,
+                /_image/?href=%2Fcontent%2Fassets%2Fbackdrops%2Fstats.png%3ForigWidth%3D2400%26origHeight%3D1350%26origFormat%3Dpng&amp;w=2400&amp;h=1350&amp;q=80&amp;f=avif 2400w
+              "
+              height="1350"
+              sizes="100vw"
+              width="2400"
+              alt=""
+              fetchpriority="high"
+              loading="eager"
+            />
             <div
-              class="z-10 mx-auto flex w-full px-container text-center tablet:max-w-none tablet:px-0 flex-col py-8 tablet:pt-20 tablet:pb-10"
+              class="z-10 mx-auto flex w-full px-container text-center tablet:max-w-none tablet:px-0 flex-col after:absolute after:top-0 after:left-0 after:-z-10 after:h-full after:w-full after:bg-linear-to-t after:from-[rgba(0,0,0,.85)] after:to-50% tablet:after:to-25% py-8 tablet:pb-10 laptop:pt-10 desktop:pt-20"
             >
               <p
-                class="mb-6 font-sans text-sm tracking-wide text-subtle uppercase"
+                class="mb-2 font-sans text-sm tracking-wide text-subtle uppercase"
               >
-                <a class="text-accent" href="/readings/">Reading Log</a>
+                <a
+                  class="font-sans text-sm tracking-wide uppercase underline-offset-8 text-inverse decoration-inverse-subtle decoration-2 hover:underline"
+                  href="/readings/"
+                  >Reading Log</a
+                >
               </p>
               <h1
                 class="font-sans text-3xl font-bold tracking-widest uppercase tablet:text-4xl tablet-landscape:text-5xl desktop:text-7xl"
               >
                 2025 Stats
               </h1>
-              <p class="mt-1 text-base desktop:my-4 desktop:text-xl">
+              <p
+                class="mt-1 text-base desktop:my-4 desktop:text-xl [text-shadow:1px_1px_2px_black]"
+              >
                 A year in progress...
               </p>
             </div>
           </header>
           <nav class="bg-footer mb-12 w-full">
             <ul
-              class="mx-auto flex scrollbar-hidden max-w-(--breakpoint-max) overflow-x-auto px-container font-sans text-sm font-normal tracking-wide desktop:justify-center"
+              class="mx-auto flex scrollbar-hidden max-w-(--breakpoint-laptop) overflow-x-auto px-container font-sans text-sm font-normal tracking-wide laptop:justify-center"
             >
               <li class="text-center text-inverse">
                 <a
@@ -317,7 +359,7 @@
             </div>
           </div>
           <div
-            class="mx-auto flex w-full max-w-(--breakpoint-max) flex-col items-stretch gap-y-8 py-10 tablet:px-container"
+            class="mx-auto flex w-full max-w-(--breakpoint-desktop) flex-col items-stretch gap-y-8 py-10 tablet:px-container"
           >
             <div
               class="mx-auto flex w-full flex-col gap-y-8 desktop:max-w-[calc(66%+24px)]"
@@ -326,7 +368,7 @@
               class="flex flex-col items-start gap-y-8 desktop:flex-row desktop:gap-x-8"
             >
               <section class="w-full bg-default px-container pb-8">
-                <h2 class="py-4 font-medium desktop:text-xl">
+                <h2 class="py-4 font-medium laptop:text-xl">
                   By Year Published
                 </h2>
                 <div
@@ -353,7 +395,7 @@
                 </div>
               </section>
               <section class="w-full bg-default px-container pb-8">
-                <h2 class="py-4 font-medium desktop:text-xl">By Kind</h2>
+                <h2 class="py-4 font-medium laptop:text-xl">By Kind</h2>
                 <div
                   class="grid w-full grid-cols-[1fr_auto] tablet:whitespace-nowrap"
                 >
@@ -380,7 +422,7 @@
                 </div>
               </section>
               <section class="w-full bg-default px-container pb-8">
-                <h2 class="py-4 font-medium desktop:text-xl">By Edition</h2>
+                <h2 class="py-4 font-medium laptop:text-xl">By Edition</h2>
                 <div
                   class="grid w-full grid-cols-[1fr_auto] tablet:whitespace-nowrap"
                 >
@@ -408,7 +450,7 @@
           </div>
         </main>
         <footer class="bg-canvas">
-          <div class="mx-auto max-w-(--breakpoint-desktop) px-container py-20">
+          <div class="mx-auto max-w-(--breakpoint-laptop) px-container py-20">
             <div
               class="flex w-full flex-col tablet:flex-row-reverse tablet:justify-between"
             >
@@ -429,9 +471,11 @@
               </div>
             </div>
             <div class="justify-between tablet:flex">
-              <div class="flex max-w-prose flex-col pb-12 tablet:pr-32">
-                <div class="pt-10 font-sans text-base font-light text-subtle">
-                  <p class="mb-6 text-pretty">
+              <div class="flex max-w-[640px] flex-col pb-12 tablet:pr-32">
+                <div class="pt-10 font-sans text-sm font-light text-subtle">
+                  <p
+                    class="mb-6 text-pretty first-letter:float-left first-letter:mt-[6px] first-letter:pr-1 first-letter:font-sans first-letter:text-[40px] first-letter:leading-[.8] first-letter:font-bold first-letter:text-default desktop:first-letter:text-[64px]"
+                  >
                     Hi there, I&#x27;m Frank, a husband and father old enough to
                     have read Stephen King&#x27;s <em>The Dark Half</em> during
                     its first printing.
@@ -492,9 +536,9 @@
                 </div>
               </div>
               <div
-                class="flex grow-0 flex-col gap-20 pt-10 pb-20 tablet:basis-button tablet:pr-10"
+                class="flex w-full max-w-button grow flex-col gap-20 pt-10 pb-20 tablet:basis-button tablet:pr-10"
               >
-                <ul class="flex w-full flex-col gap-y-10 max:w-auto">
+                <ul class="flex w-full flex-col gap-y-10 desktop:w-auto">
                   <li class="block w-1/2 text-2xl whitespace-nowrap">
                     <a class="hover:text-accent" href="/">Home</a>
                   </li>

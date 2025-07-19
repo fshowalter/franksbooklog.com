@@ -3,6 +3,8 @@ import fs from "node:fs";
 import path from "node:path";
 import sharp from "sharp";
 
+import type { Review } from "./reviews";
+
 import { normalizeSources } from "./utils/normalizeSources";
 
 export type CoverImageProps = {
@@ -138,13 +140,11 @@ export async function getStructuredDataCoverSrc(work: Work): Promise<string> {
 }
 
 export async function getUpdateCoverProps(
-  slug: string,
+  work: Work,
 ): Promise<CoverImageProps> {
-  const coverFilePath = Object.keys(images).find((path) => {
-    return path.endsWith(`/${slug}.png`);
-  })!;
+  const coverFile = await getWorkCoverFile(work);
 
-  const coverFile = await images[coverFilePath]();
+  const coverFilePath = getWorkCoverPath(work);
   const height = await getCoverHeight(coverFilePath, 500);
 
   const optimizedImage = await getImage({
