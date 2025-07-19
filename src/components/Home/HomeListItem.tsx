@@ -53,40 +53,21 @@ export function HomeListItem({
       >
         <div
           className={`
-            relative max-w-[200px] transition-opacity
-            before:absolute before:top-0 before:left-0 before:block
-            before:size-full before:bg-[url(/assets/spot.png)]
-            before:bg-size-[100%_100%] before:mix-blend-soft-light
             after:absolute after:inset-x-0 after:top-0 after:bottom-0 after:z-20
-            after:bg-default after:opacity-15
+            after:bg-default after:opacity-15 after:transition-opacity
             group-hover/card:after:opacity-0
-            @min-[160px]:shadow-lg
           `}
         >
-          <div
+          <Cover
+            decoding="async"
+            imageProps={value.coverImageProps}
+            {...CoverImageConfig}
             className={`
-              relative z-10
-              before:absolute before:top-0 before:left-0 before:z-10
-              before:block before:size-full before:rounded-[2.5px]
-              before:bg-[url(/assets/spine-light.png)]
-              before:bg-size-[100%_100%]
-              after:absolute after:top-0 after:left-0 after:z-10 after:block
-              after:size-full after:rounded-[2.5px]
-              after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%]
-              after:mix-blend-multiply
+              max-w-[200px]
+              @min-[160px]:shadow-lg
             `}
-          >
-            <Cover
-              decoding="async"
-              imageProps={value.coverImageProps}
-              {...CoverImageConfig}
-              alt={`A cover of ${value.title} by ${toSentenceArray(
-                value.authors.map((a) => a.name),
-              ).join("")}`}
-              className="rounded-[2.5px] bg-default"
-              loading={eagerLoadCoverImage ? "eager" : "lazy"}
-            />
-          </div>
+            loading={eagerLoadCoverImage ? "eager" : "lazy"}
+          />
         </div>
       </div>
       <div
