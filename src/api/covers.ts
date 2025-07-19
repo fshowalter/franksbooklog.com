@@ -3,8 +3,6 @@ import fs from "node:fs";
 import path from "node:path";
 import sharp from "sharp";
 
-import type { Review } from "./reviews";
-
 import { normalizeSources } from "./utils/normalizeSources";
 
 export type CoverImageProps = {
