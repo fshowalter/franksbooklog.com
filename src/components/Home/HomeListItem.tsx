@@ -40,14 +40,14 @@ export function HomeListItem({
   return (
     <li
       className={`
-        group/card @container relative row-span-2 grid transform-gpu
-        grid-rows-subgrid gap-y-0 transition-transform
+        group/card relative row-span-2 grid transform-gpu grid-rows-subgrid
+        gap-y-0 transition-transform
         has-[a:hover]:-translate-y-2 has-[a:hover]:drop-shadow-2xl
       `}
     >
       <div
         className={`
-          z-10 flex justify-center self-end bg-default px-3 pt-3
+          @container z-10 flex justify-center self-end bg-default px-3 pt-3
           @min-[200px]:px-[clamp(4px,10cqw,32px)] @min-[200px]:pt-6
         `}
       >
@@ -70,7 +70,7 @@ export function HomeListItem({
       </div>
       <div
         className={`
-          flex justify-center bg-default px-4 pb-8
+          @container flex justify-center bg-default px-4 pb-8
           group-has-[a:hover]/card:shadow-[0px_-5px_5px_2px,rgba(0,0,0,.85)]
           @min-[193px]:px-[clamp(4px,14cqw,32px)] @min-[193px]:pb-6
         `}

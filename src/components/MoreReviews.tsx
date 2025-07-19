@@ -67,14 +67,14 @@ function MoreReviewsCard({ value }: { value: MoreReviewsValue }): JSX.Element {
   return (
     <li
       className={`
-        group/card @container relative row-span-2 grid grid-rows-subgrid gap-y-0
+        group/card relative row-span-2 grid grid-rows-subgrid gap-y-0
         transition-transform
         has-[a:hover]:-translate-y-2 has-[a:hover]:drop-shadow-2xl
       `}
     >
       <div
         className={`
-          flex justify-center self-end bg-default px-3 pt-3
+          @container flex justify-center self-end bg-default px-3 pt-3
           @min-[200px]:px-[clamp(4px,10cqw,32px)] @min-[200px]:pt-6
         `}
       >
@@ -98,7 +98,7 @@ function MoreReviewsCard({ value }: { value: MoreReviewsValue }): JSX.Element {
       </div>
       <div
         className={`
-          flex justify-center bg-default px-4 pb-8
+          @container flex justify-center bg-default px-4 pb-8
           @min-[193px]:px-[clamp(4px,14cqw,32px)] @min-[193px]:pb-6
         `}
       >
