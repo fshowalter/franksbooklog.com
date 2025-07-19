@@ -19,7 +19,7 @@ export function Distribution({
       <h2
         className={`
           py-4 font-medium
-          desktop:text-xl
+          laptop:text-xl
         `}
       >
         {title}

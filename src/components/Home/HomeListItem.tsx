@@ -41,6 +41,8 @@ export function HomeListItem({
     <li
       className={`
         group/card @container relative row-span-2 grid grid-rows-subgrid gap-y-0
+        transition-transform
+        has-[a:hover]:-translate-y-2
       `}
     >
       <div
@@ -51,8 +53,8 @@ export function HomeListItem({
       >
         <div
           className={`
-            relative max-w-[200px]
-            before:absolute before:top-0 before:left-0 before:z-20 before:block
+            relative max-w-[200px] transition-opacity
+            before:absolute before:top-0 before:left-0 before:block
             before:size-full before:bg-[url(/assets/spot.png)]
             before:bg-size-[100%_100%] before:mix-blend-soft-light
             after:absolute after:inset-x-0 after:top-0 after:bottom-0 after:z-20
@@ -112,7 +114,7 @@ export function HomeListItem({
             <a
               className={`
                 block
-                after:absolute after:top-0 after:left-0 after:z-20
+                after:absolute after:top-0 after:left-0 after:z-60
                 after:size-full after:opacity-0
                 hover:text-accent
               `}

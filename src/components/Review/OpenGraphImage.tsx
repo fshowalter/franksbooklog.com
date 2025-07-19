@@ -4,18 +4,24 @@ import { toSentenceArray } from "~/utils";
 
 export function OpenGraphImage({
   authors,
-  cover,
+  coverBase64DataUri,
+  coverHeight,
+  coverWidth,
   grade,
   title,
 }: {
   authors: string[];
-  cover: string;
+  coverBase64DataUri: string;
+  coverHeight: number;
+  coverWidth: number;
   grade: string | undefined;
   title: string;
 }): JSX.Element {
   return (
     <div
       style={{
+        alignItems: "center",
+        backgroundColor: "#252525",
         display: "flex",
         height: "630px",
         position: "relative",
@@ -23,12 +29,12 @@ export function OpenGraphImage({
       }}
     >
       <img
-        height={630}
-        src={cover}
+        height={coverHeight}
+        src={coverBase64DataUri}
         style={{
           objectFit: "cover",
         }}
-        width={420}
+        width={coverWidth}
       />
       <div
         style={{
@@ -42,7 +48,7 @@ export function OpenGraphImage({
           paddingLeft: "80px",
           paddingRight: "80px",
           paddingTop: "32px",
-          width: "780px",
+          width: `${1200 - coverWidth}px`,
         }}
       >
         <div

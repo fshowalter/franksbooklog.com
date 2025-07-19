@@ -25,7 +25,7 @@ export function Layout({
   }
 
   return (
-    <div className="group">
+    <div className="group/layout">
       <a
         className={`
           absolute top-0.5 left-1/2 z-50 mx-auto
@@ -47,7 +47,7 @@ export function Layout({
         <main
           className={`
             grow transition-[opacity] duration-200 ease-in-out
-            group-has-[#nav:checked]:opacity-80
+            group-has-[#nav:checked]/layout:opacity-80
             ${className}
           `}
           id="content"

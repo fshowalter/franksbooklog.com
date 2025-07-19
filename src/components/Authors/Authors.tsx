@@ -66,7 +66,10 @@ export function Authors({
 function AuthorListItem({ value }: { value: ListItemValue }): JSX.Element {
   return (
     <ListItem
-      className="has-[a:hover]:bg-stripe has-[a:hover]:shadow-hover"
+      className={`
+        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        has-[a:hover]:drop-shadow-2xl
+      `}
       extraVerticalPadding={true}
       itemsCenter={true}
     >

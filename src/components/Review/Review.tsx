@@ -222,40 +222,50 @@ function ReviewCover({
       />
       <div
         className={`
-          relative -top-[2.5%] z-10
-          before:absolute before:top-0 before:left-0 before:z-20 before:block
-          before:size-full before:bg-[url(/assets/spine-light.png)]
-          before:bg-size-[100%_100%]
-          after:absolute after:top-0 after:left-0 after:z-20 after:block
-          after:size-full after:bg-[url(/assets/spine-dark.png)]
-          after:bg-size-[100%_100%] after:mix-blend-multiply
-          ${
-            coverImageProps.hasAlpha
-              ? ""
-              : `shadow-[0_5px_20px_rgba(49,46,42,0.22)]`
-          }
+          relative
+          after:absolute after:top-0 after:left-0 after:block after:size-full
+          after:rounded-[2.5px] after:bg-[url(/assets/spot.png)]
+          after:bg-size-[100%_100%] after:mix-blend-soft-light
         `}
       >
-        <Cover
+        <div
           className={`
-            safari-border-radius-fix rounded-[2.5px]
+            relative -top-[2.5%] z-10
+            before:absolute before:top-0 before:left-0 before:z-20 before:block
+            before:size-full before:rounded-[2.5px]
+            before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%]
+            after:absolute after:top-0 after:left-0 after:z-20 after:block
+            after:size-full after:rounded-[2.5px]
+            after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%]
+            after:mix-blend-multiply
             ${
               coverImageProps.hasAlpha
                 ? ""
                 : `shadow-[0_5px_20px_rgba(49,46,42,0.22)]`
             }
           `}
-          decoding="auto"
-          height={coverImageProps.height}
-          imageProps={{
-            aspectRatio: coverImageProps.aspectRatio,
-            height: coverImageProps.height,
-            src: coverImageProps.src,
-            srcSet: coverImageProps.srcSet,
-          }}
-          loading="eager"
-          width={CoverImageConfig.width}
-        />
+        >
+          <Cover
+            className={`
+              safari-border-radius-fix rounded-[2.5px]
+              ${
+                coverImageProps.hasAlpha
+                  ? ""
+                  : `shadow-[0_5px_20px_rgba(49,46,42,0.22)]`
+              }
+            `}
+            decoding="auto"
+            height={coverImageProps.height}
+            imageProps={{
+              aspectRatio: coverImageProps.aspectRatio,
+              height: coverImageProps.height,
+              src: coverImageProps.src,
+              srcSet: coverImageProps.srcSet,
+            }}
+            loading="eager"
+            width={CoverImageConfig.width}
+          />
+        </div>
       </div>
     </div>
   );
