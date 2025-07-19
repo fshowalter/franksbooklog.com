@@ -178,7 +178,7 @@ function Wrapper({
   textInverse?: boolean;
 }) {
   const defaultSizes =
-    "min-h-[240px] tablet:min-h-[640px] desktop:min-h-[clamp(640px,70vh,1350px)]";
+    "min-h-[340px] tablet:min-h-[640px] desktop:min-h-[clamp(640px,70vh,1350px)]";
 
   const largeSizes = "min-h-[90vh] max-h-[1350px]";
 
