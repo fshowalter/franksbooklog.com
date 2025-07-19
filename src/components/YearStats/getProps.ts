@@ -1,5 +1,7 @@
+import { getBackdropImageProps } from "~/api/backdrops";
 import { getFluidCoverImageProps } from "~/api/covers";
 import { allStatYears, statsForYear } from "~/api/yearStats";
+import { BackdropImageConfig } from "~/components/Backdrop";
 import { ListItemCoverImageConfig } from "~/components/ListItemCover";
 
 import type { Props } from "./YearStats";
@@ -10,6 +12,10 @@ export async function getProps(year: string): Promise<Props> {
   const stats = await statsForYear(year);
 
   return {
+    backdropImageProps: await getBackdropImageProps(
+      "stats",
+      BackdropImageConfig,
+    ),
     deck:
       [...distinctStatYears].reverse()[0] === year
         ? "A year in progress..."

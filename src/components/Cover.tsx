@@ -7,7 +7,6 @@ type Props = React.ImgHTMLAttributes<HTMLImageElement> & {
   decoding: "async" | "auto" | "sync";
   imageProps: CoverImageProps | undefined;
   loading: "eager" | "lazy";
-  width: number;
 };
 
 export function Cover({
@@ -20,8 +19,9 @@ export function Cover({
   return (
     <div
       className={`
+        relative
         after:absolute after:top-0 after:left-0 after:z-20 after:block
-        after:size-full after:bg-[url(/assets/spot.png)]
+        after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)]
         after:bg-size-[100%_100%] after:mix-blend-soft-light
         ${className}
       `}
@@ -42,7 +42,10 @@ export function Cover({
           {...imageProps}
           {...rest}
           alt=""
-          className="rounded-[2.5px] bg-default"
+          className={`
+            rounded-[2.5px] bg-default shadow-sm
+            @min-[160px]:shadow-lg
+          `}
           decoding={decoding}
           loading={loading}
         />

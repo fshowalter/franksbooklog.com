@@ -38,6 +38,27 @@ export function AvatarBackdrop({
   );
 }
 
+export function BreadcrumbLink({
+  children,
+  href,
+}: {
+  children: React.ReactNode;
+  href: string;
+}) {
+  return (
+    <a
+      className={`
+        font-sans text-sm tracking-wide text-inverse uppercase
+        decoration-inverse-subtle decoration-2 underline-offset-8
+        hover:underline
+      `}
+      href={href}
+    >
+      {children}
+    </a>
+  );
+}
+
 export function SolidBackdrop({
   breadcrumb,
   deck,
@@ -170,7 +191,7 @@ function Wrapper({
         ${textInverse ? "text-inverse" : ""}
         ${heroImage ? "bg-[#000]" : "bg-canvas"}
         relative flex w-full flex-col content-start items-center justify-end
-        gap-6 pt-40
+        gap-6 pt-24
       `}
     >
       {heroImage}
@@ -198,7 +219,9 @@ function Wrapper({
               : ""
           }
           py-8
-          tablet:pt-20 tablet:pb-10
+          tablet:pb-10
+          laptop:pt-10
+          desktop:pt-20
         `}
       >
         {children}

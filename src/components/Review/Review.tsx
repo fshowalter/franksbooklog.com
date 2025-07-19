@@ -1,6 +1,6 @@
 import type { JSX } from "react";
 
-import type { FixedCoverImageProps } from "~/api/covers";
+import type { CoverImageProps } from "~/api/covers";
 import type { Review, ReviewWithContent } from "~/api/reviews";
 
 import { AuthorLink } from "~/components/AuthorLink";
@@ -21,7 +21,7 @@ export const CoverImageConfig = {
 };
 
 export type Props = {
-  coverImageProps: FixedCoverImageProps;
+  coverImageProps: CoverImageProps;
   moreReviews: React.ComponentProps<typeof MoreReviews>["values"];
   structuredDataCoverSrc: string;
   value: ReviewWithContent;
@@ -201,11 +201,13 @@ function Authors({
 function ReviewCover({
   coverImageProps,
 }: {
-  coverImageProps: FixedCoverImageProps;
+  coverImageProps: CoverImageProps;
 }) {
   return (
     <div
-      className={`relative my-12 flex w-full max-w-popout flex-col items-center`}
+      className={`
+        @container relative my-12 flex w-full max-w-popout flex-col items-center
+      `}
       data-pagefind-meta={`image:${coverImageProps.src}`}
     >
       <div
@@ -220,53 +222,12 @@ function ReviewCover({
           backgroundImage: `linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(${coverImageProps.src})`,
         }}
       />
-      <div
-        className={`
-          relative
-          after:absolute after:top-0 after:left-0 after:block after:size-full
-          after:rounded-[2.5px] after:bg-[url(/assets/spot.png)]
-          after:bg-size-[100%_100%] after:mix-blend-soft-light
-        `}
-      >
-        <div
-          className={`
-            relative -top-[2.5%] z-10
-            before:absolute before:top-0 before:left-0 before:z-20 before:block
-            before:size-full before:rounded-[2.5px]
-            before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%]
-            after:absolute after:top-0 after:left-0 after:z-20 after:block
-            after:size-full after:rounded-[2.5px]
-            after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%]
-            after:mix-blend-multiply
-            ${
-              coverImageProps.hasAlpha
-                ? ""
-                : `shadow-[0_5px_20px_rgba(49,46,42,0.22)]`
-            }
-          `}
-        >
-          <Cover
-            className={`
-              safari-border-radius-fix rounded-[2.5px]
-              ${
-                coverImageProps.hasAlpha
-                  ? ""
-                  : `shadow-[0_5px_20px_rgba(49,46,42,0.22)]`
-              }
-            `}
-            decoding="auto"
-            height={coverImageProps.height}
-            imageProps={{
-              aspectRatio: coverImageProps.aspectRatio,
-              height: coverImageProps.height,
-              src: coverImageProps.src,
-              srcSet: coverImageProps.srcSet,
-            }}
-            loading="eager"
-            width={CoverImageConfig.width}
-          />
-        </div>
-      </div>
+      <Cover
+        className={`relative -top-[2.5%]`}
+        decoding="auto"
+        imageProps={coverImageProps}
+        loading="eager"
+      />
     </div>
   );
 }
