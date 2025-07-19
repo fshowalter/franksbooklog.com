@@ -3,7 +3,12 @@ import type { APIRoute, InferGetStaticPropsType } from "astro";
 import path from "node:path";
 import sharp from "sharp";
 
-import { getOpenGraphCoverAsBase64String } from "~/api/covers";
+import {
+  getCoverHeight,
+  getOpenGraphCoverAsBase64String,
+  getWorkCoverPath,
+} from "~/api/covers";
+import { getCoverWidth } from "~/api/covers";
 import { allReviews } from "~/api/reviews";
 import { fileForGrade } from "~/components/Grade";
 import { OpenGraphImage } from "~/components/Review/OpenGraphImage";
@@ -44,10 +49,21 @@ export const GET: APIRoute = async function get({ props }) {
     gradeString = `data:${"image/png"};base64,${gradeBuffer.toString("base64")}`;
   }
 
+  let coverHeight = 630;
+  let coverWidth = await getCoverWidth(work, coverHeight);
+
+  if (coverWidth > 500) {
+    const workCoverPath = getWorkCoverPath(work);
+    coverHeight = await getCoverHeight(workCoverPath, 500);
+    coverWidth = 500;
+  }
+
   const jpeg = await componentToImage(
     OpenGraphImage({
       authors: work.authors.map((author) => author.name),
-      cover: await getOpenGraphCoverAsBase64String(work),
+      coverBase64DataUri: await getOpenGraphCoverAsBase64String(work),
+      coverHeight,
+      coverWidth,
       grade: gradeString,
       title: work.title,
     }),

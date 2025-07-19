@@ -17,10 +17,10 @@ export function StatsNavigation({
     <nav className={ccn("bg-footer", className)}>
       <ul
         className={`
-          mx-auto flex scrollbar-hidden max-w-(--breakpoint-desktop)
+          mx-auto flex scrollbar-hidden max-w-(--breakpoint-laptop)
           overflow-x-auto px-container font-sans text-sm font-normal
           tracking-wide
-          desktop:justify-center
+          laptop:justify-center
         `}
       >
         <AllTimeLink currentYear={currentYear} linkFunc={linkFunc} />

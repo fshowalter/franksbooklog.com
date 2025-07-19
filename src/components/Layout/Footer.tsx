@@ -41,7 +41,16 @@ export function Footer(): JSX.Element {
             `}
           >
             <div className={`pt-10 font-sans text-sm font-light text-subtle`}>
-              <p className="mb-6 text-pretty">
+              <p
+                className={`
+                  mb-6 text-pretty
+                  first-letter:float-left first-letter:mt-[6px]
+                  first-letter:pr-1 first-letter:font-sans
+                  first-letter:text-[40px] first-letter:leading-[.8]
+                  first-letter:font-bold first-letter:text-default
+                  desktop:first-letter:text-[64px]
+                `}
+              >
                 Hi there, I&apos;m Frank, a husband and father old enough to
                 have read Stephen King&apos;s <em>The Dark Half</em> during its
                 first printing.
