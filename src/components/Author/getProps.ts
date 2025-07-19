@@ -2,11 +2,11 @@ import { type Author, getAuthorDetails } from "~/api/authors";
 import { getAvatarImageProps } from "~/api/avatars";
 import { getBackdropImageProps } from "~/api/backdrops";
 import { getFluidCoverImageProps } from "~/api/covers";
+import { BackdropImageConfig } from "~/components/Backdrop";
 import { ListItemCoverImageConfig } from "~/components/ListItemCover";
 
 import type { ListItemValue, Props } from "./Author";
 
-import { BackdropImageConfig } from "../Backdrop";
 import { AvatarImageConfig } from "./Author";
 
 export async function getProps(slug: string): Promise<Props> {
