@@ -92,28 +92,6 @@ export function BreadcrumbLink({
   );
 }
 
-export function SolidBackdrop({
-  breadcrumb,
-  deck,
-  narrowTitle = false,
-  title,
-  titleClasses,
-}: {
-  breadcrumb?: React.ReactNode;
-  deck: React.ReactNode;
-  narrowTitle?: boolean;
-  title: string;
-  titleClasses?: string;
-}) {
-  return (
-    <Wrapper narrowChildren={narrowTitle} size="small">
-      <Breadcrumb value={breadcrumb} />
-      <Title className={titleClasses} value={title} />
-      <Deck value={deck} />
-    </Wrapper>
-  );
-}
-
 function Breadcrumb({ value }: { value?: React.ReactNode }) {
   if (!value) {
     return false;
