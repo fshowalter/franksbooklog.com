@@ -1,7 +1,5 @@
 import type { JSX } from "react";
 
-import { ccn } from "~/utils/concatClassNames";
-
 export function StatsNavigation({
   className,
   currentYear,
@@ -14,7 +12,12 @@ export function StatsNavigation({
   years: readonly string[];
 }): JSX.Element {
   return (
-    <nav className={ccn("bg-footer", className)}>
+    <nav
+      className={`
+        bg-footer
+        ${className}
+      `}
+    >
       <ul
         className={`
           mx-auto flex scrollbar-hidden max-w-(--breakpoint-laptop)

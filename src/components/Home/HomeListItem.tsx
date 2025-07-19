@@ -42,17 +42,18 @@ export function HomeListItem({
       className={`
         group/card @container relative row-span-2 grid grid-rows-subgrid gap-y-0
         transition-transform
-        has-[a:hover]:-translate-y-2
+        has-[a:hover]:-translate-y-2 has-[a:hover]:drop-shadow-2xl
       `}
     >
       <div
         className={`
-          flex justify-center self-end bg-default px-3 pt-3
+          z-10 flex justify-center self-end bg-default px-3 pt-3
           @min-[200px]:px-[clamp(4px,10cqw,32px)] @min-[200px]:pt-6
         `}
       >
         <div
           className={`
+            relative
             after:absolute after:inset-x-0 after:top-0 after:bottom-0 after:z-20
             after:bg-default after:opacity-15 after:transition-opacity
             group-hover/card:after:opacity-0
@@ -62,10 +63,7 @@ export function HomeListItem({
             decoding="async"
             imageProps={value.coverImageProps}
             {...CoverImageConfig}
-            className={`
-              max-w-[200px]
-              @min-[160px]:shadow-lg
-            `}
+            className={`max-w-[200px]`}
             loading={eagerLoadCoverImage ? "eager" : "lazy"}
           />
         </div>
@@ -73,6 +71,7 @@ export function HomeListItem({
       <div
         className={`
           flex justify-center bg-default px-4 pb-8
+          group-has-[a:hover]/card:shadow-[0px_-5px_5px_2px,rgba(0,0,0,.85)]
           @min-[193px]:px-[clamp(4px,14cqw,32px)] @min-[193px]:pb-6
         `}
       >

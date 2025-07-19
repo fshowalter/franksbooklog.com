@@ -612,6 +612,7 @@
     }
 
     .pagefind-ui__result-image {
+      border-radius: 2.5px;
       margin: 0 auto;
     }
 
