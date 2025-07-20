@@ -204,7 +204,7 @@ function Wrapper({
         ${textInverse ? "text-inverse" : ""}
         ${heroImage ? "bg-[#000]" : "bg-canvas"}
         relative flex w-full flex-col content-start items-center justify-end
-        gap-6 pt-20
+        gap-6 overflow-hidden pt-20
         laptop:pt-24
       `}
     >

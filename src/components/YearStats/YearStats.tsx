@@ -58,15 +58,15 @@ export function YearStats({
       <Callouts bookCount={stats.bookCount} workCount={stats.workCount} />
       <div
         className={`
-          mx-auto flex w-full max-w-(--breakpoint-desktop) flex-col
-          items-stretch gap-y-8 py-10
+          mx-auto flex w-full max-w-(--breakpoint-laptop) flex-col items-stretch
+          gap-y-8 py-10
           tablet:px-container
         `}
       >
         <div
           className={`
             mx-auto flex w-full flex-col gap-y-8
-            desktop:max-w-[calc(66%+24px)]
+            laptop:max-w-[calc(66%+24px)]
           `}
         >
           <MostReadAuthors values={mostReadAuthors} />
@@ -74,7 +74,7 @@ export function YearStats({
         <div
           className={`
             flex flex-col items-start gap-y-8
-            desktop:flex-row desktop:gap-x-8
+            laptop:flex-row laptop:gap-x-8
           `}
         >
           <DecadeDistribution values={stats.decadeDistribution} />

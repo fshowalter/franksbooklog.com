@@ -65,7 +65,13 @@ export function MostReadAuthors({
                   tablet:px-0
                 `}
               >
-                <div className="font-sans text-sm text-muted">
+                <div
+                  className={`
+                    origin-left transform-gpu font-sans text-sm text-muted
+                    transition-transform
+                    has-[a:hover]:scale-110
+                  `}
+                >
                   <Name value={value} />
                 </div>
                 <div
@@ -141,8 +147,8 @@ function ReadingSubListItem({ value }: { value: ReadingSubListItemValue }) {
   return (
     <ListItem
       className={`
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       `}
     >

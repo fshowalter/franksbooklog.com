@@ -68,8 +68,8 @@ function AllTimeLink({
       ) : (
         <a
           className={`
-            block p-4 whitespace-nowrap
-            hover:bg-accent hover:text-inverse
+            block transform-gpu p-4 whitespace-nowrap transition-all
+            hover:scale-105 hover:bg-accent hover:text-inverse
             desktop:py-4
           `}
           href={linkFunc("all")}
@@ -109,8 +109,8 @@ function YearLink({
       ) : (
         <a
           className={`
-            block p-4
-            hover:bg-accent hover:text-inverse
+            block transform-gpu p-4 transition-all
+            hover:scale-105 hover:bg-accent hover:text-inverse
           `}
           href={linkFunc(year)}
         >

@@ -43,16 +43,16 @@ exports[`Home > matches snapshot 1`] = `
               class="flex flex-wrap justify-start gap-x-6 text-xl"
             >
               <li
-                class="block tracking-serif-wide whitespace-nowrap"
+                class="
+        block transform-gpu tracking-serif-wide whitespace-nowrap
+        transition-transform
+        has-[a:hover]:scale-105
+      "
               >
                 <a
                   class="
-          text-inherit transition-all duration-500 ease-in-out
+          text-inherit transition-colors
           
-                to-50%
-                hover:bg-linear-to-b hover:from-transparent hover:from-25%
-                hover:via-[rgba(0,0,0,.8)] hover:to-transparent hover:to-75%
-              
         "
                   href="/"
                   style="text-shadow: 1px 1px 2px black;"
@@ -61,16 +61,16 @@ exports[`Home > matches snapshot 1`] = `
                 </a>
               </li>
               <li
-                class="block tracking-serif-wide whitespace-nowrap"
+                class="
+        block transform-gpu tracking-serif-wide whitespace-nowrap
+        transition-transform
+        has-[a:hover]:scale-105
+      "
               >
                 <a
                   class="
-          text-inherit transition-all duration-500 ease-in-out
+          text-inherit transition-colors
           
-                to-50%
-                hover:bg-linear-to-b hover:from-transparent hover:from-25%
-                hover:via-[rgba(0,0,0,.8)] hover:to-transparent hover:to-75%
-              
         "
                   href="/how-i-grade/"
                   style="text-shadow: 1px 1px 2px black;"
@@ -79,16 +79,16 @@ exports[`Home > matches snapshot 1`] = `
                 </a>
               </li>
               <li
-                class="block tracking-serif-wide whitespace-nowrap"
+                class="
+        block transform-gpu tracking-serif-wide whitespace-nowrap
+        transition-transform
+        has-[a:hover]:scale-105
+      "
               >
                 <a
                   class="
-          text-inherit transition-all duration-500 ease-in-out
+          text-inherit transition-colors
           
-                to-50%
-                hover:bg-linear-to-b hover:from-transparent hover:from-25%
-                hover:via-[rgba(0,0,0,.8)] hover:to-transparent hover:to-75%
-              
         "
                   href="/reviews/"
                   style="text-shadow: 1px 1px 2px black;"
@@ -97,16 +97,16 @@ exports[`Home > matches snapshot 1`] = `
                 </a>
               </li>
               <li
-                class="block tracking-serif-wide whitespace-nowrap"
+                class="
+        block transform-gpu tracking-serif-wide whitespace-nowrap
+        transition-transform
+        has-[a:hover]:scale-105
+      "
               >
                 <a
                   class="
-          text-inherit transition-all duration-500 ease-in-out
+          text-inherit transition-colors
           
-                to-50%
-                hover:bg-linear-to-b hover:from-transparent hover:from-25%
-                hover:via-[rgba(0,0,0,.8)] hover:to-transparent hover:to-75%
-              
         "
                   href="/authors/"
                   style="text-shadow: 1px 1px 2px black;"
@@ -115,16 +115,16 @@ exports[`Home > matches snapshot 1`] = `
                 </a>
               </li>
               <li
-                class="block tracking-serif-wide whitespace-nowrap"
+                class="
+        block transform-gpu tracking-serif-wide whitespace-nowrap
+        transition-transform
+        has-[a:hover]:scale-105
+      "
               >
                 <a
                   class="
-          text-inherit transition-all duration-500 ease-in-out
+          text-inherit transition-colors
           
-                to-50%
-                hover:bg-linear-to-b hover:from-transparent hover:from-25%
-                hover:via-[rgba(0,0,0,.8)] hover:to-transparent hover:to-75%
-              
         "
                   href="/readings/"
                   style="text-shadow: 1px 1px 2px black;"
@@ -136,8 +136,9 @@ exports[`Home > matches snapshot 1`] = `
           </nav>
           <div
             class="
-        z-1000
+        z-1000 transform-gpu transition-transform
         group-has-[#nav:checked]/mast:!text-[#fff]
+        hover:scale-105
       "
           >
             <button
@@ -179,8 +180,9 @@ exports[`Home > matches snapshot 1`] = `
             />
             <label
               class="
-          relative z-40 ml-2 flex h-10 w-10 cursor-pointer items-center
-          justify-center
+          relative z-40 ml-2 flex h-10 w-10 transform-gpu cursor-pointer
+          items-center justify-center transition-transform
+          hover:scale-110
           laptop:hidden
         "
               for="nav"
@@ -231,6 +233,10 @@ exports[`Home > matches snapshot 1`] = `
                 class="block w-1/2 text-2xl whitespace-nowrap"
               >
                 <a
+                  class="
+          inline-block origin-left transform-gpu transition-all
+          hover:scale-105
+        "
                   href="/"
                 >
                   Home
@@ -240,6 +246,10 @@ exports[`Home > matches snapshot 1`] = `
                 class="block w-1/2 text-2xl whitespace-nowrap"
               >
                 <a
+                  class="
+          inline-block origin-left transform-gpu transition-all
+          hover:scale-105
+        "
                   href="/how-i-grade/"
                 >
                   How I Grade
@@ -249,6 +259,10 @@ exports[`Home > matches snapshot 1`] = `
                 class="block w-1/2 text-2xl whitespace-nowrap"
               >
                 <a
+                  class="
+          inline-block origin-left transform-gpu transition-all
+          hover:scale-105
+        "
                   href="/reviews/"
                 >
                   Reviews
@@ -258,6 +272,10 @@ exports[`Home > matches snapshot 1`] = `
                 class="block w-1/2 text-2xl whitespace-nowrap"
               >
                 <a
+                  class="
+          inline-block origin-left transform-gpu transition-all
+          hover:scale-105
+        "
                   href="/authors/"
                 >
                   Authors
@@ -267,6 +285,10 @@ exports[`Home > matches snapshot 1`] = `
                 class="block w-1/2 text-2xl whitespace-nowrap"
               >
                 <a
+                  class="
+          inline-block origin-left transform-gpu transition-all
+          hover:scale-105
+        "
                   href="/readings/"
                 >
                   Reading Log
@@ -282,6 +304,10 @@ exports[`Home > matches snapshot 1`] = `
             "
                   >
                     <a
+                      class="
+                inline-block origin-left transform-gpu transition-all
+                hover:scale-105 hover:text-inverse
+              "
                       href="/readings/stats/"
                     >
                       Stats
@@ -307,7 +333,7 @@ exports[`Home > matches snapshot 1`] = `
         text-inverse
         bg-[#000]
         relative flex w-full flex-col content-start items-center justify-end
-        gap-6 pt-20
+        gap-6 overflow-hidden pt-20
         laptop:pt-24
       "
         >
@@ -2151,9 +2177,10 @@ exports[`Home > matches snapshot 1`] = `
           >
             <a
               class="
-              mx-auto w-full max-w-button bg-default py-5 text-center font-sans
-              text-xs font-semibold tracking-wide text-accent uppercase
-              hover:bg-accent hover:text-inverse
+              mx-auto w-full max-w-button transform-gpu bg-default py-5
+              text-center font-sans text-xs font-semibold tracking-wide
+              text-accent uppercase transition-all
+              hover:scale-105 hover:bg-accent hover:text-inverse
             "
               href="/reviews/"
             >
@@ -2176,9 +2203,10 @@ exports[`Home > matches snapshot 1`] = `
           >
             <a
               class="
-              mx-auto mb-8 w-full max-w-button bg-footer py-5 text-center
-              font-sans text-xs tracking-wide text-inverse uppercase
-              hover:bg-subtle hover:text-default
+              mx-auto mb-8 w-full max-w-button transform-gpu bg-footer py-5
+              text-center font-sans text-xs tracking-wide text-inverse uppercase
+              transition-all
+              hover:scale-105 hover:bg-subtle hover:text-default
               tablet:mx-0
             "
               href="#top"
@@ -2186,7 +2214,11 @@ exports[`Home > matches snapshot 1`] = `
               To the top
             </a>
             <div
-              class="flex flex-col"
+              class="
+        flex transform-gpu flex-col transition-transform
+        has-[a:hover]:scale-105
+        undefined
+      "
             >
               <div
                 class="
@@ -2256,7 +2288,7 @@ exports[`Home > matches snapshot 1`] = `
                     class="
         text-default underline decoration-subtle decoration-dashed
         underline-offset-4 transition-all duration-150 ease-out
-        hover:bg-(--fg-inverse) hover:text-default hover:decoration-default
+        hover:bg-(--bg-inverse) hover:text-default hover:decoration-default
         hover:duration-75 hover:ease-in
       "
                     href="/how-i-grade/"
@@ -2268,7 +2300,7 @@ exports[`Home > matches snapshot 1`] = `
                     class="
         text-default underline decoration-subtle decoration-dashed
         underline-offset-4 transition-all duration-150 ease-out
-        hover:bg-(--fg-inverse) hover:text-default hover:decoration-default
+        hover:bg-(--bg-inverse) hover:text-default hover:decoration-default
         hover:duration-75 hover:ease-in
       "
                     href="/reviews/"
@@ -2280,7 +2312,7 @@ exports[`Home > matches snapshot 1`] = `
                     class="
         text-default underline decoration-subtle decoration-dashed
         underline-offset-4 transition-all duration-150 ease-out
-        hover:bg-(--fg-inverse) hover:text-default hover:decoration-default
+        hover:bg-(--bg-inverse) hover:text-default hover:decoration-default
         hover:duration-75 hover:ease-in
       "
                     href="/authors/"
@@ -2297,7 +2329,7 @@ exports[`Home > matches snapshot 1`] = `
                     class="
         text-default underline decoration-subtle decoration-dashed
         underline-offset-4 transition-all duration-150 ease-out
-        hover:bg-(--fg-inverse) hover:text-default hover:decoration-default
+        hover:bg-(--bg-inverse) hover:text-default hover:decoration-default
         hover:duration-75 hover:ease-in
       "
                     href="/readings/"
@@ -2309,7 +2341,7 @@ exports[`Home > matches snapshot 1`] = `
                     class="
         text-default underline decoration-subtle decoration-dashed
         underline-offset-4 transition-all duration-150 ease-out
-        hover:bg-(--fg-inverse) hover:text-default hover:decoration-default
+        hover:bg-(--bg-inverse) hover:text-default hover:decoration-default
         hover:duration-75 hover:ease-in
       "
                     href="/readings/stats/"
@@ -2341,7 +2373,10 @@ exports[`Home > matches snapshot 1`] = `
                   class="block w-1/2 text-2xl whitespace-nowrap"
                 >
                   <a
-                    class="hover:text-accent"
+                    class="
+          block origin-left transform-gpu transition-all
+          hover:scale-105
+        "
                     href="/"
                   >
                     Home
@@ -2351,7 +2386,10 @@ exports[`Home > matches snapshot 1`] = `
                   class="block w-1/2 text-2xl whitespace-nowrap"
                 >
                   <a
-                    class="hover:text-accent"
+                    class="
+          block origin-left transform-gpu transition-all
+          hover:scale-105
+        "
                     href="/how-i-grade/"
                   >
                     How I Grade
@@ -2361,7 +2399,10 @@ exports[`Home > matches snapshot 1`] = `
                   class="block w-1/2 text-2xl whitespace-nowrap"
                 >
                   <a
-                    class="hover:text-accent"
+                    class="
+          block origin-left transform-gpu transition-all
+          hover:scale-105
+        "
                     href="/reviews/"
                   >
                     Reviews
@@ -2371,7 +2412,10 @@ exports[`Home > matches snapshot 1`] = `
                   class="block w-1/2 text-2xl whitespace-nowrap"
                 >
                   <a
-                    class="hover:text-accent"
+                    class="
+          block origin-left transform-gpu transition-all
+          hover:scale-105
+        "
                     href="/authors/"
                   >
                     Authors
@@ -2381,7 +2425,10 @@ exports[`Home > matches snapshot 1`] = `
                   class="block w-1/2 text-2xl whitespace-nowrap"
                 >
                   <a
-                    class="hover:text-accent"
+                    class="
+          block origin-left transform-gpu transition-all
+          hover:scale-105
+        "
                     href="/readings/"
                   >
                     Reading Log
@@ -2396,7 +2443,10 @@ exports[`Home > matches snapshot 1`] = `
             "
                     >
                       <a
-                        class="hover:text-default"
+                        class="
+                block origin-left transform-gpu transition-all
+                hover:scale-105 hover:text-default
+              "
                         href="/readings/stats/"
                       >
                         Stats

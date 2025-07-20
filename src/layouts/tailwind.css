@@ -360,7 +360,7 @@
 @layer components {
   .rendered-markdown {
     a {
-      border-bottom: solid 1px var(--bg-accent);
+      border-bottom: solid 1px var(--bg-subtle);
       padding-right: 1px;
       transition: all 150ms ease-out;
     }
@@ -381,8 +381,18 @@
 
     a:hover {
       background-color: var(--bg-accent);
+      border-bottom-color: var(--bg-accent);
       color: var(--fg-inverse);
       transition: all 80ms ease-in;
+    }
+
+    sup {
+      display: inline-block;
+    }
+
+    sup:hover {
+      transform: scale(1.1);
+      transition: all;
     }
 
     sup a:hover {
@@ -434,7 +444,8 @@
     }
 
     img {
-      height: 1rem;
+      height: 1.125rem;
+      margin-bottom: 6px;
       width: auto;
     }
 
@@ -665,6 +676,7 @@
     .pagefind-ui__search-input {
       align-items: center;
       border: none;
+      color: var(--fg-default);
       display: flex;
       flex-shrink: 0;
       font-family: var(--font-serif);

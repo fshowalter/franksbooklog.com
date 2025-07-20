@@ -67,9 +67,10 @@ function MoreReviewsCard({ value }: { value: MoreReviewsValue }): JSX.Element {
   return (
     <li
       className={`
-        group/card relative row-span-2 grid grid-rows-subgrid gap-y-0
-        transition-transform
-        has-[a:hover]:-translate-y-2 has-[a:hover]:drop-shadow-2xl
+        group/card relative row-span-2 grid transform-gpu grid-rows-subgrid
+        gap-y-0 transition-transform
+        has-[a:hover]:-translate-y-1 has-[a:hover]:scale-105
+        has-[a:hover]:drop-shadow-2xl
       `}
     >
       <div

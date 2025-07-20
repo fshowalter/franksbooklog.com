@@ -17,9 +17,10 @@ export function Footer(): JSX.Element {
         >
           <a
             className={`
-              mx-auto mb-8 w-full max-w-button bg-footer py-5 text-center
-              font-sans text-xs tracking-wide text-inverse uppercase
-              hover:bg-subtle hover:text-default
+              mx-auto mb-8 w-full max-w-button transform-gpu bg-footer py-5
+              text-center font-sans text-xs tracking-wide text-inverse uppercase
+              transition-all
+              hover:scale-105 hover:bg-subtle hover:text-default
               tablet:mx-0
             `}
             href="#top"
@@ -142,7 +143,7 @@ function FooterLink({ href, text }: { href: string; text: string }) {
       className={`
         text-default underline decoration-subtle decoration-dashed
         underline-offset-4 transition-all duration-150 ease-out
-        hover:bg-(--fg-inverse) hover:text-default hover:decoration-default
+        hover:bg-(--bg-inverse) hover:text-default hover:decoration-default
         hover:duration-75 hover:ease-in
       `}
       href={href}
@@ -155,7 +156,13 @@ function FooterLink({ href, text }: { href: string; text: string }) {
 function NavListItem({ value }: { value: NavItem }): JSX.Element {
   return (
     <li className="block w-1/2 text-2xl whitespace-nowrap">
-      <a className="hover:text-accent" href={value.target}>
+      <a
+        className={`
+          block origin-left transform-gpu transition-all
+          hover:scale-105
+        `}
+        href={value.target}
+      >
         {value.text}
       </a>
       <SubNavList values={value.subItems} />
@@ -179,7 +186,13 @@ function SubNavList({ values }: { values: NavItem[] }): false | JSX.Element {
             `}
             key={value.target}
           >
-            <a className="hover:text-default" href={value.target}>
+            <a
+              className={`
+                block origin-left transform-gpu transition-all
+                hover:scale-105 hover:text-default
+              `}
+              href={value.target}
+            >
               {value.text}
             </a>
           </li>

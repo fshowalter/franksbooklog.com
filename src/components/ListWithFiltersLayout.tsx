@@ -27,8 +27,8 @@ export function ListHeaderButton({
     >
       <a
         className={`
-          block px-4 py-2
-          hover:bg-accent hover:text-inverse
+          block transform-gpu px-4 py-2 transition-all
+          hover:scale-105 hover:bg-accent hover:text-inverse
         `}
         href={href}
       >

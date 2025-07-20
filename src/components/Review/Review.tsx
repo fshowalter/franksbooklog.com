@@ -50,9 +50,17 @@ export function Review({
       <header
         className={`relative z-1 mb-12 flex flex-col items-center px-[8%] pt-10`}
       >
-        <nav className="pb-3">
+        <nav
+          className={`
+            transform-gpu pb-3 transition-transform
+            has-[a:hover]:scale-110
+          `}
+        >
           <a
-            className="font-sans text-xs tracking-wider text-accent uppercase"
+            className={`
+              font-sans text-xs tracking-wider uppercase transition-colors
+              hover:text-accent
+            `}
             href="/reviews/"
           >
             Reviews
@@ -78,7 +86,11 @@ export function Review({
           </p>
         )}
         <Authors
-          className="mt-4 text-center text-md text-muted"
+          className={`
+            mt-4 transform-gpu text-center text-md text-muted
+            transition-transform
+            has-[a:hover]:scale-105
+          `}
           values={value.authors}
         />
         <div className="mt-4">
@@ -158,7 +170,14 @@ export function Review({
         <MoreReviews values={moreReviews}>
           <SubHeading as="h2">
             More{" "}
-            <a className="text-accent" href={`/reviews/`}>
+            <a
+              className={`
+                inline-block origin-left transform-gpu text-accent
+                transition-transform
+                hover:scale-105
+              `}
+              href={`/reviews/`}
+            >
               Reviews
             </a>
           </SubHeading>
@@ -186,7 +205,9 @@ function Authors({
       {toSentenceArray(
         values.map((author) => (
           <AuthorLink
-            className="inline-block text-accent"
+            className={`
+              inline-block transform-gpu text-accent transition-transform
+            `}
             key={author.slug}
             name={author.name}
             notes={author.notes}

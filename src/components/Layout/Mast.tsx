@@ -66,8 +66,9 @@ function HamburgerMenu({ hasBackdrop }: { hasBackdrop: boolean }) {
       <input className="hidden" id="nav" type="checkbox" />
       <label
         className={`
-          relative z-40 ml-2 flex h-10 w-10 cursor-pointer items-center
-          justify-center
+          relative z-40 ml-2 flex h-10 w-10 transform-gpu cursor-pointer
+          items-center justify-center transition-transform
+          hover:scale-110
           laptop:hidden
         `}
         htmlFor="nav"
@@ -127,7 +128,15 @@ function HamburgerMenu({ hasBackdrop }: { hasBackdrop: boolean }) {
 function MenuItem({ value }: { value: NavItem }): JSX.Element {
   return (
     <li className="block w-1/2 text-2xl whitespace-nowrap">
-      <a href={value.target}>{value.text}</a>
+      <a
+        className={`
+          inline-block origin-left transform-gpu transition-all
+          hover:scale-105
+        `}
+        href={value.target}
+      >
+        {value.text}
+      </a>
       <SubMenu values={value.subItems} />
     </li>
   );
@@ -141,19 +150,17 @@ function NavListItem({
   value: NavItem;
 }): JSX.Element {
   return (
-    <li className={`block tracking-serif-wide whitespace-nowrap`}>
+    <li
+      className={`
+        block transform-gpu tracking-serif-wide whitespace-nowrap
+        transition-transform
+        has-[a:hover]:scale-105
+      `}
+    >
       <a
         className={`
-          text-inherit transition-all duration-500 ease-in-out
-          ${
-            hasBackdrop
-              ? `
-                to-50%
-                hover:bg-linear-to-b hover:from-transparent hover:from-25%
-                hover:via-[rgba(0,0,0,.8)] hover:to-transparent hover:to-75%
-              `
-              : `hover:text-accent`
-          }
+          text-inherit transition-colors
+          ${hasBackdrop ? `` : `hover:text-accent`}
         `}
         href={value.target}
         style={{
@@ -170,8 +177,9 @@ function SearchButton() {
   return (
     <div
       className={`
-        z-1000
+        z-1000 transform-gpu transition-transform
         group-has-[#nav:checked]/mast:!text-[#fff]
+        hover:scale-105
       `}
     >
       <button
@@ -224,7 +232,15 @@ function SubMenu({ values }: { values: NavItem[] }): false | JSX.Element {
             `}
             key={value.target}
           >
-            <a href={value.target}>{value.text}</a>
+            <a
+              className={`
+                inline-block origin-left transform-gpu transition-all
+                hover:scale-105 hover:text-inverse
+              `}
+              href={value.target}
+            >
+              {value.text}
+            </a>
           </li>
         );
       })}

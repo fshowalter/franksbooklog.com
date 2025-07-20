@@ -30,7 +30,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
         style="background-image: linear-gradient(to bottom, rgba(0,0,0,.85), transparent 95%); color: rgb(255, 255, 255); position: absolute;"
       >
         <div
-          class="flex flex-col"
+          class="
+        flex transform-gpu flex-col transition-transform
+        has-[a:hover]:scale-105
+        
+      "
         >
           <div
             class="
@@ -63,16 +67,16 @@ exports[`/readings/stats > matches snapshot 1`] = `
               class="flex flex-wrap justify-start gap-x-6 text-xl"
             >
               <li
-                class="block tracking-serif-wide whitespace-nowrap"
+                class="
+        block transform-gpu tracking-serif-wide whitespace-nowrap
+        transition-transform
+        has-[a:hover]:scale-105
+      "
               >
                 <a
                   class="
-          text-inherit transition-all duration-500 ease-in-out
+          text-inherit transition-colors
           
-                to-50%
-                hover:bg-linear-to-b hover:from-transparent hover:from-25%
-                hover:via-[rgba(0,0,0,.8)] hover:to-transparent hover:to-75%
-              
         "
                   href="/"
                   style="text-shadow: 1px 1px 2px black;"
@@ -81,16 +85,16 @@ exports[`/readings/stats > matches snapshot 1`] = `
                 </a>
               </li>
               <li
-                class="block tracking-serif-wide whitespace-nowrap"
+                class="
+        block transform-gpu tracking-serif-wide whitespace-nowrap
+        transition-transform
+        has-[a:hover]:scale-105
+      "
               >
                 <a
                   class="
-          text-inherit transition-all duration-500 ease-in-out
+          text-inherit transition-colors
           
-                to-50%
-                hover:bg-linear-to-b hover:from-transparent hover:from-25%
-                hover:via-[rgba(0,0,0,.8)] hover:to-transparent hover:to-75%
-              
         "
                   href="/how-i-grade/"
                   style="text-shadow: 1px 1px 2px black;"
@@ -99,16 +103,16 @@ exports[`/readings/stats > matches snapshot 1`] = `
                 </a>
               </li>
               <li
-                class="block tracking-serif-wide whitespace-nowrap"
+                class="
+        block transform-gpu tracking-serif-wide whitespace-nowrap
+        transition-transform
+        has-[a:hover]:scale-105
+      "
               >
                 <a
                   class="
-          text-inherit transition-all duration-500 ease-in-out
+          text-inherit transition-colors
           
-                to-50%
-                hover:bg-linear-to-b hover:from-transparent hover:from-25%
-                hover:via-[rgba(0,0,0,.8)] hover:to-transparent hover:to-75%
-              
         "
                   href="/reviews/"
                   style="text-shadow: 1px 1px 2px black;"
@@ -117,16 +121,16 @@ exports[`/readings/stats > matches snapshot 1`] = `
                 </a>
               </li>
               <li
-                class="block tracking-serif-wide whitespace-nowrap"
+                class="
+        block transform-gpu tracking-serif-wide whitespace-nowrap
+        transition-transform
+        has-[a:hover]:scale-105
+      "
               >
                 <a
                   class="
-          text-inherit transition-all duration-500 ease-in-out
+          text-inherit transition-colors
           
-                to-50%
-                hover:bg-linear-to-b hover:from-transparent hover:from-25%
-                hover:via-[rgba(0,0,0,.8)] hover:to-transparent hover:to-75%
-              
         "
                   href="/authors/"
                   style="text-shadow: 1px 1px 2px black;"
@@ -135,16 +139,16 @@ exports[`/readings/stats > matches snapshot 1`] = `
                 </a>
               </li>
               <li
-                class="block tracking-serif-wide whitespace-nowrap"
+                class="
+        block transform-gpu tracking-serif-wide whitespace-nowrap
+        transition-transform
+        has-[a:hover]:scale-105
+      "
               >
                 <a
                   class="
-          text-inherit transition-all duration-500 ease-in-out
+          text-inherit transition-colors
           
-                to-50%
-                hover:bg-linear-to-b hover:from-transparent hover:from-25%
-                hover:via-[rgba(0,0,0,.8)] hover:to-transparent hover:to-75%
-              
         "
                   href="/readings/"
                   style="text-shadow: 1px 1px 2px black;"
@@ -156,8 +160,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
           </nav>
           <div
             class="
-        z-1000
+        z-1000 transform-gpu transition-transform
         group-has-[#nav:checked]/mast:!text-[#fff]
+        hover:scale-105
       "
           >
             <button
@@ -199,8 +204,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
             />
             <label
               class="
-          relative z-40 ml-2 flex h-10 w-10 cursor-pointer items-center
-          justify-center
+          relative z-40 ml-2 flex h-10 w-10 transform-gpu cursor-pointer
+          items-center justify-center transition-transform
+          hover:scale-110
           laptop:hidden
         "
               for="nav"
@@ -251,6 +257,10 @@ exports[`/readings/stats > matches snapshot 1`] = `
                 class="block w-1/2 text-2xl whitespace-nowrap"
               >
                 <a
+                  class="
+          inline-block origin-left transform-gpu transition-all
+          hover:scale-105
+        "
                   href="/"
                 >
                   Home
@@ -260,6 +270,10 @@ exports[`/readings/stats > matches snapshot 1`] = `
                 class="block w-1/2 text-2xl whitespace-nowrap"
               >
                 <a
+                  class="
+          inline-block origin-left transform-gpu transition-all
+          hover:scale-105
+        "
                   href="/how-i-grade/"
                 >
                   How I Grade
@@ -269,6 +283,10 @@ exports[`/readings/stats > matches snapshot 1`] = `
                 class="block w-1/2 text-2xl whitespace-nowrap"
               >
                 <a
+                  class="
+          inline-block origin-left transform-gpu transition-all
+          hover:scale-105
+        "
                   href="/reviews/"
                 >
                   Reviews
@@ -278,6 +296,10 @@ exports[`/readings/stats > matches snapshot 1`] = `
                 class="block w-1/2 text-2xl whitespace-nowrap"
               >
                 <a
+                  class="
+          inline-block origin-left transform-gpu transition-all
+          hover:scale-105
+        "
                   href="/authors/"
                 >
                   Authors
@@ -287,6 +309,10 @@ exports[`/readings/stats > matches snapshot 1`] = `
                 class="block w-1/2 text-2xl whitespace-nowrap"
               >
                 <a
+                  class="
+          inline-block origin-left transform-gpu transition-all
+          hover:scale-105
+        "
                   href="/readings/"
                 >
                   Reading Log
@@ -302,6 +328,10 @@ exports[`/readings/stats > matches snapshot 1`] = `
             "
                   >
                     <a
+                      class="
+                inline-block origin-left transform-gpu transition-all
+                hover:scale-105 hover:text-inverse
+              "
                       href="/readings/stats/"
                     >
                       Stats
@@ -327,7 +357,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
         text-inverse
         bg-[#000]
         relative flex w-full flex-col content-start items-center justify-end
-        gap-6 pt-20
+        gap-6 overflow-hidden pt-20
         laptop:pt-24
       "
         >
@@ -444,8 +474,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
             >
               <a
                 class="
-            block p-4
-            hover:bg-accent hover:text-inverse
+            block transform-gpu p-4 transition-all
+            hover:scale-105 hover:bg-accent hover:text-inverse
           "
                 href="/readings/stats/2025/"
               >
@@ -460,8 +490,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
             >
               <a
                 class="
-            block p-4
-            hover:bg-accent hover:text-inverse
+            block transform-gpu p-4 transition-all
+            hover:scale-105 hover:bg-accent hover:text-inverse
           "
                 href="/readings/stats/2024/"
               >
@@ -476,8 +506,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
             >
               <a
                 class="
-            block p-4
-            hover:bg-accent hover:text-inverse
+            block transform-gpu p-4 transition-all
+            hover:scale-105 hover:bg-accent hover:text-inverse
           "
                 href="/readings/stats/2023/"
               >
@@ -492,8 +522,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
             >
               <a
                 class="
-            block p-4
-            hover:bg-accent hover:text-inverse
+            block transform-gpu p-4 transition-all
+            hover:scale-105 hover:bg-accent hover:text-inverse
           "
                 href="/readings/stats/2022/"
               >
@@ -508,8 +538,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
             >
               <a
                 class="
-            block p-4
-            hover:bg-accent hover:text-inverse
+            block transform-gpu p-4 transition-all
+            hover:scale-105 hover:bg-accent hover:text-inverse
           "
                 href="/readings/stats/2019/"
               >
@@ -524,8 +554,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
             >
               <a
                 class="
-            block p-4
-            hover:bg-accent hover:text-inverse
+            block transform-gpu p-4 transition-all
+            hover:scale-105 hover:bg-accent hover:text-inverse
           "
                 href="/readings/stats/2018/"
               >
@@ -540,8 +570,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
             >
               <a
                 class="
-            block p-4
-            hover:bg-accent hover:text-inverse
+            block transform-gpu p-4 transition-all
+            hover:scale-105 hover:bg-accent hover:text-inverse
           "
                 href="/readings/stats/2017/"
               >
@@ -556,8 +586,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
             >
               <a
                 class="
-            block p-4
-            hover:bg-accent hover:text-inverse
+            block transform-gpu p-4 transition-all
+            hover:scale-105 hover:bg-accent hover:text-inverse
           "
                 href="/readings/stats/2016/"
               >
@@ -572,8 +602,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
             >
               <a
                 class="
-            block p-4
-            hover:bg-accent hover:text-inverse
+            block transform-gpu p-4 transition-all
+            hover:scale-105 hover:bg-accent hover:text-inverse
           "
                 href="/readings/stats/2015/"
               >
@@ -588,8 +618,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
             >
               <a
                 class="
-            block p-4
-            hover:bg-accent hover:text-inverse
+            block transform-gpu p-4 transition-all
+            hover:scale-105 hover:bg-accent hover:text-inverse
           "
                 href="/readings/stats/2014/"
               >
@@ -604,8 +634,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
             >
               <a
                 class="
-            block p-4
-            hover:bg-accent hover:text-inverse
+            block transform-gpu p-4 transition-all
+            hover:scale-105 hover:bg-accent hover:text-inverse
           "
                 href="/readings/stats/2013/"
               >
@@ -620,8 +650,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
             >
               <a
                 class="
-            block p-4
-            hover:bg-accent hover:text-inverse
+            block transform-gpu p-4 transition-all
+            hover:scale-105 hover:bg-accent hover:text-inverse
           "
                 href="/readings/stats/2012/"
               >
@@ -636,8 +666,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
             >
               <a
                 class="
-            block p-4
-            hover:bg-accent hover:text-inverse
+            block transform-gpu p-4 transition-all
+            hover:scale-105 hover:bg-accent hover:text-inverse
           "
                 href="/readings/stats/2011/"
               >
@@ -1178,7 +1208,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                 "
                   >
                     <div
-                      class="font-sans text-sm text-muted"
+                      class="
+                    origin-left transform-gpu font-sans text-sm text-muted
+                    transition-transform
+                    has-[a:hover]:scale-110
+                  "
                     >
                       <a
                         class="inline-block leading-6 font-normal text-accent"
@@ -1232,8 +1266,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -1327,8 +1361,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -1414,8 +1448,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -1509,8 +1543,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -1596,8 +1630,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -1683,8 +1717,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -1778,8 +1812,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -1865,8 +1899,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -1952,8 +1986,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -2039,8 +2073,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -2126,8 +2160,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -2221,8 +2255,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -2316,8 +2350,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -2403,8 +2437,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -2498,8 +2532,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -2593,8 +2627,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -2688,8 +2722,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -2775,8 +2809,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -2870,8 +2904,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -2957,8 +2991,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -3044,8 +3078,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -3139,8 +3173,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -3234,8 +3268,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -3329,8 +3363,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -3424,8 +3458,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -3519,8 +3553,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -3618,7 +3652,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                 "
                   >
                     <div
-                      class="font-sans text-sm text-muted"
+                      class="
+                    origin-left transform-gpu font-sans text-sm text-muted
+                    transition-transform
+                    has-[a:hover]:scale-110
+                  "
                     >
                       <a
                         class="inline-block leading-6 font-normal text-accent"
@@ -3672,8 +3710,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -3767,8 +3805,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -3862,8 +3900,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -3957,8 +3995,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -4052,8 +4090,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -4147,8 +4185,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -4234,8 +4272,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -4321,8 +4359,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -4408,8 +4446,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -4495,8 +4533,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -4590,8 +4628,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -4677,8 +4715,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -4764,8 +4802,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -4851,8 +4889,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -4938,8 +4976,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -5025,8 +5063,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -5112,8 +5150,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -5207,8 +5245,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -5302,8 +5340,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -5397,8 +5435,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -5492,8 +5530,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -5591,7 +5629,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                 "
                   >
                     <div
-                      class="font-sans text-sm text-muted"
+                      class="
+                    origin-left transform-gpu font-sans text-sm text-muted
+                    transition-transform
+                    has-[a:hover]:scale-110
+                  "
                     >
                       <a
                         class="inline-block leading-6 font-normal text-accent"
@@ -5645,8 +5687,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -5740,8 +5782,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -5835,8 +5877,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -5930,8 +5972,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -6025,8 +6067,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -6120,8 +6162,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -6215,8 +6257,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -6310,8 +6352,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -6405,8 +6447,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -6500,8 +6542,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -6595,8 +6637,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -6690,8 +6732,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -6785,8 +6827,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -6884,7 +6926,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                 "
                   >
                     <div
-                      class="font-sans text-sm text-muted"
+                      class="
+                    origin-left transform-gpu font-sans text-sm text-muted
+                    transition-transform
+                    has-[a:hover]:scale-110
+                  "
                     >
                       James Kaplan
                     </div>
@@ -6933,8 +6979,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -7020,8 +7066,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -7107,8 +7153,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -7198,7 +7244,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                 "
                   >
                     <div
-                      class="font-sans text-sm text-muted"
+                      class="
+                    origin-left transform-gpu font-sans text-sm text-muted
+                    transition-transform
+                    has-[a:hover]:scale-110
+                  "
                     >
                       <a
                         class="inline-block leading-6 font-normal text-accent"
@@ -7252,8 +7302,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -7347,8 +7397,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -7442,8 +7492,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -7541,7 +7591,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                 "
                   >
                     <div
-                      class="font-sans text-sm text-muted"
+                      class="
+                    origin-left transform-gpu font-sans text-sm text-muted
+                    transition-transform
+                    has-[a:hover]:scale-110
+                  "
                     >
                       <a
                         class="inline-block leading-6 font-normal text-accent"
@@ -7595,8 +7649,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -7690,8 +7744,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -7785,8 +7839,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -7884,7 +7938,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                 "
                   >
                     <div
-                      class="font-sans text-sm text-muted"
+                      class="
+                    origin-left transform-gpu font-sans text-sm text-muted
+                    transition-transform
+                    has-[a:hover]:scale-110
+                  "
                     >
                       <a
                         class="inline-block leading-6 font-normal text-accent"
@@ -7938,8 +7996,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -8033,8 +8091,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -8132,7 +8190,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                 "
                   >
                     <div
-                      class="font-sans text-sm text-muted"
+                      class="
+                    origin-left transform-gpu font-sans text-sm text-muted
+                    transition-transform
+                    has-[a:hover]:scale-110
+                  "
                     >
                       <a
                         class="inline-block leading-6 font-normal text-accent"
@@ -8186,8 +8248,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -8281,8 +8343,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -8380,7 +8442,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                 "
                   >
                     <div
-                      class="font-sans text-sm text-muted"
+                      class="
+                    origin-left transform-gpu font-sans text-sm text-muted
+                    transition-transform
+                    has-[a:hover]:scale-110
+                  "
                     >
                       <a
                         class="inline-block leading-6 font-normal text-accent"
@@ -8434,8 +8500,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -8529,8 +8595,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -8628,7 +8694,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
                 "
                   >
                     <div
-                      class="font-sans text-sm text-muted"
+                      class="
+                    origin-left transform-gpu font-sans text-sm text-muted
+                    transition-transform
+                    has-[a:hover]:scale-110
+                  "
                     >
                       Roger Ebert
                     </div>
@@ -8677,8 +8747,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -8764,8 +8834,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
         last-of-type:mb-0
         tablet:gap-x-6 tablet:px-6
         
-        group/list-item
-        has-[a:hover]:z-30 has-[a:hover]:shadow-all
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
       
       "
@@ -9608,9 +9678,10 @@ exports[`/readings/stats > matches snapshot 1`] = `
           >
             <a
               class="
-              mx-auto mb-8 w-full max-w-button bg-footer py-5 text-center
-              font-sans text-xs tracking-wide text-inverse uppercase
-              hover:bg-subtle hover:text-default
+              mx-auto mb-8 w-full max-w-button transform-gpu bg-footer py-5
+              text-center font-sans text-xs tracking-wide text-inverse uppercase
+              transition-all
+              hover:scale-105 hover:bg-subtle hover:text-default
               tablet:mx-0
             "
               href="#top"
@@ -9618,7 +9689,11 @@ exports[`/readings/stats > matches snapshot 1`] = `
               To the top
             </a>
             <div
-              class="flex flex-col"
+              class="
+        flex transform-gpu flex-col transition-transform
+        has-[a:hover]:scale-105
+        undefined
+      "
             >
               <div
                 class="
@@ -9688,7 +9763,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     class="
         text-default underline decoration-subtle decoration-dashed
         underline-offset-4 transition-all duration-150 ease-out
-        hover:bg-(--fg-inverse) hover:text-default hover:decoration-default
+        hover:bg-(--bg-inverse) hover:text-default hover:decoration-default
         hover:duration-75 hover:ease-in
       "
                     href="/how-i-grade/"
@@ -9700,7 +9775,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     class="
         text-default underline decoration-subtle decoration-dashed
         underline-offset-4 transition-all duration-150 ease-out
-        hover:bg-(--fg-inverse) hover:text-default hover:decoration-default
+        hover:bg-(--bg-inverse) hover:text-default hover:decoration-default
         hover:duration-75 hover:ease-in
       "
                     href="/reviews/"
@@ -9712,7 +9787,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     class="
         text-default underline decoration-subtle decoration-dashed
         underline-offset-4 transition-all duration-150 ease-out
-        hover:bg-(--fg-inverse) hover:text-default hover:decoration-default
+        hover:bg-(--bg-inverse) hover:text-default hover:decoration-default
         hover:duration-75 hover:ease-in
       "
                     href="/authors/"
@@ -9729,7 +9804,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     class="
         text-default underline decoration-subtle decoration-dashed
         underline-offset-4 transition-all duration-150 ease-out
-        hover:bg-(--fg-inverse) hover:text-default hover:decoration-default
+        hover:bg-(--bg-inverse) hover:text-default hover:decoration-default
         hover:duration-75 hover:ease-in
       "
                     href="/readings/"
@@ -9741,7 +9816,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     class="
         text-default underline decoration-subtle decoration-dashed
         underline-offset-4 transition-all duration-150 ease-out
-        hover:bg-(--fg-inverse) hover:text-default hover:decoration-default
+        hover:bg-(--bg-inverse) hover:text-default hover:decoration-default
         hover:duration-75 hover:ease-in
       "
                     href="/readings/stats/"
@@ -9773,7 +9848,10 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   class="block w-1/2 text-2xl whitespace-nowrap"
                 >
                   <a
-                    class="hover:text-accent"
+                    class="
+          block origin-left transform-gpu transition-all
+          hover:scale-105
+        "
                     href="/"
                   >
                     Home
@@ -9783,7 +9861,10 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   class="block w-1/2 text-2xl whitespace-nowrap"
                 >
                   <a
-                    class="hover:text-accent"
+                    class="
+          block origin-left transform-gpu transition-all
+          hover:scale-105
+        "
                     href="/how-i-grade/"
                   >
                     How I Grade
@@ -9793,7 +9874,10 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   class="block w-1/2 text-2xl whitespace-nowrap"
                 >
                   <a
-                    class="hover:text-accent"
+                    class="
+          block origin-left transform-gpu transition-all
+          hover:scale-105
+        "
                     href="/reviews/"
                   >
                     Reviews
@@ -9803,7 +9887,10 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   class="block w-1/2 text-2xl whitespace-nowrap"
                 >
                   <a
-                    class="hover:text-accent"
+                    class="
+          block origin-left transform-gpu transition-all
+          hover:scale-105
+        "
                     href="/authors/"
                   >
                     Authors
@@ -9813,7 +9900,10 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   class="block w-1/2 text-2xl whitespace-nowrap"
                 >
                   <a
-                    class="hover:text-accent"
+                    class="
+          block origin-left transform-gpu transition-all
+          hover:scale-105
+        "
                     href="/readings/"
                   >
                     Reading Log
@@ -9828,7 +9918,10 @@ exports[`/readings/stats > matches snapshot 1`] = `
             "
                     >
                       <a
-                        class="hover:text-default"
+                        class="
+                block origin-left transform-gpu transition-all
+                hover:scale-105 hover:text-default
+              "
                         href="/readings/stats/"
                       >
                         Stats
