@@ -168,16 +168,15 @@ export function Review({
         data-pagefind-ignore
       >
         <MoreReviews values={moreReviews}>
-          <SubHeading as="h2">
+          <SubHeading
+            as="h2"
+            className={`
+              origin-left transform-gpu text-accent transition-transform
+              has-[a:hover]:scale-110
+            `}
+          >
             More{" "}
-            <a
-              className={`
-                inline-block origin-left transform-gpu text-accent
-                transition-transform
-                hover:scale-105
-              `}
-              href={`/reviews/`}
-            >
+            <a className={`text-accent`} href={`/reviews/`}>
               Reviews
             </a>
           </SubHeading>
