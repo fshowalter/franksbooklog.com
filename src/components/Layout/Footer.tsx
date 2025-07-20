@@ -141,10 +141,9 @@ function FooterLink({ href, text }: { href: string; text: string }) {
   return (
     <a
       className={`
-        text-default underline decoration-subtle decoration-dashed
-        underline-offset-4 transition-all duration-150 ease-out
-        hover:bg-(--bg-inverse) hover:text-default hover:decoration-default
-        hover:duration-75 hover:ease-in
+        text-muted underline decoration-muted decoration-dashed
+        underline-offset-4 transition-colors
+        hover:text-default hover:decoration-default
       `}
       href={href}
     >
