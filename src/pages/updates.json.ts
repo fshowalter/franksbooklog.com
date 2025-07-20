@@ -1,6 +1,5 @@
 import { getUpdateCoverProps } from "~/api/covers";
 import { mostRecentReviews } from "~/api/reviews";
-import { toSentenceArray } from "~/utils";
 
 const gradeToStars: Record<string, number> = {
   A: 5,
@@ -28,11 +27,12 @@ export async function GET() {
       const coverProps = await getUpdateCoverProps(review);
 
       return {
+        authors: review.authors.map((author) => author.name),
         date: review.date,
         image: coverProps.src,
         slug: review.slug,
         stars: gradeToStars[review.grade],
-        title: `${review.title} by ${toSentenceArray(review.authors.map((author) => author.name)).join(" ")}`,
+        title: review.title,
       };
     }),
   );
