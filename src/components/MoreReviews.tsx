@@ -39,18 +39,20 @@ export function MoreReviews({
   return (
     <nav
       className={`
-        mx-auto w-full max-w-(--breakpoint-max) bg-subtle px-container
+        mx-auto w-full max-w-(--breakpoint-desktop) bg-subtle px-container
         tablet:max-w-popout tablet:px-0
-        min-[1360px]:max-w-(--breakpoint-max) min-[1360px]:px-container
+        laptop:max-w-(--breakpoint-desktop) laptop:px-container
       `}
       data-page-find-ignore
     >
-      <div className={``}>{children}</div>
+      <div>{children}</div>
       <ul
         className={`
-          -mx-4 flex flex-wrap content-stretch justify-center
-          min-[736px]:-mx-12
-          min-[1360px]:gap-y-4
+          grid auto-rows-[auto_1fr] grid-cols-2 gap-x-[clamp(8px,2vw,32px)]
+          gap-y-[clamp(8px,2vw,32px)]
+          tablet:grid-cols-3 tablet:gap-x-4 tablet:gap-y-4
+          laptop:-mx-6 laptop:grid-cols-6 laptop:gap-x-6 laptop:gap-y-6
+          desktop:-mx-8 desktop:grid-cols-6 desktop:gap-y-12
         `}
       >
         {values.map((value) => {
@@ -65,51 +67,56 @@ function MoreReviewsCard({ value }: { value: MoreReviewsValue }): JSX.Element {
   return (
     <li
       className={`
-        relative flex w-[50%] max-w-[344px] flex-col items-center border-default
-        p-1
-        has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
-        max:w-[100%]
-        min-[496px]:p-4
-        min-[768px]:w-[33.33333333%]
-        min-[1360px]:w-[16.66666667%]
+        group/card relative row-span-2 grid transform-gpu grid-rows-subgrid
+        gap-y-0 transition-transform
+        has-[a:hover]:-translate-y-1 has-[a:hover]:scale-105
+        has-[a:hover]:drop-shadow-2xl
       `}
     >
       <div
         className={`
-          flex h-full w-full flex-col bg-default p-3
-          min-[496px]:px-8 min-[496px]:pb-4
-          min-[640px]:pt-6
+          @container flex justify-center self-end bg-default px-3 pt-3
+          @min-[200px]:px-[clamp(4px,10cqw,32px)] @min-[200px]:pt-6
         `}
       >
-        <Cover
-          decoding="async"
-          imageProps={value.coverImageProps}
-          {...MoreReviewsImageConfig}
-          alt=""
-          loading="lazy"
-        />
         <div
           className={`
-            flex w-full grow flex-col bg-default px-1 pb-8
-            min-[496px]:pb-4
+            relative
+            after:absolute after:inset-x-0 after:top-0 after:bottom-0 after:z-20
+            after:bg-default after:opacity-15 after:transition-opacity
+            group-hover/card:after:opacity-0
           `}
         >
+          <Cover
+            decoding="async"
+            imageProps={value.coverImageProps}
+            {...MoreReviewsImageConfig}
+            alt=""
+            className="max-w-[200px]"
+            loading="lazy"
+          />
+        </div>
+      </div>
+      <div
+        className={`
+          @container flex justify-center bg-default px-4 pb-8
+          @min-[193px]:px-[clamp(4px,14cqw,32px)] @min-[193px]:pb-6
+        `}
+      >
+        <div className={`flex w-full max-w-[200px] flex-col`}>
           <div
             className={`
               pt-4 text-base leading-5 font-medium
-              max:text-xl max:leading-6
               tablet:pt-5 tablet:text-md tablet:leading-5
+              desktop:text-xl desktop:leading-6
             `}
           >
             <a
               className={`
-                inline-block
-                before:absolute before:inset-x-2 before:top-2
-                before:aspect-cover before:bg-default before:opacity-15
-                after:absolute after:top-0 after:left-0 after:z-10
+                block
+                after:absolute after:top-0 after:left-0 after:z-60
                 after:size-full after:opacity-0
-                hover:text-accent hover:before:opacity-0
-                min-[496px]:before:inset-x-12 min-[496px]:before:top-10
+                hover:text-accent
               `}
               href={`/reviews/${value.slug}/`}
               rel="canonical"

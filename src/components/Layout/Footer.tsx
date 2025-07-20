@@ -8,7 +8,7 @@ import { navItems } from "./navItems";
 export function Footer(): JSX.Element {
   return (
     <footer className="bg-canvas">
-      <div className="mx-auto max-w-(--breakpoint-desktop) px-container py-20">
+      <div className="mx-auto max-w-(--breakpoint-laptop) px-container py-20">
         <div
           className={`
             flex w-full flex-col
@@ -17,9 +17,10 @@ export function Footer(): JSX.Element {
         >
           <a
             className={`
-              mx-auto mb-8 w-full max-w-button bg-footer py-5 text-center
-              font-sans text-xs tracking-wide text-inverse uppercase
-              hover:bg-subtle hover:text-default
+              mx-auto mb-8 w-full max-w-button transform-gpu bg-footer py-5
+              text-center font-sans text-xs tracking-wide text-inverse uppercase
+              transition-all
+              hover:scale-105 hover:bg-subtle hover:text-default
               tablet:mx-0
             `}
             href="#top"
@@ -36,12 +37,21 @@ export function Footer(): JSX.Element {
         >
           <div
             className={`
-              flex max-w-prose flex-col pb-12
+              flex max-w-[640px] flex-col pb-12
               tablet:pr-32
             `}
           >
-            <div className={`pt-10 font-sans text-base font-light text-subtle`}>
-              <p className="mb-6 text-pretty">
+            <div className={`pt-10 font-sans text-sm font-light text-subtle`}>
+              <p
+                className={`
+                  mb-6 text-pretty
+                  first-letter:float-left first-letter:mt-[6px]
+                  first-letter:pr-1 first-letter:font-sans
+                  first-letter:text-[40px] first-letter:leading-[.8]
+                  first-letter:font-bold first-letter:text-default
+                  desktop:first-letter:text-[64px]
+                `}
+              >
                 Hi there, I&apos;m Frank, a husband and father old enough to
                 have read Stephen King&apos;s <em>The Dark Half</em> during its
                 first printing.
@@ -87,14 +97,14 @@ export function Footer(): JSX.Element {
           </div>
           <div
             className={`
-              flex grow-0 flex-col gap-20 pt-10 pb-20
+              flex w-full max-w-button grow flex-col gap-20 pt-10 pb-20
               tablet:basis-button tablet:pr-10
             `}
           >
             <ul
               className={`
                 flex w-full flex-col gap-y-10
-                max:w-auto
+                desktop:w-auto
               `}
             >
               {navItems.map((item) => {
@@ -131,10 +141,9 @@ function FooterLink({ href, text }: { href: string; text: string }) {
   return (
     <a
       className={`
-        text-default underline decoration-subtle decoration-dashed
-        underline-offset-4 transition-all duration-150 ease-out
-        hover:bg-(--fg-inverse) hover:text-default hover:decoration-default
-        hover:duration-75 hover:ease-in
+        text-muted underline decoration-muted decoration-dashed
+        underline-offset-4 transition-colors
+        hover:text-default hover:decoration-default
       `}
       href={href}
     >
@@ -146,7 +155,13 @@ function FooterLink({ href, text }: { href: string; text: string }) {
 function NavListItem({ value }: { value: NavItem }): JSX.Element {
   return (
     <li className="block w-1/2 text-2xl whitespace-nowrap">
-      <a className="hover:text-accent" href={value.target}>
+      <a
+        className={`
+          block origin-left transform-gpu transition-all
+          hover:scale-105
+        `}
+        href={value.target}
+      >
         {value.text}
       </a>
       <SubNavList values={value.subItems} />
@@ -170,7 +185,13 @@ function SubNavList({ values }: { values: NavItem[] }): false | JSX.Element {
             `}
             key={value.target}
           >
-            <a className="hover:text-default" href={value.target}>
+            <a
+              className={`
+                block origin-left transform-gpu transition-all
+                hover:scale-105 hover:text-default
+              `}
+              href={value.target}
+            >
               {value.text}
             </a>
           </li>

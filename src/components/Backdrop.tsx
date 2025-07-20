@@ -5,58 +5,90 @@ import { Avatar } from "./Avatar";
 
 export function AvatarBackdrop({
   avatarImageProps,
+  backdropImageProps,
   breadcrumb,
   deck,
   name,
 }: {
   avatarImageProps: AvatarImageProps | undefined;
+  backdropImageProps: BackdropImageProps;
   breadcrumb?: React.ReactNode;
   deck: React.ReactNode;
   name: string;
 }) {
+  const heroImage = (
+    <img
+      className={`
+        absolute inset-0 size-full object-cover object-top text-inverse blur-xs
+      `}
+      {...backdropImageProps}
+      {...BackdropImageConfig}
+      alt=""
+      fetchPriority="high"
+      loading="eager"
+    />
+  );
+
   return (
-    <Wrapper centerText={true} size="small">
+    <Wrapper
+      centerText={true}
+      heroImage={heroImage}
+      size="auto"
+      textInverse={true}
+    >
+      {avatarImageProps && (
+        <div
+          className={`
+            mx-auto mt-4 mb-6 w-4/5 max-w-[250px] transform-gpu overflow-hidden
+            ${avatarImageProps && "rounded-full shadow-all"}
+          `}
+        >
+          <Avatar
+            data-pagefind-meta="image[src]"
+            decoding="async"
+            height={250}
+            imageProps={avatarImageProps}
+            loading="lazy"
+            width={250}
+          />
+        </div>
+      )}
       <Breadcrumb value={breadcrumb} />
-      <div
-        className={`
-          mx-auto mb-6 w-4/5 max-w-[250px] safari-border-radius-fix
-          overflow-hidden rounded-full
-        `}
-      >
-        <Avatar
-          data-pagefind-meta="image[src]"
-          decoding="async"
-          height={250}
-          imageProps={avatarImageProps}
-          loading="lazy"
-          width={250}
-        />
-      </div>
       <Title center={true} value={name} />
-      <Deck center={true} subtle={true} value={deck} />
+      <Deck center={true} value={deck} />
     </Wrapper>
   );
 }
 
-export function SolidBackdrop({
-  breadcrumb,
-  deck,
-  narrowTitle = false,
-  title,
-  titleClasses,
+export function BreadcrumbLink({
+  children,
+  color = "inverse",
+  href,
 }: {
-  breadcrumb?: React.ReactNode;
-  deck: React.ReactNode;
-  narrowTitle?: boolean;
-  title: string;
-  titleClasses?: string;
+  children: React.ReactNode;
+  color?: "default" | "inverse";
+  href: string;
 }) {
   return (
-    <Wrapper narrowChildren={narrowTitle} size="small">
-      <Breadcrumb value={breadcrumb} />
-      <Title className={titleClasses} value={title} />
-      <Deck value={deck} />
-    </Wrapper>
+    <a
+      className={`
+        font-sans text-sm tracking-wide uppercase underline-offset-8
+        ${
+          color === "inverse"
+            ? `
+              text-inverse decoration-inverse-subtle decoration-2
+              hover:underline
+            `
+            : `
+              text-subtle
+              hover:text-accent
+            `
+        }
+      `}
+      href={href}
+    >
+      {children}
+    </a>
   );
 }
 
@@ -66,7 +98,7 @@ function Breadcrumb({ value }: { value?: React.ReactNode }) {
   }
 
   return (
-    <p className="mb-6 font-sans text-sm tracking-wide text-subtle uppercase">
+    <p className="mb-2 font-sans text-sm tracking-wide text-subtle uppercase">
       {value}
     </p>
   );
@@ -142,22 +174,28 @@ function Wrapper({
   children: React.ReactNode;
   heroImage?: React.ReactNode;
   narrowChildren?: boolean;
-  size?: "default" | "large" | "small";
+  size?: "auto" | "default" | "large" | "small" | "xsmall";
   textInverse?: boolean;
 }) {
   const defaultSizes =
-    "min-h-[240px] tablet:min-h-[640px] desktop:min-h-[clamp(640px,70vh,1350px)]";
+    "min-h-[340px] tablet:min-h-[640px] desktop:min-h-[clamp(640px,70vh,1350px)]";
 
   const largeSizes = "min-h-[90vh] max-h-[1350px]";
 
   const smallSizes = "min-h-[clamp(340px,50vh,1350px)]";
+
+  const xsmallSizes = "min-h-[clamp(340px,40vh,1350px)]";
 
   const sizes =
     size === "large"
       ? largeSizes
       : size === "small"
         ? smallSizes
-        : defaultSizes;
+        : size === "xsmall"
+          ? xsmallSizes
+          : size === "auto"
+            ? "min-h-[25vw]"
+            : defaultSizes;
 
   return (
     <header
@@ -166,7 +204,8 @@ function Wrapper({
         ${textInverse ? "text-inverse" : ""}
         ${heroImage ? "bg-[#000]" : "bg-canvas"}
         relative flex w-full flex-col content-start items-center justify-end
-        gap-6 pt-40
+        gap-6 overflow-hidden pt-20
+        laptop:pt-24
       `}
     >
       {heroImage}
@@ -180,7 +219,7 @@ function Wrapper({
                 px-container text-center
                 tablet:max-w-none tablet:px-0
               `
-              : `max-w-(--breakpoint-max) px-container`
+              : `max-w-(--breakpoint-desktop) px-container`
           }
           flex-col
           ${
@@ -194,7 +233,9 @@ function Wrapper({
               : ""
           }
           py-8
-          tablet:pt-20 tablet:pb-10
+          tablet:pb-10
+          laptop:pt-10
+          desktop:pt-20
         `}
       >
         {children}
@@ -210,23 +251,30 @@ export const BackdropImageConfig = {
 };
 
 export function Backdrop({
+  blur = false,
   breadcrumb,
+  centerText = false,
   deck,
   imageProps,
   size = "default",
   title,
   titleClasses,
 }: {
+  blur?: boolean;
   breadcrumb?: React.ReactNode;
+  centerText?: boolean;
   deck?: React.ReactNode;
   imageProps: BackdropImageProps;
-  size?: "default" | "large";
+  size?: "default" | "large" | "small";
   title: string;
   titleClasses?: string;
 }) {
   const heroImage = (
     <img
-      className="absolute inset-0 size-full object-cover object-top"
+      className={`
+        absolute inset-0 size-full object-cover object-top
+        ${blur && `blur-xs`}
+      `}
       {...imageProps}
       {...BackdropImageConfig}
       alt=""
@@ -236,7 +284,12 @@ export function Backdrop({
   );
 
   return (
-    <Wrapper heroImage={heroImage} size={size} textInverse={true}>
+    <Wrapper
+      heroImage={heroImage}
+      narrowChildren={centerText}
+      size={size}
+      textInverse={true}
+    >
       <Breadcrumb value={breadcrumb} />
       <Title className={titleClasses} value={title} />
       <Deck shadow={true} value={deck} />

@@ -45,7 +45,7 @@ export function MostReadAuthors({
         className={`
           px-container py-4 font-medium
           tablet:px-0
-          desktop:text-xl
+          laptop:text-xl
         `}
       >
         Most Read Authors
@@ -65,7 +65,13 @@ export function MostReadAuthors({
                   tablet:px-0
                 `}
               >
-                <div className="font-sans text-sm text-muted">
+                <div
+                  className={`
+                    origin-left transform-gpu font-sans text-sm text-muted
+                    transition-transform
+                    has-[a:hover]:scale-110
+                  `}
+                >
                   <Name value={value} />
                 </div>
                 <div
@@ -139,8 +145,23 @@ function Name({ value }: { value: MostReadAuthorsValue }): JSX.Element {
 
 function ReadingSubListItem({ value }: { value: ReadingSubListItemValue }) {
   return (
-    <ListItem className="has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover">
-      <ListItemCover imageProps={value.coverImageProps} />
+    <ListItem
+      className={`
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
+        has-[a:hover]:drop-shadow-2xl
+      `}
+    >
+      <div
+        className={`
+          relative
+          after:absolute after:top-0 after:left-0 after:z-10 after:size-full
+          after:bg-default after:opacity-15
+          group-has-[a:hover]/list-item:after:opacity-0
+        `}
+      >
+        <ListItemCover imageProps={value.coverImageProps} />
+      </div>
       <div className="flex grow flex-col gap-y-1">
         <ListItemTitle
           slug={value.reviewed ? value.slug : undefined}

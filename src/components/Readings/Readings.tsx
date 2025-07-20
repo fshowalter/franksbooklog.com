@@ -149,7 +149,7 @@ function DateListItem({
   return (
     <li
       className={`
-        relative flex max-w-(--breakpoint-max) flex-col bg-group
+        relative flex max-w-(--breakpoint-desktop) flex-col bg-group
         last-of-type:pb-12
         tablet:mb-12 tablet:flex-row tablet:py-4 tablet:pr-4
         tablet:last-of-type:pb-4
@@ -217,8 +217,23 @@ function ReadingListItem({ value }: { value: ListItemValue }): JSX.Element {
   const progressValue = parseProgress(value.progress);
 
   return (
-    <ListItem className="has-[a:hover]:bg-subtle has-[a:hover]:shadow-hover">
-      <ListItemCover imageProps={value.coverImageProps} />
+    <ListItem
+      className={`
+        group/list-item transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
+        has-[a:hover]:drop-shadow-2xl
+      `}
+    >
+      <div
+        className={`
+          relative
+          after:absolute after:top-0 after:left-0 after:z-10 after:size-full
+          after:bg-default after:opacity-15 after:transition-opacity
+          group-has-[a:hover]/list-item:after:opacity-0
+        `}
+      >
+        <ListItemCover imageProps={value.coverImageProps} />
+      </div>
       <div
         className={`
           flex grow flex-col items-start gap-y-1

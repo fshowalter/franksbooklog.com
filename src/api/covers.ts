@@ -6,12 +6,10 @@ import sharp from "sharp";
 import { normalizeSources } from "./utils/normalizeSources";
 
 export type CoverImageProps = {
+  height: number;
   src: string;
   srcSet: string;
-};
-
-export type FixedCoverImageProps = CoverImageProps & {
-  hasAlpha: boolean;
+  width: number;
 };
 
 type Work = {
@@ -22,6 +20,29 @@ type Work = {
 const images = import.meta.glob<{ default: ImageMetadata }>(
   "/content/assets/covers/*.png",
 );
+
+export async function getCoverHeight(coverPath: string, targetWidth: number) {
+  try {
+    const { height, width } = await sharp(coverPath).metadata();
+
+    return (height / width) * targetWidth;
+  } catch (error) {
+    console.error("Error:", error);
+    return 0;
+  }
+}
+
+export async function getCoverWidth(work: Work, targetHeight: number) {
+  try {
+    const coverPath = getWorkCoverPath(work);
+    const { height, width } = await sharp(coverPath).metadata();
+
+    return (width / height) * targetHeight;
+  } catch (error) {
+    console.error("Error:", error);
+    return 0;
+  }
+}
 
 export async function getFeedCoverProps(work: Work): Promise<CoverImageProps> {
   const workCoverFile = await getWorkCoverFile(work);
@@ -35,44 +56,50 @@ export async function getFeedCoverProps(work: Work): Promise<CoverImageProps> {
   });
 
   return {
+    height: 750,
     src: normalizeSources(optimizedImage.src),
     srcSet: normalizeSources(optimizedImage.srcSet.attribute),
+    width: 500,
   };
 }
 
 export async function getFixedCoverImageProps(
   work: Work,
-  { height, width }: { height: number; width: number },
-): Promise<FixedCoverImageProps> {
+  { width }: { width: number },
+): Promise<CoverImageProps> {
   const workCoverFile = await getWorkCoverFile(work);
+  const workCoverPath = getWorkCoverPath(work);
 
-  const hasAlpha = await hasTransparentPixels(getWorkCoverPath(work));
+  const height = await getCoverHeight(workCoverPath, width);
 
   const optimizedImage = await getImage({
     densities: [1, 2],
     format: "avif",
-    height: height,
+    height,
     quality: 80,
     src: workCoverFile.default,
     width: width,
   });
 
   return {
-    hasAlpha: hasAlpha,
+    height,
     src: normalizeSources(optimizedImage.src),
     srcSet: normalizeSources(optimizedImage.srcSet.attribute),
+    width: width,
   };
 }
 
 export async function getFluidCoverImageProps(
   work: Work,
-  { height, width }: { height: number; width: number },
+  { width }: { width: number },
 ): Promise<CoverImageProps> {
   const workCoverFile = await getWorkCoverFile(work);
+  const coverFilePath = getWorkCoverPath(work);
+  const height = await getCoverHeight(coverFilePath, width);
 
   const optimizedImage = await getImage({
     format: "avif",
-    height: height,
+    height,
     quality: 80,
     src: workCoverFile.default,
     width: width,
@@ -80,8 +107,10 @@ export async function getFluidCoverImageProps(
   });
 
   return {
+    height,
     src: normalizeSources(optimizedImage.src),
     srcSet: normalizeSources(optimizedImage.srcSet.attribute),
+    width,
   };
 }
 
@@ -109,26 +138,51 @@ export async function getStructuredDataCoverSrc(work: Work): Promise<string> {
 }
 
 export async function getUpdateCoverProps(
-  slug: string,
+  work: Work,
 ): Promise<CoverImageProps> {
-  const coverFilePath = Object.keys(images).find((path) => {
-    return path.endsWith(`/${slug}.png`);
-  })!;
+  const coverFile = await getWorkCoverFile(work);
 
-  const coverFile = await images[coverFilePath]();
+  const coverFilePath = getWorkCoverPath(work);
+  const height = await getCoverHeight(coverFilePath, 500);
 
   const optimizedImage = await getImage({
     format: "png",
-    height: 750,
+    height,
     quality: 100,
     src: coverFile.default,
     width: 500,
   });
 
   return {
+    height,
     src: normalizeSources(optimizedImage.src),
     srcSet: normalizeSources(optimizedImage.srcSet.attribute),
+    width: 500,
   };
+}
+
+export function getWorkCoverPath(work: Work) {
+  const workCover = coverPath(work.slug);
+
+  if (workCover) {
+    return workCover;
+  }
+
+  let parentCover;
+
+  for (const includedInSlug of work.includedInSlugs) {
+    parentCover = coverPath(includedInSlug);
+
+    if (parentCover) {
+      break;
+    }
+  }
+
+  if (parentCover) {
+    return parentCover;
+  }
+
+  return coverPath("default") || "";
 }
 
 function coverPath(slug: string) {
@@ -172,47 +226,4 @@ async function getWorkCoverFile(work: Work) {
   })!;
 
   return await images[defaultWorkCoverKey]();
-}
-
-function getWorkCoverPath(work: Work) {
-  const workCover = coverPath(work.slug);
-
-  if (workCover) {
-    return workCover;
-  }
-
-  let parentCover;
-
-  for (const includedInSlug of work.includedInSlugs) {
-    parentCover = coverPath(includedInSlug);
-
-    if (parentCover) {
-      break;
-    }
-  }
-
-  if (parentCover) {
-    return parentCover;
-  }
-
-  return coverPath("default") || "";
-}
-
-async function hasTransparentPixels(imagePath: string) {
-  try {
-    const image = await sharp(imagePath).raw().toBuffer();
-
-    for (let i = 3; i < image.length; i += 4) {
-      // Start from 3 for the alpha channel
-      if (image[i] < 255) {
-        // Check if the alpha value is less than 255 (fully opaque)
-        return true; // Image has transparent pixels
-      }
-    }
-
-    return false; // No transparent pixels found
-  } catch (error) {
-    console.error("Error:", error);
-    return false; // Assume no transparency on error
-  }
 }

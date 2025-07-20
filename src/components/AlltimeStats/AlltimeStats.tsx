@@ -1,8 +1,9 @@
 import type { JSX } from "react";
 
 import type { AlltimeStats } from "~/api/alltimeStats";
+import type { BackdropImageProps } from "~/api/backdrops";
 
-import { SolidBackdrop } from "~/components/Backdrop";
+import { Backdrop, BreadcrumbLink } from "~/components/Backdrop";
 import { DecadeDistribution } from "~/components/DecadeDistribution";
 import { EditionDistribution } from "~/components/EditionDistribution";
 import { KindDistribution } from "~/components/KindDistribution";
@@ -14,6 +15,7 @@ import { Callouts } from "./Callouts";
 import { GradeDistribution } from "./GradeDistribution";
 
 export type Props = {
+  backdropImageProps: BackdropImageProps;
   deck: string;
   distinctStatYears: string[];
   mostReadAuthors: React.ComponentProps<typeof MostReadAuthors>["values"];
@@ -21,21 +23,23 @@ export type Props = {
 };
 
 export function AlltimeStats({
+  backdropImageProps,
   deck,
   distinctStatYears,
   mostReadAuthors,
   stats,
 }: Props): JSX.Element {
   return (
-    <Layout className="flex flex-col items-center bg-subtle">
-      <SolidBackdrop
+    <Layout className="flex flex-col items-center bg-subtle" hasBackdrop={true}>
+      <Backdrop
+        blur={true}
         breadcrumb={
-          <a className="text-accent" href="/readings/">
-            Reading Log
-          </a>
+          <BreadcrumbLink href="/readings/">Reading Log</BreadcrumbLink>
         }
+        centerText={true}
         deck={deck}
-        narrowTitle={true}
+        imageProps={backdropImageProps}
+        size="small"
         title="All-Time Stats"
       />
       <StatsNavigation
@@ -53,15 +57,15 @@ export function AlltimeStats({
       />
       <div
         className={`
-          mx-auto flex w-full max-w-(--breakpoint-max) flex-col items-stretch
-          gap-y-8 py-10
+          mx-auto flex w-full max-w-(--breakpoint-desktop) flex-col
+          items-stretch gap-y-8 py-10
           tablet:px-container
         `}
       >
         <div
           className={`
             mx-auto flex w-full flex-col gap-y-8
-            desktop:max-w-[calc(66%+24px)]
+            laptop:max-w-[calc(66%+24px)]
           `}
         >
           <GradeDistribution values={stats.gradeDistribution} />
@@ -70,7 +74,7 @@ export function AlltimeStats({
         <div
           className={`
             flex flex-col items-start gap-y-8
-            desktop:flex-row desktop:gap-x-8
+            laptop:flex-row laptop:gap-x-8
           `}
         >
           <DecadeDistribution values={stats.decadeDistribution} />

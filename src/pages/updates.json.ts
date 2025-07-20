@@ -25,7 +25,7 @@ export async function GET() {
 
   const updateItems = await Promise.all(
     reviews.map(async (review) => {
-      const coverProps = await getUpdateCoverProps(review.slug);
+      const coverProps = await getUpdateCoverProps(review);
 
       return {
         date: review.date,

@@ -1,6 +1,6 @@
 import type { JSX } from "react";
 
-import type { FixedCoverImageProps } from "~/api/covers";
+import type { CoverImageProps } from "~/api/covers";
 import type { Review, ReviewWithContent } from "~/api/reviews";
 
 import { AuthorLink } from "~/components/AuthorLink";
@@ -17,12 +17,11 @@ import { ReadingHistoryListItem } from "./ReadingHistoryListItem";
 import { StructuredData } from "./StructuredData";
 
 export const CoverImageConfig = {
-  height: 372,
   width: 248,
 };
 
 export type Props = {
-  coverImageProps: FixedCoverImageProps;
+  coverImageProps: CoverImageProps;
   moreReviews: React.ComponentProps<typeof MoreReviews>["values"];
   structuredDataCoverSrc: string;
   value: ReviewWithContent;
@@ -51,9 +50,17 @@ export function Review({
       <header
         className={`relative z-1 mb-12 flex flex-col items-center px-[8%] pt-10`}
       >
-        <nav className="pb-3">
+        <nav
+          className={`
+            transform-gpu pb-3 transition-transform
+            has-[a:hover]:scale-110
+          `}
+        >
           <a
-            className="font-sans text-xs tracking-wider text-accent uppercase"
+            className={`
+              font-sans text-xs tracking-wider uppercase transition-colors
+              hover:text-accent
+            `}
             href="/reviews/"
           >
             Reviews
@@ -79,7 +86,11 @@ export function Review({
           </p>
         )}
         <Authors
-          className="mt-4 text-center text-md text-muted"
+          className={`
+            mt-4 transform-gpu text-center text-md text-muted
+            transition-transform
+            has-[a:hover]:scale-105
+          `}
           values={value.authors}
         />
         <div className="mt-4">
@@ -157,9 +168,15 @@ export function Review({
         data-pagefind-ignore
       >
         <MoreReviews values={moreReviews}>
-          <SubHeading as="h2">
+          <SubHeading
+            as="h2"
+            className={`
+              origin-left transform-gpu text-accent transition-transform
+              has-[a:hover]:scale-110
+            `}
+          >
             More{" "}
-            <a className="text-accent" href={`/reviews/`}>
+            <a className={`text-accent`} href={`/reviews/`}>
               Reviews
             </a>
           </SubHeading>
@@ -187,7 +204,9 @@ function Authors({
       {toSentenceArray(
         values.map((author) => (
           <AuthorLink
-            className="inline-block text-accent"
+            className={`
+              inline-block transform-gpu text-accent transition-transform
+            `}
             key={author.slug}
             name={author.name}
             notes={author.notes}
@@ -202,57 +221,33 @@ function Authors({
 function ReviewCover({
   coverImageProps,
 }: {
-  coverImageProps: FixedCoverImageProps;
+  coverImageProps: CoverImageProps;
 }) {
   return (
     <div
       className={`
-        relative my-12 flex h-[340px] w-full max-w-popout flex-col items-center
+        @container relative my-12 flex w-full max-w-popout flex-col items-center
       `}
       data-pagefind-meta={`image:${coverImageProps.src}`}
     >
-      <div className="absolute inset-0 overflow-hidden clip-path-cover">
-        <div
-          className={`
-            absolute top-[-5%] left-[-5%] size-[110%] bg-default bg-cover
-            bg-center
-          `}
-          style={{
-            backgroundColor: "var(--bg-default)",
-            backgroundImage: `linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(${coverImageProps.src})`,
-          }}
-        />
-        <div className="absolute size-full backdrop-blur" />
-      </div>
       <div
         className={`
-          relative -top-4 z-10 h-[372px]
-          ${
-            coverImageProps.hasAlpha
-              ? ""
-              : `shadow-[0_5px_20px_rgba(49,46,42,0.22)]`
-          }
+          absolute top-[2.5%] left-[2.5%] size-[95%] overflow-hidden bg-default
+          bg-cover bg-center clip-path-cover
+          after:absolute after:size-full after:backdrop-blur-sm
+          after:clip-path-cover
         `}
-      >
-        <Cover
-          className={`
-            safari-border-radius-fix
-            ${
-              coverImageProps.hasAlpha
-                ? ""
-                : `shadow-[0_5px_20px_rgba(49,46,42,0.22)]`
-            }
-          `}
-          decoding="auto"
-          height={CoverImageConfig.height}
-          imageProps={{
-            src: coverImageProps.src,
-            srcSet: coverImageProps.srcSet,
-          }}
-          loading="eager"
-          width={CoverImageConfig.width}
-        />
-      </div>
+        style={{
+          backgroundColor: "var(--bg-default)",
+          backgroundImage: `linear-gradient(90deg, rgba(var(--bg-default-rgb),1) 0%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 30%, rgba(var(--bg-default-rgb),0) 50%, rgba(var(--bg-default-rgb),var(--bg-default-alpha)) 70%, rgba(var(--bg-default-rgb),1) 100%), url(${coverImageProps.src})`,
+        }}
+      />
+      <Cover
+        className={`relative -top-[2.5%]`}
+        decoding="auto"
+        imageProps={coverImageProps}
+        loading="eager"
+      />
     </div>
   );
 }

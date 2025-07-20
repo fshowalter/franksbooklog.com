@@ -1,7 +1,5 @@
 import type { JSX } from "react";
 
-import { ccn } from "~/utils/concatClassNames";
-
 export function StatsNavigation({
   className,
   currentYear,
@@ -14,12 +12,18 @@ export function StatsNavigation({
   years: readonly string[];
 }): JSX.Element {
   return (
-    <nav className={ccn("bg-footer", className)}>
+    <nav
+      className={`
+        bg-footer
+        ${className}
+      `}
+    >
       <ul
         className={`
-          mx-auto flex scrollbar-hidden max-w-(--breakpoint-max) overflow-x-auto
-          px-container font-sans text-sm font-normal tracking-wide
-          desktop:justify-center
+          mx-auto flex scrollbar-hidden max-w-(--breakpoint-laptop)
+          overflow-x-auto px-container font-sans text-sm font-normal
+          tracking-wide
+          laptop:justify-center
         `}
       >
         <AllTimeLink currentYear={currentYear} linkFunc={linkFunc} />
@@ -64,8 +68,8 @@ function AllTimeLink({
       ) : (
         <a
           className={`
-            block p-4 whitespace-nowrap
-            hover:bg-accent hover:text-inverse
+            block transform-gpu p-4 whitespace-nowrap transition-all
+            hover:scale-105 hover:bg-accent hover:text-inverse
             desktop:py-4
           `}
           href={linkFunc("all")}
@@ -105,8 +109,8 @@ function YearLink({
       ) : (
         <a
           className={`
-            block p-4
-            hover:bg-accent hover:text-inverse
+            block transform-gpu p-4 transition-all
+            hover:scale-105 hover:bg-accent hover:text-inverse
           `}
           href={linkFunc(year)}
         >

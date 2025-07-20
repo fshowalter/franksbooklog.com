@@ -1820,15 +1820,15 @@
         ]
       },
       {
-        "title": "Consider This",
-        "kind": "Nonfiction",
-        "yearPublished": "2020",
-        "slug": "consider-this-by-chuck-palahniuk",
-        "grade": "B",
+        "title": "Commodore",
+        "kind": "Novella",
+        "yearPublished": "2021",
+        "slug": "commodore-by-philip-fracassi",
+        "grade": "A",
         "includedInSlugs": [],
         "authors": [
           {
-            "name": "Chuck Palahniuk",
+            "name": "Philip Fracassi",
             "notes": null
           }
         ]
@@ -1952,14 +1952,12 @@
             ]
           },
           {
-            "title": "Mandala",
-            "kind": "Novella",
+            "title": "King Mob",
+            "kind": "Short Story",
             "yearPublished": "2017",
-            "slug": "mandala-by-philip-fracassi",
-            "grade": "B+",
-            "includedInSlugs": [
-              "behold-the-void-by-philip-fracassi"
-            ],
+            "slug": "king-mob-by-philip-fracassi",
+            "grade": "C+",
+            "includedInSlugs": [],
             "authors": [
               {
                 "name": "Philip Fracassi",
@@ -2009,6 +2007,224 @@
         "authors": [
           {
             "name": "Kathe Koja",
+            "notes": null
+          }
+        ]
+      },
+      {
+        "title": "Commodore",
+        "kind": "Novella",
+        "yearPublished": "2021",
+        "slug": "commodore-by-philip-fracassi",
+        "grade": "A",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Philip Fracassi",
+            "notes": null
+          }
+        ]
+      },
+      {
+        "title": "Consider This",
+        "kind": "Nonfiction",
+        "yearPublished": "2020",
+        "slug": "consider-this-by-chuck-palahniuk",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Chuck Palahniuk",
+            "notes": null
+          }
+        ]
+      },
+      {
+        "title": "The Creative Act",
+        "kind": "Nonfiction",
+        "yearPublished": "2023",
+        "slug": "the-creative-act-by-rick-rubin",
+        "grade": "C+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Rick Rubin",
+            "notes": null
+          }
+        ]
+      }
+    ],
+    "includedWorks": []
+  },
+  {
+    "sequence": "2025-07-11-2",
+    "slug": "commodore-by-philip-fracassi",
+    "title": "Commodore",
+    "subtitle": null,
+    "sortTitle": "Commodore",
+    "yearPublished": "2021",
+    "grade": "A",
+    "gradeValue": 12,
+    "kind": "Novella",
+    "date": "2025-07-11",
+    "authors": [
+      {
+        "slug": "philip-fracassi",
+        "notes": null,
+        "name": "Philip Fracassi",
+        "sortName": "Fracassi, Philip"
+      }
+    ],
+    "readings": [
+      {
+        "sequence": 2,
+        "date": "2025-07-11",
+        "isAudiobook": false,
+        "abandoned": false,
+        "readingTime": 1
+      }
+    ],
+    "includedInSlugs": [],
+    "yearReviewed": 2025,
+    "moreByAuthors": [
+      {
+        "name": "Philip Fracassi",
+        "slug": "philip-fracassi",
+        "works": [
+          {
+            "title": "Shiloh",
+            "kind": "Novella",
+            "yearPublished": "2017",
+            "slug": "shiloh-by-philip-fracassi",
+            "grade": "B",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Philip Fracassi",
+                "notes": null
+              }
+            ]
+          },
+          {
+            "title": "Soft Construction of a Sunset",
+            "kind": "Short Story",
+            "yearPublished": "2017",
+            "slug": "soft-construction-of-a-sunset-by-philip-fracassi",
+            "grade": "B-",
+            "includedInSlugs": [
+              "behold-the-void-by-philip-fracassi"
+            ],
+            "authors": [
+              {
+                "name": "Philip Fracassi",
+                "notes": null
+              }
+            ]
+          },
+          {
+            "title": "Surfer Girl",
+            "kind": "Short Story",
+            "yearPublished": "2017",
+            "slug": "surfer-girl-by-philip-fracassi",
+            "grade": "C+",
+            "includedInSlugs": [
+              "behold-the-void-by-philip-fracassi"
+            ],
+            "authors": [
+              {
+                "name": "Philip Fracassi",
+                "notes": null
+              }
+            ]
+          },
+          {
+            "title": "Don't Let Them Get You Down",
+            "kind": "Novel",
+            "yearPublished": "2022",
+            "slug": "dont-let-them-get-you-down-by-philip-fracassi",
+            "grade": "C-",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Philip Fracassi",
+                "notes": null
+              }
+            ]
+          },
+          {
+            "title": "Gothic",
+            "kind": "Novel",
+            "yearPublished": "2023",
+            "slug": "gothic-by-philip-fracassi",
+            "grade": "B+",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Philip Fracassi",
+                "notes": null
+              }
+            ]
+          },
+          {
+            "title": "Mother",
+            "kind": "Short Story",
+            "yearPublished": "2015",
+            "slug": "mother-by-philip-fracassi",
+            "grade": "B-",
+            "includedInSlugs": [
+              "behold-the-void-by-philip-fracassi"
+            ],
+            "authors": [
+              {
+                "name": "Philip Fracassi",
+                "notes": null
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "moreReviews": [
+      {
+        "title": "Churchill",
+        "kind": "Nonfiction",
+        "yearPublished": "2018",
+        "slug": "churchill-by-andrew-roberts",
+        "grade": "A-",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Andrew Roberts",
+            "notes": null
+          }
+        ]
+      },
+      {
+        "title": "The Cipher",
+        "kind": "Novel",
+        "yearPublished": "1991",
+        "slug": "the-cipher-by-kathe-koja",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Kathe Koja",
+            "notes": null
+          }
+        ]
+      },
+      {
+        "title": "Coffin",
+        "kind": "Short Story",
+        "yearPublished": "2017",
+        "slug": "coffin-by-philip-fracassi",
+        "grade": "C+",
+        "includedInSlugs": [
+          "behold-the-void-by-philip-fracassi"
+        ],
+        "authors": [
+          {
+            "name": "Philip Fracassi",
             "notes": null
           }
         ]
@@ -2091,20 +2307,6 @@
     "moreByAuthors": [],
     "moreReviews": [
       {
-        "title": "Churchill",
-        "kind": "Nonfiction",
-        "yearPublished": "2018",
-        "slug": "churchill-by-andrew-roberts",
-        "grade": "A-",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Andrew Roberts",
-            "notes": null
-          }
-        ]
-      },
-      {
         "title": "The Cipher",
         "kind": "Novel",
         "yearPublished": "1991",
@@ -2127,6 +2329,20 @@
         "includedInSlugs": [
           "behold-the-void-by-philip-fracassi"
         ],
+        "authors": [
+          {
+            "name": "Philip Fracassi",
+            "notes": null
+          }
+        ]
+      },
+      {
+        "title": "Commodore",
+        "kind": "Novella",
+        "yearPublished": "2021",
+        "slug": "commodore-by-philip-fracassi",
+        "grade": "A",
+        "includedInSlugs": [],
         "authors": [
           {
             "name": "Philip Fracassi",
@@ -2303,14 +2519,12 @@
     ],
     "moreReviews": [
       {
-        "title": "Coffin",
-        "kind": "Short Story",
-        "yearPublished": "2017",
-        "slug": "coffin-by-philip-fracassi",
-        "grade": "C+",
-        "includedInSlugs": [
-          "behold-the-void-by-philip-fracassi"
-        ],
+        "title": "Commodore",
+        "kind": "Novella",
+        "yearPublished": "2021",
+        "slug": "commodore-by-philip-fracassi",
+        "grade": "A",
+        "includedInSlugs": [],
         "authors": [
           {
             "name": "Philip Fracassi",
@@ -3095,20 +3309,6 @@
         "slug": "philip-fracassi",
         "works": [
           {
-            "title": "Sacculina",
-            "kind": "Novella",
-            "yearPublished": "2017",
-            "slug": "sacculina-by-philip-fracassi",
-            "grade": "B",
-            "includedInSlugs": [],
-            "authors": [
-              {
-                "name": "Philip Fracassi",
-                "notes": null
-              }
-            ]
-          },
-          {
             "title": "Soft Construction of a Sunset",
             "kind": "Short Story",
             "yearPublished": "2017",
@@ -3133,6 +3333,20 @@
             "includedInSlugs": [
               "behold-the-void-by-philip-fracassi"
             ],
+            "authors": [
+              {
+                "name": "Philip Fracassi",
+                "notes": null
+              }
+            ]
+          },
+          {
+            "title": "Commodore",
+            "kind": "Novella",
+            "yearPublished": "2021",
+            "slug": "commodore-by-philip-fracassi",
+            "grade": "A",
+            "includedInSlugs": [],
             "authors": [
               {
                 "name": "Philip Fracassi",
@@ -3760,14 +3974,12 @@
             ]
           },
           {
-            "title": "Mandala",
-            "kind": "Novella",
+            "title": "King Mob",
+            "kind": "Short Story",
             "yearPublished": "2017",
-            "slug": "mandala-by-philip-fracassi",
-            "grade": "B+",
-            "includedInSlugs": [
-              "behold-the-void-by-philip-fracassi"
-            ],
+            "slug": "king-mob-by-philip-fracassi",
+            "grade": "C+",
+            "includedInSlugs": [],
             "authors": [
               {
                 "name": "Philip Fracassi",
@@ -3776,12 +3988,14 @@
             ]
           },
           {
-            "title": "Sacculina",
+            "title": "Mandala",
             "kind": "Novella",
             "yearPublished": "2017",
-            "slug": "sacculina-by-philip-fracassi",
-            "grade": "B",
-            "includedInSlugs": [],
+            "slug": "mandala-by-philip-fracassi",
+            "grade": "B+",
+            "includedInSlugs": [
+              "behold-the-void-by-philip-fracassi"
+            ],
             "authors": [
               {
                 "name": "Philip Fracassi",
@@ -4713,11 +4927,11 @@
         "slug": "philip-fracassi",
         "works": [
           {
-            "title": "Soft Construction of a Sunset",
+            "title": "Surfer Girl",
             "kind": "Short Story",
             "yearPublished": "2017",
-            "slug": "soft-construction-of-a-sunset-by-philip-fracassi",
-            "grade": "B-",
+            "slug": "surfer-girl-by-philip-fracassi",
+            "grade": "C+",
             "includedInSlugs": [
               "behold-the-void-by-philip-fracassi"
             ],
@@ -4729,14 +4943,12 @@
             ]
           },
           {
-            "title": "Surfer Girl",
-            "kind": "Short Story",
-            "yearPublished": "2017",
-            "slug": "surfer-girl-by-philip-fracassi",
-            "grade": "C+",
-            "includedInSlugs": [
-              "behold-the-void-by-philip-fracassi"
-            ],
+            "title": "Commodore",
+            "kind": "Novella",
+            "yearPublished": "2021",
+            "slug": "commodore-by-philip-fracassi",
+            "grade": "A",
+            "includedInSlugs": [],
             "authors": [
               {
                 "name": "Philip Fracassi",
@@ -5129,15 +5341,15 @@
         ]
       },
       {
-        "title": "The Last Hand",
+        "title": "King Mob",
         "kind": "Short Story",
-        "yearPublished": "1985",
-        "slug": "the-last-hand-by-richard-laymon",
-        "grade": "D",
+        "yearPublished": "2017",
+        "slug": "king-mob-by-philip-fracassi",
+        "grade": "C+",
         "includedInSlugs": [],
         "authors": [
           {
-            "name": "Richard Laymon",
+            "name": "Philip Fracassi",
             "notes": null
           }
         ]
@@ -5222,6 +5434,224 @@
         ]
       },
       {
+        "title": "King Mob",
+        "kind": "Short Story",
+        "yearPublished": "2017",
+        "slug": "king-mob-by-philip-fracassi",
+        "grade": "C+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Philip Fracassi",
+            "notes": null
+          }
+        ]
+      },
+      {
+        "title": "The Last Hand",
+        "kind": "Short Story",
+        "yearPublished": "1985",
+        "slug": "the-last-hand-by-richard-laymon",
+        "grade": "D",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Richard Laymon",
+            "notes": null
+          }
+        ]
+      },
+      {
+        "title": "Less Than Zero",
+        "kind": "Novel",
+        "yearPublished": "1985",
+        "slug": "less-than-zero-by-bret-easton-ellis",
+        "grade": "B+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Bret Easton Ellis",
+            "notes": null
+          }
+        ]
+      }
+    ],
+    "includedWorks": []
+  },
+  {
+    "sequence": "2025-07-12-1",
+    "slug": "king-mob-by-philip-fracassi",
+    "title": "King Mob",
+    "subtitle": null,
+    "sortTitle": "King Mob",
+    "yearPublished": "2017",
+    "grade": "C+",
+    "gradeValue": 7,
+    "kind": "Short Story",
+    "date": "2025-07-12",
+    "authors": [
+      {
+        "slug": "philip-fracassi",
+        "notes": null,
+        "name": "Philip Fracassi",
+        "sortName": "Fracassi, Philip"
+      }
+    ],
+    "readings": [
+      {
+        "sequence": 1,
+        "date": "2025-07-12",
+        "isAudiobook": false,
+        "abandoned": false,
+        "readingTime": 1
+      }
+    ],
+    "includedInSlugs": [],
+    "yearReviewed": 2025,
+    "moreByAuthors": [
+      {
+        "name": "Philip Fracassi",
+        "slug": "philip-fracassi",
+        "works": [
+          {
+            "title": "Coffin",
+            "kind": "Short Story",
+            "yearPublished": "2017",
+            "slug": "coffin-by-philip-fracassi",
+            "grade": "C+",
+            "includedInSlugs": [
+              "behold-the-void-by-philip-fracassi"
+            ],
+            "authors": [
+              {
+                "name": "Philip Fracassi",
+                "notes": null
+              }
+            ]
+          },
+          {
+            "title": "Fail-Safe",
+            "kind": "Short Story",
+            "yearPublished": "2017",
+            "slug": "fail-safe-by-philip-fracassi",
+            "grade": "C",
+            "includedInSlugs": [
+              "behold-the-void-by-philip-fracassi"
+            ],
+            "authors": [
+              {
+                "name": "Philip Fracassi",
+                "notes": null
+              }
+            ]
+          },
+          {
+            "title": "The Horse Thief",
+            "kind": "Short Story",
+            "yearPublished": "2017",
+            "slug": "the-horse-thief-by-philip-fracassi",
+            "grade": "B",
+            "includedInSlugs": [
+              "behold-the-void-by-philip-fracassi"
+            ],
+            "authors": [
+              {
+                "name": "Philip Fracassi",
+                "notes": null
+              }
+            ]
+          },
+          {
+            "title": "Mandala",
+            "kind": "Novella",
+            "yearPublished": "2017",
+            "slug": "mandala-by-philip-fracassi",
+            "grade": "B+",
+            "includedInSlugs": [
+              "behold-the-void-by-philip-fracassi"
+            ],
+            "authors": [
+              {
+                "name": "Philip Fracassi",
+                "notes": null
+              }
+            ]
+          },
+          {
+            "title": "Sacculina",
+            "kind": "Novella",
+            "yearPublished": "2017",
+            "slug": "sacculina-by-philip-fracassi",
+            "grade": "B",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Philip Fracassi",
+                "notes": null
+              }
+            ]
+          },
+          {
+            "title": "Shiloh",
+            "kind": "Novella",
+            "yearPublished": "2017",
+            "slug": "shiloh-by-philip-fracassi",
+            "grade": "B",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Philip Fracassi",
+                "notes": null
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "moreReviews": [
+      {
+        "title": "I Will Find You",
+        "kind": "Nonfiction",
+        "yearPublished": "2017",
+        "slug": "i-will-find-you-by-joe-kenda",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Joe Kenda",
+            "notes": null
+          }
+        ]
+      },
+      {
+        "title": "The Intruder",
+        "kind": "Short Story",
+        "yearPublished": "1984",
+        "slug": "the-intruder-by-richard-laymon",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Richard Laymon",
+            "notes": null
+          }
+        ]
+      },
+      {
+        "title": "Is This Anything?",
+        "kind": "Nonfiction",
+        "yearPublished": "2020",
+        "slug": "is-this-anything-by-jerry-seinfeld",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Jerry Seinfeld",
+            "notes": null
+          }
+        ]
+      },
+      {
         "title": "The Last Hand",
         "kind": "Short Story",
         "yearPublished": "1985",
@@ -5299,20 +5729,6 @@
     "moreByAuthors": [],
     "moreReviews": [
       {
-        "title": "The Intruder",
-        "kind": "Short Story",
-        "yearPublished": "1984",
-        "slug": "the-intruder-by-richard-laymon",
-        "grade": "C",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Richard Laymon",
-            "notes": null
-          }
-        ]
-      },
-      {
         "title": "Is This Anything?",
         "kind": "Nonfiction",
         "yearPublished": "2020",
@@ -5322,6 +5738,20 @@
         "authors": [
           {
             "name": "Jerry Seinfeld",
+            "notes": null
+          }
+        ]
+      },
+      {
+        "title": "King Mob",
+        "kind": "Short Story",
+        "yearPublished": "2017",
+        "slug": "king-mob-by-philip-fracassi",
+        "grade": "C+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Philip Fracassi",
             "notes": null
           }
         ]
@@ -5418,15 +5848,15 @@
     "moreByAuthors": [],
     "moreReviews": [
       {
-        "title": "Is This Anything?",
-        "kind": "Nonfiction",
-        "yearPublished": "2020",
-        "slug": "is-this-anything-by-jerry-seinfeld",
-        "grade": "C",
+        "title": "King Mob",
+        "kind": "Short Story",
+        "yearPublished": "2017",
+        "slug": "king-mob-by-philip-fracassi",
+        "grade": "C+",
         "includedInSlugs": [],
         "authors": [
           {
-            "name": "Jerry Seinfeld",
+            "name": "Philip Fracassi",
             "notes": null
           }
         ]
@@ -5607,17 +6037,15 @@
         ]
       },
       {
-        "title": "Mandala",
-        "kind": "Novella",
-        "yearPublished": "2017",
-        "slug": "mandala-by-philip-fracassi",
-        "grade": "B+",
-        "includedInSlugs": [
-          "behold-the-void-by-philip-fracassi"
-        ],
+        "title": "The M.A.X. Muscle Plan",
+        "kind": "Nonfiction",
+        "yearPublished": "2012",
+        "slug": "the-max-muscle-plan-by-brad-schoenfeld",
+        "grade": "C-",
+        "includedInSlugs": [],
         "authors": [
           {
-            "name": "Philip Fracassi",
+            "name": "Brad Schoenfeld",
             "notes": null
           }
         ]
@@ -5663,22 +6091,6 @@
         "slug": "philip-fracassi",
         "works": [
           {
-            "title": "Coffin",
-            "kind": "Short Story",
-            "yearPublished": "2017",
-            "slug": "coffin-by-philip-fracassi",
-            "grade": "C+",
-            "includedInSlugs": [
-              "behold-the-void-by-philip-fracassi"
-            ],
-            "authors": [
-              {
-                "name": "Philip Fracassi",
-                "notes": null
-              }
-            ]
-          },
-          {
             "title": "Fail-Safe",
             "kind": "Short Story",
             "yearPublished": "2017",
@@ -5711,10 +6123,38 @@
             ]
           },
           {
+            "title": "King Mob",
+            "kind": "Short Story",
+            "yearPublished": "2017",
+            "slug": "king-mob-by-philip-fracassi",
+            "grade": "C+",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Philip Fracassi",
+                "notes": null
+              }
+            ]
+          },
+          {
             "title": "Sacculina",
             "kind": "Novella",
             "yearPublished": "2017",
             "slug": "sacculina-by-philip-fracassi",
+            "grade": "B",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Philip Fracassi",
+                "notes": null
+              }
+            ]
+          },
+          {
+            "title": "Shiloh",
+            "kind": "Novella",
+            "yearPublished": "2017",
+            "slug": "shiloh-by-philip-fracassi",
             "grade": "B",
             "includedInSlugs": [],
             "authors": [
@@ -5739,41 +6179,11 @@
                 "notes": null
               }
             ]
-          },
-          {
-            "title": "Surfer Girl",
-            "kind": "Short Story",
-            "yearPublished": "2017",
-            "slug": "surfer-girl-by-philip-fracassi",
-            "grade": "C+",
-            "includedInSlugs": [
-              "behold-the-void-by-philip-fracassi"
-            ],
-            "authors": [
-              {
-                "name": "Philip Fracassi",
-                "notes": null
-              }
-            ]
           }
         ]
       }
     ],
     "moreReviews": [
-      {
-        "title": "Living with a SEAL",
-        "kind": "Nonfiction",
-        "yearPublished": "2015",
-        "slug": "living-with-a-seal-by-jesse-itzler",
-        "grade": "Abandoned",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Jesse Itzler",
-            "notes": null
-          }
-        ]
-      },
       {
         "title": "The Lonely One",
         "kind": "Short Story",
@@ -5799,6 +6209,20 @@
           {
             "name": "Stephen King",
             "notes": "as Richard Bachman"
+          }
+        ]
+      },
+      {
+        "title": "The M.A.X. Muscle Plan",
+        "kind": "Nonfiction",
+        "yearPublished": "2012",
+        "slug": "the-max-muscle-plan-by-brad-schoenfeld",
+        "grade": "C-",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Brad Schoenfeld",
+            "notes": null
           }
         ]
       },
@@ -5886,20 +6310,6 @@
     "moreByAuthors": [],
     "moreReviews": [
       {
-        "title": "The Lonely One",
-        "kind": "Short Story",
-        "yearPublished": "1985",
-        "slug": "the-lonely-one-by-richard-laymon",
-        "grade": "C+",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Richard Laymon",
-            "notes": null
-          }
-        ]
-      },
-      {
         "title": "The Long Walk",
         "kind": "Novel",
         "yearPublished": "1978",
@@ -5910,6 +6320,20 @@
           {
             "name": "Stephen King",
             "notes": "as Richard Bachman"
+          }
+        ]
+      },
+      {
+        "title": "The M.A.X. Muscle Plan",
+        "kind": "Nonfiction",
+        "yearPublished": "2012",
+        "slug": "the-max-muscle-plan-by-brad-schoenfeld",
+        "grade": "C-",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Brad Schoenfeld",
+            "notes": null
           }
         ]
       },
@@ -6018,14 +6442,12 @@
         "slug": "philip-fracassi",
         "works": [
           {
-            "title": "Surfer Girl",
-            "kind": "Short Story",
-            "yearPublished": "2017",
-            "slug": "surfer-girl-by-philip-fracassi",
-            "grade": "C+",
-            "includedInSlugs": [
-              "behold-the-void-by-philip-fracassi"
-            ],
+            "title": "Commodore",
+            "kind": "Novella",
+            "yearPublished": "2021",
+            "slug": "commodore-by-philip-fracassi",
+            "grade": "A",
+            "includedInSlugs": [],
             "authors": [
               {
                 "name": "Philip Fracassi",
@@ -6112,16 +6534,16 @@
     ],
     "moreReviews": [
       {
-        "title": "The Long Walk",
-        "kind": "Novel",
-        "yearPublished": "1978",
-        "slug": "the-long-walk-by-stephen-king",
-        "grade": "D",
+        "title": "The M.A.X. Muscle Plan",
+        "kind": "Nonfiction",
+        "yearPublished": "2012",
+        "slug": "the-max-muscle-plan-by-brad-schoenfeld",
+        "grade": "C-",
         "includedInSlugs": [],
         "authors": [
           {
-            "name": "Stephen King",
-            "notes": "as Richard Bachman"
+            "name": "Brad Schoenfeld",
+            "notes": null
           }
         ]
       },
@@ -7241,16 +7663,16 @@
         ]
       },
       {
-        "title": "Rage",
+        "title": "Progeny of the Adder",
         "kind": "Novel",
-        "yearPublished": "1976",
-        "slug": "rage-by-stephen-king",
-        "grade": "C",
+        "yearPublished": "1965",
+        "slug": "progeny-of-the-adder-by-leslie-h-whitten-jr",
+        "grade": "B-",
         "includedInSlugs": [],
         "authors": [
           {
-            "name": "Stephen King",
-            "notes": "as Richard Bachman"
+            "name": "Leslie H. Whitten Jr.",
+            "notes": null
           }
         ]
       }
@@ -7348,6 +7770,113 @@
         ]
       },
       {
+        "title": "Progeny of the Adder",
+        "kind": "Novel",
+        "yearPublished": "1965",
+        "slug": "progeny-of-the-adder-by-leslie-h-whitten-jr",
+        "grade": "B-",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Leslie H. Whitten Jr.",
+            "notes": null
+          }
+        ]
+      },
+      {
+        "title": "Rage",
+        "kind": "Novel",
+        "yearPublished": "1976",
+        "slug": "rage-by-stephen-king",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Stephen King",
+            "notes": "as Richard Bachman"
+          }
+        ]
+      }
+    ],
+    "includedWorks": []
+  },
+  {
+    "sequence": "2025-07-11-1",
+    "slug": "progeny-of-the-adder-by-leslie-h-whitten-jr",
+    "title": "Progeny of the Adder",
+    "subtitle": null,
+    "sortTitle": "Progeny of the Adder",
+    "yearPublished": "1965",
+    "grade": "B-",
+    "gradeValue": 8,
+    "kind": "Novel",
+    "date": "2025-07-11",
+    "authors": [
+      {
+        "slug": "leslie-h-whitten-jr",
+        "notes": null,
+        "name": "Leslie H. Whitten Jr.",
+        "sortName": "Whitten Jr., Leslie H."
+      }
+    ],
+    "readings": [
+      {
+        "sequence": 1,
+        "date": "2025-07-11",
+        "isAudiobook": false,
+        "abandoned": false,
+        "readingTime": 8
+      }
+    ],
+    "includedInSlugs": [],
+    "yearReviewed": 2025,
+    "moreByAuthors": [],
+    "moreReviews": [
+      {
+        "title": "Out Are the Lights",
+        "kind": "Novel",
+        "yearPublished": "1982",
+        "slug": "out-are-the-lights-by-richard-laymon",
+        "grade": "C-",
+        "includedInSlugs": [
+          "out-are-the-lights-and-other-tales-by-richard-laymon"
+        ],
+        "authors": [
+          {
+            "name": "Richard Laymon",
+            "notes": null
+          }
+        ]
+      },
+      {
+        "title": "Peter Cushing",
+        "kind": "Nonfiction",
+        "yearPublished": "2013",
+        "slug": "peter-cushing-by-david-miller",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "David Miller",
+            "notes": null
+          }
+        ]
+      },
+      {
+        "title": "The Postman Always Rings Twice",
+        "kind": "Novel",
+        "yearPublished": "1934",
+        "slug": "the-postman-always-rings-twice-by-james-m-cain",
+        "grade": "B+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "James M. Cain",
+            "notes": null
+          }
+        ]
+      },
+      {
         "title": "Rage",
         "kind": "Novel",
         "yearPublished": "1976",
@@ -7371,6 +7900,20 @@
         "authors": [
           {
             "name": "David Mamet",
+            "notes": null
+          }
+        ]
+      },
+      {
+        "title": "Record Play Pause",
+        "kind": "Nonfiction",
+        "yearPublished": "2019",
+        "slug": "record-play-pause-by-stephen-morris",
+        "grade": "A",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Stephen Morris",
             "notes": null
           }
         ]
@@ -7502,22 +8045,6 @@
     ],
     "moreReviews": [
       {
-        "title": "Out Are the Lights",
-        "kind": "Novel",
-        "yearPublished": "1982",
-        "slug": "out-are-the-lights-by-richard-laymon",
-        "grade": "C-",
-        "includedInSlugs": [
-          "out-are-the-lights-and-other-tales-by-richard-laymon"
-        ],
-        "authors": [
-          {
-            "name": "Richard Laymon",
-            "notes": null
-          }
-        ]
-      },
-      {
         "title": "Peter Cushing",
         "kind": "Nonfiction",
         "yearPublished": "2013",
@@ -7541,6 +8068,20 @@
         "authors": [
           {
             "name": "James M. Cain",
+            "notes": null
+          }
+        ]
+      },
+      {
+        "title": "Progeny of the Adder",
+        "kind": "Novel",
+        "yearPublished": "1965",
+        "slug": "progeny-of-the-adder-by-leslie-h-whitten-jr",
+        "grade": "B-",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Leslie H. Whitten Jr.",
             "notes": null
           }
         ]
@@ -7623,20 +8164,6 @@
     "moreByAuthors": [],
     "moreReviews": [
       {
-        "title": "Peter Cushing",
-        "kind": "Nonfiction",
-        "yearPublished": "2013",
-        "slug": "peter-cushing-by-david-miller",
-        "grade": "C",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "David Miller",
-            "notes": null
-          }
-        ]
-      },
-      {
         "title": "The Postman Always Rings Twice",
         "kind": "Novel",
         "yearPublished": "1934",
@@ -7646,6 +8173,20 @@
         "authors": [
           {
             "name": "James M. Cain",
+            "notes": null
+          }
+        ]
+      },
+      {
+        "title": "Progeny of the Adder",
+        "kind": "Novel",
+        "yearPublished": "1965",
+        "slug": "progeny-of-the-adder-by-leslie-h-whitten-jr",
+        "grade": "B-",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Leslie H. Whitten Jr.",
             "notes": null
           }
         ]
@@ -7742,15 +8283,15 @@
     "moreByAuthors": [],
     "moreReviews": [
       {
-        "title": "The Postman Always Rings Twice",
+        "title": "Progeny of the Adder",
         "kind": "Novel",
-        "yearPublished": "1934",
-        "slug": "the-postman-always-rings-twice-by-james-m-cain",
-        "grade": "B+",
+        "yearPublished": "1965",
+        "slug": "progeny-of-the-adder-by-leslie-h-whitten-jr",
+        "grade": "B-",
         "includedInSlugs": [],
         "authors": [
           {
-            "name": "James M. Cain",
+            "name": "Leslie H. Whitten Jr.",
             "notes": null
           }
         ]
@@ -8203,22 +8744,6 @@
         "slug": "philip-fracassi",
         "works": [
           {
-            "title": "Fail-Safe",
-            "kind": "Short Story",
-            "yearPublished": "2017",
-            "slug": "fail-safe-by-philip-fracassi",
-            "grade": "C",
-            "includedInSlugs": [
-              "behold-the-void-by-philip-fracassi"
-            ],
-            "authors": [
-              {
-                "name": "Philip Fracassi",
-                "notes": null
-              }
-            ]
-          },
-          {
             "title": "The Horse Thief",
             "kind": "Short Story",
             "yearPublished": "2017",
@@ -8235,6 +8760,20 @@
             ]
           },
           {
+            "title": "King Mob",
+            "kind": "Short Story",
+            "yearPublished": "2017",
+            "slug": "king-mob-by-philip-fracassi",
+            "grade": "C+",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Philip Fracassi",
+                "notes": null
+              }
+            ]
+          },
+          {
             "title": "Mandala",
             "kind": "Novella",
             "yearPublished": "2017",
@@ -8243,6 +8782,20 @@
             "includedInSlugs": [
               "behold-the-void-by-philip-fracassi"
             ],
+            "authors": [
+              {
+                "name": "Philip Fracassi",
+                "notes": null
+              }
+            ]
+          },
+          {
+            "title": "Shiloh",
+            "kind": "Novella",
+            "yearPublished": "2017",
+            "slug": "shiloh-by-philip-fracassi",
+            "grade": "B",
+            "includedInSlugs": [],
             "authors": [
               {
                 "name": "Philip Fracassi",
@@ -8275,20 +8828,6 @@
             "includedInSlugs": [
               "behold-the-void-by-philip-fracassi"
             ],
-            "authors": [
-              {
-                "name": "Philip Fracassi",
-                "notes": null
-              }
-            ]
-          },
-          {
-            "title": "Don't Let Them Get You Down",
-            "kind": "Novel",
-            "yearPublished": "2022",
-            "slug": "dont-let-them-get-you-down-by-philip-fracassi",
-            "grade": "C-",
-            "includedInSlugs": [],
             "authors": [
               {
                 "name": "Philip Fracassi",
@@ -8680,6 +9219,222 @@
         ]
       },
       {
+        "title": "Shiloh",
+        "kind": "Novella",
+        "yearPublished": "2017",
+        "slug": "shiloh-by-philip-fracassi",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Philip Fracassi",
+            "notes": null
+          }
+        ]
+      },
+      {
+        "title": "The Shining",
+        "kind": "Novel",
+        "yearPublished": "1977",
+        "slug": "the-shining-by-stephen-king",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Stephen King",
+            "notes": null
+          }
+        ]
+      },
+      {
+        "title": "The Skeptics' Guide to the Universe",
+        "kind": "Nonfiction",
+        "yearPublished": "2018",
+        "slug": "the-skeptics-guide-to-the-universe-by-steven-novella",
+        "grade": "B+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Steven Novella",
+            "notes": null
+          }
+        ]
+      }
+    ],
+    "includedWorks": []
+  },
+  {
+    "sequence": "2025-07-11-3",
+    "slug": "shiloh-by-philip-fracassi",
+    "title": "Shiloh",
+    "subtitle": null,
+    "sortTitle": "Shiloh",
+    "yearPublished": "2017",
+    "grade": "B",
+    "gradeValue": 9,
+    "kind": "Novella",
+    "date": "2025-07-11",
+    "authors": [
+      {
+        "slug": "philip-fracassi",
+        "notes": null,
+        "name": "Philip Fracassi",
+        "sortName": "Fracassi, Philip"
+      }
+    ],
+    "readings": [
+      {
+        "sequence": 3,
+        "date": "2025-07-11",
+        "isAudiobook": false,
+        "abandoned": false,
+        "readingTime": 1
+      }
+    ],
+    "includedInSlugs": [],
+    "yearReviewed": 2025,
+    "moreByAuthors": [
+      {
+        "name": "Philip Fracassi",
+        "slug": "philip-fracassi",
+        "works": [
+          {
+            "title": "King Mob",
+            "kind": "Short Story",
+            "yearPublished": "2017",
+            "slug": "king-mob-by-philip-fracassi",
+            "grade": "C+",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Philip Fracassi",
+                "notes": null
+              }
+            ]
+          },
+          {
+            "title": "Mandala",
+            "kind": "Novella",
+            "yearPublished": "2017",
+            "slug": "mandala-by-philip-fracassi",
+            "grade": "B+",
+            "includedInSlugs": [
+              "behold-the-void-by-philip-fracassi"
+            ],
+            "authors": [
+              {
+                "name": "Philip Fracassi",
+                "notes": null
+              }
+            ]
+          },
+          {
+            "title": "Sacculina",
+            "kind": "Novella",
+            "yearPublished": "2017",
+            "slug": "sacculina-by-philip-fracassi",
+            "grade": "B",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Philip Fracassi",
+                "notes": null
+              }
+            ]
+          },
+          {
+            "title": "Soft Construction of a Sunset",
+            "kind": "Short Story",
+            "yearPublished": "2017",
+            "slug": "soft-construction-of-a-sunset-by-philip-fracassi",
+            "grade": "B-",
+            "includedInSlugs": [
+              "behold-the-void-by-philip-fracassi"
+            ],
+            "authors": [
+              {
+                "name": "Philip Fracassi",
+                "notes": null
+              }
+            ]
+          },
+          {
+            "title": "Surfer Girl",
+            "kind": "Short Story",
+            "yearPublished": "2017",
+            "slug": "surfer-girl-by-philip-fracassi",
+            "grade": "C+",
+            "includedInSlugs": [
+              "behold-the-void-by-philip-fracassi"
+            ],
+            "authors": [
+              {
+                "name": "Philip Fracassi",
+                "notes": null
+              }
+            ]
+          },
+          {
+            "title": "Commodore",
+            "kind": "Novella",
+            "yearPublished": "2021",
+            "slug": "commodore-by-philip-fracassi",
+            "grade": "A",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Philip Fracassi",
+                "notes": null
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "moreReviews": [
+      {
+        "title": "The Rules of Attraction",
+        "kind": "Novel",
+        "yearPublished": "1987",
+        "slug": "the-rules-of-attraction-by-bret-easton-ellis",
+        "grade": "C+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Bret Easton Ellis",
+            "notes": null
+          }
+        ]
+      },
+      {
+        "title": "The Secret History",
+        "kind": "Novel",
+        "yearPublished": "1992",
+        "slug": "the-secret-history-by-donna-tartt",
+        "grade": "A",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Donna Tartt",
+            "notes": null
+          }
+        ]
+      },
+      {
+        "title": "Set the Boy Free",
+        "kind": "Nonfiction",
+        "yearPublished": "2016",
+        "slug": "set-the-boy-free-by-johnny-marr",
+        "grade": "B+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Johnny Marr",
+            "notes": null
+          }
+        ]
+      },
+      {
         "title": "The Shining",
         "kind": "Novel",
         "yearPublished": "1977",
@@ -8708,17 +9463,15 @@
         ]
       },
       {
-        "title": "Soft Construction of a Sunset",
-        "kind": "Short Story",
-        "yearPublished": "2017",
-        "slug": "soft-construction-of-a-sunset-by-philip-fracassi",
-        "grade": "B-",
-        "includedInSlugs": [
-          "behold-the-void-by-philip-fracassi"
-        ],
+        "title": "The Stand",
+        "kind": "Novel",
+        "yearPublished": "1978",
+        "slug": "the-stand-by-stephen-king",
+        "grade": "D",
+        "includedInSlugs": [],
         "authors": [
           {
-            "name": "Philip Fracassi",
+            "name": "Stephen King",
             "notes": null
           }
         ]
@@ -8764,22 +9517,6 @@
         "slug": "philip-fracassi",
         "works": [
           {
-            "title": "The Horse Thief",
-            "kind": "Short Story",
-            "yearPublished": "2017",
-            "slug": "the-horse-thief-by-philip-fracassi",
-            "grade": "B",
-            "includedInSlugs": [
-              "behold-the-void-by-philip-fracassi"
-            ],
-            "authors": [
-              {
-                "name": "Philip Fracassi",
-                "notes": null
-              }
-            ]
-          },
-          {
             "title": "Mandala",
             "kind": "Novella",
             "yearPublished": "2017",
@@ -8810,6 +9547,20 @@
             ]
           },
           {
+            "title": "Shiloh",
+            "kind": "Novella",
+            "yearPublished": "2017",
+            "slug": "shiloh-by-philip-fracassi",
+            "grade": "B",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Philip Fracassi",
+                "notes": null
+              }
+            ]
+          },
+          {
             "title": "Surfer Girl",
             "kind": "Short Story",
             "yearPublished": "2017",
@@ -8826,11 +9577,11 @@
             ]
           },
           {
-            "title": "Don't Let Them Get You Down",
-            "kind": "Novel",
-            "yearPublished": "2022",
-            "slug": "dont-let-them-get-you-down-by-philip-fracassi",
-            "grade": "C-",
+            "title": "Commodore",
+            "kind": "Novella",
+            "yearPublished": "2021",
+            "slug": "commodore-by-philip-fracassi",
+            "grade": "A",
             "includedInSlugs": [],
             "authors": [
               {
@@ -8840,11 +9591,11 @@
             ]
           },
           {
-            "title": "Gothic",
+            "title": "Don't Let Them Get You Down",
             "kind": "Novel",
-            "yearPublished": "2023",
-            "slug": "gothic-by-philip-fracassi",
-            "grade": "B+",
+            "yearPublished": "2022",
+            "slug": "dont-let-them-get-you-down-by-philip-fracassi",
+            "grade": "C-",
             "includedInSlugs": [],
             "authors": [
               {
@@ -8914,20 +9665,6 @@
         ]
       },
       {
-        "title": "The M.A.X. Muscle Plan",
-        "kind": "Nonfiction",
-        "yearPublished": "2012",
-        "slug": "the-max-muscle-plan-by-brad-schoenfeld",
-        "grade": "C-",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Brad Schoenfeld",
-            "notes": null
-          }
-        ]
-      },
-      {
         "title": "Total Recall",
         "kind": "Nonfiction",
         "yearPublished": "2012",
@@ -8938,6 +9675,20 @@
           {
             "name": "Arnold Schwarzenegger",
             "notes": null
+          }
+        ]
+      },
+      {
+        "title": "Tread Softly",
+        "kind": "Novel",
+        "yearPublished": "1987",
+        "slug": "tread-softly-by-richard-laymon",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Richard Laymon",
+            "notes": "as Richard Kelly"
           }
         ]
       }
@@ -8982,14 +9733,12 @@
         "slug": "philip-fracassi",
         "works": [
           {
-            "title": "Mandala",
+            "title": "Sacculina",
             "kind": "Novella",
             "yearPublished": "2017",
-            "slug": "mandala-by-philip-fracassi",
-            "grade": "B+",
-            "includedInSlugs": [
-              "behold-the-void-by-philip-fracassi"
-            ],
+            "slug": "sacculina-by-philip-fracassi",
+            "grade": "B",
+            "includedInSlugs": [],
             "authors": [
               {
                 "name": "Philip Fracassi",
@@ -8998,10 +9747,10 @@
             ]
           },
           {
-            "title": "Sacculina",
+            "title": "Shiloh",
             "kind": "Novella",
             "yearPublished": "2017",
-            "slug": "sacculina-by-philip-fracassi",
+            "slug": "shiloh-by-philip-fracassi",
             "grade": "B",
             "includedInSlugs": [],
             "authors": [
@@ -9020,6 +9769,20 @@
             "includedInSlugs": [
               "behold-the-void-by-philip-fracassi"
             ],
+            "authors": [
+              {
+                "name": "Philip Fracassi",
+                "notes": null
+              }
+            ]
+          },
+          {
+            "title": "Commodore",
+            "kind": "Novella",
+            "yearPublished": "2021",
+            "slug": "commodore-by-philip-fracassi",
+            "grade": "A",
+            "includedInSlugs": [],
             "authors": [
               {
                 "name": "Philip Fracassi",
@@ -9048,22 +9811,6 @@
             "slug": "gothic-by-philip-fracassi",
             "grade": "B+",
             "includedInSlugs": [],
-            "authors": [
-              {
-                "name": "Philip Fracassi",
-                "notes": null
-              }
-            ]
-          },
-          {
-            "title": "Mother",
-            "kind": "Short Story",
-            "yearPublished": "2015",
-            "slug": "mother-by-philip-fracassi",
-            "grade": "B-",
-            "includedInSlugs": [
-              "behold-the-void-by-philip-fracassi"
-            ],
             "authors": [
               {
                 "name": "Philip Fracassi",
@@ -9118,20 +9865,6 @@
         ]
       },
       {
-        "title": "The M.A.X. Muscle Plan",
-        "kind": "Nonfiction",
-        "yearPublished": "2012",
-        "slug": "the-max-muscle-plan-by-brad-schoenfeld",
-        "grade": "C-",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Brad Schoenfeld",
-            "notes": null
-          }
-        ]
-      },
-      {
         "title": "Total Recall",
         "kind": "Nonfiction",
         "yearPublished": "2012",
@@ -9156,6 +9889,20 @@
           {
             "name": "Richard Laymon",
             "notes": "as Richard Kelly"
+          }
+        ]
+      },
+      {
+        "title": "True Myths",
+        "kind": "Nonfiction",
+        "yearPublished": "1996",
+        "slug": "true-myths-by-nigel-andrews",
+        "grade": "D+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Nigel Andrews",
+            "notes": null
           }
         ]
       }
@@ -10076,6 +10823,20 @@
         ]
       },
       {
+        "title": "Commodore",
+        "kind": "Novella",
+        "yearPublished": "2021",
+        "slug": "commodore-by-philip-fracassi",
+        "grade": "A",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Philip Fracassi",
+            "notes": null
+          }
+        ]
+      },
+      {
         "title": "Consider This",
         "kind": "Nonfiction",
         "yearPublished": "2020",
@@ -10085,20 +10846,6 @@
         "authors": [
           {
             "name": "Chuck Palahniuk",
-            "notes": null
-          }
-        ]
-      },
-      {
-        "title": "The Creative Act",
-        "kind": "Nonfiction",
-        "yearPublished": "2023",
-        "slug": "the-creative-act-by-rick-rubin",
-        "grade": "C+",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Rick Rubin",
             "notes": null
           }
         ]
@@ -10139,20 +10886,6 @@
     "moreByAuthors": [],
     "moreReviews": [
       {
-        "title": "The Cipher",
-        "kind": "Novel",
-        "yearPublished": "1991",
-        "slug": "the-cipher-by-kathe-koja",
-        "grade": "B",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Kathe Koja",
-            "notes": null
-          }
-        ]
-      },
-      {
         "title": "Coffin",
         "kind": "Short Story",
         "yearPublished": "2017",
@@ -10161,6 +10894,20 @@
         "includedInSlugs": [
           "behold-the-void-by-philip-fracassi"
         ],
+        "authors": [
+          {
+            "name": "Philip Fracassi",
+            "notes": null
+          }
+        ]
+      },
+      {
+        "title": "Commodore",
+        "kind": "Novella",
+        "yearPublished": "2021",
+        "slug": "commodore-by-philip-fracassi",
+        "grade": "A",
+        "includedInSlugs": [],
         "authors": [
           {
             "name": "Philip Fracassi",
@@ -10553,6 +11300,20 @@
             ]
           },
           {
+            "title": "King Mob",
+            "kind": "Short Story",
+            "yearPublished": "2017",
+            "slug": "king-mob-by-philip-fracassi",
+            "grade": "C+",
+            "includedInSlugs": [],
+            "authors": [
+              {
+                "name": "Philip Fracassi",
+                "notes": null
+              }
+            ]
+          },
+          {
             "title": "Mandala",
             "kind": "Novella",
             "yearPublished": "2017",
@@ -10575,22 +11336,6 @@
             "slug": "sacculina-by-philip-fracassi",
             "grade": "B",
             "includedInSlugs": [],
-            "authors": [
-              {
-                "name": "Philip Fracassi",
-                "notes": null
-              }
-            ]
-          },
-          {
-            "title": "Soft Construction of a Sunset",
-            "kind": "Short Story",
-            "yearPublished": "2017",
-            "slug": "soft-construction-of-a-sunset-by-philip-fracassi",
-            "grade": "B-",
-            "includedInSlugs": [
-              "behold-the-void-by-philip-fracassi"
-            ],
             "authors": [
               {
                 "name": "Philip Fracassi",
@@ -10873,6 +11618,20 @@
         ]
       },
       {
+        "title": "King Mob",
+        "kind": "Short Story",
+        "yearPublished": "2017",
+        "slug": "king-mob-by-philip-fracassi",
+        "grade": "C+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Philip Fracassi",
+            "notes": null
+          }
+        ]
+      },
+      {
         "title": "Less Than Zero",
         "kind": "Novel",
         "yearPublished": "1985",
@@ -10882,20 +11641,6 @@
         "authors": [
           {
             "name": "Bret Easton Ellis",
-            "notes": null
-          }
-        ]
-      },
-      {
-        "title": "Live and Let Die",
-        "kind": "Novel",
-        "yearPublished": "1954",
-        "slug": "live-and-let-die-by-ian-fleming",
-        "grade": "D",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Ian Fleming",
             "notes": null
           }
         ]
@@ -11031,22 +11776,6 @@
     ],
     "moreReviews": [
       {
-        "title": "The Horse Thief",
-        "kind": "Short Story",
-        "yearPublished": "2017",
-        "slug": "the-horse-thief-by-philip-fracassi",
-        "grade": "B",
-        "includedInSlugs": [
-          "behold-the-void-by-philip-fracassi"
-        ],
-        "authors": [
-          {
-            "name": "Philip Fracassi",
-            "notes": null
-          }
-        ]
-      },
-      {
         "title": "I Will Find You",
         "kind": "Nonfiction",
         "yearPublished": "2017",
@@ -11070,6 +11799,20 @@
         "authors": [
           {
             "name": "Jerry Seinfeld",
+            "notes": null
+          }
+        ]
+      },
+      {
+        "title": "King Mob",
+        "kind": "Short Story",
+        "yearPublished": "2017",
+        "slug": "king-mob-by-philip-fracassi",
+        "grade": "C+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Philip Fracassi",
             "notes": null
           }
         ]
@@ -11317,6 +12060,20 @@
         ]
       },
       {
+        "title": "The M.A.X. Muscle Plan",
+        "kind": "Nonfiction",
+        "yearPublished": "2012",
+        "slug": "the-max-muscle-plan-by-brad-schoenfeld",
+        "grade": "C-",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Brad Schoenfeld",
+            "notes": null
+          }
+        ]
+      },
+      {
         "title": "Mandala",
         "kind": "Novella",
         "yearPublished": "2017",
@@ -11328,20 +12085,6 @@
         "authors": [
           {
             "name": "Philip Fracassi",
-            "notes": null
-          }
-        ]
-      },
-      {
-        "title": "Moonraker",
-        "kind": "Novel",
-        "yearPublished": "1955",
-        "slug": "moonraker-by-ian-fleming",
-        "grade": "B",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Ian Fleming",
             "notes": null
           }
         ]
@@ -11515,6 +12258,127 @@
         ]
       },
       {
+        "title": "The M.A.X. Muscle Plan",
+        "kind": "Nonfiction",
+        "yearPublished": "2012",
+        "slug": "the-max-muscle-plan-by-brad-schoenfeld",
+        "grade": "C-",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Brad Schoenfeld",
+            "notes": null
+          }
+        ]
+      },
+      {
+        "title": "Mandala",
+        "kind": "Novella",
+        "yearPublished": "2017",
+        "slug": "mandala-by-philip-fracassi",
+        "grade": "B+",
+        "includedInSlugs": [
+          "behold-the-void-by-philip-fracassi"
+        ],
+        "authors": [
+          {
+            "name": "Philip Fracassi",
+            "notes": null
+          }
+        ]
+      },
+      {
+        "title": "Moonraker",
+        "kind": "Novel",
+        "yearPublished": "1955",
+        "slug": "moonraker-by-ian-fleming",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Ian Fleming",
+            "notes": null
+          }
+        ]
+      }
+    ],
+    "includedWorks": []
+  },
+  {
+    "sequence": "2022-03-18-1",
+    "slug": "the-max-muscle-plan-by-brad-schoenfeld",
+    "title": "The M.A.X. Muscle Plan",
+    "subtitle": null,
+    "sortTitle": "M.A.X. Muscle Plan, The",
+    "yearPublished": "2012",
+    "grade": "C-",
+    "gradeValue": 5,
+    "kind": "Nonfiction",
+    "date": "2022-03-18",
+    "authors": [
+      {
+        "slug": "brad-schoenfeld",
+        "notes": null,
+        "name": "Brad Schoenfeld",
+        "sortName": "Schoenfeld, Brad"
+      }
+    ],
+    "readings": [
+      {
+        "sequence": 1,
+        "date": "2022-03-18",
+        "isAudiobook": false,
+        "abandoned": false,
+        "readingTime": 2
+      }
+    ],
+    "includedInSlugs": [],
+    "yearReviewed": 2022,
+    "moreByAuthors": [],
+    "moreReviews": [
+      {
+        "title": "Living with a SEAL",
+        "kind": "Nonfiction",
+        "yearPublished": "2015",
+        "slug": "living-with-a-seal-by-jesse-itzler",
+        "grade": "Abandoned",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Jesse Itzler",
+            "notes": null
+          }
+        ]
+      },
+      {
+        "title": "The Lonely One",
+        "kind": "Short Story",
+        "yearPublished": "1985",
+        "slug": "the-lonely-one-by-richard-laymon",
+        "grade": "C+",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Richard Laymon",
+            "notes": null
+          }
+        ]
+      },
+      {
+        "title": "The Long Walk",
+        "kind": "Novel",
+        "yearPublished": "1978",
+        "slug": "the-long-walk-by-stephen-king",
+        "grade": "D",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Stephen King",
+            "notes": "as Richard Bachman"
+          }
+        ]
+      },
+      {
         "title": "Mandala",
         "kind": "Novella",
         "yearPublished": "2017",
@@ -11556,129 +12420,6 @@
         "authors": [
           {
             "name": "Philip Fracassi",
-            "notes": null
-          }
-        ]
-      }
-    ],
-    "includedWorks": []
-  },
-  {
-    "sequence": "2022-03-18-1",
-    "slug": "the-max-muscle-plan-by-brad-schoenfeld",
-    "title": "The M.A.X. Muscle Plan",
-    "subtitle": null,
-    "sortTitle": "The M.A.X. Muscle Plan",
-    "yearPublished": "2012",
-    "grade": "C-",
-    "gradeValue": 5,
-    "kind": "Nonfiction",
-    "date": "2022-03-18",
-    "authors": [
-      {
-        "slug": "brad-schoenfeld",
-        "notes": null,
-        "name": "Brad Schoenfeld",
-        "sortName": "Schoenfeld, Brad"
-      }
-    ],
-    "readings": [
-      {
-        "sequence": 1,
-        "date": "2022-03-18",
-        "isAudiobook": false,
-        "abandoned": false,
-        "readingTime": 2
-      }
-    ],
-    "includedInSlugs": [],
-    "yearReviewed": 2022,
-    "moreByAuthors": [],
-    "moreReviews": [
-      {
-        "title": "Soft Construction of a Sunset",
-        "kind": "Short Story",
-        "yearPublished": "2017",
-        "slug": "soft-construction-of-a-sunset-by-philip-fracassi",
-        "grade": "B-",
-        "includedInSlugs": [
-          "behold-the-void-by-philip-fracassi"
-        ],
-        "authors": [
-          {
-            "name": "Philip Fracassi",
-            "notes": null
-          }
-        ]
-      },
-      {
-        "title": "The Stand",
-        "kind": "Novel",
-        "yearPublished": "1978",
-        "slug": "the-stand-by-stephen-king",
-        "grade": "D",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Stephen King",
-            "notes": null
-          }
-        ]
-      },
-      {
-        "title": "Surfer Girl",
-        "kind": "Short Story",
-        "yearPublished": "2017",
-        "slug": "surfer-girl-by-philip-fracassi",
-        "grade": "C+",
-        "includedInSlugs": [
-          "behold-the-void-by-philip-fracassi"
-        ],
-        "authors": [
-          {
-            "name": "Philip Fracassi",
-            "notes": null
-          }
-        ]
-      },
-      {
-        "title": "Total Recall",
-        "kind": "Nonfiction",
-        "yearPublished": "2012",
-        "slug": "total-recall-by-arnold-schwarzenegger",
-        "grade": "C+",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Arnold Schwarzenegger",
-            "notes": null
-          }
-        ]
-      },
-      {
-        "title": "Tread Softly",
-        "kind": "Novel",
-        "yearPublished": "1987",
-        "slug": "tread-softly-by-richard-laymon",
-        "grade": "C",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Richard Laymon",
-            "notes": "as Richard Kelly"
-          }
-        ]
-      },
-      {
-        "title": "True Myths",
-        "kind": "Nonfiction",
-        "yearPublished": "1996",
-        "slug": "true-myths-by-nigel-andrews",
-        "grade": "D+",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Nigel Andrews",
             "notes": null
           }
         ]
@@ -11763,6 +12504,20 @@
         ]
       },
       {
+        "title": "Progeny of the Adder",
+        "kind": "Novel",
+        "yearPublished": "1965",
+        "slug": "progeny-of-the-adder-by-leslie-h-whitten-jr",
+        "grade": "B-",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Leslie H. Whitten Jr.",
+            "notes": null
+          }
+        ]
+      },
+      {
         "title": "Rage",
         "kind": "Novel",
         "yearPublished": "1976",
@@ -11786,20 +12541,6 @@
         "authors": [
           {
             "name": "David Mamet",
-            "notes": null
-          }
-        ]
-      },
-      {
-        "title": "Record Play Pause",
-        "kind": "Nonfiction",
-        "yearPublished": "2019",
-        "slug": "record-play-pause-by-stephen-morris",
-        "grade": "A",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Stephen Morris",
             "notes": null
           }
         ]
@@ -12140,6 +12881,20 @@
         ]
       },
       {
+        "title": "Shiloh",
+        "kind": "Novella",
+        "yearPublished": "2017",
+        "slug": "shiloh-by-philip-fracassi",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Philip Fracassi",
+            "notes": null
+          }
+        ]
+      },
+      {
         "title": "The Shining",
         "kind": "Novel",
         "yearPublished": "1977",
@@ -12149,20 +12904,6 @@
         "authors": [
           {
             "name": "Stephen King",
-            "notes": null
-          }
-        ]
-      },
-      {
-        "title": "The Skeptics' Guide to the Universe",
-        "kind": "Nonfiction",
-        "yearPublished": "2018",
-        "slug": "the-skeptics-guide-to-the-universe-by-steven-novella",
-        "grade": "B+",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Steven Novella",
             "notes": null
           }
         ]
@@ -12301,20 +13042,6 @@
     ],
     "moreReviews": [
       {
-        "title": "Sacculina",
-        "kind": "Novella",
-        "yearPublished": "2017",
-        "slug": "sacculina-by-philip-fracassi",
-        "grade": "B",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Philip Fracassi",
-            "notes": null
-          }
-        ]
-      },
-      {
         "title": "The Secret History",
         "kind": "Novel",
         "yearPublished": "1992",
@@ -12338,6 +13065,20 @@
         "authors": [
           {
             "name": "Johnny Marr",
+            "notes": null
+          }
+        ]
+      },
+      {
+        "title": "Shiloh",
+        "kind": "Novella",
+        "yearPublished": "2017",
+        "slug": "shiloh-by-philip-fracassi",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Philip Fracassi",
             "notes": null
           }
         ]
@@ -12424,20 +13165,6 @@
     "moreByAuthors": [],
     "moreReviews": [
       {
-        "title": "The Secret History",
-        "kind": "Novel",
-        "yearPublished": "1992",
-        "slug": "the-secret-history-by-donna-tartt",
-        "grade": "A",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Donna Tartt",
-            "notes": null
-          }
-        ]
-      },
-      {
         "title": "Set the Boy Free",
         "kind": "Nonfiction",
         "yearPublished": "2016",
@@ -12447,6 +13174,20 @@
         "authors": [
           {
             "name": "Johnny Marr",
+            "notes": null
+          }
+        ]
+      },
+      {
+        "title": "Shiloh",
+        "kind": "Novella",
+        "yearPublished": "2017",
+        "slug": "shiloh-by-philip-fracassi",
+        "grade": "B",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Philip Fracassi",
             "notes": null
           }
         ]
@@ -12638,15 +13379,15 @@
     ],
     "moreReviews": [
       {
-        "title": "Set the Boy Free",
-        "kind": "Nonfiction",
-        "yearPublished": "2016",
-        "slug": "set-the-boy-free-by-johnny-marr",
-        "grade": "B+",
+        "title": "Shiloh",
+        "kind": "Novella",
+        "yearPublished": "2017",
+        "slug": "shiloh-by-philip-fracassi",
+        "grade": "B",
         "includedInSlugs": [],
         "authors": [
           {
-            "name": "Johnny Marr",
+            "name": "Philip Fracassi",
             "notes": null
           }
         ]
@@ -12698,20 +13439,6 @@
         ]
       },
       {
-        "title": "The M.A.X. Muscle Plan",
-        "kind": "Nonfiction",
-        "yearPublished": "2012",
-        "slug": "the-max-muscle-plan-by-brad-schoenfeld",
-        "grade": "C-",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Brad Schoenfeld",
-            "notes": null
-          }
-        ]
-      },
-      {
         "title": "Total Recall",
         "kind": "Nonfiction",
         "yearPublished": "2012",
@@ -12722,6 +13449,20 @@
           {
             "name": "Arnold Schwarzenegger",
             "notes": null
+          }
+        ]
+      },
+      {
+        "title": "Tread Softly",
+        "kind": "Novel",
+        "yearPublished": "1987",
+        "slug": "tread-softly-by-richard-laymon",
+        "grade": "C",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Richard Laymon",
+            "notes": "as Richard Kelly"
           }
         ]
       }
@@ -12988,6 +13729,22 @@
     "moreByAuthors": [],
     "moreReviews": [
       {
+        "title": "Soft Construction of a Sunset",
+        "kind": "Short Story",
+        "yearPublished": "2017",
+        "slug": "soft-construction-of-a-sunset-by-philip-fracassi",
+        "grade": "B-",
+        "includedInSlugs": [
+          "behold-the-void-by-philip-fracassi"
+        ],
+        "authors": [
+          {
+            "name": "Philip Fracassi",
+            "notes": null
+          }
+        ]
+      },
+      {
         "title": "The Stand",
         "kind": "Novel",
         "yearPublished": "1978",
@@ -13013,20 +13770,6 @@
         "authors": [
           {
             "name": "Philip Fracassi",
-            "notes": null
-          }
-        ]
-      },
-      {
-        "title": "The M.A.X. Muscle Plan",
-        "kind": "Nonfiction",
-        "yearPublished": "2012",
-        "slug": "the-max-muscle-plan-by-brad-schoenfeld",
-        "grade": "C-",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Brad Schoenfeld",
             "notes": null
           }
         ]
@@ -13204,6 +13947,20 @@
     ],
     "moreReviews": [
       {
+        "title": "The Stand",
+        "kind": "Novel",
+        "yearPublished": "1978",
+        "slug": "the-stand-by-stephen-king",
+        "grade": "D",
+        "includedInSlugs": [],
+        "authors": [
+          {
+            "name": "Stephen King",
+            "notes": null
+          }
+        ]
+      },
+      {
         "title": "Surfer Girl",
         "kind": "Short Story",
         "yearPublished": "2017",
@@ -13215,20 +13972,6 @@
         "authors": [
           {
             "name": "Philip Fracassi",
-            "notes": null
-          }
-        ]
-      },
-      {
-        "title": "The M.A.X. Muscle Plan",
-        "kind": "Nonfiction",
-        "yearPublished": "2012",
-        "slug": "the-max-muscle-plan-by-brad-schoenfeld",
-        "grade": "C-",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Brad Schoenfeld",
             "notes": null
           }
         ]
@@ -13325,15 +14068,17 @@
     "moreByAuthors": [],
     "moreReviews": [
       {
-        "title": "The M.A.X. Muscle Plan",
-        "kind": "Nonfiction",
-        "yearPublished": "2012",
-        "slug": "the-max-muscle-plan-by-brad-schoenfeld",
-        "grade": "C-",
-        "includedInSlugs": [],
+        "title": "Surfer Girl",
+        "kind": "Short Story",
+        "yearPublished": "2017",
+        "slug": "surfer-girl-by-philip-fracassi",
+        "grade": "C+",
+        "includedInSlugs": [
+          "behold-the-void-by-philip-fracassi"
+        ],
         "authors": [
           {
-            "name": "Brad Schoenfeld",
+            "name": "Philip Fracassi",
             "notes": null
           }
         ]

@@ -27,8 +27,8 @@ export function ListHeaderButton({
     >
       <a
         className={`
-          block px-4 py-2
-          hover:bg-accent hover:text-inverse
+          block transform-gpu px-4 py-2 transition-all
+          hover:scale-105 hover:bg-accent hover:text-inverse
         `}
         href={href}
       >
@@ -83,7 +83,7 @@ export function ListWithFiltersLayout({
               </div>
               <div
                 className={`
-                  mx-auto max-w-(--breakpoint-max)
+                  mx-auto max-w-(--breakpoint-desktop)
                   grid-cols-[1fr_48px_minmax(398px,33%)]
                   tablet-landscape:grid tablet-landscape:grid-rows-[auto_1fr]
                 `}
@@ -96,7 +96,7 @@ export function ListWithFiltersLayout({
                     tablet-landscape:mr-12 tablet-landscape:block
                     tablet-landscape:py-24 tablet-landscape:pb-12
                     tablet-landscape:shadow-none
-                    desktop:mr-20
+                    laptop:mr-20
                   `}
                   style={{
                     gridTemplateRows: filtersVisible ? "1fr" : "0fr",
@@ -110,7 +110,7 @@ export function ListWithFiltersLayout({
                         tablet-landscape:overflow-visible
                         tablet-landscape:bg-default
                         tablet-landscape:px-container tablet-landscape:pt-0
-                        desktop:px-8
+                        laptop:px-8
                       `}
                     >
                       <fieldset
@@ -141,7 +141,7 @@ export function ListWithFiltersLayout({
                   className={`
                     col-start-1 row-start-2 pb-10
                     tablet-landscape:pl-12
-                    desktop:pl-20
+                    laptop:pl-20
                   `}
                 >
                   {list}
@@ -169,9 +169,9 @@ function ListHeader({
   return (
     <div
       className={`
-        mx-auto flex w-full max-w-(--breakpoint-max) flex-wrap items-baseline
-        justify-between gap-x-4 gap-y-5 px-container py-10 font-sans font-medium
-        tracking-wide text-subtle uppercase
+        mx-auto flex w-full max-w-(--breakpoint-desktop) flex-wrap
+        items-baseline justify-between gap-x-4 gap-y-5 px-container py-10
+        font-sans font-medium tracking-wide text-subtle uppercase
       `}
     >
       <span className="block pr-4">

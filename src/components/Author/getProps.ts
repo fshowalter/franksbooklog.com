@@ -1,6 +1,8 @@
 import { type Author, getAuthorDetails } from "~/api/authors";
 import { getAvatarImageProps } from "~/api/avatars";
+import { getBackdropImageProps } from "~/api/backdrops";
 import { getFluidCoverImageProps } from "~/api/covers";
+import { BackdropImageConfig } from "~/components/Backdrop";
 import { ListItemCoverImageConfig } from "~/components/ListItemCover";
 
 import type { ListItemValue, Props } from "./Author";
@@ -38,6 +40,10 @@ export async function getProps(slug: string): Promise<Props> {
 
   return {
     avatarImageProps: await getAvatarImageProps(author.slug, AvatarImageConfig),
+    backdropImageProps: await getBackdropImageProps(
+      "author",
+      BackdropImageConfig,
+    ),
     deck: deck(author),
     distinctKinds,
     distinctPublishedYears,

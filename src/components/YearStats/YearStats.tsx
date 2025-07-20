@@ -1,8 +1,9 @@
 import type { JSX } from "react";
 
+import type { BackdropImageProps } from "~/api/backdrops";
 import type { YearStats } from "~/api/yearStats";
 
-import { SolidBackdrop } from "~/components/Backdrop";
+import { Backdrop, BreadcrumbLink } from "~/components/Backdrop";
 import { DecadeDistribution } from "~/components/DecadeDistribution";
 import { EditionDistribution } from "~/components/EditionDistribution";
 import { KindDistribution } from "~/components/KindDistribution";
@@ -13,6 +14,7 @@ import { StatsNavigation } from "~/components/StatsNavigation";
 import { Callouts } from "./Callouts";
 
 export type Props = {
+  backdropImageProps: BackdropImageProps;
   deck: string;
   distinctStatYears: readonly string[];
   mostReadAuthors: React.ComponentProps<typeof MostReadAuthors>["values"];
@@ -21,6 +23,7 @@ export type Props = {
 };
 
 export function YearStats({
+  backdropImageProps,
   deck,
   distinctStatYears,
   mostReadAuthors,
@@ -28,15 +31,16 @@ export function YearStats({
   year,
 }: Props): JSX.Element {
   return (
-    <Layout className="flex flex-col items-center bg-subtle">
-      <SolidBackdrop
+    <Layout className="flex flex-col items-center bg-subtle" hasBackdrop={true}>
+      <Backdrop
+        blur={true}
         breadcrumb={
-          <a className="text-accent" href="/readings/">
-            Reading Log
-          </a>
+          <BreadcrumbLink href="/readings/">Reading Log</BreadcrumbLink>
         }
+        centerText={true}
         deck={deck}
-        narrowTitle={true}
+        imageProps={backdropImageProps}
+        size="small"
         title={`${year} Stats`}
       />
       <StatsNavigation
@@ -54,7 +58,7 @@ export function YearStats({
       <Callouts bookCount={stats.bookCount} workCount={stats.workCount} />
       <div
         className={`
-          mx-auto flex w-full max-w-(--breakpoint-max) flex-col items-stretch
+          mx-auto flex w-full max-w-(--breakpoint-laptop) flex-col items-stretch
           gap-y-8 py-10
           tablet:px-container
         `}
@@ -62,7 +66,7 @@ export function YearStats({
         <div
           className={`
             mx-auto flex w-full flex-col gap-y-8
-            desktop:max-w-[calc(66%+24px)]
+            laptop:max-w-[calc(66%+24px)]
           `}
         >
           <MostReadAuthors values={mostReadAuthors} />
@@ -70,7 +74,7 @@ export function YearStats({
         <div
           className={`
             flex flex-col items-start gap-y-8
-            desktop:flex-row desktop:gap-x-8
+            laptop:flex-row laptop:gap-x-8
           `}
         >
           <DecadeDistribution values={stats.decadeDistribution} />

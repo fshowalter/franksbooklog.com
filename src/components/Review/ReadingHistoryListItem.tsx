@@ -96,7 +96,13 @@ function Details({ value }: { value: ReviewWithContent["readings"][0] }) {
 
   return (
     <details className="font-light text-subtle">
-      <summary className="cursor-pointer leading-6">
+      <summary
+        className={`
+          origin-left transform-gpu cursor-pointer leading-6
+          transition-transform
+          hover:scale-105
+        `}
+      >
         {summaryText}{" "}
         <span className="text-accent">{value.readingTime} Days</span>
       </summary>

@@ -11,7 +11,7 @@ import { toSentenceArray } from "~/utils";
 export const CoverImageConfig = {
   height: 372,
   sizes:
-    "(min-width: 1840px) 248px, (min-width: 1300px) calc(13.08vw + 10px), (min-width: 1260px) calc(-360vw + 4784px), (min-width: 900px) calc(19.12vw + 11px), (min-width: 600px) 27.5vw, calc(41.43vw + 8px)",
+    "(min-width: 1860px) 200px, (min-width: 1440px) calc(9.75vw + 21px), (min-width: 1280px) calc(16.43vw - 59px), (min-width: 1040px) calc(6.36vw + 120px), (min-width: 960px) 200px, (min-width: 780px) calc(11.25vw + 94px), (min-width: 620px) 200px, (min-width: 460px) calc(25.71vw + 46px), calc(42.14vw - 12px)",
   width: 248,
 };
 
@@ -40,36 +40,42 @@ export function HomeListItem({
   return (
     <li
       className={`
-        relative flex w-[50%] max-w-[344px] grow flex-col items-center p-1
-        has-[a:hover]:bg-canvas has-[a:hover]:shadow-hover
-        max:w-[100%]
-        min-[496px]:p-4
-        min-[768px]:w-[33.33333333%]
-        min-[900px]:w-[25%]
-        min-[1360px]:w-[16.66666667%]
+        group/card relative row-span-2 grid transform-gpu grid-rows-subgrid
+        gap-y-0 transition-transform
+        has-[a:hover]:-translate-y-2 has-[a:hover]:drop-shadow-2xl
       `}
     >
       <div
         className={`
-          flex h-full w-full flex-col bg-default p-3
-          min-[496px]:px-8 min-[496px]:pt-6 min-[496px]:pb-4
+          @container z-10 flex justify-center self-end bg-default px-3 pt-3
+          @min-[200px]:px-[clamp(4px,10cqw,32px)] @min-[200px]:pt-6
         `}
       >
-        <Cover
-          decoding="async"
-          imageProps={value.coverImageProps}
-          {...CoverImageConfig}
-          alt={`A cover of ${value.title} by ${toSentenceArray(
-            value.authors.map((a) => a.name),
-          ).join("")}`}
-          loading={eagerLoadCoverImage ? "eager" : "lazy"}
-        />
         <div
           className={`
-            flex w-full grow flex-col bg-default px-1 pb-8
-            min-[496px]:pb-4
+            relative
+            after:absolute after:inset-x-0 after:top-0 after:bottom-0 after:z-20
+            after:bg-default after:opacity-15 after:transition-opacity
+            group-hover/card:after:opacity-0
           `}
         >
+          <Cover
+            decoding="async"
+            imageProps={value.coverImageProps}
+            {...CoverImageConfig}
+            className={`max-w-[200px]`}
+            loading={eagerLoadCoverImage ? "eager" : "lazy"}
+          />
+        </div>
+      </div>
+      <div
+        className={`
+          @container flex justify-center bg-default px-4 pb-8
+          group-has-[a:hover]/card:shadow-[0px_-5px_5px_2px,rgba(0,0,0,.85)]
+          @min-[193px]:px-[clamp(4px,14cqw,32px)] @min-[193px]:pb-6
+        `}
+      >
+        <div className={`flex w-full max-w-[200px] flex-col`}>
           <div
             className={`
               pt-3 font-sans text-xxs leading-4 font-light tracking-wide
@@ -81,19 +87,16 @@ export function HomeListItem({
           <div
             className={`
               pt-2 text-base leading-5 font-medium
-              max:pt-2 max:text-xl
               tablet:pt-3 tablet:text-md
+              desktop:pt-2 desktop:text-xl
             `}
           >
             <a
               className={`
-                inline-block
-                before:absolute before:inset-x-4 before:top-4
-                before:aspect-cover before:bg-default before:opacity-15
-                after:absolute after:top-0 after:left-0 after:z-10
+                block
+                after:absolute after:top-0 after:left-0 after:z-60
                 after:size-full after:opacity-0
-                hover:text-accent hover:before:opacity-0
-                min-[496px]:before:inset-x-12 min-[496px]:before:top-10
+                hover:text-accent
               `}
               href={`/reviews/${value.slug}/`}
               rel="canonical"
