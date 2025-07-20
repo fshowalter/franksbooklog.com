@@ -4,7 +4,7 @@
   "project": ["**/*", "!src/**/__mocks__/**"],
   "ignoreDependencies": [
     "@prettier/plugin-xml",
-    "@vitest/coverage-v8 ",
+    "@vitest/coverage-v8",
     "babel-plugin-react-compiler"
   ]
 }
