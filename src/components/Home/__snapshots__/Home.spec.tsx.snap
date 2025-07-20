@@ -50,10 +50,7 @@ exports[`Home > matches snapshot 1`] = `
       "
               >
                 <a
-                  class="
-          text-inherit transition-colors
-          
-        "
+                  class="text-inherit"
                   href="/"
                   style="text-shadow: 1px 1px 2px black;"
                 >
@@ -68,10 +65,7 @@ exports[`Home > matches snapshot 1`] = `
       "
               >
                 <a
-                  class="
-          text-inherit transition-colors
-          
-        "
+                  class="text-inherit"
                   href="/how-i-grade/"
                   style="text-shadow: 1px 1px 2px black;"
                 >
@@ -86,10 +80,7 @@ exports[`Home > matches snapshot 1`] = `
       "
               >
                 <a
-                  class="
-          text-inherit transition-colors
-          
-        "
+                  class="text-inherit"
                   href="/reviews/"
                   style="text-shadow: 1px 1px 2px black;"
                 >
@@ -104,10 +95,7 @@ exports[`Home > matches snapshot 1`] = `
       "
               >
                 <a
-                  class="
-          text-inherit transition-colors
-          
-        "
+                  class="text-inherit"
                   href="/authors/"
                   style="text-shadow: 1px 1px 2px black;"
                 >
@@ -122,10 +110,7 @@ exports[`Home > matches snapshot 1`] = `
       "
               >
                 <a
-                  class="
-          text-inherit transition-colors
-          
-        "
+                  class="text-inherit"
                   href="/readings/"
                   style="text-shadow: 1px 1px 2px black;"
                 >
