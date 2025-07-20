@@ -360,7 +360,7 @@
 @layer components {
   .rendered-markdown {
     a {
-      border-bottom: solid 1px var(--bg-subtle);
+      border-bottom: solid 1px var(--bg-canvas);
       padding-right: 1px;
       transition: all 150ms ease-out;
     }
