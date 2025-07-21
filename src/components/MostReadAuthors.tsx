@@ -67,7 +67,7 @@ export function MostReadAuthors({
               >
                 <div
                   className={`
-                    origin-left transform-gpu font-sans text-sm text-muted
+                    origin-center transform-gpu font-sans text-sm text-muted
                     transition-transform
                     has-[a:hover]:scale-110
                   `}
