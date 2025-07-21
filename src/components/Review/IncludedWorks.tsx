@@ -21,7 +21,7 @@ export function IncludedWorks({ values }: Props) {
           tablet:pt-12
         `}
       >
-        <ul className="">
+        <ul>
           {values.map((value) => (
             <li
               className={`

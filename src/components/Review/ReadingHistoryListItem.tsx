@@ -135,14 +135,14 @@ function Details({ value }: { value: ReviewWithContent["readings"][0] }) {
                   font-sans text-xs
                 `}
               >
-                <div className="">{entryDate}</div>
+                <div>{entryDate}</div>
                 <div
                   className={`
                     col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap
                   `}
                 >
-                  <div className="">{entry.progress}</div>
+                  <div>{entry.progress}</div>
                 </div>
               </div>
               <div className="col-span-2 col-start-2 row-start-3 bg-stripe">

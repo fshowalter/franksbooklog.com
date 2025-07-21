@@ -4,7 +4,7 @@ export function Logo({ className }: { className?: string }) {
       className={`
         flex transform-gpu flex-col transition-transform
         has-[a:hover]:scale-105
-        ${className}
+        ${className ?? ""}
       `}
     >
       <div

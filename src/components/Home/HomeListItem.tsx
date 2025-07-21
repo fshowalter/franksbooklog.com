@@ -123,7 +123,6 @@ export function HomeListItem({
                 return (
                   <AuthorLink
                     as="span"
-                    className=""
                     key={author.slug}
                     name={author.name}
                     notes={author.notes}

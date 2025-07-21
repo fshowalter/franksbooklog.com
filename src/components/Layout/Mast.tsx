@@ -28,12 +28,12 @@ export function Mast({
       style={{
         backgroundImage: addGradient
           ? "linear-gradient(to bottom, rgba(0,0,0,.85), transparent 95%)"
-          : undefined,
+          : "",
         color: hasBackdrop ? "#fff" : "var(--fg-default)",
         position: staticMast ? "static" : "absolute",
       }}
     >
-      {hideLogo ? <div /> : <Logo className="" />}
+      {hideLogo ? <div /> : <Logo />}
       <div className="flex items-center">
         <nav
           className={`
@@ -161,7 +161,7 @@ function NavListItem({
         className={`text-inherit`}
         href={value.target}
         style={{
-          textShadow: hasBackdrop ? "1px 1px 2px black" : undefined,
+          textShadow: hasBackdrop ? "1px 1px 2px black" : "",
         }}
       >
         {value.text}
