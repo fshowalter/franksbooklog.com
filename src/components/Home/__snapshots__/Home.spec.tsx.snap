@@ -510,9 +510,7 @@ exports[`Home > matches snapshot 1`] = `
                     >
                       by 
                     </span>
-                    <span
-                      class=""
-                    >
+                    <span>
                       Richard Laymon
                     </span>
                   </p>
@@ -656,9 +654,7 @@ exports[`Home > matches snapshot 1`] = `
                     >
                       by 
                     </span>
-                    <span
-                      class=""
-                    >
+                    <span>
                       Peter Straub
                     </span>
                   </p>
@@ -802,9 +798,7 @@ exports[`Home > matches snapshot 1`] = `
                     >
                       by 
                     </span>
-                    <span
-                      class=""
-                    >
+                    <span>
                       Lol Tolhurst
                     </span>
                   </p>
@@ -948,9 +942,7 @@ exports[`Home > matches snapshot 1`] = `
                     >
                       by 
                     </span>
-                    <span
-                      class=""
-                    >
+                    <span>
                       David Mamet
                     </span>
                   </p>
@@ -1094,9 +1086,7 @@ exports[`Home > matches snapshot 1`] = `
                     >
                       by 
                     </span>
-                    <span
-                      class=""
-                    >
+                    <span>
                       Stephen Morris
                     </span>
                   </p>
@@ -1240,9 +1230,7 @@ exports[`Home > matches snapshot 1`] = `
                     >
                       by 
                     </span>
-                    <span
-                      class=""
-                    >
+                    <span>
                       Philip Fracassi
                     </span>
                   </p>
@@ -1386,9 +1374,7 @@ exports[`Home > matches snapshot 1`] = `
                     >
                       by 
                     </span>
-                    <span
-                      class=""
-                    >
+                    <span>
                       Stephen Morris
                     </span>
                   </p>
@@ -1532,15 +1518,11 @@ exports[`Home > matches snapshot 1`] = `
                     >
                       by 
                     </span>
-                    <span
-                      class=""
-                    >
+                    <span>
                       Tom Holland
                     </span>
                      and 
-                    <span
-                      class=""
-                    >
+                    <span>
                       A. Jack Ulrich
                     </span>
                   </p>
@@ -1684,9 +1666,7 @@ exports[`Home > matches snapshot 1`] = `
                     >
                       by 
                     </span>
-                    <span
-                      class=""
-                    >
+                    <span>
                       Philip Fracassi
                     </span>
                   </p>
@@ -1830,9 +1810,7 @@ exports[`Home > matches snapshot 1`] = `
                     >
                       by 
                     </span>
-                    <span
-                      class=""
-                    >
+                    <span>
                       Rick Rubin
                     </span>
                   </p>
@@ -1976,9 +1954,7 @@ exports[`Home > matches snapshot 1`] = `
                     >
                       by 
                     </span>
-                    <span
-                      class=""
-                    >
+                    <span>
                       Philip Fracassi
                     </span>
                   </p>
@@ -2122,9 +2098,7 @@ exports[`Home > matches snapshot 1`] = `
                     >
                       by 
                     </span>
-                    <span
-                      class=""
-                    >
+                    <span>
                       Kathe Koja
                     </span>
                   </p>
@@ -2202,7 +2176,7 @@ exports[`Home > matches snapshot 1`] = `
               class="
         flex transform-gpu flex-col transition-transform
         has-[a:hover]:scale-105
-        undefined
+        
       "
             >
               <div
