@@ -737,32 +737,36 @@ exports[`YearStats > matches snapshot for slug 2011 1`] = `
               </h2>
               <div
                 class="
-          grid w-full grid-cols-[1fr_auto]
+          grid w-full grid-cols-[1fr_24px_auto]
           tablet:whitespace-nowrap
         "
               >
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       1970s
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       1
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -790,32 +794,36 @@ exports[`YearStats > matches snapshot for slug 2011 1`] = `
               </h2>
               <div
                 class="
-          grid w-full grid-cols-[1fr_auto]
+          grid w-full grid-cols-[1fr_24px_auto]
           tablet:whitespace-nowrap
         "
               >
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Novel
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       1
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -843,32 +851,36 @@ exports[`YearStats > matches snapshot for slug 2011 1`] = `
               </h2>
               <div
                 class="
-          grid w-full grid-cols-[1fr_auto]
+          grid w-full grid-cols-[1fr_24px_auto]
           tablet:whitespace-nowrap
         "
               >
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Paperback
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       1
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -983,30 +995,27 @@ exports[`YearStats > matches snapshot for slug 2011 1`] = `
                   New visitors might want to start by reading about 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/how-i-grade/"
                   >
                     how I grade
                   </a>
-                  . After that, feel free to browse my 
+                  . After that, feel free to browse 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/reviews/"
                   >
-                    reviews
+                    my reviews
                   </a>
                   , which are also indexed 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/authors/"
@@ -1021,8 +1030,7 @@ exports[`YearStats > matches snapshot for slug 2011 1`] = `
                   I also keep a 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/readings/"
@@ -1032,8 +1040,7 @@ exports[`YearStats > matches snapshot for slug 2011 1`] = `
                    that tracks everything I read, whether it gets a full review or not, complete with 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/readings/stats/"
@@ -1925,9 +1932,10 @@ exports[`YearStats > matches snapshot for slug 2012 1`] = `
                   >
                     <div
                       class="
-                    origin-center transform-gpu font-sans text-sm text-muted
+                    origin-center transform-gpu font-sans text-xs text-muted
                     transition-transform
                     has-[a:hover]:scale-110
+                    tablet:text-sm
                   "
                     >
                       <a
@@ -2188,32 +2196,36 @@ exports[`YearStats > matches snapshot for slug 2012 1`] = `
               </h2>
               <div
                 class="
-          grid w-full grid-cols-[1fr_auto]
+          grid w-full grid-cols-[1fr_24px_auto]
           tablet:whitespace-nowrap
         "
               >
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       1970s
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       3
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -2227,27 +2239,31 @@ exports[`YearStats > matches snapshot for slug 2012 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       2000s
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       2
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -2275,32 +2291,36 @@ exports[`YearStats > matches snapshot for slug 2012 1`] = `
               </h2>
               <div
                 class="
-          grid w-full grid-cols-[1fr_auto]
+          grid w-full grid-cols-[1fr_24px_auto]
           tablet:whitespace-nowrap
         "
               >
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Collection
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       1
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -2314,27 +2334,31 @@ exports[`YearStats > matches snapshot for slug 2012 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Nonfiction
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       2
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -2348,27 +2372,31 @@ exports[`YearStats > matches snapshot for slug 2012 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Novel
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       2
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -2396,32 +2424,36 @@ exports[`YearStats > matches snapshot for slug 2012 1`] = `
               </h2>
               <div
                 class="
-          grid w-full grid-cols-[1fr_auto]
+          grid w-full grid-cols-[1fr_24px_auto]
           tablet:whitespace-nowrap
         "
               >
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Hardcover
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       2
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -2435,27 +2467,31 @@ exports[`YearStats > matches snapshot for slug 2012 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Paperback
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       3
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -2570,30 +2606,27 @@ exports[`YearStats > matches snapshot for slug 2012 1`] = `
                   New visitors might want to start by reading about 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/how-i-grade/"
                   >
                     how I grade
                   </a>
-                  . After that, feel free to browse my 
+                  . After that, feel free to browse 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/reviews/"
                   >
-                    reviews
+                    my reviews
                   </a>
                   , which are also indexed 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/authors/"
@@ -2608,8 +2641,7 @@ exports[`YearStats > matches snapshot for slug 2012 1`] = `
                   I also keep a 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/readings/"
@@ -2619,8 +2651,7 @@ exports[`YearStats > matches snapshot for slug 2012 1`] = `
                    that tracks everything I read, whether it gets a full review or not, complete with 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/readings/stats/"
@@ -3499,32 +3530,36 @@ exports[`YearStats > matches snapshot for slug 2013 1`] = `
               </h2>
               <div
                 class="
-          grid w-full grid-cols-[1fr_auto]
+          grid w-full grid-cols-[1fr_24px_auto]
           tablet:whitespace-nowrap
         "
               >
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       1950s
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       1
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -3538,27 +3573,31 @@ exports[`YearStats > matches snapshot for slug 2013 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       1990s
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       1
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -3586,32 +3625,36 @@ exports[`YearStats > matches snapshot for slug 2013 1`] = `
               </h2>
               <div
                 class="
-          grid w-full grid-cols-[1fr_auto]
+          grid w-full grid-cols-[1fr_24px_auto]
           tablet:whitespace-nowrap
         "
               >
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Nonfiction
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       1
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -3625,27 +3668,31 @@ exports[`YearStats > matches snapshot for slug 2013 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Novel
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       1
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -3673,32 +3720,36 @@ exports[`YearStats > matches snapshot for slug 2013 1`] = `
               </h2>
               <div
                 class="
-          grid w-full grid-cols-[1fr_auto]
+          grid w-full grid-cols-[1fr_24px_auto]
           tablet:whitespace-nowrap
         "
               >
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Hardcover
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       1
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -3712,27 +3763,31 @@ exports[`YearStats > matches snapshot for slug 2013 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Paperback
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       1
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -3847,30 +3902,27 @@ exports[`YearStats > matches snapshot for slug 2013 1`] = `
                   New visitors might want to start by reading about 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/how-i-grade/"
                   >
                     how I grade
                   </a>
-                  . After that, feel free to browse my 
+                  . After that, feel free to browse 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/reviews/"
                   >
-                    reviews
+                    my reviews
                   </a>
                   , which are also indexed 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/authors/"
@@ -3885,8 +3937,7 @@ exports[`YearStats > matches snapshot for slug 2013 1`] = `
                   I also keep a 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/readings/"
@@ -3896,8 +3947,7 @@ exports[`YearStats > matches snapshot for slug 2013 1`] = `
                    that tracks everything I read, whether it gets a full review or not, complete with 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/readings/stats/"
@@ -4789,9 +4839,10 @@ exports[`YearStats > matches snapshot for slug 2014 1`] = `
                   >
                     <div
                       class="
-                    origin-center transform-gpu font-sans text-sm text-muted
+                    origin-center transform-gpu font-sans text-xs text-muted
                     transition-transform
                     has-[a:hover]:scale-110
+                    tablet:text-sm
                   "
                     >
                       <a
@@ -6394,9 +6445,10 @@ exports[`YearStats > matches snapshot for slug 2014 1`] = `
                   >
                     <div
                       class="
-                    origin-center transform-gpu font-sans text-sm text-muted
+                    origin-center transform-gpu font-sans text-xs text-muted
                     transition-transform
                     has-[a:hover]:scale-110
+                    tablet:text-sm
                   "
                     >
                       <a
@@ -7361,32 +7413,36 @@ exports[`YearStats > matches snapshot for slug 2014 1`] = `
               </h2>
               <div
                 class="
-          grid w-full grid-cols-[1fr_auto]
+          grid w-full grid-cols-[1fr_24px_auto]
           tablet:whitespace-nowrap
         "
               >
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       1970s
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       3
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -7400,27 +7456,31 @@ exports[`YearStats > matches snapshot for slug 2014 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       1980s
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       24
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -7434,27 +7494,31 @@ exports[`YearStats > matches snapshot for slug 2014 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       2000s
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       1
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -7468,27 +7532,31 @@ exports[`YearStats > matches snapshot for slug 2014 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       2010s
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       1
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -7516,32 +7584,36 @@ exports[`YearStats > matches snapshot for slug 2014 1`] = `
               </h2>
               <div
                 class="
-          grid w-full grid-cols-[1fr_auto]
+          grid w-full grid-cols-[1fr_24px_auto]
           tablet:whitespace-nowrap
         "
               >
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Collection
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       1
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -7555,27 +7627,31 @@ exports[`YearStats > matches snapshot for slug 2014 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Nonfiction
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       3
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -7589,27 +7665,31 @@ exports[`YearStats > matches snapshot for slug 2014 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Novel
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       19
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -7623,27 +7703,31 @@ exports[`YearStats > matches snapshot for slug 2014 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Short Story
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       6
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -7671,32 +7755,36 @@ exports[`YearStats > matches snapshot for slug 2014 1`] = `
               </h2>
               <div
                 class="
-          grid w-full grid-cols-[1fr_auto]
+          grid w-full grid-cols-[1fr_24px_auto]
           tablet:whitespace-nowrap
         "
               >
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Hardcover
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       1
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -7710,27 +7798,31 @@ exports[`YearStats > matches snapshot for slug 2014 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Kindle
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       3
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -7744,27 +7836,31 @@ exports[`YearStats > matches snapshot for slug 2014 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Paperback
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       25
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -7879,30 +7975,27 @@ exports[`YearStats > matches snapshot for slug 2014 1`] = `
                   New visitors might want to start by reading about 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/how-i-grade/"
                   >
                     how I grade
                   </a>
-                  . After that, feel free to browse my 
+                  . After that, feel free to browse 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/reviews/"
                   >
-                    reviews
+                    my reviews
                   </a>
                   , which are also indexed 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/authors/"
@@ -7917,8 +8010,7 @@ exports[`YearStats > matches snapshot for slug 2014 1`] = `
                   I also keep a 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/readings/"
@@ -7928,8 +8020,7 @@ exports[`YearStats > matches snapshot for slug 2014 1`] = `
                    that tracks everything I read, whether it gets a full review or not, complete with 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/readings/stats/"
@@ -8821,9 +8912,10 @@ exports[`YearStats > matches snapshot for slug 2015 1`] = `
                   >
                     <div
                       class="
-                    origin-center transform-gpu font-sans text-sm text-muted
+                    origin-center transform-gpu font-sans text-xs text-muted
                     transition-transform
                     has-[a:hover]:scale-110
+                    tablet:text-sm
                   "
                     >
                       James Kaplan
@@ -9063,32 +9155,36 @@ exports[`YearStats > matches snapshot for slug 2015 1`] = `
               </h2>
               <div
                 class="
-          grid w-full grid-cols-[1fr_auto]
+          grid w-full grid-cols-[1fr_24px_auto]
           tablet:whitespace-nowrap
         "
               >
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       1980s
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       1
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -9102,27 +9198,31 @@ exports[`YearStats > matches snapshot for slug 2015 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       2000s
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       2
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -9136,27 +9236,31 @@ exports[`YearStats > matches snapshot for slug 2015 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       2010s
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       3
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -9184,32 +9288,36 @@ exports[`YearStats > matches snapshot for slug 2015 1`] = `
               </h2>
               <div
                 class="
-          grid w-full grid-cols-[1fr_auto]
+          grid w-full grid-cols-[1fr_24px_auto]
           tablet:whitespace-nowrap
         "
               >
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Nonfiction
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       3
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -9223,27 +9331,31 @@ exports[`YearStats > matches snapshot for slug 2015 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Novel
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       2
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -9257,27 +9369,31 @@ exports[`YearStats > matches snapshot for slug 2015 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Short Story
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       1
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -9305,32 +9421,36 @@ exports[`YearStats > matches snapshot for slug 2015 1`] = `
               </h2>
               <div
                 class="
-          grid w-full grid-cols-[1fr_auto]
+          grid w-full grid-cols-[1fr_24px_auto]
           tablet:whitespace-nowrap
         "
               >
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Hardcover
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       2
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -9344,27 +9464,31 @@ exports[`YearStats > matches snapshot for slug 2015 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Paperback
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       4
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -9479,30 +9603,27 @@ exports[`YearStats > matches snapshot for slug 2015 1`] = `
                   New visitors might want to start by reading about 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/how-i-grade/"
                   >
                     how I grade
                   </a>
-                  . After that, feel free to browse my 
+                  . After that, feel free to browse 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/reviews/"
                   >
-                    reviews
+                    my reviews
                   </a>
                   , which are also indexed 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/authors/"
@@ -9517,8 +9638,7 @@ exports[`YearStats > matches snapshot for slug 2015 1`] = `
                   I also keep a 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/readings/"
@@ -9528,8 +9648,7 @@ exports[`YearStats > matches snapshot for slug 2015 1`] = `
                    that tracks everything I read, whether it gets a full review or not, complete with 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/readings/stats/"
@@ -10408,32 +10527,36 @@ exports[`YearStats > matches snapshot for slug 2016 1`] = `
               </h2>
               <div
                 class="
-          grid w-full grid-cols-[1fr_auto]
+          grid w-full grid-cols-[1fr_24px_auto]
           tablet:whitespace-nowrap
         "
               >
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       1930s
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       1
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -10447,27 +10570,31 @@ exports[`YearStats > matches snapshot for slug 2016 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       1970s
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       2
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -10481,27 +10608,31 @@ exports[`YearStats > matches snapshot for slug 2016 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       1980s
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       2
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -10515,27 +10646,31 @@ exports[`YearStats > matches snapshot for slug 2016 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       1990s
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       1
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -10549,27 +10684,31 @@ exports[`YearStats > matches snapshot for slug 2016 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       2000s
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       1
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -10583,27 +10722,31 @@ exports[`YearStats > matches snapshot for slug 2016 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       2010s
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       3
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -10631,32 +10774,36 @@ exports[`YearStats > matches snapshot for slug 2016 1`] = `
               </h2>
               <div
                 class="
-          grid w-full grid-cols-[1fr_auto]
+          grid w-full grid-cols-[1fr_24px_auto]
           tablet:whitespace-nowrap
         "
               >
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Nonfiction
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       6
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -10670,27 +10817,31 @@ exports[`YearStats > matches snapshot for slug 2016 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Novel
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       4
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -10718,32 +10869,36 @@ exports[`YearStats > matches snapshot for slug 2016 1`] = `
               </h2>
               <div
                 class="
-          grid w-full grid-cols-[1fr_auto]
+          grid w-full grid-cols-[1fr_24px_auto]
           tablet:whitespace-nowrap
         "
               >
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Hardcover
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       3
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -10757,27 +10912,31 @@ exports[`YearStats > matches snapshot for slug 2016 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Paperback
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       7
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -10892,30 +11051,27 @@ exports[`YearStats > matches snapshot for slug 2016 1`] = `
                   New visitors might want to start by reading about 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/how-i-grade/"
                   >
                     how I grade
                   </a>
-                  . After that, feel free to browse my 
+                  . After that, feel free to browse 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/reviews/"
                   >
-                    reviews
+                    my reviews
                   </a>
                   , which are also indexed 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/authors/"
@@ -10930,8 +11086,7 @@ exports[`YearStats > matches snapshot for slug 2016 1`] = `
                   I also keep a 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/readings/"
@@ -10941,8 +11096,7 @@ exports[`YearStats > matches snapshot for slug 2016 1`] = `
                    that tracks everything I read, whether it gets a full review or not, complete with 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/readings/stats/"
@@ -11821,32 +11975,36 @@ exports[`YearStats > matches snapshot for slug 2017 1`] = `
               </h2>
               <div
                 class="
-          grid w-full grid-cols-[1fr_auto]
+          grid w-full grid-cols-[1fr_24px_auto]
           tablet:whitespace-nowrap
         "
               >
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       1930s
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       1
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -11860,27 +12018,31 @@ exports[`YearStats > matches snapshot for slug 2017 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       1970s
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       3
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -11894,27 +12056,31 @@ exports[`YearStats > matches snapshot for slug 2017 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       1980s
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       2
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -11928,27 +12094,31 @@ exports[`YearStats > matches snapshot for slug 2017 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       2000s
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       3
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -11962,27 +12132,31 @@ exports[`YearStats > matches snapshot for slug 2017 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       2010s
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       3
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -12010,32 +12184,36 @@ exports[`YearStats > matches snapshot for slug 2017 1`] = `
               </h2>
               <div
                 class="
-          grid w-full grid-cols-[1fr_auto]
+          grid w-full grid-cols-[1fr_24px_auto]
           tablet:whitespace-nowrap
         "
               >
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Collection
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       1
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -12049,27 +12227,31 @@ exports[`YearStats > matches snapshot for slug 2017 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Nonfiction
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       2
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -12083,27 +12265,31 @@ exports[`YearStats > matches snapshot for slug 2017 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Novel
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       8
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -12117,27 +12303,31 @@ exports[`YearStats > matches snapshot for slug 2017 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Novella
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       1
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -12165,32 +12355,36 @@ exports[`YearStats > matches snapshot for slug 2017 1`] = `
               </h2>
               <div
                 class="
-          grid w-full grid-cols-[1fr_auto]
+          grid w-full grid-cols-[1fr_24px_auto]
           tablet:whitespace-nowrap
         "
               >
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Audible
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       1
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -12204,27 +12398,31 @@ exports[`YearStats > matches snapshot for slug 2017 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Kindle
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       9
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -12238,27 +12436,31 @@ exports[`YearStats > matches snapshot for slug 2017 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Paperback
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       2
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -12373,30 +12575,27 @@ exports[`YearStats > matches snapshot for slug 2017 1`] = `
                   New visitors might want to start by reading about 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/how-i-grade/"
                   >
                     how I grade
                   </a>
-                  . After that, feel free to browse my 
+                  . After that, feel free to browse 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/reviews/"
                   >
-                    reviews
+                    my reviews
                   </a>
                   , which are also indexed 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/authors/"
@@ -12411,8 +12610,7 @@ exports[`YearStats > matches snapshot for slug 2017 1`] = `
                   I also keep a 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/readings/"
@@ -12422,8 +12620,7 @@ exports[`YearStats > matches snapshot for slug 2017 1`] = `
                    that tracks everything I read, whether it gets a full review or not, complete with 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/readings/stats/"
@@ -13302,32 +13499,36 @@ exports[`YearStats > matches snapshot for slug 2018 1`] = `
               </h2>
               <div
                 class="
-          grid w-full grid-cols-[1fr_auto]
+          grid w-full grid-cols-[1fr_24px_auto]
           tablet:whitespace-nowrap
         "
               >
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       1980s
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       2
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -13341,27 +13542,31 @@ exports[`YearStats > matches snapshot for slug 2018 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       2000s
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       1
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -13389,32 +13594,36 @@ exports[`YearStats > matches snapshot for slug 2018 1`] = `
               </h2>
               <div
                 class="
-          grid w-full grid-cols-[1fr_auto]
+          grid w-full grid-cols-[1fr_24px_auto]
           tablet:whitespace-nowrap
         "
               >
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Anthology
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       1
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -13428,27 +13637,31 @@ exports[`YearStats > matches snapshot for slug 2018 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Novel
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       2
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -13476,32 +13689,36 @@ exports[`YearStats > matches snapshot for slug 2018 1`] = `
               </h2>
               <div
                 class="
-          grid w-full grid-cols-[1fr_auto]
+          grid w-full grid-cols-[1fr_24px_auto]
           tablet:whitespace-nowrap
         "
               >
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Hardcover
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       1
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -13515,27 +13732,31 @@ exports[`YearStats > matches snapshot for slug 2018 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Kindle
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       2
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -13650,30 +13871,27 @@ exports[`YearStats > matches snapshot for slug 2018 1`] = `
                   New visitors might want to start by reading about 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/how-i-grade/"
                   >
                     how I grade
                   </a>
-                  . After that, feel free to browse my 
+                  . After that, feel free to browse 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/reviews/"
                   >
-                    reviews
+                    my reviews
                   </a>
                   , which are also indexed 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/authors/"
@@ -13688,8 +13906,7 @@ exports[`YearStats > matches snapshot for slug 2018 1`] = `
                   I also keep a 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/readings/"
@@ -13699,8 +13916,7 @@ exports[`YearStats > matches snapshot for slug 2018 1`] = `
                    that tracks everything I read, whether it gets a full review or not, complete with 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/readings/stats/"
@@ -14579,32 +14795,36 @@ exports[`YearStats > matches snapshot for slug 2019 1`] = `
               </h2>
               <div
                 class="
-          grid w-full grid-cols-[1fr_auto]
+          grid w-full grid-cols-[1fr_24px_auto]
           tablet:whitespace-nowrap
         "
               >
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       1980s
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       1
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -14632,32 +14852,36 @@ exports[`YearStats > matches snapshot for slug 2019 1`] = `
               </h2>
               <div
                 class="
-          grid w-full grid-cols-[1fr_auto]
+          grid w-full grid-cols-[1fr_24px_auto]
           tablet:whitespace-nowrap
         "
               >
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Novel
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       1
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -14685,32 +14909,36 @@ exports[`YearStats > matches snapshot for slug 2019 1`] = `
               </h2>
               <div
                 class="
-          grid w-full grid-cols-[1fr_auto]
+          grid w-full grid-cols-[1fr_24px_auto]
           tablet:whitespace-nowrap
         "
               >
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Kindle
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       1
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -14825,30 +15053,27 @@ exports[`YearStats > matches snapshot for slug 2019 1`] = `
                   New visitors might want to start by reading about 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/how-i-grade/"
                   >
                     how I grade
                   </a>
-                  . After that, feel free to browse my 
+                  . After that, feel free to browse 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/reviews/"
                   >
-                    reviews
+                    my reviews
                   </a>
                   , which are also indexed 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/authors/"
@@ -14863,8 +15088,7 @@ exports[`YearStats > matches snapshot for slug 2019 1`] = `
                   I also keep a 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/readings/"
@@ -14874,8 +15098,7 @@ exports[`YearStats > matches snapshot for slug 2019 1`] = `
                    that tracks everything I read, whether it gets a full review or not, complete with 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/readings/stats/"
@@ -15767,9 +15990,10 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
                   >
                     <div
                       class="
-                    origin-center transform-gpu font-sans text-sm text-muted
+                    origin-center transform-gpu font-sans text-xs text-muted
                     transition-transform
                     has-[a:hover]:scale-110
+                    tablet:text-sm
                   "
                     >
                       <a
@@ -16779,9 +17003,10 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
                   >
                     <div
                       class="
-                    origin-center transform-gpu font-sans text-sm text-muted
+                    origin-center transform-gpu font-sans text-xs text-muted
                     transition-transform
                     has-[a:hover]:scale-110
+                    tablet:text-sm
                   "
                     >
                       <a
@@ -17221,9 +17446,10 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
                   >
                     <div
                       class="
-                    origin-center transform-gpu font-sans text-sm text-muted
+                    origin-center transform-gpu font-sans text-xs text-muted
                     transition-transform
                     has-[a:hover]:scale-110
+                    tablet:text-sm
                   "
                     >
                       <a
@@ -17663,9 +17889,10 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
                   >
                     <div
                       class="
-                    origin-center transform-gpu font-sans text-sm text-muted
+                    origin-center transform-gpu font-sans text-xs text-muted
                     transition-transform
                     has-[a:hover]:scale-110
+                    tablet:text-sm
                   "
                     >
                       <a
@@ -18010,9 +18237,10 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
                   >
                     <div
                       class="
-                    origin-center transform-gpu font-sans text-sm text-muted
+                    origin-center transform-gpu font-sans text-xs text-muted
                     transition-transform
                     has-[a:hover]:scale-110
+                    tablet:text-sm
                   "
                     >
                       <a
@@ -18262,9 +18490,10 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
                   >
                     <div
                       class="
-                    origin-center transform-gpu font-sans text-sm text-muted
+                    origin-center transform-gpu font-sans text-xs text-muted
                     transition-transform
                     has-[a:hover]:scale-110
+                    tablet:text-sm
                   "
                     >
                       <a
@@ -18525,32 +18754,36 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
               </h2>
               <div
                 class="
-          grid w-full grid-cols-[1fr_auto]
+          grid w-full grid-cols-[1fr_24px_auto]
           tablet:whitespace-nowrap
         "
               >
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       1890s
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       1
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -18564,27 +18797,31 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       1930s
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       2
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -18598,27 +18835,31 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       1940s
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       1
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -18632,27 +18873,31 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       1950s
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       3
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -18666,27 +18911,31 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       1970s
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       5
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -18700,27 +18949,31 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       1980s
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       6
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -18734,27 +18987,31 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       1990s
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       3
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -18768,27 +19025,31 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       2000s
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       2
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -18802,27 +19063,31 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       2010s
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       22
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -18836,27 +19101,31 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       2020s
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       3
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -18884,32 +19153,36 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
               </h2>
               <div
                 class="
-          grid w-full grid-cols-[1fr_auto]
+          grid w-full grid-cols-[1fr_24px_auto]
           tablet:whitespace-nowrap
         "
               >
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Collection
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       1
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -18923,27 +19196,31 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Nonfiction
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       19
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -18957,27 +19234,31 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Novel
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       18
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -18991,27 +19272,31 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Novella
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       1
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -19025,27 +19310,31 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Short Story
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       9
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -19073,32 +19362,36 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
               </h2>
               <div
                 class="
-          grid w-full grid-cols-[1fr_auto]
+          grid w-full grid-cols-[1fr_24px_auto]
           tablet:whitespace-nowrap
         "
               >
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Audible
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       23
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -19112,27 +19405,31 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Kindle
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       25
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -19247,30 +19544,27 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
                   New visitors might want to start by reading about 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/how-i-grade/"
                   >
                     how I grade
                   </a>
-                  . After that, feel free to browse my 
+                  . After that, feel free to browse 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/reviews/"
                   >
-                    reviews
+                    my reviews
                   </a>
                   , which are also indexed 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/authors/"
@@ -19285,8 +19579,7 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
                   I also keep a 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/readings/"
@@ -19296,8 +19589,7 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
                    that tracks everything I read, whether it gets a full review or not, complete with 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/readings/stats/"
@@ -20189,9 +20481,10 @@ exports[`YearStats > matches snapshot for slug 2023 1`] = `
                   >
                     <div
                       class="
-                    origin-center transform-gpu font-sans text-sm text-muted
+                    origin-center transform-gpu font-sans text-xs text-muted
                     transition-transform
                     has-[a:hover]:scale-110
+                    tablet:text-sm
                   "
                     >
                       <a
@@ -20441,9 +20734,10 @@ exports[`YearStats > matches snapshot for slug 2023 1`] = `
                   >
                     <div
                       class="
-                    origin-center transform-gpu font-sans text-sm text-muted
+                    origin-center transform-gpu font-sans text-xs text-muted
                     transition-transform
                     has-[a:hover]:scale-110
+                    tablet:text-sm
                   "
                     >
                       <a
@@ -20704,32 +20998,36 @@ exports[`YearStats > matches snapshot for slug 2023 1`] = `
               </h2>
               <div
                 class="
-          grid w-full grid-cols-[1fr_auto]
+          grid w-full grid-cols-[1fr_24px_auto]
           tablet:whitespace-nowrap
         "
               >
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       1970s
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       1
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -20743,27 +21041,31 @@ exports[`YearStats > matches snapshot for slug 2023 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       1980s
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       1
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -20777,27 +21079,31 @@ exports[`YearStats > matches snapshot for slug 2023 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       1990s
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       1
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -20811,27 +21117,31 @@ exports[`YearStats > matches snapshot for slug 2023 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       2010s
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       3
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -20845,27 +21155,31 @@ exports[`YearStats > matches snapshot for slug 2023 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       2020s
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       4
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -20893,32 +21207,36 @@ exports[`YearStats > matches snapshot for slug 2023 1`] = `
               </h2>
               <div
                 class="
-          grid w-full grid-cols-[1fr_auto]
+          grid w-full grid-cols-[1fr_24px_auto]
           tablet:whitespace-nowrap
         "
               >
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Nonfiction
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       3
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -20932,27 +21250,31 @@ exports[`YearStats > matches snapshot for slug 2023 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Novel
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       5
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -20966,27 +21288,31 @@ exports[`YearStats > matches snapshot for slug 2023 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Novella
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       1
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -21000,27 +21326,31 @@ exports[`YearStats > matches snapshot for slug 2023 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Short Story
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       1
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -21048,32 +21378,36 @@ exports[`YearStats > matches snapshot for slug 2023 1`] = `
               </h2>
               <div
                 class="
-          grid w-full grid-cols-[1fr_auto]
+          grid w-full grid-cols-[1fr_24px_auto]
           tablet:whitespace-nowrap
         "
               >
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Audible
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       4
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -21087,27 +21421,31 @@ exports[`YearStats > matches snapshot for slug 2023 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Kindle
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       6
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -21222,30 +21560,27 @@ exports[`YearStats > matches snapshot for slug 2023 1`] = `
                   New visitors might want to start by reading about 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/how-i-grade/"
                   >
                     how I grade
                   </a>
-                  . After that, feel free to browse my 
+                  . After that, feel free to browse 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/reviews/"
                   >
-                    reviews
+                    my reviews
                   </a>
                   , which are also indexed 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/authors/"
@@ -21260,8 +21595,7 @@ exports[`YearStats > matches snapshot for slug 2023 1`] = `
                   I also keep a 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/readings/"
@@ -21271,8 +21605,7 @@ exports[`YearStats > matches snapshot for slug 2023 1`] = `
                    that tracks everything I read, whether it gets a full review or not, complete with 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/readings/stats/"
@@ -22151,32 +22484,36 @@ exports[`YearStats > matches snapshot for slug 2024 1`] = `
               </h2>
               <div
                 class="
-          grid w-full grid-cols-[1fr_auto]
+          grid w-full grid-cols-[1fr_24px_auto]
           tablet:whitespace-nowrap
         "
               >
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       1970s
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       1
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -22190,27 +22527,31 @@ exports[`YearStats > matches snapshot for slug 2024 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       2020s
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       4
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -22238,32 +22579,36 @@ exports[`YearStats > matches snapshot for slug 2024 1`] = `
               </h2>
               <div
                 class="
-          grid w-full grid-cols-[1fr_auto]
+          grid w-full grid-cols-[1fr_24px_auto]
           tablet:whitespace-nowrap
         "
               >
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Nonfiction
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       3
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -22277,27 +22622,31 @@ exports[`YearStats > matches snapshot for slug 2024 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Novel
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       2
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -22325,32 +22674,36 @@ exports[`YearStats > matches snapshot for slug 2024 1`] = `
               </h2>
               <div
                 class="
-          grid w-full grid-cols-[1fr_auto]
+          grid w-full grid-cols-[1fr_24px_auto]
           tablet:whitespace-nowrap
         "
               >
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Audible
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       2
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -22364,27 +22717,31 @@ exports[`YearStats > matches snapshot for slug 2024 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Kindle
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       3
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -22499,30 +22856,27 @@ exports[`YearStats > matches snapshot for slug 2024 1`] = `
                   New visitors might want to start by reading about 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/how-i-grade/"
                   >
                     how I grade
                   </a>
-                  . After that, feel free to browse my 
+                  . After that, feel free to browse 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/reviews/"
                   >
-                    reviews
+                    my reviews
                   </a>
                   , which are also indexed 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/authors/"
@@ -22537,8 +22891,7 @@ exports[`YearStats > matches snapshot for slug 2024 1`] = `
                   I also keep a 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/readings/"
@@ -22548,8 +22901,7 @@ exports[`YearStats > matches snapshot for slug 2024 1`] = `
                    that tracks everything I read, whether it gets a full review or not, complete with 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/readings/stats/"
@@ -23428,32 +23780,36 @@ exports[`YearStats > matches snapshot for slug 2025 1`] = `
               </h2>
               <div
                 class="
-          grid w-full grid-cols-[1fr_auto]
+          grid w-full grid-cols-[1fr_24px_auto]
           tablet:whitespace-nowrap
         "
               >
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       1980s
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       1
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -23481,32 +23837,36 @@ exports[`YearStats > matches snapshot for slug 2025 1`] = `
               </h2>
               <div
                 class="
-          grid w-full grid-cols-[1fr_auto]
+          grid w-full grid-cols-[1fr_24px_auto]
           tablet:whitespace-nowrap
         "
               >
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Short Story
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       1
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -23534,32 +23894,36 @@ exports[`YearStats > matches snapshot for slug 2025 1`] = `
               </h2>
               <div
                 class="
-          grid w-full grid-cols-[1fr_auto]
+          grid w-full grid-cols-[1fr_24px_auto]
           tablet:whitespace-nowrap
         "
               >
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Paperback
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       1
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -23674,30 +24038,27 @@ exports[`YearStats > matches snapshot for slug 2025 1`] = `
                   New visitors might want to start by reading about 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/how-i-grade/"
                   >
                     how I grade
                   </a>
-                  . After that, feel free to browse my 
+                  . After that, feel free to browse 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/reviews/"
                   >
-                    reviews
+                    my reviews
                   </a>
                   , which are also indexed 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/authors/"
@@ -23712,8 +24073,7 @@ exports[`YearStats > matches snapshot for slug 2025 1`] = `
                   I also keep a 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/readings/"
@@ -23723,8 +24083,7 @@ exports[`YearStats > matches snapshot for slug 2025 1`] = `
                    that tracks everything I read, whether it gets a full review or not, complete with 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/readings/stats/"

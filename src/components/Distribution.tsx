@@ -26,28 +26,36 @@ export function Distribution({
       </h2>
       <div
         className={`
-          grid w-full grid-cols-[1fr_auto]
+          grid w-full grid-cols-[1fr_24px_auto]
           tablet:whitespace-nowrap
         `}
       >
         {values.map((value) => {
           return (
             <div
-              className="col-span-2 grid grid-cols-subgrid py-3"
+              className="col-span-3 grid grid-cols-subgrid py-3"
               key={value.name}
             >
-              <div className="col-span-2 grid grid-cols-subgrid">
-                <div className="font-sans text-xs text-muted">{value.name}</div>
+              <div className="col-span-3 grid grid-cols-subgrid">
                 <div
                   className={`
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  `}
+                >
+                  {value.name}
+                </div>
+                <div
+                  className={`
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   `}
                 >
                   {value.count}
                 </div>
               </div>
-              <div className="col-span-2 row-start-2 bg-subtle">
+              <div className="col-span-3 row-start-2 bg-subtle">
                 <BarGradient maxValue={maxBar} value={value.count} />
               </div>
             </div>

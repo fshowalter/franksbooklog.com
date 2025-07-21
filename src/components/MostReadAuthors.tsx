@@ -67,9 +67,10 @@ export function MostReadAuthors({
               >
                 <div
                   className={`
-                    origin-center transform-gpu font-sans text-sm text-muted
+                    origin-center transform-gpu font-sans text-xs text-muted
                     transition-transform
                     has-[a:hover]:scale-110
+                    tablet:text-sm
                   `}
                 >
                   <Name value={value} />
