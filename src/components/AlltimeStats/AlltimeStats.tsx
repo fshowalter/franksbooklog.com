@@ -68,15 +68,16 @@ export function AlltimeStats({
             laptop:max-w-[calc(66%+24px)]
           `}
         >
-          <GradeDistribution values={stats.gradeDistribution} />
           <MostReadAuthors values={mostReadAuthors} />
         </div>
         <div
           className={`
             flex flex-col items-start gap-y-8
-            laptop:flex-row laptop:gap-x-8
+            laptop:grid laptop:grid-cols-2 laptop:gap-x-8
+            desktop:grid-cols-4
           `}
         >
+          <GradeDistribution values={stats.gradeDistribution} />
           <DecadeDistribution values={stats.decadeDistribution} />
           <KindDistribution values={stats.kindDistribution} />
           <EditionDistribution values={stats.editionDistribution} />

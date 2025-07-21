@@ -2245,30 +2245,27 @@ exports[`Home > matches snapshot 1`] = `
                   New visitors might want to start by reading about 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/how-i-grade/"
                   >
                     how I grade
                   </a>
-                  . After that, feel free to browse my 
+                  . After that, feel free to browse 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/reviews/"
                   >
-                    reviews
+                    my reviews
                   </a>
                   , which are also indexed 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/authors/"
@@ -2283,8 +2280,7 @@ exports[`Home > matches snapshot 1`] = `
                   I also keep a 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/readings/"
@@ -2294,8 +2290,7 @@ exports[`Home > matches snapshot 1`] = `
                    that tracks everything I read, whether it gets a full review or not, complete with 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/readings/stats/"

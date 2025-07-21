@@ -736,433 +736,6 @@ exports[`/readings/stats > matches snapshot 1`] = `
           "
           >
             <section
-              class="w-full bg-default px-container pb-8"
-            >
-              <h2
-                class="
-          py-4 font-medium
-          laptop:text-xl
-        "
-              >
-                Grade Distribution
-              </h2>
-              <div
-                class="
-          grid w-full grid-cols-[1fr_auto]
-          tablet:whitespace-nowrap
-        "
-              >
-                <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
-                >
-                  <div
-                    class="col-span-2 grid grid-cols-subgrid"
-                  >
-                    <div
-                      class="font-sans text-xs text-muted"
-                    >
-                      A
-                    </div>
-                    <div
-                      class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
-                    text-nowrap text-subtle
-                  "
-                    >
-                      3
-                    </div>
-                  </div>
-                  <div
-                    class="col-span-2 row-start-2 bg-subtle"
-                  >
-                    <div
-                      class="
-        bg-progress-bar leading-[6px]
-        tablet:mb-0
-      "
-                      style="--bar-percent: 3.7037037037037033%;"
-                    >
-                       
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
-                >
-                  <div
-                    class="col-span-2 grid grid-cols-subgrid"
-                  >
-                    <div
-                      class="font-sans text-xs text-muted"
-                    >
-                      A-
-                    </div>
-                    <div
-                      class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
-                    text-nowrap text-subtle
-                  "
-                    >
-                      8
-                    </div>
-                  </div>
-                  <div
-                    class="col-span-2 row-start-2 bg-subtle"
-                  >
-                    <div
-                      class="
-        bg-progress-bar leading-[6px]
-        tablet:mb-0
-      "
-                      style="--bar-percent: 9.876543209876543%;"
-                    >
-                       
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
-                >
-                  <div
-                    class="col-span-2 grid grid-cols-subgrid"
-                  >
-                    <div
-                      class="font-sans text-xs text-muted"
-                    >
-                      B+
-                    </div>
-                    <div
-                      class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
-                    text-nowrap text-subtle
-                  "
-                    >
-                      7
-                    </div>
-                  </div>
-                  <div
-                    class="col-span-2 row-start-2 bg-subtle"
-                  >
-                    <div
-                      class="
-        bg-progress-bar leading-[6px]
-        tablet:mb-0
-      "
-                      style="--bar-percent: 8.641975308641975%;"
-                    >
-                       
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
-                >
-                  <div
-                    class="col-span-2 grid grid-cols-subgrid"
-                  >
-                    <div
-                      class="font-sans text-xs text-muted"
-                    >
-                      B
-                    </div>
-                    <div
-                      class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
-                    text-nowrap text-subtle
-                  "
-                    >
-                      14
-                    </div>
-                  </div>
-                  <div
-                    class="col-span-2 row-start-2 bg-subtle"
-                  >
-                    <div
-                      class="
-        bg-progress-bar leading-[6px]
-        tablet:mb-0
-      "
-                      style="--bar-percent: 17.28395061728395%;"
-                    >
-                       
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
-                >
-                  <div
-                    class="col-span-2 grid grid-cols-subgrid"
-                  >
-                    <div
-                      class="font-sans text-xs text-muted"
-                    >
-                      B-
-                    </div>
-                    <div
-                      class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
-                    text-nowrap text-subtle
-                  "
-                    >
-                      4
-                    </div>
-                  </div>
-                  <div
-                    class="col-span-2 row-start-2 bg-subtle"
-                  >
-                    <div
-                      class="
-        bg-progress-bar leading-[6px]
-        tablet:mb-0
-      "
-                      style="--bar-percent: 4.938271604938271%;"
-                    >
-                       
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
-                >
-                  <div
-                    class="col-span-2 grid grid-cols-subgrid"
-                  >
-                    <div
-                      class="font-sans text-xs text-muted"
-                    >
-                      C+
-                    </div>
-                    <div
-                      class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
-                    text-nowrap text-subtle
-                  "
-                    >
-                      15
-                    </div>
-                  </div>
-                  <div
-                    class="col-span-2 row-start-2 bg-subtle"
-                  >
-                    <div
-                      class="
-        bg-progress-bar leading-[6px]
-        tablet:mb-0
-      "
-                      style="--bar-percent: 18.51851851851852%;"
-                    >
-                       
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
-                >
-                  <div
-                    class="col-span-2 grid grid-cols-subgrid"
-                  >
-                    <div
-                      class="font-sans text-xs text-muted"
-                    >
-                      C
-                    </div>
-                    <div
-                      class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
-                    text-nowrap text-subtle
-                  "
-                    >
-                      13
-                    </div>
-                  </div>
-                  <div
-                    class="col-span-2 row-start-2 bg-subtle"
-                  >
-                    <div
-                      class="
-        bg-progress-bar leading-[6px]
-        tablet:mb-0
-      "
-                      style="--bar-percent: 16.049382716049383%;"
-                    >
-                       
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
-                >
-                  <div
-                    class="col-span-2 grid grid-cols-subgrid"
-                  >
-                    <div
-                      class="font-sans text-xs text-muted"
-                    >
-                      C-
-                    </div>
-                    <div
-                      class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
-                    text-nowrap text-subtle
-                  "
-                    >
-                      5
-                    </div>
-                  </div>
-                  <div
-                    class="col-span-2 row-start-2 bg-subtle"
-                  >
-                    <div
-                      class="
-        bg-progress-bar leading-[6px]
-        tablet:mb-0
-      "
-                      style="--bar-percent: 6.172839506172839%;"
-                    >
-                       
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
-                >
-                  <div
-                    class="col-span-2 grid grid-cols-subgrid"
-                  >
-                    <div
-                      class="font-sans text-xs text-muted"
-                    >
-                      D+
-                    </div>
-                    <div
-                      class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
-                    text-nowrap text-subtle
-                  "
-                    >
-                      4
-                    </div>
-                  </div>
-                  <div
-                    class="col-span-2 row-start-2 bg-subtle"
-                  >
-                    <div
-                      class="
-        bg-progress-bar leading-[6px]
-        tablet:mb-0
-      "
-                      style="--bar-percent: 4.938271604938271%;"
-                    >
-                       
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
-                >
-                  <div
-                    class="col-span-2 grid grid-cols-subgrid"
-                  >
-                    <div
-                      class="font-sans text-xs text-muted"
-                    >
-                      D
-                    </div>
-                    <div
-                      class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
-                    text-nowrap text-subtle
-                  "
-                    >
-                      5
-                    </div>
-                  </div>
-                  <div
-                    class="col-span-2 row-start-2 bg-subtle"
-                  >
-                    <div
-                      class="
-        bg-progress-bar leading-[6px]
-        tablet:mb-0
-      "
-                      style="--bar-percent: 6.172839506172839%;"
-                    >
-                       
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
-                >
-                  <div
-                    class="col-span-2 grid grid-cols-subgrid"
-                  >
-                    <div
-                      class="font-sans text-xs text-muted"
-                    >
-                      F
-                    </div>
-                    <div
-                      class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
-                    text-nowrap text-subtle
-                  "
-                    >
-                      1
-                    </div>
-                  </div>
-                  <div
-                    class="col-span-2 row-start-2 bg-subtle"
-                  >
-                    <div
-                      class="
-        bg-progress-bar leading-[6px]
-        tablet:mb-0
-      "
-                      style="--bar-percent: 1.2345679012345678%;"
-                    >
-                       
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
-                >
-                  <div
-                    class="col-span-2 grid grid-cols-subgrid"
-                  >
-                    <div
-                      class="font-sans text-xs text-muted"
-                    >
-                      Abandoned
-                    </div>
-                    <div
-                      class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
-                    text-nowrap text-subtle
-                  "
-                    >
-                      2
-                    </div>
-                  </div>
-                  <div
-                    class="col-span-2 row-start-2 bg-subtle"
-                  >
-                    <div
-                      class="
-        bg-progress-bar leading-[6px]
-        tablet:mb-0
-      "
-                      style="--bar-percent: 2.4691358024691357%;"
-                    >
-                       
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <section
               class="
         w-full bg-default pb-8
         tablet:px-container
@@ -1194,9 +767,10 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-                    origin-center transform-gpu font-sans text-sm text-muted
+                    origin-center transform-gpu font-sans text-xs text-muted
                     transition-transform
                     has-[a:hover]:scale-110
+                    tablet:text-sm
                   "
                     >
                       <a
@@ -3638,9 +3212,10 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-                    origin-center transform-gpu font-sans text-sm text-muted
+                    origin-center transform-gpu font-sans text-xs text-muted
                     transition-transform
                     has-[a:hover]:scale-110
+                    tablet:text-sm
                   "
                     >
                       <a
@@ -5615,9 +5190,10 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-                    origin-center transform-gpu font-sans text-sm text-muted
+                    origin-center transform-gpu font-sans text-xs text-muted
                     transition-transform
                     has-[a:hover]:scale-110
+                    tablet:text-sm
                   "
                     >
                       <a
@@ -6912,9 +6488,10 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-                    origin-center transform-gpu font-sans text-sm text-muted
+                    origin-center transform-gpu font-sans text-xs text-muted
                     transition-transform
                     has-[a:hover]:scale-110
+                    tablet:text-sm
                   "
                     >
                       James Kaplan
@@ -7230,9 +6807,10 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-                    origin-center transform-gpu font-sans text-sm text-muted
+                    origin-center transform-gpu font-sans text-xs text-muted
                     transition-transform
                     has-[a:hover]:scale-110
+                    tablet:text-sm
                   "
                     >
                       <a
@@ -7577,9 +7155,10 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-                    origin-center transform-gpu font-sans text-sm text-muted
+                    origin-center transform-gpu font-sans text-xs text-muted
                     transition-transform
                     has-[a:hover]:scale-110
+                    tablet:text-sm
                   "
                     >
                       <a
@@ -7924,9 +7503,10 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-                    origin-center transform-gpu font-sans text-sm text-muted
+                    origin-center transform-gpu font-sans text-xs text-muted
                     transition-transform
                     has-[a:hover]:scale-110
+                    tablet:text-sm
                   "
                     >
                       <a
@@ -8176,9 +7756,10 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-                    origin-center transform-gpu font-sans text-sm text-muted
+                    origin-center transform-gpu font-sans text-xs text-muted
                     transition-transform
                     has-[a:hover]:scale-110
+                    tablet:text-sm
                   "
                     >
                       <a
@@ -8428,9 +8009,10 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-                    origin-center transform-gpu font-sans text-sm text-muted
+                    origin-center transform-gpu font-sans text-xs text-muted
                     transition-transform
                     has-[a:hover]:scale-110
+                    tablet:text-sm
                   "
                     >
                       <a
@@ -8680,9 +8262,10 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-                    origin-center transform-gpu font-sans text-sm text-muted
+                    origin-center transform-gpu font-sans text-xs text-muted
                     transition-transform
                     has-[a:hover]:scale-110
+                    tablet:text-sm
                   "
                     >
                       Roger Ebert
@@ -8906,9 +8489,485 @@ exports[`/readings/stats > matches snapshot 1`] = `
           <div
             class="
             flex flex-col items-start gap-y-8
-            laptop:flex-row laptop:gap-x-8
+            laptop:grid laptop:grid-cols-2 laptop:gap-x-8
+            desktop:grid-cols-4
           "
           >
+            <section
+              class="w-full bg-default px-container pb-8"
+            >
+              <h2
+                class="
+          py-4 font-medium
+          laptop:text-xl
+        "
+              >
+                Grade Distribution
+              </h2>
+              <div
+                class="
+          grid w-full grid-cols-[1fr_24px_auto]
+          tablet:whitespace-nowrap
+        "
+              >
+                <div
+                  class="col-span-3 grid grid-cols-subgrid py-3"
+                >
+                  <div
+                    class="col-span-3 grid grid-cols-subgrid"
+                  >
+                    <div
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
+                    >
+                      A
+                    </div>
+                    <div
+                      class="
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
+                    text-nowrap text-subtle
+                    tablet:text-sm
+                  "
+                    >
+                      3
+                    </div>
+                  </div>
+                  <div
+                    class="col-span-3 row-start-2 bg-subtle"
+                  >
+                    <div
+                      class="
+        bg-progress-bar leading-[6px]
+        tablet:mb-0
+      "
+                      style="--bar-percent: 3.7037037037037033%;"
+                    >
+                       
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-span-3 grid grid-cols-subgrid py-3"
+                >
+                  <div
+                    class="col-span-3 grid grid-cols-subgrid"
+                  >
+                    <div
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
+                    >
+                      A-
+                    </div>
+                    <div
+                      class="
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
+                    text-nowrap text-subtle
+                    tablet:text-sm
+                  "
+                    >
+                      8
+                    </div>
+                  </div>
+                  <div
+                    class="col-span-3 row-start-2 bg-subtle"
+                  >
+                    <div
+                      class="
+        bg-progress-bar leading-[6px]
+        tablet:mb-0
+      "
+                      style="--bar-percent: 9.876543209876543%;"
+                    >
+                       
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-span-3 grid grid-cols-subgrid py-3"
+                >
+                  <div
+                    class="col-span-3 grid grid-cols-subgrid"
+                  >
+                    <div
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
+                    >
+                      B+
+                    </div>
+                    <div
+                      class="
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
+                    text-nowrap text-subtle
+                    tablet:text-sm
+                  "
+                    >
+                      7
+                    </div>
+                  </div>
+                  <div
+                    class="col-span-3 row-start-2 bg-subtle"
+                  >
+                    <div
+                      class="
+        bg-progress-bar leading-[6px]
+        tablet:mb-0
+      "
+                      style="--bar-percent: 8.641975308641975%;"
+                    >
+                       
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-span-3 grid grid-cols-subgrid py-3"
+                >
+                  <div
+                    class="col-span-3 grid grid-cols-subgrid"
+                  >
+                    <div
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
+                    >
+                      B
+                    </div>
+                    <div
+                      class="
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
+                    text-nowrap text-subtle
+                    tablet:text-sm
+                  "
+                    >
+                      14
+                    </div>
+                  </div>
+                  <div
+                    class="col-span-3 row-start-2 bg-subtle"
+                  >
+                    <div
+                      class="
+        bg-progress-bar leading-[6px]
+        tablet:mb-0
+      "
+                      style="--bar-percent: 17.28395061728395%;"
+                    >
+                       
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-span-3 grid grid-cols-subgrid py-3"
+                >
+                  <div
+                    class="col-span-3 grid grid-cols-subgrid"
+                  >
+                    <div
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
+                    >
+                      B-
+                    </div>
+                    <div
+                      class="
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
+                    text-nowrap text-subtle
+                    tablet:text-sm
+                  "
+                    >
+                      4
+                    </div>
+                  </div>
+                  <div
+                    class="col-span-3 row-start-2 bg-subtle"
+                  >
+                    <div
+                      class="
+        bg-progress-bar leading-[6px]
+        tablet:mb-0
+      "
+                      style="--bar-percent: 4.938271604938271%;"
+                    >
+                       
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-span-3 grid grid-cols-subgrid py-3"
+                >
+                  <div
+                    class="col-span-3 grid grid-cols-subgrid"
+                  >
+                    <div
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
+                    >
+                      C+
+                    </div>
+                    <div
+                      class="
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
+                    text-nowrap text-subtle
+                    tablet:text-sm
+                  "
+                    >
+                      15
+                    </div>
+                  </div>
+                  <div
+                    class="col-span-3 row-start-2 bg-subtle"
+                  >
+                    <div
+                      class="
+        bg-progress-bar leading-[6px]
+        tablet:mb-0
+      "
+                      style="--bar-percent: 18.51851851851852%;"
+                    >
+                       
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-span-3 grid grid-cols-subgrid py-3"
+                >
+                  <div
+                    class="col-span-3 grid grid-cols-subgrid"
+                  >
+                    <div
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
+                    >
+                      C
+                    </div>
+                    <div
+                      class="
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
+                    text-nowrap text-subtle
+                    tablet:text-sm
+                  "
+                    >
+                      13
+                    </div>
+                  </div>
+                  <div
+                    class="col-span-3 row-start-2 bg-subtle"
+                  >
+                    <div
+                      class="
+        bg-progress-bar leading-[6px]
+        tablet:mb-0
+      "
+                      style="--bar-percent: 16.049382716049383%;"
+                    >
+                       
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-span-3 grid grid-cols-subgrid py-3"
+                >
+                  <div
+                    class="col-span-3 grid grid-cols-subgrid"
+                  >
+                    <div
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
+                    >
+                      C-
+                    </div>
+                    <div
+                      class="
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
+                    text-nowrap text-subtle
+                    tablet:text-sm
+                  "
+                    >
+                      5
+                    </div>
+                  </div>
+                  <div
+                    class="col-span-3 row-start-2 bg-subtle"
+                  >
+                    <div
+                      class="
+        bg-progress-bar leading-[6px]
+        tablet:mb-0
+      "
+                      style="--bar-percent: 6.172839506172839%;"
+                    >
+                       
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-span-3 grid grid-cols-subgrid py-3"
+                >
+                  <div
+                    class="col-span-3 grid grid-cols-subgrid"
+                  >
+                    <div
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
+                    >
+                      D+
+                    </div>
+                    <div
+                      class="
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
+                    text-nowrap text-subtle
+                    tablet:text-sm
+                  "
+                    >
+                      4
+                    </div>
+                  </div>
+                  <div
+                    class="col-span-3 row-start-2 bg-subtle"
+                  >
+                    <div
+                      class="
+        bg-progress-bar leading-[6px]
+        tablet:mb-0
+      "
+                      style="--bar-percent: 4.938271604938271%;"
+                    >
+                       
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-span-3 grid grid-cols-subgrid py-3"
+                >
+                  <div
+                    class="col-span-3 grid grid-cols-subgrid"
+                  >
+                    <div
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
+                    >
+                      D
+                    </div>
+                    <div
+                      class="
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
+                    text-nowrap text-subtle
+                    tablet:text-sm
+                  "
+                    >
+                      5
+                    </div>
+                  </div>
+                  <div
+                    class="col-span-3 row-start-2 bg-subtle"
+                  >
+                    <div
+                      class="
+        bg-progress-bar leading-[6px]
+        tablet:mb-0
+      "
+                      style="--bar-percent: 6.172839506172839%;"
+                    >
+                       
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-span-3 grid grid-cols-subgrid py-3"
+                >
+                  <div
+                    class="col-span-3 grid grid-cols-subgrid"
+                  >
+                    <div
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
+                    >
+                      F
+                    </div>
+                    <div
+                      class="
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
+                    text-nowrap text-subtle
+                    tablet:text-sm
+                  "
+                    >
+                      1
+                    </div>
+                  </div>
+                  <div
+                    class="col-span-3 row-start-2 bg-subtle"
+                  >
+                    <div
+                      class="
+        bg-progress-bar leading-[6px]
+        tablet:mb-0
+      "
+                      style="--bar-percent: 1.2345679012345678%;"
+                    >
+                       
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-span-3 grid grid-cols-subgrid py-3"
+                >
+                  <div
+                    class="col-span-3 grid grid-cols-subgrid"
+                  >
+                    <div
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
+                    >
+                      Abandoned
+                    </div>
+                    <div
+                      class="
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
+                    text-nowrap text-subtle
+                    tablet:text-sm
+                  "
+                    >
+                      2
+                    </div>
+                  </div>
+                  <div
+                    class="col-span-3 row-start-2 bg-subtle"
+                  >
+                    <div
+                      class="
+        bg-progress-bar leading-[6px]
+        tablet:mb-0
+      "
+                      style="--bar-percent: 2.4691358024691357%;"
+                    >
+                       
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
             <section
               class="w-full bg-default px-container pb-8"
             >
@@ -8922,32 +8981,36 @@ exports[`/readings/stats > matches snapshot 1`] = `
               </h2>
               <div
                 class="
-          grid w-full grid-cols-[1fr_auto]
+          grid w-full grid-cols-[1fr_24px_auto]
           tablet:whitespace-nowrap
         "
               >
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       1890s
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       1
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -8961,27 +9024,31 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       1930s
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       4
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -8995,27 +9062,31 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       1940s
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       1
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -9029,27 +9100,31 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       1950s
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       4
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -9063,27 +9138,31 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       1970s
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       19
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -9097,27 +9176,31 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       1980s
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       40
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -9131,27 +9214,31 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       1990s
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       6
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -9165,27 +9252,31 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       2000s
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       12
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -9199,27 +9290,31 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       2010s
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       35
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -9233,27 +9328,31 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       2020s
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       11
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -9281,32 +9380,36 @@ exports[`/readings/stats > matches snapshot 1`] = `
               </h2>
               <div
                 class="
-          grid w-full grid-cols-[1fr_auto]
+          grid w-full grid-cols-[1fr_24px_auto]
           tablet:whitespace-nowrap
         "
               >
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Anthology
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       1
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -9320,27 +9423,31 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Collection
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       4
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -9354,27 +9461,31 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Nonfiction
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       42
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -9388,27 +9499,31 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Novel
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       65
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -9422,27 +9537,31 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Novella
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       3
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -9456,27 +9575,31 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Short Story
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       18
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -9504,32 +9627,36 @@ exports[`/readings/stats > matches snapshot 1`] = `
               </h2>
               <div
                 class="
-          grid w-full grid-cols-[1fr_auto]
+          grid w-full grid-cols-[1fr_24px_auto]
           tablet:whitespace-nowrap
         "
               >
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Audible
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       30
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -9543,27 +9670,31 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Hardcover
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       10
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -9577,27 +9708,31 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Kindle
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       49
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -9611,27 +9746,31 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   </div>
                 </div>
                 <div
-                  class="col-span-2 grid grid-cols-subgrid py-3"
+                  class="col-span-3 grid grid-cols-subgrid py-3"
                 >
                   <div
-                    class="col-span-2 grid grid-cols-subgrid"
+                    class="col-span-3 grid grid-cols-subgrid"
                   >
                     <div
-                      class="font-sans text-xs text-muted"
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
                     >
                       Paperback
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
                     text-nowrap text-subtle
+                    tablet:text-sm
                   "
                     >
                       44
                     </div>
                   </div>
                   <div
-                    class="col-span-2 row-start-2 bg-subtle"
+                    class="col-span-3 row-start-2 bg-subtle"
                   >
                     <div
                       class="
@@ -9746,30 +9885,27 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   New visitors might want to start by reading about 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/how-i-grade/"
                   >
                     how I grade
                   </a>
-                  . After that, feel free to browse my 
+                  . After that, feel free to browse 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/reviews/"
                   >
-                    reviews
+                    my reviews
                   </a>
                   , which are also indexed 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/authors/"
@@ -9784,8 +9920,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   I also keep a 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/readings/"
@@ -9795,8 +9930,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                    that tracks everything I read, whether it gets a full review or not, complete with 
                   <a
                     class="
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       "
                     href="/readings/stats/"

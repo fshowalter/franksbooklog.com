@@ -72,9 +72,9 @@ export function Footer(): JSX.Element {
               <p className="mb-6 text-pretty">
                 New visitors might want to start by reading about{" "}
                 <FooterLink href="/how-i-grade/" text="how I grade" />. After
-                that, feel free to browse my{" "}
-                <FooterLink href="/reviews/" text="reviews" />, which are also
-                indexed <FooterLink href="/authors/" text="by author" />.
+                that, feel free to browse{" "}
+                <FooterLink href="/reviews/" text="my reviews" />, which are
+                also indexed <FooterLink href="/authors/" text="by author" />.
               </p>
 
               <p className="mb-6 text-pretty">
@@ -141,8 +141,7 @@ function FooterLink({ href, text }: { href: string; text: string }) {
   return (
     <a
       className={`
-        text-muted underline decoration-muted decoration-dashed
-        underline-offset-4 transition-colors
+        underline transition-colors
         hover:text-default hover:decoration-default
       `}
       href={href}
