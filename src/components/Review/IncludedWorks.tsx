@@ -25,9 +25,11 @@ export function IncludedWorks({ values }: Props) {
           {values.map((value) => (
             <li
               className={`
-                relative mb-1 bg-default px-container py-4
+                relative mb-1 transform-gpu bg-default px-container py-4
+                transition-transform
                 last-of-type:mb-0
-                has-[a:hover]:bg-stripe
+                has-[a:hover]:z-10 has-[a:hover]:scale-105
+                has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl
                 tablet:gap-x-6 tablet:px-4
                 desktop:px-6
               `}

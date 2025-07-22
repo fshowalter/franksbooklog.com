@@ -461,17 +461,17 @@ exports[`Home > matches snapshot 1`] = `
               <div
                 class="
           @container flex justify-center bg-default px-4 pb-8
-          group-has-[a:hover]/card:shadow-[0px_-5px_5px_2px,rgba(0,0,0,.85)]
           @min-[193px]:px-[clamp(4px,14cqw,32px)] @min-[193px]:pb-6
         "
               >
                 <div
-                  class="flex w-full max-w-[200px] flex-col"
+                  class="flex w-full max-w-[200px] flex-col px-1"
                 >
                   <div
                     class="
-              pt-3 font-sans text-xxs leading-4 font-light tracking-wide
-              whitespace-nowrap text-subtle
+              pt-3 font-sans text-xxs leading-4 font-light whitespace-nowrap
+              text-subtle
+              @min-[238px]:tracking-wide
             "
                   >
                     15 Feb 2025
@@ -479,8 +479,8 @@ exports[`Home > matches snapshot 1`] = `
                   <div
                     class="
               pt-2 text-base leading-5 font-medium
-              tablet:pt-3 tablet:text-md
-              desktop:pt-2 desktop:text-xl
+              tablet:pt-3
+              @min-[238px]:pt-2 @min-[238px]:text-md
             "
                   >
                     <a
@@ -497,15 +497,12 @@ exports[`Home > matches snapshot 1`] = `
                     </a>
                   </div>
                   <p
-                    class="
-              pt-1 font-sans text-xs leading-4 font-light text-subtle
-              tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
-            "
+                    class="pt-1 font-sans text-xs leading-4 font-light text-subtle"
                   >
                     <span
                       class="
                 hidden
-                tablet:inline
+                @min-[238px]:inline
               "
                     >
                       by 
@@ -523,8 +520,8 @@ exports[`Home > matches snapshot 1`] = `
                     <img
                       alt="C+: 3 stars (out of 5)"
                       class="
-              mt-2 h-4 w-20
-              tablet:mt-3 tablet:h-[18px] tablet:w-[90px]
+              mt-2 h-3 w-15
+              @min-[238px]:mt-2 @min-[238px]:h-[14px] @min-[238px]:w-[70px]
             "
                       height="16"
                       src="/svg/3-stars.svg"
@@ -533,8 +530,8 @@ exports[`Home > matches snapshot 1`] = `
                   </picture>
                   <div
                     class="
-              mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
-              text-subtle
+              mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle
+              @min-[238px]:tracking-wide
             "
                   >
                     Short Story | 1985
@@ -605,17 +602,17 @@ exports[`Home > matches snapshot 1`] = `
               <div
                 class="
           @container flex justify-center bg-default px-4 pb-8
-          group-has-[a:hover]/card:shadow-[0px_-5px_5px_2px,rgba(0,0,0,.85)]
           @min-[193px]:px-[clamp(4px,14cqw,32px)] @min-[193px]:pb-6
         "
               >
                 <div
-                  class="flex w-full max-w-[200px] flex-col"
+                  class="flex w-full max-w-[200px] flex-col px-1"
                 >
                   <div
                     class="
-              pt-3 font-sans text-xxs leading-4 font-light tracking-wide
-              whitespace-nowrap text-subtle
+              pt-3 font-sans text-xxs leading-4 font-light whitespace-nowrap
+              text-subtle
+              @min-[238px]:tracking-wide
             "
                   >
                     01 Dec 2024
@@ -623,8 +620,8 @@ exports[`Home > matches snapshot 1`] = `
                   <div
                     class="
               pt-2 text-base leading-5 font-medium
-              tablet:pt-3 tablet:text-md
-              desktop:pt-2 desktop:text-xl
+              tablet:pt-3
+              @min-[238px]:pt-2 @min-[238px]:text-md
             "
                   >
                     <a
@@ -641,15 +638,12 @@ exports[`Home > matches snapshot 1`] = `
                     </a>
                   </div>
                   <p
-                    class="
-              pt-1 font-sans text-xs leading-4 font-light text-subtle
-              tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
-            "
+                    class="pt-1 font-sans text-xs leading-4 font-light text-subtle"
                   >
                     <span
                       class="
                 hidden
-                tablet:inline
+                @min-[238px]:inline
               "
                     >
                       by 
@@ -667,8 +661,8 @@ exports[`Home > matches snapshot 1`] = `
                     <img
                       alt="B: 4 stars (out of 5)"
                       class="
-              mt-2 h-4 w-20
-              tablet:mt-3 tablet:h-[18px] tablet:w-[90px]
+              mt-2 h-3 w-15
+              @min-[238px]:mt-2 @min-[238px]:h-[14px] @min-[238px]:w-[70px]
             "
                       height="16"
                       src="/svg/4-stars.svg"
@@ -677,8 +671,8 @@ exports[`Home > matches snapshot 1`] = `
                   </picture>
                   <div
                     class="
-              mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
-              text-subtle
+              mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle
+              @min-[238px]:tracking-wide
             "
                   >
                     Novel | 1979
@@ -749,17 +743,17 @@ exports[`Home > matches snapshot 1`] = `
               <div
                 class="
           @container flex justify-center bg-default px-4 pb-8
-          group-has-[a:hover]/card:shadow-[0px_-5px_5px_2px,rgba(0,0,0,.85)]
           @min-[193px]:px-[clamp(4px,14cqw,32px)] @min-[193px]:pb-6
         "
               >
                 <div
-                  class="flex w-full max-w-[200px] flex-col"
+                  class="flex w-full max-w-[200px] flex-col px-1"
                 >
                   <div
                     class="
-              pt-3 font-sans text-xxs leading-4 font-light tracking-wide
-              whitespace-nowrap text-subtle
+              pt-3 font-sans text-xxs leading-4 font-light whitespace-nowrap
+              text-subtle
+              @min-[238px]:tracking-wide
             "
                   >
                     08 Nov 2024
@@ -767,8 +761,8 @@ exports[`Home > matches snapshot 1`] = `
                   <div
                     class="
               pt-2 text-base leading-5 font-medium
-              tablet:pt-3 tablet:text-md
-              desktop:pt-2 desktop:text-xl
+              tablet:pt-3
+              @min-[238px]:pt-2 @min-[238px]:text-md
             "
                   >
                     <a
@@ -785,15 +779,12 @@ exports[`Home > matches snapshot 1`] = `
                     </a>
                   </div>
                   <p
-                    class="
-              pt-1 font-sans text-xs leading-4 font-light text-subtle
-              tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
-            "
+                    class="pt-1 font-sans text-xs leading-4 font-light text-subtle"
                   >
                     <span
                       class="
                 hidden
-                tablet:inline
+                @min-[238px]:inline
               "
                     >
                       by 
@@ -811,8 +802,8 @@ exports[`Home > matches snapshot 1`] = `
                     <img
                       alt="C: 3 stars (out of 5)"
                       class="
-              mt-2 h-4 w-20
-              tablet:mt-3 tablet:h-[18px] tablet:w-[90px]
+              mt-2 h-3 w-15
+              @min-[238px]:mt-2 @min-[238px]:h-[14px] @min-[238px]:w-[70px]
             "
                       height="16"
                       src="/svg/3-stars.svg"
@@ -821,8 +812,8 @@ exports[`Home > matches snapshot 1`] = `
                   </picture>
                   <div
                     class="
-              mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
-              text-subtle
+              mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle
+              @min-[238px]:tracking-wide
             "
                   >
                     Nonfiction | 2023
@@ -893,17 +884,17 @@ exports[`Home > matches snapshot 1`] = `
               <div
                 class="
           @container flex justify-center bg-default px-4 pb-8
-          group-has-[a:hover]/card:shadow-[0px_-5px_5px_2px,rgba(0,0,0,.85)]
           @min-[193px]:px-[clamp(4px,14cqw,32px)] @min-[193px]:pb-6
         "
               >
                 <div
-                  class="flex w-full max-w-[200px] flex-col"
+                  class="flex w-full max-w-[200px] flex-col px-1"
                 >
                   <div
                     class="
-              pt-3 font-sans text-xxs leading-4 font-light tracking-wide
-              whitespace-nowrap text-subtle
+              pt-3 font-sans text-xxs leading-4 font-light whitespace-nowrap
+              text-subtle
+              @min-[238px]:tracking-wide
             "
                   >
                     25 Aug 2024
@@ -911,8 +902,8 @@ exports[`Home > matches snapshot 1`] = `
                   <div
                     class="
               pt-2 text-base leading-5 font-medium
-              tablet:pt-3 tablet:text-md
-              desktop:pt-2 desktop:text-xl
+              tablet:pt-3
+              @min-[238px]:pt-2 @min-[238px]:text-md
             "
                   >
                     <a
@@ -929,15 +920,12 @@ exports[`Home > matches snapshot 1`] = `
                     </a>
                   </div>
                   <p
-                    class="
-              pt-1 font-sans text-xs leading-4 font-light text-subtle
-              tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
-            "
+                    class="pt-1 font-sans text-xs leading-4 font-light text-subtle"
                   >
                     <span
                       class="
                 hidden
-                tablet:inline
+                @min-[238px]:inline
               "
                     >
                       by 
@@ -955,8 +943,8 @@ exports[`Home > matches snapshot 1`] = `
                     <img
                       alt="D: 2 stars (out of 5)"
                       class="
-              mt-2 h-4 w-20
-              tablet:mt-3 tablet:h-[18px] tablet:w-[90px]
+              mt-2 h-3 w-15
+              @min-[238px]:mt-2 @min-[238px]:h-[14px] @min-[238px]:w-[70px]
             "
                       height="16"
                       src="/svg/2-stars.svg"
@@ -965,8 +953,8 @@ exports[`Home > matches snapshot 1`] = `
                   </picture>
                   <div
                     class="
-              mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
-              text-subtle
+              mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle
+              @min-[238px]:tracking-wide
             "
                   >
                     Nonfiction | 2022
@@ -1037,17 +1025,17 @@ exports[`Home > matches snapshot 1`] = `
               <div
                 class="
           @container flex justify-center bg-default px-4 pb-8
-          group-has-[a:hover]/card:shadow-[0px_-5px_5px_2px,rgba(0,0,0,.85)]
           @min-[193px]:px-[clamp(4px,14cqw,32px)] @min-[193px]:pb-6
         "
               >
                 <div
-                  class="flex w-full max-w-[200px] flex-col"
+                  class="flex w-full max-w-[200px] flex-col px-1"
                 >
                   <div
                     class="
-              pt-3 font-sans text-xxs leading-4 font-light tracking-wide
-              whitespace-nowrap text-subtle
+              pt-3 font-sans text-xxs leading-4 font-light whitespace-nowrap
+              text-subtle
+              @min-[238px]:tracking-wide
             "
                   >
                     01 Jul 2024
@@ -1055,8 +1043,8 @@ exports[`Home > matches snapshot 1`] = `
                   <div
                     class="
               pt-2 text-base leading-5 font-medium
-              tablet:pt-3 tablet:text-md
-              desktop:pt-2 desktop:text-xl
+              tablet:pt-3
+              @min-[238px]:pt-2 @min-[238px]:text-md
             "
                   >
                     <a
@@ -1073,15 +1061,12 @@ exports[`Home > matches snapshot 1`] = `
                     </a>
                   </div>
                   <p
-                    class="
-              pt-1 font-sans text-xs leading-4 font-light text-subtle
-              tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
-            "
+                    class="pt-1 font-sans text-xs leading-4 font-light text-subtle"
                   >
                     <span
                       class="
                 hidden
-                tablet:inline
+                @min-[238px]:inline
               "
                     >
                       by 
@@ -1099,8 +1084,8 @@ exports[`Home > matches snapshot 1`] = `
                     <img
                       alt="A-: 4.5 stars (out of 5)"
                       class="
-              mt-2 h-4 w-20
-              tablet:mt-3 tablet:h-[18px] tablet:w-[90px]
+              mt-2 h-3 w-15
+              @min-[238px]:mt-2 @min-[238px]:h-[14px] @min-[238px]:w-[70px]
             "
                       height="16"
                       src="/svg/4-half-stars.svg"
@@ -1109,8 +1094,8 @@ exports[`Home > matches snapshot 1`] = `
                   </picture>
                   <div
                     class="
-              mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
-              text-subtle
+              mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle
+              @min-[238px]:tracking-wide
             "
                   >
                     Nonfiction | 2020
@@ -1181,17 +1166,17 @@ exports[`Home > matches snapshot 1`] = `
               <div
                 class="
           @container flex justify-center bg-default px-4 pb-8
-          group-has-[a:hover]/card:shadow-[0px_-5px_5px_2px,rgba(0,0,0,.85)]
           @min-[193px]:px-[clamp(4px,14cqw,32px)] @min-[193px]:pb-6
         "
               >
                 <div
-                  class="flex w-full max-w-[200px] flex-col"
+                  class="flex w-full max-w-[200px] flex-col px-1"
                 >
                   <div
                     class="
-              pt-3 font-sans text-xxs leading-4 font-light tracking-wide
-              whitespace-nowrap text-subtle
+              pt-3 font-sans text-xxs leading-4 font-light whitespace-nowrap
+              text-subtle
+              @min-[238px]:tracking-wide
             "
                   >
                     30 Jun 2024
@@ -1199,8 +1184,8 @@ exports[`Home > matches snapshot 1`] = `
                   <div
                     class="
               pt-2 text-base leading-5 font-medium
-              tablet:pt-3 tablet:text-md
-              desktop:pt-2 desktop:text-xl
+              tablet:pt-3
+              @min-[238px]:pt-2 @min-[238px]:text-md
             "
                   >
                     <a
@@ -1217,15 +1202,12 @@ exports[`Home > matches snapshot 1`] = `
                     </a>
                   </div>
                   <p
-                    class="
-              pt-1 font-sans text-xs leading-4 font-light text-subtle
-              tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
-            "
+                    class="pt-1 font-sans text-xs leading-4 font-light text-subtle"
                   >
                     <span
                       class="
                 hidden
-                tablet:inline
+                @min-[238px]:inline
               "
                     >
                       by 
@@ -1243,8 +1225,8 @@ exports[`Home > matches snapshot 1`] = `
                     <img
                       alt="B+: 4 stars (out of 5)"
                       class="
-              mt-2 h-4 w-20
-              tablet:mt-3 tablet:h-[18px] tablet:w-[90px]
+              mt-2 h-3 w-15
+              @min-[238px]:mt-2 @min-[238px]:h-[14px] @min-[238px]:w-[70px]
             "
                       height="16"
                       src="/svg/4-stars.svg"
@@ -1253,8 +1235,8 @@ exports[`Home > matches snapshot 1`] = `
                   </picture>
                   <div
                     class="
-              mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
-              text-subtle
+              mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle
+              @min-[238px]:tracking-wide
             "
                   >
                     Novel | 2023
@@ -1325,17 +1307,17 @@ exports[`Home > matches snapshot 1`] = `
               <div
                 class="
           @container flex justify-center bg-default px-4 pb-8
-          group-has-[a:hover]/card:shadow-[0px_-5px_5px_2px,rgba(0,0,0,.85)]
           @min-[193px]:px-[clamp(4px,14cqw,32px)] @min-[193px]:pb-6
         "
               >
                 <div
-                  class="flex w-full max-w-[200px] flex-col"
+                  class="flex w-full max-w-[200px] flex-col px-1"
                 >
                   <div
                     class="
-              pt-3 font-sans text-xxs leading-4 font-light tracking-wide
-              whitespace-nowrap text-subtle
+              pt-3 font-sans text-xxs leading-4 font-light whitespace-nowrap
+              text-subtle
+              @min-[238px]:tracking-wide
             "
                   >
                     11 Nov 2023
@@ -1343,8 +1325,8 @@ exports[`Home > matches snapshot 1`] = `
                   <div
                     class="
               pt-2 text-base leading-5 font-medium
-              tablet:pt-3 tablet:text-md
-              desktop:pt-2 desktop:text-xl
+              tablet:pt-3
+              @min-[238px]:pt-2 @min-[238px]:text-md
             "
                   >
                     <a
@@ -1361,15 +1343,12 @@ exports[`Home > matches snapshot 1`] = `
                     </a>
                   </div>
                   <p
-                    class="
-              pt-1 font-sans text-xs leading-4 font-light text-subtle
-              tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
-            "
+                    class="pt-1 font-sans text-xs leading-4 font-light text-subtle"
                   >
                     <span
                       class="
                 hidden
-                tablet:inline
+                @min-[238px]:inline
               "
                     >
                       by 
@@ -1387,8 +1366,8 @@ exports[`Home > matches snapshot 1`] = `
                     <img
                       alt="A: 5 stars (out of 5)"
                       class="
-              mt-2 h-4 w-20
-              tablet:mt-3 tablet:h-[18px] tablet:w-[90px]
+              mt-2 h-3 w-15
+              @min-[238px]:mt-2 @min-[238px]:h-[14px] @min-[238px]:w-[70px]
             "
                       height="16"
                       src="/svg/5-stars.svg"
@@ -1397,8 +1376,8 @@ exports[`Home > matches snapshot 1`] = `
                   </picture>
                   <div
                     class="
-              mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
-              text-subtle
+              mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle
+              @min-[238px]:tracking-wide
             "
                   >
                     Nonfiction | 2019
@@ -1469,17 +1448,17 @@ exports[`Home > matches snapshot 1`] = `
               <div
                 class="
           @container flex justify-center bg-default px-4 pb-8
-          group-has-[a:hover]/card:shadow-[0px_-5px_5px_2px,rgba(0,0,0,.85)]
           @min-[193px]:px-[clamp(4px,14cqw,32px)] @min-[193px]:pb-6
         "
               >
                 <div
-                  class="flex w-full max-w-[200px] flex-col"
+                  class="flex w-full max-w-[200px] flex-col px-1"
                 >
                   <div
                     class="
-              pt-3 font-sans text-xxs leading-4 font-light tracking-wide
-              whitespace-nowrap text-subtle
+              pt-3 font-sans text-xxs leading-4 font-light whitespace-nowrap
+              text-subtle
+              @min-[238px]:tracking-wide
             "
                   >
                     06 Nov 2023
@@ -1487,8 +1466,8 @@ exports[`Home > matches snapshot 1`] = `
                   <div
                     class="
               pt-2 text-base leading-5 font-medium
-              tablet:pt-3 tablet:text-md
-              desktop:pt-2 desktop:text-xl
+              tablet:pt-3
+              @min-[238px]:pt-2 @min-[238px]:text-md
             "
                   >
                     <a
@@ -1505,15 +1484,12 @@ exports[`Home > matches snapshot 1`] = `
                     </a>
                   </div>
                   <p
-                    class="
-              pt-1 font-sans text-xs leading-4 font-light text-subtle
-              tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
-            "
+                    class="pt-1 font-sans text-xs leading-4 font-light text-subtle"
                   >
                     <span
                       class="
                 hidden
-                tablet:inline
+                @min-[238px]:inline
               "
                     >
                       by 
@@ -1535,8 +1511,8 @@ exports[`Home > matches snapshot 1`] = `
                     <img
                       alt="C+: 3 stars (out of 5)"
                       class="
-              mt-2 h-4 w-20
-              tablet:mt-3 tablet:h-[18px] tablet:w-[90px]
+              mt-2 h-3 w-15
+              @min-[238px]:mt-2 @min-[238px]:h-[14px] @min-[238px]:w-[70px]
             "
                       height="16"
                       src="/svg/3-stars.svg"
@@ -1545,8 +1521,8 @@ exports[`Home > matches snapshot 1`] = `
                   </picture>
                   <div
                     class="
-              mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
-              text-subtle
+              mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle
+              @min-[238px]:tracking-wide
             "
                   >
                     Novel | 2023
@@ -1617,17 +1593,17 @@ exports[`Home > matches snapshot 1`] = `
               <div
                 class="
           @container flex justify-center bg-default px-4 pb-8
-          group-has-[a:hover]/card:shadow-[0px_-5px_5px_2px,rgba(0,0,0,.85)]
           @min-[193px]:px-[clamp(4px,14cqw,32px)] @min-[193px]:pb-6
         "
               >
                 <div
-                  class="flex w-full max-w-[200px] flex-col"
+                  class="flex w-full max-w-[200px] flex-col px-1"
                 >
                   <div
                     class="
-              pt-3 font-sans text-xxs leading-4 font-light tracking-wide
-              whitespace-nowrap text-subtle
+              pt-3 font-sans text-xxs leading-4 font-light whitespace-nowrap
+              text-subtle
+              @min-[238px]:tracking-wide
             "
                   >
                     29 Oct 2023
@@ -1635,8 +1611,8 @@ exports[`Home > matches snapshot 1`] = `
                   <div
                     class="
               pt-2 text-base leading-5 font-medium
-              tablet:pt-3 tablet:text-md
-              desktop:pt-2 desktop:text-xl
+              tablet:pt-3
+              @min-[238px]:pt-2 @min-[238px]:text-md
             "
                   >
                     <a
@@ -1653,15 +1629,12 @@ exports[`Home > matches snapshot 1`] = `
                     </a>
                   </div>
                   <p
-                    class="
-              pt-1 font-sans text-xs leading-4 font-light text-subtle
-              tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
-            "
+                    class="pt-1 font-sans text-xs leading-4 font-light text-subtle"
                   >
                     <span
                       class="
                 hidden
-                tablet:inline
+                @min-[238px]:inline
               "
                     >
                       by 
@@ -1679,8 +1652,8 @@ exports[`Home > matches snapshot 1`] = `
                     <img
                       alt="C-: 2.5 stars (out of 5)"
                       class="
-              mt-2 h-4 w-20
-              tablet:mt-3 tablet:h-[18px] tablet:w-[90px]
+              mt-2 h-3 w-15
+              @min-[238px]:mt-2 @min-[238px]:h-[14px] @min-[238px]:w-[70px]
             "
                       height="16"
                       src="/svg/2-half-stars.svg"
@@ -1689,8 +1662,8 @@ exports[`Home > matches snapshot 1`] = `
                   </picture>
                   <div
                     class="
-              mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
-              text-subtle
+              mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle
+              @min-[238px]:tracking-wide
             "
                   >
                     Novel | 2022
@@ -1761,17 +1734,17 @@ exports[`Home > matches snapshot 1`] = `
               <div
                 class="
           @container flex justify-center bg-default px-4 pb-8
-          group-has-[a:hover]/card:shadow-[0px_-5px_5px_2px,rgba(0,0,0,.85)]
           @min-[193px]:px-[clamp(4px,14cqw,32px)] @min-[193px]:pb-6
         "
               >
                 <div
-                  class="flex w-full max-w-[200px] flex-col"
+                  class="flex w-full max-w-[200px] flex-col px-1"
                 >
                   <div
                     class="
-              pt-3 font-sans text-xxs leading-4 font-light tracking-wide
-              whitespace-nowrap text-subtle
+              pt-3 font-sans text-xxs leading-4 font-light whitespace-nowrap
+              text-subtle
+              @min-[238px]:tracking-wide
             "
                   >
                     22 Oct 2023
@@ -1779,8 +1752,8 @@ exports[`Home > matches snapshot 1`] = `
                   <div
                     class="
               pt-2 text-base leading-5 font-medium
-              tablet:pt-3 tablet:text-md
-              desktop:pt-2 desktop:text-xl
+              tablet:pt-3
+              @min-[238px]:pt-2 @min-[238px]:text-md
             "
                   >
                     <a
@@ -1797,15 +1770,12 @@ exports[`Home > matches snapshot 1`] = `
                     </a>
                   </div>
                   <p
-                    class="
-              pt-1 font-sans text-xs leading-4 font-light text-subtle
-              tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
-            "
+                    class="pt-1 font-sans text-xs leading-4 font-light text-subtle"
                   >
                     <span
                       class="
                 hidden
-                tablet:inline
+                @min-[238px]:inline
               "
                     >
                       by 
@@ -1823,8 +1793,8 @@ exports[`Home > matches snapshot 1`] = `
                     <img
                       alt="C+: 3 stars (out of 5)"
                       class="
-              mt-2 h-4 w-20
-              tablet:mt-3 tablet:h-[18px] tablet:w-[90px]
+              mt-2 h-3 w-15
+              @min-[238px]:mt-2 @min-[238px]:h-[14px] @min-[238px]:w-[70px]
             "
                       height="16"
                       src="/svg/3-stars.svg"
@@ -1833,8 +1803,8 @@ exports[`Home > matches snapshot 1`] = `
                   </picture>
                   <div
                     class="
-              mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
-              text-subtle
+              mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle
+              @min-[238px]:tracking-wide
             "
                   >
                     Nonfiction | 2023
@@ -1905,17 +1875,17 @@ exports[`Home > matches snapshot 1`] = `
               <div
                 class="
           @container flex justify-center bg-default px-4 pb-8
-          group-has-[a:hover]/card:shadow-[0px_-5px_5px_2px,rgba(0,0,0,.85)]
           @min-[193px]:px-[clamp(4px,14cqw,32px)] @min-[193px]:pb-6
         "
               >
                 <div
-                  class="flex w-full max-w-[200px] flex-col"
+                  class="flex w-full max-w-[200px] flex-col px-1"
                 >
                   <div
                     class="
-              pt-3 font-sans text-xxs leading-4 font-light tracking-wide
-              whitespace-nowrap text-subtle
+              pt-3 font-sans text-xxs leading-4 font-light whitespace-nowrap
+              text-subtle
+              @min-[238px]:tracking-wide
             "
                   >
                     09 Oct 2023
@@ -1923,8 +1893,8 @@ exports[`Home > matches snapshot 1`] = `
                   <div
                     class="
               pt-2 text-base leading-5 font-medium
-              tablet:pt-3 tablet:text-md
-              desktop:pt-2 desktop:text-xl
+              tablet:pt-3
+              @min-[238px]:pt-2 @min-[238px]:text-md
             "
                   >
                     <a
@@ -1941,15 +1911,12 @@ exports[`Home > matches snapshot 1`] = `
                     </a>
                   </div>
                   <p
-                    class="
-              pt-1 font-sans text-xs leading-4 font-light text-subtle
-              tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
-            "
+                    class="pt-1 font-sans text-xs leading-4 font-light text-subtle"
                   >
                     <span
                       class="
                 hidden
-                tablet:inline
+                @min-[238px]:inline
               "
                     >
                       by 
@@ -1967,8 +1934,8 @@ exports[`Home > matches snapshot 1`] = `
                     <img
                       alt="B: 4 stars (out of 5)"
                       class="
-              mt-2 h-4 w-20
-              tablet:mt-3 tablet:h-[18px] tablet:w-[90px]
+              mt-2 h-3 w-15
+              @min-[238px]:mt-2 @min-[238px]:h-[14px] @min-[238px]:w-[70px]
             "
                       height="16"
                       src="/svg/4-stars.svg"
@@ -1977,8 +1944,8 @@ exports[`Home > matches snapshot 1`] = `
                   </picture>
                   <div
                     class="
-              mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
-              text-subtle
+              mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle
+              @min-[238px]:tracking-wide
             "
                   >
                     Novella | 2017
@@ -2049,17 +2016,17 @@ exports[`Home > matches snapshot 1`] = `
               <div
                 class="
           @container flex justify-center bg-default px-4 pb-8
-          group-has-[a:hover]/card:shadow-[0px_-5px_5px_2px,rgba(0,0,0,.85)]
           @min-[193px]:px-[clamp(4px,14cqw,32px)] @min-[193px]:pb-6
         "
               >
                 <div
-                  class="flex w-full max-w-[200px] flex-col"
+                  class="flex w-full max-w-[200px] flex-col px-1"
                 >
                   <div
                     class="
-              pt-3 font-sans text-xxs leading-4 font-light tracking-wide
-              whitespace-nowrap text-subtle
+              pt-3 font-sans text-xxs leading-4 font-light whitespace-nowrap
+              text-subtle
+              @min-[238px]:tracking-wide
             "
                   >
                     29 Jan 2023
@@ -2067,8 +2034,8 @@ exports[`Home > matches snapshot 1`] = `
                   <div
                     class="
               pt-2 text-base leading-5 font-medium
-              tablet:pt-3 tablet:text-md
-              desktop:pt-2 desktop:text-xl
+              tablet:pt-3
+              @min-[238px]:pt-2 @min-[238px]:text-md
             "
                   >
                     <a
@@ -2085,15 +2052,12 @@ exports[`Home > matches snapshot 1`] = `
                     </a>
                   </div>
                   <p
-                    class="
-              pt-1 font-sans text-xs leading-4 font-light text-subtle
-              tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
-            "
+                    class="pt-1 font-sans text-xs leading-4 font-light text-subtle"
                   >
                     <span
                       class="
                 hidden
-                tablet:inline
+                @min-[238px]:inline
               "
                     >
                       by 
@@ -2111,8 +2075,8 @@ exports[`Home > matches snapshot 1`] = `
                     <img
                       alt="B: 4 stars (out of 5)"
                       class="
-              mt-2 h-4 w-20
-              tablet:mt-3 tablet:h-[18px] tablet:w-[90px]
+              mt-2 h-3 w-15
+              @min-[238px]:mt-2 @min-[238px]:h-[14px] @min-[238px]:w-[70px]
             "
                       height="16"
                       src="/svg/4-stars.svg"
@@ -2121,8 +2085,8 @@ exports[`Home > matches snapshot 1`] = `
                   </picture>
                   <div
                     class="
-              mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
-              text-subtle
+              mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle
+              @min-[238px]:tracking-wide
             "
                   >
                     Novel | 1991
@@ -2246,7 +2210,7 @@ exports[`Home > matches snapshot 1`] = `
                   <a
                     class="
         underline transition-colors
-        hover:text-default hover:decoration-default
+        hover:text-default
       "
                     href="/how-i-grade/"
                   >
@@ -2256,7 +2220,7 @@ exports[`Home > matches snapshot 1`] = `
                   <a
                     class="
         underline transition-colors
-        hover:text-default hover:decoration-default
+        hover:text-default
       "
                     href="/reviews/"
                   >
@@ -2266,7 +2230,7 @@ exports[`Home > matches snapshot 1`] = `
                   <a
                     class="
         underline transition-colors
-        hover:text-default hover:decoration-default
+        hover:text-default
       "
                     href="/authors/"
                   >
@@ -2281,7 +2245,7 @@ exports[`Home > matches snapshot 1`] = `
                   <a
                     class="
         underline transition-colors
-        hover:text-default hover:decoration-default
+        hover:text-default
       "
                     href="/readings/"
                   >
@@ -2291,7 +2255,7 @@ exports[`Home > matches snapshot 1`] = `
                   <a
                     class="
         underline transition-colors
-        hover:text-default hover:decoration-default
+        hover:text-default
       "
                     href="/readings/stats/"
                   >
@@ -2415,10 +2379,7 @@ exports[`Home > matches snapshot 1`] = `
         >
           All reviews by Frank Showalter. All images used in accordance with the 
           <a
-            class="
-            text-inherit underline decoration-dashed underline-offset-4
-            hover:bg-default hover:text-default
-          "
+            class="text-inherit underline"
             href="http://www.copyright.gov/title17/92chap1.html#107"
             rel="nofollow"
           >

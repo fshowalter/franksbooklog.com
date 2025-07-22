@@ -71,16 +71,15 @@ export function HomeListItem({
       <div
         className={`
           @container flex justify-center bg-default px-4 pb-8
-          group-has-[a:hover]/card:shadow-[0px_-5px_5px_2px,rgba(0,0,0,.85)]
           @min-[193px]:px-[clamp(4px,14cqw,32px)] @min-[193px]:pb-6
         `}
       >
-        <div className={`flex w-full max-w-[200px] flex-col`}>
+        <div className={`flex w-full max-w-[200px] flex-col px-1`}>
           <div
             className={`
               pt-3 font-sans text-xxs leading-4 font-light whitespace-nowrap
               text-subtle
-              tablet:tracking-wide
+              @min-[238px]:tracking-wide
             `}
           >
             {formatDate(value.date)}
@@ -139,9 +138,8 @@ export function HomeListItem({
           />
           <div
             className={`
-              mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
-              text-subtle
-              tablet:tracking-wide
+              mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle
+              @min-[238px]:tracking-wide
             `}
           >
             {value.kind} | {value.yearPublished}

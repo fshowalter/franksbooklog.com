@@ -122,10 +122,7 @@ export function Footer(): JSX.Element {
       >
         All reviews by Frank Showalter. All images used in accordance with the{" "}
         <a
-          className={`
-            text-inherit underline decoration-dashed underline-offset-4
-            hover:bg-default hover:text-default
-          `}
+          className={`text-inherit underline`}
           href="http://www.copyright.gov/title17/92chap1.html#107"
           rel="nofollow"
         >
@@ -142,7 +139,7 @@ function FooterLink({ href, text }: { href: string; text: string }) {
     <a
       className={`
         underline transition-colors
-        hover:text-default hover:decoration-default
+        hover:text-default
       `}
       href={href}
     >
