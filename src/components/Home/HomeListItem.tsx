@@ -71,15 +71,15 @@ export function HomeListItem({
       <div
         className={`
           @container flex justify-center bg-default px-4 pb-8
-          group-has-[a:hover]/card:shadow-[0px_-5px_5px_2px,rgba(0,0,0,.85)]
           @min-[193px]:px-[clamp(4px,14cqw,32px)] @min-[193px]:pb-6
         `}
       >
-        <div className={`flex w-full max-w-[200px] flex-col`}>
+        <div className={`flex w-full max-w-[200px] flex-col px-1`}>
           <div
             className={`
-              pt-3 font-sans text-xxs leading-4 font-light tracking-wide
-              whitespace-nowrap text-subtle
+              pt-3 font-sans text-xxs leading-4 font-light whitespace-nowrap
+              text-subtle
+              @min-[238px]:tracking-wide
             `}
           >
             {formatDate(value.date)}
@@ -87,8 +87,8 @@ export function HomeListItem({
           <div
             className={`
               pt-2 text-base leading-5 font-medium
-              tablet:pt-3 tablet:text-md
-              desktop:pt-2 desktop:text-xl
+              tablet:pt-3
+              @min-[238px]:pt-2 @min-[238px]:text-md
             `}
           >
             <a
@@ -105,15 +105,12 @@ export function HomeListItem({
             </a>
           </div>
           <p
-            className={`
-              pt-1 font-sans text-xs leading-4 font-light text-subtle
-              tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
-            `}
+            className={`pt-1 font-sans text-xs leading-4 font-light text-subtle`}
           >
             <span
               className={`
                 hidden
-                tablet:inline
+                @min-[238px]:inline
               `}
             >
               by{" "}
@@ -133,16 +130,16 @@ export function HomeListItem({
           </p>{" "}
           <Grade
             className={`
-              mt-2 h-4 w-20
-              tablet:mt-3 tablet:h-[18px] tablet:w-[90px]
+              mt-2 h-3 w-15
+              @min-[238px]:mt-2 @min-[238px]:h-[14px] @min-[238px]:w-[70px]
             `}
             height={16}
             value={value.grade}
           />
           <div
             className={`
-              mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
-              text-subtle
+              mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle
+              @min-[238px]:tracking-wide
             `}
           >
             {value.kind} | {value.yearPublished}

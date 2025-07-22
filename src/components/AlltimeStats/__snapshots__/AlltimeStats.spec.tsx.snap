@@ -9886,7 +9886,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   <a
                     class="
         underline transition-colors
-        hover:text-default hover:decoration-default
+        hover:text-default
       "
                     href="/how-i-grade/"
                   >
@@ -9896,7 +9896,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   <a
                     class="
         underline transition-colors
-        hover:text-default hover:decoration-default
+        hover:text-default
       "
                     href="/reviews/"
                   >
@@ -9906,7 +9906,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   <a
                     class="
         underline transition-colors
-        hover:text-default hover:decoration-default
+        hover:text-default
       "
                     href="/authors/"
                   >
@@ -9921,7 +9921,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   <a
                     class="
         underline transition-colors
-        hover:text-default hover:decoration-default
+        hover:text-default
       "
                     href="/readings/"
                   >
@@ -9931,7 +9931,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   <a
                     class="
         underline transition-colors
-        hover:text-default hover:decoration-default
+        hover:text-default
       "
                     href="/readings/stats/"
                   >
@@ -10055,10 +10055,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
         >
           All reviews by Frank Showalter. All images used in accordance with the 
           <a
-            class="
-            text-inherit underline decoration-dashed underline-offset-4
-            hover:bg-default hover:text-default
-          "
+            class="text-inherit underline"
             href="http://www.copyright.gov/title17/92chap1.html#107"
             rel="nofollow"
           >

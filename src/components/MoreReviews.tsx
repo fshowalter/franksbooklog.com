@@ -40,16 +40,15 @@ export function MoreReviews({
     <nav
       className={`
         mx-auto w-full max-w-(--breakpoint-desktop) bg-subtle px-container
-        tablet:max-w-popout tablet:px-0
-        laptop:max-w-(--breakpoint-desktop) laptop:px-container
+        laptop:px-container
       `}
       data-page-find-ignore
     >
       <div>{children}</div>
       <ul
         className={`
-          grid auto-rows-[auto_1fr] grid-cols-2 gap-x-[clamp(8px,2vw,32px)]
-          gap-y-[clamp(8px,2vw,32px)]
+          -mx-4 grid auto-rows-[auto_1fr] grid-cols-2
+          gap-x-[clamp(8px,2vw,32px)] gap-y-[clamp(8px,2vw,32px)]
           tablet:grid-cols-3 tablet:gap-x-4 tablet:gap-y-4
           laptop:-mx-6 laptop:grid-cols-6 laptop:gap-x-6 laptop:gap-y-6
           desktop:-mx-8 desktop:grid-cols-6 desktop:gap-y-12
@@ -81,9 +80,10 @@ function MoreReviewsCard({ value }: { value: MoreReviewsValue }): JSX.Element {
       >
         <div
           className={`
-            relative
+            relative max-w-[200px]
             after:absolute after:inset-x-0 after:top-0 after:bottom-0 after:z-20
-            after:bg-default after:opacity-15 after:transition-opacity
+            after:rounded-[2.5px] after:bg-default after:opacity-15
+            after:transition-opacity
             group-hover/card:after:opacity-0
           `}
         >
@@ -92,7 +92,6 @@ function MoreReviewsCard({ value }: { value: MoreReviewsValue }): JSX.Element {
             imageProps={value.coverImageProps}
             {...MoreReviewsImageConfig}
             alt=""
-            className="max-w-[200px]"
             loading="lazy"
           />
         </div>
@@ -103,12 +102,11 @@ function MoreReviewsCard({ value }: { value: MoreReviewsValue }): JSX.Element {
           @min-[193px]:px-[clamp(4px,14cqw,32px)] @min-[193px]:pb-6
         `}
       >
-        <div className={`flex w-full max-w-[200px] flex-col`}>
+        <div className={`flex w-full max-w-[200px] flex-col px-1`}>
           <div
             className={`
               pt-4 text-base leading-5 font-medium
-              tablet:pt-5 tablet:text-md tablet:leading-5
-              desktop:text-xl desktop:leading-6
+              @min-[238px]:text-md
             `}
           >
             <a
@@ -125,15 +123,12 @@ function MoreReviewsCard({ value }: { value: MoreReviewsValue }): JSX.Element {
             </a>
           </div>
           <p
-            className={`
-              pt-1 font-sans text-xs leading-4 font-light text-subtle
-              tablet:pt-2 tablet:font-serif tablet:text-base tablet:leading-5
-            `}
+            className={`pt-1 font-sans text-xs leading-4 font-light text-subtle`}
           >
             <span
               className={`
                 hidden
-                tablet:inline
+                @min-[238px]:inline
               `}
             >
               by{" "}
@@ -153,8 +148,8 @@ function MoreReviewsCard({ value }: { value: MoreReviewsValue }): JSX.Element {
           </p>{" "}
           <Grade
             className={`
-              mt-2 h-4 w-20
-              tablet:mt-3 tablet:h-[18px] tablet:w-[90px]
+              mt-2 h-3 w-15
+              @min-[238px]:mt-2 @min-[238px]:h-[14px] @min-[238px]:w-[70px]
             `}
             height={18}
             value={value.grade}
@@ -168,8 +163,8 @@ function MoreReviewsCard({ value }: { value: MoreReviewsValue }): JSX.Element {
           />
           <div
             className={`
-              mt-auto pt-6 font-sans text-xxs leading-4 font-light tracking-wide
-              text-subtle
+              mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle
+              @min-[238px]:tracking-wide
             `}
           >
             {value.kind} | {value.yearPublished}
