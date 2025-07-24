@@ -391,23 +391,27 @@ exports[`Home > matches snapshot 1`] = `
           </h2>
           <ol
             class="
-            -mx-4 grid grid-cols-2 grid-rows-[auto_1fr] gap-x-2 gap-y-2
-            tablet:grid-cols-3 tablet:gap-x-4 tablet:gap-y-4
-            tablet-landscape:grid-cols-4
-            laptop:-mx-6 laptop:grid-cols-6 laptop:gap-x-6 laptop:gap-y-6
-            desktop:-mx-8 desktop:grid-cols-6 desktop:gap-y-12
+            -mx-4 grid grid-cols-2 grid-rows-[auto_1fr] flex-wrap gap-x-2
+            gap-y-2
+            tablet:flex tablet:items-baseline tablet:gap-x-4 tablet:gap-y-4
+            laptop:-mx-6 laptop:gap-x-6 laptop:gap-y-6
+            desktop:-mx-8 desktop:gap-y-12
           "
           >
             <li
               class="
         group/card relative row-span-2 grid transform-gpu grid-rows-subgrid
-        gap-y-0 bg-default transition-transform
+        flex-col bg-default transition-transform
         has-[a:hover]:-translate-y-2 has-[a:hover]:drop-shadow-2xl
+        tablet:flex tablet:w-[calc((100%_-_32px)_/_3)]
+        tablet-landscape:w-[calc((100%_-_48px)_/_4)]
+        laptop:w-[calc((100%_-_120px)_/_6)]
       "
             >
               <div
                 class="
           @container z-10 flex justify-center self-end px-3 pt-6
+          tablet:self-auto
           @min-[200px]:px-[clamp(4px,10cqw,32px)]
         "
               >
@@ -542,13 +546,17 @@ exports[`Home > matches snapshot 1`] = `
             <li
               class="
         group/card relative row-span-2 grid transform-gpu grid-rows-subgrid
-        gap-y-0 bg-default transition-transform
+        flex-col bg-default transition-transform
         has-[a:hover]:-translate-y-2 has-[a:hover]:drop-shadow-2xl
+        tablet:flex tablet:w-[calc((100%_-_32px)_/_3)]
+        tablet-landscape:w-[calc((100%_-_48px)_/_4)]
+        laptop:w-[calc((100%_-_120px)_/_6)]
       "
             >
               <div
                 class="
           @container z-10 flex justify-center self-end px-3 pt-6
+          tablet:self-auto
           @min-[200px]:px-[clamp(4px,10cqw,32px)]
         "
               >
@@ -683,13 +691,17 @@ exports[`Home > matches snapshot 1`] = `
             <li
               class="
         group/card relative row-span-2 grid transform-gpu grid-rows-subgrid
-        gap-y-0 bg-default transition-transform
+        flex-col bg-default transition-transform
         has-[a:hover]:-translate-y-2 has-[a:hover]:drop-shadow-2xl
+        tablet:flex tablet:w-[calc((100%_-_32px)_/_3)]
+        tablet-landscape:w-[calc((100%_-_48px)_/_4)]
+        laptop:w-[calc((100%_-_120px)_/_6)]
       "
             >
               <div
                 class="
           @container z-10 flex justify-center self-end px-3 pt-6
+          tablet:self-auto
           @min-[200px]:px-[clamp(4px,10cqw,32px)]
         "
               >
@@ -824,13 +836,17 @@ exports[`Home > matches snapshot 1`] = `
             <li
               class="
         group/card relative row-span-2 grid transform-gpu grid-rows-subgrid
-        gap-y-0 bg-default transition-transform
+        flex-col bg-default transition-transform
         has-[a:hover]:-translate-y-2 has-[a:hover]:drop-shadow-2xl
+        tablet:flex tablet:w-[calc((100%_-_32px)_/_3)]
+        tablet-landscape:w-[calc((100%_-_48px)_/_4)]
+        laptop:w-[calc((100%_-_120px)_/_6)]
       "
             >
               <div
                 class="
           @container z-10 flex justify-center self-end px-3 pt-6
+          tablet:self-auto
           @min-[200px]:px-[clamp(4px,10cqw,32px)]
         "
               >
@@ -965,13 +981,17 @@ exports[`Home > matches snapshot 1`] = `
             <li
               class="
         group/card relative row-span-2 grid transform-gpu grid-rows-subgrid
-        gap-y-0 bg-default transition-transform
+        flex-col bg-default transition-transform
         has-[a:hover]:-translate-y-2 has-[a:hover]:drop-shadow-2xl
+        tablet:flex tablet:w-[calc((100%_-_32px)_/_3)]
+        tablet-landscape:w-[calc((100%_-_48px)_/_4)]
+        laptop:w-[calc((100%_-_120px)_/_6)]
       "
             >
               <div
                 class="
           @container z-10 flex justify-center self-end px-3 pt-6
+          tablet:self-auto
           @min-[200px]:px-[clamp(4px,10cqw,32px)]
         "
               >
@@ -1106,13 +1126,17 @@ exports[`Home > matches snapshot 1`] = `
             <li
               class="
         group/card relative row-span-2 grid transform-gpu grid-rows-subgrid
-        gap-y-0 bg-default transition-transform
+        flex-col bg-default transition-transform
         has-[a:hover]:-translate-y-2 has-[a:hover]:drop-shadow-2xl
+        tablet:flex tablet:w-[calc((100%_-_32px)_/_3)]
+        tablet-landscape:w-[calc((100%_-_48px)_/_4)]
+        laptop:w-[calc((100%_-_120px)_/_6)]
       "
             >
               <div
                 class="
           @container z-10 flex justify-center self-end px-3 pt-6
+          tablet:self-auto
           @min-[200px]:px-[clamp(4px,10cqw,32px)]
         "
               >
@@ -1247,13 +1271,17 @@ exports[`Home > matches snapshot 1`] = `
             <li
               class="
         group/card relative row-span-2 grid transform-gpu grid-rows-subgrid
-        gap-y-0 bg-default transition-transform
+        flex-col bg-default transition-transform
         has-[a:hover]:-translate-y-2 has-[a:hover]:drop-shadow-2xl
+        tablet:flex tablet:w-[calc((100%_-_32px)_/_3)]
+        tablet-landscape:w-[calc((100%_-_48px)_/_4)]
+        laptop:w-[calc((100%_-_120px)_/_6)]
       "
             >
               <div
                 class="
           @container z-10 flex justify-center self-end px-3 pt-6
+          tablet:self-auto
           @min-[200px]:px-[clamp(4px,10cqw,32px)]
         "
               >
@@ -1388,13 +1416,17 @@ exports[`Home > matches snapshot 1`] = `
             <li
               class="
         group/card relative row-span-2 grid transform-gpu grid-rows-subgrid
-        gap-y-0 bg-default transition-transform
+        flex-col bg-default transition-transform
         has-[a:hover]:-translate-y-2 has-[a:hover]:drop-shadow-2xl
+        tablet:flex tablet:w-[calc((100%_-_32px)_/_3)]
+        tablet-landscape:w-[calc((100%_-_48px)_/_4)]
+        laptop:w-[calc((100%_-_120px)_/_6)]
       "
             >
               <div
                 class="
           @container z-10 flex justify-center self-end px-3 pt-6
+          tablet:self-auto
           @min-[200px]:px-[clamp(4px,10cqw,32px)]
         "
               >
@@ -1533,13 +1565,17 @@ exports[`Home > matches snapshot 1`] = `
             <li
               class="
         group/card relative row-span-2 grid transform-gpu grid-rows-subgrid
-        gap-y-0 bg-default transition-transform
+        flex-col bg-default transition-transform
         has-[a:hover]:-translate-y-2 has-[a:hover]:drop-shadow-2xl
+        tablet:flex tablet:w-[calc((100%_-_32px)_/_3)]
+        tablet-landscape:w-[calc((100%_-_48px)_/_4)]
+        laptop:w-[calc((100%_-_120px)_/_6)]
       "
             >
               <div
                 class="
           @container z-10 flex justify-center self-end px-3 pt-6
+          tablet:self-auto
           @min-[200px]:px-[clamp(4px,10cqw,32px)]
         "
               >
@@ -1674,13 +1710,17 @@ exports[`Home > matches snapshot 1`] = `
             <li
               class="
         group/card relative row-span-2 grid transform-gpu grid-rows-subgrid
-        gap-y-0 bg-default transition-transform
+        flex-col bg-default transition-transform
         has-[a:hover]:-translate-y-2 has-[a:hover]:drop-shadow-2xl
+        tablet:flex tablet:w-[calc((100%_-_32px)_/_3)]
+        tablet-landscape:w-[calc((100%_-_48px)_/_4)]
+        laptop:w-[calc((100%_-_120px)_/_6)]
       "
             >
               <div
                 class="
           @container z-10 flex justify-center self-end px-3 pt-6
+          tablet:self-auto
           @min-[200px]:px-[clamp(4px,10cqw,32px)]
         "
               >
@@ -1815,13 +1855,17 @@ exports[`Home > matches snapshot 1`] = `
             <li
               class="
         group/card relative row-span-2 grid transform-gpu grid-rows-subgrid
-        gap-y-0 bg-default transition-transform
+        flex-col bg-default transition-transform
         has-[a:hover]:-translate-y-2 has-[a:hover]:drop-shadow-2xl
+        tablet:flex tablet:w-[calc((100%_-_32px)_/_3)]
+        tablet-landscape:w-[calc((100%_-_48px)_/_4)]
+        laptop:w-[calc((100%_-_120px)_/_6)]
       "
             >
               <div
                 class="
           @container z-10 flex justify-center self-end px-3 pt-6
+          tablet:self-auto
           @min-[200px]:px-[clamp(4px,10cqw,32px)]
         "
               >
@@ -1956,13 +2000,17 @@ exports[`Home > matches snapshot 1`] = `
             <li
               class="
         group/card relative row-span-2 grid transform-gpu grid-rows-subgrid
-        gap-y-0 bg-default transition-transform
+        flex-col bg-default transition-transform
         has-[a:hover]:-translate-y-2 has-[a:hover]:drop-shadow-2xl
+        tablet:flex tablet:w-[calc((100%_-_32px)_/_3)]
+        tablet-landscape:w-[calc((100%_-_48px)_/_4)]
+        laptop:w-[calc((100%_-_120px)_/_6)]
       "
             >
               <div
                 class="
           @container z-10 flex justify-center self-end px-3 pt-6
+          tablet:self-auto
           @min-[200px]:px-[clamp(4px,10cqw,32px)]
         "
               >

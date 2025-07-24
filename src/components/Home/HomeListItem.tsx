@@ -41,13 +41,17 @@ export function HomeListItem({
     <li
       className={`
         group/card relative row-span-2 grid transform-gpu grid-rows-subgrid
-        gap-y-0 bg-default transition-transform
+        flex-col bg-default transition-transform
         has-[a:hover]:-translate-y-2 has-[a:hover]:drop-shadow-2xl
+        tablet:flex tablet:w-[calc((100%_-_32px)_/_3)]
+        tablet-landscape:w-[calc((100%_-_48px)_/_4)]
+        laptop:w-[calc((100%_-_120px)_/_6)]
       `}
     >
       <div
         className={`
           @container z-10 flex justify-center self-end px-3 pt-6
+          tablet:self-auto
           @min-[200px]:px-[clamp(4px,10cqw,32px)]
         `}
       >
