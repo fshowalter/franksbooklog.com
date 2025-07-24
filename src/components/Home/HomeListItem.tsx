@@ -41,19 +41,19 @@ export function HomeListItem({
     <li
       className={`
         group/card relative row-span-2 grid transform-gpu grid-rows-subgrid
-        gap-y-0 transition-transform
+        gap-y-0 bg-default transition-transform
         has-[a:hover]:-translate-y-2 has-[a:hover]:drop-shadow-2xl
       `}
     >
       <div
         className={`
-          @container z-10 flex justify-center self-end bg-default px-3 pt-3
-          @min-[200px]:px-[clamp(4px,10cqw,32px)] @min-[200px]:pt-6
+          @container z-10 flex justify-center self-end px-3 pt-6
+          @min-[200px]:px-[clamp(4px,10cqw,32px)]
         `}
       >
         <div
           className={`
-            relative
+            relative drop-shadow-md
             after:absolute after:inset-x-0 after:top-0 after:bottom-0 after:z-20
             after:bg-default after:opacity-15 after:transition-opacity
             group-hover/card:after:opacity-0
