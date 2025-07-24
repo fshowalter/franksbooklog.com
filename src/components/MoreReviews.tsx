@@ -39,19 +39,19 @@ export function MoreReviews({
   return (
     <nav
       className={`
-        mx-auto w-full max-w-(--breakpoint-desktop) bg-subtle px-container
-        laptop:px-container
+        mx-auto w-full max-w-[908px] bg-subtle px-container
+        laptop:max-w-(--breakpoint-desktop) laptop:px-container
       `}
       data-page-find-ignore
     >
       <div>{children}</div>
       <ul
         className={`
-          -mx-4 grid auto-rows-[auto_1fr] grid-cols-2
+          -mx-4 grid auto-rows-[auto_1fr] grid-cols-2 flex-wrap
           gap-x-[clamp(8px,2vw,32px)] gap-y-[clamp(8px,2vw,32px)]
-          tablet:grid-cols-3 tablet:gap-x-4 tablet:gap-y-4
-          laptop:-mx-6 laptop:grid-cols-6 laptop:gap-x-6 laptop:gap-y-6
-          desktop:-mx-8 desktop:grid-cols-6 desktop:gap-y-12
+          tablet:flex tablet:items-baseline tablet:gap-x-4 tablet:gap-y-4
+          laptop:-mx-6 laptop:gap-x-6 laptop:gap-y-6
+          desktop:-mx-8 desktop:gap-y-12
         `}
       >
         {values.map((value) => {
@@ -67,20 +67,23 @@ function MoreReviewsCard({ value }: { value: MoreReviewsValue }): JSX.Element {
     <li
       className={`
         group/card relative row-span-2 grid transform-gpu grid-rows-subgrid
-        gap-y-0 transition-transform
+        flex-col gap-y-0 transition-transform
         has-[a:hover]:-translate-y-1 has-[a:hover]:scale-105
         has-[a:hover]:drop-shadow-2xl
+        tablet:flex tablet:w-[calc((100%_-_32px)_/_3)]
+        laptop:w-[calc((100%_-_120px)_/_6)]
       `}
     >
       <div
         className={`
-          @container flex justify-center self-end bg-default px-3 pt-3
+          @container flex justify-center self-end bg-default px-3 pt-6
+          tablet:self-auto
           @min-[200px]:px-[clamp(4px,10cqw,32px)] @min-[200px]:pt-6
         `}
       >
         <div
           className={`
-            relative max-w-[200px]
+            relative max-w-[200px] drop-shadow-md
             after:absolute after:inset-x-0 after:top-0 after:bottom-0 after:z-20
             after:rounded-[2.5px] after:bg-default after:opacity-15
             after:transition-opacity
