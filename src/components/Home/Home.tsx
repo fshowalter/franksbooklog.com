@@ -36,11 +36,11 @@ export function Home({ backdropImageProps, deck, values }: Props): JSX.Element {
         <SubHeading as="h2">Latest Reviews</SubHeading>
         <ol
           className={`
-            -mx-4 grid grid-cols-2 grid-rows-[auto_1fr] gap-x-2 gap-y-2
-            tablet:grid-cols-3 tablet:gap-x-4 tablet:gap-y-4
-            tablet-landscape:grid-cols-4
-            laptop:-mx-6 laptop:grid-cols-6 laptop:gap-x-6 laptop:gap-y-6
-            desktop:-mx-8 desktop:grid-cols-6 desktop:gap-y-12
+            -mx-4 grid grid-cols-2 grid-rows-[auto_1fr] flex-wrap gap-x-2
+            gap-y-2
+            tablet:flex tablet:items-baseline tablet:gap-x-4 tablet:gap-y-4
+            laptop:-mx-6 laptop:gap-x-6 laptop:gap-y-6
+            desktop:-mx-8 desktop:gap-y-12
           `}
         >
           {values.map((value, index) => {
