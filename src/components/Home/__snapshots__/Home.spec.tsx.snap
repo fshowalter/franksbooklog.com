@@ -410,17 +410,17 @@ exports[`Home > matches snapshot 1`] = `
             >
               <div
                 class="
-          @container z-10 flex justify-center self-end px-3 pt-6
+          @container z-10 flex justify-center self-end pt-6
           tablet:self-auto
-          @min-[200px]:px-[clamp(4px,10cqw,32px)]
         "
               >
                 <div
                   class="
-            relative drop-shadow-md
+            relative px-3 drop-shadow-md
             after:absolute after:inset-x-0 after:top-0 after:bottom-0 after:z-20
             after:bg-default after:opacity-15 after:transition-opacity
             group-hover/card:after:opacity-0
+            @min-[200px]:px-[clamp(4px,12cqw,32px)]
           "
                 >
                   <div
@@ -463,82 +463,88 @@ exports[`Home > matches snapshot 1`] = `
                 </div>
               </div>
               <div
-                class="
-          @container flex justify-center bg-default px-4 pb-8
-          @min-[193px]:px-[clamp(4px,14cqw,32px)] @min-[193px]:pb-6
-        "
+                class="@container"
               >
                 <div
-                  class="flex w-full max-w-[200px] flex-col px-1"
+                  class="
+            flex flex-col justify-center bg-default px-4 pb-8
+            @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
+          "
                 >
                   <div
-                    class="
-              pt-3 font-sans text-xxs leading-4 font-light whitespace-nowrap
-              text-subtle
-              @min-[238px]:tracking-wide
-            "
+                    class="flex w-full max-w-[248px] flex-col px-1"
                   >
-                    15 Feb 2025
-                  </div>
-                  <div
-                    class="
-              pt-2 text-base leading-5 font-medium
-              tablet:pt-3
-              @min-[238px]:pt-2 @min-[238px]:text-md
-            "
-                  >
-                    <a
+                    <div
                       class="
-                block
-                after:absolute after:top-0 after:left-0 after:z-60
-                after:size-full after:opacity-0
-                hover:text-accent
-              "
-                      href="/reviews/the-lonely-one-by-richard-laymon/"
-                      rel="canonical"
-                    >
-                      The Lonely One
-                    </a>
-                  </div>
-                  <p
-                    class="pt-1 font-sans text-xs leading-4 font-light text-subtle"
-                  >
-                    <span
-                      class="
-                hidden
-                @min-[238px]:inline
+                pt-3 font-sans text-xxs leading-4 font-light whitespace-nowrap
+                text-subtle
+                @min-[238px]:tracking-wide
               "
                     >
-                      by 
-                    </span>
-                    <span>
-                      Richard Laymon
-                    </span>
-                  </p>
-                   
-                  <picture>
-                    <source
-                      media="(prefers-color-scheme: dark)"
-                      srcset="/svg/3-stars-dark.svg"
-                    />
-                    <img
-                      alt="C+: 3 stars (out of 5)"
+                      15 Feb 2025
+                    </div>
+                    <div
                       class="
-              mt-2 h-3 w-15
-              @min-[238px]:mt-2 @min-[238px]:h-[14px] @min-[238px]:w-[70px]
-            "
-                      height="16"
-                      src="/svg/3-stars.svg"
-                      width="80"
-                    />
-                  </picture>
-                  <div
-                    class="
-              mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle
-              @min-[238px]:tracking-wide
-            "
-                  >
-                    Short Story | 1985
+                pt-2 text-base leading-5 font-medium
+                tablet:pt-3
+                @min-[238px]:pt-2 @min-[238px]:text-md
+              "
+                    >
+                      <a
+                        class="
+                  block
+                  after:absolute after:top-0 after:left-0 after:z-60
+                  after:size-full after:opacity-0
+                  hover:text-accent
+                "
+                        href="/reviews/the-lonely-one-by-richard-laymon/"
+                        rel="canonical"
+                      >
+                        The Lonely One
+                      </a>
+                    </div>
+                    <p
+                      class="
+                pt-1 font-sans text-xs leading-4 font-light text-subtle
+              "
+                    >
+                      <span
+                        class="
+                  hidden
+                  @min-[238px]:inline
+                "
+                      >
+                        by 
+                      </span>
+                      <span>
+                        Richard Laymon
+                      </span>
+                    </p>
+                     
+                    <picture>
+                      <source
+                        media="(prefers-color-scheme: dark)"
+                        srcset="/svg/3-stars-dark.svg"
+                      />
+                      <img
+                        alt="C+: 3 stars (out of 5)"
+                        class="
+                mt-2 h-3 w-15
+                @min-[238px]:mt-2 @min-[238px]:h-[14px] @min-[238px]:w-[70px]
+              "
+                        height="16"
+                        src="/svg/3-stars.svg"
+                        width="80"
+                      />
+                    </picture>
+                    <div
+                      class="
+                mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle
+                @min-[238px]:tracking-wide
+              "
+                    >
+                      Short Story | 1985
+                    </div>
                   </div>
                 </div>
               </div>
@@ -555,17 +561,17 @@ exports[`Home > matches snapshot 1`] = `
             >
               <div
                 class="
-          @container z-10 flex justify-center self-end px-3 pt-6
+          @container z-10 flex justify-center self-end pt-6
           tablet:self-auto
-          @min-[200px]:px-[clamp(4px,10cqw,32px)]
         "
               >
                 <div
                   class="
-            relative drop-shadow-md
+            relative px-3 drop-shadow-md
             after:absolute after:inset-x-0 after:top-0 after:bottom-0 after:z-20
             after:bg-default after:opacity-15 after:transition-opacity
             group-hover/card:after:opacity-0
+            @min-[200px]:px-[clamp(4px,12cqw,32px)]
           "
                 >
                   <div
@@ -608,82 +614,88 @@ exports[`Home > matches snapshot 1`] = `
                 </div>
               </div>
               <div
-                class="
-          @container flex justify-center bg-default px-4 pb-8
-          @min-[193px]:px-[clamp(4px,14cqw,32px)] @min-[193px]:pb-6
-        "
+                class="@container"
               >
                 <div
-                  class="flex w-full max-w-[200px] flex-col px-1"
+                  class="
+            flex flex-col justify-center bg-default px-4 pb-8
+            @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
+          "
                 >
                   <div
-                    class="
-              pt-3 font-sans text-xxs leading-4 font-light whitespace-nowrap
-              text-subtle
-              @min-[238px]:tracking-wide
-            "
+                    class="flex w-full max-w-[248px] flex-col px-1"
                   >
-                    01 Dec 2024
-                  </div>
-                  <div
-                    class="
-              pt-2 text-base leading-5 font-medium
-              tablet:pt-3
-              @min-[238px]:pt-2 @min-[238px]:text-md
-            "
-                  >
-                    <a
+                    <div
                       class="
-                block
-                after:absolute after:top-0 after:left-0 after:z-60
-                after:size-full after:opacity-0
-                hover:text-accent
-              "
-                      href="/reviews/ghost-story-by-peter-straub/"
-                      rel="canonical"
-                    >
-                      Ghost Story
-                    </a>
-                  </div>
-                  <p
-                    class="pt-1 font-sans text-xs leading-4 font-light text-subtle"
-                  >
-                    <span
-                      class="
-                hidden
-                @min-[238px]:inline
+                pt-3 font-sans text-xxs leading-4 font-light whitespace-nowrap
+                text-subtle
+                @min-[238px]:tracking-wide
               "
                     >
-                      by 
-                    </span>
-                    <span>
-                      Peter Straub
-                    </span>
-                  </p>
-                   
-                  <picture>
-                    <source
-                      media="(prefers-color-scheme: dark)"
-                      srcset="/svg/4-stars-dark.svg"
-                    />
-                    <img
-                      alt="B: 4 stars (out of 5)"
+                      01 Dec 2024
+                    </div>
+                    <div
                       class="
-              mt-2 h-3 w-15
-              @min-[238px]:mt-2 @min-[238px]:h-[14px] @min-[238px]:w-[70px]
-            "
-                      height="16"
-                      src="/svg/4-stars.svg"
-                      width="80"
-                    />
-                  </picture>
-                  <div
-                    class="
-              mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle
-              @min-[238px]:tracking-wide
-            "
-                  >
-                    Novel | 1979
+                pt-2 text-base leading-5 font-medium
+                tablet:pt-3
+                @min-[238px]:pt-2 @min-[238px]:text-md
+              "
+                    >
+                      <a
+                        class="
+                  block
+                  after:absolute after:top-0 after:left-0 after:z-60
+                  after:size-full after:opacity-0
+                  hover:text-accent
+                "
+                        href="/reviews/ghost-story-by-peter-straub/"
+                        rel="canonical"
+                      >
+                        Ghost Story
+                      </a>
+                    </div>
+                    <p
+                      class="
+                pt-1 font-sans text-xs leading-4 font-light text-subtle
+              "
+                    >
+                      <span
+                        class="
+                  hidden
+                  @min-[238px]:inline
+                "
+                      >
+                        by 
+                      </span>
+                      <span>
+                        Peter Straub
+                      </span>
+                    </p>
+                     
+                    <picture>
+                      <source
+                        media="(prefers-color-scheme: dark)"
+                        srcset="/svg/4-stars-dark.svg"
+                      />
+                      <img
+                        alt="B: 4 stars (out of 5)"
+                        class="
+                mt-2 h-3 w-15
+                @min-[238px]:mt-2 @min-[238px]:h-[14px] @min-[238px]:w-[70px]
+              "
+                        height="16"
+                        src="/svg/4-stars.svg"
+                        width="80"
+                      />
+                    </picture>
+                    <div
+                      class="
+                mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle
+                @min-[238px]:tracking-wide
+              "
+                    >
+                      Novel | 1979
+                    </div>
                   </div>
                 </div>
               </div>
@@ -700,17 +712,17 @@ exports[`Home > matches snapshot 1`] = `
             >
               <div
                 class="
-          @container z-10 flex justify-center self-end px-3 pt-6
+          @container z-10 flex justify-center self-end pt-6
           tablet:self-auto
-          @min-[200px]:px-[clamp(4px,10cqw,32px)]
         "
               >
                 <div
                   class="
-            relative drop-shadow-md
+            relative px-3 drop-shadow-md
             after:absolute after:inset-x-0 after:top-0 after:bottom-0 after:z-20
             after:bg-default after:opacity-15 after:transition-opacity
             group-hover/card:after:opacity-0
+            @min-[200px]:px-[clamp(4px,12cqw,32px)]
           "
                 >
                   <div
@@ -753,82 +765,88 @@ exports[`Home > matches snapshot 1`] = `
                 </div>
               </div>
               <div
-                class="
-          @container flex justify-center bg-default px-4 pb-8
-          @min-[193px]:px-[clamp(4px,14cqw,32px)] @min-[193px]:pb-6
-        "
+                class="@container"
               >
                 <div
-                  class="flex w-full max-w-[200px] flex-col px-1"
+                  class="
+            flex flex-col justify-center bg-default px-4 pb-8
+            @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
+          "
                 >
                   <div
-                    class="
-              pt-3 font-sans text-xxs leading-4 font-light whitespace-nowrap
-              text-subtle
-              @min-[238px]:tracking-wide
-            "
+                    class="flex w-full max-w-[248px] flex-col px-1"
                   >
-                    08 Nov 2024
-                  </div>
-                  <div
-                    class="
-              pt-2 text-base leading-5 font-medium
-              tablet:pt-3
-              @min-[238px]:pt-2 @min-[238px]:text-md
-            "
-                  >
-                    <a
+                    <div
                       class="
-                block
-                after:absolute after:top-0 after:left-0 after:z-60
-                after:size-full after:opacity-0
-                hover:text-accent
-              "
-                      href="/reviews/goth-by-lol-tolhurst/"
-                      rel="canonical"
-                    >
-                      Goth
-                    </a>
-                  </div>
-                  <p
-                    class="pt-1 font-sans text-xs leading-4 font-light text-subtle"
-                  >
-                    <span
-                      class="
-                hidden
-                @min-[238px]:inline
+                pt-3 font-sans text-xxs leading-4 font-light whitespace-nowrap
+                text-subtle
+                @min-[238px]:tracking-wide
               "
                     >
-                      by 
-                    </span>
-                    <span>
-                      Lol Tolhurst
-                    </span>
-                  </p>
-                   
-                  <picture>
-                    <source
-                      media="(prefers-color-scheme: dark)"
-                      srcset="/svg/3-stars-dark.svg"
-                    />
-                    <img
-                      alt="C: 3 stars (out of 5)"
+                      08 Nov 2024
+                    </div>
+                    <div
                       class="
-              mt-2 h-3 w-15
-              @min-[238px]:mt-2 @min-[238px]:h-[14px] @min-[238px]:w-[70px]
-            "
-                      height="16"
-                      src="/svg/3-stars.svg"
-                      width="80"
-                    />
-                  </picture>
-                  <div
-                    class="
-              mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle
-              @min-[238px]:tracking-wide
-            "
-                  >
-                    Nonfiction | 2023
+                pt-2 text-base leading-5 font-medium
+                tablet:pt-3
+                @min-[238px]:pt-2 @min-[238px]:text-md
+              "
+                    >
+                      <a
+                        class="
+                  block
+                  after:absolute after:top-0 after:left-0 after:z-60
+                  after:size-full after:opacity-0
+                  hover:text-accent
+                "
+                        href="/reviews/goth-by-lol-tolhurst/"
+                        rel="canonical"
+                      >
+                        Goth
+                      </a>
+                    </div>
+                    <p
+                      class="
+                pt-1 font-sans text-xs leading-4 font-light text-subtle
+              "
+                    >
+                      <span
+                        class="
+                  hidden
+                  @min-[238px]:inline
+                "
+                      >
+                        by 
+                      </span>
+                      <span>
+                        Lol Tolhurst
+                      </span>
+                    </p>
+                     
+                    <picture>
+                      <source
+                        media="(prefers-color-scheme: dark)"
+                        srcset="/svg/3-stars-dark.svg"
+                      />
+                      <img
+                        alt="C: 3 stars (out of 5)"
+                        class="
+                mt-2 h-3 w-15
+                @min-[238px]:mt-2 @min-[238px]:h-[14px] @min-[238px]:w-[70px]
+              "
+                        height="16"
+                        src="/svg/3-stars.svg"
+                        width="80"
+                      />
+                    </picture>
+                    <div
+                      class="
+                mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle
+                @min-[238px]:tracking-wide
+              "
+                    >
+                      Nonfiction | 2023
+                    </div>
                   </div>
                 </div>
               </div>
@@ -845,17 +863,17 @@ exports[`Home > matches snapshot 1`] = `
             >
               <div
                 class="
-          @container z-10 flex justify-center self-end px-3 pt-6
+          @container z-10 flex justify-center self-end pt-6
           tablet:self-auto
-          @min-[200px]:px-[clamp(4px,10cqw,32px)]
         "
               >
                 <div
                   class="
-            relative drop-shadow-md
+            relative px-3 drop-shadow-md
             after:absolute after:inset-x-0 after:top-0 after:bottom-0 after:z-20
             after:bg-default after:opacity-15 after:transition-opacity
             group-hover/card:after:opacity-0
+            @min-[200px]:px-[clamp(4px,12cqw,32px)]
           "
                 >
                   <div
@@ -898,82 +916,88 @@ exports[`Home > matches snapshot 1`] = `
                 </div>
               </div>
               <div
-                class="
-          @container flex justify-center bg-default px-4 pb-8
-          @min-[193px]:px-[clamp(4px,14cqw,32px)] @min-[193px]:pb-6
-        "
+                class="@container"
               >
                 <div
-                  class="flex w-full max-w-[200px] flex-col px-1"
+                  class="
+            flex flex-col justify-center bg-default px-4 pb-8
+            @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
+          "
                 >
                   <div
-                    class="
-              pt-3 font-sans text-xxs leading-4 font-light whitespace-nowrap
-              text-subtle
-              @min-[238px]:tracking-wide
-            "
+                    class="flex w-full max-w-[248px] flex-col px-1"
                   >
-                    25 Aug 2024
-                  </div>
-                  <div
-                    class="
-              pt-2 text-base leading-5 font-medium
-              tablet:pt-3
-              @min-[238px]:pt-2 @min-[238px]:text-md
-            "
-                  >
-                    <a
+                    <div
                       class="
-                block
-                after:absolute after:top-0 after:left-0 after:z-60
-                after:size-full after:opacity-0
-                hover:text-accent
-              "
-                      href="/reviews/recessional-by-david-mamet/"
-                      rel="canonical"
-                    >
-                      Recessional
-                    </a>
-                  </div>
-                  <p
-                    class="pt-1 font-sans text-xs leading-4 font-light text-subtle"
-                  >
-                    <span
-                      class="
-                hidden
-                @min-[238px]:inline
+                pt-3 font-sans text-xxs leading-4 font-light whitespace-nowrap
+                text-subtle
+                @min-[238px]:tracking-wide
               "
                     >
-                      by 
-                    </span>
-                    <span>
-                      David Mamet
-                    </span>
-                  </p>
-                   
-                  <picture>
-                    <source
-                      media="(prefers-color-scheme: dark)"
-                      srcset="/svg/2-stars-dark.svg"
-                    />
-                    <img
-                      alt="D: 2 stars (out of 5)"
+                      25 Aug 2024
+                    </div>
+                    <div
                       class="
-              mt-2 h-3 w-15
-              @min-[238px]:mt-2 @min-[238px]:h-[14px] @min-[238px]:w-[70px]
-            "
-                      height="16"
-                      src="/svg/2-stars.svg"
-                      width="80"
-                    />
-                  </picture>
-                  <div
-                    class="
-              mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle
-              @min-[238px]:tracking-wide
-            "
-                  >
-                    Nonfiction | 2022
+                pt-2 text-base leading-5 font-medium
+                tablet:pt-3
+                @min-[238px]:pt-2 @min-[238px]:text-md
+              "
+                    >
+                      <a
+                        class="
+                  block
+                  after:absolute after:top-0 after:left-0 after:z-60
+                  after:size-full after:opacity-0
+                  hover:text-accent
+                "
+                        href="/reviews/recessional-by-david-mamet/"
+                        rel="canonical"
+                      >
+                        Recessional
+                      </a>
+                    </div>
+                    <p
+                      class="
+                pt-1 font-sans text-xs leading-4 font-light text-subtle
+              "
+                    >
+                      <span
+                        class="
+                  hidden
+                  @min-[238px]:inline
+                "
+                      >
+                        by 
+                      </span>
+                      <span>
+                        David Mamet
+                      </span>
+                    </p>
+                     
+                    <picture>
+                      <source
+                        media="(prefers-color-scheme: dark)"
+                        srcset="/svg/2-stars-dark.svg"
+                      />
+                      <img
+                        alt="D: 2 stars (out of 5)"
+                        class="
+                mt-2 h-3 w-15
+                @min-[238px]:mt-2 @min-[238px]:h-[14px] @min-[238px]:w-[70px]
+              "
+                        height="16"
+                        src="/svg/2-stars.svg"
+                        width="80"
+                      />
+                    </picture>
+                    <div
+                      class="
+                mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle
+                @min-[238px]:tracking-wide
+              "
+                    >
+                      Nonfiction | 2022
+                    </div>
                   </div>
                 </div>
               </div>
@@ -990,17 +1014,17 @@ exports[`Home > matches snapshot 1`] = `
             >
               <div
                 class="
-          @container z-10 flex justify-center self-end px-3 pt-6
+          @container z-10 flex justify-center self-end pt-6
           tablet:self-auto
-          @min-[200px]:px-[clamp(4px,10cqw,32px)]
         "
               >
                 <div
                   class="
-            relative drop-shadow-md
+            relative px-3 drop-shadow-md
             after:absolute after:inset-x-0 after:top-0 after:bottom-0 after:z-20
             after:bg-default after:opacity-15 after:transition-opacity
             group-hover/card:after:opacity-0
+            @min-[200px]:px-[clamp(4px,12cqw,32px)]
           "
                 >
                   <div
@@ -1043,82 +1067,88 @@ exports[`Home > matches snapshot 1`] = `
                 </div>
               </div>
               <div
-                class="
-          @container flex justify-center bg-default px-4 pb-8
-          @min-[193px]:px-[clamp(4px,14cqw,32px)] @min-[193px]:pb-6
-        "
+                class="@container"
               >
                 <div
-                  class="flex w-full max-w-[200px] flex-col px-1"
+                  class="
+            flex flex-col justify-center bg-default px-4 pb-8
+            @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
+          "
                 >
                   <div
-                    class="
-              pt-3 font-sans text-xxs leading-4 font-light whitespace-nowrap
-              text-subtle
-              @min-[238px]:tracking-wide
-            "
+                    class="flex w-full max-w-[248px] flex-col px-1"
                   >
-                    01 Jul 2024
-                  </div>
-                  <div
-                    class="
-              pt-2 text-base leading-5 font-medium
-              tablet:pt-3
-              @min-[238px]:pt-2 @min-[238px]:text-md
-            "
-                  >
-                    <a
+                    <div
                       class="
-                block
-                after:absolute after:top-0 after:left-0 after:z-60
-                after:size-full after:opacity-0
-                hover:text-accent
-              "
-                      href="/reviews/fast-forward-by-stephen-morris/"
-                      rel="canonical"
-                    >
-                      Fast Forward
-                    </a>
-                  </div>
-                  <p
-                    class="pt-1 font-sans text-xs leading-4 font-light text-subtle"
-                  >
-                    <span
-                      class="
-                hidden
-                @min-[238px]:inline
+                pt-3 font-sans text-xxs leading-4 font-light whitespace-nowrap
+                text-subtle
+                @min-[238px]:tracking-wide
               "
                     >
-                      by 
-                    </span>
-                    <span>
-                      Stephen Morris
-                    </span>
-                  </p>
-                   
-                  <picture>
-                    <source
-                      media="(prefers-color-scheme: dark)"
-                      srcset="/svg/4-half-stars-dark.svg"
-                    />
-                    <img
-                      alt="A-: 4.5 stars (out of 5)"
+                      01 Jul 2024
+                    </div>
+                    <div
                       class="
-              mt-2 h-3 w-15
-              @min-[238px]:mt-2 @min-[238px]:h-[14px] @min-[238px]:w-[70px]
-            "
-                      height="16"
-                      src="/svg/4-half-stars.svg"
-                      width="80"
-                    />
-                  </picture>
-                  <div
-                    class="
-              mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle
-              @min-[238px]:tracking-wide
-            "
-                  >
-                    Nonfiction | 2020
+                pt-2 text-base leading-5 font-medium
+                tablet:pt-3
+                @min-[238px]:pt-2 @min-[238px]:text-md
+              "
+                    >
+                      <a
+                        class="
+                  block
+                  after:absolute after:top-0 after:left-0 after:z-60
+                  after:size-full after:opacity-0
+                  hover:text-accent
+                "
+                        href="/reviews/fast-forward-by-stephen-morris/"
+                        rel="canonical"
+                      >
+                        Fast Forward
+                      </a>
+                    </div>
+                    <p
+                      class="
+                pt-1 font-sans text-xs leading-4 font-light text-subtle
+              "
+                    >
+                      <span
+                        class="
+                  hidden
+                  @min-[238px]:inline
+                "
+                      >
+                        by 
+                      </span>
+                      <span>
+                        Stephen Morris
+                      </span>
+                    </p>
+                     
+                    <picture>
+                      <source
+                        media="(prefers-color-scheme: dark)"
+                        srcset="/svg/4-half-stars-dark.svg"
+                      />
+                      <img
+                        alt="A-: 4.5 stars (out of 5)"
+                        class="
+                mt-2 h-3 w-15
+                @min-[238px]:mt-2 @min-[238px]:h-[14px] @min-[238px]:w-[70px]
+              "
+                        height="16"
+                        src="/svg/4-half-stars.svg"
+                        width="80"
+                      />
+                    </picture>
+                    <div
+                      class="
+                mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle
+                @min-[238px]:tracking-wide
+              "
+                    >
+                      Nonfiction | 2020
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1135,17 +1165,17 @@ exports[`Home > matches snapshot 1`] = `
             >
               <div
                 class="
-          @container z-10 flex justify-center self-end px-3 pt-6
+          @container z-10 flex justify-center self-end pt-6
           tablet:self-auto
-          @min-[200px]:px-[clamp(4px,10cqw,32px)]
         "
               >
                 <div
                   class="
-            relative drop-shadow-md
+            relative px-3 drop-shadow-md
             after:absolute after:inset-x-0 after:top-0 after:bottom-0 after:z-20
             after:bg-default after:opacity-15 after:transition-opacity
             group-hover/card:after:opacity-0
+            @min-[200px]:px-[clamp(4px,12cqw,32px)]
           "
                 >
                   <div
@@ -1188,82 +1218,88 @@ exports[`Home > matches snapshot 1`] = `
                 </div>
               </div>
               <div
-                class="
-          @container flex justify-center bg-default px-4 pb-8
-          @min-[193px]:px-[clamp(4px,14cqw,32px)] @min-[193px]:pb-6
-        "
+                class="@container"
               >
                 <div
-                  class="flex w-full max-w-[200px] flex-col px-1"
+                  class="
+            flex flex-col justify-center bg-default px-4 pb-8
+            @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
+          "
                 >
                   <div
-                    class="
-              pt-3 font-sans text-xxs leading-4 font-light whitespace-nowrap
-              text-subtle
-              @min-[238px]:tracking-wide
-            "
+                    class="flex w-full max-w-[248px] flex-col px-1"
                   >
-                    30 Jun 2024
-                  </div>
-                  <div
-                    class="
-              pt-2 text-base leading-5 font-medium
-              tablet:pt-3
-              @min-[238px]:pt-2 @min-[238px]:text-md
-            "
-                  >
-                    <a
+                    <div
                       class="
-                block
-                after:absolute after:top-0 after:left-0 after:z-60
-                after:size-full after:opacity-0
-                hover:text-accent
-              "
-                      href="/reviews/gothic-by-philip-fracassi/"
-                      rel="canonical"
-                    >
-                      Gothic
-                    </a>
-                  </div>
-                  <p
-                    class="pt-1 font-sans text-xs leading-4 font-light text-subtle"
-                  >
-                    <span
-                      class="
-                hidden
-                @min-[238px]:inline
+                pt-3 font-sans text-xxs leading-4 font-light whitespace-nowrap
+                text-subtle
+                @min-[238px]:tracking-wide
               "
                     >
-                      by 
-                    </span>
-                    <span>
-                      Philip Fracassi
-                    </span>
-                  </p>
-                   
-                  <picture>
-                    <source
-                      media="(prefers-color-scheme: dark)"
-                      srcset="/svg/4-stars-dark.svg"
-                    />
-                    <img
-                      alt="B+: 4 stars (out of 5)"
+                      30 Jun 2024
+                    </div>
+                    <div
                       class="
-              mt-2 h-3 w-15
-              @min-[238px]:mt-2 @min-[238px]:h-[14px] @min-[238px]:w-[70px]
-            "
-                      height="16"
-                      src="/svg/4-stars.svg"
-                      width="80"
-                    />
-                  </picture>
-                  <div
-                    class="
-              mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle
-              @min-[238px]:tracking-wide
-            "
-                  >
-                    Novel | 2023
+                pt-2 text-base leading-5 font-medium
+                tablet:pt-3
+                @min-[238px]:pt-2 @min-[238px]:text-md
+              "
+                    >
+                      <a
+                        class="
+                  block
+                  after:absolute after:top-0 after:left-0 after:z-60
+                  after:size-full after:opacity-0
+                  hover:text-accent
+                "
+                        href="/reviews/gothic-by-philip-fracassi/"
+                        rel="canonical"
+                      >
+                        Gothic
+                      </a>
+                    </div>
+                    <p
+                      class="
+                pt-1 font-sans text-xs leading-4 font-light text-subtle
+              "
+                    >
+                      <span
+                        class="
+                  hidden
+                  @min-[238px]:inline
+                "
+                      >
+                        by 
+                      </span>
+                      <span>
+                        Philip Fracassi
+                      </span>
+                    </p>
+                     
+                    <picture>
+                      <source
+                        media="(prefers-color-scheme: dark)"
+                        srcset="/svg/4-stars-dark.svg"
+                      />
+                      <img
+                        alt="B+: 4 stars (out of 5)"
+                        class="
+                mt-2 h-3 w-15
+                @min-[238px]:mt-2 @min-[238px]:h-[14px] @min-[238px]:w-[70px]
+              "
+                        height="16"
+                        src="/svg/4-stars.svg"
+                        width="80"
+                      />
+                    </picture>
+                    <div
+                      class="
+                mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle
+                @min-[238px]:tracking-wide
+              "
+                    >
+                      Novel | 2023
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1280,17 +1316,17 @@ exports[`Home > matches snapshot 1`] = `
             >
               <div
                 class="
-          @container z-10 flex justify-center self-end px-3 pt-6
+          @container z-10 flex justify-center self-end pt-6
           tablet:self-auto
-          @min-[200px]:px-[clamp(4px,10cqw,32px)]
         "
               >
                 <div
                   class="
-            relative drop-shadow-md
+            relative px-3 drop-shadow-md
             after:absolute after:inset-x-0 after:top-0 after:bottom-0 after:z-20
             after:bg-default after:opacity-15 after:transition-opacity
             group-hover/card:after:opacity-0
+            @min-[200px]:px-[clamp(4px,12cqw,32px)]
           "
                 >
                   <div
@@ -1333,82 +1369,88 @@ exports[`Home > matches snapshot 1`] = `
                 </div>
               </div>
               <div
-                class="
-          @container flex justify-center bg-default px-4 pb-8
-          @min-[193px]:px-[clamp(4px,14cqw,32px)] @min-[193px]:pb-6
-        "
+                class="@container"
               >
                 <div
-                  class="flex w-full max-w-[200px] flex-col px-1"
+                  class="
+            flex flex-col justify-center bg-default px-4 pb-8
+            @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
+          "
                 >
                   <div
-                    class="
-              pt-3 font-sans text-xxs leading-4 font-light whitespace-nowrap
-              text-subtle
-              @min-[238px]:tracking-wide
-            "
+                    class="flex w-full max-w-[248px] flex-col px-1"
                   >
-                    11 Nov 2023
-                  </div>
-                  <div
-                    class="
-              pt-2 text-base leading-5 font-medium
-              tablet:pt-3
-              @min-[238px]:pt-2 @min-[238px]:text-md
-            "
-                  >
-                    <a
+                    <div
                       class="
-                block
-                after:absolute after:top-0 after:left-0 after:z-60
-                after:size-full after:opacity-0
-                hover:text-accent
-              "
-                      href="/reviews/record-play-pause-by-stephen-morris/"
-                      rel="canonical"
-                    >
-                      Record Play Pause
-                    </a>
-                  </div>
-                  <p
-                    class="pt-1 font-sans text-xs leading-4 font-light text-subtle"
-                  >
-                    <span
-                      class="
-                hidden
-                @min-[238px]:inline
+                pt-3 font-sans text-xxs leading-4 font-light whitespace-nowrap
+                text-subtle
+                @min-[238px]:tracking-wide
               "
                     >
-                      by 
-                    </span>
-                    <span>
-                      Stephen Morris
-                    </span>
-                  </p>
-                   
-                  <picture>
-                    <source
-                      media="(prefers-color-scheme: dark)"
-                      srcset="/svg/5-stars-dark.svg"
-                    />
-                    <img
-                      alt="A: 5 stars (out of 5)"
+                      11 Nov 2023
+                    </div>
+                    <div
                       class="
-              mt-2 h-3 w-15
-              @min-[238px]:mt-2 @min-[238px]:h-[14px] @min-[238px]:w-[70px]
-            "
-                      height="16"
-                      src="/svg/5-stars.svg"
-                      width="80"
-                    />
-                  </picture>
-                  <div
-                    class="
-              mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle
-              @min-[238px]:tracking-wide
-            "
-                  >
-                    Nonfiction | 2019
+                pt-2 text-base leading-5 font-medium
+                tablet:pt-3
+                @min-[238px]:pt-2 @min-[238px]:text-md
+              "
+                    >
+                      <a
+                        class="
+                  block
+                  after:absolute after:top-0 after:left-0 after:z-60
+                  after:size-full after:opacity-0
+                  hover:text-accent
+                "
+                        href="/reviews/record-play-pause-by-stephen-morris/"
+                        rel="canonical"
+                      >
+                        Record Play Pause
+                      </a>
+                    </div>
+                    <p
+                      class="
+                pt-1 font-sans text-xs leading-4 font-light text-subtle
+              "
+                    >
+                      <span
+                        class="
+                  hidden
+                  @min-[238px]:inline
+                "
+                      >
+                        by 
+                      </span>
+                      <span>
+                        Stephen Morris
+                      </span>
+                    </p>
+                     
+                    <picture>
+                      <source
+                        media="(prefers-color-scheme: dark)"
+                        srcset="/svg/5-stars-dark.svg"
+                      />
+                      <img
+                        alt="A: 5 stars (out of 5)"
+                        class="
+                mt-2 h-3 w-15
+                @min-[238px]:mt-2 @min-[238px]:h-[14px] @min-[238px]:w-[70px]
+              "
+                        height="16"
+                        src="/svg/5-stars.svg"
+                        width="80"
+                      />
+                    </picture>
+                    <div
+                      class="
+                mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle
+                @min-[238px]:tracking-wide
+              "
+                    >
+                      Nonfiction | 2019
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1425,17 +1467,17 @@ exports[`Home > matches snapshot 1`] = `
             >
               <div
                 class="
-          @container z-10 flex justify-center self-end px-3 pt-6
+          @container z-10 flex justify-center self-end pt-6
           tablet:self-auto
-          @min-[200px]:px-[clamp(4px,10cqw,32px)]
         "
               >
                 <div
                   class="
-            relative drop-shadow-md
+            relative px-3 drop-shadow-md
             after:absolute after:inset-x-0 after:top-0 after:bottom-0 after:z-20
             after:bg-default after:opacity-15 after:transition-opacity
             group-hover/card:after:opacity-0
+            @min-[200px]:px-[clamp(4px,12cqw,32px)]
           "
                 >
                   <div
@@ -1478,86 +1520,92 @@ exports[`Home > matches snapshot 1`] = `
                 </div>
               </div>
               <div
-                class="
-          @container flex justify-center bg-default px-4 pb-8
-          @min-[193px]:px-[clamp(4px,14cqw,32px)] @min-[193px]:pb-6
-        "
+                class="@container"
               >
                 <div
-                  class="flex w-full max-w-[200px] flex-col px-1"
+                  class="
+            flex flex-col justify-center bg-default px-4 pb-8
+            @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
+          "
                 >
                   <div
-                    class="
-              pt-3 font-sans text-xxs leading-4 font-light whitespace-nowrap
-              text-subtle
-              @min-[238px]:tracking-wide
-            "
+                    class="flex w-full max-w-[248px] flex-col px-1"
                   >
-                    06 Nov 2023
-                  </div>
-                  <div
-                    class="
-              pt-2 text-base leading-5 font-medium
-              tablet:pt-3
-              @min-[238px]:pt-2 @min-[238px]:text-md
-            "
-                  >
-                    <a
+                    <div
                       class="
-                block
-                after:absolute after:top-0 after:left-0 after:z-60
-                after:size-full after:opacity-0
-                hover:text-accent
-              "
-                      href="/reviews/fright-night-origins-by-tom-holland-a-jack-ulrich/"
-                      rel="canonical"
-                    >
-                      Fright Night Origins
-                    </a>
-                  </div>
-                  <p
-                    class="pt-1 font-sans text-xs leading-4 font-light text-subtle"
-                  >
-                    <span
-                      class="
-                hidden
-                @min-[238px]:inline
+                pt-3 font-sans text-xxs leading-4 font-light whitespace-nowrap
+                text-subtle
+                @min-[238px]:tracking-wide
               "
                     >
-                      by 
-                    </span>
-                    <span>
-                      Tom Holland
-                    </span>
-                     and 
-                    <span>
-                      A. Jack Ulrich
-                    </span>
-                  </p>
-                   
-                  <picture>
-                    <source
-                      media="(prefers-color-scheme: dark)"
-                      srcset="/svg/3-stars-dark.svg"
-                    />
-                    <img
-                      alt="C+: 3 stars (out of 5)"
+                      06 Nov 2023
+                    </div>
+                    <div
                       class="
-              mt-2 h-3 w-15
-              @min-[238px]:mt-2 @min-[238px]:h-[14px] @min-[238px]:w-[70px]
-            "
-                      height="16"
-                      src="/svg/3-stars.svg"
-                      width="80"
-                    />
-                  </picture>
-                  <div
-                    class="
-              mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle
-              @min-[238px]:tracking-wide
-            "
-                  >
-                    Novel | 2023
+                pt-2 text-base leading-5 font-medium
+                tablet:pt-3
+                @min-[238px]:pt-2 @min-[238px]:text-md
+              "
+                    >
+                      <a
+                        class="
+                  block
+                  after:absolute after:top-0 after:left-0 after:z-60
+                  after:size-full after:opacity-0
+                  hover:text-accent
+                "
+                        href="/reviews/fright-night-origins-by-tom-holland-a-jack-ulrich/"
+                        rel="canonical"
+                      >
+                        Fright Night Origins
+                      </a>
+                    </div>
+                    <p
+                      class="
+                pt-1 font-sans text-xs leading-4 font-light text-subtle
+              "
+                    >
+                      <span
+                        class="
+                  hidden
+                  @min-[238px]:inline
+                "
+                      >
+                        by 
+                      </span>
+                      <span>
+                        Tom Holland
+                      </span>
+                       and 
+                      <span>
+                        A. Jack Ulrich
+                      </span>
+                    </p>
+                     
+                    <picture>
+                      <source
+                        media="(prefers-color-scheme: dark)"
+                        srcset="/svg/3-stars-dark.svg"
+                      />
+                      <img
+                        alt="C+: 3 stars (out of 5)"
+                        class="
+                mt-2 h-3 w-15
+                @min-[238px]:mt-2 @min-[238px]:h-[14px] @min-[238px]:w-[70px]
+              "
+                        height="16"
+                        src="/svg/3-stars.svg"
+                        width="80"
+                      />
+                    </picture>
+                    <div
+                      class="
+                mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle
+                @min-[238px]:tracking-wide
+              "
+                    >
+                      Novel | 2023
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1574,17 +1622,17 @@ exports[`Home > matches snapshot 1`] = `
             >
               <div
                 class="
-          @container z-10 flex justify-center self-end px-3 pt-6
+          @container z-10 flex justify-center self-end pt-6
           tablet:self-auto
-          @min-[200px]:px-[clamp(4px,10cqw,32px)]
         "
               >
                 <div
                   class="
-            relative drop-shadow-md
+            relative px-3 drop-shadow-md
             after:absolute after:inset-x-0 after:top-0 after:bottom-0 after:z-20
             after:bg-default after:opacity-15 after:transition-opacity
             group-hover/card:after:opacity-0
+            @min-[200px]:px-[clamp(4px,12cqw,32px)]
           "
                 >
                   <div
@@ -1627,82 +1675,88 @@ exports[`Home > matches snapshot 1`] = `
                 </div>
               </div>
               <div
-                class="
-          @container flex justify-center bg-default px-4 pb-8
-          @min-[193px]:px-[clamp(4px,14cqw,32px)] @min-[193px]:pb-6
-        "
+                class="@container"
               >
                 <div
-                  class="flex w-full max-w-[200px] flex-col px-1"
+                  class="
+            flex flex-col justify-center bg-default px-4 pb-8
+            @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
+          "
                 >
                   <div
-                    class="
-              pt-3 font-sans text-xxs leading-4 font-light whitespace-nowrap
-              text-subtle
-              @min-[238px]:tracking-wide
-            "
+                    class="flex w-full max-w-[248px] flex-col px-1"
                   >
-                    29 Oct 2023
-                  </div>
-                  <div
-                    class="
-              pt-2 text-base leading-5 font-medium
-              tablet:pt-3
-              @min-[238px]:pt-2 @min-[238px]:text-md
-            "
-                  >
-                    <a
+                    <div
                       class="
-                block
-                after:absolute after:top-0 after:left-0 after:z-60
-                after:size-full after:opacity-0
-                hover:text-accent
-              "
-                      href="/reviews/dont-let-them-get-you-down-by-philip-fracassi/"
-                      rel="canonical"
-                    >
-                      Don't Let Them Get You Down
-                    </a>
-                  </div>
-                  <p
-                    class="pt-1 font-sans text-xs leading-4 font-light text-subtle"
-                  >
-                    <span
-                      class="
-                hidden
-                @min-[238px]:inline
+                pt-3 font-sans text-xxs leading-4 font-light whitespace-nowrap
+                text-subtle
+                @min-[238px]:tracking-wide
               "
                     >
-                      by 
-                    </span>
-                    <span>
-                      Philip Fracassi
-                    </span>
-                  </p>
-                   
-                  <picture>
-                    <source
-                      media="(prefers-color-scheme: dark)"
-                      srcset="/svg/2-half-stars-dark.svg"
-                    />
-                    <img
-                      alt="C-: 2.5 stars (out of 5)"
+                      29 Oct 2023
+                    </div>
+                    <div
                       class="
-              mt-2 h-3 w-15
-              @min-[238px]:mt-2 @min-[238px]:h-[14px] @min-[238px]:w-[70px]
-            "
-                      height="16"
-                      src="/svg/2-half-stars.svg"
-                      width="80"
-                    />
-                  </picture>
-                  <div
-                    class="
-              mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle
-              @min-[238px]:tracking-wide
-            "
-                  >
-                    Novel | 2022
+                pt-2 text-base leading-5 font-medium
+                tablet:pt-3
+                @min-[238px]:pt-2 @min-[238px]:text-md
+              "
+                    >
+                      <a
+                        class="
+                  block
+                  after:absolute after:top-0 after:left-0 after:z-60
+                  after:size-full after:opacity-0
+                  hover:text-accent
+                "
+                        href="/reviews/dont-let-them-get-you-down-by-philip-fracassi/"
+                        rel="canonical"
+                      >
+                        Don't Let Them Get You Down
+                      </a>
+                    </div>
+                    <p
+                      class="
+                pt-1 font-sans text-xs leading-4 font-light text-subtle
+              "
+                    >
+                      <span
+                        class="
+                  hidden
+                  @min-[238px]:inline
+                "
+                      >
+                        by 
+                      </span>
+                      <span>
+                        Philip Fracassi
+                      </span>
+                    </p>
+                     
+                    <picture>
+                      <source
+                        media="(prefers-color-scheme: dark)"
+                        srcset="/svg/2-half-stars-dark.svg"
+                      />
+                      <img
+                        alt="C-: 2.5 stars (out of 5)"
+                        class="
+                mt-2 h-3 w-15
+                @min-[238px]:mt-2 @min-[238px]:h-[14px] @min-[238px]:w-[70px]
+              "
+                        height="16"
+                        src="/svg/2-half-stars.svg"
+                        width="80"
+                      />
+                    </picture>
+                    <div
+                      class="
+                mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle
+                @min-[238px]:tracking-wide
+              "
+                    >
+                      Novel | 2022
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1719,17 +1773,17 @@ exports[`Home > matches snapshot 1`] = `
             >
               <div
                 class="
-          @container z-10 flex justify-center self-end px-3 pt-6
+          @container z-10 flex justify-center self-end pt-6
           tablet:self-auto
-          @min-[200px]:px-[clamp(4px,10cqw,32px)]
         "
               >
                 <div
                   class="
-            relative drop-shadow-md
+            relative px-3 drop-shadow-md
             after:absolute after:inset-x-0 after:top-0 after:bottom-0 after:z-20
             after:bg-default after:opacity-15 after:transition-opacity
             group-hover/card:after:opacity-0
+            @min-[200px]:px-[clamp(4px,12cqw,32px)]
           "
                 >
                   <div
@@ -1772,82 +1826,88 @@ exports[`Home > matches snapshot 1`] = `
                 </div>
               </div>
               <div
-                class="
-          @container flex justify-center bg-default px-4 pb-8
-          @min-[193px]:px-[clamp(4px,14cqw,32px)] @min-[193px]:pb-6
-        "
+                class="@container"
               >
                 <div
-                  class="flex w-full max-w-[200px] flex-col px-1"
+                  class="
+            flex flex-col justify-center bg-default px-4 pb-8
+            @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
+          "
                 >
                   <div
-                    class="
-              pt-3 font-sans text-xxs leading-4 font-light whitespace-nowrap
-              text-subtle
-              @min-[238px]:tracking-wide
-            "
+                    class="flex w-full max-w-[248px] flex-col px-1"
                   >
-                    22 Oct 2023
-                  </div>
-                  <div
-                    class="
-              pt-2 text-base leading-5 font-medium
-              tablet:pt-3
-              @min-[238px]:pt-2 @min-[238px]:text-md
-            "
-                  >
-                    <a
+                    <div
                       class="
-                block
-                after:absolute after:top-0 after:left-0 after:z-60
-                after:size-full after:opacity-0
-                hover:text-accent
-              "
-                      href="/reviews/the-creative-act-by-rick-rubin/"
-                      rel="canonical"
-                    >
-                      The Creative Act
-                    </a>
-                  </div>
-                  <p
-                    class="pt-1 font-sans text-xs leading-4 font-light text-subtle"
-                  >
-                    <span
-                      class="
-                hidden
-                @min-[238px]:inline
+                pt-3 font-sans text-xxs leading-4 font-light whitespace-nowrap
+                text-subtle
+                @min-[238px]:tracking-wide
               "
                     >
-                      by 
-                    </span>
-                    <span>
-                      Rick Rubin
-                    </span>
-                  </p>
-                   
-                  <picture>
-                    <source
-                      media="(prefers-color-scheme: dark)"
-                      srcset="/svg/3-stars-dark.svg"
-                    />
-                    <img
-                      alt="C+: 3 stars (out of 5)"
+                      22 Oct 2023
+                    </div>
+                    <div
                       class="
-              mt-2 h-3 w-15
-              @min-[238px]:mt-2 @min-[238px]:h-[14px] @min-[238px]:w-[70px]
-            "
-                      height="16"
-                      src="/svg/3-stars.svg"
-                      width="80"
-                    />
-                  </picture>
-                  <div
-                    class="
-              mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle
-              @min-[238px]:tracking-wide
-            "
-                  >
-                    Nonfiction | 2023
+                pt-2 text-base leading-5 font-medium
+                tablet:pt-3
+                @min-[238px]:pt-2 @min-[238px]:text-md
+              "
+                    >
+                      <a
+                        class="
+                  block
+                  after:absolute after:top-0 after:left-0 after:z-60
+                  after:size-full after:opacity-0
+                  hover:text-accent
+                "
+                        href="/reviews/the-creative-act-by-rick-rubin/"
+                        rel="canonical"
+                      >
+                        The Creative Act
+                      </a>
+                    </div>
+                    <p
+                      class="
+                pt-1 font-sans text-xs leading-4 font-light text-subtle
+              "
+                    >
+                      <span
+                        class="
+                  hidden
+                  @min-[238px]:inline
+                "
+                      >
+                        by 
+                      </span>
+                      <span>
+                        Rick Rubin
+                      </span>
+                    </p>
+                     
+                    <picture>
+                      <source
+                        media="(prefers-color-scheme: dark)"
+                        srcset="/svg/3-stars-dark.svg"
+                      />
+                      <img
+                        alt="C+: 3 stars (out of 5)"
+                        class="
+                mt-2 h-3 w-15
+                @min-[238px]:mt-2 @min-[238px]:h-[14px] @min-[238px]:w-[70px]
+              "
+                        height="16"
+                        src="/svg/3-stars.svg"
+                        width="80"
+                      />
+                    </picture>
+                    <div
+                      class="
+                mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle
+                @min-[238px]:tracking-wide
+              "
+                    >
+                      Nonfiction | 2023
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1864,17 +1924,17 @@ exports[`Home > matches snapshot 1`] = `
             >
               <div
                 class="
-          @container z-10 flex justify-center self-end px-3 pt-6
+          @container z-10 flex justify-center self-end pt-6
           tablet:self-auto
-          @min-[200px]:px-[clamp(4px,10cqw,32px)]
         "
               >
                 <div
                   class="
-            relative drop-shadow-md
+            relative px-3 drop-shadow-md
             after:absolute after:inset-x-0 after:top-0 after:bottom-0 after:z-20
             after:bg-default after:opacity-15 after:transition-opacity
             group-hover/card:after:opacity-0
+            @min-[200px]:px-[clamp(4px,12cqw,32px)]
           "
                 >
                   <div
@@ -1917,82 +1977,88 @@ exports[`Home > matches snapshot 1`] = `
                 </div>
               </div>
               <div
-                class="
-          @container flex justify-center bg-default px-4 pb-8
-          @min-[193px]:px-[clamp(4px,14cqw,32px)] @min-[193px]:pb-6
-        "
+                class="@container"
               >
                 <div
-                  class="flex w-full max-w-[200px] flex-col px-1"
+                  class="
+            flex flex-col justify-center bg-default px-4 pb-8
+            @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
+          "
                 >
                   <div
-                    class="
-              pt-3 font-sans text-xxs leading-4 font-light whitespace-nowrap
-              text-subtle
-              @min-[238px]:tracking-wide
-            "
+                    class="flex w-full max-w-[248px] flex-col px-1"
                   >
-                    09 Oct 2023
-                  </div>
-                  <div
-                    class="
-              pt-2 text-base leading-5 font-medium
-              tablet:pt-3
-              @min-[238px]:pt-2 @min-[238px]:text-md
-            "
-                  >
-                    <a
+                    <div
                       class="
-                block
-                after:absolute after:top-0 after:left-0 after:z-60
-                after:size-full after:opacity-0
-                hover:text-accent
-              "
-                      href="/reviews/sacculina-by-philip-fracassi/"
-                      rel="canonical"
-                    >
-                      Sacculina
-                    </a>
-                  </div>
-                  <p
-                    class="pt-1 font-sans text-xs leading-4 font-light text-subtle"
-                  >
-                    <span
-                      class="
-                hidden
-                @min-[238px]:inline
+                pt-3 font-sans text-xxs leading-4 font-light whitespace-nowrap
+                text-subtle
+                @min-[238px]:tracking-wide
               "
                     >
-                      by 
-                    </span>
-                    <span>
-                      Philip Fracassi
-                    </span>
-                  </p>
-                   
-                  <picture>
-                    <source
-                      media="(prefers-color-scheme: dark)"
-                      srcset="/svg/4-stars-dark.svg"
-                    />
-                    <img
-                      alt="B: 4 stars (out of 5)"
+                      09 Oct 2023
+                    </div>
+                    <div
                       class="
-              mt-2 h-3 w-15
-              @min-[238px]:mt-2 @min-[238px]:h-[14px] @min-[238px]:w-[70px]
-            "
-                      height="16"
-                      src="/svg/4-stars.svg"
-                      width="80"
-                    />
-                  </picture>
-                  <div
-                    class="
-              mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle
-              @min-[238px]:tracking-wide
-            "
-                  >
-                    Novella | 2017
+                pt-2 text-base leading-5 font-medium
+                tablet:pt-3
+                @min-[238px]:pt-2 @min-[238px]:text-md
+              "
+                    >
+                      <a
+                        class="
+                  block
+                  after:absolute after:top-0 after:left-0 after:z-60
+                  after:size-full after:opacity-0
+                  hover:text-accent
+                "
+                        href="/reviews/sacculina-by-philip-fracassi/"
+                        rel="canonical"
+                      >
+                        Sacculina
+                      </a>
+                    </div>
+                    <p
+                      class="
+                pt-1 font-sans text-xs leading-4 font-light text-subtle
+              "
+                    >
+                      <span
+                        class="
+                  hidden
+                  @min-[238px]:inline
+                "
+                      >
+                        by 
+                      </span>
+                      <span>
+                        Philip Fracassi
+                      </span>
+                    </p>
+                     
+                    <picture>
+                      <source
+                        media="(prefers-color-scheme: dark)"
+                        srcset="/svg/4-stars-dark.svg"
+                      />
+                      <img
+                        alt="B: 4 stars (out of 5)"
+                        class="
+                mt-2 h-3 w-15
+                @min-[238px]:mt-2 @min-[238px]:h-[14px] @min-[238px]:w-[70px]
+              "
+                        height="16"
+                        src="/svg/4-stars.svg"
+                        width="80"
+                      />
+                    </picture>
+                    <div
+                      class="
+                mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle
+                @min-[238px]:tracking-wide
+              "
+                    >
+                      Novella | 2017
+                    </div>
                   </div>
                 </div>
               </div>
@@ -2009,17 +2075,17 @@ exports[`Home > matches snapshot 1`] = `
             >
               <div
                 class="
-          @container z-10 flex justify-center self-end px-3 pt-6
+          @container z-10 flex justify-center self-end pt-6
           tablet:self-auto
-          @min-[200px]:px-[clamp(4px,10cqw,32px)]
         "
               >
                 <div
                   class="
-            relative drop-shadow-md
+            relative px-3 drop-shadow-md
             after:absolute after:inset-x-0 after:top-0 after:bottom-0 after:z-20
             after:bg-default after:opacity-15 after:transition-opacity
             group-hover/card:after:opacity-0
+            @min-[200px]:px-[clamp(4px,12cqw,32px)]
           "
                 >
                   <div
@@ -2062,82 +2128,88 @@ exports[`Home > matches snapshot 1`] = `
                 </div>
               </div>
               <div
-                class="
-          @container flex justify-center bg-default px-4 pb-8
-          @min-[193px]:px-[clamp(4px,14cqw,32px)] @min-[193px]:pb-6
-        "
+                class="@container"
               >
                 <div
-                  class="flex w-full max-w-[200px] flex-col px-1"
+                  class="
+            flex flex-col justify-center bg-default px-4 pb-8
+            @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
+          "
                 >
                   <div
-                    class="
-              pt-3 font-sans text-xxs leading-4 font-light whitespace-nowrap
-              text-subtle
-              @min-[238px]:tracking-wide
-            "
+                    class="flex w-full max-w-[248px] flex-col px-1"
                   >
-                    29 Jan 2023
-                  </div>
-                  <div
-                    class="
-              pt-2 text-base leading-5 font-medium
-              tablet:pt-3
-              @min-[238px]:pt-2 @min-[238px]:text-md
-            "
-                  >
-                    <a
+                    <div
                       class="
-                block
-                after:absolute after:top-0 after:left-0 after:z-60
-                after:size-full after:opacity-0
-                hover:text-accent
-              "
-                      href="/reviews/the-cipher-by-kathe-koja/"
-                      rel="canonical"
-                    >
-                      The Cipher
-                    </a>
-                  </div>
-                  <p
-                    class="pt-1 font-sans text-xs leading-4 font-light text-subtle"
-                  >
-                    <span
-                      class="
-                hidden
-                @min-[238px]:inline
+                pt-3 font-sans text-xxs leading-4 font-light whitespace-nowrap
+                text-subtle
+                @min-[238px]:tracking-wide
               "
                     >
-                      by 
-                    </span>
-                    <span>
-                      Kathe Koja
-                    </span>
-                  </p>
-                   
-                  <picture>
-                    <source
-                      media="(prefers-color-scheme: dark)"
-                      srcset="/svg/4-stars-dark.svg"
-                    />
-                    <img
-                      alt="B: 4 stars (out of 5)"
+                      29 Jan 2023
+                    </div>
+                    <div
                       class="
-              mt-2 h-3 w-15
-              @min-[238px]:mt-2 @min-[238px]:h-[14px] @min-[238px]:w-[70px]
-            "
-                      height="16"
-                      src="/svg/4-stars.svg"
-                      width="80"
-                    />
-                  </picture>
-                  <div
-                    class="
-              mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle
-              @min-[238px]:tracking-wide
-            "
-                  >
-                    Novel | 1991
+                pt-2 text-base leading-5 font-medium
+                tablet:pt-3
+                @min-[238px]:pt-2 @min-[238px]:text-md
+              "
+                    >
+                      <a
+                        class="
+                  block
+                  after:absolute after:top-0 after:left-0 after:z-60
+                  after:size-full after:opacity-0
+                  hover:text-accent
+                "
+                        href="/reviews/the-cipher-by-kathe-koja/"
+                        rel="canonical"
+                      >
+                        The Cipher
+                      </a>
+                    </div>
+                    <p
+                      class="
+                pt-1 font-sans text-xs leading-4 font-light text-subtle
+              "
+                    >
+                      <span
+                        class="
+                  hidden
+                  @min-[238px]:inline
+                "
+                      >
+                        by 
+                      </span>
+                      <span>
+                        Kathe Koja
+                      </span>
+                    </p>
+                     
+                    <picture>
+                      <source
+                        media="(prefers-color-scheme: dark)"
+                        srcset="/svg/4-stars-dark.svg"
+                      />
+                      <img
+                        alt="B: 4 stars (out of 5)"
+                        class="
+                mt-2 h-3 w-15
+                @min-[238px]:mt-2 @min-[238px]:h-[14px] @min-[238px]:w-[70px]
+              "
+                        height="16"
+                        src="/svg/4-stars.svg"
+                        width="80"
+                      />
+                    </picture>
+                    <div
+                      class="
+                mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle
+                @min-[238px]:tracking-wide
+              "
+                    >
+                      Novel | 1991
+                    </div>
                   </div>
                 </div>
               </div>

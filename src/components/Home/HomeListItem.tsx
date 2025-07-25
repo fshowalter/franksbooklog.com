@@ -50,17 +50,17 @@ export function HomeListItem({
     >
       <div
         className={`
-          @container z-10 flex justify-center self-end px-3 pt-6
+          @container z-10 flex justify-center self-end pt-6
           tablet:self-auto
-          @min-[200px]:px-[clamp(4px,10cqw,32px)]
         `}
       >
         <div
           className={`
-            relative drop-shadow-md
+            relative px-3 drop-shadow-md
             after:absolute after:inset-x-0 after:top-0 after:bottom-0 after:z-20
             after:bg-default after:opacity-15 after:transition-opacity
             group-hover/card:after:opacity-0
+            @min-[200px]:px-[clamp(4px,12cqw,32px)]
           `}
         >
           <Cover
@@ -72,81 +72,85 @@ export function HomeListItem({
           />
         </div>
       </div>
-      <div
-        className={`
-          @container flex justify-center bg-default px-4 pb-8
-          @min-[193px]:px-[clamp(4px,14cqw,32px)] @min-[193px]:pb-6
-        `}
-      >
-        <div className={`flex w-full max-w-[200px] flex-col px-1`}>
-          <div
-            className={`
-              pt-3 font-sans text-xxs leading-4 font-light whitespace-nowrap
-              text-subtle
-              @min-[238px]:tracking-wide
-            `}
-          >
-            {formatDate(value.date)}
-          </div>
-          <div
-            className={`
-              pt-2 text-base leading-5 font-medium
-              tablet:pt-3
-              @min-[238px]:pt-2 @min-[238px]:text-md
-            `}
-          >
-            <a
+      <div className={`@container`}>
+        <div
+          className={`
+            flex flex-col justify-center bg-default px-4 pb-8
+            @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
+          `}
+        >
+          <div className={`flex w-full max-w-[248px] flex-col px-1`}>
+            <div
               className={`
-                block
-                after:absolute after:top-0 after:left-0 after:z-60
-                after:size-full after:opacity-0
-                hover:text-accent
-              `}
-              href={`/reviews/${value.slug}/`}
-              rel="canonical"
-            >
-              {value.title}
-            </a>
-          </div>
-          <p
-            className={`pt-1 font-sans text-xs leading-4 font-light text-subtle`}
-          >
-            <span
-              className={`
-                hidden
-                @min-[238px]:inline
+                pt-3 font-sans text-xxs leading-4 font-light whitespace-nowrap
+                text-subtle
+                @min-[238px]:tracking-wide
               `}
             >
-              by{" "}
-            </span>
-            {toSentenceArray(
-              value.authors.map((author) => {
-                return (
-                  <AuthorLink
-                    as="span"
-                    key={author.slug}
-                    name={author.name}
-                    notes={author.notes}
-                  />
-                );
-              }),
-            )}
-          </p>{" "}
-          <Grade
-            className={`
-              mt-2 h-3 w-15
-              @min-[238px]:mt-2 @min-[238px]:h-[14px] @min-[238px]:w-[70px]
-            `}
-            height={16}
-            value={value.grade}
-          />
-          <div
-            className={`
-              mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle
-              @min-[238px]:tracking-wide
-            `}
-          >
-            {value.kind} | {value.yearPublished}
+              {formatDate(value.date)}
+            </div>
+            <div
+              className={`
+                pt-2 text-base leading-5 font-medium
+                tablet:pt-3
+                @min-[238px]:pt-2 @min-[238px]:text-md
+              `}
+            >
+              <a
+                className={`
+                  block
+                  after:absolute after:top-0 after:left-0 after:z-60
+                  after:size-full after:opacity-0
+                  hover:text-accent
+                `}
+                href={`/reviews/${value.slug}/`}
+                rel="canonical"
+              >
+                {value.title}
+              </a>
+            </div>
+            <p
+              className={`
+                pt-1 font-sans text-xs leading-4 font-light text-subtle
+              `}
+            >
+              <span
+                className={`
+                  hidden
+                  @min-[238px]:inline
+                `}
+              >
+                by{" "}
+              </span>
+              {toSentenceArray(
+                value.authors.map((author) => {
+                  return (
+                    <AuthorLink
+                      as="span"
+                      key={author.slug}
+                      name={author.name}
+                      notes={author.notes}
+                    />
+                  );
+                }),
+              )}
+            </p>{" "}
+            <Grade
+              className={`
+                mt-2 h-3 w-15
+                @min-[238px]:mt-2 @min-[238px]:h-[14px] @min-[238px]:w-[70px]
+              `}
+              height={16}
+              value={value.grade}
+            />
+            <div
+              className={`
+                mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle
+                @min-[238px]:tracking-wide
+              `}
+            >
+              {value.kind} | {value.yearPublished}
+            </div>
           </div>
         </div>
       </div>
