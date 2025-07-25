@@ -41,10 +41,11 @@ export function HomeListItem({
     <li
       className={`
         group/list-item relative row-span-2 grid transform-gpu grid-rows-subgrid
-        flex-col transition-transform
-        tablet:flex tablet:w-[calc((100%_-_32px)_/_3)]
-        tablet-landscape:w-[calc((100%_-_48px)_/_4)]
-        laptop:w-[calc((100%_-_200px)_/_6)]
+        flex-col bg-default transition-transform
+        tablet:flex tablet:w-[calc((100%_-_64px)_/_3)] tablet:bg-inherit
+        min-[905px]:w-[calc((100%_-_108px)_/_4)]
+        min-[1208px]:w-[calc((100%_-_180px)_/_6)]
+        laptop:w-[calc((100%_-_220px)_/_6)]
       `}
     >
       <div
