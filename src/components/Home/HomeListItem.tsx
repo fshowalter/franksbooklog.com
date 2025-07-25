@@ -46,6 +46,7 @@ export function HomeListItem({
         min-[905px]:w-[calc((100%_-_108px)_/_4)]
         min-[1208px]:w-[calc((100%_-_180px)_/_6)]
         laptop:w-[calc((100%_-_220px)_/_6)]
+        desktop:w-[calc((100%_-_320px)_/_6)]
       `}
     >
       <div
@@ -128,7 +129,7 @@ export function HomeListItem({
               <span
                 className={`
                   hidden
-                  @min-[238px]:inline
+                  @min-[225px]:inline
                 `}
               >
                 by{" "}
