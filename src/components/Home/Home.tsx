@@ -42,7 +42,7 @@ export function Home({ backdropImageProps, deck, values }: Props): JSX.Element {
             tablet:gap-y-4
             min-[905px]:gap-x-9
             laptop:gap-x-11 laptop:gap-y-6
-            desktop:gap-y-12
+            desktop:gap-x-16 desktop:gap-y-12
           `}
         >
           {values.map((value, index) => {

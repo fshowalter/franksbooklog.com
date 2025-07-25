@@ -397,7 +397,7 @@ exports[`Home > matches snapshot 1`] = `
             tablet:gap-y-4
             min-[905px]:gap-x-9
             laptop:gap-x-11 laptop:gap-y-6
-            desktop:gap-y-12
+            desktop:gap-x-16 desktop:gap-y-12
           "
           >
             <li
@@ -408,6 +408,7 @@ exports[`Home > matches snapshot 1`] = `
         min-[905px]:w-[calc((100%_-_108px)_/_4)]
         min-[1208px]:w-[calc((100%_-_180px)_/_6)]
         laptop:w-[calc((100%_-_220px)_/_6)]
+        desktop:w-[calc((100%_-_320px)_/_6)]
       "
             >
               <div
@@ -525,7 +526,7 @@ exports[`Home > matches snapshot 1`] = `
                       <span
                         class="
                   hidden
-                  @min-[238px]:inline
+                  @min-[225px]:inline
                 "
                       >
                         by 
@@ -572,6 +573,7 @@ exports[`Home > matches snapshot 1`] = `
         min-[905px]:w-[calc((100%_-_108px)_/_4)]
         min-[1208px]:w-[calc((100%_-_180px)_/_6)]
         laptop:w-[calc((100%_-_220px)_/_6)]
+        desktop:w-[calc((100%_-_320px)_/_6)]
       "
             >
               <div
@@ -689,7 +691,7 @@ exports[`Home > matches snapshot 1`] = `
                       <span
                         class="
                   hidden
-                  @min-[238px]:inline
+                  @min-[225px]:inline
                 "
                       >
                         by 
@@ -736,6 +738,7 @@ exports[`Home > matches snapshot 1`] = `
         min-[905px]:w-[calc((100%_-_108px)_/_4)]
         min-[1208px]:w-[calc((100%_-_180px)_/_6)]
         laptop:w-[calc((100%_-_220px)_/_6)]
+        desktop:w-[calc((100%_-_320px)_/_6)]
       "
             >
               <div
@@ -853,7 +856,7 @@ exports[`Home > matches snapshot 1`] = `
                       <span
                         class="
                   hidden
-                  @min-[238px]:inline
+                  @min-[225px]:inline
                 "
                       >
                         by 
@@ -900,6 +903,7 @@ exports[`Home > matches snapshot 1`] = `
         min-[905px]:w-[calc((100%_-_108px)_/_4)]
         min-[1208px]:w-[calc((100%_-_180px)_/_6)]
         laptop:w-[calc((100%_-_220px)_/_6)]
+        desktop:w-[calc((100%_-_320px)_/_6)]
       "
             >
               <div
@@ -1017,7 +1021,7 @@ exports[`Home > matches snapshot 1`] = `
                       <span
                         class="
                   hidden
-                  @min-[238px]:inline
+                  @min-[225px]:inline
                 "
                       >
                         by 
@@ -1064,6 +1068,7 @@ exports[`Home > matches snapshot 1`] = `
         min-[905px]:w-[calc((100%_-_108px)_/_4)]
         min-[1208px]:w-[calc((100%_-_180px)_/_6)]
         laptop:w-[calc((100%_-_220px)_/_6)]
+        desktop:w-[calc((100%_-_320px)_/_6)]
       "
             >
               <div
@@ -1181,7 +1186,7 @@ exports[`Home > matches snapshot 1`] = `
                       <span
                         class="
                   hidden
-                  @min-[238px]:inline
+                  @min-[225px]:inline
                 "
                       >
                         by 
@@ -1228,6 +1233,7 @@ exports[`Home > matches snapshot 1`] = `
         min-[905px]:w-[calc((100%_-_108px)_/_4)]
         min-[1208px]:w-[calc((100%_-_180px)_/_6)]
         laptop:w-[calc((100%_-_220px)_/_6)]
+        desktop:w-[calc((100%_-_320px)_/_6)]
       "
             >
               <div
@@ -1345,7 +1351,7 @@ exports[`Home > matches snapshot 1`] = `
                       <span
                         class="
                   hidden
-                  @min-[238px]:inline
+                  @min-[225px]:inline
                 "
                       >
                         by 
@@ -1392,6 +1398,7 @@ exports[`Home > matches snapshot 1`] = `
         min-[905px]:w-[calc((100%_-_108px)_/_4)]
         min-[1208px]:w-[calc((100%_-_180px)_/_6)]
         laptop:w-[calc((100%_-_220px)_/_6)]
+        desktop:w-[calc((100%_-_320px)_/_6)]
       "
             >
               <div
@@ -1509,7 +1516,7 @@ exports[`Home > matches snapshot 1`] = `
                       <span
                         class="
                   hidden
-                  @min-[238px]:inline
+                  @min-[225px]:inline
                 "
                       >
                         by 
@@ -1556,6 +1563,7 @@ exports[`Home > matches snapshot 1`] = `
         min-[905px]:w-[calc((100%_-_108px)_/_4)]
         min-[1208px]:w-[calc((100%_-_180px)_/_6)]
         laptop:w-[calc((100%_-_220px)_/_6)]
+        desktop:w-[calc((100%_-_320px)_/_6)]
       "
             >
               <div
@@ -1673,7 +1681,7 @@ exports[`Home > matches snapshot 1`] = `
                       <span
                         class="
                   hidden
-                  @min-[238px]:inline
+                  @min-[225px]:inline
                 "
                       >
                         by 
@@ -1724,6 +1732,7 @@ exports[`Home > matches snapshot 1`] = `
         min-[905px]:w-[calc((100%_-_108px)_/_4)]
         min-[1208px]:w-[calc((100%_-_180px)_/_6)]
         laptop:w-[calc((100%_-_220px)_/_6)]
+        desktop:w-[calc((100%_-_320px)_/_6)]
       "
             >
               <div
@@ -1841,7 +1850,7 @@ exports[`Home > matches snapshot 1`] = `
                       <span
                         class="
                   hidden
-                  @min-[238px]:inline
+                  @min-[225px]:inline
                 "
                       >
                         by 
@@ -1888,6 +1897,7 @@ exports[`Home > matches snapshot 1`] = `
         min-[905px]:w-[calc((100%_-_108px)_/_4)]
         min-[1208px]:w-[calc((100%_-_180px)_/_6)]
         laptop:w-[calc((100%_-_220px)_/_6)]
+        desktop:w-[calc((100%_-_320px)_/_6)]
       "
             >
               <div
@@ -2005,7 +2015,7 @@ exports[`Home > matches snapshot 1`] = `
                       <span
                         class="
                   hidden
-                  @min-[238px]:inline
+                  @min-[225px]:inline
                 "
                       >
                         by 
@@ -2052,6 +2062,7 @@ exports[`Home > matches snapshot 1`] = `
         min-[905px]:w-[calc((100%_-_108px)_/_4)]
         min-[1208px]:w-[calc((100%_-_180px)_/_6)]
         laptop:w-[calc((100%_-_220px)_/_6)]
+        desktop:w-[calc((100%_-_320px)_/_6)]
       "
             >
               <div
@@ -2169,7 +2180,7 @@ exports[`Home > matches snapshot 1`] = `
                       <span
                         class="
                   hidden
-                  @min-[238px]:inline
+                  @min-[225px]:inline
                 "
                       >
                         by 
@@ -2216,6 +2227,7 @@ exports[`Home > matches snapshot 1`] = `
         min-[905px]:w-[calc((100%_-_108px)_/_4)]
         min-[1208px]:w-[calc((100%_-_180px)_/_6)]
         laptop:w-[calc((100%_-_220px)_/_6)]
+        desktop:w-[calc((100%_-_320px)_/_6)]
       "
             >
               <div
@@ -2333,7 +2345,7 @@ exports[`Home > matches snapshot 1`] = `
                       <span
                         class="
                   hidden
-                  @min-[238px]:inline
+                  @min-[225px]:inline
                 "
                       >
                         by 
