@@ -67,8 +67,8 @@ function MoreReviewsCard({ value }: { value: MoreReviewsValue }): JSX.Element {
     <li
       className={`
         group/card relative row-span-2 grid transform-gpu grid-rows-subgrid
-        flex-col gap-y-0 transition-transform
-        has-[a:hover]:-translate-y-1 has-[a:hover]:scale-105
+        flex-col gap-y-0 bg-default transition-transform
+        has-[a:hover]:z-10 has-[a:hover]:-translate-y-1 has-[a:hover]:scale-105
         has-[a:hover]:drop-shadow-2xl
         tablet:flex tablet:w-[calc((100%_-_32px)_/_3)]
         laptop:w-[calc((100%_-_120px)_/_6)]
@@ -76,101 +76,112 @@ function MoreReviewsCard({ value }: { value: MoreReviewsValue }): JSX.Element {
     >
       <div
         className={`
-          @container flex justify-center self-end bg-default px-3 pt-6
+          @container self-end
           tablet:self-auto
-          @min-[200px]:px-[clamp(4px,10cqw,32px)] @min-[200px]:pt-6
         `}
       >
         <div
           className={`
-            relative max-w-[200px] drop-shadow-md
-            after:absolute after:inset-x-0 after:top-0 after:bottom-0 after:z-20
-            after:rounded-[2.5px] after:bg-default after:opacity-15
-            after:transition-opacity
-            group-hover/card:after:opacity-0
+            flex justify-center px-3 pt-6
+            desktop:pt-8
+            @min-[200px]:px-[clamp(4px,12cqw,32px)]
           `}
         >
-          <Cover
-            decoding="async"
-            imageProps={value.coverImageProps}
-            {...MoreReviewsImageConfig}
-            alt=""
-            loading="lazy"
-          />
+          <div
+            className={`
+              relative drop-shadow-md
+              after:absolute after:inset-x-0 after:top-0 after:bottom-0
+              after:z-20 after:rounded-[2.5px] after:bg-default after:opacity-15
+              after:transition-opacity
+              group-hover/card:after:opacity-0
+            `}
+          >
+            <Cover
+              decoding="async"
+              imageProps={value.coverImageProps}
+              {...MoreReviewsImageConfig}
+              alt=""
+              loading="lazy"
+            />
+          </div>
         </div>
       </div>
-      <div
-        className={`
-          @container flex justify-center bg-default px-4 pb-8
-          @min-[193px]:px-[clamp(4px,14cqw,32px)] @min-[193px]:pb-6
-        `}
-      >
-        <div className={`flex w-full max-w-[200px] flex-col px-1`}>
-          <div
-            className={`
-              pt-4 text-base leading-5 font-medium
-              @min-[238px]:text-md
-            `}
-          >
-            <a
+      <div className={`@container`}>
+        <div
+          className={`
+            flex w-full items-center bg-default px-3 pb-8
+            @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
+          `}
+        >
+          <div className={`flex w-full max-w-[248px] flex-col px-1`}>
+            <div
               className={`
-                block
-                after:absolute after:top-0 after:left-0 after:z-60
-                after:size-full after:opacity-0
-                hover:text-accent
-              `}
-              href={`/reviews/${value.slug}/`}
-              rel="canonical"
-            >
-              {value.title}
-            </a>
-          </div>
-          <p
-            className={`pt-1 font-sans text-xs leading-4 font-light text-subtle`}
-          >
-            <span
-              className={`
-                hidden
-                @min-[238px]:inline
+                pt-4 text-base leading-5 font-medium
+                @min-[238px]:text-md
               `}
             >
-              by{" "}
-            </span>
-            {toSentenceArray(
-              value.authors.map((author) => {
-                return (
-                  <AuthorLink
-                    as="span"
-                    key={author.name}
-                    name={author.name}
-                    notes={author.notes}
-                  />
-                );
-              }),
-            )}
-          </p>{" "}
-          <Grade
-            className={`
-              mt-2 h-3 w-15
-              @min-[238px]:mt-2 @min-[238px]:h-[14px] @min-[238px]:w-[70px]
-            `}
-            height={18}
-            value={value.grade}
-          />
-          <Abandoned
-            className={`
-              mt-2 self-start
-              tablet:mt-3
-            `}
-            value={value.grade}
-          />
-          <div
-            className={`
-              mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle
-              @min-[238px]:tracking-wide
-            `}
-          >
-            {value.kind} | {value.yearPublished}
+              <a
+                className={`
+                  block
+                  after:absolute after:top-0 after:left-0 after:z-60
+                  after:size-full after:opacity-0
+                  hover:text-accent
+                `}
+                href={`/reviews/${value.slug}/`}
+                rel="canonical"
+              >
+                {value.title}
+              </a>
+            </div>
+            <p
+              className={`
+                pt-1 font-sans text-xs leading-4 font-light text-subtle
+              `}
+            >
+              <span
+                className={`
+                  hidden
+                  @min-[238px]:inline
+                `}
+              >
+                by{" "}
+              </span>
+              {toSentenceArray(
+                value.authors.map((author) => {
+                  return (
+                    <AuthorLink
+                      as="span"
+                      key={author.name}
+                      name={author.name}
+                      notes={author.notes}
+                    />
+                  );
+                }),
+              )}
+            </p>{" "}
+            <Grade
+              className={`
+                mt-2 h-3 w-15
+                @min-[238px]:mt-2 @min-[238px]:h-[14px] @min-[238px]:w-[70px]
+              `}
+              height={18}
+              value={value.grade}
+            />
+            <Abandoned
+              className={`
+                mt-2 self-start
+                tablet:mt-3
+              `}
+              value={value.grade}
+            />
+            <div
+              className={`
+                mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle
+                @min-[238px]:tracking-wide
+              `}
+            >
+              {value.kind} | {value.yearPublished}
+            </div>
           </div>
         </div>
       </div>
