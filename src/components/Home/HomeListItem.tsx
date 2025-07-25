@@ -40,25 +40,27 @@ export function HomeListItem({
   return (
     <li
       className={`
-        group/card relative row-span-2 grid transform-gpu grid-rows-subgrid
+        group/list-item relative row-span-2 grid transform-gpu grid-rows-subgrid
         flex-col bg-default transition-transform
-        has-[a:hover]:-translate-y-2 has-[a:hover]:drop-shadow-2xl
-        tablet:flex tablet:w-[calc((100%_-_32px)_/_3)]
-        tablet-landscape:w-[calc((100%_-_48px)_/_4)]
-        laptop:w-[calc((100%_-_120px)_/_6)]
+        tablet:flex tablet:w-[calc((100%_-_64px)_/_3)] tablet:bg-inherit
+        min-[905px]:w-[calc((100%_-_108px)_/_4)]
+        min-[1208px]:w-[calc((100%_-_180px)_/_6)]
+        laptop:w-[calc((100%_-_220px)_/_6)]
       `}
     >
       <div
         className={`
-          @container self-end
+          @container transform-gpu self-end transition-transform
+          group-has-[a:hover]/list-item:-translate-y-2
+          group-has-[a:hover]/list-item:drop-shadow-2xl
           tablet:self-auto
         `}
       >
         <div
           className={`
             z-10 flex justify-center px-3 pt-6
+            tablet:px-0 tablet:pt-0
             desktop:pt-8
-            @min-[200px]:px-[clamp(4px,12cqw,32px)]
           `}
         >
           <div
@@ -67,7 +69,7 @@ export function HomeListItem({
               after:absolute after:inset-x-0 after:top-0 after:bottom-0
               after:z-20 after:bg-default after:opacity-15
               after:transition-opacity
-              group-hover/card:after:opacity-0
+              group-hover/list-item:after:opacity-0
             `}
           >
             <Cover
@@ -82,8 +84,10 @@ export function HomeListItem({
       <div className={`@container`}>
         <div
           className={`
-            flex flex-col items-center bg-default px-3 pb-8
+            flex flex-col items-center px-3 pb-8
+            tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
+            @min-[200px]:tablet:px-0
           `}
         >
           <div className={`flex w-full max-w-[248px] flex-col px-1`}>
@@ -153,6 +157,7 @@ export function HomeListItem({
             <div
               className={`
                 mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle
+                tablet:pt-3
                 @min-[238px]:tracking-wide
               `}
             >
