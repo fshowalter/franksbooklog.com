@@ -50,32 +50,39 @@ export function HomeListItem({
     >
       <div
         className={`
-          @container z-10 flex justify-center self-end pt-6
+          @container self-end
           tablet:self-auto
         `}
       >
         <div
           className={`
-            relative px-3 drop-shadow-md
-            after:absolute after:inset-x-0 after:top-0 after:bottom-0 after:z-20
-            after:bg-default after:opacity-15 after:transition-opacity
-            group-hover/card:after:opacity-0
+            z-10 flex justify-center px-3 pt-6
+            desktop:pt-8
             @min-[200px]:px-[clamp(4px,12cqw,32px)]
           `}
         >
-          <Cover
-            decoding="async"
-            imageProps={value.coverImageProps}
-            {...CoverImageConfig}
-            className={`max-w-[200px]`}
-            loading={eagerLoadCoverImage ? "eager" : "lazy"}
-          />
+          <div
+            className={`
+              relative drop-shadow-md
+              after:absolute after:inset-x-0 after:top-0 after:bottom-0
+              after:z-20 after:bg-default after:opacity-15
+              after:transition-opacity
+              group-hover/card:after:opacity-0
+            `}
+          >
+            <Cover
+              decoding="async"
+              imageProps={value.coverImageProps}
+              {...CoverImageConfig}
+              loading={eagerLoadCoverImage ? "eager" : "lazy"}
+            />
+          </div>
         </div>
       </div>
       <div className={`@container`}>
         <div
           className={`
-            flex flex-col justify-center bg-default px-4 pb-8
+            flex flex-col items-center bg-default px-3 pb-8
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
           `}
         >
