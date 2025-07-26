@@ -391,25 +391,26 @@ exports[`Home > matches snapshot 1`] = `
           </h2>
           <ol
             class="
-            -mx-4 grid grid-cols-2 grid-rows-[auto_1fr] flex-wrap items-end
-            gap-x-2 gap-y-2
-            tablet:mx-0 tablet:flex tablet:items-baseline tablet:gap-x-8
-            tablet:gap-y-4
-            min-[905px]:gap-x-9
-            laptop:gap-x-11
-            desktop:gap-x-16 desktop:gap-y-12
+            -mx-4 grid grid-cols-2 grid-rows-[auto_1fr] flex-wrap gap-x-2
+            gap-y-2
+            tablet:mx-0 tablet:flex tablet:items-baseline
+            tablet:gap-x-[var(--gap-x)] tablet:gap-y-6 tablet:[--column-count:3]
+            tablet:[--gap-x:calc(var(--spacing)_*_10)]
+            min-[905px]:[--column-count:4]
+            min-[905px]:[--gap-x:calc(var(--spacing)_*_9)]
+            min-[1080px]:[--column-count:6]
+            laptop:[--gap-x:calc(var(--spacing)_*_11)]
+            desktop:gap-x-16 desktop:[--gap-x:calc(var(--spacing)_*_16)]
           "
           >
             <li
               class="
         group/list-item relative row-span-2 grid transform-gpu grid-rows-subgrid
         flex-col items-end bg-default transition-transform
-        tablet:flex tablet:w-[calc((100%_-_64px)_/_3)] tablet:items-stretch
-        tablet:bg-inherit
-        min-[905px]:w-[calc((100%_-_108px)_/_4)]
-        min-[1208px]:w-[calc((100%_-_180px)_/_6)]
-        laptop:w-[calc((100%_-_220px)_/_6)]
-        desktop:w-[calc((100%_-_320px)_/_6)]
+        tablet:flex
+        tablet:w-[calc((100%_-_var(--gaps-width))_/_var(--column-count))]
+        tablet:items-stretch tablet:bg-inherit
+        tablet:[--gaps-width:var(--gap-x)_*_(var(--column-count)_-_1)]
       "
             >
               <div
@@ -568,12 +569,10 @@ exports[`Home > matches snapshot 1`] = `
               class="
         group/list-item relative row-span-2 grid transform-gpu grid-rows-subgrid
         flex-col items-end bg-default transition-transform
-        tablet:flex tablet:w-[calc((100%_-_64px)_/_3)] tablet:items-stretch
-        tablet:bg-inherit
-        min-[905px]:w-[calc((100%_-_108px)_/_4)]
-        min-[1208px]:w-[calc((100%_-_180px)_/_6)]
-        laptop:w-[calc((100%_-_220px)_/_6)]
-        desktop:w-[calc((100%_-_320px)_/_6)]
+        tablet:flex
+        tablet:w-[calc((100%_-_var(--gaps-width))_/_var(--column-count))]
+        tablet:items-stretch tablet:bg-inherit
+        tablet:[--gaps-width:var(--gap-x)_*_(var(--column-count)_-_1)]
       "
             >
               <div
@@ -732,12 +731,10 @@ exports[`Home > matches snapshot 1`] = `
               class="
         group/list-item relative row-span-2 grid transform-gpu grid-rows-subgrid
         flex-col items-end bg-default transition-transform
-        tablet:flex tablet:w-[calc((100%_-_64px)_/_3)] tablet:items-stretch
-        tablet:bg-inherit
-        min-[905px]:w-[calc((100%_-_108px)_/_4)]
-        min-[1208px]:w-[calc((100%_-_180px)_/_6)]
-        laptop:w-[calc((100%_-_220px)_/_6)]
-        desktop:w-[calc((100%_-_320px)_/_6)]
+        tablet:flex
+        tablet:w-[calc((100%_-_var(--gaps-width))_/_var(--column-count))]
+        tablet:items-stretch tablet:bg-inherit
+        tablet:[--gaps-width:var(--gap-x)_*_(var(--column-count)_-_1)]
       "
             >
               <div
@@ -896,12 +893,10 @@ exports[`Home > matches snapshot 1`] = `
               class="
         group/list-item relative row-span-2 grid transform-gpu grid-rows-subgrid
         flex-col items-end bg-default transition-transform
-        tablet:flex tablet:w-[calc((100%_-_64px)_/_3)] tablet:items-stretch
-        tablet:bg-inherit
-        min-[905px]:w-[calc((100%_-_108px)_/_4)]
-        min-[1208px]:w-[calc((100%_-_180px)_/_6)]
-        laptop:w-[calc((100%_-_220px)_/_6)]
-        desktop:w-[calc((100%_-_320px)_/_6)]
+        tablet:flex
+        tablet:w-[calc((100%_-_var(--gaps-width))_/_var(--column-count))]
+        tablet:items-stretch tablet:bg-inherit
+        tablet:[--gaps-width:var(--gap-x)_*_(var(--column-count)_-_1)]
       "
             >
               <div
@@ -1060,12 +1055,10 @@ exports[`Home > matches snapshot 1`] = `
               class="
         group/list-item relative row-span-2 grid transform-gpu grid-rows-subgrid
         flex-col items-end bg-default transition-transform
-        tablet:flex tablet:w-[calc((100%_-_64px)_/_3)] tablet:items-stretch
-        tablet:bg-inherit
-        min-[905px]:w-[calc((100%_-_108px)_/_4)]
-        min-[1208px]:w-[calc((100%_-_180px)_/_6)]
-        laptop:w-[calc((100%_-_220px)_/_6)]
-        desktop:w-[calc((100%_-_320px)_/_6)]
+        tablet:flex
+        tablet:w-[calc((100%_-_var(--gaps-width))_/_var(--column-count))]
+        tablet:items-stretch tablet:bg-inherit
+        tablet:[--gaps-width:var(--gap-x)_*_(var(--column-count)_-_1)]
       "
             >
               <div
@@ -1224,12 +1217,10 @@ exports[`Home > matches snapshot 1`] = `
               class="
         group/list-item relative row-span-2 grid transform-gpu grid-rows-subgrid
         flex-col items-end bg-default transition-transform
-        tablet:flex tablet:w-[calc((100%_-_64px)_/_3)] tablet:items-stretch
-        tablet:bg-inherit
-        min-[905px]:w-[calc((100%_-_108px)_/_4)]
-        min-[1208px]:w-[calc((100%_-_180px)_/_6)]
-        laptop:w-[calc((100%_-_220px)_/_6)]
-        desktop:w-[calc((100%_-_320px)_/_6)]
+        tablet:flex
+        tablet:w-[calc((100%_-_var(--gaps-width))_/_var(--column-count))]
+        tablet:items-stretch tablet:bg-inherit
+        tablet:[--gaps-width:var(--gap-x)_*_(var(--column-count)_-_1)]
       "
             >
               <div
@@ -1388,12 +1379,10 @@ exports[`Home > matches snapshot 1`] = `
               class="
         group/list-item relative row-span-2 grid transform-gpu grid-rows-subgrid
         flex-col items-end bg-default transition-transform
-        tablet:flex tablet:w-[calc((100%_-_64px)_/_3)] tablet:items-stretch
-        tablet:bg-inherit
-        min-[905px]:w-[calc((100%_-_108px)_/_4)]
-        min-[1208px]:w-[calc((100%_-_180px)_/_6)]
-        laptop:w-[calc((100%_-_220px)_/_6)]
-        desktop:w-[calc((100%_-_320px)_/_6)]
+        tablet:flex
+        tablet:w-[calc((100%_-_var(--gaps-width))_/_var(--column-count))]
+        tablet:items-stretch tablet:bg-inherit
+        tablet:[--gaps-width:var(--gap-x)_*_(var(--column-count)_-_1)]
       "
             >
               <div
@@ -1552,12 +1541,10 @@ exports[`Home > matches snapshot 1`] = `
               class="
         group/list-item relative row-span-2 grid transform-gpu grid-rows-subgrid
         flex-col items-end bg-default transition-transform
-        tablet:flex tablet:w-[calc((100%_-_64px)_/_3)] tablet:items-stretch
-        tablet:bg-inherit
-        min-[905px]:w-[calc((100%_-_108px)_/_4)]
-        min-[1208px]:w-[calc((100%_-_180px)_/_6)]
-        laptop:w-[calc((100%_-_220px)_/_6)]
-        desktop:w-[calc((100%_-_320px)_/_6)]
+        tablet:flex
+        tablet:w-[calc((100%_-_var(--gaps-width))_/_var(--column-count))]
+        tablet:items-stretch tablet:bg-inherit
+        tablet:[--gaps-width:var(--gap-x)_*_(var(--column-count)_-_1)]
       "
             >
               <div
@@ -1720,12 +1707,10 @@ exports[`Home > matches snapshot 1`] = `
               class="
         group/list-item relative row-span-2 grid transform-gpu grid-rows-subgrid
         flex-col items-end bg-default transition-transform
-        tablet:flex tablet:w-[calc((100%_-_64px)_/_3)] tablet:items-stretch
-        tablet:bg-inherit
-        min-[905px]:w-[calc((100%_-_108px)_/_4)]
-        min-[1208px]:w-[calc((100%_-_180px)_/_6)]
-        laptop:w-[calc((100%_-_220px)_/_6)]
-        desktop:w-[calc((100%_-_320px)_/_6)]
+        tablet:flex
+        tablet:w-[calc((100%_-_var(--gaps-width))_/_var(--column-count))]
+        tablet:items-stretch tablet:bg-inherit
+        tablet:[--gaps-width:var(--gap-x)_*_(var(--column-count)_-_1)]
       "
             >
               <div
@@ -1884,12 +1869,10 @@ exports[`Home > matches snapshot 1`] = `
               class="
         group/list-item relative row-span-2 grid transform-gpu grid-rows-subgrid
         flex-col items-end bg-default transition-transform
-        tablet:flex tablet:w-[calc((100%_-_64px)_/_3)] tablet:items-stretch
-        tablet:bg-inherit
-        min-[905px]:w-[calc((100%_-_108px)_/_4)]
-        min-[1208px]:w-[calc((100%_-_180px)_/_6)]
-        laptop:w-[calc((100%_-_220px)_/_6)]
-        desktop:w-[calc((100%_-_320px)_/_6)]
+        tablet:flex
+        tablet:w-[calc((100%_-_var(--gaps-width))_/_var(--column-count))]
+        tablet:items-stretch tablet:bg-inherit
+        tablet:[--gaps-width:var(--gap-x)_*_(var(--column-count)_-_1)]
       "
             >
               <div
@@ -2048,12 +2031,10 @@ exports[`Home > matches snapshot 1`] = `
               class="
         group/list-item relative row-span-2 grid transform-gpu grid-rows-subgrid
         flex-col items-end bg-default transition-transform
-        tablet:flex tablet:w-[calc((100%_-_64px)_/_3)] tablet:items-stretch
-        tablet:bg-inherit
-        min-[905px]:w-[calc((100%_-_108px)_/_4)]
-        min-[1208px]:w-[calc((100%_-_180px)_/_6)]
-        laptop:w-[calc((100%_-_220px)_/_6)]
-        desktop:w-[calc((100%_-_320px)_/_6)]
+        tablet:flex
+        tablet:w-[calc((100%_-_var(--gaps-width))_/_var(--column-count))]
+        tablet:items-stretch tablet:bg-inherit
+        tablet:[--gaps-width:var(--gap-x)_*_(var(--column-count)_-_1)]
       "
             >
               <div
@@ -2212,12 +2193,10 @@ exports[`Home > matches snapshot 1`] = `
               class="
         group/list-item relative row-span-2 grid transform-gpu grid-rows-subgrid
         flex-col items-end bg-default transition-transform
-        tablet:flex tablet:w-[calc((100%_-_64px)_/_3)] tablet:items-stretch
-        tablet:bg-inherit
-        min-[905px]:w-[calc((100%_-_108px)_/_4)]
-        min-[1208px]:w-[calc((100%_-_180px)_/_6)]
-        laptop:w-[calc((100%_-_220px)_/_6)]
-        desktop:w-[calc((100%_-_320px)_/_6)]
+        tablet:flex
+        tablet:w-[calc((100%_-_var(--gaps-width))_/_var(--column-count))]
+        tablet:items-stretch tablet:bg-inherit
+        tablet:[--gaps-width:var(--gap-x)_*_(var(--column-count)_-_1)]
       "
             >
               <div
