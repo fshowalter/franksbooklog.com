@@ -403,7 +403,7 @@
               data-pagefind-ignore="true"
             >
               <nav
-                class="mx-auto w-full max-w-[908px] bg-subtle px-container laptop:max-w-(--breakpoint-desktop) laptop:px-container"
+                class="mx-auto w-full max-w-prose bg-subtle px-container tablet:px-0 min-[1208px]:max-w-(--breakpoint-desktop) min-[1208px]:px-container"
                 data-page-find-ignore="true"
               >
                 <div>
@@ -415,17 +415,19 @@
                   </h2>
                 </div>
                 <ul
-                  class="-mx-4 grid auto-rows-[auto_1fr] grid-cols-2 flex-wrap gap-x-[clamp(8px,2vw,32px)] gap-y-[clamp(8px,2vw,32px)] tablet:flex tablet:items-baseline tablet:gap-x-4 tablet:gap-y-4 laptop:-mx-6 laptop:gap-x-6 laptop:gap-y-6 desktop:-mx-8 desktop:gap-y-12"
+                  class="-mx-4 grid auto-rows-[auto_1fr] grid-cols-2 flex-wrap gap-x-[clamp(8px,2vw,32px)] gap-y-[clamp(8px,2vw,32px)] tablet:mx-0 tablet:flex tablet:items-baseline tablet:gap-x-[var(--gap-x)] tablet:gap-y-4 tablet:[--column-count:3] tablet:[--gap-x:calc(var(--spacing)_*_10)] min-[1208px]:[--column-count:6] laptop:[--gap-x:calc(var(--spacing)_*_11)] desktop:gap-y-12 desktop:[--gap-x:calc(var(--spacing)_*_16)]"
                 >
                   <li
-                    class="group/card relative row-span-2 grid transform-gpu grid-rows-subgrid flex-col gap-y-0 bg-default transition-transform has-[a:hover]:z-10 has-[a:hover]:-translate-y-1 has-[a:hover]:scale-105 has-[a:hover]:drop-shadow-2xl tablet:flex tablet:w-[calc((100%_-_32px)_/_3)] laptop:w-[calc((100%_-_120px)_/_6)]"
+                    class="group/list-item relative row-span-2 grid transform-gpu grid-rows-subgrid flex-col gap-y-0 bg-default transition-transform tablet:flex tablet:w-[calc((100%_-_var(--gaps-width))_/_var(--column-count))] tablet:bg-inherit tablet:[--gaps-width:var(--gap-x)_*_(var(--column-count)_-_1)]"
                   >
-                    <div class="@container self-end tablet:self-auto">
+                    <div
+                      class="@container transform-gpu self-end transition-transform group-has-[a:hover]/list-item:-translate-y-2 group-has-[a:hover]/list-item:drop-shadow-2xl tablet:self-auto"
+                    >
                       <div
-                        class="flex justify-center px-3 pt-6 desktop:pt-8 @min-[200px]:px-[clamp(4px,12cqw,32px)]"
+                        class="flex justify-center px-3 pt-6 tablet:px-0 tablet:pt-0"
                       >
                         <div
-                          class="relative drop-shadow-md after:absolute after:inset-x-0 after:top-0 after:bottom-0 after:z-20 after:rounded-[2.5px] after:bg-default after:opacity-15 after:transition-opacity group-hover/card:after:opacity-0"
+                          class="relative drop-shadow-md after:absolute after:inset-x-0 after:top-0 after:bottom-0 after:z-20 after:rounded-[2.5px] after:bg-default after:opacity-15 after:transition-opacity group-hover/list-item:after:opacity-0"
                         >
                           <div
                             class="relative after:absolute after:top-0 after:left-0 after:z-20 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)] after:bg-size-[100%_100%] after:mix-blend-soft-light undefined"
@@ -456,11 +458,11 @@
                     </div>
                     <div class="@container">
                       <div
-                        class="flex w-full items-center bg-default px-3 pb-8 @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6"
+                        class="flex flex-col items-center px-3 pb-8 tablet:px-0 @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6 @min-[200px]:tablet:px-0"
                       >
                         <div class="flex w-full max-w-[248px] flex-col px-1">
                           <div
-                            class="pt-4 text-base leading-5 font-medium @min-[238px]:text-md"
+                            class="pt-4 text-base leading-5 font-medium @min-[225px]:text-md"
                           >
                             <a
                               class="block after:absolute after:top-0 after:left-0 after:z-60 after:size-full after:opacity-0 hover:text-accent"
@@ -472,7 +474,7 @@
                           <p
                             class="pt-1 font-sans text-xs leading-4 font-light text-subtle"
                           >
-                            <span class="hidden @min-[238px]:inline"
+                            <span class="hidden @min-[225px]:inline"
                               >by<!-- --> </span
                             ><span>Richard Laymon</span>
                           </p>
@@ -482,13 +484,13 @@
                               srcset="/svg/3-stars-dark.svg" />
                             <img
                               alt="C+: 3 stars (out of 5)"
-                              class="mt-2 h-3 w-15 @min-[238px]:mt-2 @min-[238px]:h-[14px] @min-[238px]:w-[70px]"
+                              class="mt-2 h-3 w-15 @min-[225px]:mt-2 @min-[225px]:h-[14px] @min-[225px]:w-[70px]"
                               height="18"
                               src="/svg/3-stars.svg"
                               width="90"
                           /></picture>
                           <div
-                            class="mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle @min-[238px]:tracking-wide"
+                            class="mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle tablet:pt-3 @min-[225px]:tracking-wide"
                           >
                             Short Story<!-- -->
                             |
@@ -499,14 +501,16 @@
                     </div>
                   </li>
                   <li
-                    class="group/card relative row-span-2 grid transform-gpu grid-rows-subgrid flex-col gap-y-0 bg-default transition-transform has-[a:hover]:z-10 has-[a:hover]:-translate-y-1 has-[a:hover]:scale-105 has-[a:hover]:drop-shadow-2xl tablet:flex tablet:w-[calc((100%_-_32px)_/_3)] laptop:w-[calc((100%_-_120px)_/_6)]"
+                    class="group/list-item relative row-span-2 grid transform-gpu grid-rows-subgrid flex-col gap-y-0 bg-default transition-transform tablet:flex tablet:w-[calc((100%_-_var(--gaps-width))_/_var(--column-count))] tablet:bg-inherit tablet:[--gaps-width:var(--gap-x)_*_(var(--column-count)_-_1)]"
                   >
-                    <div class="@container self-end tablet:self-auto">
+                    <div
+                      class="@container transform-gpu self-end transition-transform group-has-[a:hover]/list-item:-translate-y-2 group-has-[a:hover]/list-item:drop-shadow-2xl tablet:self-auto"
+                    >
                       <div
-                        class="flex justify-center px-3 pt-6 desktop:pt-8 @min-[200px]:px-[clamp(4px,12cqw,32px)]"
+                        class="flex justify-center px-3 pt-6 tablet:px-0 tablet:pt-0"
                       >
                         <div
-                          class="relative drop-shadow-md after:absolute after:inset-x-0 after:top-0 after:bottom-0 after:z-20 after:rounded-[2.5px] after:bg-default after:opacity-15 after:transition-opacity group-hover/card:after:opacity-0"
+                          class="relative drop-shadow-md after:absolute after:inset-x-0 after:top-0 after:bottom-0 after:z-20 after:rounded-[2.5px] after:bg-default after:opacity-15 after:transition-opacity group-hover/list-item:after:opacity-0"
                         >
                           <div
                             class="relative after:absolute after:top-0 after:left-0 after:z-20 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)] after:bg-size-[100%_100%] after:mix-blend-soft-light undefined"
@@ -537,11 +541,11 @@
                     </div>
                     <div class="@container">
                       <div
-                        class="flex w-full items-center bg-default px-3 pb-8 @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6"
+                        class="flex flex-col items-center px-3 pb-8 tablet:px-0 @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6 @min-[200px]:tablet:px-0"
                       >
                         <div class="flex w-full max-w-[248px] flex-col px-1">
                           <div
-                            class="pt-4 text-base leading-5 font-medium @min-[238px]:text-md"
+                            class="pt-4 text-base leading-5 font-medium @min-[225px]:text-md"
                           >
                             <a
                               class="block after:absolute after:top-0 after:left-0 after:z-60 after:size-full after:opacity-0 hover:text-accent"
@@ -553,7 +557,7 @@
                           <p
                             class="pt-1 font-sans text-xs leading-4 font-light text-subtle"
                           >
-                            <span class="hidden @min-[238px]:inline"
+                            <span class="hidden @min-[225px]:inline"
                               >by<!-- --> </span
                             ><span>Peter Straub</span>
                           </p>
@@ -563,13 +567,13 @@
                               srcset="/svg/4-stars-dark.svg" />
                             <img
                               alt="B: 4 stars (out of 5)"
-                              class="mt-2 h-3 w-15 @min-[238px]:mt-2 @min-[238px]:h-[14px] @min-[238px]:w-[70px]"
+                              class="mt-2 h-3 w-15 @min-[225px]:mt-2 @min-[225px]:h-[14px] @min-[225px]:w-[70px]"
                               height="18"
                               src="/svg/4-stars.svg"
                               width="90"
                           /></picture>
                           <div
-                            class="mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle @min-[238px]:tracking-wide"
+                            class="mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle tablet:pt-3 @min-[225px]:tracking-wide"
                           >
                             Novel<!-- -->
                             |
@@ -580,14 +584,16 @@
                     </div>
                   </li>
                   <li
-                    class="group/card relative row-span-2 grid transform-gpu grid-rows-subgrid flex-col gap-y-0 bg-default transition-transform has-[a:hover]:z-10 has-[a:hover]:-translate-y-1 has-[a:hover]:scale-105 has-[a:hover]:drop-shadow-2xl tablet:flex tablet:w-[calc((100%_-_32px)_/_3)] laptop:w-[calc((100%_-_120px)_/_6)]"
+                    class="group/list-item relative row-span-2 grid transform-gpu grid-rows-subgrid flex-col gap-y-0 bg-default transition-transform tablet:flex tablet:w-[calc((100%_-_var(--gaps-width))_/_var(--column-count))] tablet:bg-inherit tablet:[--gaps-width:var(--gap-x)_*_(var(--column-count)_-_1)]"
                   >
-                    <div class="@container self-end tablet:self-auto">
+                    <div
+                      class="@container transform-gpu self-end transition-transform group-has-[a:hover]/list-item:-translate-y-2 group-has-[a:hover]/list-item:drop-shadow-2xl tablet:self-auto"
+                    >
                       <div
-                        class="flex justify-center px-3 pt-6 desktop:pt-8 @min-[200px]:px-[clamp(4px,12cqw,32px)]"
+                        class="flex justify-center px-3 pt-6 tablet:px-0 tablet:pt-0"
                       >
                         <div
-                          class="relative drop-shadow-md after:absolute after:inset-x-0 after:top-0 after:bottom-0 after:z-20 after:rounded-[2.5px] after:bg-default after:opacity-15 after:transition-opacity group-hover/card:after:opacity-0"
+                          class="relative drop-shadow-md after:absolute after:inset-x-0 after:top-0 after:bottom-0 after:z-20 after:rounded-[2.5px] after:bg-default after:opacity-15 after:transition-opacity group-hover/list-item:after:opacity-0"
                         >
                           <div
                             class="relative after:absolute after:top-0 after:left-0 after:z-20 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)] after:bg-size-[100%_100%] after:mix-blend-soft-light undefined"
@@ -618,11 +624,11 @@
                     </div>
                     <div class="@container">
                       <div
-                        class="flex w-full items-center bg-default px-3 pb-8 @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6"
+                        class="flex flex-col items-center px-3 pb-8 tablet:px-0 @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6 @min-[200px]:tablet:px-0"
                       >
                         <div class="flex w-full max-w-[248px] flex-col px-1">
                           <div
-                            class="pt-4 text-base leading-5 font-medium @min-[238px]:text-md"
+                            class="pt-4 text-base leading-5 font-medium @min-[225px]:text-md"
                           >
                             <a
                               class="block after:absolute after:top-0 after:left-0 after:z-60 after:size-full after:opacity-0 hover:text-accent"
@@ -634,7 +640,7 @@
                           <p
                             class="pt-1 font-sans text-xs leading-4 font-light text-subtle"
                           >
-                            <span class="hidden @min-[238px]:inline"
+                            <span class="hidden @min-[225px]:inline"
                               >by<!-- --> </span
                             ><span>Lol Tolhurst</span>
                           </p>
@@ -644,13 +650,13 @@
                               srcset="/svg/3-stars-dark.svg" />
                             <img
                               alt="C: 3 stars (out of 5)"
-                              class="mt-2 h-3 w-15 @min-[238px]:mt-2 @min-[238px]:h-[14px] @min-[238px]:w-[70px]"
+                              class="mt-2 h-3 w-15 @min-[225px]:mt-2 @min-[225px]:h-[14px] @min-[225px]:w-[70px]"
                               height="18"
                               src="/svg/3-stars.svg"
                               width="90"
                           /></picture>
                           <div
-                            class="mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle @min-[238px]:tracking-wide"
+                            class="mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle tablet:pt-3 @min-[225px]:tracking-wide"
                           >
                             Nonfiction<!-- -->
                             |
@@ -661,14 +667,16 @@
                     </div>
                   </li>
                   <li
-                    class="group/card relative row-span-2 grid transform-gpu grid-rows-subgrid flex-col gap-y-0 bg-default transition-transform has-[a:hover]:z-10 has-[a:hover]:-translate-y-1 has-[a:hover]:scale-105 has-[a:hover]:drop-shadow-2xl tablet:flex tablet:w-[calc((100%_-_32px)_/_3)] laptop:w-[calc((100%_-_120px)_/_6)]"
+                    class="group/list-item relative row-span-2 grid transform-gpu grid-rows-subgrid flex-col gap-y-0 bg-default transition-transform tablet:flex tablet:w-[calc((100%_-_var(--gaps-width))_/_var(--column-count))] tablet:bg-inherit tablet:[--gaps-width:var(--gap-x)_*_(var(--column-count)_-_1)]"
                   >
-                    <div class="@container self-end tablet:self-auto">
+                    <div
+                      class="@container transform-gpu self-end transition-transform group-has-[a:hover]/list-item:-translate-y-2 group-has-[a:hover]/list-item:drop-shadow-2xl tablet:self-auto"
+                    >
                       <div
-                        class="flex justify-center px-3 pt-6 desktop:pt-8 @min-[200px]:px-[clamp(4px,12cqw,32px)]"
+                        class="flex justify-center px-3 pt-6 tablet:px-0 tablet:pt-0"
                       >
                         <div
-                          class="relative drop-shadow-md after:absolute after:inset-x-0 after:top-0 after:bottom-0 after:z-20 after:rounded-[2.5px] after:bg-default after:opacity-15 after:transition-opacity group-hover/card:after:opacity-0"
+                          class="relative drop-shadow-md after:absolute after:inset-x-0 after:top-0 after:bottom-0 after:z-20 after:rounded-[2.5px] after:bg-default after:opacity-15 after:transition-opacity group-hover/list-item:after:opacity-0"
                         >
                           <div
                             class="relative after:absolute after:top-0 after:left-0 after:z-20 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)] after:bg-size-[100%_100%] after:mix-blend-soft-light undefined"
@@ -699,11 +707,11 @@
                     </div>
                     <div class="@container">
                       <div
-                        class="flex w-full items-center bg-default px-3 pb-8 @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6"
+                        class="flex flex-col items-center px-3 pb-8 tablet:px-0 @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6 @min-[200px]:tablet:px-0"
                       >
                         <div class="flex w-full max-w-[248px] flex-col px-1">
                           <div
-                            class="pt-4 text-base leading-5 font-medium @min-[238px]:text-md"
+                            class="pt-4 text-base leading-5 font-medium @min-[225px]:text-md"
                           >
                             <a
                               class="block after:absolute after:top-0 after:left-0 after:z-60 after:size-full after:opacity-0 hover:text-accent"
@@ -715,7 +723,7 @@
                           <p
                             class="pt-1 font-sans text-xs leading-4 font-light text-subtle"
                           >
-                            <span class="hidden @min-[238px]:inline"
+                            <span class="hidden @min-[225px]:inline"
                               >by<!-- --> </span
                             ><span>David Mamet</span>
                           </p>
@@ -725,13 +733,13 @@
                               srcset="/svg/2-stars-dark.svg" />
                             <img
                               alt="D: 2 stars (out of 5)"
-                              class="mt-2 h-3 w-15 @min-[238px]:mt-2 @min-[238px]:h-[14px] @min-[238px]:w-[70px]"
+                              class="mt-2 h-3 w-15 @min-[225px]:mt-2 @min-[225px]:h-[14px] @min-[225px]:w-[70px]"
                               height="18"
                               src="/svg/2-stars.svg"
                               width="90"
                           /></picture>
                           <div
-                            class="mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle @min-[238px]:tracking-wide"
+                            class="mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle tablet:pt-3 @min-[225px]:tracking-wide"
                           >
                             Nonfiction<!-- -->
                             |
@@ -742,14 +750,16 @@
                     </div>
                   </li>
                   <li
-                    class="group/card relative row-span-2 grid transform-gpu grid-rows-subgrid flex-col gap-y-0 bg-default transition-transform has-[a:hover]:z-10 has-[a:hover]:-translate-y-1 has-[a:hover]:scale-105 has-[a:hover]:drop-shadow-2xl tablet:flex tablet:w-[calc((100%_-_32px)_/_3)] laptop:w-[calc((100%_-_120px)_/_6)]"
+                    class="group/list-item relative row-span-2 grid transform-gpu grid-rows-subgrid flex-col gap-y-0 bg-default transition-transform tablet:flex tablet:w-[calc((100%_-_var(--gaps-width))_/_var(--column-count))] tablet:bg-inherit tablet:[--gaps-width:var(--gap-x)_*_(var(--column-count)_-_1)]"
                   >
-                    <div class="@container self-end tablet:self-auto">
+                    <div
+                      class="@container transform-gpu self-end transition-transform group-has-[a:hover]/list-item:-translate-y-2 group-has-[a:hover]/list-item:drop-shadow-2xl tablet:self-auto"
+                    >
                       <div
-                        class="flex justify-center px-3 pt-6 desktop:pt-8 @min-[200px]:px-[clamp(4px,12cqw,32px)]"
+                        class="flex justify-center px-3 pt-6 tablet:px-0 tablet:pt-0"
                       >
                         <div
-                          class="relative drop-shadow-md after:absolute after:inset-x-0 after:top-0 after:bottom-0 after:z-20 after:rounded-[2.5px] after:bg-default after:opacity-15 after:transition-opacity group-hover/card:after:opacity-0"
+                          class="relative drop-shadow-md after:absolute after:inset-x-0 after:top-0 after:bottom-0 after:z-20 after:rounded-[2.5px] after:bg-default after:opacity-15 after:transition-opacity group-hover/list-item:after:opacity-0"
                         >
                           <div
                             class="relative after:absolute after:top-0 after:left-0 after:z-20 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)] after:bg-size-[100%_100%] after:mix-blend-soft-light undefined"
@@ -780,11 +790,11 @@
                     </div>
                     <div class="@container">
                       <div
-                        class="flex w-full items-center bg-default px-3 pb-8 @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6"
+                        class="flex flex-col items-center px-3 pb-8 tablet:px-0 @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6 @min-[200px]:tablet:px-0"
                       >
                         <div class="flex w-full max-w-[248px] flex-col px-1">
                           <div
-                            class="pt-4 text-base leading-5 font-medium @min-[238px]:text-md"
+                            class="pt-4 text-base leading-5 font-medium @min-[225px]:text-md"
                           >
                             <a
                               class="block after:absolute after:top-0 after:left-0 after:z-60 after:size-full after:opacity-0 hover:text-accent"
@@ -796,7 +806,7 @@
                           <p
                             class="pt-1 font-sans text-xs leading-4 font-light text-subtle"
                           >
-                            <span class="hidden @min-[238px]:inline"
+                            <span class="hidden @min-[225px]:inline"
                               >by<!-- --> </span
                             ><span>Stephen Morris</span>
                           </p>
@@ -806,13 +816,13 @@
                               srcset="/svg/4-half-stars-dark.svg" />
                             <img
                               alt="A-: 4.5 stars (out of 5)"
-                              class="mt-2 h-3 w-15 @min-[238px]:mt-2 @min-[238px]:h-[14px] @min-[238px]:w-[70px]"
+                              class="mt-2 h-3 w-15 @min-[225px]:mt-2 @min-[225px]:h-[14px] @min-[225px]:w-[70px]"
                               height="18"
                               src="/svg/4-half-stars.svg"
                               width="90"
                           /></picture>
                           <div
-                            class="mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle @min-[238px]:tracking-wide"
+                            class="mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle tablet:pt-3 @min-[225px]:tracking-wide"
                           >
                             Nonfiction<!-- -->
                             |
@@ -823,14 +833,16 @@
                     </div>
                   </li>
                   <li
-                    class="group/card relative row-span-2 grid transform-gpu grid-rows-subgrid flex-col gap-y-0 bg-default transition-transform has-[a:hover]:z-10 has-[a:hover]:-translate-y-1 has-[a:hover]:scale-105 has-[a:hover]:drop-shadow-2xl tablet:flex tablet:w-[calc((100%_-_32px)_/_3)] laptop:w-[calc((100%_-_120px)_/_6)]"
+                    class="group/list-item relative row-span-2 grid transform-gpu grid-rows-subgrid flex-col gap-y-0 bg-default transition-transform tablet:flex tablet:w-[calc((100%_-_var(--gaps-width))_/_var(--column-count))] tablet:bg-inherit tablet:[--gaps-width:var(--gap-x)_*_(var(--column-count)_-_1)]"
                   >
-                    <div class="@container self-end tablet:self-auto">
+                    <div
+                      class="@container transform-gpu self-end transition-transform group-has-[a:hover]/list-item:-translate-y-2 group-has-[a:hover]/list-item:drop-shadow-2xl tablet:self-auto"
+                    >
                       <div
-                        class="flex justify-center px-3 pt-6 desktop:pt-8 @min-[200px]:px-[clamp(4px,12cqw,32px)]"
+                        class="flex justify-center px-3 pt-6 tablet:px-0 tablet:pt-0"
                       >
                         <div
-                          class="relative drop-shadow-md after:absolute after:inset-x-0 after:top-0 after:bottom-0 after:z-20 after:rounded-[2.5px] after:bg-default after:opacity-15 after:transition-opacity group-hover/card:after:opacity-0"
+                          class="relative drop-shadow-md after:absolute after:inset-x-0 after:top-0 after:bottom-0 after:z-20 after:rounded-[2.5px] after:bg-default after:opacity-15 after:transition-opacity group-hover/list-item:after:opacity-0"
                         >
                           <div
                             class="relative after:absolute after:top-0 after:left-0 after:z-20 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)] after:bg-size-[100%_100%] after:mix-blend-soft-light undefined"
@@ -861,11 +873,11 @@
                     </div>
                     <div class="@container">
                       <div
-                        class="flex w-full items-center bg-default px-3 pb-8 @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6"
+                        class="flex flex-col items-center px-3 pb-8 tablet:px-0 @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6 @min-[200px]:tablet:px-0"
                       >
                         <div class="flex w-full max-w-[248px] flex-col px-1">
                           <div
-                            class="pt-4 text-base leading-5 font-medium @min-[238px]:text-md"
+                            class="pt-4 text-base leading-5 font-medium @min-[225px]:text-md"
                           >
                             <a
                               class="block after:absolute after:top-0 after:left-0 after:z-60 after:size-full after:opacity-0 hover:text-accent"
@@ -877,7 +889,7 @@
                           <p
                             class="pt-1 font-sans text-xs leading-4 font-light text-subtle"
                           >
-                            <span class="hidden @min-[238px]:inline"
+                            <span class="hidden @min-[225px]:inline"
                               >by<!-- --> </span
                             ><span>Philip Fracassi</span>
                           </p>
@@ -887,13 +899,13 @@
                               srcset="/svg/4-stars-dark.svg" />
                             <img
                               alt="B+: 4 stars (out of 5)"
-                              class="mt-2 h-3 w-15 @min-[238px]:mt-2 @min-[238px]:h-[14px] @min-[238px]:w-[70px]"
+                              class="mt-2 h-3 w-15 @min-[225px]:mt-2 @min-[225px]:h-[14px] @min-[225px]:w-[70px]"
                               height="18"
                               src="/svg/4-stars.svg"
                               width="90"
                           /></picture>
                           <div
-                            class="mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle @min-[238px]:tracking-wide"
+                            class="mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle tablet:pt-3 @min-[225px]:tracking-wide"
                           >
                             Novel<!-- -->
                             |
