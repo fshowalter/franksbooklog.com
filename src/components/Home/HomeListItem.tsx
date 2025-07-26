@@ -41,8 +41,9 @@ export function HomeListItem({
     <li
       className={`
         group/list-item relative row-span-2 grid transform-gpu grid-rows-subgrid
-        flex-col bg-default transition-transform
-        tablet:flex tablet:w-[calc((100%_-_64px)_/_3)] tablet:bg-inherit
+        flex-col items-end bg-default transition-transform
+        tablet:flex tablet:w-[calc((100%_-_64px)_/_3)] tablet:items-stretch
+        tablet:bg-inherit
         min-[905px]:w-[calc((100%_-_108px)_/_4)]
         min-[1208px]:w-[calc((100%_-_180px)_/_6)]
         laptop:w-[calc((100%_-_220px)_/_6)]
@@ -51,10 +52,9 @@ export function HomeListItem({
     >
       <div
         className={`
-          @container transform-gpu self-end transition-transform
+          @container transform-gpu transition-transform
           group-has-[a:hover]/list-item:-translate-y-2
           group-has-[a:hover]/list-item:drop-shadow-2xl
-          tablet:self-auto
         `}
       >
         <div
