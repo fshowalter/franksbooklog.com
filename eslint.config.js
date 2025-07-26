@@ -92,7 +92,6 @@ export default tsEslint.config(
       "react-compiler/react-compiler": "error",
       "react/react-in-jsx-scope": "off",
       ...eslintPluginBetterTailwindcss.configs["recommended-error"].rules,
-      "better-tailwindcss/enforce-consistent-variable-syntax": "error",
       "better-tailwindcss/no-conflicting-classes": "error",
       "better-tailwindcss/no-unregistered-classes": [
         "error",

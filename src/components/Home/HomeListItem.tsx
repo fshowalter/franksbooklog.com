@@ -61,7 +61,6 @@ export function HomeListItem({
           className={`
             z-10 flex justify-center px-3 pt-6
             tablet:px-0 tablet:pt-0
-            desktop:pt-8
           `}
         >
           <div
@@ -96,7 +95,7 @@ export function HomeListItem({
               className={`
                 pt-3 font-sans text-xxs leading-4 font-light whitespace-nowrap
                 text-subtle
-                @min-[238px]:tracking-wide
+                @min-[225px]:tracking-wide
               `}
             >
               {formatDate(value.date)}
@@ -105,7 +104,7 @@ export function HomeListItem({
               className={`
                 pt-2 text-base leading-5 font-medium
                 tablet:pt-3
-                @min-[238px]:pt-2 @min-[238px]:text-md
+                @min-[225px]:pt-2 @min-[225px]:text-md
               `}
             >
               <a
@@ -150,7 +149,7 @@ export function HomeListItem({
             <Grade
               className={`
                 mt-2 h-3 w-15
-                @min-[238px]:mt-2 @min-[238px]:h-[14px] @min-[238px]:w-[70px]
+                @min-[225px]:mt-2 @min-[225px]:h-[14px] @min-[225px]:w-[70px]
               `}
               height={16}
               value={value.grade}
@@ -159,7 +158,7 @@ export function HomeListItem({
               className={`
                 mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle
                 tablet:pt-3
-                @min-[238px]:tracking-wide
+                @min-[225px]:tracking-wide
               `}
             >
               {value.kind} | {value.yearPublished}

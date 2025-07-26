@@ -39,8 +39,9 @@ export function MoreReviews({
   return (
     <nav
       className={`
-        mx-auto w-full max-w-[908px] bg-subtle px-container
-        laptop:max-w-(--breakpoint-desktop) laptop:px-container
+        mx-auto w-full max-w-prose bg-subtle px-container
+        tablet:px-0
+        min-[1208px]:max-w-(--breakpoint-desktop) min-[1208px]:px-container
       `}
       data-page-find-ignore
     >
@@ -49,9 +50,12 @@ export function MoreReviews({
         className={`
           -mx-4 grid auto-rows-[auto_1fr] grid-cols-2 flex-wrap
           gap-x-[clamp(8px,2vw,32px)] gap-y-[clamp(8px,2vw,32px)]
-          tablet:flex tablet:items-baseline tablet:gap-x-4 tablet:gap-y-4
-          laptop:-mx-6 laptop:gap-x-6 laptop:gap-y-6
-          desktop:-mx-8 desktop:gap-y-12
+          tablet:mx-0 tablet:flex tablet:items-baseline
+          tablet:gap-x-[var(--gap-x)] tablet:gap-y-4 tablet:[--column-count:3]
+          tablet:[--gap-x:calc(var(--spacing)_*_10)]
+          min-[1208px]:[--column-count:6]
+          laptop:[--gap-x:calc(var(--spacing)_*_11)]
+          desktop:gap-y-12 desktop:[--gap-x:calc(var(--spacing)_*_16)]
         `}
       >
         {values.map((value) => {
@@ -66,25 +70,26 @@ function MoreReviewsCard({ value }: { value: MoreReviewsValue }): JSX.Element {
   return (
     <li
       className={`
-        group/card relative row-span-2 grid transform-gpu grid-rows-subgrid
+        group/list-item relative row-span-2 grid transform-gpu grid-rows-subgrid
         flex-col gap-y-0 bg-default transition-transform
-        has-[a:hover]:z-10 has-[a:hover]:-translate-y-1 has-[a:hover]:scale-105
-        has-[a:hover]:drop-shadow-2xl
-        tablet:flex tablet:w-[calc((100%_-_32px)_/_3)]
-        laptop:w-[calc((100%_-_120px)_/_6)]
+        tablet:flex
+        tablet:w-[calc((100%_-_var(--gaps-width))_/_var(--column-count))]
+        tablet:bg-inherit
+        tablet:[--gaps-width:var(--gap-x)_*_(var(--column-count)_-_1)]
       `}
     >
       <div
         className={`
-          @container self-end
+          @container transform-gpu self-end transition-transform
+          group-has-[a:hover]/list-item:-translate-y-2
+          group-has-[a:hover]/list-item:drop-shadow-2xl
           tablet:self-auto
         `}
       >
         <div
           className={`
             flex justify-center px-3 pt-6
-            desktop:pt-8
-            @min-[200px]:px-[clamp(4px,12cqw,32px)]
+            tablet:px-0 tablet:pt-0
           `}
         >
           <div
@@ -93,7 +98,7 @@ function MoreReviewsCard({ value }: { value: MoreReviewsValue }): JSX.Element {
               after:absolute after:inset-x-0 after:top-0 after:bottom-0
               after:z-20 after:rounded-[2.5px] after:bg-default after:opacity-15
               after:transition-opacity
-              group-hover/card:after:opacity-0
+              group-hover/list-item:after:opacity-0
             `}
           >
             <Cover
@@ -109,15 +114,17 @@ function MoreReviewsCard({ value }: { value: MoreReviewsValue }): JSX.Element {
       <div className={`@container`}>
         <div
           className={`
-            flex w-full items-center bg-default px-3 pb-8
+            flex flex-col items-center px-3 pb-8
+            tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
+            @min-[200px]:tablet:px-0
           `}
         >
           <div className={`flex w-full max-w-[248px] flex-col px-1`}>
             <div
               className={`
                 pt-4 text-base leading-5 font-medium
-                @min-[238px]:text-md
+                @min-[225px]:text-md
               `}
             >
               <a
@@ -141,7 +148,7 @@ function MoreReviewsCard({ value }: { value: MoreReviewsValue }): JSX.Element {
               <span
                 className={`
                   hidden
-                  @min-[238px]:inline
+                  @min-[225px]:inline
                 `}
               >
                 by{" "}
@@ -162,7 +169,7 @@ function MoreReviewsCard({ value }: { value: MoreReviewsValue }): JSX.Element {
             <Grade
               className={`
                 mt-2 h-3 w-15
-                @min-[238px]:mt-2 @min-[238px]:h-[14px] @min-[238px]:w-[70px]
+                @min-[225px]:mt-2 @min-[225px]:h-[14px] @min-[225px]:w-[70px]
               `}
               height={18}
               value={value.grade}
@@ -177,7 +184,8 @@ function MoreReviewsCard({ value }: { value: MoreReviewsValue }): JSX.Element {
             <div
               className={`
                 mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle
-                @min-[238px]:tracking-wide
+                tablet:pt-3
+                @min-[225px]:tracking-wide
               `}
             >
               {value.kind} | {value.yearPublished}

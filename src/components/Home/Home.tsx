@@ -41,7 +41,7 @@ export function Home({ backdropImageProps, deck, values }: Props): JSX.Element {
             tablet:mx-0 tablet:flex tablet:items-baseline tablet:gap-x-8
             tablet:gap-y-4
             min-[905px]:gap-x-9
-            laptop:gap-x-11 laptop:gap-y-6
+            laptop:gap-x-11
             desktop:gap-x-16 desktop:gap-y-12
           `}
         >
