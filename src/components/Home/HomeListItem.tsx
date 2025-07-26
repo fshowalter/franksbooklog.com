@@ -42,12 +42,10 @@ export function HomeListItem({
       className={`
         group/list-item relative row-span-2 grid transform-gpu grid-rows-subgrid
         flex-col items-end bg-default transition-transform
-        tablet:flex tablet:w-[calc((100%_-_64px)_/_3)] tablet:items-stretch
-        tablet:bg-inherit
-        min-[905px]:w-[calc((100%_-_108px)_/_4)]
-        min-[1208px]:w-[calc((100%_-_180px)_/_6)]
-        laptop:w-[calc((100%_-_220px)_/_6)]
-        desktop:w-[calc((100%_-_320px)_/_6)]
+        tablet:flex
+        tablet:w-[calc((100%_-_var(--gaps-width))_/_var(--column-count))]
+        tablet:items-stretch tablet:bg-inherit
+        tablet:[--gaps-width:var(--gap-x)_*_(var(--column-count)_-_1)]
       `}
     >
       <div
