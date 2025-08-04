@@ -3775,6 +3775,13 @@
     "readings": [
       {
         "sequence": 1,
+        "date": "2018-09-30",
+        "isAudiobook": false,
+        "abandoned": false,
+        "readingTime": 9
+      },
+      {
+        "sequence": 1,
         "date": "2022-06-26",
         "isAudiobook": false,
         "abandoned": false,
