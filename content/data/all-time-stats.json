@@ -1,7 +1,7 @@
 {
   "reviewCount": 85,
-  "workCount": 154,
-  "bookCount": 130,
+  "workCount": 192,
+  "bookCount": 168,
   "gradeDistribution": [
     {
       "name": "A",
@@ -67,19 +67,19 @@
   "kindDistribution": [
     {
       "name": "Anthology",
-      "count": 2
+      "count": 3
     },
     {
       "name": "Collection",
-      "count": 5
+      "count": 11
     },
     {
       "name": "Nonfiction",
-      "count": 48
+      "count": 55
     },
     {
       "name": "Novel",
-      "count": 75
+      "count": 99
     },
     {
       "name": "Novella",
@@ -93,11 +93,11 @@
   "editionDistribution": [
     {
       "name": "Audiobook",
-      "count": 30
+      "count": 31
     },
     {
       "name": "Ebook",
-      "count": 70
+      "count": 106
     },
     {
       "name": "Hardcover",
@@ -105,7 +105,7 @@
     },
     {
       "name": "Paperback",
-      "count": 44
+      "count": 45
     }
   ],
   "decadeDistribution": [
@@ -119,7 +119,7 @@
     },
     {
       "name": "1940s",
-      "count": 2
+      "count": 6
     },
     {
       "name": "1950s",
@@ -127,27 +127,27 @@
     },
     {
       "name": "1960s",
-      "count": 2
+      "count": 4
     },
     {
       "name": "1970s",
-      "count": 20
+      "count": 22
     },
     {
       "name": "1980s",
-      "count": 47
+      "count": 55
     },
     {
       "name": "1990s",
-      "count": 9
+      "count": 16
     },
     {
       "name": "2000s",
-      "count": 12
+      "count": 22
     },
     {
       "name": "2010s",
-      "count": 41
+      "count": 46
     },
     {
       "name": "2020s",
@@ -157,7 +157,7 @@
   "mostReadAuthors": [
     {
       "name": "Richard Laymon",
-      "count": 29,
+      "count": 36,
       "slug": "richard-laymon",
       "readings": [
         {
@@ -417,6 +417,61 @@
         },
         {
           "sequence": 1,
+          "date": "2018-09-03",
+          "slug": "one-rainy-night-by-richard-laymon",
+          "edition": "Ebook",
+          "kind": "Novel",
+          "title": "One Rainy Night",
+          "yearPublished": "1991",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2019-02-10",
+          "slug": "darkness-tell-us-by-richard-laymon",
+          "edition": "Ebook",
+          "kind": "Novel",
+          "title": "Darkness, Tell Us",
+          "yearPublished": "1991",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2019-03-18",
+          "slug": "alarums-by-richard-laymon",
+          "edition": "Ebook",
+          "kind": "Novel",
+          "title": "Alarums",
+          "yearPublished": "1992",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2019-04-11",
+          "slug": "blood-games-by-richard-laymon",
+          "edition": "Ebook",
+          "kind": "Novel",
+          "title": "Blood Games",
+          "yearPublished": "1992",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2019-05-27",
+          "slug": "endless-night-by-richard-laymon",
+          "edition": "Ebook",
+          "kind": "Novel",
+          "title": "Endless Night",
+          "yearPublished": "1993",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
           "date": "2022-03-16",
           "slug": "the-cellar-by-richard-laymon",
           "edition": "Ebook",
@@ -478,6 +533,28 @@
         },
         {
           "sequence": 1,
+          "date": "2025-02-06",
+          "slug": "night-show-by-richard-laymon",
+          "edition": "Ebook",
+          "kind": "Novel",
+          "title": "Night Show",
+          "yearPublished": "1984",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2025-02-09",
+          "slug": "a-writers-tale-by-richard-laymon",
+          "edition": "Ebook",
+          "kind": "Nonfiction",
+          "title": "A Writer's Tale",
+          "yearPublished": "1997",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
           "date": "2025-02-15",
           "slug": "the-lonely-one-by-richard-laymon",
           "edition": "Paperback",
@@ -491,7 +568,7 @@
     },
     {
       "name": "Stephen King",
-      "count": 24,
+      "count": 31,
       "slug": "stephen-king",
       "readings": [
         {
@@ -694,12 +771,89 @@
         },
         {
           "sequence": 1,
+          "date": "2018-10-08",
+          "slug": "skeleton-crew-by-stephen-king",
+          "edition": "Ebook",
+          "kind": "Collection",
+          "title": "Skeleton Crew",
+          "yearPublished": "1985",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2018-12-06",
+          "slug": "it-by-stephen-king",
+          "edition": "Ebook",
+          "kind": "Novel",
+          "title": "It",
+          "yearPublished": "1986",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2019-02-03",
+          "slug": "the-eyes-of-the-dragon-by-stephen-king",
+          "edition": "Ebook",
+          "kind": "Novel",
+          "title": "The Eyes of the Dragon",
+          "yearPublished": "1987",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
           "date": "2019-03-06",
           "slug": "the-gunslinger-by-stephen-king",
           "edition": "Ebook",
           "kind": "Novel",
           "title": "The Gunslinger",
           "yearPublished": "1982",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2019-03-13",
+          "slug": "the-drawing-of-the-three-by-stephen-king",
+          "edition": "Ebook",
+          "kind": "Novel",
+          "title": "The Drawing of the Three",
+          "yearPublished": "1987",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2019-04-03",
+          "slug": "misery-by-stephen-king",
+          "edition": "Ebook",
+          "kind": "Novel",
+          "title": "Misery",
+          "yearPublished": "1987",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2019-05-19",
+          "slug": "the-tommyknockers-by-stephen-king",
+          "edition": "Ebook",
+          "kind": "Novel",
+          "title": "The Tommyknockers",
+          "yearPublished": "1987",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2019-06-20",
+          "slug": "the-dark-half-by-stephen-king",
+          "edition": "Ebook",
+          "kind": "Novel",
+          "title": "The Dark Half",
+          "yearPublished": "1989",
           "includedInSlugs": [],
           "reviewed": false
         },
@@ -962,6 +1116,294 @@
       ]
     },
     {
+      "name": "Charlie Huston",
+      "count": 7,
+      "slug": null,
+      "readings": [
+        {
+          "sequence": 1,
+          "date": "2015-10-23",
+          "slug": "caught-stealing-by-charlie-huston",
+          "edition": "Paperback",
+          "kind": "Novel",
+          "title": "Caught Stealing",
+          "yearPublished": "2004",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2019-01-14",
+          "slug": "already-dead-by-charlie-huston",
+          "edition": "Ebook",
+          "kind": "Novel",
+          "title": "Already Dead",
+          "yearPublished": "2005",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2019-01-20",
+          "slug": "no-dominion-by-charlie-huston",
+          "edition": "Ebook",
+          "kind": "Novel",
+          "title": "No Dominion",
+          "yearPublished": "2007",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2019-01-21",
+          "slug": "half-the-blood-of-brooklyn-by-charlie-huston",
+          "edition": "Ebook",
+          "kind": "Novel",
+          "title": "Half the Blood of Brooklyn",
+          "yearPublished": "2007",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2019-01-27",
+          "slug": "every-last-drop-by-charlie-huston",
+          "edition": "Ebook",
+          "kind": "Novel",
+          "title": "Every Last Drop",
+          "yearPublished": "2008",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2019-01-30",
+          "slug": "my-dead-body-by-charlie-huston",
+          "edition": "Ebook",
+          "kind": "Novel",
+          "title": "My Dead Body",
+          "yearPublished": "2009",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2019-06-07",
+          "slug": "the-shotgun-rule-by-charlie-huston",
+          "edition": "Ebook",
+          "kind": "Novel",
+          "title": "The Shotgun Rule",
+          "yearPublished": "2007",
+          "includedInSlugs": [],
+          "reviewed": false
+        }
+      ]
+    },
+    {
+      "name": "Raymond Chandler",
+      "count": 6,
+      "slug": "raymond-chandler",
+      "readings": [
+        {
+          "sequence": 2,
+          "date": "2016-02-12",
+          "slug": "the-big-sleep-by-raymond-chandler",
+          "edition": "Paperback",
+          "kind": "Novel",
+          "title": "The Big Sleep",
+          "yearPublished": "1939",
+          "includedInSlugs": [],
+          "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2019-02-16",
+          "slug": "farewell-my-lovely-by-raymond-chandler",
+          "edition": "Ebook",
+          "kind": "Novel",
+          "title": "Farewell, My Lovely",
+          "yearPublished": "1940",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2019-03-23",
+          "slug": "the-high-window-by-raymond-chandler",
+          "edition": "Ebook",
+          "kind": "Novel",
+          "title": "The High Window",
+          "yearPublished": "1942",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2019-04-14",
+          "slug": "the-lady-in-the-lake-by-raymond-chandler",
+          "edition": "Ebook",
+          "kind": "Novel",
+          "title": "The Lady in the Lake",
+          "yearPublished": "1943",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2019-06-01",
+          "slug": "the-little-sister-by-raymond-chandler",
+          "edition": "Ebook",
+          "kind": "Novel",
+          "title": "The Little Sister",
+          "yearPublished": "1949",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2022-09-24",
+          "slug": "the-big-sleep-by-raymond-chandler",
+          "edition": "Audiobook",
+          "kind": "Novel",
+          "title": "The Big Sleep",
+          "yearPublished": "1939",
+          "includedInSlugs": [],
+          "reviewed": true
+        }
+      ]
+    },
+    {
+      "name": "Robert E. Howard",
+      "count": 4,
+      "slug": null,
+      "readings": [
+        {
+          "sequence": 1,
+          "date": "2019-03-02",
+          "slug": "black-canaan-by-robert-e-howard",
+          "edition": "Paperback",
+          "kind": "Collection",
+          "title": "Black Canaan",
+          "yearPublished": "1978",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 2,
+          "date": "2019-03-02",
+          "slug": "the-horror-stories-of-robert-e-howard-by-robert-e-howard",
+          "edition": "Ebook",
+          "kind": "Collection",
+          "title": "The Horror Stories of Robert E. Howard",
+          "yearPublished": "2008",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2019-03-27",
+          "slug": "kull-exile-of-atlantis-by-robert-e-howard",
+          "edition": "Ebook",
+          "kind": "Collection",
+          "title": "Kull: Exile of Atlantis",
+          "yearPublished": "1967",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2019-04-28",
+          "slug": "the-coming-of-conan-the-cimmerian-by-robert-e-howard",
+          "edition": "Ebook",
+          "kind": "Collection",
+          "title": "The Coming of Conan the Cimmerian",
+          "yearPublished": "2002",
+          "includedInSlugs": [],
+          "reviewed": false
+        }
+      ]
+    },
+    {
+      "name": "Jocko Willink",
+      "count": 3,
+      "slug": "jocko-willink",
+      "readings": [
+        {
+          "sequence": 1,
+          "date": "2018-09-30",
+          "slug": "extreme-ownership-by-jocko-willink-leif-babin",
+          "edition": "Ebook",
+          "kind": "Nonfiction",
+          "title": "Extreme Ownership",
+          "yearPublished": "2015",
+          "includedInSlugs": [],
+          "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2018-10-20",
+          "slug": "discipline-equals-freedom-by-jocko-willink",
+          "edition": "Ebook",
+          "kind": "Nonfiction",
+          "title": "Discipline Equals Freedom",
+          "yearPublished": "2017",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2022-06-26",
+          "slug": "extreme-ownership-by-jocko-willink-leif-babin",
+          "edition": "Audiobook",
+          "kind": "Nonfiction",
+          "title": "Extreme Ownership",
+          "yearPublished": "2015",
+          "includedInSlugs": [],
+          "reviewed": true
+        }
+      ]
+    },
+    {
+      "name": "Jeff Gelb",
+      "count": 3,
+      "slug": null,
+      "readings": [
+        {
+          "sequence": 1,
+          "date": "2018-01-05",
+          "slug": "hot-blood-by-jeff-gelb-lonn-m-friend",
+          "edition": "Ebook",
+          "kind": "Anthology",
+          "title": "Hot Blood",
+          "yearPublished": "1989",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 2,
+          "date": "2018-07-17",
+          "slug": "hotter-blood-by-jeff-gelb-michael-garrett",
+          "edition": "Ebook",
+          "kind": "Anthology",
+          "title": "Hotter Blood",
+          "yearPublished": "1991",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2018-12-29",
+          "slug": "hottest-blood-by-jeff-gelb-michael-garrett",
+          "edition": "Ebook",
+          "kind": "Anthology",
+          "title": "Hottest Blood",
+          "yearPublished": "1993",
+          "includedInSlugs": [],
+          "reviewed": false
+        }
+      ]
+    },
+    {
       "name": "James Kaplan",
       "count": 3,
       "slug": null,
@@ -1038,162 +1480,6 @@
           "yearPublished": "2020",
           "includedInSlugs": [],
           "reviewed": true
-        }
-      ]
-    },
-    {
-      "name": "Ian Fleming",
-      "count": 3,
-      "slug": "ian-fleming",
-      "readings": [
-        {
-          "sequence": 2,
-          "date": "2022-06-14",
-          "slug": "casino-royale-by-ian-fleming",
-          "edition": "Ebook",
-          "kind": "Novel",
-          "title": "Casino Royale",
-          "yearPublished": "1953",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "sequence": 1,
-          "date": "2022-06-30",
-          "slug": "live-and-let-die-by-ian-fleming",
-          "edition": "Ebook",
-          "kind": "Novel",
-          "title": "Live and Let Die",
-          "yearPublished": "1954",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "sequence": 1,
-          "date": "2022-10-16",
-          "slug": "moonraker-by-ian-fleming",
-          "edition": "Audiobook",
-          "kind": "Novel",
-          "title": "Moonraker",
-          "yearPublished": "1955",
-          "includedInSlugs": [],
-          "reviewed": true
-        }
-      ]
-    },
-    {
-      "name": "Chuck Palahniuk",
-      "count": 2,
-      "slug": "chuck-palahniuk",
-      "readings": [
-        {
-          "sequence": 1,
-          "date": "2022-07-16",
-          "slug": "fight-club-by-chuck-palahniuk",
-          "edition": "Audiobook",
-          "kind": "Novel",
-          "title": "Fight Club",
-          "yearPublished": "1996",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "sequence": 1,
-          "date": "2022-09-22",
-          "slug": "consider-this-by-chuck-palahniuk",
-          "edition": "Audiobook",
-          "kind": "Nonfiction",
-          "title": "Consider This",
-          "yearPublished": "2020",
-          "includedInSlugs": [],
-          "reviewed": true
-        }
-      ]
-    },
-    {
-      "name": "Raymond Chandler",
-      "count": 2,
-      "slug": "raymond-chandler",
-      "readings": [
-        {
-          "sequence": 2,
-          "date": "2016-02-12",
-          "slug": "the-big-sleep-by-raymond-chandler",
-          "edition": "Paperback",
-          "kind": "Novel",
-          "title": "The Big Sleep",
-          "yearPublished": "1939",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "sequence": 1,
-          "date": "2022-09-24",
-          "slug": "the-big-sleep-by-raymond-chandler",
-          "edition": "Audiobook",
-          "kind": "Novel",
-          "title": "The Big Sleep",
-          "yearPublished": "1939",
-          "includedInSlugs": [],
-          "reviewed": true
-        }
-      ]
-    },
-    {
-      "name": "Bret Easton Ellis",
-      "count": 2,
-      "slug": "bret-easton-ellis",
-      "readings": [
-        {
-          "sequence": 1,
-          "date": "2022-04-02",
-          "slug": "less-than-zero-by-bret-easton-ellis",
-          "edition": "Ebook",
-          "kind": "Novel",
-          "title": "Less Than Zero",
-          "yearPublished": "1985",
-          "includedInSlugs": [],
-          "reviewed": true
-        },
-        {
-          "sequence": 1,
-          "date": "2022-07-14",
-          "slug": "the-rules-of-attraction-by-bret-easton-ellis",
-          "edition": "Ebook",
-          "kind": "Novel",
-          "title": "The Rules of Attraction",
-          "yearPublished": "1987",
-          "includedInSlugs": [],
-          "reviewed": true
-        }
-      ]
-    },
-    {
-      "name": "Roger Ebert",
-      "count": 2,
-      "slug": null,
-      "readings": [
-        {
-          "sequence": 1,
-          "date": "2014-12-30",
-          "slug": "the-great-movies-by-roger-ebert",
-          "edition": "Paperback",
-          "kind": "Nonfiction",
-          "title": "The Great Movies",
-          "yearPublished": "2002",
-          "includedInSlugs": [],
-          "reviewed": false
-        },
-        {
-          "sequence": 1,
-          "date": "2017-11-08",
-          "slug": "life-itself-by-roger-ebert",
-          "edition": "Ebook",
-          "kind": "Nonfiction",
-          "title": "Life Itself",
-          "yearPublished": "2011",
-          "includedInSlugs": [],
-          "reviewed": false
         }
       ]
     }

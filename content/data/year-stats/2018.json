@@ -1,29 +1,33 @@
 {
   "year": "2018",
-  "workCount": 20,
-  "bookCount": 20,
+  "workCount": 31,
+  "bookCount": 31,
   "kindDistribution": [
     {
       "name": "Anthology",
-      "count": 2
+      "count": 3
     },
     {
       "name": "Collection",
-      "count": 1
+      "count": 2
     },
     {
       "name": "Nonfiction",
-      "count": 6
+      "count": 11
     },
     {
       "name": "Novel",
-      "count": 11
+      "count": 15
     }
   ],
   "editionDistribution": [
     {
+      "name": "Audiobook",
+      "count": 1
+    },
+    {
       "name": "Ebook",
-      "count": 19
+      "count": 29
     },
     {
       "name": "Hardcover",
@@ -45,25 +49,25 @@
     },
     {
       "name": "1980s",
-      "count": 9
+      "count": 11
     },
     {
       "name": "1990s",
-      "count": 3
+      "count": 5
     },
     {
       "name": "2000s",
-      "count": 1
+      "count": 3
     },
     {
       "name": "2010s",
-      "count": 4
+      "count": 9
     }
   ],
   "mostReadAuthors": [
     {
       "name": "Richard Laymon",
-      "count": 4,
+      "count": 5,
       "slug": "richard-laymon",
       "readings": [
         {
@@ -109,12 +113,23 @@
           "yearPublished": "1990",
           "includedInSlugs": [],
           "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2018-09-03",
+          "slug": "one-rainy-night-by-richard-laymon",
+          "edition": "Ebook",
+          "kind": "Novel",
+          "title": "One Rainy Night",
+          "yearPublished": "1991",
+          "includedInSlugs": [],
+          "reviewed": false
         }
       ]
     },
     {
       "name": "Stephen King",
-      "count": 3,
+      "count": 5,
       "slug": "stephen-king",
       "readings": [
         {
@@ -149,12 +164,34 @@
           "yearPublished": "1984",
           "includedInSlugs": [],
           "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2018-10-08",
+          "slug": "skeleton-crew-by-stephen-king",
+          "edition": "Ebook",
+          "kind": "Collection",
+          "title": "Skeleton Crew",
+          "yearPublished": "1985",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2018-12-06",
+          "slug": "it-by-stephen-king",
+          "edition": "Ebook",
+          "kind": "Novel",
+          "title": "It",
+          "yearPublished": "1986",
+          "includedInSlugs": [],
+          "reviewed": false
         }
       ]
     },
     {
       "name": "Jeff Gelb",
-      "count": 2,
+      "count": 3,
       "slug": null,
       "readings": [
         {
@@ -176,6 +213,75 @@
           "kind": "Anthology",
           "title": "Hotter Blood",
           "yearPublished": "1991",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2018-12-29",
+          "slug": "hottest-blood-by-jeff-gelb-michael-garrett",
+          "edition": "Ebook",
+          "kind": "Anthology",
+          "title": "Hottest Blood",
+          "yearPublished": "1993",
+          "includedInSlugs": [],
+          "reviewed": false
+        }
+      ]
+    },
+    {
+      "name": "Jocko Willink",
+      "count": 2,
+      "slug": "jocko-willink",
+      "readings": [
+        {
+          "sequence": 1,
+          "date": "2018-09-30",
+          "slug": "extreme-ownership-by-jocko-willink-leif-babin",
+          "edition": "Ebook",
+          "kind": "Nonfiction",
+          "title": "Extreme Ownership",
+          "yearPublished": "2015",
+          "includedInSlugs": [],
+          "reviewed": true
+        },
+        {
+          "sequence": 1,
+          "date": "2018-10-20",
+          "slug": "discipline-equals-freedom-by-jocko-willink",
+          "edition": "Ebook",
+          "kind": "Nonfiction",
+          "title": "Discipline Equals Freedom",
+          "yearPublished": "2017",
+          "includedInSlugs": [],
+          "reviewed": false
+        }
+      ]
+    },
+    {
+      "name": "Michael Garrett",
+      "count": 2,
+      "slug": null,
+      "readings": [
+        {
+          "sequence": 2,
+          "date": "2018-07-17",
+          "slug": "hotter-blood-by-jeff-gelb-michael-garrett",
+          "edition": "Ebook",
+          "kind": "Anthology",
+          "title": "Hotter Blood",
+          "yearPublished": "1991",
+          "includedInSlugs": [],
+          "reviewed": false
+        },
+        {
+          "sequence": 1,
+          "date": "2018-12-29",
+          "slug": "hottest-blood-by-jeff-gelb-michael-garrett",
+          "edition": "Ebook",
+          "kind": "Anthology",
+          "title": "Hottest Blood",
+          "yearPublished": "1993",
           "includedInSlugs": [],
           "reviewed": false
         }
