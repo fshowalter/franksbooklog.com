@@ -60,7 +60,7 @@ Replaces Gatsby's GraphQL with TypeScript functions that:
 
 #### API Data Layer (`/src/api/data/`)
 
-Responsible for validating and loading the data files in `/content/data/` only. The functions in `/src/api/` further enrich and transform this data, while the `getProps` functions in `/src/components/` are responsbile for getting component props and ensuring we don't overfetch.
+Responsible for validating and loading the data files in `/content/data/` only. The functions in `/src/api/` further enrich and transform this data, while the `getProps` functions in `/src/components/` are responsible for getting component props and ensuring we don't overfetch.
 
 ### Component Structure
 
