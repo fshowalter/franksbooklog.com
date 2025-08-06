@@ -25,6 +25,7 @@ export default {
         ignoreFunctions: ["theme"],
       },
     ],
+    "nesting-selector-no-missing-scoping-root": null,
     "no-descending-specificity": null,
     "order/order": [["custom-properties", "declarations", "rules", "at-rules"]],
     "order/properties-order": [["all"], { unspecified: "bottomAlphabetical" }],
