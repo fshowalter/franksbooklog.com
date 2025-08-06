@@ -52,7 +52,7 @@ export function Home({ backdropImageProps, deck, values }: Props): JSX.Element {
             return (
               <HomeListItem
                 eagerLoadCoverImage={index === 0}
-                key={value.sequence}
+                key={value.reviewSequence}
                 value={value}
               />
             );

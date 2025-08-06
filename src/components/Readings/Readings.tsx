@@ -26,8 +26,8 @@ export type ListItemValue = Pick<
   | "kind"
   | "progress"
   | "reviewed"
-  | "sequence"
   | "slug"
+  | "timelineSequence"
   | "title"
   | "yearPublished"
 > & {
@@ -192,7 +192,7 @@ function DateListItem({
         `}
       >
         {values.map((value) => {
-          return <ReadingListItem key={value.sequence} value={value} />;
+          return <ReadingListItem key={value.timelineSequence} value={value} />;
         })}
       </ul>
     </li>

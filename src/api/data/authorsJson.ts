@@ -25,10 +25,14 @@ const WorkSchema = z.object({
   gradeValue: z.number(),
   includedInSlugs: z.array(z.string()),
   kind: WorkKindSchema,
+  reviewDate: z.string(),
+  reviewSequence: z.string(),
   slug: z.string(),
   sortTitle: z.string(),
+  subtitle: nullableString(),
   title: z.string(),
   yearPublished: z.string(),
+  yearReviewed: z.number(),
 });
 
 const AuthorJsonSchema = z.object({

@@ -59,7 +59,6 @@
       "slug": "richard-laymon",
       "readings": [
         {
-          "sequence": 1,
           "date": "2014-02-24",
           "slug": "the-cellar-by-richard-laymon",
           "edition": "Paperback",
@@ -67,10 +66,10 @@
           "title": "The Cellar",
           "yearPublished": "1980",
           "includedInSlugs": [],
-          "reviewed": true
+          "reviewed": true,
+          "readingSequence": 1
         },
         {
-          "sequence": 1,
           "date": "2014-03-12",
           "slug": "your-secret-admirer-by-richard-laymon",
           "edition": "Paperback",
@@ -78,10 +77,10 @@
           "title": "Your Secret Admirer",
           "yearPublished": "1980",
           "includedInSlugs": [],
-          "reviewed": false
+          "reviewed": false,
+          "readingSequence": 1
         },
         {
-          "sequence": 1,
           "date": "2014-03-18",
           "slug": "the-woods-are-dark-by-richard-laymon",
           "edition": "Paperback",
@@ -89,10 +88,10 @@
           "title": "The Woods Are Dark",
           "yearPublished": "1981",
           "includedInSlugs": [],
-          "reviewed": true
+          "reviewed": true,
+          "readingSequence": 1
         },
         {
-          "sequence": 1,
           "date": "2014-04-05",
           "slug": "nightmare-lake-by-richard-laymon",
           "edition": "Paperback",
@@ -100,10 +99,10 @@
           "title": "Nightmare Lake",
           "yearPublished": "1983",
           "includedInSlugs": [],
-          "reviewed": false
+          "reviewed": false,
+          "readingSequence": 1
         },
         {
-          "sequence": 1,
           "date": "2014-04-11",
           "slug": "the-lawmen-by-richard-laymon",
           "edition": "Paperback",
@@ -111,10 +110,10 @@
           "title": "The Lawmen",
           "yearPublished": "1983",
           "includedInSlugs": [],
-          "reviewed": false
+          "reviewed": false,
+          "readingSequence": 1
         },
         {
-          "sequence": 1,
           "date": "2014-04-28",
           "slug": "out-are-the-lights-by-richard-laymon",
           "edition": "Paperback",
@@ -124,10 +123,10 @@
           "includedInSlugs": [
             "out-are-the-lights-and-other-tales-by-richard-laymon"
           ],
-          "reviewed": true
+          "reviewed": true,
+          "readingSequence": 1
         },
         {
-          "sequence": 1,
           "date": "2014-05-21",
           "slug": "night-show-by-richard-laymon",
           "edition": "Paperback",
@@ -135,10 +134,10 @@
           "title": "Night Show",
           "yearPublished": "1984",
           "includedInSlugs": [],
-          "reviewed": false
+          "reviewed": false,
+          "readingSequence": 1
         },
         {
-          "sequence": 1,
           "date": "2014-06-09",
           "slug": "shootout-at-joes-by-richard-laymon",
           "edition": "Paperback",
@@ -146,10 +145,10 @@
           "title": "Shootout at Joe's",
           "yearPublished": "1984",
           "includedInSlugs": [],
-          "reviewed": false
+          "reviewed": false,
+          "readingSequence": 1
         },
         {
-          "sequence": 2,
           "date": "2014-06-09",
           "slug": "dawsons-city-by-richard-laymon",
           "edition": "Paperback",
@@ -157,10 +156,10 @@
           "title": "Dawson's City",
           "yearPublished": "1984",
           "includedInSlugs": [],
-          "reviewed": false
+          "reviewed": false,
+          "readingSequence": 2
         },
         {
-          "sequence": 2,
           "date": "2014-06-09",
           "slug": "allhallows-eve-by-richard-laymon",
           "edition": "Paperback",
@@ -168,10 +167,10 @@
           "title": "Allhallow's Eve",
           "yearPublished": "1986",
           "includedInSlugs": [],
-          "reviewed": false
+          "reviewed": false,
+          "readingSequence": 2
         },
         {
-          "sequence": 1,
           "date": "2014-06-27",
           "slug": "beware-by-richard-laymon",
           "edition": "Paperback",
@@ -179,10 +178,10 @@
           "title": "Beware!",
           "yearPublished": "1985",
           "includedInSlugs": [],
-          "reviewed": true
+          "reviewed": true,
+          "readingSequence": 1
         },
         {
-          "sequence": 1,
           "date": "2014-07-13",
           "slug": "the-last-hand-by-richard-laymon",
           "edition": "Paperback",
@@ -190,10 +189,10 @@
           "title": "The Last Hand",
           "yearPublished": "1985",
           "includedInSlugs": [],
-          "reviewed": true
+          "reviewed": true,
+          "readingSequence": 1
         },
         {
-          "sequence": 1,
           "date": "2014-07-22",
           "slug": "the-beast-house-by-richard-laymon",
           "edition": "Paperback",
@@ -201,10 +200,10 @@
           "title": "The Beast House",
           "yearPublished": "1986",
           "includedInSlugs": [],
-          "reviewed": false
+          "reviewed": false,
+          "readingSequence": 1
         },
         {
-          "sequence": 1,
           "date": "2014-07-23",
           "slug": "the-intruder-by-richard-laymon",
           "edition": "Paperback",
@@ -212,10 +211,10 @@
           "title": "The Intruder",
           "yearPublished": "1984",
           "includedInSlugs": [],
-          "reviewed": true
+          "reviewed": true,
+          "readingSequence": 1
         },
         {
-          "sequence": 1,
           "date": "2014-09-21",
           "slug": "tread-softly-by-richard-laymon",
           "edition": "Paperback",
@@ -223,10 +222,10 @@
           "title": "Tread Softly",
           "yearPublished": "1987",
           "includedInSlugs": [],
-          "reviewed": true
+          "reviewed": true,
+          "readingSequence": 1
         },
         {
-          "sequence": 1,
           "date": "2014-10-28",
           "slug": "the-lonely-one-by-richard-laymon",
           "edition": "Paperback",
@@ -234,10 +233,10 @@
           "title": "The Lonely One",
           "yearPublished": "1985",
           "includedInSlugs": [],
-          "reviewed": true
+          "reviewed": true,
+          "readingSequence": 1
         },
         {
-          "sequence": 1,
           "date": "2014-11-02",
           "slug": "live-bait-by-richard-laymon",
           "edition": "Paperback",
@@ -245,7 +244,8 @@
           "title": "Live Bait",
           "yearPublished": "1985",
           "includedInSlugs": [],
-          "reviewed": false
+          "reviewed": false,
+          "readingSequence": 1
         }
       ]
     },
@@ -255,7 +255,6 @@
       "slug": "stephen-king",
       "readings": [
         {
-          "sequence": 1,
           "date": "2014-03-02",
           "slug": "the-stand-by-stephen-king",
           "edition": "Paperback",
@@ -263,10 +262,10 @@
           "title": "The Stand",
           "yearPublished": "1978",
           "includedInSlugs": [],
-          "reviewed": true
+          "reviewed": true,
+          "readingSequence": 1
         },
         {
-          "sequence": 1,
           "date": "2014-03-09",
           "slug": "the-long-walk-by-stephen-king",
           "edition": "Paperback",
@@ -274,10 +273,10 @@
           "title": "The Long Walk",
           "yearPublished": "1978",
           "includedInSlugs": [],
-          "reviewed": true
+          "reviewed": true,
+          "readingSequence": 1
         },
         {
-          "sequence": 1,
           "date": "2014-04-04",
           "slug": "the-dead-zone-by-stephen-king",
           "edition": "Paperback",
@@ -285,10 +284,10 @@
           "title": "The Dead Zone",
           "yearPublished": "1979",
           "includedInSlugs": [],
-          "reviewed": false
+          "reviewed": false,
+          "readingSequence": 1
         },
         {
-          "sequence": 1,
           "date": "2014-04-22",
           "slug": "firestarter-by-stephen-king",
           "edition": "Kindle",
@@ -296,10 +295,10 @@
           "title": "Firestarter",
           "yearPublished": "1980",
           "includedInSlugs": [],
-          "reviewed": false
+          "reviewed": false,
+          "readingSequence": 1
         },
         {
-          "sequence": 1,
           "date": "2014-05-11",
           "slug": "roadwork-by-stephen-king",
           "edition": "Paperback",
@@ -307,10 +306,10 @@
           "title": "Roadwork",
           "yearPublished": "1980",
           "includedInSlugs": [],
-          "reviewed": false
+          "reviewed": false,
+          "readingSequence": 1
         },
         {
-          "sequence": 1,
           "date": "2014-06-04",
           "slug": "danse-macabre-by-stephen-king",
           "edition": "Kindle",
@@ -318,10 +317,10 @@
           "title": "Danse Macabre",
           "yearPublished": "1981",
           "includedInSlugs": [],
-          "reviewed": false
+          "reviewed": false,
+          "readingSequence": 1
         },
         {
-          "sequence": 4,
           "date": "2014-06-17",
           "slug": "cujo-by-stephen-king",
           "edition": "Kindle",
@@ -329,10 +328,10 @@
           "title": "Cujo",
           "yearPublished": "1981",
           "includedInSlugs": [],
-          "reviewed": true
+          "reviewed": true,
+          "readingSequence": 4
         },
         {
-          "sequence": 1,
           "date": "2014-07-10",
           "slug": "the-running-man-by-stephen-king",
           "edition": "Paperback",
@@ -340,10 +339,10 @@
           "title": "The Running Man",
           "yearPublished": "1981",
           "includedInSlugs": [],
-          "reviewed": false
+          "reviewed": false,
+          "readingSequence": 1
         },
         {
-          "sequence": 1,
           "date": "2014-08-05",
           "slug": "the-gunslinger-by-stephen-king",
           "edition": "Paperback",
@@ -351,10 +350,10 @@
           "title": "The Gunslinger",
           "yearPublished": "1982",
           "includedInSlugs": [],
-          "reviewed": false
+          "reviewed": false,
+          "readingSequence": 1
         },
         {
-          "sequence": 1,
           "date": "2014-10-27",
           "slug": "different-seasons-by-stephen-king",
           "edition": "Paperback",
@@ -362,7 +361,8 @@
           "title": "Different Seasons",
           "yearPublished": "1982",
           "includedInSlugs": [],
-          "reviewed": false
+          "reviewed": false,
+          "readingSequence": 1
         }
       ]
     }

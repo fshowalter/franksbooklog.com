@@ -151,7 +151,7 @@ export function Review({
           <ul>
             {value.readings.map((value) => (
               <ReadingHistoryListItem
-                key={`${value.date.toISOString()}-${value.sequence}`}
+                key={`${value.date.toISOString()}-${value.readingSequence}`}
                 value={value}
               />
             ))}

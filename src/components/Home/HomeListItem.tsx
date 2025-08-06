@@ -18,11 +18,11 @@ export const CoverImageConfig = {
 export type ListItemValue = Pick<
   ReviewWithExcerpt,
   | "authors"
-  | "date"
   | "excerpt"
   | "grade"
   | "kind"
-  | "sequence"
+  | "reviewDate"
+  | "reviewSequence"
   | "slug"
   | "title"
   | "yearPublished"
@@ -96,7 +96,7 @@ export function HomeListItem({
                 @min-[225px]:tracking-wide
               `}
             >
-              {formatDate(value.date)}
+              {formatDate(value.reviewDate)}
             </div>
             <div
               className={`
@@ -168,8 +168,8 @@ export function HomeListItem({
   );
 }
 
-function formatDate(reviewDate: Date) {
-  return reviewDate.toLocaleString("en-GB", {
+function formatDate(reviewDate: string) {
+  return new Date(reviewDate).toLocaleString("en-GB", {
     day: "2-digit",
     month: "short",
     timeZone: "UTC",

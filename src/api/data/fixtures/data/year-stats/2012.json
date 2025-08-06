@@ -43,7 +43,6 @@
       "slug": "stephen-king",
       "readings": [
         {
-          "sequence": 1,
           "date": "2012-05-13",
           "slug": "rage-by-stephen-king",
           "edition": "Paperback",
@@ -51,10 +50,10 @@
           "title": "Rage",
           "yearPublished": "1976",
           "includedInSlugs": [],
-          "reviewed": true
+          "reviewed": true,
+          "readingSequence": 1
         },
         {
-          "sequence": 1,
           "date": "2012-05-14",
           "slug": "night-shift-by-stephen-king",
           "edition": "Paperback",
@@ -62,7 +61,8 @@
           "title": "Night Shift",
           "yearPublished": "1978",
           "includedInSlugs": [],
-          "reviewed": true
+          "reviewed": true,
+          "readingSequence": 1
         }
       ]
     }
