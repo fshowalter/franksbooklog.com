@@ -1,5 +1,39 @@
 [
   {
+    "slug": "2001-a-space-odyssey-by-arthur-c-clarke",
+    "title": "2001: A Space Odyssey",
+    "subtitle": null,
+    "sortTitle": "2001: A Space Odyssey",
+    "yearPublished": "1968",
+    "grade": "A+",
+    "gradeValue": 13,
+    "kind": "Novel",
+    "authors": [
+      {
+        "slug": "arthur-c-clarke",
+        "notes": null,
+        "name": "Arthur C. Clarke",
+        "sortName": "Clarke, Arthur C."
+      }
+    ],
+    "readings": [
+      {
+        "date": "2024-01-15",
+        "isAudiobook": false,
+        "abandoned": false,
+        "readingTime": 7,
+        "readingSequence": 1
+      }
+    ],
+    "includedInSlugs": [],
+    "yearReviewed": 2024,
+    "reviewDate": "2024-01-15",
+    "reviewSequence": "2024-01-15-1",
+    "moreByAuthors": [],
+    "moreReviews": [],
+    "includedWorks": []
+  },
+  {
     "slug": "about-face-by-david-h-hackworth-julie-sherman",
     "title": "About Face",
     "subtitle": "The Odyssey of an American Warrior",

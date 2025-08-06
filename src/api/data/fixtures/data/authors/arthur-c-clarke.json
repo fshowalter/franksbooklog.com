@@ -1,0 +1,22 @@
+{
+  "slug": "arthur-c-clarke",
+  "name": "Arthur C. Clarke",
+  "sortName": "Clarke, Arthur C.",
+  "reviewedWorkCount": 1,
+  "workCount": 1,
+  "distinctKinds": ["Novel"],
+  "distinctPublishedYears": ["1968"],
+  "reviewedWorks": [
+    {
+      "slug": "2001-a-space-odyssey-by-arthur-c-clarke",
+      "title": "2001: A Space Odyssey",
+      "subtitle": null,
+      "grade": "A+",
+      "gradeValue": 13,
+      "yearPublished": "1968",
+      "sortTitle": "2001: A Space Odyssey",
+      "kind": "Novel",
+      "includedWorksCount": 0
+    }
+  ]
+}

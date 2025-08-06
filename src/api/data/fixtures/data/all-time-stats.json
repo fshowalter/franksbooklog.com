@@ -1,8 +1,13 @@
 {
-  "reviewCount": 81,
-  "workCount": 133,
-  "bookCount": 112,
+  "reviewCount": 82,
+  "workCount": 134,
+  "bookCount": 113,
   "gradeDistribution": [
+    {
+      "name": "A+",
+      "count": 1,
+      "sortValue": 13
+    },
     {
       "name": "A",
       "count": 3,

@@ -30,7 +30,7 @@ npm run format       # Check Prettier formatting
 npm run format:fix   # Fix formatting issues
 npm run stylelint    # Run Stylelint on CSS
 npm run stylelint:fix # Fix Stylelint issues
-npm run check        # Run Astro type checking
+npm run check        # Astro type checking
 npm run knip         # Check for unused dependencies/exports
 
 # Content Management
@@ -119,3 +119,27 @@ Pagefind integration builds search index at build time and serves it in dev mode
 - Node: 22.18.0
 - NPM: 11.5.2
   (Managed via .nvmrc)
+
+## Testing Principles
+
+### Testing Principles
+
+- The purpose of tests is to tell me two things:
+  1. Will this dependency update break the site?
+  2. Will this change cause other, unintended changes?
+- Rely on snapshot tests as all websites boil down to text output
+- Two primary testing strategies:
+  - **Pure Static Pages**:
+    - Simple snapshot tests at both Astro page level and page component level
+    - Astro level checks Astro code
+    - Page-component level checks prop permutations
+  - **Interactive Pages**:
+    - Snapshots at Astro level
+    - Snapshot tests at page component level using testing library
+    - Exercise interactive elements like a user
+  - Goal: By exercising all options and rendering all permutations, any uncovered code must be dead code safe to remove
+
+### Test Coverage Commands
+
+- Add flag to run test coverage with specified max-workers:
+  - `npm run test:coverage -- --max-workers=2`
