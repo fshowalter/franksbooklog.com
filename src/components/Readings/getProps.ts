@@ -29,6 +29,8 @@ export async function getProps(): Promise<Props> {
         authors: entry.authors.map((author) => {
           const authorValue: ListItemValue["authors"][0] = {
             name: author.name,
+            slug: author.slug,
+            sortName: author.sortName,
           };
 
           return authorValue;
@@ -57,8 +59,8 @@ export async function getProps(): Promise<Props> {
           year: "numeric",
         }),
         reviewed: entry.reviewed,
-        sequence: entry.timelineSequence,
         slug: entry.slug,
+        timelineSequence: entry.timelineSequence,
         title: entry.title,
         yearPublished: entry.yearPublished,
       };
