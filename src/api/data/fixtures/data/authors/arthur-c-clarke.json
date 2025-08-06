@@ -8,15 +8,26 @@
   "distinctPublishedYears": ["1968"],
   "reviewedWorks": [
     {
-      "slug": "2001-a-space-odyssey-by-arthur-c-clarke",
-      "title": "2001: A Space Odyssey",
-      "subtitle": null,
+      "authors": [
+        {
+          "name": "Arthur C. Clarke",
+          "notes": null,
+          "slug": "arthur-c-clarke",
+          "sortName": "Clarke, Arthur C."
+        }
+      ],
       "grade": "A+",
       "gradeValue": 13,
-      "yearPublished": "1968",
-      "sortTitle": "2001: A Space Odyssey",
+      "includedInSlugs": [],
       "kind": "Novel",
-      "includedWorksCount": 0
+      "reviewDate": "2025-01-15",
+      "reviewSequence": "0001",
+      "slug": "2001-a-space-odyssey-by-arthur-c-clarke",
+      "sortTitle": "2001: A Space Odyssey",
+      "subtitle": null,
+      "title": "2001: A Space Odyssey",
+      "yearPublished": "1968",
+      "yearReviewed": 2025
     }
   ]
 }
