@@ -8,18 +8,20 @@ const timelineEntriesJsonFile = getContentPath("data", "timeline-entries.json");
 
 const AuthorSchema = z.object({
   name: z.string(),
+  slug: z.string(),
+  sortName: z.string(),
 });
 
 const TimelineEntryJsonSchema = z.object({
   authors: z.array(AuthorSchema),
-  date: z.coerce.date(),
   edition: z.string(),
   includedInSlugs: z.array(z.string()),
   kind: WorkKindSchema,
   progress: z.string(),
   reviewed: z.boolean(),
-  sequence: z.string(),
   slug: z.string(),
+  timelineDate: z.string(),
+  timelineSequence: z.string(),
   title: z.string(),
   yearPublished: z.string(),
 });

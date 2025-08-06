@@ -59,7 +59,7 @@
       "slug": "stephen-morris",
       "readings": [
         {
-          "sequence": 1,
+          "readingSequence": 1,
           "date": "2023-11-11",
           "slug": "record-play-pause-by-stephen-morris",
           "edition": "Audiobook",
@@ -70,7 +70,7 @@
           "reviewed": true
         },
         {
-          "sequence": 1,
+          "readingSequence": 1,
           "date": "2023-12-09",
           "slug": "fast-forward-by-stephen-morris",
           "edition": "Audiobook",
@@ -88,7 +88,7 @@
       "slug": "philip-fracassi",
       "readings": [
         {
-          "sequence": 1,
+          "readingSequence": 1,
           "date": "2023-10-09",
           "slug": "sacculina-by-philip-fracassi",
           "edition": "Ebook",
@@ -99,7 +99,7 @@
           "reviewed": true
         },
         {
-          "sequence": 1,
+          "readingSequence": 1,
           "date": "2023-10-29",
           "slug": "dont-let-them-get-you-down-by-philip-fracassi",
           "edition": "Ebook",

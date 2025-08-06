@@ -11,8 +11,8 @@ const ReadingSchema = z.object({
   abandoned: z.boolean(),
   date: z.coerce.date(),
   isAudiobook: z.boolean(),
+  readingSequence: z.number(),
   readingTime: z.number(),
-  sequence: z.number(),
 });
 
 const AuthorSchema = z
@@ -54,39 +54,50 @@ const MoreReviewAuthorSchema = z
 const MoreReviewSchema = z.object({
   authors: z.array(MoreReviewAuthorSchema),
   grade: z.string(),
+  gradeValue: z.number(),
   includedInSlugs: z.array(z.string()),
   kind: WorkKindSchema,
+  reviewDate: z.string(),
+  reviewSequence: z.string(),
   slug: z.string(),
+  sortTitle: z.string(),
+  subtitle: nullableString(),
   title: z.string(),
   yearPublished: z.string(),
+  yearReviewed: z.number(),
 });
 
 const MoreByAuthorSchema = z.object({
   name: z.string(),
+  reviewedWorks: z.array(MoreReviewSchema),
   slug: z.string(),
-  works: z.array(MoreReviewSchema),
+  sortName: z.string(),
 });
 
 const ReviewedWorkJsonSchema = z
   .object({
     authors: z.array(AuthorSchema),
+    grade: z.string(),
     gradeValue: z.number(),
     includedInSlugs: z.array(z.string()),
-    includedWorks: z.array(IncludedWorkSchema),
+    includedWorks: z.array(IncludedWorkSchema).optional(),
     kind: WorkKindSchema,
     moreByAuthors: z.array(MoreByAuthorSchema),
     moreReviews: z.array(MoreReviewSchema),
     readings: z.array(ReadingSchema),
-    sequence: z.string(),
+    reviewDate: z.string(),
+    reviewSequence: z.string(),
     slug: z.string(),
     sortTitle: z.string(),
     subtitle: nullableString(),
     title: z.string(),
     yearPublished: z.string(),
+    yearReviewed: z.number(),
   })
   .transform(
     ({
       authors,
+      grade,
       gradeValue,
       includedInSlugs,
       includedWorks,
@@ -94,29 +105,34 @@ const ReviewedWorkJsonSchema = z
       moreByAuthors,
       moreReviews,
       readings,
-      sequence,
+      reviewDate,
+      reviewSequence,
       slug,
       sortTitle,
       subtitle,
       title,
       yearPublished,
+      yearReviewed,
     }) => {
       // fix zod making anything with undefined optional
       return {
         authors,
+        grade,
         gradeValue,
         includedInSlugs,
-        includedWorks,
+        includedWorks: includedWorks ?? [],
         kind,
         moreByAuthors,
         moreReviews,
         readings,
-        sequence,
+        reviewDate,
+        reviewSequence,
         slug,
         sortTitle,
         subtitle,
         title,
         yearPublished,
+        yearReviewed,
       };
     },
   );

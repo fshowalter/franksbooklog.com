@@ -59,7 +59,6 @@
       "slug": "stephen-morris",
       "readings": [
         {
-          "sequence": 1,
           "date": "2023-11-11",
           "slug": "record-play-pause-by-stephen-morris",
           "edition": "Audible",
@@ -67,10 +66,10 @@
           "title": "Record Play Pause",
           "yearPublished": "2019",
           "includedInSlugs": [],
-          "reviewed": true
+          "reviewed": true,
+          "readingSequence": 1
         },
         {
-          "sequence": 1,
           "date": "2023-12-09",
           "slug": "fast-forward-by-stephen-morris",
           "edition": "Audible",
@@ -78,7 +77,8 @@
           "title": "Fast Forward",
           "yearPublished": "2020",
           "includedInSlugs": [],
-          "reviewed": true
+          "reviewed": true,
+          "readingSequence": 1
         }
       ]
     },
@@ -88,7 +88,6 @@
       "slug": "philip-fracassi",
       "readings": [
         {
-          "sequence": 1,
           "date": "2023-10-09",
           "slug": "sacculina-by-philip-fracassi",
           "edition": "Kindle",
@@ -96,10 +95,10 @@
           "title": "Sacculina",
           "yearPublished": "2017",
           "includedInSlugs": [],
-          "reviewed": true
+          "reviewed": true,
+          "readingSequence": 1
         },
         {
-          "sequence": 1,
           "date": "2023-10-29",
           "slug": "dont-let-them-get-you-down-by-philip-fracassi",
           "edition": "Kindle",
@@ -107,7 +106,8 @@
           "title": "Don't Let Them Get You Down",
           "yearPublished": "2022",
           "includedInSlugs": [],
-          "reviewed": true
+          "reviewed": true,
+          "readingSequence": 1
         }
       ]
     }

@@ -59,7 +59,7 @@
       "slug": null,
       "readings": [
         {
-          "sequence": 1,
+          "readingSequence": 1,
           "date": "2019-01-14",
           "slug": "already-dead-by-charlie-huston",
           "edition": "Ebook",
@@ -70,7 +70,7 @@
           "reviewed": false
         },
         {
-          "sequence": 1,
+          "readingSequence": 1,
           "date": "2019-01-20",
           "slug": "no-dominion-by-charlie-huston",
           "edition": "Ebook",
@@ -81,7 +81,7 @@
           "reviewed": false
         },
         {
-          "sequence": 1,
+          "readingSequence": 1,
           "date": "2019-01-21",
           "slug": "half-the-blood-of-brooklyn-by-charlie-huston",
           "edition": "Ebook",
@@ -92,7 +92,7 @@
           "reviewed": false
         },
         {
-          "sequence": 1,
+          "readingSequence": 1,
           "date": "2019-01-27",
           "slug": "every-last-drop-by-charlie-huston",
           "edition": "Ebook",
@@ -103,7 +103,7 @@
           "reviewed": false
         },
         {
-          "sequence": 1,
+          "readingSequence": 1,
           "date": "2019-01-30",
           "slug": "my-dead-body-by-charlie-huston",
           "edition": "Ebook",
@@ -114,7 +114,7 @@
           "reviewed": false
         },
         {
-          "sequence": 1,
+          "readingSequence": 1,
           "date": "2019-06-07",
           "slug": "the-shotgun-rule-by-charlie-huston",
           "edition": "Ebook",
@@ -132,7 +132,7 @@
       "slug": "stephen-king",
       "readings": [
         {
-          "sequence": 1,
+          "readingSequence": 1,
           "date": "2019-02-03",
           "slug": "the-eyes-of-the-dragon-by-stephen-king",
           "edition": "Ebook",
@@ -143,7 +143,7 @@
           "reviewed": false
         },
         {
-          "sequence": 1,
+          "readingSequence": 1,
           "date": "2019-03-06",
           "slug": "the-gunslinger-by-stephen-king",
           "edition": "Ebook",
@@ -154,7 +154,7 @@
           "reviewed": false
         },
         {
-          "sequence": 1,
+          "readingSequence": 1,
           "date": "2019-03-13",
           "slug": "the-drawing-of-the-three-by-stephen-king",
           "edition": "Ebook",
@@ -165,7 +165,7 @@
           "reviewed": false
         },
         {
-          "sequence": 1,
+          "readingSequence": 1,
           "date": "2019-04-03",
           "slug": "misery-by-stephen-king",
           "edition": "Ebook",
@@ -176,7 +176,7 @@
           "reviewed": false
         },
         {
-          "sequence": 1,
+          "readingSequence": 1,
           "date": "2019-05-19",
           "slug": "the-tommyknockers-by-stephen-king",
           "edition": "Ebook",
@@ -187,7 +187,7 @@
           "reviewed": false
         },
         {
-          "sequence": 1,
+          "readingSequence": 1,
           "date": "2019-06-20",
           "slug": "the-dark-half-by-stephen-king",
           "edition": "Ebook",
@@ -205,7 +205,7 @@
       "slug": "raymond-chandler",
       "readings": [
         {
-          "sequence": 1,
+          "readingSequence": 1,
           "date": "2019-02-16",
           "slug": "farewell-my-lovely-by-raymond-chandler",
           "edition": "Ebook",
@@ -216,7 +216,7 @@
           "reviewed": false
         },
         {
-          "sequence": 1,
+          "readingSequence": 1,
           "date": "2019-03-23",
           "slug": "the-high-window-by-raymond-chandler",
           "edition": "Ebook",
@@ -227,7 +227,7 @@
           "reviewed": false
         },
         {
-          "sequence": 1,
+          "readingSequence": 1,
           "date": "2019-04-14",
           "slug": "the-lady-in-the-lake-by-raymond-chandler",
           "edition": "Ebook",
@@ -238,7 +238,7 @@
           "reviewed": false
         },
         {
-          "sequence": 1,
+          "readingSequence": 1,
           "date": "2019-06-01",
           "slug": "the-little-sister-by-raymond-chandler",
           "edition": "Ebook",
@@ -256,7 +256,7 @@
       "slug": null,
       "readings": [
         {
-          "sequence": 1,
+          "readingSequence": 1,
           "date": "2019-03-02",
           "slug": "black-canaan-by-robert-e-howard",
           "edition": "Paperback",
@@ -267,7 +267,7 @@
           "reviewed": false
         },
         {
-          "sequence": 2,
+          "readingSequence": 2,
           "date": "2019-03-02",
           "slug": "the-horror-stories-of-robert-e-howard-by-robert-e-howard",
           "edition": "Ebook",
@@ -278,7 +278,7 @@
           "reviewed": false
         },
         {
-          "sequence": 1,
+          "readingSequence": 1,
           "date": "2019-03-27",
           "slug": "kull-exile-of-atlantis-by-robert-e-howard",
           "edition": "Ebook",
@@ -289,7 +289,7 @@
           "reviewed": false
         },
         {
-          "sequence": 1,
+          "readingSequence": 1,
           "date": "2019-04-28",
           "slug": "the-coming-of-conan-the-cimmerian-by-robert-e-howard",
           "edition": "Ebook",
@@ -307,7 +307,7 @@
       "slug": "richard-laymon",
       "readings": [
         {
-          "sequence": 1,
+          "readingSequence": 1,
           "date": "2019-02-10",
           "slug": "darkness-tell-us-by-richard-laymon",
           "edition": "Ebook",
@@ -318,7 +318,7 @@
           "reviewed": false
         },
         {
-          "sequence": 1,
+          "readingSequence": 1,
           "date": "2019-03-18",
           "slug": "alarums-by-richard-laymon",
           "edition": "Ebook",
@@ -329,7 +329,7 @@
           "reviewed": false
         },
         {
-          "sequence": 1,
+          "readingSequence": 1,
           "date": "2019-04-11",
           "slug": "blood-games-by-richard-laymon",
           "edition": "Ebook",
@@ -340,7 +340,7 @@
           "reviewed": false
         },
         {
-          "sequence": 1,
+          "readingSequence": 1,
           "date": "2019-05-27",
           "slug": "endless-night-by-richard-laymon",
           "edition": "Ebook",

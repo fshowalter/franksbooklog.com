@@ -18,8 +18,8 @@ type ReadingSubListItemValue = {
   date: string;
   edition: string;
   kind: string;
+  readingSequence: number;
   reviewed: boolean;
-  sequence: number;
   slug: string | undefined;
   title: string;
   yearPublished: string;
@@ -113,7 +113,7 @@ export function MostReadAuthors({
                     {value.readings.map((reading) => {
                       return (
                         <ReadingSubListItem
-                          key={`${reading.date}-${reading.slug}-${reading.sequence}`}
+                          key={`${reading.date}-${reading.slug}-${reading.readingSequence}`}
                           value={reading}
                         />
                       );

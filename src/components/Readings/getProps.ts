@@ -20,11 +20,11 @@ export async function getProps(): Promise<Props> {
     workCount,
   } = await allTimelineEntries();
 
-  timelineEntries.sort((a, b) => b.sequence.localeCompare(a.sequence));
+  timelineEntries.sort((a, b) => b.timelineSequence.localeCompare(a.timelineSequence));
 
   const values = await Promise.all(
     timelineEntries.map(async (entry) => {
-      const readingDate = new Date(entry.date);
+      const readingDate = new Date(entry.timelineDate);
       const value: ListItemValue = {
         authors: entry.authors.map((author) => {
           const authorValue: ListItemValue["authors"][0] = {
@@ -57,7 +57,7 @@ export async function getProps(): Promise<Props> {
           year: "numeric",
         }),
         reviewed: entry.reviewed,
-        sequence: entry.sequence,
+        sequence: entry.timelineSequence,
         slug: entry.slug,
         title: entry.title,
         yearPublished: entry.yearPublished,

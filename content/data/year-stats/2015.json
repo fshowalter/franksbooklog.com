@@ -47,7 +47,7 @@
       "slug": null,
       "readings": [
         {
-          "sequence": 1,
+          "readingSequence": 1,
           "date": "2015-01-25",
           "slug": "frank-by-james-kaplan",
           "edition": "Paperback",
@@ -58,7 +58,7 @@
           "reviewed": false
         },
         {
-          "sequence": 1,
+          "readingSequence": 1,
           "date": "2015-12-30",
           "slug": "sinatra-by-james-kaplan",
           "edition": "Hardcover",
