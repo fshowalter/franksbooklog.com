@@ -34,7 +34,9 @@ export async function allTimelineEntries(): Promise<TimelineEntries> {
   for (const entry of timelineEntries) {
     distinctEditions.add(entry.edition);
     distinctKinds.add(entry.kind);
-    distinctReadingYears.add(yearFormatter.format(new Date(entry.timelineDate)));
+    distinctReadingYears.add(
+      yearFormatter.format(new Date(entry.timelineDate)),
+    );
     distinctWorkYears.add(entry.yearPublished);
   }
 
