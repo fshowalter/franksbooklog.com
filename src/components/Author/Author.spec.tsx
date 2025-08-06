@@ -3,7 +3,7 @@ import { userEvent } from "@testing-library/user-event";
 import { describe, it } from "vitest";
 
 import { Author } from "./Author";
-import { Actions, reducer } from "./Author.reducer";
+import { Actions, initState, reducer } from "./Author.reducer";
 import { getProps } from "./getProps";
 
 const props = await getProps("richard-laymon");
@@ -125,11 +125,14 @@ describe("Author", () => {
 
   it("handles SHOW_MORE action", ({ expect }) => {
     expect.hasAssertions();
-    
+
     // Test the reducer directly to cover the SHOW_MORE action
-    const initialState = reducer(props.values, { type: Actions.SORT, value: "title-asc" });
+    const initialState = initState({
+      initialSort: "title-asc",
+      values: props.works,
+    });
     const stateWithMore = reducer(initialState, { type: Actions.SHOW_MORE });
-    
+
     expect(stateWithMore.showCount).toBeGreaterThan(initialState.showCount);
     expect(stateWithMore.groupedValues).toBeDefined();
   });
