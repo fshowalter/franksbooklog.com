@@ -1,7 +1,7 @@
 import path from "node:path";
 
 export function getContentPath(
-  kind: "data" | "reviews" | "viewings",
+  kind: "data" | "pages" | "readings" | "reviews",
   subPath?: string,
 ) {
   if (subPath) {
