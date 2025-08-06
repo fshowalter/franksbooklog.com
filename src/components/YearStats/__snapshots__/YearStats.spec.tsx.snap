@@ -22391,7 +22391,7 @@ exports[`YearStats > matches snapshot for slug 2024 1`] = `
             <div
               class="text-[2rem] leading-8"
             >
-              5
+              6
             </div>
              
             <div
@@ -22409,7 +22409,7 @@ exports[`YearStats > matches snapshot for slug 2024 1`] = `
             <div
               class="text-[2rem] leading-8"
             >
-              5
+              6
             </div>
              
             <div
@@ -22467,6 +22467,44 @@ exports[`YearStats > matches snapshot for slug 2024 1`] = `
                     tablet:text-sm
                   "
                     >
+                      1960s
+                    </div>
+                    <div
+                      class="
+                    col-start-3 self-center pb-1 text-right font-sans text-xs
+                    text-nowrap text-subtle
+                    tablet:text-sm
+                  "
+                    >
+                      1
+                    </div>
+                  </div>
+                  <div
+                    class="col-span-3 row-start-2 bg-subtle"
+                  >
+                    <div
+                      class="
+        bg-progress-bar leading-[6px]
+        tablet:mb-0
+      "
+                      style="--bar-percent: 16.666666666666664%;"
+                    >
+                       
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-span-3 grid grid-cols-subgrid py-3"
+                >
+                  <div
+                    class="col-span-3 grid grid-cols-subgrid"
+                  >
+                    <div
+                      class="
+                    font-sans text-xs text-muted
+                    tablet:text-sm
+                  "
+                    >
                       1970s
                     </div>
                     <div
@@ -22487,7 +22525,7 @@ exports[`YearStats > matches snapshot for slug 2024 1`] = `
         bg-progress-bar leading-[6px]
         tablet:mb-0
       "
-                      style="--bar-percent: 20%;"
+                      style="--bar-percent: 16.666666666666664%;"
                     >
                        
                     </div>
@@ -22525,7 +22563,7 @@ exports[`YearStats > matches snapshot for slug 2024 1`] = `
         bg-progress-bar leading-[6px]
         tablet:mb-0
       "
-                      style="--bar-percent: 80%;"
+                      style="--bar-percent: 66.66666666666666%;"
                     >
                        
                     </div>
@@ -22582,7 +22620,7 @@ exports[`YearStats > matches snapshot for slug 2024 1`] = `
         bg-progress-bar leading-[6px]
         tablet:mb-0
       "
-                      style="--bar-percent: 60%;"
+                      style="--bar-percent: 50%;"
                     >
                        
                     </div>
@@ -22609,7 +22647,7 @@ exports[`YearStats > matches snapshot for slug 2024 1`] = `
                     tablet:text-sm
                   "
                     >
-                      2
+                      3
                     </div>
                   </div>
                   <div
@@ -22620,7 +22658,7 @@ exports[`YearStats > matches snapshot for slug 2024 1`] = `
         bg-progress-bar leading-[6px]
         tablet:mb-0
       "
-                      style="--bar-percent: 40%;"
+                      style="--bar-percent: 50%;"
                     >
                        
                     </div>
@@ -22677,7 +22715,7 @@ exports[`YearStats > matches snapshot for slug 2024 1`] = `
         bg-progress-bar leading-[6px]
         tablet:mb-0
       "
-                      style="--bar-percent: 40%;"
+                      style="--bar-percent: 33.33333333333333%;"
                     >
                        
                     </div>
@@ -22704,7 +22742,7 @@ exports[`YearStats > matches snapshot for slug 2024 1`] = `
                     tablet:text-sm
                   "
                     >
-                      3
+                      4
                     </div>
                   </div>
                   <div
@@ -22715,7 +22753,7 @@ exports[`YearStats > matches snapshot for slug 2024 1`] = `
         bg-progress-bar leading-[6px]
         tablet:mb-0
       "
-                      style="--bar-percent: 60%;"
+                      style="--bar-percent: 66.66666666666666%;"
                     >
                        
                     </div>

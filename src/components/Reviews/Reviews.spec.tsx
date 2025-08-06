@@ -4,6 +4,7 @@ import { describe, it } from "vitest";
 
 import { getProps } from "./getProps";
 import { Reviews } from "./Reviews";
+import { Actions, initState, reducer } from "./Reviews.reducer";
 
 const props = await getProps();
 
@@ -242,5 +243,19 @@ describe("Reviews", () => {
     await userEvent.selectOptions(toInput, "2022");
 
     expect(screen.getByTestId("list")).toMatchSnapshot();
+  });
+
+  it("handles SHOW_MORE action", ({ expect }) => {
+    expect.hasAssertions();
+
+    // Test the reducer directly to cover the SHOW_MORE action
+    const initialState = initState({
+      initialSort: "title-asc",
+      values: props.values,
+    });
+    const stateWithMore = reducer(initialState, { type: Actions.SHOW_MORE });
+
+    expect(stateWithMore.showCount).toBeGreaterThan(initialState.showCount);
+    expect(stateWithMore.groupedValues).toBeDefined();
   });
 });

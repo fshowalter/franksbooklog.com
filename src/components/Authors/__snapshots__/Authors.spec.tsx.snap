@@ -610,6 +610,71 @@ exports[`Authors > can sort by name a->z 1`] = `
             1
           </div>
         </li>
+        <li
+          class="
+        bg-default
+        items-center
+        tablet:py-6
+        relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4
+        px-container py-4
+        last-of-type:mb-0
+        tablet:gap-x-6 tablet:px-6
+        
+        group/list-item relative transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
+        has-[a:hover]:drop-shadow-2xl
+      
+      "
+        >
+          <div
+            class="
+          relative rounded-full
+          after:absolute after:top-0 after:left-0 after:size-full
+          after:bg-default after:opacity-15 after:transition-opacity
+          group-has-[a:hover]/list-item:after:opacity-0
+        "
+          >
+            <div
+              class="
+          w-16 safari-border-radius-fix overflow-hidden rounded-full
+          shadow-(--bg-avatar-default)
+          tablet:w-20
+        "
+            >
+              <div
+                class="w-full"
+              >
+                <svg
+                  fill="var(--bg-avatar-default)"
+                  viewBox="0 0 16 16"
+                  width="100%"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <a
+            class="
+        font-sans text-sm leading-normal font-medium text-accent
+        after:absolute after:top-0 after:left-0 after:size-full after:opacity-0
+        hover:text-accent
+      "
+            href="/authors/arthur-c-clarke/"
+          >
+            Arthur C. Clarke
+          </a>
+          <div
+            class="ml-auto font-sans text-sm text-nowrap text-subtle"
+          >
+            1
+          </div>
+        </li>
       </ol>
     </div>
   </li>
@@ -7096,6 +7161,71 @@ exports[`Authors > can sort by name z->a 1`] = `
           tablet:w-20
         "
             >
+              <div
+                class="w-full"
+              >
+                <svg
+                  fill="var(--bg-avatar-default)"
+                  viewBox="0 0 16 16"
+                  width="100%"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <a
+            class="
+        font-sans text-sm leading-normal font-medium text-accent
+        after:absolute after:top-0 after:left-0 after:size-full after:opacity-0
+        hover:text-accent
+      "
+            href="/authors/arthur-c-clarke/"
+          >
+            Arthur C. Clarke
+          </a>
+          <div
+            class="ml-auto font-sans text-sm text-nowrap text-subtle"
+          >
+            1
+          </div>
+        </li>
+        <li
+          class="
+        bg-default
+        items-center
+        tablet:py-6
+        relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4
+        px-container py-4
+        last-of-type:mb-0
+        tablet:gap-x-6 tablet:px-6
+        
+        group/list-item relative transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
+        has-[a:hover]:drop-shadow-2xl
+      
+      "
+        >
+          <div
+            class="
+          relative rounded-full
+          after:absolute after:top-0 after:left-0 after:size-full
+          after:bg-default after:opacity-15 after:transition-opacity
+          group-has-[a:hover]/list-item:after:opacity-0
+        "
+          >
+            <div
+              class="
+          w-16 safari-border-radius-fix overflow-hidden rounded-full
+          shadow-(--bg-avatar-default)
+          tablet:w-20
+        "
+            >
               <img
                 alt=""
                 class="w-full"
@@ -8031,6 +8161,71 @@ exports[`Authors > can sort by review count asc 1`] = `
             href="/authors/raymond-chandler/"
           >
             Raymond Chandler
+          </a>
+          <div
+            class="ml-auto font-sans text-sm text-nowrap text-subtle"
+          >
+            1
+          </div>
+        </li>
+        <li
+          class="
+        bg-default
+        items-center
+        tablet:py-6
+        relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4
+        px-container py-4
+        last-of-type:mb-0
+        tablet:gap-x-6 tablet:px-6
+        
+        group/list-item relative transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
+        has-[a:hover]:drop-shadow-2xl
+      
+      "
+        >
+          <div
+            class="
+          relative rounded-full
+          after:absolute after:top-0 after:left-0 after:size-full
+          after:bg-default after:opacity-15 after:transition-opacity
+          group-has-[a:hover]/list-item:after:opacity-0
+        "
+          >
+            <div
+              class="
+          w-16 safari-border-radius-fix overflow-hidden rounded-full
+          shadow-(--bg-avatar-default)
+          tablet:w-20
+        "
+            >
+              <div
+                class="w-full"
+              >
+                <svg
+                  fill="var(--bg-avatar-default)"
+                  viewBox="0 0 16 16"
+                  width="100%"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <a
+            class="
+        font-sans text-sm leading-normal font-medium text-accent
+        after:absolute after:top-0 after:left-0 after:size-full after:opacity-0
+        hover:text-accent
+      "
+            href="/authors/arthur-c-clarke/"
+          >
+            Arthur C. Clarke
           </a>
           <div
             class="ml-auto font-sans text-sm text-nowrap text-subtle"
@@ -11783,6 +11978,71 @@ exports[`Authors > can sort by review count desc 1`] = `
             href="/authors/raymond-chandler/"
           >
             Raymond Chandler
+          </a>
+          <div
+            class="ml-auto font-sans text-sm text-nowrap text-subtle"
+          >
+            1
+          </div>
+        </li>
+        <li
+          class="
+        bg-default
+        items-center
+        tablet:py-6
+        relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4
+        px-container py-4
+        last-of-type:mb-0
+        tablet:gap-x-6 tablet:px-6
+        
+        group/list-item relative transform-gpu transition-transform
+        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
+        has-[a:hover]:drop-shadow-2xl
+      
+      "
+        >
+          <div
+            class="
+          relative rounded-full
+          after:absolute after:top-0 after:left-0 after:size-full
+          after:bg-default after:opacity-15 after:transition-opacity
+          group-has-[a:hover]/list-item:after:opacity-0
+        "
+          >
+            <div
+              class="
+          w-16 safari-border-radius-fix overflow-hidden rounded-full
+          shadow-(--bg-avatar-default)
+          tablet:w-20
+        "
+            >
+              <div
+                class="w-full"
+              >
+                <svg
+                  fill="var(--bg-avatar-default)"
+                  viewBox="0 0 16 16"
+                  width="100%"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <a
+            class="
+        font-sans text-sm leading-normal font-medium text-accent
+        after:absolute after:top-0 after:left-0 after:size-full after:opacity-0
+        hover:text-accent
+      "
+            href="/authors/arthur-c-clarke/"
+          >
+            Arthur C. Clarke
           </a>
           <div
             class="ml-auto font-sans text-sm text-nowrap text-subtle"

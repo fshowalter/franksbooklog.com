@@ -1,5 +1,24 @@
 [
   {
+    "slug": "a-strangers-arms-by-richard-laymon",
+    "edition": "Paperback",
+    "kind": "Novel",
+    "progress": "Finished",
+    "reviewed": false,
+    "yearPublished": "1984",
+    "title": "A Stranger's Arms",
+    "authors": [
+      {
+        "name": "Richard Laymon",
+        "slug": "richard-laymon",
+        "sortName": "Laymon, Richard"
+      }
+    ],
+    "includedInSlugs": [],
+    "timelineDate": "2025-02-20",
+    "timelineSequence": "2025-02-20-2025-02-20-1"
+  },
+  {
     "slug": "the-lonely-one-by-richard-laymon",
     "edition": "Paperback",
     "kind": "Short Story",
@@ -720,6 +739,44 @@
     "includedInSlugs": [],
     "timelineDate": "2024-06-28",
     "timelineSequence": "2024-06-28-2024-06-30-1"
+  },
+  {
+    "slug": "2001-a-space-odyssey-by-arthur-c-clarke",
+    "edition": "Kindle",
+    "kind": "Novel",
+    "progress": "Finished",
+    "reviewed": true,
+    "yearPublished": "1968",
+    "title": "2001: A Space Odyssey",
+    "authors": [
+      {
+        "name": "Arthur C. Clarke",
+        "slug": "arthur-c-clarke",
+        "sortName": "Clarke, Arthur C."
+      }
+    ],
+    "includedInSlugs": [],
+    "timelineDate": "2024-01-15",
+    "timelineSequence": "2024-01-15-2024-01-15-1"
+  },
+  {
+    "slug": "2001-a-space-odyssey-by-arthur-c-clarke",
+    "edition": "Kindle",
+    "kind": "Novel",
+    "progress": "Started",
+    "reviewed": true,
+    "yearPublished": "1968",
+    "title": "2001: A Space Odyssey",
+    "authors": [
+      {
+        "name": "Arthur C. Clarke",
+        "slug": "arthur-c-clarke",
+        "sortName": "Clarke, Arthur C."
+      }
+    ],
+    "includedInSlugs": [],
+    "timelineDate": "2024-01-08",
+    "timelineSequence": "2024-01-08-2024-01-15-1"
   },
   {
     "slug": "fast-forward-by-stephen-morris",
