@@ -3,7 +3,6 @@ import { userEvent } from "@testing-library/user-event";
 import { describe, it } from "vitest";
 
 import { Author } from "./Author";
-import { Actions, initState, reducer } from "./Author.reducer";
 import { getProps } from "./getProps";
 
 const props = await getProps("richard-laymon");
@@ -123,17 +122,31 @@ describe("Author", () => {
     expect(screen.getByTestId("list")).toMatchSnapshot();
   });
 
-  it("handles SHOW_MORE action", ({ expect }) => {
+  it("can show more items when button is clicked", async ({ expect }) => {
     expect.hasAssertions();
 
-    // Test the reducer directly to cover the SHOW_MORE action
-    const initialState = initState({
-      initialSort: "title-asc",
-      values: props.works,
-    });
-    const stateWithMore = reducer(initialState, { type: Actions.SHOW_MORE });
+    // Create many test items to trigger pagination (need more than 100)
+    const manyWorks = Array.from({ length: 150 }, (_, i) => ({
+      ...props.works[0], // Use first work as template
+      slug: `test-work-${i}`,
+      sortTitle: `Test Work ${i}`,
+      title: `Test Work ${i}`,
+    }));
 
-    expect(stateWithMore.showCount).toBeGreaterThan(initialState.showCount);
-    expect(stateWithMore.groupedValues).toBeDefined();
+    const testProps = {
+      ...props,
+      works: manyWorks,
+    };
+
+    render(<Author {...testProps} />);
+
+    // Should show Show More button since we have 150 items > 100 default
+    const showMoreButton = screen.getByText("Show More");
+    expect(showMoreButton).toBeInTheDocument();
+
+    await userEvent.click(showMoreButton);
+
+    // Snapshot the result to verify more items are rendered
+    expect(screen.getByTestId("list")).toMatchSnapshot();
   });
 });

@@ -1,11 +1,7 @@
 {
-  "slug": "arthur-c-clarke",
   "name": "Arthur C. Clarke",
   "sortName": "Clarke, Arthur C.",
-  "reviewedWorkCount": 1,
-  "workCount": 1,
-  "distinctKinds": ["Novel"],
-  "distinctPublishedYears": ["1968"],
+  "slug": "arthur-c-clarke",
   "reviewedWorks": [
     {
       "authors": [
@@ -29,5 +25,9 @@
       "yearPublished": "1968",
       "yearReviewed": 2025
     }
-  ]
+  ],
+  "reviewedWorkCount": 1,
+  "workCount": 1,
+  "distinctKinds": ["Novel"],
+  "distinctPublishedYears": ["1968"]
 }
