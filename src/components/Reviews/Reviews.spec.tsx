@@ -206,7 +206,7 @@ describe("Reviews", () => {
 
     await userEvent.selectOptions(fromInput, "1980");
     await userEvent.selectOptions(toInput, "1989");
-    await userEvent.selectOptions(fromInput, "2001");
+    await userEvent.selectOptions(fromInput, "2015");
     await userEvent.selectOptions(toInput, "1977");
 
     expect(screen.getByTestId("list")).toMatchSnapshot();
