@@ -8,43 +8,43 @@
     "title": "The Lonely One"
   },
   {
-    "authors": ["Peter Straub"],
-    "date": "2024-12-01T00:00:00.000Z",
-    "image": "/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fghost-story-by-peter-straub.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=500&h=750&q=100&f=png",
-    "slug": "ghost-story-by-peter-straub",
+    "authors": ["Arthur C. Clarke"],
+    "date": "2025-01-15T00:00:00.000Z",
+    "image": "/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=500&h=750&q=100&f=png",
+    "slug": "2001-a-space-odyssey-by-arthur-c-clarke",
+    "stars": 5,
+    "title": "2001: A Space Odyssey"
+  },
+  {
+    "authors": ["John Skipp", "Craig Spector"],
+    "date": "2023-01-21T00:00:00.000Z",
+    "image": "/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=500&h=750&q=100&f=png",
+    "slug": "fright-night-by-john-skipp-craig-spector",
+    "stars": 1,
+    "title": "Fright Night"
+  },
+  {
+    "authors": ["Richard Laymon"],
+    "date": "2023-01-21T00:00:00.000Z",
+    "image": "/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fshort-stories-volume-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=500&h=750&q=100&f=png",
+    "slug": "roadside-pickup-by-richard-laymon",
+    "stars": 2.5,
+    "title": "Roadside Pickup"
+  },
+  {
+    "authors": ["Stephen King"],
+    "date": "2022-10-29T00:00:00.000Z",
+    "image": "/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-shining-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=500&h=750&q=100&f=png",
+    "slug": "the-shining-by-stephen-king",
     "stars": 4,
-    "title": "Ghost Story"
+    "title": "The Shining"
   },
   {
-    "authors": ["Lol Tolhurst"],
-    "date": "2024-11-08T00:00:00.000Z",
-    "image": "/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgoth-by-lol-tolhurst.png%3ForigWidth%3D500%26origHeight%3D754%26origFormat%3Dpng&w=500&h=754&q=100&f=png",
-    "slug": "goth-by-lol-tolhurst",
-    "stars": 3,
-    "title": "Goth"
-  },
-  {
-    "authors": ["David Mamet"],
-    "date": "2024-08-25T00:00:00.000Z",
-    "image": "/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frecessional-by-david-mamet.png%3ForigWidth%3D500%26origHeight%3D754%26origFormat%3Dpng&w=500&h=754&q=100&f=png",
-    "slug": "recessional-by-david-mamet",
-    "stars": 2,
-    "title": "Recessional"
-  },
-  {
-    "authors": ["Stephen Morris"],
-    "date": "2024-07-01T00:00:00.000Z",
-    "image": "/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffast-forward-by-stephen-morris.png%3ForigWidth%3D500%26origHeight%3D784%26origFormat%3Dpng&w=500&h=784&q=100&f=png",
-    "slug": "fast-forward-by-stephen-morris",
-    "stars": 4.5,
-    "title": "Fast Forward"
-  },
-  {
-    "authors": ["Philip Fracassi"],
-    "date": "2024-06-30T00:00:00.000Z",
-    "image": "/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fgothic-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=500&h=750&q=100&f=png",
-    "slug": "gothic-by-philip-fracassi",
+    "authors": ["Steven Novella"],
+    "date": "2022-10-29T00:00:00.000Z",
+    "image": "/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-skeptics-guide-to-the-universe-by-steven-novella.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=500&h=750&q=100&f=png",
+    "slug": "the-skeptics-guide-to-the-universe-by-steven-novella",
     "stars": 4,
-    "title": "Gothic"
+    "title": "The Skeptics' Guide to the Universe"
   }
 ]

@@ -418,7 +418,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
         
       "
             >
-              12 Years in Review
+              11 Years in Review
             </p>
           </div>
         </header>
@@ -609,22 +609,6 @@ exports[`/readings/stats > matches snapshot 1`] = `
                 href="/readings/stats/2014/"
               >
                 2014
-              </a>
-            </li>
-            <li
-              class="
-        text-center
-        text-inverse
-      "
-            >
-              <a
-                class="
-            block transform-gpu p-4 transition-all
-            hover:scale-105 hover:bg-accent hover:text-inverse
-          "
-                href="/readings/stats/2013/"
-              >
-                2013
               </a>
             </li>
             <li
