@@ -1,6 +1,12 @@
 import type { FilterableState } from "~/utils";
 
 import { buildGroupValues, filterTools, sortNumber, sortString } from "~/utils";
+import {
+  createInitialState,
+  handleFilterName,
+  handleShowMore,
+  handleSort,
+} from "~/utils/reducerUtils";
 
 import type { ListItemValue } from "./Authors";
 
@@ -17,7 +23,7 @@ export type Sort =
   | "review-count-desc";
 
 const groupValues = buildGroupValues(groupForValue);
-const { updateFilter } = filterTools(sortValues, groupValues);
+const { clearFilter, updateFilter } = filterTools(sortValues, groupValues);
 
 type State = FilterableState<ListItemValue, Sort, Map<string, ListItemValue[]>>;
 
@@ -82,56 +88,24 @@ export function initState({
   initialSort: Sort;
   values: ListItemValue[];
 }): State {
-  return {
-    allValues: values,
-    filteredValues: values,
-    filters: {},
-    groupedValues: groupValues(
-      values.slice(0, SHOW_COUNT_DEFAULT),
-      initialSort,
-    ),
-    showCount: SHOW_COUNT_DEFAULT,
-    sortValue: initialSort,
-  };
+  return createInitialState(
+    values,
+    initialSort,
+    SHOW_COUNT_DEFAULT,
+    groupValues,
+  );
 }
 
 export function reducer(state: State, action: ActionType): State {
-  let filteredValues;
-  let groupedValues;
-
   switch (action.type) {
     case Actions.FILTER_NAME: {
-      const regex = new RegExp(action.value, "i");
-      return updateFilter(state, "name", (value) => {
-        return regex.test(value.name);
-      });
+      return handleFilterName(state, action.value, clearFilter, updateFilter);
     }
     case Actions.SHOW_MORE: {
-      const showCount = state.showCount + SHOW_COUNT_DEFAULT;
-
-      groupedValues = groupValues(
-        state.filteredValues.slice(0, showCount),
-        state.sortValue,
-      );
-
-      return {
-        ...state,
-        groupedValues,
-        showCount,
-      };
+      return handleShowMore(state, SHOW_COUNT_DEFAULT, groupValues);
     }
     case Actions.SORT: {
-      filteredValues = sortValues(state.filteredValues, action.value);
-      groupedValues = groupValues(
-        filteredValues.slice(0, state.showCount),
-        action.value,
-      );
-      return {
-        ...state,
-        filteredValues,
-        groupedValues,
-        sortValue: action.value,
-      };
+      return handleSort(state, action.value, sortValues, groupValues);
     }
     // no default
   }
