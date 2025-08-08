@@ -65,7 +65,6 @@ const monthGroupFormat = new Intl.DateTimeFormat("en-US", {
   year: "numeric",
 });
 
-
 type State = FilterableState<ListItemValue, Sort, Map<string, ListItemValue[]>>;
 
 function groupForValue(value: ListItemValue, sortValue: Sort): string {

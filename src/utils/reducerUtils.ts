@@ -1,16 +1,36 @@
 import type { FilterableState } from "./filterTools";
 
 type BaseItem = {
-  title?: string;
-  sortTitle?: string;
+  date?: Date;
   name?: string;
   sortName?: string;
+  sortTitle?: string;
+  title?: string;
   yearPublished?: string;
-  date?: Date;
 };
 
-export function handleFilterTitle<
-  TItem extends BaseItem,
+export function createInitialState<
+  TItem,
+  TSortValue extends string,
+  TGroupedValues,
+>(
+  values: TItem[],
+  initialSort: TSortValue,
+  showCountDefault: number,
+  groupValues: (values: TItem[], sortValue: TSortValue) => TGroupedValues,
+): FilterableState<TItem, TSortValue, TGroupedValues> {
+  return {
+    allValues: values,
+    filteredValues: values,
+    filters: {},
+    groupedValues: groupValues(values.slice(0, showCountDefault), initialSort),
+    showCount: showCountDefault,
+    sortValue: initialSort,
+  };
+}
+
+export function handleFilterEdition<
+  TItem extends { edition?: string },
   TSortValue extends string,
   TGroupedValues,
 >(
@@ -28,16 +48,35 @@ export function handleFilterTitle<
   ) => FilterableState<TItem, TSortValue, TGroupedValues>,
 ): FilterableState<TItem, TSortValue, TGroupedValues> {
   return (
-    clearFilter(value, state, "title") ??
-    updateFilter(state, "title", (item) => {
-      const normalizedValue = value.toLowerCase();
-      if (item.title) {
-        return item.title.toLowerCase().includes(normalizedValue);
-      }
-      if (item.sortTitle) {
-        return item.sortTitle.toLowerCase().includes(normalizedValue);
-      }
-      return false;
+    clearFilter(value, state, "edition") ??
+    updateFilter(state, "edition", (item) => {
+      return item.edition === value;
+    })
+  );
+}
+
+export function handleFilterKind<
+  TItem extends { kind?: string },
+  TSortValue extends string,
+  TGroupedValues,
+>(
+  state: FilterableState<TItem, TSortValue, TGroupedValues>,
+  value: string,
+  clearFilter: (
+    value: string,
+    state: FilterableState<TItem, TSortValue, TGroupedValues>,
+    key: string,
+  ) => FilterableState<TItem, TSortValue, TGroupedValues> | undefined,
+  updateFilter: (
+    state: FilterableState<TItem, TSortValue, TGroupedValues>,
+    key: string,
+    predicate: (item: TItem) => boolean,
+  ) => FilterableState<TItem, TSortValue, TGroupedValues>,
+): FilterableState<TItem, TSortValue, TGroupedValues> {
+  return (
+    clearFilter(value, state, "kind") ??
+    updateFilter(state, "kind", (item) => {
+      return item.kind === value;
     })
   );
 }
@@ -69,6 +108,69 @@ export function handleFilterName<
       }
       if (item.sortName) {
         return item.sortName.toLowerCase().includes(normalizedValue);
+      }
+      return false;
+    })
+  );
+}
+
+export function handleFilterReadingYear<
+  TItem extends { readingYear?: string },
+  TSortValue extends string,
+  TGroupedValues,
+>(
+  state: FilterableState<TItem, TSortValue, TGroupedValues>,
+  values: [string, string],
+  clearFilter: (
+    value: string,
+    state: FilterableState<TItem, TSortValue, TGroupedValues>,
+    key: string,
+  ) => FilterableState<TItem, TSortValue, TGroupedValues> | undefined,
+  updateFilter: (
+    state: FilterableState<TItem, TSortValue, TGroupedValues>,
+    key: string,
+    predicate: (item: TItem) => boolean,
+  ) => FilterableState<TItem, TSortValue, TGroupedValues>,
+): FilterableState<TItem, TSortValue, TGroupedValues> {
+  const [minValue, maxValue] = values;
+
+  return (
+    clearFilter(minValue, state, "readingYear") ??
+    clearFilter(maxValue, state, "readingYear") ??
+    updateFilter(state, "readingYear", (item) => {
+      if (!item.readingYear) return false;
+      return item.readingYear >= minValue && item.readingYear <= maxValue;
+    })
+  );
+}
+
+export function handleFilterTitle<
+  TItem extends BaseItem,
+  TSortValue extends string,
+  TGroupedValues,
+>(
+  state: FilterableState<TItem, TSortValue, TGroupedValues>,
+  value: string,
+  clearFilter: (
+    value: string,
+    state: FilterableState<TItem, TSortValue, TGroupedValues>,
+    key: string,
+  ) => FilterableState<TItem, TSortValue, TGroupedValues> | undefined,
+  updateFilter: (
+    state: FilterableState<TItem, TSortValue, TGroupedValues>,
+    key: string,
+    predicate: (item: TItem) => boolean,
+  ) => FilterableState<TItem, TSortValue, TGroupedValues>,
+): FilterableState<TItem, TSortValue, TGroupedValues> {
+  return (
+    clearFilter(value, state, "title") ??
+    updateFilter(state, "title", (item) => {
+      const normalizedValue = value.toLowerCase();
+      if (item.title) {
+        return item.title.toLowerCase().includes(normalizedValue);
+      }
+      if (item.sortTitle) {
+        return item.sortTitle.toLowerCase().includes(normalizedValue);
       }
       return false;
     })
@@ -137,88 +239,6 @@ export function handleFilterYearReviewed<
   );
 }
 
-export function handleFilterReadingYear<
-  TItem extends { readingYear?: string },
-  TSortValue extends string,
-  TGroupedValues,
->(
-  state: FilterableState<TItem, TSortValue, TGroupedValues>,
-  values: [string, string],
-  clearFilter: (
-    value: string,
-    state: FilterableState<TItem, TSortValue, TGroupedValues>,
-    key: string,
-  ) => FilterableState<TItem, TSortValue, TGroupedValues> | undefined,
-  updateFilter: (
-    state: FilterableState<TItem, TSortValue, TGroupedValues>,
-    key: string,
-    predicate: (item: TItem) => boolean,
-  ) => FilterableState<TItem, TSortValue, TGroupedValues>,
-): FilterableState<TItem, TSortValue, TGroupedValues> {
-  const [minValue, maxValue] = values;
-
-  return (
-    clearFilter(minValue, state, "readingYear") ??
-    clearFilter(maxValue, state, "readingYear") ??
-    updateFilter(state, "readingYear", (item) => {
-      if (!item.readingYear) return false;
-      return item.readingYear >= minValue && item.readingYear <= maxValue;
-    })
-  );
-}
-
-export function handleFilterKind<
-  TItem extends { kind?: string },
-  TSortValue extends string,
-  TGroupedValues,
->(
-  state: FilterableState<TItem, TSortValue, TGroupedValues>,
-  value: string,
-  clearFilter: (
-    value: string,
-    state: FilterableState<TItem, TSortValue, TGroupedValues>,
-    key: string,
-  ) => FilterableState<TItem, TSortValue, TGroupedValues> | undefined,
-  updateFilter: (
-    state: FilterableState<TItem, TSortValue, TGroupedValues>,
-    key: string,
-    predicate: (item: TItem) => boolean,
-  ) => FilterableState<TItem, TSortValue, TGroupedValues>,
-): FilterableState<TItem, TSortValue, TGroupedValues> {
-  return (
-    clearFilter(value, state, "kind") ??
-    updateFilter(state, "kind", (item) => {
-      return item.kind === value;
-    })
-  );
-}
-
-export function handleFilterEdition<
-  TItem extends { edition?: string },
-  TSortValue extends string,
-  TGroupedValues,
->(
-  state: FilterableState<TItem, TSortValue, TGroupedValues>,
-  value: string,
-  clearFilter: (
-    value: string,
-    state: FilterableState<TItem, TSortValue, TGroupedValues>,
-    key: string,
-  ) => FilterableState<TItem, TSortValue, TGroupedValues> | undefined,
-  updateFilter: (
-    state: FilterableState<TItem, TSortValue, TGroupedValues>,
-    key: string,
-    predicate: (item: TItem) => boolean,
-  ) => FilterableState<TItem, TSortValue, TGroupedValues>,
-): FilterableState<TItem, TSortValue, TGroupedValues> {
-  return (
-    clearFilter(value, state, "edition") ??
-    updateFilter(state, "edition", (item) => {
-      return item.edition === value;
-    })
-  );
-}
-
 export function handleShowMore<
   TItem,
   TSortValue extends string,
@@ -251,30 +271,7 @@ export function handleSort<TItem, TSortValue extends string, TGroupedValues>(
   return {
     ...state,
     filteredValues,
-    groupedValues: groupValues(
-      filteredValues.slice(0, state.showCount),
-      value,
-    ),
+    groupedValues: groupValues(filteredValues.slice(0, state.showCount), value),
     sortValue: value,
-  };
-}
-
-export function createInitialState<
-  TItem,
-  TSortValue extends string,
-  TGroupedValues,
->(
-  values: TItem[],
-  initialSort: TSortValue,
-  showCountDefault: number,
-  groupValues: (values: TItem[], sortValue: TSortValue) => TGroupedValues,
-): FilterableState<TItem, TSortValue, TGroupedValues> {
-  return {
-    allValues: values,
-    filteredValues: values,
-    filters: {},
-    groupedValues: groupValues(values.slice(0, showCountDefault), initialSort),
-    showCount: showCountDefault,
-    sortValue: initialSort,
   };
 }

@@ -2,14 +2,11 @@ import type { FilterableState } from "~/utils";
 
 import { filterTools, sortString } from "~/utils";
 import {
-  createInitialState,
   handleFilterEdition,
   handleFilterKind,
   handleFilterReadingYear,
   handleFilterTitle,
   handleFilterYearPublished,
-  handleShowMore,
-  handleSort,
 } from "~/utils/reducerUtils";
 
 import type { ListItemValue } from "./Readings";
@@ -86,18 +83,25 @@ export function initState({
   initialSort: Sort;
   values: ListItemValue[];
 }): State {
-  return createInitialState(
-    values,
-    initialSort,
-    SHOW_COUNT_DEFAULT,
-    groupValues,
-  );
+  return {
+    allValues: values,
+    filteredValues: values,
+    filters: {},
+    groupedValues: groupValues(values.slice(0, SHOW_COUNT_DEFAULT)),
+    showCount: SHOW_COUNT_DEFAULT,
+    sortValue: initialSort,
+  };
 }
 
 export function reducer(state: State, action: ActionType): State {
   switch (action.type) {
     case Actions.FILTER_EDITION: {
-      return handleFilterEdition(state, action.value, clearFilter, updateFilter);
+      return handleFilterEdition(
+        state,
+        action.value,
+        clearFilter,
+        updateFilter,
+      );
     }
     case Actions.FILTER_KIND: {
       return handleFilterKind(state, action.value, clearFilter, updateFilter);
@@ -122,10 +126,21 @@ export function reducer(state: State, action: ActionType): State {
       return handleFilterTitle(state, action.value, clearFilter, updateFilter);
     }
     case Actions.SHOW_MORE: {
-      return handleShowMore(state, SHOW_COUNT_DEFAULT, groupValues);
+      const showCount = state.showCount + SHOW_COUNT_DEFAULT;
+      return {
+        ...state,
+        groupedValues: groupValues(state.filteredValues.slice(0, showCount)),
+        showCount,
+      };
     }
     case Actions.SORT: {
-      return handleSort(state, action.value, sortValues, groupValues);
+      const filteredValues = sortValues(state.filteredValues, action.value);
+      return {
+        ...state,
+        filteredValues,
+        groupedValues: groupValues(filteredValues.slice(0, state.showCount)),
+        sortValue: action.value,
+      };
     }
     // no default
   }
@@ -133,7 +148,6 @@ export function reducer(state: State, action: ActionType): State {
 
 function groupValues(
   values: ListItemValue[],
-  _sortValue: Sort,
 ): Map<string, Map<string, ListItemValue[]>> {
   const groupedValues = new Map<string, Map<string, ListItemValue[]>>();
 
