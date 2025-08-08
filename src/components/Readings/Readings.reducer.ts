@@ -1,6 +1,16 @@
 import type { FilterableState } from "~/utils";
 
 import { filterTools, sortString } from "~/utils";
+import {
+  createInitialState,
+  handleFilterEdition,
+  handleFilterKind,
+  handleFilterReadingYear,
+  handleFilterTitle,
+  handleFilterYearPublished,
+  handleShowMore,
+  handleSort,
+} from "~/utils/reducerUtils";
 
 import type { ListItemValue } from "./Readings";
 
@@ -76,79 +86,46 @@ export function initState({
   initialSort: Sort;
   values: ListItemValue[];
 }): State {
-  return {
-    allValues: values,
-    filteredValues: values,
-    filters: {},
-    groupedValues: groupValues(values.slice(0, SHOW_COUNT_DEFAULT)),
-    showCount: SHOW_COUNT_DEFAULT,
-    sortValue: initialSort,
-  };
+  return createInitialState(
+    values,
+    initialSort,
+    SHOW_COUNT_DEFAULT,
+    groupValues,
+  );
 }
 
 export function reducer(state: State, action: ActionType): State {
-  let groupedValues;
-  let filteredValues;
-
   switch (action.type) {
     case Actions.FILTER_EDITION: {
-      return (
-        clearFilter(action.value, state, "edition") ??
-        updateFilter(state, "edition", (value) => {
-          return value.edition === action.value;
-        })
-      );
+      return handleFilterEdition(state, action.value, clearFilter, updateFilter);
     }
     case Actions.FILTER_KIND: {
-      return (
-        clearFilter(action.value, state, "kind") ??
-        updateFilter(state, "kind", (value) => {
-          return value.kind === action.value;
-        })
-      );
+      return handleFilterKind(state, action.value, clearFilter, updateFilter);
     }
     case Actions.FILTER_PUBLISHED_YEAR: {
-      return updateFilter(state, "publishedYear", (value) => {
-        const publishedYear = value.yearPublished;
-        return (
-          publishedYear >= action.values[0] && publishedYear <= action.values[1]
-        );
-      });
+      return handleFilterYearPublished(
+        state,
+        action.values,
+        clearFilter,
+        updateFilter,
+      );
     }
     case Actions.FILTER_READING_YEAR: {
-      return updateFilter(state, "readingYear", (value) => {
-        const readingYear = value.readingYear;
-        return (
-          readingYear >= action.values[0] && readingYear <= action.values[1]
-        );
-      });
+      return handleFilterReadingYear(
+        state,
+        action.values,
+        clearFilter,
+        updateFilter,
+      );
     }
     case Actions.FILTER_TITLE: {
-      const regex = new RegExp(action.value, "i");
-      return updateFilter(state, "title", (value) => {
-        return regex.test(value.title);
-      });
+      return handleFilterTitle(state, action.value, clearFilter, updateFilter);
     }
     case Actions.SHOW_MORE: {
-      const showCount = state.showCount + SHOW_COUNT_DEFAULT;
-
-      groupedValues = groupValues(state.filteredValues.slice(0, showCount));
-
-      return {
-        ...state,
-        groupedValues,
-        showCount,
-      };
+      return handleShowMore(state, SHOW_COUNT_DEFAULT, groupValues);
     }
     case Actions.SORT: {
-      filteredValues = sortValues(state.filteredValues, action.value);
-      groupedValues = groupValues(filteredValues.slice(0, state.showCount));
-      return {
-        ...state,
-        filteredValues,
-        groupedValues,
-        sortValue: action.value,
-      };
+      return handleSort(state, action.value, sortValues, groupValues);
     }
     // no default
   }
@@ -156,6 +133,7 @@ export function reducer(state: State, action: ActionType): State {
 
 function groupValues(
   values: ListItemValue[],
+  _sortValue: Sort,
 ): Map<string, Map<string, ListItemValue[]>> {
   const groupedValues = new Map<string, Map<string, ListItemValue[]>>();
 

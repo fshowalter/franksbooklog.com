@@ -7,6 +7,15 @@ import {
   sortNumber,
   sortString,
 } from "~/utils";
+import {
+  createInitialState,
+  handleFilterKind,
+  handleFilterTitle,
+  handleFilterYearPublished,
+  handleFilterYearReviewed,
+  handleShowMore,
+  handleSort,
+} from "~/utils/reducerUtils";
 
 export type Sort =
   | "author-asc"
@@ -56,10 +65,6 @@ const monthGroupFormat = new Intl.DateTimeFormat("en-US", {
   year: "numeric",
 });
 
-const yearFormat = new Intl.DateTimeFormat("en-US", {
-  timeZone: "UTC",
-  year: "numeric",
-});
 
 type State = FilterableState<ListItemValue, Sort, Map<string, ListItemValue[]>>;
 
@@ -149,78 +154,43 @@ export function initState({
   initialSort: Sort;
   values: ListItemValue[];
 }): State {
-  return {
-    allValues: values,
-    filteredValues: values,
-    filters: {},
-    groupedValues: groupValues(
-      values.slice(0, SHOW_COUNT_DEFAULT),
-      initialSort,
-    ),
-    showCount: SHOW_COUNT_DEFAULT,
-    sortValue: initialSort,
-  };
+  return createInitialState(
+    values,
+    initialSort,
+    SHOW_COUNT_DEFAULT,
+    groupValues,
+  );
 }
 
 export function reducer(state: State, action: ActionType): State {
-  let filteredValues;
-  let groupedValues;
-
   switch (action.type) {
     case Actions.FILTER_KIND: {
-      return (
-        clearFilter(action.value, state, "kind") ??
-        updateFilter(state, "kind", (value) => {
-          return value.kind === action.value;
-        })
-      );
+      return handleFilterKind(state, action.value, clearFilter, updateFilter);
     }
     case Actions.FILTER_TITLE: {
-      const regex = new RegExp(action.value, "i");
-      return updateFilter(state, "title", (value) => {
-        return regex.test(value.title);
-      });
+      return handleFilterTitle(state, action.value, clearFilter, updateFilter);
     }
     case Actions.FILTER_YEAR_PUBLISHED: {
-      return updateFilter(state, "yearPublished", (value) => {
-        const yearPublished = value.yearPublished;
-        return (
-          yearPublished >= action.values[0] && yearPublished <= action.values[1]
-        );
-      });
+      return handleFilterYearPublished(
+        state,
+        action.values,
+        clearFilter,
+        updateFilter,
+      );
     }
     case Actions.FILTER_YEAR_REVIEWED: {
-      return updateFilter(state, "reviewYear", (value) => {
-        const reviewYear = yearFormat.format(value.date);
-        return reviewYear >= action.values[0] && reviewYear <= action.values[1];
-      });
+      return handleFilterYearReviewed(
+        state,
+        action.values,
+        clearFilter,
+        updateFilter,
+      );
     }
     case Actions.SHOW_MORE: {
-      const showCount = state.showCount + SHOW_COUNT_DEFAULT;
-
-      groupedValues = groupValues(
-        state.filteredValues.slice(0, showCount),
-        state.sortValue,
-      );
-
-      return {
-        ...state,
-        groupedValues,
-        showCount,
-      };
+      return handleShowMore(state, SHOW_COUNT_DEFAULT, groupValues);
     }
     case Actions.SORT: {
-      filteredValues = sortValues(state.filteredValues, action.value);
-      groupedValues = groupValues(
-        filteredValues.slice(0, state.showCount),
-        action.value,
-      );
-      return {
-        ...state,
-        filteredValues,
-        groupedValues,
-        sortValue: action.value,
-      };
+      return handleSort(state, action.value, sortValues, groupValues);
     }
 
     // no default
