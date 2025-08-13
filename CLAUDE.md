@@ -139,7 +139,10 @@ Pagefind integration builds search index at build time and serves it in dev mode
     - Exercise interactive elements like a user
   - Goal: By exercising all options and rendering all permutations, any uncovered code must be dead code safe to remove
 
-### Test Coverage Commands
+## Test Runner Notes
 
-- Add flag to run test coverage with specified max-workers:
-  - `npm run test:coverage -- --max-workers=2`
+- When running test or test:coverage, make sure and run with max-workers=2
+
+## TypeScript Best Practices
+
+- Don't use the `any` type. The linter will error on it.

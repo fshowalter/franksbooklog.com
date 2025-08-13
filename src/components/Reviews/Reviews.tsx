@@ -1,5 +1,6 @@
 import { type JSX, useReducer } from "react";
 
+import type { BackdropImageProps } from "~/api/backdrops";
 import type { CoverImageProps } from "~/api/covers";
 import type { Review } from "~/api/reviews";
 
@@ -18,6 +19,14 @@ import type { Sort } from "./Reviews.reducer";
 import { Filters } from "./Filters";
 import { Actions, initState, reducer } from "./Reviews.reducer";
 
+export type InteractiveProps = {
+  distinctKinds: readonly string[];
+  distinctPublishedYears: readonly string[];
+  distinctReviewYears: readonly string[];
+  initialSort: Sort;
+  values: ListItemValue[];
+};
+
 export type ListItemValue = Pick<
   Review,
   | "date"
@@ -33,16 +42,8 @@ export type ListItemValue = Pick<
   coverImageProps: CoverImageProps;
 };
 
-export type InteractiveProps = {
-  distinctKinds: readonly string[];
-  distinctPublishedYears: readonly string[];
-  distinctReviewYears: readonly string[];
-  initialSort: Sort;
-  values: ListItemValue[];
-};
-
 export type Props = InteractiveProps & {
-  backdropImageProps: any;
+  backdropImageProps: BackdropImageProps;
   deck: string;
 };
 

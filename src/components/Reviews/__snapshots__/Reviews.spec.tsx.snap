@@ -60266,8 +60266,8 @@ exports[`Reviews > renders 1`] = `
                       w-full bg-subtle text-sm
                       tablet:pt-12 tablet:text-base
                       tablet-landscape:overflow-visible
-                      tablet-landscape:bg-default
-                      tablet-landscape:px-container tablet-landscape:pt-0
+                      tablet-landscape:bg-default tablet-landscape:px-container
+                      tablet-landscape:pt-0
                       laptop:px-8
                     "
                 >
@@ -60283,8 +60283,7 @@ exports[`Reviews > renders 1`] = `
                       class="
                           hidden w-full py-10 font-sans text-xs font-bold
                           tracking-wide text-subtle uppercase
-                          tablet-landscape:block
-                          tablet-landscape:shadow-bottom
+                          tablet-landscape:block tablet-landscape:shadow-bottom
                         "
                     >
                       Filter & Sort

@@ -1,6 +1,8 @@
 import { type JSX, useReducer } from "react";
 
 import type { Author } from "~/api/authors";
+import type { AvatarImageProps } from "~/api/avatars";
+import type { BackdropImageProps } from "~/api/backdrops";
 import type { CoverImageProps } from "~/api/covers";
 
 import { Abandoned } from "~/components/Abandoned";
@@ -25,17 +27,6 @@ export type InteractiveProps = Pick<Author, "name"> & {
   works: ListItemValue[];
 };
 
-export type Props = InteractiveProps & {
-  avatarImageProps: any;
-  backdropImageProps: any;
-  deck: string;
-};
-
-export const AvatarImageConfig = {
-  height: 250,
-  width: 250,
-};
-
 export type ListItemValue = Pick<
   AuthorWork,
   | "grade"
@@ -50,6 +41,17 @@ export type ListItemValue = Pick<
   otherAuthors: {
     name: string;
   }[];
+};
+
+export type Props = InteractiveProps & {
+  avatarImageProps: AvatarImageProps | undefined;
+  backdropImageProps: BackdropImageProps;
+  deck: string;
+};
+
+export const AvatarImageConfig = {
+  height: 250,
+  width: 250,
 };
 
 type AuthorWork = Author["reviewedWorks"][number];

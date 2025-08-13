@@ -1,5 +1,6 @@
 import { type JSX, useReducer } from "react";
 
+import type { BackdropImageProps } from "~/api/backdrops";
 import type { CoverImageProps } from "~/api/covers";
 import type { TimelineEntry } from "~/api/timelineEntries";
 
@@ -19,6 +20,19 @@ import type { Sort } from "./Readings.reducer";
 import { Filters } from "./Filters";
 import { Actions, initState, reducer } from "./Readings.reducer";
 
+export type InteractiveProps = {
+  abandonedCount: number;
+  bookCount: number;
+  distinctEditions: string[];
+  distinctKinds: string[];
+  distinctReadingYears: string[];
+  distinctWorkYears: string[];
+  initialSort: Sort;
+  shortStoryCount: number;
+  values: ListItemValue[];
+  workCount: number;
+};
+
 export type ListItemValue = Pick<
   TimelineEntry,
   | "authors"
@@ -37,21 +51,9 @@ export type ListItemValue = Pick<
   readingMonth: string;
   readingYear: string;
 };
-export type InteractiveProps = {
-  abandonedCount: number;
-  bookCount: number;
-  distinctEditions: string[];
-  distinctKinds: string[];
-  distinctReadingYears: string[];
-  distinctWorkYears: string[];
-  initialSort: Sort;
-  shortStoryCount: number;
-  values: ListItemValue[];
-  workCount: number;
-};
 
 export type Props = InteractiveProps & {
-  backdropImageProps: any;
+  backdropImageProps: BackdropImageProps;
   deck: string;
 };
 

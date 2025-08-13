@@ -2,6 +2,7 @@ import { type JSX, useReducer } from "react";
 
 import type { Author } from "~/api/authors";
 import type { AvatarImageProps } from "~/api/avatars";
+import type { BackdropImageProps } from "~/api/backdrops";
 
 import { GroupedList } from "~/components/GroupedList";
 import { ListItem } from "~/components/ListItem";
@@ -12,18 +13,19 @@ import type { Sort } from "./Authors.reducer";
 
 import { Actions, initState, reducer } from "./Authors.reducer";
 import { Filters } from "./Filters";
-export type ListItemValue = Pick<Author, "name" | "slug" | "sortName"> & {
-  avatarImageProps: AvatarImageProps | undefined;
-  reviewedWorkCount: number;
-};
 
 export type InteractiveProps = {
   initialSort: Sort;
   values: ListItemValue[];
 };
 
+export type ListItemValue = Pick<Author, "name" | "slug" | "sortName"> & {
+  avatarImageProps: AvatarImageProps | undefined;
+  reviewedWorkCount: number;
+};
+
 export type Props = InteractiveProps & {
-  backdropImageProps: any;
+  backdropImageProps: BackdropImageProps;
   deck: string;
 };
 
