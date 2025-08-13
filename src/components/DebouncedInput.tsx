@@ -1,8 +1,12 @@
 import type { JSX } from "react";
 
-import { LabelText } from "./LabelText";
+import { useMemo } from "react";
 
-type onChangeHandler = (value: string) => void;
+import type { OnChangeHandler } from "~/utils/debounce";
+
+import { debounce } from "~/utils/debounce";
+
+import { LabelText } from "./LabelText";
 
 export function DebouncedInput({
   label,
@@ -10,10 +14,13 @@ export function DebouncedInput({
   placeholder,
 }: {
   label: string;
-  onInputChange: onChangeHandler;
+  onInputChange: OnChangeHandler;
   placeholder: string;
 }): JSX.Element {
-  const debouncedHandleChange = underscoreDebounce(onInputChange, 150);
+  const debouncedHandleChange = useMemo(
+    () => debounce(onInputChange, 150),
+    [onInputChange],
+  );
 
   return (
     <label className="flex flex-col text-subtle">
@@ -31,45 +38,4 @@ export function DebouncedInput({
       />
     </label>
   );
-}
-
-/**
- * Wraps a given function in a setTimeout call with the given milliseconds.
- * @param func The function to wrap.
- * @param wait The number of milliseconds to wait before executing.
- * @param args The function args.
- */
-function delay<F extends onChangeHandler>(
-  func: F,
-  wait: number,
-  value: string,
-): NodeJS.Timeout {
-  return setTimeout(function delayWrap() {
-    return func(value);
-  }, wait);
-}
-
-/**
- * Debounce function lifted from underscore.js.
- * @param func The function to wrap.
- * @param wait The number of milliseconds to wait.
- */
-function underscoreDebounce<F extends onChangeHandler>(
-  func: F,
-  wait: number,
-): onChangeHandler {
-  let timeout: NodeJS.Timeout | undefined;
-
-  const later = function later(value: string) {
-    timeout = undefined;
-    func(value);
-  };
-
-  return function debouncedFunction(value: string): void {
-    if (timeout) {
-      clearTimeout(timeout);
-    }
-
-    timeout = delay(later, wait, value);
-  };
 }
