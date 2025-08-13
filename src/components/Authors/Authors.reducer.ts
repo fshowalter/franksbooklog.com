@@ -4,7 +4,6 @@ import { buildGroupValues, filterTools, sortNumber, sortString } from "~/utils";
 import {
   createInitialState,
   handleFilterName,
-  handleShowMore,
   handleSort,
 } from "~/utils/reducerUtils";
 
@@ -12,7 +11,6 @@ import type { ListItemValue } from "./Authors";
 
 export enum Actions {
   FILTER_NAME = "FILTER_NAME",
-  SHOW_MORE = "SHOW_MORE",
   SORT = "SORT",
 }
 
@@ -25,7 +23,62 @@ export type Sort =
 const groupValues = buildGroupValues(groupForValue);
 const { clearFilter, updateFilter } = filterTools(sortValues, groupValues);
 
+export type ActionType = FilterNameAction | SortAction;
+
+type FilterNameAction = {
+  type: Actions.FILTER_NAME;
+  value: string;
+};
+
+type SortAction = {
+  type: Actions.SORT;
+  value: Sort;
+};
+
 type State = FilterableState<ListItemValue, Sort, Map<string, ListItemValue[]>>;
+
+export function initState({
+  initialSort,
+  values,
+}: {
+  initialSort: Sort;
+  values: ListItemValue[];
+}): State {
+  const initialState = createInitialState(
+    values,
+    initialSort,
+    values.length, // Show all items by default
+    groupValues,
+  );
+  return initialState;
+}
+
+export function reducer(state: State, action: ActionType): State {
+  switch (action.type) {
+    case Actions.FILTER_NAME: {
+      const newState = handleFilterName(
+        state,
+        action.value,
+        clearFilter,
+        updateFilter,
+      );
+      // Always show all filtered items
+      return {
+        ...newState,
+        showCount: newState.filteredValues.length,
+      };
+    }
+    case Actions.SORT: {
+      const newState = handleSort(state, action.value, sortValues, groupValues);
+      // Always show all items after sorting
+      return {
+        ...newState,
+        showCount: newState.filteredValues.length,
+      };
+    }
+    // no default
+  }
+}
 
 function groupForValue(item: ListItemValue, sortValue: Sort): string {
   switch (sortValue) {
@@ -61,52 +114,4 @@ function sortValues(values: ListItemValue[], sortOrder: Sort) {
   const comparer = sortMap[sortOrder];
 
   return values.sort(comparer);
-}
-
-const SHOW_COUNT_DEFAULT = 100;
-
-export type ActionType = FilterNameAction | ShowMoreAction | SortAction;
-
-type FilterNameAction = {
-  type: Actions.FILTER_NAME;
-  value: string;
-};
-
-type ShowMoreAction = {
-  type: Actions.SHOW_MORE;
-};
-
-type SortAction = {
-  type: Actions.SORT;
-  value: Sort;
-};
-
-export function initState({
-  initialSort,
-  values,
-}: {
-  initialSort: Sort;
-  values: ListItemValue[];
-}): State {
-  return createInitialState(
-    values,
-    initialSort,
-    SHOW_COUNT_DEFAULT,
-    groupValues,
-  );
-}
-
-export function reducer(state: State, action: ActionType): State {
-  switch (action.type) {
-    case Actions.FILTER_NAME: {
-      return handleFilterName(state, action.value, clearFilter, updateFilter);
-    }
-    case Actions.SHOW_MORE: {
-      return handleShowMore(state, SHOW_COUNT_DEFAULT, groupValues);
-    }
-    case Actions.SORT: {
-      return handleSort(state, action.value, sortValues, groupValues);
-    }
-    // no default
-  }
 }
