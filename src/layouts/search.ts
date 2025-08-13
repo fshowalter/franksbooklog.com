@@ -86,14 +86,6 @@ export function initPageFind(): void {
       }
     }
 
-    // Focus the search input after modal opens
-    requestAnimationFrame(() => {
-      const input = document.querySelector(
-        "#pagefind-search-input",
-      ) as HTMLInputElement;
-      input?.focus();
-    });
-
     event?.stopPropagation();
     globalThis.addEventListener("click", onClick);
   };
