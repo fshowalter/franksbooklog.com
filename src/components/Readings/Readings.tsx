@@ -20,19 +20,6 @@ import type { Sort } from "./Readings.reducer";
 import { Filters } from "./Filters";
 import { Actions, initState, reducer } from "./Readings.reducer";
 
-type InteractiveProps = {
-  abandonedCount: number;
-  bookCount: number;
-  distinctEditions: string[];
-  distinctKinds: string[];
-  distinctReadingYears: string[];
-  distinctWorkYears: string[];
-  initialSort: Sort;
-  shortStoryCount: number;
-  values: ListItemValue[];
-  workCount: number;
-};
-
 export type ListItemValue = Pick<
   TimelineEntry,
   | "authors"
@@ -55,6 +42,19 @@ export type ListItemValue = Pick<
 export type Props = InteractiveProps & {
   backdropImageProps: BackdropImageProps;
   deck: string;
+};
+
+type InteractiveProps = {
+  abandonedCount: number;
+  bookCount: number;
+  distinctEditions: string[];
+  distinctKinds: string[];
+  distinctReadingYears: string[];
+  distinctWorkYears: string[];
+  initialSort: Sort;
+  shortStoryCount: number;
+  values: ListItemValue[];
+  workCount: number;
 };
 
 export function Readings({

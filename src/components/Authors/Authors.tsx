@@ -14,11 +14,6 @@ import type { Sort } from "./Authors.reducer";
 import { Actions, initState, reducer } from "./Authors.reducer";
 import { Filters } from "./Filters";
 
-type InteractiveProps = {
-  initialSort: Sort;
-  values: ListItemValue[];
-};
-
 export type ListItemValue = Pick<Author, "name" | "slug" | "sortName"> & {
   avatarImageProps: AvatarImageProps | undefined;
   reviewedWorkCount: number;
@@ -27,6 +22,11 @@ export type ListItemValue = Pick<Author, "name" | "slug" | "sortName"> & {
 export type Props = InteractiveProps & {
   backdropImageProps: BackdropImageProps;
   deck: string;
+};
+
+type InteractiveProps = {
+  initialSort: Sort;
+  values: ListItemValue[];
 };
 
 export function Authors({

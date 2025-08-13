@@ -20,11 +20,9 @@ import type { Sort } from "./Author.reducer";
 import { Actions, initState, reducer } from "./Author.reducer";
 import { Filters } from "./Filters";
 
-type InteractiveProps = Pick<Author, "name"> & {
-  distinctKinds: readonly string[];
-  distinctPublishedYears: readonly string[];
-  initialSort: Sort;
-  works: ListItemValue[];
+export const AvatarImageConfig = {
+  height: 250,
+  width: 250,
 };
 
 export type ListItemValue = Pick<
@@ -49,12 +47,14 @@ export type Props = InteractiveProps & {
   deck: string;
 };
 
-export const AvatarImageConfig = {
-  height: 250,
-  width: 250,
-};
-
 type AuthorWork = Author["reviewedWorks"][number];
+
+type InteractiveProps = Pick<Author, "name"> & {
+  distinctKinds: readonly string[];
+  distinctPublishedYears: readonly string[];
+  initialSort: Sort;
+  works: ListItemValue[];
+};
 
 export function Author({
   distinctKinds,

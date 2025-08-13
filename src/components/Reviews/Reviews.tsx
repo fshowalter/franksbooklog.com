@@ -19,14 +19,6 @@ import type { Sort } from "./Reviews.reducer";
 import { Filters } from "./Filters";
 import { Actions, initState, reducer } from "./Reviews.reducer";
 
-type InteractiveProps = {
-  distinctKinds: readonly string[];
-  distinctPublishedYears: readonly string[];
-  distinctReviewYears: readonly string[];
-  initialSort: Sort;
-  values: ListItemValue[];
-};
-
 export type ListItemValue = Pick<
   Review,
   | "date"
@@ -48,6 +40,14 @@ export type Props = InteractiveProps & {
 };
 
 type Author = Pick<Review["authors"][0], "name" | "sortName"> & {};
+
+type InteractiveProps = {
+  distinctKinds: readonly string[];
+  distinctPublishedYears: readonly string[];
+  distinctReviewYears: readonly string[];
+  initialSort: Sort;
+  values: ListItemValue[];
+};
 
 export function Reviews({
   distinctKinds,
