@@ -3,6 +3,14 @@ import fs from "node:fs";
 import path from "node:path";
 import sharp from "sharp";
 
+import {
+  createCacheConfig,
+  createCacheKey,
+  ensureCacheDir,
+  getCachedItem,
+  saveCachedItem,
+} from "~/utils/cache";
+
 import { normalizeSources } from "./utils/normalizeSources";
 
 export type CoverImageProps = {
@@ -20,6 +28,8 @@ type Work = {
 const images = import.meta.glob<{ default: ImageMetadata }>(
   "/content/assets/covers/*.png",
 );
+
+const cacheConfig = createCacheConfig("cover-base64");
 
 export async function getCoverHeight(coverPath: string, targetWidth: number) {
   try {
@@ -115,12 +125,43 @@ export async function getFluidCoverImageProps(
 }
 
 export async function getOpenGraphCoverAsBase64String(work: Work) {
+  const width = 420;
+  const format = "png";
+  let cacheKey = "";
+
+  if (cacheConfig.enableCache) {
+    await ensureCacheDir(cacheConfig.cacheDir);
+
+    const workSlug = work.slug || work.includedInSlugs.join("-");
+    const cacheKeyData = `${workSlug}-${width}-${format}`;
+    cacheKey = createCacheKey(cacheKeyData);
+
+    const cachedCover = await getCachedItem<string>(
+      cacheConfig.cacheDir,
+      cacheKey,
+      "txt",
+      false,
+      cacheConfig.debugCache,
+      `Cover base64: ${workSlug}`,
+    );
+
+    if (cachedCover) {
+      return cachedCover;
+    }
+  }
+
   const imageBuffer = await sharp(getWorkCoverPath(work))
-    .resize(420)
-    .toFormat("png")
+    .resize(width)
+    .toFormat(format)
     .toBuffer();
 
-  return `data:${"image/png"};base64,${imageBuffer.toString("base64")}`;
+  const base64String = `data:${"image/png"};base64,${imageBuffer.toString("base64")}`;
+
+  if (cacheConfig.enableCache) {
+    await saveCachedItem(cacheConfig.cacheDir, cacheKey, "txt", base64String);
+  }
+
+  return base64String;
 }
 
 export async function getStructuredDataCoverSrc(work: Work): Promise<string> {

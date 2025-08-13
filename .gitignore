@@ -25,4 +25,9 @@ performance-report.txt
 # jetbrains setting folder
 .idea/
 
+# code coverage
 coverage/
+
+# cache
+.cache
+.claude
