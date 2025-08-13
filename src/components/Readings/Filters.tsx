@@ -1,8 +1,8 @@
 import type { JSX } from "react";
 
-import { DebouncedInput } from "~/components/DebouncedInput";
 import { SelectField } from "~/components/SelectField";
 import { SelectOptions } from "~/components/SelectOptions";
+import { TextFilter } from "~/components/TextFilter";
 import { YearInput } from "~/components/YearInput";
 
 import type { ActionType, Sort } from "./Readings.reducer";
@@ -26,7 +26,7 @@ export function Filters({
 }): JSX.Element {
   return (
     <>
-      <DebouncedInput
+      <TextFilter
         label="Title"
         onInputChange={(value) =>
           dispatch({ type: Actions.FILTER_TITLE, value })

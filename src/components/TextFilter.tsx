@@ -8,7 +8,7 @@ import { debounce } from "~/utils/debounce";
 
 import { LabelText } from "./LabelText";
 
-export function DebouncedInput({
+export function TextFilter({
   label,
   onInputChange,
   placeholder,

@@ -1,5 +1,5 @@
-import { DebouncedInput } from "~/components/DebouncedInput";
 import { SelectField } from "~/components/SelectField";
+import { TextFilter } from "~/components/TextFilter";
 
 import type { ActionType, Sort } from "./Authors.reducer";
 
@@ -14,7 +14,7 @@ export function Filters({
 }) {
   return (
     <>
-      <DebouncedInput
+      <TextFilter
         label="Name"
         onInputChange={(value) =>
           dispatch({ type: Actions.FILTER_NAME, value })
