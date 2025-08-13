@@ -92,7 +92,7 @@ const canonicalUrl = `${import.meta.env.SITE}${new URL(Astro.request.url).pathna
         backdrop:bg-[#000] backdrop:opacity-40
         open:flex open:flex-col
         tablet:mx-auto tablet:mt-16 tablet:h-min
-        tablet:max-h-[min(100vh-128px,900px)] tablet:min-h-60
+        tablet:max-h-[min(100vh-128px,900px)]
         tablet:max-w-[min(100vw-64px,36rem)] tablet:rounded-xl
         desktop:min-h-0
       `}
@@ -238,11 +238,9 @@ const canonicalUrl = `${import.meta.env.SITE}${new URL(Astro.request.url).pathna
 
         <div
           class={`
-            hidden px-4 py-4 font-sans text-xs font-light tracking-wide
-            text-subtle
+            px-4 py-4 font-sans text-xs font-light tracking-wide text-subtle
             tablet:px-6
-            laptop:px-8
-            desktop:block
+            laptop:block laptop:px-8
           `}
         >
           <kbd class="rounded-md bg-default p-2 font-mono text-xs text-subtle"
