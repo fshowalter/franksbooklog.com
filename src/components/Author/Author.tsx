@@ -20,7 +20,7 @@ import type { Sort } from "./Author.reducer";
 import { Actions, initState, reducer } from "./Author.reducer";
 import { Filters } from "./Filters";
 
-export type InteractiveProps = Pick<Author, "name"> & {
+type InteractiveProps = Pick<Author, "name"> & {
   distinctKinds: readonly string[];
   distinctPublishedYears: readonly string[];
   initialSort: Sort;

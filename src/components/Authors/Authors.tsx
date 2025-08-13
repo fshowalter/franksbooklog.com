@@ -14,7 +14,7 @@ import type { Sort } from "./Authors.reducer";
 import { Actions, initState, reducer } from "./Authors.reducer";
 import { Filters } from "./Filters";
 
-export type InteractiveProps = {
+type InteractiveProps = {
   initialSort: Sort;
   values: ListItemValue[];
 };

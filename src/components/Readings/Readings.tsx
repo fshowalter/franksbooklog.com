@@ -20,7 +20,7 @@ import type { Sort } from "./Readings.reducer";
 import { Filters } from "./Filters";
 import { Actions, initState, reducer } from "./Readings.reducer";
 
-export type InteractiveProps = {
+type InteractiveProps = {
   abandonedCount: number;
   bookCount: number;
   distinctEditions: string[];

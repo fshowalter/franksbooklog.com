@@ -19,7 +19,7 @@ import type { Sort } from "./Reviews.reducer";
 import { Filters } from "./Filters";
 import { Actions, initState, reducer } from "./Reviews.reducer";
 
-export type InteractiveProps = {
+type InteractiveProps = {
   distinctKinds: readonly string[];
   distinctPublishedYears: readonly string[];
   distinctReviewYears: readonly string[];
