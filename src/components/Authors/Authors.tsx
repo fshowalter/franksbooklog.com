@@ -29,7 +29,10 @@ export type Props = InteractiveProps & {
   deck: string;
 };
 
-export function Authors({ initialSort, values }: InteractiveProps): JSX.Element {
+export function Authors({
+  initialSort,
+  values,
+}: InteractiveProps): JSX.Element {
   const [state, dispatch] = useReducer(
     reducer,
     {
