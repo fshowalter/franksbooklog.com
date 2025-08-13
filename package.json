@@ -5,6 +5,7 @@
   "scripts": {
     "astro": "astro",
     "build": "astro build",
+    "build:perf": "DEBUG_PERF=true DEBUG_CACHE=true astro build 2>&1 | tee build-perf.log",
     "check": "astro check",
     "dev": "astro dev",
     "format": "prettier . --check",
