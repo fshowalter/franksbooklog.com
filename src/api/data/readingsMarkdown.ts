@@ -4,6 +4,7 @@ import { z } from "zod";
 
 import { getContentPath } from "./utils/getContentPath";
 import { nullableString } from "./utils/nullable";
+import { perfLogger } from "./utils/performanceLogger";
 
 const readingsMarkdownDirectory = getContentPath("readings");
 
@@ -37,36 +38,40 @@ export type MarkdownReading = {
 type TimelineEntry = z.infer<typeof TimelineEntrySchema>;
 
 export async function allReadingsMarkdown(): Promise<MarkdownReading[]> {
-  return await parseAllReadingsMarkdown();
+  return await perfLogger.measure("allReadingsMarkdown", async () => {
+    return await parseAllReadingsMarkdown();
+  });
 }
 
 async function parseAllReadingsMarkdown() {
-  const dirents = await fs.readdir(readingsMarkdownDirectory, {
-    withFileTypes: true,
+  return await perfLogger.measure("parseAllReadingsMarkdown", async () => {
+    const dirents = await fs.readdir(readingsMarkdownDirectory, {
+      withFileTypes: true,
+    });
+
+    return Promise.all(
+      dirents
+        .filter((item) => !item.isDirectory() && item.name.endsWith(".md"))
+        .map(async (item) => {
+          const fileContents = await fs.readFile(
+            `${readingsMarkdownDirectory}/${item.name}`,
+            "utf8",
+          );
+
+          const { content, data } = matter(fileContents);
+          const greyMatter = DataSchema.parse(data);
+
+          const markdownReading: MarkdownReading = {
+            edition: greyMatter.edition,
+            editionNotesRaw: greyMatter.edition_notes,
+            readingNotesRaw: content,
+            sequence: greyMatter.sequence,
+            slug: greyMatter.work_slug,
+            timeline: greyMatter.timeline,
+          };
+
+          return markdownReading;
+        }),
+    );
   });
-
-  return Promise.all(
-    dirents
-      .filter((item) => !item.isDirectory() && item.name.endsWith(".md"))
-      .map(async (item) => {
-        const fileContents = await fs.readFile(
-          `${readingsMarkdownDirectory}/${item.name}`,
-          "utf8",
-        );
-
-        const { content, data } = matter(fileContents);
-        const greyMatter = DataSchema.parse(data);
-
-        const markdownReading: MarkdownReading = {
-          edition: greyMatter.edition,
-          editionNotesRaw: greyMatter.edition_notes,
-          readingNotesRaw: content,
-          sequence: greyMatter.sequence,
-          slug: greyMatter.work_slug,
-          timeline: greyMatter.timeline,
-        };
-
-        return markdownReading;
-      }),
-  );
 }

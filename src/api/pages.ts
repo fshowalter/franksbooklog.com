@@ -5,6 +5,7 @@ import strip from "strip-markdown";
 
 import { allPagesMarkdown } from "./data/pagesMarkdown";
 import { allReviewedWorksJson } from "./data/reviewedWorksJson";
+import { perfLogger } from "./data/utils/performanceLogger";
 import { getHtml } from "./utils/markdown/getHtml";
 import { removeFootnotes } from "./utils/markdown/removeFootnotes";
 
@@ -23,19 +24,21 @@ export function getContentPlainText(rawContent: string): string {
 }
 
 export async function getPage(slug: string): Promise<MarkdownPage> {
-  const pages = await allPagesMarkdown();
+  return await perfLogger.measure("getPage", async () => {
+    const pages = await allPagesMarkdown();
 
-  const matchingPage = pages.find((page) => {
-    return page.slug === slug;
-  })!;
+    const matchingPage = pages.find((page) => {
+      return page.slug === slug;
+    })!;
 
-  const reviewedWorksJson = await allReviewedWorksJson();
+    const reviewedWorksJson = await allReviewedWorksJson();
 
-  return {
-    content: getHtml(matchingPage.rawContent, reviewedWorksJson),
-    rawContent: matchingPage?.rawContent || "",
-    title: matchingPage.title,
-  };
+    return {
+      content: getHtml(matchingPage.rawContent, reviewedWorksJson),
+      rawContent: matchingPage?.rawContent || "",
+      title: matchingPage.title,
+    };
+  });
 }
 
 function getMastProcessor() {

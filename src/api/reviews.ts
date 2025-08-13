@@ -16,6 +16,7 @@ import type { MarkdownReview } from "./data/reviewsMarkdown";
 import { allReadingsMarkdown } from "./data/readingsMarkdown";
 import { allReviewedWorksJson } from "./data/reviewedWorksJson";
 import { allReviewsMarkdown } from "./data/reviewsMarkdown";
+import { perfLogger } from "./data/utils/performanceLogger";
 import { linkReviewedWorks } from "./utils/linkReviewedWorks";
 import { getHtml } from "./utils/markdown/getHtml";
 import { removeFootnotes } from "./utils/markdown/removeFootnotes";
@@ -59,18 +60,20 @@ type Reviews = {
 };
 
 export async function allReviews(): Promise<Reviews> {
-  if (cachedReviews) {
-    return cachedReviews;
-  }
-  const reviewedWorksJson =
-    cachedReviewedWorksJson || (await allReviewedWorksJson());
-  const reviews = await parseReviewedWorksJson(reviewedWorksJson);
+  return await perfLogger.measure("allReviews", async () => {
+    if (cachedReviews) {
+      return cachedReviews;
+    }
+    const reviewedWorksJson =
+      cachedReviewedWorksJson || (await allReviewedWorksJson());
+    const reviews = await parseReviewedWorksJson(reviewedWorksJson);
 
-  if (!import.meta.env.DEV) {
-    cachedReviews = reviews;
-  }
+    if (!import.meta.env.DEV) {
+      cachedReviews = reviews;
+    }
 
-  return reviews;
+    return reviews;
+  });
 }
 
 export function getContentPlainText(rawContent: string): string {
@@ -82,94 +85,103 @@ export function getContentPlainText(rawContent: string): string {
 }
 
 export async function loadContent(review: Review): Promise<ReviewWithContent> {
-  const readingsMarkdown =
-    cachedReadingsMarkdown || (await allReadingsMarkdown());
-  const reviewedWorksJson = await allReviewedWorksJson();
+  return await perfLogger.measure("loadContent", async () => {
+    const readingsMarkdown =
+      cachedReadingsMarkdown || (await allReadingsMarkdown());
+    const reviewedWorksJson = await allReviewedWorksJson();
 
-  const excerptPlainText = getMastProcessor()
-    .use(removeFootnotes)
-    .use(trimToExcerpt)
-    .use(strip)
-    .processSync(review.rawContent)
-    .toString();
+    const excerptPlainText = getMastProcessor()
+      .use(removeFootnotes)
+      .use(trimToExcerpt)
+      .use(strip)
+      .processSync(review.rawContent)
+      .toString();
 
-  const readings = review.readings
-    .map((reading) => {
-      const markdownReading = readingsMarkdown.find((markdownReading) => {
-        return markdownReading.slug === review.slug;
-      })!;
+    const readings = review.readings
+      .map((reading) => {
+        const markdownReading = readingsMarkdown.find((markdownReading) => {
+          return markdownReading.slug === review.slug;
+        })!;
 
-      if (!markdownReading) {
-        throw new Error(`No markdown readings found with slug ${review.slug}`);
-      }
+        if (!markdownReading) {
+          throw new Error(
+            `No markdown readings found with slug ${review.slug}`,
+          );
+        }
 
-      return {
-        ...reading,
-        ...markdownReading,
-        editionNotes: getHtmlAsSpan(
-          markdownReading.editionNotesRaw,
-          reviewedWorksJson,
-        ),
-        readingNotes: getHtml(
-          markdownReading.readingNotesRaw,
-          reviewedWorksJson,
-        ),
-      };
-    })
-    .sort((a, b) => {
-      return +b.date - +a.date;
-    });
+        return {
+          ...reading,
+          ...markdownReading,
+          editionNotes: getHtmlAsSpan(
+            markdownReading.editionNotesRaw,
+            reviewedWorksJson,
+          ),
+          readingNotes: getHtml(
+            markdownReading.readingNotesRaw,
+            reviewedWorksJson,
+          ),
+        };
+      })
+      .sort((a, b) => {
+        return +b.date - +a.date;
+      });
 
-  return {
-    ...review,
-    content: getHtml(review.rawContent, reviewedWorksJson),
-    excerptPlainText,
-    readings,
-  };
+    return {
+      ...review,
+      content: getHtml(review.rawContent, reviewedWorksJson),
+      excerptPlainText,
+      readings,
+    };
+  });
 }
 
 export async function loadExcerptHtml(
   review: Review,
 ): Promise<ReviewWithExcerpt> {
-  const reviewsMarkdown = cachedMarkdownReviews || (await allReviewsMarkdown());
+  return await perfLogger.measure("loadExcerptHtml", async () => {
+    const reviewsMarkdown =
+      cachedMarkdownReviews || (await allReviewsMarkdown());
 
-  const { rawContent } = reviewsMarkdown.find((markdown) => {
-    return markdown.slug === review.slug;
-  })!;
+    const { rawContent } = reviewsMarkdown.find((markdown) => {
+      return markdown.slug === review.slug;
+    })!;
 
-  let excerptHtml = getMastProcessor()
-    .use(removeFootnotes)
-    .use(trimToExcerpt)
-    .use(remarkRehype, { allowDangerousHtml: true })
-    .use(rehypeRaw)
-    .use(rehypeStringify)
-    .processSync(rawContent)
-    .toString();
+    let excerptHtml = getMastProcessor()
+      .use(removeFootnotes)
+      .use(trimToExcerpt)
+      .use(remarkRehype, { allowDangerousHtml: true })
+      .use(rehypeRaw)
+      .use(rehypeStringify)
+      .processSync(rawContent)
+      .toString();
 
-  excerptHtml = excerptHtml.replace(/\n+$/, "");
-  excerptHtml = excerptHtml.replace(
-    /<\/p>$/,
-    ` <a href="/reviews/${review.slug}/">Read more...</a></p>`,
-  );
+    excerptHtml = excerptHtml.replace(/\n+$/, "");
+    excerptHtml = excerptHtml.replace(
+      /<\/p>$/,
+      ` <a href="/reviews/${review.slug}/">Read more...</a></p>`,
+    );
 
-  return {
-    ...review,
-    excerpt: excerptHtml,
-  };
+    return {
+      ...review,
+      excerpt: excerptHtml,
+    };
+  });
 }
 
 export async function mostRecentReviews(limit: number) {
-  const reviewedWorksJson =
-    cachedReviewedWorksJson || (await allReviewedWorksJson());
+  return await perfLogger.measure("mostRecentReviews", async () => {
+    const reviewedWorksJson =
+      cachedReviewedWorksJson || (await allReviewedWorksJson());
 
-  reviewedWorksJson.sort((a, b) =>
-    b.reviewSequence.localeCompare(a.reviewSequence),
-  );
-  const slicedWorks = reviewedWorksJson.slice(0, limit);
+    reviewedWorksJson.sort((a, b) =>
+      b.reviewSequence.localeCompare(a.reviewSequence),
+    );
+    const slicedWorks = reviewedWorksJson.slice(0, limit);
 
-  const { reviews } = await parseReviewedWorksJson(slicedWorks);
+    const { reviews } = await parseReviewedWorksJson(slicedWorks);
 
-  return reviews;
+    return reviews;
+  });
 }
 
 function getHtmlAsSpan(
@@ -198,40 +210,43 @@ function getMastProcessor() {
 async function parseReviewedWorksJson(
   reviewedWorksJson: ReviewedWorkJson[],
 ): Promise<Reviews> {
-  const distinctReviewYears = new Set<string>();
-  const distinctPublishedYears = new Set<string>();
-  const distinctKinds = new Set<string>();
-  const reviewsMarkdown = cachedMarkdownReviews || (await allReviewsMarkdown());
+  return await perfLogger.measure("parseReviewedWorksJson", async () => {
+    const distinctReviewYears = new Set<string>();
+    const distinctPublishedYears = new Set<string>();
+    const distinctKinds = new Set<string>();
+    const reviewsMarkdown =
+      cachedMarkdownReviews || (await allReviewsMarkdown());
 
-  const reviews = reviewedWorksJson.map((work) => {
-    distinctKinds.add(work.kind);
-    distinctPublishedYears.add(work.yearPublished);
+    const reviews = reviewedWorksJson.map((work) => {
+      distinctKinds.add(work.kind);
+      distinctPublishedYears.add(work.yearPublished);
 
-    const { date, grade, rawContent } = reviewsMarkdown.find(
-      (reviewsmarkdown) => {
-        return reviewsmarkdown.slug === work.slug;
-      },
-    )!;
+      const { date, grade, rawContent } = reviewsMarkdown.find(
+        (reviewsmarkdown) => {
+          return reviewsmarkdown.slug === work.slug;
+        },
+      )!;
 
-    distinctReviewYears.add(
-      date.toLocaleDateString("en-US", {
-        timeZone: "UTC",
-        year: "numeric",
-      }),
-    );
+      distinctReviewYears.add(
+        date.toLocaleDateString("en-US", {
+          timeZone: "UTC",
+          year: "numeric",
+        }),
+      );
+
+      return {
+        ...work,
+        date,
+        grade,
+        rawContent,
+      };
+    });
 
     return {
-      ...work,
-      date,
-      grade,
-      rawContent,
+      distinctKinds: [...distinctKinds].toSorted(),
+      distinctPublishedYears: [...distinctPublishedYears].toSorted(),
+      distinctReviewYears: [...distinctReviewYears].toSorted(),
+      reviews,
     };
   });
-
-  return {
-    distinctKinds: [...distinctKinds].toSorted(),
-    distinctPublishedYears: [...distinctPublishedYears].toSorted(),
-    distinctReviewYears: [...distinctReviewYears].toSorted(),
-    reviews,
-  };
 }

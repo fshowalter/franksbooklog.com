@@ -3,6 +3,7 @@ import { z } from "zod";
 
 import { getContentPath } from "./utils/getContentPath";
 import { nullableString } from "./utils/nullable";
+import { perfLogger } from "./utils/performanceLogger";
 import { WorkKindSchema } from "./WorkKindSchema";
 
 const reviewedWorksJsonFile = getContentPath("data", "reviewed-works.json");
@@ -142,14 +143,18 @@ export type ReviewedWorkJson = z.infer<typeof ReviewedWorkJsonSchema>;
 export type ReviewedWorkJsonReading = z.infer<typeof ReadingSchema>;
 
 export async function allReviewedWorksJson(): Promise<ReviewedWorkJson[]> {
-  return await parseAllReviewedWorksJson();
+  return await perfLogger.measure("allReviewedWorksJson", async () => {
+    return await parseAllReviewedWorksJson();
+  });
 }
 
 async function parseAllReviewedWorksJson() {
-  const json = await fs.readFile(reviewedWorksJsonFile, "utf8");
-  const data = JSON.parse(json) as unknown[];
+  return await perfLogger.measure("parseAllReviewedWorksJson", async () => {
+    const json = await fs.readFile(reviewedWorksJsonFile, "utf8");
+    const data = JSON.parse(json) as unknown[];
 
-  return data.map((item) => {
-    return ReviewedWorkJsonSchema.parse(item);
+    return data.map((item) => {
+      return ReviewedWorkJsonSchema.parse(item);
+    });
   });
 }
