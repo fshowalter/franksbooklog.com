@@ -3,11 +3,22 @@ import remarkGfm from "remark-gfm";
 import smartypants from "remark-smartypants";
 import strip from "strip-markdown";
 
+import type { MarkdownPage as RawMarkdownPage } from "./data/pagesMarkdown";
+
 import { allPagesMarkdown } from "./data/pagesMarkdown";
-import { allReviewedWorksJson } from "./data/reviewedWorksJson";
+import {
+  allReviewedWorksJson,
+  type ReviewedWorkJson,
+} from "./data/reviewedWorksJson";
 import { perfLogger } from "./data/utils/performanceLogger";
 import { getHtml } from "./utils/markdown/getHtml";
 import { removeFootnotes } from "./utils/markdown/removeFootnotes";
+
+let cachedPagesMarkdown: RawMarkdownPage[];
+let cachedReviewedWorksJson: ReviewedWorkJson[];
+
+// Enable caching during builds but not in dev mode
+const ENABLE_CACHE = !import.meta.env.DEV;
 
 type MarkdownPage = {
   content: string | undefined;
@@ -25,13 +36,20 @@ export function getContentPlainText(rawContent: string): string {
 
 export async function getPage(slug: string): Promise<MarkdownPage> {
   return await perfLogger.measure("getPage", async () => {
-    const pages = await allPagesMarkdown();
+    const pages = cachedPagesMarkdown || (await allPagesMarkdown());
+    if (ENABLE_CACHE && !cachedPagesMarkdown) {
+      cachedPagesMarkdown = pages;
+    }
 
     const matchingPage = pages.find((page) => {
       return page.slug === slug;
     })!;
 
-    const reviewedWorksJson = await allReviewedWorksJson();
+    const reviewedWorksJson =
+      cachedReviewedWorksJson || (await allReviewedWorksJson());
+    if (ENABLE_CACHE && !cachedReviewedWorksJson) {
+      cachedReviewedWorksJson = reviewedWorksJson;
+    }
 
     return {
       content: getHtml(matchingPage.rawContent, reviewedWorksJson),

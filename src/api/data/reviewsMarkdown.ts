@@ -20,9 +20,25 @@ const DataSchema = z.object({
   work_slug: z.string(),
 });
 
+// Cache at data layer - lazy caching for better build performance
+let cachedReviewsMarkdown: MarkdownReview[];
+
+// Enable caching during builds but not in dev mode
+const ENABLE_CACHE = !import.meta.env.DEV;
+
 export async function allReviewsMarkdown(): Promise<MarkdownReview[]> {
   return await perfLogger.measure("allReviewsMarkdown", async () => {
-    return await parseAllReviewsMarkdown();
+    if (ENABLE_CACHE && cachedReviewsMarkdown) {
+      return cachedReviewsMarkdown;
+    }
+
+    const reviews = await parseAllReviewsMarkdown();
+
+    if (ENABLE_CACHE) {
+      cachedReviewsMarkdown = reviews;
+    }
+
+    return reviews;
   });
 }
 

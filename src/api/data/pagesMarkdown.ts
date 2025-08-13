@@ -7,7 +7,7 @@ import { perfLogger } from "./utils/performanceLogger";
 
 const pagesMarkdownDirectory = getContentPath("pages");
 
-type MarkdownPage = {
+export type MarkdownPage = {
   rawContent: string;
   slug: string;
   title: string;
@@ -18,9 +18,25 @@ const DataSchema = z.object({
   title: z.string(),
 });
 
+// Cache at data layer - lazy caching for better build performance
+let cachedPagesMarkdown: MarkdownPage[];
+
+// Enable caching during builds but not in dev mode
+const ENABLE_CACHE = !import.meta.env.DEV;
+
 export async function allPagesMarkdown(): Promise<MarkdownPage[]> {
   return await perfLogger.measure("allPagesMarkdown", async () => {
-    return await parseAllPagesMarkdown();
+    if (ENABLE_CACHE && cachedPagesMarkdown) {
+      return cachedPagesMarkdown;
+    }
+
+    const pages = await parseAllPagesMarkdown();
+
+    if (ENABLE_CACHE) {
+      cachedPagesMarkdown = pages;
+    }
+
+    return pages;
   });
 }
 

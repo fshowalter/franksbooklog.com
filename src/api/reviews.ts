@@ -23,16 +23,15 @@ import { removeFootnotes } from "./utils/markdown/removeFootnotes";
 import { rootAsSpan } from "./utils/markdown/rootAsSpan";
 import { trimToExcerpt } from "./utils/markdown/trimToExcerpt";
 
-let cachedReadingsMarkdown: MarkdownReading[];
-let cachedMarkdownReviews: MarkdownReview[];
-let cachedReviewedWorksJson: ReviewedWorkJson[];
+// Cache at API level for derived data
 let cachedReviews: Reviews;
+let cachedMarkdownReviews: MarkdownReview[];
+let cachedMarkdownReadings: MarkdownReading[];
+let cachedReviewedWorksJson: ReviewedWorkJson[];
+const cachedExcerptHtml: Map<string, string> = new Map();
 
-if (import.meta.env.MODE !== "development") {
-  cachedReadingsMarkdown = await allReadingsMarkdown();
-  cachedReviewedWorksJson = await allReviewedWorksJson();
-  cachedMarkdownReviews = await allReviewsMarkdown();
-}
+// Enable caching during builds but not in dev mode
+const ENABLE_CACHE = !import.meta.env.DEV;
 
 export type Review = MarkdownReview & ReviewedWorkJson & {};
 
@@ -61,14 +60,19 @@ type Reviews = {
 
 export async function allReviews(): Promise<Reviews> {
   return await perfLogger.measure("allReviews", async () => {
-    if (cachedReviews) {
+    if (ENABLE_CACHE && cachedReviews) {
       return cachedReviews;
     }
+
     const reviewedWorksJson =
       cachedReviewedWorksJson || (await allReviewedWorksJson());
+    if (ENABLE_CACHE && !cachedReviewedWorksJson) {
+      cachedReviewedWorksJson = reviewedWorksJson;
+    }
+
     const reviews = await parseReviewedWorksJson(reviewedWorksJson);
 
-    if (!import.meta.env.DEV) {
+    if (ENABLE_CACHE) {
       cachedReviews = reviews;
     }
 
@@ -87,8 +91,16 @@ export function getContentPlainText(rawContent: string): string {
 export async function loadContent(review: Review): Promise<ReviewWithContent> {
   return await perfLogger.measure("loadContent", async () => {
     const readingsMarkdown =
-      cachedReadingsMarkdown || (await allReadingsMarkdown());
-    const reviewedWorksJson = await allReviewedWorksJson();
+      cachedMarkdownReadings || (await allReadingsMarkdown());
+    if (ENABLE_CACHE && !cachedMarkdownReadings) {
+      cachedMarkdownReadings = readingsMarkdown;
+    }
+
+    const reviewedWorksJson =
+      cachedReviewedWorksJson || (await allReviewedWorksJson());
+    if (ENABLE_CACHE && !cachedReviewedWorksJson) {
+      cachedReviewedWorksJson = reviewedWorksJson;
+    }
 
     const excerptPlainText = getMastProcessor()
       .use(removeFootnotes)
@@ -139,8 +151,19 @@ export async function loadExcerptHtml(
   review: Review,
 ): Promise<ReviewWithExcerpt> {
   return await perfLogger.measure("loadExcerptHtml", async () => {
+    // Check cache first
+    if (ENABLE_CACHE && cachedExcerptHtml.has(review.slug)) {
+      return {
+        ...review,
+        excerpt: cachedExcerptHtml.get(review.slug)!,
+      };
+    }
+
     const reviewsMarkdown =
       cachedMarkdownReviews || (await allReviewsMarkdown());
+    if (ENABLE_CACHE && !cachedMarkdownReviews) {
+      cachedMarkdownReviews = reviewsMarkdown;
+    }
 
     const { rawContent } = reviewsMarkdown.find((markdown) => {
       return markdown.slug === review.slug;
@@ -161,6 +184,11 @@ export async function loadExcerptHtml(
       ` <a href="/reviews/${review.slug}/">Read more...</a></p>`,
     );
 
+    // Cache the result
+    if (ENABLE_CACHE) {
+      cachedExcerptHtml.set(review.slug, excerptHtml);
+    }
+
     return {
       ...review,
       excerpt: excerptHtml,
@@ -172,6 +200,9 @@ export async function mostRecentReviews(limit: number) {
   return await perfLogger.measure("mostRecentReviews", async () => {
     const reviewedWorksJson =
       cachedReviewedWorksJson || (await allReviewedWorksJson());
+    if (ENABLE_CACHE && !cachedReviewedWorksJson) {
+      cachedReviewedWorksJson = reviewedWorksJson;
+    }
 
     reviewedWorksJson.sort((a, b) =>
       b.reviewSequence.localeCompare(a.reviewSequence),
@@ -214,8 +245,12 @@ async function parseReviewedWorksJson(
     const distinctReviewYears = new Set<string>();
     const distinctPublishedYears = new Set<string>();
     const distinctKinds = new Set<string>();
+
     const reviewsMarkdown =
       cachedMarkdownReviews || (await allReviewsMarkdown());
+    if (ENABLE_CACHE && !cachedMarkdownReviews) {
+      cachedMarkdownReviews = reviewsMarkdown;
+    }
 
     const reviews = reviewedWorksJson.map((work) => {
       distinctKinds.add(work.kind);

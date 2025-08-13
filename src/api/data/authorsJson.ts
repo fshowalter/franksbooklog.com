@@ -45,9 +45,25 @@ const AuthorJsonSchema = z.object({
 
 export type AuthorJson = z.infer<typeof AuthorJsonSchema>;
 
+// Cache at data layer - lazy caching for better build performance
+let cachedAuthorsJson: AuthorJson[];
+
+// Enable caching during builds but not in dev mode
+const ENABLE_CACHE = !import.meta.env.DEV;
+
 export async function allAuthorsJson(): Promise<AuthorJson[]> {
   return await perfLogger.measure("allAuthorsJson", async () => {
-    return await parseAllAuthorsJson();
+    if (ENABLE_CACHE && cachedAuthorsJson) {
+      return cachedAuthorsJson;
+    }
+
+    const authors = await parseAllAuthorsJson();
+
+    if (ENABLE_CACHE) {
+      cachedAuthorsJson = authors;
+    }
+
+    return authors;
   });
 }
 

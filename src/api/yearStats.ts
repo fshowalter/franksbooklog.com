@@ -3,7 +3,12 @@ import { allYearStatsJson, type YearStatsJson } from "./data/yearStatsJson";
 
 export type YearStats = YearStatsJson & {};
 
+let cachedYearStatsJson: YearStatsJson[];
+
 const statYears = new Set<string>();
+
+// Enable caching during builds but not in dev mode
+const ENABLE_CACHE = !import.meta.env.DEV;
 
 export async function allStatYears() {
   return await perfLogger.measure("allStatYears", async () => {
@@ -11,7 +16,10 @@ export async function allStatYears() {
       return [...statYears].toSorted();
     }
 
-    const yearStats = await allYearStatsJson();
+    const yearStats = cachedYearStatsJson || (await allYearStatsJson());
+    if (ENABLE_CACHE && !cachedYearStatsJson) {
+      cachedYearStatsJson = yearStats;
+    }
 
     for (const stats of yearStats) {
       statYears.add(stats.year);
@@ -23,7 +31,10 @@ export async function allStatYears() {
 
 export async function statsForYear(year: string): Promise<YearStats> {
   return await perfLogger.measure("statsForYear", async () => {
-    const yearStats = await allYearStatsJson();
+    const yearStats = cachedYearStatsJson || (await allYearStatsJson());
+    if (ENABLE_CACHE && !cachedYearStatsJson) {
+      cachedYearStatsJson = yearStats;
+    }
 
     return yearStats.find((stats) => stats.year === year)!;
   });

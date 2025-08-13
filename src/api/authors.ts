@@ -9,15 +9,41 @@ type AuthorDetails = {
   distinctPublishedYears: string[];
 };
 
+// Cache at API level for derived data
+let cachedAllAuthors: Author[];
+let cachedAllAuthorsJson: AuthorJson[];
+const cachedAuthorDetails: Map<string, AuthorDetails> = new Map();
+
+// Enable caching during builds but not in dev mode
+const ENABLE_CACHE = !import.meta.env.DEV;
+
 export async function allAuthors(): Promise<Author[]> {
   return await perfLogger.measure("allAuthors", async () => {
-    return await allAuthorsJson();
+    if (ENABLE_CACHE && cachedAllAuthorsJson) {
+      return cachedAllAuthorsJson;
+    }
+
+    const authors = cachedAllAuthorsJson || (await allAuthorsJson());
+    if (ENABLE_CACHE && !cachedAllAuthors) {
+      cachedAllAuthors = authors;
+    }
+
+    return authors;
   });
 }
 
 export async function getAuthorDetails(slug: string): Promise<AuthorDetails> {
   return await perfLogger.measure("getAuthorDetails", async () => {
-    const authors = await allAuthorsJson();
+    // Check cache first
+    if (ENABLE_CACHE && cachedAuthorDetails.has(slug)) {
+      return cachedAuthorDetails.get(slug)!;
+    }
+
+    const authors = cachedAllAuthorsJson || (await allAuthorsJson());
+    if (ENABLE_CACHE && !cachedAllAuthorsJson) {
+      cachedAllAuthorsJson = authors;
+    }
+
     const distinctKinds = new Set<string>();
     const distinctPublishedYears = new Set<string>();
 
@@ -28,10 +54,17 @@ export async function getAuthorDetails(slug: string): Promise<AuthorDetails> {
       distinctPublishedYears.add(work.yearPublished);
     }
 
-    return {
+    const details = {
       author,
       distinctKinds: [...distinctKinds].toSorted(),
       distinctPublishedYears: [...distinctPublishedYears].toSorted(),
     };
+
+    // Cache the result
+    if (ENABLE_CACHE) {
+      cachedAuthorDetails.set(slug, details);
+    }
+
+    return details;
   });
 }
