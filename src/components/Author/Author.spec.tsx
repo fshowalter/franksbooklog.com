@@ -26,7 +26,7 @@ describe("Author", () => {
     render(<Author {...props} />);
 
     await userEvent.selectOptions(
-      screen.getByLabelText("Order By"),
+      screen.getByLabelText("Sort"),
       "Title (A → Z)",
     );
 
@@ -39,7 +39,7 @@ describe("Author", () => {
     render(<Author {...props} />);
 
     await userEvent.selectOptions(
-      screen.getByLabelText("Order By"),
+      screen.getByLabelText("Sort"),
       "Title (Z → A)",
     );
 
@@ -52,7 +52,7 @@ describe("Author", () => {
     render(<Author {...props} />);
 
     await userEvent.selectOptions(
-      screen.getByLabelText("Order By"),
+      screen.getByLabelText("Sort"),
       "Work Year (Oldest First)",
     );
 
@@ -65,7 +65,7 @@ describe("Author", () => {
     render(<Author {...props} />);
 
     await userEvent.selectOptions(
-      screen.getByLabelText("Order By"),
+      screen.getByLabelText("Sort"),
       "Work Year (Newest First)",
     );
 
@@ -78,7 +78,7 @@ describe("Author", () => {
     render(<Author {...props} />);
 
     await userEvent.selectOptions(
-      screen.getByLabelText("Order By"),
+      screen.getByLabelText("Sort"),
       "Grade (Best First)",
     );
 
@@ -91,7 +91,7 @@ describe("Author", () => {
     render(<Author {...props} />);
 
     await userEvent.selectOptions(
-      screen.getByLabelText("Order By"),
+      screen.getByLabelText("Sort"),
       "Grade (Worst First)",
     );
 

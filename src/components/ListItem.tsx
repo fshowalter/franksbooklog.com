@@ -15,7 +15,7 @@ export function ListItem({
     <li
       className={`
         group/list-item transform-gpu transition-transform
-        has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all
+        has-[a:hover]:z-30 has-[a:hover]:scale-[102.5%] has-[a:hover]:shadow-all
         has-[a:hover]:drop-shadow-2xl
         ${background}
         ${itemsCenter ? "items-center" : ""}

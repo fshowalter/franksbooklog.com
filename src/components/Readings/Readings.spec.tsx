@@ -66,7 +66,7 @@ describe("Readings", () => {
     render(<Readings {...props} />);
 
     await userEvent.selectOptions(
-      screen.getByLabelText("Order By"),
+      screen.getByLabelText("Sort"),
       "Reading Date (Oldest First)",
     );
 
@@ -79,7 +79,7 @@ describe("Readings", () => {
     render(<Readings {...props} />);
 
     await userEvent.selectOptions(
-      screen.getByLabelText("Order By"),
+      screen.getByLabelText("Sort"),
       "Reading Date (Newest First)",
     );
 

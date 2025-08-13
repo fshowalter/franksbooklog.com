@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="h-full" lang="en">
+<html class="scroll-smooth" lang="en">
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width" name="viewport" />
@@ -460,7 +460,7 @@
             </div>
           </header>
           <astro-island
-            uid="D5giy"
+            uid="Zkc2AY"
             prefix="r1"
             component-url="~/components/Authors/Authors"
             component-export="Authors"
@@ -471,954 +471,979 @@
             before-hydration-url="astro:scripts/before-hydration.js"
             opts='{"name":"Authors","value":true}'
             await-children
-            ><div class="mx-auto flex flex-col items-center bg-default">
-              <div class="mx-auto flex w-full flex-col items-stretch">
-                <div class="flex grow flex-col bg-subtle">
-                  <div class="relative tablet:px-12 tablet-landscape:px-0">
-                    <div
-                      class="relative z-10 row-start-1 bg-default text-xs tablet:-mx-12 tablet:px-0 tablet-landscape:col-span-3 tablet-landscape:mx-0 tablet-landscape:w-full"
+            ><div
+              class="
+        
+      "
+            >
+              <div class="group/list-with-filters mx-auto bg-subtle">
+                <div
+                  class="sticky top-[calc(0px_+_var(--scroll-offset,0px))] z-20 scroll-mt-[calc(0px_+_var(--scroll-offset,0px))] border-b border-default bg-default text-xs tablet:col-span-full"
+                >
+                  <div
+                    class="mx-auto grid max-w-[var(--breakpoint-desktop)] grid-cols-[auto_auto_1fr_auto] items-baseline gap-y-7 px-container py-10 font-sans font-medium tracking-wide text-subtle uppercase tablet:grid-cols-[auto_auto_1fr_auto_auto] tablet:gap-x-4 tablet-landscape:grid-cols-[auto_auto_1fr_minmax(302px,calc(33%_-_192px))_auto] desktop:grid-cols-[auto_auto_1fr_calc(33%_-_96px)_auto]"
+                  >
+                    <span class="text-nowrap"
+                      ><span class="font-semibold text-default">19</span
+                      ><span class="text-xxs leading-none tracking-wide">
+                        Results</span
+                      ></span
                     >
-                      <div
-                        class="mx-auto flex w-full max-w-(--breakpoint-desktop) flex-wrap items-baseline justify-between gap-x-4 gap-y-5 px-container py-10 font-sans font-medium tracking-wide text-subtle uppercase"
-                      >
-                        <span class="block pr-4"
-                          ><span class="font-semibold text-default">19</span>
-                          <!-- -->Results</span
-                        ><button
-                          class="ml-auto flex justify-center gap-x-4 px-4 py-2 text-nowrap text-muted uppercase shadow-all tablet-landscape:hidden"
-                          style="background-color: var(--bg-canvas)"
+                    <div class=""></div>
+                    <div
+                      class="col-span-full tablet:col-span-1 tablet:col-start-4 desktop:pl-8"
+                    >
+                      <label
+                        class="flex items-baseline gap-x-4 text-xxs font-semibold tracking-wide text-subtle"
+                        >Sort<!-- -->
+                        <select
+                          class="flex w-full appearance-none border-none bg-default py-2 pr-4 pl-4 font-serif text-base font-normal tracking-normal overflow-ellipsis text-default shadow-all outline-accent"
                         >
-                          Filter &amp; Sort
-                        </button>
-                      </div>
-                    </div>
-                    <div
-                      class="mx-auto max-w-(--breakpoint-desktop) grid-cols-[1fr_48px_minmax(398px,33%)] tablet-landscape:grid tablet-landscape:grid-rows-[auto_1fr]"
-                    >
-                      <div
-                        class="relative z-10 col-start-3 row-span-2 row-start-2 grid min-w-[320px] text-sm transition-[grid-template-rows] duration-300 ease-in-out tablet-landscape:mr-12 tablet-landscape:block tablet-landscape:py-24 tablet-landscape:pb-12 tablet-landscape:shadow-none laptop:mr-20"
-                        style="grid-template-rows: 0fr"
+                          <option value="name-asc" selected="">
+                            Name (A → Z)
+                          </option>
+                          <option value="name-desc">Name (Z → A)</option>
+                          <option value="review-count-desc">
+                            Review Count (Most First)
+                          </option>
+                          <option value="review-count-asc">
+                            Review Count (Fewest First)
+                          </option>
+                        </select></label
                       >
-                        <div class="overflow-hidden">
+                    </div>
+                    <button
+                      aria-controls="filters"
+                      aria-expanded="false"
+                      aria-label="Toggle filters"
+                      class="col-start-4 row-start-1 flex transform-gpu cursor-pointer items-center justify-center gap-x-4 bg-canvas px-4 py-2 text-nowrap text-muted uppercase shadow-all transition-transform hover:scale-110 tablet:col-start-5 tablet:w-20"
+                      type="button"
+                    >
+                      Filter
+                    </button>
+                  </div>
+                </div>
+                <div
+                  class="mx-auto max-w-[var(--breakpoint-desktop)] gap-x-[var(--container-padding)] tablet:px-container tablet-landscape:flex"
+                >
+                  <div
+                    class="mx-auto max-w-[var(--breakpoint-desktop)] grow scroll-mt-[calc(var(--list-scroll-offset)_+_var(--scroll-offset,0px))] pb-10 [--list-scroll-offset:181px] tablet:[--list-scroll-offset:121px]"
+                    id="list"
+                  >
+                    <ol data-testid="list">
+                      <li class="block">
+                        <div class="pt-0 text-md" style="z-index: 1">
                           <div
-                            class="w-full bg-subtle text-sm tablet:pt-12 tablet:text-base tablet-landscape:overflow-visible tablet-landscape:bg-default tablet-landscape:px-container tablet-landscape:pt-0 laptop:px-8"
+                            class="max-w-(--breakpoint-desktop) bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
                           >
-                            <fieldset
-                              class="flex flex-col gap-5 bg-group px-container py-10 tablet:gap-8 tablet:bg-default tablet-landscape:mt-0 tablet-landscape:gap-12 tablet-landscape:px-0"
-                            >
-                              <legend
-                                class="hidden w-full py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase tablet-landscape:block tablet-landscape:shadow-bottom"
-                              >
-                                Filter &amp; Sort
-                              </legend>
-                              <label class="flex flex-col text-subtle"
-                                ><span
-                                  class="inline-block h-6 text-left font-sans text-xxs leading-none tracking-wide text-subtle uppercase"
-                                  >Name</span
-                                ><input
-                                  class="border-0 bg-default px-4 py-2 text-base text-default shadow-all placeholder:text-default placeholder:opacity-50"
-                                  placeholder="Enter all or part of a name"
-                                  type="text" /></label
-                              ><label class="flex flex-col"
-                                ><span
-                                  class="inline-block h-6 text-left font-sans text-xxs leading-none tracking-wide text-subtle uppercase"
-                                  >Order By</span
-                                ><select
-                                  class="w-full appearance-none border-none bg-default select-background-image py-2 pr-8 pl-4 text-base leading-6 text-subtle shadow-all outline-accent"
-                                >
-                                  <option value="name-asc" selected="">
-                                    Name (A → Z)
-                                  </option>
-                                  <option value="name-desc">
-                                    Name (Z → A)
-                                  </option>
-                                  <option value="review-count-desc">
-                                    Review Count (Most First)
-                                  </option>
-                                  <option value="review-count-asc">
-                                    Review Count (Fewest First)
-                                  </option>
-                                </select></label
-                              >
-                            </fieldset>
+                            A
                           </div>
                         </div>
-                      </div>
-                      <div
-                        class="col-start-1 row-start-2 pb-10 tablet-landscape:pl-12 laptop:pl-20"
+                        <div class="bg-subtle">
+                          <ol>
+                            <li
+                              class="group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-[102.5%] has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6 relative"
+                            >
+                              <div
+                                class="relative rounded-full after:absolute after:top-0 after:left-0 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
+                              >
+                                <div
+                                  class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
+                                >
+                                  <div class="w-full">
+                                    <svg
+                                      fill="var(--bg-avatar-default)"
+                                      viewBox="0 0 16 16"
+                                      width="100%"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <path
+                                        clip-rule="evenodd"
+                                        d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
+                                        fill-rule="evenodd"
+                                      ></path>
+                                    </svg>
+                                  </div>
+                                </div>
+                              </div>
+                              <a
+                                class="font-sans text-sm leading-normal font-medium text-accent after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent"
+                                href="/authors/piers-anthony/"
+                                >Piers Anthony</a
+                              >
+                              <div
+                                class="ml-auto font-sans text-sm text-nowrap text-subtle"
+                              >
+                                1
+                              </div>
+                            </li>
+                          </ol>
+                        </div>
+                      </li>
+                      <li class="block">
+                        <div class="pt-0 text-md" style="z-index: 2">
+                          <div
+                            class="max-w-(--breakpoint-desktop) bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+                          >
+                            B
+                          </div>
+                        </div>
+                        <div class="bg-subtle">
+                          <ol>
+                            <li
+                              class="group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-[102.5%] has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6 relative"
+                            >
+                              <div
+                                class="relative rounded-full after:absolute after:top-0 after:left-0 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
+                              >
+                                <div
+                                  class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
+                                >
+                                  <div class="w-full">
+                                    <svg
+                                      fill="var(--bg-avatar-default)"
+                                      viewBox="0 0 16 16"
+                                      width="100%"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <path
+                                        clip-rule="evenodd"
+                                        d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
+                                        fill-rule="evenodd"
+                                      ></path>
+                                    </svg>
+                                  </div>
+                                </div>
+                              </div>
+                              <a
+                                class="font-sans text-sm leading-normal font-medium text-accent after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent"
+                                href="/authors/leif-babin/"
+                                >Leif Babin</a
+                              >
+                              <div
+                                class="ml-auto font-sans text-sm text-nowrap text-subtle"
+                              >
+                                1
+                              </div>
+                            </li>
+                          </ol>
+                        </div>
+                      </li>
+                      <li class="block">
+                        <div class="pt-0 text-md" style="z-index: 3">
+                          <div
+                            class="max-w-(--breakpoint-desktop) bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+                          >
+                            C
+                          </div>
+                        </div>
+                        <div class="bg-subtle">
+                          <ol>
+                            <li
+                              class="group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-[102.5%] has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6 relative"
+                            >
+                              <div
+                                class="relative rounded-full after:absolute after:top-0 after:left-0 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
+                              >
+                                <div
+                                  class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
+                                >
+                                  <div class="w-full">
+                                    <svg
+                                      fill="var(--bg-avatar-default)"
+                                      viewBox="0 0 16 16"
+                                      width="100%"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <path
+                                        clip-rule="evenodd"
+                                        d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
+                                        fill-rule="evenodd"
+                                      ></path>
+                                    </svg>
+                                  </div>
+                                </div>
+                              </div>
+                              <a
+                                class="font-sans text-sm leading-normal font-medium text-accent after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent"
+                                href="/authors/arthur-c-clarke/"
+                                >Arthur C. Clarke</a
+                              >
+                              <div
+                                class="ml-auto font-sans text-sm text-nowrap text-subtle"
+                              >
+                                1
+                              </div>
+                            </li>
+                          </ol>
+                        </div>
+                      </li>
+                      <li class="block">
+                        <div class="pt-0 text-md" style="z-index: 4">
+                          <div
+                            class="max-w-(--breakpoint-desktop) bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+                          >
+                            F
+                          </div>
+                        </div>
+                        <div class="bg-subtle">
+                          <ol>
+                            <li
+                              class="group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-[102.5%] has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6 relative"
+                            >
+                              <div
+                                class="relative rounded-full after:absolute after:top-0 after:left-0 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
+                              >
+                                <div
+                                  class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
+                                >
+                                  <img
+                                    src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fian-fleming.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=80&amp;h=80&amp;q=80&amp;f=avif"
+                                    srcset="
+                                      /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fian-fleming.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=80&amp;h=80&amp;q=80&amp;f=avif   1x,
+                                      /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fian-fleming.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=160&amp;h=160&amp;q=80&amp;f=avif 2x
+                                    "
+                                    alt=""
+                                    height="80"
+                                    loading="lazy"
+                                    width="80"
+                                    class="w-full"
+                                  />
+                                </div>
+                              </div>
+                              <a
+                                class="font-sans text-sm leading-normal font-medium text-accent after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent"
+                                href="/authors/ian-fleming/"
+                                >Ian Fleming</a
+                              >
+                              <div
+                                class="ml-auto font-sans text-sm text-nowrap text-subtle"
+                              >
+                                3
+                              </div>
+                            </li>
+                            <li
+                              class="group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-[102.5%] has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6 relative"
+                            >
+                              <div
+                                class="relative rounded-full after:absolute after:top-0 after:left-0 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
+                              >
+                                <div
+                                  class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
+                                >
+                                  <img
+                                    src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fphilip-fracassi.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=80&amp;h=80&amp;q=80&amp;f=avif"
+                                    srcset="
+                                      /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fphilip-fracassi.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=80&amp;h=80&amp;q=80&amp;f=avif   1x,
+                                      /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fphilip-fracassi.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=160&amp;h=160&amp;q=80&amp;f=avif 2x
+                                    "
+                                    alt=""
+                                    height="80"
+                                    loading="lazy"
+                                    width="80"
+                                    class="w-full"
+                                  />
+                                </div>
+                              </div>
+                              <a
+                                class="font-sans text-sm leading-normal font-medium text-accent after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent"
+                                href="/authors/philip-fracassi/"
+                                >Philip Fracassi</a
+                              >
+                              <div
+                                class="ml-auto font-sans text-sm text-nowrap text-subtle"
+                              >
+                                13
+                              </div>
+                            </li>
+                          </ol>
+                        </div>
+                      </li>
+                      <li class="block">
+                        <div class="pt-0 text-md" style="z-index: 5">
+                          <div
+                            class="max-w-(--breakpoint-desktop) bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+                          >
+                            G
+                          </div>
+                        </div>
+                        <div class="bg-subtle">
+                          <ol>
+                            <li
+                              class="group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-[102.5%] has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6 relative"
+                            >
+                              <div
+                                class="relative rounded-full after:absolute after:top-0 after:left-0 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
+                              >
+                                <div
+                                  class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
+                                >
+                                  <div class="w-full">
+                                    <svg
+                                      fill="var(--bg-avatar-default)"
+                                      viewBox="0 0 16 16"
+                                      width="100%"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <path
+                                        clip-rule="evenodd"
+                                        d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
+                                        fill-rule="evenodd"
+                                      ></path>
+                                    </svg>
+                                  </div>
+                                </div>
+                              </div>
+                              <a
+                                class="font-sans text-sm leading-normal font-medium text-accent after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent"
+                                href="/authors/david-goggins/"
+                                >David Goggins</a
+                              >
+                              <div
+                                class="ml-auto font-sans text-sm text-nowrap text-subtle"
+                              >
+                                1
+                              </div>
+                            </li>
+                          </ol>
+                        </div>
+                      </li>
+                      <li class="block">
+                        <div class="pt-0 text-md" style="z-index: 6">
+                          <div
+                            class="max-w-(--breakpoint-desktop) bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+                          >
+                            H
+                          </div>
+                        </div>
+                        <div class="bg-subtle">
+                          <ol>
+                            <li
+                              class="group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-[102.5%] has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6 relative"
+                            >
+                              <div
+                                class="relative rounded-full after:absolute after:top-0 after:left-0 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
+                              >
+                                <div
+                                  class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
+                                >
+                                  <div class="w-full">
+                                    <svg
+                                      fill="var(--bg-avatar-default)"
+                                      viewBox="0 0 16 16"
+                                      width="100%"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <path
+                                        clip-rule="evenodd"
+                                        d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
+                                        fill-rule="evenodd"
+                                      ></path>
+                                    </svg>
+                                  </div>
+                                </div>
+                              </div>
+                              <a
+                                class="font-sans text-sm leading-normal font-medium text-accent after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent"
+                                href="/authors/david-h-hackworth/"
+                                >David H. Hackworth</a
+                              >
+                              <div
+                                class="ml-auto font-sans text-sm text-nowrap text-subtle"
+                              >
+                                1
+                              </div>
+                            </li>
+                          </ol>
+                        </div>
+                      </li>
+                      <li class="block">
+                        <div class="pt-0 text-md" style="z-index: 7">
+                          <div
+                            class="max-w-(--breakpoint-desktop) bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+                          >
+                            I
+                          </div>
+                        </div>
+                        <div class="bg-subtle">
+                          <ol>
+                            <li
+                              class="group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-[102.5%] has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6 relative"
+                            >
+                              <div
+                                class="relative rounded-full after:absolute after:top-0 after:left-0 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
+                              >
+                                <div
+                                  class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
+                                >
+                                  <div class="w-full">
+                                    <svg
+                                      fill="var(--bg-avatar-default)"
+                                      viewBox="0 0 16 16"
+                                      width="100%"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <path
+                                        clip-rule="evenodd"
+                                        d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
+                                        fill-rule="evenodd"
+                                      ></path>
+                                    </svg>
+                                  </div>
+                                </div>
+                              </div>
+                              <a
+                                class="font-sans text-sm leading-normal font-medium text-accent after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent"
+                                href="/authors/jesse-itzler/"
+                                >Jesse Itzler</a
+                              >
+                              <div
+                                class="ml-auto font-sans text-sm text-nowrap text-subtle"
+                              >
+                                1
+                              </div>
+                            </li>
+                          </ol>
+                        </div>
+                      </li>
+                      <li class="block">
+                        <div class="pt-0 text-md" style="z-index: 8">
+                          <div
+                            class="max-w-(--breakpoint-desktop) bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+                          >
+                            K
+                          </div>
+                        </div>
+                        <div class="bg-subtle">
+                          <ol>
+                            <li
+                              class="group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-[102.5%] has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6 relative"
+                            >
+                              <div
+                                class="relative rounded-full after:absolute after:top-0 after:left-0 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
+                              >
+                                <div
+                                  class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
+                                >
+                                  <img
+                                    src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fstephen-king.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=80&amp;h=80&amp;q=80&amp;f=avif"
+                                    srcset="
+                                      /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fstephen-king.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=80&amp;h=80&amp;q=80&amp;f=avif   1x,
+                                      /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fstephen-king.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=160&amp;h=160&amp;q=80&amp;f=avif 2x
+                                    "
+                                    alt=""
+                                    height="80"
+                                    loading="lazy"
+                                    width="80"
+                                    class="w-full"
+                                  />
+                                </div>
+                              </div>
+                              <a
+                                class="font-sans text-sm leading-normal font-medium text-accent after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent"
+                                href="/authors/stephen-king/"
+                                >Stephen King</a
+                              >
+                              <div
+                                class="ml-auto font-sans text-sm text-nowrap text-subtle"
+                              >
+                                10
+                              </div>
+                            </li>
+                          </ol>
+                        </div>
+                      </li>
+                      <li class="block">
+                        <div class="pt-0 text-md" style="z-index: 9">
+                          <div
+                            class="max-w-(--breakpoint-desktop) bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+                          >
+                            L
+                          </div>
+                        </div>
+                        <div class="bg-subtle">
+                          <ol>
+                            <li
+                              class="group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-[102.5%] has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6 relative"
+                            >
+                              <div
+                                class="relative rounded-full after:absolute after:top-0 after:left-0 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
+                              >
+                                <div
+                                  class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
+                                >
+                                  <img
+                                    src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Frichard-laymon.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=80&amp;h=80&amp;q=80&amp;f=avif"
+                                    srcset="
+                                      /_image/?href=%2Fcontent%2Fassets%2Favatars%2Frichard-laymon.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=80&amp;h=80&amp;q=80&amp;f=avif   1x,
+                                      /_image/?href=%2Fcontent%2Fassets%2Favatars%2Frichard-laymon.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=160&amp;h=160&amp;q=80&amp;f=avif 2x
+                                    "
+                                    alt=""
+                                    height="80"
+                                    loading="lazy"
+                                    width="80"
+                                    class="w-full"
+                                  />
+                                </div>
+                              </div>
+                              <a
+                                class="font-sans text-sm leading-normal font-medium text-accent after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent"
+                                href="/authors/richard-laymon/"
+                                >Richard Laymon</a
+                              >
+                              <div
+                                class="ml-auto font-sans text-sm text-nowrap text-subtle"
+                              >
+                                10
+                              </div>
+                            </li>
+                          </ol>
+                        </div>
+                      </li>
+                      <li class="block">
+                        <div class="pt-0 text-md" style="z-index: 10">
+                          <div
+                            class="max-w-(--breakpoint-desktop) bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+                          >
+                            M
+                          </div>
+                        </div>
+                        <div class="bg-subtle">
+                          <ol>
+                            <li
+                              class="group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-[102.5%] has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6 relative"
+                            >
+                              <div
+                                class="relative rounded-full after:absolute after:top-0 after:left-0 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
+                              >
+                                <div
+                                  class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
+                                >
+                                  <div class="w-full">
+                                    <svg
+                                      fill="var(--bg-avatar-default)"
+                                      viewBox="0 0 16 16"
+                                      width="100%"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <path
+                                        clip-rule="evenodd"
+                                        d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
+                                        fill-rule="evenodd"
+                                      ></path>
+                                    </svg>
+                                  </div>
+                                </div>
+                              </div>
+                              <a
+                                class="font-sans text-sm leading-normal font-medium text-accent after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent"
+                                href="/authors/edmund-morris/"
+                                >Edmund Morris</a
+                              >
+                              <div
+                                class="ml-auto font-sans text-sm text-nowrap text-subtle"
+                              >
+                                1
+                              </div>
+                            </li>
+                          </ol>
+                        </div>
+                      </li>
+                      <li class="block">
+                        <div class="pt-0 text-md" style="z-index: 11">
+                          <div
+                            class="max-w-(--breakpoint-desktop) bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+                          >
+                            N
+                          </div>
+                        </div>
+                        <div class="bg-subtle">
+                          <ol>
+                            <li
+                              class="group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-[102.5%] has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6 relative"
+                            >
+                              <div
+                                class="relative rounded-full after:absolute after:top-0 after:left-0 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
+                              >
+                                <div
+                                  class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
+                                >
+                                  <div class="w-full">
+                                    <svg
+                                      fill="var(--bg-avatar-default)"
+                                      viewBox="0 0 16 16"
+                                      width="100%"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <path
+                                        clip-rule="evenodd"
+                                        d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
+                                        fill-rule="evenodd"
+                                      ></path>
+                                    </svg>
+                                  </div>
+                                </div>
+                              </div>
+                              <a
+                                class="font-sans text-sm leading-normal font-medium text-accent after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent"
+                                href="/authors/steven-novella/"
+                                >Steven Novella</a
+                              >
+                              <div
+                                class="ml-auto font-sans text-sm text-nowrap text-subtle"
+                              >
+                                1
+                              </div>
+                            </li>
+                          </ol>
+                        </div>
+                      </li>
+                      <li class="block">
+                        <div class="pt-0 text-md" style="z-index: 12">
+                          <div
+                            class="max-w-(--breakpoint-desktop) bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+                          >
+                            P
+                          </div>
+                        </div>
+                        <div class="bg-subtle">
+                          <ol>
+                            <li
+                              class="group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-[102.5%] has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6 relative"
+                            >
+                              <div
+                                class="relative rounded-full after:absolute after:top-0 after:left-0 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
+                              >
+                                <div
+                                  class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
+                                >
+                                  <img
+                                    src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fchuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=80&amp;h=80&amp;q=80&amp;f=avif"
+                                    srcset="
+                                      /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fchuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=80&amp;h=80&amp;q=80&amp;f=avif   1x,
+                                      /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fchuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=160&amp;h=160&amp;q=80&amp;f=avif 2x
+                                    "
+                                    alt=""
+                                    height="80"
+                                    loading="lazy"
+                                    width="80"
+                                    class="w-full"
+                                  />
+                                </div>
+                              </div>
+                              <a
+                                class="font-sans text-sm leading-normal font-medium text-accent after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent"
+                                href="/authors/chuck-palahniuk/"
+                                >Chuck Palahniuk</a
+                              >
+                              <div
+                                class="ml-auto font-sans text-sm text-nowrap text-subtle"
+                              >
+                                2
+                              </div>
+                            </li>
+                          </ol>
+                        </div>
+                      </li>
+                      <li class="block">
+                        <div class="pt-0 text-md" style="z-index: 13">
+                          <div
+                            class="max-w-(--breakpoint-desktop) bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+                          >
+                            R
+                          </div>
+                        </div>
+                        <div class="bg-subtle">
+                          <ol>
+                            <li
+                              class="group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-[102.5%] has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6 relative"
+                            >
+                              <div
+                                class="relative rounded-full after:absolute after:top-0 after:left-0 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
+                              >
+                                <div
+                                  class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
+                                >
+                                  <div class="w-full">
+                                    <svg
+                                      fill="var(--bg-avatar-default)"
+                                      viewBox="0 0 16 16"
+                                      width="100%"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <path
+                                        clip-rule="evenodd"
+                                        d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
+                                        fill-rule="evenodd"
+                                      ></path>
+                                    </svg>
+                                  </div>
+                                </div>
+                              </div>
+                              <a
+                                class="font-sans text-sm leading-normal font-medium text-accent after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent"
+                                href="/authors/andrew-roberts/"
+                                >Andrew Roberts</a
+                              >
+                              <div
+                                class="ml-auto font-sans text-sm text-nowrap text-subtle"
+                              >
+                                1
+                              </div>
+                            </li>
+                          </ol>
+                        </div>
+                      </li>
+                      <li class="block">
+                        <div class="pt-0 text-md" style="z-index: 14">
+                          <div
+                            class="max-w-(--breakpoint-desktop) bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+                          >
+                            S
+                          </div>
+                        </div>
+                        <div class="bg-subtle">
+                          <ol>
+                            <li
+                              class="group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-[102.5%] has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6 relative"
+                            >
+                              <div
+                                class="relative rounded-full after:absolute after:top-0 after:left-0 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
+                              >
+                                <div
+                                  class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
+                                >
+                                  <div class="w-full">
+                                    <svg
+                                      fill="var(--bg-avatar-default)"
+                                      viewBox="0 0 16 16"
+                                      width="100%"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <path
+                                        clip-rule="evenodd"
+                                        d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
+                                        fill-rule="evenodd"
+                                      ></path>
+                                    </svg>
+                                  </div>
+                                </div>
+                              </div>
+                              <a
+                                class="font-sans text-sm leading-normal font-medium text-accent after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent"
+                                href="/authors/julie-sherman/"
+                                >Julie Sherman</a
+                              >
+                              <div
+                                class="ml-auto font-sans text-sm text-nowrap text-subtle"
+                              >
+                                1
+                              </div>
+                            </li>
+                            <li
+                              class="group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-[102.5%] has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6 relative"
+                            >
+                              <div
+                                class="relative rounded-full after:absolute after:top-0 after:left-0 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
+                              >
+                                <div
+                                  class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
+                                >
+                                  <div class="w-full">
+                                    <svg
+                                      fill="var(--bg-avatar-default)"
+                                      viewBox="0 0 16 16"
+                                      width="100%"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <path
+                                        clip-rule="evenodd"
+                                        d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
+                                        fill-rule="evenodd"
+                                      ></path>
+                                    </svg>
+                                  </div>
+                                </div>
+                              </div>
+                              <a
+                                class="font-sans text-sm leading-normal font-medium text-accent after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent"
+                                href="/authors/john-skipp/"
+                                >John Skipp</a
+                              >
+                              <div
+                                class="ml-auto font-sans text-sm text-nowrap text-subtle"
+                              >
+                                1
+                              </div>
+                            </li>
+                            <li
+                              class="group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-[102.5%] has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6 relative"
+                            >
+                              <div
+                                class="relative rounded-full after:absolute after:top-0 after:left-0 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
+                              >
+                                <div
+                                  class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
+                                >
+                                  <div class="w-full">
+                                    <svg
+                                      fill="var(--bg-avatar-default)"
+                                      viewBox="0 0 16 16"
+                                      width="100%"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <path
+                                        clip-rule="evenodd"
+                                        d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
+                                        fill-rule="evenodd"
+                                      ></path>
+                                    </svg>
+                                  </div>
+                                </div>
+                              </div>
+                              <a
+                                class="font-sans text-sm leading-normal font-medium text-accent after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent"
+                                href="/authors/craig-spector/"
+                                >Craig Spector</a
+                              >
+                              <div
+                                class="ml-auto font-sans text-sm text-nowrap text-subtle"
+                              >
+                                1
+                              </div>
+                            </li>
+                            <li
+                              class="group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-[102.5%] has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6 relative"
+                            >
+                              <div
+                                class="relative rounded-full after:absolute after:top-0 after:left-0 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
+                              >
+                                <div
+                                  class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
+                                >
+                                  <img
+                                    src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fbram-stoker.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=80&amp;h=80&amp;q=80&amp;f=avif"
+                                    srcset="
+                                      /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fbram-stoker.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=80&amp;h=80&amp;q=80&amp;f=avif   1x,
+                                      /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fbram-stoker.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=160&amp;h=160&amp;q=80&amp;f=avif 2x
+                                    "
+                                    alt=""
+                                    height="80"
+                                    loading="lazy"
+                                    width="80"
+                                    class="w-full"
+                                  />
+                                </div>
+                              </div>
+                              <a
+                                class="font-sans text-sm leading-normal font-medium text-accent after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent"
+                                href="/authors/bram-stoker/"
+                                >Bram Stoker</a
+                              >
+                              <div
+                                class="ml-auto font-sans text-sm text-nowrap text-subtle"
+                              >
+                                1
+                              </div>
+                            </li>
+                          </ol>
+                        </div>
+                      </li>
+                      <li class="block">
+                        <div class="pt-0 text-md" style="z-index: 15">
+                          <div
+                            class="max-w-(--breakpoint-desktop) bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
+                          >
+                            W
+                          </div>
+                        </div>
+                        <div class="bg-subtle">
+                          <ol>
+                            <li
+                              class="group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-[102.5%] has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6 relative"
+                            >
+                              <div
+                                class="relative rounded-full after:absolute after:top-0 after:left-0 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
+                              >
+                                <div
+                                  class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
+                                >
+                                  <div class="w-full">
+                                    <svg
+                                      fill="var(--bg-avatar-default)"
+                                      viewBox="0 0 16 16"
+                                      width="100%"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <path
+                                        clip-rule="evenodd"
+                                        d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
+                                        fill-rule="evenodd"
+                                      ></path>
+                                    </svg>
+                                  </div>
+                                </div>
+                              </div>
+                              <a
+                                class="font-sans text-sm leading-normal font-medium text-accent after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent"
+                                href="/authors/jocko-willink/"
+                                >Jocko Willink</a
+                              >
+                              <div
+                                class="ml-auto font-sans text-sm text-nowrap text-subtle"
+                              >
+                                1
+                              </div>
+                            </li>
+                          </ol>
+                        </div>
+                      </li>
+                    </ol>
+                    <div
+                      class="flex flex-col items-center px-container py-10"
+                    ></div>
+                  </div>
+                  <div
+                    aria-hidden="true"
+                    class="invisible fixed inset-0 bg-[rgba(0,0,0,.4)] opacity-0 transition-opacity duration-200 tablet-landscape:hidden"
+                  ></div>
+                  <div
+                    aria-label="Filters"
+                    class="fixed top-0 right-0 z-50 flex h-full max-w-[380px] flex-col items-start gap-y-5 bg-default text-left text-inverse duration-200 ease-in-out w-0 transform-[translateX(100%)] overflow-y-hidden tablet:gap-y-10 tablet-landscape:relative tablet-landscape:z-auto tablet-landscape:col-start-4 tablet-landscape:block tablet-landscape:w-auto tablet-landscape:max-w-none tablet-landscape:min-w-[320px] tablet-landscape:transform-none tablet-landscape:scroll-mt-[calc(25px_+_var(--scroll-offset,0px))] tablet-landscape:overflow-y-visible tablet-landscape:bg-inherit tablet-landscape:py-24 tablet-landscape:pb-12 tablet-landscape:drop-shadow-none laptop:w-[33%]"
+                    id="filters"
+                  >
+                    <div
+                      class="flex h-full w-full flex-col text-sm tablet:pt-12 tablet:text-base tablet-landscape:h-auto tablet-landscape:overflow-visible tablet-landscape:bg-default tablet-landscape:px-container tablet-landscape:pt-0 laptop:px-8"
+                    >
+                      <fieldset
+                        class="flex grow flex-col gap-5 px-container pb-4 [--control-scroll-offset:calc(181px_+_var(--scroll-offset,0px))] tablet:gap-8 tablet-landscape:mt-0 tablet-landscape:gap-12 tablet-landscape:px-0 tablet-landscape:py-10"
                       >
-                        <ol data-testid="list">
-                          <li class="block">
-                            <div class="pt-0 text-md" style="z-index: 1">
-                              <div
-                                class="max-w-(--breakpoint-desktop) bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
-                              >
-                                A
-                              </div>
-                            </div>
-                            <div class="bg-subtle">
-                              <ol>
-                                <li
-                                  class="group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6 relative"
-                                >
-                                  <div
-                                    class="relative rounded-full after:absolute after:top-0 after:left-0 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
-                                  >
-                                    <div
-                                      class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
-                                    >
-                                      <div class="w-full">
-                                        <svg
-                                          fill="var(--bg-avatar-default)"
-                                          viewBox="0 0 16 16"
-                                          width="100%"
-                                          xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                          <path
-                                            clip-rule="evenodd"
-                                            d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
-                                            fill-rule="evenodd"
-                                          ></path>
-                                        </svg>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <a
-                                    class="font-sans text-sm leading-normal font-medium text-accent after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent"
-                                    href="/authors/piers-anthony/"
-                                    >Piers Anthony</a
-                                  >
-                                  <div
-                                    class="ml-auto font-sans text-sm text-nowrap text-subtle"
-                                  >
-                                    1
-                                  </div>
-                                </li>
-                              </ol>
-                            </div>
-                          </li>
-                          <li class="block">
-                            <div class="pt-0 text-md" style="z-index: 2">
-                              <div
-                                class="max-w-(--breakpoint-desktop) bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
-                              >
-                                B
-                              </div>
-                            </div>
-                            <div class="bg-subtle">
-                              <ol>
-                                <li
-                                  class="group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6 relative"
-                                >
-                                  <div
-                                    class="relative rounded-full after:absolute after:top-0 after:left-0 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
-                                  >
-                                    <div
-                                      class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
-                                    >
-                                      <div class="w-full">
-                                        <svg
-                                          fill="var(--bg-avatar-default)"
-                                          viewBox="0 0 16 16"
-                                          width="100%"
-                                          xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                          <path
-                                            clip-rule="evenodd"
-                                            d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
-                                            fill-rule="evenodd"
-                                          ></path>
-                                        </svg>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <a
-                                    class="font-sans text-sm leading-normal font-medium text-accent after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent"
-                                    href="/authors/leif-babin/"
-                                    >Leif Babin</a
-                                  >
-                                  <div
-                                    class="ml-auto font-sans text-sm text-nowrap text-subtle"
-                                  >
-                                    1
-                                  </div>
-                                </li>
-                              </ol>
-                            </div>
-                          </li>
-                          <li class="block">
-                            <div class="pt-0 text-md" style="z-index: 3">
-                              <div
-                                class="max-w-(--breakpoint-desktop) bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
-                              >
-                                C
-                              </div>
-                            </div>
-                            <div class="bg-subtle">
-                              <ol>
-                                <li
-                                  class="group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6 relative"
-                                >
-                                  <div
-                                    class="relative rounded-full after:absolute after:top-0 after:left-0 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
-                                  >
-                                    <div
-                                      class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
-                                    >
-                                      <div class="w-full">
-                                        <svg
-                                          fill="var(--bg-avatar-default)"
-                                          viewBox="0 0 16 16"
-                                          width="100%"
-                                          xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                          <path
-                                            clip-rule="evenodd"
-                                            d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
-                                            fill-rule="evenodd"
-                                          ></path>
-                                        </svg>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <a
-                                    class="font-sans text-sm leading-normal font-medium text-accent after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent"
-                                    href="/authors/arthur-c-clarke/"
-                                    >Arthur C. Clarke</a
-                                  >
-                                  <div
-                                    class="ml-auto font-sans text-sm text-nowrap text-subtle"
-                                  >
-                                    1
-                                  </div>
-                                </li>
-                              </ol>
-                            </div>
-                          </li>
-                          <li class="block">
-                            <div class="pt-0 text-md" style="z-index: 4">
-                              <div
-                                class="max-w-(--breakpoint-desktop) bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
-                              >
-                                F
-                              </div>
-                            </div>
-                            <div class="bg-subtle">
-                              <ol>
-                                <li
-                                  class="group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6 relative"
-                                >
-                                  <div
-                                    class="relative rounded-full after:absolute after:top-0 after:left-0 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
-                                  >
-                                    <div
-                                      class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
-                                    >
-                                      <img
-                                        src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fian-fleming.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=80&amp;h=80&amp;q=80&amp;f=avif"
-                                        srcset="
-                                          /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fian-fleming.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=80&amp;h=80&amp;q=80&amp;f=avif   1x,
-                                          /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fian-fleming.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=160&amp;h=160&amp;q=80&amp;f=avif 2x
-                                        "
-                                        alt=""
-                                        height="80"
-                                        loading="lazy"
-                                        width="80"
-                                        class="w-full"
-                                      />
-                                    </div>
-                                  </div>
-                                  <a
-                                    class="font-sans text-sm leading-normal font-medium text-accent after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent"
-                                    href="/authors/ian-fleming/"
-                                    >Ian Fleming</a
-                                  >
-                                  <div
-                                    class="ml-auto font-sans text-sm text-nowrap text-subtle"
-                                  >
-                                    3
-                                  </div>
-                                </li>
-                                <li
-                                  class="group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6 relative"
-                                >
-                                  <div
-                                    class="relative rounded-full after:absolute after:top-0 after:left-0 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
-                                  >
-                                    <div
-                                      class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
-                                    >
-                                      <img
-                                        src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fphilip-fracassi.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=80&amp;h=80&amp;q=80&amp;f=avif"
-                                        srcset="
-                                          /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fphilip-fracassi.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=80&amp;h=80&amp;q=80&amp;f=avif   1x,
-                                          /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fphilip-fracassi.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=160&amp;h=160&amp;q=80&amp;f=avif 2x
-                                        "
-                                        alt=""
-                                        height="80"
-                                        loading="lazy"
-                                        width="80"
-                                        class="w-full"
-                                      />
-                                    </div>
-                                  </div>
-                                  <a
-                                    class="font-sans text-sm leading-normal font-medium text-accent after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent"
-                                    href="/authors/philip-fracassi/"
-                                    >Philip Fracassi</a
-                                  >
-                                  <div
-                                    class="ml-auto font-sans text-sm text-nowrap text-subtle"
-                                  >
-                                    13
-                                  </div>
-                                </li>
-                              </ol>
-                            </div>
-                          </li>
-                          <li class="block">
-                            <div class="pt-0 text-md" style="z-index: 5">
-                              <div
-                                class="max-w-(--breakpoint-desktop) bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
-                              >
-                                G
-                              </div>
-                            </div>
-                            <div class="bg-subtle">
-                              <ol>
-                                <li
-                                  class="group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6 relative"
-                                >
-                                  <div
-                                    class="relative rounded-full after:absolute after:top-0 after:left-0 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
-                                  >
-                                    <div
-                                      class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
-                                    >
-                                      <div class="w-full">
-                                        <svg
-                                          fill="var(--bg-avatar-default)"
-                                          viewBox="0 0 16 16"
-                                          width="100%"
-                                          xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                          <path
-                                            clip-rule="evenodd"
-                                            d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
-                                            fill-rule="evenodd"
-                                          ></path>
-                                        </svg>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <a
-                                    class="font-sans text-sm leading-normal font-medium text-accent after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent"
-                                    href="/authors/david-goggins/"
-                                    >David Goggins</a
-                                  >
-                                  <div
-                                    class="ml-auto font-sans text-sm text-nowrap text-subtle"
-                                  >
-                                    1
-                                  </div>
-                                </li>
-                              </ol>
-                            </div>
-                          </li>
-                          <li class="block">
-                            <div class="pt-0 text-md" style="z-index: 6">
-                              <div
-                                class="max-w-(--breakpoint-desktop) bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
-                              >
-                                H
-                              </div>
-                            </div>
-                            <div class="bg-subtle">
-                              <ol>
-                                <li
-                                  class="group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6 relative"
-                                >
-                                  <div
-                                    class="relative rounded-full after:absolute after:top-0 after:left-0 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
-                                  >
-                                    <div
-                                      class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
-                                    >
-                                      <div class="w-full">
-                                        <svg
-                                          fill="var(--bg-avatar-default)"
-                                          viewBox="0 0 16 16"
-                                          width="100%"
-                                          xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                          <path
-                                            clip-rule="evenodd"
-                                            d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
-                                            fill-rule="evenodd"
-                                          ></path>
-                                        </svg>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <a
-                                    class="font-sans text-sm leading-normal font-medium text-accent after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent"
-                                    href="/authors/david-h-hackworth/"
-                                    >David H. Hackworth</a
-                                  >
-                                  <div
-                                    class="ml-auto font-sans text-sm text-nowrap text-subtle"
-                                  >
-                                    1
-                                  </div>
-                                </li>
-                              </ol>
-                            </div>
-                          </li>
-                          <li class="block">
-                            <div class="pt-0 text-md" style="z-index: 7">
-                              <div
-                                class="max-w-(--breakpoint-desktop) bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
-                              >
-                                I
-                              </div>
-                            </div>
-                            <div class="bg-subtle">
-                              <ol>
-                                <li
-                                  class="group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6 relative"
-                                >
-                                  <div
-                                    class="relative rounded-full after:absolute after:top-0 after:left-0 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
-                                  >
-                                    <div
-                                      class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
-                                    >
-                                      <div class="w-full">
-                                        <svg
-                                          fill="var(--bg-avatar-default)"
-                                          viewBox="0 0 16 16"
-                                          width="100%"
-                                          xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                          <path
-                                            clip-rule="evenodd"
-                                            d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
-                                            fill-rule="evenodd"
-                                          ></path>
-                                        </svg>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <a
-                                    class="font-sans text-sm leading-normal font-medium text-accent after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent"
-                                    href="/authors/jesse-itzler/"
-                                    >Jesse Itzler</a
-                                  >
-                                  <div
-                                    class="ml-auto font-sans text-sm text-nowrap text-subtle"
-                                  >
-                                    1
-                                  </div>
-                                </li>
-                              </ol>
-                            </div>
-                          </li>
-                          <li class="block">
-                            <div class="pt-0 text-md" style="z-index: 8">
-                              <div
-                                class="max-w-(--breakpoint-desktop) bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
-                              >
-                                K
-                              </div>
-                            </div>
-                            <div class="bg-subtle">
-                              <ol>
-                                <li
-                                  class="group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6 relative"
-                                >
-                                  <div
-                                    class="relative rounded-full after:absolute after:top-0 after:left-0 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
-                                  >
-                                    <div
-                                      class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
-                                    >
-                                      <img
-                                        src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fstephen-king.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=80&amp;h=80&amp;q=80&amp;f=avif"
-                                        srcset="
-                                          /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fstephen-king.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=80&amp;h=80&amp;q=80&amp;f=avif   1x,
-                                          /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fstephen-king.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=160&amp;h=160&amp;q=80&amp;f=avif 2x
-                                        "
-                                        alt=""
-                                        height="80"
-                                        loading="lazy"
-                                        width="80"
-                                        class="w-full"
-                                      />
-                                    </div>
-                                  </div>
-                                  <a
-                                    class="font-sans text-sm leading-normal font-medium text-accent after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent"
-                                    href="/authors/stephen-king/"
-                                    >Stephen King</a
-                                  >
-                                  <div
-                                    class="ml-auto font-sans text-sm text-nowrap text-subtle"
-                                  >
-                                    10
-                                  </div>
-                                </li>
-                              </ol>
-                            </div>
-                          </li>
-                          <li class="block">
-                            <div class="pt-0 text-md" style="z-index: 9">
-                              <div
-                                class="max-w-(--breakpoint-desktop) bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
-                              >
-                                L
-                              </div>
-                            </div>
-                            <div class="bg-subtle">
-                              <ol>
-                                <li
-                                  class="group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6 relative"
-                                >
-                                  <div
-                                    class="relative rounded-full after:absolute after:top-0 after:left-0 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
-                                  >
-                                    <div
-                                      class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
-                                    >
-                                      <img
-                                        src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Frichard-laymon.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=80&amp;h=80&amp;q=80&amp;f=avif"
-                                        srcset="
-                                          /_image/?href=%2Fcontent%2Fassets%2Favatars%2Frichard-laymon.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=80&amp;h=80&amp;q=80&amp;f=avif   1x,
-                                          /_image/?href=%2Fcontent%2Fassets%2Favatars%2Frichard-laymon.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=160&amp;h=160&amp;q=80&amp;f=avif 2x
-                                        "
-                                        alt=""
-                                        height="80"
-                                        loading="lazy"
-                                        width="80"
-                                        class="w-full"
-                                      />
-                                    </div>
-                                  </div>
-                                  <a
-                                    class="font-sans text-sm leading-normal font-medium text-accent after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent"
-                                    href="/authors/richard-laymon/"
-                                    >Richard Laymon</a
-                                  >
-                                  <div
-                                    class="ml-auto font-sans text-sm text-nowrap text-subtle"
-                                  >
-                                    10
-                                  </div>
-                                </li>
-                              </ol>
-                            </div>
-                          </li>
-                          <li class="block">
-                            <div class="pt-0 text-md" style="z-index: 10">
-                              <div
-                                class="max-w-(--breakpoint-desktop) bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
-                              >
-                                M
-                              </div>
-                            </div>
-                            <div class="bg-subtle">
-                              <ol>
-                                <li
-                                  class="group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6 relative"
-                                >
-                                  <div
-                                    class="relative rounded-full after:absolute after:top-0 after:left-0 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
-                                  >
-                                    <div
-                                      class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
-                                    >
-                                      <div class="w-full">
-                                        <svg
-                                          fill="var(--bg-avatar-default)"
-                                          viewBox="0 0 16 16"
-                                          width="100%"
-                                          xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                          <path
-                                            clip-rule="evenodd"
-                                            d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
-                                            fill-rule="evenodd"
-                                          ></path>
-                                        </svg>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <a
-                                    class="font-sans text-sm leading-normal font-medium text-accent after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent"
-                                    href="/authors/edmund-morris/"
-                                    >Edmund Morris</a
-                                  >
-                                  <div
-                                    class="ml-auto font-sans text-sm text-nowrap text-subtle"
-                                  >
-                                    1
-                                  </div>
-                                </li>
-                              </ol>
-                            </div>
-                          </li>
-                          <li class="block">
-                            <div class="pt-0 text-md" style="z-index: 11">
-                              <div
-                                class="max-w-(--breakpoint-desktop) bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
-                              >
-                                N
-                              </div>
-                            </div>
-                            <div class="bg-subtle">
-                              <ol>
-                                <li
-                                  class="group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6 relative"
-                                >
-                                  <div
-                                    class="relative rounded-full after:absolute after:top-0 after:left-0 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
-                                  >
-                                    <div
-                                      class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
-                                    >
-                                      <div class="w-full">
-                                        <svg
-                                          fill="var(--bg-avatar-default)"
-                                          viewBox="0 0 16 16"
-                                          width="100%"
-                                          xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                          <path
-                                            clip-rule="evenodd"
-                                            d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
-                                            fill-rule="evenodd"
-                                          ></path>
-                                        </svg>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <a
-                                    class="font-sans text-sm leading-normal font-medium text-accent after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent"
-                                    href="/authors/steven-novella/"
-                                    >Steven Novella</a
-                                  >
-                                  <div
-                                    class="ml-auto font-sans text-sm text-nowrap text-subtle"
-                                  >
-                                    1
-                                  </div>
-                                </li>
-                              </ol>
-                            </div>
-                          </li>
-                          <li class="block">
-                            <div class="pt-0 text-md" style="z-index: 12">
-                              <div
-                                class="max-w-(--breakpoint-desktop) bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
-                              >
-                                P
-                              </div>
-                            </div>
-                            <div class="bg-subtle">
-                              <ol>
-                                <li
-                                  class="group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6 relative"
-                                >
-                                  <div
-                                    class="relative rounded-full after:absolute after:top-0 after:left-0 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
-                                  >
-                                    <div
-                                      class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
-                                    >
-                                      <img
-                                        src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fchuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=80&amp;h=80&amp;q=80&amp;f=avif"
-                                        srcset="
-                                          /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fchuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=80&amp;h=80&amp;q=80&amp;f=avif   1x,
-                                          /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fchuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=160&amp;h=160&amp;q=80&amp;f=avif 2x
-                                        "
-                                        alt=""
-                                        height="80"
-                                        loading="lazy"
-                                        width="80"
-                                        class="w-full"
-                                      />
-                                    </div>
-                                  </div>
-                                  <a
-                                    class="font-sans text-sm leading-normal font-medium text-accent after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent"
-                                    href="/authors/chuck-palahniuk/"
-                                    >Chuck Palahniuk</a
-                                  >
-                                  <div
-                                    class="ml-auto font-sans text-sm text-nowrap text-subtle"
-                                  >
-                                    2
-                                  </div>
-                                </li>
-                              </ol>
-                            </div>
-                          </li>
-                          <li class="block">
-                            <div class="pt-0 text-md" style="z-index: 13">
-                              <div
-                                class="max-w-(--breakpoint-desktop) bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
-                              >
-                                R
-                              </div>
-                            </div>
-                            <div class="bg-subtle">
-                              <ol>
-                                <li
-                                  class="group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6 relative"
-                                >
-                                  <div
-                                    class="relative rounded-full after:absolute after:top-0 after:left-0 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
-                                  >
-                                    <div
-                                      class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
-                                    >
-                                      <div class="w-full">
-                                        <svg
-                                          fill="var(--bg-avatar-default)"
-                                          viewBox="0 0 16 16"
-                                          width="100%"
-                                          xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                          <path
-                                            clip-rule="evenodd"
-                                            d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
-                                            fill-rule="evenodd"
-                                          ></path>
-                                        </svg>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <a
-                                    class="font-sans text-sm leading-normal font-medium text-accent after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent"
-                                    href="/authors/andrew-roberts/"
-                                    >Andrew Roberts</a
-                                  >
-                                  <div
-                                    class="ml-auto font-sans text-sm text-nowrap text-subtle"
-                                  >
-                                    1
-                                  </div>
-                                </li>
-                              </ol>
-                            </div>
-                          </li>
-                          <li class="block">
-                            <div class="pt-0 text-md" style="z-index: 14">
-                              <div
-                                class="max-w-(--breakpoint-desktop) bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
-                              >
-                                S
-                              </div>
-                            </div>
-                            <div class="bg-subtle">
-                              <ol>
-                                <li
-                                  class="group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6 relative"
-                                >
-                                  <div
-                                    class="relative rounded-full after:absolute after:top-0 after:left-0 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
-                                  >
-                                    <div
-                                      class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
-                                    >
-                                      <div class="w-full">
-                                        <svg
-                                          fill="var(--bg-avatar-default)"
-                                          viewBox="0 0 16 16"
-                                          width="100%"
-                                          xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                          <path
-                                            clip-rule="evenodd"
-                                            d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
-                                            fill-rule="evenodd"
-                                          ></path>
-                                        </svg>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <a
-                                    class="font-sans text-sm leading-normal font-medium text-accent after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent"
-                                    href="/authors/julie-sherman/"
-                                    >Julie Sherman</a
-                                  >
-                                  <div
-                                    class="ml-auto font-sans text-sm text-nowrap text-subtle"
-                                  >
-                                    1
-                                  </div>
-                                </li>
-                                <li
-                                  class="group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6 relative"
-                                >
-                                  <div
-                                    class="relative rounded-full after:absolute after:top-0 after:left-0 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
-                                  >
-                                    <div
-                                      class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
-                                    >
-                                      <div class="w-full">
-                                        <svg
-                                          fill="var(--bg-avatar-default)"
-                                          viewBox="0 0 16 16"
-                                          width="100%"
-                                          xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                          <path
-                                            clip-rule="evenodd"
-                                            d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
-                                            fill-rule="evenodd"
-                                          ></path>
-                                        </svg>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <a
-                                    class="font-sans text-sm leading-normal font-medium text-accent after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent"
-                                    href="/authors/john-skipp/"
-                                    >John Skipp</a
-                                  >
-                                  <div
-                                    class="ml-auto font-sans text-sm text-nowrap text-subtle"
-                                  >
-                                    1
-                                  </div>
-                                </li>
-                                <li
-                                  class="group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6 relative"
-                                >
-                                  <div
-                                    class="relative rounded-full after:absolute after:top-0 after:left-0 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
-                                  >
-                                    <div
-                                      class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
-                                    >
-                                      <div class="w-full">
-                                        <svg
-                                          fill="var(--bg-avatar-default)"
-                                          viewBox="0 0 16 16"
-                                          width="100%"
-                                          xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                          <path
-                                            clip-rule="evenodd"
-                                            d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
-                                            fill-rule="evenodd"
-                                          ></path>
-                                        </svg>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <a
-                                    class="font-sans text-sm leading-normal font-medium text-accent after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent"
-                                    href="/authors/craig-spector/"
-                                    >Craig Spector</a
-                                  >
-                                  <div
-                                    class="ml-auto font-sans text-sm text-nowrap text-subtle"
-                                  >
-                                    1
-                                  </div>
-                                </li>
-                                <li
-                                  class="group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6 relative"
-                                >
-                                  <div
-                                    class="relative rounded-full after:absolute after:top-0 after:left-0 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
-                                  >
-                                    <div
-                                      class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
-                                    >
-                                      <img
-                                        src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fbram-stoker.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=80&amp;h=80&amp;q=80&amp;f=avif"
-                                        srcset="
-                                          /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fbram-stoker.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=80&amp;h=80&amp;q=80&amp;f=avif   1x,
-                                          /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fbram-stoker.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=160&amp;h=160&amp;q=80&amp;f=avif 2x
-                                        "
-                                        alt=""
-                                        height="80"
-                                        loading="lazy"
-                                        width="80"
-                                        class="w-full"
-                                      />
-                                    </div>
-                                  </div>
-                                  <a
-                                    class="font-sans text-sm leading-normal font-medium text-accent after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent"
-                                    href="/authors/bram-stoker/"
-                                    >Bram Stoker</a
-                                  >
-                                  <div
-                                    class="ml-auto font-sans text-sm text-nowrap text-subtle"
-                                  >
-                                    1
-                                  </div>
-                                </li>
-                              </ol>
-                            </div>
-                          </li>
-                          <li class="block">
-                            <div class="pt-0 text-md" style="z-index: 15">
-                              <div
-                                class="max-w-(--breakpoint-desktop) bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
-                              >
-                                W
-                              </div>
-                            </div>
-                            <div class="bg-subtle">
-                              <ol>
-                                <li
-                                  class="group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-105 has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6 relative"
-                                >
-                                  <div
-                                    class="relative rounded-full after:absolute after:top-0 after:left-0 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
-                                  >
-                                    <div
-                                      class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
-                                    >
-                                      <div class="w-full">
-                                        <svg
-                                          fill="var(--bg-avatar-default)"
-                                          viewBox="0 0 16 16"
-                                          width="100%"
-                                          xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                          <path
-                                            clip-rule="evenodd"
-                                            d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z"
-                                            fill-rule="evenodd"
-                                          ></path>
-                                        </svg>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <a
-                                    class="font-sans text-sm leading-normal font-medium text-accent after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent"
-                                    href="/authors/jocko-willink/"
-                                    >Jocko Willink</a
-                                  >
-                                  <div
-                                    class="ml-auto font-sans text-sm text-nowrap text-subtle"
-                                  >
-                                    1
-                                  </div>
-                                </li>
-                              </ol>
-                            </div>
-                          </li>
-                        </ol>
-                        <div
-                          class="flex flex-col items-center px-container py-10"
-                        ></div>
+                        <legend
+                          class="mb-5 block w-full pt-4 pb-4 text-lg text-subtle shadow-bottom tablet-landscape:mb-0 tablet-landscape:pt-10 tablet-landscape:pb-8 tablet-landscape:font-sans tablet-landscape:text-xxs tablet-landscape:font-semibold tablet-landscape:tracking-wide tablet-landscape:uppercase"
+                        >
+                          Filter
+                        </legend>
+                        <label class="flex flex-col text-subtle"
+                          ><span
+                            class="inline-block h-6 text-left font-sans text-xxs leading-none tracking-wide text-subtle uppercase"
+                            >Name</span
+                          ><input
+                            class="border-0 bg-default px-4 py-2 text-base text-default shadow-all placeholder:text-default placeholder:opacity-50"
+                            placeholder="Enter all or part of a name"
+                            type="text"
+                        /></label>
+                      </fieldset>
+                      <div
+                        class="sticky bottom-0 z-10 mt-auto w-full self-end border-t border-t-default bg-default px-8 py-4 drop-shadow-2xl tablet-landscape:hidden"
+                      >
+                        <button
+                          class="flex w-full cursor-pointer items-center justify-center gap-x-4 bg-footer px-4 py-3 font-sans text-xs text-nowrap text-inverse uppercase tablet-landscape:hidden"
+                          type="button"
+                        >
+                          View
+                          <!-- -->19<!-- -->
+                          Results
+                        </button>
                       </div>
                     </div>
                   </div>

@@ -27,7 +27,7 @@ describe("Authors", () => {
     render(<Authors {...props} />);
 
     await userEvent.selectOptions(
-      screen.getByLabelText("Order By"),
+      screen.getByLabelText("Sort"),
       "Name (Z → A)",
     );
 
@@ -40,7 +40,7 @@ describe("Authors", () => {
     render(<Authors {...props} />);
 
     await userEvent.selectOptions(
-      screen.getByLabelText("Order By"),
+      screen.getByLabelText("Sort"),
       "Name (A → Z)",
     );
 
@@ -53,7 +53,7 @@ describe("Authors", () => {
     render(<Authors {...props} />);
 
     await userEvent.selectOptions(
-      screen.getByLabelText("Order By"),
+      screen.getByLabelText("Sort"),
       "Review Count (Fewest First)",
     );
 
@@ -66,7 +66,7 @@ describe("Authors", () => {
     render(<Authors {...props} />);
 
     await userEvent.selectOptions(
-      screen.getByLabelText("Order By"),
+      screen.getByLabelText("Sort"),
       "Review Count (Most First)",
     );
 
