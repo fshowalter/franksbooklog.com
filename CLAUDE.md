@@ -139,7 +139,33 @@ Pagefind integration builds search index at build time and serves it in dev mode
     - Exercise interactive elements like a user
   - Goal: By exercising all options and rendering all permutations, any uncovered code must be dead code safe to remove
 
-### Test Coverage Commands
+## Development Workflow
 
-- Add flag to run test coverage with specified max-workers:
-  - `npm run test:coverage -- --max-workers=2`
+1. **IMPORTANT**: Always create a new feature branch for new features:
+   - `git checkout -b feat/feature-name` for features
+   - `git checkout -b fix/bug-name` for bug fixes
+   - `git checkout -b chore/task-name` for maintenance tasks
+2. **IMPORTANT**: Always rebase on origin/main before pushing:
+   - `git pull --rebase origin main`
+3. Make changes with proper types
+4. Run tests and linting
+5. **IMPORTANT**: Before creating any PR, run:
+   - `npm run test` - Must pass with no errors
+   - `npm run lint` - Must pass with no errors
+   - `npm run lint:spelling` - Must pass with no errors
+   - `npm run check` - Must pass with no errors
+   - `npm run knip` - Must pass with no errors
+   - `npm run format` - Must pass with no errors
+
+   - This ensures your PR is based on the latest code
+
+6. Create PR with descriptive title
+7. Ensure all CI checks pass
+
+## Test Runner Notes
+
+- When running test or test:coverage, make sure and run with max-workers=2
+
+## TypeScript Best Practices
+
+- Don't use the `any` type. The linter will error on it.

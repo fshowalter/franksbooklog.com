@@ -4,34 +4,35 @@ import type { Author } from "~/api/authors";
 import type { AvatarImageProps } from "~/api/avatars";
 import type { BackdropImageProps } from "~/api/backdrops";
 
-import { Backdrop } from "~/components/Backdrop";
 import { GroupedList } from "~/components/GroupedList";
 import { ListItem } from "~/components/ListItem";
 import { ListItemAvatar } from "~/components/ListItemAvatar";
-import { ListWithFiltersLayout } from "~/components/ListWithFiltersLayout";
+import { ListWithFilters } from "~/components/ListWithFilters";
 
 import type { Sort } from "./Authors.reducer";
 
 import { Actions, initState, reducer } from "./Authors.reducer";
 import { Filters } from "./Filters";
+
 export type ListItemValue = Pick<Author, "name" | "slug" | "sortName"> & {
   avatarImageProps: AvatarImageProps | undefined;
   reviewedWorkCount: number;
 };
 
-export type Props = {
+export type Props = InteractiveProps & {
   backdropImageProps: BackdropImageProps;
   deck: string;
+};
+
+type InteractiveProps = {
   initialSort: Sort;
   values: ListItemValue[];
 };
 
 export function Authors({
-  backdropImageProps,
-  deck,
   initialSort,
   values,
-}: Props): JSX.Element {
+}: InteractiveProps): JSX.Element {
   const [state, dispatch] = useReducer(
     reducer,
     {
@@ -42,10 +43,7 @@ export function Authors({
   );
 
   return (
-    <ListWithFiltersLayout
-      backdrop={
-        <Backdrop deck={deck} imageProps={backdropImageProps} title="Authors" />
-      }
+    <ListWithFilters
       filters={<Filters dispatch={dispatch} sortValue={state.sortValue} />}
       list={
         <GroupedList

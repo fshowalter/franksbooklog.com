@@ -5,14 +5,13 @@ import type { CoverImageProps } from "~/api/covers";
 import type { Review } from "~/api/reviews";
 
 import { Abandoned } from "~/components/Abandoned";
-import { Backdrop } from "~/components/Backdrop";
 import { Grade } from "~/components/Grade";
 import { GroupedList } from "~/components/GroupedList";
 import { ListItem } from "~/components/ListItem";
 import { ListItemCover } from "~/components/ListItemCover";
 import { ListItemKindAndYear } from "~/components/ListItemKindAndYear";
 import { ListItemTitle } from "~/components/ListItemTitle";
-import { ListWithFiltersLayout } from "~/components/ListWithFiltersLayout";
+import { ListWithFilters } from "~/components/ListWithFilters";
 import { toSentenceArray } from "~/utils";
 
 import type { Sort } from "./Reviews.reducer";
@@ -35,9 +34,14 @@ export type ListItemValue = Pick<
   coverImageProps: CoverImageProps;
 };
 
-export type Props = {
+export type Props = InteractiveProps & {
   backdropImageProps: BackdropImageProps;
   deck: string;
+};
+
+type Author = Pick<Review["authors"][0], "name" | "sortName"> & {};
+
+type InteractiveProps = {
   distinctKinds: readonly string[];
   distinctPublishedYears: readonly string[];
   distinctReviewYears: readonly string[];
@@ -45,17 +49,13 @@ export type Props = {
   values: ListItemValue[];
 };
 
-type Author = Pick<Review["authors"][0], "name" | "sortName"> & {};
-
 export function Reviews({
-  backdropImageProps,
-  deck,
   distinctKinds,
   distinctPublishedYears,
   distinctReviewYears,
   initialSort,
   values,
-}: Props): JSX.Element {
+}: InteractiveProps): JSX.Element {
   const [state, dispatch] = useReducer(
     reducer,
     {
@@ -66,10 +66,7 @@ export function Reviews({
   );
 
   return (
-    <ListWithFiltersLayout
-      backdrop={
-        <Backdrop deck={deck} imageProps={backdropImageProps} title="Reviews" />
-      }
+    <ListWithFilters
       filters={
         <Filters
           dispatch={dispatch}

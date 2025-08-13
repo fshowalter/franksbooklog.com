@@ -4,14 +4,15 @@ import type { BackdropImageProps } from "~/api/backdrops";
 import type { CoverImageProps } from "~/api/covers";
 import type { TimelineEntry } from "~/api/timelineEntries";
 
-import { Backdrop } from "~/components/Backdrop";
 import { BarGradient } from "~/components/BarGradient";
 import { GroupedList } from "~/components/GroupedList";
 import { ListItem } from "~/components/ListItem";
 import { ListItemCover } from "~/components/ListItemCover";
 import { ListItemKindAndYear } from "~/components/ListItemKindAndYear";
-import { ListWithFiltersLayout } from "~/components/ListWithFiltersLayout";
-import { ListHeaderButton } from "~/components/ListWithFiltersLayout";
+import {
+  ListHeaderButton,
+  ListWithFilters,
+} from "~/components/ListWithFilters";
 import { toSentenceArray } from "~/utils";
 
 import type { Sort } from "./Readings.reducer";
@@ -37,11 +38,15 @@ export type ListItemValue = Pick<
   readingMonth: string;
   readingYear: string;
 };
-export type Props = {
-  abandonedCount: number;
+
+export type Props = InteractiveProps & {
   backdropImageProps: BackdropImageProps;
-  bookCount: number;
   deck: string;
+};
+
+type InteractiveProps = {
+  abandonedCount: number;
+  bookCount: number;
   distinctEditions: string[];
   distinctKinds: string[];
   distinctReadingYears: string[];
@@ -53,15 +58,13 @@ export type Props = {
 };
 
 export function Readings({
-  backdropImageProps,
-  deck,
   distinctEditions,
   distinctKinds,
   distinctReadingYears,
   distinctWorkYears,
   initialSort,
   values,
-}: Props): JSX.Element {
+}: InteractiveProps): JSX.Element {
   const [state, dispatch] = useReducer(
     reducer,
     {
@@ -72,14 +75,7 @@ export function Readings({
   );
 
   return (
-    <ListWithFiltersLayout
-      backdrop={
-        <Backdrop
-          deck={deck}
-          imageProps={backdropImageProps}
-          title="Reading Log"
-        />
-      }
+    <ListWithFilters
       filters={
         <Filters
           dispatch={dispatch}
