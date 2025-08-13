@@ -142,9 +142,25 @@ export type ReviewedWorkJson = z.infer<typeof ReviewedWorkJsonSchema>;
 
 export type ReviewedWorkJsonReading = z.infer<typeof ReadingSchema>;
 
+// Cache at data layer - lazy caching for better build performance
+let cachedReviewedWorksJson: ReviewedWorkJson[];
+
+// Enable caching during builds but not in dev mode
+const ENABLE_CACHE = !import.meta.env.DEV;
+
 export async function allReviewedWorksJson(): Promise<ReviewedWorkJson[]> {
   return await perfLogger.measure("allReviewedWorksJson", async () => {
-    return await parseAllReviewedWorksJson();
+    if (ENABLE_CACHE && cachedReviewedWorksJson) {
+      return cachedReviewedWorksJson;
+    }
+
+    const works = await parseAllReviewedWorksJson();
+
+    if (ENABLE_CACHE) {
+      cachedReviewedWorksJson = works;
+    }
+
+    return works;
   });
 }
 

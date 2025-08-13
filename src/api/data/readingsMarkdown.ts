@@ -37,9 +37,25 @@ export type MarkdownReading = {
 
 type TimelineEntry = z.infer<typeof TimelineEntrySchema>;
 
+// Cache at data layer - lazy caching for better build performance
+let cachedReadingsMarkdown: MarkdownReading[];
+
+// Enable caching during builds but not in dev mode
+const ENABLE_CACHE = !import.meta.env.DEV;
+
 export async function allReadingsMarkdown(): Promise<MarkdownReading[]> {
   return await perfLogger.measure("allReadingsMarkdown", async () => {
-    return await parseAllReadingsMarkdown();
+    if (ENABLE_CACHE && cachedReadingsMarkdown) {
+      return cachedReadingsMarkdown;
+    }
+
+    const readings = await parseAllReadingsMarkdown();
+
+    if (ENABLE_CACHE) {
+      cachedReadingsMarkdown = readings;
+    }
+
+    return readings;
   });
 }
 
