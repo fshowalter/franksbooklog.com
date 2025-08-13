@@ -44,14 +44,21 @@ export function Authors({
 
   return (
     <ListWithFilters
+      className="[--scroll-offset:52px]"
+      dynamicSubNav={
+        <AlphabetSubNav
+          groupedValues={state.groupedValues}
+          sortValue={state.sortValue}
+        />
+      }
       filters={<Filters dispatch={dispatch} />}
       list={
         <GroupedList
           data-testid="list"
           groupedValues={state.groupedValues}
-          onShowMore={() => dispatch({ type: Actions.SHOW_MORE })}
+          groupItemClassName={`scroll-mt-[calc(52px_+_var(--list-scroll-offset))]`}
           totalCount={state.filteredValues.length}
-          visibleCount={state.showCount}
+          visibleCount={state.filteredValues.length}
         >
           {(value) => <AuthorListItem key={value.slug} value={value} />}
         </GroupedList>
@@ -73,6 +80,50 @@ export function Authors({
       }}
       totalCount={state.filteredValues.length}
     />
+  );
+}
+
+function AlphabetSubNav({
+  groupedValues,
+  sortValue,
+}: {
+  groupedValues: Map<string, ListItemValue[]>;
+  sortValue: Sort;
+}) {
+  if (!sortValue.startsWith("name-")) {
+    return;
+  }
+
+  const letters = [..."ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
+  if (sortValue == "name-desc") {
+    letters.reverse();
+  }
+
+  return (
+    <nav className={`sticky top-0 z-[21] bg-footer`}>
+      <ul
+        className={`
+          mx-auto flex scrollbar-hidden max-w-(--breakpoint-desktop) snap-x
+          overflow-x-auto px-container font-sans text-sm font-normal
+          tracking-wide
+          laptop:justify-center
+        `}
+      >
+        {letters.map((letter) => {
+          return (
+            <LetterLink
+              key={letter}
+              letter={letter}
+              linkFunc={
+                groupedValues.has(letter)
+                  ? (letter: string) => `#${letter}`
+                  : undefined
+              }
+            />
+          );
+        })}
+      </ul>
+    </nav>
   );
 }
 
@@ -127,5 +178,43 @@ function AuthorName({
     >
       {value}
     </a>
+  );
+}
+
+function LetterLink({
+  letter,
+  linkFunc,
+}: {
+  letter: string;
+  linkFunc?: (letter: string) => string;
+}) {
+  return (
+    <li
+      className={`
+        snap-start text-center
+        ${linkFunc ? "text-inverse" : `text-inverse-subtle`}
+      `}
+    >
+      {linkFunc ? (
+        <a
+          className={`
+            block transform-gpu p-4 transition-all
+            hover:scale-105 hover:bg-accent hover:text-inverse
+          `}
+          href={linkFunc(letter)}
+        >
+          {letter}
+        </a>
+      ) : (
+        <div
+          className={`
+            p-4
+            laptop:py-4
+          `}
+        >
+          {letter}
+        </div>
+      )}
+    </li>
   );
 }

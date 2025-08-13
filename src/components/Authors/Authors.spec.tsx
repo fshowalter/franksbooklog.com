@@ -72,32 +72,4 @@ describe("Authors", () => {
 
     expect(screen.getByTestId("list")).toMatchSnapshot();
   });
-
-  it("can show more items when button is clicked", async ({ expect }) => {
-    expect.hasAssertions();
-
-    // Create many test items to trigger pagination (need more than 100)
-    const manyValues = Array.from({ length: 150 }, (_, i) => ({
-      ...props.values[0], // Use first item as template
-      name: `Test Author ${i}`,
-      slug: `test-author-${i}`,
-      sortName: `Author ${i}, Test`,
-    }));
-
-    const testProps = {
-      ...props,
-      values: manyValues,
-    };
-
-    render(<Authors {...testProps} />);
-
-    // Should show Show More button since we have 150 items > 100 default
-    const showMoreButton = screen.getByText("Show More");
-    expect(showMoreButton).toBeInTheDocument();
-
-    await userEvent.click(showMoreButton);
-
-    // Snapshot the result to verify more items are rendered
-    expect(screen.getByTestId("list")).toMatchSnapshot();
-  });
 });
