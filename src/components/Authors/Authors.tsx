@@ -44,7 +44,7 @@ export function Authors({
 
   return (
     <ListWithFilters
-      filters={<Filters dispatch={dispatch} sortValue={state.sortValue} />}
+      filters={<Filters dispatch={dispatch} />}
       list={
         <GroupedList
           data-testid="list"
@@ -56,6 +56,21 @@ export function Authors({
           {(value) => <AuthorListItem key={value.slug} value={value} />}
         </GroupedList>
       }
+      sortProps={{
+        currentSortValue: state.sortValue,
+        onSortChange: (e) =>
+          dispatch({ type: Actions.SORT, value: e.target.value as Sort }),
+        sortOptions: (
+          <>
+            <option value="name-asc">Name (A &rarr; Z)</option>
+            <option value="name-desc">Name (Z &rarr; A)</option>
+            <option value="review-count-desc">Review Count (Most First)</option>
+            <option value="review-count-asc">
+              Review Count (Fewest First)
+            </option>
+          </>
+        ),
+      }}
       totalCount={state.filteredValues.length}
     />
   );

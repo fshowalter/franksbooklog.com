@@ -73,7 +73,6 @@ export function Reviews({
           distinctKinds={distinctKinds}
           distinctPublishedYears={distinctPublishedYears}
           distinctReviewYears={distinctReviewYears}
-          sortValue={state.sortValue}
         />
       }
       list={
@@ -88,6 +87,27 @@ export function Reviews({
           {(value) => <ReviewsListItem key={value.slug} value={value} />}
         </GroupedList>
       }
+      sortProps={{
+        currentSortValue: state.sortValue,
+        onSortChange: (e) =>
+          dispatch({ type: Actions.SORT, value: e.target.value as Sort }),
+        sortOptions: (
+          <>
+            <option value="author-asc">Author (A &rarr; Z)</option>
+            <option value="author-desc">Author (Z &rarr; A)</option>
+            <option value="review-date-desc">Review Date (Newest First)</option>
+            <option value="review-date-asc">Review Date (Oldest First)</option>
+            <option value="year-published-desc">
+              Work Year (Newest First)
+            </option>
+            <option value="year-published-asc">Work Year (Oldest First)</option>
+            <option value="title-asc">Title (A &rarr; Z)</option>
+            <option value="title-desc">Title (Z &rarr; A)</option>
+            <option value="grade-desc">Grade (Best First)</option>
+            <option value="grade-asc">Grade (Worst First)</option>
+          </>
+        ),
+      }}
       totalCount={state.filteredValues.length}
     />
   );

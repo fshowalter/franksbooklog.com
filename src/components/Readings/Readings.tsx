@@ -83,7 +83,6 @@ export function Readings({
           distinctKinds={distinctKinds}
           distinctReadingYears={distinctReadingYears}
           distinctWorkYears={distinctWorkYears}
-          sortValue={state.sortValue}
         />
       }
       list={
@@ -109,6 +108,21 @@ export function Readings({
       listHeaderButtons={
         <ListHeaderButton href="/readings/stats/" text="stats" />
       }
+      sortProps={{
+        currentSortValue: state.sortValue,
+        onSortChange: (e) =>
+          dispatch({ type: Actions.SORT, value: e.target.value as Sort }),
+        sortOptions: (
+          <>
+            <option value="progress-date-desc">
+              Reading Date (Newest First)
+            </option>
+            <option value="progress-date-asc">
+              Reading Date (Oldest First)
+            </option>
+          </>
+        ),
+      }}
       totalCount={state.filteredValues.length}
     />
   );

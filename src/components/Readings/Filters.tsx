@@ -5,7 +5,7 @@ import { SelectOptions } from "~/components/SelectOptions";
 import { TextFilter } from "~/components/TextFilter";
 import { YearInput } from "~/components/YearInput";
 
-import type { ActionType, Sort } from "./Readings.reducer";
+import type { ActionType } from "./Readings.reducer";
 
 import { Actions } from "./Readings.reducer";
 
@@ -15,14 +15,12 @@ export function Filters({
   distinctKinds,
   distinctReadingYears,
   distinctWorkYears,
-  sortValue,
 }: {
   dispatch: React.Dispatch<ActionType>;
   distinctEditions: readonly string[];
   distinctKinds: readonly string[];
   distinctReadingYears: readonly string[];
   distinctWorkYears: readonly string[];
-  sortValue: Sort;
 }): JSX.Element {
   return (
     <>
@@ -68,19 +66,6 @@ export function Filters({
         }
       >
         <SelectOptions options={distinctEditions} />
-      </SelectField>
-      <SelectField
-        label="Order By"
-        onChange={(e) =>
-          dispatch({
-            type: Actions.SORT,
-            value: e.target.value as Sort,
-          })
-        }
-        value={sortValue}
-      >
-        <option value="progress-date-desc">Reading Date (Newest First)</option>
-        <option value="progress-date-asc">Reading Date (Oldest First)</option>
       </SelectField>
     </>
   );

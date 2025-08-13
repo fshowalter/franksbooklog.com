@@ -78,7 +78,6 @@ export function Author({
           dispatch={dispatch}
           distinctKinds={distinctKinds}
           distinctPublishedYears={distinctPublishedYears}
-          sortValue={state.sortValue}
         />
       }
       list={
@@ -94,6 +93,23 @@ export function Author({
           }}
         </GroupedList>
       }
+      sortProps={{
+        currentSortValue: state.sortValue,
+        onSortChange: (e) =>
+          dispatch({ type: Actions.SORT, value: e.target.value as Sort }),
+        sortOptions: (
+          <>
+            <option value="year-published-desc">
+              Work Year (Newest First)
+            </option>
+            <option value="year-published-asc">Work Year (Oldest First)</option>
+            <option value="title-asc">Title (A &rarr; Z)</option>
+            <option value="title-desc">Title (Z &rarr; A)</option>
+            <option value="grade-desc">Grade (Best First)</option>
+            <option value="grade-asc">Grade (Worst First)</option>
+          </>
+        ),
+      }}
       totalCount={state.filteredValues.length}
     />
   );
