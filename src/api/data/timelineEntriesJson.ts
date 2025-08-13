@@ -2,6 +2,7 @@ import { promises as fs } from "node:fs";
 import { z } from "zod";
 
 import { getContentPath } from "./utils/getContentPath";
+import { perfLogger } from "./utils/performanceLogger";
 import { WorkKindSchema } from "./WorkKindSchema";
 
 const timelineEntriesJsonFile = getContentPath("data", "timeline-entries.json");
@@ -29,14 +30,18 @@ const TimelineEntryJsonSchema = z.object({
 export type TimelineEntryJson = z.infer<typeof TimelineEntryJsonSchema>;
 
 export async function allTimelineEntriesJson(): Promise<TimelineEntryJson[]> {
-  return await parseAllTimelineEntriesJson();
+  return await perfLogger.measure("allTimelineEntriesJson", async () => {
+    return await parseAllTimelineEntriesJson();
+  });
 }
 
 async function parseAllTimelineEntriesJson() {
-  const json = await fs.readFile(timelineEntriesJsonFile, "utf8");
-  const data = JSON.parse(json) as unknown[];
+  return await perfLogger.measure("parseAllTimelineEntriesJson", async () => {
+    const json = await fs.readFile(timelineEntriesJsonFile, "utf8");
+    const data = JSON.parse(json) as unknown[];
 
-  return data.map((item) => {
-    return TimelineEntryJsonSchema.parse(item);
+    return data.map((item) => {
+      return TimelineEntryJsonSchema.parse(item);
+    });
   });
 }

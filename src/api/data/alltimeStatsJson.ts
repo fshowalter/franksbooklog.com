@@ -4,6 +4,7 @@ import { z } from "zod";
 import { DistributionSchema } from "./DistributionSchema";
 import { MostReadAuthorSchema } from "./MostReadAuthorSchema";
 import { getContentPath } from "./utils/getContentPath";
+import { perfLogger } from "./utils/performanceLogger";
 
 const alltimeStatsFile = getContentPath("data", "all-time-stats.json");
 
@@ -25,8 +26,10 @@ const AlltimeStatsJsonSchema = z.object({
 export type AlltimeStatsJson = z.infer<typeof AlltimeStatsJsonSchema>;
 
 export async function alltimeStatsJson(): Promise<AlltimeStatsJson> {
-  const json = await fs.readFile(alltimeStatsFile, "utf8");
-  const data = JSON.parse(json) as unknown[];
+  return await perfLogger.measure("alltimeStatsJson", async () => {
+    const json = await fs.readFile(alltimeStatsFile, "utf8");
+    const data = JSON.parse(json) as unknown[];
 
-  return AlltimeStatsJsonSchema.parse(data);
+    return AlltimeStatsJsonSchema.parse(data);
+  });
 }

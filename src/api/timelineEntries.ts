@@ -1,6 +1,7 @@
 import type { TimelineEntryJson } from "./data/timelineEntriesJson";
 
 import { allTimelineEntriesJson } from "./data/timelineEntriesJson";
+import { perfLogger } from "./data/utils/performanceLogger";
 
 export type TimelineEntry = TimelineEntryJson & {};
 
@@ -22,34 +23,37 @@ const yearFormatter = new Intl.DateTimeFormat("en-US", {
 });
 
 export async function allTimelineEntries(): Promise<TimelineEntries> {
-  const timelineEntries = await allTimelineEntriesJson();
-  const distinctWorkYears = new Set<string>();
-  const distinctReadingYears = new Set<string>();
-  const distinctKinds = new Set<string>();
-  const distinctEditions = new Set<string>();
-  const works = timelineEntries.filter((entry) => {
-    return entry.progress === "Finished" || entry.progress === "Abandoned";
+  return await perfLogger.measure("allTimelineEntries", async () => {
+    const timelineEntries = await allTimelineEntriesJson();
+    const distinctWorkYears = new Set<string>();
+    const distinctReadingYears = new Set<string>();
+    const distinctKinds = new Set<string>();
+    const distinctEditions = new Set<string>();
+    const works = timelineEntries.filter((entry) => {
+      return entry.progress === "Finished" || entry.progress === "Abandoned";
+    });
+
+    for (const entry of timelineEntries) {
+      distinctEditions.add(entry.edition);
+      distinctKinds.add(entry.kind);
+      distinctReadingYears.add(
+        yearFormatter.format(new Date(entry.timelineDate)),
+      );
+      distinctWorkYears.add(entry.yearPublished);
+    }
+
+    return {
+      abandonedCount: works.filter((work) => work.progress === "Abandoned")
+        .length,
+      bookCount: works.filter((work) => work.kind !== "Short Story").length,
+      distinctEditions: [...distinctEditions].toSorted(),
+      distinctKinds: [...distinctKinds].toSorted(),
+      distinctReadingYears: [...distinctReadingYears].toSorted(),
+      distinctWorkYears: [...distinctWorkYears].toSorted(),
+      shortStoryCount: works.filter((work) => work.kind === "Short Story")
+        .length,
+      timelineEntries,
+      workCount: works.length,
+    };
   });
-
-  for (const entry of timelineEntries) {
-    distinctEditions.add(entry.edition);
-    distinctKinds.add(entry.kind);
-    distinctReadingYears.add(
-      yearFormatter.format(new Date(entry.timelineDate)),
-    );
-    distinctWorkYears.add(entry.yearPublished);
-  }
-
-  return {
-    abandonedCount: works.filter((work) => work.progress === "Abandoned")
-      .length,
-    bookCount: works.filter((work) => work.kind !== "Short Story").length,
-    distinctEditions: [...distinctEditions].toSorted(),
-    distinctKinds: [...distinctKinds].toSorted(),
-    distinctReadingYears: [...distinctReadingYears].toSorted(),
-    distinctWorkYears: [...distinctWorkYears].toSorted(),
-    shortStoryCount: works.filter((work) => work.kind === "Short Story").length,
-    timelineEntries,
-    workCount: works.length,
-  };
 }

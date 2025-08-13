@@ -4,6 +4,7 @@ import { z } from "zod";
 import { DistributionSchema } from "./DistributionSchema";
 import { MostReadAuthorSchema } from "./MostReadAuthorSchema";
 import { getContentPath } from "./utils/getContentPath";
+import { perfLogger } from "./utils/performanceLogger";
 
 const yearStatsJsonDirectory = getContentPath("data", "year-stats");
 
@@ -20,25 +21,29 @@ const YearStatsJsonSchema = z.object({
 export type YearStatsJson = z.infer<typeof YearStatsJsonSchema>;
 
 export async function allYearStatsJson(): Promise<YearStatsJson[]> {
-  return await parseAllYearStatsJson();
+  return await perfLogger.measure("allYearStatsJson", async () => {
+    return await parseAllYearStatsJson();
+  });
 }
 
 async function parseAllYearStatsJson() {
-  const dirents = await fs.readdir(yearStatsJsonDirectory, {
-    withFileTypes: true,
+  return await perfLogger.measure("parseAllYearStatsJson", async () => {
+    const dirents = await fs.readdir(yearStatsJsonDirectory, {
+      withFileTypes: true,
+    });
+
+    return Promise.all(
+      dirents
+        .filter((item) => !item.isDirectory() && item.name.endsWith(".json"))
+        .map(async (item) => {
+          const fileContents = await fs.readFile(
+            `${yearStatsJsonDirectory}/${item.name}`,
+            "utf8",
+          );
+
+          const json = JSON.parse(fileContents) as unknown;
+          return YearStatsJsonSchema.parse(json);
+        }),
+    );
   });
-
-  return Promise.all(
-    dirents
-      .filter((item) => !item.isDirectory() && item.name.endsWith(".json"))
-      .map(async (item) => {
-        const fileContents = await fs.readFile(
-          `${yearStatsJsonDirectory}/${item.name}`,
-          "utf8",
-        );
-
-        const json = JSON.parse(fileContents) as unknown;
-        return YearStatsJsonSchema.parse(json);
-      }),
-  );
 }
