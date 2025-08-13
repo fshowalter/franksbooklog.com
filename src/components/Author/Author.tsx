@@ -1,19 +1,16 @@
 import { type JSX, useReducer } from "react";
 
 import type { Author } from "~/api/authors";
-import type { AvatarImageProps } from "~/api/avatars";
-import type { BackdropImageProps } from "~/api/backdrops";
 import type { CoverImageProps } from "~/api/covers";
 
 import { Abandoned } from "~/components/Abandoned";
-import { AvatarBackdrop, BreadcrumbLink } from "~/components/Backdrop";
 import { Grade } from "~/components/Grade";
 import { GroupedList } from "~/components/GroupedList";
 import { ListItem } from "~/components/ListItem";
 import { ListItemCover } from "~/components/ListItemCover";
 import { ListItemKindAndYear } from "~/components/ListItemKindAndYear";
 import { ListItemTitle } from "~/components/ListItemTitle";
-import { ListWithFiltersLayout } from "~/components/ListWithFiltersLayout";
+import { ListWithFilters } from "~/components/ListWithFilters";
 import { toSentenceArray } from "~/utils";
 
 import type { Sort } from "./Author.reducer";
@@ -21,14 +18,17 @@ import type { Sort } from "./Author.reducer";
 import { Actions, initState, reducer } from "./Author.reducer";
 import { Filters } from "./Filters";
 
-export type Props = Pick<Author, "name"> & {
-  avatarImageProps: AvatarImageProps | undefined;
-  backdropImageProps: BackdropImageProps;
-  deck: string;
+export type InteractiveProps = Pick<Author, "name"> & {
   distinctKinds: readonly string[];
   distinctPublishedYears: readonly string[];
   initialSort: Sort;
   works: ListItemValue[];
+};
+
+export type Props = InteractiveProps & {
+  avatarImageProps: any;
+  backdropImageProps: any;
+  deck: string;
 };
 
 export const AvatarImageConfig = {
@@ -55,15 +55,11 @@ export type ListItemValue = Pick<
 type AuthorWork = Author["reviewedWorks"][number];
 
 export function Author({
-  avatarImageProps,
-  backdropImageProps,
-  deck,
   distinctKinds,
   distinctPublishedYears,
   initialSort,
-  name,
   works,
-}: Props): JSX.Element {
+}: InteractiveProps): JSX.Element {
   const [state, dispatch] = useReducer(
     reducer,
     {
@@ -74,17 +70,7 @@ export function Author({
   );
 
   return (
-    <ListWithFiltersLayout
-      backdrop={
-        <AvatarBackdrop
-          avatarImageProps={avatarImageProps}
-          backdropImageProps={backdropImageProps}
-          breadcrumb={<BreadcrumbLink href="/authors/">Authors</BreadcrumbLink>}
-          deck={deck}
-          name={name}
-        />
-      }
-      data-pagefind-body
+    <ListWithFilters
       filters={
         <Filters
           dispatch={dispatch}
@@ -93,7 +79,6 @@ export function Author({
           sortValue={state.sortValue}
         />
       }
-      hasBackdrop={true}
       list={
         <GroupedList
           data-testid="list"

@@ -1,9 +1,23 @@
 ---
+import React from "react";
+
+import { Backdrop } from "~/components/Backdrop";
+import { ListWithFiltersLayout } from "~/components/ListWithFiltersLayout";
 import { getProps } from "~/components/Readings/getProps";
 import { Readings } from "~/components/Readings/Readings";
 import Layout from "~/layouts/Layout.astro";
 
 const props = await getProps();
+
+// Separate layout props from interactive props
+const { backdropImageProps, deck, ...interactiveProps } = props;
+
+// Create React elements in front matter
+const backdropElement = React.createElement(Backdrop, {
+  deck,
+  imageProps: backdropImageProps,
+  title: "Reading Log",
+});
 ---
 
 <Layout
@@ -12,11 +26,13 @@ const props = await getProps();
     description:
       "A list of every book or story I've read since 2022. Filter by title, work year, reading year, kind, or edition. Sort by oldest or newest.",
   }}
-  openGraph={{ description: props.deck, type: "website" }}
+  openGraph={{ description: deck, type: "website" }}
   title="Reading Log"
 >
   <Fragment slot="meta-theme-color">
     <meta content="rgba(0,0,0,.85)" name="theme-color" />
   </Fragment>
-  <Readings client:load {...props} />
+  <ListWithFiltersLayout backdrop={backdropElement}>
+    <Readings client:load {...interactiveProps} />
+  </ListWithFiltersLayout>
 </Layout>

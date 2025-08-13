@@ -1,9 +1,23 @@
 ---
+import React from "react";
+
+import { Backdrop } from "~/components/Backdrop";
+import { ListWithFiltersLayout } from "~/components/ListWithFiltersLayout";
 import { getProps } from "~/components/Reviews/getProps";
 import { Reviews } from "~/components/Reviews/Reviews";
 import Layout from "~/layouts/Layout.astro";
 
 const props = await getProps();
+
+// Separate layout props from interactive props
+const { backdropImageProps, deck, ...interactiveProps } = props;
+
+// Create React elements in front matter
+const backdropElement = React.createElement(Backdrop, {
+  deck,
+  imageProps: backdropImageProps,
+  title: "Reviews",
+});
 ---
 
 <Layout
@@ -12,11 +26,13 @@ const props = await getProps();
     description:
       "All my book and story reviews. Filter by title, kind, review date, work date, or grade. Sort by best or worst, oldest or newest, author, or title.",
   }}
-  openGraph={{ description: props.deck, type: "website" }}
+  openGraph={{ description: deck, type: "website" }}
   title="Reviews"
 >
   <Fragment slot="meta-theme-color">
     <meta content="rgba(0,0,0,.85)" name="theme-color" />
   </Fragment>
-  <Reviews client:load {...props} />
+  <ListWithFiltersLayout backdrop={backdropElement}>
+    <Reviews client:load {...interactiveProps} />
+  </ListWithFiltersLayout>
 </Layout>
