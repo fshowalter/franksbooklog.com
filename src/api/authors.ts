@@ -10,7 +10,6 @@ type AuthorDetails = {
 };
 
 // Cache at API level for derived data
-let cachedAllAuthors: Author[];
 let cachedAllAuthorsJson: AuthorJson[];
 const cachedAuthorDetails: Map<string, AuthorDetails> = new Map();
 
@@ -24,8 +23,8 @@ export async function allAuthors(): Promise<Author[]> {
     }
 
     const authors = cachedAllAuthorsJson || (await allAuthorsJson());
-    if (ENABLE_CACHE && !cachedAllAuthors) {
-      cachedAllAuthors = authors;
+    if (ENABLE_CACHE && !cachedAllAuthorsJson) {
+      cachedAllAuthorsJson = authors;
     }
 
     return authors;
