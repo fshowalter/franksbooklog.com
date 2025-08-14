@@ -94,7 +94,7 @@
     --fg-emphasis: rgb(0 0 0 / 95%);
     --fg-inverse-subtle: #b0b0b0;
     --fg-inverse: #fff;
-    --fg-muted: rgb(0 0 0 / 65%);
+    --fg-muted: rgb(0 0 0 / 72%);
     --fg-subtle: rgb(0 0 0 / 60%);
 
     --gutter-width: 20px;
@@ -143,8 +143,8 @@
       --fg-default: rgb(255 255 255 / 75%);
       --fg-emphasis: rgb(255 255 255 / 95%);
       --fg-inverse: #e6e6e6;
-      --fg-muted: rgb(255 255 255 / 65%);
-      --fg-subtle: rgb(255 255 255 / 60%);
+      --fg-muted: rgb(255 255 255 / 72%);
+      --fg-subtle: rgb(255 255 255 / 70%);
       --image-filter: brightness(0.8) contrast(1);
     }
   }
