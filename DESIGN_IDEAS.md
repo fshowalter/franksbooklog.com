@@ -9,7 +9,7 @@
 ## Typography & Readability
 
 - [x] Increase contrast on secondary text (dates, metadata) for better accessibility
-- [ ] Add drop caps to review opening paragraphs for visual interest
+- [x] Add drop caps to review opening paragraphs for visual interest
 - [ ] Implement better quote styling with larger pull quotes for memorable passages
 
 ## Interactive Elements
