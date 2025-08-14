@@ -32,7 +32,7 @@ Indeed, after a stint at the Pentagon, he said:
 
 These quips prove both amusing and insightful. Perhaps the most resonant:
 
-> An organization does well only those things the Boss checks.
+> {pullquote} An organization does well only those things the Boss checks.
 
 And even when he’d exhausted his patience, and optimism had given way to cynicism, Hackworth proved pithy, saying:
 

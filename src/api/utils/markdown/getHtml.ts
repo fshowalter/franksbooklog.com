@@ -6,6 +6,7 @@ import remarkRehype from "remark-rehype";
 import smartypants from "remark-smartypants";
 
 import { linkReviewedWorks } from "~/api/utils/linkReviewedWorks";
+import { remarkPullQuotes } from "~/api/utils/markdown/remarkPullQuotes";
 
 export function getHtml(
   content: string | undefined,
@@ -18,6 +19,7 @@ export function getHtml(
   const html = remark()
     .use(remarkGfm)
     .use(smartypants)
+    .use(remarkPullQuotes)
     .use(remarkRehype, {
       allowDangerousHtml: true,
       footnoteBackContent: "↩\u{FE0E}",

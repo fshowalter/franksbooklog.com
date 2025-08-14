@@ -1,0 +1,25 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`remarkPullQuotes > converts {pullquote} marker to pull-quote class 1`] = `
+"<blockquote class="pull-quote">
+<p>This is a memorable quote from the book.</p>
+</blockquote>"
+`;
+
+exports[`remarkPullQuotes > handles empty pullquote marker 1`] = `
+"<blockquote class="pull-quote">
+<p></p>
+</blockquote>"
+`;
+
+exports[`remarkPullQuotes > leaves regular blockquotes unchanged 1`] = `
+"<blockquote>
+<p>This is a regular blockquote without the marker.</p>
+</blockquote>"
+`;
+
+exports[`remarkPullQuotes > removes the marker but preserves quote content 1`] = `
+"<blockquote class="pull-quote">
+<p>An organization does well only those things the Boss checks.</p>
+</blockquote>"
+`;

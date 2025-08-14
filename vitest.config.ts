@@ -20,6 +20,14 @@ export default getViteConfig({
       {
         extends: true,
         test: {
+          environment: "node",
+          include: ["src/api/**/*.spec.ts"],
+          name: "api-node",
+        },
+      },
+      {
+        extends: true,
+        test: {
           environment: "jsdom",
           include: ["src/components/**/*.spec.tsx"],
           name: "components-jsdom",

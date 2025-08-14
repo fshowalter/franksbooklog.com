@@ -1,0 +1,43 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`PullQuote > renders pull quote with attribution 1`] = `
+<blockquote
+  class="pull-quote"
+>
+  <span
+    class="relative z-10 italic"
+  >
+    There are only two things in life that interest me. One is sex and the other is adventure.
+  </span>
+  <cite
+    class="mt-4 block text-base font-normal text-muted not-italic"
+  >
+    — 
+    David Hackworth
+  </cite>
+</blockquote>
+`;
+
+exports[`PullQuote > renders pull quote with custom className 1`] = `
+<blockquote
+  class="pull-quote text-center"
+>
+  <span
+    class="relative z-10 italic"
+  >
+    An organization does well only those things the Boss checks.
+  </span>
+</blockquote>
+`;
+
+exports[`PullQuote > renders pull quote with text 1`] = `
+<blockquote
+  class="pull-quote"
+>
+  <span
+    class="relative z-10 italic"
+  >
+    This is a memorable quote from the book.
+  </span>
+</blockquote>
+`;

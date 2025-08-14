@@ -412,6 +412,49 @@
       quotes: "\\201C" "\\201D" "\\2018" "\\2019";
     }
 
+    blockquote.pull-quote {
+      border-left: none;
+      color: var(--fg-emphasis);
+      font-family: var(--font-serif);
+      font-size: 1.75rem;
+      font-style: italic;
+      font-weight: 300;
+      line-height: 1.4;
+      margin: 3rem auto;
+      max-width: 42rem;
+      padding: 2rem 3rem;
+      position: relative;
+      text-align: center;
+      border-top: 2px solid var(--fg-accent);
+      border-bottom: 2px solid var(--fg-accent);
+    }
+
+    blockquote.pull-quote cite {
+      color: var(--fg-muted);
+      display: block;
+      font-family: var(--font-sans);
+      font-size: 0.875rem;
+      font-style: normal;
+      font-weight: 500;
+      margin-top: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    @media (width >= theme(--breakpoint-tablet)) {
+      blockquote.pull-quote {
+        font-size: 2.25rem;
+        margin: 4rem auto;
+      }
+    }
+
+    @media (width >= theme(--breakpoint-laptop)) {
+      blockquote.pull-quote {
+        font-size: 2.5rem;
+        margin: 5rem auto;
+      }
+    }
+
     h1,
     h2,
     h3 {
