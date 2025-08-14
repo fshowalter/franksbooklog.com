@@ -111,16 +111,21 @@ function MoreReviewsCard({ value }: { value: MoreReviewsValue }): JSX.Element {
           </div>
         </div>
       </div>
-      <div className={`@container`}>
+      <div
+        className={`
+          @container h-full self-start
+          tablet:self-auto
+        `}
+      >
         <div
           className={`
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           `}
         >
-          <div className={`flex w-full max-w-[248px] flex-col px-1`}>
+          <div className={`flex h-full w-full max-w-[248px] flex-col px-1`}>
             <div
               className={`
                 pt-4 text-base leading-5 font-medium

@@ -2084,18 +2084,21 @@ exports[`Review > matches snapshot for slug 'about-face-by-david-h-hackworth-jul
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -2237,18 +2240,21 @@ exports[`Review > matches snapshot for slug 'about-face-by-david-h-hackworth-jul
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -2390,18 +2396,21 @@ exports[`Review > matches snapshot for slug 'about-face-by-david-h-hackworth-jul
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -2543,18 +2552,21 @@ exports[`Review > matches snapshot for slug 'about-face-by-david-h-hackworth-jul
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -2696,18 +2708,21 @@ exports[`Review > matches snapshot for slug 'about-face-by-david-h-hackworth-jul
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -2849,18 +2864,21 @@ exports[`Review > matches snapshot for slug 'about-face-by-david-h-hackworth-jul
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -3985,18 +4003,21 @@ exports[`Review > matches snapshot for slug 'altar-by-philip-fracassi' 1`] = `
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -4138,18 +4159,21 @@ exports[`Review > matches snapshot for slug 'altar-by-philip-fracassi' 1`] = `
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -4291,18 +4315,21 @@ exports[`Review > matches snapshot for slug 'altar-by-philip-fracassi' 1`] = `
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -4448,18 +4475,21 @@ exports[`Review > matches snapshot for slug 'altar-by-philip-fracassi' 1`] = `
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -4601,18 +4631,21 @@ exports[`Review > matches snapshot for slug 'altar-by-philip-fracassi' 1`] = `
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -4754,18 +4787,21 @@ exports[`Review > matches snapshot for slug 'altar-by-philip-fracassi' 1`] = `
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -6806,18 +6842,21 @@ exports[`Review > matches snapshot for slug 'behold-the-void-by-philip-fracassi'
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -6959,18 +6998,21 @@ exports[`Review > matches snapshot for slug 'behold-the-void-by-philip-fracassi'
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -7112,18 +7154,21 @@ exports[`Review > matches snapshot for slug 'behold-the-void-by-philip-fracassi'
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -7269,18 +7314,21 @@ exports[`Review > matches snapshot for slug 'behold-the-void-by-philip-fracassi'
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -7422,18 +7470,21 @@ exports[`Review > matches snapshot for slug 'behold-the-void-by-philip-fracassi'
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -7575,18 +7626,21 @@ exports[`Review > matches snapshot for slug 'behold-the-void-by-philip-fracassi'
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -8898,18 +8952,21 @@ exports[`Review > matches snapshot for slug 'cant-hurt-me-by-david-goggins' 1`] 
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -9051,18 +9108,21 @@ exports[`Review > matches snapshot for slug 'cant-hurt-me-by-david-goggins' 1`] 
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -9204,18 +9264,21 @@ exports[`Review > matches snapshot for slug 'cant-hurt-me-by-david-goggins' 1`] 
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -9357,18 +9420,21 @@ exports[`Review > matches snapshot for slug 'cant-hurt-me-by-david-goggins' 1`] 
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -9510,18 +9576,21 @@ exports[`Review > matches snapshot for slug 'cant-hurt-me-by-david-goggins' 1`] 
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -9663,18 +9732,21 @@ exports[`Review > matches snapshot for slug 'cant-hurt-me-by-david-goggins' 1`] 
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -11072,18 +11144,21 @@ exports[`Review > matches snapshot for slug 'casino-royale-by-ian-fleming' 1`] =
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -11225,18 +11300,21 @@ exports[`Review > matches snapshot for slug 'casino-royale-by-ian-fleming' 1`] =
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -11378,18 +11456,21 @@ exports[`Review > matches snapshot for slug 'casino-royale-by-ian-fleming' 1`] =
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -11531,18 +11612,21 @@ exports[`Review > matches snapshot for slug 'casino-royale-by-ian-fleming' 1`] =
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -11684,18 +11768,21 @@ exports[`Review > matches snapshot for slug 'casino-royale-by-ian-fleming' 1`] =
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -11837,18 +11924,21 @@ exports[`Review > matches snapshot for slug 'casino-royale-by-ian-fleming' 1`] =
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -13359,18 +13449,21 @@ exports[`Review > matches snapshot for slug 'churchill-by-andrew-roberts' 1`] = 
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -13512,18 +13605,21 @@ exports[`Review > matches snapshot for slug 'churchill-by-andrew-roberts' 1`] = 
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -13665,18 +13761,21 @@ exports[`Review > matches snapshot for slug 'churchill-by-andrew-roberts' 1`] = 
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -13818,18 +13917,21 @@ exports[`Review > matches snapshot for slug 'churchill-by-andrew-roberts' 1`] = 
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -13971,18 +14073,21 @@ exports[`Review > matches snapshot for slug 'churchill-by-andrew-roberts' 1`] = 
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -14124,18 +14229,21 @@ exports[`Review > matches snapshot for slug 'churchill-by-andrew-roberts' 1`] = 
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -15694,18 +15802,21 @@ exports[`Review > matches snapshot for slug 'dracula-by-bram-stoker' 1`] = `
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -15847,18 +15958,21 @@ exports[`Review > matches snapshot for slug 'dracula-by-bram-stoker' 1`] = `
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -16000,18 +16114,21 @@ exports[`Review > matches snapshot for slug 'dracula-by-bram-stoker' 1`] = `
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -16153,18 +16270,21 @@ exports[`Review > matches snapshot for slug 'dracula-by-bram-stoker' 1`] = `
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -16306,18 +16426,21 @@ exports[`Review > matches snapshot for slug 'dracula-by-bram-stoker' 1`] = `
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -16463,18 +16586,21 @@ exports[`Review > matches snapshot for slug 'dracula-by-bram-stoker' 1`] = `
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -17603,18 +17729,21 @@ exports[`Review > matches snapshot for slug 'extreme-ownership-by-jocko-willink-
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -17756,18 +17885,21 @@ exports[`Review > matches snapshot for slug 'extreme-ownership-by-jocko-willink-
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -17909,18 +18041,21 @@ exports[`Review > matches snapshot for slug 'extreme-ownership-by-jocko-willink-
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -18062,18 +18197,21 @@ exports[`Review > matches snapshot for slug 'extreme-ownership-by-jocko-willink-
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -18215,18 +18353,21 @@ exports[`Review > matches snapshot for slug 'extreme-ownership-by-jocko-willink-
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -18368,18 +18509,21 @@ exports[`Review > matches snapshot for slug 'extreme-ownership-by-jocko-willink-
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -19677,18 +19821,21 @@ exports[`Review > matches snapshot for slug 'fight-club-by-chuck-palahniuk' 1`] 
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -19834,18 +19981,21 @@ exports[`Review > matches snapshot for slug 'fight-club-by-chuck-palahniuk' 1`] 
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -19987,18 +20137,21 @@ exports[`Review > matches snapshot for slug 'fight-club-by-chuck-palahniuk' 1`] 
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -20140,18 +20293,21 @@ exports[`Review > matches snapshot for slug 'fight-club-by-chuck-palahniuk' 1`] 
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -20297,18 +20453,21 @@ exports[`Review > matches snapshot for slug 'fight-club-by-chuck-palahniuk' 1`] 
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -20454,18 +20613,21 @@ exports[`Review > matches snapshot for slug 'fight-club-by-chuck-palahniuk' 1`] 
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -22035,18 +22197,21 @@ Rancho Corvallis. Or Peter Vincent’s real name, Herbert McHoolihee.
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -22188,18 +22353,21 @@ Rancho Corvallis. Or Peter Vincent’s real name, Herbert McHoolihee.
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -22341,18 +22509,21 @@ Rancho Corvallis. Or Peter Vincent’s real name, Herbert McHoolihee.
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -22494,18 +22665,21 @@ Rancho Corvallis. Or Peter Vincent’s real name, Herbert McHoolihee.
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -22651,18 +22825,21 @@ Rancho Corvallis. Or Peter Vincent’s real name, Herbert McHoolihee.
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -22804,18 +22981,21 @@ Rancho Corvallis. Or Peter Vincent’s real name, Herbert McHoolihee.
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -24046,18 +24226,21 @@ exports[`Review > matches snapshot for slug 'living-with-a-seal-by-jesse-itzler'
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -24199,18 +24382,21 @@ exports[`Review > matches snapshot for slug 'living-with-a-seal-by-jesse-itzler'
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -24352,18 +24538,21 @@ exports[`Review > matches snapshot for slug 'living-with-a-seal-by-jesse-itzler'
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -24505,18 +24694,21 @@ exports[`Review > matches snapshot for slug 'living-with-a-seal-by-jesse-itzler'
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -24658,18 +24850,21 @@ exports[`Review > matches snapshot for slug 'living-with-a-seal-by-jesse-itzler'
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -24816,18 +25011,21 @@ exports[`Review > matches snapshot for slug 'living-with-a-seal-by-jesse-itzler'
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -26061,18 +26259,21 @@ exports[`Review > matches snapshot for slug 'mandala-by-philip-fracassi' 1`] = `
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -26209,18 +26410,21 @@ exports[`Review > matches snapshot for slug 'mandala-by-philip-fracassi' 1`] = `
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -26362,18 +26566,21 @@ exports[`Review > matches snapshot for slug 'mandala-by-philip-fracassi' 1`] = `
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -26520,18 +26727,21 @@ exports[`Review > matches snapshot for slug 'mandala-by-philip-fracassi' 1`] = `
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -26673,18 +26883,21 @@ exports[`Review > matches snapshot for slug 'mandala-by-philip-fracassi' 1`] = `
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -26826,18 +27039,21 @@ exports[`Review > matches snapshot for slug 'mandala-by-philip-fracassi' 1`] = `
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -28819,18 +29035,21 @@ exports[`Review > matches snapshot for slug 'night-shift-by-stephen-king' 1`] = 
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -28972,18 +29191,21 @@ exports[`Review > matches snapshot for slug 'night-shift-by-stephen-king' 1`] = 
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -29125,18 +29347,21 @@ exports[`Review > matches snapshot for slug 'night-shift-by-stephen-king' 1`] = 
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -29282,18 +29507,21 @@ exports[`Review > matches snapshot for slug 'night-shift-by-stephen-king' 1`] = 
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -29435,18 +29663,21 @@ exports[`Review > matches snapshot for slug 'night-shift-by-stephen-king' 1`] = 
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -29588,18 +29819,21 @@ exports[`Review > matches snapshot for slug 'night-shift-by-stephen-king' 1`] = 
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -31285,18 +31519,21 @@ exports[`Review > matches snapshot for slug 'out-are-the-lights-by-richard-laymo
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -31442,18 +31679,21 @@ exports[`Review > matches snapshot for slug 'out-are-the-lights-by-richard-laymo
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -31595,18 +31835,21 @@ exports[`Review > matches snapshot for slug 'out-are-the-lights-by-richard-laymo
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -31748,18 +31991,21 @@ exports[`Review > matches snapshot for slug 'out-are-the-lights-by-richard-laymo
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -31901,18 +32147,21 @@ exports[`Review > matches snapshot for slug 'out-are-the-lights-by-richard-laymo
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -32054,18 +32303,21 @@ exports[`Review > matches snapshot for slug 'out-are-the-lights-by-richard-laymo
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -33404,18 +33656,21 @@ exports[`Review > matches snapshot for slug 'refugee-by-piers-anthony' 1`] = `
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -33562,18 +33817,21 @@ exports[`Review > matches snapshot for slug 'refugee-by-piers-anthony' 1`] = `
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -33715,18 +33973,21 @@ exports[`Review > matches snapshot for slug 'refugee-by-piers-anthony' 1`] = `
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -33868,18 +34129,21 @@ exports[`Review > matches snapshot for slug 'refugee-by-piers-anthony' 1`] = `
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -34021,18 +34285,21 @@ exports[`Review > matches snapshot for slug 'refugee-by-piers-anthony' 1`] = `
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -34174,18 +34441,21 @@ exports[`Review > matches snapshot for slug 'refugee-by-piers-anthony' 1`] = `
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -35252,18 +35522,21 @@ exports[`Review > matches snapshot for slug 'roadside-pickup-by-richard-laymon' 
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -35405,18 +35678,21 @@ exports[`Review > matches snapshot for slug 'roadside-pickup-by-richard-laymon' 
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -35553,18 +35829,21 @@ exports[`Review > matches snapshot for slug 'roadside-pickup-by-richard-laymon' 
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -35706,18 +35985,21 @@ exports[`Review > matches snapshot for slug 'roadside-pickup-by-richard-laymon' 
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -35859,18 +36141,21 @@ exports[`Review > matches snapshot for slug 'roadside-pickup-by-richard-laymon' 
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -36012,18 +36297,21 @@ exports[`Review > matches snapshot for slug 'roadside-pickup-by-richard-laymon' 
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -37539,18 +37827,21 @@ exports[`Review > matches snapshot for slug 'salems-lot-by-stephen-king' 1`] = `
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -37692,18 +37983,21 @@ exports[`Review > matches snapshot for slug 'salems-lot-by-stephen-king' 1`] = `
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -37845,18 +38139,21 @@ exports[`Review > matches snapshot for slug 'salems-lot-by-stephen-king' 1`] = `
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -37998,18 +38295,21 @@ exports[`Review > matches snapshot for slug 'salems-lot-by-stephen-king' 1`] = `
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -38151,18 +38451,21 @@ exports[`Review > matches snapshot for slug 'salems-lot-by-stephen-king' 1`] = `
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -38308,18 +38611,21 @@ exports[`Review > matches snapshot for slug 'salems-lot-by-stephen-king' 1`] = `
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -39394,18 +39700,21 @@ exports[`Review > matches snapshot for slug 'soft-construction-of-a-sunset-by-ph
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -39547,18 +39856,21 @@ exports[`Review > matches snapshot for slug 'soft-construction-of-a-sunset-by-ph
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -39700,18 +40012,21 @@ exports[`Review > matches snapshot for slug 'soft-construction-of-a-sunset-by-ph
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -39853,18 +40168,21 @@ exports[`Review > matches snapshot for slug 'soft-construction-of-a-sunset-by-ph
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -40006,18 +40324,21 @@ exports[`Review > matches snapshot for slug 'soft-construction-of-a-sunset-by-ph
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -40159,18 +40480,21 @@ exports[`Review > matches snapshot for slug 'soft-construction-of-a-sunset-by-ph
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -41732,18 +42056,21 @@ exports[`Review > matches snapshot for slug 'the-cellar-by-richard-laymon' 1`] =
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -41885,18 +42212,21 @@ exports[`Review > matches snapshot for slug 'the-cellar-by-richard-laymon' 1`] =
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -42038,18 +42368,21 @@ exports[`Review > matches snapshot for slug 'the-cellar-by-richard-laymon' 1`] =
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -42191,18 +42524,21 @@ exports[`Review > matches snapshot for slug 'the-cellar-by-richard-laymon' 1`] =
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -42344,18 +42680,21 @@ exports[`Review > matches snapshot for slug 'the-cellar-by-richard-laymon' 1`] =
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -42497,18 +42836,21 @@ exports[`Review > matches snapshot for slug 'the-cellar-by-richard-laymon' 1`] =
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -43589,18 +43931,21 @@ exports[`Review > matches snapshot for slug 'the-intruder-by-richard-laymon' 1`]
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -43742,18 +44087,21 @@ exports[`Review > matches snapshot for slug 'the-intruder-by-richard-laymon' 1`]
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -43895,18 +44243,21 @@ exports[`Review > matches snapshot for slug 'the-intruder-by-richard-laymon' 1`]
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -44048,18 +44399,21 @@ exports[`Review > matches snapshot for slug 'the-intruder-by-richard-laymon' 1`]
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -44201,18 +44555,21 @@ exports[`Review > matches snapshot for slug 'the-intruder-by-richard-laymon' 1`]
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -44354,18 +44711,21 @@ exports[`Review > matches snapshot for slug 'the-intruder-by-richard-laymon' 1`]
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -45576,18 +45936,21 @@ exports[`Review > matches snapshot for slug 'the-lonely-one-by-richard-laymon' 1
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -45729,18 +46092,21 @@ exports[`Review > matches snapshot for slug 'the-lonely-one-by-richard-laymon' 1
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -45882,18 +46248,21 @@ exports[`Review > matches snapshot for slug 'the-lonely-one-by-richard-laymon' 1
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -46030,18 +46399,21 @@ exports[`Review > matches snapshot for slug 'the-lonely-one-by-richard-laymon' 1
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -46188,18 +46560,21 @@ exports[`Review > matches snapshot for slug 'the-lonely-one-by-richard-laymon' 1
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -46341,18 +46716,21 @@ exports[`Review > matches snapshot for slug 'the-lonely-one-by-richard-laymon' 1
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -47771,18 +48149,21 @@ exports[`Review > matches snapshot for slug 'the-rise-of-theodore-roosevelt-by-e
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -47924,18 +48305,21 @@ exports[`Review > matches snapshot for slug 'the-rise-of-theodore-roosevelt-by-e
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -48077,18 +48461,21 @@ exports[`Review > matches snapshot for slug 'the-rise-of-theodore-roosevelt-by-e
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -48225,18 +48612,21 @@ exports[`Review > matches snapshot for slug 'the-rise-of-theodore-roosevelt-by-e
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -48378,18 +48768,21 @@ exports[`Review > matches snapshot for slug 'the-rise-of-theodore-roosevelt-by-e
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -48531,18 +48924,21 @@ exports[`Review > matches snapshot for slug 'the-rise-of-theodore-roosevelt-by-e
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -50102,18 +50498,21 @@ exports[`Review > matches snapshot for slug 'the-shining-by-stephen-king' 1`] = 
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -50255,18 +50654,21 @@ exports[`Review > matches snapshot for slug 'the-shining-by-stephen-king' 1`] = 
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -50408,18 +50810,21 @@ exports[`Review > matches snapshot for slug 'the-shining-by-stephen-king' 1`] = 
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -50561,18 +50966,21 @@ exports[`Review > matches snapshot for slug 'the-shining-by-stephen-king' 1`] = 
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -50714,18 +51122,21 @@ exports[`Review > matches snapshot for slug 'the-shining-by-stephen-king' 1`] = 
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -50867,18 +51278,21 @@ exports[`Review > matches snapshot for slug 'the-shining-by-stephen-king' 1`] = 
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -52219,18 +52633,21 @@ exports[`Review > matches snapshot for slug 'the-skeptics-guide-to-the-universe-
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -52372,18 +52789,21 @@ exports[`Review > matches snapshot for slug 'the-skeptics-guide-to-the-universe-
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -52525,18 +52945,21 @@ exports[`Review > matches snapshot for slug 'the-skeptics-guide-to-the-universe-
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -52678,18 +53101,21 @@ exports[`Review > matches snapshot for slug 'the-skeptics-guide-to-the-universe-
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -52831,18 +53257,21 @@ exports[`Review > matches snapshot for slug 'the-skeptics-guide-to-the-universe-
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -52984,18 +53413,21 @@ exports[`Review > matches snapshot for slug 'the-skeptics-guide-to-the-universe-
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -54690,18 +55122,21 @@ exports[`Review > matches snapshot for slug 'the-woods-are-dark-by-richard-laymo
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -54848,18 +55283,21 @@ exports[`Review > matches snapshot for slug 'the-woods-are-dark-by-richard-laymo
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -55001,18 +55439,21 @@ exports[`Review > matches snapshot for slug 'the-woods-are-dark-by-richard-laymo
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -55154,18 +55595,21 @@ exports[`Review > matches snapshot for slug 'the-woods-are-dark-by-richard-laymo
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -55307,18 +55751,21 @@ exports[`Review > matches snapshot for slug 'the-woods-are-dark-by-richard-laymo
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -55460,18 +55907,21 @@ exports[`Review > matches snapshot for slug 'the-woods-are-dark-by-richard-laymo
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -57283,18 +57733,21 @@ exports[`Review > matches snapshot for slug 'tread-softly-by-richard-laymon' 1`]
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -57436,18 +57889,21 @@ exports[`Review > matches snapshot for slug 'tread-softly-by-richard-laymon' 1`]
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -57589,18 +58045,21 @@ exports[`Review > matches snapshot for slug 'tread-softly-by-richard-laymon' 1`]
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -57742,18 +58201,21 @@ exports[`Review > matches snapshot for slug 'tread-softly-by-richard-laymon' 1`]
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -57895,18 +58357,21 @@ exports[`Review > matches snapshot for slug 'tread-softly-by-richard-laymon' 1`]
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="
@@ -58048,18 +58513,21 @@ exports[`Review > matches snapshot for slug 'tread-softly-by-richard-laymon' 1`]
                   </div>
                 </div>
                 <div
-                  class="@container"
+                  class="
+          @container h-full self-start
+          tablet:self-auto
+        "
                 >
                   <div
                     class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                   >
                     <div
-                      class="flex w-full max-w-[248px] flex-col px-1"
+                      class="flex h-full w-full max-w-[248px] flex-col px-1"
                     >
                       <div
                         class="

@@ -476,18 +476,21 @@ exports[`Home > matches snapshot 1`] = `
                 </div>
               </div>
               <div
-                class="@container"
+                class="
+          @container h-full self-start
+          tablet:self-auto
+        "
               >
                 <div
                   class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                 >
                   <div
-                    class="flex w-full max-w-[248px] flex-col px-1"
+                    class="flex h-full w-full max-w-[248px] flex-col px-1"
                   >
                     <div
                       class="
@@ -638,18 +641,21 @@ exports[`Home > matches snapshot 1`] = `
                 </div>
               </div>
               <div
-                class="@container"
+                class="
+          @container h-full self-start
+          tablet:self-auto
+        "
               >
                 <div
                   class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                 >
                   <div
-                    class="flex w-full max-w-[248px] flex-col px-1"
+                    class="flex h-full w-full max-w-[248px] flex-col px-1"
                   >
                     <div
                       class="
@@ -800,18 +806,21 @@ exports[`Home > matches snapshot 1`] = `
                 </div>
               </div>
               <div
-                class="@container"
+                class="
+          @container h-full self-start
+          tablet:self-auto
+        "
               >
                 <div
                   class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                 >
                   <div
-                    class="flex w-full max-w-[248px] flex-col px-1"
+                    class="flex h-full w-full max-w-[248px] flex-col px-1"
                   >
                     <div
                       class="
@@ -966,18 +975,21 @@ exports[`Home > matches snapshot 1`] = `
                 </div>
               </div>
               <div
-                class="@container"
+                class="
+          @container h-full self-start
+          tablet:self-auto
+        "
               >
                 <div
                   class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                 >
                   <div
-                    class="flex w-full max-w-[248px] flex-col px-1"
+                    class="flex h-full w-full max-w-[248px] flex-col px-1"
                   >
                     <div
                       class="
@@ -1128,18 +1140,21 @@ exports[`Home > matches snapshot 1`] = `
                 </div>
               </div>
               <div
-                class="@container"
+                class="
+          @container h-full self-start
+          tablet:self-auto
+        "
               >
                 <div
                   class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                 >
                   <div
-                    class="flex w-full max-w-[248px] flex-col px-1"
+                    class="flex h-full w-full max-w-[248px] flex-col px-1"
                   >
                     <div
                       class="
@@ -1290,18 +1305,21 @@ exports[`Home > matches snapshot 1`] = `
                 </div>
               </div>
               <div
-                class="@container"
+                class="
+          @container h-full self-start
+          tablet:self-auto
+        "
               >
                 <div
                   class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                 >
                   <div
-                    class="flex w-full max-w-[248px] flex-col px-1"
+                    class="flex h-full w-full max-w-[248px] flex-col px-1"
                   >
                     <div
                       class="
@@ -1452,18 +1470,21 @@ exports[`Home > matches snapshot 1`] = `
                 </div>
               </div>
               <div
-                class="@container"
+                class="
+          @container h-full self-start
+          tablet:self-auto
+        "
               >
                 <div
                   class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                 >
                   <div
-                    class="flex w-full max-w-[248px] flex-col px-1"
+                    class="flex h-full w-full max-w-[248px] flex-col px-1"
                   >
                     <div
                       class="
@@ -1614,18 +1635,21 @@ exports[`Home > matches snapshot 1`] = `
                 </div>
               </div>
               <div
-                class="@container"
+                class="
+          @container h-full self-start
+          tablet:self-auto
+        "
               >
                 <div
                   class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                 >
                   <div
-                    class="flex w-full max-w-[248px] flex-col px-1"
+                    class="flex h-full w-full max-w-[248px] flex-col px-1"
                   >
                     <div
                       class="
@@ -1776,18 +1800,21 @@ exports[`Home > matches snapshot 1`] = `
                 </div>
               </div>
               <div
-                class="@container"
+                class="
+          @container h-full self-start
+          tablet:self-auto
+        "
               >
                 <div
                   class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                 >
                   <div
-                    class="flex w-full max-w-[248px] flex-col px-1"
+                    class="flex h-full w-full max-w-[248px] flex-col px-1"
                   >
                     <div
                       class="
@@ -1938,18 +1965,21 @@ exports[`Home > matches snapshot 1`] = `
                 </div>
               </div>
               <div
-                class="@container"
+                class="
+          @container h-full self-start
+          tablet:self-auto
+        "
               >
                 <div
                   class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                 >
                   <div
-                    class="flex w-full max-w-[248px] flex-col px-1"
+                    class="flex h-full w-full max-w-[248px] flex-col px-1"
                   >
                     <div
                       class="
@@ -2100,18 +2130,21 @@ exports[`Home > matches snapshot 1`] = `
                 </div>
               </div>
               <div
-                class="@container"
+                class="
+          @container h-full self-start
+          tablet:self-auto
+        "
               >
                 <div
                   class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                 >
                   <div
-                    class="flex w-full max-w-[248px] flex-col px-1"
+                    class="flex h-full w-full max-w-[248px] flex-col px-1"
                   >
                     <div
                       class="
@@ -2266,18 +2299,21 @@ exports[`Home > matches snapshot 1`] = `
                 </div>
               </div>
               <div
-                class="@container"
+                class="
+          @container h-full self-start
+          tablet:self-auto
+        "
               >
                 <div
                   class="
-            flex flex-col items-center px-3 pb-8
+            flex h-full flex-col items-center px-3 pb-8
             tablet:px-0
             @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
             @min-[200px]:tablet:px-0
           "
                 >
                   <div
-                    class="flex w-full max-w-[248px] flex-col px-1"
+                    class="flex h-full w-full max-w-[248px] flex-col px-1"
                   >
                     <div
                       class="
