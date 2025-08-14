@@ -4,7 +4,7 @@
 
 - [ ] Implement a featured review carousel or hero section for standout reviews
 - [ ] Add reading progress indicators or visual badges for book categories/genres
-- [ ] Add book spine designs as decorative elements between sections
+- [x] ~~Add book spine designs as decorative elements between sections~~ (Won't implement - doesn't fit site aesthetic)
 
 ## Typography & Readability
 
