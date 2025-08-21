@@ -23,8 +23,9 @@ const siteMeta = {
 };
 
 const { canonical, meta, openGraph, title } = Astro.props;
+let pageTitle;
 
-const pageTitle = title.startsWith(siteMeta.title)
+pageTitle = title.startsWith(siteMeta.title)
   ? title
   : `${title} - ${siteMeta.title}`;
 
@@ -44,16 +45,7 @@ const canonicalUrl = `${import.meta.env.SITE}${new URL(Astro.request.url).pathna
     <link href="/sitemap-index.xml" rel="sitemap" />
     <meta content={meta.description} name="description" />
     <slot name="meta-theme-color">
-      <meta
-        content="#f2f0e8"
-        media="(prefers-color-scheme: light)"
-        name="theme-color"
-      />
-      <meta
-        content="#484745"
-        media="(prefers-color-scheme: dark)"
-        name="theme-color"
-      />
+      <meta content="rgba(0,0,0,.85)" name="theme-color" />
     </slot>
     <link
       href={new URL("feed.xml", import.meta.env.SITE)}
@@ -77,10 +69,11 @@ const canonicalUrl = `${import.meta.env.SITE}${new URL(Astro.request.url).pathna
   <body
     class={`
       h-full w-full bg-canvas text-default
-      has-[#nav:checked]:fixed has-[#nav:checked]:overflow-y-scroll
       data-search-modal-open:overflow-hidden data-search-modal-open:before:fixed
-      data-search-modal-open:before:inset-0 data-search-modal-open:before:z-50
+      data-search-modal-open:before:inset-0
+      data-search-modal-open:before:z-search-backdrop
       data-search-modal-open:before:backdrop-blur-xs
+      [&.nav-open]:overflow-hidden
     `}
   >
     <slot />
@@ -94,14 +87,13 @@ const canonicalUrl = `${import.meta.env.SITE}${new URL(Astro.request.url).pathna
         tablet:mx-auto tablet:mt-16 tablet:h-min
         tablet:max-h-[min(100vh-128px,900px)]
         tablet:max-w-[min(100vw-64px,36rem)] tablet:rounded-xl
-        desktop:min-h-0
       `}
     >
       <div class="contents" data-dialog-frame>
         <button
           class={`
-            absolute right-4 z-10 mt-5 h-6 cursor-pointer border-none bg-subtle
-            px-2 font-mono text-xs font-light text-muted
+            absolute right-4 z-sticky mt-5 h-6 cursor-pointer border-none
+            bg-subtle px-2 font-mono text-xs font-light text-muted
             hover:bg-inverse hover:text-inverse
             focus:outline-accent
             tablet:right-6
@@ -256,3 +248,4 @@ const canonicalUrl = `${import.meta.env.SITE}${new URL(Astro.request.url).pathna
   </body>
 </html>
 <script src="./search.ts"></script>
+<script src="./navMenu.ts"></script>

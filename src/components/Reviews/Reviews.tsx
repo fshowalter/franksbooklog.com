@@ -19,7 +19,12 @@ import type { Sort } from "./Reviews.reducer";
 import { Filters } from "./Filters";
 import { Actions, initState, reducer } from "./Reviews.reducer";
 
-export type ListItemValue = Pick<
+export type Props = InteractiveProps & {
+  backdropImageProps: BackdropImageProps;
+  deck: string;
+};
+
+export type ReviewsListItemValue = Pick<
   Review,
   | "date"
   | "grade"
@@ -35,11 +40,6 @@ export type ListItemValue = Pick<
   displayDate: string;
 };
 
-export type Props = InteractiveProps & {
-  backdropImageProps: BackdropImageProps;
-  deck: string;
-};
-
 type Author = Pick<Review["authors"][0], "name" | "sortName"> & {};
 
 type InteractiveProps = {
@@ -47,7 +47,7 @@ type InteractiveProps = {
   distinctPublishedYears: readonly string[];
   distinctReviewYears: readonly string[];
   initialSort: Sort;
-  values: ListItemValue[];
+  values: ReviewsListItemValue[];
 };
 
 export function Reviews({

@@ -22,11 +22,11 @@ const SHOW_COUNT_DEFAULT = 100;
 export enum ListWithFiltersActions {
   APPLY_PENDING_FILTERS = "APPLY_PENDING_FILTERS",
   CLEAR_PENDING_FILTERS = "CLEAR_PENDING_FILTERS",
-  PENDING_FILTER_GENRES = "PENDING_FILTER_GENRES",
+  PENDING_FILTER_KIND = "PENDING_FILTER_KIND",
   PENDING_FILTER_NAME = "PENDING_FILTER_NAME",
-  PENDING_FILTER_RELEASE_YEAR = "PENDING_FILTER_RELEASE_YEAR",
   PENDING_FILTER_REVIEW_YEAR = "PENDING_FILTER_REVIEW_YEAR",
   PENDING_FILTER_TITLE = "PENDING_FILTER_TITLE",
+  PENDING_FILTER_WORK_YEAR = "PENDING_FILTER_WORK_YEAR",
   RESET_PENDING_FILTERS = "RESET_PENDING_FILTERS",
   SHOW_MORE = "SHOW_MORE",
   SORT = "SORT",
@@ -43,11 +43,11 @@ export type GroupFn<TItem, TSortValue> = (
 export type ListWithFiltersActionType<TSortValue = unknown> =
   | ApplyPendingFiltersAction
   | ClearPendingFiltersAction
-  | PendingFilterGenresAction
+  | PendingFilterKindAction
   | PendingFilterNameAction
-  | PendingFilterReleaseYearAction
   | PendingFilterReviewYearAction
   | PendingFilterTitleAction
+  | PendingFilterWorkYearAction
   | ResetPendingFiltersAction
   | ShowMoreAction
   | SortAction<TSortValue>;
@@ -112,19 +112,14 @@ type ListWithFiltersOnlyState<TItem, TSortValue> = BaseListWithFiltersState<
   showCount?: undefined; // Explicitly undefined for non-paginated
 };
 
-type PendingFilterGenresAction = {
-  type: ListWithFiltersActions.PENDING_FILTER_GENRES;
-  values: readonly string[];
+type PendingFilterKindAction = {
+  type: ListWithFiltersActions.PENDING_FILTER_KIND;
+  value: string;
 };
 
 type PendingFilterNameAction = {
   type: ListWithFiltersActions.PENDING_FILTER_NAME;
   value: string;
-};
-
-type PendingFilterReleaseYearAction = {
-  type: ListWithFiltersActions.PENDING_FILTER_RELEASE_YEAR;
-  values: [string, string];
 };
 
 type PendingFilterReviewYearAction = {
@@ -135,6 +130,11 @@ type PendingFilterReviewYearAction = {
 type PendingFilterTitleAction = {
   type: ListWithFiltersActions.PENDING_FILTER_TITLE;
   value: string;
+};
+
+type PendingFilterWorkYearAction = {
+  type: ListWithFiltersActions.PENDING_FILTER_WORK_YEAR;
+  values: [string, string];
 };
 
 type ResetPendingFiltersAction = {
@@ -244,22 +244,17 @@ export function getGroupLetter(str: string): string {
 /**
  * Field-specific filter handlers that require specific item properties
  */
-export function handleGenreFilterAction<
-  TItem extends { genres: readonly string[] },
+export function handleKindFilterAction<
+  TItem extends { kind: string },
   TSortValue,
   TExtendedState extends Record<string, unknown> = Record<string, never>,
 >(
   state: ListWithFiltersState<TItem, TSortValue> & TExtendedState,
-  action: PendingFilterGenresAction,
+  action: PendingFilterKindAction,
   extendedState?: TExtendedState,
 ): ListWithFiltersState<TItem, TSortValue> & TExtendedState {
-  const filterFn = createGenresFilter(action.values);
-  const baseState = updatePendingFilter(
-    state,
-    "genres",
-    filterFn,
-    action.values,
-  );
+  const filterFn = createKindFilter(action.value);
+  const baseState = updatePendingFilter(state, "kind", filterFn, action.value);
   return extendedState
     ? { ...baseState, ...extendedState }
     : (baseState as ListWithFiltersState<TItem, TSortValue> & TExtendedState);
@@ -352,27 +347,6 @@ export function handleNameFilterAction<
 ): ListWithFiltersState<TItem, TSortValue> & TExtendedState {
   const filterFn = createNameFilter(action.value);
   const baseState = updatePendingFilter(state, "name", filterFn, action.value);
-  return extendedState
-    ? { ...baseState, ...extendedState }
-    : (baseState as ListWithFiltersState<TItem, TSortValue> & TExtendedState);
-}
-
-export function handleReleaseYearFilterAction<
-  TItem extends { releaseYear: string },
-  TSortValue,
-  TExtendedState extends Record<string, unknown> = Record<string, never>,
->(
-  state: ListWithFiltersState<TItem, TSortValue> & TExtendedState,
-  action: PendingFilterReleaseYearAction,
-  extendedState?: TExtendedState,
-): ListWithFiltersState<TItem, TSortValue> & TExtendedState {
-  const filterFn = createReleaseYearFilter(action.values[0], action.values[1]);
-  const baseState = updatePendingFilter(
-    state,
-    "releaseYear",
-    filterFn,
-    action.values,
-  );
   return extendedState
     ? { ...baseState, ...extendedState }
     : (baseState as ListWithFiltersState<TItem, TSortValue> & TExtendedState);
@@ -475,6 +449,27 @@ export function handleToggleReviewedAction<
   };
 }
 
+export function handleWorkYearFilterAction<
+  TItem extends { yearPublished: string },
+  TSortValue,
+  TExtendedState extends Record<string, unknown> = Record<string, never>,
+>(
+  state: ListWithFiltersState<TItem, TSortValue> & TExtendedState,
+  action: PendingFilterWorkYearAction,
+  extendedState?: TExtendedState,
+): ListWithFiltersState<TItem, TSortValue> & TExtendedState {
+  const filterFn = createWorkYearFilter(action.values[0], action.values[1]);
+  const baseState = updatePendingFilter(
+    state,
+    "releaseYear",
+    filterFn,
+    action.values,
+  );
+  return extendedState
+    ? { ...baseState, ...extendedState }
+    : (baseState as ListWithFiltersState<TItem, TSortValue> & TExtendedState);
+}
+
 export function sortGrade<T extends { gradeValue?: null | number }>() {
   return {
     "grade-asc": (a: T, b: T) =>
@@ -493,15 +488,6 @@ export function sortName<T extends { name: string }>() {
 
 export function sortNumber(a: number, b: number): number {
   return a - b;
-}
-
-export function sortReleaseDate<T extends { releaseSequence: string }>() {
-  return {
-    "release-date-asc": (a: T, b: T) =>
-      sortString(a.releaseSequence, b.releaseSequence),
-    "release-date-desc": (a: T, b: T) =>
-      sortString(a.releaseSequence, b.releaseSequence) * -1,
-  };
 }
 
 export function sortReviewCount<T extends { reviewCount: number }>() {
@@ -526,6 +512,15 @@ export function sortTitle<T extends { sortTitle: string }>() {
   return {
     "title-asc": (a: T, b: T) => sortString(a.sortTitle, b.sortTitle),
     "title-desc": (a: T, b: T) => sortString(a.sortTitle, b.sortTitle) * -1,
+  };
+}
+
+export function sortWorkYear<T extends { releaseSequence: string }>() {
+  return {
+    "release-date-asc": (a: T, b: T) =>
+      sortString(a.releaseSequence, b.releaseSequence),
+    "release-date-desc": (a: T, b: T) =>
+      sortString(a.releaseSequence, b.releaseSequence) * -1,
   };
 }
 
@@ -619,10 +614,9 @@ function clearPendingFilters<TItem, TSortValue>(
   };
 }
 
-function createGenresFilter(genres: readonly string[]) {
-  if (genres.length === 0) return;
-  return <T extends { genres: readonly string[] }>(item: T) => {
-    return genres.every((genre) => item.genres.includes(genre));
+function createKindFilter(kind: string) {
+  return <T extends { kind: string }>(item: T) => {
+    return kind == "All" || item.kind == kind;
   };
 }
 
@@ -630,12 +624,6 @@ function createNameFilter(value: string | undefined) {
   if (!value) return;
   const regex = new RegExp(value, "i");
   return <T extends { name: string }>(item: T) => regex.test(item.name);
-}
-
-function createReleaseYearFilter(minYear: string, maxYear: string) {
-  return <T extends { releaseYear: string }>(item: T) => {
-    return item.releaseYear >= minYear && item.releaseYear <= maxYear;
-  };
 }
 
 function createReviewYearFilter(minYear: string, maxYear: string) {
@@ -651,6 +639,12 @@ function createTitleFilter(value: string | undefined) {
   if (!value) return;
   const regex = new RegExp(value, "i");
   return <T extends { title: string }>(item: T) => regex.test(item.title);
+}
+
+function createWorkYearFilter(minYear: string, maxYear: string) {
+  return <T extends { yearPublished: string }>(item: T) => {
+    return item.yearPublished >= minYear && item.yearPublished <= maxYear;
+  };
 }
 
 // Filter values helper
