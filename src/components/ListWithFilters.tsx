@@ -259,7 +259,7 @@ export function ListWithFilters<T extends string>({
                 className={`
                   absolute top-7 right-4 z-10 flex h-10 w-10 transform-gpu
                   cursor-pointer items-center justify-center rounded-full
-                  bg-subtle text-default transition-transform
+                  bg-canvas text-default drop-shadow-md transition-transform
                   hover:scale-105
                   ${isClosing ? "pointer-events-none" : ""}
                 `}
@@ -320,12 +320,13 @@ export function ListWithFilters<T extends string>({
                   <button
                     aria-label="Clear all filters"
                     className={`
-                      flex items-center justify-center gap-x-4 rounded-sm px-4
-                      py-3 font-sans text-xs text-nowrap uppercase
+                      flex items-center justify-center gap-x-4 rounded-sm
+                      bg-canvas px-4 py-3 font-sans text-xs text-nowrap
+                      uppercase
                       ${
                         hasActiveFilters
-                          ? "cursor-pointer bg-subtle text-default"
-                          : "cursor-not-allowed bg-canvas text-muted opacity-50"
+                          ? "cursor-pointer text-default"
+                          : "cursor-not-allowed text-muted opacity-50"
                       }
                     `}
                     disabled={!hasActiveFilters}

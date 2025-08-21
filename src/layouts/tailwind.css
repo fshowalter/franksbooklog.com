@@ -58,10 +58,10 @@
   --tracking-widest: 2px;
 
   --breakpoint-*: initial;
-  --breakpoint-desktop: 1840px;
-  --breakpoint-laptop: 1280px;
-  --breakpoint-tablet: 768px;
+  --breakpoint-tablet: 640px;
   --breakpoint-tablet-landscape: 1024px;
+  --breakpoint-laptop: 1280px;
+  --breakpoint-desktop: 1696px;
 
   --shadow-all: 0 0 0 1px var(--border-default);
   --shadow-bottom: 0px 1px var(--border-default);

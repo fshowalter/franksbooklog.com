@@ -137,11 +137,11 @@ function ReviewsListItem({ value }: { value: ListItemValue }): JSX.Element {
     <CoverListItem coverImageProps={value.coverImageProps}>
       <ListItemDetails>
         <ListItemTitle slug={value.slug} title={value.title} />
-        <ListItemKindAndYear kind={value.kind} year={value.yearPublished} />
         <Authors
           className={`text-sm leading-4 font-normal tracking-prose text-muted`}
           values={value.authors}
         />
+        <ListItemKindAndYear kind={value.kind} year={value.yearPublished} />
         <ListItemGrade grade={value.grade} />
         <Abandoned className="tablet:my-1" value={value.grade} />
         <ListItemReviewDate displayDate={value.displayDate} />
