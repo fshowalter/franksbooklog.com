@@ -347,11 +347,11 @@ export class SearchUI {
 
     try {
       const searchResults = await this.api.search(trimmedQuery, {
-        signal: this.abortController.signal,
+        signal: this.abortController?.signal,
       });
 
-      // Ignore if this search was aborted
-      if (this.abortController.signal.aborted) {
+      // Ignore if this search was aborted or controller was destroyed
+      if (!this.abortController || this.abortController.signal.aborted) {
         return;
       }
 
