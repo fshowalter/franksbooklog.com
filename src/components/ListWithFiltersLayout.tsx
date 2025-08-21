@@ -6,7 +6,7 @@ type Props = {
   backdrop: ReactNode;
   children: ReactNode;
   className?: string;
-  hasBackdrop?: boolean;
+  mastGradient?: boolean;
   subNav?: ReactNode;
 };
 
@@ -19,16 +19,16 @@ export function ListWithFiltersLayout({
   backdrop,
   children,
   className,
-  hasBackdrop = true,
+  mastGradient,
   subNav,
 }: Props) {
   return (
     <Layout
+      addGradient={mastGradient}
       className={`
         bg-subtle
         ${className || ""}
       `}
-      hasBackdrop={hasBackdrop}
     >
       {backdrop}
       {subNav && subNav}

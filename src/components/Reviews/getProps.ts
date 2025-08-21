@@ -3,6 +3,7 @@ import { getFluidCoverImageProps } from "~/api/covers";
 import { allReviews } from "~/api/reviews";
 import { BackdropImageConfig } from "~/components/Backdrop";
 import { ListItemCoverImageConfig } from "~/components/ListItemCover";
+import { displayDate } from "~/utils/displayDate";
 
 import type { ListItemValue, Props } from "./Reviews";
 
@@ -34,6 +35,7 @@ export async function getProps(): Promise<Props> {
           ListItemCoverImageConfig,
         ),
         date: review.date,
+        displayDate: displayDate(review.date),
         grade: review.grade,
         gradeValue: review.gradeValue,
         kind: review.kind,
