@@ -1,18 +1,11 @@
-export function ListItemKindAndYear({
-  kind,
-  year,
-}: {
-  kind: string;
-  year: string;
-}) {
+export function ListItemReviewDate({ displayDate }: { displayDate: string }) {
   return (
     <div
       className={`
         font-sans text-xs leading-4 font-light tracking-prose text-subtle
       `}
     >
-      <span>{kind} | </span>
-      {year}
+      {displayDate}
     </div>
   );
 }

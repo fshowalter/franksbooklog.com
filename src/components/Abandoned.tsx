@@ -12,7 +12,8 @@ export function Abandoned({
   return (
     <div
       className={`
-        bg-abandoned p-1 font-sans text-xxs font-semibold text-[#fff] uppercase
+        rounded-sm bg-abandoned px-2 py-1 font-sans text-xxs font-semibold
+        text-inverse uppercase
         ${className}
       `}
     >

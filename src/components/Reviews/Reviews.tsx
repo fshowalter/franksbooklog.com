@@ -5,11 +5,11 @@ import type { CoverImageProps } from "~/api/covers";
 import type { Review } from "~/api/reviews";
 
 import { Abandoned } from "~/components/Abandoned";
-import { Grade } from "~/components/Grade";
-import { GroupedList } from "~/components/GroupedList";
-import { ListItem } from "~/components/ListItem";
-import { ListItemCover } from "~/components/ListItemCover";
+import { CoverListItem, GroupedCoverList } from "~/components/CoverList";
+import { ListItemDetails } from "~/components/ListItemDetails";
+import { ListItemGrade } from "~/components/ListItemGrade";
 import { ListItemKindAndYear } from "~/components/ListItemKindAndYear";
+import { ListItemReviewDate } from "~/components/ListItemReviewDate";
 import { ListItemTitle } from "~/components/ListItemTitle";
 import { ListWithFilters } from "~/components/ListWithFilters";
 import { toSentenceArray } from "~/utils";
@@ -32,6 +32,7 @@ export type ListItemValue = Pick<
 > & {
   authors: Author[];
   coverImageProps: CoverImageProps;
+  displayDate: string;
 };
 
 export type Props = InteractiveProps & {
@@ -76,16 +77,14 @@ export function Reviews({
         />
       }
       list={
-        <GroupedList
-          className="bg-default"
-          data-testid="list"
+        <GroupedCoverList
           groupedValues={state.groupedValues}
           onShowMore={() => dispatch({ type: Actions.SHOW_MORE })}
           totalCount={state.filteredValues.length}
           visibleCount={state.showCount}
         >
           {(value) => <ReviewsListItem key={value.slug} value={value} />}
-        </GroupedList>
+        </GroupedCoverList>
       }
       sortProps={{
         currentSortValue: state.sortValue,
@@ -135,32 +134,18 @@ function Authors({
 
 function ReviewsListItem({ value }: { value: ListItemValue }): JSX.Element {
   return (
-    <ListItem>
-      <div
-        className={`
-          relative
-          after:absolute after:top-0 after:left-0 after:z-10 after:size-full
-          after:bg-default after:opacity-15 after:transition-opacity
-          group-has-[a:hover]/list-item:after:opacity-0
-        `}
-      >
-        <ListItemCover imageProps={value.coverImageProps} />
-      </div>
-      <div
-        className={`
-          flex grow flex-col items-start gap-y-2
-          tablet:w-full tablet:pr-4
-        `}
-      >
+    <CoverListItem coverImageProps={value.coverImageProps}>
+      <ListItemDetails>
         <ListItemTitle slug={value.slug} title={value.title} />
+        <ListItemKindAndYear kind={value.kind} year={value.yearPublished} />
         <Authors
-          className="font-sans text-xs leading-4 font-light text-subtle"
+          className={`text-sm leading-4 font-normal tracking-prose text-muted`}
           values={value.authors}
         />
-        <Grade className="mb-1" height={16} value={value.grade} />
+        <ListItemGrade grade={value.grade} />
         <Abandoned className="tablet:my-1" value={value.grade} />
-        <ListItemKindAndYear kind={value.kind} year={value.yearPublished} />
-      </div>
-    </ListItem>
+        <ListItemReviewDate displayDate={value.displayDate} />
+      </ListItemDetails>
+    </CoverListItem>
   );
 }

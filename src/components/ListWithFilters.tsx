@@ -2,12 +2,21 @@ import type { JSX, ReactNode } from "react";
 
 import { useCallback, useEffect, useRef, useState } from "react";
 
+export const DRAWER_CLOSE_ANIMATION_MS = 250;
+const DRAWER_OPEN_ANIMATION_MS = 400;
+
 type Props<T extends string> = {
   className?: string;
   dynamicSubNav?: React.ReactNode;
   filters: React.ReactNode;
+  hasActiveFilters?: boolean;
   list: React.ReactNode;
   listHeaderButtons?: React.ReactNode;
+  onApplyFilters?: () => void;
+  onClearFilters?: () => void;
+  onFilterDrawerOpen?: () => void;
+  onResetFilters?: () => void;
+  pendingFilteredCount?: number;
   sortProps: SortProps<T>;
   totalCount: number;
 };
@@ -29,13 +38,17 @@ export function ListHeaderButton({
   return (
     <div
       className={`
-        flex items-start gap-x-4 bg-default text-nowrap text-accent uppercase
+        flex items-start gap-x-4 bg-default px-4 text-nowrap text-accent
+        uppercase
       `}
     >
       <a
         className={`
-          block transform-gpu px-4 py-2 transition-all
-          hover:scale-105 hover:bg-accent hover:text-inverse
+          relative inline-block transform-gpu py-1 transition-transform
+          after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
+          after:origin-center after:scale-x-0 after:bg-(--fg-accent)
+          after:transition-transform
+          hover:after:scale-x-100
         `}
         href={href}
       >
@@ -49,50 +62,65 @@ export function ListWithFilters<T extends string>({
   className,
   dynamicSubNav,
   filters,
+  hasActiveFilters,
   list,
   listHeaderButtons,
+  onApplyFilters,
+  onClearFilters,
+  onFilterDrawerOpen,
+  onResetFilters,
+  pendingFilteredCount,
   sortProps,
   totalCount,
 }: Props<T>): JSX.Element {
   const [filterDrawerVisible, setFilterDrawerVisible] = useState(false);
+  const [isClosing, setIsClosing] = useState(false);
+  const [isOpening, setIsOpening] = useState(false);
   const filtersRef = useRef<HTMLDivElement | null>(null);
   const toggleButtonRef = useRef<HTMLButtonElement | null>(null);
+  const timeoutRefs = useRef<Set<NodeJS.Timeout>>(new Set());
+  const prevSortValueRef = useRef<T>(sortProps.currentSortValue);
+
+  const handleCloseDrawer = useCallback(
+    (shouldResetFilters = true) => {
+      setIsClosing(true);
+      // Start the spin animation, then close after a short delay
+      const timeoutId = setTimeout(() => {
+        if (typeof document !== "undefined") {
+          document.body.classList.remove("overflow-hidden");
+        }
+        setFilterDrawerVisible(false);
+        setIsClosing(false);
+        if (shouldResetFilters) {
+          onResetFilters?.();
+        }
+        timeoutRefs.current.delete(timeoutId);
+      }, DRAWER_CLOSE_ANIMATION_MS);
+      timeoutRefs.current.add(timeoutId);
+    },
+    [onResetFilters],
+  );
 
   const onFilterClick = useCallback(
     (event: React.MouseEvent) => {
-      const documentSize = window.innerWidth;
-      const tabletLandscapeBreakpoint = Number.parseFloat(
-        globalThis
-          .getComputedStyle(document.body)
-          .getPropertyValue("--breakpoint-tablet-landscape"),
-      );
-
-      if (documentSize >= tabletLandscapeBreakpoint) {
-        setFilterDrawerVisible(false);
-        event.preventDefault();
-
-        // Scroll to the filters and focus first input
-        document.querySelector("#filters")?.scrollIntoView();
-
-        // Delay focus to allow smooth scroll to complete
-        setTimeout(() => {
-          const firstFocusable = filtersRef.current?.querySelector<HTMLElement>(
-            'button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])',
-          );
-          firstFocusable?.focus();
-        }, 500); // Wait for scroll animation to complete
-
-        return;
-      }
-
       event.preventDefault();
 
       if (filterDrawerVisible) {
-        document.body.classList.remove("overflow-hidden");
-        setFilterDrawerVisible(false);
+        handleCloseDrawer();
       } else {
-        document.body.classList.add("overflow-hidden");
+        setIsOpening(true);
+        if (typeof document !== "undefined") {
+          document.body.classList.add("overflow-hidden");
+        }
         setFilterDrawerVisible(true);
+        // Call onFilterDrawerOpen when opening
+        onFilterDrawerOpen?.();
+        // Clear the opening state after animation completes
+        const timeoutId = setTimeout(() => {
+          setIsOpening(false);
+          timeoutRefs.current.delete(timeoutId);
+        }, DRAWER_OPEN_ANIMATION_MS);
+        timeoutRefs.current.add(timeoutId);
         // Focus first focusable element after drawer opens
         requestAnimationFrame(() => {
           const firstFocusable = filtersRef.current?.querySelector<HTMLElement>(
@@ -102,41 +130,39 @@ export function ListWithFilters<T extends string>({
         });
       }
     },
-    [filterDrawerVisible],
+    [filterDrawerVisible, handleCloseDrawer, onFilterDrawerOpen],
   );
+
+  // Cleanup timeouts on unmount
+  useEffect(() => {
+    return () => {
+      for (const timeoutId of timeoutRefs.current) clearTimeout(timeoutId);
+      timeoutRefs.current.clear();
+    };
+  }, []);
 
   // Handle escape key
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "Escape" && filterDrawerVisible) {
-        setFilterDrawerVisible(false);
-        document.body.classList.remove("overflow-hidden");
+      if (e.key === "Escape" && filterDrawerVisible && !isClosing) {
+        handleCloseDrawer();
         toggleButtonRef.current?.focus();
       }
     };
 
     document.addEventListener("keydown", handleKeyDown);
     return () => document.removeEventListener("keydown", handleKeyDown);
-  }, [filterDrawerVisible]);
+  }, [filterDrawerVisible, handleCloseDrawer, isClosing]);
 
-  // Handle click outside
+  // Scroll to top of list when sort changes
   useEffect(() => {
-    const handleClickOutside = (e: MouseEvent) => {
-      const target = e.target as HTMLElement;
-      if (
-        filterDrawerVisible &&
-        filtersRef.current &&
-        !filtersRef.current.contains(target) &&
-        !toggleButtonRef.current?.contains(target)
-      ) {
-        setFilterDrawerVisible(false);
-        document.body.classList.remove("overflow-hidden");
+    if (prevSortValueRef.current !== sortProps.currentSortValue) {
+      prevSortValueRef.current = sortProps.currentSortValue;
+      if (typeof document !== "undefined") {
+        document.querySelector("#list")?.scrollIntoView({ behavior: "smooth" });
       }
-    };
-
-    document.addEventListener("click", handleClickOutside);
-    return () => document.removeEventListener("click", handleClickOutside);
-  }, [filterDrawerVisible]);
+    }
+  }, [sortProps.currentSortValue]);
 
   return (
     <div
@@ -148,7 +174,7 @@ export function ListWithFilters<T extends string>({
       <div className={`group/list-with-filters mx-auto bg-subtle`}>
         <div
           className={`
-            sticky top-[calc(0px_+_var(--scroll-offset,0px))] z-20
+            sticky top-[calc(0px_+_var(--scroll-offset,0px))] z-sticky
             scroll-mt-[calc(0px_+_var(--scroll-offset,0px))] border-b
             border-default bg-default text-xs
             tablet:col-span-full
@@ -166,9 +192,7 @@ export function ListWithFilters<T extends string>({
         <div
           className={`
             mx-auto max-w-[var(--breakpoint-desktop)]
-            gap-x-[var(--container-padding)]
             tablet:px-container
-            tablet-landscape:flex
           `}
         >
           <div
@@ -184,24 +208,31 @@ export function ListWithFilters<T extends string>({
             {list}
           </div>
 
-          {/* Backdrop for mobile filters */}
+          {/* Backdrop for filters */}
           <div
             aria-hidden="true"
             className={`
               invisible fixed inset-0 bg-[rgba(0,0,0,.4)] opacity-0
               transition-opacity duration-200
-              tablet-landscape:hidden
-              ${filterDrawerVisible ? `visible z-40 opacity-100` : ""}
+              ${
+                filterDrawerVisible
+                  ? `visible z-side-drawer-backdrop opacity-100`
+                  : ""
+              }
             `}
-            onClick={() => setFilterDrawerVisible(false)}
+            onClick={() => {
+              if (!isClosing) {
+                handleCloseDrawer();
+              }
+            }}
           />
 
           <div
             aria-label="Filters"
             className={`
-              fixed top-0 right-0 z-50 flex h-full max-w-[380px] flex-col
-              items-start gap-y-5 bg-default text-left text-inverse duration-200
-              ease-in-out
+              fixed top-0 right-0 z-filter-drawer flex h-full max-w-[380px]
+              flex-col items-start gap-y-5 bg-default text-left text-inverse
+              duration-200 ease-in-out
               ${
                 filterDrawerVisible
                   ? `
@@ -211,15 +242,6 @@ export function ListWithFilters<T extends string>({
                   : `w-0 transform-[translateX(100%)] overflow-y-hidden`
               }
               tablet:gap-y-10
-              tablet-landscape:relative tablet-landscape:z-auto
-              tablet-landscape:col-start-4 tablet-landscape:block
-              tablet-landscape:w-auto tablet-landscape:max-w-none
-              tablet-landscape:min-w-[320px] tablet-landscape:transform-none
-              tablet-landscape:scroll-mt-[calc(25px_+_var(--scroll-offset,0px))]
-              tablet-landscape:overflow-y-visible tablet-landscape:bg-inherit
-              tablet-landscape:py-24 tablet-landscape:pb-12
-              tablet-landscape:drop-shadow-none
-              laptop:w-[33%]
             `}
             id="filters"
             ref={filtersRef}
@@ -227,30 +249,60 @@ export function ListWithFilters<T extends string>({
             <div
               className={`
                 flex h-full w-full flex-col text-sm
-                tablet:pt-12 tablet:text-base
-                tablet-landscape:h-auto tablet-landscape:overflow-visible
-                tablet-landscape:bg-default tablet-landscape:px-container
-                tablet-landscape:pt-0
-                laptop:px-8
+                tablet:text-base
+                [@media(min-height:815px)]:pt-12
               `}
             >
+              {/* Close button */}
+              <button
+                aria-label="Close filters"
+                className={`
+                  absolute top-7 right-4 z-10 flex h-10 w-10 transform-gpu
+                  cursor-pointer items-center justify-center rounded-full
+                  bg-subtle text-default transition-transform
+                  hover:scale-105
+                  ${isClosing ? "pointer-events-none" : ""}
+                `}
+                onClick={() => {
+                  if (!isClosing) {
+                    handleCloseDrawer();
+                    toggleButtonRef.current?.focus();
+                  }
+                }}
+                type="button"
+              >
+                <svg
+                  aria-hidden="true"
+                  className={`
+                    h-4 w-4 transform-gpu
+                    ${isClosing ? "animate-spin-recoil" : ""}
+                    ${isOpening ? "animate-spin-wind-up" : ""}
+                  `}
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  viewBox="0 0 28 28"
+                >
+                  <path
+                    d="M7 21L21 7M7 7l14 14"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </button>
               <fieldset
                 className={`
-                  flex grow flex-col gap-5 px-container pb-4
-                  [--control-scroll-offset:calc(181px_+_var(--scroll-offset,0px))]
+                  mt-0 flex h-full grow flex-col gap-5 px-container py-10
                   tablet:gap-8
-                  tablet-landscape:mt-0 tablet-landscape:gap-12
-                  tablet-landscape:px-0 tablet-landscape:py-10
+                  tablet-landscape:grow-0 tablet-landscape:gap-12
+                  tablet-landscape:px-12
                 `}
               >
                 <legend
                   className={`
-                    mb-5 block w-full pt-4 pb-4 text-lg text-subtle
+                    block w-full pt-10 pb-8 font-sans text-lg text-xxs
+                    font-semibold tracking-wide text-subtle uppercase
                     shadow-bottom
-                    tablet-landscape:mb-0 tablet-landscape:pt-10
-                    tablet-landscape:pb-8 tablet-landscape:font-sans
-                    tablet-landscape:text-xxs tablet-landscape:font-semibold
-                    tablet-landscape:tracking-wide tablet-landscape:uppercase
                   `}
                 >
                   Filter
@@ -259,27 +311,56 @@ export function ListWithFilters<T extends string>({
               </fieldset>
               <div
                 className={`
-                  sticky bottom-0 z-10 mt-auto w-full self-end border-t
-                  border-t-default bg-default px-8 py-4 drop-shadow-2xl
-                  tablet-landscape:hidden
+                  sticky bottom-0 z-filter-footer mt-auto w-full self-end
+                  border-t border-t-default bg-default px-8 py-4 drop-shadow-2xl
+                  tablet-landscape:px-12
                 `}
               >
-                <button
-                  className={`
-                    flex w-full cursor-pointer items-center justify-center
-                    gap-x-4 bg-footer px-4 py-3 font-sans text-xs text-nowrap
-                    text-inverse uppercase
-                    tablet-landscape:hidden
-                  `}
-                  onClick={() => {
-                    setFilterDrawerVisible(false);
-                    document.body.classList.remove("overflow-hidden");
-                    document.querySelector("#list")?.scrollIntoView();
-                  }}
-                  type="button"
-                >
-                  View {totalCount} Results
-                </button>
+                <div className="flex gap-x-4">
+                  <button
+                    aria-label="Clear all filters"
+                    className={`
+                      flex items-center justify-center gap-x-4 rounded-sm px-4
+                      py-3 font-sans text-xs text-nowrap uppercase
+                      ${
+                        hasActiveFilters
+                          ? "cursor-pointer bg-subtle text-default"
+                          : "cursor-not-allowed bg-canvas text-muted opacity-50"
+                      }
+                    `}
+                    disabled={!hasActiveFilters}
+                    onClick={() => {
+                      if (hasActiveFilters) {
+                        onClearFilters?.();
+                      }
+                    }}
+                    type="button"
+                  >
+                    Clear
+                  </button>
+                  <button
+                    className={`
+                      flex flex-1 cursor-pointer items-center justify-center
+                      gap-x-4 rounded-sm bg-footer px-4 py-3 font-sans text-xs
+                      text-nowrap text-inverse uppercase
+                    `}
+                    onClick={() => {
+                      // Apply pending filters
+                      onApplyFilters?.();
+                      handleCloseDrawer(false); // Don't reset filters when applying
+                      if (typeof document !== "undefined") {
+                        document.querySelector("#list")?.scrollIntoView();
+                      }
+                    }}
+                    type="button"
+                  >
+                    View{" "}
+                    {pendingFilteredCount === undefined
+                      ? totalCount
+                      : pendingFilteredCount}{" "}
+                    Results
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -357,8 +438,9 @@ function ListHeader<T extends string>({
         aria-label="Toggle filters"
         className={`
           col-start-4 row-start-1 flex transform-gpu cursor-pointer items-center
-          justify-center gap-x-4 bg-canvas px-4 py-2 text-nowrap text-muted
-          uppercase shadow-all transition-transform
+          justify-center gap-x-4 rounded-sm bg-canvas px-4 py-2 font-sans
+          text-xs font-semibold text-nowrap text-muted uppercase shadow-all
+          transition-transform
           hover:scale-110
           tablet:col-start-5 tablet:w-20
         `}
