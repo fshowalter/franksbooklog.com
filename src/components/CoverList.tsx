@@ -29,6 +29,7 @@ export function CoverList({
           minimum cover width for responsive breakpoints. */}
       <ol
         className={`
+          items-baseline
           [--cover-list-item-width:50%]
           tablet:flex tablet:flex-wrap
           @min-[calc((250px_*_2)_+_1px)]/cover-list:[--cover-list-item-width:33.33%]
@@ -131,14 +132,39 @@ function CoverListItemCover({ imageProps }: { imageProps: CoverImageProps }) {
         tablet:w-auto
       `}
     >
-      <img
-        {...imageProps}
-        alt=""
-        {...CoverListItemImageConfig}
-        className="w-full object-cover"
-        decoding="async"
-        loading="lazy"
-      />
+      <div
+        className={`
+          relative
+          after:absolute after:top-0 after:left-0 after:z-sticky after:block
+          after:size-full after:rounded-[2.5px]
+          after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%]
+          after:mix-blend-multiply
+        `}
+      >
+        <div
+          className={`
+            relative z-10
+            before:absolute before:top-0 before:left-0 before:z-10 before:block
+            before:size-full before:rounded-[2.5px]
+            before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%]
+            after:absolute after:top-0 after:left-0 after:block after:size-full
+            after:rounded-[2.5px] after:bg-[url(/assets/spot.png)]
+            after:bg-size-[100%_100%] after:mix-blend-soft-light
+          `}
+        >
+          <img
+            {...imageProps}
+            alt=""
+            {...CoverListItemImageConfig}
+            className={`
+              rounded-[2.5px] bg-default shadow-sm
+              @min-[160px]:shadow-lg
+            `}
+            decoding="async"
+            loading="lazy"
+          />
+        </div>
+      </div>
     </div>
   );
 }
