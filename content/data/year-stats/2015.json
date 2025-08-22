@@ -53,7 +53,10 @@
           "edition": "Paperback",
           "kind": "Nonfiction",
           "title": "Frank",
-          "yearPublished": "2010",
+          "workYear": "2010",
+          "workYearSequence": 423,
+          "authorSequence": 162,
+          "titleSequence": 167,
           "includedInSlugs": [],
           "reviewed": false
         },
@@ -64,7 +67,10 @@
           "edition": "Hardcover",
           "kind": "Nonfiction",
           "title": "Sinatra",
-          "yearPublished": "2015",
+          "workYear": "2015",
+          "workYearSequence": 442,
+          "authorSequence": 164,
+          "titleSequence": 409,
           "includedInSlugs": [],
           "reviewed": false
         }

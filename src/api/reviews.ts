@@ -53,8 +53,8 @@ type ReviewReading = MarkdownReading &
 
 type Reviews = {
   distinctKinds: string[];
-  distinctPublishedYears: string[];
   distinctReviewYears: string[];
+  distinctWorkYears: string[];
   reviews: Review[];
 };
 
@@ -204,9 +204,7 @@ export async function mostRecentReviews(limit: number) {
       cachedReviewedWorksJson = reviewedWorksJson;
     }
 
-    reviewedWorksJson.sort((a, b) =>
-      b.reviewSequence.localeCompare(a.reviewSequence),
-    );
+    reviewedWorksJson.sort((a, b) => b.reviewSequence - a.reviewSequence);
     const slicedWorks = reviewedWorksJson.slice(0, limit);
 
     const { reviews } = await parseReviewedWorksJson(slicedWorks);
@@ -243,7 +241,7 @@ async function parseReviewedWorksJson(
 ): Promise<Reviews> {
   return await perfLogger.measure("parseReviewedWorksJson", async () => {
     const distinctReviewYears = new Set<string>();
-    const distinctPublishedYears = new Set<string>();
+    const distinctWorkYears = new Set<string>();
     const distinctKinds = new Set<string>();
 
     const reviewsMarkdown =
@@ -254,7 +252,7 @@ async function parseReviewedWorksJson(
 
     const reviews = reviewedWorksJson.map((work) => {
       distinctKinds.add(work.kind);
-      distinctPublishedYears.add(work.yearPublished);
+      distinctWorkYears.add(work.workYear);
 
       const { date, grade, rawContent } = reviewsMarkdown.find(
         (reviewsmarkdown) => {
@@ -262,12 +260,7 @@ async function parseReviewedWorksJson(
         },
       )!;
 
-      distinctReviewYears.add(
-        date.toLocaleDateString("en-US", {
-          timeZone: "UTC",
-          year: "numeric",
-        }),
-      );
+      distinctReviewYears.add(work.reviewYear);
 
       return {
         ...work,
@@ -279,8 +272,8 @@ async function parseReviewedWorksJson(
 
     return {
       distinctKinds: [...distinctKinds].toSorted(),
-      distinctPublishedYears: [...distinctPublishedYears].toSorted(),
       distinctReviewYears: [...distinctReviewYears].toSorted(),
+      distinctWorkYears: [...distinctWorkYears].toSorted(),
       reviews,
     };
   });

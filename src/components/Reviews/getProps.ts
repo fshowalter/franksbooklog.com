@@ -5,15 +5,11 @@ import { BackdropImageConfig } from "~/components/Backdrop";
 import { CoverListItemImageConfig } from "~/components/CoverList";
 import { displayDate } from "~/utils/displayDate";
 
-import type { ListItemValue, Props } from "./Reviews";
+import type { Props, ReviewsListItemValue } from "./Reviews";
 
 export async function getProps(): Promise<Props> {
-  const {
-    distinctKinds,
-    distinctPublishedYears,
-    distinctReviewYears,
-    reviews,
-  } = await allReviews();
+  const { distinctKinds, distinctReviewYears, distinctWorkYears, reviews } =
+    await allReviews();
 
   reviews.sort((a, b) =>
     a.authors[0].sortName.localeCompare(b.authors[0].sortName),
@@ -21,15 +17,16 @@ export async function getProps(): Promise<Props> {
 
   const values = await Promise.all(
     reviews.map(async (review) => {
-      const value: ListItemValue = {
+      const value: ReviewsListItemValue = {
         authors: review.authors.map((author) => {
-          const authorValue: ListItemValue["authors"][0] = {
+          const authorValue: ReviewsListItemValue["authors"][number] = {
             name: author.name,
             sortName: author.sortName,
           };
 
           return authorValue;
         }),
+        authorSequence: review.authorSequence,
         coverImageProps: await getFluidCoverImageProps(
           review,
           CoverListItemImageConfig,
@@ -39,10 +36,13 @@ export async function getProps(): Promise<Props> {
         grade: review.grade,
         gradeValue: review.gradeValue,
         kind: review.kind,
+        reviewSequence: review.reviewSequence,
+        reviewYear: review.reviewYear,
         slug: review.slug,
         sortTitle: review.sortTitle,
         title: review.title,
-        yearPublished: review.yearPublished,
+        workYear: review.workYear,
+        workYearSequence: review.workYearSequence,
       };
 
       return value;
@@ -56,8 +56,8 @@ export async function getProps(): Promise<Props> {
     ),
     deck: `"You were always the best of them, Lloyd."`,
     distinctKinds,
-    distinctPublishedYears,
     distinctReviewYears,
+    distinctWorkYears,
     initialSort: "author-asc",
     values,
   };
