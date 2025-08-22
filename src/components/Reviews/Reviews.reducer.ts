@@ -18,6 +18,7 @@ import {
   handleWorkYearFilterAction,
   ListWithFiltersActions,
   sortGrade,
+  sortNumber,
   sortReviewDate,
   sortTitle,
   sortWorkYear,
@@ -48,7 +49,10 @@ export const Actions = {
   ...ReviewsActions,
 } as const;
 
-function groupForValue(value: ListItemValue, sortValue: Sort): string {
+function groupForValue(
+  value: ReviewsListItemValue,
+  sortValue: ReviewsSort,
+): string {
   switch (sortValue) {
     case "author-asc":
     case "author-desc": {
@@ -66,15 +70,14 @@ function groupForValue(value: ListItemValue, sortValue: Sort): string {
     case "title-desc": {
       return getGroupLetter(value.sortTitle);
     }
-    case "year-published-asc":
-    case "year-published-desc": {
-      return value.yearPublished;
+    case "work-year-asc":
+    case "work-year-desc": {
+      return value.workYear;
     }
   }
 }
 
 const groupValues = buildGroupValues(groupForValue);
-const { clearFilter, updateFilter } = filterTools(sortValues, groupValues);
 
 export type ActionType =
   | ListWithFiltersActionType<ReviewsSort>
@@ -90,13 +93,9 @@ const sortValues = buildSortValues<ReviewsListItemValue, ReviewsSort>({
   ...sortGrade<ReviewsListItemValue>(),
   ...sortReviewDate<ReviewsListItemValue>(),
   ...sortTitle<ReviewsListItemValue>(),
-  "author-asc": (a, b) =>
-    sortString(a.authors[0].sortName, b.authors[0].sortName),
-  "author-desc": (a, b) =>
-    sortString(a.authors[0].sortName, b.authors[0].sortName) * -1,
-  "year-published-asc": (a, b) => sortString(a.yearPublished, b.yearPublished),
-  "year-published-desc": (a, b) =>
-    sortString(a.yearPublished, b.yearPublished) * -1,
+  ...sortWorkYear<ReviewsListItemValue>(),
+  "author-asc": (a, b) => sortNumber(a.authorSequence, b.authorSequence),
+  "author-desc": (a, b) => sortNumber(a.authorSequence, b.authorSequence) * -1,
 });
 
 const monthGroupFormat = new Intl.DateTimeFormat("en-US", {
@@ -105,46 +104,7 @@ const monthGroupFormat = new Intl.DateTimeFormat("en-US", {
   year: "numeric",
 });
 
-type State = FilterableState<ListItemValue, Sort, Map<string, ListItemValue[]>>;
-
-const SHOW_COUNT_DEFAULT = 100;
-
-export enum Actions {
-  FILTER_KIND = "FILTER_KIND",
-  FILTER_TITLE = "FILTER_TITLE",
-  FILTER_YEAR_PUBLISHED = "FILTER_YEAR_PUBLISHED",
-  FILTER_YEAR_REVIEWED = "FILTER_YEAR_REVIEWED",
-  SHOW_MORE = "SHOW_MORE",
-  SORT = "SORT",
-}
-
-export type ActionType =
-  | FilterKindAction
-  | FilterTitleAction
-  | FilterYearPublishedAction
-  | FilterYearReviewedAction
-  | ShowMoreAction
-  | SortAction;
-
-type FilterKindAction = {
-  type: Actions.FILTER_KIND;
-  value: string;
-};
-
-type FilterTitleAction = {
-  type: Actions.FILTER_TITLE;
-  value: string;
-};
-
-type FilterYearPublishedAction = {
-  type: Actions.FILTER_YEAR_PUBLISHED;
-  values: [string, string];
-};
-
-type FilterYearReviewedAction = {
-  type: Actions.FILTER_YEAR_REVIEWED;
-  values: [string, string];
-};
+type State = ListWithFiltersState<ReviewsListItemValue, ReviewsSort>;
 
 export function initState({
   initialSort,

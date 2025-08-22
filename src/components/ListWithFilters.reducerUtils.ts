@@ -450,7 +450,7 @@ export function handleToggleReviewedAction<
 }
 
 export function handleWorkYearFilterAction<
-  TItem extends { yearPublished: string },
+  TItem extends { workYear: string },
   TSortValue,
   TExtendedState extends Record<string, unknown> = Record<string, never>,
 >(
@@ -461,7 +461,7 @@ export function handleWorkYearFilterAction<
   const filterFn = createWorkYearFilter(action.values[0], action.values[1]);
   const baseState = updatePendingFilter(
     state,
-    "releaseYear",
+    "workYear",
     filterFn,
     action.values,
   );
@@ -499,13 +499,17 @@ export function sortReviewCount<T extends { reviewCount: number }>() {
   };
 }
 
-export function sortReviewDate<T extends { reviewSequence?: null | string }>() {
+export function sortReviewDate<T extends { reviewSequence?: null | number }>() {
   return {
     "review-date-asc": (a: T, b: T) =>
-      sortString(a.reviewSequence || "", b.reviewSequence || ""),
+      sortNumber(a.reviewSequence || 0, b.reviewSequence || 0),
     "review-date-desc": (a: T, b: T) =>
-      sortString(a.reviewSequence || "", b.reviewSequence || "") * -1,
+      sortNumber(a.reviewSequence || 0, b.reviewSequence || 0) * -1,
   };
+}
+
+export function sortString(a: string, b: string): number {
+  return collator.compare(a, b);
 }
 
 export function sortTitle<T extends { sortTitle: string }>() {
@@ -515,12 +519,12 @@ export function sortTitle<T extends { sortTitle: string }>() {
   };
 }
 
-export function sortWorkYear<T extends { releaseSequence: string }>() {
+export function sortWorkYear<T extends { workYearSequence: number }>() {
   return {
-    "release-date-asc": (a: T, b: T) =>
-      sortString(a.releaseSequence, b.releaseSequence),
-    "release-date-desc": (a: T, b: T) =>
-      sortString(a.releaseSequence, b.releaseSequence) * -1,
+    "work-year-asc": (a: T, b: T) =>
+      sortNumber(a.workYearSequence, b.workYearSequence),
+    "work-year-desc": (a: T, b: T) =>
+      sortNumber(a.workYearSequence, b.workYearSequence) * -1,
   };
 }
 
@@ -642,10 +646,14 @@ function createTitleFilter(value: string | undefined) {
 }
 
 function createWorkYearFilter(minYear: string, maxYear: string) {
-  return <T extends { yearPublished: string }>(item: T) => {
-    return item.yearPublished >= minYear && item.yearPublished <= maxYear;
+  return <T extends { workYear: string }>(item: T) => {
+    return item.workYear >= minYear && item.workYear <= maxYear;
   };
 }
+
+/**
+ * Handler functions that combine filter creation and state updates
+ */
 
 // Filter values helper
 function filterValues<TItem>({
@@ -661,10 +669,6 @@ function filterValues<TItem>({
     });
   });
 }
-
-/**
- * Handler functions that combine filter creation and state updates
- */
 
 /**
  * Reset pending filters to current active filters
@@ -704,10 +708,6 @@ function showMore<TItem, TSortValue>(
     groupedValues,
     showCount,
   };
-}
-
-function sortString(a: string, b: string): number {
-  return collator.compare(a, b);
 }
 
 /**

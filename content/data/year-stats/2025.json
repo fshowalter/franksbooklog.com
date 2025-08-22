@@ -65,7 +65,10 @@
           "edition": "Ebook",
           "kind": "Novel",
           "title": "Night Show",
-          "yearPublished": "1984",
+          "workYear": "1984",
+          "workYearSequence": 180,
+          "authorSequence": 285,
+          "titleSequence": 322,
           "includedInSlugs": [],
           "reviewed": false
         },
@@ -76,7 +79,10 @@
           "edition": "Ebook",
           "kind": "Nonfiction",
           "title": "A Writer's Tale",
-          "yearPublished": "1997",
+          "workYear": "1997",
+          "workYearSequence": 354,
+          "authorSequence": 358,
+          "titleSequence": 476,
           "includedInSlugs": [],
           "reviewed": false
         },
@@ -87,7 +93,10 @@
           "edition": "Paperback",
           "kind": "Short Story",
           "title": "The Lonely One",
-          "yearPublished": "1985",
+          "workYear": "1985",
+          "workYearSequence": 196,
+          "authorSequence": 297,
+          "titleSequence": 275,
           "includedInSlugs": [],
           "reviewed": true
         }
@@ -105,7 +114,10 @@
           "edition": "Ebook",
           "kind": "Novella",
           "title": "Commodore",
-          "yearPublished": "2021",
+          "workYear": "2021",
+          "workYearSequence": 473,
+          "authorSequence": 86,
+          "titleSequence": 98,
           "includedInSlugs": [],
           "reviewed": true
         },
@@ -116,7 +128,10 @@
           "edition": "Ebook",
           "kind": "Novella",
           "title": "Shiloh",
-          "yearPublished": "2017",
+          "workYear": "2017",
+          "workYearSequence": 458,
+          "authorSequence": 83,
+          "titleSequence": 402,
           "includedInSlugs": [],
           "reviewed": true
         },
@@ -127,7 +142,10 @@
           "edition": "Ebook",
           "kind": "Short Story",
           "title": "King Mob",
-          "yearPublished": "2017",
+          "workYear": "2017",
+          "workYearSequence": 455,
+          "authorSequence": 80,
+          "titleSequence": 247,
           "includedInSlugs": [],
           "reviewed": true
         }

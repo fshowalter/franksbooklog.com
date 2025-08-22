@@ -1,4 +1,4 @@
-import { type JSX, useReducer } from "react";
+import { type JSX, useReducer, useState } from "react";
 
 import type { BackdropImageProps } from "~/api/backdrops";
 import type { CoverImageProps } from "~/api/covers";
@@ -14,7 +14,7 @@ import { ListItemTitle } from "~/components/ListItemTitle";
 import { ListWithFilters } from "~/components/ListWithFilters";
 import { toSentenceArray } from "~/utils";
 
-import type { Sort } from "./Reviews.reducer";
+import type { ReviewsSort } from "./Reviews.reducer";
 
 import { Filters } from "./Filters";
 import { Actions, initState, reducer } from "./Reviews.reducer";
@@ -26,34 +26,38 @@ export type Props = InteractiveProps & {
 
 export type ReviewsListItemValue = Pick<
   Review,
+  | "authorSequence"
   | "date"
   | "grade"
   | "gradeValue"
   | "kind"
+  | "reviewSequence"
+  | "reviewYear"
   | "slug"
   | "sortTitle"
   | "title"
-  | "yearPublished"
+  | "workYear"
+  | "workYearSequence"
 > & {
   authors: Author[];
   coverImageProps: CoverImageProps;
   displayDate: string;
 };
 
-type Author = Pick<Review["authors"][0], "name" | "sortName"> & {};
+type Author = Pick<Review["authors"][number], "name" | "sortName"> & {};
 
 type InteractiveProps = {
   distinctKinds: readonly string[];
-  distinctPublishedYears: readonly string[];
   distinctReviewYears: readonly string[];
-  initialSort: Sort;
+  distinctWorkYears: readonly string[];
+  initialSort: ReviewsSort;
   values: ReviewsListItemValue[];
 };
 
 export function Reviews({
   distinctKinds,
-  distinctPublishedYears,
   distinctReviewYears,
+  distinctWorkYears,
   initialSort,
   values,
 }: InteractiveProps): JSX.Element {
@@ -65,6 +69,7 @@ export function Reviews({
     },
     initState,
   );
+  const [filterKey, setFilterKey] = useState(0);
 
   return (
     <ListWithFilters
@@ -72,34 +77,51 @@ export function Reviews({
         <Filters
           dispatch={dispatch}
           distinctKinds={distinctKinds}
-          distinctPublishedYears={distinctPublishedYears}
           distinctReviewYears={distinctReviewYears}
+          distinctWorkYears={distinctWorkYears}
+          filterValues={state.pendingFilterValues}
+          key={filterKey}
         />
       }
+      hasActiveFilters={state.hasActiveFilters}
       list={
         <GroupedCoverList
           groupedValues={state.groupedValues}
           onShowMore={() => dispatch({ type: Actions.SHOW_MORE })}
           totalCount={state.filteredValues.length}
-          visibleCount={state.showCount}
+          visibleCount={state.showCount!}
         >
           {(value) => <ReviewsListItem key={value.slug} value={value} />}
         </GroupedCoverList>
       }
+      onApplyFilters={() => dispatch({ type: Actions.APPLY_PENDING_FILTERS })}
+      onClearFilters={() => {
+        dispatch({ type: Actions.CLEAR_PENDING_FILTERS });
+        setFilterKey((k) => k + 1);
+      }}
+      onFilterDrawerOpen={() =>
+        dispatch({ type: Actions.RESET_PENDING_FILTERS })
+      }
+      onResetFilters={() => {
+        dispatch({ type: Actions.RESET_PENDING_FILTERS });
+        setFilterKey((k) => k + 1);
+      }}
+      pendingFilteredCount={state.pendingFilteredCount}
       sortProps={{
         currentSortValue: state.sortValue,
         onSortChange: (e) =>
-          dispatch({ type: Actions.SORT, value: e.target.value as Sort }),
+          dispatch({
+            type: Actions.SORT,
+            value: e.target.value as ReviewsSort,
+          }),
         sortOptions: (
           <>
             <option value="author-asc">Author (A &rarr; Z)</option>
             <option value="author-desc">Author (Z &rarr; A)</option>
             <option value="review-date-desc">Review Date (Newest First)</option>
             <option value="review-date-asc">Review Date (Oldest First)</option>
-            <option value="year-published-desc">
-              Work Year (Newest First)
-            </option>
-            <option value="year-published-asc">Work Year (Oldest First)</option>
+            <option value="work-year-desc">Work Year (Newest First)</option>
+            <option value="work-year-asc">Work Year (Oldest First)</option>
             <option value="title-asc">Title (A &rarr; Z)</option>
             <option value="title-desc">Title (Z &rarr; A)</option>
             <option value="grade-desc">Grade (Best First)</option>
@@ -132,7 +154,11 @@ function Authors({
   );
 }
 
-function ReviewsListItem({ value }: { value: ListItemValue }): JSX.Element {
+function ReviewsListItem({
+  value,
+}: {
+  value: ReviewsListItemValue;
+}): JSX.Element {
   return (
     <CoverListItem coverImageProps={value.coverImageProps}>
       <ListItemDetails>
@@ -141,7 +167,7 @@ function ReviewsListItem({ value }: { value: ListItemValue }): JSX.Element {
           className={`text-sm leading-4 font-normal tracking-prose text-muted`}
           values={value.authors}
         />
-        <ListItemKindAndYear kind={value.kind} year={value.yearPublished} />
+        <ListItemKindAndYear kind={value.kind} year={value.workYear} />
         <ListItemGrade grade={value.grade} />
         <Abandoned className="tablet:my-1" value={value.grade} />
         <ListItemReviewDate displayDate={value.displayDate} />

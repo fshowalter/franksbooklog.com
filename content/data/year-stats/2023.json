@@ -65,7 +65,10 @@
           "edition": "Audiobook",
           "kind": "Nonfiction",
           "title": "Record Play Pause",
-          "yearPublished": "2019",
+          "workYear": "2019",
+          "workYearSequence": 469,
+          "authorSequence": 416,
+          "titleSequence": 370,
           "includedInSlugs": [],
           "reviewed": true
         },
@@ -76,7 +79,10 @@
           "edition": "Audiobook",
           "kind": "Nonfiction",
           "title": "Fast Forward",
-          "yearPublished": "2020",
+          "workYear": "2020",
+          "workYearSequence": 470,
+          "authorSequence": 417,
+          "titleSequence": 158,
           "includedInSlugs": [],
           "reviewed": true
         }
@@ -94,7 +100,10 @@
           "edition": "Ebook",
           "kind": "Novella",
           "title": "Sacculina",
-          "yearPublished": "2017",
+          "workYear": "2017",
+          "workYearSequence": 457,
+          "authorSequence": 82,
+          "titleSequence": 387,
           "includedInSlugs": [],
           "reviewed": true
         },
@@ -105,7 +114,10 @@
           "edition": "Ebook",
           "kind": "Novel",
           "title": "Don't Let Them Get You Down",
-          "yearPublished": "2022",
+          "workYear": "2022",
+          "workYearSequence": 474,
+          "authorSequence": 87,
+          "titleSequence": 139,
           "includedInSlugs": [],
           "reviewed": true
         }

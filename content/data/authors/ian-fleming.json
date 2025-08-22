@@ -4,17 +4,21 @@
   "slug": "ian-fleming",
   "reviewedWorks": [
     {
-      "reviewSequence": "2022-06-14-2",
+      "reviewSequence": 40,
       "title": "Casino Royale",
       "subtitle": null,
-      "yearPublished": "1953",
+      "workYear": "1953",
+      "workYearSequence": 29,
+      "authorSequence": 69,
+      "titleSequence": 77,
       "kind": "Novel",
       "slug": "casino-royale-by-ian-fleming",
       "sortTitle": "Casino Royale",
       "grade": "B-",
       "gradeValue": 8,
+      "gradeSequence": 49,
       "reviewDate": "2022-06-14",
-      "yearReviewed": 2022,
+      "reviewYear": "2022",
       "authors": [
         {
           "slug": "ian-fleming",
@@ -26,17 +30,21 @@
       "includedInSlugs": []
     },
     {
-      "reviewSequence": "2022-06-30-1",
+      "reviewSequence": 43,
       "title": "Live and Let Die",
       "subtitle": null,
-      "yearPublished": "1954",
+      "workYear": "1954",
+      "workYearSequence": 32,
+      "authorSequence": 70,
+      "titleSequence": 271,
       "kind": "Novel",
       "slug": "live-and-let-die-by-ian-fleming",
       "sortTitle": "Live and Let Die",
       "grade": "D",
       "gradeValue": 3,
+      "gradeSequence": 7,
       "reviewDate": "2022-06-30",
-      "yearReviewed": 2022,
+      "reviewYear": "2022",
       "authors": [
         {
           "slug": "ian-fleming",
@@ -48,17 +56,21 @@
       "includedInSlugs": []
     },
     {
-      "reviewSequence": "2022-10-16-1",
+      "reviewSequence": 64,
       "title": "Moonraker",
       "subtitle": null,
-      "yearPublished": "1955",
+      "workYear": "1955",
+      "workYearSequence": 33,
+      "authorSequence": 71,
+      "titleSequence": 305,
       "kind": "Novel",
       "slug": "moonraker-by-ian-fleming",
       "sortTitle": "Moonraker",
       "grade": "B",
       "gradeValue": 9,
+      "gradeSequence": 61,
       "reviewDate": "2022-10-16",
-      "yearReviewed": 2022,
+      "reviewYear": "2022",
       "authors": [
         {
           "slug": "ian-fleming",
