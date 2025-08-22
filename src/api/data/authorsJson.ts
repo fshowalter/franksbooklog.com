@@ -27,13 +27,13 @@ const WorkSchema = z.object({
   includedInSlugs: z.array(z.string()),
   kind: WorkKindSchema,
   reviewDate: z.string(),
-  reviewSequence: z.string(),
+  reviewSequence: z.number(),
+  reviewYear: z.string(),
   slug: z.string(),
   sortTitle: z.string(),
   subtitle: nullableString(),
   title: z.string(),
-  yearPublished: z.string(),
-  yearReviewed: z.number(),
+  workYear: z.string(),
 });
 
 const AuthorJsonSchema = z.object({

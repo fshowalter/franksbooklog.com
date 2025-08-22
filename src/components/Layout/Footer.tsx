@@ -1,9 +1,7 @@
 import type { JSX } from "react";
 
-import type { NavItem } from "./navItems";
-
 import { Logo } from "./Logo";
-import { navItems } from "./navItems";
+import { TableOfContents } from "./TableOfContents";
 
 export function Footer(): JSX.Element {
   return (
@@ -17,9 +15,9 @@ export function Footer(): JSX.Element {
         >
           <a
             className={`
-              mx-auto mb-8 w-full max-w-button transform-gpu bg-footer py-5
-              text-center font-sans text-xs tracking-wide text-inverse uppercase
-              transition-all
+              mx-auto mb-8 w-full max-w-button transform-gpu rounded-md
+              bg-footer py-5 text-center font-sans text-xs tracking-wide
+              text-inverse uppercase transition-all
               hover:scale-105 hover:bg-subtle hover:text-default
               tablet:mx-0
             `}
@@ -101,16 +99,12 @@ export function Footer(): JSX.Element {
               tablet:basis-button tablet:pr-10
             `}
           >
-            <ul
+            <TableOfContents
               className={`
                 flex w-full flex-col gap-y-10
                 desktop:w-auto
               `}
-            >
-              {navItems.map((item) => {
-                return <NavListItem key={item.target} value={item} />;
-              })}
-            </ul>
+            />
           </div>
         </div>
       </div>
@@ -145,54 +139,5 @@ function FooterLink({ href, text }: { href: string; text: string }) {
     >
       {text}
     </a>
-  );
-}
-
-function NavListItem({ value }: { value: NavItem }): JSX.Element {
-  return (
-    <li className="block w-1/2 text-2xl whitespace-nowrap">
-      <a
-        className={`
-          block origin-left transform-gpu transition-all
-          hover:scale-105
-        `}
-        href={value.target}
-      >
-        {value.text}
-      </a>
-      <SubNavList values={value.subItems} />
-    </li>
-  );
-}
-
-function SubNavList({ values }: { values: NavItem[] }): false | JSX.Element {
-  if (values.length === 0) {
-    return false;
-  }
-
-  return (
-    <ol className="mt-4">
-      {values.map((value) => {
-        return (
-          <li
-            className={`
-              mb-4 ml-1 font-sans text-xs tracking-wide text-subtle uppercase
-              last:mb-0
-            `}
-            key={value.target}
-          >
-            <a
-              className={`
-                block origin-left transform-gpu transition-all
-                hover:scale-105 hover:text-default
-              `}
-              href={value.target}
-            >
-              {value.text}
-            </a>
-          </li>
-        );
-      })}
-    </ol>
   );
 }

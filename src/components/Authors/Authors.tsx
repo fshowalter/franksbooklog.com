@@ -1,4 +1,4 @@
-import { type JSX, useReducer } from "react";
+import { type JSX, useReducer, useState } from "react";
 
 import type { Author } from "~/api/authors";
 import type { AvatarImageProps } from "~/api/avatars";
@@ -16,7 +16,7 @@ import { Filters } from "./Filters";
 
 export type ListItemValue = Pick<Author, "name" | "slug" | "sortName"> & {
   avatarImageProps: AvatarImageProps | undefined;
-  reviewedWorkCount: number;
+  reviewCount: number;
 };
 
 export type Props = InteractiveProps & {
@@ -42,16 +42,26 @@ export function Authors({
     initState,
   );
 
+  const [filterKey, setFilterKey] = useState(0);
+
   return (
     <ListWithFilters
-      className="[--scroll-offset:52px]"
+      className={
+        state.sortValue.startsWith("name-") ? `[--scroll-offset:52px]` : ""
+      }
       dynamicSubNav={
         <AlphabetSubNav
           groupedValues={state.groupedValues}
           sortValue={state.sortValue}
         />
       }
-      filters={<Filters dispatch={dispatch} />}
+      filters={
+        <Filters
+          dispatch={dispatch}
+          filterValues={state.pendingFilterValues}
+          key={filterKey}
+        />
+      }
       list={
         <GroupedList
           data-testid="list"
@@ -63,6 +73,19 @@ export function Authors({
           {(value) => <AuthorListItem key={value.slug} value={value} />}
         </GroupedList>
       }
+      onApplyFilters={() => dispatch({ type: Actions.APPLY_PENDING_FILTERS })}
+      onClearFilters={() => {
+        dispatch({ type: Actions.CLEAR_PENDING_FILTERS });
+        setFilterKey((k) => k + 1);
+      }}
+      onFilterDrawerOpen={() =>
+        dispatch({ type: Actions.RESET_PENDING_FILTERS })
+      }
+      onResetFilters={() => {
+        dispatch({ type: Actions.RESET_PENDING_FILTERS });
+        setFilterKey((k) => k + 1);
+      }}
+      pendingFilteredCount={state.pendingFilteredCount}
       sortProps={{
         currentSortValue: state.sortValue,
         onSortChange: (e) =>

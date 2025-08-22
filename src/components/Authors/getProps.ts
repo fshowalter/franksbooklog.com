@@ -19,7 +19,7 @@ export async function getProps(): Promise<Props> {
           ListItemAvatarImageConfig,
         ),
         name: author.name,
-        reviewedWorkCount: author.reviewedWorks.length,
+        reviewCount: author.reviewedWorks.length,
         slug: author.slug,
         sortName: author.sortName,
       };
