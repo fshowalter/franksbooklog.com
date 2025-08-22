@@ -164,7 +164,9 @@ function ReviewsListItem({
       <ListItemDetails>
         <ListItemTitle slug={value.slug} title={value.title} />
         <Authors
-          className={`text-sm leading-4 font-normal tracking-prose text-muted`}
+          className={`
+            text-[15px] leading-4 font-normal tracking-prose text-muted
+          `}
           values={value.authors}
         />
         <ListItemKindAndYear kind={value.kind} year={value.workYear} />

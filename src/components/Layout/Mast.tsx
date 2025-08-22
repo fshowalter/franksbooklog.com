@@ -5,6 +5,7 @@ import type { NavItem } from "./navItems";
 
 import { Logo } from "./Logo";
 import { navItems } from "./navItems";
+import { TableOfContents } from "./TableOfContents";
 
 export function Mast({
   addGradient,
@@ -117,7 +118,7 @@ function HamburgerMenu({ hasBackdrop }: { hasBackdrop: boolean }) {
         />
       </button>
       <nav aria-label="Main navigation">
-        <ul
+        <TableOfContents
           className={`
             invisible fixed top-0 right-0 flex h-full w-0
             transform-[translateX(100%)] flex-col items-start gap-y-5
@@ -136,38 +137,9 @@ function HamburgerMenu({ hasBackdrop }: { hasBackdrop: boolean }) {
           `}
           data-nav-menu
           id="nav-menu"
-        >
-          {navItems.map((item) => {
-            return <MenuItem key={item.target} value={item} />;
-          })}
-        </ul>
+        />
       </nav>
     </>
-  );
-}
-
-function MenuItem({ value }: { value: NavItem }): JSX.Element {
-  return (
-    <li
-      className={`
-        block w-1/2 text-2xl whitespace-nowrap
-        laptop:w-full
-      `}
-    >
-      <a
-        className={`
-          relative inline-block origin-left transform-gpu transition-all
-          after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-          after:origin-bottom-left after:scale-x-0 after:bg-(--fg-inverse)/75
-          after:transition-transform
-          hover:after:scale-x-100
-        `}
-        href={value.target}
-      >
-        {value.text}
-      </a>
-      <SubMenu values={value.subItems} />
-    </li>
   );
 }
 
@@ -245,42 +217,5 @@ function SearchButton() {
         </svg>
       </button>
     </div>
-  );
-}
-
-function SubMenu({ values }: { values: NavItem[] }): false | JSX.Element {
-  if (values.length === 0) {
-    return false;
-  }
-
-  return (
-    <ol className="mt-4">
-      {values.map((value) => {
-        return (
-          <li
-            className={`
-              mb-3 ml-1 font-sans text-xs tracking-wider text-inverse-subtle
-              uppercase
-              last:-mb-1
-            `}
-            key={value.target}
-          >
-            <a
-              className={`
-                relative inline-block origin-left transform-gpu pb-1
-                transition-all
-                after:absolute after:bottom-0 after:left-0 after:h-px
-                after:w-full after:origin-bottom-left after:scale-x-0
-                after:bg-(--fg-inverse)/75 after:transition-transform
-                hover:text-inverse hover:after:scale-x-100
-              `}
-              href={value.target}
-            >
-              {value.text}
-            </a>
-          </li>
-        );
-      })}
-    </ol>
   );
 }
