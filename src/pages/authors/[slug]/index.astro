@@ -65,7 +65,7 @@ const backdropElement = React.createElement(AvatarBackdrop, {
   }}
   title={`${name} book & story reviews`}
 >
-  <ListWithFiltersLayout backdrop={backdropElement} hasBackdrop={true}>
+  <ListWithFiltersLayout backdrop={backdropElement}>
     <Author client:load {...interactiveProps} name={name} />
   </ListWithFiltersLayout>
 </Layout>

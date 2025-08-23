@@ -21,7 +21,6 @@ export type CoverImageProps = {
 };
 
 type Work = {
-  includedInSlugs: string[];
   slug: string;
 };
 

@@ -14,23 +14,19 @@ export const CoverImageConfig = {
   width: 248,
 };
 
-export type ListItemValue = Pick<
+export type ReviewCardWithExcerptReview = Pick<
   ReviewWithExcerpt,
-  | "authors"
-  | "excerpt"
-  | "grade"
-  | "kind"
-  | "reviewDate"
-  | "reviewSequence"
-  | "slug"
-  | "synopsis"
-  | "title"
-  | "workYear"
+  "authors" | "excerpt" | "grade" | "kind" | "slug" | "title" | "workYear"
 > & {
   coverImageProps: CoverImageProps;
+  reviewDate?: string;
 };
 
-export function HomeListItem({ value }: { value: ListItemValue }): JSX.Element {
+export function ReviewCardWithExcerpt({
+  value,
+}: {
+  value: ReviewCardWithExcerptReview;
+}): JSX.Element {
   return (
     <li
       className={`
@@ -86,15 +82,17 @@ export function HomeListItem({ value }: { value: ListItemValue }): JSX.Element {
         </div>
       </div>
       <div className="flex flex-col gap-y-2">
-        <div
-          className={`
-            mb-1 font-sans text-xxs leading-4 font-light tracking-wider
-            text-subtle uppercase
-            laptop:tracking-wide
-          `}
-        >
-          {formatDate(value.reviewDate)}
-        </div>
+        {value.reviewDate && (
+          <div
+            className={`
+              mb-1 font-sans text-xxs leading-4 font-light tracking-wider
+              text-subtle uppercase
+              laptop:tracking-wide
+            `}
+          >
+            {formatDate(value.reviewDate)}
+          </div>
+        )}
         <a
           className={`
             block text-2xl font-medium transition-colors

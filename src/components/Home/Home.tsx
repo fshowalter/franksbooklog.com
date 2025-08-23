@@ -4,11 +4,10 @@ import type { BackdropImageProps } from "~/api/backdrops";
 
 import { Backdrop } from "~/components/Backdrop";
 import { Layout } from "~/components/Layout";
+import { ReviewCardWithExcerpt } from "~/components/ReviewCardWithExcerpt";
 import { SubHeading } from "~/components/SubHeading";
 
 import type { ListItemValue } from "./HomeListItem";
-
-import { HomeListItem } from "./HomeListItem";
 
 export type Props = {
   backdropImageProps: BackdropImageProps;
@@ -42,13 +41,9 @@ export function Home({ backdropImageProps, deck, values }: Props): JSX.Element {
             tablet-landscape:grid-cols-2
           `}
         >
-          {values.map((value, index) => {
+          {values.map((value) => {
             return (
-              <HomeListItem
-                eagerLoadCoverImage={index === 0}
-                key={value.reviewSequence}
-                value={value}
-              />
+              <ReviewCardWithExcerpt key={value.reviewSequence} value={value} />
             );
           })}
         </ol>
