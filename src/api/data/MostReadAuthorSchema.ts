@@ -1,7 +1,5 @@
 import { z } from "zod";
 
-import { nullableString } from "./utils/nullable";
-
 const MostReadAuthorReadingSchema = z.object({
   date: z.string(),
   edition: z.string(),
@@ -11,7 +9,7 @@ const MostReadAuthorReadingSchema = z.object({
   reviewed: z.boolean(),
   slug: z.string(),
   title: z.string(),
-  yearPublished: z.string(),
+  workYear: z.string(),
 });
 
 export const MostReadAuthorSchema = z
@@ -19,9 +17,10 @@ export const MostReadAuthorSchema = z
     count: z.number(),
     name: z.string(),
     readings: z.array(MostReadAuthorReadingSchema),
-    slug: nullableString(),
+    reviewed: z.boolean(),
+    slug: z.string(),
   })
-  .transform(({ count, name, readings, slug }) => {
+  .transform(({ count, name, readings, reviewed, slug }) => {
     // fix zod making anything with undefined optional
-    return { count, name, readings, slug };
+    return { count, name, readings, reviewed, slug };
   });

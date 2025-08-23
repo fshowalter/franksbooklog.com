@@ -3,9 +3,9 @@ import type { JSX } from "react";
 import type { CoverImageProps } from "~/api/covers";
 import type { ReviewWithExcerpt } from "~/api/reviews";
 
-import { AuthorLink } from "~/components/AuthorLink";
 import { Cover } from "~/components/Cover";
 import { Grade } from "~/components/Grade";
+import { RenderedMarkdown } from "~/components/RenderedMarkdown";
 import { toSentenceArray } from "~/utils";
 
 export const CoverImageConfig = {
@@ -24,8 +24,9 @@ export type ListItemValue = Pick<
   | "reviewDate"
   | "reviewSequence"
   | "slug"
+  | "synopsis"
   | "title"
-  | "yearPublished"
+  | "workYear"
 > & {
   coverImageProps: CoverImageProps;
 };
@@ -40,134 +41,70 @@ export function HomeListItem({
   return (
     <li
       className={`
-        group/list-item relative row-span-2 grid transform-gpu grid-rows-subgrid
-        flex-col items-end bg-default transition-transform
-        tablet:flex
-        tablet:w-[calc((100%_-_var(--gaps-width))_/_var(--column-count))]
-        tablet:items-stretch tablet:bg-inherit
-        tablet:[--gaps-width:var(--gap-x)_*_(var(--column-count)_-_1)]
+        group/list-item relative flex w-full transform-gpu gap-x-[5%] bg-default
+        py-6 pr-8 pl-4 transition-transform
+        tablet-landscape:has-[a:hover]:-translate-y-2
+        tablet-landscape:has-[a:hover]:drop-shadow-2xl
       `}
     >
       <div
         className={`
-          @container transform-gpu transition-transform
-          group-has-[a:hover]/list-item:-translate-y-2
-          group-has-[a:hover]/list-item:drop-shadow-2xl
+          relative w-1/4 max-w-[250px] shrink-0 self-start overflow-hidden
+          rounded-sm shadow-all transition-transform
+          after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
+          after:bg-default after:opacity-15 after:transition-opacity
+          group-has-[a:hover]/list-item:after:opacity-0
         `}
       >
-        <div
-          className={`
-            z-10 flex justify-center px-3 pt-6
-            tablet:px-0 tablet:pt-0
-          `}
-        >
-          <div
-            className={`
-              relative drop-shadow-md
-              after:absolute after:inset-x-0 after:top-0 after:bottom-0
-              after:z-20 after:bg-default after:opacity-15
-              after:transition-opacity
-              group-hover/list-item:after:opacity-0
-            `}
-          >
-            <Cover
-              decoding="async"
-              imageProps={value.coverImageProps}
-              {...CoverImageConfig}
-              loading={eagerLoadCoverImage ? "eager" : "lazy"}
-            />
-          </div>
-        </div>
+        <Cover
+          decoding="async"
+          imageProps={value.coverImageProps}
+          {...CoverImageConfig}
+          loading={eagerLoadCoverImage ? "eager" : "lazy"}
+        />
       </div>
-      <div
-        className={`
-          @container h-full self-start
-          tablet:self-auto
-        `}
-      >
+      <div className="flex flex-col gap-y-2">
         <div
           className={`
-            flex h-full flex-col items-center px-3 pb-8
-            tablet:px-0
-            @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
-            @min-[200px]:tablet:px-0
+            mb-1 font-sans text-xxs leading-4 font-light tracking-wider
+            text-subtle uppercase
+            laptop:tracking-wide
           `}
         >
-          <div className={`flex h-full w-full max-w-[248px] flex-col px-1`}>
-            <div
-              className={`
-                pt-3 font-sans text-xxs leading-4 font-light whitespace-nowrap
-                text-subtle
-                @min-[225px]:tracking-wide
-              `}
-            >
-              {formatDate(value.reviewDate)}
-            </div>
-            <div
-              className={`
-                pt-2 text-base leading-5 font-medium
-                tablet:pt-3
-                @min-[225px]:pt-2 @min-[225px]:text-md
-              `}
-            >
-              <a
-                className={`
-                  block
-                  after:absolute after:top-0 after:left-0 after:z-60
-                  after:size-full after:opacity-0
-                  hover:text-accent
-                `}
-                href={`/reviews/${value.slug}/`}
-                rel="canonical"
-              >
-                {value.title}
-              </a>
-            </div>
-            <p
-              className={`
-                pt-1 font-sans text-xs leading-4 font-light text-subtle
-              `}
-            >
-              <span
-                className={`
-                  hidden
-                  @min-[225px]:inline
-                `}
-              >
-                by{" "}
-              </span>
-              {toSentenceArray(
-                value.authors.map((author) => {
-                  return (
-                    <AuthorLink
-                      as="span"
-                      key={author.slug}
-                      name={author.name}
-                      notes={author.notes}
-                    />
-                  );
-                }),
-              )}
-            </p>{" "}
-            <Grade
-              className={`
-                mt-2 h-3 w-15
-                @min-[225px]:mt-2 @min-[225px]:h-[14px] @min-[225px]:w-[70px]
-              `}
-              height={16}
-              value={value.grade}
-            />
-            <div
-              className={`
-                mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle
-                tablet:pt-3
-                @min-[225px]:tracking-wide
-              `}
-            >
-              {value.kind} | {value.yearPublished}
-            </div>
-          </div>
+          {formatDate(value.reviewDate)}
         </div>
+        <a
+          className={`
+            block text-2xl font-medium transition-colors
+            after:absolute after:top-0 after:left-0 after:z-sticky
+            after:size-full
+            hover:text-accent hover:before:opacity-0
+          `}
+          href={`/reviews/${value.slug}/`}
+        >
+          {value.title}
+        </a>
+        <div className="-mt-2">
+          {toSentenceArray(
+            value.authors.map((value) => (
+              <span key={value.name}>{value.name}</span>
+            )),
+          )}
+        </div>
+        <div
+          className={`
+            font-sans text-xs leading-4 font-light tracking-prose text-subtle
+          `}
+        >
+          {value.workYear} | {value.kind}
+        </div>
+        <div>
+          <Grade className="py-1" height={24} value={value.grade} />
+        </div>
+        <RenderedMarkdown
+          className="mb-6 text-lg leading-normal tracking-prose text-muted"
+          text={value.synopsis}
+        />
       </div>
     </li>
   );

@@ -254,7 +254,7 @@ async function parseReviewedWorksJson(
       distinctKinds.add(work.kind);
       distinctWorkYears.add(work.workYear);
 
-      const { date, grade, rawContent } = reviewsMarkdown.find(
+      const { date, grade, rawContent, synopsis } = reviewsMarkdown.find(
         (reviewsmarkdown) => {
           return reviewsmarkdown.slug === work.slug;
         },
@@ -267,6 +267,7 @@ async function parseReviewedWorksJson(
         date,
         grade,
         rawContent,
+        synopsis,
       };
     });
 

@@ -1,7 +1,6 @@
 {
   "name": "Dave Draper",
   "sortName": "Draper, Dave",
-  "authorId": "dave-draper",
   "slug": "dave-draper",
   "reviewedWorks": [
     {
@@ -13,7 +12,6 @@
       "authorSequence": 52,
       "titleSequence": 65,
       "kind": "Nonfiction",
-      "workId": "brother-iron-sister-steel-by-dave-draper",
       "slug": "brother-iron-sister-steel-by-dave-draper",
       "sortTitle": "Brother Iron, Sister Steel",
       "grade": "C",
@@ -23,14 +21,13 @@
       "reviewYear": "2022",
       "authors": [
         {
-          "authorId": "dave-draper",
           "slug": "dave-draper",
           "notes": null,
           "name": "Dave Draper",
           "sortName": "Draper, Dave"
         }
       ],
-      "includedInWorkIds": []
+      "includedInSlugs": []
     }
   ]
 }

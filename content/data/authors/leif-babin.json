@@ -1,7 +1,6 @@
 {
   "name": "Leif Babin",
   "sortName": "Babin, Leif",
-  "authorId": "leif-babin",
   "slug": "leif-babin",
   "reviewedWorks": [
     {
@@ -13,7 +12,6 @@
       "authorSequence": 476,
       "titleSequence": 153,
       "kind": "Nonfiction",
-      "workId": "extreme-ownership-by-jocko-willink-leif-babin",
       "slug": "extreme-ownership-by-jocko-willink-leif-babin",
       "sortTitle": "Extreme Ownership: How U.S. Navy SEALs Lead and Win",
       "grade": "A",
@@ -23,21 +21,19 @@
       "reviewYear": "2022",
       "authors": [
         {
-          "authorId": "jocko-willink",
           "slug": "jocko-willink",
           "notes": null,
           "name": "Jocko Willink",
           "sortName": "Willink, Jocko"
         },
         {
-          "authorId": "leif-babin",
           "slug": "leif-babin",
           "notes": null,
           "name": "Leif Babin",
           "sortName": "Babin, Leif"
         }
       ],
-      "includedInWorkIds": []
+      "includedInSlugs": []
     }
   ]
 }

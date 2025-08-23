@@ -37,7 +37,8 @@ const IncludedWorkSchema = z.object({
   authors: z.array(IncludedWorkAuthorSchema),
   grade: nullableString(),
   kind: WorkKindSchema,
-  slug: nullableString(),
+  reviewed: z.boolean(),
+  slug: z.string(),
   title: z.string(),
   workYear: z.string(),
 });

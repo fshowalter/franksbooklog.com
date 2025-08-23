@@ -2,6 +2,7 @@
 work_slug: recessional-by-david-mamet
 grade: D
 date: 2024-08-25
+synopsis: A collection of essays written during the 2020 pandemic in which playwright David Mamet rails against "The Left" and presents his conservative political views.
 ---
 
 Non-politicians like David Mamet, who've done a hard pivot from one political extreme to the other, fascinate me. In an effort to understand his mindset, I picked up _Recessional_.

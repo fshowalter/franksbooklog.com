@@ -80,13 +80,12 @@
     {
       "name": "Philip Fracassi",
       "count": 10,
-      "authorId": "philip-fracassi",
       "slug": "philip-fracassi",
+      "reviewed": true,
       "readings": [
         {
           "readingSequence": 1,
           "date": "2022-04-17",
-          "workId": "soft-construction-of-a-sunset-by-philip-fracassi",
           "slug": "soft-construction-of-a-sunset-by-philip-fracassi",
           "edition": "Ebook",
           "kind": "Short Story",
@@ -95,7 +94,7 @@
           "workYearSequence": 459,
           "authorSequence": 84,
           "titleSequence": 413,
-          "includedInWorkIds": [
+          "includedInSlugs": [
             "behold-the-void-by-philip-fracassi"
           ],
           "reviewed": true
@@ -103,7 +102,6 @@
         {
           "readingSequence": 1,
           "date": "2022-04-18",
-          "workId": "altar-by-philip-fracassi",
           "slug": "altar-by-philip-fracassi",
           "edition": "Ebook",
           "kind": "Short Story",
@@ -112,7 +110,7 @@
           "workYearSequence": 445,
           "authorSequence": 74,
           "titleSequence": 11,
-          "includedInWorkIds": [
+          "includedInSlugs": [
             "behold-the-void-by-philip-fracassi"
           ],
           "reviewed": true
@@ -120,7 +118,6 @@
         {
           "readingSequence": 1,
           "date": "2022-04-19",
-          "workId": "the-horse-thief-by-philip-fracassi",
           "slug": "the-horse-thief-by-philip-fracassi",
           "edition": "Ebook",
           "kind": "Short Story",
@@ -129,7 +126,7 @@
           "workYearSequence": 454,
           "authorSequence": 79,
           "titleSequence": 211,
-          "includedInWorkIds": [
+          "includedInSlugs": [
             "behold-the-void-by-philip-fracassi"
           ],
           "reviewed": true
@@ -137,7 +134,6 @@
         {
           "readingSequence": 1,
           "date": "2022-04-20",
-          "workId": "coffin-by-philip-fracassi",
           "slug": "coffin-by-philip-fracassi",
           "edition": "Ebook",
           "kind": "Short Story",
@@ -146,7 +142,7 @@
           "workYearSequence": 452,
           "authorSequence": 77,
           "titleSequence": 95,
-          "includedInWorkIds": [
+          "includedInSlugs": [
             "behold-the-void-by-philip-fracassi"
           ],
           "reviewed": true
@@ -154,7 +150,6 @@
         {
           "readingSequence": 1,
           "date": "2022-04-21",
-          "workId": "the-baby-farmer-by-philip-fracassi",
           "slug": "the-baby-farmer-by-philip-fracassi",
           "edition": "Ebook",
           "kind": "Short Story",
@@ -163,7 +158,7 @@
           "workYearSequence": 450,
           "authorSequence": 75,
           "titleSequence": 22,
-          "includedInWorkIds": [
+          "includedInSlugs": [
             "behold-the-void-by-philip-fracassi"
           ],
           "reviewed": true
@@ -171,7 +166,6 @@
         {
           "readingSequence": 1,
           "date": "2022-04-22",
-          "workId": "surfer-girl-by-philip-fracassi",
           "slug": "surfer-girl-by-philip-fracassi",
           "edition": "Ebook",
           "kind": "Short Story",
@@ -180,7 +174,7 @@
           "workYearSequence": 460,
           "authorSequence": 85,
           "titleSequence": 430,
-          "includedInWorkIds": [
+          "includedInSlugs": [
             "behold-the-void-by-philip-fracassi"
           ],
           "reviewed": true
@@ -188,7 +182,6 @@
         {
           "readingSequence": 1,
           "date": "2022-04-23",
-          "workId": "mother-by-philip-fracassi",
           "slug": "mother-by-philip-fracassi",
           "edition": "Ebook",
           "kind": "Short Story",
@@ -197,7 +190,7 @@
           "workYearSequence": 440,
           "authorSequence": 73,
           "titleSequence": 308,
-          "includedInWorkIds": [
+          "includedInSlugs": [
             "behold-the-void-by-philip-fracassi"
           ],
           "reviewed": true
@@ -205,7 +198,6 @@
         {
           "readingSequence": 1,
           "date": "2022-04-30",
-          "workId": "fail-safe-by-philip-fracassi",
           "slug": "fail-safe-by-philip-fracassi",
           "edition": "Ebook",
           "kind": "Short Story",
@@ -214,7 +206,7 @@
           "workYearSequence": 453,
           "authorSequence": 78,
           "titleSequence": 156,
-          "includedInWorkIds": [
+          "includedInSlugs": [
             "behold-the-void-by-philip-fracassi"
           ],
           "reviewed": true
@@ -222,7 +214,6 @@
         {
           "readingSequence": 1,
           "date": "2022-05-07",
-          "workId": "mandala-by-philip-fracassi",
           "slug": "mandala-by-philip-fracassi",
           "edition": "Ebook",
           "kind": "Novella",
@@ -231,7 +222,7 @@
           "workYearSequence": 456,
           "authorSequence": 81,
           "titleSequence": 287,
-          "includedInWorkIds": [
+          "includedInSlugs": [
             "behold-the-void-by-philip-fracassi"
           ],
           "reviewed": true
@@ -239,7 +230,6 @@
         {
           "readingSequence": 2,
           "date": "2022-05-07",
-          "workId": "behold-the-void-by-philip-fracassi",
           "slug": "behold-the-void-by-philip-fracassi",
           "edition": "Ebook",
           "kind": "Collection",
@@ -248,7 +238,7 @@
           "workYearSequence": 451,
           "authorSequence": 76,
           "titleSequence": 34,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": true
         }
       ]
@@ -256,13 +246,12 @@
     {
       "name": "Stephen King",
       "count": 4,
-      "authorId": "stephen-king",
       "slug": "stephen-king",
+      "reviewed": true,
       "readings": [
         {
           "readingSequence": 1,
           "date": "2022-03-21",
-          "workId": "on-writing-by-stephen-king",
           "slug": "on-writing-by-stephen-king",
           "edition": "Ebook",
           "kind": "Nonfiction",
@@ -271,13 +260,12 @@
           "workYearSequence": 372,
           "authorSequence": 258,
           "titleSequence": 332,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": true
         },
         {
           "readingSequence": 1,
           "date": "2022-09-19",
-          "workId": "carrie-by-stephen-king",
           "slug": "carrie-by-stephen-king",
           "edition": "Ebook",
           "kind": "Novel",
@@ -286,13 +274,12 @@
           "workYearSequence": 76,
           "authorSequence": 179,
           "titleSequence": 75,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": true
         },
         {
           "readingSequence": 1,
           "date": "2022-10-14",
-          "workId": "salems-lot-by-stephen-king",
           "slug": "salems-lot-by-stephen-king",
           "edition": "Audiobook",
           "kind": "Novel",
@@ -301,13 +288,12 @@
           "workYearSequence": 80,
           "authorSequence": 181,
           "titleSequence": 1,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": true
         },
         {
           "readingSequence": 2,
           "date": "2022-10-29",
-          "workId": "the-shining-by-stephen-king",
           "slug": "the-shining-by-stephen-king",
           "edition": "Audiobook",
           "kind": "Novel",
@@ -316,7 +302,7 @@
           "workYearSequence": 105,
           "authorSequence": 189,
           "titleSequence": 403,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": true
         }
       ]
@@ -324,13 +310,12 @@
     {
       "name": "Richard Laymon",
       "count": 4,
-      "authorId": "richard-laymon",
       "slug": "richard-laymon",
+      "reviewed": true,
       "readings": [
         {
           "readingSequence": 1,
           "date": "2022-03-16",
-          "workId": "the-cellar-by-richard-laymon",
           "slug": "the-cellar-by-richard-laymon",
           "edition": "Ebook",
           "kind": "Novel",
@@ -339,13 +324,12 @@
           "workYearSequence": 131,
           "authorSequence": 271,
           "titleSequence": 80,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": true
         },
         {
           "readingSequence": 1,
           "date": "2022-04-03",
-          "workId": "desert-pickup-by-richard-laymon",
           "slug": "desert-pickup-by-richard-laymon",
           "edition": "Ebook",
           "kind": "Short Story",
@@ -354,7 +338,7 @@
           "workYearSequence": 66,
           "authorSequence": 262,
           "titleSequence": 125,
-          "includedInWorkIds": [
+          "includedInSlugs": [
             "short-stories-volume-one-by-richard-laymon"
           ],
           "reviewed": true
@@ -362,7 +346,6 @@
         {
           "readingSequence": 2,
           "date": "2022-09-11",
-          "workId": "the-woods-are-dark-by-richard-laymon",
           "slug": "the-woods-are-dark-by-richard-laymon",
           "edition": "Audiobook",
           "kind": "Novel",
@@ -371,13 +354,12 @@
           "workYearSequence": 144,
           "authorSequence": 277,
           "titleSequence": 472,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": true
         },
         {
           "readingSequence": 1,
           "date": "2022-10-11",
-          "workId": "out-are-the-lights-by-richard-laymon",
           "slug": "out-are-the-lights-by-richard-laymon",
           "edition": "Ebook",
           "kind": "Novel",
@@ -386,7 +368,7 @@
           "workYearSequence": 155,
           "authorSequence": 279,
           "titleSequence": 339,
-          "includedInWorkIds": [
+          "includedInSlugs": [
             "out-are-the-lights-and-other-tales-by-richard-laymon"
           ],
           "reviewed": true
@@ -396,13 +378,12 @@
     {
       "name": "Ian Fleming",
       "count": 3,
-      "authorId": "ian-fleming",
       "slug": "ian-fleming",
+      "reviewed": true,
       "readings": [
         {
           "readingSequence": 2,
           "date": "2022-06-14",
-          "workId": "casino-royale-by-ian-fleming",
           "slug": "casino-royale-by-ian-fleming",
           "edition": "Ebook",
           "kind": "Novel",
@@ -411,13 +392,12 @@
           "workYearSequence": 29,
           "authorSequence": 69,
           "titleSequence": 77,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": true
         },
         {
           "readingSequence": 1,
           "date": "2022-06-30",
-          "workId": "live-and-let-die-by-ian-fleming",
           "slug": "live-and-let-die-by-ian-fleming",
           "edition": "Ebook",
           "kind": "Novel",
@@ -426,13 +406,12 @@
           "workYearSequence": 32,
           "authorSequence": 70,
           "titleSequence": 271,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": true
         },
         {
           "readingSequence": 1,
           "date": "2022-10-16",
-          "workId": "moonraker-by-ian-fleming",
           "slug": "moonraker-by-ian-fleming",
           "edition": "Audiobook",
           "kind": "Novel",
@@ -441,7 +420,7 @@
           "workYearSequence": 33,
           "authorSequence": 71,
           "titleSequence": 305,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": true
         }
       ]
@@ -449,13 +428,12 @@
     {
       "name": "Chuck Palahniuk",
       "count": 2,
-      "authorId": "chuck-palahniuk",
       "slug": "chuck-palahniuk",
+      "reviewed": true,
       "readings": [
         {
           "readingSequence": 1,
           "date": "2022-07-16",
-          "workId": "fight-club-by-chuck-palahniuk",
           "slug": "fight-club-by-chuck-palahniuk",
           "edition": "Audiobook",
           "kind": "Novel",
@@ -464,13 +442,12 @@
           "workYearSequence": 347,
           "authorSequence": 423,
           "titleSequence": 160,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": true
         },
         {
           "readingSequence": 1,
           "date": "2022-09-22",
-          "workId": "consider-this-by-chuck-palahniuk",
           "slug": "consider-this-by-chuck-palahniuk",
           "edition": "Audiobook",
           "kind": "Nonfiction",
@@ -479,7 +456,7 @@
           "workYearSequence": 471,
           "authorSequence": 430,
           "titleSequence": 100,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": true
         }
       ]
@@ -487,13 +464,12 @@
     {
       "name": "Bret Easton Ellis",
       "count": 2,
-      "authorId": "bret-easton-ellis",
       "slug": "bret-easton-ellis",
+      "reviewed": true,
       "readings": [
         {
           "readingSequence": 1,
           "date": "2022-04-02",
-          "workId": "less-than-zero-by-bret-easton-ellis",
           "slug": "less-than-zero-by-bret-easton-ellis",
           "edition": "Ebook",
           "kind": "Novel",
@@ -502,13 +478,12 @@
           "workYearSequence": 183,
           "authorSequence": 56,
           "titleSequence": 262,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": true
         },
         {
           "readingSequence": 1,
           "date": "2022-07-14",
-          "workId": "the-rules-of-attraction-by-bret-easton-ellis",
           "slug": "the-rules-of-attraction-by-bret-easton-ellis",
           "edition": "Ebook",
           "kind": "Novel",
@@ -517,7 +492,7 @@
           "workYearSequence": 214,
           "authorSequence": 57,
           "titleSequence": 385,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": true
         }
       ]

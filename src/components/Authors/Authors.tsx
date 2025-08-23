@@ -152,7 +152,7 @@ function AuthorListItem({ value }: { value: ListItemValue }): JSX.Element {
   return (
     <AvatarListItem avatarImageProps={value.avatarImageProps}>
       <div className="flex flex-col justify-center">
-        <AuthorName href={value.slug} name={value.name} />
+        <AuthorName name={value.name} slug={value.slug} />
         <div
           className={`
             mt-[6px] font-sans text-xs font-light tracking-prose text-nowrap
@@ -167,11 +167,11 @@ function AuthorListItem({ value }: { value: ListItemValue }): JSX.Element {
 }
 
 function AuthorName({
-  href,
   name,
+  slug,
 }: {
-  href?: string;
   name: ListItemValue["name"];
+  slug: string;
 }) {
   return (
     <a
@@ -180,7 +180,7 @@ function AuthorName({
         after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
         after:opacity-0
       `}
-      href={href}
+      href={`/authors/${slug}/`}
     >
       <div className="leading-normal">{name}</div>
     </a>

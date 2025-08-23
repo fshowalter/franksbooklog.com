@@ -1,7 +1,6 @@
 {
   "name": "Johnny Marr",
   "sortName": "Marr, Johnny",
-  "authorId": "johnny-marr",
   "slug": "johnny-marr",
   "reviewedWorks": [
     {
@@ -13,7 +12,6 @@
       "authorSequence": 399,
       "titleSequence": 398,
       "kind": "Nonfiction",
-      "workId": "set-the-boy-free-by-johnny-marr",
       "slug": "set-the-boy-free-by-johnny-marr",
       "sortTitle": "Set the Boy Free: The Autobiography",
       "grade": "B+",
@@ -23,14 +21,13 @@
       "reviewYear": "2022",
       "authors": [
         {
-          "authorId": "johnny-marr",
           "slug": "johnny-marr",
           "notes": null,
           "name": "Johnny Marr",
           "sortName": "Marr, Johnny"
         }
       ],
-      "includedInWorkIds": []
+      "includedInSlugs": []
     }
   ]
 }

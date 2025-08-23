@@ -2,6 +2,7 @@
 work_slug: record-play-pause-by-stephen-morris
 grade: A
 date: 2023-11-11
+synopsis: Drummer Stephen Morris chronicles his journey from suburban Macclesfield youth through joining Joy Division, Ian Curtis's suicide, and the formation of New Order.
 ---
 
 Warm, witty, self-deprecating and self-aware, drummer Stephen Morris's first volume of memoirs chronicles his formative years in the Manchester suburb of Macclesfield through joining Joy Division, its end, and the early days of New Order.

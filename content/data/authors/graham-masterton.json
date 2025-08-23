@@ -1,7 +1,6 @@
 {
   "name": "Graham Masterton",
   "sortName": "Masterton, Graham",
-  "authorId": "graham-masterton",
   "slug": "graham-masterton",
   "reviewedWorks": [
     {
@@ -13,7 +12,6 @@
       "authorSequence": 402,
       "titleSequence": 128,
       "kind": "Novel",
-      "workId": "the-devils-of-d-day-by-graham-masterton",
       "slug": "the-devils-of-d-day-by-graham-masterton",
       "sortTitle": "Devils of D-Day",
       "grade": "B",
@@ -23,14 +21,13 @@
       "reviewYear": "2016",
       "authors": [
         {
-          "authorId": "graham-masterton",
           "slug": "graham-masterton",
           "notes": null,
           "name": "Graham Masterton",
           "sortName": "Masterton, Graham"
         }
       ],
-      "includedInWorkIds": []
+      "includedInSlugs": []
     }
   ]
 }

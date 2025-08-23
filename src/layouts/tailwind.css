@@ -78,6 +78,7 @@
   --container-button: 430px;
   --container-popout: calc(64px + var(--max-width-prose));
   --container-prose: var(--max-width-prose);
+  --container-unset: unset;
 
   --padding-container: var(--container-padding);
   --max-width-prose: 36rem;

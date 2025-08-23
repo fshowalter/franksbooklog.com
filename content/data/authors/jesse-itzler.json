@@ -1,7 +1,6 @@
 {
   "name": "Jesse Itzler",
   "sortName": "Itzler, Jesse",
-  "authorId": "jesse-itzler",
   "slug": "jesse-itzler",
   "reviewedWorks": [
     {
@@ -13,7 +12,6 @@
       "authorSequence": 159,
       "titleSequence": 273,
       "kind": "Nonfiction",
-      "workId": "living-with-a-seal-by-jesse-itzler",
       "slug": "living-with-a-seal-by-jesse-itzler",
       "sortTitle": "Living with a SEAL: 31 Days Training with the Toughest Man on the Planet",
       "grade": "Abandoned",
@@ -23,14 +21,13 @@
       "reviewYear": "2022",
       "authors": [
         {
-          "authorId": "jesse-itzler",
           "slug": "jesse-itzler",
           "notes": null,
           "name": "Jesse Itzler",
           "sortName": "Itzler, Jesse"
         }
       ],
-      "includedInWorkIds": []
+      "includedInSlugs": []
     }
   ]
 }

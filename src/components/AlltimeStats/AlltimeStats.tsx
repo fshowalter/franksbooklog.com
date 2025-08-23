@@ -62,25 +62,21 @@ export function AlltimeStats({
           tablet:px-container
         `}
       >
-        <div
-          className={`
-            mx-auto flex w-full flex-col gap-y-8
-            laptop:max-w-[calc(66%+24px)]
-          `}
-        >
+        <div className={`mx-auto flex w-full max-w-popout flex-col gap-y-8`}>
           <MostReadAuthors values={mostReadAuthors} />
         </div>
         <div
           className={`
-            flex flex-col items-start gap-y-8
-            laptop:grid laptop:grid-cols-2 laptop:gap-x-8
-            desktop:grid-cols-4
+            mx-auto flex w-full max-w-popout flex-col items-start gap-y-8
+            laptop:max-w-unset laptop:flex-row laptop:gap-x-8
           `}
         >
-          <GradeDistribution values={stats.gradeDistribution} />
           <DecadeDistribution values={stats.decadeDistribution} />
           <KindDistribution values={stats.kindDistribution} />
           <EditionDistribution values={stats.editionDistribution} />
+        </div>
+        <div className="mx-auto w-full max-w-popout">
+          <GradeDistribution values={stats.gradeDistribution} />
         </div>
       </div>
     </Layout>

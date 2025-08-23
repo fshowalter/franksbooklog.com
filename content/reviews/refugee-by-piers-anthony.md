@@ -2,6 +2,7 @@
 work_slug: refugee-by-piers-anthony
 grade: Abandoned
 date: 2016-01-29
+synopsis: Young Hope Hubris and his family flee their home moon of Callisto seeking a better life on Jupiter in this space allegory of Latin American immigration.
 ---
 
 My <span data-work-slug="the-devils-of-d-day-by-graham-masterton">last read</span> left me excited to discover what other surprises awaited me amongst my Dad’s books.

@@ -2,6 +2,7 @@
 work_slug: gothic-by-philip-fracassi
 grade: B+
 date: 2024-06-30
+synopsis: Struggling horror author Tyson Parks receives an antique desk for his birthday that reignites his career but demands a terrible price for its supernatural assistance.
 ---
 
 > "It’s like Christine… but wood!”

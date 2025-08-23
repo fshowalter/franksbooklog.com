@@ -1,7 +1,6 @@
 {
   "name": "Chuck Palahniuk",
   "sortName": "Palahniuk, Chuck",
-  "authorId": "chuck-palahniuk",
   "slug": "chuck-palahniuk",
   "reviewedWorks": [
     {
@@ -13,7 +12,6 @@
       "authorSequence": 430,
       "titleSequence": 100,
       "kind": "Nonfiction",
-      "workId": "consider-this-by-chuck-palahniuk",
       "slug": "consider-this-by-chuck-palahniuk",
       "sortTitle": "Consider This: Moments in My Writing Life After Which Everything Was Different",
       "grade": "B",
@@ -23,14 +21,13 @@
       "reviewYear": "2022",
       "authors": [
         {
-          "authorId": "chuck-palahniuk",
           "slug": "chuck-palahniuk",
           "notes": null,
           "name": "Chuck Palahniuk",
           "sortName": "Palahniuk, Chuck"
         }
       ],
-      "includedInWorkIds": []
+      "includedInSlugs": []
     },
     {
       "reviewSequence": 48,
@@ -41,7 +38,6 @@
       "authorSequence": 423,
       "titleSequence": 160,
       "kind": "Novel",
-      "workId": "fight-club-by-chuck-palahniuk",
       "slug": "fight-club-by-chuck-palahniuk",
       "sortTitle": "Fight Club",
       "grade": "A-",
@@ -51,14 +47,13 @@
       "reviewYear": "2022",
       "authors": [
         {
-          "authorId": "chuck-palahniuk",
           "slug": "chuck-palahniuk",
           "notes": null,
           "name": "Chuck Palahniuk",
           "sortName": "Palahniuk, Chuck"
         }
       ],
-      "includedInWorkIds": []
+      "includedInSlugs": []
     }
   ]
 }

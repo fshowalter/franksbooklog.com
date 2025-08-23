@@ -1,7 +1,6 @@
 {
   "name": "Peter Straub",
   "sortName": "Straub, Peter",
-  "authorId": "peter-straub",
   "slug": "peter-straub",
   "reviewedWorks": [
     {
@@ -13,7 +12,6 @@
       "authorSequence": 454,
       "titleSequence": 176,
       "kind": "Novel",
-      "workId": "ghost-story-by-peter-straub",
       "slug": "ghost-story-by-peter-straub",
       "sortTitle": "Ghost Story",
       "grade": "B",
@@ -23,14 +21,13 @@
       "reviewYear": "2024",
       "authors": [
         {
-          "authorId": "peter-straub",
           "slug": "peter-straub",
           "notes": null,
           "name": "Peter Straub",
           "sortName": "Straub, Peter"
         }
       ],
-      "includedInWorkIds": []
+      "includedInSlugs": []
     }
   ]
 }

@@ -2,33 +2,33 @@ import type { JSX } from "react";
 
 import type { CoverImageProps } from "~/api/covers";
 
-import { ListItem } from "./ListItem";
-import { ListItemCover } from "./ListItemCover";
+import { CoverList, CoverListItem } from "./CoverList";
+import { ListItemEdition } from "./ListItemEdition";
+import { ListItemReviewDate } from "./ListItemReviewDate";
 import { ListItemTitle } from "./ListItemTitle";
 
-type MostReadAuthorsValue = {
+export type MostReadAuthorsListItemValue = {
   count: number;
   name: string;
   readings: ReadingSubListItemValue[];
-  slug: string | undefined;
+  reviewed: boolean;
+  slug: string;
 };
 
 type ReadingSubListItemValue = {
   coverImageProps: CoverImageProps;
-  date: string;
+  displayDate: string;
   edition: string;
-  kind: string;
   readingSequence: number;
   reviewed: boolean;
-  slug: string | undefined;
+  slug: string;
   title: string;
-  yearPublished: string;
 };
 
 export function MostReadAuthors({
   values,
 }: {
-  values: readonly MostReadAuthorsValue[];
+  values: readonly MostReadAuthorsListItemValue[];
 }): false | JSX.Element {
   if (values.length === 0) {
     return false;
@@ -39,23 +39,18 @@ export function MostReadAuthors({
       className={`
         w-full bg-default pb-8
         tablet:px-container
+        laptop:px-12
       `}
     >
       <h2
         className={`
-          px-container py-4 font-medium
+          px-container py-4 text-xl font-medium
           tablet:px-0
-          laptop:text-xl
         `}
       >
         Most Read Authors
       </h2>
-      <div
-        className={`
-          w-full
-          tablet:whitespace-nowrap
-        `}
-      >
+      <div className={`w-full`}>
         {values.map((value) => {
           return (
             <div className="py-3" key={value.name}>
@@ -67,9 +62,8 @@ export function MostReadAuthors({
               >
                 <div
                   className={`
-                    origin-center transform-gpu font-sans text-xs text-muted
+                    transform-gpu font-sans text-xs text-muted
                     transition-transform
-                    has-[a:hover]:scale-110
                     tablet:text-sm
                   `}
                 >
@@ -90,35 +84,25 @@ export function MostReadAuthors({
                   tablet:px-0
                 `}
               >
-                <details
-                  className={`
-                    bg-group
-                    tablet:px-2
-                  `}
-                >
+                <details className={`bg-subtle px-2`}>
                   <summary
                     className={`
-                      cursor-pointer px-4 py-1 font-sans text-sm text-subtle
-                      tablet:px-0
+                      cursor-pointer rounded-sm py-1 font-sans text-xs
+                      tracking-prose text-subtle
                     `}
                   >
                     Details
                   </summary>
-                  <ol
-                    className={`
-                      py-2
-                      tablet:px-4
-                    `}
-                  >
+                  <CoverList>
                     {value.readings.map((reading) => {
                       return (
-                        <ReadingSubListItem
-                          key={`${reading.date}-${reading.slug}-${reading.readingSequence}`}
+                        <MostReadAuthorReadingListItem
+                          key={reading.readingSequence}
                           value={reading}
                         />
                       );
                     })}
-                  </ol>
+                  </CoverList>
                 </details>
               </div>
             </div>
@@ -129,11 +113,47 @@ export function MostReadAuthors({
   );
 }
 
-function Name({ value }: { value: MostReadAuthorsValue }): JSX.Element {
-  if (value.slug) {
+function MostReadAuthorReadingListItem({
+  value,
+}: {
+  value: ReadingSubListItemValue;
+}) {
+  return (
+    <CoverListItem
+      className={`
+        ${value.reviewed ? "bg-default" : "bg-unreviewed"}
+      `}
+      coverImageProps={value.coverImageProps}
+    >
+      <div
+        className={`
+          flex grow flex-col items-start gap-y-1
+          tablet:mt-2 tablet:w-full tablet:px-1
+        `}
+      >
+        <ListItemTitle
+          slug={value.reviewed ? value.slug : undefined}
+          title={value.title}
+        />
+        <ListItemReviewDate displayDate={value.displayDate} />
+        <ListItemEdition value={value.edition} />
+      </div>
+    </CoverListItem>
+  );
+}
+
+function Name({ value }: { value: MostReadAuthorsListItemValue }): JSX.Element {
+  if (value.reviewed) {
     return (
       <a
-        className="inline-block leading-6 font-normal text-accent"
+        className={`
+          relative inline-block font-serif text-base leading-6 font-normal
+          text-accent
+          after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
+          after:origin-bottom-left after:scale-x-0 after:bg-(--fg-accent)
+          after:transition-transform
+          hover:after:scale-x-100
+        `}
         href={`/authors/${value.slug}/`}
       >
         {value.name}
@@ -141,33 +161,9 @@ function Name({ value }: { value: MostReadAuthorsValue }): JSX.Element {
     );
   }
 
-  return <>{value.name}</>;
-}
-
-function ReadingSubListItem({ value }: { value: ReadingSubListItemValue }) {
   return (
-    <ListItem>
-      <div
-        className={`
-          relative
-          after:absolute after:top-0 after:left-0 after:z-10 after:size-full
-          after:bg-default after:opacity-15
-          group-has-[a:hover]/list-item:after:opacity-0
-        `}
-      >
-        <ListItemCover imageProps={value.coverImageProps} />
-      </div>
-      <div className="flex grow flex-col gap-y-1">
-        <ListItemTitle
-          slug={value.reviewed ? value.slug : undefined}
-          title={value.title}
-        />
-        <div className="mt-1 font-sans text-xs text-muted">{value.date}</div>
-        <div className="mt-1 font-sans text-xs text-muted">{value.kind}</div>
-        <div className="mt-1 font-sans text-xs font-light text-muted">
-          {value.edition}
-        </div>
-      </div>
-    </ListItem>
+    <span className={`inline-block font-serif text-base leading-6 font-normal`}>
+      {value.name}
+    </span>
   );
 }

@@ -56,14 +56,13 @@
     {
       "name": "Richard Laymon",
       "count": 3,
-      "authorId": "richard-laymon",
       "slug": "richard-laymon",
+      "reviewed": true,
       "readings": [
         {
           "readingSequence": 1,
           "date": "2025-02-06",
-          "workId": "night-show-by-richard-laymon",
-          "slug": null,
+          "slug": "night-show-by-richard-laymon",
           "edition": "Ebook",
           "kind": "Novel",
           "title": "Night Show",
@@ -71,14 +70,13 @@
           "workYearSequence": 180,
           "authorSequence": 285,
           "titleSequence": 322,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": false
         },
         {
           "readingSequence": 1,
           "date": "2025-02-09",
-          "workId": "a-writers-tale-by-richard-laymon",
-          "slug": null,
+          "slug": "a-writers-tale-by-richard-laymon",
           "edition": "Ebook",
           "kind": "Nonfiction",
           "title": "A Writer's Tale",
@@ -86,13 +84,12 @@
           "workYearSequence": 354,
           "authorSequence": 358,
           "titleSequence": 476,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": false
         },
         {
           "readingSequence": 1,
           "date": "2025-02-15",
-          "workId": "the-lonely-one-by-richard-laymon",
           "slug": "the-lonely-one-by-richard-laymon",
           "edition": "Paperback",
           "kind": "Short Story",
@@ -101,7 +98,7 @@
           "workYearSequence": 196,
           "authorSequence": 297,
           "titleSequence": 275,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": true
         }
       ]
@@ -109,13 +106,12 @@
     {
       "name": "Philip Fracassi",
       "count": 3,
-      "authorId": "philip-fracassi",
       "slug": "philip-fracassi",
+      "reviewed": true,
       "readings": [
         {
           "readingSequence": 2,
           "date": "2025-07-11",
-          "workId": "commodore-by-philip-fracassi",
           "slug": "commodore-by-philip-fracassi",
           "edition": "Ebook",
           "kind": "Novella",
@@ -124,13 +120,12 @@
           "workYearSequence": 473,
           "authorSequence": 86,
           "titleSequence": 98,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": true
         },
         {
           "readingSequence": 3,
           "date": "2025-07-11",
-          "workId": "shiloh-by-philip-fracassi",
           "slug": "shiloh-by-philip-fracassi",
           "edition": "Ebook",
           "kind": "Novella",
@@ -139,13 +134,12 @@
           "workYearSequence": 458,
           "authorSequence": 83,
           "titleSequence": 402,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": true
         },
         {
           "readingSequence": 1,
           "date": "2025-07-12",
-          "workId": "king-mob-by-philip-fracassi",
           "slug": "king-mob-by-philip-fracassi",
           "edition": "Ebook",
           "kind": "Short Story",
@@ -154,7 +148,7 @@
           "workYearSequence": 455,
           "authorSequence": 80,
           "titleSequence": 247,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": true
         }
       ]

@@ -62,28 +62,19 @@ export function AvatarBackdrop({
 
 export function BreadcrumbLink({
   children,
-  color = "inverse",
   href,
 }: {
   children: React.ReactNode;
-  color?: "default" | "inverse";
   href: string;
 }) {
   return (
     <a
       className={`
-        font-sans text-sm tracking-wide uppercase underline-offset-8
-        ${
-          color === "inverse"
-            ? `
-              text-inverse decoration-inverse-subtle decoration-2
-              hover:underline
-            `
-            : `
-              text-subtle
-              hover:text-accent
-            `
-        }
+        relative inline-block font-sans text-sm tracking-wide uppercase
+        after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full
+        after:origin-center after:scale-x-0 after:bg-(--fg-inverse)/75
+        after:transition-transform
+        hover:after:scale-x-100
       `}
       href={href}
     >
@@ -97,22 +88,16 @@ function Breadcrumb({ value }: { value?: React.ReactNode }) {
     return false;
   }
 
-  return (
-    <p className="mb-2 font-sans text-sm tracking-wide text-subtle uppercase">
-      {value}
-    </p>
-  );
+  return <p className="mb-2">{value}</p>;
 }
 
 function Deck({
   center,
   shadow,
-  subtle,
   value,
 }: {
   center?: boolean;
-  shadow?: boolean;
-  subtle?: boolean;
+  shadow: boolean;
   value?: React.ReactNode;
 }) {
   if (!value) {
@@ -123,10 +108,9 @@ function Deck({
     <p
       className={`
         mt-1 text-base
-        desktop:my-4 desktop:text-xl
-        ${center ? `text-center` : ""}
+        laptop:my-4 laptop:text-xl
         ${shadow ? `[text-shadow:1px_1px_2px_black]` : ""}
-        ${subtle ? `text-subtle` : ""}
+        ${center ? `text-center` : ""}
       `}
     >
       {value}
@@ -150,12 +134,11 @@ function Title({
         `
           font-sans
           ${center ? "text-center" : ""}
-          text-3xl font-bold tracking-widest uppercase
-          tablet:text-4xl
-          tablet-landscape:text-5xl
-          desktop:text-7xl
+          text-2xl font-bold tracking-widest uppercase
+          laptop:text-7xl
         `
       }
+      data-pagefind-weight="10"
     >
       {value}
     </h1>
@@ -178,24 +161,18 @@ function Wrapper({
   textInverse?: boolean;
 }) {
   const defaultSizes =
-    "min-h-[340px] tablet:min-h-[640px] desktop:min-h-[clamp(640px,70vh,1350px)]";
+    "min-h-[400px] tablet:min-h-[640px] laptop:min-h-[clamp(640px,70vh,1350px)]";
 
   const largeSizes = "min-h-[90vh] max-h-[1350px]";
 
-  const smallSizes = "min-h-[clamp(340px,50vh,1350px)]";
-
-  const xsmallSizes = "min-h-[clamp(340px,40vh,1350px)]";
+  const smallSizes = "min-h-[240px] laptop:min-h-[clamp(640px,50vh,1350px)]";
 
   const sizes =
     size === "large"
       ? largeSizes
       : size === "small"
         ? smallSizes
-        : size === "xsmall"
-          ? xsmallSizes
-          : size === "auto"
-            ? "min-h-[25vw]"
-            : defaultSizes;
+        : defaultSizes;
 
   return (
     <header

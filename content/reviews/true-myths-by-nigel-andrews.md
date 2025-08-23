@@ -2,6 +2,7 @@
 work_slug: true-myths-by-nigel-andrews
 grade: D+
 date: 2013-04-16
+synopsis: A biography attempting to separate truth from legend in Arnold Schwarzenegger's rise from rural Austrian child to Hollywood mogul.
 ---
 
 Though the title purports to suss out the kernels of truth in Schwarzenegger's colorful story of a rural Austrian child turned Hollywood mega-mogul, author Nigel Andrews seems more interested in rebutting Wendy Leigh's prior chronicle.

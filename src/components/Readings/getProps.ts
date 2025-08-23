@@ -59,6 +59,7 @@ export async function getProps(): Promise<
           timeZone: "UTC",
           year: "numeric",
         }),
+        reviewed: entry.reviewed,
         slug: entry.slug,
         timelineSequence: entry.timelineSequence,
         title: entry.title,
