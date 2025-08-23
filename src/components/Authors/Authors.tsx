@@ -4,9 +4,8 @@ import type { Author } from "~/api/authors";
 import type { AvatarImageProps } from "~/api/avatars";
 import type { BackdropImageProps } from "~/api/backdrops";
 
+import { AvatarListItem } from "~/components/AvatarList";
 import { GroupedList } from "~/components/GroupedList";
-import { ListItem } from "~/components/ListItem";
-import { ListItemAvatar } from "~/components/ListItemAvatar";
 import { ListWithFilters } from "~/components/ListWithFilters";
 
 import type { Sort } from "./Authors.reducer";
@@ -123,12 +122,11 @@ function AlphabetSubNav({
   }
 
   return (
-    <nav className={`sticky top-0 z-[21] bg-footer`}>
+    <nav className={`sticky top-0 z-nav-menu bg-footer`}>
       <ul
         className={`
           mx-auto flex scrollbar-hidden max-w-(--breakpoint-desktop) snap-x
-          overflow-x-auto px-container font-sans text-sm font-normal
-          tracking-wide
+          overflow-x-auto px-container text-md font-semibold tracking-wide
           laptop:justify-center
         `}
       >
@@ -152,54 +150,39 @@ function AlphabetSubNav({
 
 function AuthorListItem({ value }: { value: ListItemValue }): JSX.Element {
   return (
-    <ListItem
-      className="relative"
-      extraVerticalPadding={true}
-      itemsCenter={true}
-    >
-      <div
-        className={`
-          relative rounded-full
-          after:absolute after:top-0 after:left-0 after:size-full
-          after:bg-default after:opacity-15 after:transition-opacity
-          group-has-[a:hover]/list-item:after:opacity-0
-        `}
-      >
-        <ListItemAvatar imageProps={value.avatarImageProps} />
+    <AvatarListItem avatarImageProps={value.avatarImageProps}>
+      <div className="flex flex-col justify-center">
+        <AuthorName href={value.slug} name={value.name} />
+        <div
+          className={`
+            mt-[6px] font-sans text-xs font-light tracking-prose text-nowrap
+            text-subtle
+          `}
+        >
+          {value.reviewCount} Reviews
+        </div>
       </div>
-      <AuthorName slug={value.slug} value={value.name} />
-      <div className={`ml-auto font-sans text-sm text-nowrap text-subtle`}>
-        {value.reviewedWorkCount}
-      </div>
-    </ListItem>
+    </AvatarListItem>
   );
 }
 
 function AuthorName({
-  slug,
-  value,
+  href,
+  name,
 }: {
-  slug?: string;
-  value: ListItemValue["name"];
+  href?: string;
+  name: ListItemValue["name"];
 }) {
-  if (!slug) {
-    return (
-      <span className="font-sans text-sm leading-normal font-light text-subtle">
-        {value}
-      </span>
-    );
-  }
-
   return (
     <a
       className={`
-        font-sans text-sm leading-normal font-medium text-accent
-        after:absolute after:top-0 after:left-0 after:size-full after:opacity-0
-        hover:text-accent
+        text-base leading-normal font-semibold text-accent
+        after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
+        after:opacity-0
       `}
-      href={`/authors/${slug}/`}
+      href={href}
     >
-      {value}
+      <div className="leading-normal">{name}</div>
     </a>
   );
 }

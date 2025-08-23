@@ -56,11 +56,13 @@
     {
       "name": "Stephen Morris",
       "count": 2,
+      "authorId": "stephen-morris",
       "slug": "stephen-morris",
       "readings": [
         {
           "readingSequence": 1,
           "date": "2023-11-11",
+          "workId": "record-play-pause-by-stephen-morris",
           "slug": "record-play-pause-by-stephen-morris",
           "edition": "Audiobook",
           "kind": "Nonfiction",
@@ -69,12 +71,13 @@
           "workYearSequence": 469,
           "authorSequence": 416,
           "titleSequence": 370,
-          "includedInSlugs": [],
+          "includedInWorkIds": [],
           "reviewed": true
         },
         {
           "readingSequence": 1,
           "date": "2023-12-09",
+          "workId": "fast-forward-by-stephen-morris",
           "slug": "fast-forward-by-stephen-morris",
           "edition": "Audiobook",
           "kind": "Nonfiction",
@@ -83,7 +86,7 @@
           "workYearSequence": 470,
           "authorSequence": 417,
           "titleSequence": 158,
-          "includedInSlugs": [],
+          "includedInWorkIds": [],
           "reviewed": true
         }
       ]
@@ -91,11 +94,13 @@
     {
       "name": "Philip Fracassi",
       "count": 2,
+      "authorId": "philip-fracassi",
       "slug": "philip-fracassi",
       "readings": [
         {
           "readingSequence": 1,
           "date": "2023-10-09",
+          "workId": "sacculina-by-philip-fracassi",
           "slug": "sacculina-by-philip-fracassi",
           "edition": "Ebook",
           "kind": "Novella",
@@ -104,12 +109,13 @@
           "workYearSequence": 457,
           "authorSequence": 82,
           "titleSequence": 387,
-          "includedInSlugs": [],
+          "includedInWorkIds": [],
           "reviewed": true
         },
         {
           "readingSequence": 1,
           "date": "2023-10-29",
+          "workId": "dont-let-them-get-you-down-by-philip-fracassi",
           "slug": "dont-let-them-get-you-down-by-philip-fracassi",
           "edition": "Ebook",
           "kind": "Novel",
@@ -118,7 +124,7 @@
           "workYearSequence": 474,
           "authorSequence": 87,
           "titleSequence": 139,
-          "includedInSlugs": [],
+          "includedInWorkIds": [],
           "reviewed": true
         }
       ]

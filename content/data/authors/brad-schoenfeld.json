@@ -1,6 +1,7 @@
 {
   "name": "Brad Schoenfeld",
   "sortName": "Schoenfeld, Brad",
+  "authorId": "brad-schoenfeld",
   "slug": "brad-schoenfeld",
   "reviewedWorks": [
     {
@@ -12,6 +13,7 @@
       "authorSequence": 437,
       "titleSequence": 281,
       "kind": "Nonfiction",
+      "workId": "the-max-muscle-plan-by-brad-schoenfeld",
       "slug": "the-max-muscle-plan-by-brad-schoenfeld",
       "sortTitle": "M.A.X. Muscle Plan, The",
       "grade": "C-",
@@ -21,13 +23,14 @@
       "reviewYear": "2022",
       "authors": [
         {
+          "authorId": "brad-schoenfeld",
           "slug": "brad-schoenfeld",
           "notes": null,
           "name": "Brad Schoenfeld",
           "sortName": "Schoenfeld, Brad"
         }
       ],
-      "includedInSlugs": []
+      "includedInWorkIds": []
     }
   ]
 }

@@ -1,6 +1,7 @@
 {
   "name": "James M. Cain",
   "sortName": "Cain, James M.",
+  "authorId": "james-m-cain",
   "slug": "james-m-cain",
   "reviewedWorks": [
     {
@@ -12,6 +13,7 @@
       "authorSequence": 21,
       "titleSequence": 353,
       "kind": "Novel",
+      "workId": "the-postman-always-rings-twice-by-james-m-cain",
       "slug": "the-postman-always-rings-twice-by-james-m-cain",
       "sortTitle": "Postman Always Rings Twice",
       "grade": "B+",
@@ -21,13 +23,14 @@
       "reviewYear": "2022",
       "authors": [
         {
+          "authorId": "james-m-cain",
           "slug": "james-m-cain",
           "notes": null,
           "name": "James M. Cain",
           "sortName": "Cain, James M."
         }
       ],
-      "includedInSlugs": []
+      "includedInWorkIds": []
     }
   ]
 }

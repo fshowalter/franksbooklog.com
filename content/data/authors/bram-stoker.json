@@ -1,6 +1,7 @@
 {
   "name": "Bram Stoker",
   "sortName": "Stoker, Bram",
+  "authorId": "bram-stoker",
   "slug": "bram-stoker",
   "reviewedWorks": [
     {
@@ -12,6 +13,7 @@
       "authorSequence": 452,
       "titleSequence": 142,
       "kind": "Novel",
+      "workId": "dracula-by-bram-stoker",
       "slug": "dracula-by-bram-stoker",
       "sortTitle": "Dracula",
       "grade": "C+",
@@ -21,13 +23,14 @@
       "reviewYear": "2022",
       "authors": [
         {
+          "authorId": "bram-stoker",
           "slug": "bram-stoker",
           "notes": null,
           "name": "Bram Stoker",
           "sortName": "Stoker, Bram"
         }
       ],
-      "includedInSlugs": []
+      "includedInWorkIds": []
     }
   ]
 }

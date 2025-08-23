@@ -132,8 +132,8 @@ export async function getOpenGraphCoverAsBase64String(work: Work) {
   if (cacheConfig.enableCache) {
     await ensureCacheDir(cacheConfig.cacheDir);
 
-    const workSlug = work.slug || work.includedInSlugs.join("-");
-    const cacheKeyData = `${workSlug}-${width}-${format}`;
+    const workId = work.workId || work.includedInWorkIds.join("-");
+    const cacheKeyData = `${workId}-${width}-${format}`;
     cacheKey = createCacheKey(cacheKeyData);
 
     const cachedCover = await getCachedItem<string>(
@@ -142,7 +142,7 @@ export async function getOpenGraphCoverAsBase64String(work: Work) {
       "txt",
       false,
       cacheConfig.debugCache,
-      `Cover base64: ${workSlug}`,
+      `Cover base64: ${workId}`,
     );
 
     if (cachedCover) {
@@ -203,7 +203,7 @@ export async function getUpdateCoverProps(
 }
 
 export function getWorkCoverPath(work: Work) {
-  const workCover = coverPath(work.slug);
+  const workCover = coverPath(work.workId);
 
   if (workCover) {
     return workCover;
@@ -211,8 +211,8 @@ export function getWorkCoverPath(work: Work) {
 
   let parentCover;
 
-  for (const includedInSlug of work.includedInSlugs) {
-    parentCover = coverPath(includedInSlug);
+  for (const includedInWorkId of work.includedInWorkIds) {
+    parentCover = coverPath(includedInWorkId);
 
     if (parentCover) {
       break;
@@ -236,10 +236,10 @@ function coverPath(slug: string) {
 }
 
 async function getWorkCoverFile(work: Work) {
-  const workSlug = work.slug;
+  const workId = work.workId;
 
   const coverKey = Object.keys(images).find((image) => {
-    return image.endsWith(`${workSlug}.png`);
+    return image.endsWith(`${workId}.png`);
   });
 
   if (coverKey) {

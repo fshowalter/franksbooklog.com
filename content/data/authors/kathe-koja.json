@@ -1,6 +1,7 @@
 {
   "name": "Kathe Koja",
   "sortName": "Koja, Kathe",
+  "authorId": "kathe-koja",
   "slug": "kathe-koja",
   "reviewedWorks": [
     {
@@ -12,6 +13,7 @@
       "authorSequence": 260,
       "titleSequence": 92,
       "kind": "Novel",
+      "workId": "the-cipher-by-kathe-koja",
       "slug": "the-cipher-by-kathe-koja",
       "sortTitle": "Cipher",
       "grade": "B",
@@ -21,13 +23,14 @@
       "reviewYear": "2023",
       "authors": [
         {
+          "authorId": "kathe-koja",
           "slug": "kathe-koja",
           "notes": null,
           "name": "Kathe Koja",
           "sortName": "Koja, Kathe"
         }
       ],
-      "includedInSlugs": []
+      "includedInWorkIds": []
     }
   ]
 }

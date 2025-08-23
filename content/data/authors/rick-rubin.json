@@ -1,6 +1,7 @@
 {
   "name": "Rick Rubin",
   "sortName": "Rubin, Rick",
+  "authorId": "rick-rubin",
   "slug": "rick-rubin",
   "reviewedWorks": [
     {
@@ -12,6 +13,7 @@
       "authorSequence": 435,
       "titleSequence": 101,
       "kind": "Nonfiction",
+      "workId": "the-creative-act-by-rick-rubin",
       "slug": "the-creative-act-by-rick-rubin",
       "sortTitle": "Creative Act: A Way of Being",
       "grade": "C+",
@@ -21,13 +23,14 @@
       "reviewYear": "2023",
       "authors": [
         {
+          "authorId": "rick-rubin",
           "slug": "rick-rubin",
           "notes": null,
           "name": "Rick Rubin",
           "sortName": "Rubin, Rick"
         }
       ],
-      "includedInSlugs": []
+      "includedInWorkIds": []
     }
   ]
 }

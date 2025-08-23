@@ -10,21 +10,22 @@ const authorsJsonDirectory = getContentPath("data", "authors");
 
 const WorkAuthorSchema = z
   .object({
+    authorId: z.string(),
     name: z.string(),
     notes: nullableString(),
     slug: z.string(),
     sortName: z.string(),
   })
-  .transform(({ name, notes, slug, sortName }) => {
+  .transform(({ authorId, name, notes, slug, sortName }) => {
     // fix zod making anything with undefined optional
-    return { name, notes, slug, sortName };
+    return { authorId, name, notes, slug, sortName };
   });
 
 const WorkSchema = z.object({
   authors: z.array(WorkAuthorSchema),
   grade: z.string(),
   gradeValue: z.number(),
-  includedInSlugs: z.array(z.string()),
+  includedInWorkIds: z.array(z.string()),
   kind: WorkKindSchema,
   reviewDate: z.string(),
   reviewSequence: z.number(),
@@ -37,6 +38,7 @@ const WorkSchema = z.object({
 });
 
 const AuthorJsonSchema = z.object({
+  authorId: z.string(),
   name: z.string(),
   reviewedWorks: z.array(WorkSchema),
   slug: z.string(),

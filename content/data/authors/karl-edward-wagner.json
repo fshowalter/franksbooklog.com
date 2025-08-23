@@ -1,6 +1,7 @@
 {
   "name": "Karl Edward Wagner",
   "sortName": "Wagner, Karl Edward",
+  "authorId": "karl-edward-wagner",
   "slug": "karl-edward-wagner",
   "reviewedWorks": [
     {
@@ -12,6 +13,7 @@
       "authorSequence": 466,
       "titleSequence": 111,
       "kind": "Novel",
+      "workId": "dark-crusade-by-karl-edward-wagner",
       "slug": "dark-crusade-by-karl-edward-wagner",
       "sortTitle": "Dark Crusade",
       "grade": "C",
@@ -21,13 +23,14 @@
       "reviewYear": "2012",
       "authors": [
         {
+          "authorId": "karl-edward-wagner",
           "slug": "karl-edward-wagner",
           "notes": null,
           "name": "Karl Edward Wagner",
           "sortName": "Wagner, Karl Edward"
         }
       ],
-      "includedInSlugs": []
+      "includedInWorkIds": []
     }
   ]
 }

@@ -1,6 +1,7 @@
 {
   "name": "A. Jack Ulrich",
   "sortName": "Ulrich, A. Jack",
+  "authorId": "a-jack-ulrich",
   "slug": "a-jack-ulrich",
   "reviewedWorks": [
     {
@@ -12,6 +13,7 @@
       "authorSequence": 111,
       "titleSequence": 169,
       "kind": "Novel",
+      "workId": "fright-night-origins-by-tom-holland-a-jack-ulrich",
       "slug": "fright-night-origins-by-tom-holland-a-jack-ulrich",
       "sortTitle": "Fright Night Origins",
       "grade": "C+",
@@ -21,19 +23,21 @@
       "reviewYear": "2023",
       "authors": [
         {
+          "authorId": "tom-holland",
           "slug": "tom-holland",
           "notes": null,
           "name": "Tom Holland",
           "sortName": "Holland, Tom"
         },
         {
+          "authorId": "a-jack-ulrich",
           "slug": "a-jack-ulrich",
           "notes": null,
           "name": "A. Jack Ulrich",
           "sortName": "Ulrich, A. Jack"
         }
       ],
-      "includedInSlugs": []
+      "includedInWorkIds": []
     }
   ]
 }

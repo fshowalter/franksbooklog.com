@@ -1,6 +1,7 @@
 {
   "name": "Marc Eliot",
   "sortName": "Eliot, Marc",
+  "authorId": "marc-eliot",
   "slug": "marc-eliot",
   "reviewedWorks": [
     {
@@ -12,6 +13,7 @@
       "authorSequence": 55,
       "titleSequence": 76,
       "kind": "Nonfiction",
+      "workId": "cary-grant-by-marc-eliot",
       "slug": "cary-grant-by-marc-eliot",
       "sortTitle": "Cary Grant: A Biography",
       "grade": "C",
@@ -21,13 +23,14 @@
       "reviewYear": "2012",
       "authors": [
         {
+          "authorId": "marc-eliot",
           "slug": "marc-eliot",
           "notes": null,
           "name": "Marc Eliot",
           "sortName": "Eliot, Marc"
         }
       ],
-      "includedInSlugs": []
+      "includedInWorkIds": []
     }
   ]
 }

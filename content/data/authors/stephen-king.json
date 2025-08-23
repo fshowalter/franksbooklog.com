@@ -1,6 +1,7 @@
 {
   "name": "Stephen King",
   "sortName": "King, Stephen",
+  "authorId": "stephen-king",
   "slug": "stephen-king",
   "reviewedWorks": [
     {
@@ -12,6 +13,7 @@
       "authorSequence": 181,
       "titleSequence": 1,
       "kind": "Novel",
+      "workId": "salems-lot-by-stephen-king",
       "slug": "salems-lot-by-stephen-king",
       "sortTitle": "'Salem's Lot",
       "grade": "B",
@@ -21,13 +23,14 @@
       "reviewYear": "2022",
       "authors": [
         {
+          "authorId": "stephen-king",
           "slug": "stephen-king",
           "notes": null,
           "name": "Stephen King",
           "sortName": "King, Stephen"
         }
       ],
-      "includedInSlugs": []
+      "includedInWorkIds": []
     },
     {
       "reviewSequence": 57,
@@ -38,6 +41,7 @@
       "authorSequence": 179,
       "titleSequence": 75,
       "kind": "Novel",
+      "workId": "carrie-by-stephen-king",
       "slug": "carrie-by-stephen-king",
       "sortTitle": "Carrie",
       "grade": "B-",
@@ -47,13 +51,14 @@
       "reviewYear": "2022",
       "authors": [
         {
+          "authorId": "stephen-king",
           "slug": "stephen-king",
           "notes": null,
           "name": "Stephen King",
           "sortName": "King, Stephen"
         }
       ],
-      "includedInSlugs": []
+      "includedInWorkIds": []
     },
     {
       "reviewSequence": 10,
@@ -64,6 +69,7 @@
       "authorSequence": 205,
       "titleSequence": 103,
       "kind": "Novel",
+      "workId": "cujo-by-stephen-king",
       "slug": "cujo-by-stephen-king",
       "sortTitle": "Cujo",
       "grade": "B",
@@ -73,13 +79,14 @@
       "reviewYear": "2014",
       "authors": [
         {
+          "authorId": "stephen-king",
           "slug": "stephen-king",
           "notes": null,
           "name": "Stephen King",
           "sortName": "King, Stephen"
         }
       ],
-      "includedInSlugs": []
+      "includedInWorkIds": []
     },
     {
       "reviewSequence": 67,
@@ -90,6 +97,7 @@
       "authorSequence": 259,
       "titleSequence": 136,
       "kind": "Novel",
+      "workId": "doctor-sleep-by-stephen-king",
       "slug": "doctor-sleep-by-stephen-king",
       "sortTitle": "Doctor Sleep",
       "grade": "C+",
@@ -99,13 +107,14 @@
       "reviewYear": "2023",
       "authors": [
         {
+          "authorId": "stephen-king",
           "slug": "stephen-king",
           "notes": null,
           "name": "Stephen King",
           "sortName": "King, Stephen"
         }
       ],
-      "includedInSlugs": []
+      "includedInWorkIds": []
     },
     {
       "reviewSequence": 9,
@@ -116,6 +125,7 @@
       "authorSequence": 192,
       "titleSequence": 277,
       "kind": "Novel",
+      "workId": "the-long-walk-by-stephen-king",
       "slug": "the-long-walk-by-stephen-king",
       "sortTitle": "Long Walk",
       "grade": "D",
@@ -125,13 +135,14 @@
       "reviewYear": "2014",
       "authors": [
         {
+          "authorId": "stephen-king",
           "slug": "stephen-king",
           "notes": "as Richard Bachman",
           "name": "Stephen King",
           "sortName": "King, Stephen"
         }
       ],
-      "includedInSlugs": []
+      "includedInWorkIds": []
     },
     {
       "reviewSequence": 2,
@@ -142,6 +153,7 @@
       "authorSequence": 193,
       "titleSequence": 321,
       "kind": "Collection",
+      "workId": "night-shift-by-stephen-king",
       "slug": "night-shift-by-stephen-king",
       "sortTitle": "Night Shift",
       "grade": "B",
@@ -151,13 +163,14 @@
       "reviewYear": "2012",
       "authors": [
         {
+          "authorId": "stephen-king",
           "slug": "stephen-king",
           "notes": null,
           "name": "Stephen King",
           "sortName": "King, Stephen"
         }
       ],
-      "includedInSlugs": []
+      "includedInWorkIds": []
     },
     {
       "reviewSequence": 22,
@@ -168,6 +181,7 @@
       "authorSequence": 258,
       "titleSequence": 332,
       "kind": "Nonfiction",
+      "workId": "on-writing-by-stephen-king",
       "slug": "on-writing-by-stephen-king",
       "sortTitle": "On Writing",
       "grade": "A-",
@@ -177,13 +191,14 @@
       "reviewYear": "2022",
       "authors": [
         {
+          "authorId": "stephen-king",
           "slug": "stephen-king",
           "notes": null,
           "name": "Stephen King",
           "sortName": "King, Stephen"
         }
       ],
-      "includedInSlugs": []
+      "includedInWorkIds": []
     },
     {
       "reviewSequence": 1,
@@ -194,6 +209,7 @@
       "authorSequence": 185,
       "titleSequence": 365,
       "kind": "Novel",
+      "workId": "rage-by-stephen-king",
       "slug": "rage-by-stephen-king",
       "sortTitle": "Rage",
       "grade": "C",
@@ -203,13 +219,14 @@
       "reviewYear": "2012",
       "authors": [
         {
+          "authorId": "stephen-king",
           "slug": "stephen-king",
           "notes": "as Richard Bachman",
           "name": "Stephen King",
           "sortName": "King, Stephen"
         }
       ],
-      "includedInSlugs": []
+      "includedInWorkIds": []
     },
     {
       "reviewSequence": 66,
@@ -220,6 +237,7 @@
       "authorSequence": 189,
       "titleSequence": 403,
       "kind": "Novel",
+      "workId": "the-shining-by-stephen-king",
       "slug": "the-shining-by-stephen-king",
       "sortTitle": "Shining",
       "grade": "B",
@@ -229,13 +247,14 @@
       "reviewYear": "2022",
       "authors": [
         {
+          "authorId": "stephen-king",
           "slug": "stephen-king",
           "notes": null,
           "name": "Stephen King",
           "sortName": "King, Stephen"
         }
       ],
-      "includedInSlugs": []
+      "includedInWorkIds": []
     },
     {
       "reviewSequence": 8,
@@ -246,6 +265,7 @@
       "authorSequence": 196,
       "titleSequence": 422,
       "kind": "Novel",
+      "workId": "the-stand-by-stephen-king",
       "slug": "the-stand-by-stephen-king",
       "sortTitle": "Stand",
       "grade": "D",
@@ -255,13 +275,14 @@
       "reviewYear": "2014",
       "authors": [
         {
+          "authorId": "stephen-king",
           "slug": "stephen-king",
           "notes": null,
           "name": "Stephen King",
           "sortName": "King, Stephen"
         }
       ],
-      "includedInSlugs": []
+      "includedInWorkIds": []
     }
   ]
 }
