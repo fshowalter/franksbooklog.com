@@ -54,23 +54,22 @@
     </title>
   </head>
   <body
-    class="h-full w-full bg-canvas text-default has-[#nav:checked]:fixed has-[#nav:checked]:overflow-y-scroll data-search-modal-open:overflow-hidden data-search-modal-open:before:fixed data-search-modal-open:before:inset-0 data-search-modal-open:before:z-50 data-search-modal-open:before:backdrop-blur-xs"
+    class="h-full w-full bg-canvas text-default data-search-modal-open:overflow-hidden data-search-modal-open:before:fixed data-search-modal-open:before:inset-0 data-search-modal-open:before:z-search-backdrop data-search-modal-open:before:backdrop-blur-xs [&#38;.nav-open]:overflow-hidden"
   >
     <link
       rel="preload"
       as="image"
       imagesrcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;h=744&amp;q=80&amp;f=avif 2x"
     />
-    <div class="group/layout">
+    <div class="group">
       <a
-        class="absolute top-0.5 left-1/2 z-50 mx-auto [transform:translate(-50%,calc(-100%-2px))] bg-subtle px-6 py-2 text-center text-accent focus:[transform:translate(-50%,0%)]"
+        class="absolute top-0.5 left-1/2 z-skip-link mx-auto [transform:translate(-50%,calc(-100%-2px))] bg-subtle px-6 py-2 text-center text-accent focus:[transform:translate(-50%,0%)]"
         href="#content"
         >Skip to content</a
       >
       <div class="flex min-h-full w-full flex-col bg-default">
         <header
-          class="group/mast z-20 flex w-full items-center justify-between px-container py-4 tablet:p-6 laptop:inset-x-0 laptop:z-40 laptop:flex-row laptop:flex-wrap laptop:px-16 laptop:py-8 laptop:text-left"
-          style="color: var(--fg-default); position: static"
+          class="group z-30 flex w-full items-center justify-between px-container py-4 tablet:py-6 laptop:inset-x-0 laptop:z-40 laptop:flex-row laptop:flex-wrap laptop:px-16 laptop:py-8 laptop:text-left static [--mast-color:var(--fg-default)] text-(--mast-color)"
         >
           <div
             class="flex transform-gpu flex-col transition-transform has-[a:hover]:scale-105"
@@ -88,45 +87,64 @@
             <nav class="hidden w-full laptop:block laptop:w-auto">
               <ul class="flex flex-wrap justify-start gap-x-6 text-xl">
                 <li
-                  class="block transform-gpu tracking-serif-wide whitespace-nowrap transition-transform has-[a:hover]:scale-105"
+                  class="block leading-10 tracking-serif-wide whitespace-nowrap transition-transform [body.nav-open_&amp;]:opacity-0"
                 >
-                  <a class="text-inherit" href="/">Home</a>
+                  <a
+                    class="relative block text-inherit after:absolute after:bottom-1 after:left-0 after:h-px after:w-full after:origin-center after:scale-x-0 after:bg-(--mast-color)/75 after:transition-transform hover:after:scale-x-100"
+                    href="/"
+                    >Home</a
+                  >
                 </li>
                 <li
-                  class="block transform-gpu tracking-serif-wide whitespace-nowrap transition-transform has-[a:hover]:scale-105"
+                  class="block leading-10 tracking-serif-wide whitespace-nowrap transition-transform [body.nav-open_&amp;]:opacity-0"
                 >
-                  <a class="text-inherit" href="/how-i-grade/">How I Grade</a>
+                  <a
+                    class="relative block text-inherit after:absolute after:bottom-1 after:left-0 after:h-px after:w-full after:origin-center after:scale-x-0 after:bg-(--mast-color)/75 after:transition-transform hover:after:scale-x-100"
+                    href="/how-i-grade/"
+                    >How I Grade</a
+                  >
                 </li>
                 <li
-                  class="block transform-gpu tracking-serif-wide whitespace-nowrap transition-transform has-[a:hover]:scale-105"
+                  class="block leading-10 tracking-serif-wide whitespace-nowrap transition-transform [body.nav-open_&amp;]:opacity-0"
                 >
-                  <a class="text-inherit" href="/reviews/">Reviews</a>
+                  <a
+                    class="relative block text-inherit after:absolute after:bottom-1 after:left-0 after:h-px after:w-full after:origin-center after:scale-x-0 after:bg-(--mast-color)/75 after:transition-transform hover:after:scale-x-100"
+                    href="/reviews/"
+                    >Reviews</a
+                  >
                 </li>
                 <li
-                  class="block transform-gpu tracking-serif-wide whitespace-nowrap transition-transform has-[a:hover]:scale-105"
+                  class="block leading-10 tracking-serif-wide whitespace-nowrap transition-transform [body.nav-open_&amp;]:opacity-0"
                 >
-                  <a class="text-inherit" href="/authors/">Authors</a>
+                  <a
+                    class="relative block text-inherit after:absolute after:bottom-1 after:left-0 after:h-px after:w-full after:origin-center after:scale-x-0 after:bg-(--mast-color)/75 after:transition-transform hover:after:scale-x-100"
+                    href="/authors/"
+                    >Authors</a
+                  >
                 </li>
                 <li
-                  class="block transform-gpu tracking-serif-wide whitespace-nowrap transition-transform has-[a:hover]:scale-105"
+                  class="block leading-10 tracking-serif-wide whitespace-nowrap transition-transform [body.nav-open_&amp;]:opacity-0"
                 >
-                  <a class="text-inherit" href="/readings/">Reading Log</a>
+                  <a
+                    class="relative block text-inherit after:absolute after:bottom-1 after:left-0 after:h-px after:w-full after:origin-center after:scale-x-0 after:bg-(--mast-color)/75 after:transition-transform hover:after:scale-x-100"
+                    href="/readings/"
+                    >Reading Log</a
+                  >
                 </li>
               </ul>
             </nav>
-            <div
-              class="z-1000 transform-gpu transition-transform group-has-[#nav:checked]/mast:!text-[#fff] hover:scale-105"
-            >
+            <div class="z-1000 [body.nav-open_&amp;]:!text-[#fff]">
               <button
                 aria-keyshortcuts="Control+K"
                 aria-label="Search"
-                class="flex size-10 items-center justify-center overflow-hidden text-sm leading-6 ring-default laptop:ml-6"
+                class="flex size-10 transform-gpu cursor-pointer items-center justify-center overflow-hidden text-sm leading-6 ring-default transition-transform hover:scale-105 laptop:ml-6"
                 data-open-modal="true"
                 disabled=""
                 title="Search: Control+K"
                 type="button"
               >
                 <svg
+                  aria-hidden="true"
                   class="size-7"
                   fill="none"
                   stroke="currentColor"
@@ -142,81 +160,97 @@
                 </svg>
               </button>
             </div>
-            <div class="group">
-              <input class="hidden" id="nav" type="checkbox" /><label
-                class="relative z-40 ml-2 flex h-10 w-10 transform-gpu cursor-pointer items-center justify-center transition-transform hover:scale-110 laptop:hidden"
-                for="nav"
-                ><span
-                  class="relative block h-0.5 w-6 origin-center transition-[top,bottom,transform] duration-200 ease-in-out group-has-[#nav:checked]/mast:transform-[rotate(45deg)] group-has-[#nav:checked]/mast:!bg-[#fff] before:absolute before:-top-2 before:block before:h-0.5 before:w-6 before:bg-inherit before:transition before:duration-200 before:ease-in-out group-has-[#nav:checked]/mast:before:top-0 group-has-[#nav:checked]/mast:before:transform-[rotate(90deg)] after:absolute after:-bottom-2 after:block after:h-0.5 after:w-6 after:bg-inherit after:transition after:duration-200 after:ease-in-out group-has-[#nav:checked]/mast:after:bottom-0 group-has-[#nav:checked]/mast:after:transform-[rotate(90deg)]"
-                  style="background-color: var(--fg-default)"
-                ></span
-              ></label>
-              <ul
-                class="fixed top-0 right-0 z-20 flex h-full w-0 transform-[translateX(100%)] flex-col items-start gap-y-5 overflow-hidden bg-footer text-left text-inverse opacity-0 duration-200 ease-in-out group-has-[#nav:checked]/mast:bottom-0 group-has-[#nav:checked]/mast:z-20 group-has-[#nav:checked]/mast:h-full group-has-[#nav:checked]/mast:w-full group-has-[#nav:checked]/mast:transform-[translateX(0)] group-has-[#nav:checked]/mast:overflow-y-auto group-has-[#nav:checked]/mast:pt-20 group-has-[#nav:checked]/mast:pr-[16%] group-has-[#nav:checked]/mast:pb-5 group-has-[#nav:checked]/mast:pl-[12%] group-has-[#nav:checked]/mast:opacity-100 tablet:max-w-[35vw] group-has-[#nav:checked]/mast:tablet:px-10 group-has-[#nav:checked]/mast:tablet:py-40 laptop:hidden"
+            <div
+              class="invisible fixed inset-0 bg-[rgba(0,0,0,.4)] opacity-0 transition-opacity duration-200 [body.nav-open_&amp;]:tablet:visible [body.nav-open_&amp;]:tablet:z-nav-backdrop [body.nav-open_&amp;]:tablet:opacity-100"
+              data-nav-backdrop="true"
+            ></div>
+            <button
+              aria-controls="nav-menu"
+              aria-expanded="false"
+              aria-label="Toggle navigation menu"
+              class="relative z-40 ml-2 flex h-10 w-10 transform-gpu cursor-pointer items-center justify-center transition-transform hover:scale-110 laptop:hidden"
+              data-nav-toggle="true"
+              type="button"
+            >
+              <span
+                aria-hidden="true"
+                class="relative flex h-0.5 w-6 origin-center transform-gpu transition-[top,bottom,transform] duration-200 ease-in-out before:absolute before:-top-2 before:block before:h-0.5 before:w-6 before:bg-inherit before:transition before:duration-200 before:ease-in-out after:absolute after:-bottom-2 after:block after:h-0.5 after:w-6 after:bg-inherit after:transition after:duration-200 after:ease-in-out [body.nav-open_&amp;]:transform-[rotate(45deg)] [body.nav-open_&amp;]:!bg-[#fff] [body.nav-open_&amp;]:before:top-0 [body.nav-open_&amp;]:before:transform-[rotate(90deg)] [body.nav-open_&amp;]:after:bottom-0 [body.nav-open_&amp;]:after:transform-[rotate(90deg)]"
+                style="background-color: var(--fg-default)"
+              ></span>
+            </button>
+            <nav aria-label="Main navigation">
+              <ol
+                class="invisible fixed top-0 right-0 flex h-full w-0 transform-[translateX(100%)] flex-col items-start gap-y-5 overflow-hidden bg-footer text-left text-inverse opacity-0 duration-200 ease-in-out tablet:max-w-[35vw] tablet:gap-y-10 laptop:max-w-[25vw] [body.nav-open_&amp;]:visible [body.nav-open_&amp;]:bottom-0 [body.nav-open_&amp;]:z-nav-menu [body.nav-open_&amp;]:h-full [body.nav-open_&amp;]:w-full [body.nav-open_&amp;]:transform-[translateX(0)] [body.nav-open_&amp;]:overflow-y-auto [body.nav-open_&amp;]:pt-20 [body.nav-open_&amp;]:pr-[16%] [body.nav-open_&amp;]:pb-5 [body.nav-open_&amp;]:pl-[12%] [body.nav-open_&amp;]:opacity-100 [body.nav-open_&amp;]:drop-shadow-2xl [body.nav-open_&amp;]:tablet:px-10 [body.nav-open_&amp;]:tablet:pt-40 [body.nav-open_&amp;]:laptop:px-20"
+                data-nav-menu="true"
+                id="nav-menu"
               >
-                <li class="block w-1/2 text-2xl whitespace-nowrap">
+                <li
+                  class="block w-1/2 text-2xl whitespace-nowrap laptop:w-full"
+                >
                   <a
-                    class="inline-block origin-left transform-gpu transition-all hover:scale-105"
+                    class="relative inline-block origin-left transform-gpu transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-(--fg-inverse)/75 after:transition-transform hover:after:scale-x-100"
                     href="/"
                     >Home</a
                   >
                 </li>
-                <li class="block w-1/2 text-2xl whitespace-nowrap">
+                <li
+                  class="block w-1/2 text-2xl whitespace-nowrap laptop:w-full"
+                >
                   <a
-                    class="inline-block origin-left transform-gpu transition-all hover:scale-105"
+                    class="relative inline-block origin-left transform-gpu transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-(--fg-inverse)/75 after:transition-transform hover:after:scale-x-100"
                     href="/how-i-grade/"
                     >How I Grade</a
                   >
                 </li>
-                <li class="block w-1/2 text-2xl whitespace-nowrap">
+                <li
+                  class="block w-1/2 text-2xl whitespace-nowrap laptop:w-full"
+                >
                   <a
-                    class="inline-block origin-left transform-gpu transition-all hover:scale-105"
+                    class="relative inline-block origin-left transform-gpu transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-(--fg-inverse)/75 after:transition-transform hover:after:scale-x-100"
                     href="/reviews/"
                     >Reviews</a
                   >
                 </li>
-                <li class="block w-1/2 text-2xl whitespace-nowrap">
+                <li
+                  class="block w-1/2 text-2xl whitespace-nowrap laptop:w-full"
+                >
                   <a
-                    class="inline-block origin-left transform-gpu transition-all hover:scale-105"
+                    class="relative inline-block origin-left transform-gpu transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-(--fg-inverse)/75 after:transition-transform hover:after:scale-x-100"
                     href="/authors/"
                     >Authors</a
                   >
                 </li>
-                <li class="block w-1/2 text-2xl whitespace-nowrap">
+                <li
+                  class="block w-1/2 text-2xl whitespace-nowrap laptop:w-full"
+                >
                   <a
-                    class="inline-block origin-left transform-gpu transition-all hover:scale-105"
+                    class="relative inline-block origin-left transform-gpu transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-(--fg-inverse)/75 after:transition-transform hover:after:scale-x-100"
                     href="/readings/"
                     >Reading Log</a
                   >
                   <ol class="mt-4">
                     <li
-                      class="mb-4 ml-1 font-sans text-xs tracking-wider text-inverse-subtle uppercase last:mb-0"
+                      class="mb-3 ml-1 font-sans text-xs tracking-wider text-inverse-subtle uppercase last:-mb-1"
                     >
                       <a
-                        class="inline-block origin-left transform-gpu transition-all hover:scale-105 hover:text-inverse"
+                        class="relative inline-block origin-left transform-gpu pb-1 transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-(--fg-inverse)/75 after:transition-transform hover:text-inverse hover:after:scale-x-100"
                         href="/readings/stats/"
                         >Stats</a
                       >
                     </li>
                   </ol>
                 </li>
-              </ul>
-            </div>
+              </ol>
+            </nav>
           </div>
         </header>
-        <main
-          class="grow transition-[opacity] duration-200 ease-in-out group-has-[#nav:checked]/layout:opacity-80 flex flex-col"
-          id="content"
-          data-pagefind-body="true"
-        >
+        <main class="grow flex flex-col" id="content" data-pagefind-body="true">
           <header
             class="relative z-1 mb-12 flex flex-col items-center px-[8%] pt-10"
           >
-            <nav
-              class="transform-gpu pb-3 transition-transform has-[a:hover]:scale-110"
-            >
+            <nav class="transform-gpu pb-2 transition-transform">
               <a
-                class="font-sans text-xs tracking-wider uppercase transition-colors hover:text-accent"
+                class="relative inline-block pb-1 font-sans text-xs tracking-wider text-subtle uppercase transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-center after:scale-x-0 after:bg-(--fg-accent) after:transition-transform hover:text-accent hover:after:scale-x-100"
                 href="/reviews/"
                 >Reviews</a
               >
@@ -227,12 +261,10 @@
             >
               The Woods Are Dark
             </h1>
-            <div
-              class="mt-4 transform-gpu text-center text-md text-muted transition-transform has-[a:hover]:scale-105"
-            >
+            <div class="mt-4 text-center text-md text-muted">
               by<!-- -->
               <div
-                class="inline-block transform-gpu text-accent transition-transform"
+                class="relative inline-block transform-gpu text-accent transition-transform after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-center after:scale-x-0 after:bg-(--fg-accent) after:transition-transform hover:after:scale-x-100"
               >
                 <a href="/authors/richard-laymon/">Richard Laymon</a>
               </div>
@@ -252,7 +284,7 @@
             <div
               class="mt-5 mb-4 font-sans text-xs font-light tracking-wide text-subtle uppercase tablet:mb-6"
             >
-              <span class="tracking-wide">1981</span> |
+              <span class="tracking-wide">2000</span> |
               <!-- -->Novel
             </div>
             <div
@@ -436,17 +468,17 @@
                           ></span
                         >)</span
                       >
-                      <details class="font-light text-subtle">
-                        <summary
-                          class="origin-left transform-gpu cursor-pointer leading-6 transition-transform hover:scale-105"
-                        >
+                      <details
+                        class="rounded-sm bg-canvas px-2 font-light text-subtle open:pb-2"
+                      >
+                        <summary class="cursor-pointer leading-6">
                           Listened to over<!-- -->
-                          <span class="text-accent"
-                            >2<!-- -->
-                            Days</span
-                          >
+                          <!-- -->2<!-- -->
+                          Days
                         </summary>
-                        <ol class="grid w-full grid-cols-[auto_1fr_auto] pt-3">
+                        <ol
+                          class="grid w-full grid-cols-[auto_1fr_auto] bg-default px-2 py-3"
+                        >
                           <li
                             class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] py-1"
                           >
@@ -607,17 +639,17 @@
                           ></span
                         >)</span
                       >
-                      <details class="font-light text-subtle">
-                        <summary
-                          class="origin-left transform-gpu cursor-pointer leading-6 transition-transform hover:scale-105"
-                        >
+                      <details
+                        class="rounded-sm bg-canvas px-2 font-light text-subtle open:pb-2"
+                      >
+                        <summary class="cursor-pointer leading-6">
                           Read over<!-- -->
-                          <span class="text-accent"
-                            >5<!-- -->
-                            Days</span
-                          >
+                          <!-- -->5<!-- -->
+                          Days
                         </summary>
-                        <ol class="grid w-full grid-cols-[auto_1fr_auto] pt-3">
+                        <ol
+                          class="grid w-full grid-cols-[auto_1fr_auto] bg-default px-2 py-3"
+                        >
                           <li
                             class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] py-1"
                           >
@@ -748,11 +780,11 @@
             </div>
           </div>
           <div
-            class="flex w-full flex-col items-center gap-y-12 bg-subtle pt-16 pb-32 tablet:pt-8 desktop:gap-y-24"
+            class="flex w-full flex-col items-center gap-y-12 bg-subtle pt-16 pb-32 tablet:pt-8 laptop:gap-y-24"
             data-pagefind-ignore="true"
           >
             <nav
-              class="mx-auto w-full max-w-prose bg-subtle px-container tablet:px-0 min-[1208px]:max-w-(--breakpoint-desktop) min-[1208px]:px-container"
+              class="mx-auto w-full max-w-[894px] bg-subtle px-container min-[1080px]:max-w-(--breakpoint-desktop)"
               data-page-find-ignore="true"
             >
               <div>
@@ -760,531 +792,240 @@
                   class="py-10 font-sans text-xs font-semibold tracking-wide text-subtle uppercase"
                 >
                   <a
-                    class="relative inline-block transform-gpu transition-transform hover:scale-110"
+                    class="relative -mb-1 inline-block transform-gpu pb-1 transition-transform after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-right after:scale-x-0 after:bg-(--fg-accent) after:transition-transform hover:after:scale-x-100"
                     href="/reviews/"
                     >More <span class="text-accent">Reviews</span></a
                   >
                 </h2>
               </div>
-              <ul
-                class="-mx-4 grid auto-rows-[auto_1fr] grid-cols-2 flex-wrap gap-x-[clamp(8px,2vw,32px)] gap-y-[clamp(8px,2vw,32px)] tablet:mx-0 tablet:flex tablet:items-baseline tablet:gap-x-[var(--gap-x)] tablet:gap-y-4 tablet:[--column-count:3] tablet:[--gap-x:calc(var(--spacing)_*_10)] min-[1208px]:[--column-count:6] laptop:[--gap-x:calc(var(--spacing)_*_11)] desktop:gap-y-12 desktop:[--gap-x:calc(var(--spacing)_*_16)]"
-              >
-                <li
-                  class="group/list-item relative row-span-2 grid transform-gpu grid-rows-subgrid flex-col gap-y-0 bg-default transition-transform tablet:flex tablet:w-[calc((100%_-_var(--gaps-width))_/_var(--column-count))] tablet:bg-inherit tablet:[--gaps-width:var(--gap-x)_*_(var(--column-count)_-_1)]"
+              <div class="@container/cover-list mx-auto tablet:-mx-6">
+                <ol
+                  class="grid flex-wrap gap-x-8 gap-y-8 tablet-landscape:grid-cols-2"
                 >
-                  <div
-                    class="@container transform-gpu self-end transition-transform group-has-[a:hover]/list-item:-translate-y-2 group-has-[a:hover]/list-item:drop-shadow-2xl tablet:self-auto"
+                  <li
+                    class="group/list-item relative flex w-full transform-gpu gap-x-[5%] bg-default py-6 pr-8 pl-4 transition-transform tablet-landscape:has-[a:hover]:-translate-y-2 tablet-landscape:has-[a:hover]:drop-shadow-2xl"
                   >
                     <div
-                      class="flex justify-center px-3 pt-6 tablet:px-0 tablet:pt-0"
+                      class="relative w-1/4 max-w-[250px] shrink-0 self-start overflow-hidden rounded-sm shadow-all transition-transform after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
                     >
                       <div
-                        class="relative drop-shadow-md after:absolute after:inset-x-0 after:top-0 after:bottom-0 after:z-20 after:rounded-[2.5px] after:bg-default after:opacity-15 after:transition-opacity group-hover/list-item:after:opacity-0"
+                        class="relative after:absolute after:top-0 after:left-0 after:z-sticky after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%] after:mix-blend-multiply"
                       >
                         <div
-                          class="relative after:absolute after:top-0 after:left-0 after:z-20 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)] after:bg-size-[100%_100%] after:mix-blend-soft-light undefined"
+                          class="relative z-10 before:absolute before:top-0 before:left-0 before:z-10 before:block before:size-full before:rounded-[2.5px] before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%] after:absolute after:top-0 after:left-0 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)] after:bg-size-[100%_100%] after:mix-blend-soft-light"
                         >
-                          <div
-                            class="relative z-10 before:absolute before:top-0 before:left-0 before:z-10 before:block before:size-full before:rounded-[2.5px] before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%] after:absolute after:top-0 after:left-0 after:z-10 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%] after:mix-blend-multiply"
-                          >
-                            <img
-                              height="372"
-                              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftread-softly-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D796%26origFormat%3Dpng&amp;w=248&amp;h=395&amp;q=80&amp;f=avif"
-                              srcset="
-                                /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftread-softly-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D796%26origFormat%3Dpng&amp;w=62&amp;h=99&amp;q=80&amp;f=avif    62w,
-                                /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftread-softly-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D796%26origFormat%3Dpng&amp;w=124&amp;h=198&amp;q=80&amp;f=avif 124w,
-                                /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftread-softly-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D796%26origFormat%3Dpng&amp;w=248&amp;h=395&amp;q=80&amp;f=avif 248w,
-                                /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftread-softly-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D796%26origFormat%3Dpng&amp;w=496&amp;h=790&amp;q=80&amp;f=avif 496w
-                              "
-                              width="248"
-                              sizes="(min-width: 1800px) 218px, (min-width: 1280px) calc(11.8vw + 8px), (min-width: 820px) 216px, (min-width: 600px) calc(23.5vw + 28px), calc(41.43vw + 8px)"
-                              alt=""
-                              class="rounded-[2.5px] bg-default shadow-sm @min-[160px]:shadow-lg"
-                              decoding="async"
-                              loading="lazy"
-                            />
-                          </div>
+                          <img
+                            height="372"
+                            src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftread-softly-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D796%26origFormat%3Dpng&amp;w=248&amp;h=395&amp;q=80&amp;f=avif"
+                            srcset="
+                              /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftread-softly-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D796%26origFormat%3Dpng&amp;w=62&amp;h=99&amp;q=80&amp;f=avif    62w,
+                              /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftread-softly-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D796%26origFormat%3Dpng&amp;w=124&amp;h=198&amp;q=80&amp;f=avif 124w,
+                              /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftread-softly-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D796%26origFormat%3Dpng&amp;w=248&amp;h=395&amp;q=80&amp;f=avif 248w,
+                              /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftread-softly-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D796%26origFormat%3Dpng&amp;w=496&amp;h=790&amp;q=80&amp;f=avif 496w
+                            "
+                            width="248"
+                            alt=""
+                            sizes="(min-width: 1860px) 200px, (min-width: 1440px) calc(9.75vw + 21px), (min-width: 1280px) calc(16.43vw - 59px), (min-width: 1040px) calc(6.36vw + 120px), (min-width: 960px) 200px, (min-width: 780px) calc(11.25vw + 94px), (min-width: 620px) 200px, (min-width: 460px) calc(25.71vw + 46px), calc(42.14vw - 12px)"
+                            class="rounded-[2.5px] bg-default shadow-sm @min-[160px]:shadow-lg"
+                            decoding="async"
+                            loading="lazy"
+                          />
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="@container h-full self-start tablet:self-auto">
-                    <div
-                      class="flex h-full flex-col items-center px-3 pb-8 tablet:px-0 @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6 @min-[200px]:tablet:px-0"
-                    >
-                      <div
-                        class="flex h-full w-full max-w-[248px] flex-col px-1"
+                    <div class="flex flex-col gap-y-2">
+                      <a
+                        class="block text-2xl font-medium transition-colors after:absolute after:top-0 after:left-0 after:z-sticky after:size-full hover:text-accent hover:before:opacity-0"
+                        href="/reviews/tread-softly-by-richard-laymon/"
+                        >Tread Softly</a
                       >
-                        <div
-                          class="pt-4 text-base leading-5 font-medium @min-[225px]:text-md"
-                        >
-                          <a
-                            class="block after:absolute after:top-0 after:left-0 after:z-60 after:size-full after:opacity-0 hover:text-accent"
-                            href="/reviews/tread-softly-by-richard-laymon/"
-                            rel="canonical"
-                            >Tread Softly</a
-                          >
-                        </div>
-                        <p
-                          class="pt-1 font-sans text-xs leading-4 font-light text-subtle"
-                        >
-                          <span class="hidden @min-[225px]:inline"
-                            >by<!-- --> </span
-                          ><span
-                            >Richard Laymon<span class="text-subtle">
-                              (<!-- -->as Richard Kelly<!-- -->)</span
-                            ></span
-                          >
-                        </p>
+                      <div class="-mt-2"><span>Richard Laymon</span></div>
+                      <div
+                        class="font-sans text-xs leading-4 font-light tracking-prose text-subtle"
+                      >
+                        2000<!-- -->
+                        |
+                        <!-- -->Novel
+                      </div>
+                      <div>
                         <picture
                           ><source
                             media="(prefers-color-scheme: dark)"
                             srcset="/svg/3-stars-dark.svg" />
                           <img
                             alt="C: 3 stars (out of 5)"
-                            class="mt-2 h-3 w-15 @min-[225px]:mt-2 @min-[225px]:h-[14px] @min-[225px]:w-[70px]"
-                            height="18"
+                            class="py-1"
+                            height="24"
                             src="/svg/3-stars.svg"
-                            width="90"
+                            width="120"
                         /></picture>
-                        <div
-                          class="mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle tablet:pt-3 @min-[225px]:tracking-wide"
-                        >
-                          Novel<!-- -->
-                          |
-                          <!-- -->1987
-                        </div>
+                      </div>
+                      <div
+                        class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                      >
+                        <p>
+                          Two families go camping in the California mountains.
+                          They cross paths with a backwoods witch and her
+                          murderous son. They kill the son and escape but not
+                          before the old woman puts a curse on them. The
+                          families return home, eager to put the horrific trip
+                          behind them, but strange things start happening. Small
+                          things at first. One slips in the shower. Another gets
+                          cramps in both legs while swimming in the pool. But
+                          soon, the coincidences begin to pile up. People end up
+                          in the hospital. Or worse. Soon, the remaining
+                          unharmed members travel back to the mountains to deal
+                          with the witch and remove the curse.
+                        </p>
                       </div>
                     </div>
-                  </div>
-                </li>
-                <li
-                  class="group/list-item relative row-span-2 grid transform-gpu grid-rows-subgrid flex-col gap-y-0 bg-default transition-transform tablet:flex tablet:w-[calc((100%_-_var(--gaps-width))_/_var(--column-count))] tablet:bg-inherit tablet:[--gaps-width:var(--gap-x)_*_(var(--column-count)_-_1)]"
-                >
-                  <div
-                    class="@container transform-gpu self-end transition-transform group-has-[a:hover]/list-item:-translate-y-2 group-has-[a:hover]/list-item:drop-shadow-2xl tablet:self-auto"
+                  </li>
+                  <li
+                    class="group/list-item relative flex w-full transform-gpu gap-x-[5%] bg-default py-6 pr-8 pl-4 transition-transform tablet-landscape:has-[a:hover]:-translate-y-2 tablet-landscape:has-[a:hover]:drop-shadow-2xl"
                   >
                     <div
-                      class="flex justify-center px-3 pt-6 tablet:px-0 tablet:pt-0"
+                      class="relative w-1/4 max-w-[250px] shrink-0 self-start overflow-hidden rounded-sm shadow-all transition-transform after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
                     >
                       <div
-                        class="relative drop-shadow-md after:absolute after:inset-x-0 after:top-0 after:bottom-0 after:z-20 after:rounded-[2.5px] after:bg-default after:opacity-15 after:transition-opacity group-hover/list-item:after:opacity-0"
+                        class="relative after:absolute after:top-0 after:left-0 after:z-sticky after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%] after:mix-blend-multiply"
                       >
                         <div
-                          class="relative after:absolute after:top-0 after:left-0 after:z-20 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)] after:bg-size-[100%_100%] after:mix-blend-soft-light undefined"
+                          class="relative z-10 before:absolute before:top-0 before:left-0 before:z-10 before:block before:size-full before:rounded-[2.5px] before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%] after:absolute after:top-0 after:left-0 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)] after:bg-size-[100%_100%] after:mix-blend-soft-light"
                         >
-                          <div
-                            class="relative z-10 before:absolute before:top-0 before:left-0 before:z-10 before:block before:size-full before:rounded-[2.5px] before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%] after:absolute after:top-0 after:left-0 after:z-10 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%] after:mix-blend-multiply"
-                          >
-                            <img
-                              height="372"
-                              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftrue-myths-by-nigel-andrews.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
-                              srcset="
-                                /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftrue-myths-by-nigel-andrews.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;h=93&amp;q=80&amp;f=avif    62w,
-                                /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftrue-myths-by-nigel-andrews.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;h=186&amp;q=80&amp;f=avif 124w,
-                                /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftrue-myths-by-nigel-andrews.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif 248w,
-                                /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftrue-myths-by-nigel-andrews.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;h=744&amp;q=80&amp;f=avif 496w
-                              "
-                              width="248"
-                              sizes="(min-width: 1800px) 218px, (min-width: 1280px) calc(11.8vw + 8px), (min-width: 820px) 216px, (min-width: 600px) calc(23.5vw + 28px), calc(41.43vw + 8px)"
-                              alt=""
-                              class="rounded-[2.5px] bg-default shadow-sm @min-[160px]:shadow-lg"
-                              decoding="async"
-                              loading="lazy"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="@container h-full self-start tablet:self-auto">
-                    <div
-                      class="flex h-full flex-col items-center px-3 pb-8 tablet:px-0 @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6 @min-[200px]:tablet:px-0"
-                    >
-                      <div
-                        class="flex h-full w-full max-w-[248px] flex-col px-1"
-                      >
-                        <div
-                          class="pt-4 text-base leading-5 font-medium @min-[225px]:text-md"
-                        >
-                          <a
-                            class="block after:absolute after:top-0 after:left-0 after:z-60 after:size-full after:opacity-0 hover:text-accent"
-                            href="/reviews/true-myths-by-nigel-andrews/"
-                            rel="canonical"
-                            >True Myths</a
-                          >
-                        </div>
-                        <p
-                          class="pt-1 font-sans text-xs leading-4 font-light text-subtle"
-                        >
-                          <span class="hidden @min-[225px]:inline"
-                            >by<!-- --> </span
-                          ><span>Nigel Andrews</span>
-                        </p>
-                        <picture
-                          ><source
-                            media="(prefers-color-scheme: dark)"
-                            srcset="/svg/2-stars-dark.svg" />
                           <img
-                            alt="D+: 2 stars (out of 5)"
-                            class="mt-2 h-3 w-15 @min-[225px]:mt-2 @min-[225px]:h-[14px] @min-[225px]:w-[70px]"
-                            height="18"
-                            src="/svg/2-stars.svg"
-                            width="90"
-                        /></picture>
-                        <div
-                          class="mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle tablet:pt-3 @min-[225px]:tracking-wide"
-                        >
-                          Nonfiction<!-- -->
-                          |
-                          <!-- -->1996
+                            height="372"
+                            src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsalems-lot-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
+                            srcset="
+                              /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsalems-lot-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;h=93&amp;q=80&amp;f=avif    62w,
+                              /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsalems-lot-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;h=186&amp;q=80&amp;f=avif 124w,
+                              /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsalems-lot-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif 248w,
+                              /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsalems-lot-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;h=744&amp;q=80&amp;f=avif 496w
+                            "
+                            width="248"
+                            alt=""
+                            sizes="(min-width: 1860px) 200px, (min-width: 1440px) calc(9.75vw + 21px), (min-width: 1280px) calc(16.43vw - 59px), (min-width: 1040px) calc(6.36vw + 120px), (min-width: 960px) 200px, (min-width: 780px) calc(11.25vw + 94px), (min-width: 620px) 200px, (min-width: 460px) calc(25.71vw + 46px), calc(42.14vw - 12px)"
+                            class="rounded-[2.5px] bg-default shadow-sm @min-[160px]:shadow-lg"
+                            decoding="async"
+                            loading="lazy"
+                          />
                         </div>
                       </div>
                     </div>
-                  </div>
-                </li>
-                <li
-                  class="group/list-item relative row-span-2 grid transform-gpu grid-rows-subgrid flex-col gap-y-0 bg-default transition-transform tablet:flex tablet:w-[calc((100%_-_var(--gaps-width))_/_var(--column-count))] tablet:bg-inherit tablet:[--gaps-width:var(--gap-x)_*_(var(--column-count)_-_1)]"
-                >
-                  <div
-                    class="@container transform-gpu self-end transition-transform group-has-[a:hover]/list-item:-translate-y-2 group-has-[a:hover]/list-item:drop-shadow-2xl tablet:self-auto"
-                  >
-                    <div
-                      class="flex justify-center px-3 pt-6 tablet:px-0 tablet:pt-0"
-                    >
-                      <div
-                        class="relative drop-shadow-md after:absolute after:inset-x-0 after:top-0 after:bottom-0 after:z-20 after:rounded-[2.5px] after:bg-default after:opacity-15 after:transition-opacity group-hover/list-item:after:opacity-0"
+                    <div class="flex flex-col gap-y-2">
+                      <a
+                        class="block text-2xl font-medium transition-colors after:absolute after:top-0 after:left-0 after:z-sticky after:size-full hover:text-accent hover:before:opacity-0"
+                        href="/reviews/salems-lot-by-stephen-king/"
+                        >&#x27;Salem&#x27;s Lot</a
                       >
-                        <div
-                          class="relative after:absolute after:top-0 after:left-0 after:z-20 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)] after:bg-size-[100%_100%] after:mix-blend-soft-light undefined"
-                        >
-                          <div
-                            class="relative z-10 before:absolute before:top-0 before:left-0 before:z-10 before:block before:size-full before:rounded-[2.5px] before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%] after:absolute after:top-0 after:left-0 after:z-10 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%] after:mix-blend-multiply"
-                          >
-                            <img
-                              height="372"
-                              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fwhat-doesnt-kill-us-by-scott-carney.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
-                              srcset="
-                                /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fwhat-doesnt-kill-us-by-scott-carney.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;h=93&amp;q=80&amp;f=avif    62w,
-                                /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fwhat-doesnt-kill-us-by-scott-carney.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;h=186&amp;q=80&amp;f=avif 124w,
-                                /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fwhat-doesnt-kill-us-by-scott-carney.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif 248w,
-                                /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fwhat-doesnt-kill-us-by-scott-carney.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;h=744&amp;q=80&amp;f=avif 496w
-                              "
-                              width="248"
-                              sizes="(min-width: 1800px) 218px, (min-width: 1280px) calc(11.8vw + 8px), (min-width: 820px) 216px, (min-width: 600px) calc(23.5vw + 28px), calc(41.43vw + 8px)"
-                              alt=""
-                              class="rounded-[2.5px] bg-default shadow-sm @min-[160px]:shadow-lg"
-                              decoding="async"
-                              loading="lazy"
-                            />
-                          </div>
-                        </div>
+                      <div class="-mt-2"><span>Stephen King</span></div>
+                      <div
+                        class="font-sans text-xs leading-4 font-light tracking-prose text-subtle"
+                      >
+                        2000<!-- -->
+                        |
+                        <!-- -->Novel
                       </div>
-                    </div>
-                  </div>
-                  <div class="@container h-full self-start tablet:self-auto">
-                    <div
-                      class="flex h-full flex-col items-center px-3 pb-8 tablet:px-0 @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6 @min-[200px]:tablet:px-0"
-                    >
-                      <div
-                        class="flex h-full w-full max-w-[248px] flex-col px-1"
-                      >
-                        <div
-                          class="pt-4 text-base leading-5 font-medium @min-[225px]:text-md"
-                        >
-                          <a
-                            class="block after:absolute after:top-0 after:left-0 after:z-60 after:size-full after:opacity-0 hover:text-accent"
-                            href="/reviews/what-doesnt-kill-us-by-scott-carney/"
-                            rel="canonical"
-                            >What Doesn&#x27;t Kill Us</a
-                          >
-                        </div>
-                        <p
-                          class="pt-1 font-sans text-xs leading-4 font-light text-subtle"
-                        >
-                          <span class="hidden @min-[225px]:inline"
-                            >by<!-- --> </span
-                          ><span>Scott Carney</span>
-                        </p>
-                        <picture
-                          ><source
-                            media="(prefers-color-scheme: dark)"
-                            srcset="/svg/3-stars-dark.svg" />
-                          <img
-                            alt="C+: 3 stars (out of 5)"
-                            class="mt-2 h-3 w-15 @min-[225px]:mt-2 @min-[225px]:h-[14px] @min-[225px]:w-[70px]"
-                            height="18"
-                            src="/svg/3-stars.svg"
-                            width="90"
-                        /></picture>
-                        <div
-                          class="mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle tablet:pt-3 @min-[225px]:tracking-wide"
-                        >
-                          Nonfiction<!-- -->
-                          |
-                          <!-- -->2017
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li
-                  class="group/list-item relative row-span-2 grid transform-gpu grid-rows-subgrid flex-col gap-y-0 bg-default transition-transform tablet:flex tablet:w-[calc((100%_-_var(--gaps-width))_/_var(--column-count))] tablet:bg-inherit tablet:[--gaps-width:var(--gap-x)_*_(var(--column-count)_-_1)]"
-                >
-                  <div
-                    class="@container transform-gpu self-end transition-transform group-has-[a:hover]/list-item:-translate-y-2 group-has-[a:hover]/list-item:drop-shadow-2xl tablet:self-auto"
-                  >
-                    <div
-                      class="flex justify-center px-3 pt-6 tablet:px-0 tablet:pt-0"
-                    >
-                      <div
-                        class="relative drop-shadow-md after:absolute after:inset-x-0 after:top-0 after:bottom-0 after:z-20 after:rounded-[2.5px] after:bg-default after:opacity-15 after:transition-opacity group-hover/list-item:after:opacity-0"
-                      >
-                        <div
-                          class="relative after:absolute after:top-0 after:left-0 after:z-20 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)] after:bg-size-[100%_100%] after:mix-blend-soft-light undefined"
-                        >
-                          <div
-                            class="relative z-10 before:absolute before:top-0 before:left-0 before:z-10 before:block before:size-full before:rounded-[2.5px] before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%] after:absolute after:top-0 after:left-0 after:z-10 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%] after:mix-blend-multiply"
-                          >
-                            <img
-                              height="372"
-                              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsalems-lot-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
-                              srcset="
-                                /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsalems-lot-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;h=93&amp;q=80&amp;f=avif    62w,
-                                /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsalems-lot-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;h=186&amp;q=80&amp;f=avif 124w,
-                                /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsalems-lot-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif 248w,
-                                /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fsalems-lot-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;h=744&amp;q=80&amp;f=avif 496w
-                              "
-                              width="248"
-                              sizes="(min-width: 1800px) 218px, (min-width: 1280px) calc(11.8vw + 8px), (min-width: 820px) 216px, (min-width: 600px) calc(23.5vw + 28px), calc(41.43vw + 8px)"
-                              alt=""
-                              class="rounded-[2.5px] bg-default shadow-sm @min-[160px]:shadow-lg"
-                              decoding="async"
-                              loading="lazy"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="@container h-full self-start tablet:self-auto">
-                    <div
-                      class="flex h-full flex-col items-center px-3 pb-8 tablet:px-0 @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6 @min-[200px]:tablet:px-0"
-                    >
-                      <div
-                        class="flex h-full w-full max-w-[248px] flex-col px-1"
-                      >
-                        <div
-                          class="pt-4 text-base leading-5 font-medium @min-[225px]:text-md"
-                        >
-                          <a
-                            class="block after:absolute after:top-0 after:left-0 after:z-60 after:size-full after:opacity-0 hover:text-accent"
-                            href="/reviews/salems-lot-by-stephen-king/"
-                            rel="canonical"
-                            >&#x27;Salem&#x27;s Lot</a
-                          >
-                        </div>
-                        <p
-                          class="pt-1 font-sans text-xs leading-4 font-light text-subtle"
-                        >
-                          <span class="hidden @min-[225px]:inline"
-                            >by<!-- --> </span
-                          ><span>Stephen King</span>
-                        </p>
+                      <div>
                         <picture
                           ><source
                             media="(prefers-color-scheme: dark)"
                             srcset="/svg/4-stars-dark.svg" />
                           <img
                             alt="B: 4 stars (out of 5)"
-                            class="mt-2 h-3 w-15 @min-[225px]:mt-2 @min-[225px]:h-[14px] @min-[225px]:w-[70px]"
-                            height="18"
+                            class="py-1"
+                            height="24"
                             src="/svg/4-stars.svg"
-                            width="90"
+                            width="120"
                         /></picture>
-                        <div
-                          class="mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle tablet:pt-3 @min-[225px]:tracking-wide"
-                        >
-                          Novel<!-- -->
-                          |
-                          <!-- -->1975
-                        </div>
+                      </div>
+                      <div
+                        class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                      >
+                        <p>
+                          <strong>Stephen King’s sophomore novel</strong>
+                          transplants
+                          <span data-work-slug="dracula-by-bram-stoker"
+                            ><em>the Dracula story</em></span
+                          >
+                          to a remote New England town named Jerusalem’s
+                          Lot—`Salem’s Lot to the locals.
+                        </p>
                       </div>
                     </div>
-                  </div>
-                </li>
-                <li
-                  class="group/list-item relative row-span-2 grid transform-gpu grid-rows-subgrid flex-col gap-y-0 bg-default transition-transform tablet:flex tablet:w-[calc((100%_-_var(--gaps-width))_/_var(--column-count))] tablet:bg-inherit tablet:[--gaps-width:var(--gap-x)_*_(var(--column-count)_-_1)]"
-                >
-                  <div
-                    class="@container transform-gpu self-end transition-transform group-has-[a:hover]/list-item:-translate-y-2 group-has-[a:hover]/list-item:drop-shadow-2xl tablet:self-auto"
+                  </li>
+                  <li
+                    class="group/list-item relative flex w-full transform-gpu gap-x-[5%] bg-default py-6 pr-8 pl-4 transition-transform tablet-landscape:has-[a:hover]:-translate-y-2 tablet-landscape:has-[a:hover]:drop-shadow-2xl"
                   >
                     <div
-                      class="flex justify-center px-3 pt-6 tablet:px-0 tablet:pt-0"
+                      class="relative w-1/4 max-w-[250px] shrink-0 self-start overflow-hidden rounded-sm shadow-all transition-transform after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
                     >
                       <div
-                        class="relative drop-shadow-md after:absolute after:inset-x-0 after:top-0 after:bottom-0 after:z-20 after:rounded-[2.5px] after:bg-default after:opacity-15 after:transition-opacity group-hover/list-item:after:opacity-0"
+                        class="relative after:absolute after:top-0 after:left-0 after:z-sticky after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%] after:mix-blend-multiply"
                       >
                         <div
-                          class="relative after:absolute after:top-0 after:left-0 after:z-20 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)] after:bg-size-[100%_100%] after:mix-blend-soft-light undefined"
+                          class="relative z-10 before:absolute before:top-0 before:left-0 before:z-10 before:block before:size-full before:rounded-[2.5px] before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%] after:absolute after:top-0 after:left-0 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)] after:bg-size-[100%_100%] after:mix-blend-soft-light"
                         >
-                          <div
-                            class="relative z-10 before:absolute before:top-0 before:left-0 before:z-10 before:block before:size-full before:rounded-[2.5px] before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%] after:absolute after:top-0 after:left-0 after:z-10 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%] after:mix-blend-multiply"
-                          >
-                            <img
-                              height="372"
-                              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-48-laws-of-power-by-robert-greene.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
-                              srcset="
-                                /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-48-laws-of-power-by-robert-greene.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;h=93&amp;q=80&amp;f=avif    62w,
-                                /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-48-laws-of-power-by-robert-greene.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;h=186&amp;q=80&amp;f=avif 124w,
-                                /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-48-laws-of-power-by-robert-greene.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif 248w,
-                                /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-48-laws-of-power-by-robert-greene.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;h=744&amp;q=80&amp;f=avif 496w
-                              "
-                              width="248"
-                              sizes="(min-width: 1800px) 218px, (min-width: 1280px) calc(11.8vw + 8px), (min-width: 820px) 216px, (min-width: 600px) calc(23.5vw + 28px), calc(41.43vw + 8px)"
-                              alt=""
-                              class="rounded-[2.5px] bg-default shadow-sm @min-[160px]:shadow-lg"
-                              decoding="async"
-                              loading="lazy"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="@container h-full self-start tablet:self-auto">
-                    <div
-                      class="flex h-full flex-col items-center px-3 pb-8 tablet:px-0 @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6 @min-[200px]:tablet:px-0"
-                    >
-                      <div
-                        class="flex h-full w-full max-w-[248px] flex-col px-1"
-                      >
-                        <div
-                          class="pt-4 text-base leading-5 font-medium @min-[225px]:text-md"
-                        >
-                          <a
-                            class="block after:absolute after:top-0 after:left-0 after:z-60 after:size-full after:opacity-0 hover:text-accent"
-                            href="/reviews/the-48-laws-of-power-by-robert-greene/"
-                            rel="canonical"
-                            >The 48 Laws of Power</a
-                          >
-                        </div>
-                        <p
-                          class="pt-1 font-sans text-xs leading-4 font-light text-subtle"
-                        >
-                          <span class="hidden @min-[225px]:inline"
-                            >by<!-- --> </span
-                          ><span>Robert Greene</span>
-                        </p>
-                        <picture
-                          ><source
-                            media="(prefers-color-scheme: dark)"
-                            srcset="/svg/2-stars-dark.svg" />
                           <img
-                            alt="D+: 2 stars (out of 5)"
-                            class="mt-2 h-3 w-15 @min-[225px]:mt-2 @min-[225px]:h-[14px] @min-[225px]:w-[70px]"
-                            height="18"
-                            src="/svg/2-stars.svg"
-                            width="90"
-                        /></picture>
-                        <div
-                          class="mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle tablet:pt-3 @min-[225px]:tracking-wide"
-                        >
-                          Nonfiction<!-- -->
-                          |
-                          <!-- -->1998
+                            height="372"
+                            src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fabout-face-by-david-h-hackworth-julie-sherman.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
+                            srcset="
+                              /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fabout-face-by-david-h-hackworth-julie-sherman.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;h=93&amp;q=80&amp;f=avif    62w,
+                              /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fabout-face-by-david-h-hackworth-julie-sherman.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;h=186&amp;q=80&amp;f=avif 124w,
+                              /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fabout-face-by-david-h-hackworth-julie-sherman.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif 248w,
+                              /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fabout-face-by-david-h-hackworth-julie-sherman.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;h=744&amp;q=80&amp;f=avif 496w
+                            "
+                            width="248"
+                            alt=""
+                            sizes="(min-width: 1860px) 200px, (min-width: 1440px) calc(9.75vw + 21px), (min-width: 1280px) calc(16.43vw - 59px), (min-width: 1040px) calc(6.36vw + 120px), (min-width: 960px) 200px, (min-width: 780px) calc(11.25vw + 94px), (min-width: 620px) 200px, (min-width: 460px) calc(25.71vw + 46px), calc(42.14vw - 12px)"
+                            class="rounded-[2.5px] bg-default shadow-sm @min-[160px]:shadow-lg"
+                            decoding="async"
+                            loading="lazy"
+                          />
                         </div>
                       </div>
                     </div>
-                  </div>
-                </li>
-                <li
-                  class="group/list-item relative row-span-2 grid transform-gpu grid-rows-subgrid flex-col gap-y-0 bg-default transition-transform tablet:flex tablet:w-[calc((100%_-_var(--gaps-width))_/_var(--column-count))] tablet:bg-inherit tablet:[--gaps-width:var(--gap-x)_*_(var(--column-count)_-_1)]"
-                >
-                  <div
-                    class="@container transform-gpu self-end transition-transform group-has-[a:hover]/list-item:-translate-y-2 group-has-[a:hover]/list-item:drop-shadow-2xl tablet:self-auto"
-                  >
-                    <div
-                      class="flex justify-center px-3 pt-6 tablet:px-0 tablet:pt-0"
-                    >
-                      <div
-                        class="relative drop-shadow-md after:absolute after:inset-x-0 after:top-0 after:bottom-0 after:z-20 after:rounded-[2.5px] after:bg-default after:opacity-15 after:transition-opacity group-hover/list-item:after:opacity-0"
+                    <div class="flex flex-col gap-y-2">
+                      <a
+                        class="block text-2xl font-medium transition-colors after:absolute after:top-0 after:left-0 after:z-sticky after:size-full hover:text-accent hover:before:opacity-0"
+                        href="/reviews/about-face-by-david-h-hackworth-julie-sherman/"
+                        >About Face</a
                       >
-                        <div
-                          class="relative after:absolute after:top-0 after:left-0 after:z-20 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)] after:bg-size-[100%_100%] after:mix-blend-soft-light undefined"
-                        >
-                          <div
-                            class="relative z-10 before:absolute before:top-0 before:left-0 before:z-10 before:block before:size-full before:rounded-[2.5px] before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%] after:absolute after:top-0 after:left-0 after:z-10 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%] after:mix-blend-multiply"
-                          >
-                            <img
-                              height="372"
-                              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fabout-face-by-david-h-hackworth-julie-sherman.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
-                              srcset="
-                                /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fabout-face-by-david-h-hackworth-julie-sherman.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;h=93&amp;q=80&amp;f=avif    62w,
-                                /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fabout-face-by-david-h-hackworth-julie-sherman.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;h=186&amp;q=80&amp;f=avif 124w,
-                                /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fabout-face-by-david-h-hackworth-julie-sherman.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif 248w,
-                                /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fabout-face-by-david-h-hackworth-julie-sherman.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;h=744&amp;q=80&amp;f=avif 496w
-                              "
-                              width="248"
-                              sizes="(min-width: 1800px) 218px, (min-width: 1280px) calc(11.8vw + 8px), (min-width: 820px) 216px, (min-width: 600px) calc(23.5vw + 28px), calc(41.43vw + 8px)"
-                              alt=""
-                              class="rounded-[2.5px] bg-default shadow-sm @min-[160px]:shadow-lg"
-                              decoding="async"
-                              loading="lazy"
-                            />
-                          </div>
-                        </div>
+                      <div class="-mt-2">
+                        <span>David H. Hackworth</span> and
+                        <span>Julie Sherman</span>
                       </div>
-                    </div>
-                  </div>
-                  <div class="@container h-full self-start tablet:self-auto">
-                    <div
-                      class="flex h-full flex-col items-center px-3 pb-8 tablet:px-0 @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6 @min-[200px]:tablet:px-0"
-                    >
                       <div
-                        class="flex h-full w-full max-w-[248px] flex-col px-1"
+                        class="font-sans text-xs leading-4 font-light tracking-prose text-subtle"
                       >
-                        <div
-                          class="pt-4 text-base leading-5 font-medium @min-[225px]:text-md"
-                        >
-                          <a
-                            class="block after:absolute after:top-0 after:left-0 after:z-60 after:size-full after:opacity-0 hover:text-accent"
-                            href="/reviews/about-face-by-david-h-hackworth-julie-sherman/"
-                            rel="canonical"
-                            >About Face</a
-                          >
-                        </div>
-                        <p
-                          class="pt-1 font-sans text-xs leading-4 font-light text-subtle"
-                        >
-                          <span class="hidden @min-[225px]:inline"
-                            >by<!-- --> </span
-                          ><span>David H. Hackworth</span> and
-                          <span>Julie Sherman</span>
-                        </p>
+                        2000<!-- -->
+                        |
+                        <!-- -->Nonfiction
+                      </div>
+                      <div>
                         <picture
                           ><source
                             media="(prefers-color-scheme: dark)"
                             srcset="/svg/4-half-stars-dark.svg" />
                           <img
                             alt="A-: 4.5 stars (out of 5)"
-                            class="mt-2 h-3 w-15 @min-[225px]:mt-2 @min-[225px]:h-[14px] @min-[225px]:w-[70px]"
-                            height="18"
+                            class="py-1"
+                            height="24"
                             src="/svg/4-half-stars.svg"
-                            width="90"
+                            width="120"
                         /></picture>
-                        <div
-                          class="mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle tablet:pt-3 @min-[225px]:tracking-wide"
-                        >
-                          Nonfiction<!-- -->
-                          |
-                          <!-- -->1989
-                        </div>
+                      </div>
+                      <div
+                        class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                      >
+                        <p>
+                          A candid and rollicking memoir by a flawed man but
+                          gifted leader.
+                        </p>
                       </div>
                     </div>
-                  </div>
-                </li>
-              </ul>
+                  </li>
+                </ol>
+              </div>
             </nav>
           </div>
           <script type="application/ld+json">
@@ -1307,7 +1048,7 @@
               class="flex w-full flex-col tablet:flex-row-reverse tablet:justify-between"
             >
               <a
-                class="mx-auto mb-8 w-full max-w-button transform-gpu bg-footer py-5 text-center font-sans text-xs tracking-wide text-inverse uppercase transition-all hover:scale-105 hover:bg-subtle hover:text-default tablet:mx-0"
+                class="mx-auto mb-8 w-full max-w-button transform-gpu rounded-md bg-footer py-5 text-center font-sans text-xs tracking-wide text-inverse uppercase transition-all hover:scale-105 hover:bg-subtle hover:text-default tablet:mx-0"
                 href="#top"
                 >To the top</a
               >
@@ -1392,54 +1133,64 @@
               <div
                 class="flex w-full max-w-button grow flex-col gap-20 pt-10 pb-20 tablet:basis-button tablet:pr-10"
               >
-                <ul class="flex w-full flex-col gap-y-10 desktop:w-auto">
-                  <li class="block w-1/2 text-2xl whitespace-nowrap">
+                <ol class="flex w-full flex-col gap-y-10 desktop:w-auto">
+                  <li
+                    class="block w-1/2 text-2xl whitespace-nowrap laptop:w-full"
+                  >
                     <a
-                      class="block origin-left transform-gpu transition-all hover:scale-105"
+                      class="relative inline-block origin-left transform-gpu transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-(--fg-inverse)/75 after:transition-transform hover:after:scale-x-100"
                       href="/"
                       >Home</a
                     >
                   </li>
-                  <li class="block w-1/2 text-2xl whitespace-nowrap">
+                  <li
+                    class="block w-1/2 text-2xl whitespace-nowrap laptop:w-full"
+                  >
                     <a
-                      class="block origin-left transform-gpu transition-all hover:scale-105"
+                      class="relative inline-block origin-left transform-gpu transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-(--fg-inverse)/75 after:transition-transform hover:after:scale-x-100"
                       href="/how-i-grade/"
                       >How I Grade</a
                     >
                   </li>
-                  <li class="block w-1/2 text-2xl whitespace-nowrap">
+                  <li
+                    class="block w-1/2 text-2xl whitespace-nowrap laptop:w-full"
+                  >
                     <a
-                      class="block origin-left transform-gpu transition-all hover:scale-105"
+                      class="relative inline-block origin-left transform-gpu transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-(--fg-inverse)/75 after:transition-transform hover:after:scale-x-100"
                       href="/reviews/"
                       >Reviews</a
                     >
                   </li>
-                  <li class="block w-1/2 text-2xl whitespace-nowrap">
+                  <li
+                    class="block w-1/2 text-2xl whitespace-nowrap laptop:w-full"
+                  >
                     <a
-                      class="block origin-left transform-gpu transition-all hover:scale-105"
+                      class="relative inline-block origin-left transform-gpu transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-(--fg-inverse)/75 after:transition-transform hover:after:scale-x-100"
                       href="/authors/"
                       >Authors</a
                     >
                   </li>
-                  <li class="block w-1/2 text-2xl whitespace-nowrap">
+                  <li
+                    class="block w-1/2 text-2xl whitespace-nowrap laptop:w-full"
+                  >
                     <a
-                      class="block origin-left transform-gpu transition-all hover:scale-105"
+                      class="relative inline-block origin-left transform-gpu transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-(--fg-inverse)/75 after:transition-transform hover:after:scale-x-100"
                       href="/readings/"
                       >Reading Log</a
                     >
                     <ol class="mt-4">
                       <li
-                        class="mb-4 ml-1 font-sans text-xs tracking-wide text-subtle uppercase last:mb-0"
+                        class="mb-3 ml-1 font-sans text-xs tracking-wider text-inverse-subtle uppercase last:-mb-1"
                       >
                         <a
-                          class="block origin-left transform-gpu transition-all hover:scale-105 hover:text-default"
+                          class="relative inline-block origin-left transform-gpu pb-1 transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-(--fg-inverse)/75 after:transition-transform hover:text-inverse hover:after:scale-x-100"
                           href="/readings/stats/"
                           >Stats</a
                         >
                       </li>
                     </ol>
                   </li>
-                </ul>
+                </ol>
               </div>
             </div>
           </div>
@@ -1460,11 +1211,11 @@
     </div>
     <dialog
       aria-label="Search"
-      class="fixed inset-x-4 m-auto h-screen w-full rounded-lg border border-default bg-default shadow-lg backdrop:bg-[#000] backdrop:opacity-40 open:flex open:flex-col tablet:mx-auto tablet:mt-16 tablet:h-min tablet:max-h-[min(100vh-128px,900px)] tablet:max-w-[min(100vw-64px,36rem)] tablet:rounded-xl desktop:min-h-0"
+      class="fixed inset-x-4 m-auto h-screen w-full rounded-lg border border-default bg-default shadow-lg backdrop:bg-[#000] backdrop:opacity-40 open:flex open:flex-col tablet:mx-auto tablet:mt-16 tablet:h-min tablet:max-h-[min(100vh-128px,900px)] tablet:max-w-[min(100vw-64px,36rem)] tablet:rounded-xl"
     >
       <div class="contents" data-dialog-frame>
         <button
-          class="absolute right-4 z-10 mt-5 h-6 cursor-pointer border-none bg-subtle px-2 font-mono text-xs font-light text-muted hover:bg-inverse hover:text-inverse focus:outline-accent tablet:right-6 laptop:right-8"
+          class="absolute right-4 z-sticky mt-5 h-6 cursor-pointer border-none bg-subtle px-2 font-mono text-xs font-light text-muted hover:bg-inverse hover:text-inverse focus:outline-accent tablet:right-6 laptop:right-8"
           data-close-modal
         >
           ESC
@@ -1575,6 +1326,10 @@
     <script
       type="module"
       src="/src/layouts/Layout.astro?astro&type=script&index=0&lang.ts"
+    ></script>
+    <script
+      type="module"
+      src="/Users/frank/Developer/franksbooklog.com/src/layouts/Layout.astro?astro&type=script&index=1&lang.ts"
     ></script>
   </body>
 </html>

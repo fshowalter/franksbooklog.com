@@ -34,7 +34,7 @@
     <title>Authors - Frank&#39;s Book Log</title>
   </head>
   <body
-    class="h-full w-full bg-canvas text-default has-[#nav:checked]:fixed has-[#nav:checked]:overflow-y-scroll data-search-modal-open:overflow-hidden data-search-modal-open:before:fixed data-search-modal-open:before:inset-0 data-search-modal-open:before:z-50 data-search-modal-open:before:backdrop-blur-xs"
+    class="h-full w-full bg-canvas text-default data-search-modal-open:overflow-hidden data-search-modal-open:before:fixed data-search-modal-open:before:inset-0 data-search-modal-open:before:z-search-backdrop data-search-modal-open:before:backdrop-blur-xs [&#38;.nav-open]:overflow-hidden"
   >
     <style>
       astro-island,
@@ -245,23 +245,21 @@
       imagesizes="100vw"
       fetchpriority="high"
     />
-    <div class="group/layout">
+    <div class="group">
       <a
-        class="absolute top-0.5 left-1/2 z-50 mx-auto [transform:translate(-50%,calc(-100%-2px))] bg-subtle px-6 py-2 text-center text-accent focus:[transform:translate(-50%,0%)]"
+        class="absolute top-0.5 left-1/2 z-skip-link mx-auto [transform:translate(-50%,calc(-100%-2px))] bg-subtle px-6 py-2 text-center text-accent focus:[transform:translate(-50%,0%)]"
         href="#content"
         >Skip to content</a
       >
       <div class="flex min-h-full w-full flex-col bg-default">
         <header
-          class="group/mast z-20 flex w-full items-center justify-between px-container py-4 tablet:p-6 laptop:inset-x-0 laptop:z-40 laptop:flex-row laptop:flex-wrap laptop:px-16 laptop:py-8 laptop:text-left"
+          class="group z-30 flex w-full items-center justify-between px-container py-4 tablet:py-6 laptop:inset-x-0 laptop:z-40 laptop:flex-row laptop:flex-wrap laptop:px-16 laptop:py-8 laptop:text-left absolute [--mast-color:#fff] text-(--mast-color)"
           style="
             background-image: linear-gradient(
               to bottom,
               rgba(0, 0, 0, 0.85),
               transparent 95%
             );
-            color: #fff;
-            position: absolute;
           "
         >
           <div
@@ -280,50 +278,50 @@
             <nav class="hidden w-full laptop:block laptop:w-auto">
               <ul class="flex flex-wrap justify-start gap-x-6 text-xl">
                 <li
-                  class="block transform-gpu tracking-serif-wide whitespace-nowrap transition-transform has-[a:hover]:scale-105"
+                  class="block leading-10 tracking-serif-wide whitespace-nowrap transition-transform [body.nav-open_&amp;]:opacity-0"
                 >
                   <a
-                    class="text-inherit"
+                    class="relative block text-inherit after:absolute after:bottom-1 after:left-0 after:h-px after:w-full after:origin-center after:scale-x-0 after:bg-(--mast-color)/75 after:transition-transform hover:after:scale-x-100"
                     href="/"
                     style="text-shadow: 1px 1px 2px black"
                     >Home</a
                   >
                 </li>
                 <li
-                  class="block transform-gpu tracking-serif-wide whitespace-nowrap transition-transform has-[a:hover]:scale-105"
+                  class="block leading-10 tracking-serif-wide whitespace-nowrap transition-transform [body.nav-open_&amp;]:opacity-0"
                 >
                   <a
-                    class="text-inherit"
+                    class="relative block text-inherit after:absolute after:bottom-1 after:left-0 after:h-px after:w-full after:origin-center after:scale-x-0 after:bg-(--mast-color)/75 after:transition-transform hover:after:scale-x-100"
                     href="/how-i-grade/"
                     style="text-shadow: 1px 1px 2px black"
                     >How I Grade</a
                   >
                 </li>
                 <li
-                  class="block transform-gpu tracking-serif-wide whitespace-nowrap transition-transform has-[a:hover]:scale-105"
+                  class="block leading-10 tracking-serif-wide whitespace-nowrap transition-transform [body.nav-open_&amp;]:opacity-0"
                 >
                   <a
-                    class="text-inherit"
+                    class="relative block text-inherit after:absolute after:bottom-1 after:left-0 after:h-px after:w-full after:origin-center after:scale-x-0 after:bg-(--mast-color)/75 after:transition-transform hover:after:scale-x-100"
                     href="/reviews/"
                     style="text-shadow: 1px 1px 2px black"
                     >Reviews</a
                   >
                 </li>
                 <li
-                  class="block transform-gpu tracking-serif-wide whitespace-nowrap transition-transform has-[a:hover]:scale-105"
+                  class="block leading-10 tracking-serif-wide whitespace-nowrap transition-transform [body.nav-open_&amp;]:opacity-0"
                 >
                   <a
-                    class="text-inherit"
+                    class="relative block text-inherit after:absolute after:bottom-1 after:left-0 after:h-px after:w-full after:origin-center after:scale-x-0 after:bg-(--mast-color)/75 after:transition-transform hover:after:scale-x-100"
                     href="/authors/"
                     style="text-shadow: 1px 1px 2px black"
                     >Authors</a
                   >
                 </li>
                 <li
-                  class="block transform-gpu tracking-serif-wide whitespace-nowrap transition-transform has-[a:hover]:scale-105"
+                  class="block leading-10 tracking-serif-wide whitespace-nowrap transition-transform [body.nav-open_&amp;]:opacity-0"
                 >
                   <a
-                    class="text-inherit"
+                    class="relative block text-inherit after:absolute after:bottom-1 after:left-0 after:h-px after:w-full after:origin-center after:scale-x-0 after:bg-(--mast-color)/75 after:transition-transform hover:after:scale-x-100"
                     href="/readings/"
                     style="text-shadow: 1px 1px 2px black"
                     >Reading Log</a
@@ -331,19 +329,18 @@
                 </li>
               </ul>
             </nav>
-            <div
-              class="z-1000 transform-gpu transition-transform group-has-[#nav:checked]/mast:!text-[#fff] hover:scale-105"
-            >
+            <div class="z-1000 [body.nav-open_&amp;]:!text-[#fff]">
               <button
                 aria-keyshortcuts="Control+K"
                 aria-label="Search"
-                class="flex size-10 items-center justify-center overflow-hidden text-sm leading-6 ring-default laptop:ml-6"
+                class="flex size-10 transform-gpu cursor-pointer items-center justify-center overflow-hidden text-sm leading-6 ring-default transition-transform hover:scale-105 laptop:ml-6"
                 data-open-modal="true"
                 disabled=""
                 title="Search: Control+K"
                 type="button"
               >
                 <svg
+                  aria-hidden="true"
                   class="size-7"
                   fill="none"
                   stroke="currentColor"
@@ -359,77 +356,96 @@
                 </svg>
               </button>
             </div>
-            <div class="group">
-              <input class="hidden" id="nav" type="checkbox" /><label
-                class="relative z-40 ml-2 flex h-10 w-10 transform-gpu cursor-pointer items-center justify-center transition-transform hover:scale-110 laptop:hidden"
-                for="nav"
-                ><span
-                  class="relative block h-0.5 w-6 origin-center transition-[top,bottom,transform] duration-200 ease-in-out group-has-[#nav:checked]/mast:transform-[rotate(45deg)] group-has-[#nav:checked]/mast:!bg-[#fff] before:absolute before:-top-2 before:block before:h-0.5 before:w-6 before:bg-inherit before:transition before:duration-200 before:ease-in-out group-has-[#nav:checked]/mast:before:top-0 group-has-[#nav:checked]/mast:before:transform-[rotate(90deg)] after:absolute after:-bottom-2 after:block after:h-0.5 after:w-6 after:bg-inherit after:transition after:duration-200 after:ease-in-out group-has-[#nav:checked]/mast:after:bottom-0 group-has-[#nav:checked]/mast:after:transform-[rotate(90deg)]"
-                  style="background-color: #fff"
-                ></span
-              ></label>
-              <ul
-                class="fixed top-0 right-0 z-20 flex h-full w-0 transform-[translateX(100%)] flex-col items-start gap-y-5 overflow-hidden bg-footer text-left text-inverse opacity-0 duration-200 ease-in-out group-has-[#nav:checked]/mast:bottom-0 group-has-[#nav:checked]/mast:z-20 group-has-[#nav:checked]/mast:h-full group-has-[#nav:checked]/mast:w-full group-has-[#nav:checked]/mast:transform-[translateX(0)] group-has-[#nav:checked]/mast:overflow-y-auto group-has-[#nav:checked]/mast:pt-20 group-has-[#nav:checked]/mast:pr-[16%] group-has-[#nav:checked]/mast:pb-5 group-has-[#nav:checked]/mast:pl-[12%] group-has-[#nav:checked]/mast:opacity-100 tablet:max-w-[35vw] group-has-[#nav:checked]/mast:tablet:px-10 group-has-[#nav:checked]/mast:tablet:py-40 laptop:hidden"
+            <div
+              class="invisible fixed inset-0 bg-[rgba(0,0,0,.4)] opacity-0 transition-opacity duration-200 [body.nav-open_&amp;]:tablet:visible [body.nav-open_&amp;]:tablet:z-nav-backdrop [body.nav-open_&amp;]:tablet:opacity-100"
+              data-nav-backdrop="true"
+            ></div>
+            <button
+              aria-controls="nav-menu"
+              aria-expanded="false"
+              aria-label="Toggle navigation menu"
+              class="relative z-40 ml-2 flex h-10 w-10 transform-gpu cursor-pointer items-center justify-center transition-transform hover:scale-110 laptop:hidden"
+              data-nav-toggle="true"
+              type="button"
+            >
+              <span
+                aria-hidden="true"
+                class="relative flex h-0.5 w-6 origin-center transform-gpu transition-[top,bottom,transform] duration-200 ease-in-out before:absolute before:-top-2 before:block before:h-0.5 before:w-6 before:bg-inherit before:transition before:duration-200 before:ease-in-out after:absolute after:-bottom-2 after:block after:h-0.5 after:w-6 after:bg-inherit after:transition after:duration-200 after:ease-in-out [body.nav-open_&amp;]:transform-[rotate(45deg)] [body.nav-open_&amp;]:!bg-[#fff] [body.nav-open_&amp;]:before:top-0 [body.nav-open_&amp;]:before:transform-[rotate(90deg)] [body.nav-open_&amp;]:after:bottom-0 [body.nav-open_&amp;]:after:transform-[rotate(90deg)]"
+                style="background-color: #fff"
+              ></span>
+            </button>
+            <nav aria-label="Main navigation">
+              <ol
+                class="invisible fixed top-0 right-0 flex h-full w-0 transform-[translateX(100%)] flex-col items-start gap-y-5 overflow-hidden bg-footer text-left text-inverse opacity-0 duration-200 ease-in-out tablet:max-w-[35vw] tablet:gap-y-10 laptop:max-w-[25vw] [body.nav-open_&amp;]:visible [body.nav-open_&amp;]:bottom-0 [body.nav-open_&amp;]:z-nav-menu [body.nav-open_&amp;]:h-full [body.nav-open_&amp;]:w-full [body.nav-open_&amp;]:transform-[translateX(0)] [body.nav-open_&amp;]:overflow-y-auto [body.nav-open_&amp;]:pt-20 [body.nav-open_&amp;]:pr-[16%] [body.nav-open_&amp;]:pb-5 [body.nav-open_&amp;]:pl-[12%] [body.nav-open_&amp;]:opacity-100 [body.nav-open_&amp;]:drop-shadow-2xl [body.nav-open_&amp;]:tablet:px-10 [body.nav-open_&amp;]:tablet:pt-40 [body.nav-open_&amp;]:laptop:px-20"
+                data-nav-menu="true"
+                id="nav-menu"
               >
-                <li class="block w-1/2 text-2xl whitespace-nowrap">
+                <li
+                  class="block w-1/2 text-2xl whitespace-nowrap laptop:w-full"
+                >
                   <a
-                    class="inline-block origin-left transform-gpu transition-all hover:scale-105"
+                    class="relative inline-block origin-left transform-gpu transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-(--fg-inverse)/75 after:transition-transform hover:after:scale-x-100"
                     href="/"
                     >Home</a
                   >
                 </li>
-                <li class="block w-1/2 text-2xl whitespace-nowrap">
+                <li
+                  class="block w-1/2 text-2xl whitespace-nowrap laptop:w-full"
+                >
                   <a
-                    class="inline-block origin-left transform-gpu transition-all hover:scale-105"
+                    class="relative inline-block origin-left transform-gpu transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-(--fg-inverse)/75 after:transition-transform hover:after:scale-x-100"
                     href="/how-i-grade/"
                     >How I Grade</a
                   >
                 </li>
-                <li class="block w-1/2 text-2xl whitespace-nowrap">
+                <li
+                  class="block w-1/2 text-2xl whitespace-nowrap laptop:w-full"
+                >
                   <a
-                    class="inline-block origin-left transform-gpu transition-all hover:scale-105"
+                    class="relative inline-block origin-left transform-gpu transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-(--fg-inverse)/75 after:transition-transform hover:after:scale-x-100"
                     href="/reviews/"
                     >Reviews</a
                   >
                 </li>
-                <li class="block w-1/2 text-2xl whitespace-nowrap">
+                <li
+                  class="block w-1/2 text-2xl whitespace-nowrap laptop:w-full"
+                >
                   <a
-                    class="inline-block origin-left transform-gpu transition-all hover:scale-105"
+                    class="relative inline-block origin-left transform-gpu transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-(--fg-inverse)/75 after:transition-transform hover:after:scale-x-100"
                     href="/authors/"
                     >Authors</a
                   >
                 </li>
-                <li class="block w-1/2 text-2xl whitespace-nowrap">
+                <li
+                  class="block w-1/2 text-2xl whitespace-nowrap laptop:w-full"
+                >
                   <a
-                    class="inline-block origin-left transform-gpu transition-all hover:scale-105"
+                    class="relative inline-block origin-left transform-gpu transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-(--fg-inverse)/75 after:transition-transform hover:after:scale-x-100"
                     href="/readings/"
                     >Reading Log</a
                   >
                   <ol class="mt-4">
                     <li
-                      class="mb-4 ml-1 font-sans text-xs tracking-wider text-inverse-subtle uppercase last:mb-0"
+                      class="mb-3 ml-1 font-sans text-xs tracking-wider text-inverse-subtle uppercase last:-mb-1"
                     >
                       <a
-                        class="inline-block origin-left transform-gpu transition-all hover:scale-105 hover:text-inverse"
+                        class="relative inline-block origin-left transform-gpu pb-1 transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-(--fg-inverse)/75 after:transition-transform hover:text-inverse hover:after:scale-x-100"
                         href="/readings/stats/"
                         >Stats</a
                       >
                     </li>
                   </ol>
                 </li>
-              </ul>
-            </div>
+              </ol>
+            </nav>
           </div>
         </header>
-        <main
-          class="grow transition-[opacity] duration-200 ease-in-out group-has-[#nav:checked]/layout:opacity-80 bg-subtle"
-          id="content"
-        >
+        <main class="grow bg-subtle" id="content">
           <header
-            class="min-h-[340px] tablet:min-h-[640px] desktop:min-h-[clamp(640px,70vh,1350px)] text-inverse bg-[#000] relative flex w-full flex-col content-start items-center justify-end gap-6 overflow-hidden pt-20 laptop:pt-24"
+            class="min-h-[400px] tablet:min-h-[640px] laptop:min-h-[clamp(640px,70vh,1350px)] relative flex w-full flex-col content-start items-center justify-end gap-6 bg-[#2A2B2A] pt-40 pb-8 text-inverse tablet:pt-40 tablet:pb-10 laptop:pt-40 laptop:pb-16"
           >
             <img
-              class="absolute inset-0 size-full object-cover object-top false"
+              class="absolute inset-0 size-full object-cover object-top"
               src="/_image/?href=%2Fcontent%2Fassets%2Fbackdrops%2Fauthors.png%3ForigWidth%3D2400%26origHeight%3D1350%26origFormat%3Dpng&amp;w=2400&amp;h=1350&amp;q=80&amp;f=avif"
               srcset="
                 /_image/?href=%2Fcontent%2Fassets%2Fbackdrops%2Fauthors.png%3ForigWidth%3D2400%26origHeight%3D1350%26origFormat%3Dpng&amp;w=720&amp;h=405&amp;q=80&amp;f=avif    720w,
@@ -445,36 +461,37 @@
               loading="eager"
             />
             <div
-              class="z-10 mx-auto flex w-full max-w-(--breakpoint-desktop) px-container flex-col after:absolute after:top-0 after:left-0 after:-z-10 after:h-full after:w-full after:bg-linear-to-t after:from-[rgba(0,0,0,.85)] after:to-50% tablet:after:to-25% py-8 tablet:pb-10 laptop:pt-10 desktop:pt-20"
+              class="z-10 mx-auto flex w-full max-w-(--breakpoint-desktop) flex-col px-container"
             >
               <h1
-                class="font-sans text-3xl font-bold tracking-widest uppercase tablet:text-4xl tablet-landscape:text-5xl desktop:text-7xl"
+                class="font-sans text-2xl font-bold tracking-widest uppercase laptop:text-7xl"
+                data-pagefind-weight="10"
               >
                 Authors
               </h1>
               <p
-                class="mt-1 text-base desktop:my-4 desktop:text-xl [text-shadow:1px_1px_2px_black]"
+                class="mt-1 text-base laptop:my-4 laptop:text-xl [text-shadow:1px_1px_2px_black]"
               >
                 &quot;Maybe I can glue it together. In the morning&quot;
               </p>
             </div>
           </header>
           <astro-island
-            uid="1Q8MOL"
+            uid="Z11jYQD"
             prefix="r1"
             component-url="~/components/Authors/Authors"
             component-export="Authors"
             renderer-url="@astrojs/react/client.js"
-            props='{"initialSort":[0,"name-asc"],"values":[1,[[0,{"avatarImageProps":[0],"name":[0,"Piers Anthony"],"reviewedWorkCount":[0,1],"slug":[0,"piers-anthony"],"sortName":[0,"Anthony, Piers"]}],[0,{"avatarImageProps":[0],"name":[0,"Leif Babin"],"reviewedWorkCount":[0,1],"slug":[0,"leif-babin"],"sortName":[0,"Babin, Leif"]}],[0,{"avatarImageProps":[0],"name":[0,"Arthur C. Clarke"],"reviewedWorkCount":[0,1],"slug":[0,"arthur-c-clarke"],"sortName":[0,"Clarke, Arthur C."]}],[0,{"avatarImageProps":[0,{"src":[0,"/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fian-fleming.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=80&amp;h=80&amp;q=80&amp;f=avif"],"srcSet":[0,"/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fian-fleming.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=80&amp;h=80&amp;q=80&amp;f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fian-fleming.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=160&amp;h=160&amp;q=80&amp;f=avif 2x"]}],"name":[0,"Ian Fleming"],"reviewedWorkCount":[0,3],"slug":[0,"ian-fleming"],"sortName":[0,"Fleming, Ian"]}],[0,{"avatarImageProps":[0,{"src":[0,"/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fphilip-fracassi.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=80&amp;h=80&amp;q=80&amp;f=avif"],"srcSet":[0,"/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fphilip-fracassi.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=80&amp;h=80&amp;q=80&amp;f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fphilip-fracassi.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=160&amp;h=160&amp;q=80&amp;f=avif 2x"]}],"name":[0,"Philip Fracassi"],"reviewedWorkCount":[0,13],"slug":[0,"philip-fracassi"],"sortName":[0,"Fracassi, Philip"]}],[0,{"avatarImageProps":[0],"name":[0,"David Goggins"],"reviewedWorkCount":[0,1],"slug":[0,"david-goggins"],"sortName":[0,"Goggins, David"]}],[0,{"avatarImageProps":[0],"name":[0,"David H. Hackworth"],"reviewedWorkCount":[0,1],"slug":[0,"david-h-hackworth"],"sortName":[0,"Hackworth, David H."]}],[0,{"avatarImageProps":[0],"name":[0,"Jesse Itzler"],"reviewedWorkCount":[0,1],"slug":[0,"jesse-itzler"],"sortName":[0,"Itzler, Jesse"]}],[0,{"avatarImageProps":[0,{"src":[0,"/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fstephen-king.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=80&amp;h=80&amp;q=80&amp;f=avif"],"srcSet":[0,"/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fstephen-king.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=80&amp;h=80&amp;q=80&amp;f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fstephen-king.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=160&amp;h=160&amp;q=80&amp;f=avif 2x"]}],"name":[0,"Stephen King"],"reviewedWorkCount":[0,10],"slug":[0,"stephen-king"],"sortName":[0,"King, Stephen"]}],[0,{"avatarImageProps":[0,{"src":[0,"/_image/?href=%2Fcontent%2Fassets%2Favatars%2Frichard-laymon.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=80&amp;h=80&amp;q=80&amp;f=avif"],"srcSet":[0,"/_image/?href=%2Fcontent%2Fassets%2Favatars%2Frichard-laymon.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=80&amp;h=80&amp;q=80&amp;f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Frichard-laymon.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=160&amp;h=160&amp;q=80&amp;f=avif 2x"]}],"name":[0,"Richard Laymon"],"reviewedWorkCount":[0,10],"slug":[0,"richard-laymon"],"sortName":[0,"Laymon, Richard"]}],[0,{"avatarImageProps":[0],"name":[0,"Edmund Morris"],"reviewedWorkCount":[0,1],"slug":[0,"edmund-morris"],"sortName":[0,"Morris, Edmund"]}],[0,{"avatarImageProps":[0],"name":[0,"Steven Novella"],"reviewedWorkCount":[0,1],"slug":[0,"steven-novella"],"sortName":[0,"Novella, Steven"]}],[0,{"avatarImageProps":[0,{"src":[0,"/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fchuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=80&amp;h=80&amp;q=80&amp;f=avif"],"srcSet":[0,"/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fchuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=80&amp;h=80&amp;q=80&amp;f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fchuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=160&amp;h=160&amp;q=80&amp;f=avif 2x"]}],"name":[0,"Chuck Palahniuk"],"reviewedWorkCount":[0,2],"slug":[0,"chuck-palahniuk"],"sortName":[0,"Palahniuk, Chuck"]}],[0,{"avatarImageProps":[0],"name":[0,"Andrew Roberts"],"reviewedWorkCount":[0,1],"slug":[0,"andrew-roberts"],"sortName":[0,"Roberts, Andrew"]}],[0,{"avatarImageProps":[0],"name":[0,"Julie Sherman"],"reviewedWorkCount":[0,1],"slug":[0,"julie-sherman"],"sortName":[0,"Sherman, Julie"]}],[0,{"avatarImageProps":[0],"name":[0,"John Skipp"],"reviewedWorkCount":[0,1],"slug":[0,"john-skipp"],"sortName":[0,"Skipp, John"]}],[0,{"avatarImageProps":[0],"name":[0,"Craig Spector"],"reviewedWorkCount":[0,1],"slug":[0,"craig-spector"],"sortName":[0,"Spector, Craig"]}],[0,{"avatarImageProps":[0,{"src":[0,"/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fbram-stoker.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=80&amp;h=80&amp;q=80&amp;f=avif"],"srcSet":[0,"/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fbram-stoker.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=80&amp;h=80&amp;q=80&amp;f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fbram-stoker.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=160&amp;h=160&amp;q=80&amp;f=avif 2x"]}],"name":[0,"Bram Stoker"],"reviewedWorkCount":[0,1],"slug":[0,"bram-stoker"],"sortName":[0,"Stoker, Bram"]}],[0,{"avatarImageProps":[0],"name":[0,"Jocko Willink"],"reviewedWorkCount":[0,1],"slug":[0,"jocko-willink"],"sortName":[0,"Willink, Jocko"]}]]]}'
+            props='{"initialSort":[0,"name-asc"],"values":[1,[[0,{"avatarImageProps":[0],"name":[0,"Piers Anthony"],"reviewCount":[0,1],"slug":[0,"piers-anthony"],"sortName":[0,"Anthony, Piers"]}],[0,{"avatarImageProps":[0],"name":[0,"Leif Babin"],"reviewCount":[0,1],"slug":[0,"leif-babin"],"sortName":[0,"Babin, Leif"]}],[0,{"avatarImageProps":[0],"name":[0,"Arthur C. Clarke"],"reviewCount":[0,1],"slug":[0,"arthur-c-clarke"],"sortName":[0,"Clarke, Arthur C."]}],[0,{"avatarImageProps":[0,{"src":[0,"/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fian-fleming.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=80&amp;h=80&amp;q=80&amp;f=avif"],"srcSet":[0,"/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fian-fleming.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=80&amp;h=80&amp;q=80&amp;f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fian-fleming.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=160&amp;h=160&amp;q=80&amp;f=avif 2x"]}],"name":[0,"Ian Fleming"],"reviewCount":[0,3],"slug":[0,"ian-fleming"],"sortName":[0,"Fleming, Ian"]}],[0,{"avatarImageProps":[0,{"src":[0,"/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fphilip-fracassi.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=80&amp;h=80&amp;q=80&amp;f=avif"],"srcSet":[0,"/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fphilip-fracassi.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=80&amp;h=80&amp;q=80&amp;f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fphilip-fracassi.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=160&amp;h=160&amp;q=80&amp;f=avif 2x"]}],"name":[0,"Philip Fracassi"],"reviewCount":[0,13],"slug":[0,"philip-fracassi"],"sortName":[0,"Fracassi, Philip"]}],[0,{"avatarImageProps":[0],"name":[0,"David Goggins"],"reviewCount":[0,1],"slug":[0,"david-goggins"],"sortName":[0,"Goggins, David"]}],[0,{"avatarImageProps":[0],"name":[0,"David H. Hackworth"],"reviewCount":[0,1],"slug":[0,"david-h-hackworth"],"sortName":[0,"Hackworth, David H."]}],[0,{"avatarImageProps":[0],"name":[0,"Jesse Itzler"],"reviewCount":[0,1],"slug":[0,"jesse-itzler"],"sortName":[0,"Itzler, Jesse"]}],[0,{"avatarImageProps":[0,{"src":[0,"/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fstephen-king.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=80&amp;h=80&amp;q=80&amp;f=avif"],"srcSet":[0,"/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fstephen-king.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=80&amp;h=80&amp;q=80&amp;f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fstephen-king.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=160&amp;h=160&amp;q=80&amp;f=avif 2x"]}],"name":[0,"Stephen King"],"reviewCount":[0,10],"slug":[0,"stephen-king"],"sortName":[0,"King, Stephen"]}],[0,{"avatarImageProps":[0,{"src":[0,"/_image/?href=%2Fcontent%2Fassets%2Favatars%2Frichard-laymon.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=80&amp;h=80&amp;q=80&amp;f=avif"],"srcSet":[0,"/_image/?href=%2Fcontent%2Fassets%2Favatars%2Frichard-laymon.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=80&amp;h=80&amp;q=80&amp;f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Frichard-laymon.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=160&amp;h=160&amp;q=80&amp;f=avif 2x"]}],"name":[0,"Richard Laymon"],"reviewCount":[0,10],"slug":[0,"richard-laymon"],"sortName":[0,"Laymon, Richard"]}],[0,{"avatarImageProps":[0],"name":[0,"Edmund Morris"],"reviewCount":[0,1],"slug":[0,"edmund-morris"],"sortName":[0,"Morris, Edmund"]}],[0,{"avatarImageProps":[0],"name":[0,"Steven Novella"],"reviewCount":[0,1],"slug":[0,"steven-novella"],"sortName":[0,"Novella, Steven"]}],[0,{"avatarImageProps":[0,{"src":[0,"/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fchuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=80&amp;h=80&amp;q=80&amp;f=avif"],"srcSet":[0,"/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fchuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=80&amp;h=80&amp;q=80&amp;f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fchuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=160&amp;h=160&amp;q=80&amp;f=avif 2x"]}],"name":[0,"Chuck Palahniuk"],"reviewCount":[0,2],"slug":[0,"chuck-palahniuk"],"sortName":[0,"Palahniuk, Chuck"]}],[0,{"avatarImageProps":[0],"name":[0,"Andrew Roberts"],"reviewCount":[0,1],"slug":[0,"andrew-roberts"],"sortName":[0,"Roberts, Andrew"]}],[0,{"avatarImageProps":[0],"name":[0,"Julie Sherman"],"reviewCount":[0,1],"slug":[0,"julie-sherman"],"sortName":[0,"Sherman, Julie"]}],[0,{"avatarImageProps":[0],"name":[0,"John Skipp"],"reviewCount":[0,1],"slug":[0,"john-skipp"],"sortName":[0,"Skipp, John"]}],[0,{"avatarImageProps":[0],"name":[0,"Craig Spector"],"reviewCount":[0,1],"slug":[0,"craig-spector"],"sortName":[0,"Spector, Craig"]}],[0,{"avatarImageProps":[0,{"src":[0,"/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fbram-stoker.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=80&amp;h=80&amp;q=80&amp;f=avif"],"srcSet":[0,"/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fbram-stoker.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=80&amp;h=80&amp;q=80&amp;f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Favatars%2Fbram-stoker.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=160&amp;h=160&amp;q=80&amp;f=avif 2x"]}],"name":[0,"Bram Stoker"],"reviewCount":[0,1],"slug":[0,"bram-stoker"],"sortName":[0,"Stoker, Bram"]}],[0,{"avatarImageProps":[0],"name":[0,"Jocko Willink"],"reviewCount":[0,1],"slug":[0,"jocko-willink"],"sortName":[0,"Willink, Jocko"]}]]]}'
             ssr
             client="load"
             before-hydration-url="astro:scripts/before-hydration.js"
             opts='{"name":"Authors","value":true}'
             await-children
             ><div class="[--scroll-offset:52px]">
-              <nav class="sticky top-0 z-[21] bg-footer">
+              <nav class="sticky top-0 z-nav-menu bg-footer">
                 <ul
-                  class="mx-auto flex scrollbar-hidden max-w-(--breakpoint-desktop) snap-x overflow-x-auto px-container font-sans text-sm font-normal tracking-wide laptop:justify-center"
+                  class="mx-auto flex scrollbar-hidden max-w-(--breakpoint-desktop) snap-x overflow-x-auto px-container text-md font-semibold tracking-wide laptop:justify-center"
                 >
                   <li class="snap-start text-center text-inverse">
                     <a
@@ -618,7 +635,7 @@
               </nav>
               <div class="group/list-with-filters mx-auto bg-subtle">
                 <div
-                  class="sticky top-[calc(0px_+_var(--scroll-offset,0px))] z-20 scroll-mt-[calc(0px_+_var(--scroll-offset,0px))] border-b border-default bg-default text-xs tablet:col-span-full"
+                  class="sticky top-[calc(0px_+_var(--scroll-offset,0px))] z-sticky scroll-mt-[calc(0px_+_var(--scroll-offset,0px))] border-b border-default bg-default text-xs tablet:col-span-full"
                 >
                   <div
                     class="mx-auto grid max-w-[var(--breakpoint-desktop)] grid-cols-[auto_auto_1fr_auto] items-baseline gap-y-7 px-container py-10 font-sans font-medium tracking-wide text-subtle uppercase tablet:grid-cols-[auto_auto_1fr_auto_auto] tablet:gap-x-4 tablet-landscape:grid-cols-[auto_auto_1fr_minmax(302px,calc(33%_-_192px))_auto] desktop:grid-cols-[auto_auto_1fr_calc(33%_-_96px)_auto]"
@@ -656,7 +673,7 @@
                       aria-controls="filters"
                       aria-expanded="false"
                       aria-label="Toggle filters"
-                      class="col-start-4 row-start-1 flex transform-gpu cursor-pointer items-center justify-center gap-x-4 bg-canvas px-4 py-2 text-nowrap text-muted uppercase shadow-all transition-transform hover:scale-110 tablet:col-start-5 tablet:w-20"
+                      class="col-start-4 row-start-1 flex transform-gpu cursor-pointer items-center justify-center gap-x-4 rounded-sm bg-canvas px-4 py-2 font-sans text-xs font-semibold text-nowrap text-muted uppercase shadow-all transition-transform hover:scale-110 tablet:col-start-5 tablet:w-20"
                       type="button"
                     >
                       Filter
@@ -664,7 +681,7 @@
                   </div>
                 </div>
                 <div
-                  class="mx-auto max-w-[var(--breakpoint-desktop)] gap-x-[var(--container-padding)] tablet:px-container tablet-landscape:flex"
+                  class="mx-auto max-w-[var(--breakpoint-desktop)] tablet:px-container"
                 >
                   <div
                     class="mx-auto max-w-[var(--breakpoint-desktop)] grow scroll-mt-[calc(var(--list-scroll-offset)_+_var(--scroll-offset,0px))] pb-10 [--list-scroll-offset:181px] tablet:[--list-scroll-offset:121px]"
@@ -683,13 +700,13 @@
                         <div class="bg-subtle">
                           <ol>
                             <li
-                              class="group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-[102.5%] has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6 relative"
+                              class="group/list-item relative mb-1 flex max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-4 bg-default px-container py-4 transition-transform tablet:gap-x-6 tablet:px-4 tablet-landscape:has-[a:hover]:z-5 tablet-landscape:has-[a:hover]:scale-[102.5%] tablet-landscape:has-[a:hover]:shadow-all tablet-landscape:has-[a:hover]:drop-shadow-2xl laptop:px-6"
                             >
                               <div
                                 class="relative rounded-full after:absolute after:top-0 after:left-0 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
                               >
                                 <div
-                                  class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
+                                  class="w-16 safari-border-radius-fix overflow-hidden rounded-full drop-shadow-md tablet:w-20"
                                 >
                                   <div class="w-full">
                                     <svg
@@ -707,15 +724,20 @@
                                   </div>
                                 </div>
                               </div>
-                              <a
-                                class="font-sans text-sm leading-normal font-medium text-accent after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent"
-                                href="/authors/piers-anthony/"
-                                >Piers Anthony</a
-                              >
-                              <div
-                                class="ml-auto font-sans text-sm text-nowrap text-subtle"
-                              >
-                                1
+                              <div class="flex flex-col justify-center">
+                                <a
+                                  class="text-base leading-normal font-semibold text-accent after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0"
+                                  href="/authors/piers-anthony/"
+                                  ><div class="leading-normal">
+                                    Piers Anthony
+                                  </div></a
+                                >
+                                <div
+                                  class="mt-[6px] font-sans text-xs font-light tracking-prose text-nowrap text-subtle"
+                                >
+                                  1<!-- -->
+                                  Reviews
+                                </div>
                               </div>
                             </li>
                           </ol>
@@ -733,13 +755,13 @@
                         <div class="bg-subtle">
                           <ol>
                             <li
-                              class="group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-[102.5%] has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6 relative"
+                              class="group/list-item relative mb-1 flex max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-4 bg-default px-container py-4 transition-transform tablet:gap-x-6 tablet:px-4 tablet-landscape:has-[a:hover]:z-5 tablet-landscape:has-[a:hover]:scale-[102.5%] tablet-landscape:has-[a:hover]:shadow-all tablet-landscape:has-[a:hover]:drop-shadow-2xl laptop:px-6"
                             >
                               <div
                                 class="relative rounded-full after:absolute after:top-0 after:left-0 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
                               >
                                 <div
-                                  class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
+                                  class="w-16 safari-border-radius-fix overflow-hidden rounded-full drop-shadow-md tablet:w-20"
                                 >
                                   <div class="w-full">
                                     <svg
@@ -757,15 +779,20 @@
                                   </div>
                                 </div>
                               </div>
-                              <a
-                                class="font-sans text-sm leading-normal font-medium text-accent after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent"
-                                href="/authors/leif-babin/"
-                                >Leif Babin</a
-                              >
-                              <div
-                                class="ml-auto font-sans text-sm text-nowrap text-subtle"
-                              >
-                                1
+                              <div class="flex flex-col justify-center">
+                                <a
+                                  class="text-base leading-normal font-semibold text-accent after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0"
+                                  href="/authors/leif-babin/"
+                                  ><div class="leading-normal">
+                                    Leif Babin
+                                  </div></a
+                                >
+                                <div
+                                  class="mt-[6px] font-sans text-xs font-light tracking-prose text-nowrap text-subtle"
+                                >
+                                  1<!-- -->
+                                  Reviews
+                                </div>
                               </div>
                             </li>
                           </ol>
@@ -783,13 +810,13 @@
                         <div class="bg-subtle">
                           <ol>
                             <li
-                              class="group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-[102.5%] has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6 relative"
+                              class="group/list-item relative mb-1 flex max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-4 bg-default px-container py-4 transition-transform tablet:gap-x-6 tablet:px-4 tablet-landscape:has-[a:hover]:z-5 tablet-landscape:has-[a:hover]:scale-[102.5%] tablet-landscape:has-[a:hover]:shadow-all tablet-landscape:has-[a:hover]:drop-shadow-2xl laptop:px-6"
                             >
                               <div
                                 class="relative rounded-full after:absolute after:top-0 after:left-0 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
                               >
                                 <div
-                                  class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
+                                  class="w-16 safari-border-radius-fix overflow-hidden rounded-full drop-shadow-md tablet:w-20"
                                 >
                                   <div class="w-full">
                                     <svg
@@ -807,15 +834,20 @@
                                   </div>
                                 </div>
                               </div>
-                              <a
-                                class="font-sans text-sm leading-normal font-medium text-accent after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent"
-                                href="/authors/arthur-c-clarke/"
-                                >Arthur C. Clarke</a
-                              >
-                              <div
-                                class="ml-auto font-sans text-sm text-nowrap text-subtle"
-                              >
-                                1
+                              <div class="flex flex-col justify-center">
+                                <a
+                                  class="text-base leading-normal font-semibold text-accent after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0"
+                                  href="/authors/arthur-c-clarke/"
+                                  ><div class="leading-normal">
+                                    Arthur C. Clarke
+                                  </div></a
+                                >
+                                <div
+                                  class="mt-[6px] font-sans text-xs font-light tracking-prose text-nowrap text-subtle"
+                                >
+                                  1<!-- -->
+                                  Reviews
+                                </div>
                               </div>
                             </li>
                           </ol>
@@ -833,13 +865,13 @@
                         <div class="bg-subtle">
                           <ol>
                             <li
-                              class="group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-[102.5%] has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6 relative"
+                              class="group/list-item relative mb-1 flex max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-4 bg-default px-container py-4 transition-transform tablet:gap-x-6 tablet:px-4 tablet-landscape:has-[a:hover]:z-5 tablet-landscape:has-[a:hover]:scale-[102.5%] tablet-landscape:has-[a:hover]:shadow-all tablet-landscape:has-[a:hover]:drop-shadow-2xl laptop:px-6"
                             >
                               <div
                                 class="relative rounded-full after:absolute after:top-0 after:left-0 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
                               >
                                 <div
-                                  class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
+                                  class="w-16 safari-border-radius-fix overflow-hidden rounded-full drop-shadow-md tablet:w-20"
                                 >
                                   <img
                                     src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fian-fleming.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=80&amp;h=80&amp;q=80&amp;f=avif"
@@ -855,25 +887,30 @@
                                   />
                                 </div>
                               </div>
-                              <a
-                                class="font-sans text-sm leading-normal font-medium text-accent after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent"
-                                href="/authors/ian-fleming/"
-                                >Ian Fleming</a
-                              >
-                              <div
-                                class="ml-auto font-sans text-sm text-nowrap text-subtle"
-                              >
-                                3
+                              <div class="flex flex-col justify-center">
+                                <a
+                                  class="text-base leading-normal font-semibold text-accent after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0"
+                                  href="/authors/ian-fleming/"
+                                  ><div class="leading-normal">
+                                    Ian Fleming
+                                  </div></a
+                                >
+                                <div
+                                  class="mt-[6px] font-sans text-xs font-light tracking-prose text-nowrap text-subtle"
+                                >
+                                  3<!-- -->
+                                  Reviews
+                                </div>
                               </div>
                             </li>
                             <li
-                              class="group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-[102.5%] has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6 relative"
+                              class="group/list-item relative mb-1 flex max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-4 bg-default px-container py-4 transition-transform tablet:gap-x-6 tablet:px-4 tablet-landscape:has-[a:hover]:z-5 tablet-landscape:has-[a:hover]:scale-[102.5%] tablet-landscape:has-[a:hover]:shadow-all tablet-landscape:has-[a:hover]:drop-shadow-2xl laptop:px-6"
                             >
                               <div
                                 class="relative rounded-full after:absolute after:top-0 after:left-0 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
                               >
                                 <div
-                                  class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
+                                  class="w-16 safari-border-radius-fix overflow-hidden rounded-full drop-shadow-md tablet:w-20"
                                 >
                                   <img
                                     src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fphilip-fracassi.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=80&amp;h=80&amp;q=80&amp;f=avif"
@@ -889,15 +926,20 @@
                                   />
                                 </div>
                               </div>
-                              <a
-                                class="font-sans text-sm leading-normal font-medium text-accent after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent"
-                                href="/authors/philip-fracassi/"
-                                >Philip Fracassi</a
-                              >
-                              <div
-                                class="ml-auto font-sans text-sm text-nowrap text-subtle"
-                              >
-                                13
+                              <div class="flex flex-col justify-center">
+                                <a
+                                  class="text-base leading-normal font-semibold text-accent after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0"
+                                  href="/authors/philip-fracassi/"
+                                  ><div class="leading-normal">
+                                    Philip Fracassi
+                                  </div></a
+                                >
+                                <div
+                                  class="mt-[6px] font-sans text-xs font-light tracking-prose text-nowrap text-subtle"
+                                >
+                                  13<!-- -->
+                                  Reviews
+                                </div>
                               </div>
                             </li>
                           </ol>
@@ -915,13 +957,13 @@
                         <div class="bg-subtle">
                           <ol>
                             <li
-                              class="group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-[102.5%] has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6 relative"
+                              class="group/list-item relative mb-1 flex max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-4 bg-default px-container py-4 transition-transform tablet:gap-x-6 tablet:px-4 tablet-landscape:has-[a:hover]:z-5 tablet-landscape:has-[a:hover]:scale-[102.5%] tablet-landscape:has-[a:hover]:shadow-all tablet-landscape:has-[a:hover]:drop-shadow-2xl laptop:px-6"
                             >
                               <div
                                 class="relative rounded-full after:absolute after:top-0 after:left-0 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
                               >
                                 <div
-                                  class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
+                                  class="w-16 safari-border-radius-fix overflow-hidden rounded-full drop-shadow-md tablet:w-20"
                                 >
                                   <div class="w-full">
                                     <svg
@@ -939,15 +981,20 @@
                                   </div>
                                 </div>
                               </div>
-                              <a
-                                class="font-sans text-sm leading-normal font-medium text-accent after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent"
-                                href="/authors/david-goggins/"
-                                >David Goggins</a
-                              >
-                              <div
-                                class="ml-auto font-sans text-sm text-nowrap text-subtle"
-                              >
-                                1
+                              <div class="flex flex-col justify-center">
+                                <a
+                                  class="text-base leading-normal font-semibold text-accent after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0"
+                                  href="/authors/david-goggins/"
+                                  ><div class="leading-normal">
+                                    David Goggins
+                                  </div></a
+                                >
+                                <div
+                                  class="mt-[6px] font-sans text-xs font-light tracking-prose text-nowrap text-subtle"
+                                >
+                                  1<!-- -->
+                                  Reviews
+                                </div>
                               </div>
                             </li>
                           </ol>
@@ -965,13 +1012,13 @@
                         <div class="bg-subtle">
                           <ol>
                             <li
-                              class="group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-[102.5%] has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6 relative"
+                              class="group/list-item relative mb-1 flex max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-4 bg-default px-container py-4 transition-transform tablet:gap-x-6 tablet:px-4 tablet-landscape:has-[a:hover]:z-5 tablet-landscape:has-[a:hover]:scale-[102.5%] tablet-landscape:has-[a:hover]:shadow-all tablet-landscape:has-[a:hover]:drop-shadow-2xl laptop:px-6"
                             >
                               <div
                                 class="relative rounded-full after:absolute after:top-0 after:left-0 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
                               >
                                 <div
-                                  class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
+                                  class="w-16 safari-border-radius-fix overflow-hidden rounded-full drop-shadow-md tablet:w-20"
                                 >
                                   <div class="w-full">
                                     <svg
@@ -989,15 +1036,20 @@
                                   </div>
                                 </div>
                               </div>
-                              <a
-                                class="font-sans text-sm leading-normal font-medium text-accent after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent"
-                                href="/authors/david-h-hackworth/"
-                                >David H. Hackworth</a
-                              >
-                              <div
-                                class="ml-auto font-sans text-sm text-nowrap text-subtle"
-                              >
-                                1
+                              <div class="flex flex-col justify-center">
+                                <a
+                                  class="text-base leading-normal font-semibold text-accent after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0"
+                                  href="/authors/david-h-hackworth/"
+                                  ><div class="leading-normal">
+                                    David H. Hackworth
+                                  </div></a
+                                >
+                                <div
+                                  class="mt-[6px] font-sans text-xs font-light tracking-prose text-nowrap text-subtle"
+                                >
+                                  1<!-- -->
+                                  Reviews
+                                </div>
                               </div>
                             </li>
                           </ol>
@@ -1015,13 +1067,13 @@
                         <div class="bg-subtle">
                           <ol>
                             <li
-                              class="group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-[102.5%] has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6 relative"
+                              class="group/list-item relative mb-1 flex max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-4 bg-default px-container py-4 transition-transform tablet:gap-x-6 tablet:px-4 tablet-landscape:has-[a:hover]:z-5 tablet-landscape:has-[a:hover]:scale-[102.5%] tablet-landscape:has-[a:hover]:shadow-all tablet-landscape:has-[a:hover]:drop-shadow-2xl laptop:px-6"
                             >
                               <div
                                 class="relative rounded-full after:absolute after:top-0 after:left-0 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
                               >
                                 <div
-                                  class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
+                                  class="w-16 safari-border-radius-fix overflow-hidden rounded-full drop-shadow-md tablet:w-20"
                                 >
                                   <div class="w-full">
                                     <svg
@@ -1039,15 +1091,20 @@
                                   </div>
                                 </div>
                               </div>
-                              <a
-                                class="font-sans text-sm leading-normal font-medium text-accent after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent"
-                                href="/authors/jesse-itzler/"
-                                >Jesse Itzler</a
-                              >
-                              <div
-                                class="ml-auto font-sans text-sm text-nowrap text-subtle"
-                              >
-                                1
+                              <div class="flex flex-col justify-center">
+                                <a
+                                  class="text-base leading-normal font-semibold text-accent after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0"
+                                  href="/authors/jesse-itzler/"
+                                  ><div class="leading-normal">
+                                    Jesse Itzler
+                                  </div></a
+                                >
+                                <div
+                                  class="mt-[6px] font-sans text-xs font-light tracking-prose text-nowrap text-subtle"
+                                >
+                                  1<!-- -->
+                                  Reviews
+                                </div>
                               </div>
                             </li>
                           </ol>
@@ -1065,13 +1122,13 @@
                         <div class="bg-subtle">
                           <ol>
                             <li
-                              class="group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-[102.5%] has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6 relative"
+                              class="group/list-item relative mb-1 flex max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-4 bg-default px-container py-4 transition-transform tablet:gap-x-6 tablet:px-4 tablet-landscape:has-[a:hover]:z-5 tablet-landscape:has-[a:hover]:scale-[102.5%] tablet-landscape:has-[a:hover]:shadow-all tablet-landscape:has-[a:hover]:drop-shadow-2xl laptop:px-6"
                             >
                               <div
                                 class="relative rounded-full after:absolute after:top-0 after:left-0 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
                               >
                                 <div
-                                  class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
+                                  class="w-16 safari-border-radius-fix overflow-hidden rounded-full drop-shadow-md tablet:w-20"
                                 >
                                   <img
                                     src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fstephen-king.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=80&amp;h=80&amp;q=80&amp;f=avif"
@@ -1087,15 +1144,20 @@
                                   />
                                 </div>
                               </div>
-                              <a
-                                class="font-sans text-sm leading-normal font-medium text-accent after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent"
-                                href="/authors/stephen-king/"
-                                >Stephen King</a
-                              >
-                              <div
-                                class="ml-auto font-sans text-sm text-nowrap text-subtle"
-                              >
-                                10
+                              <div class="flex flex-col justify-center">
+                                <a
+                                  class="text-base leading-normal font-semibold text-accent after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0"
+                                  href="/authors/stephen-king/"
+                                  ><div class="leading-normal">
+                                    Stephen King
+                                  </div></a
+                                >
+                                <div
+                                  class="mt-[6px] font-sans text-xs font-light tracking-prose text-nowrap text-subtle"
+                                >
+                                  10<!-- -->
+                                  Reviews
+                                </div>
                               </div>
                             </li>
                           </ol>
@@ -1113,13 +1175,13 @@
                         <div class="bg-subtle">
                           <ol>
                             <li
-                              class="group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-[102.5%] has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6 relative"
+                              class="group/list-item relative mb-1 flex max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-4 bg-default px-container py-4 transition-transform tablet:gap-x-6 tablet:px-4 tablet-landscape:has-[a:hover]:z-5 tablet-landscape:has-[a:hover]:scale-[102.5%] tablet-landscape:has-[a:hover]:shadow-all tablet-landscape:has-[a:hover]:drop-shadow-2xl laptop:px-6"
                             >
                               <div
                                 class="relative rounded-full after:absolute after:top-0 after:left-0 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
                               >
                                 <div
-                                  class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
+                                  class="w-16 safari-border-radius-fix overflow-hidden rounded-full drop-shadow-md tablet:w-20"
                                 >
                                   <img
                                     src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Frichard-laymon.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=80&amp;h=80&amp;q=80&amp;f=avif"
@@ -1135,15 +1197,20 @@
                                   />
                                 </div>
                               </div>
-                              <a
-                                class="font-sans text-sm leading-normal font-medium text-accent after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent"
-                                href="/authors/richard-laymon/"
-                                >Richard Laymon</a
-                              >
-                              <div
-                                class="ml-auto font-sans text-sm text-nowrap text-subtle"
-                              >
-                                10
+                              <div class="flex flex-col justify-center">
+                                <a
+                                  class="text-base leading-normal font-semibold text-accent after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0"
+                                  href="/authors/richard-laymon/"
+                                  ><div class="leading-normal">
+                                    Richard Laymon
+                                  </div></a
+                                >
+                                <div
+                                  class="mt-[6px] font-sans text-xs font-light tracking-prose text-nowrap text-subtle"
+                                >
+                                  10<!-- -->
+                                  Reviews
+                                </div>
                               </div>
                             </li>
                           </ol>
@@ -1161,13 +1228,13 @@
                         <div class="bg-subtle">
                           <ol>
                             <li
-                              class="group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-[102.5%] has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6 relative"
+                              class="group/list-item relative mb-1 flex max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-4 bg-default px-container py-4 transition-transform tablet:gap-x-6 tablet:px-4 tablet-landscape:has-[a:hover]:z-5 tablet-landscape:has-[a:hover]:scale-[102.5%] tablet-landscape:has-[a:hover]:shadow-all tablet-landscape:has-[a:hover]:drop-shadow-2xl laptop:px-6"
                             >
                               <div
                                 class="relative rounded-full after:absolute after:top-0 after:left-0 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
                               >
                                 <div
-                                  class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
+                                  class="w-16 safari-border-radius-fix overflow-hidden rounded-full drop-shadow-md tablet:w-20"
                                 >
                                   <div class="w-full">
                                     <svg
@@ -1185,15 +1252,20 @@
                                   </div>
                                 </div>
                               </div>
-                              <a
-                                class="font-sans text-sm leading-normal font-medium text-accent after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent"
-                                href="/authors/edmund-morris/"
-                                >Edmund Morris</a
-                              >
-                              <div
-                                class="ml-auto font-sans text-sm text-nowrap text-subtle"
-                              >
-                                1
+                              <div class="flex flex-col justify-center">
+                                <a
+                                  class="text-base leading-normal font-semibold text-accent after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0"
+                                  href="/authors/edmund-morris/"
+                                  ><div class="leading-normal">
+                                    Edmund Morris
+                                  </div></a
+                                >
+                                <div
+                                  class="mt-[6px] font-sans text-xs font-light tracking-prose text-nowrap text-subtle"
+                                >
+                                  1<!-- -->
+                                  Reviews
+                                </div>
                               </div>
                             </li>
                           </ol>
@@ -1211,13 +1283,13 @@
                         <div class="bg-subtle">
                           <ol>
                             <li
-                              class="group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-[102.5%] has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6 relative"
+                              class="group/list-item relative mb-1 flex max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-4 bg-default px-container py-4 transition-transform tablet:gap-x-6 tablet:px-4 tablet-landscape:has-[a:hover]:z-5 tablet-landscape:has-[a:hover]:scale-[102.5%] tablet-landscape:has-[a:hover]:shadow-all tablet-landscape:has-[a:hover]:drop-shadow-2xl laptop:px-6"
                             >
                               <div
                                 class="relative rounded-full after:absolute after:top-0 after:left-0 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
                               >
                                 <div
-                                  class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
+                                  class="w-16 safari-border-radius-fix overflow-hidden rounded-full drop-shadow-md tablet:w-20"
                                 >
                                   <div class="w-full">
                                     <svg
@@ -1235,15 +1307,20 @@
                                   </div>
                                 </div>
                               </div>
-                              <a
-                                class="font-sans text-sm leading-normal font-medium text-accent after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent"
-                                href="/authors/steven-novella/"
-                                >Steven Novella</a
-                              >
-                              <div
-                                class="ml-auto font-sans text-sm text-nowrap text-subtle"
-                              >
-                                1
+                              <div class="flex flex-col justify-center">
+                                <a
+                                  class="text-base leading-normal font-semibold text-accent after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0"
+                                  href="/authors/steven-novella/"
+                                  ><div class="leading-normal">
+                                    Steven Novella
+                                  </div></a
+                                >
+                                <div
+                                  class="mt-[6px] font-sans text-xs font-light tracking-prose text-nowrap text-subtle"
+                                >
+                                  1<!-- -->
+                                  Reviews
+                                </div>
                               </div>
                             </li>
                           </ol>
@@ -1261,13 +1338,13 @@
                         <div class="bg-subtle">
                           <ol>
                             <li
-                              class="group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-[102.5%] has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6 relative"
+                              class="group/list-item relative mb-1 flex max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-4 bg-default px-container py-4 transition-transform tablet:gap-x-6 tablet:px-4 tablet-landscape:has-[a:hover]:z-5 tablet-landscape:has-[a:hover]:scale-[102.5%] tablet-landscape:has-[a:hover]:shadow-all tablet-landscape:has-[a:hover]:drop-shadow-2xl laptop:px-6"
                             >
                               <div
                                 class="relative rounded-full after:absolute after:top-0 after:left-0 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
                               >
                                 <div
-                                  class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
+                                  class="w-16 safari-border-radius-fix overflow-hidden rounded-full drop-shadow-md tablet:w-20"
                                 >
                                   <img
                                     src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fchuck-palahniuk.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=80&amp;h=80&amp;q=80&amp;f=avif"
@@ -1283,15 +1360,20 @@
                                   />
                                 </div>
                               </div>
-                              <a
-                                class="font-sans text-sm leading-normal font-medium text-accent after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent"
-                                href="/authors/chuck-palahniuk/"
-                                >Chuck Palahniuk</a
-                              >
-                              <div
-                                class="ml-auto font-sans text-sm text-nowrap text-subtle"
-                              >
-                                2
+                              <div class="flex flex-col justify-center">
+                                <a
+                                  class="text-base leading-normal font-semibold text-accent after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0"
+                                  href="/authors/chuck-palahniuk/"
+                                  ><div class="leading-normal">
+                                    Chuck Palahniuk
+                                  </div></a
+                                >
+                                <div
+                                  class="mt-[6px] font-sans text-xs font-light tracking-prose text-nowrap text-subtle"
+                                >
+                                  2<!-- -->
+                                  Reviews
+                                </div>
                               </div>
                             </li>
                           </ol>
@@ -1309,13 +1391,13 @@
                         <div class="bg-subtle">
                           <ol>
                             <li
-                              class="group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-[102.5%] has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6 relative"
+                              class="group/list-item relative mb-1 flex max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-4 bg-default px-container py-4 transition-transform tablet:gap-x-6 tablet:px-4 tablet-landscape:has-[a:hover]:z-5 tablet-landscape:has-[a:hover]:scale-[102.5%] tablet-landscape:has-[a:hover]:shadow-all tablet-landscape:has-[a:hover]:drop-shadow-2xl laptop:px-6"
                             >
                               <div
                                 class="relative rounded-full after:absolute after:top-0 after:left-0 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
                               >
                                 <div
-                                  class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
+                                  class="w-16 safari-border-radius-fix overflow-hidden rounded-full drop-shadow-md tablet:w-20"
                                 >
                                   <div class="w-full">
                                     <svg
@@ -1333,15 +1415,20 @@
                                   </div>
                                 </div>
                               </div>
-                              <a
-                                class="font-sans text-sm leading-normal font-medium text-accent after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent"
-                                href="/authors/andrew-roberts/"
-                                >Andrew Roberts</a
-                              >
-                              <div
-                                class="ml-auto font-sans text-sm text-nowrap text-subtle"
-                              >
-                                1
+                              <div class="flex flex-col justify-center">
+                                <a
+                                  class="text-base leading-normal font-semibold text-accent after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0"
+                                  href="/authors/andrew-roberts/"
+                                  ><div class="leading-normal">
+                                    Andrew Roberts
+                                  </div></a
+                                >
+                                <div
+                                  class="mt-[6px] font-sans text-xs font-light tracking-prose text-nowrap text-subtle"
+                                >
+                                  1<!-- -->
+                                  Reviews
+                                </div>
                               </div>
                             </li>
                           </ol>
@@ -1359,13 +1446,13 @@
                         <div class="bg-subtle">
                           <ol>
                             <li
-                              class="group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-[102.5%] has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6 relative"
+                              class="group/list-item relative mb-1 flex max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-4 bg-default px-container py-4 transition-transform tablet:gap-x-6 tablet:px-4 tablet-landscape:has-[a:hover]:z-5 tablet-landscape:has-[a:hover]:scale-[102.5%] tablet-landscape:has-[a:hover]:shadow-all tablet-landscape:has-[a:hover]:drop-shadow-2xl laptop:px-6"
                             >
                               <div
                                 class="relative rounded-full after:absolute after:top-0 after:left-0 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
                               >
                                 <div
-                                  class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
+                                  class="w-16 safari-border-radius-fix overflow-hidden rounded-full drop-shadow-md tablet:w-20"
                                 >
                                   <div class="w-full">
                                     <svg
@@ -1383,25 +1470,30 @@
                                   </div>
                                 </div>
                               </div>
-                              <a
-                                class="font-sans text-sm leading-normal font-medium text-accent after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent"
-                                href="/authors/julie-sherman/"
-                                >Julie Sherman</a
-                              >
-                              <div
-                                class="ml-auto font-sans text-sm text-nowrap text-subtle"
-                              >
-                                1
+                              <div class="flex flex-col justify-center">
+                                <a
+                                  class="text-base leading-normal font-semibold text-accent after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0"
+                                  href="/authors/julie-sherman/"
+                                  ><div class="leading-normal">
+                                    Julie Sherman
+                                  </div></a
+                                >
+                                <div
+                                  class="mt-[6px] font-sans text-xs font-light tracking-prose text-nowrap text-subtle"
+                                >
+                                  1<!-- -->
+                                  Reviews
+                                </div>
                               </div>
                             </li>
                             <li
-                              class="group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-[102.5%] has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6 relative"
+                              class="group/list-item relative mb-1 flex max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-4 bg-default px-container py-4 transition-transform tablet:gap-x-6 tablet:px-4 tablet-landscape:has-[a:hover]:z-5 tablet-landscape:has-[a:hover]:scale-[102.5%] tablet-landscape:has-[a:hover]:shadow-all tablet-landscape:has-[a:hover]:drop-shadow-2xl laptop:px-6"
                             >
                               <div
                                 class="relative rounded-full after:absolute after:top-0 after:left-0 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
                               >
                                 <div
-                                  class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
+                                  class="w-16 safari-border-radius-fix overflow-hidden rounded-full drop-shadow-md tablet:w-20"
                                 >
                                   <div class="w-full">
                                     <svg
@@ -1419,25 +1511,30 @@
                                   </div>
                                 </div>
                               </div>
-                              <a
-                                class="font-sans text-sm leading-normal font-medium text-accent after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent"
-                                href="/authors/john-skipp/"
-                                >John Skipp</a
-                              >
-                              <div
-                                class="ml-auto font-sans text-sm text-nowrap text-subtle"
-                              >
-                                1
+                              <div class="flex flex-col justify-center">
+                                <a
+                                  class="text-base leading-normal font-semibold text-accent after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0"
+                                  href="/authors/john-skipp/"
+                                  ><div class="leading-normal">
+                                    John Skipp
+                                  </div></a
+                                >
+                                <div
+                                  class="mt-[6px] font-sans text-xs font-light tracking-prose text-nowrap text-subtle"
+                                >
+                                  1<!-- -->
+                                  Reviews
+                                </div>
                               </div>
                             </li>
                             <li
-                              class="group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-[102.5%] has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6 relative"
+                              class="group/list-item relative mb-1 flex max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-4 bg-default px-container py-4 transition-transform tablet:gap-x-6 tablet:px-4 tablet-landscape:has-[a:hover]:z-5 tablet-landscape:has-[a:hover]:scale-[102.5%] tablet-landscape:has-[a:hover]:shadow-all tablet-landscape:has-[a:hover]:drop-shadow-2xl laptop:px-6"
                             >
                               <div
                                 class="relative rounded-full after:absolute after:top-0 after:left-0 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
                               >
                                 <div
-                                  class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
+                                  class="w-16 safari-border-radius-fix overflow-hidden rounded-full drop-shadow-md tablet:w-20"
                                 >
                                   <div class="w-full">
                                     <svg
@@ -1455,25 +1552,30 @@
                                   </div>
                                 </div>
                               </div>
-                              <a
-                                class="font-sans text-sm leading-normal font-medium text-accent after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent"
-                                href="/authors/craig-spector/"
-                                >Craig Spector</a
-                              >
-                              <div
-                                class="ml-auto font-sans text-sm text-nowrap text-subtle"
-                              >
-                                1
+                              <div class="flex flex-col justify-center">
+                                <a
+                                  class="text-base leading-normal font-semibold text-accent after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0"
+                                  href="/authors/craig-spector/"
+                                  ><div class="leading-normal">
+                                    Craig Spector
+                                  </div></a
+                                >
+                                <div
+                                  class="mt-[6px] font-sans text-xs font-light tracking-prose text-nowrap text-subtle"
+                                >
+                                  1<!-- -->
+                                  Reviews
+                                </div>
                               </div>
                             </li>
                             <li
-                              class="group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-[102.5%] has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6 relative"
+                              class="group/list-item relative mb-1 flex max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-4 bg-default px-container py-4 transition-transform tablet:gap-x-6 tablet:px-4 tablet-landscape:has-[a:hover]:z-5 tablet-landscape:has-[a:hover]:scale-[102.5%] tablet-landscape:has-[a:hover]:shadow-all tablet-landscape:has-[a:hover]:drop-shadow-2xl laptop:px-6"
                             >
                               <div
                                 class="relative rounded-full after:absolute after:top-0 after:left-0 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
                               >
                                 <div
-                                  class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
+                                  class="w-16 safari-border-radius-fix overflow-hidden rounded-full drop-shadow-md tablet:w-20"
                                 >
                                   <img
                                     src="/_image/?href=%2Fcontent%2Fassets%2Favatars%2Fbram-stoker.png%3ForigWidth%3D500%26origHeight%3D500%26origFormat%3Dpng&amp;w=80&amp;h=80&amp;q=80&amp;f=avif"
@@ -1489,15 +1591,20 @@
                                   />
                                 </div>
                               </div>
-                              <a
-                                class="font-sans text-sm leading-normal font-medium text-accent after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent"
-                                href="/authors/bram-stoker/"
-                                >Bram Stoker</a
-                              >
-                              <div
-                                class="ml-auto font-sans text-sm text-nowrap text-subtle"
-                              >
-                                1
+                              <div class="flex flex-col justify-center">
+                                <a
+                                  class="text-base leading-normal font-semibold text-accent after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0"
+                                  href="/authors/bram-stoker/"
+                                  ><div class="leading-normal">
+                                    Bram Stoker
+                                  </div></a
+                                >
+                                <div
+                                  class="mt-[6px] font-sans text-xs font-light tracking-prose text-nowrap text-subtle"
+                                >
+                                  1<!-- -->
+                                  Reviews
+                                </div>
                               </div>
                             </li>
                           </ol>
@@ -1515,13 +1622,13 @@
                         <div class="bg-subtle">
                           <ol>
                             <li
-                              class="group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-[102.5%] has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl bg-default items-center tablet:py-6 relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6 relative"
+                              class="group/list-item relative mb-1 flex max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-4 bg-default px-container py-4 transition-transform tablet:gap-x-6 tablet:px-4 tablet-landscape:has-[a:hover]:z-5 tablet-landscape:has-[a:hover]:scale-[102.5%] tablet-landscape:has-[a:hover]:shadow-all tablet-landscape:has-[a:hover]:drop-shadow-2xl laptop:px-6"
                             >
                               <div
                                 class="relative rounded-full after:absolute after:top-0 after:left-0 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
                               >
                                 <div
-                                  class="w-16 safari-border-radius-fix overflow-hidden rounded-full shadow-(--bg-avatar-default) tablet:w-20"
+                                  class="w-16 safari-border-radius-fix overflow-hidden rounded-full drop-shadow-md tablet:w-20"
                                 >
                                   <div class="w-full">
                                     <svg
@@ -1539,15 +1646,20 @@
                                   </div>
                                 </div>
                               </div>
-                              <a
-                                class="font-sans text-sm leading-normal font-medium text-accent after:absolute after:top-0 after:left-0 after:size-full after:opacity-0 hover:text-accent"
-                                href="/authors/jocko-willink/"
-                                >Jocko Willink</a
-                              >
-                              <div
-                                class="ml-auto font-sans text-sm text-nowrap text-subtle"
-                              >
-                                1
+                              <div class="flex flex-col justify-center">
+                                <a
+                                  class="text-base leading-normal font-semibold text-accent after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0"
+                                  href="/authors/jocko-willink/"
+                                  ><div class="leading-normal">
+                                    Jocko Willink
+                                  </div></a
+                                >
+                                <div
+                                  class="mt-[6px] font-sans text-xs font-light tracking-prose text-nowrap text-subtle"
+                                >
+                                  1<!-- -->
+                                  Reviews
+                                </div>
                               </div>
                             </li>
                           </ol>
@@ -1560,21 +1672,41 @@
                   </div>
                   <div
                     aria-hidden="true"
-                    class="invisible fixed inset-0 bg-[rgba(0,0,0,.4)] opacity-0 transition-opacity duration-200 tablet-landscape:hidden"
+                    class="invisible fixed inset-0 bg-[rgba(0,0,0,.4)] opacity-0 transition-opacity duration-200"
                   ></div>
                   <div
                     aria-label="Filters"
-                    class="fixed top-0 right-0 z-50 flex h-full max-w-[380px] flex-col items-start gap-y-5 bg-default text-left text-inverse duration-200 ease-in-out w-0 transform-[translateX(100%)] overflow-y-hidden tablet:gap-y-10 tablet-landscape:relative tablet-landscape:z-auto tablet-landscape:col-start-4 tablet-landscape:block tablet-landscape:w-auto tablet-landscape:max-w-none tablet-landscape:min-w-[320px] tablet-landscape:transform-none tablet-landscape:scroll-mt-[calc(25px_+_var(--scroll-offset,0px))] tablet-landscape:overflow-y-visible tablet-landscape:bg-inherit tablet-landscape:py-24 tablet-landscape:pb-12 tablet-landscape:drop-shadow-none laptop:w-[33%]"
+                    class="fixed top-0 right-0 z-filter-drawer flex h-full max-w-[380px] flex-col items-start gap-y-5 bg-default text-left text-inverse duration-200 ease-in-out w-0 transform-[translateX(100%)] overflow-y-hidden tablet:gap-y-10"
                     id="filters"
                   >
                     <div
-                      class="flex h-full w-full flex-col text-sm tablet:pt-12 tablet:text-base tablet-landscape:h-auto tablet-landscape:overflow-visible tablet-landscape:bg-default tablet-landscape:px-container tablet-landscape:pt-0 laptop:px-8"
+                      class="flex h-full w-full flex-col text-sm tablet:text-base [@media(min-height:815px)]:pt-12"
                     >
+                      <button
+                        aria-label="Close filters"
+                        class="absolute top-7 right-4 z-10 flex h-10 w-10 transform-gpu cursor-pointer items-center justify-center rounded-full bg-canvas text-default drop-shadow-md transition-transform hover:scale-105"
+                        type="button"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="h-4 w-4 transform-gpu"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          viewBox="0 0 28 28"
+                        >
+                          <path
+                            d="M7 21L21 7M7 7l14 14"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                        </svg>
+                      </button>
                       <fieldset
-                        class="flex grow flex-col gap-5 px-container pb-4 [--control-scroll-offset:calc(181px_+_var(--scroll-offset,0px))] tablet:gap-8 tablet-landscape:mt-0 tablet-landscape:gap-12 tablet-landscape:px-0 tablet-landscape:py-10"
+                        class="mt-0 flex h-full grow flex-col gap-5 px-container py-10 tablet:gap-8 tablet-landscape:grow-0 tablet-landscape:gap-12 tablet-landscape:px-12"
                       >
                         <legend
-                          class="mb-5 block w-full pt-4 pb-4 text-lg text-subtle shadow-bottom tablet-landscape:mb-0 tablet-landscape:pt-10 tablet-landscape:pb-8 tablet-landscape:font-sans tablet-landscape:text-xxs tablet-landscape:font-semibold tablet-landscape:tracking-wide tablet-landscape:uppercase"
+                          class="block w-full pt-10 pb-8 font-sans text-lg text-xxs font-semibold tracking-wide text-subtle uppercase shadow-bottom"
                         >
                           Filter
                         </legend>
@@ -1583,22 +1715,32 @@
                             class="inline-block h-6 text-left font-sans text-xxs leading-none tracking-wide text-subtle uppercase"
                             >Name</span
                           ><input
-                            class="border-0 bg-default px-4 py-2 text-base text-default shadow-all placeholder:text-default placeholder:opacity-50"
+                            class="border-0 bg-default px-4 py-2 text-base text-default shadow-all outline-accent placeholder:text-default placeholder:opacity-50"
                             placeholder="Enter all or part of a name"
                             type="text"
+                            value=""
                         /></label>
                       </fieldset>
                       <div
-                        class="sticky bottom-0 z-10 mt-auto w-full self-end border-t border-t-default bg-default px-8 py-4 drop-shadow-2xl tablet-landscape:hidden"
+                        class="sticky bottom-0 z-filter-footer mt-auto w-full self-end border-t border-t-default bg-default px-8 py-4 drop-shadow-2xl tablet-landscape:px-12"
                       >
-                        <button
-                          class="flex w-full cursor-pointer items-center justify-center gap-x-4 bg-footer px-4 py-3 font-sans text-xs text-nowrap text-inverse uppercase tablet-landscape:hidden"
-                          type="button"
-                        >
-                          View
-                          <!-- -->19<!-- -->
-                          Results
-                        </button>
+                        <div class="flex gap-x-4">
+                          <button
+                            aria-label="Clear all filters"
+                            class="flex items-center justify-center gap-x-4 rounded-sm bg-canvas px-4 py-3 font-sans text-xs text-nowrap uppercase cursor-not-allowed text-muted opacity-50"
+                            disabled=""
+                            type="button"
+                          >
+                            Clear</button
+                          ><button
+                            class="flex flex-1 cursor-pointer items-center justify-center gap-x-4 rounded-sm bg-footer px-4 py-3 font-sans text-xs text-nowrap text-inverse uppercase"
+                            type="button"
+                          >
+                            View<!-- -->
+                            <!-- -->19<!-- -->
+                            <!-- -->Results
+                          </button>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -1614,7 +1756,7 @@
               class="flex w-full flex-col tablet:flex-row-reverse tablet:justify-between"
             >
               <a
-                class="mx-auto mb-8 w-full max-w-button transform-gpu bg-footer py-5 text-center font-sans text-xs tracking-wide text-inverse uppercase transition-all hover:scale-105 hover:bg-subtle hover:text-default tablet:mx-0"
+                class="mx-auto mb-8 w-full max-w-button transform-gpu rounded-md bg-footer py-5 text-center font-sans text-xs tracking-wide text-inverse uppercase transition-all hover:scale-105 hover:bg-subtle hover:text-default tablet:mx-0"
                 href="#top"
                 >To the top</a
               >
@@ -1699,54 +1841,64 @@
               <div
                 class="flex w-full max-w-button grow flex-col gap-20 pt-10 pb-20 tablet:basis-button tablet:pr-10"
               >
-                <ul class="flex w-full flex-col gap-y-10 desktop:w-auto">
-                  <li class="block w-1/2 text-2xl whitespace-nowrap">
+                <ol class="flex w-full flex-col gap-y-10 desktop:w-auto">
+                  <li
+                    class="block w-1/2 text-2xl whitespace-nowrap laptop:w-full"
+                  >
                     <a
-                      class="block origin-left transform-gpu transition-all hover:scale-105"
+                      class="relative inline-block origin-left transform-gpu transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-(--fg-inverse)/75 after:transition-transform hover:after:scale-x-100"
                       href="/"
                       >Home</a
                     >
                   </li>
-                  <li class="block w-1/2 text-2xl whitespace-nowrap">
+                  <li
+                    class="block w-1/2 text-2xl whitespace-nowrap laptop:w-full"
+                  >
                     <a
-                      class="block origin-left transform-gpu transition-all hover:scale-105"
+                      class="relative inline-block origin-left transform-gpu transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-(--fg-inverse)/75 after:transition-transform hover:after:scale-x-100"
                       href="/how-i-grade/"
                       >How I Grade</a
                     >
                   </li>
-                  <li class="block w-1/2 text-2xl whitespace-nowrap">
+                  <li
+                    class="block w-1/2 text-2xl whitespace-nowrap laptop:w-full"
+                  >
                     <a
-                      class="block origin-left transform-gpu transition-all hover:scale-105"
+                      class="relative inline-block origin-left transform-gpu transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-(--fg-inverse)/75 after:transition-transform hover:after:scale-x-100"
                       href="/reviews/"
                       >Reviews</a
                     >
                   </li>
-                  <li class="block w-1/2 text-2xl whitespace-nowrap">
+                  <li
+                    class="block w-1/2 text-2xl whitespace-nowrap laptop:w-full"
+                  >
                     <a
-                      class="block origin-left transform-gpu transition-all hover:scale-105"
+                      class="relative inline-block origin-left transform-gpu transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-(--fg-inverse)/75 after:transition-transform hover:after:scale-x-100"
                       href="/authors/"
                       >Authors</a
                     >
                   </li>
-                  <li class="block w-1/2 text-2xl whitespace-nowrap">
+                  <li
+                    class="block w-1/2 text-2xl whitespace-nowrap laptop:w-full"
+                  >
                     <a
-                      class="block origin-left transform-gpu transition-all hover:scale-105"
+                      class="relative inline-block origin-left transform-gpu transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-(--fg-inverse)/75 after:transition-transform hover:after:scale-x-100"
                       href="/readings/"
                       >Reading Log</a
                     >
                     <ol class="mt-4">
                       <li
-                        class="mb-4 ml-1 font-sans text-xs tracking-wide text-subtle uppercase last:mb-0"
+                        class="mb-3 ml-1 font-sans text-xs tracking-wider text-inverse-subtle uppercase last:-mb-1"
                       >
                         <a
-                          class="block origin-left transform-gpu transition-all hover:scale-105 hover:text-default"
+                          class="relative inline-block origin-left transform-gpu pb-1 transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-(--fg-inverse)/75 after:transition-transform hover:text-inverse hover:after:scale-x-100"
                           href="/readings/stats/"
                           >Stats</a
                         >
                       </li>
                     </ol>
                   </li>
-                </ul>
+                </ol>
               </div>
             </div>
           </div>
@@ -1767,11 +1919,11 @@
     </div>
     <dialog
       aria-label="Search"
-      class="fixed inset-x-4 m-auto h-screen w-full rounded-lg border border-default bg-default shadow-lg backdrop:bg-[#000] backdrop:opacity-40 open:flex open:flex-col tablet:mx-auto tablet:mt-16 tablet:h-min tablet:max-h-[min(100vh-128px,900px)] tablet:max-w-[min(100vw-64px,36rem)] tablet:rounded-xl desktop:min-h-0"
+      class="fixed inset-x-4 m-auto h-screen w-full rounded-lg border border-default bg-default shadow-lg backdrop:bg-[#000] backdrop:opacity-40 open:flex open:flex-col tablet:mx-auto tablet:mt-16 tablet:h-min tablet:max-h-[min(100vh-128px,900px)] tablet:max-w-[min(100vw-64px,36rem)] tablet:rounded-xl"
     >
       <div class="contents" data-dialog-frame>
         <button
-          class="absolute right-4 z-10 mt-5 h-6 cursor-pointer border-none bg-subtle px-2 font-mono text-xs font-light text-muted hover:bg-inverse hover:text-inverse focus:outline-accent tablet:right-6 laptop:right-8"
+          class="absolute right-4 z-sticky mt-5 h-6 cursor-pointer border-none bg-subtle px-2 font-mono text-xs font-light text-muted hover:bg-inverse hover:text-inverse focus:outline-accent tablet:right-6 laptop:right-8"
           data-close-modal
         >
           ESC
@@ -1882,6 +2034,10 @@
     <script
       type="module"
       src="/src/layouts/Layout.astro?astro&type=script&index=0&lang.ts"
+    ></script>
+    <script
+      type="module"
+      src="/Users/frank/Developer/franksbooklog.com/src/layouts/Layout.astro?astro&type=script&index=1&lang.ts"
     ></script>
   </body>
 </html>

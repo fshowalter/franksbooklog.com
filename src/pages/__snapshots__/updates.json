@@ -1,35 +1,27 @@
 [
   {
     "authors": ["Richard Laymon"],
-    "date": "2025-02-15T00:00:00.000Z",
-    "image": "/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D667%26origFormat%3Dpng&w=500&h=667&q=100&f=png",
-    "slug": "the-lonely-one-by-richard-laymon",
+    "date": "2014-09-21T00:00:00.000Z",
+    "image": "/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftread-softly-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D796%26origFormat%3Dpng&w=500&h=796&q=100&f=png",
+    "slug": "tread-softly-by-richard-laymon",
     "stars": 3,
-    "title": "The Lonely One"
-  },
-  {
-    "authors": ["Arthur C. Clarke"],
-    "date": "2025-01-15T00:00:00.000Z",
-    "image": "/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=500&h=750&q=100&f=png",
-    "slug": "2001-a-space-odyssey-by-arthur-c-clarke",
-    "stars": 5,
-    "title": "2001: A Space Odyssey"
-  },
-  {
-    "authors": ["John Skipp", "Craig Spector"],
-    "date": "2023-01-21T00:00:00.000Z",
-    "image": "/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ffright-night-by-john-skipp-craig-spector.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=500&h=750&q=100&f=png",
-    "slug": "fright-night-by-john-skipp-craig-spector",
-    "stars": 1,
-    "title": "Fright Night"
+    "title": "Tread Softly"
   },
   {
     "authors": ["Richard Laymon"],
-    "date": "2023-01-21T00:00:00.000Z",
-    "image": "/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fshort-stories-volume-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=500&h=750&q=100&f=png",
-    "slug": "roadside-pickup-by-richard-laymon",
-    "stars": 2.5,
-    "title": "Roadside Pickup"
+    "date": "2022-09-11T00:00:00.000Z",
+    "image": "/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=500&h=750&q=100&f=png",
+    "slug": "the-woods-are-dark-by-richard-laymon",
+    "stars": 3,
+    "title": "The Woods Are Dark"
+  },
+  {
+    "authors": ["Steven Novella"],
+    "date": "2022-10-29T00:00:00.000Z",
+    "image": "/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-skeptics-guide-to-the-universe-by-steven-novella.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=500&h=750&q=100&f=png",
+    "slug": "the-skeptics-guide-to-the-universe-by-steven-novella",
+    "stars": 4,
+    "title": "The Skeptics' Guide to the Universe"
   },
   {
     "authors": ["Stephen King"],
@@ -40,11 +32,19 @@
     "title": "The Shining"
   },
   {
-    "authors": ["Steven Novella"],
-    "date": "2022-10-29T00:00:00.000Z",
-    "image": "/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-skeptics-guide-to-the-universe-by-steven-novella.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=500&h=750&q=100&f=png",
-    "slug": "the-skeptics-guide-to-the-universe-by-steven-novella",
-    "stars": 4,
-    "title": "The Skeptics' Guide to the Universe"
+    "authors": ["Edmund Morris"],
+    "date": "2022-05-07T00:00:00.000Z",
+    "image": "/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-rise-of-theodore-roosevelt-by-edmund-morris.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=500&h=750&q=100&f=png",
+    "slug": "the-rise-of-theodore-roosevelt-by-edmund-morris",
+    "stars": 4.5,
+    "title": "The Rise of Theodore Roosevelt"
+  },
+  {
+    "authors": ["Richard Laymon"],
+    "date": "2025-02-15T00:00:00.000Z",
+    "image": "/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D667%26origFormat%3Dpng&w=500&h=667&q=100&f=png",
+    "slug": "the-lonely-one-by-richard-laymon",
+    "stars": 3,
+    "title": "The Lonely One"
   }
 ]

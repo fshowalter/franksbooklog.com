@@ -5,7 +5,6 @@
   "reviewedWorks": [
     {
       "title": "The Rise of Theodore Roosevelt",
-      "yearPublished": "1979",
       "kind": "Nonfiction",
       "slug": "the-rise-of-theodore-roosevelt-by-edmund-morris",
       "sortTitle": "Rise of Theodore Roosevelt",
@@ -21,9 +20,14 @@
       ],
       "includedInSlugs": [],
       "reviewDate": "2022-05-07",
-      "reviewSequence": "2022-05-07-3",
+      "reviewSequence": 276,
       "subtitle": null,
-      "yearReviewed": 2022
+      "workYear": "2000",
+      "workYearSequence": 120,
+      "authorSequence": 120,
+      "titleSequence": 120,
+      "gradeSequence": 120,
+      "reviewYear": "2022"
     }
   ]
 }

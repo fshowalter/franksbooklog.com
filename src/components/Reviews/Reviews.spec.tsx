@@ -23,7 +23,7 @@ describe("Reviews", () => {
       await new Promise((r) => setTimeout(r, 500));
     });
 
-    expect(screen.getByTestId("list")).toMatchSnapshot();
+    expect(screen.getByTestId("grouped-cover-list")).toMatchSnapshot();
   });
 
   it("can filter by kind", async ({ expect }) => {
@@ -32,7 +32,7 @@ describe("Reviews", () => {
 
     await userEvent.selectOptions(screen.getByLabelText("Kind"), "Novel");
 
-    expect(screen.getByTestId("list")).toMatchSnapshot();
+    expect(screen.getByTestId("grouped-cover-list")).toMatchSnapshot();
   });
 
   it("can filter by kind then show all", async ({ expect }) => {
@@ -43,7 +43,7 @@ describe("Reviews", () => {
     await userEvent.selectOptions(screen.getByLabelText("Kind"), "Novel");
     await userEvent.selectOptions(screen.getByLabelText("Kind"), "All");
 
-    expect(screen.getByTestId("list")).toMatchSnapshot();
+    expect(screen.getByTestId("grouped-cover-list")).toMatchSnapshot();
   });
 
   it("can sort by author z->a", async ({ expect }) => {
@@ -56,7 +56,7 @@ describe("Reviews", () => {
       "Author (Z → A)",
     );
 
-    expect(screen.getByTestId("list")).toMatchSnapshot();
+    expect(screen.getByTestId("grouped-cover-list")).toMatchSnapshot();
   });
 
   it("can sort by date reviewed with newest first", async ({ expect }) => {
@@ -69,7 +69,7 @@ describe("Reviews", () => {
       "Review Date (Newest First)",
     );
 
-    expect(screen.getByTestId("list")).toMatchSnapshot();
+    expect(screen.getByTestId("grouped-cover-list")).toMatchSnapshot();
   });
 
   it("can sort by date reviewed with oldest first", async ({ expect }) => {
@@ -82,7 +82,7 @@ describe("Reviews", () => {
       "Review Date (Oldest First)",
     );
 
-    expect(screen.getByTestId("list")).toMatchSnapshot();
+    expect(screen.getByTestId("grouped-cover-list")).toMatchSnapshot();
   });
 
   it("can sort by title a->z", async ({ expect }) => {
@@ -95,7 +95,7 @@ describe("Reviews", () => {
       "Title (A → Z)",
     );
 
-    expect(screen.getByTestId("list")).toMatchSnapshot();
+    expect(screen.getByTestId("grouped-cover-list")).toMatchSnapshot();
   });
 
   it("can sort by title z->a", async ({ expect }) => {
@@ -108,7 +108,7 @@ describe("Reviews", () => {
       "Title (Z → A)",
     );
 
-    expect(screen.getByTestId("list")).toMatchSnapshot();
+    expect(screen.getByTestId("grouped-cover-list")).toMatchSnapshot();
   });
 
   it("can sort by year published with oldest first", async ({ expect }) => {
@@ -121,7 +121,7 @@ describe("Reviews", () => {
       "Work Year (Oldest First)",
     );
 
-    expect(screen.getByTestId("list")).toMatchSnapshot();
+    expect(screen.getByTestId("grouped-cover-list")).toMatchSnapshot();
   });
 
   it("can sort by year published with newest first", async ({ expect }) => {
@@ -134,7 +134,7 @@ describe("Reviews", () => {
       "Work Year (Newest First)",
     );
 
-    expect(screen.getByTestId("list")).toMatchSnapshot();
+    expect(screen.getByTestId("grouped-cover-list")).toMatchSnapshot();
   });
 
   it("can sort by grade with best first", async ({ expect }) => {
@@ -147,7 +147,7 @@ describe("Reviews", () => {
       "Grade (Best First)",
     );
 
-    expect(screen.getByTestId("list")).toMatchSnapshot();
+    expect(screen.getByTestId("grouped-cover-list")).toMatchSnapshot();
   });
 
   it("can sort by grade with worst first", async ({ expect }) => {
@@ -160,7 +160,7 @@ describe("Reviews", () => {
       "Grade (Worst First)",
     );
 
-    expect(screen.getByTestId("list")).toMatchSnapshot();
+    expect(screen.getByTestId("grouped-cover-list")).toMatchSnapshot();
   });
 
   it("sorts abandoned readings first", async ({ expect }) => {
@@ -173,7 +173,7 @@ describe("Reviews", () => {
       "Grade (Worst First)",
     );
 
-    expect(screen.getByTestId("list")).toMatchSnapshot();
+    expect(screen.getByTestId("grouped-cover-list")).toMatchSnapshot();
   });
 
   it("can filter by year published", async ({ expect }) => {
@@ -190,7 +190,7 @@ describe("Reviews", () => {
     await userEvent.selectOptions(fromInput, "1980");
     await userEvent.selectOptions(toInput, "1989");
 
-    expect(screen.getByTestId("list")).toMatchSnapshot();
+    expect(screen.getByTestId("grouped-cover-list")).toMatchSnapshot();
   });
 
   it("can filter by year published reversed", async ({ expect }) => {
@@ -209,7 +209,7 @@ describe("Reviews", () => {
     await userEvent.selectOptions(fromInput, "2015");
     await userEvent.selectOptions(toInput, "1977");
 
-    expect(screen.getByTestId("list")).toMatchSnapshot();
+    expect(screen.getByTestId("grouped-cover-list")).toMatchSnapshot();
   });
 
   it("can filter by year reviewed", async ({ expect }) => {
@@ -224,7 +224,7 @@ describe("Reviews", () => {
     await userEvent.selectOptions(fromInput, "2022");
     await userEvent.selectOptions(toInput, "2022");
 
-    expect(screen.getByTestId("list")).toMatchSnapshot();
+    expect(screen.getByTestId("grouped-cover-list")).toMatchSnapshot();
   });
 
   it("can filter by year reviewed reversed", async ({ expect }) => {
@@ -241,7 +241,7 @@ describe("Reviews", () => {
     await userEvent.selectOptions(fromInput, "2022");
     await userEvent.selectOptions(toInput, "2022");
 
-    expect(screen.getByTestId("list")).toMatchSnapshot();
+    expect(screen.getByTestId("grouped-cover-list")).toMatchSnapshot();
   });
 
   it("can show more items when button is clicked", async ({ expect }) => {
@@ -269,6 +269,6 @@ describe("Reviews", () => {
     await userEvent.click(showMoreButton);
 
     // Snapshot the result to verify more items are rendered
-    expect(screen.getByTestId("list")).toMatchSnapshot();
+    expect(screen.getByTestId("grouped-cover-list")).toMatchSnapshot();
   });
 });

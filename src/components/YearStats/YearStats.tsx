@@ -40,7 +40,6 @@ export function YearStats({
         centerText={true}
         deck={deck}
         imageProps={backdropImageProps}
-        size="small"
         title={`${year} Stats`}
       />
       <StatsNavigation

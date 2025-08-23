@@ -16,16 +16,7 @@
       content="Reviews of books and stories written by Richard Laymon. Sort reviews by best or worst, newest or oldest. Filter by year, kind, or title."
       name="description"
     />
-    <meta
-      content="#f2f0e8"
-      media="(prefers-color-scheme: light)"
-      name="theme-color"
-    />
-    <meta
-      content="#484745"
-      media="(prefers-color-scheme: dark)"
-      name="theme-color"
-    />
+    <meta content="rgba(0,0,0,.85)" name="theme-color" />
     <link
       href="https://www.franksbooklog.com/feed.xml"
       rel="alternate"
@@ -51,7 +42,7 @@
     </title>
   </head>
   <body
-    class="h-full w-full bg-canvas text-default has-[#nav:checked]:fixed has-[#nav:checked]:overflow-y-scroll data-search-modal-open:overflow-hidden data-search-modal-open:before:fixed data-search-modal-open:before:inset-0 data-search-modal-open:before:z-50 data-search-modal-open:before:backdrop-blur-xs"
+    class="h-full w-full bg-canvas text-default data-search-modal-open:overflow-hidden data-search-modal-open:before:fixed data-search-modal-open:before:inset-0 data-search-modal-open:before:z-search-backdrop data-search-modal-open:before:backdrop-blur-xs [&#38;.nav-open]:overflow-hidden"
   >
     <style>
       astro-island,
@@ -262,23 +253,21 @@
       imagesizes="100vw"
       fetchpriority="high"
     />
-    <div class="group/layout">
+    <div class="group">
       <a
-        class="absolute top-0.5 left-1/2 z-50 mx-auto [transform:translate(-50%,calc(-100%-2px))] bg-subtle px-6 py-2 text-center text-accent focus:[transform:translate(-50%,0%)]"
+        class="absolute top-0.5 left-1/2 z-skip-link mx-auto [transform:translate(-50%,calc(-100%-2px))] bg-subtle px-6 py-2 text-center text-accent focus:[transform:translate(-50%,0%)]"
         href="#content"
         >Skip to content</a
       >
       <div class="flex min-h-full w-full flex-col bg-default">
         <header
-          class="group/mast z-20 flex w-full items-center justify-between px-container py-4 tablet:p-6 laptop:inset-x-0 laptop:z-40 laptop:flex-row laptop:flex-wrap laptop:px-16 laptop:py-8 laptop:text-left"
+          class="group z-30 flex w-full items-center justify-between px-container py-4 tablet:py-6 laptop:inset-x-0 laptop:z-40 laptop:flex-row laptop:flex-wrap laptop:px-16 laptop:py-8 laptop:text-left absolute [--mast-color:#fff] text-(--mast-color)"
           style="
             background-image: linear-gradient(
               to bottom,
               rgba(0, 0, 0, 0.85),
               transparent 95%
             );
-            color: #fff;
-            position: absolute;
           "
         >
           <div
@@ -297,50 +286,50 @@
             <nav class="hidden w-full laptop:block laptop:w-auto">
               <ul class="flex flex-wrap justify-start gap-x-6 text-xl">
                 <li
-                  class="block transform-gpu tracking-serif-wide whitespace-nowrap transition-transform has-[a:hover]:scale-105"
+                  class="block leading-10 tracking-serif-wide whitespace-nowrap transition-transform [body.nav-open_&amp;]:opacity-0"
                 >
                   <a
-                    class="text-inherit"
+                    class="relative block text-inherit after:absolute after:bottom-1 after:left-0 after:h-px after:w-full after:origin-center after:scale-x-0 after:bg-(--mast-color)/75 after:transition-transform hover:after:scale-x-100"
                     href="/"
                     style="text-shadow: 1px 1px 2px black"
                     >Home</a
                   >
                 </li>
                 <li
-                  class="block transform-gpu tracking-serif-wide whitespace-nowrap transition-transform has-[a:hover]:scale-105"
+                  class="block leading-10 tracking-serif-wide whitespace-nowrap transition-transform [body.nav-open_&amp;]:opacity-0"
                 >
                   <a
-                    class="text-inherit"
+                    class="relative block text-inherit after:absolute after:bottom-1 after:left-0 after:h-px after:w-full after:origin-center after:scale-x-0 after:bg-(--mast-color)/75 after:transition-transform hover:after:scale-x-100"
                     href="/how-i-grade/"
                     style="text-shadow: 1px 1px 2px black"
                     >How I Grade</a
                   >
                 </li>
                 <li
-                  class="block transform-gpu tracking-serif-wide whitespace-nowrap transition-transform has-[a:hover]:scale-105"
+                  class="block leading-10 tracking-serif-wide whitespace-nowrap transition-transform [body.nav-open_&amp;]:opacity-0"
                 >
                   <a
-                    class="text-inherit"
+                    class="relative block text-inherit after:absolute after:bottom-1 after:left-0 after:h-px after:w-full after:origin-center after:scale-x-0 after:bg-(--mast-color)/75 after:transition-transform hover:after:scale-x-100"
                     href="/reviews/"
                     style="text-shadow: 1px 1px 2px black"
                     >Reviews</a
                   >
                 </li>
                 <li
-                  class="block transform-gpu tracking-serif-wide whitespace-nowrap transition-transform has-[a:hover]:scale-105"
+                  class="block leading-10 tracking-serif-wide whitespace-nowrap transition-transform [body.nav-open_&amp;]:opacity-0"
                 >
                   <a
-                    class="text-inherit"
+                    class="relative block text-inherit after:absolute after:bottom-1 after:left-0 after:h-px after:w-full after:origin-center after:scale-x-0 after:bg-(--mast-color)/75 after:transition-transform hover:after:scale-x-100"
                     href="/authors/"
                     style="text-shadow: 1px 1px 2px black"
                     >Authors</a
                   >
                 </li>
                 <li
-                  class="block transform-gpu tracking-serif-wide whitespace-nowrap transition-transform has-[a:hover]:scale-105"
+                  class="block leading-10 tracking-serif-wide whitespace-nowrap transition-transform [body.nav-open_&amp;]:opacity-0"
                 >
                   <a
-                    class="text-inherit"
+                    class="relative block text-inherit after:absolute after:bottom-1 after:left-0 after:h-px after:w-full after:origin-center after:scale-x-0 after:bg-(--mast-color)/75 after:transition-transform hover:after:scale-x-100"
                     href="/readings/"
                     style="text-shadow: 1px 1px 2px black"
                     >Reading Log</a
@@ -348,19 +337,18 @@
                 </li>
               </ul>
             </nav>
-            <div
-              class="z-1000 transform-gpu transition-transform group-has-[#nav:checked]/mast:!text-[#fff] hover:scale-105"
-            >
+            <div class="z-1000 [body.nav-open_&amp;]:!text-[#fff]">
               <button
                 aria-keyshortcuts="Control+K"
                 aria-label="Search"
-                class="flex size-10 items-center justify-center overflow-hidden text-sm leading-6 ring-default laptop:ml-6"
+                class="flex size-10 transform-gpu cursor-pointer items-center justify-center overflow-hidden text-sm leading-6 ring-default transition-transform hover:scale-105 laptop:ml-6"
                 data-open-modal="true"
                 disabled=""
                 title="Search: Control+K"
                 type="button"
               >
                 <svg
+                  aria-hidden="true"
                   class="size-7"
                   fill="none"
                   stroke="currentColor"
@@ -376,74 +364,93 @@
                 </svg>
               </button>
             </div>
-            <div class="group">
-              <input class="hidden" id="nav" type="checkbox" /><label
-                class="relative z-40 ml-2 flex h-10 w-10 transform-gpu cursor-pointer items-center justify-center transition-transform hover:scale-110 laptop:hidden"
-                for="nav"
-                ><span
-                  class="relative block h-0.5 w-6 origin-center transition-[top,bottom,transform] duration-200 ease-in-out group-has-[#nav:checked]/mast:transform-[rotate(45deg)] group-has-[#nav:checked]/mast:!bg-[#fff] before:absolute before:-top-2 before:block before:h-0.5 before:w-6 before:bg-inherit before:transition before:duration-200 before:ease-in-out group-has-[#nav:checked]/mast:before:top-0 group-has-[#nav:checked]/mast:before:transform-[rotate(90deg)] after:absolute after:-bottom-2 after:block after:h-0.5 after:w-6 after:bg-inherit after:transition after:duration-200 after:ease-in-out group-has-[#nav:checked]/mast:after:bottom-0 group-has-[#nav:checked]/mast:after:transform-[rotate(90deg)]"
-                  style="background-color: #fff"
-                ></span
-              ></label>
-              <ul
-                class="fixed top-0 right-0 z-20 flex h-full w-0 transform-[translateX(100%)] flex-col items-start gap-y-5 overflow-hidden bg-footer text-left text-inverse opacity-0 duration-200 ease-in-out group-has-[#nav:checked]/mast:bottom-0 group-has-[#nav:checked]/mast:z-20 group-has-[#nav:checked]/mast:h-full group-has-[#nav:checked]/mast:w-full group-has-[#nav:checked]/mast:transform-[translateX(0)] group-has-[#nav:checked]/mast:overflow-y-auto group-has-[#nav:checked]/mast:pt-20 group-has-[#nav:checked]/mast:pr-[16%] group-has-[#nav:checked]/mast:pb-5 group-has-[#nav:checked]/mast:pl-[12%] group-has-[#nav:checked]/mast:opacity-100 tablet:max-w-[35vw] group-has-[#nav:checked]/mast:tablet:px-10 group-has-[#nav:checked]/mast:tablet:py-40 laptop:hidden"
+            <div
+              class="invisible fixed inset-0 bg-[rgba(0,0,0,.4)] opacity-0 transition-opacity duration-200 [body.nav-open_&amp;]:tablet:visible [body.nav-open_&amp;]:tablet:z-nav-backdrop [body.nav-open_&amp;]:tablet:opacity-100"
+              data-nav-backdrop="true"
+            ></div>
+            <button
+              aria-controls="nav-menu"
+              aria-expanded="false"
+              aria-label="Toggle navigation menu"
+              class="relative z-40 ml-2 flex h-10 w-10 transform-gpu cursor-pointer items-center justify-center transition-transform hover:scale-110 laptop:hidden"
+              data-nav-toggle="true"
+              type="button"
+            >
+              <span
+                aria-hidden="true"
+                class="relative flex h-0.5 w-6 origin-center transform-gpu transition-[top,bottom,transform] duration-200 ease-in-out before:absolute before:-top-2 before:block before:h-0.5 before:w-6 before:bg-inherit before:transition before:duration-200 before:ease-in-out after:absolute after:-bottom-2 after:block after:h-0.5 after:w-6 after:bg-inherit after:transition after:duration-200 after:ease-in-out [body.nav-open_&amp;]:transform-[rotate(45deg)] [body.nav-open_&amp;]:!bg-[#fff] [body.nav-open_&amp;]:before:top-0 [body.nav-open_&amp;]:before:transform-[rotate(90deg)] [body.nav-open_&amp;]:after:bottom-0 [body.nav-open_&amp;]:after:transform-[rotate(90deg)]"
+                style="background-color: #fff"
+              ></span>
+            </button>
+            <nav aria-label="Main navigation">
+              <ol
+                class="invisible fixed top-0 right-0 flex h-full w-0 transform-[translateX(100%)] flex-col items-start gap-y-5 overflow-hidden bg-footer text-left text-inverse opacity-0 duration-200 ease-in-out tablet:max-w-[35vw] tablet:gap-y-10 laptop:max-w-[25vw] [body.nav-open_&amp;]:visible [body.nav-open_&amp;]:bottom-0 [body.nav-open_&amp;]:z-nav-menu [body.nav-open_&amp;]:h-full [body.nav-open_&amp;]:w-full [body.nav-open_&amp;]:transform-[translateX(0)] [body.nav-open_&amp;]:overflow-y-auto [body.nav-open_&amp;]:pt-20 [body.nav-open_&amp;]:pr-[16%] [body.nav-open_&amp;]:pb-5 [body.nav-open_&amp;]:pl-[12%] [body.nav-open_&amp;]:opacity-100 [body.nav-open_&amp;]:drop-shadow-2xl [body.nav-open_&amp;]:tablet:px-10 [body.nav-open_&amp;]:tablet:pt-40 [body.nav-open_&amp;]:laptop:px-20"
+                data-nav-menu="true"
+                id="nav-menu"
               >
-                <li class="block w-1/2 text-2xl whitespace-nowrap">
+                <li
+                  class="block w-1/2 text-2xl whitespace-nowrap laptop:w-full"
+                >
                   <a
-                    class="inline-block origin-left transform-gpu transition-all hover:scale-105"
+                    class="relative inline-block origin-left transform-gpu transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-(--fg-inverse)/75 after:transition-transform hover:after:scale-x-100"
                     href="/"
                     >Home</a
                   >
                 </li>
-                <li class="block w-1/2 text-2xl whitespace-nowrap">
+                <li
+                  class="block w-1/2 text-2xl whitespace-nowrap laptop:w-full"
+                >
                   <a
-                    class="inline-block origin-left transform-gpu transition-all hover:scale-105"
+                    class="relative inline-block origin-left transform-gpu transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-(--fg-inverse)/75 after:transition-transform hover:after:scale-x-100"
                     href="/how-i-grade/"
                     >How I Grade</a
                   >
                 </li>
-                <li class="block w-1/2 text-2xl whitespace-nowrap">
+                <li
+                  class="block w-1/2 text-2xl whitespace-nowrap laptop:w-full"
+                >
                   <a
-                    class="inline-block origin-left transform-gpu transition-all hover:scale-105"
+                    class="relative inline-block origin-left transform-gpu transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-(--fg-inverse)/75 after:transition-transform hover:after:scale-x-100"
                     href="/reviews/"
                     >Reviews</a
                   >
                 </li>
-                <li class="block w-1/2 text-2xl whitespace-nowrap">
+                <li
+                  class="block w-1/2 text-2xl whitespace-nowrap laptop:w-full"
+                >
                   <a
-                    class="inline-block origin-left transform-gpu transition-all hover:scale-105"
+                    class="relative inline-block origin-left transform-gpu transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-(--fg-inverse)/75 after:transition-transform hover:after:scale-x-100"
                     href="/authors/"
                     >Authors</a
                   >
                 </li>
-                <li class="block w-1/2 text-2xl whitespace-nowrap">
+                <li
+                  class="block w-1/2 text-2xl whitespace-nowrap laptop:w-full"
+                >
                   <a
-                    class="inline-block origin-left transform-gpu transition-all hover:scale-105"
+                    class="relative inline-block origin-left transform-gpu transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-(--fg-inverse)/75 after:transition-transform hover:after:scale-x-100"
                     href="/readings/"
                     >Reading Log</a
                   >
                   <ol class="mt-4">
                     <li
-                      class="mb-4 ml-1 font-sans text-xs tracking-wider text-inverse-subtle uppercase last:mb-0"
+                      class="mb-3 ml-1 font-sans text-xs tracking-wider text-inverse-subtle uppercase last:-mb-1"
                     >
                       <a
-                        class="inline-block origin-left transform-gpu transition-all hover:scale-105 hover:text-inverse"
+                        class="relative inline-block origin-left transform-gpu pb-1 transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-(--fg-inverse)/75 after:transition-transform hover:text-inverse hover:after:scale-x-100"
                         href="/readings/stats/"
                         >Stats</a
                       >
                     </li>
                   </ol>
                 </li>
-              </ul>
-            </div>
+              </ol>
+            </nav>
           </div>
         </header>
-        <main
-          class="grow transition-[opacity] duration-200 ease-in-out group-has-[#nav:checked]/layout:opacity-80 bg-subtle"
-          id="content"
-        >
+        <main class="grow bg-subtle" id="content">
           <header
-            class="min-h-[25vw] text-inverse bg-[#000] relative flex w-full flex-col content-start items-center justify-end gap-6 overflow-hidden pt-20 laptop:pt-24"
+            class="min-h-[400px] tablet:min-h-[640px] laptop:min-h-[clamp(640px,70vh,1350px)] relative flex w-full flex-col content-start items-center justify-end gap-6 bg-[#2A2B2A] pt-40 pb-8 text-inverse tablet:pt-40 tablet:pb-10 laptop:pt-40 laptop:pb-16"
           >
             <img
               class="absolute inset-0 size-full object-cover object-top text-inverse blur-xs"
@@ -462,8 +469,15 @@
               loading="eager"
             />
             <div
-              class="items-center z-10 mx-auto flex w-full max-w-(--breakpoint-desktop) px-container flex-col after:absolute after:top-0 after:left-0 after:-z-10 after:h-full after:w-full after:bg-linear-to-t after:from-[rgba(0,0,0,.85)] after:to-50% tablet:after:to-25% py-8 tablet:pb-10 laptop:pt-10 desktop:pt-20"
+              class="items-center z-10 mx-auto flex w-full max-w-(--breakpoint-desktop) flex-col px-container"
             >
+              <p class="mb-2">
+                <a
+                  class="relative inline-block font-sans text-sm tracking-wide uppercase after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:origin-center after:scale-x-0 after:bg-(--fg-inverse)/75 after:transition-transform hover:after:scale-x-100"
+                  href="/authors/"
+                  >Authors</a
+                >
+              </p>
               <div
                 class="mx-auto mt-4 mb-6 w-4/5 max-w-[250px] transform-gpu overflow-hidden rounded-full shadow-all"
               >
@@ -481,34 +495,26 @@
                   width="250"
                 />
               </div>
-              <p
-                class="mb-2 font-sans text-sm tracking-wide text-subtle uppercase"
-              >
-                <a
-                  class="font-sans text-sm tracking-wide uppercase underline-offset-8 text-inverse decoration-inverse-subtle decoration-2 hover:underline"
-                  href="/authors/"
-                  >Authors</a
-                >
-              </p>
               <h1
-                class="font-sans text-center text-3xl font-bold tracking-widest uppercase tablet:text-4xl tablet-landscape:text-5xl desktop:text-7xl"
+                class="font-sans text-center text-2xl font-bold tracking-widest uppercase laptop:text-7xl"
+                data-pagefind-weight="10"
               >
                 Richard Laymon
               </h1>
               <p
-                class="mt-1 text-base desktop:my-4 desktop:text-xl text-center"
+                class="mt-1 text-base laptop:my-4 laptop:text-xl [text-shadow:1px_1px_2px_black] text-center"
               >
                 Author of 10 reviewed works.
               </p>
             </div>
           </header>
           <astro-island
-            uid="1Bgja8"
+            uid="1uWelv"
             prefix="r1"
             component-url="~/components/Author/Author"
             component-export="Author"
             renderer-url="@astrojs/react/client.js"
-            props='{"distinctKinds":[1,[[0,"Novel"],[0,"Short Story"]]],"distinctPublishedYears":[1,[[0,"1970"],[0,"1974"],[0,"1980"],[0,"1981"],[0,"1982"],[0,"1984"],[0,"1985"],[0,"1987"]]],"initialSort":[0,"year-published-asc"],"works":[1,[[0,{"coverImageProps":[0,{"height":[0,120],"src":[0,"/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fshort-stories-volume-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=80&amp;h=120&amp;q=80&amp;f=avif"],"srcSet":[0,"/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fshort-stories-volume-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=20&amp;h=30&amp;q=80&amp;f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fshort-stories-volume-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=40&amp;h=60&amp;q=80&amp;f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fshort-stories-volume-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=80&amp;h=120&amp;q=80&amp;f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fshort-stories-volume-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=160&amp;h=240&amp;q=80&amp;f=avif 160w"],"width":[0,80]}],"grade":[0,"C-"],"gradeValue":[0,5],"kind":[0,"Short Story"],"otherAuthors":[1,[]],"slug":[0,"desert-pickup-by-richard-laymon"],"sortTitle":[0,"Desert Pickup"],"title":[0,"Desert Pickup"],"yearPublished":[0,"1970"]}],[0,{"coverImageProps":[0,{"height":[0,120],"src":[0,"/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fshort-stories-volume-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=80&amp;h=120&amp;q=80&amp;f=avif"],"srcSet":[0,"/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fshort-stories-volume-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=20&amp;h=30&amp;q=80&amp;f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fshort-stories-volume-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=40&amp;h=60&amp;q=80&amp;f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fshort-stories-volume-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=80&amp;h=120&amp;q=80&amp;f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fshort-stories-volume-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=160&amp;h=240&amp;q=80&amp;f=avif 160w"],"width":[0,80]}],"grade":[0,"C-"],"gradeValue":[0,5],"kind":[0,"Short Story"],"otherAuthors":[1,[]],"slug":[0,"roadside-pickup-by-richard-laymon"],"sortTitle":[0,"Roadside Pickup"],"title":[0,"Roadside Pickup"],"yearPublished":[0,"1974"]}],[0,{"coverImageProps":[0,{"height":[0,120],"src":[0,"/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-cellar-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=80&amp;h=120&amp;q=80&amp;f=avif"],"srcSet":[0,"/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-cellar-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=20&amp;h=30&amp;q=80&amp;f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-cellar-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=40&amp;h=60&amp;q=80&amp;f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-cellar-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=80&amp;h=120&amp;q=80&amp;f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-cellar-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=160&amp;h=240&amp;q=80&amp;f=avif 160w"],"width":[0,80]}],"grade":[0,"C+"],"gradeValue":[0,7],"kind":[0,"Novel"],"otherAuthors":[1,[]],"slug":[0,"the-cellar-by-richard-laymon"],"sortTitle":[0,"Cellar, The"],"title":[0,"The Cellar"],"yearPublished":[0,"1980"]}],[0,{"coverImageProps":[0,{"height":[0,120],"src":[0,"/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=80&amp;h=120&amp;q=80&amp;f=avif"],"srcSet":[0,"/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=20&amp;h=30&amp;q=80&amp;f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=40&amp;h=60&amp;q=80&amp;f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=80&amp;h=120&amp;q=80&amp;f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=160&amp;h=240&amp;q=80&amp;f=avif 160w"],"width":[0,80]}],"grade":[0,"C+"],"gradeValue":[0,7],"kind":[0,"Novel"],"otherAuthors":[1,[]],"slug":[0,"the-woods-are-dark-by-richard-laymon"],"sortTitle":[0,"Woods Are Dark"],"title":[0,"The Woods Are Dark"],"yearPublished":[0,"1981"]}],[0,{"coverImageProps":[0,{"height":[0,120],"src":[0,"/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fout-are-the-lights-and-other-tales-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=80&amp;h=120&amp;q=80&amp;f=avif"],"srcSet":[0,"/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fout-are-the-lights-and-other-tales-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=20&amp;h=30&amp;q=80&amp;f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fout-are-the-lights-and-other-tales-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=40&amp;h=60&amp;q=80&amp;f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fout-are-the-lights-and-other-tales-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=80&amp;h=120&amp;q=80&amp;f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fout-are-the-lights-and-other-tales-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=160&amp;h=240&amp;q=80&amp;f=avif 160w"],"width":[0,80]}],"grade":[0,"C-"],"gradeValue":[0,5],"kind":[0,"Novel"],"otherAuthors":[1,[]],"slug":[0,"out-are-the-lights-by-richard-laymon"],"sortTitle":[0,"Out Are the Lights"],"title":[0,"Out Are the Lights"],"yearPublished":[0,"1982"]}],[0,{"coverImageProps":[0,{"height":[0,106.88000000000001],"src":[0,"/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-intruder-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D668%26origFormat%3Dpng&amp;w=80&amp;h=107&amp;q=80&amp;f=avif"],"srcSet":[0,"/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-intruder-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D668%26origFormat%3Dpng&amp;w=20&amp;h=27&amp;q=80&amp;f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-intruder-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D668%26origFormat%3Dpng&amp;w=40&amp;h=54&amp;q=80&amp;f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-intruder-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D668%26origFormat%3Dpng&amp;w=80&amp;h=107&amp;q=80&amp;f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-intruder-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D668%26origFormat%3Dpng&amp;w=160&amp;h=214&amp;q=80&amp;f=avif 160w"],"width":[0,80]}],"grade":[0,"C"],"gradeValue":[0,6],"kind":[0,"Short Story"],"otherAuthors":[1,[]],"slug":[0,"the-intruder-by-richard-laymon"],"sortTitle":[0,"Intruder"],"title":[0,"The Intruder"],"yearPublished":[0,"1984"]}],[0,{"coverImageProps":[0,{"height":[0,120],"src":[0,"/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fbeware-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=80&amp;h=120&amp;q=80&amp;f=avif"],"srcSet":[0,"/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fbeware-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=20&amp;h=30&amp;q=80&amp;f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fbeware-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=40&amp;h=60&amp;q=80&amp;f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fbeware-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=80&amp;h=120&amp;q=80&amp;f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fbeware-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=160&amp;h=240&amp;q=80&amp;f=avif 160w"],"width":[0,80]}],"grade":[0,"C"],"gradeValue":[0,6],"kind":[0,"Novel"],"otherAuthors":[1,[]],"slug":[0,"beware-by-richard-laymon"],"sortTitle":[0,"Beware!"],"title":[0,"Beware!"],"yearPublished":[0,"1985"]}],[0,{"coverImageProps":[0,{"height":[0,107.36000000000001],"src":[0,"/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-last-hand-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D671%26origFormat%3Dpng&amp;w=80&amp;h=107&amp;q=80&amp;f=avif"],"srcSet":[0,"/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-last-hand-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D671%26origFormat%3Dpng&amp;w=20&amp;h=27&amp;q=80&amp;f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-last-hand-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D671%26origFormat%3Dpng&amp;w=40&amp;h=54&amp;q=80&amp;f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-last-hand-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D671%26origFormat%3Dpng&amp;w=80&amp;h=107&amp;q=80&amp;f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-last-hand-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D671%26origFormat%3Dpng&amp;w=160&amp;h=214&amp;q=80&amp;f=avif 160w"],"width":[0,80]}],"grade":[0,"D"],"gradeValue":[0,3],"kind":[0,"Short Story"],"otherAuthors":[1,[]],"slug":[0,"the-last-hand-by-richard-laymon"],"sortTitle":[0,"Last Hand"],"title":[0,"The Last Hand"],"yearPublished":[0,"1985"]}],[0,{"coverImageProps":[0,{"height":[0,106.72],"src":[0,"/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D667%26origFormat%3Dpng&amp;w=80&amp;h=107&amp;q=80&amp;f=avif"],"srcSet":[0,"/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D667%26origFormat%3Dpng&amp;w=20&amp;h=27&amp;q=80&amp;f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D667%26origFormat%3Dpng&amp;w=40&amp;h=54&amp;q=80&amp;f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D667%26origFormat%3Dpng&amp;w=80&amp;h=107&amp;q=80&amp;f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D667%26origFormat%3Dpng&amp;w=160&amp;h=214&amp;q=80&amp;f=avif 160w"],"width":[0,80]}],"grade":[0,"C+"],"gradeValue":[0,7],"kind":[0,"Short Story"],"otherAuthors":[1,[]],"slug":[0,"the-lonely-one-by-richard-laymon"],"sortTitle":[0,"Lonely One"],"title":[0,"The Lonely One"],"yearPublished":[0,"1985"]}],[0,{"coverImageProps":[0,{"height":[0,127.36000000000001],"src":[0,"/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftread-softly-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D796%26origFormat%3Dpng&amp;w=80&amp;h=127&amp;q=80&amp;f=avif"],"srcSet":[0,"/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftread-softly-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D796%26origFormat%3Dpng&amp;w=20&amp;h=32&amp;q=80&amp;f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftread-softly-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D796%26origFormat%3Dpng&amp;w=40&amp;h=64&amp;q=80&amp;f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftread-softly-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D796%26origFormat%3Dpng&amp;w=80&amp;h=127&amp;q=80&amp;f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftread-softly-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D796%26origFormat%3Dpng&amp;w=160&amp;h=254&amp;q=80&amp;f=avif 160w"],"width":[0,80]}],"grade":[0,"C"],"gradeValue":[0,6],"kind":[0,"Novel"],"otherAuthors":[1,[]],"slug":[0,"tread-softly-by-richard-laymon"],"sortTitle":[0,"Tread Softly"],"title":[0,"Tread Softly"],"yearPublished":[0,"1987"]}]]],"name":[0,"Richard Laymon"]}'
+            props='{"distinctKinds":[1,[[0,"Novel"],[0,"Short Story"]]],"distinctReviewYears":[1,[[0,"2014"],[0,"2022"],[0,"2023"],[0,"2025"]]],"distinctWorkYears":[1,[[0,"2000"]]],"initialSort":[0,"work-year-asc"],"values":[1,[[0,{"coverImageProps":[0,{"height":[0,375],"src":[0,"/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fbeware-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=250&amp;h=375&amp;q=80&amp;f=avif"],"srcSet":[0,"/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fbeware-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62.5&amp;h=94&amp;q=80&amp;f=avif 62.5w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fbeware-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=125&amp;h=188&amp;q=80&amp;f=avif 125w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fbeware-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=250&amp;h=375&amp;q=80&amp;f=avif 250w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fbeware-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=500&amp;h=750&amp;q=80&amp;f=avif 500w"],"width":[0,250]}],"displayDate":[0,"Jun 27, 2014"],"grade":[0,"C"],"gradeValue":[0,6],"kind":[0,"Novel"],"otherAuthors":[1,[]],"reviewDate":[3,"2014-06-27T00:00:00.000Z"],"reviewSequence":[0,299],"reviewYear":[0,"2014"],"slug":[0,"beware-by-richard-laymon"],"sortTitle":[0,"Beware!"],"title":[0,"Beware!"],"workYear":[0,"2000"],"workYearSequence":[0,143]}],[0,{"coverImageProps":[0,{"height":[0,375],"src":[0,"/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-cellar-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=250&amp;h=375&amp;q=80&amp;f=avif"],"srcSet":[0,"/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-cellar-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62.5&amp;h=94&amp;q=80&amp;f=avif 62.5w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-cellar-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=125&amp;h=188&amp;q=80&amp;f=avif 125w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-cellar-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=250&amp;h=375&amp;q=80&amp;f=avif 250w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-cellar-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=500&amp;h=750&amp;q=80&amp;f=avif 500w"],"width":[0,250]}],"displayDate":[0,"Mar 16, 2022"],"grade":[0,"C+"],"gradeValue":[0,7],"kind":[0,"Novel"],"otherAuthors":[1,[]],"reviewDate":[3,"2022-03-16T00:00:00.000Z"],"reviewSequence":[0,300],"reviewYear":[0,"2022"],"slug":[0,"the-cellar-by-richard-laymon"],"sortTitle":[0,"Cellar, The"],"title":[0,"The Cellar"],"workYear":[0,"2000"],"workYearSequence":[0,144]}],[0,{"coverImageProps":[0,{"height":[0,375],"src":[0,"/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=250&amp;h=375&amp;q=80&amp;f=avif"],"srcSet":[0,"/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62.5&amp;h=94&amp;q=80&amp;f=avif 62.5w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=125&amp;h=188&amp;q=80&amp;f=avif 125w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=250&amp;h=375&amp;q=80&amp;f=avif 250w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=500&amp;h=750&amp;q=80&amp;f=avif 500w"],"width":[0,250]}],"displayDate":[0,"Apr 03, 2022"],"grade":[0,"C-"],"gradeValue":[0,5],"kind":[0,"Short Story"],"otherAuthors":[1,[]],"reviewDate":[3,"2022-04-03T00:00:00.000Z"],"reviewSequence":[0,301],"reviewYear":[0,"2022"],"slug":[0,"desert-pickup-by-richard-laymon"],"sortTitle":[0,"Desert Pickup"],"title":[0,"Desert Pickup"],"workYear":[0,"2000"],"workYearSequence":[0,145]}],[0,{"coverImageProps":[0,{"height":[0,334],"src":[0,"/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-intruder-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D668%26origFormat%3Dpng&amp;w=250&amp;h=334&amp;q=80&amp;f=avif"],"srcSet":[0,"/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-intruder-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D668%26origFormat%3Dpng&amp;w=62.5&amp;h=84&amp;q=80&amp;f=avif 62.5w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-intruder-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D668%26origFormat%3Dpng&amp;w=125&amp;h=167&amp;q=80&amp;f=avif 125w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-intruder-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D668%26origFormat%3Dpng&amp;w=250&amp;h=334&amp;q=80&amp;f=avif 250w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-intruder-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D668%26origFormat%3Dpng&amp;w=500&amp;h=668&amp;q=80&amp;f=avif 500w"],"width":[0,250]}],"displayDate":[0,"Jul 23, 2014"],"grade":[0,"C"],"gradeValue":[0,6],"kind":[0,"Short Story"],"otherAuthors":[1,[]],"reviewDate":[3,"2014-07-23T00:00:00.000Z"],"reviewSequence":[0,302],"reviewYear":[0,"2014"],"slug":[0,"the-intruder-by-richard-laymon"],"sortTitle":[0,"Intruder"],"title":[0,"The Intruder"],"workYear":[0,"2000"],"workYearSequence":[0,146]}],[0,{"coverImageProps":[0,{"height":[0,335.5],"src":[0,"/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-last-hand-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D671%26origFormat%3Dpng&amp;w=250&amp;h=336&amp;q=80&amp;f=avif"],"srcSet":[0,"/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-last-hand-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D671%26origFormat%3Dpng&amp;w=62.5&amp;h=84&amp;q=80&amp;f=avif 62.5w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-last-hand-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D671%26origFormat%3Dpng&amp;w=125&amp;h=168&amp;q=80&amp;f=avif 125w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-last-hand-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D671%26origFormat%3Dpng&amp;w=250&amp;h=336&amp;q=80&amp;f=avif 250w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-last-hand-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D671%26origFormat%3Dpng&amp;w=500&amp;h=672&amp;q=80&amp;f=avif 500w"],"width":[0,250]}],"displayDate":[0,"Jul 13, 2014"],"grade":[0,"D"],"gradeValue":[0,3],"kind":[0,"Short Story"],"otherAuthors":[1,[]],"reviewDate":[3,"2014-07-13T00:00:00.000Z"],"reviewSequence":[0,303],"reviewYear":[0,"2014"],"slug":[0,"the-last-hand-by-richard-laymon"],"sortTitle":[0,"Last Hand"],"title":[0,"The Last Hand"],"workYear":[0,"2000"],"workYearSequence":[0,147]}],[0,{"coverImageProps":[0,{"height":[0,333.5],"src":[0,"/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D667%26origFormat%3Dpng&amp;w=250&amp;h=334&amp;q=80&amp;f=avif"],"srcSet":[0,"/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D667%26origFormat%3Dpng&amp;w=62.5&amp;h=84&amp;q=80&amp;f=avif 62.5w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D667%26origFormat%3Dpng&amp;w=125&amp;h=167&amp;q=80&amp;f=avif 125w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D667%26origFormat%3Dpng&amp;w=250&amp;h=334&amp;q=80&amp;f=avif 250w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D667%26origFormat%3Dpng&amp;w=500&amp;h=668&amp;q=80&amp;f=avif 500w"],"width":[0,250]}],"displayDate":[0,"Feb 15, 2025"],"grade":[0,"C+"],"gradeValue":[0,7],"kind":[0,"Short Story"],"otherAuthors":[1,[]],"reviewDate":[3,"2025-02-15T00:00:00.000Z"],"reviewSequence":[0,304],"reviewYear":[0,"2025"],"slug":[0,"the-lonely-one-by-richard-laymon"],"sortTitle":[0,"Lonely One"],"title":[0,"The Lonely One"],"workYear":[0,"2000"],"workYearSequence":[0,148]}],[0,{"coverImageProps":[0,{"height":[0,375],"src":[0,"/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=250&amp;h=375&amp;q=80&amp;f=avif"],"srcSet":[0,"/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62.5&amp;h=94&amp;q=80&amp;f=avif 62.5w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=125&amp;h=188&amp;q=80&amp;f=avif 125w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=250&amp;h=375&amp;q=80&amp;f=avif 250w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=500&amp;h=750&amp;q=80&amp;f=avif 500w"],"width":[0,250]}],"displayDate":[0,"Oct 11, 2022"],"grade":[0,"C-"],"gradeValue":[0,5],"kind":[0,"Novel"],"otherAuthors":[1,[]],"reviewDate":[3,"2022-10-11T00:00:00.000Z"],"reviewSequence":[0,305],"reviewYear":[0,"2022"],"slug":[0,"out-are-the-lights-by-richard-laymon"],"sortTitle":[0,"Out Are the Lights"],"title":[0,"Out Are the Lights"],"workYear":[0,"2000"],"workYearSequence":[0,149]}],[0,{"coverImageProps":[0,{"height":[0,375],"src":[0,"/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=250&amp;h=375&amp;q=80&amp;f=avif"],"srcSet":[0,"/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62.5&amp;h=94&amp;q=80&amp;f=avif 62.5w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=125&amp;h=188&amp;q=80&amp;f=avif 125w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=250&amp;h=375&amp;q=80&amp;f=avif 250w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=500&amp;h=750&amp;q=80&amp;f=avif 500w"],"width":[0,250]}],"displayDate":[0,"Jan 21, 2023"],"grade":[0,"C-"],"gradeValue":[0,5],"kind":[0,"Short Story"],"otherAuthors":[1,[]],"reviewDate":[3,"2023-01-21T00:00:00.000Z"],"reviewSequence":[0,306],"reviewYear":[0,"2023"],"slug":[0,"roadside-pickup-by-richard-laymon"],"sortTitle":[0,"Roadside Pickup"],"title":[0,"Roadside Pickup"],"workYear":[0,"2000"],"workYearSequence":[0,150]}],[0,{"coverImageProps":[0,{"height":[0,398],"src":[0,"/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftread-softly-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D796%26origFormat%3Dpng&amp;w=250&amp;h=398&amp;q=80&amp;f=avif"],"srcSet":[0,"/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftread-softly-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D796%26origFormat%3Dpng&amp;w=62.5&amp;h=99&amp;q=80&amp;f=avif 62.5w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftread-softly-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D796%26origFormat%3Dpng&amp;w=125&amp;h=199&amp;q=80&amp;f=avif 125w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftread-softly-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D796%26origFormat%3Dpng&amp;w=250&amp;h=398&amp;q=80&amp;f=avif 250w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftread-softly-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D796%26origFormat%3Dpng&amp;w=500&amp;h=796&amp;q=80&amp;f=avif 500w"],"width":[0,250]}],"displayDate":[0,"Sep 21, 2014"],"grade":[0,"C"],"gradeValue":[0,6],"kind":[0,"Novel"],"otherAuthors":[1,[]],"reviewDate":[3,"2014-09-21T00:00:00.000Z"],"reviewSequence":[0,307],"reviewYear":[0,"2014"],"slug":[0,"tread-softly-by-richard-laymon"],"sortTitle":[0,"Tread Softly"],"title":[0,"Tread Softly"],"workYear":[0,"2000"],"workYearSequence":[0,151]}],[0,{"coverImageProps":[0,{"height":[0,375],"src":[0,"/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=250&amp;h=375&amp;q=80&amp;f=avif"],"srcSet":[0,"/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62.5&amp;h=94&amp;q=80&amp;f=avif 62.5w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=125&amp;h=188&amp;q=80&amp;f=avif 125w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=250&amp;h=375&amp;q=80&amp;f=avif 250w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=500&amp;h=750&amp;q=80&amp;f=avif 500w"],"width":[0,250]}],"displayDate":[0,"Sep 11, 2022"],"grade":[0,"C+"],"gradeValue":[0,7],"kind":[0,"Novel"],"otherAuthors":[1,[]],"reviewDate":[3,"2022-09-11T00:00:00.000Z"],"reviewSequence":[0,308],"reviewYear":[0,"2022"],"slug":[0,"the-woods-are-dark-by-richard-laymon"],"sortTitle":[0,"Woods Are Dark"],"title":[0,"The Woods Are Dark"],"workYear":[0,"2000"],"workYearSequence":[0,152]}]]],"name":[0,"Richard Laymon"]}'
             ssr
             client="load"
             before-hydration-url="astro:scripts/before-hydration.js"
@@ -521,7 +527,7 @@
             >
               <div class="group/list-with-filters mx-auto bg-subtle">
                 <div
-                  class="sticky top-[calc(0px_+_var(--scroll-offset,0px))] z-20 scroll-mt-[calc(0px_+_var(--scroll-offset,0px))] border-b border-default bg-default text-xs tablet:col-span-full"
+                  class="sticky top-[calc(0px_+_var(--scroll-offset,0px))] z-sticky scroll-mt-[calc(0px_+_var(--scroll-offset,0px))] border-b border-default bg-default text-xs tablet:col-span-full"
                 >
                   <div
                     class="mx-auto grid max-w-[var(--breakpoint-desktop)] grid-cols-[auto_auto_1fr_auto] items-baseline gap-y-7 px-container py-10 font-sans font-medium tracking-wide text-subtle uppercase tablet:grid-cols-[auto_auto_1fr_auto_auto] tablet:gap-x-4 tablet-landscape:grid-cols-[auto_auto_1fr_minmax(302px,calc(33%_-_192px))_auto] desktop:grid-cols-[auto_auto_1fr_calc(33%_-_96px)_auto]"
@@ -542,11 +548,17 @@
                         <select
                           class="flex w-full appearance-none border-none bg-default py-2 pr-4 pl-4 font-serif text-base font-normal tracking-normal overflow-ellipsis text-default shadow-all outline-accent"
                         >
-                          <option value="year-published-desc">
+                          <option value="work-year-asc" selected="">
+                            Work Year (Oldest First)
+                          </option>
+                          <option value="work-year-desc">
                             Work Year (Newest First)
                           </option>
-                          <option value="year-published-asc" selected="">
-                            Work Year (Oldest First)
+                          <option value="review-date-asc">
+                            Review Date (Oldest First)
+                          </option>
+                          <option value="review-date-desc">
+                            Review Date (Newest First)
                           </option>
                           <option value="title-asc">Title (A → Z)</option>
                           <option value="title-desc">Title (Z → A)</option>
@@ -559,7 +571,7 @@
                       aria-controls="filters"
                       aria-expanded="false"
                       aria-label="Toggle filters"
-                      class="col-start-4 row-start-1 flex transform-gpu cursor-pointer items-center justify-center gap-x-4 bg-canvas px-4 py-2 text-nowrap text-muted uppercase shadow-all transition-transform hover:scale-110 tablet:col-start-5 tablet:w-20"
+                      class="col-start-4 row-start-1 flex transform-gpu cursor-pointer items-center justify-center gap-x-4 rounded-sm bg-canvas px-4 py-2 font-sans text-xs font-semibold text-nowrap text-muted uppercase shadow-all transition-transform hover:scale-110 tablet:col-start-5 tablet:w-20"
                       type="button"
                     >
                       Filter
@@ -567,743 +579,630 @@
                   </div>
                 </div>
                 <div
-                  class="mx-auto max-w-[var(--breakpoint-desktop)] gap-x-[var(--container-padding)] tablet:px-container tablet-landscape:flex"
+                  class="mx-auto max-w-[var(--breakpoint-desktop)] tablet:px-container"
                 >
                   <div
                     class="mx-auto max-w-[var(--breakpoint-desktop)] grow scroll-mt-[calc(var(--list-scroll-offset)_+_var(--scroll-offset,0px))] pb-10 [--list-scroll-offset:181px] tablet:[--list-scroll-offset:121px]"
                     id="list"
                   >
-                    <ol data-testid="list">
-                      <li class="block">
-                        <div class="pt-0 text-md" style="z-index: 1">
+                    <ol data-testid="grouped-cover-list">
+                      <li class="block first-of-type:mt-4" id="2000">
+                        <div class="pt-0 text-md">
                           <div
-                            class="max-w-(--breakpoint-desktop) bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
-                            id="1970"
+                            class="max-w-(--breakpoint-desktop) bg-subtle px-container py-4 text-xl leading-8 tablet:px-1"
                           >
-                            1970
+                            2000
                           </div>
                         </div>
                         <div class="bg-subtle">
-                          <ol>
-                            <li
-                              class="group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-[102.5%] has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl bg-default relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6"
-                            >
-                              <div
-                                class="relative after:absolute after:top-0 after:left-0 after:z-10 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
+                          <div class="tablet:-mx-6">
+                            <div class="@container/cover-list">
+                              <ol
+                                class="items-baseline [--cover-list-item-width:50%] tablet:flex tablet:flex-wrap @min-[calc((250px_*_2)_+_1px)]/cover-list:[--cover-list-item-width:33.33%] @min-[calc((250px_*_3)_+_1px)]/cover-list:[--cover-list-item-width:25%] @min-[calc((250px_*_4)_+_1px)]/cover-list:[--cover-list-item-width:20%] @min-[calc((250px_*_5)_+_1px)]/cover-list:[--cover-list-item-width:16.66%]"
                               >
-                                <div
-                                  class="relative after:absolute after:top-0 after:left-0 after:z-20 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)] after:bg-size-[100%_100%] after:mix-blend-soft-light w-list-item-cover shrink-0"
+                                <li
+                                  class="group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-[5%] bg-default px-container py-4 transition-transform tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2 tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl"
                                 >
                                   <div
-                                    class="relative z-10 before:absolute before:top-0 before:left-0 before:z-10 before:block before:size-full before:rounded-[2.5px] before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%] after:absolute after:top-0 after:left-0 after:z-10 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%] after:mix-blend-multiply"
+                                    class="relative w-1/4 max-w-[250px] shrink-0 self-start overflow-hidden rounded-sm shadow-all transition-transform after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0 tablet:w-auto"
                                   >
-                                    <img
-                                      height="120"
-                                      src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fshort-stories-volume-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=80&amp;h=120&amp;q=80&amp;f=avif"
-                                      srcset="
-                                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fshort-stories-volume-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=20&amp;h=30&amp;q=80&amp;f=avif    20w,
-                                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fshort-stories-volume-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=40&amp;h=60&amp;q=80&amp;f=avif    40w,
-                                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fshort-stories-volume-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=80&amp;h=120&amp;q=80&amp;f=avif   80w,
-                                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fshort-stories-volume-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=160&amp;h=240&amp;q=80&amp;f=avif 160w
-                                      "
-                                      width="80"
-                                      sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
-                                      alt=""
-                                      class="rounded-[2.5px] bg-default shadow-sm @min-[160px]:shadow-lg"
-                                      decoding="async"
-                                      loading="lazy"
-                                    />
+                                    <div
+                                      class="relative after:absolute after:top-0 after:left-0 after:z-sticky after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%] after:mix-blend-multiply"
+                                    >
+                                      <div
+                                        class="relative z-10 before:absolute before:top-0 before:left-0 before:z-10 before:block before:size-full before:rounded-[2.5px] before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%] after:absolute after:top-0 after:left-0 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)] after:bg-size-[100%_100%] after:mix-blend-soft-light"
+                                      >
+                                        <img
+                                          height="375"
+                                          src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fbeware-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=250&amp;h=375&amp;q=80&amp;f=avif"
+                                          srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fbeware-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62.5&amp;h=94&amp;q=80&amp;f=avif 62.5w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fbeware-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=125&amp;h=188&amp;q=80&amp;f=avif 125w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fbeware-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=250&amp;h=375&amp;q=80&amp;f=avif 250w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fbeware-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=500&amp;h=750&amp;q=80&amp;f=avif 500w"
+                                          width="250"
+                                          alt=""
+                                          sizes="(min-width: 1800px) 216px, (min-width: 1380px) calc(13.25vw - 20px), (min-width: 1280px) calc(20vw - 70px), (min-width: 1060px) calc(20vw - 57px), (min-width: 800px) calc(25vw - 60px), (min-width: 680px) calc(33vw - 61px), calc(23.06vw + 4px)"
+                                          class="rounded-[2.5px] bg-default shadow-sm @min-[160px]:shadow-lg"
+                                          decoding="async"
+                                          loading="lazy"
+                                        />
+                                      </div>
+                                    </div>
                                   </div>
-                                </div>
-                              </div>
-                              <div
-                                class="flex grow flex-col items-start tablet:w-full tablet:pr-4"
-                              >
-                                <a
-                                  class="block font-sans text-sm font-medium text-accent after:absolute after:top-0 after:left-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
-                                  href="/reviews/desert-pickup-by-richard-laymon/"
-                                  >Desert Pickup</a
-                                >
-                                <div class="mt-1 tablet:mt-2">
                                   <div
-                                    class="font-sans text-xs leading-4 font-light text-subtle"
+                                    class="flex grow flex-col items-start gap-y-2 tablet:mt-2 tablet:w-full tablet:px-1"
                                   >
-                                    <span
-                                      >Short Story<!-- -->
-                                      | </span
-                                    >1970
+                                    <a
+                                      class="text-base leading-5 font-semibold text-accent after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0"
+                                      href="/reviews/beware-by-richard-laymon/"
+                                      >Beware!</a
+                                    >
+                                    <div
+                                      class="font-sans text-xs leading-4 font-light tracking-prose text-subtle"
+                                    >
+                                      <span
+                                        >Novel<!-- -->
+                                        | </span
+                                      >2000
+                                    </div>
+                                    <picture
+                                      ><source
+                                        media="(prefers-color-scheme: dark)"
+                                        srcset="/svg/3-stars-dark.svg" />
+                                      <img
+                                        alt="C: 3 stars (out of 5)"
+                                        class="-mt-0.5 pb-[3px]"
+                                        height="15"
+                                        src="/svg/3-stars.svg"
+                                        width="75"
+                                    /></picture>
+                                    <div
+                                      class="font-sans text-xs leading-4 font-light tracking-prose text-subtle"
+                                    >
+                                      Jun 27, 2014
+                                    </div>
                                   </div>
-                                </div>
-                                <picture
-                                  ><source
-                                    media="(prefers-color-scheme: dark)"
-                                    srcset="/svg/2-half-stars-dark.svg" />
-                                  <img
-                                    alt="C-: 2.5 stars (out of 5)"
-                                    class="mt-2 tablet:mt-3"
-                                    height="16"
-                                    src="/svg/2-half-stars.svg"
-                                    width="80"
-                                /></picture>
-                              </div>
-                            </li>
-                          </ol>
-                        </div>
-                      </li>
-                      <li class="block">
-                        <div class="pt-0 text-md" style="z-index: 2">
-                          <div
-                            class="max-w-(--breakpoint-desktop) bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
-                            id="1974"
-                          >
-                            1974
+                                </li>
+                                <li
+                                  class="group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-[5%] bg-default px-container py-4 transition-transform tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2 tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl"
+                                >
+                                  <div
+                                    class="relative w-1/4 max-w-[250px] shrink-0 self-start overflow-hidden rounded-sm shadow-all transition-transform after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0 tablet:w-auto"
+                                  >
+                                    <div
+                                      class="relative after:absolute after:top-0 after:left-0 after:z-sticky after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%] after:mix-blend-multiply"
+                                    >
+                                      <div
+                                        class="relative z-10 before:absolute before:top-0 before:left-0 before:z-10 before:block before:size-full before:rounded-[2.5px] before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%] after:absolute after:top-0 after:left-0 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)] after:bg-size-[100%_100%] after:mix-blend-soft-light"
+                                      >
+                                        <img
+                                          height="375"
+                                          src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-cellar-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=250&amp;h=375&amp;q=80&amp;f=avif"
+                                          srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-cellar-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62.5&amp;h=94&amp;q=80&amp;f=avif 62.5w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-cellar-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=125&amp;h=188&amp;q=80&amp;f=avif 125w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-cellar-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=250&amp;h=375&amp;q=80&amp;f=avif 250w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-cellar-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=500&amp;h=750&amp;q=80&amp;f=avif 500w"
+                                          width="250"
+                                          alt=""
+                                          sizes="(min-width: 1800px) 216px, (min-width: 1380px) calc(13.25vw - 20px), (min-width: 1280px) calc(20vw - 70px), (min-width: 1060px) calc(20vw - 57px), (min-width: 800px) calc(25vw - 60px), (min-width: 680px) calc(33vw - 61px), calc(23.06vw + 4px)"
+                                          class="rounded-[2.5px] bg-default shadow-sm @min-[160px]:shadow-lg"
+                                          decoding="async"
+                                          loading="lazy"
+                                        />
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div
+                                    class="flex grow flex-col items-start gap-y-2 tablet:mt-2 tablet:w-full tablet:px-1"
+                                  >
+                                    <a
+                                      class="text-base leading-5 font-semibold text-accent after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0"
+                                      href="/reviews/the-cellar-by-richard-laymon/"
+                                      >The Cellar</a
+                                    >
+                                    <div
+                                      class="font-sans text-xs leading-4 font-light tracking-prose text-subtle"
+                                    >
+                                      <span
+                                        >Novel<!-- -->
+                                        | </span
+                                      >2000
+                                    </div>
+                                    <picture
+                                      ><source
+                                        media="(prefers-color-scheme: dark)"
+                                        srcset="/svg/3-stars-dark.svg" />
+                                      <img
+                                        alt="C+: 3 stars (out of 5)"
+                                        class="-mt-0.5 pb-[3px]"
+                                        height="15"
+                                        src="/svg/3-stars.svg"
+                                        width="75"
+                                    /></picture>
+                                    <div
+                                      class="font-sans text-xs leading-4 font-light tracking-prose text-subtle"
+                                    >
+                                      Mar 16, 2022
+                                    </div>
+                                  </div>
+                                </li>
+                                <li
+                                  class="group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-[5%] bg-default px-container py-4 transition-transform tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2 tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl"
+                                >
+                                  <div
+                                    class="relative w-1/4 max-w-[250px] shrink-0 self-start overflow-hidden rounded-sm shadow-all transition-transform after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0 tablet:w-auto"
+                                  >
+                                    <div
+                                      class="relative after:absolute after:top-0 after:left-0 after:z-sticky after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%] after:mix-blend-multiply"
+                                    >
+                                      <div
+                                        class="relative z-10 before:absolute before:top-0 before:left-0 before:z-10 before:block before:size-full before:rounded-[2.5px] before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%] after:absolute after:top-0 after:left-0 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)] after:bg-size-[100%_100%] after:mix-blend-soft-light"
+                                      >
+                                        <img
+                                          height="375"
+                                          src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=250&amp;h=375&amp;q=80&amp;f=avif"
+                                          srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62.5&amp;h=94&amp;q=80&amp;f=avif 62.5w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=125&amp;h=188&amp;q=80&amp;f=avif 125w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=250&amp;h=375&amp;q=80&amp;f=avif 250w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=500&amp;h=750&amp;q=80&amp;f=avif 500w"
+                                          width="250"
+                                          alt=""
+                                          sizes="(min-width: 1800px) 216px, (min-width: 1380px) calc(13.25vw - 20px), (min-width: 1280px) calc(20vw - 70px), (min-width: 1060px) calc(20vw - 57px), (min-width: 800px) calc(25vw - 60px), (min-width: 680px) calc(33vw - 61px), calc(23.06vw + 4px)"
+                                          class="rounded-[2.5px] bg-default shadow-sm @min-[160px]:shadow-lg"
+                                          decoding="async"
+                                          loading="lazy"
+                                        />
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div
+                                    class="flex grow flex-col items-start gap-y-2 tablet:mt-2 tablet:w-full tablet:px-1"
+                                  >
+                                    <a
+                                      class="text-base leading-5 font-semibold text-accent after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0"
+                                      href="/reviews/desert-pickup-by-richard-laymon/"
+                                      >Desert Pickup</a
+                                    >
+                                    <div
+                                      class="font-sans text-xs leading-4 font-light tracking-prose text-subtle"
+                                    >
+                                      <span
+                                        >Short Story<!-- -->
+                                        | </span
+                                      >2000
+                                    </div>
+                                    <picture
+                                      ><source
+                                        media="(prefers-color-scheme: dark)"
+                                        srcset="/svg/2-half-stars-dark.svg" />
+                                      <img
+                                        alt="C-: 2.5 stars (out of 5)"
+                                        class="-mt-0.5 pb-[3px]"
+                                        height="15"
+                                        src="/svg/2-half-stars.svg"
+                                        width="75"
+                                    /></picture>
+                                    <div
+                                      class="font-sans text-xs leading-4 font-light tracking-prose text-subtle"
+                                    >
+                                      Apr 03, 2022
+                                    </div>
+                                  </div>
+                                </li>
+                                <li
+                                  class="group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-[5%] bg-default px-container py-4 transition-transform tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2 tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl"
+                                >
+                                  <div
+                                    class="relative w-1/4 max-w-[250px] shrink-0 self-start overflow-hidden rounded-sm shadow-all transition-transform after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0 tablet:w-auto"
+                                  >
+                                    <div
+                                      class="relative after:absolute after:top-0 after:left-0 after:z-sticky after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%] after:mix-blend-multiply"
+                                    >
+                                      <div
+                                        class="relative z-10 before:absolute before:top-0 before:left-0 before:z-10 before:block before:size-full before:rounded-[2.5px] before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%] after:absolute after:top-0 after:left-0 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)] after:bg-size-[100%_100%] after:mix-blend-soft-light"
+                                      >
+                                        <img
+                                          height="375"
+                                          src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-intruder-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D668%26origFormat%3Dpng&amp;w=250&amp;h=334&amp;q=80&amp;f=avif"
+                                          srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-intruder-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D668%26origFormat%3Dpng&amp;w=62.5&amp;h=84&amp;q=80&amp;f=avif 62.5w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-intruder-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D668%26origFormat%3Dpng&amp;w=125&amp;h=167&amp;q=80&amp;f=avif 125w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-intruder-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D668%26origFormat%3Dpng&amp;w=250&amp;h=334&amp;q=80&amp;f=avif 250w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-intruder-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D668%26origFormat%3Dpng&amp;w=500&amp;h=668&amp;q=80&amp;f=avif 500w"
+                                          width="250"
+                                          alt=""
+                                          sizes="(min-width: 1800px) 216px, (min-width: 1380px) calc(13.25vw - 20px), (min-width: 1280px) calc(20vw - 70px), (min-width: 1060px) calc(20vw - 57px), (min-width: 800px) calc(25vw - 60px), (min-width: 680px) calc(33vw - 61px), calc(23.06vw + 4px)"
+                                          class="rounded-[2.5px] bg-default shadow-sm @min-[160px]:shadow-lg"
+                                          decoding="async"
+                                          loading="lazy"
+                                        />
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div
+                                    class="flex grow flex-col items-start gap-y-2 tablet:mt-2 tablet:w-full tablet:px-1"
+                                  >
+                                    <a
+                                      class="text-base leading-5 font-semibold text-accent after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0"
+                                      href="/reviews/the-intruder-by-richard-laymon/"
+                                      >The Intruder</a
+                                    >
+                                    <div
+                                      class="font-sans text-xs leading-4 font-light tracking-prose text-subtle"
+                                    >
+                                      <span
+                                        >Short Story<!-- -->
+                                        | </span
+                                      >2000
+                                    </div>
+                                    <picture
+                                      ><source
+                                        media="(prefers-color-scheme: dark)"
+                                        srcset="/svg/3-stars-dark.svg" />
+                                      <img
+                                        alt="C: 3 stars (out of 5)"
+                                        class="-mt-0.5 pb-[3px]"
+                                        height="15"
+                                        src="/svg/3-stars.svg"
+                                        width="75"
+                                    /></picture>
+                                    <div
+                                      class="font-sans text-xs leading-4 font-light tracking-prose text-subtle"
+                                    >
+                                      Jul 23, 2014
+                                    </div>
+                                  </div>
+                                </li>
+                                <li
+                                  class="group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-[5%] bg-default px-container py-4 transition-transform tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2 tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl"
+                                >
+                                  <div
+                                    class="relative w-1/4 max-w-[250px] shrink-0 self-start overflow-hidden rounded-sm shadow-all transition-transform after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0 tablet:w-auto"
+                                  >
+                                    <div
+                                      class="relative after:absolute after:top-0 after:left-0 after:z-sticky after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%] after:mix-blend-multiply"
+                                    >
+                                      <div
+                                        class="relative z-10 before:absolute before:top-0 before:left-0 before:z-10 before:block before:size-full before:rounded-[2.5px] before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%] after:absolute after:top-0 after:left-0 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)] after:bg-size-[100%_100%] after:mix-blend-soft-light"
+                                      >
+                                        <img
+                                          height="375"
+                                          src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-last-hand-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D671%26origFormat%3Dpng&amp;w=250&amp;h=336&amp;q=80&amp;f=avif"
+                                          srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-last-hand-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D671%26origFormat%3Dpng&amp;w=62.5&amp;h=84&amp;q=80&amp;f=avif 62.5w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-last-hand-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D671%26origFormat%3Dpng&amp;w=125&amp;h=168&amp;q=80&amp;f=avif 125w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-last-hand-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D671%26origFormat%3Dpng&amp;w=250&amp;h=336&amp;q=80&amp;f=avif 250w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-last-hand-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D671%26origFormat%3Dpng&amp;w=500&amp;h=672&amp;q=80&amp;f=avif 500w"
+                                          width="250"
+                                          alt=""
+                                          sizes="(min-width: 1800px) 216px, (min-width: 1380px) calc(13.25vw - 20px), (min-width: 1280px) calc(20vw - 70px), (min-width: 1060px) calc(20vw - 57px), (min-width: 800px) calc(25vw - 60px), (min-width: 680px) calc(33vw - 61px), calc(23.06vw + 4px)"
+                                          class="rounded-[2.5px] bg-default shadow-sm @min-[160px]:shadow-lg"
+                                          decoding="async"
+                                          loading="lazy"
+                                        />
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div
+                                    class="flex grow flex-col items-start gap-y-2 tablet:mt-2 tablet:w-full tablet:px-1"
+                                  >
+                                    <a
+                                      class="text-base leading-5 font-semibold text-accent after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0"
+                                      href="/reviews/the-last-hand-by-richard-laymon/"
+                                      >The Last Hand</a
+                                    >
+                                    <div
+                                      class="font-sans text-xs leading-4 font-light tracking-prose text-subtle"
+                                    >
+                                      <span
+                                        >Short Story<!-- -->
+                                        | </span
+                                      >2000
+                                    </div>
+                                    <picture
+                                      ><source
+                                        media="(prefers-color-scheme: dark)"
+                                        srcset="/svg/2-stars-dark.svg" />
+                                      <img
+                                        alt="D: 2 stars (out of 5)"
+                                        class="-mt-0.5 pb-[3px]"
+                                        height="15"
+                                        src="/svg/2-stars.svg"
+                                        width="75"
+                                    /></picture>
+                                    <div
+                                      class="font-sans text-xs leading-4 font-light tracking-prose text-subtle"
+                                    >
+                                      Jul 13, 2014
+                                    </div>
+                                  </div>
+                                </li>
+                                <li
+                                  class="group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-[5%] bg-default px-container py-4 transition-transform tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2 tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl"
+                                >
+                                  <div
+                                    class="relative w-1/4 max-w-[250px] shrink-0 self-start overflow-hidden rounded-sm shadow-all transition-transform after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0 tablet:w-auto"
+                                  >
+                                    <div
+                                      class="relative after:absolute after:top-0 after:left-0 after:z-sticky after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%] after:mix-blend-multiply"
+                                    >
+                                      <div
+                                        class="relative z-10 before:absolute before:top-0 before:left-0 before:z-10 before:block before:size-full before:rounded-[2.5px] before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%] after:absolute after:top-0 after:left-0 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)] after:bg-size-[100%_100%] after:mix-blend-soft-light"
+                                      >
+                                        <img
+                                          height="375"
+                                          src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D667%26origFormat%3Dpng&amp;w=250&amp;h=334&amp;q=80&amp;f=avif"
+                                          srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D667%26origFormat%3Dpng&amp;w=62.5&amp;h=84&amp;q=80&amp;f=avif 62.5w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D667%26origFormat%3Dpng&amp;w=125&amp;h=167&amp;q=80&amp;f=avif 125w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D667%26origFormat%3Dpng&amp;w=250&amp;h=334&amp;q=80&amp;f=avif 250w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D667%26origFormat%3Dpng&amp;w=500&amp;h=668&amp;q=80&amp;f=avif 500w"
+                                          width="250"
+                                          alt=""
+                                          sizes="(min-width: 1800px) 216px, (min-width: 1380px) calc(13.25vw - 20px), (min-width: 1280px) calc(20vw - 70px), (min-width: 1060px) calc(20vw - 57px), (min-width: 800px) calc(25vw - 60px), (min-width: 680px) calc(33vw - 61px), calc(23.06vw + 4px)"
+                                          class="rounded-[2.5px] bg-default shadow-sm @min-[160px]:shadow-lg"
+                                          decoding="async"
+                                          loading="lazy"
+                                        />
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div
+                                    class="flex grow flex-col items-start gap-y-2 tablet:mt-2 tablet:w-full tablet:px-1"
+                                  >
+                                    <a
+                                      class="text-base leading-5 font-semibold text-accent after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0"
+                                      href="/reviews/the-lonely-one-by-richard-laymon/"
+                                      >The Lonely One</a
+                                    >
+                                    <div
+                                      class="font-sans text-xs leading-4 font-light tracking-prose text-subtle"
+                                    >
+                                      <span
+                                        >Short Story<!-- -->
+                                        | </span
+                                      >2000
+                                    </div>
+                                    <picture
+                                      ><source
+                                        media="(prefers-color-scheme: dark)"
+                                        srcset="/svg/3-stars-dark.svg" />
+                                      <img
+                                        alt="C+: 3 stars (out of 5)"
+                                        class="-mt-0.5 pb-[3px]"
+                                        height="15"
+                                        src="/svg/3-stars.svg"
+                                        width="75"
+                                    /></picture>
+                                    <div
+                                      class="font-sans text-xs leading-4 font-light tracking-prose text-subtle"
+                                    >
+                                      Feb 15, 2025
+                                    </div>
+                                  </div>
+                                </li>
+                                <li
+                                  class="group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-[5%] bg-default px-container py-4 transition-transform tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2 tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl"
+                                >
+                                  <div
+                                    class="relative w-1/4 max-w-[250px] shrink-0 self-start overflow-hidden rounded-sm shadow-all transition-transform after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0 tablet:w-auto"
+                                  >
+                                    <div
+                                      class="relative after:absolute after:top-0 after:left-0 after:z-sticky after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%] after:mix-blend-multiply"
+                                    >
+                                      <div
+                                        class="relative z-10 before:absolute before:top-0 before:left-0 before:z-10 before:block before:size-full before:rounded-[2.5px] before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%] after:absolute after:top-0 after:left-0 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)] after:bg-size-[100%_100%] after:mix-blend-soft-light"
+                                      >
+                                        <img
+                                          height="375"
+                                          src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=250&amp;h=375&amp;q=80&amp;f=avif"
+                                          srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62.5&amp;h=94&amp;q=80&amp;f=avif 62.5w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=125&amp;h=188&amp;q=80&amp;f=avif 125w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=250&amp;h=375&amp;q=80&amp;f=avif 250w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=500&amp;h=750&amp;q=80&amp;f=avif 500w"
+                                          width="250"
+                                          alt=""
+                                          sizes="(min-width: 1800px) 216px, (min-width: 1380px) calc(13.25vw - 20px), (min-width: 1280px) calc(20vw - 70px), (min-width: 1060px) calc(20vw - 57px), (min-width: 800px) calc(25vw - 60px), (min-width: 680px) calc(33vw - 61px), calc(23.06vw + 4px)"
+                                          class="rounded-[2.5px] bg-default shadow-sm @min-[160px]:shadow-lg"
+                                          decoding="async"
+                                          loading="lazy"
+                                        />
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div
+                                    class="flex grow flex-col items-start gap-y-2 tablet:mt-2 tablet:w-full tablet:px-1"
+                                  >
+                                    <a
+                                      class="text-base leading-5 font-semibold text-accent after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0"
+                                      href="/reviews/out-are-the-lights-by-richard-laymon/"
+                                      >Out Are the Lights</a
+                                    >
+                                    <div
+                                      class="font-sans text-xs leading-4 font-light tracking-prose text-subtle"
+                                    >
+                                      <span
+                                        >Novel<!-- -->
+                                        | </span
+                                      >2000
+                                    </div>
+                                    <picture
+                                      ><source
+                                        media="(prefers-color-scheme: dark)"
+                                        srcset="/svg/2-half-stars-dark.svg" />
+                                      <img
+                                        alt="C-: 2.5 stars (out of 5)"
+                                        class="-mt-0.5 pb-[3px]"
+                                        height="15"
+                                        src="/svg/2-half-stars.svg"
+                                        width="75"
+                                    /></picture>
+                                    <div
+                                      class="font-sans text-xs leading-4 font-light tracking-prose text-subtle"
+                                    >
+                                      Oct 11, 2022
+                                    </div>
+                                  </div>
+                                </li>
+                                <li
+                                  class="group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-[5%] bg-default px-container py-4 transition-transform tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2 tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl"
+                                >
+                                  <div
+                                    class="relative w-1/4 max-w-[250px] shrink-0 self-start overflow-hidden rounded-sm shadow-all transition-transform after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0 tablet:w-auto"
+                                  >
+                                    <div
+                                      class="relative after:absolute after:top-0 after:left-0 after:z-sticky after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%] after:mix-blend-multiply"
+                                    >
+                                      <div
+                                        class="relative z-10 before:absolute before:top-0 before:left-0 before:z-10 before:block before:size-full before:rounded-[2.5px] before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%] after:absolute after:top-0 after:left-0 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)] after:bg-size-[100%_100%] after:mix-blend-soft-light"
+                                      >
+                                        <img
+                                          height="375"
+                                          src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=250&amp;h=375&amp;q=80&amp;f=avif"
+                                          srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62.5&amp;h=94&amp;q=80&amp;f=avif 62.5w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=125&amp;h=188&amp;q=80&amp;f=avif 125w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=250&amp;h=375&amp;q=80&amp;f=avif 250w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=500&amp;h=750&amp;q=80&amp;f=avif 500w"
+                                          width="250"
+                                          alt=""
+                                          sizes="(min-width: 1800px) 216px, (min-width: 1380px) calc(13.25vw - 20px), (min-width: 1280px) calc(20vw - 70px), (min-width: 1060px) calc(20vw - 57px), (min-width: 800px) calc(25vw - 60px), (min-width: 680px) calc(33vw - 61px), calc(23.06vw + 4px)"
+                                          class="rounded-[2.5px] bg-default shadow-sm @min-[160px]:shadow-lg"
+                                          decoding="async"
+                                          loading="lazy"
+                                        />
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div
+                                    class="flex grow flex-col items-start gap-y-2 tablet:mt-2 tablet:w-full tablet:px-1"
+                                  >
+                                    <a
+                                      class="text-base leading-5 font-semibold text-accent after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0"
+                                      href="/reviews/roadside-pickup-by-richard-laymon/"
+                                      >Roadside Pickup</a
+                                    >
+                                    <div
+                                      class="font-sans text-xs leading-4 font-light tracking-prose text-subtle"
+                                    >
+                                      <span
+                                        >Short Story<!-- -->
+                                        | </span
+                                      >2000
+                                    </div>
+                                    <picture
+                                      ><source
+                                        media="(prefers-color-scheme: dark)"
+                                        srcset="/svg/2-half-stars-dark.svg" />
+                                      <img
+                                        alt="C-: 2.5 stars (out of 5)"
+                                        class="-mt-0.5 pb-[3px]"
+                                        height="15"
+                                        src="/svg/2-half-stars.svg"
+                                        width="75"
+                                    /></picture>
+                                    <div
+                                      class="font-sans text-xs leading-4 font-light tracking-prose text-subtle"
+                                    >
+                                      Jan 21, 2023
+                                    </div>
+                                  </div>
+                                </li>
+                                <li
+                                  class="group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-[5%] bg-default px-container py-4 transition-transform tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2 tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl"
+                                >
+                                  <div
+                                    class="relative w-1/4 max-w-[250px] shrink-0 self-start overflow-hidden rounded-sm shadow-all transition-transform after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0 tablet:w-auto"
+                                  >
+                                    <div
+                                      class="relative after:absolute after:top-0 after:left-0 after:z-sticky after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%] after:mix-blend-multiply"
+                                    >
+                                      <div
+                                        class="relative z-10 before:absolute before:top-0 before:left-0 before:z-10 before:block before:size-full before:rounded-[2.5px] before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%] after:absolute after:top-0 after:left-0 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)] after:bg-size-[100%_100%] after:mix-blend-soft-light"
+                                      >
+                                        <img
+                                          height="375"
+                                          src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftread-softly-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D796%26origFormat%3Dpng&amp;w=250&amp;h=398&amp;q=80&amp;f=avif"
+                                          srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftread-softly-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D796%26origFormat%3Dpng&amp;w=62.5&amp;h=99&amp;q=80&amp;f=avif 62.5w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftread-softly-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D796%26origFormat%3Dpng&amp;w=125&amp;h=199&amp;q=80&amp;f=avif 125w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftread-softly-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D796%26origFormat%3Dpng&amp;w=250&amp;h=398&amp;q=80&amp;f=avif 250w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftread-softly-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D796%26origFormat%3Dpng&amp;w=500&amp;h=796&amp;q=80&amp;f=avif 500w"
+                                          width="250"
+                                          alt=""
+                                          sizes="(min-width: 1800px) 216px, (min-width: 1380px) calc(13.25vw - 20px), (min-width: 1280px) calc(20vw - 70px), (min-width: 1060px) calc(20vw - 57px), (min-width: 800px) calc(25vw - 60px), (min-width: 680px) calc(33vw - 61px), calc(23.06vw + 4px)"
+                                          class="rounded-[2.5px] bg-default shadow-sm @min-[160px]:shadow-lg"
+                                          decoding="async"
+                                          loading="lazy"
+                                        />
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div
+                                    class="flex grow flex-col items-start gap-y-2 tablet:mt-2 tablet:w-full tablet:px-1"
+                                  >
+                                    <a
+                                      class="text-base leading-5 font-semibold text-accent after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0"
+                                      href="/reviews/tread-softly-by-richard-laymon/"
+                                      >Tread Softly</a
+                                    >
+                                    <div
+                                      class="font-sans text-xs leading-4 font-light tracking-prose text-subtle"
+                                    >
+                                      <span
+                                        >Novel<!-- -->
+                                        | </span
+                                      >2000
+                                    </div>
+                                    <picture
+                                      ><source
+                                        media="(prefers-color-scheme: dark)"
+                                        srcset="/svg/3-stars-dark.svg" />
+                                      <img
+                                        alt="C: 3 stars (out of 5)"
+                                        class="-mt-0.5 pb-[3px]"
+                                        height="15"
+                                        src="/svg/3-stars.svg"
+                                        width="75"
+                                    /></picture>
+                                    <div
+                                      class="font-sans text-xs leading-4 font-light tracking-prose text-subtle"
+                                    >
+                                      Sep 21, 2014
+                                    </div>
+                                  </div>
+                                </li>
+                                <li
+                                  class="group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-[5%] bg-default px-container py-4 transition-transform tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2 tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl"
+                                >
+                                  <div
+                                    class="relative w-1/4 max-w-[250px] shrink-0 self-start overflow-hidden rounded-sm shadow-all transition-transform after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0 tablet:w-auto"
+                                  >
+                                    <div
+                                      class="relative after:absolute after:top-0 after:left-0 after:z-sticky after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%] after:mix-blend-multiply"
+                                    >
+                                      <div
+                                        class="relative z-10 before:absolute before:top-0 before:left-0 before:z-10 before:block before:size-full before:rounded-[2.5px] before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%] after:absolute after:top-0 after:left-0 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)] after:bg-size-[100%_100%] after:mix-blend-soft-light"
+                                      >
+                                        <img
+                                          height="375"
+                                          src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=250&amp;h=375&amp;q=80&amp;f=avif"
+                                          srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62.5&amp;h=94&amp;q=80&amp;f=avif 62.5w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=125&amp;h=188&amp;q=80&amp;f=avif 125w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=250&amp;h=375&amp;q=80&amp;f=avif 250w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=500&amp;h=750&amp;q=80&amp;f=avif 500w"
+                                          width="250"
+                                          alt=""
+                                          sizes="(min-width: 1800px) 216px, (min-width: 1380px) calc(13.25vw - 20px), (min-width: 1280px) calc(20vw - 70px), (min-width: 1060px) calc(20vw - 57px), (min-width: 800px) calc(25vw - 60px), (min-width: 680px) calc(33vw - 61px), calc(23.06vw + 4px)"
+                                          class="rounded-[2.5px] bg-default shadow-sm @min-[160px]:shadow-lg"
+                                          decoding="async"
+                                          loading="lazy"
+                                        />
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div
+                                    class="flex grow flex-col items-start gap-y-2 tablet:mt-2 tablet:w-full tablet:px-1"
+                                  >
+                                    <a
+                                      class="text-base leading-5 font-semibold text-accent after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:opacity-0"
+                                      href="/reviews/the-woods-are-dark-by-richard-laymon/"
+                                      >The Woods Are Dark</a
+                                    >
+                                    <div
+                                      class="font-sans text-xs leading-4 font-light tracking-prose text-subtle"
+                                    >
+                                      <span
+                                        >Novel<!-- -->
+                                        | </span
+                                      >2000
+                                    </div>
+                                    <picture
+                                      ><source
+                                        media="(prefers-color-scheme: dark)"
+                                        srcset="/svg/3-stars-dark.svg" />
+                                      <img
+                                        alt="C+: 3 stars (out of 5)"
+                                        class="-mt-0.5 pb-[3px]"
+                                        height="15"
+                                        src="/svg/3-stars.svg"
+                                        width="75"
+                                    /></picture>
+                                    <div
+                                      class="font-sans text-xs leading-4 font-light tracking-prose text-subtle"
+                                    >
+                                      Sep 11, 2022
+                                    </div>
+                                  </div>
+                                </li>
+                              </ol>
+                            </div>
                           </div>
-                        </div>
-                        <div class="bg-subtle">
-                          <ol>
-                            <li
-                              class="group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-[102.5%] has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl bg-default relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6"
-                            >
-                              <div
-                                class="relative after:absolute after:top-0 after:left-0 after:z-10 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
-                              >
-                                <div
-                                  class="relative after:absolute after:top-0 after:left-0 after:z-20 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)] after:bg-size-[100%_100%] after:mix-blend-soft-light w-list-item-cover shrink-0"
-                                >
-                                  <div
-                                    class="relative z-10 before:absolute before:top-0 before:left-0 before:z-10 before:block before:size-full before:rounded-[2.5px] before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%] after:absolute after:top-0 after:left-0 after:z-10 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%] after:mix-blend-multiply"
-                                  >
-                                    <img
-                                      height="120"
-                                      src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fshort-stories-volume-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=80&amp;h=120&amp;q=80&amp;f=avif"
-                                      srcset="
-                                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fshort-stories-volume-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=20&amp;h=30&amp;q=80&amp;f=avif    20w,
-                                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fshort-stories-volume-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=40&amp;h=60&amp;q=80&amp;f=avif    40w,
-                                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fshort-stories-volume-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=80&amp;h=120&amp;q=80&amp;f=avif   80w,
-                                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fshort-stories-volume-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=160&amp;h=240&amp;q=80&amp;f=avif 160w
-                                      "
-                                      width="80"
-                                      sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
-                                      alt=""
-                                      class="rounded-[2.5px] bg-default shadow-sm @min-[160px]:shadow-lg"
-                                      decoding="async"
-                                      loading="lazy"
-                                    />
-                                  </div>
-                                </div>
-                              </div>
-                              <div
-                                class="flex grow flex-col items-start tablet:w-full tablet:pr-4"
-                              >
-                                <a
-                                  class="block font-sans text-sm font-medium text-accent after:absolute after:top-0 after:left-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
-                                  href="/reviews/roadside-pickup-by-richard-laymon/"
-                                  >Roadside Pickup</a
-                                >
-                                <div class="mt-1 tablet:mt-2">
-                                  <div
-                                    class="font-sans text-xs leading-4 font-light text-subtle"
-                                  >
-                                    <span
-                                      >Short Story<!-- -->
-                                      | </span
-                                    >1974
-                                  </div>
-                                </div>
-                                <picture
-                                  ><source
-                                    media="(prefers-color-scheme: dark)"
-                                    srcset="/svg/2-half-stars-dark.svg" />
-                                  <img
-                                    alt="C-: 2.5 stars (out of 5)"
-                                    class="mt-2 tablet:mt-3"
-                                    height="16"
-                                    src="/svg/2-half-stars.svg"
-                                    width="80"
-                                /></picture>
-                              </div>
-                            </li>
-                          </ol>
-                        </div>
-                      </li>
-                      <li class="block">
-                        <div class="pt-0 text-md" style="z-index: 3">
-                          <div
-                            class="max-w-(--breakpoint-desktop) bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
-                            id="1980"
-                          >
-                            1980
-                          </div>
-                        </div>
-                        <div class="bg-subtle">
-                          <ol>
-                            <li
-                              class="group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-[102.5%] has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl bg-default relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6"
-                            >
-                              <div
-                                class="relative after:absolute after:top-0 after:left-0 after:z-10 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
-                              >
-                                <div
-                                  class="relative after:absolute after:top-0 after:left-0 after:z-20 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)] after:bg-size-[100%_100%] after:mix-blend-soft-light w-list-item-cover shrink-0"
-                                >
-                                  <div
-                                    class="relative z-10 before:absolute before:top-0 before:left-0 before:z-10 before:block before:size-full before:rounded-[2.5px] before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%] after:absolute after:top-0 after:left-0 after:z-10 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%] after:mix-blend-multiply"
-                                  >
-                                    <img
-                                      height="120"
-                                      src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-cellar-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=80&amp;h=120&amp;q=80&amp;f=avif"
-                                      srcset="
-                                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-cellar-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=20&amp;h=30&amp;q=80&amp;f=avif    20w,
-                                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-cellar-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=40&amp;h=60&amp;q=80&amp;f=avif    40w,
-                                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-cellar-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=80&amp;h=120&amp;q=80&amp;f=avif   80w,
-                                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-cellar-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=160&amp;h=240&amp;q=80&amp;f=avif 160w
-                                      "
-                                      width="80"
-                                      sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
-                                      alt=""
-                                      class="rounded-[2.5px] bg-default shadow-sm @min-[160px]:shadow-lg"
-                                      decoding="async"
-                                      loading="lazy"
-                                    />
-                                  </div>
-                                </div>
-                              </div>
-                              <div
-                                class="flex grow flex-col items-start tablet:w-full tablet:pr-4"
-                              >
-                                <a
-                                  class="block font-sans text-sm font-medium text-accent after:absolute after:top-0 after:left-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
-                                  href="/reviews/the-cellar-by-richard-laymon/"
-                                  >The Cellar</a
-                                >
-                                <div class="mt-1 tablet:mt-2">
-                                  <div
-                                    class="font-sans text-xs leading-4 font-light text-subtle"
-                                  >
-                                    <span
-                                      >Novel<!-- -->
-                                      | </span
-                                    >1980
-                                  </div>
-                                </div>
-                                <picture
-                                  ><source
-                                    media="(prefers-color-scheme: dark)"
-                                    srcset="/svg/3-stars-dark.svg" />
-                                  <img
-                                    alt="C+: 3 stars (out of 5)"
-                                    class="mt-2 tablet:mt-3"
-                                    height="16"
-                                    src="/svg/3-stars.svg"
-                                    width="80"
-                                /></picture>
-                              </div>
-                            </li>
-                          </ol>
-                        </div>
-                      </li>
-                      <li class="block">
-                        <div class="pt-0 text-md" style="z-index: 4">
-                          <div
-                            class="max-w-(--breakpoint-desktop) bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
-                            id="1981"
-                          >
-                            1981
-                          </div>
-                        </div>
-                        <div class="bg-subtle">
-                          <ol>
-                            <li
-                              class="group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-[102.5%] has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl bg-default relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6"
-                            >
-                              <div
-                                class="relative after:absolute after:top-0 after:left-0 after:z-10 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
-                              >
-                                <div
-                                  class="relative after:absolute after:top-0 after:left-0 after:z-20 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)] after:bg-size-[100%_100%] after:mix-blend-soft-light w-list-item-cover shrink-0"
-                                >
-                                  <div
-                                    class="relative z-10 before:absolute before:top-0 before:left-0 before:z-10 before:block before:size-full before:rounded-[2.5px] before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%] after:absolute after:top-0 after:left-0 after:z-10 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%] after:mix-blend-multiply"
-                                  >
-                                    <img
-                                      height="120"
-                                      src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=80&amp;h=120&amp;q=80&amp;f=avif"
-                                      srcset="
-                                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=20&amp;h=30&amp;q=80&amp;f=avif    20w,
-                                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=40&amp;h=60&amp;q=80&amp;f=avif    40w,
-                                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=80&amp;h=120&amp;q=80&amp;f=avif   80w,
-                                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=160&amp;h=240&amp;q=80&amp;f=avif 160w
-                                      "
-                                      width="80"
-                                      sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
-                                      alt=""
-                                      class="rounded-[2.5px] bg-default shadow-sm @min-[160px]:shadow-lg"
-                                      decoding="async"
-                                      loading="lazy"
-                                    />
-                                  </div>
-                                </div>
-                              </div>
-                              <div
-                                class="flex grow flex-col items-start tablet:w-full tablet:pr-4"
-                              >
-                                <a
-                                  class="block font-sans text-sm font-medium text-accent after:absolute after:top-0 after:left-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
-                                  href="/reviews/the-woods-are-dark-by-richard-laymon/"
-                                  >The Woods Are Dark</a
-                                >
-                                <div class="mt-1 tablet:mt-2">
-                                  <div
-                                    class="font-sans text-xs leading-4 font-light text-subtle"
-                                  >
-                                    <span
-                                      >Novel<!-- -->
-                                      | </span
-                                    >1981
-                                  </div>
-                                </div>
-                                <picture
-                                  ><source
-                                    media="(prefers-color-scheme: dark)"
-                                    srcset="/svg/3-stars-dark.svg" />
-                                  <img
-                                    alt="C+: 3 stars (out of 5)"
-                                    class="mt-2 tablet:mt-3"
-                                    height="16"
-                                    src="/svg/3-stars.svg"
-                                    width="80"
-                                /></picture>
-                              </div>
-                            </li>
-                          </ol>
-                        </div>
-                      </li>
-                      <li class="block">
-                        <div class="pt-0 text-md" style="z-index: 5">
-                          <div
-                            class="max-w-(--breakpoint-desktop) bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
-                            id="1982"
-                          >
-                            1982
-                          </div>
-                        </div>
-                        <div class="bg-subtle">
-                          <ol>
-                            <li
-                              class="group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-[102.5%] has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl bg-default relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6"
-                            >
-                              <div
-                                class="relative after:absolute after:top-0 after:left-0 after:z-10 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
-                              >
-                                <div
-                                  class="relative after:absolute after:top-0 after:left-0 after:z-20 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)] after:bg-size-[100%_100%] after:mix-blend-soft-light w-list-item-cover shrink-0"
-                                >
-                                  <div
-                                    class="relative z-10 before:absolute before:top-0 before:left-0 before:z-10 before:block before:size-full before:rounded-[2.5px] before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%] after:absolute after:top-0 after:left-0 after:z-10 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%] after:mix-blend-multiply"
-                                  >
-                                    <img
-                                      height="120"
-                                      src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fout-are-the-lights-and-other-tales-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=80&amp;h=120&amp;q=80&amp;f=avif"
-                                      srcset="
-                                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fout-are-the-lights-and-other-tales-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=20&amp;h=30&amp;q=80&amp;f=avif    20w,
-                                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fout-are-the-lights-and-other-tales-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=40&amp;h=60&amp;q=80&amp;f=avif    40w,
-                                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fout-are-the-lights-and-other-tales-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=80&amp;h=120&amp;q=80&amp;f=avif   80w,
-                                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fout-are-the-lights-and-other-tales-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=160&amp;h=240&amp;q=80&amp;f=avif 160w
-                                      "
-                                      width="80"
-                                      sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
-                                      alt=""
-                                      class="rounded-[2.5px] bg-default shadow-sm @min-[160px]:shadow-lg"
-                                      decoding="async"
-                                      loading="lazy"
-                                    />
-                                  </div>
-                                </div>
-                              </div>
-                              <div
-                                class="flex grow flex-col items-start tablet:w-full tablet:pr-4"
-                              >
-                                <a
-                                  class="block font-sans text-sm font-medium text-accent after:absolute after:top-0 after:left-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
-                                  href="/reviews/out-are-the-lights-by-richard-laymon/"
-                                  >Out Are the Lights</a
-                                >
-                                <div class="mt-1 tablet:mt-2">
-                                  <div
-                                    class="font-sans text-xs leading-4 font-light text-subtle"
-                                  >
-                                    <span
-                                      >Novel<!-- -->
-                                      | </span
-                                    >1982
-                                  </div>
-                                </div>
-                                <picture
-                                  ><source
-                                    media="(prefers-color-scheme: dark)"
-                                    srcset="/svg/2-half-stars-dark.svg" />
-                                  <img
-                                    alt="C-: 2.5 stars (out of 5)"
-                                    class="mt-2 tablet:mt-3"
-                                    height="16"
-                                    src="/svg/2-half-stars.svg"
-                                    width="80"
-                                /></picture>
-                              </div>
-                            </li>
-                          </ol>
-                        </div>
-                      </li>
-                      <li class="block">
-                        <div class="pt-0 text-md" style="z-index: 6">
-                          <div
-                            class="max-w-(--breakpoint-desktop) bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
-                            id="1984"
-                          >
-                            1984
-                          </div>
-                        </div>
-                        <div class="bg-subtle">
-                          <ol>
-                            <li
-                              class="group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-[102.5%] has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl bg-default relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6"
-                            >
-                              <div
-                                class="relative after:absolute after:top-0 after:left-0 after:z-10 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
-                              >
-                                <div
-                                  class="relative after:absolute after:top-0 after:left-0 after:z-20 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)] after:bg-size-[100%_100%] after:mix-blend-soft-light w-list-item-cover shrink-0"
-                                >
-                                  <div
-                                    class="relative z-10 before:absolute before:top-0 before:left-0 before:z-10 before:block before:size-full before:rounded-[2.5px] before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%] after:absolute after:top-0 after:left-0 after:z-10 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%] after:mix-blend-multiply"
-                                  >
-                                    <img
-                                      height="106.88000000000001"
-                                      src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-intruder-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D668%26origFormat%3Dpng&amp;w=80&amp;h=107&amp;q=80&amp;f=avif"
-                                      srcset="
-                                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-intruder-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D668%26origFormat%3Dpng&amp;w=20&amp;h=27&amp;q=80&amp;f=avif    20w,
-                                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-intruder-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D668%26origFormat%3Dpng&amp;w=40&amp;h=54&amp;q=80&amp;f=avif    40w,
-                                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-intruder-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D668%26origFormat%3Dpng&amp;w=80&amp;h=107&amp;q=80&amp;f=avif   80w,
-                                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-intruder-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D668%26origFormat%3Dpng&amp;w=160&amp;h=214&amp;q=80&amp;f=avif 160w
-                                      "
-                                      width="80"
-                                      sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
-                                      alt=""
-                                      class="rounded-[2.5px] bg-default shadow-sm @min-[160px]:shadow-lg"
-                                      decoding="async"
-                                      loading="lazy"
-                                    />
-                                  </div>
-                                </div>
-                              </div>
-                              <div
-                                class="flex grow flex-col items-start tablet:w-full tablet:pr-4"
-                              >
-                                <a
-                                  class="block font-sans text-sm font-medium text-accent after:absolute after:top-0 after:left-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
-                                  href="/reviews/the-intruder-by-richard-laymon/"
-                                  >The Intruder</a
-                                >
-                                <div class="mt-1 tablet:mt-2">
-                                  <div
-                                    class="font-sans text-xs leading-4 font-light text-subtle"
-                                  >
-                                    <span
-                                      >Short Story<!-- -->
-                                      | </span
-                                    >1984
-                                  </div>
-                                </div>
-                                <picture
-                                  ><source
-                                    media="(prefers-color-scheme: dark)"
-                                    srcset="/svg/3-stars-dark.svg" />
-                                  <img
-                                    alt="C: 3 stars (out of 5)"
-                                    class="mt-2 tablet:mt-3"
-                                    height="16"
-                                    src="/svg/3-stars.svg"
-                                    width="80"
-                                /></picture>
-                              </div>
-                            </li>
-                          </ol>
-                        </div>
-                      </li>
-                      <li class="block">
-                        <div class="pt-0 text-md" style="z-index: 7">
-                          <div
-                            class="max-w-(--breakpoint-desktop) bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
-                            id="1985"
-                          >
-                            1985
-                          </div>
-                        </div>
-                        <div class="bg-subtle">
-                          <ol>
-                            <li
-                              class="group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-[102.5%] has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl bg-default relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6"
-                            >
-                              <div
-                                class="relative after:absolute after:top-0 after:left-0 after:z-10 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
-                              >
-                                <div
-                                  class="relative after:absolute after:top-0 after:left-0 after:z-20 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)] after:bg-size-[100%_100%] after:mix-blend-soft-light w-list-item-cover shrink-0"
-                                >
-                                  <div
-                                    class="relative z-10 before:absolute before:top-0 before:left-0 before:z-10 before:block before:size-full before:rounded-[2.5px] before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%] after:absolute after:top-0 after:left-0 after:z-10 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%] after:mix-blend-multiply"
-                                  >
-                                    <img
-                                      height="120"
-                                      src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fbeware-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=80&amp;h=120&amp;q=80&amp;f=avif"
-                                      srcset="
-                                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fbeware-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=20&amp;h=30&amp;q=80&amp;f=avif    20w,
-                                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fbeware-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=40&amp;h=60&amp;q=80&amp;f=avif    40w,
-                                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fbeware-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=80&amp;h=120&amp;q=80&amp;f=avif   80w,
-                                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fbeware-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=160&amp;h=240&amp;q=80&amp;f=avif 160w
-                                      "
-                                      width="80"
-                                      sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
-                                      alt=""
-                                      class="rounded-[2.5px] bg-default shadow-sm @min-[160px]:shadow-lg"
-                                      decoding="async"
-                                      loading="lazy"
-                                    />
-                                  </div>
-                                </div>
-                              </div>
-                              <div
-                                class="flex grow flex-col items-start tablet:w-full tablet:pr-4"
-                              >
-                                <a
-                                  class="block font-sans text-sm font-medium text-accent after:absolute after:top-0 after:left-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
-                                  href="/reviews/beware-by-richard-laymon/"
-                                  >Beware!</a
-                                >
-                                <div class="mt-1 tablet:mt-2">
-                                  <div
-                                    class="font-sans text-xs leading-4 font-light text-subtle"
-                                  >
-                                    <span
-                                      >Novel<!-- -->
-                                      | </span
-                                    >1985
-                                  </div>
-                                </div>
-                                <picture
-                                  ><source
-                                    media="(prefers-color-scheme: dark)"
-                                    srcset="/svg/3-stars-dark.svg" />
-                                  <img
-                                    alt="C: 3 stars (out of 5)"
-                                    class="mt-2 tablet:mt-3"
-                                    height="16"
-                                    src="/svg/3-stars.svg"
-                                    width="80"
-                                /></picture>
-                              </div>
-                            </li>
-                            <li
-                              class="group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-[102.5%] has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl bg-default relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6"
-                            >
-                              <div
-                                class="relative after:absolute after:top-0 after:left-0 after:z-10 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
-                              >
-                                <div
-                                  class="relative after:absolute after:top-0 after:left-0 after:z-20 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)] after:bg-size-[100%_100%] after:mix-blend-soft-light w-list-item-cover shrink-0"
-                                >
-                                  <div
-                                    class="relative z-10 before:absolute before:top-0 before:left-0 before:z-10 before:block before:size-full before:rounded-[2.5px] before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%] after:absolute after:top-0 after:left-0 after:z-10 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%] after:mix-blend-multiply"
-                                  >
-                                    <img
-                                      height="107.36000000000001"
-                                      src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-last-hand-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D671%26origFormat%3Dpng&amp;w=80&amp;h=107&amp;q=80&amp;f=avif"
-                                      srcset="
-                                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-last-hand-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D671%26origFormat%3Dpng&amp;w=20&amp;h=27&amp;q=80&amp;f=avif    20w,
-                                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-last-hand-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D671%26origFormat%3Dpng&amp;w=40&amp;h=54&amp;q=80&amp;f=avif    40w,
-                                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-last-hand-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D671%26origFormat%3Dpng&amp;w=80&amp;h=107&amp;q=80&amp;f=avif   80w,
-                                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-last-hand-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D671%26origFormat%3Dpng&amp;w=160&amp;h=214&amp;q=80&amp;f=avif 160w
-                                      "
-                                      width="80"
-                                      sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
-                                      alt=""
-                                      class="rounded-[2.5px] bg-default shadow-sm @min-[160px]:shadow-lg"
-                                      decoding="async"
-                                      loading="lazy"
-                                    />
-                                  </div>
-                                </div>
-                              </div>
-                              <div
-                                class="flex grow flex-col items-start tablet:w-full tablet:pr-4"
-                              >
-                                <a
-                                  class="block font-sans text-sm font-medium text-accent after:absolute after:top-0 after:left-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
-                                  href="/reviews/the-last-hand-by-richard-laymon/"
-                                  >The Last Hand</a
-                                >
-                                <div class="mt-1 tablet:mt-2">
-                                  <div
-                                    class="font-sans text-xs leading-4 font-light text-subtle"
-                                  >
-                                    <span
-                                      >Short Story<!-- -->
-                                      | </span
-                                    >1985
-                                  </div>
-                                </div>
-                                <picture
-                                  ><source
-                                    media="(prefers-color-scheme: dark)"
-                                    srcset="/svg/2-stars-dark.svg" />
-                                  <img
-                                    alt="D: 2 stars (out of 5)"
-                                    class="mt-2 tablet:mt-3"
-                                    height="16"
-                                    src="/svg/2-stars.svg"
-                                    width="80"
-                                /></picture>
-                              </div>
-                            </li>
-                            <li
-                              class="group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-[102.5%] has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl bg-default relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6"
-                            >
-                              <div
-                                class="relative after:absolute after:top-0 after:left-0 after:z-10 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
-                              >
-                                <div
-                                  class="relative after:absolute after:top-0 after:left-0 after:z-20 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)] after:bg-size-[100%_100%] after:mix-blend-soft-light w-list-item-cover shrink-0"
-                                >
-                                  <div
-                                    class="relative z-10 before:absolute before:top-0 before:left-0 before:z-10 before:block before:size-full before:rounded-[2.5px] before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%] after:absolute after:top-0 after:left-0 after:z-10 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%] after:mix-blend-multiply"
-                                  >
-                                    <img
-                                      height="106.72"
-                                      src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D667%26origFormat%3Dpng&amp;w=80&amp;h=107&amp;q=80&amp;f=avif"
-                                      srcset="
-                                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D667%26origFormat%3Dpng&amp;w=20&amp;h=27&amp;q=80&amp;f=avif    20w,
-                                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D667%26origFormat%3Dpng&amp;w=40&amp;h=54&amp;q=80&amp;f=avif    40w,
-                                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D667%26origFormat%3Dpng&amp;w=80&amp;h=107&amp;q=80&amp;f=avif   80w,
-                                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D667%26origFormat%3Dpng&amp;w=160&amp;h=214&amp;q=80&amp;f=avif 160w
-                                      "
-                                      width="80"
-                                      sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
-                                      alt=""
-                                      class="rounded-[2.5px] bg-default shadow-sm @min-[160px]:shadow-lg"
-                                      decoding="async"
-                                      loading="lazy"
-                                    />
-                                  </div>
-                                </div>
-                              </div>
-                              <div
-                                class="flex grow flex-col items-start tablet:w-full tablet:pr-4"
-                              >
-                                <a
-                                  class="block font-sans text-sm font-medium text-accent after:absolute after:top-0 after:left-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
-                                  href="/reviews/the-lonely-one-by-richard-laymon/"
-                                  >The Lonely One</a
-                                >
-                                <div class="mt-1 tablet:mt-2">
-                                  <div
-                                    class="font-sans text-xs leading-4 font-light text-subtle"
-                                  >
-                                    <span
-                                      >Short Story<!-- -->
-                                      | </span
-                                    >1985
-                                  </div>
-                                </div>
-                                <picture
-                                  ><source
-                                    media="(prefers-color-scheme: dark)"
-                                    srcset="/svg/3-stars-dark.svg" />
-                                  <img
-                                    alt="C+: 3 stars (out of 5)"
-                                    class="mt-2 tablet:mt-3"
-                                    height="16"
-                                    src="/svg/3-stars.svg"
-                                    width="80"
-                                /></picture>
-                              </div>
-                            </li>
-                          </ol>
-                        </div>
-                      </li>
-                      <li class="block">
-                        <div class="pt-0 text-md" style="z-index: 8">
-                          <div
-                            class="max-w-(--breakpoint-desktop) bg-subtle px-container py-8 text-xl leading-8 tablet:px-4"
-                            id="1987"
-                          >
-                            1987
-                          </div>
-                        </div>
-                        <div class="bg-subtle">
-                          <ol>
-                            <li
-                              class="group/list-item transform-gpu transition-transform has-[a:hover]:z-30 has-[a:hover]:scale-[102.5%] has-[a:hover]:shadow-all has-[a:hover]:drop-shadow-2xl bg-default relative mb-1 flex max-w-(--breakpoint-laptop) flex-row gap-x-4 px-container py-4 last-of-type:mb-0 tablet:gap-x-6 tablet:px-6"
-                            >
-                              <div
-                                class="relative after:absolute after:top-0 after:left-0 after:z-10 after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0"
-                              >
-                                <div
-                                  class="relative after:absolute after:top-0 after:left-0 after:z-20 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)] after:bg-size-[100%_100%] after:mix-blend-soft-light w-list-item-cover shrink-0"
-                                >
-                                  <div
-                                    class="relative z-10 before:absolute before:top-0 before:left-0 before:z-10 before:block before:size-full before:rounded-[2.5px] before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%] after:absolute after:top-0 after:left-0 after:z-10 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%] after:mix-blend-multiply"
-                                  >
-                                    <img
-                                      height="127.36000000000001"
-                                      src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftread-softly-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D796%26origFormat%3Dpng&amp;w=80&amp;h=127&amp;q=80&amp;f=avif"
-                                      srcset="
-                                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftread-softly-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D796%26origFormat%3Dpng&amp;w=20&amp;h=32&amp;q=80&amp;f=avif    20w,
-                                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftread-softly-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D796%26origFormat%3Dpng&amp;w=40&amp;h=64&amp;q=80&amp;f=avif    40w,
-                                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftread-softly-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D796%26origFormat%3Dpng&amp;w=80&amp;h=127&amp;q=80&amp;f=avif   80w,
-                                        /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftread-softly-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D796%26origFormat%3Dpng&amp;w=160&amp;h=254&amp;q=80&amp;f=avif 160w
-                                      "
-                                      width="80"
-                                      sizes="(max-width: 767px) 64px, (max-width: 1279px) 76px, 80px"
-                                      alt=""
-                                      class="rounded-[2.5px] bg-default shadow-sm @min-[160px]:shadow-lg"
-                                      decoding="async"
-                                      loading="lazy"
-                                    />
-                                  </div>
-                                </div>
-                              </div>
-                              <div
-                                class="flex grow flex-col items-start tablet:w-full tablet:pr-4"
-                              >
-                                <a
-                                  class="block font-sans text-sm font-medium text-accent after:absolute after:top-0 after:left-0 after:z-10 after:size-full after:bg-accent after:opacity-0 hover:before:opacity-0 tablet:before:left-4 desktop:before:left-6"
-                                  href="/reviews/tread-softly-by-richard-laymon/"
-                                  >Tread Softly</a
-                                >
-                                <div class="mt-1 tablet:mt-2">
-                                  <div
-                                    class="font-sans text-xs leading-4 font-light text-subtle"
-                                  >
-                                    <span
-                                      >Novel<!-- -->
-                                      | </span
-                                    >1987
-                                  </div>
-                                </div>
-                                <picture
-                                  ><source
-                                    media="(prefers-color-scheme: dark)"
-                                    srcset="/svg/3-stars-dark.svg" />
-                                  <img
-                                    alt="C: 3 stars (out of 5)"
-                                    class="mt-2 tablet:mt-3"
-                                    height="16"
-                                    src="/svg/3-stars.svg"
-                                    width="80"
-                                /></picture>
-                              </div>
-                            </li>
-                          </ol>
                         </div>
                       </li>
                     </ol>
@@ -1313,21 +1212,41 @@
                   </div>
                   <div
                     aria-hidden="true"
-                    class="invisible fixed inset-0 bg-[rgba(0,0,0,.4)] opacity-0 transition-opacity duration-200 tablet-landscape:hidden"
+                    class="invisible fixed inset-0 bg-[rgba(0,0,0,.4)] opacity-0 transition-opacity duration-200"
                   ></div>
                   <div
                     aria-label="Filters"
-                    class="fixed top-0 right-0 z-50 flex h-full max-w-[380px] flex-col items-start gap-y-5 bg-default text-left text-inverse duration-200 ease-in-out w-0 transform-[translateX(100%)] overflow-y-hidden tablet:gap-y-10 tablet-landscape:relative tablet-landscape:z-auto tablet-landscape:col-start-4 tablet-landscape:block tablet-landscape:w-auto tablet-landscape:max-w-none tablet-landscape:min-w-[320px] tablet-landscape:transform-none tablet-landscape:scroll-mt-[calc(25px_+_var(--scroll-offset,0px))] tablet-landscape:overflow-y-visible tablet-landscape:bg-inherit tablet-landscape:py-24 tablet-landscape:pb-12 tablet-landscape:drop-shadow-none laptop:w-[33%]"
+                    class="fixed top-0 right-0 z-filter-drawer flex h-full max-w-[380px] flex-col items-start gap-y-5 bg-default text-left text-inverse duration-200 ease-in-out w-0 transform-[translateX(100%)] overflow-y-hidden tablet:gap-y-10"
                     id="filters"
                   >
                     <div
-                      class="flex h-full w-full flex-col text-sm tablet:pt-12 tablet:text-base tablet-landscape:h-auto tablet-landscape:overflow-visible tablet-landscape:bg-default tablet-landscape:px-container tablet-landscape:pt-0 laptop:px-8"
+                      class="flex h-full w-full flex-col text-sm tablet:text-base [@media(min-height:815px)]:pt-12"
                     >
+                      <button
+                        aria-label="Close filters"
+                        class="absolute top-7 right-4 z-10 flex h-10 w-10 transform-gpu cursor-pointer items-center justify-center rounded-full bg-canvas text-default drop-shadow-md transition-transform hover:scale-105"
+                        type="button"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="h-4 w-4 transform-gpu"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          viewBox="0 0 28 28"
+                        >
+                          <path
+                            d="M7 21L21 7M7 7l14 14"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                        </svg>
+                      </button>
                       <fieldset
-                        class="flex grow flex-col gap-5 px-container pb-4 [--control-scroll-offset:calc(181px_+_var(--scroll-offset,0px))] tablet:gap-8 tablet-landscape:mt-0 tablet-landscape:gap-12 tablet-landscape:px-0 tablet-landscape:py-10"
+                        class="mt-0 flex h-full grow flex-col gap-5 px-container py-10 tablet:gap-8 tablet-landscape:grow-0 tablet-landscape:gap-12 tablet-landscape:px-12"
                       >
                         <legend
-                          class="mb-5 block w-full pt-4 pb-4 text-lg text-subtle shadow-bottom tablet-landscape:mb-0 tablet-landscape:pt-10 tablet-landscape:pb-8 tablet-landscape:font-sans tablet-landscape:text-xxs tablet-landscape:font-semibold tablet-landscape:tracking-wide tablet-landscape:uppercase"
+                          class="block w-full pt-10 pb-8 font-sans text-lg text-xxs font-semibold tracking-wide text-subtle uppercase shadow-bottom"
                         >
                           Filter
                         </legend>
@@ -1336,9 +1255,10 @@
                             class="inline-block h-6 text-left font-sans text-xxs leading-none tracking-wide text-subtle uppercase"
                             >Title</span
                           ><input
-                            class="border-0 bg-default px-4 py-2 text-base text-default shadow-all placeholder:text-default placeholder:opacity-50"
+                            class="border-0 bg-default px-4 py-2 text-base text-default shadow-all outline-accent placeholder:text-default placeholder:opacity-50"
                             placeholder="Enter all or part of a title"
                             type="text"
+                            value=""
                         /></label>
                         <fieldset class="text-subtle">
                           <legend
@@ -1354,14 +1274,7 @@
                               ><select
                                 class="w-full appearance-none border-none bg-default select-background-image py-2 pr-8 pl-4 text-base leading-6 text-subtle shadow-all outline-accent"
                               >
-                                <option value="1970" selected="">1970</option>
-                                <option value="1974">1974</option>
-                                <option value="1980">1980</option>
-                                <option value="1981">1981</option>
-                                <option value="1982">1982</option>
-                                <option value="1984">1984</option>
-                                <option value="1985">1985</option>
-                                <option value="1987">1987</option>
+                                <option value="2000" selected="">2000</option>
                               </select></label
                             ><label class="flex flex-1 items-center"
                               ><span
@@ -1370,14 +1283,41 @@
                               ><select
                                 class="w-full appearance-none border-none bg-default select-background-image py-2 pr-8 pl-4 text-base leading-6 text-subtle shadow-all outline-accent"
                               >
-                                <option value="1987" selected="">1987</option>
-                                <option value="1985">1985</option>
-                                <option value="1984">1984</option>
-                                <option value="1982">1982</option>
-                                <option value="1981">1981</option>
-                                <option value="1980">1980</option>
-                                <option value="1974">1974</option>
-                                <option value="1970">1970</option>
+                                <option value="2000" selected="">2000</option>
+                              </select></label
+                            >
+                          </div>
+                        </fieldset>
+                        <fieldset class="text-subtle">
+                          <legend
+                            class="inline-block h-6 text-left font-sans text-xxs leading-none tracking-wide text-subtle uppercase"
+                          >
+                            Review Year
+                          </legend>
+                          <div class="flex items-baseline">
+                            <label class="flex flex-1 items-center gap-x-[.5ch]"
+                              ><span
+                                class="min-w-10 text-left text-sm tracking-serif-wide"
+                                >From</span
+                              ><select
+                                class="w-full appearance-none border-none bg-default select-background-image py-2 pr-8 pl-4 text-base leading-6 text-subtle shadow-all outline-accent"
+                              >
+                                <option value="2014" selected="">2014</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                                <option value="2025">2025</option>
+                              </select></label
+                            ><label class="flex flex-1 items-center"
+                              ><span
+                                class="min-w-10 text-center text-sm tracking-serif-wide"
+                                >to</span
+                              ><select
+                                class="w-full appearance-none border-none bg-default select-background-image py-2 pr-8 pl-4 text-base leading-6 text-subtle shadow-all outline-accent"
+                              >
+                                <option value="2025" selected="">2025</option>
+                                <option value="2023">2023</option>
+                                <option value="2022">2022</option>
+                                <option value="2014">2014</option>
                               </select></label
                             >
                           </div>
@@ -1396,16 +1336,25 @@
                         >
                       </fieldset>
                       <div
-                        class="sticky bottom-0 z-10 mt-auto w-full self-end border-t border-t-default bg-default px-8 py-4 drop-shadow-2xl tablet-landscape:hidden"
+                        class="sticky bottom-0 z-filter-footer mt-auto w-full self-end border-t border-t-default bg-default px-8 py-4 drop-shadow-2xl tablet-landscape:px-12"
                       >
-                        <button
-                          class="flex w-full cursor-pointer items-center justify-center gap-x-4 bg-footer px-4 py-3 font-sans text-xs text-nowrap text-inverse uppercase tablet-landscape:hidden"
-                          type="button"
-                        >
-                          View
-                          <!-- -->10<!-- -->
-                          Results
-                        </button>
+                        <div class="flex gap-x-4">
+                          <button
+                            aria-label="Clear all filters"
+                            class="flex items-center justify-center gap-x-4 rounded-sm bg-canvas px-4 py-3 font-sans text-xs text-nowrap uppercase cursor-not-allowed text-muted opacity-50"
+                            disabled=""
+                            type="button"
+                          >
+                            Clear</button
+                          ><button
+                            class="flex flex-1 cursor-pointer items-center justify-center gap-x-4 rounded-sm bg-footer px-4 py-3 font-sans text-xs text-nowrap text-inverse uppercase"
+                            type="button"
+                          >
+                            View<!-- -->
+                            <!-- -->10<!-- -->
+                            <!-- -->Results
+                          </button>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -1421,7 +1370,7 @@
               class="flex w-full flex-col tablet:flex-row-reverse tablet:justify-between"
             >
               <a
-                class="mx-auto mb-8 w-full max-w-button transform-gpu bg-footer py-5 text-center font-sans text-xs tracking-wide text-inverse uppercase transition-all hover:scale-105 hover:bg-subtle hover:text-default tablet:mx-0"
+                class="mx-auto mb-8 w-full max-w-button transform-gpu rounded-md bg-footer py-5 text-center font-sans text-xs tracking-wide text-inverse uppercase transition-all hover:scale-105 hover:bg-subtle hover:text-default tablet:mx-0"
                 href="#top"
                 >To the top</a
               >
@@ -1506,54 +1455,64 @@
               <div
                 class="flex w-full max-w-button grow flex-col gap-20 pt-10 pb-20 tablet:basis-button tablet:pr-10"
               >
-                <ul class="flex w-full flex-col gap-y-10 desktop:w-auto">
-                  <li class="block w-1/2 text-2xl whitespace-nowrap">
+                <ol class="flex w-full flex-col gap-y-10 desktop:w-auto">
+                  <li
+                    class="block w-1/2 text-2xl whitespace-nowrap laptop:w-full"
+                  >
                     <a
-                      class="block origin-left transform-gpu transition-all hover:scale-105"
+                      class="relative inline-block origin-left transform-gpu transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-(--fg-inverse)/75 after:transition-transform hover:after:scale-x-100"
                       href="/"
                       >Home</a
                     >
                   </li>
-                  <li class="block w-1/2 text-2xl whitespace-nowrap">
+                  <li
+                    class="block w-1/2 text-2xl whitespace-nowrap laptop:w-full"
+                  >
                     <a
-                      class="block origin-left transform-gpu transition-all hover:scale-105"
+                      class="relative inline-block origin-left transform-gpu transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-(--fg-inverse)/75 after:transition-transform hover:after:scale-x-100"
                       href="/how-i-grade/"
                       >How I Grade</a
                     >
                   </li>
-                  <li class="block w-1/2 text-2xl whitespace-nowrap">
+                  <li
+                    class="block w-1/2 text-2xl whitespace-nowrap laptop:w-full"
+                  >
                     <a
-                      class="block origin-left transform-gpu transition-all hover:scale-105"
+                      class="relative inline-block origin-left transform-gpu transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-(--fg-inverse)/75 after:transition-transform hover:after:scale-x-100"
                       href="/reviews/"
                       >Reviews</a
                     >
                   </li>
-                  <li class="block w-1/2 text-2xl whitespace-nowrap">
+                  <li
+                    class="block w-1/2 text-2xl whitespace-nowrap laptop:w-full"
+                  >
                     <a
-                      class="block origin-left transform-gpu transition-all hover:scale-105"
+                      class="relative inline-block origin-left transform-gpu transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-(--fg-inverse)/75 after:transition-transform hover:after:scale-x-100"
                       href="/authors/"
                       >Authors</a
                     >
                   </li>
-                  <li class="block w-1/2 text-2xl whitespace-nowrap">
+                  <li
+                    class="block w-1/2 text-2xl whitespace-nowrap laptop:w-full"
+                  >
                     <a
-                      class="block origin-left transform-gpu transition-all hover:scale-105"
+                      class="relative inline-block origin-left transform-gpu transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-(--fg-inverse)/75 after:transition-transform hover:after:scale-x-100"
                       href="/readings/"
                       >Reading Log</a
                     >
                     <ol class="mt-4">
                       <li
-                        class="mb-4 ml-1 font-sans text-xs tracking-wide text-subtle uppercase last:mb-0"
+                        class="mb-3 ml-1 font-sans text-xs tracking-wider text-inverse-subtle uppercase last:-mb-1"
                       >
                         <a
-                          class="block origin-left transform-gpu transition-all hover:scale-105 hover:text-default"
+                          class="relative inline-block origin-left transform-gpu pb-1 transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-(--fg-inverse)/75 after:transition-transform hover:text-inverse hover:after:scale-x-100"
                           href="/readings/stats/"
                           >Stats</a
                         >
                       </li>
                     </ol>
                   </li>
-                </ul>
+                </ol>
               </div>
             </div>
           </div>
@@ -1574,11 +1533,11 @@
     </div>
     <dialog
       aria-label="Search"
-      class="fixed inset-x-4 m-auto h-screen w-full rounded-lg border border-default bg-default shadow-lg backdrop:bg-[#000] backdrop:opacity-40 open:flex open:flex-col tablet:mx-auto tablet:mt-16 tablet:h-min tablet:max-h-[min(100vh-128px,900px)] tablet:max-w-[min(100vw-64px,36rem)] tablet:rounded-xl desktop:min-h-0"
+      class="fixed inset-x-4 m-auto h-screen w-full rounded-lg border border-default bg-default shadow-lg backdrop:bg-[#000] backdrop:opacity-40 open:flex open:flex-col tablet:mx-auto tablet:mt-16 tablet:h-min tablet:max-h-[min(100vh-128px,900px)] tablet:max-w-[min(100vw-64px,36rem)] tablet:rounded-xl"
     >
       <div class="contents" data-dialog-frame>
         <button
-          class="absolute right-4 z-10 mt-5 h-6 cursor-pointer border-none bg-subtle px-2 font-mono text-xs font-light text-muted hover:bg-inverse hover:text-inverse focus:outline-accent tablet:right-6 laptop:right-8"
+          class="absolute right-4 z-sticky mt-5 h-6 cursor-pointer border-none bg-subtle px-2 font-mono text-xs font-light text-muted hover:bg-inverse hover:text-inverse focus:outline-accent tablet:right-6 laptop:right-8"
           data-close-modal
         >
           ESC
@@ -1689,6 +1648,10 @@
     <script
       type="module"
       src="/src/layouts/Layout.astro?astro&type=script&index=0&lang.ts"
+    ></script>
+    <script
+      type="module"
+      src="/Users/frank/Developer/franksbooklog.com/src/layouts/Layout.astro?astro&type=script&index=1&lang.ts"
     ></script>
   </body>
 </html>

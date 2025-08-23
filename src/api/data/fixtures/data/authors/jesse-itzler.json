@@ -5,7 +5,6 @@
   "reviewedWorks": [
     {
       "title": "Living with a SEAL",
-      "yearPublished": "2015",
       "kind": "Nonfiction",
       "slug": "living-with-a-seal-by-jesse-itzler",
       "sortTitle": "Living with a SEAL: 31 Days Training with the Toughest Man on the Planet",
@@ -21,9 +20,14 @@
       ],
       "includedInSlugs": [],
       "reviewDate": "2022-06-01",
-      "reviewSequence": "2022-06-01-1",
+      "reviewSequence": 280,
       "subtitle": "31 Days Training with the Toughest Man on the Planet",
-      "yearReviewed": 2022
+      "workYear": "2000",
+      "workYearSequence": 124,
+      "authorSequence": 124,
+      "titleSequence": 124,
+      "gradeSequence": 124,
+      "reviewYear": "2022"
     }
   ]
 }
