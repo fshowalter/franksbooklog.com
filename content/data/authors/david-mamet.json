@@ -1,7 +1,6 @@
 {
   "name": "David Mamet",
   "sortName": "Mamet, David",
-  "authorId": "david-mamet",
   "slug": "david-mamet",
   "reviewedWorks": [
     {
@@ -13,7 +12,6 @@
       "authorSequence": 398,
       "titleSequence": 369,
       "kind": "Nonfiction",
-      "workId": "recessional-by-david-mamet",
       "slug": "recessional-by-david-mamet",
       "sortTitle": "Recessional: The Death of Free Speech and the Cost of a Free Lunch",
       "grade": "D",
@@ -23,14 +21,13 @@
       "reviewYear": "2024",
       "authors": [
         {
-          "authorId": "david-mamet",
           "slug": "david-mamet",
           "notes": null,
           "name": "David Mamet",
           "sortName": "Mamet, David"
         }
       ],
-      "includedInWorkIds": []
+      "includedInSlugs": []
     }
   ]
 }

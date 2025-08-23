@@ -12,18 +12,16 @@ export function Distribution({
   title: string;
   values: readonly Value[];
 }) {
-  const maxBar = values.reduce((total, val) => total + val.count, 0);
+  const maxBar = values.reduce((total, value) => total + value.count, 0);
 
   return (
-    <section className="w-full bg-default px-container pb-8">
-      <h2
-        className={`
-          py-4 font-medium
-          laptop:text-xl
-        `}
-      >
-        {title}
-      </h2>
+    <section
+      className={`
+        w-full bg-default px-container pb-8
+        laptop:px-12
+      `}
+    >
+      <h2 className="py-4 text-xl font-medium">{title}</h2>
       <div
         className={`
           grid w-full grid-cols-[1fr_24px_auto]
@@ -39,8 +37,7 @@ export function Distribution({
               <div className="col-span-3 grid grid-cols-subgrid">
                 <div
                   className={`
-                    font-sans text-xs text-muted
-                    tablet:text-sm
+                    pb-1 font-sans text-xs leading-3.5 tracking-prose text-muted
                   `}
                 >
                   {value.name}
@@ -48,8 +45,7 @@ export function Distribution({
                 <div
                   className={`
                     col-start-3 self-center pb-1 text-right font-sans text-xs
-                    text-nowrap text-subtle
-                    tablet:text-sm
+                    leading-3.5 text-nowrap text-subtle
                   `}
                 >
                   {value.count}

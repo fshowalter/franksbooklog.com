@@ -1,7 +1,6 @@
 {
   "name": "Joe Kenda",
   "sortName": "Kenda, Joe",
-  "authorId": "joe-kenda",
   "slug": "joe-kenda",
   "reviewedWorks": [
     {
@@ -13,7 +12,6 @@
       "authorSequence": 166,
       "titleSequence": 225,
       "kind": "Nonfiction",
-      "workId": "i-will-find-you-by-joe-kenda",
       "slug": "i-will-find-you-by-joe-kenda",
       "sortTitle": "I Will Find You: Solving Killer Cases from My Life Fighting Crime",
       "grade": "B",
@@ -23,14 +21,13 @@
       "reviewYear": "2022",
       "authors": [
         {
-          "authorId": "joe-kenda",
           "slug": "joe-kenda",
           "notes": null,
           "name": "Joe Kenda",
           "sortName": "Kenda, Joe"
         }
       ],
-      "includedInWorkIds": []
+      "includedInSlugs": []
     }
   ]
 }

@@ -56,14 +56,13 @@
     {
       "name": "Charlie Huston",
       "count": 6,
-      "authorId": "charlie-huston",
-      "slug": null,
+      "slug": "charlie-huston",
+      "reviewed": false,
       "readings": [
         {
           "readingSequence": 1,
           "date": "2019-01-14",
-          "workId": "already-dead-by-charlie-huston",
-          "slug": null,
+          "slug": "already-dead-by-charlie-huston",
           "edition": "Ebook",
           "kind": "Novel",
           "title": "Already Dead",
@@ -71,14 +70,13 @@
           "workYearSequence": 408,
           "authorSequence": 153,
           "titleSequence": 9,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": false
         },
         {
           "readingSequence": 1,
           "date": "2019-01-20",
-          "workId": "no-dominion-by-charlie-huston",
-          "slug": null,
+          "slug": "no-dominion-by-charlie-huston",
           "edition": "Ebook",
           "kind": "Novel",
           "title": "No Dominion",
@@ -86,14 +84,13 @@
           "workYearSequence": 416,
           "authorSequence": 155,
           "titleSequence": 326,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": false
         },
         {
           "readingSequence": 1,
           "date": "2019-01-21",
-          "workId": "half-the-blood-of-brooklyn-by-charlie-huston",
-          "slug": null,
+          "slug": "half-the-blood-of-brooklyn-by-charlie-huston",
           "edition": "Ebook",
           "kind": "Novel",
           "title": "Half the Blood of Brooklyn",
@@ -101,14 +98,13 @@
           "workYearSequence": 415,
           "authorSequence": 154,
           "titleSequence": 193,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": false
         },
         {
           "readingSequence": 1,
           "date": "2019-01-27",
-          "workId": "every-last-drop-by-charlie-huston",
-          "slug": null,
+          "slug": "every-last-drop-by-charlie-huston",
           "edition": "Ebook",
           "kind": "Novel",
           "title": "Every Last Drop",
@@ -116,14 +112,13 @@
           "workYearSequence": 420,
           "authorSequence": 157,
           "titleSequence": 150,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": false
         },
         {
           "readingSequence": 1,
           "date": "2019-01-30",
-          "workId": "my-dead-body-by-charlie-huston",
-          "slug": null,
+          "slug": "my-dead-body-by-charlie-huston",
           "edition": "Ebook",
           "kind": "Novel",
           "title": "My Dead Body",
@@ -131,14 +126,13 @@
           "workYearSequence": 421,
           "authorSequence": 158,
           "titleSequence": 315,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": false
         },
         {
           "readingSequence": 1,
           "date": "2019-06-07",
-          "workId": "the-shotgun-rule-by-charlie-huston",
-          "slug": null,
+          "slug": "the-shotgun-rule-by-charlie-huston",
           "edition": "Ebook",
           "kind": "Novel",
           "title": "The Shotgun Rule",
@@ -146,7 +140,7 @@
           "workYearSequence": 417,
           "authorSequence": 156,
           "titleSequence": 407,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": false
         }
       ]
@@ -154,14 +148,13 @@
     {
       "name": "Stephen King",
       "count": 6,
-      "authorId": "stephen-king",
       "slug": "stephen-king",
+      "reviewed": true,
       "readings": [
         {
           "readingSequence": 1,
           "date": "2019-02-03",
-          "workId": "the-eyes-of-the-dragon-by-stephen-king",
-          "slug": null,
+          "slug": "the-eyes-of-the-dragon-by-stephen-king",
           "edition": "Ebook",
           "kind": "Novel",
           "title": "The Eyes of the Dragon",
@@ -169,14 +162,13 @@
           "workYearSequence": 218,
           "authorSequence": 234,
           "titleSequence": 155,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": false
         },
         {
           "readingSequence": 1,
           "date": "2019-03-06",
-          "workId": "the-gunslinger-by-stephen-king",
-          "slug": null,
+          "slug": "the-gunslinger-by-stephen-king",
           "edition": "Ebook",
           "kind": "Novel",
           "title": "The Gunslinger",
@@ -184,14 +176,13 @@
           "workYearSequence": 149,
           "authorSequence": 214,
           "titleSequence": 191,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": false
         },
         {
           "readingSequence": 1,
           "date": "2019-03-13",
-          "workId": "the-drawing-of-the-three-by-stephen-king",
-          "slug": null,
+          "slug": "the-drawing-of-the-three-by-stephen-king",
           "edition": "Ebook",
           "kind": "Novel",
           "title": "The Drawing of the Three",
@@ -199,14 +190,13 @@
           "workYearSequence": 217,
           "authorSequence": 233,
           "titleSequence": 145,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": false
         },
         {
           "readingSequence": 1,
           "date": "2019-04-03",
-          "workId": "misery-by-stephen-king",
-          "slug": null,
+          "slug": "misery-by-stephen-king",
           "edition": "Ebook",
           "kind": "Novel",
           "title": "Misery",
@@ -214,14 +204,13 @@
           "workYearSequence": 219,
           "authorSequence": 235,
           "titleSequence": 300,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": false
         },
         {
           "readingSequence": 1,
           "date": "2019-05-19",
-          "workId": "the-tommyknockers-by-stephen-king",
-          "slug": null,
+          "slug": "the-tommyknockers-by-stephen-king",
           "edition": "Ebook",
           "kind": "Novel",
           "title": "The Tommyknockers",
@@ -229,14 +218,13 @@
           "workYearSequence": 220,
           "authorSequence": 236,
           "titleSequence": 444,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": false
         },
         {
           "readingSequence": 1,
           "date": "2019-06-20",
-          "workId": "the-dark-half-by-stephen-king",
-          "slug": null,
+          "slug": "the-dark-half-by-stephen-king",
           "edition": "Ebook",
           "kind": "Novel",
           "title": "The Dark Half",
@@ -244,7 +232,7 @@
           "workYearSequence": 234,
           "authorSequence": 237,
           "titleSequence": 112,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": false
         }
       ]
@@ -252,14 +240,13 @@
     {
       "name": "Raymond Chandler",
       "count": 4,
-      "authorId": "raymond-chandler",
       "slug": "raymond-chandler",
+      "reviewed": true,
       "readings": [
         {
           "readingSequence": 1,
           "date": "2019-02-16",
-          "workId": "farewell-my-lovely-by-raymond-chandler",
-          "slug": null,
+          "slug": "farewell-my-lovely-by-raymond-chandler",
           "edition": "Ebook",
           "kind": "Novel",
           "title": "Farewell, My Lovely",
@@ -267,14 +254,13 @@
           "workYearSequence": 22,
           "authorSequence": 37,
           "titleSequence": 157,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": false
         },
         {
           "readingSequence": 1,
           "date": "2019-03-23",
-          "workId": "the-high-window-by-raymond-chandler",
-          "slug": null,
+          "slug": "the-high-window-by-raymond-chandler",
           "edition": "Ebook",
           "kind": "Novel",
           "title": "The High Window",
@@ -282,14 +268,13 @@
           "workYearSequence": 24,
           "authorSequence": 38,
           "titleSequence": 208,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": false
         },
         {
           "readingSequence": 1,
           "date": "2019-04-14",
-          "workId": "the-lady-in-the-lake-by-raymond-chandler",
-          "slug": null,
+          "slug": "the-lady-in-the-lake-by-raymond-chandler",
           "edition": "Ebook",
           "kind": "Novel",
           "title": "The Lady in the Lake",
@@ -297,14 +282,13 @@
           "workYearSequence": 25,
           "authorSequence": 39,
           "titleSequence": 253,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": false
         },
         {
           "readingSequence": 1,
           "date": "2019-06-01",
-          "workId": "the-little-sister-by-raymond-chandler",
-          "slug": null,
+          "slug": "the-little-sister-by-raymond-chandler",
           "edition": "Ebook",
           "kind": "Novel",
           "title": "The Little Sister",
@@ -312,7 +296,7 @@
           "workYearSequence": 27,
           "authorSequence": 40,
           "titleSequence": 269,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": false
         }
       ]
@@ -320,14 +304,13 @@
     {
       "name": "Robert E. Howard",
       "count": 4,
-      "authorId": "robert-e-howard",
-      "slug": null,
+      "slug": "robert-e-howard",
+      "reviewed": false,
       "readings": [
         {
           "readingSequence": 1,
           "date": "2019-03-02",
-          "workId": "black-canaan-by-robert-e-howard",
-          "slug": null,
+          "slug": "black-canaan-by-robert-e-howard",
           "edition": "Paperback",
           "kind": "Collection",
           "title": "Black Canaan",
@@ -335,14 +318,13 @@
           "workYearSequence": 108,
           "authorSequence": 148,
           "titleSequence": 42,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": false
         },
         {
           "readingSequence": 2,
           "date": "2019-03-02",
-          "workId": "the-horror-stories-of-robert-e-howard-by-robert-e-howard",
-          "slug": null,
+          "slug": "the-horror-stories-of-robert-e-howard-by-robert-e-howard",
           "edition": "Ebook",
           "kind": "Collection",
           "title": "The Horror Stories of Robert E. Howard",
@@ -350,14 +332,13 @@
           "workYearSequence": 419,
           "authorSequence": 151,
           "titleSequence": 210,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": false
         },
         {
           "readingSequence": 1,
           "date": "2019-03-27",
-          "workId": "kull-exile-of-atlantis-by-robert-e-howard",
-          "slug": null,
+          "slug": "kull-exile-of-atlantis-by-robert-e-howard",
           "edition": "Ebook",
           "kind": "Collection",
           "title": "Kull: Exile of Atlantis",
@@ -365,14 +346,13 @@
           "workYearSequence": 53,
           "authorSequence": 138,
           "titleSequence": 251,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": false
         },
         {
           "readingSequence": 1,
           "date": "2019-04-28",
-          "workId": "the-coming-of-conan-the-cimmerian-by-robert-e-howard",
-          "slug": null,
+          "slug": "the-coming-of-conan-the-cimmerian-by-robert-e-howard",
           "edition": "Ebook",
           "kind": "Collection",
           "title": "The Coming of Conan the Cimmerian",
@@ -380,7 +360,7 @@
           "workYearSequence": 393,
           "authorSequence": 150,
           "titleSequence": 97,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": false
         }
       ]
@@ -388,14 +368,13 @@
     {
       "name": "Richard Laymon",
       "count": 4,
-      "authorId": "richard-laymon",
       "slug": "richard-laymon",
+      "reviewed": true,
       "readings": [
         {
           "readingSequence": 1,
           "date": "2019-02-10",
-          "workId": "darkness-tell-us-by-richard-laymon",
-          "slug": null,
+          "slug": "darkness-tell-us-by-richard-laymon",
           "edition": "Ebook",
           "kind": "Novel",
           "title": "Darkness, Tell Us",
@@ -403,14 +382,13 @@
           "workYearSequence": 274,
           "authorSequence": 324,
           "titleSequence": 114,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": false
         },
         {
           "readingSequence": 1,
           "date": "2019-03-18",
-          "workId": "alarums-by-richard-laymon",
-          "slug": null,
+          "slug": "alarums-by-richard-laymon",
           "edition": "Ebook",
           "kind": "Novel",
           "title": "Alarums",
@@ -418,14 +396,13 @@
           "workYearSequence": 294,
           "authorSequence": 331,
           "titleSequence": 7,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": false
         },
         {
           "readingSequence": 1,
           "date": "2019-04-11",
-          "workId": "blood-games-by-richard-laymon",
-          "slug": null,
+          "slug": "blood-games-by-richard-laymon",
           "edition": "Ebook",
           "kind": "Novel",
           "title": "Blood Games",
@@ -433,14 +410,13 @@
           "workYearSequence": 295,
           "authorSequence": 332,
           "titleSequence": 51,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": false
         },
         {
           "readingSequence": 1,
           "date": "2019-05-27",
-          "workId": "endless-night-by-richard-laymon",
-          "slug": null,
+          "slug": "endless-night-by-richard-laymon",
           "edition": "Ebook",
           "kind": "Novel",
           "title": "Endless Night",
@@ -448,7 +424,7 @@
           "workYearSequence": 315,
           "authorSequence": 340,
           "titleSequence": 149,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": false
         }
       ]

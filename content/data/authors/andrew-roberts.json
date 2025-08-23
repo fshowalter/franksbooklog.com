@@ -1,7 +1,6 @@
 {
   "name": "Andrew Roberts",
   "sortName": "Roberts, Andrew",
-  "authorId": "andrew-roberts",
   "slug": "andrew-roberts",
   "reviewedWorks": [
     {
@@ -13,7 +12,6 @@
       "authorSequence": 433,
       "titleSequence": 91,
       "kind": "Nonfiction",
-      "workId": "churchill-by-andrew-roberts",
       "slug": "churchill-by-andrew-roberts",
       "sortTitle": "Churchill: Walking with Destiny",
       "grade": "A-",
@@ -23,14 +21,13 @@
       "reviewYear": "2022",
       "authors": [
         {
-          "authorId": "andrew-roberts",
           "slug": "andrew-roberts",
           "notes": null,
           "name": "Andrew Roberts",
           "sortName": "Roberts, Andrew"
         }
       ],
-      "includedInWorkIds": []
+      "includedInSlugs": []
     }
   ]
 }

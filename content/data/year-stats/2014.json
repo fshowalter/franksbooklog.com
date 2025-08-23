@@ -56,13 +56,12 @@
     {
       "name": "Richard Laymon",
       "count": 17,
-      "authorId": "richard-laymon",
       "slug": "richard-laymon",
+      "reviewed": true,
       "readings": [
         {
           "readingSequence": 1,
           "date": "2014-02-24",
-          "workId": "the-cellar-by-richard-laymon",
           "slug": "the-cellar-by-richard-laymon",
           "edition": "Paperback",
           "kind": "Novel",
@@ -71,14 +70,13 @@
           "workYearSequence": 131,
           "authorSequence": 271,
           "titleSequence": 80,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": true
         },
         {
           "readingSequence": 1,
           "date": "2014-03-12",
-          "workId": "your-secret-admirer-by-richard-laymon",
-          "slug": null,
+          "slug": "your-secret-admirer-by-richard-laymon",
           "edition": "Paperback",
           "kind": "Novel",
           "title": "Your Secret Admirer",
@@ -86,13 +84,12 @@
           "workYearSequence": 133,
           "authorSequence": 273,
           "titleSequence": 480,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": false
         },
         {
           "readingSequence": 1,
           "date": "2014-03-18",
-          "workId": "the-woods-are-dark-by-richard-laymon",
           "slug": "the-woods-are-dark-by-richard-laymon",
           "edition": "Paperback",
           "kind": "Novel",
@@ -101,14 +98,13 @@
           "workYearSequence": 144,
           "authorSequence": 277,
           "titleSequence": 472,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": true
         },
         {
           "readingSequence": 1,
           "date": "2014-04-05",
-          "workId": "nightmare-lake-by-richard-laymon",
-          "slug": null,
+          "slug": "nightmare-lake-by-richard-laymon",
           "edition": "Paperback",
           "kind": "Novel",
           "title": "Nightmare Lake",
@@ -116,14 +112,13 @@
           "workYearSequence": 162,
           "authorSequence": 281,
           "titleSequence": 325,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": false
         },
         {
           "readingSequence": 1,
           "date": "2014-04-11",
-          "workId": "the-lawmen-by-richard-laymon",
-          "slug": null,
+          "slug": "the-lawmen-by-richard-laymon",
           "edition": "Paperback",
           "kind": "Novel",
           "title": "The Lawmen",
@@ -131,13 +126,12 @@
           "workYearSequence": 161,
           "authorSequence": 280,
           "titleSequence": 259,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": false
         },
         {
           "readingSequence": 1,
           "date": "2014-04-28",
-          "workId": "out-are-the-lights-by-richard-laymon",
           "slug": "out-are-the-lights-by-richard-laymon",
           "edition": "Paperback",
           "kind": "Novel",
@@ -146,7 +140,7 @@
           "workYearSequence": 155,
           "authorSequence": 279,
           "titleSequence": 339,
-          "includedInWorkIds": [
+          "includedInSlugs": [
             "out-are-the-lights-and-other-tales-by-richard-laymon"
           ],
           "reviewed": true
@@ -154,8 +148,7 @@
         {
           "readingSequence": 1,
           "date": "2014-05-21",
-          "workId": "night-show-by-richard-laymon",
-          "slug": null,
+          "slug": "night-show-by-richard-laymon",
           "edition": "Paperback",
           "kind": "Novel",
           "title": "Night Show",
@@ -163,14 +156,13 @@
           "workYearSequence": 180,
           "authorSequence": 285,
           "titleSequence": 322,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": false
         },
         {
           "readingSequence": 1,
           "date": "2014-06-09",
-          "workId": "shootout-at-joes-by-richard-laymon",
-          "slug": null,
+          "slug": "shootout-at-joes-by-richard-laymon",
           "edition": "Paperback",
           "kind": "Short Story",
           "title": "Shootout at Joe's",
@@ -178,14 +170,13 @@
           "workYearSequence": 181,
           "authorSequence": 286,
           "titleSequence": 404,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": false
         },
         {
           "readingSequence": 2,
           "date": "2014-06-09",
-          "workId": "dawsons-city-by-richard-laymon",
-          "slug": null,
+          "slug": "dawsons-city-by-richard-laymon",
           "edition": "Paperback",
           "kind": "Short Story",
           "title": "Dawson's City",
@@ -193,14 +184,13 @@
           "workYearSequence": 178,
           "authorSequence": 283,
           "titleSequence": 116,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": false
         },
         {
           "readingSequence": 2,
           "date": "2014-06-09",
-          "workId": "allhallows-eve-by-richard-laymon",
-          "slug": null,
+          "slug": "allhallows-eve-by-richard-laymon",
           "edition": "Paperback",
           "kind": "Novel",
           "title": "Allhallow's Eve",
@@ -208,13 +198,12 @@
           "workYearSequence": 204,
           "authorSequence": 302,
           "titleSequence": 8,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": false
         },
         {
           "readingSequence": 1,
           "date": "2014-06-27",
-          "workId": "beware-by-richard-laymon",
           "slug": "beware-by-richard-laymon",
           "edition": "Paperback",
           "kind": "Novel",
@@ -223,13 +212,12 @@
           "workYearSequence": 187,
           "authorSequence": 288,
           "titleSequence": 36,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": true
         },
         {
           "readingSequence": 1,
           "date": "2014-07-13",
-          "workId": "the-last-hand-by-richard-laymon",
           "slug": "the-last-hand-by-richard-laymon",
           "edition": "Paperback",
           "kind": "Short Story",
@@ -238,14 +226,13 @@
           "workYearSequence": 194,
           "authorSequence": 295,
           "titleSequence": 257,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": true
         },
         {
           "readingSequence": 1,
           "date": "2014-07-22",
-          "workId": "the-beast-house-by-richard-laymon",
-          "slug": null,
+          "slug": "the-beast-house-by-richard-laymon",
           "edition": "Paperback",
           "kind": "Novel",
           "title": "The Beast House",
@@ -253,13 +240,12 @@
           "workYearSequence": 206,
           "authorSequence": 304,
           "titleSequence": 29,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": false
         },
         {
           "readingSequence": 1,
           "date": "2014-07-23",
-          "workId": "the-intruder-by-richard-laymon",
           "slug": "the-intruder-by-richard-laymon",
           "edition": "Paperback",
           "kind": "Short Story",
@@ -268,13 +254,12 @@
           "workYearSequence": 179,
           "authorSequence": 284,
           "titleSequence": 233,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": true
         },
         {
           "readingSequence": 1,
           "date": "2014-09-21",
-          "workId": "tread-softly-by-richard-laymon",
           "slug": "tread-softly-by-richard-laymon",
           "edition": "Paperback",
           "kind": "Novel",
@@ -283,13 +268,12 @@
           "workYearSequence": 223,
           "authorSequence": 311,
           "titleSequence": 450,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": true
         },
         {
           "readingSequence": 1,
           "date": "2014-10-28",
-          "workId": "the-lonely-one-by-richard-laymon",
           "slug": "the-lonely-one-by-richard-laymon",
           "edition": "Paperback",
           "kind": "Short Story",
@@ -298,14 +282,13 @@
           "workYearSequence": 196,
           "authorSequence": 297,
           "titleSequence": 275,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": true
         },
         {
           "readingSequence": 1,
           "date": "2014-11-02",
-          "workId": "live-bait-by-richard-laymon",
-          "slug": null,
+          "slug": "live-bait-by-richard-laymon",
           "edition": "Paperback",
           "kind": "Short Story",
           "title": "Live Bait",
@@ -313,7 +296,7 @@
           "workYearSequence": 195,
           "authorSequence": 296,
           "titleSequence": 270,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": false
         }
       ]
@@ -321,13 +304,12 @@
     {
       "name": "Stephen King",
       "count": 10,
-      "authorId": "stephen-king",
       "slug": "stephen-king",
+      "reviewed": true,
       "readings": [
         {
           "readingSequence": 1,
           "date": "2014-03-02",
-          "workId": "the-stand-by-stephen-king",
           "slug": "the-stand-by-stephen-king",
           "edition": "Paperback",
           "kind": "Novel",
@@ -336,13 +318,12 @@
           "workYearSequence": 116,
           "authorSequence": 196,
           "titleSequence": 422,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": true
         },
         {
           "readingSequence": 1,
           "date": "2014-03-09",
-          "workId": "the-long-walk-by-stephen-king",
           "slug": "the-long-walk-by-stephen-king",
           "edition": "Paperback",
           "kind": "Novel",
@@ -351,14 +332,13 @@
           "workYearSequence": 112,
           "authorSequence": 192,
           "titleSequence": 277,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": true
         },
         {
           "readingSequence": 1,
           "date": "2014-04-04",
-          "workId": "the-dead-zone-by-stephen-king",
-          "slug": null,
+          "slug": "the-dead-zone-by-stephen-king",
           "edition": "Paperback",
           "kind": "Novel",
           "title": "The Dead Zone",
@@ -366,14 +346,13 @@
           "workYearSequence": 121,
           "authorSequence": 198,
           "titleSequence": 118,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": false
         },
         {
           "readingSequence": 1,
           "date": "2014-04-22",
-          "workId": "firestarter-by-stephen-king",
-          "slug": null,
+          "slug": "firestarter-by-stephen-king",
           "edition": "Ebook",
           "kind": "Novel",
           "title": "Firestarter",
@@ -381,14 +360,13 @@
           "workYearSequence": 126,
           "authorSequence": 200,
           "titleSequence": 162,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": false
         },
         {
           "readingSequence": 1,
           "date": "2014-05-11",
-          "workId": "roadwork-by-stephen-king",
-          "slug": null,
+          "slug": "roadwork-by-stephen-king",
           "edition": "Paperback",
           "kind": "Novel",
           "title": "Roadwork",
@@ -396,14 +374,13 @@
           "workYearSequence": 129,
           "authorSequence": 203,
           "titleSequence": 380,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": false
         },
         {
           "readingSequence": 1,
           "date": "2014-06-04",
-          "workId": "danse-macabre-by-stephen-king",
-          "slug": null,
+          "slug": "danse-macabre-by-stephen-king",
           "edition": "Ebook",
           "kind": "Nonfiction",
           "title": "Danse Macabre",
@@ -411,13 +388,12 @@
           "workYearSequence": 137,
           "authorSequence": 206,
           "titleSequence": 110,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": false
         },
         {
           "readingSequence": 4,
           "date": "2014-06-17",
-          "workId": "cujo-by-stephen-king",
           "slug": "cujo-by-stephen-king",
           "edition": "Ebook",
           "kind": "Novel",
@@ -426,14 +402,13 @@
           "workYearSequence": 136,
           "authorSequence": 205,
           "titleSequence": 103,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": true
         },
         {
           "readingSequence": 1,
           "date": "2014-07-10",
-          "workId": "the-running-man-by-stephen-king",
-          "slug": null,
+          "slug": "the-running-man-by-stephen-king",
           "edition": "Paperback",
           "kind": "Novel",
           "title": "The Running Man",
@@ -441,14 +416,13 @@
           "workYearSequence": 140,
           "authorSequence": 209,
           "titleSequence": 386,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": false
         },
         {
           "readingSequence": 1,
           "date": "2014-08-05",
-          "workId": "the-gunslinger-by-stephen-king",
-          "slug": null,
+          "slug": "the-gunslinger-by-stephen-king",
           "edition": "Paperback",
           "kind": "Novel",
           "title": "The Gunslinger",
@@ -456,14 +430,13 @@
           "workYearSequence": 149,
           "authorSequence": 214,
           "titleSequence": 191,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": false
         },
         {
           "readingSequence": 1,
           "date": "2014-10-27",
-          "workId": "different-seasons-by-stephen-king",
-          "slug": null,
+          "slug": "different-seasons-by-stephen-king",
           "edition": "Paperback",
           "kind": "Collection",
           "title": "Different Seasons",
@@ -471,7 +444,7 @@
           "workYearSequence": 148,
           "authorSequence": 213,
           "titleSequence": 131,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": false
         }
       ]

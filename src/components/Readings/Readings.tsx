@@ -5,6 +5,7 @@ import { useEffect, useReducer, useRef, useState } from "react";
 import type { CoverImageProps } from "~/api/covers";
 import type { TimelineEntry } from "~/api/timelineEntries";
 
+import { BarGradient } from "~/components/BarGradient";
 import { CoverListItem } from "~/components/CoverList";
 import { ListItemAuthors } from "~/components/ListItemAuthors";
 import { ListItemTitle } from "~/components/ListItemTitle";
@@ -13,7 +14,6 @@ import {
   ListWithFilters,
 } from "~/components/ListWithFilters";
 
-import { BarGradient } from "../BarGradient";
 import { Filters } from "./Filters";
 import {
   Actions,
@@ -29,6 +29,7 @@ export type ListItemValue = Pick<
   | "edition"
   | "kind"
   | "progress"
+  | "reviewed"
   | "slug"
   | "timelineSequence"
   | "title"
@@ -138,7 +139,7 @@ export function Readings({
         />
       }
       listHeaderButtons={
-        <ListHeaderButton href="/viewings/stats/" text="stats" />
+        <ListHeaderButton href="/readings/stats/" text="stats" />
       }
       onApplyFilters={() => dispatch({ type: Actions.APPLY_PENDING_FILTERS })}
       onClearFilters={() => {
@@ -242,7 +243,10 @@ function CalendarDay({ day }: { day: CalendarDayData }): JSX.Element {
                     tablet:mt-2 tablet:w-full tablet:px-1
                   `}
                 >
-                  <ListItemTitle slug={reading.slug} title={reading.title} />
+                  <ListItemTitle
+                    slug={reading.reviewed ? reading.slug : undefined}
+                    title={reading.title}
+                  />
                   <ListItemAuthors values={reading.authors} />
                   <div
                     className={`
@@ -523,47 +527,6 @@ function parseProgress(progress: string) {
   }
 
   return 100;
-}
-
-function ReadingTitle({
-  progress,
-  slug,
-  title,
-}: {
-  progress: string;
-  slug?: string;
-  title: string;
-}) {
-  const progressSlug = (
-    <span className="font-sans text-xxs leading-0 text-subtle">{progress}</span>
-  );
-
-  if (slug) {
-    return (
-      <span>
-        <a
-          className={`
-            text-base leading-5 font-semibold text-accent
-            after:absolute after:top-0 after:left-0 after:z-sticky
-            after:size-full after:opacity-0
-          `}
-          href={`/reviews/${slug}/`}
-        >
-          {title}
-        </a>{" "}
-        {progressSlug}
-      </span>
-    );
-  }
-
-  return (
-    <span>
-      <span className="block text-base leading-5 font-semibold text-muted">
-        {title}
-      </span>{" "}
-      {progressSlug}
-    </span>
-  );
 }
 
 function WeekdayHeader({ children }: { children: React.ReactNode }) {

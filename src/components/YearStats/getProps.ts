@@ -3,6 +3,7 @@ import { getFluidCoverImageProps } from "~/api/covers";
 import { allStatYears, statsForYear } from "~/api/yearStats";
 import { BackdropImageConfig } from "~/components/Backdrop";
 import { ListItemCoverImageConfig } from "~/components/ListItemCover";
+import { displayDate } from "~/utils/displayDate";
 
 import type { Props } from "./YearStats";
 
@@ -33,6 +34,7 @@ export async function getProps(year: string): Promise<Props> {
                   reading,
                   ListItemCoverImageConfig,
                 ),
+                displayDate: displayDate(reading.date),
               };
             }),
           ),

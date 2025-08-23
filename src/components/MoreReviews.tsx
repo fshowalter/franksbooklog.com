@@ -8,7 +8,13 @@ import { toSentenceArray } from "~/utils";
 import { Abandoned } from "./Abandoned";
 import { AuthorLink } from "./AuthorLink";
 import { Cover } from "./Cover";
+import { CoverList, CoverListItem } from "./CoverList";
 import { Grade } from "./Grade";
+import { ListItemAuthors } from "./ListItemAuthors";
+import { ListItemDetails } from "./ListItemDetails";
+import { ListItemGrade } from "./ListItemGrade";
+import { ListItemKindAndYear } from "./ListItemKindAndYear";
+import { ListItemTitle } from "./ListItemTitle";
 
 export const MoreReviewsImageConfig = {
   height: 372,
@@ -24,7 +30,7 @@ export type MoreReviewsValue = {
   kind: Review["kind"];
   slug: Review["slug"];
   title: Review["title"];
-  yearPublished: Review["yearPublished"];
+  workYear: Review["workYear"];
 };
 
 type Author = Pick<Review["authors"][0], "name" | "notes"> & {};
@@ -39,165 +45,46 @@ export function MoreReviews({
   return (
     <nav
       className={`
-        mx-auto w-full max-w-prose bg-subtle px-container
-        tablet:px-0
-        min-[1208px]:max-w-(--breakpoint-desktop) min-[1208px]:px-container
+        mx-auto w-full max-w-[894px] bg-subtle px-container
+        min-[1080px]:max-w-(--breakpoint-desktop)
       `}
       data-page-find-ignore
     >
       <div>{children}</div>
-      <ul
+      <div
         className={`
-          -mx-4 grid auto-rows-[auto_1fr] grid-cols-2 flex-wrap
-          gap-x-[clamp(8px,2vw,32px)] gap-y-[clamp(8px,2vw,32px)]
-          tablet:mx-0 tablet:flex tablet:items-baseline
-          tablet:gap-x-[var(--gap-x)] tablet:gap-y-4 tablet:[--column-count:3]
-          tablet:[--gap-x:calc(var(--spacing)_*_10)]
-          min-[1208px]:[--column-count:6]
-          laptop:[--gap-x:calc(var(--spacing)_*_11)]
-          desktop:gap-y-12 desktop:[--gap-x:calc(var(--spacing)_*_16)]
+          @container/cover-list mx-auto
+          tablet:-mx-6
         `}
       >
-        {values.map((value) => {
-          return <MoreReviewsCard key={value.slug} value={value} />;
-        })}
-      </ul>
+        <ol
+          className={`
+            items-baseline
+            [--cover-list-item-width:50%]
+            tablet:flex tablet:flex-wrap
+            @min-[calc((250px_*_2)_+_1px)]/cover-list:[--cover-list-item-width:33.33%]
+            @min-[calc((250px_*_4)_+_1px)]/cover-list:[--cover-list-item-width:16.66%]
+          `}
+        >
+          {values.map((value) => {
+            return <MoreReviewsCard key={value.slug} value={value} />;
+          })}
+        </ol>
+      </div>
     </nav>
   );
 }
 
 function MoreReviewsCard({ value }: { value: MoreReviewsValue }): JSX.Element {
   return (
-    <li
-      className={`
-        group/list-item relative row-span-2 grid transform-gpu grid-rows-subgrid
-        flex-col gap-y-0 bg-default transition-transform
-        tablet:flex
-        tablet:w-[calc((100%_-_var(--gaps-width))_/_var(--column-count))]
-        tablet:bg-inherit
-        tablet:[--gaps-width:var(--gap-x)_*_(var(--column-count)_-_1)]
-      `}
-    >
-      <div
-        className={`
-          @container transform-gpu self-end transition-transform
-          group-has-[a:hover]/list-item:-translate-y-2
-          group-has-[a:hover]/list-item:drop-shadow-2xl
-          tablet:self-auto
-        `}
-      >
-        <div
-          className={`
-            flex justify-center px-3 pt-6
-            tablet:px-0 tablet:pt-0
-          `}
-        >
-          <div
-            className={`
-              relative drop-shadow-md
-              after:absolute after:inset-x-0 after:top-0 after:bottom-0
-              after:z-20 after:rounded-[2.5px] after:bg-default after:opacity-15
-              after:transition-opacity
-              group-hover/list-item:after:opacity-0
-            `}
-          >
-            <Cover
-              decoding="async"
-              imageProps={value.coverImageProps}
-              {...MoreReviewsImageConfig}
-              alt=""
-              loading="lazy"
-            />
-          </div>
-        </div>
-      </div>
-      <div
-        className={`
-          @container h-full self-start
-          tablet:self-auto
-        `}
-      >
-        <div
-          className={`
-            flex h-full flex-col items-center px-3 pb-8
-            tablet:px-0
-            @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6
-            @min-[200px]:tablet:px-0
-          `}
-        >
-          <div className={`flex h-full w-full max-w-[248px] flex-col px-1`}>
-            <div
-              className={`
-                pt-4 text-base leading-5 font-medium
-                @min-[225px]:text-md
-              `}
-            >
-              <a
-                className={`
-                  block
-                  after:absolute after:top-0 after:left-0 after:z-60
-                  after:size-full after:opacity-0
-                  hover:text-accent
-                `}
-                href={`/reviews/${value.slug}/`}
-                rel="canonical"
-              >
-                {value.title}
-              </a>
-            </div>
-            <p
-              className={`
-                pt-1 font-sans text-xs leading-4 font-light text-subtle
-              `}
-            >
-              <span
-                className={`
-                  hidden
-                  @min-[225px]:inline
-                `}
-              >
-                by{" "}
-              </span>
-              {toSentenceArray(
-                value.authors.map((author) => {
-                  return (
-                    <AuthorLink
-                      as="span"
-                      key={author.name}
-                      name={author.name}
-                      notes={author.notes}
-                    />
-                  );
-                }),
-              )}
-            </p>{" "}
-            <Grade
-              className={`
-                mt-2 h-3 w-15
-                @min-[225px]:mt-2 @min-[225px]:h-[14px] @min-[225px]:w-[70px]
-              `}
-              height={18}
-              value={value.grade}
-            />
-            <Abandoned
-              className={`
-                mt-2 self-start
-                tablet:mt-3
-              `}
-              value={value.grade}
-            />
-            <div
-              className={`
-                mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle
-                tablet:pt-3
-                @min-[225px]:tracking-wide
-              `}
-            >
-              {value.kind} | {value.yearPublished}
-            </div>
-          </div>
-        </div>
-      </div>
-    </li>
+    <CoverListItem coverImageProps={value.coverImageProps}>
+      <ListItemDetails>
+        <ListItemTitle slug={value.slug} title={value.title} />
+        <ListItemAuthors values={value.authors} />
+        <ListItemKindAndYear kind={value.kind} year={value.workYear} />
+        <ListItemGrade grade={value.grade} />
+        <Abandoned className="tablet:my-1" value={value.grade} />
+      </ListItemDetails>
+    </CoverListItem>
   );
 }

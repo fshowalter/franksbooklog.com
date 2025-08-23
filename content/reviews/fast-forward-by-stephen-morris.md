@@ -2,6 +2,7 @@
 work_slug: fast-forward-by-stephen-morris
 grade: A-
 date: 2024-07-01
+synopsis: New Order drummer Stephen Morris chronicles the band's rise to superstardom after Ian Curtis's suicide and the tensions that ultimately tore them apart.
 ---
 
 Every bit as entertaining as his first volume, drummer Stephen Morris’s second volume of memoirs picks up where _Record Play Pause_ ended, chronicling New Order's rise to super-stardom and the tensions that tore it apart.

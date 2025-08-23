@@ -2,6 +2,7 @@
 work_slug: the-lonely-one-by-richard-laymon
 grade: C+
 date: 2025-02-15
+synopsis: At a Santa Monica pier carnival, lonely Doreen warns handsome Ron that anyone who gets close to her ends up dead, but Ron persists in pursuing her anyway.
 ---
 
 At the Santa Monica pier, Doreen rides alone on the merry-go-round until a handsome young man named Ron takes an interest. Despite her warnings that anyone who gets close to her ends up dead, Ron persists, convincing her to let him win her a stuffed animal at the carnival games. As he tries, she flees and hides beneath the pier. There, a vagrant assaults her. Ron comes to her rescue--only to reveal that the attacker is the least of his problems.

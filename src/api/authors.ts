@@ -6,7 +6,7 @@ export type Author = AuthorJson & {};
 type AuthorDetails = {
   author: Author;
   distinctKinds: string[];
-  distinctPublishedYears: string[];
+  distinctWorkYears: string[];
 };
 
 // Cache at API level for derived data
@@ -44,19 +44,22 @@ export async function getAuthorDetails(slug: string): Promise<AuthorDetails> {
     }
 
     const distinctKinds = new Set<string>();
-    const distinctPublishedYears = new Set<string>();
+    const distinctWorkYears = new Set<string>();
+    const distinctReviewYears = new Set<string>();
 
     const author = authors.find((value) => value.slug === slug)!;
 
     for (const work of author.reviewedWorks) {
       distinctKinds.add(work.kind);
-      distinctPublishedYears.add(work.yearPublished);
+      distinctWorkYears.add(work.workYear);
+      distinctReviewYears.add(work.reviewYear);
     }
 
     const details = {
       author,
       distinctKinds: [...distinctKinds].toSorted(),
-      distinctPublishedYears: [...distinctPublishedYears].toSorted(),
+      distinctReviewYears: [...distinctReviewYears].toSorted(),
+      distinctWorkYears: [...distinctWorkYears].toSorted(),
     };
 
     // Cache the result

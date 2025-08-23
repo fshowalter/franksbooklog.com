@@ -95,18 +95,16 @@ function Details({ value }: { value: ReviewWithContent["readings"][0] }) {
       : "Read over";
 
   return (
-    <details className="font-light text-subtle">
-      <summary
-        className={`
-          origin-left transform-gpu cursor-pointer leading-6
-          transition-transform
-          hover:scale-105
-        `}
-      >
-        {summaryText}{" "}
-        <span className="text-accent">{value.readingTime} Days</span>
+    <details
+      className={`
+        rounded-sm bg-canvas px-2 font-light text-subtle
+        open:pb-2
+      `}
+    >
+      <summary className={`cursor-pointer leading-6`}>
+        {summaryText} {value.readingTime} Days
       </summary>
-      <ol className="grid w-full grid-cols-[auto_1fr_auto] pt-3">
+      <ol className="grid w-full grid-cols-[auto_1fr_auto] bg-default px-2 py-3">
         {value.timeline.map((entry) => {
           let progressValue;
           const progressNumber = entry.progress.split("%", 1)[0];

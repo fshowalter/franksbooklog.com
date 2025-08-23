@@ -1,7 +1,6 @@
 {
   "name": "Edward Lee",
   "sortName": "Lee, Edward",
-  "authorId": "edward-lee",
   "slug": "edward-lee",
   "reviewedWorks": [
     {
@@ -13,7 +12,6 @@
       "authorSequence": 393,
       "titleSequence": 46,
       "kind": "Novel",
-      "workId": "the-black-train-by-edward-lee",
       "slug": "the-black-train-by-edward-lee",
       "sortTitle": "Black Train",
       "grade": "D+",
@@ -23,14 +21,13 @@
       "reviewYear": "2017",
       "authors": [
         {
-          "authorId": "edward-lee",
           "slug": "edward-lee",
           "notes": null,
           "name": "Edward Lee",
           "sortName": "Lee, Edward"
         }
       ],
-      "includedInWorkIds": []
+      "includedInSlugs": []
     }
   ]
 }

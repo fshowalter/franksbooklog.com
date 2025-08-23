@@ -1,7 +1,6 @@
 {
   "name": "Edmund Morris",
   "sortName": "Morris, Edmund",
-  "authorId": "edmund-morris",
   "slug": "edmund-morris",
   "reviewedWorks": [
     {
@@ -13,7 +12,6 @@
       "authorSequence": 415,
       "titleSequence": 377,
       "kind": "Nonfiction",
-      "workId": "the-rise-of-theodore-roosevelt-by-edmund-morris",
       "slug": "the-rise-of-theodore-roosevelt-by-edmund-morris",
       "sortTitle": "Rise of Theodore Roosevelt",
       "grade": "A-",
@@ -23,14 +21,13 @@
       "reviewYear": "2022",
       "authors": [
         {
-          "authorId": "edmund-morris",
           "slug": "edmund-morris",
           "notes": null,
           "name": "Edmund Morris",
           "sortName": "Morris, Edmund"
         }
       ],
-      "includedInWorkIds": []
+      "includedInSlugs": []
     }
   ]
 }

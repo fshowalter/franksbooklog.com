@@ -68,14 +68,13 @@
     {
       "name": "Richard Laymon",
       "count": 5,
-      "authorId": "richard-laymon",
       "slug": "richard-laymon",
+      "reviewed": true,
       "readings": [
         {
           "readingSequence": 1,
           "date": "2018-01-11",
-          "workId": "midnights-lair-by-richard-laymon",
-          "slug": null,
+          "slug": "midnights-lair-by-richard-laymon",
           "edition": "Ebook",
           "kind": "Novel",
           "title": "Midnight's Lair",
@@ -83,14 +82,13 @@
           "workYearSequence": 226,
           "authorSequence": 312,
           "titleSequence": 296,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": false
         },
         {
           "readingSequence": 2,
           "date": "2018-03-12",
-          "workId": "resurrection-dreams-by-richard-laymon",
-          "slug": null,
+          "slug": "resurrection-dreams-by-richard-laymon",
           "edition": "Ebook",
           "kind": "Novel",
           "title": "Resurrection Dreams",
@@ -98,14 +96,13 @@
           "workYearSequence": 227,
           "authorSequence": 313,
           "titleSequence": 374,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": false
         },
         {
           "readingSequence": 2,
           "date": "2018-05-20",
-          "workId": "funland-by-richard-laymon",
-          "slug": null,
+          "slug": "funland-by-richard-laymon",
           "edition": "Ebook",
           "kind": "Novel",
           "title": "Funland",
@@ -113,14 +110,13 @@
           "workYearSequence": 238,
           "authorSequence": 317,
           "titleSequence": 172,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": false
         },
         {
           "readingSequence": 1,
           "date": "2018-07-06",
-          "workId": "the-stake-by-richard-laymon",
-          "slug": null,
+          "slug": "the-stake-by-richard-laymon",
           "edition": "Ebook",
           "kind": "Novel",
           "title": "The Stake",
@@ -128,14 +124,13 @@
           "workYearSequence": 256,
           "authorSequence": 323,
           "titleSequence": 421,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": false
         },
         {
           "readingSequence": 1,
           "date": "2018-09-03",
-          "workId": "one-rainy-night-by-richard-laymon",
-          "slug": null,
+          "slug": "one-rainy-night-by-richard-laymon",
           "edition": "Ebook",
           "kind": "Novel",
           "title": "One Rainy Night",
@@ -143,7 +138,7 @@
           "workYearSequence": 277,
           "authorSequence": 327,
           "titleSequence": 334,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": false
         }
       ]
@@ -151,14 +146,13 @@
     {
       "name": "Stephen King",
       "count": 5,
-      "authorId": "stephen-king",
       "slug": "stephen-king",
+      "reviewed": true,
       "readings": [
         {
           "readingSequence": 1,
           "date": "2018-06-29",
-          "workId": "the-talisman-by-stephen-king-peter-straub",
-          "slug": null,
+          "slug": "the-talisman-by-stephen-king-peter-straub",
           "edition": "Ebook",
           "kind": "Novel",
           "title": "The Talisman",
@@ -166,14 +160,13 @@
           "workYearSequence": 175,
           "authorSequence": 227,
           "titleSequence": 436,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": false
         },
         {
           "readingSequence": 1,
           "date": "2018-07-18",
-          "workId": "cycle-of-the-werewolf-by-stephen-king",
-          "slug": null,
+          "slug": "cycle-of-the-werewolf-by-stephen-king",
           "edition": "Ebook",
           "kind": "Novel",
           "title": "Cycle of the Werewolf",
@@ -181,14 +174,13 @@
           "workYearSequence": 184,
           "authorSequence": 229,
           "titleSequence": 108,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": false
         },
         {
           "readingSequence": 1,
           "date": "2018-08-05",
-          "workId": "thinner-by-stephen-king",
-          "slug": null,
+          "slug": "thinner-by-stephen-king",
           "edition": "Ebook",
           "kind": "Novel",
           "title": "Thinner",
@@ -196,14 +188,13 @@
           "workYearSequence": 176,
           "authorSequence": 228,
           "titleSequence": 442,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": false
         },
         {
           "readingSequence": 1,
           "date": "2018-10-08",
-          "workId": "skeleton-crew-by-stephen-king",
-          "slug": null,
+          "slug": "skeleton-crew-by-stephen-king",
           "edition": "Ebook",
           "kind": "Collection",
           "title": "Skeleton Crew",
@@ -211,14 +202,13 @@
           "workYearSequence": 186,
           "authorSequence": 231,
           "titleSequence": 410,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": false
         },
         {
           "readingSequence": 1,
           "date": "2018-12-06",
-          "workId": "it-by-stephen-king",
-          "slug": null,
+          "slug": "it-by-stephen-king",
           "edition": "Ebook",
           "kind": "Novel",
           "title": "It",
@@ -226,7 +216,7 @@
           "workYearSequence": 203,
           "authorSequence": 232,
           "titleSequence": 239,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": false
         }
       ]
@@ -234,14 +224,13 @@
     {
       "name": "Jeff Gelb",
       "count": 3,
-      "authorId": "jeff-gelb",
-      "slug": null,
+      "slug": "jeff-gelb",
+      "reviewed": false,
       "readings": [
         {
           "readingSequence": 1,
           "date": "2018-01-05",
-          "workId": "hot-blood-by-jeff-gelb-lonn-m-friend",
-          "slug": null,
+          "slug": "hot-blood-by-jeff-gelb-lonn-m-friend",
           "edition": "Ebook",
           "kind": "Anthology",
           "title": "Hot Blood",
@@ -249,14 +238,13 @@
           "workYearSequence": 232,
           "authorSequence": 100,
           "titleSequence": 212,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": false
         },
         {
           "readingSequence": 2,
           "date": "2018-07-17",
-          "workId": "hotter-blood-by-jeff-gelb-michael-garrett",
-          "slug": null,
+          "slug": "hotter-blood-by-jeff-gelb-michael-garrett",
           "edition": "Ebook",
           "kind": "Anthology",
           "title": "Hotter Blood",
@@ -264,14 +252,13 @@
           "workYearSequence": 269,
           "authorSequence": 101,
           "titleSequence": 213,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": false
         },
         {
           "readingSequence": 1,
           "date": "2018-12-29",
-          "workId": "hottest-blood-by-jeff-gelb-michael-garrett",
-          "slug": null,
+          "slug": "hottest-blood-by-jeff-gelb-michael-garrett",
           "edition": "Ebook",
           "kind": "Anthology",
           "title": "Hottest Blood",
@@ -279,7 +266,7 @@
           "workYearSequence": 310,
           "authorSequence": 102,
           "titleSequence": 214,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": false
         }
       ]
@@ -287,13 +274,12 @@
     {
       "name": "Jocko Willink",
       "count": 2,
-      "authorId": "jocko-willink",
       "slug": "jocko-willink",
+      "reviewed": true,
       "readings": [
         {
           "readingSequence": 1,
           "date": "2018-09-30",
-          "workId": "extreme-ownership-by-jocko-willink-leif-babin",
           "slug": "extreme-ownership-by-jocko-willink-leif-babin",
           "edition": "Ebook",
           "kind": "Nonfiction",
@@ -302,14 +288,13 @@
           "workYearSequence": 443,
           "authorSequence": 476,
           "titleSequence": 153,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": true
         },
         {
           "readingSequence": 1,
           "date": "2018-10-20",
-          "workId": "discipline-equals-freedom-by-jocko-willink",
-          "slug": null,
+          "slug": "discipline-equals-freedom-by-jocko-willink",
           "edition": "Ebook",
           "kind": "Nonfiction",
           "title": "Discipline Equals Freedom",
@@ -317,7 +302,7 @@
           "workYearSequence": 465,
           "authorSequence": 477,
           "titleSequence": 134,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": false
         }
       ]
@@ -325,14 +310,13 @@
     {
       "name": "Michael Garrett",
       "count": 2,
-      "authorId": "michael-garrett",
-      "slug": null,
+      "slug": "michael-garrett",
+      "reviewed": false,
       "readings": [
         {
           "readingSequence": 2,
           "date": "2018-07-17",
-          "workId": "hotter-blood-by-jeff-gelb-michael-garrett",
-          "slug": null,
+          "slug": "hotter-blood-by-jeff-gelb-michael-garrett",
           "edition": "Ebook",
           "kind": "Anthology",
           "title": "Hotter Blood",
@@ -340,14 +324,13 @@
           "workYearSequence": 269,
           "authorSequence": 101,
           "titleSequence": 213,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": false
         },
         {
           "readingSequence": 1,
           "date": "2018-12-29",
-          "workId": "hottest-blood-by-jeff-gelb-michael-garrett",
-          "slug": null,
+          "slug": "hottest-blood-by-jeff-gelb-michael-garrett",
           "edition": "Ebook",
           "kind": "Anthology",
           "title": "Hottest Blood",
@@ -355,7 +338,7 @@
           "workYearSequence": 310,
           "authorSequence": 102,
           "titleSequence": 214,
-          "includedInWorkIds": [],
+          "includedInSlugs": [],
           "reviewed": false
         }
       ]

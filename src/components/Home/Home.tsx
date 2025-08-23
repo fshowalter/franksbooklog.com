@@ -22,30 +22,24 @@ export function Home({ backdropImageProps, deck, values }: Props): JSX.Element {
       <Backdrop
         deck={deck}
         imageProps={backdropImageProps}
-        size="small"
         title="Frank's Book Log"
         titleClasses={`
-          text-3xl leading-8
+          text-[2rem] leading-10
           [text-shadow:1px_1px_2px_black]
-          tablet:text-4xl tablet:leading-10
-          laptop:text-5xl laptop:leading-10
-          desktop:text-6xl desktop:leading-10
+          tablet:text-4xl
+          laptop:text-7xl
         `}
       />
-      <nav className={`mx-auto max-w-(--breakpoint-desktop) px-container`}>
+      <nav
+        className={`
+          @container/home-list mx-auto max-w-(--breakpoint-desktop) px-container
+        `}
+      >
         <SubHeading as="h2">Latest Reviews</SubHeading>
         <ol
           className={`
-            -mx-4 grid grid-cols-2 grid-rows-[auto_1fr] flex-wrap gap-x-2
-            gap-y-2
-            tablet:mx-0 tablet:flex tablet:items-baseline
-            tablet:gap-x-[var(--gap-x)] tablet:gap-y-6 tablet:[--column-count:3]
-            tablet:[--gap-x:calc(var(--spacing)_*_10)]
-            min-[905px]:[--column-count:4]
-            min-[905px]:[--gap-x:calc(var(--spacing)_*_9)]
-            min-[1080px]:[--column-count:6]
-            laptop:[--gap-x:calc(var(--spacing)_*_11)]
-            desktop:gap-x-16 desktop:[--gap-x:calc(var(--spacing)_*_16)]
+            -mx-4 grid flex-wrap gap-x-8 gap-y-8
+            tablet-landscape:grid-cols-2
           `}
         >
           {values.map((value, index) => {
@@ -61,14 +55,25 @@ export function Home({ backdropImageProps, deck, values }: Props): JSX.Element {
         <div className="flex px-container py-10">
           <a
             className={`
-              mx-auto w-full max-w-button transform-gpu bg-default py-5
-              text-center font-sans text-xs font-semibold tracking-wide
-              text-accent uppercase transition-all
+              group/all-reviews mx-auto w-full max-w-button transform-gpu
+              rounded-md bg-default pt-5 pb-4 text-center font-sans text-xs
+              font-semibold tracking-wide text-accent uppercase transition-all
               hover:scale-105 hover:bg-accent hover:text-inverse
             `}
             href="/reviews/"
           >
-            All Reviews
+            <span
+              className={`
+                relative inline-block pb-1
+                after:absolute after:bottom-0 after:left-0 after:h-0.5
+                after:w-full after:origin-center after:scale-x-0
+                after:transform-gpu after:bg-(--fg-inverse)
+                after:transition-transform
+                group-hover/all-reviews:after:scale-x-100
+              `}
+            >
+              All Reviews
+            </span>
           </a>
         </div>
       </nav>

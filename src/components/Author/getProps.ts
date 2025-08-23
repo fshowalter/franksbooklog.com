@@ -3,35 +3,39 @@ import { getAvatarImageProps } from "~/api/avatars";
 import { getBackdropImageProps } from "~/api/backdrops";
 import { getFluidCoverImageProps } from "~/api/covers";
 import { BackdropImageConfig } from "~/components/Backdrop";
-import { ListItemCoverImageConfig } from "~/components/ListItemCover";
+import { CoverListItemImageConfig } from "~/components/CoverList";
+import { displayDate } from "~/utils/displayDate";
 
 import type { ListItemValue, Props } from "./Author";
 
 import { AvatarImageConfig } from "./Author";
 
 export async function getProps(slug: string): Promise<Props> {
-  const { author, distinctKinds, distinctPublishedYears } =
+  const { author, distinctKinds, distinctReviewYears, distinctWorkYears } =
     await getAuthorDetails(slug);
 
-  author.reviewedWorks.sort((a, b) =>
-    a.yearPublished.localeCompare(b.yearPublished),
-  );
+  author.reviewedWorks.sort((a, b) => a.workYearSequence - b.workYearSequence);
 
   const works = await Promise.all(
     author.reviewedWorks.map(async (work) => {
       const value: ListItemValue = {
         coverImageProps: await getFluidCoverImageProps(
           work,
-          ListItemCoverImageConfig,
+          CoverListItemImageConfig,
         ),
+        displayDate: displayDate(work.reviewDate),
         grade: work.grade,
         gradeValue: work.gradeValue,
         kind: work.kind,
         otherAuthors: filterOtherAuthors(author, work),
+        reviewDate: new Date(work.reviewDate),
+        reviewSequence: work.reviewSequence,
+        reviewYear: work.reviewYear,
         slug: work.slug,
         sortTitle: work.sortTitle,
         title: work.title,
-        yearPublished: work.yearPublished,
+        workYear: work.workYear,
+        workYearSequence: work.workYearSequence,
       };
 
       return value;
@@ -46,10 +50,11 @@ export async function getProps(slug: string): Promise<Props> {
     ),
     deck: deck(author),
     distinctKinds,
-    distinctPublishedYears,
-    initialSort: "year-published-asc",
+    distinctReviewYears,
+    distinctWorkYears,
+    initialSort: "work-year-asc",
     name: author.name,
-    works,
+    values: works,
   };
 }
 

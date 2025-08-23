@@ -1,5 +1,7 @@
 import type { JSX } from "react";
 
+import { ccn } from "~/utils/concatClassNames";
+
 export function StatsNavigation({
   className,
   currentYear,
@@ -12,15 +14,10 @@ export function StatsNavigation({
   years: readonly string[];
 }): JSX.Element {
   return (
-    <nav
-      className={`
-        bg-footer
-        ${className}
-      `}
-    >
+    <nav className={ccn("bg-footer", className)}>
       <ul
         className={`
-          mx-auto flex scrollbar-hidden max-w-(--breakpoint-laptop)
+          mx-auto flex scrollbar-hidden max-w-(--breakpoint-desktop) snap-x
           overflow-x-auto px-container font-sans text-sm font-normal
           tracking-wide
           laptop:justify-center
@@ -52,15 +49,15 @@ function AllTimeLink({
   return (
     <li
       className={`
-        text-center
-        ${"all" === currentYear ? "bg-subtle text-default" : `text-inverse`}
+        snap-start text-center
+        ${"all" === currentYear ? "text-inverse" : `text-inverse-subtle`}
       `}
     >
       {"all" === currentYear ? (
         <div
           className={`
             bg-subtle p-4 whitespace-nowrap text-default
-            desktop:py-4
+            laptop:py-4
           `}
         >
           All-Time
@@ -68,13 +65,23 @@ function AllTimeLink({
       ) : (
         <a
           className={`
-            block transform-gpu p-4 whitespace-nowrap transition-all
-            hover:scale-105 hover:bg-accent hover:text-inverse
-            desktop:py-4
+            group/all-time block transform-gpu px-4 pt-4 pb-3 whitespace-nowrap
+            transition-all
+            hover:bg-accent hover:text-inverse
           `}
           href={linkFunc("all")}
         >
-          All-Time
+          <span
+            className={`
+              relative inline-block pb-1
+              after:absolute after:bottom-0 after:left-0 after:h-0.5
+              after:w-full after:origin-center after:scale-x-0
+              after:bg-(--fg-inverse) after:transition-transform
+              group-hover/all-time:after:scale-x-100
+            `}
+          >
+            All-Time
+          </span>
         </a>
       )}
     </li>
@@ -93,15 +100,15 @@ function YearLink({
   return (
     <li
       className={`
-        text-center
-        ${year === currentYear ? "bg-subtle text-default" : `text-inverse`}
+        snap-start text-center
+        ${year === currentYear ? "text-inverse" : `text-inverse-subtle`}
       `}
     >
       {year === currentYear ? (
         <div
           className={`
             bg-subtle p-4 text-default
-            desktop:py-4
+            laptop:py-4
           `}
         >
           {year}
@@ -109,12 +116,22 @@ function YearLink({
       ) : (
         <a
           className={`
-            block transform-gpu p-4 transition-all
-            hover:scale-105 hover:bg-accent hover:text-inverse
+            group/year block transform-gpu px-4 pt-4 pb-3 transition-all
+            hover:bg-accent hover:text-inverse
           `}
           href={linkFunc(year)}
         >
-          {year}
+          <span
+            className={`
+              relative inline-block pb-1
+              after:absolute after:bottom-0 after:left-0 after:h-0.5
+              after:w-full after:origin-center after:scale-x-0
+              after:bg-(--fg-inverse) after:transition-transform
+              group-hover/year:after:scale-x-100
+            `}
+          >
+            {year}
+          </span>
         </a>
       )}
     </li>
