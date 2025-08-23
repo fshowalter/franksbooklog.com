@@ -35,6 +35,10 @@ const ENABLE_CACHE = !import.meta.env.DEV;
 
 export type Review = MarkdownReview & ReviewedWorkJson & {};
 
+export type ReviewExcerpt = {
+  excerpt: string;
+};
+
 export type ReviewWithContent = Omit<Review, "readings"> & {
   content: string | undefined;
   excerptPlainText: string;
@@ -147,9 +151,9 @@ export async function loadContent(review: Review): Promise<ReviewWithContent> {
   });
 }
 
-export async function loadExcerptHtml(
-  review: Review,
-): Promise<ReviewWithExcerpt> {
+export async function loadExcerptHtml<T extends { slug: string }>(
+  review: T,
+): Promise<ReviewExcerpt & T> {
   return await perfLogger.measure("loadExcerptHtml", async () => {
     // Check cache first
     if (ENABLE_CACHE && cachedExcerptHtml.has(review.slug)) {
@@ -165,24 +169,20 @@ export async function loadExcerptHtml(
       cachedMarkdownReviews = reviewsMarkdown;
     }
 
-    const { rawContent } = reviewsMarkdown.find((markdown) => {
+    const { rawContent, synopsis } = reviewsMarkdown.find((markdown) => {
       return markdown.slug === review.slug;
     })!;
 
-    let excerptHtml = getMastProcessor()
+    const excerptContent = synopsis || rawContent;
+
+    const excerptHtml = getMastProcessor()
       .use(removeFootnotes)
       .use(trimToExcerpt)
       .use(remarkRehype, { allowDangerousHtml: true })
       .use(rehypeRaw)
       .use(rehypeStringify)
-      .processSync(rawContent)
+      .processSync(excerptContent)
       .toString();
-
-    excerptHtml = excerptHtml.replace(/\n+$/, "");
-    excerptHtml = excerptHtml.replace(
-      /<\/p>$/,
-      ` <a href="/reviews/${review.slug}/">Read more...</a></p>`,
-    );
 
     // Cache the result
     if (ENABLE_CACHE) {

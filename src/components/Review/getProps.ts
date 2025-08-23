@@ -3,7 +3,7 @@ import {
   getFluidCoverImageProps,
   getStructuredDataCoverSrc,
 } from "~/api/covers";
-import { allReviews, loadContent } from "~/api/reviews";
+import { allReviews, loadContent, loadExcerptHtml } from "~/api/reviews";
 import { MoreReviewsImageConfig } from "~/components/MoreReviews";
 
 import { CoverImageConfig, type Props } from "./Review";
@@ -24,12 +24,14 @@ export async function getProps(slug: string): Promise<Props> {
     ),
     moreReviews: await Promise.all(
       reviewWithContent.moreReviews.map(async (review) => {
+        const reviewWithExcerpt = await loadExcerptHtml(review);
         return {
-          ...review,
+          ...reviewWithExcerpt,
           coverImageProps: await getFluidCoverImageProps(
-            review,
+            reviewWithExcerpt,
             MoreReviewsImageConfig,
           ),
+          reviewDate: undefined,
         };
       }),
     ),

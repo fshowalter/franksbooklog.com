@@ -39,7 +39,6 @@ export function AlltimeStats({
         centerText={true}
         deck={deck}
         imageProps={backdropImageProps}
-        size="small"
         title="All-Time Stats"
       />
       <StatsNavigation

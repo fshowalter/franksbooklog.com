@@ -1,7 +1,7 @@
 import type { JSX } from "react";
 
 import type { CoverImageProps } from "~/api/covers";
-import type { Review } from "~/api/reviews";
+import type { Review, ReviewWithExcerpt } from "~/api/reviews";
 
 import { toSentenceArray } from "~/utils";
 
@@ -15,6 +15,7 @@ import { ListItemDetails } from "./ListItemDetails";
 import { ListItemGrade } from "./ListItemGrade";
 import { ListItemKindAndYear } from "./ListItemKindAndYear";
 import { ListItemTitle } from "./ListItemTitle";
+import { ReviewCardWithExcerpt } from "./ReviewCardWithExcerpt";
 
 export const MoreReviewsImageConfig = {
   height: 372,
@@ -26,6 +27,7 @@ export const MoreReviewsImageConfig = {
 export type MoreReviewsValue = {
   authors: Author[];
   coverImageProps: CoverImageProps;
+  excerpt: ReviewWithExcerpt["excerpt"];
   grade: Review["grade"];
   kind: Review["kind"];
   slug: Review["slug"];
@@ -59,15 +61,12 @@ export function MoreReviews({
       >
         <ol
           className={`
-            items-baseline
-            [--cover-list-item-width:50%]
-            tablet:flex tablet:flex-wrap
-            @min-[calc((250px_*_2)_+_1px)]/cover-list:[--cover-list-item-width:33.33%]
-            @min-[calc((250px_*_4)_+_1px)]/cover-list:[--cover-list-item-width:16.66%]
+            grid flex-wrap gap-x-8 gap-y-8
+            tablet-landscape:grid-cols-2
           `}
         >
           {values.map((value) => {
-            return <MoreReviewsCard key={value.slug} value={value} />;
+            return <ReviewCardWithExcerpt key={value.slug} value={value} />;
           })}
         </ol>
       </div>
