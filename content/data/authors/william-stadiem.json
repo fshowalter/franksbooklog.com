@@ -1,6 +1,7 @@
 {
   "name": "William Stadiem",
   "sortName": "Stadiem, William",
+  "authorId": "william-stadiem",
   "slug": "william-stadiem",
   "reviewedWorks": [
     {
@@ -12,6 +13,7 @@
       "authorSequence": 160,
       "titleSequence": 312,
       "kind": "Nonfiction",
+      "workId": "mr-s-by-george-jacobs-william-stadiem",
       "slug": "mr-s-by-george-jacobs-william-stadiem",
       "sortTitle": "Mr. S: My Life with Frank Sinatra",
       "grade": "B",
@@ -21,19 +23,21 @@
       "reviewYear": "2012",
       "authors": [
         {
+          "authorId": "george-jacobs",
           "slug": "george-jacobs",
           "notes": null,
           "name": "George Jacobs",
           "sortName": "Jacobs, George"
         },
         {
+          "authorId": "william-stadiem",
           "slug": "william-stadiem",
           "notes": null,
           "name": "William Stadiem",
           "sortName": "Stadiem, William"
         }
       ],
-      "includedInSlugs": []
+      "includedInWorkIds": []
     }
   ]
 }

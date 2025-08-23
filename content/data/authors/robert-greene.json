@@ -1,6 +1,7 @@
 {
   "name": "Robert Greene",
   "sortName": "Greene, Robert",
+  "authorId": "robert-greene",
   "slug": "robert-greene",
   "reviewedWorks": [
     {
@@ -12,6 +13,7 @@
       "authorSequence": 105,
       "titleSequence": 2,
       "kind": "Nonfiction",
+      "workId": "the-48-laws-of-power-by-robert-greene",
       "slug": "the-48-laws-of-power-by-robert-greene",
       "sortTitle": "48 Laws of Power",
       "grade": "D+",
@@ -21,13 +23,14 @@
       "reviewYear": "2022",
       "authors": [
         {
+          "authorId": "robert-greene",
           "slug": "robert-greene",
           "notes": null,
           "name": "Robert Greene",
           "sortName": "Greene, Robert"
         }
       ],
-      "includedInSlugs": []
+      "includedInWorkIds": []
     }
   ]
 }

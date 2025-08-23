@@ -1,6 +1,7 @@
 {
   "name": "Poul Anderson",
   "sortName": "Anderson, Poul",
+  "authorId": "poul-anderson",
   "slug": "poul-anderson",
   "reviewedWorks": [
     {
@@ -12,6 +13,7 @@
       "authorSequence": 3,
       "titleSequence": 63,
       "kind": "Novel",
+      "workId": "brain-wave-by-poul-anderson",
       "slug": "brain-wave-by-poul-anderson",
       "sortTitle": "Brain Wave",
       "grade": "C",
@@ -21,13 +23,14 @@
       "reviewYear": "2013",
       "authors": [
         {
+          "authorId": "poul-anderson",
           "slug": "poul-anderson",
           "notes": null,
           "name": "Poul Anderson",
           "sortName": "Anderson, Poul"
         }
       ],
-      "includedInSlugs": []
+      "includedInWorkIds": []
     }
   ]
 }

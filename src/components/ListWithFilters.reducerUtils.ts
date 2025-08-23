@@ -479,10 +479,10 @@ export function sortGrade<T extends { gradeValue?: null | number }>() {
   };
 }
 
-export function sortName<T extends { name: string }>() {
+export function sortName<T extends { sortName: string }>() {
   return {
-    "name-asc": (a: T, b: T) => sortString(a.name, b.name),
-    "name-desc": (a: T, b: T) => sortString(a.name, b.name) * -1,
+    "name-asc": (a: T, b: T) => sortString(a.sortName, b.sortName),
+    "name-desc": (a: T, b: T) => sortString(a.sortName, b.sortName) * -1,
   };
 }
 
@@ -726,7 +726,6 @@ function updateSort<TItem, TSortValue>(
   const groupedValues = groupFn
     ? groupFn(valuesToGroup, sortValue)
     : new Map<string, TItem[]>();
-
   return {
     ...state,
     filteredValues,

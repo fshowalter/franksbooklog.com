@@ -1,6 +1,7 @@
 {
   "name": "Steven Novella",
   "sortName": "Novella, Steven",
+  "authorId": "steven-novella",
   "slug": "steven-novella",
   "reviewedWorks": [
     {
@@ -12,6 +13,7 @@
       "authorSequence": 422,
       "titleSequence": 411,
       "kind": "Nonfiction",
+      "workId": "the-skeptics-guide-to-the-universe-by-steven-novella",
       "slug": "the-skeptics-guide-to-the-universe-by-steven-novella",
       "sortTitle": "Skeptics' Guide to the Universe: How to Know What's Really Real in a World Increasingly Full of Fake",
       "grade": "B+",
@@ -21,13 +23,14 @@
       "reviewYear": "2022",
       "authors": [
         {
+          "authorId": "steven-novella",
           "slug": "steven-novella",
           "notes": null,
           "name": "Steven Novella",
           "sortName": "Novella, Steven"
         }
       ],
-      "includedInSlugs": []
+      "includedInWorkIds": []
     }
   ]
 }

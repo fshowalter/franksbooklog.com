@@ -1,6 +1,7 @@
 {
   "name": "Nigel Andrews",
   "sortName": "Andrews, Nigel",
+  "authorId": "nigel-andrews",
   "slug": "nigel-andrews",
   "reviewedWorks": [
     {
@@ -12,6 +13,7 @@
       "authorSequence": 4,
       "titleSequence": 453,
       "kind": "Nonfiction",
+      "workId": "true-myths-by-nigel-andrews",
       "slug": "true-myths-by-nigel-andrews",
       "sortTitle": "True Myths: The Life and Times of Arnold Schwarzenegger",
       "grade": "D+",
@@ -21,13 +23,14 @@
       "reviewYear": "2013",
       "authors": [
         {
+          "authorId": "nigel-andrews",
           "slug": "nigel-andrews",
           "notes": null,
           "name": "Nigel Andrews",
           "sortName": "Andrews, Nigel"
         }
       ],
-      "includedInSlugs": []
+      "includedInWorkIds": []
     }
   ]
 }

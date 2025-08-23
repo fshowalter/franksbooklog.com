@@ -1,6 +1,7 @@
 {
   "name": "Scott Carney",
   "sortName": "Carney, Scott",
+  "authorId": "scott-carney",
   "slug": "scott-carney",
   "reviewedWorks": [
     {
@@ -12,6 +13,7 @@
       "authorSequence": 35,
       "titleSequence": 463,
       "kind": "Nonfiction",
+      "workId": "what-doesnt-kill-us-by-scott-carney",
       "slug": "what-doesnt-kill-us-by-scott-carney",
       "sortTitle": "What Doesn't Kill Us: How Freezing Water, Extreme Altitude, and Environmental Conditioning Will Renew Our Lost Evolutionary Strength",
       "grade": "C+",
@@ -21,13 +23,14 @@
       "reviewYear": "2022",
       "authors": [
         {
+          "authorId": "scott-carney",
           "slug": "scott-carney",
           "notes": null,
           "name": "Scott Carney",
           "sortName": "Carney, Scott"
         }
       ],
-      "includedInSlugs": []
+      "includedInWorkIds": []
     }
   ]
 }

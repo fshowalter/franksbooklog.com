@@ -1,6 +1,7 @@
 {
   "name": "David H. Hackworth",
   "sortName": "Hackworth, David H.",
+  "authorId": "david-h-hackworth",
   "slug": "david-h-hackworth",
   "reviewedWorks": [
     {
@@ -12,6 +13,7 @@
       "authorSequence": 108,
       "titleSequence": 3,
       "kind": "Nonfiction",
+      "workId": "about-face-by-david-h-hackworth-julie-sherman",
       "slug": "about-face-by-david-h-hackworth-julie-sherman",
       "sortTitle": "About Face: The Odyssey of an American Warrior",
       "grade": "A-",
@@ -21,19 +23,21 @@
       "reviewYear": "2022",
       "authors": [
         {
+          "authorId": "david-h-hackworth",
           "slug": "david-h-hackworth",
           "notes": null,
           "name": "David H. Hackworth",
           "sortName": "Hackworth, David H."
         },
         {
+          "authorId": "julie-sherman",
           "slug": "julie-sherman",
           "notes": null,
           "name": "Julie Sherman",
           "sortName": "Sherman, Julie"
         }
       ],
-      "includedInSlugs": []
+      "includedInWorkIds": []
     }
   ]
 }

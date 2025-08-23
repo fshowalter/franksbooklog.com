@@ -1,6 +1,7 @@
 {
   "name": "Ian Fleming",
   "sortName": "Fleming, Ian",
+  "authorId": "ian-fleming",
   "slug": "ian-fleming",
   "reviewedWorks": [
     {
@@ -12,6 +13,7 @@
       "authorSequence": 69,
       "titleSequence": 77,
       "kind": "Novel",
+      "workId": "casino-royale-by-ian-fleming",
       "slug": "casino-royale-by-ian-fleming",
       "sortTitle": "Casino Royale",
       "grade": "B-",
@@ -21,13 +23,14 @@
       "reviewYear": "2022",
       "authors": [
         {
+          "authorId": "ian-fleming",
           "slug": "ian-fleming",
           "notes": null,
           "name": "Ian Fleming",
           "sortName": "Fleming, Ian"
         }
       ],
-      "includedInSlugs": []
+      "includedInWorkIds": []
     },
     {
       "reviewSequence": 43,
@@ -38,6 +41,7 @@
       "authorSequence": 70,
       "titleSequence": 271,
       "kind": "Novel",
+      "workId": "live-and-let-die-by-ian-fleming",
       "slug": "live-and-let-die-by-ian-fleming",
       "sortTitle": "Live and Let Die",
       "grade": "D",
@@ -47,13 +51,14 @@
       "reviewYear": "2022",
       "authors": [
         {
+          "authorId": "ian-fleming",
           "slug": "ian-fleming",
           "notes": null,
           "name": "Ian Fleming",
           "sortName": "Fleming, Ian"
         }
       ],
-      "includedInSlugs": []
+      "includedInWorkIds": []
     },
     {
       "reviewSequence": 64,
@@ -64,6 +69,7 @@
       "authorSequence": 71,
       "titleSequence": 305,
       "kind": "Novel",
+      "workId": "moonraker-by-ian-fleming",
       "slug": "moonraker-by-ian-fleming",
       "sortTitle": "Moonraker",
       "grade": "B",
@@ -73,13 +79,14 @@
       "reviewYear": "2022",
       "authors": [
         {
+          "authorId": "ian-fleming",
           "slug": "ian-fleming",
           "notes": null,
           "name": "Ian Fleming",
           "sortName": "Fleming, Ian"
         }
       ],
-      "includedInSlugs": []
+      "includedInWorkIds": []
     }
   ]
 }

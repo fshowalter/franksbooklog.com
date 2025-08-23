@@ -1,6 +1,7 @@
 {
   "name": "Leslie H. Whitten Jr.",
   "sortName": "Whitten Jr., Leslie H.",
+  "authorId": "leslie-h-whitten-jr",
   "slug": "leslie-h-whitten-jr",
   "reviewedWorks": [
     {
@@ -12,6 +13,7 @@
       "authorSequence": 471,
       "titleSequence": 357,
       "kind": "Novel",
+      "workId": "progeny-of-the-adder-by-leslie-h-whitten-jr",
       "slug": "progeny-of-the-adder-by-leslie-h-whitten-jr",
       "sortTitle": "Progeny of the Adder",
       "grade": "B-",
@@ -21,13 +23,14 @@
       "reviewYear": "2025",
       "authors": [
         {
+          "authorId": "leslie-h-whitten-jr",
           "slug": "leslie-h-whitten-jr",
           "notes": null,
           "name": "Leslie H. Whitten Jr.",
           "sortName": "Whitten Jr., Leslie H."
         }
       ],
-      "includedInSlugs": []
+      "includedInWorkIds": []
     }
   ]
 }

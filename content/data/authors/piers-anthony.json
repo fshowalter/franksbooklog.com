@@ -1,6 +1,7 @@
 {
   "name": "Piers Anthony",
   "sortName": "Anthony, Piers",
+  "authorId": "piers-anthony",
   "slug": "piers-anthony",
   "reviewedWorks": [
     {
@@ -12,6 +13,7 @@
       "authorSequence": 5,
       "titleSequence": 372,
       "kind": "Novel",
+      "workId": "refugee-by-piers-anthony",
       "slug": "refugee-by-piers-anthony",
       "sortTitle": "Refugee",
       "grade": "Abandoned",
@@ -21,13 +23,14 @@
       "reviewYear": "2016",
       "authors": [
         {
+          "authorId": "piers-anthony",
           "slug": "piers-anthony",
           "notes": null,
           "name": "Piers Anthony",
           "sortName": "Anthony, Piers"
         }
       ],
-      "includedInSlugs": []
+      "includedInWorkIds": []
     }
   ]
 }

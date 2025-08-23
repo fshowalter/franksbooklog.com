@@ -1,6 +1,7 @@
 {
   "name": "Jerry Seinfeld",
   "sortName": "Seinfeld, Jerry",
+  "authorId": "jerry-seinfeld",
   "slug": "jerry-seinfeld",
   "reviewedWorks": [
     {
@@ -12,6 +13,7 @@
       "authorSequence": 443,
       "titleSequence": 237,
       "kind": "Nonfiction",
+      "workId": "is-this-anything-by-jerry-seinfeld",
       "slug": "is-this-anything-by-jerry-seinfeld",
       "sortTitle": "Is This Anything?",
       "grade": "C",
@@ -21,13 +23,14 @@
       "reviewYear": "2022",
       "authors": [
         {
+          "authorId": "jerry-seinfeld",
           "slug": "jerry-seinfeld",
           "notes": null,
           "name": "Jerry Seinfeld",
           "sortName": "Seinfeld, Jerry"
         }
       ],
-      "includedInSlugs": []
+      "includedInWorkIds": []
     }
   ]
 }

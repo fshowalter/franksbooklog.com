@@ -1,6 +1,7 @@
 {
   "name": "Donna Tartt",
   "sortName": "Tartt, Donna",
+  "authorId": "donna-tartt",
   "slug": "donna-tartt",
   "reviewedWorks": [
     {
@@ -12,6 +13,7 @@
       "authorSequence": 457,
       "titleSequence": 395,
       "kind": "Novel",
+      "workId": "the-secret-history-by-donna-tartt",
       "slug": "the-secret-history-by-donna-tartt",
       "sortTitle": "Secret History",
       "grade": "A",
@@ -21,13 +23,14 @@
       "reviewYear": "2022",
       "authors": [
         {
+          "authorId": "donna-tartt",
           "slug": "donna-tartt",
           "notes": null,
           "name": "Donna Tartt",
           "sortName": "Tartt, Donna"
         }
       ],
-      "includedInSlugs": []
+      "includedInWorkIds": []
     }
   ]
 }

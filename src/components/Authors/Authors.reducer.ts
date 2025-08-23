@@ -17,8 +17,6 @@ import {
 
 import type { ListItemValue } from "./Authors";
 
-// Collections only uses shared actions
-
 export type ActionType = ListWithFiltersActionType<Sort>;
 
 export type Sort =
@@ -59,7 +57,10 @@ export function reducer(state: State, action: ActionType): State {
 
     default: {
       // Handle shared list structure actions
-      return handleListWithFiltersAction(state, action, { sortFn: sortValues });
+      return handleListWithFiltersAction(state, action, {
+        groupFn: groupValues,
+        sortFn: sortValues,
+      });
     }
   }
 }
@@ -71,7 +72,7 @@ function groupForValue(item: ListItemValue, sortValue: Sort): string {
   switch (sortValue) {
     case "name-asc":
     case "name-desc": {
-      return getGroupLetter(item.name);
+      return getGroupLetter(item.sortName);
     }
     case "review-count-asc":
     case "review-count-desc": {

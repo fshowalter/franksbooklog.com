@@ -1,6 +1,7 @@
 {
   "name": "John Skipp",
   "sortName": "Skipp, John",
+  "authorId": "john-skipp",
   "slug": "john-skipp",
   "reviewedWorks": [
     {
@@ -12,6 +13,7 @@
       "authorSequence": 447,
       "titleSequence": 170,
       "kind": "Novel",
+      "workId": "fright-night-by-john-skipp-craig-spector",
       "slug": "fright-night-by-john-skipp-craig-spector",
       "sortTitle": "Fright Night",
       "grade": "F",
@@ -21,19 +23,21 @@
       "reviewYear": "2023",
       "authors": [
         {
+          "authorId": "john-skipp",
           "slug": "john-skipp",
           "notes": null,
           "name": "John Skipp",
           "sortName": "Skipp, John"
         },
         {
+          "authorId": "craig-spector",
           "slug": "craig-spector",
           "notes": null,
           "name": "Craig Spector",
           "sortName": "Spector, Craig"
         }
       ],
-      "includedInSlugs": []
+      "includedInWorkIds": []
     }
   ]
 }

@@ -1,6 +1,7 @@
 {
   "name": "John McPhee",
   "sortName": "McPhee, John",
+  "authorId": "john-mcphee",
   "slug": "john-mcphee",
   "reviewedWorks": [
     {
@@ -12,6 +13,7 @@
       "authorSequence": 410,
       "titleSequence": 144,
       "kind": "Nonfiction",
+      "workId": "draft-no-4-by-john-mcphee",
       "slug": "draft-no-4-by-john-mcphee",
       "sortTitle": "Draft No. 4: On the Writing Process",
       "grade": "C",
@@ -21,13 +23,14 @@
       "reviewYear": "2022",
       "authors": [
         {
+          "authorId": "john-mcphee",
           "slug": "john-mcphee",
           "notes": null,
           "name": "John McPhee",
           "sortName": "McPhee, John"
         }
       ],
-      "includedInSlugs": []
+      "includedInWorkIds": []
     }
   ]
 }
