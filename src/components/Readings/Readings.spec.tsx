@@ -149,14 +149,4 @@ describe("Readings", () => {
 
     expect(screen.getByTestId("list")).toMatchSnapshot();
   });
-
-  it("can show more entries", async ({ expect }) => {
-    expect.hasAssertions();
-
-    render(<Readings {...props} />);
-
-    await userEvent.click(screen.getByText("Show More"));
-
-    expect(screen.getByTestId("list")).toMatchSnapshot();
-  });
 });

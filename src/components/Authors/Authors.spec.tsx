@@ -18,7 +18,7 @@ describe("Authors", () => {
       await new Promise((r) => setTimeout(r, 500));
     });
 
-    expect(screen.getByTestId("list")).toMatchSnapshot();
+    expect(screen.getByTestId("grouped-cover-list")).toMatchSnapshot();
   });
 
   it("can sort by name z->a", async ({ expect }) => {
@@ -31,7 +31,7 @@ describe("Authors", () => {
       "Name (Z → A)",
     );
 
-    expect(screen.getByTestId("list")).toMatchSnapshot();
+    expect(screen.getByTestId("grouped-cover-list")).toMatchSnapshot();
   });
 
   it("can sort by name a->z", async ({ expect }) => {
@@ -44,7 +44,7 @@ describe("Authors", () => {
       "Name (A → Z)",
     );
 
-    expect(screen.getByTestId("list")).toMatchSnapshot();
+    expect(screen.getByTestId("grouped-cover-list")).toMatchSnapshot();
   });
 
   it("can sort by review count asc", async ({ expect }) => {
@@ -57,7 +57,7 @@ describe("Authors", () => {
       "Review Count (Fewest First)",
     );
 
-    expect(screen.getByTestId("list")).toMatchSnapshot();
+    expect(screen.getByTestId("grouped-cover-list")).toMatchSnapshot();
   });
 
   it("can sort by review count desc", async ({ expect }) => {
@@ -70,6 +70,6 @@ describe("Authors", () => {
       "Review Count (Most First)",
     );
 
-    expect(screen.getByTestId("list")).toMatchSnapshot();
+    expect(screen.getByTestId("grouped-cover-list")).toMatchSnapshot();
   });
 });

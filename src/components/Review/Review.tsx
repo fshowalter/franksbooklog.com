@@ -41,12 +41,7 @@ export function Review({
   value,
 }: Props): JSX.Element {
   return (
-    <Layout
-      className="flex flex-col"
-      data-pagefind-body
-      hasBackdrop={false}
-      staticMast={true}
-    >
+    <Layout className="flex flex-col" data-pagefind-body hasBackdrop={false}>
       <header
         className={`relative z-1 mb-12 flex flex-col items-center px-[8%] pt-10`}
       >

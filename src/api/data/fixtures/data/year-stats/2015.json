@@ -44,7 +44,7 @@
     {
       "name": "James Kaplan",
       "count": 2,
-      "slug": null,
+      "slug": "james-kaplan",
       "readings": [
         {
           "date": "2015-01-25",
@@ -52,10 +52,13 @@
           "edition": "Paperback",
           "kind": "Nonfiction",
           "title": "Frank",
-          "yearPublished": "2010",
           "includedInSlugs": [],
           "reviewed": false,
-          "readingSequence": 1
+          "readingSequence": 38,
+          "workYear": "2000",
+          "workYearSequence": 423,
+          "authorSequence": 162,
+          "titleSequence": 167
         },
         {
           "date": "2015-12-30",
@@ -63,12 +66,16 @@
           "edition": "Hardcover",
           "kind": "Nonfiction",
           "title": "Sinatra",
-          "yearPublished": "2015",
           "includedInSlugs": [],
           "reviewed": false,
-          "readingSequence": 1
+          "readingSequence": 43,
+          "workYear": "2000",
+          "workYearSequence": 442,
+          "authorSequence": 164,
+          "titleSequence": 409
         }
-      ]
+      ],
+      "reviewed": true
     }
   ]
 }
