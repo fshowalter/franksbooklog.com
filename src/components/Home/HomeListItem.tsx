@@ -56,12 +56,41 @@ export function HomeListItem({
           group-has-[a:hover]/list-item:after:opacity-0
         `}
       >
-        <Cover
-          decoding="async"
-          imageProps={value.coverImageProps}
-          {...CoverImageConfig}
-          loading={eagerLoadCoverImage ? "eager" : "lazy"}
-        />
+        <div
+          className={`
+            relative
+            after:absolute after:top-0 after:left-0 after:z-sticky after:block
+            after:size-full after:rounded-[2.5px]
+            after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%]
+            after:mix-blend-multiply
+          `}
+        >
+          <div
+            className={`
+              relative z-10
+              before:absolute before:top-0 before:left-0 before:z-10
+              before:block before:size-full before:rounded-[2.5px]
+              before:bg-[url(/assets/spine-light.png)]
+              before:bg-size-[100%_100%]
+              after:absolute after:top-0 after:left-0 after:block
+              after:size-full after:rounded-[2.5px]
+              after:bg-[url(/assets/spot.png)] after:bg-size-[100%_100%]
+              after:mix-blend-soft-light
+            `}
+          >
+            <img
+              {...value.coverImageProps}
+              alt=""
+              {...CoverImageConfig}
+              className={`
+                rounded-[2.5px] bg-default shadow-sm
+                @min-[160px]:shadow-lg
+              `}
+              decoding="async"
+              loading="lazy"
+            />
+          </div>
+        </div>
       </div>
       <div className="flex flex-col gap-y-2">
         <div
