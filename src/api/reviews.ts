@@ -6,6 +6,8 @@ import remarkRehype from "remark-rehype";
 import smartypants from "remark-smartypants";
 import strip from "strip-markdown";
 
+import { ENABLE_CACHE } from "~/utils/cache";
+
 import type { MarkdownReading } from "./data/readingsMarkdown";
 import type {
   ReviewedWorkJson,
@@ -30,14 +32,7 @@ let cachedMarkdownReadings: MarkdownReading[];
 let cachedReviewedWorksJson: ReviewedWorkJson[];
 const cachedExcerptHtml: Map<string, string> = new Map();
 
-// Enable caching during builds but not in dev mode
-const ENABLE_CACHE = !import.meta.env.DEV;
-
 export type Review = MarkdownReview & ReviewedWorkJson & {};
-
-export type ReviewExcerpt = {
-  excerpt: string;
-};
 
 export type ReviewWithContent = Omit<Review, "readings"> & {
   content: string | undefined;
@@ -46,6 +41,10 @@ export type ReviewWithContent = Omit<Review, "readings"> & {
 };
 
 export type ReviewWithExcerpt = Review & {
+  excerpt: string;
+};
+
+type ReviewExcerpt = {
   excerpt: string;
 };
 

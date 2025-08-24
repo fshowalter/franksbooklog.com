@@ -389,66 +389,6 @@ export function handleTitleFilterAction<
     : (baseState as ListWithFiltersState<TItem, TSortValue> & TExtendedState);
 }
 
-export function handleToggleReviewedAction<
-  TItem extends { slug?: string },
-  TSortValue,
-  TExtendedState extends { hideReviewed: boolean },
->(
-  state: ListWithFiltersState<TItem, TSortValue> & TExtendedState,
-  sortFn: (values: TItem[], sort: TSortValue) => TItem[],
-  groupFn?: GroupFn<TItem, TSortValue>,
-): ListWithFiltersState<TItem, TSortValue> & TExtendedState {
-  const hideReviewed = !state.hideReviewed;
-
-  const filters = hideReviewed
-    ? {
-        ...state.filters,
-        hideReviewed: (value: TItem) => !value.slug,
-      }
-    : (() => {
-        const newFilters = { ...state.filters };
-        delete newFilters.hideReviewed;
-        return newFilters;
-      })();
-
-  const pendingFilters = hideReviewed
-    ? {
-        ...state.pendingFilters,
-        hideReviewed: (value: TItem) => !value.slug,
-      }
-    : (() => {
-        const newFilters = { ...state.pendingFilters };
-        delete newFilters.hideReviewed;
-        return newFilters;
-      })();
-
-  const filteredValues = sortFn(
-    filterValues({ filters, values: state.allValues }),
-    state.sortValue,
-  );
-
-  const pendingFilteredCount = filterValues({
-    filters: pendingFilters,
-    values: state.allValues,
-  }).length;
-
-  const valuesToGroup = state.showCount
-    ? filteredValues.slice(0, state.showCount)
-    : filteredValues;
-
-  return {
-    ...state,
-    filteredValues,
-    filters,
-    groupedValues: groupFn
-      ? groupFn(valuesToGroup, state.sortValue)
-      : new Map<string, TItem[]>(),
-    hideReviewed,
-    pendingFilteredCount,
-    pendingFilters,
-  };
-}
-
 export function handleWorkYearFilterAction<
   TItem extends { workYear: string },
   TSortValue,
@@ -506,10 +446,6 @@ export function sortReviewDate<T extends { reviewSequence?: null | number }>() {
     "review-date-desc": (a: T, b: T) =>
       sortNumber(a.reviewSequence || 0, b.reviewSequence || 0) * -1,
   };
-}
-
-export function sortString(a: string, b: string): number {
-  return collator.compare(a, b);
 }
 
 export function sortTitle<T extends { sortTitle: string }>() {
@@ -651,10 +587,6 @@ function createWorkYearFilter(minYear: string, maxYear: string) {
   };
 }
 
-/**
- * Handler functions that combine filter creation and state updates
- */
-
 // Filter values helper
 function filterValues<TItem>({
   filters,
@@ -669,6 +601,10 @@ function filterValues<TItem>({
     });
   });
 }
+
+/**
+ * Handler functions that combine filter creation and state updates
+ */
 
 /**
  * Reset pending filters to current active filters
@@ -708,6 +644,10 @@ function showMore<TItem, TSortValue>(
     groupedValues,
     showCount,
   };
+}
+
+function sortString(a: string, b: string): number {
+  return collator.compare(a, b);
 }
 
 /**

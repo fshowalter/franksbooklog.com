@@ -5,7 +5,6 @@ import type { AvatarImageProps } from "~/api/avatars";
 import type { BackdropImageProps } from "~/api/backdrops";
 
 import { AvatarListItem, GroupedAvatarList } from "~/components/AvatarList";
-import { GroupedList } from "~/components/GroupedList";
 import { ListWithFilters } from "~/components/ListWithFilters";
 
 import type { Sort } from "./Authors.reducer";

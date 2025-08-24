@@ -1,18 +1,17 @@
 import type { JSX } from "react";
 
 import type { BackdropImageProps } from "~/api/backdrops";
+import type { ReviewCardWithExcerptReview } from "~/components/ReviewCardWithExcerpt";
 
 import { Backdrop } from "~/components/Backdrop";
 import { Layout } from "~/components/Layout";
 import { ReviewCardWithExcerpt } from "~/components/ReviewCardWithExcerpt";
 import { SubHeading } from "~/components/SubHeading";
 
-import type { ListItemValue } from "./HomeListItem";
-
 export type Props = {
   backdropImageProps: BackdropImageProps;
   deck: string;
-  values: ListItemValue[];
+  values: ReviewCardWithExcerptReview[];
 };
 
 export function Home({ backdropImageProps, deck, values }: Props): JSX.Element {

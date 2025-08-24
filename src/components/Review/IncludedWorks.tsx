@@ -1,14 +1,11 @@
 import type { ReviewWithContent } from "~/api/reviews";
 
-import { Grade } from "~/components/Grade";
+import { ListItemAuthors } from "~/components/ListItemAuthors";
+import { ListItemDetails } from "~/components/ListItemDetails";
+import { ListItemGrade } from "~/components/ListItemGrade";
 import { ListItemKindAndYear } from "~/components/ListItemKindAndYear";
+import { ListItemTitle } from "~/components/ListItemTitle";
 import { SubHeading } from "~/components/SubHeading";
-import { toSentenceArray } from "~/utils";
-
-import { ListItemAuthors } from "../ListItemAuthors";
-import { ListItemDetails } from "../ListItemDetails";
-import { ListItemGrade } from "../ListItemGrade";
-import { ListItemTitle } from "../ListItemTitle";
 
 type Props = {
   values: ReviewWithContent["includedWorks"];
@@ -47,7 +44,7 @@ export function IncludedWorks({ values }: Props) {
                 />
                 <ListItemAuthors values={value.authors} />
                 <ListItemKindAndYear kind={value.kind} year={value.workYear} />
-                <ListItemGrade grade={value.grade} />
+                {value.grade && <ListItemGrade grade={value.grade} />}
               </ListItemDetails>
             </li>
           ))}

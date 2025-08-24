@@ -10,7 +10,7 @@ import { Layout } from "~/components/Layout";
 import { LongFormText } from "~/components/LongFormText";
 import { MoreReviews } from "~/components/MoreReviews";
 import { SubHeading } from "~/components/SubHeading";
-import { toSentenceArray } from "~/utils/";
+import { toSentenceArray } from "~/utils/toSentenceArray";
 
 import { IncludedWorks } from "./IncludedWorks";
 import { ReadingHistoryListItem } from "./ReadingHistoryListItem";

@@ -3,6 +3,8 @@ import remarkGfm from "remark-gfm";
 import smartypants from "remark-smartypants";
 import strip from "strip-markdown";
 
+import { ENABLE_CACHE } from "~/utils/cache";
+
 import type { MarkdownPage as RawMarkdownPage } from "./data/pagesMarkdown";
 
 import { allPagesMarkdown } from "./data/pagesMarkdown";
@@ -16,9 +18,6 @@ import { removeFootnotes } from "./utils/markdown/removeFootnotes";
 
 let cachedPagesMarkdown: RawMarkdownPage[];
 let cachedReviewedWorksJson: ReviewedWorkJson[];
-
-// Enable caching during builds but not in dev mode
-const ENABLE_CACHE = !import.meta.env.DEV;
 
 type MarkdownPage = {
   content: string | undefined;

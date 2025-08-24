@@ -1,7 +1,7 @@
 import { getBackdropImageProps } from "~/api/backdrops";
 import { getFluidCoverImageProps } from "~/api/covers";
 import { getPage } from "~/api/pages";
-import { mostRecentReviews } from "~/api/reviews";
+import { loadExcerptHtml, mostRecentReviews } from "~/api/reviews";
 import { BackdropImageConfig } from "~/components/Backdrop";
 import { MoreReviewsImageConfig } from "~/components/MoreReviews";
 
@@ -15,7 +15,14 @@ export async function getProps({
   slug: string;
 }): Promise<Props & { rawContent: string }> {
   const { content, rawContent, title } = await getPage(slug);
-  const recentReviews = await mostRecentReviews(6);
+
+  const works = await mostRecentReviews(6);
+
+  const recentReviews = await Promise.all(
+    works.map(async (review) => {
+      return await loadExcerptHtml(review);
+    }),
+  );
 
   return {
     backdropImageProps: await getBackdropImageProps(slug, BackdropImageConfig),

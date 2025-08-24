@@ -43,6 +43,13 @@ export type ListItemValue = Pick<
   readingYear: string;
 };
 
+export const ReadingsItemImageConfig = {
+  height: 375,
+  sizes:
+    "(min-width: 1800px) 216px, (min-width: 1380px) calc(13.25vw - 20px), (min-width: 1280px) calc(20vw - 70px), (min-width: 1060px) calc(20vw - 57px), (min-width: 800px) calc(25vw - 60px), (min-width: 680px) calc(33vw - 61px), calc(23.06vw + 4px)",
+  width: 250,
+};
+
 export type Props = {
   distinctEditions: readonly string[];
   distinctKinds: readonly string[];
@@ -249,6 +256,7 @@ function CalendarDay({ day }: { day: CalendarDayData }): JSX.Element {
               >
                 <CoverListItemCover
                   className="tablet-landscape:w-auto"
+                  imageConfig={ReadingsItemImageConfig}
                   imageProps={reading.coverImageProps}
                 />
                 <div

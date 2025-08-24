@@ -4,10 +4,11 @@ import { getBackdropImageProps } from "~/api/backdrops";
 import { getFluidCoverImageProps } from "~/api/covers";
 import { allTimelineEntries } from "~/api/timelineEntries";
 import { BackdropImageConfig } from "~/components/Backdrop";
-import { ListItemCoverImageConfig } from "~/components/ListItemCover";
 
 import type { ListItemValue } from "./Readings";
 import type { Props } from "./Readings";
+
+import { ReadingsItemImageConfig } from "./Readings";
 
 export async function getProps(): Promise<
   Props & { backdropImageProps: BackdropImageProps; deck: string }
@@ -38,7 +39,7 @@ export async function getProps(): Promise<
         }),
         coverImageProps: await getFluidCoverImageProps(
           entry,
-          ListItemCoverImageConfig,
+          ReadingsItemImageConfig,
         ),
         edition: entry.edition,
         kind: entry.kind,

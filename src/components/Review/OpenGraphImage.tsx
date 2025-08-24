@@ -1,6 +1,6 @@
 import type { JSX } from "react";
 
-import { toSentenceArray } from "~/utils";
+import { toSentenceArray } from "~/utils/toSentenceArray";
 
 export function OpenGraphImage({
   authors,

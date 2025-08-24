@@ -12,6 +12,12 @@ export const CoverListItemImageConfig = {
   width: 250,
 };
 
+type CoverListItemImageConfigType = {
+  height: number;
+  sizes: string;
+  width: number;
+};
+
 export function CoverList({
   children,
   className = "",
@@ -74,9 +80,11 @@ export function CoverListItem({
 
 export function CoverListItemCover({
   className,
+  imageConfig = CoverListItemImageConfig,
   imageProps,
 }: {
   className?: string;
+  imageConfig?: CoverListItemImageConfigType;
   imageProps: CoverImageProps;
 }) {
   return (
@@ -113,7 +121,7 @@ export function CoverListItemCover({
           <img
             {...imageProps}
             alt=""
-            {...CoverListItemImageConfig}
+            {...imageConfig}
             className={`
               rounded-[2.5px] bg-default shadow-sm
               @min-[160px]:shadow-lg
