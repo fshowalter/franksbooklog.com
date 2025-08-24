@@ -359,11 +359,7 @@ function getNextMonthWithReadings(
 
   while (checkMonth < mostRecent) {
     checkMonth = new Date(
-      Date.UTC(
-        checkMonth.getUTCFullYear(),
-        checkMonth.getUTCMonth() + 1,
-        1,
-      ),
+      Date.UTC(checkMonth.getUTCFullYear(), checkMonth.getUTCMonth() + 1, 1),
     );
     const monthKey = `${checkMonth.getUTCFullYear()}-${checkMonth.getUTCMonth()}`;
     if (monthsWithReadings.has(monthKey)) {
@@ -402,11 +398,7 @@ function getPrevMonthWithReadings(
 
   while (checkMonth > oldest) {
     checkMonth = new Date(
-      Date.UTC(
-        checkMonth.getUTCFullYear(),
-        checkMonth.getUTCMonth() - 1,
-        1,
-      ),
+      Date.UTC(checkMonth.getUTCFullYear(), checkMonth.getUTCMonth() - 1, 1),
     );
     const monthKey = `${checkMonth.getUTCFullYear()}-${checkMonth.getUTCMonth()}`;
     if (monthsWithReadings.has(monthKey)) {
@@ -448,6 +440,6 @@ const groupValuesSortedBySequence: GroupFn<ListItemValue, Sort> = (
 
 const sortValues = buildSortValues<ListItemValue, Sort>({
   // Note: Lower timelineSequence = older date (in real data)
-  "reading-date-asc": (a, b) => a.timelineSequence - b.timelineSequence,  // Oldest first
+  "reading-date-asc": (a, b) => a.timelineSequence - b.timelineSequence, // Oldest first
   "reading-date-desc": (a, b) => b.timelineSequence - a.timelineSequence, // Newest first
 });
