@@ -149,13 +149,8 @@ function AuthorListItem({ value }: { value: ListItemValue }): JSX.Element {
     <AvatarListItem avatarImageProps={value.avatarImageProps}>
       <div className="flex flex-col justify-center">
         <AuthorName name={value.name} slug={value.slug} />
-        <div
-          className={`
-            mt-[6px] font-sans text-xs font-light tracking-prose text-nowrap
-            text-subtle
-          `}
-        >
-          {value.reviewCount} Reviews
+        <div className={`mt-[6px] font-sans text-sm text-nowrap text-subtle`}>
+          {value.reviewCount} Review{value.reviewCount > 1 ? "s" : ""}
         </div>
       </div>
     </AvatarListItem>

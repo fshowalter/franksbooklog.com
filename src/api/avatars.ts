@@ -51,14 +51,7 @@ export async function getOpenGraphAvatarAsBase64String(slug: string) {
     return `data:${"image/png"};base64,${imageBuffer.toString("base64")}`;
   }
 
-  const defaultAvatar = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="#fafafa" width="100%"><path clip-rule="evenodd" d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zM8 9a5 5 0 00-4.546 2.916A5.986 5.986 0 008 14a5.986 5.986 0 004.546-2.084A5 5 0 008 9z" fill-rule="evenodd" /></svg>`;
-
-  const imageBuffer = await sharp(Buffer.from(defaultAvatar))
-    .resize(250)
-    .toFormat("png")
-    .toBuffer();
-
-  return `data:${"image/png"};base64,${imageBuffer.toString("base64")}`;
+  return;
 }
 
 function avatarPath(slug: string) {

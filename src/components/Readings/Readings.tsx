@@ -272,7 +272,7 @@ function CalendarDay({ day }: { day: CalendarDayData }): JSX.Element {
                   <ListItemAuthors values={reading.authors} />
                   <div
                     className={`
-                      font-sans text-xs leading-4 font-light tracking-prose
+                      font-sans text-xs leading-4 font-normal tracking-prose
                       text-subtle
                     `}
                   >
@@ -292,7 +292,7 @@ function CalendarDay({ day }: { day: CalendarDayData }): JSX.Element {
                           value={parseProgress(reading.progress)}
                         />
                       </div>
-                      <span className="pl-4 font-sans text-xxs text-subtle">
+                      <span className="pl-4 font-sans text-xs text-subtle">
                         {reading.progress}
                       </span>
                     </div>
@@ -354,8 +354,8 @@ function CalendarHeader({
             aria-disabled={false}
             aria-label={`Navigate to previous month: ${prevMonthName}`}
             className={`
-              -mb-1 transform-gpu cursor-pointer pb-1 font-sans text-xs
-              font-medium text-accent transition-transform
+              -mb-1 transform-gpu cursor-pointer pb-1 font-sans text-sm
+              font-bold text-accent transition-transform
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
               after:origin-bottom-right after:scale-x-0 after:bg-(--fg-accent)
               after:transition-transform
@@ -383,8 +383,8 @@ function CalendarHeader({
             aria-disabled={false}
             aria-label={`Navigate to next month: ${nextMonthName}`}
             className={`
-              -mb-1 transform-gpu cursor-pointer pb-1 font-sans text-xs
-              font-medium text-accent transition-transform
+              -mb-1 transform-gpu cursor-pointer pb-1 font-sans text-sm
+              font-bold text-accent transition-transform
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
               after:origin-bottom-left after:scale-x-0 after:bg-(--fg-accent)
               after:transition-transform
@@ -556,7 +556,7 @@ function WeekdayHeader({ children }: { children: React.ReactNode }) {
     <th
       className={`
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       `}
     >
       {children}

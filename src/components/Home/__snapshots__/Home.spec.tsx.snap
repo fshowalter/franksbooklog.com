@@ -239,11 +239,12 @@ exports[`Home > matches snapshot 1`] = `
           >
             <ol
               class="
-            invisible fixed top-0 right-0 flex h-full w-0
-            transform-[translateX(100%)] flex-col items-start gap-y-5
-            overflow-hidden bg-canvas text-left text-default opacity-0
-            duration-200 ease-in-out
-            tablet:max-w-[35vw] tablet:gap-y-10
+        flex w-full flex-col gap-y-6
+        
+            invisible fixed top-0 right-0 h-full w-0
+            transform-[translateX(100%)] overflow-hidden bg-canvas text-left
+            text-default opacity-0 duration-200 ease-in-out
+            tablet:max-w-[35vw]
             laptop:max-w-[25vw]
             [body.nav-open_&]:visible [body.nav-open_&]:bottom-0
             [body.nav-open_&]:z-nav-menu [body.nav-open_&]:h-full
@@ -253,7 +254,8 @@ exports[`Home > matches snapshot 1`] = `
             [body.nav-open_&]:pl-[12%] [body.nav-open_&]:opacity-100
             [body.nav-open_&]:drop-shadow-2xl [body.nav-open_&]:tablet:px-10
             [body.nav-open_&]:tablet:pt-40 [body.nav-open_&]:laptop:px-20
-          "
+          
+      "
               data-nav-menu="true"
               id="nav-menu"
             >
@@ -356,7 +358,8 @@ exports[`Home > matches snapshot 1`] = `
                 >
                   <li
                     class="
-              mb-3 ml-1 font-sans text-xs tracking-wider text-muted uppercase
+              mb-3 ml-1 font-sans text-xs font-medium tracking-wider text-muted
+              uppercase
               last:-mb-1
             "
                   >
@@ -422,8 +425,8 @@ exports[`Home > matches snapshot 1`] = `
           >
             <h1
               class="
-          text-[2rem] leading-10
-          [text-shadow:1px_1px_2px_black]
+          text-[2rem] leading-10 font-extrabold
+          [text-shadow:1px_1px_2px_rgba(0,0,0,.25)]
           tablet:text-4xl
           laptop:text-7xl
         "
@@ -433,7 +436,7 @@ exports[`Home > matches snapshot 1`] = `
             </h1>
             <p
               class="
-        mt-1 text-base
+        mt-1 font-sans text-base
         laptop:my-4 laptop:text-xl
         [text-shadow:1px_1px_2px_black]
         
@@ -449,10 +452,7 @@ exports[`Home > matches snapshot 1`] = `
         "
         >
           <h2
-            class="
-          py-10 font-sans text-xs font-semibold tracking-wide text-subtle
-          uppercase
-        "
+            class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase"
           >
             Latest Reviews
           </h2>
@@ -549,7 +549,7 @@ exports[`Home > matches snapshot 1`] = `
                 >
                   <div
                     class="
-                mb-1 font-sans text-xxs leading-4 font-light tracking-wider
+                mb-1 font-sans text-xs leading-4 font-normal tracking-wider
                 text-subtle uppercase
                 laptop:tracking-wide
               "
@@ -576,7 +576,7 @@ exports[`Home > matches snapshot 1`] = `
                   </div>
                   <div
                     class="
-              font-sans text-xs leading-4 font-light tracking-prose text-subtle
+              font-sans text-sm leading-4 font-normal tracking-prose text-subtle
             "
                   >
                     1987 | Novel
@@ -693,7 +693,7 @@ exports[`Home > matches snapshot 1`] = `
                 >
                   <div
                     class="
-                mb-1 font-sans text-xxs leading-4 font-light tracking-wider
+                mb-1 font-sans text-xs leading-4 font-normal tracking-wider
                 text-subtle uppercase
                 laptop:tracking-wide
               "
@@ -720,7 +720,7 @@ exports[`Home > matches snapshot 1`] = `
                   </div>
                   <div
                     class="
-              font-sans text-xs leading-4 font-light tracking-prose text-subtle
+              font-sans text-sm leading-4 font-normal tracking-prose text-subtle
             "
                   >
                     1981 | Novel
@@ -837,7 +837,7 @@ exports[`Home > matches snapshot 1`] = `
                 >
                   <div
                     class="
-                mb-1 font-sans text-xxs leading-4 font-light tracking-wider
+                mb-1 font-sans text-xs leading-4 font-normal tracking-wider
                 text-subtle uppercase
                 laptop:tracking-wide
               "
@@ -864,7 +864,7 @@ exports[`Home > matches snapshot 1`] = `
                   </div>
                   <div
                     class="
-              font-sans text-xs leading-4 font-light tracking-prose text-subtle
+              font-sans text-sm leading-4 font-normal tracking-prose text-subtle
             "
                   >
                     2018 | Nonfiction
@@ -981,7 +981,7 @@ exports[`Home > matches snapshot 1`] = `
                 >
                   <div
                     class="
-                mb-1 font-sans text-xxs leading-4 font-light tracking-wider
+                mb-1 font-sans text-xs leading-4 font-normal tracking-wider
                 text-subtle uppercase
                 laptop:tracking-wide
               "
@@ -1008,7 +1008,7 @@ exports[`Home > matches snapshot 1`] = `
                   </div>
                   <div
                     class="
-              font-sans text-xs leading-4 font-light tracking-prose text-subtle
+              font-sans text-sm leading-4 font-normal tracking-prose text-subtle
             "
                   >
                     1977 | Novel
@@ -1125,7 +1125,7 @@ exports[`Home > matches snapshot 1`] = `
                 >
                   <div
                     class="
-                mb-1 font-sans text-xxs leading-4 font-light tracking-wider
+                mb-1 font-sans text-xs leading-4 font-normal tracking-wider
                 text-subtle uppercase
                 laptop:tracking-wide
               "
@@ -1152,7 +1152,7 @@ exports[`Home > matches snapshot 1`] = `
                   </div>
                   <div
                     class="
-              font-sans text-xs leading-4 font-light tracking-prose text-subtle
+              font-sans text-sm leading-4 font-normal tracking-prose text-subtle
             "
                   >
                     1979 | Nonfiction
@@ -1269,7 +1269,7 @@ exports[`Home > matches snapshot 1`] = `
                 >
                   <div
                     class="
-                mb-1 font-sans text-xxs leading-4 font-light tracking-wider
+                mb-1 font-sans text-xs leading-4 font-normal tracking-wider
                 text-subtle uppercase
                 laptop:tracking-wide
               "
@@ -1296,7 +1296,7 @@ exports[`Home > matches snapshot 1`] = `
                   </div>
                   <div
                     class="
-              font-sans text-xs leading-4 font-light tracking-prose text-subtle
+              font-sans text-sm leading-4 font-normal tracking-prose text-subtle
             "
                   >
                     1986 | Short Story
@@ -1413,7 +1413,7 @@ exports[`Home > matches snapshot 1`] = `
                 >
                   <div
                     class="
-                mb-1 font-sans text-xxs leading-4 font-light tracking-wider
+                mb-1 font-sans text-xs leading-4 font-normal tracking-wider
                 text-subtle uppercase
                 laptop:tracking-wide
               "
@@ -1440,7 +1440,7 @@ exports[`Home > matches snapshot 1`] = `
                   </div>
                   <div
                     class="
-              font-sans text-xs leading-4 font-light tracking-prose text-subtle
+              font-sans text-sm leading-4 font-normal tracking-prose text-subtle
             "
                   >
                     1983 | Short Story
@@ -1557,7 +1557,7 @@ exports[`Home > matches snapshot 1`] = `
                 >
                   <div
                     class="
-                mb-1 font-sans text-xxs leading-4 font-light tracking-wider
+                mb-1 font-sans text-xs leading-4 font-normal tracking-wider
                 text-subtle uppercase
                 laptop:tracking-wide
               "
@@ -1584,7 +1584,7 @@ exports[`Home > matches snapshot 1`] = `
                   </div>
                   <div
                     class="
-              font-sans text-xs leading-4 font-light tracking-prose text-subtle
+              font-sans text-sm leading-4 font-normal tracking-prose text-subtle
             "
                   >
                     1980 | Novel
@@ -1704,7 +1704,7 @@ exports[`Home > matches snapshot 1`] = `
                 >
                   <div
                     class="
-                mb-1 font-sans text-xxs leading-4 font-light tracking-wider
+                mb-1 font-sans text-xs leading-4 font-normal tracking-wider
                 text-subtle uppercase
                 laptop:tracking-wide
               "
@@ -1731,7 +1731,7 @@ exports[`Home > matches snapshot 1`] = `
                   </div>
                   <div
                     class="
-              font-sans text-xs leading-4 font-light tracking-prose text-subtle
+              font-sans text-sm leading-4 font-normal tracking-prose text-subtle
             "
                   >
                     2016 | Short Story
@@ -1852,7 +1852,7 @@ exports[`Home > matches snapshot 1`] = `
                 >
                   <div
                     class="
-                mb-1 font-sans text-xxs leading-4 font-light tracking-wider
+                mb-1 font-sans text-xs leading-4 font-normal tracking-wider
                 text-subtle uppercase
                 laptop:tracking-wide
               "
@@ -1879,7 +1879,7 @@ exports[`Home > matches snapshot 1`] = `
                   </div>
                   <div
                     class="
-              font-sans text-xs leading-4 font-light tracking-prose text-subtle
+              font-sans text-sm leading-4 font-normal tracking-prose text-subtle
             "
                   >
                     1975 | Novel
@@ -2007,7 +2007,7 @@ exports[`Home > matches snapshot 1`] = `
                 >
                   <div
                     class="
-                mb-1 font-sans text-xxs leading-4 font-light tracking-wider
+                mb-1 font-sans text-xs leading-4 font-normal tracking-wider
                 text-subtle uppercase
                 laptop:tracking-wide
               "
@@ -2034,7 +2034,7 @@ exports[`Home > matches snapshot 1`] = `
                   </div>
                   <div
                     class="
-              font-sans text-xs leading-4 font-light tracking-prose text-subtle
+              font-sans text-sm leading-4 font-normal tracking-prose text-subtle
             "
                   >
                     1991 | Short Story
@@ -2151,7 +2151,7 @@ exports[`Home > matches snapshot 1`] = `
                 >
                   <div
                     class="
-                mb-1 font-sans text-xxs leading-4 font-light tracking-wider
+                mb-1 font-sans text-xs leading-4 font-normal tracking-wider
                 text-subtle uppercase
                 laptop:tracking-wide
               "
@@ -2178,7 +2178,7 @@ exports[`Home > matches snapshot 1`] = `
                   </div>
                   <div
                     class="
-              font-sans text-xs leading-4 font-light tracking-prose text-subtle
+              font-sans text-sm leading-4 font-normal tracking-prose text-subtle
             "
                   >
                     1983 | Novel
@@ -2210,8 +2210,8 @@ exports[`Home > matches snapshot 1`] = `
             <a
               class="
               group/all-reviews mx-auto w-full max-w-button transform-gpu
-              rounded-md bg-default pt-5 pb-4 text-center font-sans text-xs
-              font-semibold tracking-wide text-accent uppercase transition-all
+              rounded-md bg-default pt-5 pb-4 text-center font-sans text-sm
+              font-bold tracking-wide text-accent uppercase transition-all
               hover:scale-105 hover:bg-accent hover:text-inverse
             "
               href="/reviews/"
@@ -2247,8 +2247,8 @@ exports[`Home > matches snapshot 1`] = `
             <a
               class="
               mx-auto mb-8 w-full max-w-button transform-gpu rounded-md
-              bg-subtle py-5 text-center font-sans text-xs tracking-wide
-              text-default uppercase transition-all
+              bg-subtle py-5 text-center font-sans text-sm font-normal
+              tracking-wide text-default uppercase transition-all
               hover:scale-105 hover:bg-default hover:text-default
               hover:drop-shadow-lg
               tablet:mx-0
@@ -2296,7 +2296,7 @@ exports[`Home > matches snapshot 1`] = `
             "
             >
               <div
-                class="pt-10 font-sans text-sm font-light text-subtle"
+                class="pt-10 font-sans font-normal text-subtle"
               >
                 <p
                   class="
@@ -2399,9 +2399,9 @@ exports[`Home > matches snapshot 1`] = `
             >
               <ol
                 class="
-                flex w-full flex-col gap-y-10
-                desktop:w-auto
-              "
+        flex w-full flex-col gap-y-6
+        desktop:w-auto
+      "
               >
                 <li
                   class="
@@ -2502,7 +2502,8 @@ exports[`Home > matches snapshot 1`] = `
                   >
                     <li
                       class="
-              mb-3 ml-1 font-sans text-xs tracking-wider text-muted uppercase
+              mb-3 ml-1 font-sans text-xs font-medium tracking-wider text-muted
+              uppercase
               last:-mb-1
             "
                     >
@@ -2534,11 +2535,28 @@ exports[`Home > matches snapshot 1`] = `
         >
           All reviews by Frank Showalter. All images used in accordance with the 
           <a
-            class="text-inherit underline"
+            class="
+            relative inline-block pr-4 text-inherit underline underline-offset-3
+            hover:bg-default hover:text-accent
+          "
             href="http://www.copyright.gov/title17/92chap1.html#107"
             rel="nofollow"
           >
             Fair Use Law
+            <svg
+              class="absolute top-0.5 right-0 size-3"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
           </a>
           .
         </p>

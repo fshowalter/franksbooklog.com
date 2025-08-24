@@ -120,11 +120,10 @@ function HamburgerMenu({ hasBackdrop }: { hasBackdrop: boolean }) {
       <nav aria-label="Main navigation">
         <TableOfContents
           className={`
-            invisible fixed top-0 right-0 flex h-full w-0
-            transform-[translateX(100%)] flex-col items-start gap-y-5
-            overflow-hidden bg-canvas text-left text-default opacity-0
-            duration-200 ease-in-out
-            tablet:max-w-[35vw] tablet:gap-y-10
+            invisible fixed top-0 right-0 h-full w-0
+            transform-[translateX(100%)] overflow-hidden bg-canvas text-left
+            text-default opacity-0 duration-200 ease-in-out
+            tablet:max-w-[35vw]
             laptop:max-w-[25vw]
             [body.nav-open_&]:visible [body.nav-open_&]:bottom-0
             [body.nav-open_&]:z-nav-menu [body.nav-open_&]:h-full

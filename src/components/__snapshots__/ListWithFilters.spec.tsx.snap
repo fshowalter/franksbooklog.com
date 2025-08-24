@@ -59,9 +59,8 @@ exports[`ListWithFilters > filter drawer > opens and closes filter drawer 1`] = 
     >
       <legend
         class="
-                    block w-full pt-10 pb-8 font-sans text-lg text-xxs
-                    font-semibold tracking-wide text-subtle uppercase
-                    shadow-bottom
+                    block w-full pt-10 pb-8 font-sans text-sm font-bold
+                    tracking-wide text-subtle uppercase shadow-bottom
                   "
       >
         Filter
@@ -108,8 +107,8 @@ exports[`ListWithFilters > filter drawer > opens and closes filter drawer 1`] = 
           class="
                       flex flex-1 transform-gpu cursor-pointer items-center
                       justify-center gap-x-4 rounded-sm bg-footer px-4 py-3
-                      font-sans text-xs text-nowrap text-inverse uppercase
-                      transition-transform
+                      font-sans text-xs font-bold tracking-wide text-nowrap
+                      text-inverse uppercase transition-transform
                       hover:scale-105 hover:drop-shadow-md
                     "
           type="button"
@@ -188,9 +187,8 @@ exports[`ListWithFilters > filter drawer > opens and closes filter drawer 2`] = 
     >
       <legend
         class="
-                    block w-full pt-10 pb-8 font-sans text-lg text-xxs
-                    font-semibold tracking-wide text-subtle uppercase
-                    shadow-bottom
+                    block w-full pt-10 pb-8 font-sans text-sm font-bold
+                    tracking-wide text-subtle uppercase shadow-bottom
                   "
       >
         Filter
@@ -237,8 +235,8 @@ exports[`ListWithFilters > filter drawer > opens and closes filter drawer 2`] = 
           class="
                       flex flex-1 transform-gpu cursor-pointer items-center
                       justify-center gap-x-4 rounded-sm bg-footer px-4 py-3
-                      font-sans text-xs text-nowrap text-inverse uppercase
-                      transition-transform
+                      font-sans text-xs font-bold tracking-wide text-nowrap
+                      text-inverse uppercase transition-transform
                       hover:scale-105 hover:drop-shadow-md
                     "
           type="button"
@@ -287,12 +285,12 @@ exports[`ListWithFilters > renders 1`] = `
             class="text-nowrap"
           >
             <span
-              class="font-semibold text-default"
+              class="text-sm font-bold text-default"
             >
               100
             </span>
             <span
-              class="text-xxs leading-none tracking-wide"
+              class="text-xs leading-none font-medium tracking-wide"
             >
                Results
             </span>
@@ -309,7 +307,7 @@ exports[`ListWithFilters > renders 1`] = `
           >
             <label
               class="
-            flex items-baseline gap-x-4 text-xxs font-semibold tracking-wide
+            flex items-baseline gap-x-4 text-xs font-bold tracking-wide
             text-subtle
           "
             >
@@ -341,7 +339,7 @@ exports[`ListWithFilters > renders 1`] = `
             class="
           col-start-4 row-start-1 flex transform-gpu cursor-pointer items-center
           justify-center gap-x-4 rounded-sm bg-canvas px-4 py-2 font-sans
-          text-xs font-medium text-nowrap text-muted uppercase shadow-all
+          text-xs font-bold text-nowrap text-muted uppercase shadow-all
           transition-transform
           hover:scale-110 hover:drop-shadow-md
           tablet:col-start-5 tablet:w-20
@@ -440,9 +438,8 @@ exports[`ListWithFilters > renders 1`] = `
             >
               <legend
                 class="
-                    block w-full pt-10 pb-8 font-sans text-lg text-xxs
-                    font-semibold tracking-wide text-subtle uppercase
-                    shadow-bottom
+                    block w-full pt-10 pb-8 font-sans text-sm font-bold
+                    tracking-wide text-subtle uppercase shadow-bottom
                   "
               >
                 Filter
@@ -489,8 +486,8 @@ exports[`ListWithFilters > renders 1`] = `
                   class="
                       flex flex-1 transform-gpu cursor-pointer items-center
                       justify-center gap-x-4 rounded-sm bg-footer px-4 py-3
-                      font-sans text-xs text-nowrap text-inverse uppercase
-                      transition-transform
+                      font-sans text-xs font-bold tracking-wide text-nowrap
+                      text-inverse uppercase transition-transform
                       hover:scale-105 hover:drop-shadow-md
                     "
                   type="button"

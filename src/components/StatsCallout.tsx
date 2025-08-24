@@ -14,9 +14,7 @@ export function StatsCallout({
       `}
     >
       <div className="text-[2rem] leading-8">{value.toLocaleString()}</div>{" "}
-      <div className="font-sans text-sm leading-6 font-light text-subtle">
-        {label}
-      </div>
+      <div className="font-sans text-sm leading-6 text-subtle">{label}</div>
     </div>
   );
 }

@@ -31,7 +31,7 @@ exports[`Readings > can clear all filters 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Sun
@@ -39,7 +39,7 @@ exports[`Readings > can clear all filters 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
            Mon
@@ -47,7 +47,7 @@ exports[`Readings > can clear all filters 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Tue
@@ -55,7 +55,7 @@ exports[`Readings > can clear all filters 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Wed
@@ -63,7 +63,7 @@ exports[`Readings > can clear all filters 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Thu
@@ -71,7 +71,7 @@ exports[`Readings > can clear all filters 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Fri
@@ -79,7 +79,7 @@ exports[`Readings > can clear all filters 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Sat
@@ -658,7 +658,7 @@ exports[`Readings > can clear all filters 1`] = `
                   </div>
                   <div
                     class="
-                      font-sans text-xs leading-4 font-light tracking-prose
+                      font-sans text-xs leading-4 font-normal tracking-prose
                       text-subtle
                     "
                   >
@@ -683,7 +683,7 @@ exports[`Readings > can clear all filters 1`] = `
                       </div>
                     </div>
                     <span
-                      class="pl-4 font-sans text-xxs text-subtle"
+                      class="pl-4 font-sans text-xs text-subtle"
                     >
                       Finished
                     </span>
@@ -1109,7 +1109,7 @@ exports[`Readings > can filter by edition 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Sun
@@ -1117,7 +1117,7 @@ exports[`Readings > can filter by edition 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
            Mon
@@ -1125,7 +1125,7 @@ exports[`Readings > can filter by edition 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Tue
@@ -1133,7 +1133,7 @@ exports[`Readings > can filter by edition 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Wed
@@ -1141,7 +1141,7 @@ exports[`Readings > can filter by edition 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Thu
@@ -1149,7 +1149,7 @@ exports[`Readings > can filter by edition 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Fri
@@ -1157,7 +1157,7 @@ exports[`Readings > can filter by edition 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Sat
@@ -1424,7 +1424,7 @@ exports[`Readings > can filter by edition 1`] = `
                   </div>
                   <div
                     class="
-                      font-sans text-xs leading-4 font-light tracking-prose
+                      font-sans text-xs leading-4 font-normal tracking-prose
                       text-subtle
                     "
                   >
@@ -1449,7 +1449,7 @@ exports[`Readings > can filter by edition 1`] = `
                       </div>
                     </div>
                     <span
-                      class="pl-4 font-sans text-xxs text-subtle"
+                      class="pl-4 font-sans text-xs text-subtle"
                     >
                       11%
                     </span>
@@ -1641,7 +1641,7 @@ exports[`Readings > can filter by edition 1`] = `
                   </div>
                   <div
                     class="
-                      font-sans text-xs leading-4 font-light tracking-prose
+                      font-sans text-xs leading-4 font-normal tracking-prose
                       text-subtle
                     "
                   >
@@ -1666,7 +1666,7 @@ exports[`Readings > can filter by edition 1`] = `
                       </div>
                     </div>
                     <span
-                      class="pl-4 font-sans text-xxs text-subtle"
+                      class="pl-4 font-sans text-xs text-subtle"
                     >
                       19%
                     </span>
@@ -1802,7 +1802,7 @@ exports[`Readings > can filter by edition 1`] = `
                   </div>
                   <div
                     class="
-                      font-sans text-xs leading-4 font-light tracking-prose
+                      font-sans text-xs leading-4 font-normal tracking-prose
                       text-subtle
                     "
                   >
@@ -1827,7 +1827,7 @@ exports[`Readings > can filter by edition 1`] = `
                       </div>
                     </div>
                     <span
-                      class="pl-4 font-sans text-xxs text-subtle"
+                      class="pl-4 font-sans text-xs text-subtle"
                     >
                       24%
                     </span>
@@ -1920,7 +1920,7 @@ exports[`Readings > can filter by edition 1`] = `
                   </div>
                   <div
                     class="
-                      font-sans text-xs leading-4 font-light tracking-prose
+                      font-sans text-xs leading-4 font-normal tracking-prose
                       text-subtle
                     "
                   >
@@ -1945,7 +1945,7 @@ exports[`Readings > can filter by edition 1`] = `
                       </div>
                     </div>
                     <span
-                      class="pl-4 font-sans text-xxs text-subtle"
+                      class="pl-4 font-sans text-xs text-subtle"
                     >
                       30%
                     </span>
@@ -2085,7 +2085,7 @@ exports[`Readings > can filter by edition 1`] = `
                   </div>
                   <div
                     class="
-                      font-sans text-xs leading-4 font-light tracking-prose
+                      font-sans text-xs leading-4 font-normal tracking-prose
                       text-subtle
                     "
                   >
@@ -2110,7 +2110,7 @@ exports[`Readings > can filter by edition 1`] = `
                       </div>
                     </div>
                     <span
-                      class="pl-4 font-sans text-xxs text-subtle"
+                      class="pl-4 font-sans text-xs text-subtle"
                     >
                       39%
                     </span>
@@ -2203,7 +2203,7 @@ exports[`Readings > can filter by edition 1`] = `
                   </div>
                   <div
                     class="
-                      font-sans text-xs leading-4 font-light tracking-prose
+                      font-sans text-xs leading-4 font-normal tracking-prose
                       text-subtle
                     "
                   >
@@ -2228,7 +2228,7 @@ exports[`Readings > can filter by edition 1`] = `
                       </div>
                     </div>
                     <span
-                      class="pl-4 font-sans text-xxs text-subtle"
+                      class="pl-4 font-sans text-xs text-subtle"
                     >
                       64%
                     </span>
@@ -2364,7 +2364,7 @@ exports[`Readings > can filter by edition 1`] = `
                   </div>
                   <div
                     class="
-                      font-sans text-xs leading-4 font-light tracking-prose
+                      font-sans text-xs leading-4 font-normal tracking-prose
                       text-subtle
                     "
                   >
@@ -2389,7 +2389,7 @@ exports[`Readings > can filter by edition 1`] = `
                       </div>
                     </div>
                     <span
-                      class="pl-4 font-sans text-xxs text-subtle"
+                      class="pl-4 font-sans text-xs text-subtle"
                     >
                       90%
                     </span>
@@ -2482,7 +2482,7 @@ exports[`Readings > can filter by edition 1`] = `
                   </div>
                   <div
                     class="
-                      font-sans text-xs leading-4 font-light tracking-prose
+                      font-sans text-xs leading-4 font-normal tracking-prose
                       text-subtle
                     "
                   >
@@ -2507,7 +2507,7 @@ exports[`Readings > can filter by edition 1`] = `
                       </div>
                     </div>
                     <span
-                      class="pl-4 font-sans text-xxs text-subtle"
+                      class="pl-4 font-sans text-xs text-subtle"
                     >
                       72%
                     </span>
@@ -2699,7 +2699,7 @@ exports[`Readings > can filter by edition 1`] = `
                   </div>
                   <div
                     class="
-                      font-sans text-xs leading-4 font-light tracking-prose
+                      font-sans text-xs leading-4 font-normal tracking-prose
                       text-subtle
                     "
                   >
@@ -2724,7 +2724,7 @@ exports[`Readings > can filter by edition 1`] = `
                       </div>
                     </div>
                     <span
-                      class="pl-4 font-sans text-xxs text-subtle"
+                      class="pl-4 font-sans text-xs text-subtle"
                     >
                       Finished
                     </span>
@@ -2817,7 +2817,7 @@ exports[`Readings > can filter by edition 1`] = `
                   </div>
                   <div
                     class="
-                      font-sans text-xs leading-4 font-light tracking-prose
+                      font-sans text-xs leading-4 font-normal tracking-prose
                       text-subtle
                     "
                   >
@@ -2842,7 +2842,7 @@ exports[`Readings > can filter by edition 1`] = `
                       </div>
                     </div>
                     <span
-                      class="pl-4 font-sans text-xxs text-subtle"
+                      class="pl-4 font-sans text-xs text-subtle"
                     >
                       75%
                     </span>
@@ -2978,7 +2978,7 @@ exports[`Readings > can filter by edition 1`] = `
                   </div>
                   <div
                     class="
-                      font-sans text-xs leading-4 font-light tracking-prose
+                      font-sans text-xs leading-4 font-normal tracking-prose
                       text-subtle
                     "
                   >
@@ -3003,7 +3003,7 @@ exports[`Readings > can filter by edition 1`] = `
                       </div>
                     </div>
                     <span
-                      class="pl-4 font-sans text-xxs text-subtle"
+                      class="pl-4 font-sans text-xs text-subtle"
                     >
                       Finished
                     </span>
@@ -3171,7 +3171,7 @@ exports[`Readings > can filter by edition 1`] = `
                   </div>
                   <div
                     class="
-                      font-sans text-xs leading-4 font-light tracking-prose
+                      font-sans text-xs leading-4 font-normal tracking-prose
                       text-subtle
                     "
                   >
@@ -3196,7 +3196,7 @@ exports[`Readings > can filter by edition 1`] = `
                       </div>
                     </div>
                     <span
-                      class="pl-4 font-sans text-xxs text-subtle"
+                      class="pl-4 font-sans text-xs text-subtle"
                     >
                       3%
                     </span>
@@ -3332,7 +3332,7 @@ exports[`Readings > can filter by edition 1`] = `
                   </div>
                   <div
                     class="
-                      font-sans text-xs leading-4 font-light tracking-prose
+                      font-sans text-xs leading-4 font-normal tracking-prose
                       text-subtle
                     "
                   >
@@ -3357,7 +3357,7 @@ exports[`Readings > can filter by edition 1`] = `
                       </div>
                     </div>
                     <span
-                      class="pl-4 font-sans text-xxs text-subtle"
+                      class="pl-4 font-sans text-xs text-subtle"
                     >
                       15%
                     </span>
@@ -3493,7 +3493,7 @@ exports[`Readings > can filter by edition 1`] = `
                   </div>
                   <div
                     class="
-                      font-sans text-xs leading-4 font-light tracking-prose
+                      font-sans text-xs leading-4 font-normal tracking-prose
                       text-subtle
                     "
                   >
@@ -3518,7 +3518,7 @@ exports[`Readings > can filter by edition 1`] = `
                       </div>
                     </div>
                     <span
-                      class="pl-4 font-sans text-xxs text-subtle"
+                      class="pl-4 font-sans text-xs text-subtle"
                     >
                       26%
                     </span>
@@ -3654,7 +3654,7 @@ exports[`Readings > can filter by edition 1`] = `
                   </div>
                   <div
                     class="
-                      font-sans text-xs leading-4 font-light tracking-prose
+                      font-sans text-xs leading-4 font-normal tracking-prose
                       text-subtle
                     "
                   >
@@ -3679,7 +3679,7 @@ exports[`Readings > can filter by edition 1`] = `
                       </div>
                     </div>
                     <span
-                      class="pl-4 font-sans text-xxs text-subtle"
+                      class="pl-4 font-sans text-xs text-subtle"
                     >
                       36%
                     </span>
@@ -3815,7 +3815,7 @@ exports[`Readings > can filter by edition 1`] = `
                   </div>
                   <div
                     class="
-                      font-sans text-xs leading-4 font-light tracking-prose
+                      font-sans text-xs leading-4 font-normal tracking-prose
                       text-subtle
                     "
                   >
@@ -3840,7 +3840,7 @@ exports[`Readings > can filter by edition 1`] = `
                       </div>
                     </div>
                     <span
-                      class="pl-4 font-sans text-xxs text-subtle"
+                      class="pl-4 font-sans text-xs text-subtle"
                     >
                       40%
                     </span>
@@ -3976,7 +3976,7 @@ exports[`Readings > can filter by edition 1`] = `
                   </div>
                   <div
                     class="
-                      font-sans text-xs leading-4 font-light tracking-prose
+                      font-sans text-xs leading-4 font-normal tracking-prose
                       text-subtle
                     "
                   >
@@ -4001,7 +4001,7 @@ exports[`Readings > can filter by edition 1`] = `
                       </div>
                     </div>
                     <span
-                      class="pl-4 font-sans text-xxs text-subtle"
+                      class="pl-4 font-sans text-xs text-subtle"
                     >
                       53%
                     </span>
@@ -4137,7 +4137,7 @@ exports[`Readings > can filter by edition 1`] = `
                   </div>
                   <div
                     class="
-                      font-sans text-xs leading-4 font-light tracking-prose
+                      font-sans text-xs leading-4 font-normal tracking-prose
                       text-subtle
                     "
                   >
@@ -4162,7 +4162,7 @@ exports[`Readings > can filter by edition 1`] = `
                       </div>
                     </div>
                     <span
-                      class="pl-4 font-sans text-xxs text-subtle"
+                      class="pl-4 font-sans text-xs text-subtle"
                     >
                       38%
                     </span>
@@ -4255,7 +4255,7 @@ exports[`Readings > can filter by edition 1`] = `
                   </div>
                   <div
                     class="
-                      font-sans text-xs leading-4 font-light tracking-prose
+                      font-sans text-xs leading-4 font-normal tracking-prose
                       text-subtle
                     "
                   >
@@ -4280,7 +4280,7 @@ exports[`Readings > can filter by edition 1`] = `
                       </div>
                     </div>
                     <span
-                      class="pl-4 font-sans text-xxs text-subtle"
+                      class="pl-4 font-sans text-xs text-subtle"
                     >
                       75%
                     </span>
@@ -4420,7 +4420,7 @@ exports[`Readings > can filter by edition 1`] = `
                   </div>
                   <div
                     class="
-                      font-sans text-xs leading-4 font-light tracking-prose
+                      font-sans text-xs leading-4 font-normal tracking-prose
                       text-subtle
                     "
                   >
@@ -4445,7 +4445,7 @@ exports[`Readings > can filter by edition 1`] = `
                       </div>
                     </div>
                     <span
-                      class="pl-4 font-sans text-xxs text-subtle"
+                      class="pl-4 font-sans text-xs text-subtle"
                     >
                       64%
                     </span>
@@ -4693,7 +4693,7 @@ exports[`Readings > can filter by edition 1`] = `
                   </div>
                   <div
                     class="
-                      font-sans text-xs leading-4 font-light tracking-prose
+                      font-sans text-xs leading-4 font-normal tracking-prose
                       text-subtle
                     "
                   >
@@ -4718,7 +4718,7 @@ exports[`Readings > can filter by edition 1`] = `
                       </div>
                     </div>
                     <span
-                      class="pl-4 font-sans text-xxs text-subtle"
+                      class="pl-4 font-sans text-xs text-subtle"
                     >
                       77%
                     </span>
@@ -4811,7 +4811,7 @@ exports[`Readings > can filter by edition 1`] = `
                   </div>
                   <div
                     class="
-                      font-sans text-xs leading-4 font-light tracking-prose
+                      font-sans text-xs leading-4 font-normal tracking-prose
                       text-subtle
                     "
                   >
@@ -4836,7 +4836,7 @@ exports[`Readings > can filter by edition 1`] = `
                       </div>
                     </div>
                     <span
-                      class="pl-4 font-sans text-xxs text-subtle"
+                      class="pl-4 font-sans text-xs text-subtle"
                     >
                       87%
                     </span>
@@ -4972,7 +4972,7 @@ exports[`Readings > can filter by edition 1`] = `
                   </div>
                   <div
                     class="
-                      font-sans text-xs leading-4 font-light tracking-prose
+                      font-sans text-xs leading-4 font-normal tracking-prose
                       text-subtle
                     "
                   >
@@ -4997,7 +4997,7 @@ exports[`Readings > can filter by edition 1`] = `
                       </div>
                     </div>
                     <span
-                      class="pl-4 font-sans text-xxs text-subtle"
+                      class="pl-4 font-sans text-xs text-subtle"
                     >
                       Finished
                     </span>
@@ -5090,7 +5090,7 @@ exports[`Readings > can filter by edition 1`] = `
                   </div>
                   <div
                     class="
-                      font-sans text-xs leading-4 font-light tracking-prose
+                      font-sans text-xs leading-4 font-normal tracking-prose
                       text-subtle
                     "
                   >
@@ -5115,7 +5115,7 @@ exports[`Readings > can filter by edition 1`] = `
                       </div>
                     </div>
                     <span
-                      class="pl-4 font-sans text-xxs text-subtle"
+                      class="pl-4 font-sans text-xs text-subtle"
                     >
                       Finished
                     </span>
@@ -5257,7 +5257,7 @@ exports[`Readings > can filter by edition then show all 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Sun
@@ -5265,7 +5265,7 @@ exports[`Readings > can filter by edition then show all 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
            Mon
@@ -5273,7 +5273,7 @@ exports[`Readings > can filter by edition then show all 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Tue
@@ -5281,7 +5281,7 @@ exports[`Readings > can filter by edition then show all 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Wed
@@ -5289,7 +5289,7 @@ exports[`Readings > can filter by edition then show all 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Thu
@@ -5297,7 +5297,7 @@ exports[`Readings > can filter by edition then show all 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Fri
@@ -5305,7 +5305,7 @@ exports[`Readings > can filter by edition then show all 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Sat
@@ -5884,7 +5884,7 @@ exports[`Readings > can filter by edition then show all 1`] = `
                   </div>
                   <div
                     class="
-                      font-sans text-xs leading-4 font-light tracking-prose
+                      font-sans text-xs leading-4 font-normal tracking-prose
                       text-subtle
                     "
                   >
@@ -5909,7 +5909,7 @@ exports[`Readings > can filter by edition then show all 1`] = `
                       </div>
                     </div>
                     <span
-                      class="pl-4 font-sans text-xxs text-subtle"
+                      class="pl-4 font-sans text-xs text-subtle"
                     >
                       Finished
                     </span>
@@ -6335,7 +6335,7 @@ exports[`Readings > can filter by kind 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Sun
@@ -6343,7 +6343,7 @@ exports[`Readings > can filter by kind 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
            Mon
@@ -6351,7 +6351,7 @@ exports[`Readings > can filter by kind 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Tue
@@ -6359,7 +6359,7 @@ exports[`Readings > can filter by kind 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Wed
@@ -6367,7 +6367,7 @@ exports[`Readings > can filter by kind 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Thu
@@ -6375,7 +6375,7 @@ exports[`Readings > can filter by kind 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Fri
@@ -6383,7 +6383,7 @@ exports[`Readings > can filter by kind 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Sat
@@ -6727,7 +6727,7 @@ exports[`Readings > can filter by kind 1`] = `
                   </div>
                   <div
                     class="
-                      font-sans text-xs leading-4 font-light tracking-prose
+                      font-sans text-xs leading-4 font-normal tracking-prose
                       text-subtle
                     "
                   >
@@ -6752,7 +6752,7 @@ exports[`Readings > can filter by kind 1`] = `
                       </div>
                     </div>
                     <span
-                      class="pl-4 font-sans text-xxs text-subtle"
+                      class="pl-4 font-sans text-xs text-subtle"
                     >
                       Started
                     </span>
@@ -7060,7 +7060,7 @@ exports[`Readings > can filter by kind 1`] = `
                   </div>
                   <div
                     class="
-                      font-sans text-xs leading-4 font-light tracking-prose
+                      font-sans text-xs leading-4 font-normal tracking-prose
                       text-subtle
                     "
                   >
@@ -7085,7 +7085,7 @@ exports[`Readings > can filter by kind 1`] = `
                       </div>
                     </div>
                     <span
-                      class="pl-4 font-sans text-xxs text-subtle"
+                      class="pl-4 font-sans text-xs text-subtle"
                     >
                       Finished
                     </span>
@@ -7609,7 +7609,7 @@ exports[`Readings > can filter by kind then show all 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Sun
@@ -7617,7 +7617,7 @@ exports[`Readings > can filter by kind then show all 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
            Mon
@@ -7625,7 +7625,7 @@ exports[`Readings > can filter by kind then show all 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Tue
@@ -7633,7 +7633,7 @@ exports[`Readings > can filter by kind then show all 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Wed
@@ -7641,7 +7641,7 @@ exports[`Readings > can filter by kind then show all 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Thu
@@ -7649,7 +7649,7 @@ exports[`Readings > can filter by kind then show all 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Fri
@@ -7657,7 +7657,7 @@ exports[`Readings > can filter by kind then show all 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Sat
@@ -8236,7 +8236,7 @@ exports[`Readings > can filter by kind then show all 1`] = `
                   </div>
                   <div
                     class="
-                      font-sans text-xs leading-4 font-light tracking-prose
+                      font-sans text-xs leading-4 font-normal tracking-prose
                       text-subtle
                     "
                   >
@@ -8261,7 +8261,7 @@ exports[`Readings > can filter by kind then show all 1`] = `
                       </div>
                     </div>
                     <span
-                      class="pl-4 font-sans text-xxs text-subtle"
+                      class="pl-4 font-sans text-xs text-subtle"
                     >
                       Finished
                     </span>
@@ -8687,7 +8687,7 @@ exports[`Readings > can filter by reading year 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Sun
@@ -8695,7 +8695,7 @@ exports[`Readings > can filter by reading year 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
            Mon
@@ -8703,7 +8703,7 @@ exports[`Readings > can filter by reading year 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Tue
@@ -8711,7 +8711,7 @@ exports[`Readings > can filter by reading year 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Wed
@@ -8719,7 +8719,7 @@ exports[`Readings > can filter by reading year 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Thu
@@ -8727,7 +8727,7 @@ exports[`Readings > can filter by reading year 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Fri
@@ -8735,7 +8735,7 @@ exports[`Readings > can filter by reading year 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Sat
@@ -9276,7 +9276,7 @@ exports[`Readings > can filter by reading year 1`] = `
                   </div>
                   <div
                     class="
-                      font-sans text-xs leading-4 font-light tracking-prose
+                      font-sans text-xs leading-4 font-normal tracking-prose
                       text-subtle
                     "
                   >
@@ -9301,7 +9301,7 @@ exports[`Readings > can filter by reading year 1`] = `
                       </div>
                     </div>
                     <span
-                      class="pl-4 font-sans text-xxs text-subtle"
+                      class="pl-4 font-sans text-xs text-subtle"
                     >
                       13%
                     </span>
@@ -9441,7 +9441,7 @@ exports[`Readings > can filter by reading year 1`] = `
                   </div>
                   <div
                     class="
-                      font-sans text-xs leading-4 font-light tracking-prose
+                      font-sans text-xs leading-4 font-normal tracking-prose
                       text-subtle
                     "
                   >
@@ -9466,7 +9466,7 @@ exports[`Readings > can filter by reading year 1`] = `
                       </div>
                     </div>
                     <span
-                      class="pl-4 font-sans text-xxs text-subtle"
+                      class="pl-4 font-sans text-xs text-subtle"
                     >
                       30%
                     </span>
@@ -9606,7 +9606,7 @@ exports[`Readings > can filter by reading year 1`] = `
                   </div>
                   <div
                     class="
-                      font-sans text-xs leading-4 font-light tracking-prose
+                      font-sans text-xs leading-4 font-normal tracking-prose
                       text-subtle
                     "
                   >
@@ -9631,7 +9631,7 @@ exports[`Readings > can filter by reading year 1`] = `
                       </div>
                     </div>
                     <span
-                      class="pl-4 font-sans text-xxs text-subtle"
+                      class="pl-4 font-sans text-xs text-subtle"
                     >
                       48%
                     </span>
@@ -9771,7 +9771,7 @@ exports[`Readings > can filter by reading year 1`] = `
                   </div>
                   <div
                     class="
-                      font-sans text-xs leading-4 font-light tracking-prose
+                      font-sans text-xs leading-4 font-normal tracking-prose
                       text-subtle
                     "
                   >
@@ -9796,7 +9796,7 @@ exports[`Readings > can filter by reading year 1`] = `
                       </div>
                     </div>
                     <span
-                      class="pl-4 font-sans text-xxs text-subtle"
+                      class="pl-4 font-sans text-xs text-subtle"
                     >
                       62%
                     </span>
@@ -9964,7 +9964,7 @@ exports[`Readings > can filter by reading year 1`] = `
                   </div>
                   <div
                     class="
-                      font-sans text-xs leading-4 font-light tracking-prose
+                      font-sans text-xs leading-4 font-normal tracking-prose
                       text-subtle
                     "
                   >
@@ -9989,7 +9989,7 @@ exports[`Readings > can filter by reading year 1`] = `
                       </div>
                     </div>
                     <span
-                      class="pl-4 font-sans text-xxs text-subtle"
+                      class="pl-4 font-sans text-xs text-subtle"
                     >
                       79%
                     </span>
@@ -10125,7 +10125,7 @@ exports[`Readings > can filter by reading year 1`] = `
                   </div>
                   <div
                     class="
-                      font-sans text-xs leading-4 font-light tracking-prose
+                      font-sans text-xs leading-4 font-normal tracking-prose
                       text-subtle
                     "
                   >
@@ -10150,7 +10150,7 @@ exports[`Readings > can filter by reading year 1`] = `
                       </div>
                     </div>
                     <span
-                      class="pl-4 font-sans text-xxs text-subtle"
+                      class="pl-4 font-sans text-xs text-subtle"
                     >
                       Finished
                     </span>
@@ -10247,7 +10247,7 @@ exports[`Readings > can filter by reading year 1`] = `
                   </div>
                   <div
                     class="
-                      font-sans text-xs leading-4 font-light tracking-prose
+                      font-sans text-xs leading-4 font-normal tracking-prose
                       text-subtle
                     "
                   >
@@ -10272,7 +10272,7 @@ exports[`Readings > can filter by reading year 1`] = `
                       </div>
                     </div>
                     <span
-                      class="pl-4 font-sans text-xxs text-subtle"
+                      class="pl-4 font-sans text-xs text-subtle"
                     >
                       Finished
                     </span>
@@ -10635,7 +10635,7 @@ exports[`Readings > can filter by reading year reversed 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Sun
@@ -10643,7 +10643,7 @@ exports[`Readings > can filter by reading year reversed 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
            Mon
@@ -10651,7 +10651,7 @@ exports[`Readings > can filter by reading year reversed 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Tue
@@ -10659,7 +10659,7 @@ exports[`Readings > can filter by reading year reversed 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Wed
@@ -10667,7 +10667,7 @@ exports[`Readings > can filter by reading year reversed 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Thu
@@ -10675,7 +10675,7 @@ exports[`Readings > can filter by reading year reversed 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Fri
@@ -10683,7 +10683,7 @@ exports[`Readings > can filter by reading year reversed 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Sat
@@ -11224,7 +11224,7 @@ exports[`Readings > can filter by reading year reversed 1`] = `
                   </div>
                   <div
                     class="
-                      font-sans text-xs leading-4 font-light tracking-prose
+                      font-sans text-xs leading-4 font-normal tracking-prose
                       text-subtle
                     "
                   >
@@ -11249,7 +11249,7 @@ exports[`Readings > can filter by reading year reversed 1`] = `
                       </div>
                     </div>
                     <span
-                      class="pl-4 font-sans text-xxs text-subtle"
+                      class="pl-4 font-sans text-xs text-subtle"
                     >
                       13%
                     </span>
@@ -11389,7 +11389,7 @@ exports[`Readings > can filter by reading year reversed 1`] = `
                   </div>
                   <div
                     class="
-                      font-sans text-xs leading-4 font-light tracking-prose
+                      font-sans text-xs leading-4 font-normal tracking-prose
                       text-subtle
                     "
                   >
@@ -11414,7 +11414,7 @@ exports[`Readings > can filter by reading year reversed 1`] = `
                       </div>
                     </div>
                     <span
-                      class="pl-4 font-sans text-xxs text-subtle"
+                      class="pl-4 font-sans text-xs text-subtle"
                     >
                       30%
                     </span>
@@ -11554,7 +11554,7 @@ exports[`Readings > can filter by reading year reversed 1`] = `
                   </div>
                   <div
                     class="
-                      font-sans text-xs leading-4 font-light tracking-prose
+                      font-sans text-xs leading-4 font-normal tracking-prose
                       text-subtle
                     "
                   >
@@ -11579,7 +11579,7 @@ exports[`Readings > can filter by reading year reversed 1`] = `
                       </div>
                     </div>
                     <span
-                      class="pl-4 font-sans text-xxs text-subtle"
+                      class="pl-4 font-sans text-xs text-subtle"
                     >
                       48%
                     </span>
@@ -11719,7 +11719,7 @@ exports[`Readings > can filter by reading year reversed 1`] = `
                   </div>
                   <div
                     class="
-                      font-sans text-xs leading-4 font-light tracking-prose
+                      font-sans text-xs leading-4 font-normal tracking-prose
                       text-subtle
                     "
                   >
@@ -11744,7 +11744,7 @@ exports[`Readings > can filter by reading year reversed 1`] = `
                       </div>
                     </div>
                     <span
-                      class="pl-4 font-sans text-xxs text-subtle"
+                      class="pl-4 font-sans text-xs text-subtle"
                     >
                       62%
                     </span>
@@ -11912,7 +11912,7 @@ exports[`Readings > can filter by reading year reversed 1`] = `
                   </div>
                   <div
                     class="
-                      font-sans text-xs leading-4 font-light tracking-prose
+                      font-sans text-xs leading-4 font-normal tracking-prose
                       text-subtle
                     "
                   >
@@ -11937,7 +11937,7 @@ exports[`Readings > can filter by reading year reversed 1`] = `
                       </div>
                     </div>
                     <span
-                      class="pl-4 font-sans text-xxs text-subtle"
+                      class="pl-4 font-sans text-xs text-subtle"
                     >
                       79%
                     </span>
@@ -12073,7 +12073,7 @@ exports[`Readings > can filter by reading year reversed 1`] = `
                   </div>
                   <div
                     class="
-                      font-sans text-xs leading-4 font-light tracking-prose
+                      font-sans text-xs leading-4 font-normal tracking-prose
                       text-subtle
                     "
                   >
@@ -12098,7 +12098,7 @@ exports[`Readings > can filter by reading year reversed 1`] = `
                       </div>
                     </div>
                     <span
-                      class="pl-4 font-sans text-xxs text-subtle"
+                      class="pl-4 font-sans text-xs text-subtle"
                     >
                       Finished
                     </span>
@@ -12195,7 +12195,7 @@ exports[`Readings > can filter by reading year reversed 1`] = `
                   </div>
                   <div
                     class="
-                      font-sans text-xs leading-4 font-light tracking-prose
+                      font-sans text-xs leading-4 font-normal tracking-prose
                       text-subtle
                     "
                   >
@@ -12220,7 +12220,7 @@ exports[`Readings > can filter by reading year reversed 1`] = `
                       </div>
                     </div>
                     <span
-                      class="pl-4 font-sans text-xxs text-subtle"
+                      class="pl-4 font-sans text-xs text-subtle"
                     >
                       Finished
                     </span>
@@ -12583,7 +12583,7 @@ exports[`Readings > can filter by title 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Sun
@@ -12591,7 +12591,7 @@ exports[`Readings > can filter by title 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
            Mon
@@ -12599,7 +12599,7 @@ exports[`Readings > can filter by title 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Tue
@@ -12607,7 +12607,7 @@ exports[`Readings > can filter by title 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Wed
@@ -12615,7 +12615,7 @@ exports[`Readings > can filter by title 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Thu
@@ -12623,7 +12623,7 @@ exports[`Readings > can filter by title 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Fri
@@ -12631,7 +12631,7 @@ exports[`Readings > can filter by title 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Sat
@@ -13644,7 +13644,7 @@ exports[`Readings > can filter by work year 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Sun
@@ -13652,7 +13652,7 @@ exports[`Readings > can filter by work year 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
            Mon
@@ -13660,7 +13660,7 @@ exports[`Readings > can filter by work year 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Tue
@@ -13668,7 +13668,7 @@ exports[`Readings > can filter by work year 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Wed
@@ -13676,7 +13676,7 @@ exports[`Readings > can filter by work year 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Thu
@@ -13684,7 +13684,7 @@ exports[`Readings > can filter by work year 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Fri
@@ -13692,7 +13692,7 @@ exports[`Readings > can filter by work year 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Sat
@@ -14271,7 +14271,7 @@ exports[`Readings > can filter by work year 1`] = `
                   </div>
                   <div
                     class="
-                      font-sans text-xs leading-4 font-light tracking-prose
+                      font-sans text-xs leading-4 font-normal tracking-prose
                       text-subtle
                     "
                   >
@@ -14296,7 +14296,7 @@ exports[`Readings > can filter by work year 1`] = `
                       </div>
                     </div>
                     <span
-                      class="pl-4 font-sans text-xxs text-subtle"
+                      class="pl-4 font-sans text-xs text-subtle"
                     >
                       Finished
                     </span>
@@ -14722,7 +14722,7 @@ exports[`Readings > can filter by work year reversed 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Sun
@@ -14730,7 +14730,7 @@ exports[`Readings > can filter by work year reversed 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
            Mon
@@ -14738,7 +14738,7 @@ exports[`Readings > can filter by work year reversed 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Tue
@@ -14746,7 +14746,7 @@ exports[`Readings > can filter by work year reversed 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Wed
@@ -14754,7 +14754,7 @@ exports[`Readings > can filter by work year reversed 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Thu
@@ -14762,7 +14762,7 @@ exports[`Readings > can filter by work year reversed 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Fri
@@ -14770,7 +14770,7 @@ exports[`Readings > can filter by work year reversed 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Sat
@@ -15349,7 +15349,7 @@ exports[`Readings > can filter by work year reversed 1`] = `
                   </div>
                   <div
                     class="
-                      font-sans text-xs leading-4 font-light tracking-prose
+                      font-sans text-xs leading-4 font-normal tracking-prose
                       text-subtle
                     "
                   >
@@ -15374,7 +15374,7 @@ exports[`Readings > can filter by work year reversed 1`] = `
                       </div>
                     </div>
                     <span
-                      class="pl-4 font-sans text-xxs text-subtle"
+                      class="pl-4 font-sans text-xs text-subtle"
                     >
                       Finished
                     </span>
@@ -15800,7 +15800,7 @@ exports[`Readings > can navigate to next month 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Sun
@@ -15808,7 +15808,7 @@ exports[`Readings > can navigate to next month 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
            Mon
@@ -15816,7 +15816,7 @@ exports[`Readings > can navigate to next month 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Tue
@@ -15824,7 +15824,7 @@ exports[`Readings > can navigate to next month 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Wed
@@ -15832,7 +15832,7 @@ exports[`Readings > can navigate to next month 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Thu
@@ -15840,7 +15840,7 @@ exports[`Readings > can navigate to next month 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Fri
@@ -15848,7 +15848,7 @@ exports[`Readings > can navigate to next month 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Sat
@@ -16129,7 +16129,7 @@ exports[`Readings > can navigate to next month 1`] = `
                   </div>
                   <div
                     class="
-                      font-sans text-xs leading-4 font-light tracking-prose
+                      font-sans text-xs leading-4 font-normal tracking-prose
                       text-subtle
                     "
                   >
@@ -16154,7 +16154,7 @@ exports[`Readings > can navigate to next month 1`] = `
                       </div>
                     </div>
                     <span
-                      class="pl-4 font-sans text-xxs text-subtle"
+                      class="pl-4 font-sans text-xs text-subtle"
                     >
                       60%
                     </span>
@@ -16941,7 +16941,7 @@ exports[`Readings > can navigate to previous month 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Sun
@@ -16949,7 +16949,7 @@ exports[`Readings > can navigate to previous month 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
            Mon
@@ -16957,7 +16957,7 @@ exports[`Readings > can navigate to previous month 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Tue
@@ -16965,7 +16965,7 @@ exports[`Readings > can navigate to previous month 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Wed
@@ -16973,7 +16973,7 @@ exports[`Readings > can navigate to previous month 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Thu
@@ -16981,7 +16981,7 @@ exports[`Readings > can navigate to previous month 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Fri
@@ -16989,7 +16989,7 @@ exports[`Readings > can navigate to previous month 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Sat
@@ -17224,7 +17224,7 @@ exports[`Readings > can navigate to previous month 1`] = `
                   </div>
                   <div
                     class="
-                      font-sans text-xs leading-4 font-light tracking-prose
+                      font-sans text-xs leading-4 font-normal tracking-prose
                       text-subtle
                     "
                   >
@@ -17249,7 +17249,7 @@ exports[`Readings > can navigate to previous month 1`] = `
                       </div>
                     </div>
                     <span
-                      class="pl-4 font-sans text-xxs text-subtle"
+                      class="pl-4 font-sans text-xs text-subtle"
                     >
                       37%
                     </span>
@@ -18061,7 +18061,7 @@ exports[`Readings > can sort by reading date with newest first 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Sun
@@ -18069,7 +18069,7 @@ exports[`Readings > can sort by reading date with newest first 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
            Mon
@@ -18077,7 +18077,7 @@ exports[`Readings > can sort by reading date with newest first 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Tue
@@ -18085,7 +18085,7 @@ exports[`Readings > can sort by reading date with newest first 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Wed
@@ -18093,7 +18093,7 @@ exports[`Readings > can sort by reading date with newest first 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Thu
@@ -18101,7 +18101,7 @@ exports[`Readings > can sort by reading date with newest first 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Fri
@@ -18109,7 +18109,7 @@ exports[`Readings > can sort by reading date with newest first 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Sat
@@ -18688,7 +18688,7 @@ exports[`Readings > can sort by reading date with newest first 1`] = `
                   </div>
                   <div
                     class="
-                      font-sans text-xs leading-4 font-light tracking-prose
+                      font-sans text-xs leading-4 font-normal tracking-prose
                       text-subtle
                     "
                   >
@@ -18713,7 +18713,7 @@ exports[`Readings > can sort by reading date with newest first 1`] = `
                       </div>
                     </div>
                     <span
-                      class="pl-4 font-sans text-xxs text-subtle"
+                      class="pl-4 font-sans text-xs text-subtle"
                     >
                       Finished
                     </span>
@@ -19139,7 +19139,7 @@ exports[`Readings > can sort by reading date with oldest first 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Sun
@@ -19147,7 +19147,7 @@ exports[`Readings > can sort by reading date with oldest first 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
            Mon
@@ -19155,7 +19155,7 @@ exports[`Readings > can sort by reading date with oldest first 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Tue
@@ -19163,7 +19163,7 @@ exports[`Readings > can sort by reading date with oldest first 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Wed
@@ -19171,7 +19171,7 @@ exports[`Readings > can sort by reading date with oldest first 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Thu
@@ -19179,7 +19179,7 @@ exports[`Readings > can sort by reading date with oldest first 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Fri
@@ -19187,7 +19187,7 @@ exports[`Readings > can sort by reading date with oldest first 1`] = `
         <th
           class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
         >
           Sat
@@ -19422,7 +19422,7 @@ exports[`Readings > can sort by reading date with oldest first 1`] = `
                   </div>
                   <div
                     class="
-                      font-sans text-xs leading-4 font-light tracking-prose
+                      font-sans text-xs leading-4 font-normal tracking-prose
                       text-subtle
                     "
                   >
@@ -19447,7 +19447,7 @@ exports[`Readings > can sort by reading date with oldest first 1`] = `
                       </div>
                     </div>
                     <span
-                      class="pl-4 font-sans text-xxs text-subtle"
+                      class="pl-4 font-sans text-xs text-subtle"
                     >
                       37%
                     </span>
@@ -20260,12 +20260,12 @@ exports[`Readings > renders 1`] = `
             class="text-nowrap"
           >
             <span
-              class="font-semibold text-default"
+              class="text-sm font-bold text-default"
             >
               181
             </span>
             <span
-              class="text-xxs leading-none tracking-wide"
+              class="text-xs leading-none font-medium tracking-wide"
             >
                Results
             </span>
@@ -20275,8 +20275,8 @@ exports[`Readings > renders 1`] = `
           >
             <div
               class="
-        flex items-start gap-x-4 bg-default px-4 text-nowrap text-accent
-        uppercase
+        flex items-start gap-x-4 bg-default px-4 font-sans text-sm font-bold
+        text-nowrap text-accent uppercase
       "
             >
               <a
@@ -20302,7 +20302,7 @@ exports[`Readings > renders 1`] = `
           >
             <label
               class="
-            flex items-baseline gap-x-4 text-xxs font-semibold tracking-wide
+            flex items-baseline gap-x-4 text-xs font-bold tracking-wide
             text-subtle
           "
             >
@@ -20334,7 +20334,7 @@ exports[`Readings > renders 1`] = `
             class="
           col-start-4 row-start-1 flex transform-gpu cursor-pointer items-center
           justify-center gap-x-4 rounded-sm bg-canvas px-4 py-2 font-sans
-          text-xs font-medium text-nowrap text-muted uppercase shadow-all
+          text-xs font-bold text-nowrap text-muted uppercase shadow-all
           transition-transform
           hover:scale-110 hover:drop-shadow-md
           tablet:col-start-5 tablet:w-20
@@ -20381,8 +20381,8 @@ exports[`Readings > renders 1`] = `
                   aria-disabled="false"
                   aria-label="Navigate to previous month: Jan 2024"
                   class="
-              -mb-1 transform-gpu cursor-pointer pb-1 font-sans text-xs
-              font-medium text-accent transition-transform
+              -mb-1 transform-gpu cursor-pointer pb-1 font-sans text-sm
+              font-bold text-accent transition-transform
               after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
               after:origin-bottom-right after:scale-x-0 after:bg-(--fg-accent)
               after:transition-transform
@@ -20436,7 +20436,7 @@ exports[`Readings > renders 1`] = `
                     <th
                       class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
                     >
                       Sun
@@ -20444,7 +20444,7 @@ exports[`Readings > renders 1`] = `
                     <th
                       class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
                     >
                        Mon
@@ -20452,7 +20452,7 @@ exports[`Readings > renders 1`] = `
                     <th
                       class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
                     >
                       Tue
@@ -20460,7 +20460,7 @@ exports[`Readings > renders 1`] = `
                     <th
                       class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
                     >
                       Wed
@@ -20468,7 +20468,7 @@ exports[`Readings > renders 1`] = `
                     <th
                       class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
                     >
                       Thu
@@ -20476,7 +20476,7 @@ exports[`Readings > renders 1`] = `
                     <th
                       class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
                     >
                       Fri
@@ -20484,7 +20484,7 @@ exports[`Readings > renders 1`] = `
                     <th
                       class="
         border-separate border border-default px-2 py-3 text-center font-sans
-        text-xs font-light tracking-wide text-subtle uppercase
+        text-sm font-normal tracking-wide text-subtle uppercase
       "
                     >
                       Sat
@@ -21063,7 +21063,7 @@ exports[`Readings > renders 1`] = `
                               </div>
                               <div
                                 class="
-                      font-sans text-xs leading-4 font-light tracking-prose
+                      font-sans text-xs leading-4 font-normal tracking-prose
                       text-subtle
                     "
                               >
@@ -21088,7 +21088,7 @@ exports[`Readings > renders 1`] = `
                                   </div>
                                 </div>
                                 <span
-                                  class="pl-4 font-sans text-xxs text-subtle"
+                                  class="pl-4 font-sans text-xs text-subtle"
                                 >
                                   Finished
                                 </span>
@@ -21549,9 +21549,8 @@ exports[`Readings > renders 1`] = `
             >
               <legend
                 class="
-                    block w-full pt-10 pb-8 font-sans text-lg text-xxs
-                    font-semibold tracking-wide text-subtle uppercase
-                    shadow-bottom
+                    block w-full pt-10 pb-8 font-sans text-sm font-bold
+                    tracking-wide text-subtle uppercase shadow-bottom
                   "
               >
                 Filter
@@ -21561,8 +21560,8 @@ exports[`Readings > renders 1`] = `
               >
                 <span
                   class="
-        inline-block h-6 text-left font-sans text-xxs leading-none tracking-wide
-        text-subtle uppercase
+        inline-block h-6 text-left font-sans text-xs leading-none font-semibold
+        tracking-wide text-subtle uppercase
       "
                 >
                   Title
@@ -21583,8 +21582,8 @@ exports[`Readings > renders 1`] = `
               >
                 <legend
                   class="
-        inline-block h-6 text-left font-sans text-xxs leading-none tracking-wide
-        text-subtle uppercase
+        inline-block h-6 text-left font-sans text-xs leading-none font-semibold
+        tracking-wide text-subtle uppercase
       "
                 >
                   Work Year
@@ -21853,8 +21852,8 @@ exports[`Readings > renders 1`] = `
               >
                 <legend
                   class="
-        inline-block h-6 text-left font-sans text-xxs leading-none tracking-wide
-        text-subtle uppercase
+        inline-block h-6 text-left font-sans text-xs leading-none font-semibold
+        tracking-wide text-subtle uppercase
       "
                 >
                   Reading Year
@@ -22023,8 +22022,8 @@ exports[`Readings > renders 1`] = `
               >
                 <span
                   class="
-        inline-block h-6 text-left font-sans text-xxs leading-none tracking-wide
-        text-subtle uppercase
+        inline-block h-6 text-left font-sans text-xs leading-none font-semibold
+        tracking-wide text-subtle uppercase
       "
                 >
                   Kind
@@ -22073,8 +22072,8 @@ exports[`Readings > renders 1`] = `
               >
                 <span
                   class="
-        inline-block h-6 text-left font-sans text-xxs leading-none tracking-wide
-        text-subtle uppercase
+        inline-block h-6 text-left font-sans text-xs leading-none font-semibold
+        tracking-wide text-subtle uppercase
       "
                 >
                   Edition
@@ -22137,8 +22136,8 @@ exports[`Readings > renders 1`] = `
                   class="
                       flex flex-1 transform-gpu cursor-pointer items-center
                       justify-center gap-x-4 rounded-sm bg-footer px-4 py-3
-                      font-sans text-xs text-nowrap text-inverse uppercase
-                      transition-transform
+                      font-sans text-xs font-bold tracking-wide text-nowrap
+                      text-inverse uppercase transition-transform
                       hover:scale-105 hover:drop-shadow-md
                     "
                   type="button"

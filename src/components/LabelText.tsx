@@ -14,8 +14,8 @@ export function LabelText({
   return (
     <Component
       className={`
-        inline-block h-6 text-left font-sans text-xxs leading-none tracking-wide
-        text-subtle uppercase
+        inline-block h-6 text-left font-sans text-xs leading-none font-semibold
+        tracking-wide text-subtle uppercase
       `}
       htmlFor={htmlFor}
     >

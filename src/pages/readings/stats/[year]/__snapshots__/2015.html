@@ -179,7 +179,7 @@
             </button>
             <nav aria-label="Main navigation">
               <ol
-                class="invisible fixed top-0 right-0 flex h-full w-0 transform-[translateX(100%)] flex-col items-start gap-y-5 overflow-hidden bg-canvas text-left text-default opacity-0 duration-200 ease-in-out tablet:max-w-[35vw] tablet:gap-y-10 laptop:max-w-[25vw] [body.nav-open_&amp;]:visible [body.nav-open_&amp;]:bottom-0 [body.nav-open_&amp;]:z-nav-menu [body.nav-open_&amp;]:h-full [body.nav-open_&amp;]:w-full [body.nav-open_&amp;]:transform-[translateX(0)] [body.nav-open_&amp;]:overflow-y-auto [body.nav-open_&amp;]:pt-20 [body.nav-open_&amp;]:pr-[16%] [body.nav-open_&amp;]:pb-5 [body.nav-open_&amp;]:pl-[12%] [body.nav-open_&amp;]:opacity-100 [body.nav-open_&amp;]:drop-shadow-2xl [body.nav-open_&amp;]:tablet:px-10 [body.nav-open_&amp;]:tablet:pt-40 [body.nav-open_&amp;]:laptop:px-20"
+                class="flex w-full flex-col gap-y-6 invisible fixed top-0 right-0 h-full w-0 transform-[translateX(100%)] overflow-hidden bg-canvas text-left text-default opacity-0 duration-200 ease-in-out tablet:max-w-[35vw] laptop:max-w-[25vw] [body.nav-open_&amp;]:visible [body.nav-open_&amp;]:bottom-0 [body.nav-open_&amp;]:z-nav-menu [body.nav-open_&amp;]:h-full [body.nav-open_&amp;]:w-full [body.nav-open_&amp;]:transform-[translateX(0)] [body.nav-open_&amp;]:overflow-y-auto [body.nav-open_&amp;]:pt-20 [body.nav-open_&amp;]:pr-[16%] [body.nav-open_&amp;]:pb-5 [body.nav-open_&amp;]:pl-[12%] [body.nav-open_&amp;]:opacity-100 [body.nav-open_&amp;]:drop-shadow-2xl [body.nav-open_&amp;]:tablet:px-10 [body.nav-open_&amp;]:tablet:pt-40 [body.nav-open_&amp;]:laptop:px-20"
                 data-nav-menu="true"
                 id="nav-menu"
               >
@@ -229,7 +229,7 @@
                   >
                   <ol class="mt-4">
                     <li
-                      class="mb-3 ml-1 font-sans text-xs tracking-wider text-muted uppercase last:-mb-1"
+                      class="mb-3 ml-1 font-sans text-xs font-medium tracking-wider text-muted uppercase last:-mb-1"
                     >
                       <a
                         class="relative inline-block origin-left transform-gpu pb-1 transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-accent after:transition-transform hover:text-accent hover:after:scale-x-100"
@@ -266,7 +266,7 @@
             <div
               class="items-center z-10 mx-auto flex w-full max-w-(--breakpoint-desktop) flex-col px-container after:absolute after:top-0 after:left-0 after:-z-10 after:h-full after:w-full after:bg-linear-to-t after:from-[rgba(0,0,0,.85)] after:to-50% tablet:after:to-25%"
             >
-              <p class="mb-2">
+              <p class="mb-4">
                 <a
                   class="relative inline-block font-sans text-sm tracking-wide uppercase after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:origin-center after:scale-x-0 after:bg-(--fg-inverse)/75 after:transition-transform hover:after:scale-x-100"
                   href="/readings/"
@@ -274,13 +274,13 @@
                 >
               </p>
               <h1
-                class="font-sans text-2xl font-bold tracking-widest uppercase laptop:text-7xl"
+                class="text-[2rem] leading-10 font-extrabold [text-shadow:1px_1px_2px_rgba(0,0,0,.25)] tablet:text-4xl laptop:text-7xl"
                 data-pagefind-weight="10"
               >
                 2015 Stats
               </h1>
               <p
-                class="mt-1 text-base laptop:my-4 laptop:text-xl [text-shadow:1px_1px_2px_black] text-center"
+                class="mt-1 font-sans text-base laptop:my-4 laptop:text-xl [text-shadow:1px_1px_2px_black] text-center"
               >
                 A Year in Review
               </p>
@@ -288,7 +288,7 @@
           </header>
           <nav class="bg-[#333] z-10 mb-12 w-full">
             <ul
-              class="mx-auto flex scrollbar-hidden max-w-(--breakpoint-desktop) snap-x overflow-x-auto px-container font-sans text-sm font-normal tracking-wide laptop:justify-center"
+              class="mx-auto flex scrollbar-hidden max-w-(--breakpoint-desktop) snap-x overflow-x-auto px-container font-sans text-base font-semibold tracking-wide laptop:justify-center"
             >
               <li class="snap-start text-center">
                 <a
@@ -420,17 +420,13 @@
               class="flex size-36 flex-col justify-center rounded-full bg-default text-center text-default shadow-all"
             >
               <div class="text-[2rem] leading-8">6</div>
-              <div class="font-sans text-sm leading-6 font-light text-subtle">
-                Titles
-              </div>
+              <div class="font-sans text-sm leading-6 text-subtle">Titles</div>
             </div>
             <div
               class="flex size-36 flex-col justify-center rounded-full bg-default text-center text-default shadow-all"
             >
               <div class="text-[2rem] leading-8">5</div>
-              <div class="font-sans text-sm leading-6 font-light text-subtle">
-                Books
-              </div>
+              <div class="font-sans text-sm leading-6 text-subtle">Books</div>
             </div>
           </div>
           <div
@@ -456,7 +452,7 @@
                         >
                       </div>
                       <div
-                        class="col-start-2 self-center pb-1 text-right font-sans text-xs text-nowrap text-subtle"
+                        class="col-start-2 self-center pr-1 pb-1 text-right font-sans text-sm text-nowrap text-subtle"
                       >
                         2
                       </div>
@@ -466,13 +462,13 @@
                     >
                       <details class="rounded-md bg-canvas px-2 open:pb-2">
                         <summary
-                          class="cursor-pointer rounded-sm py-1 font-sans text-xs tracking-prose text-subtle"
+                          class="cursor-pointer rounded-sm py-1 font-sans text-sm tracking-prose text-subtle"
                         >
                           Details
                         </summary>
                         <div class="@container/cover-list">
                           <ol
-                            class="items-baseline [--cover-list-item-width:50%] tablet:flex tablet:flex-wrap @min-[calc((250px_*_2)_+_1px)]/cover-list:[--cover-list-item-width:33.33%] @min-[calc((250px_*_3)_+_1px)]/cover-list:[--cover-list-item-width:25%] @min-[calc((250px_*_4)_+_1px)]/cover-list:[--cover-list-item-width:20%] @min-[calc((250px_*_5)_+_1px)]/cover-list:[--cover-list-item-width:16.66%] bg-subtle"
+                            class="items-baseline [--cover-list-item-width:50%] tablet:flex tablet:flex-wrap @min-[calc((250px_*_2)_+_1px)]/cover-list:[--cover-list-item-width:33.33%] @min-[calc((250px_*_3)_+_1px)]/cover-list:[--cover-list-item-width:25%] @min-[calc((250px_*_4)_+_1px)]/cover-list:[--cover-list-item-width:20%] @min-[calc((250px_*_5)_+_1px)]/cover-list:[--cover-list-item-width:16.66%] rounded-md bg-subtle"
                           >
                             <li
                               class="group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-[5%] bg-default px-container py-4 transition-transform tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2 tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl bg-unreviewed"
@@ -508,12 +504,12 @@
                                   >Frank</span
                                 >
                                 <div
-                                  class="font-sans text-xs leading-4 font-light tracking-prose text-subtle"
+                                  class="font-sans text-xs leading-4 tracking-prose text-subtle"
                                 >
                                   Jan 25, 2015
                                 </div>
                                 <div
-                                  class="font-sans text-xs leading-4 font-light tracking-prose text-subtle"
+                                  class="font-sans text-xs leading-4 tracking-prose text-subtle"
                                 >
                                   Paperback
                                 </div>
@@ -553,12 +549,12 @@
                                   >Sinatra</span
                                 >
                                 <div
-                                  class="font-sans text-xs leading-4 font-light tracking-prose text-subtle"
+                                  class="font-sans text-xs leading-4 tracking-prose text-subtle"
                                 >
                                   Dec 30, 2015
                                 </div>
                                 <div
-                                  class="font-sans text-xs leading-4 font-light tracking-prose text-subtle"
+                                  class="font-sans text-xs leading-4 tracking-prose text-subtle"
                                 >
                                   Hardcover
                                 </div>
@@ -583,12 +579,12 @@
                   <div class="col-span-3 grid grid-cols-subgrid py-3">
                     <div class="col-span-3 grid grid-cols-subgrid">
                       <div
-                        class="pb-1 font-sans text-xs leading-3.5 tracking-prose text-muted"
+                        class="pb-1 font-sans text-sm leading-3.5 tracking-prose text-muted"
                       >
                         1980s
                       </div>
                       <div
-                        class="col-start-3 self-center pb-1 text-right font-sans text-xs leading-3.5 text-nowrap text-subtle"
+                        class="col-start-3 self-center pb-1 text-right font-sans text-sm leading-3.5 text-nowrap text-subtle"
                       >
                         1
                       </div>
@@ -605,12 +601,12 @@
                   <div class="col-span-3 grid grid-cols-subgrid py-3">
                     <div class="col-span-3 grid grid-cols-subgrid">
                       <div
-                        class="pb-1 font-sans text-xs leading-3.5 tracking-prose text-muted"
+                        class="pb-1 font-sans text-sm leading-3.5 tracking-prose text-muted"
                       >
                         2000s
                       </div>
                       <div
-                        class="col-start-3 self-center pb-1 text-right font-sans text-xs leading-3.5 text-nowrap text-subtle"
+                        class="col-start-3 self-center pb-1 text-right font-sans text-sm leading-3.5 text-nowrap text-subtle"
                       >
                         2
                       </div>
@@ -627,12 +623,12 @@
                   <div class="col-span-3 grid grid-cols-subgrid py-3">
                     <div class="col-span-3 grid grid-cols-subgrid">
                       <div
-                        class="pb-1 font-sans text-xs leading-3.5 tracking-prose text-muted"
+                        class="pb-1 font-sans text-sm leading-3.5 tracking-prose text-muted"
                       >
                         2010s
                       </div>
                       <div
-                        class="col-start-3 self-center pb-1 text-right font-sans text-xs leading-3.5 text-nowrap text-subtle"
+                        class="col-start-3 self-center pb-1 text-right font-sans text-sm leading-3.5 text-nowrap text-subtle"
                       >
                         3
                       </div>
@@ -656,12 +652,12 @@
                   <div class="col-span-3 grid grid-cols-subgrid py-3">
                     <div class="col-span-3 grid grid-cols-subgrid">
                       <div
-                        class="pb-1 font-sans text-xs leading-3.5 tracking-prose text-muted"
+                        class="pb-1 font-sans text-sm leading-3.5 tracking-prose text-muted"
                       >
                         Nonfiction
                       </div>
                       <div
-                        class="col-start-3 self-center pb-1 text-right font-sans text-xs leading-3.5 text-nowrap text-subtle"
+                        class="col-start-3 self-center pb-1 text-right font-sans text-sm leading-3.5 text-nowrap text-subtle"
                       >
                         3
                       </div>
@@ -678,12 +674,12 @@
                   <div class="col-span-3 grid grid-cols-subgrid py-3">
                     <div class="col-span-3 grid grid-cols-subgrid">
                       <div
-                        class="pb-1 font-sans text-xs leading-3.5 tracking-prose text-muted"
+                        class="pb-1 font-sans text-sm leading-3.5 tracking-prose text-muted"
                       >
                         Novel
                       </div>
                       <div
-                        class="col-start-3 self-center pb-1 text-right font-sans text-xs leading-3.5 text-nowrap text-subtle"
+                        class="col-start-3 self-center pb-1 text-right font-sans text-sm leading-3.5 text-nowrap text-subtle"
                       >
                         2
                       </div>
@@ -700,12 +696,12 @@
                   <div class="col-span-3 grid grid-cols-subgrid py-3">
                     <div class="col-span-3 grid grid-cols-subgrid">
                       <div
-                        class="pb-1 font-sans text-xs leading-3.5 tracking-prose text-muted"
+                        class="pb-1 font-sans text-sm leading-3.5 tracking-prose text-muted"
                       >
                         Short Story
                       </div>
                       <div
-                        class="col-start-3 self-center pb-1 text-right font-sans text-xs leading-3.5 text-nowrap text-subtle"
+                        class="col-start-3 self-center pb-1 text-right font-sans text-sm leading-3.5 text-nowrap text-subtle"
                       >
                         1
                       </div>
@@ -729,12 +725,12 @@
                   <div class="col-span-3 grid grid-cols-subgrid py-3">
                     <div class="col-span-3 grid grid-cols-subgrid">
                       <div
-                        class="pb-1 font-sans text-xs leading-3.5 tracking-prose text-muted"
+                        class="pb-1 font-sans text-sm leading-3.5 tracking-prose text-muted"
                       >
                         Hardcover
                       </div>
                       <div
-                        class="col-start-3 self-center pb-1 text-right font-sans text-xs leading-3.5 text-nowrap text-subtle"
+                        class="col-start-3 self-center pb-1 text-right font-sans text-sm leading-3.5 text-nowrap text-subtle"
                       >
                         2
                       </div>
@@ -751,12 +747,12 @@
                   <div class="col-span-3 grid grid-cols-subgrid py-3">
                     <div class="col-span-3 grid grid-cols-subgrid">
                       <div
-                        class="pb-1 font-sans text-xs leading-3.5 tracking-prose text-muted"
+                        class="pb-1 font-sans text-sm leading-3.5 tracking-prose text-muted"
                       >
                         Paperback
                       </div>
                       <div
-                        class="col-start-3 self-center pb-1 text-right font-sans text-xs leading-3.5 text-nowrap text-subtle"
+                        class="col-start-3 self-center pb-1 text-right font-sans text-sm leading-3.5 text-nowrap text-subtle"
                       >
                         4
                       </div>
@@ -781,7 +777,7 @@
               class="flex w-full flex-col tablet:flex-row-reverse tablet:justify-between"
             >
               <a
-                class="mx-auto mb-8 w-full max-w-button transform-gpu rounded-md bg-subtle py-5 text-center font-sans text-xs tracking-wide text-default uppercase transition-all hover:scale-105 hover:bg-default hover:text-default hover:drop-shadow-lg tablet:mx-0"
+                class="mx-auto mb-8 w-full max-w-button transform-gpu rounded-md bg-subtle py-5 text-center font-sans text-sm font-normal tracking-wide text-default uppercase transition-all hover:scale-105 hover:bg-default hover:text-default hover:drop-shadow-lg tablet:mx-0"
                 href="#top"
                 >To the top</a
               >
@@ -800,7 +796,7 @@
             </div>
             <div class="justify-between tablet:flex">
               <div class="flex max-w-[640px] flex-col pb-12 tablet:pr-32">
-                <div class="pt-10 font-sans text-sm font-light text-subtle">
+                <div class="pt-10 font-sans font-normal text-subtle">
                   <p
                     class="mb-6 text-pretty first-letter:float-left first-letter:mt-[6px] first-letter:pr-1 first-letter:font-sans first-letter:text-[40px] first-letter:leading-[.8] first-letter:font-bold first-letter:text-default desktop:first-letter:text-[64px]"
                   >
@@ -866,7 +862,7 @@
               <div
                 class="flex w-full max-w-button grow flex-col gap-20 pt-10 pb-20 tablet:basis-button tablet:pr-10"
               >
-                <ol class="flex w-full flex-col gap-y-10 desktop:w-auto">
+                <ol class="flex w-full flex-col gap-y-6 desktop:w-auto">
                   <li
                     class="block w-1/2 text-2xl whitespace-nowrap laptop:w-full"
                   >
@@ -913,7 +909,7 @@
                     >
                     <ol class="mt-4">
                       <li
-                        class="mb-3 ml-1 font-sans text-xs tracking-wider text-muted uppercase last:-mb-1"
+                        class="mb-3 ml-1 font-sans text-xs font-medium tracking-wider text-muted uppercase last:-mb-1"
                       >
                         <a
                           class="relative inline-block origin-left transform-gpu pb-1 transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-accent after:transition-transform hover:text-accent hover:after:scale-x-100"
@@ -933,10 +929,22 @@
             All reviews by Frank Showalter. All images used in accordance with
             the<!-- -->
             <a
-              class="text-inherit underline"
+              class="relative inline-block pr-4 text-inherit underline underline-offset-3 hover:bg-default hover:text-accent"
               href="http://www.copyright.gov/title17/92chap1.html#107"
               rel="nofollow"
-              >Fair Use Law</a
+              >Fair Use Law<svg
+                class="absolute top-0.5 right-0 size-3"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path></svg></a
             >.
           </p>
         </footer>

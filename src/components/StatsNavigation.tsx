@@ -18,7 +18,7 @@ export function StatsNavigation({
       <ul
         className={`
           mx-auto flex scrollbar-hidden max-w-(--breakpoint-desktop) snap-x
-          overflow-x-auto px-container font-sans text-sm font-normal
+          overflow-x-auto px-container font-sans text-base font-semibold
           tracking-wide
           laptop:justify-center
         `}

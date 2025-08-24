@@ -53,9 +53,10 @@ export function OpenGraphImage({
       >
         <div
           style={{
-            color: "#b0b0b0",
-            fontFamily: "ArgentumSans",
-            marginBottom: "24px",
+            color: "#dfdfdf",
+            fontFamily: "Assistant",
+            fontWeight: 700,
+            marginBottom: "16px",
             textTransform: "uppercase",
           }}
         >
@@ -68,6 +69,7 @@ export function OpenGraphImage({
             flexWrap: "wrap",
             fontFamily: "FrankRuhlLibre",
             fontSize: "64px",
+            fontWeight: 800,
             lineHeight: 1,
             textWrap: "balance",
           }}
@@ -100,7 +102,7 @@ export function OpenGraphImage({
             style={{
               backgroundColor: "red",
               color: "white",
-              fontFamily: "ArgentumSans",
+              fontFamily: "Assistant",
               marginTop: "36px",
               padding: "4px",
               textTransform: "uppercase",

@@ -1,14 +1,8 @@
 import type { JSX } from "react";
 export function OpenGraphImage({
   backdrop,
-  blur = false,
-  sectionHead = "Frank's Book Log",
-  title,
 }: {
   backdrop: string;
-  blur?: boolean;
-  sectionHead?: string;
-  title: string;
 }): JSX.Element {
   return (
     <div
@@ -24,7 +18,6 @@ export function OpenGraphImage({
         height={630}
         src={backdrop}
         style={{
-          filter: blur ? "blur(2px)" : "unset",
           objectFit: "cover",
         }}
         width={1200}
@@ -46,17 +39,6 @@ export function OpenGraphImage({
       >
         <div
           style={{
-            color: "#fafafa",
-            fontFamily: "Assistant",
-            fontWeight: 700,
-            marginBottom: "8px",
-            textTransform: "uppercase",
-          }}
-        >
-          {sectionHead}
-        </div>
-        <div
-          style={{
             color: "#fff",
             display: "flex",
             flexWrap: "wrap",
@@ -68,7 +50,18 @@ export function OpenGraphImage({
             textWrap: "balance",
           }}
         >
-          {title}
+          Frank&apos;s Book Log
+        </div>
+        <div
+          style={{
+            color: "#fafafa",
+            fontFamily: "Assistant",
+            fontWeight: 700,
+            marginBottom: "8px",
+            textTransform: "uppercase",
+          }}
+        >
+          Literature is a relative term.
         </div>
       </div>
     </div>

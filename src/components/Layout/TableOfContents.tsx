@@ -8,7 +8,13 @@ type Props = React.HTMLAttributes<HTMLOListElement>;
 
 export function TableOfContents({ className, ...rest }: Props): JSX.Element {
   return (
-    <ol className={className} {...rest}>
+    <ol
+      className={`
+        flex w-full flex-col gap-y-6
+        ${className ?? ""}
+      `}
+      {...rest}
+    >
       {navItems.map((item) => {
         return <MenuItem key={item.target} value={item} />;
       })}
@@ -52,7 +58,8 @@ function SubMenu({ values }: { values: NavItem[] }): false | JSX.Element {
         return (
           <li
             className={`
-              mb-3 ml-1 font-sans text-xs tracking-wider text-muted uppercase
+              mb-3 ml-1 font-sans text-xs font-medium tracking-wider text-muted
+              uppercase
               last:-mb-1
             `}
             key={value.target}

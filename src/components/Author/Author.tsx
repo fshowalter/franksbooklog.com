@@ -146,7 +146,7 @@ function OtherAuthors({ values }: { values: ListItemValue["otherAuthors"] }) {
   }
 
   return (
-    <div className="font-sans text-xs leading-5 text-subtle">
+    <div className="font-serif text-[15px] leading-5">
       (with {toSentenceArray(values.map((value) => value.name))})
     </div>
   );

@@ -63,6 +63,7 @@ export function Review({
         <h1
           className={`
             text-center text-4xl
+            laptop:text-5xl
             desktop:text-6xl
           `}
           data-pagefind-meta="title"

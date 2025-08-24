@@ -71,8 +71,8 @@ export function MostReadAuthors({
                 </div>
                 <div
                   className={`
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
-                    text-nowrap text-subtle
+                    col-start-2 self-center pr-1 pb-1 text-right font-sans
+                    text-sm text-nowrap text-subtle
                   `}
                 >
                   {value.count}
@@ -92,13 +92,13 @@ export function MostReadAuthors({
                 >
                   <summary
                     className={`
-                      cursor-pointer rounded-sm py-1 font-sans text-xs
+                      cursor-pointer rounded-sm py-1 font-sans text-sm
                       tracking-prose text-subtle
                     `}
                   >
                     Details
                   </summary>
-                  <CoverList className="bg-subtle">
+                  <CoverList className="rounded-md bg-subtle">
                     {value.readings.map((reading) => {
                       return (
                         <MostReadAuthorReadingListItem

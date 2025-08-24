@@ -84,14 +84,23 @@ async function getFontData() {
     return fontDataCache;
   }
 
-  const [frankRuhlLibre, argentumSansRegular, argentumSansSemiBold] =
-    await Promise.all([
-      fs.readFile(
-        "./public/fonts/Frank-Ruhl-Libre/Frank-Ruhl-Libre-Regular.ttf",
-      ),
-      fs.readFile("./public/fonts/ArgentumSans/ArgentumSans-Regular.ttf"),
-      fs.readFile("./public/fonts/ArgentumSans/ArgentumSans-SemiBold.ttf"),
-    ]);
+  const [
+    frankRuhlLibre,
+    frankRuhlLibreExtraBold,
+    assistantRegular,
+    assistantSemiBold,
+    assistantBold,
+    assistantExtraBold,
+  ] = await Promise.all([
+    fs.readFile("./public/fonts/Frank-Ruhl-Libre/Frank-Ruhl-Libre-Regular.ttf"),
+    fs.readFile(
+      "./public/fonts/Frank-Ruhl-Libre/Frank-Ruhl-Libre-ExtraBold.ttf",
+    ),
+    fs.readFile("./public/fonts/Assistant/Assistant-Regular.ttf"),
+    fs.readFile("./public/fonts/Assistant/Assistant-SemiBold.ttf"),
+    fs.readFile("./public/fonts/Assistant/Assistant-Bold.ttf"),
+    fs.readFile("./public/fonts/Assistant/Assistant-ExtraBold.ttf"),
+  ]);
 
   fontDataCache = [
     {
@@ -100,14 +109,29 @@ async function getFontData() {
       weight: 400,
     },
     {
-      data: argentumSansRegular.buffer as ArrayBuffer,
-      name: "ArgentumSans",
+      data: frankRuhlLibreExtraBold.buffer as ArrayBuffer,
+      name: "FrankRuhlLibre",
+      weight: 800,
+    },
+    {
+      data: assistantRegular.buffer as ArrayBuffer,
+      name: "Assistant",
       weight: 400,
     },
     {
-      data: argentumSansSemiBold.buffer as ArrayBuffer,
-      name: "ArgentumSans",
+      data: assistantSemiBold.buffer as ArrayBuffer,
+      name: "Assistant",
       weight: 600,
+    },
+    {
+      data: assistantBold.buffer as ArrayBuffer,
+      name: "Assistant",
+      weight: 700,
+    },
+    {
+      data: assistantExtraBold.buffer as ArrayBuffer,
+      name: "Assistant",
+      weight: 800,
     },
   ];
 

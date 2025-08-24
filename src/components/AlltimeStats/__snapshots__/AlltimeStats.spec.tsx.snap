@@ -263,11 +263,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
           >
             <ol
               class="
-            invisible fixed top-0 right-0 flex h-full w-0
-            transform-[translateX(100%)] flex-col items-start gap-y-5
-            overflow-hidden bg-canvas text-left text-default opacity-0
-            duration-200 ease-in-out
-            tablet:max-w-[35vw] tablet:gap-y-10
+        flex w-full flex-col gap-y-6
+        
+            invisible fixed top-0 right-0 h-full w-0
+            transform-[translateX(100%)] overflow-hidden bg-canvas text-left
+            text-default opacity-0 duration-200 ease-in-out
+            tablet:max-w-[35vw]
             laptop:max-w-[25vw]
             [body.nav-open_&]:visible [body.nav-open_&]:bottom-0
             [body.nav-open_&]:z-nav-menu [body.nav-open_&]:h-full
@@ -277,7 +278,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
             [body.nav-open_&]:pl-[12%] [body.nav-open_&]:opacity-100
             [body.nav-open_&]:drop-shadow-2xl [body.nav-open_&]:tablet:px-10
             [body.nav-open_&]:tablet:pt-40 [body.nav-open_&]:laptop:px-20
-          "
+          
+      "
               data-nav-menu="true"
               id="nav-menu"
             >
@@ -380,7 +382,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
                 >
                   <li
                     class="
-              mb-3 ml-1 font-sans text-xs tracking-wider text-muted uppercase
+              mb-3 ml-1 font-sans text-xs font-medium tracking-wider text-muted
+              uppercase
               last:-mb-1
             "
                   >
@@ -445,7 +448,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
         "
           >
             <p
-              class="mb-2"
+              class="mb-4"
             >
               <a
                 class="
@@ -462,9 +465,10 @@ exports[`/readings/stats > matches snapshot 1`] = `
             </p>
             <h1
               class="
-          font-sans
           
-          text-2xl font-bold tracking-widest uppercase
+          text-[2rem] leading-10 font-extrabold
+          [text-shadow:1px_1px_2px_rgba(0,0,0,.25)]
+          tablet:text-4xl
           laptop:text-7xl
         "
               data-pagefind-weight="10"
@@ -473,7 +477,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
             </h1>
             <p
               class="
-        mt-1 text-base
+        mt-1 font-sans text-base
         laptop:my-4 laptop:text-xl
         [text-shadow:1px_1px_2px_black]
         text-center
@@ -489,7 +493,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
           <ul
             class="
           mx-auto flex scrollbar-hidden max-w-(--breakpoint-desktop) snap-x
-          overflow-x-auto px-container font-sans text-sm font-normal
+          overflow-x-auto px-container font-sans text-base font-semibold
           tracking-wide
           laptop:justify-center
         "
@@ -815,7 +819,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
             </div>
              
             <div
-              class="font-sans text-sm leading-6 font-light text-subtle"
+              class="font-sans text-sm leading-6 text-subtle"
             >
               Titles
             </div>
@@ -833,7 +837,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
             </div>
              
             <div
-              class="font-sans text-sm leading-6 font-light text-subtle"
+              class="font-sans text-sm leading-6 text-subtle"
             >
               Books
             </div>
@@ -851,7 +855,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
             </div>
              
             <div
-              class="font-sans text-sm leading-6 font-light text-subtle"
+              class="font-sans text-sm leading-6 text-subtle"
             >
               Reviews
             </div>
@@ -917,8 +921,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
-                    text-nowrap text-subtle
+                    col-start-2 self-center pr-1 pb-1 text-right font-sans
+                    text-sm text-nowrap text-subtle
                   "
                     >
                       26
@@ -938,7 +942,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     >
                       <summary
                         class="
-                      cursor-pointer rounded-sm py-1 font-sans text-xs
+                      cursor-pointer rounded-sm py-1 font-sans text-sm
                       tracking-prose text-subtle
                     "
                       >
@@ -956,7 +960,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
           @min-[calc((250px_*_3)_+_1px)]/cover-list:[--cover-list-item-width:25%]
           @min-[calc((250px_*_4)_+_1px)]/cover-list:[--cover-list-item-width:20%]
           @min-[calc((250px_*_5)_+_1px)]/cover-list:[--cover-list-item-width:16.66%]
-          bg-subtle
+          rounded-md bg-subtle
         "
                         >
                           <li
@@ -1036,16 +1040,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 The Cellar
                               </a>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Feb 24, 2014
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Paperback
                               </div>
@@ -1123,16 +1123,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 Your Secret Admirer
                               </span>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Mar 12, 2014
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Paperback
                               </div>
@@ -1215,16 +1211,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 The Woods Are Dark
                               </a>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Mar 18, 2014
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Paperback
                               </div>
@@ -1302,16 +1294,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 Nightmare Lake
                               </span>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Apr 05, 2014
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Paperback
                               </div>
@@ -1389,16 +1377,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 The Lawmen
                               </span>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Apr 11, 2014
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Paperback
                               </div>
@@ -1481,16 +1465,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 Out Are the Lights
                               </a>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Apr 28, 2014
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Paperback
                               </div>
@@ -1568,16 +1548,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 Night Show
                               </span>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 May 21, 2014
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Paperback
                               </div>
@@ -1655,16 +1631,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 Shootout at Joe's
                               </span>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Jun 09, 2014
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Paperback
                               </div>
@@ -1742,16 +1714,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 Dawson's City
                               </span>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Jun 09, 2014
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Paperback
                               </div>
@@ -1829,16 +1797,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 Allhallow's Eve
                               </span>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Jun 09, 2014
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Paperback
                               </div>
@@ -1921,16 +1885,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 Beware!
                               </a>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Jun 27, 2014
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Paperback
                               </div>
@@ -2013,16 +1973,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 The Last Hand
                               </a>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Jul 13, 2014
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Paperback
                               </div>
@@ -2100,16 +2056,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 The Beast House
                               </span>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Jul 22, 2014
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Paperback
                               </div>
@@ -2192,16 +2144,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 The Intruder
                               </a>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Jul 23, 2014
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Paperback
                               </div>
@@ -2284,16 +2232,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 Tread Softly
                               </a>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Sep 21, 2014
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Paperback
                               </div>
@@ -2376,16 +2320,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 The Lonely One
                               </a>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Oct 28, 2014
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Paperback
                               </div>
@@ -2463,16 +2403,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 Live Bait
                               </span>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Nov 02, 2014
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Paperback
                               </div>
@@ -2555,16 +2491,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 The Lonely One
                               </a>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Jan 28, 2015
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Paperback
                               </div>
@@ -2642,16 +2574,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 Flesh
                               </span>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Oct 14, 2017
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Ebook
                               </div>
@@ -2729,16 +2657,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 Midnight's Lair
                               </span>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Jan 11, 2018
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Ebook
                               </div>
@@ -2821,16 +2745,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 The Cellar
                               </a>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Mar 16, 2022
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Ebook
                               </div>
@@ -2913,16 +2833,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 Desert Pickup
                               </a>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Apr 03, 2022
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Ebook
                               </div>
@@ -3005,16 +2921,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 The Woods Are Dark
                               </a>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Sep 11, 2022
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Audible
                               </div>
@@ -3097,16 +3009,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 Out Are the Lights
                               </a>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Oct 11, 2022
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Ebook
                               </div>
@@ -3189,16 +3097,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 Roadside Pickup
                               </a>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Jan 21, 2023
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Ebook
                               </div>
@@ -3281,16 +3185,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 The Lonely One
                               </a>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Feb 15, 2025
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Paperback
                               </div>
@@ -3333,8 +3233,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
-                    text-nowrap text-subtle
+                    col-start-2 self-center pr-1 pb-1 text-right font-sans
+                    text-sm text-nowrap text-subtle
                   "
                     >
                       21
@@ -3354,7 +3254,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     >
                       <summary
                         class="
-                      cursor-pointer rounded-sm py-1 font-sans text-xs
+                      cursor-pointer rounded-sm py-1 font-sans text-sm
                       tracking-prose text-subtle
                     "
                       >
@@ -3372,7 +3272,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
           @min-[calc((250px_*_3)_+_1px)]/cover-list:[--cover-list-item-width:25%]
           @min-[calc((250px_*_4)_+_1px)]/cover-list:[--cover-list-item-width:20%]
           @min-[calc((250px_*_5)_+_1px)]/cover-list:[--cover-list-item-width:16.66%]
-          bg-subtle
+          rounded-md bg-subtle
         "
                         >
                           <li
@@ -3452,16 +3352,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 The Shining
                               </a>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Nov 06, 2011
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Paperback
                               </div>
@@ -3544,16 +3440,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 Rage
                               </a>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 May 13, 2012
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Paperback
                               </div>
@@ -3636,16 +3528,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 Night Shift
                               </a>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 May 14, 2012
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Paperback
                               </div>
@@ -3728,16 +3616,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 The Stand
                               </a>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Mar 02, 2014
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Paperback
                               </div>
@@ -3820,16 +3704,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 The Long Walk
                               </a>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Mar 09, 2014
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Paperback
                               </div>
@@ -3907,16 +3787,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 The Dead Zone
                               </span>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Apr 04, 2014
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Paperback
                               </div>
@@ -3994,16 +3870,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 Firestarter
                               </span>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Apr 22, 2014
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Ebook
                               </div>
@@ -4081,16 +3953,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 Roadwork
                               </span>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 May 11, 2014
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Paperback
                               </div>
@@ -4168,16 +4036,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 Danse Macabre
                               </span>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Jun 04, 2014
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Ebook
                               </div>
@@ -4260,16 +4124,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 Cujo
                               </a>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Jun 17, 2014
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Ebook
                               </div>
@@ -4347,16 +4207,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 The Running Man
                               </span>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Jul 10, 2014
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Paperback
                               </div>
@@ -4434,16 +4290,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 The Gunslinger
                               </span>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Aug 05, 2014
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Paperback
                               </div>
@@ -4521,16 +4373,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 Different Seasons
                               </span>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Oct 27, 2014
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Paperback
                               </div>
@@ -4608,16 +4456,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 Christine
                               </span>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Jan 14, 2016
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Paperback
                               </div>
@@ -4695,16 +4539,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 Pet Sematary
                               </span>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Dec 18, 2017
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Ebook
                               </div>
@@ -4782,16 +4622,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 The Gunslinger
                               </span>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Mar 06, 2019
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Ebook
                               </div>
@@ -4874,16 +4710,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 On Writing
                               </a>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Mar 21, 2022
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Ebook
                               </div>
@@ -4966,16 +4798,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 Carrie
                               </a>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Sep 19, 2022
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Ebook
                               </div>
@@ -5058,16 +4886,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 'Salem's Lot
                               </a>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Oct 14, 2022
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Audible
                               </div>
@@ -5150,16 +4974,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 The Shining
                               </a>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Oct 29, 2022
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Audible
                               </div>
@@ -5242,16 +5062,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 Doctor Sleep
                               </a>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Jan 14, 2023
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Ebook
                               </div>
@@ -5294,8 +5110,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
-                    text-nowrap text-subtle
+                    col-start-2 self-center pr-1 pb-1 text-right font-sans
+                    text-sm text-nowrap text-subtle
                   "
                     >
                       13
@@ -5315,7 +5131,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     >
                       <summary
                         class="
-                      cursor-pointer rounded-sm py-1 font-sans text-xs
+                      cursor-pointer rounded-sm py-1 font-sans text-sm
                       tracking-prose text-subtle
                     "
                       >
@@ -5333,7 +5149,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
           @min-[calc((250px_*_3)_+_1px)]/cover-list:[--cover-list-item-width:25%]
           @min-[calc((250px_*_4)_+_1px)]/cover-list:[--cover-list-item-width:20%]
           @min-[calc((250px_*_5)_+_1px)]/cover-list:[--cover-list-item-width:16.66%]
-          bg-subtle
+          rounded-md bg-subtle
         "
                         >
                           <li
@@ -5413,16 +5229,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 Soft Construction of a Sunset
                               </a>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Apr 17, 2022
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Ebook
                               </div>
@@ -5505,16 +5317,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 Altar
                               </a>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Apr 18, 2022
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Ebook
                               </div>
@@ -5597,16 +5405,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 The Horse Thief
                               </a>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Apr 19, 2022
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Ebook
                               </div>
@@ -5689,16 +5493,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 Coffin
                               </a>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Apr 20, 2022
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Ebook
                               </div>
@@ -5781,16 +5581,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 The Baby Farmer
                               </a>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Apr 21, 2022
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Ebook
                               </div>
@@ -5873,16 +5669,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 Surfer Girl
                               </a>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Apr 22, 2022
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Ebook
                               </div>
@@ -5965,16 +5757,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 Mother
                               </a>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Apr 23, 2022
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Ebook
                               </div>
@@ -6057,16 +5845,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 Fail-Safe
                               </a>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Apr 30, 2022
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Ebook
                               </div>
@@ -6149,16 +5933,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 Mandala
                               </a>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 May 07, 2022
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Ebook
                               </div>
@@ -6241,16 +6021,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 Behold the Void
                               </a>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 May 07, 2022
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Ebook
                               </div>
@@ -6333,16 +6109,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 Sacculina
                               </a>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Oct 09, 2023
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Ebook
                               </div>
@@ -6425,16 +6197,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 Don't Let Them Get You Down
                               </a>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Oct 29, 2023
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Ebook
                               </div>
@@ -6517,16 +6285,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 Gothic
                               </a>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Jun 30, 2024
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Ebook
                               </div>
@@ -6569,8 +6333,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
-                    text-nowrap text-subtle
+                    col-start-2 self-center pr-1 pb-1 text-right font-sans
+                    text-sm text-nowrap text-subtle
                   "
                     >
                       3
@@ -6590,7 +6354,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     >
                       <summary
                         class="
-                      cursor-pointer rounded-sm py-1 font-sans text-xs
+                      cursor-pointer rounded-sm py-1 font-sans text-sm
                       tracking-prose text-subtle
                     "
                       >
@@ -6608,7 +6372,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
           @min-[calc((250px_*_3)_+_1px)]/cover-list:[--cover-list-item-width:25%]
           @min-[calc((250px_*_4)_+_1px)]/cover-list:[--cover-list-item-width:20%]
           @min-[calc((250px_*_5)_+_1px)]/cover-list:[--cover-list-item-width:16.66%]
-          bg-subtle
+          rounded-md bg-subtle
         "
                         >
                           <li
@@ -6683,16 +6447,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 Frank
                               </span>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Jan 25, 2015
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Paperback
                               </div>
@@ -6770,16 +6530,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 Sinatra
                               </span>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Dec 30, 2015
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Hardcover
                               </div>
@@ -6857,16 +6613,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 LIFE The Rat Pack
                               </span>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Jan 03, 2016
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Hardcover
                               </div>
@@ -6909,8 +6661,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
-                    text-nowrap text-subtle
+                    col-start-2 self-center pr-1 pb-1 text-right font-sans
+                    text-sm text-nowrap text-subtle
                   "
                     >
                       3
@@ -6930,7 +6682,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     >
                       <summary
                         class="
-                      cursor-pointer rounded-sm py-1 font-sans text-xs
+                      cursor-pointer rounded-sm py-1 font-sans text-sm
                       tracking-prose text-subtle
                     "
                       >
@@ -6948,7 +6700,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
           @min-[calc((250px_*_3)_+_1px)]/cover-list:[--cover-list-item-width:25%]
           @min-[calc((250px_*_4)_+_1px)]/cover-list:[--cover-list-item-width:20%]
           @min-[calc((250px_*_5)_+_1px)]/cover-list:[--cover-list-item-width:16.66%]
-          bg-subtle
+          rounded-md bg-subtle
         "
                         >
                           <li
@@ -7028,16 +6780,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 Record Play Pause
                               </a>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Nov 11, 2023
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Audible
                               </div>
@@ -7120,16 +6868,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 Fast Forward
                               </a>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Dec 09, 2023
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Audible
                               </div>
@@ -7212,16 +6956,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 Fast Forward
                               </a>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Jul 01, 2024
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Audible
                               </div>
@@ -7264,8 +7004,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
-                    text-nowrap text-subtle
+                    col-start-2 self-center pr-1 pb-1 text-right font-sans
+                    text-sm text-nowrap text-subtle
                   "
                     >
                       3
@@ -7285,7 +7025,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     >
                       <summary
                         class="
-                      cursor-pointer rounded-sm py-1 font-sans text-xs
+                      cursor-pointer rounded-sm py-1 font-sans text-sm
                       tracking-prose text-subtle
                     "
                       >
@@ -7303,7 +7043,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
           @min-[calc((250px_*_3)_+_1px)]/cover-list:[--cover-list-item-width:25%]
           @min-[calc((250px_*_4)_+_1px)]/cover-list:[--cover-list-item-width:20%]
           @min-[calc((250px_*_5)_+_1px)]/cover-list:[--cover-list-item-width:16.66%]
-          bg-subtle
+          rounded-md bg-subtle
         "
                         >
                           <li
@@ -7383,16 +7123,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 Casino Royale
                               </a>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Jun 14, 2022
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Ebook
                               </div>
@@ -7475,16 +7211,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 Live and Let Die
                               </a>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Jun 30, 2022
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Ebook
                               </div>
@@ -7567,16 +7299,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 Moonraker
                               </a>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Oct 16, 2022
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Audible
                               </div>
@@ -7619,8 +7347,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
-                    text-nowrap text-subtle
+                    col-start-2 self-center pr-1 pb-1 text-right font-sans
+                    text-sm text-nowrap text-subtle
                   "
                     >
                       2
@@ -7640,7 +7368,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     >
                       <summary
                         class="
-                      cursor-pointer rounded-sm py-1 font-sans text-xs
+                      cursor-pointer rounded-sm py-1 font-sans text-sm
                       tracking-prose text-subtle
                     "
                       >
@@ -7658,7 +7386,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
           @min-[calc((250px_*_3)_+_1px)]/cover-list:[--cover-list-item-width:25%]
           @min-[calc((250px_*_4)_+_1px)]/cover-list:[--cover-list-item-width:20%]
           @min-[calc((250px_*_5)_+_1px)]/cover-list:[--cover-list-item-width:16.66%]
-          bg-subtle
+          rounded-md bg-subtle
         "
                         >
                           <li
@@ -7738,16 +7466,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 Fight Club
                               </a>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Jul 16, 2022
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Audible
                               </div>
@@ -7830,16 +7554,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 Consider This
                               </a>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Sep 22, 2022
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Audible
                               </div>
@@ -7882,8 +7602,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
-                    text-nowrap text-subtle
+                    col-start-2 self-center pr-1 pb-1 text-right font-sans
+                    text-sm text-nowrap text-subtle
                   "
                     >
                       2
@@ -7903,7 +7623,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     >
                       <summary
                         class="
-                      cursor-pointer rounded-sm py-1 font-sans text-xs
+                      cursor-pointer rounded-sm py-1 font-sans text-sm
                       tracking-prose text-subtle
                     "
                       >
@@ -7921,7 +7641,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
           @min-[calc((250px_*_3)_+_1px)]/cover-list:[--cover-list-item-width:25%]
           @min-[calc((250px_*_4)_+_1px)]/cover-list:[--cover-list-item-width:20%]
           @min-[calc((250px_*_5)_+_1px)]/cover-list:[--cover-list-item-width:16.66%]
-          bg-subtle
+          rounded-md bg-subtle
         "
                         >
                           <li
@@ -8001,16 +7721,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 The Big Sleep
                               </a>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Feb 12, 2016
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Paperback
                               </div>
@@ -8093,16 +7809,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 The Big Sleep
                               </a>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Sep 24, 2022
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Audible
                               </div>
@@ -8145,8 +7857,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
-                    text-nowrap text-subtle
+                    col-start-2 self-center pr-1 pb-1 text-right font-sans
+                    text-sm text-nowrap text-subtle
                   "
                     >
                       2
@@ -8166,7 +7878,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     >
                       <summary
                         class="
-                      cursor-pointer rounded-sm py-1 font-sans text-xs
+                      cursor-pointer rounded-sm py-1 font-sans text-sm
                       tracking-prose text-subtle
                     "
                       >
@@ -8184,7 +7896,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
           @min-[calc((250px_*_3)_+_1px)]/cover-list:[--cover-list-item-width:25%]
           @min-[calc((250px_*_4)_+_1px)]/cover-list:[--cover-list-item-width:20%]
           @min-[calc((250px_*_5)_+_1px)]/cover-list:[--cover-list-item-width:16.66%]
-          bg-subtle
+          rounded-md bg-subtle
         "
                         >
                           <li
@@ -8264,16 +7976,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 Less Than Zero
                               </a>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Apr 02, 2022
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Ebook
                               </div>
@@ -8356,16 +8064,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 The Rules of Attraction
                               </a>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Jul 14, 2022
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Ebook
                               </div>
@@ -8408,8 +8112,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     </div>
                     <div
                       class="
-                    col-start-2 self-center pb-1 text-right font-sans text-xs
-                    text-nowrap text-subtle
+                    col-start-2 self-center pr-1 pb-1 text-right font-sans
+                    text-sm text-nowrap text-subtle
                   "
                     >
                       2
@@ -8429,7 +8133,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
                     >
                       <summary
                         class="
-                      cursor-pointer rounded-sm py-1 font-sans text-xs
+                      cursor-pointer rounded-sm py-1 font-sans text-sm
                       tracking-prose text-subtle
                     "
                       >
@@ -8447,7 +8151,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
           @min-[calc((250px_*_3)_+_1px)]/cover-list:[--cover-list-item-width:25%]
           @min-[calc((250px_*_4)_+_1px)]/cover-list:[--cover-list-item-width:20%]
           @min-[calc((250px_*_5)_+_1px)]/cover-list:[--cover-list-item-width:16.66%]
-          bg-subtle
+          rounded-md bg-subtle
         "
                         >
                           <li
@@ -8522,16 +8226,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 The Great Movies
                               </span>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Dec 30, 2014
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Paperback
                               </div>
@@ -8609,16 +8309,12 @@ exports[`/readings/stats > matches snapshot 1`] = `
                                 Life Itself
                               </span>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Nov 08, 2017
                               </div>
                               <div
-                                class="
-        font-sans text-xs leading-4 font-light tracking-prose text-subtle
-      "
+                                class="font-sans text-xs leading-4 tracking-prose text-subtle"
                               >
                                 Ebook
                               </div>
@@ -8663,14 +8359,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-                    pb-1 font-sans text-xs leading-3.5 tracking-prose text-muted
+                    pb-1 font-sans text-sm leading-3.5 tracking-prose text-muted
                   "
                     >
                       1890s
                     </div>
                     <div
                       class="
-                    col-start-3 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-sm
                     leading-3.5 text-nowrap text-subtle
                   "
                     >
@@ -8699,14 +8395,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-                    pb-1 font-sans text-xs leading-3.5 tracking-prose text-muted
+                    pb-1 font-sans text-sm leading-3.5 tracking-prose text-muted
                   "
                     >
                       1930s
                     </div>
                     <div
                       class="
-                    col-start-3 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-sm
                     leading-3.5 text-nowrap text-subtle
                   "
                     >
@@ -8735,14 +8431,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-                    pb-1 font-sans text-xs leading-3.5 tracking-prose text-muted
+                    pb-1 font-sans text-sm leading-3.5 tracking-prose text-muted
                   "
                     >
                       1940s
                     </div>
                     <div
                       class="
-                    col-start-3 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-sm
                     leading-3.5 text-nowrap text-subtle
                   "
                     >
@@ -8771,14 +8467,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-                    pb-1 font-sans text-xs leading-3.5 tracking-prose text-muted
+                    pb-1 font-sans text-sm leading-3.5 tracking-prose text-muted
                   "
                     >
                       1950s
                     </div>
                     <div
                       class="
-                    col-start-3 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-sm
                     leading-3.5 text-nowrap text-subtle
                   "
                     >
@@ -8807,14 +8503,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-                    pb-1 font-sans text-xs leading-3.5 tracking-prose text-muted
+                    pb-1 font-sans text-sm leading-3.5 tracking-prose text-muted
                   "
                     >
                       1970s
                     </div>
                     <div
                       class="
-                    col-start-3 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-sm
                     leading-3.5 text-nowrap text-subtle
                   "
                     >
@@ -8843,14 +8539,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-                    pb-1 font-sans text-xs leading-3.5 tracking-prose text-muted
+                    pb-1 font-sans text-sm leading-3.5 tracking-prose text-muted
                   "
                     >
                       1980s
                     </div>
                     <div
                       class="
-                    col-start-3 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-sm
                     leading-3.5 text-nowrap text-subtle
                   "
                     >
@@ -8879,14 +8575,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-                    pb-1 font-sans text-xs leading-3.5 tracking-prose text-muted
+                    pb-1 font-sans text-sm leading-3.5 tracking-prose text-muted
                   "
                     >
                       1990s
                     </div>
                     <div
                       class="
-                    col-start-3 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-sm
                     leading-3.5 text-nowrap text-subtle
                   "
                     >
@@ -8915,14 +8611,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-                    pb-1 font-sans text-xs leading-3.5 tracking-prose text-muted
+                    pb-1 font-sans text-sm leading-3.5 tracking-prose text-muted
                   "
                     >
                       2000s
                     </div>
                     <div
                       class="
-                    col-start-3 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-sm
                     leading-3.5 text-nowrap text-subtle
                   "
                     >
@@ -8951,14 +8647,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-                    pb-1 font-sans text-xs leading-3.5 tracking-prose text-muted
+                    pb-1 font-sans text-sm leading-3.5 tracking-prose text-muted
                   "
                     >
                       2010s
                     </div>
                     <div
                       class="
-                    col-start-3 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-sm
                     leading-3.5 text-nowrap text-subtle
                   "
                     >
@@ -8987,14 +8683,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-                    pb-1 font-sans text-xs leading-3.5 tracking-prose text-muted
+                    pb-1 font-sans text-sm leading-3.5 tracking-prose text-muted
                   "
                     >
                       2020s
                     </div>
                     <div
                       class="
-                    col-start-3 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-sm
                     leading-3.5 text-nowrap text-subtle
                   "
                     >
@@ -9042,14 +8738,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-                    pb-1 font-sans text-xs leading-3.5 tracking-prose text-muted
+                    pb-1 font-sans text-sm leading-3.5 tracking-prose text-muted
                   "
                     >
                       Anthology
                     </div>
                     <div
                       class="
-                    col-start-3 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-sm
                     leading-3.5 text-nowrap text-subtle
                   "
                     >
@@ -9078,14 +8774,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-                    pb-1 font-sans text-xs leading-3.5 tracking-prose text-muted
+                    pb-1 font-sans text-sm leading-3.5 tracking-prose text-muted
                   "
                     >
                       Collection
                     </div>
                     <div
                       class="
-                    col-start-3 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-sm
                     leading-3.5 text-nowrap text-subtle
                   "
                     >
@@ -9114,14 +8810,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-                    pb-1 font-sans text-xs leading-3.5 tracking-prose text-muted
+                    pb-1 font-sans text-sm leading-3.5 tracking-prose text-muted
                   "
                     >
                       Nonfiction
                     </div>
                     <div
                       class="
-                    col-start-3 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-sm
                     leading-3.5 text-nowrap text-subtle
                   "
                     >
@@ -9150,14 +8846,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-                    pb-1 font-sans text-xs leading-3.5 tracking-prose text-muted
+                    pb-1 font-sans text-sm leading-3.5 tracking-prose text-muted
                   "
                     >
                       Novel
                     </div>
                     <div
                       class="
-                    col-start-3 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-sm
                     leading-3.5 text-nowrap text-subtle
                   "
                     >
@@ -9186,14 +8882,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-                    pb-1 font-sans text-xs leading-3.5 tracking-prose text-muted
+                    pb-1 font-sans text-sm leading-3.5 tracking-prose text-muted
                   "
                     >
                       Novella
                     </div>
                     <div
                       class="
-                    col-start-3 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-sm
                     leading-3.5 text-nowrap text-subtle
                   "
                     >
@@ -9222,14 +8918,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-                    pb-1 font-sans text-xs leading-3.5 tracking-prose text-muted
+                    pb-1 font-sans text-sm leading-3.5 tracking-prose text-muted
                   "
                     >
                       Short Story
                     </div>
                     <div
                       class="
-                    col-start-3 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-sm
                     leading-3.5 text-nowrap text-subtle
                   "
                     >
@@ -9277,14 +8973,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-                    pb-1 font-sans text-xs leading-3.5 tracking-prose text-muted
+                    pb-1 font-sans text-sm leading-3.5 tracking-prose text-muted
                   "
                     >
                       Audible
                     </div>
                     <div
                       class="
-                    col-start-3 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-sm
                     leading-3.5 text-nowrap text-subtle
                   "
                     >
@@ -9313,14 +9009,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-                    pb-1 font-sans text-xs leading-3.5 tracking-prose text-muted
+                    pb-1 font-sans text-sm leading-3.5 tracking-prose text-muted
                   "
                     >
                       Hardcover
                     </div>
                     <div
                       class="
-                    col-start-3 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-sm
                     leading-3.5 text-nowrap text-subtle
                   "
                     >
@@ -9349,14 +9045,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-                    pb-1 font-sans text-xs leading-3.5 tracking-prose text-muted
+                    pb-1 font-sans text-sm leading-3.5 tracking-prose text-muted
                   "
                     >
                       Kindle
                     </div>
                     <div
                       class="
-                    col-start-3 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-sm
                     leading-3.5 text-nowrap text-subtle
                   "
                     >
@@ -9385,14 +9081,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-                    pb-1 font-sans text-xs leading-3.5 tracking-prose text-muted
+                    pb-1 font-sans text-sm leading-3.5 tracking-prose text-muted
                   "
                     >
                       Paperback
                     </div>
                     <div
                       class="
-                    col-start-3 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-sm
                     leading-3.5 text-nowrap text-subtle
                   "
                     >
@@ -9444,14 +9140,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-                    pb-1 font-sans text-xs leading-3.5 tracking-prose text-muted
+                    pb-1 font-sans text-sm leading-3.5 tracking-prose text-muted
                   "
                     >
                       A+
                     </div>
                     <div
                       class="
-                    col-start-3 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-sm
                     leading-3.5 text-nowrap text-subtle
                   "
                     >
@@ -9480,14 +9176,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-                    pb-1 font-sans text-xs leading-3.5 tracking-prose text-muted
+                    pb-1 font-sans text-sm leading-3.5 tracking-prose text-muted
                   "
                     >
                       A
                     </div>
                     <div
                       class="
-                    col-start-3 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-sm
                     leading-3.5 text-nowrap text-subtle
                   "
                     >
@@ -9516,14 +9212,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-                    pb-1 font-sans text-xs leading-3.5 tracking-prose text-muted
+                    pb-1 font-sans text-sm leading-3.5 tracking-prose text-muted
                   "
                     >
                       A-
                     </div>
                     <div
                       class="
-                    col-start-3 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-sm
                     leading-3.5 text-nowrap text-subtle
                   "
                     >
@@ -9552,14 +9248,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-                    pb-1 font-sans text-xs leading-3.5 tracking-prose text-muted
+                    pb-1 font-sans text-sm leading-3.5 tracking-prose text-muted
                   "
                     >
                       B+
                     </div>
                     <div
                       class="
-                    col-start-3 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-sm
                     leading-3.5 text-nowrap text-subtle
                   "
                     >
@@ -9588,14 +9284,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-                    pb-1 font-sans text-xs leading-3.5 tracking-prose text-muted
+                    pb-1 font-sans text-sm leading-3.5 tracking-prose text-muted
                   "
                     >
                       B
                     </div>
                     <div
                       class="
-                    col-start-3 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-sm
                     leading-3.5 text-nowrap text-subtle
                   "
                     >
@@ -9624,14 +9320,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-                    pb-1 font-sans text-xs leading-3.5 tracking-prose text-muted
+                    pb-1 font-sans text-sm leading-3.5 tracking-prose text-muted
                   "
                     >
                       B-
                     </div>
                     <div
                       class="
-                    col-start-3 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-sm
                     leading-3.5 text-nowrap text-subtle
                   "
                     >
@@ -9660,14 +9356,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-                    pb-1 font-sans text-xs leading-3.5 tracking-prose text-muted
+                    pb-1 font-sans text-sm leading-3.5 tracking-prose text-muted
                   "
                     >
                       C+
                     </div>
                     <div
                       class="
-                    col-start-3 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-sm
                     leading-3.5 text-nowrap text-subtle
                   "
                     >
@@ -9696,14 +9392,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-                    pb-1 font-sans text-xs leading-3.5 tracking-prose text-muted
+                    pb-1 font-sans text-sm leading-3.5 tracking-prose text-muted
                   "
                     >
                       C
                     </div>
                     <div
                       class="
-                    col-start-3 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-sm
                     leading-3.5 text-nowrap text-subtle
                   "
                     >
@@ -9732,14 +9428,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-                    pb-1 font-sans text-xs leading-3.5 tracking-prose text-muted
+                    pb-1 font-sans text-sm leading-3.5 tracking-prose text-muted
                   "
                     >
                       C-
                     </div>
                     <div
                       class="
-                    col-start-3 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-sm
                     leading-3.5 text-nowrap text-subtle
                   "
                     >
@@ -9768,14 +9464,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-                    pb-1 font-sans text-xs leading-3.5 tracking-prose text-muted
+                    pb-1 font-sans text-sm leading-3.5 tracking-prose text-muted
                   "
                     >
                       D+
                     </div>
                     <div
                       class="
-                    col-start-3 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-sm
                     leading-3.5 text-nowrap text-subtle
                   "
                     >
@@ -9804,14 +9500,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-                    pb-1 font-sans text-xs leading-3.5 tracking-prose text-muted
+                    pb-1 font-sans text-sm leading-3.5 tracking-prose text-muted
                   "
                     >
                       D
                     </div>
                     <div
                       class="
-                    col-start-3 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-sm
                     leading-3.5 text-nowrap text-subtle
                   "
                     >
@@ -9840,14 +9536,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-                    pb-1 font-sans text-xs leading-3.5 tracking-prose text-muted
+                    pb-1 font-sans text-sm leading-3.5 tracking-prose text-muted
                   "
                     >
                       F
                     </div>
                     <div
                       class="
-                    col-start-3 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-sm
                     leading-3.5 text-nowrap text-subtle
                   "
                     >
@@ -9876,14 +9572,14 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <div
                       class="
-                    pb-1 font-sans text-xs leading-3.5 tracking-prose text-muted
+                    pb-1 font-sans text-sm leading-3.5 tracking-prose text-muted
                   "
                     >
                       Abandoned
                     </div>
                     <div
                       class="
-                    col-start-3 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-sm
                     leading-3.5 text-nowrap text-subtle
                   "
                     >
@@ -9924,8 +9620,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
             <a
               class="
               mx-auto mb-8 w-full max-w-button transform-gpu rounded-md
-              bg-subtle py-5 text-center font-sans text-xs tracking-wide
-              text-default uppercase transition-all
+              bg-subtle py-5 text-center font-sans text-sm font-normal
+              tracking-wide text-default uppercase transition-all
               hover:scale-105 hover:bg-default hover:text-default
               hover:drop-shadow-lg
               tablet:mx-0
@@ -9973,7 +9669,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
             "
             >
               <div
-                class="pt-10 font-sans text-sm font-light text-subtle"
+                class="pt-10 font-sans font-normal text-subtle"
               >
                 <p
                   class="
@@ -10076,9 +9772,9 @@ exports[`/readings/stats > matches snapshot 1`] = `
             >
               <ol
                 class="
-                flex w-full flex-col gap-y-10
-                desktop:w-auto
-              "
+        flex w-full flex-col gap-y-6
+        desktop:w-auto
+      "
               >
                 <li
                   class="
@@ -10179,7 +9875,8 @@ exports[`/readings/stats > matches snapshot 1`] = `
                   >
                     <li
                       class="
-              mb-3 ml-1 font-sans text-xs tracking-wider text-muted uppercase
+              mb-3 ml-1 font-sans text-xs font-medium tracking-wider text-muted
+              uppercase
               last:-mb-1
             "
                     >
@@ -10211,11 +9908,28 @@ exports[`/readings/stats > matches snapshot 1`] = `
         >
           All reviews by Frank Showalter. All images used in accordance with the 
           <a
-            class="text-inherit underline"
+            class="
+            relative inline-block pr-4 text-inherit underline underline-offset-3
+            hover:bg-default hover:text-accent
+          "
             href="http://www.copyright.gov/title17/92chap1.html#107"
             rel="nofollow"
           >
             Fair Use Law
+            <svg
+              class="absolute top-0.5 right-0 size-3"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
           </a>
           .
         </p>

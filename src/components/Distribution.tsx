@@ -37,14 +37,14 @@ export function Distribution({
               <div className="col-span-3 grid grid-cols-subgrid">
                 <div
                   className={`
-                    pb-1 font-sans text-xs leading-3.5 tracking-prose text-muted
+                    pb-1 font-sans text-sm leading-3.5 tracking-prose text-muted
                   `}
                 >
                   {value.name}
                 </div>
                 <div
                   className={`
-                    col-start-3 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-sm
                     leading-3.5 text-nowrap text-subtle
                   `}
                 >

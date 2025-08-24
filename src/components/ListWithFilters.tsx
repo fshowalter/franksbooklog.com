@@ -38,8 +38,8 @@ export function ListHeaderButton({
   return (
     <div
       className={`
-        flex items-start gap-x-4 bg-default px-4 text-nowrap text-accent
-        uppercase
+        flex items-start gap-x-4 bg-default px-4 font-sans text-sm font-bold
+        text-nowrap text-accent uppercase
       `}
     >
       <a
@@ -300,9 +300,8 @@ export function ListWithFilters<T extends string>({
               >
                 <legend
                   className={`
-                    block w-full pt-10 pb-8 font-sans text-lg text-xxs
-                    font-semibold tracking-wide text-subtle uppercase
-                    shadow-bottom
+                    block w-full pt-10 pb-8 font-sans text-sm font-bold
+                    tracking-wide text-subtle uppercase shadow-bottom
                   `}
                 >
                   Filter
@@ -344,8 +343,8 @@ export function ListWithFilters<T extends string>({
                     className={`
                       flex flex-1 transform-gpu cursor-pointer items-center
                       justify-center gap-x-4 rounded-sm bg-footer px-4 py-3
-                      font-sans text-xs text-nowrap text-inverse uppercase
-                      transition-transform
+                      font-sans text-xs font-bold tracking-wide text-nowrap
+                      text-inverse uppercase transition-transform
                       hover:scale-105 hover:drop-shadow-md
                     `}
                     onClick={() => {
@@ -403,10 +402,13 @@ function ListHeader<T extends string>({
       `}
     >
       <span className={`text-nowrap`}>
-        <span className={`font-semibold text-default`}>
+        <span className={`text-sm font-bold text-default`}>
           {totalCount.toLocaleString()}
         </span>
-        <span className="text-xxs leading-none tracking-wide"> Results</span>
+        <span className="text-xs leading-none font-medium tracking-wide">
+          {" "}
+          Results
+        </span>
       </span>
       <div className={``}>{listHeaderButtons && listHeaderButtons}</div>
       <div
@@ -418,7 +420,7 @@ function ListHeader<T extends string>({
       >
         <label
           className={`
-            flex items-baseline gap-x-4 text-xxs font-semibold tracking-wide
+            flex items-baseline gap-x-4 text-xs font-bold tracking-wide
             text-subtle
           `}
         >
@@ -443,7 +445,7 @@ function ListHeader<T extends string>({
         className={`
           col-start-4 row-start-1 flex transform-gpu cursor-pointer items-center
           justify-center gap-x-4 rounded-sm bg-canvas px-4 py-2 font-sans
-          text-xs font-medium text-nowrap text-muted uppercase shadow-all
+          text-xs font-bold text-nowrap text-muted uppercase shadow-all
           transition-transform
           hover:scale-110 hover:drop-shadow-md
           tablet:col-start-5 tablet:w-20

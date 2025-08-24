@@ -124,7 +124,7 @@ export function ReviewCardWithExcerpt({
           {value.reviewDate && (
             <div
               className={`
-                mb-1 font-sans text-xxs leading-4 font-light tracking-wider
+                mb-1 font-sans text-xs leading-4 font-normal tracking-wider
                 text-subtle uppercase
                 laptop:tracking-wide
               `}
@@ -152,7 +152,7 @@ export function ReviewCardWithExcerpt({
           </div>
           <div
             className={`
-              font-sans text-xs leading-4 font-light tracking-prose text-subtle
+              font-sans text-sm leading-4 font-normal tracking-prose text-subtle
             `}
           >
             {value.workYear} | {value.kind}

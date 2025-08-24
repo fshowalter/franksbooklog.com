@@ -183,7 +183,7 @@
             </button>
             <nav aria-label="Main navigation">
               <ol
-                class="invisible fixed top-0 right-0 flex h-full w-0 transform-[translateX(100%)] flex-col items-start gap-y-5 overflow-hidden bg-canvas text-left text-default opacity-0 duration-200 ease-in-out tablet:max-w-[35vw] tablet:gap-y-10 laptop:max-w-[25vw] [body.nav-open_&amp;]:visible [body.nav-open_&amp;]:bottom-0 [body.nav-open_&amp;]:z-nav-menu [body.nav-open_&amp;]:h-full [body.nav-open_&amp;]:w-full [body.nav-open_&amp;]:transform-[translateX(0)] [body.nav-open_&amp;]:overflow-y-auto [body.nav-open_&amp;]:pt-20 [body.nav-open_&amp;]:pr-[16%] [body.nav-open_&amp;]:pb-5 [body.nav-open_&amp;]:pl-[12%] [body.nav-open_&amp;]:opacity-100 [body.nav-open_&amp;]:drop-shadow-2xl [body.nav-open_&amp;]:tablet:px-10 [body.nav-open_&amp;]:tablet:pt-40 [body.nav-open_&amp;]:laptop:px-20"
+                class="flex w-full flex-col gap-y-6 invisible fixed top-0 right-0 h-full w-0 transform-[translateX(100%)] overflow-hidden bg-canvas text-left text-default opacity-0 duration-200 ease-in-out tablet:max-w-[35vw] laptop:max-w-[25vw] [body.nav-open_&amp;]:visible [body.nav-open_&amp;]:bottom-0 [body.nav-open_&amp;]:z-nav-menu [body.nav-open_&amp;]:h-full [body.nav-open_&amp;]:w-full [body.nav-open_&amp;]:transform-[translateX(0)] [body.nav-open_&amp;]:overflow-y-auto [body.nav-open_&amp;]:pt-20 [body.nav-open_&amp;]:pr-[16%] [body.nav-open_&amp;]:pb-5 [body.nav-open_&amp;]:pl-[12%] [body.nav-open_&amp;]:opacity-100 [body.nav-open_&amp;]:drop-shadow-2xl [body.nav-open_&amp;]:tablet:px-10 [body.nav-open_&amp;]:tablet:pt-40 [body.nav-open_&amp;]:laptop:px-20"
                 data-nav-menu="true"
                 id="nav-menu"
               >
@@ -233,7 +233,7 @@
                   >
                   <ol class="mt-4">
                     <li
-                      class="mb-3 ml-1 font-sans text-xs tracking-wider text-muted uppercase last:-mb-1"
+                      class="mb-3 ml-1 font-sans text-xs font-medium tracking-wider text-muted uppercase last:-mb-1"
                     >
                       <a
                         class="relative inline-block origin-left transform-gpu pb-1 transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-accent after:transition-transform hover:text-accent hover:after:scale-x-100"
@@ -259,7 +259,7 @@
               >
             </nav>
             <h1
-              class="text-center text-4xl desktop:text-6xl"
+              class="text-center text-4xl laptop:text-5xl desktop:text-6xl"
               data-pagefind-meta="title"
             >
               About Face
@@ -473,13 +473,13 @@
             </div>
             <div class="w-full max-w-popout">
               <h2
-                class="py-10 font-sans text-xs font-semibold tracking-wide text-subtle uppercase text-center shadow-bottom"
+                class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase text-center shadow-bottom"
               >
                 Reading History
               </h2>
               <ul>
                 <li
-                  class="mb-1 flex flex-col bg-subtle px-container font-sans text-xs font-light tablet:px-6"
+                  class="mb-1 flex flex-col bg-subtle px-container font-sans tablet:px-6"
                 >
                   <div class="flex gap-x-4 py-4 tablet:gap-x-6">
                     <div class="size-auto self-start">
@@ -508,25 +508,27 @@
                         >)</span
                       >
                       <details
-                        class="rounded-md bg-canvas px-2 font-light text-subtle open:pb-2"
+                        class="rounded-md bg-canvas px-2 text-subtle open:pb-2"
                       >
-                        <summary class="cursor-pointer leading-6">
+                        <summary
+                          class="cursor-pointer rounded-sm py-1 font-sans text-sm tracking-prose text-subtle"
+                        >
                           Listened to over<!-- -->
                           <!-- -->8<!-- -->
                           Days
                         </summary>
                         <ol
-                          class="grid w-full grid-cols-[auto_1fr_auto] bg-default px-2 py-3"
+                          class="grid w-full grid-cols-[auto_1fr_auto] rounded-md bg-default px-2 py-3"
                         >
                           <li
-                            class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] py-1 even:bg-subtle"
+                            class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] px-1 py-1 font-normal even:bg-subtle"
                           >
                             <div
-                              class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-xs"
+                              class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-sm tracking-prose"
                             >
                               <div>29 Aug 2022</div>
                               <div
-                                class="col-start-3 self-center pb-1 text-right font-sans text-xs text-nowrap"
+                                class="col-start-3 self-center pb-1 text-right font-sans text-sm text-nowrap"
                               >
                                 <div>4%</div>
                               </div>
@@ -541,14 +543,14 @@
                             </div>
                           </li>
                           <li
-                            class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] py-1 even:bg-subtle"
+                            class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] px-1 py-1 font-normal even:bg-subtle"
                           >
                             <div
-                              class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-xs"
+                              class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-sm tracking-prose"
                             >
                               <div>2 Sept 2022</div>
                               <div
-                                class="col-start-3 self-center pb-1 text-right font-sans text-xs text-nowrap"
+                                class="col-start-3 self-center pb-1 text-right font-sans text-sm text-nowrap"
                               >
                                 <div>23%</div>
                               </div>
@@ -563,14 +565,14 @@
                             </div>
                           </li>
                           <li
-                            class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] py-1 even:bg-subtle"
+                            class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] px-1 py-1 font-normal even:bg-subtle"
                           >
                             <div
-                              class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-xs"
+                              class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-sm tracking-prose"
                             >
                               <div>3 Sept 2022</div>
                               <div
-                                class="col-start-3 self-center pb-1 text-right font-sans text-xs text-nowrap"
+                                class="col-start-3 self-center pb-1 text-right font-sans text-sm text-nowrap"
                               >
                                 <div>53%</div>
                               </div>
@@ -585,14 +587,14 @@
                             </div>
                           </li>
                           <li
-                            class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] py-1 even:bg-subtle"
+                            class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] px-1 py-1 font-normal even:bg-subtle"
                           >
                             <div
-                              class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-xs"
+                              class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-sm tracking-prose"
                             >
                               <div>4 Sept 2022</div>
                               <div
-                                class="col-start-3 self-center pb-1 text-right font-sans text-xs text-nowrap"
+                                class="col-start-3 self-center pb-1 text-right font-sans text-sm text-nowrap"
                               >
                                 <div>81%</div>
                               </div>
@@ -607,14 +609,14 @@
                             </div>
                           </li>
                           <li
-                            class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] py-1 even:bg-subtle"
+                            class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] px-1 py-1 font-normal even:bg-subtle"
                           >
                             <div
-                              class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-xs"
+                              class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-sm tracking-prose"
                             >
                               <div>5 Sept 2022</div>
                               <div
-                                class="col-start-3 self-center pb-1 text-right font-sans text-xs text-nowrap"
+                                class="col-start-3 self-center pb-1 text-right font-sans text-sm text-nowrap"
                               >
                                 <div>Finished</div>
                               </div>
@@ -647,7 +649,7 @@
             >
               <div>
                 <h2
-                  class="py-10 font-sans text-xs font-semibold tracking-wide text-subtle uppercase"
+                  class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase"
                 >
                   <a
                     class="relative -mb-1 inline-block transform-gpu pb-1 transition-transform after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-right after:scale-x-0 after:bg-(--fg-accent) after:transition-transform hover:after:scale-x-100"
@@ -732,7 +734,7 @@
                         >
                         <div class="-mt-2"><span>Richard Laymon</span></div>
                         <div
-                          class="font-sans text-xs leading-4 font-light tracking-prose text-subtle"
+                          class="font-sans text-sm leading-4 font-normal tracking-prose text-subtle"
                         >
                           1981<!-- -->
                           |
@@ -840,7 +842,7 @@
                         >
                         <div class="-mt-2"><span>Stephen King</span></div>
                         <div
-                          class="font-sans text-xs leading-4 font-light tracking-prose text-subtle"
+                          class="font-sans text-sm leading-4 font-normal tracking-prose text-subtle"
                         >
                           1975<!-- -->
                           |
@@ -947,7 +949,7 @@
                         >
                         <div class="-mt-2"><span>Philip Fracassi</span></div>
                         <div
-                          class="font-sans text-xs leading-4 font-light tracking-prose text-subtle"
+                          class="font-sans text-sm leading-4 font-normal tracking-prose text-subtle"
                         >
                           2000<!-- -->
                           |
@@ -1060,7 +1062,7 @@
                         >
                         <div class="-mt-2"><span>Philip Fracassi</span></div>
                         <div
-                          class="font-sans text-xs leading-4 font-light tracking-prose text-subtle"
+                          class="font-sans text-sm leading-4 font-normal tracking-prose text-subtle"
                         >
                           2000<!-- -->
                           |
@@ -1125,7 +1127,7 @@
               class="flex w-full flex-col tablet:flex-row-reverse tablet:justify-between"
             >
               <a
-                class="mx-auto mb-8 w-full max-w-button transform-gpu rounded-md bg-subtle py-5 text-center font-sans text-xs tracking-wide text-default uppercase transition-all hover:scale-105 hover:bg-default hover:text-default hover:drop-shadow-lg tablet:mx-0"
+                class="mx-auto mb-8 w-full max-w-button transform-gpu rounded-md bg-subtle py-5 text-center font-sans text-sm font-normal tracking-wide text-default uppercase transition-all hover:scale-105 hover:bg-default hover:text-default hover:drop-shadow-lg tablet:mx-0"
                 href="#top"
                 >To the top</a
               >
@@ -1144,7 +1146,7 @@
             </div>
             <div class="justify-between tablet:flex">
               <div class="flex max-w-[640px] flex-col pb-12 tablet:pr-32">
-                <div class="pt-10 font-sans text-sm font-light text-subtle">
+                <div class="pt-10 font-sans font-normal text-subtle">
                   <p
                     class="mb-6 text-pretty first-letter:float-left first-letter:mt-[6px] first-letter:pr-1 first-letter:font-sans first-letter:text-[40px] first-letter:leading-[.8] first-letter:font-bold first-letter:text-default desktop:first-letter:text-[64px]"
                   >
@@ -1210,7 +1212,7 @@
               <div
                 class="flex w-full max-w-button grow flex-col gap-20 pt-10 pb-20 tablet:basis-button tablet:pr-10"
               >
-                <ol class="flex w-full flex-col gap-y-10 desktop:w-auto">
+                <ol class="flex w-full flex-col gap-y-6 desktop:w-auto">
                   <li
                     class="block w-1/2 text-2xl whitespace-nowrap laptop:w-full"
                   >
@@ -1257,7 +1259,7 @@
                     >
                     <ol class="mt-4">
                       <li
-                        class="mb-3 ml-1 font-sans text-xs tracking-wider text-muted uppercase last:-mb-1"
+                        class="mb-3 ml-1 font-sans text-xs font-medium tracking-wider text-muted uppercase last:-mb-1"
                       >
                         <a
                           class="relative inline-block origin-left transform-gpu pb-1 transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-accent after:transition-transform hover:text-accent hover:after:scale-x-100"
@@ -1277,10 +1279,22 @@
             All reviews by Frank Showalter. All images used in accordance with
             the<!-- -->
             <a
-              class="text-inherit underline"
+              class="relative inline-block pr-4 text-inherit underline underline-offset-3 hover:bg-default hover:text-accent"
               href="http://www.copyright.gov/title17/92chap1.html#107"
               rel="nofollow"
-              >Fair Use Law</a
+              >Fair Use Law<svg
+                class="absolute top-0.5 right-0 size-3"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path></svg></a
             >.
           </p>
         </footer>
