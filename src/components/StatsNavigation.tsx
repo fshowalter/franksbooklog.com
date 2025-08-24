@@ -14,7 +14,7 @@ export function StatsNavigation({
   years: readonly string[];
 }): JSX.Element {
   return (
-    <nav className={ccn("bg-footer", className)}>
+    <nav className={ccn("bg-[#333]", className)}>
       <ul
         className={`
           mx-auto flex scrollbar-hidden max-w-(--breakpoint-desktop) snap-x
@@ -47,12 +47,7 @@ function AllTimeLink({
   linkFunc: (year: string) => string;
 }): JSX.Element {
   return (
-    <li
-      className={`
-        snap-start text-center
-        ${"all" === currentYear ? "text-inverse" : `text-inverse-subtle`}
-      `}
-    >
+    <li className={`snap-start text-center`}>
       {"all" === currentYear ? (
         <div
           className={`
@@ -66,7 +61,7 @@ function AllTimeLink({
         <a
           className={`
             group/all-time block transform-gpu px-4 pt-4 pb-3 whitespace-nowrap
-            transition-all
+            text-inverse-subtle transition-all
             hover:bg-accent hover:text-inverse
           `}
           href={linkFunc("all")}
@@ -98,12 +93,7 @@ function YearLink({
   year: string;
 }) {
   return (
-    <li
-      className={`
-        snap-start text-center
-        ${year === currentYear ? "text-inverse" : `text-inverse-subtle`}
-      `}
-    >
+    <li className={`snap-start text-center`}>
       {year === currentYear ? (
         <div
           className={`
@@ -116,7 +106,8 @@ function YearLink({
       ) : (
         <a
           className={`
-            group/year block transform-gpu px-4 pt-4 pb-3 transition-all
+            group/year block transform-gpu px-4 pt-4 pb-3 text-inverse-subtle
+            transition-all
             hover:bg-accent hover:text-inverse
           `}
           href={linkFunc(year)}

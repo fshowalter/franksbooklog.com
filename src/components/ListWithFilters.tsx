@@ -260,7 +260,7 @@ export function ListWithFilters<T extends string>({
                   absolute top-7 right-4 z-10 flex h-10 w-10 transform-gpu
                   cursor-pointer items-center justify-center rounded-full
                   bg-canvas text-default drop-shadow-md transition-transform
-                  hover:scale-105
+                  hover:scale-105 hover:drop-shadow-md
                   ${isClosing ? "pointer-events-none" : ""}
                 `}
                 onClick={() => {
@@ -322,7 +322,8 @@ export function ListWithFilters<T extends string>({
                     className={`
                       flex items-center justify-center gap-x-4 rounded-sm
                       bg-canvas px-4 py-3 font-sans text-xs text-nowrap
-                      uppercase
+                      uppercase transition-transform
+                      enabled:hover:scale-105 enabled:hover:drop-shadow-md
                       ${
                         hasActiveFilters
                           ? "cursor-pointer text-default"
@@ -341,9 +342,11 @@ export function ListWithFilters<T extends string>({
                   </button>
                   <button
                     className={`
-                      flex flex-1 cursor-pointer items-center justify-center
-                      gap-x-4 rounded-sm bg-footer px-4 py-3 font-sans text-xs
-                      text-nowrap text-inverse uppercase
+                      flex flex-1 transform-gpu cursor-pointer items-center
+                      justify-center gap-x-4 rounded-sm bg-footer px-4 py-3
+                      font-sans text-xs text-nowrap text-inverse uppercase
+                      transition-transform
+                      hover:scale-105 hover:drop-shadow-md
                     `}
                     onClick={() => {
                       // Apply pending filters
@@ -440,9 +443,9 @@ function ListHeader<T extends string>({
         className={`
           col-start-4 row-start-1 flex transform-gpu cursor-pointer items-center
           justify-center gap-x-4 rounded-sm bg-canvas px-4 py-2 font-sans
-          text-xs font-semibold text-nowrap text-muted uppercase shadow-all
+          text-xs font-medium text-nowrap text-muted uppercase shadow-all
           transition-transform
-          hover:scale-110
+          hover:scale-110 hover:drop-shadow-md
           tablet:col-start-5 tablet:w-20
         `}
         onClick={onFilterClick}

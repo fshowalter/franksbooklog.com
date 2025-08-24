@@ -16,9 +16,10 @@ export function Footer(): JSX.Element {
           <a
             className={`
               mx-auto mb-8 w-full max-w-button transform-gpu rounded-md
-              bg-footer py-5 text-center font-sans text-xs tracking-wide
-              text-inverse uppercase transition-all
-              hover:scale-105 hover:bg-subtle hover:text-default
+              bg-subtle py-5 text-center font-sans text-xs tracking-wide
+              text-default uppercase transition-all
+              hover:scale-105 hover:bg-default hover:text-default
+              hover:drop-shadow-lg
               tablet:mx-0
             `}
             href="#top"

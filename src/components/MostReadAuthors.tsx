@@ -86,7 +86,7 @@ export function MostReadAuthors({
               >
                 <details
                   className={`
-                    rounded-sm bg-canvas px-2
+                    rounded-md bg-canvas px-2
                     open:pb-2
                   `}
                 >
@@ -155,7 +155,7 @@ function Name({ value }: { value: MostReadAuthorsListItemValue }): JSX.Element {
           relative inline-block font-serif text-base leading-6 font-normal
           text-accent
           after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-          after:origin-bottom-left after:scale-x-0 after:bg-(--fg-accent)
+          after:origin-bottom-left after:scale-x-0 after:bg-accent
           after:transition-transform
           hover:after:scale-x-100
         `}

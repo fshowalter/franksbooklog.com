@@ -97,8 +97,8 @@ function HamburgerMenu({ hasBackdrop }: { hasBackdrop: boolean }) {
         <span
           aria-hidden="true"
           className={`
-            relative flex h-0.5 w-6 origin-center transform-gpu
-            transition-[top,bottom,transform] duration-200 ease-in-out
+            relative flex h-0.5 w-6 origin-center transform-gpu transition-all
+            duration-200 ease-in-out
             before:absolute before:-top-2 before:block before:h-0.5 before:w-6
             before:bg-inherit before:transition before:duration-200
             before:ease-in-out
@@ -106,7 +106,8 @@ function HamburgerMenu({ hasBackdrop }: { hasBackdrop: boolean }) {
             after:bg-inherit after:transition after:duration-200
             after:ease-in-out
             [body.nav-open_&]:transform-[rotate(45deg)]
-            [body.nav-open_&]:!bg-[#fff] [body.nav-open_&]:before:top-0
+            [body.nav-open_&]:!bg-[var(--fg-default)]
+            [body.nav-open_&]:before:top-0
             [body.nav-open_&]:before:transform-[rotate(90deg)]
             [body.nav-open_&]:after:bottom-0
             [body.nav-open_&]:after:transform-[rotate(90deg)]
@@ -121,7 +122,7 @@ function HamburgerMenu({ hasBackdrop }: { hasBackdrop: boolean }) {
           className={`
             invisible fixed top-0 right-0 flex h-full w-0
             transform-[translateX(100%)] flex-col items-start gap-y-5
-            overflow-hidden bg-footer text-left text-inverse opacity-0
+            overflow-hidden bg-canvas text-left text-default opacity-0
             duration-200 ease-in-out
             tablet:max-w-[35vw] tablet:gap-y-10
             laptop:max-w-[25vw]
@@ -180,8 +181,8 @@ function SearchButton() {
   return (
     <div
       className={`
-        z-1000
-        [body.nav-open_&]:!text-[#fff]
+        z-1000 transition-colors
+        [body.nav-open_&]:!text-default
       `}
     >
       <button

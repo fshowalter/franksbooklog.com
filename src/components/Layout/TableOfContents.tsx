@@ -28,9 +28,9 @@ function MenuItem({ value }: { value: NavItem }): JSX.Element {
         className={`
           relative inline-block origin-left transform-gpu transition-all
           after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-          after:origin-bottom-left after:scale-x-0 after:bg-(--fg-inverse)/75
+          after:origin-bottom-left after:scale-x-0 after:bg-accent
           after:transition-transform
-          hover:after:scale-x-100
+          hover:text-accent hover:after:scale-x-100
         `}
         href={value.target}
       >
@@ -52,8 +52,7 @@ function SubMenu({ values }: { values: NavItem[] }): false | JSX.Element {
         return (
           <li
             className={`
-              mb-3 ml-1 font-sans text-xs tracking-wider text-inverse-subtle
-              uppercase
+              mb-3 ml-1 font-sans text-xs tracking-wider text-muted uppercase
               last:-mb-1
             `}
             key={value.target}
@@ -64,8 +63,8 @@ function SubMenu({ values }: { values: NavItem[] }): false | JSX.Element {
                 transition-all
                 after:absolute after:bottom-0 after:left-0 after:h-px
                 after:w-full after:origin-bottom-left after:scale-x-0
-                after:bg-(--fg-inverse)/75 after:transition-transform
-                hover:text-inverse hover:after:scale-x-100
+                after:bg-accent after:transition-transform
+                hover:text-accent hover:after:scale-x-100
               `}
               href={value.target}
             >

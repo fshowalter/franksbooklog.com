@@ -97,7 +97,7 @@ function Details({ value }: { value: ReviewWithContent["readings"][0] }) {
   return (
     <details
       className={`
-        rounded-sm bg-canvas px-2 font-light text-subtle
+        rounded-md bg-canvas px-2 font-light text-subtle
         open:pb-2
       `}
     >
@@ -124,6 +124,7 @@ function Details({ value }: { value: ReviewWithContent["readings"][0] }) {
               className={`
                 relative col-span-3 grid grid-cols-subgrid
                 grid-rows-[1fr_auto_auto_1fr] py-1
+                even:bg-subtle
               `}
               key={entryDate}
             >
@@ -143,7 +144,7 @@ function Details({ value }: { value: ReviewWithContent["readings"][0] }) {
                   <div>{entry.progress}</div>
                 </div>
               </div>
-              <div className="col-span-2 col-start-2 row-start-3 bg-stripe">
+              <div className={`col-span-2 col-start-2 row-start-3`}>
                 {progressValue && (
                   <BarGradient maxValue={100} value={progressValue} />
                 )}

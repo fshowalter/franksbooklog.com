@@ -21,6 +21,7 @@
   --background-color-*: initial;
   --background-color-abandoned: var(--bg-abandoned);
   --background-color-accent: var(--bg-accent);
+  --background-color-button: var(--bg-button);
   --background-color-canvas: var(--bg-canvas);
   --background-color-cover-back: var(--bg-cover);
   --background-color-default: var(--bg-default);
@@ -89,25 +90,26 @@
 @layer base {
   :root {
     --bg-abandoned: #da0101;
-    --bg-accent: #a52422;
+    --bg-accent: #00635d;
     --bg-avatar-default: #ededed;
-    --bg-canvas: #f2f0e8;
+    --bg-canvas: #f4f1ea;
     --bg-cover: rgb(10 10 10);
     --bg-default-alpha: 0.4;
     --bg-default-rgb: 255, 255, 255;
     --bg-default: #fff;
-    --bg-footer: #4a4a4a;
+    --bg-footer: #333;
     --bg-group: #f7f5f3;
     --bg-hover: #f7f5f3;
     --bg-inverse: rgb(0 0 0 / 75%);
     --bg-progress: #14bd41;
     --bg-stripe: #f7f5f3;
-    --bg-subtle: #fafafa;
+    --bg-subtle: #f9f7f4;
+    --bg-button: #bbaf9e;
     --bg-unreviewed: #fefefe;
     --border-accent: #054a93;
     --border-default: #e9e7e0;
     --container-padding: 8%;
-    --fg-accent: #b02e0c;
+    --fg-accent: #00635d;
     --fg-default: #252525;
     --fg-emphasis: rgb(0 0 0 / 95%);
     --fg-inverse-subtle: #b0b0b0;

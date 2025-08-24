@@ -46,7 +46,12 @@ export function Home({ backdropImageProps, deck, values }: Props): JSX.Element {
             );
           })}
         </ol>
-        <div className="flex px-container py-10">
+        <div
+          className={`
+            flex px-container py-10
+            has-[a:hover]:drop-shadow-lg
+          `}
+        >
           <a
             className={`
               group/all-reviews mx-auto w-full max-w-button transform-gpu

@@ -118,7 +118,7 @@ function AlphabetSubNav({
   }
 
   return (
-    <nav className={`sticky top-0 z-nav-menu bg-footer`}>
+    <nav className={`sticky top-0 z-nav-menu bg-[#333]`}>
       <ul
         className={`
           mx-auto flex scrollbar-hidden max-w-(--breakpoint-desktop) snap-x

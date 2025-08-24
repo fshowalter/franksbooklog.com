@@ -9,7 +9,7 @@ export function StatsCallout({
   return (
     <div
       className={`
-        flex size-36 flex-col justify-center rounded-full bg-stripe text-center
+        flex size-36 flex-col justify-center rounded-full bg-default text-center
         text-default shadow-all
       `}
     >

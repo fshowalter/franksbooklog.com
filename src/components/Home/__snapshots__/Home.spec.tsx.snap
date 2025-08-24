@@ -155,8 +155,8 @@ exports[`Home > matches snapshot 1`] = `
           </nav>
           <div
             class="
-        z-1000
-        [body.nav-open_&]:!text-[#fff]
+        z-1000 transition-colors
+        [body.nav-open_&]:!text-default
       "
           >
             <button
@@ -216,8 +216,8 @@ exports[`Home > matches snapshot 1`] = `
             <span
               aria-hidden="true"
               class="
-            relative flex h-0.5 w-6 origin-center transform-gpu
-            transition-[top,bottom,transform] duration-200 ease-in-out
+            relative flex h-0.5 w-6 origin-center transform-gpu transition-all
+            duration-200 ease-in-out
             before:absolute before:-top-2 before:block before:h-0.5 before:w-6
             before:bg-inherit before:transition before:duration-200
             before:ease-in-out
@@ -225,7 +225,8 @@ exports[`Home > matches snapshot 1`] = `
             after:bg-inherit after:transition after:duration-200
             after:ease-in-out
             [body.nav-open_&]:transform-[rotate(45deg)]
-            [body.nav-open_&]:!bg-[#fff] [body.nav-open_&]:before:top-0
+            [body.nav-open_&]:!bg-[var(--fg-default)]
+            [body.nav-open_&]:before:top-0
             [body.nav-open_&]:before:transform-[rotate(90deg)]
             [body.nav-open_&]:after:bottom-0
             [body.nav-open_&]:after:transform-[rotate(90deg)]
@@ -240,7 +241,7 @@ exports[`Home > matches snapshot 1`] = `
               class="
             invisible fixed top-0 right-0 flex h-full w-0
             transform-[translateX(100%)] flex-col items-start gap-y-5
-            overflow-hidden bg-footer text-left text-inverse opacity-0
+            overflow-hidden bg-canvas text-left text-default opacity-0
             duration-200 ease-in-out
             tablet:max-w-[35vw] tablet:gap-y-10
             laptop:max-w-[25vw]
@@ -266,9 +267,9 @@ exports[`Home > matches snapshot 1`] = `
                   class="
           relative inline-block origin-left transform-gpu transition-all
           after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-          after:origin-bottom-left after:scale-x-0 after:bg-(--fg-inverse)/75
+          after:origin-bottom-left after:scale-x-0 after:bg-accent
           after:transition-transform
-          hover:after:scale-x-100
+          hover:text-accent hover:after:scale-x-100
         "
                   href="/"
                 >
@@ -285,9 +286,9 @@ exports[`Home > matches snapshot 1`] = `
                   class="
           relative inline-block origin-left transform-gpu transition-all
           after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-          after:origin-bottom-left after:scale-x-0 after:bg-(--fg-inverse)/75
+          after:origin-bottom-left after:scale-x-0 after:bg-accent
           after:transition-transform
-          hover:after:scale-x-100
+          hover:text-accent hover:after:scale-x-100
         "
                   href="/how-i-grade/"
                 >
@@ -304,9 +305,9 @@ exports[`Home > matches snapshot 1`] = `
                   class="
           relative inline-block origin-left transform-gpu transition-all
           after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-          after:origin-bottom-left after:scale-x-0 after:bg-(--fg-inverse)/75
+          after:origin-bottom-left after:scale-x-0 after:bg-accent
           after:transition-transform
-          hover:after:scale-x-100
+          hover:text-accent hover:after:scale-x-100
         "
                   href="/reviews/"
                 >
@@ -323,9 +324,9 @@ exports[`Home > matches snapshot 1`] = `
                   class="
           relative inline-block origin-left transform-gpu transition-all
           after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-          after:origin-bottom-left after:scale-x-0 after:bg-(--fg-inverse)/75
+          after:origin-bottom-left after:scale-x-0 after:bg-accent
           after:transition-transform
-          hover:after:scale-x-100
+          hover:text-accent hover:after:scale-x-100
         "
                   href="/authors/"
                 >
@@ -342,9 +343,9 @@ exports[`Home > matches snapshot 1`] = `
                   class="
           relative inline-block origin-left transform-gpu transition-all
           after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-          after:origin-bottom-left after:scale-x-0 after:bg-(--fg-inverse)/75
+          after:origin-bottom-left after:scale-x-0 after:bg-accent
           after:transition-transform
-          hover:after:scale-x-100
+          hover:text-accent hover:after:scale-x-100
         "
                   href="/readings/"
                 >
@@ -355,8 +356,7 @@ exports[`Home > matches snapshot 1`] = `
                 >
                   <li
                     class="
-              mb-3 ml-1 font-sans text-xs tracking-wider text-inverse-subtle
-              uppercase
+              mb-3 ml-1 font-sans text-xs tracking-wider text-muted uppercase
               last:-mb-1
             "
                   >
@@ -366,8 +366,8 @@ exports[`Home > matches snapshot 1`] = `
                 transition-all
                 after:absolute after:bottom-0 after:left-0 after:h-px
                 after:w-full after:origin-bottom-left after:scale-x-0
-                after:bg-(--fg-inverse)/75 after:transition-transform
-                hover:text-inverse hover:after:scale-x-100
+                after:bg-accent after:transition-transform
+                hover:text-accent hover:after:scale-x-100
               "
                       href="/readings/stats/"
                     >
@@ -2202,7 +2202,10 @@ exports[`Home > matches snapshot 1`] = `
             </li>
           </ol>
           <div
-            class="flex px-container py-10"
+            class="
+            flex px-container py-10
+            has-[a:hover]:drop-shadow-lg
+          "
           >
             <a
               class="
@@ -2244,9 +2247,10 @@ exports[`Home > matches snapshot 1`] = `
             <a
               class="
               mx-auto mb-8 w-full max-w-button transform-gpu rounded-md
-              bg-footer py-5 text-center font-sans text-xs tracking-wide
-              text-inverse uppercase transition-all
-              hover:scale-105 hover:bg-subtle hover:text-default
+              bg-subtle py-5 text-center font-sans text-xs tracking-wide
+              text-default uppercase transition-all
+              hover:scale-105 hover:bg-default hover:text-default
+              hover:drop-shadow-lg
               tablet:mx-0
             "
               href="#top"
@@ -2409,9 +2413,9 @@ exports[`Home > matches snapshot 1`] = `
                     class="
           relative inline-block origin-left transform-gpu transition-all
           after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-          after:origin-bottom-left after:scale-x-0 after:bg-(--fg-inverse)/75
+          after:origin-bottom-left after:scale-x-0 after:bg-accent
           after:transition-transform
-          hover:after:scale-x-100
+          hover:text-accent hover:after:scale-x-100
         "
                     href="/"
                   >
@@ -2428,9 +2432,9 @@ exports[`Home > matches snapshot 1`] = `
                     class="
           relative inline-block origin-left transform-gpu transition-all
           after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-          after:origin-bottom-left after:scale-x-0 after:bg-(--fg-inverse)/75
+          after:origin-bottom-left after:scale-x-0 after:bg-accent
           after:transition-transform
-          hover:after:scale-x-100
+          hover:text-accent hover:after:scale-x-100
         "
                     href="/how-i-grade/"
                   >
@@ -2447,9 +2451,9 @@ exports[`Home > matches snapshot 1`] = `
                     class="
           relative inline-block origin-left transform-gpu transition-all
           after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-          after:origin-bottom-left after:scale-x-0 after:bg-(--fg-inverse)/75
+          after:origin-bottom-left after:scale-x-0 after:bg-accent
           after:transition-transform
-          hover:after:scale-x-100
+          hover:text-accent hover:after:scale-x-100
         "
                     href="/reviews/"
                   >
@@ -2466,9 +2470,9 @@ exports[`Home > matches snapshot 1`] = `
                     class="
           relative inline-block origin-left transform-gpu transition-all
           after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-          after:origin-bottom-left after:scale-x-0 after:bg-(--fg-inverse)/75
+          after:origin-bottom-left after:scale-x-0 after:bg-accent
           after:transition-transform
-          hover:after:scale-x-100
+          hover:text-accent hover:after:scale-x-100
         "
                     href="/authors/"
                   >
@@ -2485,9 +2489,9 @@ exports[`Home > matches snapshot 1`] = `
                     class="
           relative inline-block origin-left transform-gpu transition-all
           after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
-          after:origin-bottom-left after:scale-x-0 after:bg-(--fg-inverse)/75
+          after:origin-bottom-left after:scale-x-0 after:bg-accent
           after:transition-transform
-          hover:after:scale-x-100
+          hover:text-accent hover:after:scale-x-100
         "
                     href="/readings/"
                   >
@@ -2498,8 +2502,7 @@ exports[`Home > matches snapshot 1`] = `
                   >
                     <li
                       class="
-              mb-3 ml-1 font-sans text-xs tracking-wider text-inverse-subtle
-              uppercase
+              mb-3 ml-1 font-sans text-xs tracking-wider text-muted uppercase
               last:-mb-1
             "
                     >
@@ -2509,8 +2512,8 @@ exports[`Home > matches snapshot 1`] = `
                 transition-all
                 after:absolute after:bottom-0 after:left-0 after:h-px
                 after:w-full after:origin-bottom-left after:scale-x-0
-                after:bg-(--fg-inverse)/75 after:transition-transform
-                hover:text-inverse hover:after:scale-x-100
+                after:bg-accent after:transition-transform
+                hover:text-accent hover:after:scale-x-100
               "
                         href="/readings/stats/"
                       >
