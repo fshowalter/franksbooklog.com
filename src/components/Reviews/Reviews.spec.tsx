@@ -1,6 +1,15 @@
 import { act, render, screen, within } from "@testing-library/react";
 import { userEvent } from "@testing-library/user-event";
-import { describe, it } from "vitest";
+import { afterEach, beforeEach, describe, it, vi } from "vitest";
+
+import {
+  clickClearFilters,
+  clickCloseFilters,
+  clickToggleFilters,
+  clickViewResults,
+} from "~/components/ListWithFilters.testUtils";
+import { getUserWithFakeTimers } from "~/components/testUtils";
+import { fillTextFilter } from "~/components/TextFilter.testHelper";
 
 import { getProps } from "./getProps";
 import { Reviews } from "./Reviews";
@@ -8,6 +17,21 @@ import { Reviews } from "./Reviews";
 const props = await getProps();
 
 describe("Reviews", () => {
+  beforeEach(() => {
+    // AIDEV-NOTE: Using shouldAdvanceTime: true prevents userEvent from hanging
+    // when fake timers are active. This allows async userEvent operations to complete
+    // while still controlling timer advancement for debounced inputs.
+    // See https://github.com/testing-library/user-event/issues/833
+    vi.useFakeTimers({ shouldAdvanceTime: true });
+  });
+
+  afterEach(() => {
+    // AIDEV-NOTE: Clear all pending timers before restoring real timers
+    // to ensure test isolation and prevent timer leaks between tests
+    vi.clearAllTimers();
+    vi.useRealTimers();
+  });
+
   it("renders", ({ expect }) => {
     const { asFragment } = render(<Reviews {...props} />);
 
@@ -18,10 +42,9 @@ describe("Reviews", () => {
     expect.hasAssertions();
     render(<Reviews {...props} />);
 
-    await act(async () => {
-      await userEvent.type(screen.getByLabelText("Title"), "Dracula");
-      await new Promise((r) => setTimeout(r, 500));
-    });
+    const user = getUserWithFakeTimers();
+
+    await fillTextFilter(user, "Title", "Dracula");
 
     expect(screen.getByTestId("grouped-cover-list")).toMatchSnapshot();
   });
@@ -270,5 +293,78 @@ describe("Reviews", () => {
 
     // Snapshot the result to verify more items are rendered
     expect(screen.getByTestId("grouped-cover-list")).toMatchSnapshot();
+  });
+
+  it("can clear all filters", async ({ expect }) => {
+    expect.hasAssertions();
+
+    // Setup userEvent with advanceTimers
+    const user = getUserWithFakeTimers();
+
+    render(<Reviews {...props} />);
+
+    // Open filter drawer
+    await clickToggleFilters(user);
+
+    // Apply multiple filters
+    await fillTextFilter(user, "Title", "Dracula");
+
+    await userEvent.selectOptions(screen.getByLabelText("Kind"), "Novel");
+
+    await clickViewResults(user);
+
+    // Open filter drawer again
+    await clickToggleFilters(user);
+
+    // Clear all filters
+    await clickClearFilters(user);
+
+    // Check that filters are cleared
+    expect(screen.getByLabelText("Title")).toHaveValue("");
+    expect(screen.getByLabelText("Kind")).toHaveValue("All");
+
+    await clickViewResults(user);
+
+    expect(screen.getByTestId("grouped-cover-list")).toMatchSnapshot();
+  });
+
+  it("can reset filters when closing drawer", async ({ expect }) => {
+    expect.hasAssertions();
+
+    // Setup userEvent with advanceTimers
+    const user = getUserWithFakeTimers();
+
+    render(<Reviews {...props} />);
+
+    // Open filter drawer
+    await clickToggleFilters(user);
+
+    // Apply initial filter
+    await fillTextFilter(user, "Title", "Dracula");
+
+    // Apply the filters
+    await clickViewResults(user);
+
+    // Store the current view
+    const listBeforeReset = screen.getByTestId("grouped-cover-list");
+
+    // Open filter drawer again
+    await clickToggleFilters(user);
+
+    // Start typing a new filter but don't apply
+    await fillTextFilter(user, "Title", "A different title...");
+
+    // Close the drawer with the X button (should reset pending changes)
+    await clickCloseFilters(user);
+
+    // The view should still show the originally filtered results
+    const listAfterReset = screen.getByTestId("grouped-cover-list");
+    expect(listAfterReset).toBe(listBeforeReset);
+
+    // Open filter drawer again to verify filters were reset to last applied state
+    await clickToggleFilters(user);
+
+    // Should show the originally applied filter, not the pending change
+    expect(screen.getByLabelText("Title")).toHaveValue("Dracula");
   });
 });
