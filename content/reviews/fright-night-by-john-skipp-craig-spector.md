@@ -2,7 +2,6 @@
 work_slug: fright-night-by-john-skipp-craig-spector
 grade: F
 date: 2023-01-21
-synopsis: High-schooler Charlie Brewster discovers his new neighbor is a vampire and enlists a washed-up horror movie host to help stop him.
 ---
 
 During a late-night make-out session with his girlfriend, high-schooler Charlie Brewster spies two men carrying a coffin into the basement of the house next-door. Charlie soon discovers his suave new neighbor, Jerry Dandrige, has fangs. When the police don't believe him, Charlie appeals to the local creature-feature host, washed up horror icon Peter Vincent, for help.

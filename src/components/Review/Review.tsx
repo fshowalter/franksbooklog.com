@@ -234,6 +234,7 @@ function ReviewCover({
           bg-cover bg-center clip-path-cover
           after:absolute after:size-full after:backdrop-blur-sm
           after:clip-path-cover
+          tablet:-left-[2.5%] tablet:w-[105%]
         `}
         style={{
           backgroundColor: "var(--bg-default)",

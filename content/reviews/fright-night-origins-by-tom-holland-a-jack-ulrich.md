@@ -2,7 +2,6 @@
 work_slug: fright-night-origins-by-tom-holland-a-jack-ulrich
 grade: C+
 date: 2023-11-06
-synopsis: Teenager Charlie Brewster discovers his suave neighbor Jerry Dandrige is a vampire and must enlist aging horror movie host Peter Vincent to help stop him.
 ---
 
 Tom Holland, director and screenwriter of the original _Fright Night_ film, partners with A. Jack Ulrich to craft an expanded novelization of the film, proffering more backstory and setting up an expanded universe and sequel.

@@ -38,7 +38,6 @@ export function Home({ backdropImageProps, deck, values }: Props): JSX.Element {
           className={`
             -mx-4 grid grid-rows-[auto_1fr] gap-x-[3%] gap-y-8
             @min-[700px]/home-list:grid-cols-2
-            @min-[1590px]/home-list:grid-cols-3
           `}
         >
           {values.map((value) => {

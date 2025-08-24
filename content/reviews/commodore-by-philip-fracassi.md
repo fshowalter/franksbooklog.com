@@ -2,7 +2,6 @@
 work_slug: commodore-by-philip-fracassi
 grade: A
 date: 2025-07-11
-synopsis: Five thirteen-year-old boys search for a mysterious black Commodore in a 1950s junkyard, where they encounter horrors that will rob them of their innocence.
 ---
 
 Philip Fracassi doesn't waste time. His novella _Commodore_ grabs you from the first paragraph and never lets go.

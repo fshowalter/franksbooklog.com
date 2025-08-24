@@ -2,7 +2,6 @@
 work_slug: the-devils-of-d-day-by-graham-masterton
 grade: B
 date: 2016-01-26
-synopsis: An American cartographer discovers a sealed tank in a French village containing a trapped demon from World War II that persuades him to set it free.
 ---
 
 My Dad is a voracious reader. As a child, I remember, in our basement, seeing washing-machine-sized boxes packed full of his old paperbacks. Some years after I’d graduated college, Dad went through those boxes.

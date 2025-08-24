@@ -958,7 +958,10 @@ exports[`/readings/stats > matches snapshot 1`] = `
                 "
                   >
                     <details
-                      class="bg-subtle px-2"
+                      class="
+                    rounded-sm bg-canvas px-2
+                    open:pb-2
+                  "
                     >
                       <summary
                         class="
@@ -980,7 +983,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
           @min-[calc((250px_*_3)_+_1px)]/cover-list:[--cover-list-item-width:25%]
           @min-[calc((250px_*_4)_+_1px)]/cover-list:[--cover-list-item-width:20%]
           @min-[calc((250px_*_5)_+_1px)]/cover-list:[--cover-list-item-width:16.66%]
-          
+          bg-subtle
         "
                         >
                           <li
@@ -3371,7 +3374,10 @@ exports[`/readings/stats > matches snapshot 1`] = `
                 "
                   >
                     <details
-                      class="bg-subtle px-2"
+                      class="
+                    rounded-sm bg-canvas px-2
+                    open:pb-2
+                  "
                     >
                       <summary
                         class="
@@ -3393,7 +3399,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
           @min-[calc((250px_*_3)_+_1px)]/cover-list:[--cover-list-item-width:25%]
           @min-[calc((250px_*_4)_+_1px)]/cover-list:[--cover-list-item-width:20%]
           @min-[calc((250px_*_5)_+_1px)]/cover-list:[--cover-list-item-width:16.66%]
-          
+          bg-subtle
         "
                         >
                           <li
@@ -5329,7 +5335,10 @@ exports[`/readings/stats > matches snapshot 1`] = `
                 "
                   >
                     <details
-                      class="bg-subtle px-2"
+                      class="
+                    rounded-sm bg-canvas px-2
+                    open:pb-2
+                  "
                     >
                       <summary
                         class="
@@ -5351,7 +5360,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
           @min-[calc((250px_*_3)_+_1px)]/cover-list:[--cover-list-item-width:25%]
           @min-[calc((250px_*_4)_+_1px)]/cover-list:[--cover-list-item-width:20%]
           @min-[calc((250px_*_5)_+_1px)]/cover-list:[--cover-list-item-width:16.66%]
-          
+          bg-subtle
         "
                         >
                           <li
@@ -6601,7 +6610,10 @@ exports[`/readings/stats > matches snapshot 1`] = `
                 "
                   >
                     <details
-                      class="bg-subtle px-2"
+                      class="
+                    rounded-sm bg-canvas px-2
+                    open:pb-2
+                  "
                     >
                       <summary
                         class="
@@ -6623,7 +6635,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
           @min-[calc((250px_*_3)_+_1px)]/cover-list:[--cover-list-item-width:25%]
           @min-[calc((250px_*_4)_+_1px)]/cover-list:[--cover-list-item-width:20%]
           @min-[calc((250px_*_5)_+_1px)]/cover-list:[--cover-list-item-width:16.66%]
-          
+          bg-subtle
         "
                         >
                           <li
@@ -6938,7 +6950,10 @@ exports[`/readings/stats > matches snapshot 1`] = `
                 "
                   >
                     <details
-                      class="bg-subtle px-2"
+                      class="
+                    rounded-sm bg-canvas px-2
+                    open:pb-2
+                  "
                     >
                       <summary
                         class="
@@ -6960,7 +6975,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
           @min-[calc((250px_*_3)_+_1px)]/cover-list:[--cover-list-item-width:25%]
           @min-[calc((250px_*_4)_+_1px)]/cover-list:[--cover-list-item-width:20%]
           @min-[calc((250px_*_5)_+_1px)]/cover-list:[--cover-list-item-width:16.66%]
-          
+          bg-subtle
         "
                         >
                           <li
@@ -7290,7 +7305,10 @@ exports[`/readings/stats > matches snapshot 1`] = `
                 "
                   >
                     <details
-                      class="bg-subtle px-2"
+                      class="
+                    rounded-sm bg-canvas px-2
+                    open:pb-2
+                  "
                     >
                       <summary
                         class="
@@ -7312,7 +7330,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
           @min-[calc((250px_*_3)_+_1px)]/cover-list:[--cover-list-item-width:25%]
           @min-[calc((250px_*_4)_+_1px)]/cover-list:[--cover-list-item-width:20%]
           @min-[calc((250px_*_5)_+_1px)]/cover-list:[--cover-list-item-width:16.66%]
-          
+          bg-subtle
         "
                         >
                           <li
@@ -7642,7 +7660,10 @@ exports[`/readings/stats > matches snapshot 1`] = `
                 "
                   >
                     <details
-                      class="bg-subtle px-2"
+                      class="
+                    rounded-sm bg-canvas px-2
+                    open:pb-2
+                  "
                     >
                       <summary
                         class="
@@ -7664,7 +7685,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
           @min-[calc((250px_*_3)_+_1px)]/cover-list:[--cover-list-item-width:25%]
           @min-[calc((250px_*_4)_+_1px)]/cover-list:[--cover-list-item-width:20%]
           @min-[calc((250px_*_5)_+_1px)]/cover-list:[--cover-list-item-width:16.66%]
-          
+          bg-subtle
         "
                         >
                           <li
@@ -7902,7 +7923,10 @@ exports[`/readings/stats > matches snapshot 1`] = `
                 "
                   >
                     <details
-                      class="bg-subtle px-2"
+                      class="
+                    rounded-sm bg-canvas px-2
+                    open:pb-2
+                  "
                     >
                       <summary
                         class="
@@ -7924,7 +7948,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
           @min-[calc((250px_*_3)_+_1px)]/cover-list:[--cover-list-item-width:25%]
           @min-[calc((250px_*_4)_+_1px)]/cover-list:[--cover-list-item-width:20%]
           @min-[calc((250px_*_5)_+_1px)]/cover-list:[--cover-list-item-width:16.66%]
-          
+          bg-subtle
         "
                         >
                           <li
@@ -8162,7 +8186,10 @@ exports[`/readings/stats > matches snapshot 1`] = `
                 "
                   >
                     <details
-                      class="bg-subtle px-2"
+                      class="
+                    rounded-sm bg-canvas px-2
+                    open:pb-2
+                  "
                     >
                       <summary
                         class="
@@ -8184,7 +8211,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
           @min-[calc((250px_*_3)_+_1px)]/cover-list:[--cover-list-item-width:25%]
           @min-[calc((250px_*_4)_+_1px)]/cover-list:[--cover-list-item-width:20%]
           @min-[calc((250px_*_5)_+_1px)]/cover-list:[--cover-list-item-width:16.66%]
-          
+          bg-subtle
         "
                         >
                           <li
@@ -8422,7 +8449,10 @@ exports[`/readings/stats > matches snapshot 1`] = `
                 "
                   >
                     <details
-                      class="bg-subtle px-2"
+                      class="
+                    rounded-sm bg-canvas px-2
+                    open:pb-2
+                  "
                     >
                       <summary
                         class="
@@ -8444,7 +8474,7 @@ exports[`/readings/stats > matches snapshot 1`] = `
           @min-[calc((250px_*_3)_+_1px)]/cover-list:[--cover-list-item-width:25%]
           @min-[calc((250px_*_4)_+_1px)]/cover-list:[--cover-list-item-width:20%]
           @min-[calc((250px_*_5)_+_1px)]/cover-list:[--cover-list-item-width:16.66%]
-          
+          bg-subtle
         "
                         >
                           <li

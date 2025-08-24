@@ -2308,7 +2308,10 @@ exports[`YearStats > matches snapshot for slug 2012 1`] = `
                 "
                   >
                     <details
-                      class="bg-subtle px-2"
+                      class="
+                    rounded-sm bg-canvas px-2
+                    open:pb-2
+                  "
                     >
                       <summary
                         class="
@@ -2330,7 +2333,7 @@ exports[`YearStats > matches snapshot for slug 2012 1`] = `
           @min-[calc((250px_*_3)_+_1px)]/cover-list:[--cover-list-item-width:25%]
           @min-[calc((250px_*_4)_+_1px)]/cover-list:[--cover-list-item-width:20%]
           @min-[calc((250px_*_5)_+_1px)]/cover-list:[--cover-list-item-width:16.66%]
-          
+          bg-subtle
         "
                         >
                           <li
@@ -4100,7 +4103,10 @@ exports[`YearStats > matches snapshot for slug 2014 1`] = `
                 "
                   >
                     <details
-                      class="bg-subtle px-2"
+                      class="
+                    rounded-sm bg-canvas px-2
+                    open:pb-2
+                  "
                     >
                       <summary
                         class="
@@ -4122,7 +4128,7 @@ exports[`YearStats > matches snapshot for slug 2014 1`] = `
           @min-[calc((250px_*_3)_+_1px)]/cover-list:[--cover-list-item-width:25%]
           @min-[calc((250px_*_4)_+_1px)]/cover-list:[--cover-list-item-width:20%]
           @min-[calc((250px_*_5)_+_1px)]/cover-list:[--cover-list-item-width:16.66%]
-          
+          bg-subtle
         "
                         >
                           <li
@@ -5695,7 +5701,10 @@ exports[`YearStats > matches snapshot for slug 2014 1`] = `
                 "
                   >
                     <details
-                      class="bg-subtle px-2"
+                      class="
+                    rounded-sm bg-canvas px-2
+                    open:pb-2
+                  "
                     >
                       <summary
                         class="
@@ -5717,7 +5726,7 @@ exports[`YearStats > matches snapshot for slug 2014 1`] = `
           @min-[calc((250px_*_3)_+_1px)]/cover-list:[--cover-list-item-width:25%]
           @min-[calc((250px_*_4)_+_1px)]/cover-list:[--cover-list-item-width:20%]
           @min-[calc((250px_*_5)_+_1px)]/cover-list:[--cover-list-item-width:16.66%]
-          
+          bg-subtle
         "
                         >
                           <li
@@ -8332,7 +8341,10 @@ exports[`YearStats > matches snapshot for slug 2015 1`] = `
                 "
                   >
                     <details
-                      class="bg-subtle px-2"
+                      class="
+                    rounded-sm bg-canvas px-2
+                    open:pb-2
+                  "
                     >
                       <summary
                         class="
@@ -8354,7 +8366,7 @@ exports[`YearStats > matches snapshot for slug 2015 1`] = `
           @min-[calc((250px_*_3)_+_1px)]/cover-list:[--cover-list-item-width:25%]
           @min-[calc((250px_*_4)_+_1px)]/cover-list:[--cover-list-item-width:20%]
           @min-[calc((250px_*_5)_+_1px)]/cover-list:[--cover-list-item-width:16.66%]
-          
+          bg-subtle
         "
                         >
                           <li
@@ -16302,7 +16314,10 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
                 "
                   >
                     <details
-                      class="bg-subtle px-2"
+                      class="
+                    rounded-sm bg-canvas px-2
+                    open:pb-2
+                  "
                     >
                       <summary
                         class="
@@ -16324,7 +16339,7 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
           @min-[calc((250px_*_3)_+_1px)]/cover-list:[--cover-list-item-width:25%]
           @min-[calc((250px_*_4)_+_1px)]/cover-list:[--cover-list-item-width:20%]
           @min-[calc((250px_*_5)_+_1px)]/cover-list:[--cover-list-item-width:16.66%]
-          
+          bg-subtle
         "
                         >
                           <li
@@ -17298,7 +17313,10 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
                 "
                   >
                     <details
-                      class="bg-subtle px-2"
+                      class="
+                    rounded-sm bg-canvas px-2
+                    open:pb-2
+                  "
                     >
                       <summary
                         class="
@@ -17320,7 +17338,7 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
           @min-[calc((250px_*_3)_+_1px)]/cover-list:[--cover-list-item-width:25%]
           @min-[calc((250px_*_4)_+_1px)]/cover-list:[--cover-list-item-width:20%]
           @min-[calc((250px_*_5)_+_1px)]/cover-list:[--cover-list-item-width:16.66%]
-          
+          bg-subtle
         "
                         >
                           <li
@@ -17742,7 +17760,10 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
                 "
                   >
                     <details
-                      class="bg-subtle px-2"
+                      class="
+                    rounded-sm bg-canvas px-2
+                    open:pb-2
+                  "
                     >
                       <summary
                         class="
@@ -17764,7 +17785,7 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
           @min-[calc((250px_*_3)_+_1px)]/cover-list:[--cover-list-item-width:25%]
           @min-[calc((250px_*_4)_+_1px)]/cover-list:[--cover-list-item-width:20%]
           @min-[calc((250px_*_5)_+_1px)]/cover-list:[--cover-list-item-width:16.66%]
-          
+          bg-subtle
         "
                         >
                           <li
@@ -18186,7 +18207,10 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
                 "
                   >
                     <details
-                      class="bg-subtle px-2"
+                      class="
+                    rounded-sm bg-canvas px-2
+                    open:pb-2
+                  "
                     >
                       <summary
                         class="
@@ -18208,7 +18232,7 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
           @min-[calc((250px_*_3)_+_1px)]/cover-list:[--cover-list-item-width:25%]
           @min-[calc((250px_*_4)_+_1px)]/cover-list:[--cover-list-item-width:20%]
           @min-[calc((250px_*_5)_+_1px)]/cover-list:[--cover-list-item-width:16.66%]
-          
+          bg-subtle
         "
                         >
                           <li
@@ -18538,7 +18562,10 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
                 "
                   >
                     <details
-                      class="bg-subtle px-2"
+                      class="
+                    rounded-sm bg-canvas px-2
+                    open:pb-2
+                  "
                     >
                       <summary
                         class="
@@ -18560,7 +18587,7 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
           @min-[calc((250px_*_3)_+_1px)]/cover-list:[--cover-list-item-width:25%]
           @min-[calc((250px_*_4)_+_1px)]/cover-list:[--cover-list-item-width:20%]
           @min-[calc((250px_*_5)_+_1px)]/cover-list:[--cover-list-item-width:16.66%]
-          
+          bg-subtle
         "
                         >
                           <li
@@ -18798,7 +18825,10 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
                 "
                   >
                     <details
-                      class="bg-subtle px-2"
+                      class="
+                    rounded-sm bg-canvas px-2
+                    open:pb-2
+                  "
                     >
                       <summary
                         class="
@@ -18820,7 +18850,7 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
           @min-[calc((250px_*_3)_+_1px)]/cover-list:[--cover-list-item-width:25%]
           @min-[calc((250px_*_4)_+_1px)]/cover-list:[--cover-list-item-width:20%]
           @min-[calc((250px_*_5)_+_1px)]/cover-list:[--cover-list-item-width:16.66%]
-          
+          bg-subtle
         "
                         >
                           <li
@@ -20950,7 +20980,10 @@ exports[`YearStats > matches snapshot for slug 2023 1`] = `
                 "
                   >
                     <details
-                      class="bg-subtle px-2"
+                      class="
+                    rounded-sm bg-canvas px-2
+                    open:pb-2
+                  "
                     >
                       <summary
                         class="
@@ -20972,7 +21005,7 @@ exports[`YearStats > matches snapshot for slug 2023 1`] = `
           @min-[calc((250px_*_3)_+_1px)]/cover-list:[--cover-list-item-width:25%]
           @min-[calc((250px_*_4)_+_1px)]/cover-list:[--cover-list-item-width:20%]
           @min-[calc((250px_*_5)_+_1px)]/cover-list:[--cover-list-item-width:16.66%]
-          
+          bg-subtle
         "
                         >
                           <li
@@ -21210,7 +21243,10 @@ exports[`YearStats > matches snapshot for slug 2023 1`] = `
                 "
                   >
                     <details
-                      class="bg-subtle px-2"
+                      class="
+                    rounded-sm bg-canvas px-2
+                    open:pb-2
+                  "
                     >
                       <summary
                         class="
@@ -21232,7 +21268,7 @@ exports[`YearStats > matches snapshot for slug 2023 1`] = `
           @min-[calc((250px_*_3)_+_1px)]/cover-list:[--cover-list-item-width:25%]
           @min-[calc((250px_*_4)_+_1px)]/cover-list:[--cover-list-item-width:20%]
           @min-[calc((250px_*_5)_+_1px)]/cover-list:[--cover-list-item-width:16.66%]
-          
+          bg-subtle
         "
                         >
                           <li

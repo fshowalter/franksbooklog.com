@@ -2,7 +2,6 @@
 work_slug: goth-by-lol-tolhurst
 grade: C
 date: 2024-11-08
-synopsis: Former Cure drummer Lol Tolhurst traces the Goth movement from its literary and musical origins through post-punk pioneers to modern-day standard bearers.
 ---
 
 Former Cure drummer and keyboardist Lol Tolhurst chronicles the Goth movement from its historical roots, through its post-punk inception to modern day.

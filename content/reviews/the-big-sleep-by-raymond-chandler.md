@@ -2,7 +2,6 @@
 work_slug: the-big-sleep-by-raymond-chandler
 grade: C+
 date: 2022-09-24
-synopsis: Private investigator Philip Marlowe takes on an aging tycoon's blackmail case that spirals into a complex web of murders in 1930s Los Angeles.
 ---
 
 Raymond Chandler's debut novel follows Los Angeles private investigator Philip Marlowe on an aging tycoon's blackmail case that spirals into a labyrinthine series of murders.

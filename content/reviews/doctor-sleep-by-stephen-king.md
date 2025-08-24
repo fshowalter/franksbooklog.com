@@ -2,7 +2,6 @@
 work_slug: doctor-sleep-by-stephen-king
 grade: C+
 date: 2023-01-14
-synopsis: Middle-aged recovering alcoholic Dan Torrance must protect a young girl with powerful psychic abilities from a group of immortal psychic vampires called the True Knot.
 ---
 
 Stephen King’s sequel to <span data-work-slug="the-shining-by-stephen-king">_The Shining_</span> finds Dan Torrance a middle-aged recovering alcoholic living in New Hampshire and working as a hospice orderly. He uses his unique gifts to comfort residents as they transition to the other side.

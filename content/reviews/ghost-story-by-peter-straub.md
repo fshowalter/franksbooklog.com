@@ -2,7 +2,6 @@
 work_slug: ghost-story-by-peter-straub
 grade: B
 date: 2024-12-01
-synopsis: A group of elderly men in upstate New York, haunted by nightmares since their friend's death, summon a young author to help them combat an ancient shapeshifting evil that has descended upon their town.
 ---
 
 _Ghost Story_ is an uneven--yet at times startlingly effective--supernatural horror with memorable characters and a vivid small-town setting. Just don't expect traditional ghosts.

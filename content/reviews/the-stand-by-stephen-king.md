@@ -2,7 +2,6 @@
 work_slug: the-stand-by-stephen-king
 grade: D
 date: 2014-03-02
-synopsis: After a weaponized super flu wipes out most of humanity, survivors must choose between good and evil leaders in a post-apocalyptic battle for mankind's future.
 ---
 
 After a weaponized super flu wipes out 99.4% of the world's population in a matter of weeks, the survivors find themselves drawn to one of two enigmatic figures. Abagail Freemantle, an elderly, spiritual, woman representing good, or Randall Flagg, a dark, sinister man representing a ageless evil. Those drawn to Freemantle eventually settle in Boulder, Colorado where they set about rebuilding society, but it soon becomes clear that a chosen few of their group will have to travel west to Las Vegas, and make a stand against the dark man.

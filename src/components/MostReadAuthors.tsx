@@ -84,7 +84,12 @@ export function MostReadAuthors({
                   tablet:px-0
                 `}
               >
-                <details className={`bg-subtle px-2`}>
+                <details
+                  className={`
+                    rounded-sm bg-canvas px-2
+                    open:pb-2
+                  `}
+                >
                   <summary
                     className={`
                       cursor-pointer rounded-sm py-1 font-sans text-xs
@@ -93,7 +98,7 @@ export function MostReadAuthors({
                   >
                     Details
                   </summary>
-                  <CoverList>
+                  <CoverList className="bg-subtle">
                     {value.readings.map((reading) => {
                       return (
                         <MostReadAuthorReadingListItem
