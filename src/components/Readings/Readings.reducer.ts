@@ -307,8 +307,8 @@ function getMonthReadings(
   values: ListItemValue[],
   month: Date,
 ): ListItemValue[] {
-  const year = month.getFullYear();
-  const monthIndex = month.getMonth();
+  const year = month.getUTCFullYear();
+  const monthIndex = month.getUTCMonth();
 
   return values.filter((value) => {
     const readingDate = new Date(value.readingDate);
@@ -336,16 +336,15 @@ function getMostRecentMonth(values: ListItemValue[]): Date {
   }
 
   // Get the most recent reading date
+  // Note: Higher timelineSequence = more recent
   const sortedValues = [...values].sort(
     (a, b) => b.timelineSequence - a.timelineSequence,
   );
   const mostRecentDate = new Date(sortedValues[0].readingDate);
 
-  // Create a date for the first day of that month
+  // Create a UTC date for the first day of that month
   return new Date(
-    mostRecentDate.getUTCFullYear(),
-    mostRecentDate.getUTCMonth(),
-    1,
+    Date.UTC(mostRecentDate.getUTCFullYear(), mostRecentDate.getUTCMonth(), 1),
   );
 }
 
@@ -360,11 +359,13 @@ function getNextMonthWithReadings(
 
   while (checkMonth < mostRecent) {
     checkMonth = new Date(
-      checkMonth.getFullYear(),
-      checkMonth.getMonth() + 1,
-      1,
+      Date.UTC(
+        checkMonth.getUTCFullYear(),
+        checkMonth.getUTCMonth() + 1,
+        1,
+      ),
     );
-    const monthKey = `${checkMonth.getFullYear()}-${checkMonth.getMonth()}`;
+    const monthKey = `${checkMonth.getUTCFullYear()}-${checkMonth.getUTCMonth()}`;
     if (monthsWithReadings.has(monthKey)) {
       return checkMonth;
     }
@@ -378,13 +379,16 @@ function getOldestMonth(values: ListItemValue[]): Date {
   }
 
   // Get the oldest reading date
+  // Note: Lower timelineSequence = older
   const sortedValues = [...values].sort(
     (a, b) => a.timelineSequence - b.timelineSequence,
   );
   const oldestDate = new Date(sortedValues[0].readingDate);
 
-  // Create a date for the first day of that month
-  return new Date(oldestDate.getUTCFullYear(), oldestDate.getUTCMonth(), 1);
+  // Create a UTC date for the first day of that month
+  return new Date(
+    Date.UTC(oldestDate.getUTCFullYear(), oldestDate.getUTCMonth(), 1),
+  );
 }
 
 // Get previous month that has reading
@@ -398,11 +402,13 @@ function getPrevMonthWithReadings(
 
   while (checkMonth > oldest) {
     checkMonth = new Date(
-      checkMonth.getFullYear(),
-      checkMonth.getMonth() - 1,
-      1,
+      Date.UTC(
+        checkMonth.getUTCFullYear(),
+        checkMonth.getUTCMonth() - 1,
+        1,
+      ),
     );
-    const monthKey = `${checkMonth.getFullYear()}-${checkMonth.getMonth()}`;
+    const monthKey = `${checkMonth.getUTCFullYear()}-${checkMonth.getUTCMonth()}`;
     if (monthsWithReadings.has(monthKey)) {
       return checkMonth;
     }
@@ -441,6 +447,7 @@ const groupValuesSortedBySequence: GroupFn<ListItemValue, Sort> = (
 };
 
 const sortValues = buildSortValues<ListItemValue, Sort>({
-  "reading-date-asc": (a, b) => a.timelineSequence - b.timelineSequence,
-  "reading-date-desc": (a, b) => b.timelineSequence - a.timelineSequence,
+  // Note: Lower timelineSequence = older date (in real data)
+  "reading-date-asc": (a, b) => a.timelineSequence - b.timelineSequence,  // Oldest first
+  "reading-date-desc": (a, b) => b.timelineSequence - a.timelineSequence, // Newest first
 });

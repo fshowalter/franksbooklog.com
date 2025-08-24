@@ -6,7 +6,7 @@ import type { CoverImageProps } from "~/api/covers";
 import type { TimelineEntry } from "~/api/timelineEntries";
 
 import { BarGradient } from "~/components/BarGradient";
-import { CoverListItem } from "~/components/CoverList";
+import { CoverListItemCover } from "~/components/CoverList";
 import { ListItemAuthors } from "~/components/ListItemAuthors";
 import { ListItemTitle } from "~/components/ListItemTitle";
 import {
@@ -220,27 +220,41 @@ function CalendarDay({ day }: { day: CalendarDayData }): JSX.Element {
         {day.date}
       </div>
       {day.readings.length > 0 && (
-        <div className="@container/poster-list">
+        <div className="@container/cover-list">
           <ol
             className={`
               flex flex-col
-              [--poster-list-item-width:33.33%]
-              tablet:flex-row tablet:flex-wrap
+              [--cover-list-item-width:33.33%]
+              tablet:flex-row tablet:flex-wrap tablet:items-baseline
               tablet-landscape:flex-col
-              tablet-landscape:[--poster-list-item-width:100%]
-              @min-[calc((250px_*_3)_+_1px)]/poster-list:[--poster-list-item-width:25%]
+              tablet-landscape:[--cover-list-item-width:100%]
+              @min-[calc((250px_*_3)_+_1px)]/cover-list:[--cover-list-item-width:25%]
             `}
           >
             {day.readings.map((reading) => (
-              <CoverListItem
-                className="items-center"
-                coverImageProps={reading.coverImageProps}
+              <li
+                className={`
+                  group/list-item relative mb-1 flex w-full
+                  max-w-(--breakpoint-desktop) transform-gpu flex-row gap-x-[5%]
+                  bg-default px-container py-4 transition-transform
+                  tablet-landscape:w-(--cover-list-item-width)
+                  tablet-landscape:flex-col tablet-landscape:items-center
+                  tablet-landscape:bg-transparent tablet-landscape:px-6
+                  tablet-landscape:py-6
+                  tablet-landscape:has-[a:hover]:-translate-y-2
+                  tablet-landscape:has-[a:hover]:bg-default
+                  tablet-landscape:has-[a:hover]:drop-shadow-2xl
+                `}
                 key={reading.timelineSequence}
               >
+                <CoverListItemCover
+                  className="tablet-landscape:w-auto"
+                  imageProps={reading.coverImageProps}
+                />
                 <div
                   className={`
-                    flex grow flex-col items-start gap-y-1
-                    tablet:mt-2 tablet:w-full tablet:px-1
+                    flex grow flex-col items-start gap-y-2
+                    tablet:mt-2 tablet:w-full tablet:gap-y-1 tablet:px-1
                   `}
                 >
                   <ListItemTitle
@@ -276,7 +290,7 @@ function CalendarDay({ day }: { day: CalendarDayData }): JSX.Element {
                     </div>
                   )}
                 </div>
-              </CoverListItem>
+              </li>
             ))}
           </ol>
         </div>
@@ -466,12 +480,12 @@ function getCalendarDays(
   month: Date,
   groupedValues: Map<string, ListItemValue[]>,
 ): CalendarDayData[] {
-  const year = month.getFullYear();
-  const monthIndex = month.getMonth();
-  const firstDay = new Date(year, monthIndex, 1);
-  const lastDay = new Date(year, monthIndex + 1, 0);
-  const startPadding = firstDay.getDay();
-  const daysInMonth = lastDay.getDate();
+  const year = month.getUTCFullYear();
+  const monthIndex = month.getUTCMonth();
+  const firstDay = new Date(Date.UTC(year, monthIndex, 1));
+  const lastDay = new Date(Date.UTC(year, monthIndex + 1, 0));
+  const startPadding = firstDay.getUTCDay();
+  const daysInMonth = lastDay.getUTCDate();
 
   const days: CalendarDayData[] = [];
   const weekdays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
@@ -483,8 +497,8 @@ function getCalendarDays(
 
   // Add days of the month
   for (let date = 1; date <= daysInMonth; date++) {
-    const currentDate = new Date(year, monthIndex, date);
-    const weekday = weekdays[currentDate.getDay()];
+    const currentDate = new Date(Date.UTC(year, monthIndex, date));
+    const weekday = weekdays[currentDate.getUTCDay()];
 
     // Use pre-indexed viewings for O(1) lookup
     // Key format: "year-month-day" without padding

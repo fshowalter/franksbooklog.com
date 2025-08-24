@@ -43,7 +43,7 @@ export function YearStats({
         title={`${year} Stats`}
       />
       <StatsNavigation
-        className="mb-12 w-full"
+        className="z-10 mb-12 w-full"
         currentYear={year}
         linkFunc={(year: string) => {
           if (year === "all") {

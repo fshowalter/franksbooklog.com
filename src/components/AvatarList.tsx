@@ -70,6 +70,7 @@ export function GroupedAvatarList<T>({
         className={`
           ${className ?? ""}
         `}
+        data-testid="grouped-avatar-list"
         {...rest}
       >
         {[...groupedValues].map((groupedValue) => {

@@ -49,7 +49,10 @@ describe("/reviews/:slug/og.jpg", () => {
 
       const snapshot = fs.readFileSync(snapshotFile);
 
-      void expect(result.compare(snapshot)).toBe(0);
+      void expect(
+        result.compare(snapshot),
+        `OG snapshot mismatch for ${review.slug}`,
+      ).toBe(0);
     },
   );
 });

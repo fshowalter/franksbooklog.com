@@ -4,7 +4,7 @@ import type { Author } from "~/api/authors";
 import type { AvatarImageProps } from "~/api/avatars";
 import type { BackdropImageProps } from "~/api/backdrops";
 
-import { AvatarListItem } from "~/components/AvatarList";
+import { AvatarListItem, GroupedAvatarList } from "~/components/AvatarList";
 import { GroupedList } from "~/components/GroupedList";
 import { ListWithFilters } from "~/components/ListWithFilters";
 
@@ -62,15 +62,12 @@ export function Authors({
         />
       }
       list={
-        <GroupedList
-          data-testid="list"
+        <GroupedAvatarList
           groupedValues={state.groupedValues}
           groupItemClassName={`scroll-mt-[calc(52px_+_var(--list-scroll-offset))]`}
-          totalCount={state.filteredValues.length}
-          visibleCount={state.filteredValues.length}
         >
           {(value) => <AuthorListItem key={value.slug} value={value} />}
-        </GroupedList>
+        </GroupedAvatarList>
       }
       onApplyFilters={() => dispatch({ type: Actions.APPLY_PENDING_FILTERS })}
       onClearFilters={() => {

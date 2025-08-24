@@ -65,7 +65,7 @@ export const BackdropImageConfig = {
 
 export function Backdrop({
   blur = false,
-  bottomShadow = false,
+  bottomShadow = true,
   breadcrumb,
   centerText = false,
   deck,
@@ -198,7 +198,7 @@ function Title({
 }
 
 function Wrapper({
-  bottomShadow = false,
+  bottomShadow = true,
   centerText = false,
   children,
   heroImage,
