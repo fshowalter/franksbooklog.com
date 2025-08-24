@@ -437,6 +437,11 @@ exports[`YearStats > matches snapshot for slug 2011 1`] = `
           z-10 mx-auto flex w-full max-w-(--breakpoint-desktop) flex-col
           px-container
           
+                after:absolute after:top-0 after:left-0 after:-z-10 after:h-full
+                after:w-full after:bg-linear-to-t after:from-[rgba(0,0,0,.85)]
+                after:to-50%
+                tablet:after:to-25%
+              
         "
           >
             <p
@@ -479,7 +484,7 @@ exports[`YearStats > matches snapshot for slug 2011 1`] = `
           </div>
         </header>
         <nav
-          class="bg-footer mb-12 w-full"
+          class="bg-footer z-10 mb-12 w-full"
         >
           <ul
             class="
@@ -1799,6 +1804,11 @@ exports[`YearStats > matches snapshot for slug 2012 1`] = `
           z-10 mx-auto flex w-full max-w-(--breakpoint-desktop) flex-col
           px-container
           
+                after:absolute after:top-0 after:left-0 after:-z-10 after:h-full
+                after:w-full after:bg-linear-to-t after:from-[rgba(0,0,0,.85)]
+                after:to-50%
+                tablet:after:to-25%
+              
         "
           >
             <p
@@ -1841,7 +1851,7 @@ exports[`YearStats > matches snapshot for slug 2012 1`] = `
           </div>
         </header>
         <nav
-          class="bg-footer mb-12 w-full"
+          class="bg-footer z-10 mb-12 w-full"
         >
           <ul
             class="
@@ -3586,6 +3596,11 @@ exports[`YearStats > matches snapshot for slug 2014 1`] = `
           z-10 mx-auto flex w-full max-w-(--breakpoint-desktop) flex-col
           px-container
           
+                after:absolute after:top-0 after:left-0 after:-z-10 after:h-full
+                after:w-full after:bg-linear-to-t after:from-[rgba(0,0,0,.85)]
+                after:to-50%
+                tablet:after:to-25%
+              
         "
           >
             <p
@@ -3628,7 +3643,7 @@ exports[`YearStats > matches snapshot for slug 2014 1`] = `
           </div>
         </header>
         <nav
-          class="bg-footer mb-12 w-full"
+          class="bg-footer z-10 mb-12 w-full"
         >
           <ul
             class="
@@ -7813,6 +7828,11 @@ exports[`YearStats > matches snapshot for slug 2015 1`] = `
           z-10 mx-auto flex w-full max-w-(--breakpoint-desktop) flex-col
           px-container
           
+                after:absolute after:top-0 after:left-0 after:-z-10 after:h-full
+                after:w-full after:bg-linear-to-t after:from-[rgba(0,0,0,.85)]
+                after:to-50%
+                tablet:after:to-25%
+              
         "
           >
             <p
@@ -7855,7 +7875,7 @@ exports[`YearStats > matches snapshot for slug 2015 1`] = `
           </div>
         </header>
         <nav
-          class="bg-footer mb-12 w-full"
+          class="bg-footer z-10 mb-12 w-full"
         >
           <ul
             class="
@@ -9626,6 +9646,11 @@ exports[`YearStats > matches snapshot for slug 2016 1`] = `
           z-10 mx-auto flex w-full max-w-(--breakpoint-desktop) flex-col
           px-container
           
+                after:absolute after:top-0 after:left-0 after:-z-10 after:h-full
+                after:w-full after:bg-linear-to-t after:from-[rgba(0,0,0,.85)]
+                after:to-50%
+                tablet:after:to-25%
+              
         "
           >
             <p
@@ -9668,7 +9693,7 @@ exports[`YearStats > matches snapshot for slug 2016 1`] = `
           </div>
         </header>
         <nav
-          class="bg-footer mb-12 w-full"
+          class="bg-footer z-10 mb-12 w-full"
         >
           <ul
             class="
@@ -11240,6 +11265,11 @@ exports[`YearStats > matches snapshot for slug 2017 1`] = `
           z-10 mx-auto flex w-full max-w-(--breakpoint-desktop) flex-col
           px-container
           
+                after:absolute after:top-0 after:left-0 after:-z-10 after:h-full
+                after:w-full after:bg-linear-to-t after:from-[rgba(0,0,0,.85)]
+                after:to-50%
+                tablet:after:to-25%
+              
         "
           >
             <p
@@ -11282,7 +11312,7 @@ exports[`YearStats > matches snapshot for slug 2017 1`] = `
           </div>
         </header>
         <nav
-          class="bg-footer mb-12 w-full"
+          class="bg-footer z-10 mb-12 w-full"
         >
           <ul
             class="
@@ -12926,6 +12956,11 @@ exports[`YearStats > matches snapshot for slug 2018 1`] = `
           z-10 mx-auto flex w-full max-w-(--breakpoint-desktop) flex-col
           px-container
           
+                after:absolute after:top-0 after:left-0 after:-z-10 after:h-full
+                after:w-full after:bg-linear-to-t after:from-[rgba(0,0,0,.85)]
+                after:to-50%
+                tablet:after:to-25%
+              
         "
           >
             <p
@@ -12968,7 +13003,7 @@ exports[`YearStats > matches snapshot for slug 2018 1`] = `
           </div>
         </header>
         <nav
-          class="bg-footer mb-12 w-full"
+          class="bg-footer z-10 mb-12 w-full"
         >
           <ul
             class="
@@ -14396,6 +14431,11 @@ exports[`YearStats > matches snapshot for slug 2019 1`] = `
           z-10 mx-auto flex w-full max-w-(--breakpoint-desktop) flex-col
           px-container
           
+                after:absolute after:top-0 after:left-0 after:-z-10 after:h-full
+                after:w-full after:bg-linear-to-t after:from-[rgba(0,0,0,.85)]
+                after:to-50%
+                tablet:after:to-25%
+              
         "
           >
             <p
@@ -14438,7 +14478,7 @@ exports[`YearStats > matches snapshot for slug 2019 1`] = `
           </div>
         </header>
         <nav
-          class="bg-footer mb-12 w-full"
+          class="bg-footer z-10 mb-12 w-full"
         >
           <ul
             class="
@@ -15758,6 +15798,11 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
           z-10 mx-auto flex w-full max-w-(--breakpoint-desktop) flex-col
           px-container
           
+                after:absolute after:top-0 after:left-0 after:-z-10 after:h-full
+                after:w-full after:bg-linear-to-t after:from-[rgba(0,0,0,.85)]
+                after:to-50%
+                tablet:after:to-25%
+              
         "
           >
             <p
@@ -15800,7 +15845,7 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
           </div>
         </header>
         <nav
-          class="bg-footer mb-12 w-full"
+          class="bg-footer z-10 mb-12 w-full"
         >
           <ul
             class="
@@ -16427,8 +16472,8 @@ exports[`YearStats > matches snapshot for slug 2022 1`] = `
                                     height="375"
                                     loading="lazy"
                                     sizes="(min-width: 1800px) 216px, (min-width: 1380px) calc(13.25vw - 20px), (min-width: 1280px) calc(20vw - 70px), (min-width: 1060px) calc(20vw - 57px), (min-width: 800px) calc(25vw - 60px), (min-width: 680px) calc(33vw - 61px), calc(23.06vw + 4px)"
-                                    src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=120&q=80&f=avif"
-                                    srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=30&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=60&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=120&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=240&q=80&f=avif 160w"
+                                    src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Faltar-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=120&q=80&f=avif"
+                                    srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Faltar-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=20&h=30&q=80&f=avif 20w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Faltar-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=40&h=60&q=80&f=avif 40w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Faltar-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=80&h=120&q=80&f=avif 80w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Faltar-by-philip-fracassi.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=160&h=240&q=80&f=avif 160w"
                                     width="250"
                                   />
                                 </div>
@@ -20401,6 +20446,11 @@ exports[`YearStats > matches snapshot for slug 2023 1`] = `
           z-10 mx-auto flex w-full max-w-(--breakpoint-desktop) flex-col
           px-container
           
+                after:absolute after:top-0 after:left-0 after:-z-10 after:h-full
+                after:w-full after:bg-linear-to-t after:from-[rgba(0,0,0,.85)]
+                after:to-50%
+                tablet:after:to-25%
+              
         "
           >
             <p
@@ -20443,7 +20493,7 @@ exports[`YearStats > matches snapshot for slug 2023 1`] = `
           </div>
         </header>
         <nav
-          class="bg-footer mb-12 w-full"
+          class="bg-footer z-10 mb-12 w-full"
         >
           <ul
             class="
@@ -22592,6 +22642,11 @@ exports[`YearStats > matches snapshot for slug 2024 1`] = `
           z-10 mx-auto flex w-full max-w-(--breakpoint-desktop) flex-col
           px-container
           
+                after:absolute after:top-0 after:left-0 after:-z-10 after:h-full
+                after:w-full after:bg-linear-to-t after:from-[rgba(0,0,0,.85)]
+                after:to-50%
+                tablet:after:to-25%
+              
         "
           >
             <p
@@ -22634,7 +22689,7 @@ exports[`YearStats > matches snapshot for slug 2024 1`] = `
           </div>
         </header>
         <nav
-          class="bg-footer mb-12 w-full"
+          class="bg-footer z-10 mb-12 w-full"
         >
           <ul
             class="
@@ -24098,6 +24153,11 @@ exports[`YearStats > matches snapshot for slug 2025 1`] = `
           z-10 mx-auto flex w-full max-w-(--breakpoint-desktop) flex-col
           px-container
           
+                after:absolute after:top-0 after:left-0 after:-z-10 after:h-full
+                after:w-full after:bg-linear-to-t after:from-[rgba(0,0,0,.85)]
+                after:to-50%
+                tablet:after:to-25%
+              
         "
           >
             <p
@@ -24140,7 +24200,7 @@ exports[`YearStats > matches snapshot for slug 2025 1`] = `
           </div>
         </header>
         <nav
-          class="bg-footer mb-12 w-full"
+          class="bg-footer z-10 mb-12 w-full"
         >
           <ul
             class="

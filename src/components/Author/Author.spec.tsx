@@ -17,7 +17,7 @@ describe("Author", () => {
       await new Promise((r) => setTimeout(r, 500));
     });
 
-    expect(screen.getByTestId("list")).toMatchSnapshot();
+    expect(screen.getByTestId("grouped-cover-list")).toMatchSnapshot();
   });
 
   it("can sort by title a->z", async ({ expect }) => {
@@ -30,7 +30,7 @@ describe("Author", () => {
       "Title (A → Z)",
     );
 
-    expect(screen.getByTestId("list")).toMatchSnapshot();
+    expect(screen.getByTestId("grouped-cover-list")).toMatchSnapshot();
   });
 
   it("can sort by title z->a", async ({ expect }) => {
@@ -43,10 +43,10 @@ describe("Author", () => {
       "Title (Z → A)",
     );
 
-    expect(screen.getByTestId("list")).toMatchSnapshot();
+    expect(screen.getByTestId("grouped-cover-list")).toMatchSnapshot();
   });
 
-  it("can sort by year published with oldest first", async ({ expect }) => {
+  it("can sort by work year with oldest first", async ({ expect }) => {
     expect.hasAssertions();
 
     render(<Author {...props} />);
@@ -56,10 +56,10 @@ describe("Author", () => {
       "Work Year (Oldest First)",
     );
 
-    expect(screen.getByTestId("list")).toMatchSnapshot();
+    expect(screen.getByTestId("grouped-cover-list")).toMatchSnapshot();
   });
 
-  it("can sort by year published with newest first", async ({ expect }) => {
+  it("can sort by work year with newest first", async ({ expect }) => {
     expect.hasAssertions();
 
     render(<Author {...props} />);
@@ -69,7 +69,7 @@ describe("Author", () => {
       "Work Year (Newest First)",
     );
 
-    expect(screen.getByTestId("list")).toMatchSnapshot();
+    expect(screen.getByTestId("grouped-cover-list")).toMatchSnapshot();
   });
 
   it("can sort by grade with best first", async ({ expect }) => {
@@ -82,7 +82,7 @@ describe("Author", () => {
       "Grade (Best First)",
     );
 
-    expect(screen.getByTestId("list")).toMatchSnapshot();
+    expect(screen.getByTestId("grouped-cover-list")).toMatchSnapshot();
   });
 
   it("can sort by grade with worst first", async ({ expect }) => {
@@ -95,7 +95,7 @@ describe("Author", () => {
       "Grade (Worst First)",
     );
 
-    expect(screen.getByTestId("list")).toMatchSnapshot();
+    expect(screen.getByTestId("grouped-cover-list")).toMatchSnapshot();
   });
 
   it("can filter by kind", async ({ expect }) => {
@@ -104,7 +104,7 @@ describe("Author", () => {
 
     await userEvent.selectOptions(screen.getByLabelText("Kind"), "Novel");
 
-    expect(screen.getByTestId("list")).toMatchSnapshot();
+    expect(screen.getByTestId("grouped-cover-list")).toMatchSnapshot();
   });
 
   it("can filter by year published", async ({ expect }) => {
@@ -119,7 +119,7 @@ describe("Author", () => {
     await userEvent.selectOptions(fromInput, "1980");
     await userEvent.selectOptions(toInput, "1985");
 
-    expect(screen.getByTestId("list")).toMatchSnapshot();
+    expect(screen.getByTestId("grouped-cover-list")).toMatchSnapshot();
   });
 
   it("can show more items when button is clicked", async ({ expect }) => {
@@ -127,7 +127,7 @@ describe("Author", () => {
 
     // Create many test items to trigger pagination (need more than 100)
     const manyWorks = Array.from({ length: 150 }, (_, i) => ({
-      ...props.works[0], // Use first work as template
+      ...props.values[0], // Use first work as template
       slug: `test-work-${i}`,
       sortTitle: `Test Work ${i}`,
       title: `Test Work ${i}`,
@@ -135,7 +135,7 @@ describe("Author", () => {
 
     const testProps = {
       ...props,
-      works: manyWorks,
+      values: manyWorks,
     };
 
     render(<Author {...testProps} />);
@@ -147,6 +147,6 @@ describe("Author", () => {
     await userEvent.click(showMoreButton);
 
     // Snapshot the result to verify more items are rendered
-    expect(screen.getByTestId("list")).toMatchSnapshot();
+    expect(screen.getByTestId("grouped-cover-list")).toMatchSnapshot();
   });
 });

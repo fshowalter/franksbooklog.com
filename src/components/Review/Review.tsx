@@ -93,7 +93,7 @@ export function Review({
             tablet:mb-6
           `}
           kind={value.kind}
-          yearPublished={value.workYear}
+          workYear={value.workYear}
         />
         <ReviewCover coverImageProps={coverImageProps} />
         <div
@@ -269,15 +269,15 @@ function ReviewGrade({ value }: { value: ReviewWithContent["grade"] }) {
 function YearAndKind({
   className,
   kind,
-  yearPublished,
+  workYear,
 }: {
   className: string;
   kind: ReviewWithContent["kind"];
-  yearPublished: ReviewWithContent["yearPublished"];
+  workYear: ReviewWithContent["workYear"];
 }) {
   return (
     <div className={className}>
-      <span className="tracking-wide">{yearPublished}</span> | {kind}
+      <span className="tracking-wide">{workYear}</span> | {kind}
     </div>
   );
 }

@@ -42,7 +42,7 @@ export function AlltimeStats({
         title="All-Time Stats"
       />
       <StatsNavigation
-        className="mb-12 w-full"
+        className="z-10 mb-12 w-full"
         currentYear={"all"}
         linkFunc={(year: string) => {
           return `/readings/stats/${year}/`;
