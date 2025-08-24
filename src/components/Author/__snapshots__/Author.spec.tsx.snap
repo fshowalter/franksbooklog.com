@@ -1,5 +1,1621 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
+exports[`Author > can clear all filters 1`] = `
+<ol
+  data-testid="grouped-cover-list"
+>
+  <li
+    class="
+        block
+        first-of-type:mt-4
+        
+      "
+    id="2000"
+  >
+    <div
+      class="pt-0 text-md"
+    >
+      <div
+        class="
+            max-w-(--breakpoint-desktop) bg-subtle px-container py-4 text-xl
+            leading-8
+            tablet:px-1
+          "
+      >
+        2000
+      </div>
+    </div>
+    <div
+      class="bg-subtle"
+    >
+       
+      <div
+        class="tablet:-mx-6"
+      >
+        <div
+          class="@container/cover-list"
+        >
+          <ol
+            class="
+          items-baseline
+          [--cover-list-item-width:50%]
+          tablet:flex tablet:flex-wrap
+          @min-[calc((250px_*_2)_+_1px)]/cover-list:[--cover-list-item-width:33.33%]
+          @min-[calc((250px_*_3)_+_1px)]/cover-list:[--cover-list-item-width:25%]
+          @min-[calc((250px_*_4)_+_1px)]/cover-list:[--cover-list-item-width:20%]
+          @min-[calc((250px_*_5)_+_1px)]/cover-list:[--cover-list-item-width:16.66%]
+          
+        "
+          >
+            <li
+              class="
+        group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
+        transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
+        transition-transform
+        tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
+        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
+        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        
+      "
+            >
+              <div
+                class="
+        relative w-1/4 max-w-[250px] shrink-0 self-start overflow-hidden
+        rounded-sm shadow-all transition-transform
+        after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
+        after:bg-default after:opacity-15 after:transition-opacity
+        group-has-[a:hover]/list-item:after:opacity-0
+        tablet:w-auto
+      "
+              >
+                <div
+                  class="
+          relative
+          after:absolute after:top-0 after:left-0 after:z-sticky after:block
+          after:size-full after:rounded-[2.5px]
+          after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%]
+          after:mix-blend-multiply
+        "
+                >
+                  <div
+                    class="
+            relative z-10
+            before:absolute before:top-0 before:left-0 before:z-10 before:block
+            before:size-full before:rounded-[2.5px]
+            before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%]
+            after:absolute after:top-0 after:left-0 after:block after:size-full
+            after:rounded-[2.5px] after:bg-[url(/assets/spot.png)]
+            after:bg-size-[100%_100%] after:mix-blend-soft-light
+          "
+                  >
+                    <img
+                      alt=""
+                      class="
+              rounded-[2.5px] bg-default shadow-sm
+              @min-[160px]:shadow-lg
+            "
+                      decoding="async"
+                      height="375"
+                      loading="lazy"
+                      sizes="(min-width: 1800px) 216px, (min-width: 1380px) calc(13.25vw - 20px), (min-width: 1280px) calc(20vw - 70px), (min-width: 1060px) calc(20vw - 57px), (min-width: 800px) calc(25vw - 60px), (min-width: 680px) calc(33vw - 61px), calc(23.06vw + 4px)"
+                      src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fbeware-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=250&h=375&q=80&f=avif"
+                      srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fbeware-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=62.5&h=94&q=80&f=avif 62.5w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fbeware-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=125&h=188&q=80&f=avif 125w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fbeware-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=250&h=375&q=80&f=avif 250w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fbeware-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=500&h=750&q=80&f=avif 500w"
+                      width="250"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="
+        flex grow flex-col items-start gap-y-2
+        tablet:mt-2 tablet:w-full tablet:px-1
+      "
+              >
+                <a
+                  class="
+          text-base leading-5 font-semibold text-accent
+          after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
+          after:opacity-0
+        "
+                  href="/reviews/beware-by-richard-laymon/"
+                >
+                  Beware!
+                </a>
+                <div
+                  class="
+        font-sans text-xs leading-4 font-light tracking-prose text-subtle
+      "
+                >
+                  <span>
+                    Novel
+                     | 
+                  </span>
+                  2000
+                </div>
+                <picture>
+                  <source
+                    media="(prefers-color-scheme: dark)"
+                    srcset="/svg/3-stars-dark.svg"
+                  />
+                  <img
+                    alt="C: 3 stars (out of 5)"
+                    class="-mt-0.5 pb-[3px]"
+                    height="15"
+                    src="/svg/3-stars.svg"
+                    width="75"
+                  />
+                </picture>
+                <div
+                  class="
+        font-sans text-xs leading-4 font-light tracking-prose text-subtle
+      "
+                >
+                  Jun 27, 2014
+                </div>
+              </div>
+            </li>
+            <li
+              class="
+        group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
+        transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
+        transition-transform
+        tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
+        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
+        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        
+      "
+            >
+              <div
+                class="
+        relative w-1/4 max-w-[250px] shrink-0 self-start overflow-hidden
+        rounded-sm shadow-all transition-transform
+        after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
+        after:bg-default after:opacity-15 after:transition-opacity
+        group-has-[a:hover]/list-item:after:opacity-0
+        tablet:w-auto
+      "
+              >
+                <div
+                  class="
+          relative
+          after:absolute after:top-0 after:left-0 after:z-sticky after:block
+          after:size-full after:rounded-[2.5px]
+          after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%]
+          after:mix-blend-multiply
+        "
+                >
+                  <div
+                    class="
+            relative z-10
+            before:absolute before:top-0 before:left-0 before:z-10 before:block
+            before:size-full before:rounded-[2.5px]
+            before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%]
+            after:absolute after:top-0 after:left-0 after:block after:size-full
+            after:rounded-[2.5px] after:bg-[url(/assets/spot.png)]
+            after:bg-size-[100%_100%] after:mix-blend-soft-light
+          "
+                  >
+                    <img
+                      alt=""
+                      class="
+              rounded-[2.5px] bg-default shadow-sm
+              @min-[160px]:shadow-lg
+            "
+                      decoding="async"
+                      height="375"
+                      loading="lazy"
+                      sizes="(min-width: 1800px) 216px, (min-width: 1380px) calc(13.25vw - 20px), (min-width: 1280px) calc(20vw - 70px), (min-width: 1060px) calc(20vw - 57px), (min-width: 800px) calc(25vw - 60px), (min-width: 680px) calc(33vw - 61px), calc(23.06vw + 4px)"
+                      src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=250&h=375&q=80&f=avif"
+                      srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=62.5&h=94&q=80&f=avif 62.5w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=125&h=188&q=80&f=avif 125w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=250&h=375&q=80&f=avif 250w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=500&h=750&q=80&f=avif 500w"
+                      width="250"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="
+        flex grow flex-col items-start gap-y-2
+        tablet:mt-2 tablet:w-full tablet:px-1
+      "
+              >
+                <a
+                  class="
+          text-base leading-5 font-semibold text-accent
+          after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
+          after:opacity-0
+        "
+                  href="/reviews/desert-pickup-by-richard-laymon/"
+                >
+                  Desert Pickup
+                </a>
+                <div
+                  class="
+        font-sans text-xs leading-4 font-light tracking-prose text-subtle
+      "
+                >
+                  <span>
+                    Short Story
+                     | 
+                  </span>
+                  2000
+                </div>
+                <picture>
+                  <source
+                    media="(prefers-color-scheme: dark)"
+                    srcset="/svg/2-half-stars-dark.svg"
+                  />
+                  <img
+                    alt="C-: 2.5 stars (out of 5)"
+                    class="-mt-0.5 pb-[3px]"
+                    height="15"
+                    src="/svg/2-half-stars.svg"
+                    width="75"
+                  />
+                </picture>
+                <div
+                  class="
+        font-sans text-xs leading-4 font-light tracking-prose text-subtle
+      "
+                >
+                  Apr 03, 2022
+                </div>
+              </div>
+            </li>
+            <li
+              class="
+        group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
+        transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
+        transition-transform
+        tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
+        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
+        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        
+      "
+            >
+              <div
+                class="
+        relative w-1/4 max-w-[250px] shrink-0 self-start overflow-hidden
+        rounded-sm shadow-all transition-transform
+        after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
+        after:bg-default after:opacity-15 after:transition-opacity
+        group-has-[a:hover]/list-item:after:opacity-0
+        tablet:w-auto
+      "
+              >
+                <div
+                  class="
+          relative
+          after:absolute after:top-0 after:left-0 after:z-sticky after:block
+          after:size-full after:rounded-[2.5px]
+          after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%]
+          after:mix-blend-multiply
+        "
+                >
+                  <div
+                    class="
+            relative z-10
+            before:absolute before:top-0 before:left-0 before:z-10 before:block
+            before:size-full before:rounded-[2.5px]
+            before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%]
+            after:absolute after:top-0 after:left-0 after:block after:size-full
+            after:rounded-[2.5px] after:bg-[url(/assets/spot.png)]
+            after:bg-size-[100%_100%] after:mix-blend-soft-light
+          "
+                  >
+                    <img
+                      alt=""
+                      class="
+              rounded-[2.5px] bg-default shadow-sm
+              @min-[160px]:shadow-lg
+            "
+                      decoding="async"
+                      height="375"
+                      loading="lazy"
+                      sizes="(min-width: 1800px) 216px, (min-width: 1380px) calc(13.25vw - 20px), (min-width: 1280px) calc(20vw - 70px), (min-width: 1060px) calc(20vw - 57px), (min-width: 800px) calc(25vw - 60px), (min-width: 680px) calc(33vw - 61px), calc(23.06vw + 4px)"
+                      src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-last-hand-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D671%26origFormat%3Dpng&w=250&h=336&q=80&f=avif"
+                      srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-last-hand-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D671%26origFormat%3Dpng&w=62.5&h=84&q=80&f=avif 62.5w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-last-hand-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D671%26origFormat%3Dpng&w=125&h=168&q=80&f=avif 125w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-last-hand-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D671%26origFormat%3Dpng&w=250&h=336&q=80&f=avif 250w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-last-hand-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D671%26origFormat%3Dpng&w=500&h=672&q=80&f=avif 500w"
+                      width="250"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="
+        flex grow flex-col items-start gap-y-2
+        tablet:mt-2 tablet:w-full tablet:px-1
+      "
+              >
+                <a
+                  class="
+          text-base leading-5 font-semibold text-accent
+          after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
+          after:opacity-0
+        "
+                  href="/reviews/the-last-hand-by-richard-laymon/"
+                >
+                  The Last Hand
+                </a>
+                <div
+                  class="
+        font-sans text-xs leading-4 font-light tracking-prose text-subtle
+      "
+                >
+                  <span>
+                    Short Story
+                     | 
+                  </span>
+                  2000
+                </div>
+                <picture>
+                  <source
+                    media="(prefers-color-scheme: dark)"
+                    srcset="/svg/2-stars-dark.svg"
+                  />
+                  <img
+                    alt="D: 2 stars (out of 5)"
+                    class="-mt-0.5 pb-[3px]"
+                    height="15"
+                    src="/svg/2-stars.svg"
+                    width="75"
+                  />
+                </picture>
+                <div
+                  class="
+        font-sans text-xs leading-4 font-light tracking-prose text-subtle
+      "
+                >
+                  Jul 13, 2014
+                </div>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </li>
+  <li
+    class="
+        block
+        first-of-type:mt-4
+        
+      "
+    id="1980"
+  >
+    <div
+      class="pt-0 text-md"
+    >
+      <div
+        class="
+            max-w-(--breakpoint-desktop) bg-subtle px-container py-4 text-xl
+            leading-8
+            tablet:px-1
+          "
+      >
+        1980
+      </div>
+    </div>
+    <div
+      class="bg-subtle"
+    >
+       
+      <div
+        class="tablet:-mx-6"
+      >
+        <div
+          class="@container/cover-list"
+        >
+          <ol
+            class="
+          items-baseline
+          [--cover-list-item-width:50%]
+          tablet:flex tablet:flex-wrap
+          @min-[calc((250px_*_2)_+_1px)]/cover-list:[--cover-list-item-width:33.33%]
+          @min-[calc((250px_*_3)_+_1px)]/cover-list:[--cover-list-item-width:25%]
+          @min-[calc((250px_*_4)_+_1px)]/cover-list:[--cover-list-item-width:20%]
+          @min-[calc((250px_*_5)_+_1px)]/cover-list:[--cover-list-item-width:16.66%]
+          
+        "
+          >
+            <li
+              class="
+        group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
+        transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
+        transition-transform
+        tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
+        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
+        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        
+      "
+            >
+              <div
+                class="
+        relative w-1/4 max-w-[250px] shrink-0 self-start overflow-hidden
+        rounded-sm shadow-all transition-transform
+        after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
+        after:bg-default after:opacity-15 after:transition-opacity
+        group-has-[a:hover]/list-item:after:opacity-0
+        tablet:w-auto
+      "
+              >
+                <div
+                  class="
+          relative
+          after:absolute after:top-0 after:left-0 after:z-sticky after:block
+          after:size-full after:rounded-[2.5px]
+          after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%]
+          after:mix-blend-multiply
+        "
+                >
+                  <div
+                    class="
+            relative z-10
+            before:absolute before:top-0 before:left-0 before:z-10 before:block
+            before:size-full before:rounded-[2.5px]
+            before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%]
+            after:absolute after:top-0 after:left-0 after:block after:size-full
+            after:rounded-[2.5px] after:bg-[url(/assets/spot.png)]
+            after:bg-size-[100%_100%] after:mix-blend-soft-light
+          "
+                  >
+                    <img
+                      alt=""
+                      class="
+              rounded-[2.5px] bg-default shadow-sm
+              @min-[160px]:shadow-lg
+            "
+                      decoding="async"
+                      height="375"
+                      loading="lazy"
+                      sizes="(min-width: 1800px) 216px, (min-width: 1380px) calc(13.25vw - 20px), (min-width: 1280px) calc(20vw - 70px), (min-width: 1060px) calc(20vw - 57px), (min-width: 800px) calc(25vw - 60px), (min-width: 680px) calc(33vw - 61px), calc(23.06vw + 4px)"
+                      src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-cellar-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=250&h=375&q=80&f=avif"
+                      srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-cellar-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=62.5&h=94&q=80&f=avif 62.5w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-cellar-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=125&h=188&q=80&f=avif 125w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-cellar-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=250&h=375&q=80&f=avif 250w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-cellar-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=500&h=750&q=80&f=avif 500w"
+                      width="250"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="
+        flex grow flex-col items-start gap-y-2
+        tablet:mt-2 tablet:w-full tablet:px-1
+      "
+              >
+                <a
+                  class="
+          text-base leading-5 font-semibold text-accent
+          after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
+          after:opacity-0
+        "
+                  href="/reviews/the-cellar-by-richard-laymon/"
+                >
+                  The Cellar
+                </a>
+                <div
+                  class="
+        font-sans text-xs leading-4 font-light tracking-prose text-subtle
+      "
+                >
+                  <span>
+                    Novel
+                     | 
+                  </span>
+                  1980
+                </div>
+                <picture>
+                  <source
+                    media="(prefers-color-scheme: dark)"
+                    srcset="/svg/3-stars-dark.svg"
+                  />
+                  <img
+                    alt="C+: 3 stars (out of 5)"
+                    class="-mt-0.5 pb-[3px]"
+                    height="15"
+                    src="/svg/3-stars.svg"
+                    width="75"
+                  />
+                </picture>
+                <div
+                  class="
+        font-sans text-xs leading-4 font-light tracking-prose text-subtle
+      "
+                >
+                  Mar 16, 2022
+                </div>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </li>
+  <li
+    class="
+        block
+        first-of-type:mt-4
+        
+      "
+    id="1985"
+  >
+    <div
+      class="pt-0 text-md"
+    >
+      <div
+        class="
+            max-w-(--breakpoint-desktop) bg-subtle px-container py-4 text-xl
+            leading-8
+            tablet:px-1
+          "
+      >
+        1985
+      </div>
+    </div>
+    <div
+      class="bg-subtle"
+    >
+       
+      <div
+        class="tablet:-mx-6"
+      >
+        <div
+          class="@container/cover-list"
+        >
+          <ol
+            class="
+          items-baseline
+          [--cover-list-item-width:50%]
+          tablet:flex tablet:flex-wrap
+          @min-[calc((250px_*_2)_+_1px)]/cover-list:[--cover-list-item-width:33.33%]
+          @min-[calc((250px_*_3)_+_1px)]/cover-list:[--cover-list-item-width:25%]
+          @min-[calc((250px_*_4)_+_1px)]/cover-list:[--cover-list-item-width:20%]
+          @min-[calc((250px_*_5)_+_1px)]/cover-list:[--cover-list-item-width:16.66%]
+          
+        "
+          >
+            <li
+              class="
+        group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
+        transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
+        transition-transform
+        tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
+        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
+        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        
+      "
+            >
+              <div
+                class="
+        relative w-1/4 max-w-[250px] shrink-0 self-start overflow-hidden
+        rounded-sm shadow-all transition-transform
+        after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
+        after:bg-default after:opacity-15 after:transition-opacity
+        group-has-[a:hover]/list-item:after:opacity-0
+        tablet:w-auto
+      "
+              >
+                <div
+                  class="
+          relative
+          after:absolute after:top-0 after:left-0 after:z-sticky after:block
+          after:size-full after:rounded-[2.5px]
+          after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%]
+          after:mix-blend-multiply
+        "
+                >
+                  <div
+                    class="
+            relative z-10
+            before:absolute before:top-0 before:left-0 before:z-10 before:block
+            before:size-full before:rounded-[2.5px]
+            before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%]
+            after:absolute after:top-0 after:left-0 after:block after:size-full
+            after:rounded-[2.5px] after:bg-[url(/assets/spot.png)]
+            after:bg-size-[100%_100%] after:mix-blend-soft-light
+          "
+                  >
+                    <img
+                      alt=""
+                      class="
+              rounded-[2.5px] bg-default shadow-sm
+              @min-[160px]:shadow-lg
+            "
+                      decoding="async"
+                      height="375"
+                      loading="lazy"
+                      sizes="(min-width: 1800px) 216px, (min-width: 1380px) calc(13.25vw - 20px), (min-width: 1280px) calc(20vw - 70px), (min-width: 1060px) calc(20vw - 57px), (min-width: 800px) calc(25vw - 60px), (min-width: 680px) calc(33vw - 61px), calc(23.06vw + 4px)"
+                      src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=250&h=375&q=80&f=avif"
+                      srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=62.5&h=94&q=80&f=avif 62.5w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=125&h=188&q=80&f=avif 125w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=250&h=375&q=80&f=avif 250w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=500&h=750&q=80&f=avif 500w"
+                      width="250"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="
+        flex grow flex-col items-start gap-y-2
+        tablet:mt-2 tablet:w-full tablet:px-1
+      "
+              >
+                <a
+                  class="
+          text-base leading-5 font-semibold text-accent
+          after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
+          after:opacity-0
+        "
+                  href="/reviews/test-work-1985/"
+                >
+                  Test Work 1985
+                </a>
+                <div
+                  class="
+        font-sans text-xs leading-4 font-light tracking-prose text-subtle
+      "
+                >
+                  <span>
+                    Novel
+                     | 
+                  </span>
+                  1985
+                </div>
+                <picture>
+                  <source
+                    media="(prefers-color-scheme: dark)"
+                    srcset="/svg/4-stars-dark.svg"
+                  />
+                  <img
+                    alt="B: 4 stars (out of 5)"
+                    class="-mt-0.5 pb-[3px]"
+                    height="15"
+                    src="/svg/4-stars.svg"
+                    width="75"
+                  />
+                </picture>
+                <div
+                  class="
+        font-sans text-xs leading-4 font-light tracking-prose text-subtle
+      "
+                >
+                  Jun 01, 2022
+                </div>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </li>
+  <li
+    class="
+        block
+        first-of-type:mt-4
+        
+      "
+    id="1983"
+  >
+    <div
+      class="pt-0 text-md"
+    >
+      <div
+        class="
+            max-w-(--breakpoint-desktop) bg-subtle px-container py-4 text-xl
+            leading-8
+            tablet:px-1
+          "
+      >
+        1983
+      </div>
+    </div>
+    <div
+      class="bg-subtle"
+    >
+       
+      <div
+        class="tablet:-mx-6"
+      >
+        <div
+          class="@container/cover-list"
+        >
+          <ol
+            class="
+          items-baseline
+          [--cover-list-item-width:50%]
+          tablet:flex tablet:flex-wrap
+          @min-[calc((250px_*_2)_+_1px)]/cover-list:[--cover-list-item-width:33.33%]
+          @min-[calc((250px_*_3)_+_1px)]/cover-list:[--cover-list-item-width:25%]
+          @min-[calc((250px_*_4)_+_1px)]/cover-list:[--cover-list-item-width:20%]
+          @min-[calc((250px_*_5)_+_1px)]/cover-list:[--cover-list-item-width:16.66%]
+          
+        "
+          >
+            <li
+              class="
+        group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
+        transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
+        transition-transform
+        tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
+        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
+        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        
+      "
+            >
+              <div
+                class="
+        relative w-1/4 max-w-[250px] shrink-0 self-start overflow-hidden
+        rounded-sm shadow-all transition-transform
+        after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
+        after:bg-default after:opacity-15 after:transition-opacity
+        group-has-[a:hover]/list-item:after:opacity-0
+        tablet:w-auto
+      "
+              >
+                <div
+                  class="
+          relative
+          after:absolute after:top-0 after:left-0 after:z-sticky after:block
+          after:size-full after:rounded-[2.5px]
+          after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%]
+          after:mix-blend-multiply
+        "
+                >
+                  <div
+                    class="
+            relative z-10
+            before:absolute before:top-0 before:left-0 before:z-10 before:block
+            before:size-full before:rounded-[2.5px]
+            before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%]
+            after:absolute after:top-0 after:left-0 after:block after:size-full
+            after:rounded-[2.5px] after:bg-[url(/assets/spot.png)]
+            after:bg-size-[100%_100%] after:mix-blend-soft-light
+          "
+                  >
+                    <img
+                      alt=""
+                      class="
+              rounded-[2.5px] bg-default shadow-sm
+              @min-[160px]:shadow-lg
+            "
+                      decoding="async"
+                      height="375"
+                      loading="lazy"
+                      sizes="(min-width: 1800px) 216px, (min-width: 1380px) calc(13.25vw - 20px), (min-width: 1280px) calc(20vw - 70px), (min-width: 1060px) calc(20vw - 57px), (min-width: 800px) calc(25vw - 60px), (min-width: 680px) calc(33vw - 61px), calc(23.06vw + 4px)"
+                      src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-intruder-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D668%26origFormat%3Dpng&w=250&h=334&q=80&f=avif"
+                      srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-intruder-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D668%26origFormat%3Dpng&w=62.5&h=84&q=80&f=avif 62.5w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-intruder-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D668%26origFormat%3Dpng&w=125&h=167&q=80&f=avif 125w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-intruder-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D668%26origFormat%3Dpng&w=250&h=334&q=80&f=avif 250w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-intruder-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D668%26origFormat%3Dpng&w=500&h=668&q=80&f=avif 500w"
+                      width="250"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="
+        flex grow flex-col items-start gap-y-2
+        tablet:mt-2 tablet:w-full tablet:px-1
+      "
+              >
+                <a
+                  class="
+          text-base leading-5 font-semibold text-accent
+          after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
+          after:opacity-0
+        "
+                  href="/reviews/the-intruder-by-richard-laymon/"
+                >
+                  The Intruder
+                </a>
+                <div
+                  class="
+        font-sans text-xs leading-4 font-light tracking-prose text-subtle
+      "
+                >
+                  <span>
+                    Short Story
+                     | 
+                  </span>
+                  1983
+                </div>
+                <picture>
+                  <source
+                    media="(prefers-color-scheme: dark)"
+                    srcset="/svg/3-stars-dark.svg"
+                  />
+                  <img
+                    alt="C: 3 stars (out of 5)"
+                    class="-mt-0.5 pb-[3px]"
+                    height="15"
+                    src="/svg/3-stars.svg"
+                    width="75"
+                  />
+                </picture>
+                <div
+                  class="
+        font-sans text-xs leading-4 font-light tracking-prose text-subtle
+      "
+                >
+                  Jul 23, 2014
+                </div>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </li>
+  <li
+    class="
+        block
+        first-of-type:mt-4
+        
+      "
+    id="1986"
+  >
+    <div
+      class="pt-0 text-md"
+    >
+      <div
+        class="
+            max-w-(--breakpoint-desktop) bg-subtle px-container py-4 text-xl
+            leading-8
+            tablet:px-1
+          "
+      >
+        1986
+      </div>
+    </div>
+    <div
+      class="bg-subtle"
+    >
+       
+      <div
+        class="tablet:-mx-6"
+      >
+        <div
+          class="@container/cover-list"
+        >
+          <ol
+            class="
+          items-baseline
+          [--cover-list-item-width:50%]
+          tablet:flex tablet:flex-wrap
+          @min-[calc((250px_*_2)_+_1px)]/cover-list:[--cover-list-item-width:33.33%]
+          @min-[calc((250px_*_3)_+_1px)]/cover-list:[--cover-list-item-width:25%]
+          @min-[calc((250px_*_4)_+_1px)]/cover-list:[--cover-list-item-width:20%]
+          @min-[calc((250px_*_5)_+_1px)]/cover-list:[--cover-list-item-width:16.66%]
+          
+        "
+          >
+            <li
+              class="
+        group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
+        transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
+        transition-transform
+        tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
+        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
+        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        
+      "
+            >
+              <div
+                class="
+        relative w-1/4 max-w-[250px] shrink-0 self-start overflow-hidden
+        rounded-sm shadow-all transition-transform
+        after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
+        after:bg-default after:opacity-15 after:transition-opacity
+        group-has-[a:hover]/list-item:after:opacity-0
+        tablet:w-auto
+      "
+              >
+                <div
+                  class="
+          relative
+          after:absolute after:top-0 after:left-0 after:z-sticky after:block
+          after:size-full after:rounded-[2.5px]
+          after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%]
+          after:mix-blend-multiply
+        "
+                >
+                  <div
+                    class="
+            relative z-10
+            before:absolute before:top-0 before:left-0 before:z-10 before:block
+            before:size-full before:rounded-[2.5px]
+            before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%]
+            after:absolute after:top-0 after:left-0 after:block after:size-full
+            after:rounded-[2.5px] after:bg-[url(/assets/spot.png)]
+            after:bg-size-[100%_100%] after:mix-blend-soft-light
+          "
+                  >
+                    <img
+                      alt=""
+                      class="
+              rounded-[2.5px] bg-default shadow-sm
+              @min-[160px]:shadow-lg
+            "
+                      decoding="async"
+                      height="375"
+                      loading="lazy"
+                      sizes="(min-width: 1800px) 216px, (min-width: 1380px) calc(13.25vw - 20px), (min-width: 1280px) calc(20vw - 70px), (min-width: 1060px) calc(20vw - 57px), (min-width: 800px) calc(25vw - 60px), (min-width: 680px) calc(33vw - 61px), calc(23.06vw + 4px)"
+                      src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D667%26origFormat%3Dpng&w=250&h=334&q=80&f=avif"
+                      srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D667%26origFormat%3Dpng&w=62.5&h=84&q=80&f=avif 62.5w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D667%26origFormat%3Dpng&w=125&h=167&q=80&f=avif 125w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D667%26origFormat%3Dpng&w=250&h=334&q=80&f=avif 250w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-lonely-one-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D667%26origFormat%3Dpng&w=500&h=668&q=80&f=avif 500w"
+                      width="250"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="
+        flex grow flex-col items-start gap-y-2
+        tablet:mt-2 tablet:w-full tablet:px-1
+      "
+              >
+                <a
+                  class="
+          text-base leading-5 font-semibold text-accent
+          after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
+          after:opacity-0
+        "
+                  href="/reviews/the-lonely-one-by-richard-laymon/"
+                >
+                  The Lonely One
+                </a>
+                <div
+                  class="
+        font-sans text-xs leading-4 font-light tracking-prose text-subtle
+      "
+                >
+                  <span>
+                    Short Story
+                     | 
+                  </span>
+                  1986
+                </div>
+                <picture>
+                  <source
+                    media="(prefers-color-scheme: dark)"
+                    srcset="/svg/3-stars-dark.svg"
+                  />
+                  <img
+                    alt="C+: 3 stars (out of 5)"
+                    class="-mt-0.5 pb-[3px]"
+                    height="15"
+                    src="/svg/3-stars.svg"
+                    width="75"
+                  />
+                </picture>
+                <div
+                  class="
+        font-sans text-xs leading-4 font-light tracking-prose text-subtle
+      "
+                >
+                  Feb 15, 2025
+                </div>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </li>
+  <li
+    class="
+        block
+        first-of-type:mt-4
+        
+      "
+    id="1982"
+  >
+    <div
+      class="pt-0 text-md"
+    >
+      <div
+        class="
+            max-w-(--breakpoint-desktop) bg-subtle px-container py-4 text-xl
+            leading-8
+            tablet:px-1
+          "
+      >
+        1982
+      </div>
+    </div>
+    <div
+      class="bg-subtle"
+    >
+       
+      <div
+        class="tablet:-mx-6"
+      >
+        <div
+          class="@container/cover-list"
+        >
+          <ol
+            class="
+          items-baseline
+          [--cover-list-item-width:50%]
+          tablet:flex tablet:flex-wrap
+          @min-[calc((250px_*_2)_+_1px)]/cover-list:[--cover-list-item-width:33.33%]
+          @min-[calc((250px_*_3)_+_1px)]/cover-list:[--cover-list-item-width:25%]
+          @min-[calc((250px_*_4)_+_1px)]/cover-list:[--cover-list-item-width:20%]
+          @min-[calc((250px_*_5)_+_1px)]/cover-list:[--cover-list-item-width:16.66%]
+          
+        "
+          >
+            <li
+              class="
+        group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
+        transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
+        transition-transform
+        tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
+        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
+        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        
+      "
+            >
+              <div
+                class="
+        relative w-1/4 max-w-[250px] shrink-0 self-start overflow-hidden
+        rounded-sm shadow-all transition-transform
+        after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
+        after:bg-default after:opacity-15 after:transition-opacity
+        group-has-[a:hover]/list-item:after:opacity-0
+        tablet:w-auto
+      "
+              >
+                <div
+                  class="
+          relative
+          after:absolute after:top-0 after:left-0 after:z-sticky after:block
+          after:size-full after:rounded-[2.5px]
+          after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%]
+          after:mix-blend-multiply
+        "
+                >
+                  <div
+                    class="
+            relative z-10
+            before:absolute before:top-0 before:left-0 before:z-10 before:block
+            before:size-full before:rounded-[2.5px]
+            before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%]
+            after:absolute after:top-0 after:left-0 after:block after:size-full
+            after:rounded-[2.5px] after:bg-[url(/assets/spot.png)]
+            after:bg-size-[100%_100%] after:mix-blend-soft-light
+          "
+                  >
+                    <img
+                      alt=""
+                      class="
+              rounded-[2.5px] bg-default shadow-sm
+              @min-[160px]:shadow-lg
+            "
+                      decoding="async"
+                      height="375"
+                      loading="lazy"
+                      sizes="(min-width: 1800px) 216px, (min-width: 1380px) calc(13.25vw - 20px), (min-width: 1280px) calc(20vw - 70px), (min-width: 1060px) calc(20vw - 57px), (min-width: 800px) calc(25vw - 60px), (min-width: 680px) calc(33vw - 61px), calc(23.06vw + 4px)"
+                      src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=250&h=375&q=80&f=avif"
+                      srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=62.5&h=94&q=80&f=avif 62.5w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=125&h=188&q=80&f=avif 125w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=250&h=375&q=80&f=avif 250w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=500&h=750&q=80&f=avif 500w"
+                      width="250"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="
+        flex grow flex-col items-start gap-y-2
+        tablet:mt-2 tablet:w-full tablet:px-1
+      "
+              >
+                <a
+                  class="
+          text-base leading-5 font-semibold text-accent
+          after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
+          after:opacity-0
+        "
+                  href="/reviews/out-are-the-lights-by-richard-laymon/"
+                >
+                  Out Are the Lights
+                </a>
+                <div
+                  class="
+        font-sans text-xs leading-4 font-light tracking-prose text-subtle
+      "
+                >
+                  <span>
+                    Novel
+                     | 
+                  </span>
+                  1982
+                </div>
+                <picture>
+                  <source
+                    media="(prefers-color-scheme: dark)"
+                    srcset="/svg/2-half-stars-dark.svg"
+                  />
+                  <img
+                    alt="C-: 2.5 stars (out of 5)"
+                    class="-mt-0.5 pb-[3px]"
+                    height="15"
+                    src="/svg/2-half-stars.svg"
+                    width="75"
+                  />
+                </picture>
+                <div
+                  class="
+        font-sans text-xs leading-4 font-light tracking-prose text-subtle
+      "
+                >
+                  Oct 11, 2022
+                </div>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </li>
+  <li
+    class="
+        block
+        first-of-type:mt-4
+        
+      "
+    id="1991"
+  >
+    <div
+      class="pt-0 text-md"
+    >
+      <div
+        class="
+            max-w-(--breakpoint-desktop) bg-subtle px-container py-4 text-xl
+            leading-8
+            tablet:px-1
+          "
+      >
+        1991
+      </div>
+    </div>
+    <div
+      class="bg-subtle"
+    >
+       
+      <div
+        class="tablet:-mx-6"
+      >
+        <div
+          class="@container/cover-list"
+        >
+          <ol
+            class="
+          items-baseline
+          [--cover-list-item-width:50%]
+          tablet:flex tablet:flex-wrap
+          @min-[calc((250px_*_2)_+_1px)]/cover-list:[--cover-list-item-width:33.33%]
+          @min-[calc((250px_*_3)_+_1px)]/cover-list:[--cover-list-item-width:25%]
+          @min-[calc((250px_*_4)_+_1px)]/cover-list:[--cover-list-item-width:20%]
+          @min-[calc((250px_*_5)_+_1px)]/cover-list:[--cover-list-item-width:16.66%]
+          
+        "
+          >
+            <li
+              class="
+        group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
+        transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
+        transition-transform
+        tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
+        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
+        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        
+      "
+            >
+              <div
+                class="
+        relative w-1/4 max-w-[250px] shrink-0 self-start overflow-hidden
+        rounded-sm shadow-all transition-transform
+        after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
+        after:bg-default after:opacity-15 after:transition-opacity
+        group-has-[a:hover]/list-item:after:opacity-0
+        tablet:w-auto
+      "
+              >
+                <div
+                  class="
+          relative
+          after:absolute after:top-0 after:left-0 after:z-sticky after:block
+          after:size-full after:rounded-[2.5px]
+          after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%]
+          after:mix-blend-multiply
+        "
+                >
+                  <div
+                    class="
+            relative z-10
+            before:absolute before:top-0 before:left-0 before:z-10 before:block
+            before:size-full before:rounded-[2.5px]
+            before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%]
+            after:absolute after:top-0 after:left-0 after:block after:size-full
+            after:rounded-[2.5px] after:bg-[url(/assets/spot.png)]
+            after:bg-size-[100%_100%] after:mix-blend-soft-light
+          "
+                  >
+                    <img
+                      alt=""
+                      class="
+              rounded-[2.5px] bg-default shadow-sm
+              @min-[160px]:shadow-lg
+            "
+                      decoding="async"
+                      height="375"
+                      loading="lazy"
+                      sizes="(min-width: 1800px) 216px, (min-width: 1380px) calc(13.25vw - 20px), (min-width: 1280px) calc(20vw - 70px), (min-width: 1060px) calc(20vw - 57px), (min-width: 800px) calc(25vw - 60px), (min-width: 680px) calc(33vw - 61px), calc(23.06vw + 4px)"
+                      src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Froadside-pickup-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=250&h=375&q=80&f=avif"
+                      srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Froadside-pickup-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=62.5&h=94&q=80&f=avif 62.5w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Froadside-pickup-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=125&h=188&q=80&f=avif 125w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Froadside-pickup-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=250&h=375&q=80&f=avif 250w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Froadside-pickup-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=500&h=750&q=80&f=avif 500w"
+                      width="250"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="
+        flex grow flex-col items-start gap-y-2
+        tablet:mt-2 tablet:w-full tablet:px-1
+      "
+              >
+                <a
+                  class="
+          text-base leading-5 font-semibold text-accent
+          after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
+          after:opacity-0
+        "
+                  href="/reviews/roadside-pickup-by-richard-laymon/"
+                >
+                  Roadside Pickup
+                </a>
+                <div
+                  class="
+        font-sans text-xs leading-4 font-light tracking-prose text-subtle
+      "
+                >
+                  <span>
+                    Short Story
+                     | 
+                  </span>
+                  1991
+                </div>
+                <picture>
+                  <source
+                    media="(prefers-color-scheme: dark)"
+                    srcset="/svg/2-half-stars-dark.svg"
+                  />
+                  <img
+                    alt="C-: 2.5 stars (out of 5)"
+                    class="-mt-0.5 pb-[3px]"
+                    height="15"
+                    src="/svg/2-half-stars.svg"
+                    width="75"
+                  />
+                </picture>
+                <div
+                  class="
+        font-sans text-xs leading-4 font-light tracking-prose text-subtle
+      "
+                >
+                  Jan 21, 2023
+                </div>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </li>
+  <li
+    class="
+        block
+        first-of-type:mt-4
+        
+      "
+    id="1987"
+  >
+    <div
+      class="pt-0 text-md"
+    >
+      <div
+        class="
+            max-w-(--breakpoint-desktop) bg-subtle px-container py-4 text-xl
+            leading-8
+            tablet:px-1
+          "
+      >
+        1987
+      </div>
+    </div>
+    <div
+      class="bg-subtle"
+    >
+       
+      <div
+        class="tablet:-mx-6"
+      >
+        <div
+          class="@container/cover-list"
+        >
+          <ol
+            class="
+          items-baseline
+          [--cover-list-item-width:50%]
+          tablet:flex tablet:flex-wrap
+          @min-[calc((250px_*_2)_+_1px)]/cover-list:[--cover-list-item-width:33.33%]
+          @min-[calc((250px_*_3)_+_1px)]/cover-list:[--cover-list-item-width:25%]
+          @min-[calc((250px_*_4)_+_1px)]/cover-list:[--cover-list-item-width:20%]
+          @min-[calc((250px_*_5)_+_1px)]/cover-list:[--cover-list-item-width:16.66%]
+          
+        "
+          >
+            <li
+              class="
+        group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
+        transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
+        transition-transform
+        tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
+        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
+        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        
+      "
+            >
+              <div
+                class="
+        relative w-1/4 max-w-[250px] shrink-0 self-start overflow-hidden
+        rounded-sm shadow-all transition-transform
+        after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
+        after:bg-default after:opacity-15 after:transition-opacity
+        group-has-[a:hover]/list-item:after:opacity-0
+        tablet:w-auto
+      "
+              >
+                <div
+                  class="
+          relative
+          after:absolute after:top-0 after:left-0 after:z-sticky after:block
+          after:size-full after:rounded-[2.5px]
+          after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%]
+          after:mix-blend-multiply
+        "
+                >
+                  <div
+                    class="
+            relative z-10
+            before:absolute before:top-0 before:left-0 before:z-10 before:block
+            before:size-full before:rounded-[2.5px]
+            before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%]
+            after:absolute after:top-0 after:left-0 after:block after:size-full
+            after:rounded-[2.5px] after:bg-[url(/assets/spot.png)]
+            after:bg-size-[100%_100%] after:mix-blend-soft-light
+          "
+                  >
+                    <img
+                      alt=""
+                      class="
+              rounded-[2.5px] bg-default shadow-sm
+              @min-[160px]:shadow-lg
+            "
+                      decoding="async"
+                      height="375"
+                      loading="lazy"
+                      sizes="(min-width: 1800px) 216px, (min-width: 1380px) calc(13.25vw - 20px), (min-width: 1280px) calc(20vw - 70px), (min-width: 1060px) calc(20vw - 57px), (min-width: 800px) calc(25vw - 60px), (min-width: 680px) calc(33vw - 61px), calc(23.06vw + 4px)"
+                      src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftread-softly-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D796%26origFormat%3Dpng&w=250&h=398&q=80&f=avif"
+                      srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftread-softly-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D796%26origFormat%3Dpng&w=62.5&h=99&q=80&f=avif 62.5w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftread-softly-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D796%26origFormat%3Dpng&w=125&h=199&q=80&f=avif 125w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftread-softly-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D796%26origFormat%3Dpng&w=250&h=398&q=80&f=avif 250w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Ftread-softly-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D796%26origFormat%3Dpng&w=500&h=796&q=80&f=avif 500w"
+                      width="250"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="
+        flex grow flex-col items-start gap-y-2
+        tablet:mt-2 tablet:w-full tablet:px-1
+      "
+              >
+                <a
+                  class="
+          text-base leading-5 font-semibold text-accent
+          after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
+          after:opacity-0
+        "
+                  href="/reviews/tread-softly-by-richard-laymon/"
+                >
+                  Tread Softly
+                </a>
+                <div
+                  class="
+        font-sans text-xs leading-4 font-light tracking-prose text-subtle
+      "
+                >
+                  <span>
+                    Novel
+                     | 
+                  </span>
+                  1987
+                </div>
+                <picture>
+                  <source
+                    media="(prefers-color-scheme: dark)"
+                    srcset="/svg/3-stars-dark.svg"
+                  />
+                  <img
+                    alt="C: 3 stars (out of 5)"
+                    class="-mt-0.5 pb-[3px]"
+                    height="15"
+                    src="/svg/3-stars.svg"
+                    width="75"
+                  />
+                </picture>
+                <div
+                  class="
+        font-sans text-xs leading-4 font-light tracking-prose text-subtle
+      "
+                >
+                  Sep 21, 2014
+                </div>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </li>
+  <li
+    class="
+        block
+        first-of-type:mt-4
+        
+      "
+    id="1981"
+  >
+    <div
+      class="pt-0 text-md"
+    >
+      <div
+        class="
+            max-w-(--breakpoint-desktop) bg-subtle px-container py-4 text-xl
+            leading-8
+            tablet:px-1
+          "
+      >
+        1981
+      </div>
+    </div>
+    <div
+      class="bg-subtle"
+    >
+       
+      <div
+        class="tablet:-mx-6"
+      >
+        <div
+          class="@container/cover-list"
+        >
+          <ol
+            class="
+          items-baseline
+          [--cover-list-item-width:50%]
+          tablet:flex tablet:flex-wrap
+          @min-[calc((250px_*_2)_+_1px)]/cover-list:[--cover-list-item-width:33.33%]
+          @min-[calc((250px_*_3)_+_1px)]/cover-list:[--cover-list-item-width:25%]
+          @min-[calc((250px_*_4)_+_1px)]/cover-list:[--cover-list-item-width:20%]
+          @min-[calc((250px_*_5)_+_1px)]/cover-list:[--cover-list-item-width:16.66%]
+          
+        "
+          >
+            <li
+              class="
+        group/list-item relative mb-1 flex w-full max-w-(--breakpoint-desktop)
+        transform-gpu flex-row gap-x-[5%] bg-default px-container py-4
+        transition-transform
+        tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
+        tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
+        tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        
+      "
+            >
+              <div
+                class="
+        relative w-1/4 max-w-[250px] shrink-0 self-start overflow-hidden
+        rounded-sm shadow-all transition-transform
+        after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
+        after:bg-default after:opacity-15 after:transition-opacity
+        group-has-[a:hover]/list-item:after:opacity-0
+        tablet:w-auto
+      "
+              >
+                <div
+                  class="
+          relative
+          after:absolute after:top-0 after:left-0 after:z-sticky after:block
+          after:size-full after:rounded-[2.5px]
+          after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%]
+          after:mix-blend-multiply
+        "
+                >
+                  <div
+                    class="
+            relative z-10
+            before:absolute before:top-0 before:left-0 before:z-10 before:block
+            before:size-full before:rounded-[2.5px]
+            before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%]
+            after:absolute after:top-0 after:left-0 after:block after:size-full
+            after:rounded-[2.5px] after:bg-[url(/assets/spot.png)]
+            after:bg-size-[100%_100%] after:mix-blend-soft-light
+          "
+                  >
+                    <img
+                      alt=""
+                      class="
+              rounded-[2.5px] bg-default shadow-sm
+              @min-[160px]:shadow-lg
+            "
+                      decoding="async"
+                      height="375"
+                      loading="lazy"
+                      sizes="(min-width: 1800px) 216px, (min-width: 1380px) calc(13.25vw - 20px), (min-width: 1280px) calc(20vw - 70px), (min-width: 1060px) calc(20vw - 57px), (min-width: 800px) calc(25vw - 60px), (min-width: 680px) calc(33vw - 61px), calc(23.06vw + 4px)"
+                      src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=250&h=375&q=80&f=avif"
+                      srcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=62.5&h=94&q=80&f=avif 62.5w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=125&h=188&q=80&f=avif 125w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=250&h=375&q=80&f=avif 250w, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-woods-are-dark-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=500&h=750&q=80&f=avif 500w"
+                      width="250"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="
+        flex grow flex-col items-start gap-y-2
+        tablet:mt-2 tablet:w-full tablet:px-1
+      "
+              >
+                <a
+                  class="
+          text-base leading-5 font-semibold text-accent
+          after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
+          after:opacity-0
+        "
+                  href="/reviews/the-woods-are-dark-by-richard-laymon/"
+                >
+                  The Woods Are Dark
+                </a>
+                <div
+                  class="
+        font-sans text-xs leading-4 font-light tracking-prose text-subtle
+      "
+                >
+                  <span>
+                    Novel
+                     | 
+                  </span>
+                  1981
+                </div>
+                <picture>
+                  <source
+                    media="(prefers-color-scheme: dark)"
+                    srcset="/svg/3-stars-dark.svg"
+                  />
+                  <img
+                    alt="C+: 3 stars (out of 5)"
+                    class="-mt-0.5 pb-[3px]"
+                    height="15"
+                    src="/svg/3-stars.svg"
+                    width="75"
+                  />
+                </picture>
+                <div
+                  class="
+        font-sans text-xs leading-4 font-light tracking-prose text-subtle
+      "
+                >
+                  Sep 11, 2022
+                </div>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </li>
+</ol>
+`;
+
 exports[`Author > can filter by kind 1`] = `
 <ol
   data-testid="grouped-cover-list"
