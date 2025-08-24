@@ -48,7 +48,7 @@ export async function getCoverWidth(work: Work, targetHeight: number) {
 
     return (width / height) * targetHeight;
   } catch (error) {
-    console.error("Error:", error);
+    console.error(`Error processing cover ${work.slug}:`, error);
     return 0;
   }
 }
