@@ -1,8 +1,7 @@
-import { toSentenceArray } from "~/utils";
+import { toSentenceArray } from "~/utils/toSentenceArray";
 
-export type ListItemAuthor = {
+type ListItemAuthor = {
   name: string;
-  sortName: string;
 };
 
 export function ListItemAuthors({ values }: { values: ListItemAuthor[] }) {

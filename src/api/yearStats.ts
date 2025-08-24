@@ -1,3 +1,5 @@
+import { ENABLE_CACHE } from "~/utils/cache";
+
 import { perfLogger } from "./data/utils/performanceLogger";
 import { allYearStatsJson, type YearStatsJson } from "./data/yearStatsJson";
 
@@ -6,9 +8,6 @@ export type YearStats = YearStatsJson & {};
 let cachedYearStatsJson: YearStatsJson[];
 
 const statYears = new Set<string>();
-
-// Enable caching during builds but not in dev mode
-const ENABLE_CACHE = !import.meta.env.DEV;
 
 export async function allStatYears() {
   return await perfLogger.measure("allStatYears", async () => {

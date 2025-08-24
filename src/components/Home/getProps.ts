@@ -2,10 +2,9 @@ import { getBackdropImageProps } from "~/api/backdrops";
 import { getFluidCoverImageProps } from "~/api/covers";
 import { loadExcerptHtml, mostRecentReviews } from "~/api/reviews";
 import { BackdropImageConfig } from "~/components/Backdrop";
+import { CoverImageConfig } from "~/components/ReviewCardWithExcerpt";
 
 import type { Props } from "./Home";
-
-import { CoverImageConfig } from "./HomeListItem";
 
 export async function getProps(): Promise<Props> {
   const works = await mostRecentReviews(12);

@@ -1,6 +1,5 @@
 import { createHash } from "node:crypto";
 import fs from "node:fs/promises";
-import { tmpdir } from "node:os";
 import path from "node:path";
 
 type CacheConfig = {
@@ -9,17 +8,26 @@ type CacheConfig = {
   enableCache: boolean;
 };
 
-export function createCacheConfig(
-  name: string,
-  isTest: boolean = import.meta.env.MODE === "test",
-  isDev: boolean = import.meta.env.DEV,
-): CacheConfig {
+/**
+ * Determines if caching should be enabled based on environment
+ * - Disabled in development mode (DEV=true)
+ * - Enabled in test mode (MODE=test) to test cache behavior
+ * - Enabled in production builds
+ */
+export const ENABLE_CACHE = (() => {
+  // Enable caching in test mode to test cache behavior
+  if (import.meta.env.MODE === "test") {
+    return true;
+  }
+  // Disable in dev mode
+  return !import.meta.env.DEV;
+})();
+
+export function createCacheConfig(name: string): CacheConfig {
   return {
-    cacheDir: isTest
-      ? path.join(tmpdir(), `${name}-test-cache`)
-      : path.join(process.cwd(), ".cache", name),
+    cacheDir: path.join(process.cwd(), ".cache", name),
     debugCache: process.env.DEBUG_CACHE === "true",
-    enableCache: !isDev,
+    enableCache: ENABLE_CACHE,
   };
 }
 

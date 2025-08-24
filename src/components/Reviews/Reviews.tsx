@@ -12,7 +12,7 @@ import { ListItemKindAndYear } from "~/components/ListItemKindAndYear";
 import { ListItemReviewDate } from "~/components/ListItemReviewDate";
 import { ListItemTitle } from "~/components/ListItemTitle";
 import { ListWithFilters } from "~/components/ListWithFilters";
-import { toSentenceArray } from "~/utils";
+import { toSentenceArray } from "~/utils/toSentenceArray";
 
 import type { ReviewsSort } from "./Reviews.reducer";
 

@@ -5,7 +5,7 @@ import type { ReviewWithExcerpt } from "~/api/reviews";
 
 import { Grade } from "~/components/Grade";
 import { RenderedMarkdown } from "~/components/RenderedMarkdown";
-import { toSentenceArray } from "~/utils";
+import { toSentenceArray } from "~/utils/toSentenceArray";
 
 export const CoverImageConfig = {
   height: 372,
@@ -16,8 +16,15 @@ export const CoverImageConfig = {
 
 export type ReviewCardWithExcerptReview = Pick<
   ReviewWithExcerpt,
-  "authors" | "excerpt" | "grade" | "kind" | "slug" | "title" | "workYear"
+  | "excerpt"
+  | "grade"
+  | "kind"
+  | "reviewSequence"
+  | "slug"
+  | "title"
+  | "workYear"
 > & {
+  authors: { name: string }[];
   coverImageProps: CoverImageProps;
   reviewDate?: string;
 };

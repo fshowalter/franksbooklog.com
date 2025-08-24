@@ -7,7 +7,7 @@ import { ListItemEdition } from "./ListItemEdition";
 import { ListItemReviewDate } from "./ListItemReviewDate";
 import { ListItemTitle } from "./ListItemTitle";
 
-export type MostReadAuthorsListItemValue = {
+type MostReadAuthorsListItemValue = {
   count: number;
   name: string;
   readings: ReadingSubListItemValue[];

@@ -1,20 +1,19 @@
+import { ENABLE_CACHE } from "~/utils/cache";
+
 import { allAuthorsJson, type AuthorJson } from "./data/authorsJson";
 import { perfLogger } from "./data/utils/performanceLogger";
-
 export type Author = AuthorJson & {};
 
 type AuthorDetails = {
   author: Author;
   distinctKinds: string[];
+  distinctReviewYears: string[];
   distinctWorkYears: string[];
 };
 
 // Cache at API level for derived data
 let cachedAllAuthorsJson: AuthorJson[];
 const cachedAuthorDetails: Map<string, AuthorDetails> = new Map();
-
-// Enable caching during builds but not in dev mode
-const ENABLE_CACHE = !import.meta.env.DEV;
 
 export async function allAuthors(): Promise<Author[]> {
   return await perfLogger.measure("allAuthors", async () => {

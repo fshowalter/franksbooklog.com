@@ -1,8 +1,8 @@
 import { allAuthors } from "~/api/authors";
 import { getAvatarImageProps } from "~/api/avatars";
 import { getBackdropImageProps } from "~/api/backdrops";
+import { AvatarListItemImageConfig } from "~/components/AvatarList";
 import { BackdropImageConfig } from "~/components/Backdrop";
-import { ListItemAvatarImageConfig } from "~/components/ListItemAvatar";
 
 import type { ListItemValue, Props } from "./Authors";
 
@@ -16,7 +16,7 @@ export async function getProps(): Promise<Props> {
       const value: ListItemValue = {
         avatarImageProps: await getAvatarImageProps(
           author.slug,
-          ListItemAvatarImageConfig,
+          AvatarListItemImageConfig,
         ),
         name: author.name,
         reviewCount: author.reviewedWorks.length,

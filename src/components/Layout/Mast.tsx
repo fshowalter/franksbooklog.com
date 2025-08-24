@@ -1,5 +1,4 @@
 import type { JSX } from "react";
-import type React from "react";
 
 import type { NavItem } from "./navItems";
 

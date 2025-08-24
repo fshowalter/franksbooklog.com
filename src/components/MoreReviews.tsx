@@ -3,18 +3,6 @@ import type { JSX } from "react";
 import type { CoverImageProps } from "~/api/covers";
 import type { Review, ReviewWithExcerpt } from "~/api/reviews";
 
-import { toSentenceArray } from "~/utils";
-
-import { Abandoned } from "./Abandoned";
-import { AuthorLink } from "./AuthorLink";
-import { Cover } from "./Cover";
-import { CoverList, CoverListItem } from "./CoverList";
-import { Grade } from "./Grade";
-import { ListItemAuthors } from "./ListItemAuthors";
-import { ListItemDetails } from "./ListItemDetails";
-import { ListItemGrade } from "./ListItemGrade";
-import { ListItemKindAndYear } from "./ListItemKindAndYear";
-import { ListItemTitle } from "./ListItemTitle";
 import { ReviewCardWithExcerpt } from "./ReviewCardWithExcerpt";
 
 export const MoreReviewsImageConfig = {
@@ -30,6 +18,7 @@ export type MoreReviewsValue = {
   excerpt: ReviewWithExcerpt["excerpt"];
   grade: Review["grade"];
   kind: Review["kind"];
+  reviewSequence: Review["reviewSequence"];
   slug: Review["slug"];
   title: Review["title"];
   workYear: Review["workYear"];
@@ -71,19 +60,5 @@ export function MoreReviews({
         </ol>
       </div>
     </nav>
-  );
-}
-
-function MoreReviewsCard({ value }: { value: MoreReviewsValue }): JSX.Element {
-  return (
-    <CoverListItem coverImageProps={value.coverImageProps}>
-      <ListItemDetails>
-        <ListItemTitle slug={value.slug} title={value.title} />
-        <ListItemAuthors values={value.authors} />
-        <ListItemKindAndYear kind={value.kind} year={value.workYear} />
-        <ListItemGrade grade={value.grade} />
-        <Abandoned className="tablet:my-1" value={value.grade} />
-      </ListItemDetails>
-    </CoverListItem>
   );
 }
