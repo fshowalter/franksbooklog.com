@@ -146,7 +146,7 @@ function FooterLink({ href, text }: { href: string; text: string }) {
     <a
       className={`
         underline transition-colors
-        hover:text-default
+        hover:text-accent
       `}
       href={href}
     >
