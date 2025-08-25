@@ -2,7 +2,7 @@
 import React from "react";
 
 import { Backdrop } from "~/components/Backdrop";
-import { ListWithFiltersLayout } from "~/components/ListWithFiltersLayout";
+import { Layout as ComponentLayout } from "~/components/Layout/Layout";
 import { getProps } from "~/components/Readings/getProps";
 import { Readings } from "~/components/Readings/Readings";
 import Layout from "~/layouts/Layout.astro";
@@ -32,7 +32,8 @@ const backdropElement = React.createElement(Backdrop, {
   <Fragment slot="meta-theme-color">
     <meta content="rgba(0,0,0,.85)" name="theme-color" />
   </Fragment>
-  <ListWithFiltersLayout backdrop={backdropElement}>
+  <ComponentLayout className="bg-subtle">
+    {backdropElement}
     <Readings client:load {...interactiveProps} />
-  </ListWithFiltersLayout>
+  </ComponentLayout>
 </Layout>

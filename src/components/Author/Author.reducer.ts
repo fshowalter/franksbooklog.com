@@ -1,28 +1,38 @@
 /**
- * Reviews reducer with pending filters support
+ * Author page reducer with pending filters support
  */
 import type {
   ListWithFiltersActionType,
   ListWithFiltersState,
-} from "~/components/ListWithFilters.reducerUtils";
+} from "~/components/ListWithFilters/reducerUtils";
+import type {
+  PaginationState,
+  WorksFilterActionType,
+} from "~/components/ListWithFilters/worksReducerUtils";
 
 import {
   buildGroupValues,
   buildSortValues,
-  createInitialState,
   getGroupLetter,
-  handleKindFilterAction,
   handleListWithFiltersAction,
+  ListWithFiltersActions,
+  updatePendingFilter,
+} from "~/components/ListWithFilters/reducerUtils";
+import {
+  applyPendingFiltersWithPagination,
+  createInitialStateWithPagination,
+  handleKindFilterAction,
   handleReviewYearFilterAction,
+  handleShowMoreAction,
   handleTitleFilterAction,
   handleWorkYearFilterAction,
-  ListWithFiltersActions,
   sortGrade,
   sortReviewDate,
   sortTitle,
   sortWorkYear,
-  updatePendingFilter,
-} from "~/components/ListWithFilters.reducerUtils";
+  updateSortWithPagination,
+  WorksFilterActions,
+} from "~/components/ListWithFilters/worksReducerUtils";
 
 import type { ListItemValue } from "./Author";
 
@@ -43,6 +53,7 @@ export type Sort =
 // Re-export shared actions for component convenience
 export const Actions = {
   ...ListWithFiltersActions,
+  ...WorksFilterActions,
   ...AuthorActions,
 } as const;
 
@@ -71,7 +82,8 @@ const groupValues = buildGroupValues(groupForValue);
 
 export type ActionType =
   | ListWithFiltersActionType<Sort>
-  | PendingFilterGradeAction;
+  | PendingFilterGradeAction
+  | WorksFilterActionType;
 
 // Grade filter is specific to Reviews
 type PendingFilterGradeAction = {
@@ -92,7 +104,7 @@ const monthGroupFormat = new Intl.DateTimeFormat("en-US", {
   year: "numeric",
 });
 
-type State = ListWithFiltersState<ListItemValue, Sort>;
+type State = ListWithFiltersState<ListItemValue, Sort> & PaginationState;
 
 export function initState({
   initialSort,
@@ -101,12 +113,13 @@ export function initState({
   initialSort: Sort;
   values: ListItemValue[];
 }): State {
-  return createInitialState({
+  return createInitialStateWithPagination({
     groupFn: groupValues,
     initialSort,
+    showMoreEnabled: true,
     sortFn: sortValues,
     values,
-  });
+  }) as State;
 }
 
 // Create reducer function
@@ -117,24 +130,47 @@ export function reducer(state: State, action: ActionType): State {
       const filterFn = (value: ListItemValue) =>
         value.gradeValue >= typedAction.values[0] &&
         value.gradeValue <= typedAction.values[1];
-      return updatePendingFilter(state, "grade", filterFn, typedAction.values);
+      return {
+        ...state,
+        ...updatePendingFilter(state, "grade", filterFn, typedAction.values),
+      };
+    }
+
+    case ListWithFiltersActions.APPLY_PENDING_FILTERS: {
+      const baseResult = handleListWithFiltersAction(state, action, {
+        groupFn: groupValues,
+        sortFn: sortValues,
+      });
+      return applyPendingFiltersWithPagination(state, baseResult, groupValues);
+    }
+
+    case ListWithFiltersActions.SORT: {
+      const baseResult = handleListWithFiltersAction(state, action, {
+        groupFn: groupValues,
+        sortFn: sortValues,
+      });
+      return updateSortWithPagination(state, baseResult, groupValues);
     }
 
     // Field-specific shared filters
-    case ListWithFiltersActions.PENDING_FILTER_KIND: {
+    case WorksFilterActions.PENDING_FILTER_KIND: {
       return handleKindFilterAction(state, action);
     }
 
-    case ListWithFiltersActions.PENDING_FILTER_REVIEW_YEAR: {
+    case WorksFilterActions.PENDING_FILTER_REVIEW_YEAR: {
       return handleReviewYearFilterAction(state, action);
     }
 
-    case ListWithFiltersActions.PENDING_FILTER_TITLE: {
+    case WorksFilterActions.PENDING_FILTER_TITLE: {
       return handleTitleFilterAction(state, action);
     }
 
-    case ListWithFiltersActions.PENDING_FILTER_WORK_YEAR: {
+    case WorksFilterActions.PENDING_FILTER_WORK_YEAR: {
       return handleWorkYearFilterAction(state, action);
+    }
+
+    case WorksFilterActions.SHOW_MORE: {
+      return handleShowMoreAction(state, action, groupValues);
     }
 
     default: {

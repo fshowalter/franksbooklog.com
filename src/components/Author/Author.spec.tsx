@@ -7,7 +7,7 @@ import {
   clickCloseFilters,
   clickToggleFilters,
   clickViewResults,
-} from "~/components/ListWithFilters.testUtils";
+} from "~/components/ListWithFilters/testUtils";
 import { getUserWithFakeTimers } from "~/components/testUtils";
 import { fillTextFilter } from "~/components/TextFilter.testHelper";
 

@@ -2,7 +2,7 @@ import { act, render, screen, within } from "@testing-library/react";
 import { userEvent } from "@testing-library/user-event";
 import { afterEach, beforeEach, describe, it, vi } from "vitest";
 
-import { DRAWER_CLOSE_ANIMATION_MS } from "~/components/ListWithFilters";
+import { DRAWER_CLOSE_ANIMATION_MS } from "~/components/ListWithFilters/ListWithFilters";
 import { TEXT_FILTER_DEBOUNCE_MS } from "~/components/TextFilter";
 
 import { getProps } from "./getProps";

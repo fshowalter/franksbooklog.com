@@ -12,7 +12,7 @@ import { ListItemTitle } from "~/components/ListItemTitle";
 import {
   ListHeaderButton,
   ListWithFilters,
-} from "~/components/ListWithFilters";
+} from "~/components/ListWithFilters/ListWithFilters";
 
 import { Filters } from "./Filters";
 import {

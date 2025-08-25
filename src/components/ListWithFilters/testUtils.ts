@@ -3,7 +3,7 @@ import type { UserEvent } from "@testing-library/user-event";
 import { act, screen } from "@testing-library/react";
 import { vi } from "vitest";
 
-import { DRAWER_CLOSE_ANIMATION_MS } from "~/components/ListWithFilters";
+import { DRAWER_CLOSE_ANIMATION_MS } from "./ListWithFilters";
 
 export async function clickClearFilters(user: UserEvent) {
   return user.click(screen.getByRole("button", { name: "Clear all filters" }));

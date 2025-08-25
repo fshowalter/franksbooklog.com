@@ -5,7 +5,7 @@ import { allAuthors } from "~/api/authors";
 import { Author } from "~/components/Author/Author";
 import { getProps } from "~/components/Author/getProps";
 import { AvatarBackdrop, BreadcrumbLink } from "~/components/Backdrop";
-import { ListWithFiltersLayout } from "~/components/ListWithFiltersLayout";
+import { Layout as ComponentLayout } from "~/components/Layout/Layout";
 import Layout from "~/layouts/Layout.astro";
 
 interface Props {
@@ -65,7 +65,8 @@ const backdropElement = React.createElement(AvatarBackdrop, {
   }}
   title={`${name} book & story reviews`}
 >
-  <ListWithFiltersLayout backdrop={backdropElement}>
+  <ComponentLayout className="bg-subtle">
+    {backdropElement}
     <Author client:load {...interactiveProps} name={name} />
-  </ListWithFiltersLayout>
+  </ComponentLayout>
 </Layout>

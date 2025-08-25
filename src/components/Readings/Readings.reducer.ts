@@ -2,24 +2,28 @@ import type {
   GroupFn,
   ListWithFiltersActionType,
   ListWithFiltersState,
-} from "~/components/ListWithFilters.reducerUtils";
+} from "~/components/ListWithFilters/reducerUtils";
+import type { WorksFilterActionType } from "~/components/ListWithFilters/worksReducerUtils";
 
 import {
   buildSortValues,
   createInitialState,
   handleListWithFiltersAction,
-  handleTitleFilterAction,
-  handleWorkYearFilterAction,
   ListWithFiltersActions,
   updatePendingFilter,
-} from "~/components/ListWithFilters.reducerUtils";
+} from "~/components/ListWithFilters/reducerUtils";
+import {
+  handleKindFilterAction,
+  handleTitleFilterAction,
+  handleWorkYearFilterAction,
+  WorksFilterActions,
+} from "~/components/ListWithFilters/worksReducerUtils";
 
 import type { ListItemValue } from "./Readings";
 
 enum ReadingsActions {
   NEXT_MONTH = "NEXT_MONTH",
   PENDING_FILTER_EDITION = "PENDING_FILTER_EDITION",
-  PENDING_FILTER_KIND = "PENDING_FILTER_KIND",
   PENDING_FILTER_READING_YEAR = "PENDING_FILTER_READING_YEAR",
   PREV_MONTH = "PREV_MONTH",
 }
@@ -27,6 +31,7 @@ enum ReadingsActions {
 // Re-export shared actions for component convenience
 export const Actions = {
   ...ListWithFiltersActions,
+  ...WorksFilterActions,
   ...ReadingsActions,
 } as const;
 
@@ -34,9 +39,9 @@ export type ActionType =
   | ListWithFiltersActionType<Sort>
   | NextMonthAction
   | PendingFilterEditionAction
-  | PendingFilterKindAction
   | PendingFilterReadingYearAction
-  | PrevMonthAction;
+  | PrevMonthAction
+  | WorksFilterActionType;
 
 export type Sort = "reading-date-asc" | "reading-date-desc";
 
@@ -54,11 +59,6 @@ type PendingFilterEditionAction = {
 // Using shared PendingFilterReleaseYearAction from ListWithFilters
 
 // Using the shared PendingFilterTitleAction from ListWithFilters
-
-type PendingFilterKindAction = {
-  type: ReadingsActions.PENDING_FILTER_KIND;
-  value: string;
-};
 
 type PendingFilterReadingYearAction = {
   type: ReadingsActions.PENDING_FILTER_READING_YEAR;
@@ -89,7 +89,6 @@ export function initState({
   const baseState = createInitialState({
     groupFn: groupValuesSortedBySequence,
     initialSort,
-    showMoreEnabled: false, // Readings don't paginate
     sortFn: sortValues,
     values,
   });
@@ -123,29 +122,6 @@ export function reducer(state: State, action: ActionType): State {
   let newMonth;
 
   switch (action.type) {
-    case ListWithFiltersActions.PENDING_FILTER_TITLE: {
-      return handleTitleFilterAction(state, action, {
-        currentMonth: state.currentMonth,
-        hasNextMonth: state.hasNextMonth,
-        hasPrevMonth: state.hasPrevMonth,
-        monthReadings: state.monthReadings,
-        nextMonth: state.nextMonth,
-        prevMonth: state.prevMonth,
-      });
-    }
-
-    // Field-specific shared filters
-    case ListWithFiltersActions.PENDING_FILTER_WORK_YEAR: {
-      return handleWorkYearFilterAction(state, action, {
-        currentMonth: state.currentMonth,
-        hasNextMonth: state.hasNextMonth,
-        hasPrevMonth: state.hasPrevMonth,
-        monthReadings: state.monthReadings,
-        nextMonth: state.nextMonth,
-        prevMonth: state.prevMonth,
-      });
-    }
-
     case ReadingsActions.NEXT_MONTH: {
       newMonth = getNextMonthWithReadings(
         state.currentMonth,
@@ -186,21 +162,6 @@ export function reducer(state: State, action: ActionType): State {
       };
     }
 
-    case ReadingsActions.PENDING_FILTER_KIND: {
-      const filterFn =
-        action.value && action.value !== "All"
-          ? (value: ListItemValue) => value.kind == action.value
-          : undefined;
-      return {
-        ...updatePendingFilter(state, "kind", filterFn, action.value),
-        currentMonth: state.currentMonth,
-        hasNextMonth: state.hasNextMonth,
-        hasPrevMonth: state.hasPrevMonth,
-        monthReadings: state.monthReadings,
-        nextMonth: state.nextMonth,
-        prevMonth: state.prevMonth,
-      };
-    }
     case ReadingsActions.PENDING_FILTER_READING_YEAR: {
       const [minYear, maxYear] = action.values;
       const filterFn = (value: ListItemValue) =>
@@ -239,12 +200,45 @@ export function reducer(state: State, action: ActionType): State {
         prevMonth: prevMonthPrev,
       };
     }
+    case WorksFilterActions.PENDING_FILTER_KIND: {
+      return handleKindFilterAction(state, action, {
+        currentMonth: state.currentMonth,
+        hasNextMonth: state.hasNextMonth,
+        hasPrevMonth: state.hasPrevMonth,
+        monthReadings: state.monthReadings,
+        nextMonth: state.nextMonth,
+        prevMonth: state.prevMonth,
+      });
+    }
+
+    case WorksFilterActions.PENDING_FILTER_TITLE: {
+      return handleTitleFilterAction(state, action, {
+        currentMonth: state.currentMonth,
+        hasNextMonth: state.hasNextMonth,
+        hasPrevMonth: state.hasPrevMonth,
+        monthReadings: state.monthReadings,
+        nextMonth: state.nextMonth,
+        prevMonth: state.prevMonth,
+      });
+    }
+
+    // Field-specific shared filters
+    case WorksFilterActions.PENDING_FILTER_WORK_YEAR: {
+      return handleWorkYearFilterAction(state, action, {
+        currentMonth: state.currentMonth,
+        hasNextMonth: state.hasNextMonth,
+        hasPrevMonth: state.hasPrevMonth,
+        monthReadings: state.monthReadings,
+        nextMonth: state.nextMonth,
+        prevMonth: state.prevMonth,
+      });
+    }
 
     default: {
       // Handle shared list structure actions
       const result = handleListWithFiltersAction(
         state,
-        action,
+        action as ListWithFiltersActionType<Sort>,
         { groupFn: groupValuesSortedBySequence, sortFn: sortValues },
         {
           currentMonth: state.currentMonth,

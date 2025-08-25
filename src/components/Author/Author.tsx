@@ -12,7 +12,7 @@ import { ListItemGrade } from "~/components/ListItemGrade";
 import { ListItemKindAndYear } from "~/components/ListItemKindAndYear";
 import { ListItemReviewDate } from "~/components/ListItemReviewDate";
 import { ListItemTitle } from "~/components/ListItemTitle";
-import { ListWithFilters } from "~/components/ListWithFilters";
+import { ListWithFilters } from "~/components/ListWithFilters/ListWithFilters";
 import { toSentenceArray } from "~/utils/toSentenceArray";
 
 import type { Sort } from "./Author.reducer";
@@ -97,7 +97,7 @@ export function Author({
           groupedValues={state.groupedValues}
           onShowMore={() => dispatch({ type: Actions.SHOW_MORE })}
           totalCount={state.filteredValues.length}
-          visibleCount={state.showCount!}
+          visibleCount={state.showCount}
         >
           {(value) => <WorkListItem key={value.slug} value={value} />}
         </GroupedCoverList>

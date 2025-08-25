@@ -1,23 +1,29 @@
+import type { CollectionsFilterActionType } from "~/components/ListWithFilters/collectionsReducerUtils";
 import type {
   ListWithFiltersActionType,
   ListWithFiltersState,
-} from "~/components/ListWithFilters.reducerUtils";
+} from "~/components/ListWithFilters/reducerUtils";
 
+import {
+  CollectionsFilterActions,
+  handleNameFilterAction,
+  sortName,
+  sortReviewCount,
+} from "~/components/ListWithFilters/collectionsReducerUtils";
 import {
   buildGroupValues,
   buildSortValues,
   createInitialState,
   getGroupLetter,
   handleListWithFiltersAction,
-  handleNameFilterAction,
   ListWithFiltersActions,
-  sortName,
-  sortReviewCount,
-} from "~/components/ListWithFilters.reducerUtils";
+} from "~/components/ListWithFilters/reducerUtils";
 
 import type { ListItemValue } from "./Authors";
 
-export type ActionType = ListWithFiltersActionType<Sort>;
+export type ActionType =
+  | CollectionsFilterActionType
+  | ListWithFiltersActionType<Sort>;
 
 export type Sort =
   | "name-asc"
@@ -37,7 +43,6 @@ export function initState({
   return createInitialState({
     groupFn: groupValues,
     initialSort,
-    showMoreEnabled: false,
     sortFn: sortValues,
     values,
   });
@@ -51,7 +56,7 @@ const sortValues = buildSortValues<ListItemValue, Sort>({
 export function reducer(state: State, action: ActionType): State {
   switch (action.type) {
     // Field-specific shared filter
-    case ListWithFiltersActions.PENDING_FILTER_NAME: {
+    case CollectionsFilterActions.PENDING_FILTER_NAME: {
       return handleNameFilterAction(state, action);
     }
 
@@ -82,4 +87,8 @@ function groupForValue(item: ListItemValue, sortValue: Sort): string {
   }
 }
 
-export { ListWithFiltersActions as Actions } from "~/components/ListWithFilters.reducerUtils";
+// Re-export shared actions for component convenience
+export const Actions = {
+  ...ListWithFiltersActions,
+  ...CollectionsFilterActions,
+} as const;

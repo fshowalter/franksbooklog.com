@@ -11,7 +11,7 @@ import { ListItemGrade } from "~/components/ListItemGrade";
 import { ListItemKindAndYear } from "~/components/ListItemKindAndYear";
 import { ListItemReviewDate } from "~/components/ListItemReviewDate";
 import { ListItemTitle } from "~/components/ListItemTitle";
-import { ListWithFilters } from "~/components/ListWithFilters";
+import { ListWithFilters } from "~/components/ListWithFilters/ListWithFilters";
 import { toSentenceArray } from "~/utils/toSentenceArray";
 
 import type { ReviewsSort } from "./Reviews.reducer";
@@ -89,7 +89,7 @@ export function Reviews({
           groupedValues={state.groupedValues}
           onShowMore={() => dispatch({ type: Actions.SHOW_MORE })}
           totalCount={state.filteredValues.length}
-          visibleCount={state.showCount!}
+          visibleCount={state.showCount}
         >
           {(value) => <ReviewsListItem key={value.slug} value={value} />}
         </GroupedCoverList>
