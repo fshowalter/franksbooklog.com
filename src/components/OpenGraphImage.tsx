@@ -1,12 +1,10 @@
 import type { JSX } from "react";
 export function OpenGraphImage({
   backdrop,
-  blur = false,
   sectionHead = "Frank's Book Log",
   title,
 }: {
   backdrop: string;
-  blur?: boolean;
   sectionHead?: string;
   title: string;
 }): JSX.Element {
@@ -24,7 +22,6 @@ export function OpenGraphImage({
         height={630}
         src={backdrop}
         style={{
-          filter: blur ? "blur(2px)" : "unset",
           objectFit: "cover",
         }}
         width={1200}

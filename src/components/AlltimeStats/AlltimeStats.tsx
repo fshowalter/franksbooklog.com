@@ -32,7 +32,6 @@ export function AlltimeStats({
   return (
     <Layout className="flex flex-col items-center bg-subtle" hasBackdrop={true}>
       <Backdrop
-        blur={true}
         breadcrumb={
           <BreadcrumbLink href="/readings/">Reading Log</BreadcrumbLink>
         }

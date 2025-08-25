@@ -398,10 +398,7 @@ exports[`Home > matches snapshot 1`] = `
         >
           <img
             alt=""
-            class="
-        absolute inset-0 size-full object-cover object-top
-        
-      "
+            class="absolute inset-0 size-full object-cover object-top"
             fetchpriority="high"
             height="1350"
             loading="eager"
@@ -419,7 +416,7 @@ exports[`Home > matches snapshot 1`] = `
                 after:absolute after:top-0 after:left-0 after:-z-10 after:h-full
                 after:w-full after:bg-linear-to-t after:from-[rgba(0,0,0,.85)]
                 after:to-50%
-                tablet:after:to-25%
+                tablet:after:to-30%
               
         "
           >

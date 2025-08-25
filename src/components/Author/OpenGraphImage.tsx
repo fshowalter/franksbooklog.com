@@ -23,7 +23,6 @@ export function OpenGraphImage({
         height={630}
         src={backdrop}
         style={{
-          filter: "blur(2px)",
           objectFit: "cover",
         }}
         width={1200}
@@ -48,9 +47,8 @@ export function OpenGraphImage({
         {avatar && (
           <div
             style={{
-              backgroundColor: "red",
               borderRadius: "50%",
-              boxShadow: "0px 0px 0px 1px #f4f1ea",
+              boxShadow: "0px 0px 0px 1px #484745",
               display: "flex",
               marginBottom: "32px",
             }}

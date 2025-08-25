@@ -21,7 +21,7 @@ export function AvatarBackdrop({
   const heroImage = (
     <img
       className={`
-        absolute inset-0 size-full object-cover object-top text-inverse blur-xs
+        absolute inset-0 size-full object-cover object-top text-inverse
       `}
       {...backdropImageProps}
       {...BackdropImageConfig}
@@ -64,7 +64,6 @@ export const BackdropImageConfig = {
 };
 
 export function Backdrop({
-  blur = false,
   bottomShadow = true,
   breadcrumb,
   centerText = false,
@@ -74,7 +73,6 @@ export function Backdrop({
   title,
   titleClasses,
 }: {
-  blur?: boolean;
   bottomShadow?: boolean;
   breadcrumb?: React.ReactNode;
   centerText?: boolean;
@@ -86,10 +84,7 @@ export function Backdrop({
 }) {
   const heroImage = (
     <img
-      className={`
-        absolute inset-0 size-full object-cover object-top
-        ${blur ? `blur-xs` : ""}
-      `}
+      className={`absolute inset-0 size-full object-cover object-top`}
       {...imageProps}
       {...BackdropImageConfig}
       alt=""
@@ -247,7 +242,7 @@ function Wrapper({
                 after:absolute after:top-0 after:left-0 after:-z-10 after:h-full
                 after:w-full after:bg-linear-to-t after:from-[rgba(0,0,0,.85)]
                 after:to-50%
-                tablet:after:to-25%
+                tablet:after:to-30%
               `
               : ""
           }
