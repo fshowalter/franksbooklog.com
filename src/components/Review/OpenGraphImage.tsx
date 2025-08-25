@@ -2,6 +2,19 @@ import type { JSX } from "react";
 
 import { toSentenceArray } from "~/utils/toSentenceArray";
 
+export type ReviewOpenGraphImageComponentType = (
+  props: ReviewOpenGraphImageProps,
+) => JSX.Element;
+
+type ReviewOpenGraphImageProps = {
+  authors: string[];
+  coverBase64DataUri: string;
+  coverHeight: number;
+  coverWidth: number;
+  grade: string | undefined;
+  title: string;
+};
+
 export function OpenGraphImage({
   authors,
   coverBase64DataUri,
@@ -9,14 +22,7 @@ export function OpenGraphImage({
   coverWidth,
   grade,
   title,
-}: {
-  authors: string[];
-  coverBase64DataUri: string;
-  coverHeight: number;
-  coverWidth: number;
-  grade: string | undefined;
-  title: string;
-}): JSX.Element {
+}: ReviewOpenGraphImageProps): JSX.Element {
   return (
     <div
       style={{

@@ -60,6 +60,7 @@ export function Authors({
           key={filterKey}
         />
       }
+      hasActiveFilters={state.hasActiveFilters}
       list={
         <GroupedAvatarList
           groupedValues={state.groupedValues}
@@ -188,7 +189,7 @@ function LetterLink({
   return (
     <li
       className={`
-        snap-start text-center
+        snap-start text-center font-sans
         ${linkFunc ? "text-inverse" : `text-inverse-subtle`}
       `}
     >
@@ -196,7 +197,7 @@ function LetterLink({
         <a
           className={`
             block transform-gpu p-4 transition-all
-            hover:scale-105 hover:bg-accent hover:text-inverse
+            hover:scale-105 hover:bg-canvas hover:text-default
           `}
           href={linkFunc(letter)}
         >

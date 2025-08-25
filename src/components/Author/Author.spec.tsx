@@ -121,6 +121,64 @@ describe("Author", () => {
     expect(screen.getByTestId("grouped-cover-list")).toMatchSnapshot();
   });
 
+  it("can sort by date reviewed with newest first", async ({ expect }) => {
+    expect.hasAssertions();
+
+    render(<Author {...props} />);
+
+    await userEvent.selectOptions(
+      screen.getByLabelText("Sort"),
+      "Review Date (Newest First)",
+    );
+
+    expect(screen.getByTestId("grouped-cover-list")).toMatchSnapshot();
+  });
+
+  it("can sort by date reviewed with oldest first", async ({ expect }) => {
+    expect.hasAssertions();
+
+    render(<Author {...props} />);
+
+    await userEvent.selectOptions(
+      screen.getByLabelText("Sort"),
+      "Review Date (Oldest First)",
+    );
+
+    expect(screen.getByTestId("grouped-cover-list")).toMatchSnapshot();
+  });
+
+  it("can filter by year reviewed", async ({ expect }) => {
+    expect.hasAssertions();
+
+    render(<Author {...props} />);
+
+    const fieldset = screen.getByRole("group", { name: "Review Year" });
+    const fromInput = within(fieldset).getByLabelText("From");
+    const toInput = within(fieldset).getByLabelText("to");
+
+    await userEvent.selectOptions(fromInput, "2022");
+    await userEvent.selectOptions(toInput, "2022");
+
+    expect(screen.getByTestId("grouped-cover-list")).toMatchSnapshot();
+  });
+
+  it("can filter by year reviewed reversed", async ({ expect }) => {
+    expect.hasAssertions();
+
+    render(<Author {...props} />);
+
+    const fieldset = screen.getByRole("group", { name: "Review Year" });
+    const fromInput = within(fieldset).getByLabelText("From");
+    const toInput = within(fieldset).getByLabelText("to");
+
+    await userEvent.selectOptions(fromInput, "2022");
+    await userEvent.selectOptions(toInput, "2022");
+    await userEvent.selectOptions(fromInput, "2022");
+    await userEvent.selectOptions(toInput, "2022");
+
+    expect(screen.getByTestId("grouped-cover-list")).toMatchSnapshot();
+  });
+
   it("can filter by kind", async ({ expect }) => {
     expect.hasAssertions();
     render(<Author {...props} />);

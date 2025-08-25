@@ -1,13 +1,20 @@
 import type { JSX } from "react";
+
+export type AuthorOpenGraphImageComponentType = (
+  props: AuthorOpenGraphImageProps,
+) => JSX.Element;
+
+type AuthorOpenGraphImageProps = {
+  avatar?: string;
+  backdrop: string;
+  name: string;
+};
+
 export function OpenGraphImage({
   avatar,
   backdrop,
   name,
-}: {
-  avatar?: string;
-  backdrop: string;
-  name: string;
-}): JSX.Element {
+}: AuthorOpenGraphImageProps): JSX.Element {
   return (
     <div
       style={{
