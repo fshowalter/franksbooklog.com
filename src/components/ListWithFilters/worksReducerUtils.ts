@@ -14,10 +14,7 @@ import { sortNumber, sortString } from "~/components/utils/reducerUtils";
  */
 import type { ListWithFiltersState } from "./reducerUtils";
 
-import {
-  createInitialState,
-  updatePendingFilter,
-} from "./reducerUtils";
+import { createInitialState, updatePendingFilter } from "./reducerUtils";
 
 /**
  * Default number of items to show per page for paginated work lists
@@ -38,8 +35,11 @@ export enum WorksFilterActions {
 /**
  * State type for lists with pagination (Show More) enabled
  */
-export type ListWithFiltersAndShowCountState<TItem, TSortValue> =
-  ListWithFiltersState<TItem, TSortValue> & PaginationState;
+type ListWithFiltersAndShowCountState<TItem, TSortValue> = ListWithFiltersState<
+  TItem,
+  TSortValue
+> &
+  PaginationState;
 
 /**
  * Extended state for pagination support
@@ -51,27 +51,27 @@ export type PaginationState = {
 /**
  * Work-specific action type definitions
  */
-export type PendingFilterKindAction = {
+type PendingFilterKindAction = {
   type: WorksFilterActions.PENDING_FILTER_KIND;
   value: string;
 };
 
-export type PendingFilterReviewYearAction = {
+type PendingFilterReviewYearAction = {
   type: WorksFilterActions.PENDING_FILTER_REVIEW_YEAR;
   values: [string, string];
 };
 
-export type PendingFilterTitleAction = {
+type PendingFilterTitleAction = {
   type: WorksFilterActions.PENDING_FILTER_TITLE;
   value: string;
 };
 
-export type PendingFilterWorkYearAction = {
+type PendingFilterWorkYearAction = {
   type: WorksFilterActions.PENDING_FILTER_WORK_YEAR;
   values: [string, string];
 };
 
-export type ShowMoreAction = {
+type ShowMoreAction = {
   increment?: number;
   type: WorksFilterActions.SHOW_MORE;
 };
@@ -203,10 +203,7 @@ export function handleShowMoreAction<
   const increment = action.increment ?? SHOW_COUNT_DEFAULT;
   const showCount = state.showCount + increment;
   const paginatedGroupFn = createPaginatedGroupFn(groupFn, showCount);
-  const groupedValues = paginatedGroupFn(
-    state.filteredValues,
-    state.sortValue,
-  );
+  const groupedValues = paginatedGroupFn(state.filteredValues, state.sortValue);
 
   return {
     ...state,
@@ -372,4 +369,3 @@ function createWorkYearFilter(minYear: string, maxYear: string) {
     return item.workYear >= minYear && item.workYear <= maxYear;
   };
 }
-

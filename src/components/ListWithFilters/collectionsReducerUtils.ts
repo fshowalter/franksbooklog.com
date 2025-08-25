@@ -29,7 +29,7 @@ export type CollectionsFilterActionType = PendingFilterNameAction;
 /**
  * Collection-specific action type definitions
  */
-export type PendingFilterNameAction = {
+type PendingFilterNameAction = {
   type: CollectionsFilterActions.PENDING_FILTER_NAME;
   value: string;
 };
@@ -80,4 +80,3 @@ function createNameFilter(value: string | undefined) {
   const regex = new RegExp(value, "i");
   return <T extends { name: string }>(item: T) => regex.test(item.name);
 }
-

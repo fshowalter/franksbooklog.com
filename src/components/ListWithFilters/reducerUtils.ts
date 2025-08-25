@@ -30,7 +30,12 @@ export enum ListWithFiltersActions {
 }
 
 // Re-export types and functions from generic utils for backward compatibility
-export { buildGroupValues, buildSortValues, getGroupLetter, sortNumber, sortString } from "~/components/utils/reducerUtils";
+export {
+  buildGroupValues,
+  buildSortValues,
+  getGroupLetter,
+  sortNumber,
+} from "~/components/utils/reducerUtils";
 export type { GroupFn } from "~/components/utils/reducerUtils";
 
 /**
@@ -84,7 +89,6 @@ type SortAction<TSortValue> = {
   value: TSortValue;
 };
 
-
 /**
  * Helper to create initial state with pending filters support
  */
@@ -115,7 +119,6 @@ export function createInitialState<TItem, TSortValue>({
     sortValue: initialSort,
   };
 }
-
 
 /**
  * Shared reducer handler for list structure actions that don't require item values
@@ -180,7 +183,6 @@ export function handleListWithFiltersAction<
     }
   }
 }
-
 
 /**
  * Update a pending filter
@@ -266,7 +268,6 @@ function clearPendingFilters<TItem, TSortValue>(
     pendingFilterValues: {},
   };
 }
-
 
 /**
  * Reset pending filters to current active filters
