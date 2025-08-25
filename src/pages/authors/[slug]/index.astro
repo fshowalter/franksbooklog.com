@@ -44,14 +44,6 @@ const breadcrumbElement = React.createElement(BreadcrumbLink, {
   children: "Authors",
   href: "/authors/",
 });
-
-const backdropElement = React.createElement(AvatarBackdrop, {
-  avatarImageProps,
-  backdropImageProps,
-  breadcrumb: breadcrumbElement,
-  deck,
-  name,
-});
 ---
 
 <Layout
@@ -66,7 +58,13 @@ const backdropElement = React.createElement(AvatarBackdrop, {
   title={`${name} book & story reviews`}
 >
   <ComponentLayout className="bg-subtle">
-    {backdropElement}
+    <AvatarBackdrop
+      avatarImageProps={avatarImageProps}
+      backdropImageProps={backdropImageProps}
+      breadcrumb={breadcrumbElement}
+      deck={deck}
+      name={name}
+    />
     <Author client:load {...interactiveProps} name={name} />
   </ComponentLayout>
 </Layout>

@@ -439,9 +439,58 @@
           </div>
         </header>
         <main class="grow bg-subtle" id="content">
-          [object Object]<astro-island
+          <link
+            rel="preload"
+            as="image"
+            imagesrcset="/_image/?href=%2Fcontent%2Fassets%2Fbackdrops%2Fauthor.png%3ForigWidth%3D2400%26origHeight%3D1350%26origFormat%3Dpng&amp;w=720&amp;h=405&amp;q=80&amp;f=avif 720w, /_image/?href=%2Fcontent%2Fassets%2Fbackdrops%2Fauthor.png%3ForigWidth%3D2400%26origHeight%3D1350%26origFormat%3Dpng&amp;w=1200&amp;h=675&amp;q=80&amp;f=avif 1200w, /_image/?href=%2Fcontent%2Fassets%2Fbackdrops%2Fauthor.png%3ForigWidth%3D2400%26origHeight%3D1350%26origFormat%3Dpng&amp;w=1920&amp;h=1080&amp;q=80&amp;f=avif 1920w, /_image/?href=%2Fcontent%2Fassets%2Fbackdrops%2Fauthor.png%3ForigWidth%3D2400%26origHeight%3D1350%26origFormat%3Dpng&amp;w=2400&amp;h=1350&amp;q=80&amp;f=avif 2400w"
+            imagesizes="100vw"
+            fetchpriority="high"
+          />
+          <header
+            class="min-h-[400px] tablet:min-h-[640px] laptop:min-h-[clamp(640px,70vh,1350px)] relative flex w-full flex-col content-start items-center justify-end gap-6 bg-[#2A2B2A] pt-40 pb-8 text-inverse tablet:pt-40 tablet:pb-10 laptop:pt-40 laptop:pb-16"
+          >
+            <img
+              class="absolute inset-0 size-full object-cover object-top text-inverse blur-xs"
+              src="/_image/?href=%2Fcontent%2Fassets%2Fbackdrops%2Fauthor.png%3ForigWidth%3D2400%26origHeight%3D1350%26origFormat%3Dpng&amp;w=2400&amp;h=1350&amp;q=80&amp;f=avif"
+              srcset="
+                /_image/?href=%2Fcontent%2Fassets%2Fbackdrops%2Fauthor.png%3ForigWidth%3D2400%26origHeight%3D1350%26origFormat%3Dpng&amp;w=720&amp;h=405&amp;q=80&amp;f=avif    720w,
+                /_image/?href=%2Fcontent%2Fassets%2Fbackdrops%2Fauthor.png%3ForigWidth%3D2400%26origHeight%3D1350%26origFormat%3Dpng&amp;w=1200&amp;h=675&amp;q=80&amp;f=avif  1200w,
+                /_image/?href=%2Fcontent%2Fassets%2Fbackdrops%2Fauthor.png%3ForigWidth%3D2400%26origHeight%3D1350%26origFormat%3Dpng&amp;w=1920&amp;h=1080&amp;q=80&amp;f=avif 1920w,
+                /_image/?href=%2Fcontent%2Fassets%2Fbackdrops%2Fauthor.png%3ForigWidth%3D2400%26origHeight%3D1350%26origFormat%3Dpng&amp;w=2400&amp;h=1350&amp;q=80&amp;f=avif 2400w
+              "
+              height="1350"
+              sizes="100vw"
+              width="2400"
+              alt=""
+              fetchpriority="high"
+              loading="eager"
+            />
+            <div
+              class="items-center z-10 mx-auto flex w-full max-w-(--breakpoint-desktop) flex-col px-container after:absolute after:top-0 after:left-0 after:-z-10 after:h-full after:w-full after:bg-linear-to-t after:from-[rgba(0,0,0,.85)] after:to-50% tablet:after:to-25%"
+            >
+              <p class="mb-4">
+                <a
+                  class="relative inline-block font-sans text-sm tracking-wide uppercase after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:origin-center after:scale-x-0 after:bg-(--fg-inverse)/75 after:transition-transform hover:after:scale-x-100"
+                  href="/authors/"
+                  >Authors</a
+                >
+              </p>
+              <h1
+                class="text-center text-[2rem] leading-10 font-extrabold [text-shadow:1px_1px_2px_rgba(0,0,0,.25)] tablet:text-4xl laptop:text-7xl"
+                data-pagefind-weight="10"
+              >
+                Jesse Itzler
+              </h1>
+              <p
+                class="mt-1 font-sans text-base laptop:my-4 laptop:text-xl [text-shadow:1px_1px_2px_black] text-center"
+              >
+                Author of 1 reviewed work.
+              </p>
+            </div>
+          </header>
+          <astro-island
             uid="1Snni4"
-            prefix="r1"
+            prefix="r3"
             component-url="~/components/Author/Author"
             component-export="Author"
             renderer-url="@astrojs/react/client.js"

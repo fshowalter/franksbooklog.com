@@ -11,13 +11,6 @@ const props = await getProps();
 
 // Separate layout props from interactive props
 const { backdropImageProps, deck, ...interactiveProps } = props;
-
-// Create React elements in front matter
-const backdropElement = React.createElement(Backdrop, {
-  deck,
-  imageProps: backdropImageProps,
-  title: "Reviews",
-});
 ---
 
 <Layout
@@ -33,7 +26,7 @@ const backdropElement = React.createElement(Backdrop, {
     <meta content="rgba(0,0,0,.85)" name="theme-color" />
   </Fragment>
   <ComponentLayout className="bg-subtle">
-    {backdropElement}
+    <Backdrop deck={deck} imageProps={backdropImageProps} title="Reviews" />
     <Reviews client:load {...interactiveProps} />
   </ComponentLayout>
 </Layout>
