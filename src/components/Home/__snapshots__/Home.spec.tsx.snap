@@ -2340,7 +2340,7 @@ exports[`Home > matches snapshot 1`] = `
                   <a
                     class="
         underline transition-colors
-        hover:text-default
+        hover:text-accent
       "
                     href="/how-i-grade/"
                   >
@@ -2350,7 +2350,7 @@ exports[`Home > matches snapshot 1`] = `
                   <a
                     class="
         underline transition-colors
-        hover:text-default
+        hover:text-accent
       "
                     href="/reviews/"
                   >
@@ -2360,7 +2360,7 @@ exports[`Home > matches snapshot 1`] = `
                   <a
                     class="
         underline transition-colors
-        hover:text-default
+        hover:text-accent
       "
                     href="/authors/"
                   >
@@ -2375,7 +2375,7 @@ exports[`Home > matches snapshot 1`] = `
                   <a
                     class="
         underline transition-colors
-        hover:text-default
+        hover:text-accent
       "
                     href="/readings/"
                   >
@@ -2385,7 +2385,7 @@ exports[`Home > matches snapshot 1`] = `
                   <a
                     class="
         underline transition-colors
-        hover:text-default
+        hover:text-accent
       "
                     href="/readings/stats/"
                   >
