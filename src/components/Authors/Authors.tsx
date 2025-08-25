@@ -1,13 +1,11 @@
-import { type JSX, useReducer } from "react";
+import { type JSX, useReducer, useState } from "react";
 
 import type { Author } from "~/api/authors";
 import type { AvatarImageProps } from "~/api/avatars";
 import type { BackdropImageProps } from "~/api/backdrops";
 
-import { GroupedList } from "~/components/GroupedList";
-import { ListItem } from "~/components/ListItem";
-import { ListItemAvatar } from "~/components/ListItemAvatar";
-import { ListWithFilters } from "~/components/ListWithFilters";
+import { AvatarListItem, GroupedAvatarList } from "~/components/AvatarList";
+import { ListWithFilters } from "~/components/ListWithFilters/ListWithFilters";
 
 import type { Sort } from "./Authors.reducer";
 
@@ -16,7 +14,7 @@ import { Filters } from "./Filters";
 
 export type ListItemValue = Pick<Author, "name" | "slug" | "sortName"> & {
   avatarImageProps: AvatarImageProps | undefined;
-  reviewedWorkCount: number;
+  reviewCount: number;
 };
 
 export type Props = InteractiveProps & {
@@ -42,27 +40,48 @@ export function Authors({
     initState,
   );
 
+  const [filterKey, setFilterKey] = useState(0);
+
   return (
     <ListWithFilters
-      className="[--scroll-offset:52px]"
+      className={
+        state.sortValue.startsWith("name-") ? `[--scroll-offset:52px]` : ""
+      }
       dynamicSubNav={
         <AlphabetSubNav
           groupedValues={state.groupedValues}
           sortValue={state.sortValue}
         />
       }
-      filters={<Filters dispatch={dispatch} />}
+      filters={
+        <Filters
+          dispatch={dispatch}
+          filterValues={state.pendingFilterValues}
+          key={filterKey}
+        />
+      }
+      hasActiveFilters={state.hasActiveFilters}
       list={
-        <GroupedList
-          data-testid="list"
+        <GroupedAvatarList
           groupedValues={state.groupedValues}
           groupItemClassName={`scroll-mt-[calc(52px_+_var(--list-scroll-offset))]`}
-          totalCount={state.filteredValues.length}
-          visibleCount={state.filteredValues.length}
         >
           {(value) => <AuthorListItem key={value.slug} value={value} />}
-        </GroupedList>
+        </GroupedAvatarList>
       }
+      onApplyFilters={() => dispatch({ type: Actions.APPLY_PENDING_FILTERS })}
+      onClearFilters={() => {
+        dispatch({ type: Actions.CLEAR_PENDING_FILTERS });
+        setFilterKey((k) => k + 1);
+      }}
+      onFilterDrawerOpen={() =>
+        dispatch({ type: Actions.RESET_PENDING_FILTERS })
+      }
+      onResetFilters={() => {
+        dispatch({ type: Actions.RESET_PENDING_FILTERS });
+        setFilterKey((k) => k + 1);
+      }}
+      pendingFilteredCount={state.pendingFilteredCount}
       sortProps={{
         currentSortValue: state.sortValue,
         onSortChange: (e) =>
@@ -100,12 +119,11 @@ function AlphabetSubNav({
   }
 
   return (
-    <nav className={`sticky top-0 z-[21] bg-footer`}>
+    <nav className={`sticky top-0 z-nav-menu bg-[#333]`}>
       <ul
         className={`
           mx-auto flex scrollbar-hidden max-w-(--breakpoint-desktop) snap-x
-          overflow-x-auto px-container font-sans text-sm font-normal
-          tracking-wide
+          overflow-x-auto px-container text-md font-semibold tracking-wide
           laptop:justify-center
         `}
       >
@@ -129,54 +147,34 @@ function AlphabetSubNav({
 
 function AuthorListItem({ value }: { value: ListItemValue }): JSX.Element {
   return (
-    <ListItem
-      className="relative"
-      extraVerticalPadding={true}
-      itemsCenter={true}
-    >
-      <div
-        className={`
-          relative rounded-full
-          after:absolute after:top-0 after:left-0 after:size-full
-          after:bg-default after:opacity-15 after:transition-opacity
-          group-has-[a:hover]/list-item:after:opacity-0
-        `}
-      >
-        <ListItemAvatar imageProps={value.avatarImageProps} />
+    <AvatarListItem avatarImageProps={value.avatarImageProps}>
+      <div className="flex flex-col justify-center">
+        <AuthorName name={value.name} slug={value.slug} />
+        <div className={`mt-[6px] font-sans text-sm text-nowrap text-subtle`}>
+          {value.reviewCount} Review{value.reviewCount > 1 ? "s" : ""}
+        </div>
       </div>
-      <AuthorName slug={value.slug} value={value.name} />
-      <div className={`ml-auto font-sans text-sm text-nowrap text-subtle`}>
-        {value.reviewedWorkCount}
-      </div>
-    </ListItem>
+    </AvatarListItem>
   );
 }
 
 function AuthorName({
+  name,
   slug,
-  value,
 }: {
-  slug?: string;
-  value: ListItemValue["name"];
+  name: ListItemValue["name"];
+  slug: string;
 }) {
-  if (!slug) {
-    return (
-      <span className="font-sans text-sm leading-normal font-light text-subtle">
-        {value}
-      </span>
-    );
-  }
-
   return (
     <a
       className={`
-        font-sans text-sm leading-normal font-medium text-accent
-        after:absolute after:top-0 after:left-0 after:size-full after:opacity-0
-        hover:text-accent
+        text-base leading-normal font-semibold text-accent
+        after:absolute after:top-0 after:left-0 after:z-sticky after:size-full
+        after:opacity-0
       `}
       href={`/authors/${slug}/`}
     >
-      {value}
+      <div className="leading-normal">{name}</div>
     </a>
   );
 }
@@ -191,7 +189,7 @@ function LetterLink({
   return (
     <li
       className={`
-        snap-start text-center
+        snap-start text-center font-sans
         ${linkFunc ? "text-inverse" : `text-inverse-subtle`}
       `}
     >
@@ -199,7 +197,7 @@ function LetterLink({
         <a
           className={`
             block transform-gpu p-4 transition-all
-            hover:scale-105 hover:bg-accent hover:text-inverse
+            hover:scale-105 hover:bg-canvas hover:text-default
           `}
           href={linkFunc(letter)}
         >

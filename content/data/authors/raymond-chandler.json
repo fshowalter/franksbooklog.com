@@ -4,17 +4,22 @@
   "slug": "raymond-chandler",
   "reviewedWorks": [
     {
-      "reviewSequence": "2022-09-24-2",
+      "reviewSequence": 59,
       "title": "The Big Sleep",
+      "reviewed": true,
       "subtitle": null,
-      "yearPublished": "1939",
+      "workYear": "1939",
+      "workYearSequence": 21,
+      "authorSequence": 36,
+      "titleSequence": 38,
       "kind": "Novel",
       "slug": "the-big-sleep-by-raymond-chandler",
       "sortTitle": "Big Sleep",
       "grade": "C+",
       "gradeValue": 7,
+      "gradeSequence": 40,
       "reviewDate": "2022-09-24",
-      "yearReviewed": 2022,
+      "reviewYear": "2022",
       "authors": [
         {
           "slug": "raymond-chandler",

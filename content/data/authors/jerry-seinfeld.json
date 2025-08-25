@@ -4,17 +4,22 @@
   "slug": "jerry-seinfeld",
   "reviewedWorks": [
     {
-      "reviewSequence": "2022-09-10-1",
+      "reviewSequence": 53,
       "title": "Is This Anything?",
+      "reviewed": true,
       "subtitle": null,
-      "yearPublished": "2020",
+      "workYear": "2020",
+      "workYearSequence": 472,
+      "authorSequence": 443,
+      "titleSequence": 237,
       "kind": "Nonfiction",
       "slug": "is-this-anything-by-jerry-seinfeld",
       "sortTitle": "Is This Anything?",
       "grade": "C",
       "gradeValue": 6,
+      "gradeSequence": 28,
       "reviewDate": "2022-09-10",
-      "yearReviewed": 2022,
+      "reviewYear": "2022",
       "authors": [
         {
           "slug": "jerry-seinfeld",

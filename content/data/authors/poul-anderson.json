@@ -4,17 +4,22 @@
   "slug": "poul-anderson",
   "reviewedWorks": [
     {
-      "reviewSequence": "2013-04-07-1",
+      "reviewSequence": 6,
       "title": "Brain Wave",
+      "reviewed": true,
       "subtitle": null,
-      "yearPublished": "1954",
+      "workYear": "1954",
+      "workYearSequence": 31,
+      "authorSequence": 3,
+      "titleSequence": 63,
       "kind": "Novel",
       "slug": "brain-wave-by-poul-anderson",
       "sortTitle": "Brain Wave",
       "grade": "C",
       "gradeValue": 6,
+      "gradeSequence": 21,
       "reviewDate": "2013-04-07",
-      "yearReviewed": 2013,
+      "reviewYear": "2013",
       "authors": [
         {
           "slug": "poul-anderson",

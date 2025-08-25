@@ -1,0 +1,505 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ListWithFilters > filter drawer > opens and closes filter drawer 1`] = `
+<div
+  aria-label="Filters"
+  class="
+              fixed top-0 right-0 z-filter-drawer flex h-full max-w-[380px]
+              flex-col items-start gap-y-5 bg-default text-left text-inverse
+              duration-200 ease-in-out
+              w-0 transform-[translateX(100%)] overflow-y-hidden
+              tablet:gap-y-10
+            "
+  id="filters"
+>
+  <div
+    class="
+                flex h-full w-full flex-col text-sm
+                tablet:text-base
+                [@media(min-height:815px)]:pt-12
+              "
+  >
+    <button
+      aria-label="Close filters"
+      class="
+                  absolute top-7 right-4 z-10 flex h-10 w-10 transform-gpu
+                  cursor-pointer items-center justify-center rounded-full
+                  bg-canvas text-default drop-shadow-md transition-transform
+                  hover:scale-105 hover:drop-shadow-md
+                  
+                "
+      type="button"
+    >
+      <svg
+        aria-hidden="true"
+        class="
+                    h-4 w-4 transform-gpu
+                    
+                    
+                  "
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        viewBox="0 0 28 28"
+      >
+        <path
+          d="M7 21L21 7M7 7l14 14"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
+    <fieldset
+      class="
+                  mt-0 flex h-full grow flex-col gap-5 px-container py-10
+                  tablet:gap-8
+                  tablet-landscape:grow-0 tablet-landscape:gap-12
+                  tablet-landscape:px-12
+                "
+    >
+      <legend
+        class="
+                    block w-full pt-10 pb-8 font-sans text-sm font-bold
+                    tracking-wide text-subtle uppercase shadow-bottom
+                  "
+      >
+        Filter
+      </legend>
+      <div
+        data-testid="filters-content"
+      >
+        <input
+          placeholder="Filter input"
+          type="text"
+        />
+        <button
+          type="button"
+        >
+          Filter button
+        </button>
+      </div>
+    </fieldset>
+    <div
+      class="
+                  sticky bottom-0 z-filter-footer mt-auto w-full self-end
+                  border-t border-t-default bg-default px-8 py-4 drop-shadow-2xl
+                  tablet-landscape:px-12
+                "
+    >
+      <div
+        class="flex gap-x-4"
+      >
+        <button
+          aria-label="Clear all filters"
+          class="
+                      flex items-center justify-center gap-x-4 rounded-sm
+                      bg-canvas px-4 py-3 font-sans text-xs text-nowrap
+                      uppercase transition-transform
+                      enabled:hover:scale-105 enabled:hover:drop-shadow-md
+                      cursor-not-allowed text-muted opacity-50
+                    "
+          disabled=""
+          type="button"
+        >
+          Clear
+        </button>
+        <button
+          class="
+                      flex flex-1 transform-gpu cursor-pointer items-center
+                      justify-center gap-x-4 rounded-sm bg-footer px-4 py-3
+                      font-sans text-xs font-bold tracking-wide text-nowrap
+                      text-inverse uppercase transition-transform
+                      hover:scale-105 hover:drop-shadow-md
+                    "
+          type="button"
+        >
+          View
+           
+          100
+           
+          Results
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ListWithFilters > filter drawer > opens and closes filter drawer 2`] = `
+<div
+  aria-label="Filters"
+  class="
+              fixed top-0 right-0 z-filter-drawer flex h-full max-w-[380px]
+              flex-col items-start gap-y-5 bg-default text-left text-inverse
+              duration-200 ease-in-out
+              
+                    bottom-0 w-full transform-[translateX(0)] overflow-y-auto
+                    drop-shadow-2xl
+                  
+              tablet:gap-y-10
+            "
+  id="filters"
+>
+  <div
+    class="
+                flex h-full w-full flex-col text-sm
+                tablet:text-base
+                [@media(min-height:815px)]:pt-12
+              "
+  >
+    <button
+      aria-label="Close filters"
+      class="
+                  absolute top-7 right-4 z-10 flex h-10 w-10 transform-gpu
+                  cursor-pointer items-center justify-center rounded-full
+                  bg-canvas text-default drop-shadow-md transition-transform
+                  hover:scale-105 hover:drop-shadow-md
+                  
+                "
+      type="button"
+    >
+      <svg
+        aria-hidden="true"
+        class="
+                    h-4 w-4 transform-gpu
+                    
+                    animate-spin-wind-up
+                  "
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        viewBox="0 0 28 28"
+      >
+        <path
+          d="M7 21L21 7M7 7l14 14"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
+    <fieldset
+      class="
+                  mt-0 flex h-full grow flex-col gap-5 px-container py-10
+                  tablet:gap-8
+                  tablet-landscape:grow-0 tablet-landscape:gap-12
+                  tablet-landscape:px-12
+                "
+    >
+      <legend
+        class="
+                    block w-full pt-10 pb-8 font-sans text-sm font-bold
+                    tracking-wide text-subtle uppercase shadow-bottom
+                  "
+      >
+        Filter
+      </legend>
+      <div
+        data-testid="filters-content"
+      >
+        <input
+          placeholder="Filter input"
+          type="text"
+        />
+        <button
+          type="button"
+        >
+          Filter button
+        </button>
+      </div>
+    </fieldset>
+    <div
+      class="
+                  sticky bottom-0 z-filter-footer mt-auto w-full self-end
+                  border-t border-t-default bg-default px-8 py-4 drop-shadow-2xl
+                  tablet-landscape:px-12
+                "
+    >
+      <div
+        class="flex gap-x-4"
+      >
+        <button
+          aria-label="Clear all filters"
+          class="
+                      flex items-center justify-center gap-x-4 rounded-sm
+                      bg-canvas px-4 py-3 font-sans text-xs text-nowrap
+                      uppercase transition-transform
+                      enabled:hover:scale-105 enabled:hover:drop-shadow-md
+                      cursor-not-allowed text-muted opacity-50
+                    "
+          disabled=""
+          type="button"
+        >
+          Clear
+        </button>
+        <button
+          class="
+                      flex flex-1 transform-gpu cursor-pointer items-center
+                      justify-center gap-x-4 rounded-sm bg-footer px-4 py-3
+                      font-sans text-xs font-bold tracking-wide text-nowrap
+                      text-inverse uppercase transition-transform
+                      hover:scale-105 hover:drop-shadow-md
+                    "
+          type="button"
+        >
+          View
+           
+          100
+           
+          Results
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ListWithFilters > renders 1`] = `
+<DocumentFragment>
+  <div
+    class="
+        
+      "
+  >
+    <div
+      class="group/list-with-filters mx-auto bg-subtle"
+    >
+      <div
+        class="
+            sticky top-[calc(0px_+_var(--scroll-offset,0px))] z-sticky
+            scroll-mt-[calc(0px_+_var(--scroll-offset,0px))] border-b
+            border-default bg-default text-xs
+            tablet:col-span-full
+          "
+      >
+        <div
+          class="
+        mx-auto grid max-w-[var(--breakpoint-desktop)]
+        grid-cols-[auto_auto_1fr_auto] items-baseline gap-y-7 px-container py-10
+        font-sans font-medium tracking-wide text-subtle uppercase
+        tablet:grid-cols-[auto_auto_1fr_auto_auto] tablet:gap-x-4
+        tablet-landscape:grid-cols-[auto_auto_1fr_minmax(302px,calc(33%_-_192px))_auto]
+        desktop:grid-cols-[auto_auto_1fr_calc(33%_-_96px)_auto]
+      "
+        >
+          <span
+            class="text-nowrap"
+          >
+            <span
+              class="text-sm font-bold text-default"
+            >
+              100
+            </span>
+            <span
+              class="text-xs leading-none font-medium tracking-wide"
+            >
+               Results
+            </span>
+          </span>
+          <div
+            class=""
+          />
+          <div
+            class="
+          col-span-full
+          tablet:col-span-1 tablet:col-start-4
+          desktop:pl-8
+        "
+          >
+            <label
+              class="
+            flex items-baseline gap-x-4 text-xs font-bold tracking-wide
+            text-subtle
+          "
+            >
+              Sort 
+              <select
+                class="
+              flex w-full appearance-none border-none bg-default py-2 pr-4 pl-4
+              font-serif text-base font-normal tracking-normal overflow-ellipsis
+              text-default shadow-all outline-accent
+            "
+              >
+                <option
+                  value="title-asc"
+                >
+                  Title (A → Z)
+                </option>
+                <option
+                  value="title-desc"
+                >
+                  Title (Z → A)
+                </option>
+              </select>
+            </label>
+          </div>
+          <button
+            aria-controls="filters"
+            aria-expanded="false"
+            aria-label="Toggle filters"
+            class="
+          col-start-4 row-start-1 flex transform-gpu cursor-pointer items-center
+          justify-center gap-x-4 rounded-sm bg-canvas px-4 py-2 font-sans
+          text-xs font-bold text-nowrap text-muted uppercase shadow-all
+          transition-transform
+          hover:scale-110 hover:drop-shadow-md
+          tablet:col-start-5 tablet:w-20
+        "
+            type="button"
+          >
+            Filter
+          </button>
+        </div>
+      </div>
+      <div
+        class="
+            mx-auto max-w-[var(--breakpoint-desktop)]
+            tablet:px-container
+          "
+      >
+        <div
+          class="
+              mx-auto max-w-[var(--breakpoint-desktop)] grow
+              scroll-mt-[calc(var(--list-scroll-offset)_+_var(--scroll-offset,0px))]
+              pb-10
+              [--list-scroll-offset:181px]
+              tablet:[--list-scroll-offset:121px]
+            "
+          id="list"
+        >
+          <div
+            data-testid="list"
+          >
+            Test List Content
+          </div>
+        </div>
+        <div
+          aria-hidden="true"
+          class="
+              invisible fixed inset-0 bg-[rgba(0,0,0,.4)] opacity-0
+              transition-opacity duration-200
+              
+            "
+        />
+        <div
+          aria-label="Filters"
+          class="
+              fixed top-0 right-0 z-filter-drawer flex h-full max-w-[380px]
+              flex-col items-start gap-y-5 bg-default text-left text-inverse
+              duration-200 ease-in-out
+              w-0 transform-[translateX(100%)] overflow-y-hidden
+              tablet:gap-y-10
+            "
+          id="filters"
+        >
+          <div
+            class="
+                flex h-full w-full flex-col text-sm
+                tablet:text-base
+                [@media(min-height:815px)]:pt-12
+              "
+          >
+            <button
+              aria-label="Close filters"
+              class="
+                  absolute top-7 right-4 z-10 flex h-10 w-10 transform-gpu
+                  cursor-pointer items-center justify-center rounded-full
+                  bg-canvas text-default drop-shadow-md transition-transform
+                  hover:scale-105 hover:drop-shadow-md
+                  
+                "
+              type="button"
+            >
+              <svg
+                aria-hidden="true"
+                class="
+                    h-4 w-4 transform-gpu
+                    
+                    
+                  "
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 28 28"
+              >
+                <path
+                  d="M7 21L21 7M7 7l14 14"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+            <fieldset
+              class="
+                  mt-0 flex h-full grow flex-col gap-5 px-container py-10
+                  tablet:gap-8
+                  tablet-landscape:grow-0 tablet-landscape:gap-12
+                  tablet-landscape:px-12
+                "
+            >
+              <legend
+                class="
+                    block w-full pt-10 pb-8 font-sans text-sm font-bold
+                    tracking-wide text-subtle uppercase shadow-bottom
+                  "
+              >
+                Filter
+              </legend>
+              <div
+                data-testid="filters-content"
+              >
+                <input
+                  placeholder="Filter input"
+                  type="text"
+                />
+                <button
+                  type="button"
+                >
+                  Filter button
+                </button>
+              </div>
+            </fieldset>
+            <div
+              class="
+                  sticky bottom-0 z-filter-footer mt-auto w-full self-end
+                  border-t border-t-default bg-default px-8 py-4 drop-shadow-2xl
+                  tablet-landscape:px-12
+                "
+            >
+              <div
+                class="flex gap-x-4"
+              >
+                <button
+                  aria-label="Clear all filters"
+                  class="
+                      flex items-center justify-center gap-x-4 rounded-sm
+                      bg-canvas px-4 py-3 font-sans text-xs text-nowrap
+                      uppercase transition-transform
+                      enabled:hover:scale-105 enabled:hover:drop-shadow-md
+                      cursor-not-allowed text-muted opacity-50
+                    "
+                  disabled=""
+                  type="button"
+                >
+                  Clear
+                </button>
+                <button
+                  class="
+                      flex flex-1 transform-gpu cursor-pointer items-center
+                      justify-center gap-x-4 rounded-sm bg-footer px-4 py-3
+                      font-sans text-xs font-bold tracking-wide text-nowrap
+                      text-inverse uppercase transition-transform
+                      hover:scale-105 hover:drop-shadow-md
+                    "
+                  type="button"
+                >
+                  View 100 Results
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

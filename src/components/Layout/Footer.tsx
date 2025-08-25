@@ -1,9 +1,7 @@
 import type { JSX } from "react";
 
-import type { NavItem } from "./navItems";
-
 import { Logo } from "./Logo";
-import { navItems } from "./navItems";
+import { TableOfContents } from "./TableOfContents";
 
 export function Footer(): JSX.Element {
   return (
@@ -17,10 +15,11 @@ export function Footer(): JSX.Element {
         >
           <a
             className={`
-              mx-auto mb-8 w-full max-w-button transform-gpu bg-footer py-5
-              text-center font-sans text-xs tracking-wide text-inverse uppercase
-              transition-all
-              hover:scale-105 hover:bg-subtle hover:text-default
+              mx-auto mb-8 w-full max-w-button transform-gpu rounded-md
+              bg-subtle py-5 text-center font-sans text-sm font-normal
+              tracking-wide text-default uppercase transition-all
+              hover:scale-105 hover:bg-default hover:text-default
+              hover:drop-shadow-lg
               tablet:mx-0
             `}
             href="#top"
@@ -41,7 +40,7 @@ export function Footer(): JSX.Element {
               tablet:pr-32
             `}
           >
-            <div className={`pt-10 font-sans text-sm font-light text-subtle`}>
+            <div className={`pt-10 font-sans font-normal text-subtle`}>
               <p
                 className={`
                   mb-6 text-pretty
@@ -101,16 +100,7 @@ export function Footer(): JSX.Element {
               tablet:basis-button tablet:pr-10
             `}
           >
-            <ul
-              className={`
-                flex w-full flex-col gap-y-10
-                desktop:w-auto
-              `}
-            >
-              {navItems.map((item) => {
-                return <NavListItem key={item.target} value={item} />;
-              })}
-            </ul>
+            <TableOfContents className={`desktop:w-auto`} />
           </div>
         </div>
       </div>
@@ -122,11 +112,28 @@ export function Footer(): JSX.Element {
       >
         All reviews by Frank Showalter. All images used in accordance with the{" "}
         <a
-          className={`text-inherit underline`}
+          className={`
+            relative inline-block pr-4 text-inherit underline underline-offset-3
+            hover:bg-default hover:text-accent
+          `}
           href="http://www.copyright.gov/title17/92chap1.html#107"
           rel="nofollow"
         >
           Fair Use Law
+          <svg
+            className="absolute top-0.5 right-0 size-3"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.5"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
         </a>
         .
       </p>
@@ -139,60 +146,11 @@ function FooterLink({ href, text }: { href: string; text: string }) {
     <a
       className={`
         underline transition-colors
-        hover:text-default
+        hover:text-accent
       `}
       href={href}
     >
       {text}
     </a>
-  );
-}
-
-function NavListItem({ value }: { value: NavItem }): JSX.Element {
-  return (
-    <li className="block w-1/2 text-2xl whitespace-nowrap">
-      <a
-        className={`
-          block origin-left transform-gpu transition-all
-          hover:scale-105
-        `}
-        href={value.target}
-      >
-        {value.text}
-      </a>
-      <SubNavList values={value.subItems} />
-    </li>
-  );
-}
-
-function SubNavList({ values }: { values: NavItem[] }): false | JSX.Element {
-  if (values.length === 0) {
-    return false;
-  }
-
-  return (
-    <ol className="mt-4">
-      {values.map((value) => {
-        return (
-          <li
-            className={`
-              mb-4 ml-1 font-sans text-xs tracking-wide text-subtle uppercase
-              last:mb-0
-            `}
-            key={value.target}
-          >
-            <a
-              className={`
-                block origin-left transform-gpu transition-all
-                hover:scale-105 hover:text-default
-              `}
-              href={value.target}
-            >
-              {value.text}
-            </a>
-          </li>
-        );
-      })}
-    </ol>
   );
 }

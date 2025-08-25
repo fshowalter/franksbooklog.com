@@ -1,6 +1,19 @@
 import type { JSX } from "react";
 
-import { toSentenceArray } from "~/utils";
+import { toSentenceArray } from "~/utils/toSentenceArray";
+
+export type ReviewOpenGraphImageComponentType = (
+  props: ReviewOpenGraphImageProps,
+) => JSX.Element;
+
+type ReviewOpenGraphImageProps = {
+  authors: string[];
+  coverBase64DataUri: string;
+  coverHeight: number;
+  coverWidth: number;
+  grade: string | undefined;
+  title: string;
+};
 
 export function OpenGraphImage({
   authors,
@@ -9,14 +22,7 @@ export function OpenGraphImage({
   coverWidth,
   grade,
   title,
-}: {
-  authors: string[];
-  coverBase64DataUri: string;
-  coverHeight: number;
-  coverWidth: number;
-  grade: string | undefined;
-  title: string;
-}): JSX.Element {
+}: ReviewOpenGraphImageProps): JSX.Element {
   return (
     <div
       style={{
@@ -53,9 +59,10 @@ export function OpenGraphImage({
       >
         <div
           style={{
-            color: "#b0b0b0",
-            fontFamily: "ArgentumSans",
-            marginBottom: "24px",
+            color: "#dfdfdf",
+            fontFamily: "Assistant",
+            fontWeight: 700,
+            marginBottom: "16px",
             textTransform: "uppercase",
           }}
         >
@@ -68,6 +75,7 @@ export function OpenGraphImage({
             flexWrap: "wrap",
             fontFamily: "FrankRuhlLibre",
             fontSize: "64px",
+            fontWeight: 800,
             lineHeight: 1,
             textWrap: "balance",
           }}
@@ -100,7 +108,7 @@ export function OpenGraphImage({
             style={{
               backgroundColor: "red",
               color: "white",
-              fontFamily: "ArgentumSans",
+              fontFamily: "Assistant",
               marginTop: "36px",
               padding: "4px",
               textTransform: "uppercase",

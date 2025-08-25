@@ -38,7 +38,7 @@ export function ReadingHistoryListItem({ value }: Props) {
   return (
     <li
       className={`
-        mb-1 flex flex-col bg-subtle px-container font-sans text-xs font-light
+        mb-1 flex flex-col bg-subtle px-container font-sans
         tablet:px-6
       `}
     >
@@ -95,18 +95,25 @@ function Details({ value }: { value: ReviewWithContent["readings"][0] }) {
       : "Read over";
 
   return (
-    <details className="font-light text-subtle">
+    <details
+      className={`
+        rounded-md bg-canvas px-2 text-subtle
+        open:pb-2
+      `}
+    >
       <summary
         className={`
-          origin-left transform-gpu cursor-pointer leading-6
-          transition-transform
-          hover:scale-105
+          cursor-pointer rounded-sm py-1 font-sans text-sm tracking-prose
+          text-subtle
         `}
       >
-        {summaryText}{" "}
-        <span className="text-accent">{value.readingTime} Days</span>
+        {summaryText} {value.readingTime} Days
       </summary>
-      <ol className="grid w-full grid-cols-[auto_1fr_auto] pt-3">
+      <ol
+        className={`
+          grid w-full grid-cols-[auto_1fr_auto] rounded-md bg-default px-2 py-3
+        `}
+      >
         {value.timeline.map((entry) => {
           let progressValue;
           const progressNumber = entry.progress.split("%", 1)[0];
@@ -125,27 +132,28 @@ function Details({ value }: { value: ReviewWithContent["readings"][0] }) {
             <li
               className={`
                 relative col-span-3 grid grid-cols-subgrid
-                grid-rows-[1fr_auto_auto_1fr] py-1
+                grid-rows-[1fr_auto_auto_1fr] px-1 py-1 font-normal
+                even:bg-subtle
               `}
               key={entryDate}
             >
               <div
                 className={`
                   col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid
-                  font-sans text-xs
+                  font-sans text-sm tracking-prose
                 `}
               >
                 <div>{entryDate}</div>
                 <div
                   className={`
-                    col-start-3 self-center pb-1 text-right font-sans text-xs
+                    col-start-3 self-center pb-1 text-right font-sans text-sm
                     text-nowrap
                   `}
                 >
                   <div>{entry.progress}</div>
                 </div>
               </div>
-              <div className="col-span-2 col-start-2 row-start-3 bg-stripe">
+              <div className={`col-span-2 col-start-2 row-start-3`}>
                 {progressValue && (
                   <BarGradient maxValue={100} value={progressValue} />
                 )}

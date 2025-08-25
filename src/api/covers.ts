@@ -21,7 +21,6 @@ export type CoverImageProps = {
 };
 
 type Work = {
-  includedInSlugs: string[];
   slug: string;
 };
 
@@ -49,7 +48,7 @@ export async function getCoverWidth(work: Work, targetHeight: number) {
 
     return (width / height) * targetHeight;
   } catch (error) {
-    console.error("Error:", error);
+    console.error(`Error processing cover ${work.slug}:`, error);
     return 0;
   }
 }
@@ -132,8 +131,7 @@ export async function getOpenGraphCoverAsBase64String(work: Work) {
   if (cacheConfig.enableCache) {
     await ensureCacheDir(cacheConfig.cacheDir);
 
-    const workSlug = work.slug || work.includedInSlugs.join("-");
-    const cacheKeyData = `${workSlug}-${width}-${format}`;
+    const cacheKeyData = `${work.slug}-${width}-${format}`;
     cacheKey = createCacheKey(cacheKeyData);
 
     const cachedCover = await getCachedItem<string>(
@@ -142,7 +140,7 @@ export async function getOpenGraphCoverAsBase64String(work: Work) {
       "txt",
       false,
       cacheConfig.debugCache,
-      `Cover base64: ${workSlug}`,
+      `Cover base64: ${work.slug}`,
     );
 
     if (cachedCover) {
@@ -209,20 +207,6 @@ export function getWorkCoverPath(work: Work) {
     return workCover;
   }
 
-  let parentCover;
-
-  for (const includedInSlug of work.includedInSlugs) {
-    parentCover = coverPath(includedInSlug);
-
-    if (parentCover) {
-      break;
-    }
-  }
-
-  if (parentCover) {
-    return parentCover;
-  }
-
   return coverPath("default") || "";
 }
 
@@ -236,30 +220,12 @@ function coverPath(slug: string) {
 }
 
 async function getWorkCoverFile(work: Work) {
-  const workSlug = work.slug;
-
   const coverKey = Object.keys(images).find((image) => {
-    return image.endsWith(`${workSlug}.png`);
+    return image.endsWith(`${work.slug}.png`);
   });
 
   if (coverKey) {
     return await images[coverKey]();
-  }
-
-  let parentCoverKey;
-
-  for (const includedInSlug of work.includedInSlugs) {
-    parentCoverKey = Object.keys(images).find((image) => {
-      return image.endsWith(`${includedInSlug}.png`);
-    });
-
-    if (parentCoverKey) {
-      break;
-    }
-  }
-
-  if (parentCoverKey) {
-    return await images[parentCoverKey]();
   }
 
   const defaultWorkCoverKey = Object.keys(images).find((image) => {

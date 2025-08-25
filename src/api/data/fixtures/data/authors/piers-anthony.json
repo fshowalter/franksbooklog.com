@@ -5,7 +5,6 @@
   "reviewedWorks": [
     {
       "title": "Refugee",
-      "yearPublished": "1983",
       "kind": "Novel",
       "slug": "refugee-by-piers-anthony",
       "sortTitle": "Refugee",
@@ -21,9 +20,14 @@
       ],
       "includedInSlugs": [],
       "reviewDate": "2016-01-29",
-      "reviewSequence": "2016-01-29-1",
+      "reviewSequence": 298,
       "subtitle": null,
-      "yearReviewed": 2016
+      "workYear": "2000",
+      "workYearSequence": 142,
+      "authorSequence": 142,
+      "titleSequence": 142,
+      "gradeSequence": 142,
+      "reviewYear": "2016"
     }
   ]
 }

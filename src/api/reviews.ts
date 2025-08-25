@@ -6,6 +6,8 @@ import remarkRehype from "remark-rehype";
 import smartypants from "remark-smartypants";
 import strip from "strip-markdown";
 
+import { ENABLE_CACHE } from "~/utils/cache";
+
 import type { MarkdownReading } from "./data/readingsMarkdown";
 import type {
   ReviewedWorkJson,
@@ -30,9 +32,6 @@ let cachedMarkdownReadings: MarkdownReading[];
 let cachedReviewedWorksJson: ReviewedWorkJson[];
 const cachedExcerptHtml: Map<string, string> = new Map();
 
-// Enable caching during builds but not in dev mode
-const ENABLE_CACHE = !import.meta.env.DEV;
-
 export type Review = MarkdownReview & ReviewedWorkJson & {};
 
 export type ReviewWithContent = Omit<Review, "readings"> & {
@@ -45,6 +44,10 @@ export type ReviewWithExcerpt = Review & {
   excerpt: string;
 };
 
+type ReviewExcerpt = {
+  excerpt: string;
+};
+
 type ReviewReading = MarkdownReading &
   ReviewedWorkJsonReading & {
     editionNotes: string | undefined;
@@ -53,8 +56,8 @@ type ReviewReading = MarkdownReading &
 
 type Reviews = {
   distinctKinds: string[];
-  distinctPublishedYears: string[];
   distinctReviewYears: string[];
+  distinctWorkYears: string[];
   reviews: Review[];
 };
 
@@ -147,9 +150,9 @@ export async function loadContent(review: Review): Promise<ReviewWithContent> {
   });
 }
 
-export async function loadExcerptHtml(
-  review: Review,
-): Promise<ReviewWithExcerpt> {
+export async function loadExcerptHtml<T extends { slug: string }>(
+  review: T,
+): Promise<ReviewExcerpt & T> {
   return await perfLogger.measure("loadExcerptHtml", async () => {
     // Check cache first
     if (ENABLE_CACHE && cachedExcerptHtml.has(review.slug)) {
@@ -165,24 +168,20 @@ export async function loadExcerptHtml(
       cachedMarkdownReviews = reviewsMarkdown;
     }
 
-    const { rawContent } = reviewsMarkdown.find((markdown) => {
+    const { rawContent, synopsis } = reviewsMarkdown.find((markdown) => {
       return markdown.slug === review.slug;
     })!;
 
-    let excerptHtml = getMastProcessor()
+    const excerptContent = synopsis || rawContent;
+
+    const excerptHtml = getMastProcessor()
       .use(removeFootnotes)
       .use(trimToExcerpt)
       .use(remarkRehype, { allowDangerousHtml: true })
       .use(rehypeRaw)
       .use(rehypeStringify)
-      .processSync(rawContent)
+      .processSync(excerptContent)
       .toString();
-
-    excerptHtml = excerptHtml.replace(/\n+$/, "");
-    excerptHtml = excerptHtml.replace(
-      /<\/p>$/,
-      ` <a href="/reviews/${review.slug}/">Read more...</a></p>`,
-    );
 
     // Cache the result
     if (ENABLE_CACHE) {
@@ -204,9 +203,7 @@ export async function mostRecentReviews(limit: number) {
       cachedReviewedWorksJson = reviewedWorksJson;
     }
 
-    reviewedWorksJson.sort((a, b) =>
-      b.reviewSequence.localeCompare(a.reviewSequence),
-    );
+    reviewedWorksJson.sort((a, b) => b.reviewSequence - a.reviewSequence);
     const slicedWorks = reviewedWorksJson.slice(0, limit);
 
     const { reviews } = await parseReviewedWorksJson(slicedWorks);
@@ -243,7 +240,7 @@ async function parseReviewedWorksJson(
 ): Promise<Reviews> {
   return await perfLogger.measure("parseReviewedWorksJson", async () => {
     const distinctReviewYears = new Set<string>();
-    const distinctPublishedYears = new Set<string>();
+    const distinctWorkYears = new Set<string>();
     const distinctKinds = new Set<string>();
 
     const reviewsMarkdown =
@@ -254,33 +251,29 @@ async function parseReviewedWorksJson(
 
     const reviews = reviewedWorksJson.map((work) => {
       distinctKinds.add(work.kind);
-      distinctPublishedYears.add(work.yearPublished);
+      distinctWorkYears.add(work.workYear);
 
-      const { date, grade, rawContent } = reviewsMarkdown.find(
+      const { date, grade, rawContent, synopsis } = reviewsMarkdown.find(
         (reviewsmarkdown) => {
           return reviewsmarkdown.slug === work.slug;
         },
       )!;
 
-      distinctReviewYears.add(
-        date.toLocaleDateString("en-US", {
-          timeZone: "UTC",
-          year: "numeric",
-        }),
-      );
+      distinctReviewYears.add(work.reviewYear);
 
       return {
         ...work,
         date,
         grade,
         rawContent,
+        synopsis,
       };
     });
 
     return {
       distinctKinds: [...distinctKinds].toSorted(),
-      distinctPublishedYears: [...distinctPublishedYears].toSorted(),
       distinctReviewYears: [...distinctReviewYears].toSorted(),
+      distinctWorkYears: [...distinctWorkYears].toSorted(),
       reviews,
     };
   });

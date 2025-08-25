@@ -5,7 +5,6 @@
   "reviewedWorks": [
     {
       "title": "Extreme Ownership",
-      "yearPublished": "2015",
       "kind": "Nonfiction",
       "slug": "extreme-ownership-by-jocko-willink-leif-babin",
       "sortTitle": "Extreme Ownership: How U.S. Navy SEALs Lead and Win",
@@ -27,9 +26,14 @@
       ],
       "includedInSlugs": [],
       "reviewDate": "2022-06-26",
-      "reviewSequence": "2022-06-26-1",
+      "reviewSequence": 281,
       "subtitle": "How U.S. Navy SEALs Lead and Win",
-      "yearReviewed": 2022
+      "workYear": "2000",
+      "workYearSequence": 125,
+      "authorSequence": 125,
+      "titleSequence": 125,
+      "gradeSequence": 125,
+      "reviewYear": "2022"
     }
   ]
 }

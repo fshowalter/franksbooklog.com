@@ -22,9 +22,9 @@ const TimelineEntryJsonSchema = z.object({
   reviewed: z.boolean(),
   slug: z.string(),
   timelineDate: z.string(),
-  timelineSequence: z.string(),
+  timelineSequence: z.number(),
   title: z.string(),
-  yearPublished: z.string(),
+  workYear: z.string(),
 });
 
 export type TimelineEntryJson = z.infer<typeof TimelineEntryJsonSchema>;

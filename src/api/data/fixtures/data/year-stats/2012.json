@@ -48,10 +48,13 @@
           "edition": "Paperback",
           "kind": "Novel",
           "title": "Rage",
-          "yearPublished": "1976",
           "includedInSlugs": [],
           "reviewed": true,
-          "readingSequence": 1
+          "readingSequence": 2,
+          "workYear": "2000",
+          "workYearSequence": 94,
+          "authorSequence": 185,
+          "titleSequence": 365
         },
         {
           "date": "2012-05-14",
@@ -59,12 +62,16 @@
           "edition": "Paperback",
           "kind": "Collection",
           "title": "Night Shift",
-          "yearPublished": "1978",
           "includedInSlugs": [],
           "reviewed": true,
-          "readingSequence": 1
+          "readingSequence": 3,
+          "workYear": "2000",
+          "workYearSequence": 113,
+          "authorSequence": 193,
+          "titleSequence": 321
         }
-      ]
+      ],
+      "reviewed": true
     }
   ]
 }

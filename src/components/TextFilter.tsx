@@ -1,26 +1,38 @@
 import type { JSX } from "react";
 
-import { useMemo } from "react";
+import { useState } from "react";
 
-import type { OnChangeHandler } from "~/utils/debounce";
-
-import { debounce } from "~/utils/debounce";
+import { debounceOnChange } from "~/utils/debounce";
 
 import { LabelText } from "./LabelText";
 
+export const TEXT_FILTER_DEBOUNCE_MS = 150;
+
+type onChangeHandler = (value: string) => void;
+
 export function TextFilter({
+  initialValue,
   label,
   onInputChange,
   placeholder,
 }: {
+  initialValue?: string;
   label: string;
-  onInputChange: OnChangeHandler;
+  onInputChange: onChangeHandler;
   placeholder: string;
 }): JSX.Element {
-  const debouncedHandleChange = useMemo(
-    () => debounce(onInputChange, 150),
-    [onInputChange],
+  // Initialize with the initial value, then manage state internally
+  const [localValue, setLocalValue] = useState(initialValue || "");
+  const debouncedHandleChange = debounceOnChange(
+    onInputChange,
+    TEXT_FILTER_DEBOUNCE_MS,
   );
+
+  const handleChange = (e: React.FormEvent<HTMLInputElement>) => {
+    const newValue = (e.target as HTMLInputElement).value;
+    setLocalValue(newValue); // Update immediately for responsive typing
+    debouncedHandleChange(newValue); // Debounce the callback
+  };
 
   return (
     <label className="flex flex-col text-subtle">
@@ -28,13 +40,13 @@ export function TextFilter({
       <input
         className={`
           border-0 bg-default px-4 py-2 text-base text-default shadow-all
+          outline-accent
           placeholder:text-default placeholder:opacity-50
         `}
-        onChange={(e: React.FormEvent<HTMLInputElement>) =>
-          debouncedHandleChange((e.target as HTMLInputElement).value)
-        }
+        onChange={handleChange}
         placeholder={placeholder}
         type="text"
+        value={localValue}
       />
     </label>
   );

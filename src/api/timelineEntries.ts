@@ -39,7 +39,7 @@ export async function allTimelineEntries(): Promise<TimelineEntries> {
       distinctReadingYears.add(
         yearFormatter.format(new Date(entry.timelineDate)),
       );
-      distinctWorkYears.add(entry.yearPublished);
+      distinctWorkYears.add(entry.workYear);
     }
 
     return {

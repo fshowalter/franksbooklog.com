@@ -1,117 +1,98 @@
-import type { FilterableState } from "~/utils";
+/**
+ * Author page reducer with pending filters support
+ */
+import type {
+  ListWithFiltersActionType,
+  ListWithFiltersState,
+} from "~/components/ListWithFilters/reducerUtils";
+import type {
+  PaginationState,
+  WorksFilterActionType,
+} from "~/components/ListWithFilters/worksReducerUtils";
 
 import {
   buildGroupValues,
-  collator,
-  filterTools,
-  sortNumber,
-  sortString,
-} from "~/utils";
+  buildSortValues,
+  getGroupLetter,
+  handleListWithFiltersAction,
+  ListWithFiltersActions,
+} from "~/components/ListWithFilters/reducerUtils";
 import {
-  createInitialState,
-  handleFilterKind,
-  handleFilterTitle,
-  handleFilterYearPublished,
-  handleShowMore,
-  handleSort,
-} from "~/utils/reducerUtils";
+  applyPendingFiltersWithPagination,
+  createInitialStateWithPagination,
+  handleGradeFilterAction,
+  handleKindFilterAction,
+  handleReviewYearFilterAction,
+  handleShowMoreAction,
+  handleTitleFilterAction,
+  handleWorkYearFilterAction,
+  sortGrade,
+  sortReviewDate,
+  sortTitle,
+  sortWorkYear,
+  updateSortWithPagination,
+  WorksFilterActions,
+} from "~/components/ListWithFilters/worksReducerUtils";
 
 import type { ListItemValue } from "./Author";
 
 export type Sort =
   | "grade-asc"
   | "grade-desc"
+  | "review-date-asc"
+  | "review-date-desc"
   | "title-asc"
   | "title-desc"
-  | "year-published-asc"
-  | "year-published-desc";
+  | "work-year-asc"
+  | "work-year-desc";
 
-const groupValues = buildGroupValues(groupForValue);
-const { clearFilter, updateFilter } = filterTools(sortValues, groupValues);
-
-type State = FilterableState<ListItemValue, Sort, Map<string, ListItemValue[]>>;
+// Re-export shared actions for component convenience
+export const Actions = {
+  ...ListWithFiltersActions,
+  ...WorksFilterActions,
+} as const;
 
 function groupForValue(value: ListItemValue, sortValue: Sort): string {
   switch (sortValue) {
     case "grade-asc":
     case "grade-desc": {
-      return value.grade ?? "Unread";
+      return value.grade;
+    }
+    case "review-date-asc":
+    case "review-date-desc": {
+      return monthGroupFormat.format(value.reviewDate);
     }
     case "title-asc":
     case "title-desc": {
-      const letter = value.sortTitle.slice(0, 1);
-
-      if (letter.toLowerCase() == letter.toUpperCase()) {
-        return "#";
-      }
-
-      return value.sortTitle.slice(0, 1).toLocaleUpperCase();
+      return getGroupLetter(value.sortTitle);
     }
-    case "year-published-asc":
-    case "year-published-desc": {
-      return value.yearPublished;
+    case "work-year-asc":
+    case "work-year-desc": {
+      return value.workYear;
     }
-    // no default
   }
 }
 
-function sortValues(values: ListItemValue[], sortOrder: Sort) {
-  const sortMap: Record<Sort, (a: ListItemValue, b: ListItemValue) => number> =
-    {
-      "grade-asc": (a, b) => sortNumber(a.gradeValue ?? -1, b.gradeValue ?? -1),
-      "grade-desc": (a, b) =>
-        sortNumber(a.gradeValue ?? -1, b.gradeValue ?? -1) * -1,
-      "title-asc": (a, b) => collator.compare(a.sortTitle, b.sortTitle),
-      "title-desc": (a, b) => collator.compare(a.sortTitle, b.sortTitle) * -1,
-      "year-published-asc": (a, b) =>
-        sortString(a.yearPublished, b.yearPublished),
-      "year-published-desc": (a, b) =>
-        sortString(a.yearPublished, b.yearPublished) * -1,
-    };
-
-  const comparer = sortMap[sortOrder];
-  return values.sort(comparer);
-}
-
-const SHOW_COUNT_DEFAULT = 100;
-
-export enum Actions {
-  FILTER_KIND = "FILTER_KIND",
-  FILTER_TITLE = "FILTER_TITLE",
-  FILTER_YEAR_PUBLISHED = "FILTER_YEAR_PUBLISHED",
-  SHOW_MORE = "SHOW_MORE",
-  SORT = "SORT",
-}
+const groupValues = buildGroupValues(groupForValue);
 
 export type ActionType =
-  | FilterKindAction
-  | FilterTitleAction
-  | FilterYearPublishedAction
-  | ShowMoreAction
-  | SortAction;
+  | ListWithFiltersActionType<Sort>
+  | WorksFilterActionType;
 
-type FilterKindAction = {
-  type: Actions.FILTER_KIND;
-  value: string;
-};
+const sortValues = buildSortValues<ListItemValue, Sort>({
+  ...sortGrade<ListItemValue>(),
+  ...sortReviewDate<ListItemValue>(),
+  ...sortTitle<ListItemValue>(),
+  ...sortWorkYear<ListItemValue>(),
+});
 
-type FilterTitleAction = {
-  type: Actions.FILTER_TITLE;
-  value: string;
-};
+const monthGroupFormat = new Intl.DateTimeFormat("en-US", {
+  month: "long",
+  timeZone: "UTC",
+  year: "numeric",
+});
 
-type FilterYearPublishedAction = {
-  type: Actions.FILTER_YEAR_PUBLISHED;
-  values: [string, string];
-};
-
-type ShowMoreAction = {
-  type: Actions.SHOW_MORE;
-};
-type SortAction = {
-  type: Actions.SORT;
-  value: Sort;
-};
+type State = ListWithFiltersState<ListItemValue, Sort> & PaginationState;
 
 export function initState({
   initialSort,
@@ -120,36 +101,65 @@ export function initState({
   initialSort: Sort;
   values: ListItemValue[];
 }): State {
-  return createInitialState(
-    values,
+  return createInitialStateWithPagination({
+    groupFn: groupValues,
     initialSort,
-    SHOW_COUNT_DEFAULT,
-    groupValues,
-  );
+    showMoreEnabled: true,
+    sortFn: sortValues,
+    values,
+  }) as State;
 }
 
+// Create reducer function
 export function reducer(state: State, action: ActionType): State {
   switch (action.type) {
-    case Actions.FILTER_KIND: {
-      return handleFilterKind(state, action.value, clearFilter, updateFilter);
+    case ListWithFiltersActions.APPLY_PENDING_FILTERS: {
+      const baseResult = handleListWithFiltersAction(state, action, {
+        groupFn: groupValues,
+        sortFn: sortValues,
+      });
+      return applyPendingFiltersWithPagination(state, baseResult, groupValues);
     }
-    case Actions.FILTER_TITLE: {
-      return handleFilterTitle(state, action.value, clearFilter, updateFilter);
+
+    case ListWithFiltersActions.SORT: {
+      const baseResult = handleListWithFiltersAction(state, action, {
+        groupFn: groupValues,
+        sortFn: sortValues,
+      });
+      return updateSortWithPagination(state, baseResult, groupValues);
     }
-    case Actions.FILTER_YEAR_PUBLISHED: {
-      return handleFilterYearPublished(
-        state,
-        action.values,
-        clearFilter,
-        updateFilter,
-      );
+
+    case WorksFilterActions.PENDING_FILTER_GRADE: {
+      return handleGradeFilterAction(state, action);
     }
-    case Actions.SHOW_MORE: {
-      return handleShowMore(state, SHOW_COUNT_DEFAULT, groupValues);
+
+    // Field-specific shared filters
+    case WorksFilterActions.PENDING_FILTER_KIND: {
+      return handleKindFilterAction(state, action);
     }
-    case Actions.SORT: {
-      return handleSort(state, action.value, sortValues, groupValues);
+
+    case WorksFilterActions.PENDING_FILTER_REVIEW_YEAR: {
+      return handleReviewYearFilterAction(state, action);
     }
-    // no default
+
+    case WorksFilterActions.PENDING_FILTER_TITLE: {
+      return handleTitleFilterAction(state, action);
+    }
+
+    case WorksFilterActions.PENDING_FILTER_WORK_YEAR: {
+      return handleWorkYearFilterAction(state, action);
+    }
+
+    case WorksFilterActions.SHOW_MORE: {
+      return handleShowMoreAction(state, action, groupValues);
+    }
+
+    default: {
+      // Handle shared list structure actions
+      return handleListWithFiltersAction(state, action, {
+        groupFn: groupValues,
+        sortFn: sortValues,
+      });
+    }
   }
 }

@@ -1,13 +1,20 @@
 import type { JSX } from "react";
+
+export type OpenGraphImageComponentType = (
+  props: OpenGraphImageProps,
+) => JSX.Element;
+
+type OpenGraphImageProps = {
+  backdrop: string;
+  sectionHead?: string;
+  title: string;
+};
+
 export function OpenGraphImage({
   backdrop,
   sectionHead = "Frank's Book Log",
   title,
-}: {
-  backdrop?: string;
-  sectionHead?: string;
-  title: string;
-}): JSX.Element {
+}: OpenGraphImageProps): JSX.Element {
   return (
     <div
       style={{
@@ -18,21 +25,18 @@ export function OpenGraphImage({
         width: "1200px",
       }}
     >
-      {backdrop && (
-        <img
-          height={630}
-          src={backdrop}
-          style={{
-            objectFit: "cover",
-          }}
-          width={1200}
-        />
-      )}
+      <img
+        height={630}
+        src={backdrop}
+        style={{
+          objectFit: "cover",
+        }}
+        width={1200}
+      />
       <div
         style={{
-          backgroundImage: backdrop
-            ? "linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0))"
-            : "linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0))",
+          backgroundImage:
+            "linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.5) 10%, rgba(0, 0, 0, 0)) 20%",
           bottom: 0,
           display: "flex",
           flexDirection: "column",
@@ -46,10 +50,10 @@ export function OpenGraphImage({
       >
         <div
           style={{
-            color: backdrop ? "#b0b0b0" : "rgb(0 0 0 / 60%)",
-            fontFamily: "ArgentumSans",
-            marginBottom: "16px",
-            textShadow: backdrop ? "1px 1px 2px black" : "none",
+            color: "#fafafa",
+            fontFamily: "Assistant",
+            fontWeight: 700,
+            marginBottom: "8px",
             textTransform: "uppercase",
           }}
         >
@@ -57,14 +61,14 @@ export function OpenGraphImage({
         </div>
         <div
           style={{
-            color: backdrop ? "#fff" : "rgb(0 0 0 / 75%)",
+            color: "#fff",
             display: "flex",
             flexWrap: "wrap",
-            fontFamily: "ArgentumSans",
+            fontFamily: "FrankRuhlLibre",
             fontSize: "88px",
-            fontWeight: 600,
+            fontWeight: 800,
             lineHeight: 1,
-            textTransform: "uppercase",
+            textShadow: "1px 1px 2px rgba(0,0,0,.25)",
             textWrap: "balance",
           }}
         >

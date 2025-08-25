@@ -4,17 +4,22 @@
   "slug": "peter-straub",
   "reviewedWorks": [
     {
-      "reviewSequence": "2024-12-01-1",
+      "reviewSequence": 80,
       "title": "Ghost Story",
+      "reviewed": true,
       "subtitle": null,
-      "yearPublished": "1979",
+      "workYear": "1979",
+      "workYearSequence": 123,
+      "authorSequence": 454,
+      "titleSequence": 176,
       "kind": "Novel",
       "slug": "ghost-story-by-peter-straub",
       "sortTitle": "Ghost Story",
       "grade": "B",
       "gradeValue": 9,
+      "gradeSequence": 65,
       "reviewDate": "2024-12-01",
-      "yearReviewed": 2024,
+      "reviewYear": "2024",
       "authors": [
         {
           "slug": "peter-straub",

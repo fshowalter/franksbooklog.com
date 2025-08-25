@@ -1,19 +1,29 @@
-import { type JSX, useState } from "react";
+import type { JSX } from "react";
+
+import { useState } from "react";
 
 import { LabelText } from "./LabelText";
 import { SelectInput } from "./SelectInput";
 
 export function YearInput({
+  initialValues,
   label,
   onYearChange,
   years,
 }: {
+  initialValues?: string[];
   label: string;
   onYearChange: (values: [string, string]) => void;
   years: readonly string[];
 }): JSX.Element {
-  const [minYear, setMinYear] = useState(years[0]);
-  const [maxYear, setMaxYear] = useState(years.at(-1) as string);
+  const [minYear, setMinYear] = useState(
+    initialValues && initialValues.length > 0 ? initialValues[0] : years[0],
+  );
+  const [maxYear, setMaxYear] = useState(
+    initialValues && initialValues.length > 1
+      ? initialValues[1]
+      : (years.at(-1) as string),
+  );
 
   const handleMinChange = (value: string) => {
     const newMin = value;

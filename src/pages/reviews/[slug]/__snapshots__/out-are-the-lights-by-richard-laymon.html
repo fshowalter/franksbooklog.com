@@ -54,23 +54,22 @@
     </title>
   </head>
   <body
-    class="h-full w-full bg-canvas text-default has-[#nav:checked]:fixed has-[#nav:checked]:overflow-y-scroll data-search-modal-open:overflow-hidden data-search-modal-open:before:fixed data-search-modal-open:before:inset-0 data-search-modal-open:before:z-50 data-search-modal-open:before:backdrop-blur-xs"
+    class="h-full w-full bg-canvas text-default data-search-modal-open:overflow-hidden data-search-modal-open:before:fixed data-search-modal-open:before:inset-0 data-search-modal-open:before:z-search-backdrop data-search-modal-open:before:backdrop-blur-xs [&#38;.nav-open]:overflow-hidden"
   >
     <link
       rel="preload"
       as="image"
-      imagesrcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fout-are-the-lights-and-other-tales-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fout-are-the-lights-and-other-tales-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;h=744&amp;q=80&amp;f=avif 2x"
+      imagesrcset="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif 1x, /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;h=744&amp;q=80&amp;f=avif 2x"
     />
-    <div class="group/layout">
+    <div class="group">
       <a
-        class="absolute top-0.5 left-1/2 z-50 mx-auto [transform:translate(-50%,calc(-100%-2px))] bg-subtle px-6 py-2 text-center text-accent focus:[transform:translate(-50%,0%)]"
+        class="absolute top-0.5 left-1/2 z-skip-link mx-auto [transform:translate(-50%,calc(-100%-2px))] bg-subtle px-6 py-2 text-center text-accent focus:[transform:translate(-50%,0%)]"
         href="#content"
         >Skip to content</a
       >
       <div class="flex min-h-full w-full flex-col bg-default">
         <header
-          class="group/mast z-20 flex w-full items-center justify-between px-container py-4 tablet:p-6 laptop:inset-x-0 laptop:z-40 laptop:flex-row laptop:flex-wrap laptop:px-16 laptop:py-8 laptop:text-left"
-          style="color: var(--fg-default); position: static"
+          class="group z-30 flex w-full items-center justify-between px-container py-4 tablet:py-6 laptop:inset-x-0 laptop:z-40 laptop:flex-row laptop:flex-wrap laptop:px-16 laptop:py-8 laptop:text-left static [--mast-color:var(--fg-default)] text-(--mast-color)"
         >
           <div
             class="flex transform-gpu flex-col transition-transform has-[a:hover]:scale-105"
@@ -88,45 +87,66 @@
             <nav class="hidden w-full laptop:block laptop:w-auto">
               <ul class="flex flex-wrap justify-start gap-x-6 text-xl">
                 <li
-                  class="block transform-gpu tracking-serif-wide whitespace-nowrap transition-transform has-[a:hover]:scale-105"
+                  class="block leading-10 tracking-serif-wide whitespace-nowrap transition-transform [body.nav-open_&amp;]:opacity-0"
                 >
-                  <a class="text-inherit" href="/">Home</a>
+                  <a
+                    class="relative block text-inherit after:absolute after:bottom-1 after:left-0 after:h-px after:w-full after:origin-center after:scale-x-0 after:bg-(--mast-color)/75 after:transition-transform hover:after:scale-x-100"
+                    href="/"
+                    >Home</a
+                  >
                 </li>
                 <li
-                  class="block transform-gpu tracking-serif-wide whitespace-nowrap transition-transform has-[a:hover]:scale-105"
+                  class="block leading-10 tracking-serif-wide whitespace-nowrap transition-transform [body.nav-open_&amp;]:opacity-0"
                 >
-                  <a class="text-inherit" href="/how-i-grade/">How I Grade</a>
+                  <a
+                    class="relative block text-inherit after:absolute after:bottom-1 after:left-0 after:h-px after:w-full after:origin-center after:scale-x-0 after:bg-(--mast-color)/75 after:transition-transform hover:after:scale-x-100"
+                    href="/how-i-grade/"
+                    >How I Grade</a
+                  >
                 </li>
                 <li
-                  class="block transform-gpu tracking-serif-wide whitespace-nowrap transition-transform has-[a:hover]:scale-105"
+                  class="block leading-10 tracking-serif-wide whitespace-nowrap transition-transform [body.nav-open_&amp;]:opacity-0"
                 >
-                  <a class="text-inherit" href="/reviews/">Reviews</a>
+                  <a
+                    class="relative block text-inherit after:absolute after:bottom-1 after:left-0 after:h-px after:w-full after:origin-center after:scale-x-0 after:bg-(--mast-color)/75 after:transition-transform hover:after:scale-x-100"
+                    href="/reviews/"
+                    >Reviews</a
+                  >
                 </li>
                 <li
-                  class="block transform-gpu tracking-serif-wide whitespace-nowrap transition-transform has-[a:hover]:scale-105"
+                  class="block leading-10 tracking-serif-wide whitespace-nowrap transition-transform [body.nav-open_&amp;]:opacity-0"
                 >
-                  <a class="text-inherit" href="/authors/">Authors</a>
+                  <a
+                    class="relative block text-inherit after:absolute after:bottom-1 after:left-0 after:h-px after:w-full after:origin-center after:scale-x-0 after:bg-(--mast-color)/75 after:transition-transform hover:after:scale-x-100"
+                    href="/authors/"
+                    >Authors</a
+                  >
                 </li>
                 <li
-                  class="block transform-gpu tracking-serif-wide whitespace-nowrap transition-transform has-[a:hover]:scale-105"
+                  class="block leading-10 tracking-serif-wide whitespace-nowrap transition-transform [body.nav-open_&amp;]:opacity-0"
                 >
-                  <a class="text-inherit" href="/readings/">Reading Log</a>
+                  <a
+                    class="relative block text-inherit after:absolute after:bottom-1 after:left-0 after:h-px after:w-full after:origin-center after:scale-x-0 after:bg-(--mast-color)/75 after:transition-transform hover:after:scale-x-100"
+                    href="/readings/"
+                    >Reading Log</a
+                  >
                 </li>
               </ul>
             </nav>
             <div
-              class="z-1000 transform-gpu transition-transform group-has-[#nav:checked]/mast:!text-[#fff] hover:scale-105"
+              class="z-1000 transition-colors [body.nav-open_&amp;]:!text-default"
             >
               <button
                 aria-keyshortcuts="Control+K"
                 aria-label="Search"
-                class="flex size-10 items-center justify-center overflow-hidden text-sm leading-6 ring-default laptop:ml-6"
+                class="flex size-10 transform-gpu cursor-pointer items-center justify-center overflow-hidden text-sm leading-6 ring-default transition-transform hover:scale-105 laptop:ml-6"
                 data-open-modal="true"
                 disabled=""
                 title="Search: Control+K"
                 type="button"
               >
                 <svg
+                  aria-hidden="true"
                   class="size-7"
                   fill="none"
                   stroke="currentColor"
@@ -142,97 +162,111 @@
                 </svg>
               </button>
             </div>
-            <div class="group">
-              <input class="hidden" id="nav" type="checkbox" /><label
-                class="relative z-40 ml-2 flex h-10 w-10 transform-gpu cursor-pointer items-center justify-center transition-transform hover:scale-110 laptop:hidden"
-                for="nav"
-                ><span
-                  class="relative block h-0.5 w-6 origin-center transition-[top,bottom,transform] duration-200 ease-in-out group-has-[#nav:checked]/mast:transform-[rotate(45deg)] group-has-[#nav:checked]/mast:!bg-[#fff] before:absolute before:-top-2 before:block before:h-0.5 before:w-6 before:bg-inherit before:transition before:duration-200 before:ease-in-out group-has-[#nav:checked]/mast:before:top-0 group-has-[#nav:checked]/mast:before:transform-[rotate(90deg)] after:absolute after:-bottom-2 after:block after:h-0.5 after:w-6 after:bg-inherit after:transition after:duration-200 after:ease-in-out group-has-[#nav:checked]/mast:after:bottom-0 group-has-[#nav:checked]/mast:after:transform-[rotate(90deg)]"
-                  style="background-color: var(--fg-default)"
-                ></span
-              ></label>
-              <ul
-                class="fixed top-0 right-0 z-20 flex h-full w-0 transform-[translateX(100%)] flex-col items-start gap-y-5 overflow-hidden bg-footer text-left text-inverse opacity-0 duration-200 ease-in-out group-has-[#nav:checked]/mast:bottom-0 group-has-[#nav:checked]/mast:z-20 group-has-[#nav:checked]/mast:h-full group-has-[#nav:checked]/mast:w-full group-has-[#nav:checked]/mast:transform-[translateX(0)] group-has-[#nav:checked]/mast:overflow-y-auto group-has-[#nav:checked]/mast:pt-20 group-has-[#nav:checked]/mast:pr-[16%] group-has-[#nav:checked]/mast:pb-5 group-has-[#nav:checked]/mast:pl-[12%] group-has-[#nav:checked]/mast:opacity-100 tablet:max-w-[35vw] group-has-[#nav:checked]/mast:tablet:px-10 group-has-[#nav:checked]/mast:tablet:py-40 laptop:hidden"
+            <div
+              class="invisible fixed inset-0 bg-[rgba(0,0,0,.4)] opacity-0 transition-opacity duration-200 [body.nav-open_&amp;]:tablet:visible [body.nav-open_&amp;]:tablet:z-nav-backdrop [body.nav-open_&amp;]:tablet:opacity-100"
+              data-nav-backdrop="true"
+            ></div>
+            <button
+              aria-controls="nav-menu"
+              aria-expanded="false"
+              aria-label="Toggle navigation menu"
+              class="relative z-40 ml-2 flex h-10 w-10 transform-gpu cursor-pointer items-center justify-center transition-transform hover:scale-110 laptop:hidden"
+              data-nav-toggle="true"
+              type="button"
+            >
+              <span
+                aria-hidden="true"
+                class="relative flex h-0.5 w-6 origin-center transform-gpu transition-all duration-200 ease-in-out before:absolute before:-top-2 before:block before:h-0.5 before:w-6 before:bg-inherit before:transition before:duration-200 before:ease-in-out after:absolute after:-bottom-2 after:block after:h-0.5 after:w-6 after:bg-inherit after:transition after:duration-200 after:ease-in-out [body.nav-open_&amp;]:transform-[rotate(45deg)] [body.nav-open_&amp;]:!bg-[var(--fg-default)] [body.nav-open_&amp;]:before:top-0 [body.nav-open_&amp;]:before:transform-[rotate(90deg)] [body.nav-open_&amp;]:after:bottom-0 [body.nav-open_&amp;]:after:transform-[rotate(90deg)]"
+                style="background-color: var(--fg-default)"
+              ></span>
+            </button>
+            <nav aria-label="Main navigation">
+              <ol
+                class="flex w-full flex-col gap-y-6 invisible fixed top-0 right-0 h-full w-0 transform-[translateX(100%)] overflow-hidden bg-canvas text-left text-default opacity-0 duration-200 ease-in-out tablet:max-w-[35vw] laptop:max-w-[25vw] [body.nav-open_&amp;]:visible [body.nav-open_&amp;]:bottom-0 [body.nav-open_&amp;]:z-nav-menu [body.nav-open_&amp;]:h-full [body.nav-open_&amp;]:w-full [body.nav-open_&amp;]:transform-[translateX(0)] [body.nav-open_&amp;]:overflow-y-auto [body.nav-open_&amp;]:pt-20 [body.nav-open_&amp;]:pr-[16%] [body.nav-open_&amp;]:pb-5 [body.nav-open_&amp;]:pl-[12%] [body.nav-open_&amp;]:opacity-100 [body.nav-open_&amp;]:drop-shadow-2xl [body.nav-open_&amp;]:tablet:px-10 [body.nav-open_&amp;]:tablet:pt-40 [body.nav-open_&amp;]:laptop:px-20"
+                data-nav-menu="true"
+                id="nav-menu"
               >
-                <li class="block w-1/2 text-2xl whitespace-nowrap">
+                <li
+                  class="block w-1/2 text-2xl whitespace-nowrap laptop:w-full"
+                >
                   <a
-                    class="inline-block origin-left transform-gpu transition-all hover:scale-105"
+                    class="relative inline-block origin-left transform-gpu transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-accent after:transition-transform hover:text-accent hover:after:scale-x-100"
                     href="/"
                     >Home</a
                   >
                 </li>
-                <li class="block w-1/2 text-2xl whitespace-nowrap">
+                <li
+                  class="block w-1/2 text-2xl whitespace-nowrap laptop:w-full"
+                >
                   <a
-                    class="inline-block origin-left transform-gpu transition-all hover:scale-105"
+                    class="relative inline-block origin-left transform-gpu transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-accent after:transition-transform hover:text-accent hover:after:scale-x-100"
                     href="/how-i-grade/"
                     >How I Grade</a
                   >
                 </li>
-                <li class="block w-1/2 text-2xl whitespace-nowrap">
+                <li
+                  class="block w-1/2 text-2xl whitespace-nowrap laptop:w-full"
+                >
                   <a
-                    class="inline-block origin-left transform-gpu transition-all hover:scale-105"
+                    class="relative inline-block origin-left transform-gpu transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-accent after:transition-transform hover:text-accent hover:after:scale-x-100"
                     href="/reviews/"
                     >Reviews</a
                   >
                 </li>
-                <li class="block w-1/2 text-2xl whitespace-nowrap">
+                <li
+                  class="block w-1/2 text-2xl whitespace-nowrap laptop:w-full"
+                >
                   <a
-                    class="inline-block origin-left transform-gpu transition-all hover:scale-105"
+                    class="relative inline-block origin-left transform-gpu transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-accent after:transition-transform hover:text-accent hover:after:scale-x-100"
                     href="/authors/"
                     >Authors</a
                   >
                 </li>
-                <li class="block w-1/2 text-2xl whitespace-nowrap">
+                <li
+                  class="block w-1/2 text-2xl whitespace-nowrap laptop:w-full"
+                >
                   <a
-                    class="inline-block origin-left transform-gpu transition-all hover:scale-105"
+                    class="relative inline-block origin-left transform-gpu transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-accent after:transition-transform hover:text-accent hover:after:scale-x-100"
                     href="/readings/"
                     >Reading Log</a
                   >
                   <ol class="mt-4">
                     <li
-                      class="mb-4 ml-1 font-sans text-xs tracking-wider text-inverse-subtle uppercase last:mb-0"
+                      class="mb-3 ml-1 font-sans text-xs font-medium tracking-wider text-muted uppercase last:-mb-1"
                     >
                       <a
-                        class="inline-block origin-left transform-gpu transition-all hover:scale-105 hover:text-inverse"
+                        class="relative inline-block origin-left transform-gpu pb-1 transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-accent after:transition-transform hover:text-accent hover:after:scale-x-100"
                         href="/readings/stats/"
                         >Stats</a
                       >
                     </li>
                   </ol>
                 </li>
-              </ul>
-            </div>
+              </ol>
+            </nav>
           </div>
         </header>
-        <main
-          class="grow transition-[opacity] duration-200 ease-in-out group-has-[#nav:checked]/layout:opacity-80 flex flex-col"
-          id="content"
-          data-pagefind-body="true"
-        >
+        <main class="grow flex flex-col" id="content" data-pagefind-body="true">
           <header
             class="relative z-1 mb-12 flex flex-col items-center px-[8%] pt-10"
           >
-            <nav
-              class="transform-gpu pb-3 transition-transform has-[a:hover]:scale-110"
-            >
+            <nav class="transform-gpu pb-2 transition-transform">
               <a
-                class="font-sans text-xs tracking-wider uppercase transition-colors hover:text-accent"
+                class="relative inline-block pb-1 font-sans text-xs tracking-wider text-subtle uppercase transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-center after:scale-x-0 after:bg-(--fg-accent) after:transition-transform hover:text-accent hover:after:scale-x-100"
                 href="/reviews/"
                 >Reviews</a
               >
             </nav>
             <h1
-              class="text-center text-4xl desktop:text-6xl"
+              class="text-center text-4xl laptop:text-5xl desktop:text-6xl"
               data-pagefind-meta="title"
             >
               Out Are the Lights
             </h1>
-            <div
-              class="mt-4 transform-gpu text-center text-md text-muted transition-transform has-[a:hover]:scale-105"
-            >
+            <div class="mt-4 text-center text-md text-muted">
               by<!-- -->
               <div
-                class="inline-block transform-gpu text-accent transition-transform"
+                class="relative inline-block transform-gpu text-accent transition-transform after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-center after:scale-x-0 after:bg-(--fg-accent) after:transition-transform hover:after:scale-x-100"
               >
                 <a href="/authors/richard-laymon/">Richard Laymon</a>
               </div>
@@ -257,10 +291,10 @@
             </div>
             <div
               class="@container relative my-12 flex w-full max-w-popout flex-col items-center"
-              data-pagefind-meta="image:/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fout-are-the-lights-and-other-tales-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
+              data-pagefind-meta="image:/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
             >
               <div
-                class="absolute top-[2.5%] left-[2.5%] size-[95%] overflow-hidden bg-default bg-cover bg-center clip-path-cover after:absolute after:size-full after:backdrop-blur-sm after:clip-path-cover"
+                class="absolute top-[2.5%] left-[2.5%] size-[95%] overflow-hidden bg-default bg-cover bg-center clip-path-cover after:absolute after:size-full after:backdrop-blur-sm after:clip-path-cover tablet:-left-[2.5%] tablet:w-[105%]"
                 style="
                   background-color: var(--bg-default);
                   background-image:
@@ -272,7 +306,7 @@
                       rgba(var(--bg-default-rgb), var(--bg-default-alpha)) 70%,
                       rgba(var(--bg-default-rgb), 1) 100%
                     ),
-                    url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fout-are-the-lights-and-other-tales-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif);
+                    url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif);
                 "
               ></div>
               <div
@@ -283,10 +317,10 @@
                 >
                   <img
                     height="372"
-                    src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fout-are-the-lights-and-other-tales-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
+                    src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
                     srcset="
-                      /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fout-are-the-lights-and-other-tales-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif 1x,
-                      /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fout-are-the-lights-and-other-tales-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;h=744&amp;q=80&amp;f=avif 2x
+                      /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif 1x,
+                      /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;h=744&amp;q=80&amp;f=avif 2x
                     "
                     width="248"
                     alt=""
@@ -404,13 +438,13 @@
             </div>
             <div class="w-full max-w-popout">
               <h2
-                class="py-10 font-sans text-xs font-semibold tracking-wide text-subtle uppercase text-center shadow-bottom"
+                class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase text-center shadow-bottom"
               >
                 Reading History
               </h2>
               <ul>
                 <li
-                  class="mb-1 flex flex-col bg-subtle px-container font-sans text-xs font-light tablet:px-6"
+                  class="mb-1 flex flex-col bg-subtle px-container font-sans tablet:px-6"
                 >
                   <div class="flex gap-x-4 py-4 tablet:gap-x-6">
                     <div class="size-auto self-start">
@@ -443,33 +477,33 @@
                           ></span
                         >)</span
                       >
-                      <details class="font-light text-subtle">
+                      <details
+                        class="rounded-md bg-canvas px-2 text-subtle open:pb-2"
+                      >
                         <summary
-                          class="origin-left transform-gpu cursor-pointer leading-6 transition-transform hover:scale-105"
+                          class="cursor-pointer rounded-sm py-1 font-sans text-sm tracking-prose text-subtle"
                         >
                           Read over<!-- -->
-                          <span class="text-accent"
-                            >18<!-- -->
-                            Days</span
-                          >
+                          <!-- -->18<!-- -->
+                          Days
                         </summary>
-                        <ol class="grid w-full grid-cols-[auto_1fr_auto] pt-3">
+                        <ol
+                          class="grid w-full grid-cols-[auto_1fr_auto] rounded-md bg-default px-2 py-3"
+                        >
                           <li
-                            class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] py-1"
+                            class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] px-1 py-1 font-normal even:bg-subtle"
                           >
                             <div
-                              class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-xs"
+                              class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-sm tracking-prose"
                             >
                               <div>24 Apr 2014</div>
                               <div
-                                class="col-start-3 self-center pb-1 text-right font-sans text-xs text-nowrap"
+                                class="col-start-3 self-center pb-1 text-right font-sans text-sm text-nowrap"
                               >
                                 <div>10%</div>
                               </div>
                             </div>
-                            <div
-                              class="col-span-2 col-start-2 row-start-3 bg-stripe"
-                            >
+                            <div class="col-span-2 col-start-2 row-start-3">
                               <div
                                 class="bg-progress-bar leading-[6px] tablet:mb-0"
                                 style="--bar-percent: 10%"
@@ -479,21 +513,19 @@
                             </div>
                           </li>
                           <li
-                            class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] py-1"
+                            class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] px-1 py-1 font-normal even:bg-subtle"
                           >
                             <div
-                              class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-xs"
+                              class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-sm tracking-prose"
                             >
                               <div>25 Apr 2014</div>
                               <div
-                                class="col-start-3 self-center pb-1 text-right font-sans text-xs text-nowrap"
+                                class="col-start-3 self-center pb-1 text-right font-sans text-sm text-nowrap"
                               >
                                 <div>26%</div>
                               </div>
                             </div>
-                            <div
-                              class="col-span-2 col-start-2 row-start-3 bg-stripe"
-                            >
+                            <div class="col-span-2 col-start-2 row-start-3">
                               <div
                                 class="bg-progress-bar leading-[6px] tablet:mb-0"
                                 style="--bar-percent: 26%"
@@ -503,21 +535,19 @@
                             </div>
                           </li>
                           <li
-                            class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] py-1"
+                            class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] px-1 py-1 font-normal even:bg-subtle"
                           >
                             <div
-                              class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-xs"
+                              class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-sm tracking-prose"
                             >
                               <div>26 Apr 2014</div>
                               <div
-                                class="col-start-3 self-center pb-1 text-right font-sans text-xs text-nowrap"
+                                class="col-start-3 self-center pb-1 text-right font-sans text-sm text-nowrap"
                               >
                                 <div>70%</div>
                               </div>
                             </div>
-                            <div
-                              class="col-span-2 col-start-2 row-start-3 bg-stripe"
-                            >
+                            <div class="col-span-2 col-start-2 row-start-3">
                               <div
                                 class="bg-progress-bar leading-[6px] tablet:mb-0"
                                 style="--bar-percent: 70%"
@@ -527,21 +557,19 @@
                             </div>
                           </li>
                           <li
-                            class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] py-1"
+                            class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] px-1 py-1 font-normal even:bg-subtle"
                           >
                             <div
-                              class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-xs"
+                              class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-sm tracking-prose"
                             >
                               <div>27 Apr 2014</div>
                               <div
-                                class="col-start-3 self-center pb-1 text-right font-sans text-xs text-nowrap"
+                                class="col-start-3 self-center pb-1 text-right font-sans text-sm text-nowrap"
                               >
                                 <div>83%</div>
                               </div>
                             </div>
-                            <div
-                              class="col-span-2 col-start-2 row-start-3 bg-stripe"
-                            >
+                            <div class="col-span-2 col-start-2 row-start-3">
                               <div
                                 class="bg-progress-bar leading-[6px] tablet:mb-0"
                                 style="--bar-percent: 83%"
@@ -551,21 +579,19 @@
                             </div>
                           </li>
                           <li
-                            class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] py-1"
+                            class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] px-1 py-1 font-normal even:bg-subtle"
                           >
                             <div
-                              class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-xs"
+                              class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-sm tracking-prose"
                             >
                               <div>28 Apr 2014</div>
                               <div
-                                class="col-start-3 self-center pb-1 text-right font-sans text-xs text-nowrap"
+                                class="col-start-3 self-center pb-1 text-right font-sans text-sm text-nowrap"
                               >
                                 <div>Finished</div>
                               </div>
                             </div>
-                            <div
-                              class="col-span-2 col-start-2 row-start-3 bg-stripe"
-                            >
+                            <div class="col-span-2 col-start-2 row-start-3">
                               <div
                                 class="bg-progress-bar leading-[6px] tablet:mb-0"
                                 style="--bar-percent: 100%"
@@ -581,7 +607,7 @@
                   <div></div>
                 </li>
                 <li
-                  class="mb-1 flex flex-col bg-subtle px-container font-sans text-xs font-light tablet:px-6"
+                  class="mb-1 flex flex-col bg-subtle px-container font-sans tablet:px-6"
                 >
                   <div class="flex gap-x-4 py-4 tablet:gap-x-6">
                     <div class="size-auto self-start">
@@ -614,33 +640,33 @@
                           ></span
                         >)</span
                       >
-                      <details class="font-light text-subtle">
+                      <details
+                        class="rounded-md bg-canvas px-2 text-subtle open:pb-2"
+                      >
                         <summary
-                          class="origin-left transform-gpu cursor-pointer leading-6 transition-transform hover:scale-105"
+                          class="cursor-pointer rounded-sm py-1 font-sans text-sm tracking-prose text-subtle"
                         >
                           Read over<!-- -->
-                          <span class="text-accent"
-                            >5<!-- -->
-                            Days</span
-                          >
+                          <!-- -->5<!-- -->
+                          Days
                         </summary>
-                        <ol class="grid w-full grid-cols-[auto_1fr_auto] pt-3">
+                        <ol
+                          class="grid w-full grid-cols-[auto_1fr_auto] rounded-md bg-default px-2 py-3"
+                        >
                           <li
-                            class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] py-1"
+                            class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] px-1 py-1 font-normal even:bg-subtle"
                           >
                             <div
-                              class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-xs"
+                              class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-sm tracking-prose"
                             >
                               <div>24 Apr 2014</div>
                               <div
-                                class="col-start-3 self-center pb-1 text-right font-sans text-xs text-nowrap"
+                                class="col-start-3 self-center pb-1 text-right font-sans text-sm text-nowrap"
                               >
                                 <div>10%</div>
                               </div>
                             </div>
-                            <div
-                              class="col-span-2 col-start-2 row-start-3 bg-stripe"
-                            >
+                            <div class="col-span-2 col-start-2 row-start-3">
                               <div
                                 class="bg-progress-bar leading-[6px] tablet:mb-0"
                                 style="--bar-percent: 10%"
@@ -650,21 +676,19 @@
                             </div>
                           </li>
                           <li
-                            class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] py-1"
+                            class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] px-1 py-1 font-normal even:bg-subtle"
                           >
                             <div
-                              class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-xs"
+                              class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-sm tracking-prose"
                             >
                               <div>25 Apr 2014</div>
                               <div
-                                class="col-start-3 self-center pb-1 text-right font-sans text-xs text-nowrap"
+                                class="col-start-3 self-center pb-1 text-right font-sans text-sm text-nowrap"
                               >
                                 <div>26%</div>
                               </div>
                             </div>
-                            <div
-                              class="col-span-2 col-start-2 row-start-3 bg-stripe"
-                            >
+                            <div class="col-span-2 col-start-2 row-start-3">
                               <div
                                 class="bg-progress-bar leading-[6px] tablet:mb-0"
                                 style="--bar-percent: 26%"
@@ -674,21 +698,19 @@
                             </div>
                           </li>
                           <li
-                            class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] py-1"
+                            class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] px-1 py-1 font-normal even:bg-subtle"
                           >
                             <div
-                              class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-xs"
+                              class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-sm tracking-prose"
                             >
                               <div>26 Apr 2014</div>
                               <div
-                                class="col-start-3 self-center pb-1 text-right font-sans text-xs text-nowrap"
+                                class="col-start-3 self-center pb-1 text-right font-sans text-sm text-nowrap"
                               >
                                 <div>70%</div>
                               </div>
                             </div>
-                            <div
-                              class="col-span-2 col-start-2 row-start-3 bg-stripe"
-                            >
+                            <div class="col-span-2 col-start-2 row-start-3">
                               <div
                                 class="bg-progress-bar leading-[6px] tablet:mb-0"
                                 style="--bar-percent: 70%"
@@ -698,21 +720,19 @@
                             </div>
                           </li>
                           <li
-                            class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] py-1"
+                            class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] px-1 py-1 font-normal even:bg-subtle"
                           >
                             <div
-                              class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-xs"
+                              class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-sm tracking-prose"
                             >
                               <div>27 Apr 2014</div>
                               <div
-                                class="col-start-3 self-center pb-1 text-right font-sans text-xs text-nowrap"
+                                class="col-start-3 self-center pb-1 text-right font-sans text-sm text-nowrap"
                               >
                                 <div>83%</div>
                               </div>
                             </div>
-                            <div
-                              class="col-span-2 col-start-2 row-start-3 bg-stripe"
-                            >
+                            <div class="col-span-2 col-start-2 row-start-3">
                               <div
                                 class="bg-progress-bar leading-[6px] tablet:mb-0"
                                 style="--bar-percent: 83%"
@@ -722,21 +742,19 @@
                             </div>
                           </li>
                           <li
-                            class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] py-1"
+                            class="relative col-span-3 grid grid-cols-subgrid grid-rows-[1fr_auto_auto_1fr] px-1 py-1 font-normal even:bg-subtle"
                           >
                             <div
-                              class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-xs"
+                              class="col-span-2 col-start-2 row-start-2 grid grid-cols-subgrid font-sans text-sm tracking-prose"
                             >
                               <div>28 Apr 2014</div>
                               <div
-                                class="col-start-3 self-center pb-1 text-right font-sans text-xs text-nowrap"
+                                class="col-start-3 self-center pb-1 text-right font-sans text-sm text-nowrap"
                               >
                                 <div>Finished</div>
                               </div>
                             </div>
-                            <div
-                              class="col-span-2 col-start-2 row-start-3 bg-stripe"
-                            >
+                            <div class="col-span-2 col-start-2 row-start-3">
                               <div
                                 class="bg-progress-bar leading-[6px] tablet:mb-0"
                                 style="--bar-percent: 100%"
@@ -755,543 +773,140 @@
             </div>
           </div>
           <div
-            class="flex w-full flex-col items-center gap-y-12 bg-subtle pt-16 pb-32 tablet:pt-8 desktop:gap-y-24"
+            class="flex w-full flex-col items-center gap-y-12 bg-subtle pt-16 pb-32 tablet:pt-8 laptop:gap-y-24"
             data-pagefind-ignore="true"
           >
             <nav
-              class="mx-auto w-full max-w-prose bg-subtle px-container tablet:px-0 min-[1208px]:max-w-(--breakpoint-desktop) min-[1208px]:px-container"
+              class="mx-auto w-full max-w-[894px] bg-subtle px-container min-[1080px]:max-w-(--breakpoint-desktop)"
               data-page-find-ignore="true"
             >
               <div>
                 <h2
-                  class="py-10 font-sans text-xs font-semibold tracking-wide text-subtle uppercase"
+                  class="py-10 font-sans text-xs font-bold tracking-wide text-subtle uppercase"
                 >
                   <a
-                    class="relative inline-block transform-gpu transition-transform hover:scale-110"
+                    class="relative -mb-1 inline-block transform-gpu pb-1 transition-transform after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-right after:scale-x-0 after:bg-(--fg-accent) after:transition-transform hover:after:scale-x-100"
                     href="/reviews/"
                     >More <span class="text-accent">Reviews</span></a
                   >
                 </h2>
               </div>
-              <ul
-                class="-mx-4 grid auto-rows-[auto_1fr] grid-cols-2 flex-wrap gap-x-[clamp(8px,2vw,32px)] gap-y-[clamp(8px,2vw,32px)] tablet:mx-0 tablet:flex tablet:items-baseline tablet:gap-x-[var(--gap-x)] tablet:gap-y-4 tablet:[--column-count:3] tablet:[--gap-x:calc(var(--spacing)_*_10)] min-[1208px]:[--column-count:6] laptop:[--gap-x:calc(var(--spacing)_*_11)] desktop:gap-y-12 desktop:[--gap-x:calc(var(--spacing)_*_16)]"
-              >
-                <li
-                  class="group/list-item relative row-span-2 grid transform-gpu grid-rows-subgrid flex-col gap-y-0 bg-default transition-transform tablet:flex tablet:w-[calc((100%_-_var(--gaps-width))_/_var(--column-count))] tablet:bg-inherit tablet:[--gaps-width:var(--gap-x)_*_(var(--column-count)_-_1)]"
+              <div class="@container/cover-list mx-auto tablet:-mx-6">
+                <ol
+                  class="grid flex-wrap gap-x-8 gap-y-8 tablet-landscape:grid-cols-2"
                 >
-                  <div
-                    class="@container transform-gpu self-end transition-transform group-has-[a:hover]/list-item:-translate-y-2 group-has-[a:hover]/list-item:drop-shadow-2xl tablet:self-auto"
+                  <li
+                    class="group/list-item @container/card relative row-span-2 grid transform-gpu grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform tablet-landscape:has-[a:hover]:-translate-y-2 tablet-landscape:has-[a:hover]:drop-shadow-2xl dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]"
                   >
                     <div
-                      class="flex justify-center px-3 pt-6 tablet:px-0 tablet:pt-0"
+                      class="row-span-2 grid grid-cols-1 grid-rows-subgrid gap-x-[5%] @min-[500px]/card:flex @min-[500px]/card:flex-row"
                     >
                       <div
-                        class="relative drop-shadow-md after:absolute after:inset-x-0 after:top-0 after:bottom-0 after:z-20 after:rounded-[2.5px] after:bg-default after:opacity-15 after:transition-opacity group-hover/list-item:after:opacity-0"
+                        class="relative row-start-1 flex shrink-0 justify-center self-end @min-[500px]/card:w-1/4 @min-[500px]/card:self-start @min-[500px]/card:drop-shadow-md"
                       >
                         <div
-                          class="relative after:absolute after:top-0 after:left-0 after:z-20 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)] after:bg-size-[100%_100%] after:mix-blend-soft-light undefined"
+                          class="absolute top-[2.5%] bottom-[2.5%] left-[0] w-full overflow-hidden bg-default bg-cover bg-center clip-path-cover after:absolute after:size-full after:backdrop-blur-sm after:clip-path-cover @min-[500px]/card:hidden"
+                          style="
+                            background-color: var(--bg-default);
+                            background-image:
+                              linear-gradient(
+                                90deg,
+                                rgba(var(--bg-default-rgb), 1) 0%,
+                                rgba(
+                                    var(--bg-default-rgb),
+                                    var(--bg-default-alpha)
+                                  )
+                                  30%,
+                                rgba(var(--bg-default-rgb), 0) 50%,
+                                rgba(
+                                    var(--bg-default-rgb),
+                                    var(--bg-default-alpha)
+                                  )
+                                  70%,
+                                rgba(var(--bg-default-rgb), 1) 100%
+                              ),
+                              url(/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fnight-shift-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif);
+                          "
+                        ></div>
+                        <div
+                          class="relative w-1/2 max-w-[200px] shrink-0 self-start overflow-hidden rounded-sm shadow-all transition-transform after:absolute after:top-0 after:left-0 after:z-sticky after:size-full after:bg-default after:opacity-15 after:transition-opacity group-has-[a:hover]/list-item:after:opacity-0 @min-[500px]/card:w-full"
                         >
                           <div
-                            class="relative z-10 before:absolute before:top-0 before:left-0 before:z-10 before:block before:size-full before:rounded-[2.5px] before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%] after:absolute after:top-0 after:left-0 after:z-10 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%] after:mix-blend-multiply"
+                            class="relative after:absolute after:top-0 after:left-0 after:z-sticky after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%] after:mix-blend-multiply"
                           >
-                            <img
-                              height="372"
-                              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fmr-s-by-george-jacobs-william-stadiem.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
-                              srcset="
-                                /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fmr-s-by-george-jacobs-william-stadiem.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;h=93&amp;q=80&amp;f=avif    62w,
-                                /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fmr-s-by-george-jacobs-william-stadiem.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;h=186&amp;q=80&amp;f=avif 124w,
-                                /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fmr-s-by-george-jacobs-william-stadiem.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif 248w,
-                                /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fmr-s-by-george-jacobs-william-stadiem.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;h=744&amp;q=80&amp;f=avif 496w
-                              "
-                              width="248"
-                              sizes="(min-width: 1800px) 218px, (min-width: 1280px) calc(11.8vw + 8px), (min-width: 820px) 216px, (min-width: 600px) calc(23.5vw + 28px), calc(41.43vw + 8px)"
-                              alt=""
-                              class="rounded-[2.5px] bg-default shadow-sm @min-[160px]:shadow-lg"
-                              decoding="async"
-                              loading="lazy"
-                            />
+                            <div
+                              class="relative z-10 before:absolute before:top-0 before:left-0 before:z-10 before:block before:size-full before:rounded-[2.5px] before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%] after:absolute after:top-0 after:left-0 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)] after:bg-size-[100%_100%] after:mix-blend-soft-light"
+                            >
+                              <img
+                                height="372"
+                                src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fnight-shift-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
+                                srcset="
+                                  /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fnight-shift-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;h=93&amp;q=80&amp;f=avif    62w,
+                                  /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fnight-shift-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;h=186&amp;q=80&amp;f=avif 124w,
+                                  /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fnight-shift-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif 248w,
+                                  /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fnight-shift-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;h=744&amp;q=80&amp;f=avif 496w
+                                "
+                                width="248"
+                                alt=""
+                                sizes="(min-width: 1860px) 200px, (min-width: 1440px) calc(9.75vw + 21px), (min-width: 1280px) calc(16.43vw - 59px), (min-width: 1040px) calc(6.36vw + 120px), (min-width: 960px) 200px, (min-width: 780px) calc(11.25vw + 94px), (min-width: 620px) 200px, (min-width: 460px) calc(25.71vw + 46px), calc(42.14vw - 12px)"
+                                class="rounded-[2.5px] bg-default"
+                                decoding="async"
+                                loading="lazy"
+                              />
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                  <div class="@container h-full self-start tablet:self-auto">
-                    <div
-                      class="flex h-full flex-col items-center px-3 pb-8 tablet:px-0 @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6 @min-[200px]:tablet:px-0"
-                    >
                       <div
-                        class="flex h-full w-full max-w-[248px] flex-col px-1"
+                        class="row-start-2 mt-4 flex flex-col gap-y-2 @min-[500px]/card:mt-0"
                       >
+                        <a
+                          class="block text-2xl font-medium transition-colors after:absolute after:top-0 after:left-0 after:z-sticky after:size-full hover:text-accent hover:before:opacity-0"
+                          href="/reviews/night-shift-by-stephen-king/"
+                          >Night Shift</a
+                        >
+                        <div class="-mt-2"><span>Stephen King</span></div>
                         <div
-                          class="pt-4 text-base leading-5 font-medium @min-[225px]:text-md"
+                          class="font-sans text-sm leading-4 font-normal tracking-prose text-subtle"
                         >
-                          <a
-                            class="block after:absolute after:top-0 after:left-0 after:z-60 after:size-full after:opacity-0 hover:text-accent"
-                            href="/reviews/mr-s-by-george-jacobs-william-stadiem/"
-                            rel="canonical"
-                            >Mr. S</a
-                          >
-                        </div>
-                        <p
-                          class="pt-1 font-sans text-xs leading-4 font-light text-subtle"
-                        >
-                          <span class="hidden @min-[225px]:inline"
-                            >by<!-- --> </span
-                          ><span>George Jacobs</span> and
-                          <span>William Stadiem</span>
-                        </p>
-                        <picture
-                          ><source
-                            media="(prefers-color-scheme: dark)"
-                            srcset="/svg/4-stars-dark.svg" />
-                          <img
-                            alt="B: 4 stars (out of 5)"
-                            class="mt-2 h-3 w-15 @min-[225px]:mt-2 @min-[225px]:h-[14px] @min-[225px]:w-[70px]"
-                            height="18"
-                            src="/svg/4-stars.svg"
-                            width="90"
-                        /></picture>
-                        <div
-                          class="mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle tablet:pt-3 @min-[225px]:tracking-wide"
-                        >
-                          Nonfiction<!-- -->
+                          2000<!-- -->
                           |
-                          <!-- -->2003
+                          <!-- -->Collection
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li
-                  class="group/list-item relative row-span-2 grid transform-gpu grid-rows-subgrid flex-col gap-y-0 bg-default transition-transform tablet:flex tablet:w-[calc((100%_-_var(--gaps-width))_/_var(--column-count))] tablet:bg-inherit tablet:[--gaps-width:var(--gap-x)_*_(var(--column-count)_-_1)]"
-                >
-                  <div
-                    class="@container transform-gpu self-end transition-transform group-has-[a:hover]/list-item:-translate-y-2 group-has-[a:hover]/list-item:drop-shadow-2xl tablet:self-auto"
-                  >
-                    <div
-                      class="flex justify-center px-3 pt-6 tablet:px-0 tablet:pt-0"
-                    >
-                      <div
-                        class="relative drop-shadow-md after:absolute after:inset-x-0 after:top-0 after:bottom-0 after:z-20 after:rounded-[2.5px] after:bg-default after:opacity-15 after:transition-opacity group-hover/list-item:after:opacity-0"
-                      >
-                        <div
-                          class="relative after:absolute after:top-0 after:left-0 after:z-20 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)] after:bg-size-[100%_100%] after:mix-blend-soft-light undefined"
-                        >
-                          <div
-                            class="relative z-10 before:absolute before:top-0 before:left-0 before:z-10 before:block before:size-full before:rounded-[2.5px] before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%] after:absolute after:top-0 after:left-0 after:z-10 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%] after:mix-blend-multiply"
-                          >
+                        <div>
+                          <picture
+                            ><source
+                              media="(prefers-color-scheme: dark)"
+                              srcset="/svg/4-stars-dark.svg" />
                             <img
-                              height="372"
-                              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fnight-shift-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
-                              srcset="
-                                /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fnight-shift-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;h=93&amp;q=80&amp;f=avif    62w,
-                                /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fnight-shift-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;h=186&amp;q=80&amp;f=avif 124w,
-                                /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fnight-shift-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif 248w,
-                                /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fnight-shift-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;h=744&amp;q=80&amp;f=avif 496w
-                              "
-                              width="248"
-                              sizes="(min-width: 1800px) 218px, (min-width: 1280px) calc(11.8vw + 8px), (min-width: 820px) 216px, (min-width: 600px) calc(23.5vw + 28px), calc(41.43vw + 8px)"
-                              alt=""
-                              class="rounded-[2.5px] bg-default shadow-sm @min-[160px]:shadow-lg"
-                              decoding="async"
-                              loading="lazy"
-                            />
-                          </div>
+                              alt="B: 4 stars (out of 5)"
+                              class="py-1"
+                              height="24"
+                              src="/svg/4-stars.svg"
+                              width="120"
+                          /></picture>
+                        </div>
+                        <div
+                          class="rendered-markdown mb-6 text-lg leading-normal tracking-prose text-muted"
+                        >
+                          <p>
+                            Though most of tales are EC Comics style setups for
+                            twist endings, they’re well executed, and the others
+                            such as the opening “Jerusalem’s Lot”, which borrows
+                            from Bram Stoker’s
+                            <em>The Lair of the White Worm</em>, and the
+                            closing, “The Woman in the Room”, about a man’s
+                            struggle to deal with his cancer-ridden mother’s
+                            slow death, are outstanding, the latter especially
+                            so given that we now know that it’s essentially an
+                            autobiographical story.
+                          </p>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="@container h-full self-start tablet:self-auto">
-                    <div
-                      class="flex h-full flex-col items-center px-3 pb-8 tablet:px-0 @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6 @min-[200px]:tablet:px-0"
-                    >
-                      <div
-                        class="flex h-full w-full max-w-[248px] flex-col px-1"
-                      >
-                        <div
-                          class="pt-4 text-base leading-5 font-medium @min-[225px]:text-md"
-                        >
-                          <a
-                            class="block after:absolute after:top-0 after:left-0 after:z-60 after:size-full after:opacity-0 hover:text-accent"
-                            href="/reviews/night-shift-by-stephen-king/"
-                            rel="canonical"
-                            >Night Shift</a
-                          >
-                        </div>
-                        <p
-                          class="pt-1 font-sans text-xs leading-4 font-light text-subtle"
-                        >
-                          <span class="hidden @min-[225px]:inline"
-                            >by<!-- --> </span
-                          ><span>Stephen King</span>
-                        </p>
-                        <picture
-                          ><source
-                            media="(prefers-color-scheme: dark)"
-                            srcset="/svg/4-stars-dark.svg" />
-                          <img
-                            alt="B: 4 stars (out of 5)"
-                            class="mt-2 h-3 w-15 @min-[225px]:mt-2 @min-[225px]:h-[14px] @min-[225px]:w-[70px]"
-                            height="18"
-                            src="/svg/4-stars.svg"
-                            width="90"
-                        /></picture>
-                        <div
-                          class="mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle tablet:pt-3 @min-[225px]:tracking-wide"
-                        >
-                          Collection<!-- -->
-                          |
-                          <!-- -->1978
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li
-                  class="group/list-item relative row-span-2 grid transform-gpu grid-rows-subgrid flex-col gap-y-0 bg-default transition-transform tablet:flex tablet:w-[calc((100%_-_var(--gaps-width))_/_var(--column-count))] tablet:bg-inherit tablet:[--gaps-width:var(--gap-x)_*_(var(--column-count)_-_1)]"
-                >
-                  <div
-                    class="@container transform-gpu self-end transition-transform group-has-[a:hover]/list-item:-translate-y-2 group-has-[a:hover]/list-item:drop-shadow-2xl tablet:self-auto"
-                  >
-                    <div
-                      class="flex justify-center px-3 pt-6 tablet:px-0 tablet:pt-0"
-                    >
-                      <div
-                        class="relative drop-shadow-md after:absolute after:inset-x-0 after:top-0 after:bottom-0 after:z-20 after:rounded-[2.5px] after:bg-default after:opacity-15 after:transition-opacity group-hover/list-item:after:opacity-0"
-                      >
-                        <div
-                          class="relative after:absolute after:top-0 after:left-0 after:z-20 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)] after:bg-size-[100%_100%] after:mix-blend-soft-light undefined"
-                        >
-                          <div
-                            class="relative z-10 before:absolute before:top-0 before:left-0 before:z-10 before:block before:size-full before:rounded-[2.5px] before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%] after:absolute after:top-0 after:left-0 after:z-10 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%] after:mix-blend-multiply"
-                          >
-                            <img
-                              height="372"
-                              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fon-writing-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
-                              srcset="
-                                /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fon-writing-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;h=93&amp;q=80&amp;f=avif    62w,
-                                /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fon-writing-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;h=186&amp;q=80&amp;f=avif 124w,
-                                /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fon-writing-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif 248w,
-                                /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fon-writing-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;h=744&amp;q=80&amp;f=avif 496w
-                              "
-                              width="248"
-                              sizes="(min-width: 1800px) 218px, (min-width: 1280px) calc(11.8vw + 8px), (min-width: 820px) 216px, (min-width: 600px) calc(23.5vw + 28px), calc(41.43vw + 8px)"
-                              alt=""
-                              class="rounded-[2.5px] bg-default shadow-sm @min-[160px]:shadow-lg"
-                              decoding="async"
-                              loading="lazy"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="@container h-full self-start tablet:self-auto">
-                    <div
-                      class="flex h-full flex-col items-center px-3 pb-8 tablet:px-0 @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6 @min-[200px]:tablet:px-0"
-                    >
-                      <div
-                        class="flex h-full w-full max-w-[248px] flex-col px-1"
-                      >
-                        <div
-                          class="pt-4 text-base leading-5 font-medium @min-[225px]:text-md"
-                        >
-                          <a
-                            class="block after:absolute after:top-0 after:left-0 after:z-60 after:size-full after:opacity-0 hover:text-accent"
-                            href="/reviews/on-writing-by-stephen-king/"
-                            rel="canonical"
-                            >On Writing</a
-                          >
-                        </div>
-                        <p
-                          class="pt-1 font-sans text-xs leading-4 font-light text-subtle"
-                        >
-                          <span class="hidden @min-[225px]:inline"
-                            >by<!-- --> </span
-                          ><span>Stephen King</span>
-                        </p>
-                        <picture
-                          ><source
-                            media="(prefers-color-scheme: dark)"
-                            srcset="/svg/4-half-stars-dark.svg" />
-                          <img
-                            alt="A-: 4.5 stars (out of 5)"
-                            class="mt-2 h-3 w-15 @min-[225px]:mt-2 @min-[225px]:h-[14px] @min-[225px]:w-[70px]"
-                            height="18"
-                            src="/svg/4-half-stars.svg"
-                            width="90"
-                        /></picture>
-                        <div
-                          class="mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle tablet:pt-3 @min-[225px]:tracking-wide"
-                        >
-                          Nonfiction<!-- -->
-                          |
-                          <!-- -->2000
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li
-                  class="group/list-item relative row-span-2 grid transform-gpu grid-rows-subgrid flex-col gap-y-0 bg-default transition-transform tablet:flex tablet:w-[calc((100%_-_var(--gaps-width))_/_var(--column-count))] tablet:bg-inherit tablet:[--gaps-width:var(--gap-x)_*_(var(--column-count)_-_1)]"
-                >
-                  <div
-                    class="@container transform-gpu self-end transition-transform group-has-[a:hover]/list-item:-translate-y-2 group-has-[a:hover]/list-item:drop-shadow-2xl tablet:self-auto"
-                  >
-                    <div
-                      class="flex justify-center px-3 pt-6 tablet:px-0 tablet:pt-0"
-                    >
-                      <div
-                        class="relative drop-shadow-md after:absolute after:inset-x-0 after:top-0 after:bottom-0 after:z-20 after:rounded-[2.5px] after:bg-default after:opacity-15 after:transition-opacity group-hover/list-item:after:opacity-0"
-                      >
-                        <div
-                          class="relative after:absolute after:top-0 after:left-0 after:z-20 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)] after:bg-size-[100%_100%] after:mix-blend-soft-light undefined"
-                        >
-                          <div
-                            class="relative z-10 before:absolute before:top-0 before:left-0 before:z-10 before:block before:size-full before:rounded-[2.5px] before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%] after:absolute after:top-0 after:left-0 after:z-10 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%] after:mix-blend-multiply"
-                          >
-                            <img
-                              height="372"
-                              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fpeter-cushing-by-david-miller.png%3ForigWidth%3D500%26origHeight%3D635%26origFormat%3Dpng&amp;w=248&amp;h=315&amp;q=80&amp;f=avif"
-                              srcset="
-                                /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fpeter-cushing-by-david-miller.png%3ForigWidth%3D500%26origHeight%3D635%26origFormat%3Dpng&amp;w=62&amp;h=79&amp;q=80&amp;f=avif    62w,
-                                /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fpeter-cushing-by-david-miller.png%3ForigWidth%3D500%26origHeight%3D635%26origFormat%3Dpng&amp;w=124&amp;h=158&amp;q=80&amp;f=avif 124w,
-                                /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fpeter-cushing-by-david-miller.png%3ForigWidth%3D500%26origHeight%3D635%26origFormat%3Dpng&amp;w=248&amp;h=315&amp;q=80&amp;f=avif 248w,
-                                /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fpeter-cushing-by-david-miller.png%3ForigWidth%3D500%26origHeight%3D635%26origFormat%3Dpng&amp;w=496&amp;h=630&amp;q=80&amp;f=avif 496w
-                              "
-                              width="248"
-                              sizes="(min-width: 1800px) 218px, (min-width: 1280px) calc(11.8vw + 8px), (min-width: 820px) 216px, (min-width: 600px) calc(23.5vw + 28px), calc(41.43vw + 8px)"
-                              alt=""
-                              class="rounded-[2.5px] bg-default shadow-sm @min-[160px]:shadow-lg"
-                              decoding="async"
-                              loading="lazy"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="@container h-full self-start tablet:self-auto">
-                    <div
-                      class="flex h-full flex-col items-center px-3 pb-8 tablet:px-0 @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6 @min-[200px]:tablet:px-0"
-                    >
-                      <div
-                        class="flex h-full w-full max-w-[248px] flex-col px-1"
-                      >
-                        <div
-                          class="pt-4 text-base leading-5 font-medium @min-[225px]:text-md"
-                        >
-                          <a
-                            class="block after:absolute after:top-0 after:left-0 after:z-60 after:size-full after:opacity-0 hover:text-accent"
-                            href="/reviews/peter-cushing-by-david-miller/"
-                            rel="canonical"
-                            >Peter Cushing</a
-                          >
-                        </div>
-                        <p
-                          class="pt-1 font-sans text-xs leading-4 font-light text-subtle"
-                        >
-                          <span class="hidden @min-[225px]:inline"
-                            >by<!-- --> </span
-                          ><span>David Miller</span>
-                        </p>
-                        <picture
-                          ><source
-                            media="(prefers-color-scheme: dark)"
-                            srcset="/svg/3-stars-dark.svg" />
-                          <img
-                            alt="C: 3 stars (out of 5)"
-                            class="mt-2 h-3 w-15 @min-[225px]:mt-2 @min-[225px]:h-[14px] @min-[225px]:w-[70px]"
-                            height="18"
-                            src="/svg/3-stars.svg"
-                            width="90"
-                        /></picture>
-                        <div
-                          class="mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle tablet:pt-3 @min-[225px]:tracking-wide"
-                        >
-                          Nonfiction<!-- -->
-                          |
-                          <!-- -->2013
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li
-                  class="group/list-item relative row-span-2 grid transform-gpu grid-rows-subgrid flex-col gap-y-0 bg-default transition-transform tablet:flex tablet:w-[calc((100%_-_var(--gaps-width))_/_var(--column-count))] tablet:bg-inherit tablet:[--gaps-width:var(--gap-x)_*_(var(--column-count)_-_1)]"
-                >
-                  <div
-                    class="@container transform-gpu self-end transition-transform group-has-[a:hover]/list-item:-translate-y-2 group-has-[a:hover]/list-item:drop-shadow-2xl tablet:self-auto"
-                  >
-                    <div
-                      class="flex justify-center px-3 pt-6 tablet:px-0 tablet:pt-0"
-                    >
-                      <div
-                        class="relative drop-shadow-md after:absolute after:inset-x-0 after:top-0 after:bottom-0 after:z-20 after:rounded-[2.5px] after:bg-default after:opacity-15 after:transition-opacity group-hover/list-item:after:opacity-0"
-                      >
-                        <div
-                          class="relative after:absolute after:top-0 after:left-0 after:z-20 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)] after:bg-size-[100%_100%] after:mix-blend-soft-light undefined"
-                        >
-                          <div
-                            class="relative z-10 before:absolute before:top-0 before:left-0 before:z-10 before:block before:size-full before:rounded-[2.5px] before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%] after:absolute after:top-0 after:left-0 after:z-10 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%] after:mix-blend-multiply"
-                          >
-                            <img
-                              height="372"
-                              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-postman-always-rings-twice-by-james-m-cain.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif"
-                              srcset="
-                                /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-postman-always-rings-twice-by-james-m-cain.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=62&amp;h=93&amp;q=80&amp;f=avif    62w,
-                                /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-postman-always-rings-twice-by-james-m-cain.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=124&amp;h=186&amp;q=80&amp;f=avif 124w,
-                                /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-postman-always-rings-twice-by-james-m-cain.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=248&amp;h=372&amp;q=80&amp;f=avif 248w,
-                                /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fthe-postman-always-rings-twice-by-james-m-cain.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&amp;w=496&amp;h=744&amp;q=80&amp;f=avif 496w
-                              "
-                              width="248"
-                              sizes="(min-width: 1800px) 218px, (min-width: 1280px) calc(11.8vw + 8px), (min-width: 820px) 216px, (min-width: 600px) calc(23.5vw + 28px), calc(41.43vw + 8px)"
-                              alt=""
-                              class="rounded-[2.5px] bg-default shadow-sm @min-[160px]:shadow-lg"
-                              decoding="async"
-                              loading="lazy"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="@container h-full self-start tablet:self-auto">
-                    <div
-                      class="flex h-full flex-col items-center px-3 pb-8 tablet:px-0 @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6 @min-[200px]:tablet:px-0"
-                    >
-                      <div
-                        class="flex h-full w-full max-w-[248px] flex-col px-1"
-                      >
-                        <div
-                          class="pt-4 text-base leading-5 font-medium @min-[225px]:text-md"
-                        >
-                          <a
-                            class="block after:absolute after:top-0 after:left-0 after:z-60 after:size-full after:opacity-0 hover:text-accent"
-                            href="/reviews/the-postman-always-rings-twice-by-james-m-cain/"
-                            rel="canonical"
-                            >The Postman Always Rings Twice</a
-                          >
-                        </div>
-                        <p
-                          class="pt-1 font-sans text-xs leading-4 font-light text-subtle"
-                        >
-                          <span class="hidden @min-[225px]:inline"
-                            >by<!-- --> </span
-                          ><span>James M. Cain</span>
-                        </p>
-                        <picture
-                          ><source
-                            media="(prefers-color-scheme: dark)"
-                            srcset="/svg/4-stars-dark.svg" />
-                          <img
-                            alt="B+: 4 stars (out of 5)"
-                            class="mt-2 h-3 w-15 @min-[225px]:mt-2 @min-[225px]:h-[14px] @min-[225px]:w-[70px]"
-                            height="18"
-                            src="/svg/4-stars.svg"
-                            width="90"
-                        /></picture>
-                        <div
-                          class="mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle tablet:pt-3 @min-[225px]:tracking-wide"
-                        >
-                          Novel<!-- -->
-                          |
-                          <!-- -->1934
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li
-                  class="group/list-item relative row-span-2 grid transform-gpu grid-rows-subgrid flex-col gap-y-0 bg-default transition-transform tablet:flex tablet:w-[calc((100%_-_var(--gaps-width))_/_var(--column-count))] tablet:bg-inherit tablet:[--gaps-width:var(--gap-x)_*_(var(--column-count)_-_1)]"
-                >
-                  <div
-                    class="@container transform-gpu self-end transition-transform group-has-[a:hover]/list-item:-translate-y-2 group-has-[a:hover]/list-item:drop-shadow-2xl tablet:self-auto"
-                  >
-                    <div
-                      class="flex justify-center px-3 pt-6 tablet:px-0 tablet:pt-0"
-                    >
-                      <div
-                        class="relative drop-shadow-md after:absolute after:inset-x-0 after:top-0 after:bottom-0 after:z-20 after:rounded-[2.5px] after:bg-default after:opacity-15 after:transition-opacity group-hover/list-item:after:opacity-0"
-                      >
-                        <div
-                          class="relative after:absolute after:top-0 after:left-0 after:z-20 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spot.png)] after:bg-size-[100%_100%] after:mix-blend-soft-light undefined"
-                        >
-                          <div
-                            class="relative z-10 before:absolute before:top-0 before:left-0 before:z-10 before:block before:size-full before:rounded-[2.5px] before:bg-[url(/assets/spine-light.png)] before:bg-size-[100%_100%] after:absolute after:top-0 after:left-0 after:z-10 after:block after:size-full after:rounded-[2.5px] after:bg-[url(/assets/spine-dark.png)] after:bg-size-[100%_100%] after:mix-blend-multiply"
-                          >
-                            <img
-                              height="372"
-                              src="/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frage-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D853%26origFormat%3Dpng&amp;w=248&amp;h=423&amp;q=80&amp;f=avif"
-                              srcset="
-                                /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frage-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D853%26origFormat%3Dpng&amp;w=62&amp;h=106&amp;q=80&amp;f=avif   62w,
-                                /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frage-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D853%26origFormat%3Dpng&amp;w=124&amp;h=212&amp;q=80&amp;f=avif 124w,
-                                /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frage-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D853%26origFormat%3Dpng&amp;w=248&amp;h=423&amp;q=80&amp;f=avif 248w,
-                                /_image/?href=%2Fcontent%2Fassets%2Fcovers%2Frage-by-stephen-king.png%3ForigWidth%3D500%26origHeight%3D853%26origFormat%3Dpng&amp;w=496&amp;h=846&amp;q=80&amp;f=avif 496w
-                              "
-                              width="248"
-                              sizes="(min-width: 1800px) 218px, (min-width: 1280px) calc(11.8vw + 8px), (min-width: 820px) 216px, (min-width: 600px) calc(23.5vw + 28px), calc(41.43vw + 8px)"
-                              alt=""
-                              class="rounded-[2.5px] bg-default shadow-sm @min-[160px]:shadow-lg"
-                              decoding="async"
-                              loading="lazy"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="@container h-full self-start tablet:self-auto">
-                    <div
-                      class="flex h-full flex-col items-center px-3 pb-8 tablet:px-0 @min-[200px]:px-[clamp(4px,12cqw,32px)] @min-[200px]:pb-6 @min-[200px]:tablet:px-0"
-                    >
-                      <div
-                        class="flex h-full w-full max-w-[248px] flex-col px-1"
-                      >
-                        <div
-                          class="pt-4 text-base leading-5 font-medium @min-[225px]:text-md"
-                        >
-                          <a
-                            class="block after:absolute after:top-0 after:left-0 after:z-60 after:size-full after:opacity-0 hover:text-accent"
-                            href="/reviews/rage-by-stephen-king/"
-                            rel="canonical"
-                            >Rage</a
-                          >
-                        </div>
-                        <p
-                          class="pt-1 font-sans text-xs leading-4 font-light text-subtle"
-                        >
-                          <span class="hidden @min-[225px]:inline"
-                            >by<!-- --> </span
-                          ><span
-                            >Stephen King<span class="text-subtle">
-                              (<!-- -->as Richard Bachman<!-- -->)</span
-                            ></span
-                          >
-                        </p>
-                        <picture
-                          ><source
-                            media="(prefers-color-scheme: dark)"
-                            srcset="/svg/3-stars-dark.svg" />
-                          <img
-                            alt="C: 3 stars (out of 5)"
-                            class="mt-2 h-3 w-15 @min-[225px]:mt-2 @min-[225px]:h-[14px] @min-[225px]:w-[70px]"
-                            height="18"
-                            src="/svg/3-stars.svg"
-                            width="90"
-                        /></picture>
-                        <div
-                          class="mt-auto pt-6 font-sans text-xxs leading-4 font-light text-subtle tablet:pt-3 @min-[225px]:tracking-wide"
-                        >
-                          Novel<!-- -->
-                          |
-                          <!-- -->1976
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              </ul>
+                  </li>
+                </ol>
+              </div>
             </nav>
           </div>
           <script type="application/ld+json">
@@ -1301,7 +916,7 @@
               "author": { "@type": "Person", "name": "Frank Showalter" },
               "itemReviewed": {
                 "@type": "Book",
-                "image": "/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fout-are-the-lights-and-other-tales-by-richard-laymon.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=500&h=750&q=80&f=jpeg",
+                "image": "/_image/?href=%2Fcontent%2Fassets%2Fcovers%2Fdefault.png%3ForigWidth%3D500%26origHeight%3D750%26origFormat%3Dpng&w=500&h=750&q=80&f=jpeg",
                 "name": "Out Are the Lights"
               },
               "reviewRating": { "@type": "Rating", "ratingValue": 3 }
@@ -1314,7 +929,7 @@
               class="flex w-full flex-col tablet:flex-row-reverse tablet:justify-between"
             >
               <a
-                class="mx-auto mb-8 w-full max-w-button transform-gpu bg-footer py-5 text-center font-sans text-xs tracking-wide text-inverse uppercase transition-all hover:scale-105 hover:bg-subtle hover:text-default tablet:mx-0"
+                class="mx-auto mb-8 w-full max-w-button transform-gpu rounded-md bg-subtle py-5 text-center font-sans text-sm font-normal tracking-wide text-default uppercase transition-all hover:scale-105 hover:bg-default hover:text-default hover:drop-shadow-lg tablet:mx-0"
                 href="#top"
                 >To the top</a
               >
@@ -1333,7 +948,7 @@
             </div>
             <div class="justify-between tablet:flex">
               <div class="flex max-w-[640px] flex-col pb-12 tablet:pr-32">
-                <div class="pt-10 font-sans text-sm font-light text-subtle">
+                <div class="pt-10 font-sans font-normal text-subtle">
                   <p
                     class="mb-6 text-pretty first-letter:float-left first-letter:mt-[6px] first-letter:pr-1 first-letter:font-sans first-letter:text-[40px] first-letter:leading-[.8] first-letter:font-bold first-letter:text-default desktop:first-letter:text-[64px]"
                   >
@@ -1355,17 +970,17 @@
                   <p class="mb-6 text-pretty">
                     New visitors might want to start by reading about<!-- -->
                     <a
-                      class="underline transition-colors hover:text-default"
+                      class="underline transition-colors hover:text-accent"
                       href="/how-i-grade/"
                       >how I grade</a
                     >. After that, feel free to browse<!-- -->
                     <a
-                      class="underline transition-colors hover:text-default"
+                      class="underline transition-colors hover:text-accent"
                       href="/reviews/"
                       >my reviews</a
                     >, which are also indexed
                     <a
-                      class="underline transition-colors hover:text-default"
+                      class="underline transition-colors hover:text-accent"
                       href="/authors/"
                       >by author</a
                     >.
@@ -1373,14 +988,14 @@
                   <p class="mb-6 text-pretty">
                     I also keep a<!-- -->
                     <a
-                      class="underline transition-colors hover:text-default"
+                      class="underline transition-colors hover:text-accent"
                       href="/readings/"
                       >reading log</a
                     >
                     that tracks everything I read, whether it gets a full review
                     or not, complete with<!-- -->
                     <a
-                      class="underline transition-colors hover:text-default"
+                      class="underline transition-colors hover:text-accent"
                       href="/readings/stats/"
                       >stats</a
                     >. In an age of endless content, sometimes the act of
@@ -1399,54 +1014,64 @@
               <div
                 class="flex w-full max-w-button grow flex-col gap-20 pt-10 pb-20 tablet:basis-button tablet:pr-10"
               >
-                <ul class="flex w-full flex-col gap-y-10 desktop:w-auto">
-                  <li class="block w-1/2 text-2xl whitespace-nowrap">
+                <ol class="flex w-full flex-col gap-y-6 desktop:w-auto">
+                  <li
+                    class="block w-1/2 text-2xl whitespace-nowrap laptop:w-full"
+                  >
                     <a
-                      class="block origin-left transform-gpu transition-all hover:scale-105"
+                      class="relative inline-block origin-left transform-gpu transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-accent after:transition-transform hover:text-accent hover:after:scale-x-100"
                       href="/"
                       >Home</a
                     >
                   </li>
-                  <li class="block w-1/2 text-2xl whitespace-nowrap">
+                  <li
+                    class="block w-1/2 text-2xl whitespace-nowrap laptop:w-full"
+                  >
                     <a
-                      class="block origin-left transform-gpu transition-all hover:scale-105"
+                      class="relative inline-block origin-left transform-gpu transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-accent after:transition-transform hover:text-accent hover:after:scale-x-100"
                       href="/how-i-grade/"
                       >How I Grade</a
                     >
                   </li>
-                  <li class="block w-1/2 text-2xl whitespace-nowrap">
+                  <li
+                    class="block w-1/2 text-2xl whitespace-nowrap laptop:w-full"
+                  >
                     <a
-                      class="block origin-left transform-gpu transition-all hover:scale-105"
+                      class="relative inline-block origin-left transform-gpu transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-accent after:transition-transform hover:text-accent hover:after:scale-x-100"
                       href="/reviews/"
                       >Reviews</a
                     >
                   </li>
-                  <li class="block w-1/2 text-2xl whitespace-nowrap">
+                  <li
+                    class="block w-1/2 text-2xl whitespace-nowrap laptop:w-full"
+                  >
                     <a
-                      class="block origin-left transform-gpu transition-all hover:scale-105"
+                      class="relative inline-block origin-left transform-gpu transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-accent after:transition-transform hover:text-accent hover:after:scale-x-100"
                       href="/authors/"
                       >Authors</a
                     >
                   </li>
-                  <li class="block w-1/2 text-2xl whitespace-nowrap">
+                  <li
+                    class="block w-1/2 text-2xl whitespace-nowrap laptop:w-full"
+                  >
                     <a
-                      class="block origin-left transform-gpu transition-all hover:scale-105"
+                      class="relative inline-block origin-left transform-gpu transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-accent after:transition-transform hover:text-accent hover:after:scale-x-100"
                       href="/readings/"
                       >Reading Log</a
                     >
                     <ol class="mt-4">
                       <li
-                        class="mb-4 ml-1 font-sans text-xs tracking-wide text-subtle uppercase last:mb-0"
+                        class="mb-3 ml-1 font-sans text-xs font-medium tracking-wider text-muted uppercase last:-mb-1"
                       >
                         <a
-                          class="block origin-left transform-gpu transition-all hover:scale-105 hover:text-default"
+                          class="relative inline-block origin-left transform-gpu pb-1 transition-all after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:bg-accent after:transition-transform hover:text-accent hover:after:scale-x-100"
                           href="/readings/stats/"
                           >Stats</a
                         >
                       </li>
                     </ol>
                   </li>
-                </ul>
+                </ol>
               </div>
             </div>
           </div>
@@ -1456,10 +1081,22 @@
             All reviews by Frank Showalter. All images used in accordance with
             the<!-- -->
             <a
-              class="text-inherit underline"
+              class="relative inline-block pr-4 text-inherit underline underline-offset-3 hover:bg-default hover:text-accent"
               href="http://www.copyright.gov/title17/92chap1.html#107"
               rel="nofollow"
-              >Fair Use Law</a
+              >Fair Use Law<svg
+                class="absolute top-0.5 right-0 size-3"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path></svg></a
             >.
           </p>
         </footer>
@@ -1467,11 +1104,11 @@
     </div>
     <dialog
       aria-label="Search"
-      class="fixed inset-x-4 m-auto h-screen w-full rounded-lg border border-default bg-default shadow-lg backdrop:bg-[#000] backdrop:opacity-40 open:flex open:flex-col tablet:mx-auto tablet:mt-16 tablet:h-min tablet:max-h-[min(100vh-128px,900px)] tablet:max-w-[min(100vw-64px,36rem)] tablet:rounded-xl desktop:min-h-0"
+      class="fixed inset-x-4 m-auto h-screen w-full rounded-lg border border-default bg-default shadow-lg backdrop:bg-[#000] backdrop:opacity-40 open:flex open:flex-col tablet:mx-auto tablet:mt-16 tablet:h-min tablet:max-h-[min(100vh-128px,900px)] tablet:max-w-[min(100vw-64px,36rem)] tablet:rounded-xl"
     >
       <div class="contents" data-dialog-frame>
         <button
-          class="absolute right-4 z-10 mt-5 h-6 cursor-pointer border-none bg-subtle px-2 font-mono text-xs font-light text-muted hover:bg-inverse hover:text-inverse focus:outline-accent tablet:right-6 laptop:right-8"
+          class="absolute right-4 z-sticky mt-5 h-6 cursor-pointer border-none bg-subtle px-2 font-mono text-xs font-light text-muted hover:bg-inverse hover:text-inverse focus:outline-accent tablet:right-6 laptop:right-8"
           data-close-modal
         >
           ESC
@@ -1581,7 +1218,7 @@
     </dialog>
     <script
       type="module"
-      src="/src/layouts/Layout.astro?astro&type=script&index=0&lang.ts"
+      src="/src/layouts/Layout.astro?astro&type=script&index=1&lang.ts"
     ></script>
   </body>
 </html>

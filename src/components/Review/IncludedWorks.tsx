@@ -1,9 +1,11 @@
 import type { ReviewWithContent } from "~/api/reviews";
 
-import { Grade } from "~/components/Grade";
+import { ListItemAuthors } from "~/components/ListItemAuthors";
+import { ListItemDetails } from "~/components/ListItemDetails";
+import { ListItemGrade } from "~/components/ListItemGrade";
 import { ListItemKindAndYear } from "~/components/ListItemKindAndYear";
+import { ListItemTitle } from "~/components/ListItemTitle";
 import { SubHeading } from "~/components/SubHeading";
-import { toSentenceArray } from "~/utils";
 
 type Props = {
   values: ReviewWithContent["includedWorks"];
@@ -35,45 +37,19 @@ export function IncludedWorks({ values }: Props) {
               `}
               key={value.slug}
             >
-              <Title value={value} />{" "}
-              <div className="font-sans text-xs leading-6 text-muted">
-                <span className="font-light text-subtle">by</span>{" "}
-                {toSentenceArray(value.authors.map((author) => author.name))}
-              </div>
-              <div className="py-1">
-                <ListItemKindAndYear
-                  kind={value.kind}
-                  year={value.yearPublished}
+              <ListItemDetails>
+                <ListItemTitle
+                  slug={value.reviewed ? value.slug : undefined}
+                  title={value.title}
                 />
-              </div>
-              <Grade className="mt-1" height={16} value={value.grade} />
+                <ListItemAuthors values={value.authors} />
+                <ListItemKindAndYear kind={value.kind} year={value.workYear} />
+                {value.grade && <ListItemGrade grade={value.grade} />}
+              </ListItemDetails>
             </li>
           ))}
         </ul>
       </div>
     </>
-  );
-}
-
-function Title({ value }: { value: ReviewWithContent["includedWorks"][0] }) {
-  if (value.grade) {
-    return (
-      <a
-        className={`
-          font-sans text-sm font-medium text-accent
-          after:absolute after:top-0 after:left-0 after:size-full
-          after:opacity-0
-        `}
-        href={`/reviews/${value.slug}/`}
-      >
-        {value.title}
-      </a>
-    );
-  }
-
-  return (
-    <span className="font-sans text-sm font-normal text-muted">
-      {value.title}
-    </span>
   );
 }

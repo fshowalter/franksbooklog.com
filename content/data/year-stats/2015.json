@@ -44,27 +44,34 @@
     {
       "name": "James Kaplan",
       "count": 2,
-      "slug": null,
+      "slug": "james-kaplan",
+      "reviewed": false,
       "readings": [
         {
-          "readingSequence": 1,
+          "readingSequence": 38,
           "date": "2015-01-25",
           "slug": "frank-by-james-kaplan",
           "edition": "Paperback",
           "kind": "Nonfiction",
           "title": "Frank",
-          "yearPublished": "2010",
+          "workYear": "2010",
+          "workYearSequence": 423,
+          "authorSequence": 162,
+          "titleSequence": 167,
           "includedInSlugs": [],
           "reviewed": false
         },
         {
-          "readingSequence": 1,
+          "readingSequence": 43,
           "date": "2015-12-30",
           "slug": "sinatra-by-james-kaplan",
           "edition": "Hardcover",
           "kind": "Nonfiction",
           "title": "Sinatra",
-          "yearPublished": "2015",
+          "workYear": "2015",
+          "workYearSequence": 442,
+          "authorSequence": 164,
+          "titleSequence": 409,
           "includedInSlugs": [],
           "reviewed": false
         }

@@ -35,21 +35,7 @@ export function Article({
         />
         <section className="flex flex-col items-center pt-16 pb-32">
           <div className="px-container">
-            <LongFormText
-              className={`
-                max-w-prose
-                first-letter:leading-[.8] first-letter:text-default
-                tablet:first-letter:pr-3
-                desktop:first-letter:text-[64px]
-                [&>p:first-child]:first-letter:float-left
-                [&>p:first-child]:first-letter:mt-[6px]
-                [&>p:first-child]:first-letter:pr-2
-                [&>p:first-child]:first-letter:font-sans
-                [&>p:first-child]:first-letter:text-[56px]
-                [&>p:first-child]:first-letter:font-bold
-              `}
-              text={content}
-            />
+            <LongFormText className={`max-w-prose`} text={content} />
           </div>
         </section>
       </article>
@@ -63,9 +49,18 @@ export function Article({
       >
         <MoreReviews values={recentReviews}>
           <SubHeading as="h2">
-            Recent{" "}
-            <a className="text-accent" href="/reviews/">
-              Reviews
+            <a
+              className={`
+                relative -mb-1 inline-block transform-gpu pb-1
+                transition-transform
+                after:absolute after:bottom-0 after:left-0 after:h-px
+                after:w-full after:origin-bottom-right after:scale-x-0
+                after:bg-(--fg-accent) after:transition-transform
+                hover:after:scale-x-100
+              `}
+              href={`/reviews/`}
+            >
+              Recent <span className={`text-accent`}>Reviews</span>
             </a>
           </SubHeading>
         </MoreReviews>

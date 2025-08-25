@@ -12,11 +12,13 @@ export type MarkdownReview = {
   grade: string;
   rawContent: string;
   slug: string;
+  synopsis: string;
 };
 
 const DataSchema = z.object({
   date: z.date(),
   grade: z.string(),
+  synopsis: z.optional(z.string()),
   work_slug: z.string(),
 });
 
@@ -65,6 +67,7 @@ async function parseAllReviewsMarkdown(): Promise<MarkdownReview[]> {
             grade: greyMatter.grade,
             rawContent: content,
             slug: greyMatter.work_slug,
+            synopsis: greyMatter.synopsis || "",
           };
         }),
     );

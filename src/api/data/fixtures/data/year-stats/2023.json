@@ -64,10 +64,13 @@
           "edition": "Audible",
           "kind": "Nonfiction",
           "title": "Record Play Pause",
-          "yearPublished": "2019",
           "includedInSlugs": [],
           "reviewed": true,
-          "readingSequence": 1
+          "readingSequence": 179,
+          "workYear": "2000",
+          "workYearSequence": 469,
+          "authorSequence": 416,
+          "titleSequence": 370
         },
         {
           "date": "2023-12-09",
@@ -75,12 +78,16 @@
           "edition": "Audible",
           "kind": "Nonfiction",
           "title": "Fast Forward",
-          "yearPublished": "2020",
           "includedInSlugs": [],
           "reviewed": true,
-          "readingSequence": 1
+          "readingSequence": 180,
+          "workYear": "2000",
+          "workYearSequence": 470,
+          "authorSequence": 417,
+          "titleSequence": 158
         }
-      ]
+      ],
+      "reviewed": true
     },
     {
       "name": "Philip Fracassi",
@@ -90,26 +97,33 @@
         {
           "date": "2023-10-09",
           "slug": "sacculina-by-philip-fracassi",
-          "edition": "Kindle",
+          "edition": "Ebook",
           "kind": "Novella",
           "title": "Sacculina",
-          "yearPublished": "2017",
           "includedInSlugs": [],
           "reviewed": true,
-          "readingSequence": 1
+          "readingSequence": 175,
+          "workYear": "2000",
+          "workYearSequence": 457,
+          "authorSequence": 82,
+          "titleSequence": 387
         },
         {
           "date": "2023-10-29",
           "slug": "dont-let-them-get-you-down-by-philip-fracassi",
-          "edition": "Kindle",
+          "edition": "Ebook",
           "kind": "Novel",
           "title": "Don't Let Them Get You Down",
-          "yearPublished": "2022",
           "includedInSlugs": [],
           "reviewed": true,
-          "readingSequence": 1
+          "readingSequence": 177,
+          "workYear": "2000",
+          "workYearSequence": 474,
+          "authorSequence": 87,
+          "titleSequence": 139
         }
-      ]
+      ],
+      "reviewed": true
     }
   ]
 }

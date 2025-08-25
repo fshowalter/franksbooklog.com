@@ -4,7 +4,6 @@
     "title": "2001: A Space Odyssey",
     "subtitle": null,
     "sortTitle": "2001: A Space Odyssey",
-    "yearPublished": "1968",
     "grade": "A+",
     "gradeValue": 13,
     "kind": "Novel",
@@ -26,19 +25,24 @@
       }
     ],
     "includedInSlugs": [],
-    "yearReviewed": 2024,
     "reviewDate": "2024-01-15",
-    "reviewSequence": "2024-01-15-1",
+    "reviewSequence": 1,
     "moreByAuthors": [],
     "moreReviews": [],
-    "includedWorks": []
+    "includedWorks": [],
+    "workYearSequence": 1,
+    "authorSequence": 1,
+    "titleSequence": 1,
+    "gradeSequence": 1,
+    "reviewYear": "2024",
+    "reviewed": true,
+    "workYear": "1968"
   },
   {
     "slug": "about-face-by-david-h-hackworth-julie-sherman",
     "title": "About Face",
     "subtitle": "The Odyssey of an American Warrior",
     "sortTitle": "About Face: The Odyssey of an American Warrior",
-    "yearPublished": "1989",
     "grade": "A-",
     "gradeValue": 11,
     "kind": "Nonfiction",
@@ -66,13 +70,11 @@
       }
     ],
     "includedInSlugs": [],
-    "yearReviewed": 2022,
     "moreByAuthors": [],
     "moreReviews": [
       {
         "title": "The Woods Are Dark",
         "kind": "Novel",
-        "yearPublished": "1981",
         "slug": "the-woods-are-dark-by-richard-laymon",
         "grade": "C+",
         "includedInSlugs": [],
@@ -84,15 +86,15 @@
         ],
         "gradeValue": 7,
         "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
+        "reviewSequence": 3,
         "sortTitle": "Woods Are Dark",
         "subtitle": null,
-        "yearReviewed": 2022
+        "workYear": "1981",
+        "reviewYear": "2022"
       },
       {
         "title": "'Salem's Lot",
         "kind": "Novel",
-        "yearPublished": "1975",
         "slug": "salems-lot-by-stephen-king",
         "grade": "B",
         "includedInSlugs": [],
@@ -104,35 +106,15 @@
         ],
         "gradeValue": 9,
         "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
+        "reviewSequence": 4,
         "sortTitle": "'Salem's Lot",
         "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "The 48 Laws of Power",
-        "kind": "Nonfiction",
-        "yearPublished": "1998",
-        "slug": "the-48-laws-of-power-by-robert-greene",
-        "grade": "D+",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Robert Greene",
-            "notes": null
-          }
-        ],
-        "gradeValue": 4,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "48 Laws of Power",
-        "subtitle": null,
-        "yearReviewed": 2022
+        "workYear": "1975",
+        "reviewYear": "2022"
       },
       {
         "title": "Altar",
         "kind": "Short Story",
-        "yearPublished": "2016",
         "slug": "altar-by-philip-fracassi",
         "grade": "A-",
         "includedInSlugs": [
@@ -146,37 +128,15 @@
         ],
         "gradeValue": 11,
         "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
+        "reviewSequence": 6,
         "sortTitle": "Altar",
         "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "The Baby Farmer",
-        "kind": "Short Story",
-        "yearPublished": "2017",
-        "slug": "the-baby-farmer-by-philip-fracassi",
-        "grade": "C+",
-        "includedInSlugs": [
-          "behold-the-void-by-philip-fracassi"
-        ],
-        "authors": [
-          {
-            "name": "Philip Fracassi",
-            "notes": null
-          }
-        ],
-        "gradeValue": 7,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Baby Farmer",
-        "subtitle": null,
-        "yearReviewed": 2022
+        "workYear": "2000",
+        "reviewYear": "2022"
       },
       {
         "title": "Behold the Void",
         "kind": "Collection",
-        "yearPublished": "2017",
         "slug": "behold-the-void-by-philip-fracassi",
         "grade": "B+",
         "includedInSlugs": [],
@@ -188,22 +148,29 @@
         ],
         "gradeValue": 10,
         "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
+        "reviewSequence": 8,
         "sortTitle": "Behold the Void",
         "subtitle": null,
-        "yearReviewed": 2022
+        "workYear": "2000",
+        "reviewYear": "2022"
       }
     ],
     "includedWorks": [],
     "reviewDate": "2022-09-05",
-    "reviewSequence": "2022-09-05-1"
+    "reviewSequence": 2,
+    "workYearSequence": 2,
+    "authorSequence": 2,
+    "titleSequence": 2,
+    "gradeSequence": 2,
+    "reviewYear": "2022",
+    "reviewed": true,
+    "workYear": "1989"
   },
   {
     "slug": "altar-by-philip-fracassi",
     "title": "Altar",
     "subtitle": null,
     "sortTitle": "Altar",
-    "yearPublished": "2016",
     "grade": "A-",
     "gradeValue": 11,
     "kind": "Short Story",
@@ -227,7 +194,6 @@
     "includedInSlugs": [
       "behold-the-void-by-philip-fracassi"
     ],
-    "yearReviewed": 2022,
     "moreByAuthors": [
       {
         "name": "Philip Fracassi",
@@ -235,93 +201,8 @@
         "sortName": "Fracassi, Philip",
         "reviewedWorks": [
           {
-            "title": "Don't Let Them Get You Down",
-            "kind": "Novel",
-            "yearPublished": "2022",
-            "slug": "dont-let-them-get-you-down-by-philip-fracassi",
-            "grade": "C-",
-            "includedInSlugs": [],
-            "authors": [
-              {
-                "name": "Philip Fracassi",
-                "notes": null
-              }
-            ],
-            "gradeValue": 5,
-            "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
-            "sortTitle": "Don't Let Them Get You Down",
-            "subtitle": null,
-            "yearReviewed": 2022
-          },
-          {
-            "title": "Gothic",
-            "kind": "Novel",
-            "yearPublished": "2023",
-            "slug": "gothic-by-philip-fracassi",
-            "grade": "B+",
-            "includedInSlugs": [],
-            "authors": [
-              {
-                "name": "Philip Fracassi",
-                "notes": null
-              }
-            ],
-            "gradeValue": 10,
-            "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
-            "sortTitle": "Gothic",
-            "subtitle": null,
-            "yearReviewed": 2022
-          },
-          {
-            "title": "Mother",
-            "kind": "Short Story",
-            "yearPublished": "2015",
-            "slug": "mother-by-philip-fracassi",
-            "grade": "B-",
-            "includedInSlugs": [
-              "behold-the-void-by-philip-fracassi"
-            ],
-            "authors": [
-              {
-                "name": "Philip Fracassi",
-                "notes": null
-              }
-            ],
-            "gradeValue": 8,
-            "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
-            "sortTitle": "Mother",
-            "subtitle": null,
-            "yearReviewed": 2022
-          },
-          {
-            "title": "The Baby Farmer",
-            "kind": "Short Story",
-            "yearPublished": "2017",
-            "slug": "the-baby-farmer-by-philip-fracassi",
-            "grade": "C+",
-            "includedInSlugs": [
-              "behold-the-void-by-philip-fracassi"
-            ],
-            "authors": [
-              {
-                "name": "Philip Fracassi",
-                "notes": null
-              }
-            ],
-            "gradeValue": 7,
-            "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
-            "sortTitle": "Baby Farmer",
-            "subtitle": null,
-            "yearReviewed": 2022
-          },
-          {
             "title": "Behold the Void",
             "kind": "Collection",
-            "yearPublished": "2017",
             "slug": "behold-the-void-by-philip-fracassi",
             "grade": "B+",
             "includedInSlugs": [],
@@ -333,32 +214,15 @@
             ],
             "gradeValue": 10,
             "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
+            "reviewSequence": 20,
             "sortTitle": "Behold the Void",
             "subtitle": null,
-            "yearReviewed": 2022
-          },
-          {
-            "title": "Coffin",
-            "kind": "Short Story",
-            "yearPublished": "2017",
-            "slug": "coffin-by-philip-fracassi",
-            "grade": "C+",
-            "includedInSlugs": [
-              "behold-the-void-by-philip-fracassi"
-            ],
-            "authors": [
-              {
-                "name": "Philip Fracassi",
-                "notes": null
-              }
-            ],
-            "gradeValue": 7,
-            "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
-            "sortTitle": "Coffin",
-            "subtitle": null,
-            "yearReviewed": 2022
+            "workYear": "2017",
+            "workYearSequence": 8,
+            "authorSequence": 8,
+            "titleSequence": 8,
+            "gradeSequence": 8,
+            "reviewYear": "2022"
           }
         ]
       }
@@ -367,7 +231,6 @@
       {
         "title": "'Salem's Lot",
         "kind": "Novel",
-        "yearPublished": "1975",
         "slug": "salems-lot-by-stephen-king",
         "grade": "B",
         "includedInSlugs": [],
@@ -379,35 +242,15 @@
         ],
         "gradeValue": 9,
         "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
+        "reviewSequence": 10,
         "sortTitle": "'Salem's Lot",
         "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "The 48 Laws of Power",
-        "kind": "Nonfiction",
-        "yearPublished": "1998",
-        "slug": "the-48-laws-of-power-by-robert-greene",
-        "grade": "D+",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Robert Greene",
-            "notes": null
-          }
-        ],
-        "gradeValue": 4,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "48 Laws of Power",
-        "subtitle": null,
-        "yearReviewed": 2022
+        "workYear": "1975",
+        "reviewYear": "2022"
       },
       {
         "title": "About Face",
         "kind": "Nonfiction",
-        "yearPublished": "1989",
         "slug": "about-face-by-david-h-hackworth-julie-sherman",
         "grade": "A-",
         "includedInSlugs": [],
@@ -423,82 +266,29 @@
         ],
         "gradeValue": 11,
         "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
+        "reviewSequence": 12,
         "sortTitle": "About Face",
         "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "Beware!",
-        "kind": "Novel",
-        "yearPublished": "1985",
-        "slug": "beware-by-richard-laymon",
-        "grade": "C",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Richard Laymon",
-            "notes": null
-          }
-        ],
-        "gradeValue": 6,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Beware!",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "The Big Sleep",
-        "kind": "Novel",
-        "yearPublished": "1939",
-        "slug": "the-big-sleep-by-raymond-chandler",
-        "grade": "C+",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Raymond Chandler",
-            "notes": null
-          }
-        ],
-        "gradeValue": 7,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Big Sleep",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "The Black Train",
-        "kind": "Novel",
-        "yearPublished": "2009",
-        "slug": "the-black-train-by-edward-lee",
-        "grade": "D+",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Edward Lee",
-            "notes": null
-          }
-        ],
-        "gradeValue": 4,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Black Train",
-        "subtitle": null,
-        "yearReviewed": 2022
+        "workYear": "2000",
+        "reviewYear": "2022"
       }
     ],
     "includedWorks": [],
     "reviewDate": "2022-04-18",
-    "reviewSequence": "2022-04-18-1"
+    "reviewSequence": 9,
+    "workYearSequence": 3,
+    "authorSequence": 3,
+    "titleSequence": 3,
+    "gradeSequence": 3,
+    "reviewYear": "2022",
+    "reviewed": true,
+    "workYear": "2016"
   },
   {
     "slug": "behold-the-void-by-philip-fracassi",
     "title": "Behold the Void",
     "subtitle": null,
     "sortTitle": "Behold the Void",
-    "yearPublished": "2017",
     "grade": "B+",
     "gradeValue": 10,
     "kind": "Collection",
@@ -520,7 +310,6 @@
       }
     ],
     "includedInSlugs": [],
-    "yearReviewed": 2022,
     "moreByAuthors": [
       {
         "name": "Philip Fracassi",
@@ -528,31 +317,8 @@
         "sortName": "Fracassi, Philip",
         "reviewedWorks": [
           {
-            "title": "Mother",
-            "kind": "Short Story",
-            "yearPublished": "2015",
-            "slug": "mother-by-philip-fracassi",
-            "grade": "B-",
-            "includedInSlugs": [
-              "behold-the-void-by-philip-fracassi"
-            ],
-            "authors": [
-              {
-                "name": "Philip Fracassi",
-                "notes": null
-              }
-            ],
-            "gradeValue": 8,
-            "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
-            "sortTitle": "Mother",
-            "subtitle": null,
-            "yearReviewed": 2022
-          },
-          {
             "title": "Altar",
             "kind": "Short Story",
-            "yearPublished": "2016",
             "slug": "altar-by-philip-fracassi",
             "grade": "A-",
             "includedInSlugs": [
@@ -566,98 +332,15 @@
             ],
             "gradeValue": 11,
             "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
+            "reviewSequence": 30,
             "sortTitle": "Altar",
             "subtitle": null,
-            "yearReviewed": 2022
-          },
-          {
-            "title": "The Baby Farmer",
-            "kind": "Short Story",
-            "yearPublished": "2017",
-            "slug": "the-baby-farmer-by-philip-fracassi",
-            "grade": "C+",
-            "includedInSlugs": [
-              "behold-the-void-by-philip-fracassi"
-            ],
-            "authors": [
-              {
-                "name": "Philip Fracassi",
-                "notes": null
-              }
-            ],
-            "gradeValue": 7,
-            "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
-            "sortTitle": "Baby Farmer",
-            "subtitle": null,
-            "yearReviewed": 2022
-          },
-          {
-            "title": "Coffin",
-            "kind": "Short Story",
-            "yearPublished": "2017",
-            "slug": "coffin-by-philip-fracassi",
-            "grade": "C+",
-            "includedInSlugs": [
-              "behold-the-void-by-philip-fracassi"
-            ],
-            "authors": [
-              {
-                "name": "Philip Fracassi",
-                "notes": null
-              }
-            ],
-            "gradeValue": 7,
-            "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
-            "sortTitle": "Coffin",
-            "subtitle": null,
-            "yearReviewed": 2022
-          },
-          {
-            "title": "Fail-Safe",
-            "kind": "Short Story",
-            "yearPublished": "2017",
-            "slug": "fail-safe-by-philip-fracassi",
-            "grade": "C",
-            "includedInSlugs": [
-              "behold-the-void-by-philip-fracassi"
-            ],
-            "authors": [
-              {
-                "name": "Philip Fracassi",
-                "notes": null
-              }
-            ],
-            "gradeValue": 6,
-            "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
-            "sortTitle": "Fail-Safe",
-            "subtitle": null,
-            "yearReviewed": 2022
-          },
-          {
-            "title": "The Horse Thief",
-            "kind": "Short Story",
-            "yearPublished": "2017",
-            "slug": "the-horse-thief-by-philip-fracassi",
-            "grade": "B",
-            "includedInSlugs": [
-              "behold-the-void-by-philip-fracassi"
-            ],
-            "authors": [
-              {
-                "name": "Philip Fracassi",
-                "notes": null
-              }
-            ],
-            "gradeValue": 9,
-            "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
-            "sortTitle": "Horse Thief",
-            "subtitle": null,
-            "yearReviewed": 2022
+            "workYear": "2016",
+            "workYearSequence": 12,
+            "authorSequence": 12,
+            "titleSequence": 12,
+            "gradeSequence": 12,
+            "reviewYear": "2022"
           }
         ]
       }
@@ -666,7 +349,6 @@
       {
         "title": "'Salem's Lot",
         "kind": "Novel",
-        "yearPublished": "1975",
         "slug": "salems-lot-by-stephen-king",
         "grade": "B",
         "includedInSlugs": [],
@@ -678,35 +360,15 @@
         ],
         "gradeValue": 9,
         "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
+        "reviewSequence": 23,
         "sortTitle": "'Salem's Lot",
         "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "The 48 Laws of Power",
-        "kind": "Nonfiction",
-        "yearPublished": "1998",
-        "slug": "the-48-laws-of-power-by-robert-greene",
-        "grade": "D+",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Robert Greene",
-            "notes": null
-          }
-        ],
-        "gradeValue": 4,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "48 Laws of Power",
-        "subtitle": null,
-        "yearReviewed": 2022
+        "workYear": "1975",
+        "reviewYear": "2022"
       },
       {
         "title": "About Face",
         "kind": "Nonfiction",
-        "yearPublished": "1989",
         "slug": "about-face-by-david-h-hackworth-julie-sherman",
         "grade": "A-",
         "includedInSlugs": [],
@@ -722,70 +384,11 @@
         ],
         "gradeValue": 11,
         "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
+        "reviewSequence": 25,
         "sortTitle": "About Face",
         "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "Beware!",
-        "kind": "Novel",
-        "yearPublished": "1985",
-        "slug": "beware-by-richard-laymon",
-        "grade": "C",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Richard Laymon",
-            "notes": null
-          }
-        ],
-        "gradeValue": 6,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Beware!",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "The Big Sleep",
-        "kind": "Novel",
-        "yearPublished": "1939",
-        "slug": "the-big-sleep-by-raymond-chandler",
-        "grade": "C+",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Raymond Chandler",
-            "notes": null
-          }
-        ],
-        "gradeValue": 7,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Big Sleep",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "The Black Train",
-        "kind": "Novel",
-        "yearPublished": "2009",
-        "slug": "the-black-train-by-edward-lee",
-        "grade": "D+",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Edward Lee",
-            "notes": null
-          }
-        ],
-        "gradeValue": 4,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Black Train",
-        "subtitle": null,
-        "yearReviewed": 2022
+        "workYear": "2000",
+        "reviewYear": "2022"
       }
     ],
     "includedWorks": [
@@ -800,7 +403,9 @@
             "name": "Philip Fracassi",
             "slug": "philip-fracassi"
           }
-        ]
+        ],
+        "workYear": "2016",
+        "reviewed": true
       },
       {
         "slug": "the-baby-farmer-by-philip-fracassi",
@@ -813,7 +418,9 @@
             "name": "Philip Fracassi",
             "slug": "philip-fracassi"
           }
-        ]
+        ],
+        "workYear": "2017",
+        "reviewed": true
       },
       {
         "slug": "coffin-by-philip-fracassi",
@@ -826,7 +433,9 @@
             "name": "Philip Fracassi",
             "slug": "philip-fracassi"
           }
-        ]
+        ],
+        "workYear": "2017",
+        "reviewed": true
       },
       {
         "slug": "fail-safe-by-philip-fracassi",
@@ -839,7 +448,9 @@
             "name": "Philip Fracassi",
             "slug": "philip-fracassi"
           }
-        ]
+        ],
+        "workYear": "2017",
+        "reviewed": true
       },
       {
         "slug": "the-horse-thief-by-philip-fracassi",
@@ -852,7 +463,9 @@
             "name": "Philip Fracassi",
             "slug": "philip-fracassi"
           }
-        ]
+        ],
+        "workYear": "2017",
+        "reviewed": true
       },
       {
         "slug": "mandala-by-philip-fracassi",
@@ -865,7 +478,9 @@
             "name": "Philip Fracassi",
             "slug": "philip-fracassi"
           }
-        ]
+        ],
+        "workYear": "2017",
+        "reviewed": true
       },
       {
         "slug": "mother-by-philip-fracassi",
@@ -878,7 +493,9 @@
             "name": "Philip Fracassi",
             "slug": "philip-fracassi"
           }
-        ]
+        ],
+        "workYear": "2015",
+        "reviewed": true
       },
       {
         "slug": "soft-construction-of-a-sunset-by-philip-fracassi",
@@ -891,7 +508,9 @@
             "name": "Philip Fracassi",
             "slug": "philip-fracassi"
           }
-        ]
+        ],
+        "workYear": "2017",
+        "reviewed": true
       },
       {
         "slug": "surfer-girl-by-philip-fracassi",
@@ -904,18 +523,26 @@
             "name": "Philip Fracassi",
             "slug": "philip-fracassi"
           }
-        ]
+        ],
+        "workYear": "2017",
+        "reviewed": true
       }
     ],
     "reviewDate": "2022-05-07",
-    "reviewSequence": "2022-05-07-2"
+    "reviewSequence": 22,
+    "workYearSequence": 10,
+    "authorSequence": 10,
+    "titleSequence": 10,
+    "gradeSequence": 10,
+    "reviewYear": "2022",
+    "reviewed": true,
+    "workYear": "2017"
   },
   {
     "slug": "cant-hurt-me-by-david-goggins",
     "title": "Can't Hurt Me",
     "subtitle": "Master Your Mind and Defy the Odds",
     "sortTitle": "Can't Hurt Me: Master Your Mind and Defy the Odds",
-    "yearPublished": "2018",
     "grade": "B",
     "gradeValue": 9,
     "kind": "Nonfiction",
@@ -937,113 +564,11 @@
       }
     ],
     "includedInSlugs": [],
-    "yearReviewed": 2022,
     "moreByAuthors": [],
     "moreReviews": [
       {
-        "title": "The Black Train",
-        "kind": "Novel",
-        "yearPublished": "2009",
-        "slug": "the-black-train-by-edward-lee",
-        "grade": "D+",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Edward Lee",
-            "notes": null
-          }
-        ],
-        "gradeValue": 4,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Black Train",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "Brain Wave",
-        "kind": "Novel",
-        "yearPublished": "1954",
-        "slug": "brain-wave-by-poul-anderson",
-        "grade": "C",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Poul Anderson",
-            "notes": null
-          }
-        ],
-        "gradeValue": 6,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Brain Wave",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "Brother Iron, Sister Steel",
-        "kind": "Nonfiction",
-        "yearPublished": "2001",
-        "slug": "brother-iron-sister-steel-by-dave-draper",
-        "grade": "C",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Dave Draper",
-            "notes": null
-          }
-        ],
-        "gradeValue": 6,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Brother Iron, Sister Steel",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "Carrie",
-        "kind": "Novel",
-        "yearPublished": "1974",
-        "slug": "carrie-by-stephen-king",
-        "grade": "B-",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Stephen King",
-            "notes": null
-          }
-        ],
-        "gradeValue": 8,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Carrie",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "Cary Grant",
-        "kind": "Nonfiction",
-        "yearPublished": "2004",
-        "slug": "cary-grant-by-marc-eliot",
-        "grade": "C",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Marc Eliot",
-            "notes": null
-          }
-        ],
-        "gradeValue": 6,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Cary Grant",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
         "title": "Casino Royale",
         "kind": "Novel",
-        "yearPublished": "1953",
         "slug": "casino-royale-by-ian-fleming",
         "grade": "B-",
         "includedInSlugs": [],
@@ -1055,22 +580,29 @@
         ],
         "gradeValue": 8,
         "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
+        "reviewSequence": 41,
         "sortTitle": "Casino Royale",
         "subtitle": null,
-        "yearReviewed": 2022
+        "workYear": "2000",
+        "reviewYear": "2022"
       }
     ],
     "includedWorks": [],
     "reviewDate": "2022-10-13",
-    "reviewSequence": "2022-10-13-1"
+    "reviewSequence": 35,
+    "workYearSequence": 17,
+    "authorSequence": 17,
+    "titleSequence": 17,
+    "gradeSequence": 17,
+    "reviewYear": "2022",
+    "reviewed": true,
+    "workYear": "2018"
   },
   {
     "slug": "casino-royale-by-ian-fleming",
     "title": "Casino Royale",
     "subtitle": null,
     "sortTitle": "Casino Royale",
-    "yearPublished": "1953",
     "grade": "B-",
     "gradeValue": 8,
     "kind": "Novel",
@@ -1092,13 +624,11 @@
       }
     ],
     "includedInSlugs": [],
-    "yearReviewed": 2022,
     "moreByAuthors": [],
     "moreReviews": [
       {
         "title": "Can't Hurt Me",
         "kind": "Nonfiction",
-        "yearPublished": "2018",
         "slug": "cant-hurt-me-by-david-goggins",
         "grade": "B",
         "includedInSlugs": [],
@@ -1110,55 +640,15 @@
         ],
         "gradeValue": 9,
         "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
+        "reviewSequence": 43,
         "sortTitle": "Can't Hurt Me",
         "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "Carrie",
-        "kind": "Novel",
-        "yearPublished": "1974",
-        "slug": "carrie-by-stephen-king",
-        "grade": "B-",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Stephen King",
-            "notes": null
-          }
-        ],
-        "gradeValue": 8,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Carrie",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "Cary Grant",
-        "kind": "Nonfiction",
-        "yearPublished": "2004",
-        "slug": "cary-grant-by-marc-eliot",
-        "grade": "C",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Marc Eliot",
-            "notes": null
-          }
-        ],
-        "gradeValue": 6,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Cary Grant",
-        "subtitle": null,
-        "yearReviewed": 2022
+        "workYear": "2000",
+        "reviewYear": "2022"
       },
       {
         "title": "The Cellar",
         "kind": "Novel",
-        "yearPublished": "1980",
         "slug": "the-cellar-by-richard-laymon",
         "grade": "C+",
         "includedInSlugs": [],
@@ -1170,15 +660,15 @@
         ],
         "gradeValue": 7,
         "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
+        "reviewSequence": 46,
         "sortTitle": "Cellar",
         "subtitle": null,
-        "yearReviewed": 2022
+        "workYear": "2000",
+        "reviewYear": "2022"
       },
       {
         "title": "Churchill",
         "kind": "Nonfiction",
-        "yearPublished": "2018",
         "slug": "churchill-by-andrew-roberts",
         "grade": "A-",
         "includedInSlugs": [],
@@ -1190,42 +680,29 @@
         ],
         "gradeValue": 11,
         "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
+        "reviewSequence": 47,
         "sortTitle": "Churchill",
         "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "The Cipher",
-        "kind": "Novel",
-        "yearPublished": "1991",
-        "slug": "the-cipher-by-kathe-koja",
-        "grade": "B",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Kathe Koja",
-            "notes": null
-          }
-        ],
-        "gradeValue": 9,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Cipher",
-        "subtitle": null,
-        "yearReviewed": 2022
+        "workYear": "2000",
+        "reviewYear": "2022"
       }
     ],
     "includedWorks": [],
     "reviewDate": "2022-06-14",
-    "reviewSequence": "2022-06-14-2"
+    "reviewSequence": 42,
+    "workYearSequence": 18,
+    "authorSequence": 18,
+    "titleSequence": 18,
+    "gradeSequence": 18,
+    "reviewYear": "2022",
+    "reviewed": true,
+    "workYear": "1953"
   },
   {
     "slug": "churchill-by-andrew-roberts",
     "title": "Churchill",
     "subtitle": "Walking with Destiny",
     "sortTitle": "Churchill: Walking with Destiny",
-    "yearPublished": "2018",
     "grade": "A-",
     "gradeValue": 11,
     "kind": "Nonfiction",
@@ -1247,33 +724,11 @@
       }
     ],
     "includedInSlugs": [],
-    "yearReviewed": 2022,
     "moreByAuthors": [],
     "moreReviews": [
       {
-        "title": "Cary Grant",
-        "kind": "Nonfiction",
-        "yearPublished": "2004",
-        "slug": "cary-grant-by-marc-eliot",
-        "grade": "C",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Marc Eliot",
-            "notes": null
-          }
-        ],
-        "gradeValue": 6,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Cary Grant",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
         "title": "Casino Royale",
         "kind": "Novel",
-        "yearPublished": "1953",
         "slug": "casino-royale-by-ian-fleming",
         "grade": "B-",
         "includedInSlugs": [],
@@ -1285,15 +740,15 @@
         ],
         "gradeValue": 8,
         "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
+        "reviewSequence": 51,
         "sortTitle": "Casino Royale",
         "subtitle": null,
-        "yearReviewed": 2022
+        "workYear": "2000",
+        "reviewYear": "2022"
       },
       {
         "title": "The Cellar",
         "kind": "Novel",
-        "yearPublished": "1980",
         "slug": "the-cellar-by-richard-laymon",
         "grade": "C+",
         "includedInSlugs": [],
@@ -1305,84 +760,29 @@
         ],
         "gradeValue": 7,
         "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
+        "reviewSequence": 52,
         "sortTitle": "Cellar",
         "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "The Cipher",
-        "kind": "Novel",
-        "yearPublished": "1991",
-        "slug": "the-cipher-by-kathe-koja",
-        "grade": "B",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Kathe Koja",
-            "notes": null
-          }
-        ],
-        "gradeValue": 9,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Cipher",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "Coffin",
-        "kind": "Short Story",
-        "yearPublished": "2017",
-        "slug": "coffin-by-philip-fracassi",
-        "grade": "C+",
-        "includedInSlugs": [
-          "behold-the-void-by-philip-fracassi"
-        ],
-        "authors": [
-          {
-            "name": "Philip Fracassi",
-            "notes": null
-          }
-        ],
-        "gradeValue": 7,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Coffin",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "Consider This",
-        "kind": "Nonfiction",
-        "yearPublished": "2020",
-        "slug": "consider-this-by-chuck-palahniuk",
-        "grade": "B",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Chuck Palahniuk",
-            "notes": null
-          }
-        ],
-        "gradeValue": 9,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Consider This",
-        "subtitle": null,
-        "yearReviewed": 2022
+        "workYear": "2000",
+        "reviewYear": "2022"
       }
     ],
     "includedWorks": [],
     "reviewDate": "2022-06-14",
-    "reviewSequence": "2022-06-14-1"
+    "reviewSequence": 49,
+    "workYearSequence": 19,
+    "authorSequence": 19,
+    "titleSequence": 19,
+    "gradeSequence": 19,
+    "reviewYear": "2022",
+    "reviewed": true,
+    "workYear": "2018"
   },
   {
     "slug": "dracula-by-bram-stoker",
     "title": "Dracula",
     "subtitle": null,
     "sortTitle": "Dracula",
-    "yearPublished": "1897",
     "grade": "C+",
     "gradeValue": 7,
     "kind": "Novel",
@@ -1404,93 +804,11 @@
       }
     ],
     "includedInSlugs": [],
-    "yearReviewed": 2022,
     "moreByAuthors": [],
     "moreReviews": [
       {
-        "title": "The Devils of D-Day",
-        "kind": "Novel",
-        "yearPublished": "1978",
-        "slug": "the-devils-of-d-day-by-graham-masterton",
-        "grade": "B",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Graham Masterton",
-            "notes": null
-          }
-        ],
-        "gradeValue": 9,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Devils of D-Day",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "Doctor Sleep",
-        "kind": "Novel",
-        "yearPublished": "2013",
-        "slug": "doctor-sleep-by-stephen-king",
-        "grade": "C+",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Stephen King",
-            "notes": null
-          }
-        ],
-        "gradeValue": 7,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Doctor Sleep",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "Don't Let Them Get You Down",
-        "kind": "Novel",
-        "yearPublished": "2022",
-        "slug": "dont-let-them-get-you-down-by-philip-fracassi",
-        "grade": "C-",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Philip Fracassi",
-            "notes": null
-          }
-        ],
-        "gradeValue": 5,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Don't Let Them Get You Down",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "Draft No. 4",
-        "kind": "Nonfiction",
-        "yearPublished": "2013",
-        "slug": "draft-no-4-by-john-mcphee",
-        "grade": "C",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "John McPhee",
-            "notes": null
-          }
-        ],
-        "gradeValue": 6,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Draft No. 4",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
         "title": "Extreme Ownership",
         "kind": "Nonfiction",
-        "yearPublished": "2015",
         "slug": "extreme-ownership-by-jocko-willink-leif-babin",
         "grade": "A",
         "includedInSlugs": [],
@@ -1506,44 +824,29 @@
         ],
         "gradeValue": 12,
         "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
+        "reviewSequence": 61,
         "sortTitle": "Extreme Ownership",
         "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "Fail-Safe",
-        "kind": "Short Story",
-        "yearPublished": "2017",
-        "slug": "fail-safe-by-philip-fracassi",
-        "grade": "C",
-        "includedInSlugs": [
-          "behold-the-void-by-philip-fracassi"
-        ],
-        "authors": [
-          {
-            "name": "Philip Fracassi",
-            "notes": null
-          }
-        ],
-        "gradeValue": 6,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Fail-Safe",
-        "subtitle": null,
-        "yearReviewed": 2022
+        "workYear": "2000",
+        "reviewYear": "2022"
       }
     ],
     "includedWorks": [],
     "reviewDate": "2022-07-09",
-    "reviewSequence": "2022-07-09-1"
+    "reviewSequence": 56,
+    "workYearSequence": 20,
+    "authorSequence": 20,
+    "titleSequence": 20,
+    "gradeSequence": 20,
+    "reviewYear": "2022",
+    "reviewed": true,
+    "workYear": "1897"
   },
   {
     "slug": "extreme-ownership-by-jocko-willink-leif-babin",
     "title": "Extreme Ownership",
     "subtitle": "How U.S. Navy SEALs Lead and Win",
     "sortTitle": "Extreme Ownership: How U.S. Navy SEALs Lead and Win",
-    "yearPublished": "2015",
     "grade": "A",
     "gradeValue": 12,
     "kind": "Nonfiction",
@@ -1571,33 +874,11 @@
       }
     ],
     "includedInSlugs": [],
-    "yearReviewed": 2022,
     "moreByAuthors": [],
     "moreReviews": [
       {
-        "title": "Don't Let Them Get You Down",
-        "kind": "Novel",
-        "yearPublished": "2022",
-        "slug": "dont-let-them-get-you-down-by-philip-fracassi",
-        "grade": "C-",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Philip Fracassi",
-            "notes": null
-          }
-        ],
-        "gradeValue": 5,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Don't Let Them Get You Down",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
         "title": "Dracula",
         "kind": "Novel",
-        "yearPublished": "1897",
         "slug": "dracula-by-bram-stoker",
         "grade": "C+",
         "includedInSlugs": [],
@@ -1609,77 +890,15 @@
         ],
         "gradeValue": 7,
         "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
+        "reviewSequence": 65,
         "sortTitle": "Dracula",
         "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "Draft No. 4",
-        "kind": "Nonfiction",
-        "yearPublished": "2013",
-        "slug": "draft-no-4-by-john-mcphee",
-        "grade": "C",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "John McPhee",
-            "notes": null
-          }
-        ],
-        "gradeValue": 6,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Draft No. 4",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "Fail-Safe",
-        "kind": "Short Story",
-        "yearPublished": "2017",
-        "slug": "fail-safe-by-philip-fracassi",
-        "grade": "C",
-        "includedInSlugs": [
-          "behold-the-void-by-philip-fracassi"
-        ],
-        "authors": [
-          {
-            "name": "Philip Fracassi",
-            "notes": null
-          }
-        ],
-        "gradeValue": 6,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Fail-Safe",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "Fast Forward",
-        "kind": "Nonfiction",
-        "yearPublished": "2020",
-        "slug": "fast-forward-by-stephen-morris",
-        "grade": "A-",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Stephen Morris",
-            "notes": null
-          }
-        ],
-        "gradeValue": 11,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Fast Forward",
-        "subtitle": null,
-        "yearReviewed": 2022
+        "workYear": "2000",
+        "reviewYear": "2022"
       },
       {
         "title": "Fight Club",
         "kind": "Novel",
-        "yearPublished": "1996",
         "slug": "fight-club-by-chuck-palahniuk",
         "grade": "A-",
         "includedInSlugs": [],
@@ -1691,22 +910,29 @@
         ],
         "gradeValue": 11,
         "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
+        "reviewSequence": 69,
         "sortTitle": "Fight Club",
         "subtitle": null,
-        "yearReviewed": 2022
+        "workYear": "2000",
+        "reviewYear": "2022"
       }
     ],
     "includedWorks": [],
     "reviewDate": "2022-06-26",
-    "reviewSequence": "2022-06-26-1"
+    "reviewSequence": 63,
+    "workYearSequence": 21,
+    "authorSequence": 21,
+    "titleSequence": 21,
+    "gradeSequence": 21,
+    "reviewYear": "2022",
+    "reviewed": true,
+    "workYear": "2015"
   },
   {
     "slug": "fight-club-by-chuck-palahniuk",
     "title": "Fight Club",
     "subtitle": null,
     "sortTitle": "Fight Club",
-    "yearPublished": "1996",
     "grade": "A-",
     "gradeValue": 11,
     "kind": "Novel",
@@ -1728,13 +954,11 @@
       }
     ],
     "includedInSlugs": [],
-    "yearReviewed": 2022,
     "moreByAuthors": [],
     "moreReviews": [
       {
         "title": "Extreme Ownership",
         "kind": "Nonfiction",
-        "yearPublished": "2015",
         "slug": "extreme-ownership-by-jocko-willink-leif-babin",
         "grade": "A",
         "includedInSlugs": [],
@@ -1750,57 +974,15 @@
         ],
         "gradeValue": 12,
         "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
+        "reviewSequence": 71,
         "sortTitle": "Extreme Ownership",
         "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "Fail-Safe",
-        "kind": "Short Story",
-        "yearPublished": "2017",
-        "slug": "fail-safe-by-philip-fracassi",
-        "grade": "C",
-        "includedInSlugs": [
-          "behold-the-void-by-philip-fracassi"
-        ],
-        "authors": [
-          {
-            "name": "Philip Fracassi",
-            "notes": null
-          }
-        ],
-        "gradeValue": 6,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Fail-Safe",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "Fast Forward",
-        "kind": "Nonfiction",
-        "yearPublished": "2020",
-        "slug": "fast-forward-by-stephen-morris",
-        "grade": "A-",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Stephen Morris",
-            "notes": null
-          }
-        ],
-        "gradeValue": 11,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Fast Forward",
-        "subtitle": null,
-        "yearReviewed": 2022
+        "workYear": "2000",
+        "reviewYear": "2022"
       },
       {
         "title": "Fright Night",
         "kind": "Novel",
-        "yearPublished": "1985",
         "slug": "fright-night-by-john-skipp-craig-spector",
         "grade": "F",
         "includedInSlugs": [],
@@ -1816,66 +998,29 @@
         ],
         "gradeValue": 1,
         "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
+        "reviewSequence": 74,
         "sortTitle": "Fright Night",
         "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "Fright Night Origins",
-        "kind": "Novel",
-        "yearPublished": "2023",
-        "slug": "fright-night-origins-by-tom-holland-a-jack-ulrich",
-        "grade": "C+",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Tom Holland",
-            "notes": null
-          },
-          {
-            "name": "A. Jack Ulrich",
-            "notes": null
-          }
-        ],
-        "gradeValue": 7,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Fright Night Origins",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "Ghost Story",
-        "kind": "Novel",
-        "yearPublished": "1979",
-        "slug": "ghost-story-by-peter-straub",
-        "grade": "B",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Peter Straub",
-            "notes": null
-          }
-        ],
-        "gradeValue": 9,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Ghost Story",
-        "subtitle": null,
-        "yearReviewed": 2022
+        "workYear": "2000",
+        "reviewYear": "2022"
       }
     ],
     "includedWorks": [],
     "reviewDate": "2022-07-16",
-    "reviewSequence": "2022-07-16-1"
+    "reviewSequence": 70,
+    "workYearSequence": 22,
+    "authorSequence": 22,
+    "titleSequence": 22,
+    "gradeSequence": 22,
+    "reviewYear": "2022",
+    "reviewed": true,
+    "workYear": "1996"
   },
   {
     "slug": "fright-night-by-john-skipp-craig-spector",
     "title": "Fright Night",
     "subtitle": null,
     "sortTitle": "Fright Night",
-    "yearPublished": "1985",
     "grade": "F",
     "gradeValue": 1,
     "kind": "Novel",
@@ -1903,55 +1048,11 @@
       }
     ],
     "includedInSlugs": [],
-    "yearReviewed": 2023,
     "moreByAuthors": [],
     "moreReviews": [
       {
-        "title": "Fail-Safe",
-        "kind": "Short Story",
-        "yearPublished": "2017",
-        "slug": "fail-safe-by-philip-fracassi",
-        "grade": "C",
-        "includedInSlugs": [
-          "behold-the-void-by-philip-fracassi"
-        ],
-        "authors": [
-          {
-            "name": "Philip Fracassi",
-            "notes": null
-          }
-        ],
-        "gradeValue": 6,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Fail-Safe",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "Fast Forward",
-        "kind": "Nonfiction",
-        "yearPublished": "2020",
-        "slug": "fast-forward-by-stephen-morris",
-        "grade": "A-",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Stephen Morris",
-            "notes": null
-          }
-        ],
-        "gradeValue": 11,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Fast Forward",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
         "title": "Fight Club",
         "kind": "Novel",
-        "yearPublished": "1996",
         "slug": "fight-club-by-chuck-palahniuk",
         "grade": "A-",
         "includedInSlugs": [],
@@ -1963,86 +1064,29 @@
         ],
         "gradeValue": 11,
         "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
+        "reviewSequence": 80,
         "sortTitle": "Fight Club",
         "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "Fright Night Origins",
-        "kind": "Novel",
-        "yearPublished": "2023",
-        "slug": "fright-night-origins-by-tom-holland-a-jack-ulrich",
-        "grade": "C+",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Tom Holland",
-            "notes": null
-          },
-          {
-            "name": "A. Jack Ulrich",
-            "notes": null
-          }
-        ],
-        "gradeValue": 7,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Fright Night Origins",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "Ghost Story",
-        "kind": "Novel",
-        "yearPublished": "1979",
-        "slug": "ghost-story-by-peter-straub",
-        "grade": "B",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Peter Straub",
-            "notes": null
-          }
-        ],
-        "gradeValue": 9,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Ghost Story",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "Goth",
-        "kind": "Nonfiction",
-        "yearPublished": "2023",
-        "slug": "goth-by-lol-tolhurst",
-        "grade": "C",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Lol Tolhurst",
-            "notes": null
-          }
-        ],
-        "gradeValue": 6,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Goth",
-        "subtitle": null,
-        "yearReviewed": 2022
+        "workYear": "2000",
+        "reviewYear": "2022"
       }
     ],
     "includedWorks": [],
     "reviewDate": "2023-01-21",
-    "reviewSequence": "2023-01-21-2"
+    "reviewSequence": 77,
+    "workYearSequence": 23,
+    "authorSequence": 23,
+    "titleSequence": 23,
+    "gradeSequence": 23,
+    "reviewYear": "2023",
+    "reviewed": true,
+    "workYear": "1985"
   },
   {
     "slug": "living-with-a-seal-by-jesse-itzler",
     "title": "Living with a SEAL",
     "subtitle": "31 Days Training with the Toughest Man on the Planet",
     "sortTitle": "Living with a SEAL: 31 Days Training with the Toughest Man on the Planet",
-    "yearPublished": "2015",
     "grade": "Abandoned",
     "gradeValue": 0,
     "kind": "Nonfiction",
@@ -2064,73 +1108,11 @@
       }
     ],
     "includedInSlugs": [],
-    "yearReviewed": 2022,
     "moreByAuthors": [],
     "moreReviews": [
       {
-        "title": "The Last Hand",
-        "kind": "Short Story",
-        "yearPublished": "1985",
-        "slug": "the-last-hand-by-richard-laymon",
-        "grade": "D",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Richard Laymon",
-            "notes": null
-          }
-        ],
-        "gradeValue": 3,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Last Hand",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "Less Than Zero",
-        "kind": "Novel",
-        "yearPublished": "1985",
-        "slug": "less-than-zero-by-bret-easton-ellis",
-        "grade": "B+",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Bret Easton Ellis",
-            "notes": null
-          }
-        ],
-        "gradeValue": 10,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Less Than Zero",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "Live and Let Die",
-        "kind": "Novel",
-        "yearPublished": "1954",
-        "slug": "live-and-let-die-by-ian-fleming",
-        "grade": "D",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Ian Fleming",
-            "notes": null
-          }
-        ],
-        "gradeValue": 3,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Live and Let Die",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
         "title": "The Lonely One",
         "kind": "Short Story",
-        "yearPublished": "1985",
         "slug": "the-lonely-one-by-richard-laymon",
         "grade": "C+",
         "includedInSlugs": [],
@@ -2142,35 +1124,15 @@
         ],
         "gradeValue": 7,
         "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
+        "reviewSequence": 88,
         "sortTitle": "Lonely One",
         "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "The Long Walk",
-        "kind": "Novel",
-        "yearPublished": "1978",
-        "slug": "the-long-walk-by-stephen-king",
-        "grade": "D",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Stephen King",
-            "notes": "as Richard Bachman"
-          }
-        ],
-        "gradeValue": 3,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Long Walk",
-        "subtitle": null,
-        "yearReviewed": 2022
+        "workYear": "2000",
+        "reviewYear": "2022"
       },
       {
         "title": "Mandala",
         "kind": "Novella",
-        "yearPublished": "2017",
         "slug": "mandala-by-philip-fracassi",
         "grade": "B+",
         "includedInSlugs": [
@@ -2184,22 +1146,29 @@
         ],
         "gradeValue": 10,
         "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
+        "reviewSequence": 90,
         "sortTitle": "Mandala",
         "subtitle": null,
-        "yearReviewed": 2022
+        "workYear": "2000",
+        "reviewYear": "2022"
       }
     ],
     "includedWorks": [],
     "reviewDate": "2022-06-01",
-    "reviewSequence": "2022-06-01-1"
+    "reviewSequence": 84,
+    "workYearSequence": 24,
+    "authorSequence": 24,
+    "titleSequence": 24,
+    "gradeSequence": 24,
+    "reviewYear": "2022",
+    "reviewed": true,
+    "workYear": "2015"
   },
   {
     "slug": "mandala-by-philip-fracassi",
     "title": "Mandala",
     "subtitle": null,
     "sortTitle": "Mandala",
-    "yearPublished": "2017",
     "grade": "B+",
     "gradeValue": 10,
     "kind": "Novella",
@@ -2223,7 +1192,6 @@
     "includedInSlugs": [
       "behold-the-void-by-philip-fracassi"
     ],
-    "yearReviewed": 2022,
     "moreByAuthors": [
       {
         "name": "Philip Fracassi",
@@ -2231,95 +1199,8 @@
         "sortName": "Fracassi, Philip",
         "reviewedWorks": [
           {
-            "title": "Coffin",
-            "kind": "Short Story",
-            "yearPublished": "2017",
-            "slug": "coffin-by-philip-fracassi",
-            "grade": "C+",
-            "includedInSlugs": [
-              "behold-the-void-by-philip-fracassi"
-            ],
-            "authors": [
-              {
-                "name": "Philip Fracassi",
-                "notes": null
-              }
-            ],
-            "gradeValue": 7,
-            "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
-            "sortTitle": "Coffin",
-            "subtitle": null,
-            "yearReviewed": 2022
-          },
-          {
-            "title": "Fail-Safe",
-            "kind": "Short Story",
-            "yearPublished": "2017",
-            "slug": "fail-safe-by-philip-fracassi",
-            "grade": "C",
-            "includedInSlugs": [
-              "behold-the-void-by-philip-fracassi"
-            ],
-            "authors": [
-              {
-                "name": "Philip Fracassi",
-                "notes": null
-              }
-            ],
-            "gradeValue": 6,
-            "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
-            "sortTitle": "Fail-Safe",
-            "subtitle": null,
-            "yearReviewed": 2022
-          },
-          {
-            "title": "The Horse Thief",
-            "kind": "Short Story",
-            "yearPublished": "2017",
-            "slug": "the-horse-thief-by-philip-fracassi",
-            "grade": "B",
-            "includedInSlugs": [
-              "behold-the-void-by-philip-fracassi"
-            ],
-            "authors": [
-              {
-                "name": "Philip Fracassi",
-                "notes": null
-              }
-            ],
-            "gradeValue": 9,
-            "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
-            "sortTitle": "Horse Thief",
-            "subtitle": null,
-            "yearReviewed": 2022
-          },
-          {
-            "title": "Sacculina",
-            "kind": "Novella",
-            "yearPublished": "2017",
-            "slug": "sacculina-by-philip-fracassi",
-            "grade": "B",
-            "includedInSlugs": [],
-            "authors": [
-              {
-                "name": "Philip Fracassi",
-                "notes": null
-              }
-            ],
-            "gradeValue": 9,
-            "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
-            "sortTitle": "Sacculina",
-            "subtitle": null,
-            "yearReviewed": 2022
-          },
-          {
             "title": "Soft Construction of a Sunset",
             "kind": "Short Story",
-            "yearPublished": "2017",
             "slug": "soft-construction-of-a-sunset-by-philip-fracassi",
             "grade": "B-",
             "includedInSlugs": [
@@ -2333,32 +1214,15 @@
             ],
             "gradeValue": 8,
             "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
+            "reviewSequence": 102,
             "sortTitle": "Soft Construction of a Sunset",
             "subtitle": null,
-            "yearReviewed": 2022
-          },
-          {
-            "title": "Surfer Girl",
-            "kind": "Short Story",
-            "yearPublished": "2017",
-            "slug": "surfer-girl-by-philip-fracassi",
-            "grade": "C+",
-            "includedInSlugs": [
-              "behold-the-void-by-philip-fracassi"
-            ],
-            "authors": [
-              {
-                "name": "Philip Fracassi",
-                "notes": null
-              }
-            ],
-            "gradeValue": 7,
-            "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
-            "sortTitle": "Surfer Girl",
-            "subtitle": null,
-            "yearReviewed": 2022
+            "workYear": "2017",
+            "workYearSequence": 30,
+            "authorSequence": 30,
+            "titleSequence": 30,
+            "gradeSequence": 30,
+            "reviewYear": "2022"
           }
         ]
       }
@@ -2367,7 +1231,6 @@
       {
         "title": "Living with a SEAL",
         "kind": "Nonfiction",
-        "yearPublished": "2015",
         "slug": "living-with-a-seal-by-jesse-itzler",
         "grade": "Abandoned",
         "includedInSlugs": [],
@@ -2379,15 +1242,15 @@
         ],
         "gradeValue": 0,
         "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
+        "reviewSequence": 92,
         "sortTitle": "Living with a SEAL",
         "subtitle": null,
-        "yearReviewed": 2022
+        "workYear": "2000",
+        "reviewYear": "2022"
       },
       {
         "title": "The Lonely One",
         "kind": "Short Story",
-        "yearPublished": "1985",
         "slug": "the-lonely-one-by-richard-laymon",
         "grade": "C+",
         "includedInSlugs": [],
@@ -2399,108 +1262,29 @@
         ],
         "gradeValue": 7,
         "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
+        "reviewSequence": 93,
         "sortTitle": "Lonely One",
         "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "The Long Walk",
-        "kind": "Novel",
-        "yearPublished": "1978",
-        "slug": "the-long-walk-by-stephen-king",
-        "grade": "D",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Stephen King",
-            "notes": "as Richard Bachman"
-          }
-        ],
-        "gradeValue": 3,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Long Walk",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "Moonraker",
-        "kind": "Novel",
-        "yearPublished": "1955",
-        "slug": "moonraker-by-ian-fleming",
-        "grade": "B",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Ian Fleming",
-            "notes": null
-          }
-        ],
-        "gradeValue": 9,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Moonraker",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "Mother",
-        "kind": "Short Story",
-        "yearPublished": "2015",
-        "slug": "mother-by-philip-fracassi",
-        "grade": "B-",
-        "includedInSlugs": [
-          "behold-the-void-by-philip-fracassi"
-        ],
-        "authors": [
-          {
-            "name": "Philip Fracassi",
-            "notes": null
-          }
-        ],
-        "gradeValue": 8,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Mother",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "Mr. S",
-        "kind": "Nonfiction",
-        "yearPublished": "2003",
-        "slug": "mr-s-by-george-jacobs-william-stadiem",
-        "grade": "B",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "George Jacobs",
-            "notes": null
-          },
-          {
-            "name": "William Stadiem",
-            "notes": null
-          }
-        ],
-        "gradeValue": 9,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Mr. S",
-        "subtitle": null,
-        "yearReviewed": 2022
+        "workYear": "2000",
+        "reviewYear": "2022"
       }
     ],
     "includedWorks": [],
     "reviewDate": "2022-05-07",
-    "reviewSequence": "2022-05-07-1"
+    "reviewSequence": 91,
+    "workYearSequence": 25,
+    "authorSequence": 25,
+    "titleSequence": 25,
+    "gradeSequence": 25,
+    "reviewYear": "2022",
+    "reviewed": true,
+    "workYear": "2016"
   },
   {
     "slug": "night-shift-by-stephen-king",
     "title": "Night Shift",
     "subtitle": null,
     "sortTitle": "Night Shift",
-    "yearPublished": "1978",
     "grade": "B",
     "gradeValue": 9,
     "kind": "Collection",
@@ -2522,7 +1306,6 @@
       }
     ],
     "includedInSlugs": [],
-    "yearReviewed": 2012,
     "moreByAuthors": [
       {
         "name": "Stephen King",
@@ -2530,29 +1313,8 @@
         "sortName": "King, Stephen",
         "reviewedWorks": [
           {
-            "title": "Rage",
-            "kind": "Novel",
-            "yearPublished": "1976",
-            "slug": "rage-by-stephen-king",
-            "grade": "C",
-            "includedInSlugs": [],
-            "authors": [
-              {
-                "name": "Stephen King",
-                "notes": "as Richard Bachman"
-              }
-            ],
-            "gradeValue": 6,
-            "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
-            "sortTitle": "Rage",
-            "subtitle": null,
-            "yearReviewed": 2022
-          },
-          {
             "title": "The Shining",
             "kind": "Novel",
-            "yearPublished": "1977",
             "slug": "the-shining-by-stephen-king",
             "grade": "B",
             "includedInSlugs": [],
@@ -2564,165 +1326,23 @@
             ],
             "gradeValue": 9,
             "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
+            "reviewSequence": 112,
             "sortTitle": "Shining",
             "subtitle": null,
-            "yearReviewed": 2022
-          },
-          {
-            "title": "The Long Walk",
-            "kind": "Novel",
-            "yearPublished": "1978",
-            "slug": "the-long-walk-by-stephen-king",
-            "grade": "D",
-            "includedInSlugs": [],
-            "authors": [
-              {
-                "name": "Stephen King",
-                "notes": "as Richard Bachman"
-              }
-            ],
-            "gradeValue": 3,
-            "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
-            "sortTitle": "Long Walk",
-            "subtitle": null,
-            "yearReviewed": 2022
-          },
-          {
-            "title": "The Stand",
-            "kind": "Novel",
-            "yearPublished": "1978",
-            "slug": "the-stand-by-stephen-king",
-            "grade": "D",
-            "includedInSlugs": [],
-            "authors": [
-              {
-                "name": "Stephen King",
-                "notes": null
-              }
-            ],
-            "gradeValue": 3,
-            "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
-            "sortTitle": "Stand",
-            "subtitle": null,
-            "yearReviewed": 2022
-          },
-          {
-            "title": "Cujo",
-            "kind": "Novel",
-            "yearPublished": "1981",
-            "slug": "cujo-by-stephen-king",
-            "grade": "B",
-            "includedInSlugs": [],
-            "authors": [
-              {
-                "name": "Stephen King",
-                "notes": null
-              }
-            ],
-            "gradeValue": 9,
-            "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
-            "sortTitle": "Cujo",
-            "subtitle": null,
-            "yearReviewed": 2022
-          },
-          {
-            "title": "On Writing",
-            "kind": "Nonfiction",
-            "yearPublished": "2000",
-            "slug": "on-writing-by-stephen-king",
-            "grade": "A-",
-            "includedInSlugs": [],
-            "authors": [
-              {
-                "name": "Stephen King",
-                "notes": null
-              }
-            ],
-            "gradeValue": 11,
-            "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
-            "sortTitle": "On Writing",
-            "subtitle": null,
-            "yearReviewed": 2022
+            "workYear": "1977",
+            "workYearSequence": 34,
+            "authorSequence": 34,
+            "titleSequence": 34,
+            "gradeSequence": 34,
+            "reviewYear": "2022"
           }
         ]
       }
     ],
     "moreReviews": [
       {
-        "title": "Moonraker",
-        "kind": "Novel",
-        "yearPublished": "1955",
-        "slug": "moonraker-by-ian-fleming",
-        "grade": "B",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Ian Fleming",
-            "notes": null
-          }
-        ],
-        "gradeValue": 9,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Moonraker",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "Mother",
-        "kind": "Short Story",
-        "yearPublished": "2015",
-        "slug": "mother-by-philip-fracassi",
-        "grade": "B-",
-        "includedInSlugs": [
-          "behold-the-void-by-philip-fracassi"
-        ],
-        "authors": [
-          {
-            "name": "Philip Fracassi",
-            "notes": null
-          }
-        ],
-        "gradeValue": 8,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Mother",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "Mr. S",
-        "kind": "Nonfiction",
-        "yearPublished": "2003",
-        "slug": "mr-s-by-george-jacobs-william-stadiem",
-        "grade": "B",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "George Jacobs",
-            "notes": null
-          },
-          {
-            "name": "William Stadiem",
-            "notes": null
-          }
-        ],
-        "gradeValue": 9,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Mr. S",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
         "title": "Out Are the Lights",
         "kind": "Novel",
-        "yearPublished": "1982",
         "slug": "out-are-the-lights-by-richard-laymon",
         "grade": "C-",
         "includedInSlugs": [
@@ -2736,50 +1356,11 @@
         ],
         "gradeValue": 5,
         "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
+        "reviewSequence": 108,
         "sortTitle": "Out Are the Lights",
         "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "Peter Cushing",
-        "kind": "Nonfiction",
-        "yearPublished": "2013",
-        "slug": "peter-cushing-by-david-miller",
-        "grade": "C",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "David Miller",
-            "notes": null
-          }
-        ],
-        "gradeValue": 6,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Peter Cushing",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "The Postman Always Rings Twice",
-        "kind": "Novel",
-        "yearPublished": "1934",
-        "slug": "the-postman-always-rings-twice-by-james-m-cain",
-        "grade": "B+",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "James M. Cain",
-            "notes": null
-          }
-        ],
-        "gradeValue": 10,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Postman Always Rings Twice",
-        "subtitle": null,
-        "yearReviewed": 2022
+        "workYear": "2000",
+        "reviewYear": "2022"
       }
     ],
     "includedWorks": [
@@ -2794,7 +1375,9 @@
             "name": "Stephen King",
             "slug": "stephen-king"
           }
-        ]
+        ],
+        "workYear": "1972",
+        "reviewed": true
       },
       {
         "slug": "the-boogeyman-by-stephen-king",
@@ -2807,7 +1390,9 @@
             "name": "Stephen King",
             "slug": "stephen-king"
           }
-        ]
+        ],
+        "workYear": "1973",
+        "reviewed": true
       },
       {
         "slug": "children-of-the-corn-by-stephen-king",
@@ -2820,7 +1405,9 @@
             "name": "Stephen King",
             "slug": "stephen-king"
           }
-        ]
+        ],
+        "workYear": "1977",
+        "reviewed": true
       },
       {
         "slug": "graveyard-shift-by-stephen-king",
@@ -2833,7 +1420,9 @@
             "name": "Stephen King",
             "slug": "stephen-king"
           }
-        ]
+        ],
+        "workYear": "1970",
+        "reviewed": true
       },
       {
         "slug": "gray-matter-by-stephen-king",
@@ -2846,7 +1435,9 @@
             "name": "Stephen King",
             "slug": "stephen-king"
           }
-        ]
+        ],
+        "workYear": "1973",
+        "reviewed": true
       },
       {
         "slug": "i-am-the-doorway-by-stephen-king",
@@ -2859,7 +1450,9 @@
             "name": "Stephen King",
             "slug": "stephen-king"
           }
-        ]
+        ],
+        "workYear": "1971",
+        "reviewed": true
       },
       {
         "slug": "i-know-what-you-need-by-stephen-king",
@@ -2872,7 +1465,9 @@
             "name": "Stephen King",
             "slug": "stephen-king"
           }
-        ]
+        ],
+        "workYear": "1976",
+        "reviewed": true
       },
       {
         "slug": "jerusalems-lot-by-stephen-king",
@@ -2885,7 +1480,9 @@
             "name": "Stephen King",
             "slug": "stephen-king"
           }
-        ]
+        ],
+        "workYear": "1978",
+        "reviewed": true
       },
       {
         "slug": "the-last-rung-on-the-ladder-by-stephen-king",
@@ -2898,7 +1495,9 @@
             "name": "Stephen King",
             "slug": "stephen-king"
           }
-        ]
+        ],
+        "workYear": "1978",
+        "reviewed": true
       },
       {
         "slug": "the-lawnmower-man-by-stephen-king",
@@ -2911,7 +1510,9 @@
             "name": "Stephen King",
             "slug": "stephen-king"
           }
-        ]
+        ],
+        "workYear": "1975",
+        "reviewed": true
       },
       {
         "slug": "the-ledge-by-stephen-king",
@@ -2924,7 +1525,9 @@
             "name": "Stephen King",
             "slug": "stephen-king"
           }
-        ]
+        ],
+        "workYear": "1976",
+        "reviewed": true
       },
       {
         "slug": "the-man-who-loved-flowers-by-stephen-king",
@@ -2937,7 +1540,9 @@
             "name": "Stephen King",
             "slug": "stephen-king"
           }
-        ]
+        ],
+        "workYear": "1977",
+        "reviewed": true
       },
       {
         "slug": "the-mangler-by-stephen-king",
@@ -2950,7 +1555,9 @@
             "name": "Stephen King",
             "slug": "stephen-king"
           }
-        ]
+        ],
+        "workYear": "1972",
+        "reviewed": true
       },
       {
         "slug": "night-surf-by-stephen-king",
@@ -2963,7 +1570,9 @@
             "name": "Stephen King",
             "slug": "stephen-king"
           }
-        ]
+        ],
+        "workYear": "1969",
+        "reviewed": true
       },
       {
         "slug": "one-for-the-road-by-stephen-king",
@@ -2976,7 +1585,9 @@
             "name": "Stephen King",
             "slug": "stephen-king"
           }
-        ]
+        ],
+        "workYear": "1977",
+        "reviewed": true
       },
       {
         "slug": "quitters-inc-by-stephen-king",
@@ -2989,7 +1600,9 @@
             "name": "Stephen King",
             "slug": "stephen-king"
           }
-        ]
+        ],
+        "workYear": "1978",
+        "reviewed": true
       },
       {
         "slug": "sometimes-they-come-back-by-stephen-king",
@@ -3002,7 +1615,9 @@
             "name": "Stephen King",
             "slug": "stephen-king"
           }
-        ]
+        ],
+        "workYear": "1974",
+        "reviewed": true
       },
       {
         "slug": "strawberry-spring-by-stephen-king",
@@ -3015,7 +1630,9 @@
             "name": "Stephen King",
             "slug": "stephen-king"
           }
-        ]
+        ],
+        "workYear": "1968",
+        "reviewed": true
       },
       {
         "slug": "trucks-by-stephen-king",
@@ -3028,7 +1645,9 @@
             "name": "Stephen King",
             "slug": "stephen-king"
           }
-        ]
+        ],
+        "workYear": "1973",
+        "reviewed": true
       },
       {
         "slug": "the-woman-in-the-room-by-stephen-king",
@@ -3041,18 +1660,26 @@
             "name": "Stephen King",
             "slug": "stephen-king"
           }
-        ]
+        ],
+        "workYear": "1978",
+        "reviewed": true
       }
     ],
     "reviewDate": "2012-05-14",
-    "reviewSequence": "2012-05-14-1"
+    "reviewSequence": 104,
+    "workYearSequence": 32,
+    "authorSequence": 32,
+    "titleSequence": 32,
+    "gradeSequence": 32,
+    "reviewYear": "2012",
+    "reviewed": true,
+    "workYear": "1978"
   },
   {
     "slug": "out-are-the-lights-by-richard-laymon",
     "title": "Out Are the Lights",
     "subtitle": null,
     "sortTitle": "Out Are the Lights",
-    "yearPublished": "1982",
     "grade": "C-",
     "gradeValue": 5,
     "kind": "Novel",
@@ -3083,7 +1710,6 @@
     "includedInSlugs": [
       "out-are-the-lights-and-other-tales-by-richard-laymon"
     ],
-    "yearReviewed": 2022,
     "moreByAuthors": [
       {
         "name": "Richard Laymon",
@@ -3093,7 +1719,6 @@
           {
             "title": "Roadside Pickup",
             "kind": "Short Story",
-            "yearPublished": "1974",
             "slug": "roadside-pickup-by-richard-laymon",
             "grade": "C-",
             "includedInSlugs": [
@@ -3107,15 +1732,19 @@
             ],
             "gradeValue": 5,
             "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
+            "reviewSequence": 124,
             "sortTitle": "Roadside Pickup",
             "subtitle": null,
-            "yearReviewed": 2022
+            "workYear": "1974",
+            "workYearSequence": 40,
+            "authorSequence": 40,
+            "titleSequence": 40,
+            "gradeSequence": 40,
+            "reviewYear": "2022"
           },
           {
             "title": "The Cellar",
             "kind": "Novel",
-            "yearPublished": "1980",
             "slug": "the-cellar-by-richard-laymon",
             "grade": "C+",
             "includedInSlugs": [],
@@ -3127,15 +1756,19 @@
             ],
             "gradeValue": 7,
             "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
+            "reviewSequence": 125,
             "sortTitle": "Cellar",
             "subtitle": null,
-            "yearReviewed": 2022
+            "workYear": "1980",
+            "workYearSequence": 41,
+            "authorSequence": 41,
+            "titleSequence": 41,
+            "gradeSequence": 41,
+            "reviewYear": "2022"
           },
           {
             "title": "The Woods Are Dark",
             "kind": "Novel",
-            "yearPublished": "1981",
             "slug": "the-woods-are-dark-by-richard-laymon",
             "grade": "C+",
             "includedInSlugs": [],
@@ -3147,15 +1780,19 @@
             ],
             "gradeValue": 7,
             "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
+            "reviewSequence": 126,
             "sortTitle": "Woods Are Dark",
             "subtitle": null,
-            "yearReviewed": 2022
+            "workYear": "1981",
+            "workYearSequence": 42,
+            "authorSequence": 42,
+            "titleSequence": 42,
+            "gradeSequence": 42,
+            "reviewYear": "2022"
           },
           {
             "title": "The Intruder",
             "kind": "Short Story",
-            "yearPublished": "1984",
             "slug": "the-intruder-by-richard-laymon",
             "grade": "C",
             "includedInSlugs": [],
@@ -3167,83 +1804,23 @@
             ],
             "gradeValue": 6,
             "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
+            "reviewSequence": 127,
             "sortTitle": "Intruder",
             "subtitle": null,
-            "yearReviewed": 2022
-          },
-          {
-            "title": "Beware!",
-            "kind": "Novel",
-            "yearPublished": "1985",
-            "slug": "beware-by-richard-laymon",
-            "grade": "C",
-            "includedInSlugs": [],
-            "authors": [
-              {
-                "name": "Richard Laymon",
-                "notes": null
-              }
-            ],
-            "gradeValue": 6,
-            "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
-            "sortTitle": "Beware!",
-            "subtitle": null,
-            "yearReviewed": 2022
-          },
-          {
-            "title": "The Last Hand",
-            "kind": "Short Story",
-            "yearPublished": "1985",
-            "slug": "the-last-hand-by-richard-laymon",
-            "grade": "D",
-            "includedInSlugs": [],
-            "authors": [
-              {
-                "name": "Richard Laymon",
-                "notes": null
-              }
-            ],
-            "gradeValue": 3,
-            "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
-            "sortTitle": "Last Hand",
-            "subtitle": null,
-            "yearReviewed": 2022
+            "workYear": "1984",
+            "workYearSequence": 43,
+            "authorSequence": 43,
+            "titleSequence": 43,
+            "gradeSequence": 43,
+            "reviewYear": "2022"
           }
         ]
       }
     ],
     "moreReviews": [
       {
-        "title": "Mr. S",
-        "kind": "Nonfiction",
-        "yearPublished": "2003",
-        "slug": "mr-s-by-george-jacobs-william-stadiem",
-        "grade": "B",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "George Jacobs",
-            "notes": null
-          },
-          {
-            "name": "William Stadiem",
-            "notes": null
-          }
-        ],
-        "gradeValue": 9,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Mr. S",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
         "title": "Night Shift",
         "kind": "Collection",
-        "yearPublished": "1978",
         "slug": "night-shift-by-stephen-king",
         "grade": "B",
         "includedInSlugs": [],
@@ -3255,102 +1832,29 @@
         ],
         "gradeValue": 9,
         "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
+        "reviewSequence": 119,
         "sortTitle": "Night Shift",
         "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "On Writing",
-        "kind": "Nonfiction",
-        "yearPublished": "2000",
-        "slug": "on-writing-by-stephen-king",
-        "grade": "A-",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Stephen King",
-            "notes": null
-          }
-        ],
-        "gradeValue": 11,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "On Writing",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "Peter Cushing",
-        "kind": "Nonfiction",
-        "yearPublished": "2013",
-        "slug": "peter-cushing-by-david-miller",
-        "grade": "C",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "David Miller",
-            "notes": null
-          }
-        ],
-        "gradeValue": 6,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Peter Cushing",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "The Postman Always Rings Twice",
-        "kind": "Novel",
-        "yearPublished": "1934",
-        "slug": "the-postman-always-rings-twice-by-james-m-cain",
-        "grade": "B+",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "James M. Cain",
-            "notes": null
-          }
-        ],
-        "gradeValue": 10,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Postman Always Rings Twice",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "Rage",
-        "kind": "Novel",
-        "yearPublished": "1976",
-        "slug": "rage-by-stephen-king",
-        "grade": "C",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Stephen King",
-            "notes": "as Richard Bachman"
-          }
-        ],
-        "gradeValue": 6,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Rage",
-        "subtitle": null,
-        "yearReviewed": 2022
+        "workYear": "2000",
+        "reviewYear": "2022"
       }
     ],
     "includedWorks": [],
     "reviewDate": "2022-10-11",
-    "reviewSequence": "2022-10-11-1"
+    "reviewSequence": 117,
+    "workYearSequence": 39,
+    "authorSequence": 39,
+    "titleSequence": 39,
+    "gradeSequence": 39,
+    "reviewYear": "2022",
+    "reviewed": true,
+    "workYear": "1982"
   },
   {
     "slug": "refugee-by-piers-anthony",
     "title": "Refugee",
     "subtitle": null,
     "sortTitle": "Refugee",
-    "yearPublished": "1983",
     "grade": "Abandoned",
     "gradeValue": 0,
     "kind": "Novel",
@@ -3372,73 +1876,11 @@
       }
     ],
     "includedInSlugs": [],
-    "yearReviewed": 2016,
     "moreByAuthors": [],
     "moreReviews": [
       {
-        "title": "Rage",
-        "kind": "Novel",
-        "yearPublished": "1976",
-        "slug": "rage-by-stephen-king",
-        "grade": "C",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Stephen King",
-            "notes": "as Richard Bachman"
-          }
-        ],
-        "gradeValue": 6,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Rage",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "Recessional",
-        "kind": "Nonfiction",
-        "yearPublished": "2022",
-        "slug": "recessional-by-david-mamet",
-        "grade": "D",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "David Mamet",
-            "notes": null
-          }
-        ],
-        "gradeValue": 3,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Recessional",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "Record Play Pause",
-        "kind": "Nonfiction",
-        "yearPublished": "2019",
-        "slug": "record-play-pause-by-stephen-morris",
-        "grade": "A",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Stephen Morris",
-            "notes": null
-          }
-        ],
-        "gradeValue": 12,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Record Play Pause",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
         "title": "The Rise of Theodore Roosevelt",
         "kind": "Nonfiction",
-        "yearPublished": "1979",
         "slug": "the-rise-of-theodore-roosevelt-by-edmund-morris",
         "grade": "A-",
         "includedInSlugs": [],
@@ -3450,15 +1892,15 @@
         ],
         "gradeValue": 11,
         "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
+        "reviewSequence": 134,
         "sortTitle": "Rise of Theodore Roosevelt",
         "subtitle": null,
-        "yearReviewed": 2022
+        "workYear": "2000",
+        "reviewYear": "2022"
       },
       {
         "title": "Roadside Pickup",
         "kind": "Short Story",
-        "yearPublished": "1974",
         "slug": "roadside-pickup-by-richard-laymon",
         "grade": "C-",
         "includedInSlugs": [
@@ -3472,42 +1914,29 @@
         ],
         "gradeValue": 5,
         "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
+        "reviewSequence": 135,
         "sortTitle": "Roadside Pickup",
         "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "The Rules of Attraction",
-        "kind": "Novel",
-        "yearPublished": "1987",
-        "slug": "the-rules-of-attraction-by-bret-easton-ellis",
-        "grade": "C+",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Bret Easton Ellis",
-            "notes": null
-          }
-        ],
-        "gradeValue": 7,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Rules of Attraction",
-        "subtitle": null,
-        "yearReviewed": 2022
+        "workYear": "2000",
+        "reviewYear": "2022"
       }
     ],
     "includedWorks": [],
     "reviewDate": "2016-01-29",
-    "reviewSequence": "2016-01-29-1"
+    "reviewSequence": 130,
+    "workYearSequence": 46,
+    "authorSequence": 46,
+    "titleSequence": 46,
+    "gradeSequence": 46,
+    "reviewYear": "2016",
+    "reviewed": true,
+    "workYear": "1983"
   },
   {
     "slug": "roadside-pickup-by-richard-laymon",
     "title": "Roadside Pickup",
     "subtitle": null,
     "sortTitle": "Roadside Pickup",
-    "yearPublished": "1974",
     "grade": "C-",
     "gradeValue": 5,
     "kind": "Short Story",
@@ -3531,7 +1960,6 @@
     "includedInSlugs": [
       "short-stories-volume-one-by-richard-laymon"
     ],
-    "yearReviewed": 2023,
     "moreByAuthors": [
       {
         "name": "Richard Laymon",
@@ -3541,7 +1969,6 @@
           {
             "title": "The Lonely One",
             "kind": "Short Story",
-            "yearPublished": "1985",
             "slug": "the-lonely-one-by-richard-laymon",
             "grade": "C+",
             "includedInSlugs": [],
@@ -3553,15 +1980,19 @@
             ],
             "gradeValue": 7,
             "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
+            "reviewSequence": 144,
             "sortTitle": "Lonely One",
             "subtitle": null,
-            "yearReviewed": 2022
+            "workYear": "1985",
+            "workYearSequence": 48,
+            "authorSequence": 48,
+            "titleSequence": 48,
+            "gradeSequence": 48,
+            "reviewYear": "2022"
           },
           {
             "title": "Tread Softly",
             "kind": "Novel",
-            "yearPublished": "1987",
             "slug": "tread-softly-by-richard-laymon",
             "grade": "C",
             "includedInSlugs": [],
@@ -3573,37 +2004,19 @@
             ],
             "gradeValue": 6,
             "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
+            "reviewSequence": 145,
             "sortTitle": "Tread Softly",
             "subtitle": null,
-            "yearReviewed": 2022
-          },
-          {
-            "title": "Desert Pickup",
-            "kind": "Short Story",
-            "yearPublished": "1970",
-            "slug": "desert-pickup-by-richard-laymon",
-            "grade": "C-",
-            "includedInSlugs": [
-              "short-stories-volume-one-by-richard-laymon"
-            ],
-            "authors": [
-              {
-                "name": "Richard Laymon",
-                "notes": null
-              }
-            ],
-            "gradeValue": 5,
-            "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
-            "sortTitle": "Desert Pickup",
-            "subtitle": null,
-            "yearReviewed": 2022
+            "workYear": "1987",
+            "workYearSequence": 49,
+            "authorSequence": 49,
+            "titleSequence": 49,
+            "gradeSequence": 49,
+            "reviewYear": "2022"
           },
           {
             "title": "The Cellar",
             "kind": "Novel",
-            "yearPublished": "1980",
             "slug": "the-cellar-by-richard-laymon",
             "grade": "C+",
             "includedInSlugs": [],
@@ -3615,15 +2028,19 @@
             ],
             "gradeValue": 7,
             "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
+            "reviewSequence": 147,
             "sortTitle": "Cellar",
             "subtitle": null,
-            "yearReviewed": 2022
+            "workYear": "1980",
+            "workYearSequence": 51,
+            "authorSequence": 51,
+            "titleSequence": 51,
+            "gradeSequence": 51,
+            "reviewYear": "2022"
           },
           {
             "title": "The Woods Are Dark",
             "kind": "Novel",
-            "yearPublished": "1981",
             "slug": "the-woods-are-dark-by-richard-laymon",
             "grade": "C+",
             "includedInSlugs": [],
@@ -3635,15 +2052,19 @@
             ],
             "gradeValue": 7,
             "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
+            "reviewSequence": 148,
             "sortTitle": "Woods Are Dark",
             "subtitle": null,
-            "yearReviewed": 2022
+            "workYear": "1981",
+            "workYearSequence": 52,
+            "authorSequence": 52,
+            "titleSequence": 52,
+            "gradeSequence": 52,
+            "reviewYear": "2022"
           },
           {
             "title": "Out Are the Lights",
             "kind": "Novel",
-            "yearPublished": "1982",
             "slug": "out-are-the-lights-by-richard-laymon",
             "grade": "C-",
             "includedInSlugs": [
@@ -3657,39 +2078,23 @@
             ],
             "gradeValue": 5,
             "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
+            "reviewSequence": 149,
             "sortTitle": "Out Are the Lights",
             "subtitle": null,
-            "yearReviewed": 2022
+            "workYear": "1982",
+            "workYearSequence": 53,
+            "authorSequence": 53,
+            "titleSequence": 53,
+            "gradeSequence": 53,
+            "reviewYear": "2022"
           }
         ]
       }
     ],
     "moreReviews": [
       {
-        "title": "Record Play Pause",
-        "kind": "Nonfiction",
-        "yearPublished": "2019",
-        "slug": "record-play-pause-by-stephen-morris",
-        "grade": "A",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Stephen Morris",
-            "notes": null
-          }
-        ],
-        "gradeValue": 12,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Record Play Pause",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
         "title": "Refugee",
         "kind": "Novel",
-        "yearPublished": "1983",
         "slug": "refugee-by-piers-anthony",
         "grade": "Abandoned",
         "includedInSlugs": [],
@@ -3701,15 +2106,15 @@
         ],
         "gradeValue": 0,
         "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
+        "reviewSequence": 139,
         "sortTitle": "Refugee",
         "subtitle": null,
-        "yearReviewed": 2022
+        "workYear": "2000",
+        "reviewYear": "2022"
       },
       {
         "title": "The Rise of Theodore Roosevelt",
         "kind": "Nonfiction",
-        "yearPublished": "1979",
         "slug": "the-rise-of-theodore-roosevelt-by-edmund-morris",
         "grade": "A-",
         "includedInSlugs": [],
@@ -3721,82 +2126,29 @@
         ],
         "gradeValue": 11,
         "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
+        "reviewSequence": 140,
         "sortTitle": "Rise of Theodore Roosevelt",
         "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "The Rules of Attraction",
-        "kind": "Novel",
-        "yearPublished": "1987",
-        "slug": "the-rules-of-attraction-by-bret-easton-ellis",
-        "grade": "C+",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Bret Easton Ellis",
-            "notes": null
-          }
-        ],
-        "gradeValue": 7,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Rules of Attraction",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "Sacculina",
-        "kind": "Novella",
-        "yearPublished": "2017",
-        "slug": "sacculina-by-philip-fracassi",
-        "grade": "B",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Philip Fracassi",
-            "notes": null
-          }
-        ],
-        "gradeValue": 9,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Sacculina",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "The Secret History",
-        "kind": "Novel",
-        "yearPublished": "1992",
-        "slug": "the-secret-history-by-donna-tartt",
-        "grade": "A",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Donna Tartt",
-            "notes": null
-          }
-        ],
-        "gradeValue": 12,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Secret History",
-        "subtitle": null,
-        "yearReviewed": 2022
+        "workYear": "2000",
+        "reviewYear": "2022"
       }
     ],
     "includedWorks": [],
     "reviewDate": "2023-01-21",
-    "reviewSequence": "2023-01-21-1"
+    "reviewSequence": 137,
+    "workYearSequence": 47,
+    "authorSequence": 47,
+    "titleSequence": 47,
+    "gradeSequence": 47,
+    "reviewYear": "2023",
+    "reviewed": true,
+    "workYear": "1991"
   },
   {
     "slug": "salems-lot-by-stephen-king",
     "title": "'Salem's Lot",
     "subtitle": null,
     "sortTitle": "'Salem's Lot",
-    "yearPublished": "1975",
     "grade": "B",
     "gradeValue": 9,
     "kind": "Novel",
@@ -3818,7 +2170,6 @@
       }
     ],
     "includedInSlugs": [],
-    "yearReviewed": 2022,
     "moreByAuthors": [
       {
         "name": "Stephen King",
@@ -3826,89 +2177,8 @@
         "sortName": "King, Stephen",
         "reviewedWorks": [
           {
-            "title": "On Writing",
-            "kind": "Nonfiction",
-            "yearPublished": "2000",
-            "slug": "on-writing-by-stephen-king",
-            "grade": "A-",
-            "includedInSlugs": [],
-            "authors": [
-              {
-                "name": "Stephen King",
-                "notes": null
-              }
-            ],
-            "gradeValue": 11,
-            "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
-            "sortTitle": "On Writing",
-            "subtitle": null,
-            "yearReviewed": 2022
-          },
-          {
-            "title": "Doctor Sleep",
-            "kind": "Novel",
-            "yearPublished": "2013",
-            "slug": "doctor-sleep-by-stephen-king",
-            "grade": "C+",
-            "includedInSlugs": [],
-            "authors": [
-              {
-                "name": "Stephen King",
-                "notes": null
-              }
-            ],
-            "gradeValue": 7,
-            "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
-            "sortTitle": "Doctor Sleep",
-            "subtitle": null,
-            "yearReviewed": 2022
-          },
-          {
-            "title": "Carrie",
-            "kind": "Novel",
-            "yearPublished": "1974",
-            "slug": "carrie-by-stephen-king",
-            "grade": "B-",
-            "includedInSlugs": [],
-            "authors": [
-              {
-                "name": "Stephen King",
-                "notes": null
-              }
-            ],
-            "gradeValue": 8,
-            "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
-            "sortTitle": "Carrie",
-            "subtitle": null,
-            "yearReviewed": 2022
-          },
-          {
-            "title": "Rage",
-            "kind": "Novel",
-            "yearPublished": "1976",
-            "slug": "rage-by-stephen-king",
-            "grade": "C",
-            "includedInSlugs": [],
-            "authors": [
-              {
-                "name": "Stephen King",
-                "notes": "as Richard Bachman"
-              }
-            ],
-            "gradeValue": 6,
-            "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
-            "sortTitle": "Rage",
-            "subtitle": null,
-            "yearReviewed": 2022
-          },
-          {
             "title": "The Shining",
             "kind": "Novel",
-            "yearPublished": "1977",
             "slug": "the-shining-by-stephen-king",
             "grade": "B",
             "includedInSlugs": [],
@@ -3920,79 +2190,23 @@
             ],
             "gradeValue": 9,
             "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
+            "reviewSequence": 161,
             "sortTitle": "Shining",
             "subtitle": null,
-            "yearReviewed": 2022
-          },
-          {
-            "title": "The Long Walk",
-            "kind": "Novel",
-            "yearPublished": "1978",
-            "slug": "the-long-walk-by-stephen-king",
-            "grade": "D",
-            "includedInSlugs": [],
-            "authors": [
-              {
-                "name": "Stephen King",
-                "notes": "as Richard Bachman"
-              }
-            ],
-            "gradeValue": 3,
-            "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
-            "sortTitle": "Long Walk",
-            "subtitle": null,
-            "yearReviewed": 2022
+            "workYear": "1977",
+            "workYearSequence": 59,
+            "authorSequence": 59,
+            "titleSequence": 59,
+            "gradeSequence": 59,
+            "reviewYear": "2022"
           }
         ]
       }
     ],
     "moreReviews": [
       {
-        "title": "True Myths",
-        "kind": "Nonfiction",
-        "yearPublished": "1996",
-        "slug": "true-myths-by-nigel-andrews",
-        "grade": "D+",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Nigel Andrews",
-            "notes": null
-          }
-        ],
-        "gradeValue": 4,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "True Myths",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "What Doesn't Kill Us",
-        "kind": "Nonfiction",
-        "yearPublished": "2017",
-        "slug": "what-doesnt-kill-us-by-scott-carney",
-        "grade": "C+",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Scott Carney",
-            "notes": null
-          }
-        ],
-        "gradeValue": 7,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "What Doesn't Kill Us",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
         "title": "The Woods Are Dark",
         "kind": "Novel",
-        "yearPublished": "1981",
         "slug": "the-woods-are-dark-by-richard-laymon",
         "grade": "C+",
         "includedInSlugs": [],
@@ -4004,35 +2218,15 @@
         ],
         "gradeValue": 7,
         "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
+        "reviewSequence": 153,
         "sortTitle": "Woods Are Dark",
         "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "The 48 Laws of Power",
-        "kind": "Nonfiction",
-        "yearPublished": "1998",
-        "slug": "the-48-laws-of-power-by-robert-greene",
-        "grade": "D+",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Robert Greene",
-            "notes": null
-          }
-        ],
-        "gradeValue": 4,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "48 Laws of Power",
-        "subtitle": null,
-        "yearReviewed": 2022
+        "workYear": "1981",
+        "reviewYear": "2022"
       },
       {
         "title": "About Face",
         "kind": "Nonfiction",
-        "yearPublished": "1989",
         "slug": "about-face-by-david-h-hackworth-julie-sherman",
         "grade": "A-",
         "includedInSlugs": [],
@@ -4048,15 +2242,15 @@
         ],
         "gradeValue": 11,
         "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
+        "reviewSequence": 155,
         "sortTitle": "About Face",
         "subtitle": null,
-        "yearReviewed": 2022
+        "workYear": "2000",
+        "reviewYear": "2022"
       },
       {
         "title": "Altar",
         "kind": "Short Story",
-        "yearPublished": "2016",
         "slug": "altar-by-philip-fracassi",
         "grade": "A-",
         "includedInSlugs": [
@@ -4070,22 +2264,29 @@
         ],
         "gradeValue": 11,
         "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
+        "reviewSequence": 156,
         "sortTitle": "Altar",
         "subtitle": null,
-        "yearReviewed": 2022
+        "workYear": "2000",
+        "reviewYear": "2022"
       }
     ],
     "includedWorks": [],
     "reviewDate": "2022-10-14",
-    "reviewSequence": "2022-10-14-1"
+    "reviewSequence": 150,
+    "workYearSequence": 54,
+    "authorSequence": 54,
+    "titleSequence": 54,
+    "gradeSequence": 54,
+    "reviewYear": "2022",
+    "reviewed": true,
+    "workYear": "1975"
   },
   {
     "slug": "soft-construction-of-a-sunset-by-philip-fracassi",
     "title": "Soft Construction of a Sunset",
     "subtitle": null,
     "sortTitle": "Soft Construction of a Sunset",
-    "yearPublished": "2017",
     "grade": "B-",
     "gradeValue": 8,
     "kind": "Short Story",
@@ -4109,7 +2310,6 @@
     "includedInSlugs": [
       "behold-the-void-by-philip-fracassi"
     ],
-    "yearReviewed": 2022,
     "moreByAuthors": [
       {
         "name": "Philip Fracassi",
@@ -4117,31 +2317,8 @@
         "sortName": "Fracassi, Philip",
         "reviewedWorks": [
           {
-            "title": "The Horse Thief",
-            "kind": "Short Story",
-            "yearPublished": "2017",
-            "slug": "the-horse-thief-by-philip-fracassi",
-            "grade": "B",
-            "includedInSlugs": [
-              "behold-the-void-by-philip-fracassi"
-            ],
-            "authors": [
-              {
-                "name": "Philip Fracassi",
-                "notes": null
-              }
-            ],
-            "gradeValue": 9,
-            "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
-            "sortTitle": "Horse Thief",
-            "subtitle": null,
-            "yearReviewed": 2022
-          },
-          {
             "title": "Mandala",
             "kind": "Novella",
-            "yearPublished": "2017",
             "slug": "mandala-by-philip-fracassi",
             "grade": "B+",
             "includedInSlugs": [
@@ -4155,121 +2332,23 @@
             ],
             "gradeValue": 10,
             "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
+            "reviewSequence": 171,
             "sortTitle": "Mandala",
             "subtitle": null,
-            "yearReviewed": 2022
-          },
-          {
-            "title": "Sacculina",
-            "kind": "Novella",
-            "yearPublished": "2017",
-            "slug": "sacculina-by-philip-fracassi",
-            "grade": "B",
-            "includedInSlugs": [],
-            "authors": [
-              {
-                "name": "Philip Fracassi",
-                "notes": null
-              }
-            ],
-            "gradeValue": 9,
-            "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
-            "sortTitle": "Sacculina",
-            "subtitle": null,
-            "yearReviewed": 2022
-          },
-          {
-            "title": "Surfer Girl",
-            "kind": "Short Story",
-            "yearPublished": "2017",
-            "slug": "surfer-girl-by-philip-fracassi",
-            "grade": "C+",
-            "includedInSlugs": [
-              "behold-the-void-by-philip-fracassi"
-            ],
-            "authors": [
-              {
-                "name": "Philip Fracassi",
-                "notes": null
-              }
-            ],
-            "gradeValue": 7,
-            "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
-            "sortTitle": "Surfer Girl",
-            "subtitle": null,
-            "yearReviewed": 2022
-          },
-          {
-            "title": "Don't Let Them Get You Down",
-            "kind": "Novel",
-            "yearPublished": "2022",
-            "slug": "dont-let-them-get-you-down-by-philip-fracassi",
-            "grade": "C-",
-            "includedInSlugs": [],
-            "authors": [
-              {
-                "name": "Philip Fracassi",
-                "notes": null
-              }
-            ],
-            "gradeValue": 5,
-            "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
-            "sortTitle": "Don't Let Them Get You Down",
-            "subtitle": null,
-            "yearReviewed": 2022
-          },
-          {
-            "title": "Gothic",
-            "kind": "Novel",
-            "yearPublished": "2023",
-            "slug": "gothic-by-philip-fracassi",
-            "grade": "B+",
-            "includedInSlugs": [],
-            "authors": [
-              {
-                "name": "Philip Fracassi",
-                "notes": null
-              }
-            ],
-            "gradeValue": 10,
-            "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
-            "sortTitle": "Gothic",
-            "subtitle": null,
-            "yearReviewed": 2022
+            "workYear": "2017",
+            "workYearSequence": 63,
+            "authorSequence": 63,
+            "titleSequence": 63,
+            "gradeSequence": 63,
+            "reviewYear": "2022"
           }
         ]
       }
     ],
     "moreReviews": [
       {
-        "title": "Set the Boy Free",
-        "kind": "Nonfiction",
-        "yearPublished": "2016",
-        "slug": "set-the-boy-free-by-johnny-marr",
-        "grade": "B+",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Johnny Marr",
-            "notes": null
-          }
-        ],
-        "gradeValue": 10,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Set the Boy Free",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
         "title": "The Shining",
         "kind": "Novel",
-        "yearPublished": "1977",
         "slug": "the-shining-by-stephen-king",
         "grade": "B",
         "includedInSlugs": [],
@@ -4281,15 +2360,15 @@
         ],
         "gradeValue": 9,
         "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
+        "reviewSequence": 165,
         "sortTitle": "Shining",
         "subtitle": null,
-        "yearReviewed": 2022
+        "workYear": "2000",
+        "reviewYear": "2022"
       },
       {
         "title": "The Skeptics' Guide to the Universe",
         "kind": "Nonfiction",
-        "yearPublished": "2018",
         "slug": "the-skeptics-guide-to-the-universe-by-steven-novella",
         "grade": "B+",
         "includedInSlugs": [],
@@ -4301,82 +2380,29 @@
         ],
         "gradeValue": 10,
         "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
+        "reviewSequence": 166,
         "sortTitle": "Skeptics' Guide to the Universe",
         "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "The Stand",
-        "kind": "Novel",
-        "yearPublished": "1978",
-        "slug": "the-stand-by-stephen-king",
-        "grade": "D",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Stephen King",
-            "notes": null
-          }
-        ],
-        "gradeValue": 3,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Stand",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "The M.A.X. Muscle Plan",
-        "kind": "Nonfiction",
-        "yearPublished": "2012",
-        "slug": "the-max-muscle-plan-by-brad-schoenfeld",
-        "grade": "C-",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Brad Schoenfeld",
-            "notes": null
-          }
-        ],
-        "gradeValue": 5,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "M.A.X. Muscle Plan",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "Total Recall",
-        "kind": "Nonfiction",
-        "yearPublished": "2012",
-        "slug": "total-recall-by-arnold-schwarzenegger",
-        "grade": "C+",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Arnold Schwarzenegger",
-            "notes": null
-          }
-        ],
-        "gradeValue": 7,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Total Recall",
-        "subtitle": null,
-        "yearReviewed": 2022
+        "workYear": "2000",
+        "reviewYear": "2022"
       }
     ],
     "includedWorks": [],
     "reviewDate": "2022-04-17",
-    "reviewSequence": "2022-04-17-1"
+    "reviewSequence": 163,
+    "workYearSequence": 61,
+    "authorSequence": 61,
+    "titleSequence": 61,
+    "gradeSequence": 61,
+    "reviewYear": "2022",
+    "reviewed": true,
+    "workYear": "2016"
   },
   {
     "slug": "the-cellar-by-richard-laymon",
     "title": "The Cellar",
     "subtitle": null,
     "sortTitle": "Cellar, The",
-    "yearPublished": "1980",
     "grade": "C+",
     "gradeValue": 7,
     "kind": "Novel",
@@ -4405,7 +2431,6 @@
       }
     ],
     "includedInSlugs": [],
-    "yearReviewed": 2022,
     "moreByAuthors": [
       {
         "name": "Richard Laymon",
@@ -4415,7 +2440,6 @@
           {
             "title": "Tread Softly",
             "kind": "Novel",
-            "yearPublished": "1987",
             "slug": "tread-softly-by-richard-laymon",
             "grade": "C",
             "includedInSlugs": [],
@@ -4427,37 +2451,19 @@
             ],
             "gradeValue": 6,
             "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
+            "reviewSequence": 183,
             "sortTitle": "Tread Softly",
             "subtitle": null,
-            "yearReviewed": 2022
-          },
-          {
-            "title": "Desert Pickup",
-            "kind": "Short Story",
-            "yearPublished": "1970",
-            "slug": "desert-pickup-by-richard-laymon",
-            "grade": "C-",
-            "includedInSlugs": [
-              "short-stories-volume-one-by-richard-laymon"
-            ],
-            "authors": [
-              {
-                "name": "Richard Laymon",
-                "notes": null
-              }
-            ],
-            "gradeValue": 5,
-            "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
-            "sortTitle": "Desert Pickup",
-            "subtitle": null,
-            "yearReviewed": 2022
+            "workYear": "1987",
+            "workYearSequence": 69,
+            "authorSequence": 69,
+            "titleSequence": 69,
+            "gradeSequence": 69,
+            "reviewYear": "2022"
           },
           {
             "title": "Roadside Pickup",
             "kind": "Short Story",
-            "yearPublished": "1974",
             "slug": "roadside-pickup-by-richard-laymon",
             "grade": "C-",
             "includedInSlugs": [
@@ -4471,15 +2477,19 @@
             ],
             "gradeValue": 5,
             "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
+            "reviewSequence": 185,
             "sortTitle": "Roadside Pickup",
             "subtitle": null,
-            "yearReviewed": 2022
+            "workYear": "1974",
+            "workYearSequence": 71,
+            "authorSequence": 71,
+            "titleSequence": 71,
+            "gradeSequence": 71,
+            "reviewYear": "2022"
           },
           {
             "title": "The Woods Are Dark",
             "kind": "Novel",
-            "yearPublished": "1981",
             "slug": "the-woods-are-dark-by-richard-laymon",
             "grade": "C+",
             "includedInSlugs": [],
@@ -4491,15 +2501,19 @@
             ],
             "gradeValue": 7,
             "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
+            "reviewSequence": 186,
             "sortTitle": "Woods Are Dark",
             "subtitle": null,
-            "yearReviewed": 2022
+            "workYear": "1981",
+            "workYearSequence": 72,
+            "authorSequence": 72,
+            "titleSequence": 72,
+            "gradeSequence": 72,
+            "reviewYear": "2022"
           },
           {
             "title": "Out Are the Lights",
             "kind": "Novel",
-            "yearPublished": "1982",
             "slug": "out-are-the-lights-by-richard-laymon",
             "grade": "C-",
             "includedInSlugs": [
@@ -4513,15 +2527,19 @@
             ],
             "gradeValue": 5,
             "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
+            "reviewSequence": 187,
             "sortTitle": "Out Are the Lights",
             "subtitle": null,
-            "yearReviewed": 2022
+            "workYear": "1982",
+            "workYearSequence": 73,
+            "authorSequence": 73,
+            "titleSequence": 73,
+            "gradeSequence": 73,
+            "reviewYear": "2022"
           },
           {
             "title": "The Intruder",
             "kind": "Short Story",
-            "yearPublished": "1984",
             "slug": "the-intruder-by-richard-laymon",
             "grade": "C",
             "includedInSlugs": [],
@@ -4533,59 +2551,23 @@
             ],
             "gradeValue": 6,
             "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
+            "reviewSequence": 188,
             "sortTitle": "Intruder",
             "subtitle": null,
-            "yearReviewed": 2022
+            "workYear": "1984",
+            "workYearSequence": 74,
+            "authorSequence": 74,
+            "titleSequence": 74,
+            "gradeSequence": 74,
+            "reviewYear": "2022"
           }
         ]
       }
     ],
     "moreReviews": [
       {
-        "title": "Carrie",
-        "kind": "Novel",
-        "yearPublished": "1974",
-        "slug": "carrie-by-stephen-king",
-        "grade": "B-",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Stephen King",
-            "notes": null
-          }
-        ],
-        "gradeValue": 8,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Carrie",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "Cary Grant",
-        "kind": "Nonfiction",
-        "yearPublished": "2004",
-        "slug": "cary-grant-by-marc-eliot",
-        "grade": "C",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Marc Eliot",
-            "notes": null
-          }
-        ],
-        "gradeValue": 6,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Cary Grant",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
         "title": "Casino Royale",
         "kind": "Novel",
-        "yearPublished": "1953",
         "slug": "casino-royale-by-ian-fleming",
         "grade": "B-",
         "includedInSlugs": [],
@@ -4597,15 +2579,15 @@
         ],
         "gradeValue": 8,
         "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
+        "reviewSequence": 179,
         "sortTitle": "Casino Royale",
         "subtitle": null,
-        "yearReviewed": 2022
+        "workYear": "2000",
+        "reviewYear": "2022"
       },
       {
         "title": "Churchill",
         "kind": "Nonfiction",
-        "yearPublished": "2018",
         "slug": "churchill-by-andrew-roberts",
         "grade": "A-",
         "includedInSlugs": [],
@@ -4617,64 +2599,29 @@
         ],
         "gradeValue": 11,
         "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
+        "reviewSequence": 180,
         "sortTitle": "Churchill",
         "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "The Cipher",
-        "kind": "Novel",
-        "yearPublished": "1991",
-        "slug": "the-cipher-by-kathe-koja",
-        "grade": "B",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Kathe Koja",
-            "notes": null
-          }
-        ],
-        "gradeValue": 9,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Cipher",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "Coffin",
-        "kind": "Short Story",
-        "yearPublished": "2017",
-        "slug": "coffin-by-philip-fracassi",
-        "grade": "C+",
-        "includedInSlugs": [
-          "behold-the-void-by-philip-fracassi"
-        ],
-        "authors": [
-          {
-            "name": "Philip Fracassi",
-            "notes": null
-          }
-        ],
-        "gradeValue": 7,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Coffin",
-        "subtitle": null,
-        "yearReviewed": 2022
+        "workYear": "2000",
+        "reviewYear": "2022"
       }
     ],
     "includedWorks": [],
     "reviewDate": "2022-03-16",
-    "reviewSequence": "2022-03-16-1"
+    "reviewSequence": 176,
+    "workYearSequence": 68,
+    "authorSequence": 68,
+    "titleSequence": 68,
+    "gradeSequence": 68,
+    "reviewYear": "2022",
+    "reviewed": true,
+    "workYear": "1980"
   },
   {
     "slug": "the-intruder-by-richard-laymon",
     "title": "The Intruder",
     "subtitle": null,
     "sortTitle": "Intruder",
-    "yearPublished": "1984",
     "grade": "C",
     "gradeValue": 6,
     "kind": "Short Story",
@@ -4696,7 +2643,6 @@
       }
     ],
     "includedInSlugs": [],
-    "yearReviewed": 2014,
     "moreByAuthors": [
       {
         "name": "Richard Laymon",
@@ -4706,7 +2652,6 @@
           {
             "title": "The Cellar",
             "kind": "Novel",
-            "yearPublished": "1980",
             "slug": "the-cellar-by-richard-laymon",
             "grade": "C+",
             "includedInSlugs": [],
@@ -4718,15 +2663,19 @@
             ],
             "gradeValue": 7,
             "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
+            "reviewSequence": 196,
             "sortTitle": "Cellar",
             "subtitle": null,
-            "yearReviewed": 2022
+            "workYear": "1980",
+            "workYearSequence": 76,
+            "authorSequence": 76,
+            "titleSequence": 76,
+            "gradeSequence": 76,
+            "reviewYear": "2022"
           },
           {
             "title": "The Woods Are Dark",
             "kind": "Novel",
-            "yearPublished": "1981",
             "slug": "the-woods-are-dark-by-richard-laymon",
             "grade": "C+",
             "includedInSlugs": [],
@@ -4738,15 +2687,19 @@
             ],
             "gradeValue": 7,
             "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
+            "reviewSequence": 197,
             "sortTitle": "Woods Are Dark",
             "subtitle": null,
-            "yearReviewed": 2022
+            "workYear": "1981",
+            "workYearSequence": 77,
+            "authorSequence": 77,
+            "titleSequence": 77,
+            "gradeSequence": 77,
+            "reviewYear": "2022"
           },
           {
             "title": "Out Are the Lights",
             "kind": "Novel",
-            "yearPublished": "1982",
             "slug": "out-are-the-lights-by-richard-laymon",
             "grade": "C-",
             "includedInSlugs": [
@@ -4760,55 +2713,19 @@
             ],
             "gradeValue": 5,
             "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
+            "reviewSequence": 198,
             "sortTitle": "Out Are the Lights",
             "subtitle": null,
-            "yearReviewed": 2022
-          },
-          {
-            "title": "Beware!",
-            "kind": "Novel",
-            "yearPublished": "1985",
-            "slug": "beware-by-richard-laymon",
-            "grade": "C",
-            "includedInSlugs": [],
-            "authors": [
-              {
-                "name": "Richard Laymon",
-                "notes": null
-              }
-            ],
-            "gradeValue": 6,
-            "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
-            "sortTitle": "Beware!",
-            "subtitle": null,
-            "yearReviewed": 2022
-          },
-          {
-            "title": "The Last Hand",
-            "kind": "Short Story",
-            "yearPublished": "1985",
-            "slug": "the-last-hand-by-richard-laymon",
-            "grade": "D",
-            "includedInSlugs": [],
-            "authors": [
-              {
-                "name": "Richard Laymon",
-                "notes": null
-              }
-            ],
-            "gradeValue": 3,
-            "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
-            "sortTitle": "Last Hand",
-            "subtitle": null,
-            "yearReviewed": 2022
+            "workYear": "1982",
+            "workYearSequence": 78,
+            "authorSequence": 78,
+            "titleSequence": 78,
+            "gradeSequence": 78,
+            "reviewYear": "2022"
           },
           {
             "title": "The Lonely One",
             "kind": "Short Story",
-            "yearPublished": "1985",
             "slug": "the-lonely-one-by-richard-laymon",
             "grade": "C+",
             "includedInSlugs": [],
@@ -4820,148 +2737,36 @@
             ],
             "gradeValue": 7,
             "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
+            "reviewSequence": 201,
             "sortTitle": "Lonely One",
             "subtitle": null,
-            "yearReviewed": 2022
+            "workYear": "1985",
+            "workYearSequence": 81,
+            "authorSequence": 81,
+            "titleSequence": 81,
+            "gradeSequence": 81,
+            "reviewYear": "2022"
           }
         ]
       }
     ],
-    "moreReviews": [
-      {
-        "title": "Hawk Mountain",
-        "kind": "Novel",
-        "yearPublished": "2022",
-        "slug": "hawk-mountain-by-conner-habib",
-        "grade": "C+",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Conner Habib",
-            "notes": null
-          }
-        ],
-        "gradeValue": 7,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Hawk Mountain",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "The Horse Thief",
-        "kind": "Short Story",
-        "yearPublished": "2017",
-        "slug": "the-horse-thief-by-philip-fracassi",
-        "grade": "B",
-        "includedInSlugs": [
-          "behold-the-void-by-philip-fracassi"
-        ],
-        "authors": [
-          {
-            "name": "Philip Fracassi",
-            "notes": null
-          }
-        ],
-        "gradeValue": 9,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Horse Thief",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "I Will Find You",
-        "kind": "Nonfiction",
-        "yearPublished": "2017",
-        "slug": "i-will-find-you-by-joe-kenda",
-        "grade": "B",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Joe Kenda",
-            "notes": null
-          }
-        ],
-        "gradeValue": 9,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "I Will Find You",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "Is This Anything?",
-        "kind": "Nonfiction",
-        "yearPublished": "2020",
-        "slug": "is-this-anything-by-jerry-seinfeld",
-        "grade": "C",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Jerry Seinfeld",
-            "notes": null
-          }
-        ],
-        "gradeValue": 6,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Is This Anything?",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "Less Than Zero",
-        "kind": "Novel",
-        "yearPublished": "1985",
-        "slug": "less-than-zero-by-bret-easton-ellis",
-        "grade": "B+",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Bret Easton Ellis",
-            "notes": null
-          }
-        ],
-        "gradeValue": 10,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Less Than Zero",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "Live and Let Die",
-        "kind": "Novel",
-        "yearPublished": "1954",
-        "slug": "live-and-let-die-by-ian-fleming",
-        "grade": "D",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Ian Fleming",
-            "notes": null
-          }
-        ],
-        "gradeValue": 3,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Live and Let Die",
-        "subtitle": null,
-        "yearReviewed": 2022
-      }
-    ],
+    "moreReviews": [],
     "includedWorks": [],
     "reviewDate": "2014-07-23",
-    "reviewSequence": "2014-07-23-1"
+    "reviewSequence": 189,
+    "workYearSequence": 75,
+    "authorSequence": 75,
+    "titleSequence": 75,
+    "gradeSequence": 75,
+    "reviewYear": "2014",
+    "reviewed": true,
+    "workYear": "1983"
   },
   {
     "slug": "the-lonely-one-by-richard-laymon",
     "title": "The Lonely One",
     "subtitle": null,
     "sortTitle": "Lonely One",
-    "yearPublished": "1985",
     "grade": "C+",
     "gradeValue": 7,
     "kind": "Short Story",
@@ -4997,7 +2802,6 @@
       }
     ],
     "includedInSlugs": [],
-    "yearReviewed": 2025,
     "moreByAuthors": [
       {
         "name": "Richard Laymon",
@@ -5007,7 +2811,6 @@
           {
             "title": "The Intruder",
             "kind": "Short Story",
-            "yearPublished": "1984",
             "slug": "the-intruder-by-richard-laymon",
             "grade": "C",
             "includedInSlugs": [],
@@ -5019,55 +2822,19 @@
             ],
             "gradeValue": 6,
             "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
+            "reviewSequence": 209,
             "sortTitle": "Intruder",
             "subtitle": null,
-            "yearReviewed": 2022
-          },
-          {
-            "title": "Beware!",
-            "kind": "Novel",
-            "yearPublished": "1985",
-            "slug": "beware-by-richard-laymon",
-            "grade": "C",
-            "includedInSlugs": [],
-            "authors": [
-              {
-                "name": "Richard Laymon",
-                "notes": null
-              }
-            ],
-            "gradeValue": 6,
-            "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
-            "sortTitle": "Beware!",
-            "subtitle": null,
-            "yearReviewed": 2022
-          },
-          {
-            "title": "The Last Hand",
-            "kind": "Short Story",
-            "yearPublished": "1985",
-            "slug": "the-last-hand-by-richard-laymon",
-            "grade": "D",
-            "includedInSlugs": [],
-            "authors": [
-              {
-                "name": "Richard Laymon",
-                "notes": null
-              }
-            ],
-            "gradeValue": 3,
-            "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
-            "sortTitle": "Last Hand",
-            "subtitle": null,
-            "yearReviewed": 2022
+            "workYear": "1984",
+            "workYearSequence": 83,
+            "authorSequence": 83,
+            "titleSequence": 83,
+            "gradeSequence": 83,
+            "reviewYear": "2022"
           },
           {
             "title": "Tread Softly",
             "kind": "Novel",
-            "yearPublished": "1987",
             "slug": "tread-softly-by-richard-laymon",
             "grade": "C",
             "includedInSlugs": [],
@@ -5079,37 +2846,19 @@
             ],
             "gradeValue": 6,
             "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
+            "reviewSequence": 212,
             "sortTitle": "Tread Softly",
             "subtitle": null,
-            "yearReviewed": 2022
-          },
-          {
-            "title": "Desert Pickup",
-            "kind": "Short Story",
-            "yearPublished": "1970",
-            "slug": "desert-pickup-by-richard-laymon",
-            "grade": "C-",
-            "includedInSlugs": [
-              "short-stories-volume-one-by-richard-laymon"
-            ],
-            "authors": [
-              {
-                "name": "Richard Laymon",
-                "notes": null
-              }
-            ],
-            "gradeValue": 5,
-            "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
-            "sortTitle": "Desert Pickup",
-            "subtitle": null,
-            "yearReviewed": 2022
+            "workYear": "1987",
+            "workYearSequence": 86,
+            "authorSequence": 86,
+            "titleSequence": 86,
+            "gradeSequence": 86,
+            "reviewYear": "2022"
           },
           {
             "title": "Roadside Pickup",
             "kind": "Short Story",
-            "yearPublished": "1974",
             "slug": "roadside-pickup-by-richard-laymon",
             "grade": "C-",
             "includedInSlugs": [
@@ -5123,59 +2872,23 @@
             ],
             "gradeValue": 5,
             "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
+            "reviewSequence": 214,
             "sortTitle": "Roadside Pickup",
             "subtitle": null,
-            "yearReviewed": 2022
+            "workYear": "1974",
+            "workYearSequence": 88,
+            "authorSequence": 88,
+            "titleSequence": 88,
+            "gradeSequence": 88,
+            "reviewYear": "2022"
           }
         ]
       }
     ],
     "moreReviews": [
       {
-        "title": "Less Than Zero",
-        "kind": "Novel",
-        "yearPublished": "1985",
-        "slug": "less-than-zero-by-bret-easton-ellis",
-        "grade": "B+",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Bret Easton Ellis",
-            "notes": null
-          }
-        ],
-        "gradeValue": 10,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Less Than Zero",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "Live and Let Die",
-        "kind": "Novel",
-        "yearPublished": "1954",
-        "slug": "live-and-let-die-by-ian-fleming",
-        "grade": "D",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Ian Fleming",
-            "notes": null
-          }
-        ],
-        "gradeValue": 3,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Live and Let Die",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
         "title": "Living with a SEAL",
         "kind": "Nonfiction",
-        "yearPublished": "2015",
         "slug": "living-with-a-seal-by-jesse-itzler",
         "grade": "Abandoned",
         "includedInSlugs": [],
@@ -5187,35 +2900,15 @@
         ],
         "gradeValue": 0,
         "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
+        "reviewSequence": 205,
         "sortTitle": "Living with a SEAL",
         "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "The Long Walk",
-        "kind": "Novel",
-        "yearPublished": "1978",
-        "slug": "the-long-walk-by-stephen-king",
-        "grade": "D",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Stephen King",
-            "notes": "as Richard Bachman"
-          }
-        ],
-        "gradeValue": 3,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Long Walk",
-        "subtitle": null,
-        "yearReviewed": 2022
+        "workYear": "2000",
+        "reviewYear": "2022"
       },
       {
         "title": "Mandala",
         "kind": "Novella",
-        "yearPublished": "2017",
         "slug": "mandala-by-philip-fracassi",
         "grade": "B+",
         "includedInSlugs": [
@@ -5229,42 +2922,29 @@
         ],
         "gradeValue": 10,
         "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
+        "reviewSequence": 207,
         "sortTitle": "Mandala",
         "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "Moonraker",
-        "kind": "Novel",
-        "yearPublished": "1955",
-        "slug": "moonraker-by-ian-fleming",
-        "grade": "B",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Ian Fleming",
-            "notes": null
-          }
-        ],
-        "gradeValue": 9,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Moonraker",
-        "subtitle": null,
-        "yearReviewed": 2022
+        "workYear": "2000",
+        "reviewYear": "2022"
       }
     ],
     "includedWorks": [],
     "reviewDate": "2025-02-15",
-    "reviewSequence": "2025-02-15-1"
+    "reviewSequence": 202,
+    "workYearSequence": 82,
+    "authorSequence": 82,
+    "titleSequence": 82,
+    "gradeSequence": 82,
+    "reviewYear": "2025",
+    "reviewed": true,
+    "workYear": "1986"
   },
   {
     "slug": "the-rise-of-theodore-roosevelt-by-edmund-morris",
     "title": "The Rise of Theodore Roosevelt",
     "subtitle": null,
     "sortTitle": "Rise of Theodore Roosevelt",
-    "yearPublished": "1979",
     "grade": "A-",
     "gradeValue": 11,
     "kind": "Nonfiction",
@@ -5286,53 +2966,11 @@
       }
     ],
     "includedInSlugs": [],
-    "yearReviewed": 2022,
     "moreByAuthors": [],
     "moreReviews": [
       {
-        "title": "Recessional",
-        "kind": "Nonfiction",
-        "yearPublished": "2022",
-        "slug": "recessional-by-david-mamet",
-        "grade": "D",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "David Mamet",
-            "notes": null
-          }
-        ],
-        "gradeValue": 3,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Recessional",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "Record Play Pause",
-        "kind": "Nonfiction",
-        "yearPublished": "2019",
-        "slug": "record-play-pause-by-stephen-morris",
-        "grade": "A",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Stephen Morris",
-            "notes": null
-          }
-        ],
-        "gradeValue": 12,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Record Play Pause",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
         "title": "Refugee",
         "kind": "Novel",
-        "yearPublished": "1983",
         "slug": "refugee-by-piers-anthony",
         "grade": "Abandoned",
         "includedInSlugs": [],
@@ -5344,15 +2982,15 @@
         ],
         "gradeValue": 0,
         "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
+        "reviewSequence": 218,
         "sortTitle": "Refugee",
         "subtitle": null,
-        "yearReviewed": 2022
+        "workYear": "2000",
+        "reviewYear": "2022"
       },
       {
         "title": "Roadside Pickup",
         "kind": "Short Story",
-        "yearPublished": "1974",
         "slug": "roadside-pickup-by-richard-laymon",
         "grade": "C-",
         "includedInSlugs": [
@@ -5366,62 +3004,29 @@
         ],
         "gradeValue": 5,
         "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
+        "reviewSequence": 219,
         "sortTitle": "Roadside Pickup",
         "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "The Rules of Attraction",
-        "kind": "Novel",
-        "yearPublished": "1987",
-        "slug": "the-rules-of-attraction-by-bret-easton-ellis",
-        "grade": "C+",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Bret Easton Ellis",
-            "notes": null
-          }
-        ],
-        "gradeValue": 7,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Rules of Attraction",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "Sacculina",
-        "kind": "Novella",
-        "yearPublished": "2017",
-        "slug": "sacculina-by-philip-fracassi",
-        "grade": "B",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Philip Fracassi",
-            "notes": null
-          }
-        ],
-        "gradeValue": 9,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Sacculina",
-        "subtitle": null,
-        "yearReviewed": 2022
+        "workYear": "2000",
+        "reviewYear": "2022"
       }
     ],
     "includedWorks": [],
     "reviewDate": "2022-05-07",
-    "reviewSequence": "2022-05-07-3"
+    "reviewSequence": 215,
+    "workYearSequence": 89,
+    "authorSequence": 89,
+    "titleSequence": 89,
+    "gradeSequence": 89,
+    "reviewYear": "2022",
+    "reviewed": true,
+    "workYear": "1979"
   },
   {
     "slug": "the-shining-by-stephen-king",
     "title": "The Shining",
     "subtitle": null,
     "sortTitle": "Shining",
-    "yearPublished": "1977",
     "grade": "B",
     "gradeValue": 9,
     "kind": "Novel",
@@ -5450,7 +3055,6 @@
       }
     ],
     "includedInSlugs": [],
-    "yearReviewed": 2022,
     "moreByAuthors": [
       {
         "name": "Stephen King",
@@ -5458,29 +3062,8 @@
         "sortName": "King, Stephen",
         "reviewedWorks": [
           {
-            "title": "Carrie",
-            "kind": "Novel",
-            "yearPublished": "1974",
-            "slug": "carrie-by-stephen-king",
-            "grade": "B-",
-            "includedInSlugs": [],
-            "authors": [
-              {
-                "name": "Stephen King",
-                "notes": null
-              }
-            ],
-            "gradeValue": 8,
-            "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
-            "sortTitle": "Carrie",
-            "subtitle": null,
-            "yearReviewed": 2022
-          },
-          {
             "title": "'Salem's Lot",
             "kind": "Novel",
-            "yearPublished": "1975",
             "slug": "salems-lot-by-stephen-king",
             "grade": "B",
             "includedInSlugs": [],
@@ -5492,55 +3075,19 @@
             ],
             "gradeValue": 9,
             "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
+            "reviewSequence": 230,
             "sortTitle": "'Salem's Lot",
             "subtitle": null,
-            "yearReviewed": 2022
-          },
-          {
-            "title": "Rage",
-            "kind": "Novel",
-            "yearPublished": "1976",
-            "slug": "rage-by-stephen-king",
-            "grade": "C",
-            "includedInSlugs": [],
-            "authors": [
-              {
-                "name": "Stephen King",
-                "notes": "as Richard Bachman"
-              }
-            ],
-            "gradeValue": 6,
-            "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
-            "sortTitle": "Rage",
-            "subtitle": null,
-            "yearReviewed": 2022
-          },
-          {
-            "title": "The Long Walk",
-            "kind": "Novel",
-            "yearPublished": "1978",
-            "slug": "the-long-walk-by-stephen-king",
-            "grade": "D",
-            "includedInSlugs": [],
-            "authors": [
-              {
-                "name": "Stephen King",
-                "notes": "as Richard Bachman"
-              }
-            ],
-            "gradeValue": 3,
-            "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
-            "sortTitle": "Long Walk",
-            "subtitle": null,
-            "yearReviewed": 2022
+            "workYear": "1975",
+            "workYearSequence": 92,
+            "authorSequence": 92,
+            "titleSequence": 92,
+            "gradeSequence": 92,
+            "reviewYear": "2022"
           },
           {
             "title": "Night Shift",
             "kind": "Collection",
-            "yearPublished": "1978",
             "slug": "night-shift-by-stephen-king",
             "grade": "B",
             "includedInSlugs": [],
@@ -5552,99 +3099,23 @@
             ],
             "gradeValue": 9,
             "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
+            "reviewSequence": 233,
             "sortTitle": "Night Shift",
             "subtitle": null,
-            "yearReviewed": 2022
-          },
-          {
-            "title": "The Stand",
-            "kind": "Novel",
-            "yearPublished": "1978",
-            "slug": "the-stand-by-stephen-king",
-            "grade": "D",
-            "includedInSlugs": [],
-            "authors": [
-              {
-                "name": "Stephen King",
-                "notes": null
-              }
-            ],
-            "gradeValue": 3,
-            "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
-            "sortTitle": "Stand",
-            "subtitle": null,
-            "yearReviewed": 2022
+            "workYear": "1978",
+            "workYearSequence": 95,
+            "authorSequence": 95,
+            "titleSequence": 95,
+            "gradeSequence": 95,
+            "reviewYear": "2022"
           }
         ]
       }
     ],
     "moreReviews": [
       {
-        "title": "Sacculina",
-        "kind": "Novella",
-        "yearPublished": "2017",
-        "slug": "sacculina-by-philip-fracassi",
-        "grade": "B",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Philip Fracassi",
-            "notes": null
-          }
-        ],
-        "gradeValue": 9,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Sacculina",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "The Secret History",
-        "kind": "Novel",
-        "yearPublished": "1992",
-        "slug": "the-secret-history-by-donna-tartt",
-        "grade": "A",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Donna Tartt",
-            "notes": null
-          }
-        ],
-        "gradeValue": 12,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Secret History",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "Set the Boy Free",
-        "kind": "Nonfiction",
-        "yearPublished": "2016",
-        "slug": "set-the-boy-free-by-johnny-marr",
-        "grade": "B+",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Johnny Marr",
-            "notes": null
-          }
-        ],
-        "gradeValue": 10,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Set the Boy Free",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
         "title": "The Skeptics' Guide to the Universe",
         "kind": "Nonfiction",
-        "yearPublished": "2018",
         "slug": "the-skeptics-guide-to-the-universe-by-steven-novella",
         "grade": "B+",
         "includedInSlugs": [],
@@ -5656,15 +3127,15 @@
         ],
         "gradeValue": 10,
         "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
+        "reviewSequence": 226,
         "sortTitle": "Skeptics' Guide to the Universe",
         "subtitle": null,
-        "yearReviewed": 2022
+        "workYear": "2000",
+        "reviewYear": "2022"
       },
       {
         "title": "Soft Construction of a Sunset",
         "kind": "Short Story",
-        "yearPublished": "2017",
         "slug": "soft-construction-of-a-sunset-by-philip-fracassi",
         "grade": "B-",
         "includedInSlugs": [
@@ -5678,44 +3149,29 @@
         ],
         "gradeValue": 8,
         "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
+        "reviewSequence": 227,
         "sortTitle": "Soft Construction of a Sunset",
         "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "Surfer Girl",
-        "kind": "Short Story",
-        "yearPublished": "2017",
-        "slug": "surfer-girl-by-philip-fracassi",
-        "grade": "C+",
-        "includedInSlugs": [
-          "behold-the-void-by-philip-fracassi"
-        ],
-        "authors": [
-          {
-            "name": "Philip Fracassi",
-            "notes": null
-          }
-        ],
-        "gradeValue": 7,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Surfer Girl",
-        "subtitle": null,
-        "yearReviewed": 2022
+        "workYear": "2000",
+        "reviewYear": "2022"
       }
     ],
     "includedWorks": [],
     "reviewDate": "2022-10-29",
-    "reviewSequence": "2022-10-29-2"
+    "reviewSequence": 222,
+    "workYearSequence": 90,
+    "authorSequence": 90,
+    "titleSequence": 90,
+    "gradeSequence": 90,
+    "reviewYear": "2022",
+    "reviewed": true,
+    "workYear": "1977"
   },
   {
     "slug": "the-skeptics-guide-to-the-universe-by-steven-novella",
     "title": "The Skeptics' Guide to the Universe",
     "subtitle": "How to Know What's Really Real in a World Increasingly Full of Fake",
     "sortTitle": "Skeptics' Guide to the Universe: How to Know What's Really Real in a World Increasingly Full of Fake",
-    "yearPublished": "2018",
     "grade": "B+",
     "gradeValue": 10,
     "kind": "Nonfiction",
@@ -5737,53 +3193,11 @@
       }
     ],
     "includedInSlugs": [],
-    "yearReviewed": 2022,
     "moreByAuthors": [],
     "moreReviews": [
       {
-        "title": "The Secret History",
-        "kind": "Novel",
-        "yearPublished": "1992",
-        "slug": "the-secret-history-by-donna-tartt",
-        "grade": "A",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Donna Tartt",
-            "notes": null
-          }
-        ],
-        "gradeValue": 12,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Secret History",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "Set the Boy Free",
-        "kind": "Nonfiction",
-        "yearPublished": "2016",
-        "slug": "set-the-boy-free-by-johnny-marr",
-        "grade": "B+",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Johnny Marr",
-            "notes": null
-          }
-        ],
-        "gradeValue": 10,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Set the Boy Free",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
         "title": "The Shining",
         "kind": "Novel",
-        "yearPublished": "1977",
         "slug": "the-shining-by-stephen-king",
         "grade": "B",
         "includedInSlugs": [],
@@ -5795,15 +3209,15 @@
         ],
         "gradeValue": 9,
         "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
+        "reviewSequence": 238,
         "sortTitle": "Shining",
         "subtitle": null,
-        "yearReviewed": 2022
+        "workYear": "2000",
+        "reviewYear": "2022"
       },
       {
         "title": "Soft Construction of a Sunset",
         "kind": "Short Story",
-        "yearPublished": "2017",
         "slug": "soft-construction-of-a-sunset-by-philip-fracassi",
         "grade": "B-",
         "includedInSlugs": [
@@ -5817,64 +3231,29 @@
         ],
         "gradeValue": 8,
         "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
+        "reviewSequence": 239,
         "sortTitle": "Soft Construction of a Sunset",
         "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "The Stand",
-        "kind": "Novel",
-        "yearPublished": "1978",
-        "slug": "the-stand-by-stephen-king",
-        "grade": "D",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Stephen King",
-            "notes": null
-          }
-        ],
-        "gradeValue": 3,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Stand",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "Surfer Girl",
-        "kind": "Short Story",
-        "yearPublished": "2017",
-        "slug": "surfer-girl-by-philip-fracassi",
-        "grade": "C+",
-        "includedInSlugs": [
-          "behold-the-void-by-philip-fracassi"
-        ],
-        "authors": [
-          {
-            "name": "Philip Fracassi",
-            "notes": null
-          }
-        ],
-        "gradeValue": 7,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Surfer Girl",
-        "subtitle": null,
-        "yearReviewed": 2022
+        "workYear": "2000",
+        "reviewYear": "2022"
       }
     ],
     "includedWorks": [],
     "reviewDate": "2022-10-29",
-    "reviewSequence": "2022-10-29-1"
+    "reviewSequence": 235,
+    "workYearSequence": 97,
+    "authorSequence": 97,
+    "titleSequence": 97,
+    "gradeSequence": 97,
+    "reviewYear": "2022",
+    "reviewed": true,
+    "workYear": "2018"
   },
   {
     "slug": "the-woods-are-dark-by-richard-laymon",
     "title": "The Woods Are Dark",
     "subtitle": null,
     "sortTitle": "Woods Are Dark",
-    "yearPublished": "1981",
     "grade": "C+",
     "gradeValue": 7,
     "kind": "Novel",
@@ -5903,7 +3282,6 @@
       }
     ],
     "includedInSlugs": [],
-    "yearReviewed": 2022,
     "moreByAuthors": [
       {
         "name": "Richard Laymon",
@@ -5911,31 +3289,8 @@
         "sortName": "Laymon, Richard",
         "reviewedWorks": [
           {
-            "title": "Desert Pickup",
-            "kind": "Short Story",
-            "yearPublished": "1970",
-            "slug": "desert-pickup-by-richard-laymon",
-            "grade": "C-",
-            "includedInSlugs": [
-              "short-stories-volume-one-by-richard-laymon"
-            ],
-            "authors": [
-              {
-                "name": "Richard Laymon",
-                "notes": null
-              }
-            ],
-            "gradeValue": 5,
-            "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
-            "sortTitle": "Desert Pickup",
-            "subtitle": null,
-            "yearReviewed": 2022
-          },
-          {
             "title": "Roadside Pickup",
             "kind": "Short Story",
-            "yearPublished": "1974",
             "slug": "roadside-pickup-by-richard-laymon",
             "grade": "C-",
             "includedInSlugs": [
@@ -5949,15 +3304,19 @@
             ],
             "gradeValue": 5,
             "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
+            "reviewSequence": 250,
             "sortTitle": "Roadside Pickup",
             "subtitle": null,
-            "yearReviewed": 2022
+            "workYear": "1974",
+            "workYearSequence": 100,
+            "authorSequence": 100,
+            "titleSequence": 100,
+            "gradeSequence": 100,
+            "reviewYear": "2022"
           },
           {
             "title": "The Cellar",
             "kind": "Novel",
-            "yearPublished": "1980",
             "slug": "the-cellar-by-richard-laymon",
             "grade": "C+",
             "includedInSlugs": [],
@@ -5969,15 +3328,19 @@
             ],
             "gradeValue": 7,
             "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
+            "reviewSequence": 251,
             "sortTitle": "Cellar",
             "subtitle": null,
-            "yearReviewed": 2022
+            "workYear": "1980",
+            "workYearSequence": 101,
+            "authorSequence": 101,
+            "titleSequence": 101,
+            "gradeSequence": 101,
+            "reviewYear": "2022"
           },
           {
             "title": "Out Are the Lights",
             "kind": "Novel",
-            "yearPublished": "1982",
             "slug": "out-are-the-lights-by-richard-laymon",
             "grade": "C-",
             "includedInSlugs": [
@@ -5991,15 +3354,19 @@
             ],
             "gradeValue": 5,
             "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
+            "reviewSequence": 252,
             "sortTitle": "Out Are the Lights",
             "subtitle": null,
-            "yearReviewed": 2022
+            "workYear": "1982",
+            "workYearSequence": 102,
+            "authorSequence": 102,
+            "titleSequence": 102,
+            "gradeSequence": 102,
+            "reviewYear": "2022"
           },
           {
             "title": "The Intruder",
             "kind": "Short Story",
-            "yearPublished": "1984",
             "slug": "the-intruder-by-richard-laymon",
             "grade": "C",
             "includedInSlugs": [],
@@ -6011,30 +3378,15 @@
             ],
             "gradeValue": 6,
             "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
+            "reviewSequence": 253,
             "sortTitle": "Intruder",
             "subtitle": null,
-            "yearReviewed": 2022
-          },
-          {
-            "title": "Beware!",
-            "kind": "Novel",
-            "yearPublished": "1985",
-            "slug": "beware-by-richard-laymon",
-            "grade": "C",
-            "includedInSlugs": [],
-            "authors": [
-              {
-                "name": "Richard Laymon",
-                "notes": null
-              }
-            ],
-            "gradeValue": 6,
-            "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
-            "sortTitle": "Beware!",
-            "subtitle": null,
-            "yearReviewed": 2022
+            "workYear": "1984",
+            "workYearSequence": 103,
+            "authorSequence": 103,
+            "titleSequence": 103,
+            "gradeSequence": 103,
+            "reviewYear": "2022"
           }
         ]
       }
@@ -6043,7 +3395,6 @@
       {
         "title": "Tread Softly",
         "kind": "Novel",
-        "yearPublished": "1987",
         "slug": "tread-softly-by-richard-laymon",
         "grade": "C",
         "includedInSlugs": [],
@@ -6055,55 +3406,15 @@
         ],
         "gradeValue": 6,
         "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
+        "reviewSequence": 243,
         "sortTitle": "Tread Softly",
         "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "True Myths",
-        "kind": "Nonfiction",
-        "yearPublished": "1996",
-        "slug": "true-myths-by-nigel-andrews",
-        "grade": "D+",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Nigel Andrews",
-            "notes": null
-          }
-        ],
-        "gradeValue": 4,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "True Myths",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "What Doesn't Kill Us",
-        "kind": "Nonfiction",
-        "yearPublished": "2017",
-        "slug": "what-doesnt-kill-us-by-scott-carney",
-        "grade": "C+",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Scott Carney",
-            "notes": null
-          }
-        ],
-        "gradeValue": 7,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "What Doesn't Kill Us",
-        "subtitle": null,
-        "yearReviewed": 2022
+        "workYear": "2000",
+        "reviewYear": "2022"
       },
       {
         "title": "'Salem's Lot",
         "kind": "Novel",
-        "yearPublished": "1975",
         "slug": "salems-lot-by-stephen-king",
         "grade": "B",
         "includedInSlugs": [],
@@ -6115,35 +3426,15 @@
         ],
         "gradeValue": 9,
         "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
+        "reviewSequence": 246,
         "sortTitle": "'Salem's Lot",
         "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "The 48 Laws of Power",
-        "kind": "Nonfiction",
-        "yearPublished": "1998",
-        "slug": "the-48-laws-of-power-by-robert-greene",
-        "grade": "D+",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Robert Greene",
-            "notes": null
-          }
-        ],
-        "gradeValue": 4,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "48 Laws of Power",
-        "subtitle": null,
-        "yearReviewed": 2022
+        "workYear": "1975",
+        "reviewYear": "2022"
       },
       {
         "title": "About Face",
         "kind": "Nonfiction",
-        "yearPublished": "1989",
         "slug": "about-face-by-david-h-hackworth-julie-sherman",
         "grade": "A-",
         "includedInSlugs": [],
@@ -6159,22 +3450,29 @@
         ],
         "gradeValue": 11,
         "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
+        "reviewSequence": 248,
         "sortTitle": "About Face",
         "subtitle": null,
-        "yearReviewed": 2022
+        "workYear": "2000",
+        "reviewYear": "2022"
       }
     ],
     "includedWorks": [],
     "reviewDate": "2022-09-11",
-    "reviewSequence": "2022-09-11-2"
+    "reviewSequence": 242,
+    "workYearSequence": 98,
+    "authorSequence": 98,
+    "titleSequence": 98,
+    "gradeSequence": 98,
+    "reviewYear": "2022",
+    "reviewed": true,
+    "workYear": "1981"
   },
   {
     "slug": "tread-softly-by-richard-laymon",
     "title": "Tread Softly",
     "subtitle": null,
     "sortTitle": "Tread Softly",
-    "yearPublished": "1987",
     "grade": "C",
     "gradeValue": 6,
     "kind": "Novel",
@@ -6196,7 +3494,6 @@
       }
     ],
     "includedInSlugs": [],
-    "yearReviewed": 2014,
     "moreByAuthors": [
       {
         "name": "Richard Laymon",
@@ -6204,49 +3501,8 @@
         "sortName": "Laymon, Richard",
         "reviewedWorks": [
           {
-            "title": "Beware!",
-            "kind": "Novel",
-            "yearPublished": "1985",
-            "slug": "beware-by-richard-laymon",
-            "grade": "C",
-            "includedInSlugs": [],
-            "authors": [
-              {
-                "name": "Richard Laymon",
-                "notes": null
-              }
-            ],
-            "gradeValue": 6,
-            "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
-            "sortTitle": "Beware!",
-            "subtitle": null,
-            "yearReviewed": 2022
-          },
-          {
-            "title": "The Last Hand",
-            "kind": "Short Story",
-            "yearPublished": "1985",
-            "slug": "the-last-hand-by-richard-laymon",
-            "grade": "D",
-            "includedInSlugs": [],
-            "authors": [
-              {
-                "name": "Richard Laymon",
-                "notes": null
-              }
-            ],
-            "gradeValue": 3,
-            "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
-            "sortTitle": "Last Hand",
-            "subtitle": null,
-            "yearReviewed": 2022
-          },
-          {
             "title": "The Lonely One",
             "kind": "Short Story",
-            "yearPublished": "1985",
             "slug": "the-lonely-one-by-richard-laymon",
             "grade": "C+",
             "includedInSlugs": [],
@@ -6258,37 +3514,19 @@
             ],
             "gradeValue": 7,
             "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
+            "reviewSequence": 264,
             "sortTitle": "Lonely One",
             "subtitle": null,
-            "yearReviewed": 2022
-          },
-          {
-            "title": "Desert Pickup",
-            "kind": "Short Story",
-            "yearPublished": "1970",
-            "slug": "desert-pickup-by-richard-laymon",
-            "grade": "C-",
-            "includedInSlugs": [
-              "short-stories-volume-one-by-richard-laymon"
-            ],
-            "authors": [
-              {
-                "name": "Richard Laymon",
-                "notes": null
-              }
-            ],
-            "gradeValue": 5,
-            "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
-            "sortTitle": "Desert Pickup",
-            "subtitle": null,
-            "yearReviewed": 2022
+            "workYear": "1985",
+            "workYearSequence": 108,
+            "authorSequence": 108,
+            "titleSequence": 108,
+            "gradeSequence": 108,
+            "reviewYear": "2022"
           },
           {
             "title": "Roadside Pickup",
             "kind": "Short Story",
-            "yearPublished": "1974",
             "slug": "roadside-pickup-by-richard-laymon",
             "grade": "C-",
             "includedInSlugs": [
@@ -6302,15 +3540,19 @@
             ],
             "gradeValue": 5,
             "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
+            "reviewSequence": 266,
             "sortTitle": "Roadside Pickup",
             "subtitle": null,
-            "yearReviewed": 2022
+            "workYear": "1974",
+            "workYearSequence": 110,
+            "authorSequence": 110,
+            "titleSequence": 110,
+            "gradeSequence": 110,
+            "reviewYear": "2022"
           },
           {
             "title": "The Cellar",
             "kind": "Novel",
-            "yearPublished": "1980",
             "slug": "the-cellar-by-richard-laymon",
             "grade": "C+",
             "includedInSlugs": [],
@@ -6322,121 +3564,23 @@
             ],
             "gradeValue": 7,
             "reviewDate": "2022-01-01",
-            "reviewSequence": "2022-01-01-1",
+            "reviewSequence": 267,
             "sortTitle": "Cellar",
             "subtitle": null,
-            "yearReviewed": 2022
+            "workYear": "1980",
+            "workYearSequence": 111,
+            "authorSequence": 111,
+            "titleSequence": 111,
+            "gradeSequence": 111,
+            "reviewYear": "2022"
           }
         ]
       }
     ],
     "moreReviews": [
       {
-        "title": "Surfer Girl",
-        "kind": "Short Story",
-        "yearPublished": "2017",
-        "slug": "surfer-girl-by-philip-fracassi",
-        "grade": "C+",
-        "includedInSlugs": [
-          "behold-the-void-by-philip-fracassi"
-        ],
-        "authors": [
-          {
-            "name": "Philip Fracassi",
-            "notes": null
-          }
-        ],
-        "gradeValue": 7,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Surfer Girl",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "The M.A.X. Muscle Plan",
-        "kind": "Nonfiction",
-        "yearPublished": "2012",
-        "slug": "the-max-muscle-plan-by-brad-schoenfeld",
-        "grade": "C-",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Brad Schoenfeld",
-            "notes": null
-          }
-        ],
-        "gradeValue": 5,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "M.A.X. Muscle Plan",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "Total Recall",
-        "kind": "Nonfiction",
-        "yearPublished": "2012",
-        "slug": "total-recall-by-arnold-schwarzenegger",
-        "grade": "C+",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Arnold Schwarzenegger",
-            "notes": null
-          }
-        ],
-        "gradeValue": 7,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "Total Recall",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "True Myths",
-        "kind": "Nonfiction",
-        "yearPublished": "1996",
-        "slug": "true-myths-by-nigel-andrews",
-        "grade": "D+",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Nigel Andrews",
-            "notes": null
-          }
-        ],
-        "gradeValue": 4,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "True Myths",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
-        "title": "What Doesn't Kill Us",
-        "kind": "Nonfiction",
-        "yearPublished": "2017",
-        "slug": "what-doesnt-kill-us-by-scott-carney",
-        "grade": "C+",
-        "includedInSlugs": [],
-        "authors": [
-          {
-            "name": "Scott Carney",
-            "notes": null
-          }
-        ],
-        "gradeValue": 7,
-        "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
-        "sortTitle": "What Doesn't Kill Us",
-        "subtitle": null,
-        "yearReviewed": 2022
-      },
-      {
         "title": "The Woods Are Dark",
         "kind": "Novel",
-        "yearPublished": "1981",
         "slug": "the-woods-are-dark-by-richard-laymon",
         "grade": "C+",
         "includedInSlugs": [],
@@ -6448,14 +3592,22 @@
         ],
         "gradeValue": 7,
         "reviewDate": "2022-01-01",
-        "reviewSequence": "2022-01-01-1",
+        "reviewSequence": 261,
         "sortTitle": "Woods Are Dark",
         "subtitle": null,
-        "yearReviewed": 2022
+        "workYear": "1981",
+        "reviewYear": "2022"
       }
     ],
     "includedWorks": [],
     "reviewDate": "2014-09-21",
-    "reviewSequence": "2014-09-21-1"
+    "reviewSequence": 255,
+    "workYearSequence": 105,
+    "authorSequence": 105,
+    "titleSequence": 105,
+    "gradeSequence": 105,
+    "reviewYear": "2014",
+    "reviewed": true,
+    "workYear": "1987"
   }
 ]

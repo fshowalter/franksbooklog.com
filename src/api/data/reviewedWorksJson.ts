@@ -37,9 +37,10 @@ const IncludedWorkSchema = z.object({
   authors: z.array(IncludedWorkAuthorSchema),
   grade: nullableString(),
   kind: WorkKindSchema,
-  slug: nullableString(),
+  reviewed: z.boolean(),
+  slug: z.string(),
   title: z.string(),
-  yearPublished: z.string(),
+  workYear: z.string(),
 });
 
 const MoreReviewAuthorSchema = z
@@ -59,13 +60,13 @@ const MoreReviewSchema = z.object({
   includedInSlugs: z.array(z.string()),
   kind: WorkKindSchema,
   reviewDate: z.string(),
-  reviewSequence: z.string(),
+  reviewSequence: z.number(),
+  reviewYear: z.string(),
   slug: z.string(),
   sortTitle: z.string(),
   subtitle: nullableString(),
   title: z.string(),
-  yearPublished: z.string(),
-  yearReviewed: z.number(),
+  workYear: z.string(),
 });
 
 const MoreByAuthorSchema = z.object({
@@ -78,6 +79,7 @@ const MoreByAuthorSchema = z.object({
 const ReviewedWorkJsonSchema = z
   .object({
     authors: z.array(AuthorSchema),
+    authorSequence: z.number(),
     grade: z.string(),
     gradeValue: z.number(),
     includedInSlugs: z.array(z.string()),
@@ -87,17 +89,19 @@ const ReviewedWorkJsonSchema = z
     moreReviews: z.array(MoreReviewSchema),
     readings: z.array(ReadingSchema),
     reviewDate: z.string(),
-    reviewSequence: z.string(),
+    reviewSequence: z.number(),
+    reviewYear: z.string(),
     slug: z.string(),
     sortTitle: z.string(),
     subtitle: nullableString(),
     title: z.string(),
-    yearPublished: z.string(),
-    yearReviewed: z.number(),
+    workYear: z.string(),
+    workYearSequence: z.number(),
   })
   .transform(
     ({
       authors,
+      authorSequence,
       grade,
       gradeValue,
       includedInSlugs,
@@ -108,16 +112,18 @@ const ReviewedWorkJsonSchema = z
       readings,
       reviewDate,
       reviewSequence,
+      reviewYear,
       slug,
       sortTitle,
       subtitle,
       title,
-      yearPublished,
-      yearReviewed,
+      workYear,
+      workYearSequence,
     }) => {
       // fix zod making anything with undefined optional
       return {
         authors,
+        authorSequence,
         grade,
         gradeValue,
         includedInSlugs,
@@ -128,12 +134,13 @@ const ReviewedWorkJsonSchema = z
         readings,
         reviewDate,
         reviewSequence,
+        reviewYear,
         slug,
         sortTitle,
         subtitle,
         title,
-        yearPublished,
-        yearReviewed,
+        workYear,
+        workYearSequence,
       };
     },
   );

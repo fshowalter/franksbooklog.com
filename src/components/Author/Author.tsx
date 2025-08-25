@@ -1,4 +1,4 @@
-import { type JSX, useReducer } from "react";
+import { type JSX, useReducer, useState } from "react";
 
 import type { Author } from "~/api/authors";
 import type { AvatarImageProps } from "~/api/avatars";
@@ -6,14 +6,14 @@ import type { BackdropImageProps } from "~/api/backdrops";
 import type { CoverImageProps } from "~/api/covers";
 
 import { Abandoned } from "~/components/Abandoned";
-import { Grade } from "~/components/Grade";
-import { GroupedList } from "~/components/GroupedList";
-import { ListItem } from "~/components/ListItem";
-import { ListItemCover } from "~/components/ListItemCover";
+import { CoverListItem, GroupedCoverList } from "~/components/CoverList";
+import { ListItemDetails } from "~/components/ListItemDetails";
+import { ListItemGrade } from "~/components/ListItemGrade";
 import { ListItemKindAndYear } from "~/components/ListItemKindAndYear";
+import { ListItemReviewDate } from "~/components/ListItemReviewDate";
 import { ListItemTitle } from "~/components/ListItemTitle";
-import { ListWithFilters } from "~/components/ListWithFilters";
-import { toSentenceArray } from "~/utils";
+import { ListWithFilters } from "~/components/ListWithFilters/ListWithFilters";
+import { toSentenceArray } from "~/utils/toSentenceArray";
 
 import type { Sort } from "./Author.reducer";
 
@@ -30,15 +30,20 @@ export type ListItemValue = Pick<
   | "grade"
   | "gradeValue"
   | "kind"
+  | "reviewSequence"
+  | "reviewYear"
   | "slug"
   | "sortTitle"
   | "title"
-  | "yearPublished"
+  | "workYear"
+  | "workYearSequence"
 > & {
   coverImageProps: CoverImageProps;
+  displayDate: string;
   otherAuthors: {
     name: string;
   }[];
+  reviewDate: Date;
 };
 
 export type Props = InteractiveProps & {
@@ -51,25 +56,28 @@ type AuthorWork = Author["reviewedWorks"][number];
 
 type InteractiveProps = Pick<Author, "name"> & {
   distinctKinds: readonly string[];
-  distinctPublishedYears: readonly string[];
+  distinctReviewYears: readonly string[];
+  distinctWorkYears: readonly string[];
   initialSort: Sort;
-  works: ListItemValue[];
+  values: ListItemValue[];
 };
 
 export function Author({
   distinctKinds,
-  distinctPublishedYears,
+  distinctReviewYears,
+  distinctWorkYears,
   initialSort,
-  works,
+  values,
 }: InteractiveProps): JSX.Element {
   const [state, dispatch] = useReducer(
     reducer,
     {
       initialSort,
-      values: works,
+      values,
     },
     initState,
   );
+  const [filterKey, setFilterKey] = useState(0);
 
   return (
     <ListWithFilters
@@ -77,32 +85,49 @@ export function Author({
         <Filters
           dispatch={dispatch}
           distinctKinds={distinctKinds}
-          distinctPublishedYears={distinctPublishedYears}
+          distinctReviewYears={distinctReviewYears}
+          distinctWorkYears={distinctWorkYears}
+          filterValues={state.pendingFilterValues}
+          key={filterKey}
         />
       }
+      hasActiveFilters={state.hasActiveFilters}
       list={
-        <GroupedList
-          data-testid="list"
+        <GroupedCoverList
           groupedValues={state.groupedValues}
           onShowMore={() => dispatch({ type: Actions.SHOW_MORE })}
           totalCount={state.filteredValues.length}
           visibleCount={state.showCount}
         >
-          {(value) => {
-            return <WorkListItem key={value.slug} value={value} />;
-          }}
-        </GroupedList>
+          {(value) => <WorkListItem key={value.slug} value={value} />}
+        </GroupedCoverList>
       }
+      onApplyFilters={() => dispatch({ type: Actions.APPLY_PENDING_FILTERS })}
+      onClearFilters={() => {
+        dispatch({ type: Actions.CLEAR_PENDING_FILTERS });
+        setFilterKey((k) => k + 1);
+      }}
+      onFilterDrawerOpen={() =>
+        dispatch({ type: Actions.RESET_PENDING_FILTERS })
+      }
+      onResetFilters={() => {
+        dispatch({ type: Actions.RESET_PENDING_FILTERS });
+        setFilterKey((k) => k + 1);
+      }}
+      pendingFilteredCount={state.pendingFilteredCount}
       sortProps={{
         currentSortValue: state.sortValue,
         onSortChange: (e) =>
-          dispatch({ type: Actions.SORT, value: e.target.value as Sort }),
+          dispatch({
+            type: Actions.SORT,
+            value: e.target.value as Sort,
+          }),
         sortOptions: (
           <>
-            <option value="year-published-desc">
-              Work Year (Newest First)
-            </option>
-            <option value="year-published-asc">Work Year (Oldest First)</option>
+            <option value="work-year-asc">Work Year (Oldest First)</option>
+            <option value="work-year-desc">Work Year (Newest First)</option>
+            <option value="review-date-asc">Review Date (Oldest First)</option>
+            <option value="review-date-desc">Review Date (Newest First)</option>
             <option value="title-asc">Title (A &rarr; Z)</option>
             <option value="title-desc">Title (Z &rarr; A)</option>
             <option value="grade-desc">Grade (Best First)</option>
@@ -121,7 +146,7 @@ function OtherAuthors({ values }: { values: ListItemValue["otherAuthors"] }) {
   }
 
   return (
-    <div className="font-sans text-xs leading-5 text-subtle">
+    <div className="font-serif text-[15px] leading-5">
       (with {toSentenceArray(values.map((value) => value.name))})
     </div>
   );
@@ -129,43 +154,15 @@ function OtherAuthors({ values }: { values: ListItemValue["otherAuthors"] }) {
 
 function WorkListItem({ value }: { value: ListItemValue }): JSX.Element {
   return (
-    <ListItem>
-      <div
-        className={`
-          relative
-          after:absolute after:top-0 after:left-0 after:z-10 after:size-full
-          after:bg-default after:opacity-15 after:transition-opacity
-          group-has-[a:hover]/list-item:after:opacity-0
-        `}
-      >
-        <ListItemCover imageProps={value.coverImageProps} />
-      </div>
-      <div
-        className={`
-          flex grow flex-col items-start
-          tablet:w-full tablet:pr-4
-        `}
-      >
+    <CoverListItem coverImageProps={value.coverImageProps}>
+      <ListItemDetails>
         <ListItemTitle slug={value.slug} title={value.title} />
         <OtherAuthors values={value.otherAuthors} />
-        <div
-          className={`
-            mt-1
-            tablet:mt-2
-          `}
-        >
-          <ListItemKindAndYear kind={value.kind} year={value.yearPublished} />
-        </div>
-        <Grade
-          className={`
-            mt-2
-            tablet:mt-3
-          `}
-          height={16}
-          value={value.grade}
-        />
+        <ListItemKindAndYear kind={value.kind} year={value.workYear} />
+        <ListItemGrade grade={value.grade} />
         <Abandoned value={value.grade} />
-      </div>
-    </ListItem>
+        <ListItemReviewDate displayDate={value.displayDate} />
+      </ListItemDetails>
+    </CoverListItem>
   );
 }

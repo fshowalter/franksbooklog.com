@@ -1,20 +1,19 @@
+import { ENABLE_CACHE } from "~/utils/cache";
+
 import { allAuthorsJson, type AuthorJson } from "./data/authorsJson";
 import { perfLogger } from "./data/utils/performanceLogger";
-
 export type Author = AuthorJson & {};
 
 type AuthorDetails = {
   author: Author;
   distinctKinds: string[];
-  distinctPublishedYears: string[];
+  distinctReviewYears: string[];
+  distinctWorkYears: string[];
 };
 
 // Cache at API level for derived data
 let cachedAllAuthorsJson: AuthorJson[];
 const cachedAuthorDetails: Map<string, AuthorDetails> = new Map();
-
-// Enable caching during builds but not in dev mode
-const ENABLE_CACHE = !import.meta.env.DEV;
 
 export async function allAuthors(): Promise<Author[]> {
   return await perfLogger.measure("allAuthors", async () => {
@@ -44,19 +43,22 @@ export async function getAuthorDetails(slug: string): Promise<AuthorDetails> {
     }
 
     const distinctKinds = new Set<string>();
-    const distinctPublishedYears = new Set<string>();
+    const distinctWorkYears = new Set<string>();
+    const distinctReviewYears = new Set<string>();
 
     const author = authors.find((value) => value.slug === slug)!;
 
     for (const work of author.reviewedWorks) {
       distinctKinds.add(work.kind);
-      distinctPublishedYears.add(work.yearPublished);
+      distinctWorkYears.add(work.workYear);
+      distinctReviewYears.add(work.reviewYear);
     }
 
     const details = {
       author,
       distinctKinds: [...distinctKinds].toSorted(),
-      distinctPublishedYears: [...distinctPublishedYears].toSorted(),
+      distinctReviewYears: [...distinctReviewYears].toSorted(),
+      distinctWorkYears: [...distinctWorkYears].toSorted(),
     };
 
     // Cache the result

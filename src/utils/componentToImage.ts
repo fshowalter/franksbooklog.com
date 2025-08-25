@@ -1,9 +1,14 @@
-import type { JSX } from "react";
+import type { JSX, ReactElement } from "react";
 import type { Font } from "satori";
 
 import fs from "node:fs/promises";
 import satori from "satori";
 import sharp from "sharp";
+
+import type { AuthorOpenGraphImageComponentType } from "~/components/Author/OpenGraphImage";
+import type { HomeOpenGraphImageComponentType } from "~/components/Home/OpenGraphImage";
+import type { OpenGraphImageComponentType } from "~/components/OpenGraphImage";
+import type { ReviewOpenGraphImageComponentType } from "~/components/Review/OpenGraphImage";
 
 import {
   createCacheConfig,
@@ -12,64 +17,73 @@ import {
   getCachedItem,
   saveCachedItem,
 } from "./cache";
-import { serializeJsx } from "./serializeJsx";
 
 const cacheConfig = createCacheConfig("og-images");
 
 // Font data cache to avoid reading fonts multiple times
 let fontDataCache: Font[] | undefined;
 
+type OpenGraphImageComponent =
+  | AuthorOpenGraphImageComponentType
+  | HomeOpenGraphImageComponentType
+  | OpenGraphImageComponentType
+  | ReviewOpenGraphImageComponentType;
+
+type ReactElementWithType = ReactElement & {
+  $$typeof?: symbol;
+  props: {
+    [key: string]: unknown;
+    children?: unknown;
+  };
+  type: string;
+};
+
 export async function componentToImage(
-  component: JSX.Element,
+  component: ReturnType<OpenGraphImageComponent>,
 ): Promise<Uint8Array<ArrayBuffer>> {
-  if (cacheConfig.enableCache) {
-    await ensureCacheDir(cacheConfig.cacheDir);
-
-    // Serialize the component to create a stable cache key
-    const serialized = serializeJsx(component);
-    const cacheKey = createCacheKey(serialized);
-
-    // Check for cached image
-    const cachedImage = await getCachedItem<Uint8Array<ArrayBuffer>>(
-      cacheConfig.cacheDir,
-      cacheKey,
-      "jpg",
-      true,
-      cacheConfig.debugCache,
-      `OG Image: ${cacheKey.slice(0, 8)}...`,
-    );
-
-    if (cachedImage) {
-      return cachedImage;
-    }
-
-    if (process.env.DEBUG_CACHE_VERBOSE === "true") {
-      console.log(`[CACHE] Serialized length: ${serialized.length}`);
-      console.log(`[CACHE] Serialized preview: ${serialized.slice(0, 200)}...`);
-    }
-
-    // Generate the SVG (expensive operation)
+  // If caching is disabled, generate and return image directly
+  if (!cacheConfig.enableCache) {
     const svg = await componentToSvg(component);
-
-    // Convert SVG to JPEG
-    const imageBuffer = (await sharp(Buffer.from(svg))
+    return (await sharp(Buffer.from(svg))
       .jpeg()
       .toBuffer()) as Uint8Array<ArrayBuffer>;
-
-    // Save to cache
-    await saveCachedItem(cacheConfig.cacheDir, cacheKey, "jpg", imageBuffer);
-
-    return imageBuffer;
   }
 
-  // No caching - generate SVG and convert to JPEG
+  await ensureCacheDir(cacheConfig.cacheDir);
+
+  // Serialize the component to create a stable cache key
+  const serialized = serializeJsx(component);
+  const cacheKey = createCacheKey(serialized);
+
+  // Check for cached image
+  const cachedImage = await getCachedItem<Uint8Array<ArrayBuffer>>(
+    cacheConfig.cacheDir,
+    cacheKey,
+    "jpg",
+    true,
+    cacheConfig.debugCache,
+    `OG Image: ${cacheKey.slice(0, 8)}...`,
+  );
+
+  if (cachedImage) {
+    return cachedImage;
+  }
+
+  // Generate the SVG (expensive operation)
   const svg = await componentToSvg(component);
-  return (await sharp(Buffer.from(svg))
+
+  // Convert SVG to JPEG
+  const imageBuffer = (await sharp(Buffer.from(svg))
     .jpeg()
     .toBuffer()) as Uint8Array<ArrayBuffer>;
+
+  // Save to cache
+  await saveCachedItem(cacheConfig.cacheDir, cacheKey, "jpg", imageBuffer);
+
+  return imageBuffer;
 }
 
-async function componentToSvg(component: JSX.Element) {
+async function componentToSvg(component: ReturnType<OpenGraphImageComponent>) {
   const fonts = await getFontData();
 
   return await satori(component, {
@@ -84,14 +98,23 @@ async function getFontData() {
     return fontDataCache;
   }
 
-  const [frankRuhlLibre, argentumSansRegular, argentumSansSemiBold] =
-    await Promise.all([
-      fs.readFile(
-        "./public/fonts/Frank-Ruhl-Libre/Frank-Ruhl-Libre-Regular.ttf",
-      ),
-      fs.readFile("./public/fonts/ArgentumSans/ArgentumSans-Regular.ttf"),
-      fs.readFile("./public/fonts/ArgentumSans/ArgentumSans-SemiBold.ttf"),
-    ]);
+  const [
+    frankRuhlLibre,
+    frankRuhlLibreExtraBold,
+    assistantRegular,
+    assistantSemiBold,
+    assistantBold,
+    assistantExtraBold,
+  ] = await Promise.all([
+    fs.readFile("./public/fonts/Frank-Ruhl-Libre/Frank-Ruhl-Libre-Regular.ttf"),
+    fs.readFile(
+      "./public/fonts/Frank-Ruhl-Libre/Frank-Ruhl-Libre-ExtraBold.ttf",
+    ),
+    fs.readFile("./public/fonts/Assistant/Assistant-Regular.ttf"),
+    fs.readFile("./public/fonts/Assistant/Assistant-SemiBold.ttf"),
+    fs.readFile("./public/fonts/Assistant/Assistant-Bold.ttf"),
+    fs.readFile("./public/fonts/Assistant/Assistant-ExtraBold.ttf"),
+  ]);
 
   fontDataCache = [
     {
@@ -100,16 +123,83 @@ async function getFontData() {
       weight: 400,
     },
     {
-      data: argentumSansRegular.buffer as ArrayBuffer,
-      name: "ArgentumSans",
+      data: frankRuhlLibreExtraBold.buffer as ArrayBuffer,
+      name: "FrankRuhlLibre",
+      weight: 800,
+    },
+    {
+      data: assistantRegular.buffer as ArrayBuffer,
+      name: "Assistant",
       weight: 400,
     },
     {
-      data: argentumSansSemiBold.buffer as ArrayBuffer,
-      name: "ArgentumSans",
+      data: assistantSemiBold.buffer as ArrayBuffer,
+      name: "Assistant",
       weight: 600,
+    },
+    {
+      data: assistantBold.buffer as ArrayBuffer,
+      name: "Assistant",
+      weight: 700,
+    },
+    {
+      data: assistantExtraBold.buffer as ArrayBuffer,
+      name: "Assistant",
+      weight: 800,
     },
   ];
 
   return fontDataCache;
+}
+
+/**
+ * Serialize a JSX element to a stable string representation for hashing.
+ * Simplified for OG image generation use case.
+ * AIDEV-NOTE: This function is only used for OG image caching and handles
+ * the specific JSX structures used in OG images (HTML elements, strings, arrays).
+ */
+function serializeJsx(element: JSX.Element): string {
+  // Handle primitive values (strings, numbers, booleans)
+  if (
+    typeof element !== "object" ||
+    element === null ||
+    element === undefined
+  ) {
+    return JSON.stringify(element);
+  }
+
+  // Handle arrays
+  if (Array.isArray(element)) {
+    return `[${element.map((item) => serializeJsx(item as JSX.Element)).join(",")}]`;
+  }
+
+  // Handle React elements
+  const reactElement = element as ReactElementWithType;
+  // For OG images, we only use string types (HTML elements)
+  const typeName = reactElement.type;
+
+  const props: Record<string, unknown> = {};
+
+  // Process props, excluding children
+  const elementProps = reactElement.props as Record<string, unknown>;
+  for (const [key, value] of Object.entries(elementProps)) {
+    if (key === "children") continue;
+
+    // For OG images, we only have primitives and objects (style objects)
+    // For objects and arrays (but not null), serialize as JSON
+    props[key] =
+      typeof value === "object" && value !== null
+        ? JSON.stringify(value)
+        : value; // Primitives (including null/undefined)
+  }
+
+  // Sort props for deterministic output
+  const sortedPropsStr = JSON.stringify(props, Object.keys(props).sort());
+
+  // Serialize children
+  const children = reactElement.props?.children;
+  const childrenStr = children ? serializeJsx(children as JSX.Element) : "";
+
+  // Combine into a stable string representation
+  return `<${typeName}:${sortedPropsStr}>${childrenStr}</${typeName}>`;
 }

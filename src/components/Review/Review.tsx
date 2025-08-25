@@ -10,7 +10,7 @@ import { Layout } from "~/components/Layout";
 import { LongFormText } from "~/components/LongFormText";
 import { MoreReviews } from "~/components/MoreReviews";
 import { SubHeading } from "~/components/SubHeading";
-import { toSentenceArray } from "~/utils/";
+import { toSentenceArray } from "~/utils/toSentenceArray";
 
 import { IncludedWorks } from "./IncludedWorks";
 import { ReadingHistoryListItem } from "./ReadingHistoryListItem";
@@ -41,25 +41,19 @@ export function Review({
   value,
 }: Props): JSX.Element {
   return (
-    <Layout
-      className="flex flex-col"
-      data-pagefind-body
-      hasBackdrop={false}
-      staticMast={true}
-    >
+    <Layout className="flex flex-col" data-pagefind-body hasBackdrop={false}>
       <header
         className={`relative z-1 mb-12 flex flex-col items-center px-[8%] pt-10`}
       >
-        <nav
-          className={`
-            transform-gpu pb-3 transition-transform
-            has-[a:hover]:scale-110
-          `}
-        >
+        <nav className={`transform-gpu pb-2 transition-transform`}>
           <a
             className={`
-              font-sans text-xs tracking-wider uppercase transition-colors
-              hover:text-accent
+              relative inline-block pb-1 font-sans text-xs tracking-wider
+              text-subtle uppercase transition-all
+              after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
+              after:origin-center after:scale-x-0 after:bg-(--fg-accent)
+              after:transition-transform
+              hover:text-accent hover:after:scale-x-100
             `}
             href="/reviews/"
           >
@@ -69,6 +63,7 @@ export function Review({
         <h1
           className={`
             text-center text-4xl
+            laptop:text-5xl
             desktop:text-6xl
           `}
           data-pagefind-meta="title"
@@ -86,11 +81,7 @@ export function Review({
           </p>
         )}
         <Authors
-          className={`
-            mt-4 transform-gpu text-center text-md text-muted
-            transition-transform
-            has-[a:hover]:scale-105
-          `}
+          className={`mt-4 text-center text-md text-muted`}
           values={value.authors}
         />
         <div className="mt-4">
@@ -103,7 +94,7 @@ export function Review({
             tablet:mb-6
           `}
           kind={value.kind}
-          yearPublished={value.yearPublished}
+          workYear={value.workYear}
         />
         <ReviewCover coverImageProps={coverImageProps} />
         <div
@@ -163,7 +154,7 @@ export function Review({
         className={`
           flex w-full flex-col items-center gap-y-12 bg-subtle pt-16 pb-32
           tablet:pt-8
-          desktop:gap-y-24
+          laptop:gap-y-24
         `}
         data-pagefind-ignore
       >
@@ -171,8 +162,12 @@ export function Review({
           <SubHeading as="h2">
             <a
               className={`
-                relative inline-block transform-gpu transition-transform
-                hover:scale-110
+                relative -mb-1 inline-block transform-gpu pb-1
+                transition-transform
+                after:absolute after:bottom-0 after:left-0 after:h-px
+                after:w-full after:origin-bottom-right after:scale-x-0
+                after:bg-(--fg-accent) after:transition-transform
+                hover:after:scale-x-100
               `}
               href={`/reviews/`}
             >
@@ -204,7 +199,12 @@ function Authors({
         values.map((author) => (
           <AuthorLink
             className={`
-              inline-block transform-gpu text-accent transition-transform
+              relative inline-block transform-gpu text-accent
+              transition-transform
+              after:absolute after:bottom-0 after:left-0 after:h-px after:w-full
+              after:origin-center after:scale-x-0 after:bg-(--fg-accent)
+              after:transition-transform
+              hover:after:scale-x-100
             `}
             key={author.slug}
             name={author.name}
@@ -235,6 +235,7 @@ function ReviewCover({
           bg-cover bg-center clip-path-cover
           after:absolute after:size-full after:backdrop-blur-sm
           after:clip-path-cover
+          tablet:-left-[2.5%] tablet:w-[105%]
         `}
         style={{
           backgroundColor: "var(--bg-default)",
@@ -270,15 +271,15 @@ function ReviewGrade({ value }: { value: ReviewWithContent["grade"] }) {
 function YearAndKind({
   className,
   kind,
-  yearPublished,
+  workYear,
 }: {
   className: string;
   kind: ReviewWithContent["kind"];
-  yearPublished: ReviewWithContent["yearPublished"];
+  workYear: ReviewWithContent["workYear"];
 }) {
   return (
     <div className={className}>
-      <span className="tracking-wide">{yearPublished}</span> | {kind}
+      <span className="tracking-wide">{workYear}</span> | {kind}
     </div>
   );
 }
