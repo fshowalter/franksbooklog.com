@@ -216,6 +216,38 @@ describe("Reviews", () => {
     expect(screen.getByTestId("grouped-cover-list")).toMatchSnapshot();
   });
 
+  it("can filter by grade", async ({ expect }) => {
+    expect.hasAssertions();
+
+    render(<Reviews {...props} />);
+
+    const fieldset = screen.getByRole("group", { name: "Grade" });
+    const fromInput = within(fieldset).getByLabelText("From");
+    const toInput = within(fieldset).getByLabelText("to");
+
+    await userEvent.selectOptions(fromInput, "B-");
+    await userEvent.selectOptions(toInput, "A+");
+
+    expect(screen.getByTestId("grouped-cover-list")).toMatchSnapshot();
+  });
+
+  it("can filter by grade reversed", async ({ expect }) => {
+    expect.hasAssertions();
+
+    render(<Reviews {...props} />);
+
+    const fieldset = screen.getByRole("group", { name: "Grade" });
+    const fromInput = within(fieldset).getByLabelText("From");
+    const toInput = within(fieldset).getByLabelText("to");
+
+    await userEvent.selectOptions(fromInput, "B");
+    await userEvent.selectOptions(toInput, "B+");
+    await userEvent.selectOptions(fromInput, "A-");
+    await userEvent.selectOptions(toInput, "B-");
+
+    expect(screen.getByTestId("grouped-cover-list")).toMatchSnapshot();
+  });
+
   it("can filter by year published reversed", async ({ expect }) => {
     expect.hasAssertions();
 

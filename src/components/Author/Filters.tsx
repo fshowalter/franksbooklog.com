@@ -1,3 +1,4 @@
+import { GradeInput } from "~/components/GradeInput";
 import { SelectField } from "~/components/SelectField";
 import { SelectOptions } from "~/components/SelectOptions";
 import { TextFilter } from "~/components/TextFilter";
@@ -51,6 +52,15 @@ export function Filters({
           dispatch({ type: Actions.PENDING_FILTER_REVIEW_YEAR, values })
         }
         years={distinctReviewYears}
+      />
+      <GradeInput
+        label="Grade"
+        onGradeChange={(values) =>
+          dispatch({
+            type: Actions.PENDING_FILTER_GRADE,
+            values,
+          })
+        }
       />
       <SelectField
         label="Kind"

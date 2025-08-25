@@ -16,11 +16,11 @@ import {
   getGroupLetter,
   handleListWithFiltersAction,
   ListWithFiltersActions,
-  updatePendingFilter,
 } from "~/components/ListWithFilters/reducerUtils";
 import {
   applyPendingFiltersWithPagination,
   createInitialStateWithPagination,
+  handleGradeFilterAction,
   handleKindFilterAction,
   handleReviewYearFilterAction,
   handleShowMoreAction,
@@ -36,10 +36,6 @@ import {
 
 import type { ListItemValue } from "./Author";
 
-enum AuthorActions {
-  PENDING_FILTER_GRADE = "PENDING_FILTER_GRADE",
-}
-
 export type Sort =
   | "grade-asc"
   | "grade-desc"
@@ -54,7 +50,6 @@ export type Sort =
 export const Actions = {
   ...ListWithFiltersActions,
   ...WorksFilterActions,
-  ...AuthorActions,
 } as const;
 
 function groupForValue(value: ListItemValue, sortValue: Sort): string {
@@ -82,14 +77,7 @@ const groupValues = buildGroupValues(groupForValue);
 
 export type ActionType =
   | ListWithFiltersActionType<Sort>
-  | PendingFilterGradeAction
   | WorksFilterActionType;
-
-// Grade filter is specific to Reviews
-type PendingFilterGradeAction = {
-  type: AuthorActions.PENDING_FILTER_GRADE;
-  values: [number, number];
-};
 
 const sortValues = buildSortValues<ListItemValue, Sort>({
   ...sortGrade<ListItemValue>(),
@@ -125,17 +113,6 @@ export function initState({
 // Create reducer function
 export function reducer(state: State, action: ActionType): State {
   switch (action.type) {
-    case AuthorActions.PENDING_FILTER_GRADE: {
-      const typedAction = action;
-      const filterFn = (value: ListItemValue) =>
-        value.gradeValue >= typedAction.values[0] &&
-        value.gradeValue <= typedAction.values[1];
-      return {
-        ...state,
-        ...updatePendingFilter(state, "grade", filterFn, typedAction.values),
-      };
-    }
-
     case ListWithFiltersActions.APPLY_PENDING_FILTERS: {
       const baseResult = handleListWithFiltersAction(state, action, {
         groupFn: groupValues,
@@ -150,6 +127,10 @@ export function reducer(state: State, action: ActionType): State {
         sortFn: sortValues,
       });
       return updateSortWithPagination(state, baseResult, groupValues);
+    }
+
+    case WorksFilterActions.PENDING_FILTER_GRADE: {
+      return handleGradeFilterAction(state, action);
     }
 
     // Field-specific shared filters

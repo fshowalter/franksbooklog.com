@@ -17,11 +17,11 @@ import {
   handleListWithFiltersAction,
   ListWithFiltersActions,
   sortNumber,
-  updatePendingFilter,
 } from "~/components/ListWithFilters/reducerUtils";
 import {
   applyPendingFiltersWithPagination,
   createInitialStateWithPagination,
+  handleGradeFilterAction,
   handleKindFilterAction,
   handleReviewYearFilterAction,
   handleShowMoreAction,
@@ -36,10 +36,6 @@ import {
 } from "~/components/ListWithFilters/worksReducerUtils";
 
 import type { ReviewsListItemValue } from "./Reviews";
-
-enum ReviewsActions {
-  PENDING_FILTER_GRADE = "PENDING_FILTER_GRADE",
-}
 
 export type ReviewsSort =
   | "author-asc"
@@ -57,7 +53,6 @@ export type ReviewsSort =
 export const Actions = {
   ...ListWithFiltersActions,
   ...WorksFilterActions,
-  ...ReviewsActions,
 } as const;
 
 function groupForValue(
@@ -92,14 +87,7 @@ const groupValues = buildGroupValues(groupForValue);
 
 export type ActionType =
   | ListWithFiltersActionType<ReviewsSort>
-  | PendingFilterGradeAction
   | WorksFilterActionType;
-
-// Grade filter is specific to Reviews
-type PendingFilterGradeAction = {
-  type: ReviewsActions.PENDING_FILTER_GRADE;
-  values: [number, number];
-};
 
 const sortValues = buildSortValues<ReviewsListItemValue, ReviewsSort>({
   ...sortGrade<ReviewsListItemValue>(),
@@ -154,15 +142,8 @@ export function reducer(state: State, action: ActionType): State {
       return updateSortWithPagination(state, baseResult, groupValues);
     }
 
-    case ReviewsActions.PENDING_FILTER_GRADE: {
-      const typedAction = action;
-      const filterFn = (value: ReviewsListItemValue) =>
-        value.gradeValue >= typedAction.values[0] &&
-        value.gradeValue <= typedAction.values[1];
-      return {
-        ...state,
-        ...updatePendingFilter(state, "grade", filterFn, typedAction.values),
-      };
+    case WorksFilterActions.PENDING_FILTER_GRADE: {
+      return handleGradeFilterAction(state, action);
     }
 
     // Field-specific shared filters

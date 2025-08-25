@@ -25,6 +25,7 @@ const SHOW_COUNT_DEFAULT = 100;
  * Work-specific action types
  */
 export enum WorksFilterActions {
+  PENDING_FILTER_GRADE = "PENDING_FILTER_GRADE",
   PENDING_FILTER_KIND = "PENDING_FILTER_KIND",
   PENDING_FILTER_REVIEW_YEAR = "PENDING_FILTER_REVIEW_YEAR",
   PENDING_FILTER_TITLE = "PENDING_FILTER_TITLE",
@@ -43,11 +44,17 @@ export type PaginationState = {
  * Union type of all work-specific filter actions
  */
 export type WorksFilterActionType =
+  | PendingFilterGradeAction
   | PendingFilterKindAction
   | PendingFilterReviewYearAction
   | PendingFilterTitleAction
   | PendingFilterWorkYearAction
   | ShowMoreAction;
+
+type PendingFilterGradeAction = {
+  type: WorksFilterActions.PENDING_FILTER_GRADE;
+  values: [number, number];
+};
 
 /**
  * Work-specific action type definitions
@@ -134,6 +141,30 @@ export function createInitialStateWithPagination<TItem, TSortValue>({
   }
 
   return baseState;
+}
+
+/**
+ * Handle Grade filter action
+ */
+export function handleGradeFilterAction<
+  TItem extends { gradeValue: number },
+  TSortValue,
+  TExtendedState extends Record<string, unknown> = Record<string, never>,
+>(
+  state: ListWithFiltersState<TItem, TSortValue> & TExtendedState,
+  action: PendingFilterGradeAction,
+  extendedState?: TExtendedState,
+): ListWithFiltersState<TItem, TSortValue> & TExtendedState {
+  const filterFn = createGradeFilter(action.values[0], action.values[1]);
+  const baseState = updatePendingFilter(
+    state,
+    "grade",
+    filterFn,
+    action.values,
+  );
+  return extendedState
+    ? { ...baseState, ...extendedState }
+    : (baseState as ListWithFiltersState<TItem, TSortValue> & TExtendedState);
 }
 
 /**
@@ -304,6 +335,15 @@ export function updateSortWithPagination<
     ...state,
     ...baseResult,
     groupedValues,
+  };
+}
+
+/**
+ * Create a Grade filter function
+ */
+function createGradeFilter(minGradeValue: number, maxGradeValue: number) {
+  return <T extends { gradeValue: number }>(item: T) => {
+    return item.gradeValue >= minGradeValue && item.gradeValue <= maxGradeValue;
   };
 }
 
