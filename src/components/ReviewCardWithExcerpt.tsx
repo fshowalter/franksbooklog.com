@@ -41,6 +41,7 @@ export function ReviewCardWithExcerpt({
         grid-rows-subgrid gap-y-0 bg-default py-6 pr-8 pl-4 transition-transform
         tablet-landscape:has-[a:hover]:-translate-y-2
         tablet-landscape:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
       `}
     >
       <div

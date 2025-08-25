@@ -251,6 +251,7 @@ function CalendarDay({ day }: { day: CalendarDayData }): JSX.Element {
                   tablet-landscape:has-[a:hover]:-translate-y-2
                   tablet-landscape:has-[a:hover]:bg-default
                   tablet-landscape:has-[a:hover]:drop-shadow-2xl
+                  dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_2px_15px_rgb(0_0_0_/_0.7)]
                 `}
                 key={reading.timelineSequence}
               >

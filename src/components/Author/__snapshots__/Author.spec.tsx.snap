@@ -55,6 +55,7 @@ exports[`Author > can clear all filters 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -158,6 +159,7 @@ exports[`Author > can clear all filters 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -261,6 +263,7 @@ exports[`Author > can clear all filters 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -412,6 +415,7 @@ exports[`Author > can clear all filters 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -563,6 +567,7 @@ exports[`Author > can clear all filters 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -714,6 +719,7 @@ exports[`Author > can clear all filters 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -865,6 +871,7 @@ exports[`Author > can clear all filters 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -1016,6 +1023,7 @@ exports[`Author > can clear all filters 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -1167,6 +1175,7 @@ exports[`Author > can clear all filters 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -1318,6 +1327,7 @@ exports[`Author > can clear all filters 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -1469,6 +1479,7 @@ exports[`Author > can clear all filters 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -1627,6 +1638,7 @@ exports[`Author > can filter by kind 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -1730,6 +1742,7 @@ exports[`Author > can filter by kind 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -1833,6 +1846,7 @@ exports[`Author > can filter by kind 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -1984,6 +1998,7 @@ exports[`Author > can filter by kind 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -2135,6 +2150,7 @@ exports[`Author > can filter by kind 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -2286,6 +2302,7 @@ exports[`Author > can filter by kind 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -2437,6 +2454,7 @@ exports[`Author > can filter by kind 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -2588,6 +2606,7 @@ exports[`Author > can filter by kind 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -2739,6 +2758,7 @@ exports[`Author > can filter by kind 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -2890,6 +2910,7 @@ exports[`Author > can filter by kind 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -3041,6 +3062,7 @@ exports[`Author > can filter by kind 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -3199,6 +3221,7 @@ exports[`Author > can filter by title 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -3302,6 +3325,7 @@ exports[`Author > can filter by title 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -3405,6 +3429,7 @@ exports[`Author > can filter by title 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -3556,6 +3581,7 @@ exports[`Author > can filter by title 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -3707,6 +3733,7 @@ exports[`Author > can filter by title 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -3858,6 +3885,7 @@ exports[`Author > can filter by title 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -4009,6 +4037,7 @@ exports[`Author > can filter by title 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -4160,6 +4189,7 @@ exports[`Author > can filter by title 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -4311,6 +4341,7 @@ exports[`Author > can filter by title 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -4462,6 +4493,7 @@ exports[`Author > can filter by title 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -4613,6 +4645,7 @@ exports[`Author > can filter by title 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -4771,6 +4804,7 @@ exports[`Author > can filter by year published 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -4874,6 +4908,7 @@ exports[`Author > can filter by year published 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -4977,6 +5012,7 @@ exports[`Author > can filter by year published 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -5128,6 +5164,7 @@ exports[`Author > can filter by year published 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -5279,6 +5316,7 @@ exports[`Author > can filter by year published 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -5430,6 +5468,7 @@ exports[`Author > can filter by year published 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -5581,6 +5620,7 @@ exports[`Author > can filter by year published 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -5732,6 +5772,7 @@ exports[`Author > can filter by year published 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -5883,6 +5924,7 @@ exports[`Author > can filter by year published 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -6034,6 +6076,7 @@ exports[`Author > can filter by year published 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -6185,6 +6228,7 @@ exports[`Author > can filter by year published 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -6343,6 +6387,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -6446,6 +6491,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -6549,6 +6595,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -6652,6 +6699,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -6755,6 +6803,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -6858,6 +6907,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -6961,6 +7011,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -7064,6 +7115,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -7167,6 +7219,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -7270,6 +7323,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -7373,6 +7427,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -7476,6 +7531,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -7579,6 +7635,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -7682,6 +7739,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -7785,6 +7843,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -7888,6 +7947,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -7991,6 +8051,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -8094,6 +8155,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -8197,6 +8259,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -8300,6 +8363,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -8403,6 +8467,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -8506,6 +8571,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -8609,6 +8675,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -8712,6 +8779,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -8815,6 +8883,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -8918,6 +8987,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -9021,6 +9091,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -9124,6 +9195,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -9227,6 +9299,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -9330,6 +9403,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -9433,6 +9507,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -9536,6 +9611,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -9639,6 +9715,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -9742,6 +9819,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -9845,6 +9923,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -9948,6 +10027,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -10051,6 +10131,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -10154,6 +10235,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -10257,6 +10339,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -10360,6 +10443,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -10463,6 +10547,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -10566,6 +10651,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -10669,6 +10755,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -10772,6 +10859,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -10875,6 +10963,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -10978,6 +11067,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -11081,6 +11171,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -11184,6 +11275,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -11287,6 +11379,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -11390,6 +11483,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -11493,6 +11587,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -11596,6 +11691,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -11699,6 +11795,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -11802,6 +11899,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -11905,6 +12003,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -12008,6 +12107,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -12111,6 +12211,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -12214,6 +12315,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -12317,6 +12419,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -12420,6 +12523,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -12523,6 +12627,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -12626,6 +12731,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -12729,6 +12835,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -12832,6 +12939,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -12935,6 +13043,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -13038,6 +13147,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -13141,6 +13251,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -13244,6 +13355,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -13347,6 +13459,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -13450,6 +13563,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -13553,6 +13667,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -13656,6 +13771,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -13759,6 +13875,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -13862,6 +13979,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -13965,6 +14083,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -14068,6 +14187,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -14171,6 +14291,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -14274,6 +14395,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -14377,6 +14499,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -14480,6 +14603,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -14583,6 +14707,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -14686,6 +14811,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -14789,6 +14915,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -14892,6 +15019,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -14995,6 +15123,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -15098,6 +15227,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -15201,6 +15331,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -15304,6 +15435,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -15407,6 +15539,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -15510,6 +15643,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -15613,6 +15747,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -15716,6 +15851,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -15819,6 +15955,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -15922,6 +16059,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -16025,6 +16163,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -16128,6 +16267,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -16231,6 +16371,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -16334,6 +16475,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -16437,6 +16579,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -16540,6 +16683,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -16643,6 +16787,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -16746,6 +16891,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -16849,6 +16995,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -16952,6 +17099,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -17055,6 +17203,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -17158,6 +17307,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -17261,6 +17411,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -17364,6 +17515,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -17467,6 +17619,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -17570,6 +17723,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -17673,6 +17827,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -17776,6 +17931,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -17879,6 +18035,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -17982,6 +18139,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -18085,6 +18243,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -18188,6 +18347,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -18291,6 +18451,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -18394,6 +18555,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -18497,6 +18659,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -18600,6 +18763,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -18703,6 +18867,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -18806,6 +18971,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -18909,6 +19075,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -19012,6 +19179,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -19115,6 +19283,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -19218,6 +19387,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -19321,6 +19491,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -19424,6 +19595,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -19527,6 +19699,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -19630,6 +19803,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -19733,6 +19907,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -19836,6 +20011,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -19939,6 +20115,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -20042,6 +20219,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -20145,6 +20323,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -20248,6 +20427,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -20351,6 +20531,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -20454,6 +20635,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -20557,6 +20739,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -20660,6 +20843,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -20763,6 +20947,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -20866,6 +21051,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -20969,6 +21155,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -21072,6 +21259,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -21175,6 +21363,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -21278,6 +21467,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -21381,6 +21571,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -21484,6 +21675,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -21587,6 +21779,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -21690,6 +21883,7 @@ exports[`Author > can show more items when button is clicked 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -21848,6 +22042,7 @@ exports[`Author > can sort by grade with best first 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -21999,6 +22194,7 @@ exports[`Author > can sort by grade with best first 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -22102,6 +22298,7 @@ exports[`Author > can sort by grade with best first 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -22205,6 +22402,7 @@ exports[`Author > can sort by grade with best first 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -22356,6 +22554,7 @@ exports[`Author > can sort by grade with best first 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -22459,6 +22658,7 @@ exports[`Author > can sort by grade with best first 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -22562,6 +22762,7 @@ exports[`Author > can sort by grade with best first 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -22713,6 +22914,7 @@ exports[`Author > can sort by grade with best first 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -22816,6 +23018,7 @@ exports[`Author > can sort by grade with best first 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -22919,6 +23122,7 @@ exports[`Author > can sort by grade with best first 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -23070,6 +23274,7 @@ exports[`Author > can sort by grade with best first 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -23228,6 +23433,7 @@ exports[`Author > can sort by grade with worst first 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -23379,6 +23585,7 @@ exports[`Author > can sort by grade with worst first 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -23482,6 +23689,7 @@ exports[`Author > can sort by grade with worst first 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -23585,6 +23793,7 @@ exports[`Author > can sort by grade with worst first 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -23736,6 +23945,7 @@ exports[`Author > can sort by grade with worst first 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -23839,6 +24049,7 @@ exports[`Author > can sort by grade with worst first 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -23942,6 +24153,7 @@ exports[`Author > can sort by grade with worst first 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -24093,6 +24305,7 @@ exports[`Author > can sort by grade with worst first 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -24196,6 +24409,7 @@ exports[`Author > can sort by grade with worst first 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -24299,6 +24513,7 @@ exports[`Author > can sort by grade with worst first 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -24450,6 +24665,7 @@ exports[`Author > can sort by grade with worst first 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -24608,6 +24824,7 @@ exports[`Author > can sort by title a->z 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -24759,6 +24976,7 @@ exports[`Author > can sort by title a->z 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -24910,6 +25128,7 @@ exports[`Author > can sort by title a->z 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -25061,6 +25280,7 @@ exports[`Author > can sort by title a->z 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -25212,6 +25432,7 @@ exports[`Author > can sort by title a->z 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -25315,6 +25536,7 @@ exports[`Author > can sort by title a->z 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -25466,6 +25688,7 @@ exports[`Author > can sort by title a->z 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -25617,6 +25840,7 @@ exports[`Author > can sort by title a->z 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -25768,6 +25992,7 @@ exports[`Author > can sort by title a->z 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -25871,6 +26096,7 @@ exports[`Author > can sort by title a->z 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -26022,6 +26248,7 @@ exports[`Author > can sort by title a->z 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -26180,6 +26407,7 @@ exports[`Author > can sort by title z->a 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -26331,6 +26559,7 @@ exports[`Author > can sort by title z->a 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -26434,6 +26663,7 @@ exports[`Author > can sort by title z->a 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -26585,6 +26815,7 @@ exports[`Author > can sort by title z->a 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -26736,6 +26967,7 @@ exports[`Author > can sort by title z->a 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -26887,6 +27119,7 @@ exports[`Author > can sort by title z->a 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -26990,6 +27223,7 @@ exports[`Author > can sort by title z->a 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -27141,6 +27375,7 @@ exports[`Author > can sort by title z->a 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -27292,6 +27527,7 @@ exports[`Author > can sort by title z->a 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -27443,6 +27679,7 @@ exports[`Author > can sort by title z->a 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -27594,6 +27831,7 @@ exports[`Author > can sort by title z->a 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -27752,6 +27990,7 @@ exports[`Author > can sort by work year with newest first 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -27903,6 +28142,7 @@ exports[`Author > can sort by work year with newest first 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -28054,6 +28294,7 @@ exports[`Author > can sort by work year with newest first 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -28205,6 +28446,7 @@ exports[`Author > can sort by work year with newest first 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -28356,6 +28598,7 @@ exports[`Author > can sort by work year with newest first 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -28507,6 +28750,7 @@ exports[`Author > can sort by work year with newest first 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -28610,6 +28854,7 @@ exports[`Author > can sort by work year with newest first 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -28713,6 +28958,7 @@ exports[`Author > can sort by work year with newest first 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -28864,6 +29110,7 @@ exports[`Author > can sort by work year with newest first 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -29015,6 +29262,7 @@ exports[`Author > can sort by work year with newest first 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -29166,6 +29414,7 @@ exports[`Author > can sort by work year with newest first 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -29324,6 +29573,7 @@ exports[`Author > can sort by work year with oldest first 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -29427,6 +29677,7 @@ exports[`Author > can sort by work year with oldest first 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -29530,6 +29781,7 @@ exports[`Author > can sort by work year with oldest first 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -29681,6 +29933,7 @@ exports[`Author > can sort by work year with oldest first 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -29832,6 +30085,7 @@ exports[`Author > can sort by work year with oldest first 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -29983,6 +30237,7 @@ exports[`Author > can sort by work year with oldest first 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -30134,6 +30389,7 @@ exports[`Author > can sort by work year with oldest first 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -30285,6 +30541,7 @@ exports[`Author > can sort by work year with oldest first 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -30436,6 +30693,7 @@ exports[`Author > can sort by work year with oldest first 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -30587,6 +30845,7 @@ exports[`Author > can sort by work year with oldest first 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >
@@ -30738,6 +30997,7 @@ exports[`Author > can sort by work year with oldest first 1`] = `
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         
       "
             >

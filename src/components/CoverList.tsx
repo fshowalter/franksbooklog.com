@@ -69,6 +69,7 @@ export function CoverListItem({
         tablet:w-(--cover-list-item-width) tablet:flex-col tablet:bg-transparent
         tablet:px-6 tablet:py-6 tablet:has-[a:hover]:-translate-y-2
         tablet:has-[a:hover]:bg-default tablet:has-[a:hover]:drop-shadow-2xl
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         ${className ?? ""}
       `}
     >

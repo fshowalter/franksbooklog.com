@@ -33,6 +33,7 @@ export function AvatarListItem({
         tablet-landscape:has-[a:hover]:shadow-all
         tablet-landscape:has-[a:hover]:drop-shadow-2xl
         laptop:px-6
+        dark:tablet-landscape:has-[a:hover]:drop-shadow-[0px_5px_25px_rgb(0_0_0_/_0.7)]
         ${className}
       `}
     >
