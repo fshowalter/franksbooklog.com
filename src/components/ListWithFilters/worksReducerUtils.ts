@@ -33,20 +33,21 @@ export enum WorksFilterActions {
 }
 
 /**
- * State type for lists with pagination (Show More) enabled
- */
-type ListWithFiltersAndShowCountState<TItem, TSortValue> = ListWithFiltersState<
-  TItem,
-  TSortValue
-> &
-  PaginationState;
-
-/**
  * Extended state for pagination support
  */
 export type PaginationState = {
   showCount: number;
 };
+
+/**
+ * Union type of all work-specific filter actions
+ */
+export type WorksFilterActionType =
+  | PendingFilterKindAction
+  | PendingFilterReviewYearAction
+  | PendingFilterTitleAction
+  | PendingFilterWorkYearAction
+  | ShowMoreAction;
 
 /**
  * Work-specific action type definitions
@@ -75,16 +76,6 @@ type ShowMoreAction = {
   increment?: number;
   type: WorksFilterActions.SHOW_MORE;
 };
-
-/**
- * Union type of all work-specific filter actions
- */
-export type WorksFilterActionType =
-  | PendingFilterKindAction
-  | PendingFilterReviewYearAction
-  | PendingFilterTitleAction
-  | PendingFilterWorkYearAction
-  | ShowMoreAction;
 
 /**
  * Apply pending filters with pagination support
