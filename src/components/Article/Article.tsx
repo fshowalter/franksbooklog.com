@@ -49,9 +49,18 @@ export function Article({
       >
         <MoreReviews values={recentReviews}>
           <SubHeading as="h2">
-            Recent{" "}
-            <a className="text-accent" href="/reviews/">
-              Reviews
+            <a
+              className={`
+                relative -mb-1 inline-block transform-gpu pb-1
+                transition-transform
+                after:absolute after:bottom-0 after:left-0 after:h-px
+                after:w-full after:origin-bottom-right after:scale-x-0
+                after:bg-(--fg-accent) after:transition-transform
+                hover:after:scale-x-100
+              `}
+              href={`/reviews/`}
+            >
+              Recent <span className={`text-accent`}>Reviews</span>
             </a>
           </SubHeading>
         </MoreReviews>
