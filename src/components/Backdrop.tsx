@@ -38,6 +38,7 @@ export function AvatarBackdrop({
         <div
           className={`
             mx-auto mb-6 w-4/5 max-w-[250px] transform-gpu overflow-hidden
+            tablet:mb-8
             ${avatarImageProps && "rounded-full shadow-all"}
           `}
         >
